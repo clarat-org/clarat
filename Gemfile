@@ -43,3 +43,26 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_admin'
+
+gem 'devise'
+# gem 'pundit'
+gem 'arcane'
+
+gem 'enumerize'
+
+gem 'paper_trail'
+
+
+group :development, :test do
+  # debugging
+  gem 'pry-rails' # pry is awsome
+  gem 'hirb' # hirb makes pry output even more awesome
+  gem 'pry-byebug' # kickass debugging
+  gem 'pry-stack_explorer'
+
+  # errors
+  gem 'better_errors'
+  gem "binding_of_caller"
+end

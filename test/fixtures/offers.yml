@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  todo: MyText
+  website: MyString
+  telephone: MyString
+  contact_name: MyString
+  email: MyString
+  reach: MyString
+  frequent_changes: false
+  slug: MyString
+  monday_start: 2014-09-15 16:54:34
+  monday_end: 2014-09-15 16:54:34
+  tuesday_start: 2014-09-15 16:54:34
+  tuesday_end: 2014-09-15 16:54:34
+  wednesday_start: 2014-09-15 16:54:34
+  wednesday_end: 2014-09-15 16:54:34
+  thursday_start: 2014-09-15 16:54:34
+  thursday_end: 2014-09-15 16:54:34
+  friday_start: 2014-09-15 16:54:34
+  friday_end: 2014-09-15 16:54:34
+  saturday_start: 2014-09-15 16:54:34
+  saturday_end: 2014-09-15 16:54:34
+  sunday_start: 2014-09-15 16:54:34
+  sunday_end: 2014-09-15 16:54:34
+
+two:
+  name: MyString
+  description: MyString
+  todo: MyText
+  website: MyString
+  telephone: MyString
+  contact_name: MyString
+  email: MyString
+  reach: MyString
+  frequent_changes: false
+  slug: MyString
+  monday_start: 2014-09-15 16:54:34
+  monday_end: 2014-09-15 16:54:34
+  tuesday_start: 2014-09-15 16:54:34
+  tuesday_end: 2014-09-15 16:54:34
+  wednesday_start: 2014-09-15 16:54:34
+  wednesday_end: 2014-09-15 16:54:34
+  thursday_start: 2014-09-15 16:54:34
+  thursday_end: 2014-09-15 16:54:34
+  friday_start: 2014-09-15 16:54:34
+  friday_end: 2014-09-15 16:54:34
+  saturday_start: 2014-09-15 16:54:34
+  saturday_end: 2014-09-15 16:54:34
+  sunday_start: 2014-09-15 16:54:34
+  sunday_end: 2014-09-15 16:54:34

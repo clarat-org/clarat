@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  legal_form: MyString
+  charitable: false
+  founded: 1
+  classification: MyString
+  slug: MyString
+
+two:
+  name: MyString
+  description: MyText
+  legal_form: MyString
+  charitable: false
+  founded: 1
+  classification: MyString
+  slug: MyString

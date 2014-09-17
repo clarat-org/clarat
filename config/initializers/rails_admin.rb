@@ -31,8 +31,8 @@ RailsAdmin.config do |config|
     show_in_app
 
     ## With an audit adapter, you can add:
-    # history_index
-    # history_show
+    history_index
+    history_show
   end
 
   config.model 'Organization' do
@@ -120,5 +120,21 @@ RailsAdmin.config do |config|
     field :name
     field :main
     field :associated_tags
+  end
+
+  config.label_methods << :email
+  config.model 'User' do
+    field :email
+  end
+
+  config.model 'Language' do
+    list do
+      field :id do
+        sort_reverse false
+      end
+      field :name
+      field :code
+      field :offers
+    end
   end
 end

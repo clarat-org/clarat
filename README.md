@@ -1,4 +1,6 @@
 clarat
 ======
 
-An open source charity directory
+A charity directory
+
+Code released under [the MIT license](LICENSE).

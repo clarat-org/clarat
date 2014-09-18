@@ -3,8 +3,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# Plattforms Ruby
+platforms :ruby do
+  gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
+  gem 'therubyracer' # js runtime
+  gem 'pg', group: [:production,:staging,:development] # postgres
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -61,6 +66,7 @@ gem 'paper_trail'
 gem 'coveralls', require: false
 
 group :test do
+  gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
 end
 

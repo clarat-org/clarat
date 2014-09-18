@@ -1,6 +1,8 @@
 clarat
 ======
 
+[![Coverage Status](https://img.shields.io/coveralls/clarat-org/clarat.svg)](https://coveralls.io/r/clarat-org/clarat)
+
 A charity directory
 
 Code released under [the MIT license](LICENSE).

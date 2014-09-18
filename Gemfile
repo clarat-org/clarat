@@ -11,10 +11,6 @@ platforms :ruby do
   gem 'pg', group: [:production,:staging,:development] # postgres
 end
 
-group :test do
-  gem 'memory_test_fix'  # Sqlite inmemory fix
-end
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -68,6 +64,7 @@ gem 'enumerize'
 gem 'paper_trail'
 
 group :test do
+  gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
 end
 

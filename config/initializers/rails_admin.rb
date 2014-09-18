@@ -34,7 +34,9 @@ RailsAdmin.config do |config|
 
   config.model 'Organization' do
     field :name
-    field :description
+    field :description do
+      css_class "js-count-character"
+    end
     field :legal_form
     field :charitable
     field :founded
@@ -86,7 +88,9 @@ RailsAdmin.config do |config|
 
   config.model 'Offer' do
     field :name
-    field :description
+    field :description do
+      css_class "js-count-character"
+    end
     field :todo
     field :telephone
     field :contact_name

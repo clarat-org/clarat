@@ -60,6 +60,10 @@ gem 'paper_trail'
 
 gem 'coveralls', require: false
 
+group :test do
+  gem 'rake'
+end
+
 group :development, :test do
   # debugging
   gem 'pry-rails' # pry is awsome

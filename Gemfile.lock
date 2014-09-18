@@ -206,6 +206,7 @@ DEPENDENCIES
   pry-stack_explorer
   rails (= 4.0.4)
   rails_admin
+  rake
   sass-rails (~> 4.0.2)
   sdoc
   sqlite3

@@ -58,6 +58,9 @@ gem 'enumerize'
 
 gem 'paper_trail'
 
+group :test do
+  gem 'rake'
+end
 
 group :development, :test do
   # debugging

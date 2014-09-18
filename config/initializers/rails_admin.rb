@@ -34,7 +34,9 @@ RailsAdmin.config do |config|
 
   config.model 'Organization' do
     field :name
-    field :description
+    field :description do
+      css_class "js-count-character"
+    end
     field :legal_form
     field :charitable
     field :founded
@@ -46,6 +48,10 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+
+    show do
+      field :offers
+    end
   end
 
   config.label_methods << :url
@@ -86,7 +92,9 @@ RailsAdmin.config do |config|
 
   config.model 'Offer' do
     field :name
-    field :description
+    field :description do
+      css_class "js-count-character"
+    end
     field :todo
     field :telephone
     field :contact_name
@@ -117,6 +125,8 @@ RailsAdmin.config do |config|
     field :name
     field :main
     field :associated_tags
+
+    object_label_method :name_with_optional_asterisk
   end
 
   config.label_methods << :email

@@ -14,6 +14,8 @@ class Opening < ActiveRecord::Base
   # Methods
 
   def concat_day_and_times
-    "#{day.titleize} #{open.strftime('%H:%M')}-#{close.strftime('%H:%M')}"
+    if day and open and close
+      "#{day.titleize} #{open.strftime('%H:%M')}-#{close.strftime('%H:%M')}"
+    end
   end
 end

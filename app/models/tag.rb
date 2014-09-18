@@ -14,6 +14,8 @@ class Tag < ActiveRecord::Base
   # Methods
 
   def name_with_optional_asterisk
-    name + (main ? '*' : '')
+    if name
+      name + (main ? '*' : '')
+    end
   end
 end

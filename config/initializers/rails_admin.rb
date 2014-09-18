@@ -121,6 +121,8 @@ RailsAdmin.config do |config|
     field :name
     field :main
     field :associated_tags
+
+    object_label_method :name_with_optional_asterisk
   end
 
   config.label_methods << :email

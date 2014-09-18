@@ -10,4 +10,10 @@ class Tag < ActiveRecord::Base
 
   # Validations
   validates :name, uniqueness: true, presence: true
+
+  # Methods
+
+  def name_with_optional_asterisk
+    name + (main ? '*' : '')
+  end
 end

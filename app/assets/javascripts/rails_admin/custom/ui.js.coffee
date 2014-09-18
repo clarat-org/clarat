@@ -11,6 +11,7 @@ $(document).on 'rails_admin.dom_ready', ->
 
 
   input = $(".js-count-character textarea")
-  elem = $("<span style='margin-left:5px'></span>")
-  input.after elem
-  input.counter elem
+  if input.length
+    elem = $("<span style='margin-left:10px'></span>")
+    input.after elem
+    input.counter elem

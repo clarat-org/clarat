@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.1.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
@@ -8,7 +9,7 @@ gem 'rails', '4.0.4'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production,:staging,:development] # postgres
+  gem 'pg', group: [:production,:development] # postgres
 end
 
 # Use SCSS for stylesheets
@@ -62,6 +63,10 @@ gem 'arcane'
 gem 'enumerize'
 
 gem 'paper_trail'
+
+group :production do
+  gem 'rails_12factor'
+end
 
 group :test do
   gem 'memory_test_fix'  # Sqlite inmemory fix

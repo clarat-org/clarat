@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140917143354) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "associated_tags", force: true do |t|
     t.integer "tag_id"
     t.integer "associated_id"
@@ -53,16 +56,16 @@ ActiveRecord::Schema.define(version: 20140917143354) do
   end
 
   create_table "offers", force: true do |t|
-    t.string   "name",             limit: 80,                  null: false
-    t.text     "description",      limit: 400,                 null: false
-    t.text     "todo",             limit: 400
+    t.string   "name",             limit: 80,                 null: false
+    t.text     "description",                                 null: false
+    t.text     "todo"
     t.string   "telephone"
     t.string   "contact_name"
     t.string   "email"
-    t.string   "reach",                                        null: false
-    t.boolean  "frequent_changes",             default: false
+    t.string   "reach",                                       null: false
+    t.boolean  "frequent_changes",            default: false
     t.string   "slug"
-    t.integer  "location_id",                                  null: false
+    t.integer  "location_id",                                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -86,12 +89,12 @@ ActiveRecord::Schema.define(version: 20140917143354) do
   end
 
   create_table "organizations", force: true do |t|
-    t.string   "name",                                      null: false
-    t.text     "description",    limit: 400,                null: false
-    t.string   "legal_form",                                null: false
-    t.boolean  "charitable",                 default: true
-    t.integer  "founded",        limit: 4
-    t.string   "classification",                            null: false
+    t.string   "name",                          null: false
+    t.text     "description",                   null: false
+    t.string   "legal_form",                    null: false
+    t.boolean  "charitable",     default: true
+    t.integer  "founded"
+    t.string   "classification",                null: false
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -112,7 +115,7 @@ ActiveRecord::Schema.define(version: 20140917143354) do
     t.boolean  "admin",              default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
   create_table "versions", force: true do |t|
     t.string   "item_type",      null: false
@@ -124,7 +127,7 @@ ActiveRecord::Schema.define(version: 20140917143354) do
     t.text     "object_changes"
   end
 
-  add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
+  add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
 
   create_table "websites", force: true do |t|
     t.string   "sort",          null: false

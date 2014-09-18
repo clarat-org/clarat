@@ -4,7 +4,7 @@ class Location < ActiveRecord::Base
   # Associtations
   belongs_to :organization, inverse_of: :locations
   belongs_to :federal_state, inverse_of: :locations
-  has_one :offer, inverse_of: :location
+  has_many :offers, inverse_of: :location
   has_many :websites, as: :linkable, inverse_of: :linkable
 
   # Validations

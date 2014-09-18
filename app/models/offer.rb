@@ -2,7 +2,7 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # associtations
-  belongs_to :location, inverse_of: :offer
+  belongs_to :location, inverse_of: :offers
   has_and_belongs_to_many :tags
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings

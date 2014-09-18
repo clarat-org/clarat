@@ -58,6 +58,7 @@ gem 'enumerize'
 
 gem 'paper_trail'
 
+gem 'coveralls', require: false
 
 group :development, :test do
   # debugging

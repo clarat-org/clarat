@@ -48,6 +48,10 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+
+    show do
+      field :offers
+    end
   end
 
   config.label_methods << :url

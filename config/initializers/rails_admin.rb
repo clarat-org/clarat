@@ -55,10 +55,10 @@ RailsAdmin.config do |config|
   end
 
   config.label_methods << :url
-  # config.model 'Website' do
-  #   field :sort
-  #   field :url
-  # end
+  config.model 'Website' do
+    field :sort
+    field :url
+  end
 
   config.model 'Location' do
     field :street

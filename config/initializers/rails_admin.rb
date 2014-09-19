@@ -67,6 +67,8 @@ RailsAdmin.config do |config|
     field :zip
     field :city
     field :telephone
+    field :second_telephone
+    field :fax
     field :email
     field :hq
     field :organization

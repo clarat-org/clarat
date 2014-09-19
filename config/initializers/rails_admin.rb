@@ -61,6 +61,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    field :name
     field :street
     field :addition
     field :zip

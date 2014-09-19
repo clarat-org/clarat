@@ -20,5 +20,5 @@ class Organization < ActiveRecord::Base
   validates :name, length: { maximum: 100 }, presence: true
   validates :description, length: { maximum: 400 }, presence: true
   validates :legal_form, presence: true
-  validates :founded, length: { is: 4 }
+  validates :founded, length: { is: 4 }, allow_blank: true
 end

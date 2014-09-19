@@ -69,6 +69,7 @@ group :production do
 end
 
 group :test do
+  gem 'coveralls', require: false
   gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
 end

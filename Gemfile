@@ -84,4 +84,7 @@ group :development, :test do
   # errors
   gem 'better_errors'
   gem "binding_of_caller"
+
+  # style
+  gem 'rubocop'
 end

@@ -19,12 +19,18 @@ RailsAdmin.config do |config|
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
+    new do
+      except ['User']
+    end
     export
-    bulk_delete
+    bulk_delete do
+      except ['User']
+    end
     show
     edit
-    delete
+    delete do
+      except ['User']
+    end
     show_in_app
 
     ## With an audit adapter, you can add:
@@ -129,11 +135,6 @@ RailsAdmin.config do |config|
     object_label_method :name_with_optional_asterisk
   end
 
-  config.label_methods << :email
-  config.model 'User' do
-    field :email
-  end
-
   config.model 'Language' do
     list do
       field :id do
@@ -142,6 +143,24 @@ RailsAdmin.config do |config|
       field :name
       field :code
       field :offers
+    end
+  end
+
+  config.label_methods << :email
+  config.model 'User' do
+    create do
+    end
+    edit do
+      field :email do
+        read_only do
+          bindings[:object] != bindings[:view].current_user
+        end
+      end
+      field :password do
+        visible do
+          bindings[:object] == bindings[:view].current_user
+        end
+      end
     end
   end
 end

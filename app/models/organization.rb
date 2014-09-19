@@ -13,7 +13,7 @@ class Organization < ActiveRecord::Base
   enumerize :classification, in: %w[welfare other]
 
   # Validations
-  validates :name, length: { maximum: 80 }, presence: true
+  validates :name, length: { maximum: 100 }, presence: true
   validates :description, length: { maximum: 400 }, presence: true
   validates :legal_form, presence: true
   validates :classification, presence: true

@@ -9,7 +9,9 @@ class Organization < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :legal_form, in: %w[ev ggmbh gag foundation gug kdor gmbh ag ug]
+  enumerize :legal_form, in: %w[ev ggmbh gag foundation gug kdor ador kirche
+                                gmbh ag ug kfm gbr ogh kg eg ador kirche
+                                sonstige]
   enumerize :classification, in: ['Caritas', 'Diakonie', 'Arbeiterwohlfahrt',
                                   'Deutscher Paritätischer Wohlfahrtsverband',
                                   'Deutsches Rotes Kreuz',

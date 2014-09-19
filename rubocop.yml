@@ -1,6 +1,5 @@
-# inherit_from: rubocop-todo.yml
+# inherit_from: rubocop_todo.yml
 
 AllCops:
-  RunRailsCops: true
   Exclude:
     - 'db/**/*'

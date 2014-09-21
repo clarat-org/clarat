@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917143354) do
+ActiveRecord::Schema.define(version: 20140919134436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,9 @@ ActiveRecord::Schema.define(version: 20140917143354) do
     t.integer  "federal_state_id", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "second_telephone"
+    t.string   "fax"
   end
 
   create_table "offers", force: true do |t|
@@ -65,7 +68,7 @@ ActiveRecord::Schema.define(version: 20140917143354) do
     t.string   "reach",                                       null: false
     t.boolean  "frequent_changes",            default: false
     t.string   "slug"
-    t.integer  "location_id",                                 null: false
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -94,7 +97,7 @@ ActiveRecord::Schema.define(version: 20140917143354) do
     t.string   "legal_form",                    null: false
     t.boolean  "charitable",     default: true
     t.integer  "founded"
-    t.string   "classification",                null: false
+    t.string   "classification"
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"

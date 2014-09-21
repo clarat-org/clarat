@@ -8,6 +8,7 @@ class Location < ActiveRecord::Base
   has_many :websites, as: :linkable, inverse_of: :linkable
 
   # Validations
+  validates :name, length: { maximum: 100 }
   validates :street, presence: true, format: /\A.+\d+.*\z/ # format: ensure digit for house number
   validates :zip, presence: true, length: { is: 5 }
   validates :city, presence: true

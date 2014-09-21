@@ -67,11 +67,14 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    field :name
     field :street
     field :addition
     field :zip
     field :city
     field :telephone
+    field :second_telephone
+    field :fax
     field :email
     field :hq
     field :organization

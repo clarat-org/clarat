@@ -64,7 +64,6 @@ RailsAdmin.config do |config|
   config.model 'Website' do
     field :sort
     field :url
-    field :hyperlinks
   end
 
   config.model 'Location' do
@@ -105,7 +104,9 @@ RailsAdmin.config do |config|
     field :description do
       css_class "js-count-character"
     end
-    field :todo
+    field :todo do
+      css_class "js-count-character"
+    end
     field :telephone
     field :contact_name
     field :email

@@ -1,0 +1,29 @@
+de:
+# Enum Definitions
+  enumerize:
+    organization:
+      legal_form:
+        ev: 'e.V.'
+        ggmbh: 'gGmbH'
+        gag: 'gAG'
+        foundation: 'Stiftung'
+        gug: 'gUG'
+        kdor: 'KdöR'
+        ador: 'AdöR'
+        kirche: 'Kirche'
+        gmbh: 'GmbH'
+        ag: 'AG'
+        ug: 'UG'
+        kfm: 'Kfm.'
+        gbr: 'GbR'
+        ohg: 'OHG'
+        kg: 'KG'
+        eg: 'eG'
+        sonstige: 'Sonstige'
+      umbrella:
+        caritas: 'Caritas'
+        diakonie: 'Diakonie'
+        awo: 'Arbeiterwohlfahrt'
+        dpw: 'Deutscher Paritätischer Wohlfahrtsverband'
+        drk: 'Deutsches Rotes Kreuz'
+        zwst: 'Zentralwohlfahrtsstelle der Juden in Deutschland'

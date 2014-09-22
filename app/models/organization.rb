@@ -4,19 +4,15 @@ class Organization < ActiveRecord::Base
   # Associtations
   has_many :offers, through: :organizations
   has_many :locations
-  has_many :offers, through: :locations
+  has_many :offers
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 
   # Enumerization
   extend Enumerize
   enumerize :legal_form, in: %w[ev ggmbh gag foundation gug kdor ador kirche
-                                gmbh ag ug kfm gbr ogh kg eg sonstige]
-  enumerize :classification, in: ['Caritas', 'Diakonie', 'Arbeiterwohlfahrt',
-                                  'Deutscher Paritätischer Wohlfahrtsverband',
-                                  'Deutsches Rotes Kreuz',
-                                  'Zentralwohlfahrtsstelle der Juden in
-                                   Deutschland']
+                                gmbh ag ug kfm gbr ohg kg eg sonstige]
+  enumerize :umbrella, in: %w[caritas diakonie awo dpw drk zwst]
 
   # Validations
   validates :name, length: { maximum: 100 }, presence: true

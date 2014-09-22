@@ -1,0 +1,24 @@
+de:
+  activerecord:
+    models:
+      offer:
+        one: Angebot
+        other: Angebote
+      location:
+        one: Standort
+        other: Standorte
+      organization:
+        one: Organisation
+        other: Organisationen
+      federal_state:
+        one: Bundesland
+        other: Bundesländer
+      language:
+        one: Sprache
+        other: Sprachen
+      opening:
+        one: Öffnungszeit
+        other: Öffnungszeiten
+      user:
+        one: Nutzer
+        other: Nutzer

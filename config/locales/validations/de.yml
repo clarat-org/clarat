@@ -1,0 +1,8 @@
+de:
+  validations:
+    offer:
+      location_fits_organization:
+        organization_error: |
+          muss der des angegebenen Standorts gleichen.
+        location_error: |
+          muss zu der unten angegebenen Organisation gehören.

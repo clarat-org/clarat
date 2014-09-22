@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
   # include Pundit
   # after_action :verify_authorized, :except => :index
   # after_action :verify_policy_scoped, :only => :index
+
+  # I18n
+  before_filter :get_language
+  def get_language
+    I18n.locale = params[:locale] || 'en'
+  end
 end

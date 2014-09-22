@@ -46,7 +46,7 @@ RailsAdmin.config do |config|
     field :legal_form
     field :charitable
     field :founded
-    field :classification
+    field :umbrella
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -118,6 +118,7 @@ RailsAdmin.config do |config|
       end
     end
     field :location
+    field :organization
     field :tags
     field :languages
     field :openings

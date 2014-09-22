@@ -1,0 +1,8 @@
+en:
+  validations:
+    offer:
+      location_fits_organization:
+        organization_error: |
+          must be the same as the chosen location's organization.
+        location_error: |
+          must belong to the same organization as chosen below.

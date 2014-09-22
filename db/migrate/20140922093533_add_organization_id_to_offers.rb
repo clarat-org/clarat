@@ -1,4 +1,8 @@
 class AddOrganizationIdToOffers < ActiveRecord::Migration
+  class Offer < ActiveRecord::Base
+    attr_accessor :umbrella, :classification
+  end
+
   def up
     add_column :offers, :organization_id, :integer
 

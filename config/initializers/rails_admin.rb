@@ -64,6 +64,7 @@ RailsAdmin.config do |config|
   config.model 'Website' do
     field :sort
     field :url
+    field :hyperlinks
   end
 
   config.model 'Location' do

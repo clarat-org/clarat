@@ -5,13 +5,13 @@ class Organization < ActiveRecord::Base
   has_many :offers, through: :organizations
   has_many :locations
   has_many :offers, through: :locations
-  has_many :websites, as: :linkable, inverse_of: :linkable
+  has_many :hyperlinks, as: :linkable
+  has_many :websites, through: :hyperlinks
 
   # Enumerization
   extend Enumerize
   enumerize :legal_form, in: %w[ev ggmbh gag foundation gug kdor ador kirche
-                                gmbh ag ug kfm gbr ogh kg eg ador kirche
-                                sonstige]
+                                gmbh ag ug kfm gbr ogh kg eg sonstige]
   enumerize :classification, in: ['Caritas', 'Diakonie', 'Arbeiterwohlfahrt',
                                   'Deutscher Paritätischer Wohlfahrtsverband',
                                   'Deutsches Rotes Kreuz',

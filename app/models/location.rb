@@ -5,7 +5,8 @@ class Location < ActiveRecord::Base
   belongs_to :organization, inverse_of: :locations
   belongs_to :federal_state, inverse_of: :locations
   has_many :offers, inverse_of: :location
-  has_many :websites, as: :linkable, inverse_of: :linkable
+  has_many :hyperlinks, as: :linkable
+  has_many :websites, through: :hyperlinks
 
   # Validations
   validates :name, length: { maximum: 100 }
@@ -13,9 +14,16 @@ class Location < ActiveRecord::Base
   validates :zip, presence: true, length: { is: 5 }
   validates :city, presence: true
 
+  validates :organization_id, presence: true
+  validates :federal_state_id, presence: true
+
   # Methods
 
   def concat_address
-    "#{street} #{zip} #{city}"
+    if name
+      "#{name} (#{street} #{zip} #{city})"
+    else
+      "#{street} #{zip} #{city}"
+    end
   end
 end

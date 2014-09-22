@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140919134436) do
+ActiveRecord::Schema.define(version: 20140922083031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,12 @@ ActiveRecord::Schema.define(version: 20140919134436) do
     t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "hyperlinks", force: true do |t|
+    t.integer "linkable_id"
+    t.string  "linkable_type"
+    t.integer "website_id"
   end
 
   create_table "languages", force: true do |t|
@@ -133,10 +139,8 @@ ActiveRecord::Schema.define(version: 20140919134436) do
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
 
   create_table "websites", force: true do |t|
-    t.string   "sort",          null: false
-    t.string   "url",           null: false
-    t.integer  "linkable_id"
-    t.string   "linkable_type"
+    t.string   "sort",       null: false
+    t.string   "url",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -7,7 +7,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   has_one :organization, through: :location, inverse_of: :offers
-  has_many :websites, as: :linkable, inverse_of: :linkable
+  has_many :hyperlinks, as: :linkable
+  has_many :websites, through: :hyperlinks
 
   # Enumerization
   extend Enumerize

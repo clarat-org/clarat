@@ -1,6 +1,6 @@
 class Website < ActiveRecord::Base
   # associtations
-  belongs_to :linkable, polymorphic: true, inverse_of: :websites
+  has_many :hyperlinks, as: :linkable
 
   # Enumerization
   extend Enumerize

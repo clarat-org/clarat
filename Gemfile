@@ -68,7 +68,6 @@ gem 'paper_trail'
 
 group :production do
   gem 'rails_12factor'
-  gem 'byebug'
 end
 
 group :test do

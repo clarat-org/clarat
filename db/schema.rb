@@ -28,9 +28,9 @@ ActiveRecord::Schema.define(version: 20140922102546) do
   end
 
   create_table "hyperlinks", force: true do |t|
-    t.integer "linkable_id"
-    t.string  "linkable_type"
-    t.integer "website_id"
+    t.integer "linkable_id",              null: false
+    t.string  "linkable_type", limit: 40, null: false
+    t.integer "website_id",               null: false
   end
 
   create_table "languages", force: true do |t|

@@ -25,4 +25,8 @@ class ChangeOrganizationsClassificationToUmbrella < ActiveRecord::Migration
     rename_column :organizations, :classification, :umbrella
     change_column :organizations, :umbrella, :string, limit: 8
   end
+
+  def down
+    rename_column :organizations, :umbrella, :classification
+  end
 end

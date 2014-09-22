@@ -1,8 +1,7 @@
 class ChangeOrganizationsClassificationToUmbrella < ActiveRecord::Migration
   def up
-    rename_column :organizations, :classification, :umbrella
     Organization.find_each do |org|
-      new_string =  case org.umbrella
+      new_string =  case org.classification
                     when 'Caritas'
                       :caritas
                     when 'Diakonie'
@@ -19,10 +18,12 @@ class ChangeOrganizationsClassificationToUmbrella < ActiveRecord::Migration
                       false
                     end
       if new_string
-        org.update_column :umbrella, new_string
+        org.update_column :classification, new_string
       end
     end
 
+
+    rename_column :organizations, :classification, :umbrella
     change_column :organizations, :umbrella, :string, limit: 8
   end
 end

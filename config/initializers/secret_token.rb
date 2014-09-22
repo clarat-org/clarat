@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Clarat::Application.config.secret_key_base = '1f17f4615455f607b7c9a80c6f1f2932028ceed1420ea8f8987ec33eb7caf18350423d45f88053b8bd2285787579884c3211343b6329b2184ee3cf6fb1019c85'
+Clarat::Application.config.secret_key_base = Rails.application.secrets.secret_key_base

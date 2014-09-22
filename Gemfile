@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby "2.1.2"
+ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.1.5'
 
 # Translations
 gem 'rails-i18n'
@@ -66,8 +66,11 @@ gem 'enumerize'
 
 gem 'paper_trail'
 
+# search
+gem 'algoliasearch-rails'
+
 group :production do
-  gem 'rails_12factor'
+  gem 'rails_12factor' #heroku recommends this
 end
 
 group :test do
@@ -85,7 +88,7 @@ group :development, :test do
 
   # errors
   gem 'better_errors'
-  gem "binding_of_caller"
+  gem 'binding_of_caller'
 
   # style
   gem 'rubocop'

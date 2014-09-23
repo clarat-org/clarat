@@ -168,8 +168,7 @@ RailsAdmin.config do |config|
 
   config.label_methods << :email
   config.model 'User' do
-    create do
-    end
+    weight 1
     edit do
       field :email do
         read_only do

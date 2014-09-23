@@ -69,6 +69,9 @@ gem 'paper_trail'
 # search
 gem 'algoliasearch-rails'
 
+gem 'virtus' # form objects
+gem 'formtastic'
+
 group :production do
   gem 'rails_12factor' #heroku recommends this
 end

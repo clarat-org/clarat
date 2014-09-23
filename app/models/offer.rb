@@ -1,7 +1,7 @@
 class Offer < ActiveRecord::Base
   has_paper_trail
 
-  # associtations
+  # Associtations
   belongs_to :location, inverse_of: :offers
   has_and_belongs_to_many :tags
   has_and_belongs_to_many :languages
@@ -23,6 +23,12 @@ class Offer < ActiveRecord::Base
 
   validates :organization_id, presence: true
   validate :location_fits_organization # custom validation
+
+  # Search
+  include AlgoliaSearch
+  algoliasearch per_environment: true do
+    attributesToIndex ['name', 'description']
+  end
 
   # Methods
 

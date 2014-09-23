@@ -57,6 +57,7 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :locations
     end
   end
 
@@ -67,18 +68,18 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    field :organization
     field :name
     field :street
     field :addition
     field :zip
     field :city
+    field :federal_state
     field :telephone
     field :second_telephone
     field :fax
     field :email
     field :hq
-    field :organization
-    field :federal_state
     field :latitude do
       read_only true
     end

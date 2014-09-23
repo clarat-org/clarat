@@ -1,0 +1,4 @@
+%h1 Results
+%ul
+  - @offers.each do |offer|
+    %li= link_to offer.name, offer_path(id: offer)

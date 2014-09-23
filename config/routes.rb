@@ -3,6 +3,8 @@ Clarat::Application.routes.draw do
     devise_for :users
     mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     root to: "pages#home"
+
+    resources :offers, only: [:index, :show]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -39,6 +39,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Organization' do
+    weight -3
     field :name
     field :description do
       css_class "js-count-character"
@@ -68,6 +69,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    weight -2
     field :organization
     field :name
     field :street
@@ -92,6 +94,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'FederalState' do
+    weight 2
     list do
       field :id do
         sort_reverse false
@@ -101,6 +104,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Offer' do
+    weight -1
     field :name
     field :description do
       css_class "js-count-character"
@@ -132,6 +136,10 @@ RailsAdmin.config do |config|
     field :close
 
     object_label_method :concat_day_and_times
+
+    list do
+      sort_by :day
+    end
   end
 
   config.model 'Tag' do
@@ -140,9 +148,14 @@ RailsAdmin.config do |config|
     field :associated_tags
 
     object_label_method :name_with_optional_asterisk
+
+    list do
+      sort_by :name
+    end
   end
 
   config.model 'Language' do
+    weight 1
     list do
       field :id do
         sort_reverse false
@@ -169,5 +182,9 @@ RailsAdmin.config do |config|
         end
       end
     end
+  end
+
+  config.model 'Hyperlink' do
+    weight 2
   end
 end

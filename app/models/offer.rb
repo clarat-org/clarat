@@ -20,6 +20,8 @@ class Offer < ActiveRecord::Base
   validates :description, length: { maximum: 400 }, presence: true
   validates :todo, length: { maximum: 400 }, presence: true
   validates :reach, presence: true
+  validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
 
   validates :organization_id, presence: true
   validate :location_fits_organization # custom validation

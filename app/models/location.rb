@@ -13,6 +13,9 @@ class Location < ActiveRecord::Base
   validates :street, presence: true, format: /\A.+\d+.*\z/ # format: ensure digit for house number
   validates :zip, presence: true, length: { is: 5 }
   validates :city, presence: true
+  validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
 
   validates :organization_id, presence: true
   validates :federal_state_id, presence: true
@@ -20,10 +23,10 @@ class Location < ActiveRecord::Base
   # Methods
 
   def concat_address
-    if name
-      "#{name} (#{street} #{zip} #{city})"
-    else
+    if name.empty?
       "#{street} #{zip} #{city}"
+    else
+      "#{name} (#{street} #{zip} #{city})"
     end
   end
 end

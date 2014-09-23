@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922102546) do
+ActiveRecord::Schema.define(version: 20140923134145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,29 +46,29 @@ ActiveRecord::Schema.define(version: 20140922102546) do
   end
 
   create_table "locations", force: true do |t|
-    t.string   "street",           null: false
+    t.string   "street",                      null: false
     t.string   "addition"
-    t.string   "zip",              null: false
-    t.string   "city",             null: false
-    t.string   "telephone"
+    t.string   "zip",                         null: false
+    t.string   "city",                        null: false
+    t.string   "telephone",        limit: 32
     t.string   "email"
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",  null: false
-    t.integer  "federal_state_id", null: false
+    t.integer  "organization_id",             null: false
+    t.integer  "federal_state_id",            null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "second_telephone"
-    t.string   "fax"
+    t.string   "second_telephone", limit: 32
+    t.string   "fax",              limit: 32
   end
 
   create_table "offers", force: true do |t|
     t.string   "name",             limit: 80,                 null: false
     t.text     "description",                                 null: false
     t.text     "todo"
-    t.string   "telephone"
+    t.string   "telephone",        limit: 32
     t.string   "contact_name"
     t.string   "email"
     t.string   "reach",                                       null: false
@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 20140922102546) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "organization_id",                             null: false
+    t.string   "fax",              limit: 32
   end
 
   create_table "offers_openings", id: false, force: true do |t|

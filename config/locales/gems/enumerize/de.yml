@@ -19,6 +19,7 @@ de:
         ohg: 'OHG'
         kg: 'KG'
         eg: 'eG'
+        state_entity: 'Staatliche Einrichtung'
         sonstige: 'Sonstige'
       umbrella:
         caritas: 'Caritas'

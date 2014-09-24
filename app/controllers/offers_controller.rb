@@ -14,6 +14,7 @@ class OffersController < ApplicationController
   end
 
   private
+
     def build_search_cache
       search_params = {}
       form_search_params = params.for(SearchForm)[:search_form]

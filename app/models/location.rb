@@ -23,7 +23,7 @@ class Location < ActiveRecord::Base
   # Methods
 
   def concat_address
-    if name and !name.empty?
+    if name && !name.empty?
       "#{name} (#{street} #{zip} #{city})"
     else
       "#{street} #{zip} #{city}"

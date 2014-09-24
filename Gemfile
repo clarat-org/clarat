@@ -11,7 +11,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production,:development] # postgres
+  gem 'pg', group: [:production, :development] # postgres
 end
 
 # Use SCSS for stylesheets
@@ -81,7 +81,7 @@ gem 'formtastic'
 gem 'friendly_id', '>= 5.0'
 
 group :production do
-  gem 'rails_12factor' #heroku recommends this
+  gem 'rails_12factor' # heroku recommends this
 end
 
 group :test do

@@ -9,7 +9,7 @@ class SearchForm
 
   attribute :query, String
 
-  def search page
+  def search
     Offer.search query, hitsPerPage: 5
   end
 end

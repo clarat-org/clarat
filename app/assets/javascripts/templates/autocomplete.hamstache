@@ -1,0 +1,8 @@
+.hit
+  .name {{{ _highlightResult.name.value }}}
+
+  {{#matchingAttributes}}
+  .attribute
+    %b {{ attribute }}
+    {{{ value }}}
+  {{/matchingAttributes}}

@@ -20,6 +20,7 @@ gem 'sass-rails', '~> 4.0.2'
 # More styling
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'twitter-typeahead-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -27,11 +28,17 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+# Templating for JS
+gem 'hogan_assets'
+group :assets do
+  gem 'haml'
+end
+
+# Templating with slim
+gem "slim-rails"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

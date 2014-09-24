@@ -39,10 +39,17 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Organization' do
+    list do
+      field :name
+      field :description
+      field :legal_form
+      field :charitable
+      field :completed
+    end
     weight -3
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :legal_form
     field :charitable
@@ -104,13 +111,20 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Offer' do
+    list do
+      field :name
+      field :description
+      field :frequent_changes
+      field :organization
+      field :completed
+    end
     weight -1
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :todo do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :telephone
     field :fax
@@ -137,6 +151,7 @@ RailsAdmin.config do |config|
       end
     end
     field :websites
+    field :completed
   end
 
   config.model 'Opening' do

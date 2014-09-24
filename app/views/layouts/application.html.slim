@@ -1,0 +1,16 @@
+doctype html
+html class='no-js' lang=I18n.locale
+  head
+    title Clarat
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    javascript:
+      document.Clarat.algolia_app_id = "#{Rails.application.secrets.algolia['app_id']}";
+      document.Clarat.algolia_pub_key = "#{Rails.application.secrets.algolia['pub_key']}";
+      document.Clarat.algolia_index = "#{Rails.application.secrets.algolia['index']}";
+
+    = csrf_meta_tags
+  body
+    .container-fluid
+      = yield

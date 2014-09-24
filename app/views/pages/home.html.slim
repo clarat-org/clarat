@@ -1,0 +1,5 @@
+h1 Clarat
+
+= semantic_form_for SearchForm.new, url: offers_path, html: { method: :get } do |f|
+  = f.input :query, input_html: { class: 'typeahead', placeholder: 'I am looking for...', spellcheck: false, autocomplete: 'off' }
+  = f.action :submit

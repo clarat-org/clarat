@@ -16,6 +16,10 @@ class Offer < ActiveRecord::Base
   extend Enumerize
   enumerize :reach, in: %w[local variable national]
 
+  # Friendly ID
+  extend FriendlyId
+  friendly_id :name, use: [:slugged]
+
   # Validations
   validates :name, length: { maximum: 80 }, presence: true
   validates :description, length: { maximum: 400 }, presence: true
@@ -23,13 +27,14 @@ class Offer < ActiveRecord::Base
   validates :reach, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :opening_specification, length: { maximum: 150 }
 
   validates :organization_id, presence: true
   validate :location_fits_organization # custom validation
 
   # Search
   include AlgoliaSearch
-  algoliasearch per_environment: true do
+  algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
     attributesToIndex ['name', 'description']
   end
 

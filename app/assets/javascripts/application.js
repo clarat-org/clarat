@@ -10,9 +10,17 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require setup
+//
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require hogan
+//= require_tree ./templates
 //
 //= require bootstrap-sprockets
+//= require algolia/algoliasearch.min
+//= require algolia/typeahead.jquery
+//
+//= require modules/autocomplete
 //= require_tree .

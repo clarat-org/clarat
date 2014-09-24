@@ -142,7 +142,7 @@ RailsAdmin.config do |config|
   config.model 'Opening' do
     field :day do
       help do
-        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet dies "nach Absprache".'
+        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet das an diesem Tag "nach Absprache".'
       end
     end
     field :open do

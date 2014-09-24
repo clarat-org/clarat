@@ -131,7 +131,7 @@ RailsAdmin.config do |config|
     field :opening_specification do
       help do
         'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
-        "jeden Monat" oder "jeden 2. Freitag". Sagt mir (Konstantin) auch gern
+        "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir (Konstantin) auch gern
         bescheid, wenn ihr ein einheitliches Format gefunden habt, mit dem alle
         Fälle abgedeckt werden können.'
       end

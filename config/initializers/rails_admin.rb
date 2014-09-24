@@ -131,9 +131,9 @@ RailsAdmin.config do |config|
     field :opening_specification do
       help do
         'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
-        "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir (Konstantin) auch gern
-        bescheid, wenn ihr ein einheitliches Format gefunden habt, mit dem alle
-        Fälle abgedeckt werden können.'
+        "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir
+        (Konstantin) auch gern bescheid, wenn ihr ein einheitliches Format
+        gefunden habt, mit dem alle Fälle abgedeckt werden können.'
       end
     end
     field :websites
@@ -142,7 +142,8 @@ RailsAdmin.config do |config|
   config.model 'Opening' do
     field :day do
       help do
-        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet das an diesem Tag "nach Absprache".'
+        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet
+        das an diesem Tag "nach Absprache".'
       end
     end
     field :open do

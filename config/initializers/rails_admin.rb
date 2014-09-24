@@ -128,13 +128,33 @@ RailsAdmin.config do |config|
     field :tags
     field :languages
     field :openings
+    field :opening_specification do
+      help do
+        'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
+        "jeden Monat" oder "jeden 2. Freitag". Sagt mir (Konstantin) auch gern
+        bescheid, wenn ihr ein einheitliches Format gefunden habt, mit dem alle
+        Fälle abgedeckt werden können.'
+      end
+    end
     field :websites
   end
 
   config.model 'Opening' do
-    field :day
-    field :open
-    field :close
+    field :day do
+      help do
+        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet dies "nach Absprache".'
+      end
+    end
+    field :open do
+      help do
+        'Required if "Close" given.'
+      end
+    end
+    field :close do
+      help do
+        'Required if "Open" given.'
+      end
+    end
 
     object_label_method :concat_day_and_times
 

@@ -44,6 +44,9 @@ RailsAdmin.config do |config|
     field :description do
       css_class "js-count-character"
     end
+    field :keywords do
+      css_class 'js-count-character'
+    end
     field :legal_form
     field :charitable
     field :founded
@@ -107,10 +110,13 @@ RailsAdmin.config do |config|
     weight -1
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
+    end
+    field :keywords do
+      css_class 'js-count-character'
     end
     field :todo do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :telephone
     field :fax

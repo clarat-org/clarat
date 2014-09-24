@@ -20,16 +20,16 @@ RailsAdmin.config do |config|
     dashboard                     # mandatory
     index                         # mandatory
     new do
-      except ['User']
+      except ['User', 'FederalState']
     end
     export
     bulk_delete do
-      except ['User']
+      except ['User', 'FederalState']
     end
     show
     edit
     delete do
-      except ['User']
+      except ['User', 'FederalState']
     end
     show_in_app
 

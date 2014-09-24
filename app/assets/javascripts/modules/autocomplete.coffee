@@ -1,31 +1,28 @@
 $(document).ready ->
-  # Replace the following values by your ApplicationID and ApiKey.
   algolia = new AlgoliaSearch(document.Clarat.algolia_app_id, document.Clarat.algolia_pub_key)
-  # replace YourIndexName by the name of the index you want to query.
-  index = algolia.initIndex(document.Clarat.algolia_index)
+  document.Clarat.index = algolia.initIndex(document.Clarat.algolia_index)
 
+  initTypeahead()
+
+  $(document).on 'newGeolocation', initTypeahead
+
+initTypeahead = ->
+  console.log 'initTypeahead'
   # Mustache templating by Hogan.js (http://mustache.github.io/)
   template = HoganTemplates['autocomplete']
 
-  # typeahead.js initialization
+  # typeahead.js (re)initialization
+  $('.typeahead').typeahead 'destroy'
   $('.typeahead').typeahead null,
-    source: index.ttAdapter({ hitsPerPage: 5 })
+    source: document.Clarat.index.ttAdapter
+      hitsPerPage: 5
+      aroundLatLng: document.Clarat.currentGeolocation
+      aroundRadius: 999999999
     displayKey: 'name'
     templates:
       suggestion: (hit) ->
         # select matching attributes only
-        hit.matchingAttributes = []
-        for attribute, matches of hit._highlightResult
-          if attribute is 'name'
-            # already handled by the template
-            continue
-
-          # all others attributes that are matching should be added in the matchingAttributes array
-          # so we can display them in the dropdown menu. Non-matching attributes are skipped.
-          if matches.matchLevel isnt 'none'
-            hit.matchingAttributes.push
-              attribute: attribute
-              value: matches.value
+        hit.matchingAttributes = [] # DELETE IF NOT NEEDED
 
         # render the hit using Hogan.js
         template.render(hit)

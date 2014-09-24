@@ -27,6 +27,7 @@ class Offer < ActiveRecord::Base
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :opening_specification, length: { maximum: 150 }
+  validates :keywords, length: { maximum: 150 }
 
   validates :organization_id, presence: true
   validate :location_fits_organization # custom validation
@@ -35,9 +36,20 @@ class Offer < ActiveRecord::Base
   include AlgoliaSearch
   algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
     attributesToIndex ['name', 'description']
+    add_attribute :_geoloc
   end
 
   # Methods
+
+  # Offer's location's geo coordinates for indexing
+  def _geoloc
+    if location
+      {
+        'lat' => location.latitude || '0.0',
+        'lng' => location.longitude || '0.0'
+      }
+    end
+  end
 
   private
     # Custom Validation: Ensure selected organization is the same as the selected location's organization

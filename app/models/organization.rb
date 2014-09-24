@@ -15,6 +15,10 @@ class Organization < ActiveRecord::Base
                                 state_entity]
   enumerize :umbrella, in: %w[caritas diakonie awo dpw drk zwst]
 
+  # Friendly ID
+  extend FriendlyId
+  friendly_id :name, use: [:slugged]
+
   # Validations
   validates :name, length: { maximum: 100 }, presence: true
   validates :description, length: { maximum: 400 }, presence: true

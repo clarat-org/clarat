@@ -20,7 +20,6 @@ gem 'sass-rails', '~> 4.0.2'
 # More styling
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'twitter-typeahead-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -78,6 +77,8 @@ gem 'algoliasearch-rails'
 
 gem 'virtus' # form objects
 gem 'formtastic'
+
+gem 'friendly_id', '>= 5.0'
 
 group :production do
   gem 'rails_12factor' #heroku recommends this

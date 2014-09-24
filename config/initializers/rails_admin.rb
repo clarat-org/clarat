@@ -39,10 +39,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Organization' do
-    weight -3
+    weight(-3)
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :legal_form
     field :charitable
@@ -69,7 +69,7 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
-    weight -2
+    weight(-2)
     field :organization
     field :name
     field :street
@@ -104,13 +104,13 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Offer' do
-    weight -1
+    weight(-1)
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :todo do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
     field :telephone
     field :fax

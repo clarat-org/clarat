@@ -7,7 +7,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   belongs_to :organization, inverse_of: :offers
-  # Attention: former has_one :organization, through: :locations - but there can also be offers without locations
+  # Attention: former has_one :organization, through: :locations - but there
+  #   can also be offers without locations
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 
@@ -35,11 +36,13 @@ class Offer < ActiveRecord::Base
   # Methods
 
   private
-    # Custom Validation: Ensure selected organization is the same as the selected location's organization
+
+    # Custom Validation: Ensure selected organization is the same as the
+    #   selected location's organization
     def location_fits_organization
-      if self.location && self.location.organization_id != self.organization_id
-        errors.add(:location_id, I18n.t("validations.offer.location_fits_organization.location_error"))
-        errors.add(:organization_id, I18n.t("validations.offer.location_fits_organization.organization_error"))
+      if location && location.organization_id != organization_id
+        errors.add(:location_id, I18n.t('validations.offer.location_fits_organization.location_error'))
+        errors.add(:organization_id, I18n.t('validations.offer.location_fits_organization.organization_error'))
       end
     end
 end

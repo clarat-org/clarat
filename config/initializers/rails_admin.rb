@@ -62,6 +62,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+    field :completed
 
     show do
       field :offers

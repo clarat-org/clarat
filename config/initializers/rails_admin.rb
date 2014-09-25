@@ -101,6 +101,10 @@ RailsAdmin.config do |config|
     end
     field :websites
 
+    show do
+      field :offers
+    end
+
     object_label_method :concat_address
   end
 

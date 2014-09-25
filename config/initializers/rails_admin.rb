@@ -230,4 +230,17 @@ RailsAdmin.config do |config|
   config.model 'Hyperlink' do
     weight 2
   end
+
+  config.model 'SearchLocation' do
+    weight 2
+    field :query do
+      read_only true
+    end
+    field :latitude do
+      read_only true
+    end
+    field :longitude do
+      read_only true
+    end
+  end
 end

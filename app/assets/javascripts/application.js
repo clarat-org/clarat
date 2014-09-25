@@ -23,4 +23,7 @@
 //= require algolia/typeahead.jquery
 //
 //= require modules/autocomplete
+//= require modules/geolocation
+//= require modules/search_location
+//
 //= require_tree .

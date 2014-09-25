@@ -8,8 +8,12 @@ class SearchForm
   # end
 
   attribute :query, String
+  attribute :geoloc, String
 
   def search page
-    Offer.search query, hitsPerPage: 5
+    Offer.search query,
+      hitsPerPage: 5,
+      aroundLatLng: geoloc,
+      aroundRadius: 999999999
   end
 end

@@ -43,19 +43,17 @@ class Offer < ActiveRecord::Base
 
   # Offer's location's geo coordinates for indexing
   def _geoloc
-    if location
-      {
-        'lat' => location.latitude || '0.0',
-        'lng' => location.longitude || '0.0'
-      }
-    end
+    {
+      'lat' => location.try(:latitude) || '0.0',
+      'lng' => location.try(:longitude) || '0.0'
+    }
   end
 
   private
 
     # Custom Validation: Ensure selected organization is the same as the selected location's organization
     def location_fits_organization
-      if self.location && self.location.organization_id != self.organization_id
+      if location && location.organization_id != organization_id
         errors.add(:location_id, I18n.t("validations.offer.location_fits_organization.location_error"))
         errors.add(:organization_id, I18n.t("validations.offer.location_fits_organization.organization_error"))
       end

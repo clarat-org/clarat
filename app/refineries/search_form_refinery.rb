@@ -5,7 +5,7 @@ class SearchFormRefinery < ApplicationRefinery
 
   def default
     [
-      :query
+      :query, :geoloc
     ]
   end
 end

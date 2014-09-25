@@ -22,7 +22,6 @@ initTypeahead = ->
   $('.typeahead').typeahead 'destroy'
   document.Clarat.typeahead = $('.typeahead').typeahead null,
     source: generateSource()
-    displayKey: 'name'
     templates:
       suggestion: (hit) ->
         template.render(hit) # render the hit using Hogan.js

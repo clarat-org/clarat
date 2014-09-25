@@ -3,6 +3,7 @@ ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
+gem 'rails-observers' # observers got extracted since rails 4
 
 # Translations
 gem 'rails-i18n'

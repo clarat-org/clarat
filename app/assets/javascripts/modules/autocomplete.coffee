@@ -5,6 +5,7 @@ $(document).ready ->
   initTypeahead()
 
   $(document).on 'newGeolocation', initTypeahead
+  document.Clarat.typeahead.on 'typeahead:selected', navigateToHit
 
 initTypeahead = ->
   console.log 'initTypeahead'
@@ -13,7 +14,7 @@ initTypeahead = ->
 
   # typeahead.js (re)initialization
   $('.typeahead').typeahead 'destroy'
-  $('.typeahead').typeahead null,
+  document.Clarat.typeahead = $('.typeahead').typeahead null,
     source: document.Clarat.index.ttAdapter
       hitsPerPage: 5
       aroundLatLng: document.Clarat.currentGeolocation
@@ -26,3 +27,7 @@ initTypeahead = ->
 
         # render the hit using Hogan.js
         template.render(hit)
+
+navigateToHit = (event, suggestion, id) ->
+  console.log id
+  window.location.href = "/offers/#{suggestion.slug}"

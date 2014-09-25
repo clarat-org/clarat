@@ -51,6 +51,7 @@ class Offer < ActiveRecord::Base
   end
 
   private
+
     # Custom Validation: Ensure selected organization is the same as the selected location's organization
     def location_fits_organization
       if self.location && self.location.organization_id != self.organization_id

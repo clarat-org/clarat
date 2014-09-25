@@ -9,11 +9,12 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.find(params[:id])
+    @offer = Offer.friendly.find(params[:id])
     respond_with @offer
   end
 
   private
+
     def build_search_cache
       search_params = {}
       form_search_params = params.for(SearchForm)[:search_form]

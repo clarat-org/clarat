@@ -8,5 +8,5 @@ class Website < ActiveRecord::Base
 
   # Validations
   validates :sort, presence: true
-  validates :url, format: /https?:\/\/\S+\.\S+/, uniqueness: true, presence: true
+  validates :url, format: %r{https?://\S+\.\S+}, uniqueness: true, presence: true
 end

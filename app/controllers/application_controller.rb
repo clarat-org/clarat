@@ -14,8 +14,8 @@ class ApplicationController < ActionController::Base
   # after_action :verify_policy_scoped, :only => :index
 
   # I18n
-  before_filter :get_language
-  def get_language
+  before_filter :current_language
+  def current_language
     I18n.locale = params[:locale] || 'en'
   end
 end

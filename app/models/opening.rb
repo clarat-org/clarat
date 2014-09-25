@@ -4,7 +4,7 @@ class Opening < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :day, in: %w[mon tue wed thu fri sat sun]
+  enumerize :day, in: %w(mon tue wed thu fri sat sun)
 
   # Validations
   validates :day, presence: true, uniqueness: { scope: [:open, :close] }
@@ -16,7 +16,7 @@ class Opening < ActiveRecord::Base
   # Methods
 
   def concat_day_and_times
-    if day and open and close
+    if day && open && close
       "#{day.titleize} #{open.strftime('%H:%M')}-#{close.strftime('%H:%M')}"
     elsif day
       "#{day.titleize} (appointment)"
@@ -25,6 +25,6 @@ class Opening < ActiveRecord::Base
 
   # if no times are set the opening is considered "upon appointment"
   def appointment?
-    not open and not close
+    !open && !close
   end
 end

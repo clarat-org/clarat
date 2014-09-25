@@ -1,33 +1,37 @@
 $(document).ready ->
-  algolia = new AlgoliaSearch(document.Clarat.algolia_app_id, document.Clarat.algolia_pub_key)
-  document.Clarat.index = algolia.initIndex(document.Clarat.algolia_index)
+  if $('.typeahead').length
+    initTypeahead()
 
-  initTypeahead()
+    $(document).on 'newGeolocation', ->
+      document.Clarat.typeahead.data('ttTypeahead').dropdown.datasets[0].source = # don't ask
+        generateSource()
 
-  $(document).on 'newGeolocation', initTypeahead
-  document.Clarat.typeahead.on 'typeahead:selected', navigateToHit
+    document.Clarat.typeahead.on 'typeahead:selected', navigateToHit
 
 initTypeahead = ->
-  console.log 'initTypeahead'
-  # Mustache templating by Hogan.js (http://mustache.github.io/)
+  document.Clarat.index = new AlgoliaSearch(
+    document.Clarat.algolia_app_id,
+    document.Clarat.algolia_pub_key
+  ).initIndex(
+    document.Clarat.algolia_index
+  )
+
   template = HoganTemplates['autocomplete']
 
   # typeahead.js (re)initialization
   $('.typeahead').typeahead 'destroy'
   document.Clarat.typeahead = $('.typeahead').typeahead null,
-    source: document.Clarat.index.ttAdapter
-      hitsPerPage: 5
-      aroundLatLng: document.Clarat.currentGeolocation
-      aroundRadius: 999999999
+    source: generateSource()
     displayKey: 'name'
     templates:
       suggestion: (hit) ->
-        # select matching attributes only
-        hit.matchingAttributes = [] # DELETE IF NOT NEEDED
+        template.render(hit) # render the hit using Hogan.js
 
-        # render the hit using Hogan.js
-        template.render(hit)
+generateSource = ->
+  document.Clarat.index.ttAdapter
+    hitsPerPage: 5
+    aroundLatLng: document.Clarat.currentGeolocation
+    aroundRadius: 999999999
 
 navigateToHit = (event, suggestion, id) ->
-  console.log id
-  window.location.href = "/offers/#{suggestion.slug}"
+  Turbolinks.visit "/offers/#{suggestion.slug}"

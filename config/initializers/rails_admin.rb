@@ -127,10 +127,10 @@ RailsAdmin.config do |config|
     field :description do
       css_class 'js-count-character'
     end
-    field :keywords do
+    field :todo do
       css_class 'js-count-character'
     end
-    field :todo do
+    field :keywords do
       css_class 'js-count-character'
     end
     field :telephone

@@ -17,10 +17,17 @@ class Offer < ActiveRecord::Base
 
   # Friendly ID
   extend FriendlyId
-  friendly_id :name, use: [:slugged]
+  friendly_id :slug_candidates, use: [:slugged]
+
+  def slug_candidates
+    [
+      :name,
+      [:name, :location_zip]
+    ]
+  end
 
   # Validations
-  validates :name, length: { maximum: 80 }, presence: true
+  validates :name, length: { maximum: 80 }, presence: true, uniqueness: { scope: :location_id }
   validates :description, length: { maximum: 400 }, presence: true
   validates :todo, length: { maximum: 400 }, presence: true
   validates :reach, presence: true
@@ -35,11 +42,13 @@ class Offer < ActiveRecord::Base
   # Search
   include AlgoliaSearch
   algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
-    attributesToIndex ['name', 'description']
+    attributesToIndex ['name', 'description', 'keywords']
     add_attribute :_geoloc
   end
 
   # Methods
+
+  delegate :zip, to: :location, prefix: true
 
   # Offer's location's geo coordinates for indexing
   def _geoloc

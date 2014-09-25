@@ -80,6 +80,8 @@ gem 'formtastic'
 
 gem 'friendly_id', '>= 5.0'
 
+gem 'geocoder'
+
 group :production do
   gem 'rails_12factor' #heroku recommends this
 end

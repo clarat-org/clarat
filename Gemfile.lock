@@ -98,6 +98,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
+    geocoder (1.2.5)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -296,6 +297,7 @@ DEPENDENCIES
   enumerize
   formtastic
   friendly_id (>= 5.0)
+  geocoder
   haml
   hirb
   hogan_assets

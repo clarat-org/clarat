@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925105318) do
+ActiveRecord::Schema.define(version: 20140925144849) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,17 +46,17 @@ ActiveRecord::Schema.define(version: 20140925105318) do
   end
 
   create_table "locations", force: true do |t|
-    t.string   "street",                                                null: false
+    t.string   "street",                      null: false
     t.string   "addition"
-    t.string   "zip",                                                   null: false
-    t.string   "city",                                                  null: false
+    t.string   "zip",                         null: false
+    t.string   "city",                        null: false
     t.string   "telephone",        limit: 32
     t.string   "email"
     t.boolean  "hq"
-    t.decimal  "latitude",                    precision: 10, scale: 10
-    t.decimal  "longitude",                   precision: 10, scale: 10
-    t.integer  "organization_id",                                       null: false
-    t.integer  "federal_state_id",                                      null: false
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "organization_id",             null: false
+    t.integer  "federal_state_id",            null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
@@ -117,9 +117,9 @@ ActiveRecord::Schema.define(version: 20140925105318) do
   end
 
   create_table "search_locations", force: true do |t|
-    t.string   "query",                                null: false
-    t.decimal  "latitude",   precision: 10, scale: 10, null: false
-    t.decimal  "longitude",  precision: 10, scale: 10, null: false
+    t.string   "query",      null: false
+    t.float    "latitude",   null: false
+    t.float    "longitude",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

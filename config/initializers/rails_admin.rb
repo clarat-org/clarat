@@ -200,6 +200,10 @@ RailsAdmin.config do |config|
     list do
       sort_by :name
     end
+
+    show do
+      field :offers
+    end
   end
 
   config.model 'Language' do

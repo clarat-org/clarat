@@ -20,7 +20,13 @@ class Location < ActiveRecord::Base
   validates :organization_id, presence: true
   validates :federal_state_id, presence: true
 
+  # Geocoding
+  geocoded_by :full_address
+  after_validation :geocode, unless: :latitude # TEMPORARY! Use async processing (also remember address might have changed)
+
   # Methods
+
+  delegate :name, to: :federal_state, prefix: true
 
   def concat_address
     if name and !name.empty?
@@ -29,4 +35,10 @@ class Location < ActiveRecord::Base
       "#{street} #{zip} #{city}"
     end
   end
+
+  private
+
+    def full_address
+      "#{street}, #{zip} #{city} #{federal_state_name}"
+    end
 end

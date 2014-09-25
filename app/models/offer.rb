@@ -44,11 +44,13 @@ class Offer < ActiveRecord::Base
   algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
     attributesToIndex ['name', 'description', 'keywords']
     add_attribute :_geoloc
+    add_attribute :organization_name
   end
 
   # Methods
 
   delegate :zip, to: :location, prefix: true
+  delegate :name, to: :organization, prefix: true
 
   # Offer's location's geo coordinates for indexing
   def _geoloc

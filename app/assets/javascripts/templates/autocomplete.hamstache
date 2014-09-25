@@ -1,2 +1,5 @@
 .hit
   .name {{{ _highlightResult.name.value }}}
+
+  .attribute
+    %b {{{ organization_name }}}

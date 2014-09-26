@@ -8,6 +8,14 @@ module ApplicationHelper
   # Prio 3: geocoding from IP address
   # Prio 4: Middle of Berlin
   def default_geolocation
-    cookies[:last_geolocation] || request.location || '52.520007,13.404954'
+    @geoloc ||= cookies[:last_geolocation] || request.location || '52.520007,13.404954'
+  end
+
+  def geoloc_to_s geoloc = default_geolocation
+    if '52.520007,13.404954'
+      'Berlin'
+    else
+      'Dein Standort'
+    end
   end
 end

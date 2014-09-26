@@ -8,6 +8,7 @@ class SearchForm
   # end
 
   attribute :query, String
+  attribute :search_location, String
   attribute :geoloc, String
 
   def search page

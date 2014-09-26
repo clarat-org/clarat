@@ -1,4 +1,4 @@
 = semantic_form_for SearchForm.new, url: offers_path, html: { method: :get } do |f|
-  = f.input :query, label: false, input_html: { class: 'typeahead', placeholder: 'I am looking for...', spellcheck: false, autocomplete: 'off' }
+  = f.input :query, label: false, input_html: { class: 'typeahead', placeholder: 'Suche nach Angeboten...', spellcheck: false, autocomplete: 'off', autofocus: true }
   = f.input :geoloc, as: :hidden, input_html: { class: 'JS-Search-location', value: default_geolocation }
-  = f.action :submit, label: '->'
+  = f.action :submit, label: 'Suche', button_html: {class: 'btn btn-primary btn-lg'}

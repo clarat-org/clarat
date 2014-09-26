@@ -29,5 +29,6 @@ class OffersController < ApplicationController
         { latitude: offer.location.latitude, longitude: offer.location.longitude }
       end.compact
       @position = @search_cache.geolocation
+      cookies[:last_geolocation] = @position.to_s
     end
 end

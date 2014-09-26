@@ -2,3 +2,9 @@ h1 Results
 ul
   - @offers.each do |offer|
     li= link_to offer.name, offer_path(id: offer)
+
+#map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
+
+- content_for :view_specific_scripts do
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
+  = javascript_include_tag "gmaps_search_results.js"

@@ -9,12 +9,22 @@ class SearchForm
 
   attribute :query, String
   attribute :search_location, String
-  attribute :geoloc, String
+  attribute :generated_geolocation, String
 
   def search page
     Offer.search query,
       hitsPerPage: 5,
-      aroundLatLng: geoloc,
+      aroundLatLng: geolocation,
       aroundRadius: 999999999
+  end
+
+  def geolocation
+    @geolocation ||=
+      if generated_geolocation == 'Dein Standort'
+        generated_geolocation
+      else
+        result = SearchLocation.find_or_generate search_location
+        Geolocation.new result
+      end
   end
 end

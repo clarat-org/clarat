@@ -30,5 +30,8 @@ module Clarat
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+    config.assets.precompile += %w( gmaps_search_results.js )
   end
 end

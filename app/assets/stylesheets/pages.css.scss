@@ -2,6 +2,86 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.asdf {
-  color: red;
+$clarat-yellow: #ffbb10;
+
+// Increase general font size
+body {
+  font-size: 2em;
+}
+
+.main-search {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  text-align: center;
+  list-style-type: none;
+  li {
+    display: inline;
+  }
+}
+
+.input-xlg {
+  height: 58px;
+  padding: 10px 16px;
+  font-size: 1em;
+  line-height: 1.33;
+  border-radius: 6px;
+  width: 10em;
+}
+
+.btn-xlg {
+  height: 58px;
+  font-size: 1em;
+}
+
+.btn-aligned {
+  vertical-align: top;
+}
+
+.btn {
+  background-color: $clarat-yellow;
+}
+
+.background-image {
+  background: url('background/spielplatz.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+
+.container-full-size {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.about-teaser {
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.about-background {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+.about-text {
+  font-size: 2em;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.about-yellow {
+  background-color: $clarat-yellow;
+  color: white;
+}
+
+.about-2c {
+  padding: 1em 1em 1em 1em;
+  .description-2c {
+    padding: 1em 5% 1em 5%;
+    text-align: justify;
+  }
 }

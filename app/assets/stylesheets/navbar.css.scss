@@ -1,0 +1,13 @@
+.navbar-transparent {
+  background:transparent;
+  // to make sure there is no white background (why does it work this way?)
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// Remove thin white line that screws with the image
+.navbar {
+  border: none;
+}

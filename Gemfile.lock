@@ -297,6 +297,7 @@ DEPENDENCIES
   coveralls
   devise
   enumerize
+  font-awesome-rails
   formtastic
   friendly_id (>= 5.0)
   geocoder

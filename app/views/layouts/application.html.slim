@@ -9,5 +9,5 @@ html class='no-js' lang=I18n.locale
 
     = csrf_meta_tags
   body
-    .container-fluid
-      = yield
+    = render 'layouts/partials/navigation'
+    = yield

@@ -5,6 +5,16 @@ Clarat::Application.routes.draw do
     root to: "pages#home"
 
     resources :offers, only: [:index, :show]
+
+    # Sidekiq interface
+    require 'sidekiq/web'
+    constraint = lambda do |request|
+      request.env['warden'].authenticate? && request.env['warden'].user.admin?
+    end
+    constraints constraint do
+      mount Sidekiq::Web => '/sidekiq'
+    end
+
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

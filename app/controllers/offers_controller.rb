@@ -26,7 +26,7 @@ class OffersController < ApplicationController
     def set_gmaps_variables
       @markers = @offers.map do |offer|
         next unless offer.location
-        { latitude: offer.location.latitude, longitude: offer.location.longitude }
+        Geolocation.new(offer.location).to_h
       end.compact
       @position = @search_cache.geolocation
       cookies[:last_geolocation] = @position.to_s

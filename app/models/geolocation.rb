@@ -14,10 +14,21 @@ class Geolocation
   end
 
   def to_s
+    return nil unless complete?
     "#{@latitude},#{@longitude}"
   end
 
   def to_json
-    "{\"latitude\": #{@latitude}, \"longitude\": #{@longitude}}"
+    return nil unless complete?
+    "{\"latitude\":#{@latitude},\"longitude\":#{@longitude}}"
+  end
+
+  def to_h
+    return nil unless complete?
+    { latitude: @latitude, longitude: @longitude }
+  end
+
+  def complete?
+    @latitude && @longitude
   end
 end

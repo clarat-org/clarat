@@ -21,6 +21,16 @@ body {
   }
 }
 
+.main-search-nav {
+  position: absolute;
+  bottom: 20%;
+  list-style-type: none;
+  left: 40%;
+  li {
+    display: inline;
+  }
+}
+
 .input-xlg {
   height: 58px;
   padding: 10px 16px;
@@ -113,4 +123,8 @@ body {
   &:hover {
     color: #d2691e;
   }
+}
+
+.navbar-padding {
+  padding-top: 105px;
 }

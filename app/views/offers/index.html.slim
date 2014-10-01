@@ -1,10 +1,65 @@
-h1 Results
-ul
-  - @offers.each do |offer|
-    li= link_to offer.name, offer_path(id: offer)
+.navbar-padding
+  h1 Results
+  ul
+    - @offers.each do |offer|
+      li= link_to offer.name, offer_path(id: offer)
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
+    | Mit Clarat werden wir das Netz an Unterstützungsangeboten der Kinder-
+    | und Jugendförderung in Deutschland sichtbar und zugänglich machen.
+    | Entlang einfacher, leicht verständlicher Suchkriterien wird es Familien
+    | und Unterstützern ermöglicht, genau das Angebot zu finden, das sie
+    | erreichen können – und das sie erreicht.
+    br
+    br
+    | Clarat ist für uns in seiner Übersetzung aus dem Lateinischen Programm:
+    | Es klärt auf.
 
-#map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
+  #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 
-- content_for :view_specific_scripts do
-  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
-  = javascript_include_tag "gmaps_search_results.js"
+  - content_for :view_specific_scripts do
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
+    = javascript_include_tag "gmaps_search_results.js"

@@ -1,9 +1,9 @@
 class LocationObserver < ActiveRecord::Observer
-
-  # update offer (_geoloc) index after coordinates changed
-  def after_save
-    if latitude_changed? || longitude_changed?
-      location.offers.find_each(&:save)
+  # queue geocoding
+  def after_save l
+    if l.street_changed? || l.addition_changed? || l.zip_changed? ||
+       l.city_changed? || l.federal_state_id_changed?
+      GeocodingWorker.perform_async l.id
     end
   end
 end

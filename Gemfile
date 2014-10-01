@@ -46,6 +46,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Background processing
+gem 'sidekiq'
+gem 'sinatra', '>= 1.3.0', :require => nil # for sidekiq's web interface
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -90,6 +95,20 @@ group :production do
   gem 'rails_12factor' #heroku recommends this
 end
 
+group :development do
+  gem 'spring' # faster rails start
+
+  # errors
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  # debugging in chrome with RailsPanel
+  gem 'meta_request'
+
+  # Quiet Assets to disable asset pipeline in log
+  gem 'quiet_assets'
+end
+
 group :test do
   gem 'coveralls', require: false
   gem 'memory_test_fix'  # Sqlite inmemory fix
@@ -103,10 +122,12 @@ group :development, :test do
   gem 'pry-byebug' # kickass debugging
   gem 'pry-stack_explorer'
 
-  # errors
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  # test suite additions
+  gem "rails_best_practices"
+  gem 'brakeman'  # security test: execute with 'brakeman'
+  gem 'rubocop' # style enforcement
 
-  # style
-  gem 'rubocop'
+  # dev help
+  gem 'thin' # Replace Webrick
+  gem 'bullet' # Notify about n+1 queries
 end

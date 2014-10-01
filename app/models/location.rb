@@ -16,13 +16,13 @@ class Location < ActiveRecord::Base
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :email, format: /\A.+@.+\..+\z/, allow_blank: true
 
   validates :organization_id, presence: true
   validates :federal_state_id, presence: true
 
   # Geocoding
   geocoded_by :full_address
-  after_validation :geocode, unless: :latitude # TEMPORARY! Use async processing (also remember address might have changed)
 
   # Methods
 

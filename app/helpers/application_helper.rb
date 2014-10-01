@@ -12,10 +12,10 @@ module ApplicationHelper
   end
 
   def geoloc_to_s geoloc = default_geolocation
-    if '52.520007,13.404954'
+    if geoloc == '52.520007,13.404954'
       'Berlin'
     else
-      'Dein Standort'
+      'Berlin' # TODO: reverse geocoding
     end
   end
 end

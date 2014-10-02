@@ -5,17 +5,57 @@ h2 Nächste Schritte
 p= @offer.next_steps
 
 h2 Kontakt
-p
-  - if @offer.contact_name?
-    | Ansprechpartner:
-    =@offer.contact_name
-  - if @offer.telephone?
-    | Telefon:
-    =@offer.telephone
-  - if @offer.fax?
-    | Fax:
-    =@offer.fax
-  - if @offer.email?
-    | E-Mail:
-    =@offer.email
+- if @offer.contact_name?
+  p
+  | Ansprechpartner:
+  =@offer.contact_name
+- if @offer.telephone?
+  p
+  | Telefon:
+  =@offer.telephone
+- if @offer.fax?
+  p
+  | Fax:
+  =@offer.fax
+- if @offer.email?
+  p
+  | E-Mail:
+  =@offer.email
 
+h2 Wo
+p
+- if @offer.location.name?
+  =@offer.location.name
+p
+=@offer.location.street
+- if @offer.location.addition?
+  p
+  =@offer.location.addition
+p
+=>@offer.location.zip
+=@offer.location.city
+
+h2 Öffnungszeiten
+- unless @offer.openings.empty?
+  -@offer.openings.each do |opening|
+    p
+    =opening.day
+    ' :
+    =opening.open.strftime("%H")
+    | :
+    =opening.open.strftime("%M")
+    '  -
+    =opening.close.strftime("%H")
+    | :
+    =opening.close.strftime("%M")
+
+h2 Anbieter
+=@offer.organization.name
+
+h2 Schlagworte:
+- unless @offer.tags.empty?
+  p
+  -@offer.tags.each do |tag|
+    =tag.name
+    - unless tag == @offer.tags.last
+      ' ,

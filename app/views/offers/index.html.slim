@@ -1,13 +1,21 @@
-h1 Results
-ul
-  - @offers.each do |offer|
-    li id="offer#{offer.id}"
-      = link_to offer.name, offer_path(id: offer)
+<<<<<<< HEAD
+.grey-background
+  .container
+    .col-lg-8
+      h1
+        = @offers.count
+        |  Angebote gefunden
+      ul.search-results
+        - @offers.each do |offer|
+          .yellow-background.search-headline
+            li= link_to offer.name, offer_path(id: offer)
+          .white-background.search-subtitle
+            = offer.organization.name
+          br
+      = paginate @offers
 
-= paginate @offers
+  #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 
-#map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
-
-- content_for :view_specific_scripts do
-  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
-  = javascript_include_tag "gmaps_search_results.js"
+  - content_for :view_specific_scripts do
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
+    = javascript_include_tag "gmaps_search_results.js"

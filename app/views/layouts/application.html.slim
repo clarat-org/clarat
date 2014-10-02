@@ -10,6 +10,10 @@ html class='no-js' lang=I18n.locale
     = csrf_meta_tags
   body
     .container-fluid
-      = yield
-
+    - if request.env['PATH_INFO'] == '/'
+      = render 'layouts/partials/navigation'
+    - else
+      = render 'layouts/partials/search_navigation'
+    = yield
     = content_for :view_specific_scripts
+    = render 'layouts/partials/footer'

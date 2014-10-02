@@ -29,7 +29,7 @@ one:
 two:
   name: MyString
   description: MyString
-  todo: MyText
+  next_steps: MyText
   website: MyString
   telephone: MyString
   contact_name: MyString

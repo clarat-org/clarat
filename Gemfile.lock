@@ -379,6 +379,7 @@ DEPENDENCIES
   coveralls
   devise
   enumerize
+  font-awesome-rails
   factory_girl_rails
   ffaker
   formtastic

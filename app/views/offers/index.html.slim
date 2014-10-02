@@ -3,7 +3,9 @@ ul
   - @offers.each do |offer|
     li id="offer#{offer.id}"
       = link_to offer.name, offer_path(id: offer)
--# TODO: pagination
+
+= paginate @offers
+
 #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 
 - content_for :view_specific_scripts do

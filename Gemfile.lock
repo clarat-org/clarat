@@ -389,6 +389,7 @@ DEPENDENCIES
   hogan_assets
   jbuilder (~> 1.2)
   jquery-rails
+  kaminari
   memory_test_fix
   meta_request
   paper_trail

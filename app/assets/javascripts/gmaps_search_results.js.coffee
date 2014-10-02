@@ -29,3 +29,4 @@ initialize = ->
     map.fitBounds bounds
 
 google.maps.event.addDomListener window, 'load', initialize
+google.maps.event.addDomListener document, 'page:load', initialize

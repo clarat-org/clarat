@@ -8,6 +8,7 @@ $clarat-hover-yellow: #f6b000;
 // Increase general font size
 body {
   font-size: 2em;
+  margin-top: 105px;
 }
 
 .main-search {
@@ -89,6 +90,12 @@ body {
 .yellow-background {
   background-color: $clarat-yellow;
   color: white;
+  li a {
+    color: white;
+    &:hover {
+      color: $clarat-hover-yellow;
+    }
+  }
 }
 
 .about-2c {
@@ -125,6 +132,25 @@ body {
   }
 }
 
-.navbar-padding {
-  padding-top: 105px;
+.search-results {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.search-headline {
+  // font-size: 1.5em;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.grey-background {
+  background-color: #E5E4E2;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.search-subtitle {
+  font-size: 0.75em;
+  padding: 0 0.75em 0 0.75em;
 }

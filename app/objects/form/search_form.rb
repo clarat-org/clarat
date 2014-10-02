@@ -13,7 +13,7 @@ class SearchForm
 
   def search page
     Offer.search query,
-      hitsPerPage: 5,
+      page: page,
       aroundLatLng: geolocation,
       aroundRadius: 999999999
   end

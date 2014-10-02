@@ -12,7 +12,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production,:development] # postgres
+  gem 'pg', group: [:production, :development] # postgres
 end
 
 # Use SCSS for stylesheets
@@ -38,7 +38,7 @@ group :assets do
 end
 
 # Templating with slim
-gem "slim-rails"
+gem 'slim-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -77,6 +77,8 @@ gem 'arcane'
 gem 'enumerize'
 
 gem 'paper_trail'
+
+gem 'kaminari' # pagination
 
 # search
 gem 'algoliasearch-rails'
@@ -123,11 +125,16 @@ group :development, :test do
   gem 'pry-stack_explorer'
 
   # test suite additions
-  gem "rails_best_practices"
+  gem 'rails_best_practices'
   gem 'brakeman'  # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
 
   # dev help
   gem 'thin' # Replace Webrick
   gem 'bullet' # Notify about n+1 queries
+end
+
+group :development, :test, :staging do
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end

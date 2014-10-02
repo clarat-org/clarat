@@ -9,6 +9,7 @@ html class='no-js' lang=I18n.locale
 
     = csrf_meta_tags
   body
+    .container-fluid
     - if request.env['PATH_INFO'] == '/'
       = render 'layouts/partials/navigation'
     - else

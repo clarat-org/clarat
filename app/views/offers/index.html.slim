@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .grey-background
   .container
     .col-lg-8
@@ -11,6 +12,7 @@
           .white-background.search-subtitle
             = offer.organization.name
           br
+      = paginate @offers
 
   #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 

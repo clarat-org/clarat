@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $clarat-yellow: #ffbb10;
-$clarat-hover-yellow: #f6b000;
+$clarat-hover-brown: #6F4E37;
 
 // Increase general font size
 body {
@@ -14,7 +14,7 @@ body {
 .main-search {
   position: absolute;
   width: 100%;
-  bottom: 20%;
+  bottom: 30%;
   text-align: center;
   list-style-type: none;
   li {
@@ -52,7 +52,7 @@ body {
 .btn {
   background-color: $clarat-yellow;
   &:hover {
-    background-color: $clarat-hover-yellow;
+    background-color: $clarat-hover-brown;
   }
 }
 
@@ -93,7 +93,7 @@ body {
   li a {
     color: white;
     &:hover {
-      color: $clarat-hover-yellow;
+      color: $clarat-hover-brown;
     }
   }
 }
@@ -128,7 +128,15 @@ body {
 .font-white {
   color: white;
   &:hover {
-    color: #d2691e;
+    color: $clarat-hover-brown;
+    text-decoration: none;
+  }
+}
+
+.icon-white {
+  color: white;
+  &:hover {
+    color: white;
   }
 }
 

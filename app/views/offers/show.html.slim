@@ -7,19 +7,19 @@ p= @offer.next_steps
 h2 Kontakt
 - if @offer.contact_name?
   p
-  | Ansprechpartner:
+  ' Ansprechpartner:
   =@offer.contact_name
 - if @offer.telephone?
   p
-  | Telefon:
+  ' Telefon:
   =@offer.telephone
 - if @offer.fax?
   p
-  | Fax:
+  ' Fax:
   =@offer.fax
 - if @offer.email?
   p
-  | E-Mail:
+  ' E-Mail:
   =@offer.email
 
 h2 Wo

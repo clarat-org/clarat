@@ -14,11 +14,15 @@ $clarat-yellow: #ffbb10;
 }
 
 .navbar-search {
-  background-color: $clarat-yellow;
   box-shadow: 0 1px 1px #909090;
   position: relative;
 }
 
 .navbar-padding {
-  margin-top: -105px;
+  margin-top: -79px;
+}
+
+.search-nav-image {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }

@@ -1,2 +1,21 @@
 h1= @offer.name
 p= @offer.description
+
+h2 Nächste Schritte
+p= @offer.next_steps
+
+h2 Kontakt
+p
+  - if @offer.contact_name?
+    | Ansprechpartner:
+    =@offer.contact_name
+  - if @offer.telephone?
+    | Telefon:
+    =@offer.telephone
+  - if @offer.fax?
+    | Fax:
+    =@offer.fax
+  - if @offer.email?
+    | E-Mail:
+    =@offer.email
+

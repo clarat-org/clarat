@@ -12,7 +12,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production,:development] # postgres
+  gem 'pg', group: [:production, :development] # postgres
 end
 
 # Use SCSS for stylesheets
@@ -127,4 +127,9 @@ group :development, :test do
   # dev help
   gem 'thin' # Replace Webrick
   gem 'bullet' # Notify about n+1 queries
+end
+
+group :development, :test, :staging do
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end

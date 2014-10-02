@@ -1,8 +1,9 @@
 h1 Results
 ul
   - @offers.each do |offer|
-    li= link_to offer.name, offer_path(id: offer)
-
+    li id="offer#{offer.id}"
+      = link_to offer.name, offer_path(id: offer)
+-# TODO: pagination
 #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 
 - content_for :view_specific_scripts do

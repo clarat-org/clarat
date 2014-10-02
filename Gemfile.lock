@@ -116,7 +116,13 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.1)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     fastercsv (1.5.5)
+    ffaker (1.25.0)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     formtastic (3.0.0)
@@ -373,6 +379,8 @@ DEPENDENCIES
   coveralls
   devise
   enumerize
+  factory_girl_rails
+  ffaker
   formtastic
   friendly_id (>= 5.0)
   geocoder

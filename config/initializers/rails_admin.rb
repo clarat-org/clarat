@@ -134,7 +134,7 @@ RailsAdmin.config do |config|
     field :keywords do
       css_class 'js-count-character'
     end
-    field :todo do
+    field :next_steps do
       css_class 'js-count-character'
     end
     field :telephone

@@ -381,6 +381,7 @@ DEPENDENCIES
   enumerize
   factory_girl_rails
   ffaker
+  font-awesome-rails
   formtastic
   friendly_id (>= 5.0)
   geocoder

@@ -5,7 +5,7 @@ FactoryGirl.define do
     # required fields
     name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
-    todo { Faker::Lorem.paragraph(rand(1..3))[0..399] }
+    next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
     reach { Offer.enumerized_attributes.attributes['reach'].values.sample }
     frequent_changes { Faker::Boolean.maybe }
     completed { Faker::Boolean.maybe }

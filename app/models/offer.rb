@@ -29,7 +29,7 @@ class Offer < ActiveRecord::Base
   # Validations
   validates :name, length: { maximum: 80 }, presence: true, uniqueness: { scope: :location_id }
   validates :description, length: { maximum: 400 }, presence: true
-  validates :todo, length: { maximum: 400 }, presence: true
+  validates :next_steps, length: { maximum: 400 }, presence: true
   validates :reach, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }

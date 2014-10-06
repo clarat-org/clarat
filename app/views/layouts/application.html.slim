@@ -10,7 +10,7 @@ html class='no-js' lang=I18n.locale
     = csrf_meta_tags
   body
     .container-fluid
-    - if request.env['PATH_INFO'] == '/'
+    - if controller_name == 'pages'
       = render 'layouts/partials/navigation'
     - else
       = render 'layouts/partials/search_navigation'

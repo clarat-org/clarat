@@ -1,29 +1,10 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 @import "mixins/all";
 
-#map-container {
-  position: fixed;
-  right: 0;
-  top: 85px;
-}
-#map-canvas {
-  width:500px;
-  height:300px;
-}
-
-li.JS-highlighted {
-  .search-headline {
-    background: green !important;
-  }
-}
-
-
-
 // !!!!!!!!!!!!!!!!!!!!!!! TODO: REFACTOR !!!!!!!!!!!!!!!!!!!!!!! //
-
-body {
-  font-size: 2em;
-  margin-top: 79px;
-}
 
 .main-search {
   position: absolute;
@@ -132,14 +113,6 @@ body {
   bottom: 0;
 }
 
-.footer-font-big {
-  font-size: 3em;
-}
-
-.footer-font-small {
-  font-size: 0.8em;
-}
-
 .font-white {
   color: white;
   &:hover {
@@ -184,4 +157,3 @@ body {
 .teaser-image {
   padding-left: 8em;
 }
-

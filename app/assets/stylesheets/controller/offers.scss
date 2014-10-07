@@ -1,36 +1,27 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "mixins/all";
 
+#map-container {
+  position: fixed;
+  right: 0;
+  top: 85px;
+}
+#map-canvas {
+  width:500px;
+  height:300px;
+}
+
+li.JS-highlighted {
+  .search-headline {
+    background: green !important;
+  }
+}
+
+
+
 // !!!!!!!!!!!!!!!!!!!!!!! TODO: REFACTOR !!!!!!!!!!!!!!!!!!!!!!! //
-// Increase general font size
-body {
-  font-size: 2em;
-  margin-top: 79px;
-}
 
-.main-search {
-  position: absolute;
-  width: 100%;
-  bottom: 30%;
-  text-align: center;
-  list-style-type: none;
-  li {
-    display: inline;
-  }
-}
 
-.main-search-nav {
-  position: absolute;
-  bottom: 12%;
-  list-style-type: none;
-  left: 40%;
-  li {
-    display: inline;
-  }
-}
+
 
 .input-xlg {
   height: 58px;
@@ -57,16 +48,6 @@ body {
   }
 }
 
-.background-image {
-  background: image-url('background/spielplatz.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  min-height: 600px;
-  position: relative;
-}
 
 .container-full-size {
   width: 100%;
@@ -170,3 +151,4 @@ body {
 .teaser-image {
   padding-left: 8em;
 }
+

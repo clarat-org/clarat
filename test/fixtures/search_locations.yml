@@ -1,11 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  query: MyString
+berlin:
+  query: Berlin
   latitude: 1.5
   longitude: 1.5
-
-two:
-  query: MyString
-  latitude: 1.5
-  longitude: 1.5
+  geoloc: '1.5,1.5'

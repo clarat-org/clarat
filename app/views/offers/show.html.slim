@@ -25,15 +25,15 @@ h2 Kontakt
 h2 Wo
 p
 - if @offer.location.name?
-  =@offer.location.name
+  =@offer.location_name
 p
-=@offer.location.street
+=@offer.location_street
 - if @offer.location.addition?
   p
-  =@offer.location.addition
+  =@offer.location_addition
 p
-=>@offer.location.zip
-=@offer.location.city
+=>@offer.location_zip
+=@offer.location_city
 
 h2 Öffnungszeiten
 - unless @offer.openings.empty?
@@ -50,7 +50,7 @@ h2 Öffnungszeiten
     =opening.close.strftime("%M")
 
 h2 Anbieter
-=@offer.organization.name
+=@offer.organization_name
 
 h2 Schlagworte:
 - unless @offer.tags.empty?

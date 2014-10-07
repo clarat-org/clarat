@@ -112,9 +112,12 @@ group :development do
 end
 
 group :test do
-  gem 'coveralls', require: false
   gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
+  gem 'database_cleaner'
+  gem 'colorize'
+  gem "fakeredis"
+  gem "fakeweb", "~> 1.3"
 end
 
 group :development, :test do
@@ -124,10 +127,23 @@ group :development, :test do
   gem 'pry-byebug' # kickass debugging
   gem 'pry-stack_explorer'
 
+  # test suite
+  gem 'minitest' # Testing using Minitest
+  gem 'minitest-matchers'
+  gem 'minitest-line'
+  gem 'launchy' # save_and_open_page
+  gem 'shoulda'
+  gem 'minitest-rails-capybara'
+  gem 'mocha'
+
   # test suite additions
   gem 'rails_best_practices'
   gem 'brakeman'  # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
+
+  # Code Coverage
+  gem 'simplecov'
+  gem 'coveralls', require: false
 
   # dev help
   gem 'thin' # Replace Webrick

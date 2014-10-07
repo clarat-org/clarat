@@ -141,7 +141,7 @@ RailsAdmin.config do |config|
     field :fax
     field :contact_name
     field :email
-    field :reach
+    field :encounter
     field :frequent_changes
     field :slug do
       read_only do

@@ -13,7 +13,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :reach, in: %w[local variable national]
+  enumerize :encounter, in: %w[local variable national]
 
   # Friendly ID
   extend FriendlyId
@@ -30,7 +30,7 @@ class Offer < ActiveRecord::Base
   validates :name, length: { maximum: 80 }, presence: true, uniqueness: { scope: :location_id }
   validates :description, length: { maximum: 400 }, presence: true
   validates :next_steps, length: { maximum: 400 }, presence: true
-  validates :reach, presence: true
+  validates :encounter, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :opening_specification, length: { maximum: 150 }

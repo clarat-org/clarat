@@ -48,6 +48,12 @@ bindMapsEvents = (marker, markerData) ->
     for offerID in markerData.offer_ids
       $("#result-offer-#{offerID}").removeClass 'JS-highlighted'
 
+  google.maps.event.addListener marker, 'click', (event) ->
+    offerID = markerData.offer_ids[0] # specification needed
+    $('html, body').animate
+      scrollTop: $("#result-offer-#{offerID}").offset().top - 120
+    , 'fast'
+
 bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.offer_ids
     $("#result-offer-#{offerID}").data('marker', marker)

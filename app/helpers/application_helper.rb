@@ -19,6 +19,7 @@ module ApplicationHelper
     elsif (search_location = SearchLocation.find_by_geoloc(geoloc))
       search_location.query
     else
+      return ""
       raise "TODO: Reverse Geocoding (nothing found for: #{geoloc})"
     end
   end

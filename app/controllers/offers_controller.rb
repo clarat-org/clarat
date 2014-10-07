@@ -24,17 +24,19 @@ class OffersController < ApplicationController
     end
 
     def set_gmaps_variables
-      locations = []
-      @offers.each do |offer|
-        next unless offer.location
-        { offer.location}
-      end
-      @markers = @offers.map do |offer|
-        next unless offer.location
-        offers =
-        Geolocation.new(offer.location).to_h
-      end.compact
-      @position = @search_cache.geolocation
-      cookies[:last_geolocation] = @position.to_s
+      @markers = []
+      @position = {}
+      # locations = []
+      # @offers.each do |offer|
+      #   next unless offer.location
+      #   { offer.location}
+      # end
+      # @markers = @offers.map do |offer|
+      #   next unless offer.location
+      #   offers =
+      #   Geolocation.new(offer.location).to_h
+      # end.compact
+      # @position = @search_cache.geolocation
+      # cookies[:last_geolocation] = @position.to_s
     end
 end

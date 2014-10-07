@@ -61,12 +61,12 @@ bindMarkerToResults = (marker, markerData) ->
 bindExternalEvents = ->
   $('.JS-trigger-marker').on 'mouseover', (event) ->
     marker = $(event.delegateTarget).data('marker')
-    if marker.getAnimation() == null
+    if marker and marker.getAnimation() == null
       marker.setAnimation google.maps.Animation.BOUNCE
 
   $('.JS-trigger-marker').on 'mouseout', (event) ->
     marker = $(event.delegateTarget).data('marker')
-    if marker.getAnimation() != null
+    if marker and marker.getAnimation() != null
       marker.setAnimation null
 
 google.maps.event.addDomListener window, 'load', initialize

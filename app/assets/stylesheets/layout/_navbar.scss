@@ -24,3 +24,13 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+.main-search-nav {
+  position: absolute;
+  bottom: 12%;
+  list-style-type: none;
+  left: 40%;
+  li {
+    display: inline;
+  }
+}

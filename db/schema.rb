@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141002131836) do
+ActiveRecord::Schema.define(version: 20141007114929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(version: 20141002131836) do
     t.string   "telephone",             limit: 32
     t.string   "contact_name"
     t.string   "email"
-    t.string   "reach",                                             null: false
+    t.string   "encounter",                                         null: false
     t.boolean  "frequent_changes",                  default: false
     t.string   "slug"
     t.integer  "location_id"

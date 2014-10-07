@@ -8,7 +8,7 @@ one:
   telephone: MyString
   contact_name: MyString
   email: MyString
-  reach: MyString
+  encounter: MyString
   frequent_changes: false
   slug: MyString
   monday_start: 2014-09-15 16:54:34
@@ -34,7 +34,7 @@ two:
   telephone: MyString
   contact_name: MyString
   email: MyString
-  reach: MyString
+  encounter: MyString
   frequent_changes: false
   slug: MyString
   monday_start: 2014-09-15 16:54:34

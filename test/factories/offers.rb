@@ -20,7 +20,7 @@ FactoryGirl.define do
     # associations
     organization
     location do
-      encounter == 'national' ? nil : (
+      encounter == 'independent' ? nil : (
         organization.locations.sample ||
         FactoryGirl.create(:location, organization: organization)
       )

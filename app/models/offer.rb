@@ -13,7 +13,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w[local variable national]
+  enumerize :encounter, in: %w[fixed determinable independent]
 
   # Friendly ID
   extend FriendlyId

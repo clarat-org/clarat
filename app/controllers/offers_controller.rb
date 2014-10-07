@@ -5,7 +5,8 @@ class OffersController < ApplicationController
 
   def index
     @offers = build_search_cache.search params[:page]
-    set_gmaps_variables
+    set_position
+    set_gmaps_variable
     respond_with @offers
   end
 
@@ -23,20 +24,25 @@ class OffersController < ApplicationController
       @search_cache = SearchForm.new(search_params)
     end
 
-    def set_gmaps_variables
-      @markers = []
-      @position = {}
-      # locations = []
-      # @offers.each do |offer|
-      #   next unless offer.location
-      #   { offer.location}
-      # end
-      # @markers = @offers.map do |offer|
-      #   next unless offer.location
-      #   offers =
-      #   Geolocation.new(offer.location).to_h
-      # end.compact
-      # @position = @search_cache.geolocation
-      # cookies[:last_geolocation] = @position.to_s
+    def set_position
+      @position = @search_cache.geolocation
+      cookies[:last_geolocation] = @position.to_s
+    end
+
+    def set_gmaps_variable
+      @markers = {}
+      @offers.each do |offer|
+        next unless offer.location
+        key = Geolocation.new(offer.location)
+
+        if @markers[key.to_s]
+          @markers[key.to_s][:offer_ids] << offer.id
+        else
+          @markers[key.to_s] = {
+            position: key.to_h,
+            offer_ids: [offer.id]
+          }
+        end
+      end
     end
 end

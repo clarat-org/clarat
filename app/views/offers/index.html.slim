@@ -6,14 +6,15 @@
         |  Angebote gefunden
       ul.search-results
         - @offers.each do |offer|
-          .yellow-background.search-headline
-            li= link_to offer.name, offer_path(id: offer)
-          .white-background.search-subtitle
-            = offer.organization.name
-          br
+          li id="result-offer-#{offer.id}"
+            .yellow-background.search-headline
+              = link_to offer.name, offer_path(id: offer)
+            .white-background.search-subtitle
+              = offer.organization.name
       = paginate @offers
 
-  #map-canvas style="width:500px;height:300px" data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
+  #map-container
+    #map-canvas data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
 
   - content_for :view_specific_scripts do
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"

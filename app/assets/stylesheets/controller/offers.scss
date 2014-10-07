@@ -1,11 +1,19 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins/all";
 
-$clarat-yellow: #ffbb10;
-$clarat-hover-brown: #6F4E37;
+#map-container {
+  position: fixed;
+  right: 0;
+  top: 85px;
+}
+#map-canvas {
+  width:500px;
+  height:300px;
+}
 
-// Increase general font size
+
+
+// !!!!!!!!!!!!!!!!!!!!!!! TODO: REFACTOR !!!!!!!!!!!!!!!!!!!!!!! //
+
 body {
   font-size: 2em;
   margin-top: 79px;
@@ -90,7 +98,7 @@ body {
 .yellow-background {
   background-color: $clarat-yellow;
   color: white;
-  li a {
+  a {
     color: white;
     &:hover {
       color: $clarat-hover-brown;
@@ -143,6 +151,10 @@ body {
 .search-results {
   padding-left: 0;
   list-style-type: none;
+
+  li {
+    margin-bottom: 1em;
+  }
 }
 
 .search-headline {
@@ -165,3 +177,4 @@ body {
 .teaser-image {
   padding-left: 8em;
 }
+

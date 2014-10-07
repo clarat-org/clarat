@@ -2,7 +2,8 @@ doctype html
 html class='no-js' lang=I18n.locale
   head
     title Clarat
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag asset_path("controller/#{controller_name}.css"), "data-turbolinks-track" => true
 
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = render '/layouts/partials/javascript_config'

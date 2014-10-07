@@ -1,8 +1,8 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
-  if markers.length
 
+  if markers
     # Get User Position
     userPosition = $(canvas).data('position')
     userPosition = new google.maps.LatLng(
@@ -19,25 +19,49 @@ initialize = ->
     bounds.extend userPosition
 
     # Create Markers
-    for marker in markers
+    for key, markerData of markers
       markerPosition = new google.maps.LatLng(
-        marker.latitude,
-        marker.longitude
+        markerData.position.latitude,
+        markerData.position.longitude
       )
-      markerInstance = new google.maps.Marker
+      marker = new google.maps.Marker
         position: markerPosition
         map: map
 
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
-      google.maps.event.addListener markerInstance, 'mouseover', (event) ->
-        console.log "ids for this hover:"
-        console.log marker
+      bindMapsEvents marker, markerData
+      bindMarkerToResults marker, markerData
 
     # Expand Map to Include Markers
     map.fitBounds bounds
 
+    bindExternalEvents()
+
+bindMapsEvents = (marker, markerData) ->
+  google.maps.event.addListener marker, 'mouseover', (event) ->
+    for offerID in markerData.offer_ids
+      $("#result-offer-#{offerID}").addClass 'JS-highlighted'
+
+  google.maps.event.addListener marker, 'mouseout', (event) ->
+    for offerID in markerData.offer_ids
+      $("#result-offer-#{offerID}").removeClass 'JS-highlighted'
+
+bindMarkerToResults = (marker, markerData) ->
+  for offerID in markerData.offer_ids
+    $("#result-offer-#{offerID}").data('marker', marker)
+
+bindExternalEvents = ->
+  $('.JS-trigger-marker').on 'mouseover', (event) ->
+    marker = $(event.delegateTarget).data('marker')
+    if marker.getAnimation() == null
+      marker.setAnimation google.maps.Animation.BOUNCE
+
+  $('.JS-trigger-marker').on 'mouseout', (event) ->
+    marker = $(event.delegateTarget).data('marker')
+    if marker.getAnimation() != null
+      marker.setAnimation null
 
 google.maps.event.addDomListener window, 'load', initialize
 google.maps.event.addDomListener document, 'page:load', initialize

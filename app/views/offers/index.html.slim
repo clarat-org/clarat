@@ -6,7 +6,7 @@
         |  Angebote gefunden
       ul.search-results
         - @offers.each do |offer|
-          li id="result-offer-#{offer.id}"
+          li id="result-offer-#{offer.id}" class="JS-trigger-marker"
             .yellow-background.search-headline
               = link_to offer.name, offer_path(id: offer)
             .white-background.search-subtitle
@@ -15,6 +15,7 @@
 
   #map-container
     #map-canvas data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
+
 
   - content_for :view_specific_scripts do
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"

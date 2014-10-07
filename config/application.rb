@@ -47,5 +47,7 @@ module Clarat
     config.assets.precompile += Dir["app/assets/stylesheets/controller/*.scss"].map{|file| "controller/#{File.basename file,'.scss'}" }
     config.assets.precompile += %w( gmaps_search_results.js )
     config.generators.assets :controller_based_assets
+
+    config.generators.test_framework :minitest, spec: true
   end
 end

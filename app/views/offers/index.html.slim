@@ -10,7 +10,7 @@
             .yellow-background.search-headline
               = link_to offer.name, offer_path(id: offer)
             .white-background.search-subtitle
-              = offer.organization.name
+              = offer.organization_name
       = paginate @offers
 
   #map-container

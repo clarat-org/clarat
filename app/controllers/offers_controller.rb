@@ -1,7 +1,7 @@
 class OffersController < ApplicationController
   respond_to :html
 
-  skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @offers = build_search_cache.search params[:page]

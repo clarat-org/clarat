@@ -50,8 +50,8 @@ class Offer < ActiveRecord::Base
   # Methods
 
   delegate :name, to: :organization, prefix: true
-  #cant delegate to location since it's optional
-  def location_zip; location.zip if location; end
+  delegate :name, :street, :addition, :city, :zip,
+    to: :location, prefix: true, allow_nil: true
 
   # Offer's location's geo coordinates for indexing
   def _geoloc

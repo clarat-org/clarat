@@ -9,8 +9,9 @@ module ApplicationHelper
   # Prio 4: Middle of Berlin
   def default_geolocation
     @geoloc ||= cookies[:last_geolocation]
-    @geoloc ||= (l = request.location) ? "#{l.latitude},#{l.longitude}" : nil # TODO: does this ever return nil?
-    @geoloc ||= '52.520007,13.404954'
+    @geoloc ||= (l = request.location) ? "#{l.latitude},#{l.longitude}" : raise
+  rescue
+    @geoloc = '52.520007,13.404954'
   end
 
   def geoloc_to_s geoloc = default_geolocation

@@ -1,4 +1,75 @@
+// General
+
 body {
   font-size: 2em;
   margin-top: 79px;
+}
+
+// Backgrounds
+
+.yellow-background {
+  background-color: $clarat-yellow;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+      color: $clarat-hover-brown;
+    }
+  }
+}
+
+.grey-background {
+  background-color: #E5E4E2;
+}
+
+.white-background {
+  background-color: white;
+}
+
+// Buttons
+
+.btn {
+  background-color: $clarat-yellow;
+  &:hover {
+    background-color: $clarat-hover-brown;
+  }
+}
+
+.btn-xlg {
+  height: 58px;
+  font-size: 1em;
+}
+
+.btn-aligned {
+  vertical-align: top;
+}
+
+// Fonts
+
+.font-white {
+  color: white;
+  &:hover {
+    color: $clarat-hover-brown;
+    text-decoration: none;
+  }
+}
+
+// Icons
+
+.icon-white {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+// Inputs
+
+.input-xlg {
+  height: 58px;
+  padding: 10px 16px;
+  font-size: 1em;
+  line-height: 1.33;
+  border-radius: 6px;
+  vertical-align: inherit !important;
 }

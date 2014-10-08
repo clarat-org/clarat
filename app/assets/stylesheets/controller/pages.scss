@@ -17,41 +17,6 @@
   }
 }
 
-.main-search-nav {
-  position: absolute;
-  bottom: 12%;
-  list-style-type: none;
-  left: 40%;
-  li {
-    display: inline;
-  }
-}
-
-.input-xlg {
-  height: 58px;
-  padding: 10px 16px;
-  font-size: 1em;
-  line-height: 1.33;
-  border-radius: 6px;
-  vertical-align: inherit !important;
-}
-
-.btn-xlg {
-  height: 58px;
-  font-size: 1em;
-}
-
-.btn-aligned {
-  vertical-align: top;
-}
-
-.btn {
-  background-color: $clarat-yellow;
-  &:hover {
-    background-color: $clarat-hover-brown;
-  }
-}
-
 .background-image {
   background: image-url('background/spielplatz.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -83,17 +48,6 @@
   padding: 0 0.5em 0 0.5em;
 }
 
-.yellow-background {
-  background-color: $clarat-yellow;
-  color: white;
-  a {
-    color: white;
-    &:hover {
-      color: $clarat-hover-brown;
-    }
-  }
-}
-
 .about-2c {
   padding: 1em 1em 0em 1em;
   .description-2c {
@@ -113,21 +67,6 @@
   bottom: 0;
 }
 
-.font-white {
-  color: white;
-  &:hover {
-    color: $clarat-hover-brown;
-    text-decoration: none;
-  }
-}
-
-.icon-white {
-  color: white;
-  &:hover {
-    color: white;
-  }
-}
-
 .search-results {
   padding-left: 0;
   list-style-type: none;
@@ -139,14 +78,6 @@
 
 .search-headline {
   padding: 0 0.5em 0 0.5em;
-}
-
-.grey-background {
-  background-color: #E5E4E2;
-}
-
-.white-background {
-  background-color: white;
 }
 
 .search-subtitle {

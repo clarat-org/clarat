@@ -20,7 +20,7 @@ class Organization < ActiveRecord::Base
   friendly_id :name, use: [:slugged]
 
   # Validations
-  validates :name, length: { maximum: 100 }, presence: true
+  validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
   validates :description, length: { maximum: 400 }, presence: true
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true

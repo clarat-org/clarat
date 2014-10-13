@@ -33,6 +33,7 @@ class Offer < ActiveRecord::Base
   validates :encounter, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :opening_specification, length: { maximum: 150 }
   validates :keywords, length: { maximum: 150 }
 

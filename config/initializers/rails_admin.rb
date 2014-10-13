@@ -138,6 +138,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :telephone
+    field :second_telephone
     field :fax
     field :contact_name
     field :email

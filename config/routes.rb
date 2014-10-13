@@ -1,8 +1,8 @@
 Clarat::Application.routes.draw do
-  scope "(:locale)", :locale => /en|de/ do
+  scope '(:locale)', locale: /en|de/ do
     devise_for :users
     mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-    root to: "pages#home"
+    root to: 'pages#home'
 
     resources :offers, only: [:index, :show]
 

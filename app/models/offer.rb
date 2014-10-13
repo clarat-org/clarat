@@ -13,7 +13,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w[fixed determinable independent]
+  enumerize :encounter, in: %w(fixed determinable independent)
 
   # Friendly ID
   extend FriendlyId
@@ -27,7 +27,8 @@ class Offer < ActiveRecord::Base
   end
 
   # Validations
-  validates :name, length: { maximum: 80 }, presence: true, uniqueness: { scope: :location_id }
+  validates :name, length: { maximum: 80 }, presence: true,
+    uniqueness: { scope: :location_id }
   validates :description, length: { maximum: 400 }, presence: true
   validates :next_steps, length: { maximum: 400 }, presence: true
   validates :encounter, presence: true
@@ -52,7 +53,7 @@ class Offer < ActiveRecord::Base
 
   delegate :name, to: :organization, prefix: true
   delegate :name, :street, :addition, :city, :zip,
-    to: :location, prefix: true, allow_nil: true
+           to: :location, prefix: true, allow_nil: true
 
   # Offer's location's geo coordinates for indexing
   def _geoloc
@@ -67,8 +68,10 @@ class Offer < ActiveRecord::Base
     # Custom Validation: Ensure selected organization is the same as the selected location's organization
     def location_fits_organization
       if location && location.organization_id != organization_id
-        errors.add(:location_id, I18n.t("validations.offer.location_fits_organization.location_error"))
-        errors.add(:organization_id, I18n.t("validations.offer.location_fits_organization.organization_error"))
+        errors.add(:location_id, I18n.t(
+          'validations.offer.location_fits_organization.location_error'))
+        errors.add(:organization_id, I18n.t(
+          'validations.offer.location_fits_organization.organization_error'))
       end
     end
 end

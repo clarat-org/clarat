@@ -15,7 +15,7 @@ FactoryGirl.define do
         "https://plus.google.com/#{Faker::Internet.domain_word}"
       when 'pinterest'
         "https://www.pinterest.com/#{Faker::Internet.domain_word}"
-      else #when 'own', 'other'
+      else # when 'own', 'other'
         Faker::Internet.uri(['http', 'https'].sample)
       end
     end

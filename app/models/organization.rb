@@ -10,10 +10,10 @@ class Organization < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :legal_form, in: %w[ev ggmbh gag foundation gug kdor ador kirche
+  enumerize :legal_form, in: %w(ev ggmbh gag foundation gug kdor ador kirche
                                 gmbh ag ug kfm gbr ohg kg eg sonstige
-                                state_entity]
-  enumerize :umbrella, in: %w[caritas diakonie awo dpw drk zwst]
+                                state_entity)
+  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk zwst)
 
   # Friendly ID
   extend FriendlyId
@@ -25,5 +25,4 @@ class Organization < ActiveRecord::Base
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :keywords, length: { maximum: 150 }
-
 end

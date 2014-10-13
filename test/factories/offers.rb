@@ -12,8 +12,8 @@ FactoryGirl.define do
 
     # optional fields
     keywords { maybe Faker::Lorem.words(rand(0..3)).join(', ') }
-    telephone { maybe Faker.numerify('#'*rand(7..11)) }
-    fax { (rand(2)==0 && telephone) ? Faker.numerify('#'*rand(7..11)) : nil }
+    telephone { maybe Faker.numerify('#' * rand(7..11)) }
+    fax { (rand(2)==0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
     contact_name { maybe Faker::NameDE.name }
     email { maybe Faker::Internet.email }
 
@@ -36,12 +36,12 @@ FactoryGirl.define do
       create_list :hyperlink, evaluator.website_count, linkable: offer
       evaluator.tag_count.times do
         offer.tags << (
-          rand(2)==0 ? FactoryGirl.create(:tag) : Tag.select(:id).all.sample
+          rand(2) == 0 ? FactoryGirl.create(:tag) : Tag.select(:id).all.sample
         )
       end
       evaluator.opening_count.times do
         offer.openings << (
-          rand(2)==0 ? FactoryGirl.create(:opening) : Opening.select(:id).all.sample
+          rand(2) == 0 ? FactoryGirl.create(:opening) : Opening.select(:id).all.sample
         )
       end
       evaluator.language_count.times do

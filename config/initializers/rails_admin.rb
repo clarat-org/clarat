@@ -46,7 +46,7 @@ RailsAdmin.config do |config|
       field :charitable
       field :completed
     end
-    weight -3
+    weight(-3)
     field :name
     field :description do
       css_class 'js-count-character'
@@ -87,7 +87,7 @@ RailsAdmin.config do |config|
       field :federal_state
       field :completed
     end
-    weight -2
+    weight(-2)
     field :organization
     field :name
     field :street
@@ -134,7 +134,7 @@ RailsAdmin.config do |config|
       field :organization
       field :completed
     end
-    weight -1
+    weight(-1)
     field :name
     field :description do
       css_class 'js-count-character'

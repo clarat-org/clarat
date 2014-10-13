@@ -68,6 +68,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Pretty print your Ruby objects with style
+gem 'awesome_print'
+
 gem 'rails_admin'
 
 gem 'devise'

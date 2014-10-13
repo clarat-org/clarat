@@ -413,6 +413,7 @@ DEPENDENCIES
   algoliasearch-rails
   arcane
   autoprefixer-rails
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass

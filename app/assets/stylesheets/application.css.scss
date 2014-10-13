@@ -9,7 +9,24 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+
+// Vendor Stylesheets
+
+@import "vendor/bootstrap-typeahead";
+
+// Mixins to be available everywhere
+
+@import "mixins/all";
+
+// App Layouts
+
+@import "layout/navbar";
+@import 'layout/base';
+@import 'layout/footer';
+
+// Modules

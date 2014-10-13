@@ -19,12 +19,18 @@ RailsAdmin.config do |config|
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
+    new do
+      except ['User', 'FederalState']
+    end
     export
-    bulk_delete
+    bulk_delete do
+      except ['User', 'FederalState']
+    end
     show
     edit
-    delete
+    delete do
+      except ['User', 'FederalState']
+    end
     show_in_app
 
     ## With an audit adapter, you can add:
@@ -33,14 +39,25 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Organization' do
+    list do
+      field :name
+      field :description
+      field :legal_form
+      field :charitable
+      field :completed
+    end
+    weight -3
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
+    end
+    field :keywords do
+      css_class 'js-count-character'
     end
     field :legal_form
     field :charitable
     field :founded
-    field :classification
+    field :umbrella
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -48,9 +65,11 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+    field :completed
 
     show do
       field :offers
+      field :locations
     end
   end
 
@@ -61,18 +80,26 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    list do
+      field :name
+      field :organization
+      field :zip
+      field :federal_state
+      field :completed
+    end
+    weight -2
+    field :organization
     field :name
     field :street
     field :addition
     field :zip
     field :city
+    field :federal_state
     field :telephone
     field :second_telephone
     field :fax
     field :email
     field :hq
-    field :organization
-    field :federal_state
     field :latitude do
       read_only true
     end
@@ -80,11 +107,17 @@ RailsAdmin.config do |config|
       read_only true
     end
     field :websites
+    field :completed
+
+    show do
+      field :offers
+    end
 
     object_label_method :concat_address
   end
 
   config.model 'FederalState' do
+    weight 2
     list do
       field :id do
         sort_reverse false
@@ -94,15 +127,30 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Offer' do
+    list do
+      field :name
+      field :description
+      field :frequent_changes
+      field :organization
+      field :completed
+    end
+    weight -1
     field :name
     field :description do
-      css_class "js-count-character"
+      css_class 'js-count-character'
     end
-    field :todo
+    field :keywords do
+      css_class 'js-count-character'
+    end
+    field :next_steps do
+      css_class 'js-count-character'
+    end
     field :telephone
+    field :second_telephone
+    field :fax
     field :contact_name
     field :email
-    field :reach
+    field :encounter
     field :frequent_changes
     field :slug do
       read_only do
@@ -110,18 +158,45 @@ RailsAdmin.config do |config|
       end
     end
     field :location
+    field :organization
     field :tags
     field :languages
     field :openings
+    field :opening_specification do
+      help do
+        'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
+        "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir
+        (Konstantin) auch gern bescheid, wenn ihr ein einheitliches Format
+        gefunden habt, mit dem alle Fälle abgedeckt werden können.'
+      end
+    end
     field :websites
+    field :completed
   end
 
   config.model 'Opening' do
-    field :day
-    field :open
-    field :close
+    field :day do
+      help do
+        'Required. Wenn weder "Open" noch "Close" angegeben werden, bedeutet
+        das an diesem Tag "nach Absprache".'
+      end
+    end
+    field :open do
+      help do
+        'Required if "Close" given.'
+      end
+    end
+    field :close do
+      help do
+        'Required if "Open" given.'
+      end
+    end
 
     object_label_method :concat_day_and_times
+
+    list do
+      sort_by :day
+    end
   end
 
   config.model 'Tag' do
@@ -130,14 +205,18 @@ RailsAdmin.config do |config|
     field :associated_tags
 
     object_label_method :name_with_optional_asterisk
-  end
 
-  config.label_methods << :email
-  config.model 'User' do
-    field :email
+    list do
+      sort_by :name
+    end
+
+    show do
+      field :offers
+    end
   end
 
   config.model 'Language' do
+    weight 1
     list do
       field :id do
         sort_reverse false
@@ -145,6 +224,40 @@ RailsAdmin.config do |config|
       field :name
       field :code
       field :offers
+    end
+  end
+
+  config.label_methods << :email
+  config.model 'User' do
+    weight 1
+    edit do
+      field :email do
+        read_only do
+          bindings[:object] != bindings[:view].current_user
+        end
+      end
+      field :password do
+        visible do
+          bindings[:object] == bindings[:view].current_user
+        end
+      end
+    end
+  end
+
+  config.model 'Hyperlink' do
+    weight 2
+  end
+
+  config.model 'SearchLocation' do
+    weight 2
+    field :query do
+      read_only true
+    end
+    field :latitude do
+      read_only true
+    end
+    field :longitude do
+      read_only true
     end
   end
 end

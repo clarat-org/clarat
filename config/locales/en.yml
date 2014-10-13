@@ -20,4 +20,33 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      offer:
+        one: Offer
+        other: Offers
+      location:
+        one: Location
+        other: Locations
+      organization:
+        one: Organization
+        other: Organizations
+      federal_state:
+        one: Federal State
+        other: Federal States
+      language:
+        one: Language
+        other: Languages
+      opening:
+        one: Opening Hours
+        other: Opening Hours
+      user:
+        one: User
+        other: Users
+  i18n:
+    transliterate:
+      rule:
+        ä: "ae"
+        ö: "oe"
+        ü: "ue"
+        ß: "ss"

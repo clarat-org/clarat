@@ -1,6 +1,6 @@
 class Website < ActiveRecord::Base
   # associtations
-  belongs_to :linkable, polymorphic: true, inverse_of: :websites
+  has_many :hyperlinks, as: :linkable
 
   # Enumerization
   extend Enumerize
@@ -8,5 +8,5 @@ class Website < ActiveRecord::Base
 
   # Validations
   validates :sort, presence: true
-  validates :url, format: /https?:\/\/\S+\.\S+/, uniqueness: true, presence: true
+  validates :url, format: %r{\Ahttps?://\S+\.\S+\z}, uniqueness: true, presence: true
 end

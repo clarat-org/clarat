@@ -4,3 +4,6 @@ rvm:
 notifications:
   email:
     - dev@clarat.org
+script:
+  - RAILS_ENV=test bundle exec rake test:all
+  - bundle exec rubocop --config rubocop.yml

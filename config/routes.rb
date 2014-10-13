@@ -1,7 +1,21 @@
 Clarat::Application.routes.draw do
-  devise_for :users
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root to: "pages#home"
+  scope "(:locale)", :locale => /en|de/ do
+    devise_for :users
+    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+    root to: "pages#home"
+
+    resources :offers, only: [:index, :show]
+
+    # Sidekiq interface
+    require 'sidekiq/web'
+    constraint = lambda do |request|
+      request.env['warden'].authenticate? && request.env['warden'].user.admin?
+    end
+    constraints constraint do
+      mount Sidekiq::Web => '/sidekiq'
+    end
+
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

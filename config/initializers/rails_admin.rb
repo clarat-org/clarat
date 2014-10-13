@@ -80,6 +80,13 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Location' do
+    list do
+      field :name
+      field :organization
+      field :zip
+      field :federal_state
+      field :completed
+    end
     weight -2
     field :organization
     field :name
@@ -100,6 +107,7 @@ RailsAdmin.config do |config|
       read_only true
     end
     field :websites
+    field :completed
 
     show do
       field :offers

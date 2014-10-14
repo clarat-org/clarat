@@ -4,3 +4,18 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'vendor/**/*'
+    - 'config/application.rb'
+    - 'config/environments/**/*'
+    - 'config/initializers/**/*'
+
+Documentation:
+  Enabled: false
+
+MethodDefParentheses:
+  Enabled: false
+
+GuardClause:
+  Enabled: false
+
+RedundantSelf:
+  Enabled: false

@@ -1,12 +1,12 @@
 # TODO: Refactor as gem!
 module PunditMatcher
-
   class Base
     def initialize action
       @action = action
     end
 
     protected
+
     def get_return_of_send policy, action
       policy.user = User.new(id: 999) unless policy.user # prevent nil.id errors from own?
       policy.public_send "#{action}?"
@@ -23,7 +23,7 @@ module PunditMatcher
       # This is the method we want on a controller for testing purposes:
       has_before_filter_of_type = proc do |filter, action_name|
         all_filters = _process_action_callbacks
-        filter_hash = all_filters.select{ |f| f.kind == :before && f.filter == filter }[0]
+        filter_hash = all_filters.select { |f| f.kind == :before && f.filter == filter }[0]
 
         if filter_hash && action_name
           if filter_hash.instance_variable_get(:@unless) && !filter_hash.instance_variable_get(:@unless).empty?
@@ -43,7 +43,6 @@ module PunditMatcher
       metaclass.send :define_method, :has_before_filter_of_type?, has_before_filter_of_type
     end
   end
-
 
   class Permit < Base
     def matches? policy
@@ -67,12 +66,12 @@ module PunditMatcher
     end
 
     def failure_message_for_should
-     "#{@policy.class} does not deny '#{@action}' for user: #{@policy.user.inspect}."
+      "#{@policy.class} does not deny '#{@action}' for user: #{@policy.user.inspect}."
     end
   end
 
     # "ultimately": check if not only the policy permits or denies a user, but also
-    #               if the authorization lets a user get there in the first place
+    # if the authorization lets a user get there in the first place
 
   class UltimatelyDeny < Base
     def matches? policy
@@ -85,18 +84,18 @@ module PunditMatcher
     end
 
     def failure_message_for_should
-     "#{@policy.class} does not ultimately deny '#{@action}' for user: #{@policy.user.inspect}."
+      "#{@policy.class} does not ultimately deny '#{@action}' for user: #{@policy.user.inspect}."
     end
   end
-
-
 
   def permit_ policy
     PunditMatcher::Permit.new policy
   end
+
   def deny policy
     PunditMatcher::Deny.new policy
   end
+
   def ultimately_deny policy
     PunditMatcher::UltimatelyDeny.new policy
   end

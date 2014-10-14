@@ -9,7 +9,7 @@ def rails_best_practices
 
   # Generate HTML as well:
   options = bp_analyzer.instance_variable_get :@options
-  bp_analyzer.instance_variable_set :@options, options.merge({'format' => 'html'})
+  bp_analyzer.instance_variable_set :@options, options.merge('format' => 'html')
   bp_analyzer.output
 
   exit 1 if bp_analyzer.runner.errors.size > 0

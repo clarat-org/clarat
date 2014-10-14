@@ -48,8 +48,7 @@ gem 'jbuilder', '~> 1.2'
 
 # Background processing
 gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil # for sidekiq's web interface
-
+gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq's web interface
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -94,10 +93,10 @@ gem 'friendly_id', '>= 5.0'
 gem 'geocoder'
 
 # CSS
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 group :production do
-  gem 'rails_12factor' #heroku recommends this
+  gem 'rails_12factor' # heroku recommends this
 end
 
 group :development do
@@ -119,8 +118,8 @@ group :test do
   gem 'rake'
   gem 'database_cleaner'
   gem 'colorize'
-  gem "fakeredis"
-  gem "fakeweb", "~> 1.3"
+  gem 'fakeredis'
+  gem 'fakeweb', '~> 1.3'
 end
 
 group :development, :test do

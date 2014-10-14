@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 include Warden::Test::Helpers
 
-feature "Admin Backend" do
+feature 'Admin Backend' do
   before { login_as FactoryGirl.create :admin }
 
   scenario 'Administrating Offers' do

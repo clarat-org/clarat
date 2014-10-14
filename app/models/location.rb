@@ -29,7 +29,7 @@ class Location < ActiveRecord::Base
   delegate :name, to: :federal_state, prefix: true
 
   def concat_address
-    if name and !name.empty?
+    if name && !name.empty?
       "#{name} (#{street} #{zip} #{city})"
     else
       "#{street} #{zip} #{city}"

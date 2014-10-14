@@ -1,27 +1,27 @@
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
-require "minitest/rails"
-require "minitest/rails/capybara"
-require "minitest/pride"
-require "mocha/mini_test"
+require 'minitest/rails'
+require 'minitest/rails/capybara'
+require 'minitest/pride'
+require 'mocha/mini_test'
 require 'capybara/rails'
 require Rails.root.join('test/support/spec_helpers/coverage.rb')
 
-require File.expand_path("../../config/environment", __FILE__)
+require File.expand_path('../../config/environment', __FILE__)
 
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'minitest/mock'
-require "minitest-matchers"
+require 'minitest-matchers'
 require 'minitest/hell'
 require 'sidekiq/testing'
 require 'fakeredis'
 
 # First matchers, then modules, then helpers. Helpers need to come after modules due to interdependencies.
-Dir[Rails.root.join("test/support/matchers/*.rb")].each {|f| require f}
-Dir[Rails.root.join("test/support/modules/*.rb")].each {|f| require f}
-Dir[Rails.root.join("test/support/spec_helpers/*.rb")].each {|f| require f}
+Dir[Rails.root.join('test/support/matchers/*.rb')].each { |f| require f }
+Dir[Rails.root.join('test/support/modules/*.rb')].each { |f| require f }
+Dir[Rails.root.join('test/support/spec_helpers/*.rb')].each { |f| require f }
 
 # For Sidekiq
 Sidekiq::Testing.inline!
@@ -33,12 +33,11 @@ Capybara.asset_host = "http://localhost:3000"
 # For fixtures:
 include ActionDispatch::TestProcess
 
-#~Disable logging for test performance! Change this value if you really need the log and run your suite again~
+# ~Disable logging for test performance! Change this value if you really need the log and run your suite again~
 Rails.logger.level = 4
 
 ### Test Setup ###
-File.open(Rails.root.join('log/test.log'), 'w') {|f| f.truncate(0) } # clear test log
-
+File.open(Rails.root.join('log/test.log'), 'w') { |f| f.truncate(0) } # clear test log
 
 silence_warnings do
   BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST

@@ -9,16 +9,16 @@ def brakeman
   warnings = result['warnings'].length
   errors = result['errors'].length
 
-  result['warnings'].each {|w| puts "Warning: #{format(w)}".yellow } unless warnings == 0
-  result['errors'].each {|e| puts "Error: #{format(e)}".red } unless errors == 0
+  result['warnings'].each { |w| puts "Warning: #{format(w)}".yellow } unless warnings == 0
+  result['errors'].each { |e| puts "Error: #{format(e)}".red } unless errors == 0
 
   puts "Warnings: #{warnings}"
   puts "Errors: #{errors}"
 
   if warnings == 0 && errors == 0
-    puts "Basic security is ensured.".green
+    puts 'Basic security is ensured.'.green
   else
-    puts "Security issues exist.".red.underline
+    puts 'Security issues exist.'.red.underline
     $suite_failing = true
   end
 end

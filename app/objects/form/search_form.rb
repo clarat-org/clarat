@@ -13,9 +13,9 @@ class SearchForm
 
   def search page
     Offer.search query,
-      page: page,
-      aroundLatLng: geolocation,
-      aroundRadius: 999999999
+                 page: page,
+                 aroundLatLng: geolocation,
+                 aroundRadius: 999_999_999
   end
 
   def geolocation

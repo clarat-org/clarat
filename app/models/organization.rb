@@ -27,7 +27,7 @@ class Organization < ActiveRecord::Base
   validates :keywords, length: { maximum: 150 }
 
   def creator_email
-    creator = User.find(originator)
+    creator = User.find(versions.first.whodunnit)
     creator.email
   end
 end

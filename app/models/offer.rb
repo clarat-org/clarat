@@ -64,7 +64,7 @@ class Offer < ActiveRecord::Base
   end
 
   def creator_email
-    creator = User.find(originator)
+    creator = User.find(versions.first.whodunnit)
     creator.email
   end
 

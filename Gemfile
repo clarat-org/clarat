@@ -70,6 +70,7 @@ end
 # Pretty print your Ruby objects with style
 gem 'awesome_print'
 
+gem 'rails_admin_clone'
 gem 'rails_admin'
 
 gem 'devise'

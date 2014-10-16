@@ -27,6 +27,7 @@ RailsAdmin.config do |config|
       except ['User', 'FederalState']
     end
     show
+    clone
     edit
     delete do
       except ['User', 'FederalState']

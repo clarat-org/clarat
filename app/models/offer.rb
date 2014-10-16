@@ -63,6 +63,11 @@ class Offer < ActiveRecord::Base
     }
   end
 
+  def creator_email
+    creator = User.find(originator)
+    creator.email
+  end
+
   private
 
     # Custom Validation: Ensure selected organization is the same as the selected location's organization

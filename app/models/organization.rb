@@ -25,4 +25,9 @@ class Organization < ActiveRecord::Base
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :keywords, length: { maximum: 150 }
+
+  def creator_email
+    creator = User.find(originator)
+    creator.email
+  end
 end

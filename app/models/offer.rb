@@ -19,6 +19,8 @@ class Offer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
+  before_save :approved_by_different_user
+
   def slug_candidates
     [
       :name,
@@ -39,7 +41,9 @@ class Offer < ActiveRecord::Base
   validates :keywords, length: { maximum: 150 }
 
   validates :organization_id, presence: true
-  validate :location_fits_organization # custom validation
+  # Custom validations
+  validate :location_fits_organization
+  validate :approved_by_different_user_validation
 
   # Search
   include AlgoliaSearch
@@ -68,6 +72,16 @@ class Offer < ActiveRecord::Base
     creator.email
   end
 
+  def approved_by_different_user
+    if self.approved_changed?
+      if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
+        return false
+      else
+        return true
+      end
+    end
+  end
+
   private
 
     # Custom Validation: Ensure selected organization is the same as the selected location's organization
@@ -77,6 +91,16 @@ class Offer < ActiveRecord::Base
           'validations.offer.location_fits_organization.location_error'))
         errors.add(:organization_id, I18n.t(
           'validations.offer.location_fits_organization.organization_error'))
+      end
+    end
+
+    # Custom Validation:  Ensure that the original creator can't approve his own creation
+    def approved_by_different_user_validation
+      if self.approved_changed?
+        if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
+          errors.add(:approved, I18n.t(
+            'validations.offer.approved_by_different_user'))
+        end
       end
     end
 end

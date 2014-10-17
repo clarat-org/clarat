@@ -131,9 +131,10 @@ RailsAdmin.config do |config|
     list do
       field :name
       field :organization
+      field :location
+      field :completed
       field :creator_email
       field :frequent_changes
-      field :completed
     end
     weight(-1)
     field :name

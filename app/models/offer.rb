@@ -19,7 +19,7 @@ class Offer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
-  before_save :approved_by_different_user
+  before_save :approved_by_different_user?
 
   def slug_candidates
     [
@@ -70,16 +70,6 @@ class Offer < ActiveRecord::Base
   def creator_email
     creator = User.find(versions.first.whodunnit)
     creator.email
-  end
-
-  def approved_by_different_user
-    if self.approved_changed?
-      if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
-        return false
-      else
-        return true
-      end
-    end
   end
 
   private

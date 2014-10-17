@@ -6,5 +6,5 @@ en:
           must be the same as the chosen location's organization.
         location_error: |
           must belong to the same organization as chosen below.
-      approved_by_different_user: Can't be approved by creator
+      approved_by_different_user: can't be approved by creator
 

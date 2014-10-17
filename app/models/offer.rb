@@ -43,7 +43,7 @@ class Offer < ActiveRecord::Base
   validates :organization_id, presence: true
   # Custom validations
   validate :location_fits_organization
-  validate :approved_by_different_user_validation
+  validate :independent_approval
 
   # Search
   include AlgoliaSearch
@@ -95,7 +95,7 @@ class Offer < ActiveRecord::Base
     end
 
     # Custom Validation:  Ensure that the original creator can't approve his own creation
-    def approved_by_different_user_validation
+    def independent_approval
       if self.approved_changed?
         if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
           errors.add(:approved, I18n.t(

@@ -19,8 +19,6 @@ class Offer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
-  before_save :approved_by_different_user?
-
   def slug_candidates
     [
       :name,
@@ -43,7 +41,7 @@ class Offer < ActiveRecord::Base
   validates :organization_id, presence: true
   # Custom validations
   validate :location_fits_organization
-  validate :independent_approval
+  validate :approvable
 
   # Search
   include AlgoliaSearch
@@ -84,12 +82,15 @@ class Offer < ActiveRecord::Base
       end
     end
 
-    # Custom Validation:  Ensure that the original creator can't approve his own creation
-    def independent_approval
+    # Custom Validation:  Ensure that the original creator can't approve his own creation and that it is completed
+    def approvable
       if self.approved_changed?
         if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
           errors.add(:approved, I18n.t(
-            'validations.offer.approved_by_different_user'))
+            'validations.offer.approved_by_creator'))
+        elsif self.completed == false
+          errors.add(:approved, I18n.t(
+            'validations.offer.incomplete'))
         end
       end
     end

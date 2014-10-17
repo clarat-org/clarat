@@ -42,10 +42,10 @@ RailsAdmin.config do |config|
   config.model 'Organization' do
     list do
       field :name
-      field :creator_email
       field :legal_form
-      field :charitable
       field :completed
+      field :approved
+      field :creator_email
     end
     weight(-3)
     field :name
@@ -67,6 +67,7 @@ RailsAdmin.config do |config|
 
     field :websites
     field :completed
+    field :approved
 
     show do
       field :offers

@@ -1,4 +1,4 @@
-class AddAprovedToOffers < ActiveRecord::Migration
+class AddApprovedToOffers < ActiveRecord::Migration
   def change
     add_column :offers, :approved, :boolean, default: false
   end

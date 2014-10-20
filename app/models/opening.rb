@@ -19,6 +19,7 @@ class Opening < ActiveRecord::Base
 
   # Methods
 
+  # rails_admin can only sort by a single field, that's why we are creating an imaginary time stamp that handles the sorting
   def calculate_sort_value
     day_value = DAYS.index(day) + 1
     dummy_time = if open && close

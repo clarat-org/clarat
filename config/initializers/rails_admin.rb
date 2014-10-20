@@ -197,7 +197,11 @@ RailsAdmin.config do |config|
     object_label_method :concat_day_and_times
 
     list do
-      sort_by :day
+      sort_by :sort_value
+      field :sort_value do
+        sort_reverse false
+        visible false
+      end
     end
   end
 

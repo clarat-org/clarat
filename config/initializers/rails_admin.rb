@@ -224,9 +224,8 @@ RailsAdmin.config do |config|
   config.model 'Language' do
     weight 1
     list do
-      field :id do
-        sort_reverse false
-      end
+      sort_by :name
+      field :id
       field :name
       field :code
       field :offers

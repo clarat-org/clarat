@@ -101,7 +101,7 @@ group :production do
 end
 
 group :development do
-  #gem 'spring' # faster rails start
+  gem 'spring' # faster rails start
 
   # errors
   gem 'better_errors'

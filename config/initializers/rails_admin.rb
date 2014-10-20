@@ -131,10 +131,12 @@ RailsAdmin.config do |config|
   config.model 'Offer' do
     list do
       field :name
+      field :location
       field :frequent_changes
       field :completed
       field :approved
       field :creator_email
+      field :organization
     end
     weight(-1)
     field :name

@@ -22,13 +22,14 @@ class Opening < ActiveRecord::Base
   # rails_admin can only sort by a single field, that's why we are creating an imaginary time stamp that handles the sorting
   def calculate_sort_value
     day_value = DAYS.index(day) + 1
-    dummy_time = if open && close
+    dummy_time =
+    if open && close
       Time.new(1970, 1, day_value, open.hour, open.min,
-               close.hour + close.min/100.0, 0)
+        close.hour + close.min / 100.0, 0)
     else
       Time.new(1970, 1, day_value, 0, 0, 0, 0)
     end
-    self.sort_value = (dummy_time.to_f*100).to_i
+    self.sort_value = (dummy_time.to_f * 100).to_i
   end
 
   def concat_day_and_times

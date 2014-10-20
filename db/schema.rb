@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(version: 20141020114829) do
     t.text     "keywords"
     t.boolean  "completed",                         default: false
     t.string   "second_telephone"
+    t.boolean  "approved",                          default: false
   end
 
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
@@ -138,6 +139,7 @@ ActiveRecord::Schema.define(version: 20141020114829) do
     t.datetime "updated_at"
     t.text     "keywords"
     t.boolean  "completed",             default: false
+    t.boolean  "approved",              default: false
   end
 
   create_table "search_locations", force: true do |t|

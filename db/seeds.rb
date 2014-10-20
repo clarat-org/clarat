@@ -30,4 +30,4 @@ FederalState.create name: 'Thüringen'
 FederalState.create name: 'Rheinland-Pfalz'
 FederalState.create name: 'Mallorca' # Don't do this in production :)
 
-SearchLocation.create query: 'Berlin', latitude: 52.520007, longitude: 13.404954
+SearchLocation.create query: 'Berlin', latitude: 52.520007, longitude: 13.404954, geoloc: '52.520007,13.404954'

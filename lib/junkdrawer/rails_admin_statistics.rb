@@ -22,21 +22,32 @@ module RailsAdmin
             @stats = {created: []}
             model = @abstract_model.model
 
-            # find out how many weeks there have been since the first creation
-            oldest = model.select(:created_at).order(created_at: :asc).first
             this_year = Time.now.year
-            (1..Time.now.to_date.cweek).each do |i|
+            this_cweek = Time.now.to_date.cweek
+
+            # TODO: so much refactoring needed ...
+
+            (1..this_cweek).each do |i|
               start_time = Date.commercial(this_year, i).to_datetime
               end_time = start_time.end_of_week
 
-              count = model.where('created_at >= ?', start_time).
+              count = model.select(:id).where('created_at >= ?', start_time).
                       where('created_at <= ?', end_time).count
               @stats[:created] << [i, count]
             end
 
-            # if @abstract_model.responds_to? :approved_at
-            #   @stats[:approved] = []
-            # end
+            if model.attribute_method? :approved_at
+              @stats[:approved] = []
+
+              (1..this_cweek).each do |i|
+                start_time = Date.commercial(this_year, i).to_datetime
+                end_time = start_time.end_of_week
+
+                count = model.select(:id).where('approved_at >= ?', start_time).
+                        where('approved_at <= ?', end_time).count
+                @stats[:approved] << [i, count]
+              end
+            end
 
             render action: :statistics
           end

@@ -28,13 +28,14 @@ $(document).on 'rails_admin.dom_ready', ->
     rawData = $('#graph-wrapper').data('stats');
     graphData = []
     seriesInfo = {}
+    colors = ['#71c73e', '#77b7c5']
 
     for key, value of rawData
       seriesInfo[graphData.length] = key
 
       series =
         data: value
-        color: '#71c73e'
+        color: colors[graphData.length]
 
       graphData.push series
 

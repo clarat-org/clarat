@@ -2,7 +2,9 @@ require_relative '../test_helper'
 
 describe Organization do
 
-  let(:organization) { Organization.new }
+  let(:organization) { Organization.new(name: 'Testname',
+                                        description: 'Testbeschreibung',
+                                        legal_form: 'ev') } # Necessary to test uniqueness
 
   subject { organization }
 
@@ -26,8 +28,8 @@ describe Organization do
     describe 'always' do # TODO: Wieso, weshalb, warum?
       # Can I test the format here as well? What about custom validations?
       it { subject.must validate_presence_of :name }
-      it { subject.must validate_uniqueness_of :name }
       it { subject.must ensure_length_of(:name).is_at_most 100 }
+      it { subject.must validate_uniqueness_of(:name) }
       it { subject.must validate_presence_of :description }
       it { subject.must ensure_length_of(:description).is_at_most 400 }
       it { subject.must validate_presence_of :legal_form }

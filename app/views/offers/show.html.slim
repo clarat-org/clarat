@@ -52,8 +52,8 @@ h2 Öffnungszeiten
 h2 Anbieter
 =@offer.organization_name
 
-h2 Schlagworte:
 - unless @offer.tags.empty?
+  h2 Schlagworte:
   p
   -@offer.tags.each do |tag|
     =tag.name

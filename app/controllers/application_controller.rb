@@ -18,4 +18,10 @@ class ApplicationController < ActionController::Base
   def current_language
     I18n.locale = params[:locale] || 'en'
   end
+
+  # Misc
+  before_action :set_default_search_cache
+  def set_default_search_cache
+    @search_cache ||= SearchForm.new
+  end
 end

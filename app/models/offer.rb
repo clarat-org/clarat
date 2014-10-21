@@ -48,7 +48,9 @@ class Offer < ActiveRecord::Base
   algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
     attributesToIndex ['name', 'description', 'keywords']
     add_attribute :_geoloc
+    add_attribute :_tags
     add_attribute :organization_name
+    attributesForFaceting [:_tags]
   end
 
   # Methods
@@ -63,6 +65,11 @@ class Offer < ActiveRecord::Base
       'lat' => location.try(:latitude) || '0.0',
       'lng' => location.try(:longitude) || '0.0'
     }
+  end
+
+  # Offer's tags for indexing
+  def _tags
+    tags.map(&:name)
   end
 
   def creator_email

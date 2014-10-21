@@ -13,8 +13,14 @@
               = offer.organization_name
       = paginate @offers
 
-  #map-container
-    #map-canvas data-markers="#{@markers.to_json}" data-position="#{@position.to_json}"
+    .col-lg-4
+      #map-container
+        #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
+
+      - @tags.each do |tag|
+        - active_class = @search_cache.includes_tag(tag) ? 'active' : ''
+        = link_to tag, offers_path(search_form: @search_cache.toggle(tag)),
+          class: "btn btn-default btn-sm #{active_class}"
 
 
   - content_for :view_specific_scripts do

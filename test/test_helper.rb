@@ -1,4 +1,4 @@
-ENV["RAILS_ENV"] ||= "test"
+ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
@@ -28,7 +28,7 @@ Sidekiq::Testing.inline!
 
 # Redis
 Redis.current = Redis.new
-Capybara.asset_host = "http://localhost:3000"
+Capybara.asset_host = 'http://localhost:3000'
 
 # For fixtures:
 include ActionDispatch::TestProcess

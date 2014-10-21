@@ -5,6 +5,7 @@ class OffersController < ApplicationController
 
   def index
     @offers = build_search_cache.search params[:page]
+    @tags = @search_cache.tags_by_facet
     set_position
     set_gmaps_variable
     respond_with @offers

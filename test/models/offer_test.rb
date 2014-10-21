@@ -29,7 +29,31 @@ describe Offer do
 
   describe 'validations' do
     describe 'always' do
-      it { offer.must validate_presence_of :name }
+      it { subject.must validate_presence_of :name }
+      it { subject.must ensure_length_of(:name).is_at_most 80 }
+      it { subject.must validate_presence_of :description }
+      it { subject.must ensure_length_of(:description).is_at_most 400 }
+      it { subject.must validate_presence_of :next_steps }
+      it { subject.must ensure_length_of(:next_steps).is_at_most 400 }
+      it { subject.must validate_presence_of :encounter }
+      it { subject.must ensure_length_of(:fax).is_at_most 32 }
+      it { subject.must ensure_length_of(:telephone).is_at_most 32 }
+      it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
+      it { subject.must ensure_length_of(:opening_specification).is_at_most 150 }
+      it { subject.must ensure_length_of(:keywords).is_at_most 150 }
+      it { subject.must validate_presence_of :organization_id }
+    end
+  end
+
+  describe '::Base' do
+    describe 'associations' do
+      it { subject.must belong_to :location }
+      it { subject.must belong_to :organization }
+      it { subject.must have_and_belong_to_many :tags }
+      it { subject.must have_and_belong_to_many :languages }
+      it { subject.must have_and_belong_to_many :openings }
+      it { subject.must have_many :hyperlinks }
+      it { subject.must have_many :websites }
     end
   end
 end

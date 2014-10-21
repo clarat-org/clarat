@@ -4,7 +4,7 @@ class Organization < ActiveRecord::Base
   # Associtations
   has_many :offers, through: :organizations
   has_many :locations
-  has_many :offers
+  has_many :offers # TODO Is this line necessary (see has_many: offers above)
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 

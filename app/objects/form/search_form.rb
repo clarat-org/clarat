@@ -59,4 +59,22 @@ class SearchForm
       []
     end
   end
+
+  # TODO: put in helper, i18n
+  def humanized_explanation
+    str = ''
+    if query
+      str += "für den Suchbegriff \"#{query}\""
+    end
+    ta = tag_array
+    if ta.any?
+      if ta.length == 1
+        str += " mit dem Schlagwort #{ta[0]}"
+      else
+        str += ' mit den Schlagworten '
+        str += ta.to_sentence(locale: :de) # I18n.locale
+      end
+    end
+    str
+  end
 end

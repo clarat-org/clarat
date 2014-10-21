@@ -4,6 +4,8 @@
       h1
         = @offers.count
         |  Angebote gefunden
+      p
+        = @search_cache.humanized_explanation
       ul.search-results
         - @offers.each do |offer|
           li id="result-offer-#{offer.id}" class="JS-trigger-marker"
@@ -14,13 +16,16 @@
       = paginate @offers
 
     .col-lg-4
-      #map-container
-        #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
+      / TODO: refactor
+      .affix style="margin-top:20px"
+        - @tags.each do |tag|
+          - active_class = @search_cache.includes_tag(tag) ? 'active' : ''
+          = link_to tag, offers_path(search_form: @search_cache.toggle(tag)),
+            class: "btn btn-default btn-sm #{active_class}"
 
-      - @tags.each do |tag|
-        - active_class = @search_cache.includes_tag(tag) ? 'active' : ''
-        = link_to tag, offers_path(search_form: @search_cache.toggle(tag)),
-          class: "btn btn-default btn-sm #{active_class}"
+        #map-container
+          #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
+
 
 
   - content_for :view_specific_scripts do

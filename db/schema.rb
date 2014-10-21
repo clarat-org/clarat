@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020114829) do
+ActiveRecord::Schema.define(version: 20141021133104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(version: 20141020114829) do
     t.boolean  "completed",                         default: false
     t.string   "second_telephone"
     t.boolean  "approved",                          default: false
+    t.datetime "approved_at"
   end
 
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
@@ -140,6 +141,7 @@ ActiveRecord::Schema.define(version: 20141020114829) do
     t.text     "keywords"
     t.boolean  "completed",             default: false
     t.boolean  "approved",              default: false
+    t.datetime "approved_at"
   end
 
   create_table "search_locations", force: true do |t|

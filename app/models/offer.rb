@@ -19,6 +19,9 @@ class Offer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
+  include Approvable
+  before_save :add_approved_at
+
   def slug_candidates
     [
       :name,

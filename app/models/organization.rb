@@ -19,6 +19,9 @@ class Organization < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: [:slugged]
 
+  include Approvable
+  before_save :add_approved_at
+
   # Validations
   validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
   validates :description, length: { maximum: 400 }, presence: true

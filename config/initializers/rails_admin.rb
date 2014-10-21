@@ -1,3 +1,5 @@
+require Rails.root.join('lib', 'junkdrawer', 'rails_admin_statistics.rb')
+
 RailsAdmin.config do |config|
 
   ### Popular gems integration
@@ -27,12 +29,14 @@ RailsAdmin.config do |config|
       except ['User', 'FederalState']
     end
     show
-    clone
     edit
     delete do
       except ['User', 'FederalState']
     end
     show_in_app
+
+    clone
+    statistics
 
     ## With an audit adapter, you can add:
     history_index

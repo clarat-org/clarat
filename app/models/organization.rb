@@ -31,6 +31,8 @@ class Organization < ActiveRecord::Base
   def creator_email
     creator = User.find(versions.first.whodunnit)
     creator.email
+  rescue
+    'anonymous'
   end
 
   private

@@ -94,6 +94,10 @@ de:
         title: "Historie von %{model_label} '%{object_label}'"
         menu: "Historie"
         breadcrumb: "Historie"
+      statistics:
+        title: "Statistiken für %{model_label_plural}"
+        menu: 'Statistiken'
+        breadcrumb: 'Statistiken'
     form:
       cancel: "Abbrechen"
       basic_info: "Grundlegende Informationen"

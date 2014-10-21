@@ -116,8 +116,6 @@ end
 
 group :test do
   gem 'memory_test_fix'  # Sqlite inmemory fix
-  gem "minitest-rails"
-  gem "minitest-rails-capybara"
   gem 'rake'
   gem 'database_cleaner'
   gem 'colorize'

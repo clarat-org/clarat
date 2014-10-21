@@ -18,7 +18,7 @@ describe Website do
     describe 'always' do
       it { subject.must validate_presence_of :sort }
       it { subject.must validate_presence_of :url }
-      it { subject.must validate_uniqueness_of(:url) }
+      it { subject.must validate_uniqueness_of :url }
     end
   end
 

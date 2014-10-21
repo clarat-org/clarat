@@ -20,6 +20,8 @@ class SearchLocation < ActiveRecord::Base
   private
 
     def normalize_query
-      self.query = self.query.strip.titleize
+      if self.query
+        self.query = self.query.strip.titleize
+      end
     end
 end

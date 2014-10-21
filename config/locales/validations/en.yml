@@ -6,3 +6,9 @@ en:
           must be the same as the chosen location's organization.
         location_error: |
           must belong to the same organization as chosen below.
+      approved_by_creator: can't be approved by creator
+      incomplete: must be completed before approval
+    organization:
+      approved_by_creator: can't be approved by creator
+      incomplete: must be completed before approval
+

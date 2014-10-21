@@ -29,7 +29,7 @@ describe Organization do
       # Can I test the format here as well? What about custom validations?
       it { subject.must validate_presence_of :name }
       it { subject.must ensure_length_of(:name).is_at_most 100 }
-      it { subject.must validate_uniqueness_of(:name) }
+      it { subject.must validate_uniqueness_of :name }
       it { subject.must validate_presence_of :description }
       it { subject.must ensure_length_of(:description).is_at_most 400 }
       it { subject.must validate_presence_of :legal_form }

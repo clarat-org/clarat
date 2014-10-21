@@ -16,7 +16,7 @@ describe FederalState do
   describe 'validations' do
     describe 'always' do
       it { subject.must validate_presence_of :name }
-      it { subject.must validate_uniqueness_of(:name) }
+      it { subject.must validate_uniqueness_of :name }
     end
   end
 

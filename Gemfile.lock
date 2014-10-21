@@ -448,6 +448,7 @@ DEPENDENCIES
   minitest
   minitest-line
   minitest-matchers
+  minitest-rails
   minitest-rails-capybara
   mocha
   paper_trail

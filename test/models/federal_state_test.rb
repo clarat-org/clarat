@@ -1,15 +1,14 @@
 require_relative '../test_helper'
 
-describe Tag do
+describe FederalState do
 
-  let(:tag) { Tag.new }
+  let(:federal_state) { FederalState.new }
 
-  subject { tag }
+  subject { federal_state }
 
   describe 'attributes' do
     it { subject.must_respond_to :id }
     it { subject.must_respond_to :name }
-    it { subject.must_respond_to :main }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
   end
@@ -23,9 +22,7 @@ describe Tag do
 
   describe '::Base' do
     describe 'associations' do
-      it { subject.must have_and_belong_to_many :associated_tags }
-      it { subject.must have_and_belong_to_many :offers }
-      it { subject.must have_many :organizations }
+      it { subject.must have_many :locations }
     end
   end
 end

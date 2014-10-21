@@ -4,7 +4,7 @@ class Organization < ActiveRecord::Base
   # Associtations
   has_many :offers, through: :organizations
   has_many :locations
-  has_many :offers
+  has_many :offers # TODO Is this line necessary (see has_many: offers above)
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 
@@ -19,6 +19,9 @@ class Organization < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: [:slugged]
 
+  include Approvable
+  before_save :add_approved_at
+
   # Validations
   validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
   validates :description, length: { maximum: 400 }, presence: true
@@ -26,7 +29,7 @@ class Organization < ActiveRecord::Base
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :keywords, length: { maximum: 150 }
   # Custom Validations
-  validate :approvable
+  validates :approved, approved: true
 
   def creator_email
     creator = User.find(versions.first.whodunnit)
@@ -35,18 +38,4 @@ class Organization < ActiveRecord::Base
     'anonymous'
   end
 
-  private
-
-    # Custom Validation:  Ensure that the original creator can't approve his own creation and that it is completed
-    def approvable
-      if self.approved_changed?
-        if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
-          errors.add(:approved, I18n.t(
-            'validations.organization.approved_by_creator'))
-        elsif self.completed == false
-          errors.add(:approved, I18n.t(
-            'validations.organization.incomplete'))
-        end
-      end
-    end
 end

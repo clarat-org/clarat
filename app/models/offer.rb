@@ -19,6 +19,9 @@ class Offer < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
+  include Approvable
+  before_save :add_approved_at
+
   def slug_candidates
     [
       :name,
@@ -37,11 +40,11 @@ class Offer < ActiveRecord::Base
   validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :opening_specification, length: { maximum: 150 }
   validates :keywords, length: { maximum: 150 }
-
   validates :organization_id, presence: true
+  validates :approved, approved: true
   # Custom validations
   validate :location_fits_organization
-  validate :approvable
+  validates :approved, approved: true
 
   # Search
   include AlgoliaSearch
@@ -88,19 +91,6 @@ class Offer < ActiveRecord::Base
           'validations.offer.location_fits_organization.location_error'))
         errors.add(:organization_id, I18n.t(
           'validations.offer.location_fits_organization.organization_error'))
-      end
-    end
-
-    # Custom Validation:  Ensure that the original creator can't approve his own creation and that it is completed
-    def approvable
-      if self.approved_changed?
-        if self.versions.first.whodunnit.to_i == PaperTrail.whodunnit.id
-          errors.add(:approved, I18n.t(
-            'validations.offer.approved_by_creator'))
-        elsif self.completed == false
-          errors.add(:approved, I18n.t(
-            'validations.offer.incomplete'))
-        end
       end
     end
 end

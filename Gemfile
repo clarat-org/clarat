@@ -31,6 +31,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+# jQuery graph plotter
+gem 'flot-rails'
+
 # Templating for JS
 gem 'hogan_assets'
 group :assets do
@@ -76,12 +79,11 @@ gem 'rails_admin'
 gem 'devise'
 # gem 'pundit'
 gem 'arcane'
-
 gem 'enumerize'
-
 gem 'paper_trail'
-
 gem 'kaminari' # pagination
+
+gem 'route_translator'
 
 # search
 gem 'algoliasearch-rails'

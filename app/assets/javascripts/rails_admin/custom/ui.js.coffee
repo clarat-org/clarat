@@ -1,3 +1,6 @@
+# = require jquery.flot
+# = require jquery.flot.resize
+
 $(document).on 'rails_admin.dom_ready', ->
 
   # Character Counter
@@ -24,7 +27,7 @@ $(document).on 'rails_admin.dom_ready', ->
   # Statistics Page
 
   graphWrapper = $('#graph-wrapper')
-  if graphWrapper
+  if graphWrapper.length
     rawData = $('#graph-wrapper').data('stats');
     graphData = []
     seriesInfo = {}

@@ -36,7 +36,9 @@ RailsAdmin.config do |config|
     show_in_app
 
     clone
-    statistics
+    statistics do
+      except ['Hyperlink', 'FederalState', 'Language']
+    end
 
     ## With an audit adapter, you can add:
     history_index

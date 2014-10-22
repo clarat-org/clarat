@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141021133104) do
+ActiveRecord::Schema.define(version: 20141022164825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.boolean  "completed",                   default: false
   end
 
+  add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
   add_index "locations", ["federal_state_id"], name: "index_locations_on_federal_state_id", using: :btree
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
@@ -100,6 +101,8 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.datetime "approved_at"
   end
 
+  add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
+  add_index "offers", ["created_at"], name: "index_offers_on_created_at", using: :btree
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
   add_index "offers", ["organization_id"], name: "index_offers_on_organization_id", using: :btree
 
@@ -126,7 +129,11 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "sort_value"
+    t.string   "name",                 null: false
   end
+
+  add_index "openings", ["day"], name: "index_openings_on_day", using: :btree
+  add_index "openings", ["name"], name: "index_openings_on_name", using: :btree
 
   create_table "organizations", force: true do |t|
     t.string   "name",                                  null: false
@@ -143,6 +150,9 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.boolean  "approved",              default: false
     t.datetime "approved_at"
   end
+
+  add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree
+  add_index "organizations", ["created_at"], name: "index_organizations_on_created_at", using: :btree
 
   create_table "search_locations", force: true do |t|
     t.string   "query",                 null: false
@@ -162,6 +172,8 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",              default: "",    null: false
@@ -191,5 +203,8 @@ ActiveRecord::Schema.define(version: 20141021133104) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "websites", ["sort"], name: "index_websites_on_sort", using: :btree
+  add_index "websites", ["url"], name: "index_websites_on_url", using: :btree
 
 end

@@ -14,8 +14,15 @@ class Opening < ActiveRecord::Base
   validates :close, uniqueness: { scope: [:day, :open] }
   validates_presence_of :close, if: :open
 
-  before_validation :calculate_sort_value
   validates :sort_value, presence: true
+  validates :name, presence: true
+
+  # Callbacks
+  before_validation :calculate_sort_value
+
+  before_validation do
+    self.name = concat_day_and_times
+  end
 
   # Methods
 

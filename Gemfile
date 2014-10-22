@@ -79,12 +79,11 @@ gem 'rails_admin'
 gem 'devise'
 # gem 'pundit'
 gem 'arcane'
-
 gem 'enumerize'
-
 gem 'paper_trail'
-
 gem 'kaminari' # pagination
+
+gem 'route_translator'
 
 # search
 gem 'algoliasearch-rails'

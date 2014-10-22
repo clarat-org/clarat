@@ -26,9 +26,10 @@ $(document).on 'rails_admin.dom_ready', ->
 
   # Statistics Page
 
-  graphWrapper = $('#graph-wrapper')
-  if graphWrapper.length
-    rawData = $('#graph-wrapper').data('stats');
+  graphWrapper = $('.graph-wrapper')
+  graphWrapper.each (index, wrapper) ->
+    $wrapper = $(wrapper)
+    rawData = $wrapper.data('stats');
     graphData = []
     seriesInfo = {}
     colors = ['#71c73e', '#77b7c5']
@@ -56,7 +57,8 @@ $(document).on 'rails_admin.dom_ready', ->
     # ]
 
     # Line Chart
-    $.plot $('#graph-lines'), graphData,
+    lines = $wrapper.find('.graph-lines')
+    $.plot lines, graphData,
       series:
         points:
           show: true
@@ -71,7 +73,8 @@ $(document).on 'rails_admin.dom_ready', ->
         hoverable: true
 
     # Bar Chart
-    $.plot $('#graph-bars'), graphData,
+    bars = $wrapper.find('.graph-bars')
+    $.plot bars, graphData,
       series:
         bars:
           show: true
@@ -84,20 +87,23 @@ $(document).on 'rails_admin.dom_ready', ->
         borderWidth: 20
         hoverable: true
 
-    $('#graph-bars').hide()
+    bars.hide()
 
-    $('#lines').on 'click', (e) ->
-      $('#bars').removeClass 'active'
-      $('#graph-bars').fadeOut()
+    linesBtn = $wrapper.find('.lines')
+    barsBtn = $wrapper.find('.bars')
+
+    linesBtn.on 'click', (e) ->
+      barsBtn.removeClass 'active'
+      bars.fadeOut()
       $(this).addClass 'active'
-      $('#graph-lines').fadeIn()
+      lines.fadeIn()
       e.preventDefault()
 
-    $('#bars').on 'click', (e) ->
-      $('#lines').removeClass 'active'
-      $('#graph-lines').fadeOut()
+    barsBtn.on 'click', (e) ->
+      linesBtn.removeClass 'active'
+      lines.fadeOut()
       $(this).addClass 'active'
-      $('#graph-bars').fadeIn().removeClass 'hidden'
+      bars.fadeIn().removeClass 'hidden'
       e.preventDefault()
 
 
@@ -109,7 +115,7 @@ $(document).on 'rails_admin.dom_ready', ->
 
     previousPoint = null
 
-    $('#graph-lines, #graph-bars').bind 'plothover', (event, pos, item) ->
+    $wrapper.find('.graph-lines, .graph-bars').bind 'plothover', (event, pos, item) ->
       if item
         if previousPoint isnt item.dataIndex
           previousPoint = item.dataIndex

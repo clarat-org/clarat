@@ -1,0 +1,14 @@
+.graph-wrapper id="#{designator}-graph" data-stats="#{stats.to_json}"
+  .graph-info
+    - stats.keys.each_with_index do |key, i|
+      .legend.btn class="legend#{i}"
+        = key
+
+    a.btn.bars href="#"
+      .fa.fa-bar-chart
+    a.btn.active.lines href="#"
+      .fa.fa-line-chart
+
+  .graph-container
+    .graph-lines
+    .graph-bars

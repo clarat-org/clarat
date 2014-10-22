@@ -82,7 +82,7 @@
 .graph-info .legend1:before { background: #77b7c5; }
 
 /* Lines & Bars Buttons */
-#lines, #bars {
+.lines, .bars {
   width: 34px;
   height: 28px;
   padding: 0;
@@ -93,7 +93,7 @@
   cursor: pointer;
 }
 
-#lines.active, #bars.active {
+.lines.active, .bars.active {
   background: #82d344;
   background: -moz-linear-gradient(top, #82d344 0%, #71c73e 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82d344), color-stop(100%,#71c73e));
@@ -103,7 +103,7 @@
   background: linear-gradient(to bottom, #82d344 0%,#71c73e 100%);
 }
 
-#lines div, #bars div {
+.lines div, .bars div {
   font-size: 25px;
   padding: 3px
 }

@@ -1,14 +1,5 @@
-#graph-wrapper data-stats="#{@stats.to_json}"
-  .graph-info
-    - @stats.keys.each_with_index do |key, i|
-      .legend.btn class="legend#{i}"
-        = key
+h3 Weekly Statistics
+= render 'graph', designator: 'weekly', stats: @weekly_stats
 
-    a.btn#bars href="#"
-      .fa.fa-bar-chart
-    a.btn.active#lines href="#"
-      .fa.fa-line-chart
-
-  .graph-container
-    #graph-lines
-    #graph-bars
+h3 Cumulative Statistics
+= render 'graph', designator: 'cumulative', stats: @cumulative_stats

@@ -9,8 +9,8 @@ feature 'Admin Backend' do
 
     visit rails_admin_path
 
-    click_link 'Offers', match: :first
-    click_link 'Add new'
+    click_link 'Angebote', match: :first
+    click_link 'Neu hinzufügen'
 
     assert_difference 'Offer.count', 1 do
       fill_in 'offer_name', with: 'testname'
@@ -19,7 +19,7 @@ feature 'Admin Backend' do
       select 'Fixed', from: 'offer_encounter'
       select organization.name, from: 'offer_organization_id'
 
-      click_button 'Save'
+      click_button 'Speichern'
     end
   end
 end

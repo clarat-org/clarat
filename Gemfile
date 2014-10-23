@@ -31,9 +31,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# jQuery graph plotter
-gem 'flot-rails'
-
 # Templating for JS
 gem 'hogan_assets'
 group :assets do
@@ -75,6 +72,7 @@ gem 'awesome_print'
 
 gem 'rails_admin_clone'
 gem 'rails_admin'
+gem 'rails_admin_statistics', :path => '../rails_admin_statistics'
 
 gem 'devise'
 # gem 'pundit'

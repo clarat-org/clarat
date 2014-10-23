@@ -48,7 +48,9 @@ class Offer < ActiveRecord::Base
 
   # Search
   include AlgoliaSearch
-  algoliasearch per_environment: true, disable_indexing: Rails.env.test? do
+  algoliasearch per_environment: true,
+                disable_indexing: Rails.env.test?,
+                if: :approved? do
     attributesToIndex ['name', 'description', 'keywords']
     add_attribute :_geoloc
     add_attribute :_tags

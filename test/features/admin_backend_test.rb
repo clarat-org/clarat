@@ -44,4 +44,42 @@ feature 'Admin Backend' do
       page.must_have_content admin.email
     end
   end
+
+  scenario 'Try to create offer with a organization/location mismatch' do
+    organization = FactoryGirl.create :organization
+    location = FactoryGirl.create(:location, name: 'testname')
+
+    visit rails_admin_path
+
+    click_link 'Angebote', match: :first
+    click_link 'Neu hinzufügen'
+
+    fill_in 'offer_name', with: 'testangebot'
+    fill_in 'offer_description', with: 'testdescription'
+    fill_in 'offer_next_steps', with: 'testnextsteps'
+    select 'Fixed', from: 'offer_encounter'
+    select location.name, from: 'offer_location_id'
+    select organization.name, from: 'offer_organization_id'
+
+    click_button 'Speichern'
+
+    page.must_have_content 'Angebot wurde nicht hinzugefügt'
+    page.must_have_content 'Location muss zu der unten angegebenen Organisation gehören.'
+    page.must_have_content 'Organization muss der des angegebenen Standorts gleichen.'
+  end
+
+  scenario 'Mark offer as completed' do
+    offer = FactoryGirl.create :offer
+
+    # visit rails_admin_path
+
+    # click_link 'Angebote', match: :first
+    # click_link 'Bearbeiten'
+
+    # check 'offer_completed'
+
+    # click_button 'Speichern'
+
+    # page.must_have_content '✓'
+  end
 end

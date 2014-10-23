@@ -57,7 +57,7 @@ de:
       show_in_app:
         menu: "Anzeigen in App"
       new:
-        title: "Hinzufügen %{model_label}"
+        title: "%{model_label} hinzufügen"
         menu: "Neu hinzufügen"
         breadcrumb: "Hinzufügen"
         link: "%{model_label} hinzufügen"
@@ -75,7 +75,7 @@ de:
         link: "'%{object_label}' löschen"
         done: "gelöscht"
       bulk_delete:
-        title: "Löschen %{model_label_plural}"
+        title: "Löschen mehrerer %{model_label_plural}"
         menu: "Mehrere löschen"
         breadcrumb: "Mehrere löschen"
         bulk_link: "Löschen der ausgewählten %{model_label_plural}"

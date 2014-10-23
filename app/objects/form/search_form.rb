@@ -36,7 +36,7 @@ class SearchForm
     tags_facet = @hits.facets['_tags']
     inverted = tags_facet.each_with_object( {} ) do |(key, value), out|
       ( out[value] ||= [] ) << key
-    end # save invert
+    end # safe invert
     inverted.values.flatten.uniq
   end
 

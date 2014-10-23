@@ -1,0 +1,3 @@
+- active_class = search_cache.includes_tag(tag) ? 'active' : ''
+= link_to tag, offers_path(search_form: search_cache.toggle(tag)),
+  class: "btn btn-default btn-sm #{active_class}"

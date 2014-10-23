@@ -42,3 +42,6 @@ bower.json
 
 # OS files
 .DS_Store
+
+# Redis db dumps
+dump.rdb

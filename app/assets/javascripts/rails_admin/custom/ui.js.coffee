@@ -32,7 +32,7 @@ $(document).on 'rails_admin.dom_ready', ->
     rawData = $wrapper.data('stats');
     graphData = []
     seriesInfo = {}
-    colors = ['#71c73e', '#77b7c5']
+    colors = ['#71C73E', '#77B7C5'] #, '#D4D137', '#B474CE', '#7A3A20'
 
     for key, value of rawData
       seriesInfo[graphData.length] = key

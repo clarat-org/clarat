@@ -98,6 +98,10 @@ de:
         title: "Statistiken für %{model_label_plural}"
         menu: 'Statistiken'
         breadcrumb: 'Statistiken'
+      clone:
+        title: "%{model_label} '%{object_label}' duplizieren"
+        menu: 'Duplizieren'
+        breadcrumb: 'Duplizieren'
     form:
       cancel: "Abbrechen"
       basic_info: "Grundlegende Informationen"

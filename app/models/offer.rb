@@ -6,7 +6,7 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :tags
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
-  belongs_to :organization, inverse_of: :offers
+  belongs_to :organization, inverse_of: :offers, counter_cache: true
   # Attention: former has_one :organization, through: :locations - but there can also be offers without locations
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
@@ -82,6 +82,21 @@ class Offer < ActiveRecord::Base
     creator.email
   rescue
     'anonymous'
+  end
+
+  def partial_dup
+    self.dup.tap do |offer|
+      offer.name = nil
+      offer.telephone = nil
+      offer.second_telephone = nil
+      offer.fax = nil
+      offer.contact_name = nil
+      offer.email = nil
+      offer.openings = []
+      offer.opening_specification = nil
+      offer.completed = false
+      offer.approved = false
+    end
   end
 
   private

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022164825) do
+ActiveRecord::Schema.define(version: 20141023142607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -136,19 +136,21 @@ ActiveRecord::Schema.define(version: 20141022164825) do
   add_index "openings", ["name"], name: "index_openings_on_name", using: :btree
 
   create_table "organizations", force: true do |t|
-    t.string   "name",                                  null: false
-    t.text     "description",                           null: false
-    t.string   "legal_form",                            null: false
-    t.boolean  "charitable",            default: true
+    t.string   "name",                                      null: false
+    t.text     "description",                               null: false
+    t.string   "legal_form",                                null: false
+    t.boolean  "charitable",                default: true
     t.integer  "founded"
-    t.string   "umbrella",    limit: 8
+    t.string   "umbrella",        limit: 8
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "keywords"
-    t.boolean  "completed",             default: false
-    t.boolean  "approved",              default: false
+    t.boolean  "completed",                 default: false
+    t.boolean  "approved",                  default: false
     t.datetime "approved_at"
+    t.integer  "offers_count",              default: 0
+    t.integer  "locations_count",           default: 0
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

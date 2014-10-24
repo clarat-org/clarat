@@ -12,6 +12,9 @@ RailsAdmin.config do |config|
 
   ## == Cancan ==
   # config.authorize_with :cancan
+  config.authorize_with do
+    redirect_to main_app.root_path unless current_user.try(:admin?)
+  end
 
   ## == PaperTrail ==
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
@@ -47,11 +50,15 @@ RailsAdmin.config do |config|
 
   config.model 'Organization' do
     list do
+      field :offers_count
       field :name
       field :legal_form
       field :completed
       field :approved
       field :creator_email
+      field :locations_count
+
+      sort_by :offers_count
     end
     weight(-3)
     field :name
@@ -78,6 +85,10 @@ RailsAdmin.config do |config|
     show do
       field :offers
       field :locations
+    end
+
+    clone_config do
+      custom_method :partial_dup
     end
   end
 
@@ -183,6 +194,10 @@ RailsAdmin.config do |config|
     field :websites
     field :completed
     field :approved
+
+    clone_config do
+      custom_method :partial_dup
+    end
   end
 
   config.model 'Opening' do

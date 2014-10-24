@@ -6,7 +6,7 @@ FactoryGirl.define do
     name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
-    reach { Offer.enumerized_attributes.attributes['reach'].values.sample }
+    encounter { Offer.enumerized_attributes.attributes['encounter'].values.sample }
     frequent_changes { Faker::Boolean.maybe }
     completed { Faker::Boolean.maybe }
 
@@ -36,12 +36,14 @@ FactoryGirl.define do
       create_list :hyperlink, evaluator.website_count, linkable: offer
       evaluator.tag_count.times do
         offer.tags << (
-          rand(2) == 0 ? FactoryGirl.create(:tag) : Tag.select(:id).all.sample
+          Tag.count != 0 && rand(2) == 0 ?
+            Tag.select(:id).all.sample : FactoryGirl.create(:tag)
         )
       end
       evaluator.opening_count.times do
         offer.openings << (
-          rand(2) == 0 ? FactoryGirl.create(:opening) : Opening.select(:id).all.sample
+          Opening.count != 0 && rand(2) == 0 ?
+            Opening.select(:id).all.sample : FactoryGirl.create(:opening)
         )
       end
       evaluator.language_count.times do

@@ -18,10 +18,23 @@
     .col-lg-4
       / TODO: refactor
       .affix style="margin-top:20px"
-        - @tags.each do |tag|
-          - active_class = @search_cache.includes_tag(tag) ? 'active' : ''
-          = link_to tag, offers_path(search_form: @search_cache.toggle(tag)),
-            class: "btn btn-default btn-sm #{active_class}"
+        - tags1 = @tags[0..5]
+        - tags2 = @tags[6..-1]
+        - tags1.each do |tag|
+          = render 'tag', search_cache: @search_cache, tag: tag
+        - if tags2
+          .js-more
+            .js-more-target.hidden
+              - tags2.each do |tag|
+                = render 'tag', search_cache: @search_cache, tag: tag
+            a.js-more-trigger href='#'
+              .js-more-display
+                | Mehr Schlagworte
+                .fa.fa-chevron-down<
+              .js-more-display.hidden
+                | Weniger Schlagworte
+                .fa.fa-chevron-up<
+
 
         #map-container
           #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}

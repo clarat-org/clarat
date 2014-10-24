@@ -75,7 +75,7 @@ gem 'rails_admin'
 gem 'rails_admin_statistics', :path => '../rails_admin_statistics'
 
 gem 'devise'
-# gem 'pundit'
+gem 'pundit'
 gem 'arcane'
 gem 'enumerize'
 gem 'paper_trail'

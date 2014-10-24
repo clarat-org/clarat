@@ -27,3 +27,4 @@ about supported directives.
 # = require modules/autocomplete
 # = require modules/geolocation
 # = require modules/search_location
+# = require modules/more

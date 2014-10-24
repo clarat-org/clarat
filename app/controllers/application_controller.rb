@@ -9,19 +9,40 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
   # Pundit
-  # include Pundit
-  # after_action :verify_authorized, :except => :index
-  # after_action :verify_policy_scoped, :only => :index
-
-  # # I18n
-  # before_filter :current_language
-  # def current_language
-  #   I18n.locale = params[:locale] || 'de'
-  # end
+  include Pundit
+  after_action :verify_authorized_with_exceptions, except: :index
+  after_action :verify_policy_scoped_with_exceptions, only: :index
 
   # Misc
   before_action :set_default_search_cache
   def set_default_search_cache
     @search_cache ||= SearchForm.new
   end
+
+  protected
+
+    def verify_authorized_with_exceptions
+      verify_authorized unless pundit_unverified_controller
+    end
+
+    def verify_policy_scoped_with_exceptions
+      verify_policy_scoped unless pundit_unscoped_controller
+    end
+
+    def pundit_unverified_controller
+      (pundit_unverified_modules.include? self.class.name.split("::").first)||
+      (pundit_unverified_classes.include? self.class.name)
+    end
+
+    def pundit_unverified_modules
+      ['Devise', 'RailsAdmin']
+    end
+
+    def pundit_unverified_classes
+      ['PagesController']
+    end
+
+    def pundit_unscoped_controller
+      ['OffersController'].include? self.class.name
+    end
 end

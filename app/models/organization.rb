@@ -38,4 +38,13 @@ class Organization < ActiveRecord::Base
     'anonymous'
   end
 
+
+  def partial_dup
+    self.dup.tap do |orga|
+      orga.name = nil
+      orga.founded = nil
+      orga.completed = false
+      orga.approved = false
+    end
+  end
 end

@@ -5,6 +5,7 @@ Clarat::Application.routes.draw do
     root to: 'pages#home'
 
     resources :offers, only: [:index, :show]
+    resources :users, only: [:show]
   end
 
   # Sidekiq interface

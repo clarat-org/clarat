@@ -5,6 +5,7 @@ class SearchLocation < ActiveRecord::Base
   validates :longitude, presence: true
 
   before_validation :normalize_query
+  before_save :set_geoloc
 
   # Geocoding
   geocoded_by :query
@@ -23,5 +24,9 @@ class SearchLocation < ActiveRecord::Base
       if self.query
         self.query = self.query.strip.titleize
       end
+    end
+
+    def set_geoloc
+      self.geoloc = Geolocation.new(self).to_s
     end
 end

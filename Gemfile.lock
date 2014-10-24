@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/KonstantinKo/rails_admin_statistics.git
-  revision: 9239d7fbb07112b8fd2a1b43e4e6636f1dbbd81a
+  revision: 30ce57cbf0efe9ba883260e67fa52a8eec9a5802
   specs:
-    rails_admin_statistics (0.0.1)
+    rails_admin_statistics (0.0.2)
       rails
       railties
 

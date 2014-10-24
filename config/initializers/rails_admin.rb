@@ -1,5 +1,3 @@
-require Rails.root.join('lib', 'junkdrawer', 'rails_admin_statistics.rb')
-
 RailsAdmin.config do |config|
 
   ### Popular gems integration

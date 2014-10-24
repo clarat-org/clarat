@@ -1,6 +1,3 @@
-# = require jquery.flot
-# = require jquery.flot.resize
-
 $(document).on 'rails_admin.dom_ready', ->
 
   # Character Counter

@@ -2,9 +2,14 @@ require_relative '../test_helper'
 
 describe Opening do
 
-  let(:opening) { Opening.new(day: 'mon',
-                              open: Time.now,
-                              close: Time.now + 1.hour) }
+  let(:opening) do
+    Opening.new(
+      name: 'mon 00:00-01:00',
+      day: 'mon',
+      open: Time.now,
+      close: Time.now + 1.hour
+    )
+  end
 
   subject { opening }
 

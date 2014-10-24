@@ -3,8 +3,8 @@ require 'ffaker'
 FactoryGirl.define do
   factory :location do
     # required
-    street { Faker::AddressDE.street_address }
-    zip { (10_000..14_100).to_a.sample }
+    street 'Foobar 1'
+    zip '12345'
     city 'Berlin'
     hq { rand(9) == 0 }
 
@@ -29,6 +29,11 @@ FactoryGirl.define do
     end
     after :create do |location, evaluator|
       create_list :hyperlink, evaluator.website_count, linkable: location
+    end
+
+    trait :fake_address do
+      street { Faker::AddressDE.street_address }
+      zip { (10_000..14_100).to_a.sample }
     end
   end
 end

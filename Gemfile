@@ -75,6 +75,8 @@ gem 'rails_admin'
 gem 'rails_admin_statistics', github: 'KonstantinKo/rails_admin_statistics'
 
 gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'pundit'
 gem 'arcane'
 gem 'enumerize'

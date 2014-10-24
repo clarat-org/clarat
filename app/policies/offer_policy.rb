@@ -1,0 +1,2 @@
+class OfferPolicy < ApplicationPolicy
+end

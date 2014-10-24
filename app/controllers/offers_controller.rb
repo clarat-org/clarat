@@ -13,6 +13,8 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.friendly.find(params[:id])
+    authorize @offer
+
     respond_with @offer
   end
 

@@ -77,7 +77,7 @@ gem 'rails_admin_clone'
 gem 'rails_admin'
 
 gem 'devise'
-# gem 'pundit'
+gem 'pundit'
 gem 'arcane'
 gem 'enumerize'
 gem 'paper_trail'

@@ -31,6 +31,11 @@ class Organization < ActiveRecord::Base
   # Custom Validations
   validates :approved, approved: true
 
+  # Statistics
+  extend RailsAdminStatistics
+
+  # Methods
+
   def creator_email
     creator = User.find(versions.first.whodunnit)
     creator.email

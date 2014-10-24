@@ -28,6 +28,9 @@ class Location < ActiveRecord::Base
   # Geocoding
   geocoded_by :full_address
 
+  # Statistics
+  extend RailsAdminStatistics
+
   # Methods
 
   delegate :name, to: :federal_state, prefix: true

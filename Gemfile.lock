@@ -1,5 +1,6 @@
-PATH
-  remote: ../rails_admin_statistics
+GIT
+  remote: git://github.com/KonstantinKo/rails_admin_statistics.git
+  revision: 9239d7fbb07112b8fd2a1b43e4e6636f1dbbd81a
   specs:
     rails_admin_statistics (0.0.1)
       rails

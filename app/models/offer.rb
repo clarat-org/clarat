@@ -1,6 +1,5 @@
 class Offer < ActiveRecord::Base
   has_paper_trail
-
   # Associtations
   belongs_to :location, inverse_of: :offers
   has_and_belongs_to_many :tags
@@ -57,6 +56,9 @@ class Offer < ActiveRecord::Base
     add_attribute :organization_name
     attributesForFaceting [:_tags]
   end
+
+  # Statistics
+  extend RailsAdminStatistics
 
   # Methods
 

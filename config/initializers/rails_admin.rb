@@ -38,7 +38,7 @@ RailsAdmin.config do |config|
 
     clone
     statistics do
-      except ['Hyperlink', 'FederalState', 'Language']
+      only ['Organization', 'Offer', 'Location']
     end
 
     ## With an audit adapter, you can add:

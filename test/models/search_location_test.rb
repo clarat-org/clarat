@@ -23,8 +23,8 @@ describe SearchLocation do
     describe 'always' do
       it { subject.must validate_presence_of :query }
       it { subject.must validate_uniqueness_of :query }
-      it { subject.must validate_presence_of :latitude }
-      it { subject.must validate_presence_of :longitude }
+      # it { subject.must validate_presence_of :latitude }
+      # it { subject.must validate_presence_of :longitude }
     end
   end
 end

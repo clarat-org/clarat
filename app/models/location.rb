@@ -9,9 +9,13 @@ class Location < ActiveRecord::Base
   has_many :websites, through: :hyperlinks
 
   # Validations
-  validates :name, length: { maximum: 100 }, uniqueness: [ :street, :zip ]
-  validates :street, presence: true, uniqueness: [ :name, :zip ], format: /\A.+\d+.*\z/ # format: ensure digit for house number
-  validates :zip, presence: true, length: { is: 5 }, uniqueness: { scope: [ :name, :street ] }
+  validates :name, length: { maximum: 100 },
+                   uniqueness: { scope: [ :street, :zip ] }
+  validates :street, presence: true,
+                     uniqueness: { scope: [ :name, :zip ] },
+                     format: /\A.+\d+.*\z/ # format: ensure digit for house number
+  validates :zip, presence: true, length: { is: 5 },
+                  uniqueness: { scope: [ :name, :street ] }
   validates :city, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }

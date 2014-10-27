@@ -98,6 +98,7 @@ class Offer < ActiveRecord::Base
       offer.opening_specification = nil
       offer.completed = false
       offer.approved = false
+      offer.tags = self.tags
     end
   end
 

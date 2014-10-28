@@ -1,11 +1,14 @@
 .grey-background
   .container
     .col-lg-8
-      h1
-        = @offers.count
-        |  Angebote gefunden
       p
-        = @search_cache.humanized_explanation
+        = @offers.count
+        |  Ergebnisse
+        - tags = @search_cache.tags
+        - unless tags.empty?
+          |  (Schlagwortfilter:
+          =< tags
+          | )
       ul.search-results
         - @offers.each do |offer|
           li id="result-offer-#{offer.id}" class="JS-trigger-marker"

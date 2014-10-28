@@ -39,8 +39,15 @@
         #map-container
           #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
 
+- if @update_request
+  #unavailable_location_overlay style="background:white;width:500px;"
+    p
+      | Leider finden sich auf unserer Plattform aktuell nur Angebote aus
+      |  Berlin. Wir hoffen aber schon bald auch in anderen Teilen
+      |  Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
+      |  und wir werden uns einmalig bei dir melden sobald das der Fall ist.
+    = render '/update_requests/new', update_request: @update_request
 
-
-  - content_for :view_specific_scripts do
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
-    = javascript_include_tag "gmaps_search_results.js"
+- content_for :view_specific_scripts do
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
+  = javascript_include_tag "gmaps_search_results.js"

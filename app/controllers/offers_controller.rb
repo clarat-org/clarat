@@ -6,6 +6,7 @@ class OffersController < ApplicationController
   def index
     @offers = build_search_cache.search params[:page]
     @tags = @search_cache.tags_by_facet
+    test_location_unavailable
     set_position
     set_gmaps_variable
     respond_with @offers
@@ -46,6 +47,15 @@ class OffersController < ApplicationController
             offer_ids: [offer.id]
           }
         end
+      end
+    end
+
+    # See if area is covered and if not instantiate an UpdateRequest
+    def test_location_unavailable
+      unless @search_cache.has_nearby?
+        @update_request = UpdateRequest.new(
+          search_location: @search_cache.search_location
+        )
       end
     end
 end

@@ -1,0 +1,4 @@
+= semantic_form_for update_request, remote: true do |f|
+  = f.input :email, label: false, placeholder: 'E-Mail Adresse'
+  = f.input :search_location, as: :hidden
+  = f.action :submit, label: 'Nachricht erhalten'

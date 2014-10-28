@@ -22,22 +22,31 @@ class SearchForm
                          facets: '_tags'
   end
 
+  def has_nearby?
+    @_has_nearby ||=
+      Offer.search('',
+                   page: 0,
+                   hitsPerPage: 1,
+                   aroundLatLng: geolocation,
+                   aroundRadius: 25_000 # check later if this is accurate
+      ).any?
+  end
+
   def geolocation
-    @geolocation ||=
-      if generated_geolocation == 'Dein Standort'
-        generated_geolocation
-      else
-        result = SearchLocation.find_or_generate search_location
-        Geolocation.new result
-      end
+    result = SearchLocation.find_or_generate search_location
+    @geolocation ||= Geolocation.new result
   end
 
   def tags_by_facet
     tags_facet = @hits.facets['_tags']
-    inverted = tags_facet.each_with_object( {} ) do |(key, value), out|
-      ( out[value] ||= [] ) << key
-    end # safe invert
-    inverted.values.flatten.uniq
+    if tags_facet
+      inverted = tags_facet.each_with_object( {} ) do |(key, value), out|
+        ( out[value] ||= [] ) << key
+      end # safe invert
+      inverted.values.flatten.uniq
+    else
+      []
+    end
   end
 
   # toggles tag on or off

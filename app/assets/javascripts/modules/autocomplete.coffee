@@ -3,8 +3,8 @@ $(document).ready ->
     initTypeahead()
 
     $(document).on 'newGeolocation', ->
-      document.Clarat.typeahead.data('ttTypeahead').dropdown.datasets[0].source = # don't ask
-        generateSource()
+      document.Clarat.typeahead.data('ttTypeahead').
+        dropdown.datasets[0].source = generateSource() # don't ask
 
     document.Clarat.typeahead.on 'typeahead:selected', navigateToHit
 
@@ -29,7 +29,7 @@ initTypeahead = ->
 generateSource = ->
   document.Clarat.index.ttAdapter
     hitsPerPage: 5
-    aroundLatLng: document.Clarat.currentGeolocation
+    aroundLatLng: document.Clarat.currentGeolocation # TODO: use entered location
     aroundRadius: 999999999
 
 navigateToHit = (event, suggestion, id) ->

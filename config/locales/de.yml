@@ -22,6 +22,9 @@ de:
       user:
         one: Nutzer
         other: Nutzer
+      update_request:
+        one: 'Update Request'
+        other: 'Update Requests'
   i18n:
     transliterate:
       rule:

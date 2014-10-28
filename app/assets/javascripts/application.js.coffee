@@ -20,6 +20,8 @@ about supported directives.
 # = require hogan
 # = require_tree ./templates
 #
+# = require jquery.popupoverlay
+#
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
@@ -28,3 +30,4 @@ about supported directives.
 # = require modules/geolocation
 # = require modules/search_location
 # = require modules/more
+# = require modules/unavailable_location_overlay

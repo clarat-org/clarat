@@ -4,5 +4,5 @@ class Language < ActiveRecord::Base
 
   # Validations
   validates :name, uniqueness: true, presence: true
-  validates :code, uniqueness: true, presence: true, length: { is: 2 } # ISO 639-1
+  validates :code, uniqueness: true, presence: true, length: { is: 3 } # ISO 639-2
 end

@@ -5,6 +5,7 @@ Clarat::Application.routes.draw do
     root to: 'pages#home'
 
     resources :offers, only: [:index, :show]
+    resources :organizations, only: [:show]
     resources :users, only: [:show]
     resources :update_requests, only: [:new, :create]
   end

@@ -6,7 +6,8 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.friendly.find(params[:id])
-    # debugger
+    @location = Location.where(
+                  organization_id: @organization.id, hq: true).first
     authorize @organization
     respond_with @organization
   end

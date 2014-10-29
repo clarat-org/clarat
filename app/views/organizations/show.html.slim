@@ -1,1 +1,26 @@
 h1 = @organization.name
+
+p
+  h2 Was
+  = @organization.description
+
+p
+  h2 Wo
+  p
+  - if @location.name?
+    =@location.name
+  p
+  =@location.street
+  - if @location.addition?
+    p
+    =@location.addition
+  p
+  =>@location.zip
+  =@location.city
+
+p
+ h2 Alle Angebote der Organisation
+ ul
+   - @organization.offers.each do |offer|
+     li
+      = link_to offer.name, offer_path(id: offer)

@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :update_request do
-    query "MyString"
-    email "MyString"
+    query 'MyString'
+    email 'MyString'
   end
 end

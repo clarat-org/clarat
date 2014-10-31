@@ -19,3 +19,6 @@ GuardClause:
 
 RedundantSelf:
   Enabled: false
+
+LineLength:
+  Enabled: false

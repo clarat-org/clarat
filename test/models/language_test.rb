@@ -2,7 +2,7 @@ require_relative '../test_helper'
 
 describe Language do
 
-  let( :language) { Language.new }
+  let(:language) { Language.new }
 
   subject { language }
 

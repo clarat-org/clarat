@@ -2,10 +2,12 @@ require_relative '../test_helper'
 
 describe SearchLocation do
 
-  let(:search_location) { SearchLocation.new(query: 'Berlin',
+  let(:search_location) {
+                          SearchLocation.new(query: 'Berlin',
                                              latitude: 52.520007,
                                              longitude: 13.404954,
-                                             geoloc: '52.520007,13.404954') }
+                                             geoloc: '52.520007,13.404954')
+                        }
 
   subject { search_location }
 

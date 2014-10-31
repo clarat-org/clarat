@@ -71,15 +71,15 @@ feature 'Admin Backend' do
   scenario 'Mark offer as completed' do
     offer = FactoryGirl.create :offer
 
-    # visit rails_admin_path
+    visit rails_admin_path
 
-    # click_link 'Angebote', match: :first
-    # click_link 'Bearbeiten'
+    click_link 'Angebote', match: :first
+    click_link 'Bearbeiten'
 
-    # check 'offer_completed'
+    check 'offer_completed'
 
-    # click_button 'Speichern'
+    click_button 'Speichern'
 
-    # page.must_have_content '✓'
+    page.must_have_content '✓'
   end
 end

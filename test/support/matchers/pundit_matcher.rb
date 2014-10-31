@@ -70,8 +70,8 @@ module PunditMatcher
     end
   end
 
-    # "ultimately": check if not only the policy permits or denies a user, but also
-    # if the authorization lets a user get there in the first place
+  # "ultimately": check if not only the policy permits or denies a user, but also
+  # if the authorization lets a user get there in the first place
 
   class UltimatelyDeny < Base
     def matches? policy

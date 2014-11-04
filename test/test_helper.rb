@@ -15,6 +15,7 @@ require 'minitest/spec'
 require 'minitest/mock'
 require 'minitest-matchers'
 require 'minitest/hell'
+require 'pry-rescue/minitest' if ENV['RESCUE']
 require 'sidekiq/testing'
 require 'fakeredis'
 

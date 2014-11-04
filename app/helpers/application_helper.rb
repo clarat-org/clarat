@@ -8,10 +8,16 @@ module ApplicationHelper
   # Prio 3: geocoding from IP address
   # Prio 4: Middle of Berlin
   def default_geolocation
-    @geoloc ||= cookies[:last_geolocation]
-    @geoloc ||= (l = request.location) ? "#{l.latitude},#{l.longitude}" : raise
-  rescue
-    @geoloc = '52.520007,13.404954'
+    return @geoloc if @geoloc
+
+    if cookies[:last_geolocation]
+      @geoloc = cookies[:last_geolocation]
+    elsif (l = request.location) && !l.city.empty?
+      @geoloc_string = l.city
+      @geoloc = "#{l.latitude},#{l.longitude}"
+    else
+      @geoloc = '52.520007,13.404954'
+    end
   end
 
   def geoloc_to_s geoloc = default_geolocation
@@ -19,8 +25,10 @@ module ApplicationHelper
       'Berlin'
     elsif (search_location = SearchLocation.find_by_geoloc(geoloc))
       search_location.query
+    elsif @geoloc_string
+      @geoloc_string
     else
-      '' # TODO: maybe reverse gecoding of geoloc?
+      'Berlin'
     end
   end
 end

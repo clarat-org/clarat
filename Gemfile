@@ -124,6 +124,8 @@ group :test do
   gem 'colorize'
   gem 'fakeredis'
   gem 'fakeweb', '~> 1.3'
+  gem 'webmock'
+  gem 'pry-rescue'
 end
 
 group :development, :test do

@@ -33,4 +33,4 @@ generateSource = ->
     aroundRadius: 999999999
 
 navigateToHit = (event, suggestion, id) ->
-  Turbolinks.visit "/offers/#{suggestion.slug}"
+  Turbolinks.visit "/angebote/#{suggestion.slug}"

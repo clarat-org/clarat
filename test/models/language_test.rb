@@ -2,7 +2,7 @@ require_relative '../test_helper'
 
 describe Language do
 
-  let( :language) { Language.new }
+  let(:language) { Language.new }
 
   subject { language }
 
@@ -20,7 +20,7 @@ describe Language do
       it { subject.must validate_uniqueness_of :name }
       it { subject.must validate_presence_of :code }
       it { subject.must validate_uniqueness_of :code }
-      it { subject.must ensure_length_of(:code).is_equal_to 2 }
+      it { subject.must ensure_length_of(:code).is_equal_to 3 }
     end
   end
 

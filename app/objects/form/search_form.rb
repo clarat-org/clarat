@@ -40,8 +40,8 @@ class SearchForm
   def tags_by_facet
     tags_facet = @hits.facets['_tags']
     if tags_facet
-      inverted = tags_facet.each_with_object( {} ) do |(key, value), out|
-        ( out[value] ||= [] ) << key
+      inverted = tags_facet.each_with_object({}) do |(key, value), out|
+        (out[value] ||= []) << key
       end # safe invert
       inverted.values.flatten.uniq
     else

@@ -30,12 +30,12 @@ class ApplicationController < ActionController::Base
     end
 
     def pundit_unverified_controller
-      (pundit_unverified_modules.include? self.class.name.split("::").first)||
+      (pundit_unverified_modules.include? self.class.name.split('::').first)||
       (pundit_unverified_classes.include? self.class.name)
     end
 
     def pundit_unscoped_controller
-      (pundit_unverified_modules.include? self.class.name.split("::").first)||
+      (pundit_unverified_modules.include? self.class.name.split('::').first)||
       (pundit_unscoped_classes.include? self.class.name)
     end
 
@@ -50,5 +50,4 @@ class ApplicationController < ActionController::Base
     def pundit_unscoped_classes
       ['OffersController']
     end
-
 end

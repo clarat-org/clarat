@@ -15,15 +15,19 @@ class SearchLocation < ActiveRecord::Base
 
   def self.find_or_generate location_string
     location_string ||= 'Berlin'
-    find_by_query(location_string) || create!(query: location_string)
+    find_by_query(normalize(location_string)) || create!(query: location_string)
   end
 
   private
 
     def normalize_query
       if self.query
-        self.query = self.query.strip.titleize
+        self.query = SearchLocation.normalize self.query
       end
+    end
+
+    def self.normalize query
+      query.strip.titleize
     end
 
     def set_geoloc

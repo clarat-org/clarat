@@ -50,3 +50,5 @@ en:
         ö: "oe"
         ü: "ue"
         ß: "ss"
+  conf: # translations used for app-internal things
+    current_location: 'My Location'

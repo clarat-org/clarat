@@ -1,4 +1,4 @@
-document.Clarat.currentGeolocation = '52.520007,13.404954' # default: middle of Berlin
+document.Clarat.currentGeolocation = I18n.t('conf.default_latlng') # default: middle of Berlin
 
 document.Clarat.getGeolocation = ->
   navigator.geolocation.getCurrentPosition (position) ->

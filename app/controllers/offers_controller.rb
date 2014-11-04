@@ -30,7 +30,11 @@ class OffersController < ApplicationController
 
     def set_position
       @position = @search_cache.geolocation
-      cookies[:last_geolocation] = @position.to_s
+      if @search_cache.search_location == I18n.t('conf.current_location')
+        cookies[:last_search_location] = nil # erase cookie so that next time the current location will be used again
+      else
+        cookies[:last_search_location] = @search_cache.search_location # set cookie so that next time the same location will be prefilled
+      end
     end
 
     def set_gmaps_variable

@@ -17,6 +17,8 @@ about supported directives.
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks
+# = require i18n
+# = require i18n/translations
 # = require hogan
 # = require_tree ./templates
 #
@@ -25,6 +27,8 @@ about supported directives.
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
+#
+# = require vendor/cookie_lib
 #
 # = require modules/autocomplete
 # = require modules/geolocation

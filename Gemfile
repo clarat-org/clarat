@@ -31,6 +31,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'i18n-js' # JS translations
+
 # Templating for JS
 gem 'hogan_assets'
 group :assets do

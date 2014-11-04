@@ -33,7 +33,11 @@ class SearchForm
   end
 
   def geolocation
-    result = SearchLocation.find_or_generate search_location
+    result = if search_location == I18n.t('conf.current_location')
+      generated_geolocation
+    else
+      SearchLocation.find_or_generate search_location
+    end
     @geolocation ||= Geolocation.new result
   end
 

@@ -32,3 +32,7 @@ de:
         ö: "oe"
         ü: "ue"
         ß: "ss"
+  conf: # translations used for app-internal things
+    current_location: 'Mein Standort'
+    default_location: 'Berlin'
+    default_latlng: '52.520007,13.404954'

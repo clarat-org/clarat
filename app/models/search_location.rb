@@ -13,8 +13,7 @@ class SearchLocation < ActiveRecord::Base
 
   # Methods
 
-  def self.find_or_generate location_string
-    location_string ||= 'Berlin'
+  def self.find_or_generate location_string = 'Berlin'
     find_by_query(normalize(location_string)) || create!(query: location_string)
   end
 

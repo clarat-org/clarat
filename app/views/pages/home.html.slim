@@ -3,7 +3,7 @@
     .row
       = render '/layouts/partials/about_teaser'
       .main-search
-        = render '/offers/shared/search_form'
+        = render '/offers/shared/search_form', search_cache: @search_cache
 .yellow-background
   .about-2c
     .container

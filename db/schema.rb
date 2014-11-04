@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029110256) do
+ActiveRecord::Schema.define(version: 20141104100823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -162,7 +162,7 @@ ActiveRecord::Schema.define(version: 20141029110256) do
     t.float    "longitude",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "geoloc",     limit: 23, null: false
+    t.string   "geoloc",     limit: 35, null: false
   end
 
   add_index "search_locations", ["geoloc"], name: "index_search_locations_on_geoloc", using: :btree

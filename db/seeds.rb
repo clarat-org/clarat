@@ -8,9 +8,9 @@
 
 User.create email: 'user@user.com', password: 'password', admin: true
 
-Language.create name: 'Deutsch', code: 'de'
-Language.create name: 'Englisch', code: 'en'
-Language.create name: 'Türkisch', code: 'tr'
+Language.create name: 'Deutsch', code: 'deu'
+Language.create name: 'Englisch', code: 'eng'
+Language.create name: 'Türkisch', code: 'tur'
 
 FederalState.create name: 'Berlin'
 FederalState.create name: 'Brandenburg'

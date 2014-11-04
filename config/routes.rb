@@ -7,6 +7,7 @@ Clarat::Application.routes.draw do
     resources :offers, only: [:index, :show]
     resources :users, only: [:show]
     resources :update_requests, only: [:new, :create]
+    resources :search_locations, only: [:show]
   end
 
   # Sidekiq interface

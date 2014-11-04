@@ -88,6 +88,8 @@ gem 'kaminari' # pagination
 
 gem 'route_translator'
 
+gem 'sanitize' # parser based sanitization
+
 # search
 gem 'algoliasearch-rails'
 

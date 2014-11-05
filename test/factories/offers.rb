@@ -11,7 +11,7 @@ FactoryGirl.define do
     completed { Faker::Boolean.maybe }
 
     # optional fields
-    keywords { maybe Faker::Lorem.words(rand(0..3)).join(', ') }
+    comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
     telephone { maybe Faker.numerify('#' * rand(7..11)) }
     fax { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
     contact_name { maybe Faker::NameDE.name }

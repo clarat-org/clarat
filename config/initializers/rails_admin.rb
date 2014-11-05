@@ -63,7 +63,7 @@ RailsAdmin.config do |config|
     field :description do
       css_class 'js-count-character'
     end
-    field :keywords do
+    field :comment do
       css_class 'js-count-character'
     end
     field :legal_form
@@ -158,7 +158,7 @@ RailsAdmin.config do |config|
     field :description do
       css_class 'js-count-character'
     end
-    field :keywords do
+    field :comment do
       css_class 'js-count-character'
     end
     field :next_steps do

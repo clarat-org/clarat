@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104100823) do
+ActiveRecord::Schema.define(version: 20141105161600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(version: 20141104100823) do
     t.integer  "organization_id",                                   null: false
     t.string   "fax",                   limit: 32
     t.string   "opening_specification", limit: 150
-    t.text     "keywords"
+    t.text     "comment"
     t.boolean  "completed",                         default: false
     t.string   "second_telephone"
     t.boolean  "approved",                          default: false
@@ -145,7 +145,7 @@ ActiveRecord::Schema.define(version: 20141104100823) do
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "keywords"
+    t.text     "comment"
     t.boolean  "completed",                 default: false
     t.boolean  "approved",                  default: false
     t.datetime "approved_at"

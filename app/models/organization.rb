@@ -27,7 +27,7 @@ class Organization < ActiveRecord::Base
   validates :description, length: { maximum: 400 }, presence: true
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true
-  validates :keywords, length: { maximum: 150 }
+  validates :comment, length: { maximum: 800 }
   # Custom Validations
   validates :approved, approved: true
 

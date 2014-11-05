@@ -21,7 +21,7 @@ describe Offer do
     it { subject.must_respond_to :organization_id }
     it { subject.must_respond_to :fax }
     it { subject.must_respond_to :opening_specification }
-    it { subject.must_respond_to :keywords }
+    it { subject.must_respond_to :comment }
     it { subject.must_respond_to :completed }
     it { subject.must_respond_to :second_telephone }
     it { subject.must_respond_to :approved }
@@ -40,7 +40,7 @@ describe Offer do
       it { subject.must ensure_length_of(:telephone).is_at_most 32 }
       it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
       it { subject.must ensure_length_of(:opening_specification).is_at_most 150 }
-      it { subject.must ensure_length_of(:keywords).is_at_most 150 }
+      it { subject.must ensure_length_of(:comment).is_at_most 800 }
       it { subject.must validate_presence_of :organization_id }
     end
   end

@@ -19,7 +19,7 @@ describe Organization do
     it { subject.must_respond_to :slug }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
-    it { subject.must_respond_to :keywords }
+    it { subject.must_respond_to :comment }
     it { subject.must_respond_to :completed }
     it { subject.must_respond_to :approved }
   end
@@ -33,7 +33,7 @@ describe Organization do
       it { subject.must validate_presence_of :description }
       it { subject.must ensure_length_of(:description).is_at_most 400 }
       it { subject.must validate_presence_of :legal_form }
-      it { subject.must ensure_length_of(:keywords).is_at_most 150 }
+      it { subject.must ensure_length_of(:comment).is_at_most 800 }
     end
   end
 

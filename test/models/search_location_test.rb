@@ -3,11 +3,8 @@ require_relative '../test_helper'
 describe SearchLocation do
 
   let(:search_location) {
-                          SearchLocation.new(query: 'Berlin',
-                                             latitude: 52.520007,
-                                             longitude: 13.404954,
-                                             geoloc: '52.520007,13.404954')
-                        }
+    SearchLocation.new(query: 'Foobar')
+  }
 
   subject { search_location }
 
@@ -27,6 +24,16 @@ describe SearchLocation do
       it { subject.must validate_uniqueness_of :query }
       # it { subject.must validate_presence_of :latitude }
       # it { subject.must validate_presence_of :longitude }
+    end
+  end
+
+  describe 'methods' do
+    describe '#set_geoloc' do
+      it "should set the geolocation before saving" do
+        search_location.geoloc = nil
+        search_location.save!
+        search_location.geoloc.must_equal '10.0,20.0'
+      end
     end
   end
 end

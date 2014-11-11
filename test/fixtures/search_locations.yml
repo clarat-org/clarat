@@ -2,6 +2,6 @@
 
 berlin:
   query: Berlin
-  latitude: 1.5
-  longitude: 1.5
-  geoloc: '1.5,1.5'
+  latitude: 52.520007
+  longitude: 13.404954
+  geoloc: '52.520007,13.404954'

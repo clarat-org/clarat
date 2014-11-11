@@ -1,6 +1,6 @@
 Geocoder.configure(lookup: :test)
 
-Geocoder::Lookup::Test.add_stub(
+Geocoder::Lookup::Test.add_stub( #! exists as fixture
   'Berlin', [
     {
       'latitude'  => 52.520007,
@@ -9,7 +9,16 @@ Geocoder::Lookup::Test.add_stub(
   ]
 )
 
-Geocoder::Lookup::Test.add_stub(
+Geocoder::Lookup::Test.add_stub( # stub for non-fixture location query
+  'Foobar', [
+    {
+      'latitude'  => 10,
+      'longitude' => 20
+    }
+  ]
+)
+
+Geocoder::Lookup::Test.add_stub( # stub for standard FactoryGirl address
   'Foobar 1, 12345 Berlin Berlin', [
     {
       'latitude'  => 1,

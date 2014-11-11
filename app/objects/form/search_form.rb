@@ -34,8 +34,8 @@ class SearchForm
 
   def geolocation
     result = if search_location == I18n.t('conf.current_location')
-      if generated_geolocation.empty? # could make problems
-        raise Errors::InvalidLocation
+      if generated_geolocation.empty? # could cause problems
+        raise InvalidLocationError
       else
         generated_geolocation
       end

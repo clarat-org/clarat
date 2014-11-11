@@ -12,7 +12,7 @@ class OffersController < ApplicationController
     respond_with @offers
   end
 
-  rescue_from Errors::InvalidLocation do |e|
+  rescue_from InvalidLocationError do |e|
     render 'invalid_location', status: 404
   end
 

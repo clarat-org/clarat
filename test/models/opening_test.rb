@@ -38,4 +38,17 @@ describe Opening do
       it { subject.must have_and_belong_to_many :offers }
     end
   end
+
+  describe 'methods' do
+    describe '#appointment?' do
+      it "should return false if opening and closing hour is present" do
+        opening.appointment?.must_equal false
+      end
+
+      it "should return true if neither open nor close is present" do
+        opening.assign_attributes open: nil, close: nil
+        opening.appointment?.must_equal true
+      end
+    end
+  end
 end

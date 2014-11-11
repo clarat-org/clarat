@@ -24,11 +24,11 @@ about supported directives.
 #
 # = require jquery.popupoverlay
 #
+# = require vendor/cookie_lib
+#
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
-#
-# = require vendor/cookie_lib
 #
 # = require modules/autocomplete
 # = require modules/geolocation

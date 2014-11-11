@@ -51,5 +51,8 @@ module Clarat
     config.generators.assets :controller_based_assets
 
     config.generators.test_framework :minitest, spec: true
+
+    # Rack extensions
+    config.middleware.use Rack::Attack
   end
 end

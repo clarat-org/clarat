@@ -12,6 +12,10 @@ class OffersController < ApplicationController
     respond_with @offers
   end
 
+  rescue_from Errors::InvalidLocation do |e|
+    render 'invalid_location', status: 404
+  end
+
   def show
     @offer = Offer.friendly.find(params[:id])
     authorize @offer

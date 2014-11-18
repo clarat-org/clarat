@@ -14,21 +14,21 @@ class SearchForm
   attribute :tags, String
 
   def search page
-    @hits = Offer.search query,
-                         page: page,
-                         aroundLatLng: geolocation,
-                         aroundRadius: 999_999_999,
-                         tagFilters: tags,
-                         facets: '_tags'
+    @hits = Offer.algolia_search query,
+                                 page: page,
+                                 aroundLatLng: geolocation,
+                                 aroundRadius: 999_999_999,
+                                 tagFilters: tags,
+                                 facets: '_tags'
   end
 
   def has_nearby?
     @_has_nearby ||=
-      Offer.search('',
-                   page: 0,
-                   hitsPerPage: 1,
-                   aroundLatLng: geolocation,
-                   aroundRadius: 25_000 # check later if this is accurate
+      Offer.algolia_search('',
+                           page: 0,
+                           hitsPerPage: 1,
+                           aroundLatLng: geolocation,
+                           aroundRadius: 25_000 # check later if this is accurate
       ).any?
   end
 

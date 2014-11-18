@@ -82,4 +82,17 @@ feature 'Admin Backend' do
 
     page.must_have_content '✓'
   end
+
+  scenario 'Duplicate offer' do # calls partial dup that doesn't end up in an immediately valid offer
+    offer = FactoryGirl.create :offer
+
+    visit rails_admin_path
+
+    click_link 'Angebote', match: :first
+    click_link 'Duplizieren'
+
+    click_button 'Speichern'
+
+    page.must_have_content 'Angebot wurde nicht hinzugefügt'
+  end
 end

@@ -29,16 +29,21 @@ FactoryGirl.define do
     ignore do
       website_count { rand(0..3) }
       tag_count { rand(1..3) }
+      tag nil # used to get a specific tag, instead of tag_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
     end
     after :create do |offer, evaluator|
       create_list :hyperlink, evaluator.website_count, linkable: offer
-      evaluator.tag_count.times do
-        offer.tags << (
-          Tag.count != 0 && rand(2) == 0 ?
-            Tag.select(:id).all.sample : FactoryGirl.create(:tag)
-        )
+      if evaluator.tag
+        offer.tags << FactoryGirl.create(:tag, name: evaluator.tag)
+      else
+        evaluator.tag_count.times do
+          offer.tags << (
+            Tag.count != 0 && rand(2) == 0 ?
+              Tag.select(:id).all.sample : FactoryGirl.create(:tag)
+          )
+        end
       end
       evaluator.opening_count.times do
         offer.openings << (

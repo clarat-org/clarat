@@ -6,10 +6,11 @@ class Geolocation
   # of those as separate floating point parameters, or a string containing
   # them comma separated
   def initialize *attrs
-    if attrs[0].is_a? Float
-      @latitude = attrs[0]
-      @longitude = attrs[1]
-    elsif attrs[0].is_a? String
+    # if attrs[0].is_a? Float
+    #   @latitude = attrs[0]
+    #   @longitude = attrs[1]
+    # els
+    if attrs[0].is_a? String
       @latitude, @longitude = attrs[0].split(',')
     else
       @object = attrs[0]

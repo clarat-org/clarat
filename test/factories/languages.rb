@@ -3,7 +3,7 @@ require 'ffaker'
 FactoryGirl.define do
   factory :language do
     name { ['Deutsch', 'Englisch'].sample }
-    code { name[0..1].downcase }
+    code { name[0..2].downcase }
 
     # associations
     ignore do

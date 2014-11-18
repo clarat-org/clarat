@@ -56,4 +56,18 @@ describe Offer do
       it { subject.must have_many :websites }
     end
   end
+
+  describe 'methods' do
+    describe '#creator_email' do
+      it "should return anonymous by default" do
+        offer.creator_email.must_equal 'anonymous'
+      end
+
+      it "should return users email if there is a a version" do
+        user = FactoryGirl.create :user
+        offer.stub_chain(:versions, :first, :whodunnit).returns 1
+        offer.creator_email.must_equal user.email
+      end
+    end
+  end
 end

@@ -2,7 +2,7 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :tag do
-    name { Faker::Lorem.words(rand(1..2)).join(' ').titleize }
+    name { Faker::Lorem.words(rand(2..3)).join(' ').titleize }
     main { Faker::Boolean.maybe }
 
     # associations

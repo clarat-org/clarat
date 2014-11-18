@@ -76,7 +76,7 @@ gem 'awesome_print'
 
 gem 'rails_admin_clone'
 gem 'rails_admin'
-gem 'rails_admin_statistics', github: 'KonstantinKo/rails_admin_statistics'
+gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
 # path: '../rails_admin_statistics' #
 
 gem 'devise'

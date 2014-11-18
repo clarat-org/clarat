@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/KonstantinKo/rails_admin_statistics.git
+  remote: git://github.com/clarat-org/rails_admin_statistics.git
   revision: fcdf67b53c97121b3e817821e1cabb8062b71071
   specs:
     rails_admin_statistics (0.0.4)

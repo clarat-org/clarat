@@ -1,7 +1,7 @@
-.grey-background
-  .container
-    .col-lg-8
-      p
+.wrapper-inner
+  main.content-main
+    .Listing-results
+      h2.Listing-results__headline
         = @offers.count
         |  Ergebnisse
         - tags = @search_cache.tags
@@ -9,6 +9,7 @@
           |  (Schlagwortfilter:
           =< tags
           | )
+
       ul.search-results
         - @offers.each do |offer|
           li id="result-offer-#{offer.id}" class="JS-trigger-marker"
@@ -18,8 +19,27 @@
               = offer.organization_name
       = paginate @offers
 
-    .col-lg-4
-      / TODO: refactor
+
+      - if @update_request
+        #unavailable_location_overlay style="background:white;width:500px;"
+          button.unavailable_location_overlay_close X
+          p
+            | Leider finden sich auf unserer Plattform aktuell nur Angebote aus
+            |  Berlin. Wir hoffen aber schon bald auch in anderen Teilen
+            |  Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
+            |  und wir werden uns einmalig bei dir melden sobald das der Fall ist.
+          = render '/update_requests/new', update_request: @update_request
+
+  aside.aside-standard
+    .aside-standard__container
+      h5.aside-standard__headline Kartenausgabe der Suchergebnisse
+
+      #map-container
+        #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
+
+    .aside-standard__container
+      h5.aside-standard__headline Schlagwortfilter
+
       .affix style="margin-top:20px"
         - tags1 = @tags[0..5]
         - tags2 = @tags[6..-1]
@@ -38,19 +58,6 @@
                 | Weniger Schlagworte
                 .fa.fa-chevron-up<
 
-
-        #map-container
-          #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
-
-- if @update_request
-  #unavailable_location_overlay style="background:white;width:500px;"
-    button.unavailable_location_overlay_close X
-    p
-      | Leider finden sich auf unserer Plattform aktuell nur Angebote aus
-      |  Berlin. Wir hoffen aber schon bald auch in anderen Teilen
-      |  Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
-      |  und wir werden uns einmalig bei dir melden sobald das der Fall ist.
-    = render '/update_requests/new', update_request: @update_request
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"

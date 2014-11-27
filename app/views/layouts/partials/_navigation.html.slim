@@ -1,5 +1,30 @@
-.navbar-padding
-  nav.navbar.navbar-default.navbar-transparent
-    .container
-      .navbar-header
-        = link_to image_tag('logos/clarat-logo-transparent.gif'), root_path
+header.header-main.header-main--startpage
+  .header-main__foreground.wrapper-inner
+    h1.Logo.Logo--start clarat.org
+
+    .Claim
+      h2.Claim__firstrow Einfach Hilfe finden
+      h3.Claim__secondrow Unterstützungsangebote für Kinder, Jugendliche und Familien
+
+  .header-main__stage
+    / Optional stage for animations
+
+.Distributor.Distributor--start
+  .wrapper-inner
+    = render '/offers/shared/search_form', search_cache: search_cache
+
+    nav.nav-sections
+      h3.nav-sections__headline Oder suche nach Kategorien:
+
+      ul.nav-sections__list
+        li.nav-sections__listitem.nav-sections__listitem--crisis
+          a Akute Krisen
+        li.nav-sections__listitem.nav-sections__listitem--learn
+          a Lernen
+        li.nav-sections__listitem.nav-sections__listitem--family
+          a Familie
+        li.nav-sections__listitem.nav-sections__listitem--health
+          a Gesundheit
+        li.nav-sections__listitem.nav-sections__listitem--residing
+          a Wohnen
+

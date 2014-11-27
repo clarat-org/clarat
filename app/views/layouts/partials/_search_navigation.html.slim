@@ -1,7 +1,6 @@
-.navbar-fixed-top
-  nav.navbar.navbar-default.navbar-search
-    .container
-      .navbar-header.search-nav-image
-        = link_to image_tag('logos/clarat-logo-transparent-small.png'), root_path
-        .main-search-nav
-          = render '/offers/shared/search_form', search_cache: search_cache
+header.header-main
+  .wrapper-inner
+    h1.Logo clarat.org
+
+    .Distributor
+      = render '/offers/shared/search_form', search_cache: search_cache

@@ -8,11 +8,59 @@ html class='no-js' lang=I18n.locale
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = render '/layouts/partials/javascript_config'
 
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+    meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"
+    meta name="format-detection" content="telephone=no"
+
+    meta property="og:title" content=""
+    meta property="og:site_name" content=""
+    meta property="og:image" content=""
+
+    link rel="Shortcut Icon" href="favico.ico" type="image/x-icon"
+    link rel="apple-touch-icon-precomposed" sizes="144x144" href=""
+    meta name="msapplication-TileImage" content=""
+
+    script src="assets/javascripts/vendor/modernizr.js"
+
+    script src="assets/javascripts/vendor/modernizr.js"
+
+    |     <!--[if lt IE 9]>
+    |     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    |     <![endif]-->
+
+    |     <!--[if lt IE 9]>
+    |     <script src="assets/javascripts/vendor/jquery-1.11.1.min.js"></script>
+    |     <script>window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    |     <![endif]-->
+    |     <!--[if gte IE 9]><!-->
+    |     <script src="assets/javascripts/vendor/jquery-2.1.1.min.js"></script>
+    |     <script>window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+    |     <!--<![endif]-->
+
+    |     <!--[if lt IE 9]>
+    |     <script src="assets/js/vendor/selectivizr-min.js"></script>
+    |     <![endif]-->
+
+    |     <!--[if !IE]><!-->
+    |     <script>
+    |         if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+    |             document.documentElement.className += ' ie10';
+    |         }
+    |         if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
+    |             document.documentElement.className += ' ie11';
+    |         }
+    |     </script>
+    |     <!--<![endif]-->
+
+    javascript:
+      $.noConflict();
+
     = csrf_meta_tags
+
   body class="template--#{controller_name}-#{action_name}"
-    .container-fluid
     - if controller_name == 'pages'
-      = render 'layouts/partials/navigation'
+      = render 'layouts/partials/navigation', search_cache: @search_cache
     - else
       = render 'layouts/partials/search_navigation', search_cache: @search_cache
     = yield

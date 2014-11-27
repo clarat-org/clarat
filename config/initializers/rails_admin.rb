@@ -154,7 +154,9 @@ RailsAdmin.config do |config|
       field :organization
     end
     weight(-1)
-    field :name
+    field :name do
+      css_class 'js-tag-suggestions__trigger'
+    end
     field :description do
       css_class 'js-count-character'
     end
@@ -178,7 +180,9 @@ RailsAdmin.config do |config|
     end
     field :location
     field :organization
-    field :tags
+    field :tags do
+      css_class 'js-tag-suggestions'
+    end
     field :languages
     field :openings
     field :opening_specification do

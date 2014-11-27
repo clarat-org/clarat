@@ -25,7 +25,8 @@ $(document).on 'rails_admin.dom_ready', ->
 
   tag_input = $(".js-tag-suggestions__trigger input")
   if tag_input.length
-    elem = $("<div style='margin:10px;display:inline-block;width:300px;'></div>")
+    elem = $(
+      "<div style='margin:10px;display:inline-block;width:300px;'></div>")
     $(".js-tag-suggestions .controls .help-block").before elem
 
     tag_input.on 'blur', (e) ->
@@ -33,7 +34,8 @@ $(document).on 'rails_admin.dom_ready', ->
 
       $.get "/tags/#{name}.json", (tag_array) ->
         if tag_array.length
-          display = "Ähnliche Angebote verwenden folgende Tags:<br>#{tag_array.join(', ')}"
+          display = "Ähnliche Angebote verwenden folgende Tags:<br>
+                    #{tag_array.join(', ')}"
         else
           display = "Es gibt keine Tags für Angebote mit genau diesem Namen."
 

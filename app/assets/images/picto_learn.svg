@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="93px" height="93px" viewBox="0 0 93 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2 (9954) - http://www.bohemiancoding.com/sketch -->
+    <title>Lernen</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Slice-Start" sketch:type="MSArtboardGroup" transform="translate(-539.000000, -621.000000)">
+            <g id="Icons-+-Iconlabels" sketch:type="MSLayerGroup" transform="translate(404.000000, 622.000000)">
+                <g id="Icons" transform="translate(3.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="Lernen" transform="translate(135.000000, 2.000000)">
+                        <g id="Group">
+                            <circle id="Oval" stroke="#F4B528" stroke-width="3" fill="#FFFFFF" cx="43.107" cy="43.107" r="43.107"></circle>
+                            <path d="M70.827,58.461 L70.827,34.213 L75.501,32.859 L43.107,23.481 L10.713,32.859 L21,35.838 L21,58.069 L20.999,58.071 L21,58.071 L21,58.106 L21.099,58.106 C27.965,60.605 35.376,61.969 43.107,61.969 C50.837,61.969 58.248,60.605 65.114,58.106 L65.215,58.106 L65.215,35.838 L68.976,34.749 L68.976,58.453 C67.852,58.835 67.04,59.898 67.04,61.152 C67.04,62.726 68.317,64.003 69.892,64.003 C71.467,64.003 72.743,62.727 72.743,61.152 C72.742,59.904 71.942,58.849 70.827,58.461 L70.827,58.461 Z" id="Shape" fill="#41311A"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

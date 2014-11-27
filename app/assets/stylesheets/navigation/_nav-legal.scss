@@ -1,0 +1,47 @@
+// ---------------------------------------------------------------
+//
+//  Legal themed nav in footer
+//
+// ---------------------------------------------------------------
+
+.nav-legal {
+	@extend %clearfix;
+	margin: 30px 0;
+}
+
+.nav-legal__list {
+	list-style: none;
+}
+
+.nav-legal__listitem {
+	float: left;
+	font-size: 12px;
+	margin-left: 25px;
+	position: relative;
+
+	a {
+		color: $brand_brown;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&:before {
+		@extend %roboto_bold;
+		content: '\00B7';
+		position: absolute;
+		left: -14px;
+	}
+
+	&:first-child {
+		margin-left: 0;
+
+		&:before {
+			content: '';
+			display: none;
+		}
+	}
+
+}

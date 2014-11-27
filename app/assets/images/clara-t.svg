@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="89px" viewBox="0 0 71 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>clara-t</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="clara-t" sketch:type="MSLayerGroup">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <g transform="translate(10.000000, 54.000000)" fill="#40301A">
+                    <circle id="Oval" cx="29.3" cy="31.8" r="2.4"></circle>
+                    <circle id="Oval" cx="5.8" cy="31.8" r="2.4"></circle>
+                    <path d="M0,2.5 C0,1.5 0.8,0.7 1.8,0.7 C2.8,0.7 3.6,1.5 3.6,2.5 C3.6,3.2 3.2,3.8 2.6,4.1 L2.6,27.1 L34.1,27.1 C34.5,27.1 34.9,27.4 34.9,27.9 C34.9,28.3 34.6,28.7 34.1,28.7 L1,28.7 L1,4.2 C0.4,3.9 0,3.3 0,2.5 L0,2.5 Z" id="Shape"></path>
+                </g>
+                <path d="M22.1,66.9 L22.1,52.6 C22.1,50.7 22.9,48.8 24.2,47.5 C25.6,46.1 27.4,45.4 29.3,45.4 C31.2,45.4 33,46.2 34.4,47.5 C35.8,48.9 36.5,50.7 36.5,52.6 L36.5,67 L22.1,67 L22.1,66.9 Z" id="Shape" fill="#0E8B32"></path>
+                <path d="M15,59.1 C21.7,58.4 27.6,54.8 31.3,49.2 L27.2,46.5 C24.3,50.9 19.7,53.7 14.5,54.2 L15,59.1 L15,59.1 Z" id="Shape" fill="#0E8B32"></path>
+                <path d="M26.8,67.8 C26.8,74.5 29.8,80.8 35.1,85 L38.2,81.2 C34.1,77.9 31.8,73 31.7,67.8 L26.8,67.8 L26.8,67.8 Z" id="Shape" fill="#165265"></path>
+                <rect id="Rectangle-path" fill="#165265" x="23.7" y="67.8" width="4.9" height="12.3"></rect>
+                <g transform="translate(7.000000, 0.000000)">
+                    <path d="M52.9,14 C56.8,14 60.6,13.3 64,12 C62,7.9 57.7,5.1 52.9,5.1 C48.1,5.1 43.8,7.9 41.8,12 C45.3,13.3 49,14 52.9,14 L52.9,14 Z" id="Shape" fill="#FFB700"></path>
+                    <g>
+                        <circle id="Oval" fill="#FBD0AE" cx="22.3" cy="21.8" r="21.8"></circle>
+                        <path d="M17.6,9.7 L16.1,15.2 C11.5,14.7 7,13.6 2.8,12.1 C6.4,4.9 13.8,0 22.3,0 C30.8,0 38.2,4.9 41.8,12.1 C35.7,14.3 29.2,15.5 22.3,15.5 C20.7,15.5 19.2,15.4 17.6,15.3 L17.6,9.7 L17.6,9.7 Z" id="Shape" fill="#FFB700"></path>
+                        <g transform="translate(7.000000, 23.000000)" id="Oval" fill="#F5A10C" opacity="0.76">
+                            <circle cx="3.8" cy="3.9" r="3.7"></circle>
+                            <circle cx="26.8" cy="3.9" r="3.7"></circle>
+                        </g>
+                        <g transform="translate(15.000000, 22.000000)" id="Oval" fill="#40301A">
+                            <circle cx="1.6" cy="2" r="1.1"></circle>
+                            <circle cx="13.1" cy="2" r="1.1"></circle>
+                        </g>
+                        <path d="M19.2,26.5 C19.9,27 20.9,27.4 22,27.4 L22.6,27.4 C23.7,27.3 24.7,27 25.4,26.5" id="Shape" stroke="#40301A" stroke-width="0.4239"></path>
+                        <path d="M18,22.4 C17.2,21.6 15.9,21.6 15.1,22.4" id="Shape" stroke="#40301A" stroke-width="0.3706"></path>
+                        <path d="M29.5,22.4 C28.7,21.6 27.4,21.6 26.6,22.4" id="Shape" stroke="#40301A" stroke-width="0.3706"></path>
+                    </g>
+                </g>
+                <g transform="translate(0.000000, 39.000000)">
+                    <path d="M9,0.9 C4,0.9 0,5 0,9.9 L9,9.9 L9,0.9 L9,0.9 Z" id="Shape" fill="#F5A10C"></path>
+                    <path d="M9,0.9 L9,8.1 L1.8,8.1 C1.8,12.1 5,15.3 9,15.3 C13,15.3 16.2,12.1 16.2,8.1 C16.2,4.1 13,0.9 9,0.9 L9,0.9 Z" id="Shape" fill="#165265"></path>
+                    <path d="M9.9,3.9 C9.9,3.1 10.6,2.5 11.4,2.5 C12.2,2.5 12.8,3.2 12.8,4" id="Shape" stroke="#D9D5C1" stroke-width="0.1774"></path>
+                    <circle id="Oval" fill="#D9D5C1" cx="11.4" cy="4" r="0.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

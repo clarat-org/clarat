@@ -1,0 +1,34 @@
+// ---------------------------------------------------------------
+//
+//  Generic input styles
+//
+// ---------------------------------------------------------------
+
+input,
+button {
+	border: none;
+}
+
+button {
+	@extend %roboto_bold;
+	background: $brand_brown;
+	color: $brand_white;
+}
+
+input[type='text'] {
+	@include input-placeholder($brand_brown, 400);
+	@extend %roboto_light;
+}
+
+input[type='text'],
+button {
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type='text'] {
+	&:focus {
+		background: $brand_beige;
+	}
+}

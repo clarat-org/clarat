@@ -1,0 +1,34 @@
+// ---------------------------------------------------------------
+//
+//  Section styles individual to single offer pages
+//
+// ---------------------------------------------------------------
+
+
+.template--offer {
+
+	.section-content--organisation .section-content__title {
+		background: $brand_green;
+	}
+
+	.section-content--nextsteps .section-content__title  {
+		background: $brand_orange;
+	}
+
+	.section-content--tags {
+		background: transparent;
+	}
+
+	.page-detail__icons {
+		float: right;
+
+		img {
+			height: 60px;
+		}
+	}
+
+	.offer-contribute {
+		border-color: $brand_yellow;
+	}
+
+}

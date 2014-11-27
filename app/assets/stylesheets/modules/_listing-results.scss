@@ -1,0 +1,78 @@
+// ---------------------------------------------------------------
+//
+//  Listing of offers and their organisation entity, e.g. as a result of search or filtering
+//
+// ---------------------------------------------------------------
+
+
+.Listing-results {
+	margin-top: 25px;
+}
+
+.Listing-results__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.Listing-results__listitem {
+	margin-bottom: 25px;
+}
+
+.Listing-results__headline {
+	@extend %roboto_regular;
+	font-weight: 400;
+}
+
+.Listing-results__emphasis {
+	@extend %roboto_bold;
+}
+
+
+
+.Listing-results__offer,
+.Listing-results__organisation {
+	position: relative;
+	margin: 0;
+	font-weight: 400;
+
+	a {
+		text-decoration: none;
+		display: block;
+		height: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.Listing-results__offer {
+	@extend %roboto_bold;
+	@extend %clarat_rounding_start;
+	padding: 7px 15px;
+	height: 38px;
+	background: $brand_yellow;
+	font-size: 18px;
+
+	a {
+		color: $brand_white;
+	}
+
+	.Listing-results__listitem--highlighted & {
+		background: $brand_orange;
+	}
+}
+
+.Listing-results__organisation {
+	@extend %roboto_regular;
+	@extend %clarat_rounding_end;
+	padding: 9px 15px;
+	height: 38px;
+	background: $brand_beige;
+	font-size: 13px;
+
+	a {
+		color: $brand_brown;
+	}
+}

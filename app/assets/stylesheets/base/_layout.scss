@@ -1,0 +1,73 @@
+// ---------------------------------------------------------------
+//
+//  Base layout wrappers
+//
+// ---------------------------------------------------------------
+
+// Generic wrapper
+
+.wrapper-inner {
+	@extend %clearfix;
+	position: relative;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+
+// Main wrapper: content, aside:
+
+.content-main,
+.aside-standard {
+	@extend %clearfix;
+	padding: 30px 0;
+}
+
+
+.content-main {
+	@extend %layout-col-61;
+
+	&.content-main--wide {
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+.aside-standard {
+	@extend %layout-col-35;
+}
+
+
+// Silent layout helper classes
+
+%layout-col-33,
+%layout-col-50,
+%layout-col-61,
+%layout-col-35 {
+	display: inline-block;
+	float: left;
+}
+
+%layout-col-33 {
+	margin-right: 2.5%;
+	width: 31.666666667%;
+}
+
+%layout-col-50 {
+	margin-right: 2.5%;
+	width: 48.75%;
+}
+
+%layout-col-last {
+	margin-right: 0;
+}
+
+%layout-col-61 {
+	margin-right: 2.5%;
+	width: 61.8%;
+}
+
+%layout-col-35 {
+	width: 35.7%;
+}

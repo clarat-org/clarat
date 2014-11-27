@@ -1,0 +1,40 @@
+// ---------------------------------------------------------------
+//
+//  Headers across the site: main header, page-detail header
+//
+// ---------------------------------------------------------------
+
+.header-main {
+	position: relative;
+	background: $brand_beige;
+	height: 140px;
+	overflow: hidden;
+}
+
+.header-main--startpage {
+	height: 475px;
+	border-top: 4px solid $brand_yellow;
+	background: image-url('bg_scratches.jpg') no-repeat center bottom;
+	background-size: cover;
+}
+
+.header-main__foreground {
+	@extend %clearfix;
+	margin-top: -4px;
+	height: inherit;
+	background: image-url('foreground.svg') no-repeat center bottom;
+	background-size: contain;
+}
+
+.page-detail__header {
+	@extend %clearfix;
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+
+.page-detail__title {
+	@extend %roboto_bold;
+	float: left;
+	font-weight: 400;
+	font-size: 34px;
+}

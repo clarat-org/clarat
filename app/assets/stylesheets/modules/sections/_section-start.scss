@@ -1,0 +1,78 @@
+// ---------------------------------------------------------------
+//
+//  Special type of sections: start page teasers
+//
+// ---------------------------------------------------------------
+
+.section-start {
+	@extend %layout-col-33;
+	position: relative;
+	margin-top: 32px;
+	margin-bottom: 68px;
+
+	&:after {
+		@extend %clarat_rounding_end;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 22px;
+		background: $brand_green;
+		content: '';
+	}
+}
+
+.section-start__headline {
+	@extend %roboto_bold;
+	@extend %clarat_rounding_start;
+	position: relative;
+	margin-top: 105px;
+	margin-bottom: 0;
+	padding: 0 30px;
+	height: 45px;
+	background: $brand_green;
+	color: $brand_white;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 45px;
+
+	&:before {
+		position: absolute;
+		bottom: 45px;
+		left: 0;
+		right: 0;
+		height: 200px;
+		content: '';
+	}
+
+	.section-start--how &:before {
+		background: image-url('teaser_how.svg') no-repeat 40% bottom;
+		background-size: auto 130px;
+	}
+
+	.section-start--whom &:before {
+		background: image-url('teaser_whom.svg') no-repeat 54% bottom;
+		background-size: auto 130px;
+	}
+
+	.section-start--why &:before {
+		background: image-url('teaser_why.svg') no-repeat 40% bottom;
+		background-size: auto 130px;
+	}
+}
+
+.section-start__body {
+	padding: 26px 30px 52px;
+	min-height: 290px;
+	background: $brand_beige;
+
+	p {
+		margin: 0;
+	}
+
+
+}
+
+.section-start--why {
+	@extend %layout-col-last;
+
+}

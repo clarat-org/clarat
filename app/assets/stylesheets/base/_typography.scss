@@ -1,0 +1,99 @@
+// ---------------------------------------------------------------
+//
+//  Font implementation and styles
+//
+// ---------------------------------------------------------------
+
+@font-face {
+	font-family: 'robotoregular';
+	src: asset-url('Roboto-Regular-webfont.eot');
+	src: asset-url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	asset-url('Roboto-Regular-webfont.woff') format('woff'),
+	asset-url('Roboto-Regular-webfont.ttf') format('truetype'),
+	asset-url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotolight';
+	src: asset-url('Roboto-Light-webfont.eot');
+	src: asset-url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+	asset-url('Roboto-Light-webfont.woff') format('woff'),
+	asset-url('Roboto-Light-webfont.ttf') format('truetype'),
+	asset-url('Roboto-Light-webfont.svg#robotolight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotobold';
+	src: asset-url('Roboto-Bold-webfont.eot');
+	src: asset-url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	asset-url('Roboto-Bold-webfont.woff') format('woff'),
+	asset-url('Roboto-Bold-webfont.ttf') format('truetype'),
+	asset-url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoitalic';
+	src: asset-url('Roboto-Italic-webfont.eot');
+	src: asset-url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+	asset-url('Roboto-Italic-webfont.woff') format('woff'),
+	asset-url('Roboto-Italic-webfont.ttf') format('truetype'),
+	asset-url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+%roboto_regular {
+	font-family: 'robotoregular';
+}
+
+%roboto_light {
+	font-family: 'robotolight';
+}
+
+%roboto_bold {
+	font-family: 'robotobold';
+}
+
+%roboto_italic {
+	font-family: 'robotoitalic';
+}
+
+body {
+	@extend  %roboto_regular;
+	color: $font_color;
+}
+
+body,
+button {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	a {
+		color: inherit;
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+p {
+	line-height: 1.68;
+}
+
+
+
+
+

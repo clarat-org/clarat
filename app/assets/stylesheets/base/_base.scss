@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------
+//
+//  Basic system settings, box model, etc.
+//
+// ---------------------------------------------------------------
+
+html {
+	box-sizing: border-box;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}

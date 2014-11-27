@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2 (9954) - http://www.bohemiancoding.com/sketch -->
+    <title>Wohnen</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Slice-Start" sketch:type="MSArtboardGroup" transform="translate(-945.000000, -622.000000)">
+            <g id="Icons-+-Iconlabels" sketch:type="MSLayerGroup" transform="translate(404.000000, 622.000000)">
+                <g id="Icons" transform="translate(3.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="Wohnen" transform="translate(540.121094, 1.605469)">
+                        <g id="Group">
+                            <circle id="Oval" stroke="#F4B528" stroke-width="3" fill="#FFFFFF" cx="43.107" cy="43.107" r="43.107"></circle>
+                            <path d="M58.445,27.074 L58.445,18.309 L54.02,18.309 L54.02,24.187 L43.108,17.071 L20.202,32.007 L20.202,63.144 L47.358,63.144 L47.358,52.813 C47.358,51.343 47.942,49.934 48.982,48.893 C50.022,47.854 51.432,47.27 52.902,47.27 C54.372,47.27 55.783,47.854 56.823,48.893 C57.862,49.934 58.446,51.343 58.446,52.813 L58.446,63.144 L66.014,63.144 L66.014,32.007 L58.445,27.074 L58.445,27.074 Z M31.601,52.194 L26.956,52.194 L26.956,42.434 L31.601,42.434 L31.601,52.194 L31.601,52.194 Z M38.487,52.194 L33.841,52.194 L33.841,42.434 L38.487,42.434 L38.487,52.194 L38.487,52.194 Z" id="Shape" fill="#40301A"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

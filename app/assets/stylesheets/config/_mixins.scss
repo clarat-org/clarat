@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------
+//
+//  Mixins and SCSS functions
+//
+// ---------------------------------------------------------------
+
+@mixin input-placeholder($color, $font-weight) {
+	&.placeholder {
+		color: $color;
+		font-weight: $font-weight;
+	}
+
+	&::-moz-placeholder {
+		color: $color;
+		font-weight: $font-weight;
+	}
+
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-weight: $font-weight;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color;
+		font-weight: $font-weight;
+	}
+}

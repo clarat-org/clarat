@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------
+//
+//  Logo
+//
+// ---------------------------------------------------------------
+
+.Logo {
+	@extend %hide_text;
+	display: block;
+	float: left;
+	margin-top: 46px;
+	width: 215px;
+	height: 47px;
+	background: image-url('logo.svg');
+	background-size: 215px 47px;
+}
+
+.Logo--start {
+	margin-top: 60px;
+	width: 297px;
+	height: 65px;
+	background-size: 297px 65px;
+}
+

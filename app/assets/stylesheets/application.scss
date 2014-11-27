@@ -1,0 +1,41 @@
+// ---------------------------------------------------------------
+//
+//  Clarat main css file
+//
+// ---------------------------------------------------------------
+
+@import "config/variables";
+@import "config/helpers";
+@import "config/mixins";
+
+@import "base/normalize";
+@import "base/typography";
+@import "base/base";
+@import "base/layout";
+@import "base/header";
+@import "base/footer";
+@import "base/aside";
+
+@import "modules/logo";
+@import "modules/claim";
+@import "modules/distributor";
+@import "modules/social-media";
+@import "modules/illustration-clara-t";
+@import "modules/listing-results";
+@import "modules/listing-tags";
+@import "modules/listing-offers";
+
+@import "modules/sections/section-content";
+@import "modules/sections/section-start";
+@import "modules/sections/section-offer";
+@import "modules/sections/section-organisation";
+
+@import "form/base";
+@import "form/main-search";
+@import "form/newsletter-subscribe";
+
+@import "navigation/nav-sections";
+@import "navigation/nav-site";
+@import "navigation/nav-legal";
+
+

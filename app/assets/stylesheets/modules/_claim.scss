@@ -1,0 +1,35 @@
+// ---------------------------------------------------------------
+//
+//  Claim in site header
+//
+// ---------------------------------------------------------------
+
+.Claim {
+	float: right;
+	margin-top: 92px;
+	max-width: 44%;
+}
+
+.Claim__firstrow,
+.Claim__secondrow {
+	@extend %clarat_rounding;
+	@extend %roboto_bold;
+	display: inline-block;
+	margin-bottom: 0;
+	background: $brand_yellow;
+	color: $brand_white;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.Claim__firstrow {
+	padding: 7px 9px 9px;
+	font-size: 28px;
+}
+
+.Claim__secondrow {
+	margin-top: 10px;
+	padding: 7px 9px 6px;
+	font-size: 22px;
+	line-height: 28px;
+}

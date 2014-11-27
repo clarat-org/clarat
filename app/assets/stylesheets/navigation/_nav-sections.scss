@@ -1,0 +1,78 @@
+// ---------------------------------------------------------------
+//
+//  Icon based nav on start page, inside distributor
+//
+// ---------------------------------------------------------------
+
+.nav-sections {
+	@extend %clearfix;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 750px;
+}
+
+.nav-sections__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-sections__headline {
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.nav-sections__listitem {
+	@extend %roboto_bold;
+	position: relative;
+	float: left;
+	margin: 0 22px;
+	width: 105px;
+	height: 110px;
+	text-align: center;
+	font-size: 18px;
+
+	a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		padding-top: 110px;
+		text-decoration: none;
+		color: $brand_brown;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.nav-sections__listitem--crisis {
+	background: image-url('picto_crisis.svg') no-repeat center top;
+	background-size: 105px 105px;
+}
+
+.nav-sections__listitem--learn {
+	background: image-url('picto_learn.svg') no-repeat center top;
+	background-size: 105px 105px;
+}
+
+.nav-sections__listitem--family {
+	background: image-url('picto_family.svg') no-repeat center top;
+	background-size: 105px 105px;
+}
+
+.nav-sections__listitem--health {
+	background: image-url('picto_health.svg') no-repeat center top;
+	background-size: 105px 105px;
+}
+
+.nav-sections__listitem--residing {
+	background: image-url('picto_residing.svg') no-repeat center top;
+	background-size: 105px 105px;
+}

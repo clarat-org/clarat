@@ -1,0 +1,38 @@
+// ---------------------------------------------------------------
+//
+//  Helper classes, silent classes
+//
+// ---------------------------------------------------------------
+
+%clearfix {
+	zoom:1;
+
+	&:before, &:after {
+		display: block;
+		overflow: hidden;
+		height: 0;
+		content: "";
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+%hide_text {
+	color: transparent;
+	text-shadow: none;
+	font: 0/0 a;
+}
+
+%clarat_rounding {
+	border-radius: 0 $border_radius;
+}
+
+%clarat_rounding_start {
+	border-radius: $border_radius 0 0 0;
+}
+
+%clarat_rounding_end {
+	border-radius: 0 0 $border_radius 0;
+}

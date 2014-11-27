@@ -9,7 +9,7 @@ html class='no-js' lang=I18n.locale
     = render '/layouts/partials/javascript_config'
 
     = csrf_meta_tags
-  body
+  body class="template--#{controller_name}-#{action_name}"
     .container-fluid
     - if controller_name == 'pages'
       = render 'layouts/partials/navigation'

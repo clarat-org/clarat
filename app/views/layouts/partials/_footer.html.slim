@@ -1,58 +1,34 @@
-/.yellow-background
-/  .text-center
-/    .footer-font-big
-/      a class='fa fa-facebook-square font-white'
-/      |  |
-/      a<> class='fa fa-google-plus-square font-white'
-/      |  |
-/      a< class='fa fa-twitter-square font-white'
-/
-/    .footer-font-small.font-white
-/      | #{link_to 'Presse', root_path, class: 'font-white'} |
-/      |  #{link_to 'Datenschutz', root_path, class: 'font-white'} |
-/      |  #{link_to 'Impressum', root_path, class: 'font-white'}
+footer.footer-main
+  section.footer-main__firstrow
+    .wrapper-inner
+      .footer-main__subscribe
+        form.newsletter-subscribe
+          input.newsletter-subscribe__input[type="text"]
+          button.newsletter-subscribe__submit Newsletter abonnieren
 
-| <footer class="footer-main">
-|          <section class="footer-main__firstrow">
-|              <div class="wrapper-inner">
-|                  <div class="footer-main__subscribe">
-|                      <form class="newsletter-subscribe" action="">
-|                          <input class="newsletter-subscribe__input" type="text" />
-|                          <button class="newsletter-subscribe__submit">Newsletter abonnieren</button>
-|                      </form>
-|
-|                      <div class="Social-media">
-|                          <a class="Social-media__item Social-media__item--googleplus" href="#">Google+</a>
-|                          <a class="Social-media__item Social-media__item--twitter" href="#">Twitter</a>
-|                          <a class="Social-media__item Social-media__item--facebook" href="#">Facebook</a>
-|                      </div>
-|
-|                  </div>
-|
-|                  <div class="footer-main__about">
-|
-|                      <img class="Illustration-clara-t Illustration-clara-t--scooter" src="/assets/images/clara-t.svg" alt="" />
-|
-|                      <nav class="nav-site">
-|                          <ul class="nav-site__list">
-|                              <li class="nav-site__listitem"><a href="">Über uns</a></li>
-|                              <li class="nav-site__listitem"><a href="">Häufige Fragen</a></li>
-|                              <li class="nav-site__listitem"><a href="">Kontakt</a></li>
-|                          </ul>
-|                      </nav>
-|                  </div>
-|              </div>
-|          </section>
-|
-|          <section class="footer-main__secondrow">
-|              <div class="wrapper-inner">
-|                  <nav class="nav-legal">
-|                      <ul class="nav-legal__list">
-|                          <li class="nav-legal__listitem"><a href="">Impressum</a></li>
-|                          <li class="nav-legal__listitem"><a href="">Nutzungsbedingungen</a></li>
-|                          <li class="nav-legal__listitem"><a href="">Datenschutzerklärung</a></li>
-|                      </ul>
-|                  </nav>
-|              </div>
-|          </section>
-|      </footer>
+        .Social-media
+          a.Social-media__item.Social-media__item--googleplus Google+
+          a.Social-media__item.Social-media__item--twitter Twitter
+          a.Social-media__item.Social-media__item--facebook Facebook
+
+      .footer-main__about
+        .Illustration-clara-t.Illustration-clara-t--scooter
+
+        nav.nav-site
+          ul.nav-site__list
+            li.nav-legal__listitem
+              a Über uns
+            li.nav-legal__listitem
+              a Häufige Fragen
+            li.nav-legal__listitem
+              a Kontakt
+  section.footer-main__secondrow
+    .wrapper-inner
+      nav.nav-legal
+        ul.nav-legal__list
+          li.nav-legal__listitem
+            a Impressum
+          li.nav-legal__listitem
+            a Nutzungsbedingungen
+          li.nav-legal__listitem
+            a Datenschutzerklärung

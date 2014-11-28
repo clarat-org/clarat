@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 @font-face {
-	font-family: 'robotoregular';
+	font-family: 'roboto-regular';
 	src: asset-url('Roboto-Regular-webfont.eot');
 	src: asset-url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
 	asset-url('Roboto-Regular-webfont.woff') format('woff'),
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-	font-family: 'robotolight';
+	font-family: 'roboto-light';
 	src: asset-url('Roboto-Light-webfont.eot');
 	src: asset-url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
 	asset-url('Roboto-Light-webfont.woff') format('woff'),
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-	font-family: 'robotobold';
+	font-family: 'roboto-bold';
 	src: asset-url('Roboto-Bold-webfont.eot');
 	src: asset-url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
 	asset-url('Roboto-Bold-webfont.woff') format('woff'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-	font-family: 'robotoitalic';
+	font-family: 'roboto-italic';
 	src: asset-url('Roboto-Italic-webfont.eot');
 	src: asset-url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
 	asset-url('Roboto-Italic-webfont.woff') format('woff'),
@@ -50,19 +50,19 @@
 }
 
 %roboto_regular {
-	font-family: 'robotoregular';
+	font-family: 'roboto-regular';
 }
 
 %roboto_light {
-	font-family: 'robotolight';
+	font-family: 'roboto-light';
 }
 
 %roboto_bold {
-	font-family: 'robotobold';
+	font-family: 'roboto-bold';
 }
 
 %roboto_italic {
-	font-family: 'robotoitalic';
+	font-family: 'roboto-italic';
 }
 
 body {

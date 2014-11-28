@@ -5,10 +5,11 @@
 // ---------------------------------------------------------------
 
 
-.search_form {
+#new_search_form {
 	@extend %clearfix;
 	padding: 25px 0 0 25px;
 	list-style: none;
+	width: 640px;
 
 	.template--pages-home & {
 		position: relative;
@@ -42,7 +43,6 @@
 	float: left;
 	height: 47px;
 }
-
 
 .main-search__submit {
 	@extend %hide_text;

@@ -10,12 +10,12 @@
           =< tags
           | )
 
-      ul.search-results
+      ul.search-results.Listing-results__list
         - @offers.each do |offer|
-          li id="result-offer-#{offer.id}" class="JS-trigger-marker"
-            .yellow-background.search-headline
+          li id="result-offer-#{offer.id}" class="JS-trigger-marker Listing-results__listitem"
+            h3.Listing-results__offer
               = link_to offer.name, offer_path(id: offer)
-            .white-background.search-subtitle
+            h4.Listing-results__organisation
               = offer.organization_name
       = paginate @offers
 
@@ -40,7 +40,7 @@
     .aside-standard__container
       h5.aside-standard__headline Schlagwortfilter
 
-      .affix style="margin-top:20px"
+      ul.Listing-tags
         - tags1 = @tags[0..5]
         - tags2 = @tags[6..-1]
         - tags1.each do |tag|

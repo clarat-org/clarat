@@ -10,9 +10,9 @@
 }
 
 .tt-dropdown-menu {
+	right: 10px !important;
+	padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
 	background: $brand_beige;
-	right: 10px !important; // override inline style, this is #search_form_query's margin right
-	padding: 10px 0 5px;
 
 	em {
 		@extend %roboto_bold;
@@ -21,17 +21,18 @@
 
 	.offer,
 	.organisation {
-		padding: 0 15px;
 		overflow: hidden;
+		padding: 0 15px;
 		text-overflow: ellipsis;
+		cursor: pointer;
 	}
 
 	.organisation {
 		@extend %roboto_bold;
+		margin-bottom: 10px;
 		color: $brand_green;
 		font-size: 14px;
 		line-height: 22px;
-		margin-bottom: 10px;
 	}
 }
 

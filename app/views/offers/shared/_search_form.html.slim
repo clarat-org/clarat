@@ -1,6 +1,6 @@
 = semantic_form_for search_cache, url: offers_path, html: { method: :get } do |f|
-  = f.input :query, label: false, input_html: { placeholder: 'Suche Angebote...', spellcheck: false, autocomplete: 'off', autofocus: true, class: 'input-xlg typeahead' }
-  = f.input :search_location, label: false, input_html: { value: geoloc_to_s, class: 'input-xlg JS-Search-location-display', placeholder: 'in...' }
+  = f.input :query, label: true, input_html: { placeholder: 'Suche Angebote...', spellcheck: false, autocomplete: 'off', autofocus: true, class: 'input-xlg typeahead' }
+  = f.input :search_location, label: true, input_html: { value: geoloc_to_s, class: 'input-xlg JS-Search-location-display', placeholder: 'in...' }
   = f.input :generated_geolocation, as: :hidden, input_html: { class: 'JS-Search-location', value: default_geolocation }
   = f.input :tags, as: :hidden
   button.main-search__submit

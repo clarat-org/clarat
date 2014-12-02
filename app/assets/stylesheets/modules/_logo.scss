@@ -13,6 +13,12 @@
 	height: 47px;
 	background: image-url('logo.svg');
 	background-size: 215px 47px;
+
+	a {
+		display: block;
+		width: inherit;
+		height: inherit;
+	}
 }
 
 .Logo--start {

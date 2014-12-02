@@ -50,5 +50,8 @@ en:
         ö: "oe"
         ü: "ue"
         ß: "ss"
+  views:
+    pagination:
+      truncate: '…'
   conf: # translations used for app-internal things
     current_location: 'My Location'

@@ -27,6 +27,7 @@ initialize = ->
       marker = new google.maps.Marker
         position: markerPosition
         map: map
+        icon: '/assets/gmaps_marker_1.svg'
 
       bounds.extend markerPosition
 

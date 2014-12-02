@@ -1,0 +1,44 @@
+// ---------------------------------------------------------------
+//
+//  Twitter Typeahead
+//
+// ---------------------------------------------------------------
+
+
+.twitter-typeahead {
+	float: left;
+}
+
+.tt-dropdown-menu {
+	background: $brand_beige;
+	right: 10px !important; // override inline style, this is #search_form_query's margin right
+	padding: 10px 0 5px;
+
+	em {
+		@extend %roboto_bold;
+		font-style: normal;
+	}
+
+	.offer,
+	.organisation {
+		padding: 0 15px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.organisation {
+		@extend %roboto_bold;
+		color: $brand_green;
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+}
+
+.tt-hint {
+	display: none;
+}
+
+.tt-input {
+	background: $brand_white !important; // override inline style
+}

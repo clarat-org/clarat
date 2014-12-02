@@ -1,5 +1,4 @@
 .hit
-  .name {{{ _highlightResult.name.value }}}
+  .offer {{{ _highlightResult.name.value }}}
 
-  .attribute
-    %b {{{ organization_name }}}
+  .organisation {{{ organization_name }}}

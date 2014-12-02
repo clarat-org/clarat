@@ -11,22 +11,28 @@
 }
 
 .Listing-tags__item {
-	@extend %roboto_bold;
-	display: inline-block;
-	float: left;
-	background: $brand_blue;
-	color: $brand_white;
-	margin: 0 8px 8px 0;
-	padding: 0 12px;
-	height: 30px;
-	line-height: 30px;
+	a {
+		@extend %roboto_bold;
+		display: inline-block;
+		float: left;
+		background: $brand_blue;
+		color: $brand_white;
+		margin: 0 8px 8px 0;
+		padding: 0 12px;
+		height: 30px;
+		line-height: 30px;
 
-	&:hover {
-		background-color: $brand_orange;
+		&:hover,
+		&.active {
+			background-color: $brand_orange;
+		}
+
 	}
 
 	&:first-child {
-		@extend %clarat_rounding_start
+		a {
+			@extend %clarat_rounding_start;
+		}
 	}
 
 	a {

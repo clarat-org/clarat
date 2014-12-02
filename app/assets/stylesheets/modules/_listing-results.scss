@@ -17,6 +17,12 @@
 
 .Listing-results__listitem {
 	margin-bottom: 25px;
+
+	&.JS-highlighted {
+		.Listing-results__offer {
+			background: $brand_orange;
+		}
+	}
 }
 
 .Listing-results__headline {
@@ -27,7 +33,6 @@
 .Listing-results__emphasis {
 	@extend %roboto_bold;
 }
-
 
 
 .Listing-results__offer,

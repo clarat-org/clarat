@@ -6,9 +6,19 @@
 
 .header-main {
 	position: relative;
-	background: $brand_beige;
 	height: 140px;
-	overflow: hidden;
+	background: $brand_beige;
+
+	// Visual horizontal enlargement of non startpage distributor box
+	&:before {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		height: 100px;
+		background: $brand_yellow;
+		content: 'test';
+	}
 }
 
 .header-main--startpage {
@@ -16,6 +26,10 @@
 	border-top: 4px solid $brand_yellow;
 	background: image-url('bg_scratches.jpg') no-repeat center bottom;
 	background-size: cover;
+
+	&:before {
+		display: none;
+	}
 }
 
 .header-main__foreground {
@@ -24,6 +38,7 @@
 	height: inherit;
 	background: image-url('foreground.svg') no-repeat center bottom;
 	background-size: contain;
+
 }
 
 .page-detail__header {

@@ -36,3 +36,5 @@ de:
     current_location: 'Mein Standort'
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
+  js:
+    update_request_success: 'Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner Nähe aktiv werden melden wir uns bei dir.'

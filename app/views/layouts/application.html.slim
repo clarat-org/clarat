@@ -10,6 +10,9 @@ html class='no-js' lang=I18n.locale
 
     = csrf_meta_tags
   body class="template--#{controller_name}-#{action_name}"
+    - flash.each do |message|
+      div class="alert alert-#{message[0]} fade in"= message[1]
+
     .container-fluid
     - if controller_name == 'pages'
       = render 'layouts/partials/navigation'

@@ -49,7 +49,7 @@ module Clarat
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    config.assets.precompile += Dir["app/assets/stylesheets/controller/*.scss"].map{|file| "controller/#{File.basename file,'.scss'}" }
+    #config.assets.precompile += Dir["app/assets/stylesheets/controller/*.scss"].map{|file| "controller/#{File.basename file,'.scss'}" }
     config.assets.precompile += %w( gmaps_search_results.js )
     config.generators.assets :controller_based_assets
 

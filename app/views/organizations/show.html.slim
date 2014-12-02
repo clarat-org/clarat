@@ -1,26 +1,66 @@
-h1 = @organization.name
+.wrapper-inner
+  main.content-main.content-main--wide
 
-p
-  h2 Was
-  = @organization.description
+    header.page-detail__header
+      h2.page-detail__title= @organization.name
 
-p
-  h2 Wo
-  p
-  - if @location.name?
-    =@location.name
-  p
-  =@location.street
-  - if @location.addition?
-    p
-    =@location.addition
-  p
-  =>@location.zip
-  =@location.city
+    .section-wrapper-major
 
-p
- h2 Alle Angebote der Organisation
- ul
-   - @organization.offers.each do |offer|
-     li
-      = link_to offer.name, offer_path(id: offer)
+      section.section-content.section-content--who
+        h3.section-content__title Wer
+        .section-content__body
+          p= @organization.description
+
+      section.section-content.section-content--alloffers
+        h3.section-content__title Alle Angebote der Organisation
+        .section-content__body
+          ul.Listing-offers__list
+            - @organization.offers.each do |offer|
+              li.Listing-offers__listitem
+                = link_to offer.name, offer_path(id: offer)
+
+    .section-wrapper-minor
+
+      section.section-content.section-content--where
+        h3.section-content__title Wo
+        .section-content__body
+          /! http://microformats.org/wiki/adr start
+          .adr
+            p
+              - if @location.name?
+                span.org= @location.name
+                br
+              span.street-address= @location.street
+              br
+              - if @location.addition?
+                span.extended-address= @location.addition
+                br
+              span.postal-code=> @location.zip
+              span.locality= @location.city
+          /! http://microformats.org/wiki/adr end
+
+      section.section-content--map
+        script src='https://maps.googleapis.com/maps/api/js?v=3.exp'
+        div style='overflow:hidden;height:360px;width:428px;'
+          div id='gmap_canvas' style='height:428px;width:428px;'
+          | <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+          | <script type='text/javascript'> function init_map(){
+          |   var myOptions = {
+          |     zoom:12,center:new google.maps.LatLng(52.52000659999999,13.404953999999975),
+          |     mapTypeId: google.maps.MapTypeId.ROADMAP
+          |   };
+          |   map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+          |   marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.52000659999999,13.404953999999975)});
+          |   infowindow = new google.maps.InfoWindow({
+          |     content:
+          |         'Dummy-<br>Karteneinbindung<br>'
+          |   });
+          |   google.maps.event.addListener(marker, 'click', function(){
+          |     infowindow.open(map,marker);
+          |   });
+          |   infowindow.open(map,marker);
+          | }
+          | google.maps.event.addDomListener(window, 'load', init_map);
+          | </script>
+
+      button.offer-contribute Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!

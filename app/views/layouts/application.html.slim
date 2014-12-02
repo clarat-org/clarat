@@ -43,7 +43,7 @@ html class='no-js' lang=I18n.locale
     - flash.each do |message|
       div class="alert alert-#{message[0]} fade in"= message[1]
 
-    - if controller_name == 'pages'
+    - if controller_name == 'pages' && action_name == 'home'
       = render 'layouts/partials/navigation', search_cache: @search_cache
     - else
       = render 'layouts/partials/search_navigation', search_cache: @search_cache

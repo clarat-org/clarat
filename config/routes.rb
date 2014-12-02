@@ -2,8 +2,16 @@ Clarat::Application.routes.draw do
   localized do
     devise_for :users
     mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-    root to: 'pages#home'
 
+    # static pages
+    root to: 'pages#home'
+    get 'about' => 'pages#about'
+    get 'faq' => 'pages#faq'
+    get 'impressum' => 'pages#impressum'
+    get 'agb' => 'pages#agb'
+    get 'privacy' => 'pages#privacy'
+
+    # RESTful resources
     resources :offers, only: [:index, :show]
     resources :organizations, only: [:show]
     resources :users, only: [:show]

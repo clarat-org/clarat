@@ -17,18 +17,18 @@ footer.footer-main
         nav.nav-site
           ul.nav-site__list
             li.nav-site__listitem
-              a Über uns
+              = link_to 'Über uns', '/about'
             li.nav-site__listitem
-              a Häufige Fragen
+              = link_to 'Häufige Fragen', '/faq'
             li.nav-site__listitem
-              a Kontakt
+              = link_to 'Kontakt', '#'
   section.footer-main__secondrow
     .wrapper-inner
       nav.nav-legal
         ul.nav-legal__list
           li.nav-legal__listitem
-            a Impressum
+            = link_to 'Impressum', '/impressum'
           li.nav-legal__listitem
-            a Nutzungsbedingungen
+            = link_to 'Nutzungsbedingungen', '/agb'
           li.nav-legal__listitem
-            a Datenschutzerklärung
+            = link_to 'Datenschutzerklärung', '/privacy'

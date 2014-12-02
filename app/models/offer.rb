@@ -51,9 +51,12 @@ class Offer < ActiveRecord::Base
                 disable_indexing: Rails.env.test?,
                 if: :approved? do
     attributesToIndex ['name', 'description']
+    ranking %w(typo custom geo words proximity attribute exact) # ^custom
+    customRanking ['asc(encounter_value)']
     add_attribute :_geoloc
     add_attribute :_tags
     add_attribute :organization_name
+    add_attribute :encounter_value
     attributesForFaceting [:_tags]
   end
 
@@ -77,6 +80,14 @@ class Offer < ActiveRecord::Base
   # Offer's tags for indexing
   def _tags
     tags.map(&:name)
+  end
+
+  # Offer's encounter modifier for indexing
+  def encounter_value
+    case encounter
+    when 'independent' then 0
+    when 'determinable', 'fixed' then 1
+    end
   end
 
   def creator_email

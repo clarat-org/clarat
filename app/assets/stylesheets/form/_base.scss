@@ -18,6 +18,7 @@ button {
 input[type='text'] {
 	@include input-placeholder($brand_brown, 400);
 	@extend %roboto_light;
+	background: $brand_white;
 }
 
 input[type='text'],

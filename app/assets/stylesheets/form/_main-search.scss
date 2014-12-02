@@ -11,6 +11,10 @@
 	list-style: none;
 	width: 640px;
 
+	label {
+		@extend %visually-hidden;
+	}
+
 	.template--pages-home & {
 		position: relative;
 		margin: 0 auto;
@@ -27,6 +31,10 @@
 		#search_form_search_location {
 			width: 340px;
 		}
+	}
+
+	.typeahead {
+
 	}
 }
 
@@ -58,4 +66,6 @@
 .main-search__submit {
 	@extend %clarat_rounding_end;
 }
+
+
 

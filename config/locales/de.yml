@@ -34,7 +34,11 @@ de:
         ß: "ss"
   views:
     pagination:
+      first: 'Erste Seite'
+      previous: 'Zurück'
       truncate: '…'
+      next: 'Vor'
+      last: 'Letzte Seite'
   conf: # translations used for app-internal things
     current_location: 'Mein Standort'
     default_location: 'Berlin'

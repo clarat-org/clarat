@@ -52,6 +52,10 @@ en:
         ß: "ss"
   views:
     pagination:
+      first: 'First'
+      previous: 'Previous'
       truncate: '…'
+      next: 'Next'
+      last: 'Last'
   conf: # translations used for app-internal things
     current_location: 'My Location'

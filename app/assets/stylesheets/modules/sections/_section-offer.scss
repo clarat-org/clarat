@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 
-.template--offer {
+.template--offers-show {
 
 	.section-content--organisation .section-content__title {
 		background: $brand_green;
@@ -17,6 +17,14 @@
 
 	.section-content--tags {
 		background: transparent;
+	}
+
+	.section-content--openinghours {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.page-detail__icons {

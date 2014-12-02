@@ -1,61 +1,100 @@
-h1= @offer.name
-p= @offer.description
+.wrapper-inner
+  main.content-main.content-main--wide
+    header.page-detail__header
+      h2.page-detail__title= @offer.name
+      .page-detail__icons
+        = image_tag "picto_family.svg", alt: ""
+        = image_tag "picto_crisis.svg", alt: ""
 
-h2 Nächste Schritte
-p= @offer.next_steps
+    .section-wrapper-major
+      section.section-content.section-content--what
+        h3.section-content__title Was
+        .section-content__body
+          = @offer.description
 
-h2 Kontakt
-- if @offer.contact_name?
-  p
-  ' Ansprechpartner:
-  =@offer.contact_name
-- if @offer.telephone?
-  p
-  ' Telefon:
-  =@offer.telephone
-- if @offer.fax?
-  p
-  ' Fax:
-  =@offer.fax
-- if @offer.email?
-  p
-  ' E-Mail:
-  =@offer.email
+      - unless @offer.openings.empty?
+        section.section-content.section-content--openinghours
+          h3.section-content__title Öffnungszeiten
+          .section-content__body
+            ul
+              -@offer.openings.each do |opening|
+                li
+                  = "#{opening.day}: #{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
 
-h2 Wo
-p
-- if @offer.location_name
-  =@offer.location_name
-p
-=@offer.location_street
-- if @offer.location_addition
-  p
-  =@offer.location_addition
-p
-=>@offer.location_zip
-=@offer.location_city
+      section.section-content.section-content--contact
+        h3.section-content__title Kontakt
+        .section-content__body
+          p
+            == "Ansprechpartner: #{@offer.contact_name}<br>" if @offer.contact_name?
+            == "Telefon: #{@offer.telephone}<br>" if @offer.telephone?
+            == "Fax: #{@offer.fax}<br>" if @offer.fax?
+            == "E-Mail: #{@offer.email}" if @offer.email?
+            / mailto:!!
 
-h2 Öffnungszeiten
-- unless @offer.openings.empty?
-  -@offer.openings.each do |opening|
-    p
-    =opening.day
-    ' :
-    =opening.open.strftime("%H")
-    | :
-    =opening.open.strftime("%M")
-    '  -
-    =opening.close.strftime("%H")
-    | :
-    =opening.close.strftime("%M")
+      section.section-content.section-content--nextsteps
+        h3.section-content__title Nächste Schritte
+        .section-content__body
+          p= @offer.next_steps
 
-h2 Anbieter
-= link_to @offer.organization_name, organization_path(id: @offer.organization)
+      section.section-content.section-content--organisation
+        h3.section-content__title Anbieter
+        .section-content__body
+          = link_to @offer.organization_name, organization_path(id: @offer.organization)
 
-- unless @offer.tags.empty?
-  h2 Schlagworte:
-  p
-  -@offer.tags.each do |tag|
-    =tag.name
-    - unless tag == @offer.tags.last
-      ' ,
+    .section-wrapper-minor
+      - if @offer.location
+        section.section-content.section-content--where
+          h3.section-content__title Wo
+          .section-content__body
+            /! http://microformats.org/wiki/adr start
+            .adr
+              p
+                - if @offer.location_name
+                  span.org=@offer.location_name
+                  br
+                span.street-address=@offer.location_street
+                br
+                - if @offer.location_addition
+                  span.extended-address=@offer.location_addition
+                  br
+                span.postal-code=@offer.location_zip
+                br
+                span.locality=@offer.location_city
+                br
+            /! http://microformats.org/wiki/adr end
+
+      section.section-content--map
+        script src='https://maps.googleapis.com/maps/api/js?v=3.exp'
+        div style='overflow:hidden;height:360px;width:428px;'
+          div id='gmap_canvas' style='height:428px;width:428px;'
+          | <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+
+        script type='text/javascript'
+          |   function init_map(){
+          |   var myOptions = {
+          |     zoom:12,center:new google.maps.LatLng(52.52000659999999,13.404953999999975),
+          |     mapTypeId: google.maps.MapTypeId.ROADMAP
+          |   };
+          |   map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+          |   marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.52000659999999,13.404953999999975)});
+          |   infowindow = new google.maps.InfoWindow({
+          |     content:
+          |         'Dummy-Karteneinbindung'
+          |   });
+          |   google.maps.event.addListener(marker, 'click', function(){
+          |     infowindow.open(map,marker);
+          |   });
+          |   infowindow.open(map,marker);
+          | }
+          | google.maps.event.addDomListener(window, 'load', init_map);
+
+      - unless @offer.tags.empty?
+        section.section-content.section-content--tags
+          h5.aside-standard__headline Schlagworte
+          ul.Listing-tags
+            -@offer.tags.each do |tag|
+              li.Listing-tags__item
+                = link_to tag.name, '#'
+
+      button.offer-contribute
+        | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!

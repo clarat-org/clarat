@@ -19,13 +19,21 @@
 		background: $brand_green;
 		content: '';
 	}
+
+	&.section-start--how:after {
+		background: $brand_blue;
+	}
+
+	&.section-start--why:after {
+		background: #C3BFB4;
+	}
 }
 
 .section-start__headline {
 	@extend %roboto_bold;
 	@extend %clarat_rounding_start;
 	position: relative;
-	margin-top: 105px;
+	margin-top: 15px;
 	margin-bottom: 0;
 	padding: 0 30px;
 	height: 45px;
@@ -35,28 +43,12 @@
 	font-size: 24px;
 	line-height: 45px;
 
-	&:before {
-		position: absolute;
-		bottom: 45px;
-		left: 0;
-		right: 0;
-		height: 200px;
-		content: '';
+	.section-start--how & {
+		background: $brand_blue;
 	}
 
-	.section-start--how &:before {
-		background: image-url('teaser_how.svg') no-repeat 40% bottom;
-		background-size: auto 130px;
-	}
-
-	.section-start--whom &:before {
-		background: image-url('teaser_whom.svg') no-repeat 54% bottom;
-		background-size: auto 130px;
-	}
-
-	.section-start--why &:before {
-		background: image-url('teaser_why.svg') no-repeat 40% bottom;
-		background-size: auto 130px;
+	.section-start--why & {
+		background: #C3BFB4;
 	}
 }
 

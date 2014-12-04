@@ -1,0 +1,43 @@
+// ---------------------------------------------------------------
+//
+//  Illustration girl, footer and 'section mascot'
+//
+// ---------------------------------------------------------------
+
+.mascot {
+	position: absolute;
+	background: no-repeat left bottom;
+}
+
+.mascot--footer {
+	right: 150px;
+	bottom: 0;
+	width: 120px;
+	height: 150px;
+	background-image: image-url('clara-t.svg');
+	background-size: 120px auto;
+
+	.template--pages-home & {
+		display: none;
+	}
+}
+
+.mascot--header {
+	bottom: 0;
+	left: 33%;
+	width: 114px;
+	height: 126px;
+
+	.template--offers-index & {
+		background-image: image-url('reading-clara-t.svg');
+	}
+
+	.template--offers-show & {
+		background-image: image-url('searching-clara-t_offer.svg');
+	}
+
+	.template--organizations-show & {
+		background-image: image-url('searching-clara-t_organisation.svg');
+	}
+
+}

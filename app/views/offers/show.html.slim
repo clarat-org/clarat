@@ -12,6 +12,13 @@
         .section-content__body
           = @offer.description
 
+      section.section-content.section-content--nextsteps
+        h3.section-content__title
+          | <i class='fa fa-hand-o-right'></i>
+          | Nächste Schritte
+        .section-content__body
+          p= @offer.next_steps
+
       - unless @offer.openings.empty?
         section.section-content.section-content--openinghours
           h3.section-content__title Öffnungszeiten
@@ -31,10 +38,6 @@
             == "E-Mail: #{@offer.email}" if @offer.email?
             / mailto:!!
 
-      section.section-content.section-content--nextsteps
-        h3.section-content__title Nächste Schritte
-        .section-content__body
-          p= @offer.next_steps
 
       section.section-content.section-content--organisation
         h3.section-content__title Anbieter
@@ -79,6 +82,7 @@
                 = link_to tag.name, '#'
 
       button.offer-contribute
+        | <i class="fa fa-pencil-square-o"></i>
         | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
 
 

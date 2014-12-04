@@ -7,4 +7,5 @@
 #map-container,
 #map-canvas {
 	height: 300px;
+	pointer-events: none; // debug: prevent accidental map zooming when using mousewheel on site with map
 }

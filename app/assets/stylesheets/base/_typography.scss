@@ -71,7 +71,8 @@ body {
 }
 
 body,
-button {
+button,
+input[type="submit"] {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

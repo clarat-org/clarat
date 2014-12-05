@@ -9,26 +9,31 @@ button {
 	border: none;
 }
 
-button {
+button,
+input[type="submit"] {
 	@extend %roboto_bold;
+	font-weight: 400;
 	background: $brand_brown;
 	color: $brand_white;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='email'] {
 	@include input-placeholder($brand_brown, 400);
 	@extend %roboto_light;
 	background: $brand_white;
 }
 
 input[type='text'],
+input[type="email"],
 button {
 	&:focus {
 		outline: none;
 	}
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='email'] {
 	&:focus {
 		background: $brand_beige;
 	}

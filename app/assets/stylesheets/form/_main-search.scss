@@ -62,6 +62,11 @@
 
 #search_form_query {
 	@extend %clarat_rounding_start;
+
+	// explicit definition and using important to override twitter-typeahead
+	&:focus {
+		background: $brand_beige !important;
+	}
 }
 
 .main-search__submit {

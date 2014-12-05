@@ -38,6 +38,14 @@
 	@extend %layout-col-35;
 }
 
+body[class^="template--pages"] {
+	.content-main {
+		 .wrapper-inner {
+			 padding: 30px 0;
+		 }
+	}
+ }
+
 
 // Silent layout helper classes
 

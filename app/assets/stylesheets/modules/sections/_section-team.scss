@@ -1,0 +1,50 @@
+// ---------------------------------------------------------------
+//
+//  Presenting team members
+//
+// ---------------------------------------------------------------
+
+.section-team {
+	@extend %clearfix;
+	margin: 40px 0 30px -.5%;
+}
+
+.section-team__member {
+	position: relative;
+	float: left;
+	margin: 0 1% 2.5% 0;
+	padding: 42px 20px 20px;
+	width: 24%;
+	background: $brand_beige;
+
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 22px;
+		background: $brand_green;
+		content: '';
+	}
+
+	&:first-of-type:after {
+		@extend %clarat_rounding_start;
+	}
+
+	&:last-of-type {
+		@extend %clarat_rounding_end;
+	}
+}
+
+.section-team__profile {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.section-team__headline {
+	@extend %roboto_bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+

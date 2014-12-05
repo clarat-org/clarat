@@ -3,6 +3,7 @@ html class='no-js' lang=I18n.locale
   head
     title Clarat
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    | <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = render '/layouts/partials/javascript_config'
@@ -20,7 +21,12 @@ html class='no-js' lang=I18n.locale
     link rel="apple-touch-icon-precomposed" sizes="144x144" href=""
     meta name="msapplication-TileImage" content=""
 
-
+    |     <!--[if lt IE 9]>
+    |       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    |       <script type="text/javascript" src="
+    = asset_url('vendor/selectivizr-min.js')
+    |        "></script>
+    |     <![endif]-->
     |     <!--[if !IE]><!-->
     |     <script>
     |         if (Function('/*@cc_on return document.documentMode===10@*/')()) {
@@ -29,15 +35,8 @@ html class='no-js' lang=I18n.locale
     |         if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
     |             document.documentElement.className += ' ie11';
     |         }
-    |     </script>
-    |     <!--<![endif]-->
-
-    | <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    / <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-
-    /javascript:
-    /  $.noConflict();
+    |    </script>
+    |  <!--<![endif]-->
 
     = csrf_meta_tags
 

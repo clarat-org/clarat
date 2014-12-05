@@ -4,6 +4,12 @@
 //
 // ---------------------------------------------------------------
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 html {
 	box-sizing: border-box;
 	position: relative;
@@ -14,8 +20,9 @@ body {
 	min-height: 100%;
 }
 
-*, *:before, *:after {
-	box-sizing: inherit;
+html,
+body {
+	height: 100%;
 }
 
 ul {

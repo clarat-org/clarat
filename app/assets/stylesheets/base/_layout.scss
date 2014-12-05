@@ -46,6 +46,23 @@ body[class^="template--pages"] {
 	}
  }
 
+// Sticky footer related
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -196px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer-main,
+.page-wrap:after {
+	height: 196px;
+}
+
 
 // Silent layout helper classes
 

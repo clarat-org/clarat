@@ -22,12 +22,19 @@
 	}
 }
 
-.header-main--startpage {
-	margin-bottom: 0;
+.header-main--wide {
 	height: 475px;
 	border-top: 4px solid $brand_yellow;
 	background: image-url('bg_scratches.jpg') no-repeat center bottom;
 	background-size: cover;
+
+	.template--pages-home & {
+		margin-bottom: 0;
+	}
+
+	.template--pages-about & {
+		border-bottom: 15px solid $brand_yellow;
+	}
 
 	&:before {
 		display: none;
@@ -38,7 +45,7 @@
 	@extend %clearfix;
 	margin-top: -4px;
 	height: inherit;
-	background: image-url('foreground.svg') no-repeat center bottom;
+	background: image-url('foreground.svg') no-repeat center 102%;
 	background-size: contain;
 
 }

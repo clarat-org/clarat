@@ -46,7 +46,9 @@
           #map-container
             #map-canvas data={ markers: '{"52.5071987700295,13.4224654888445":{"position":{"latitude":52.5071987700295,"longitude":13.4224654888445},"offer_ids":[5]}}', position: '{"latitude":52.5200066,"longitude":13.404954}' }
 
-      button.offer-contribute Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+        button.offer-contribute
+          | <i class="fa fa-pencil-square-o"></i>
+          | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
 
 
 - content_for :view_specific_scripts do

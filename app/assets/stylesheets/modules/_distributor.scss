@@ -12,18 +12,6 @@
 	height: 100px;
 	background: $brand_yellow;
 	z-index: 2;
-
-	&:after {
-		position: absolute;
-		top: 40px;
-		right: -100%;
-		bottom: 0;
-		z-index: 1;
-		width: 100%;
-		height: 100px;
-		background: $brand_yellow;
-		content: ' ';
-	}
 }
 
 .Distributor--start {

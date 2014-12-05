@@ -38,13 +38,13 @@
 }
 
 %clarat_rounding {
-	border-radius: 0 $border_radius;
+	border-radius: $border_radius 0;
 }
 
 %clarat_rounding_start {
-	border-radius: $border_radius 0 0 0;
+	border-top-left-radius: $border_radius;
 }
 
 %clarat_rounding_end {
-	border-radius: 0 0 $border_radius 0;
+	border-bottom-right-radius: $border_radius;
 }

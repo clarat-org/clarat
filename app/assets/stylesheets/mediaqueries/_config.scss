@@ -1,0 +1,21 @@
+// ---------------------------------------------------------------
+//
+//  Central mediaquery config
+//
+// ---------------------------------------------------------------
+
+@mixin breakpoint($point) {
+	@if $point == L {
+		@media (max-width: 1200px) { @content; }
+	}
+	@if $point == M {
+		@media (max-width: 860px) { @content; }
+	}
+	@if $point == S {
+		@media (max-width: 480px) { @content; }
+	}
+}
+
+@import "l";
+@import "m";
+@import "s";

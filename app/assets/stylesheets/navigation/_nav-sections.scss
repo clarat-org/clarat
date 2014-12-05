@@ -7,9 +7,10 @@
 .nav-sections {
 	@extend %clearfix;
 	position: relative;
+	z-index: 30;
 	margin: 0 auto;
 	padding-top: 30px;
-	width: 750px;
+	max-width: 750px;
 }
 
 .nav-sections__list {
@@ -44,13 +45,15 @@
 		left: 0;
 		display: block;
 		padding-top: 110px;
-		text-decoration: none;
 		color: $brand_brown;
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: underline;
 		}
 	}
+
+
 }
 
 .nav-sections__listitem--crisis {

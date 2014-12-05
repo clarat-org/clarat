@@ -6,6 +6,7 @@
 
 .header-main {
 	position: relative;
+	margin-bottom: 30px;
 	height: 140px;
 	background: $brand_beige;
 
@@ -22,6 +23,7 @@
 }
 
 .header-main--startpage {
+	margin-bottom: 0;
 	height: 475px;
 	border-top: 4px solid $brand_yellow;
 	background: image-url('bg_scratches.jpg') no-repeat center bottom;
@@ -43,7 +45,6 @@
 
 .page-detail__header {
 	@extend %clearfix;
-	margin-top: 40px;
 	margin-bottom: 5px;
 }
 

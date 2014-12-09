@@ -5,8 +5,8 @@ Clarat::Application.routes.draw do
 
     # static pages
     root to: 'pages#home'
-    get 'about' => 'pages#about'
-    get 'faq' => 'pages#faq'
+    get 'ueber-uns' => 'pages#about'
+    get 'haeufige-fragen' => 'pages#faq'
     get 'impressum' => 'pages#impressum'
     get 'agb' => 'pages#agb'
     get 'privacy' => 'pages#privacy'

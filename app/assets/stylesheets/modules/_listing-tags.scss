@@ -9,6 +9,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+	.js-more-trigger {
+		text-decoration: none;
+		color: $brand_blue;
+	}
 }
 
 .Listing-tags__item {
@@ -43,6 +48,7 @@
 }
 
 .Listing-tags__control {
+  @extend %roboto_bold;
   clear: both;
-  text-align: center;
+  text-align: left;
 }

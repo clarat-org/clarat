@@ -31,6 +31,7 @@ about supported directives.
 # = require algolia/typeahead.jquery
 #
 # = require modules/autocomplete
+# = require modules/inviewport
 # = require modules/sticky
 # = require modules/geolocation
 # = require modules/search_location

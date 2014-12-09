@@ -113,6 +113,10 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  def has_contact_details?
+    contact_name || telephone || fax || email
+  end
+
   private
 
     # Custom Validation: Ensure selected organization is the same as the selected location's organization

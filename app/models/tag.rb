@@ -11,6 +11,9 @@ class Tag < ActiveRecord::Base
   # Validations
   validates :name, uniqueness: true, presence: true
 
+  # Scope
+  scope :mains, -> { where(main: true).order(:icon).limit(5) }
+
   # Methods
 
   def name_with_optional_asterisk

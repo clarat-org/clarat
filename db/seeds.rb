@@ -32,3 +32,9 @@ FederalState.create name: 'Rheinland-Pfalz'
 FederalState.create name: 'Mallorca' # Don't do this in production :)
 
 SearchLocation.create query: 'Berlin', latitude: 52.520007, longitude: 13.404954, geoloc: '52.520007,13.404954'
+
+Tag.create name: 'Akute Krisen', main: true, icon: 'a-crisis'
+Tag.create name: 'Lernen', main: true, icon: 'b-learn'
+Tag.create name: 'Familie', main: true, icon: 'c-family'
+Tag.create name: 'Gesundheit', main: true, icon: 'd-health'
+Tag.create name: 'Wohnen', main: true, icon: 'e-habitation'

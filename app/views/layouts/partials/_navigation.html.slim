@@ -19,13 +19,6 @@ header.header-main.header-main--wide
         h3.nav-sections__headline Oder suche nach Kategorien:
 
         ul.nav-sections__list
-          li.nav-sections__listitem.nav-sections__listitem--crisis
-            a Akute Krisen
-          li.nav-sections__listitem.nav-sections__listitem--learn
-            a Lernen
-          li.nav-sections__listitem.nav-sections__listitem--family
-            a Familie
-          li.nav-sections__listitem.nav-sections__listitem--health
-            a Gesundheit
-          li.nav-sections__listitem.nav-sections__listitem--residing
-            a Wohnen
+          - Tag.mains.each do |main_tag|
+            li.nav-sections__listitem class="nav-sections__listitem--#{main_tag.icon}"
+              = link_to main_tag.name, offers_path('search_form[tags]' => main_tag.name, 'search_form[query]' => ''), data: { no_turbolink: true }

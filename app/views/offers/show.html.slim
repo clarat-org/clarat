@@ -17,7 +17,7 @@
           | <i class='fa fa-hand-o-right'></i>
           | Nächste Schritte
         .section-content__body
-          p= @offer.next_steps
+          p== @offer.next_steps
 
       - unless @offer.openings.empty?
         section.section-content.section-content--openinghours

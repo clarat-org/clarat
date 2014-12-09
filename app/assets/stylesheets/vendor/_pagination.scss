@@ -4,11 +4,12 @@
 //
 // ---------------------------------------------------------------
 
-// @TODO: Refactor! Proper pagination template
 
 .page,
+.first,
+.last,
 .next,
-.last {
+.prev {
 	display: inline-block;
 	float: left;
 	margin-right: 5px;

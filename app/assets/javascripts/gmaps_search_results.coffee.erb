@@ -12,6 +12,7 @@ initialize = ->
     mapOptions =
       zoom: 11
       center: userPosition
+      scrollwheel: false
 
     # Create Map and Center to User Position
     map = new google.maps.Map(canvas, mapOptions)

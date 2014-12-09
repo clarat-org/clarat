@@ -19,6 +19,13 @@ de:
       opening:
         one: Öffnungszeit
         other: Öffnungszeiten
+        mon: Montag
+        tue: Dienstag
+        wed: Mittwoch
+        thu: Donnerstag
+        fri: Freitag
+        sat: Samstag
+        sun: Sonntag
       user:
         one: Nutzer
         other: Nutzer

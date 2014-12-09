@@ -4,6 +4,7 @@ class Website < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
+  # ToDo: Rename 'sort'
   enumerize :sort, in: %w(own facebook twitter youtube gplus pinterest other)
 
   # Validations

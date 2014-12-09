@@ -43,7 +43,7 @@
               == "Fax: #{@offer.fax}<br>" if @offer.fax?
               - if @offer.email?
                 | E-Mail:
-                ==< secure_email_to @offer.email
+                span#secure-email==< secure_email_to @offer.email
               br
               / ToDo: Refactor!
               | Webseite:

@@ -38,7 +38,7 @@ module EmailObfuscationHelper
     out =  "<noscript>#{t('js.obfuscated_email')}</noscript>" # js disabled browsers see this
     out += "<script>"
     out += "    string = '#{rot13_encoded_email}'.replace(/[a-zA-Z]/g, function(c){ return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);});"
-    out += "    document.write('<a href='+'ma'+'il'+'to:'+ string +'>#{linktext}</a>');"
+    out += "    document.getElementById('secure-email').innerHTML = '<a href='+'ma'+'il'+'to:'+ string +'>#{linktext}</a>';"
     out += "</script>"
     return out.html_safe
   end

@@ -4,10 +4,10 @@
 //
 // ---------------------------------------------------------------
 
-
 .Listing-results {
-	margin-top: 25px;
+	min-height: 980px; // Sticky sidebar needs a potentially larger counterpart, breaks scrolling otherwise
 }
+
 
 .Listing-results__list {
 	margin: 0;

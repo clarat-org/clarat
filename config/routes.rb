@@ -8,8 +8,8 @@ Clarat::Application.routes.draw do
     get 'ueber-uns' => 'pages#about'
     get 'haeufige-fragen' => 'pages#faq'
     get 'impressum' => 'pages#impressum'
-    get 'agb' => 'pages#agb'
-    get 'privacy' => 'pages#privacy'
+    get 'nutzungsbedingungen' => 'pages#agb'
+    get 'datenschutzerklaerung' => 'pages#privacy'
 
     # RESTful resources
     resources :offers, only: [:index, :show]

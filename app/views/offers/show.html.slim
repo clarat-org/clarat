@@ -23,10 +23,14 @@
         section.section-content.section-content--openinghours
           h3.section-content__title Öffnungszeiten
           .section-content__body
-            ul
-              -@offer.openings.each do |opening|
-                li
-                  = "#{opening.day}: #{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+            table
+              -@offer.openings.order('sort_value').each do |opening|
+                tr
+                  td
+                    = t("activerecord.models.opening.#{opening.day}")
+                    |:&nbsp;
+                  td
+                    = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
 
       - if @offer.has_contact_details?
         / ^ modify that method if you add information to this box

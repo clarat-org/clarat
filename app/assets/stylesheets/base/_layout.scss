@@ -19,7 +19,7 @@
 .content-main,
 .aside-standard {
 	@extend %clearfix;
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
 
@@ -38,13 +38,6 @@
 	@extend %layout-col-35;
 }
 
-//body[class^="template--pages"] {
-//	.content-main {
-//		 .wrapper-inner {
-//			 padding: 30px 0;
-//		 }
-//	}
-// }
 
 // Sticky footer related
 

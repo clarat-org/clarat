@@ -11,6 +11,10 @@
 	max-width: 30%;
 }
 
+.Claim {
+	margin-right: 0;
+}
+
 .Claim__firstrow,
 .Claim__secondrow {
 	@extend %clarat_rounding;
@@ -32,5 +36,5 @@
 	margin-top: 10px;
 	padding: 7px 9px 6px;
 	font-size: 22px;
-	line-height: 28px;
+	line-height: 1.3;
 }

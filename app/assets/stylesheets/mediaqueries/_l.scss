@@ -5,7 +5,123 @@
 // ---------------------------------------------------------------
 
 @include breakpoint(L) {
-	body {
-		//background: red;
+
+	.header-main--wide {
+		height: 375px;
+	}
+
+	.newsletter-subscribe {
+		// @TODO: smaller fonts
+	}
+
+	.nav-sections {
+		//@TODO: Smaller pictos
+	}
+
+	.mascot--header {
+		display: none;
+	}
+
+	.section-wrapper-major,
+	.section-wrapper-minor,
+	.content-main,
+	.aside-standard {
+		display: block;
+		float: none;
+		margin-right: 0;
+		width: auto;
+	}
+
+	.header-main {
+		&:before {
+			display: none;
+		}
+	}
+
+	.section-start {
+		margin: 0 0 20px;
+		width: auto;
+	}
+
+
+	.section-start__body {
+		min-height: 0;
+	}
+
+	.Distributor--start {
+		@extend %clearfix;
+		margin-bottom: 50px;
+		height: auto;
+	}
+
+	.Distributor {
+		width: 480px;
+		max-width: 480px;
+		margin-right: -25px;
+	}
+
+	.Distributor--start {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#new_search_form {
+		width: 100%;
+	}
+
+	#search_form_query,
+	#search_form_search_location {
+		width: 170px;
+	}
+
+	.Claim {
+		max-width: 40%;
+	}
+
+	.Claim__firstrow {
+		font-size: 24px;
+	}
+
+	.Claim__secondrow {
+		font-size: 18px;
+	}
+
+	.nav-sections {
+		padding: 0;
+	}
+
+	.content-main {
+		padding-bottom: 0;
+	}
+
+	.template--pages-home {
+		#new_search_form {
+			width: 100%;
+		}
+	}
+
+	.section-team__member {
+		width: 49.5%;
+
+		&:nth-child(2n+1) {
+			margin-right: 0;
+		}
+	}
+
+	.footer-main__firstrow {
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.newsletter-subscribe__submit {
+		width: 230px;
+	}
+
+	.nav-sections__listitem {
+		height: auto;
+
+		a {
+			position: relative;
+		}
 	}
 }

@@ -1,0 +1,39 @@
+// ---------------------------------------------------------------
+//
+//  Breakpoint XL
+//
+// ---------------------------------------------------------------
+
+@include breakpoint(XL) {
+
+	.Claim {
+		max-width: 40%;
+	}
+
+	.wrapper-inner {
+		padding: 0 20px;
+	}
+
+	.section-start {
+		// @TODO: smaller font for both headlines and paragraphs
+	}
+
+	.mascot--header {
+		bottom: 0;
+		left: 230px;
+	}
+
+	.Distributor {
+		// @TODO: Overall width
+		max-width: 70%;
+	}
+
+	.Distributor--start {
+		max-width: 100%;
+	}
+
+	.search_form {
+		// @TODO: Overall width
+	}
+
+}

@@ -10,4 +10,13 @@ class Website < ActiveRecord::Base
   validates :sort, presence: true
   validates :url, format: %r{\Ahttps?://\S+\.\S+\z}, uniqueness: true,
     presence: true
+
+  # Scopes
+  scope :own, -> { where(sort: 'own') }
+  scope :facebook, -> { where(sort: 'facebook') }
+  scope :twitter, -> { where(sort: 'twitter') }
+  scope :youtube, -> { where(sort: 'youtube') }
+  scope :gplus, -> { where(sort: 'gplus') }
+  scope :pinterest, -> { where(sort: 'pinterest') }
+  scope :other, -> { where(sort: 'other') }
 end

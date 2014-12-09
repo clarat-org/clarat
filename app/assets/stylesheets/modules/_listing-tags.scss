@@ -5,39 +5,44 @@
 // ---------------------------------------------------------------
 
 .Listing-tags {
-	@extend %clearfix;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  @extend %clearfix;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .Listing-tags__item {
-	a {
-		@extend %roboto_bold;
-		display: inline-block;
-		float: left;
-		background: $brand_blue;
-		color: $brand_white;
-		margin: 0 8px 8px 0;
-		padding: 0 12px;
-		height: 30px;
-		line-height: 30px;
+  a {
+    @extend %roboto_bold;
+    display: inline-block;
+    float: left;
+    background: $brand_blue;
+    color: $brand_white;
+    margin: 0 8px 8px 0;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
 
-		&:hover,
-		&.active {
-			background-color: $brand_orange;
-		}
+    &:hover,
+    &.active {
+      background-color: $brand_orange;
+    }
 
-	}
+  }
 
-	&:first-child {
-		a {
-			@extend %clarat_rounding_start;
-		}
-	}
+  &:first-child {
+    a {
+      @extend %clarat_rounding_start;
+    }
+  }
 
-	a {
-		color: $brand_white;
-		text-decoration: none;
-	}
+  a {
+    color: $brand_white;
+    text-decoration: none;
+  }
+}
+
+.Listing-tags__control {
+  clear: both;
+  text-align: center;
 }

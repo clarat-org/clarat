@@ -5,8 +5,8 @@ moreHandler = ->
     target = moreArea.find('.js-more-target')
     displays = trigger.find('.js-more-display')
     trigger.on 'click', (e) ->
-      displays.toggleClass 'hidden'
-      target.toggleClass 'hidden'
+      displays.toggleClass 'is--hidden'
+      target.toggleClass 'is--hidden'
       e.preventDefault()
       false
 

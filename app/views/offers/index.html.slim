@@ -47,14 +47,14 @@
           = render 'tag', search_cache: @search_cache, tag: tag
         - if tags2
           .js-more
-            .js-more-target.hidden
+            .js-more-target.is--hidden
               - tags2.each do |tag|
                 = render 'tag', search_cache: @search_cache, tag: tag
             a.js-more-trigger href='#'
-              .js-more-display
+              .Listing-tags__control.js-more-display
                 | Mehr Schlagworte
                 .fa.fa-chevron-down<
-              .js-more-display.hidden
+              .Listing-tags__control.js-more-display.is--hidden
                 | Weniger Schlagworte
                 .fa.fa-chevron-up<
 

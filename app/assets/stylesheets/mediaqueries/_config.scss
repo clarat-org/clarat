@@ -5,17 +5,21 @@
 // ---------------------------------------------------------------
 
 @mixin breakpoint($point) {
-	@if $point == L {
+	@if $point == XL {
 		@media (max-width: 1200px) { @content; }
 	}
+	@if $point == L {
+		@media (max-width: 900px) { @content; }
+	}
 	@if $point == M {
-		@media (max-width: 860px) { @content; }
+		@media (max-width: 660px) { @content; }
 	}
 	@if $point == S {
-		@media (max-width: 480px) { @content; }
+		@media (max-width: 440px) { @content; }
 	}
 }
 
+@import "xl";
 @import "l";
 @import "m";
 @import "s";

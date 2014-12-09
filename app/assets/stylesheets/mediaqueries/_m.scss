@@ -1,11 +1,18 @@
 // ---------------------------------------------------------------
 //
-//  Breaktpoint
+//  Breakpoint M
 //
 // ---------------------------------------------------------------
 
 @include breakpoint(M) {
-	body {
-		//background: green;
+
+	main {
+		//@TODO: Change of overall font size
 	}
+
+	.Distributor,
+	.search_form {
+		//@TODO: Massive layout change, JS supported
+	}
+
 }

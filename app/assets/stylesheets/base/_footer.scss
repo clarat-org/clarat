@@ -4,6 +4,12 @@
 //
 // ---------------------------------------------------------------
 
+.footer-main {
+	.hasStickySidebar & {
+		padding-top: 100px;
+	}
+}
+
 .footer-main,
 .footer-main__firstrow,
 .footer-main__secondrow {

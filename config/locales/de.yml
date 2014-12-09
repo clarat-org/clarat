@@ -45,3 +45,4 @@ de:
     default_latlng: '52.520007,13.404954'
   js:
     update_request_success: 'Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner Nähe aktiv werden melden wir uns bei dir.'
+    obfuscated_email: 'Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.'

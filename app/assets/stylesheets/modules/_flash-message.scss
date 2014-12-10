@@ -1,0 +1,17 @@
+// ---------------------------------------------------------------
+//
+//  Flash message on top of page
+//
+// ---------------------------------------------------------------
+
+.Flash-message {
+	@extend %roboto_bold;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: $brand_white;
+}
+
+.Flash-message--alert {
+	background: $brand_orange;
+}

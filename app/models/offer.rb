@@ -117,6 +117,11 @@ class Offer < ActiveRecord::Base
     contact_name || telephone || fax || email
   end
 
+  def has_social_media_websites?
+    websites.facebook.first || websites.twitter.first ||
+    websites.youtube.first || websites.gplus.first || websites.pinterest.first
+  end
+
   private
 
     # Custom Validation: Ensure selected organization is the same as the selected location's organization

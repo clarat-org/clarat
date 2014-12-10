@@ -57,5 +57,8 @@ module Clarat
 
     # Rack extensions
     config.middleware.use Rack::Attack
+
+    # TODO: put in initializer
+    OpenSSL::SSL::SSLContext::DEFAULT_PARAMS[:ssl_version] = 'SSLv3'
   end
 end

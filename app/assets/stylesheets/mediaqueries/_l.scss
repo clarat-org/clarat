@@ -6,6 +6,7 @@
 
 @include breakpoint(L) {
 
+	@include mqindicator('L');
 	.header-main--wide {
 		height: 375px;
 	}

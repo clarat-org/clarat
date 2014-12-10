@@ -6,6 +6,7 @@
 
 @include breakpoint(M) {
 
+	@include mqindicator('M');
 	main {
 		//@TODO: Change of overall font size
 	}

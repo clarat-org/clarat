@@ -21,7 +21,8 @@ function initStickySidebar() {
 				} else {
 					$sticky
 						.css('position', 'static')
-						.css('width', '35.7%'); // chaining, because otherwise false top value
+						.css('width', '35.7%') // chaining, because otherwise false top value
+						.css('top', 'auto');
 				}
 			});
 		}
@@ -29,7 +30,9 @@ function initStickySidebar() {
 		$(window).scroll(function() {
 			$sticky
 				.css('position', 'static')
-				.css('width', '35.7%'); // chaining, because otherwise false top value
+				.css('width', '100%') // chaining, because otherwise false top value
+				.css('top', 'auto');
+
 		});
 	}
 }

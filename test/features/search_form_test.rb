@@ -6,7 +6,7 @@ feature 'Search Form' do
   scenario 'Empty search works' do
     WebMock.enable!
     visit root_path
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.must_have_content '0 Ergebnisse'
     WebMock.disable!
   end
@@ -21,7 +21,7 @@ feature 'Search Form' do
     visit root_path
     fill_in 'search_form_query', with: 'bazfuz'
     fill_in 'search_form_search_location', with: 'Foobar'
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.must_have_content '1 Ergebnisse'
     WebMock.disable!
   end
@@ -40,7 +40,7 @@ feature 'Search Form' do
     visit root_path
     fill_in 'search_form_query', with: 'foo'
     fill_in 'search_form_search_location', with: 'Foobar'
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.must_have_link 'foo baz'
     page.must_have_link 'foo fuz'
 
@@ -57,7 +57,7 @@ feature 'Search Form' do
   scenario 'Search for unknown location leads to error page' do
     visit root_path
     fill_in 'search_form_search_location', with: 'Bielefeld'
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.must_have_content 'Standort "Bielefeld" nicht gefunden'
   end
 
@@ -66,7 +66,7 @@ feature 'Search Form' do
     fill_in 'search_form_search_location',
       with: I18n.t('conf.current_location')
     find('#search_form_generated_geolocation').set '' # unset by JS
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.must_have_content(
       "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
     )
@@ -77,7 +77,7 @@ feature 'Search Form' do
     fill_in 'search_form_search_location',
       with: I18n.t('conf.current_location')
     find('#search_form_generated_geolocation').set '4,2' # set by JS
-    find('.btn.btn-xlg.btn-aligned.icon-white').click
+    find('.main-search__submit').click
     page.wont_have_content(
       "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
     )

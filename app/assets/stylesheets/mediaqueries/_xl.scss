@@ -11,26 +11,64 @@
 
 	// Header ######################################
 
+
+	.header-main {
+		&:before {
+			display: none;
+		}
+	}
+
 	.Claim {
 		max-width: 40%;
 	}
 
 	.mascot--header {
 		bottom: 0;
-		left: 230px;
+		left: 245px;
 	}
 
 	.Distributor {
-		// @TODO: Overall width
-		max-width: 70%;
+		margin-right: -20px;
+		padding-left: 20px;
 	}
 
 	.Distributor--start {
 		max-width: 100%;
+		margin-right: 0;
+		padding-left: 0;
 	}
 
-	.search_form {
-		// @TODO: Overall width
+	#new_search_form {
+		width: 500px;
+		padding-left: 0;
+	}
+
+	#search_form_query {
+		width: 100%;
+	}
+
+	.twitter-typeahead,
+	#new_search_form #search_form_search_location {
+		width: 37%;
+		margin-left: 10px;
+	}
+
+	.template--pages-home {
+		.twitter-typeahead,
+		#new_search_form #search_form_search_location {
+			width: 43%;
+		}
+	}
+
+	.template--pages-home {
+		#new_search_form,
+		#new_search_form #search_form_query{
+			width: 100%;
+		}
+
+		.main-search__submit {
+			width: 10%;
+		}
 	}
 
 

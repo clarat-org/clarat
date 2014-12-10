@@ -10,12 +10,6 @@
 
 	// Header ######################################
 
-	.header-main {
-		&:before {
-			display: none;
-		}
-	}
-
 	.header-main--wide {
 		height: 375px;
 	}
@@ -50,10 +44,6 @@
 		width: 100%;
 	}
 
-	#new_search_form {
-		width: 100%;
-	}
-
 	.template--pages-home {
 		#new_search_form {
 			#search_form_query {
@@ -62,17 +52,21 @@
 		}
 	}
 
+	#new_search_form {
+		width: 450px;
+	}
+
 	.template--pages-home {
 		#new_search_form {
 			width: auto;
 		}
 	}
 
-	.twitter-typeahead,
-	.template--pages-home #new_search_form #search_form_search_location {
-		width: 42%;
-		margin-left: 10px;
-	}
+	.template--pages-home .twitter-typeahead,
+	 .template--pages-home #new_search_form #search_form_search_location {
+		 width: 42%;
+		 margin-left: 10px;
+	 }
 
 	.main-search__submit {
 		width: 11%;
@@ -118,13 +112,6 @@
 
 	.section-start__body {
 		min-height: 0;
-		font-size: 14px;
-		padding: 16px 22px 42px;
-	}
-
-	.section-start__headline {
-		height: 35px;
-		line-height: 35px;
 	}
 
 	.section-start {

@@ -6,15 +6,35 @@
 
 @include breakpoint(M) {
 
-	@include mqindicator('M'); // debug, @TODO: comment
+	//@include mqindicator('M');
 
 
 	// Header ######################################
 
-	.Claim {
-		display: none;
+	.Logo--start {
+		margin-top: 25px;
 	}
 
+	.Claim {
+		float: none;
+		margin-top: 120px;
+		max-width: 100%;
+	}
+
+	.header-main--wide {
+		height: 320px;
+	}
+
+	.nav-sections__listitem {
+		float: none;
+		width: 100%;
+
+		a {
+			padding-top: 20px;
+			padding-left: 60px;
+			text-align: left;
+		}
+	}
 
 	// Content ######################################
 
@@ -24,16 +44,33 @@
 
 	.Distributor,
 	.search_form {
-		//@TODO: Massive layout change, JS supported
+		//TODO: Massive layout change, JS supported
 	}
 
+	.template--pages-home {
+		#new_search_form {
+
+			#search_form_search_location {
+				margin: 15px 0;
+				width: 100%;
+			}
+		}
+
+		.twitter-typeahead {
+			margin-left: 0;
+			width: 100%;
+		}
+
+		.main-search__submit {
+			width: 100%;
+			background-image: none;
+			color: $brand_white; // resetting hidden text on button
+			font: inherit;
+			font-size: 20px;
+		}
+	}
 
 	// Footer ######################################
-
-	.newsletter-subscribe__input,
-	.newsletter-subscribe__submit {
-		height: 26px;
-	}
 
 	.nav-site__listitem {
 		font-size: 16px;
@@ -42,6 +79,20 @@
 
 	.mascot--footer {
 		display: none;
+	}
+
+	.footer-main__subscribe,
+	.footer-main__about {
+		float: left;
+		width: 100%;
+	}
+
+	.nav-site {
+		float: none;
+	}
+
+	.nav-site__listitem {
+		text-align: left;
 	}
 
 }

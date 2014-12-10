@@ -12,9 +12,9 @@ module ApplicationHelper
 
     if cookies[:last_search_location]
       @geoloc = ''
-    elsif (l = request.location) && !l.city.empty?
-      @geoloc_string = l.city
-      @geoloc = "#{l.latitude},#{l.longitude}"
+    # elsif (l = request.location) && !l.city.empty?
+    #   @geoloc_string = l.city
+    #   @geoloc = "#{l.latitude},#{l.longitude}"
     else
       @geoloc = I18n.t('conf.default_latlng')
     end

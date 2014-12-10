@@ -13,6 +13,11 @@
 	right: 10px !important;
 	padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
 	background: $brand_beige;
+	border: 0 solid $brand_yellow;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	margin: 0 -1px;
 
 	em {
 		@extend %roboto_bold;
@@ -31,8 +36,9 @@
 
 	.organisation {
 		@extend %roboto_bold;
+		color: $brand_green;
 		margin-bottom: 10px;
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 22px;
 	}
 }

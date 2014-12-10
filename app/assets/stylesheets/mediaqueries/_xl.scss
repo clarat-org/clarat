@@ -6,6 +6,7 @@
 
 @include breakpoint(XL) {
 
+	@include mqindicator('XL');
 	.Claim {
 		max-width: 40%;
 	}

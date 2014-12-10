@@ -11,7 +11,7 @@
 	// Header ######################################
 
 	.header-main--wide {
-		height: 375px;
+		height: 375px; // smaller height, eventually refactoring into container with a certain ratio by paddding-bottom: 39.5833333%
 	}
 
 	.Claim {
@@ -31,7 +31,7 @@
 	}
 
 	.Distributor {
-		margin-right: -25px;
+		margin-right: -25px; // on non-start pages, correcting offset by .wrapper-inner
 		max-width: 480px;
 		width: 480px;
 	}
@@ -47,7 +47,7 @@
 	.template--pages-home {
 		#new_search_form {
 			#search_form_query {
-				width: 100%;
+				width: 100%; // to fit in its twitter-typeahead container
 			}
 		}
 	}
@@ -76,6 +76,7 @@
 		padding: 30px 0;
 		width: 100%;
 		max-width: 100%;
+		background-size: contain; // in order not to cut/stretch pictograms
 	}
 
 	.nav-sections__listitem {
@@ -94,7 +95,7 @@
 	.section-wrapper-major,
 	.section-wrapper-minor,
 	.content-main,
-	.aside-standard {
+	.aside-standard { // clearing floats, one column layout
 		display: block;
 		float: none;
 		margin-right: 0;
@@ -123,7 +124,7 @@
 	.section-team__member {
 		width: 49.5%;
 
-		&:nth-child(2n+1) { // every second
+		&:nth-child(2n+1) { // every second item
 			margin-right: 0;
 		}
 	}
@@ -148,6 +149,7 @@
 	}
 
 	.newsletter-subscribe__submit {
+		border-bottom-right-radius: 10px; // since extends do not work here
 		width: 230px;
 	}
 

@@ -14,7 +14,7 @@
 
 	.header-main {
 		&:before {
-			display: none;
+			display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
 		}
 	}
 
@@ -28,8 +28,8 @@
 	}
 
 	.Distributor {
-		margin-right: -20px;
-		padding-left: 20px;
+		margin-right: -20px; // on non-start pages, correcting offset by .wrapper-inner
+		padding-left: 20px; // same
 	}
 
 	.Distributor--start {

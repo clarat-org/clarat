@@ -1,5 +1,6 @@
 function initStickySidebar() {
-	var $sticky = $(".template--offers-index").find(".aside-standard");
+	var $sticky = $(".template--offers-index").find(".aside-standard"),
+		stickyWidth = $sticky.width();
 
 	if ($(document).width() >= 900) {
 		if (!!$sticky.offset()) {
@@ -11,15 +12,24 @@ function initStickySidebar() {
 
 				if (stickyTop < windowTop){
 					var top = (footerInViewport ? -140 : 0);
-					$sticky.css({ position: 'fixed', top: top });
+					$sticky.css(
+						{
+							position: 'fixed',
+							top: top,
+							width: stickyWidth
+						});
 				} else {
-					$sticky.css('position', 'static');
+					$sticky
+						.css('position', 'static')
+						.css('width', '35.7%'); // chaining, because otherwise false top value
 				}
 			});
 		}
 	} else {
 		$(window).scroll(function() {
-			$sticky.css('position', 'static');
+			$sticky
+				.css('position', 'static')
+				.css('width', '35.7%'); // chaining, because otherwise false top value
 		});
 	}
 }

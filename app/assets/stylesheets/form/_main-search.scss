@@ -8,8 +8,8 @@
 #new_search_form {
 	@extend %clearfix;
 	padding: 25px 0 0 25px;
-	list-style: none;
 	width: 640px;
+	list-style: none;
 
 	label {
 		@extend %visually-hidden;
@@ -33,9 +33,6 @@
 		}
 	}
 
-	.typeahead {
-
-	}
 }
 
 #search_form_query,
@@ -53,10 +50,12 @@
 }
 
 .main-search__submit {
-	@extend %hide_text;
 	display: block;
 	width: 75px;
 	background: $brand_brown image-url('ico_search.svg') no-repeat center center;
+	color: transparent;
+	text-shadow: none;
+	font: 0/0 a;
 }
 
 #search_form_query {

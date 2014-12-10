@@ -6,6 +6,7 @@
 
 .formtastic {
 	&.update_request {
+		position: relative;
 		margin-top: 25px;
 
 		li {
@@ -19,13 +20,33 @@
 
 	input[type="email"],
 	input[type="submit"] {
-		float: left;
 		padding: 0 15px;
-		font-size: 18px;
 		height: 32px;
+		font-size: 18px;
+	}
+
+	input[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
 	input[type="email"] {
 		background: $brand_beige;
+	}
+
+	.inline-errors {
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+
+		padding: 2px 15px;
+		width: 250px;
+		background: $brand_orange;
+		color: $brand_white;
+	}
+
+	.input.error {
+		padding-bottom: 25px;
 	}
 }

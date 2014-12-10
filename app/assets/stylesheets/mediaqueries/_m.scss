@@ -6,14 +6,46 @@
 
 @include breakpoint(M) {
 
-	@include mqindicator('M');
-	main {
-		//@TODO: Change of overall font size
+	@include mqindicator('M'); // debug, @TODO: comment
+
+
+	// Header ######################################
+
+	.Claim {
+		display: none;
+	}
+
+
+	// Content ######################################
+
+	.page-wrap:after {
+		height: 136px;
 	}
 
 	.Distributor,
 	.search_form {
 		//@TODO: Massive layout change, JS supported
+	}
+
+	main {
+		//@TODO: Change of overall font size
+	}
+
+
+	// Footer ######################################
+
+	.newsletter-subscribe__input,
+	.newsletter-subscribe__submit {
+		height: 26px;
+	}
+
+	.nav-site__listitem {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.mascot--footer {
+		display: none;
 	}
 
 }

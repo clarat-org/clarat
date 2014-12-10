@@ -6,17 +6,13 @@
 
 @include breakpoint(XL) {
 
-	@include mqindicator('XL');
+	@include mqindicator('XL'); // debug, @TODO: comment
+
+
+	// Header ######################################
+
 	.Claim {
 		max-width: 40%;
-	}
-
-	.wrapper-inner {
-		padding: 0 20px;
-	}
-
-	.section-start {
-		// @TODO: smaller font for both headlines and paragraphs
 	}
 
 	.mascot--header {
@@ -36,5 +32,22 @@
 	.search_form {
 		// @TODO: Overall width
 	}
+
+
+	// Content ######################################
+
+	.section-start__headline {
+		font-size: 20px;
+	}
+
+	.wrapper-inner {
+		padding: 0 20px;
+	}
+
+	.section-start {
+		// @TODO: smaller font for both headlines and paragraphs
+	}
+
+
 
 }

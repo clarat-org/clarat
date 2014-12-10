@@ -48,7 +48,7 @@
               - if @offer.email?
                 | E-Mail:
                 span#secure-email==< secure_email_to @offer.email
-              br
+                br
               / ToDo: Refactor!
               - unless @offer.websites.empty?
                 - if @offer.websites.own.first

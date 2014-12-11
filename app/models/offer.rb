@@ -37,7 +37,7 @@ class Offer < ActiveRecord::Base
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :opening_specification, length: { maximum: 150 }
+  validates :opening_specification, length: { maximum: 400 }
   validates :comment, length: { maximum: 800 }
   validates :organization_id, presence: true
   validates :approved, approved: true

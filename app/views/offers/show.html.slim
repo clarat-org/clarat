@@ -23,18 +23,27 @@
         .section-content__body
           p== @offer.next_steps
 
-      - unless @offer.openings.empty?
+      / ToDo: Refactor!
+      - unless @offer.openings.empty? && @offer.opening_specification.empty?
         section.section-content.section-content--openinghours
           h3.section-content__title Öffnungszeiten
           .section-content__body
-            table
-              -@offer.openings.order('sort_value').each do |opening|
-                tr
-                  td
-                    = t("activerecord.models.opening.#{opening.day}")
-                    |:&nbsp;
-                  td
-                    = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+            - unless @offer.openings.empty?
+              table
+                -@offer.openings.order('sort_value').each do |opening|
+                  tr
+                    td
+                      = t("activerecord.models.opening.#{opening.day}")
+                      |:&nbsp;
+                    td
+                      - if opening.open && opening.close
+                        = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+                      - else
+                        | Nach Vereinbarung
+            - unless @offer.opening_specification.empty?
+              - unless @offer.openings.empty?
+                br
+              == @offer.opening_specification
 
       - if @offer.has_contact_details?
         / ^ modify that method if you add information to this box

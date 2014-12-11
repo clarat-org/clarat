@@ -41,11 +41,11 @@
       h5.aside-standard__headline Schlagwortfilter
 
       ul.Listing-tags
-        - tags1 = @tags[0..5]
-        - tags2 = @tags[6..-1]
+        - tags1 = @tags[0..9]
+        - tags2 = @tags[10..19]
         - tags1.each do |tag|
           = render 'tag', search_cache: @search_cache, tag: tag
-        - if tags2
+        - if tags2.any?
           .js-more
             .js-more-target.is--hidden
               - tags2.each do |tag|

@@ -19,7 +19,9 @@ class SearchForm
                                  aroundLatLng: geolocation,
                                  aroundRadius: 999_999_999,
                                  tagFilters: tags,
-                                 facets: '_tags'
+                                 facets: '_tags',
+                                 maxValuesPerFacet: 20
+
   end
 
   def has_nearby?

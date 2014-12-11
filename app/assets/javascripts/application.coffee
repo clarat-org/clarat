@@ -30,10 +30,10 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
+# = require modules/geolocation
 # = require modules/autocomplete
 # = require modules/inviewport
 # = require modules/sticky
-# = require modules/geolocation
 # = require modules/search_location
 # = require modules/more
 # = require modules/unavailable_location_overlay

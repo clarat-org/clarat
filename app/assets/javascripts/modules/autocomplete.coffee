@@ -1,4 +1,4 @@
-$(document).ready ->
+ready = ->
   if $('.typeahead').length
     initTypeahead()
 
@@ -34,3 +34,6 @@ generateSource = ->
 
 navigateToHit = (event, suggestion, id) ->
   Turbolinks.visit "/angebote/#{suggestion.slug}"
+
+$(document).ready ready
+$(document).on 'page:load', ready

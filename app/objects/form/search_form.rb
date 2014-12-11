@@ -35,6 +35,8 @@ class SearchForm
   end
 
   def geolocation
+    return @geolocation if @geolocation
+
     result = if search_location == I18n.t('conf.current_location')
       if generated_geolocation.empty? # could cause problems
         raise InvalidLocationError
@@ -44,7 +46,7 @@ class SearchForm
     else
       SearchLocation.find_or_generate search_location
     end
-    @geolocation ||= Geolocation.new result
+    @geolocation = Geolocation.new result
   end
 
   def tags_by_facet
@@ -77,5 +79,9 @@ class SearchForm
     else
       []
     end
+  end
+
+  def location_for_cookie
+    { string: search_location, geoloc: geolocation }
   end
 end

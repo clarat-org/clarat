@@ -2,8 +2,7 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        = @offers.count
-        |  Ergebnisse
+        = "#{@search_cache.nbHits} Ergebnisse"
         - tags = @search_cache.tags
         - unless tags.empty?
           |  (Schlagwortfilter:
@@ -45,7 +44,7 @@
         - tags2 = @tags[10..19]
         - tags1.each do |tag|
           = render 'tag', search_cache: @search_cache, tag: tag
-        - if tags2.any?
+        - if tags2 && tags2.any?
           .js-more
             .js-more-target.is--hidden
               - tags2.each do |tag|

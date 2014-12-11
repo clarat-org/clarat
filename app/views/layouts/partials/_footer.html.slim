@@ -7,13 +7,15 @@ footer.footer-main
           button.newsletter-subscribe__submit Newsletter abonnieren
 
         .Social-media
-          a.Social-media__item.Social-media__item--googleplus Google+
-          a.Social-media__item.Social-media__item--twitter Twitter
-          a.Social-media__item.Social-media__item--facebook Facebook
+          = link_to 'Google+', 'https://plus.google.com/110429028641743127592/about',
+            target: '_blank', class: 'Social-media__item Social-media__item--googleplus'
+          = link_to 'Twitter', 'https://twitter.com/claratpunktorg',
+            target: '_blank', class: 'Social-media__item Social-media__item--twitter'
+          = link_to 'Facebook', 'https://www.facebook.com/claratpunktorg',
+            target: '_blank', class: 'Social-media__item Social-media__item--facebook'
 
       .footer-main__about
         .mascot.mascot--footer
-
         nav.nav-site
           ul.nav-site__list
             li.nav-site__listitem
@@ -22,6 +24,7 @@ footer.footer-main
               = link_to 'Häufige Fragen', '/haeufige-fragen'
             li.nav-site__listitem
               = link_to 'Kontakt', '#'
+
   section.footer-main__secondrow
     .wrapper-inner
       nav.nav-legal

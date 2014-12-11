@@ -1,14 +1,9 @@
-document.Clarat.currentGeolocation = I18n.t('conf.default_latlng') # default: middle of Berlin
-document.Clarat.currentGeolocationByBrowser = false
-
 document.Clarat.getGeolocation = ->
   navigator.geolocation.getCurrentPosition (position) ->
     document.Clarat.currentGeolocationByBrowser = true
     document.Clarat.currentGeolocation =
       "#{position.coords.latitude},#{position.coords.longitude}"
     $(document).trigger 'newGeolocation'
-
-document.Clarat.getGeolocation()
 
 handleBlurredLocationInput = (e) ->
   requestedLoc = e.target.value
@@ -19,6 +14,13 @@ handleBlurredLocationInput = (e) ->
       $(document).trigger 'newGeolocation'
 
 $(document).ready ->
+  document.Clarat.currentGeolocation =
+    document.getElementById('search_form_generated_geolocation')?.value ||
+    I18n.t('conf.default_latlng') # default: middle of Berlin
+  document.Clarat.currentGeolocationByBrowser = false
+
+  document.Clarat.getGeolocation()
+
   searchLocInput = $('.JS-Search-location-display')
   if searchLocInput.length
     searchLocInput.on 'blur', handleBlurredLocationInput

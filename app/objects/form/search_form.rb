@@ -81,6 +81,10 @@ class SearchForm
     end
   end
 
+  def nbHits
+    @hits.raw_answer['nbHits']
+  end
+
   def location_for_cookie
     { query: search_location, geoloc: geolocation.to_s }.to_json
   end

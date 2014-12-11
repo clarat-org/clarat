@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209175842) do
+ActiveRecord::Schema.define(version: 20141211150316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,25 +79,25 @@ ActiveRecord::Schema.define(version: 20141209175842) do
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                  limit: 80,                  null: false
-    t.text     "description",                                       null: false
+    t.string   "name",                  limit: 80,                 null: false
+    t.text     "description",                                      null: false
     t.text     "next_steps"
     t.string   "telephone",             limit: 32
     t.string   "contact_name"
     t.string   "email"
-    t.string   "encounter",                                         null: false
-    t.boolean  "frequent_changes",                  default: false
+    t.string   "encounter",                                        null: false
+    t.boolean  "frequent_changes",                 default: false
     t.string   "slug"
     t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "organization_id",                                   null: false
+    t.integer  "organization_id",                                  null: false
     t.string   "fax",                   limit: 32
-    t.string   "opening_specification", limit: 150
+    t.text     "opening_specification"
     t.text     "comment"
-    t.boolean  "completed",                         default: false
+    t.boolean  "completed",                        default: false
     t.string   "second_telephone"
-    t.boolean  "approved",                          default: false
+    t.boolean  "approved",                         default: false
     t.datetime "approved_at"
   end
 

@@ -36,7 +36,10 @@
                       = t("activerecord.models.opening.#{opening.day}")
                       |:&nbsp;
                     td
-                      = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+                      - if opening.open && opening.close
+                        = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+                      - else
+                        | Nach Vereinbarung
             - unless @offer.opening_specification.empty?
               - unless @offer.openings.empty?
                 br

@@ -24,7 +24,7 @@
           p== @offer.next_steps
 
       / ToDo: Refactor!
-      - unless @offer.openings.empty? && @offer.opening_specification.empty?
+      - if @offer.openings.any? || @offer.opening_specification
         section.section-content.section-content--openinghours
           h3.section-content__title Öffnungszeiten
           .section-content__body
@@ -40,7 +40,8 @@
                         = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
                       - else
                         | Nach Vereinbarung
-            - unless @offer.opening_specification.empty?
+            / ToDo: Refactor (seriously)!
+            - if @offer.opening_specification && !@offer.opening_specification.empty?
               - unless @offer.openings.empty?
                 br
               == @offer.opening_specification

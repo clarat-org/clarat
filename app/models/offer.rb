@@ -114,7 +114,13 @@ class Offer < ActiveRecord::Base
   end
 
   def has_contact_details?
-    contact_name || telephone || fax || email
+    # ToDo: Refactor!
+    if contact_name.empty? && telephone.empty? && fax.empty? && email.empty? &&
+      websites.empty?
+      false
+    else
+      true
+    end
   end
 
   def has_social_media_websites?

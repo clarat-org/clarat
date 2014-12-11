@@ -82,6 +82,6 @@ class SearchForm
   end
 
   def location_for_cookie
-    { string: search_location, geoloc: geolocation }
+    { query: search_location, geoloc: geolocation.to_s }.to_json
   end
 end

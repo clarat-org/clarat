@@ -15,7 +15,10 @@
             h3.Listing-results__offer
               = link_to offer.name, offer_path(id: offer)
             h4.Listing-results__organisation
-              = offer.organization_name
+              = offer.location.street
+              |,
+              =<> offer.location.zip
+              = offer.location.city
       = paginate @offers
 
 

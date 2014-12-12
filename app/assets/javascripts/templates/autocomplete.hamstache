@@ -1,4 +1,4 @@
 .hit
   .offer {{{ _highlightResult.name.value }}}
 
-  .organisation {{{ encounter_value }}}
+  .organisation {{{ location_street }}}, {{{ location_zip }}} {{{ location_city }}}

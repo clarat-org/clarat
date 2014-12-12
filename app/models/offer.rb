@@ -57,6 +57,7 @@ class Offer < ActiveRecord::Base
     add_attribute :_geoloc
     add_attribute :_tags
     add_attribute :organization_name
+    add_attribute :location_street
     add_attribute :encounter_value
     attributesForFaceting [:_tags]
   end

@@ -35,7 +35,7 @@ describe Offer do
       it { subject.must validate_presence_of :description }
       it { subject.must ensure_length_of(:description).is_at_most 400 }
       it { subject.must validate_presence_of :next_steps }
-      it { subject.must ensure_length_of(:next_steps).is_at_most 400 }
+      it { subject.must ensure_length_of(:next_steps).is_at_most 500 }
       it { subject.must validate_presence_of :encounter }
       it { subject.must ensure_length_of(:fax).is_at_most 32 }
       it { subject.must ensure_length_of(:telephone).is_at_most 32 }

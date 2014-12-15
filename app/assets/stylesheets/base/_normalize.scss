@@ -99,6 +99,17 @@ a:hover {
 	outline: 0;
 }
 
+/**
+ * Make 'tel' link not appear as links on desktop.
+ */
+
+a[href^="tel"]:link,
+a[href^="tel"]:visited,
+a[href^="tel"]:hover {
+    text-decoration: none;
+    pointer-events: none;
+}
+
 /* Text-level semantics
    ========================================================================== */
 

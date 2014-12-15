@@ -53,7 +53,10 @@
           .section-content__body
             p
               == "Ansprechpartner: #{@offer.contact_name}<br>" if @offer.contact_name?
-              == "Telefon: #{@offer.telephone}<br>" if @offer.telephone?
+              - if @offer.telephone?
+                | Telefon:
+                a< href="tel:#{@offer.telephone}" #{@offer.telephone}
+                br
               == "Fax: #{@offer.fax}<br>" if @offer.fax?
               - if @offer.email?
                 | E-Mail:

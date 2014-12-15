@@ -70,6 +70,13 @@
 		}
 	}
 
+	a[href^="tel"]:link,
+	a[href^="tel"]:visited,
+	a[href^="tel"]:hover {
+	    text-decoration: underline;
+	    pointer-events: auto;
+	}
+
 	// Footer ######################################
 
 	.nav-site__listitem {

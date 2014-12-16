@@ -47,6 +47,9 @@
 		margin-bottom: 10px;
 	}
 
+	span.tt-dropdown-menu {  // specificity, overriding JS
+		right: 0 !important; // overriding JS
+	}
 
 	// Content ######################################
 

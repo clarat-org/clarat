@@ -11,8 +11,13 @@
 
 	// Header ######################################
 
-	.Logo--start {
+	.Logo {
 		margin-top: 25px;
+		margin-left: 20px;
+	}
+
+	.Logo--start {
+		margin-left: 0;
 	}
 
 	.Claim {
@@ -21,8 +26,41 @@
 		max-width: 100%;
 	}
 
+	.header-main {
+		height: auto;
+
+		.wrapper-inner {
+			padding: 0;
+		}
+	}
+
 	.header-main--wide {
 		height: 320px;
+	}
+
+	.Distributor {
+		margin-top: 25px;
+		margin-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		min-width: 100%;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.Distributor,
+	.search_form {
+		//TODO: Massive layout change, JS supported
+	}
+
+	#new_search_form {
+		padding-left: 10px;
+		width: 100%;
+	}
+
+	.twitter-typeahead,
+	#new_search_form #search_form_search_location {
+		width: 39.5%;
 	}
 
 	.nav-sections__headline {
@@ -49,11 +87,6 @@
 		height: 136px;
 	}
 
-	.Distributor,
-	.search_form {
-		//TODO: Massive layout change, JS supported
-	}
-
 	.template--pages-home {
 		#new_search_form {
 
@@ -77,13 +110,11 @@
 		}
 	}
 
-
-	a[href^="tel"]:link,
-	a[href^="tel"]:visited,
-	a[href^="tel"]:hover {
-	    text-decoration: underline;
-	    pointer-events: auto;
+	.aside-standard__container {
+		margin-top: 30px;
+		margin-bottom: 0;
 	}
+
 
 	// Footer ######################################
 
@@ -111,6 +142,13 @@
 	}
 
 	// Misc ######################################
+
+	a[href^="tel"]:link,
+	a[href^="tel"]:visited,
+	a[href^="tel"]:hover {
+		text-decoration: underline;
+		pointer-events: auto;
+	}
 
 	.popup_content {
 		margin: 25px; // override inline CSS caused by JS

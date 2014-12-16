@@ -56,7 +56,7 @@
 	@extend %roboto_bold;
 	@extend %clarat_rounding_start;
 	padding: 7px 15px;
-	height: 38px;
+	min-height: 38px;
 	background: $brand_yellow;
 	font-size: 18px;
 
@@ -73,7 +73,7 @@
 	@extend %roboto_regular;
 	@extend %clarat_rounding_end;
 	padding: 9px 15px;
-	height: 38px;
+	min-height: 38px;
 	background: $brand_beige;
 	font-size: 13px;
 

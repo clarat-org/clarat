@@ -19,7 +19,7 @@ input[type="submit"] {
 
 input[type='text'],
 input[type='email'] {
-	@include input-placeholder($brand_brown, 400);
+	@include input-placeholder($brand_brown, 400, null);
 	@extend %roboto_light;
 	background: $brand_white;
 }

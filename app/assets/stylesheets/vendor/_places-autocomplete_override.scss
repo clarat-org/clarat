@@ -1,0 +1,91 @@
+// ---------------------------------------------------------------
+//
+//  Google Places Autocomplete
+//
+// ---------------------------------------------------------------
+
+// .tt-dropdown-menu {
+//   right: 10px !important;
+//   padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
+//   background: $brand_beige;
+//   border: 0 solid $brand_yellow;
+//   border-left-width: 1px;
+//   border-bottom-width: 1px;
+//   border-right-width: 1px;
+//   margin: 0 -1px;
+
+//   em {
+//     @extend %roboto_bold;
+//     font-style: normal;
+//     background: $brand_yellow;
+//     padding: 1px 2px;
+//   }
+
+//   .offer,
+//   .address {
+//     overflow: hidden;
+//     padding: 0 15px;
+//     text-overflow: ellipsis;
+//     cursor: pointer;
+//   }
+
+//   .address {
+//     @extend %roboto_bold;
+//     color: $brand_green;
+//     margin-bottom: 10px;
+//     font-size: 14px;
+//     line-height: 22px;
+//   }
+// }
+
+.pac-container {
+  //display: block !important;
+  @extend %roboto_regular;
+  padding: 10px 0 5px;
+  background: $brand_beige;
+  border: 0 solid $brand_yellow;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  margin: 0 -1px;
+  border-radius: 0;
+  border-top: none;
+  box-shadow: none;
+
+  .pac-item {
+    padding: 0 15px;
+    cursor: pointer;
+    border-top: none;
+    font-size: 14px;
+    color: $brand_green;
+    @extend %roboto_bold;
+
+    .pac-item-query {
+      @extend %roboto_regular;
+      font-size: 16px;
+      color: $font_color;
+    }
+
+    .pac-matched {
+      font-weight: inherit;
+      @extend %roboto_bold;
+      font-style: normal;
+      background: $brand_yellow;
+      padding: 1px 2px;
+    }
+
+    &> span:last-child {
+      line-height: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &.pac-item-selected {
+      background-color: inherit;
+    }
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+

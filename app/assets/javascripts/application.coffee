@@ -32,7 +32,8 @@ about supported directives.
 # = require algolia/typeahead.jquery
 #
 # = require modules/geolocation
-# = require modules/autocomplete
+# = require modules/query_autocomplete
+# = require modules/places_autocomplete
 # = require modules/mobilemenu
 # = require modules/ios-orientationchange-fix
 # = require modules/sticky

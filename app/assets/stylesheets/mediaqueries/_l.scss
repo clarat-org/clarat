@@ -6,7 +6,7 @@
 
 @include breakpoint(L) {
 
-	@include mqindicator('L');
+	//@include mqindicator('L');
 
 	// Header ######################################
 
@@ -37,11 +37,22 @@
 	}
 
 	.Distributor--start {
-		@extend %clearfix;
 		margin-bottom: 50px;
 		height: auto;
 		max-width: 100%;
 		width: 100%;
+		zoom:1;
+
+		&:before, &:after {
+			display: block;
+			overflow: hidden;
+			height: 0;
+			content: "";
+		}
+
+		&:after {
+			clear: both;
+		}
 	}
 
 	.template--pages-home {

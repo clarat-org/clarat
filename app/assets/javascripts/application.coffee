@@ -33,6 +33,7 @@ about supported directives.
 # = require modules/geolocation
 # = require modules/autocomplete
 # = require modules/inviewport
+# = require modules/mobilemenu
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more

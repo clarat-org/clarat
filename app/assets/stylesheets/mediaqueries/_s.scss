@@ -6,14 +6,32 @@
 
 @include breakpoint(S) {
 
-	@include mqindicator('S');
+	//@include mqindicator('S');
 
 
 	// Header ######################################
 
+	.Logo {
+		position: absolute;
+		top: 15px;
+		z-index: 20;
+		margin-top: 5px;
+		margin-left: 20px;
+		width: 21px;
+		height: 25px;
+		background-image: image-url('logo-c.svg');
+		background-size: 25px 21px;
+		background-repeat: no-repeat;
+	}
+
 	.Logo--start {
+		position: relative;
+		top: auto;
+		margin-top: 25px;
+		margin-left: 0;
 		width: 180px;
 		height: 40px;
+		background-image: image-url('logo.svg');
 		background-size: 180px 40px;
 	}
 
@@ -21,29 +39,89 @@
 		margin-top: 90px;
 	}
 
-	#new_search_form {
+	.header-main {
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 10;
 
-		#search_form_query,
-		#search_form_search_location,
-		.main-search__submit {
-			height: 40px;
+		.template--pages-home &,
+		.template--pages-about & {
+			position: static;
+			right: auto;
+			left: auto;
+			z-index: auto;
 		}
 	}
 
-	#search_form_query,
-	#search_form_search_location {
-		@include input-placeholder($brand_brown, 400, 18px);
-		font-size: 18px;
+	.Distributor {
+		margin-top: 0;
+		padding-bottom: 15px;
+		height: auto;
 	}
 
-//	.Distributor {
-//		margin: 20px 0 0;
-//		padding-bottom: 25px;
-//		padding-left: 0;
-//		min-width: 100%;
-//		width: 100%;
-//		border-radius: 0;
-//	}
+	.Distributor--start {
+		position: static;
+		padding-bottom: 0;
+	}
+
+	#new_search_form {
+		position: relative;
+		padding: 15px 5px 0 50px;
+		width: 100%;
+
+
+		#search_form_query,
+		#search_form_search_location {
+			@include input-placeholder($brand_brown, 400, 18px);
+			height: 35px;
+			font-size: 18px;
+		}
+
+		.twitter-typeahead,
+		#search_form_search_location {
+			width: 80%;
+		}
+
+		#search_form_search_location {
+			margin-top: 10px;
+		}
+
+		.main-search__submit {
+			position: absolute;
+			right: 20px;
+			height: 35px;
+			background-size: 60%;
+
+			&.enlarged {
+				top: 15px;
+				bottom: 0;
+				height: auto;
+			}
+		}
+	}
+
+	.template--pages-home {
+
+		#new_search_form {
+			.twitter-typeahead {
+				width: 100%;
+			}
+
+			.main-search__submit {
+				position: relative;
+				right: auto;
+			}
+		}
+	}
+
+	#search_form_search_location {
+		display: none;
+
+		&.visible {
+			display: block;
+		}
+	}
 
 	.nav-sections {
 		margin: 0;
@@ -51,6 +129,12 @@
 
 	.nav-sections__headline {
 		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.nav-sections__listitem {
+		height: 50px;
+		line-height: 45px; // closer to optical vertical middle
 	}
 
 	span.tt-dropdown-menu {  // specificity, overriding JS
@@ -59,8 +143,42 @@
 
 	// Content ######################################
 
+	.content-main {
+		padding-top: 105px;
+
+		.template--pages-home & {
+			padding-top: 0;
+		}
+	}
+
+	.section-start__headline {
+		font-size: 16px;
+		height: 35px;
+		line-height: 37px;
+	}
+
 	.section-start__body {
 		font-size: 14px;
+	}
+
+	.section-team__member {
+		width: 100%;
+	}
+
+	.Listing-tags__item {
+		a {
+			margin: 0 4px 4px 0;
+			padding: 0 8px;
+			height: 24px;
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+
+	.template--pages-faq {
+		.content-main.content-main--wide {
+			padding: 105px 0 0;
+		}
 	}
 
 	.page,
@@ -119,5 +237,15 @@
 				padding-bottom: 0;
 			}
 		}
+	}
+
+	.jump-to-tags {
+		display: block;
+		width: 100%;
+		background: $brand_blue;
+		color: $brand_white;
+		text-align: center;
+		text-decoration: none;
+		line-height: 30px;
 	}
 }

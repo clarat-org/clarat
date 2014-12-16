@@ -27,14 +27,14 @@
 	}
 
 	.offer,
-	.organisation {
+	.address {
 		overflow: hidden;
 		padding: 0 15px;
 		text-overflow: ellipsis;
 		cursor: pointer;
 	}
 
-	.organisation {
+	.address {
 		@extend %roboto_bold;
 		color: $brand_green;
 		margin-bottom: 10px;

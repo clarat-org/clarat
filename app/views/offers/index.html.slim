@@ -14,8 +14,15 @@
           li id="result-offer-#{offer.id}" class="JS-trigger-marker Listing-results__listitem"
             h3.Listing-results__offer
               = link_to offer.name, offer_path(id: offer)
+            / ToDo: Refactor and rename
             h4.Listing-results__organisation
-              = offer.organization_name
+              - if offer.location
+                = offer.location.street
+                |,
+                =<> offer.location.zip
+                = offer.location.city
+              - else
+                | Kein Standort
       = paginate @offers
 
 

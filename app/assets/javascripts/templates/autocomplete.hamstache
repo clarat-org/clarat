@@ -1,4 +1,4 @@
 .hit
   .offer {{{ _highlightResult.name.value }}}
 
-  .organisation {{{ organization_name }}}
+  .address {{{ location_street }}}, {{{ location_zip }}} {{{ location_city }}}

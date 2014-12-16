@@ -5,19 +5,20 @@ function initMobileMenu() {
 		$inputLocation = $("#search_form_search_location"),
 		$inputQuery = $("#search_form_query"),
 		$submit = $(".main-search__submit"),
-		$header = $(".header-main");
+		$header = $(".header-main"),
+		smartphone = ($(window).width() < 480);
+
+	$inputLocation.removeClass("visible");
 
 	if ($homeTemplate) {
 		return;
 	}
 
-	$inputLocation.removeClass("visible");
-
-	if ($offersTemplate) {
+	if ($offersTemplate && smartphone) {
 		$header.append("<a class='jump-to-tags' href='#tags'>Zum Schlagwortfilter</a>");
 	}
 
-	if (Modernizr.touch && ($(window).width() < 480)) {
+	if (Modernizr.touch && smartphone) {
 
 		$inputQuery.click(function() {
 			$inputLocation.toggleClass("visible");

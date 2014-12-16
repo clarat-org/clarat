@@ -13,5 +13,17 @@
 }
 
 .Flash-message--alert {
+	background: $brand_brown;
+}
+
+.Flash-message--success {
+	background: $brand_green;
+}
+
+.Flash-message--error {
 	background: $brand_orange;
+}
+
+.Flash-message--notice {
+	background: $brand_yellow;
 }

@@ -51,11 +51,12 @@ class Offer < ActiveRecord::Base
   algoliasearch per_environment: true,
                 disable_indexing: Rails.env.test?,
                 if: :approved? do
-    attributesToIndex ['name', 'description']
+    attributesToIndex ['name', 'description', 'keyword_string']
     ranking %w(typo custom geo words proximity attribute exact) # ^custom
     customRanking ['asc(encounter_value)']
     add_attribute :_geoloc
     add_attribute :_tags
+    add_attribute :keyword_string
     add_attribute :organization_name
     add_attribute :location_street
     add_attribute :location_city
@@ -83,7 +84,12 @@ class Offer < ActiveRecord::Base
 
   # Offer's tags for indexing
   def _tags
-    tags.map(&:name)
+    tags.pluck(:name)
+  end
+
+  # additional searchable string made from tags
+  def keyword_string
+    _tags.join ', '
   end
 
   # Offer's encounter modifier for indexing

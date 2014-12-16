@@ -12,7 +12,7 @@
 		@media (max-width: 900px) { @content; }
 	}
 	@if $point == M {
-		@media (max-width: 660px) { @content; }
+		@media (max-width: 680px) { @content; }
 	}
 	@if $point == S {
 		@media (max-width: 440px) { @content; }

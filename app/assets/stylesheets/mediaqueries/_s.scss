@@ -21,15 +21,12 @@
 		margin-top: 90px;
 	}
 
-	.template--pages-home {
+	#new_search_form {
 
-		#new_search_form {
-
-			#search_form_query,
-			#search_form_search_location,
-			.main-search__submit {
-				height: 40px;
-			}
+		#search_form_query,
+		#search_form_search_location,
+		.main-search__submit {
+			height: 40px;
 		}
 	}
 
@@ -38,6 +35,15 @@
 		@include input-placeholder($brand_brown, 400, 18px);
 		font-size: 18px;
 	}
+
+//	.Distributor {
+//		margin: 20px 0 0;
+//		padding-bottom: 25px;
+//		padding-left: 0;
+//		min-width: 100%;
+//		width: 100%;
+//		border-radius: 0;
+//	}
 
 	.nav-sections {
 		margin: 0;
@@ -57,6 +63,13 @@
 		font-size: 14px;
 	}
 
+	.page,
+	.first,
+	.last,
+	.next,
+	.prev {
+		margin-bottom: 5px;
+	}
 
 	// Footer ######################################
 
@@ -74,4 +87,37 @@
 		}
 	}
 
+
+	// Misc ######################################
+
+	.popup_content {
+		.formtastic {
+			#update_request_email {
+				margin: 0;
+				padding-right: 0;
+				width: 100%;
+				text-align: center;
+			}
+
+			input[type="submit"] {
+				position: relative;
+				top: auto;
+				right: auto;
+				width: 100%;
+			}
+
+			p.inline-errors {
+				position: relative;
+				bottom: auto;
+				left: auto;
+				margin: 0;
+				width: 100%;
+				text-align: center;
+			}
+
+			li.input.error {
+				padding-bottom: 0;
+			}
+		}
+	}
 }

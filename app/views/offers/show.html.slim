@@ -110,7 +110,7 @@
 
       - unless @offer.tags.empty?
         section.section-content.section-content--tags
-          h5.aside-standard__headline Zugeordnete Schlagworte
+          h5.aside-standard__headline#tags Zugeordnete Schlagworte
           ul.Listing-tags
             -@offer.tags.each do |tag|
               li.Listing-tags__item

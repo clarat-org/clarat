@@ -77,6 +77,7 @@
 		}
 	}
 
+
 	a[href^="tel"]:link,
 	a[href^="tel"]:visited,
 	a[href^="tel"]:hover {
@@ -109,4 +110,21 @@
 		text-align: left;
 	}
 
+	// Misc ######################################
+
+	.popup_content {
+		margin: 25px; // override inline CSS caused by JS
+		width: auto !important;
+
+		p {
+			font-size: 13px;
+		}
+
+		.formtastic {
+			input[type="submit"],
+			input[type="email"] {
+				font-size: 13px;
+			}
+		}
+	}
 }

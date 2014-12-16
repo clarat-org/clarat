@@ -74,4 +74,37 @@
 		}
 	}
 
+
+	// Misc ######################################
+
+	.popup_content {
+		.formtastic {
+			#update_request_email {
+				margin: 0;
+				padding-right: 0;
+				width: 100%;
+				text-align: center;
+			}
+
+			input[type="submit"] {
+				position: relative;
+				top: auto;
+				right: auto;
+				width: 100%;
+			}
+
+			p.inline-errors {
+				position: relative;
+				bottom: auto;
+				left: auto;
+				margin: 0;
+				width: 100%;
+				text-align: center;
+			}
+
+			li.input.error {
+				padding-bottom: 0;
+			}
+		}
+	}
 }

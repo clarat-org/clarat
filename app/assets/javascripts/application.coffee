@@ -25,6 +25,7 @@ about supported directives.
 # = require jquery.popupoverlay
 #
 # = require vendor/cookie_lib
+# = require vendor/inviewport
 #
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
@@ -32,7 +33,6 @@ about supported directives.
 #
 # = require modules/geolocation
 # = require modules/autocomplete
-# = require modules/inviewport
 # = require modules/mobilemenu
 # = require modules/sticky
 # = require modules/search_location

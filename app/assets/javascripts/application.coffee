@@ -34,6 +34,7 @@ about supported directives.
 # = require modules/geolocation
 # = require modules/autocomplete
 # = require modules/mobilemenu
+# = require modules/ios-orientationchange-fix
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more

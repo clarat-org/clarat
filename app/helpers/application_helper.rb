@@ -22,7 +22,7 @@ module ApplicationHelper
 
   def geoloc_to_s geoloc = default_geolocation
     if cookies[:last_search_location]
-      JSON.parse(cookies[:last_search_location])['query'] rescue cookies[:last_search_location] = nil
+      JSON.parse(cookies[:last_search_location])['query']
     elsif geoloc == I18n.t('conf.default_latlng')
       I18n.t('conf.default_location') # needed if that SearchLocation exists?
     elsif (search_location = SearchLocation.find_by_geoloc(geoloc))

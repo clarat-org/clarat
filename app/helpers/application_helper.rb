@@ -11,7 +11,7 @@ module ApplicationHelper
     return @geoloc if @geoloc
 
     if cookies[:last_search_location]
-      @geoloc = JSON.parse(cookies[:last_search_location])['geoloc'] rescue cookies[:last_search_location] = nil
+      @geoloc = JSON.parse(cookies[:last_search_location])['geoloc']
     # elsif (l = request.location) && !l.city.empty?
     #   @geoloc_string = l.city
     #   @geoloc = "#{l.latitude},#{l.longitude}"

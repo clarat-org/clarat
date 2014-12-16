@@ -45,3 +45,6 @@ bower.json
 
 # Redis db dumps
 dump.rdb
+
+# RBP outputs
+rails_best_practices_output.html

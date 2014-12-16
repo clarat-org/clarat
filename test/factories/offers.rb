@@ -8,7 +8,9 @@ FactoryGirl.define do
     next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter { Offer.enumerized_attributes.attributes['encounter'].values.sample }
     frequent_changes { Faker::Boolean.maybe }
-    completed { Faker::Boolean.maybe }
+    completed false
+    approved false
+    approved_at nil
 
     # optional fields
     comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
@@ -33,6 +35,7 @@ FactoryGirl.define do
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
     end
+
     after :create do |offer, evaluator|
       create_list :hyperlink, evaluator.website_count, linkable: offer
       if evaluator.tag
@@ -55,6 +58,14 @@ FactoryGirl.define do
         offer.languages << (
           Language.select(:id).all.sample || FactoryGirl.create(:language)
         )
+      end
+
+
+    end
+
+    trait :approved do
+      after :create do |offer, evaluator|
+        Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
       end
     end
   end

@@ -92,7 +92,7 @@
                 - if @offer.location_name
                   span.org= @offer.location_name
                   br
-                - unless @offer.location_addition.empty?
+                - unless @offer.location_addition.blank?
                   span.extended-address= @offer.location_addition
                   br
                 span.street-address= @offer.location_street

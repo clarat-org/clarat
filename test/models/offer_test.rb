@@ -71,5 +71,19 @@ describe Offer do
         offer.creator_email.must_equal user.email
       end
     end
+
+    describe '#encounter_value' do
+      it "should return 0 on independent" do
+        Offer.new(encounter: :independent).encounter_value.must_equal 0
+      end
+
+      it "should return 1 on determinable" do
+        Offer.new(encounter: :determinable).encounter_value.must_equal 1
+      end
+
+      it "should return 1 on fixed" do
+        Offer.new(encounter: :fixed).encounter_value.must_equal 1
+      end
+    end
   end
 end

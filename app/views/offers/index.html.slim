@@ -17,10 +17,7 @@
             / ToDo: Refactor and rename
             h4.Listing-results__organisation
               - if offer.location
-                = offer.location.street
-                |,
-                =<> offer.location.zip
-                = offer.location.city
+                = offer.location_address
               - else
                 | Kein Standort
       = paginate @offers

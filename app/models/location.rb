@@ -43,9 +43,13 @@ class Location < ActiveRecord::Base
     end
   end
 
+  def address
+    "#{street}, #{zip} #{city}"
+  end
+
   private
 
     def full_address
-      "#{street}, #{zip} #{city} #{federal_state_name}"
+      "#{address} #{federal_state_name}"
     end
 end

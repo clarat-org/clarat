@@ -70,7 +70,7 @@ class Offer < ActiveRecord::Base
   # Methods
 
   delegate :name, to: :organization, prefix: true
-  delegate :name, :street, :addition, :city, :zip,
+  delegate :name, :street, :addition, :city, :zip, :address,
            to: :location, prefix: true, allow_nil: true
 
   # Offer's location's geo coordinates for indexing
@@ -118,18 +118,13 @@ class Offer < ActiveRecord::Base
   end
 
   def has_contact_details?
-    # ToDo: Refactor!
-    if contact_name.empty? && telephone.empty? && fax.empty? && email.empty? &&
-      websites.empty?
-      false
-    else
-      true
-    end
+    !(contact_name.blank? ^ telephone.blank? ^ fax.blank? ^ email.blank? ^
+      websites.blank?)
   end
 
   def has_social_media_websites?
-    websites.facebook.first || websites.twitter.first ||
-    websites.youtube.first || websites.gplus.first || websites.pinterest.first
+    websites.where(sort: [:facebook, :twitter, :youtube, :gplus, :pinterest]).
+      count > 0
   end
 
   private

@@ -32,12 +32,13 @@ class Offer < ActiveRecord::Base
   validates :name, length: { maximum: 80 }, presence: true,
     uniqueness: { scope: :location_id }
   validates :description, length: { maximum: 400 }, presence: true
-  validates :next_steps, length: { maximum: 400 }, presence: true
+  validates :next_steps, length: { maximum: 500 }, presence: true
   validates :encounter, presence: true
   validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :opening_specification, length: { maximum: 400 }
+  validates :legal_information, length: { maximum: 400 }
   validates :comment, length: { maximum: 800 }
   validates :organization_id, presence: true
   validates :approved, approved: true
@@ -56,6 +57,9 @@ class Offer < ActiveRecord::Base
     add_attribute :_geoloc
     add_attribute :_tags
     add_attribute :organization_name
+    add_attribute :location_street
+    add_attribute :location_city
+    add_attribute :location_zip
     add_attribute :encounter_value
     attributesForFaceting [:_tags]
   end
@@ -114,7 +118,13 @@ class Offer < ActiveRecord::Base
   end
 
   def has_contact_details?
-    contact_name || telephone || fax || email
+    # ToDo: Refactor!
+    if contact_name.empty? && telephone.empty? && fax.empty? && email.empty? &&
+      websites.empty?
+      false
+    else
+      true
+    end
   end
 
   def has_social_media_websites?

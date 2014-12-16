@@ -6,6 +6,72 @@
 
 @include breakpoint(S) {
 
-	//@include mqindicator('S');
+	@include mqindicator('S');
+
+
+	// Header ######################################
+
+	.Logo--start {
+		width: 180px;
+		height: 40px;
+		background-size: 180px 40px;
+	}
+
+	.Claim {
+		margin-top: 90px;
+	}
+
+	.template--pages-home {
+
+		#new_search_form {
+
+			#search_form_query,
+			#search_form_search_location,
+			.main-search__submit {
+				height: 40px;
+			}
+		}
+	}
+
+	#search_form_query,
+	#search_form_search_location {
+		@include input-placeholder($brand_brown, 400, 18px);
+		font-size: 18px;
+	}
+
+	.nav-sections {
+		margin: 0;
+	}
+
+	.nav-sections__headline {
+		margin-bottom: 10px;
+	}
+
+	span.tt-dropdown-menu {  // specificity, overriding JS
+		right: 0 !important; // overriding JS
+	}
+
+	// Content ######################################
+
+	.section-start__body {
+		font-size: 14px;
+	}
+
+
+	// Footer ######################################
+
+	.nav-legal {
+		margin: 20px 0;
+	}
+
+	.nav-legal__listitem {
+		float: none;
+		margin-left: 0;
+		line-height: 22px;
+
+		&:before {
+			content: '';
+		}
+	}
 
 }

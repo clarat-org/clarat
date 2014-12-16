@@ -6,7 +6,7 @@
 
 @include breakpoint(M) {
 
-	//@include mqindicator('M');
+	@include mqindicator('M');
 
 
 	// Header ######################################
@@ -25,13 +25,20 @@
 		height: 320px;
 	}
 
+	.nav-sections__headline {
+		margin-bottom: 20px;
+	}
+
 	.nav-sections__listitem {
 		float: none;
 		width: 100%;
+		height: 60px;
+		background-position: 95% top;
+		background-size: contain;
+		line-height: 57px; // closer to optical vertical middle
 
 		a {
-			padding-top: 20px;
-			padding-left: 60px;
+			padding: 0 5%;
 			text-align: left;
 		}
 	}
@@ -68,6 +75,13 @@
 			font: inherit;
 			font-size: 20px;
 		}
+	}
+
+	a[href^="tel"]:link,
+	a[href^="tel"]:visited,
+	a[href^="tel"]:hover {
+	    text-decoration: underline;
+	    pointer-events: auto;
 	}
 
 	// Footer ######################################

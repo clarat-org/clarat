@@ -166,6 +166,7 @@ RailsAdmin.config do |config|
     field :next_steps do
       css_class 'js-count-character'
     end
+    field :legal_information
     field :telephone
     field :second_telephone
     field :fax

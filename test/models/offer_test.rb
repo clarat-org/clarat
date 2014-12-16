@@ -25,6 +25,7 @@ describe Offer do
     it { subject.must_respond_to :completed }
     it { subject.must_respond_to :second_telephone }
     it { subject.must_respond_to :approved }
+    it { subject.must_respond_to :legal_information }
   end
 
   describe 'validations' do
@@ -34,14 +35,15 @@ describe Offer do
       it { subject.must validate_presence_of :description }
       it { subject.must ensure_length_of(:description).is_at_most 400 }
       it { subject.must validate_presence_of :next_steps }
-      it { subject.must ensure_length_of(:next_steps).is_at_most 400 }
+      it { subject.must ensure_length_of(:next_steps).is_at_most 500 }
       it { subject.must validate_presence_of :encounter }
       it { subject.must ensure_length_of(:fax).is_at_most 32 }
       it { subject.must ensure_length_of(:telephone).is_at_most 32 }
       it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
-      it { subject.must ensure_length_of(:opening_specification).is_at_most 150 }
+      it { subject.must ensure_length_of(:opening_specification).is_at_most 400 }
       it { subject.must ensure_length_of(:comment).is_at_most 800 }
       it { subject.must validate_presence_of :organization_id }
+      it { subject.must ensure_length_of(:legal_information).is_at_most 400 }
     end
   end
 

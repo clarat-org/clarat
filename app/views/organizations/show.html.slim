@@ -31,11 +31,11 @@
                 - if @location.name?
                   span.org= @location.name
                   br
-                span.street-address= @location.street
-                br
                 - if @location.addition?
                   span.extended-address= @location.addition
                   br
+                span.street-address= @location.street
+                br
                 span.postal-code=> @location.zip
                 span.locality= @location.city
             /! http://microformats.org/wiki/adr end

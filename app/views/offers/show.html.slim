@@ -94,7 +94,7 @@
                   br
                 span.street-address= @offer.location_street
                 br
-                - if @offer.location_addition
+                - unless @offer.location_addition.empty?
                   span.extended-address= @offer.location_addition
                   br
                 span.postal-code=> @offer.location_zip

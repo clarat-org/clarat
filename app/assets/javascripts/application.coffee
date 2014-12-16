@@ -34,6 +34,7 @@ about supported directives.
 # = require modules/autocomplete
 # = require modules/inviewport
 # = require modules/mobilemenu
+# = require modules/ios-orientationchange-fix
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more

@@ -124,13 +124,17 @@ class Offer < ActiveRecord::Base
   end
 
   def has_contact_details?
-    !(contact_name.blank? ^ telephone.blank? ^ fax.blank? ^ email.blank? ^
-      websites.blank?)
+    !contact_name.blank? || !telephone.blank? || !fax.blank? ||
+      !email.blank? || !websites.blank?
   end
 
   def has_social_media_websites?
     websites.where(sort: [:facebook, :twitter, :youtube, :gplus, :pinterest]).
       count > 0
+  end
+
+  def has_opening_details?
+    !openings.blank? || !opening_specification.blank?
   end
 
   private

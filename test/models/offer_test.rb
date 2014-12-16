@@ -85,5 +85,17 @@ describe Offer do
         Offer.new(encounter: :fixed).encounter_value.must_equal 1
       end
     end
+
+    describe '#has_contact_details?' do
+      it "should return true when one field is filled" do
+        Offer.new(email: "a@b.c").has_contact_details?.must_equal true
+      end
+      it "should return true when multiple fields are filled" do
+        Offer.new(email: "a@b.c", fax: "1").has_contact_details?.must_equal true
+      end
+      it "should return false when no contact fields are filled" do
+        Offer.new.has_contact_details?.must_equal false
+      end
+    end
   end
 end

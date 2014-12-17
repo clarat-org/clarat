@@ -34,9 +34,12 @@
                   tr
                     td
                       = t("activerecord.models.opening.#{opening.day}") + ': '
+                      / For some reason the next line is necessary since the
+                      / blank spacce in ': ' is ignored
+                      |&nbsp;
                     td
                       - if opening.open && opening.close
-                        = "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
+                        =<> "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
                       - else
                         | Nach Vereinbarung
             - unless @offer.opening_specification.blank?

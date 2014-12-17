@@ -17,10 +17,10 @@
 		z-index: 20;
 		margin-top: 5px;
 		margin-left: 20px;
-		width: 21px;
-		height: 25px;
-		background-image: image-url('logo-c.svg');
-		background-size: 25px 21px;
+		width: 91px;
+		height: 20px;
+		background-image: image-url('clarat-logo-white.png');
+		background-size: 91px 20px;
 		background-repeat: no-repeat;
 	}
 
@@ -80,7 +80,14 @@
 
 		.twitter-typeahead,
 		#search_form_search_location {
-			width: 80%;
+			width: 60%;
+			margin-left: 24%;
+
+		}
+
+		.twitter-typeahead,
+		#new_search_form {
+		  margin-left: 24%;
 		}
 
 		#search_form_search_location {

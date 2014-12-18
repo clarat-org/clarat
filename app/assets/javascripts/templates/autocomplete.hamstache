@@ -6,5 +6,5 @@
     {{{ location_street }}}, {{{ location_zip }}} {{{ location_city }}}
     {{/location_street}}
     {{^location_street}}
-    Standortunabhängig
+    Überall erreichbar, egal, wo du bist
     {{/location_street}}

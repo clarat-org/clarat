@@ -65,6 +65,15 @@
 		padding-bottom: 0;
 	}
 
+	// ToDo: Refactor
+	.Distributor--navigation {
+		.twitter-typeahead,
+		#search_form_search_location {
+			width: 60% !important;
+			margin-left: 24% !important;
+		}
+	}
+
 	#new_search_form {
 		position: relative;
 		padding: 15px 5px 0 50px;
@@ -76,18 +85,6 @@
 			@include input-placeholder($brand_brown, 400, 18px);
 			height: 35px;
 			font-size: 18px;
-		}
-
-		.twitter-typeahead,
-		#search_form_search_location {
-			width: 60%;
-			margin-left: 24%;
-
-		}
-
-		.twitter-typeahead,
-		#new_search_form {
-		  margin-left: 24%;
 		}
 
 		#search_form_search_location {

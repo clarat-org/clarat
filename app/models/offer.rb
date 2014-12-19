@@ -29,8 +29,8 @@ class Offer < ActiveRecord::Base
   end
 
   # Validations
-  validates :name, length: { maximum: 80 }, presence: true,
-    uniqueness: { scope: :location_id },
+  validates :name, length: { maximum: 80 }, presence: true
+  validates :name, uniqueness: { scope: :location_id },
     unless: lambda { |offer| offer.location.nil? }
   validates :description, length: { maximum: 400 }, presence: true
   validates :next_steps, length: { maximum: 500 }, presence: true

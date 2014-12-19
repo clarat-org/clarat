@@ -31,7 +31,7 @@ class Offer < ActiveRecord::Base
   # Validations
   validates :name, length: { maximum: 80 }, presence: true,
     uniqueness: { scope: :location_id },
-     unless: lambda { |offer| offer.location.nil? }
+    unless: lambda { |offer| offer.location.nil? }
   validates :description, length: { maximum: 400 }, presence: true
   validates :next_steps, length: { maximum: 500 }, presence: true
   validates :encounter, presence: true

@@ -123,7 +123,6 @@ RailsAdmin.config do |config|
     field :longitude do
       read_only true
     end
-    field :websites
     field :completed
 
     show do

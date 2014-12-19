@@ -57,9 +57,21 @@
       to see more useful Rails Best Practices.
     </p>
     <p>
-        No error found. Cool!
+        Found 1 warnings.
     </p>
     <table>
+          <tr>
+              <td>
+                <input type="checkbox" class="error-type" id="UseQueryAttributeReview" value="UseQueryAttributeReview"
+                />&nbsp;<label for="UseQueryAttributeReview">Use Query Attribute</label>
+              </td>
+          </tr>
+        <tr>
+          <td colspan="3">
+            <button id="show-all">Check all</button>
+            <button id="show-none">Uncheck all</button>
+          </td>
+        </tr>
     </table>
     <table class="result">
       <thead>
@@ -70,6 +82,15 @@
         </tr>
       </thead>
       <tbody>
+          <tr class="UseQueryAttributeReview">
+            <td class='filename'>
+                app/views/offers/show.html.slim
+            </td>
+            <td class='line'>45</td>
+            <td class='message'>
+              <a href='http://rails-bestpractices.com/posts/56-use-query-attribute' target='_blank'>use query attribute (@offer.opening_specification?)</a>
+            </td>
+          </tr>
       </tbody>
     </table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

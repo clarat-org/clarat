@@ -2,9 +2,7 @@ module Approvable
   extend ActiveSupport::Concern
 
   def add_approved_at
-    if approved_changed? && approved == true
-      self.approved_at = DateTime.now
-    end
+    self.approved_at = DateTime.now if approved_changed? && approved == true
     true
   end
 end

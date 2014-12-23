@@ -69,7 +69,7 @@ feature 'Admin Backend' do
   end
 
   scenario 'Mark offer as completed' do
-    offer = FactoryGirl.create :offer
+    FactoryGirl.create :offer
 
     visit rails_admin_path
 
@@ -84,7 +84,7 @@ feature 'Admin Backend' do
   end
 
   scenario 'Duplicate offer' do # calls partial dup that doesn't end up in an immediately valid offer
-    offer = FactoryGirl.create :offer
+    FactoryGirl.create :offer
 
     visit rails_admin_path
 

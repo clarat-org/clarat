@@ -12,7 +12,7 @@ class OffersController < ApplicationController
     respond_with @offers
   end
 
-  rescue_from InvalidLocationError do |e|
+  rescue_from InvalidLocationError do |_error|
     render 'invalid_location', status: 404
   end
 
@@ -25,45 +25,45 @@ class OffersController < ApplicationController
 
   private
 
-    def build_search_cache
-      search_params = {}
-      form_search_params = params.for(SearchForm)[:search_form]
-      search_params.merge!(form_search_params) if form_search_params.is_a?(Hash)
-      @search_cache = SearchForm.new(search_params)
-    end
+  def build_search_cache
+    search_params = {}
+    form_search_params = params.for(SearchForm)[:search_form]
+    search_params.merge!(form_search_params) if form_search_params.is_a?(Hash)
+    @search_cache = SearchForm.new(search_params)
+  end
 
-    def set_position
-      @position = @search_cache.geolocation
-      if @search_cache.search_location == I18n.t('conf.current_location')
-        cookies[:last_search_location] = nil # erase cookie so that next time the current location will be used again
+  def set_position
+    @position = @search_cache.geolocation
+    if @search_cache.search_location == I18n.t('conf.current_location')
+      cookies[:last_search_location] = nil # erase cookie so that next time the current location will be used again
+    else
+      cookies[:last_search_location] = @search_cache.location_for_cookie # set cookie so that next time the same location will be prefilled
+    end
+  end
+
+  def set_gmaps_variable
+    @markers = {}
+    @offers.each do |offer|
+      next unless offer.location
+      key = Geolocation.new(offer.location)
+
+      if @markers[key.to_s]
+        @markers[key.to_s][:offer_ids] << offer.id
       else
-        cookies[:last_search_location] = @search_cache.location_for_cookie # set cookie so that next time the same location will be prefilled
+        @markers[key.to_s] = {
+          position: key.to_h,
+          offer_ids: [offer.id]
+        }
       end
     end
+  end
 
-    def set_gmaps_variable
-      @markers = {}
-      @offers.each do |offer|
-        next unless offer.location
-        key = Geolocation.new(offer.location)
-
-        if @markers[key.to_s]
-          @markers[key.to_s][:offer_ids] << offer.id
-        else
-          @markers[key.to_s] = {
-            position: key.to_h,
-            offer_ids: [offer.id]
-          }
-        end
-      end
+  # See if area is covered and if not instantiate an UpdateRequest
+  def test_location_unavailable
+    unless @search_cache.nearby?
+      @update_request = UpdateRequest.new(
+        search_location: @search_cache.search_location
+      )
     end
-
-    # See if area is covered and if not instantiate an UpdateRequest
-    def test_location_unavailable
-      unless @search_cache.has_nearby?
-        @update_request = UpdateRequest.new(
-          search_location: @search_cache.search_location
-        )
-      end
-    end
+  end
 end

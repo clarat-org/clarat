@@ -21,11 +21,10 @@ class SearchForm
                                  tagFilters: tags,
                                  facets: '_tags',
                                  maxValuesPerFacet: 20
-
   end
 
-  def has_nearby?
-    @_has_nearby ||=
+  def nearby?
+    @_nearby ||=
       Offer.algolia_search('',
                            page: 0,
                            hitsPerPage: 1,
@@ -37,7 +36,11 @@ class SearchForm
   def geolocation
     return @geolocation if @geolocation
 
-    result = if search_location == I18n.t('conf.current_location')
+    @geolocation = Geolocation.new geolocation_result
+  end
+
+  def geolocation_result
+    if search_location == I18n.t('conf.current_location')
       if generated_geolocation.empty? # could cause problems
         raise InvalidLocationError
       else
@@ -46,7 +49,6 @@ class SearchForm
     else
       SearchLocation.find_or_generate search_location
     end
-    @geolocation = Geolocation.new result
   end
 
   def tags_by_facet
@@ -81,7 +83,7 @@ class SearchForm
     end
   end
 
-  def nbHits
+  def hit_count
     @hits.raw_answer['nbHits']
   end
 

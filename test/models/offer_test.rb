@@ -61,11 +61,11 @@ describe Offer do
 
   describe 'methods' do
     describe '#creator_email' do
-      it "should return anonymous by default" do
+      it 'should return anonymous by default' do
         offer.creator_email.must_equal 'anonymous'
       end
 
-      it "should return users email if there is a a version" do
+      it 'should return users email if there is a a version' do
         user = FactoryGirl.create :user
         offer.stub_chain(:versions, :first, :whodunnit).returns 1
         offer.creator_email.must_equal user.email
@@ -73,27 +73,27 @@ describe Offer do
     end
 
     describe '#encounter_value' do
-      it "should return 0 on independent" do
+      it 'should return 0 on independent' do
         Offer.new(encounter: :independent).encounter_value.must_equal 0
       end
 
-      it "should return 1 on determinable" do
+      it 'should return 1 on determinable' do
         Offer.new(encounter: :determinable).encounter_value.must_equal 1
       end
 
-      it "should return 1 on fixed" do
+      it 'should return 1 on fixed' do
         Offer.new(encounter: :fixed).encounter_value.must_equal 1
       end
     end
 
     describe '#has_contact_details?' do
-      it "should return true when one field is filled" do
-        Offer.new(email: "a@b.c").has_contact_details?.must_equal true
+      it 'should return true when one field is filled' do
+        Offer.new(email: 'a@b.c').has_contact_details?.must_equal true
       end
-      it "should return true when multiple fields are filled" do
-        Offer.new(email: "a@b.c", fax: "1").has_contact_details?.must_equal true
+      it 'should return true when multiple fields are filled' do
+        Offer.new(email: 'a@b.c', fax: '1').has_contact_details?.must_equal true
       end
-      it "should return false when no contact fields are filled" do
+      it 'should return false when no contact fields are filled' do
         Offer.new.has_contact_details?.must_equal false
       end
     end

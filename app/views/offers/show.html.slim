@@ -23,8 +23,8 @@
         .section-content__body
           p== @offer.next_steps
 
-      / ToDo: Refactor!
-      - if @offer.has_opening_details?
+      / TODO: Refactor!
+      - if @offer.opening_details?
         section.section-content.section-content--openinghours
           h3.section-content__title Öffnungszeiten
           .section-content__body
@@ -42,12 +42,12 @@
                         =<> "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
                       - else
                         | Nach Vereinbarung
-            - unless @offer.opening_specification.blank?
+            - unless @offer.opening_specification?
               - if @offer.openings.any?
                 br
               == @offer.opening_specification
 
-      - if @offer.has_contact_details?
+      - if @offer.contact_details?
         / ^ modify that method if you add information to this box
         section.section-content.section-content--contact
           h3.section-content__title Kontakt
@@ -69,7 +69,7 @@
                   | Webseite:
                   =< link_to "#{@offer.websites.own.first.url}", "#{@offer.websites.own.first.url}"
                   br
-              - if @offer.has_social_media_websites?
+              - if @offer.social_media_websites?
                 == "Weitere Präsenzen im Netz: "
                 ==> link_to 'Facebook', "#{@offer.websites.facebook.first.url}" if @offer.websites.facebook.first
                 ==> link_to 'Twitter', "#{@offer.websites.twitter.first.url}" if @offer.websites.twitter.first

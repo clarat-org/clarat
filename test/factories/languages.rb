@@ -2,7 +2,7 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :language do
-    name { ['Deutsch', 'Englisch'].sample }
+    name { %w(Deutsch Englisch).sample }
     code { name[0..2].downcase }
 
     # associations

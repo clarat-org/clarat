@@ -43,15 +43,21 @@ FactoryGirl.define do
       else
         evaluator.tag_count.times do
           offer.tags << (
-            Tag.count != 0 && rand(2) == 0 ?
-              Tag.select(:id).all.sample : FactoryGirl.create(:tag)
+            if Tag.count != 0 && rand(2) == 0
+              Tag.select(:id).all.sample
+            else
+              FactoryGirl.create(:tag)
+            end
           )
         end
       end
       evaluator.opening_count.times do
         offer.openings << (
-          Opening.count != 0 && rand(2) == 0 ?
-            Opening.select(:id).all.sample : FactoryGirl.create(:opening)
+          if Opening.count != 0 && rand(2) == 0
+            Opening.select(:id).all.sample
+          else
+            FactoryGirl.create(:opening)
+          end
         )
       end
       evaluator.language_count.times do
@@ -59,12 +65,10 @@ FactoryGirl.define do
           Language.select(:id).all.sample || FactoryGirl.create(:language)
         )
       end
-
-
     end
 
     trait :approved do
-      after :create do |offer, evaluator|
+      after :create do |offer, _evaluator|
         Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
       end
     end

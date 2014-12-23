@@ -1,5 +1,5 @@
 class ApprovedValidator < ActiveModel::EachValidator
-  def validate_each(record, attribute, value)
+  def validate_each(record, attribute, _value)
     if record.approved_changed? && record.approved == true
       if record.completed == false
         record.errors[attribute] = I18n.t('validations.offer.incomplete')

@@ -39,7 +39,7 @@ class Geolocation
   end
 
   # only compare latitude and longitude
-  def == object
-    @latitude == object.latitude && @longitude == object.longitude
+  def == other
+    @latitude == other.latitude && @longitude == other.longitude
   end
 end

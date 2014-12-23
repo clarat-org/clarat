@@ -2,7 +2,7 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        = "#{@search_cache.nbHits} Ergebnisse"
+        = "#{@search_cache.hit_count} Ergebnisse"
         - tags = @search_cache.tags
         - unless tags.empty?
           |  (Schlagwortfilter:

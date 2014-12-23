@@ -13,8 +13,13 @@ FactoryGirl.define do
 
     # optional
     name { maybe Faker::NameDE.name }
-    addition { maybe ["#{rand(1..3)}. Hinterhof", "#{rand(1..10)}. Stock",
-      "Raum #{rand(1..20)}"].sample }
+    addition do
+      maybe [
+        "#{rand(1..3)}. Hinterhof",
+        "#{rand(1..10)}. Stock",
+        "Raum #{rand(1..20)}"
+      ].sample
+    end
     telephone { maybe Faker.numerify('#' * rand(7..11)) }
     second_telephone { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
     fax { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }

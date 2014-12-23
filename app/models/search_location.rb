@@ -22,17 +22,15 @@ class SearchLocation < ActiveRecord::Base
 
   private
 
-    def normalize_query
-      if self.query
-        self.query = SearchLocation.normalize self.query
-      end
-    end
+  def normalize_query
+    self.query = SearchLocation.normalize(self.query) if self.query
+  end
 
-    def self.normalize query
-      query.strip.titleize
-    end
+  def self.normalize query
+    query.strip.titleize
+  end
 
-    def set_geoloc
-      self.geoloc = Geolocation.new(self).to_s
-    end
+  def set_geoloc
+    self.geoloc = Geolocation.new(self).to_s
+  end
 end

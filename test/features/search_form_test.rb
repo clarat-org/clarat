@@ -32,7 +32,9 @@ feature 'Search Form' do
     FactoryGirl.create :offer, name: 'foo fuz', tag: 'unrelated',
       location: o1.location, organization: o1.organization
     Offer.stubs(:algolia_search).returns(
-      AlgoliaStubber.filled_response_stub('foo', ['foo baz', 'foo fuz'],
+      AlgoliaStubber.filled_response_stub(
+        'foo',
+        ['foo baz', 'foo fuz'],
         'chunky bacon' => 1
       )
     )
@@ -64,7 +66,7 @@ feature 'Search Form' do
   scenario 'Search for standard string leads to error page' do
     visit root_path
     fill_in 'search_form_search_location',
-      with: I18n.t('conf.current_location')
+            with: I18n.t('conf.current_location')
     find('#search_form_generated_geolocation').set '' # unset by JS
     find('.main-search__submit').click
     page.must_have_content(
@@ -75,7 +77,7 @@ feature 'Search Form' do
   scenario 'Search for js-generated standard string leads to results' do
     visit root_path
     fill_in 'search_form_search_location',
-      with: I18n.t('conf.current_location')
+            with: I18n.t('conf.current_location')
     find('#search_form_generated_geolocation').set '4,2' # set by JS
     find('.main-search__submit').click
     page.wont_have_content(

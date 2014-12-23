@@ -3,15 +3,15 @@ require 'algolia/webmock' # general mocks
 module AlgoliaStubber
   EMPTY_RESPONSE = <<-RESPONSE
     {
-      "hits" : [],
-      "nbHits" : 0,
-      "page" : 0,
-      "nbPages" : 0,
-      "hitsPerPage" : 10,
-      "processingTimeMS" : 1,
-      "facets" : {},
-      "query" : "",
-      "params" : "query="
+      'hits' : [],
+      'nbHits' : 0,
+      'page' : 0,
+      'nbPages' : 0,
+      'hitsPerPage' : 10,
+      'processingTimeMS' : 1,
+      'facets' : {},
+      'query' : ',
+      'params' : 'query='
     }
   RESPONSE
 
@@ -28,17 +28,17 @@ module AlgoliaStubber
     end
 
     filled_response = {
-      "hits" => offers.map(&:attributes),
-      "nbHits" => offers.length,
-      "page" => 0,
-      "nbPages" => 1,
-      "hitsPerPage" => 10,
-      "processingTimeMS" => 1,
-      "facets" => {
-        "_tags" => tags
+      'hits' => offers.map(&:attributes),
+      'nbHits' => offers.length,
+      'page' => 0,
+      'nbPages' => 1,
+      'hitsPerPage' => 10,
+      'processingTimeMS' => 1,
+      'facets' => {
+        '_tags' => tags
       },
-      "query" => "#{query}",
-      "params" => "query=#{query}"
+      'query' => "#{query}",
+      'params' => "query=#{query}"
     }
 
     res = AlgoliaSearch::Pagination::Kaminari.create offers,

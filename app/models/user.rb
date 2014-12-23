@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
          omniauth_providers: [:facebook, :google_oauth2] # , :rememberable, :trackable
 
   # Validations
-  #validates :email, uniqueness: true, presence: true
+  # validates :email, uniqueness: true, presence: true
 end

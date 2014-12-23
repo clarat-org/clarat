@@ -2,9 +2,7 @@ require_relative '../test_helper'
 
 describe SearchLocation do
 
-  let(:search_location) {
-    SearchLocation.new(query: 'Foobar')
-  }
+  let(:search_location) { SearchLocation.new(query: 'Foobar') }
 
   subject { search_location }
 
@@ -29,7 +27,7 @@ describe SearchLocation do
 
   describe 'methods' do
     describe '#set_geoloc' do
-      it "should set the geolocation before saving" do
+      it 'should set the geolocation before saving' do
         search_location.geoloc = nil
         search_location.save!
         search_location.geoloc.must_equal '10.0,20.0'

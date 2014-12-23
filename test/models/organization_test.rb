@@ -2,9 +2,11 @@ require_relative '../test_helper'
 
 describe Organization do
 
-  let(:organization) { Organization.new(name: 'Testname',
-                                        description: 'Testbeschreibung',
-                                        legal_form: 'ev') } # Necessary to test uniqueness
+  let(:organization) do
+    Organization.new(name: 'Testname',
+                     description: 'Testbeschreibung',
+                     legal_form: 'ev')
+  end # Necessary to test uniqueness
 
   subject { organization }
 

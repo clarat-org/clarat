@@ -11,7 +11,7 @@ FactoryGirl.define do
 
     # optional
     comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..399] }
-    founded { maybe (1980..Time.now.year).to_a.sample }
+    founded { maybe((1980..Time.now.year).to_a.sample) }
     umbrella { maybe Organization.enumerized_attributes.attributes['umbrella'].values.sample }
 
     # associations

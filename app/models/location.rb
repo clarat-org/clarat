@@ -49,7 +49,7 @@ class Location < ActiveRecord::Base
 
   private
 
-    def full_address
-      "#{address} #{federal_state_name}"
-    end
+  def full_address
+    "#{address} #{federal_state_name}"
+  end
 end

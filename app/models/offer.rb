@@ -30,8 +30,9 @@ class Offer < ActiveRecord::Base
 
   # Validations
   validates :name, length: { maximum: 80 }, presence: true
-  validates :name, uniqueness: { scope: :location_id },
-    unless: lambda { |offer| offer.location.nil? }
+  validates :name,
+            uniqueness: { scope: :location_id },
+            unless: ->(offer) { offer.location.nil? }
   validates :description, length: { maximum: 400 }, presence: true
   validates :next_steps, length: { maximum: 500 }, presence: true
   validates :encounter, presence: true
@@ -57,7 +58,7 @@ class Offer < ActiveRecord::Base
     customRanking ['asc(encounter_value)']
     add_attribute :_geoloc, :_tags
     add_attribute :keyword_string, :organization_name, :location_street,
-      :location_city, :location_zip, :encounter_value
+                  :location_city, :location_zip, :encounter_value
     attributesForFaceting [:_tags]
   end
 
@@ -119,29 +120,29 @@ class Offer < ActiveRecord::Base
     end
   end
 
-  def has_contact_details?
+  def contact_details?
     !contact_name.blank? || !telephone.blank? || !fax.blank? ||
       !email.blank? || !websites.blank?
   end
 
-  def has_social_media_websites?
-    websites.where(sort: [:facebook, :twitter, :youtube, :gplus, :pinterest]).
-      count > 0
+  def social_media_websites?
+    websites.where(sort: [:facebook, :twitter, :youtube, :gplus, :pinterest])
+      .count > 0
   end
 
-  def has_opening_details?
+  def opening_details?
     !openings.blank? || !opening_specification.blank?
   end
 
   private
 
-    # Custom Validation: Ensure selected organization is the same as the selected location's organization
-    def location_fits_organization
-      if location && location.organization_id != organization_id
-        errors.add(:location_id, I18n.t(
-          'validations.offer.location_fits_organization.location_error'))
-        errors.add(:organization_id, I18n.t(
-          'validations.offer.location_fits_organization.organization_error'))
-      end
+  # Custom Validation: Ensure selected organization is the same as the selected location's organization
+  def location_fits_organization
+    if location && location.organization_id != organization_id
+      errors.add(:location_id, I18n.t(
+        'validations.offer.location_fits_organization.location_error'))
+      errors.add(:organization_id, I18n.t(
+        'validations.offer.location_fits_organization.organization_error'))
     end
+  end
 end

@@ -237,6 +237,7 @@ RailsAdmin.config do |config|
   config.model 'Tag' do
     field :name
     field :main
+    field :synonyms
     field :associated_tags
 
     object_label_method :name_with_optional_asterisk

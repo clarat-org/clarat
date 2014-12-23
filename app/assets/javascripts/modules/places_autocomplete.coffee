@@ -6,7 +6,8 @@ ready = ->
         new google.maps.LatLng(53, 14),
         new google.maps.LatLng(52, 12.5)
       )
-      types: ['(regions)']
+      types: ['geocode']
+      language: 'de'
       componentRestrictions:
         country: 'de'
 

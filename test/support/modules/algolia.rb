@@ -3,15 +3,15 @@ require 'algolia/webmock' # general mocks
 module AlgoliaStubber
   EMPTY_RESPONSE = <<-RESPONSE
     {
-      'hits' : [],
-      'nbHits' : 0,
-      'page' : 0,
-      'nbPages' : 0,
-      'hitsPerPage' : 10,
-      'processingTimeMS' : 1,
-      'facets' : {},
-      'query' : ',
-      'params' : 'query='
+      "hits" : [],
+      "nbHits" : 0,
+      "page" : 0,
+      "nbPages" : 0,
+      "hitsPerPage" : 10,
+      "processingTimeMS" : 1,
+      "facets" : {},
+      "query" : "",
+      "params" : "query="
     }
   RESPONSE
 

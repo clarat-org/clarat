@@ -29,38 +29,10 @@ class Offer < ActiveRecord::Base
   end
 
   # Validations
-  validates :name, length: { maximum: 80 }, presence: true
-  validates :name,
-            uniqueness: { scope: :location_id },
-            unless: ->(offer) { offer.location.nil? }
-  validates :description, length: { maximum: 400 }, presence: true
-  validates :next_steps, length: { maximum: 500 }, presence: true
-  validates :encounter, presence: true
-  validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :opening_specification, length: { maximum: 400 }
-  validates :legal_information, length: { maximum: 400 }
-  validates :comment, length: { maximum: 800 }
-  validates :organization_id, presence: true
-  validates :approved, approved: true
-  # Custom validations
-  validate :location_fits_organization
-  validates :approved, approved: true
+  include Validations
 
   # Search
-  include AlgoliaSearch
-  algoliasearch per_environment: true,
-                disable_indexing: Rails.env.test?,
-                if: :approved? do
-    attributesToIndex %w(name description keyword_string)
-    ranking %w(typo custom geo words proximity attribute exact) # ^custom
-    customRanking ['asc(encounter_value)']
-    add_attribute :_geoloc, :_tags
-    add_attribute :keyword_string, :organization_name, :location_street,
-                  :location_city, :location_zip, :encounter_value
-    attributesForFaceting [:_tags]
-  end
+  include Search
 
   # Statistics
   extend RailsAdminStatistics
@@ -70,24 +42,6 @@ class Offer < ActiveRecord::Base
   delegate :name, to: :organization, prefix: true
   delegate :name, :street, :addition, :city, :zip, :address,
            to: :location, prefix: true, allow_nil: true
-
-  # Offer's location's geo coordinates for indexing
-  def _geoloc
-    {
-      'lat' => location.try(:latitude) || '0.0',
-      'lng' => location.try(:longitude) || '0.0'
-    }
-  end
-
-  # Offer's tags for indexing
-  def _tags
-    tags.pluck(:name)
-  end
-
-  # additional searchable string made from tags
-  def keyword_string
-    tags.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
-  end
 
   # Offer's encounter modifier for indexing
   def encounter_value
@@ -132,17 +86,5 @@ class Offer < ActiveRecord::Base
 
   def opening_details?
     !openings.blank? || !opening_specification.blank?
-  end
-
-  private
-
-  # Custom Validation: Ensure selected organization is the same as the selected location's organization
-  def location_fits_organization
-    if location && location.organization_id != organization_id
-      errors.add(:location_id, I18n.t(
-        'validations.offer.location_fits_organization.location_error'))
-      errors.add(:organization_id, I18n.t(
-        'validations.offer.location_fits_organization.organization_error'))
-    end
   end
 end

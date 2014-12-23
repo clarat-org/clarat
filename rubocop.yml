@@ -28,8 +28,5 @@ LineLength:
 Style/SignalException:
   Enabled: false
 
-Metrics/ClassLength:
-  Max: 115
-
 Metrics/MethodLength:
   Max: 13

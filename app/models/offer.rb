@@ -37,6 +37,9 @@ class Offer < ActiveRecord::Base
   # Statistics
   extend RailsAdminStatistics
 
+  # Scopes
+  scope :approved, -> { where(approved: true, completed: true) }
+
   # Methods
 
   delegate :name, to: :organization, prefix: true

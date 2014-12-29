@@ -16,7 +16,7 @@ module EmailObfuscationHelper
     char_array.each do |char|
       output = lower.index(char) + 97 if lower.include?(char)
       output = upper.index(char) + 65 if upper.include?(char)
-      output_array << output ? "&##{output};" : char
+      output_array << (output ? "&##{output};" : char)
     end
     output_array.join
   end

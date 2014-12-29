@@ -10,14 +10,14 @@
         h3.section-content__title Wer
         .section-content__body
           p= @organization.description
-
-      section.section-content.section-content--alloffers
-        h3.section-content__title Alle Angebote der Organisation
-        .section-content__body
-          ul.Listing-offers__list
-            - @organization.offers.each do |offer|
-              li.Listing-offers__listitem
-                = link_to offer.name, offer_path(id: offer)
+      - if @organization.offers.approved.any?
+        section.section-content.section-content--alloffers
+          h3.section-content__title Alle Angebote der Organisation
+          .section-content__body
+            ul.Listing-offers__list
+              - @organization.offers.approved.each do |offer|
+                li.Listing-offers__listitem
+                  = link_to offer.name, offer_path(id: offer)
 
     .section-wrapper-minor
 

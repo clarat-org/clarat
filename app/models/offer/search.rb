@@ -7,7 +7,9 @@ class Offer
       algoliasearch per_environment: true,
                     disable_indexing: Rails.env.test?,
                     if: :approved? do
-        attributesToIndex %w(name description keyword_string)
+        attributesToIndex %w(
+          name description keyword_string organization_name
+        )
         ranking %w(typo custom geo words proximity attribute exact) # ^custom
         customRanking ['asc(encounter_value)']
         add_attribute :_geoloc, :_tags

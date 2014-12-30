@@ -48,6 +48,6 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unscoped_classes
-    %w(OffersController TagsController)
+    %w(OffersController TagsController ContactsController)
   end
 end

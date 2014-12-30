@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223132002) do
+ActiveRecord::Schema.define(version: 20141229224651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20141223132002) do
 
   add_index "associated_tags", ["associated_id"], name: "index_associated_tags_on_associated_id", using: :btree
   add_index "associated_tags", ["tag_id"], name: "index_associated_tags_on_tag_id", using: :btree
+
+  create_table "contacts", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "message"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "federal_states", force: true do |t|
     t.string   "name",       null: false

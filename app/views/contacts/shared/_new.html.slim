@@ -1,7 +1,8 @@
-= semantic_form_for contact do |f|
-  = f.input :name
-  = f.input :email, required: requires_email
-  = f.input :message
+= semantic_form_for contact, html: { class: 'contact-form' } do |f|
+  = f.input :name, label: false, input_html: { placeholder: 'Name (Pflicht)' }
+  - email_placeholder = requires_email ? 'E-Mail Adresse (Pflicht)' : 'E-Mail Adresse (Optional)'
+  = f.input :email, label: false, required: requires_email, input_html: { placeholder: email_placeholder }
+  = f.input :message, label: false, input_html: { placeholder: 'Nachricht eingeben (Pflicht)' }
   = f.input :url, as: :hidden
   = f.input :reporting, as: :hidden
   button Abschicken

@@ -33,4 +33,12 @@ module ApplicationHelper
       I18n.t('conf.default_location')
     end
   end
+
+  # Modal with content block
+  def modal_for selector, &block
+    render(
+      partial: '/layouts/partials/modal',
+      locals: { selector: selector, block: block }
+    )
+  end
 end

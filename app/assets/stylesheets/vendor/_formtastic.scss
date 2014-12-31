@@ -5,48 +5,47 @@
 // ---------------------------------------------------------------
 
 .formtastic {
-	&.update_request {
-		position: relative;
-		margin-top: 25px;
+  position: relative;
 
-		li {
-			list-style: none;
-		}
-	}
+  li {
+    list-style: none;
+    position: relative;
+  }
 
-	#update_request_email {
-		width: 250px;
-	}
 
-	input[type="email"],
-	input[type="submit"] {
-		padding: 0 15px;
-		height: 32px;
-		font-size: 18px;
-	}
+  input,
+  textarea {
+    padding: 0 15px;
+    font-size: 18px;
+  }
 
-	input[type="submit"] {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+  input {
+    height: 32px;
+  }
 
-	input[type="email"] {
-		background: $brand_beige;
-	}
+  textarea {
+    height: 100px;
+  }
 
-	.inline-errors {
-		position: absolute;
-		bottom: -20px;
-		left: 0;
+  input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-		padding: 2px 15px;
-		width: 250px;
-		background: $brand_orange;
-		color: $brand_white;
-	}
 
-	.input.error {
-		padding-bottom: 25px;
-	}
+  .inline-errors {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    padding: 2px 15px;
+    width: 250px;
+    background: $brand_orange;
+    color: $brand_white;
+  }
+
+  .input.error {
+    padding-bottom: 25px;
+  }
 }

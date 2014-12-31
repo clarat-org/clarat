@@ -7,21 +7,36 @@
 // @TODO: Refactor!
 
 .popup_content {
-	@extend %clarat_rounding;
-	position: relative;
-	padding: 30px;
+  @extend %clarat_rounding;
+  position: relative;
+  padding: 30px;
+  background:white;
+  width:500px;
 
-	p {
-		margin-top: 0;
-	}
+  p {
+    margin-top: 0;
+  }
 
-	button[class$="overlay_close"] {
-		position: absolute;
-		top: -10px;
-		right: -10px;
-		width: 30px;
-		height: 30px;
-	}
-
+  button[class$="overlay_close"] {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
+#unavailable_location_overlay {
+  .formtastic {
+    &.update_request {
+      margin-top: 25px;
+    }
+    #update_request_email {
+      width: 250px;
+    }
+
+    li.action {
+      position: static;
+    }
+  }
+}

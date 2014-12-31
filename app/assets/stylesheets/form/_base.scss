@@ -6,35 +6,39 @@
 
 input,
 button {
-	border: none;
+  border: none;
+}
+
+input,
+textarea {
+  @include input-placeholder($brand_brown, 400, null);
+  @extend %roboto_light;
+  background: $brand_beige;
+}
+
+input,
+textarea,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  &:focus {
+    background: $brand_beige;
+  }
+}
+
+textarea {
+  border: 0;
 }
 
 button,
 input[type="submit"] {
-	@extend %roboto_bold;
-	font-weight: 400;
-	background: $brand_brown;
-	color: $brand_white;
-}
-
-input[type='text'],
-input[type='email'] {
-	@include input-placeholder($brand_brown, 400, null);
-	@extend %roboto_light;
-	background: $brand_white;
-}
-
-input[type='text'],
-input[type="email"],
-button {
-	&:focus {
-		outline: none;
-	}
-}
-
-input[type='text'],
-input[type='email'] {
-	&:focus {
-		background: $brand_beige;
-	}
+  @extend %roboto_bold;
+  font-weight: 400;
+  background: $brand_brown;
+  color: $brand_white;
 }

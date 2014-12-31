@@ -1,0 +1,20 @@
+// ---------------------------------------------------------------
+//
+//  Contact / Report Form
+//
+// ---------------------------------------------------------------
+
+.contact-form {
+  margin-top: 22px;
+
+  .string input,
+  .email input,
+  textarea {
+    width: 440px;
+  }
+
+  .string,
+  .email {
+    margin-bottom: 5px;
+  }
+}

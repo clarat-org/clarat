@@ -123,7 +123,7 @@
         i.fa.fa-pencil-square-o
         | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
 
-      #js-report-overlay.is--hidden
+      = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, requires_email: false
 
 - content_for :view_specific_scripts do

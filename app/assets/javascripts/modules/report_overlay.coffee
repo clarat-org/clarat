@@ -1,6 +1,5 @@
 # using http://vast-engineering.github.io/jquery-popup-overlay/
 $(document).ready ->
-  overlay = $('#unavailable_location_overlay')
+  overlay = $('#js-report-overlay')
   if overlay.length
-    overlay.popup
-      autoopen: true
+    overlay.popup()

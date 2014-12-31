@@ -1,7 +1,7 @@
 class ContactRefinery < ApplicationRefinery
   def default
     [
-      :email, :name, :message, :url
+      :email, :name, :message, :url, :reporting
     ]
   end
 end

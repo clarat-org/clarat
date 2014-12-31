@@ -1,8 +1,3 @@
 .wrapper-inner
   main.content-main
-    = semantic_form_for @contact do |f|
-      = f.input :name
-      = f.input :email
-      = f.input :message
-      = f.input :url, as: :hidden
-      button Abschicken
+    = render '/contacts/shared/new', contact: @contact, requires_email: true

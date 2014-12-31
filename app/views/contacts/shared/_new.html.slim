@@ -1,0 +1,7 @@
+= semantic_form_for contact do |f|
+  = f.input :name
+  = f.input :email, required: requires_email
+  = f.input :message
+  = f.input :url, as: :hidden
+  = f.input :reporting, as: :hidden
+  button Abschicken

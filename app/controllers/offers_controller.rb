@@ -20,6 +20,7 @@ class OffersController < ApplicationController
     @offer = Offer.friendly.find(params[:id])
     authorize @offer
 
+    @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
   end
 

@@ -40,3 +40,4 @@ about supported directives.
 # = require modules/search_location
 # = require modules/more
 # = require modules/unavailable_location_overlay
+# = require modules/report_overlay

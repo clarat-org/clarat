@@ -63,7 +63,7 @@
                 | E-Mail:
                 span#secure-email==< secure_email_to @offer.email
                 br
-              / ToDo: Refactor!
+              / TODO: Refactor!
               - unless @offer.websites.empty?
                 - if @offer.websites.own.first
                   | Webseite:
@@ -119,10 +119,12 @@
               li.Listing-tags__item
                 = link_to tag.name, '#'
 
-      button.offer-contribute
+      = link_to new_contact_path, class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
         | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
 
+      #js-report-overlay.is--hidden
+        = render '/contacts/shared/new', contact: @contact, requires_email: false
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

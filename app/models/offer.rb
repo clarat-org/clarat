@@ -83,7 +83,7 @@ class Offer < ActiveRecord::Base
   end
 
   def social_media_websites?
-    websites.where(sort: [:facebook, :twitter, :youtube, :gplus, :pinterest])
+    websites.where(host: [:facebook, :twitter, :youtube, :gplus, :pinterest])
       .count > 0
   end
 

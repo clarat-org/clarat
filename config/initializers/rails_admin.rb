@@ -92,7 +92,7 @@ RailsAdmin.config do |config|
 
   config.label_methods << :url
   config.model 'Website' do
-    field :sort
+    field :host
     field :url
   end
 

@@ -4,20 +4,19 @@ class Website < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  # TODO: Rename 'sort'
-  enumerize :sort, in: %w(own facebook twitter youtube gplus pinterest other)
+  enumerize :host, in: %w(own facebook twitter youtube gplus pinterest other)
 
   # Validations
-  validates :sort, presence: true
+  validates :host, presence: true
   validates :url, format: %r{\Ahttps?://\S+\.\S+\z}, uniqueness: true,
     presence: true
 
   # Scopes
-  scope :own, -> { where(sort: 'own') }
-  scope :facebook, -> { where(sort: 'facebook') }
-  scope :twitter, -> { where(sort: 'twitter') }
-  scope :youtube, -> { where(sort: 'youtube') }
-  scope :gplus, -> { where(sort: 'gplus') }
-  scope :pinterest, -> { where(sort: 'pinterest') }
-  scope :other, -> { where(sort: 'other') }
+  scope :own, -> { where(host: 'own') }
+  scope :facebook, -> { where(host: 'facebook') }
+  scope :twitter, -> { where(host: 'twitter') }
+  scope :youtube, -> { where(host: 'youtube') }
+  scope :gplus, -> { where(host: 'gplus') }
+  scope :pinterest, -> { where(host: 'pinterest') }
+  scope :other, -> { where(host: 'other') }
 end

@@ -2,9 +2,9 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :website do
-    sort { Website.enumerized_attributes.attributes['sort'].values.sample }
+    host { Website.enumerized_attributes.attributes['host'].values.sample }
     url do
-      case sort
+      case host
       when 'facebook'
         "https://www.facebook.com/#{Faker::Internet.domain_word}"
       when 'twitter'

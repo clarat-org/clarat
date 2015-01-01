@@ -29,13 +29,6 @@ FactoryGirl.define do
     organization
     federal_state { FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin') }
 
-    ignore do
-      website_count { rand(0..3) }
-    end
-    after :create do |location, evaluator|
-      create_list :hyperlink, evaluator.website_count, linkable: location
-    end
-
     trait :fake_address do
       street { Faker::AddressDE.street_address }
       zip { (10_000..14_100).to_a.sample }

@@ -5,8 +5,6 @@ class Location < ActiveRecord::Base
   belongs_to :organization, inverse_of: :locations, counter_cache: true
   belongs_to :federal_state, inverse_of: :locations
   has_many :offers, inverse_of: :location
-  has_many :hyperlinks, as: :linkable
-  has_many :websites, through: :hyperlinks
 
   # Validations
   validates :name, length: { maximum: 100 },

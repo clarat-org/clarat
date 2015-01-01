@@ -46,8 +46,6 @@ describe Location do
   describe '::Base' do
     describe 'associations' do
       it { subject.must have_many :offers }
-      it { subject.must have_many :hyperlinks }
-      it { subject.must have_many :websites }
       it { subject.must belong_to :organization }
       it { subject.must belong_to :federal_state }
     end

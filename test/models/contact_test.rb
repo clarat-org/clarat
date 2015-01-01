@@ -17,14 +17,5 @@ describe Contact do
       it { subject.must validate_presence_of :name }
       it { subject.must validate_presence_of :message }
     end
-
-    describe 'on normal contact' do
-      it { subject.must validate_presence_of :email }
-    end
-
-    describe 'on report' do
-      let(:contact) { Contact.new reporting: true }
-      it { subject.wont validate_presence_of :email }
-    end
   end
 end

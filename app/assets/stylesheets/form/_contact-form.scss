@@ -9,12 +9,12 @@
 
   .string input,
   .email input,
-  textarea {
+  textarea,
+  &.formtastic .inline-errors {
     width: 440px;
   }
 
-  .string,
-  .email {
+  .stringish {
     margin-bottom: 5px;
   }
 }

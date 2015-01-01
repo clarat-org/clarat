@@ -1,0 +1,6 @@
+$('.popup_content_visible').popup('hide');
+$('body').prepend(
+  $('<div class="Flash-message Flash-message--success">').html(
+    "<%= yield %>"
+  )
+);

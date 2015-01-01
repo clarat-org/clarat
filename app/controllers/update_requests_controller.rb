@@ -12,7 +12,8 @@ class UpdateRequestsController < ApplicationController
     @update_request = UpdateRequest.new params.for(UpdateRequest).refine
     authorize @update_request
     if @update_request.save
-      render :create
+      render :create, layout: 'modal_create.js.erb',
+                      content_type: 'text/javascript'
     else
       render :new
     end

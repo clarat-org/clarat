@@ -35,8 +35,9 @@
 
 
   .inline-errors {
-    position: absolute;
-    bottom: -20px;
+    // position: absolute;
+    // bottom: -20px;
+    margin: 0;
     left: 0;
 
     padding: 2px 15px;
@@ -45,7 +46,7 @@
     color: $brand_white;
   }
 
-  .input.error {
-    padding-bottom: 25px;
-  }
+  // .input.error {
+  //   padding-bottom: 25px;
+  // }
 }

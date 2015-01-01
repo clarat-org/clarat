@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  respond_to :html
+  respond_to :html, :js
 
   skip_before_action :authenticate_user!, only: [:new, :create, :index]
 
@@ -13,9 +13,13 @@ class ContactsController < ApplicationController
     @contact = Contact.new params.for(Contact).refine
     authorize @contact
     if @contact.save
-      redirect_to root_path, flash: {
-        success: I18n.t('flash.contact.success')
-      }
+      respond_to do |format|
+        format.html do
+          redirect_to root_path,
+                      flash: { success: I18n.t('flash.contact.success') }
+        end
+        format.js { render :create, layout: 'modal_create' }
+      end
     else
       render :new
     end

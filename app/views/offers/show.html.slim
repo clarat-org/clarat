@@ -124,7 +124,7 @@
         | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
 
       = modal_for 'js-report-overlay' do
-        = render '/contacts/shared/new', contact: @contact, requires_email: false
+        = render '/contacts/shared/new', contact: @contact, reporting: true
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

@@ -5,9 +5,7 @@ class Contact < ActiveRecord::Base
   # Validations
   validates :name, presence: true, allow_blank: false
   validates :email,
-            presence: true,
-            allow_blank: false,
             format: /\A.+@.+\..+\z/,
-            unless: ->(contact) { contact.reporting }
+            if: ->(contact) { contact.reporting.blank? }
   validates :message, presence: true, allow_blank: false
 end

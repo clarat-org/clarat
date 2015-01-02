@@ -41,3 +41,4 @@ about supported directives.
 # = require modules/more
 # = require modules/unavailable_location_overlay
 # = require modules/report_overlay
+# = require modules/flash

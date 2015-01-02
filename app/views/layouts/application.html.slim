@@ -47,7 +47,9 @@ html class='no-js' lang=I18n.locale
     .page-wrap
       - flash.each do |message|
         - unless message[0] == 'timedout'
-          div class="Flash-message Flash-message--#{message[0]} fade in"= message[1]
+          = render '/layouts/partials/flash',
+                   type: message[0],
+                   content: message[1]
 
       - if controller_name == 'pages' && action_name == 'home' || controller_name == 'pages' && action_name == 'about'
         = render 'layouts/partials/navigation', search_cache: @search_cache

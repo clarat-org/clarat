@@ -1,4 +1,6 @@
-= semantic_form_for contact, html: { class: 'contact-form' }, remote: reporting do |f|
+= semantic_form_for contact,
+                    html: { class: 'contact-form' },
+                    remote: reporting do |f|
   = f.input :name, label: false, input_html: { placeholder: 'Name (Pflicht)' }
   - email_placeholder = reporting ? 'E-Mail Adresse (Optional)' : 'E-Mail Adresse (Pflicht)'
   = f.input :email, label: false, required: !reporting, input_html: { placeholder: email_placeholder }

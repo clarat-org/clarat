@@ -2,17 +2,21 @@ footer.footer-main
   section.footer-main__firstrow
     .wrapper-inner
       .footer-main__subscribe
-        form.newsletter-subscribe
-          input.newsletter-subscribe__input[type="text"]
-          button.newsletter-subscribe__submit Newsletter abonnieren
+        = render 'subscriptions/shared/new', subscription: @subscription
 
         .Social-media
-          = link_to 'Google+', 'https://plus.google.com/110429028641743127592/about',
-            target: '_blank', class: 'Social-media__item Social-media__item--googleplus'
-          = link_to 'Twitter', 'https://twitter.com/claratpunktorg',
-            target: '_blank', class: 'Social-media__item Social-media__item--twitter'
-          = link_to 'Facebook', 'https://www.facebook.com/claratpunktorg',
-            target: '_blank', class: 'Social-media__item Social-media__item--facebook'
+          = link_to 'Google+',
+                    'https://plus.google.com/110429028641743127592/about',
+                    target: '_blank',
+                    class: 'Social-media__item Social-media__item--googleplus'
+          = link_to 'Twitter',
+                    'https://twitter.com/claratpunktorg',
+                    target: '_blank',
+                    class: 'Social-media__item Social-media__item--twitter'
+          = link_to 'Facebook',
+                    'https://www.facebook.com/claratpunktorg',
+                    target: '_blank',
+                    class: 'Social-media__item Social-media__item--facebook'
 
       .footer-main__about
         .mascot.mascot--footer

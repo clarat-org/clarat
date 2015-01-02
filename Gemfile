@@ -97,6 +97,7 @@ gem 'algoliasearch-rails'
 
 gem 'virtus' # form objects
 gem 'formtastic'
+gem 'simple_form'
 
 gem 'friendly_id', '>= 5.0'
 

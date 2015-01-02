@@ -18,6 +18,7 @@ Clarat::Application.routes.draw do
     resources :update_requests, only: [:new, :create]
     resources :search_locations, only: [:show]
     resources :contacts, only: [:new, :create, :index]
+    resources :subscriptions, only: [:new, :create]
     get 'tags/:offer_name', controller: :tags, action: :index
   end
 

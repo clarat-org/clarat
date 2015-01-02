@@ -1,0 +1,10 @@
+= simple_form_for subscription,
+                  html: { class: 'newsletter-subscribe' },
+                  remote: true do |f|
+  = f.input :email,
+            label: false,
+            input_html: { \
+              class: 'newsletter-subscribe__input',
+              placeholder: 'E-Mail Adresse' \
+            }
+  button.newsletter-subscribe__submit Newsletter abonnieren

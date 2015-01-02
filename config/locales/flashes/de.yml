@@ -6,3 +6,5 @@ de:
       success: 'Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner Nähe aktiv werden melden wir uns bei dir.'
     report:
       success: 'Vielen Dank, wir haben deine Nachricht erhalten und werden sie umgehend prüfen.'
+    subscription:
+      success: 'Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail Adresse gesendet.'

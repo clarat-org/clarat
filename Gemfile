@@ -15,13 +15,6 @@ platforms :ruby do
   gem 'pg', group: [:production, :development] # postgres
 end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
-
-# More styling
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -103,8 +96,18 @@ gem 'friendly_id', '>= 5.0'
 
 gem 'geocoder'
 
+# email
+gem 'gibbon'
+
 # CSS
 gem 'font-awesome-rails'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.2'
+
+# More styling
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 group :production do
   gem 'rails_12factor' # heroku recommends this

@@ -1,5 +1,5 @@
 class SubscriptionRefinery < ApplicationRefinery
   def create
-    [ :email ]
+    [:email]
   end
 end

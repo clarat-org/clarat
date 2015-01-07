@@ -42,10 +42,9 @@
                         =<> "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
                       - else
                         | Nach Vereinbarung
-            - unless @offer.opening_specification?
-              - if @offer.openings.any?
+            - if @offer.opening_specification? && @offer.openings.any?
                 br
-              == @offer.opening_specification
+            == @offer.opening_specification
 
       - if @offer.contact_details?
         / ^ modify that method if you add information to this box

@@ -136,6 +136,9 @@ group :test do
   gem 'fakeweb', '~> 1.3'
   gem 'webmock'
   gem 'pry-rescue'
+
+  # testing emails
+  gem 'email_spec'
 end
 
 group :development, :test do
@@ -166,6 +169,7 @@ group :development, :test do
   # dev help
   gem 'thin' # Replace Webrick
   gem 'bullet' # Notify about n+1 queries
+  gem 'letter_opener' # emails in browser
 end
 
 group :development, :test, :staging do

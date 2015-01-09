@@ -1,0 +1,7 @@
+basic:
+  id: 1
+  name: foobar
+  description: foobar
+  legal_form: eV
+  completed: t
+  approved: t

@@ -40,7 +40,7 @@ describe Offer do
       it { subject.must ensure_length_of(:fax).is_at_most 32 }
       it { subject.must ensure_length_of(:telephone).is_at_most 32 }
       it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
-      it { subject.must ensure_length_of(:opening_specification).is_at_most 400 }
+      it { offer.must ensure_length_of(:opening_specification).is_at_most 400 }
       it { subject.must ensure_length_of(:comment).is_at_most 800 }
       it { subject.must validate_presence_of :organization_id }
       it { subject.must ensure_length_of(:legal_information).is_at_most 400 }
@@ -95,6 +95,17 @@ describe Offer do
       end
       it 'should return false when no contact fields are filled' do
         Offer.new.contact_details?.must_equal false
+      end
+    end
+
+    describe '#social_media_websites?' do
+      it 'should return true when offer has a "social" website' do
+        offers(:basic).websites << FactoryGirl.create(:website, :social)
+        offers(:basic).social_media_websites?.must_equal true
+      end
+      it 'should return false when offer has no "social" website' do
+        offers(:basic).websites << FactoryGirl.create(:website, :own)
+        offers(:basic).social_media_websites?.must_equal false
       end
     end
   end

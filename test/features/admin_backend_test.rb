@@ -7,8 +7,6 @@ feature 'Admin Backend' do
   before { login_as admin }
 
   scenario 'Administrating Offers' do
-    organization = FactoryGirl.create :organization
-
     visit rails_admin_path
 
     click_link 'Angebote', match: :first
@@ -19,7 +17,7 @@ feature 'Admin Backend' do
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
       select 'Fixed', from: 'offer_encounter'
-      select organization.name, from: 'offer_organization_id'
+      select 'foobar', from: 'offer_organization_id'
 
       click_button 'Speichern'
       page.must_have_content 'testangebot'
@@ -27,7 +25,6 @@ feature 'Admin Backend' do
   end
 
   scenario 'Administrating Organizations' do
-
     visit rails_admin_path
 
     click_link 'Organisationen', match: :first
@@ -46,7 +43,6 @@ feature 'Admin Backend' do
   end
 
   scenario 'Try to create offer with a organization/location mismatch' do
-    organization = FactoryGirl.create :organization
     location = FactoryGirl.create(:location, name: 'testname')
 
     visit rails_admin_path
@@ -59,7 +55,7 @@ feature 'Admin Backend' do
     fill_in 'offer_next_steps', with: 'testnextsteps'
     select 'Fixed', from: 'offer_encounter'
     select location.name, from: 'offer_location_id'
-    select organization.name, from: 'offer_organization_id'
+    select 'foobar', from: 'offer_organization_id'
 
     click_button 'Speichern'
 
@@ -69,8 +65,6 @@ feature 'Admin Backend' do
   end
 
   scenario 'Mark offer as completed' do
-    FactoryGirl.create :offer
-
     visit rails_admin_path
 
     click_link 'Angebote', match: :first
@@ -84,8 +78,6 @@ feature 'Admin Backend' do
   end
 
   scenario 'Duplicate offer' do # calls partial dup that doesn't end up in an immediately valid offer
-    FactoryGirl.create :offer
-
     visit rails_admin_path
 
     click_link 'Angebote', match: :first

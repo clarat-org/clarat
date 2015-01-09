@@ -19,5 +19,16 @@ FactoryGirl.define do
         Faker::Internet.uri(%w(http https).sample)
       end
     end
+
+    trait :social do
+      host do
+        hosts = Website.enumerized_attributes.attributes['host'].values
+        (hosts - %w(own other)).sample
+      end
+    end
+
+    trait :own do
+      host 'own'
+    end
   end
 end

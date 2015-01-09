@@ -28,9 +28,11 @@ feature 'Search Form' do
 
   scenario 'Toggle tag filters in search results' do # makes above redundant?
     WebMock.enable!
-    o1 = FactoryGirl.create :offer, name: 'foo baz', tag: 'chunky bacon'
-    FactoryGirl.create :offer, name: 'foo fuz', tag: 'unrelated',
-      location: o1.location, organization: o1.organization
+    o1 = FactoryGirl.create :offer, :with_location,
+                            name: 'foo baz', tag: 'chunky bacon'
+    FactoryGirl.create :offer,
+                       name: 'foo fuz', tag: 'unrelated',
+                       location: o1.location, organization: o1.organization
     Offer.stubs(:algolia_search).returns(
       AlgoliaStubber.filled_response_stub(
         'foo',

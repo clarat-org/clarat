@@ -6,7 +6,9 @@ FactoryGirl.define do
     name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
-    encounter { Offer.enumerized_attributes.attributes['encounter'].values.sample }
+    encounter do
+      Offer.enumerized_attributes.attributes['encounter'].values.sample
+    end
     frequent_changes { Faker::Boolean.maybe }
     completed false
     approved false
@@ -15,7 +17,7 @@ FactoryGirl.define do
     # optional fields
     comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
     telephone { maybe Faker.numerify('#' * rand(7..11)) }
-    fax { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
+    fax { (maybe(true) && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
     contact_name { maybe Faker::NameDE.name }
     email { maybe Faker::Internet.email }
 
@@ -71,6 +73,10 @@ FactoryGirl.define do
       after :create do |offer, _evaluator|
         Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
       end
+    end
+
+    trait :with_location do
+      encounter 'fixed'
     end
   end
 end

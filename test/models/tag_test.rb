@@ -28,4 +28,17 @@ describe Tag do
       it { subject.must have_many :organizations }
     end
   end
+
+  describe 'methods' do
+    describe '#name_with_optional_asterisk' do
+      it 'should return name with asterisk for a main tag' do
+        tag.assign_attributes main: true, name: 'a'
+        tag.name_with_optional_asterisk.must_equal 'a*'
+      end
+      it 'should return name without asterisk for a non-main tag' do
+        tag.assign_attributes main: false, name: 'a'
+        tag.name_with_optional_asterisk.must_equal 'a'
+      end
+    end
+  end
 end

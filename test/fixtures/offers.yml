@@ -1,0 +1,9 @@
+basic:
+  id: 1
+  name: foobar
+  description: foobar
+  next_steps: foobar
+  encounter: independent
+  organization_id: 1
+  completed: t
+  approved: t

@@ -1,4 +1,5 @@
 class OffersController < ApplicationController
+  include GmapsVariable
   respond_to :html
 
   skip_before_action :authenticate_user!, only: [:index, :show]
@@ -8,7 +9,7 @@ class OffersController < ApplicationController
     @tags = @search_cache.tags_by_facet
     test_location_unavailable
     set_position
-    set_gmaps_variable
+    prepare_gmaps_variables @offers
     respond_with @offers
   end
 
@@ -20,6 +21,7 @@ class OffersController < ApplicationController
     @offer = Offer.friendly.find(params[:id])
     authorize @offer
 
+    prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
   end
@@ -39,23 +41,6 @@ class OffersController < ApplicationController
       cookies[:last_search_location] = nil # erase cookie so that next time the current location will be used again
     else
       cookies[:last_search_location] = @search_cache.location_for_cookie # set cookie so that next time the same location will be prefilled
-    end
-  end
-
-  def set_gmaps_variable
-    @markers = {}
-    @offers.each do |offer|
-      next unless offer.location
-      key = Geolocation.new(offer.location)
-
-      if @markers[key.to_s]
-        @markers[key.to_s][:offer_ids] << offer.id
-      else
-        @markers[key.to_s] = {
-          position: key.to_h,
-          offer_ids: [offer.id]
-        }
-      end
     end
   end
 

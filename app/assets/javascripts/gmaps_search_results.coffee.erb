@@ -1,23 +1,14 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
+  includedPoints = []
 
   if markers
-    # Get User Position
-    userPosition = $(canvas).data('position')
-    userPosition = new google.maps.LatLng(
-      userPosition.latitude,
-      userPosition.longitude
-    )
+    # Create Map
     mapOptions =
-      zoom: 11
-      center: userPosition
       scrollwheel: false
-
-    # Create Map and Center to User Position
     map = new google.maps.Map(canvas, mapOptions)
     bounds = new google.maps.LatLngBounds()
-    bounds.extend userPosition
 
     # Create Markers
     for key, markerData of markers
@@ -30,14 +21,30 @@ initialize = ->
         map: map
         icon: "<%= asset_path('gmaps_marker_1.svg') %>"
 
+      includedPoints.push markerPosition
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
       bindMapsEvents marker, markerData
       bindMarkerToResults marker, markerData
 
-    # Expand Map to Include Markers
-    map.fitBounds bounds
+    # Get User Position
+    userPosition = $(canvas).data('position')
+    if userPosition
+      # Include User Position in Map
+      userPosition = new google.maps.LatLng(
+        userPosition.latitude,
+        userPosition.longitude
+      )
+      includedPoints.push userPosition
+      bounds.extend userPosition
+
+    # Expand Map to Include All Markers
+    if includedPoints.length > 1
+      map.fitBounds bounds
+    else
+      map.setCenter bounds.getCenter()
+      map.setZoom 15
 
     bindExternalEvents()
 

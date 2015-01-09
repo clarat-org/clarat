@@ -1,4 +1,5 @@
-.wrapper-inner class="#{'no-location' unless @location}"
+- location = @organization.location
+.wrapper-inner class="#{'no-location' unless location}"
   main.content-main.content-main--wide
 
     header.page-detail__header
@@ -21,30 +22,30 @@
 
     .section-wrapper-minor
 
-      - if @location
+      - if location
         section.section-content.section-content--where
           h3.section-content__title Wo
           .section-content__body
             /! http://microformats.org/wiki/adr start
             .adr
               p
-                - if @location.name?
-                  span.org= @location.name
+                - if location.name?
+                  span.org= location.name
                   br
-                - if @location.addition?
-                  span.extended-address= @location.addition
+                - if location.addition?
+                  span.extended-address= location.addition
                   br
-                span.street-address= @location.street
+                span.street-address= location.street
                 br
-                span.postal-code=> @location.zip
-                span.locality= @location.city
+                span.postal-code=> location.zip
+                span.locality= location.city
             /! http://microformats.org/wiki/adr end
 
-      section.section-content--map
-        .aside-standard__container
-          h5.aside-standard__headline Kartenausgabe
-          #map-container
-            #map-canvas data={ markers: '{"52.5071987700295,13.4224654888445":{"position":{"latitude":52.5071987700295,"longitude":13.4224654888445},"offer_ids":[5]}}', position: '{"latitude":52.5200066,"longitude":13.404954}' }
+        section.section-content--map
+          .aside-standard__container
+            h5.aside-standard__headline Kartenausgabe
+            #map-container
+              #map-canvas data={markers: @markers.to_json}
 
         button.offer-contribute
           | <i class="fa fa-pencil-square-o"></i>

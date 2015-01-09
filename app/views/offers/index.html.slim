@@ -37,7 +37,7 @@
       h5.aside-standard__headline Kartenausgabe der Suchergebnisse
 
       #map-container
-        #map-canvas data={markers: "#{@markers.to_json}", position: "#{@position.to_json}"}
+        #map-canvas data={markers: @markers.to_json, position: @position.to_json}
 
     .aside-standard__container
       h5.aside-standard__headline Schlagwortfilter

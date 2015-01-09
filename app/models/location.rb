@@ -23,6 +23,9 @@ class Location < ActiveRecord::Base
   validates :organization_id, presence: true
   validates :federal_state_id, presence: true
 
+  # Scopes
+  scope :hq, -> { where(hq: true).limit(1) }
+
   # Geocoding
   geocoded_by :full_address
 

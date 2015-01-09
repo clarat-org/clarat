@@ -42,6 +42,11 @@ class Organization < ActiveRecord::Base
     'anonymous'
   end
 
+  # finds the main (HQ) location of this organization
+  def location
+    @location ||= locations.hq.first
+  end
+
   def partial_dup
     self.dup.tap do |orga|
       orga.name = nil

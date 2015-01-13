@@ -14,6 +14,10 @@ class Organization < ActiveRecord::Base
                                 state_entity)
   enumerize :umbrella, in: %w(caritas diakonie awo dpw drk zwst)
 
+  # Sanitization
+  extend Sanitization
+  auto_sanitize :name # TODO: add to this list
+
   # Friendly ID
   extend FriendlyId
   friendly_id :name, use: [:slugged]

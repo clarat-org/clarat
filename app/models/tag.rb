@@ -11,6 +11,10 @@ class Tag < ActiveRecord::Base
   # Validations
   validates :name, uniqueness: true, presence: true
 
+  # Sanitization
+  extend Sanitization
+  auto_sanitize :name
+
   # Scope
   scope :mains, -> { where(main: true).order(:icon).limit(5) }
 

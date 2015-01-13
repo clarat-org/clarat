@@ -1,6 +1,10 @@
 class Website < ActiveRecord::Base
   # associtations
-  has_many :hyperlinks, as: :linkable
+  has_many :hyperlinks
+  has_many :organizations, through: :hyperlinks,
+           source: :linkable, source_type: 'Organization'
+  has_many :offers, through: :hyperlinks,
+           source: :linkable, source_type: 'Offer'
 
   # Enumerization
   extend Enumerize

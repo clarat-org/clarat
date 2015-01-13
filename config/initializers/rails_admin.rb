@@ -94,6 +94,11 @@ RailsAdmin.config do |config|
   config.model 'Website' do
     field :host
     field :url
+
+    show do
+      field :offers
+      field :organizations
+    end
   end
 
   config.model 'Location' do

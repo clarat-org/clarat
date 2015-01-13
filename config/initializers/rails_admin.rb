@@ -242,7 +242,7 @@ RailsAdmin.config do |config|
     field :name
     field :main
     field :synonyms
-    field :associated_tags
+    field :dependent_tags
 
     object_label_method :name_with_optional_asterisk
 

@@ -1,8 +1,12 @@
 class Offer < ActiveRecord::Base
   has_paper_trail
+
+  # Modules
+  include Validations, Search, Tagging
+
   # Associtations
   belongs_to :location, inverse_of: :offers
-  has_and_belongs_to_many :tags
+  has_and_belongs_to_many :tags, after_add: :add_dependent_tags
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   belongs_to :organization, inverse_of: :offers, counter_cache: true
@@ -27,12 +31,6 @@ class Offer < ActiveRecord::Base
       [:name, :location_zip]
     ]
   end
-
-  # Validations
-  include Validations
-
-  # Search
-  include Search
 
   # Statistics
   extend RailsAdminStatistics

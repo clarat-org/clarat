@@ -11,18 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150101232250) do
+ActiveRecord::Schema.define(version: 20150113140144) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "associated_tags", force: true do |t|
-    t.integer "tag_id"
-    t.integer "associated_id"
-  end
-
-  add_index "associated_tags", ["associated_id"], name: "index_associated_tags_on_associated_id", using: :btree
-  add_index "associated_tags", ["tag_id"], name: "index_associated_tags_on_tag_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -32,6 +24,14 @@ ActiveRecord::Schema.define(version: 20150101232250) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "dependent_tags", force: true do |t|
+    t.integer "tag_id"
+    t.integer "dependent_id"
+  end
+
+  add_index "dependent_tags", ["dependent_id"], name: "index_dependent_tags_on_dependent_id", using: :btree
+  add_index "dependent_tags", ["tag_id"], name: "index_dependent_tags_on_tag_id", using: :btree
 
   create_table "federal_states", force: true do |t|
     t.string   "name",       null: false

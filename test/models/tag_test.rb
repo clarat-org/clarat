@@ -23,7 +23,7 @@ describe Tag do
 
   describe '::Base' do
     describe 'associations' do
-      it { subject.must have_and_belong_to_many :associated_tags }
+      it { subject.must have_and_belong_to_many :dependent_tags }
       it { subject.must have_and_belong_to_many :offers }
       it { subject.must have_many :organizations }
     end

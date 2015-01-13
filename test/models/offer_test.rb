@@ -108,5 +108,29 @@ describe Offer do
         offers(:basic).social_media_websites?.must_equal false
       end
     end
+
+    describe '#add_dependent_tags (tags after_add callback)' do
+      it 'should add dependent tags over multiple levels' do
+        tag1 = Tag.create name: 'foobar'
+        tag2 = Tag.create name: 'dependent1'
+        tag3 = Tag.create name: 'dependent2'
+        tag1.dependent_tags << tag2
+        tag2.dependent_tags << tag3
+
+        offers(:basic).tags << tag1
+        offers(:basic).tags.must_include tag2
+        offers(:basic).tags.must_include tag3
+      end
+
+      it 'should not break with recursive dependencies' do
+        tag1 = Tag.create name: 'dependent1'
+        tag2 = Tag.create name: 'dependent2'
+        tag1.dependent_tags << tag2
+        tag2.dependent_tags << tag1
+
+        offers(:basic).tags << tag1
+        offers(:basic).tags.must_equal [tag1, tag2]
+      end
+    end
   end
 end

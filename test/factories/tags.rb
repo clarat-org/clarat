@@ -7,11 +7,11 @@ FactoryGirl.define do
 
     # associations
     ignore do
-      associated_tag_count { rand(1..3) }
+      dependent_tag_count { rand(1..3) }
     end
     after :create do |tag, evaluator|
-      evaluator.associated_tag_count.times do
-        tag.associated_tags << FactoryGirl.create(:tag, associated_tag_count: 0)
+      evaluator.dependent_tag_count.times do
+        tag.dependent_tags << FactoryGirl.create(:tag, dependent_tag_count: 0)
       end
     end
   end

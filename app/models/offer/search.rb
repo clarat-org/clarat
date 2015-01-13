@@ -10,8 +10,9 @@ class Offer
         attributesToIndex %w(
           name description keyword_string organization_name
         )
-        ranking %w(typo custom geo words proximity attribute exact) # ^custom
-        customRanking ['asc(encounter_value)']
+        ranking %w(
+          typo asc(encounter_value) geo words proximity attribute exact custom
+        ) # ^encounter_value
         add_attribute :_geoloc, :_tags
         add_attribute :keyword_string, :organization_name, :location_street,
                       :location_city, :location_zip, :encounter_value

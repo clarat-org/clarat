@@ -7,8 +7,12 @@ FactoryGirl.define do
 
     confirmed_at Time.now
 
-    factory :admin do
-      admin true
+    factory :admin, aliases: [:researcher] do
+      role 'researcher'
+    end
+
+    factory :super do
+      role 'super'
     end
   end
 end

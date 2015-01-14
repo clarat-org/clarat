@@ -2,7 +2,7 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # Modules
-  include Validations, Search, Tagging
+  include Validations, Search, Tagging, Statistics
 
   # Associtations
   belongs_to :location, inverse_of: :offers
@@ -31,9 +31,6 @@ class Offer < ActiveRecord::Base
       [:name, :location_zip]
     ]
   end
-
-  # Statistics
-  extend RailsAdminStatistics
 
   # Scopes
   scope :approved, -> { where(approved: true, completed: true) }

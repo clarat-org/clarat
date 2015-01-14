@@ -71,6 +71,7 @@ gem 'rails_admin_clone'
 gem 'rails_admin'
 gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
 # path: '../rails_admin_statistics' #
+gem 'cancan' # role based auth for rails_admin
 
 gem 'devise'
 gem 'omniauth-facebook'

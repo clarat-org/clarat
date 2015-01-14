@@ -12,7 +12,7 @@ describe User do
     it { subject.must_respond_to :encrypted_password }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :created_at }
-    it { subject.must_respond_to :admin }
+    it { subject.must_respond_to :role }
   end
 
   describe 'validations' do

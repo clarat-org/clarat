@@ -39,7 +39,7 @@ class Offer
         time_column = field.to_s + '_at'
         user_column = field.to_s + '_by'
         count = self.where('? <= ?', time_column, end_time)
-        count = count.where('? <= ?', user_column, user_id)
+        count = count.where(user_column => user_id)
         count = count.where('? >= ?', time_column, start_time) if use_start_time
         count = count.count
         [start_time.to_i * 1000, count]

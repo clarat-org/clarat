@@ -4,6 +4,9 @@ class Offer < ActiveRecord::Base
   # Modules
   include Validations, Search, Tagging, Statistics
 
+  # Concerns
+  include Approvable
+
   # Associtations
   belongs_to :location, inverse_of: :offers
   has_and_belongs_to_many :tags, after_add: :add_dependent_tags
@@ -21,9 +24,6 @@ class Offer < ActiveRecord::Base
   # Friendly ID
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
-
-  include Approvable
-  before_save :add_approved_at
 
   def slug_candidates
     [

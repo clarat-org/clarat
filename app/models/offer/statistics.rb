@@ -24,7 +24,7 @@ class Offer
           user_stats[u.email] = []
 
           RailsAdminStatistics.per_cweek do |cweek, year|
-            stat = calculate_user_stat field, use_start_time, cweek, year
+            stat = calculate_user_stat u.id, field, use_start_time, cweek, year
             user_stats[u.email] << stat
           end
         end
@@ -32,13 +32,15 @@ class Offer
         user_stats
       end
 
-      def self.calculate_user_stat field, use_start_time, cweek, year
+      def self.calculate_user_stat user_id, field, use_start_time, cweek, year
         start_time = Date.commercial(year, cweek).to_datetime
         end_time = start_time.end_of_week
 
-        column_name = field.to_s + '_at'
-        count = self.select(:id).where('? <= ?', column_name, end_time)
-        count = count.where('? >= ?', column_name, start_time) if use_start_time
+        time_column = field.to_s + '_at'
+        user_column = field.to_s + '_by'
+        count = self.where('? <= ?', time_column, end_time)
+        count = count.where('? <= ?', user_column, user_id)
+        count = count.where('? >= ?', time_column, start_time) if use_start_time
         count = count.count
         [start_time.to_i * 1000, count]
       end

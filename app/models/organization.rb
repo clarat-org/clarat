@@ -1,6 +1,9 @@
 class Organization < ActiveRecord::Base
   has_paper_trail
 
+  # Concerns
+  include Approvable
+
   # Associtations
   has_many :locations
   has_many :offers
@@ -21,9 +24,6 @@ class Organization < ActiveRecord::Base
   # Friendly ID
   extend FriendlyId
   friendly_id :name, use: [:slugged]
-
-  include Approvable
-  before_save :add_approved_at
 
   # Validations
   validates :name, length: { maximum: 100 }, presence: true, uniqueness: true

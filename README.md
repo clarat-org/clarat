@@ -5,4 +5,4 @@ clarat
 
 A charity directory
 
-Code released under [the MIT license](LICENSE).
+All components in this project, excluding any images and logos containing trademarks belonging to Benckiser Stiftung Zukunft or gut.org are relased under [the MIT license](LICENSE).

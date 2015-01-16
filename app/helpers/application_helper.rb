@@ -41,4 +41,13 @@ module ApplicationHelper
       locals: { selector: selector, block: block }
     )
   end
+
+  def full_title(page_title)
+    base_title = 'clarat'
+    if page_title.empty?
+      base_title
+    else
+      "#{page_title} | #{base_title}"
+    end
+  end
 end

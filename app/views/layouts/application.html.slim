@@ -1,7 +1,8 @@
 doctype html
 html class='no-js' lang=I18n.locale
   head
-    title clarat
+    title
+      = full_title(yield(:title))
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     | <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 

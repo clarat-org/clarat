@@ -20,12 +20,12 @@ class Offer
       def self.stats_by_user field, use_start_time
         user_stats = {}
 
-        User.researcher.select(:id, :email, :role).find_each do |u|
-          user_stats[u.email] = []
+        User.researcher.select(:id, :name, :role).find_each do |u|
+          user_stats[u.name] = []
 
           RailsAdminStatistics.per_cweek do |cweek, year|
             stat = calculate_user_stat u.id, field, use_start_time, cweek, year
-            user_stats[u.email] << stat
+            user_stats[u.name] << stat
           end
         end
 

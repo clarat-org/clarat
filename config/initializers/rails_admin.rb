@@ -213,6 +213,9 @@ RailsAdmin.config do |config|
       field :approved_by
     end
 
+    statistics do
+    end
+
     clone_config do
       custom_method :partial_dup
     end
@@ -283,6 +286,7 @@ RailsAdmin.config do |config|
       field :id
       field :name
       field :email
+      field :role
       field :created_at
       field :updated_at
     end

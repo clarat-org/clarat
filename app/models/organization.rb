@@ -2,7 +2,7 @@ class Organization < ActiveRecord::Base
   has_paper_trail
 
   # Concerns
-  include Approvable
+  include Creator, Approvable
 
   # Associtations
   has_many :locations
@@ -38,13 +38,6 @@ class Organization < ActiveRecord::Base
   extend RailsAdminStatistics
 
   # Methods
-
-  def creator_email
-    creator = User.find(versions.first.whodunnit)
-    creator.email
-  rescue
-    'anonymous'
-  end
 
   # finds the main (HQ) location of this organization
   def location

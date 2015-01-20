@@ -57,7 +57,7 @@ RailsAdmin.config do |config|
       field :legal_form
       field :completed
       field :approved
-      field :creator_email
+      field :creator
       field :locations_count
 
       sort_by :offers_count
@@ -87,6 +87,8 @@ RailsAdmin.config do |config|
     show do
       field :offers
       field :locations
+      field :created_by
+      field :approved_by
     end
 
     clone_config do
@@ -158,7 +160,7 @@ RailsAdmin.config do |config|
       field :frequent_changes
       field :completed
       field :approved
-      field :creator_email
+      field :creator
       field :organization
     end
     weight(-1)
@@ -205,6 +207,11 @@ RailsAdmin.config do |config|
     field :websites
     field :completed
     field :approved
+
+    show do
+      field :created_by
+      field :approved_by
+    end
 
     clone_config do
       custom_method :partial_dup

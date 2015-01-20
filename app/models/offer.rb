@@ -5,7 +5,7 @@ class Offer < ActiveRecord::Base
   include Validations, Search, Tagging, Statistics
 
   # Concerns
-  include Approvable
+  include Creator, Approvable
 
   # Associtations
   belongs_to :location, inverse_of: :offers
@@ -47,13 +47,6 @@ class Offer < ActiveRecord::Base
     when 'independent' then 0
     when 'determinable', 'fixed' then 1
     end
-  end
-
-  def creator_email
-    creator = User.find(versions.first.whodunnit)
-    creator.email
-  rescue
-    'anonymous'
   end
 
   def partial_dup

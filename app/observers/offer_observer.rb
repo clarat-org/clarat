@@ -7,4 +7,8 @@ class OfferObserver < ActiveRecord::Observer
     current_user = ::PaperTrail.whodunnit
     offer.created_by = current_user.id if current_user # so unclean ...
   end
+
+  def after_save offer
+    offer.prevent_duplicate_tags
+  end
 end

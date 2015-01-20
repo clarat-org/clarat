@@ -211,7 +211,6 @@ ActiveRecord::Schema.define(version: 20150114220114) do
     t.string   "encrypted_password",     default: "",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role",                   default: "standard"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.string   "confirmation_token"
@@ -222,6 +221,7 @@ ActiveRecord::Schema.define(version: 20150114220114) do
     t.datetime "locked_at"
     t.string   "provider"
     t.string   "uid"
+    t.string   "role",                   default: "standard"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree

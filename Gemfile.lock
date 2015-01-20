@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/clarat-org/rails_admin_statistics.git
-  revision: 7e6cc528db2db5d08c9adbd6c3a77fb774a2f1d7
+  revision: 380f5f1f146dceb7b248f9605de65985c64fa182
   specs:
-    rails_admin_statistics (0.0.6)
+    rails_admin_statistics (0.0.7)
       rails
       railties
 

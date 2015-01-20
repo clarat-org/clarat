@@ -13,7 +13,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   belongs_to :organization, inverse_of: :offers, counter_cache: true
-  # Attention: former has_one :organization, through: :locations - but there can also be offers without locations
+  # Attention: former has_one :organization, through: :locations
+  # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 

@@ -43,6 +43,24 @@ en:
       user:
         one: User
         other: Users
+      contact:
+        one: Contact Form Submission
+        other: Contact Form Submissions
+      subscription:
+        one: Newsletter Subscription
+        other: Newsletter Subscriptions
+      website:
+        one: Website
+        other: Websites
+      hyperlink:
+        one: Hyperlink
+        other: Hyperlinks
+      search_location:
+        one: Search Location
+        other: Search Locations
+      update_request:
+        one: Request for Location Updates
+        other: Requests for Location Updates
   i18n:
     transliterate:
       rule:

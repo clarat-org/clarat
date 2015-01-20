@@ -277,10 +277,22 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.label_methods << :email
   config.model 'User' do
     weight 1
+    list do
+      field :id
+      field :name
+      field :email
+      field :created_at
+      field :updated_at
+    end
+
     edit do
+      field :name do
+        read_only do
+          bindings[:object] != bindings[:view].current_user
+        end
+      end
       field :email do
         read_only do
           bindings[:object] != bindings[:view].current_user
@@ -294,12 +306,24 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model 'Hyperlink' do
+  config.model 'Contact' do
     weight 2
   end
 
-  config.model 'SearchLocation' do
+  config.model 'Subscription' do
     weight 2
+  end
+
+  config.model 'UpdateRequest' do
+    weight 2
+  end
+
+  config.model 'Hyperlink' do
+    weight 3
+  end
+
+  config.model 'SearchLocation' do
+    weight 3
     field :query do
       read_only true
     end

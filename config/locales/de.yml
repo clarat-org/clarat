@@ -29,6 +29,21 @@ de:
       user:
         one: Nutzer
         other: Nutzer
+      contact:
+        one: Kontaktformular-Anfrage
+        other: Kontaktformular-Anfragen
+      subscription:
+        one: Newsletter Abonnement
+        other: Newsletter Abonnements
+      website:
+        one: Webseite
+        other: Webseiten
+      hyperlink:
+        one: Hyperlink
+        other: Hyperlinks
+      search_location:
+        one: Search Location
+        other: Search Locations
       update_request:
         one: 'Update Request'
         other: 'Update Requests'

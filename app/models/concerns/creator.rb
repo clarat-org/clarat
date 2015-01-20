@@ -3,7 +3,7 @@ module Creator
 
   included do
     def creator
-      User.find(created_by).email
+      User.find(created_by).name
     rescue
       'anonymous'
     end

@@ -211,6 +211,7 @@ ActiveRecord::Schema.define(version: 20150120150109) do
     t.string   "encrypted_password",     default: "",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "role",                   default: "standard"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.string   "confirmation_token"
@@ -221,7 +222,6 @@ ActiveRecord::Schema.define(version: 20150120150109) do
     t.datetime "locked_at"
     t.string   "provider"
     t.string   "uid"
-    t.string   "role",                   default: "standard"
     t.string   "name"
   end
 

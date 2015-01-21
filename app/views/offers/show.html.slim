@@ -4,13 +4,6 @@
     header.page-detail__header
       h2.page-detail__title= @offer.name
       .page-detail__icons
-        - @offer.tags.mains.each do |main_tag|
-          .FORMARCUS class="FORMARCUS--#{main_tag.icon}"
-        / above will be one or multiple of: a-crisis, b-learn, c-family, d-health, e-habitation
-        / when finished, delete this comments and these two images:
-        = image_tag "picto_family.svg", alt: ""
-        = image_tag "picto_crisis.svg", alt: ""
-
     .section-wrapper-major
       section.section-content.section-content--what
         h3.section-content__title Was

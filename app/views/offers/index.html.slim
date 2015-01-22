@@ -2,7 +2,8 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        = "#{@search_cache.hit_count} Ergebnisse"
+        / ToDo: Use 'Angebot'  if it is just one
+        = "#{@search_cache.hit_count} Angebote"
         - tags = @search_cache.tags
         - unless tags.empty?
           |  (Schlagwortfilter:

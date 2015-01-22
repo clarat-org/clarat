@@ -7,7 +7,7 @@ feature 'Search Form' do
     WebMock.enable!
     visit root_path
     find('.main-search__submit').click
-    page.must_have_content '0 Ergebnisse'
+    page.must_have_content '0 Angebote'
     WebMock.disable!
   end
 
@@ -22,7 +22,7 @@ feature 'Search Form' do
     fill_in 'search_form_query', with: 'bazfuz'
     fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
-    page.must_have_content '1 Ergebnisse'
+    page.must_have_content '1 Angebote'
     WebMock.disable!
   end
 

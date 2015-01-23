@@ -11,7 +11,7 @@ def rubocop
   unless offense_count == 0
     result['files'].each do |file|
       next if file['offenses'].empty?
-      puts format(file)
+      puts rubocop_format(file)
     end
   end
 
@@ -24,50 +24,7 @@ def rubocop
   end
 end
 
-def format obj
-  # {
-  #   "metadata": {
-  #     "rubocop_version": "0.9.0",
-  #     "ruby_engine": "ruby",
-  #     "ruby_version": "2.0.0",
-  #     "ruby_patchlevel": "195",
-  #     "ruby_platform": "x86_64-darwin12.3.0"
-  #   },
-  #   "files": [{
-  #       "path": "lib/foo.rb",
-  #       "offenses": []
-  #     }, {
-  #       "path": "lib/bar.rb",
-  #       "offenses": [{
-  #           "severity": "convention",
-  #           "message": "Line is too long. [81/80]",
-  #           "cop_name": "LineLength",
-  #           "corrected": true,
-  #           "location": {
-  #             "line": 546,
-  #             "column": 80,
-  #             "length": 4
-  #           }
-  #         }, {
-  #           "severity": "warning",
-  #           "message": "Unreachable code detected.",
-  #           "cop_name": "UnreachableCode",
-  #           "corrected": false,
-  #           "location": {
-  #             "line": 15,
-  #             "column": 9,
-  #             "length": 10
-  #           }
-  #         }
-  #       ]
-  #     }
-  #   ],
-  #   "summary": {
-  #     "offense_count": 2,
-  #     "target_file_count": 2,
-  #     "inspected_file_count": 2
-  #   }
-  # }
+def rubocop_format obj
   output = ''
 
   obj['offenses'].each do |offense|

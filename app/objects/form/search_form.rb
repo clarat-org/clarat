@@ -20,7 +20,8 @@ class SearchForm
                                  aroundRadius: 999_999_999,
                                  tagFilters: tags,
                                  facets: '_tags',
-                                 maxValuesPerFacet: 20
+                                 maxValuesPerFacet: 20,
+                                 aroundPrecision: 500
   end
 
   def nearby?

@@ -1,4 +1,5 @@
 ENV['RAILS_ENV'] ||= 'test'
+require Rails.root.join('test/support/spec_helpers/coverage.rb')
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
@@ -6,7 +7,6 @@ require 'minitest/rails/capybara'
 require 'minitest/pride'
 require 'mocha/mini_test'
 require 'capybara/rails'
-require Rails.root.join('test/support/spec_helpers/coverage.rb')
 
 require File.expand_path('../../config/environment', __FILE__)
 
@@ -47,6 +47,7 @@ end
 Minitest.after_run do
   rails_best_practices
   brakeman
+  rubocop
 end
 
 class ActionController::TestCase

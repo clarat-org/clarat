@@ -60,15 +60,14 @@ describe Offer do
   end
 
   describe 'methods' do
-    describe '#creator_email' do
+    describe '#creator' do
       it 'should return anonymous by default' do
-        offer.creator_email.must_equal 'anonymous'
+        offer.creator.must_equal 'anonymous'
       end
 
-      it 'should return users email if there is a a version' do
-        user = FactoryGirl.create :user
-        offer.stub_chain(:versions, :first, :whodunnit).returns 1
-        offer.creator_email.must_equal user.email
+      it 'should return users name if there is a a version' do
+        offer = FactoryGirl.create :offer, :with_creator
+        offer.creator.must_equal User.last.name
       end
     end
 

@@ -9,6 +9,6 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 ]
 
 SimpleCov.start 'rails' do
-  add_filter "app/policies/application_policy.rb"
+  add_filter "/test/"
   minimum_coverage 100
 end

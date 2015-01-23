@@ -15,13 +15,13 @@ module PunditMatcher
     def check_devise_auth_on policy, action
       # check if base class is already devise authorized
       controller = eval("#{policy.class.to_s[0..-7].pluralize}Controller")
-      define_before_filter_getter_for controller
-      controller.has_before_filter_of_type? :authenticate_user!, action
+      define_before_action_getter_for controller
+      controller.has_before_action_of_type? :authenticate_user!, action
     end
 
-    def define_before_filter_getter_for controller
+    def define_before_action_getter_for controller
       # This is the method we want on a controller for testing purposes:
-      has_before_filter_of_type = proc do |filter, action_name|
+      has_before_action_of_type = proc do |filter, action_name|
         all_filters = _process_action_callbacks
         filter_hash = all_filters.select { |f| f.kind == :before && f.filter == filter }[0]
 
@@ -40,7 +40,7 @@ module PunditMatcher
 
       # Now we set the method to the currently used controller:
       metaclass = class << controller; self; end
-      metaclass.send :define_method, :has_before_filter_of_type?, has_before_filter_of_type
+      metaclass.send :define_method, :has_before_action_of_type?, has_before_action_of_type
     end
   end
 

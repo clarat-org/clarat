@@ -3,7 +3,7 @@ module GmapsVariable
   extend ActiveSupport::Concern
 
   included do
-    before_filter :initialize_markers, only: [:show, :index]
+    before_action :initialize_markers, only: [:show, :index]
 
     def prepare_gmaps_variables collection
       collection.each do |element|

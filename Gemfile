@@ -164,7 +164,7 @@ group :development, :test do
   gem 'rubocop' # style enforcement
 
   # Code Coverage
-  gem 'simplecov'
+  gem 'simplecov', require: false
   gem 'coveralls', require: false
 
   # dev help

@@ -73,10 +73,15 @@ FactoryGirl.define do
       after :create do |offer, _evaluator|
         Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
       end
+      approved_by { FactoryGirl.create(:researcher).id }
     end
 
     trait :with_location do
       encounter 'fixed'
+    end
+
+    trait :with_creator do
+      created_by { FactoryGirl.create(:researcher).id }
     end
   end
 end

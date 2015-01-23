@@ -10,9 +10,9 @@ class Opening < ActiveRecord::Base
   # Validations
   validates :day, presence: true, uniqueness: { scope: [:open, :close] }
   validates :open, uniqueness: { scope: [:day, :close] }
-  validates_presence_of :open, if: :close
+  validates :open, presence: true, if: :close
   validates :close, uniqueness: { scope: [:day, :open] }
-  validates_presence_of :close, if: :open
+  validates :close, presence: true, if: :open
 
   validates :sort_value, presence: true
   validates :name, presence: true

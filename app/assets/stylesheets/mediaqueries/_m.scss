@@ -154,6 +154,10 @@
 		pointer-events: auto;
 	}
 
+	.jump-to-tags {
+		display: none;
+	}
+
 	.popup_content {
 		margin: 25px; // override inline CSS caused by JS
 		width: auto !important;

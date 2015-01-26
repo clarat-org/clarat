@@ -67,4 +67,4 @@ de:
     default_latlng: '52.520007,13.404954'
   js:
     obfuscated_email: 'Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.'
-    navigate_to_tags: 'Zum Schlagwortfilter'
+    navigate_to_tags: 'Filtern…'

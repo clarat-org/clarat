@@ -91,6 +91,18 @@ feature 'Admin Backend' do
       page.must_have_content 'Angebot wurde nicht hinzugefügt'
     end
 
+    scenario 'Duplicate organization' do
+      visit rails_admin_path
+
+      click_link 'Organisationen', match: :first
+      click_link 'Duplizieren'
+      fill_in 'organization_name', with: 'kopietestname'
+
+      click_button 'Speichern'
+
+      page.must_have_content 'kopietestname'
+    end
+
     scenario 'View statistics should not work' do
       visit rails_admin_path
 

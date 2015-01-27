@@ -69,16 +69,16 @@
 	.Distributor--navigation {
 		.twitter-typeahead,
 		#search_form_search_location {
-			margin-left: 24%;
-			width: 62%;
+			padding-right: 32px;
+			width: 100%;
+
 		}
 	}
 
 	#new_search_form {
 		position: relative;
-		padding: 15px 5px 0 50px;
+		padding: 15px 5px 0 106px;
 		width: 100%;
-
 
 		#search_form_query,
 		#search_form_search_location {
@@ -89,7 +89,7 @@
 
 		#search_form_search_location {
 			margin-top: 10px;
-			width: 62%;
+			width: 80%;
 		}
 
 		.main-search__submit {
@@ -276,8 +276,6 @@
 		right: 0;
 		z-index: 10;
 		display: inline-block;
-		width: 40%;
-		height: 40px;
 		margin-right: 15px;
 		width: 36%;
 		height: 32px;
@@ -285,7 +283,6 @@
 		color: $brand_white;
 		text-align: center;
 		text-decoration: none;
-		line-height: 40px;
 		line-height: 32px;
 	}
 

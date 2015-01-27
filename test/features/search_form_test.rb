@@ -11,22 +11,25 @@ feature 'Search Form' do
     WebMock.disable!
   end
 
-  scenario 'Search with results' do
+  scenario 'Search with results but none nearby shows overlay' do
     WebMock.enable!
     FactoryGirl.create :offer, name: 'bazfuz'
     Offer.stubs(:algolia_search).returns(
       AlgoliaStubber.filled_response_stub('bazfuz', ['bazfuz'])
     )
+    SearchForm.any_instance.expects(:nearby?).returns(false)
 
     visit root_path
     fill_in 'search_form_query', with: 'bazfuz'
     fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
     page.must_have_content '1 Angebote'
+
+    page.must_have_content I18n.t 'offers.index.unavailable_location_modal'
     WebMock.disable!
   end
 
-  scenario 'Toggle tag filters in search results' do # makes above redundant?
+  scenario 'Toggle tag filters in search results' do
     WebMock.enable!
     o1 = FactoryGirl.create :offer, :with_location,
                             name: 'foo baz', tag: 'chunky bacon'

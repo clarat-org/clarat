@@ -1,11 +1,11 @@
 class SearchFormRefinery < ApplicationRefinery
   def root
-    false
+    'search_form'
   end
 
   def default
     [
-      :query, :geoloc
+      :query, :generated_geolocation, :search_location, :tags
     ]
   end
 end

@@ -2,11 +2,11 @@ require_relative '../test_helper'
 include Warden::Test::Helpers
 
 feature 'Admin Backend' do
-  let(:admin) { FactoryGirl.create :researcher }
+  let(:researcher) { FactoryGirl.create :researcher }
   let(:superuser) { FactoryGirl.create :super }
 
   describe 'as researcher' do
-    before { login_as admin }
+    before { login_as researcher }
 
     scenario 'Administrating Offers' do
       visit rails_admin_path
@@ -40,7 +40,7 @@ feature 'Admin Backend' do
         click_button 'Speichern'
         page.must_have_content 'testorganisation'
         page.must_have_content '✘'
-        page.must_have_content admin.email
+        page.must_have_content researcher.email
       end
     end
 
@@ -67,6 +67,70 @@ feature 'Admin Backend' do
       page.must_have_content 'Angebot wurde nicht aktualisiert'
       page.must_have_content 'Location muss zu der unten angegebenen Organisation gehören.'
       page.must_have_content 'Organizations muss die des angegebenen Standorts beinhalten.'
+    end
+
+    scenario 'Approve offer' do
+      orga = organizations(:basic)
+      FactoryGirl.create :location, name: 'foobar', organization: orga
+      tag = FactoryGirl.create :tag, :main
+
+      # 1: Create incomplete offer
+      visit rails_admin_path
+
+      click_link 'Angebote', match: :first
+      click_link 'Neu hinzufügen'
+
+      fill_in 'offer_name', with: 'testangebot'
+      fill_in 'offer_description', with: 'testdescription'
+      fill_in 'offer_next_steps', with: 'testnextsteps'
+      select 'Fixed', from: 'offer_encounter'
+      select 'foobar', from: 'offer_location_id'
+      check 'offer_completed'
+      click_button 'Speichern und bearbeiten'
+
+      # 2: Fail to approve as same user
+      check 'offer_approved'
+      click_button 'Speichern'
+      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
+
+      # 3: Login as user able to approve, fail to approve incomplete offer
+      login_as superuser
+
+      visit rails_admin_path
+      click_link 'Angebote', match: :first
+      click_link 'Bearbeiten', match: :first
+
+      uncheck 'offer_completed'
+      check 'offer_approved'
+      click_button 'Speichern'
+      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
+      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
+
+      # 4: Set complete, fail to approve offer without organization
+      check 'offer_completed'
+      click_button 'Speichern'
+      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
+      page.must_have_content 'Organizations benötigt mindestens eine Organisation'
+
+      # 5: fix orga selection error, but orga is not approved
+      orga.update_column :approved, false
+      select 'foobar', from: 'offer_organization_ids'
+      click_button 'Speichern'
+
+      page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
+      page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+
+      # 6: fix all orga errors, still needs main tag
+      orga.update_column :approved, true
+      click_button 'Speichern'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.must_have_content 'Tags benötigt mindestens einen Haupt-Tag'
+
+      # 7: fix tag error, offer is approved
+      select tag.name, from: 'offer_tag_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Tags benötigt mindestens einen Haupt-Tag'
+      page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 
     scenario 'Mark offer as completed' do
@@ -106,6 +170,35 @@ feature 'Admin Backend' do
       page.must_have_content 'kopietestname'
     end
 
+    describe 'Dependent Tags' do
+      before do
+        @tag = FactoryGirl.create :tag, dependent_tag_count: 1
+        @dependent = @tag.dependent_tags.first
+        visit rails_admin_path
+        click_link 'Angebote', match: :first
+        click_link 'Bearbeiten'
+      end
+
+      scenario 'Dependent tags get added automatically' do
+        select @tag.name, from: 'offer_tag_ids'
+        click_button 'Speichern und bearbeiten'
+
+        tags = offers(:basic).reload.tags
+        tags.must_include @tag
+        tags.must_include @dependent
+      end
+
+      scenario 'Dependent tags get added only once (dupes get removed)' do
+        select @tag.name, from: 'offer_tag_ids'
+        select @dependent.name, from: 'offer_tag_ids'
+        click_button 'Speichern und bearbeiten'
+
+        tags = offers(:basic).reload.tags.to_a
+        tags.must_include @tag
+        tags.count(@dependent).must_equal 1
+      end
+    end
+
     scenario 'View statistics should not work' do
       visit rails_admin_path
 
@@ -118,7 +211,7 @@ feature 'Admin Backend' do
     before { login_as superuser }
 
     scenario 'View statistics' do
-      admin # create one for stats
+      researcher # create one for stats
       visit rails_admin_path
 
       click_link 'Angebote', match: :first

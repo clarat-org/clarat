@@ -14,7 +14,7 @@ Clarat::Application.routes.draw do
     # RESTful resources
     resources :offers, only: [:index, :show]
     resources :organizations, only: [:show]
-    resources :users, only: [:show]
+    # resources :users, only: [:show]
     resources :update_requests, only: [:new, :create]
     resources :search_locations, only: [:show]
     resources :contacts, only: [:new, :create, :index]

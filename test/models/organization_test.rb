@@ -48,4 +48,8 @@ describe Organization do
       it { subject.must have_many :websites }
     end
   end
+
+  describe 'methods' do
+    it { subject.before_approve.must_equal true }
+  end
 end

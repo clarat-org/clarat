@@ -40,11 +40,13 @@ FactoryGirl.define do
 
       # location
       organization = offer.organizations.first
-      location = offer.encounter == 'independent' ? nil : (
-        organization.locations.sample ||
-        FactoryGirl.create(:location, organization: organization)
-      )
-      offer.update_column :location_id, location.id if location
+      if organization
+        location = offer.encounter == 'independent' ? nil : (
+          organization.locations.sample ||
+          FactoryGirl.create(:location, organization: organization)
+        )
+        offer.update_column :location_id, location.id if location
+      end
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer

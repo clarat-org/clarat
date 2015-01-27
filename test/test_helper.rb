@@ -3,6 +3,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter "/test/"
+  add_filter "/app/policies/application_policy.rb"
   minimum_coverage 100
 end
 
@@ -56,6 +57,10 @@ Minitest.after_run do
     rails_best_practices
     rubocop
   end
+end
+
+class ActionController::TestCase
+  include Devise::TestHelpers
 end
 
 class ActiveSupport::TestCase

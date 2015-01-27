@@ -30,7 +30,7 @@ class OffersController < ApplicationController
 
   def build_search_cache
     search_params = {}
-    form_search_params = params.for(SearchForm)[:search_form]
+    form_search_params = params.for(SearchForm).refine
     search_params.merge!(form_search_params) if form_search_params.is_a?(Hash)
     @search_cache = SearchForm.new(search_params)
   end

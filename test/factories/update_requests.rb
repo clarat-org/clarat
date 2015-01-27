@@ -1,8 +1,8 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
+require 'ffaker'
 
 FactoryGirl.define do
   factory :update_request do
-    query 'MyString'
-    email 'MyString'
+    search_location 'MyString'
+    email { Faker::Internet.email }
   end
 end

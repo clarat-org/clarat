@@ -5,7 +5,7 @@
         / ToDo: Use 'Angebot'  if it is just one
         = "#{@search_cache.hit_count} Angebote"
         - tags = @search_cache.tags
-        - unless tags.empty?
+        - unless tags.blank?
           |  (Schlagwortfilter:
           =< tags
           | )
@@ -26,11 +26,7 @@
 
       - if @update_request
         = modal_for 'unavailable_location_overlay' do
-          p
-            | Leider finden sich auf unserer Plattform aktuell nur Angebote aus
-            |  Berlin. Wir hoffen aber schon bald auch in anderen Teilen
-            |  Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
-            |  und wir werden uns einmalig bei dir melden sobald das der Fall ist.
+          p= I18n.t 'offers.index.unavailable_location_modal'
           = render '/update_requests/new', update_request: @update_request
 
   aside.aside-standard

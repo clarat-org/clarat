@@ -50,4 +50,21 @@ describe Location do
       it { subject.must belong_to :federal_state }
     end
   end
+
+  describe 'methods' do
+    describe '#concat_address' do
+      before do
+        loc.assign_attributes street: 'street', city: 'city', zip: 'zip'
+      end
+
+      it 'should show the name if one exists' do
+        loc.name = 'name'
+        loc.concat_address.must_equal 'name (street zip city)'
+      end
+
+      it 'should not show a name if none exists' do
+        loc.concat_address.must_equal 'street zip city'
+      end
+    end
+  end
 end

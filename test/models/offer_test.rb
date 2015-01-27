@@ -64,9 +64,9 @@ describe Offer do
         offer.creator.must_equal 'anonymous'
       end
 
-      it 'should return users name if there is a a version' do
+      it 'should return users name if there is a version' do
         offer = FactoryGirl.create :offer, :with_creator
-        offer.creator.must_equal User.last.name
+        offer.creator.must_equal User.find(offer.created_by).name
       end
     end
 
@@ -128,6 +128,19 @@ describe Offer do
 
         offers(:basic).tags << tag1
         offers(:basic).tags.must_equal [tag1, tag2]
+      end
+    end
+
+    describe '#prevent_duplicate_tags' do
+      it 'should remove duplicate tag associations' do
+        tag = Tag.create name: 'tag'
+        offer = offers(:basic)
+        offer.tags << tag
+        offer.tags << tag
+
+        offer.tags.to_a.count(tag).must_equal 2
+        offer.prevent_duplicate_tags
+        offer.tags.to_a.count(tag).must_equal 1
       end
     end
   end

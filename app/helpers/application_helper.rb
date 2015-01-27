@@ -27,8 +27,8 @@ module ApplicationHelper
       I18n.t('conf.default_location') # needed if that SearchLocation exists?
     elsif (search_location = SearchLocation.find_by_geoloc(geoloc))
       search_location.query
-    elsif @geoloc_string
-      @geoloc_string
+    # elsif @geoloc_string
+    #   @geoloc_string
     else
       I18n.t('conf.default_location')
     end

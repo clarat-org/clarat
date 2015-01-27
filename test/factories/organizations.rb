@@ -29,6 +29,14 @@ FactoryGirl.define do
     after :create do |orga, evaluator|
       create_list :hyperlink, evaluator.website_count, linkable: orga
     end
+
+    # traits
+    trait :approved do
+      after :create do |orga, _evaluator|
+        Organization.where(id: orga.id).update_all completed: true, approved: true, approved_at: Time.now
+      end
+      approved_by { FactoryGirl.create(:researcher).id }
+    end
   end
 end
 

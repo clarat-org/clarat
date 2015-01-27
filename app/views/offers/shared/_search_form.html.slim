@@ -1,5 +1,5 @@
-= semantic_form_for search_cache, url: offers_path, html: { method: :get } do |f|
-  = f.input :query, label: true, input_html: { placeholder: 'Was? z.B. drogen, schwanger, erziehungshilfe...', spellcheck: false, autocomplete: 'off', autofocus: true, class: 'input-xlg typeahead' }
+= simple_form_for search_cache, url: offers_path, html: { method: :get } do |f|
+  = f.input :query, label: true, required: false, input_html: {  placeholder: 'Was? z.B. drogen, schwanger, erziehungshilfe...', spellcheck: false, autocomplete: 'off', autofocus: true, class: 'input-xlg typeahead' }
   = f.input :search_location, label: true, input_html: { value: geoloc_to_s, class: 'input-xlg JS-Search-location-display', placeholder: 'Wo? z.B. stadt, straße, plz...' }
   = f.input :generated_geolocation, as: :hidden, input_html: { class: 'JS-Search-location', value: default_geolocation }
   = f.input :tags, as: :hidden

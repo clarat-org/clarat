@@ -50,3 +50,13 @@
 .tt-input {
   background: $brand_white !important; // override inline style
 }
+
+.tt-allresults {
+  @extend %roboto_bold;
+  background: $brand_brown;
+  color: $brand_white;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: -5px;
+}

@@ -31,6 +31,7 @@ generateSource = ->
     hitsPerPage: 5
     aroundLatLng: document.Clarat.currentGeolocation # TODO: use entered location
     aroundRadius: 999999999
+    aroundPrecision: 500
 
 navigateToHit = (event, suggestion, id) ->
   Turbolinks.visit "/angebote/#{suggestion.slug}"

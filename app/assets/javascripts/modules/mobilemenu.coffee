@@ -6,15 +6,20 @@ initMobileMenu = ->
   $inputQuery = $("#search_form_query")
   $submit = $(".main-search__submit")
   $header = $(".header-main")
+  $content = $(".content-main")
   smartphone = ($(window).width() < 480)
+  $jumpLinkExists = $(".jump-to-tags")
 
   $inputLocation.removeClass "visible"
 
   if $homeTemplate
     return
 
-  if $offersTemplate && smartphone
-    $header.append "<a class='jump-to-tags' href='#tags'>#{I18n.t('js.navigate_to_tags')}</a>"
+  if $offersTemplate && smartphone && !$jumpLinkExists.length
+    $header.after "<a class='jump-to-tags' href='#tags'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_tags')}</a>"
+
+  if !smartphone
+    $jumpLinkExists.remove
 
 
   if Modernizr.touch && smartphone
@@ -25,3 +30,4 @@ initMobileMenu = ->
 
 
 $(document).ready initMobileMenu
+$(window).resize initMobileMenu

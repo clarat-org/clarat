@@ -31,6 +31,8 @@
     #search_form_query,
     #search_form_search_location {
       width: 340px;
+      max-width: 100%;
+
     }
   }
 
@@ -38,9 +40,10 @@
 
 #search_form_query,
 #search_form_search_location {
-  background: $brand_white;
   margin-right: 10px;
   padding: 0 15px;
+  max-width: 260px;
+  background: $brand_white;
   font-size: 22px;
 
   // explicit definition and using important to override twitter-typeahead

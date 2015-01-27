@@ -43,3 +43,4 @@ about supported directives.
 # = require modules/report_overlay
 # = require modules/flash
 # = require modules/typeahead_advanced
+# = require modules/safari_fixes

@@ -1,18 +1,24 @@
-if ($('.twitter-typeahead').length) {
+$(window).load(function(){
 
-	var that = $(this),
-		ttContainer = $('.tt-dropdown-menu'),
-		moreLink = $('<div class="tt-allresults"></div>');
+	if ($('.twitter-typeahead').length) {
 
-	ttContainer.append(moreLink);
+		var ttContainer = $('.tt-dropdown-menu'),
+			moreLink = $('<div class="tt-allresults"></div>');
 
-	$('.tt-input').on('keyup', function () {
-		moreLink.html('').html('Alle Suchergebnisse für \'' + $(this).typeahead('val') + '\'');
-	});
+		ttContainer.append(moreLink);
 
-	moreLink.on('click', function () {
-		that.parents('.search_form').trigger('submit');
-	});
+		$('.tt-input').on('keyup', function () {
+			refreshText($(this));
+		});
 
-}
+		function refreshText(that) {
+			moreLink.html('').html('Alle Suchergebnisse f&uuml;r \'' + that.typeahead('val') + '\'');
+		}
+
+		moreLink.on('click', function () {
+			$('.main-search__submit').trigger('click');
+		});
+	}
+
+});
 

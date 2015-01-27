@@ -271,13 +271,11 @@
 
 	// Styling for JS-generated button
 	.jump-to-tags {
-		position: absolute;
-		top: 65px; // mobile header height
-		right: 0;
+		position: relative;
 		z-index: 10;
-		display: inline-block;
-		margin-right: 15px;
-		width: 36%;
+		display: block;
+		margin: -10px -15px 15px -15px;
+		width: auto;
 		height: 32px;
 		background: $brand_blue;
 		color: $brand_white;

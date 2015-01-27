@@ -161,7 +161,7 @@ RailsAdmin.config do |config|
       field :completed
       field :approved
       field :creator
-      field :organization
+      field :organizations
     end
     weight(-1)
     field :name do
@@ -190,9 +190,16 @@ RailsAdmin.config do |config|
       end
     end
     field :location
-    field :organization
+    field :organizations do
+      help do
+        'Required before approval. Only approved organizations.'
+      end
+    end
     field :tags do
       css_class 'js-tag-suggestions'
+      help do
+        'One main tag (*) required before approval.'
+      end
     end
     field :languages
     field :openings
@@ -323,6 +330,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Hyperlink' do
+    weight 3
+  end
+
+  config.model 'OrganizationOffer' do
     weight 3
   end
 

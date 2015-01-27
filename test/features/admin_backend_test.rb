@@ -19,7 +19,7 @@ feature 'Admin Backend' do
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
         select 'Fixed', from: 'offer_encounter'
-        select 'foobar', from: 'offer_organization_id'
+        select 'foobar', from: 'offer_organization_ids'
 
         click_button 'Speichern'
         page.must_have_content 'testangebot'
@@ -57,13 +57,16 @@ feature 'Admin Backend' do
       fill_in 'offer_next_steps', with: 'testnextsteps'
       select 'Fixed', from: 'offer_encounter'
       select location.name, from: 'offer_location_id'
-      select 'foobar', from: 'offer_organization_id'
+      select 'foobar', from: 'offer_organization_ids'
 
-      click_button 'Speichern'
+      click_button 'Speichern und bearbeiten'
 
-      page.must_have_content 'Angebot wurde nicht hinzugefügt'
+      check 'offer_completed'
+      click_button 'Speichern' # update to trigger validation
+
+      page.must_have_content 'Angebot wurde nicht aktualisiert'
       page.must_have_content 'Location muss zu der unten angegebenen Organisation gehören.'
-      page.must_have_content 'Organization muss der des angegebenen Standorts gleichen.'
+      page.must_have_content 'Organizations muss die des angegebenen Standorts beinhalten.'
     end
 
     scenario 'Mark offer as completed' do

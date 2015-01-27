@@ -14,7 +14,7 @@ class Offer
           typo asc(encounter_value) geo words proximity attribute exact custom
         ) # ^encounter_value
         add_attribute :_geoloc, :_tags
-        add_attribute :keyword_string, :organization_name, :location_street,
+        add_attribute :keyword_string, :organization_names, :location_street,
                       :location_city, :location_zip, :encounter_value
         attributesForFaceting [:_tags]
       end
@@ -35,6 +35,11 @@ class Offer
       # additional searchable string made from tags
       def keyword_string
         tags.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
+      end
+
+      # concatenated organization name for search index
+      def organization_names
+        organizations.pluck(:name).join(', ')
       end
     end
   end

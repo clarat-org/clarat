@@ -30,9 +30,12 @@ feature 'Search Form' do
     WebMock.enable!
     o1 = FactoryGirl.create :offer, :with_location,
                             name: 'foo baz', tag: 'chunky bacon'
-    FactoryGirl.create :offer,
-                       name: 'foo fuz', tag: 'unrelated',
-                       location: o1.location, organization: o1.organization
+    o2 = FactoryGirl.create :offer,
+                            name: 'foo fuz', tag: 'unrelated',
+                            location: o1.location, organization_count: 0
+    OrganizationOffer.create! offer_id: o2.id,
+                              organization_id: o1.organizations.first.id
+
     Offer.stubs(:algolia_search).returns(
       AlgoliaStubber.filled_response_stub(
         'foo',

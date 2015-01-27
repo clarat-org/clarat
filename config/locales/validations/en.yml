@@ -6,9 +6,10 @@ en:
           must be the same as the chosen location's organization.
         location_error: |
           must belong to the same organization as chosen below.
+      needs_main_tag: needs at least one main tag
+      needs_organization: needs at least one organization
+      only_approved_organizations: |
+        can only contain approved organizations. Unapproved: %{list}.
+    shared:
       approved_by_creator: can't be approved by creator
       incomplete: must be completed before approval
-    organization:
-      approved_by_creator: can't be approved by creator
-      incomplete: must be completed before approval
-

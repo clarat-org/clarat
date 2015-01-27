@@ -5,14 +5,21 @@ FactoryGirl.define do
     # required
     name { Faker::Lorem.words(rand(2..3)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
-    legal_form { Organization.enumerized_attributes.attributes['legal_form'].values.sample }
+    legal_form do
+      Organization.enumerized_attributes.attributes['legal_form'].values.sample
+    end
     charitable { Faker::Boolean.maybe }
     completed { Faker::Boolean.maybe }
+    approved false
 
     # optional
     comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..399] }
     founded { maybe((1980..Time.now.year).to_a.sample) }
-    umbrella { maybe Organization.enumerized_attributes.attributes['umbrella'].values.sample }
+    umbrella do
+      maybe(
+        Organization.enumerized_attributes.attributes['umbrella'].values.sample
+      )
+    end
 
     # associations
     ignore do

@@ -18,7 +18,6 @@ describe Offer do
     it { subject.must_respond_to :slug }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
-    it { subject.must_respond_to :organization_id }
     it { subject.must_respond_to :fax }
     it { subject.must_respond_to :opening_specification }
     it { subject.must_respond_to :comment }
@@ -42,7 +41,6 @@ describe Offer do
       it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
       it { offer.must ensure_length_of(:opening_specification).is_at_most 400 }
       it { subject.must ensure_length_of(:comment).is_at_most 800 }
-      it { subject.must validate_presence_of :organization_id }
       it { subject.must ensure_length_of(:legal_information).is_at_most 400 }
     end
   end
@@ -50,7 +48,8 @@ describe Offer do
   describe '::Base' do
     describe 'associations' do
       it { subject.must belong_to :location }
-      it { subject.must belong_to :organization }
+      it { subject.must have_many :organization_offers }
+      it { subject.must have_many(:organizations).through :organization_offers }
       it { subject.must have_and_belong_to_many :tags }
       it { subject.must have_and_belong_to_many :languages }
       it { subject.must have_and_belong_to_many :openings }

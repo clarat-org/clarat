@@ -12,7 +12,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :tags, after_add: :add_dependent_tags
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
-  belongs_to :organization, inverse_of: :offers, counter_cache: true
+  has_many :organization_offers
+  has_many :organizations, through: :organization_offers
   # Attention: former has_one :organization, through: :locations
   # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable
@@ -38,7 +39,6 @@ class Offer < ActiveRecord::Base
 
   # Methods
 
-  delegate :name, to: :organization, prefix: true
   delegate :name, :street, :addition, :city, :zip, :address,
            to: :location, prefix: true, allow_nil: true
 

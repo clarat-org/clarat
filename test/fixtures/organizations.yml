@@ -2,6 +2,7 @@ basic:
   id: 1
   name: foobar
   description: foobar
-  legal_form: eV
+  legal_form: ev
+  offers_count: 1
   completed: t
   approved: t

@@ -6,7 +6,8 @@ class Organization < ActiveRecord::Base
 
   # Associtations
   has_many :locations
-  has_many :offers
+  has_many :organization_offers
+  has_many :offers, through: :organization_offers
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 
@@ -33,6 +34,10 @@ class Organization < ActiveRecord::Base
   validates :comment, length: { maximum: 800 }
   # Custom Validations
   validates :approved, approved: true
+
+  def before_approve
+    true
+  end
 
   # Statistics
   extend RailsAdminStatistics

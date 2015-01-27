@@ -16,21 +16,38 @@ class Offer
       validates :opening_specification, length: { maximum: 400 }
       validates :legal_information, length: { maximum: 400 }
       validates :comment, length: { maximum: 800 }
-      validates :organization_id, presence: true
-      validates :approved, approved: true
 
       # Custom validations
-      validate :location_fits_organization
+      validate :location_fits_organization, on: :update
       validates :approved, approved: true
+
+      # Needs to be true before approval possible. Called in custom validation.
+      def before_approve
+        if tags.where(main: true).count == 0
+          errors[:tags] = I18n.t('validations.offer.needs_main_tag')
+        end
+        if organizations.count == 0
+          errors[:organizations] = I18n.t(
+            'validations.offer.needs_organization'
+          )
+        elsif organizations.where(approved: false).count > 0
+          errors[:organizations] = I18n.t(
+            'validations.offer.only_approved_organizations',
+            list: organizations.where(approved: false).pluck(:name).join(', ')
+          )
+        end
+      end
 
       private
 
-      # Custom Validation: Ensure selected organization is the same as the selected location's organization
+      # Custom Validation: Ensure selected organization is the same as the
+      # selected location's organization
       def location_fits_organization
-        if location && location.organization_id != organization_id
+        ids = organizations.pluck(:id)
+        if location && !ids.include?(location.organization_id)
           errors.add(:location_id, I18n.t(
             'validations.offer.location_fits_organization.location_error'))
-          errors.add(:organization_id, I18n.t(
+          errors.add(:organizations, I18n.t(
             'validations.offer.location_fits_organization.organization_error'))
         end
       end

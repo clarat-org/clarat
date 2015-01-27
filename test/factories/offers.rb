@@ -22,15 +22,9 @@ FactoryGirl.define do
     email { maybe Faker::Internet.email }
 
     # associations
-    organization
-    location do
-      encounter == 'independent' ? nil : (
-        organization.locations.sample ||
-        FactoryGirl.create(:location, organization: organization)
-      )
-    end
 
     ignore do
+      organization_count 1
       website_count { rand(0..3) }
       tag_count { rand(1..3) }
       tag nil # used to get a specific tag, instead of tag_count
@@ -39,6 +33,20 @@ FactoryGirl.define do
     end
 
     after :create do |offer, evaluator|
+      # organization
+      evaluator.organization_count.times do
+        FactoryGirl.create :organization_offer, offer: offer
+      end
+
+      # location
+      organization = offer.organizations.first
+      location = offer.encounter == 'independent' ? nil : (
+        organization.locations.sample ||
+        FactoryGirl.create(:location, organization: organization)
+      )
+      offer.update_column :location_id, location.id if location
+
+      # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
       if evaluator.tag
         offer.tags << FactoryGirl.create(:tag, name: evaluator.tag)

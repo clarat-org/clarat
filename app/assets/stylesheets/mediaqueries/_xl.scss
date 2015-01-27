@@ -53,6 +53,10 @@
 		margin-left: 10px;
 	}
 
+	span.tt-dropdown-menu { // override JS with specifity of selector and important
+		right: 0 !important;
+	}
+
 	.template--pages-home {
 		.twitter-typeahead,
 		#new_search_form #search_form_search_location {

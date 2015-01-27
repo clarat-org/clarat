@@ -41,43 +41,39 @@
 .pac-container {
   // display: block !important;
   @extend %roboto_regular;
+  position: relative;
   padding: 10px 0 5px;
-  background: $brand_beige;
-  border: 0 solid $brand_yellow;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
-  border-right-width: 1px;
-  margin: 0 -1px;
-  border-radius: 0;
   border-top: none;
-  box-shadow: none;
+  border-radius: 0;
+  background: $brand_beige;
+  box-shadow: 0 1px 0 1px $brand_yellow;
 
   .pac-item {
     padding: 0 15px;
-    cursor: pointer;
     border-top: none;
-    font-size: 14px;
     color: $brand_green;
+    font-size: 14px;
+    cursor: pointer;
     @extend %roboto_bold;
 
     .pac-item-query {
       @extend %roboto_regular;
-      font-size: 16px;
       color: $font_color;
+      font-size: 16px;
     }
 
     .pac-matched {
-      font-weight: inherit;
-      @extend %roboto_bold;
-      font-style: normal;
-      background: $brand_yellow;
       padding: 1px 2px;
+      @extend %roboto_bold;
+      background: $brand_yellow;
+      font-weight: inherit;
+      font-style: normal;
     }
 
     &> span:last-child {
-      line-height: 14px;
       display: block;
       margin-bottom: 10px;
+      line-height: 14px;
     }
 
     &.pac-item-selected {

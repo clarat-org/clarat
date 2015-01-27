@@ -69,16 +69,16 @@
 	.Distributor--navigation {
 		.twitter-typeahead,
 		#search_form_search_location {
-			margin-left: 24%;
-			width: 62%;
+			padding-right: 32px;
+			width: 100%;
+
 		}
 	}
 
 	#new_search_form {
 		position: relative;
-		padding: 15px 5px 0 50px;
+		padding: 15px 5px 0 106px;
 		width: 100%;
-
 
 		#search_form_query,
 		#search_form_search_location {
@@ -89,7 +89,7 @@
 
 		#search_form_search_location {
 			margin-top: 10px;
-			width: 62%;
+			width: 80%;
 		}
 
 		.main-search__submit {
@@ -267,18 +267,27 @@
 		}
 	}
 
+	// Misc ######################################
+
+	// Styling for JS-generated button
 	.jump-to-tags {
-		position: absolute;
-		top: 65px; // mobile header height
-		right: 0;
+		position: relative;
 		z-index: 10;
-		display: inline-block;
-		width: 40%;
-		height: 40px;
+		display: block;
+		margin: -10px -15px 15px -15px;
+		width: auto;
+		height: 32px;
 		background: $brand_blue;
 		color: $brand_white;
 		text-align: center;
 		text-decoration: none;
-		line-height: 40px;
+		line-height: 32px;
+	}
+
+	// Creating offset for internal anchor jump
+	#tags:before {
+		content: "";
+		display: block;
+		height: 82px;
 	}
 }

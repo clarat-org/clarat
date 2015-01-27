@@ -1,4 +1,4 @@
-$(window).load(function(){
+ready = function(){
 
 	if ($('.twitter-typeahead').length) {
 
@@ -20,5 +20,8 @@ $(window).load(function(){
 		});
 	}
 
-});
+};
+
+$(document).on('page:load', ready);
+$(document).ready(ready);
 

@@ -10,14 +10,12 @@
 }
 
 .tt-dropdown-menu {
-  right: 10px !important;
+  right: 10px !important; // override JS
   padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
   background: $brand_beige;
-  border: 0 solid $brand_yellow;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
-  border-right-width: 1px;
-  margin: 0 -1px;
+  border: none;
+  box-shadow: 0 1px 0 1px $brand_yellow;
+
 
   em {
     @extend %roboto_bold;
@@ -59,4 +57,5 @@
   height: 36px;
   line-height: 36px;
   margin-bottom: -5px;
+  cursor: pointer;
 }

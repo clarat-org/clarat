@@ -46,7 +46,7 @@ module Clarat
     config.assets.initialize_on_precompile = true
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.1'
+    config.assets.version = '1.1.1'
 
     # Enable fonts directory
     config.assets.paths << Rails.root.join("app", "assets", "fonts")

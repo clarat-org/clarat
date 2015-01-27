@@ -21,20 +21,57 @@
 
 	.section-content--openinghours {
 		ul {
-			list-style: none;
 			margin: 0;
 			padding: 0;
+			list-style: none;
 		}
+	}
+
+	.page-detail__header {
+		position: relative;
 	}
 
 	.page-detail__icons {
-		float: right;
+		position: absolute;
+		top: 0;
+		right: 0;
 
 		img {
-			height: 60px;
 			margin-left: 10px;
+			height: 60px;
 		}
 	}
+
+	.page-detail__icon {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		background: no-repeat right bottom;
+		background-size: 60px 60px;
+
+		&.page-detail__icon--a-crisis {
+			background-image: image-url('picto_crisis.svg');
+		}
+
+		&.page-detail__icon--b-learn {
+			background-image: image-url('picto_learn.svg');
+		}
+
+		&.page-detail__icon--c-family {
+			background-image: image-url('picto_family.svg');
+		}
+
+		&.page-detail__icon--d-health {
+			background-image: image-url('picto_health.svg');
+		}
+
+		&.page-detail__icon--e-violence,
+		&.page-detail__icon--e-habitation, { // ToDo: Removes
+			background-image: image-url('picto_violence.svg');
+		}
+	}
+
+
 
 	.offer-contribute {
 		border-color: $brand_yellow;

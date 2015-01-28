@@ -41,6 +41,10 @@
 	#new_search_form {
 		width: 500px;
 		padding-left: 0;
+
+		label.string {
+			left: 22px;
+		}
 	}
 
 	#search_form_query {

@@ -11,15 +11,29 @@
   width: 640px;
   list-style: none;
 
-  label {
-    @extend %visually-hidden;
+  .input {
+    position: relative;
+    display: inline;
+  }
+
+  label.string {
+    @extend %roboto_bold;
+    position: absolute;
+    z-index: 30;
+    left: 14px;
+    font-size: 20px;
+    line-height: 50px;
+
+    abbr[title="required"] {
+      @extend %visually-hidden;
+    }
   }
 
   .template--pages-home & {
     position: relative;
     margin: 0 auto;
     padding: 30px 0 0;
-    width: 780px;
+    width: 820px;
 
     #search_form_query,
     #search_form_search_location,
@@ -30,9 +44,8 @@
 
     #search_form_query,
     #search_form_search_location {
-      width: 340px;
       max-width: 100%;
-
+      width: 360px;
     }
   }
 
@@ -41,10 +54,11 @@
 #search_form_query,
 #search_form_search_location {
   margin-right: 10px;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
   max-width: 260px;
   background: $brand_white;
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 50px;
 
   // explicit definition and using important to override twitter-typeahead
   &:focus {
@@ -57,6 +71,14 @@
 .main-search__submit {
   float: left;
   height: 47px;
+}
+
+#search_form_query {
+  padding-left: 72px;
+}
+
+#search_form_search_location {
+  padding-left: 52px;
 }
 
 .main-search__submit {

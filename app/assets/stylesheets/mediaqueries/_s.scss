@@ -6,14 +6,14 @@
 
 @include breakpoint(S) {
 
-	//@include mqindicator('S');
+//	@include mqindicator('S');
 
 
 	// Header ######################################
 
 	.Logo {
 		position: absolute;
-		top: 15px;
+		top: 10px;
 		z-index: 20;
 		margin-top: 5px;
 		margin-left: 15px;
@@ -43,7 +43,7 @@
 		position: fixed;
 		right: 0;
 		left: 0;
-		z-index: 20;
+		z-index: 130;
 		background: transparent;
 
 		.template--pages-home &,
@@ -57,7 +57,7 @@
 
 	.Distributor {
 		margin-top: 0;
-		padding-bottom: 15px;
+		padding-bottom: 5px;
 		height: auto;
 	}
 
@@ -77,29 +77,52 @@
 
 	#new_search_form {
 		position: relative;
-		padding: 15px 5px 0 106px;
+		padding: 10px 5px 0 106px;
+		max-height: 85px;
 		width: 100%;
+
+		.template--pages-home & {
+			max-height: none;
+		}
+
+		.input {
+			&.string {
+				display: inline-block;
+			}
+		}
+
+		label.string {
+			left: 18px;
+			font-size: 16px;
+			line-height: 35px;
+		}
 
 		#search_form_query,
 		#search_form_search_location {
-			@include input-placeholder($brand_brown, 400, 18px);
+			@include input-placeholder(rgba($brand_brown, .72), 400, 16px);
 			height: 35px;
-			font-size: 18px;
+			font-size: 16px;
+			line-height: 35px;
+		}
+
+		#search_form_query {
+			padding-left: 53px;
 		}
 
 		#search_form_search_location {
-			margin-top: 10px;
+			padding-left: 36px;
 			width: 80%;
 		}
 
 		.main-search__submit {
 			position: absolute;
+			top: 10px;
 			right: 15px;
 			height: 35px;
 			background-size: 60%;
 
 			&.enlarged {
-				top: 15px;
+				top: 10px;
 				bottom: 0;
 				height: auto;
 			}
@@ -109,12 +132,32 @@
 	.template--pages-home {
 
 		#new_search_form {
+			padding-top: 20px;
+
+			#search_form_query,
+			#search_form_search_location,
+			.main-search__submit {
+				height: 40px;
+				line-height: 40px;
+			}
+
+			.input.string {
+				height: 40px;
+			}
+
+			label.string {
+				top: 3px;
+				left: 8px;
+			}
+
+
 			.twitter-typeahead {
 				width: 100%;
 			}
 
 			.main-search__submit {
 				position: relative;
+				top: 0;
 				right: auto;
 			}
 		}
@@ -194,7 +237,7 @@
 		display: block;
 		clear: both;
 		overflow: hidden;
-		margin: -66px -15px 20px -15px;
+		margin: -76px -15px 20px -15px;
 		padding: 3px 95px 3px 15px;
 		max-width: none;
 		background: $brand_blue;
@@ -284,7 +327,7 @@
 	// Styling for JS-generated button
 	.jump-to-tags {
 		position: absolute;
-		top: 62px;
+		top: 52px;
 		right: 0;
 		left: auto;
 		z-index: 120;

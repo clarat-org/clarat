@@ -12,14 +12,14 @@ initMobileMenu = ->
 
   $inputLocation.removeClass "visible"
 
-  if $homeTemplate
-    return
-
-  if $offersTemplate && smartphone && !$jumpLinkExists.length
-    $content.find(".Listing-results__headline").after "<a class='jump-to-tags' href='#tags'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_tags')}</a>"
-
-  if !smartphone
-    $jumpLinkExists.remove
+#  if $homeTemplate
+#    return
+#
+#  if $offersTemplate && smartphone && !$jumpLinkExists.length
+#    $content.find(".Listing-results__headline").after "<a class='jump-to-tags' href='#tags'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_tags')}</a>"
+#
+#  if !smartphone
+#    $jumpLinkExists.remove
 
 
   if Modernizr.touch && smartphone

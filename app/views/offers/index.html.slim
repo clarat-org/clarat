@@ -10,6 +10,8 @@
           =< tags
           | )
 
+      | <a class='jump-to-tags' href='#tags'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_tags')}</a>
+
       ul.search-results.Listing-results__list
         - @offers.each do |offer|
           li id="result-offer-#{offer.id}" class="JS-trigger-marker Listing-results__listitem"

@@ -158,6 +158,10 @@
 		.template--pages-home & {
 			padding-top: 0;
 		}
+
+		.template--offers-index & {
+			padding-top: 131px;
+		}
 	}
 
 	.section-start__headline {
@@ -185,14 +189,18 @@
 	}
 
 	.Listing-results__headline {
-		position: absolute;
 		top: 70px;
 		z-index: 15;
+		display: block;
+		clear: both;
 		overflow: hidden;
-		max-width: 58%;
+		margin: -66px -15px 20px -15px;
+		padding: 3px 95px 3px 15px;
+		max-width: none;
+		background: $brand_blue;
 		color: $brand_white;
 		text-overflow: ellipsis;
-		font-size: 16px
+		font-size: 16px;
 	}
 
 	.template--pages-faq,
@@ -276,25 +284,25 @@
 	// Styling for JS-generated button
 	.jump-to-tags {
 		position: absolute;
-		top: 65px;
+		top: 62px;
 		right: 0;
-		left: 0;
-		z-index: 10;
+		left: auto;
+		z-index: 120;
 		display: block;
 		margin: 0;
-		padding-right: 15px;
-		width: auto;
-		height: 32px;
-		background: $brand_blue;
+		padding: 3px 15px;
+		width: 40%;
+		height: 30px;
 		color: $brand_white;
 		text-align: right;
 		text-decoration: none;
-		line-height: 32px;
+		line-height: 28px;
 	}
 
 	// Creating offset for internal anchor jump
 	#tags:before {
 		display: block;
+		margin-top: -82px;
 		height: 82px;
 		content: "";
 	}

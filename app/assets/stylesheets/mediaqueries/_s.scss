@@ -76,9 +76,6 @@
 
 	}
 
-	// ---------------------------
-
-
 	#new_search_form {
 		position: relative;
 		display: block;
@@ -87,6 +84,8 @@
 		width: auto;
 
 		.template--pages-home & {
+			max-height: none;
+
 			.input.string {
 				padding-right: 0;
 
@@ -98,8 +97,8 @@
 
 		#search_form_query,
 		#search_form_search_location {
-			max-width: none;
 			float: none;
+			max-width: none;
 		}
 
 		#search_form_search_location {
@@ -112,28 +111,48 @@
 			width: 100%;
 		}
 
-		.main-search__submit {
-			width: 40px;
-		}
-
-		.template--pages-home & {
-			padding-top: 20px;
-			max-height: none;
-
-			.input.string {
-				height: 40px;
-			}
-
-			label.string {
-				top: 3px;
-				left: 8px;
-			}
-
-			.twitter-typeahead {
+		.twitter-typeahead {
+			.template--pages-home & {
 				width: 100%;
 			}
+		}
 
-			.main-search__submit {
+		#search_form_query {
+			padding-left: 53px;
+		}
+
+		#search_form_query,
+		#search_form_search_location,
+		.main-search__submit {
+			.template--pages-home & {
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+
+		#search_form_query,
+		#search_form_search_location {
+			@include input-placeholder(rgba($brand_brown, .72), 400, 16px);
+			height: 35px;
+			font-size: 16px;
+			line-height: 35px;
+		}
+
+		.main-search__submit {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			width: 40px;
+			height: 35px;
+			background-size: 60%;
+
+			&.is-enlarged {
+				top: 10px;
+				bottom: 0;
+				height: auto;
+			}
+
+			.template--pages-home & {
 				position: relative;
 				top: 0;
 				right: auto;
@@ -143,8 +162,12 @@
 		.input {
 			&.string {
 				display: block;
-				width: 100%;
 				padding-right: 55px;
+				width: 100%;
+
+				.template--pages-home & {
+					height: 40px;
+				}
 
 				&.search_form_search_location {
 					display: none;
@@ -165,47 +188,13 @@
 				font-size: 16px;
 				line-height: 35px;
 
-			}
-		}
-
-		#search_form_query,
-		#search_form_search_location,
-		.main-search__submit {
-			.template--pages-home & {
-				height: 40px;
-				line-height: 40px;
-			}
-		}
-
-		#search_form_query,
-		#search_form_search_location {
-			@include input-placeholder(rgba($brand_brown, .72), 400, 16px);
-			height: 35px;
-			font-size: 16px;
-			line-height: 35px;
-		}
-
-		#search_form_query {
-			padding-left: 53px;
-		}
-
-		.main-search__submit {
-			position: absolute;
-			top: 10px;
-			right: 15px;
-			height: 35px;
-			background-size: 60%;
-
-			&.is-enlarged {
-				top: 10px;
-				bottom: 0;
-				height: auto;
+				.template--pages-home & {
+					top: 3px;
+					left: 8px;
+				}
 			}
 		}
 	}
-
-	// ---------------------------
-
 
 	.nav-sections {
 		margin: 0;

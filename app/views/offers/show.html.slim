@@ -3,9 +3,9 @@
   main.content-main.content-main--wide
     header.page-detail__header
       h2.page-detail__title= @offer.name
-      .page-detail__icons
-        - @offer.tags.mains.each do |main_tag|
-          .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
+      /.page-detail__icons
+      /  - @offer.tags.mains.each do |main_tag|
+      /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
     .section-wrapper-major
       section.section-content.section-content--what
         h3.section-content__title Was

@@ -11,7 +11,7 @@
 	// Header ######################################
 
 	.header-main--wide {
-		height: 375px; // smaller height, eventually refactoring into container with a certain ratio by paddding-bottom: 39.5833333%
+		height: 375px; // smaller height, @ToDo refactoring into container with a certain ratio by paddding-bottom: 39.5833333%
 	}
 
 	.Claim {
@@ -58,7 +58,17 @@
 	#new_search_form {
 		width: 435px;
 
+		#search_form_query,
+		#search_form_search_location {
+			max-width: 165px;
+
+			.template--pages-home & {
+				width: auto;
+			}
+		}
+
 		.template--pages-home & {
+			max-width: 710px;
 			width: auto;
 
 			#search_form_query {
@@ -70,7 +80,6 @@
 	.twitter-typeahead,
 	#new_search_form #search_form_search_location {
 		.template--pages-home & {
-		 	width: 42%;
 		 	margin-left: 10px;
 		}
 	 }

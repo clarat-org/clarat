@@ -12,7 +12,7 @@
 		@media (max-width: 1000px) { @content; }
 	}
 	@if $point == M {
-		@media (max-width: 680px) { @content; }
+		@media (max-width: 750px) { @content; }
 	}
 	@if $point == S {
 		@media (max-width: 440px) { @content; }
@@ -27,8 +27,8 @@
 		body:before {
 			position: fixed;
 			top: 0;
-			right: 0;
-			left: auto;
+			right: auto;
+			left: 0;
 			bottom: auto;
 			z-index: 100000 ;
 			display: inline-block;

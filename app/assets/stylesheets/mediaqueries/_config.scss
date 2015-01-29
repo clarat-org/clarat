@@ -9,7 +9,7 @@
 		@media (max-width: 1200px) { @content; }
 	}
 	@if $point == L {
-		@media (max-width: 900px) { @content; }
+		@media (max-width: 1000px) { @content; }
 	}
 	@if $point == M {
 		@media (max-width: 680px) { @content; }

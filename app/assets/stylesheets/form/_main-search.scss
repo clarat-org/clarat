@@ -21,10 +21,10 @@
 	label.string {
 		@extend %roboto_bold;
 		position: absolute;
-		z-index: 30;
+		bottom: 10px;
 		left: 14px;
+		z-index: 30;
 		font-size: 20px;
-		line-height: 50px;
 
 		abbr[title="required"] {
 			@extend %visually-hidden;
@@ -60,7 +60,7 @@
 	max-width: 260px;
 	background: $brand_white;
 	font-size: 20px;
-	line-height: 50px;
+	line-height: 47px;
 
 	// explicit definition and using important to override twitter-typeahead
 	&:focus {

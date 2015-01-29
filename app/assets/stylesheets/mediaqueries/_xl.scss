@@ -28,61 +28,21 @@
 
 	.Distributor {
 		margin-right: -20px; // on non-start pages, correcting offset by .wrapper-inner
-		padding-left: 20px; // same
+		max-width: none;
 	}
 
 	.Distributor--start {
-		max-width: 100%;
 		margin-right: 0;
 		padding-left: 0;
+		max-width: 100%;
 	}
 
 	#new_search_form {
-		width: 500px;
-		padding-left: 0;
+		margin-right: 15px;
 
-		.input.string {
-			display: inline;
-			float: none;
-		}
-
-		label.string {
-			left: 22px;
-		}
-	}
-
-	.twitter-typeahead,
-	#new_search_form #search_form_search_location {
-		.template--pages-home {
-			width: 43%;
-		}
-	}
-
-	#new_search_form,
-	#new_search_form #search_form_query {
 		.template--pages-home & {
-			width: 100%;
+			margin-right: auto;
 		}
-	}
-
-	.main-search__submit {
-		.template--pages-home & {
-			width: 10%;
-		}
-	}
-
-	#search_form_query {
-		width: 100%;
-	}
-
-	.twitter-typeahead,
-	#new_search_form #search_form_search_location {
-		width: 37%;
-		margin-left: 10px;
-	}
-
-	span.tt-dropdown-menu { // override JS with specifity of selector and important
-		right: 0 !important;
 	}
 
 	// Content ######################################

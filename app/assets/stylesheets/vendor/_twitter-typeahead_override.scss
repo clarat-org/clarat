@@ -4,58 +4,56 @@
 //
 // ---------------------------------------------------------------
 
-
 .twitter-typeahead {
-  float: left;
+	float: left;
 }
 
 .tt-dropdown-menu {
-  right: 10px !important; // override JS
-  padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
-  background: $brand_beige;
-  border: none;
-  box-shadow: 0 1px 0 1px $brand_yellow;
+	right: 10px !important; // override JS
+	padding: 10px 0 5px; // override inline style, this is #search_form_query's margin right
+	background: $brand_beige;
+	border: none;
+	box-shadow: 0 1px 0 1px $brand_yellow;
 
+	em {
+		@extend %roboto_bold;
+		font-style: normal;
+		background: $brand_yellow;
+		padding: 1px 2px;
+	}
 
-  em {
-    @extend %roboto_bold;
-    font-style: normal;
-    background: $brand_yellow;
-    padding: 1px 2px;
-  }
+	.offer,
+	.address {
+		overflow: hidden;
+		padding: 0 15px;
+		text-overflow: ellipsis;
+		cursor: pointer;
+	}
 
-  .offer,
-  .address {
-    overflow: hidden;
-    padding: 0 15px;
-    text-overflow: ellipsis;
-    cursor: pointer;
-  }
-
-  .address {
-    @extend %roboto_bold;
-    color: $brand_green;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 22px;
-  }
+	.address {
+		@extend %roboto_bold;
+		color: $brand_green;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 22px;
+	}
 }
 
 .tt-hint {
-  display: none;
+	display: none;
 }
 
 .tt-input {
-  background: $brand_white !important; // override inline style
+	background: $brand_white !important; // override inline style
 }
 
 .tt-allresults {
-  @extend %roboto_bold;
-  background: $brand_brown;
-  color: $brand_white;
-  text-align: center;
-  height: 36px;
-  line-height: 36px;
-  margin-bottom: -5px;
-  cursor: pointer;
+	@extend %roboto_bold;
+	background: $brand_brown;
+	color: $brand_white;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: -5px;
+	cursor: pointer;
 }

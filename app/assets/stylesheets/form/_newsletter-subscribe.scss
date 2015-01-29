@@ -5,26 +5,26 @@
 // ---------------------------------------------------------------
 
 .newsletter-subscribe {
-  margin-top: 22px;
+	margin-top: 22px;
 
-  div {
-    display: inline-block;
-  }
+	div {
+		display: inline-block;
+	}
 }
 
 .newsletter-subscribe__input,
 .newsletter-subscribe__submit {
-  height: 32px;
+	height: 32px;
 }
 
 input.newsletter-subscribe__input {
-  @extend %clarat_rounding_start;
-  background: $brand_white;
-  width: 230px;
-  margin-right: 4px;
-  padding: 0 10px;
+	@extend %clarat_rounding_start;
+	background: $brand_white;
+	width: 230px;
+	margin-right: 4px;
+	padding: 0 10px;
 }
 
 .newsletter-subscribe__submit {
-  padding: 0 15px;
+	padding: 0 15px;
 }

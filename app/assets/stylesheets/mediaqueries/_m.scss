@@ -12,8 +12,8 @@
 
 	.Logo {
 		margin-top: 25px;
-		margin-left: 20px;
 		margin-bottom: 15px;
+		margin-left: 20px;
 	}
 
 	.Logo--start {
@@ -21,11 +21,11 @@
 	}
 
 	.Claim {
+		display: block;
 		float: none;
+		clear: both;
 		margin-top: 0;
 		max-width: 100%;
-		display: block;
-		clear: both;
 	}
 
 	.header-main {
@@ -55,36 +55,48 @@
 		border-radius: 0;
 	}
 
-	// Heavy nesting here due to formtastic classes
-
 	#new_search_form {
-		padding-left: 10px;
-		width: 100%;
-
-		label.string {
-			left: 14px;
-		}
+		margin: 0 auto;
 
 		.template--pages-home & {
 
+			#search_form_search_location {
+				margin: 0;
+				width: 100%;
+			}
+
+			.twitter-typeahead {
+				margin-left: 0;
+				width: 100%;
+			}
+
+			.main-search__submit {
+				width: 100%;
+				background-image: none;
+				color: $brand_white; // resetting hidden text on button
+				font: inherit;
+				font-size: 20px;
+			}
+
+			.input {
+				&.search_form_query {
+					margin-right: 0;
+				}
+			}
+
 			.input.string {
+				@extend %clearfix;
 				display: block;
+				float: none;
+				width: auto;
 				height: 50px;
 
 				&.search_form_search_location {
+					margin: 15px 0;
 					height: 50px;
-
-					label.string {
-						margin-top: 15px;
-					}
 				}
 			}
 		}
-	}
-
-	.twitter-typeahead,
-	#new_search_form #search_form_search_location {
-		width: 39.5%;
 	}
 
 	.nav-sections__headline {
@@ -109,29 +121,6 @@
 
 	.page-wrap:after {
 		height: 136px;
-	}
-
-	.template--pages-home {
-		#new_search_form {
-
-			#search_form_search_location {
-				margin: 15px 0;
-				width: 100%;
-			}
-		}
-
-		.twitter-typeahead {
-			margin-left: 0;
-			width: 100%;
-		}
-
-		.main-search__submit {
-			width: 100%;
-			background-image: none;
-			color: $brand_white; // resetting hidden text on button
-			font: inherit;
-			font-size: 20px;
-		}
 	}
 
 	.template--offers-show {

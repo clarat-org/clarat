@@ -64,25 +64,26 @@
 
 			.template--pages-home & {
 				width: auto;
+				max-width: none;
 			}
 		}
+
 
 		.template--pages-home & {
 			max-width: 710px;
 			width: auto;
+
+			.input {
+				&.search_form_query {
+					margin-right: 10px;
+				}
+			}
 
 			#search_form_query {
 				width: 100%; // to fit in its twitter-typeahead container
 			}
 		}
 	}
-
-	.twitter-typeahead,
-	#new_search_form #search_form_search_location {
-		.template--pages-home & {
-		 	margin-left: 10px;
-		}
-	 }
 
 	.main-search__submit {
 		width: 11%;

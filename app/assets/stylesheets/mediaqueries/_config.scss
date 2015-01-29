@@ -20,16 +20,24 @@
 }
 
 @mixin mqindicator($mqname) {
-	body:before {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000 !important;
-		display: inline-block;
-		padding: 5px 10px;
-		background: red;
-		color: #fff;
-		content: $mqname;
+
+	$debug: true;
+
+	@if $debug == true {
+		body:before {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: auto;
+			bottom: auto;
+			z-index: 100000 ;
+			display: inline-block;
+			padding: 5px 10px;
+			background: red;
+			color: #fff;
+			content: ''; // resetting
+			content: $mqname;
+		}
 	}
 }
 

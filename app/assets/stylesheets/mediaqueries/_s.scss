@@ -6,7 +6,7 @@
 
 @include breakpoint(S) {
 
-//	@include mqindicator('S');
+	@include mqindicator('S');
 
 
 	// Header ######################################
@@ -82,7 +82,27 @@
 		width: 100%;
 
 		.template--pages-home & {
+			padding-top: 20px;
 			max-height: none;
+
+			.input.string {
+				height: 40px;
+			}
+
+			label.string {
+				top: 3px;
+				left: 8px;
+			}
+
+			.twitter-typeahead {
+				width: 100%;
+			}
+
+			.main-search__submit {
+				position: relative;
+				top: 0;
+				right: auto;
+			}
 		}
 
 		.input {
@@ -91,10 +111,21 @@
 			}
 		}
 
-		label.string {
-			left: 18px;
-			font-size: 16px;
-			line-height: 35px;
+		label {
+			&.string {
+				left: 18px;
+				font-size: 16px;
+				line-height: 35px;
+			}
+		}
+
+		#search_form_query,
+		#search_form_search_location,
+		.main-search__submit {
+			.template--pages-home & {
+				height: 40px;
+				line-height: 40px;
+			}
 		}
 
 		#search_form_query,
@@ -110,8 +141,13 @@
 		}
 
 		#search_form_search_location {
+			display: none;
 			padding-left: 36px;
 			width: 80%;
+
+			&.visible {
+				display: block;
+			}
 		}
 
 		.main-search__submit {
@@ -129,47 +165,6 @@
 		}
 	}
 
-	.template--pages-home {
-
-		#new_search_form {
-			padding-top: 20px;
-
-			#search_form_query,
-			#search_form_search_location,
-			.main-search__submit {
-				height: 40px;
-				line-height: 40px;
-			}
-
-			.input.string {
-				height: 40px;
-			}
-
-			label.string {
-				top: 3px;
-				left: 8px;
-			}
-
-
-			.twitter-typeahead {
-				width: 100%;
-			}
-
-			.main-search__submit {
-				position: relative;
-				top: 0;
-				right: auto;
-			}
-		}
-	}
-
-	#search_form_search_location {
-		display: none;
-
-		&.visible {
-			display: block;
-		}
-	}
 
 	.nav-sections {
 		margin: 0;

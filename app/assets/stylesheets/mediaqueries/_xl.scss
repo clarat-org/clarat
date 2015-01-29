@@ -6,8 +6,7 @@
 
 @include breakpoint(XL) {
 
-	//@include mqindicator('XL');
-
+	@include mqindicator('XL');
 
 	// Header ######################################
 
@@ -52,6 +51,26 @@
 		}
 	}
 
+	.twitter-typeahead,
+	#new_search_form #search_form_search_location {
+		.template--pages-home {
+			width: 43%;
+		}
+	}
+
+	#new_search_form,
+	#new_search_form #search_form_query {
+		.template--pages-home & {
+			width: 100%;
+		}
+	}
+
+	.main-search__submit {
+		.template--pages-home & {
+			width: 10%;
+		}
+	}
+
 	#search_form_query {
 		width: 100%;
 	}
@@ -65,25 +84,6 @@
 	span.tt-dropdown-menu { // override JS with specifity of selector and important
 		right: 0 !important;
 	}
-
-	.template--pages-home {
-		.twitter-typeahead,
-		#new_search_form #search_form_search_location {
-			width: 43%;
-		}
-	}
-
-	.template--pages-home {
-		#new_search_form,
-		#new_search_form #search_form_query{
-			width: 100%;
-		}
-
-		.main-search__submit {
-			width: 10%;
-		}
-	}
-
 
 	// Content ######################################
 

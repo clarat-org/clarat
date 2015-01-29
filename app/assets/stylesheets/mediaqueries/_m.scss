@@ -6,8 +6,7 @@
 
 @include breakpoint(M) {
 
-//	@include mqindicator('M');
-
+	@include mqindicator('M');
 
 	// Header ######################################
 
@@ -56,6 +55,7 @@
 		border-radius: 0;
 	}
 
+	// Heavy nesting here due to formtastic classes
 
 	#new_search_form {
 		padding-left: 10px;
@@ -67,11 +67,9 @@
 
 		.template--pages-home & {
 
-			.input {
-				&.string {
-					display: block;
-					height: 50px;
-				}
+			.input.string {
+				display: block;
+				height: 50px;
 
 				&.search_form_search_location {
 					height: 50px;

@@ -6,7 +6,7 @@
 
 @include breakpoint(L) {
 
-	//@include mqindicator('L');
+	@include mqindicator('L');
 
 	// Header ######################################
 
@@ -55,28 +55,24 @@
 		}
 	}
 
-	.template--pages-home {
-		#new_search_form {
+	#new_search_form {
+		width: 435px;
+
+		.template--pages-home & {
+			width: auto;
+
 			#search_form_query {
 				width: 100%; // to fit in its twitter-typeahead container
 			}
 		}
 	}
 
-	#new_search_form {
-		width: 435px;
-	}
-
-	.template--pages-home {
-		#new_search_form {
-			width: auto;
+	.twitter-typeahead,
+	#new_search_form #search_form_search_location {
+		.template--pages-home & {
+		 	width: 42%;
+		 	margin-left: 10px;
 		}
-	}
-
-	.template--pages-home .twitter-typeahead,
-	 .template--pages-home #new_search_form #search_form_search_location {
-		 width: 42%;
-		 margin-left: 10px;
 	 }
 
 	.main-search__submit {

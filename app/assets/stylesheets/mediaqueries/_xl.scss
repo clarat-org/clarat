@@ -42,6 +42,11 @@
 		width: 500px;
 		padding-left: 0;
 
+		.input.string {
+			display: inline;
+			float: none;
+		}
+
 		label.string {
 			left: 22px;
 		}

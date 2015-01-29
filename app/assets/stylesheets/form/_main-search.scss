@@ -12,8 +12,11 @@
   list-style: none;
 
   .input {
-    position: relative;
-    display: inline;
+    &.string {
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
   }
 
   label.string {

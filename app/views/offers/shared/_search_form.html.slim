@@ -1,6 +1,22 @@
 = simple_form_for search_cache, url: offers_path, html: { method: :get } do |f|
-  = f.input :query, label: "Finde", required: false, input_html: {  placeholder: 'schwänzen, drogen, gewalt', spellcheck: false, autocomplete: 'off', autofocus: true, class: 'input-xlg typeahead' }
-  = f.input :search_location, label: "Wo", input_html: { value: geoloc_to_s, class: 'input-xlg JS-Search-location-display', placeholder: 'Adresse, Stadtteil, Stadt oder PLZ', oninvalid: "this.setCustomValidity('Bitte fülle dieses Feld aus')", onchange: "try{setCustomValidity('')}catch(e){}" }
-  = f.input :generated_geolocation, as: :hidden, input_html: { class: 'JS-Search-location', value: default_geolocation }
+  = f.input :query, label: t('shared.search.labels.query'),
+                    required: false,
+                    input_html: { \
+                      placeholder: search_query_placeholder,
+                      spellcheck: false,
+                      autocomplete: 'off',
+                      autofocus: true,
+                      class: 'input-xlg typeahead' }
+  = f.input :search_location, label: t('shared.search.labels.loc'),
+                              input_html: { \
+                                value: geoloc_to_s,
+                                class: 'input-xlg JS-Search-location-display',
+                                placeholder: t('shared.search.placeholder.loc'),
+                                oninvalid: custom_validity_js('fill_field'),
+                                onchange: custom_validity_reset_js }
+  = f.input :generated_geolocation, as: :hidden,
+                                    input_html: { \
+                                      class: 'JS-Search-location',
+                                      value: default_geolocation }
   = f.input :tags, as: :hidden
   button.main-search__submit Suchen

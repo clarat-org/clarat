@@ -1,0 +1,12 @@
+de:
+  shared:
+    abbr:
+      example: 'z.B.'
+    search:
+      placeholder:
+        loc: 'Adresse, Stadtteil, Stadt oder PLZ'
+      labels:
+        query: 'Finde'
+        loc: 'Wo'
+    forms:
+      fill_field: 'Bitte fülle dieses Feld aus'

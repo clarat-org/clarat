@@ -26,6 +26,7 @@ about supported directives.
 #
 # = require vendor/cookie_lib
 # = require vendor/inviewport
+# = require vendor/ios-orientationchange-fix
 #
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
@@ -35,7 +36,6 @@ about supported directives.
 # = require modules/query_autocomplete
 # = require modules/places_autocomplete
 # = require modules/mobilemenu
-# = require modules/ios-orientationchange-fix
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more

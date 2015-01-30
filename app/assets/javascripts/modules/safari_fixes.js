@@ -1,3 +1,6 @@
+// TODO: coffeescript
+// TODO: use template instead of html string
+// TODO: I18n
 ready = function() {
 
 	if ($('form .nav-sections').length) {
@@ -21,7 +24,3 @@ ready = function() {
 
 $(document).on('page:load', ready);
 $(document).ready(ready);
-
-
-
-

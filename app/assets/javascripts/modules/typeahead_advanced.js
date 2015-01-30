@@ -1,9 +1,12 @@
+// TODO: coffeescript
+// TODO: part of query_autocomplete
+// TODO: I18n
 ready = function(){
 
 	if ($('.twitter-typeahead').length) {
 
 		var ttContainer = $('.tt-dropdown-menu'),
-			moreLink = $('<div class="tt-allresults"></div>');
+			moreLink = $('<div class="tt-allresults">');
 
 		ttContainer.append(moreLink);
 
@@ -24,4 +27,3 @@ ready = function(){
 
 $(document).on('page:load', ready);
 $(document).ready(ready);
-

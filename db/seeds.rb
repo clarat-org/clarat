@@ -8,6 +8,8 @@
 
 user = User.create email: 'user@user.com', password: 'password', role: 'researcher'
 user.confirm!
+admin = User.create email: 'admin@admin.com', password: 'password', role: 'super'
+admin.confirm!
 
 Language.create name: 'Deutsch', code: 'deu'
 Language.create name: 'Englisch', code: 'eng'

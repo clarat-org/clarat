@@ -8,6 +8,9 @@ ready = ->
 
     Clarat.typeahead.on 'typeahead:selected', navigateToHit
 
+    $('body').on 'click', '.tt-allresults', ->
+      $('.main-search__submit').trigger 'click'
+
 initTypeahead = ->
   Clarat.index = new AlgoliaSearch(
     Clarat.algolia_app_id,
@@ -16,7 +19,8 @@ initTypeahead = ->
     Clarat.algolia_index
   )
 
-  template = HoganTemplates['autocomplete']
+  hitTemplate = HoganTemplates['autocomplete']
+  footerTemplate = HoganTemplates['footer'] # TODO: I18n
 
   # typeahead.js (re)initialization
   $('.typeahead').typeahead 'destroy'
@@ -24,10 +28,15 @@ initTypeahead = ->
     source: generateSource()
     templates:
       suggestion: (hit) ->
-        template.render(hit) # render the hit using Hogan.js
+        hitTemplate.render(hit) # render the hit using Hogan.js
+      footer: (set) ->
+        unless set.isEmpty
+          footerTemplate.render
+            results: Clarat.ttTotalResults
+            query: set.query
 
 generateSource = ->
-  Clarat.index.ttAdapter
+  Clarat.ttAdapter
     hitsPerPage: 5
     aroundLatLng: Clarat.currentGeolocation # TODO: use entered location
     aroundRadius: 999999999
@@ -35,6 +44,19 @@ generateSource = ->
 
 navigateToHit = (event, suggestion, id) ->
   Turbolinks.visit "/angebote/#{suggestion.slug}"
+
+# Write own ttAdapter so we can store number of total resuls
+Clarat.ttTotalResults = undefined
+Clarat.ttAdapter = (params) ->
+  (query, cb) ->
+    Clarat.index.search(
+      query,
+      (success, content) ->
+        if success
+          Clarat.ttTotalResults = content.nbHits # <-only difference to Algolia
+          cb(content.hits)
+      , params
+    )
 
 $(document).ready ready
 $(document).on 'page:load', ready

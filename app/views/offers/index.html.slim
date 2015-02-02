@@ -18,11 +18,14 @@
             h3.Listing-results__offer
               = link_to offer.name, offer_path(id: offer)
             / ToDo: Refactor and rename
-            h4.Listing-results__organisation
+            h4.Listing-results__offerinfo
               - if offer.location
+                | <span class="Listing-results__emphasis Listing-results__organization">
+                = offer.organizations.name
+                | </span>
                 = offer.location_address
               - else
-                | Überall erreichbar, egal, wo du bist
+                | <span class="Listing-results__emphasis">Überall erreichbar, egal, wo du bist</span>
       = paginate @offers
 
 

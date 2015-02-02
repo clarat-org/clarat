@@ -52,8 +52,8 @@
 	background: $brand_brown;
 	color: $brand_white;
 	text-align: center;
-	height: 36px;
-	line-height: 36px;
+	min-height: 36px;
+	padding: 5px 5px 4px;
 	margin-bottom: -5px;
 	cursor: pointer;
 }

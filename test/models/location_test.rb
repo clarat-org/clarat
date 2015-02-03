@@ -54,16 +54,19 @@ describe Location do
   describe 'methods' do
     describe '#concat_address' do
       before do
-        loc.assign_attributes street: 'street', city: 'city', zip: 'zip'
+        loc.assign_attributes street: 'street',
+                              city: 'city',
+                              zip: 'zip',
+                              organization_id: 1 # fixture Orga
       end
 
-      it 'should show the name if one exists' do
+      it 'should show the location name if one exists' do
         loc.name = 'name'
-        loc.concat_address.must_equal 'name (street zip city)'
+        loc.concat_address.must_equal 'foobar, name (street zip city)'
       end
 
-      it 'should not show a name if none exists' do
-        loc.concat_address.must_equal 'street zip city'
+      it 'should not show a location name if none exists' do
+        loc.concat_address.must_equal 'foobar, street zip city'
       end
     end
   end

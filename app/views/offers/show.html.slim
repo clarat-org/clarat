@@ -75,8 +75,10 @@
       section.section-content.section-content--organisation
         h3.section-content__title Anbieter
         .section-content__body
-          - @offer.organizations.each do |orga|
-            = link_to orga.name, organization_path(id: orga)
+          ul.Listing-organizations__list
+            - @offer.organizations.each do |orga|
+              li.Listing-organizations__listitem
+                = link_to orga.name, organization_path(id: orga)
 
     .section-wrapper-minor
       - if @offer.location

@@ -50,19 +50,19 @@
 }
 
 %roboto_regular {
-	font-family: 'roboto-regular', sans-serif;
+	font-family: 'roboto-regular', 'Roboto', sans-serif;
 }
 
 %roboto_light {
-	font-family: 'roboto-light', sans-serif;
+	font-family: 'roboto-light', 'Roboto', sans-serif;
 }
 
 %roboto_bold {
-	font-family: 'roboto-bold', sans-serif;
+	font-family: 'roboto-bold', 'Roboto', sans-serif;
 }
 
 %roboto_italic {
-	font-family: 'roboto-italic', sans-serif;
+	font-family: 'roboto-italic', 'Roboto', sans-serif;
 }
 
 body {
@@ -88,7 +88,7 @@ h2,
 h3,
 h4 {
 	margin-top: 0;
-}
+}'Roboto',
 
 p {
 	line-height: 1.68;

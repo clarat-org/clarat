@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150123125130) do
+ActiveRecord::Schema.define(version: 20150203125912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -200,7 +200,7 @@ ActiveRecord::Schema.define(version: 20150123125130) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "icon",       limit: 12
-    t.string   "synonyms"
+    t.text     "synonyms"
   end
 
   add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
@@ -217,7 +217,6 @@ ActiveRecord::Schema.define(version: 20150123125130) do
     t.string   "encrypted_password",     default: "",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role",                   default: "standard"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.string   "confirmation_token"
@@ -228,6 +227,7 @@ ActiveRecord::Schema.define(version: 20150123125130) do
     t.datetime "locked_at"
     t.string   "provider"
     t.string   "uid"
+    t.string   "role",                   default: "standard"
     t.string   "name"
   end
 

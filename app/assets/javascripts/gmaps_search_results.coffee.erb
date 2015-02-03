@@ -12,6 +12,7 @@ initialize = ->
 
     # Create Markers
     for key, markerData of markers
+      continue unless markerData.position
       markerPosition = new google.maps.LatLng(
         markerData.position.latitude,
         markerData.position.longitude

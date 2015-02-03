@@ -20,7 +20,10 @@ Clarat::Application.routes.draw do
     resources :contacts, only: [:new, :create, :index]
     resources :subscriptions, only: [:new, :create]
     get 'tags/:offer_name', controller: :tags, action: :index
+
+    get '/404' => 'pages#not_found'
   end
+
 
   # Sidekiq interface
   require 'sidekiq/web'

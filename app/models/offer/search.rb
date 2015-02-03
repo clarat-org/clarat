@@ -17,7 +17,6 @@ class Offer
         add_attribute :keyword_string, :organization_names, :location_street,
                       :location_city, :location_zip, :encounter_value
         attributesForFaceting [:_tags]
-        binding.pry
         optionalWords STOPWORDS
       end
 

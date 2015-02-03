@@ -58,8 +58,7 @@ class Offer < ActiveRecord::Base
       offer.fax = nil
       offer.contact_name = nil
       offer.email = nil
-      offer.openings = []
-      offer.opening_specification = nil
+      offer.openings = self.openings
       offer.completed = false
       offer.approved = false
       offer.tags = self.tags

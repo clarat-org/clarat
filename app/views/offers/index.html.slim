@@ -20,10 +20,11 @@
             / ToDo: Refactor and rename
             h4.Listing-results__offerinfo
               - if offer.location
-                | <span class="Listing-results__emphasis Listing-results__organization">
-                / ToDo: Refactor
-                = offer.organizations.name
-                | </span>
+                span.Listing-results__emphasis.Listing-results__organization
+                  - if offer.organizations.count > 1
+                    = t 'offers.index.cooperation'
+                  - else
+                    = offer.organizations.first.name
                 = offer.location_address
               - else
                 | <span class="Listing-results__emphasis">Überall erreichbar, egal, wo du bist</span>

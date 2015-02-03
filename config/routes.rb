@@ -5,11 +5,11 @@ Clarat::Application.routes.draw do
 
     # static pages
     root to: 'pages#home'
-    get 'ueber-uns' => 'pages#about'
-    get 'haeufige-fragen' => 'pages#faq'
-    get 'impressum' => 'pages#impressum'
-    get 'rechtliche-hinweise' => 'pages#agb'
-    get 'datenschutzerklaerung' => 'pages#privacy'
+    get 'ueber-uns' => 'pages#about', as: 'about'
+    get 'haeufige-fragen' => 'pages#faq', as: 'faq'
+    get 'impressum' => 'pages#impressum', as: 'impressum'
+    get 'rechtliche-hinweise' => 'pages#agb', as: 'agb'
+    get 'datenschutzerklaerung' => 'pages#privacy', as: 'privacy'
 
     # RESTful resources
     resources :offers, only: [:index, :show]
@@ -23,7 +23,6 @@ Clarat::Application.routes.draw do
 
     get '/404' => 'pages#not_found'
   end
-
 
   # Sidekiq interface
   require 'sidekiq/web'

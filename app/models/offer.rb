@@ -34,9 +34,6 @@ class Offer < ActiveRecord::Base
     ]
   end
 
-  # Scopes
-  scope :approved, -> { where(approved: true, completed: true) }
-
   # Methods
 
   delegate :name, :street, :addition, :city, :zip, :address,

@@ -15,5 +15,10 @@ describe OffersController do
         get :show, id: offer.slug, locale: 'de'
       end
     end
+
+    it 'should redirect to 404 if offer not found' do
+      get :show, id: 'doesntexist', locale: 'de'
+      assert_redirected_to controller: 'pages', action: 'not_found'
+    end
   end
 end

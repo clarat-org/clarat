@@ -36,7 +36,7 @@
 
 
 .Listing-results__offer,
-.Listing-results__organisation {
+.Listing-results__offerinfo {
 	position: relative;
 	margin: 0;
 	font-weight: 400;
@@ -69,15 +69,19 @@
 	}
 }
 
-.Listing-results__organisation {
+.Listing-results__offerinfo {
 	@extend %roboto_regular;
 	@extend %clarat_rounding_end;
-	padding: 9px 15px;
-	min-height: 38px;
+	padding: 6px 15px;
+	min-height: 32px;
 	background: $brand_beige;
 	font-size: 13px;
 
 	a {
 		color: $brand_brown;
 	}
+}
+
+.Listing-results__organization {
+	padding-right: 6px;
 }

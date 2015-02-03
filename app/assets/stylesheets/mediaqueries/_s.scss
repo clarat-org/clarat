@@ -231,6 +231,11 @@
 			padding-top: 131px;
 		}
 	}
+	
+	.Listing-results__organization {
+		display: block;
+		padding-right: 0;
+	}
 
 	.section-start__headline {
 		height: 35px;
@@ -269,6 +274,15 @@
 		color: $brand_white;
 		text-overflow: ellipsis;
 		font-size: 16px;
+	}
+
+	.Listing-results__listitem {
+		margin-bottom: 15px;
+	}
+
+	.Listing-results__offer,
+	.Listing-results__offerinfo {
+		padding: 7px 10px;
 	}
 
 	.template--pages-faq,

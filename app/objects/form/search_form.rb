@@ -68,7 +68,9 @@ class SearchForm
   def toggle tag
     newtags = tag_array
     newtags << tag unless newtags.delete(tag)
-    { query: query, tags: newtags.join(',') }
+    {
+      query: query, tags: newtags.join(','), search_location: search_location
+    }
   end
 
   # @return [Boolean]

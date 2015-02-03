@@ -59,6 +59,7 @@ RailsAdmin.config do |config|
       field :approved
       field :creator
       field :locations_count
+      field :created_by
 
       sort_by :offers_count
     end
@@ -162,6 +163,7 @@ RailsAdmin.config do |config|
       field :approved
       field :creator
       field :organizations
+      field :created_by
     end
     weight(-1)
     field :name do

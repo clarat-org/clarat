@@ -1,0 +1,7 @@
+de:
+  pages:
+    not_found:
+      heading: 'Leider konnten wir diese Seite nicht finden.'
+      description: |
+        Bitte nutze den Zurück-Knopf deines Browsers und versuche es mit einem
+        anderen Link oder probiere es mit der Suchfunktion.

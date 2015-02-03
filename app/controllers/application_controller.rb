@@ -51,4 +51,9 @@ class ApplicationController < ActionController::Base
   def pundit_unscoped_classes
     %w(OffersController TagsController ContactsController)
   end
+
+  # Standard 404 Error
+  rescue_from ActiveRecord::RecordNotFound do |_error|
+    redirect_to '/404'
+  end
 end

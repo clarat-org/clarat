@@ -35,7 +35,7 @@ class Location < ActiveRecord::Base
   # Methods
 
   delegate :name, to: :federal_state, prefix: true
-  delegate :name, to: :organization, prefix: true
+  delegate :name, to: :organization, prefix: true, allow_nil: true
 
   def concat_address
     if name && !name.empty?

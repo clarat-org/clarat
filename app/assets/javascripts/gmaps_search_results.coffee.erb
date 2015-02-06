@@ -1,6 +1,8 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
+  contentString = '<div id="content">Info Window Sample Content</div>'
+  infowindow = new (google.maps.InfoWindow)(content: contentString)
   includedPoints = []
 
   if markers
@@ -26,7 +28,7 @@ initialize = ->
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
-      bindMapsEvents map, marker, markerData
+      bindMapsEvents map, marker, markerData, infowindow
       bindMarkerToResults marker, markerData
 
     # Get User Position
@@ -49,7 +51,8 @@ initialize = ->
 
     bindExternalEvents()
 
-bindMapsEvents = (map, marker, markerData) ->
+
+bindMapsEvents = (map, marker, markerData, infowindow) ->
   google.maps.event.addListener marker, 'mouseover', (event) ->
     for offerID in markerData.offer_ids
       $("#result-offer-#{offerID}").addClass 'JS-highlighted'
@@ -62,7 +65,7 @@ bindMapsEvents = (map, marker, markerData) ->
     offerID = markerData.offer_ids[0] # specification needed
 
     map.setCenter marker.getPosition()
-
+    infowindow.open map, marker
 
 bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.offer_ids

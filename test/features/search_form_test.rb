@@ -68,7 +68,9 @@ feature 'Search Form' do
     visit root_path
     fill_in 'search_form_search_location', with: 'Bielefeld'
     find('.main-search__submit').click
-    page.must_have_content 'Standort "Bielefeld" nicht gefunden'
+    page.must_have_content(
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
+    )
   end
 
   scenario 'Search for standard string leads to error page' do
@@ -78,7 +80,7 @@ feature 'Search Form' do
     find('#search_form_generated_geolocation').set '' # unset by JS
     find('.main-search__submit').click
     page.must_have_content(
-      "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )
   end
 
@@ -89,8 +91,7 @@ feature 'Search Form' do
     find('#search_form_generated_geolocation').set '4,2' # set by JS
     find('.main-search__submit').click
     page.wont_have_content(
-      "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )
   end
-
 end

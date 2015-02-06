@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150203125912) do
+ActiveRecord::Schema.define(version: 20150206165334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 20150203125912) do
     t.string   "second_telephone", limit: 32
     t.string   "fax",              limit: 32
     t.boolean  "completed",                   default: false
+    t.string   "display_name",                                null: false
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
@@ -217,7 +218,6 @@ ActiveRecord::Schema.define(version: 20150203125912) do
     t.string   "encrypted_password",     default: "",         null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role",                   default: "standard"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.string   "confirmation_token"
@@ -228,6 +228,7 @@ ActiveRecord::Schema.define(version: 20150203125912) do
     t.datetime "locked_at"
     t.string   "provider"
     t.string   "uid"
+    t.string   "role",                   default: "standard"
     t.string   "name"
   end
 

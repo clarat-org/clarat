@@ -230,6 +230,10 @@
 		.template--offers-index & {
 			padding-top: 131px;
 		}
+
+		&.content-main--invalid_location {
+			padding-top: 80px;
+		}
 	}
 	
 	.Listing-results__organization {

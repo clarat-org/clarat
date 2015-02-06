@@ -12,7 +12,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production, :development] # postgres
+  gem 'pg', group: [:production, :staging, :development] # postgres
 end
 
 # Use Uglifier as compressor for JavaScript assets
@@ -111,7 +111,7 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
 end
 

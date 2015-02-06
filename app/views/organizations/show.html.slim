@@ -44,14 +44,13 @@
 
         section.section-content--map
           .aside-standard__container
-            h5.aside-standard__headline Kartenausgabe
+            h5.aside-standard__headline = t 'organizations.show.map_output_searchresult'
             #map-container
               #map-canvas data={markers: @markers.to_json}
 
         button.offer-contribute
-          | <i class="fa fa-pencil-square-o"></i>
-          | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
-
+          i.fa.fa-pencil-square-o
+          = t 'organizations.show.cta_report_errors'
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

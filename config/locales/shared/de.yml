@@ -14,3 +14,9 @@ de:
     subscription:
       placeholder: E-Mail Adresse
       button: Newsletter abonnieren
+    navigation:
+      claim:
+        first_row: Einfach Hilfe finden
+        second_row: Unterstützungsangebote für Kinder, Jugendliche und Familien
+    distributor:
+      sections_headline: Oder suche nach Kategorien

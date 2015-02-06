@@ -1,5 +1,6 @@
 de:
   offers:
+
     index:
       unavailable_location_modal: |
         Leider finden sich auf unserer Plattform aktuell nur Angebote aus
@@ -9,6 +10,7 @@ de:
       cooperation: Kooperationsprojekte
       map_output_searchresults: Kartenausgabe der Suchergebnisse
       location_everywhere: Überall erreichbar, egal, wo du bist
+
     show:
       what: Was
       where: Wo
@@ -27,6 +29,13 @@ de:
       organizations: Anbieter
       map_output_searchresult: Kartenausgabe
       cta_report_errors: Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+
+    invalid_location:
+      title: Leider konnten wir den von dir eingegeben Standort nicht finden
+      text: |
+        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und versuche
+        gegebenenfalls mit einer alternativen Eingabe (z.B. "Postleitzahl Ort").
+
     shared:
       offers: Angebote
       offer: Angebot

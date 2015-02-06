@@ -26,7 +26,7 @@ initialize = ->
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
-      bindMapsEvents marker, markerData
+      bindMapsEvents map, marker, markerData
       bindMarkerToResults marker, markerData
 
     # Get User Position
@@ -49,7 +49,7 @@ initialize = ->
 
     bindExternalEvents()
 
-bindMapsEvents = (marker, markerData) ->
+bindMapsEvents = (map, marker, markerData) ->
   google.maps.event.addListener marker, 'mouseover', (event) ->
     for offerID in markerData.offer_ids
       $("#result-offer-#{offerID}").addClass 'JS-highlighted'
@@ -60,9 +60,9 @@ bindMapsEvents = (marker, markerData) ->
 
   google.maps.event.addListener marker, 'click', (event) ->
     offerID = markerData.offer_ids[0] # specification needed
-    $('html, body').animate
-      scrollTop: $("#result-offer-#{offerID}").offset().top - 120
-    , 'fast'
+
+    map.setCenter marker.getPosition()
+
 
 bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.offer_ids

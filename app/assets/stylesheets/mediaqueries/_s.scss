@@ -234,8 +234,12 @@
 		&.content-main--invalid_location {
 			padding-top: 80px;
 		}
+
+		body[class="template--pages-"] & {
+			padding-top: 68px;
+		}
 	}
-	
+
 	.Listing-results__organization {
 		display: block;
 		padding-right: 0;

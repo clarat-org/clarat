@@ -52,3 +52,6 @@ dump.rdb
 
 # RBP outputs
 rails_best_practices_output.html
+
+# generated sitemaps
+/public/sitemaps/*

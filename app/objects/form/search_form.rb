@@ -30,7 +30,7 @@ class SearchForm
                            page: 0,
                            hitsPerPage: 1,
                            aroundLatLng: geolocation,
-                           aroundRadius: 25_000 # check later if this is accurate
+                           aroundRadius: 25_000 # check later if accurate
       ).any?
   end
 

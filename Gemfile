@@ -83,6 +83,7 @@ gem 'paper_trail'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
+gem 'dynamic_sitemaps'
 
 gem 'sanitize' # parser based sanitization
 

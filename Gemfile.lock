@@ -131,6 +131,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     docile (1.1.5)
+    dynamic_sitemaps (2.0.0)
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
@@ -499,6 +500,7 @@ DEPENDENCIES
   coveralls
   database_cleaner
   devise
+  dynamic_sitemaps
   email_spec
   enumerize
   factory_girl_rails

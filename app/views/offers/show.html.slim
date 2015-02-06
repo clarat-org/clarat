@@ -8,21 +8,21 @@
       /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
     .section-wrapper-major
       section.section-content.section-content--what
-        h3.section-content__title Was
+        h3.section-content__title = t 'offers.show.what'
         .section-content__body
           = @offer.description
 
       section.section-content.section-content--nextsteps
         h3.section-content__title
           i.fa.fa-hand-o-right
-          | Nächste Schritte
+          = t 'offers.show.next_steps'
         .section-content__body
           p== @offer.next_steps
 
       / TODO: Refactor!
       - if @offer.opening_details?
         section.section-content.section-content--openinghours
-          h3.section-content__title Öffnungszeiten
+          h3.section-content__title = t 'offers.show.opening_hours'
           .section-content__body
             - if @offer.openings.any?
               table
@@ -37,7 +37,7 @@
                       - if opening.open && opening.close
                         =<> "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
                       - else
-                        | Nach Vereinbarung
+                        = t 'offers.show.opening_by_arrangement'
             - if @offer.opening_specification? && @offer.openings.any?
               br
             == @offer.opening_specification
@@ -45,27 +45,27 @@
       - if @offer.contact_details?
         / ^ modify that method if you add information to this box
         section.section-content.section-content--contact
-          h3.section-content__title Kontakt
+          h3.section-content__title = t 'offers.show.contact.contact'
           .section-content__body
             p
-              == "Ansprechpartner: #{@offer.contact_name}<br>" if @offer.contact_name?
+              == "#{I18n.t 'offers.show.contact.person'}: #{@offer.contact_name}<br>" if @offer.contact_name?
               - if @offer.telephone?
-                | Telefon:
+                = t 'offers.show.contact.phone'
                 a< href="tel:#{@offer.telephone}" #{@offer.telephone}
                 br
-              == "Fax: #{@offer.fax}<br>" if @offer.fax?
+              == "#{I18n.t 'offers.show.contact.fax'}: #{@offer.fax}<br>" if @offer.fax?
               - if @offer.email?
-                | E-Mail:
+                = t 'offers.show.contact.email'
                 span#secure-email==< secure_email_to @offer.email
                 br
               / TODO: Refactor!
               - unless @offer.websites.empty?
                 - if @offer.websites.own.first
-                  | Webseite:
+                  = t 'offers.show.contact.website'
                   =< link_to "#{@offer.websites.own.first.url}", "#{@offer.websites.own.first.url}"
                   br
               - if @offer.social_media_websites?
-                == "Weitere Präsenzen im Netz: "
+                = t 'offers.show.contact.socialmedia'
                 ==> link_to 'Facebook', "#{@offer.websites.facebook.first.url}" if @offer.websites.facebook.first
                 ==> link_to 'Twitter', "#{@offer.websites.twitter.first.url}" if @offer.websites.twitter.first
                 ==> link_to 'Youtube', "#{@offer.websites.youtube.first.url}" if @offer.websites.youtube.first
@@ -73,7 +73,7 @@
                 ==> link_to 'Pinterest', "#{@offer.websites.pinterest.first.url}" if @offer.websites.pinterest.first
 
       section.section-content.section-content--organisation
-        h3.section-content__title Anbieter
+        h3.section-content__title = t 'offers.show.organizations'
         .section-content__body
           ul.Listing-organizations__list
             - @offer.organizations.each do |orga|
@@ -83,7 +83,7 @@
     .section-wrapper-minor
       - if @offer.location
         section.section-content.section-content--where
-          h3.section-content__title Wo
+          h3.section-content__title = t 'offers.show.where'
           .section-content__body
             /! http://microformats.org/wiki/adr start
             .adr
@@ -103,14 +103,14 @@
 
         section.section-content--map
           .aside-standard__container
-            h5.aside-standard__headline Kartenausgabe
+            h5.aside-standard__headline = t 'offers.show.map_output_searchresult'
             #map-container
               #map-canvas data={markers: @markers.to_json}
 
 
       - unless @offer.tags.empty?
         section.section-content.section-content--tags
-          h5.aside-standard__headline#tags Zugeordnete Schlagworte
+          h5.aside-standard__headline#tags = t 'offers.show.assigned_tags'
           ul.Listing-tags
             -@offer.tags.each do |tag|
               li.Listing-tags__item
@@ -118,7 +118,7 @@
 
       = link_to new_contact_path, class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
-        | Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+        = t 'offers.show.cta_report_errors'
 
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true

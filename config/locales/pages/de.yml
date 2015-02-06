@@ -1,5 +1,26 @@
 de:
   pages:
+    home:
+      title: Unterstützungsangebote für Kinder, Jugendliche und Familien
+      section:
+        how:
+          title: Wie funktioniert clarat?
+          text: |
+            Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe.
+            Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft.
+            Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.
+        whom:
+          title: Für wen ist clarat?
+          text: |
+            clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung.
+            Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht.
+            Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte. Anliegen eingeben, Angebot finden und dann hin.
+        why:
+          title: Warum gibt es clarat?
+          text: |
+            In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien.
+            Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert
+            zum passenden Angebot in deiner Nähe zu kommen.
     not_found:
       heading: 'Leider konnten wir diese Seite nicht finden.'
       description: |

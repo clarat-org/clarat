@@ -3,10 +3,13 @@
     .Listing-results
       h2.Listing-results__headline
         / ToDo: Use 'Angebot'  if it is just one
-        = "#{@search_cache.hit_count} Angebote"
+        / offers.shared.offer available for singular
+        = "#{@search_cache.hit_count} #{I18n.t('offers.shared.offers')}"
         - tags = @search_cache.tags
         - unless tags.blank?
-          |  (Schlagwortfilter:
+          |  (
+          = t 'offers.shared.tag_filter'
+          | :
           =< tags
           | )
 
@@ -27,7 +30,7 @@
                     = offer.organizations.first.name
                 = offer.location_address
               - else
-                | <span class="Listing-results__emphasis">Überall erreichbar, egal, wo du bist</span>
+                span.Listing-results__emphasis = t 'offers.index.location_everywhere'
       = paginate @offers
 
 
@@ -39,7 +42,7 @@
   aside.aside-standard
 
     #tags.aside-standard__container
-      h5.aside-standard__headline Schlagwortfilter
+      h5.aside-standard__headline = t 'offers.shared.tag_filter'
 
       ul.Listing-tags
         - tags1 = @tags[0..9]
@@ -53,14 +56,14 @@
                 = render 'tag', search_cache: @search_cache, tag: tag
             a.js-more-trigger href='#'
               .Listing-tags__control.js-more-display
-                | Mehr Schlagworte
+                = t 'offers.shared.tag_filter_more'
                 .fa.fa-chevron-down<
               .Listing-tags__control.js-more-display.is--hidden
-                | Weniger Schlagworte
+                = t 'offers.shared.tag_filter'
                 .fa.fa-chevron-up<
 
     .aside-standard__container
-      h5.aside-standard__headline Kartenausgabe der Suchergebnisse
+      h5.aside-standard__headline = t 'offers.index.map_output_searchresults'
 
       #map-container
         #map-canvas data={markers: @markers.to_json, position: @position.to_json}

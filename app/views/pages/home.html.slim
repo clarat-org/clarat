@@ -1,18 +1,17 @@
-- provide(:title, 'Unterstützungsangebote für Kinder, Jugendliche und Familien')
+- provide(:title, t('pages.home.title'))
 main.content-main.content-main--wide
   .wrapper-inner
     section.section-start.section-start--how
-      h4.section-start__headline Wie funktioniert clarat?
+      h4.section-start__headline = t 'pages.home.section.how.title'
       .section-start__body
-        p Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.
+        p = t 'pages.home.section.how.text'
 
     section.section-start.section-start--whom
-      h4.section-start__headline Für wen ist clarat?
+      h4.section-start__headline = t 'pages.home.section.whom.title'
       .section-start__body
-        p clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte. Anliegen eingeben, Angebot finden und dann hin.
-
+        p = t 'pages.home.section.whom.text'
 
     section.section-start.section-start--why
-      h4.section-start__headline Warum gibt es clarat?
+      h4.section-start__headline = t 'pages.home.section.why.title'
       .section-start__body
-        p In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien. Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum passenden Angebot in deiner Nähe zu kommen.
+        p = t 'pages.home.section.why.text'

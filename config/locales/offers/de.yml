@@ -6,3 +6,30 @@ de:
         Berlin. Wir hoffen aber schon bald auch in anderen Teilen
         Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
         und wir werden uns einmalig bei dir melden sobald das der Fall ist.
+      cooperation: Kooperationsprojekte
+      map_output_searchresults: Kartenausgabe der Suchergebnisse
+      location_everywhere: Überall erreichbar, egal, wo du bist
+    show:
+      what: Was
+      where: Wo
+      assigned_tags: Zugeordnete Schlagworte
+      next_steps: Nächste Schritte
+      opening_hours: Öffnungszeiten
+      opening_by_arrangement: Nach Vereinbarung
+      contact:
+        contact: Kontakt
+        person: Ansprechpartner
+        phone: "Telefon: "
+        fax: "Fax: "
+        email: "E-Mail: "
+        website: "Webseite: "
+        socialmedia: "Weitere Präsenzen im Netz: "
+      organizations: Anbieter
+      map_output_searchresult: Kartenausgabe
+      cta_report_errors: Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+    shared:
+      offers: Angebote
+      offer: Angebot
+      tag_filter: Schlagwortfilter
+      tag_filter_more: Mehr Schlagworte
+      tag_filter_less: Weniger Schlagworte

@@ -5,6 +5,6 @@
             label: false,
             input_html: { \
               class: 'newsletter-subscribe__input',
-              placeholder: 'E-Mail Adresse' \
+              placeholder: "#{I18n.t 'shared.subscription.placeholder'}" \
             }
-  button.newsletter-subscribe__submit Newsletter abonnieren
+  button.newsletter-subscribe__submit  = t 'shared.subscription.button'

@@ -8,5 +8,9 @@ de:
       labels:
         query: 'Finde'
         loc: 'Wo'
+      button: Suchen
     forms:
       fill_field: 'Bitte fülle dieses Feld aus'
+    subscription:
+      placeholder: E-Mail Adresse
+      button: Newsletter abonnieren

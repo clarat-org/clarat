@@ -1,4 +1,6 @@
 # STAGING ENV, SHOULD CLOSELY RESEMBLE PRODUCTION
+# to transfer data from production to staging, run:
+# heroku pgbackups:transfer HEROKU_POSTGRESQL_GREEN clarat-staging::HEROKU_POSTGRESQL_COPPER --app clarat
 Clarat::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

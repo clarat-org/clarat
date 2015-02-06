@@ -210,9 +210,6 @@
 		line-height: 45px; // closer to optical vertical middle
 	}
 
-	span.tt-dropdown-menu {  // specificity, overriding JS
-		right: 0 !important; // overriding JS
-	}
 
 	// Content ######################################
 
@@ -299,6 +296,26 @@
 	.next,
 	.prev {
 		margin-bottom: 5px;
+	}
+
+	// Twitter Typeahead ###########################
+
+	.twitter-typeahead {
+		span.tt-dropdown-menu { // specificity, overriding JS
+			background: $brand_beige;
+			position: relative !important;
+			right: 0 !important; // overriding JS
+			margin-bottom: 10px;
+		}
+	}
+
+	.template--pages-home #new_search_form .input.string {
+		height: auto !important;
+		min-height: 40px;
+	}
+
+	.template--pages-home #new_search_form .input.string.search_form_search_location {
+		margin: 10px 0;
 	}
 
 	// Footer ######################################

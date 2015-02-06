@@ -108,6 +108,7 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.label_methods << :display_name
   config.model 'Location' do
     list do
       field :name

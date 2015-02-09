@@ -116,6 +116,7 @@ RailsAdmin.config do |config|
       field :zip
       field :federal_state
       field :completed
+      field :display_name
     end
     weight(-2)
     field :organization

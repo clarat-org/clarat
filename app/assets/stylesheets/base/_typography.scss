@@ -5,102 +5,97 @@
 // ---------------------------------------------------------------
 
 @font-face {
-	font-family: 'roboto-regular';
-	src: asset-url('Roboto-Regular-webfont.eot');
-	src: asset-url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-	asset-url('Roboto-Regular-webfont.woff') format('woff'),
-	asset-url('Roboto-Regular-webfont.ttf') format('truetype'),
-	asset-url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'roboto-regular';
+  src: asset-url('Roboto-Regular-webfont.eot');
+  src: asset-url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Regular-webfont.woff') format('woff'),
+  asset-url('Roboto-Regular-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'roboto-light';
-	src: asset-url('Roboto-Light-webfont.eot');
-	src: asset-url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-	asset-url('Roboto-Light-webfont.woff') format('woff'),
-	asset-url('Roboto-Light-webfont.ttf') format('truetype'),
-	asset-url('Roboto-Light-webfont.svg#robotolight') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'roboto-light';
+  src: asset-url('Roboto-Light-webfont.eot');
+  src: asset-url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Light-webfont.woff') format('woff'),
+  asset-url('Roboto-Light-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'roboto-bold';
-	src: asset-url('Roboto-Bold-webfont.eot');
-	src: asset-url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-	asset-url('Roboto-Bold-webfont.woff') format('woff'),
-	asset-url('Roboto-Bold-webfont.ttf') format('truetype'),
-	asset-url('Roboto-Bold-webfont.svg#robotobold') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'roboto-bold';
+  src: asset-url('Roboto-Bold-webfont.eot');
+  src: asset-url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Bold-webfont.woff') format('woff'),
+  asset-url('Roboto-Bold-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'roboto-italic';
-	src: asset-url('Roboto-Italic-webfont.eot');
-	src: asset-url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-	asset-url('Roboto-Italic-webfont.woff') format('woff'),
-	asset-url('Roboto-Italic-webfont.ttf') format('truetype'),
-	asset-url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'roboto-italic';
+  src: asset-url('Roboto-Italic-webfont.eot');
+  src: asset-url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Italic-webfont.woff') format('woff'),
+  asset-url('Roboto-Italic-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 %roboto_regular {
-	font-family: 'roboto-regular', 'Roboto', sans-serif;
+  font-family: 'roboto-regular', 'Roboto', sans-serif;
 }
 
 %roboto_light {
-	font-family: 'roboto-light', 'Roboto', sans-serif;
+  font-family: 'roboto-light', 'Roboto', sans-serif;
 }
 
 %roboto_bold {
-	font-family: 'roboto-bold', 'Roboto', sans-serif;
+  font-family: 'roboto-bold', 'Roboto', sans-serif;
 }
 
 %roboto_italic {
-	font-family: 'roboto-italic', 'Roboto', sans-serif;
+  font-family: 'roboto-italic', 'Roboto', sans-serif;
 }
 
 body {
-	@extend  %roboto_regular;
-	color: $font_color;
+  @extend  %roboto_regular;
+  color: $font_color;
 }
 
 body,
 button,
 input[type="submit"] {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-	a {
-		color: inherit;
-	}
+  a {
+    color: inherit;
+  }
 }
 
 h1,
 h2,
 h3,
 h4 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 p {
-	line-height: 1.68;
+  line-height: 1.68;
 }
 
 // Iconfonts
 
 .fa {
-	margin-right: 5px;
+  margin-right: 5px;
 }
-
-
-
-
-

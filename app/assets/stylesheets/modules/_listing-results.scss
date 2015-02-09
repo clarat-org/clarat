@@ -5,83 +5,83 @@
 // ---------------------------------------------------------------
 
 .Listing-results {
-	min-height: 980px; // Sticky sidebar needs a potentially larger counterpart, breaks scrolling otherwise
+  min-height: 980px; // Sticky sidebar needs a potentially larger counterpart, breaks scrolling otherwise
 }
 
 
 .Listing-results__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .Listing-results__listitem {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 
-	&.JS-highlighted {
-		.Listing-results__offer {
-			background: $brand_orange;
-		}
-	}
+  &.JS-highlighted {
+    .Listing-results__offer {
+      background: $brand_orange;
+    }
+  }
 }
 
 .Listing-results__headline {
-	@extend %roboto_regular;
-	font-weight: 400;
+  @extend %roboto_regular;
+  font-weight: 400;
 }
 
 .Listing-results__emphasis {
-	@extend %roboto_bold;
+  @extend %roboto_bold;
 }
 
 
 .Listing-results__offer,
 .Listing-results__offerinfo {
-	position: relative;
-	margin: 0;
-	font-weight: 400;
+  position: relative;
+  margin: 0;
+  font-weight: 400;
 
-	a {
-		text-decoration: none;
-		display: block;
-		height: inherit;
+  a {
+    text-decoration: none;
+    display: block;
+    height: inherit;
 
-		&:hover {
-			color: $brand_brown;
-		}
-	}
+    &:hover {
+      color: $brand_brown;
+    }
+  }
 }
 
 .Listing-results__offer {
-	@extend %roboto_bold;
-	@extend %clarat_rounding_start;
-	padding: 7px 15px;
-	min-height: 38px;
-	background: $brand_yellow;
-	font-size: 18px;
+  @extend %roboto_bold;
+  @extend %clarat_rounding_start;
+  padding: 7px 15px;
+  min-height: 38px;
+  background: $brand_yellow;
+  font-size: 18px;
 
-	a {
-		color: $brand_white;
-	}
+  a {
+    color: $brand_white;
+  }
 
-	.Listing-results__listitem--highlighted & {
-		background: $brand_orange;
-	}
+  .Listing-results__listitem--highlighted & {
+    background: $brand_orange;
+  }
 }
 
 .Listing-results__offerinfo {
-	@extend %roboto_regular;
-	@extend %clarat_rounding_end;
-	padding: 6px 15px;
-	min-height: 32px;
-	background: $brand_beige;
-	font-size: 13px;
+  @extend %roboto_regular;
+  @extend %clarat_rounding_end;
+  padding: 6px 15px;
+  min-height: 32px;
+  background: $brand_beige;
+  font-size: 13px;
 
-	a {
-		color: $brand_brown;
-	}
+  a {
+    color: $brand_brown;
+  }
 }
 
 .Listing-results__organization {
-	padding-right: 6px;
+  padding-right: 6px;
 }

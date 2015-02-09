@@ -108,6 +108,7 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.label_methods << :display_name
   config.model 'Location' do
     list do
       field :name
@@ -115,6 +116,7 @@ RailsAdmin.config do |config|
       field :zip
       field :federal_state
       field :completed
+      field :display_name
     end
     weight(-2)
     field :organization
@@ -139,9 +141,10 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :display_name
     end
 
-    object_label_method :concat_address
+    object_label_method :display_name
   end
 
   config.model 'FederalState' do
@@ -167,7 +170,7 @@ RailsAdmin.config do |config|
     end
     weight(-1)
     field :name do
-      css_class 'js-tag-suggestions__trigger'
+      css_class 'js-cat-suggestions__trigger'
     end
     field :description do
       css_class 'js-count-character'
@@ -197,11 +200,8 @@ RailsAdmin.config do |config|
         'Required before approval. Only approved organizations.'
       end
     end
-    field :tags do
-      css_class 'js-tag-suggestions'
-      help do
-        'One main tag (*) required before approval.'
-      end
+    field :categories do
+      css_class 'js-cat-suggestions'
     end
     field :languages
     field :openings
@@ -261,11 +261,11 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model 'Tag' do
+  config.model 'Category' do
     field :name
-    field :main
     field :synonyms
-    field :dependent_tags
+    field :parent
+    field :dependent_categories
 
     object_label_method :name_with_optional_asterisk
 
@@ -275,6 +275,7 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :icon
     end
   end
 

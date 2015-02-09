@@ -11,15 +11,15 @@ class SearchForm
   attribute :query, String
   attribute :search_location, String
   attribute :generated_geolocation, String
-  attribute :tags, String
+  attribute :categories, String
 
   def search page
     @hits = Offer.algolia_search query,
                                  page: page,
                                  aroundLatLng: geolocation,
                                  aroundRadius: 999_999_999,
-                                 tagFilters: tags,
-                                 facets: '_tags',
+                                 tagFilters: categories,
+                                 facets: '*',
                                  maxValuesPerFacet: 20,
                                  aroundPrecision: 500
   end
@@ -52,10 +52,10 @@ class SearchForm
     end
   end
 
-  def tags_by_facet
-    tags_facet = @hits.facets['_tags']
-    if tags_facet
-      inverted = tags_facet.each_with_object({}) do |(key, value), out|
+  def categories_by_facet
+    categories_facet = @hits.facets['_tags']
+    if categories_facet
+      inverted = categories_facet.each_with_object({}) do |(key, value), out|
         (out[value] ||= []) << key
       end # safe invert
       inverted.values.flatten.uniq
@@ -64,23 +64,23 @@ class SearchForm
     end
   end
 
-  # toggles tag on or off
-  def toggle tag
-    newtags = tag_array
-    newtags << tag unless newtags.delete(tag)
+  # toggles category on or off
+  def toggle category
+    newcategories = category_array
+    newcategories << category unless newcategories.delete(category)
     {
-      query: query, tags: newtags.join(','), search_location: search_location
+      query: query, categories: newcategories.join(','), search_location: search_location
     }
   end
 
   # @return [Boolean]
-  def includes_tag tag
-    self.tag_array.include? tag
+  def includes_category category
+    self.category_array.include? category
   end
 
-  def tag_array
-    if tags
-      tags.split(',').map(&:strip)
+  def category_array
+    if categories
+      categories.split(',').map(&:strip)
     else
       []
     end

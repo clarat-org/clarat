@@ -5,65 +5,65 @@
 // ---------------------------------------------------------------
 
 .section-start {
-	@extend %layout-col-33;
-	position: relative;
-	margin-bottom: 68px;
+  @extend %layout-col-33;
+  position: relative;
+  margin-bottom: 68px;
 
-	&:after {
-		@extend %clarat_rounding_end;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 22px;
-		background: $brand_green;
-		content: '';
-	}
+  &:after {
+    @extend %clarat_rounding_end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 22px;
+    background: $brand_green;
+    content: '';
+  }
 
-	&.section-start--how:after {
-		background: $brand_blue;
-	}
+  &.section-start--how:after {
+    background: $brand_blue;
+  }
 
-	&.section-start--why:after {
-		background: #C3BFB4;
-	}
+  &.section-start--why:after {
+    background: #C3BFB4;
+  }
 }
 
 .section-start__headline {
-	@extend %roboto_bold;
-	@extend %clarat_rounding_start;
-	position: relative;
-	margin-bottom: 0;
-	padding: 0 30px;
-	height: 45px;
-	background: $brand_green;
-	color: $brand_white;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 45px;
+  @extend %roboto_bold;
+  @extend %clarat_rounding_start;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0 30px;
+  height: 45px;
+  background: $brand_green;
+  color: $brand_white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
 
-	.section-start--how & {
-		background: $brand_blue;
-	}
+  .section-start--how & {
+    background: $brand_blue;
+  }
 
-	.section-start--why & {
-		background: #C3BFB4;
-	}
+  .section-start--why & {
+    background: #C3BFB4;
+  }
 }
 
 .section-start__body {
-	@extend %clarat_rounding_end;
-	padding: 26px 30px 52px;
-	min-height: 290px;
-	background: $brand_beige;
+  @extend %clarat_rounding_end;
+  padding: 26px 30px 52px;
+  min-height: 290px;
+  background: $brand_beige;
 
-	p {
-		margin: 0;
-	}
+  p {
+    margin: 0;
+  }
 
 
 }
 
 .section-start--why {
-	@extend %layout-col-last;
+  @extend %layout-col-last;
 
 }

@@ -8,24 +8,24 @@
 .footer-main,
 .footer-main__firstrow,
 .footer-main__secondrow {
-	@extend %clearfix;
+  @extend %clearfix;
 }
 
 .footer-main__firstrow {
-	background: $brand_yellow;
-	height: 120px;
+  background: $brand_yellow;
+  height: 120px;
 }
 
 .footer-main__secondrow {
-	background: $brand_beige;
+  background: $brand_beige;
 }
 
 .footer-main__subscribe,
 .footer-main__about {
-	@extend %layout-col-50;
+  @extend %layout-col-50;
 }
 
 .footer-main__about {
-	@extend %layout-col-last;
-	position: relative;
+  @extend %layout-col-last;
+  position: relative;
 }

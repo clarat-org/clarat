@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150203125912) do
+ActiveRecord::Schema.define(version: 20150209112619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: true do |t|
+    t.string   "name",                                  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "icon",           limit: 12
+    t.text     "synonyms"
+    t.integer  "parent_id"
+    t.integer  "lft",                                   null: false
+    t.integer  "rgt",                                   null: false
+    t.integer  "depth"
+    t.integer  "children_count",            default: 0, null: false
+  end
+
+  add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
+
+  create_table "categories_offers", id: false, force: true do |t|
+    t.integer "offer_id",    null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "categories_offers", ["category_id"], name: "index_categories_offers_on_category_id", using: :btree
+  add_index "categories_offers", ["offer_id"], name: "index_categories_offers_on_offer_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -24,6 +47,14 @@ ActiveRecord::Schema.define(version: 20150203125912) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "dependent_categories", force: true do |t|
+    t.integer "category_id"
+    t.integer "dependent_id"
+  end
+
+  add_index "dependent_categories", ["category_id"], name: "index_dependent_categories_on_category_id", using: :btree
+  add_index "dependent_categories", ["dependent_id"], name: "index_dependent_categories_on_dependent_id", using: :btree
 
   create_table "dependent_tags", force: true do |t|
     t.integer "tag_id"
@@ -81,6 +112,7 @@ ActiveRecord::Schema.define(version: 20150203125912) do
     t.string   "second_telephone", limit: 32
     t.string   "fax",              limit: 32
     t.boolean  "completed",                   default: false
+    t.string   "display_name",                                null: false
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree

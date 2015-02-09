@@ -5,15 +5,15 @@
         / ToDo: Use 'Angebot'  if it is just one
         / offers.shared.offer available for singular
         = "#{@search_cache.hit_count} #{I18n.t('offers.shared.offers')}"
-        - tags = @search_cache.tags
-        - unless tags.blank?
+        - categories = @search_cache.categories
+        - unless categories.blank?
           |  (
-          = t 'offers.shared.tag_filter'
+          = t 'offers.shared.category_filter'
           | :
-          =< tags
+          =< categories
           | )
 
-      | <a class='jump-to-tags' href='#tags'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_tags')}</a>
+      | <a class='jump-to-categories' href='#categories'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_categories')}</a>
 
       ul.search-results.Listing-results__list
         - @offers.each do |offer|
@@ -41,32 +41,33 @@
 
   aside.aside-standard
 
-    #tags.aside-standard__container
-      h5.aside-standard__headline = t 'offers.shared.tag_filter'
+    #categories.aside-standard__container
+      h5.aside-standard__headline = t 'offers.shared.category_filter'
 
-      ul.Listing-tags
-        - tags1 = @tags[0..9]
-        - tags2 = @tags[10..19]
-        - tags1.each do |tag|
-          = render 'tag', search_cache: @search_cache, tag: tag
-        - if tags2 && tags2.any?
+      ul.Listing-categories
+        - categories1 = @categories[0..9]
+        - categories2 = @categories[10..19]
+        - categories1.each do |category|
+          = render 'category', search_cache: @search_cache, category: category
+        - if categories2 && categories2.any?
           .js-more
             .js-more-target.is--hidden
-              - tags2.each do |tag|
-                = render 'tag', search_cache: @search_cache, tag: tag
+              - categories2.each do |category|
+                = render 'category', search_cache: @search_cache,
+                                     category: category
             a.js-more-trigger href='#'
-              .Listing-tags__control.js-more-display
-                = t 'offers.shared.tag_filter_more'
+              .Listing-categories__control.js-more-display
+                = t 'offers.shared.category_filter_more'
                 .fa.fa-chevron-down<
-              .Listing-tags__control.js-more-display.is--hidden
-                = t 'offers.shared.tag_filter'
+              .Listing-categories__control.js-more-display.is--hidden
+                = t 'offers.shared.category_filter_less'
                 .fa.fa-chevron-up<
 
     .aside-standard__container
       h5.aside-standard__headline = t 'offers.index.map_output_searchresults'
 
       #map-container
-        #map-canvas data={markers: @markers.to_json, position: @position.to_json}
+        #map-canvas data={ markers: @markers.to_json, position: @position.to_json }
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

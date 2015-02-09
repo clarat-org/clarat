@@ -16,7 +16,7 @@ class Organization < ActiveRecord::Base
   enumerize :legal_form, in: %w(ev ggmbh gag foundation gug kdor ador kirche
                                 gmbh ag ug kfm gbr ohg kg eg sonstige
                                 state_entity)
-  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk zwst)
+  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk asb zwst)
 
   # Sanitization
   extend Sanitization

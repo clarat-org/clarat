@@ -72,7 +72,6 @@ feature 'Admin Backend' do
     scenario 'Approve offer' do
       orga = organizations(:basic)
       FactoryGirl.create :location, name: 'foobar', organization: orga
-      tag = FactoryGirl.create :tag, :main
 
       # 1: Create incomplete offer
       visit rails_admin_path
@@ -120,16 +119,10 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
       page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
 
-      # 6: fix all orga errors, still needs main tag
+      # 6: fix all orga errors, offer is approved
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
-      page.must_have_content 'Tags benötigt mindestens einen Haupt-Tag'
-
-      # 7: fix tag error, offer is approved
-      select tag.name, from: 'offer_tag_ids'
-      click_button 'Speichern'
-      page.wont_have_content 'Tags benötigt mindestens einen Haupt-Tag'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 
@@ -170,34 +163,34 @@ feature 'Admin Backend' do
       page.must_have_content 'kopietestname'
     end
 
-    describe 'Dependent Tags' do
-      before do
-        @tag = FactoryGirl.create :tag, dependent_tag_count: 1
-        @dependent = @tag.dependent_tags.first
-        visit rails_admin_path
-        click_link 'Angebote', match: :first
-        click_link 'Bearbeiten'
-      end
-
-      scenario 'Dependent tags get added automatically' do
-        select @tag.name, from: 'offer_tag_ids'
-        click_button 'Speichern und bearbeiten'
-
-        tags = offers(:basic).reload.tags
-        tags.must_include @tag
-        tags.must_include @dependent
-      end
-
-      scenario 'Dependent tags get added only once (dupes get removed)' do
-        select @tag.name, from: 'offer_tag_ids'
-        select @dependent.name, from: 'offer_tag_ids'
-        click_button 'Speichern und bearbeiten'
-
-        tags = offers(:basic).reload.tags.to_a
-        tags.must_include @tag
-        tags.count(@dependent).must_equal 1
-      end
-    end
+    # describe 'Dependent Tags' do
+    #   before do
+    #     @tag = FactoryGirl.create :tag, dependent_tag_count: 1
+    #     @dependent = @tag.dependent_categories.first
+    #     visit rails_admin_path
+    #     click_link 'Angebote', match: :first
+    #     click_link 'Bearbeiten'
+    #   end
+    #
+    #   scenario 'Dependent categories get added automatically' do
+    #     select @tag.name, from: 'offer_tag_ids'
+    #     click_button 'Speichern und bearbeiten'
+    #
+    #     categories = offers(:basic).reload.categories
+    #     categories.must_include @tag
+    #     categories.must_include @dependent
+    #   end
+    #
+    #   scenario 'Dependent categories get added only once (dupes get removed)' do
+    #     select @tag.name, from: 'offer_tag_ids'
+    #     select @dependent.name, from: 'offer_tag_ids'
+    #     click_button 'Speichern und bearbeiten'
+    #
+    #     categories = offers(:basic).reload.categories.to_a
+    #     categories.must_include @tag
+    #     categories.count(@dependent).must_equal 1
+    #   end
+    # end
 
     scenario 'View statistics should not work' do
       visit rails_admin_path

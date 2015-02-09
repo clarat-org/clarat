@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-describe TagsController do
+describe CategoriesController do
   describe "GET 'index'" do
     it 'should respond to json requests for an offer' do
       sign_in FactoryGirl.create :researcher

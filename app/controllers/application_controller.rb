@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # Devise
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:goto_404]
 
   # Pundit
   include Pundit
@@ -49,11 +49,19 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unscoped_classes
-    %w(OffersController TagsController ContactsController)
+    %w(OffersController CategoriesController ContactsController)
   end
 
+  private
+
   # Standard 404 Error
-  rescue_from ActiveRecord::RecordNotFound do |_error|
+  unless Rails.application.config.consider_all_requests_local
+    rescue_from ActionController::RoutingError, with: :goto_404
+    rescue_from ActionController::UnknownController, with: :goto_404
+    rescue_from ActiveRecord::RecordNotFound, with: :goto_404
+  end
+
+  def goto_404
     redirect_to '/404'
   end
 end

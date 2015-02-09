@@ -85,7 +85,9 @@ gem 'kaminari' # pagination
 gem 'route_translator'
 gem 'dynamic_sitemaps'
 
+# Model enhancements
 gem 'sanitize' # parser based sanitization
+gem 'awesome_nested_set'
 
 # search
 gem 'algoliasearch-rails'

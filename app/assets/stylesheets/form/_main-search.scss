@@ -5,97 +5,97 @@
 // ---------------------------------------------------------------
 
 #new_search_form {
-	@extend %clearfix;
-	padding: 25px 0 0 25px;
-	width: 640px;
-	list-style: none;
+  @extend %clearfix;
+  padding: 25px 0 0 25px;
+  width: 640px;
+  list-style: none;
 
-	.input {
-		&.string {
-			position: relative;
-			display: inline-block;
-			float: left;
-		}
-	}
+  .input {
+    &.string {
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
+  }
 
-	label.string {
-		@extend %roboto_bold;
-		position: absolute;
-		bottom: 10px;
-		left: 14px;
-		z-index: 30;
-		font-size: 20px;
+  label.string {
+    @extend %roboto_bold;
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+    z-index: 30;
+    font-size: 20px;
 
-		abbr[title="required"] {
-			@extend %visually-hidden;
-		}
-	}
+    abbr[title="required"] {
+      @extend %visually-hidden;
+    }
+  }
 
-	.template--pages-home & {
-		position: relative;
-		margin: 0 auto;
-		padding: 30px 0 0;
-		width: 820px;
+  .template--pages-home & {
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    width: 820px;
 
-		#search_form_query,
-		#search_form_search_location,
-		.main-search__submit {
-			display: inline-block;
-			height: 50px;
-		}
+    #search_form_query,
+    #search_form_search_location,
+    .main-search__submit {
+      display: inline-block;
+      height: 50px;
+    }
 
-		#search_form_query,
-		#search_form_search_location {
-			max-width: 100%;
-			width: 360px;
-		}
-	}
+    #search_form_query,
+    #search_form_search_location {
+      max-width: 100%;
+      width: 360px;
+    }
+  }
 
 }
 
 #search_form_query,
 #search_form_search_location {
-	margin-right: 10px;
-	padding: 0 15px 0 15px;
-	max-width: 260px;
-	background: $brand_white;
-	font-size: 20px;
-	line-height: 47px;
+  margin-right: 10px;
+  padding: 0 15px 0 15px;
+  max-width: 260px;
+  background: $brand_white;
+  font-size: 20px;
+  line-height: 47px;
 
-	// explicit definition and using important to override twitter-typeahead
-	&:focus {
-		background: $brand_beige !important;
-	}
+  // explicit definition and using important to override twitter-typeahead
+  &:focus {
+    background: $brand_beige !important;
+  }
 }
 
 #search_form_query,
 #search_form_search_location,
 .main-search__submit {
-	float: left;
-	height: 47px;
+  float: left;
+  height: 47px;
 }
 
 #search_form_query {
-	padding-left: 72px;
+  padding-left: 72px;
 }
 
 #search_form_search_location {
-	padding-left: 52px;
+  padding-left: 52px;
 }
 
 .main-search__submit {
-	display: block;
-	width: 75px;
-	background: $brand_brown image-url('ico_search.svg') no-repeat center center;
-	color: transparent;
-	text-shadow: none;
-	font: 0/0 a;
+  display: block;
+  width: 75px;
+  background: $brand_brown image-url('ico_search.svg') no-repeat center center;
+  color: transparent;
+  text-shadow: none;
+  font: 0/0 a;
 }
 
 #search_form_query {
-	@extend %clarat_rounding_start;
+  @extend %clarat_rounding_start;
 }
 
 .main-search__submit {
-	@extend %clarat_rounding_end;
+  @extend %clarat_rounding_end;
 }

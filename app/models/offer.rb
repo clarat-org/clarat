@@ -9,7 +9,7 @@ class Offer < ActiveRecord::Base
 
   # Associtations
   belongs_to :location, inverse_of: :offers
-  has_and_belongs_to_many :tags, after_add: :add_dependent_tags
+  has_and_belongs_to_many :categories, after_add: :add_dependent_categories
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   has_many :organization_offers
@@ -58,7 +58,7 @@ class Offer < ActiveRecord::Base
       offer.openings = self.openings
       offer.completed = false
       offer.approved = false
-      offer.tags = self.tags
+      offer.categories = self.categories
     end
   end
 

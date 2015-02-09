@@ -5,43 +5,43 @@
 // ---------------------------------------------------------------
 
 .nav-legal {
-	@extend %clearfix;
-	padding: 30px 0;
+  @extend %clearfix;
+  padding: 30px 0;
 }
 
 .nav-legal__list {
-	list-style: none;
+  list-style: none;
 }
 
 .nav-legal__listitem {
-	float: left;
-	font-size: 12px;
-	margin-left: 25px;
-	position: relative;
+  float: left;
+  font-size: 12px;
+  margin-left: 25px;
+  position: relative;
 
-	a {
-		color: $brand_brown;
-		text-decoration: none;
+  a {
+    color: $brand_brown;
+    text-decoration: none;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-	&:before {
-		@extend %roboto_bold;
-		content: '\00B7';
-		position: absolute;
-		left: -14px;
-	}
+  &:before {
+    @extend %roboto_bold;
+    content: '\00B7';
+    position: absolute;
+    left: -14px;
+  }
 
-	&:first-child {
-		margin-left: 0;
+  &:first-child {
+    margin-left: 0;
 
-		&:before {
-			content: '';
-			display: none;
-		}
-	}
+    &:before {
+      content: '';
+      display: none;
+    }
+  }
 
 }

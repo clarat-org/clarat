@@ -7,14 +7,14 @@ de:
         Berlin. Wir hoffen aber schon bald auch in anderen Teilen
         Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
         und wir werden uns einmalig bei dir melden sobald das der Fall ist.
-      cooperation: Kooperationsprojekte
+      cooperation: Kooperationsprojekt
       map_output_searchresults: Kartenausgabe der Suchergebnisse
       location_everywhere: Überall erreichbar, egal, wo du bist
 
     show:
       what: Was
       where: Wo
-      assigned_tags: Zugeordnete Schlagworte
+      assigned_categories: Zugeordnete Kategorien
       next_steps: Nächste Schritte
       opening_hours: Öffnungszeiten
       opening_by_arrangement: Nach Vereinbarung
@@ -28,17 +28,20 @@ de:
         socialmedia: "Weitere Präsenzen im Netz: "
       organizations: Anbieter
       map_output_searchresult: Kartenausgabe
-      cta_report_errors: Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+      cta_report_errors: |
+        Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
+        lass es uns bitte wissen!
 
     invalid_location:
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
       text: |
-        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und versuche
-        gegebenenfalls mit einer alternativen Eingabe (z.B. "Postleitzahl Ort").
+        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
+        versuche gegebenenfalls mit einer alternativen Eingabe
+        (z.B. "Postleitzahl Ort").
 
     shared:
       offers: Angebote
       offer: Angebot
-      tag_filter: Schlagwortfilter
-      tag_filter_more: Mehr Schlagworte
-      tag_filter_less: Weniger Schlagworte
+      category_filter: Kategorien
+      category_filter_more: Mehr Kategorien
+      category_filter_less: Weniger Kategorien

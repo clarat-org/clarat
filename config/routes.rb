@@ -32,4 +32,7 @@ Clarat::Application.routes.draw do
   constraints constraint do
     mount Sidekiq::Web => '/sidekiq'
   end
+
+  # All else => 404
+  match '*path', to: 'pages#not_found', via: :all
 end

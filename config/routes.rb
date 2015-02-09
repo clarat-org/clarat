@@ -19,7 +19,7 @@ Clarat::Application.routes.draw do
     resources :search_locations, only: [:show]
     resources :contacts, only: [:new, :create, :index]
     resources :subscriptions, only: [:new, :create]
-    get 'tags/:offer_name', controller: :tags, action: :index
+    get 'categories/:offer_name', controller: :categories, action: :index
 
     get '/404' => 'pages#not_found'
   end

@@ -19,6 +19,9 @@ header.header-main.header-main--wide
         h3.nav-sections__headline = t 'shared.distributor.sections_headline'
 
         ul.nav-sections__list
-          - Tag.mains.each do |main_tag|
-            li.nav-sections__listitem class="nav-sections__listitem--#{main_tag.icon}"
-              = link_to main_tag.name, offers_path('search_form[tags]' => main_tag.name, 'search_form[query]' => ''), data: { no_turbolink: true }
+          - Category.mains.each do |main|
+            li.nav-sections__listitem class="nav-sections__listitem--#{main.icon}"
+              = link_to main.name, offers_path( \
+                          'search_form[categories]' => main.name,
+                          'search_form[query]' => ''),
+                        data: { no_turbolink: true }

@@ -4,19 +4,19 @@
 //
 // ---------------------------------------------------------------
 
-.Listing-tags {
+.Listing-categories {
   @extend %clearfix;
   margin: 0;
   padding: 0;
   list-style: none;
 
-	.js-more-trigger {
-		text-decoration: none;
-		color: $brand_blue;
-	}
+  .js-more-trigger {
+    text-decoration: none;
+    color: $brand_blue;
+  }
 }
 
-.Listing-tags__item {
+.Listing-categories__item {
   a {
     @extend %roboto_bold;
     display: inline-block;
@@ -47,7 +47,7 @@
   }
 }
 
-.Listing-tags__control {
+.Listing-categories__control {
   @extend %roboto_bold;
   clear: both;
   text-align: left;

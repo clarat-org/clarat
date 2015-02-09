@@ -9,6 +9,6 @@ class OfferObserver < ActiveRecord::Observer
   end
 
   def after_save offer
-    offer.prevent_duplicate_tags
+    offer.prevent_duplicate_categories
   end
 end

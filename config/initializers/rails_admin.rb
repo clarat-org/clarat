@@ -170,7 +170,7 @@ RailsAdmin.config do |config|
     end
     weight(-1)
     field :name do
-      css_class 'js-tag-suggestions__trigger'
+      css_class 'js-cat-suggestions__trigger'
     end
     field :description do
       css_class 'js-count-character'
@@ -200,11 +200,8 @@ RailsAdmin.config do |config|
         'Required before approval. Only approved organizations.'
       end
     end
-    field :tags do
-      css_class 'js-tag-suggestions'
-      help do
-        'One main tag (*) required before approval.'
-      end
+    field :categories do
+      css_class 'js-cat-suggestions'
     end
     field :languages
     field :openings
@@ -264,11 +261,11 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model 'Tag' do
+  config.model 'Category' do
     field :name
-    field :main
     field :synonyms
-    field :dependent_tags
+    field :parent
+    field :dependent_categories
 
     object_label_method :name_with_optional_asterisk
 
@@ -278,6 +275,7 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :icon
     end
   end
 

@@ -1,15 +1,14 @@
 require_relative '../test_helper'
 
-describe Tag do
+describe Category do
 
-  let(:tag) { Tag.new }
+  let(:category) { Category.new }
 
-  subject { tag }
+  subject { category }
 
   describe 'attributes' do
     it { subject.must_respond_to :id }
     it { subject.must_respond_to :name }
-    it { subject.must_respond_to :main }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
   end
@@ -23,7 +22,7 @@ describe Tag do
 
   describe '::Base' do
     describe 'associations' do
-      it { subject.must have_and_belong_to_many :dependent_tags }
+      it { subject.must have_and_belong_to_many :dependent_categories }
       it { subject.must have_and_belong_to_many :offers }
       it { subject.must have_many :organizations }
     end
@@ -31,13 +30,13 @@ describe Tag do
 
   describe 'methods' do
     describe '#name_with_optional_asterisk' do
-      it 'should return name with asterisk for a main tag' do
-        tag.assign_attributes main: true, name: 'a'
-        tag.name_with_optional_asterisk.must_equal 'a*'
+      it 'should return name with asterisk for a main category' do
+        category.assign_attributes icon: 'x', name: 'a'
+        category.name_with_optional_asterisk.must_equal 'a*'
       end
-      it 'should return name without asterisk for a non-main tag' do
-        tag.assign_attributes main: false, name: 'a'
-        tag.name_with_optional_asterisk.must_equal 'a'
+      it 'should return name without asterisk for a non-main category' do
+        category.name = 'a'
+        category.name_with_optional_asterisk.must_equal 'a'
       end
     end
   end

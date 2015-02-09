@@ -50,7 +50,7 @@ describe Offer do
       it { subject.must belong_to :location }
       it { subject.must have_many :organization_offers }
       it { subject.must have_many(:organizations).through :organization_offers }
-      it { subject.must have_and_belong_to_many :tags }
+      it { subject.must have_and_belong_to_many :categories }
       it { subject.must have_and_belong_to_many :languages }
       it { subject.must have_and_belong_to_many :openings }
       it { subject.must have_many :hyperlinks }
@@ -107,40 +107,40 @@ describe Offer do
       end
     end
 
-    describe '#add_dependent_tags (tags after_add callback)' do
-      it 'should add dependent tags over multiple levels' do
-        tag1 = Tag.create name: 'foobar'
-        tag2 = Tag.create name: 'dependent1'
-        tag3 = Tag.create name: 'dependent2'
-        tag1.dependent_tags << tag2
-        tag2.dependent_tags << tag3
+    describe '#add_dependent_categories (categories after_add callback)' do
+      it 'should add dependent categories over multiple levels' do
+        cat1 = Category.create name: 'foobar'
+        cat2 = Category.create name: 'dependent1'
+        cat3 = Category.create name: 'dependent2'
+        cat1.dependent_categories << cat2
+        cat2.dependent_categories << cat3
 
-        offers(:basic).tags << tag1
-        offers(:basic).tags.must_include tag2
-        offers(:basic).tags.must_include tag3
+        offers(:basic).categories << cat1
+        offers(:basic).categories.must_include cat2
+        offers(:basic).categories.must_include cat3
       end
 
       it 'should not break with recursive dependencies' do
-        tag1 = Tag.create name: 'dependent1'
-        tag2 = Tag.create name: 'dependent2'
-        tag1.dependent_tags << tag2
-        tag2.dependent_tags << tag1
+        cat1 = Category.create name: 'dependent1'
+        cat2 = Category.create name: 'dependent2'
+        cat1.dependent_categories << cat2
+        cat2.dependent_categories << cat1
 
-        offers(:basic).tags << tag1
-        offers(:basic).tags.must_equal [tag1, tag2]
+        offers(:basic).categories << cat1
+        offers(:basic).categories.must_equal [cat1, cat2]
       end
     end
 
-    describe '#prevent_duplicate_tags' do
-      it 'should remove duplicate tag associations' do
-        tag = Tag.create name: 'tag'
+    describe '#prevent_duplicate_categories' do
+      it 'should remove duplicate category associations' do
+        cat = Category.create name: 'cat'
         offer = offers(:basic)
-        offer.tags << tag
-        offer.tags << tag
+        offer.categories << cat
+        offer.categories << cat
 
-        offer.tags.to_a.count(tag).must_equal 2
-        offer.prevent_duplicate_tags
-        offer.tags.to_a.count(tag).must_equal 1
+        offer.categories.to_a.count(cat).must_equal 2
+        offer.prevent_duplicate_categories
+        offer.categories.to_a.count(cat).must_equal 1
       end
     end
   end

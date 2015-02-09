@@ -5,66 +5,66 @@
 // ---------------------------------------------------------------
 
 .header-main {
-	position: relative;
-	margin-bottom: 30px;
-	height: 140px;
-	background: $brand_beige;
+  position: relative;
+  margin-bottom: 30px;
+  height: 140px;
+  background: $brand_beige;
 
-	// Visual horizontal enlargement of non startpage distributor box
-	&:before {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 50%;
-		height: 100px;
-		background: $brand_yellow;
-		content: '';
+  // Visual horizontal enlargement of non startpage distributor box
+  &:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100px;
+    background: $brand_yellow;
+    content: '';
 
-		.template--500 & {
-			display: none;
-		}
-	}
+    .template--500 & {
+      display: none;
+    }
+  }
 }
 
 .header-main--wide {
-	height: 475px;
-	border-top: 4px solid $brand_yellow;
-	background: image-url('bg_scratches.jpg') no-repeat center bottom;
-	background-size: cover;
+  height: 475px;
+  border-top: 4px solid $brand_yellow;
+  background: image-url('bg_scratches.jpg') no-repeat center bottom;
+  background-size: cover;
 
-	.template--pages-home & {
-		margin-bottom: 0;
-	}
+  .template--pages-home & {
+    margin-bottom: 0;
+  }
 
-	.template--pages-about & {
-		border-bottom: 15px solid $brand_yellow;
-	}
+  .template--pages-about & {
+    border-bottom: 15px solid $brand_yellow;
+  }
 
-	&:before {
-		display: none;
-	}
+  &:before {
+    display: none;
+  }
 }
 
 .header-main__foreground {
-	@extend %clearfix;
-	margin-top: -4px;
-	height: inherit;
-	background: image-url('foreground.svg') no-repeat center 102%;
-	background-size: contain;
+  @extend %clearfix;
+  margin-top: -4px;
+  height: inherit;
+  background: image-url('foreground.svg') no-repeat center 102%;
+  background-size: contain;
 
 }
 
 .page-detail__header {
-	@extend %clearfix;
-	margin-bottom: 5px;
+  @extend %clearfix;
+  margin-bottom: 5px;
 }
 
 .page-detail__title {
-	@extend %roboto_bold;
-	font-weight: 400;
-	font-size: 34px;
+  @extend %roboto_bold;
+  font-weight: 400;
+  font-size: 34px;
 }
 
-.jump-to-tags {
-	display: none;
+.jump-to-categories {
+  display: none;
 }

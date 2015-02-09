@@ -6,189 +6,189 @@
 
 @include breakpoint(M) {
 
-	@include mqindicator('M');
+  @include mqindicator('M');
 
-	// Header ######################################
+  // Header ######################################
 
-	.Logo {
-		margin-top: 25px;
-		margin-bottom: 15px;
-		margin-left: 20px;
-	}
+  .Logo {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
 
-	.Logo--start {
-		margin-left: 0;
-	}
+  .Logo--start {
+    margin-left: 0;
+  }
 
-	.Claim {
-		display: block;
-		float: none;
-		clear: both;
-		margin-top: 0;
-		max-width: 100%;
-	}
+  .Claim {
+    display: block;
+    float: none;
+    clear: both;
+    margin-top: 0;
+    max-width: 100%;
+  }
 
-	.header-main {
-		height: auto;
+  .header-main {
+    height: auto;
 
-		.wrapper-inner {
-			padding: 0;
+    .wrapper-inner {
+      padding: 0;
 
-			.template--pages-home &,
-			.template--pages-about & {
-				padding: 0 20px;
-			}
-		}
-	}
+      .template--pages-home &,
+      .template--pages-about & {
+        padding: 0 20px;
+      }
+    }
+  }
 
-	.header-main--wide {
-		height: 320px;
-	}
+  .header-main--wide {
+    height: 320px;
+  }
 
-	.Distributor {
-		//margin-top: 25px;
-		margin-right: 0;
-		margin-left: 0;
-		padding-left: 0;
-		min-width: 100%;
-		width: 100%;
-		border-radius: 0;
-	}
+  .Distributor {
+    //margin-top: 25px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    min-width: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
 
-	#new_search_form {
-		margin: 0 auto;
+  #new_search_form {
+    margin: 0 auto;
 
-		.template--pages-home & {
+    .template--pages-home & {
 
-			#search_form_search_location {
-				margin: 0;
-				width: 100%;
-			}
+      #search_form_search_location {
+        margin: 0;
+        width: 100%;
+      }
 
-			.twitter-typeahead {
-				margin-left: 0;
-				width: 100%;
-			}
+      .twitter-typeahead {
+        margin-left: 0;
+        width: 100%;
+      }
 
-			.main-search__submit {
-				width: 100%;
-				background-image: none;
-				color: $brand_white; // resetting hidden text on button
-				font: inherit;
-				font-size: 20px;
-			}
+      .main-search__submit {
+        width: 100%;
+        background-image: none;
+        color: $brand_white; // resetting hidden text on button
+        font: inherit;
+        font-size: 20px;
+      }
 
-			.input {
-				&.search_form_query {
-					margin-right: 0;
-				}
-			}
+      .input {
+        &.search_form_query {
+          margin-right: 0;
+        }
+      }
 
-			.input.string {
-				@extend %clearfix;
-				display: block;
-				float: none;
-				width: auto;
-				height: 50px;
+      .input.string {
+        @extend %clearfix;
+        display: block;
+        float: none;
+        width: auto;
+        height: 50px;
 
-				&.search_form_search_location {
-					margin: 15px 0 5px;
-					height: 50px;
-				}
-			}
-		}
-	}
+        &.search_form_search_location {
+          margin: 15px 0 5px;
+          height: 50px;
+        }
+      }
+    }
+  }
 
-	.nav-sections__headline {
-		margin-bottom: 20px;
-	}
+  .nav-sections__headline {
+    margin-bottom: 20px;
+  }
 
-	.nav-sections__listitem {
-		float: none;
-		width: 100%;
-		height: 60px;
-		background-position: 100% top;
-		background-size: contain;
-		line-height: 57px; // closer to optical vertical middle
+  .nav-sections__listitem {
+    float: none;
+    width: 100%;
+    height: 60px;
+    background-position: 100% top;
+    background-size: contain;
+    line-height: 57px; // closer to optical vertical middle
 
-		a {
-			padding: 0;
-			text-align: left;
-		}
-	}
+    a {
+      padding: 0;
+      text-align: left;
+    }
+  }
 
-	// Content ######################################
+  // Content ######################################
 
-	.page-wrap:after {
-		height: 136px;
-	}
+  .page-wrap:after {
+    height: 136px;
+  }
 
-	.template--offers-show {
+  .template--offers-show {
 
-		.page-detail__title {
-			padding-right: 50px;
-		}
+    .page-detail__title {
+      padding-right: 50px;
+    }
 
-		.page-detail__icon {
-			width: 40px;
-			height: 40px;
-			background-size: 40px 40px;
-		}
-	}
+    .page-detail__icon {
+      width: 40px;
+      height: 40px;
+      background-size: 40px 40px;
+    }
+  }
 
-	.aside-standard__container {
-		margin-top: 30px;
-		margin-bottom: 0;
-	}
+  .aside-standard__container {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 
 
-	// Footer ######################################
+  // Footer ######################################
 
-	.nav-site__listitem {
-		font-size: 16px;
-		line-height: 26px;
-	}
+  .nav-site__listitem {
+    font-size: 16px;
+    line-height: 26px;
+  }
 
-	.mascot--footer {
-		display: none;
-	}
+  .mascot--footer {
+    display: none;
+  }
 
-	.footer-main__subscribe,
-	.footer-main__about {
-		float: left;
-		width: 100%;
-	}
+  .footer-main__subscribe,
+  .footer-main__about {
+    float: left;
+    width: 100%;
+  }
 
-	.nav-site {
-		float: none;
-	}
+  .nav-site {
+    float: none;
+  }
 
-	.nav-site__listitem {
-		text-align: left;
-	}
+  .nav-site__listitem {
+    text-align: left;
+  }
 
-	// Misc ######################################
+  // Misc ######################################
 
-	a[href^="tel"]:link,
-	a[href^="tel"]:visited,
-	a[href^="tel"]:hover {
-		text-decoration: underline;
-		pointer-events: auto;
-	}
+  a[href^="tel"]:link,
+  a[href^="tel"]:visited,
+  a[href^="tel"]:hover {
+    text-decoration: underline;
+    pointer-events: auto;
+  }
 
-	.popup_content {
-		margin: 25px; // override inline CSS caused by JS
-		width: auto !important;
+  .popup_content {
+    margin: 25px; // override inline CSS caused by JS
+    width: auto !important;
 
-		p {
-			font-size: 13px;
-		}
+    p {
+      font-size: 13px;
+    }
 
-		.formtastic {
-			input[type="submit"],
-			input[type="email"] {
-				font-size: 13px;
-			}
-		}
-	}
+    .formtastic {
+      input[type="submit"],
+      input[type="email"] {
+        font-size: 13px;
+      }
+    }
+  }
 }

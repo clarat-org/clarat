@@ -29,12 +29,12 @@ feature 'Search Form' do
     WebMock.disable!
   end
 
-  scenario 'Toggle tag filters in search results' do
+  scenario 'Toggle category filters in search results' do
     WebMock.enable!
     o1 = FactoryGirl.create :offer, :with_location,
-                            name: 'foo baz', tag: 'chunky bacon'
+                            name: 'foo baz', category: 'chunky bacon'
     o2 = FactoryGirl.create :offer,
-                            name: 'foo fuz', tag: 'unrelated',
+                            name: 'foo fuz', category: 'unrelated',
                             location: o1.location, organization_count: 0
     OrganizationOffer.create! offer_id: o2.id,
                               organization_id: o1.organizations.first.id
@@ -56,10 +56,10 @@ feature 'Search Form' do
 
     click_link 'chunky bacon'
     current_url.must_match(
-      /search_form\[tags\]=chunky\+bacon/
+      /search_form\[categories\]=chunky\+bacon/
     )
     find_link('chunky bacon')[:href].wont_match(
-      /search_form%5Btags%5D=chunky\+bacon/
+      /search_form%5Bcategories%5D=chunky\+bacon/
     )
     WebMock.disable!
   end

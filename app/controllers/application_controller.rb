@@ -49,7 +49,7 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unscoped_classes
-    %w(OffersController TagsController ContactsController)
+    %w(OffersController CategoriesController ContactsController)
   end
 
   # Standard 404 Error

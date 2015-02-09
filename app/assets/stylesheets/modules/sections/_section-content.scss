@@ -7,56 +7,56 @@
 // Layout wrappers
 
 .section-wrapper-major {
-	@extend %layout-col-61;
+  @extend %layout-col-61;
 }
 
 .section-wrapper-minor {
-	@extend %layout-col-35;
+  @extend %layout-col-35;
 }
 
 .section-wrapper-major,
 .section-wrapper-minor {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 // Boxes and their sub-elements
 
 .section-content {
-	@extend %clarat_rounding_start;
-	margin-bottom: 30px;
-	width: 100%;
-	background: $brand_beige;
+  @extend %clarat_rounding_start;
+  margin-bottom: 30px;
+  width: 100%;
+  background: $brand_beige;
 }
 
 .section-content--map {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .section-content__title {
-	@extend %roboto_bold;
-	@extend %clarat_rounding_start;
-	margin-bottom: 0;
-	padding: 7px 15px;
-	background: $brand_yellow;
-	color: $brand_white;
-	font-weight: 400;
-	font-size: 20px;
+  @extend %roboto_bold;
+  @extend %clarat_rounding_start;
+  margin-bottom: 0;
+  padding: 7px 15px;
+  background: $brand_yellow;
+  color: $brand_white;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .section-content__body {
-	padding: 15px;
+  padding: 15px;
 
-	p {
-		margin: 0;
-	}
+  p {
+    margin: 0;
+  }
 }
 
 .offer-contribute {
-	@extend %clarat_rounding_end;
-	@extend %roboto_regular;
-	text-align: left;
-	background: transparent;
-	color: $brand_brown;
-	width: auto;
+  @extend %clarat_rounding_end;
+  @extend %roboto_regular;
+  text-align: left;
+  background: transparent;
+  color: $brand_brown;
+  width: auto;
 
 }

@@ -4,7 +4,7 @@
     header.page-detail__header
       h2.page-detail__title= @offer.name
       /.page-detail__icons
-      /  - @offer.tags.mains.each do |main_tag|
+      /  - @offer.categories.mains.each do |main_tag|
       /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
     .section-wrapper-major
       section.section-content.section-content--what
@@ -108,13 +108,13 @@
               #map-canvas data={markers: @markers.to_json}
 
 
-      - unless @offer.tags.empty?
-        section.section-content.section-content--tags
-          h5.aside-standard__headline#tags = t 'offers.show.assigned_tags'
-          ul.Listing-tags
-            -@offer.tags.each do |tag|
-              li.Listing-tags__item
-                = link_to tag.name, '#'
+      - unless @offer.categories.empty?
+        section.section-content.section-content--categories
+          h5.aside-standard__headline#categories = t 'offers.show.assigned_categories'
+          ul.Listing-categories
+            -@offer.categories.each do |category|
+              li.Listing-categories__item
+                = link_to category.name, '#'
 
       = link_to new_contact_path, class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o

@@ -21,7 +21,7 @@ module AlgoliaStubber
     )
   end
 
-  def self.filled_response_stub query, names, tags = {}
+  def self.filled_response_stub query, names, categories = {}
     offers = []
     names.each do |name|
       offers << Offer.find_by_name(name)
@@ -35,7 +35,7 @@ module AlgoliaStubber
       'hitsPerPage' => 10,
       'processingTimeMS' => 1,
       'facets' => {
-        '_tags' => tags
+        '_tags' => categories
       },
       'query' => "#{query}",
       'params' => "query=#{query}"
@@ -78,7 +78,7 @@ AlgoliaStubber.enable_empty_response
 #     "lat" : 52.60169,
 #     "lng" : 13.35807
 #   },
-#   "_tags" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
+#   "_categories" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
 #   "organization_name" : "Lebenswelt gGmbH",
 #   "objectID" : "311",
 #   "_highlightResult" : {

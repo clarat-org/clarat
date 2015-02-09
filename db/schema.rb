@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150206165334) do
+ActiveRecord::Schema.define(version: 20150209112619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: true do |t|
+    t.string   "name",                                  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "icon",           limit: 12
+    t.text     "synonyms"
+    t.integer  "parent_id"
+    t.integer  "lft",                                   null: false
+    t.integer  "rgt",                                   null: false
+    t.integer  "depth"
+    t.integer  "children_count",            default: 0, null: false
+  end
+
+  add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
+
+  create_table "categories_offers", id: false, force: true do |t|
+    t.integer "offer_id",    null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "categories_offers", ["category_id"], name: "index_categories_offers_on_category_id", using: :btree
+  add_index "categories_offers", ["offer_id"], name: "index_categories_offers_on_offer_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -25,13 +48,13 @@ ActiveRecord::Schema.define(version: 20150206165334) do
     t.datetime "updated_at"
   end
 
-  create_table "dependent_tags", force: true do |t|
-    t.integer "tag_id"
+  create_table "dependent_categories", force: true do |t|
+    t.integer "category_id"
     t.integer "dependent_id"
   end
 
-  add_index "dependent_tags", ["dependent_id"], name: "index_dependent_tags_on_dependent_id", using: :btree
-  add_index "dependent_tags", ["tag_id"], name: "index_dependent_tags_on_tag_id", using: :btree
+  add_index "dependent_categories", ["category_id"], name: "index_dependent_categories_on_category_id", using: :btree
+  add_index "dependent_categories", ["dependent_id"], name: "index_dependent_categories_on_dependent_id", using: :btree
 
   create_table "federal_states", force: true do |t|
     t.string   "name",       null: false
@@ -125,14 +148,6 @@ ActiveRecord::Schema.define(version: 20150206165334) do
   add_index "offers_openings", ["offer_id"], name: "index_offers_openings_on_offer_id", using: :btree
   add_index "offers_openings", ["opening_id"], name: "index_offers_openings_on_opening_id", using: :btree
 
-  create_table "offers_tags", id: false, force: true do |t|
-    t.integer "offer_id", null: false
-    t.integer "tag_id",   null: false
-  end
-
-  add_index "offers_tags", ["offer_id"], name: "index_offers_tags_on_offer_id", using: :btree
-  add_index "offers_tags", ["tag_id"], name: "index_offers_tags_on_tag_id", using: :btree
-
   create_table "openings", force: true do |t|
     t.string   "day",        limit: 3, null: false
     t.time     "open"
@@ -194,17 +209,6 @@ ActiveRecord::Schema.define(version: 20150206165334) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "tags", force: true do |t|
-    t.string   "name",                                  null: false
-    t.boolean  "main",                  default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon",       limit: 12
-    t.text     "synonyms"
-  end
-
-  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
   create_table "update_requests", force: true do |t|
     t.string   "search_location", null: false

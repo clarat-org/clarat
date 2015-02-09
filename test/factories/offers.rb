@@ -26,8 +26,8 @@ FactoryGirl.define do
     ignore do
       organization_count 1
       website_count { rand(0..3) }
-      tag_count { rand(1..3) }
-      tag nil # used to get a specific tag, instead of tag_count
+      category_count { rand(1..3) }
+      category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
     end
@@ -50,15 +50,15 @@ FactoryGirl.define do
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
-      if evaluator.tag
-        offer.tags << FactoryGirl.create(:tag, name: evaluator.tag)
+      if evaluator.category
+        offer.categories << FactoryGirl.create(:category, name: evaluator.category)
       else
-        evaluator.tag_count.times do
-          offer.tags << (
-            if Tag.count != 0 && rand(2) == 0
-              Tag.select(:id).all.sample
+        evaluator.category_count.times do
+          offer.categories << (
+            if Category.count != 0 && rand(2) == 0
+              Category.select(:id).all.sample
             else
-              FactoryGirl.create(:tag)
+              FactoryGirl.create(:category)
             end
           )
         end

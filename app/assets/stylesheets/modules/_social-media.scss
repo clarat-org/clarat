@@ -4,24 +4,24 @@
 //
 // ---------------------------------------------------------------
 
-// 	background: $brand_brown url(../images/ico_search.svg) no-repeat center center;
+//   background: $brand_brown url(../images/ico_search.svg) no-repeat center center;
 
 .Social-media__item {
-	@extend %hide_text;
-	display: inline-block;
-	margin-right: 24px;
-	width: 32px;
-	height: 32px;
+  @extend %hide_text;
+  display: inline-block;
+  margin-right: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .Social-media__item--googleplus {
-	background: image-url('ico_googleplus.svg') no-repeat center 3px;
+  background: image-url('ico_googleplus.svg') no-repeat center 3px;
 }
 
 .Social-media__item--twitter {
-	background: image-url('ico_twitter.svg') no-repeat center 3px;
+  background: image-url('ico_twitter.svg') no-repeat center 3px;
 }
 
 .Social-media__item--facebook {
-	background: image-url('ico_facebook.svg') no-repeat center bottom;
+  background: image-url('ico_facebook.svg') no-repeat center bottom;
 }

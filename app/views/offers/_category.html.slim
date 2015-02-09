@@ -1,0 +1,4 @@
+li.Listing-categories__item
+  - active_class = search_cache.includes_category(category) ? 'active' : ''
+  = link_to category, offers_path(search_form: search_cache.toggle(category)),
+  class: "btn btn-default btn-sm #{active_class}"

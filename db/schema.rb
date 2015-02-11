@@ -56,14 +56,6 @@ ActiveRecord::Schema.define(version: 20150209112619) do
   add_index "dependent_categories", ["category_id"], name: "index_dependent_categories_on_category_id", using: :btree
   add_index "dependent_categories", ["dependent_id"], name: "index_dependent_categories_on_dependent_id", using: :btree
 
-  create_table "dependent_tags", force: true do |t|
-    t.integer "tag_id"
-    t.integer "dependent_id"
-  end
-
-  add_index "dependent_tags", ["dependent_id"], name: "index_dependent_tags_on_dependent_id", using: :btree
-  add_index "dependent_tags", ["tag_id"], name: "index_dependent_tags_on_tag_id", using: :btree
-
   create_table "federal_states", force: true do |t|
     t.string   "name",       null: false
     t.datetime "created_at"
@@ -156,14 +148,6 @@ ActiveRecord::Schema.define(version: 20150209112619) do
   add_index "offers_openings", ["offer_id"], name: "index_offers_openings_on_offer_id", using: :btree
   add_index "offers_openings", ["opening_id"], name: "index_offers_openings_on_opening_id", using: :btree
 
-  create_table "offers_tags", id: false, force: true do |t|
-    t.integer "offer_id", null: false
-    t.integer "tag_id",   null: false
-  end
-
-  add_index "offers_tags", ["offer_id"], name: "index_offers_tags_on_offer_id", using: :btree
-  add_index "offers_tags", ["tag_id"], name: "index_offers_tags_on_tag_id", using: :btree
-
   create_table "openings", force: true do |t|
     t.string   "day",        limit: 3, null: false
     t.time     "open"
@@ -225,17 +209,6 @@ ActiveRecord::Schema.define(version: 20150209112619) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "tags", force: true do |t|
-    t.string   "name",                                  null: false
-    t.boolean  "main",                  default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon",       limit: 12
-    t.text     "synonyms"
-  end
-
-  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
   create_table "update_requests", force: true do |t|
     t.string   "search_location", null: false

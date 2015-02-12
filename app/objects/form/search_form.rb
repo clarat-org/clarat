@@ -53,12 +53,13 @@ class SearchForm
   end
 
   def categories_by_facet
-    categories_facet = @hits.facets['_tags']
+    categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
     if categories_facet
-      inverted = categories_facet.each_with_object({}) do |(key, value), out|
-        (out[value] ||= []) << key
-      end # safe invert
-      inverted.values.flatten.uniq
+      categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
+      # categories_facet.each_with_object({}) do |(key, value), out|
+      #   (out[value] ||= []) << key
+      # end # safe invert; eg { 5 => 'foo' }
+      # inverted.values.flatten.uniq
     else
       []
     end

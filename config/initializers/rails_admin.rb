@@ -44,6 +44,9 @@ RailsAdmin.config do |config|
     statistics do
       only ['Organization', 'Offer', 'Location']
     end
+    nested_set do
+      only ['Category']
+    end
 
     ## With an audit adapter, you can add:
     history_index
@@ -170,7 +173,7 @@ RailsAdmin.config do |config|
     end
     weight(-1)
     field :name do
-      css_class 'js-cat-suggestions__trigger'
+      css_class 'js-category-suggestions__trigger'
     end
     field :description do
       css_class 'js-count-character'
@@ -201,7 +204,7 @@ RailsAdmin.config do |config|
       end
     end
     field :categories do
-      css_class 'js-cat-suggestions'
+      css_class 'js-category-suggestions'
     end
     field :languages
     field :openings
@@ -277,6 +280,8 @@ RailsAdmin.config do |config|
       field :offers
       field :icon
     end
+
+    nested_set(max_depth: 5)
   end
 
   config.model 'Language' do

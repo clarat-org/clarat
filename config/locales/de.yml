@@ -10,6 +10,9 @@ de:
       organization:
         one: Organisation
         other: Organisationen
+      category:
+        one: Kategorie
+        other: Kategorien
       federal_state:
         one: Bundesland
         other: Bundesländer

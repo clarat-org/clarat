@@ -75,4 +75,12 @@ class Offer < ActiveRecord::Base
   def opening_details?
     !openings.blank? || !opening_specification.blank?
   end
+
+  def organization_display_name
+    if organizations.count > 1
+      I18n.t 'offers.index.cooperation'
+    else
+      organizations.first.name
+    end
+  end
 end

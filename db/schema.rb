@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150209112619) do
+ActiveRecord::Schema.define(version: 20150212133049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,22 +47,6 @@ ActiveRecord::Schema.define(version: 20150209112619) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "dependent_categories", force: true do |t|
-    t.integer "category_id"
-    t.integer "dependent_id"
-  end
-
-  add_index "dependent_categories", ["category_id"], name: "index_dependent_categories_on_category_id", using: :btree
-  add_index "dependent_categories", ["dependent_id"], name: "index_dependent_categories_on_dependent_id", using: :btree
-
-  create_table "dependent_tags", force: true do |t|
-    t.integer "tag_id"
-    t.integer "dependent_id"
-  end
-
-  add_index "dependent_tags", ["dependent_id"], name: "index_dependent_tags_on_dependent_id", using: :btree
-  add_index "dependent_tags", ["tag_id"], name: "index_dependent_tags_on_tag_id", using: :btree
 
   create_table "federal_states", force: true do |t|
     t.string   "name",       null: false

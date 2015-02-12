@@ -3,11 +3,6 @@ class Category < ActiveRecord::Base
   acts_as_nested_set counter_cache: :children_count, depth_column: :depth
 
   # associtations
-  has_and_belongs_to_many :dependent_categories,
-                          class_name: 'Category',
-                          join_table: 'dependent_categories',
-                          foreign_key: 'category_id',
-                          association_foreign_key: 'dependent_id'
   has_and_belongs_to_many :offers
   has_many :organizations, through: :offers
 

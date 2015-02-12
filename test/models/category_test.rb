@@ -22,7 +22,6 @@ describe Category do
 
   describe '::Base' do
     describe 'associations' do
-      it { subject.must have_and_belong_to_many :dependent_categories }
       it { subject.must have_and_belong_to_many :offers }
       it { subject.must have_many :organizations }
     end

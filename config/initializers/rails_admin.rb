@@ -268,7 +268,6 @@ RailsAdmin.config do |config|
     field :name
     field :synonyms
     field :parent
-    field :dependent_categories
 
     object_label_method :name_with_optional_asterisk
 

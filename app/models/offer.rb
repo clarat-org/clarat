@@ -2,14 +2,14 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # Modules
-  include Validations, Search, Tagging, Statistics
+  include Validations, Search, Statistics
 
   # Concerns
   include Creator, Approvable
 
   # Associtations
   belongs_to :location, inverse_of: :offers
-  has_and_belongs_to_many :categories, after_add: :add_dependent_categories
+  has_and_belongs_to_many :categories
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   has_many :organization_offers

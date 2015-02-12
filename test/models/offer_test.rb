@@ -106,42 +106,5 @@ describe Offer do
         offers(:basic).social_media_websites?.must_equal false
       end
     end
-
-    describe '#add_dependent_categories (categories after_add callback)' do
-      it 'should add dependent categories over multiple levels' do
-        cat1 = Category.create name: 'foobar'
-        cat2 = Category.create name: 'dependent1'
-        cat3 = Category.create name: 'dependent2'
-        cat1.dependent_categories << cat2
-        cat2.dependent_categories << cat3
-
-        offers(:basic).categories << cat1
-        offers(:basic).categories.must_include cat2
-        offers(:basic).categories.must_include cat3
-      end
-
-      it 'should not break with recursive dependencies' do
-        cat1 = Category.create name: 'dependent1'
-        cat2 = Category.create name: 'dependent2'
-        cat1.dependent_categories << cat2
-        cat2.dependent_categories << cat1
-
-        offers(:basic).categories << cat1
-        offers(:basic).categories.must_equal [cat1, cat2]
-      end
-    end
-
-    describe '#prevent_duplicate_categories' do
-      it 'should remove duplicate category associations' do
-        cat = Category.create name: 'cat'
-        offer = offers(:basic)
-        offer.categories << cat
-        offer.categories << cat
-
-        offer.categories.to_a.count(cat).must_equal 2
-        offer.prevent_duplicate_categories
-        offer.categories.to_a.count(cat).must_equal 1
-      end
-    end
   end
 end

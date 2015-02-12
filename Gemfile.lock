@@ -341,6 +341,7 @@ GEM
     rails_admin_clone (0.0.6)
       rails (>= 3.2)
       rails_admin (>= 0.4)
+    rails_admin_nested_set (0.3.9)
     rails_best_practices (1.15.4)
       activesupport
       awesome_print
@@ -548,6 +549,7 @@ DEPENDENCIES
   rails_12factor
   rails_admin
   rails_admin_clone
+  rails_admin_nested_set
   rails_admin_statistics!
   rails_best_practices
   rake

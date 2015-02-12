@@ -13,6 +13,7 @@ about supported directives.
 ###
 #
 # = require setup
+# = require analytics
 #
 # = require jquery
 # = require jquery_ujs

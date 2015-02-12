@@ -107,40 +107,16 @@ describe Offer do
       end
     end
 
-    describe '#add_dependent_categories (categories after_add callback)' do
-      it 'should add dependent categories over multiple levels' do
-        cat1 = Category.create name: 'foobar'
-        cat2 = Category.create name: 'dependent1'
-        cat3 = Category.create name: 'dependent2'
-        cat1.dependent_categories << cat2
-        cat2.dependent_categories << cat3
-
-        offers(:basic).categories << cat1
-        offers(:basic).categories.must_include cat2
-        offers(:basic).categories.must_include cat3
-      end
-
-      it 'should not break with recursive dependencies' do
-        cat1 = Category.create name: 'dependent1'
-        cat2 = Category.create name: 'dependent2'
-        cat1.dependent_categories << cat2
-        cat2.dependent_categories << cat1
-
-        offers(:basic).categories << cat1
-        offers(:basic).categories.must_equal [cat1, cat2]
-      end
-    end
-
-    describe '#prevent_duplicate_categories' do
-      it 'should remove duplicate category associations' do
-        cat = Category.create name: 'cat'
-        offer = offers(:basic)
-        offer.categories << cat
-        offer.categories << cat
-
-        offer.categories.to_a.count(cat).must_equal 2
-        offer.prevent_duplicate_categories
-        offer.categories.to_a.count(cat).must_equal 1
+    describe '#_tags' do
+      it 'should return unique categories with ancestors of an offer' do
+        offers(:basic).categories << categories(:sub1)
+        offers(:basic).categories << categories(:sub2)
+        tags = offers(:basic)._tags
+        tags.must_include 'sub1.1'
+        tags.must_include 'sub1.2'
+        tags.must_include 'main1'
+        tags.count('main1').must_equal 1
+        tags.wont_include 'main2'
       end
     end
   end

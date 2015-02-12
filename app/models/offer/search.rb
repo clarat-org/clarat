@@ -30,7 +30,11 @@ class Offer
 
       # Offer's categories for indexing
       def _tags
-        categories.pluck(:name)
+        tags = []
+        categories.find_each do |category|
+          tags << category.self_and_ancestors.pluck(:name)
+        end
+        tags.flatten.uniq
       end
 
       # additional searchable string made from categories

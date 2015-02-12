@@ -102,6 +102,10 @@ de:
         title: "%{model_label} '%{object_label}' duplizieren"
         menu: 'Duplizieren'
         breadcrumb: 'Duplizieren'
+      nested_set:
+        title: "%{model_label}-Baum editieren"
+        menu: 'Baumstruktur'
+        breadcrumb: 'Baumstruktur'
     form:
       cancel: "Abbrechen"
       basic_info: "Grundlegende Informationen"

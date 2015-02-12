@@ -20,7 +20,11 @@ module GmapsVariable
       else
         @markers[key.to_s] = {
           position: key.to_h,
-          offer_ids: [object.id]
+          offer_ids: [object.id],
+          title: object.name,
+          url: offer_url(object),
+          address: object.location.address,
+          organization_display_name: object.organization_display_name
         }
       end
     end

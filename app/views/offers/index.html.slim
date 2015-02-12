@@ -22,15 +22,11 @@
               = link_to offer.name, offer_path(id: offer)
             / ToDo: Refactor and rename
             h4.Listing-results__offerinfo
-              span.Listing-results__emphasis.Listing-results__organization
-                - if offer.organizations.count > 1
-                  = t 'offers.index.cooperation'
-                - else
-                  = offer.organizations.first.name
               - if offer.location
-                = offer.location_address
+                span.Listing-results__emphasis.Listing-results__organization
+                  = offer.organization_display_name
               - else
-                = t 'offers.index.location_everywhere'
+                span.Listing-results__emphasis = t 'offers.index.location_everywhere'
       = paginate @offers
 
 

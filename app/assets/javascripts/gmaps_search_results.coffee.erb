@@ -47,37 +47,30 @@ initialize = ->
       map.setCenter bounds.getCenter()
       map.setZoom 15
 
-    bindExternalEvents()
-
 
 bindMapsEvents = (map, marker, markerData) ->
 
-  contentString = '<div id="content">' + markerData.offer_ids[0] + '</div>'
-  infowindow = new (google.maps.InfoWindow)(content: contentString)
+  if markerData.offer_ids[1] != undefined
+    contentString = 'Viele Suchergebnisse für diesen Marker gefunden; bitte Suche nutzen'
+  else
+    contentString = HoganTemplates['map_info_window_single'].render(markerData)
 
-  console.log markerData
-#  console.log marker
+  infowindow = new (google.maps.InfoWindow)()
 
   google.maps.event.addListener marker, 'click', (event) ->
-    offerID = markerData.offer_ids[0] # specification needed
-
     map.setCenter marker.getPosition()
-    infowindow.open map, marker
+    infowindow.setContent contentString;
+    infowindow.open map, this
+
+#  google.maps.event.addListener map, 'click', (event) ->
+
 
 bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.offer_ids
     $("#result-offer-#{offerID}").data('marker', marker)
 
-bindExternalEvents = ->
-  $('.JS-trigger-marker').on 'mouseover', (event) ->
-    marker = $(event.delegateTarget).data('marker')
-    if marker and marker.getAnimation() == null
-      marker.setAnimation google.maps.Animation.BOUNCE
 
-  $('.JS-trigger-marker').on 'mouseout', (event) ->
-    marker = $(event.delegateTarget).data('marker')
-    if marker and marker.getAnimation() != null
-      marker.setAnimation null
+
 
 google.maps.event.addDomListener window, 'load', initialize
 google.maps.event.addDomListener document, 'page:load', initialize

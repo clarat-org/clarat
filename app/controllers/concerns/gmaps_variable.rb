@@ -21,11 +21,8 @@ module GmapsVariable
         @markers[key.to_s] = {
           position: key.to_h,
           offer_ids: [object.id],
-          title: object.name,
-          url: offer_url(object),
-          address: object.location.address,
-          organization_display_name: object.organization_display_name
-        }
+          url: offer_url(object)
+        }.merge object.gmaps_info
       end
     end
   end

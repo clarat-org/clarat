@@ -83,4 +83,12 @@ class Offer < ActiveRecord::Base
       organizations.first.name
     end
   end
+
+  def gmaps_info
+    {
+      title: name,
+      address: location_address,
+      organization_display_name: organization_display_name
+    }
+  end
 end

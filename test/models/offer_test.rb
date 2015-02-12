@@ -119,5 +119,20 @@ describe Offer do
         tags.wont_include 'main2'
       end
     end
+
+    describe '#organization_display_name' do
+      it "should return the first organization's name if there is only one" do
+        offers(:basic).organization_display_name.must_equal(
+          organizations(:basic).name
+        )
+      end
+
+      it 'should return a string when there are multiple organizations' do
+        offers(:basic).organizations << FactoryGirl.create(:organization)
+        offers(:basic).organization_display_name.must_equal(
+          I18n.t('offers.index.cooperation')
+        )
+      end
+    end
   end
 end

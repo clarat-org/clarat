@@ -1,6 +1,7 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
+  infowindow = new (google.maps.InfoWindow)()
   includedPoints = []
 
   if markers
@@ -26,8 +27,8 @@ initialize = ->
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
-      bindMapsEvents map, marker, markerData
-      bindMarkerToResults marker, markerData
+      bindMapsEvents map, marker, markerData, infowindow
+      bindMarkerToResults marker, markerData, infowindow
 
     # Get User Position
     userPosition = $(canvas).data('position')
@@ -48,28 +49,25 @@ initialize = ->
       map.setZoom 15
 
 
-bindMapsEvents = (map, marker, markerData) ->
+bindMapsEvents = (map, marker, markerData, infowindow) ->
 
   if markerData.offer_ids[1] != undefined
-    contentString = 'Viele Suchergebnisse für diesen Marker gefunden; bitte Suche nutzen'
+    contentString = 'Viele Suchergebnisse für diesen Marker gefunden; bitte Suche nutzen' # refactor
   else
     contentString = HoganTemplates['map_info_window_single'].render(markerData)
 
-  infowindow = new (google.maps.InfoWindow)()
-
   google.maps.event.addListener marker, 'click', (event) ->
     map.setCenter marker.getPosition()
+    infowindow.close()
     infowindow.setContent contentString;
     infowindow.open map, this
 
-#  google.maps.event.addListener map, 'click', (event) ->
-
+  google.maps.event.addListener map, 'click', (event) ->
+    infowindow.close()
 
 bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.offer_ids
     $("#result-offer-#{offerID}").data('marker', marker)
-
-
 
 
 google.maps.event.addDomListener window, 'load', initialize

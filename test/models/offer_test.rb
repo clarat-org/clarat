@@ -106,5 +106,18 @@ describe Offer do
         offers(:basic).social_media_websites?.must_equal false
       end
     end
+
+    describe '#_tags' do
+      it 'should return unique categories with ancestors of an offer' do
+        offers(:basic).categories << categories(:sub1)
+        offers(:basic).categories << categories(:sub2)
+        tags = offers(:basic)._tags
+        tags.must_include 'sub1.1'
+        tags.must_include 'sub1.2'
+        tags.must_include 'main1'
+        tags.count('main1').must_equal 1
+        tags.wont_include 'main2'
+      end
+    end
   end
 end

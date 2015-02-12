@@ -14,3 +14,4 @@ de:
       approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
       incomplete: |
         kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
+      max_count: dürfen nicht mehr als %{max} sein.

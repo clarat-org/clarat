@@ -31,6 +31,9 @@ en:
       organization:
         one: Organization
         other: Organizations
+      category:
+        one: Category
+        other: Categories
       federal_state:
         one: Federal State
         other: Federal States

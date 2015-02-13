@@ -172,53 +172,61 @@ RailsAdmin.config do |config|
       field :created_by
     end
     weight(-1)
-    field :name do
-      css_class 'js-category-suggestions__trigger'
-    end
-    field :description do
-      css_class 'js-count-character'
-    end
-    field :comment do
-      css_class 'js-count-character'
-    end
-    field :next_steps do
-      css_class 'js-count-character'
-    end
-    field :legal_information
-    field :telephone
-    field :second_telephone
-    field :fax
-    field :contact_name
-    field :email
-    field :encounter
-    field :frequent_changes
-    field :slug do
-      read_only do
-        bindings[:object].new_record?
+
+    edit do
+      field :name do
+        css_class 'js-category-suggestions__trigger'
       end
-    end
-    field :location
-    field :organizations do
-      help do
-        'Required before approval. Only approved organizations.'
+      field :description, :wysihtml5 do
+        css_class 'js-count-character'
+        config_options toolbar: { fa: true,
+                                  image: false,
+                                  emphasis: true,
+                                  blockquote: false,
+                                  "font-styles" => false }
       end
-    end
-    field :categories do
-      css_class 'js-category-suggestions'
-    end
-    field :languages
-    field :openings
-    field :opening_specification do
-      help do
-        'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
-        "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir
-        (Konstantin) auch gern bescheid, wenn ihr ein einheitliches Format
-        gefunden habt, mit dem alle Fälle abgedeckt werden können.'
+      field :comment do
+        css_class 'js-count-character'
       end
+      field :next_steps, :wysihtml5 do
+        css_class 'js-count-character'
+      end
+      field :legal_information
+      field :telephone
+      field :second_telephone
+      field :fax
+      field :contact_name
+      field :email
+      field :encounter
+      field :frequent_changes
+      field :slug do
+        read_only do
+          bindings[:object].new_record?
+        end
+      end
+      field :location
+      field :organizations do
+        help do
+          'Required before approval. Only approved organizations.'
+        end
+      end
+      field :categories do
+        css_class 'js-category-suggestions'
+      end
+      field :languages
+      field :openings
+      field :opening_specification do
+        help do
+          'Bitte einigt euch auf eine einheitliche Ausdrucksweise. Wie etwa
+          "jeden 1. Montag im Monat" oder "jeden 2. Freitag". Sagt mir
+          (Konstantin) auch gern bescheid, wenn ihr ein einheitliches Format
+          gefunden habt, mit dem alle Fälle abgedeckt werden können.'
+        end
+      end
+      field :websites
+      field :completed
+      field :approved
     end
-    field :websites
-    field :completed
-    field :approved
 
     show do
       field :created_by

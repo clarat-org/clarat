@@ -73,6 +73,7 @@ gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
 # path: '../rails_admin_statistics' #
 gem 'rails_admin_nested_set'
 gem 'cancan' # role based auth for rails_admin
+gem 'bootstrap-wysihtml5-rails', '~> 0.3.3.4' # enable WYSIWYG editor
 
 gem 'devise'
 gem 'omniauth-facebook'

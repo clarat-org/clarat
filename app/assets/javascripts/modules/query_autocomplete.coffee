@@ -39,7 +39,6 @@ initTypeahead = ->
 generateSource = ->
   Clarat.ttAdapter
     hitsPerPage: 5
-    aroundLatLng: Clarat.currentGeolocation # TODO: use entered location
     aroundRadius: 999999999
     aroundPrecision: 500
 
@@ -50,11 +49,12 @@ navigateToHit = (event, suggestion, id) ->
 Clarat.ttTotalResults = undefined
 Clarat.ttAdapter = (params) ->
   (query, cb) ->
+    params['aroundLatLng'] = Clarat.currentGeolocation #<- difference to Algolia
     Clarat.index.search(
       query,
       (success, content) ->
         if success
-          Clarat.ttTotalResults = content.nbHits # <-only difference to Algolia
+          Clarat.ttTotalResults = content.nbHits # <- difference to Algolia
           cb(content.hits)
       , params
     )

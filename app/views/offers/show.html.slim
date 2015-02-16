@@ -18,104 +18,26 @@
         .section-content__body
           == @offer.next_steps
 
-      / TODO: Refactor!
       - if @offer.opening_details?
-        section.section-content.section-content--openinghours
-          h3.section-content__title = t 'offers.show.opening_hours'
-          .section-content__body
-            - if @offer.openings.any?
-              table
-                -@offer.openings.order('sort_value').each do |opening|
-                  tr
-                    td
-                      = t("activerecord.models.opening.#{opening.day}") + ': '
-                      / For some reason the next line is necessary since the
-                      / blank spacce in ': ' is ignored
-                      |&nbsp;
-                    td
-                      - if opening.open && opening.close
-                        =<> "#{opening.open.strftime("%H:%M")} - #{opening.close.strftime("%H:%M")}"
-                      - else
-                        = t 'offers.show.opening_by_arrangement'
-            - if @offer.opening_specification? && @offer.openings.any?
-              br
-            == @offer.opening_specification
+        = render 'offers/show/opening_section', offer: @offer
 
       - if @offer.contact_details?
-        / ^ modify that method if you add information to this box
-        section.section-content.section-content--contact
-          h3.section-content__title = t 'offers.show.contact.contact'
-          .section-content__body
-            p
-              == "#{I18n.t 'offers.show.contact.person'}: #{@offer.contact_name}<br>" if @offer.contact_name?
-              - if @offer.telephone?
-                = t 'offers.show.contact.phone'
-                a< href="tel:#{@offer.telephone}" #{@offer.telephone}
-                br
-              == "#{I18n.t 'offers.show.contact.fax'}: #{@offer.fax}<br>" if @offer.fax?
-              - if @offer.email?
-                = t 'offers.show.contact.email'
-                span#secure-email==< secure_email_to @offer.email
-                br
-              / TODO: Refactor!
-              - unless @offer.websites.empty?
-                - if @offer.websites.own.first
-                  = t 'offers.show.contact.website'
-                  =< link_to "#{@offer.websites.own.first.url}", "#{@offer.websites.own.first.url}"
-                  br
-              - if @offer.social_media_websites?
-                = t 'offers.show.contact.socialmedia'
-                ==> link_to 'Facebook', "#{@offer.websites.facebook.first.url}" if @offer.websites.facebook.first
-                ==> link_to 'Twitter', "#{@offer.websites.twitter.first.url}" if @offer.websites.twitter.first
-                ==> link_to 'Youtube', "#{@offer.websites.youtube.first.url}" if @offer.websites.youtube.first
-                ==> link_to 'Google+', "#{@offer.websites.gplus.first.url}" if @offer.websites.gplus.first
-                ==> link_to 'Pinterest', "#{@offer.websites.pinterest.first.url}" if @offer.websites.pinterest.first
+        = render 'offers/show/contact_section', offer: @offer
 
-      section.section-content.section-content--organisation
-        h3.section-content__title = t 'offers.show.organizations'
-        .section-content__body
-          ul.Listing-organizations__list
-            - @offer.organizations.each do |orga|
-              li.Listing-organizations__listitem
-                = link_to orga.name, organization_path(id: orga)
+      = render 'offers/show/organizations_section',
+               organizations: @offer.organizations
 
     .section-wrapper-minor
+
       - if @offer.location
-        section.section-content.section-content--where
-          h3.section-content__title = t 'offers.show.where'
-          .section-content__body
-            /! http://microformats.org/wiki/adr start
-            .adr
-              p
-                - if @offer.location_name
-                  span.org= @offer.location_name
-                  br
-                - unless @offer.location_addition.blank?
-                  span.extended-address= @offer.location_addition
-                  br
-                span.street-address= @offer.location_street
-                br
-                span.postal-code=> @offer.location_zip
-                span.locality= @offer.location_city
-                br
-            /! http://microformats.org/wiki/adr end
-
-        section.section-content--map
-          .aside-standard__container
-            h5.aside-standard__headline = t 'offers.show.map_output_searchresult'
-            #map-container
-              #map-canvas data={markers: @markers.to_json}
-
+        = render 'offers/show/location_section', offer: @offer,
+                                                 markers: @markers
 
       - unless @offer.categories.empty?
-        section.section-content.section-content--categories
-          h5.aside-standard__headline#categories = t 'offers.show.assigned_categories'
-          ul.Listing-categories
-            -@offer.categories.each do |category|
-              li.Listing-categories__item
-                = link_to category.name, '#'
+        = render 'offers/show/categories_section', categories: @offer.categories
 
-      = link_to new_contact_path, class: 'offer-contribute js-report-overlay_open' do
+      = link_to new_contact_path,
+                class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
         = t 'offers.show.cta_report_errors'
 

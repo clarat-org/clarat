@@ -2,9 +2,7 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        / ToDo: Use 'Angebot'  if it is just one
-        / offers.shared.offer available for singular
-        = "#{@search_cache.hit_count} #{I18n.t('offers.shared.offers')}"
+        = t('offers.shared.offers', count: @search_cache.hit_count)
         - categories = @search_cache.categories
         - unless categories.blank?
           |  (
@@ -15,13 +13,12 @@
 
       = link_to '#categories', class: 'jump-to-categories' do
         i.fa.fa-filter
-        = I18n.t('js.navigate_to_categories')
+        = I18n.t('offers.index.navigate_to_categories')
 
       ul.search-results.Listing-results__list
         - @offers.each do |offer|
           = render 'offers/index/single_search_result', offer: offer
       = paginate @offers
-
 
       - if @update_request
         = modal_for 'unavailable_location_overlay' do

@@ -68,6 +68,6 @@ de:
     current_location: 'Mein Standort'
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
-  js:
-    obfuscated_email: 'Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.'
-    navigate_to_categories: 'Filtern…'
+  js: # translations used in JavaScript
+    location_required: Bitte Ort angeben.
+    autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'

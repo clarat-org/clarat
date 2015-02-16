@@ -13,7 +13,6 @@ about supported directives.
 ###
 #
 # = require setup
-# = require analytics
 #
 # = require jquery
 # = require jquery_ujs
@@ -25,6 +24,7 @@ about supported directives.
 #
 # = require jquery.popupoverlay
 #
+# = require vendor/analytics
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix

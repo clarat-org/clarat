@@ -10,6 +10,7 @@ de:
       cooperation: Kooperationsprojekt
       map_output_searchresults: Kartenausgabe der Suchergebnisse
       location_everywhere: Überall erreichbar, egal, wo du bist
+      navigate_to_categories: 'Filtern…'
 
     show:
       what: Was
@@ -31,17 +32,20 @@ de:
       cta_report_errors: |
         Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
         lass es uns bitte wissen!
-
+      obfuscated_email: |
+        Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+        verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
     invalid_location:
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
       text: |
         Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
-
     shared:
-      offers: Angebote
-      offer: Angebot
+      offers:
+        zero: Keine Angebote
+        one: Ein Angebot
+        other: "%{count} Angebote"
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien

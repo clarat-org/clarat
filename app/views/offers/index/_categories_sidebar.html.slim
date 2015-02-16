@@ -1,0 +1,22 @@
+#categories.aside-standard__container
+  h5.aside-standard__headline = t 'offers.shared.category_filter'
+
+  ul.Listing-categories
+    - categories1 = categories[0..9]
+    - categories2 = categories[10..19]
+    - categories1.each do |category|
+      = render 'offers/index/category', search_cache: search_cache,
+                                        category: category
+    - if categories2 && categories2.any?
+      .js-more
+        .js-more-target.is--hidden
+          - categories2.each do |category|
+            = render 'offers/index/category', search_cache: search_cache,
+                                              category: category
+        a.js-more-trigger href='#'
+          .Listing-categories__control.js-more-display
+            = t 'offers.shared.category_filter_more'
+            .fa.fa-chevron-down<
+          .Listing-categories__control.js-more-display.is--hidden
+            = t 'offers.shared.category_filter_less'
+            .fa.fa-chevron-up<

@@ -20,7 +20,7 @@ initTypeahead = ->
   )
 
   hitTemplate = HoganTemplates['autocomplete']
-  footerTemplate = HoganTemplates['footer'] # TODO: I18n
+  footerTemplate = HoganTemplates['footer']
 
   # typeahead.js (re)initialization
   $('.typeahead').typeahead 'destroy'
@@ -32,13 +32,13 @@ initTypeahead = ->
       footer: (set) ->
         unless set.isEmpty
           footerTemplate.render
-            results: Clarat.ttTotalResults
-            query: set.query
+            content: I18n.t 'js.autocomplete_footer',
+              results: Clarat.ttTotalResults
+              query: set.query
 
 generateSource = ->
   Clarat.ttAdapter
     hitsPerPage: 5
-    aroundLatLng: Clarat.currentGeolocation # TODO: use entered location
     aroundRadius: 999999999
     aroundPrecision: 500
 
@@ -49,11 +49,12 @@ navigateToHit = (event, suggestion, id) ->
 Clarat.ttTotalResults = undefined
 Clarat.ttAdapter = (params) ->
   (query, cb) ->
+    params['aroundLatLng'] = Clarat.currentGeolocation #<- difference to Algolia
     Clarat.index.search(
       query,
       (success, content) ->
         if success
-          Clarat.ttTotalResults = content.nbHits # <-only difference to Algolia
+          Clarat.ttTotalResults = content.nbHits # <- difference to Algolia
           cb(content.hits)
       , params
     )

@@ -2,9 +2,7 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        / ToDo: Use 'Angebot'  if it is just one
-        / offers.shared.offer available for singular
-        = "#{@search_cache.hit_count} #{I18n.t('offers.shared.offers')}"
+        = t('offers.shared.offers', count: @search_cache.hit_count)
         - categories = @search_cache.categories
         - unless categories.blank?
           |  (
@@ -13,23 +11,14 @@
           =< categories
           | )
 
-      | <a class='jump-to-categories' href='#categories'><i class='fa fa-filter'></i>#{I18n.t('js.navigate_to_categories')}</a>
+      = link_to '#categories', class: 'jump-to-categories' do
+        i.fa.fa-filter
+        = I18n.t('offers.index.navigate_to_categories')
 
       ul.search-results.Listing-results__list
         - @offers.each do |offer|
-          li id="result-offer-#{offer.id}" class="JS-trigger-marker Listing-results__listitem"
-            h3.Listing-results__offer
-              = link_to offer.name, offer_path(id: offer)
-            / ToDo: Refactor and rename
-            h4.Listing-results__offerinfo
-              span.Listing-results__emphasis.Listing-results__organization
-                = offer.organization_display_name
-              - if offer.location
-                = offer.location_address
-              - else
-                = t 'offers.index.location_everywhere'
+          = render 'offers/index/single_search_result', offer: offer
       = paginate @offers
-
 
       - if @update_request
         = modal_for 'unavailable_location_overlay' do
@@ -38,33 +27,10 @@
 
   aside.aside-standard
 
-    #categories.aside-standard__container
-      h5.aside-standard__headline = t 'offers.shared.category_filter'
+    = render 'offers/index/categories_sidebar', categories: @categories,
+                                                search_cache: @search_cache
 
-      ul.Listing-categories
-        - categories1 = @categories[0..9]
-        - categories2 = @categories[10..19]
-        - categories1.each do |category|
-          = render 'category', search_cache: @search_cache, category: category
-        - if categories2 && categories2.any?
-          .js-more
-            .js-more-target.is--hidden
-              - categories2.each do |category|
-                = render 'category', search_cache: @search_cache,
-                                     category: category
-            a.js-more-trigger href='#'
-              .Listing-categories__control.js-more-display
-                = t 'offers.shared.category_filter_more'
-                .fa.fa-chevron-down<
-              .Listing-categories__control.js-more-display.is--hidden
-                = t 'offers.shared.category_filter_less'
-                .fa.fa-chevron-up<
-
-    .aside-standard__container
-      h5.aside-standard__headline = t 'offers.index.map_output_searchresults'
-
-      #map-container
-        #map-canvas data={ markers: @markers.to_json, position: @position.to_json }
+    = render 'offers/index/map_sidebar', markers: @markers, position: @position
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

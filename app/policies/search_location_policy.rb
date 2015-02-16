@@ -1,5 +1,5 @@
 class SearchLocationPolicy < ApplicationPolicy
   def show?
-    true # TODO
+    true
   end
 end

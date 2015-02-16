@@ -6,10 +6,16 @@ class Organization < ActiveRecord::Base
 
   # Associtations
   has_many :locations
-  has_many :organization_offers
-  has_many :offers, through: :organization_offers
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
+  has_many :organization_offers
+  has_many :offers, through: :organization_offers
+  has_many :child_connections, class_name: 'OrganizationConnection',
+                               foreign_key: 'parent_id'
+  has_many :children, through: :child_connections
+  has_many :parent_connections, class_name: 'OrganizationConnection',
+                                foreign_key: 'child_id'
+  has_many :parents, through: :parent_connections
 
   # Enumerization
   extend Enumerize

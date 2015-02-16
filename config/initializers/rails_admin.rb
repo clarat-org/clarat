@@ -78,6 +78,8 @@ RailsAdmin.config do |config|
     field :charitable
     field :founded
     field :umbrella
+    field :parents
+    field :children
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -341,6 +343,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'OrganizationOffer' do
+    weight 3
+  end
+
+  config.model 'OrganizationConnection' do
     weight 3
   end
 

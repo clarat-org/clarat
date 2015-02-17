@@ -15,14 +15,22 @@ module GmapsVariable
       return unless object.location
       key = Geolocation.new(object.location)
 
-      if @markers[key.to_s]
-        @markers[key.to_s][:offer_ids] << object.id
-      else
+      # ToDo: Refactor logic!
+      if object.class == Organization
         @markers[key.to_s] = {
           position: key.to_h,
-          offer_ids: [object.id],
-          url: offer_url(object)
+          organization_id: [object.id],
         }.merge object.gmaps_info
+      else
+        if @markers[key.to_s]
+          @markers[key.to_s][:offer_ids] << object.id
+        else
+          @markers[key.to_s] = {
+            position: key.to_h,
+            offer_ids: [object.id],
+            url: offer_url(object)
+          }.merge object.gmaps_info
+        end
       end
     end
   end

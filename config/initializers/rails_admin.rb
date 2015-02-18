@@ -166,7 +166,7 @@ RailsAdmin.config do |config|
     list do
       field :name
       field :location
-      field :frequent_changes
+      field :renewed
       field :completed
       field :approved
       field :creator
@@ -221,6 +221,7 @@ RailsAdmin.config do |config|
     field :websites
     field :completed
     field :approved
+    field :renewed
 
     show do
       field :created_by

@@ -63,4 +63,12 @@ class Organization < ActiveRecord::Base
       orga.approved = false
     end
   end
+
+  # ToDo: Refactor!
+  def gmaps_info
+    {
+      title: name,
+      address: location.address
+    }
+  end
 end

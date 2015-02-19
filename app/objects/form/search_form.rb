@@ -13,24 +13,32 @@ class SearchForm
   attribute :generated_geolocation, String
   attribute :categories, String
 
+  # Query the index
   def search page
-    @hits = Offer.algolia_search query,
-                                 page: page,
-                                 aroundLatLng: geolocation,
-                                 aroundRadius: 999_999_999,
-                                 tagFilters: categories,
-                                 facets: '*',
-                                 maxValuesPerFacet: 20,
-                                 aroundPrecision: 500
+    @local_hits = Offer.algolia_search query,
+                                       page: page,
+                                       aroundLatLng: geolocation,
+                                       aroundRadius: 50_000,
+                                       tagFilters: categories,
+                                       facets: '*',
+                                       maxValuesPerFacet: 20,
+                                       aroundPrecision: 500
+    @global_hits = Offer.algolia_search query,
+                                        page: page,
+                                        tagFilters: categories,
+                                        facets: '*',
+                                        maxValuesPerFacet: 20,
+                                        hitsPerPage: 5
   end
 
+  # See if an empty search would return results
   def nearby?
     @_nearby ||=
       Offer.algolia_search('',
                            page: 0,
                            hitsPerPage: 1,
                            aroundLatLng: geolocation,
-                           aroundRadius: 25_000 # check later if accurate
+                           aroundRadius: 50_000 # check later if accurate
       ).any?
   end
 

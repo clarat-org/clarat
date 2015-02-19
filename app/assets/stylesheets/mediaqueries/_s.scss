@@ -302,15 +302,19 @@
 
 	.template--pages-home {
 
-		.twitter-typeahead {
-			span.tt-dropdown-menu {
-				// specificity, overriding JS
-				background: $brand_beige;
-				position: relative !important;
-				right: 0 !important; // overriding JS
-				margin-bottom: 10px;
-			}
-		}
+    #new_search_form {
+
+      .twitter-typeahead {
+        span.tt-dropdown-menu {
+          // specificity, overriding JS
+          background: $brand_beige;
+          position: relative !important;
+          right: 0 !important; // overriding JS
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
+      }
+    }
 
 		#new_search_form  {
 			.input.string {

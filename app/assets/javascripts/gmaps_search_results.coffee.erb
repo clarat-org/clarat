@@ -1,7 +1,7 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
-  infowindow = new (google.maps.InfoWindow)()
+  infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
   includedPoints = []
 
   if markers

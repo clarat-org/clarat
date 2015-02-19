@@ -33,6 +33,10 @@ FactoryGirl.define do
       street { Faker::AddressDE.street_address }
       zip { (10_000..14_100).to_a.sample }
     end
+
+    trait :hq do
+      hq true
+    end
   end
 end
 

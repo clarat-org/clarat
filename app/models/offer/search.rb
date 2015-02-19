@@ -4,7 +4,16 @@ class Offer
 
     included do
       include AlgoliaSearch
-      algoliasearch per_environment: true,
+
+      def self.per_env_index
+        if Rails.env.development?
+          "Offer_development_#{ENV['USER']}"
+        else
+          "Offer_#{Rails.env}"
+        end
+      end
+
+      algoliasearch index_name: per_env_index,
                     disable_indexing: Rails.env.test?,
                     if: :approved? do
         attributesToIndex %w(
@@ -45,6 +54,14 @@ class Offer
       # concatenated organization name for search index
       def organization_names
         organizations.pluck(:name).join(', ')
+      end
+
+      # Offer's encounter modifier for indexing
+      def encounter_value
+        case encounter
+        when 'independent' then 0
+        when 'determinable', 'fixed' then 1
+        end
       end
     end
   end

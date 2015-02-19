@@ -151,6 +151,17 @@
   }
 
 
+  #new_search_form {
+    .template--pages-home & {
+      .twitter-typeahead {
+        span.tt-dropdown-menu {
+          right: 0 !important; // overriding JS
+        }
+      }
+    }
+  }
+
+
   // Footer ######################################
 
   .footer-main {

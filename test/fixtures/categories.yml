@@ -1,0 +1,27 @@
+main1:
+  id: 1
+  name: 'main1'
+  icon: 'a-main1'
+  lft: 1
+  rgt: 6
+  children_count: 2
+main2:
+  id: 2
+  name: 'main2'
+  icon: 'b-main2'
+  lft: 7
+  rgt: 8
+sub1:
+  id: 3
+  name: 'sub1.1'
+  parent_id: 1
+  lft: 2
+  rgt: 3
+  depth: 1
+sub2:
+  id: 4
+  name: 'sub1.2'
+  parent_id: 1
+  lft: 4
+  rgt: 5
+  depth: 1

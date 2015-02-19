@@ -5,37 +5,37 @@
 // ---------------------------------------------------------------
 
 .Flash-message {
-	@extend %roboto_bold;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	color: $brand_white;
+  @extend %roboto_bold;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: $brand_white;
 
-	position: fixed;
-	top: 0;
-	z-index:99;
-	width: 100%;
+  position: fixed;
+  top: 0;
+  z-index:99;
+  width: 100%;
 }
 
 .Flash-message--alert {
-	background: $brand_brown;
+  background: $brand_brown;
 }
 
 .Flash-message--success {
-	background: $brand_green;
+  background: $brand_green;
 }
 
 .Flash-message--error {
-	background: $brand_orange;
+  background: $brand_orange;
 }
 
 .Flash-message--notice {
-	background: $brand_yellow;
+  background: $brand_yellow;
 }
 
 .Flash-message__close {
-	position: absolute;
-	top: 13px;
-	right: 10px;
-	cursor: pointer;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
 }

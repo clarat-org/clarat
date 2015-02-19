@@ -1,6 +1,6 @@
 module SearchFormHelper
   SAMPLE_QUERIES = %w(
-    Adoption Drogen Gewalt Nachhilfe Notfall Recht Selbstmord Waise
+    Adoption Drogen Gewalt Nachhilfe Notfall Recht Waise
     arbeitslos essen krank obdachlos rauchen schwanger schwul schwänzen wohnen
   )
 

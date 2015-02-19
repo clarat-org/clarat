@@ -5,40 +5,40 @@
 // ---------------------------------------------------------------
 
 @mixin breakpoint($point) {
-	@if $point == XL {
-		@media (max-width: 1200px) { @content; }
-	}
-	@if $point == L {
-		@media (max-width: 1000px) { @content; }
-	}
-	@if $point == M {
-		@media (max-width: 750px) { @content; }
-	}
-	@if $point == S {
-		@media (max-width: 440px) { @content; }
-	}
+  @if $point == XL {
+    @media (max-width: 1200px) { @content; }
+  }
+  @if $point == L {
+    @media (max-width: 1000px) { @content; }
+  }
+  @if $point == M {
+    @media (max-width: 750px) { @content; }
+  }
+  @if $point == S {
+    @media (max-width: 440px) { @content; }
+  }
 }
 
 @mixin mqindicator($mqname) {
 
-	$debug: false;
+  $debug: false;
 
-	@if $debug == true {
-		body:before {
-			position: fixed;
-			top: 0;
-			right: auto;
-			left: 0;
-			bottom: auto;
-			z-index: 100000 ;
-			display: inline-block;
-			padding: 5px 10px;
-			background: red;
-			color: #fff;
-			content: ''; // resetting
-			content: $mqname;
-		}
-	}
+  @if $debug == true {
+    body:before {
+      position: fixed;
+      top: 0;
+      right: auto;
+      left: 0;
+      bottom: auto;
+      z-index: 100000 ;
+      display: inline-block;
+      padding: 5px 10px;
+      background: red;
+      color: #fff;
+      content: ''; // resetting
+      content: $mqname;
+    }
+  }
 }
 
 @import "xl";

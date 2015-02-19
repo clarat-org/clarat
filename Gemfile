@@ -12,7 +12,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production, :development] # postgres
+  gem 'pg', group: [:production, :staging, :development] # postgres
 end
 
 # Use Uglifier as compressor for JavaScript assets
@@ -67,10 +67,11 @@ gem 'rack-attack' # securing malicious requests
 # Pretty print your Ruby objects with style
 gem 'awesome_print'
 
-gem 'rails_admin_clone'
+gem 'rails_admin_clone' # must come before rails_admin to work correctly
 gem 'rails_admin'
 gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
 # path: '../rails_admin_statistics' #
+gem 'rails_admin_nested_set'
 gem 'cancan' # role based auth for rails_admin
 
 gem 'devise'
@@ -85,7 +86,9 @@ gem 'kaminari' # pagination
 gem 'route_translator'
 gem 'dynamic_sitemaps'
 
+# Model enhancements
 gem 'sanitize' # parser based sanitization
+gem 'awesome_nested_set'
 
 # search
 gem 'algoliasearch-rails'
@@ -111,7 +114,7 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
 end
 

@@ -46,6 +46,10 @@ describe Organization do
       it { subject.must have_many :locations }
       it { subject.must have_many :hyperlinks }
       it { subject.must have_many :websites }
+      it { subject.must have_many :child_connections }
+      it { subject.must have_many(:children).through :child_connections }
+      it { subject.must have_many :parent_connections }
+      it { subject.must have_many(:parents).through :parent_connections }
     end
   end
 

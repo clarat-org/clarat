@@ -23,9 +23,6 @@ class Offer
 
       # Needs to be true before approval possible. Called in custom validation.
       def before_approve
-        if tags.where(main: true).count == 0
-          errors[:tags] = I18n.t('validations.offer.needs_main_tag')
-        end
         if organizations.count == 0
           errors[:organizations] = I18n.t(
             'validations.offer.needs_organization'

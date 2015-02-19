@@ -5,46 +5,46 @@
 // ---------------------------------------------------------------
 
 %clearfix {
-	zoom:1;
+  zoom:1;
 
-	&:before, &:after {
-		display: block;
-		overflow: hidden;
-		height: 0;
-		content: "";
-	}
+  &:before, &:after {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    content: "";
+  }
 
-	&:after {
-		clear: both;
-	}
+  &:after {
+    clear: both;
+  }
 }
 
 %hide_text {
-	color: transparent;
-	text-shadow: none;
-	font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  font: 0/0 a;
 }
 
 
 %visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 %clarat_rounding {
-	border-radius: $border_radius 0;
+  border-radius: $border_radius 0;
 }
 
 %clarat_rounding_start {
-	border-top-left-radius: $border_radius;
+  border-top-left-radius: $border_radius;
 }
 
 %clarat_rounding_end {
-	border-bottom-right-radius: $border_radius;
+  border-bottom-right-radius: $border_radius;
 }

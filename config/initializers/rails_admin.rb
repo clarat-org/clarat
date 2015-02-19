@@ -44,6 +44,9 @@ RailsAdmin.config do |config|
     statistics do
       only ['Organization', 'Offer', 'Location']
     end
+    nested_set do
+      only ['Category']
+    end
 
     ## With an audit adapter, you can add:
     history_index
@@ -75,6 +78,8 @@ RailsAdmin.config do |config|
     field :charitable
     field :founded
     field :umbrella
+    field :parents
+    field :children
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -108,6 +113,7 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.label_methods << :display_name
   config.model 'Location' do
     list do
       field :name
@@ -115,6 +121,7 @@ RailsAdmin.config do |config|
       field :zip
       field :federal_state
       field :completed
+      field :display_name
     end
     weight(-2)
     field :organization
@@ -139,9 +146,10 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :display_name
     end
 
-    object_label_method :concat_address
+    object_label_method :display_name
   end
 
   config.model 'FederalState' do
@@ -167,7 +175,7 @@ RailsAdmin.config do |config|
     end
     weight(-1)
     field :name do
-      css_class 'js-tag-suggestions__trigger'
+      css_class 'js-category-suggestions__trigger'
     end
     field :description do
       css_class 'js-count-character'
@@ -197,11 +205,8 @@ RailsAdmin.config do |config|
         'Required before approval. Only approved organizations.'
       end
     end
-    field :tags do
-      css_class 'js-tag-suggestions'
-      help do
-        'One main tag (*) required before approval.'
-      end
+    field :categories do
+      css_class 'js-category-suggestions'
     end
     field :languages
     field :openings
@@ -261,11 +266,10 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model 'Tag' do
+  config.model 'Category' do
     field :name
-    field :main
     field :synonyms
-    field :dependent_tags
+    field :parent
 
     object_label_method :name_with_optional_asterisk
 
@@ -275,7 +279,10 @@ RailsAdmin.config do |config|
 
     show do
       field :offers
+      field :icon
     end
+
+    nested_set(max_depth: 5)
   end
 
   config.model 'Language' do
@@ -336,6 +343,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'OrganizationOffer' do
+    weight 3
+  end
+
+  config.model 'OrganizationConnection' do
     weight 3
   end
 

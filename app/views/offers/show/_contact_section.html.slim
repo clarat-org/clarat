@@ -1,0 +1,38 @@
+/ ^ modify that method if you add information to this box
+section.section-content.section-content--contact
+  h3.section-content__title = t 'offers.show.contact.contact'
+  .section-content__body
+    p
+      - if offer.contact_name?
+        = "#{I18n.t 'offers.show.contact.person'}: #{offer.contact_name}"
+        br
+      - if offer.telephone?
+        = t 'offers.show.contact.phone'
+        a< href="tel:#{offer.telephone}"= offer.telephone
+        br
+      - if offer.fax?
+        = "#{I18n.t 'offers.show.contact.fax'}: #{offer.fax}"
+        br
+      - if offer.email?
+        = t 'offers.show.contact.email'
+        span#secure-email==< secure_email_to offer.email
+        br
+
+      - unless offer.websites.empty?
+        - if offer.websites.own.first
+          = t 'offers.show.contact.website'
+          =< link_to offer.websites.own.first.url,
+                     offer.websites.own.first.url
+          br
+      - if offer.social_media_websites?
+        = t 'offers.show.contact.socialmedia'
+      - if offer.websites.facebook.first
+        ==> link_to 'Facebook', offer.websites.facebook.first.url
+      - if offer.websites.twitter.first
+        ==> link_to 'Twitter', offer.websites.twitter.first.url
+      - if offer.websites.youtube.first
+        ==> link_to 'Youtube', offer.websites.youtube.first.url
+      - if offer.websites.gplus.first
+        ==> link_to 'Google+', offer.websites.gplus.first.url
+      - if offer.websites.pinterest.first
+        ==> link_to 'Pinterest', offer.websites.pinterest.first.url

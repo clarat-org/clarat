@@ -7,7 +7,7 @@ feature 'Search Form' do
     WebMock.enable!
     visit root_path
     find('.main-search__submit').click
-    page.must_have_content '0 Angebote'
+    page.must_have_content 'Keine Angebote'
     WebMock.disable!
   end
 
@@ -23,18 +23,18 @@ feature 'Search Form' do
     fill_in 'search_form_query', with: 'bazfuz'
     fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
-    page.must_have_content '1 Angebote'
+    page.must_have_content 'Ein Angebot'
 
     page.must_have_content I18n.t 'offers.index.unavailable_location_modal'
     WebMock.disable!
   end
 
-  scenario 'Toggle tag filters in search results' do
+  scenario 'Toggle category filters in search results' do
     WebMock.enable!
     o1 = FactoryGirl.create :offer, :with_location,
-                            name: 'foo baz', tag: 'chunky bacon'
+                            name: 'foo baz', category: 'chunky bacon'
     o2 = FactoryGirl.create :offer,
-                            name: 'foo fuz', tag: 'unrelated',
+                            name: 'foo fuz', category: 'unrelated',
                             location: o1.location, organization_count: 0
     OrganizationOffer.create! offer_id: o2.id,
                               organization_id: o1.organizations.first.id
@@ -56,10 +56,10 @@ feature 'Search Form' do
 
     click_link 'chunky bacon'
     current_url.must_match(
-      /search_form\[tags\]=chunky\+bacon/
+      /search_form\[categories\]=chunky\+bacon/
     )
     find_link('chunky bacon')[:href].wont_match(
-      /search_form%5Btags%5D=chunky\+bacon/
+      /search_form%5Bcategories%5D=chunky\+bacon/
     )
     WebMock.disable!
   end
@@ -68,7 +68,9 @@ feature 'Search Form' do
     visit root_path
     fill_in 'search_form_search_location', with: 'Bielefeld'
     find('.main-search__submit').click
-    page.must_have_content 'Standort "Bielefeld" nicht gefunden'
+    page.must_have_content(
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
+    )
   end
 
   scenario 'Search for standard string leads to error page' do
@@ -78,7 +80,7 @@ feature 'Search Form' do
     find('#search_form_generated_geolocation').set '' # unset by JS
     find('.main-search__submit').click
     page.must_have_content(
-      "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )
   end
 
@@ -89,8 +91,7 @@ feature 'Search Form' do
     find('#search_form_generated_geolocation').set '4,2' # set by JS
     find('.main-search__submit').click
     page.wont_have_content(
-      "Standort \"#{I18n.t('conf.current_location')}\" nicht gefunden"
+      'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )
   end
-
 end

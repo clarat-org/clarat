@@ -53,4 +53,8 @@ class Opening < ActiveRecord::Base
   def appointment?
     !open && !close
   end
+
+  def display_string
+    "#{open.strftime('%H:%M')} - #{close.strftime('%H:%M')}"
+  end
 end

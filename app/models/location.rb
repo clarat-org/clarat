@@ -19,6 +19,7 @@ class Location < ActiveRecord::Base
   validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
   validates :email, format: /\A.+@.+\..+\z/, allow_blank: true
+  validates :display_name, presence: true
 
   validates :organization_id, presence: true
   validates :federal_state_id, presence: true
@@ -37,12 +38,14 @@ class Location < ActiveRecord::Base
   delegate :name, to: :federal_state, prefix: true
   delegate :name, to: :organization, prefix: true, allow_nil: true
 
-  def concat_address
-    if name && !name.empty?
-      "#{organization_name}, #{name} (#{street} #{zip} #{city})"
-    else
-      "#{organization_name}, #{street} #{zip} #{city}"
-    end
+  before_validation :generate_display_name
+  def generate_display_name
+    self.display_name =
+      if name && !name.empty?
+        "#{organization_name}, #{name} (#{street} #{zip} #{city})"
+      else
+        "#{organization_name}, #{street} #{zip} #{city}"
+      end
   end
 
   def address

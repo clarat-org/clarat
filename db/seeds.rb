@@ -35,8 +35,8 @@ FederalState.create name: 'Mallorca' # Don't do this in production :)
 
 SearchLocation.create query: 'Berlin', latitude: 52.520007, longitude: 13.404954, geoloc: '52.520007,13.404954'
 
-Tag.create name: 'Akute Krisen', main: true, icon: 'a-crisis'
-Tag.create name: 'Lernen', main: true, icon: 'b-learn'
-Tag.create name: 'Familie', main: true, icon: 'c-family'
-Tag.create name: 'Gesundheit', main: true, icon: 'd-health'
-Tag.create name: 'Gewalt', main: true, icon: 'e-violence'
+Category.create name: 'Akute Krisen', icon: 'a-crisis'
+Category.create name: 'Lernen', icon: 'b-learn'
+Category.create name: 'Familie', icon: 'c-family'
+Category.create name: 'Gesundheit', icon: 'd-health'
+Category.create name: 'Gewalt', icon: 'e-violence'

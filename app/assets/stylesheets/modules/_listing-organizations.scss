@@ -6,9 +6,11 @@
 
 
 .Listing-organizations__list {
-	list-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .Listing-organizations__listitem {
-	min-height: 32px;
+  min-height: 32px;
 }

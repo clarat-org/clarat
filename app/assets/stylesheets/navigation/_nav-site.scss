@@ -5,29 +5,26 @@
 // ---------------------------------------------------------------
 
 .nav-site {
-	float: right;
-	padding: 15px 0 15px;
+  float: right;
+  padding: 15px 0 15px;
 }
 
 .nav-site__list {
-	list-style: none;
+  list-style: none;
 }
 
 .nav-site__listitem {
-	@extend %roboto_bold;
-	text-align: right;
-	font-size: 18px;
-	line-height: 30px;
+  @extend %roboto_bold;
+  text-align: right;
+  font-size: 18px;
+  line-height: 30px;
 
-	a {
-		color: $brand_white;
-		text-decoration: none;
+  a {
+    color: $brand_white;
+    text-decoration: none;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
-
-
-

@@ -6,57 +6,57 @@
 
 @include breakpoint(XL) {
 
-	@include mqindicator('XL');
+  @include mqindicator('XL');
 
-	// Header ######################################
+  // Header ######################################
 
 
-	.header-main {
-		&:before {
-			display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
-		}
-	}
+  .header-main {
+    &:before {
+      display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
+    }
+  }
 
-	.Claim {
-		max-width: 40%;
-	}
+  .Claim {
+    max-width: 40%;
+  }
 
-	.mascot--header {
-		bottom: 0;
-		left: 245px;
-	}
+  .mascot--header {
+    bottom: 0;
+    left: 245px;
+  }
 
-	.Distributor {
-		margin-right: -20px; // on non-start pages, correcting offset by .wrapper-inner
-		max-width: none;
-	}
+  .Distributor {
+    margin-right: -20px; // on non-start pages, correcting offset by .wrapper-inner
+    max-width: none;
+  }
 
-	.Distributor--start {
-		margin-right: 0;
-		padding-left: 0;
-		max-width: 100%;
-	}
+  .Distributor--start {
+    margin-right: 0;
+    padding-left: 0;
+    max-width: 100%;
+  }
 
-	#new_search_form {
-		margin-right: 15px;
+  #new_search_form {
+    margin-right: 15px;
 
-		.template--pages-home & {
-			margin-right: auto;
-		}
-	}
+    .template--pages-home & {
+      margin-right: auto;
+    }
+  }
 
-	// Content ######################################
+  // Content ######################################
 
-	.section-start__headline {
-		font-size: 20px;
-	}
+  .section-start__headline {
+    font-size: 20px;
+  }
 
-	.wrapper-inner {
-		padding: 0 20px;
-	}
+  .wrapper-inner {
+    padding: 0 20px;
+  }
 
-	.section-start {
-		// @TODO: smaller font for both headlines and paragraphs
-	}
+  .section-start {
+    // @TODO: smaller font for both headlines and paragraphs
+  }
 
 }

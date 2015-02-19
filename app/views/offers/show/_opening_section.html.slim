@@ -1,0 +1,19 @@
+section.section-content.section-content--openinghours
+  h3.section-content__title = t 'offers.show.opening_hours'
+  .section-content__body
+    - if offer.openings.any?
+      /! use http://microformats.org/wiki/opening-hours once specified
+      table
+        - offer.openings.order('sort_value').each do |opening|
+          tr
+            td.day
+              = t("activerecord.models.opening.#{opening.day}") + ':'
+            td dir='ltr'
+              - if opening.open && opening.close
+                =<> opening.display_string
+              - else
+                = t 'offers.show.opening_by_arrangement'
+
+    - if offer.opening_specification? && offer.openings.any?
+      br
+    == offer.opening_specification

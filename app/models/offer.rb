@@ -2,14 +2,14 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # Modules
-  include Validations, Search, Tagging, Statistics
+  include Validations, Search, Statistics
 
   # Concerns
   include Creator, Approvable
 
   # Associtations
   belongs_to :location, inverse_of: :offers
-  has_and_belongs_to_many :tags, after_add: :add_dependent_tags
+  has_and_belongs_to_many :categories
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
   has_many :organization_offers
@@ -58,7 +58,7 @@ class Offer < ActiveRecord::Base
       offer.openings = self.openings
       offer.completed = false
       offer.approved = false
-      offer.tags = self.tags
+      offer.categories = self.categories
     end
   end
 
@@ -74,5 +74,21 @@ class Offer < ActiveRecord::Base
 
   def opening_details?
     !openings.blank? || !opening_specification.blank?
+  end
+
+  def organization_display_name
+    if organizations.count > 1
+      I18n.t 'offers.index.cooperation'
+    else
+      organizations.first.name
+    end
+  end
+
+  def gmaps_info
+    {
+      title: name,
+      address: location_address,
+      organization_display_name: organization_display_name
+    }
   end
 end

@@ -6,7 +6,6 @@ de:
           muss die des angegebenen Standorts beinhalten.
         location_error: |
           muss zu der unten angegebenen Organisation gehören.
-      needs_main_tag: benötigt mindestens einen Haupt-Tag
       needs_organization: benötigt mindestens eine Organisation
       only_approved_organizations: |
         darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot
@@ -15,3 +14,4 @@ de:
       approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
       incomplete: |
         kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
+      max_count: dürfen nicht mehr als %{max} sein.

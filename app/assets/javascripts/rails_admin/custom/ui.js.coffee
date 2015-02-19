@@ -20,24 +20,23 @@ $(document).on 'rails_admin.dom_ready', ->
       $(input).after elem
       $(input).counter elem
 
-
   # Tag Suggestions
 
-  tag_input = $(".js-tag-suggestions__trigger input")
-  if tag_input.length
+  category_input = $(".js-category-suggestions__trigger input")
+  if category_input.length
     elem = $(
       "<div style='margin:10px;display:inline-block;width:300px;'></div>")
-    $(".js-tag-suggestions .controls .help-block").before elem
+    $(".js-category-suggestions .controls .help-block").before elem
 
-    tag_input.on 'blur', (e) ->
-      name = tag_input.val()
+    category_input.on 'blur', (e) ->
+      name = category_input.val()
 
-      $.get "/tags/#{name}.json", (tag_array) ->
-        if tag_array.length
-          display = "Ähnliche Angebote verwenden folgende Tags:<br>
-                    #{tag_array.join(', ')}"
+      $.get "/categories/#{name}.json", (category_array) ->
+        if category_array.length
+          display = "Ähnliche Angebote verwenden folgende Kategorien:<br>
+                    #{category_array.join(', ')}"
         else
-          display = "Es gibt keine Tags für Angebote mit genau diesem Namen."
+          display = "Es gibt keine Kategorien für Angebote mit genau diesem
+                    Namen."
 
         elem.html display
-

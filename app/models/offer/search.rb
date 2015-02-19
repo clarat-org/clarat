@@ -28,14 +28,18 @@ class Offer
         }
       end
 
-      # Offer's tags for indexing
+      # Offer's categories for indexing
       def _tags
-        tags.pluck(:name)
+        tags = []
+        categories.find_each do |category|
+          tags << category.self_and_ancestors.pluck(:name)
+        end
+        tags.flatten.uniq
       end
 
-      # additional searchable string made from tags
+      # additional searchable string made from categories
       def keyword_string
-        tags.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
+        categories.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
       end
 
       # concatenated organization name for search index

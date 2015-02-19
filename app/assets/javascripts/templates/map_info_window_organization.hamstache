@@ -1,0 +1,4 @@
+// ToDo: Refactor
+%h3.Map-infowindow__headline
+  {{{ title }}}
+{{{ address }}}

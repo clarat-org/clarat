@@ -6,17 +6,23 @@ class Organization < ActiveRecord::Base
 
   # Associtations
   has_many :locations
-  has_many :organization_offers
-  has_many :offers, through: :organization_offers
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
+  has_many :organization_offers
+  has_many :offers, through: :organization_offers
+  has_many :child_connections, class_name: 'OrganizationConnection',
+                               foreign_key: 'parent_id'
+  has_many :children, through: :child_connections
+  has_many :parent_connections, class_name: 'OrganizationConnection',
+                                foreign_key: 'child_id'
+  has_many :parents, through: :parent_connections
 
   # Enumerization
   extend Enumerize
   enumerize :legal_form, in: %w(ev ggmbh gag foundation gug kdor ador kirche
                                 gmbh ag ug kfm gbr ohg kg eg sonstige
                                 state_entity)
-  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk zwst)
+  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk asb zwst)
 
   # Sanitization
   extend Sanitization
@@ -56,5 +62,13 @@ class Organization < ActiveRecord::Base
       orga.completed = false
       orga.approved = false
     end
+  end
+
+  # ToDo: Refactor!
+  def gmaps_info
+    {
+      title: name,
+      address: location.address
+    }
   end
 end

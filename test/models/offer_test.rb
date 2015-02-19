@@ -50,7 +50,7 @@ describe Offer do
       it { subject.must belong_to :location }
       it { subject.must have_many :organization_offers }
       it { subject.must have_many(:organizations).through :organization_offers }
-      it { subject.must have_and_belong_to_many :tags }
+      it { subject.must have_and_belong_to_many :categories }
       it { subject.must have_and_belong_to_many :languages }
       it { subject.must have_and_belong_to_many :openings }
       it { subject.must have_many :hyperlinks }
@@ -107,40 +107,31 @@ describe Offer do
       end
     end
 
-    describe '#add_dependent_tags (tags after_add callback)' do
-      it 'should add dependent tags over multiple levels' do
-        tag1 = Tag.create name: 'foobar'
-        tag2 = Tag.create name: 'dependent1'
-        tag3 = Tag.create name: 'dependent2'
-        tag1.dependent_tags << tag2
-        tag2.dependent_tags << tag3
-
-        offers(:basic).tags << tag1
-        offers(:basic).tags.must_include tag2
-        offers(:basic).tags.must_include tag3
-      end
-
-      it 'should not break with recursive dependencies' do
-        tag1 = Tag.create name: 'dependent1'
-        tag2 = Tag.create name: 'dependent2'
-        tag1.dependent_tags << tag2
-        tag2.dependent_tags << tag1
-
-        offers(:basic).tags << tag1
-        offers(:basic).tags.must_equal [tag1, tag2]
+    describe '#_tags' do
+      it 'should return unique categories with ancestors of an offer' do
+        offers(:basic).categories << categories(:sub1)
+        offers(:basic).categories << categories(:sub2)
+        tags = offers(:basic)._tags
+        tags.must_include 'sub1.1'
+        tags.must_include 'sub1.2'
+        tags.must_include 'main1'
+        tags.count('main1').must_equal 1
+        tags.wont_include 'main2'
       end
     end
 
-    describe '#prevent_duplicate_tags' do
-      it 'should remove duplicate tag associations' do
-        tag = Tag.create name: 'tag'
-        offer = offers(:basic)
-        offer.tags << tag
-        offer.tags << tag
+    describe '#organization_display_name' do
+      it "should return the first organization's name if there is only one" do
+        offers(:basic).organization_display_name.must_equal(
+          organizations(:basic).name
+        )
+      end
 
-        offer.tags.to_a.count(tag).must_equal 2
-        offer.prevent_duplicate_tags
-        offer.tags.to_a.count(tag).must_equal 1
+      it 'should return a string when there are multiple organizations' do
+        offers(:basic).organizations << FactoryGirl.create(:organization)
+        offers(:basic).organization_display_name.must_equal(
+          I18n.t('offers.index.cooperation')
+        )
       end
     end
   end

@@ -5,27 +5,27 @@
 // ---------------------------------------------------------------
 
 @mixin input-placeholder($color, $font-weight, $font-size) {
-	&.placeholder {
-		color: $color;
-		font-weight: $font-weight;
-		font-size: $font-size;
-	}
+  &.placeholder {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+  }
 
-	&::-moz-placeholder {
-		color: $color;
-		font-weight: $font-weight;
-		font-size: $font-size;
-	}
+  &::-moz-placeholder {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+  }
 
-	&::-webkit-input-placeholder {
-		color: $color;
-		font-weight: $font-weight;
-		font-size: $font-size;
-	}
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+  }
 
-	&:-ms-input-placeholder {
-		color: $color;
-		font-weight: $font-weight;
-		font-size: $font-size;
-	}
+  &:-ms-input-placeholder {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+  }
 }

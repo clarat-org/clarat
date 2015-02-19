@@ -21,6 +21,7 @@ describe Location do
     it { subject.must_respond_to :organization_id }
     it { subject.must_respond_to :federal_state_id }
     it { subject.must_respond_to :name }
+    it { subject.must_respond_to :display_name }
     it { subject.must_respond_to :second_telephone }
     it { subject.must_respond_to :fax }
     it { subject.must_respond_to :completed }
@@ -52,7 +53,7 @@ describe Location do
   end
 
   describe 'methods' do
-    describe '#concat_address' do
+    describe '#generate_display_name' do
       before do
         loc.assign_attributes street: 'street',
                               city: 'city',
@@ -62,11 +63,14 @@ describe Location do
 
       it 'should show the location name if one exists' do
         loc.name = 'name'
-        loc.concat_address.must_equal 'foobar, name (street zip city)'
+        loc.generate_display_name
+        loc.display_name.must_equal 'foobar, name (street zip city)'
       end
 
       it 'should not show a location name if none exists' do
-        loc.concat_address.must_equal 'foobar, street zip city'
+        loc.display_name.must_be_nil
+        loc.generate_display_name
+        loc.display_name.must_equal 'foobar, street zip city'
       end
     end
   end

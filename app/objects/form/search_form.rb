@@ -3,7 +3,7 @@ class SearchForm
   include Virtus.model
   include ActiveModel::Conversion
 
-  attr_accessor :hits
+  attr_accessor :hits, :location_fallback
   # def persisted?
   #   false
   # end
@@ -47,6 +47,9 @@ class SearchForm
       else
         generated_geolocation
       end
+    elsif search_location.nil?
+      @location_fallback = true
+      SearchLocation.find_by_query I18n.t('conf.default_location')
     else
       SearchLocation.find_or_generate search_location
     end

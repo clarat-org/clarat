@@ -12,6 +12,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :categories
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
+  has_many :contact_person_offers, inverse_of: :offer
+  has_many :contact_people, through: :contact_person_offers
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
   # Attention: former has_one :organization, through: :locations

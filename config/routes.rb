@@ -26,6 +26,7 @@ Clarat::Application.routes.draw do
 
   # Sidekiq interface
   require 'sidekiq/web'
+  require 'sidetiq/web'
   constraint = lambda do |request|
     request.env['warden'].authenticate? && request.env['warden'].user.admin?
   end

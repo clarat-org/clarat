@@ -219,6 +219,7 @@ RailsAdmin.config do |config|
       end
     end
     field :websites
+    field :expires_at
     field :completed
     field :approved
 

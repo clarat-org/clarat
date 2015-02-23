@@ -44,6 +44,7 @@ gem 'jbuilder', '~> 1.2'
 # Background processing
 gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq's web interface
+gem 'sidetiq' # Sidekiq scheduling
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -94,4 +94,14 @@ feature 'Search Form' do
       'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )
   end
+
+  scenario 'Navigating to category without a given location uses default' do
+    WebMock.enable!
+    visit root_path
+    fill_in 'search_form_search_location', with: ''
+
+    click_link 'main1'
+    page.must_have_content I18n.t 'offers.index.location_fallback'
+    WebMock.disable!
+  end
 end

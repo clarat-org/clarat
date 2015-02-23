@@ -9,25 +9,38 @@ class CreateContactPeople < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :contact_people, :organization_id
 
     create_table :contact_person_offers do |t|
       t.integer :offer_id, null: false
       t.integer :contact_person_id, null: false
     end
+    add_index :contact_person_offers, :offer_id
+    add_index :contact_person_offers, :contact_person_id
 
     Offer.find_each do |offer|
-      ContactPerson.create(
-        name: offer.contact_name
-        telephone: offer.telephone
-        second_telephone: offer.second_telephone
-        email: offer.email
-        organizations: offer.organizations
+      offer.contact_people << ContactPerson.create(
+        name: offer.contact_name,
+        telephone: offer.telephone,
+        second_telephone: offer.second_telephone,
+        email: offer.email,
+        organization_id: offer.organizations.first.id
       )
     end
+
+    remove_column :offers, :contact_name
+    remove_column :offers, :telephone
+    remove_column :offers, :second_telephone
+    remove_column :offers, :email
   end
 
   def down
     drop_table :contact_people
     drop_table :contact_person_offers
+
+    add_column :offers, :contact_name
+    add_column :offers, :telephone
+    add_column :offers, :second_telephone
+    add_column :offers, :email
   end
 end

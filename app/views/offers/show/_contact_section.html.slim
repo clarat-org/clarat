@@ -2,22 +2,25 @@
 section.section-content.section-content--contact
   h3.section-content__title = t 'offers.show.contact.contact'
   .section-content__body
-    p
-      - if offer.contact_name?
-        = "#{I18n.t 'offers.show.contact.person'}: #{offer.contact_name}"
-        br
-      - if offer.telephone?
-        = t 'offers.show.contact.phone'
-        a< href="tel:#{offer.telephone}"= tel_format offer.telephone
-        br
-      - if offer.fax?
+    - if offer.contact_people.any?
+      - offer.contact_people.each do |contact|
+        p
+          - if contact.name?
+            = "#{I18n.t 'offers.show.contact.person'}: #{contact.name}"
+            br
+          - if contact.telephone?
+            = t 'offers.show.contact.phone'
+            a< href="tel:#{contact.telephone}"= tel_format contact.telephone
+            br
+          - if contact.email?
+            = t 'offers.show.contact.email'
+            span#secure-email==< secure_email_to contact.email
+            br
+    - if offer.fax?
+      p
         = "#{I18n.t 'offers.show.contact.fax'}: #{tel_format offer.fax}"
-        br
-      - if offer.email?
-        = t 'offers.show.contact.email'
-        span#secure-email==< secure_email_to offer.email
-        br
 
+    p
       - unless offer.websites.empty?
         - if offer.websites.own.first
           = t 'offers.show.contact.website'

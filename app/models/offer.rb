@@ -44,21 +44,17 @@ class Offer < ActiveRecord::Base
   def partial_dup
     self.dup.tap do |offer|
       offer.name = nil
-      offer.telephone = nil
-      offer.second_telephone = nil
       offer.fax = nil
-      offer.contact_name = nil
-      offer.email = nil
       offer.openings = self.openings
       offer.completed = false
       offer.approved = false
       offer.categories = self.categories
+      offer.contact_people = []
     end
   end
 
   def contact_details?
-    !contact_name.blank? || !telephone.blank? || !fax.blank? ||
-      !email.blank? || !websites.blank?
+    !fax.blank? || websites.any? || contact_people.any?
   end
 
   def social_media_websites?

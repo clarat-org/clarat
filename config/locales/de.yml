@@ -41,6 +41,9 @@ de:
       website:
         one: Webseite
         other: Webseiten
+      contact_person:
+        one: 'Kontaktperson'
+        other: 'Kontaktpersonen'
       hyperlink:
         one: Hyperlink
         other: Hyperlinks

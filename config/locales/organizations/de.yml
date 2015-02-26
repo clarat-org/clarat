@@ -5,4 +5,6 @@ de:
       where: Wo
       offers_all: Welche Hilfe bietet diese Organisation?
       map_output_searchresult: Kartenausgabe
-      cta_report_errors: Sind die hier dargestellten Informationen fehlerhaft oder unvollständig, lass es uns bitte wissen!
+      cta_report_errors: |
+        Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
+        lass es uns bitte wissen!

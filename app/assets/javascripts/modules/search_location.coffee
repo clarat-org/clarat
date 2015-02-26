@@ -40,6 +40,6 @@ updateCategoryLinks = ->
         .set 'search_form[search_location]', search_location
         .set 'search_form[generated_geolocation]', generated_geolocation
         .toString()
-        .replace '%2B', '%20' # fix $.query tendency to convert space to plus
+        .replace /%2B/g, '%20' # fix $.query tendency to convert space to plus
 
     link.href = originalBase + changedHref

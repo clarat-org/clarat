@@ -64,6 +64,17 @@ feature 'Search Form' do
     WebMock.disable!
   end
 
+  scenario 'Search with exact_location works' do
+    WebMock.enable!
+    visit offers_path search_form: {
+      query: nil, search_location: 'X', generated_geolocation: '0,0',
+      categories: '', exact_location: 't'
+    }
+
+    page.must_have_content 'Keine Angebote'
+    WebMock.disable!
+  end
+
   scenario 'Search for unknown location leads to error page' do
     visit root_path
     fill_in 'search_form_search_location', with: 'Bielefeld'

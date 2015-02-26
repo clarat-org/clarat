@@ -71,3 +71,7 @@ de:
   js: # translations used in JavaScript
     location_required: Bitte Ort angeben.
     autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
+    map_info_window_multiple:
+      title: 'Mehrere Angebote'
+      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
+      anchor: 'Alle ansehen >>'

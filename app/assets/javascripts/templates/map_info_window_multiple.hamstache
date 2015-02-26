@@ -1,0 +1,5 @@
+%h3.Map-infowindow__headline
+  {{{ title }}}
+{{{ text }}}
+%br
+%a{ href: '{{{ url }}}' } {{{ anchor }}}

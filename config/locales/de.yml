@@ -69,5 +69,10 @@ de:
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
   js: # translations used in JavaScript
-    location_required: Bitte Ort angeben.
+    location_required: |
+      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
     autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
+    map_info_window_multiple:
+      title: 'Mehrere Angebote'
+      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
+      anchor: 'Alle ansehen >>'

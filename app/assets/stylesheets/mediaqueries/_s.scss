@@ -219,6 +219,10 @@
     line-height: 45px; // closer to optical vertical middle
   }
 
+  span.tt-dropdown-menu {  // specificity, overriding JS
+    right: 0 !important; // overriding JS
+  }
+
   // Content ######################################
 
   .wrapper-inner {
@@ -234,6 +238,14 @@
 
     .template--offers-index & {
       padding-top: 131px;
+    }
+
+    &.content-main--invalid_location {
+      padding-top: 80px;
+    }
+
+    body[class="template--pages-"] & {
+      padding-top: 68px;
     }
   }
 
@@ -256,7 +268,7 @@
     width: 100%;
   }
 
-  .Listing-tags__item {
+  .Listing-categories__item {
     a {
       margin: 0 4px 4px 0;
       padding: 0 8px;

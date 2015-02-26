@@ -37,7 +37,6 @@ about supported directives.
 # = require modules/query_autocomplete
 # = require modules/places_autocomplete
 # = require modules/mobilemenu
-# = require modules/sticky
 # = require modules/search_location
 # = require modules/more
 # = require modules/unavailable_location_overlay

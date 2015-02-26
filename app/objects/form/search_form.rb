@@ -45,7 +45,7 @@ class SearchForm
     elsif search_location == I18n.t('conf.current_location')
       raise InvalidLocationError if generated_geolocation.empty?
       generated_geolocation
-    elsif search_location.nil?
+    elsif search_location.blank?
       @location_fallback = true
       SearchLocation.find_by_query I18n.t('conf.default_location')
     else
@@ -99,6 +99,7 @@ class SearchForm
   end
 
   def location_for_cookie
+    return nil if search_location.blank?
     { query: search_location, geoloc: geolocation.to_s }.to_json
   end
 end

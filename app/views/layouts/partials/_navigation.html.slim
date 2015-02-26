@@ -22,6 +22,10 @@ header.header-main.header-main--wide
           - Category.mains.each do |main|
             li.nav-sections__listitem class="nav-sections__listitem--#{main.icon}"
               = link_to main.name, offers_path( \
-                          'search_form[categories]' => main.name,
-                          'search_form[query]' => ''),
-                        data: { no_turbolink: true }
+                  'search_form[categories]' => main.name,
+                  'search_form[query]' => '',
+                  'search_form[search_location]' => \
+                    search_cache.search_location,
+                  'search_form[generated_geolocation]' => \
+                    search_cache.generated_geolocation),
+                  data: { no_turbolink: true }

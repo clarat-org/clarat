@@ -11,7 +11,8 @@ ready = ->
       componentRestrictions:
         country: 'de'
 
-    autocomplete = new google.maps.places.Autocomplete location_input, opts
+    Clarat.placesAutocomplete =
+      new google.maps.places.Autocomplete location_input, opts
 
 $(document).ready ready
 $(document).on 'page:load', ready

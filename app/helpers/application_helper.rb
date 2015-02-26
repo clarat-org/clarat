@@ -10,7 +10,7 @@ module ApplicationHelper
   def default_geolocation
     return @geoloc if @geoloc
 
-    if cookies[:last_search_location]
+    if !cookies[:last_search_location].blank?
       @geoloc = JSON.parse(cookies[:last_search_location])['geoloc']
     # elsif (l = request.location) && !l.city.empty?
     #   @geoloc_string = l.city
@@ -21,7 +21,7 @@ module ApplicationHelper
   end
 
   def geoloc_to_s geoloc = default_geolocation
-    if cookies[:last_search_location]
+    if !cookies[:last_search_location].blank?
       JSON.parse(cookies[:last_search_location])['query']
     elsif geoloc == I18n.t('conf.default_latlng')
       I18n.t('conf.default_location') # needed if that SearchLocation exists?

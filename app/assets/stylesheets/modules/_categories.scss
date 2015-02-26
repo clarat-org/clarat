@@ -1,0 +1,15 @@
+// ---------------------------------------------------------------
+//
+//  Category tree module
+//
+// ---------------------------------------------------------------
+
+.Categories {
+  @extend %layout-col-29;
+  margin-right: 2.5%;
+}
+
+.Categories__headline {
+  @extend %roboto_regular;
+  font-weight: 400;
+}

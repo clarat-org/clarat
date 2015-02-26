@@ -24,7 +24,7 @@
 
 
 .content-main {
-  @extend %layout-col-61;
+  @extend %layout-col-69;
 
   &.content-main--wide {
     float: none;
@@ -35,9 +35,10 @@
 }
 
 .aside-standard {
-  @extend %layout-col-35;
+  @extend %layout-col-29;
   margin-bottom: 80px;
 }
+
 
 
 // Sticky footer related
@@ -62,8 +63,8 @@
 
 %layout-col-33,
 %layout-col-50,
-%layout-col-61,
-%layout-col-35 {
+%layout-col-69,
+%layout-col-29 {
   display: inline-block;
   float: left;
 }
@@ -82,11 +83,10 @@
   margin-right: 0;
 }
 
-%layout-col-61 {
-  margin-right: 2.5%;
-  width: 61.8%;
+%layout-col-69 {
+  width: 68.8%;
 }
 
-%layout-col-35 {
-  width: 35.7%;
+%layout-col-29 {
+  width: 28.7%;
 }

@@ -7,7 +7,8 @@ Clarat.getGeolocation = ->
 
 handleBlurredLocationInput = (e) ->
   requestedLoc = e.target.value
-  unless requestedLoc is I18n.t('conf.current_location')
+  if requestedLoc isnt I18n.t('conf.current_location') and
+     requestedLoc isnt ''
     $.get "/search_locations/#{encodeURIComponent(requestedLoc)}.json", (r) ->
       Clarat.currentGeolocationByBrowser = false
       Clarat.currentGeolocation = r.geoloc

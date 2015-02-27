@@ -134,5 +134,18 @@ describe Offer do
         )
       end
     end
+
+    describe '::per_env_index' do
+      it 'should return Offer_envname for a non-development env' do
+        Offer.per_env_index.must_equal 'Offer_test'
+      end
+
+      it 'should attach the user name to the development env' do
+        Rails.stubs(:env)
+          .returns ActiveSupport::StringInquirer.new('development')
+        ENV.stubs(:[]).returns 'foobar'
+        Offer.per_env_index.must_equal 'Offer_development_foobar'
+      end
+    end
   end
 end

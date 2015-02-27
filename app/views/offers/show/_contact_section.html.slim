@@ -8,10 +8,10 @@ section.section-content.section-content--contact
         br
       - if offer.telephone?
         = t 'offers.show.contact.phone'
-        a< href="tel:#{offer.telephone}"= offer.telephone
+        a< href="tel:#{offer.telephone}"= tel_format offer.telephone
         br
       - if offer.fax?
-        = "#{I18n.t 'offers.show.contact.fax'}: #{offer.fax}"
+        = "#{I18n.t 'offers.show.contact.fax'}: #{tel_format offer.fax}"
         br
       - if offer.email?
         = t 'offers.show.contact.email'

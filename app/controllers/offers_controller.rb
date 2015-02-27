@@ -38,18 +38,26 @@ class OffersController < ApplicationController
   def set_position
     @position = @search_cache.geolocation
     if @search_cache.search_location == I18n.t('conf.current_location')
-      cookies[:last_search_location] = nil # erase cookie so that next time the current location will be used again
+      # erase cookie so that next time the current location will be used again
+      cookies[:last_search_location] = nil
     else
-      cookies[:last_search_location] = @search_cache.location_for_cookie # set cookie so that next time the same location will be prefilled
+      # set cookie so that next time the same location will be prefilled
+      cookies[:last_search_location] = @search_cache.location_for_cookie
     end
   end
 
-  # See if area is covered and if not instantiate an UpdateRequest
+  # Deal with location fallback and no nearby search results
   def test_location_unavailable
+    # See if area is covered and if not instantiate an UpdateRequest
     unless @search_cache.nearby?
       @update_request = UpdateRequest.new(
         search_location: @search_cache.search_location
       )
+    end
+
+    # Alert user when we used default location because they didn't give one
+    if @search_cache.location_fallback
+      flash[:alert] = I18n.t('offers.index.location_fallback')
     end
   end
 end

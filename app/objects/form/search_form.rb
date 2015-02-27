@@ -3,7 +3,7 @@ class SearchForm
   include Virtus.model
   include ActiveModel::Conversion
 
-  attr_accessor :hits
+  attr_accessor :hits, :location_fallback
   # def persisted?
   #   false
   # end
@@ -12,12 +12,13 @@ class SearchForm
   attribute :search_location, String
   attribute :generated_geolocation, String
   attribute :categories, String
+  attribute :exact_location
 
   def search page
-    @hits = Offer.algolia_search query,
+    @hits = Offer.algolia_search query || '',
                                  page: page,
                                  aroundLatLng: geolocation,
-                                 aroundRadius: 999_999_999,
+                                 aroundRadius: search_radius,
                                  tagFilters: categories,
                                  facets: '*',
                                  maxValuesPerFacet: 20,
@@ -35,21 +36,26 @@ class SearchForm
   end
 
   def geolocation
-    return @geolocation if @geolocation
-
-    @geolocation = Geolocation.new geolocation_result
+    @geolocation ||= Geolocation.new geolocation_result
   end
 
   def geolocation_result
-    if search_location == I18n.t('conf.current_location')
-      if generated_geolocation.empty? # could cause problems
-        raise InvalidLocationError
-      else
-        generated_geolocation
-      end
+    if exact_location
+      generated_geolocation
+    elsif search_location == I18n.t('conf.current_location')
+      raise InvalidLocationError if generated_geolocation.empty?
+      generated_geolocation
+    elsif search_location.blank?
+      @location_fallback = true
+      SearchLocation.find_by_query I18n.t('conf.default_location')
     else
       SearchLocation.find_or_generate search_location
     end
+  end
+
+  # Super wide radius or use exact location
+  def search_radius
+    exact_location ? 100 : 50_000
   end
 
   def categories_by_facet
@@ -70,7 +76,8 @@ class SearchForm
     newcategories = category_array
     newcategories << category unless newcategories.delete(category)
     {
-      query: query, categories: newcategories.join(','), search_location: search_location
+      query: query, categories: newcategories.join(','),
+      search_location: search_location
     }
   end
 
@@ -92,6 +99,7 @@ class SearchForm
   end
 
   def location_for_cookie
+    return nil if search_location.blank?
     { query: search_location, geoloc: geolocation.to_s }.to_json
   end
 end

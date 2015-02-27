@@ -4,15 +4,20 @@
 //
 // ---------------------------------------------------------------
 
-
 .template--offers-show {
 
   .section-content--organisation .section-content__title {
     background: $brand_green;
   }
 
-  .section-content--where .section-content__title  {
+  .section-content--where .section-content__title {
     background: $brand_brown;
+  }
+
+  .section-content--what {
+    li {
+      margin-left: 20px;
+    }
   }
 
   .section-content--categories {
@@ -66,12 +71,11 @@
     }
 
     &.page-detail__icon--e-violence,
-    &.page-detail__icon--e-habitation, { // ToDo: Removes
+    &.page-detail__icon--e-habitation, {
+      // ToDo: Removes
       background-image: image-url('picto_violence.svg');
     }
   }
-
-
 
   .offer-contribute {
     border-color: $brand_yellow;

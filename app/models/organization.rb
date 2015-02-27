@@ -64,7 +64,6 @@ class Organization < ActiveRecord::Base
     end
   end
 
-  # ToDo: Refactor!
   def gmaps_info
     {
       title: name,

@@ -198,8 +198,10 @@
         line-height: 35px;
 
         .template--pages-home & {
-          top: 3px;
+          bottom: 3px;
           left: 8px;
+          top: auto;
+          max-height: 40px;
         }
       }
     }

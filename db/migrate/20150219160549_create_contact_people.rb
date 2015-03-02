@@ -19,13 +19,15 @@ class CreateContactPeople < ActiveRecord::Migration
     add_index :contact_person_offers, :contact_person_id
 
     Offer.find_each do |offer|
-      offer.contact_people << ContactPerson.create(
+      cp = ContactPerson.new(
         name: offer.contact_name,
         telephone: offer.telephone,
         second_telephone: offer.second_telephone,
         email: offer.email,
         organization_id: offer.organizations.first.id
       )
+      cp.save(validate: false)
+      offer.contact_people << cp
     end
 
     remove_column :offers, :contact_name

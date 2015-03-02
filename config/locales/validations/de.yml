@@ -12,7 +12,7 @@ de:
         bestätigt werden kann. Unbestätigt: %{list}.
     contact_person:
       incomplete: |
-        Entweder "Name", "Telephone", oder "Email" muss ausgefüllt werden.
+        Entweder "Name", "Local Number 1", oder "Email" muss ausgefüllt werden.
     shared:
       approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
       incomplete: |

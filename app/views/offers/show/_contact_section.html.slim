@@ -8,9 +8,17 @@ section.section-content.section-content--contact
           - if contact.name?
             = "#{I18n.t 'offers.show.contact.person'}: #{contact.name}"
             br
-          - if contact.telephone?
+          - if contact.local_number_1?
             = t 'offers.show.contact.phone'
-            a< href="tel:#{contact.telephone}"= tel_format contact.telephone
+            a< href="tel:#{contact.telephone_1}"
+              = contact.area_code_1
+              =< tel_format contact.local_number_1
+            br
+          - if contact.local_number_2?
+            = t 'offers.show.contact.phone'
+            a< href="tel:#{contact.telephone_2}"
+              = contact.area_code_2
+              =< tel_format contact.local_number_2
             br
           - if contact.email?
             = t 'offers.show.contact.email'

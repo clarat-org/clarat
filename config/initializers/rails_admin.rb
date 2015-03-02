@@ -131,10 +131,6 @@ RailsAdmin.config do |config|
     field :zip
     field :city
     field :federal_state
-    field :telephone
-    field :second_telephone
-    field :fax
-    field :email
     field :hq
     field :latitude do
       read_only true
@@ -236,8 +232,10 @@ RailsAdmin.config do |config|
     object_label_method :display_name
 
     field :name
-    field :telephone
-    field :second_telephone
+    field :area_code_1
+    field :local_number_1
+    field :area_code_2
+    field :local_number_2
     field :email
     field :organization
     field :offers

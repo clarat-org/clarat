@@ -7,16 +7,20 @@ describe ContactPerson do
 
   describe 'attributes' do
     it { subject.must_respond_to :name }
-    it { subject.must_respond_to :telephone }
-    it { subject.must_respond_to :second_telephone }
+    it { subject.must_respond_to :area_code_1 }
+    it { subject.must_respond_to :local_number_1 }
+    it { subject.must_respond_to :area_code_2 }
+    it { subject.must_respond_to :local_number_2 }
     it { subject.must_respond_to :email }
   end
 
   describe 'validations' do
     describe 'always' do
       it { subject.must validate_presence_of(:organization_id) }
-      it { subject.must ensure_length_of(:telephone).is_at_most 32 }
-      it { subject.must ensure_length_of(:second_telephone).is_at_most 32 }
+      it { subject.must ensure_length_of(:area_code_1).is_at_most 6 }
+      it { subject.must ensure_length_of(:local_number_1).is_at_most 32 }
+      it { subject.must ensure_length_of(:area_code_2).is_at_most 6 }
+      it { subject.must ensure_length_of(:local_number_2).is_at_most 32 }
 
       describe 'custom' do
         describe '#at_least_one_field_present' do
@@ -33,7 +37,7 @@ describe ContactPerson do
             contact_person.valid?.must_equal true
           end
           it 'should be valid if telephone is given' do
-            contact_person.telephone = '123'
+            contact_person.local_number_1 = '123'
             contact_person.valid?.must_equal true
           end
           it 'should be valid if email is given' do

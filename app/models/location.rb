@@ -15,10 +15,6 @@ class Location < ActiveRecord::Base
   validates :zip, presence: true, length: { is: 5 },
                   uniqueness: { scope: [:name, :street] }
   validates :city, presence: true
-  validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :telephone, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :second_telephone, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :email, format: /\A.+@.+\..+\z/, allow_blank: true
   validates :display_name, presence: true
 
   validates :organization_id, presence: true

@@ -23,6 +23,7 @@ about supported directives.
 # = require_tree ./templates
 #
 # = require jquery.popupoverlay
+# = require jquery.query-object
 #
 # = require vendor/analytics
 # = require vendor/cookie_lib

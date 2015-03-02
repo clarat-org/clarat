@@ -44,7 +44,10 @@ RailsAdmin.config do |config|
     statistics do
       only ['Organization', 'Offer', 'Location']
     end
-    nested_set do
+    # nested_set do
+    #   only ['Category']
+    # end
+    nestable do
       only ['Category']
     end
 
@@ -282,7 +285,8 @@ RailsAdmin.config do |config|
       field :icon
     end
 
-    nested_set(max_depth: 5)
+    # nested_set(max_depth: 5)
+    nestable_tree(max_depth: 5)
   end
 
   config.model 'Language' do

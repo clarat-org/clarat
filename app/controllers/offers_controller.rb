@@ -6,7 +6,8 @@ class OffersController < ApplicationController
 
   def index
     @offers = build_search_cache.search params[:page]
-    @categories = @search_cache.categories_by_facet
+    @category_tree = Category.hash_tree
+    @facets = Hash[@search_cache.categories_by_facet]
     test_location_unavailable
     set_position
     prepare_gmaps_variables @offers

@@ -11,7 +11,7 @@ class SearchForm
   attribute :query, String
   attribute :search_location, String
   attribute :generated_geolocation, String
-  attribute :categories, String
+  attribute :category, String
   attribute :exact_location
 
   def search page
@@ -19,7 +19,7 @@ class SearchForm
                                  page: page,
                                  aroundLatLng: geolocation,
                                  aroundRadius: search_radius,
-                                 tagFilters: categories,
+                                 tagFilters: category,
                                  facets: '*',
                                  maxValuesPerFacet: 20,
                                  aroundPrecision: 500
@@ -71,28 +71,39 @@ class SearchForm
     end
   end
 
-  # toggles category on or off
-  def toggle category
-    newcategories = category_array
-    newcategories << category unless newcategories.delete(category)
-    {
-      query: query, categories: newcategories.join(','),
-      search_location: search_location
-    }
+  # find the actual category object and return it with ancestors
+  def category_with_ancestors
+    Category.find_by_name(category).self_and_ancestors.reverse
   end
 
-  # @return [Boolean]
-  def includes_category category
-    self.category_array.include? category
+  # link hash that focuses on a specific category
+  def focus category
+    name = category.is_a?(String) ? category : category.name
+    { query: query, category: name, search_location: search_location }
   end
 
-  def category_array
-    if categories
-      categories.split(',').map(&:strip)
-    else
-      []
-    end
-  end
+  # # toggles category on or off
+  # def toggle category
+  #   newcategories = category_array
+  #   newcategories << category unless newcategories.delete(category)
+  #   {
+  #     query: query, categories: newcategories.join(','),
+  #     search_location: search_location
+  #   }
+  # end
+
+  # # @return [Boolean]
+  # def includes_category category
+  #   self.category_array.include? category
+  # end
+
+  # def categories_array
+  #   if category
+  #     categories.split(',').map(&:strip)
+  #   else
+  #     []
+  #   end
+  # end
 
   def hit_count
     @hits.raw_answer['nbHits']

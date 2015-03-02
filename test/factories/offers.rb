@@ -55,11 +55,7 @@ FactoryGirl.define do
       else
         evaluator.category_count.times do
           offer.categories << (
-            if Category.count != 0 && rand(2) == 0
-              Category.select(:id).all.sample
-            else
-              FactoryGirl.create(:category)
-            end
+            Category.select(:id).all.sample
           )
         end
       end

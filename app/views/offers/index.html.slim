@@ -1,17 +1,12 @@
 .wrapper-inner
-  .Categories
-    h2.Categories__headline = t 'offers.index.main_categories'
+  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
+                                              facets: @facets,
+                                              search_cache: @search_cache
+
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        = t('offers.shared.offers', count: @search_cache.hit_count)
-        - categories = @search_cache.categories
-        - unless categories.blank?
-          |  (
-          = t 'offers.shared.category_filter'
-          | :
-          =< categories
-          | )
+        == search_results_info_headline @search_cache
 
       = link_to '#categories', class: 'jump-to-categories' do
         i.fa.fa-filter
@@ -26,9 +21,6 @@
         = modal_for 'unavailable_location_overlay' do
           p= I18n.t 'offers.index.unavailable_location_modal'
           = render '/update_requests/new', update_request: @update_request
-
-
-
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

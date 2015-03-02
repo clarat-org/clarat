@@ -23,4 +23,8 @@ class Website < ActiveRecord::Base
   scope :gplus, -> { where(host: 'gplus') }
   scope :pinterest, -> { where(host: 'pinterest') }
   scope :other, -> { where(host: 'other') }
+
+  def shorten_url
+    URI.parse(self.url).host
+  end
 end

@@ -41,7 +41,7 @@ about supported directives.
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more
+# = require modules/modal
 # = require modules/unavailable_location_overlay
-# = require modules/report_overlay
 # = require modules/flash
 # = require modules/safari_fixes

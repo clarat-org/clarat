@@ -10,6 +10,24 @@
 
   // Header ######################################
 
+  .Banner {
+    min-height: 30px;
+    line-height: 22px;
+  }
+
+  .Banner__text {
+    padding-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .Banner__text,
+  .Banner__link {
+    font-size: 12px;
+  }
+
   .Logo {
     margin-top: 25px;
     margin-bottom: 15px;

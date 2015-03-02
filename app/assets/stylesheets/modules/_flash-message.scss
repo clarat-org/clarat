@@ -6,15 +6,11 @@
 
 .Flash-message {
   @extend %roboto_bold;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: $brand_white;
-
+  @extend .Banner;
   position: fixed;
   top: 0;
-  z-index:99;
-  width: 100%;
+  right: 0;
+  z-index: 99;
 }
 
 .Flash-message--alert {

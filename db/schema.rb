@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150212172916) do
+ActiveRecord::Schema.define(version: 20150218104826) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -126,6 +126,7 @@ ActiveRecord::Schema.define(version: 20150212172916) do
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
+    t.boolean  "renewed",                          default: false
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
@@ -139,14 +140,6 @@ ActiveRecord::Schema.define(version: 20150212172916) do
 
   add_index "offers_openings", ["offer_id"], name: "index_offers_openings_on_offer_id", using: :btree
   add_index "offers_openings", ["opening_id"], name: "index_offers_openings_on_opening_id", using: :btree
-
-  create_table "offers_tags", id: false, force: true do |t|
-    t.integer "offer_id", null: false
-    t.integer "tag_id",   null: false
-  end
-
-  add_index "offers_tags", ["offer_id"], name: "index_offers_tags_on_offer_id", using: :btree
-  add_index "offers_tags", ["tag_id"], name: "index_offers_tags_on_tag_id", using: :btree
 
   create_table "openings", force: true do |t|
     t.string   "day",        limit: 3, null: false
@@ -217,17 +210,6 @@ ActiveRecord::Schema.define(version: 20150212172916) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "tags", force: true do |t|
-    t.string   "name",                                  null: false
-    t.boolean  "main",                  default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon",       limit: 12
-    t.text     "synonyms"
-  end
-
-  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
   create_table "update_requests", force: true do |t|
     t.string   "search_location", null: false

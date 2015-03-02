@@ -10,6 +10,24 @@
 
   // Header ######################################
 
+  .Banner {
+    min-height: 30px;
+    line-height: 22px;
+  }
+
+  .Banner__text {
+    padding-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .Banner__text,
+  .Banner__link {
+    font-size: 12px;
+  }
+
   .Logo {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -58,7 +76,17 @@
   #new_search_form {
     margin: 0 auto;
 
+
     .template--pages-home & {
+
+      .twitter-typeahead {
+        span.tt-dropdown-menu {
+          right: 0 !important; // overriding JS
+          position: relative !important;
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+      }
 
       #search_form_search_location {
         margin: 0;
@@ -91,8 +119,16 @@
         width: auto;
         height: 50px;
 
+        .input.string {
+          height: auto !important;
+          min-height: 40px;
+
+          &.search_form_search_location {
+          }
+        }
+
         &.search_form_search_location {
-          margin: 15px 0 5px;
+          margin: 10px 0;
           height: 50px;
         }
       }

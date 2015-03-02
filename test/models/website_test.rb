@@ -2,7 +2,9 @@ require_relative '../test_helper'
 
 describe Website do
 
-  let(:website) { Website.new(host: 'own', url: 'http://www.clarat.org') }
+  let(:website) do
+    Website.new(host: 'own', url: 'http://www.clarat.org/example')
+  end
 
   subject { website }
 
@@ -19,6 +21,14 @@ describe Website do
       it { subject.must validate_presence_of :host }
       it { subject.must validate_presence_of :url }
       it { subject.must validate_uniqueness_of :url }
+    end
+  end
+
+  describe 'Methods' do
+    describe '#shorten_url' do
+      it 'should return only the url essence' do
+        website.shorten_url.must_equal 'www.clarat.org'
+      end
     end
   end
 

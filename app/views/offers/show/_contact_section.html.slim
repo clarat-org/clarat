@@ -21,7 +21,7 @@ section.section-content.section-content--contact
       - unless offer.websites.empty?
         - if offer.websites.own.first
           = t 'offers.show.contact.website'
-          =< link_to offer.websites.own.first.url,
+          =< link_to offer.websites.own.first.shorten_url,
                      offer.websites.own.first.url
           br
       - if offer.social_media_websites?

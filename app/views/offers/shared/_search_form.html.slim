@@ -1,4 +1,5 @@
-= simple_form_for search_cache, url: offers_path, html: { method: :get } do |f|
+= simple_form_for search_cache, url: offers_path,
+                                html: { method: :get, novalidate: false } do |f|
   = f.input :query, label: t('shared.search.labels.query'),
                     required: false,
                     input_html: { \
@@ -13,7 +14,8 @@
                                 class: 'input-xlg JS-Search-location-display',
                                 placeholder: t('shared.search.placeholder.loc'),
                                 oninvalid: custom_validity_js('fill_field'),
-                                onchange: custom_validity_reset_js }
+                                onchange: custom_validity_reset_js,
+                                required: true }
   = f.input :generated_geolocation, as: :hidden,
                                     input_html: { \
                                       class: 'JS-Search-location',

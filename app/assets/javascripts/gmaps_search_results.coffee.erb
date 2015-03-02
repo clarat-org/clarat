@@ -1,7 +1,7 @@
 initialize = ->
   canvas = document.getElementById('map-canvas')
   markers = $(canvas).data('markers')
-  infowindow = new (google.maps.InfoWindow)()
+  infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
   includedPoints = []
 
   if markers
@@ -38,8 +38,11 @@ initialize = ->
         userPosition.latitude,
         userPosition.longitude
       )
-      includedPoints.push userPosition
-      bounds.extend userPosition
+      # if not exact location as only other marker
+      unless includedPoints.length is 1 and
+             userPosition.toString() == includedPoints[0].toString()
+        includedPoints.push userPosition
+        bounds.extend userPosition
 
     # Expand Map to Include All Markers
     if includedPoints.length > 1
@@ -50,11 +53,18 @@ initialize = ->
 
 
 bindMapsEvents = (map, marker, markerData, infowindow) ->
-
-  if markerData.offer_ids[1] != undefined
-    contentString = 'Viele Suchergebnisse für diesen Marker gefunden; bitte Suche nutzen' # refactor
+  if not markerData.organization_display_name # if is organization
+    contentString =
+      HoganTemplates['map_info_window_organization'].render(markerData)
+  else if markerData.ids[1] != undefined
+    contentString =
+      HoganTemplates['map_info_window_multiple'].render
+        title: I18n.t 'js.map_info_window_multiple.title'
+        text: I18n.t 'js.map_info_window_multiple.text'
+        anchor: I18n.t 'js.map_info_window_multiple.anchor'
+        url: generate_exact_search_url markerData.position
   else
-    contentString = HoganTemplates['map_info_window_single'].render(markerData)
+    contentString = HoganTemplates['map_info_window_offer'].render(markerData)
 
   google.maps.event.addListener marker, 'click', (event) ->
     map.setCenter marker.getPosition()
@@ -65,8 +75,16 @@ bindMapsEvents = (map, marker, markerData, infowindow) ->
   google.maps.event.addListener map, 'click', (event) ->
     infowindow.close()
 
+generate_exact_search_url = (position) ->
+  location.origin + location.pathname + $.query.set(
+    'search_form[generated_geolocation]',
+    "#{position.latitude},#{position.longitude}"
+  ).set(
+    'search_form[exact_location]', 't'
+  ).toString()
+
 bindMarkerToResults = (marker, markerData) ->
-  for offerID in markerData.offer_ids
+  for offerID in markerData.ids
     $("#result-offer-#{offerID}").data('marker', marker)
 
 

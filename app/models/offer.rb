@@ -39,14 +39,6 @@ class Offer < ActiveRecord::Base
   delegate :name, :street, :addition, :city, :zip, :address,
            to: :location, prefix: true, allow_nil: true
 
-  # Offer's encounter modifier for indexing
-  def encounter_value
-    case encounter
-    when 'independent' then 0
-    when 'determinable', 'fixed' then 1
-    end
-  end
-
   def partial_dup
     self.dup.tap do |offer|
       offer.name = nil

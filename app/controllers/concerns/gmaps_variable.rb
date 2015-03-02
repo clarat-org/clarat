@@ -16,12 +16,12 @@ module GmapsVariable
       key = Geolocation.new(object.location)
 
       if @markers[key.to_s]
-        @markers[key.to_s][:offer_ids] << object.id
+        @markers[key.to_s][:ids] << object.id
       else
         @markers[key.to_s] = {
           position: key.to_h,
-          offer_ids: [object.id],
-          url: offer_url(object)
+          ids: [object.id],
+          url: offer_url(object) # assumes offer, not used on organization
         }.merge object.gmaps_info
       end
     end

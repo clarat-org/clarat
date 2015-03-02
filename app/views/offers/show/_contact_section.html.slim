@@ -22,17 +22,22 @@ section.section-content.section-content--contact
         - if offer.websites.own.first
           = t 'offers.show.contact.website'
           =< link_to offer.websites.own.first.shorten_url,
-                     offer.websites.own.first.url
+                     offer.websites.own.first.url, target: '_blank'
           br
       - if offer.social_media_websites?
         = t 'offers.show.contact.socialmedia'
       - if offer.websites.facebook.first
-        ==> link_to 'Facebook', offer.websites.facebook.first.url
+        ==> link_to 'Facebook', offer.websites.facebook.first.url,
+                    target: '_blank'
       - if offer.websites.twitter.first
-        ==> link_to 'Twitter', offer.websites.twitter.first.url
+        ==> link_to 'Twitter', offer.websites.twitter.first.url,
+                    target: '_blank'
       - if offer.websites.youtube.first
-        ==> link_to 'Youtube', offer.websites.youtube.first.url
+        ==> link_to 'Youtube', offer.websites.youtube.first.url,
+                    target: '_blank'
       - if offer.websites.gplus.first
-        ==> link_to 'Google+', offer.websites.gplus.first.url
+        ==> link_to 'Google+', offer.websites.gplus.first.url,
+                    target: '_blank'
       - if offer.websites.pinterest.first
-        ==> link_to 'Pinterest', offer.websites.pinterest.first.url
+        ==> link_to 'Pinterest', offer.websites.pinterest.first.url,
+                    target: '_blank'

@@ -64,9 +64,12 @@ ActiveRecord::Schema.define(version: 20150304165120) do
   add_index "hyperlinks", ["website_id"], name: "index_hyperlinks_on_website_id", using: :btree
 
   create_table "keywords", force: true do |t|
-    t.string "name"
-    t.text   "synonyms"
+    t.string  "name"
+    t.text    "synonyms"
+    t.integer "offer_id"
   end
+
+  add_index "keywords", ["offer_id"], name: "index_keywords_on_offer_id", using: :btree
 
   create_table "languages", force: true do |t|
     t.string   "name",                 null: false

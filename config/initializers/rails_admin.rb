@@ -219,6 +219,7 @@ RailsAdmin.config do |config|
       end
     end
     field :websites
+    field :keywords
     field :completed
     field :approved
     field :renewed

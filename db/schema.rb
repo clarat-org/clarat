@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218104826) do
+ActiveRecord::Schema.define(version: 20150304165120) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,11 @@ ActiveRecord::Schema.define(version: 20150218104826) do
 
   add_index "hyperlinks", ["linkable_id", "linkable_type"], name: "index_hyperlinks_on_linkable_id_and_linkable_type", using: :btree
   add_index "hyperlinks", ["website_id"], name: "index_hyperlinks_on_website_id", using: :btree
+
+  create_table "keywords", force: true do |t|
+    t.string "name"
+    t.text   "synonyms"
+  end
 
   create_table "languages", force: true do |t|
     t.string   "name",                 null: false
@@ -127,6 +132,7 @@ ActiveRecord::Schema.define(version: 20150218104826) do
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                          default: false
+    t.string   "age_group"
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree

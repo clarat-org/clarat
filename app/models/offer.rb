@@ -18,6 +18,7 @@ class Offer < ActiveRecord::Base
   # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
+  has_many :keywords
 
   # Enumerization
   extend Enumerize

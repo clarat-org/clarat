@@ -132,7 +132,6 @@ ActiveRecord::Schema.define(version: 20150304165120) do
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                          default: false
-    t.string   "age_group"
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree

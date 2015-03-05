@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218104826) do
+ActiveRecord::Schema.define(version: 20150302150935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,28 @@ ActiveRecord::Schema.define(version: 20150218104826) do
 
   add_index "categories_offers", ["category_id"], name: "index_categories_offers_on_category_id", using: :btree
   add_index "categories_offers", ["offer_id"], name: "index_categories_offers_on_offer_id", using: :btree
+
+  create_table "contact_people", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "organization_id",            null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "area_code_1",     limit: 6
+    t.string   "local_number_1",  limit: 32
+    t.string   "area_code_2",     limit: 6
+    t.string   "local_number_2",  limit: 32
+  end
+
+  add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
+
+  create_table "contact_person_offers", force: true do |t|
+    t.integer "offer_id",          null: false
+    t.integer "contact_person_id", null: false
+  end
+
+  add_index "contact_person_offers", ["contact_person_id"], name: "index_contact_person_offers_on_contact_person_id", using: :btree
+  add_index "contact_person_offers", ["offer_id"], name: "index_contact_person_offers_on_offer_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -79,24 +101,20 @@ ActiveRecord::Schema.define(version: 20150218104826) do
   add_index "languages_offers", ["offer_id"], name: "index_languages_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
-    t.string   "street",                                      null: false
+    t.string   "street",                           null: false
     t.string   "addition"
-    t.string   "zip",                                         null: false
-    t.string   "city",                                        null: false
-    t.string   "telephone",        limit: 32
-    t.string   "email"
+    t.string   "zip",                              null: false
+    t.string   "city",                             null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",                             null: false
-    t.integer  "federal_state_id",                            null: false
+    t.integer  "organization_id",                  null: false
+    t.integer  "federal_state_id",                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "second_telephone", limit: 32
-    t.string   "fax",              limit: 32
-    t.boolean  "completed",                   default: false
-    t.string   "display_name",                                null: false
+    t.boolean  "completed",        default: false
+    t.string   "display_name",                     null: false
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
@@ -107,9 +125,6 @@ ActiveRecord::Schema.define(version: 20150218104826) do
     t.string   "name",                  limit: 80,                 null: false
     t.text     "description",                                      null: false
     t.text     "next_steps"
-    t.string   "telephone",             limit: 32
-    t.string   "contact_name"
-    t.string   "email"
     t.string   "encounter",                                        null: false
     t.boolean  "frequent_changes",                 default: false
     t.string   "slug"
@@ -120,7 +135,6 @@ ActiveRecord::Schema.define(version: 20150218104826) do
     t.text     "opening_specification"
     t.text     "comment"
     t.boolean  "completed",                        default: false
-    t.string   "second_telephone"
     t.boolean  "approved",                         default: false
     t.datetime "approved_at"
     t.text     "legal_information"

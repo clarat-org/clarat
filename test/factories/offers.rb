@@ -16,15 +16,13 @@ FactoryGirl.define do
 
     # optional fields
     comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
-    telephone { maybe Faker.numerify('#' * rand(7..11)) }
-    fax { (maybe(true) && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
-    contact_name { maybe Faker::NameDE.name }
-    email { maybe Faker::Internet.email }
+    fax { maybe Faker.numerify('#' * rand(7..11)) }
 
     # associations
 
     ignore do
       organization_count 1
+      contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
       category nil # used to get a specific category, instead of category_count
@@ -46,6 +44,13 @@ FactoryGirl.define do
           FactoryGirl.create(:location, organization: organization)
         )
         offer.update_column :location_id, location.id if location
+      end
+
+      # Contact People
+      evaluator.organization_count.times do
+        offer.contact_people << FactoryGirl.create(
+          :contact_person, organization: organization
+        )
       end
 
       # ...

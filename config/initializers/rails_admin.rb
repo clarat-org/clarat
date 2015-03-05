@@ -138,10 +138,6 @@ RailsAdmin.config do |config|
     field :zip
     field :city
     field :federal_state
-    field :telephone
-    field :second_telephone
-    field :fax
-    field :email
     field :hq
     field :latitude do
       read_only true
@@ -194,11 +190,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :legal_information
-    field :telephone
-    field :second_telephone
     field :fax
-    field :contact_name
-    field :email
     field :encounter
     field :frequent_changes
     field :slug do

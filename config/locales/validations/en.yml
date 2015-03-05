@@ -10,6 +10,9 @@ en:
       needs_organization: needs at least one organization
       only_approved_organizations: |
         can only contain approved organizations. Unapproved: %{list}.
+    contact_person:
+      incomplete: |
+        Either "Name", "Telephone", or "Email" needs to be present.
     shared:
       approved_by_creator: can't be approved by creator
       incomplete: must be completed before approval

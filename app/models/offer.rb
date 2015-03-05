@@ -12,6 +12,8 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :categories
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :openings
+  has_many :contact_person_offers, inverse_of: :offer
+  has_many :contact_people, through: :contact_person_offers
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
   # Attention: former has_one :organization, through: :locations
@@ -43,21 +45,17 @@ class Offer < ActiveRecord::Base
   def partial_dup
     self.dup.tap do |offer|
       offer.name = nil
-      offer.telephone = nil
-      offer.second_telephone = nil
       offer.fax = nil
-      offer.contact_name = nil
-      offer.email = nil
       offer.openings = self.openings
       offer.completed = false
       offer.approved = false
       offer.categories = self.categories
+      offer.contact_people = []
     end
   end
 
   def contact_details?
-    !contact_name.blank? || !telephone.blank? || !fax.blank? ||
-      !email.blank? || !websites.blank?
+    !fax.blank? || websites.any? || contact_people.any?
   end
 
   def social_media_websites?

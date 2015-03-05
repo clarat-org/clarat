@@ -21,19 +21,24 @@ class Offer
 
       # Needs to be true before approval possible. Called in custom validation.
       def before_approve
-        if organizations.count == 0
-          errors[:organizations] = I18n.t(
-            'validations.offer.needs_organization'
-          )
-        elsif organizations.where(approved: false).count > 0
-          errors[:organizations] = I18n.t(
-            'validations.offer.only_approved_organizations',
-            list: organizations.where(approved: false).pluck(:name).join(', ')
-          )
+        validate_associated_presence :organizations
+        if organizations.where(approved: false).count > 0
+          fail_validation :organizations, 'only_approved_organizations',
+                          list: organizations.approved.pluck(:name).join(', ')
         end
+        validate_associated_presence :encounter_filters
+        validate_associated_presence :age_filters
       end
 
       private
+
+      def validate_associated_presence field
+        fail_validation field, "needs_#{field}" if send(field).count == 0
+      end
+
+      def fail_validation field, i18n_selector, options = {}
+        errors[field] = I18n.t("validations.offer.#{i18n_selector}", options)
+      end
 
       # Custom Validation: Ensure selected organization is the same as the
       # selected location's organization

@@ -23,6 +23,13 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.included_models = %w(
+    Organization Website Location FederalState Offer Opening Category Filter
+    LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact
+    Subscription UpdateRequest Hyperlink OrganizationOffer
+    OrganizationConnection SearchLocation
+  )
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -201,7 +208,14 @@ RailsAdmin.config do |config|
     field :categories do
       css_class 'js-category-suggestions'
     end
-    field :languages
+    field :language_filters
+    field :audience_filters
+    field :age_filters do
+      help { 'Required before approval.' }
+    end
+    field :encounter_filters do
+      help { 'Required before approval.' }
+    end
     field :openings
     field :opening_specification do
       help do
@@ -295,15 +309,26 @@ RailsAdmin.config do |config|
     nested_set(max_depth: 5)
   end
 
-  config.model 'Language' do
+  config.model 'Filter' do
     weight 1
     list do
-      sort_by :name
       field :id
       field :name
       field :code
       field :offers
     end
+  end
+  config.model 'LanguageFilter' do
+    parent Filter
+  end
+  config.model 'EncounterFilter' do
+    parent Filter
+  end
+  config.model 'AgeFilter' do
+    parent Filter
+  end
+  config.model 'AudienceFilter' do
+    parent Filter
   end
 
   config.model 'User' do

@@ -120,10 +120,22 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
       page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
 
-      # 6: fix all orga errors, offer is approved
+      # 6: fix all orga errors, needs age_filter
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.must_have_content 'Age filters benötigt mindestens einen Altersfilter'
+
+      # 7: age_filter given, needs encounter_filter
+      select 'Babies', from: 'offer_age_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.must_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+
+      # 8: encounter_filter given, offer is approved
+      select 'Telefon', from: 'offer_encounter_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

@@ -37,9 +37,6 @@ en:
       federal_state:
         one: Federal State
         other: Federal States
-      language:
-        one: Language
-        other: Languages
       opening:
         one: Opening Hours
         other: Opening Hours

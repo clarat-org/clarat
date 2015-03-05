@@ -76,6 +76,22 @@ ActiveRecord::Schema.define(version: 20150305151412) do
     t.datetime "updated_at"
   end
 
+  create_table "filters", force: true do |t|
+    t.string   "name",                  null: false
+    t.string   "identifier", limit: 20, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "type",                  null: false
+  end
+
+  create_table "filters_offers", id: false, force: true do |t|
+    t.integer "filter_id", null: false
+    t.integer "offer_id",  null: false
+  end
+
+  add_index "filters_offers", ["filter_id"], name: "index_filters_offers_on_filter_id", using: :btree
+  add_index "filters_offers", ["offer_id"], name: "index_filters_offers_on_offer_id", using: :btree
+
   create_table "hyperlinks", force: true do |t|
     t.integer "linkable_id",              null: false
     t.string  "linkable_type", limit: 40, null: false
@@ -97,21 +113,6 @@ ActiveRecord::Schema.define(version: 20150305151412) do
 
   add_index "keywords_offers", ["keyword_id"], name: "index_keywords_offers_on_keyword_id", using: :btree
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
-
-  create_table "languages", force: true do |t|
-    t.string   "name",                 null: false
-    t.string   "code",       limit: 3, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "languages_offers", id: false, force: true do |t|
-    t.integer "language_id", null: false
-    t.integer "offer_id",    null: false
-  end
-
-  add_index "languages_offers", ["language_id"], name: "index_languages_offers_on_language_id", using: :btree
-  add_index "languages_offers", ["offer_id"], name: "index_languages_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
     t.string   "street",                           null: false

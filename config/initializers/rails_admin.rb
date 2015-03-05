@@ -292,7 +292,6 @@ RailsAdmin.config do |config|
 
   config.model 'Category' do
     field :name
-    field :synonyms
     field :parent
 
     object_label_method :name_with_optional_asterisk

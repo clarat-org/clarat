@@ -7,7 +7,8 @@
         = link_to offers_path(search_form: search_cache.focus(name)),
                   class: 'btn' do
           = name
-          /= ' (' + (facets[name] ? facets[name].to_s : '0') + ')'
+          / @TODO number output
+          / @TODO "list item has nested list inside" indicator
 
         = render 'offers/index/categories_nest', set: children, facets: facets,
                                                  search_cache: search_cache

@@ -17,14 +17,15 @@ class Offer
                     disable_indexing: Rails.env.test?,
                     if: :approved? do
         attributesToIndex %w(
-          name description keyword_string organization_name
+          name description category_string keyword_string organization_name
         )
         ranking %w(
           typo asc(encounter_value) geo words proximity attribute exact custom
         ) # ^encounter_value
         add_attribute :_geoloc, :_tags
-        add_attribute :keyword_string, :organization_names, :location_street,
-                      :location_city, :location_zip, :encounter_value
+        add_attribute :category_string, :keyword_string, :organization_names,
+                      :location_street, :location_city, :location_zip,
+                      :encounter_value
         attributesForFaceting [:_tags]
         optionalWords STOPWORDS
       end
@@ -47,8 +48,15 @@ class Offer
       end
 
       # additional searchable string made from categories
-      def keyword_string
+      # ToDo Überhaupt notwendig, wenn es für Kategorien keine Synonyme mehr
+      # gibt?
+      def category_string
         categories.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
+      end
+
+      # additional searchable string made from categories
+      def keyword_string
+        keywords.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
       end
 
       # concatenated organization name for search index

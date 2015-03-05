@@ -212,6 +212,9 @@ RailsAdmin.config do |config|
       end
     end
     field :websites
+    field :keywords do
+      inverse_of :offers
+    end
     field :completed
     field :approved
     field :renewed
@@ -331,6 +334,10 @@ RailsAdmin.config do |config|
         end
       end
     end
+  end
+
+  config.model 'Keyword' do
+    weight 1
   end
 
   config.model 'Contact' do

@@ -13,6 +13,9 @@ de:
       category:
         one: Kategorie
         other: Kategorien
+      keyword:
+        one: Keyword
+        other: Keywords
       federal_state:
         one: Bundesland
         other: Bundesländer
@@ -41,6 +44,9 @@ de:
       website:
         one: Webseite
         other: Webseiten
+      contact_person:
+        one: 'Kontaktperson'
+        other: 'Kontaktpersonen'
       hyperlink:
         one: Hyperlink
         other: Hyperlinks

@@ -10,7 +10,7 @@ class AddAwesomeNestedSetToCategories < ActiveRecord::Migration
     add_column :categories, :children_count, :integer, default: 0
 
     # This is necessary to update :lft and :rgt columns
-    Category.rebuild!
+    # Category.rebuild!
 
     change_column :categories, :lft,            :integer, null: false
     change_column :categories, :rgt,            :integer, null: false

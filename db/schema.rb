@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150226180644) do
+ActiveRecord::Schema.define(version: 20150305151412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,28 @@ ActiveRecord::Schema.define(version: 20150226180644) do
   add_index "category_hierarchies", ["ancestor_id", "descendant_id", "generations"], name: "category_anc_desc_idx", unique: true, using: :btree
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
+  create_table "contact_people", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "organization_id",            null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "area_code_1",     limit: 6
+    t.string   "local_number_1",  limit: 32
+    t.string   "area_code_2",     limit: 6
+    t.string   "local_number_2",  limit: 32
+  end
+
+  add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
+
+  create_table "contact_person_offers", force: true do |t|
+    t.integer "offer_id",          null: false
+    t.integer "contact_person_id", null: false
+  end
+
+  add_index "contact_person_offers", ["contact_person_id"], name: "index_contact_person_offers_on_contact_person_id", using: :btree
+  add_index "contact_person_offers", ["offer_id"], name: "index_contact_person_offers_on_offer_id", using: :btree
+
   create_table "contacts", force: true do |t|
     t.string   "name"
     t.string   "email"
@@ -68,6 +90,19 @@ ActiveRecord::Schema.define(version: 20150226180644) do
   add_index "hyperlinks", ["linkable_id", "linkable_type"], name: "index_hyperlinks_on_linkable_id_and_linkable_type", using: :btree
   add_index "hyperlinks", ["website_id"], name: "index_hyperlinks_on_website_id", using: :btree
 
+  create_table "keywords", force: true do |t|
+    t.string "name"
+    t.text   "synonyms"
+  end
+
+  create_table "keywords_offers", id: false, force: true do |t|
+    t.integer "keyword_id", null: false
+    t.integer "offer_id",   null: false
+  end
+
+  add_index "keywords_offers", ["keyword_id"], name: "index_keywords_offers_on_keyword_id", using: :btree
+  add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
+
   create_table "languages", force: true do |t|
     t.string   "name",                 null: false
     t.string   "code",       limit: 3, null: false
@@ -84,24 +119,20 @@ ActiveRecord::Schema.define(version: 20150226180644) do
   add_index "languages_offers", ["offer_id"], name: "index_languages_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
-    t.string   "street",                                      null: false
+    t.string   "street",                           null: false
     t.string   "addition"
-    t.string   "zip",                                         null: false
-    t.string   "city",                                        null: false
-    t.string   "telephone",        limit: 32
-    t.string   "email"
+    t.string   "zip",                              null: false
+    t.string   "city",                             null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",                             null: false
-    t.integer  "federal_state_id",                            null: false
+    t.integer  "organization_id",                  null: false
+    t.integer  "federal_state_id",                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "second_telephone", limit: 32
-    t.string   "fax",              limit: 32
-    t.boolean  "completed",                   default: false
-    t.string   "display_name",                                null: false
+    t.boolean  "completed",        default: false
+    t.string   "display_name",                     null: false
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
@@ -112,9 +143,6 @@ ActiveRecord::Schema.define(version: 20150226180644) do
     t.string   "name",                  limit: 80,                 null: false
     t.text     "description",                                      null: false
     t.text     "next_steps"
-    t.string   "telephone",             limit: 32
-    t.string   "contact_name"
-    t.string   "email"
     t.string   "encounter",                                        null: false
     t.boolean  "frequent_changes",                 default: false
     t.string   "slug"
@@ -125,12 +153,12 @@ ActiveRecord::Schema.define(version: 20150226180644) do
     t.text     "opening_specification"
     t.text     "comment"
     t.boolean  "completed",                        default: false
-    t.string   "second_telephone"
     t.boolean  "approved",                         default: false
     t.datetime "approved_at"
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
+    t.boolean  "renewed",                          default: false
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
@@ -144,14 +172,6 @@ ActiveRecord::Schema.define(version: 20150226180644) do
 
   add_index "offers_openings", ["offer_id"], name: "index_offers_openings_on_offer_id", using: :btree
   add_index "offers_openings", ["opening_id"], name: "index_offers_openings_on_opening_id", using: :btree
-
-  create_table "offers_tags", id: false, force: true do |t|
-    t.integer "offer_id", null: false
-    t.integer "tag_id",   null: false
-  end
-
-  add_index "offers_tags", ["offer_id"], name: "index_offers_tags_on_offer_id", using: :btree
-  add_index "offers_tags", ["tag_id"], name: "index_offers_tags_on_tag_id", using: :btree
 
   create_table "openings", force: true do |t|
     t.string   "day",        limit: 3, null: false
@@ -222,17 +242,6 @@ ActiveRecord::Schema.define(version: 20150226180644) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "tags", force: true do |t|
-    t.string   "name",                                  null: false
-    t.boolean  "main",                  default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon",       limit: 12
-    t.text     "synonyms"
-  end
-
-  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
   create_table "update_requests", force: true do |t|
     t.string   "search_location", null: false

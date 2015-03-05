@@ -20,10 +20,6 @@ FactoryGirl.define do
         "Raum #{rand(1..20)}"
       ].sample
     end
-    telephone { maybe Faker.numerify('#' * rand(7..11)) }
-    second_telephone { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
-    fax { (rand(2) == 0 && telephone) ? Faker.numerify('#' * rand(7..11)) : nil }
-    email { maybe Faker::Internet.email }
 
     # associations
     organization

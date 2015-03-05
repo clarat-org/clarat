@@ -13,6 +13,9 @@ de:
       category:
         one: Kategorie
         other: Kategorien
+      keyword:
+        one: Keyword
+        other: Keywords
       federal_state:
         one: Bundesland
         other: Bundesländer

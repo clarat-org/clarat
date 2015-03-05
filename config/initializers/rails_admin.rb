@@ -336,6 +336,10 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model 'Keyword' do
+    weight 1
+  end
+
   config.model 'Contact' do
     weight 2
   end

@@ -10,7 +10,19 @@ class Offer < ActiveRecord::Base
   # Associtations
   belongs_to :location, inverse_of: :offers
   has_and_belongs_to_many :categories
-  has_and_belongs_to_many :languages
+  has_and_belongs_to_many :filters
+  has_and_belongs_to_many :language_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
+  has_and_belongs_to_many :audience_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
+  has_and_belongs_to_many :age_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
+  has_and_belongs_to_many :encounter_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
@@ -33,6 +45,9 @@ class Offer < ActiveRecord::Base
       [:name, :location_zip]
     ]
   end
+
+  # Scopes
+  scope :approved, -> { where(approved: true) }
 
   # Methods
 

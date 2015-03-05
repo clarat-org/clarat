@@ -1,0 +1,2 @@
+class AgeFilter < Filter
+end

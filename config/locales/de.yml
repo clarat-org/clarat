@@ -16,9 +16,6 @@ de:
       federal_state:
         one: Bundesland
         other: Bundesländer
-      language:
-        one: Sprache
-        other: Sprachen
       opening:
         one: Öffnungszeit
         other: Öffnungszeiten
@@ -50,6 +47,21 @@ de:
       update_request:
         one: 'Update Request'
         other: 'Update Requests'
+      filter:
+        one: Filter
+        other: Filter
+      language_filter:
+        one: Sprachfilter
+        other: Sprachfilter
+      encounter_filter:
+        one: Kontaktfilter
+        other: Kontaktfilter
+      age_filter:
+        one: Altersfilter
+        other: Altersfilter
+      audience_filter:
+        one: Zielgruppenfilter
+        other: Zielgruppenfilter
   i18n:
     transliterate:
       rule:

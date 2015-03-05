@@ -73,8 +73,9 @@ FactoryGirl.define do
         )
       end
       evaluator.language_count.times do
-        offer.languages << (
-          Language.select(:id).all.sample || FactoryGirl.create(:language)
+        offer.language_filters << (
+          LanguageFilter.select(:id).all.sample ||
+            FactoryGirl.create(:language_filter)
         )
       end
     end

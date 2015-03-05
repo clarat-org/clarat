@@ -21,6 +21,7 @@ module OffersHelper
     output + " (#{search_cache.search_location})"
   end
 
+  # breadcrumps to active category
   def breadcrumb_path search_cache
     output = ''
     ancestors = search_cache.category_with_ancestors
@@ -31,5 +32,13 @@ module OffersHelper
       output += ' > ' if index != last_index
     end
     output
+  end
+
+  # info classes for category list display
+  def category_list_classes search_cache, name, depth, children
+    active_class = search_cache.category_in_focus?(name) ? 'active' : ''
+    depth_class = "depth--#{depth}"
+    children_class = children.any? ? 'has-children' : ''
+    "#{active_class} #{depth_class} #{children_class}"
   end
 end

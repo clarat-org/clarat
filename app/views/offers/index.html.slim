@@ -4,23 +4,12 @@
                                               search_cache: @search_cache
 
   main.content-main
-    .Listing-results
-      h2.Listing-results__headline
-        == search_results_info_headline @search_cache
+    = render 'offers/index/search_results', offers: @offers
 
-      = link_to '#categories', class: 'jump-to-categories' do
-        i.fa.fa-filter
-        = I18n.t('offers.index.navigate_to_categories')
-
-      ul.search-results.Listing-results__list
-        - @offers.each do |offer|
-          = render 'offers/index/single_search_result', offer: offer
-      = paginate @offers
-
-      - if @update_request
-        = modal_for 'unavailable_location_overlay' do
-          p= I18n.t 'offers.index.unavailable_location_modal'
-          = render '/update_requests/new', update_request: @update_request
+  - if @update_request
+    = modal_for 'unavailable_location_overlay' do
+      p= I18n.t 'offers.index.unavailable_location_modal'
+      = render '/update_requests/new', update_request: @update_request
 
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

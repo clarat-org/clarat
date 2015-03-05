@@ -11,7 +11,11 @@ class OffersController < ApplicationController
     test_location_unavailable
     set_position
     prepare_gmaps_variables @offers
-    respond_with @offers
+    respond_with @offers do |format|
+      format.html do
+        render (request.xhr? ? :index_xhr : :index), layout: !request.xhr?
+      end
+    end
   end
 
   rescue_from InvalidLocationError do |_error|

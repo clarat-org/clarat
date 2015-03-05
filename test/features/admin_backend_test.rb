@@ -20,6 +20,7 @@ feature 'Admin Backend' do
         fill_in 'offer_next_steps', with: 'testnextsteps'
         select 'Fixed', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
+        check 'offer_renewed'
 
         click_button 'Speichern'
         page.must_have_content 'testangebot'

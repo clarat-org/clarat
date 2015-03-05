@@ -55,6 +55,6 @@ class Opening < ActiveRecord::Base
   end
 
   def display_string
-    "#{open.strftime('%H:%M')} - #{close.strftime('%H:%M')}"
+    "#{open.strftime('%k:%M')} Uhr - #{close.strftime('%k:%M')} Uhr"
   end
 end

@@ -1,6 +1,6 @@
 class Keyword < ActiveRecord::Base
   # associtations
-  belongs_to :offers
+  has_and_belongs_to_many :offers, inverse_of: :keywords
 
   # Validations
   validates :name, length: { maximum: 80 }, uniqueness: true, presence: true

@@ -1,6 +1,6 @@
 # using http://vast-engineering.github.io/jquery-popup-overlay/
 ready =  ->
-  overlay = $('#js-report-overlay')
+  overlay = $('.js-modal')
   if overlay.length
     overlay.popup()
 

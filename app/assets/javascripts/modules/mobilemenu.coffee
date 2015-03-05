@@ -7,8 +7,6 @@ initMobileMenu = ->
   $distributor = $(".Distributor--navigation")
   smartphone = ($(window).width() < 480)
 
-  # $inputLocationContainer.removeClass "is-visible"
-
   if $homeTemplate
     return
 

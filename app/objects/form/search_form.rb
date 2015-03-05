@@ -73,7 +73,17 @@ class SearchForm
 
   # find the actual category object and return it with ancestors
   def category_with_ancestors
-    Category.find_by_name(category).self_and_ancestors.reverse
+    unless category.blank?
+      @category_with_ancestors ||=
+        Category.find_by_name(category).self_and_ancestors.reverse
+    end
+  end
+
+  def category_in_focus? name
+   if category_with_ancestors
+      @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
+      @category_with_ancestor_names.include? name
+    end
   end
 
   # link hash that focuses on a specific category

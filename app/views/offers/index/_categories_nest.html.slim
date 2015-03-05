@@ -1,12 +1,15 @@
-ul
-  - set.each do |category, children|
-    - name = category.name
-    - active_class = search_cache.category == name ? 'active' : ''
-    li
-      = link_to offers_path(search_form: search_cache.focus(name)),
-                class: "btn #{active_class}" do
-        = name
-        =< "(#{facets[name]})" if facets[name]
-
-      = render 'offers/index/categories_nest', set: children, facets: facets,
-                                               search_cache: search_cache
+- if set.any?
+  ul.Categories__list
+    - set.each do |category, children|
+      - name = category.name
+      - active_class = search_cache.category_in_focus?(name) ? 'active' : ''
+      li.Categories__listitem class=active_class
+        - if facets[name]
+          = link_to offers_path(search_form: search_cache.focus(name)),
+                    class: 'btn' do
+            = name
+            = ' (' + (facets[name] ? facets[name].to_s : '0') + ')'
+        - else
+          = "#{name} (0)"
+        = render 'offers/index/categories_nest', set: children, facets: facets,
+                                                 search_cache: search_cache

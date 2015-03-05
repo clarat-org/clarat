@@ -190,6 +190,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :legal_information
+    field :contact_people
     field :fax
     field :encounter
     field :frequent_changes
@@ -240,6 +241,19 @@ RailsAdmin.config do |config|
     clone_config do
       custom_method :partial_dup
     end
+  end
+
+  config.model 'ContactPerson' do
+    object_label_method :display_name
+
+    field :name
+    field :area_code_1
+    field :local_number_1
+    field :area_code_2
+    field :local_number_2
+    field :email
+    field :organization
+    field :offers
   end
 
   config.model 'Opening' do
@@ -361,6 +375,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'OrganizationOffer' do
+    weight 3
+  end
+
+  config.model 'ContactPersonOffer' do
     weight 3
   end
 

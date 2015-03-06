@@ -7,7 +7,7 @@ class Offer
       validates :name,
                 uniqueness: { scope: :location_id },
                 unless: ->(offer) { offer.location.nil? }
-      validates :description, length: { maximum: 400 }, presence: true
+      validates :description, length: { maximum: 450 }, presence: true
       validates :next_steps, length: { maximum: 500 }, presence: true
       validates :encounter, presence: true
       validates :fax, format: /\A\d*\z/, length: { maximum: 32 }

@@ -127,7 +127,6 @@ RailsAdmin.config do |config|
       field :organization
       field :zip
       field :federal_state
-      field :completed
       field :display_name
     end
     weight(-2)
@@ -145,8 +144,6 @@ RailsAdmin.config do |config|
     field :longitude do
       read_only true
     end
-    field :completed
-
     show do
       field :offers
       field :display_name

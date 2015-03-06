@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150305174544) do
+ActiveRecord::Schema.define(version: 20150306151422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -114,20 +114,19 @@ ActiveRecord::Schema.define(version: 20150305174544) do
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
-    t.string   "street",                           null: false
+    t.string   "street",           null: false
     t.string   "addition"
-    t.string   "zip",                              null: false
-    t.string   "city",                             null: false
+    t.string   "zip",              null: false
+    t.string   "city",             null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",                  null: false
-    t.integer  "federal_state_id",                 null: false
+    t.integer  "organization_id",  null: false
+    t.integer  "federal_state_id", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.boolean  "completed",        default: false
-    t.string   "display_name",                     null: false
+    t.string   "display_name",     null: false
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
@@ -138,7 +137,7 @@ ActiveRecord::Schema.define(version: 20150305174544) do
     t.string   "name",                  limit: 80,                 null: false
     t.text     "description",                                      null: false
     t.text     "next_steps"
-    t.string   "encounter",                                        null: false
+    t.string   "encounter"
     t.boolean  "frequent_changes",                 default: false
     t.string   "slug"
     t.integer  "location_id"

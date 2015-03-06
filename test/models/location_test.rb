@@ -20,7 +20,6 @@ describe Location do
     it { subject.must_respond_to :federal_state_id }
     it { subject.must_respond_to :name }
     it { subject.must_respond_to :display_name }
-    it { subject.must_respond_to :completed }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
   end

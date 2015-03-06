@@ -9,7 +9,6 @@ class Offer
                 unless: ->(offer) { offer.location.nil? }
       validates :description, length: { maximum: 450 }, presence: true
       validates :next_steps, length: { maximum: 500 }, presence: true
-      validates :encounter, presence: true
       validates :fax, format: /\A\d*\z/, length: { maximum: 32 }
       validates :opening_specification, length: { maximum: 400 }
       validates :legal_information, length: { maximum: 400 }

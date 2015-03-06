@@ -11,7 +11,6 @@ describe Offer do
     it { subject.must_respond_to :name }
     it { subject.must_respond_to :description }
     it { subject.must_respond_to :next_steps }
-    it { subject.must_respond_to :encounter }
     it { subject.must_respond_to :frequent_changes }
     it { subject.must_respond_to :slug }
     it { subject.must_respond_to :created_at }
@@ -32,7 +31,6 @@ describe Offer do
       it { subject.must ensure_length_of(:description).is_at_most 450 }
       it { subject.must validate_presence_of :next_steps }
       it { subject.must ensure_length_of(:next_steps).is_at_most 500 }
-      it { subject.must validate_presence_of :encounter }
       it { subject.must ensure_length_of(:fax).is_at_most 32 }
       it { offer.must ensure_length_of(:opening_specification).is_at_most 400 }
       it { subject.must ensure_length_of(:comment).is_at_most 800 }
@@ -66,20 +64,6 @@ describe Offer do
       it 'should return users name if there is a version' do
         offer = FactoryGirl.create :offer, :with_creator
         offer.creator.must_equal User.find(offer.created_by).name
-      end
-    end
-
-    describe '#encounter_value' do
-      it 'should return 0 on independent' do
-        Offer.new(encounter: :independent).encounter_value.must_equal 0
-      end
-
-      it 'should return 1 on determinable' do
-        Offer.new(encounter: :determinable).encounter_value.must_equal 1
-      end
-
-      it 'should return 1 on fixed' do
-        Offer.new(encounter: :fixed).encounter_value.must_equal 1
       end
     end
 

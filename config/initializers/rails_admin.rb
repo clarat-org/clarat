@@ -192,7 +192,9 @@ RailsAdmin.config do |config|
     field :legal_information
     field :contact_people
     field :fax
-    field :encounter
+    field :encounter do
+      read_only true
+    end
     field :frequent_changes
     field :slug do
       read_only do

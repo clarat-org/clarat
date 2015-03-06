@@ -18,7 +18,6 @@ feature 'Admin Backend' do
         fill_in 'offer_name', with: 'testangebot'
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
-        select 'Fixed', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
 
@@ -56,7 +55,6 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
-      select 'Fixed', from: 'offer_encounter'
       select location.name, from: 'offer_location_id'
       select 'foobar', from: 'offer_organization_ids'
 
@@ -83,7 +81,6 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
-      select 'Fixed', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'

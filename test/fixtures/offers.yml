@@ -3,6 +3,5 @@ basic:
   name: foobar
   description: foobar
   next_steps: foobar
-  encounter: independent
   completed: t
   approved: t

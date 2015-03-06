@@ -6,9 +6,6 @@ FactoryGirl.define do
     name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
-    encounter do
-      Offer.enumerized_attributes.attributes['encounter'].values.sample
-    end
     frequent_changes { Faker::Boolean.maybe }
     completed false
     approved false
@@ -39,10 +36,13 @@ FactoryGirl.define do
       # location
       organization = offer.organizations.first
       if organization
-        location = offer.encounter == 'independent' ? nil : (
-          organization.locations.sample ||
-          FactoryGirl.create(:location, organization: organization)
-        )
+        # TODO: Refactor/check if this even makes sense...
+        if offer.encounter_filters.pluck(:name).include?('persönliches Gespräch')
+          location = organization.locations.sample ||
+            FactoryGirl.create(:location, organization: organization)
+        else
+          location = nil
+        end
         offer.update_column :location_id, location.id if location
       end
 
@@ -92,6 +92,7 @@ FactoryGirl.define do
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
+    # TODO: Introduce encounter_filter instead
     trait :with_location do
       encounter 'fixed'
     end

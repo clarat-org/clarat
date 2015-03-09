@@ -12,7 +12,6 @@ describe Offer do
     it { subject.must_respond_to :description }
     it { subject.must_respond_to :next_steps }
     it { subject.must_respond_to :encounter }
-    it { subject.must_respond_to :frequent_changes }
     it { subject.must_respond_to :slug }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
@@ -37,6 +36,17 @@ describe Offer do
       it { offer.must ensure_length_of(:opening_specification).is_at_most 400 }
       it { subject.must ensure_length_of(:comment).is_at_most 800 }
       it { subject.must ensure_length_of(:legal_information).is_at_most 400 }
+      it { subject.must validate_presence_of :expires_at }
+    end
+
+    describe 'custom' do
+      it 'should validate expiration date' do
+        subject.expires_at = Time.now
+        subject.valid?
+        subject.errors.messages[:expires_at].must_include(
+          I18n.t('validations.shared.later_date')
+        )
+      end
     end
   end
 

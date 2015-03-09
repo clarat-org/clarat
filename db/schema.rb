@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306151422) do
+ActiveRecord::Schema.define(version: 20150309125245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -137,8 +137,7 @@ ActiveRecord::Schema.define(version: 20150306151422) do
     t.string   "name",                  limit: 80,                 null: false
     t.text     "description",                                      null: false
     t.text     "next_steps"
-    t.string   "encounter"
-    t.boolean  "frequent_changes",                 default: false
+    t.string   "encounter",                                        null: false
     t.string   "slug"
     t.integer  "location_id"
     t.datetime "created_at"
@@ -152,8 +151,8 @@ ActiveRecord::Schema.define(version: 20150306151422) do
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.datetime "expires_at"
     t.boolean  "renewed",                          default: false
+    t.date     "expires_at",                                       null: false
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree

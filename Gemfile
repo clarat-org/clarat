@@ -176,6 +176,7 @@ group :development, :test do
   gem 'thin' # Replace Webrick
   gem 'bullet' # Notify about n+1 queries
   gem 'letter_opener' # emails in browser
+  gem 'timecop' # time travel!
 end
 
 group :development, :test, :staging do

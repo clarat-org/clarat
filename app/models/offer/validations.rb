@@ -15,6 +15,7 @@ class Offer
       validates :legal_information, length: { maximum: 400 }
       validates :comment, length: { maximum: 800 }
       validates :slug, uniqueness: true
+      validates :expires_at, presence: true, later_date: true
 
       # Custom validations
       validate :location_fits_organization, on: :update

@@ -1,1 +1,4 @@
-<%= offer_url @offer %>
+<%= pluralize @offer_count, 'offer' %> expired today:
+<% @offer_ids.each do |id| %>
+- <%= rails_admin_de_url + "/offer/#{id}/edit" %>
+<% end %>

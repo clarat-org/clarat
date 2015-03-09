@@ -310,7 +310,7 @@ RailsAdmin.config do |config|
     list do
       field :id
       field :name
-      field :code
+      field :identifier
       field :offers
     end
   end

@@ -8,7 +8,6 @@ class Category < ActiveRecord::Base
 
   # Validations
   validates :name, uniqueness: true, presence: true
-  validates :synonyms, length: { maximum: 400 }
 
   # Sanitization
   extend Sanitization

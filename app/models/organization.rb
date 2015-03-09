@@ -9,6 +9,7 @@ class Organization < ActiveRecord::Base
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
   has_many :organization_offers
+  has_many :contact_people
   has_many :offers, through: :organization_offers
   has_many :child_connections, class_name: 'OrganizationConnection',
                                foreign_key: 'parent_id'
@@ -38,6 +39,8 @@ class Organization < ActiveRecord::Base
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :comment, length: { maximum: 800 }
+  validates :slug, uniqueness: true
+
   # Custom Validations
   validates :approved, approved: true
 

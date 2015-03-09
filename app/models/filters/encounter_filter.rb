@@ -1,0 +1,2 @@
+class EncounterFilter < Filter
+end

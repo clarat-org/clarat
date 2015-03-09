@@ -15,21 +15,21 @@ de:
       navigate_to_categories: 'Filtern…'
 
     show:
-      what: Was
+      what: Worum gehts?
       where: Wo
       assigned_categories: Zugeordnete Kategorien
-      next_steps: Nächste Schritte
-      opening_hours: Öffnungszeiten
+      next_steps: Was musst du tun?
+      opening_hours: Wann kannst du dich melden?
       opening_by_arrangement: Nach Vereinbarung
       contact:
-        contact: Kontakt
+        contact: Wo kannst du dich melden?
         person: Ansprechpartner
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "
         website: "Webseite: "
         socialmedia: "Weitere Präsenzen im Netz: "
-      organizations: Anbieter
+      organizations: Wer bietet diese Hilfe an?
       map_output_searchresult: Kartenausgabe
       cta_report_errors: |
         Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,

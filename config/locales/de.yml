@@ -13,12 +13,12 @@ de:
       category:
         one: Kategorie
         other: Kategorien
+      keyword:
+        one: Keyword
+        other: Keywords
       federal_state:
         one: Bundesland
         other: Bundesländer
-      language:
-        one: Sprache
-        other: Sprachen
       opening:
         one: Öffnungszeit
         other: Öffnungszeiten
@@ -41,6 +41,9 @@ de:
       website:
         one: Webseite
         other: Webseiten
+      contact_person:
+        one: 'Kontaktperson'
+        other: 'Kontaktpersonen'
       hyperlink:
         one: Hyperlink
         other: Hyperlinks
@@ -50,6 +53,21 @@ de:
       update_request:
         one: 'Update Request'
         other: 'Update Requests'
+      filter:
+        one: Filter
+        other: Filter
+      language_filter:
+        one: Sprachfilter
+        other: Sprachfilter
+      encounter_filter:
+        one: Kontaktfilter
+        other: Kontaktfilter
+      age_filter:
+        one: Altersfilter
+        other: Altersfilter
+      audience_filter:
+        one: Zielgruppenfilter
+        other: Zielgruppenfilter
   i18n:
     transliterate:
       rule:
@@ -69,5 +87,10 @@ de:
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
   js: # translations used in JavaScript
-    location_required: Bitte Ort angeben.
+    location_required: |
+      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
     autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
+    map_info_window_multiple:
+      title: 'Mehrere Angebote'
+      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
+      anchor: 'Alle ansehen >>'

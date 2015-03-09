@@ -61,6 +61,7 @@ html class='no-js' lang=I18n.locale
 
   body class="template--#{controller_name}-#{action_name}"
     .page-wrap
+      = render '/layouts/partials/banner'
       - flash.each do |message|
         - unless message[0] == 'timedout'
           = render '/layouts/partials/flash',

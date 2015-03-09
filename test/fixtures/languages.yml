@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-deutsch:
-  name: Deutsch
-  code: deu
-
-english:
-  name: English
-  code: eng

@@ -23,6 +23,7 @@ about supported directives.
 # = require_tree ./templates
 #
 # = require jquery.popupoverlay
+# = require jquery.query-object
 #
 # = require vendor/analytics
 # = require vendor/cookie_lib
@@ -40,7 +41,7 @@ about supported directives.
 # = require modules/sticky
 # = require modules/search_location
 # = require modules/more
+# = require modules/modal
 # = require modules/unavailable_location_overlay
-# = require modules/report_overlay
 # = require modules/flash
 # = require modules/safari_fixes

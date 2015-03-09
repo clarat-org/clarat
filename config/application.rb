@@ -18,6 +18,7 @@ module Clarat
       #{config.root}/app/objects/form/
       #{config.root}/app/objects/errors/
       #{config.root}/app/observers
+      #{config.root}/app/models/filters/
     )
 
     # Activate observers that should always be running.

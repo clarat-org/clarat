@@ -8,6 +8,7 @@ class OrganizationsController < ApplicationController
     @organization = Organization.friendly.find(params[:id])
     authorize @organization
     prepare_gmaps_variable @organization
+    @contact = Contact.new url: request.url, reporting: true
     respond_with @organization
   end
 end

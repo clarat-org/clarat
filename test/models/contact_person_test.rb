@@ -65,5 +65,14 @@ describe ContactPerson do
         contact_person.display_name.must_equal '#1 John Doe (ABC)'
       end
     end
+
+    describe '#telephone_#{n}' do
+      it 'should return the concatenated area code and local number' do
+        contact_person.assign_attributes area_code_1: '0', local_number_1: '1',
+                                         area_code_2: '2', local_number_2: '3'
+        contact_person.telephone_1.must_equal '01'
+        contact_person.telephone_2.must_equal '23'
+      end
+    end
   end
 end

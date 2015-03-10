@@ -65,5 +65,17 @@ describe Location do
         loc.display_name.must_equal 'foobar, street zip city'
       end
     end
+
+    # this method is stubbed out for the entire rest of the test suite
+    describe '#full_address' do
+      it 'should return address and federal state name' do
+        loc.assign_attributes street: 'street',
+                              city: 'city',
+                              zip: 'zip',
+                              federal_state: FederalState.new(name: 'state')
+
+        loc.send(:full_address).must_equal 'street, zip city state'
+      end
+    end
   end
 end

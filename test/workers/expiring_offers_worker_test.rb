@@ -7,7 +7,7 @@ describe ExpiringOffersWorker do
     now = Time.now
     Timecop.freeze(now - 1.day)
     expiring = FactoryGirl.create :offer, :approved, expires_at: now
-    later = FactoryGirl.create :offer, :approved, expires_at: now + 1.day
+    later = FactoryGirl.create :offer, :approved, expires_at: now + 2.days
     Timecop.return
     worker.perform
     expiring.reload.approved.must_equal false

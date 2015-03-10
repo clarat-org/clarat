@@ -39,7 +39,7 @@
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
-        = t 'offers.show.cta_report_errors'
+        = t 'shared.show.cta_report_errors'
 
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true

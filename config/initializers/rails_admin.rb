@@ -27,7 +27,7 @@ RailsAdmin.config do |config|
     Organization Website Location FederalState Offer Opening Category Filter
     LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact
     Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation
+    OrganizationConnection SearchLocation ContactPerson
   )
 
   config.actions do

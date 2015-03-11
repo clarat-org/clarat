@@ -5,6 +5,8 @@ class ExpiringOffersWorker
   recurrence { daily.hour_of_day(1) }
 
   def perform
+    puts Time.now.beginning_of_day
+    puts Time.now.end_of_day
     expiring =
       Offer.where(
         'expires_at >= ?', Time.now.beginning_of_day
@@ -16,6 +18,5 @@ class ExpiringOffersWorker
     puts 'unapproving:'
     expiring.find_each { |offer| puts offer.id }
     expiring.update_all approved: false
-    puts 'unapproved'
   end
 end

@@ -4,8 +4,11 @@ describe ExpiringOffersWorker do
   let(:worker) { ExpiringOffersWorker.new }
 
   it 'sends an email for offers that expire today and unapproves them' do
+    puts 'This is the one!'
     now = Time.now
+    puts now
     Timecop.freeze(now - 1.day)
+    puts Time.now
     expiring = FactoryGirl.create :offer, :approved, expires_at: now
     later = FactoryGirl.create :offer, :approved, expires_at: now + 2.days
     Timecop.return

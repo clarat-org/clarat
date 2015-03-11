@@ -37,6 +37,7 @@ feature 'Admin Backend' do
         fill_in 'organization_name', with: 'testorganisation'
         fill_in 'organization_description', with: 'testdescription'
         select 'e.V.', from: 'organization_legal_form'
+        check 'organization_renewed'
 
         click_button 'Speichern'
         page.must_have_content 'testorganisation'

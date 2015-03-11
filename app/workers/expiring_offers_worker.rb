@@ -15,8 +15,10 @@ class ExpiringOffersWorker
       )
 
     OfferMailer.delay.expiring_mail expiring.count, expiring.pluck(:id)
+    puts 'all:'
+    Offer.all.each { |offer| pp offer.attributes }
     puts 'unapproving:'
-    expiring.find_each { |offer| puts offer.id }
+    expiring.find_each { |offer| pp offer.attributes }
     expiring.update_all approved: false
   end
 end

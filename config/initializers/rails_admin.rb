@@ -64,7 +64,7 @@ RailsAdmin.config do |config|
     list do
       field :offers_count
       field :name
-      field :legal_form
+      field :renewed
       field :completed
       field :approved
       field :creator
@@ -95,6 +95,7 @@ RailsAdmin.config do |config|
 
     field :websites
     field :completed
+    field :renewed
     field :approved
 
     show do

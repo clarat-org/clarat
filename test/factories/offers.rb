@@ -9,7 +9,6 @@ FactoryGirl.define do
     encounter do
       Offer.enumerized_attributes.attributes['encounter'].values.sample
     end
-    frequent_changes { Faker::Boolean.maybe }
     completed false
     approved false
     approved_at nil

@@ -170,6 +170,7 @@ RailsAdmin.config do |config|
       field :completed
       field :approved
       field :creator
+      field :expires_at
       field :organizations
       field :created_by
     end
@@ -190,7 +191,6 @@ RailsAdmin.config do |config|
     field :contact_people
     field :fax
     field :encounter
-    field :frequent_changes
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -226,6 +226,7 @@ RailsAdmin.config do |config|
     field :keywords do
       inverse_of :offers
     end
+    field :expires_at
     field :completed
     field :approved
     field :renewed

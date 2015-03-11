@@ -3,8 +3,8 @@ require 'ffaker'
 FactoryGirl.define do
   factory :location do
     # required
-    street 'Foobar 1'
-    zip '12345'
+    sequence(:street) { |n| "Foobar #{n}" }
+    sequence(:zip) { |n| n.to_s.rjust(5, '0') }
     city 'Berlin'
     hq { rand(9) == 0 }
 
@@ -12,7 +12,7 @@ FactoryGirl.define do
     longitude { rand 13.25..13.6 }
 
     # optional
-    name { maybe Faker::NameDE.name }
+    sequence(:name) { |n| maybe(Faker::NameDE.name + n.to_s) }
     addition do
       maybe [
         "#{rand(1..3)}. Hinterhof",

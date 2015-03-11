@@ -4,5 +4,6 @@ basic:
   description: foobar
   next_steps: foobar
   encounter: independent
+  expires_at: 9999-01-01
   completed: t
   approved: t

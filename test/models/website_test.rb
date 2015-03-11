@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe Website do
-
   let(:website) do
     Website.new(host: 'own', url: 'http://www.clarat.org/example')
   end

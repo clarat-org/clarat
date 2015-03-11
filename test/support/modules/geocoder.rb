@@ -18,14 +18,13 @@ Geocoder::Lookup::Test.add_stub( # stub for non-fixture location query
   ]
 )
 
-Geocoder::Lookup::Test.add_stub( # stub for standard FactoryGirl address
-  'Foobar 1, 12345 Berlin Berlin', [
-    {
-      'latitude'  => 1,
-      'longitude' => 1
-    }
-  ]
-)
+# use above stub for any Location#geocode calls
+class Location
+  geocoded_by :_alt_addr
+  def _alt_addr
+    'Foobar'
+  end
+end
 
 Geocoder::Lookup::Test.add_stub( # stub for non-existant location queries
   'Bielefeld', [

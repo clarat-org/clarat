@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe FederalState do
-
   let(:federal_state) { FederalState.new }
 
   subject { federal_state }

@@ -26,21 +26,6 @@ class Opening < ActiveRecord::Base
 
   # Methods
 
-  # rails_admin can only sort by a single field, that's why we are creating an
-  # imaginary time stamp that handles the sorting
-  def calculate_sort_value
-    return nil unless day
-    day_value = DAYS.index(day) + 1
-    dummy_time =
-      if open && close
-        Time.new(1970, 1, day_value, open.hour, open.min,
-                 close.hour + close.min / 100.0, 0)
-      else
-        Time.new(1970, 1, day_value, 0, 0, 0, 0)
-      end
-    self.sort_value = (dummy_time.to_f * 100).to_i
-  end
-
   def concat_day_and_times
     if day && open && close
       "#{day.titleize} #{open.strftime('%H:%M')}-#{close.strftime('%H:%M')}"
@@ -56,5 +41,25 @@ class Opening < ActiveRecord::Base
 
   def display_string
     "#{open.strftime('%k:%M')} Uhr - #{close.strftime('%k:%M')} Uhr"
+  end
+
+  # rails_admin can only sort by a single field, that's why we are creating an
+  # imaginary time stamp that handles the sorting
+  def calculate_sort_value
+    return nil unless day
+    dummy_time = dummy_time_for_day DAYS.index(day) + 1
+    self.sort_value = (dummy_time.to_f * 100).to_i
+  end
+
+  private
+
+  # generate imaginary timestamp for a specific day
+  def dummy_time_for_day day_nr
+    if open && close
+      Time.new(1970, 1, day_nr, open.hour, open.min,
+               close.hour + close.min / 100.0, 0)
+    else
+      Time.new(1970, 1, day_nr, 0, 0, 0, 0)
+    end
   end
 end

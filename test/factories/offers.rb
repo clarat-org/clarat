@@ -6,7 +6,6 @@ FactoryGirl.define do
     name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
-    frequent_changes { Faker::Boolean.maybe }
     completed false
     approved false
     approved_at nil
@@ -17,7 +16,7 @@ FactoryGirl.define do
 
     # associations
 
-    ignore do
+    transient do
       organization_count 1
       contact_person_count 1
       website_count { rand(0..3) }

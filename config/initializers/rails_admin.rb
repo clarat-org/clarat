@@ -27,7 +27,7 @@ RailsAdmin.config do |config|
     Organization Website Location FederalState Offer Opening Category Filter
     LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact
     Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation
+    OrganizationConnection SearchLocation ContactPerson
   )
 
   config.actions do
@@ -64,7 +64,7 @@ RailsAdmin.config do |config|
     list do
       field :offers_count
       field :name
-      field :legal_form
+      field :renewed
       field :completed
       field :approved
       field :creator
@@ -95,6 +95,7 @@ RailsAdmin.config do |config|
 
     field :websites
     field :completed
+    field :renewed
     field :approved
 
     show do
@@ -127,7 +128,6 @@ RailsAdmin.config do |config|
       field :organization
       field :zip
       field :federal_state
-      field :completed
       field :display_name
     end
     weight(-2)
@@ -145,8 +145,6 @@ RailsAdmin.config do |config|
     field :longitude do
       read_only true
     end
-    field :completed
-
     show do
       field :offers
       field :display_name
@@ -173,6 +171,7 @@ RailsAdmin.config do |config|
       field :completed
       field :approved
       field :creator
+      field :expires_at
       field :organizations
       field :created_by
     end
@@ -195,7 +194,6 @@ RailsAdmin.config do |config|
     field :encounter do
       read_only true
     end
-    field :frequent_changes
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -231,6 +229,7 @@ RailsAdmin.config do |config|
     field :keywords do
       inverse_of :offers
     end
+    field :expires_at
     field :completed
     field :approved
     field :renewed
@@ -315,7 +314,7 @@ RailsAdmin.config do |config|
     list do
       field :id
       field :name
-      field :code
+      field :identifier
       field :offers
     end
   end

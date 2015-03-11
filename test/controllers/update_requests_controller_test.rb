@@ -21,7 +21,7 @@ describe UpdateRequestsController do
     it 'should not work with invalid email' do
       assert_difference('UpdateRequest.count', 0) do
         post :create, locale: 'de', format: :js,
-             update_request: { email: 'not a mail' }
+                      update_request: { email: 'not a mail' }
       end
       assert_template :new
     end

@@ -22,7 +22,7 @@ FactoryGirl.define do
     end
 
     # associations
-    ignore do
+    transient do
       website_count { rand(0..3) }
     end
 

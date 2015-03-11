@@ -21,7 +21,7 @@ describe SubscriptionsController do
     it 'should not work with invalid email' do
       assert_difference('Subscription.count', 0) do
         post :create, locale: 'de', format: :js,
-             subscription: { email: 'not a mail' }
+                      subscription: { email: 'not a mail' }
       end
       assert_template :new
     end

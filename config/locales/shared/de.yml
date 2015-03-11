@@ -23,3 +23,7 @@ de:
     banner:
       text: Achtung, clarat.org befindet sich noch im Aufbau!
       link: mehr erfahren ›
+    show:
+      cta_report_errors: |
+        Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
+        lass es uns bitte wissen!

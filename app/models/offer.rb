@@ -5,7 +5,7 @@ class Offer < ActiveRecord::Base
   include Validations, Search, Statistics
 
   # Concerns
-  include Creator, Approvable
+  include Creator, Approvable, CustomValidatable
 
   # Associtations
   belongs_to :location, inverse_of: :offers

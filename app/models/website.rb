@@ -2,9 +2,9 @@ class Website < ActiveRecord::Base
   # associtations
   has_many :hyperlinks
   has_many :organizations, through: :hyperlinks,
-           source: :linkable, source_type: 'Organization'
+                           source: :linkable, source_type: 'Organization'
   has_many :offers, through: :hyperlinks,
-           source: :linkable, source_type: 'Offer'
+                    source: :linkable, source_type: 'Offer'
 
   # Enumerization
   extend Enumerize
@@ -13,7 +13,7 @@ class Website < ActiveRecord::Base
   # Validations
   validates :host, presence: true
   validates :url, format: %r{\Ahttps?://\S+\.\S+\z}, uniqueness: true,
-    presence: true
+                  presence: true
 
   # Scopes
   scope :own, -> { where(host: 'own') }

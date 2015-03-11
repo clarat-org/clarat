@@ -19,7 +19,7 @@ FactoryGirl.define do
 
     # associations
 
-    ignore do
+    transient do
       organization_count 1
       contact_person_count 1
       website_count { rand(0..3) }

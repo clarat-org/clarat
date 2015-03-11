@@ -12,12 +12,16 @@ de:
       only_approved_organizations: |
         darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot
         bestätigt werden kann. Unbestätigt: %{list}.
+      approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
+      incomplete: |
+        kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
+    organization:
+      approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
+      incomplete: |
+        kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
     contact_person:
       incomplete: |
         Entweder "Name", "Local Number 1", oder "Email" muss ausgefüllt werden.
     shared:
-      approved_by_creator: kann nicht von dem/der Ersteller/in gesetzt werden
-      incomplete: |
-        kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
       max_count: dürfen nicht mehr als %{max} sein.
       later_date: muss mindestens einen Tag in der Zukunft liegen

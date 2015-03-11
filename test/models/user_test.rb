@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe User do
-
   let(:user) { User.new }
 
   subject { user }

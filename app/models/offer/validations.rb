@@ -38,19 +38,21 @@ class Offer
         fail_validation field, "needs_#{field}" if send(field).count == 0
       end
 
-      def fail_validation field, i18n_selector, options = {}
-        errors[field] = I18n.t("validations.offer.#{i18n_selector}", options)
-      end
-
       # Custom Validation: Ensure selected organization is the same as the
       # selected location's organization
       def location_fits_organization
         ids = organizations.pluck(:id)
         if location && !ids.include?(location.organization_id)
-          errors.add(:location_id, I18n.t(
-            'validations.offer.location_fits_organization.location_error'))
-          errors.add(:organizations, I18n.t(
-            'validations.offer.location_fits_organization.organization_error'))
+          errors.add(
+            :location_id,
+            I18n.t(
+              'validations.offer.location_fits_organization.location_error'
+            ))
+          errors.add(
+            :organizations,
+            I18n.t(
+              'validations.offer.location_fits_organization.organization_error'
+            ))
         end
       end
     end

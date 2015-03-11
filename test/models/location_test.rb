@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe Location do
-
   # Using 'let' because 'ArgumentError: let 'location' cannot override a method in Minitest::Spec. Please use another name.'
   let(:loc) { Location.new }
 
@@ -26,10 +25,10 @@ describe Location do
 
   describe 'validations' do
     describe 'always' do
-      it { subject.must ensure_length_of(:name).is_at_most 100 }
+      it { subject.must validate_length_of(:name).is_at_most 100 }
       it { subject.must validate_presence_of :street }
       it { subject.must validate_presence_of :zip }
-      it { subject.must ensure_length_of(:zip).is_equal_to 5 }
+      it { subject.must validate_length_of(:zip).is_equal_to 5 }
       it { subject.must validate_presence_of :city }
       it { subject.must validate_presence_of :organization_id }
       it { subject.must validate_presence_of :federal_state_id }

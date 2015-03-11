@@ -2,7 +2,6 @@ require_relative '../test_helper'
 include Warden::Test::Helpers
 
 feature 'Search Form' do
-
   scenario 'Empty search works' do
     WebMock.enable!
     visit root_path

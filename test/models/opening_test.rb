@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe Opening do
-
   let(:opening) do
     Opening.new(
       name: 'mon 00:00-01:00',

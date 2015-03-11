@@ -17,10 +17,10 @@ describe ContactPerson do
   describe 'validations' do
     describe 'always' do
       it { subject.must validate_presence_of(:organization_id) }
-      it { subject.must ensure_length_of(:area_code_1).is_at_most 6 }
-      it { subject.must ensure_length_of(:local_number_1).is_at_most 32 }
-      it { subject.must ensure_length_of(:area_code_2).is_at_most 6 }
-      it { subject.must ensure_length_of(:local_number_2).is_at_most 32 }
+      it { subject.must validate_length_of(:area_code_1).is_at_most 6 }
+      it { subject.must validate_length_of(:local_number_1).is_at_most 32 }
+      it { subject.must validate_length_of(:area_code_2).is_at_most 6 }
+      it { subject.must validate_length_of(:local_number_2).is_at_most 32 }
 
       describe 'custom' do
         describe '#at_least_one_field_present' do

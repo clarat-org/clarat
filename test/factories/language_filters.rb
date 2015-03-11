@@ -6,7 +6,7 @@ FactoryGirl.define do
     identifier { name[0..2].downcase }
 
     # associations
-    ignore do
+    transient do
       offer_count 0
     end
     after :create do |language_filter, evaluator|

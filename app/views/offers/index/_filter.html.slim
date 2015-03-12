@@ -1,74 +1,79 @@
 form.filter-form
   h2.filter-form__headline = I18n.t 'offers.index.filter.headline'
 
-  fieldset.filter-form__fieldset
-    h3 = I18n.t 'offers.index.filter.contact.headline'
-    div
-      input.filter-form__checkbox[type="checkbox" id="personal_talk"]
-      label[for="personal_talk"] =  I18n.t 'offers.index.filter.contact.personal_talk'
-    div
-      input.filter-form__checkbox[type="checkbox" id="phone"]
-      label[for="phone"] =  I18n.t 'offers.index.filter.contact.phone'
-    div
-      input.filter-form__checkbox[type="checkbox" id="mail_chat"]
-      label[for="mail_chat"] =  I18n.t 'offers.index.filter.contact.mail_chat'
+  .col-form-inner
+    fieldset.filter-form__fieldset
+      h3.form__fieldset__headline = I18n.t 'offers.index.filter.contact.headline'
+      div
+        input.filter-form__checkbox[type="checkbox" id="personal_talk"]
+        label.filter-form__label[for="personal_talk"] =  I18n.t 'offers.index.filter.contact.personal_talk'
+      div
+        input.filter-form__checkbox[type="checkbox" id="phone"]
+        label.filter-form__label[for="phone"] =  I18n.t 'offers.index.filter.contact.phone'
+      div
+        input.filter-form__checkbox[type="checkbox" id="mail_chat"]
+        label.filter-form__label[for="mail_chat"] =  I18n.t 'offers.index.filter.contact.mail_chat'
 
-  fieldset.filter-form__fieldset
-    h3.form__fieldset__headline = I18n.t 'offers.index.filter.age.headline'
-    div
-      input.filter-form__checkbox[type="checkbox" id="babies"]
-      label[for="babies"] =  I18n.t 'offers.index.filter.age.babies'
-    div
-      input.filter-form__checkbox[type="checkbox" id="toddlers"] =
-      label[for="toddlers"] =  I18n.t 'offers.index.filter.age.toddlers'
-    div
-      input.filter-form__checkbox[type="checkbox" id="pupils"]
-      label[for="pupils"] =  I18n.t 'offers.index.filter.age.pupils'
-    div
-      input.filter-form__checkbox[type="checkbox" id="juveniles"]
-      label[for="juveniles"] =  I18n.t 'offers.index.filter.age.juveniles'
-    div
-      input.filter-form__checkbox[type="checkbox" id="young_adults"]
-      label[for="young_adults"] =  I18n.t 'offers.index.filter.age.young_adults'
-    div
-      input.filter-form__checkbox[type="checkbox" id="parents"]
-      label[for="parents"] =  I18n.t 'offers.index.filter.age.parents'
-    div
-      input.filter-form__checkbox[type="checkbox" id="grandparents"]
-      label[for="grandparents"] =  I18n.t 'offers.index.filter.age.grandparents'
+  .col-form-inner
+    fieldset.filter-form__fieldset
+      h3.form__fieldset__headline = I18n.t 'offers.index.filter.age.headline'
+      div
+        input.filter-form__checkbox[type="checkbox" id="babies"]
+        label.filter-form__label[for="babies"] =  I18n.t 'offers.index.filter.age.babies'
+      div
+        input.filter-form__checkbox[type="checkbox" id="toddlers"] =
+        label.filter-form__label[for="toddlers"] =  I18n.t 'offers.index.filter.age.toddlers'
+      div
+        input.filter-form__checkbox[type="checkbox" id="pupils"]
+        label.filter-form__label[for="pupils"] =  I18n.t 'offers.index.filter.age.pupils'
+      div
+        input.filter-form__checkbox[type="checkbox" id="juveniles"]
+        label.filter-form__label[for="juveniles"] =  I18n.t 'offers.index.filter.age.juveniles'
+      div
+        input.filter-form__checkbox[type="checkbox" id="young_adults"]
+        label.filter-form__label[for="young_adults"] =  I18n.t 'offers.index.filter.age.young_adults'
+      div
+        input.filter-form__checkbox[type="checkbox" id="parents"]
+        label.filter-form__label[for="parents"] =  I18n.t 'offers.index.filter.age.parents'
+      div
+        input.filter-form__checkbox[type="checkbox" id="grandparents"]
+        label.filter-form__label[for="grandparents"] =  I18n.t 'offers.index.filter.age.grandparents'
 
-  fieldset.filter-form__fieldset
-    h3.form__fieldset__headline = I18n.t 'offers.index.filter.target_group.headline'
-    div
-      input.filter-form__checkbox[type="checkbox" id="male"]
-      label[for="male"] =  I18n.t 'offers.index.filter.target_group.male'
-    div
-      input.filter-form__checkbox[type="checkbox" id="female"]
-      label[for="female"] =  I18n.t 'offers.index.filter.target_group.female'
-    div
-      input.filter-form__checkbox[type="checkbox" id="single_parent"]
-      label[for="single_parent"] =  I18n.t 'offers.index.filter.target_group.single_parent'
-    div
-      input.filter-form__checkbox[type="checkbox" id="patchwork"]
-      label[for="patchwork"] =  I18n.t 'offers.index.filter.target_group.patchwork'
-    div
-      input.filter-form__checkbox[type="checkbox" id="rainbow"]
-      label[for="rainbow"] =  I18n.t 'offers.index.filter.target_group.rainbow'
-    div
-      input.filter-form__checkbox[type="checkbox" id="lgbt"]
-      label[for="lgbt"] =  I18n.t 'offers.index.filter.target_group.lgbt'
+  .col-form-inner
+    fieldset.filter-form__fieldset
+      h3.form__fieldset__headline = I18n.t 'offers.index.filter.target_group.headline'
+      div
+        input.filter-form__checkbox[type="checkbox" id="male"]
+        label.filter-form__label[for="male"] =  I18n.t 'offers.index.filter.target_group.male'
+      div
+        input.filter-form__checkbox[type="checkbox" id="female"]
+        label.filter-form__label[for="female"] =  I18n.t 'offers.index.filter.target_group.female'
+      div
+        input.filter-form__checkbox[type="checkbox" id="single_parent"]
+        label.filter-form__label[for="single_parent"] =  I18n.t 'offers.index.filter.target_group.single_parent'
+      div
+        input.filter-form__checkbox[type="checkbox" id="patchwork"]
+        label.filter-form__label[for="patchwork"] =  I18n.t 'offers.index.filter.target_group.patchwork'
+      div
+        input.filter-form__checkbox[type="checkbox" id="rainbow"]
+        label.filter-form__label[for="rainbow"] =  I18n.t 'offers.index.filter.target_group.rainbow'
+      div
+        input.filter-form__checkbox[type="checkbox" id="lgbt"]
+        label.filter-form__label[for="lgbt"] =  I18n.t 'offers.index.filter.target_group.lgbt'
 
-  fieldset.filter-form__fieldset
-    h3.form__fieldset__headline = I18n.t 'offers.index.filter.languages.headline'
-    select
-       option Foo
-       option Bar
-       option Baz
+  .col-form-inner
+    fieldset.filter-form__fieldset
+      h3.form__fieldset__headline = I18n.t 'offers.index.filter.languages.headline'
+      / @todo loop through provided language collection, remove foo bar baz
+      select
+         option Foo
+         option Bar
+         option Baz
 
-  fieldset.filter-form__fieldset
-    h3.form__fieldset__headline = I18n.t 'offers.index.filter.opening_hours.headline'
-    div
-      input.filter-form__checkbox[type="checkbox" id="now"]
-      label[for="now"] =  I18n.t 'offers.index.filter.opening_hours.now'
+    fieldset.filter-form__fieldset
+      h3.form__fieldset__headline = I18n.t 'offers.index.filter.opening_hours.headline'
+      div
+        input.filter-form__checkbox[type="checkbox" id="now"]
+        label.filter-form__label[for="now"] =  I18n.t 'offers.index.filter.opening_hours.now'
 
-  button[type="submit"] = I18n.t 'offers.index.filter.submit'
+    button[type="submit"] = I18n.t 'offers.index.filter.submit'

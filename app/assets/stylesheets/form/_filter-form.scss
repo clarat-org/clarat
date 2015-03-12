@@ -1,0 +1,42 @@
+// ---------------------------------------------------------------
+//
+//  Search result filter form
+//
+// ---------------------------------------------------------------
+
+// @todo: custom styling select, radios
+// @todo: font-sizes
+// @todo: styling of submit button
+
+
+.filter-form {
+  @extend %clearfix;
+  padding: 20px 20px 0;
+  background: $brand_beige;
+}
+
+.filter-form__fieldset {
+  margin: 0;
+  padding: 0 10px 20px 0;
+  border: none;
+}
+
+.form__fieldset__headline {
+  color: $brand_blue;
+  margin: 0;
+}
+
+.col-form-inner {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
+.filter-form__checkbox,
+.filter-form__label {
+  cursor: pointer;
+}
+
+.filter-form__label {
+  padding-left: 6px;
+}

@@ -44,4 +44,5 @@ about supported directives.
 # = require modules/modal
 # = require modules/unavailable_location_overlay
 # = require modules/flash
+# = require modules/filter_form
 # = require modules/safari_fixes

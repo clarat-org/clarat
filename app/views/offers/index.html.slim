@@ -1,7 +1,4 @@
 .wrapper-inner
-  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                              facets: @facets,
-                                              search_cache: @search_cache
 
   main.content-main
     = render 'offers/index/search_results', offers: @offers
@@ -11,5 +8,8 @@
       p= I18n.t 'offers.index.unavailable_location_modal'
       = render '/update_requests/new', update_request: @update_request
 
+  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
+                                                facets: @facets,
+                                                search_cache: @search_cache
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

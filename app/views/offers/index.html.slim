@@ -1,6 +1,9 @@
 .wrapper-inner
 
   main.content-main
+
+    = render 'offers/index/filter'
+
     = render 'offers/index/search_results', offers: @offers
 
   - if @update_request

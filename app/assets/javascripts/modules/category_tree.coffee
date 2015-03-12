@@ -1,5 +1,5 @@
 clickHandler = ->
-  categoryLink = $('.Categories__listitem a')
+  categoryLink = $('.Categories__listitem.depth--0 > a')
   resultContainer = $('.content-main')
 
   categoryLink.on 'click', (event) ->
@@ -8,7 +8,9 @@ clickHandler = ->
 
     event.preventDefault()
 
-    $('.Categories__listitem .Categories__list li').removeClass 'active'
+    if that.parent(".depth--0").length
+      $('.depth--0.active').removeClass 'active'
+
     that.parent().addClass 'active'
 
     $.get url, (data) ->

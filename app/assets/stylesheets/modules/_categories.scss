@@ -15,7 +15,6 @@
   font-weight: 400;
 }
 
-// General styling
 .Categories__listitem {
   margin-top: 5px;
 
@@ -26,19 +25,11 @@
   &:first-child {
     margin-top: 0;
   }
-}
-
-.Categories__list .Categories__list {
-  padding-left: 30px;
-}
-
-// List visibility and hasChild-indicator
-.Categories__listitem {
 
   &,
   li,
   li li {
-    list-style: disc;
+    list-style: circle;
   }
 
   > .Categories__list {
@@ -54,40 +45,46 @@
       display: block;
     }
   }
+
+  &.depth--0 {
+    list-style: none;
+    margin-bottom: 20px;
+
+    .has-children {
+      list-style: disc;
+    }
+
+    .Categories__list {
+      margin: 8px 0;
+
+      a {
+        background: transparent;
+        color: $brand_brown;
+        font-weight: 400;
+        font-size: $base_font_size;
+      }
+    }
+
+    > a {
+      @extend %roboto_bold;
+      @extend %clarat_rounding_start;
+      @extend %clarat_rounding_end;
+      display: block;
+      min-height: 32px;
+      background: $brand_blue;
+      color: $brand_white;
+      font-size: 18px;
+      padding: 4px 10px;
+    }
+
+    &.active > a {
+      background: $brand_brown;
+    }
+  }
 }
 
-// First level item
-.Categories > .Categories__list > .Categories__listitem {
-  list-style: none;
-  margin-bottom: 20px;
-
-  > a {
-    @extend %roboto_bold;
-    @extend %clarat_rounding_start;
-    @extend %clarat_rounding_end;
-    display: block;
-    min-height: 32px;
-    background: $brand_blue;
-    color: $brand_white;
-    font-size: 18px;
-    padding: 4px 10px;
-  }
-
-  &.active > a {
-    background: $brand_brown;
-  }
+.Categories__list .Categories__list {
+  padding-left: 30px;
 }
 
-// Other
-.Categories .Categories__list .Categories__listitem .Categories__list {
-  margin: 8px 0;
-
-  a {
-    background: transparent;
-    color: $brand_brown;
-    font-weight: 400;
-    font-size: $base_font_size;
-
-  }
-}
 

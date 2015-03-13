@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------
+//
+//  Privacy Statement
+//
+// ---------------------------------------------------------------
+
+.privacy {
+  h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em
+  }
+
+  p {
+    line-height: inherit;
+  }
+
+  ol {
+    counter-reset: item;
+  }
+
+  li {
+    display: block;
+  }
+
+  li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+  }
+
+  .address {
+    p {
+      margin: 0;
+    }
+  }
+}
+

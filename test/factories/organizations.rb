@@ -3,17 +3,17 @@ require 'ffaker'
 FactoryGirl.define do
   factory :organization do
     # required
-    name { Faker::Lorem.words(rand(2..3)).join(' ').titleize }
-    description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
+    name { FFaker::Lorem.words(rand(2..3)).join(' ').titleize }
+    description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     legal_form do
       Organization.enumerized_attributes.attributes['legal_form'].values.sample
     end
-    charitable { Faker::Boolean.maybe }
-    completed { Faker::Boolean.maybe }
+    charitable { FFaker::Boolean.maybe }
+    completed { FFaker::Boolean.maybe }
     approved false
 
     # optional
-    comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..399] }
+    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     founded { maybe((1980..Time.now.year).to_a.sample) }
     umbrella do
       maybe(

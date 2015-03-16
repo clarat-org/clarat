@@ -44,6 +44,7 @@ class Ability
     can :history, :all
     can :show_in_app, :all
     can :clone, :all
-    can :nested_set, :all
+    # can :nested_set, :all
+    can :nestable, :all
   end
 end

@@ -11,7 +11,7 @@ class SearchForm
   attribute :query, String
   attribute :search_location, String
   attribute :generated_geolocation, String
-  attribute :categories, String
+  attribute :category, String
   attribute :exact_location
 
   def search page
@@ -19,8 +19,7 @@ class SearchForm
                                  page: page,
                                  aroundLatLng: geolocation,
                                  aroundRadius: search_radius,
-                                 tagFilters: categories,
-                                 facets: '*',
+                                 tagFilters: category,
                                  maxValuesPerFacet: 20,
                                  aroundPrecision: 500
   end
@@ -33,6 +32,15 @@ class SearchForm
                            aroundLatLng: geolocation,
                            aroundRadius: 25_000 # check later if accurate
       ).any?
+  end
+
+  def facet_search
+    @facet_hits ||= Offer.algolia_search query || '',
+                                         aroundLatLng: geolocation,
+                                         aroundRadius: search_radius,
+                                         facets: '*',
+                                         maxValuesPerFacet: 20,
+                                         aroundPrecision: 500
   end
 
   def geolocation
@@ -58,41 +66,70 @@ class SearchForm
     exact_location ? 100 : 50_000
   end
 
-  def categories_by_facet
-    categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
-    if categories_facet
-      categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
-      # categories_facet.each_with_object({}) do |(key, value), out|
-      #   (out[value] ||= []) << key
-      # end # safe invert; eg { 5 => 'foo' }
-      # inverted.values.flatten.uniq
-    else
-      []
+  def facet_counts_for_query
+    facet_search.facets['_tags']
+  end
+  # def categories_by_facet
+  #   categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
+  #   if categories_facet
+  #     categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
+  #     # categories_facet.each_with_object({}) do |(key, value), out|
+  #     #   (out[value] ||= []) << key
+  #     # end # safe invert; eg { 5 => 'foo' }
+  #     # inverted.values.flatten.uniq
+  #   else
+  #     []
+  #   end
+  # end
+
+  # find the actual category object and return it with ancestors
+  def category_with_ancestors
+    unless category.blank?
+      @category_with_ancestors ||=
+        Category.find_by_name(category).self_and_ancestors.reverse
     end
   end
 
-  # toggles category on or off
-  def toggle category
-    newcategories = category_array
-    newcategories << category unless newcategories.delete(category)
-    {
-      query: query, categories: newcategories.join(','),
-      search_location: search_location
-    }
-  end
-
-  # @return [Boolean]
-  def includes_category category
-    self.category_array.include? category
-  end
-
-  def category_array
-    if categories
-      categories.split(',').map(&:strip)
-    else
-      []
+  def category_in_focus? name
+    if category_with_ancestors
+      @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
+      @category_with_ancestor_names.include? name
     end
   end
+
+  # link hash that focuses on a specific category
+  def focus category
+    name = category.is_a?(String) ? category : category.name
+    { query: query, category: name, search_location: search_location }
+  end
+
+  # link hash with empty query
+  def empty
+    { query: '', category: category, search_location: search_location }
+  end
+
+  # # toggles category on or off
+  # def toggle category
+  #   newcategories = category_array
+  #   newcategories << category unless newcategories.delete(category)
+  #   {
+  #     query: query, categories: newcategories.join(','),
+  #     search_location: search_location
+  #   }
+  # end
+
+  # # @return [Boolean]
+  # def includes_category category
+  #   self.category_array.include? category
+  # end
+
+  # def categories_array
+  #   if category
+  #     categories.split(',').map(&:strip)
+  #   else
+  #     []
+  #   end
+  # end
 
   def hit_count
     @hits.raw_answer['nbHits']

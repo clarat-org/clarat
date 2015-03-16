@@ -1,0 +1,15 @@
+.Listing-results
+  h2.Listing-results__headline
+    == search_results_info_headline search_cache
+
+  = link_to '#categories', class: 'jump-to-categories' do
+    i.fa.fa-filter
+    = I18n.t('offers.index.navigate_to_categories')
+
+  ul.search-results.Listing-results__list
+    - offers.each do |offer|
+      = render 'offers/index/single_search_result', offer: offer
+  = paginate offers
+
+/ prepare ajax spinner
+i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner

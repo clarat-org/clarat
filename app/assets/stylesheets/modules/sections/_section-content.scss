@@ -7,11 +7,12 @@
 // Layout wrappers
 
 .section-wrapper-major {
-  @extend %layout-col-61;
+  @extend %layout-col-69;
+  margin-right: 2.5%;
 }
 
 .section-wrapper-minor {
-  @extend %layout-col-35;
+  @extend %layout-col-29;
 }
 
 .section-wrapper-major,

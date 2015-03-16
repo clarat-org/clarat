@@ -6,17 +6,17 @@ FactoryGirl.define do
     url do
       case host
       when 'facebook'
-        "https://www.facebook.com/#{Faker::Internet.domain_word}"
+        "https://www.facebook.com/#{FFaker::Internet.domain_word}"
       when 'twitter'
-        "https://www.twitter.com/#{Faker::Internet.domain_word}"
+        "https://www.twitter.com/#{FFaker::Internet.domain_word}"
       when 'youtube'
-        "https://www.youtube.com/channel/#{Faker::Internet.domain_word}"
+        "https://www.youtube.com/channel/#{FFaker::Internet.domain_word}"
       when 'gplus'
-        "https://plus.google.com/#{Faker::Internet.domain_word}"
+        "https://plus.google.com/#{FFaker::Internet.domain_word}"
       when 'pinterest'
-        "https://www.pinterest.com/#{Faker::Internet.domain_word}"
+        "https://www.pinterest.com/#{FFaker::Internet.domain_word}"
       else # when 'own', 'other'
-        Faker::Internet.uri(%w(http https).sample)
+        FFaker::Internet.uri(%w(http https).sample)
       end
     end
 

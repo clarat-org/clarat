@@ -1,6 +1,7 @@
 .wrapper-inner
   main.content-main
-    = render 'offers/index/search_results', offers: @offers
+    = render 'offers/index/search_results', offers: @offers,
+                                            search_cache: @search_cache
 
   - if @update_request
     = modal_for 'unavailable_location_overlay' do
@@ -8,7 +9,7 @@
       = render '/update_requests/new', update_request: @update_request
 
   = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                                facets: @facets,
-                                                search_cache: @search_cache
+                                              facets: @facets,
+                                              search_cache: @search_cache
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

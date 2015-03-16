@@ -20,7 +20,6 @@ class SearchForm
                                  aroundLatLng: geolocation,
                                  aroundRadius: search_radius,
                                  tagFilters: category,
-                                 facets: '*',
                                  maxValuesPerFacet: 20,
                                  aroundPrecision: 500
   end
@@ -33,6 +32,15 @@ class SearchForm
                            aroundLatLng: geolocation,
                            aroundRadius: 25_000 # check later if accurate
       ).any?
+  end
+
+  def facet_search
+    @facet_hits ||= Offer.algolia_search query || '',
+                                         aroundLatLng: geolocation,
+                                         aroundRadius: search_radius,
+                                         facets: '*',
+                                         maxValuesPerFacet: 20,
+                                         aroundPrecision: 500
   end
 
   def geolocation
@@ -58,18 +66,21 @@ class SearchForm
     exact_location ? 100 : 50_000
   end
 
-  def categories_by_facet
-    categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
-    if categories_facet
-      categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
-      # categories_facet.each_with_object({}) do |(key, value), out|
-      #   (out[value] ||= []) << key
-      # end # safe invert; eg { 5 => 'foo' }
-      # inverted.values.flatten.uniq
-    else
-      []
-    end
+  def facet_counts_for_query
+    facet_search.facets['_tags']
   end
+  # def categories_by_facet
+  #   categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
+  #   if categories_facet
+  #     categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
+  #     # categories_facet.each_with_object({}) do |(key, value), out|
+  #     #   (out[value] ||= []) << key
+  #     # end # safe invert; eg { 5 => 'foo' }
+  #     # inverted.values.flatten.uniq
+  #   else
+  #     []
+  #   end
+  # end
 
   # find the actual category object and return it with ancestors
   def category_with_ancestors

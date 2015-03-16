@@ -38,7 +38,7 @@ class OffersController < ApplicationController
   def assign_search_result_instance_variables
     @offers = build_search_cache.search params[:page]
     @category_tree = Category.hash_tree
-    @facets = Hash[@search_cache.categories_by_facet]
+    @facets = @search_cache.facet_counts_for_query
   end
 
   # Initialize Search Form Object with given params

@@ -34,6 +34,7 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
+# = require modules/ajax_replace
 # = require modules/geolocation
 # = require modules/query_autocomplete
 # = require modules/places_autocomplete
@@ -45,3 +46,4 @@ about supported directives.
 # = require modules/unavailable_location_overlay
 # = require modules/flash
 # = require modules/safari_fixes
+# = require modules/category_tree

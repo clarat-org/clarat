@@ -1,20 +1,17 @@
 clickHandler = ->
-  categoryLink = $('.Categories__listitem.depth--0 > a')
   resultContainer = $('.content-main')
 
-  categoryLink.on 'click', (event) ->
+  $('.Categories__list a').on 'click', (event) ->
     that = $(this)
     url = that.attr 'href'
 
+    $('.Categories__list').find('.active').removeClass('active')
+    that.parents('li').addClass 'active'
+
+    Clarat.ajaxReplace resultContainer, url
+
     event.preventDefault()
-
-    if that.parent(".depth--0").length
-      $('.depth--0.active').removeClass 'active'
-
-    that.parent().addClass 'active'
-
-    $.get url, (data) ->
-      resultContainer.html data
+    false
 
 $(document).ready clickHandler
 $(document).on 'page:load', clickHandler

@@ -1,0 +1,19 @@
+.Ajax {
+  position: relative; // for spinners absolute positioning
+}
+
+.Ajax > div {
+  opacity: 0.6;
+}
+
+.Ajax__spinner {
+  display: none !important;
+}
+
+.Ajax .Ajax__spinner {
+  display: inline-block !important;
+  opacity: 0.8;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

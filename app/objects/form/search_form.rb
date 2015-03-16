@@ -80,7 +80,7 @@ class SearchForm
   end
 
   def category_in_focus? name
-   if category_with_ancestors
+    if category_with_ancestors
       @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
       @category_with_ancestor_names.include? name
     end
@@ -90,6 +90,11 @@ class SearchForm
   def focus category
     name = category.is_a?(String) ? category : category.name
     { query: query, category: name, search_location: search_location }
+  end
+
+  # link hash with empty query
+  def empty
+    { query: '', category: category, search_location: search_location }
   end
 
   # # toggles category on or off

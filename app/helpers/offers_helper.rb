@@ -16,7 +16,12 @@ module OffersHelper
       output += " in #{breadcrumb_path search_cache}"
     end
     unless search_cache.query.blank?
-      output += ": &bdquo;#{search_cache.query}&ldquo;"
+      output += ": &bdquo;#{search_cache.query}&ldquo; "
+      unless search_cache.category.blank?
+        output += link_to offers_path(search_form: search_cache.empty) do
+          '<i class="fa fa-times-circle"></i>'.html_safe
+        end
+      end
     end
     output + " (#{search_cache.search_location})"
   end

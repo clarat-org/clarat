@@ -2,8 +2,8 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :contact do
-    name { Faker::NameDE.name }
-    email { Faker::Internet.email }
+    name { FFaker::NameDE.name }
+    email { FFaker::Internet.email }
     message 'MyString'
     url 'MyString'
 

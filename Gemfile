@@ -72,7 +72,8 @@ gem 'rails_admin_clone' # must come before rails_admin to work correctly
 gem 'rails_admin'
 gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
 # path: '../rails_admin_statistics' #
-gem 'rails_admin_nested_set'
+# gem 'rails_admin_nested_set'
+gem 'rails_admin_nestable'
 gem 'cancan' # role based auth for rails_admin
 
 gem 'devise'
@@ -89,7 +90,8 @@ gem 'dynamic_sitemaps'
 
 # Model enhancements
 gem 'sanitize' # parser based sanitization
-gem 'awesome_nested_set'
+# gem 'awesome_nested_set'
+gem 'closure_tree'
 
 # search
 gem 'algoliasearch-rails'

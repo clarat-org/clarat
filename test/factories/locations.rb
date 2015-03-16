@@ -12,7 +12,7 @@ FactoryGirl.define do
     longitude { rand 13.25..13.6 }
 
     # optional
-    sequence(:name) { |n| maybe(Faker::NameDE.name + n.to_s) }
+    sequence(:name) { |n| maybe(FFaker::NameDE.name + n.to_s) }
     addition do
       maybe [
         "#{rand(1..3)}. Hinterhof",
@@ -26,7 +26,7 @@ FactoryGirl.define do
     federal_state { FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin') }
 
     trait :fake_address do
-      street { Faker::AddressDE.street_address }
+      street { FFaker::AddressDE.street_address }
       zip { (10_000..14_100).to_a.sample }
     end
 

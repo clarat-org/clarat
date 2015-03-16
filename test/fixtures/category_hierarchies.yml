@@ -1,0 +1,24 @@
+1:
+  ancestor_id: 1
+  descendant_id: 1
+  generations: 0
+2:
+  ancestor_id: 3
+  descendant_id: 3
+  generations: 0
+3:
+  ancestor_id: 1
+  descendant_id: 3
+  generations: 1
+4:
+  ancestor_id: 4
+  descendant_id: 4
+  generations: 0
+5:
+  ancestor_id: 1
+  descendant_id: 4
+  generations: 1
+6:
+  ancestor_id: 2
+  descendant_id: 2
+  generations: 0

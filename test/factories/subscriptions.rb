@@ -2,6 +2,6 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :subscription do
-    email { Faker::Internet.email }
+    email { FFaker::Internet.email }
   end
 end

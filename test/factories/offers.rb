@@ -3,9 +3,9 @@ require 'ffaker'
 FactoryGirl.define do
   factory :offer do
     # required fields
-    name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
-    description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
-    next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
+    name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
+    description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
+    next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
       Offer.enumerized_attributes.attributes['encounter'].values.sample
     end
@@ -14,8 +14,8 @@ FactoryGirl.define do
     approved_at nil
 
     # optional fields
-    comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
-    fax { maybe Faker.numerify('#' * rand(7..11)) }
+    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..799] }
+    fax { maybe FFaker.numerify('#' * rand(7..11)) }
 
     # associations
 
@@ -59,11 +59,7 @@ FactoryGirl.define do
       else
         evaluator.category_count.times do
           offer.categories << (
-            if Category.count != 0 && rand(2) == 0
-              Category.select(:id).all.sample
-            else
-              FactoryGirl.create(:category)
-            end
+            Category.select(:id).all.sample
           )
         end
       end

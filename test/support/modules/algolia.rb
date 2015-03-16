@@ -9,7 +9,9 @@ module AlgoliaStubber
       "nbPages" : 0,
       "hitsPerPage" : 10,
       "processingTimeMS" : 1,
-      "facets" : {},
+      "facets" : {
+        "_tags": {}
+      },
       "query" : "",
       "params" : "query="
     }

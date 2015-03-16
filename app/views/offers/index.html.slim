@@ -1,35 +1,15 @@
 .wrapper-inner
   main.content-main
-    .Listing-results
-      h2.Listing-results__headline
-        = t('offers.shared.offers', count: @search_cache.hit_count)
-        - categories = @search_cache.categories
-        - unless categories.blank?
-          |  (
-          = t 'offers.shared.category_filter'
-          | :
-          =< categories
-          | )
+    = render 'offers/index/search_results', offers: @offers,
+                                            search_cache: @search_cache
 
-      = link_to '#categories', class: 'jump-to-categories' do
-        = I18n.t('offers.index.navigate_to_categories')
+  - if @update_request
+    = modal_for 'unavailable_location_overlay' do
+      p= I18n.t 'offers.index.unavailable_location_modal'
+      = render '/update_requests/new', update_request: @update_request
 
-      ul.search-results.Listing-results__list
-        - @offers.each do |offer|
-          = render 'offers/index/single_search_result', offer: offer
-      = paginate @offers
-
-      - if @update_request
-        = modal_for 'unavailable_location_overlay' do
-          p= I18n.t 'offers.index.unavailable_location_modal'
-          = render '/update_requests/new', update_request: @update_request
-
-  aside.aside-standard
-
-    = render 'offers/index/categories_sidebar', categories: @categories,
-                                                search_cache: @search_cache
-
-    = render 'offers/index/map_sidebar', markers: @markers, position: @position
-
+  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
+                                              facets: @facets,
+                                              search_cache: @search_cache
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

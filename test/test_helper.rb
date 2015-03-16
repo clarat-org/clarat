@@ -82,6 +82,21 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+class MiniTest::Spec
+  before :each do
+    DatabaseCleaner.start
+  end
+
+  after :each do
+    DatabaseCleaner.clean
+
+    $suite_passing = false if failure
+  end
+
+  # Add more helper methods to be used by all tests here...
+end
+
 $suite_passing = true
 
 DatabaseCleaner.strategy = :transaction

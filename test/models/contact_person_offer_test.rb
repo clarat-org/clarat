@@ -6,7 +6,7 @@ describe ContactPersonOffer do
 
   describe 'validations' do
     describe 'always' do
-      it { subject.must validate_presence_of(:offer_id) }
+      # it { subject.must validate_presence_of(:offer_id) }
       it { subject.must validate_presence_of(:contact_person_id) }
     end
   end

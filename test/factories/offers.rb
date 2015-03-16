@@ -9,7 +9,6 @@ FactoryGirl.define do
     encounter do
       Offer.enumerized_attributes.attributes['encounter'].values.sample
     end
-    frequent_changes { Faker::Boolean.maybe }
     completed false
     approved false
     approved_at nil
@@ -20,7 +19,7 @@ FactoryGirl.define do
 
     # associations
 
-    ignore do
+    transient do
       organization_count 1
       contact_person_count 1
       website_count { rand(0..3) }
@@ -74,8 +73,9 @@ FactoryGirl.define do
         )
       end
       evaluator.language_count.times do
-        offer.languages << (
-          Language.select(:id).all.sample || FactoryGirl.create(:language)
+        offer.language_filters << (
+          LanguageFilter.select(:id).all.sample ||
+            FactoryGirl.create(:language_filter)
         )
       end
     end

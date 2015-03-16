@@ -23,6 +23,13 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.included_models = %w(
+    Organization Website Location FederalState Offer Opening Category Filter
+    LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact
+    Subscription UpdateRequest Hyperlink OrganizationOffer
+    OrganizationConnection SearchLocation ContactPerson
+  )
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -60,7 +67,7 @@ RailsAdmin.config do |config|
     list do
       field :offers_count
       field :name
-      field :legal_form
+      field :renewed
       field :completed
       field :approved
       field :creator
@@ -91,6 +98,7 @@ RailsAdmin.config do |config|
 
     field :websites
     field :completed
+    field :renewed
     field :approved
 
     show do
@@ -123,7 +131,6 @@ RailsAdmin.config do |config|
       field :organization
       field :zip
       field :federal_state
-      field :completed
       field :display_name
     end
     weight(-2)
@@ -141,8 +148,6 @@ RailsAdmin.config do |config|
     field :longitude do
       read_only true
     end
-    field :completed
-
     show do
       field :offers
       field :display_name
@@ -169,6 +174,7 @@ RailsAdmin.config do |config|
       field :completed
       field :approved
       field :creator
+      field :expires_at
       field :organizations
       field :created_by
     end
@@ -189,7 +195,6 @@ RailsAdmin.config do |config|
     field :contact_people
     field :fax
     field :encounter
-    field :frequent_changes
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -204,7 +209,14 @@ RailsAdmin.config do |config|
     field :categories do
       css_class 'js-category-suggestions'
     end
-    field :languages
+    field :language_filters
+    field :audience_filters
+    field :age_filters do
+      help { 'Required before approval.' }
+    end
+    field :encounter_filters do
+      help { 'Required before approval.' }
+    end
     field :openings
     field :opening_specification do
       help do
@@ -218,6 +230,7 @@ RailsAdmin.config do |config|
     field :keywords do
       inverse_of :offers
     end
+    field :expires_at
     field :completed
     field :approved
     field :renewed
@@ -281,7 +294,6 @@ RailsAdmin.config do |config|
 
   config.model 'Category' do
     field :name
-    field :synonyms
     field :parent
 
     object_label_method :name_with_optional_asterisk
@@ -299,15 +311,26 @@ RailsAdmin.config do |config|
     nestable_tree(max_depth: 5)
   end
 
-  config.model 'Language' do
+  config.model 'Filter' do
     weight 1
     list do
-      sort_by :name
       field :id
       field :name
-      field :code
+      field :identifier
       field :offers
     end
+  end
+  config.model 'LanguageFilter' do
+    parent Filter
+  end
+  config.model 'EncounterFilter' do
+    parent Filter
+  end
+  config.model 'AgeFilter' do
+    parent Filter
+  end
+  config.model 'AudienceFilter' do
+    parent Filter
   end
 
   config.model 'User' do

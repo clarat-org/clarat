@@ -47,7 +47,10 @@ class OffersController < ApplicationController
       cookies[:last_search_location] = nil
     else
       # set cookie so that next time the same location will be prefilled
-      cookies[:last_search_location] = @search_cache.location_for_cookie
+      cookies[:last_search_location] = {
+        value: @search_cache.location_for_cookie,
+        expires: 3.months.from_now
+      }
     end
   end
 

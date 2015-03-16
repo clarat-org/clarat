@@ -2,7 +2,7 @@ class Organization < ActiveRecord::Base
   has_paper_trail
 
   # Concerns
-  include Creator, Approvable
+  include Creator, Approvable, CustomValidatable
 
   # Associtations
   has_many :locations
@@ -39,6 +39,8 @@ class Organization < ActiveRecord::Base
   validates :legal_form, presence: true
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :comment, length: { maximum: 800 }
+  validates :slug, uniqueness: true
+
   # Custom Validations
   validates :approved, approved: true
 

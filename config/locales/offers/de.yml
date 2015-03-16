@@ -12,8 +12,7 @@ de:
       cooperation: Kooperationsprojekt
       map_output_searchresults: Kartenausgabe der Suchergebnisse
       location_everywhere: Überall erreichbar, egal, wo du bist
-      navigate_to_categories: 'Filtern…'
-      main_categories: Hauptkategorien
+      navigate_to_categories: 'Kategorien'
 
     show:
       what: Worum gehts?
@@ -32,9 +31,6 @@ de:
         socialmedia: "Weitere Präsenzen im Netz: "
       organizations: Wer bietet diese Hilfe an?
       map_output_searchresult: Kartenausgabe
-      cta_report_errors: |
-        Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
-        lass es uns bitte wissen!
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.

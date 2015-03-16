@@ -48,10 +48,10 @@ class Offer
       end
 
       # additional searchable string made from categories
-      # ToDo Überhaupt notwendig, wenn es für Kategorien keine Synonyme mehr
+      # TODO: Ueberhaupt notwendig, wenn es fuer Kategorien keine Synonyme mehr
       # gibt?
       def category_string
-        categories.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
+        categories.pluck(:name).flatten.compact.uniq.join(', ')
       end
 
       # additional searchable string made from categories

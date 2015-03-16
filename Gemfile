@@ -44,6 +44,7 @@ gem 'jbuilder', '~> 1.2'
 # Background processing
 gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq's web interface
+gem 'sidetiq' # Sidekiq scheduling
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -138,7 +139,7 @@ group :test do
   gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
   gem 'database_cleaner'
-  gem 'colorize'
+  # gem 'colorize' # use this when RBP quits using `colored`
   gem 'fakeredis'
   gem 'fakeweb', '~> 1.3'
   gem 'webmock'
@@ -177,6 +178,7 @@ group :development, :test do
   gem 'thin' # Replace Webrick
   gem 'bullet' # Notify about n+1 queries
   gem 'letter_opener' # emails in browser
+  gem 'timecop' # time travel!
 end
 
 group :development, :test, :staging do

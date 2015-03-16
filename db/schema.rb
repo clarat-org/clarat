@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150311130357) do
     t.string   "name",                  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "icon",           limit: 12
+    t.string   "icon",       limit: 12
     t.integer  "parent_id"
   end
 

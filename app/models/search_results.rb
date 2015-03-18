@@ -6,7 +6,7 @@ class SearchResults
 
   # By default methods hit the result set array
   extend Forwardable
-  def_delegators :@hits, :each, :any?
+  def_delegators :@hits, :each, :any?, :first, :[]
 
   def initialize json
     KEYS.each do |key|
@@ -22,10 +22,12 @@ class SearchResults
       hit['organization_names'].split(', ').each do |n|
         offer.organizations << Organization.new(name: n)
       end
-      offer.location = Location.new(
-        street: hit['location_street'], city: hit['location_city'],
-        zip: hit['location_zip'] # _geoloc
-      )
+      unless hit['_geoloc'].blank?
+        offer.location = Location.new(
+          street: hit['location_street'], city: hit['location_city'],
+          zip: hit['location_zip'] # _geoloc
+        )
+      end
       # organization_names encounter_value objectID _highlightResult _tags
       offer
     end

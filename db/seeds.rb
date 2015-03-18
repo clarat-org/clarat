@@ -6,9 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-user = User.create email: 'user@user.com', password: 'password', role: 'researcher'
+user = User.create email: 'user@user.com', password: 'password',
+                                           role: 'researcher'
 user.confirm!
-admin = User.create email: 'admin@admin.com', password: 'password', role: 'super'
+admin = User.create email: 'admin@admin.com', password: 'password',
+                                              role: 'super'
 admin.confirm!
 
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
@@ -69,6 +71,18 @@ end
   FactoryGirl.create :category, parent_id: Category.pluck(:id).sample
 end
 
-FactoryGirl.create :offer, :approved, approved_by: user, name: 'Lokales Angebot', encounter_filters: [personal]
-FactoryGirl.create :offer, :approved, approved_by: user, name: 'Lokale Hotline', encounter_filters: [tel], local_offer: true
-FactoryGirl.create :offer, :approved, approved_by: user, name: 'Bundesweiter Chat', encounter_filters: [web], local_offer: false
+FactoryGirl.create :offer, :approved, approved_by: user,
+                                      name: 'Lokales Angebot',
+                                      encounter_filters: [personal]
+FactoryGirl.create :offer, :approved, approved_by: user,
+                                      name: 'Lokale Hotline',
+                                      encounter_filters: [tel],
+                                      local_offer: true
+FactoryGirl.create :offer, :approved, approved_by: user,
+                                      name: 'Bundesweiter Chat',
+                                      encounter_filters: [web],
+                                      local_offer: false
+FactoryGirl.create :offer, :approved, approved_by: user,
+                                      name: 'Bundesweite Hotline',
+                                      encounter_filters: [tel],
+                                      local_offer: false

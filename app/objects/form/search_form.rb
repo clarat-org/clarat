@@ -3,7 +3,7 @@ class SearchForm
   include Virtus.model
   include ActiveModel::Conversion
 
-  attr_accessor :hits, :location_fallback
+  attr_accessor :hits, :local_hits, :national_hits, :location_fallback
   # def persisted?
   #   false
   # end
@@ -15,32 +15,35 @@ class SearchForm
   attribute :exact_location
 
   def search page
-    @hits = Offer.algolia_search query || '',
-                                 page: page,
-                                 aroundLatLng: geolocation,
-                                 aroundRadius: search_radius,
-                                 tagFilters: category,
-                                 maxValuesPerFacet: 20,
-                                 aroundPrecision: 500
+    # kaminari starts pagination at 1, Algolia starts at 0
+    page -= 1 if page && page > 0
+
+    # Multi Query from the ruby client
+    @hits ||= Algolia.multiple_queries([
+      local_search_options(page),
+      national_search_options(page),
+      nearby_search_options,
+      local_search_options.merge(facets: '*')
+    ])
+    @local_hits    = SearchResults.new @hits['results'][0]
+    @national_hits = SearchResults.new @hits['results'][1]
+    @_nearby       = SearchResults.new @hits['results'][2]
+    @facet_hits    = SearchResults.new @hits['results'][3]
   end
+
+  # algoliasearch-rails doesn't suport multi queries. Turn variables into the
+  # Pagination object that would normally be returned.
+  # def algoliasearch_railsify
+  #   [@local_hits, @national_hits, @_nearby, @facet_hits].each do |hit|
+  #     hit_ids
+  #   end
+  #   AlgoliaSearch::Pagination::Kaminari.create
+  #   # PULL REQUEST TO ALGOLIASEARCH RAILS?
+  #   #https://github.com/algolia/algoliasearch-rails/blob/907197ccf99e3b0a9d19ce8b08dc55e32066a418/lib/algoliasearch-rails.rb
+  # end
 
   def nearby?
-    @_nearby ||=
-      Offer.algolia_search('',
-                           page: 0,
-                           hitsPerPage: 1,
-                           aroundLatLng: geolocation,
-                           aroundRadius: 25_000 # check later if accurate
-      ).any?
-  end
-
-  def facet_search
-    @facet_hits ||= Offer.algolia_search query || '',
-                                         aroundLatLng: geolocation,
-                                         aroundRadius: search_radius,
-                                         facets: '*',
-                                         maxValuesPerFacet: 20,
-                                         aroundPrecision: 500
+    @_nearby.any?
   end
 
   def geolocation
@@ -61,26 +64,14 @@ class SearchForm
     end
   end
 
-  # Super wide radius or use exact location
+  # wide radius or use exact location
   def search_radius
     exact_location ? 100 : 50_000
   end
 
   def facet_counts_for_query
-    facet_search.facets['_tags']
+    @facet_hits.facets['_tags']
   end
-  # def categories_by_facet
-  #   categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
-  #   if categories_facet
-  #     categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
-  #     # categories_facet.each_with_object({}) do |(key, value), out|
-  #     #   (out[value] ||= []) << key
-  #     # end # safe invert; eg { 5 => 'foo' }
-  #     # inverted.values.flatten.uniq
-  #   else
-  #     []
-  #   end
-  # end
 
   # find the actual category object and return it with ancestors
   def category_with_ancestors
@@ -108,35 +99,51 @@ class SearchForm
     { query: '', category: category, search_location: search_location }
   end
 
-  # # toggles category on or off
-  # def toggle category
-  #   newcategories = category_array
-  #   newcategories << category unless newcategories.delete(category)
-  #   {
-  #     query: query, categories: newcategories.join(','),
-  #     search_location: search_location
-  #   }
-  # end
-
-  # # @return [Boolean]
-  # def includes_category category
-  #   self.category_array.include? category
-  # end
-
-  # def categories_array
-  #   if category
-  #     categories.split(',').map(&:strip)
-  #   else
-  #     []
-  #   end
-  # end
-
   def hit_count
-    @hits.raw_answer['nbHits']
+    @local_hits.nbHits
   end
 
   def location_for_cookie
     return nil if search_location.blank?
     { query: search_location, geoloc: geolocation.to_s }.to_json
+  end
+
+  private
+
+  def search_query
+    query || ''
+  end
+
+  def search_options page
+    opts = {
+      query: search_query,
+      tagFilters: category,
+      maxValuesPerFacet: 20,
+      aroundPrecision: 500
+    }
+    page ? opts.merge(page: page, hitsPerPage: SearchResults::PER_PAGE) : opts
+  end
+
+  def local_search_options page = nil
+    search_options(page).merge(
+      index_name: Offer.local_index_name,
+      aroundLatLng: geolocation,
+      aroundRadius: search_radius
+    )
+  end
+
+  def national_search_options page
+    search_options(page).merge(index_name: Offer.national_index_name)
+  end
+
+  def nearby_search_options
+    {
+      index_name: Offer.local_index_name,
+      query: '',
+      page: 0,
+      hitsPerPage: 1,
+      aroundLatLng: geolocation,
+      aroundRadius: 25_000 # check later if accurate
+    }
   end
 end

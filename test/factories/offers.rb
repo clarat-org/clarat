@@ -16,6 +16,12 @@ FactoryGirl.define do
 
     # associations
 
+    encounter_filters do
+      encounters = %w(personal hotline online)
+      selected = encounters.sample(rand(1..3))
+      selected.map { |s| EncounterFilter.find_by_identifier(s) }
+    end
+
     transient do
       organization_count 1
       contact_person_count 1
@@ -24,6 +30,7 @@ FactoryGirl.define do
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
+      local_offer { maybe true }
     end
 
     after :create do |offer, evaluator|
@@ -34,15 +41,10 @@ FactoryGirl.define do
 
       # location
       organization = offer.organizations.first
-      if organization
-        # TODO: Refactor/check if this even makes sense...
-        if offer.encounter_filters.pluck(:name).include?('persönliches Gespräch')
-          location = organization.locations.sample ||
-            FactoryGirl.create(:location, organization: organization)
-        else
-          location = nil
-        end
-        offer.update_column :location_id, location.id if location
+      if offer.personal? || evaluator.local_offer
+        location = organization.locations.sample ||
+                   FactoryGirl.create(:location, organization: organization)
+        offer.update_column :location_id, location.id
       end
 
       # Contact People
@@ -55,7 +57,8 @@ FactoryGirl.define do
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
       if evaluator.category
-        offer.categories << FactoryGirl.create(:category, name: evaluator.category)
+        offer.categories << FactoryGirl.create(:category,
+                                               name: evaluator.category)
       else
         evaluator.category_count.times do
           offer.categories << (
@@ -82,7 +85,8 @@ FactoryGirl.define do
 
     trait :approved do
       after :create do |offer, _evaluator|
-        Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
+        Offer.where(id: offer.id).update_all completed: true, approved: true,
+                                             approved_at: Time.now
       end
       approved_by { FactoryGirl.create(:researcher).id }
     end

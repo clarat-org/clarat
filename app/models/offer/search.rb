@@ -13,21 +13,59 @@ class Offer
         end
       end
 
-      algoliasearch index_name: per_env_index,
+      def self.local_index_name
+        "#{per_env_index}_local"
+      end
+
+      def self.national_index_name
+        "#{per_env_index}_national"
+      end
+
+      algoliasearch index_name: local_index_name,
                     disable_indexing: Rails.env.test?,
-                    if: :approved? do
-        attributesToIndex %w(
+                    if: :local_indexable? do
+        INDEX = %w(
           name description category_string keyword_string organization_name
         )
+        attributesToIndex INDEX
         ranking %w(
           typo asc(encounter_value) geo words proximity attribute exact custom
-        ) # ^encounter_value
-        add_attribute :_geoloc, :_tags
-        add_attribute :category_string, :keyword_string, :organization_names,
-                      :location_street, :location_city, :location_zip,
-                      :encounter_value
+        )
+        ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
+                      :location_street, :location_city, :location_zip, :_tags]
+        add_attribute(*ATTRIBUTES)
+        add_attribute :_geoloc, :encounter_value
         attributesForFaceting [:_tags]
         optionalWords STOPWORDS
+
+        add_index Offer.national_index_name, disable_indexing: Rails.env.test?,
+                                             if: :national_indexable? do
+          attributesToIndex INDEX
+          add_attribute(*ATTRIBUTES)
+          attributesForFaceting [:_tags]
+          optionalWords STOPWORDS
+
+          # no encounter value
+          ranking %w(
+            typo geo words proximity attribute exact custom
+          )
+        end
+      end
+
+      def local_indexable?
+        approved? && local?
+      end
+
+      def national_indexable?
+        approved? && !local?
+      end
+
+      def local?
+        location_id?
+      end
+
+      def personal?
+        self.encounter_filters.where(identifier: 'personal').count > 0
       end
 
       # Offer's location's geo coordinates for indexing
@@ -64,12 +102,9 @@ class Offer
         organizations.pluck(:name).join(', ')
       end
 
-      # Offer's encounter modifier for indexing
+      # Used to differentiate between local "hotlines" and local personal offers
       def encounter_value
-        case encounter
-        when 'independent' then 0
-        when 'determinable', 'fixed' then 1
-        end
+        personal? ? 1 : 0
       end
     end
   end

@@ -1,6 +1,6 @@
 .wrapper-inner
   main.content-main
-    = render 'offers/index/search_results', offers: @offers,
+    = render 'offers/index/search_results', offers: @local_offers,
                                             search_cache: @search_cache
 
   - if @update_request

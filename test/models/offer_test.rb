@@ -30,10 +30,12 @@ describe Offer do
       it { subject.must validate_presence_of :next_steps }
       it { subject.must validate_length_of(:next_steps).is_at_most 500 }
       it { subject.must validate_length_of(:fax).is_at_most 32 }
-      it { offer.must validate_length_of(:opening_specification).is_at_most 400}
       it { subject.must validate_length_of(:comment).is_at_most 800 }
       it { subject.must validate_length_of(:legal_information).is_at_most 400 }
       it { subject.must validate_presence_of :expires_at }
+      it do
+        subject.must validate_length_of(:opening_specification).is_at_most 400
+      end
     end
 
     describe 'custom' do

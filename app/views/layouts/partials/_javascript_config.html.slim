@@ -1,6 +1,7 @@
 javascript:
   Clarat.algolia_app_id = "#{Rails.application.secrets.algolia['app_id']}";
   Clarat.algolia_pub_key = "#{Rails.application.secrets.algolia['pub_key']}";
-  Clarat.algolia_index = "#{Rails.application.secrets.algolia['index']}";
+  Clarat.algolia_local_index = "#{Offer.local_index_name}";
+  Clarat.algolia_national_index = "#{Offer.national_index_name}";
 
   I18n.locale = "#{I18n.locale}";

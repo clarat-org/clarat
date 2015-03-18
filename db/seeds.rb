@@ -29,9 +29,10 @@ AudienceFilter.create name: 'Patchworkfamilien',
                       identifier: 'patchwork_families'
 AudienceFilter.create name: 'Regenbogenfamilien', identifier: 'rainbow_families'
 AudienceFilter.create name: 'LGBT', identifier: 'lgbt'
-EncounterFilter.create name: 'persönliches Gespräch', identifier: 'personal'
-EncounterFilter.create name: 'Telefon', identifier: 'hotline'
-EncounterFilter.create name: 'E-Mail und Chat', identifier: 'online'
+personal =
+  EncounterFilter.create name: 'persönliches Gespräch', identifier: 'personal'
+tel = EncounterFilter.create name: 'Telefon', identifier: 'hotline'
+web = EncounterFilter.create name: 'E-Mail und Chat', identifier: 'online'
 
 FederalState.create name: 'Berlin'
 FederalState.create name: 'Brandenburg'
@@ -67,3 +68,7 @@ end
 20.times do
   FactoryGirl.create :category, parent_id: Category.pluck(:id).sample
 end
+
+FactoryGirl.create :offer, :approved, approved_by: user, name: 'Lokales Angebot', encounter_filters: [personal]
+FactoryGirl.create :offer, :approved, approved_by: user, name: 'Lokale Hotline', encounter_filters: [tel], local_offer: true
+FactoryGirl.create :offer, :approved, approved_by: user, name: 'Bundesweiter Chat', encounter_filters: [web], local_offer: false

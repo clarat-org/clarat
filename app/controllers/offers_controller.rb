@@ -5,11 +5,12 @@ class OffersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
+    build_search_cache.search params[:page]
     assign_search_result_instance_variables
     test_location_unavailable
     set_position
-    prepare_gmaps_variables @offers
-    respond_with @offers do |format|
+    prepare_gmaps_variables @local_offers
+    respond_to do |format|
       format.html do
         template = request.xhr? ? :index_xhr : :index
         render template, layout: !request.xhr?
@@ -36,13 +37,15 @@ class OffersController < ApplicationController
 
   # general variable assignments: search for results, get categories, etc.
   def assign_search_result_instance_variables
-    @offers = build_search_cache.search params[:page]
+    @local_offers = @search_cache.local_hits
+    @national_offers = @search_cache.national_hits
     @category_tree = Category.hash_tree
     @facets = @search_cache.facet_counts_for_query
   end
 
   # Initialize Search Form Object with given params
   def build_search_cache
+    # TODO: why merge? comment or remove
     search_params = {}
     form_search_params = params.for(SearchForm).refine
     search_params.merge!(form_search_params) if form_search_params.is_a?(Hash)

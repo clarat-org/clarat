@@ -1,36 +1,31 @@
 // ---------------------------------------------------------------
 //
-//  Privacy Statement
+//  Privacy Statement module
 //
 // ---------------------------------------------------------------
 
-.privacy {
-  h4 {
-    margin-top: 1em;
-    margin-bottom: 0.5em
-  }
+.Privacy {
+	p {
+		margin-top: 0;
+	}
+}
 
-  p {
-    line-height: inherit;
-  }
+.Privacy__list,
+.Privacy__list--sublist {
+	list-style: none;
+}
 
-  ol {
-    counter-reset: item;
-  }
+.Privacy__list--sublist {
+	margin-left: 20px;
+}
 
-  li {
-    display: block;
-  }
+.Privacy__title {
+	margin: 1em 0 .5em;
+}
 
-  li:before {
-    content: counters(item, ".") ". ";
-    counter-increment: item;
-  }
-
-  .address {
-    p {
-      margin: 0;
-    }
-  }
+.Privacy__address {
+	p {
+		margin: 0;
+	}
 }
 

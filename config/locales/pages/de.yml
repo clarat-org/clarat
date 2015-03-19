@@ -80,7 +80,7 @@ de:
         vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen,
         wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       chapter_one:
-        title: Ermöglichung der Inanspruchnahme unseres Webseitenangebots
+        title: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: |
           Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern
           wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen:
@@ -95,7 +95,7 @@ de:
           zusenden).
       chapter_two:
         title: |
-          Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
         text: |
           Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
           oder über das Kon-taktformular, bzw. über eine Live-Chat-Funktion
@@ -105,19 +105,19 @@ de:
           und nutzen wir diese Angaben nur zur Erbringung der jeweils
           angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
           Zusendung unseres Newsletters).
-        nested_title_one: Kontaktformular
+        nested_title_one: 2.1 Kontaktformular
         nested_text_one: |
           Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
           Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
           zur Erbringung der jeweils angefrag-ten Leistung verwenden.
-        nested_title_two: Newsletter-Anmeldung
+        nested_title_two: 2.2 Newsletter-Anmeldung
         nested_text_two: |
           Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
           gestellten personenbe-zogenen Daten werden wir nutzen, um Ihnen
           gelegentlich E-Mails mit Informationen über neue oder spezielle
           Angebote zuzusenden.
       chapter_three:
-        title: Informationen über Ihr Nutzungsverhalten
+        title: 3. Informationen über Ihr Nutzungsverhalten
         text: |
           Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
           anpassen möchten, benö-tigen wir Informationen über das allgemeine
@@ -131,7 +131,7 @@ de:
           oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
           Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
           können Sie jederzeit widersprechen.
-        nested_title_one: Analyse
+        nested_title_one: 3.1 Analyse
         nested_text_one: |
           Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
           Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
@@ -189,7 +189,7 @@ de:
           %{optimizely_privacy}. Sie können das Optimizely-Tracking
           jederzeit deaktivieren, indem Sie der Anleitung auf
           %{optimizely_optout} folgen
-        nested_title_two: Cookies
+        nested_title_two: 3.2 Cookies
         nested_text_two: |
           Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
           werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
@@ -216,7 +216,7 @@ de:
           möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
           Funktionsfähigkeit dieser Webseite beeinträchtigen können.
       chapter_four:
-        title: Einbindung von Diensten Dritter
+        title: 4. Einbindung von Diensten Dritter
         text: |
           Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
           Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
@@ -225,11 +225,11 @@ de:
           Informationen zur Erhebung und Nutzung der Daten durch die
           Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
       chapter_five:
-        title: Social Media Plugins
+        title: 5. Social Media Plugins
         text: |
           Auf dieser Webseite werden Plugins von sozialen Netzwerken nach den
           folgenden Maßgaben verwendet:
-        nested_title_one: Facebook
+        nested_title_one: 5.1 Facebook
         nested_text_one: |
           Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
           der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
@@ -251,7 +251,7 @@ de:
           Facebook, über Ihre diesbezüglichen Rech-te und Möglichkeiten zum
           Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
           Facebook (%{facebook}).
-        nested_title_two: Google+
+        nested_title_two: 5.2 Google+
         nested_text_two: |
           Wir verwenden Social Plugins von Google. Klicken Sie auf den
           Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
@@ -266,7 +266,7 @@ de:
           über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
           Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
           (%{google}).
-        nested_title_three: Twitter
+        nested_title_three: 5.3 Twitter
         nested_text_three: |
           Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
           600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
@@ -295,14 +295,14 @@ de:
           möchte und dass die Schaltfläche von unserer Website aus aufgerufen
           wurde.
       chapter_six:
-        title: Datenlöschung
+        title: 6. Datenlöschung
         text: |
           Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
           ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
           Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
           weitergehenden Speicherung verpflichtet sind.
       chapter_seven:
-        title: Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        title: 7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
         text: |
           Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
           Zugriffe oder Veröffentli-chung zu verhindern, haben wir physische,
@@ -320,7 +320,7 @@ de:
           erfolgt eine Weitergabe von Daten an Dritte nur, wenn Sie eingewilligt
           haben oder wir hierzu rechtlich verpflichtet sind.
       chapter_eight:
-        title: Recht auf Widerspruch und Ansprechpartner
+        title: 8. Recht auf Widerspruch und Ansprechpartner
         text: |
           Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
           Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung

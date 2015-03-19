@@ -8,7 +8,6 @@
 // @todo: font-sizes
 // @todo: styling of submit button
 
-
 .filter-form {
   @extend %clearfix;
   padding: 20px 20px 0;
@@ -32,11 +31,40 @@
   width: 25%;
 }
 
+.filter-form__checkbox {
+  display: none;
+}
+
 .filter-form__checkbox,
 .filter-form__label {
   cursor: pointer;
 }
 
 .filter-form__label {
-  padding-left: 6px;
+  position: relative;
+  margin: 2px 0 3px 19px;
+  font-size: 13px;
+  display: inline-block;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    position: absolute;
+    top: 4px;
+    left: -19px;
+    bottom: 1px;
+    background-color: $brand_white;
+  }
+}
+
+.filter-form__checkbox:checked + .filter-form__label:before {
+  content: "\2713";
+  font-size: 21px;
+  color: $brand_brown;
+  text-align: center;
+  line-height: 10px;
+  display: inline-block;
 }

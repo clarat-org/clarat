@@ -4,14 +4,19 @@
 //
 // ---------------------------------------------------------------
 
-// @todo: custom styling select, radios
-// @todo: font-sizes
-// @todo: styling of submit button
+// @todo: custom styling select
 
 .filter-form {
   @extend %clearfix;
+  background: $brand_beige image-url('ico_filter.svg') no-repeat 20px 20px;
   padding: 20px 20px 0;
-  background: $brand_beige;
+}
+
+.filter-form__headline {
+  text-align: right;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .filter-form__fieldset {
@@ -20,9 +25,12 @@
   border: none;
 }
 
-.form__fieldset__headline {
+.filter-form__fieldset__headline {
+  @extend %roboto_bold;
+  font-weight: normal;
   color: $brand_blue;
   margin: 0;
+  font-size: 13px;
 }
 
 .col-form-inner {
@@ -31,40 +39,50 @@
   width: 25%;
 }
 
-.filter-form__checkbox {
-  display: none;
+.filter-form__submit {
+  @extend %clarat_rounding_end;
+  width: 100%;
+  background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
+  background-size: 20px 20px;
+  padding: 10px 15px 10px 30px;
+  min-height: 40px;
+
 }
 
-.filter-form__checkbox,
+//.filter-form__radio {
+//  display: none;
+//}
+
+.filter-form__radio,
 .filter-form__label {
   cursor: pointer;
 }
 
-.filter-form__label {
-  position: relative;
-  margin: 2px 0 3px 19px;
-  font-size: 13px;
-  display: inline-block;
-
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    margin-right: 10px;
-    position: absolute;
-    top: 4px;
-    left: -19px;
-    bottom: 1px;
-    background-color: $brand_white;
-  }
-}
-
-.filter-form__checkbox:checked + .filter-form__label:before {
-  content: "\2713";
-  font-size: 21px;
-  color: $brand_brown;
-  text-align: center;
-  line-height: 10px;
-  display: inline-block;
-}
+//.filter-form__label {
+//  position: relative;
+//  margin: 2px 0 3px 19px;
+//  font-size: 13px;
+//  display: inline-block;
+//
+//  &:before {
+//    content: "";
+//    display: inline-block;
+//    width: 13px;
+//    height: 13px;
+//    margin-right: 10px;
+//    position: absolute;
+//    top: 4px;
+//    left: -19px;
+//    bottom: 1px;
+//    background-color: $brand_white;
+//  }
+//}
+//
+//.filter-form__radio:selected + .filter-form__label:before {
+//  content: "\2713";
+//  font-size: 21px;
+//  color: $brand_brown;
+//  text-align: center;
+//  line-height: 10px;
+//  display: inline-block;
+//}

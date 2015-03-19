@@ -116,6 +116,17 @@ de:
           gestellten personenbe-zogenen Daten werden wir nutzen, um Ihnen
           gelegentlich E-Mails mit Informationen über neue oder spezielle
           Angebote zuzusenden.
+        nested_title_three: 2.3 Standortdaten
+        nested_text_three: |
+          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
+          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
+          berechnet der Hersteller Ihres Browsers anhand bestimmter
+          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
+          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
+          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
+          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
+          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
+          Nutzungsbestimmungen Ihres Browsers.
       chapter_three:
         title: 3. Informationen über Ihr Nutzungsverhalten
         text: |

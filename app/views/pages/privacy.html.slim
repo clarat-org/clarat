@@ -1,4 +1,70 @@
 - provide(:title, 'Datenschutz')
 main.content-main.content-main--wide
   .wrapper-inner
-    h1 = t 'pages.privacy.title'
+    .Privacy
+      h2.Privacy__title--page = t 'pages.privacy.title'
+      p = t 'pages.privacy.intro_first_part'
+      p = t 'pages.privacy.intro_second_part'
+      ul.Privacy__list
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_one.title'
+          p = t 'pages.privacy.chapter_one.text'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_two.title'
+          p = t 'pages.privacy.chapter_two.text'
+          ul.Privacy__list--sublist
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_two.nested_title_one'
+              p = t 'pages.privacy.chapter_two.nested_text_one'
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_two.nested_title_two'
+              p = t 'pages.privacy.chapter_two.nested_text_two'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_three.title'
+          p = t 'pages.privacy.chapter_three.text'
+          ul.Privacy__list--sublist
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_three.nested_title_one'
+              p == t 'pages.privacy.chapter_three.nested_text_one', google_optout: link_to('http://tools.google.com/dlpage/gaoptout', 'http://tools.google.com/dlpage/gaoptout'), analytics_terms: link_to('http://www.google.com/analytics/terms/de.html', 'http://www.google.com/analytics/terms/de.html'), policies: link_to('http://www.google.com/analytics/terms/de.html', 'http://www.google.com/analytics/terms/de.html'), ads: link_to('https://www.google.de/settings/ads', 'https://www.google.de/settings/ads')
+              p == t 'pages.privacy.chapter_three.nested_text_one_second_paragraph', optimizely_privacy: link_to('http://www.optimizely.com/privacy', 'http://www.optimizely.com/privacy'), optimizely_optout: link_to('http://www.optimizely.com/opt_out', 'http://www.optimizely.com/opt_out')
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_three.nested_title_two'
+              p = t 'pages.privacy.chapter_three.nested_text_two'
+              p = t 'pages.privacy.chapter_three.nested_text_two_second_paragraph'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_four.title'
+          p = t 'pages.privacy.chapter_four.text'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_five.title'
+          p = t 'pages.privacy.chapter_five.text'
+          ul.Privacy__list--sublist
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_five.nested_title_one'
+              p == t 'pages.privacy.chapter_five.nested_text_one', facebook: link_to('https://de-de.facebook.com/policy.php', 'https://de-de.facebook.com/policy.php')
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_five.nested_title_two'
+              p == t 'pages.privacy.chapter_five.nested_text_two', google: link_to('https://www.google.de/intl/de/policies/privacy/', 'https://www.google.de/intl/de/policies/privacy/')
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_five.nested_title_three'
+              p == t 'pages.privacy.chapter_five.nested_text_three', twitter: link_to('https://twitter.com/privacy?lang=de', 'https://twitter.com/privacy?lang=de')
+            li
+              h4.Privacy__title = t 'pages.privacy.chapter_five.nested_title_four'
+              p = t 'pages.privacy.chapter_five.nested_text_four'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_six.title'
+          p = t 'pages.privacy.chapter_six.text'
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_seven.title'
+          p == t 'pages.privacy.chapter_seven.text', mailchimp: link_to('http://mailchimp.com/legal/terms/', 'http://mailchimp.com/legal/terms/')
+        li
+          h3.Privacy__title = t 'pages.privacy.chapter_eight.title'
+          p == t 'pages.privacy.chapter_eight.text', google_optout: link_to('https://tools.google.com/dlpage/gaoptout?hl=de', 'https://tools.google.com/dlpage/gaoptout?hl=de')
+          p = t 'pages.privacy.chapter_eight.nested_text_second_paragraph'
+
+          .Privacy__address
+            p = t 'pages.address.name'
+            p = t 'pages.address.street'
+            p = t 'pages.address.zip_city'
+            p = t 'pages.address.telephone'
+            p = t 'pages.address.fax'
+            p == t 'pages.address.email', mailto: link_to('mailto:mail@clarat.org', 'mail@clarat.org')

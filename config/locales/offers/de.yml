@@ -41,8 +41,9 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
     shared:
+      no_offers_text: "Bitte versuche es mit einem anderen Suchbegriff oder suche über die Kategorien."
       offers:
-        zero: Keine Angebote
+        zero: "Leider konnten wir zu dem Suchbegriff '%{query}' keine Angebote finden"
         one: Ein Angebot
         other: "%{count} Angebote"
       category_filter: Kategorien

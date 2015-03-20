@@ -6,7 +6,9 @@ feature 'Search Form' do
     WebMock.enable!
     visit root_path
     find('.main-search__submit').click
-    page.must_have_content 'Keine Angebote'
+    page.must_have_content 'Leider konnten wir zu dem Suchbegriff'
+    page.must_have_content 'keine Angebote finden'
+    page.must_have_content 'Bitte versuche es mit einem anderen Suchbegriff oder suche über die Kategorien.'
     WebMock.disable!
   end
 
@@ -70,7 +72,8 @@ feature 'Search Form' do
       categories: '', exact_location: 't'
     }
 
-    page.must_have_content 'Keine Angebote'
+    page.must_have_content 'Leider konnten wir zu dem Suchbegriff'
+    page.must_have_content 'keine Angebote finden'
     WebMock.disable!
   end
 

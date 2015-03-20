@@ -2,7 +2,7 @@
   main.content-main
     .Listing-results
       h2.Listing-results__headline
-        = t('offers.shared.offers', count: @search_cache.hit_count)
+        = t('offers.shared.offers', count: @search_cache.hit_count, query: @search_cache.query)
         - categories = @search_cache.categories
         - unless categories.blank?
           |  (
@@ -10,6 +10,9 @@
           | :
           =< categories
           | )
+
+      if @search_cache.hit_count == 0
+        p= t('offers.shared.no_offers_text')
 
       = link_to '#categories', class: 'jump-to-categories' do
         i.fa.fa-filter

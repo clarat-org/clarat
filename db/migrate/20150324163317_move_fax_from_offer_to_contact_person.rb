@@ -4,7 +4,10 @@ class MoveFaxFromOfferToContactPerson < ActiveRecord::Migration
     add_column :contact_people, :fax_number, :string, limit: 32
 
     Offer.find_each do |offer|
-      cp = ContactPerson.new(fax_number: offer.fax)
+      cp = ContactPerson.new(
+        fax_number: offer.fax,
+        organization_id: offer.organizations.first.id
+      )
       cp.save(validate: false)
       offer.contact_people << cp
     end

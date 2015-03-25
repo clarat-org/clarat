@@ -7,7 +7,7 @@ class MoveFaxFromOfferToContactPerson < ActiveRecord::Migration
       empty_contact = offer.contact_people.where(name: "").first
       if empty_contact
         empty_contact.fax_number = offer.fax
-        empty_contact.save
+        empty_contact.save(validate: false)
       else
         cp = ContactPerson.new(
           fax_number: offer.fax,

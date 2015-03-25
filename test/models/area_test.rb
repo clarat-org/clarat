@@ -19,5 +19,15 @@ describe Area do
     it { subject.must validate_presence_of :maxlat }
     it { subject.must validate_presence_of :minlong }
     it { subject.must validate_presence_of :maxlong }
+
+    it 'should validate that lat min is less than max and reverse' do
+      subject.assign_attributes minlat: 2, maxlat: 1
+      subject.valid?.must_equal false
+    end
+
+    it 'should validate that long min is less than max and reverse' do
+      subject.assign_attributes minlong: 2, maxlong: 1
+      subject.valid?.must_equal false
+    end
   end
 end

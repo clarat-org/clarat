@@ -40,7 +40,7 @@ FactoryGirl.define do
 
       # location
       organization = offer.organizations.first
-      if offer.personal? || evaluator.local_offer
+      if organization && (offer.personal? || evaluator.local_offer)
         location = organization.locations.sample ||
                    FactoryGirl.create(:location, organization: organization)
         offer.update_column :location_id, location.id

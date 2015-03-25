@@ -18,10 +18,7 @@ module OffersHelper
 
   # collect search information for display in offers#index
   def search_results_info_headline search_cache
-    main_hits = search_cache.personal_hits || search_cache.remote_hits
-    output = I18n.t(
-      "offers.shared.#{search_cache.contact_type}_offers",
-      count: main_hits.nbHits)
+    output = base_search_results_info_headline(search_cache)
 
     unless search_cache.category.blank?
       output += " in #{breadcrumb_path search_cache}"
@@ -32,6 +29,7 @@ module OffersHelper
         output += remove_query_link search_cache
       end
     end
+
     output + " (#{search_cache.search_location})"
   end
 
@@ -47,6 +45,14 @@ module OffersHelper
   end
 
   private
+
+  def base_search_results_info_headline search_cache
+    main_hits = search_cache.personal_hits || search_cache.remote_hits
+    I18n.t(
+      "offers.shared.#{search_cache.contact_type}_offers",
+      count: main_hits.nbHits
+    )
+  end
 
   # breadcrumps to active category
   def breadcrumb_path search_cache

@@ -1,4 +1,4 @@
-require 'algolia/webmock' # general mocks
+#require 'algolia/webmock' # general mocks
 
 module AlgoliaStubber
   EMPTY_RESPONSE = <<-RESPONSE
@@ -17,9 +17,20 @@ module AlgoliaStubber
     }
   RESPONSE
 
+  BATCH_RESPONSE = <<-RESPONSE
+    {
+      "results" :  [
+        #{EMPTY_RESPONSE},
+        #{EMPTY_RESPONSE},
+        #{EMPTY_RESPONSE},
+        #{EMPTY_RESPONSE}
+      ]
+    }
+  RESPONSE
+
   def self.enable_empty_response
-    WebMock.stub_request(:get, /.*\.algolia\.(io|net)\/1\/indexes/).to_return(
-      body: EMPTY_RESPONSE
+    WebMock.stub_request(:post, /.*\.algolia\.(io|net)\/1\/indexes\/[^\/]+\/queries/).to_return(
+      body: BATCH_RESPONSE
     )
   end
 
@@ -30,7 +41,13 @@ module AlgoliaStubber
     end
 
     filled_response = {
-      'hits' => offers.map(&:attributes),
+      'hits' =>
+        offers.map do |offer|
+          offer.attributes.merge(
+            'organization_names' => offer.organization_names,
+            '_geoloc' => offer._geoloc
+          )
+        end,
       'nbHits' => offers.length,
       'page' => 0,
       'nbPages' => 1,
@@ -42,12 +59,9 @@ module AlgoliaStubber
       'query' => "#{query}",
       'params' => "query=#{query}"
     }
+    batch_response = { 'results' => [filled_response, filled_response, filled_response, filled_response] }
 
-    res = AlgoliaSearch::Pagination::Kaminari.create offers,
-      offers.length, page: 1, per_page: 10
-    res.extend(AlgoliaSearch::ClassMethods::AdditionalMethods)
-    res.send(:algolia_init_raw_answer, filled_response)
-    res
+    batch_response
   end
 end
 

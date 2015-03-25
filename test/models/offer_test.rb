@@ -129,6 +129,46 @@ describe Offer do
       end
     end
 
+    describe '#personal_indexable?' do
+      it 'should return true when personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns true
+        offer.personal_indexable?.must_equal true
+      end
+
+      it 'should return false when not personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns false
+        offer.personal_indexable?.must_equal false
+      end
+
+      it 'should return false when not approved' do
+        offer.approved = false
+        offer.expects(:personal?).never
+        offer.personal_indexable?.must_equal false
+      end
+    end
+
+    describe '#remote_indexable?' do
+      it 'should return true when not personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns false
+        offer.remote_indexable?.must_equal true
+      end
+
+      it 'should return false when personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns true
+        offer.remote_indexable?.must_equal false
+      end
+
+      it 'should return false when not approved' do
+        offer.approved = false
+        offer.expects(:personal?).never
+        offer.remote_indexable?.must_equal false
+      end
+    end
+
     describe '::per_env_index' do
       it 'should return Offer_envname for a non-development env' do
         Offer.per_env_index.must_equal 'Offer_test'

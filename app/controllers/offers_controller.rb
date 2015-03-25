@@ -5,7 +5,7 @@ class OffersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    build_search_cache.search params[:page]
+    build_search_cache_and_search params[:page]
     assign_search_result_instance_variables
     test_location_unavailable
     set_position
@@ -44,12 +44,9 @@ class OffersController < ApplicationController
   end
 
   # Initialize Search Form Object with given params
-  def build_search_cache
-    # TODO: why merge? comment or remove
-    search_params = {}
-    form_search_params = params.for(SearchForm).refine
-    search_params.merge!(form_search_params) if form_search_params.is_a?(Hash)
-    @search_cache = SearchForm.new(search_params)
+  def build_search_cache_and_search page
+    @search_cache = SearchForm.new params.for(SearchForm).refine
+    @search_cache.search page
   end
 
   # Set geolocation variables for map

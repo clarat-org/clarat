@@ -6,14 +6,14 @@ feature 'Search Form' do
     WebMock.enable!
     visit root_path
     find('.main-search__submit').click
-    page.must_have_content 'Keine Angebote'
+    page.must_have_content 'Keine Vor-Ort-Angebote'
     WebMock.disable!
   end
 
   scenario 'Search with results but none nearby shows overlay' do
     WebMock.enable!
     FactoryGirl.create :offer, name: 'bazfuz'
-    Offer.stubs(:algolia_search).returns(
+    Algolia.expects(:multiple_queries).returns(
       AlgoliaStubber.filled_response_stub('bazfuz', ['bazfuz'])
     )
     SearchForm.any_instance.expects(:nearby?).returns(false)
@@ -22,7 +22,7 @@ feature 'Search Form' do
     fill_in 'search_form_query', with: 'bazfuz'
     fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
-    page.must_have_content 'Ein Angebot'
+    page.must_have_content 'Ein Vor-Ort-Angebot'
 
     page.must_have_content I18n.t 'offers.index.unavailable_location_modal'
     WebMock.disable!
@@ -38,7 +38,7 @@ feature 'Search Form' do
     OrganizationOffer.create! offer_id: o2.id,
                               organization_id: o1.organizations.first.id
 
-    Offer.stubs(:algolia_search).returns(
+    Algolia.stubs(:multiple_queries).returns(
       AlgoliaStubber.filled_response_stub(
         'foo',
         ['foo baz', 'foo fuz'],
@@ -70,7 +70,19 @@ feature 'Search Form' do
       categories: '', exact_location: 't'
     }
 
-    page.must_have_content 'Keine Angebote'
+    page.must_have_content 'Keine Vor-Ort-Angebote'
+    WebMock.disable!
+  end
+
+  scenario 'Search for remote offers works' do
+    WebMock.enable!
+    visit offers_path search_form: {
+      query: nil, search_location: 'Foobar', generated_geolocation: '0,0',
+      categories: '', contact_type: 'remote'
+    }
+
+    page.wont_have_content 'Keine Vor-Ort-Angebote'
+    page.must_have_content 'Keine Telefon- und Onlineberatungen'
     WebMock.disable!
   end
 

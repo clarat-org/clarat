@@ -49,8 +49,8 @@ class Offer
           attributesForFaceting FACETS
           optionalWords STOPWORDS
 
-          # no encounter value
-          ranking %w(typo geo words proximity attribute exact custom)
+          # no geo necessary
+          ranking %w(typo words proximity attribute exact custom)
         end
       end
 

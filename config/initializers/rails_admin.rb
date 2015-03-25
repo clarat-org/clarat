@@ -193,7 +193,6 @@ RailsAdmin.config do |config|
     end
     field :legal_information
     field :contact_people
-    field :fax
     field :encounter
     field :slug do
       read_only do
@@ -256,6 +255,8 @@ RailsAdmin.config do |config|
     field :local_number_1
     field :area_code_2
     field :local_number_2
+    field :fax_area_code
+    field :fax_number
     field :email
     field :organization
     field :offers

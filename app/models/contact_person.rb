@@ -11,10 +11,12 @@ class ContactPerson < ActiveRecord::Base
   validates :local_number_1, format: /\A\d*\z/, length: { maximum: 32 }
   validates :area_code_2, format: /\A\d*\z/, length: { maximum: 6 }
   validates :local_number_2, format: /\A\d*\z/, length: { maximum: 32 }
+  validates :fax_area_code, format: /\A\d*\z/, length: { maximum: 6 }
+  validates :fax_number, format: /\A\d*\z/, length: { maximum: 32 }
   validate :at_least_one_field_present
 
   def at_least_one_field_present
-    if %w(name local_number_1 email).all? { |field| self[field].blank? }
+    if %w(name local_number_1 email fax_number).all? { |field| self[field].blank? }
       errors.add :base, I18n.t('validations.contact_person.incomplete')
     end
   end

@@ -24,9 +24,6 @@ section.section-content.section-content--contact
             = t 'offers.show.contact.email'
             span#secure-email==< secure_email_to contact.email
             br
-    - if offer.fax?
-      p
-        = "#{I18n.t 'offers.show.contact.fax'}: #{tel_format offer.fax}"
 
     p
       - unless offer.websites.empty?

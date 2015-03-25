@@ -15,7 +15,6 @@ FactoryGirl.define do
 
     # optional fields
     comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..799] }
-    fax { maybe FFaker.numerify('#' * rand(7..11)) }
 
     # associations
 

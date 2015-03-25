@@ -16,7 +16,7 @@ class ContactPerson < ActiveRecord::Base
   validate :at_least_one_field_present
 
   def at_least_one_field_present
-    if %w(name local_number_1 email).all? { |field| self[field].blank? }
+    if %w(name local_number_1 email fax_number).all? { |field| self[field].blank? }
       errors.add :base, I18n.t('validations.contact_person.incomplete')
     end
   end

@@ -10,7 +10,7 @@ FactoryGirl.define do
     end
     local_number_2 { area_code_2 ? FFaker.numerify('#' * rand(7..11)) : nil }
     fax_area_code { maybe FFaker.numerify('#' * rand(3..6)) }
-    fax_number { area_code_1 ? FFaker.numerify('#' * rand(7..11)) : nil }
+    fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
     email { maybe FFaker::Internet.email }
 
     organization

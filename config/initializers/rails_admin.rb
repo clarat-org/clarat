@@ -238,6 +238,9 @@ RailsAdmin.config do |config|
     field :renewed
 
     show do
+      field :created_at do
+        strftime_format "%d. %B %Y"
+      end
       field :created_by
       field :approved_by
     end

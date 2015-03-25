@@ -3,7 +3,7 @@ class MoveFaxFromOfferToContactPerson < ActiveRecord::Migration
     add_column :contact_people, :fax_area_code, :string, limit: 6
     add_column :contact_people, :fax_number, :string, limit: 32
 
-    Offer.find_each do |offer|
+    Offer.where.not(fax: '').find_each do |offer|
       empty_contact = offer.contact_people.where(name: "").first
       if empty_contact
         empty_contact.fax_number = offer.fax

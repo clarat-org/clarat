@@ -9,7 +9,7 @@ class OffersController < ApplicationController
     assign_search_result_instance_variables
     test_location_unavailable
     set_position
-    prepare_gmaps_variables @local_offers
+    prepare_gmaps_variables @personal_offers if @personal_offers
     respond_to do |format|
       format.html do
         template = request.xhr? ? :index_xhr : :index
@@ -37,8 +37,8 @@ class OffersController < ApplicationController
 
   # general variable assignments: search for results, get categories, etc.
   def assign_search_result_instance_variables
-    @local_offers = @search_cache.local_hits
-    @national_offers = @search_cache.national_hits
+    @personal_offers = @search_cache.personal_hits
+    @remote_offers = @search_cache.remote_hits
     @category_tree = Category.hash_tree
     @facets = @search_cache.facet_counts_for_query
   end

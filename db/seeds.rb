@@ -36,6 +36,13 @@ personal =
 tel = EncounterFilter.create name: 'Telefon', identifier: 'hotline'
 web = EncounterFilter.create name: 'E-Mail und Chat', identifier: 'online'
 
+schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
+                      minlong: 5.866342, maxlong: 15.041896
+berlin = Area.create name: 'Berlin', minlat: 52.339630, maxlat: 52.675454,
+                     minlong: 13.089155, maxlong: 13.761118
+Area.create name: 'Brandenburg & Berlin', minlat: 51.359059, maxlat: 53.558980,
+            minlong: 11.268746, maxlong: 14.765826
+
 FederalState.create name: 'Berlin'
 FederalState.create name: 'Brandenburg'
 FederalState.create name: 'Baden-Württemberg'
@@ -54,7 +61,9 @@ FederalState.create name: 'Thüringen'
 FederalState.create name: 'Rheinland-Pfalz'
 FederalState.create name: 'Mallorca' # Don't do this in production :)
 
-SearchLocation.create query: 'Berlin', latitude: 52.520007, longitude: 13.404954, geoloc: '52.520007,13.404954'
+SearchLocation.create query: 'Berlin', latitude: 52.520007,
+                                       longitude: 13.404954,
+                                       geoloc: '52.520007,13.404954'
 
 mains = []
 mains << Category.create(name: 'Akute Krisen', icon: 'a-crisis')
@@ -77,12 +86,15 @@ FactoryGirl.create :offer, :approved, approved_by: user,
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Lokale Hotline',
                                       encounter_filters: [tel],
-                                      local_offer: true
+                                      local_offer: true,
+                                      area: berlin
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweiter Chat',
                                       encounter_filters: [web],
-                                      local_offer: false
+                                      local_offer: false,
+                                      area: schland
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweite Hotline',
                                       encounter_filters: [tel],
-                                      local_offer: false
+                                      local_offer: false,
+                                      area: schland

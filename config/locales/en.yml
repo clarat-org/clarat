@@ -61,6 +61,9 @@ en:
       update_request:
         one: Request for Location Updates
         other: Requests for Location Updates
+      area:
+        one: Area
+        other: Areas
   i18n:
     transliterate:
       rule:

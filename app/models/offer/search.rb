@@ -13,55 +13,53 @@ class Offer
         end
       end
 
-      def self.local_index_name
-        "#{per_env_index}_local"
+      def self.personal_index_name
+        "#{per_env_index}_personal"
       end
 
-      def self.national_index_name
-        "#{per_env_index}_national"
+      def self.remote_index_name
+        "#{per_env_index}_remote"
       end
 
-      algoliasearch index_name: local_index_name,
+      algoliasearch index_name: personal_index_name,
                     disable_indexing: Rails.env.test?,
-                    if: :local_indexable? do
+                    if: :personal_indexable? do
         INDEX = %w(
           name description category_string keyword_string organization_name
         )
         attributesToIndex INDEX
         ranking %w(
-          typo asc(encounter_value) geo words proximity attribute exact custom
+          typo geo words proximity attribute exact custom
         )
         ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
-                      :location_street, :location_city, :location_zip, :_tags]
+                      :location_street, :location_city, :location_zip]
+        FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
         add_attribute(*ATTRIBUTES)
+        add_attribute(*FACETS)
         add_attribute :_geoloc, :encounter_value
-        attributesForFaceting [:_tags]
+        attributesForFaceting FACETS
         optionalWords STOPWORDS
 
-        add_index Offer.national_index_name, disable_indexing: Rails.env.test?,
-                                             if: :national_indexable? do
+        add_index Offer.remote_index_name, disable_indexing: Rails.env.test?,
+                                           if: :remote_indexable? do
           attributesToIndex INDEX
           add_attribute(*ATTRIBUTES)
-          attributesForFaceting [:_tags]
+          add_attribute(*FACETS)
+          add_attribute :area_minlat, :area_maxlat, :area_minlong, :area_maxlong
+          attributesForFaceting FACETS
           optionalWords STOPWORDS
 
           # no encounter value
-          ranking %w(
-            typo geo words proximity attribute exact custom
-          )
+          ranking %w(typo geo words proximity attribute exact custom)
         end
       end
 
-      def local_indexable?
-        approved? && local?
+      def personal_indexable?
+        approved? && personal?
       end
 
-      def national_indexable?
-        approved? && !local?
-      end
-
-      def local?
-        location_id?
+      def remote_indexable?
+        approved? && !personal?
       end
 
       def personal?
@@ -102,9 +100,16 @@ class Offer
         organizations.pluck(:name).join(', ')
       end
 
-      # Used to differentiate between local "hotlines" and local personal offers
-      def encounter_value
-        personal? ? 1 : 0
+      def _age_filters
+        age_filters.pluck(:identifier)
+      end
+
+      def _audience_filters
+        audience_filters.pluck(:identifier)
+      end
+
+      def _language_filters
+        language_filters.pluck(:identifier)
       end
     end
   end

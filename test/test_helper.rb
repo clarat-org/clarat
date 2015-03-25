@@ -15,8 +15,6 @@ require 'minitest/pride'
 require 'mocha/mini_test'
 require 'capybara/rails'
 
-require File.expand_path('../../config/environment', __FILE__)
-
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'minitest/mock'

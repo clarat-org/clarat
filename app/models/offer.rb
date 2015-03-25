@@ -9,6 +9,7 @@ class Offer < ActiveRecord::Base
 
   # Associtations
   belongs_to :location, inverse_of: :offers
+  belongs_to :area, inverse_of: :offers
   has_and_belongs_to_many :categories
   has_and_belongs_to_many :filters
   has_and_belongs_to_many :language_filters,
@@ -56,6 +57,9 @@ class Offer < ActiveRecord::Base
 
   delegate :name, :street, :addition, :city, :zip, :address,
            to: :location, prefix: true, allow_nil: true
+
+  delegate :minlat, :maxlat, :minlong, :maxlong,
+           to: :area, prefix: true, allow_nil: true
 
   def partial_dup
     self.dup.tap do |offer|

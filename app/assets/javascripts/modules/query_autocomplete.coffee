@@ -16,7 +16,7 @@ initTypeahead = ->
     Clarat.algolia_app_id,
     Clarat.algolia_pub_key
   ).initIndex(
-    Clarat.algolia_local_index
+    Clarat.algolia_personal_index
   )
 
   hitTemplate = HoganTemplates['autocomplete']

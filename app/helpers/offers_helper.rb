@@ -18,7 +18,7 @@ module OffersHelper
 
   # collect search information for display in offers#index
   def search_results_info_headline search_cache
-    output = I18n.t('offers.shared.offers', count: search_cache.hit_count)
+    output = base_search_results_info_headline(search_cache)
 
     unless search_cache.category.blank?
       output += " in #{breadcrumb_path search_cache}"
@@ -29,10 +29,30 @@ module OffersHelper
         output += remove_query_link search_cache
       end
     end
+
     output + " (#{search_cache.search_location})"
   end
 
+  # generate collections for radio buttons from enum arrays
+  def i18n_collection values, include_blank = false
+    output = values.map do |value|
+      [I18n.t("offers.shared.collection_names.#{value}"), value]
+    end
+    if include_blank
+      output.unshift([I18n.t('offers.shared.collection_names.blank'), nil])
+    end
+    output
+  end
+
   private
+
+  def base_search_results_info_headline search_cache
+    main_hits = search_cache.personal_hits || search_cache.remote_hits
+    I18n.t(
+      "offers.shared.#{search_cache.contact_type}_offers",
+      count: main_hits.nbHits
+    )
+  end
 
   # breadcrumps to active category
   def breadcrumb_path search_cache
@@ -40,8 +60,9 @@ module OffersHelper
     ancestors = search_cache.category_with_ancestors
     last_index = ancestors.length - 1
     search_cache.category_with_ancestors.each_with_index do |category, index|
-      output += link_to category.name,
-                        offers_path(search_form: search_cache.focus(category))
+      output +=
+        link_to category.name,
+                offers_path(search_form: search_cache.category_focus(category))
       output += ' > ' if index != last_index
     end
     output

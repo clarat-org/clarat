@@ -23,7 +23,9 @@ FactoryGirl.define do
 
     # associations
     organization
-    federal_state { FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin') }
+    federal_state do
+      FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
+    end
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }

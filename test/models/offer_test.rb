@@ -10,7 +10,6 @@ describe Offer do
     it { subject.must_respond_to :name }
     it { subject.must_respond_to :description }
     it { subject.must_respond_to :next_steps }
-    it { subject.must_respond_to :encounter }
     it { subject.must_respond_to :slug }
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
@@ -29,11 +28,12 @@ describe Offer do
       it { subject.must validate_length_of(:description).is_at_most 450 }
       it { subject.must validate_presence_of :next_steps }
       it { subject.must validate_length_of(:next_steps).is_at_most 500 }
-      it { subject.must validate_presence_of :encounter }
-      it { offer.must validate_length_of(:opening_specification).is_at_most 400 }
       it { subject.must validate_length_of(:comment).is_at_most 800 }
       it { subject.must validate_length_of(:legal_information).is_at_most 400 }
       it { subject.must validate_presence_of :expires_at }
+      it do
+        subject.must validate_length_of(:opening_specification).is_at_most 400
+      end
     end
 
     describe 'custom' do
@@ -73,20 +73,6 @@ describe Offer do
       it 'should return users name if there is a version' do
         offer = FactoryGirl.create :offer, :with_creator
         offer.creator.must_equal User.find(offer.created_by).name
-      end
-    end
-
-    describe '#encounter_value' do
-      it 'should return 0 on independent' do
-        Offer.new(encounter: :independent).encounter_value.must_equal 0
-      end
-
-      it 'should return 1 on determinable' do
-        Offer.new(encounter: :determinable).encounter_value.must_equal 1
-      end
-
-      it 'should return 1 on fixed' do
-        Offer.new(encounter: :fixed).encounter_value.must_equal 1
       end
     end
 
@@ -140,6 +126,46 @@ describe Offer do
         offers(:basic).organization_display_name.must_equal(
           I18n.t('offers.index.cooperation')
         )
+      end
+    end
+
+    describe '#personal_indexable?' do
+      it 'should return true when personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns true
+        offer.personal_indexable?.must_equal true
+      end
+
+      it 'should return false when not personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns false
+        offer.personal_indexable?.must_equal false
+      end
+
+      it 'should return false when not approved' do
+        offer.approved = false
+        offer.expects(:personal?).never
+        offer.personal_indexable?.must_equal false
+      end
+    end
+
+    describe '#remote_indexable?' do
+      it 'should return true when not personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns false
+        offer.remote_indexable?.must_equal true
+      end
+
+      it 'should return false when personal and approved' do
+        offer.approved = true
+        offer.stubs(:personal?).returns true
+        offer.remote_indexable?.must_equal false
+      end
+
+      it 'should return false when not approved' do
+        offer.approved = false
+        offer.expects(:personal?).never
+        offer.remote_indexable?.must_equal false
       end
     end
 

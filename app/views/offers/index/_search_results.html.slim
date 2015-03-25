@@ -1,15 +1,32 @@
-.Listing-results
-  h2.Listing-results__headline
-    == search_results_info_headline search_cache
+= render 'offers/index/advanced_search', search_cache: search_cache
 
+.Listing-results
   = link_to '#categories', class: 'jump-to-categories' do
     i.fa.fa-filter
     = I18n.t('offers.index.navigate_to_categories')
 
-  ul.search-results.Listing-results__list
-    - offers.each do |offer|
+  - if search_cache.remote_focussed?
+    - main_offers = remote_offers
+  - else # if local focussed (default)
+    - main_offers = personal_offers
+    - if remote_offers.any?
+      h2.Listing-results__headline
+        | Telefon- und Onlineberatungen
+        - if remote_offers[1]
+          / If more than one national offer
+          =< link_to '(Mehr…)',
+                     offers_path(search_form: search_cache.remote_focus)
+
+      ul.Listing-results__list
+        = render 'offers/index/single_search_result', offer: remote_offers.first
+
+  h2.Listing-results__headline
+    == search_results_info_headline search_cache
+
+  ul.Listing-results__list
+    - main_offers.each do |offer|
       = render 'offers/index/single_search_result', offer: offer
-  = paginate offers
+  = paginate main_offers
 
 / prepare ajax spinner
 i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner

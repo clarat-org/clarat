@@ -68,6 +68,9 @@ de:
       audience_filter:
         one: Zielgruppenfilter
         other: Zielgruppenfilter
+      area:
+        one: Gebiet
+        other: Gebiete
   i18n:
     transliterate:
       rule:

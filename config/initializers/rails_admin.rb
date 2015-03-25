@@ -25,8 +25,8 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact
-    Subscription UpdateRequest Hyperlink OrganizationOffer
+    LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact Keyword
+    Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
 
@@ -193,13 +193,16 @@ RailsAdmin.config do |config|
     end
     field :legal_information
     field :contact_people
-    field :encounter
+    field :encounter do
+      read_only true
+    end
     field :slug do
       read_only do
         bindings[:object].new_record?
       end
     end
     field :location
+    field :area
     field :organizations do
       help do
         'Required before approval. Only approved organizations.'
@@ -365,6 +368,10 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Keyword' do
+    weight 1
+  end
+
+  config.model 'Area' do
     weight 1
   end
 

@@ -5,7 +5,7 @@
       - display_name = "#{name} (#{facets[name] || 0})"
       li.Categories__listitem class=category_list_classes(search_cache, name,
                                                           depth, children)
-        = link_to offers_path(search_form: search_cache.focus(name)),
+        = link_to offers_path(search_form: search_cache.category_focus(name)),
                   class: 'btn' do
           = display_name
 

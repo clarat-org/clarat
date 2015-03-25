@@ -1,46 +1,46 @@
 class SearchForm
+  # Turn into Quasi ActiveModel
   extend ActiveModel::Naming
   include Virtus.model
   include ActiveModel::Conversion
 
-  attr_accessor :hits, :location_fallback
-  # def persisted?
-  #   false
-  # end
+  # Extensions
+  extend Enumerize
+
+  # Modules (located in the search_form subfolder)
+  include SearchExecution
+
+  # Attributes (since this is not ActiveRecord)
+
+  attr_accessor :hits, :personal_hits, :remote_hits, :national_hits,
+                :location_fallback
 
   attribute :query, String
   attribute :search_location, String
   attribute :generated_geolocation, String
   attribute :category, String
-  attribute :exact_location
 
-  def search page
-    @hits = Offer.algolia_search query || '',
-                                 page: page,
-                                 aroundLatLng: geolocation,
-                                 aroundRadius: search_radius,
-                                 tagFilters: category,
-                                 maxValuesPerFacet: 20,
-                                 aroundPrecision: 500
-  end
+  # Hidden Option
+  attribute :exact_location, Boolean, default: false
+
+  # Filters
+  CONTACT_TYPES = [:personal, :remote]
+  attribute :contact_type, String, default: :personal
+  enumerize :contact_type, in: CONTACT_TYPES
+  # Age
+  attribute :age_filter, String
+  enumerize :age_filter, in: AgeFilter::IDENTIFIER
+  # Audience
+  attribute :audience_filter, String
+  enumerize :audience_filter, in: AudienceFilter::IDENTIFIER
+  # Language
+  attribute :language_filter, String
+  enumerize :language_filter, in: LanguageFilter::IDENTIFIER
+
+  # Methods
 
   def nearby?
-    @_nearby ||=
-      Offer.algolia_search('',
-                           page: 0,
-                           hitsPerPage: 1,
-                           aroundLatLng: geolocation,
-                           aroundRadius: 25_000 # check later if accurate
-      ).any?
-  end
-
-  def facet_search
-    @facet_hits ||= Offer.algolia_search query || '',
-                                         aroundLatLng: geolocation,
-                                         aroundRadius: search_radius,
-                                         facets: '*',
-                                         maxValuesPerFacet: 20,
-                                         aroundPrecision: 500
+    @_nearby.any?
   end
 
   def geolocation
@@ -61,26 +61,9 @@ class SearchForm
     end
   end
 
-  # Super wide radius or use exact location
-  def search_radius
-    exact_location ? 100 : 50_000
-  end
-
   def facet_counts_for_query
-    facet_search.facets['_tags']
+    @facet_hits.facets['_tags'] || {}
   end
-  # def categories_by_facet
-  #   categories_facet = @hits.facets['_tags'] # eg { 'foo' => 5, 'bar' => 2 }
-  #   if categories_facet
-  #     categories_facet.to_a.sort_by { |facet| facet[1] }.reverse!
-  #     # categories_facet.each_with_object({}) do |(key, value), out|
-  #     #   (out[value] ||= []) << key
-  #     # end # safe invert; eg { 5 => 'foo' }
-  #     # inverted.values.flatten.uniq
-  #   else
-  #     []
-  #   end
-  # end
 
   # find the actual category object and return it with ancestors
   def category_with_ancestors
@@ -90,6 +73,17 @@ class SearchForm
     end
   end
 
+  # link hash with empty query
+  def empty
+    to_h.merge query: ''
+  end
+
+  # link hash that focuses on a specific category
+  def category_focus category
+    name = category.is_a?(String) ? category : category.name
+    to_h.merge category: name
+  end
+
   def category_in_focus? name
     if category_with_ancestors
       @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
@@ -97,42 +91,13 @@ class SearchForm
     end
   end
 
-  # link hash that focuses on a specific category
-  def focus category
-    name = category.is_a?(String) ? category : category.name
-    { query: query, category: name, search_location: search_location }
+  # link hash that toggles the contact type to remote only
+  def remote_focus
+    to_h.merge contact_type: :remote
   end
 
-  # link hash with empty query
-  def empty
-    { query: '', category: category, search_location: search_location }
-  end
-
-  # # toggles category on or off
-  # def toggle category
-  #   newcategories = category_array
-  #   newcategories << category unless newcategories.delete(category)
-  #   {
-  #     query: query, categories: newcategories.join(','),
-  #     search_location: search_location
-  #   }
-  # end
-
-  # # @return [Boolean]
-  # def includes_category category
-  #   self.category_array.include? category
-  # end
-
-  # def categories_array
-  #   if category
-  #     categories.split(',').map(&:strip)
-  #   else
-  #     []
-  #   end
-  # end
-
-  def hit_count
-    @hits.raw_answer['nbHits']
+  def remote_focussed?
+    contact_type == :remote
   end
 
   def location_for_cookie

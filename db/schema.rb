@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150324163317) do
+ActiveRecord::Schema.define(version: 20150325104744) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "areas", force: true do |t|
+    t.string   "name",       null: false
+    t.float    "minlat",     null: false
+    t.float    "maxlat",     null: false
+    t.float    "minlong",    null: false
+    t.float    "maxlong",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categories", force: true do |t|
     t.string   "name",                  null: false
@@ -144,7 +154,7 @@ ActiveRecord::Schema.define(version: 20150324163317) do
     t.string   "name",                  limit: 80,                 null: false
     t.text     "description",                                      null: false
     t.text     "next_steps"
-    t.string   "encounter",                                        null: false
+    t.string   "encounter"
     t.string   "slug"
     t.integer  "location_id"
     t.datetime "created_at"
@@ -159,9 +169,11 @@ ActiveRecord::Schema.define(version: 20150324163317) do
     t.integer  "approved_by"
     t.boolean  "renewed",                          default: false
     t.date     "expires_at",                                       null: false
+    t.integer  "area_id"
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
+  add_index "offers", ["area_id"], name: "index_offers_on_area_id", using: :btree
   add_index "offers", ["created_at"], name: "index_offers_on_created_at", using: :btree
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
 

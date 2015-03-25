@@ -41,10 +41,69 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
     shared:
-      offers:
-        zero: Keine Angebote
-        one: Ein Angebot
-        other: "%{count} Angebote"
+      personal_offers:
+        zero: Keine Vor-Ort-Angebote
+        one: Ein Vor-Ort-Angebot
+        other: "%{count} Vor-Ort-Angebote"
+      remote_offers:
+        zero: Keine Telefon- und Onlineberatungen
+        one: Eine Telefon- oder Onlineberatung
+        other: "%{count} Telefon- und Onlineberatungen"
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien
+      collection_names:
+        blank: Egal
+        personal: Vor-Ort-Angebote
+        remote: Telefon- und Onlineberatungen
+        babies: Babys
+        toddler: Kleinkinder
+        schoolkid: Schulkinder
+        adolescent: Jugendliche
+        young_adults: junge Erwachsene
+        parents: Eltern
+        grandparents: Großeltern
+        boys_only: nur für Jungen und Männer
+        girls_only: nur für Mädchen und Frauen
+        single_parents: Alleinerziehende
+        patchwork_families: Patchworkfamilien
+        rainbow_families: Regenbogenfamilien
+        lgbt: LGBT
+        deu: Deutsch
+        eng: Englisch
+        tur: Türkisch
+        tha: Thai
+        bul: Bulgarisch
+        ron: Rumänisch
+        sqi: Albanisch
+        ara: Arabisch
+        fra: Französisch
+        kur: Kurdisch
+        rus: Russisch
+        srp: Serbisch
+        amh: Amharisch
+        bos: Bosnisch
+        ita: Italienisch
+        hrv: Kroatisch
+        pol: Polnisch
+        por: Portugiesisch
+        vie: Vietnamesisch
+        wol: Wolof
+        fas: Persisch (Farsi)
+        ben: Bengalisch
+        spa: Spanisch
+        tam: Tamil
+        urd: Urdu
+        mul: andere Sprachen auf Anfrage
+        aze: Aserbaidschanisch
+        ell: Griechisch
+        hin: Hindi
+        mkd: Mazedonisch
+        rom: Romanes
+        hun: Ungarisch
+        "568": Niederländisch
+        "326": Ukrainisch
+        "639": Dari
+        "150": Deutsche Gebärdensprache
+        lav: Lettisch
+        lit: Litauisch

@@ -63,6 +63,8 @@ ActiveRecord::Schema.define(version: 20150325104744) do
     t.string   "local_number_1",  limit: 32
     t.string   "area_code_2",     limit: 6
     t.string   "local_number_2",  limit: 32
+    t.string   "fax_area_code",   limit: 6
+    t.string   "fax_number",      limit: 32
   end
 
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
@@ -157,7 +159,6 @@ ActiveRecord::Schema.define(version: 20150325104744) do
     t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "fax",                   limit: 32
     t.text     "opening_specification"
     t.text     "comment"
     t.boolean  "completed",                        default: false

@@ -64,7 +64,6 @@ class Offer < ActiveRecord::Base
   def partial_dup
     self.dup.tap do |offer|
       offer.name = nil
-      offer.fax = nil
       offer.openings = self.openings
       offer.completed = false
       offer.approved = false
@@ -74,7 +73,7 @@ class Offer < ActiveRecord::Base
   end
 
   def contact_details?
-    !fax.blank? || websites.any? || contact_people.any?
+    websites.any? || contact_people.any?
   end
 
   def social_media_websites?

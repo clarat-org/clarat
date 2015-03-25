@@ -11,6 +11,8 @@ describe ContactPerson do
     it { subject.must_respond_to :local_number_1 }
     it { subject.must_respond_to :area_code_2 }
     it { subject.must_respond_to :local_number_2 }
+    it { subject.must_respond_to :fax_area_code }
+    it { subject.must_respond_to :fax_number }
     it { subject.must_respond_to :email }
   end
 
@@ -21,6 +23,8 @@ describe ContactPerson do
       it { subject.must validate_length_of(:local_number_1).is_at_most 32 }
       it { subject.must validate_length_of(:area_code_2).is_at_most 6 }
       it { subject.must validate_length_of(:local_number_2).is_at_most 32 }
+      it { subject.must validate_length_of(:fax_area_code).is_at_most 6 }
+      it { subject.must validate_length_of(:fax_number).is_at_most 32 }
 
       describe 'custom' do
         describe '#at_least_one_field_present' do

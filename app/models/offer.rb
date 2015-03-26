@@ -84,11 +84,6 @@ class Offer < ActiveRecord::Base
     sites.compact
   end
 
-  # def social_media_websites?
-  #   websites.where(host: [:facebook, :twitter, :youtube, :gplus, :pinterest])
-  #     .count > 0
-  # end
-
   def opening_details?
     !openings.blank? || !opening_specification.blank?
   end

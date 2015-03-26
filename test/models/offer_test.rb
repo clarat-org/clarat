@@ -90,17 +90,6 @@ describe Offer do
       end
     end
 
-    describe '#social_media_websites?' do
-      it 'should return true when offer has a "social" website' do
-        offers(:basic).websites << FactoryGirl.create(:website, :social)
-        offers(:basic).social_media_websites?.must_equal true
-      end
-      it 'should return false when offer has no "social" website' do
-        offers(:basic).websites << FactoryGirl.create(:website, :own)
-        offers(:basic).social_media_websites?.must_equal false
-      end
-    end
-
     describe '#_tags' do
       it 'should return unique categories with ancestors of an offer' do
         offers(:basic).categories << categories(:sub1)

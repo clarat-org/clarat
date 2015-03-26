@@ -18,7 +18,6 @@ feature 'Admin Backend' do
         fill_in 'offer_name', with: 'testangebot'
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
-        select 'Fixed', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
 
@@ -37,6 +36,7 @@ feature 'Admin Backend' do
         fill_in 'organization_name', with: 'testorganisation'
         fill_in 'organization_description', with: 'testdescription'
         select 'e.V.', from: 'organization_legal_form'
+        check 'organization_renewed'
 
         click_button 'Speichern'
         page.must_have_content 'testorganisation'
@@ -56,7 +56,6 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
-      select 'Fixed', from: 'offer_encounter'
       select location.name, from: 'offer_location_id'
       select 'foobar', from: 'offer_organization_ids'
 
@@ -83,7 +82,6 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
-      select 'Fixed', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
@@ -120,10 +118,22 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
       page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
 
-      # 6: fix all orga errors, offer is approved
+      # 6: fix all orga errors, needs age_filter
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.must_have_content 'Age filters benötigt mindestens einen Altersfilter'
+
+      # 7: age_filter given, needs encounter_filter
+      select 'Babies', from: 'offer_age_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.must_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+
+      # 8: encounter_filter given, offer is approved
+      select 'Telefon', from: 'offer_encounter_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

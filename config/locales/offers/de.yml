@@ -12,8 +12,9 @@ de:
       cooperation: Kooperationsprojekt
       map_output_searchresults: Kartenausgabe der Suchergebnisse
       location_everywhere: Überall erreichbar, egal, wo du bist
-      navigate_to_categories: 'Filtern…'
+      navigate_to_categories: 'Kategorien'
       main_categories: Hauptkategorien
+<<<<<<< HEAD
       filter:
         headline: Suchergebnisse filtern/einschränken
         submit: Erneut suchen
@@ -45,8 +46,10 @@ de:
           headline: Öffnungszeiten
           now: Jetzt geöffnet
 
+=======
+>>>>>>> develop
     show:
-      what: Worum gehts?
+      what: Worum geht's?
       where: Wo
       assigned_categories: Zugeordnete Kategorien
       next_steps: Was musst du tun?
@@ -62,9 +65,6 @@ de:
         socialmedia: "Weitere Präsenzen im Netz: "
       organizations: Wer bietet diese Hilfe an?
       map_output_searchresult: Kartenausgabe
-      cta_report_errors: |
-        Sind die hier dargestellten Informationen fehlerhaft oder unvollständig,
-        lass es uns bitte wissen!
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
@@ -75,10 +75,69 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
     shared:
-      offers:
-        zero: Keine Angebote
-        one: Ein Angebot
-        other: "%{count} Angebote"
+      personal_offers:
+        zero: Keine Vor-Ort-Angebote
+        one: Ein Vor-Ort-Angebot
+        other: "%{count} Vor-Ort-Angebote"
+      remote_offers:
+        zero: Keine Telefon- und Onlineberatungen
+        one: Eine Telefon- oder Onlineberatung
+        other: "%{count} Telefon- und Onlineberatungen"
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien
+      collection_names:
+        blank: Egal
+        personal: Vor-Ort-Angebote
+        remote: Telefon- und Onlineberatungen
+        babies: Babys
+        toddler: Kleinkinder
+        schoolkid: Schulkinder
+        adolescent: Jugendliche
+        young_adults: junge Erwachsene
+        parents: Eltern
+        grandparents: Großeltern
+        boys_only: nur für Jungen und Männer
+        girls_only: nur für Mädchen und Frauen
+        single_parents: Alleinerziehende
+        patchwork_families: Patchworkfamilien
+        rainbow_families: Regenbogenfamilien
+        lgbt: LGBT
+        deu: Deutsch
+        eng: Englisch
+        tur: Türkisch
+        tha: Thai
+        bul: Bulgarisch
+        ron: Rumänisch
+        sqi: Albanisch
+        ara: Arabisch
+        fra: Französisch
+        kur: Kurdisch
+        rus: Russisch
+        srp: Serbisch
+        amh: Amharisch
+        bos: Bosnisch
+        ita: Italienisch
+        hrv: Kroatisch
+        pol: Polnisch
+        por: Portugiesisch
+        vie: Vietnamesisch
+        wol: Wolof
+        fas: Persisch (Farsi)
+        ben: Bengalisch
+        spa: Spanisch
+        tam: Tamil
+        urd: Urdu
+        mul: andere Sprachen auf Anfrage
+        aze: Aserbaidschanisch
+        ell: Griechisch
+        hin: Hindi
+        mkd: Mazedonisch
+        rom: Romanes
+        hun: Ungarisch
+        "568": Niederländisch
+        "326": Ukrainisch
+        "639": Dari
+        "150": Deutsche Gebärdensprache
+        lav: Lettisch
+        lit: Litauisch

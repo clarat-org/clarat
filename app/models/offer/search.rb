@@ -13,21 +13,57 @@ class Offer
         end
       end
 
-      algoliasearch index_name: per_env_index,
+      def self.personal_index_name
+        "#{per_env_index}_personal"
+      end
+
+      def self.remote_index_name
+        "#{per_env_index}_remote"
+      end
+
+      algoliasearch index_name: personal_index_name,
                     disable_indexing: Rails.env.test?,
-                    if: :approved? do
-        attributesToIndex %w(
+                    if: :personal_indexable? do
+        INDEX = %w(
           name description category_string keyword_string organization_name
         )
+        attributesToIndex INDEX
         ranking %w(
-          typo asc(encounter_value) geo words proximity attribute exact custom
-        ) # ^encounter_value
-        add_attribute :_geoloc, :_tags
-        add_attribute :category_string, :keyword_string, :organization_names,
-                      :location_street, :location_city, :location_zip,
-                      :encounter_value
-        attributesForFaceting [:_tags]
+          typo geo words proximity attribute exact custom
+        )
+        ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
+                      :location_street, :location_city, :location_zip]
+        FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
+        add_attribute(*ATTRIBUTES)
+        add_attribute(*FACETS)
+        add_attribute :_geoloc, :encounter_value
+        attributesForFaceting FACETS
         optionalWords STOPWORDS
+
+        add_index Offer.remote_index_name, disable_indexing: Rails.env.test?,
+                                           if: :remote_indexable? do
+          attributesToIndex INDEX
+          add_attribute(*ATTRIBUTES)
+          add_attribute(*FACETS)
+          add_attribute :area_minlat, :area_maxlat, :area_minlong, :area_maxlong
+          attributesForFaceting FACETS
+          optionalWords STOPWORDS
+
+          # no geo necessary
+          ranking %w(typo words proximity attribute exact custom)
+        end
+      end
+
+      def personal_indexable?
+        approved? && personal?
+      end
+
+      def remote_indexable?
+        approved? && !personal?
+      end
+
+      def personal?
+        self.encounter_filters.where(identifier: 'personal').count > 0
       end
 
       # Offer's location's geo coordinates for indexing
@@ -48,10 +84,10 @@ class Offer
       end
 
       # additional searchable string made from categories
-      # ToDo Überhaupt notwendig, wenn es für Kategorien keine Synonyme mehr
+      # TODO: Ueberhaupt notwendig, wenn es fuer Kategorien keine Synonyme mehr
       # gibt?
       def category_string
-        categories.pluck(:name, :synonyms).flatten.compact.uniq.join(', ')
+        categories.pluck(:name).flatten.compact.uniq.join(', ')
       end
 
       # additional searchable string made from categories
@@ -64,12 +100,16 @@ class Offer
         organizations.pluck(:name).join(', ')
       end
 
-      # Offer's encounter modifier for indexing
-      def encounter_value
-        case encounter
-        when 'independent' then 0
-        when 'determinable', 'fixed' then 1
-        end
+      def _age_filters
+        age_filters.pluck(:identifier)
+      end
+
+      def _audience_filters
+        audience_filters.pluck(:identifier)
+      end
+
+      def _language_filters
+        language_filters.pluck(:identifier)
       end
     end
   end

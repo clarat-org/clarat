@@ -3,24 +3,25 @@ require 'ffaker'
 FactoryGirl.define do
   factory :offer do
     # required fields
-    name { Faker::Lorem.words(rand(3..5)).join(' ').titleize }
-    description { Faker::Lorem.paragraph(rand(4..6))[0..399] }
-    next_steps { Faker::Lorem.paragraph(rand(1..3))[0..399] }
-    encounter do
-      Offer.enumerized_attributes.attributes['encounter'].values.sample
-    end
-    frequent_changes { Faker::Boolean.maybe }
+    name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
+    description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
+    next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     completed false
     approved false
     approved_at nil
 
     # optional fields
-    comment { maybe Faker::Lorem.paragraph(rand(4..6))[0..799] }
-    fax { maybe Faker.numerify('#' * rand(7..11)) }
+    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..799] }
 
     # associations
 
-    ignore do
+    encounter_filters do
+      encounters = %w(personal hotline online)
+      selected = encounters.sample(rand(1..3))
+      selected.map { |s| EncounterFilter.find_by_identifier(s) }
+    end
+
+    transient do
       organization_count 1
       contact_person_count 1
       website_count { rand(0..3) }
@@ -28,6 +29,7 @@ FactoryGirl.define do
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
+      local_offer { maybe true }
     end
 
     after :create do |offer, evaluator|
@@ -38,12 +40,10 @@ FactoryGirl.define do
 
       # location
       organization = offer.organizations.first
-      if organization
-        location = offer.encounter == 'independent' ? nil : (
-          organization.locations.sample ||
-          FactoryGirl.create(:location, organization: organization)
-        )
-        offer.update_column :location_id, location.id if location
+      if organization && (offer.personal? || evaluator.local_offer)
+        location = organization.locations.sample ||
+                   FactoryGirl.create(:location, organization: organization)
+        offer.update_column :location_id, location.id
       end
 
       # Contact People
@@ -56,7 +56,8 @@ FactoryGirl.define do
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
       if evaluator.category
-        offer.categories << FactoryGirl.create(:category, name: evaluator.category)
+        offer.categories << FactoryGirl.create(:category,
+                                               name: evaluator.category)
       else
         evaluator.category_count.times do
           offer.categories << (
@@ -74,19 +75,22 @@ FactoryGirl.define do
         )
       end
       evaluator.language_count.times do
-        offer.languages << (
-          Language.select(:id).all.sample || FactoryGirl.create(:language)
+        offer.language_filters << (
+          LanguageFilter.select(:id).all.sample ||
+            FactoryGirl.create(:language_filter)
         )
       end
     end
 
     trait :approved do
       after :create do |offer, _evaluator|
-        Offer.where(id: offer.id).update_all completed: true, approved: true, approved_at: Time.now
+        Offer.where(id: offer.id).update_all completed: true, approved: true,
+                                             approved_at: Time.now
       end
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
+    # TODO: Introduce encounter_filter instead
     trait :with_location do
       encounter 'fixed'
     end

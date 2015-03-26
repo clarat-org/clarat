@@ -2,14 +2,16 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :contact_person do
-    name { Faker::NameDE.name }
-    area_code_1 { maybe Faker.numerify('#' * rand(3..6)) }
-    local_number_1 { area_code_1 ? Faker.numerify('#' * rand(7..11)) : nil }
+    name { FFaker::NameDE.name }
+    area_code_1 { maybe FFaker.numerify('#' * rand(3..6)) }
+    local_number_1 { area_code_1 ? FFaker.numerify('#' * rand(7..11)) : nil }
     area_code_2 do
-      (rand(2) == 0 && local_number_1) ? Faker.numerify('#' * rand(3..6)) : nil
+      (rand(2) == 0 && local_number_1) ? FFaker.numerify('#' * rand(3..6)) : nil
     end
-    local_number_2 { area_code_2 ? Faker.numerify('#' * rand(7..11)) : nil }
-    email { maybe Faker::Internet.email }
+    local_number_2 { area_code_2 ? FFaker.numerify('#' * rand(7..11)) : nil }
+    fax_area_code { maybe FFaker.numerify('#' * rand(3..6)) }
+    fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
+    email { maybe FFaker::Internet.email }
 
     organization
 
@@ -17,6 +19,7 @@ FactoryGirl.define do
       name nil
       local_number_1 nil
       local_number_2 nil
+      fax_number nil
       email nil
     end
   end

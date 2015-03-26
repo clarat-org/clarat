@@ -15,8 +15,6 @@ require 'minitest/pride'
 require 'mocha/mini_test'
 require 'capybara/rails'
 
-require File.expand_path('../../config/environment', __FILE__)
-
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'minitest/mock'
@@ -82,6 +80,21 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+class MiniTest::Spec
+  before :each do
+    DatabaseCleaner.start
+  end
+
+  after :each do
+    DatabaseCleaner.clean
+
+    $suite_passing = false if failure
+  end
+
+  # Add more helper methods to be used by all tests here...
+end
+
 $suite_passing = true
 
 DatabaseCleaner.strategy = :transaction

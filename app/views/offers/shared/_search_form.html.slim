@@ -1,4 +1,4 @@
-= simple_form_for search_cache, url: offers_path,
+= simple_form_for search_cache, url: offers_path, # namespace: 'nav',
                                 html: { method: :get, novalidate: false } do |f|
   = f.input :query, label: t('shared.search.labels.query'),
                     required: false,

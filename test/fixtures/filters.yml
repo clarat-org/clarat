@@ -1,0 +1,26 @@
+deutsch:
+  type: LanguageFilter
+  name: Deutsch
+  identifier: deu
+english:
+  type: LanguageFilter
+  name: English
+  identifier: eng
+
+baby_age:
+  type: AgeFilter
+  name: Babies
+  identifier: babies
+
+personal_encounter:
+  type: EncounterFilter
+  name: persönliches Gespräch
+  identifier: personal
+hotline_encounter:
+  type: EncounterFilter
+  name: Telefon
+  identifier: hotline
+online_encounter:
+  type: EncounterFilter
+  name: E-Mail und Chat
+  identifier: online

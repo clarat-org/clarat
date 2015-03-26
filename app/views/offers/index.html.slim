@@ -1,10 +1,15 @@
 .wrapper-inner
-
   main.content-main
+<<<<<<< HEAD
 
     = render 'offers/index/filter'
 
     = render 'offers/index/search_results', offers: @offers
+=======
+    = render 'offers/index/search_results', personal_offers: @personal_offers,
+                                            remote_offers: @remote_offers,
+                                            search_cache: @search_cache
+>>>>>>> develop
 
   - if @update_request
     = modal_for 'unavailable_location_overlay' do
@@ -12,7 +17,7 @@
       = render '/update_requests/new', update_request: @update_request
 
   = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                                facets: @facets,
-                                                search_cache: @search_cache
+                                              facets: @facets,
+                                              search_cache: @search_cache
 - content_for :view_specific_scripts do
   = javascript_include_tag "gmaps_search_results.js"

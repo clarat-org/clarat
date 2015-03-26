@@ -1,7 +1,6 @@
 require_relative '../test_helper'
 
 describe SearchLocation do
-
   let(:search_location) { SearchLocation.new(query: 'Foobar') }
 
   subject { search_location }

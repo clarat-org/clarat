@@ -1,0 +1,31 @@
+// ---------------------------------------------------------------
+//
+//  Privacy Statement module
+//
+// ---------------------------------------------------------------
+
+.Privacy {
+	p {
+		margin-top: 0;
+	}
+}
+
+.Privacy__list,
+.Privacy__list--sublist {
+	list-style: none;
+}
+
+.Privacy__list--sublist {
+	margin-left: 20px;
+}
+
+.Privacy__title {
+	margin: 1em 0 .5em;
+}
+
+.Privacy__address {
+	p {
+		margin: 0;
+	}
+}
+

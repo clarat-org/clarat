@@ -1,0 +1,30 @@
+.TODOGiveMeAName
+  h2 Suchergebnisse filtern/einschränken
+  = simple_form_for search_cache, url: offers_path, namespace: 'advanced',
+                    html: { method: :get, novalidate: false } do |f|
+    = f.input :query, as: :hidden
+    = f.input :search_location, as: :hidden
+    = f.input :generated_geolocation, as: :hidden
+    = f.input :category, as: :hidden
+
+    fieldset
+      legend Kontaktaufnahme
+      = f.input :contact_type, as: :radio_buttons, label: false,
+                collection: i18n_collection(SearchForm::CONTACT_TYPES)
+
+    fieldset
+      legend Alter
+      = f.input :age_filter, as: :radio_buttons, label: false,
+                collection: i18n_collection(AgeFilter::IDENTIFIER, true)
+
+    fieldset
+      legend Zielgruppe
+      = f.input :audience_filter, as: :radio_buttons, label: false,
+                collection: i18n_collection(AudienceFilter::IDENTIFIER, true)
+
+    fieldset
+      legend Sprache
+      = f.input :language_filter, label: false,
+                collection: i18n_collection(LanguageFilter::IDENTIFIER)
+
+    = f.submit 'Erneut suchen'

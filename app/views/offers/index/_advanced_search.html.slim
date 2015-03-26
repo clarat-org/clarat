@@ -10,25 +10,46 @@
       .col-form-inner
         fieldset.filter-form__fieldset
           legend.filter-form__fieldset__headline Kontaktaufnahme
-          = f.input :contact_type, item_wrapper_class: 'filter-form__radio', as: :radio_buttons, label: false, boolean_style: :inline,
+          = f.input :contact_type,
+                    item_wrapper_class: 'filter-form__radio',
+                    as: :radio_buttons,
+                    label: false,
+                    boolean_style: :inline,
                     collection: i18n_collection(SearchForm::CONTACT_TYPES)
 
       .col-form-inner
         fieldset.filter-form__fieldset
           legend.filter-form__fieldset__headline Alter
-          = f.input :age_filter, item_wrapper_class: 'filter-form__radio', as: :radio_buttons, label: false, boolean_style: :inline,
+          = f.input :age_filter,
+                    item_wrapper_class: 'filter-form__radio',
+                    as: :radio_buttons,
+                    label: false,
+                    boolean_style: :inline,
                     collection: i18n_collection(AgeFilter::IDENTIFIER, true)
 
       .col-form-inner
         fieldset.filter-form__fieldset
           legend.filter-form__fieldset__headline Zielgruppe
-          = f.input :audience_filter, item_wrapper_class: 'filter-form__radio' , as: :radio_buttons, label: false, boolean_style: :inline,
-                    collection: i18n_collection(AudienceFilter::IDENTIFIER, true)
+          = f.input :audience_filter,
+                    item_wrapper_class: 'filter-form__radio',
+                    as: :radio_buttons,
+                    label: false,
+                    boolean_style: :inline,
+                    collection: \
+                      i18n_collection(AudienceFilter::IDENTIFIER, true)
 
       .col-form-inner
         fieldset.filter-form__fieldset.filter-form__fieldset--last
           legend.filter-form__fieldset__headline Sprache
-          = f.input :language_filter, class: 'filter-form__select', label: false,
+          = f.input :language_filter,
+                    class: 'filter-form__select',
+                    label: false,
                     collection: i18n_collection(LanguageFilter::IDENTIFIER)
+
+          / to enter loop (remove if not needed):
+          / = f.input :language_filter, label: false do
+          /   = f.select :language_filter,
+          /       i18n_collection(LanguageFilter::IDENTIFIER, false, true),
+          /              class: "filter-form__select"
 
           = f.submit 'Erneut suchen', class: 'filter-form__submit'

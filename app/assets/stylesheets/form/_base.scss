@@ -42,3 +42,13 @@ input[type="submit"] {
   background-color: $brand_brown;
   color: $brand_white;
 }
+
+.col-wrapper {
+  display: table;
+}
+
+.col-form-inner {
+  position: relative;
+  display: table-cell;
+  width: 25%;
+}

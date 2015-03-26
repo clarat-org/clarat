@@ -6,41 +6,48 @@
       /.page-detail__icons
       /  - @offer.categories.mains.each do |main_tag|
       /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
+
+    / Left side (in desktop)
     .section-wrapper-major
+      / What's it all about?
       section.section-content.section-content--what
         h3.section-content__title = t 'offers.show.what'
         .section-content__body
           == @offer.description
 
+      / Who is offering this service?
+      = render 'offers/show/who_section',
+               organizations: @offer.organizations,
+               offer: @offer,
+               markers: @markers
+
+    / Right side (in desktop)
+    .section-wrapper-minor
+
+      / What to do next?
       section.section-content.section-content--nextsteps
         h3.section-content__title
           = t 'offers.show.next_steps'
         .section-content__body
           == @offer.next_steps
 
+
+      / When can you contact?
       - if @offer.opening_details?
         = render 'offers/show/opening_section', offer: @offer
 
-      - if @offer.contact_details?
-        = render 'offers/show/contact_section', offer: @offer
+      / Internet Presence
+      = render 'offers/show/website_section', offer: @offer
 
-      = render 'offers/show/organizations_section',
-               organizations: @offer.organizations
+      / Categories
+      /- unless @offer.categories.empty?
+      / = render 'offers/show/categories_section', categories: @offer.categories
 
-    .section-wrapper-minor
-
-      - if @offer.location
-        = render 'offers/show/location_section', offer: @offer,
-                                                 markers: @markers
-
-      - unless @offer.categories.empty?
-        = render 'offers/show/categories_section', categories: @offer.categories
-
+      / Found any mistakes?
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
         = t 'shared.show.cta_report_errors'
-
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 

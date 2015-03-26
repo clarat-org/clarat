@@ -1,0 +1,31 @@
+h4 = t 'offers.show.who.person'
+- if offer.contact_people.any?
+  ul
+  / TODO: Order by no name first
+  - offer.contact_people.each do |contact|
+    li
+      - if contact.name?
+        = "#{I18n.t 'offers.show.who.person'}: #{contact.name}"
+        br
+      - if contact.local_number_1?
+        = t 'offers.show.who.phone'
+        a< href="tel:#{contact.telephone_1}"
+          = contact.area_code_1
+          =< tel_format contact.local_number_1
+        br
+      - if contact.local_number_2?
+        = t 'offers.show.who.phone'
+        a< href="tel:#{contact.telephone_2}"
+          = contact.area_code_2
+          =< tel_format contact.local_number_2
+
+      - if contact.fax_number?
+        = t 'offers.show.who.fax'
+        a< href="fax:#{contact.fax}"
+          = contact.fax_area_code
+          =< tel_format contact.fax_number
+        br
+      - if contact.email?
+        = t 'offers.show.who.email'
+        span#secure-email==< secure_email_to contact.email
+        br

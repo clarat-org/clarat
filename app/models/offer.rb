@@ -76,10 +76,18 @@ class Offer < ActiveRecord::Base
     websites.any? || contact_people.any?
   end
 
-  def social_media_websites?
-    websites.where(host: [:facebook, :twitter, :youtube, :gplus, :pinterest])
-      .count > 0
+  def structured_websites
+    sites = []
+    Website::HOSTS[0..-2].each do |host| # no "other"
+      sites << websites.send(host).first
+    end
+    sites.compact
   end
+
+  # def social_media_websites?
+  #   websites.where(host: [:facebook, :twitter, :youtube, :gplus, :pinterest])
+  #     .count > 0
+  # end
 
   def opening_details?
     !openings.blank? || !opening_specification.blank?

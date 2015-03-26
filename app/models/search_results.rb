@@ -38,8 +38,8 @@ class SearchResults
   def new_offer_from_json_slice json
     Offer.new json.slice(*%w(
       id name description next_steps encounter slug location_id created_at
-      updated_at fax opening_specification comment completed approved
-      approved_at legal_information created_by approved_by renewed expires_at
+      updated_at opening_specification comment completed approved approved_at
+      legal_information created_by approved_by renewed expires_at
     )) # organization_names encounter_value objectID _highlightResult _tags
   end
 

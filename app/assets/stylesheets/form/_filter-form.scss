@@ -10,15 +10,55 @@
   @extend %clearfix;
   @extend %clarat_rounding_start;
   @extend %clarat_rounding_end;
-  background: $brand_beige image-url('ico_filter.svg') no-repeat 20px 20px;
-  padding: 10px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 20px;
+  padding: 10px 10px 10px 0;
+  background: $brand_beige image-url('ico_filter.svg') no-repeat 20px 20px;
+
+  &:before {
+    bottom: 0;
+    z-index: 20;
+    height: 30px;
+    background: $brand_beige;
+    position: absolute;
+    left: 0;
+    width: 75%;
+    content: ' ';
+  }
+}
+
+.filter-form--isCollapsed {
+
+  &:after {
+    position: absolute;
+    left: 0;
+    width: 75%;
+    content: ' ';
+    bottom: 30px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba($brand_beige, 0) 0%, rgba($brand_beige, 1) 100%);
+
+  }
+}
+
+.filter-form__expander {
+  @extend %roboto_bold;
+  position: absolute;
+  z-index: 30;
+  padding-top: 20px;
+  width: 75%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+  bottom: 8px;
 }
 
 .filter-form__headline {
+  margin: 10px 10px 20px;
   text-align: right;
   font-size: 20px;
-  margin: 10px 10px 20px;
 }
 
 .filter-form__fieldset {
@@ -27,12 +67,15 @@
   border: none;
 }
 
+.filter-form__fieldset--last {
+  padding: 0;
+}
 
 .filter-form__fieldset__headline {
   @extend %roboto_bold;
-  font-weight: normal;
+  margin: 0 0 5px;
   color: $brand_blue;
-  margin: 0;
+  font-weight: normal;
   font-size: 13px;
 }
 
@@ -41,21 +84,21 @@
 }
 
 .col-form-inner {
+  position: relative;
   display: table-cell;
   width: 25%;
-  position: relative;
 }
 
 [type="submit"].filter-form__submit {
   @extend %clarat_rounding_end;
-  width: 100%;
-  background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
-  background-size: 20px 20px;
-  padding: 10px 15px 10px 30px;
-  min-height: 40px;
   position: absolute;
   right: 0;
   bottom: 0;
+  padding: 10px 15px 10px 30px;
+  min-height: 40px;
+  width: 25%;
+  background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
+  background-size: 20px 20px;
 }
 
 #advanced_search_form_language_filter,
@@ -64,20 +107,21 @@
 }
 
 .filter-form__radio {
+  position: relative;
   display: block;
   margin-bottom: 2px;
 
   label {
     position: relative;
-    margin: 0 0 3px 6px;
-    font-size: 13px;
     display: inline-block;
-    max-width: 85%;
+    margin: 0 0 3px 19px;
+    font-size: 12px;
   }
 
   input {
-    float: left;
-    margin-top: 5px;
+    position: absolute;
+    top: 5px;
+    left: 0;
   }
 }
 

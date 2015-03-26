@@ -1,6 +1,5 @@
 de:
   offers:
-
     index:
       unavailable_location_modal: |
         Leider finden sich auf unserer Plattform aktuell nur Angebote aus
@@ -14,6 +13,7 @@ de:
       location_everywhere: Überall erreichbar, egal, wo du bist
       navigate_to_categories: 'Kategorien'
       main_categories: Hauptkategorien
+      all_categories: Alle Kategorien
     show:
       what: Worum geht's?
       where: Wo

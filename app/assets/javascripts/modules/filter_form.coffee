@@ -2,8 +2,6 @@
 
 initFilterForm = ->
 
-  filterSwitch = ->
-
   filterExpand = ->
 
     $filterForm = $('.filter-form')
@@ -32,7 +30,6 @@ initFilterForm = ->
               .addClass 'filter-form--isCollapsed'
 
 
-  filterSwitch()
   filterExpand()
 
 

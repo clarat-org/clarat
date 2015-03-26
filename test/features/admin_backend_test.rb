@@ -89,7 +89,8 @@ feature 'Admin Backend' do
       # 2: Fail to approve as same user
       check 'offer_approved'
       click_button 'Speichern'
-      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
+      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in'\
+                             ' gesetzt werden'
 
       # 3: Login as user able to approve, fail to approve incomplete offer
       login_as superuser
@@ -101,39 +102,60 @@ feature 'Admin Backend' do
       uncheck 'offer_completed'
       check 'offer_approved'
       click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
-      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
+      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in'\
+                             ' gesetzt werden'
+      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
+                             ' auch "Completed" gesetzt ist'
 
       # 4: Set complete, fail to approve offer without organization
       check 'offer_completed'
       click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
-      page.must_have_content 'Organizations benötigt mindestens eine Organisation'
+      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
+                             ' auch "Completed" gesetzt ist'
+      page.must_have_content 'Organizations benötigt mindestens eine'\
+                             ' Organisation'
 
       # 5: fix orga selection error, but orga is not approved
       orga.update_column :approved, false
       select 'foobar', from: 'offer_organization_ids'
       click_button 'Speichern'
 
-      page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
-      page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.wont_have_content 'Organizations benötigt mindestens eine'\
+                             ' Organisation'
+      page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten, bevor dieses Angebot bestätigt'\
+                             ' werden kann.'
 
       # 6: fix all orga errors, needs age_filter
       orga.update_column :approved, true
       click_button 'Speichern'
-      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
-      page.must_have_content 'Age filters benötigt mindestens einen Altersfilter'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten, bevor dieses Angebot bestätigt'\
+                             ' werden kann.'
+      page.must_have_content 'Age filters benötigt mindestens einen'\
+                             ' Altersfilter'
 
       # 7: age_filter given, needs encounter_filter
       select 'Babies', from: 'offer_age_filter_ids'
       click_button 'Speichern'
-      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
-      page.must_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+      page.wont_have_content 'Age filters benötigt mindestens einen'\
+                             ' Altersfilter'
+      page.must_have_content 'Encounter filters benötigt mindestens einen'\
+                             ' Kontaktfilter'
 
-      # 8: encounter_filter given, offer is approved
+      # 8: encounter_filter (not personal) given, needs an area
       select 'Telefon', from: 'offer_encounter_filter_ids'
       click_button 'Speichern'
-      page.wont_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+      page.wont_have_content 'Encounter filters benötigt mindestens einen'\
+                             ' Kontaktfilter'
+      page.must_have_content 'Area muss ausgefüllt werden, wenn der Encounter'\
+                             ' Filter "personal" nicht gesetzt wurde'
+
+      # 9: area given, offer is approved
+      select 'Deutschland', from: 'offer_area_id'
+      click_button 'Speichern'
+      page.wont_have_content 'Area muss ausgefüllt werden, wenn der Encounter'\
+                             ' Filter "personal" nicht gesetzt wurde'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

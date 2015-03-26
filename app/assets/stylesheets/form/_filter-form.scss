@@ -8,22 +8,25 @@
 
 .filter-form {
   @extend %clearfix;
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
   background: $brand_beige image-url('ico_filter.svg') no-repeat 20px 20px;
-  padding: 20px 20px 0;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-form__headline {
   text-align: right;
   font-size: 20px;
-  line-height: 20px;
-  margin-bottom: 20px;
+  margin: 10px 10px 20px;
 }
 
 .filter-form__fieldset {
   margin: 0;
-  padding: 0 10px 20px 0;
+  padding: 0 10px;
   border: none;
 }
+
 
 .filter-form__fieldset__headline {
   @extend %roboto_bold;
@@ -33,56 +36,53 @@
   font-size: 13px;
 }
 
-.col-form-inner {
-  display: inline-block;
-  float: left;
-  width: 25%;
+.col-wrapper {
+  display: table;
 }
 
-.filter-form__submit {
+.col-form-inner {
+  display: table-cell;
+  width: 25%;
+  position: relative;
+}
+
+[type="submit"].filter-form__submit {
   @extend %clarat_rounding_end;
   width: 100%;
   background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
   background-size: 20px 20px;
   padding: 10px 15px 10px 30px;
   min-height: 40px;
-
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-//.filter-form__radio {
-//  display: none;
-//}
+#advanced_search_form_language_filter,
+.filter-form__select {
+  width: 100%;
+}
+
+.filter-form__radio {
+  display: block;
+  margin-bottom: 2px;
+
+  label {
+    position: relative;
+    margin: 0 0 3px 6px;
+    font-size: 13px;
+    display: inline-block;
+    max-width: 85%;
+  }
+
+  input {
+    float: left;
+    margin-top: 5px;
+  }
+}
 
 .filter-form__radio,
 .filter-form__label {
   cursor: pointer;
 }
 
-//.filter-form__label {
-//  position: relative;
-//  margin: 2px 0 3px 19px;
-//  font-size: 13px;
-//  display: inline-block;
-//
-//  &:before {
-//    content: "";
-//    display: inline-block;
-//    width: 13px;
-//    height: 13px;
-//    margin-right: 10px;
-//    position: absolute;
-//    top: 4px;
-//    left: -19px;
-//    bottom: 1px;
-//    background-color: $brand_white;
-//  }
-//}
-//
-//.filter-form__radio:selected + .filter-form__label:before {
-//  content: "\2713";
-//  font-size: 21px;
-//  color: $brand_brown;
-//  text-align: center;
-//  line-height: 10px;
-//  display: inline-block;
-//}

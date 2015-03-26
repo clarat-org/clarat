@@ -13,7 +13,7 @@ input,
 textarea {
   @include input-placeholder(rgba($brand_brown, .72), 400, null);
   @extend %roboto_light;
-  background: $brand_beige;
+  background-color: $brand_beige;
 }
 
 input,
@@ -27,7 +27,7 @@ button {
 input,
 textarea {
   &:focus {
-    background: $brand_beige;
+    background-color: $brand_beige;
   }
 }
 
@@ -39,6 +39,6 @@ button,
 input[type="submit"] {
   @extend %roboto_bold;
   font-weight: 400;
-  background: $brand_brown;
+  background-color: $brand_brown;
   color: $brand_white;
 }

@@ -72,6 +72,12 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  # handled in observer before save
+  def generate_from_markdown
+    self.description_html = MarkdownRenderer.render description
+    self.next_steps_html = MarkdownRenderer.render next_steps
+  end
+
   def contact_details?
     websites.any? || contact_people.any?
   end

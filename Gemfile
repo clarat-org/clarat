@@ -92,6 +92,7 @@ gem 'dynamic_sitemaps'
 gem 'sanitize' # parser based sanitization
 # gem 'awesome_nested_set'
 gem 'closure_tree'
+gem 'redcarpet' # Markdown processing
 
 # search
 gem 'algoliasearch-rails'

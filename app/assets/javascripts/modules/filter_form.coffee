@@ -5,7 +5,7 @@ initFilterForm = ->
   filterExpand = ->
 
     $filterForm = $('.filter-form')
-    startHeight = $('.col-form-inner:first').find('.radio_buttons').height()  * 3.5
+    startHeight = $('.col-form-inner:first').find('.radio_buttons').height() * 3.5
     expandLabel = 'Mehr Filter anzeigen'
     collapseLabel = 'Weniger Filter anzeigen'
 

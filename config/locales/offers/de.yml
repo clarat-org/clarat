@@ -14,40 +14,6 @@ de:
       location_everywhere: Überall erreichbar, egal, wo du bist
       navigate_to_categories: 'Kategorien'
       main_categories: Hauptkategorien
-<<<<<<< HEAD
-      filter:
-        headline: Suchergebnisse filtern/einschränken
-        submit: Erneut suchen
-        contact:
-          headline: Kontaktaufnahme
-          personal_talk: persönliches Gespräch
-          phone: Telefon
-          mail_chat: E-Mail und Chat
-        age:
-          headline: Alter
-          babies: Babys
-          toddlers: Kleinkinder
-          pupils: Schulkinder
-          juveniles: Jugendliche
-          young_adults: junge Erwachsene
-          parents: Eltern
-          grandparents: Großeltern
-        target_group:
-          headline: Zielgruppe
-          male: nur für Jungen und Männer
-          female: nur für Mädchen und Frauen
-          single_parent: Alleinerziehende
-          patchwork: Patchworkfamilie
-          rainbow: Regenbogenfamilie
-          lgbt: LGBT
-        languages:
-          headline: Sprache
-        opening_hours:
-          headline: Öffnungszeiten
-          now: Jetzt geöffnet
-
-=======
->>>>>>> develop
     show:
       what: Worum geht's?
       where: Wo

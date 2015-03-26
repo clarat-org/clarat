@@ -1,15 +1,9 @@
 .wrapper-inner
   main.content-main
-<<<<<<< HEAD
 
-    = render 'offers/index/filter'
-
-    = render 'offers/index/search_results', offers: @offers
-=======
     = render 'offers/index/search_results', personal_offers: @personal_offers,
                                             remote_offers: @remote_offers,
                                             search_cache: @search_cache
->>>>>>> develop
 
   - if @update_request
     = modal_for 'unavailable_location_overlay' do

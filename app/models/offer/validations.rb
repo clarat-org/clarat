@@ -36,6 +36,7 @@ class Offer
         validate_associated_presence :organizations
         validate_associated_presence :encounter_filters
         validate_associated_presence :age_filters
+        validate_associated_presence :language_filters
       end
 
       def validate_associated_presence field

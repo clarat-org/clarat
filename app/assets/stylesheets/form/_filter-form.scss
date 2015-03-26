@@ -84,9 +84,11 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 40;
   padding: 10px 15px 10px 30px;
   min-height: 40px;
   width: 25%;
+  width: calc(25% + 13px);
   background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
   background-size: 20px 20px;
 }

@@ -9,10 +9,13 @@ initFilterForm = ->
     expandLabel = 'Mehr Filter anzeigen'
     collapseLabel = 'Weniger Filter anzeigen'
 
+
     $filterForm
             .addClass 'filter-form--isCollapsed'
             .height startHeight
-            .prepend '<div class="filter-form__expander">' + expandLabel + '</div>'
+
+    if !$('.filter-form__expander').length
+      $filterForm.prepend '<div class="filter-form__expander">' + expandLabel + '</div>'
 
     $expander = $('.filter-form__expander')
 
@@ -35,3 +38,4 @@ initFilterForm = ->
 
 $(document).ready initFilterForm
 $(document).on 'page:load', initFilterForm
+#$(window).on 'resize', initFilterForm

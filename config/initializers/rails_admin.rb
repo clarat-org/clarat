@@ -175,7 +175,9 @@ RailsAdmin.config do |config|
       field :approved
       field :creator
       field :expires_at
-      field :organizations
+      field :organizations do
+        searchable :name
+      end
       field :created_by
     end
     weight(-1)

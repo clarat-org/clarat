@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325104744) do
+ActiveRecord::Schema.define(version: 20150326154900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -170,6 +170,8 @@ ActiveRecord::Schema.define(version: 20150325104744) do
     t.boolean  "renewed",                          default: false
     t.date     "expires_at",                                       null: false
     t.integer  "area_id"
+    t.text     "description_html"
+    t.text     "next_steps_html"
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree

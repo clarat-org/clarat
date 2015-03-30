@@ -5,6 +5,7 @@ class OfferObserver < ActiveRecord::Observer
 
   def before_save offer
     offer.add_approved_info
+    offer.generate_from_markdown
   end
 
   def before_create offer

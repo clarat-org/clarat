@@ -187,11 +187,17 @@ RailsAdmin.config do |config|
     field :description do
       css_class 'js-count-character'
     end
+    field :description_html do
+      read_only true
+    end
     field :comment do
       css_class 'js-count-character'
     end
     field :next_steps do
       css_class 'js-count-character'
+    end
+    field :next_steps_html do
+      read_only true
     end
     field :legal_information
     field :contact_people

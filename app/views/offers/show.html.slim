@@ -10,13 +10,13 @@
       section.section-content.section-content--what
         h3.section-content__title = t 'offers.show.what'
         .section-content__body
-          == @offer.description
+          == @offer.description_html
 
       section.section-content.section-content--nextsteps
         h3.section-content__title
           = t 'offers.show.next_steps'
         .section-content__body
-          == @offer.next_steps
+          == @offer.next_steps_html
 
       - if @offer.opening_details?
         = render 'offers/show/opening_section', offer: @offer

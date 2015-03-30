@@ -1,3 +1,5 @@
+# See https://github.com/clarat-org/clarat/issues/226
+# and http://blog.endpoint.com/2013/07/hasmany-filter-in-railsadmin.html
 module RailsAdmin
   MainController.class_eval do
     def get_collection(model_config, scope, pagination)

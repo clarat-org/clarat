@@ -83,6 +83,7 @@ feature 'Admin Backend' do
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
       select 'foobar', from: 'offer_location_id'
+      select 'Deutsch', from: 'offer_language_filter_ids'
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
 

@@ -1,16 +1,18 @@
+# Form object to handle the search options, communicate with the remote search
+# server, and provide methods for the result.
 class SearchForm
-  # Turn into Quasi ActiveModel
+  # Turn into quasi ActiveModel #
   extend ActiveModel::Naming
   include Virtus.model
   include ActiveModel::Conversion
 
-  # Extensions
+  # Extensions #
   extend Enumerize
 
   # Modules (located in the search_form subfolder)
   include SearchExecution
 
-  # Attributes (since this is not ActiveRecord)
+  # Attributes (since this is not ActiveRecord) #
 
   attr_accessor :hits, :personal_hits, :remote_hits, :national_hits,
                 :location_fallback
@@ -20,25 +22,31 @@ class SearchForm
   attribute :generated_geolocation, String
   attribute :category, String
 
-  # Hidden Option
+  ## Hidden Options
+
+  # exact_location: Map had multiple markers on the same location and now the
+  # search focusses only on that specific point.
   attribute :exact_location, Boolean, default: false
 
-  # Filters
+  ## Filters
+
   CONTACT_TYPES = [:personal, :remote]
   attribute :contact_type, String, default: :personal
   enumerize :contact_type, in: CONTACT_TYPES
-  # Age
+  ### Age
   attribute :age_filter, String
   enumerize :age_filter, in: AgeFilter::IDENTIFIER
-  # Audience
+  ### Audience
   attribute :audience_filter, String
   enumerize :audience_filter, in: AudienceFilter::IDENTIFIER
-  # Language
+  ### Language
   attribute :language_filter, String
   enumerize :language_filter, in: LanguageFilter::IDENTIFIER
 
-  # Methods
+  # Methods #
 
+  # Are there any results in the requested location, regardless of set filters
+  # or query?
   def nearby?
     @_nearby.any?
   end
@@ -47,6 +55,7 @@ class SearchForm
     @geolocation ||= Geolocation.new geolocation_result
   end
 
+  # Handle different cases and fallbacks for finding user's location.
   def geolocation_result
     if exact_location
       generated_geolocation
@@ -84,6 +93,7 @@ class SearchForm
     to_h.merge category: name
   end
 
+  # Does form object have given category_name as a parameter?
   def category_in_focus? name
     if category_with_ancestors
       @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
@@ -96,10 +106,12 @@ class SearchForm
     to_h.merge contact_type: :remote
   end
 
+  # Is the form object primarily looking for non-personal offers?
   def remote_focussed?
     contact_type == :remote
   end
 
+  # Turn search_location data into a JSON string tat can be saved in a cookie.
   def location_for_cookie
     return nil if search_location.blank?
     { query: search_location, geoloc: geolocation.to_s }.to_json

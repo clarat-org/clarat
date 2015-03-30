@@ -1,3 +1,5 @@
+# One of the main models. The offers that visitors want to find.
+# Has modules in offer subfolder.
 class Offer < ActiveRecord::Base
   has_paper_trail
 

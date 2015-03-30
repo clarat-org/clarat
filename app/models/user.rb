@@ -1,3 +1,5 @@
+# Devise user model, only used for researchers and supervisors to access the
+# backend. Not for clients yet.
 class User < ActiveRecord::Base
   has_paper_trail
 

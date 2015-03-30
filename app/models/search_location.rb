@@ -1,3 +1,5 @@
+# Cache of already requested string-geocoordinate pairs. Information gotten from
+# Google Maps API via the geocode gem.
 class SearchLocation < ActiveRecord::Base
   # Validations
   validates :query, presence: true, uniqueness: true

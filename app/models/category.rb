@@ -1,3 +1,4 @@
+# Hierarchical categorier to sort offers.
 class Category < ActiveRecord::Base
   # AwesomeNestedSet
   # acts_as_nested_set counter_cache: :children_count, depth_column: :depth

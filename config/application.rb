@@ -17,6 +17,7 @@ module Clarat
     config.autoload_paths += %W(
       #{config.root}/app/objects/form/
       #{config.root}/app/objects/errors/
+      #{config.root}/app/objects/service/
       #{config.root}/app/observers
       #{config.root}/app/models/filters/
     )

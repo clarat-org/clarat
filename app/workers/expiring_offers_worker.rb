@@ -6,7 +6,9 @@ class ExpiringOffersWorker
 
   def perform
     expiring = Offer.where(expires_at: Date.current)
-    OfferMailer.delay.expiring_mail expiring.count, expiring.pluck(:id)
-    expiring.update_all approved: false
+    if expiring.count > 0
+      OfferMailer.delay.expiring_mail expiring.count, expiring.pluck(:id)
+      expiring.update_all approved: false
+    end
   end
 end

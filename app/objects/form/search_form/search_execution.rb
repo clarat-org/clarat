@@ -21,6 +21,7 @@ class SearchForm
 
       def prepare_personal_specific_search page
         @search_stack.push [:personal_hits, personal_search_options(page)]
+        # keyword arguments
         @search_stack.push [:remote_hits, remote_search_options(page, true)]
       end
 
@@ -35,9 +36,12 @@ class SearchForm
 
       # Multi Query from the ruby client
       def execute_search
-        variables = @search_stack.map { |el| el[0] }
-        searches = @search_stack.map { |el| el[1] }
-        @hits = Algolia.multiple_queries(searches)['results']
+        # prep
+        variables = @search_stack.map { |el| el[0] } # .map(&:first)
+        searches = @search_stack.map { |el| el[1] } # .map(&:last)
+        # execution
+        @hits = Algolia.multiple_queries(searches).fetch('results')
+        # assign to search form
         variables.each_with_index do |variable, index|
           instance_variable_set "@#{variable}", SearchResults.new(@hits[index])
         end
@@ -59,6 +63,8 @@ class SearchForm
           @filters = []
           %w(age audience language).each do |type|
             requested_filter = send("#{type}_filter")
+            # mental note to self:
+            # send over { age: 'boy' }
             @filters.push "_#{type}_filters:#{requested_filter}" if requested_filter
           end
         end

@@ -4,6 +4,7 @@ class OffersController < ApplicationController
 
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_categories, only: [:index]
+  before_action :init_search_cache, only: [:index]
 
   def index
     assign_search_result_instance_variables
@@ -45,19 +46,25 @@ class OffersController < ApplicationController
     @remote_offers = search.remote_hits
     @facets = search.facets_hits
     @nearby = search.nearby_hits
-    binding.pry
   end
 
   def set_categories
     @category_tree ||= Category.hash_tree
   end
 
-  def search_cache
-    @search_cache ||= SearchForm.new params.for(SearchForm).refine
+  # Warning: cannot be memoized
+  # @search_cache is set in ApplicationController!?
+  # work with instance variable instead
+  def init_search_cache
+    @search_cache = SearchForm.new(search_params)
+  end
+
+  def search_params
+    params.for(SearchForm).refine
   end
 
   def search
-    @search ||= SearchManager.new(search_cache, page: page)
+    @search ||= SearchManager.new(@search_cache, page: page)
   end
 
   # Set geolocation variables for map
@@ -75,10 +82,14 @@ class OffersController < ApplicationController
     end
   end
 
+  def nearby?
+    @nearby.any?
+  end
+
   # Deal with location fallback and no nearby search results
   def test_location_unavailable
     # See if area is covered and if not instantiate an UpdateRequest
-    unless @nearby.any?
+    unless nearby?
       @update_request = UpdateRequest.new(
         search_location: @search_cache.search_location
       )

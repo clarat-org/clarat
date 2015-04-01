@@ -54,9 +54,7 @@ class SearchForm
 
   # Handle different cases and fallbacks for finding user's location.
   def geolocation_result
-    binding.pry
     if exact_location
-      binding.pry
       generated_geolocation
     elsif search_location == I18n.t('conf.current_location')
       raise InvalidLocationError if generated_geolocation.empty?

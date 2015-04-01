@@ -111,7 +111,7 @@ class SearchForm
     contact_type == :remote
   end
 
-  # Turn search_location data into a JSON string tat can be saved in a cookie.
+  # Turn search_location data into a JSON string that can be saved in a cookie.
   def location_for_cookie
     return nil if search_location.blank?
     { query: search_location, geoloc: geolocation.to_s }.to_json

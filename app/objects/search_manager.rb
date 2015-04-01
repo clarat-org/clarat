@@ -7,7 +7,7 @@ class SearchManager
   end
 
   def queries
-    @queries ||= (if search_form.contact_type == 'personal'
+    @queries ||= (if search_form.contact_type == :personal
                    [
                      PersonalQuery.new({
                        query: search_form.query,
@@ -43,20 +43,29 @@ class SearchManager
   end
 
   def personal_hits
-    @personal ||= if search_form.contact_type == 'personal'
+    @personal ||= if search_form.contact_type == :personal
                     SearchResults.new hits[0]
                   end
   end
 
   def remote_hits
-    @personal ||= SearchResults.new hits[-3]
+    @remote ||= SearchResults.new hits[-3]
   end
 
   def nearby_hits
-    @personal ||= SearchResults.new hits[-2]
+    @nearby ||= SearchResults.new hits[-2]
   end
 
   def facets_hits
-    @personal ||= SearchResults.new hits[-1]
+    @facets ||= SearchResults.new(hits[-1]).facets['_tags'] || {}
   end
+
+        #exact_location ? 100 : 50_000
+  #
+        #unless @filters
+          #@filters = []
+          #%w(age audience language).each do |type|
+            #requested_filter = send("#{type}_filter")
+            # mental note to self:
+            # send over { age: 'boy' }
 end

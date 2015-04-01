@@ -101,6 +101,8 @@ feature 'Search Form' do
             with: I18n.t('conf.current_location')
     find('#search_form_generated_geolocation').set '' # unset by JS
     find('.main-search__submit').click
+    save_and_open_page
+    binding.pry
     page.must_have_content(
       'Leider konnten wir den von dir eingegeben Standort nicht finden'
     )

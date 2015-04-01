@@ -2,7 +2,6 @@
   ul.Categories__list
     - set.each do |category, children|
       - name = category.name
-      - binding.pry
       - display_name = "#{name} (#{facets[name] || 0})"
       li.Categories__listitem class=category_list_classes(search_cache, name,
                                                           depth, children)

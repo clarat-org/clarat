@@ -45,6 +45,7 @@ class OffersController < ApplicationController
     @remote_offers = search.remote_hits
     @facets = search.facets_hits
     @nearby = search.nearby_hits
+    binding.pry
   end
 
   def set_categories

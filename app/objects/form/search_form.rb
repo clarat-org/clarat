@@ -9,9 +9,6 @@ class SearchForm
   # Extensions #
   extend Enumerize
 
-  # Modules (located in the search_form subfolder)
-  include SearchExecution
-
   # Attributes (since this is not ActiveRecord) #
 
   attr_accessor :hits, :personal_hits, :remote_hits, :national_hits,
@@ -57,7 +54,9 @@ class SearchForm
 
   # Handle different cases and fallbacks for finding user's location.
   def geolocation_result
+    binding.pry
     if exact_location
+      binding.pry
       generated_geolocation
     elsif search_location == I18n.t('conf.current_location')
       raise InvalidLocationError if generated_geolocation.empty?

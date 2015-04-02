@@ -32,6 +32,9 @@ LineLength:
 Style/SignalException:
   Enabled: false
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 13
 

@@ -190,4 +190,3 @@ group :development, :test, :staging do
   gem 'factory_girl_rails'
   gem 'ffaker'
 end
-

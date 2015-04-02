@@ -134,6 +134,10 @@ group :development do
 
   # Quiet Assets to disable asset pipeline in log
   gem 'quiet_assets'
+
+  # requires graphviz to generate
+  # entity relationship diagrams
+  gem 'rails-erd', require: false
 end
 
 group :test do

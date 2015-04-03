@@ -10,6 +10,8 @@ clickHandler = ->
 
     Clarat.ajaxReplace resultContainer, url
 
+    $(document).trigger 'ajax_replaced'
+
     event.preventDefault()
     false
 

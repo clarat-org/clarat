@@ -82,12 +82,12 @@
 
   #new_search_form {
     position: relative;
+    z-index: 30;
     display: block;
-    padding: 10px 0;
     margin-left: 114px;
+    padding: 10px 0;
     max-height: 85px;
     width: auto;
-    z-index: 30;
 
     .Distributor.is-enlarged & {
       margin-left: 15px;
@@ -203,9 +203,9 @@
         line-height: 35px;
 
         .template--pages-home & {
+          top: auto;
           bottom: 3px;
           left: 8px;
-          top: auto;
           max-height: 40px;
         }
       }
@@ -244,7 +244,7 @@
     }
 
     .template--offers-index & {
-      padding-top: 131px;
+      padding-top: 121px;
     }
 
     &.content-main--invalid_location {
@@ -286,13 +286,15 @@
   }
 
   .Listing-results__headline {
-    top: 70px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
     z-index: 15;
     display: block;
     clear: both;
     overflow: hidden;
-    margin: -76px -15px 20px -15px;
-    padding: 3px 95px 3px 15px;
+    padding: 6px 105px 5px 15px;
     max-width: none;
     background: $brand_blue;
     color: $brand_white;
@@ -334,19 +336,19 @@
       .twitter-typeahead {
         span.tt-dropdown-menu {
           // specificity, overriding JS
-          background: $brand_beige;
           position: relative !important;
-          right: 0 !important; // overriding JS
+          right: 0 !important;
+          margin-top: 0; // overriding JS
           margin-bottom: 10px;
-          margin-top: 0;
+          background: $brand_beige;
         }
       }
     }
 
     #new_search_form {
       .input.string {
-        height: auto !important;
         min-height: 40px;
+        height: auto !important;
 
         &.search_form_search_location {
           margin: 10px 0;

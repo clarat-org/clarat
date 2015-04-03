@@ -16,18 +16,29 @@ initFilterForm = ->
 
     if !$('.filter-form__expander').length
       $filterForm.prepend '<div class="filter-form__expander">' + expandLabel + '</div>'
+      $filterForm.prepend '<div class="filter-form__expander" role="button">' + expandLabel + '</div>'
 
     $expander = $('.filter-form__expander')
+
+    $expander.attr 'aria-expanded', false
 
     $expander.on 'click', ->
 
       if $filterForm.hasClass('filter-form--isCollapsed')
         $expander.html collapseLabel
+        $expander
+            .html collapseLabel
+            .attr 'aria-expanded', true
+
         $filterForm
             .css 'height', 'auto'
             .removeClass 'filter-form--isCollapsed'
       else
         $expander.html expandLabel
+        $expander
+            .html expandLabel
+            .attr 'aria-expanded', false
+
         $filterForm
               .css 'height', startHeight
               .addClass 'filter-form--isCollapsed'

@@ -16,7 +16,7 @@ feature 'Search Form' do
     Algolia.expects(:multiple_queries).returns(
       AlgoliaStubber.filled_response_stub('bazfuz', ['bazfuz'])
     )
-    SearchForm.any_instance.expects(:nearby?).returns(false)
+    OffersController.any_instance.expects(:nearby?).returns(false)
 
     visit root_path
     fill_in 'search_form_query', with: 'bazfuz'

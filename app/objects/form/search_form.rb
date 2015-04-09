@@ -9,9 +9,6 @@ class SearchForm
   # Extensions #
   extend Enumerize
 
-  # Modules (located in the search_form subfolder)
-  include SearchExecution
-
   # Attributes (since this is not ActiveRecord) #
 
   attr_accessor :hits, :personal_hits, :remote_hits, :national_hits,
@@ -45,12 +42,6 @@ class SearchForm
 
   # Methods #
 
-  # Are there any results in the requested location, regardless of set filters
-  # or query?
-  def nearby?
-    @_nearby.any?
-  end
-
   def geolocation
     @geolocation ||= Geolocation.new geolocation_result
   end
@@ -68,10 +59,6 @@ class SearchForm
     else
       SearchLocation.find_or_generate search_location
     end
-  end
-
-  def facet_counts_for_query
-    @facet_hits.facets['_tags'] || {}
   end
 
   # find the actual category object and return it with ancestors

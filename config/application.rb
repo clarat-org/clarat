@@ -19,6 +19,7 @@ module Clarat
       #{config.root}/app/objects/errors/
       #{config.root}/app/objects/service/
       #{config.root}/app/objects/value/
+      #{config.root}/app/objects/queries/
       #{config.root}/app/observers
       #{config.root}/app/models/filters/
     )

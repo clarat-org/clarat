@@ -21,7 +21,7 @@
         = render 'offers/index/single_search_result', offer: remote_offers.first
 
   h2.Listing-results__headline
-    == search_results_info_headline search_cache
+    == search_results_info_headline search_cache, search
 
   ul.Listing-results__list
     - main_offers.each do |offer|

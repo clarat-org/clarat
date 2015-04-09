@@ -6,7 +6,7 @@ class SearchResults
 
   # By default methods hit the result set array
   extend Forwardable
-  def_delegators :@hits, :each, :any?, :first, :[]
+  def_delegators :@hits, :each, :any?, :empty?, :first, :[]
 
   def initialize json
     KEYS.each do |key|

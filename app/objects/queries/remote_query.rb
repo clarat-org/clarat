@@ -1,6 +1,7 @@
 class RemoteQuery < BaseQuery
   attr_reader :geolocation, :teaser
 
+  # TODO: geolocation
   def initialize(geolocation:, teaser: false, **args)
     super(args)
     @geolocation = geolocation

@@ -15,6 +15,19 @@
   font-weight: 400;
 }
 
+.Categories__show-all {
+  a {
+    @extend %roboto_bold;
+    @extend %clarat_rounding_start;
+    @extend %clarat_rounding_end;
+    display: inline-block;
+    padding: 4px 10px;
+    background: $brand_yellow;
+    color: $brand_white;
+    text-decoration: none;
+  }
+}
+
 .Categories__listitem {
   margin-top: 5px;
 

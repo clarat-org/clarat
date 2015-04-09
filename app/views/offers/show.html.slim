@@ -9,20 +9,12 @@
 
     / Left side (in desktop)
     .section-wrapper-major
+
       / What's it all about?
       section.section-content.section-content--what
         h3.section-content__title = t 'offers.show.what'
         .section-content__body
           == @offer.description_html
-
-      / Who is offering this service?
-      = render 'offers/show/who_section',
-               organizations: @offer.organizations,
-               offer: @offer,
-               markers: @markers
-
-    / Right side (in desktop)
-    .section-wrapper-minor
 
       / What to do next?
       section.section-content.section-content--nextsteps
@@ -31,17 +23,40 @@
         .section-content__body
           == @offer.next_steps_html
 
+      / Who is offering this service?
+      = render 'offers/show/who_section', offer: @offer
+
+      / Categories
+      - unless @offer.categories.empty?
+        = render 'offers/show/categories_section', categories: @offer.categories
+
+      / Internet Presence
+      = render 'offers/show/website_section', offer: @offer
+
+    / Right side (in desktop)
+    .section-wrapper-minor
+
+      section.section-content.section-content--whos-offering
+        h3.section-content__title
+          = t 'offers.show.who.title'
+
+        .section-content__body
+
+          ul.Listing-organizations__list
+            - @offer.organizations.each do |orga|
+              li.Listing-organizations__listitem
+                span.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
+
+          - if @offer.location
+            = render 'offers/show/who_location', offer: @offer, markers: @markers
+
+          #map-container
+            #map-canvas data={ markers: @markers.to_json }
 
       / When can you contact?
       - if @offer.opening_details?
         = render 'offers/show/opening_section', offer: @offer
 
-      / Internet Presence
-      = render 'offers/show/website_section', offer: @offer
-
-      / Categories
-      /- unless @offer.categories.empty?
-      / = render 'offers/show/categories_section', categories: @offer.categories
 
       / Found any mistakes?
       = link_to new_contact_path,

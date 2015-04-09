@@ -1,19 +1,7 @@
-section.section-content.section-content--organisation
-  h3.section-content__title = t 'offers.show.who.title'
+section.section-content
+  h3.section-content__title = t 'offers.show.who.person'
   .section-content__body
-    h4 Anbieter
-    ul.Listing-organizations__list
-      - organizations.each do |orga|
-        li.Listing-organizations__listitem
-          = link_to orga.name, organization_path(id: orga)
 
     - if offer.contact_details?
       = render 'offers/show/who_contact_people', offer: offer
 
-    / Where?
-    - if offer.location
-      = render 'offers/show/who_location', offer: offer, markers: markers
-
-    h4 = t 'offers.show.map'
-    #map-container
-      #map-canvas data={ markers: markers.to_json }

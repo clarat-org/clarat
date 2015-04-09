@@ -27,6 +27,7 @@ describe Offer do
       it { subject.must validate_presence_of :description }
       it { subject.must validate_length_of(:description).is_at_most 450 }
       it { subject.must validate_presence_of :next_steps }
+      it { subject.must validate_presence_of :encounter }
       it { subject.must validate_length_of(:next_steps).is_at_most 500 }
       it { subject.must validate_length_of(:comment).is_at_most 800 }
       it { subject.must validate_length_of(:legal_information).is_at_most 400 }
@@ -57,7 +58,6 @@ describe Offer do
       it { subject.must have_and_belong_to_many :language_filters }
       it { subject.must have_and_belong_to_many :audience_filters }
       it { subject.must have_and_belong_to_many :age_filters }
-      it { subject.must have_and_belong_to_many :encounter_filters }
       it { subject.must have_and_belong_to_many :openings }
       it { subject.must have_many :hyperlinks }
       it { subject.must have_many :websites }

@@ -13,7 +13,7 @@
       section.section-content.section-content--what
         h3.section-content__title = t 'offers.show.what'
         .section-content__body
-          == @offer.description
+          == @offer.description_html
 
       / Who is offering this service?
       = render 'offers/show/who_section',
@@ -29,7 +29,7 @@
         h3.section-content__title
           = t 'offers.show.next_steps'
         .section-content__body
-          == @offer.next_steps
+          == @offer.next_steps_html
 
 
       / When can you contact?

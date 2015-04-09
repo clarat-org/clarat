@@ -92,6 +92,7 @@ gem 'dynamic_sitemaps'
 gem 'sanitize' # parser based sanitization
 # gem 'awesome_nested_set'
 gem 'closure_tree'
+gem 'redcarpet' # Markdown processing
 
 # search
 gem 'algoliasearch-rails'
@@ -133,6 +134,10 @@ group :development do
 
   # Quiet Assets to disable asset pipeline in log
   gem 'quiet_assets'
+
+  # requires graphviz to generate
+  # entity relationship diagrams
+  gem 'rails-erd', require: false
 end
 
 group :test do

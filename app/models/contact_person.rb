@@ -1,3 +1,5 @@
+# The end point that can be contacted by a visitor to get Information about an
+# offer.
 class ContactPerson < ActiveRecord::Base
   # Associations
   belongs_to :organization, inverse_of: :contact_people

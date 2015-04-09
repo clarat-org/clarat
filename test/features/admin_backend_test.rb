@@ -18,6 +18,7 @@ feature 'Admin Backend' do
         fill_in 'offer_name', with: 'testangebot'
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
+        select 'Personal', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
 
@@ -56,6 +57,7 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
+      select 'Personal', from: 'offer_encounter'
       select location.name, from: 'offer_location_id'
       select 'foobar', from: 'offer_organization_ids'
 
@@ -82,6 +84,7 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
+      select 'Hotline', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
@@ -135,27 +138,27 @@ feature 'Admin Backend' do
       page.must_have_content 'Age filters benötigt mindestens einen'\
                              ' Altersfilter'
 
-      # 7: age_filter given, needs encounter_filter
+      # 7: age_filter given, needs an area
       select 'Babies', from: 'offer_age_filter_ids'
       click_button 'Speichern'
       page.wont_have_content 'Age filters benötigt mindestens einen'\
                              ' Altersfilter'
-      page.must_have_content 'Encounter filters benötigt mindestens einen'\
-                             ' Kontaktfilter'
+      page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
+                             ' nicht "personal" ist'
 
-      # 8: encounter_filter (not personal) given, needs an area
-      select 'Telefon', from: 'offer_encounter_filter_ids'
-      click_button 'Speichern'
-      page.wont_have_content 'Encounter filters benötigt mindestens einen'\
-                             ' Kontaktfilter'
-      page.must_have_content 'Area muss ausgefüllt werden, wenn der Encounter'\
-                             ' Filter "personal" nicht gesetzt wurde'
-
-      # 9: area given, offer is approved
+      # 9: area given, needs language filter
       select 'Deutschland', from: 'offer_area_id'
       click_button 'Speichern'
-      page.wont_have_content 'Area muss ausgefüllt werden, wenn der Encounter'\
-                             ' Filter "personal" nicht gesetzt wurde'
+      page.wont_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
+                             ' nicht "personal" ist'
+      page.must_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
+
+      # 10: language filter given, offer is approved
+      select 'Deutsch', from: 'offer_language_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

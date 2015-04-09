@@ -1,3 +1,5 @@
+# One of the main models. The offers that visitors want to find.
+# Has modules in offer subfolder.
 class Offer < ActiveRecord::Base
   has_paper_trail
 
@@ -21,9 +23,6 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :age_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
-  has_and_belongs_to_many :encounter_filters,
-                          association_foreign_key: 'filter_id',
-                          join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
@@ -37,7 +36,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(fixed determinable independent)
+  enumerize :encounter, in: %w(personal hotline online)
 
   # Friendly ID
   extend FriendlyId
@@ -70,6 +69,12 @@ class Offer < ActiveRecord::Base
       offer.categories = self.categories
       offer.contact_people = []
     end
+  end
+
+  # handled in observer before save
+  def generate_from_markdown
+    self.description_html = MarkdownRenderer.render description
+    self.next_steps_html = MarkdownRenderer.render next_steps
   end
 
   def contact_details?

@@ -3,9 +3,10 @@ class OffersController < ApplicationController
   respond_to :html
 
   skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :set_categories, only: [:index]
+  before_action :init_search_cache, only: [:index]
 
   def index
-    build_search_cache_and_search params[:page]
     assign_search_result_instance_variables
     test_location_unavailable
     set_position
@@ -35,18 +36,35 @@ class OffersController < ApplicationController
 
   ### INDEX ###
 
-  # general variable assignments: search for results, get categories, etc.
-  def assign_search_result_instance_variables
-    @personal_offers = @search_cache.personal_hits
-    @remote_offers = @search_cache.remote_hits
-    @category_tree = Category.hash_tree
-    @facets = @search_cache.facet_counts_for_query
+  def page
+    params[:page]
   end
 
-  # Initialize Search Form Object with given params
-  def build_search_cache_and_search page
-    @search_cache = SearchForm.new params.for(SearchForm).refine
-    @search_cache.search page
+  # general variable assignments: search for results, get categories, etc.
+  def assign_search_result_instance_variables
+    @personal_offers = search.personal_hits
+    @remote_offers = search.remote_hits
+    @facets = search.facets_hits
+    @nearby = search.nearby_hits
+  end
+
+  def set_categories
+    @category_tree ||= Category.hash_tree
+  end
+
+  # Warning: cannot be memoized
+  # @search_cache is set in ApplicationController!?
+  # work with instance variable instead
+  def init_search_cache
+    @search_cache = SearchForm.new(search_params)
+  end
+
+  def search_params
+    params.for(SearchForm).refine
+  end
+
+  def search
+    @search ||= SearchManager.new(@search_cache, page: page)
   end
 
   # Set geolocation variables for map
@@ -67,7 +85,7 @@ class OffersController < ApplicationController
   # Deal with location fallback and no nearby search results
   def test_location_unavailable
     # See if area is covered and if not instantiate an UpdateRequest
-    unless @search_cache.nearby?
+    if @nearby.empty?
       @update_request = UpdateRequest.new(
         search_location: @search_cache.search_location
       )

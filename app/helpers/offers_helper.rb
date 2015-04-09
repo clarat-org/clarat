@@ -17,8 +17,8 @@ module OffersHelper
   end
 
   # collect search information for display in offers#index
-  def search_results_info_headline search_cache
-    output = base_search_results_info_headline(search_cache)
+  def search_results_info_headline search_cache, search
+    output = base_search_results_info_headline(search_cache, search)
 
     unless search_cache.category.blank?
       output += " in #{breadcrumb_path search_cache}"
@@ -46,8 +46,8 @@ module OffersHelper
 
   private
 
-  def base_search_results_info_headline search_cache
-    main_hits = search_cache.personal_hits || search_cache.remote_hits
+  def base_search_results_info_headline search_cache, search
+    main_hits = search.personal_hits || search.remote_hits
     I18n.t(
       "offers.shared.#{search_cache.contact_type}_offers",
       count: main_hits.nbHits

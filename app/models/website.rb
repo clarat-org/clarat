@@ -1,3 +1,4 @@
+# The external web addresses of organizations and offers.
 class Website < ActiveRecord::Base
   # associtations
   has_many :hyperlinks

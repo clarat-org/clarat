@@ -137,7 +137,7 @@ group :development do
 
   # requires graphviz to generate
   # entity relationship diagrams
-  gem "rails-erd", require: false
+  gem 'rails-erd', require: false
 end
 
 group :test do
@@ -190,4 +190,3 @@ group :development, :test, :staging do
   gem 'factory_girl_rails'
   gem 'ffaker'
 end
-

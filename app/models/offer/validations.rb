@@ -13,6 +13,7 @@ class Offer
       validates :legal_information, length: { maximum: 400 }
       validates :comment, length: { maximum: 800 }
       validates :slug, uniqueness: true
+      validates :encounter, presence: true
       validates :expires_at, presence: true, later_date: true
 
       # Custom validations
@@ -34,7 +35,6 @@ class Offer
 
       def validate_associated_fields
         validate_associated_presence :organizations
-        validate_associated_presence :encounter_filters
         validate_associated_presence :age_filters
         validate_associated_presence :language_filters
       end

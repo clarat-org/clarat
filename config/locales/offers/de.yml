@@ -13,7 +13,7 @@ de:
       location_everywhere: Überall erreichbar, egal, wo du bist
       navigate_to_categories: 'Kategorien'
       main_categories: Hauptkategorien
-      all_categories: Alle Kategorien
+      all_categories: ‹ Alle Kategorien
     show:
       what: Worum geht's?
       where: Wo
@@ -52,6 +52,10 @@ de:
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien
+      encounters:
+        personal: Persönlich
+        hotline: Telefonisch
+        online: Online
       collection_names:
         blank: Egal
         personal: Vor-Ort-Angebote

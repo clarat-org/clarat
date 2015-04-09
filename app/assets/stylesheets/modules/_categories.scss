@@ -15,6 +15,20 @@
   font-weight: 400;
 }
 
+.Categories__show-all {
+  a {
+    @extend %roboto_bold;
+    @extend %clarat_rounding_start;
+    @extend %clarat_rounding_end;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 4px 10px;
+    background: $brand_yellow;
+    color: $brand_white;
+    text-decoration: none;
+  }
+}
+
 .Categories__listitem {
   margin-top: 5px;
 
@@ -29,7 +43,19 @@
   &,
   li,
   li li {
-    list-style: circle;
+    position: relative;
+    list-style: none;
+
+  }
+
+  li,
+  li li {
+    &:before {
+      position: absolute;
+      content: ' · ';
+      left: -10px;
+      font-weight: 700;
+    }
   }
 
   > .Categories__list {
@@ -51,7 +77,14 @@
     margin-bottom: 20px;
 
     .has-children {
-      list-style: disc;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: ' › ';
+        left: -9px;
+        font-weight: 700;
+      }
     }
 
     .Categories__list {

@@ -36,7 +36,7 @@ class Offer
         FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
         add_attribute(*ATTRIBUTES)
         add_attribute(*FACETS)
-        add_attribute :_geoloc, :encounter_value
+        add_attribute :_geoloc
         attributesForFaceting FACETS
         optionalWords STOPWORDS
 
@@ -63,7 +63,7 @@ class Offer
       end
 
       def personal?
-        self.encounter_filters.where(identifier: 'personal').count > 0
+        encounter == 'personal'
       end
 
       # Offer's location's geo coordinates for indexing
@@ -100,17 +100,24 @@ class Offer
         organizations.pluck(:name).join(', ')
       end
 
-      def _age_filters
-        age_filters.pluck(:identifier)
+      # filter indexing methods
+      %w(age audience language).each do |filter|
+        define_method "_#{filter}_filters" do
+          send("#{filter}_filters").pluck(:identifier)
+        end
       end
 
-      def _audience_filters
-        audience_filters.pluck(:identifier)
-      end
-
-      def _language_filters
-        language_filters.pluck(:identifier)
-      end
+      # def _age_filters
+      #   age_filters.pluck(:identifier)
+      # end
+      #
+      # def _audience_filters
+      #   audience_filters.pluck(:identifier)
+      # end
+      #
+      # def _language_filters
+      #   language_filters.pluck(:identifier)
+      # end
     end
   end
 end

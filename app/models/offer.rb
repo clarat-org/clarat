@@ -23,9 +23,6 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :age_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
-  has_and_belongs_to_many :encounter_filters,
-                          association_foreign_key: 'filter_id',
-                          join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
@@ -39,7 +36,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(fixed determinable independent)
+  enumerize :encounter, in: %w(personal hotline online)
 
   # Friendly ID
   extend FriendlyId

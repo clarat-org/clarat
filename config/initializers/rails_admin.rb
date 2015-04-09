@@ -25,7 +25,7 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter EncounterFilter AgeFilter AudienceFilter User Contact Keyword
+    LanguageFilter AgeFilter AudienceFilter User Contact Keyword
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
@@ -201,9 +201,7 @@ RailsAdmin.config do |config|
     end
     field :legal_information
     field :contact_people
-    field :encounter do
-      read_only true
-    end
+    field :encounter
     field :slug do
       read_only do
         bindings[:object].new_record?
@@ -222,9 +220,6 @@ RailsAdmin.config do |config|
     field :language_filters
     field :audience_filters
     field :age_filters do
-      help { 'Required before approval.' }
-    end
-    field :encounter_filters do
       help { 'Required before approval.' }
     end
     field :openings
@@ -336,9 +331,6 @@ RailsAdmin.config do |config|
     end
   end
   config.model 'LanguageFilter' do
-    parent Filter
-  end
-  config.model 'EncounterFilter' do
     parent Filter
   end
   config.model 'AgeFilter' do

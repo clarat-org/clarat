@@ -31,10 +31,6 @@ AudienceFilter.create name: 'Patchworkfamilien',
                       identifier: 'patchwork_families'
 AudienceFilter.create name: 'Regenbogenfamilien', identifier: 'rainbow_families'
 AudienceFilter.create name: 'LGBT', identifier: 'lgbt'
-personal =
-  EncounterFilter.create name: 'persönliches Gespräch', identifier: 'personal'
-tel = EncounterFilter.create name: 'Telefon', identifier: 'hotline'
-web = EncounterFilter.create name: 'E-Mail und Chat', identifier: 'online'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896
@@ -82,19 +78,16 @@ end
 
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Lokales Angebot',
-                                      encounter_filters: [personal]
+                                      encounter: 'personal'
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Lokale Hotline',
-                                      encounter_filters: [tel],
-                                      local_offer: true,
+                                      encounter: 'hotline',
                                       area: berlin
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweiter Chat',
-                                      encounter_filters: [web],
-                                      local_offer: false,
+                                      encounter: 'online',
                                       area: schland
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweite Hotline',
-                                      encounter_filters: [tel],
-                                      local_offer: false,
+                                      encounter: 'hotline',
                                       area: schland

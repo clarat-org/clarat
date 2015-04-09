@@ -52,6 +52,10 @@ de:
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien
+      encounters:
+        personal: Persönlich
+        hotline: Telefonisch
+        online: Online
       collection_names:
         blank: Egal
         personal: Vor-Ort-Angebote

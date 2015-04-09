@@ -3,6 +3,9 @@ li.JS-trigger-marker.Listing-results__listitem id="result-offer-#{offer.id}"
     = link_to offer.name, offer_path(id: offer)
   / TODO: Refactor and rename
   h4.Listing-results__offerinfo
+    - unless offer.personal?
+      span.Listing-results__contact-type
+        = I18n.t "offers.shared.encounters.#{offer.encounter}"
     span.Listing-results__emphasis.Listing-results__organization
       = offer.organization_display_name
     - if offer.location

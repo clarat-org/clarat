@@ -6,6 +6,9 @@ FactoryGirl.define do
     name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
+    encounter do
+      Offer.enumerized_attributes.attributes['encounter'].values.sample
+    end
     completed false
     approved false
     approved_at nil
@@ -15,12 +18,6 @@ FactoryGirl.define do
 
     # associations
 
-    encounter_filters do
-      encounters = %w(personal hotline online)
-      selected = encounters.sample(rand(1..3))
-      selected.map { |s| EncounterFilter.find_by_identifier(s) }
-    end
-
     transient do
       organization_count 1
       contact_person_count 1
@@ -29,7 +26,6 @@ FactoryGirl.define do
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
-      local_offer { maybe true }
     end
 
     after :create do |offer, evaluator|
@@ -40,7 +36,7 @@ FactoryGirl.define do
 
       # location
       organization = offer.organizations.first
-      if organization && (offer.personal? || evaluator.local_offer)
+      if organization && offer.personal?
         location = organization.locations.sample ||
                    FactoryGirl.create(:location, organization: organization)
         offer.update_column :location_id, location.id
@@ -90,9 +86,8 @@ FactoryGirl.define do
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
-    # TODO: Introduce encounter_filter instead
     trait :with_location do
-      encounter 'fixed'
+      encounter 'personal'
     end
 
     trait :with_creator do

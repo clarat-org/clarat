@@ -10,5 +10,6 @@ li.JS-trigger-marker.Listing-results__listitem id="result-offer-#{offer.id}"
       = offer.organization_display_name
     - if offer.location
       = offer.location_address
-    - else
-      = t 'offers.index.location_everywhere'
+    /- else
+    /  = t 'offers.index.location_everywhere'
+    / TODO: Valid delete?

@@ -38,6 +38,7 @@ feature 'Admin Backend' do
         fill_in 'organization_description', with: 'testdescription'
         select 'e.V.', from: 'organization_legal_form'
         check 'organization_renewed'
+        check 'organization_accredited_institution'
 
         click_button 'Speichern'
         page.must_have_content 'testorganisation'

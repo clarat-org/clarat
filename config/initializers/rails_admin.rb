@@ -86,6 +86,7 @@ RailsAdmin.config do |config|
     end
     field :legal_form
     field :charitable
+    field :accredited_institution
     field :founded
     field :umbrella
     field :parents

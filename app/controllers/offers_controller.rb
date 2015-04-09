@@ -82,14 +82,10 @@ class OffersController < ApplicationController
     end
   end
 
-  def nearby?
-    @nearby.any?
-  end
-
   # Deal with location fallback and no nearby search results
   def test_location_unavailable
     # See if area is covered and if not instantiate an UpdateRequest
-    unless nearby?
+    if @nearby.empty?
       @update_request = UpdateRequest.new(
         search_location: @search_cache.search_location
       )

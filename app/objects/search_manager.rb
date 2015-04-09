@@ -1,3 +1,4 @@
+# TODO: place?
 class SearchManager
   attr_reader :search_form, :page
 
@@ -6,6 +7,7 @@ class SearchManager
   def initialize(search_form, page: nil)
     @search_form = search_form
     @page = [(page || 0) - 1, 0].max # essentially "-1", normalize for algolia
+    # TODO: clarity
   end
 
   # TODO: rewrite hits[] to not be dependent on array ordering
@@ -96,11 +98,12 @@ class SearchManager
   end
 
   # TODO: this needs to be properly unit tested
-  def filters
-    @filters ||= %w(age audience language).map do |type|
-      search_form.send("#{type}_filter")
-    end.compact
-  end
+  # TODO: Where is this used?
+  # def filters
+  #   @filters ||= %w(age audience language).map do |type|
+  #     search_form.send("#{type}_filter")
+  #   end.compact
+  # end
 
   # wide radius or use exact location
   def search_radius

@@ -1,4 +1,5 @@
 class FacetQuery < PersonalQuery
+  # TODO: needed?
   def initialize(args)
     super
   end

@@ -2,6 +2,8 @@
 class BaseQuery
   attr_reader :query, :category, :filters, :page
 
+  # TODO: category
+  # TODO: filters used?
   def initialize(query: '', category:, filters: [], page: nil)
     @query = query
     @category = category
@@ -19,11 +21,12 @@ class BaseQuery
     }.merge(page_query)
   end
 
+  # TODO: used? not working?
   def facet_filters
     filters
-      .reject { |_key, value| value }
-      .map { |type, filter| "_#{type}_filters:#{filter}" }
-      .compact
+    #   .reject { |_key, value| value }
+    #   .map { |type, filter| "_#{type}_filters:#{filter}" }
+    #   .compact
   end
 
   def page_query

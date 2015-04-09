@@ -43,7 +43,19 @@
   &,
   li,
   li li {
-    list-style: circle;
+    position: relative;
+    list-style: none;
+
+  }
+
+  li,
+  li li {
+    &:before {
+      position: absolute;
+      content: ' · ';
+      left: -10px;
+      font-weight: 700;
+    }
   }
 
   > .Categories__list {
@@ -65,7 +77,14 @@
     margin-bottom: 20px;
 
     .has-children {
-      list-style: disc;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: ' › ';
+        left: -9px;
+        font-weight: 700;
+      }
     }
 
     .Categories__list {

@@ -54,23 +54,23 @@
     background: no-repeat right bottom;
     background-size: 60px 60px;
 
-    &.page-detail__icon--a-crisis {
+    &.page-detail__icon--e-crisis {
       background-image: image-url('picto_crisis.svg');
     }
 
-    &.page-detail__icon--b-learn {
+    &.page-detail__icon--c-learn {
       background-image: image-url('picto_learn.svg');
     }
 
-    &.page-detail__icon--c-family {
+    &.page-detail__icon--a-family {
       background-image: image-url('picto_family.svg');
     }
 
-    &.page-detail__icon--d-health {
+    &.page-detail__icon--b-health {
       background-image: image-url('picto_health.svg');
     }
 
-    &.page-detail__icon--e-violence,
+    &.page-detail__icon--d-violence,
     &.page-detail__icon--e-habitation, {
       // ToDo: Removes
       background-image: image-url('picto_violence.svg');

@@ -68,7 +68,6 @@ ActiveRecord::Schema.define(version: 20150409124531) do
   end
 
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
-
   create_table "contact_person_offers", force: true do |t|
     t.integer "offer_id",          null: false
     t.integer "contact_person_id", null: false

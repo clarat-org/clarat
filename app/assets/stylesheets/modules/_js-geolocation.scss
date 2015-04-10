@@ -1,0 +1,36 @@
+// TODO: needs actual styling
+.JS-Geolocation__prompt {
+  background: white;
+  position: absolute;
+  top: -35px;
+  padding: 5px;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 12px;
+}
+
+.JS-Geolocation__prompt--interacive {
+  cursor: pointer;
+
+  &:hover {
+    background: orange;
+  }
+}
+
+.JS-Geolocation__display[disabled=disabled],
+.JS-Geolocation__display[disabled],
+.JS-Geolocation__display:disabled {
+  background: #eee !important;
+  font-style: italic;
+}
+
+.JS-Geolocation__remove {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+
+  &:hover {
+    cursor: pointer;
+    color: orange;
+  }
+}

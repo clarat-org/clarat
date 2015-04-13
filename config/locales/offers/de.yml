@@ -1,6 +1,5 @@
 de:
   offers:
-
     index:
       unavailable_location_modal: |
         Leider finden sich auf unserer Plattform aktuell nur Angebote aus
@@ -14,23 +13,29 @@ de:
       location_everywhere: Überall erreichbar, egal, wo du bist
       navigate_to_categories: 'Kategorien'
       main_categories: Hauptkategorien
+      all_categories: ‹ Alle Kategorien
     show:
       what: Worum geht's?
-      where: Wo
-      assigned_categories: Zugeordnete Kategorien
-      next_steps: Was musst du tun?
-      opening_hours: Wann kannst du dich melden?
-      opening_by_arrangement: Nach Vereinbarung
-      contact:
-        contact: Wo kannst du dich melden?
+      who:
+        title: Wer bietet diese Hilfe an?
+        address: Adresse
         person: Ansprechpartner
+        map: Karte
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "
-        website: "Webseite: "
-        socialmedia: "Weitere Präsenzen im Netz: "
-      organizations: Wer bietet diese Hilfe an?
-      map_output_searchresult: Kartenausgabe
+      next_steps: Was musst du tun?
+      opening_hours: Wann kannst du dich melden?
+      opening_by_arrangement: Nach Vereinbarung
+      internet_presence: Im Netz
+      websites:
+        own: Webseite
+        facebook: Facebook
+        twitter: Twitter
+        youtube: Youtube
+        gplus: Google+
+        pinterest: Pinterest
+      assigned_categories: Zugeordnete Kategorien
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
@@ -52,6 +57,10 @@ de:
       category_filter: Kategorien
       category_filter_more: Mehr Kategorien
       category_filter_less: Weniger Kategorien
+      encounters:
+        personal: Persönlich
+        hotline: Telefonisch
+        online: Online
       collection_names:
         blank: Egal
         personal: Vor-Ort-Angebote

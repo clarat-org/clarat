@@ -1,4 +1,4 @@
-# Handler for geolocations
+# Handler for geolocations and easy transformation to different formats.
 class Geolocation
   attr_reader :latitude, :longitude
 

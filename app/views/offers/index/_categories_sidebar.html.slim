@@ -1,6 +1,10 @@
 .Categories#categories
   h2.Categories__headline = t 'offers.index.main_categories'
 
+  .Categories__show-all
+    = link_to I18n.t('offers.index.all_categories'),
+            offers_path(search_form: search_cache.category_focus(''))
+
   = render 'offers/index/categories_nest', set: category_tree, facets: facets,
                                            search_cache: search_cache, depth: 0
 

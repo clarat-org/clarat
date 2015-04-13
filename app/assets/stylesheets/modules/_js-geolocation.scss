@@ -1,0 +1,65 @@
+// ---------------------------------------------------------------
+//
+//  Geolocation prompt for location input
+//
+// ---------------------------------------------------------------
+
+.JS-Geolocation__prompt {
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
+  position: absolute;
+  bottom: 55px;
+  z-index: 400;
+  padding: 10px;
+  width: 96%;
+  margin: 0 2%;
+  background: $brand_orange;
+  color: $brand_white;
+  text-align: center;
+  font-size: 13px;
+
+  &:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -13px;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 13px;
+    border-top-color: $brand_orange;
+    content: " ";
+    pointer-events: none;
+  }
+}
+
+.JS-Geolocation__prompt--interactive {
+  cursor: pointer;
+}
+
+#search_form_search_location {
+  &.JS-Geolocation__display[disabled=disabled],
+  &.JS-Geolocation__display[disabled],
+  &.JS-Geolocation__display:disabled {
+    background: repeating-linear-gradient(
+                    45deg,
+                    rgba($brand_orange, .15),
+                    rgba($brand_orange, .15) 10px,
+                    rgba($brand_orange, .05) 10px,
+                    rgba($brand_orange, .05) 20px
+    ), $brand_white;
+    font-style: italic;
+  }
+}
+
+.JS-Geolocation__remove {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: $brand_orange;
+  font-size: 22px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

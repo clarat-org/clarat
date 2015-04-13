@@ -13,6 +13,7 @@ class Offer
       validates :legal_information, length: { maximum: 400 }
       validates :comment, length: { maximum: 800 }
       validates :slug, uniqueness: true
+      validates :encounter, presence: true
       validates :expires_at, presence: true, later_date: true
 
       # Custom validations
@@ -20,17 +21,23 @@ class Offer
       validates :approved, approved: true
 
       # Needs to be true before approval possible. Called in custom validation.
+      # Uses method from CustomValidatable concern.
       def before_approve
-        validate_associated_presence :organizations
+        validate_associated_fields
         if organizations.where(approved: false).count > 0
           fail_validation :organizations, 'only_approved_organizations',
                           list: organizations.approved.pluck(:name).join(', ')
         end
-        validate_associated_presence :encounter_filters
-        validate_associated_presence :age_filters
+        fail_validation :area, 'needs_area_when_remote' if !personal? && !area
       end
 
       private
+
+      def validate_associated_fields
+        validate_associated_presence :organizations
+        validate_associated_presence :age_filters
+        validate_associated_presence :language_filters
+      end
 
       def validate_associated_presence field
         fail_validation field, "needs_#{field}" if send(field).count == 0

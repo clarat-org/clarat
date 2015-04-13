@@ -1,4 +1,4 @@
-# Authentication for rails_admin
+# Authentication (via cancan) for rails_admin
 class Ability
   include CanCan::Ability
 

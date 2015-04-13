@@ -1,3 +1,4 @@
+# One of the main models. Represents the organizations that provide offers.
 class Organization < ActiveRecord::Base
   has_paper_trail
 

@@ -78,6 +78,23 @@
       max-height: 95px;
     }
 
+    .JS-Geolocation__prompt {
+      bottom: 35px;
+      padding: 5px;
+      width: 80%;
+      margin: 0 20% 0 0;
+    }
+
+  }
+
+  .JS-Geolocation__remove {
+    top: 5px;
+    right: 10px;
+
+    .Distributor--navigation & {
+      top: 2px;
+      right: 60px;
+    }
   }
 
   #new_search_form {
@@ -211,6 +228,7 @@
       }
     }
   }
+
 
   .nav-sections {
     margin: 0;

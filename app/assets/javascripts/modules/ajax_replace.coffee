@@ -10,9 +10,15 @@
   Clarat.ajaxStack[container].push targetURL
 
   $.get targetURL, (data) ->
+    # update container
     container.html data
 
+    # update URL
+    history.pushState {turbolinks: true, url: targetURL}, '', targetURL
+
+    # remove appropriate element from stack
     processedIndex = Clarat.ajaxStack[container].lastIndexOf targetURL
     Clarat.ajaxStack[container].splice processedIndex, 1
 
+    # remove waiting-for-ajax display styling when stack empty
     container.removeClass 'Ajax' unless Clarat.ajaxStack[container].length

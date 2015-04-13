@@ -1,7 +1,7 @@
 clickHandler = ->
   resultContainer = $('.content-main')
 
-  $('.Categories__list a').on 'click', (event) ->
+  $('.Categories a').on 'click', (event) ->
     that = $(this)
     url = that.attr 'href'
 

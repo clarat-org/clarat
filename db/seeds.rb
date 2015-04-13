@@ -31,10 +31,6 @@ AudienceFilter.create name: 'Patchworkfamilien',
                       identifier: 'patchwork_families'
 AudienceFilter.create name: 'Regenbogenfamilien', identifier: 'rainbow_families'
 AudienceFilter.create name: 'LGBT', identifier: 'lgbt'
-personal =
-  EncounterFilter.create name: 'persönliches Gespräch', identifier: 'personal'
-tel = EncounterFilter.create name: 'Telefon', identifier: 'hotline'
-web = EncounterFilter.create name: 'E-Mail und Chat', identifier: 'online'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896
@@ -66,11 +62,11 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        geoloc: '52.520007,13.404954'
 
 mains = []
-mains << Category.create(name: 'Akute Krisen', icon: 'a-crisis')
-mains << Category.create(name: 'Lernen', icon: 'b-learn')
-mains << Category.create(name: 'Familie', icon: 'c-family')
-mains << Category.create(name: 'Gesundheit', icon: 'd-health')
-mains << Category.create(name: 'Gewalt', icon: 'e-violence')
+mains << Category.create(name: 'Akute Krisen', icon: 'e-crisis')
+mains << Category.create(name: 'Lernen', icon: 'c-learn')
+mains << Category.create(name: 'Familie', icon: 'a-family')
+mains << Category.create(name: 'Gesundheit', icon: 'b-health')
+mains << Category.create(name: 'Gewalt', icon: 'd-violence')
 
 10.times do
   FactoryGirl.create :category, parent: mains.sample
@@ -82,19 +78,16 @@ end
 
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Lokales Angebot',
-                                      encounter_filters: [personal]
+                                      encounter: 'personal'
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Lokale Hotline',
-                                      encounter_filters: [tel],
-                                      local_offer: true,
+                                      encounter: 'hotline',
                                       area: berlin
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweiter Chat',
-                                      encounter_filters: [web],
-                                      local_offer: false,
+                                      encounter: 'online',
                                       area: schland
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweite Hotline',
-                                      encounter_filters: [tel],
-                                      local_offer: false,
+                                      encounter: 'hotline',
                                       area: schland

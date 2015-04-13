@@ -1,3 +1,4 @@
+# "Send me an update when you have offers in my city" Request Form
 class UpdateRequestsController < ApplicationController
   skip_before_action :authenticate_user!
   respond_to :js

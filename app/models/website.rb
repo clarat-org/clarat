@@ -1,3 +1,4 @@
+# The external web addresses of organizations and offers.
 class Website < ActiveRecord::Base
   # associtations
   has_many :hyperlinks
@@ -8,7 +9,8 @@ class Website < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :host, in: %w(own facebook twitter youtube gplus pinterest other)
+  HOSTS = %w(own facebook twitter youtube gplus pinterest other)
+  enumerize :host, in: HOSTS
 
   # Validations
   validates :host, presence: true

@@ -18,6 +18,7 @@ feature 'Admin Backend' do
         fill_in 'offer_name', with: 'testangebot'
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
+        select 'Personal', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
 
@@ -37,6 +38,7 @@ feature 'Admin Backend' do
         fill_in 'organization_description', with: 'testdescription'
         select 'e.V.', from: 'organization_legal_form'
         check 'organization_renewed'
+        check 'organization_accredited_institution'
 
         click_button 'Speichern'
         page.must_have_content 'testorganisation'
@@ -56,6 +58,7 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
+      select 'Personal', from: 'offer_encounter'
       select location.name, from: 'offer_location_id'
       select 'foobar', from: 'offer_organization_ids'
 
@@ -82,6 +85,7 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
+      select 'Hotline', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
@@ -89,7 +93,8 @@ feature 'Admin Backend' do
       # 2: Fail to approve as same user
       check 'offer_approved'
       click_button 'Speichern'
-      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
+      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in'\
+                             ' gesetzt werden'
 
       # 3: Login as user able to approve, fail to approve incomplete offer
       login_as superuser
@@ -101,39 +106,60 @@ feature 'Admin Backend' do
       uncheck 'offer_completed'
       check 'offer_approved'
       click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in gesetzt werden'
-      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
+      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in'\
+                             ' gesetzt werden'
+      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
+                             ' auch "Completed" gesetzt ist'
 
       # 4: Set complete, fail to approve offer without organization
       check 'offer_completed'
       click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist'
-      page.must_have_content 'Organizations benötigt mindestens eine Organisation'
+      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
+                             ' auch "Completed" gesetzt ist'
+      page.must_have_content 'Organizations benötigt mindestens eine'\
+                             ' Organisation'
 
       # 5: fix orga selection error, but orga is not approved
       orga.update_column :approved, false
       select 'foobar', from: 'offer_organization_ids'
       click_button 'Speichern'
 
-      page.wont_have_content 'Organizations benötigt mindestens eine Organisation'
-      page.must_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
+      page.wont_have_content 'Organizations benötigt mindestens eine'\
+                             ' Organisation'
+      page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten, bevor dieses Angebot bestätigt'\
+                             ' werden kann.'
 
       # 6: fix all orga errors, needs age_filter
       orga.update_column :approved, true
       click_button 'Speichern'
-      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
-      page.must_have_content 'Age filters benötigt mindestens einen Altersfilter'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten, bevor dieses Angebot bestätigt'\
+                             ' werden kann.'
+      page.must_have_content 'Age filters benötigt mindestens einen'\
+                             ' Altersfilter'
 
-      # 7: age_filter given, needs encounter_filter
+      # 7: age_filter given, needs an area
       select 'Babies', from: 'offer_age_filter_ids'
       click_button 'Speichern'
-      page.wont_have_content 'Organizations darf nur bestätigte Organisationen beinhalten, bevor dieses Angebot bestätigt werden kann.'
-      page.must_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+      page.wont_have_content 'Age filters benötigt mindestens einen'\
+                             ' Altersfilter'
+      page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
+                             ' nicht "personal" ist'
 
-      # 8: encounter_filter given, offer is approved
-      select 'Telefon', from: 'offer_encounter_filter_ids'
+      # 9: area given, needs language filter
+      select 'Deutschland', from: 'offer_area_id'
       click_button 'Speichern'
-      page.wont_have_content 'Encounter filters benötigt mindestens einen Kontaktfilter'
+      page.wont_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
+                             ' nicht "personal" ist'
+      page.must_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
+
+      # 10: language filter given, offer is approved
+      select 'Deutsch', from: 'offer_language_filter_ids'
+      click_button 'Speichern'
+      page.wont_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

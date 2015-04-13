@@ -26,17 +26,20 @@ body {
 }
 
 ul {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /**
- * Make 'tel' link not appear as links on desktop.
+ * Make 'tel' and 'fax' link not appear as links on desktop.
  */
 
 a[href^="tel"]:link,
 a[href^="tel"]:visited,
-a[href^="tel"]:hover {
-    text-decoration: none;
-    pointer-events: none;
+a[href^="tel"]:hover,
+a[href^="fax"]:link,
+a[href^="fax"]:visited,
+a[href^="fax"]:hover {
+  text-decoration: none;
+  pointer-events: none;
 }

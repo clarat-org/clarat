@@ -22,6 +22,8 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  ### Pundit Helpers ###
+
   def verify_authorized_with_exceptions
     verify_authorized unless pundit_unverified_controller
   end
@@ -52,9 +54,12 @@ class ApplicationController < ActionController::Base
     %w(OffersController CategoriesController ContactsController)
   end
 
+  ### / Pundit Helpers ###
+
   private
 
-  # Standard 404 Error
+  ### Standard 404 Error ###
+
   unless Rails.application.config.consider_all_requests_local
     rescue_from ActionController::RoutingError, with: :goto_404
     rescue_from ActionController::UnknownController, with: :goto_404

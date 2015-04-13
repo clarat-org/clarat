@@ -1,3 +1,4 @@
+# Opening Times of Offers
 class Opening < ActiveRecord::Base
   # associtations
   has_and_belongs_to_many :offers

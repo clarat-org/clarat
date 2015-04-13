@@ -1,3 +1,4 @@
+# Newsletter Subscription Creation
 class SubscriptionsController < ApplicationController
   skip_before_action :authenticate_user!
   respond_to :js

@@ -1,7 +1,0 @@
-section.section-content.section-content--organisation
-  h3.section-content__title = t 'offers.show.organizations'
-  .section-content__body
-    ul.Listing-organizations__list
-      - organizations.each do |orga|
-        li.Listing-organizations__listitem
-          = link_to orga.name, organization_path(id: orga)

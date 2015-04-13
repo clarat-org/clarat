@@ -1,3 +1,5 @@
+# The end point that can be contacted by a visitor to get Information about an
+# offer.
 class ContactPerson < ActiveRecord::Base
   # Associations
   belongs_to :organization, inverse_of: :contact_people
@@ -34,5 +36,9 @@ class ContactPerson < ActiveRecord::Base
     define_method "telephone_#{n}".to_sym do
       self["area_code_#{n}"].to_s + self["local_number_#{n}"]
     end
+  end
+
+  def fax
+    fax_area_code.to_s + fax_number
   end
 end

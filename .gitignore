@@ -59,3 +59,6 @@ rails_best_practices_output.html
 # DB locks
 .lock-*
 tags
+
+# ENV file
+.env

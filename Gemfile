@@ -184,6 +184,7 @@ group :development, :test do
   gem 'bullet' # Notify about n+1 queries
   gem 'letter_opener' # emails in browser
   gem 'timecop' # time travel!
+  gem 'dotenv-rails' # handle environment variables
 end
 
 group :development, :test, :staging do

@@ -118,6 +118,10 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+# For Heroku & Add-Ons
+
+gem 'newrelic_rpm'
+
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
 end

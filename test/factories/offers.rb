@@ -7,8 +7,9 @@ FactoryGirl.define do
     description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
-      Offer.enumerized_attributes.attributes['encounter'].values.sample
+      %w(personal personal personal hotline online).sample # weighted
     end
+    area { Area.first unless encounter == 'personal' }
     completed false
     approved false
     approved_at nil
@@ -26,6 +27,7 @@ FactoryGirl.define do
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
       opening_count { rand(1..5) }
+      fake_address false
     end
 
     after :create do |offer, evaluator|
@@ -38,7 +40,10 @@ FactoryGirl.define do
       organization = offer.organizations.first
       if organization && offer.personal?
         location = organization.locations.sample ||
-                   FactoryGirl.create(:location, organization: organization)
+                   evaluator.fake_address ?
+                    FactoryGirl.create(:location, :fake_address,
+                                       organization: organization) :
+                    FactoryGirl.create(:location, organization: organization)
         offer.update_column :location_id, location.id
       end
 

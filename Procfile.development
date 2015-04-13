@@ -1,0 +1,4 @@
+web: postgres -D /usr/local/var/postgres
+web: redis-server /usr/local/etc/redis.conf
+web: bundle exec rails s
+worker: bundle exec sidekiq

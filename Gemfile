@@ -123,6 +123,7 @@ group :production, :staging do
 end
 
 group :development do
+  # startup
   gem 'spring' # faster rails start
 
   # errors
@@ -159,7 +160,8 @@ group :development, :test do
   gem 'pry-rails' # pry is awsome
   gem 'hirb' # hirb makes pry output even more awesome
   gem 'pry-byebug' # kickass debugging
-  gem 'pry-stack_explorer'
+  gem 'pry-stack_explorer' # step through stack
+  gem 'pry-doc' # read ruby docs in console
 
   # test suite
   gem 'minitest' # Testing using Minitest

@@ -60,5 +60,6 @@ rails_best_practices_output.html
 .lock-*
 tags
 
-# ENV file
+# development only files
 .env
+Procfile.development

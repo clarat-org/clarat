@@ -214,7 +214,10 @@
 
   a[href^="tel"]:link,
   a[href^="tel"]:visited,
-  a[href^="tel"]:hover {
+  a[href^="tel"]:hover,
+  a[href^="fax"]:link,
+  a[href^="fax"]:visited,
+  a[href^="fax"]:hover {
     text-decoration: underline;
     pointer-events: auto;
   }

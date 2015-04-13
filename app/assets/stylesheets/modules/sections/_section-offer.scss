@@ -6,12 +6,16 @@
 
 .template--offers-show {
 
-  .section-content--organisation .section-content__title {
+  .section-content--internet-presence .section-content__title {
     background: $brand_green;
   }
 
   .section-content--where .section-content__title {
     background: $brand_brown;
+  }
+
+  .section-content--whos-offering .section-content__title {
+    background: $brand_green;
   }
 
   .section-content--what {
@@ -29,6 +33,14 @@
       margin: 0;
       padding: 0;
       list-style: none;
+    }
+  }
+
+  .section-content--contact-person-list {
+    li {
+      margin-left: 25px;
+      list-style-type: square;
+      line-height: 1.65;
     }
   }
 
@@ -79,6 +91,10 @@
 
   .offer-contribute {
     border-color: $brand_yellow;
+  }
+
+  .adr {
+    margin: .25em 0 1.25em;
   }
 
 }

@@ -1,0 +1,7 @@
+section.section-content
+  h3.section-content__title = t 'offers.show.who.person'
+  .section-content__body
+
+    - if offer.contact_details?
+      = render 'offers/show/who_contact_people', offer: offer
+

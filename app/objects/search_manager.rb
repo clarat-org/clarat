@@ -6,7 +6,8 @@ class SearchManager
 
   def initialize(search_form, page: nil)
     @search_form = search_form
-    @page = [(page || 0) - 1, 0].max # essentially "-1", normalize for algolia
+    @page =
+      [page.to_i - 1, 0].max # essentially "-1", normalize for algolia
     # TODO: clarity
   end
 
@@ -71,7 +72,8 @@ class SearchManager
       query: query,
       category: category,
       geolocation: geolocation,
-      search_radius: search_radius
+      search_radius: search_radius,
+      page: page
     }
   end
 
@@ -80,7 +82,8 @@ class SearchManager
       query: query,
       category: category,
       geolocation: geolocation,
-      teaser: personal?
+      teaser: personal?,
+      page: page
     }
   end
 

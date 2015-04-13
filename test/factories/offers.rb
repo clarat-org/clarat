@@ -39,11 +39,13 @@ FactoryGirl.define do
       # location
       organization = offer.organizations.first
       if organization && offer.personal?
-        location = organization.locations.sample ||
-                   evaluator.fake_address ?
-                    FactoryGirl.create(:location, :fake_address,
-                                       organization: organization) :
-                    FactoryGirl.create(:location, organization: organization)
+        location =  organization.locations.sample ||
+                    if evaluator.fake_address
+                      FactoryGirl.create(:location, :fake_address,
+                                         organization: organization)
+                    else
+                      FactoryGirl.create(:location, organization: organization)
+                    end
         offer.update_column :location_id, location.id
       end
 

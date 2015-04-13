@@ -1,6 +1,6 @@
 registerSearchLocationHandlers = ->
-  if $('.JS-Search-location').length
-    $(document).on 'newGeolocation', updateLocationInput
+  # if $('.JS-Search-location').length
+  #   $(document).on 'newGeolocation', updateLocationInput
 
   if $('.nav-sections__list').length
     updateCategoryLinksPeriodically()
@@ -8,13 +8,13 @@ registerSearchLocationHandlers = ->
 $(document).ready registerSearchLocationHandlers
 $(document).on 'page:load', registerSearchLocationHandlers
 
-updateLocationInput = ->
-  if Clarat.currentGeolocationByBrowser and
-     not readCookie('last_search_location')
-    $('.JS-Search-location').attr 'value', Clarat.currentGeolocation
-    $('.JS-Search-location-display').attr(
-      'value', I18n.t('conf.current_location')
-    )
+# updateLocationInput = ->
+#   if Clarat.currentGeolocationByBrowser and
+#      not readCookie('last_search_location')
+#     $('.JS-Search-location').attr 'value', Clarat.currentGeolocation
+#     $('.JS-Search-location-display').attr(
+#       'value', I18n.t('conf.current_location')
+#     )
 
 updateCategoryLinksPeriodically = ->
   # on input change by typing or places autocomplete

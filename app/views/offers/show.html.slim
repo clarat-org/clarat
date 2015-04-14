@@ -50,8 +50,8 @@
           - if @offer.location
             = render 'offers/show/who_location', offer: @offer, markers: @markers
 
-          #map-container
-            #map-canvas data={ markers: @markers.to_json }
+            #map-container
+              #map-canvas data={ markers: @markers.to_json }
 
       / When can you contact?
       - if @offer.opening_details?

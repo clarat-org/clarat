@@ -37,4 +37,8 @@ class ContactPerson < ActiveRecord::Base
       self["area_code_#{n}"].to_s + self["local_number_#{n}"]
     end
   end
+
+  def fax
+    fax_area_code.to_s + fax_number
+  end
 end

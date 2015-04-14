@@ -76,7 +76,6 @@
   #new_search_form {
     margin: 0 auto;
 
-
     .template--pages-home & {
 
       .twitter-typeahead {
@@ -139,6 +138,7 @@
     margin-bottom: 20px;
   }
 
+
   .nav-sections__listitem {
     float: none;
     width: 100%;
@@ -185,7 +185,6 @@
     }
   }
 
-
   // Footer ######################################
 
   .nav-site__listitem {
@@ -215,7 +214,10 @@
 
   a[href^="tel"]:link,
   a[href^="tel"]:visited,
-  a[href^="tel"]:hover {
+  a[href^="tel"]:hover,
+  a[href^="fax"]:link,
+  a[href^="fax"]:visited,
+  a[href^="fax"]:hover {
     text-decoration: underline;
     pointer-events: auto;
   }

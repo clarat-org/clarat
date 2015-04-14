@@ -118,11 +118,16 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+# For Heroku & Add-Ons
+
+gem 'newrelic_rpm'
+
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
 end
 
 group :development do
+  # startup
   gem 'spring' # faster rails start
 
   # errors
@@ -159,7 +164,8 @@ group :development, :test do
   gem 'pry-rails' # pry is awsome
   gem 'hirb' # hirb makes pry output even more awesome
   gem 'pry-byebug' # kickass debugging
-  gem 'pry-stack_explorer'
+  gem 'pry-stack_explorer' # step through stack
+  gem 'pry-doc' # read ruby docs in console
 
   # test suite
   gem 'minitest' # Testing using Minitest
@@ -184,6 +190,7 @@ group :development, :test do
   gem 'bullet' # Notify about n+1 queries
   gem 'letter_opener' # emails in browser
   gem 'timecop' # time travel!
+  gem 'dotenv-rails' # handle environment variables
 end
 
 group :development, :test, :staging do

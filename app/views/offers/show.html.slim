@@ -6,41 +6,63 @@
       /.page-detail__icons
       /  - @offer.categories.mains.each do |main_tag|
       /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
+
+    / Left side (in desktop)
     .section-wrapper-major
+
+      / What's it all about?
       section.section-content.section-content--what
         h3.section-content__title = t 'offers.show.what'
         .section-content__body
           == @offer.description_html
 
+      / What to do next?
       section.section-content.section-content--nextsteps
         h3.section-content__title
           = t 'offers.show.next_steps'
         .section-content__body
           == @offer.next_steps_html
 
-      - if @offer.opening_details?
-        = render 'offers/show/opening_section', offer: @offer
+      / Who is offering this service?
+      = render 'offers/show/who_section', offer: @offer
 
-      - if @offer.contact_details?
-        = render 'offers/show/contact_section', offer: @offer
-
-      = render 'offers/show/organizations_section',
-               organizations: @offer.organizations
-
-    .section-wrapper-minor
-
-      - if @offer.location
-        = render 'offers/show/location_section', offer: @offer,
-                                                 markers: @markers
-
+      / Categories
       - unless @offer.categories.empty?
         = render 'offers/show/categories_section', categories: @offer.categories
 
+      / Internet Presence
+      = render 'offers/show/website_section', offer: @offer
+
+    / Right side (in desktop)
+    .section-wrapper-minor
+
+      section.section-content.section-content--whos-offering
+        h3.section-content__title
+          = t 'offers.show.who.title'
+
+        .section-content__body
+
+          ul.Listing-organizations__list
+            - @offer.organizations.each do |orga|
+              li.Listing-organizations__listitem
+                span.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
+
+          - if @offer.location
+            = render 'offers/show/who_location', offer: @offer, markers: @markers
+
+          #map-container
+            #map-canvas data={ markers: @markers.to_json }
+
+      / When can you contact?
+      - if @offer.opening_details?
+        = render 'offers/show/opening_section', offer: @offer
+
+
+      / Found any mistakes?
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-pencil-square-o
         = t 'shared.show.cta_report_errors'
-
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 

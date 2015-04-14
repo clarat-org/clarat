@@ -29,7 +29,7 @@ FactoryGirl.define do
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }
-      zip { (10_000..14_100).to_a.sample }
+      zip { (10_000..14_100).to_a.sample.to_s }
     end
 
     trait :hq do

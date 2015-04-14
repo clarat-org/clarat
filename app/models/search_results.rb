@@ -19,7 +19,10 @@ class SearchResults
   ### For Kaminari ##
 
   alias_method :total_pages, :nbPages
-  alias_method :current_page, :page
+
+  def current_page
+    page + 1 # Algolia is zero-based, Kaminari isn't
+  end
 
   def limit_value
     PER_PAGE

@@ -83,6 +83,7 @@ geolocationRemove = (e) ->
   $('.JS-Geolocation__input')[0].value = ''
   $('.JS-Geolocation__display')[0].value = ''
   $('.JS-Geolocation__display').attr 'disabled', false
+  $('.JS-Geolocation__remove').hide()
 
   # Focus on display (without location prompt)
   $('.JS-Geolocation__display').off 'focus', handleFocussedLocationInput

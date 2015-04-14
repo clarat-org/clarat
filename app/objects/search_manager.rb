@@ -6,7 +6,8 @@ class SearchManager
 
   def initialize(search_form, page: nil)
     @search_form = search_form
-    @page = [(page || 0) - 1, 0].max # essentially "-1", normalize for algolia
+    @page =
+      [page.to_i - 1, 0].max # essentially "-1", normalize for algolia
     # TODO: clarity
   end
 
@@ -71,7 +72,9 @@ class SearchManager
       query: query,
       category: category,
       geolocation: geolocation,
-      search_radius: search_radius
+      search_radius: search_radius,
+      facet_filters: facet_filters,
+      page: page
     }
   end
 
@@ -80,7 +83,9 @@ class SearchManager
       query: query,
       category: category,
       geolocation: geolocation,
-      teaser: personal?
+      teaser: personal?,
+      facet_filters: facet_filters,
+      page: page
     }
   end
 
@@ -89,7 +94,8 @@ class SearchManager
       query: query,
       category: category,
       geolocation: geolocation,
-      search_radius: search_radius
+      search_radius: search_radius,
+      facet_filters: facet_filters
     }
   end
 
@@ -98,12 +104,12 @@ class SearchManager
   end
 
   # TODO: this needs to be properly unit tested
-  # TODO: Where is this used?
-  # def filters
-  #   @filters ||= %w(age audience language).map do |type|
-  #     search_form.send("#{type}_filter")
-  #   end.compact
-  # end
+  def facet_filters
+    @filters ||= %w(age audience language).map do |type|
+      filter = search_form.send("#{type}_filter")
+      "_#{type}_filters:#{filter}" if filter
+    end.compact
+  end
 
   # wide radius or use exact location
   def search_radius

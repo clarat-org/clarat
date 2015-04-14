@@ -59,3 +59,7 @@ rails_best_practices_output.html
 # DB locks
 .lock-*
 tags
+
+# development only files
+.env
+Procfile.development

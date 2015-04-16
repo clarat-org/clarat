@@ -232,6 +232,9 @@ RailsAdmin.config do |config|
         gefunden habt, mit dem alle Fälle abgedeckt werden können.'
       end
     end
+    field :opening_specification_html do
+      read_only true
+    end
     field :websites
     field :keywords do
       inverse_of :offers

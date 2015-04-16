@@ -49,8 +49,8 @@ class OffersController < ApplicationController
   end
 
   def set_categories
-    @category_tree ||= Category.hash_tree
-      .sort_by { |tree| tree.first.icon || '' }
+    @category_tree ||=
+      Category.hash_tree.sort_by { |tree| tree.first.icon || '' }
   end
 
   # Warning: cannot be memoized

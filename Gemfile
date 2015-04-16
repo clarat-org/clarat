@@ -121,6 +121,7 @@ gem 'autoprefixer-rails'
 # For Heroku & Add-Ons
 
 gem 'newrelic_rpm'
+gem 'newrelic_sidekiq_agent' # care: lowers sidekiq version
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this

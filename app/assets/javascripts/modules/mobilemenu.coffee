@@ -6,7 +6,6 @@ initMobileMenu = ->
   $submit = $(".main-search__submit")
   $distributor = $(".Distributor--navigation")
   smartphone = ($(window).width() < 480)
-  resultsHeadlineHeight = $(".Listing-results__headline").height()
 
   if $homeTemplate
     return
@@ -18,7 +17,6 @@ initMobileMenu = ->
       $submit.toggleClass "is-enlarged"
       $distributor.toggleClass "is-enlarged"
 
-    $(".content-main").css "padding-top", resultsHeadlineHeight + 90
 
 
 $(document).on 'page:load', initMobileMenu

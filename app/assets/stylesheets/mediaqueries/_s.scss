@@ -80,9 +80,9 @@
 
     .JS-Geolocation__prompt {
       bottom: 35px;
+      margin: 0 20% 0 0;
       padding: 5px;
       width: 80%;
-      margin: 0 20% 0 0;
     }
 
   }
@@ -255,14 +255,10 @@
   }
 
   .content-main {
-    padding-top: 111px;
+    padding-top: 100px;
 
     .template--pages-home & {
       padding-top: 0;
-    }
-
-    .template--offers-index & {
-      padding-top: 121px;
     }
 
     &.content-main--invalid_location {
@@ -303,20 +299,11 @@
     }
   }
 
+  .Categories {
+    display: none;
+  }
+
   .Listing-results__headline {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    left: 0;
-    z-index: 15;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    padding: 6px 105px 5px 15px;
-    max-width: none;
-    background: $brand_blue;
-    color: $brand_white;
-    text-overflow: ellipsis;
     font-size: 16px;
   }
 
@@ -379,8 +366,8 @@
   // Filter offer#index ######################################
 
   .filter-form {
-    padding-bottom: 45px;
     padding-right: 5px;
+    padding-bottom: 45px;
 
     .input {
       padding: 0;
@@ -396,8 +383,9 @@
   }
 
   .filter-form__fieldset__headline {
-    cursor: pointer;
     width: 100%;
+    color: $brand_brown;
+    cursor: pointer;
 
     &[aria-collapsed="false"] {
       background: image-url('ico_fieldset_collapse.svg') no-repeat right center;
@@ -409,8 +397,8 @@
   }
 
   .filter-form__headline {
-    font-size: 16px;
     margin-bottom: 10px;
+    font-size: 16px;
   }
 
   .filter-form__expander {

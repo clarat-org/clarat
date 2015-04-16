@@ -60,10 +60,7 @@
 }
 
 .filter-form__headline {
-  margin: 0 0 15px 10px;
-  text-align: left;
-  font-weight: 400;
-  font-size: 20px;
+  display: none;
 }
 
 .filter-form__fieldset {
@@ -120,5 +117,27 @@
 .filter-form__radio,
 .filter-form__label {
   cursor: pointer;
+}
+
+.filter-form__switch {
+  @extend %roboto_bold;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: block;
+  padding: 0 15px;
+  width: 100%;
+  height: 30px;
+  background: $brand_blue image-url('ico_fieldset_expand--ondark.svg') no-repeat calc(100% - 15px) center;
+  color: $brand_white;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  cursor: pointer;
+
+
+  &[aria-collapsed="true"] {
+    background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
+  }
 }
 

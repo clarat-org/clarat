@@ -1,5 +1,5 @@
 initFilterForm = ->
-  filterExpand = ->
+  initFilterExpand = ->
 
     $filterForm = $('.filter-form')
     startHeight = $filterForm.find('.col-form-inner:first').find('.radio_buttons').height() * 2.8
@@ -51,7 +51,8 @@ initFilterForm = ->
 
         sessionStorage.setItem("offer_filter_open", "false")
 
-  fieldsetHeadlineClickHandler = ->
+
+  initFieldsetHeadlineClickHandler = ->
 
     if ($(window).width() <= 440)
 
@@ -78,8 +79,42 @@ initFilterForm = ->
         .find('.col-form-inner .input').removeClass 'is--hidden'
       .find('filter-form__fieldset__headline').attr 'aria-collapsed', 'true'
 
-  filterExpand()
-  fieldsetHeadlineClickHandler()
+
+  initMobileFilterSwitch = ->
+
+    label = I18n.t 'js.mobile_filter'
+
+    unless $('.filter-form__switch').length
+      $('.template--offers-index').find('.content-main').prepend $('<button class="filter-form__switch" aria-expanded="false">' + label + '</button>')
+
+    mobileFilterSwitch = $('.filter-form__switch')
+    filterForm = $('.filter-form')
+
+
+    if ($(window).width() <= 440)
+
+      mobileFilterSwitch.show()
+      filterForm.addClass 'is--hidden'
+
+      mobileFilterSwitch.on 'click', ->
+        filterForm.toggleClass 'is--hidden'
+
+        that = $(this)
+
+        if that.attr('aria-collapsed') == 'true'
+          that.attr('aria-collapsed', 'false')
+
+        else
+          that.attr('aria-collapsed', 'true')
+
+    else
+      mobileFilterSwitch.hide()
+      filterForm.removeClass 'is--hidden'
+
+      
+  initMobileFilterSwitch()
+  initFilterExpand()
+  initFieldsetHeadlineClickHandler()
 
 
 $(document).ready -> initFilterForm()

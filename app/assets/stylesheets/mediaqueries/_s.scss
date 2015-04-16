@@ -376,6 +376,52 @@
 
   }
 
+  // Filter offer#index ######################################
+
+  .filter-form {
+    padding-bottom: 45px;
+    padding-right: 5px;
+
+    .input {
+      padding: 0;
+    }
+
+    .col-form-inner {
+      width: 100%;
+    }
+  }
+
+  .filter-form__fieldset {
+    padding-top: 0;
+  }
+
+  .filter-form__fieldset__headline {
+    cursor: pointer;
+    width: 100%;
+
+    &[aria-collapsed="false"] {
+      background: image-url('ico_fieldset_collapse.svg') no-repeat right center;
+    }
+
+    &[aria-collapsed="true"] {
+      background: image-url('ico_fieldset_expand.svg') no-repeat right center;
+    }
+  }
+
+  .filter-form__headline {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .filter-form__expander {
+    display: none;
+  }
+
+  [type="submit"].filter-form__submit,
+  .filter-form__submit {
+    width: 100%;
+  }
+
   // Footer ######################################
 
   .nav-legal {
@@ -439,8 +485,6 @@
     }
   }
 
-  // Misc ######################################
-
   // Styling for JS-generated button
   .jump-to-categories {
     position: absolute;
@@ -466,4 +510,5 @@
     height: 68px;
     content: "";
   }
+
 }

@@ -51,27 +51,24 @@
   bottom: 0;
   z-index: 30;
   padding-top: 20px;
+  padding-bottom: 8px;
   width: 100%;
   text-align: center;
   text-decoration: underline;
   font-size: 13px;
   cursor: pointer;
-  padding-bottom: 8px;
 }
 
 .filter-form__headline {
   margin: 0 0 15px 10px;
   text-align: left;
+  font-weight: 400;
   font-size: 20px;
 }
 
 .filter-form__fieldset {
   margin: 0;
   border: none;
-}
-
-.filter-form__fieldset--last {
-  padding: 0;
 }
 
 .filter-form__fieldset__headline {

@@ -49,11 +49,48 @@ filterExpand = ->
 
       sessionStorage.setItem("offer_filter_open", "false")
 
+fieldsetHeadlineClickHandler = ->
 
-$(document).ready -> filterExpand()
+  if ($(window).width() <= 440)
 
-$(document).on 'ajax_replaced', -> filterExpand()
+    $('.filter-form')
+      .removeClass 'filter-form--isCollapsed'
+      .css 'height', 'auto'
+      .find('.col-form-inner .input').addClass 'is--hidden'
 
-$(document).on 'page:load', -> filterExpand()
+    $('.filter-form').find('.filter-form__fieldset__headline').attr 'aria-collapsed', true
 
-$(window).on 'resize', -> filterExpand()
+    $('.filter-form__fieldset__headline').on 'click', ->
+
+      that = $(this)
+
+      that.next(".input").toggleClass 'is--hidden'
+
+      if that.attr('aria-collapsed') == 'true'
+        that.attr('aria-collapsed', 'false')
+      else
+        that.attr('aria-collapsed', 'true')
+
+  else
+    $('.filter-form')
+      .find('.col-form-inner .input').removeClass 'is--hidden'
+    .find('filter-form__fieldset__headline').attr 'aria-collapsed', 'true'
+
+
+
+
+$(document).ready ->
+  filterExpand()
+  fieldsetHeadlineClickHandler()
+
+$(document).on 'ajax_replaced', ->
+  filterExpand()
+  fieldsetHeadlineClickHandler()
+
+$(document).on 'page:load', ->
+  filterExpand()
+  fieldsetHeadlineClickHandler()
+
+$(window).on 'resize', ->
+  filterExpand()
+  fieldsetHeadlineClickHandler()

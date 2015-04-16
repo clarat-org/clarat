@@ -1,27 +1,29 @@
 filterExpand = ->
 
   $filterForm = $('.filter-form')
-  startHeight = $('.col-form-inner:first').find('.radio_buttons').height() * 3.5
-  expandLabel = 'Mehr Filter anzeigen'
-  collapseLabel = 'Weniger Filter anzeigen'
+  startHeight = $('.col-form-inner:first').find('.radio_buttons').height() * 2.5
+  expandLabel = I18n.t 'js.more_filter_options'
+  collapseLabel = I18n.t 'js.less_filter_options'
+  offer_filter_open = sessionStorage.getItem("offer_filter_open")
 
-  console.log "Zielhöhe: " + startHeight
+  unless offer_filter_open == "true"
+    $filterForm
+            .addClass 'filter-form--isCollapsed'
+            .height startHeight
+    $('.filter-form__expander').attr 'aria-expanded', true
 
-  console.log "Ausgangshöhe: " + $filterForm.height()
-
-  $filterForm
-          .addClass 'filter-form--isCollapsed'
-          .height startHeight
-
-  console.log "Angepasste Höhe: " + $filterForm.height()
+    sessionStorage.setItem("offer_filter_open", "false")
 
 
   if !$('.filter-form__expander').length
-    $filterForm.prepend '<div class="filter-form__expander" role="button">' + expandLabel + '</div>'
+    $filterForm.prepend '<div class="filter-form__expander" role="button" aria-expanded="false">' + expandLabel + '</div>'
+
+    if offer_filter_open == "true"
+      $('.filter-form__expander')
+        .html collapseLabel
+        .attr 'aria-expanded', true
 
   $expander = $('.filter-form__expander')
-
-  $expander.attr 'aria-expanded', false
 
   $expander.on 'click', ->
 
@@ -33,6 +35,9 @@ filterExpand = ->
       $filterForm
           .css 'height', 'auto'
           .removeClass 'filter-form--isCollapsed'
+
+      sessionStorage.setItem("offer_filter_open", "true")
+
     else
       $expander
           .html expandLabel
@@ -42,19 +47,13 @@ filterExpand = ->
             .css 'height', startHeight
             .addClass 'filter-form--isCollapsed'
 
+      sessionStorage.setItem("offer_filter_open", "false")
 
 
-$(document).ready ->
-  console.log "++++++++++ doc ready event"
-  filterExpand()
+$(document).ready -> filterExpand()
 
-$(document).on 'ajax_replaced', ->
-  console.log "++++++++++ ajax replaced event"
-  filterExpand()
+$(document).on 'ajax_replaced', -> filterExpand()
 
-$(document).on 'page:load', ->
-  console.log "++++++++++ page:load event"
-  filterExpand()
+$(document).on 'page:load', -> filterExpand()
 
-
-#$(window).on 'resize', initFilterForm
+$(window).on 'resize', -> filterExpand()

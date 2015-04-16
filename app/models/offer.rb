@@ -75,7 +75,9 @@ class Offer < ActiveRecord::Base
   def generate_from_markdown
     self.description_html = MarkdownRenderer.render description
     self.next_steps_html = MarkdownRenderer.render next_steps
-    self.opening_specification_html = MarkdownRenderer.render opening_specification
+    if self.opening_specification_html
+      self.opening_specification_html = MarkdownRenderer.render opening_specification
+    end
   end
 
   def contact_details?

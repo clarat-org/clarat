@@ -21,8 +21,10 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# Use jquery as the JavaScript library
+# Use jquery as the JavaScript library & plugins
 gem 'jquery-rails'
+
+gem 'qtip2-jquery-rails'
 
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 

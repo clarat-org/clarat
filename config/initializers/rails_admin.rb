@@ -25,7 +25,7 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter AudienceFilter User Contact Keyword
+    LanguageFilter AgeFilter AudienceFilter User Contact Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
@@ -323,6 +323,13 @@ RailsAdmin.config do |config|
 
     # nested_set(max_depth: 5)
     nestable_tree(max_depth: 5)
+  end
+
+  config.model 'Definition' do
+    field :key
+    field :explanation
+
+    object_label_method :key
   end
 
   config.model 'Filter' do

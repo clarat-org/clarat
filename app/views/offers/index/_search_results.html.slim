@@ -1,9 +1,9 @@
 = render 'offers/index/advanced_search', search_cache: search_cache
 
 .Listing-results
-  = link_to '#categories', class: 'jump-to-categories' do
-    i.fa.fa-filter
-    = I18n.t('offers.index.navigate_to_categories')
+  /= link_to '#categories', class: 'jump-to-categories' do
+  /  i.fa.fa-filter
+  /  = I18n.t('offers.index.navigate_to_categories')
 
   - if search_cache.remote_focussed?
     - main_offers = remote_offers

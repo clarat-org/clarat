@@ -17,6 +17,7 @@ about supported directives.
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks
+# = require qtip2-jquery-rails
 # = require i18n
 # = require i18n/translations
 # = require hogan
@@ -43,6 +44,7 @@ about supported directives.
 # = require modules/search_location
 # = require modules/more
 # = require modules/modal
+# = require modules/tooltip
 # = require modules/unavailable_location_overlay
 # = require modules/flash
 # = require modules/safari_fixes

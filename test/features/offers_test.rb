@@ -19,4 +19,15 @@ feature 'Offer display' do
     page.must_have_link 'link'
     page.body.must_match %r{\<ul\>\n\<li\>list\</li\>\n\</ul\>}
   end
+
+  scenario 'Offer view has explained words' do
+    Definition.create key: 'complex', explanation: 'Explained!'
+    offer = FactoryGirl.create :offer, :approved,
+                               description: 'A complex sentence.'
+
+    visit offer_path offer
+    page.body.must_match(
+      %r{\<p\>A \<dfn class="JS-tooltip" data-id="1"\>complex\</dfn\> sentence.\</p\>}
+    )
+  end
 end

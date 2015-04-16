@@ -2,7 +2,7 @@ initFilterForm = ->
   filterExpand = ->
 
     $filterForm = $('.filter-form')
-    startHeight = $('.col-form-inner:first').find('.radio_buttons').height() * 2.5
+    startHeight = $filterForm.find('.col-form-inner:first').find('.radio_buttons').height() * 2.8
     expandLabel = I18n.t 'js.more_filter_options'
     collapseLabel = I18n.t 'js.less_filter_options'
     offer_filter_open = sessionStorage.getItem("offer_filter_open")
@@ -10,10 +10,12 @@ initFilterForm = ->
     unless offer_filter_open == "true"
       $filterForm
               .addClass 'filter-form--isCollapsed'
-              .height startHeight
+              .css 'height', startHeight
       $('.filter-form__expander').attr 'aria-expanded', true
 
       sessionStorage.setItem("offer_filter_open", "false")
+
+    console.log startHeight
 
 
     if !$('.filter-form__expander').length
@@ -29,6 +31,10 @@ initFilterForm = ->
     $expander.on 'click', ->
 
       if $filterForm.hasClass('filter-form--isCollapsed')
+
+        console.log startHeight
+
+
         $expander
             .html collapseLabel
             .attr 'aria-expanded', true
@@ -40,6 +46,8 @@ initFilterForm = ->
         sessionStorage.setItem("offer_filter_open", "true")
 
       else
+        console.log startHeight
+
         $expander
             .html expandLabel
             .attr 'aria-expanded', false

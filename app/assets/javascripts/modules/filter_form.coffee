@@ -15,9 +15,6 @@ initFilterForm = ->
 
       sessionStorage.setItem("offer_filter_open", "false")
 
-    console.log startHeight
-
-
     if !$('.filter-form__expander').length
       $filterForm.prepend '<div class="filter-form__expander" role="button" aria-expanded="false">' + expandLabel + '</div>'
 
@@ -32,9 +29,6 @@ initFilterForm = ->
 
       if $filterForm.hasClass('filter-form--isCollapsed')
 
-        console.log startHeight
-
-
         $expander
             .html collapseLabel
             .attr 'aria-expanded', true
@@ -46,7 +40,6 @@ initFilterForm = ->
         sessionStorage.setItem("offer_filter_open", "true")
 
       else
-        console.log startHeight
 
         $expander
             .html expandLabel

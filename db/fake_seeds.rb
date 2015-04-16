@@ -14,7 +14,7 @@ end
 puts "Before: Offer count #{Offer.count}"
 10.times do
   begin
-    FactoryGirl.create :offer, :approved, approved_by: u
+    FactoryGirl.create :offer, :approved, approved_by: u, fake_address: true
   rescue ActiveRecord::RecordInvalid
     puts "Offer data are randomly repeating"
   end

@@ -86,6 +86,7 @@ RailsAdmin.config do |config|
     end
     field :legal_form
     field :charitable
+    field :accredited_institution
     field :founded
     field :umbrella
     field :parents
@@ -230,6 +231,9 @@ RailsAdmin.config do |config|
         (Konstantin) auch gern bescheid, wenn ihr ein einheitliches Format
         gefunden habt, mit dem alle Fälle abgedeckt werden können.'
       end
+    end
+    field :opening_specification_html do
+      read_only true
     end
     field :websites
     field :keywords do

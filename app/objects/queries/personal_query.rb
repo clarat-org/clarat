@@ -1,6 +1,7 @@
 class PersonalQuery < BaseQuery
   attr_reader :geolocation, :search_radius
 
+  # TODO: geolocation
   def initialize(geolocation:, search_radius: 50_000, **args)
     super(args)
     @geolocation = geolocation

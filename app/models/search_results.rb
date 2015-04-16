@@ -6,7 +6,7 @@ class SearchResults
 
   # By default methods hit the result set array
   extend Forwardable
-  def_delegators :@hits, :each, :any?, :first, :[]
+  def_delegators :@hits, :each, :any?, :empty?, :first, :[]
 
   def initialize json
     KEYS.each do |key|
@@ -19,7 +19,10 @@ class SearchResults
   ### For Kaminari ##
 
   alias_method :total_pages, :nbPages
-  alias_method :current_page, :page
+
+  def current_page
+    page + 1 # Algolia is zero-based, Kaminari isn't
+  end
 
   def limit_value
     PER_PAGE

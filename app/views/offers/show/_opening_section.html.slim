@@ -1,4 +1,4 @@
-section.section-content.section-content--openinghours
+section.section-content
   h3.section-content__title = t 'offers.show.opening_hours'
   .section-content__body
     - if offer.openings.any?
@@ -16,4 +16,5 @@ section.section-content.section-content--openinghours
 
     - if offer.opening_specification? && offer.openings.any?
       br
-    == offer.opening_specification
+    .section-content--openingspecification
+      == offer.opening_specification_html

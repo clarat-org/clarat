@@ -1,6 +1,7 @@
 class NearbyQuery
   attr_reader :geolocation
 
+  # TODO: geolocation
   def initialize(geolocation:)
     @geolocation = geolocation
   end

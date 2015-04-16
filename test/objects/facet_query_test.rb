@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 describe FacetQuery do
-  it 'returns a executable hash' do
+  it 'returns an executable hash' do
     geolocation = Geolocation.new OpenStruct.new(latitude: 1, longitude: 1)
     query = FacetQuery.new(
       query: 'blub',

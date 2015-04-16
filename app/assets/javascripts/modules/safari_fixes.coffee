@@ -6,6 +6,7 @@ ready = ->
   if navigator.userAgent.search('Safari') >= 0 and
      navigator.userAgent.search('Chrome') < 0
 
+    # fix Safari frontend validation
     forms = document.getElementsByTagName 'form'
     for form in forms
       form.noValidate = true

@@ -1,11 +1,11 @@
 # TODO: gueltige werte fuer category?
 class BaseQuery
-  attr_reader :query, :category, :filters, :page
+  attr_reader :query, :category, :facet_filters, :page
 
-  def initialize(query: '', category:, filters: [], page: nil)
+  def initialize(query: '', category: nil, facet_filters: [], page: nil)
     @query = query
     @category = category
-    @filters = filters
+    @facet_filters = facet_filters
     @page = page
   end
 
@@ -17,13 +17,6 @@ class BaseQuery
       facetFilters: facet_filters,
       aroundPrecision: 500
     }.merge(page_query)
-  end
-
-  def facet_filters
-    filters
-      .reject { |_key, value| value }
-      .map { |type, filter| "_#{type}_filters:#{filter}" }
-      .compact
   end
 
   def page_query

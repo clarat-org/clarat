@@ -104,6 +104,18 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  def generate_openings_hash
+    openings_hash = {}
+    # To enable almost equal keys (still different objects)
+    openings_hash.compare_by_identity
+    openings.order('sort_value').each do |opening|
+      # To make every day a unique object
+      day_string = opening.day.to_s
+      openings_hash[day_string] = opening.display_string
+    end
+    openings_hash
+  end
+
   def gmaps_info
     {
       title: name,

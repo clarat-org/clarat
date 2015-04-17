@@ -4,15 +4,15 @@ section.section-content
     - if offer.openings.any?
       /! use http://microformats.org/wiki/opening-hours once specified
       table
-        - offer.openings.order('sort_value').each do |opening|
-          tr
+        - opening_hash = offer.generate_openings_hash
+        - opening_hash.each do |day, time|
+          tr class=("section-content--opening-hours" if opening_hash.keys.grep(day).last.equal? day)
             td.day
-              = t("activerecord.models.opening.#{opening.day}") + ':'
+              / # To make sure the name of the day will only be shown once
+              - if opening_hash.keys.grep(day).first.equal? day
+                = t("activerecord.models.opening.#{day}") + ':'
             td dir='ltr'
-              - if opening.open && opening.close
-                =<> opening.display_string
-              - else
-                = t 'offers.show.opening_by_arrangement'
+              =<> time
 
     - if offer.opening_specification? && offer.openings.any?
       br

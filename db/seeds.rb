@@ -21,8 +21,6 @@ AgeFilter.create name: 'Kleinkinder', identifier: 'toddler'
 AgeFilter.create name: 'Schulkinder', identifier: 'schoolkid'
 AgeFilter.create name: 'Jugendliche', identifier: 'adolescent'
 AgeFilter.create name: 'junge Erwachsene', identifier: 'young_adults'
-AgeFilter.create name: 'Eltern', identifier: 'parents'
-AgeFilter.create name: 'Großeltern', identifier: 'grandparents'
 AudienceFilter.create name: 'nur für Jungen und Männer', identifier: 'boys_only'
 AudienceFilter.create name: 'nur für Mädchen und Frauen',
                       identifier: 'girls_only'
@@ -31,6 +29,8 @@ AudienceFilter.create name: 'Patchworkfamilien',
                       identifier: 'patchwork_families'
 AudienceFilter.create name: 'Regenbogenfamilien', identifier: 'rainbow_families'
 AudienceFilter.create name: 'LGBT', identifier: 'lgbt'
+AudienceFilter.create name: 'Eltern', identifier: 'parents'
+AudienceFilter.create name: 'Großeltern', identifier: 'grandparents'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896

@@ -68,6 +68,11 @@ class Organization < ActiveRecord::Base
     end
   end
 
+  # handled in observer before save
+  def generate_html
+    self.description_html = MarkdownRenderer.render description
+  end
+
   def gmaps_info
     {
       title: name,

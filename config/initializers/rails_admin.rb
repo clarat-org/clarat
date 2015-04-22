@@ -84,6 +84,9 @@ RailsAdmin.config do |config|
     field :description do
       css_class 'js-count-character'
     end
+    field :description_html do
+      read_only true
+    end
     field :comment do
       css_class 'js-count-character'
     end

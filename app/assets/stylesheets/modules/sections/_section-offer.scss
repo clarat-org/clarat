@@ -28,6 +28,10 @@
     background: transparent;
   }
 
+  tr.section-content--opening-hours > td {
+    padding-bottom: 0.5em;
+  }
+
   .section-content--openingspecification {
     li {
       margin-left: 20px;

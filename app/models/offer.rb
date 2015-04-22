@@ -72,11 +72,13 @@ class Offer < ActiveRecord::Base
   end
 
   # handled in observer before save
-  def generate_from_markdown
+  def generate_html
     self.description_html = MarkdownRenderer.render description
+    self.description_html = Definition.infuse description_html
     self.next_steps_html = MarkdownRenderer.render next_steps
-    if self.opening_specification
-      self.opening_specification_html = MarkdownRenderer.render opening_specification
+    if opening_specification
+      self.opening_specification_html =
+        MarkdownRenderer.render opening_specification
     end
   end
 
@@ -102,6 +104,18 @@ class Offer < ActiveRecord::Base
     else
       organizations.first.name
     end
+  end
+
+  def generate_openings_hash
+    openings_hash = {}
+    # To enable almost equal keys (still different objects)
+    openings_hash.compare_by_identity
+    openings.order('sort_value').each do |opening|
+      # To make every day a unique object
+      day_string = opening.day.to_s
+      openings_hash[day_string] = opening.display_string
+    end
+    openings_hash
   end
 
   def gmaps_info

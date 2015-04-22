@@ -18,6 +18,9 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
+  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'OrganizationOffer',
+                            'OrganizationConnection', 'FederalState', 'Filter']
+
   ## == PaperTrail ==
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
@@ -141,7 +144,10 @@ RailsAdmin.config do |config|
     field :addition
     field :zip
     field :city
-    field :federal_state
+    field :federal_state do
+      inline_add false
+      inline_edit false
+    end
     field :hq
     field :latitude do
       read_only true
@@ -219,8 +225,11 @@ RailsAdmin.config do |config|
       css_class 'js-category-suggestions'
     end
     field :language_filters
-    field :audience_filters
+    field :audience_filters do
+      inline_add false
+    end
     field :age_filters do
+      inline_add false
       help { 'Required before approval.' }
     end
     field :openings

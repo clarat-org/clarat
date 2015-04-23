@@ -9,7 +9,7 @@ section.section-content
             th.day
               = t("activerecord.models.opening.#{day}") + ':'
             td dir='ltr'
-              - times.each_with_index do |time, index|
+              - times.each do |time|
                 time= time
                 br
 

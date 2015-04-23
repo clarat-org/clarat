@@ -24,6 +24,9 @@
 .Listing-results__headline {
   @extend %roboto_regular;
   font-weight: 400;
+  margin: 0.5em 0;
+  font-size: 20px;
+
 }
 
 .Listing-results__emphasis {
@@ -38,9 +41,9 @@
   font-weight: 400;
 
   a {
-    text-decoration: none;
     display: block;
     height: inherit;
+    text-decoration: none;
 
     &:hover {
       text-decoration: underline;
@@ -68,7 +71,6 @@
 .Listing-results__offerinfo {
   @extend %roboto_regular;
   @extend %clarat_rounding_end;
-  padding: 6px 15px;
   min-height: 32px;
   background: $brand_beige;
   font-size: 13px;
@@ -79,5 +81,15 @@
 }
 
 .Listing-results__organization {
-  padding-right: 6px;
+  display: inline-block;
+  padding: 6px 15px;
+}
+
+.Listing-results__contact-type {
+  display: inline-block;
+  margin-right: -5px;
+  padding: 6px 6px 8px;
+  background: $brand_blue;
+  color: $brand_white;
+
 }

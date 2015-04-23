@@ -1,0 +1,32 @@
+// ---------------------------------------------------------------
+//
+//  Table styling
+//
+// ---------------------------------------------------------------
+
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    vertical-align: top;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding-top: .5em;
+  }
+
+  tr:first-child {
+    th,
+    td {
+      padding-top: 0;
+    }
+  }
+}
+
+.Table__time {
+  display: block;
+}
+

@@ -18,6 +18,9 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
+  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'OrganizationOffer',
+                            'OrganizationConnection', 'FederalState', 'Filter']
+
   ## == PaperTrail ==
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
@@ -25,7 +28,7 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter AudienceFilter User Contact Keyword
+    LanguageFilter AgeFilter AudienceFilter User Contact Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
@@ -80,6 +83,9 @@ RailsAdmin.config do |config|
     field :name
     field :description do
       css_class 'js-count-character'
+    end
+    field :description_html do
+      read_only true
     end
     field :comment do
       css_class 'js-count-character'
@@ -141,7 +147,10 @@ RailsAdmin.config do |config|
     field :addition
     field :zip
     field :city
-    field :federal_state
+    field :federal_state do
+      inline_add false
+      inline_edit false
+    end
     field :hq
     field :latitude do
       read_only true
@@ -219,8 +228,11 @@ RailsAdmin.config do |config|
       css_class 'js-category-suggestions'
     end
     field :language_filters
-    field :audience_filters
+    field :audience_filters do
+      inline_add false
+    end
     field :age_filters do
+      inline_add false
       help { 'Required before approval.' }
     end
     field :openings
@@ -323,6 +335,13 @@ RailsAdmin.config do |config|
 
     # nested_set(max_depth: 5)
     nestable_tree(max_depth: 5)
+  end
+
+  config.model 'Definition' do
+    field :key
+    field :explanation
+
+    object_label_method :key
   end
 
   config.model 'Filter' do

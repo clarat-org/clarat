@@ -1,0 +1,18 @@
+// ---------------------------------------------------------------
+//
+//  Overiding styles of qtip2 gem
+//
+// ---------------------------------------------------------------
+
+.qtip,
+.qtip-content {
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
+  border-color: $brand_orange;
+}
+
+.qtip-content {
+  background-color: $brand_beige;
+  font-size: 13px;
+  line-height: 1.45;
+}

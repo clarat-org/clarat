@@ -99,3 +99,8 @@ p {
 .fa {
   margin-right: 5px;
 }
+
+dfn {
+  font-style: normal;
+  border-bottom: 1px dashed rgba($brand_brown, .75);
+}

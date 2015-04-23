@@ -1,4 +1,4 @@
-- if offer.contact_people.any?
+ section-content--contact-person-listif offer.contact_people.any?
   ul.section-content--contact-person-list
     / TODO: Order by no name first
     - offer.contact_people.each do |contact|
@@ -17,7 +17,7 @@
           a< href="tel:#{contact.telephone_2}"
             = contact.area_code_2
             =< tel_format contact.local_number_2
-
+          br
         - if contact.fax_number?
           = t 'offers.show.who.fax'
           a< href="fax:#{contact.fax}"

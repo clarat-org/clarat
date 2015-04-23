@@ -18,6 +18,10 @@
   a {
     color: $brand_brown;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

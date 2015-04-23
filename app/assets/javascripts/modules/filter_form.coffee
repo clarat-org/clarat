@@ -2,13 +2,15 @@
 
 initFilterForm = ->
 
-  # General handling of shortening/teasing complete form for advanced search. Starts collapsed, unless it detects
-  # otherwise in sessionStorage
+  # General handling of shortening/teasing complete form for advanced search.
+  # Starts collapsed, unless it detects otherwise in sessionStorage
 
   initFilterExpand = ->
 
     $filterForm = $('.filter-form')
-    startHeight = $filterForm.find('.col-form-inner:first').find('.radio_buttons').height() * 2.8
+    startHeight =
+      $filterForm.find('.col-form-inner:first').find('.radio_buttons').height()
+    startHeight = startHeight * 2.8
     expandLabel = I18n.t 'js.more_filter_options'
     collapseLabel = I18n.t 'js.less_filter_options'
     offer_filter_open = sessionStorage.getItem("offer_filter_open")
@@ -61,8 +63,8 @@ initFilterForm = ->
 
         sessionStorage.setItem("offer_filter_open", "false")
 
-  # In mediaquery 's', the inner fieldsets of the advanced search form collapse and the fieldset headlines get click
-  # handlers
+  # In mediaquery 's', the inner fieldsets of the advanced search form collapse
+  # and the fieldset headlines get click handlers
 
   initFieldsetHeadlineClickHandler = ->
 
@@ -99,7 +101,8 @@ initFilterForm = ->
       .find('filter-form__fieldset__headline').attr 'aria-collapsed', 'true'
 
 
-  # In mediaquery 's', the whole advanced search form collapses (not just only teaser look, like collapsed state on desktop)
+  # In mediaquery 's', the whole advanced search form collapses (not just only
+  # teaser look, like collapsed state on desktop)
   # Dynamically adding the according switch button here:
 
   initMobileFilterSwitch = ->
@@ -107,7 +110,10 @@ initFilterForm = ->
     label = I18n.t 'js.mobile_filter'
 
     unless $('.filter-form__switch').length
-      $('.template--offers-index').find('.content-main').prepend $('<button class="filter-form__switch" aria-expanded="false">' + label + '</button>')
+      $('.template--offers-index').find('.content-main').prepend(
+        $('<button class="filter-form__switch" aria-expanded="false">' +
+          label + '</button>')
+      )
 
     mobileFilterSwitch = $('.filter-form__switch')
     filterForm = $('.filter-form')

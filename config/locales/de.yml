@@ -101,3 +101,6 @@ de:
       title: 'Mehrere Angebote'
       text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
       anchor: 'Alle ansehen >>'
+    more_filter_options: 'Mehr Filter anzeigen'
+    less_filter_options: 'Weniger Filter anzeigen'
+    mobile_filter: 'Ergebnisse filtern'

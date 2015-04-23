@@ -22,3 +22,5 @@
 
     # remove waiting-for-ajax display styling when stack empty
     container.removeClass 'Ajax' unless Clarat.ajaxStack[container].length
+
+    $(document).trigger 'ajax_replaced'

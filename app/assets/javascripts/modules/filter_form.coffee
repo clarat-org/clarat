@@ -109,7 +109,7 @@ initFilterForm = ->
 
     label = I18n.t 'js.mobile_filter'
 
-    unless $('.filter-form__switch').length
+    if !$('.filter-form__switch').length  &&  ($(window).width() <= 440)
       $('.template--offers-index').find('.content-main').prepend(
         $('<button class="filter-form__switch" aria-expanded="false">' +
           label + '</button>')

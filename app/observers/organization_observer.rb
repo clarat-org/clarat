@@ -1,6 +1,7 @@
 class OrganizationObserver < ActiveRecord::Observer
   def before_save orga
     orga.add_approved_info
+    orga.generate_html
   end
 
   def before_create orga

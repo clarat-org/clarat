@@ -1,6 +1,0 @@
-section.section-content.section-content--categories
-  h5.aside-standard__headline#categories = t 'offers.show.assigned_categories'
-  ul.Listing-categories
-    - categories.each do |category|
-      li.Listing-categories__item
-        = link_to category.name, '#'

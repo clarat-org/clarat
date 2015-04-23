@@ -4,8 +4,8 @@ ready =  ->
   if tooltip.length
     tooltip.qtip
       position:
-        my: 'bottom center'
-        at: 'top center'
+        my: 'bottom left'
+        at: 'top left'
         effect: false
         viewport: $(window)
         adjust:

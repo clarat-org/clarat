@@ -26,10 +26,6 @@
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer
 
-      / Categories
-      - unless @offer.categories.empty?
-        = render 'offers/show/categories_section', categories: @offer.categories
-
       / Internet Presence
       = render 'offers/show/website_section', offer: @offer
 

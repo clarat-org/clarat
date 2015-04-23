@@ -12,11 +12,12 @@
           legend.filter-form__fieldset__headline
             = I18n.t('offers.index.advanced_search.fieldset_headline_contact')
           = f.input :contact_type,
-                             item_wrapper_class: 'filter-form__radio',
-                             as: :radio_buttons,
-                             label: false,
-                             boolean_style: :inline,
-                             collection: i18n_collection(SearchForm::CONTACT_TYPES)
+                            item_wrapper_class: 'filter-form__radio',
+                            as: :radio_buttons,
+                            label: false,
+                            boolean_style: :inline,
+                            collection: \
+                              i18n_collection(SearchForm::CONTACT_TYPES)
       .col-form-inner
         fieldset.filter-form__fieldset
           legend.filter-form__fieldset__headline
@@ -26,7 +27,8 @@
                             as: :radio_buttons,
                             label: false,
                             boolean_style: :inline,
-                            collection: i18n_collection(AgeFilter::IDENTIFIER, true)
+                            collection: \
+                              i18n_collection(AgeFilter::IDENTIFIER, true)
       .col-form-inner
         fieldset.filter-form__fieldset
           legend.filter-form__fieldset__headline
@@ -46,6 +48,8 @@
           = f.input :language_filter,
                               class: 'filter-form__select',
                               label: false,
-                              collection: i18n_collection(LanguageFilter::IDENTIFIER)
+                              collection: \
+                                i18n_collection(LanguageFilter::IDENTIFIER)
 
-    = f.submit I18n.t('offers.index.advanced_search.submit'), class: 'filter-form__submit'
+    = f.submit I18n.t('offers.index.advanced_search.submit'),
+               class: 'filter-form__submit'

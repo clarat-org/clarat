@@ -1,6 +1,13 @@
 de:
   offers:
     index:
+      advanced_search:
+        form_headline: Suchergebnisse filtern/einschränken
+        fieldset_headline_contact: Kontaktaufnahme
+        fieldset_headline_age: Alter
+        fieldset_headline_target-group: Zielgruppe
+        fieldset_headline_language: Sprache
+        submit: Erneut suchen
       unavailable_location_modal: |
         Leider finden sich auf unserer Plattform aktuell nur Angebote aus
         Berlin. Wir hoffen aber schon bald auch in anderen Teilen

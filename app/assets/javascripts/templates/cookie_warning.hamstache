@@ -1,0 +1,4 @@
+.JS-Cookie-warning
+  .JS-Cookie-warning--close
+    %i.fa.fa-times-circle
+  {{{ content }}}

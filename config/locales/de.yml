@@ -89,15 +89,3 @@ de:
     current_location: 'Mein Standort'
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
-  js: # translations used in JavaScript
-    geolocation:
-      get: Benutze meinen Standort!
-      waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
-      error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
-    location_required: |
-      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
-    autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
-    map_info_window_multiple:
-      title: 'Mehrere Angebote'
-      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
-      anchor: 'Alle ansehen >>'

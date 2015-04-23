@@ -1,0 +1,22 @@
+de:
+  js: # translations used in JavaScript
+    geolocation:
+      get: Benutze meinen Standort!
+      waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
+      error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
+    location_required: |
+      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+    autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
+    map_info_window_multiple:
+      title: 'Mehrere Angebote'
+      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
+      anchor: 'Alle ansehen >>'
+    cookie_warning_html: |
+      Diese Webseite verwendet Cookies, die es uns ermöglichen, Ihre Aktivtäten
+      auf dieser Webseite zu speichern. Diese Informationen sind notwendig um
+      das Angebot auf unserer Webseite für unsere Besucher stetig verbessern zu
+      können. Nähere Informationen, insbesondere was Cookies sind und wie Sie
+      der Verwendung widersprechen oder diese abstellen können, erhalten Sie
+      <a href="/datenschutzhinweise">hier</a>. Wenn Sie diese Webseite nutzen,
+      erklären Sie damit Ihre Einwilligung zum Setzen aller auf dieser Webseite
+      verwandten Cookies.

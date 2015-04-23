@@ -3,13 +3,15 @@ html class='no-js' lang=I18n.locale
   head
     title
       = full_title(yield(:title))
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all",
+                                         "data-turbolinks-track" => true
     link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
 
-    = javascript_include_tag "vendor/modernizr.custom.js"
+    = javascript_include_tag 'vendor/modernizr.custom.js'
 
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&language=de&sensor=false&v=3.exp"
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?'\
+                             'libraries=places&language=de&sensor=false&v=3.exp'
     = render '/layouts/partials/javascript_config'
 
     meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -39,22 +41,22 @@ html class='no-js' lang=I18n.locale
 
     meta name="theme-color" content="#F4B528"
 
-    |     <!--[if lt IE 9]>
-    |       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    |       <script type="text/javascript" src="
+    |<!--[if lt IE 9]>
+    |  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    |  <script type="text/javascript" src="
     = asset_url('vendor/selectivizr-min.js')
-    |        "></script>
-    |     <![endif]-->
-    |     <!--[if !IE]><!-->
-    |     <script>
-    |         if (Function('/*@cc_on return document.documentMode===10@*/')()) {
-    |             document.documentElement.className += ' ie10';
-    |         }
-    |         if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
-    |             document.documentElement.className += ' ie11';
-    |         }
-    |    </script>
-    |  <!--<![endif]-->
+    |   "></script>
+    |<![endif]-->
+    |<!--[if !IE]><!-->
+    |  <script>
+    |    if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+    |      document.documentElement.className += ' ie10';
+    |    }
+    |    if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
+    |      document.documentElement.className += ' ie11';
+    |    }
+    |  </script>
+    |<!--<![endif]-->
 
     = csrf_meta_tags
     = render 'layouts/partials/header'
@@ -68,10 +70,13 @@ html class='no-js' lang=I18n.locale
                    type: message[0],
                    content: message[1]
 
-      - if controller_name == 'pages' && action_name == 'home' || controller_name == 'pages' && action_name == 'about'
+      - if controller_name == 'pages' && action_name == 'home' || \
+           controller_name == 'pages' && action_name == 'about'
         = render 'layouts/partials/navigation', search_cache: @search_cache
       - else
-        = render 'layouts/partials/search_navigation', search_cache: @search_cache
+        = render 'layouts/partials/search_navigation',
+                 search_cache: @search_cache
       = yield
-      = content_for :view_specific_scripts
+
     = render 'layouts/partials/footer', subscription: @subscription
+    = content_for :view_specific_scripts

@@ -1,0 +1,17 @@
+.JS-Cookie-warning {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: blue;
+  color: white;
+
+  .JS-Cookie-warning--close {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}

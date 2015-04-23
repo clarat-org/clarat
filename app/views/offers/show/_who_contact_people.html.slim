@@ -1,4 +1,4 @@
- section-content--contact-person-listif offer.contact_people.any?
+- if offer.contact_people.any?
   ul.section-content--contact-person-list
     / TODO: Order by no name first
     - offer.contact_people.each do |contact|

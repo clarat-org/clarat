@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150416120914) do
+ActiveRecord::Schema.define(version: 20150422150322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -244,6 +244,7 @@ ActiveRecord::Schema.define(version: 20150416120914) do
     t.integer  "approved_by"
     t.boolean  "renewed",                          default: false
     t.boolean  "accredited_institution",           default: false
+    t.text     "description_html"
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

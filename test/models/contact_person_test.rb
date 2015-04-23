@@ -78,5 +78,12 @@ describe ContactPerson do
         contact_person.telephone_2.must_equal '23'
       end
     end
+
+    describe '#fax' do
+      it 'should return the concatenated fax area code and fax number' do
+        contact_person.assign_attributes fax_area_code: '4', fax_number: '5'
+        contact_person.fax.must_equal '45'
+      end
+    end
   end
 end

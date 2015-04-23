@@ -1,6 +1,5 @@
 # Hash that sorts openings, it's possible to have multiple on the same day
 class OpeningHash < Hash
-
   # Initialize a hash that contains each day in order, sort the given offer's
   # openings into the appropriate days
   def initialize offer

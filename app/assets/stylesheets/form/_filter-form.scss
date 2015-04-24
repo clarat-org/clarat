@@ -1,0 +1,140 @@
+// ---------------------------------------------------------------
+//
+//  Search result filter form
+//
+// ---------------------------------------------------------------
+
+// @todo: custom styling select
+
+.filter-form {
+  @extend %clearfix;
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px 20px 25px 10px;
+  background-color: $brand_beige;
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    width: 75%;
+    height: 30px;
+    background: $brand_beige;
+    content: ' ';
+  }
+}
+
+.filter-form--isCollapsed {
+
+  &:after {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba($brand_beige, 0) 0%, rgba($brand_beige, 1) 100%);
+    content: ' ';
+  }
+
+  .filter-form__submit {
+    display: none;
+  }
+}
+
+.filter-form__expander {
+  @extend %roboto_bold;
+  position: absolute;
+  bottom: 0;
+  z-index: 30;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+.filter-form__fieldset {
+  margin: 0;
+  border: none;
+}
+
+.filter-form__fieldset__headline {
+  @extend %roboto_bold;
+  margin: 0 0 5px;
+  color: $brand_blue;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+[type="submit"].filter-form__submit {
+  @extend %clarat_rounding_end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  padding: 10px 15px 10px 30px;
+  min-height: 40px;
+  width: 25%;
+  width: calc(25% + 13px);
+  background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
+  background-size: 20px 20px;
+}
+
+#advanced_search_form_language_filter,
+.filter-form__select {
+  width: 100%;
+}
+
+.filter-form__radio {
+  position: relative;
+  display: block;
+  margin-bottom: 2px;
+
+  label {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 3px 19px;
+    font-size: 12px;
+  }
+
+  input {
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+}
+
+.filter-form__radio,
+.filter-form__label {
+  cursor: pointer;
+}
+
+.filter-form__switch {
+  @extend %roboto_bold;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: block;
+  padding: 0 15px;
+  width: 100%;
+  height: 30px;
+  background: $brand_blue image-url('ico_fieldset_expand--ondark.svg') no-repeat calc(100% - 15px) center;
+  color: $brand_white;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  cursor: pointer;
+
+
+  &[aria-collapsed="true"] {
+    background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
+  }
+}
+

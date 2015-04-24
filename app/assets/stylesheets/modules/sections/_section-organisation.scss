@@ -12,6 +12,11 @@
     background: $brand_green;
   }
 
+  .section-content--what {
+    li {
+      margin-left: 20px;
+    }
+  }
 
   .offer-contribute {
     border-color: $brand_green;

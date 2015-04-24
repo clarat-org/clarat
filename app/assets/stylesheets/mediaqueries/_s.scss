@@ -80,9 +80,9 @@
 
     .JS-Geolocation__prompt {
       bottom: 35px;
+      margin: 0 20% 0 0;
       padding: 5px;
       width: 80%;
-      margin: 0 20% 0 0;
     }
 
   }
@@ -99,12 +99,12 @@
 
   #new_search_form {
     position: relative;
+    z-index: 30;
     display: block;
-    padding: 10px 0;
     margin-left: 114px;
+    padding: 10px 0;
     max-height: 85px;
     width: auto;
-    z-index: 30;
 
     .Distributor.is-enlarged & {
       margin-left: 15px;
@@ -220,9 +220,9 @@
         line-height: 35px;
 
         .template--pages-home & {
+          top: auto;
           bottom: 3px;
           left: 8px;
-          top: auto;
           max-height: 40px;
         }
       }
@@ -255,14 +255,10 @@
   }
 
   .content-main {
-    padding-top: 111px;
+    padding-top: 100px;
 
     .template--pages-home & {
       padding-top: 0;
-    }
-
-    .template--offers-index & {
-      padding-top: 131px;
     }
 
     &.content-main--invalid_location {
@@ -275,7 +271,6 @@
   }
 
   .Listing-results__organization {
-    display: block;
     padding-right: 0;
   }
 
@@ -294,6 +289,8 @@
   }
 
   .Listing-categories__item {
+    @extend %clearfix;
+
     a {
       margin: 0 4px 4px 0;
       padding: 0 8px;
@@ -303,28 +300,16 @@
     }
   }
 
+  .Categories {
+    display: none;
+  }
+
   .Listing-results__headline {
-    top: 70px;
-    z-index: 15;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    margin: -76px -15px 20px -15px;
-    padding: 3px 95px 3px 15px;
-    max-width: none;
-    background: $brand_blue;
-    color: $brand_white;
-    text-overflow: ellipsis;
     font-size: 16px;
   }
 
   .Listing-results__listitem {
     margin-bottom: 15px;
-  }
-
-  .Listing-results__offer,
-  .Listing-results__offerinfo {
-    padding: 7px 10px;
   }
 
   .template--pages-faq,
@@ -352,19 +337,19 @@
       .twitter-typeahead {
         span.tt-dropdown-menu {
           // specificity, overriding JS
-          background: $brand_beige;
           position: relative !important;
-          right: 0 !important; // overriding JS
+          right: 0 !important;
+          margin-top: 0; // overriding JS
           margin-bottom: 10px;
-          margin-top: 0;
+          background: $brand_beige;
         }
       }
     }
 
     #new_search_form {
       .input.string {
-        height: auto !important;
         min-height: 40px;
+        height: auto !important;
 
         &.search_form_search_location {
           margin: 10px 0;
@@ -372,6 +357,57 @@
       }
     }
 
+  }
+
+  // Filter offer#index ######################################
+
+  .filter-form {
+    padding-right: 5px;
+    padding-bottom: 45px;
+
+    .input {
+      padding: 0;
+    }
+
+    .col-form-inner {
+      width: 100%;
+    }
+  }
+
+  .filter-form__headline {
+    display: none;
+  }
+
+  .filter-form__fieldset {
+    padding-top: 0;
+  }
+
+  .filter-form__fieldset__headline {
+    width: 100%;
+    color: $brand_brown;
+    cursor: pointer;
+
+    &[aria-collapsed="false"] {
+      background: image-url('ico_fieldset_collapse.svg') no-repeat right center;
+    }
+
+    &[aria-collapsed="true"] {
+      background: image-url('ico_fieldset_expand.svg') no-repeat right center;
+    }
+  }
+
+  .filter-form__headline {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .filter-form__expander {
+    display: none;
+  }
+
+  [type="submit"].filter-form__submit,
+  .filter-form__submit {
+    width: 100%;
   }
 
   // Footer ######################################
@@ -437,8 +473,6 @@
     }
   }
 
-  // Misc ######################################
-
   // Styling for JS-generated button
   .jump-to-categories {
     position: absolute;
@@ -464,4 +498,5 @@
     height: 68px;
     content: "";
   }
+
 }

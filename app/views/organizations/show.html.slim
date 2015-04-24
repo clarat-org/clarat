@@ -10,8 +10,8 @@
 
       section.section-content.section-content--who
         h3.section-content__title = t 'organizations.show.who'
-        .section-content__body
-          p= @organization.description
+        .section-content__body.section-content--what
+          p== @organization.description_html
       - if @organization.offers.approved.any?
         section.section-content.section-content--alloffers
           h3.section-content__title = t 'organizations.show.offers_all'

@@ -23,15 +23,15 @@ de:
     show:
       what: Worum geht's?
       who:
-        title: Wer bietet diese Hilfe an?
-        address: Adresse
+        title: Wo kannst du dich melden?
         person: Ansprechpartner
-        map: Karte
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "
+      address:
+        title: Wer bietet diese Hilfe an?
       next_steps: Was musst du tun?
-      opening_hours: Wann kannst du dich melden?
+      opening_hours: Wann kannst du das machen?
       opening_by_arrangement: Nach Vereinbarung
       internet_presence: Im Netz
       websites:

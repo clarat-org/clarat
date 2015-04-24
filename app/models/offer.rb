@@ -82,10 +82,6 @@ class Offer < ActiveRecord::Base
     end
   end
 
-  def contact_details?
-    websites.any? || contact_people.any?
-  end
-
   def structured_websites
     sites = []
     Website::HOSTS[0..-2].each do |host| # no "other"
@@ -104,6 +100,18 @@ class Offer < ActiveRecord::Base
     else
       organizations.first.name
     end
+  end
+
+  def reorder_contact_people
+    new_order = []
+    contact_people.each do |contact_person|
+      if contact_person.name.empty?
+        new_order.insert(0, contact_person)
+      else
+        new_order << contact_person
+      end
+    end
+    new_order
   end
 
   def gmaps_info

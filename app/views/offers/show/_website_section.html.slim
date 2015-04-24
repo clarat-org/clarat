@@ -1,7 +1,7 @@
-section.section-content.section-content--internet-presence
-  h3.section-content__title= t 'offers.show.internet_presence'
-  .section-content__body
-    - if offer.websites.count > 0
+- if offer.websites.count > 0
+  section.section-content.section-content--internet-presence
+    h3.section-content__title= t 'offers.show.internet_presence'
+    .section-content__body
       - websites = offer.structured_websites
       - last_index = websites.count - 1
 

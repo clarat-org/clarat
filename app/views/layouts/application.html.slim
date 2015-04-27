@@ -26,5 +26,6 @@ html class='no-js' lang=I18n.locale
       = yield
     = render 'layouts/partials/footer', subscription: @subscription
 
-    = render 'layouts/partials/general_assets'
+    - cache 'general_assets' do # care: I18n.locale set in cache
+      = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts

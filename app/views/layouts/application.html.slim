@@ -24,5 +24,7 @@ html class='no-js' lang=I18n.locale
       - else
         = render 'layouts/partials/search_navigation', search_cache: @search_cache
       = yield
-      = content_for :view_specific_scripts
     = render 'layouts/partials/footer', subscription: @subscription
+
+    = render 'layouts/partials/general_assets'
+    = content_for :view_specific_scripts

@@ -12,8 +12,6 @@ Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-direct
 about supported directives.
 ###
 #
-# = require setup
-#
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks

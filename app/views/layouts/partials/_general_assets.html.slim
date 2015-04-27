@@ -1,3 +1,8 @@
+= stylesheet_link_tag 'application', media: 'all',
+                                     'data-turbolinks-track' => true
+= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css'\
+                      '/font-awesome.min.css'
+
 = javascript_include_tag 'vendor/modernizr.custom.js'
 = javascript_include_tag 'application', 'data-turbolinks-track' => true
 = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
@@ -21,8 +26,3 @@ javascript:
     if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
       document.documentElement.className += ' ie11';
     }
-
-= stylesheet_link_tag 'application', media: 'all',
-                                     'data-turbolinks-track' => true
-= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css'\
-                      '/font-awesome.min.css'

@@ -127,6 +127,7 @@ gem 'dalli' # Memcached Client
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
+  gem 'heroku-deflater' # gzip compression
 end
 
 group :development do

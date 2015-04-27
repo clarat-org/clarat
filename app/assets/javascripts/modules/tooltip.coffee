@@ -1,8 +1,8 @@
 # using qTip2
 ready =  ->
-  tooltip = $('.JS-tooltip')
-  if tooltip.length
-    tooltip.qtip
+  tooltips = $('.JS-tooltip')
+  if tooltips.length
+    tooltips.qtip
       position:
         my: 'bottom left'
         at: 'top left'
@@ -13,7 +13,7 @@ ready =  ->
       content:
         text: (event, api) ->
           $.ajax
-            url: '/definitions/' + tooltip.data('id')
+            url: '/definitions/' + @data('id')
             dataType: 'html'
             success: (content) ->
               api.set 'content.text', content

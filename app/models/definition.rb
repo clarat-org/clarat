@@ -15,7 +15,7 @@ class Definition < ActiveRecord::Base
       if string.match regex
         string.gsub! regex,
                      "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
-                     '\2</dfn>'
+                     '\1</dfn>'
       end
     end
     string

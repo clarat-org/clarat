@@ -1,17 +1,19 @@
 - provide(:title, t('pages.home.title'))
-main.content-main.content-main--wide
-  .wrapper-inner
-    section.section-start.section-start--how
-      h4.section-start__headline = t 'pages.home.section.how.title'
-      .section-start__body
-        p = t 'pages.home.section.how.text'
+- cache 'home_page' do
 
-    section.section-start.section-start--whom
-      h4.section-start__headline = t 'pages.home.section.whom.title'
-      .section-start__body
-        p = t 'pages.home.section.whom.text'
+  main.content-main.content-main--wide
+    .wrapper-inner
+      section.section-start.section-start--how
+        h4.section-start__headline = t 'pages.home.section.how.title'
+        .section-start__body
+          p = t 'pages.home.section.how.text'
 
-    section.section-start.section-start--why
-      h4.section-start__headline = t 'pages.home.section.why.title'
-      .section-start__body
-        p = t 'pages.home.section.why.text'
+      section.section-start.section-start--whom
+        h4.section-start__headline = t 'pages.home.section.whom.title'
+        .section-start__body
+          p = t 'pages.home.section.whom.text'
+
+      section.section-start.section-start--why
+        h4.section-start__headline = t 'pages.home.section.why.title'
+        .section-start__body
+          p = t 'pages.home.section.why.text'

@@ -2,30 +2,31 @@ ul.section-content--contact-person-list
   / TODO: Order by no name first
   - offer_contacts = offer.reorder_contact_people
   - offer_contacts.each_with_index do |contact, index|
-    li
-      - if contact.name?
-        = "#{I18n.t 'offers.show.who.person'}: #{contact.name}"
-        br
-      - if contact.local_number_1?
-        = t 'offers.show.who.phone'
-        a< href="tel:#{contact.telephone_1}"
-          = contact.area_code_1
-          =< tel_format contact.local_number_1
-        br
-      - if contact.local_number_2?
-        = t 'offers.show.who.phone'
-        a< href="tel:#{contact.telephone_2}"
-          = contact.area_code_2
-          =< tel_format contact.local_number_2
-        br
-      - if contact.fax_number?
-        = t 'offers.show.who.fax'
-        a< href="fax:#{contact.fax}"
-          = contact.fax_area_code
-          =< tel_format contact.fax_number
-        br
-      - if contact.email?
-        = t 'offers.show.who.email'
-        span[id="secure-email-#{index}"]
-          ==< secure_email_to contact.email, index
-        br
+    - cache [offer, contact] do
+      li
+        - if contact.name?
+          = "#{I18n.t 'offers.show.who.person'}: #{contact.name}"
+          br
+        - if contact.local_number_1?
+          = t 'offers.show.who.phone'
+          a< href="tel:#{contact.telephone_1}"
+            = contact.area_code_1
+            =< tel_format contact.local_number_1
+          br
+        - if contact.local_number_2?
+          = t 'offers.show.who.phone'
+          a< href="tel:#{contact.telephone_2}"
+            = contact.area_code_2
+            =< tel_format contact.local_number_2
+          br
+        - if contact.fax_number?
+          = t 'offers.show.who.fax'
+          a< href="fax:#{contact.fax}"
+            = contact.fax_area_code
+            =< tel_format contact.fax_number
+          br
+        - if contact.email?
+          = t 'offers.show.who.email'
+          span[id="secure-email-#{index}"]
+            ==< secure_email_to contact.email, index
+          br

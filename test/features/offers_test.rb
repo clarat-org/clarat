@@ -27,7 +27,7 @@ feature 'Offer display' do
 
     visit offer_path offer
     page.body.must_match(
-      %r{\<p\>A \<dfn class="JS-tooltip" data-id="1"\>complex\</dfn\> sentence.\</p\>}
+      %r{\<p\>A \<dfn class='JS-tooltip' data-id='1'\>complex\</dfn\> sentence.\</p\>}
     )
   end
 

@@ -1,4 +1,6 @@
 - provide(:title, 'Impressum')
-main.content-main.content-main--wide
-  .wrapper-inner
-    h1 = t 'pages.impressum.title'
+- cache 'impressum_page' do
+
+  main.content-main.content-main--wide
+    .wrapper-inner
+      h1 = t 'pages.impressum.title'

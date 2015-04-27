@@ -123,6 +123,7 @@ gem 'autoprefixer-rails'
 # For Heroku & Add-Ons
 
 gem 'newrelic_rpm'
+gem 'dalli' # Memcached Client
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this

@@ -45,6 +45,7 @@ feature 'Search Form' do
         'chunky bacon' => 1
       )
     )
+    Rails.cache.clear
 
     visit root_path
     fill_in 'search_form_query', with: 'foo'
@@ -52,7 +53,6 @@ feature 'Search Form' do
     find('.main-search__submit').click
     page.must_have_link 'foo baz'
     page.must_have_link 'foo fuz'
-
     click_link 'chunky bacon'
     current_url.must_match(
       /search_form\[category\]=chunky\+bacon/

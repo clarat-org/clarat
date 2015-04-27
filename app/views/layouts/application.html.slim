@@ -3,65 +3,16 @@ html class='no-js' lang=I18n.locale
   head
     title
       = full_title(yield(:title))
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-    link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
 
-    = javascript_include_tag "vendor/modernizr.custom.js"
-
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&language=de&sensor=false&v=3.exp"
+    - cache 'html_head' do
+      = render 'layouts/partials/head'
     = render '/layouts/partials/javascript_config'
-
-    meta http-equiv="X-UA-Compatible" content="IE=edge"
-
-    meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"
-
-    meta property="og:title" content=""
-    meta property="og:site_name" content=""
-    meta property="og:image" content=""
-
-    link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png"
-    link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png"
-    link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png"
-    link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png"
-    link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png"
-    link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png"
-    link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png"
-    link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png"
-    link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png"
-    link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192"
-    link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96"
-    link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"
-    link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"
-    link rel="manifest" href="/favicons/android-chrome-manifest.json"
-    meta name="msapplication-TileColor" content="#f4b528"
-    meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png"
-
-    meta name="theme-color" content="#F4B528"
-
-    |     <!--[if lt IE 9]>
-    |       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    |       <script type="text/javascript" src="
-    = asset_url('vendor/selectivizr-min.js')
-    |        "></script>
-    |     <![endif]-->
-    |     <!--[if !IE]><!-->
-    |     <script>
-    |         if (Function('/*@cc_on return document.documentMode===10@*/')()) {
-    |             document.documentElement.className += ' ie10';
-    |         }
-    |         if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
-    |             document.documentElement.className += ' ie11';
-    |         }
-    |    </script>
-    |  <!--<![endif]-->
-
     = csrf_meta_tags
-    = render 'layouts/partials/header'
 
   body class="template--#{controller_name}-#{action_name}"
     .page-wrap
-      = render '/layouts/partials/banner'
+      - cache 'banner' do
+        = render '/layouts/partials/banner'
       - flash.each do |message|
         - unless message[0] == 'timedout'
           = render '/layouts/partials/flash',

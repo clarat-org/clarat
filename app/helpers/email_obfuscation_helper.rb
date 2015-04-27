@@ -4,7 +4,7 @@ module EmailObfuscationHelper
   # Takes in an email address and (optionally) anchor text,
   # its purpose is to obfuscate email addresses so spiders and
   # spammers can't harvest them.
-  def secure_email_to email, linktext = email
+  def secure_email_to email, index, linktext = email
     user, domain = email.split('@')
     user   = html_obfuscate(user)
     domain = html_obfuscate(domain)
@@ -12,7 +12,7 @@ module EmailObfuscationHelper
     # js document.write statement
     linktext = "'+'#{user}'+'@'+'#{domain}'+'" if linktext == email
     rot13_encoded_email = rot13(email) # obfuscate email address as rot13
-    secured_template rot13_encoded_email, linktext
+    secured_template rot13_encoded_email, linktext, index
   end
 
   private
@@ -38,7 +38,7 @@ module EmailObfuscationHelper
   end
 
   # render data as HTML string
-  def secured_template rot13_encoded_email, linktext
+  def secured_template rot13_encoded_email, linktext, index
     <<-SCRIPT
       <noscript>#{t('js.obfuscated_email')}</noscript>
       <script>//<![CDATA[
@@ -47,7 +47,7 @@ module EmailObfuscationHelper
             return String.fromCharCode(
               (c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26
         );});
-        document.getElementById('secure-email').innerHTML =
+        document.getElementById('secure-email-' + #{index}).innerHTML =
           '<a href='+'ma'+'il'+'to:'+ string +'>#{linktext}</a>';
       //]]></script>
     SCRIPT

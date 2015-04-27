@@ -18,8 +18,8 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
-  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'OrganizationOffer',
-                            'OrganizationConnection', 'FederalState', 'Filter']
+  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'FederalState',
+                            'OrganizationConnection', 'Filter']
 
   ## == PaperTrail ==
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0

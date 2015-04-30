@@ -28,6 +28,11 @@
   }
 }
 
+.filter-form__headline {
+  font-weight: normal;
+  font-size: 20px;
+}
+
 .filter-form--isCollapsed {
   height: 168px; // See #258 - remove this line if return to progressive enhancement approach
 
@@ -128,9 +133,9 @@
   height: 30px;
   background: $brand_blue image-url('ico_fieldset_expand--ondark.svg') no-repeat calc(100% - 15px) center;
   color: $brand_white;
+  text-align: left;
   font-size: 14px;
   line-height: 30px;
-  text-align: left;
   cursor: pointer;
 
 

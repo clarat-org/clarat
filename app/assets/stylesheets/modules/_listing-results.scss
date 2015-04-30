@@ -22,9 +22,9 @@
 }
 
 .Listing-results__headline {
-  @extend %roboto_regular;
-  font-weight: 400;
+  @extend %roboto_bold;
   margin: 0.5em 0;
+  font-weight: 400;
   font-size: 20px;
 
 }

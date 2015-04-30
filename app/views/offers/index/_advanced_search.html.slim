@@ -1,4 +1,5 @@
-.filter-form
+.filter-form.filter-form--isCollapsed
+  / See #258 - remove filter-form--isCollapsed modifier if return to progressive enhancement approach
   h2.filter-form__headline = I18n.t('offers.index.advanced_search.form_headline')
   = simple_form_for search_cache, url: offers_path, namespace: 'advanced',
                     html: { method: :get, novalidate: false } do |f|

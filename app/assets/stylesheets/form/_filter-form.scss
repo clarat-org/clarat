@@ -29,6 +29,7 @@
 }
 
 .filter-form--isCollapsed {
+  height: 168px; // See #258 - remove this line if return to progressive enhancement approach
 
   &:after {
     position: absolute;

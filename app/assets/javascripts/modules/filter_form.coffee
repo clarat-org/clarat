@@ -139,7 +139,7 @@ initFilterForm = ->
           that.attr('aria-collapsed', 'true')
 
     else
-      mobileFilterSwitch.hide
+      mobileFilterSwitch.remove()
       filterForm.removeClass 'is--hidden'
 
   # Calling subfunctions

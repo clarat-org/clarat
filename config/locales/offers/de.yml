@@ -4,7 +4,7 @@ de:
       advanced_search:
         form_headline: Suchergebnisse filtern/einschränken
         fieldset_headline_contact: Kontaktaufnahme
-        fieldset_headline_age: Alter
+        fieldset_headline_age: Alter des Kindes
         fieldset_headline_target-group: Zielgruppe
         fieldset_headline_language: Sprache
         submit: Erneut suchen

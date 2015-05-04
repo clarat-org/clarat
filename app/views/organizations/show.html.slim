@@ -43,13 +43,10 @@
                   span.postal-code=> location.zip
                   span.locality= location.city
               /! http://microformats.org/wiki/adr end
+              br
+              #map-container
+                #map-canvas data={markers: @markers.to_json}
 
-        section.section-content--map
-          .aside-standard__container
-            h5.aside-standard__headline
-              = t 'organizations.show.map_output_searchresult'
-            #map-container
-              #map-canvas data={markers: @markers.to_json}
 
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do

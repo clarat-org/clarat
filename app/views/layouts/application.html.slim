@@ -19,8 +19,7 @@ html class='no-js' lang=I18n.locale
                    type: message[0],
                    content: message[1]
 
-      - if controller_name == 'pages' && action_name == 'home' || \
-           controller_name == 'pages' && action_name == 'about'
+      - if controller_name == 'pages' && %w(home about).include?(action_name)
         = render 'layouts/partials/navigation', search_cache: @search_cache
       - else
         = render 'layouts/partials/search_navigation',

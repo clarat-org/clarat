@@ -87,6 +87,5 @@ bindMarkerToResults = (marker, markerData) ->
   for offerID in markerData.ids
     $("#result-offer-#{offerID}").data('marker', marker)
 
-
-google.maps.event.addDomListener window, 'load', initialize
-google.maps.event.addDomListener document, 'page:load', initialize
+$(document).ready initialize
+$(document).on 'page:load', initialize

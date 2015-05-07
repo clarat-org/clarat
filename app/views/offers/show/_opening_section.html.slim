@@ -3,15 +3,16 @@ section.section-content
   .section-content__body
     - if offer.openings.any?
       /! use http://microformats.org/wiki/opening-hours once specified
-      table
+      table.Table
         - OpeningHash.new(offer).each_open_day do |day, times|
           tr
-            th.day
+            th
               = t("activerecord.models.opening.#{day}") + ':'
             td dir='ltr'
               - times.each do |time|
-                time= time
-                br
+                time.Table__time = time
+                / @todo extend to using https://schema.org/LocalBusiness itemprop="openingHours", datetime attr
+                / https://schema.org/openingHours
 
     - if offer.opening_specification? && offer.openings.any?
       br

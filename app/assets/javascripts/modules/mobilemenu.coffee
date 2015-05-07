@@ -18,7 +18,9 @@ initMobileMenu = ->
       $distributor.toggleClass "is-enlarged"
 
 
+
 $(document).on 'page:load', initMobileMenu
+$(document).on 'ajax_loaded', initMobileMenu
 $(document).ready initMobileMenu
 $(window).resize initMobileMenu
 

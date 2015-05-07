@@ -123,6 +123,7 @@ GEM
       safe_yaml (~> 1.0.0)
     crass (1.0.1)
     daemons (1.2.1)
+    dalli (2.7.4)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
     descendants_tracker (0.0.4)
@@ -179,6 +180,8 @@ GEM
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
     hashie (3.4.0)
+    heroku-deflater (0.5.3)
+      rack (>= 1.4.5)
     highline (1.6.21)
     hike (1.2.3)
     hirb (0.7.3)
@@ -551,6 +554,7 @@ DEPENDENCIES
   closure_tree
   coffee-rails (~> 4.0.0)
   coveralls
+  dalli
   database_cleaner
   devise
   dotenv-rails
@@ -567,6 +571,7 @@ DEPENDENCIES
   geocoder
   gibbon
   haml
+  heroku-deflater
   hirb
   hogan_assets
   i18n-js (>= 3.0.0.rc6)

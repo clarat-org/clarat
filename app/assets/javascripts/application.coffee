@@ -12,8 +12,6 @@ Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-direct
 about supported directives.
 ###
 #
-# = require setup
-#
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks
@@ -47,6 +45,7 @@ about supported directives.
 # = require modules/tooltip
 # = require modules/unavailable_location_overlay
 # = require modules/flash
+# = require modules/filter_form
 # = require modules/safari_fixes
 # = require modules/category_tree
 # = require modules/cookie_warning

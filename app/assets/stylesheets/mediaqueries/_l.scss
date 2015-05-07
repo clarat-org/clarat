@@ -164,6 +164,31 @@
     }
   }
 
+  .filter-form {
+    .col-form-wrapper {
+      display: block;
+    }
+
+    .col-form-inner {
+      display: inline-block;
+      width: 50%;
+      float: left;
+    }
+  }
+
+  .filter-form--isCollapsed {
+    padding-bottom: 40px;
+  }
+
+  .filter-form__submit {
+    font-size: 13px;
+  }
+
+  [type="submit"].filter-form__submit,
+  .filter-form__expander {
+    width: 50%;
+  }
+
 
   // Footer ######################################
 

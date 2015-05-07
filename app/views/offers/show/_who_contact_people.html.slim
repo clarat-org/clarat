@@ -1,7 +1,8 @@
-- if offer.contact_people.any?
-  ul.section-content--contact-person-list
-    / TODO: Order by no name first
-    - offer.contact_people.each do |contact|
+ul.section-content--contact-person-list
+  / TODO: Order by no name first
+  - offer_contacts = offer.reorder_contact_people
+  - offer_contacts.each_with_index do |contact, index|
+    - cache [offer, contact] do
       li
         - if contact.name?
           = "#{I18n.t 'offers.show.who.person'}: #{contact.name}"
@@ -17,7 +18,7 @@
           a< href="tel:#{contact.telephone_2}"
             = contact.area_code_2
             =< tel_format contact.local_number_2
-
+          br
         - if contact.fax_number?
           = t 'offers.show.who.fax'
           a< href="fax:#{contact.fax}"
@@ -26,5 +27,6 @@
           br
         - if contact.email?
           = t 'offers.show.who.email'
-          span#secure-email==< secure_email_to contact.email
+          span[id="secure-email-#{index}"]
+            ==< secure_email_to contact.email, index
           br

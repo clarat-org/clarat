@@ -36,6 +36,7 @@
 @import "modules/ajax";
 @import "modules/js-geolocation";
 @import "modules/js-cookie-warning";
+@import "modules/table";
 
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
@@ -47,6 +48,7 @@
 @import "form/main-search";
 @import "form/newsletter-subscribe";
 @import "form/contact-form";
+@import "form/filter-form";
 
 @import "navigation/nav-sections";
 @import "navigation/nav-site";
@@ -56,6 +58,7 @@
 @import "mediaqueries/config";
 
 @import "qtip2-jquery-rails";
+@import "vendor/qtip2_overide";
 @import "vendor/twitter-typeahead_override";
 @import "vendor/places-autocomplete_override";
 @import "vendor/formtastic";

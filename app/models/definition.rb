@@ -11,11 +11,11 @@ class Definition < ActiveRecord::Base
   # Infuses from the list of all definitions into the given string
   def self.infuse string
     select(:id, :key).find_each do |definition|
-      regex = /(\W)(#{definition.key})(\W)/i
+      regex = /\b(#{definition.key})\b/i
       if string.match regex
         string.gsub! regex,
-                     '\1<dfn class="JS-tooltip" data-id="' +
-                       definition.id.to_s + '">\2</dfn>\3'
+                     "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
+                     '\1</dfn>'
       end
     end
     string

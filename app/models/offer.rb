@@ -105,7 +105,7 @@ class Offer < ActiveRecord::Base
   def reorder_contact_people
     new_order = []
     contact_people.each do |contact_person|
-      if contact_person.name == nil || contact_person.name.empty?
+      if contact_person.name.empty?
         new_order.insert(0, contact_person)
       else
         new_order << contact_person

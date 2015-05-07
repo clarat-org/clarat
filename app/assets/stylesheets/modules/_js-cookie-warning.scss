@@ -6,6 +6,7 @@
   background: $brand_orange;
   color: white;
   font-size: 13px;
+  z-index: 1000;
 
   a {
     @extend %roboto_bold;

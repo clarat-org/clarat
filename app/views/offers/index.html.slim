@@ -1,18 +1,15 @@
 .wrapper-inner
   main.content-main
 
-    = render 'offers/index/search_results', personal_offers: @personal_offers,
-                                            remote_offers: @remote_offers,
-                                            search_cache: @search_cache,
-                                            search: @search
+    = render 'offers/index/pending_ajax'
 
-  - if @update_request
-    = modal_for 'unavailable_location_overlay' do
-      p= I18n.t 'offers.index.unavailable_location_modal'
-      = render '/update_requests/new', update_request: @update_request
+  / - if @update_request
+  /   = modal_for 'unavailable_location_overlay' do
+  /     p= I18n.t 'offers.index.unavailable_location_modal'
+  /     = render '/update_requests/new', update_request: @update_request
 
   = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                              facets: @facets,
-                                              search_cache: @search_cache
-- content_for :view_specific_scripts do
-  = javascript_include_tag "gmaps_search_results.js"
+                                              search_cache: @search_cache,
+                                              facets: false
+/ - content_for :view_specific_scripts do # careful new script in pending_ajax
+/   = javascript_include_tag "gmaps_search_results.js"

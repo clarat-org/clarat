@@ -1,0 +1,6 @@
+en:
+  js:
+    geolocation:
+      get: Use my current location!
+      waiting: Looking up your location... You might need to allow this.
+      error: Couldn't get your current location. Please enter one manually.

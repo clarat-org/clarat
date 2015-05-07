@@ -48,3 +48,4 @@ about supported directives.
 # = require modules/filter_form
 # = require modules/safari_fixes
 # = require modules/category_tree
+# = require modules/cookie_warning

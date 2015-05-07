@@ -40,7 +40,7 @@ module EmailObfuscationHelper
   # render data as HTML string
   def secured_template rot13_encoded_email, linktext, index
     <<-SCRIPT
-      <noscript>#{t('js.obfuscated_email')}</noscript>
+      <noscript>#{t('offers.show.obfuscated_email')}</noscript>
       <script>//<![CDATA[
         string = '#{rot13_encoded_email}'.replace(
           /[a-zA-Z]/g, function(c) {

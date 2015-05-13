@@ -2,3 +2,7 @@
                                         remote_offers: @remote_offers,
                                         search_cache: @search_cache,
                                         search: @search
+
+// trigger facet count replacement
+javascript:
+  Clarat.CategoryTree.updateFacets(#{@facets.to_json.html_safe});

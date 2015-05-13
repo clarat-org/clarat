@@ -86,6 +86,7 @@ class OffersController < ApplicationController
   # Deal with location fallback and no nearby search results
   def test_if_location_unavailable
     # See if area is covered and if not instantiate an UpdateRequest
+    # TODO: use
     if @nearby.empty?
       @update_request = UpdateRequest.new(
         search_location: @search_cache.search_location
@@ -93,6 +94,7 @@ class OffersController < ApplicationController
     end
 
     # Alert user when we used default location because they didn't give one
+    # TODO: working?
     if @search_cache.location_fallback
       flash[:alert] = I18n.t('offers.index.location_fallback')
     end

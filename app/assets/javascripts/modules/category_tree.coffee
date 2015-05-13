@@ -1,17 +1,26 @@
-clickHandler = ->
-  resultContainer = $('.content-main')
+Clarat.CategoryTree =
+  updateFacets: (facetsJSON) ->
+    for categoryLink in $("#categories li > a")
+      $categoryLink = $(categoryLink)
+      categoryName = $categoryLink.data('category')
+      facetCount = facetsJSON[categoryName] || 0
 
-  $('.Categories a').on 'click', (event) ->
-    that = $(this)
-    url = that.attr 'href'
+      $categoryLink.html "#{categoryName} (#{facetCount})"
 
-    $('.Categories__list').find('.active').removeClass('active')
-    that.parents('li').addClass 'active'
+  registerClickHandler: ->
+    resultContainer = $('.content-main')
 
-    Clarat.ajaxReplace resultContainer, url
+    $('.Categories a').on 'click', (event) ->
+      that = $(this)
+      url = that.attr 'href'
 
-    event.preventDefault()
-    false
+      $('.Categories__list').find('.active').removeClass('active')
+      that.parents('li').addClass 'active'
 
-$(document).ready clickHandler
-$(document).on 'page:load', clickHandler
+      Clarat.ajaxReplace resultContainer, url
+
+      event.preventDefault()
+      false
+
+$(document).ready Clarat.CategoryTree.registerClickHandler
+$(document).on 'page:load', Clarat.CategoryTree.registerClickHandler

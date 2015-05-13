@@ -2,14 +2,12 @@
   ul.Categories__list
     - set.each do |category, children|
       - name = category.name
-      - display_name = facets ? "#{name} (#{facets[name] || 0})" : name
       li.Categories__listitem(
         class=category_list_classes(search_cache, name, depth, children)
-        data-id=category.id
       )
-        = link_to offers_path(search_form: search_cache.category_focus(name)),
-                  class: 'btn' do
-          = display_name
+        = link_to name, 
+                  offers_path(search_form: search_cache.category_focus(name)),
+                  class: 'btn', data: { category: name }
 
         = render 'offers/index/categories_nest', set: children, facets: facets,
                                                  search_cache: search_cache,

@@ -124,7 +124,7 @@ Clarat.GMaps =
         # If category links exist: event listener on input change to update them
         if $('.nav-sections__list').length
           $('#search_form_search_location').on(
-            'input', Clarat.GMaps.PlacesAutocomplete.updateCategoryLink)
+            'input', Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks)
           $('#search_form_generated_geolocation').on(
             'input', Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks)
           google.maps.event.addListener(

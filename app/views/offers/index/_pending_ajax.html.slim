@@ -8,4 +8,6 @@
 - content_for :view_specific_scripts do
 
   javascript:
-    Clarat.ajaxReplace($('.content-main'), window.location.href);
+    Clarat.ajaxReplace(
+      $('.content-main'), window.location.href, { historyPush: false }
+    );

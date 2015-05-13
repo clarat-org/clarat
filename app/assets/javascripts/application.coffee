@@ -12,10 +12,11 @@ Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-direct
 about supported directives.
 ###
 #
+# = require lodash
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks
-# = require qtip2-jquery-rails
+# = require qtip2
 # = require i18n
 # = require i18n/translations
 # = require hogan

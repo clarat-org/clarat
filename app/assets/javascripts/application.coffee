@@ -29,6 +29,7 @@ about supported directives.
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix
+# = require vendor/image_path_helper
 #
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min

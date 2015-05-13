@@ -27,7 +27,7 @@ Clarat.GMaps =
           marker = new google.maps.Marker
             position: markerPosition
             map: map
-            icon: '/assets/gmaps_marker_1.svg'
+            icon: image_path('gmaps_marker_1.svg')
 
           includedPoints.push markerPosition
           bounds.extend markerPosition

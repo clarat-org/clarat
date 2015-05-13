@@ -6,3 +6,8 @@
 // trigger facet count replacement
 javascript:
   Clarat.CategoryTree.updateFacets(#{@facets.to_json.html_safe});
+
+
+- if @nearby.empty?
+  javascript:
+    Clarat.Modal.open('#unavailable_location_overlay');

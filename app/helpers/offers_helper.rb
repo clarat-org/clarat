@@ -30,7 +30,10 @@ module OffersHelper
       end
     end
 
-    output + " (#{search_cache.search_location})"
+    display_location = search_cache.location_fallback ?
+      I18n.t('conf.default_location') :
+      search_cache.search_location
+    output + " (#{display_location})"
   end
 
   # generate collections for radio buttons from enum arrays

@@ -45,7 +45,6 @@ about supported directives.
 # = require modules/more
 # = require modules/modal
 # = require modules/tooltip
-# = require modules/unavailable_location_overlay
 # = require modules/flash
 # = require modules/filter_form
 # = require modules/safari_fixes

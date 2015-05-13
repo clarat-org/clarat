@@ -41,7 +41,6 @@ about supported directives.
 # = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/category_tree
-# = require modules/search_location
 # = require modules/more
 # = require modules/modal
 # = require modules/tooltip

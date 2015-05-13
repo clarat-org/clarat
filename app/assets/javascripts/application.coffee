@@ -38,7 +38,7 @@ about supported directives.
 # = require modules/ajax_replace
 # = require modules/geolocation
 # = require modules/query_autocomplete
-# = require modules/places_autocomplete
+# = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/category_tree
 # = require modules/search_location

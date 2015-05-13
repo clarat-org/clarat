@@ -17,7 +17,7 @@ Clarat.CategoryTree =
       $('.Categories__list').find('.active').removeClass('active')
       that.parents('li').addClass 'active'
 
-      Clarat.ajaxReplace resultContainer, url
+      Clarat.Ajax.replace resultContainer, url
 
       event.preventDefault()
       false

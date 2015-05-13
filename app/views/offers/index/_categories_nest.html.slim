@@ -5,7 +5,7 @@
       li.Categories__listitem(
         class=category_list_classes(search_cache, name, depth, children)
       )
-        = link_to name, 
+        = link_to name,
                   offers_path(search_form: search_cache.category_focus(name)),
                   class: 'btn', data: { category: name }
 

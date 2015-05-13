@@ -23,7 +23,7 @@ class OffersController < ApplicationController
 
   # pseudo action, handler for when index is called via ajax
   def index_xhr
-    get_and_assign_search_results_to_instance_variables
+    fetch_and_assign_search_results_to_instance_variables
     prepare_gmaps_variables @personal_offers if @personal_offers
     render :index_xhr, layout: false
   end
@@ -46,7 +46,7 @@ class OffersController < ApplicationController
   end
 
   # general variable assignments: search for results, get categories, etc.
-  def get_and_assign_search_results_to_instance_variables
+  def fetch_and_assign_search_results_to_instance_variables
     @personal_offers = search.personal_hits
     @remote_offers = search.remote_hits
     @facets = search.facets_hits

@@ -17,9 +17,11 @@
           h3.section-content__title = t 'organizations.show.offers_all'
           .section-content__body
             ul.Listing-offers__list
-              - @organization.offers.approved.each do |offer|
+              - @organization.offers.approved.order('name ASC').each do |offer|
                 li.Listing-offers__listitem
                   = link_to offer.name, offer_path(id: offer)
+                .Listing-offers__address
+                  = offer.location_address
 
     .section-wrapper-minor
 

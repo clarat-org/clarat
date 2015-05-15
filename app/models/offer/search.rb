@@ -25,7 +25,7 @@ class Offer
                     disable_indexing: Rails.env.test?,
                     if: :personal_indexable? do
         INDEX = %w(
-          name description category_string keyword_string organization_name
+          name description category_string keyword_string organization_names
         )
         attributesToIndex INDEX
         ranking %w(

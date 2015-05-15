@@ -102,14 +102,9 @@ de:
       text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
       anchor: 'Alle ansehen >>'
     cookie_warning_html: |
-      Diese Webseite verwendet Cookies, die es uns ermöglichen, Ihre Aktivtäten
-      auf dieser Webseite zu speichern. Diese Informationen sind notwendig um
-      das Angebot auf unserer Webseite für unsere Besucher stetig verbessern zu
-      können. Nähere Informationen, insbesondere was Cookies sind und wie Sie
-      der Verwendung widersprechen oder diese abstellen können, erhalten Sie
-      <a href="/datenschutzhinweise">hier</a>. Wenn Sie diese Webseite nutzen,
-      erklären Sie damit Ihre Einwilligung zum Setzen aller auf dieser Webseite
-      verwandten Cookies.
+      Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
+      Website erklären Sie sich einverstanden, dass wir Cookies setzen.
+      <a href="/datenschutzhinweise">Mehr</a>.
     more_filter_options: 'Mehr Filter anzeigen'
     less_filter_options: 'Weniger Filter anzeigen'
     mobile_filter: 'Ergebnisse filtern'

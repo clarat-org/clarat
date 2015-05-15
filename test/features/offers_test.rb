@@ -34,14 +34,11 @@ feature 'Offer display' do
   scenario 'Muliple contact perons are shown in the right order' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, organization: offer.organizations.first
+      :contact_person, :just_telephone, organization: offer.organizations.first
     )
-    offer.contact_people.last.update name: '',
-                                     area_code_1: '030',
-                                     local_number_1: '123456'
     visit offer_path offer
     page.body.must_match(
-      /contact-person-list\"><li>Telefon:  <a href=\"tel:030123456\"/
+      '030  12 34 56</a><br /></li></ul>'
     )
   end
 end

@@ -79,4 +79,8 @@ class Organization < ActiveRecord::Base
       address: location.address
     }
   end
+
+  def homepage
+    websites.where(host: "own").first
+  end
 end

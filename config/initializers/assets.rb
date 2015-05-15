@@ -11,5 +11,5 @@ Rails.application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   #config.assets.precompile += Dir["app/assets/stylesheets/controller/*.scss"].map{|file| "controller/#{File.basename file,'.scss'}" }
-  config.assets.precompile += %w( gmaps_search_results.js vendor/modernizr.custom.js )
+  config.assets.precompile += %w( vendor/modernizr.custom.js )
 end

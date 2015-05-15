@@ -14,7 +14,7 @@
         | Telefon- und Onlineberatungen
         - if remote_offers[1]
           / If more than one national offer
-          =< link_to '(Mehr…)',
+          =< link_to t('.more'),
                      offers_path(search_form: search_cache.remote_focus)
 
       ul.Listing-results__list

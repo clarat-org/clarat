@@ -6,7 +6,9 @@
 
 // @TODO: Refactor!
 
-.popup_content {
+.JS-modal {
+  display: none; // will be made visible by javascript
+
   @extend %clarat_rounding;
   position: relative;
   padding: 30px;

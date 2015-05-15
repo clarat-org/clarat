@@ -12,10 +12,11 @@ Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-direct
 about supported directives.
 ###
 #
+# = require lodash
 # = require jquery
 # = require jquery_ujs
 # = require turbolinks
-# = require qtip2-jquery-rails
+# = require qtip2
 # = require i18n
 # = require i18n/translations
 # = require hogan
@@ -28,23 +29,22 @@ about supported directives.
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix
+# = require vendor/image_path_helper
 #
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
 # = require modules/analytics
-# = require modules/ajax_replace
+# = require modules/ajax
 # = require modules/geolocation
 # = require modules/query_autocomplete
-# = require modules/places_autocomplete
+# = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/category_tree
-# = require modules/search_location
 # = require modules/more
 # = require modules/modal
 # = require modules/tooltip
-# = require modules/unavailable_location_overlay
 # = require modules/flash
 # = require modules/filter_form
 # = require modules/safari_fixes

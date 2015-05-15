@@ -1,2 +1,3 @@
 .Flash-message{ class: "Flash-message--{{{ type }}}" }
   {{{ message }}}
+  %i.fa.fa-close.Flash-message__close

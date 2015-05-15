@@ -35,10 +35,10 @@ module ApplicationHelper
   end
 
   # Modal with content block
-  def modal_for selector, &block
+  def modal_for selector, options = {}, &block
     render(
       partial: '/layouts/partials/modal',
-      locals: { selector: selector, block: block }
+      locals: { selector: selector, options: options, block: block }
     )
   end
 

@@ -14,11 +14,7 @@ ready = ->
       form.addEventListener 'submit', (event) ->
         if not event.target.checkValidity()
           event.preventDefault()
-          $('.page-wrap').prepend(
-            HoganTemplates['flash_message'].render
-              type: 'alert'
-              message: I18n.t 'js.location_required'
-          )
+          Clarat.Flash.createFlash 'alert', I18n.t('js.location_required')
       , false
 
   true

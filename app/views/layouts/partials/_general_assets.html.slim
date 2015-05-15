@@ -6,7 +6,8 @@
 = javascript_include_tag 'vendor/modernizr.custom.js'
 = javascript_include_tag 'application', 'data-turbolinks-track' => true
 = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
-                         'places&language=de&sensor=false&v=3.exp',
+                         'places&language=de&callback=Clarat.GMaps.initialize'\
+                         '&sensor=false&v=3.exp',
                          cache: 'google_maps_apiv3'
 
 / Setup I18n JS

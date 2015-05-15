@@ -30,7 +30,7 @@ module OffersHelper
       end
     end
 
-    output + " (#{search_cache.search_location})"
+    output + " (#{display_location_for(search_cache)})"
   end
 
   # generate collections for radio buttons from enum arrays
@@ -71,6 +71,14 @@ module OffersHelper
   def remove_query_link search_cache
     link_to offers_path(search_form: search_cache.empty) do
       '<i class="fa fa-times-circle"></i>'.html_safe
+    end
+  end
+
+  def display_location_for search_cache
+    if search_cache.location_fallback
+      I18n.t('conf.default_location')
+    else
+      search_cache.search_location
     end
   end
 end

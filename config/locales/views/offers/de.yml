@@ -1,0 +1,7 @@
+de:
+  offers:
+    index:
+      pending_ajax:
+        searching: "Suche..."
+      search_results:
+        more: "(Mehr…)"

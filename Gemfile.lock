@@ -8,6 +8,7 @@ GIT
 
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.1.5)
       actionpack (= 4.1.5)
@@ -316,8 +317,6 @@ GEM
       pry (>= 0.9.11)
     pundit (0.3.0)
       activesupport (>= 3.0.0)
-    qtip2-jquery-rails (2.2.100)
-      railties (>= 3.1)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -342,6 +341,16 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.5)
       sprockets-rails (~> 2.0)
+    rails-assets-eventEmitter (4.2.11)
+    rails-assets-eventie (1.0.6)
+    rails-assets-imagesloaded (3.1.8)
+      rails-assets-eventEmitter (~> 4.0)
+      rails-assets-eventie (>= 1.0.4, < 2)
+    rails-assets-jquery (2.1.4)
+    rails-assets-lodash (3.8.0)
+    rails-assets-qtip2 (2.2.1)
+      rails-assets-imagesloaded (>= 3.0.0)
+      rails-assets-jquery (>= 1.6.0)
     rails-erd (1.3.1)
       activerecord (>= 3.2)
       activesupport (>= 3.2)
@@ -550,6 +559,7 @@ DEPENDENCIES
   bootstrap-sass
   brakeman
   bullet
+  bundler (>= 1.8.4)
   cancan
   closure_tree
   coffee-rails (~> 4.0.0)
@@ -576,7 +586,6 @@ DEPENDENCIES
   hogan_assets
   i18n-js (>= 3.0.0.rc6)
   jbuilder (~> 1.2)
-  jquery-rails
   kaminari
   launchy
   letter_opener
@@ -598,10 +607,12 @@ DEPENDENCIES
   pry-rescue
   pry-stack_explorer
   pundit
-  qtip2-jquery-rails
   quiet_assets
   rack-attack
   rails (= 4.1.5)
+  rails-assets-jquery!
+  rails-assets-lodash!
+  rails-assets-qtip2!
   rails-erd
   rails-i18n
   rails-observers

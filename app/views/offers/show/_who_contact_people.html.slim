@@ -1,6 +1,6 @@
 ul.section-content--contact-person-list
   / TODO: Order by no name first
-  - offer_contacts = offer.reorder_contact_people
+  - offer_contacts = offer.contact_people.order('name DESC')
   - offer_contacts.each_with_index do |contact, index|
     - cache [offer, contact] do
       li

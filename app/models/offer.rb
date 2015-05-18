@@ -102,18 +102,6 @@ class Offer < ActiveRecord::Base
     end
   end
 
-  def reorder_contact_people
-    new_order = []
-    contact_people.each do |contact_person|
-      if contact_person.name.nil? || contact_person.name.empty?
-        new_order.insert(-1, contact_person)
-      else
-        new_order << contact_person
-      end
-    end
-    new_order
-  end
-
   def gmaps_info
     {
       title: name,

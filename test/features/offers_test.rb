@@ -41,4 +41,14 @@ feature 'Offer display' do
       '030  12 34 56</a><br /></li></ul>'
     )
   end
+
+  scenario 'With a PDF website' do
+    offer = FactoryGirl.create :offer, :approved
+    offer.websites = []
+    offer.websites << FactoryGirl.create(:website, :pdf)
+    visit offer_path offer
+    page.body.must_match(
+      '<a href="http://www.t.com/t.pdf" target="_blank">Webseite (PDF)</a>'
+    )
+  end
 end

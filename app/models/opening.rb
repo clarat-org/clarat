@@ -41,7 +41,7 @@ class Opening < ActiveRecord::Base
   end
 
   def display_string
-    if close.strftime('%H:%M') == "00:00"
+    if close.strftime('%H:%M') == '00:00'
       "#{open.strftime('%H:%M')} Uhr - 24:00 Uhr"
     else
       "#{open.strftime('%H:%M')} Uhr - #{close.strftime('%H:%M')} Uhr"

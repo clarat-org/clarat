@@ -46,7 +46,7 @@ module OffersHelper
 
   def remote_search_results_info_headline search
     I18n.t(
-      "offers.shared.remote_offers",
+      'offers.shared.remote_offers',
       count: search.remote_hits.nbHits
     )
   end

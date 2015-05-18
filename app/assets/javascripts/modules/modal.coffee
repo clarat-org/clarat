@@ -1,8 +1,14 @@
 # using http://vast-engineering.github.io/jquery-popup-overlay/
-ready =  ->
-  overlay = $('.js-modal')
-  if overlay.length
-    overlay.popup()
+Clarat.Modal =
+  initializeAllModals:  ->
+    modals = $('.JS-modal')
+    for modal in modals
+      $modal = $(modal)
+      options = $modal.data()
+      $modal.popup(options)
 
-$(document).ready ready
-$(document).on 'page:load', ready
+  open: (selector) ->
+    $(selector).popup 'show'
+
+$(document).ready Clarat.Modal.initializeAllModals
+$(document).on 'page:load', Clarat.Modal.initializeAllModals

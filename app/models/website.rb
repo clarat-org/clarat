@@ -29,4 +29,12 @@ class Website < ActiveRecord::Base
   def shorten_url
     URI.parse(self.url).host
   end
+
+  def shown_link
+    I18n.t("offers.show.websites.#{host}")
+  end
+
+  def pdf_appendix
+    url.ends_with?('.pdf') ? ' (PDF)' : ''
+  end
 end

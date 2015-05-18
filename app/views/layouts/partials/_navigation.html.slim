@@ -1,4 +1,5 @@
 - cache 'start_header' do
+
   header.header-main.header-main--wide
     .header-main__foreground.wrapper-inner
       h1.Logo.Logo--start = link_to "clarat.org", '/'
@@ -17,15 +18,17 @@
       = render '/offers/shared/search_form', search_cache: search_cache
 
       - cache 'category_navigation' do
+
         nav.nav-sections
           h3.nav-sections__headline = t 'shared.distributor.sections_headline'
 
           ul.nav-sections__list
             - Category.mains.each do |main|
-              li.nav-sections__listitem class="nav-sections__listitem--#{main.icon}"
+              li.nav-sections__listitem(
+                class="nav-sections__listitem--#{main.icon}"
+              )
                 = link_to main.name, offers_path( \
-                    'search_form[categories]' => main.name,
-                    'search_form[query]' => '',
+                    'search_form[category]' => main.name,
                     'search_form[search_location]' => \
                       search_cache.search_location,
                     'search_form[generated_geolocation]' => \

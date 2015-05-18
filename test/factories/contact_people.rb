@@ -22,5 +22,16 @@ FactoryGirl.define do
       fax_number nil
       email nil
     end
+
+    trait :just_telephone do
+      name nil
+      area_code_1 '030'
+      local_number_1 '123456'
+      area_code_2 nil
+      local_number_2 nil
+      email nil
+      fax_number nil
+      fax_area_code nil
+    end
   end
 end

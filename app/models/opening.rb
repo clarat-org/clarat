@@ -41,7 +41,11 @@ class Opening < ActiveRecord::Base
   end
 
   def display_string
-    "#{open.strftime('%H:%M')} Uhr - #{close.strftime('%H:%M')} Uhr"
+    if close.strftime('%H:%M') == '00:00'
+      "#{open.strftime('%H:%M')} Uhr - 24:00 Uhr"
+    else
+      "#{open.strftime('%H:%M')} Uhr - #{close.strftime('%H:%M')} Uhr"
+    end
   end
 
   # rails_admin can only sort by a single field, that's why we are creating an

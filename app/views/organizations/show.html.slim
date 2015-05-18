@@ -1,5 +1,6 @@
 - provide(:title, @organization.name )
 - location = @organization.location
+- website = @organization.homepage
 .wrapper-inner class="#{'no-location' unless location}"
   main.content-main.content-main--wide
 
@@ -17,9 +18,11 @@
           h3.section-content__title = t 'organizations.show.offers_all'
           .section-content__body
             ul.Listing-offers__list
-              - @organization.offers.approved.each do |offer|
+              - @organization.offers.approved.order('name ASC').each do |offer|
                 li.Listing-offers__listitem
                   = link_to offer.name, offer_path(id: offer)
+                .Listing-offers__address
+                  = offer.location_address
 
     .section-wrapper-minor
 
@@ -42,6 +45,12 @@
                   br
                   span.postal-code=> location.zip
                   span.locality= location.city
+                - if website
+                  br
+
+                    = link_to website.shorten_url + website.pdf_appendix,
+                      website.url, target: '_blank'
+
               /! http://microformats.org/wiki/adr end
               br
               #map-container
@@ -56,5 +65,5 @@
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-- content_for :view_specific_scripts do
-  = javascript_include_tag "gmaps_search_results.js"
+/ - content_for :view_specific_scripts do
+/   = javascript_include_tag "gmaps_search_results.js"

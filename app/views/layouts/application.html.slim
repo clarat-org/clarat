@@ -14,11 +14,12 @@ html class='no-js' lang=I18n.locale
     .page-wrap
       - cache 'banner' do
         = render '/layouts/partials/banner'
-      - flash.each do |message|
-        - unless message[0] == 'timedout'
-          = render '/layouts/partials/flash',
-                   type: message[0],
-                   content: message[1]
+      #Flash-messages
+        - flash.each do |message|
+          - unless message[0] == 'timedout'
+            = render '/layouts/partials/flash',
+                     type: message[0],
+                     content: message[1]
 
       - if controller_name == 'pages' && %w(home about).include?(action_name)
         = render 'layouts/partials/navigation', search_cache: @search_cache

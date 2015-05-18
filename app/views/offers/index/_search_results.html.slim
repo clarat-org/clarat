@@ -11,10 +11,10 @@
     - main_offers = personal_offers
     - if remote_offers.any?
       h2.Listing-results__headline
-        | Telefon- und Onlineberatungen
+        == remote_search_results_info_headline search
         - if remote_offers[1]
           / If more than one national offer
-          =< link_to '(Mehr…)',
+          =< link_to t('.more'),
                      offers_path(search_form: search_cache.remote_focus)
 
       ul.Listing-results__list

@@ -1,6 +1,6 @@
 - provide(:title, @organization.name )
 - location = @organization.location
-- homepage = @organization.homepage
+- website = @organization.homepage
 .wrapper-inner class="#{'no-location' unless location}"
   main.content-main.content-main--wide
 
@@ -45,10 +45,11 @@
                   br
                   span.postal-code=> location.zip
                   span.locality= location.city
-                - if homepage
+                - if website
                   br
-                    = link_to homepage.shorten_url, homepage.url,
-                      target: '_blank'
+
+                    = link_to website.shorten_url + website.pdf_appendix,
+                      website.url, target: '_blank'
 
               /! http://microformats.org/wiki/adr end
               br

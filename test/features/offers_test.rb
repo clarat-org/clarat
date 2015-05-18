@@ -31,7 +31,7 @@ feature 'Offer display' do
     )
   end
 
-  scenario 'Muliple contact perons are shown in the right order' do
+  scenario 'Muliple contact persons are shown in the right order' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
       :contact_person, :just_telephone, organization: offer.organizations.first

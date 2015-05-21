@@ -45,3 +45,11 @@ footer.footer-main
               = link_to 'Rechtliche Hinweise', '/rechtliche-hinweise'
             li.nav-legal__listitem
               = link_to 'Datenschutzhinweise', '/datenschutzhinweise'
+            li.nav-legal__listitem
+              # TODO: Refactor or remove after translation testing
+              # google_translate_element
+              javascript:
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
+                }
+              script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"

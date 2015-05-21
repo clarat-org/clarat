@@ -11,7 +11,7 @@
     - main_offers = personal_offers
     - if remote_offers.any?
       h2.Listing-results__headline
-        == remote_search_results_info_headline search
+        = t 'offers.shared.remote_offers', count: search.remote_hits.nbHits
         - if remote_offers[1]
           / If more than one national offer
           =< link_to t('.more'),

@@ -13,6 +13,11 @@
     font-size: 30px;
     margin: 100px 0 0 0;
   }
+
+  p {
+    font-size: $base_font_size;
+    margin: 5px 20%;
+  }
 }
 
 .Listing-results__list {

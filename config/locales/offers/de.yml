@@ -9,10 +9,11 @@ de:
         fieldset_headline_language: Sprache
         submit: Erneut suchen
       unavailable_location_modal: |
-        Leider finden sich auf unserer Plattform aktuell nur Angebote aus
-        Berlin. Wir hoffen aber schon bald auch in anderen Teilen
-        Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail
-        und wir werden uns einmalig bei dir melden sobald das der Fall ist.
+        Leider finden sich auf unserer Plattform aktuell nur Vor-Ort-Angebote
+        aus Berlin und Brandenburg. Wir hoffen aber schon bald auch in anderen
+        Teilen Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine
+        E-Mail und wir werden uns einmalig bei dir melden sobald das der Fall
+        ist.
       location_fallback: |
         Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
       cooperation: Kooperationsprojekt

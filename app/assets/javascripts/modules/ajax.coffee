@@ -2,19 +2,26 @@
 # got startet
 # Caution: Is it possible that the latest ajax request (that we actually want to
 # be the final replacement) gets processed before an earlier request?
-Clarat.Ajax =
-  stack: {}
+class Ajax
+  constructor: ->
+    ### PUBLIC ATTRIBUTES ###
 
-  defaultOptions:
-    historyPush: true
+    @stack = {}
+
+    @defaultOptions =
+      historyPush: true
+
+
+  ### PUBLIC METHODS ###
 
   replace: (container, targetURL, options = {}) ->
-    options = _.merge Clarat.Ajax.defaultOptions, options
+    options = _.merge @defaultOptions, options
+    that = this
 
     container.addClass 'Ajax'
 
-    Clarat.Ajax.stack[container] = [] unless Clarat.Ajax.stack[container]
-    Clarat.Ajax.stack[container].push targetURL
+    @stack[container] = [] unless @stack[container]
+    @stack[container].push targetURL
 
     console.log targetURL
     $.ajax
@@ -27,15 +34,34 @@ Clarat.Ajax =
         if options.historyPush
           history.pushState { turbolinks: true, url: targetURL }, '', targetURL
 
-        if Clarat.Ajax.stack[container]
-          # remove appropriate element from stack
-          processedIndex = Clarat.Ajax.stack[container].lastIndexOf targetURL
-          Clarat.Ajax.stack[container].splice processedIndex, 1
-
-        # remove waiting-for-ajax display styling when stack empty
-        container.removeClass 'Ajax' unless Clarat.Ajax.stack[container]?.length
+        # remove appropriate element from stack & finish
+        that.pop targetURL, container
+        that.onComplete container
 
         $(document).trigger 'ajax_replaced'
       error: (error) ->
         console.log error.statusText
         console.log error.responseText.substr(0, 200)
+
+        container.html(
+          HoganTemplates['error_ajax'].render I18n.t('js.ajax_error')
+        )
+
+        # still remove element from stack & finish
+        that.pop targetURL, container
+        that.onComplete container
+
+  ### PRIVATE METHODS (not enforced) ###
+
+  # remove something from stack
+  pop: (targetURL, container) ->
+    if @stack[container]
+
+      processedIndex = @stack[container].lastIndexOf targetURL
+      @stack[container].splice processedIndex, 1
+
+  # remove waiting-for-ajax display styling when stack empty
+  onComplete: (container) ->
+    container.removeClass 'Ajax' unless @stack[container]?.length
+
+Clarat.Ajax = new Ajax

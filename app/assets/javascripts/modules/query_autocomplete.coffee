@@ -1,3 +1,5 @@
+HITSPERPAGE = 5
+
 ready = ->
   if $('.typeahead').length
     initTypeahead()
@@ -30,7 +32,7 @@ initTypeahead = ->
       suggestion: (hit) ->
         hitTemplate.render(hit) # render the hit using Hogan.js
       footer: (set) ->
-        unless set.isEmpty
+        if Clarat.ttTotalResults > HITSPERPAGE
           footerTemplate.render
             content: I18n.t 'js.autocomplete_footer',
               results: Clarat.ttTotalResults
@@ -38,7 +40,7 @@ initTypeahead = ->
 
 generateSource = ->
   Clarat.ttAdapter
-    hitsPerPage: 5
+    hitsPerPage: HITSPERPAGE
     aroundRadius: 999999999
     aroundPrecision: 500
 

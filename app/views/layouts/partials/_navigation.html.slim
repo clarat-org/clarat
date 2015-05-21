@@ -15,7 +15,8 @@
 
   .Distributor.Distributor--start
     .wrapper-inner
-      = render '/offers/shared/search_form', search_cache: search_cache
+      = render '/offers/shared/search_form', search_cache: search_cache,
+                                             labels: :long
 
       - cache 'category_navigation' do
 

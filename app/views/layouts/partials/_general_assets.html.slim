@@ -1,7 +1,14 @@
+/ Stylesheets
 = stylesheet_link_tag 'application', media: 'all',
                                      'data-turbolinks-track' => true
 = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css'\
                       '/font-awesome.min.css'
+
+/ JavaScripts
+
+/ Prepare I18n JS Setup
+javascript:
+  document.locale = "#{I18n.locale}";
 
 = javascript_include_tag 'vendor/modernizr.custom.js'
 = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -10,9 +17,6 @@
                          '&sensor=false&v=3.exp',
                          cache: 'google_maps_apiv3'
 
-/ Setup I18n JS
-javascript:
-  I18n.locale = "#{I18n.locale}";
 
 / Browser dependent code
 

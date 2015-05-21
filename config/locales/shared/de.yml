@@ -2,13 +2,6 @@ de:
   shared:
     abbr:
       example: 'z.B.'
-    search:
-      placeholder:
-        loc: 'Adresse, Stadtteil, Stadt oder PLZ'
-      labels:
-        query: 'Finde'
-        loc: 'Wo'
-      button: Suchen
     forms:
       fill_field: 'Bitte fülle dieses Feld aus'
     subscription:

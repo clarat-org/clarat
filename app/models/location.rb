@@ -9,13 +9,10 @@ class Location < ActiveRecord::Base
   has_many :offers, inverse_of: :location
 
   # Validations
-  validates :name, length: { maximum: 100 },
-                   uniqueness: { scope: [:street, :zip] }
+  validates :name, length: { maximum: 100 }
   validates :street, presence: true,
-                     uniqueness: { scope: [:name, :zip] },
-                     format: /\A.+\d+.*\z/ # format: ensure digit for house number
-  validates :zip, presence: true, length: { is: 5 },
-                  uniqueness: { scope: [:name, :street] }
+                     format: /\A.+\d+.*\z/ # ensure digit for house number
+  validates :zip, presence: true, length: { is: 5 }
   validates :city, presence: true
   validates :display_name, presence: true
 

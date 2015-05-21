@@ -22,6 +22,8 @@ about supported directives.
 # = require hogan
 # = require_tree ./templates
 #
+# = require setup
+#
 # = require jquery.popupoverlay
 # = require jquery.query-object
 #
@@ -39,6 +41,7 @@ about supported directives.
 # = require modules/ajax
 # = require modules/geolocation
 # = require modules/query_autocomplete
+# = require modules/query_field_placeholder
 # = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/category_tree
@@ -50,3 +53,4 @@ about supported directives.
 # = require modules/safari_fixes
 # = require modules/category_tree
 # = require modules/cookie_warning
+# = require modules/refocus

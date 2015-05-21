@@ -2,6 +2,17 @@ de:
   offers:
     index:
       pending_ajax:
-        searching: "Suche..."
+        searching: "Suche…"
       search_results:
-        more: "(Mehr…)"
+        more: "(Mehr …)"
+    shared:
+      search_form:
+        loc_label: "Wo"
+        loc_placeholder:
+          long: "Adresse, Stadtteil, Stadt oder PLZ"
+          short: "Stadt, PLZ, …"
+        query_label: "Finde"
+        query_placeholder:
+          long: "Angebote zum Thema …"
+          short: "Angebote zu …"
+        button: Suchen

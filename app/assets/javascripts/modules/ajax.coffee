@@ -16,20 +16,26 @@ Clarat.Ajax =
     Clarat.Ajax.stack[container] = [] unless Clarat.Ajax.stack[container]
     Clarat.Ajax.stack[container].push targetURL
 
-    $.get targetURL, (data) ->
-      # update container
-      container.html data
+    console.log targetURL
+    $.ajax
+      url: targetURL
+      success: (data) ->
+        # update container
+        container.html data
 
-      # update URL
-      if options.historyPush
-        history.pushState { turbolinks: true, url: targetURL }, '', targetURL
+        # update URL
+        if options.historyPush
+          history.pushState { turbolinks: true, url: targetURL }, '', targetURL
 
-      if Clarat.Ajax.stack[container]
-        # remove appropriate element from stack
-        processedIndex = Clarat.Ajax.stack[container].lastIndexOf targetURL
-        Clarat.Ajax.stack[container].splice processedIndex, 1
+        if Clarat.Ajax.stack[container]
+          # remove appropriate element from stack
+          processedIndex = Clarat.Ajax.stack[container].lastIndexOf targetURL
+          Clarat.Ajax.stack[container].splice processedIndex, 1
 
-      # remove waiting-for-ajax display styling when stack empty
-      container.removeClass 'Ajax' unless Clarat.Ajax.stack[container]?.length
+        # remove waiting-for-ajax display styling when stack empty
+        container.removeClass 'Ajax' unless Clarat.Ajax.stack[container]?.length
 
-      $(document).trigger 'ajax_replaced'
+        $(document).trigger 'ajax_replaced'
+      error: (error) ->
+        console.log error.statusText
+        console.log error.responseText.substr(0, 200)

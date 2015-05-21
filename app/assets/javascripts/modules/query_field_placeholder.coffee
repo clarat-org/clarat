@@ -13,13 +13,18 @@ class QueryFieldPlaceholder
 
   # start constructing next randomized placeholder
   nextPlaceholder: (that) ->
-    placeholder = that.randomPlaceholder()
-    that.constructPlaceholder(
-      I18n.t 'js.query_field.example_placeholder', word: placeholder
-    )
-    that.currentPlaceholder = placeholder
+    # when field is in focus …
+    if that.queryField.is(':focus')
+      # … get a random placeholder …
+      placeholder = that.randomPlaceholder()
+      # … and put it character by character into the field
+      that.constructPlaceholder(
+        I18n.t 'js.query_field.example_placeholder', word: placeholder
+      )
+      that.currentPlaceholder = placeholder
 
-    _.delay that.nextPlaceholder, that.nextPlaceholderInterval, that
+      # do it again in a few seconds
+      _.delay that.nextPlaceholder, that.nextPlaceholderInterval, that
 
   # get a random element of the list (except the current one)
   randomPlaceholder: ->
@@ -45,4 +50,4 @@ class QueryFieldPlaceholder
       that.currentConstructionState = ''
 
 $(document).ready -> new QueryFieldPlaceholder
-# $(document).on 'page:load', -> new QueryFieldPlaceholder
+# not on page:load or else we get overlapping timeouts

@@ -23,7 +23,6 @@ class Ajax
     @stack[container] = [] unless @stack[container]
     @stack[container].push targetURL
 
-    console.log targetURL
     $.ajax
       url: targetURL
       success: (data) ->

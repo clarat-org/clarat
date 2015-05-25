@@ -70,11 +70,11 @@ feature 'Search Form' do
 
     # test non-xhr part
     visit root_path
+    fill_in 'search_form_query', with: 'foo'
+    fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
     click_link 'chunky bacon'
-    current_url.must_match(
-      /search_form\[category\]=chunky\+bacon/
-    )
+    current_url.must_match(/search_form\[category\]=chunky\+bacon/)
     # find_link('chunky bacon')[:href].wont_match(
     #   /search_form%5Bcategory%5D=chunky\+bacon/
     # )
@@ -83,7 +83,9 @@ feature 'Search Form' do
     with_xhr do
       visit current_url # reload
       # test for category in info title
-      page.must_have_content '2 Vor-Ort-Angebote in chunky bacon (Berlin)'
+      page.must_have_content(
+        '2 Vor-Ort-Angebote in chunky bacon: „foo“ (Foobar)'
+      )
     end
     WebMock.disable!
   end
@@ -157,11 +159,19 @@ feature 'Search Form' do
     visit root_path
     fill_in 'search_form_search_location', with: ''
 
+    # test non-xhr part
     click_link 'main1'
     Capybara.ignore_hidden_elements = false
     page.must_have_content I18n.t('offers.index.location_fallback')[0..-15]
     # there is an apostrophy that appears as &#39; so we have to cut the string
     Capybara.ignore_hidden_elements = true
+
+    # test xhr part
+    with_xhr do
+      visit current_url # reload
+      page.must_have_content 'Keine Vor-Ort-Angebote in main1 (Berlin)'
+    end
+
     WebMock.disable!
   end
 end

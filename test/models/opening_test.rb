@@ -49,5 +49,21 @@ describe Opening do
         opening.appointment?.must_equal true
       end
     end
+
+    describe '#display_string' do
+      it 'should output the open and close time' do
+        opening.open = Time.parse '12:01:01'
+        opening.close = Time.parse '13:02:02'
+
+        opening.display_string.must_equal '12:01 Uhr - 13:02 Uhr'
+      end
+
+      it 'should output 24 instead of 00 for the closing time' do
+        opening.open = Time.parse '14:00:00'
+        opening.close = Time.parse '00:00:00'
+
+        opening.display_string.must_equal '14:00 Uhr - 24:00 Uhr'
+      end
+    end
   end
 end

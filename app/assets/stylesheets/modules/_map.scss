@@ -16,3 +16,8 @@
 		color: $brand_orange;
 	}
 }
+
+.map__button--enlarge {
+  @extend %small_button_style;
+  margin-top: 10px;
+}

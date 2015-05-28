@@ -12,6 +12,14 @@
                                               search_cache: @search_cache,
                                               facets: false
 
+  aside.aside-standard
+    .aside-standard__container
+      h5.aside-standard__headline Vor-Ort-Angebote auf der Karte
+
+      #map-container
+        #map-canvas data={markers: @markers.to_json, position: @position.to_json}
+      a.map__button--enlarge[href="#"] Karte vergrößern
+
 / Alert user when we used default location because they didn't give one
 - if @search_cache.search_location.blank?
   - content_for :view_specific_scripts do
@@ -20,3 +28,4 @@
       Clarat.Flash.createFlash(
         'alert', "#{j I18n.t('offers.index.location_fallback')}"
       );
+

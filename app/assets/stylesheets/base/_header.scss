@@ -27,7 +27,9 @@
 }
 
 .header-main--wide {
-  height: 475px;
+  height: 60vh;
+  min-height: 330px;
+  max-height: 475px;
   // border-top: 4px solid $brand_yellow; // disabled when banner is active
   background: image-url('bg_scratches.jpg') no-repeat center bottom;
   background-size: cover;
@@ -48,7 +50,9 @@
 .header-main__foreground {
   @extend %clearfix;
   margin-top: -4px;
-  height: inherit;
+  height: 60vh;
+  min-height: 330px;
+  max-height: 475px;
   background: image-url('foreground.svg') no-repeat center 102%;
   background-size: contain;
 

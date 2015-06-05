@@ -1,19 +1,19 @@
-- provide(:title, t('pages.home.title'))
+- provide(:title, t('.title'))
 - cache 'home_page' do
 
   main.content-main.content-main--wide
     .wrapper-inner
       section.section-start.section-start--how
-        h4.section-start__headline = t 'pages.home.section.how.title'
+        h4.section-start__headline = t '.how.title'
         .section-start__body
-          p = t 'pages.home.section.how.text'
+          p = t '.how.text'
 
       section.section-start.section-start--whom
-        h4.section-start__headline = t 'pages.home.section.whom.title'
+        h4.section-start__headline = t '.whom.title'
         .section-start__body
-          p = t 'pages.home.section.whom.text'
+          p = t '.whom.text'
 
       section.section-start.section-start--why
-        h4.section-start__headline = t 'pages.home.section.why.title'
+        h4.section-start__headline = t '.why.title'
         .section-start__body
-          p = t 'pages.home.section.why.text'
+          p = t '.why.text'

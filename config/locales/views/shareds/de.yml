@@ -1,0 +1,7 @@
+de:
+  shareds:
+    forms:
+      fill_field: "Bitte fülle dieses Feld aus"
+    show:
+      cta_report_errors: |
+        Enthält dieser Eintrag Fehler?

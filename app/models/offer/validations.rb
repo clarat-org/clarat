@@ -51,12 +51,12 @@ class Offer
           errors.add(
             :location_id,
             I18n.t(
-              'validations.offer.location_fits_organization.location_error'
+              'offer.validations.location_fits_organization.location_error'
             ))
           errors.add(
             :organizations,
             I18n.t(
-              'validations.offer.location_fits_organization.organization_error'
+              'offer.validations.location_fits_organization.organization_error'
             ))
         end
       end

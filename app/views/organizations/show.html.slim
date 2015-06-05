@@ -10,12 +10,12 @@
     .section-wrapper-major
 
       section.section-content.section-content--who
-        h3.section-content__title = t 'organizations.show.who'
+        h3.section-content__title = t '.who'
         .section-content__body.section-content--what
           p== @organization.description_html
       - if @organization.offers.approved.any?
         section.section-content.section-content--alloffers
-          h3.section-content__title = t 'organizations.show.offers_all'
+          h3.section-content__title = t '.offers_all'
           .section-content__body
             ul.Listing-offers__list
               - @organization.offers.approved.order('name ASC').each do |offer|
@@ -30,7 +30,7 @@
         - cache [location, 'organization_show_text'] do
 
           section.section-content.section-content--where
-            h3.section-content__title = t 'organizations.show.where'
+            h3.section-content__title = t '.where'
             .section-content__body
               /! http://microformats.org/wiki/adr start
               .adr
@@ -60,7 +60,7 @@
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-exclamation-triangle
-        = t 'shared.show.cta_report_errors'
+        = t 'shareds.show.cta_report_errors'
 
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true

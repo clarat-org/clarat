@@ -2,7 +2,7 @@
 class LaterDateValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
     if value && value <= Time.now.end_of_day
-      record.errors[attribute] = I18n.t('validations.shared.later_date')
+      record.errors[attribute] = I18n.t('shared.validations.later_date')
     end
   end
 end

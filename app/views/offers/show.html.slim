@@ -1,4 +1,4 @@
-- provide(:title, @offer.name )
+- provide :title, @offer.name
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
     - cache [@offer, 'page_header'] do
@@ -67,6 +67,11 @@
         = t 'shareds.show.cta_report_errors'
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
+
+/ mobile share buttons
+.shariff data={ lang: I18n.locale, \
+                services: '["facebook", "twitter", "whatsapp", "mail"]', \
+                'twitter-via' => 'claratpunktorg' }
 
 / - content_for :view_specific_scripts do
 /   = javascript_include_tag "gmaps_search_results.js"

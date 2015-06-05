@@ -20,6 +20,7 @@ about supported directives.
 # = require i18n
 # = require i18n/translations
 # = require hogan
+# = require shariff
 # = require_tree ./templates
 #
 # = require setup

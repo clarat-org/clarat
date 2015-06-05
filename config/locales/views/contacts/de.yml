@@ -1,0 +1,15 @@
+de:
+  contacts:
+    new:
+      contact_heading: "Kontakt aufnehmen"
+    create:
+      success: "Die Nachricht wurde erfolgreich abgeschickt."
+    shared:
+      new:
+        name_placeholder: "Name (Pflicht)"
+        email_placeholder:
+          required:
+            :true: "E-Mail Adresse (Pflicht)"
+            :false: "E-Mail Adresse (Optional)"
+        message_placeholder: "Nachricht eingeben (Pflicht)"
+        send: "Abschicken"

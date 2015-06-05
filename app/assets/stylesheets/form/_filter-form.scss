@@ -124,9 +124,7 @@
 
 .filter-form__switch {
   @extend %roboto_bold;
-  position: absolute;
-  top: 55px;
-  left: 0;
+  position: relative;
   display: block;
   padding: 0 15px;
   width: 100%;
@@ -138,8 +136,13 @@
   line-height: 30px;
   cursor: pointer;
 
+  &[aria-collapsed="false"] {
+    margin-bottom: 20px;
+    background: $brand_blue image-url('ico_fieldset_expand--ondark.svg') no-repeat calc(100% - 15px) center;
+  }
 
   &[aria-collapsed="true"] {
+    margin-bottom: 0;
     background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
   }
 }

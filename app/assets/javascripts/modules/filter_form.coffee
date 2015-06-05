@@ -26,12 +26,12 @@ initFilterForm = ->
 
     # Prepend expander button dynamically
     if !$('.filter-form__expander').length
-      $filterForm.prepend '<div class="filter-form__expander" role="button" aria-expanded="false">' + expandLabel + '</div>'
+      $filterForm.prepend '<div class="filter-form__expander" role="button" aria-collapsed="true">' + expandLabel + '</div>'
 
       if offer_filter_open == "true"
         $('.filter-form__expander')
           .html collapseLabel
-          .attr 'aria-expanded', true
+          .attr 'aria-collapsed', false
 
     # var $expander here, after creation
     $expander = $('.filter-form__expander')
@@ -55,7 +55,7 @@ initFilterForm = ->
 
         $expander
             .html expandLabel
-            .attr 'aria-expanded', false
+            .attr 'aria-collapsed', true
 
         $filterForm
               .css 'height', startHeight
@@ -111,7 +111,7 @@ initFilterForm = ->
 
     if !$('.filter-form__switch').length  &&  ($(window).width() <= 440)
       $('.template--offers-index').find('.content-main').prepend(
-        $('<button class="filter-form__switch" aria-expanded="false">' +
+        $('<button class="filter-form__switch" aria-collapsed="false">' +
           label + '</button>')
       )
 

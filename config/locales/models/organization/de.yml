@@ -1,6 +1,7 @@
 de:
   organization:
     validations:
-      approved_by_creator: "kann nicht von dem/der Ersteller/in gesetzt werden"
+      approved_by_creator: 'kann nicht von dem/der Ersteller/in gesetzt werden'
       incomplete: |
         kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
+      no_hq_location: 'Es muss mindestens eine HQ-Location zugeorndet werden'

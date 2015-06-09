@@ -46,7 +46,9 @@ class Organization < ActiveRecord::Base
   validates :approved, approved: true
 
   def before_approve
-    true
+    unless locations.where(hq: true).count == 1
+      errors.add(:base, I18n.t('organization.validations.hq_location'))
+    end
   end
 
   # Statistics
@@ -78,5 +80,9 @@ class Organization < ActiveRecord::Base
       title: name,
       address: location.address
     }
+  end
+
+  def homepage
+    websites.where(host: 'own').first
   end
 end

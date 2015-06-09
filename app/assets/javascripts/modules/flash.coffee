@@ -1,6 +1,13 @@
-flashHandler = ->
-  $('body').on 'click', '.Flash-message__close', (e) ->
-    e.target.parentElement.remove()
+Clarat.Flash =
+  initializeCloseClickHandler: ->
+    $('body').on 'click', '.Flash-message__close', (e) ->
+      e.target.parentElement.remove()
 
-$(document).ready flashHandler
-$(document).on 'page:load', flashHandler
+  createFlash: (type, message)->
+    $('#Flash-messages').append(
+      HoganTemplates['flash_message'].render
+        type: type
+        message: message
+    )
+$(document).ready Clarat.Flash.initializeCloseClickHandler
+$(document).on 'page:load', Clarat.Flash.initializeCloseClickHandler

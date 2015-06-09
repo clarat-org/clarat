@@ -47,6 +47,34 @@ feature 'Admin Backend' do
       end
     end
 
+    scenario 'Try to approve organization with/out hq-location' do
+      orga = FactoryGirl.create :organization, completed: true
+      # orga.update_column :approved, false
+      location = FactoryGirl.create :location, organization: orga, hq: false
+      visit rails_admin_path
+
+      # 1: With a non-hq locaton
+      click_link 'Organisationen', match: :first
+      click_link 'Bearbeiten', match: :first
+      check 'organization_approved'
+      click_button 'Speichern'
+      page.must_have_content 'Es muss genau eine HQ-Location zugeorndet werden'
+
+      # 2: With a hq location
+      location.update_column :hq, true
+      login_as superuser
+      click_button 'Speichern'
+      page.must_have_content 'Organisation wurde erfolgreich aktualisiert'
+
+      # 3: With two hq locations
+      FactoryGirl.create :location, organization: orga, hq: true
+      orga.update_column :approved, false
+      click_link 'Bearbeiten', match: :first
+      check 'organization_approved'
+      click_button 'Speichern'
+      page.must_have_content 'Es muss genau eine HQ-Location zugeorndet werden'
+    end
+
     scenario 'Try to create offer with a organization/location mismatch' do
       location = FactoryGirl.create(:location, name: 'testname')
 

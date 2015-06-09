@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
+###########
+# General #
+###########
+
+gem 'bundler', '>= 1.8.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 gem 'rails-observers' # observers got extracted since rails 4
@@ -8,12 +14,16 @@ gem 'rails-observers' # observers got extracted since rails 4
 # Translations
 gem 'rails-i18n'
 
-# Plattforms Ruby
+# Platforms Ruby
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
   gem 'pg', group: [:production, :staging, :development] # postgres
 end
+
+##############
+# JavaScript #
+##############
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -22,9 +32,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library & plugins
-gem 'jquery-rails'
-
-gem 'qtip2-jquery-rails'
+# gem 'jquery-rails'
+#
+# gem 'qtip2-jquery-rails'
 
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
@@ -34,11 +44,34 @@ group :assets do
   gem 'haml'
 end
 
-# Templating with slim
-gem 'slim-rails'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-lodash'
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-qtip2'
+end
+
+#######
+# CSS #
+#######
+
+gem 'font-awesome-rails'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.2'
+
+# More styling
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+
+#########
+# Other #
+#########
+
+# Templating with slim
+gem 'slim-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -110,23 +143,21 @@ gem 'geocoder'
 # email
 gem 'gibbon'
 
-# CSS
-gem 'font-awesome-rails'
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
-
-# More styling
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
-
-# For Heroku & Add-Ons
+########################
+# For Heroku & Add-Ons #
+########################
 
 gem 'newrelic_rpm'
+gem 'dalli' # Memcached Client
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
+  gem 'heroku-deflater' # gzip compression
 end
+
+#####################
+# Dev/Test Specific #
+#####################
 
 group :development do
   # startup

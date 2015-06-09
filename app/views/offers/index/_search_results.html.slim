@@ -1,9 +1,9 @@
 = render 'offers/index/advanced_search', search_cache: search_cache
 
 .Listing-results
-  = link_to '#categories', class: 'jump-to-categories' do
-    i.fa.fa-filter
-    = I18n.t('offers.index.navigate_to_categories')
+  /= link_to '#categories', class: 'jump-to-categories' do
+  /  i.fa.fa-filter
+  /  = I18n.t('offers.index.navigate_to_categories')
 
   - if search_cache.remote_focussed?
     - main_offers = remote_offers
@@ -11,10 +11,10 @@
     - main_offers = personal_offers
     - if remote_offers.any?
       h2.Listing-results__headline
-        | Telefon- und Onlineberatungen
+        = t '.remote_offers', count: search.remote_hits.nbHits
         - if remote_offers[1]
           / If more than one national offer
-          =< link_to '(Mehr…)',
+          =< link_to t('.more'),
                      offers_path(search_form: search_cache.remote_focus)
 
       ul.Listing-results__list

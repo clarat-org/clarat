@@ -3,24 +3,29 @@ class OffersController < ApplicationController
   respond_to :html
 
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_categories, only: [:index]
   before_action :init_search_cache, only: [:index]
-
-  def index
-    assign_search_result_instance_variables
-    test_location_unavailable
-    set_position
-    prepare_gmaps_variables @personal_offers if @personal_offers
-    respond_to do |format|
-      format.html do
-        template = request.xhr? ? :index_xhr : :index
-        render template, layout: !request.xhr?
-      end
-    end
-  end
 
   rescue_from InvalidLocationError do |_error|
     render 'invalid_location', status: 404
+  end
+
+  # TODO: can you do this with plain routing?
+  def index
+    if request.xhr?
+      index_xhr
+    else
+      @category_tree ||= Category.sorted_hash_tree
+      set_position
+      prepare_location_unavailable
+      render :index
+    end
+  end
+
+  # pseudo action, handler for when index is called via ajax
+  def index_xhr
+    fetch_and_assign_search_results_to_instance_variables
+    prepare_gmaps_variables @personal_offers if @personal_offers
+    render :index_xhr, layout: false
   end
 
   def show
@@ -41,16 +46,11 @@ class OffersController < ApplicationController
   end
 
   # general variable assignments: search for results, get categories, etc.
-  def assign_search_result_instance_variables
+  def fetch_and_assign_search_results_to_instance_variables
     @personal_offers = search.personal_hits
     @remote_offers = search.remote_hits
     @facets = search.facets_hits
     @nearby = search.nearby_hits
-  end
-
-  def set_categories
-    @category_tree ||= Category.hash_tree
-                       .sort_by { |tree| tree.first.icon || '' }
   end
 
   # Warning: cannot be memoized
@@ -68,7 +68,7 @@ class OffersController < ApplicationController
     @search ||= SearchManager.new(@search_cache, page: page)
   end
 
-  # Set geolocation variables for map
+  # Set geolocation variables to cookie
   def set_position
     @position = @search_cache.geolocation
     if @search_cache.search_location == I18n.t('conf.current_location')
@@ -83,19 +83,12 @@ class OffersController < ApplicationController
     end
   end
 
-  # Deal with location fallback and no nearby search results
-  def test_location_unavailable
-    # See if area is covered and if not instantiate an UpdateRequest
-    if @nearby.empty?
-      @update_request = UpdateRequest.new(
-        search_location: @search_cache.search_location
-      )
-    end
-
-    # Alert user when we used default location because they didn't give one
-    if @search_cache.location_fallback
-      flash[:alert] = I18n.t('offers.index.location_fallback')
-    end
+  # prepare an UpdateRequest that will be displayed if the user entered a search
+  # that has no nearby_hits
+  def prepare_location_unavailable
+    @update_request = UpdateRequest.new(
+      search_location: @search_cache.search_location
+    )
   end
 
   ### /INDEX ###

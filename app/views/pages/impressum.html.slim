@@ -1,4 +1,17 @@
-- provide(:title, 'Impressum')
-main.content-main.content-main--wide
-  .wrapper-inner
-    h1 = t 'pages.impressum.title'
+- provide :title, t('.title')
+- cache 'impressum_page' do
+
+  main.content-main.content-main--wide
+    .wrapper-inner
+      h1 = t '.heading'
+
+      p = t 'pages.shared.address.name'
+      p = t 'pages.shared.address.name2'
+      p = t 'pages.shared.address.street'
+      p = t 'pages.shared.address.zip_city'
+      p = t 'pages.shared.address.telephone'
+      p = t 'pages.shared.address.fax'
+      p = link_to('mail@clarat.org', 'mailto:mail@clarat.org')
+      p = link_to root_url
+
+      p = t '.responsible_html'

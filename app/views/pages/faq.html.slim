@@ -1,4 +1,6 @@
-- provide(:title, 'Häufige Fragen')
-main.content-main.content-main--wide
-  .wrapper-inner
-    h1 = t 'pages.faq.title'
+- provide(:title, t('.title'))
+- cache 'faq_page' do
+
+  main.content-main.content-main--wide
+    .wrapper-inner
+      h1 = t '.heading'

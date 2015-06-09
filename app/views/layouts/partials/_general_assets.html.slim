@@ -1,0 +1,33 @@
+/ Stylesheets
+= stylesheet_link_tag 'application', media: 'all',
+                                     'data-turbolinks-track' => true
+= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css'\
+                      '/font-awesome.min.css'
+
+/ JavaScripts
+
+/ Prepare I18n JS Setup
+javascript:
+  document.locale = "#{I18n.locale}";
+
+= javascript_include_tag 'vendor/modernizr.custom.js'
+= javascript_include_tag 'application', 'data-turbolinks-track' => true
+= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
+                         'places&language=de&callback=Clarat.GMaps.initialize'\
+                         '&sensor=false&v=3.exp',
+                         cache: 'google_maps_apiv3'
+
+
+/ Browser dependent code
+
+/[if lt IE 9]
+  = javascript_include_tag '//html5shiv.googlecode.com/svn/trunk/html5.js'
+  = javascript_include_tag asset_url('vendor/selectivizr-min.js')
+/[if !IE]
+  javascript:
+    if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+      document.documentElement.className += ' ie10';
+    }
+    if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
+      document.documentElement.className += ' ie11';
+    }

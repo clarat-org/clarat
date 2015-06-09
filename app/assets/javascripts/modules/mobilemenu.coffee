@@ -11,15 +11,12 @@ initMobileMenu = ->
     return
 
   if smartphone
-
     $inputQuery.click ->
       $inputLocationContainer.toggleClass "is-visible"
       $submit.toggleClass "is-enlarged"
       $distributor.toggleClass "is-enlarged"
 
-
 $(document).on 'page:load', initMobileMenu
+$(document).on 'ajax_loaded', initMobileMenu
 $(document).ready initMobileMenu
 $(window).resize initMobileMenu
-
-

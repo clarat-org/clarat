@@ -1,5 +1,5 @@
 class OfferPolicy < ApplicationPolicy
   def show?
-    @record.approved?
+    @record.approved? || (@user && @user.role != 'standard')
   end
 end

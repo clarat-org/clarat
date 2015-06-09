@@ -21,4 +21,19 @@ describe OffersController do
       assert_redirected_to controller: 'pages', action: 'not_found'
     end
   end
+
+  describe "GET 'show'" do
+    it 'should work' do
+      get :index, locale: 'de', search_form: { query: '' }
+      assert_response :success
+    end
+
+    it 'should work with "my location"' do
+      get :index, locale: 'de', search_form: {
+        search_location: I18n.t('conf.current_location'),
+        generated_geolocation: I18n.t('conf.default_latlng')
+      }
+      assert_response :success
+    end
+  end
 end

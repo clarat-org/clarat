@@ -27,7 +27,28 @@ feature 'Offer display' do
 
     visit offer_path offer
     page.body.must_match(
-      %r{\<p\>A \<dfn class="JS-tooltip" data-id="1"\>complex\</dfn\> sentence.\</p\>}
+      %r{\<p\>A \<dfn class='JS-tooltip' data-id='1'\>complex\</dfn\> sentence.\</p\>}
+    )
+  end
+
+  scenario 'Muliple contact persons are shown in the right order' do
+    offer = FactoryGirl.create :offer, :approved
+    offer.contact_people << FactoryGirl.create(
+      :contact_person, :just_telephone, organization: offer.organizations.first
+    )
+    visit offer_path offer
+    page.body.must_match(
+      '030  12 34 56</a><br /></li></ul>'
+    )
+  end
+
+  scenario 'With a PDF website' do
+    offer = FactoryGirl.create :offer, :approved
+    offer.websites = []
+    offer.websites << FactoryGirl.create(:website, :pdf)
+    visit offer_path offer
+    page.body.must_match(
+      '<a href="http://www.t.com/t.pdf" target="_blank">Webseite (PDF)</a>'
     )
   end
 end

@@ -42,7 +42,7 @@ describe Offer do
         subject.expires_at = Time.now
         subject.valid?
         subject.errors.messages[:expires_at].must_include(
-          I18n.t('validations.shared.later_date')
+          I18n.t('shared.validations.later_date')
         )
       end
     end
@@ -76,20 +76,6 @@ describe Offer do
       end
     end
 
-    describe '#contact_details?' do
-      it 'should return true when offer has a website' do
-        offer.websites = [Website.new]
-        offer.contact_details?.must_equal true
-      end
-      it 'should return true when offer has a contact person' do
-        offer.contact_people = [ContactPerson.new]
-        offer.contact_details?.must_equal true
-      end
-      it 'should return false when no contact details are available' do
-        offer.contact_details?.must_equal false
-      end
-    end
-
     describe '#_tags' do
       it 'should return unique categories with ancestors of an offer' do
         offers(:basic).categories << categories(:sub1)
@@ -113,7 +99,7 @@ describe Offer do
       it 'should return a string when there are multiple organizations' do
         offers(:basic).organizations << FactoryGirl.create(:organization)
         offers(:basic).organization_display_name.must_equal(
-          I18n.t('offers.index.cooperation')
+          I18n.t('offer.organization_display_name.cooperation')
         )
       end
     end

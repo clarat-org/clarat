@@ -1,27 +1,30 @@
 - provide(:title, @offer.name )
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
-    header.page-detail__header
-      h2.page-detail__title= @offer.name
-      /.page-detail__icons
-      /  - @offer.categories.mains.each do |main_tag|
-      /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
+    - cache [@offer, 'page_header'] do
+
+      header.page-detail__header
+        h2.page-detail__title= @offer.name
+        /.page-detail__icons
+        /  - @offer.categories.mains.each do |main_tag|
+        /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
 
     / Left side (in desktop)
     .section-wrapper-major
+      - cache [@offer, 'general_info'] do
 
-      / What's it all about?
-      section.section-content.section-content--what
-        h3.section-content__title = t 'offers.show.what'
-        .section-content__body
-          == @offer.description_html
+        / What's it all about?
+        section.section-content.section-content--what
+          h3.section-content__title = t '.what'
+          .section-content__body
+            == @offer.description_html
 
-      / What to do next?
-      section.section-content.section-content--nextsteps
-        h3.section-content__title
-          = t 'offers.show.next_steps'
-        .section-content__body
-          == @offer.next_steps_html
+        / What to do next?
+        section.section-content.section-content--nextsteps
+          h3.section-content__title
+            = t '.next_steps'
+          .section-content__body
+            == @offer.next_steps_html
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer
@@ -34,7 +37,7 @@
 
       section.section-content.section-content--whos-offering
         h3.section-content__title
-          = t 'offers.show.who.title'
+          = t '.who'
 
         .section-content__body
 
@@ -44,23 +47,26 @@
                 span.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
 
           - if @offer.location
-            = render 'offers/show/who_location', offer: @offer, markers: @markers
+            - cache [@offer.location, 'offer_show_map']
+              = render 'offers/show/who_location', offer: @offer,
+                                                   markers: @markers
 
-            #map-container
-              #map-canvas data={ markers: @markers.to_json }
+              #map-container
+                #map-canvas data={ markers: @markers.to_json }
 
       / When can you contact?
       - if @offer.opening_details?
-        = render 'offers/show/opening_section', offer: @offer
+        - cache [@offer, 'openings'] do
+          = render 'offers/show/opening_section', offer: @offer
 
 
       / Found any mistakes?
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
-        i.fa.fa-pencil-square-o
-        = t 'shared.show.cta_report_errors'
+        i.fa.fa-exclamation-triangle
+        = t 'shareds.show.cta_report_errors'
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-- content_for :view_specific_scripts do
-  = javascript_include_tag "gmaps_search_results.js"
+/ - content_for :view_specific_scripts do
+/   = javascript_include_tag "gmaps_search_results.js"

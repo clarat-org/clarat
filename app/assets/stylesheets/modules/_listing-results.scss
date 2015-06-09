@@ -5,6 +5,21 @@
 // ---------------------------------------------------------------
 
 
+.Listing-results__pending-ajax {
+  text-align: center;
+  font-size: 40px;
+
+  h2 {
+    font-size: 30px;
+    margin: 100px 0 0 0;
+  }
+
+  p {
+    font-size: $base_font_size;
+    margin: 5px 20%;
+  }
+}
+
 .Listing-results__list {
   margin: 0;
   padding: 0;
@@ -22,9 +37,9 @@
 }
 
 .Listing-results__headline {
-  @extend %roboto_regular;
-  font-weight: 400;
+  @extend %roboto_bold;
   margin: 0.5em 0;
+  font-weight: 400;
   font-size: 20px;
 
 }

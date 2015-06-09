@@ -1,5 +1,6 @@
 - provide(:title, @organization.name )
 - location = @organization.location
+- website = @organization.homepage
 .wrapper-inner class="#{'no-location' unless location}"
   main.content-main.content-main--wide
 
@@ -9,52 +10,60 @@
     .section-wrapper-major
 
       section.section-content.section-content--who
-        h3.section-content__title = t 'organizations.show.who'
+        h3.section-content__title = t '.who'
         .section-content__body.section-content--what
           p== @organization.description_html
       - if @organization.offers.approved.any?
         section.section-content.section-content--alloffers
-          h3.section-content__title = t 'organizations.show.offers_all'
+          h3.section-content__title = t '.offers_all'
           .section-content__body
             ul.Listing-offers__list
-              - @organization.offers.approved.each do |offer|
+              - @organization.offers.approved.order('name ASC').each do |offer|
                 li.Listing-offers__listitem
                   = link_to offer.name, offer_path(id: offer)
+                .Listing-offers__address
+                  = offer.location_address
 
     .section-wrapper-minor
 
       - if location
-        section.section-content.section-content--where
-          h3.section-content__title = t 'organizations.show.where'
-          .section-content__body
-            /! http://microformats.org/wiki/adr start
-            .adr
-              p
-                - if location.name?
-                  span.org= location.name
-                  br
-                - if location.addition?
-                  span.extended-address= location.addition
-                  br
-                span.street-address= location.street
-                br
-                span.postal-code=> location.zip
-                span.locality= location.city
-            /! http://microformats.org/wiki/adr end
+        - cache [location, 'organization_show_text'] do
 
-        section.section-content--map
-          .aside-standard__container
-            h5.aside-standard__headline = t 'organizations.show.map_output_searchresult'
-            #map-container
-              #map-canvas data={markers: @markers.to_json}
+          section.section-content.section-content--where
+            h3.section-content__title = t '.where'
+            .section-content__body
+              /! http://microformats.org/wiki/adr start
+              .adr
+                p
+                  - if location.name?
+                    span.org= location.name
+                    br
+                  - if location.addition?
+                    span.extended-address= location.addition
+                    br
+                  span.street-address= location.street
+                  br
+                  span.postal-code=> location.zip
+                  span.locality= location.city
+                - if website
+                  br
+
+                    = link_to website.shorten_url + website.pdf_appendix,
+                      website.url, target: '_blank'
+
+              /! http://microformats.org/wiki/adr end
+              br
+              #map-container
+                #map-canvas data={markers: @markers.to_json}
+
 
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
-        i.fa.fa-pencil-square-o
-        = t 'shared.show.cta_report_errors'
+        i.fa.fa-exclamation-triangle
+        = t 'shareds.show.cta_report_errors'
 
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-- content_for :view_specific_scripts do
-  = javascript_include_tag "gmaps_search_results.js"
+/ - content_for :view_specific_scripts do
+/   = javascript_include_tag "gmaps_search_results.js"

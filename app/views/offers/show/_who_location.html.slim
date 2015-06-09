@@ -1,7 +1,7 @@
 /! http://microformats.org/wiki/adr start
 .adr
   p
-    - if offer.location_name
+    - unless offer.location_name.blank?
       span.org= offer.location_name
       br
     - unless offer.location_addition.blank?
@@ -12,4 +12,5 @@
     span.postal-code=> offer.location_zip
     span.locality= offer.location_city
     br
+
 /! http://microformats.org/wiki/adr end

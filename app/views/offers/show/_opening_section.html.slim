@@ -1,5 +1,5 @@
 section.section-content
-  h3.section-content__title = t 'offers.show.opening_hours'
+  h3.section-content__title = t '.heading'
   .section-content__body
     - if offer.openings.any?
       /! use http://microformats.org/wiki/opening-hours once specified
@@ -7,11 +7,12 @@ section.section-content
         - OpeningHash.new(offer).each_open_day do |day, times|
           tr
             th
-              = t("activerecord.models.opening.#{day}") + ':'
+              = t(".days.#{day}") + ':'
             td dir='ltr'
-              - times.each do |time|
+              - times.sort.each do |time|
                 time.Table__time = time
-                / @todo extend to using https://schema.org/LocalBusiness itemprop="openingHours", datetime attr
+                / @todo extend to using https://schema.org/LocalBusiness
+                / itemprop="openingHours", datetime attr
                 / https://schema.org/openingHours
 
     - if offer.opening_specification? && offer.openings.any?

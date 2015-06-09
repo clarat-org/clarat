@@ -30,16 +30,16 @@ module OffersHelper
       end
     end
 
-    output + " (#{search_cache.search_location})"
+    output + " (#{display_location_for(search_cache)})"
   end
 
   # generate collections for radio buttons from enum arrays
   def i18n_collection values, include_blank = false
     output = values.map do |value|
-      [I18n.t("offers.shared.collection_names.#{value}"), value]
+      [t(".collection_names.#{value}"), value]
     end
     if include_blank
-      output.unshift([I18n.t('offers.shared.collection_names.blank'), nil])
+      output.unshift([t('.collection_names.blank'), nil])
     end
     output
   end
@@ -48,8 +48,8 @@ module OffersHelper
 
   def base_search_results_info_headline search_cache, search
     main_hits = search.personal_hits || search.remote_hits
-    I18n.t(
-      "offers.shared.#{search_cache.contact_type}_offers",
+    t(
+      ".#{search_cache.contact_type}_offers",
       count: main_hits.nbHits
     )
   end
@@ -71,6 +71,14 @@ module OffersHelper
   def remove_query_link search_cache
     link_to offers_path(search_form: search_cache.empty) do
       '<i class="fa fa-times-circle"></i>'.html_safe
+    end
+  end
+
+  def display_location_for search_cache
+    if search_cache.location_fallback
+      t('conf.default_location')
+    else
+      search_cache.search_location
     end
   end
 end

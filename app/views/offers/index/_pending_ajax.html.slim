@@ -1,0 +1,13 @@
+- cache 'pending_ajax' do
+
+  .Listing-results
+    .Listing-results__pending-ajax
+      h2= t '.searching'
+      i.fa.fa-spin.fa-circle-o-notch
+
+- content_for :view_specific_scripts do
+
+  javascript:
+    Clarat.Ajax.replace(
+      $('.content-main'), window.location.href, { historyPush: false }
+    );

@@ -7,16 +7,16 @@ footer.footer-main
         - cache 'footer_links_1' do
 
           .Social-media
-            = link_to 'Google+',
-                      'https://plus.google.com/110429028641743127592/about',
+            = link_to t('.gplus.anchor'),
+                      t('.gplus.href'),
                       target: '_blank',
                       class: 'Social-media__item Social-media__item--googleplus'
-            = link_to 'Twitter',
-                      'https://twitter.com/claratpunktorg',
+            = link_to t('.twitter.anchor'),
+                      t('.twitter.href'),
                       target: '_blank',
                       class: 'Social-media__item Social-media__item--twitter'
-            = link_to 'Facebook',
-                      'https://www.facebook.com/claratpunktorg',
+            = link_to t('.fb.anchor'),
+                      t('.fb.href'),
                       target: '_blank',
                       class: 'Social-media__item Social-media__item--facebook'
 
@@ -27,11 +27,11 @@ footer.footer-main
           nav.nav-site
             ul.nav-site__list
               li.nav-site__listitem
-                = link_to 'Über uns', '/ueber-uns'
+                = link_to t('.about'), '/ueber-uns'
               li.nav-site__listitem
-                = link_to 'Häufige Fragen', '/haeufige-fragen'
+                = link_to t('.faq'), '/haeufige-fragen'
               li.nav-site__listitem
-                = link_to 'Kontakt', new_contact_path
+                = link_to t('.contact'), new_contact_path
 
   - cache 'footer_links_3' do
 
@@ -40,13 +40,13 @@ footer.footer-main
         nav.nav-legal
           ul.nav-legal__list
             li.nav-legal__listitem
-              = link_to 'Impressum', '/impressum'
+              = link_to t('.impressum'), '/impressum'
             li.nav-legal__listitem
-              = link_to 'Rechtliche Hinweise', '/rechtliche-hinweise'
+              = link_to t('.tos'), '/rechtliche-hinweise'
             li.nav-legal__listitem
-              = link_to 'Datenschutzhinweise', '/datenschutzhinweise'
+              = link_to t('.privacy'), '/datenschutzhinweise'
             li.nav-legal__listitem
-              / TODO: Redesign and refactor
+              / TODO: Refactor or remove after translation testing
               #google_translate_element
               javascript:
                 function googleTranslateElementInit() {

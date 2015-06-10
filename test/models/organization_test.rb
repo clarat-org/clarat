@@ -52,8 +52,4 @@ describe Organization do
       it { subject.must have_many(:parents).through :parent_connections }
     end
   end
-
-  describe 'methods' do
-    it { subject.before_approve.must_equal true }
-  end
 end

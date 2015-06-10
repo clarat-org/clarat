@@ -29,9 +29,10 @@ class Ajax
         # update container
         container.html data
 
-        # update URL
+        # update URL & inform analytics
         if options.historyPush
           history.pushState { turbolinks: true, url: targetURL }, '', targetURL
+          Clarat.Analytics.pageView()
 
         # remove appropriate element from stack & finish
         that.pop targetURL, container

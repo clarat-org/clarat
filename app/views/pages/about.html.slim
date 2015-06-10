@@ -1,11 +1,11 @@
-- provide(:title, 'Über Uns' )
+- provide(:title, t('.title') )
 - cache 'about_page' do
 
   main.content-main.content-main--wide
     .wrapper-inner
-      h2 = t 'pages.about.title'
+      h2 = t '.heading'
 
-      p clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir seit vielen Jahren Projekte der Kinder- und Jugendförderung. Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden, welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche und Familien sein, die wirklich Hilfe brauchen? Die Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren: Einfach Hilfe finden. Für alle. Überall.
+      p = t '.text'
 
 
       .section-team

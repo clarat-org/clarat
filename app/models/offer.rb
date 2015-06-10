@@ -96,7 +96,7 @@ class Offer < ActiveRecord::Base
 
   def organization_display_name
     if organizations.count > 1
-      I18n.t 'offers.index.cooperation'
+      I18n.t 'offer.organization_display_name.cooperation'
     else
       organizations.first.name
     end

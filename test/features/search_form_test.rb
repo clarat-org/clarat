@@ -18,25 +18,27 @@ feature 'Search Form' do
     WebMock.disable!
   end
 
-  # scenario 'Search with results but none nearby shows overlay' do
-  #   WebMock.enable!
-  #   FactoryGirl.create :offer, name: 'bazfuz'
-  #   Algolia.expects(:multiple_queries).returns(
-  #     AlgoliaStubber.filled_response_stub('bazfuz', ['bazfuz'])
-  #   )
-  #   SearchResults.any_instance.expects(:empty?).returns(true)
-  #
-  #   visit root_path
-  #   fill_in 'search_form_query', with: 'bazfuz'
-  #   fill_in 'search_form_search_location', with: 'Foobar'
-  #   with_xhr do
-  #     find('.main-search__submit').click
-  #   end
-  #   page.must_have_content 'Ein Vor-Ort-Angebot'
-  #
-  #   page.must_have_content I18n.t 'offers.index.unavailable_location_modal'
-  #   WebMock.disable!
-  # end
+  scenario 'Search with results but none nearby shows overlay' do
+    WebMock.enable!
+    FactoryGirl.create :offer, name: 'bazfuz'
+    Algolia.expects(:multiple_queries).returns(
+      AlgoliaStubber.filled_response_stub('bazfuz', ['bazfuz'])
+    )
+    SearchResults.any_instance.expects(:empty?).returns(true)
+
+    visit root_path
+    fill_in 'search_form_query', with: 'bazfuz'
+    fill_in 'search_form_search_location', with: 'Foobar'
+    with_xhr do
+      find('.main-search__submit').click
+    end
+
+    page.must_have_content 'Ein Vor-Ort-Angebot'
+    Capybara.ignore_hidden_elements = false
+    page.must_have_content "Clarat.Modal.open('#unavailable_location_overlay');"
+    Capybara.ignore_hidden_elements = true
+    WebMock.disable!
+  end
 
   scenario 'Toggle category filters in search results' do
     WebMock.enable!
@@ -68,14 +70,23 @@ feature 'Search Form' do
 
     # test non-xhr part
     visit root_path
+    fill_in 'search_form_query', with: 'foo'
+    fill_in 'search_form_search_location', with: 'Foobar'
     find('.main-search__submit').click
     click_link 'chunky bacon'
-    current_url.must_match(
-      /search_form\[category\]=chunky\+bacon/
-    )
+    current_url.must_match(/search_form\[category\]=chunky\+bacon/)
     # find_link('chunky bacon')[:href].wont_match(
     #   /search_form%5Bcategory%5D=chunky\+bacon/
     # )
+
+    # test xhr part
+    with_xhr do
+      visit current_url # reload
+      # test for category in info title
+      page.must_have_content(
+        '2 Vor-Ort-Angebote in chunky bacon: „foo“ (Foobar)'
+      )
+    end
     WebMock.disable!
   end
 
@@ -143,13 +154,24 @@ feature 'Search Form' do
     )
   end
 
-  # scenario 'Navigating to category without a given location uses default' do
-  #   WebMock.enable!
-  #   visit root_path
-  #   fill_in 'search_form_search_location', with: ''
-  #
-  #   click_link 'main1'
-  #   page.must_have_content I18n.t 'offers.index.location_fallback'
-  #   WebMock.disable!
-  # end
+  scenario 'Navigating to category without a given location uses default' do
+    WebMock.enable!
+    visit root_path
+    fill_in 'search_form_search_location', with: ''
+
+    # test non-xhr part
+    click_link 'main1'
+    Capybara.ignore_hidden_elements = false
+    page.must_have_content I18n.t('offers.index.location_fallback')[0..-15]
+    # there is an apostrophy that appears as &#39; so we have to cut the string
+    Capybara.ignore_hidden_elements = true
+
+    # test xhr part
+    with_xhr do
+      visit current_url # reload
+      page.must_have_content 'Keine Vor-Ort-Angebote in main1 (Berlin)'
+    end
+
+    WebMock.disable!
+  end
 end

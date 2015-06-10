@@ -1,0 +1,10 @@
+de:
+  subscriptions:
+    create:
+      success: |
+        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
+        Adresse gesendet.
+    shared:
+      new:
+        placeholder: "E-Mail Adresse"
+        button: "Newsletter abonnieren"

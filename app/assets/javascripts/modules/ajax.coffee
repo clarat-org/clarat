@@ -15,7 +15,7 @@ class Ajax
   ### PUBLIC METHODS ###
 
   replace: (container, targetURL, options = {}) ->
-    options = _.merge @defaultOptions, options
+    options = _.merge _.clone(@defaultOptions), options
     that = this
 
     container.addClass 'Ajax'

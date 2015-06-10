@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="93px" height="93px" viewBox="0 0 93 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch Beta 3.2 (9954) - http://www.bohemiancoding.com/sketch -->
-    <title>Akut 2</title>
-    <desc>Created with Sketch Beta.</desc>
+<svg width="108px" height="108px" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>picto_crisis</title>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Startseite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Slice-Start" sketch:type="MSArtboardGroup" transform="translate(-404.000000, -621.000000)">
-            <g id="Icons-+-Iconlabels" sketch:type="MSLayerGroup" transform="translate(404.000000, 622.000000)">
-                <g id="Icons" transform="translate(3.000000, 0.000000)" sketch:type="MSShapeGroup">
-                    <g id="Akut-2" transform="translate(0.000000, 2.000000)">
-                        <g id="Group">
-                            <circle id="Oval" stroke="#F4B528" stroke-width="3" fill="#FFFFFF" cx="43.107" cy="43.107" r="43.107"></circle>
-                            <path d="M64.125,37.716 L35.469,41.451 L52.624,14.364 L37.299,17.075 L23.473,49.159 L50.319,46.263 L40.724,63.868 L37.891,62.466 L36.368,74.822 L45.271,66.121 L42.958,64.974 L64.125,37.716 Z" id="Shape" fill="#41311A"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-954.000000, -653.000000)">
+            <g id="picto_crisis" sketch:type="MSLayerGroup" transform="translate(956.000000, 655.000000)">
+                <g id="Startseite" sketch:type="MSShapeGroup">
+                    <g id="Slice-Start">
+                        <g id="Icons-+-Iconlabels">
+                            <g id="Icons">
+                                <g id="Akut-2">
+                                    <g id="Group">
+                                        <circle id="Oval" stroke="#40301A" stroke-width="3" fill="#40301A" cx="52.0256897" cy="52.0256897" r="52.0256897"></circle>
+                                        <path d="M77.3922414,45.5193103 L42.8074138,50.027069 L63.5117241,17.3358621 L45.0160345,20.6077586 L28.3294828,59.3298276 L60.7298276,55.8346552 L49.1496552,77.082069 L45.7305172,75.39 L43.8924138,90.3024138 L54.6374138,79.8012069 L51.8458621,78.4168966 L77.3922414,45.5193103 L77.3922414,45.5193103 Z" id="Shape" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
                         </g>
                     </g>
                 </g>

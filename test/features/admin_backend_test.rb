@@ -58,7 +58,7 @@ feature 'Admin Backend' do
       click_link 'Bearbeiten', match: :first
       check 'organization_approved'
       click_button 'Speichern'
-      page.must_have_content 'Es muss genau eine HQ-Location zugeorndet werden'
+      page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
 
       # 2: With a hq location
       location.update_column :hq, true
@@ -72,7 +72,7 @@ feature 'Admin Backend' do
       click_link 'Bearbeiten', match: :first
       check 'organization_approved'
       click_button 'Speichern'
-      page.must_have_content 'Es muss genau eine HQ-Location zugeorndet werden'
+      page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
     end
 
     scenario 'Try to create offer with a organization/location mismatch' do

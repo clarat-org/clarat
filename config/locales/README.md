@@ -98,7 +98,10 @@ More General Guidelines
 * View translations have a pluralized root name (like `users`). This is also
   true when using the "shared" namespace, so it will be `views/shareds/en.yml`.
 
-
+* The default root translation file (like `config/locales/en.yml`) should only
+  be used for strings that are specific to the app (i.e. don't belong in
+  `gems/`) and transcend model and view code. Usually this means language
+  specific configurations.
 
 Q&A Guidelines
 --------------------------------------------------------------------------------

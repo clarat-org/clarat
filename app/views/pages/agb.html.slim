@@ -1,7 +1,7 @@
-- provide(:title, 'Rechtliche Hinweise' )
+- provide(:title, t('.title') )
 - cache 'agb_page' do
 
   main.content-main.content-main--wide
     .wrapper-inner
-      h1 = t 'pages.agb.title'
-      = t 'pages.agb.text'
+      h1 = t '.heading'
+      = t '.text_html'

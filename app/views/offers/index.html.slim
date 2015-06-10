@@ -5,7 +5,7 @@
 
 
   = modal_for 'unavailable_location_overlay', autoopen: false do
-    p= I18n.t 'offers.index.unavailable_location_modal'
+    p= t '.unavailable_location_modal'
     = render '/update_requests/new', update_request: @update_request
 
   = render 'offers/index/categories_sidebar', category_tree: @category_tree,
@@ -17,6 +17,4 @@
   - content_for :view_specific_scripts do
 
     javascript:
-      Clarat.Flash.createFlash(
-        'alert', "#{j I18n.t('offers.index.location_fallback')}"
-      );
+      Clarat.Flash.createFlash('alert', "#{j t('.location_fallback')}");

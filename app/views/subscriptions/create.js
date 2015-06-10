@@ -5,6 +5,6 @@ $('body').prepend(
   "<%=
     j render 'layouts/partials/flash',
              type: 'success',
-             content: I18n.t('flash.subscription.success')
+             content: t('.success')
   %>"
 );

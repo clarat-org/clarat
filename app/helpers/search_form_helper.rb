@@ -4,7 +4,7 @@ module SearchFormHelper
   end
 
   def custom_validity_js i18n_selector
-    content = I18n.t("shared.forms.#{i18n_selector}")
+    content = t("shareds.forms.#{i18n_selector}")
     "this.setCustomValidity('#{j(content)}')"
   end
 end

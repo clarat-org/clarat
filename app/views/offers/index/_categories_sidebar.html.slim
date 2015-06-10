@@ -1,7 +1,7 @@
 .Categories#categories
 
   .Categories__show-all
-    = link_to I18n.t('offers.index.all_categories'),
+    = link_to t('.all_categories'),
             offers_path(search_form: search_cache.category_focus(''))
 
   = render 'offers/index/categories_nest', set: category_tree, facets: facets,

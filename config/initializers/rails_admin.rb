@@ -185,6 +185,7 @@ RailsAdmin.config do |config|
       field :approved
       field :creator
       field :expires_at
+      field :approved_at
       field :organizations do
         searchable :name
       end

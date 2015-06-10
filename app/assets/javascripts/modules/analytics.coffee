@@ -7,4 +7,6 @@ Clarat.Analytics =
         metric1: place.formatted_address
       )
   pageView: ->
+    console.log 'sending pageview'
+    console.log location.href
     ga?('send', 'pageview')

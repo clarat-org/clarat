@@ -39,7 +39,10 @@ de:
         encounters:
           personal: "Persönlich"
           hotline: "Telefonisch"
-          online: "Online"
+          online: "TODO! (Online)" # TODO: remove later, see #302
+          email: "Email"
+          chat: "Chat"
+          forum: "Forum"
 
       pending_ajax:
         searching: "Suche…"

@@ -85,7 +85,7 @@ FactoryGirl.create :offer, :approved, approved_by: user,
                                       area: berlin
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweiter Chat',
-                                      encounter: 'online',
+                                      encounter: 'chat',
                                       area: schland
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweite Hotline',

@@ -59,6 +59,8 @@ describe Offer do
       it { subject.must have_and_belong_to_many :audience_filters }
       it { subject.must have_and_belong_to_many :age_filters }
       it { subject.must have_and_belong_to_many :openings }
+      it { subject.must have_many :offer_relations }
+      it { subject.must have_many(:related_offers).through :offer_relations }
       it { subject.must have_many :hyperlinks }
       it { subject.must have_many :websites }
     end

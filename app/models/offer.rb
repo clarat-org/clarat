@@ -10,8 +10,10 @@ class Offer < ActiveRecord::Base
   include Creator, Approvable, CustomValidatable
 
   # Associtations
+
   belongs_to :location, inverse_of: :offers
   belongs_to :area, inverse_of: :offers
+
   has_and_belongs_to_many :categories
   has_and_belongs_to_many :filters
   has_and_belongs_to_many :language_filters,
@@ -25,20 +27,30 @@ class Offer < ActiveRecord::Base
                           join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
+
+  has_many :offer_relations
+  has_many :related_offers, source: :related, through: :offer_relations
+  has_many :inverse_offer_relations, class_name: 'OfferRelation',
+                                     foreign_key: 'related_id'
+  has_many :inverse_related_offers, source: :offer,
+                                    through: :inverse_offer_relations
+
   has_many :contact_person_offers, inverse_of: :offer
   has_many :contact_people, through: :contact_person_offers
+
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
-  # Attention: former has_one :organization, through: :locations
-  # but there can also be offers without locations
+
   has_many :hyperlinks, as: :linkable
   has_many :websites, through: :hyperlinks
 
   # Enumerization
+
   extend Enumerize
   enumerize :encounter, in: %w(personal hotline email chat forum)
 
   # Friendly ID
+
   extend FriendlyId
   friendly_id :slug_candidates, use: [:slugged]
 
@@ -50,6 +62,7 @@ class Offer < ActiveRecord::Base
   end
 
   # Scopes
+
   scope :approved, -> { where(approved: true) }
 
   # Methods

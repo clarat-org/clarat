@@ -252,6 +252,8 @@ RailsAdmin.config do |config|
     field :keywords do
       inverse_of :offers
     end
+    field :related_offers
+    field :inverse_related_offers
     field :expires_at
     field :completed
     field :approved

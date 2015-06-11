@@ -10,8 +10,10 @@
 
   // Header ######################################
 
-  .header-main--wide {
-    height: 375px; // smaller height, @ToDo refactoring into container with a certain ratio by paddding-bottom: 39.5833333%
+  .header-main--wide,
+  .header-main__foreground {
+    height: 375px; // smaller height, @ToDo refactoring into container with a certain ratio by
+    min-height: 0;
   }
 
   .Claim {

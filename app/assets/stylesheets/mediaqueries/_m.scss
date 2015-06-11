@@ -10,6 +10,12 @@
 
   // Header ######################################
 
+  .header-main--wide,
+  .header-main__foreground {
+    height: 320px; 
+    min-height: 0;
+  }
+
   .Banner {
     min-height: 30px;
     line-height: 22px;

@@ -1,7 +1,7 @@
-- provide(:title, '404')
+- provide(:title, t('.title'))
 - cache 'not_found_page' do
 
   main.content-main.content-main--wide
     .wrapper-inner
-      h1= t 'pages.not_found.heading'
-      p= t 'pages.not_found.description'
+      h1= t '.heading'
+      p= t '.description'

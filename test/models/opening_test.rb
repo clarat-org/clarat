@@ -58,6 +58,13 @@ describe Opening do
         opening.display_string.must_equal '12:01 Uhr - 13:02 Uhr'
       end
 
+      it 'should output a special string when there are no open/close times' do
+        opening.close = nil
+        opening.display_string.must_equal(
+          I18n.t 'opening.display_string.appointment'
+        )
+      end
+
       it 'should output 24 instead of 00 for the closing time' do
         opening.open = Time.parse '14:00:00'
         opening.close = Time.parse '00:00:00'

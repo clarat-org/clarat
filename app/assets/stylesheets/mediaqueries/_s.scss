@@ -44,6 +44,7 @@
 
   .header-main {
     position: fixed;
+    top: 30px;
     right: 0;
     left: 0;
     z-index: 130;
@@ -363,6 +364,8 @@
   .filter-form {
     padding-right: 5px;
     padding-bottom: 45px;
+    border-radius: 0;
+
 
     .input {
       padding: 0;
@@ -466,6 +469,13 @@
         max-width: 100%;
       }
     }
+  }
+
+  .Banner {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 300;
   }
 
   // Styling for JS-generated button

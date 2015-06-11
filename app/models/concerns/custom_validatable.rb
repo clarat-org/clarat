@@ -5,7 +5,7 @@ module CustomValidatable
     def fail_validation field, i18n_selector, options = {}
       errors[field] =
         I18n.t(
-          "validations.#{self.class.name.downcase}.#{i18n_selector}", options
+          "#{self.class.name.downcase}.validations.#{i18n_selector}", options
         )
     end
   end

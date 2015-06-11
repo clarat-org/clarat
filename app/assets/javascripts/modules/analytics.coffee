@@ -6,3 +6,5 @@ Clarat.Analytics =
         'send', 'event', 'field', 'changed', 'places_autocomplete',
         metric1: place.formatted_address
       )
+  pageView: ->
+    ga?('send', 'pageview')

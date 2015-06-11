@@ -33,7 +33,7 @@ describe ContactPerson do
           it 'should be invalid if no telephone/email/name are given' do
             contact_person.valid?.must_equal false
             contact_person.errors[:base].must_include(
-              I18n.t('validations.contact_person.incomplete')
+              I18n.t('contact_person.validations.incomplete')
             )
           end
           it 'should be valid if name is given' do

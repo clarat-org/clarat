@@ -1,41 +1,41 @@
-- provide(:title, 'Datenschutz')
+- provide :title, t('.title')
 - cache 'privacy_page' do
 
   main.content-main.content-main--wide
     .wrapper-inner
       .Privacy
-        h2.Privacy__title--page = t 'pages.privacy.title'
-        p = t 'pages.privacy.intro_first_part'
-        p = t 'pages.privacy.intro_second_part'
+        h2.Privacy__title--page = t '.heading'
+        p = t '.intro_first_part'
+        p = t '.intro_second_part'
         ul.Privacy__list
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_one.title'
-            p = t 'pages.privacy.chapter_one.text'
+            h3.Privacy__title = t '.chapter_one.heading'
+            p = t '.chapter_one.text'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_two.title'
-            p = t 'pages.privacy.chapter_two.text'
+            h3.Privacy__title = t '.chapter_two.heading'
+            p = t '.chapter_two.text'
             ul.Privacy__list--sublist
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_two.nested_title_one'
-                p = t 'pages.privacy.chapter_two.nested_text_one'
+                  = t '.chapter_two.nested_title_one'
+                p = t '.chapter_two.nested_text_one'
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_two.nested_title_two'
-                p = t 'pages.privacy.chapter_two.nested_text_two'
+                  = t '.chapter_two.nested_title_two'
+                p = t '.chapter_two.nested_text_two'
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_two.nested_title_three'
-                p = t 'pages.privacy.chapter_two.nested_text_three'
+                  = t '.chapter_two.nested_title_three'
+                p = t '.chapter_two.nested_text_three'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_three.title'
-            p = t 'pages.privacy.chapter_three.text'
+            h3.Privacy__title = t '.chapter_three.heading'
+            p = t '.chapter_three.text'
             ul.Privacy__list--sublist
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_three.nested_title_one'
+                  = t '.chapter_three.nested_title_one'
                 p
-                  == t 'pages.privacy.chapter_three.nested_text_one',
+                  == t '.chapter_three.nested_text_one',
                        google_optout: \
                         link_to( \
                           'http://tools.google.com/dlpage/gaoptout',
@@ -50,7 +50,7 @@
                           'https://www.google.de/settings/ads',
                           'https://www.google.de/settings/ads')
                 p
-                  == t  'pages.privacy.chapter_three'\
+                  == t  '.chapter_three'\
                         '.nested_text_one_second_paragraph',
                         optimizely_privacy: \
                           link_to('http://www.optimizely.com/privacy',
@@ -60,72 +60,70 @@
                                   'http://www.optimizely.com/opt_out')
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_three.nested_title_two'
-                p = t 'pages.privacy.chapter_three.nested_text_two'
+                  = t '.chapter_three.nested_title_two'
+                p = t '.chapter_three.nested_text_two'
                 p
-                  = t 'pages.privacy.chapter_three'\
+                  = t '.chapter_three'\
                       '.nested_text_two_second_paragraph'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_four.title'
-            p = t 'pages.privacy.chapter_four.text'
+            h3.Privacy__title = t '.chapter_four.heading'
+            p = t '.chapter_four.text'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_five.title'
-            p = t 'pages.privacy.chapter_five.text'
+            h3.Privacy__title = t '.chapter_five.heading'
+            p = t '.chapter_five.text'
             ul.Privacy__list--sublist
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_five.nested_title_one'
+                  = t '.chapter_five.nested_title_one'
                 p
-                  == t  'pages.privacy.chapter_five.nested_text_one',
+                  == t  '.chapter_five.nested_text_one',
                         facebook: \
                           link_to('https://de-de.facebook.com/policy.php',
                                   'https://de-de.facebook.com/policy.php')
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_five.nested_title_two'
+                  = t '.chapter_five.nested_title_two'
                 p
-                  == t  'pages.privacy.chapter_five.nested_text_two',
+                  == t  '.chapter_five.nested_text_two',
                         google: \
                           link_to( \
                             'https://www.google.de/intl/de/policies/privacy/', 'https://www.google.de/intl/de/policies/privacy/')
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_five.nested_title_three'
+                  = t '.chapter_five.nested_title_three'
                 p
-                  == t  'pages.privacy.chapter_five.nested_text_three',
+                  == t  '.chapter_five.nested_text_three',
                         twitter: \
                           link_to('https://twitter.com/privacy?lang=de',
                                   'https://twitter.com/privacy?lang=de')
               li
                 h4.Privacy__title
-                  = t 'pages.privacy.chapter_five.nested_title_four'
-                p = t 'pages.privacy.chapter_five.nested_text_four'
+                  = t '.chapter_five.nested_title_four'
+                p = t '.chapter_five.nested_text_four'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_six.title'
-            p = t 'pages.privacy.chapter_six.text'
+            h3.Privacy__title = t '.chapter_six.heading'
+            p = t '.chapter_six.text'
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_seven.title'
+            h3.Privacy__title = t '.chapter_seven.heading'
             p
-              == t 'pages.privacy.chapter_seven.text',
+              == t '.chapter_seven.text',
                    mailchimp: \
                     link_to('http://mailchimp.com/legal/terms/',
                             'http://mailchimp.com/legal/terms/')
           li
-            h3.Privacy__title = t 'pages.privacy.chapter_eight.title'
+            h3.Privacy__title = t '.chapter_eight.heading'
             p
-              == t  'pages.privacy.chapter_eight.text',
+              == t  '.chapter_eight.text',
                     google_optout: \
                       link_to('https://tools.google.com/dlpage/gaoptout?hl=de',
                               'https://tools.google.com/dlpage/gaoptout?hl=de')
-            p = t 'pages.privacy.chapter_eight.nested_text_second_paragraph'
+            p = t '.chapter_eight.nested_text_second_paragraph'
 
             .Privacy__address
-              p = t 'pages.address.name'
-              p = t 'pages.address.street'
-              p = t 'pages.address.zip_city'
-              p = t 'pages.address.telephone'
-              p = t 'pages.address.fax'
-              p
-                == t 'pages.address.email',
-                     mailto: \
-                      link_to('mail@clarat.org', 'mailto:mail@clarat.org')
+              p = t 'pages.shared.address.name'
+              p = t 'pages.shared.address.name2'
+              p = t 'pages.shared.address.street'
+              p = t 'pages.shared.address.zip_city'
+              p = t 'pages.shared.address.telephone'
+              p = t 'pages.shared.address.fax'
+              p = link_to 'mail@clarat.org', 'mailto:mail@clarat.org'

@@ -42,7 +42,7 @@ describe Offer do
         subject.expires_at = Time.now
         subject.valid?
         subject.errors.messages[:expires_at].must_include(
-          I18n.t('validations.shared.later_date')
+          I18n.t('shared.validations.later_date')
         )
       end
     end
@@ -99,7 +99,7 @@ describe Offer do
       it 'should return a string when there are multiple organizations' do
         offers(:basic).organizations << FactoryGirl.create(:organization)
         offers(:basic).organization_display_name.must_equal(
-          I18n.t('offers.index.cooperation')
+          I18n.t('offer.organization_display_name.cooperation')
         )
       end
     end

@@ -15,14 +15,14 @@
 
         / What's it all about?
         section.section-content.section-content--what
-          h3.section-content__title = t 'offers.show.what'
+          h3.section-content__title = t '.what'
           .section-content__body
             == @offer.description_html
 
         / What to do next?
         section.section-content.section-content--nextsteps
           h3.section-content__title
-            = t 'offers.show.next_steps'
+            = t '.next_steps'
           .section-content__body
             == @offer.next_steps_html
 
@@ -37,7 +37,7 @@
 
       section.section-content.section-content--whos-offering
         h3.section-content__title
-          = t 'offers.show.address.title'
+          = t '.who'
 
         .section-content__body
 
@@ -64,7 +64,7 @@
       = link_to new_contact_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-exclamation-triangle
-        = t 'shared.show.cta_report_errors'
+        = t 'shareds.show.cta_report_errors'
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 

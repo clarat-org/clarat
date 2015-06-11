@@ -7,7 +7,7 @@
     h4.Listing-results__offerinfo
       - unless offer.personal?
         span.Listing-results__contact-type
-          = I18n.t "offers.shared.encounters.#{offer.encounter}"
+          = t ".encounters.#{offer.encounter}"
       span.Listing-results__emphasis.Listing-results__organization
         = offer.organization_display_name
       - if offer.location

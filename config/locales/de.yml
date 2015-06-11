@@ -1,88 +1,10 @@
+# Please see ./README.md for more information on I18n styles and structure.
 de:
-  activerecord:
-    models:
-      offer:
-        one: Angebot
-        other: Angebote
-      location:
-        one: Standort
-        other: Standorte
-      organization:
-        one: Organisation
-        other: Organisationen
-      category:
-        one: Kategorie
-        other: Kategorien
-      keyword:
-        one: Keyword
-        other: Keywords
-      federal_state:
-        one: Bundesland
-        other: Bundesländer
-      opening:
-        one: Öffnungszeit
-        other: Öffnungszeiten
-      user:
-        one: Nutzer
-        other: Nutzer
-      contact:
-        one: Kontaktformular-Anfrage
-        other: Kontaktformular-Anfragen
-      subscription:
-        one: Newsletter Abonnement
-        other: Newsletter Abonnements
-      website:
-        one: Webseite
-        other: Webseiten
-      contact_person:
-        one: 'Kontaktperson'
-        other: 'Kontaktpersonen'
-      hyperlink:
-        one: Hyperlink
-        other: Hyperlinks
-      search_location:
-        one: Search Location
-        other: Search Locations
-      update_request:
-        one: 'Update Request'
-        other: 'Update Requests'
-      filter:
-        one: Filter
-        other: Filter
-      language_filter:
-        one: Sprachfilter
-        other: Sprachfilter
-      encounter_filter:
-        one: Kontaktfilter
-        other: Kontaktfilter
-      age_filter:
-        one: Altersfilter
-        other: Altersfilter
-      audience_filter:
-        one: Zielgruppenfilter
-        other: Zielgruppenfilter
-      area:
-        one: Gebiet
-        other: Gebiete
-  i18n:
-    transliterate:
-      rule:
-        ä: "ae"
-        ö: "oe"
-        ü: "ue"
-        ß: "ss"
-  views:
-    pagination:
-      first: 'Erste Seite'
-      previous: 'Zurück'
-      truncate: '…'
-      next: 'Vor'
-      last: 'Letzte Seite'
   conf: # translations used for app-internal things
     current_location: 'Mein Standort'
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
-  js: # translations used in JavaScript
+  js: # translations used in JavaScript. I18n-JS forces them to be located here.
     geolocation:
       get: Benutze meinen Standort!
       waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.

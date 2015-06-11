@@ -20,6 +20,7 @@ about supported directives.
 # = require i18n
 # = require i18n/translations
 # = require hogan
+# = require skrollr
 # = require_tree ./templates
 #
 # = require setup
@@ -54,3 +55,4 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/refocus
+# = require modules/skrollr

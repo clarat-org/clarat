@@ -16,9 +16,9 @@
 
   .Logo {
     position: absolute;
-    top: 10px;
+    // top: 10px;
     z-index: 20;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 15px;
     width: 91px;
     height: 20px;
@@ -28,9 +28,7 @@
   }
 
   .Logo--start {
-    position: relative;
-    top: auto;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-left: 0;
     width: 180px;
     height: 40px;

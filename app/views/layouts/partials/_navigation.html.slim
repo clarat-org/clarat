@@ -1,17 +1,20 @@
+/ Action is either home or about
+
 - cache 'start_header' do
 
   header.header-main.header-main--wide
-    .header-main__foreground.wrapper-inner
-      h1.Logo.Logo--start = link_to 'clarat.org', '/'
+    .header-main__foreground.wrapper-inner data-0='top:0px' data-500='top:180px'
+      h1.Logo.Logo--start data-0='top:0px' data-500='top:30px'
+        = link_to 'clarat.org', '/'
 
-      .Claim
+      .Claim data-0='top:0px' data-500='top:30px'
         h2.Claim__firstrow = t '.claim.first_row'
         h3.Claim__secondrow = t '.claim.second_row'
 
     .header-main__stage
       / Optional stage for animations
 
-- if controller_name == 'pages' && action_name == 'home'
+- if action_name == 'home'
 
   .Distributor.Distributor--start
     .wrapper-inner

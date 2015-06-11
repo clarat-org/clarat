@@ -51,6 +51,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-lodash'
   gem 'rails-assets-jquery'
   gem 'rails-assets-qtip2'
+  gem 'rails-assets-skrollr'
 end
 
 #######

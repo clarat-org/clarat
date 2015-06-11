@@ -39,7 +39,6 @@ de:
         encounters:
           personal: "Persönlich"
           hotline: "Telefonisch"
-          online: "TODO! (Online)" # TODO: remove later, see #302
           email: "Email"
           chat: "Chat"
           forum: "Forum"

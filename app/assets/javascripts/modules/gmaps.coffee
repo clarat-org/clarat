@@ -57,6 +57,7 @@ Clarat.GMaps =
           map.setCenter bounds.getCenter()
           map.setZoom 15
 
+      Clarat.currentMap = map
 
     bindMapsEvents: (map, marker, markerData, infowindow) ->
       if not markerData.organization_display_name # if is organization

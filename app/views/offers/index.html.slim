@@ -14,22 +14,20 @@
 
   aside.aside-standard
     .aside-standard__container
-      h5.aside-standard__headline Vor-Ort-Angebote auf der Karte
+      h5.aside-standard__headline = I18n.t('offers.map.headline_small_map')
 
       #map-container
         #map-canvas data={markers: @markers.to_json, position: @position.to_json}
-      a.map__button--enlarge[href="#"] Karte vergrößern
+
+      a.map__button--enlarge.big-map_open[href="#big-map"] = I18n.t('offers.map.enlarge_map')
+
+      #big-map
+
+         button.big-map_close X
 
 / Alert user when we used default location because they didn't give one
 - if @search_cache.search_location.blank?
   - content_for :view_specific_scripts do
 
     javascript:
-<<<<<<< HEAD
-      Clarat.Flash.createFlash(
-        'alert', "#{j I18n.t('offers.index.location_fallback')}"
-      );
-
-=======
       Clarat.Flash.createFlash('alert', "#{j t('.location_fallback')}");
->>>>>>> develop

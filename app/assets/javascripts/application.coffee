@@ -38,6 +38,7 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
+# = require modules/is_mobile
 # = require modules/analytics
 # = require modules/ajax
 # = require modules/geolocation

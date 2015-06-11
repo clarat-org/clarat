@@ -1,1 +1,4 @@
-$(document).ready -> skrollr.init()
+$(document).ready ->
+  unless Clarat.isMobile()
+    skrollr.init
+      forceHeight: false

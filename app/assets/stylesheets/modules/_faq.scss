@@ -34,13 +34,13 @@
   @extend %clarat_rounding_start;
   position: relative;
   margin-bottom: 0;
-  padding: 0 30px;
-  height: 45px;
+  padding: 0 1em;
+  height: 40px;
   background: $brand_blue;
   color: $brand_white;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 45px;
+  // font-weight: 400;
+  // font-size: 20px;
+  line-height: 40px;
 
   .section-start--how & {
     background: $brand_blue;
@@ -53,7 +53,7 @@
 
 .section-question-group__body {
   @extend %clarat_rounding_end;
-  padding: 1em 1em 1em;
+  padding: 0.6em 1em 0.8em;
   background: $brand_beige;
   margin-bottom: 2em;
 }

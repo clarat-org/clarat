@@ -14,7 +14,7 @@
   float: left;
   margin: 0 1% 2.5% 0;
   padding: 42px 20px 20px;
-  width: 24%;
+  width: 32%;
   background: $brand_beige;
 
   &:after {
@@ -36,7 +36,7 @@
   }
 
   p {
-    min-height: 240px;
+    min-height: 10em;
   }
 }
 

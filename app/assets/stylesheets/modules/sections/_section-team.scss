@@ -34,6 +34,10 @@
   &:last-of-type {
     @extend %clarat_rounding_end;
   }
+
+  p {
+    min-height: 240px;
+  }
 }
 
 .section-team__profile {

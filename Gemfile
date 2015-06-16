@@ -149,7 +149,6 @@ gem 'gibbon'
 
 gem 'newrelic_rpm'
 gem 'dalli' # Memcached Client
-gem 'memcachier'
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this

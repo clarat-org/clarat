@@ -227,7 +227,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    memcachier (0.0.2)
     memory_test_fix (1.2.2)
       activerecord (>= 3.2.0, < 4.99.0)
       railties (>= 3.2.0, < 4.99.0)
@@ -590,7 +589,6 @@ DEPENDENCIES
   kaminari
   launchy
   letter_opener
-  memcachier
   memory_test_fix
   meta_request
   minitest

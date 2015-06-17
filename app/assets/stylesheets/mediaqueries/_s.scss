@@ -286,6 +286,9 @@
 
   .section-team__member {
     width: 100%;
+    p {
+      min-height: 0;
+    }
   }
 
   .Listing-categories__item {

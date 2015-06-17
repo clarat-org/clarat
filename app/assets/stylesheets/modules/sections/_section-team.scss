@@ -14,7 +14,7 @@
   float: left;
   margin: 0 1% 2.5% 0;
   padding: 42px 20px 20px;
-  width: 24%;
+  width: 32%;
   background: $brand_beige;
 
   &:after {
@@ -33,6 +33,10 @@
 
   &:last-of-type {
     @extend %clarat_rounding_end;
+  }
+
+  p {
+    min-height: 10em;
   }
 }
 

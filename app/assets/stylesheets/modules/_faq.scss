@@ -19,16 +19,6 @@
   margin-bottom: 0.5em;
 }
 
-.section-question-group {
-  // @extend %layout-col-33;
-  // position: relative;
-  // margin-bottom: 68px;
-
-  // &.section-start--how:after {
-  //   background: $brand_blue;
-  // }
-}
-
 .section-question-group__headline {
   @extend %roboto_bold;
   @extend %clarat_rounding_start;
@@ -38,8 +28,7 @@
   height: 40px;
   background: $brand_blue;
   color: $brand_white;
-  // font-weight: 400;
-  // font-size: 20px;
+
   line-height: 40px;
 
   .section-start--how & {

@@ -1,12 +1,18 @@
 Clarat.GMaps =
   initialize: -> # callback for when maps script is loaded from google
-    Clarat.GMaps.Map.initialize()
+    # places autocomplete always fires
     Clarat.GMaps.PlacesAutocomplete.initialize()
+
+    # initialize in case an ajax request already returned (unlikely)
+    Clarat.GMaps.Map.initialize()
+
+    # initialize map again each time an ajax request brought new information
+    $(document).on 'ajax_done', Clarat.GMaps.Map.initialize
 
   Map:
     initialize: ->
       canvas = document.getElementById('map-canvas')
-      markers = $(canvas).data('markers')
+      markers = $('#map-data').data('markers')
       infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
       includedPoints = []
 

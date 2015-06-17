@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def about
+    @names = %w(amina andrea anne basti elisa janina jens jule julia julian
+                konstantin lisa marcus nicole stefan verena)
   end
 
   def faq

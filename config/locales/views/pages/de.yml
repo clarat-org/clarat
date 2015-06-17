@@ -6,25 +6,24 @@ de:
       how:
         heading: "Wie funktioniert clarat?"
         text: |
-          Sämtliche Unterstützungsangebote für Kinder, Jugendliche und
-          Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das
-          Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was
-          Du als nächstes tun musst, um das Angebot zu nutzen.
+          Gib ein, was dich bedrückt. Oder wähle aus unseren Themen aus. Schon
+          siehst du alle Hilfsangebote in deiner Nähe. Wir sagen dir auch, wie
+          du die Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben
+          sollst. Oder einfach vorbeigehen kannst.
       whom:
         heading: "Für wen ist clarat?"
         text: |
-          clarat ist für alle da. Vor allem für Familien, Jugendliche und
-          Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die
-          erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum
-          Beispiel. Oder Lehrer. Oder Ärzte. Anliegen eingeben, Angebot finden
-          und dann hin.
+          clarat ist für alle da. Für Kinder, Jugendliche und Familien. Hier
+          findest du Unterstützung bei Fragen und bei Problemen. Für dich, deine
+           Familie und deine Freunde. Oder auch für andere Menschen, die du
+           kennst und die Hilfe brauchen
       why:
         heading: "Warum gibt es clarat?"
         text: |
-          In Deutschland gibt es viele Unterstützungsangebote für Kinder,
-          Jugendliche und Familien. Allerdings sind diese selten leicht zu
-          finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum
-          passenden Angebot in deiner Nähe zu kommen.
+          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
+          viele Angebote, die Kinder, Jugendliche und Familien unterstützen. Sie
+          sind aber oft schwer zu finden. Wir helfen dir dabei. Wir zeigen dir,
+          welche Hilfe es in deiner Nähe gibt.
 
     not_found:
       title: "404"
@@ -83,7 +82,7 @@ de:
         </p>
     faq:
       title: "Häufige Fragen"
-      heading: "FAQ"
+      heading: "Häufige Fragen"
 
     privacy:
       title: "Datenschutz"
@@ -379,7 +378,7 @@ de:
 
     about:
       title: "Über Uns"
-      heading: "Über uns"
+      heading: "Wer steckt hinter clarat?"
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
@@ -395,7 +394,7 @@ de:
         Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
         sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
         kümmert sich besonders um Online- und Telefonangebote. Ihr Lieblingssong
-        ist La Prima Estate - Erlend Oye.
+        ist La Prima Estate von Erlend Oye.
       andrea: |
         Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
         Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
@@ -408,9 +407,9 @@ de:
         Sie Groß von Deichkind.
       basti: |
         Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Leider ist er musikalisch in den 80er
-        Jahren hängen geblieben, daher ist sein Lieblingssong auch immer noch
-        Man In The Mirror von Michael Jackson.
+        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
+        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
+        The Mirror von Michael Jackson.
       elisa: |
         Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
         kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
@@ -442,7 +441,7 @@ de:
         Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
         ist All You Need von Sublime.
       konstantin: |
-        ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
+        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
         Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
         unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
       lisa: |

@@ -1,0 +1,48 @@
+// ---------------------------------------------------------------
+//
+//  FAQ Statement module
+//
+// ---------------------------------------------------------------
+
+.FAQ_subtitles {
+  margin-bottom: 0.2em;
+}
+
+.FAQ_question {
+  margin-bottom: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.FAQ_paragraph {
+  display: none;
+  margin-bottom: 0.5em;
+}
+
+.section-question-group__headline {
+  @extend %roboto_bold;
+  @extend %clarat_rounding_start;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0 1em;
+  height: 40px;
+  background: $brand_blue;
+  color: $brand_white;
+
+  line-height: 40px;
+
+  .section-start--how & {
+    background: $brand_blue;
+  }
+
+  .section-start--why & {
+    background: #C3BFB4;
+  }
+}
+
+.section-question-group__body {
+  @extend %clarat_rounding_end;
+  padding: 0.6em 1em 0.8em;
+  background: $brand_beige;
+  margin-bottom: 2em;
+}

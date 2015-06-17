@@ -142,9 +142,9 @@
   }
 
   .section-team__member {
-    width: 49.5%;
+    width: 32%;
 
-    &:nth-child(2n+1) { // every second item
+    &:nth-child(3n+1) { // every third item
       margin-right: 0;
     }
   }

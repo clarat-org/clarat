@@ -11,82 +11,10 @@
       .section-team
         h2 Team
 
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Amina
-          p = t '.amina'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Andrea
-          p = t '.andrea'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Anne
-          p = t '.anne'
-
-        .section-team__member
-          img.section-team__profile[src='http://i.imgur.com/FZ2Tg0a.jpg']
-          h3.section-team__headline Basti
-          p = t '.basti'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Elisa
-          p = t '.elisa'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Janina
-          p = t '.janina'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Jens
-          p = t '.jens'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Jule
-          p = t '.jule'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Julia
-          p = t '.julia'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Julian
-          p = t '.julian'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Konstantin
-          p = t '.konstantin'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Lisa
-          p = t '.lisa'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Marcus
-          p = t '.marcus'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Nicole
-          p = t '.nicole'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Stefan
-          p = t '.stefan'
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Verena
-          p = t '.verena'
+        - @names.each do |name|
+          .section-team__member
+            .section-team__name
+              = name.titleize
+            = image_tag image_path("team/#{name}.jpg"),
+                        class: 'section-team__profile'
+            p = t ".#{name}"

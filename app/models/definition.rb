@@ -8,14 +8,28 @@ class Definition < ActiveRecord::Base
 
   # Methods
 
+  # A definition can have multiple comma seperated keys. This method returns all
+  # keys in an array.
+  def keys
+    key.split(',').map(&:strip)
+  end
+
   # Infuses from the list of all definitions into the given string
   def self.infuse string
+    # check string for every definition in the DB
     select(:id, :key).find_each do |definition|
-      regex = /\b(#{definition.key})\b/i
-      if string.match regex
+      # go through the set of keys for this definition
+      definition.keys.each do |key|
+        regex = /\b(#{key})\b/i
+        next unless string.match regex
+
+        # insert the definition markup around a found definition key.
         string.gsub! regex,
                      "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
                      '\1</dfn>'
+
+        # a string may only provide definitions for one key in the set
+        break
       end
     end
     string

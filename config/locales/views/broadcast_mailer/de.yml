@@ -1,0 +1,44 @@
+de:
+  broadcast_mailer:
+    welcome:
+      subject: "clarat Berlin ist online: Bitte überprüfen Sie Ihren Eintrag"
+      content: |
+        Liebe(r) Herr / Frau %{name},
+
+        wir möchten Sie bitten, den Eintrag zu überprüfen, den wir für Ihr
+        Angebot auf clarat erstellt haben. Sie finden Ihr Angebot hier:
+        %{offer_link}
+
+        clarat ist ein kostenloses Web-Verzeichnis, mit dem Kinder, Jugendliche
+        und Familien in Not einfach Hilfe in ihrer Nähe finden können. Neben
+        einer einfachen Navigation haben wir besonderes auf eine leicht
+        verständliche Sprache geachtet. Hierdurch können wir jedes Angebot
+        mittels eines Übersetzungsprogramms in weiteren Sprachen  (u.a.
+        Türkisch, Arabisch, Russisch) zur Verfügung stellen. Damit hoffen wir,
+        auch Familien mit eingeschränkten Deutschkenntnissen zu erreichen.
+
+        clarat ist von einer gemeinnützigen Stiftung entwickelt worden und ist
+        daher kostenfrei. Wir starten mit einem Verzeichnis von
+        Unterstützungsangeboten in Friedrichshain/Kreuzberg.
+
+        Gemeinsam mit Ihnen hoffen wir, dass clarat dazu beitragen kann, dass
+        Ihre Angebote noch besser gefunden werden – sowohl von Menschen in Not
+        als auch von Menschen, die anderen Kindern, Jugendlichen und Familien
+        helfen möchten, Hilfe zu finden. Zudem kann clarat hoffentlich auch Sie
+        darin unterstützen, dass Sie Menschen in Ihrem Programm, die ergänzende
+        Unterstützung in anderen Themenfeldern benötigen, Hinweise geben können,
+        welche Angebote in ihrer jeweiligen Nähe für sie geeignet sein könnten.
+
+        Wir freuen uns auf Ihr Feedback!
+
+        Mit freundlichen Grüßen,
+
+        Anne Schulze
+        Clarat
+        ein Projekt der Benckiser Stiftung Zukunft
+
+        P.S.
+        - Einen kurzen Einführungsfilm zu Clarat sehen Sie hier:
+          %{vimeo_link}
+        - Unsere Arbeitsschritte können Sie hier einsehen:
+          %{blog_link}

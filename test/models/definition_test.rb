@@ -16,7 +16,6 @@ describe Definition do
   describe 'validations' do
     it { subject.must validate_presence_of :key }
     it { subject.must validate_uniqueness_of :key }
-    it { subject.must validate_length_of(:key).is_at_most 50 }
     it { subject.must validate_presence_of :explanation }
     it { subject.must validate_length_of(:explanation).is_at_most 500 }
   end

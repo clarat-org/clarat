@@ -2,7 +2,7 @@
 # infused into the texts of other models.
 class Definition < ActiveRecord::Base
   # Validations
-  validates :key, presence: true, uniqueness: true, length: { maximum: 50 },
+  validates :key, presence: true, uniqueness: true,
                   exclusion: { in: %w(dfn class JS tooltip) }
   validates :explanation, presence: true, length: { maximum: 500 }
 

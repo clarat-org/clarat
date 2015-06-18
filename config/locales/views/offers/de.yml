@@ -42,6 +42,7 @@ de:
           email: "E-Mail"
           chat: "Chat"
           forum: "Forum"
+          online-course: "Online-Kurs"
 
       pending_ajax:
         searching: "Suche…"

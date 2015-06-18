@@ -7,46 +7,12 @@
 
       p = t '.text'
 
-
       .section-team
-        h2 Team
 
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-        .section-team__member
-          img.section-team__profile[src='http://placehold.it/255x174']
-          h3.section-team__headline Hans Dampf
-          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        - @names.each do |name|
+          .section-team__member
+            .section-team__name
+              = name.titleize
+            = image_tag image_path("team/#{name}.jpg"),
+                        class: 'section-team__profile'
+            p = t ".#{name}"

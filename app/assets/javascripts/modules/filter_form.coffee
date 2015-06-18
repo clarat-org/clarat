@@ -144,7 +144,8 @@ initFilterForm = ->
       filterForm.removeClass 'is--hidden'
 
   # Calling subfunctions
-  initMobileFilterSwitch()
+  # Temporarily disable filters
+  # initMobileFilterSwitch()
   initFilterExpand()
   initFieldsetHeadlineClickHandler()
 

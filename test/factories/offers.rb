@@ -7,7 +7,8 @@ FactoryGirl.define do
     description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
-      %w(personal personal personal hotline online).sample # weighted
+      # weighted
+      %w(personal personal personal personal hotline chat forum email).sample
     end
     area { Area.first unless encounter == 'personal' }
     completed false

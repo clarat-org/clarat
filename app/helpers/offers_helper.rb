@@ -34,15 +34,16 @@ module OffersHelper
   end
 
   # generate collections for radio buttons from enum arrays
-  def i18n_collection values, include_blank = false
-    output = values.map do |value|
-      [t(".collection_names.#{value}"), value]
-    end
-    if include_blank
-      output.unshift([t('.collection_names.blank'), nil])
-    end
-    output
-  end
+  # Temporarily disable filter (than this method is not needed)
+  # def i18n_collection values, include_blank = false
+  #   output = values.map do |value|
+  #     [t(".collection_names.#{value}"), value]
+  #   end
+  #   if include_blank
+  #     output.unshift([t('.collection_names.blank'), nil])
+  #   end
+  #   output
+  # end
 
   private
 

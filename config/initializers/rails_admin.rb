@@ -271,6 +271,10 @@ RailsAdmin.config do |config|
     clone_config do
       custom_method :partial_dup
     end
+
+    export do
+      field :id
+    end
   end
 
   config.model 'ContactPerson' do

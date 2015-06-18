@@ -1,11 +1,12 @@
 de:
   contacts:
     new:
-      contact_heading: "Kontakt aufnehmen"
+      contact_heading: "Was möchtest du uns mitteilen?"
     create:
       success: "Die Nachricht wurde erfolgreich abgeschickt."
     shared:
       new:
+        send_us_a_message: "Schreibe uns eine Nachricht"
         name_placeholder: "Name (Pflicht)"
         email_placeholder:
           required:

@@ -185,6 +185,22 @@
     }
   }
 
+  .section-team__member {
+    width: 49%;
+
+    &:nth-child(2n) { // every third item
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) { // every third item
+      margin-right: 1%;
+    }
+
+    p {
+      min-height: 25em;
+    }
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {

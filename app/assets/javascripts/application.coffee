@@ -54,4 +54,4 @@ about supported directives.
 # = require modules/safari_fixes
 # = require modules/category_tree
 # = require modules/cookie_warning
-# = require modules/refocus
+# = require modules/faq

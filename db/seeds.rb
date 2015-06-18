@@ -62,7 +62,7 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        geoloc: '52.520007,13.404954'
 
 mains = []
-mains << Category.create(name: 'Akute Krisen', icon: 'e-crisis')
+mains << Category.create(name: 'Notfall', icon: 'e-crisis')
 mains << Category.create(name: 'Lernen', icon: 'c-learn')
 mains << Category.create(name: 'Familie', icon: 'a-family')
 mains << Category.create(name: 'Gesundheit', icon: 'b-health')
@@ -85,7 +85,7 @@ FactoryGirl.create :offer, :approved, approved_by: user,
                                       area: berlin
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweiter Chat',
-                                      encounter: 'online',
+                                      encounter: 'chat',
                                       area: schland
 FactoryGirl.create :offer, :approved, approved_by: user,
                                       name: 'Bundesweite Hotline',

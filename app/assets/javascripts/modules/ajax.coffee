@@ -31,7 +31,7 @@ class Ajax
 
         # update URL & inform analytics
         if options.historyPush
-          history.pushState { turbolinks: true, url: targetURL }, '', targetURL
+          history.pushState? { turbolinks: true, url: targetURL }, '', targetURL
           Clarat.Analytics.pageView()
 
         # remove appropriate element from stack & finish

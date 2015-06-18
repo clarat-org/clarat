@@ -37,18 +37,18 @@ describe Definition do
       it 'should put definition markup around a found definition key' do
         FactoryGirl.create :definition, key: 'little', explanation: 'small'
 
-        string = 'Mary had a little lamb. It was really little.'
+        string = 'Little Mary had a little lamb.'
 
         Definition.infuse(string).must_equal(
-          "Mary had a <dfn class='JS-tooltip' data-id='1'>little</dfn> lamb."\
-          " It was really <dfn class='JS-tooltip' data-id='1'>little</dfn>."
+          "<dfn class='JS-tooltip' data-id='1'>Little</dfn> Mary had a"\
+          " <dfn class='JS-tooltip' data-id='1'>little</dfn> lamb."
         )
       end
 
       it 'should only ever use the first definition key when mutliple comma'\
          ' seperated keys are given' do
         FactoryGirl.create :definition, key: 'big', explanation: 'huge'
-        FactoryGirl.create :definition, key: 'lazy, apathetic, lethargic'
+        FactoryGirl.create :definition, key: 'lethargic, lazy, apathetic'
 
         string = 'The big brown fox jumps over the apathetic, lazy dog.'
 

@@ -44,11 +44,11 @@ footer.footer-main
               = link_to t('.impressum'), '/impressum'
             li.nav-legal__listitem
               = link_to t('.tos'), '/rechtliche-hinweise'
-            li.nav-legal__listitem
+            li.nav-legal__listitem.JS-tooltip
               = link_to t('.privacy'), '/datenschutzhinweise'
             li.nav-legal__listitem
               / TODO: Refactor or remove after translation testing
-              #google_translate_element
+              #google_translate_element.JS-tooltip
               javascript:
                 function googleTranslateElementInit() {
                   new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');

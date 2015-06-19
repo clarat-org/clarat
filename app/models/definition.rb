@@ -24,9 +24,9 @@ class Definition < ActiveRecord::Base
         next unless string.match regex
 
         # insert the definition markup around a found definition key.
-        string.gsub! regex,
-                     "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
-                     '\1</dfn>'
+        string.sub! regex,
+                    "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
+                    '\1</dfn>'
 
         # a string may only provide definitions for one key in the set
         break

@@ -104,8 +104,13 @@
     border-color: $brand_yellow;
   }
 
+  .offer-location-name {
+    font-weight: bold;
+    margin-top: .5em;
+  }
+
   .adr {
-    margin: .25em 0 1.25em;
+    margin: .25em 0;
   }
 
 }

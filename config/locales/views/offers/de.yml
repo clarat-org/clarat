@@ -153,4 +153,6 @@ de:
         email: "E-Mail: "
       who_section:
         heading: "Wo kannst du dich melden?"
+      who_location:
+        organizations: 'Ein Angebot von:'
       # /show partials

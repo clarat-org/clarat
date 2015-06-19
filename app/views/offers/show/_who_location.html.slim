@@ -2,8 +2,7 @@
 .adr
   p
     - unless offer.location_name.blank?
-      span.org= offer.location_name
-      br
+      .offer-location-name.org= offer.location_name
     - unless offer.location_addition.blank?
       span.extended-address= offer.location_addition
       br
@@ -12,5 +11,7 @@
     span.postal-code=> offer.location_zip
     span.locality= offer.location_city
     br
+    br
+    = t '.organizations'
 
 /! http://microformats.org/wiki/adr end

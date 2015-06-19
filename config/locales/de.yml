@@ -48,7 +48,9 @@ de:
         - wohnen
       example_placeholder: "z.B. %{word}, …"
     encounters:
+      #personal: "Persönlich"
       hotline: "Telefonisch"
-      email: "Email"
+      email: "E-Mail"
       chat: "Chat"
       forum: "Forum"
+      online-course: "Online-Kurs"

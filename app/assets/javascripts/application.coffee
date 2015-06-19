@@ -19,7 +19,9 @@ about supported directives.
 # = require qtip2
 # = require i18n
 # = require i18n/translations
+# = require algoliasearch
 # = require hogan
+# = require handlebars.runtime
 # = require_tree ./templates
 #
 # = require setup
@@ -36,6 +38,8 @@ about supported directives.
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
+#
+# = require modules/search/handler
 #
 # = require modules/analytics
 # = require modules/ajax
@@ -54,3 +58,4 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/faq
+# = require modules/refocus

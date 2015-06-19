@@ -32,7 +32,8 @@ class Offer
           typo geo words proximity attribute exact custom
         )
         ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
-                      :location_street, :location_city, :location_zip]
+                      :organization_display_name, :location_address]
+                     # removed: :location_street, :location_city, :location_zip
         FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
         add_attribute(*ATTRIBUTES)
         add_attribute(*FACETS)

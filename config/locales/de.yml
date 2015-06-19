@@ -47,3 +47,8 @@ de:
         - schwänzen
         - wohnen
       example_placeholder: "z.B. %{word}, …"
+    encounters:
+      hotline: "Telefonisch"
+      email: "Email"
+      chat: "Chat"
+      forum: "Forum"

@@ -1,0 +1,33 @@
+/! Temporarily disable filters
+/! > advanced_search
+/! = render 'offers/index/advanced_search', search_cache: search_cache
+
+.Listing-results
+  /!- if remote_focussed then main_offers = remote_offers
+  /!- if personal_focussed then main_offers = personal_offers
+
+  = hb 'if personal_focus_with_remote' do
+    %h2.Listing-results__headline
+      = hb 'remote_offer_headline'
+
+      = hb 'if has_two_or_more_remote_results' do
+        = hb 'more_link'
+
+    %ul.Listing-results__list
+      = hb 'each remote_offers' do
+        - # first remote offer
+        = hb '> _single_search_result'
+
+
+  %h2.Listing-results__headline
+    Search Results Info Headline
+    = hb '!> search_results_info_headline'
+
+  %ul.Listing-results__list
+    = hb 'each main_offers' do
+      = hb '> _single_search_result'
+
+  {{! pagination }}
+
+/ prepare ajax spinner
+%i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner

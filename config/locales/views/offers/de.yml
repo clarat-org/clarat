@@ -35,14 +35,6 @@ de:
           one: "Eine Telefon- oder Onlineberatung"
           other: "%{count} Telefon- und Onlineberatungen"
 
-      single_search_result:
-        encounters:
-          personal: "Persönlich"
-          hotline: "Telefonisch"
-          email: "Email"
-          chat: "Chat"
-          forum: "Forum"
-
       pending_ajax:
         searching: "Suche…"
 

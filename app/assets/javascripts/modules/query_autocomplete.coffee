@@ -15,10 +15,10 @@ ready = ->
 
 initTypeahead = ->
   Clarat.index = new AlgoliaSearch(
-    Clarat.algolia_app_id,
-    Clarat.algolia_pub_key
+    Clarat.Search.appID,
+    Clarat.Search.apiKey
   ).initIndex(
-    Clarat.algolia_personal_index
+    Clarat.Search.personalIndexName
   )
 
   hitTemplate = HoganTemplates['autocomplete']

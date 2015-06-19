@@ -1,10 +1,10 @@
 / General JS Setup
 javascript:
   // Namespace
-  Clarat = {}
+  Clarat = { Search: {} }
 
   // Algolia
-  Clarat.algolia_app_id = "#{Rails.application.secrets.algolia['app_id']}";
-  Clarat.algolia_pub_key = "#{Rails.application.secrets.algolia['pub_key']}";
-  Clarat.algolia_personal_index = "#{Offer.personal_index_name}";
-  Clarat.algolia_remote_index = "#{Offer.remote_index_name}";
+  Clarat.Search.appID = "#{Rails.application.secrets.algolia['app_id']}";
+  Clarat.Search.apiKey = "#{Rails.application.secrets.algolia['pub_key']}";
+  Clarat.Search.personalIndexName = "#{Offer.personal_index_name}";
+  Clarat.Search.remoteIndexName = "#{Offer.remote_index_name}";

@@ -1,0 +1,49 @@
+.goog-te-menu2 {
+  border-color: #F6EEDC;
+  background: #F4B528;
+}
+
+// Headline
+.goog-te-menu2-item-selected {
+  display: none;
+}
+
+// List items
+.goog-te-menu2-item {
+  div,
+  &:link div,
+  &:visited div,
+  &:active div {
+    background: transparent;
+  }
+}
+
+// Arabic
+table > tbody > tr > td > a:nth-child(2) > div > span.text {
+  color: red;
+}
+
+// English
+table > tbody > tr > td > a:nth-child(3) > div > span.text {
+  color: green;
+}
+
+// French
+table > tbody > tr > td > a:nth-child(4) > div > span.text {
+  color: grey;
+}
+
+// Polish
+table > tbody > tr > td > a:nth-child(5) > div > span.text {
+  color: black;
+}
+
+// Russian
+table > tbody > tr > td > a:nth-child(6) > div > span.text {
+  color: yellow;
+}
+
+// Turkish
+table > tbody > tr > td > a:nth-child(7) > div > span.text {
+  color: brown;
+}

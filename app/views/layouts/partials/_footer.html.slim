@@ -48,9 +48,17 @@ footer.footer-main
               = link_to t('.privacy'), '/datenschutzhinweise'
             li.nav-legal__listitem
               / TODO: Refactor or remove after translation testing
+
               #google_translate_element
               javascript:
                 function googleTranslateElementInit() {
                   new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
+                  $(document).ready(function () {
+                    var cssLink = document.createElement("link");
+                    cssLink.href = "assets/gt-style.css";
+                    cssLink.rel = "stylesheet";
+                    cssLink.type = "text/css";
+                    $('.goog-te-menu-frame').contents().find('head')[0].appendChild(cssLink);
+                  });
                 }
               script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"

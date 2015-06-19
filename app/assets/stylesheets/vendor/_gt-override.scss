@@ -1,0 +1,30 @@
+// ---------------------------------------------------------------
+//
+//  Styling google translate select (not iframe!)
+//
+// ---------------------------------------------------------------
+
+.goog-te-menu-frame {
+  box-shadow: none;
+}
+
+div#google_translate_element div.goog-te-gadget-simple {
+  background-color: transparent;
+  border: none;
+
+  .goog-te-gadget-icon {
+    display: none;
+  }
+
+  span:nth-child(5) {
+    display: none;
+  }
+
+  span:nth-child(3) {
+    display: none;
+  }
+
+  .goog-te-menu-value {
+    @extend %roboto_bold;
+  }
+}

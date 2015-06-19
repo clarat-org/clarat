@@ -33,14 +33,14 @@ describe Definition do
     end
 
     describe '::infuse' do
-      it 'should put definition markup around a found definition key' do
+      it 'should put definition markup around the first found definition key' do
         FactoryGirl.create :definition, key: 'little', explanation: 'small'
 
         string = 'Little Mary had a little lamb.'
 
         Definition.infuse(string).must_equal(
-          "<dfn class='JS-tooltip' data-id='1'>Little</dfn> Mary had a"\
-          " <dfn class='JS-tooltip' data-id='1'>little</dfn> lamb."
+          "<dfn class='JS-tooltip' data-id='1'>Little</dfn> Mary had a little"\
+          ' lamb.'
         )
       end
 

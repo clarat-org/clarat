@@ -23,7 +23,8 @@
         = render 'offers/index/single_search_result', offer: remote_offers.first
 
   h2.Listing-results__headline
-    == search_results_info_headline search_cache, search
+    .search-string
+      == search_results_info_headline search_cache, search
     a.big-map_open[href="#"] = I18n.t('offers.map.show_on_big_map')
 
   ul.Listing-results__list

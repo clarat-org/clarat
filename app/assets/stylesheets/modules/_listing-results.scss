@@ -43,7 +43,12 @@
   font-weight: 400;
   font-size: 20px;
 
-  a {
+  .search-string {
+    max-width: 75%
+  }
+
+  .big-map_open,
+  .more_remote-offers_open {
     @extend %small_button_style;
     position: absolute;
     right: 0;

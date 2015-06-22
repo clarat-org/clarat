@@ -157,6 +157,13 @@
     min-height: 0;
   }
 
+  .Listing-results__headline {
+    .search-string {
+      max-width: 70%
+    }
+  }
+
+
 
   #new_search_form {
     .template--pages-home & {

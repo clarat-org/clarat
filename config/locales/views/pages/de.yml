@@ -95,7 +95,7 @@ de:
         Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: |
         Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
-        Verwendung per-sonenbezogener Daten unterrichten. Sie können diese
+        Verwendung personenbezogener Daten unterrichten. Sie können diese
         Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
         Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
         Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
@@ -119,7 +119,7 @@ de:
           2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
         text: |
           Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
-          oder über das Kon-taktformular, bzw. über eine Live-Chat-Funktion
+          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
           freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
           Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
           unter Umständen weitere personenbezogene Daten übermitteln, speichern
@@ -152,11 +152,11 @@ de:
         heading: "3. Informationen über Ihr Nutzungsverhalten"
         text: |
           Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
-          anpassen möchten, benö-tigen wir Informationen über das allgemeine
-          Nutzungsverhalten. Daher erstellen wir aus je-nen Nutzungsdaten,
+          anpassen möchten, benötigen wir Informationen über das allgemeine
+          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
           welche wir zur Ermöglichung der Inanspruchnahme unseres
           Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
-          Verwendung von Pseudony-men. D.h. wir ersetzen sämtliche Angaben in
+          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
           den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
           (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
           Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
@@ -167,7 +167,7 @@ de:
         nested_text_one: |
           Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
           Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
-          Textdateien, die auf Ihrem Com-puter gespeichert werden und die eine
+          Textdateien, die auf Ihrem Computer gespeichert werden und die eine
           Analyse der Benutzung der Website durch Sie ermöglichen. Die durch
           den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite
           (einschließlich Ihrer IP-Adresse) werden in der Regel an einen Server
@@ -187,7 +187,7 @@ de:
           zusammengeführt. Sie können die Speicherung der Cookies durch eine
           entsprechende Einstellung Ihrer Browser Software verhindern; wir
           weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
-          nicht sämtliche Funktionen dieser Website vollum-fänglich werden
+          nicht sämtliche Funktionen dieser Website vollumfänglich werden
           nutzen können. Sie können darüber hinaus die Erfassung der durch das
           Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
           (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten
@@ -202,20 +202,20 @@ de:
           Erweiterung “_anonymizeIp()” verwendet und daher IP-Adressen nur
           gekürzt weiterverarbeitet werden, um eine direkte
           Personenbeziehbarkeit auszuschließen. Diese Website nutzt die
-          Google-Analytics-Berichte zu demografischen Merk-malen, in denen Daten
+          Google-Analytics-Berichte zu demografischen Merkmalen, in denen Daten
           aus interessenbezogener Werbung von Google sowie Besucherdaten von
           Drittanbietern (z. B. Alter, Geschlecht und Interessen) verwendet
           werden. Diese Daten sind nicht auf eine bestimmte Person
           zurückzuführen und können jederzeit über die Anzeigeneinstellungen
           %{ads} deaktiviert werden. Durch die
           Nutzung dieser Webseite erklären Sie sich mit der Bearbeitung der über
-          Sie erhobenen Da-ten durch Google in der zuvor beschriebenen Art und
+          Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und
           Weise und zu dem zuvor benannten Zweck einverstanden.
         nested_text_one_second_paragraph: |
           Daneben setzt diese Webseite den Webanalysedienst Optimizely von
           Optimizely Inc. ein, der für A/B-Tests verwendet wird. Dieser Service
-          verwendet Cookies um den Browser ei-nes Besuchers zu identifizieren
-          und die Nutzung dieser Webseite zu analysieren. Die Coo-kies sammeln
+          verwendet Cookies um den Browser eines Besuchers zu identifizieren
+          und die Nutzung dieser Webseite zu analysieren. Die Cookies sammeln
           keine personenbezogenen Daten. Mehr Informationen darüber, wie
           Optimizely Ihre Daten verarbeitet, finden Sie unter
           %{optimizely_privacy}. Sie können das Optimizely-Tracking
@@ -226,10 +226,10 @@ de:
           Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
           werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
           werden von dem Web-Server, den Sie zur Herstellung einer Verbindung
-          mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) ver-wendet
+          mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) verwendet
           haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies,
           hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa
-          um den zuletzt von Ihnen nach-gesuchten Standort für Sie zu speichern.
+          um den zuletzt von Ihnen nachgesuchten Standort für Sie zu speichern.
           Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur
           während der Dauer ihres Besuches auf der Webseite funktionieren und
           nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende
@@ -276,11 +276,11 @@ de:
           auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
           Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
           diese Information an Ihr Facebook-Profil in die USA übermittelt.
-          Andere Nutzer können dann sehen, dass Sie unsere Leistun-gen
+          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
           empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
-          ab, wel-che Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
+          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
           haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Facebook, über Ihre diesbezüglichen Rech-te und Möglichkeiten zum
+          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
           Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
           Facebook (%{facebook}).
         nested_title_two: "5.2 Google+"
@@ -338,7 +338,7 @@ de:
           7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
         text: |
           Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
-          Zugriffe oder Veröffentli-chung zu verhindern, haben wir physische,
+          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
           elektronische und organisatorische Schutzprozesse eingerichtet, die
           die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
           nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
@@ -362,7 +362,7 @@ de:
           beigetreten und kann eine entsprechende Zertifizierung vorweisen und
           erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
           Verarbeitung von Daten. Bitte beachten Sie auch die
-          Datenschutzhinweise von Freshdesk: http://freshdesk.com/privacy. Zur
+          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
           Verwendung des Service-Portals ist mindestens die Angabe einer
           korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
           möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es

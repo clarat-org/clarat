@@ -343,15 +343,38 @@ de:
           die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
           nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
           der vorstehenden Regelung sind unsere Dienstleistungspartner, die
-          wir zur Abwicklung unserer Leistungen benötigen. In diesem
-          Zusammenhang greifen wir für den Versand unseres Newsletters auf die
-          Unterstützung von MailChimp/Mandrill,
-          (%{mailchimp}) zurück, einem Unternehmen der The
-          Rocket Science Group, LLC aus den USA zurück. Dort erfolgt die
-          Datenverarbeitung für uns streng weisungsgebunden als technische
-          Dienstleistung im Rahmen einer Auftragsdatenverarbeitung. Ansonsten
-          erfolgt eine Weitergabe von Daten an Dritte nur, wenn Sie eingewilligt
-          haben oder wir hierzu rechtlich verpflichtet sind.
+          wir zur Abwicklung unserer Leistungen benötigen.
+        nested_title_one: "7.1. MailChimp/Mandrill"
+        nested_text_one: |
+          Für den Versand unseres Newsletters
+          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
+          einem Unternehmen der The Rocket Science Group, LLC aus den USA
+          zurück. Dort erfolgt die Datenverarbeitung für uns streng
+          weisungsgebunden als technische Dienstleistung im Rahmen einer
+          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
+          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
+          verpflichtet sind.
+        nested_title_two: "7.2. Freshdesk"
+        nested_text_two: |
+          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
+          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
+          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
+          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
+          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
+          Verarbeitung von Daten. Bitte beachten Sie auch die
+          Datenschutzhinweise von Freshdesk: http://freshdesk.com/privacy. Zur
+          Verwendung des Service-Portals ist mindestens die Angabe einer
+          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
+          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
+          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
+          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
+          optional und dient der Verbesserung und Beschleunigung unseres
+          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
+          Datenspeicherung im externen System von Freshdesk nicht einverstanden
+          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
+          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
+
+
       chapter_eight:
         heading: "8. Recht auf Widerspruch und Ansprechpartner"
         text: |

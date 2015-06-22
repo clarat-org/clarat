@@ -36,7 +36,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(personal hotline email chat forum)
+  enumerize :encounter, in: %w(personal hotline email chat forum online-course)
 
   # Friendly ID
   extend FriendlyId

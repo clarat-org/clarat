@@ -2,7 +2,7 @@
 # infused into the texts of other models.
 class Definition < ActiveRecord::Base
   # Validations
-  validates :key, presence: true, uniqueness: true, length: { maximum: 50 },
+  validates :key, presence: true, uniqueness: true,
                   exclusion: { in: %w(dfn class JS tooltip) }
   validates :explanation, presence: true, length: { maximum: 500 }
 
@@ -24,9 +24,9 @@ class Definition < ActiveRecord::Base
         next unless string.match regex
 
         # insert the definition markup around a found definition key.
-        string.gsub! regex,
-                     "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
-                     '\1</dfn>'
+        string.sub! regex,
+                    "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
+                    '\1</dfn>'
 
         # a string may only provide definitions for one key in the set
         break

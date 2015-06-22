@@ -4,26 +4,41 @@ footer.footer-main
       .footer-main__subscribe
         = render 'subscriptions/shared/new', subscription: subscription
 
-        - cache 'footer_links_1' do
+        / ToDo: Temporarily disable Social Media buttons
+        / - cache 'footer_links_1' do
 
-          .Social-media
-            = link_to t('.gplus.anchor'),
-                      t('.gplus.href'),
-                      target: '_blank',
-                      class: 'Social-media__item Social-media__item--googleplus'
-            = link_to t('.twitter.anchor'),
-                      t('.twitter.href'),
-                      target: '_blank',
-                      class: 'Social-media__item Social-media__item--twitter'
-            = link_to t('.fb.anchor'),
-                      t('.fb.href'),
-                      target: '_blank',
-                      class: 'Social-media__item Social-media__item--facebook'
+        /   .Social-media
+        /     = link_to t('.gplus.anchor'),
+        /               t('.gplus.href'),
+        /               target: '_blank',
+        /               class: 'Social-media__item Social-media__item--googleplus'
+        /     = link_to t('.twitter.anchor'),
+        /               t('.twitter.href'),
+        /               target: '_blank',
+        /               class: 'Social-media__item Social-media__item--twitter'
+        /     = link_to t('.fb.anchor'),
+        /               t('.fb.href'),
+        /               target: '_blank',
+        /               class: 'Social-media__item Social-media__item--facebook'
 
       .footer-main__about
         - cache 'footer_links_2' do
 
           .mascot.mascot--footer
+          nav.nav-site
+            ul.nav-site__list
+              li.nav-site__listitem
+                = link_to t('.blog'), 'http://blog.clarat.org/'
+              li.nav-site__listitem
+                #google_translate_element.JS-tooltip
+                javascript:
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
+                  }
+                script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"
+
+        - cache 'footer_links_4' do
+
           nav.nav-site
             ul.nav-site__list
               li.nav-site__listitem
@@ -45,11 +60,11 @@ footer.footer-main
               = link_to t('.tos'), '/rechtliche-hinweise'
             li.nav-legal__listitem
               = link_to t('.privacy'), '/datenschutzhinweise'
-            li.nav-legal__listitem
-              / TODO: Refactor or remove after translation testing
-              #google_translate_element
-              javascript:
-                function googleTranslateElementInit() {
-                  new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                }
-              script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"
+            / li.nav-legal__listitem
+            /   / TODO: Refactor or remove after translation testing
+            /   #google_translate_element.JS-tooltip
+            /   javascript:
+            /     function googleTranslateElementInit() {
+            /       new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
+            /     }
+            /   script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"

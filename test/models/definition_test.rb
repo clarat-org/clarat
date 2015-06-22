@@ -16,7 +16,6 @@ describe Definition do
   describe 'validations' do
     it { subject.must validate_presence_of :key }
     it { subject.must validate_uniqueness_of :key }
-    it { subject.must validate_length_of(:key).is_at_most 50 }
     it { subject.must validate_presence_of :explanation }
     it { subject.must validate_length_of(:explanation).is_at_most 500 }
   end
@@ -34,14 +33,14 @@ describe Definition do
     end
 
     describe '::infuse' do
-      it 'should put definition markup around a found definition key' do
+      it 'should put definition markup around the first found definition key' do
         FactoryGirl.create :definition, key: 'little', explanation: 'small'
 
         string = 'Little Mary had a little lamb.'
 
         Definition.infuse(string).must_equal(
-          "<dfn class='JS-tooltip' data-id='1'>Little</dfn> Mary had a"\
-          " <dfn class='JS-tooltip' data-id='1'>little</dfn> lamb."
+          "<dfn class='JS-tooltip' data-id='1'>Little</dfn> Mary had a little"\
+          ' lamb.'
         )
       end
 

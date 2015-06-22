@@ -39,25 +39,31 @@
                        google_optout: \
                         link_to( \
                           'http://tools.google.com/dlpage/gaoptout',
-                          'http://tools.google.com/dlpage/gaoptout'),
+                          'http://tools.google.com/dlpage/gaoptout',
+                          target: '_blank'),
                         analytics_terms: link_to( \
                           'http://www.google.com/analytics/terms/de.html',
-                          'http://www.google.com/analytics/terms/de.html'),
+                          'http://www.google.com/analytics/terms/de.html',
+                          target: '_blank'),
                         policies: link_to( \
                           'http://www.google.com/analytics/terms/de.html',
-                          'http://www.google.com/analytics/terms/de.html'),
+                          'http://www.google.com/analytics/terms/de.html',
+                          target: '_blank'),
                         ads: link_to( \
                           'https://www.google.de/settings/ads',
-                          'https://www.google.de/settings/ads')
+                          'https://www.google.de/settings/ads',
+                          target: '_blank')
                 p
                   == t  '.chapter_three'\
                         '.nested_text_one_second_paragraph',
                         optimizely_privacy: \
                           link_to('http://www.optimizely.com/privacy',
-                                  'http://www.optimizely.com/privacy'),
+                                  'http://www.optimizely.com/privacy',
+                                  target: '_blank'),
                         optimizely_optout: \
                           link_to('http://www.optimizely.com/opt_out',
-                                  'http://www.optimizely.com/opt_out')
+                                  'http://www.optimizely.com/opt_out',
+                                  target: '_blank')
               li
                 h4.Privacy__title
                   = t '.chapter_three.nested_title_two'
@@ -79,7 +85,8 @@
                   == t  '.chapter_five.nested_text_one',
                         facebook: \
                           link_to('https://de-de.facebook.com/policy.php',
-                                  'https://de-de.facebook.com/policy.php')
+                                  'https://de-de.facebook.com/policy.php',
+                                  target: '_blank')
               li
                 h4.Privacy__title
                   = t '.chapter_five.nested_title_two'
@@ -87,7 +94,9 @@
                   == t  '.chapter_five.nested_text_two',
                         google: \
                           link_to( \
-                            'https://www.google.de/intl/de/policies/privacy/', 'https://www.google.de/intl/de/policies/privacy/')
+                            'https://www.google.de/intl/de/policies/privacy/',
+                            'https://www.google.de/intl/de/policies/privacy/',
+                            target: '_blank')
               li
                 h4.Privacy__title
                   = t '.chapter_five.nested_title_three'
@@ -95,7 +104,8 @@
                   == t  '.chapter_five.nested_text_three',
                         twitter: \
                           link_to('https://twitter.com/privacy?lang=de',
-                                  'https://twitter.com/privacy?lang=de')
+                                  'https://twitter.com/privacy?lang=de',
+                                  target: '_blank')
               li
                 h4.Privacy__title
                   = t '.chapter_five.nested_title_four'
@@ -112,14 +122,19 @@
                   == t '.chapter_seven.nested_title_one'
                 p
                   == t '.chapter_seven.nested_text_one',
-                   mailchimp: \
+                    mailchimp: \
                     link_to('http://mailchimp.com/legal/terms/',
-                            'http://mailchimp.com/legal/terms/')
+                            'http://mailchimp.com/legal/terms/',
+                            target: '_blank')
               li
                 h4.Privacy__title
                   == t '.chapter_seven.nested_title_two'
               p
-                  == t '.chapter_seven.nested_text_two'
+                  == t '.chapter_seven.nested_text_two',
+                    freshdesk: \
+                    link_to('http://freshdesk.com/privacy',
+                            'http://freshdesk.com/privacy',
+                            target: '_blank')
 
 
           li
@@ -128,7 +143,8 @@
               == t  '.chapter_eight.text',
                     google_optout: \
                       link_to('https://tools.google.com/dlpage/gaoptout?hl=de',
-                              'https://tools.google.com/dlpage/gaoptout?hl=de')
+                              'https://tools.google.com/dlpage/gaoptout?hl=de',
+                              target: '_blank')
             p = t '.chapter_eight.nested_text_second_paragraph'
 
             .Privacy__address

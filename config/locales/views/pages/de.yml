@@ -89,7 +89,7 @@ de:
       heading: "Datenschutzhinweise"
       intro_first_part: |
         Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
-        an Clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
+        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
         Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
         wir personenbezogene Daten ausschließlich im Rahmen der geltenden
         Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
@@ -121,7 +121,7 @@ de:
           Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
           oder über das Kon-taktformular, bzw. über eine Live-Chat-Funktion
           freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
-          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleit-zahl sowie
+          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
           unter Umständen weitere personenbezogene Daten übermitteln, speichern
           und nutzen wir diese Angaben nur zur Erbringung der jeweils
           angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
@@ -230,12 +230,12 @@ de:
           haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies,
           hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa
           um den zuletzt von Ihnen nach-gesuchten Standort für Sie zu speichern.
-          Zu diesem Zweck verwenden wir u.a. sog. „Sessi-on-Cookies“, die nur
+          Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur
           während der Dauer ihres Besuches auf der Webseite funktionieren und
           nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende
           Web-Session oder den Browser schließen, wird das Cookie automatisch
           gelöscht. Davon ausgenommen sind die Informationen über den von Ihnen
-          zuletzt nachgesuchten Standort; diese werden nach Ab-lauf von drei
+          zuletzt nachgesuchten Standort; diese werden nach Ablauf von drei
           Monaten automatisch gelöscht.
         nested_text_two_second_paragraph: |
           Browser Einstellungen: Die meisten Browser sind so eingestellt, dass
@@ -244,7 +244,7 @@ de:
           benachrichtigt, sobald Cookies gesendet werden. Außerdem können Sie
           Cookies auch jederzeit von Ihrem Rechner löschen (z.B: im Windows
           Explorer). Wenn Sie dies tun möchten, verwenden Sie bitte die
-          Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebs-systems. Wir
+          Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir
           möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
           Funktionsfähigkeit dieser Webseite beeinträchtigen können.
       chapter_four:
@@ -476,7 +476,7 @@ de:
 
     shared:
       address:
-        name: "Clarat"
+        name: "clarat"
         name2: "Projekt der Benckiser Stiftung Zukunft"
         street: "Französische Straße 47"
         zip_city: "10117 Berlin"

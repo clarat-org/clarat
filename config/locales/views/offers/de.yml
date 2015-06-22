@@ -25,7 +25,7 @@ de:
 
       # index partials
       search_results:
-        more: "(Mehr …)"
+        more: "(Weitere Angebote …)"
         personal_offers:
           zero: "Keine Vor-Ort-Angebote"
           one: "Ein Vor-Ort-Angebot"
@@ -112,7 +112,7 @@ de:
           lit: "Litauisch"
 
       categories_sidebar:
-        all_categories: "‹ Alle Kategorien"
+        all_categories: "Alle Kategorien"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

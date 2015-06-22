@@ -11,8 +11,9 @@ Clarat.Tooltip =
       at: 'top left'
       effect: false
       viewport: $(window)
-      adjust:
-        method: 'none shift'
+      # To make sure the tooltip is always shown above
+      # adjust:
+      #   method: 'none shift'
     content:
       text: (event, api) ->
         # ToDo: Refactor, refactor, refactor...

@@ -157,11 +157,6 @@ ActiveRecord::Schema.define(version: 20150618162316) do
   add_index "locations", ["federal_state_id"], name: "index_locations_on_federal_state_id", using: :btree
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
-  create_table "offer_relations", force: true do |t|
-    t.integer "offer_id",   null: false
-    t.integer "related_id", null: false
-  end
-
   create_table "offers", force: true do |t|
     t.string   "name",                       limit: 80,                 null: false
     t.text     "description",                                           null: false

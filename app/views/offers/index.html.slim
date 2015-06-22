@@ -12,6 +12,19 @@
                                               search_cache: @search_cache,
                                               facets: false
 
+  aside.aside-standard
+    .aside-standard__container
+      h5.aside-standard__headline = I18n.t('offers.map.headline_small_map')
+
+      #map-container
+        #map-canvas
+
+      a.map__button--enlarge.big-map_open[href="#big-map"] = I18n.t('offers.map.enlarge_map')
+
+      #big-map
+
+         button.big-map_close X
+
 / Alert user when we used default location because they didn't give one
 - if @search_cache.search_location.blank?
   - content_for :view_specific_scripts do

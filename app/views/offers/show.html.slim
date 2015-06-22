@@ -68,5 +68,5 @@
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-/ - content_for :view_specific_scripts do
-/   = javascript_include_tag "gmaps_search_results.js"
+/- content_for :view_specific_scripts do
+/  = javascript_include_tag "gmaps_search_results.js"

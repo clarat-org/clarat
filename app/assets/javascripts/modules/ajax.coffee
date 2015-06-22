@@ -60,8 +60,14 @@ class Ajax
       processedIndex = @stack[container].lastIndexOf targetURL
       @stack[container].splice processedIndex, 1
 
-  # remove waiting-for-ajax display styling when stack empty
+  # callback called when ajax response handling is completed; both on success
+  # and error
   onComplete: (container) ->
-    container.removeClass 'Ajax' unless @stack[container]?.length
+    unless @stack[container]?.length # when stack empty
+      # remove waiting-for-ajax display styling
+      container.removeClass 'Ajax'
+
+      # trigger event that signals stack being empty
+      $(document).trigger 'ajax_done'
 
 Clarat.Ajax = new Ajax

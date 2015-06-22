@@ -3,6 +3,8 @@
                                         search_cache: @search_cache,
                                         search: @search
 
+#map-data data={markers: @markers.to_json, position: @position.to_json}
+
 / trigger facet count replacement
 javascript:
   Clarat.CategoryTree.updateFacets(#{@facets.to_json.html_safe});

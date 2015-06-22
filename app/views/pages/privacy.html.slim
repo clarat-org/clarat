@@ -105,11 +105,23 @@
             p = t '.chapter_six.text'
           li
             h3.Privacy__title = t '.chapter_seven.heading'
-            p
-              == t '.chapter_seven.text',
+            p = t '.chapter_seven.text'
+            ul.Privacy__list--sublist
+              li
+                h4.Privacy__title
+                  == t '.chapter_seven.nested_title_one'
+                p
+                  == t '.chapter_seven.nested_text_one',
                    mailchimp: \
                     link_to('http://mailchimp.com/legal/terms/',
                             'http://mailchimp.com/legal/terms/')
+              li
+                h4.Privacy__title
+                  == t '.chapter_seven.nested_title_two'
+              p
+                  == t '.chapter_seven.nested_text_two'
+
+
           li
             h3.Privacy__title = t '.chapter_eight.heading'
             p

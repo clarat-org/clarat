@@ -22,7 +22,7 @@ de:
     map:
       show_on_big_map: "Auf großer Karte anzeigen"
       enlarge_map: "Karte vergrößern"
-      headline_small_map: "Vor-Ort-Angebote auf der Karte"
+      headline_small_map: "Angebote vor Ort auf der Karte"
 
     index:
       location_fallback: |
@@ -33,9 +33,9 @@ de:
       search_results:
         more: "(Weitere Angebote …)"
         personal_offers:
-          zero: "Keine Vor-Ort-Angebote"
-          one: "Ein Vor-Ort-Angebot"
-          other: "%{count} Vor-Ort-Angebote"
+          zero: "Keine Angebote vor Ort"
+          one: "Ein Angebot vor Ort"
+          other: "%{count} Angebote vor Ort"
         remote_offers:
           zero: "Keine Telefon- und Onlineberatungen"
           one: "Eine Telefon- oder Onlineberatung"
@@ -64,7 +64,7 @@ de:
 
         collection_names:
           blank: "Egal"
-          personal: "Vor-Ort-Angebote"
+          personal: "Angebote vor Ort"
           remote: "Telefon- und Onlineberatungen"
           babies: "Babys"
           toddler: "Kleinkinder"

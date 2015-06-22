@@ -15,8 +15,9 @@
         = t '.remote_offers', count: search.remote_hits.nbHits
         - if remote_offers[1]
           / If more than one national offer
-          =< link_to t('.more'),
-                     offers_path(search_form: search_cache.remote_focus)
+          .more_remote-offers_open
+            =< link_to t('.more'),
+              offers_path(search_form: search_cache.remote_focus)
 
       ul.Listing-results__list
         = render 'offers/index/single_search_result', offer: remote_offers.first

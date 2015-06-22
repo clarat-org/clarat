@@ -20,7 +20,6 @@ enlargeMap = ->
   Clarat.GMaps.Map.setMapBounds()
 
 revertMap = ->
-  map = Clarat.currentMap.instance # local var
   map_canvas = $("#map-canvas")
   map_container = $(".template--offers-index #map-container")
 

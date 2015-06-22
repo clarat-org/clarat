@@ -45,7 +45,8 @@
             - cache [@offer.location, 'offer_show_map']
 
               #map-container
-                #map-canvas data={ markers: @markers.to_json }
+                #map-data data={ markers: @markers.to_json }
+                #map-canvas
 
             = render 'offers/show/who_location', offer: @offer,
                                                markers: @markers

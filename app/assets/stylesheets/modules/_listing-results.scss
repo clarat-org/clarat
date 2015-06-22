@@ -10,13 +10,13 @@
   font-size: 40px;
 
   h2 {
-    font-size: 30px;
     margin: 100px 0 0 0;
+    font-size: 30px;
   }
 
   p {
-    font-size: $base_font_size;
     margin: 5px 20%;
+    font-size: $base_font_size;
   }
 }
 
@@ -38,9 +38,17 @@
 
 .Listing-results__headline {
   @extend %roboto_bold;
+  position: relative;
   margin: 0.5em 0;
   font-weight: 400;
   font-size: 20px;
+
+  a {
+    @extend %small_button_style;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
 }
 

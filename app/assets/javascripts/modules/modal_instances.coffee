@@ -9,30 +9,27 @@ initMapModal = ->
       onclose: revertMap
 
 enlargeMap = ->
-  map = Clarat.currentMap # local var
+  map = Clarat.currentMap.instance # local var
   map_modal = $("#big-map")
   map_canvas = $("#map-canvas")
 
-  unless map.initialCenter == "undefined"
-    Clarat.currentMap.initialCenter = map.getCenter() # Set in global namespace
-
   map_canvas.css "height", "100%"
-  map.setZoom 13
   map_canvas.appendTo map_modal # move into inner modal container
   google.maps.event.trigger map, 'resize'
-  return
+
+  Clarat.GMaps.Map.setMapBounds()
 
 revertMap = ->
-  map = Clarat.currentMap # local var
+  map = Clarat.currentMap.instance # local var
   map_canvas = $("#map-canvas")
   map_container = $(".template--offers-index #map-container")
 
-  map.setCenter map.initialCenter # Get from global namespace
   map_canvas.css "height", 300 # or inital
-  map.setZoom 15 # or inital
   map_canvas.appendTo map_container # move back to original place
-  google.maps.event.trigger map, 'resize'
-  return
+
+  google.maps.event.trigger Clarat.currentMap.instance, 'resize'
+  # Set original bounds
+  Clarat.GMaps.Map.setMapBounds()
 
 
 $(document).on 'page:load', initMapModal

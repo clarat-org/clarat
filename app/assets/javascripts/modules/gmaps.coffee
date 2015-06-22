@@ -56,14 +56,24 @@ Clarat.GMaps =
             includedPoints.push userPosition
             bounds.extend userPosition
 
-        # Expand Map to Include All Markers
-        if includedPoints.length > 1
-          map.fitBounds bounds
-        else
-          map.setCenter bounds.getCenter()
-          map.setZoom 15
+        # Save data for later use
+        Clarat.currentMap = {}
+        Clarat.currentMap.instance = map
+        Clarat.currentMap.bounds = bounds
+        Clarat.currentMap.includedPoints = includedPoints
 
-      Clarat.currentMap = map
+        Clarat.GMaps.Map.setMapBounds()
+
+    setMapBounds: ->
+      # Expand Map to Include All Markers
+      if Clarat.currentMap.includedPoints.length > 1
+        Clarat.currentMap.instance.fitBounds Clarat.currentMap.bounds
+      else
+        Clarat.currentMap.instance.setCenter(
+          Clarat.currentMap.bounds.getCenter()
+        )
+        Clarat.currentMap.instance.setZoom 15
+
 
     bindMapsEvents: (map, marker, markerData, infowindow) ->
       if not markerData.organization_display_name # if is organization

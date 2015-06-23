@@ -8,7 +8,8 @@
       - unless offer.personal?
         span.Listing-results__contact-type
           = t ".encounters.#{offer.encounter}"
-      span.Listing-results__emphasis.Listing-results__organization
-        = offer.organization_display_name
-      - if offer.location
-        = offer.location_address
+      span.Listing-results__organization
+        .Listing-results__emphasis
+          = offer.organization_display_name
+        - if offer.location
+          = offer.location_address

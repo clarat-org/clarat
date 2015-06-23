@@ -59,6 +59,7 @@
 
 .Listing-results__emphasis {
   @extend %roboto_bold;
+  display: inherit;
 }
 
 

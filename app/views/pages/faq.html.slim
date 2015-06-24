@@ -46,7 +46,7 @@
         h3.section-question-group__headline = t '.section_two.heading'
         .section-question-group__body
           h4.FAQ_question = t '.section_two.question_one'
-          .FAQ_paragraph = t 'section_two.answer_one'
+          .FAQ_paragraph = t '.section_two.answer_one'
           h4.FAQ_question = t '.section_two.question_two'
           .FAQ_paragraph
             == t '.section_two.answer_two',
@@ -71,12 +71,12 @@
               == t '.section_three.answer_three_third_part'
             br
               == t '.section_three.answer_three_fourth_part'
-            br
-              == t '.section_three.answer_three_fifth_part'
-          h4.FAQ_question = t '.section_three.question_four'
+          h4.FAQ_question == t '.section_three.question_four'
           .FAQ_paragraph = t '.section_three.answer_four'
           h4.FAQ_question = t '.section_three.question_five'
           .FAQ_paragraph = t '.section_three.answer_five'
+          h4.FAQ_question = t '.section_three.question_six'
+          .FAQ_paragraph = t '.section_three.answer_six'
 
       section
         h3.section-question-group__headline = t '.section_four.heading'

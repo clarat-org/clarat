@@ -184,7 +184,9 @@ de:
           gibt es oft sprachliche Fehler. Es kann also sein, dass etwas nicht
           ganz richtig übersetzt wird. Schau dann lieber noch einmal in den
           deutschen Text.
-        question_three: "> Gibt es clarat auf verschiedenen Sprachen?"
+        question_three: |
+          > Worauf muss ich bei der Suche achten, wenn ich eine andere Sprache
+          benutze?
         answer_three_first_part: |
           Bei der Themen-Suche musst du das hier beachten:
         answer_three_second_part: |
@@ -205,18 +207,20 @@ de:
           Unterstützungsangebote angezeigt. Diese Angebote werden sofort
           übersetzt. Und zwar in die Sprache, die du vorher ausgewählt hast.
           Dadurch kannst du leicht das richtige Angebot finden.
-        answer_three_fifth_part: |
+        question_four: |
           Warum schreibt ihr immer nur zum Beispiel <i>Schüler</i> und nicht
-          <i>Schüler und Schülerinnen</i>? Bei clarat nutzen wir eine einfache
-          Sprache. Das bedeutet auch, dass wir kurze Sätze verwenden. Deswegen
-          sagen wir nicht jedesmal Schüler und Schülerinnen. Sondern nur
-          Schüler. Obwohl wir Schüler und Schülerinnen meinen. Denn wir finden
-          es wichtig, immer alle gleich zu behandeln. Aber kurze Sätze kann
-          man leichter lesen. Und das machen wir für alle Wörter so. Das hilft
-          Kindern, Jugendlichen und Familien dabei, schnell die passende Hilfe
-          zu finden. Und darum geht es bei clarat.
-        question_four: "> Warum benutzt ihr die Abkürzung LGBTI?"
+          <i>Schüler und Schülerinnen</i>?
         answer_four: |
+          Bei clarat nutzen wir eine einfache Sprache. Das bedeutet auch, dass
+          wir kurze Sätze verwenden. Deswegen sagen wir nicht jedesmal Schüler
+          und Schülerinnen. Sondern nur Schüler. Obwohl wir Schüler und
+          Schülerinnen meinen. Denn wir finden es wichtig, immer alle gleich zu
+          behandeln. Aber kurze Sätze kann man leichter lesen. Und das machen
+          wir für alle Wörter so. Das hilft Kindern, Jugendlichen und Familien
+          dabei, schnell die passende Hilfe zu finden. Und darum geht es bei
+          clarat.
+        question_five: "> Warum benutzt ihr die Abkürzung LGBTI?"
+        answer_five: |
           Bei clarat gibt es auch Angebote für Kinder, Jugendliche und Eltern,
           die nicht heterosexuell sind. Das können Lesben, Schwule,
           Bisexuelle, Transsexuelle und Intersexuelle sein. Die können wir
@@ -225,8 +229,8 @@ de:
           Abkürzung LGBTI. Das ist die englische Abkürzung für Lesben,
           Schwule, Bisexuelle, Transsexuelle und Intersexuelle. Eine deutsche
           gibt es nicht.
-        question_five: "> Warum benutzen wir den Begriff Migranten?"
-        answer_five: |
+        question_six: "> Warum benutzen wir den Begriff Migranten?"
+        answer_six: |
           Bei clarat benutzen wir immer eine einfache Sprache. Deswegen
           benutzen wir Wörter, die man leicht versteht. Und die viele Menschen
           kennen. Außerdem versuchen wir, so politisch korrekt wie möglich zu
@@ -260,15 +264,15 @@ de:
           grundsätzlich bei clarat?] nachlesen.
         question_three: "> Wie finde ich meine Angebote bei clarat?"
         answer_three: |
-          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation eintragen.
-          Und in dem Feld <i>Wo</i> den Standort deiner Organisation. Zum Beispiel
-          <i>Mustermannstraße 14 Berlin</i>. Dann bekommst du die Angebote für diesen
-          Standort in einer Übersicht angezeigt. Falls deine Organisation
-          mehrere Standorte in Berlin hat, gib in dem Feld <i>Wo</i> nur
-          <i>Berlin</i> ein. Momentan haben wir fast ausschließlich Angebote für
-          Berlin gesammelt. Die meisten Angebote gibt es bisher für den
-          Stadtteil Friedrichshain-Kreuzberg. Wir werden auch in Zukunft weiter
-          Angebote sammeln.
+          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation
+          eintragen. Und in dem Feld <i>Wo</i> den Standort deiner Organisation.
+          Zum Beispiel <i>Mustermannstraße 14 Berlin</i>. Dann bekommst du die
+          Angebote für diesen Standort in einer Übersicht angezeigt. Falls deine
+          Organisation mehrere Standorte in Berlin hat, gib in dem Feld
+          <i>Wo</i> nur <i>Berlin</i> ein. Momentan haben wir fast
+          ausschließlich Angebote für Berlin gesammelt. Die meisten Angebote
+          gibt es bisher für den Stadtteil Friedrichshain-Kreuzberg. Wir werden
+          auch in Zukunft weiter Angebote sammeln.
         question_four: "> Wie kann ich Fehler oder Änderungswünsche melden?"
         answer_four: |
           Melde dich bei uns. Du kannst uns Fehler und Änderungswünsche einfach
@@ -288,7 +292,7 @@ de:
         answer_two_first_part: |
           Bei clarat gibt es Hilfe für Jugendliche, Kinder und Familien. Aber
           auch für Menschen, die ihnen helfen wollen. Es gibt verschiedene Arten
-          von Unterstützungsangeboten. Zum Beispiel:
+          von Unterstützungsangeboten. Zum Beispiel bei:
         answer_two_bullet_one: |
           Streit in der Familie, Migranten-Familien in Deutschland
         answer_two_bullet_two: |

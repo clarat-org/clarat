@@ -83,6 +83,253 @@ de:
     faq:
       title: "Häufige Fragen"
       heading: "Häufige Fragen"
+      section_one:
+        heading: "Wer, wie, was?"
+        question_one: "> Was macht clarat?"
+        answer_one: |
+          clarat hilft Kindern, Jugendlichen und Familien, die Unterstützung in
+          ihrer Nähe suchen. Hier findest du Hilfe bei Fragen und bei Problemen.
+          Für dich, deine Familie und deine Freunde. Oder auch für andere Kinder
+          und Jugendliche, die du kennst und die Hilfe brauchen. Denn oft gibt
+          es ganz in deiner Nähe Hilfe und du weißt nichts davon. Oder du weißt,
+          dass es diese Hilfe gibt. Aber dir ist nicht klar, wie du sie findest.
+          Das wollen wir mit clarat ändern. Was clarat macht, kannst du dir auch
+          in einem %{movie} angucken.
+        question_two: "> Für wen ist clarat?"
+        answer_two: |
+          clarat ist für alle da. Vor allem für Kinder, Jugendliche und Familien
+          auf der Suche nach Unterstützung. Aber auch für Menschen, die ihnen
+          helfen wollen. Zum Beispiel Erzieher, Lehrer oder Ärzte. Oder
+          Angehörige. Zum Beispiel Schwestern, Brüder, Omas oder Onkel. Oder
+          auch Nachbarn und Freunde.
+        question_three: "> Wie funktioniert clarat?"
+        answer_three: |
+          Gib ein, was dich bedrückt. Und wo du Hilfe suchst. Dann zeigen wir
+          dir passende Hilfe in deiner Nähe. Oder Hilfe übers Telefon oder
+          Internet. Hier [interner Link zu der Frage: Wie finde ich
+          Unterstützungsangebote bei clarat?] erklären wir dir genau, wie du
+          findest, was du suchst. Wenn du auf ein Angebot klickst, sagen wir
+          dir, was du als nächstes tun musst. Zum Beispiel, ob du anrufen oder
+          eine E-Mail schreiben sollst. Oder einfach vorbeigehen kannst.
+        question_four: "> Was ist das Besondere an clarat?"
+        answer_four: |
+          clarat zeigt dir Hilfe in deiner Nähe. Du findest alle
+          Unterstützungsangebote in einer Übersicht. Und zwar auf einen Blick.
+          Außerdem sagen wir dir genau, was du tun musst, um die Hilfe zu
+          finden. Und damit alle Hilfe finden können, sind die Angebote bei
+          clarat in einer einfachen Sprache. [interner Link zu der Frage: Warum
+          schreibt clarat immer in einer einfachen Sprache?]  Diese einfache
+          Sprache ist für alle leicht verständlich. Denn bei clarat sollen auch
+          Menschen Hilfe finden, die nicht so gut Deutsch können. Du kannst die
+          Unterstützungsangebote auch auf Arabisch, Englisch, Französisch,
+          Polnisch, Russisch und Türkisch lesen.
+        question_five: "> Wer steckt hinter clarat?"
+        answer_five: |
+          clarat ist ein Projekt von der %{benckiser}. Das ist
+          eine Familienstiftung, die viel für Kinder und Jugendliche macht. Die
+          Idee zu clarat ist Mitte 2014 entstanden. Das clarat-Team gibt es seit
+          September 2014. Wenn du mehr über uns erfahren möchtest, schau
+          %{about_us}.
+        question_six: "> Wer finanziert clarat?"
+        answer_six: |
+          Das Geld für clarat kommt von der Benckiser Stiftung Zukunft.
+        question_seven: "> Wer ist die Benckiser Stiftung?"
+        answer_seven: |
+          Die Benckiser Stiftung Zukunft ist eine Familienstiftung. Das ist eine
+          Stiftung, die von einer Familie gegründet worden ist. Die Stiftung
+          macht schon lange viel für Kinder und Jugendliche in Deutschland.
+          %{benckiser_video} kannst du in einem Video mehr über die Stiftung
+          erfahren.
+      section_two:
+        heading: "Wieso, weshalb, warum?"
+        question_one: "> Wieso gibt es clarat?"
+        answer_one: |
+          In Deutschland gibt es viele Angebote, die Kinder, Jugendliche und
+          Familien unterstützen. Sie sind aber oft schwer zu finden. Das wollen
+          wir mit clarat ändern. Mit clarat können Kinder, Jugendliche und
+          Familien schnell und einfach Hilfe in ihrer Nähe finden. Aber auch
+          Menschen, die ihnen helfen wollen. Zum Beispiel Erzieher, Lehrer oder
+          Ärzte. Oder Angehörige. Zum Beispiel Schwestern, Brüder, Omas oder
+          Onkel. Oder auch Nachbarn und Freunde.
+        question_two: |
+          > Warum schreibt clarat immer in einer einfachen Sprache?
+        answer_two: |
+          Damit alle Hilfe finden, schreiben wir alle Angebote in einer
+          einfachen Sprache. Diese einfache Sprache ist für alle leicht
+          verständlich. Und weil die Texte bei clarat kurz sind, sieht man
+          schnell, welche Hilfen es gibt. Und kann die passende Hilfe für sich
+          finden. Die clarat Sprache ist auch für Menschen, die nicht so gut
+          Deutsch können. Du kannst dir Angebote auf Arabisch, Englisch,
+          Französisch, Polnisch, Russisch und Türkisch übersetzen lassen. In der
+          einfachen Sprachen müssen komplizierte Dinge manchmal einfacher
+          erklärt werden, als sie in Wirklichkeit sind. Vielleicht findest du,
+          dass etwas anders erklärt werden soll. Dann gib uns bitte Bescheid. Am
+          besten schreibst du uns eine E-Mail an %{mailto}
+      section_three:
+        heading: "Hast du Fragen zur clarat-Sprache?"
+        question_one: "> Gibt es clarat auf verschiedenen Sprachen?"
+        answer_one: |
+          Bei clarat kannst du dir Angebote auf Arabisch, Englisch,
+          Französisch, Polnisch, Russisch und Türkisch übersetzen lassen.
+          Wähle deine Sprache aus und die Seite wird übersetzt. Das kannst du
+          unten auf der Seite mit dem Google Translator machen. Der Google
+          Translator macht automatische Übersetzungen. Weil die Übersetzung
+          automatisch gemacht wird, gibt es manchmal sprachliche Fehler. Es
+          kann also sein, dass etwas komisch klingt. Schau dann lieber noch
+          einmal in den deutschen Text.
+        question_two: |
+          > Worauf muss ich bei der Übersetzung in andere Sprachen achten?
+        answer_two: |
+          Der Google Translator macht automatische Übersetzungen. Deswegen
+          gibt es oft sprachliche Fehler. Es kann also sein, dass etwas nicht
+          ganz richtig übersetzt wird. Schau dann lieber noch einmal in den
+          deutschen Text.
+        question_three: "> Gibt es clarat auf verschiedenen Sprachen?"
+        answer_three_first_part: |
+          Bei der Themen-Suche musst du das hier beachten:
+        answer_three_second_part: |
+          Wenn du clarat auf einer anderen Sprache benutzt, kannst du am
+          besten über die Themen suchen. Es gibt die Themen Familie,
+          Gesundheit, Lernen, Gewalt. Klick einfach auf das passende runde
+          Bild. clarat schlägt dir dann noch mehr Themen vor, die du anklicken
+          kannst. Außerdem gibt es das Thema Notfall. Hier findest du Hilfe
+          bei sehr dringenden Problemen.
+        answer_three_third_part: |
+          Bei der Suche über das Feld <i>Finde</i> musst du das hier beachten:
+        answer_three_fourth_part: |
+          Du kannst auch ein Suchwort im Feld <i>Finde</i> eingeben. Pass auf, du
+          musst hier deutsche Wörter eingeben. Sonst funktioniert die Suche
+          nicht. Der Google Translator kann aber noch mehr. Wenn du eine
+          Sprache ausgewählt hast, kannst du einen Suchbegriff eingeben. Der
+          Suchbegriff muss immer auf Deutsch sein. Du bekommst dann weitere
+          Unterstützungsangebote angezeigt. Diese Angebote werden sofort
+          übersetzt. Und zwar in die Sprache, die du vorher ausgewählt hast.
+          Dadurch kannst du leicht das richtige Angebot finden.
+        answer_three_fifth_part: |
+          Warum schreibt ihr immer nur zum Beispiel <i>Schüler</i> und nicht
+          <i>Schüler und Schülerinnen</i>? Bei clarat nutzen wir eine einfache
+          Sprache. Das bedeutet auch, dass wir kurze Sätze verwenden. Deswegen
+          sagen wir nicht jedesmal Schüler und Schülerinnen. Sondern nur
+          Schüler. Obwohl wir Schüler und Schülerinnen meinen. Denn wir finden
+          es wichtig, immer alle gleich zu behandeln. Aber kurze Sätze kann
+          man leichter lesen. Und das machen wir für alle Wörter so. Das hilft
+          Kindern, Jugendlichen und Familien dabei, schnell die passende Hilfe
+          zu finden. Und darum geht es bei clarat.
+        question_four: "> Warum benutzt ihr die Abkürzung LGBTI?"
+        answer_four: |
+          Bei clarat gibt es auch Angebote für Kinder, Jugendliche und Eltern,
+          die nicht heterosexuell sind. Das können Lesben, Schwule,
+          Bisexuelle, Transsexuelle und Intersexuelle sein. Die können wir
+          aber nicht immer alle aufzählen und erklären. Denn die Texte bei
+          clarat müssen einfach und kurz sein. Deswegen benutzen wir die
+          Abkürzung LGBTI. Das ist die englische Abkürzung für Lesben,
+          Schwule, Bisexuelle, Transsexuelle und Intersexuelle. Eine deutsche
+          gibt es nicht.
+        question_five: "> Warum benutzen wir den Begriff Migranten?"
+        answer_five: |
+          Bei clarat benutzen wir immer eine einfache Sprache. Deswegen
+          benutzen wir Wörter, die man leicht versteht. Und die viele Menschen
+          kennen. Außerdem versuchen wir, so politisch korrekt wie möglich zu
+          sein. Aus diesen Gründen benutzen wir meistens das Wort Migranten.
+          Und selten den Ausdruck Ausländer oder Menschen mit
+          Migrationshintergrund.
+      section_four:
+        heading: "Hast du als Organisation Fragen?"
+        question_one: "> Was macht clarat für mich als Organisation?"
+        answer_one: |
+          clarat hilft Kindern, Jugendlichen und Familien deine Organisation zu
+          finden. Nur wer deine Organisation kennt, kann sich dort Hilfe holen.
+          Kinder, Jugendliche und Familien können so noch schneller
+          Unterstützung in ihrer Nähe finden. Auch Menschen, die nicht so gut
+          Deutsch können. Denn bei clarat ist immer alles in einer einfachen
+          Sprache erklärt. Menschen, die nicht so gut Deutsch können, können
+          sich deine Angebote automatisch auch in andere Sprachen übersetzen
+          lassen. In Arabisch, Englisch, Französisch, Polnisch, Russisch und
+          Türkisch.
+        question_two: "> Warum bin ich als Organisation nicht bei clarat?"
+        answer_two: |
+          Das kann daran liegen, dass wir für deinen Standort leider noch keine
+          Angebote gesammelt haben. Momentan haben wir viele Angebote für Berlin
+          und einige für Brandenburg gesammelt. Die meisten Angebote gibt es
+          bisher für den Stadtteil Friedrichshain-Kreuzberg. Außerdem gibt es
+          schon einige Telefon-Angebote und Online-Angebote, die man von überall
+          aus nutzen kann. Wir werden auch in Zukunft weiter Angebote sammeln.
+          Außerdem findet man bei clarat nur Angebote zu ganz bestimmten Themen.
+          Welche das sind, kannst du hier [interner Link zu der Frage: Welche
+          Unterstützungsangebote für Kinder, Jugendliche und Familien finde ich
+          grundsätzlich bei clarat?] nachlesen.
+        question_three: "> Wie finde ich meine Angebote bei clarat?"
+        answer_three: |
+          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation eintragen.
+          Und in dem Feld <i>Wo</i> den Standort deiner Organisation. Zum Beispiel
+          <i>Mustermannstraße 14 Berlin</i>. Dann bekommst du die Angebote für diesen
+          Standort in einer Übersicht angezeigt. Falls deine Organisation
+          mehrere Standorte in Berlin hat, gib in dem Feld <i>Wo</i> nur
+          <i>Berlin</i> ein. Momentan haben wir fast ausschließlich Angebote für
+          Berlin gesammelt. Die meisten Angebote gibt es bisher für den
+          Stadtteil Friedrichshain-Kreuzberg. Wir werden auch in Zukunft weiter
+          Angebote sammeln.
+        question_four: "> Wie kann ich Fehler oder Änderungswünsche melden?"
+        answer_four: |
+          Melde dich bei uns. Du kannst uns Fehler und Änderungswünsche einfach
+          mitteilen. Am besten schreibe uns eine E-Mail an %{mailto} oder
+          ruf an unter +49 (0)30 55 57 96 00.
+      section_five:
+        heading: "Suchst du bei clarat nach Hilfe?"
+        question_one: "> Wer kann bei clarat suchen?"
+        answer_one: |
+          clarat ist für alle. Vor allem für Jugendliche, Kinder und Familien
+          auf der Suche nach Unterstützung. Aber auch für Menschen, die ihnen
+          helfen wollen. Zum Beispiel Erzieher, Lehrer oder Ärzte. Bei clarat
+          findet jeder schnell die richtige Unterstützung in seiner Nähe. Auch
+          Menschen, die nicht so gut Deutsch können. Denn clarat benutzt immer
+          eine einfache Sprache.
+        question_two: "> Welche Unterstützungsangebote finde ich bei clarat?"
+        answer_two_first_part: |
+          Bei clarat gibt es Hilfe für Jugendliche, Kinder und Familien. Aber
+          auch für Menschen, die ihnen helfen wollen. Es gibt verschiedene Arten
+          von Unterstützungsangeboten. Zum Beispiel:
+        answer_two_bullet_one: |
+          Streit in der Familie, Migranten-Familien in Deutschland
+        answer_two_bullet_two: |
+          psychische Krankheiten, chronische Krankheiten, Sucht
+        answer_two_bullet_three: "Schule und Beruf"
+        answer_two_bullet_four: "Gewalt in der Familie und Missbrauch"
+        answer_two_bullet_five: "Straftaten und Extremismus"
+        answer_two_second_part: |
+          Zu vielen kannst du hingehen. Bei anderen hilft man dir am Telefon
+          oder online. Zum Beispiel per E-Mail und Chat. Oder in einem Forum
+          oder einem Online-Kurs.
+        question_three: "> Ist die Suche auf clarat kostenlos?"
+        answer_three: |
+          clarat ist kostenlos und bleibt kostenlos. Jeder kann bei clarat nach
+          Hilfe für Jugendliche, Kinder und Familien suchen.
+        question_four: "> Wieso finde ich nicht das, was ich suche?"
+        answer_four_first_part: |
+          Das kann verschiedene Gründe haben. Es kann sein, dass dein
+          Suchbegriff nicht funktioniert. Ein anderer Grund dafür kann sein: Wir
+          haben für deinen Stadtteil oder deine Stadt noch keine Angebote
+          gesammelt. Damit wir das bald ändern können, ist deine Rückmeldung für
+          uns sehr wichtig. Gib uns bitte per E-Mail an %{mailto} Bescheid, wenn
+          du nicht findest, was du suchst.
+        answer_four_second_part: |
+          Hier einige Tipps, die dir bei der Suche helfen.
+        answer_four_bullet_one: |
+          Probiere es mit einem anderen Suchbegriff. Wenn das nicht
+          funktioniert, dann nutze die Suche über die Themen.
+        answer_four_bullet_two: |
+          Oder probiere mal, im Feld <i>Wo</i> einen Stadtteil in deiner Nähe
+          oder nur <i>Berlin</i> einzugeben. Wenn du nicht in einer Stadt
+          wohnst, dann probiere es mit einer Stadt oder einem Ort bei dir in der
+          Nähe.
+        question_five: "> Wo finde ich mehr Informationen zu dem Angebot?"
+        answer_five: |
+          Wenn du bei clarat die einzelnen Angebote anklickst, findest du erste
+          Informationen. Wenn du mehr wissen willst, dann findest du unten auf
+          jeder Angebotsseite einen Link. Der Link bringt dich direkt zur
+          Internetseite von dem, der die Hilfe anbietet. Das kann zum Beispiel
+          ein Verein oder eine andere Organisation sein. Hier findest du oft
+          noch mehr Informationen zu deinem Problem.
 
     privacy:
       title: "Datenschutz"
@@ -491,11 +738,6 @@ de:
         Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
         sie im Research-Team und kümmert sich um unser Lexikon. Ihr
         Lieblingssong ist Lose It von Oh Wonder.
-
-
-
-
-
 
     shared:
       address:

@@ -11,5 +11,6 @@
       span.Listing-results__organization
         .Listing-results__emphasis
           = offer.organization_display_name
-        - if offer.location
-          = offer.location_address
+        span
+          - if offer.location
+            = offer.location_address

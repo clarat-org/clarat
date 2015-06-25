@@ -1,5 +1,5 @@
 class BroadcastMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'post@clarat.com'
 
   def welcome contact_person
     @contact_person = contact_person

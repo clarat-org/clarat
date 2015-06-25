@@ -10,13 +10,13 @@
   font-size: 40px;
 
   h2 {
-    font-size: 30px;
     margin: 100px 0 0 0;
+    font-size: 30px;
   }
 
   p {
-    font-size: $base_font_size;
     margin: 5px 20%;
+    font-size: $base_font_size;
   }
 }
 
@@ -38,14 +38,31 @@
 
 .Listing-results__headline {
   @extend %roboto_bold;
+  position: relative;
   margin: 0.5em 0;
   font-weight: 400;
   font-size: 20px;
+
+  .search-string {
+    max-width: 75%
+  }
+
+  .big-map_open,
+  .more_remote-offers_open {
+    @extend %small_button_style;
+    position: absolute;
+    right: 0;
+    top: 0;
+    a {
+      text-decoration: none;
+    }
+  }
 
 }
 
 .Listing-results__emphasis {
   @extend %roboto_bold;
+  display: inherit;
 }
 
 
@@ -104,7 +121,7 @@
   display: inline-block;
   margin-right: -5px;
   padding: 6px 6px 8px;
-  background: $brand_blue;
+  background: $brand_violet;
   color: $brand_white;
 
 }

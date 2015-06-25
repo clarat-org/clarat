@@ -41,18 +41,19 @@
 
         .section-content__body
 
-          ul.Listing-organizations__list
-            - @offer.organizations.each do |orga|
-              li.Listing-organizations__listitem
-                span.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
-
           - if @offer.location
             - cache [@offer.location, 'offer_show_map']
-              = render 'offers/show/who_location', offer: @offer,
-                                                   markers: @markers
 
               #map-container
-                #map-canvas data={ markers: @markers.to_json }
+                #map-data data={ markers: @markers.to_json }
+                #map-canvas
+
+            = render 'offers/show/who_location', offer: @offer,
+                                               markers: @markers
+
+          ul.Listing-organizations__list
+            - @offer.organizations.each do |orga|
+              li.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
 
       / When can you contact?
       - if @offer.opening_details?
@@ -68,5 +69,5 @@
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-/ - content_for :view_specific_scripts do
-/   = javascript_include_tag "gmaps_search_results.js"
+/- content_for :view_specific_scripts do
+/  = javascript_include_tag "gmaps_search_results.js"

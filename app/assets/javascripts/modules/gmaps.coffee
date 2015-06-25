@@ -1,12 +1,18 @@
 Clarat.GMaps =
   initialize: -> # callback for when maps script is loaded from google
-    Clarat.GMaps.Map.initialize()
+    # places autocomplete always fires
     Clarat.GMaps.PlacesAutocomplete.initialize()
+
+    # initialize in case an ajax request already returned (unlikely)
+    Clarat.GMaps.Map.initialize()
+
+    # initialize map again each time an ajax request brought new information
+    $(document).on 'ajax_done', Clarat.GMaps.Map.initialize
 
   Map:
     initialize: ->
       canvas = document.getElementById('map-canvas')
-      markers = $(canvas).data('markers')
+      markers = $('#map-data').data('markers')
       infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
       includedPoints = []
 
@@ -50,12 +56,23 @@ Clarat.GMaps =
             includedPoints.push userPosition
             bounds.extend userPosition
 
-        # Expand Map to Include All Markers
-        if includedPoints.length > 1
-          map.fitBounds bounds
-        else
-          map.setCenter bounds.getCenter()
-          map.setZoom 15
+        # Save data for later use
+        Clarat.currentMap = {}
+        Clarat.currentMap.instance = map
+        Clarat.currentMap.bounds = bounds
+        Clarat.currentMap.includedPoints = includedPoints
+
+        Clarat.GMaps.Map.setMapBounds()
+
+    setMapBounds: ->
+      # Expand Map to Include All Markers
+      if Clarat.currentMap.includedPoints.length > 1
+        Clarat.currentMap.instance.fitBounds Clarat.currentMap.bounds
+      else
+        Clarat.currentMap.instance.setCenter(
+          Clarat.currentMap.bounds.getCenter()
+        )
+        Clarat.currentMap.instance.setZoom 15
 
 
     bindMapsEvents: (map, marker, markerData, infowindow) ->

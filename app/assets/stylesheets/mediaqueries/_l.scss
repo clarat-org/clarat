@@ -30,6 +30,14 @@
     display: none;
   }
 
+  .mascot--footer {
+    bottom: 0; // remove once faq link comes back
+  }
+
+  .mascot--footer {
+    bottom: 0; // remove once faq link comes back
+  }
+
   .Distributor {
     margin-right: -25px; // on non-start pages, correcting offset by .wrapper-inner
     max-width: 440px;
@@ -160,6 +168,13 @@
     min-height: 0;
   }
 
+  .Listing-results__headline {
+    .search-string {
+      max-width: 70%
+    }
+  }
+
+
 
   #new_search_form {
     .template--pages-home & {
@@ -215,7 +230,4 @@
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
   }
-
-
-
 }

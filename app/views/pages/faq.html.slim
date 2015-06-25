@@ -1,46 +1,138 @@
 - provide(:title, t('.title'))
 - cache 'faq_page' do
-# TODO: Put in real question an move them to the locales
+
+  / TODO: Put in real question an move them to the locales
   main.content-main.content-main--wide
     .wrapper-inner
       h1 = t '.heading'
-      p = 'Braucht es hier noch eine Einleitung zu den FAQs? Also beispielsweise einen Verweis auf die Moeglichkeit auch per E-Mail nachzufragen, ein Inhaltsverzeichnis etc.?'
       section
-        h3.section-question-group__headline = 'Grundsatzfragen'
+        h3.section-question-group__headline = t '.section_one.heading'
         .section-question-group__body
-          h4.FAQ_question = '> Wie funktioniert clarat?'
-          .FAQ_paragraph = 'Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.'
-          h4.FAQ_question = '> Warum gibt es clarat?'
-          .FAQ_paragraph = 'In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien. Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum passenden Angebot in deiner Nähe zu kommen.'
-          h4.FAQ_question = '> Für wen ist clarat?'
-          .FAQ_paragraph = 'clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte.Anliegen eingeben, Angebot finden und dann hin.'
+          h4.FAQ_question = t '.section_one.question_one'
+          .FAQ_paragraph
+            == t '.section_one.answer_one',
+              movie: \
+              link_to('Film',
+                      'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/',
+                      target: '_blank')
+          h4.FAQ_question = t '.section_one.question_two'
+          .FAQ_paragraph = t '.section_one.answer_two'
+          h4.FAQ_question = t '.section_one.question_three'
+          .FAQ_paragraph = t '.section_one.answer_three'
+          h4.FAQ_question = t '.section_one.question_four'
+          .FAQ_paragraph = t '.section_one.answer_four'
+          h4.FAQ_question = t '.section_one.question_five'
+          .FAQ_paragraph
+            == t '.section_one.answer_five',
+              benckiser: \
+              link_to('Benckiser-Stiftung-Zukunft',
+                      'http://www.benckiser-stiftung.org/',
+                      target: '_blank'),
+              about_us: \
+              link_to('hier',
+                      'ueber-uns/',
+                      target: '_blank')
+          h4.FAQ_question = t '.section_one.question_six'
+          .FAQ_paragraph = t '.section_one.answer_six'
+          h4.FAQ_question = t '.section_one.question_seven'
+          .FAQ_paragraph
+            == t '.section_one.answer_seven',
+              benckiser_video: \
+              link_to('Hier',
+                      'https://vimeo.com/112156061',
+                      target: '_blank')
 
       section
-        h3.section-question-group__headline = 'Fragen für Mitarbeiter des Jugendamts'
+        h3.section-question-group__headline = t '.section_two.heading'
         .section-question-group__body
-          h4.FAQ_question = '> Wie funktioniert clarat?'
-          .FAQ_paragraph = 'Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.'
-          h4.FAQ_question = '> Warum gibt es clarat?'
-          .FAQ_paragraph = 'In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien. Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum passenden Angebot in deiner Nähe zu kommen.'
-          h4.FAQ_question = '> Für wen ist clarat?'
-          .FAQ_paragraph = 'clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte.Anliegen eingeben, Angebot finden und dann hin.'
+          h4.FAQ_question = t '.section_two.question_one'
+          .FAQ_paragraph = t '.section_two.answer_one'
+          h4.FAQ_question = t '.section_two.question_two'
+          .FAQ_paragraph
+            == t '.section_two.answer_two',
+              mailto: \
+              mail_to('post@clarat.org',
+                      'post@clarat.org',
+                      target: '_blank')
 
       section
-        h3.section-question-group__headline = 'Fragen für die Kanzlerin'
+        h3.section-question-group__headline = t '.section_three.heading'
         .section-question-group__body
-          h4.FAQ_question = '> Wie funktioniert clarat?'
-          .FAQ_paragraph = 'Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.'
-          h4.FAQ_question = '> Warum gibt es clarat?'
-          .FAQ_paragraph = 'In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien. Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum passenden Angebot in deiner Nähe zu kommen.'
-          h4.FAQ_question = '> Für wen ist clarat?'
-          .FAQ_paragraph = 'clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte.Anliegen eingeben, Angebot finden und dann hin.'
+          h4.FAQ_question = t '.section_three.question_one'
+          .FAQ_paragraph = t '.section_three.answer_one'
+          h4.FAQ_question = t '.section_three.question_two'
+          .FAQ_paragraph = t '.section_three.answer_two'
+          h4.FAQ_question = t '.section_three.question_three'
+          .FAQ_paragraph
+            = t '.section_three.answer_three_first_part'
+            br
+              = t '.section_three.answer_three_second_part'
+            br
+              == t '.section_three.answer_three_third_part'
+            br
+              == t '.section_three.answer_three_fourth_part'
+          h4.FAQ_question == t '.section_three.question_four'
+          .FAQ_paragraph = t '.section_three.answer_four'
+          h4.FAQ_question = t '.section_three.question_five'
+          .FAQ_paragraph = t '.section_three.answer_five'
+          h4.FAQ_question = t '.section_three.question_six'
+          .FAQ_paragraph = t '.section_three.answer_six'
 
-        section
-          h3.section-question-group__headline = 'Bonusfragen'
-          .section-question-group__body
-            h4.FAQ_question = '> Wie funktioniert clarat?'
-            .FAQ_paragraph = 'Sämtliche Unterstützungsangebote für Kinder, Jugendliche und Familien in Deiner Nähe. Gib Dein Anliegen ein und finde das Angebot, das Dir wirklich weiter hilft. Wir sagen Dir auch noch, was Du als nächstes tun musst, um das Angebot zu nutzen.'
-            h4.FAQ_question = '> Warum gibt es clarat?'
-            .FAQ_paragraph = 'In Deutschland gibt es viele Unterstützungsangebote für Kinder, Jugendliche und Familien. Allerdings sind diese selten leicht zu finden. Mit clarat helfen wir Dir, schnell und unkompliziert zum passenden Angebot in deiner Nähe zu kommen.'
-            h4.FAQ_question = '> Für wen ist clarat?'
-            .FAQ_paragraph = 'clarat ist für alle da. Vor allem für Familien, Jugendliche und Kinder auf der Suche nach Unterstützung. Aber auch für Menschen, die erkennen, dass ein anderer Mensch Hilfe braucht. Erzieher zum Beispiel. Oder Lehrer. Oder Ärzte.Anliegen eingeben, Angebot finden und dann hin.'
+      section
+        h3.section-question-group__headline = t '.section_four.heading'
+        .section-question-group__body
+          h4.FAQ_question = t '.section_four.question_one'
+          .FAQ_paragraph = t '.section_four.answer_one'
+          h4.FAQ_question = t '.section_four.question_two'
+          .FAQ_paragraph = t '.section_four.answer_two'
+          h4.FAQ_question = t '.section_four.question_three'
+          .FAQ_paragraph == t '.section_four.answer_three'
+          h4.FAQ_question = t '.section_four.question_four'
+          .FAQ_paragraph
+            == t '.section_four.answer_four',
+              mailto: \
+              mail_to('post@clarat.org',
+                      'post@clarat.org',
+                      target: '_blank')
+
+      section
+        h3.section-question-group__headline = t '.section_five.heading'
+        .section-question-group__body
+          h4.FAQ_question = t '.section_five.question_one'
+          .FAQ_paragraph = t '.section_five.answer_one'
+          h4.FAQ_question = t '.section_five.question_two'
+          .FAQ_paragraph
+            = t '.section_five.answer_two_first_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_two_bullet_one'
+                li
+                  == t '.section_five.answer_two_bullet_two'
+                li
+                  = t '.section_five.answer_two_bullet_three'
+                li
+                  = t '.section_five.answer_two_bullet_four'
+                li
+                  = t '.section_five.answer_two_bullet_five'
+            = t '.section_five.answer_two_second_part'
+          h4.FAQ_question = t '.section_five.question_three'
+          .FAQ_paragraph = t '.section_five.answer_three'
+          h4.FAQ_question = t '.section_five.question_four'
+          .FAQ_paragraph
+            == t '.section_five.answer_four_first_part',
+              mailto: \
+              mail_to('post@clarat.org',
+                      'post@clarat.org',
+                      target: '_blank')
+            p
+              = t '.section_five.answer_four_second_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_four_bullet_one'
+                li
+                  == t '.section_five.answer_four_bullet_two'
+          h4.FAQ_question = t '.section_five.question_five'
+          .FAQ_paragraph = t '.section_five.answer_five'
+

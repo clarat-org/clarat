@@ -10,8 +10,8 @@
 }
 
 .mascot--footer {
-  right: 150px;
-  bottom: 0;
+  right: 350px;
+  bottom: -20px; // change back to '0' once faq link comes back
   width: 120px;
   height: 150px;
   background-image: image-url('clara-t.svg');

@@ -4,6 +4,6 @@ class OfferMailer < ActionMailer::Base
     @offer_ids = offer_ids
     mail subject: 'expiring offers',
          to:      Rails.application.secrets.emails['expiring'],
-         from:    'noreply@clarat.org'
+         from:    'post@clarat.org'
   end
 end

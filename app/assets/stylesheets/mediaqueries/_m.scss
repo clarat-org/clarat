@@ -257,4 +257,16 @@
       }
     }
   }
+
+  a.big-map_open {
+    display: none !important;
+  }
+
+  // ToDo: Refactor. Button must move to a new line on small screens in case it
+  // would otherwise interfere with other content. If no new line is needed it
+  // should flow right (if flow: right is used it is partly hidden).
+  .more_remote-offers_open {
+    position: relative !important;
+  }
+
 }

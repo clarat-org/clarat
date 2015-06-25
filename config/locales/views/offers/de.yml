@@ -19,29 +19,37 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
 
+    map:
+      show_on_big_map: "Auf großer Karte anzeigen"
+      enlarge_map: "Karte vergrößern"
+      headline_small_map: "Angebote vor Ort auf der Karte"
+
     index:
       location_fallback: |
         Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
 
+
       # index partials
       search_results:
-        more: "(Mehr …)"
+        more: "(Weitere Angebote …)"
         personal_offers:
-          zero: "Keine Vor-Ort-Angebote"
-          one: "Ein Vor-Ort-Angebot"
-          other: "%{count} Vor-Ort-Angebote"
+          zero: "Keine Angebote vor Ort"
+          one: "Ein Angebot vor Ort"
+          other: "%{count} Angebote vor Ort"
         remote_offers:
           zero: "Keine Telefon- und Onlineberatungen"
           one: "Eine Telefon- oder Onlineberatung"
           other: "%{count} Telefon- und Onlineberatungen"
 
+
       single_search_result:
         encounters:
           personal: "Persönlich"
-          hotline: "Telefonisch"
-          email: "Email"
+          hotline: "Telefon"
+          email: "E-Mail"
           chat: "Chat"
           forum: "Forum"
+          online-course: "Online-Kurs"
 
       pending_ajax:
         searching: "Suche…"
@@ -56,7 +64,7 @@ de:
 
         collection_names:
           blank: "Egal"
-          personal: "Vor-Ort-Angebote"
+          personal: "Angebote vor Ort"
           remote: "Telefon- und Onlineberatungen"
           babies: "Babys"
           toddler: "Kleinkinder"
@@ -111,7 +119,7 @@ de:
           lit: "Litauisch"
 
       categories_sidebar:
-        all_categories: "‹ Alle Kategorien"
+        all_categories: "Alle Kategorien"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
@@ -120,7 +128,7 @@ de:
     show:
       what: "Worum geht's?"
       next_steps: "Was musst du tun?"
-      who: "Wer bietet diese Hilfe an?"
+      who: "Wo gibt’s die Hilfe?"
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
@@ -152,4 +160,6 @@ de:
         email: "E-Mail: "
       who_section:
         heading: "Wo kannst du dich melden?"
+      who_location:
+        organizations: 'Ein Angebot von:'
       # /show partials

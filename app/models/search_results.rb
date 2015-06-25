@@ -57,7 +57,9 @@ class SearchResults
     unless json['_geoloc'].blank?
       offer.location = Location.new(
         street: json['location_street'], city: json['location_city'],
-        zip: json['location_zip'] # _geoloc
+        zip: json['location_zip'],
+        latitude: json['_geoloc']['lat'],
+        longitude: json['_geoloc']['lng']
       )
     end
     offer

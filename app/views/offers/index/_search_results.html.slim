@@ -15,14 +15,17 @@
         = t '.remote_offers', count: search.remote_hits.nbHits
         - if remote_offers[1]
           / If more than one national offer
-          =< link_to t('.more'),
-                     offers_path(search_form: search_cache.remote_focus)
+          .more_remote-offers_open
+            =< link_to t('.more'),
+              offers_path(search_form: search_cache.remote_focus)
 
       ul.Listing-results__list
         = render 'offers/index/single_search_result', offer: remote_offers.first
 
   h2.Listing-results__headline
-    == search_results_info_headline search_cache, search
+    .search-string
+      == search_results_info_headline search_cache, search
+    a.big-map_open[href="#"] = I18n.t('offers.map.show_on_big_map')
 
   ul.Listing-results__list
     - main_offers.each do |offer|

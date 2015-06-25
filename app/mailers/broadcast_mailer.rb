@@ -1,9 +1,10 @@
 class BroadcastMailer < ActionMailer::Base
-  default from: 'post@clarat.com'
+  default from: 'anne.schulze@clarat.org'
 
-  def welcome contact_person
-    @contact_person = contact_person
+  def welcome offer
+    @contact_person = offer.contact_people.first
+    @offer = offer
 
-    mail to: contact_person.email
+    mail to: @contact_person.email
   end
 end

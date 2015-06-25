@@ -148,7 +148,9 @@ gem 'gibbon'
 ########################
 
 gem 'newrelic_rpm'
+gem 'rack-cache'
 gem 'dalli' # Memcached Client
+gem 'kgio'
 
 group :production, :staging do
   gem 'rails_12factor' # heroku recommends this

@@ -149,6 +149,7 @@ gem 'gibbon'
 
 gem 'newrelic_rpm'
 gem 'rack-cache'
+gem 'memcachier'
 gem 'dalli' # Memcached Client
 gem 'kgio'
 

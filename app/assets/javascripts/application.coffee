@@ -55,3 +55,4 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/faq
+# = require modules/sticky_mobile_nav

@@ -43,12 +43,17 @@
   }
 
   .header-main {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 0;
     left: 0;
     z-index: 130;
     background: transparent;
+
+    &.is-fixed {
+      position: fixed;
+      top: 0;
+    }
 
     .template--pages-home &,
     .template--pages-about & {
@@ -56,6 +61,10 @@
       right: auto;
       left: auto;
       z-index: auto;
+
+      .wrapper-inner {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -475,7 +484,7 @@
   }
 
   .Banner {
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     z-index: 300;

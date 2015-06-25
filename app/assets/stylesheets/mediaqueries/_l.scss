@@ -143,10 +143,17 @@
 
   .section-team__member {
     width: 32%;
+    margin-left: 1.8%;
+    min-height: 640px;
 
-    &:nth-child(3n+1) { // every third item
-      margin-right: 0;
+    &:nth-of-type(4n+1) { // reset
+      margin-left: 1.8%;
     }
+
+    &:nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
   }
 
   .Listing-results {

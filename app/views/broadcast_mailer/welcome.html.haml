@@ -9,7 +9,7 @@
 
 %p
   Ihr Angebot heißt bei clarat
-  = '"' + @offer.name + '"'
+  = '"' + @offer.name.strip + '"'
   und Sie finden es hier:
   %br
   = link_to offer_url(@offer), offer_url(@offer)

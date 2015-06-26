@@ -331,6 +331,17 @@
     margin-bottom: 5px;
   }
 
+  .contact-form {
+    margin-top: 22px;
+
+    .string input,
+    .email input,
+    textarea,
+    &.formtastic .inline-errors {
+      width: 100%;
+    }
+  }
+
   // Twitter Typeahead ###########################
 
   .template--pages-home {

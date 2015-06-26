@@ -50,8 +50,7 @@
     z-index: 130;
     background: transparent;
 
-    .template--pages-home &,
-    .template--pages-about & {
+    .template--pages-home & {
       position: static;
       right: auto;
       left: auto;

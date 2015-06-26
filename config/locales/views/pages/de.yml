@@ -106,8 +106,7 @@ de:
         answer_three: |
           Gib ein, was dich bedrückt. Und wo du Hilfe suchst. Dann zeigen wir
           dir passende Hilfe in deiner Nähe. Oder Hilfe übers Telefon oder
-          Internet. Hier [interner Link zu der Frage: Wie finde ich
-          Unterstützungsangebote bei clarat?] erklären wir dir genau, wie du
+          Internet. %{how_to_find_offers} erklären wir dir genau, wie du
           findest, was du suchst. Wenn du auf ein Angebot klickst, sagen wir
           dir, was du als nächstes tun musst. Zum Beispiel, ob du anrufen oder
           eine E-Mail schreiben sollst. Oder einfach vorbeigehen kannst.
@@ -117,8 +116,7 @@ de:
           Unterstützungsangebote in einer Übersicht. Und zwar auf einen Blick.
           Außerdem sagen wir dir genau, was du tun musst, um die Hilfe zu
           finden. Und damit alle Hilfe finden können, sind die Angebote bei
-          clarat in einer einfachen Sprache. [interner Link zu der Frage: Warum
-          schreibt clarat immer in einer einfachen Sprache?]  Diese einfache
+          clarat in einer %{simple_language}. Diese einfache
           Sprache ist für alle leicht verständlich. Denn bei clarat sollen auch
           Menschen Hilfe finden, die nicht so gut Deutsch können. Du kannst die
           Unterstützungsangebote auch auf Arabisch, Englisch, Französisch,
@@ -281,9 +279,7 @@ de:
           schon einige Telefon-Angebote und Online-Angebote, die man von überall
           aus nutzen kann. Wir werden auch in Zukunft weiter Angebote sammeln.
           Außerdem findet man bei clarat nur Angebote zu ganz bestimmten Themen.
-          Welche das sind, kannst du hier [interner Link zu der Frage: Welche
-          Unterstützungsangebote für Kinder, Jugendliche und Familien finde ich
-          grundsätzlich bei clarat?] nachlesen.
+          Welche das sind, kannst du %{what_offers} nachlesen.
         question_three: "> Wie finde ich meine Angebote bei clarat?"
         answer_three: |
           Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation
@@ -358,9 +354,7 @@ de:
           schon einige Telefon-Angebote und Online-Angebote, die man von überall
           aus nutzen kann. Wir werden auch in Zukunft weiter Angebote sammeln.
           Außerdem findet man bei clarat nur Angebote zu ganz bestimmten Themen.
-          Welche das sind, kannst du hier [interner Link zu der Frage: Welche
-          Unterstützungsangebote für Kinder, Jugendliche und Familien finde ich
-          grundsätzlich bei clarat?] nachlesen.
+          Welche das sind, kannst du %{what_offers} nachlesen.
         question_eight: |
           > Wie kann ich mir meine Angebote in einer Übersicht anzeigen lassen?
         answer_eight: |

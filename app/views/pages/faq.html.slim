@@ -18,9 +18,17 @@
           h4.FAQ_question = t '.section_one.question_two'
           .FAQ_paragraph = t '.section_one.answer_two'
           h4.FAQ_question = t '.section_one.question_three'
-          .FAQ_paragraph = t '.section_one.answer_three'
+          .FAQ_paragraph
+            == t '.section_one.answer_three',
+              how_to_find_offers: \
+              link_to('Hier',
+                      '/haeufige-fragen/#how_to_find_offers')
           h4.FAQ_question = t '.section_one.question_four'
-          .FAQ_paragraph = t '.section_one.answer_four'
+          .FAQ_paragraph
+            == t '.section_one.answer_four',
+              simple_language: \
+              link_to('einfachen Sprache',
+                      '/haeufige-fragen/#simple_language')
           h4.FAQ_question = t '.section_one.question_five'
           .FAQ_paragraph
             == t '.section_one.answer_five',
@@ -49,7 +57,7 @@
         .section-question-group__body
           h4.FAQ_question = t '.section_two.question_one'
           .FAQ_paragraph = t '.section_two.answer_one'
-          h4.FAQ_question = t '.section_two.question_two'
+          h4.FAQ_question#simple_language = t '.section_two.question_two'
           .FAQ_paragraph
             == t '.section_two.answer_two',
               mailto: \
@@ -90,7 +98,11 @@
           h4.FAQ_question = t '.section_four.question_one'
           .FAQ_paragraph = t '.section_four.answer_one'
           h4.FAQ_question = t '.section_four.question_two'
-          .FAQ_paragraph = t '.section_four.answer_two'
+          .FAQ_paragraph
+            == t '.section_four.answer_two',
+              what_offers: \
+              link_to('hier',
+                      '/haeufige-fragen/#what_offers')
           h4.FAQ_question = t '.section_four.question_three'
           .FAQ_paragraph == t '.section_four.answer_three'
           h4.FAQ_question = t '.section_four.question_four'
@@ -100,7 +112,7 @@
               mail_to('post@clarat.org',
                       'post@clarat.org',
                       target: '_blank')
-          h4.FAQ_question = t '.section_four.question_five'
+          h4.FAQ_question#what_offers = t '.section_four.question_five'
           .FAQ_paragraph
             == t '.section_four.answer_five'
             p
@@ -137,7 +149,11 @@
                 li
                   = t '.section_four.answer_six_bullet_seven'
           h4.FAQ_question = t '.section_four.question_seven'
-          .FAQ_paragraph == t '.section_four.answer_seven'
+          .FAQ_paragraph
+            == t '.section_four.answer_seven',
+              what_offers: \
+              link_to('hier',
+                      '/haeufige-fragen/#what_offers')
           h4.FAQ_question = t '.section_four.question_eight'
           .FAQ_paragraph == t '.section_four.answer_eight'
 
@@ -187,7 +203,7 @@
           .FAQ_paragraph = t '.section_five.answer_seven'
           h4.FAQ_question = t '.section_five.question_eight'
           .FAQ_paragraph == t '.section_five.answer_eight'
-          h4.FAQ_question = t '.section_five.question_nine'
+          h4.FAQ_question#how_to_find_offers = t '.section_five.question_nine'
           .FAQ_paragraph
             == t '.section_five.answer_nine_first_part'
             p

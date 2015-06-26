@@ -151,6 +151,9 @@ RailsAdmin.config do |config|
     field :addition
     field :zip
     field :city
+    field :area_code
+    field :local_number
+    field :email
     field :federal_state do
       inline_add false
       inline_edit false

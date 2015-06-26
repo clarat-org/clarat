@@ -118,6 +118,10 @@ RailsAdmin.config do |config|
     clone_config do
       custom_method :partial_dup
     end
+
+    export do
+      field :id
+    end
   end
 
   config.label_methods << :url
@@ -279,7 +283,13 @@ RailsAdmin.config do |config|
 
   config.model 'ContactPerson' do
     object_label_method :display_name
-
+    list do
+      field :id
+      field :name
+      field :organization
+      field :offers
+      field :email
+    end
     field :name
     field :area_code_1
     field :local_number_1
@@ -290,6 +300,9 @@ RailsAdmin.config do |config|
     field :email
     field :organization
     field :offers
+    export do
+      field :id
+    end
   end
 
   config.model 'Opening' do

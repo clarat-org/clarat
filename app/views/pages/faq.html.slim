@@ -38,7 +38,7 @@
                       target: '_blank'),
               about_us: \
               link_to('hier',
-                      'ueber-uns/',
+                      '/ueber-uns',
                       target: '_blank')
           h4.FAQ_question = t '.section_one.question_six'
           .FAQ_paragraph = t '.section_one.answer_six'
@@ -60,6 +60,9 @@
           h4.FAQ_question#simple_language = t '.section_two.question_two'
           .FAQ_paragraph
             == t '.section_two.answer_two',
+              simple_language: \
+              link_to('einfachen Sprache',
+                      '/haeufige-fragen/#simple_language'),
               mailto: \
               mail_to('post@clarat.org',
                       'post@clarat.org',
@@ -75,12 +78,11 @@
           h4.FAQ_question = t '.section_three.question_three'
           .FAQ_paragraph
             = t '.section_three.answer_three_first_part'
-            br
+            p
               = t '.section_three.answer_three_second_part'
-            br
+            p
               == t '.section_three.answer_three_third_part'
-            br
-              == t '.section_three.answer_three_fourth_part'
+            == t '.section_three.answer_three_fourth_part'
           h4.FAQ_question == t '.section_three.question_four'
           .FAQ_paragraph = t '.section_three.answer_four'
           h4.FAQ_question = t '.section_three.question_five'
@@ -177,6 +179,8 @@
                   = t '.section_five.answer_two_bullet_four'
                 li
                   = t '.section_five.answer_two_bullet_five'
+                li
+                  = t '.section_five.answer_two_bullet_six'
             = t '.section_five.answer_two_second_part'
           h4.FAQ_question = t '.section_five.question_three'
           .FAQ_paragraph = t '.section_five.answer_three'

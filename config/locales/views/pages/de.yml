@@ -160,7 +160,7 @@ de:
           > Warum schreibt clarat immer in einer einfachen Sprache?
         answer_two: |
           Damit alle Hilfe finden, schreiben wir alle Angebote in einer
-          einfachen Sprache. Diese einfache Sprache ist für alle leicht
+          einfachen Sprache. Diese %{simple_language} ist für alle leicht
           verständlich. Und weil die Texte bei clarat kurz sind, sieht man
           schnell, welche Hilfen es gibt. Und kann die passende Hilfe für sich
           finden. Die clarat Sprache ist auch für Menschen, die nicht so gut
@@ -298,7 +298,7 @@ de:
           ruf an unter +49 (0)30 55 57 96 00.
         question_five: |
           > Welche Unterstützungsangebote für Kinder, Jugendliche und Familien
-          gibt es grundsätzlich bei clarat?"
+          gibt es grundsätzlich bei clarat?
         answer_five: |
           clarat möchte Kindern und Jugendlichen unter 18 Jahren zeigen, wo sie
           Hilfe finden. Und Eltern, die Kinder und Jugendliche in diesem Alter
@@ -341,7 +341,7 @@ de:
         answer_six_bullet_five: |
           Umgang mit dem Computer und dem Internet
         answer_six_bullet_six: |
-          politische Bildung und Demokratie verstehen
+          Demokratie verstehen und politische Bildung
         answer_six_bullet_seven: |
           Kindergärten
         question_seven: |
@@ -378,13 +378,14 @@ de:
           Bei clarat gibt es Hilfe für Jugendliche, Kinder und Familien. Aber
           auch für Menschen, die ihnen helfen wollen. Es gibt verschiedene Arten
           von Unterstützungsangeboten. Zum Beispiel bei:
-        answer_two_bullet_one: |
-          Streit in der Familie, Migranten-Familien in Deutschland
+        answer_two_bullet_one: "Streit in der Familie"
         answer_two_bullet_two: |
+          Leben in Deutschland für Flüchtlinge und Migranten
+        answer_two_bullet_three: |
           psychische Krankheiten, chronische Krankheiten, Sucht
-        answer_two_bullet_three: "Schule und Beruf"
-        answer_two_bullet_four: "Gewalt in der Familie und Missbrauch"
-        answer_two_bullet_five: "Straftaten und Extremismus"
+        answer_two_bullet_four: "Probleme in der Schule und in der Ausbildung"
+        answer_two_bullet_five: "Gewalt in der Familie und Missbrauch"
+        answer_two_bullet_six: "Straftaten und Extremismus"
         answer_two_second_part: |
           Zu vielen kannst du hingehen. Bei anderen hilft man dir am Telefon
           oder online. Zum Beispiel per E-Mail und Chat. Oder in einem Forum
@@ -402,7 +403,7 @@ de:
           uns sehr wichtig. Gib uns bitte per E-Mail an %{mailto} Bescheid, wenn
           du nicht findest, was du suchst.
         answer_four_second_part: |
-          Hier einige Tipps, die dir bei der Suche helfen.
+          Hier einige Tipps, die dir bei der Suche helfen:
         answer_four_bullet_one: |
           Probiere es mit einem anderen Suchbegriff. Wenn das nicht
           funktioniert, dann nutze die Suche über die Themen.
@@ -474,7 +475,7 @@ de:
           dein Problem nennt. Wenn dir zu diesem Thema zu viele
           Unterstützungsangebote angezeigt werden, dann kannst du außerdem einen
           Suchbegriff eingeben. Schreib den Begriff in das Feld <i>Finde</i>.
-          So kannst du für das Thema, das du ausgesucht hast, Angebote finden
+          So kannst du für das Thema, das du ausgesucht hast, Angebote finden.
         question_ten: "> Wie finde ich Unterstützungsangebote in meiner Nähe?"
         answer_ten: |
           Schreib in das Feld <i>Wo</i>, an welchem Ort du Unterstützung suchst.
@@ -512,7 +513,7 @@ de:
           uns sehr wichtig. Gib uns bitte per E-Mail an %{mailto}
           Bescheid, wenn du nicht findest, was du suchst.
         answer_twelve_second_part: |
-          Hier einige Tipps, die dir bei der Suche helfen.
+          Hier einige Tipps, die dir bei der Suche helfen:
         answer_twelve_bullet_one: |
           Probiere es mit einem anderen Suchbegriff. Wenn das nicht
           funktioniert, dann nutze die Suche über die Themen.

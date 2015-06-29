@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150626164706) do
+ActiveRecord::Schema.define(version: 20150629092917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,15 +56,22 @@ ActiveRecord::Schema.define(version: 20150626164706) do
   create_table "contact_people", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "organization_id",            null: false
+    t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "area_code_1",     limit: 6
-    t.string   "local_number_1",  limit: 32
-    t.string   "area_code_2",     limit: 6
-    t.string   "local_number_2",  limit: 32
-    t.string   "fax_area_code",   limit: 6
-    t.string   "fax_number",      limit: 32
+    t.string   "area_code_1",      limit: 6
+    t.string   "local_number_1",   limit: 32
+    t.string   "area_code_2",      limit: 6
+    t.string   "local_number_2",   limit: 32
+    t.string   "fax_area_code",    limit: 6
+    t.string   "fax_number",       limit: 32
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "operational_name"
+    t.string   "academic_title"
+    t.string   "gender"
+    t.string   "role"
+    t.string   "responsibility"
   end
 
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree

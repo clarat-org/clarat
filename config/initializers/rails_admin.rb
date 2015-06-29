@@ -296,6 +296,27 @@ RailsAdmin.config do |config|
       field :email
     end
     field :name
+    field :gender
+    field :academic_title
+    field :first_name
+    field :last_name
+    field :operational_name do
+      help do
+        "Falls es sich nicht um einen persönlichen Ansprechpartner handelt hier
+        z.B. 'Zentrale' eintragen"
+      end
+    end
+    field :role do
+      help do
+        "Z.b. 'Geschäftsführer'"
+      end
+    end
+    field :responsibility do
+      help do
+        "Z.b. 'Zuständig für alle Anfragen von Menschen deren Nachname mit den
+        Buchstaben A-M anfangen'"
+      end
+    end
     field :area_code_1
     field :local_number_1
     field :area_code_2

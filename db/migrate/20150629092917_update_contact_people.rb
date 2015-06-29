@@ -7,9 +7,5 @@ class UpdateContactPeople < ActiveRecord::Migration
     add_column :contact_people, :gender, :string
     add_column :contact_people, :role, :string
     add_column :contact_people, :responsibility, :string
-
-    ContactPeople.find_each do |contact_person|
-      contact_person.update_column :last_name, contact_person.name
-    end
   end
 end

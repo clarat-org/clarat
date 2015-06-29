@@ -169,7 +169,9 @@ RailsAdmin.config do |config|
       field :offers
       field :display_name
     end
-
+    export do
+      field :id
+    end
     object_label_method :display_name
   end
 

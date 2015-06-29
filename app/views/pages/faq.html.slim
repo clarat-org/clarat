@@ -29,7 +29,8 @@
             == t '.section_one.answer_four',
               simple_language: \
               link_to('einfachen Sprache',
-                      '/haeufige-fragen/#simple_language')
+                      '/haeufige-fragen/#simple_language',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_one.question_five'
           .FAQ_paragraph
             == t '.section_one.answer_five',
@@ -61,9 +62,6 @@
           h4.FAQ_question#simple_language = t '.section_two.question_two'
           .FAQ_paragraph
             == t '.section_two.answer_two',
-              simple_language: \
-              link_to('einfachen Sprache',
-                      '/haeufige-fragen/#simple_language'),
               mailto: \
               mail_to('post@clarat.org',
                       'post@clarat.org',
@@ -105,7 +103,8 @@
             == t '.section_four.answer_two',
               what_offers: \
               link_to('hier',
-                      '/haeufige-fragen/#what_offers')
+                      '/haeufige-fragen/#what_offers',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_four.question_three'
           .FAQ_paragraph == t '.section_four.answer_three'
           h4.FAQ_question = t '.section_four.question_four'
@@ -156,7 +155,8 @@
             == t '.section_four.answer_seven',
               what_offers: \
               link_to('hier',
-                      '/haeufige-fragen/#what_offers')
+                      '/haeufige-fragen/#what_offers',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_four.question_eight'
           .FAQ_paragraph == t '.section_four.answer_eight'
 

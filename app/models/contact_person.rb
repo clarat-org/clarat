@@ -50,4 +50,12 @@ class ContactPerson < ActiveRecord::Base
   def fax
     fax_area_code.to_s + fax_number
   end
+
+  def partial_dup
+    self.dup.tap do |contact_person|
+      self.offers.each do |offer|
+        contact_person.offers << offer
+      end
+    end
+  end
 end

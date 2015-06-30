@@ -2,16 +2,19 @@
   Sehr geehrte Damen und Herren,
 
 %p
-  seit dieser Woche sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal
+  seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal
   = link_to 'www.clarat.org', 'http://www.clarat.org'
   zu finden.
 
 %p
-  Ihr Angebot heißt bei clarat
-  = '"' + @offer.name.strip + '"'
-  und Sie finden es hier:
-  %br
-  = link_to offer_url(@offer), offer_url(@offer)
+  Ihre Angebote heißen bei clarat:
+  %ul
+    - @offers.each do |offer|
+      %li
+        = '"' + offer.name.strip + '",'
+        zu finden unter folgendem Link:
+        %br
+        = link_to offer_url(offer), offer_url(offer)
 
 %p
   Fehlt etwas? Das kann sein. Denn wir sind auch weiterhin dabei, stetig Angebote zu ergänzen. Deshalb kommt es vor, dass wir noch nicht alle Angebote einer Organisation erfasst haben.

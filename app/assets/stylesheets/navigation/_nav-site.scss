@@ -6,7 +6,7 @@
 
 .nav-site {
   float: right;
-  padding: 15px 0 15px;
+  padding: 15px 15px 15px;
 }
 
 .nav-site__list {
@@ -15,7 +15,7 @@
 
 .nav-site__listitem {
   @extend %roboto_bold;
-  text-align: right;
+  text-align: left;
   font-size: 18px;
   line-height: 30px;
 
@@ -26,5 +26,9 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .JS-tooltip {
+    line-height: 15px;
   }
 }

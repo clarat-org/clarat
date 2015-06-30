@@ -50,8 +50,7 @@
     z-index: 130;
     background: transparent;
 
-    .template--pages-home &,
-    .template--pages-about & {
+    .template--pages-home & {
       position: static;
       right: auto;
       left: auto;
@@ -261,6 +260,10 @@
       padding-top: 0;
     }
 
+    &.template--pages-about{
+      padding-top: 100px;
+    }
+
     &.content-main--invalid_location {
       padding-top: 80px;
     }
@@ -329,6 +332,17 @@
   .next,
   .prev {
     margin-bottom: 5px;
+  }
+
+  .contact-form {
+    margin-top: 22px;
+
+    .string input,
+    .email input,
+    textarea,
+    &.formtastic .inline-errors {
+      width: 100%;
+    }
   }
 
   // Twitter Typeahead ###########################

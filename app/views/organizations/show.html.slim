@@ -54,7 +54,8 @@
               /! http://microformats.org/wiki/adr end
               br
               #map-container
-                #map-canvas data={markers: @markers.to_json}
+                #map-data data={ markers: @markers.to_json }
+                #map-canvas
 
 
       = link_to new_contact_path,

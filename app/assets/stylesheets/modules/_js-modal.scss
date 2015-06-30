@@ -6,7 +6,8 @@
 
 // @TODO: Refactor!
 
-.JS-modal {
+.JS-modal,
+.popup_content {
   display: none; // will be made visible by javascript
 
   @extend %clarat_rounding;
@@ -20,6 +21,7 @@
   }
 
   button[class$="overlay_close"],
+  button[class$="big-map_close"],
   [class$="beta_banner_close"] {
     position: absolute;
     top: -10px;

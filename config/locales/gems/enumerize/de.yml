@@ -29,3 +29,10 @@ de:
         drk: 'Deutsches Rotes Kreuz'
         asb: 'Arbeiter-Samariter-Bund'
         zwst: 'Zentralwohlfahrtsstelle der Juden in Deutschland'
+    contact_person:
+      gender:
+        male: Male
+        female: Female
+      academic_title:
+        dr: Dr.
+        prof_dr: Prof. Dr.

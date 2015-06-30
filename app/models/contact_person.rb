@@ -7,6 +7,11 @@ class ContactPerson < ActiveRecord::Base
   has_many :contact_person_offers, inverse_of: :contact_person
   has_many :offers, through: :contact_person_offers
 
+  # Enumerization
+  extend Enumerize
+  enumerize :gender, in: %w(female male)
+  enumerize :academic_title, in: %w(dr prof_dr)
+
   # Validations
   validates :organization_id, presence: true
   validates :area_code_1, format: /\A\d*\z/, length: { maximum: 6 }
@@ -44,5 +49,13 @@ class ContactPerson < ActiveRecord::Base
 
   def fax
     fax_area_code.to_s + fax_number
+  end
+
+  def partial_dup
+    self.dup.tap do |contact_person|
+      self.offers.each do |offer|
+        contact_person.offers << offer
+      end
+    end
   end
 end

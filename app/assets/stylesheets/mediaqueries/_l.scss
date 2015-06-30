@@ -153,6 +153,13 @@
     min-height: 0;
   }
 
+  .Listing-results__headline {
+    .search-string {
+      max-width: 70%
+    }
+  }
+
+
 
   #new_search_form {
     .template--pages-home & {
@@ -208,7 +215,4 @@
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
   }
-
-
-
 }

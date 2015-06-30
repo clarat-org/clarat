@@ -45,9 +45,10 @@
             - cache [@offer.location, 'offer_show_map']
 
               #map-container
-                #map-canvas data={ markers: @markers.to_json }
+                #map-data data={ markers: @markers.to_json }
+                #map-canvas
 
-          = render 'offers/show/who_location', offer: @offer,
+            = render 'offers/show/who_location', offer: @offer,
                                                markers: @markers
 
           ul.Listing-organizations__list
@@ -68,5 +69,5 @@
       = modal_for 'js-report-overlay' do
         = render '/contacts/shared/new', contact: @contact, reporting: true
 
-/ - content_for :view_specific_scripts do
-/   = javascript_include_tag "gmaps_search_results.js"
+/- content_for :view_specific_scripts do
+/  = javascript_include_tag "gmaps_search_results.js"

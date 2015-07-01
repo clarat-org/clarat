@@ -46,10 +46,8 @@ class Clarat.Search.Controller extends ActiveScript.Controller
 
   # parameters from form fields on page
   params: ->
-    geolocation: document.getElementById('search_form_generated_geolocation').value
-    query: document.getElementById('search_form_query').value
-    category: document.getElementById('search_form_category').value
-    facet_filters: [] # TODO
+    @_params ?= Clarat.Search.persister.load()
+    # TODO: Params don't update
 
 Clarat.Search.controller = new Clarat.Search.Controller
 

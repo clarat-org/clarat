@@ -47,6 +47,7 @@ about supported directives.
 # = require modules/search/model
 # = require modules/search/controller
 # = require modules/search/helper
+# = require modules/search/persister
 # = require modules/search/queries/base_query
 # = require modules/search/queries/facet_query
 # = require modules/search/queries/nearby_query

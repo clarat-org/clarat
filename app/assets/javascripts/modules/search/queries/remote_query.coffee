@@ -30,8 +30,6 @@ class Clarat.Search.RemoteQuery extends Clarat.Search.BaseQuery
   # Remote search is in a separate index and uses the area as a bounding box,
   # in a general search context this only gets 2 results as a teaser
   area_filter: ->
-    splitGeolocation = @geolocation.split ','
-    lat = splitGeolocation[0]
-    lng = splitGeolocation[1]
+    [lat, lng] = @geolocation.split ','
     "area_minlat<=#{lat},area_maxlat>=#{lat},\
     area_minlong<=#{lng},area_maxlong>=#{lng}"

@@ -9,7 +9,7 @@
     = render '/update_requests/new', update_request: @update_request
 
   = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                              search_cache: @search_cache,
+                                              search_form: @search_form,
                                               facets: false
 
   aside.aside-standard
@@ -27,7 +27,7 @@
          button.big-map_close X
 
 / Alert user when we used default location because they didn't give one
-- if @search_cache.search_location.blank?
+- if @search_form.search_location.blank?
   - content_for :view_specific_scripts do
 
     javascript:

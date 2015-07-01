@@ -8,10 +8,12 @@
 
   = hb 'if personal_focus_with_remote' do
     %h2.Listing-results__headline
-      = hb 'remote_offer_headline'
+      = hb 'remote_results_headline'
 
       = hb 'if has_two_or_more_remote_results' do
-        = hb 'more_link'
+        .more_remote-offers_open
+          %a{ href: '{{more_href}}' }
+            = hb 'more_anchor'
 
     %ul.Listing-results__list
       = hb 'each remote_offers' do
@@ -20,14 +22,17 @@
 
 
   %h2.Listing-results__headline
-    Search Results Info Headline
-    = hb '!> search_results_info_headline'
+    .search-string
+      = hb 'personal_results_headline'
+    %a.big-map_open{ href: "#" }
+      = hb 'show_on_big_map_anchor'
+
 
   %ul.Listing-results__list
     = hb 'each main_offers' do
       = hb '> _single_search_result'
 
-  {{! pagination }}
+  = hb '! pagination !'
 
 / prepare ajax spinner
 %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner

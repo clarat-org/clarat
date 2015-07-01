@@ -1,70 +1,61 @@
-# Frontend Search Implementation
-class Clarat.Search.Handler
-  constructor: ->
-    ### PUBLIC ATTRIBUTES ###
+# Frontend Search Implementation - Controller
+# Patterns: Singleton instance; Model-Template-Controller structure
+class Clarat.Search.Controller extends ActiveScript.Controller
+  ### PUBLIC "ACTIONS" ###
 
-    @client = algoliasearch Clarat.Search.appID, Clarat.Search.apiKey
+  # Search#new is rendered by ruby as Offers#index
 
-    @personalIndex = @client.initIndex Clarat.Search.personalIndexName
-    @remoteIndex = @client.initIndex Clarat.Search.remoteIndexName
+  ###
+  Creating a search means that we compile the available parameters into
+  a search query and instead of sending (saving) it to our database, we send
+  it to a remote search index, which returns aus the completed search objects
+  for the show view. That means #show can't be called directly without #create
+  as it's not persisted.
+  ###
+  create: ->
+    search = new Clarat.Search.Model @params()
+    search.send().then(@show).catch(@failure)
 
+  ### PRIVATE "ACTIONS" (not enforced) ###
 
-  ### PUBLIC METHODS ###
+  # Rendered upon successful create.
+  show: (resultSet) =>
+    personalResults = resultSet.results[0]
+    remoteResults = resultSet.results[1]
+    nearbyResults = resultSet.results[2]
 
-  sendSearch: (query = '') ->
-    @client.search([
-      indexName: Clarat.Search.personalIndexName
-      query: query
-    ,
-      indexName: Clarat.Search.remoteIndexName
-      query: query
-      params:
-        hitsPerPage: 1
-    ]).then(@searchSuccess).catch(@searchFailure)
+    @render 'search_results',
+      personal_focus_with_remote: true # TODO
+      has_two_or_more_remote_results: remoteResults.nbHits > 1
+      remote_results_headline: I18n.t('js.search_results.remote_offers', count: remoteResults.nbHits)
+      personal_results_headline: I18n.t('js.search_results.personal_offers', count: personalResults.nbHits)
+      more_anchor: I18n.t('js.search_results.more')
+      more_href: window.location.href #offers_path(search_form: search_cache.remote_focus)
+      show_on_big_map_anchor: I18n.t('js.search_results.show_on_big_map')
+      main_offers: personalResults.hits
+      personal_count: personalResults.nbHits
+      remote_offers: remoteResults.hits
+      translate: @translateString
 
   ### PRIVATE METHODS (not enforced) ###
 
-  searchSuccess: (content) ->
-    @personalResults = content.results[0]
-    @remoteResults = content.results[1]
-
-    console.log @personalResults.hits[0]
-    $('.content-main').html(
-      HandlebarsTemplates['search_results'](
-        personal_focus_with_remote: true
-        has_two_or_more_remote_results: true
-        remote_offer_headline: "Remote Offer Headline" #t '.remote_offers', count: search.remote_hits.nbHits
-        more_link: "(More)" #link_to t('.more'), offers_path(search_form: search_cache.remote_focus)
-        main_offers: @personalResults.hits
-        remote_offers: @remoteResults.hits
-        translate: @translateString
-      )
-    )
-
-  searchFailure: (error) ->
+  # Error view, rendered in case of any create/show exceptions.
+  failure: (error) =>
     console.log error
+    @render 'error_ajax', I18n.t('js.ajax_error')
 
-    $('.content-main').html(
-      HandlebarsTemplates['error_ajax'] I18n.t('js.ajax_error')
-    )
+  # parameters from form fields on page
+  params: ->
+    geolocation: document.getElementById('search_form_generated_geolocation').value
+    query: document.getElementById('search_form_query').value
+    category: document.getElementById('search_form_category').value
+    facet_filters: [] # TODO
 
-Handlebars.registerHelper
-  # Translations in Handlebars. Make sure to provide a scope that contains at
-  # least 'js'
-  i18n: (string, options) ->
-    I18n.t string, options.hash if string
+Clarat.Search.controller = new Clarat.Search.Controller
 
-  # Logic comparator. This goes against Handlebars conventions so use with care.
-  ifDiffering: (string, options) ->
-    if string is options.hash.from
-      options.inverse this
-    else
-      options.fn this
-
-Clarat.Search.handler = new Clarat.Search.Handler
 
 $('#search_form_query').on 'keyup', ->
-  Clarat.Search.handler.sendSearch @value
+  Clarat.Search.controller.create()
 
 # class SearchManager
 #   attr_reader :search_form, :page

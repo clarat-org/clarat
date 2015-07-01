@@ -39,7 +39,19 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
-# = require modules/search/handler
+# = require modules/handlebars/helpers
+#
+# = require modules/active_script/controller
+# = require modules/active_script/model
+#
+# = require modules/search/model
+# = require modules/search/controller
+# = require modules/search/helper
+# = require modules/search/queries/base_query
+# = require modules/search/queries/facet_query
+# = require modules/search/queries/nearby_query
+# = require modules/search/queries/personal_query
+# = require modules/search/queries/remote_query
 #
 # = require modules/analytics
 # = require modules/ajax

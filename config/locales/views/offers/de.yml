@@ -19,28 +19,14 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
 
-    map:
-      show_on_big_map: "Auf großer Karte anzeigen"
-      enlarge_map: "Karte vergrößern"
-      headline_small_map: "Angebote vor Ort auf der Karte"
-
     index:
       location_fallback: |
         Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
-
+      map:
+        enlarge_map: "Karte vergrößern"
+        headline_small_map: "Angebote vor Ort auf der Karte"
 
       # index partials
-      search_results:
-        more: "(Weitere Angebote …)"
-        personal_offers:
-          zero: "Keine Angebote vor Ort"
-          one: "Ein Angebot vor Ort"
-          other: "%{count} Angebote vor Ort"
-        remote_offers:
-          zero: "Keine Telefon- und Onlineberatungen"
-          one: "Eine Telefon- oder Onlineberatung"
-          other: "%{count} Telefon- und Onlineberatungen"
-
       pending_ajax:
         searching: "Suche…"
 

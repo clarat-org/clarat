@@ -4,6 +4,7 @@ de:
     current_location: 'Mein Standort'
     default_location: 'Berlin'
     default_latlng: '52.520007,13.404954'
+
   js: # translations used in JavaScript. I18n-JS forces them to be located here.
     geolocation:
       get: Benutze meinen Standort!
@@ -47,10 +48,24 @@ de:
         - schwänzen
         - wohnen
       example_placeholder: "z.B. %{word}, …"
-    encounters:
-      personal: "Persönlich" #?
-      hotline: "Telefon"
-      email: "E-Mail"
-      chat: "Chat"
-      forum: "Forum"
-      online-course: "Online-Kurs"
+
+    search_results:
+      more: "(Weitere Angebote …)"
+      show_on_big_map: "Auf großer Karte anzeigen"
+      personal_offers:
+        zero: "Keine Angebote vor Ort"
+        one: "Ein Angebot vor Ort"
+        other: "%{count} Angebote vor Ort"
+      remote_offers:
+        zero: "Keine Telefon- und Onlineberatungen"
+        one: "Eine Telefon- oder Onlineberatung"
+        other: "%{count} Telefon- und Onlineberatungen"
+
+    single_search_result:
+      encounters:
+        personal: "Persönlich" #?
+        hotline: "Telefon"
+        email: "E-Mail"
+        chat: "Chat"
+        forum: "Forum"
+        online-course: "Online-Kurs"

@@ -270,7 +270,7 @@ de:
           sich deine Angebote automatisch auch in andere Sprachen übersetzen
           lassen. In Arabisch, Englisch, Französisch, Polnisch, Russisch und
           Türkisch.
-        question_two: "> Warum bin ich als Organisation nicht bei clarat?"
+        question_two: "> Warum ist meine Organisation nicht bei clarat?"
         answer_two: |
           Das kann daran liegen, dass wir für deinen Standort leider noch keine
           Angebote gesammelt haben. Momentan haben wir viele Angebote für Berlin
@@ -345,19 +345,8 @@ de:
         answer_six_bullet_seven: |
           Kindergärten
         question_seven: |
-          > Warum ist meine Organisation nicht bei clarat?
-        answer_seven: |
-          Das kann daran liegen, dass wir für deinen Standort leider noch keine
-          Angebote gesammelt haben. Momentan haben wir viele Angebote für Berlin
-          und einige für Brandenburg gesammelt. Die meisten Angebote gibt es
-          bisher für den Stadtteil Friedrichshain-Kreuzberg. Außerdem gibt es
-          schon einige Telefon-Angebote und Online-Angebote, die man von überall
-          aus nutzen kann. Wir werden auch in Zukunft weiter Angebote sammeln.
-          Außerdem findet man bei clarat nur Angebote zu ganz bestimmten Themen.
-          Welche das sind, kannst du %{what_offers} nachlesen.
-        question_eight: |
           > Wie kann ich mir meine Angebote in einer Übersicht anzeigen lassen?
-        answer_eight: |
+        answer_seven: |
           Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation
           eintragen. Und dann in dem Feld <i>Wo</i> den Standort deiner
           Organisation. Zum Beispiel <i>Mustermannstraße Berlin</i> oder

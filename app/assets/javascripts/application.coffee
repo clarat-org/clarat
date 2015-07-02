@@ -56,3 +56,4 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/faq
+# = require modules/shariff_addional

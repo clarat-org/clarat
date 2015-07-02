@@ -5,8 +5,8 @@ ul.section-content--contact-person-list
     - cache [offer, contact] do
       li
         / TODO: Refactor (Move to model)
-        - if contact.name? || contact.last_name?
-          = "#{t '.person'}:"
+        - if contact.last_name?
+          = t '.person'
           - if contact.gender?
             =< t ".#{contact.gender}"
           - if contact.first_name? && contact.last_name?
@@ -15,10 +15,13 @@ ul.section-content--contact-person-list
           - elsif contact.last_name?
             =< "#{contact.last_name}"
             br
-          - else
-            =< "#{contact.name}"
-            br
-        - if contact.operational_name?
+        - elsif contact.name?
+          = "#{t '.person'} #{contact.name}"
+          br
+        - elsif contact.first_name?
+          = "#{t '.person'}: #{contact.first_name}"
+          br
+        - elsif contact.operational_name?
           = "#{contact.operational_name}"
           br
 

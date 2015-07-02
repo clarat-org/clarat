@@ -156,7 +156,7 @@ de:
       who_contact_people:
         female: "Frau"
         male: "Herr"
-        person: "Ansprechpartner"
+        person: "Ansprechpartner:"
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "

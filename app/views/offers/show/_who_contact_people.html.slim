@@ -17,14 +17,14 @@ ul.section-content--contact-person-list
           - elsif contact.last_name?
             =< "#{contact.last_name}"
             br
-        - elsif contact.name?
-          = "#{t '.person'} #{contact.name}"
-          br
         - elsif contact.first_name?
           = "#{t '.person'} #{contact.first_name}"
           br
         - elsif contact.operational_name?
           = "#{contact.operational_name}"
+          br
+        - elsif contact.name?
+          = "#{t '.person'} #{contact.name}"
           br
 
         - if contact.local_number_1?

@@ -84,6 +84,7 @@ class Offer < ActiveRecord::Base
 
   def structured_websites
     # TODO: Refactor!
+    sites = []
     sites << websites.send('own').find { |i| !i.url.ends_with?('.pdf') }
     sites << websites.send('own').find { |i| i.url.ends_with?('.pdf') }
     Website::HOSTS[1..-2].each do |host| # no "other"

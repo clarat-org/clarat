@@ -5,7 +5,12 @@ class ContactPerson < ActiveRecord::Base
   belongs_to :organization, inverse_of: :contact_people
 
   has_many :contact_person_offers, inverse_of: :contact_person
-  has_many :offers, through: :contact_person_offers
+  has_many :offers, through: :contact_person_offers, inverse_of: :contact_people
+
+  # Enumerization
+  extend Enumerize
+  enumerize :gender, in: %w(female male)
+  enumerize :academic_title, in: %w(dr prof_dr)
 
   # Validations
   validates :organization_id, presence: true
@@ -44,5 +49,11 @@ class ContactPerson < ActiveRecord::Base
 
   def fax
     fax_area_code.to_s + fax_number
+  end
+
+  def partial_dup
+    self.dup.tap do |contact_person|
+      contact_person.offers = self.offers
+    end
   end
 end

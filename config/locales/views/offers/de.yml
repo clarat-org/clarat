@@ -154,7 +154,11 @@ de:
           gplus: "Google+"
           pinterest: "Pinterest"
       who_contact_people:
-        person: "Ansprechpartner"
+        female: "Frau"
+        male: "Herr"
+        dr: "Dr."
+        prof_dr: "Prof. Dr."
+        person: "Ansprechpartner:"
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "

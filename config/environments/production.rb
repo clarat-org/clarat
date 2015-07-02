@@ -102,7 +102,7 @@ Clarat::Application.configure do
     authentication: 'login',
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { host: 'clarat.org' }
+  config.action_mailer.default_url_options = { host: 'www.clarat.org' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false

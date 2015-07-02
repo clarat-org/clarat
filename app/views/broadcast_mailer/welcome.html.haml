@@ -1,0 +1,61 @@
+%p
+  Liebe(r)
+  = @contact_person.name.strip + ','
+
+%p
+  seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal
+  = link_to 'www.clarat.org', 'http://www.clarat.org'
+  zu finden.
+
+%p
+  Ihre Angebote heißen bei clarat:
+  %ul
+    - @offers.each do |offer|
+      %li
+        = '"' + offer.name.strip + '",'
+        zu finden unter folgendem Link:
+        %br
+        = link_to offer_url(offer), offer_url(offer)
+
+%p
+  Fehlt etwas? Das kann sein. Denn wir sind auch weiterhin dabei, stetig Angebote zu ergänzen. Deshalb kommt es vor, dass wir noch nicht alle Angebote einer Organisation erfasst haben.
+
+%p
+  Oder hat sich ein Fehler eingeschlichen? Melden Sie sich bei uns! Wir freuen uns über jedes Feedback.
+
+%p
+  clarat wird von einer gemeinnützigen Stiftung entwickelt und ist ein kostenloses Web-Verzeichnis. Hier finden Kinder, Jugendliche und Familien in Not einfach Hilfe in ihrer Nähe.
+
+%p
+  Neben einer einfachen Navigation haben wir auf eine leicht verständliche Sprache geachtet. Dies führt auch dazu, dass jedes Angebot mit einem Klick in weitere Sprachen (u.a. Arabisch, Russisch, Türkisch) übersetzt werden kann. Zunächst haben wir mit der Aufnahme von Unterstützungsangeboten aus Berlin Friedrichshain / Kreuzberg begonnen.
+
+%p
+  Wir hoffen, dass Ihre Angebote mit clarat noch leichter gefunden werden als bisher. Von Menschen in Not. Aber auch von Menschen, die Kindern, Jugendlichen und Familien zeigen möchten, wo es Hilfe gibt.
+%p
+  Wir wünschen uns, dass clarat auch Sie in Ihrer täglichen Arbeit unterstützt. Zum Beispiel, wenn Sie auf der Suche nach geeigneten Unterstützungsangeboten für hilfesuchende Menschen sind, denen Sie nicht direkt weiterhelfen können.
+
+%p
+  Wir freuen uns auf Ihr Feedback!
+
+%p
+  Mit freundlichen Grüßen
+
+%p
+  Anne Schulze
+
+%p
+  clarat
+  %br
+  ein Projekt der Benckiser Stiftung Zukunft
+  %br
+  Französische Straße 47
+  %br
+  10117 Berlin
+  %br
+  Tel.: +49 (0)30 55 57 96 00
+
+%p
+  P.S. Wenn Sie mehr über clarat erfahren wollen, schauen Sie sich doch unseren kurzen
+  = link_to 'Einführungsfilm', 'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/'
+  an oder besuchen Sie unseren
+  = link_to('Blog', 'http://blog.clarat.org') + '.'

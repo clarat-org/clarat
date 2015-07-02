@@ -18,9 +18,19 @@
           h4.FAQ_question = t '.section_one.question_two'
           .FAQ_paragraph = t '.section_one.answer_two'
           h4.FAQ_question = t '.section_one.question_three'
-          .FAQ_paragraph = t '.section_one.answer_three'
+          .FAQ_paragraph
+            == t '.section_one.answer_three',
+              how_to_find_offers: \
+              link_to('Hier',
+                      '/haeufige-fragen/#how_to_find_offers',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_one.question_four'
-          .FAQ_paragraph = t '.section_one.answer_four'
+          .FAQ_paragraph
+            == t '.section_one.answer_four',
+              simple_language: \
+              link_to('einfachen Sprache',
+                      '/haeufige-fragen/#simple_language',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_one.question_five'
           .FAQ_paragraph
             == t '.section_one.answer_five',
@@ -30,7 +40,7 @@
                       target: '_blank'),
               about_us: \
               link_to('hier',
-                      'ueber-uns/',
+                      '/ueber-uns',
                       target: '_blank')
           h4.FAQ_question = t '.section_one.question_six'
           .FAQ_paragraph = t '.section_one.answer_six'
@@ -41,13 +51,15 @@
               link_to('Hier',
                       'https://vimeo.com/112156061',
                       target: '_blank')
+          h4.FAQ_question = t '.section_one.question_eight'
+          .FAQ_paragraph = t '.section_one.answer_eight'
 
       section
         h3.section-question-group__headline = t '.section_two.heading'
         .section-question-group__body
           h4.FAQ_question = t '.section_two.question_one'
           .FAQ_paragraph = t '.section_two.answer_one'
-          h4.FAQ_question = t '.section_two.question_two'
+          h4.FAQ_question#simple_language = t '.section_two.question_two'
           .FAQ_paragraph
             == t '.section_two.answer_two',
               mailto: \
@@ -65,18 +77,21 @@
           h4.FAQ_question = t '.section_three.question_three'
           .FAQ_paragraph
             = t '.section_three.answer_three_first_part'
-            br
+            p
               = t '.section_three.answer_three_second_part'
-            br
+            p
               == t '.section_three.answer_three_third_part'
-            br
-              == t '.section_three.answer_three_fourth_part'
+            == t '.section_three.answer_three_fourth_part'
           h4.FAQ_question == t '.section_three.question_four'
           .FAQ_paragraph = t '.section_three.answer_four'
           h4.FAQ_question = t '.section_three.question_five'
           .FAQ_paragraph = t '.section_three.answer_five'
           h4.FAQ_question = t '.section_three.question_six'
           .FAQ_paragraph = t '.section_three.answer_six'
+          h4.FAQ_question = t '.section_three.question_seven'
+          .FAQ_paragraph = t '.section_three.answer_seven'
+          h4.FAQ_question = t '.section_three.question_eight'
+          .FAQ_paragraph = t '.section_three.answer_eight'
 
       section
         h3.section-question-group__headline = t '.section_four.heading'
@@ -84,7 +99,12 @@
           h4.FAQ_question = t '.section_four.question_one'
           .FAQ_paragraph = t '.section_four.answer_one'
           h4.FAQ_question = t '.section_four.question_two'
-          .FAQ_paragraph = t '.section_four.answer_two'
+          .FAQ_paragraph
+            == t '.section_four.answer_two',
+              what_offers: \
+              link_to('hier',
+                      '/haeufige-fragen/#what_offers',
+                      class: 'FAQ_anchor_link')
           h4.FAQ_question = t '.section_four.question_three'
           .FAQ_paragraph == t '.section_four.answer_three'
           h4.FAQ_question = t '.section_four.question_four'
@@ -94,6 +114,44 @@
               mail_to('post@clarat.org',
                       'post@clarat.org',
                       target: '_blank')
+          h4.FAQ_question#what_offers = t '.section_four.question_five'
+          .FAQ_paragraph
+            == t '.section_four.answer_five'
+            p
+              ul
+                li
+                  = t '.section_four.answer_five_bullet_one'
+                li
+                  == t '.section_four.answer_five_bullet_two'
+                li
+                  = t '.section_four.answer_five_bullet_three'
+                li
+                  = t '.section_four.answer_five_bullet_four'
+                li
+                  == t '.section_four.answer_five_bullet_five'
+                li
+                  = t '.section_four.answer_five_bullet_six'
+          h4.FAQ_question = t '.section_four.question_six'
+          .FAQ_paragraph
+            == t '.section_four.answer_six'
+            p
+              ul
+                li
+                  = t '.section_four.answer_six_bullet_one'
+                li
+                  == t '.section_four.answer_six_bullet_two'
+                li
+                  = t '.section_four.answer_six_bullet_three'
+                li
+                  = t '.section_four.answer_six_bullet_four'
+                li
+                  == t '.section_four.answer_six_bullet_five'
+                li
+                  = t '.section_four.answer_six_bullet_six'
+                li
+                  = t '.section_four.answer_six_bullet_seven'
+          h4.FAQ_question = t '.section_four.question_seven'
+          .FAQ_paragraph == t '.section_four.answer_seven'
 
       section
         h3.section-question-group__headline = t '.section_five.heading'
@@ -115,6 +173,8 @@
                   = t '.section_five.answer_two_bullet_four'
                 li
                   = t '.section_five.answer_two_bullet_five'
+                li
+                  = t '.section_five.answer_two_bullet_six'
             = t '.section_five.answer_two_second_part'
           h4.FAQ_question = t '.section_five.question_three'
           .FAQ_paragraph = t '.section_five.answer_three'
@@ -135,4 +195,120 @@
                   == t '.section_five.answer_four_bullet_two'
           h4.FAQ_question = t '.section_five.question_five'
           .FAQ_paragraph = t '.section_five.answer_five'
-
+          h4.FAQ_question = t '.section_five.question_six'
+          .FAQ_paragraph == t '.section_five.answer_six'
+          h4.FAQ_question = t '.section_five.question_seven'
+          .FAQ_paragraph = t '.section_five.answer_seven'
+          h4.FAQ_question = t '.section_five.question_eight'
+          .FAQ_paragraph == t '.section_five.answer_eight'
+          h4.FAQ_question#how_to_find_offers = t '.section_five.question_nine'
+          .FAQ_paragraph
+            == t '.section_five.answer_nine_first_part'
+            p
+              ul
+                li
+                  == t '.section_five.answer_nine_bullet_one'
+            p
+              = t '.section_five.answer_nine_second_part'
+            p
+              ul
+                li
+                  == t '.section_five.answer_nine_bullet_two'
+          h4.FAQ_question = t '.section_five.question_ten'
+          .FAQ_paragraph == t '.section_five.answer_ten'
+          h4.FAQ_question = t '.section_five.question_eleven'
+          .FAQ_paragraph
+            = t '.section_five.answer_eleven'
+            p
+              ul
+                li
+                  == t '.section_five.answer_eleven_bullet_one'
+                li
+                  == t '.section_five.answer_eleven_bullet_two'
+                li
+                  = t '.section_five.answer_eleven_bullet_three'
+          h4.FAQ_question = t '.section_five.question_twelve'
+          .FAQ_paragraph
+            == t '.section_five.answer_twelve_first_part',
+              mailto: \
+              mail_to('post@clarat.org',
+                      'post@clarat.org',
+                      target: '_blank')
+            p
+              = t '.section_five.answer_twelve_second_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_twelve_bullet_one'
+                li
+                  == t '.section_five.answer_twelve_bullet_two'
+          h4.FAQ_question = t '.section_five.question_thirteen'
+          .FAQ_paragraph == t '.section_five.answer_thirteen'
+          h4.FAQ_question = t '.section_five.question_fourteen'
+          .FAQ_paragraph
+            == t '.section_five.answer_fourteen_first_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_fourteen_bullet_one'
+                li
+                  = t '.section_five.answer_fourteen_bullet_two'
+                li
+                  = t '.section_five.answer_fourteen_bullet_three'
+                li
+                  = t '.section_five.answer_fourteen_bullet_four'
+                li
+                  = t '.section_five.answer_fourteen_bullet_five'
+                li
+                  = t '.section_five.answer_fourteen_bullet_six'
+            p
+              == t '.section_five.answer_fourteen_second_part'
+          h4.FAQ_question = t '.section_five.question_fifteen'
+          .FAQ_paragraph
+            == t '.section_five.answer_fifteen_first_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_fifteen_bullet_one'
+                li
+                  = t '.section_five.answer_fifteen_bullet_two'
+                li
+                  = t '.section_five.answer_fifteen_bullet_three'
+                li
+                  = t '.section_five.answer_fifteen_bullet_four'
+                li
+                  = t '.section_five.answer_fifteen_bullet_five'
+            p
+              == t '.section_five.answer_sixteen_second_part'
+          h4.FAQ_question = t '.section_five.question_sixteen'
+          .FAQ_paragraph
+            == t '.section_five.answer_sixteen_first_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_sixteen_bullet_one'
+                li
+                  = t '.section_five.answer_sixteen_bullet_two'
+                li
+                  = t '.section_five.answer_sixteen_bullet_three'
+            p
+              == t '.section_five.answer_sixteen_second_part'
+          h4.FAQ_question = t '.section_five.question_seventeen'
+          .FAQ_paragraph
+            == t '.section_five.answer_seventeen_first_part'
+            p
+              ul
+                li
+                  = t '.section_five.answer_seventeen_bullet_one'
+                li
+                  = t '.section_five.answer_seventeen_bullet_two'
+                li
+                  = t '.section_five.answer_seventeen_bullet_three'
+                li
+                  = t '.section_five.answer_seventeen_bullet_four'
+                li
+                  = t '.section_five.answer_seventeen_bullet_five'
+            p
+              == t '.section_five.answer_seventeen_second_part'
+          h4.FAQ_question = t '.section_five.question_eighteen'
+          .FAQ_paragraph == t '.section_five.answer_eighteen'

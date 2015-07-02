@@ -55,6 +55,7 @@ class ContactPerson < ActiveRecord::Base
     self.dup.tap do |contact_person|
       self.offers.each do |offer|
         contact_person.offers << offer
+        ContactPersonOffer.create offer: offer, contact_person: contact_person
       end
     end
   end

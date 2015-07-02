@@ -29,6 +29,7 @@ FactoryGirl.define do
 
     trait :own do
       host 'own'
+      url 'http://www.example.com/'
     end
 
     trait :pdf do

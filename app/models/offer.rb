@@ -26,7 +26,7 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
-  has_many :contact_people, through: :contact_person_offers
+  has_many :contact_people, through: :contact_person_offers, inverse_of: :offers
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
   # Attention: former has_one :organization, through: :locations
@@ -84,6 +84,7 @@ class Offer < ActiveRecord::Base
 
   def structured_websites
     # TODO: Refactor!
+    sites = []
     sites << websites.send('own').find { |i| !i.url.ends_with?('.pdf') }
     sites << websites.send('own').find { |i| i.url.ends_with?('.pdf') }
     Website::HOSTS[1..-2].each do |host| # no "other"

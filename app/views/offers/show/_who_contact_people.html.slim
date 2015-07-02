@@ -4,9 +4,24 @@ ul.section-content--contact-person-list
   - offer_contacts.each_with_index do |contact, index|
     - cache [offer, contact] do
       li
-        - if contact.name?
-          = "#{t '.person'}: #{contact.name}"
+        / TODO: Refactor (Move to model)
+        - if contact.name? || contact.last_name?
+          = "#{t '.person'}:"
+          - if contact.gender?
+            =< t ".#{contact.gender}"
+          - if contact.first_name? && contact.last_name?
+            =< "#{contact.first_name} #{contact.last_name}"
+            br
+          - elsif contact.last_name?
+            =< "#{contact.last_name}"
+            br
+          - else
+            =< "#{contact.name}"
+            br
+        - if contact.operational_name?
+          = "#{contact.operational_name}"
           br
+
         - if contact.local_number_1?
           = t '.phone'
           a< href="tel:#{contact.telephone_1}"

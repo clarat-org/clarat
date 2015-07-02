@@ -40,4 +40,23 @@
     background-image: image-url('searching-clara-t_organisation.svg');
   }
 
+  .template--pages-about & {
+    width: 233px;
+    height: 122px;
+    background-image: image-url('mascot--about.svg');
+  }
+
+  .template--contacts-new & {
+    background-image: image-url('mascot--contact.svg');
+    width: 181px;
+    left: 300px;
+  }
+
+  .template--pages-faq & {
+    left: 234px;
+    width: 295px;
+    height: 130px;
+    background-image: image-url('mascot--faq.svg');
+  }
+
 }

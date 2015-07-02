@@ -9,6 +9,8 @@ ul.section-content--contact-person-list
           = t '.person'
           - if contact.gender?
             =< t ".#{contact.gender}"
+          - if contact.academic_title?
+            =< t ".#{contact.academic_title}"
           - if contact.first_name? && contact.last_name?
             =< "#{contact.first_name} #{contact.last_name}"
             br
@@ -19,7 +21,7 @@ ul.section-content--contact-person-list
           = "#{t '.person'} #{contact.name}"
           br
         - elsif contact.first_name?
-          = "#{t '.person'}: #{contact.first_name}"
+          = "#{t '.person'} #{contact.first_name}"
           br
         - elsif contact.operational_name?
           = "#{contact.operational_name}"

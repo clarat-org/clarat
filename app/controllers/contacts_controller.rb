@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
       respond_to do |format|
         format.html do
           redirect_to root_path,
-                      flash: { success: I18n.t('flash.contact.success') }
+                      flash: { success: t('.success') }
         end
         format.js { render :create, layout: 'modal_create' }
       end

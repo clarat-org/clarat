@@ -14,7 +14,7 @@ feature 'Search Form' do
     with_xhr do
       find('.main-search__submit').click
     end
-    page.must_have_content 'Keine Vor-Ort-Angebote'
+    page.must_have_content 'Keine Angebote vor Ort'
     WebMock.disable!
   end
 
@@ -33,7 +33,7 @@ feature 'Search Form' do
       find('.main-search__submit').click
     end
 
-    page.must_have_content 'Ein Vor-Ort-Angebot'
+    page.must_have_content 'Ein Angebot vor Ort'
     Capybara.ignore_hidden_elements = false
     page.must_have_content "Clarat.Modal.open('#unavailable_location_overlay');"
     Capybara.ignore_hidden_elements = true
@@ -84,7 +84,7 @@ feature 'Search Form' do
       visit current_url # reload
       # test for category in info title
       page.must_have_content(
-        '2 Vor-Ort-Angebote in chunky bacon: „foo“ (Foobar)'
+        '2 Angebote vor Ort in chunky bacon: „foo“ (Foobar)'
       )
     end
     WebMock.disable!
@@ -99,7 +99,7 @@ feature 'Search Form' do
       }
     end
 
-    page.must_have_content 'Keine Vor-Ort-Angebote'
+    page.must_have_content 'Keine Angebote vor Ort'
     WebMock.disable!
   end
 
@@ -112,7 +112,7 @@ feature 'Search Form' do
       }
     end
 
-    page.wont_have_content 'Keine Vor-Ort-Angebote'
+    page.wont_have_content 'Keine Angebote vor Ort'
     page.must_have_content 'Keine Telefon- und Onlineberatungen'
     WebMock.disable!
   end
@@ -169,7 +169,7 @@ feature 'Search Form' do
     # test xhr part
     with_xhr do
       visit current_url # reload
-      page.must_have_content 'Keine Vor-Ort-Angebote in main1 (Berlin)'
+      page.must_have_content 'Keine Angebote vor Ort in main1 (Berlin)'
     end
 
     WebMock.disable!

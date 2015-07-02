@@ -48,10 +48,11 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/more
 # = require modules/modal
+# = require modules/modal_instances
 # = require modules/tooltip
 # = require modules/flash
 # = require modules/filter_form
 # = require modules/safari_fixes
 # = require modules/category_tree
 # = require modules/cookie_warning
-# = require modules/refocus
+# = require modules/faq

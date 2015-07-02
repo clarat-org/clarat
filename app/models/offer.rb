@@ -36,7 +36,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(personal hotline online)
+  enumerize :encounter, in: %w(personal hotline email chat forum online-course)
 
   # Friendly ID
   extend FriendlyId
@@ -83,8 +83,10 @@ class Offer < ActiveRecord::Base
   end
 
   def structured_websites
-    sites = []
-    Website::HOSTS[0..-2].each do |host| # no "other"
+    # TODO: Refactor!
+    sites << websites.send('own').find { |i| !i.url.ends_with?('.pdf') }
+    sites << websites.send('own').find { |i| i.url.ends_with?('.pdf') }
+    Website::HOSTS[1..-2].each do |host| # no "other"
       sites << websites.send(host).first
     end
     sites.compact

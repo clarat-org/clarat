@@ -8,8 +8,6 @@ html class='no-js' lang=I18n.locale
       = render 'layouts/partials/head'
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
-    / TODO: Refactor or remove after translation testing
-    meta content="45211f4e14ba32e8-69c1f4fa5867689a-gc94058d5fb845220-1d" name="google-translate-customization" /
 
   body class="template--#{controller_name}-#{action_name}"
     .page-wrap
@@ -21,8 +19,7 @@ html class='no-js' lang=I18n.locale
             = render '/layouts/partials/flash',
                      type: message[0],
                      content: message[1]
-
-      - if controller_name == 'pages' && %w(home about).include?(action_name)
+      - if controller_name == 'pages' && action_name == 'home'
         = render 'layouts/partials/navigation', search_cache: @search_cache
       - else
         = render 'layouts/partials/search_navigation',
@@ -30,6 +27,5 @@ html class='no-js' lang=I18n.locale
       = yield
     = render 'layouts/partials/footer', subscription: @subscription
 
-    - cache 'general_assets' do # care: I18n.locale set in cache
-      = render 'layouts/partials/general_assets'
+    = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts

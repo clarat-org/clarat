@@ -59,4 +59,15 @@
     // @TODO: smaller font for both headlines and paragraphs
   }
 
+  .section-start__body {
+    min-height: 340px;
+  }
+
+  .section-team__member {
+
+    p {
+      min-height: 21em;
+    }
+  }
+
 }

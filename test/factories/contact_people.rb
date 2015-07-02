@@ -15,6 +15,14 @@ FactoryGirl.define do
 
     organization
 
+    transient do
+      offers []
+    end
+
+    after :create do |contact_person, evaluator|
+      contact_person.offers = evaluator.offers unless evaluator.offers.blank?
+    end
+
     trait :no_fields do # careful, makes object non-valid
       name nil
       local_number_1 nil

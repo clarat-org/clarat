@@ -42,7 +42,7 @@ class SearchResults
     Offer.new json.slice(*%w(
       id name description next_steps encounter slug location_id created_at
       updated_at opening_specification comment completed approved approved_at
-      legal_information created_by approved_by renewed expires_at encounter
+      legal_information created_by approved_by renewed expires_at
     )) # organization_names encounter_value objectID _highlightResult _tags
   end
 
@@ -57,7 +57,9 @@ class SearchResults
     unless json['_geoloc'].blank?
       offer.location = Location.new(
         street: json['location_street'], city: json['location_city'],
-        zip: json['location_zip'] # _geoloc
+        zip: json['location_zip'],
+        latitude: json['_geoloc']['lat'],
+        longitude: json['_geoloc']['lng']
       )
     end
     offer

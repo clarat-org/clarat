@@ -7,7 +7,7 @@
 .template--offers-show {
 
   .section-content--internet-presence .section-content__title {
-    background: $brand_green;
+    background: $brand_grey;
   }
 
   .section-content--where .section-content__title {
@@ -15,6 +15,10 @@
   }
 
   .section-content--whos-offering .section-content__title {
+    background: $brand_green;
+  }
+
+  .section-content--when .section-content__title {
     background: $brand_green;
   }
 
@@ -100,8 +104,13 @@
     border-color: $brand_yellow;
   }
 
+  .offer-location-name {
+    font-weight: bold;
+    margin-top: .5em;
+  }
+
   .adr {
-    margin: .25em 0 1.25em;
+    margin: .25em 0;
   }
 
 }

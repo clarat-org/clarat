@@ -142,9 +142,9 @@
   }
 
   .section-team__member {
-    width: 49.5%;
+    width: 32%;
 
-    &:nth-child(2n+1) { // every second item
+    &:nth-child(3n) { // every third item
       margin-right: 0;
     }
   }
@@ -152,6 +152,13 @@
   .Listing-results {
     min-height: 0;
   }
+
+  .Listing-results__headline {
+    .search-string {
+      max-width: 70%
+    }
+  }
+
 
 
   #new_search_form {
@@ -208,7 +215,4 @@
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
   }
-
-
-
 }

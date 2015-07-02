@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150422150322) do
+ActiveRecord::Schema.define(version: 20150629092917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,15 +56,22 @@ ActiveRecord::Schema.define(version: 20150422150322) do
   create_table "contact_people", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "organization_id",            null: false
+    t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "area_code_1",     limit: 6
-    t.string   "local_number_1",  limit: 32
-    t.string   "area_code_2",     limit: 6
-    t.string   "local_number_2",  limit: 32
-    t.string   "fax_area_code",   limit: 6
-    t.string   "fax_number",      limit: 32
+    t.string   "area_code_1",      limit: 6
+    t.string   "local_number_1",   limit: 32
+    t.string   "area_code_2",      limit: 6
+    t.string   "local_number_2",   limit: 32
+    t.string   "fax_area_code",    limit: 6
+    t.string   "fax_number",       limit: 32
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "operational_name"
+    t.string   "academic_title"
+    t.string   "gender"
+    t.string   "role"
+    t.string   "responsibility"
   end
 
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
@@ -87,8 +94,8 @@ ActiveRecord::Schema.define(version: 20150422150322) do
   end
 
   create_table "definitions", force: true do |t|
-    t.string   "key",         limit: 50, null: false
-    t.text     "explanation",            null: false
+    t.string   "key",         null: false
+    t.text     "explanation", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -138,19 +145,22 @@ ActiveRecord::Schema.define(version: 20150422150322) do
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
-    t.string   "street",           null: false
+    t.string   "street",                      null: false
     t.string   "addition"
-    t.string   "zip",              null: false
-    t.string   "city",             null: false
+    t.string   "zip",                         null: false
+    t.string   "city",                        null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",  null: false
-    t.integer  "federal_state_id", null: false
+    t.integer  "organization_id",             null: false
+    t.integer  "federal_state_id",            null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "display_name",     null: false
+    t.string   "display_name",                null: false
+    t.string   "area_code",        limit: 6
+    t.string   "local_number",     limit: 32
+    t.string   "email"
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree

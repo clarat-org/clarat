@@ -46,7 +46,9 @@ class Organization < ActiveRecord::Base
   validates :approved, approved: true
 
   def before_approve
-    true
+    if locations.where(hq: true).count != 1
+      errors.add(:base, I18n.t('organization.validations.hq_location'))
+    end
   end
 
   # Statistics

@@ -2,4 +2,4 @@
   {{{ title }}}
 {{{ text }}}
 %br
-%a{ href: '{{{ url }}}' } {{{ anchor }}}
+%a{ href: '{{{ url }}}', data: {'no-turbolink' => 'true'} } {{{ anchor }}}

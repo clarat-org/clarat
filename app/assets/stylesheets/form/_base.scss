@@ -52,3 +52,16 @@ input[type="submit"] {
   display: table-cell;
   width: 25%;
 }
+
+%small_button_style {
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
+  @extend %roboto_bold;
+  display: inline-block;
+  background-color: $brand_brown;
+  color: $brand_white;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-decoration: none;
+
+}

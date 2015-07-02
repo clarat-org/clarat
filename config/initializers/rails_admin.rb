@@ -118,6 +118,10 @@ RailsAdmin.config do |config|
     clone_config do
       custom_method :partial_dup
     end
+
+    export do
+      field :id
+    end
   end
 
   config.label_methods << :url
@@ -147,6 +151,9 @@ RailsAdmin.config do |config|
     field :addition
     field :zip
     field :city
+    field :area_code
+    field :local_number
+    field :email
     field :federal_state do
       inline_add false
       inline_edit false
@@ -162,7 +169,9 @@ RailsAdmin.config do |config|
       field :offers
       field :display_name
     end
-
+    export do
+      field :id
+    end
     object_label_method :display_name
   end
 
@@ -185,6 +194,7 @@ RailsAdmin.config do |config|
       field :approved
       field :creator
       field :expires_at
+      field :approved_at
       field :organizations do
         searchable :name
       end
@@ -270,12 +280,43 @@ RailsAdmin.config do |config|
     clone_config do
       custom_method :partial_dup
     end
+
+    export do
+      field :id
+    end
   end
 
   config.model 'ContactPerson' do
     object_label_method :display_name
-
+    list do
+      field :id
+      field :name
+      field :organization
+      field :offers
+      field :email
+    end
     field :name
+    field :gender
+    field :academic_title
+    field :first_name
+    field :last_name
+    field :operational_name do
+      help do
+        "Falls es sich nicht um einen persönlichen Ansprechpartner handelt hier
+        z.B. 'Zentrale' eintragen"
+      end
+    end
+    field :role do
+      help do
+        "Z.b. 'Geschäftsführer'"
+      end
+    end
+    field :responsibility do
+      help do
+        "Z.b. 'Zuständig für alle Anfragen von Menschen deren Nachname mit den
+        Buchstaben A-M anfangen'"
+      end
+    end
     field :area_code_1
     field :local_number_1
     field :area_code_2
@@ -285,6 +326,12 @@ RailsAdmin.config do |config|
     field :email
     field :organization
     field :offers
+    export do
+      field :id
+    end
+    clone_config do
+      custom_method :partial_dup
+    end
   end
 
   config.model 'Opening' do

@@ -12,6 +12,9 @@ describe Location do
     it { subject.must_respond_to :addition }
     it { subject.must_respond_to :zip }
     it { subject.must_respond_to :city }
+    it { subject.must_respond_to :area_code }
+    it { subject.must_respond_to :local_number }
+    it { subject.must_respond_to :email }
     it { subject.must_respond_to :hq }
     it { subject.must_respond_to :latitude }
     it { subject.must_respond_to :longitude }
@@ -30,6 +33,8 @@ describe Location do
       it { subject.must validate_presence_of :zip }
       it { subject.must validate_length_of(:zip).is_equal_to 5 }
       it { subject.must validate_presence_of :city }
+      it { subject.must validate_length_of(:area_code).is_at_most 6 }
+      it { subject.must validate_length_of(:local_number).is_at_most 32 }
       it { subject.must validate_presence_of :organization_id }
       it { subject.must validate_presence_of :federal_state_id }
     end

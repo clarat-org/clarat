@@ -3,7 +3,6 @@ class ApprovedValidator < ActiveModel::EachValidator
     if record.approved_changed? && record.approved?
       record.before_approve
       first_version = record.versions.first
-
       if !record.completed?
         record.fail_validation attribute, 'incomplete'
       elsif first_version.nil? ||

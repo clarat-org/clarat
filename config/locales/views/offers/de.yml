@@ -130,6 +130,8 @@ de:
           gplus: "Google+"
           pinterest: "Pinterest"
       who_contact_people:
+        female: "Frau"
+        male: "Herr"
         person: "Ansprechpartner"
         phone: "Telefon: "
         fax: "Fax: "

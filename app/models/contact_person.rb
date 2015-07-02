@@ -5,7 +5,7 @@ class ContactPerson < ActiveRecord::Base
   belongs_to :organization, inverse_of: :contact_people
 
   has_many :contact_person_offers, inverse_of: :contact_person
-  has_many :offers, through: :contact_person_offers
+  has_many :offers, through: :contact_person_offers, inverse_of: :contact_people
 
   # Enumerization
   extend Enumerize
@@ -53,9 +53,7 @@ class ContactPerson < ActiveRecord::Base
 
   def partial_dup
     self.dup.tap do |contact_person|
-      self.offers.each do |offer|
-        contact_person.offers << offer
-      end
+      contact_person.offers = self.offers
     end
   end
 end

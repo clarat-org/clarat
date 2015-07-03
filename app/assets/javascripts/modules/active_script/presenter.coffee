@@ -2,11 +2,8 @@
 # JavaScript.
 # Meant to be extended. Might be made into a gem.
 window.ActiveScript ?= {}
-class ActiveScript.Presenter
-  # A Controller should be a singleton
+class ActiveScript.Presenter extends ActiveScript.Singleton
   constructor: ->
-    return Clarat.Search.presenter if Clarat.Search.presenter
-
     # Presenters are two-way streets. We render via the presenter and callbacks give information back.
     @registerCallbacks()
 

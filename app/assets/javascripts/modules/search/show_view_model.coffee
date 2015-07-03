@@ -1,4 +1,7 @@
 # Frontend Search Implementation - ViewModel for Search#show
+# Handles almost all logic for the view.
+# Is not based on the Search model, but the resultSet that the Presenter queries
+# from the remote index.
 # Patterns: Model-Template-Presenter structure
 class Clarat.Search.ShowViewModel
   constructor: (@resultSet) ->

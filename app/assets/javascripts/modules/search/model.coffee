@@ -1,4 +1,5 @@
 # Frontend Search Implementation - Model
+# Communicates with the Persister, called by the Presenter.
 # Patterns: Model-Template-Controller structure
 class Clarat.Search.Model extends ActiveScript.Model
   # We communicate with a remote service instead of a database. This is the

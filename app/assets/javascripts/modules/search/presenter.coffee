@@ -1,4 +1,7 @@
 # Frontend Search Implementation - Presenter
+# The presenter handles communication between the view and the model.
+# It's like a rails Controller, but also handles requests from the view (JS
+# callbacks)
 # Patterns: Singleton instance; Model-Template-Presenter structure
 class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### PUBLIC "ACTIONS" ###
@@ -39,6 +42,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # parameters from form fields on page
   params: ->
+    # TODO: call persister from model
     Clarat.Search.persister.load()
     # TODO: Params don't update
 
@@ -59,7 +63,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     event.preventDefault()
     false
 
-Clarat.Search.presenter = new Clarat.Search.Presenter
+Clarat.Search.presenter = Clarat.Search.Presenter.get()
 
 # class SearchManager
 #   attr_reader :search_form, :page

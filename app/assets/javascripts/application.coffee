@@ -41,12 +41,12 @@ about supported directives.
 #
 # = require modules/handlebars/helpers
 #
+# = require modules/active_script/singleton
 # = require modules/active_script/presenter
 # = require modules/active_script/model
 #
 # = require modules/search/model
 # = require modules/search/presenter
-# = require modules/search/helper
 # = require modules/search/persister
 # = require modules/search/show_view_model
 # = require modules/search/queries/base_query

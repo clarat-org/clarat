@@ -16,9 +16,7 @@ the expectations of users, that things still work after a reload:
 Think of it as the database, that the model interacts with.
 ###
 # Pattern: Singleton
-class Clarat.Search.Persister
-  constructor: ->
-    return Clarat.Search.persister if Clarat.Search.persister
+class Clarat.Search.Persister extends ActiveScript.Singleton
 
   LOADABLE_FIELDS: [
     'query', 'category', 'geolocation', 'generated_geolocation',
@@ -54,4 +52,4 @@ class Clarat.Search.Persister
       paramHash[field] = document.getElementById("search_form_#{field}").value
     return paramHash
 
-Clarat.Search.persister =  new Clarat.Search.Persister
+Clarat.Search.persister =  Clarat.Search.Persister.get()

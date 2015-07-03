@@ -20,6 +20,9 @@ de:
         (z.B. "Postleitzahl Ort").
 
     index:
+      noscript_warning: |
+        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
+        Browser JavaScript aktiviert haben.
       location_fallback: |
         Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
 

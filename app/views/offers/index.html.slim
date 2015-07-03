@@ -1,7 +1,11 @@
-#search-wrapper.wrapper-inner
+#search-wrapper.wrapper-inner.jsonly
   main.content-main
 
     = render 'offers/index/pending_ajax'
+    
+noscript.NoScript
+  i.fa.fa-exclamation-triangle
+  p = t('.noscript_warning')
 
 / Inform JS about the category structure
 #category-tree(

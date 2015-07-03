@@ -228,6 +228,19 @@ feature 'Admin Backend' do
       page.must_have_content 'kopietestname'
     end
 
+    # scenario 'Duplicate contact_person' do
+    #   FactoryGirl.create :offer, :approved, name: 'testoffer'
+    #   # contact_person = FactoryGirl.create :contact_person
+    #   # contact_person.offers << (FactoryGirl.create :offer, :approved, name: 'testoffer')
+    #   # debugger
+    #   visit rails_admin_path
+    #   click_link 'Kontaktpersonen', match: :first
+    #   click_link 'Duplizieren', match: :first
+    #   debugger
+    #   click_button 'Speichern'
+    #   page.must_have_content 'testoffer'
+    # end
+
     # describe 'Dependent Tags' do
     #   before do
     #     @tag = FactoryGirl.create :tag, dependent_tag_count: 1

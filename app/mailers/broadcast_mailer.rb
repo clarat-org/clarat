@@ -1,9 +1,11 @@
 class BroadcastMailer < ActionMailer::Base
-  default from: 'anne.schulze@clarat.org'
+  default from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
 
-  def welcome offer
-    @contact_person = offer.contact_people.first
-    @offer = offer
+  # @attr contact_person Person the email is sent to
+  # @attr offers variable only for test mails
+  def welcome contact_person, offers = nil
+    @contact_person = contact_person
+    @offers = offers || contact_person.offers.approved
 
     mail to: @contact_person.email
   end

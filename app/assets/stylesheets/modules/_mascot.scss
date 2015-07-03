@@ -11,10 +11,10 @@
 
 .mascot--footer {
   right: 350px;
-  bottom: -20px; // change back to '0' once faq link comes back
+  bottom: 0px;
   width: 120px;
   height: 150px;
-  background-image: image-url('clara-t.svg');
+  background-image: image-url('mascot--footer.svg');
   background-size: 120px auto;
 
   .template--pages-home & {
@@ -29,15 +29,34 @@
   height: 126px;
 
   .template--offers-index & {
-    background-image: image-url('reading-clara-t.svg');
+    background-image: image-url('mascot--index.svg');
   }
 
   .template--offers-show & {
-    background-image: image-url('searching-clara-t_offer.svg');
+    background-image: image-url('mascot--show.svg');
   }
 
   .template--organizations-show & {
-    background-image: image-url('searching-clara-t_organisation.svg');
+    background-image: image-url('mascot--organization.svg');
+  }
+
+  .template--pages-about & {
+    width: 233px;
+    height: 122px;
+    background-image: image-url('mascot--about.svg');
+  }
+
+  .template--contacts-new & {
+    background-image: image-url('mascot--contact.svg');
+    width: 181px;
+    left: 300px;
+  }
+
+  .template--pages-faq & {
+    left: 234px;
+    width: 295px;
+    height: 130px;
+    background-image: image-url('mascot--faq.svg');
   }
 
 }

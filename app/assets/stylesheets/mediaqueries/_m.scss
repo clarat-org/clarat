@@ -52,8 +52,7 @@
     .wrapper-inner {
       padding: 0;
 
-      .template--pages-home &,
-      .template--pages-about & {
+      .template--pages-home & {
         padding: 0 20px;
       }
     }
@@ -198,6 +197,17 @@
 
     p {
       min-height: 25em;
+    }
+  }
+
+  .contact-form {
+    margin-top: 22px;
+
+    .string input,
+    .email input,
+    textarea,
+    &.formtastic .inline-errors {
+      width: 410px;
     }
   }
 

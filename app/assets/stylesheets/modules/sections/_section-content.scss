@@ -33,6 +33,10 @@
   margin-bottom: 25px;
 }
 
+.section-content--contact {
+  width: 100%
+}
+
 .section-content__title {
   @extend %roboto_bold;
   @extend %clarat_rounding_start;

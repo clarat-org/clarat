@@ -22,9 +22,6 @@ de:
     index:
       location_fallback: |
         Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
-      map:
-        enlarge_map: "Karte vergrößern"
-        headline_small_map: "Angebote vor Ort auf der Karte"
 
       # index partials
       pending_ajax:
@@ -93,9 +90,6 @@ de:
           "150": "Deutsche Gebärdensprache"
           lav: "Lettisch"
           lit: "Litauisch"
-
-      categories_sidebar:
-        all_categories: "Alle Kategorien"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

@@ -43,8 +43,7 @@ class Clarat.Search.Model extends ActiveScript.Model
 
 
   isPersonal: ->
-    true # TODO
-    # search_form.contact_type == :personal
+    @contact_type == 'personal'
 
   # facet_filters: ->
   #   @filters ||= %w(age audience language).map do |type|

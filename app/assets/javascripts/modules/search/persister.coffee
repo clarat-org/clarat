@@ -22,7 +22,7 @@ class Clarat.Search.Persister
 
   LOADABLE_FIELDS: [
     'query', 'category', 'geolocation', 'generated_geolocation',
-    'exact_location' # TODO: facet_filters
+    'exact_location', 'contact_type' # TODO: facet_filters
   ]
 
   ### PUBLIC METHODS ###
@@ -51,10 +51,7 @@ class Clarat.Search.Persister
   getParamsFromSearchForm: ->
     paramHash = {}
     for field in @LOADABLE_FIELDS
-      paramHash[field] = document.getElementById("search_form_#{field}")?.value
-    # TODO: Remove "?" above and the quickfix below
-    paramHash['geolocation'] = paramHash['generated_geolocation']
-    # /Remove
+      paramHash[field] = document.getElementById("search_form_#{field}").value
     return paramHash
 
 Clarat.Search.persister =  new Clarat.Search.Persister

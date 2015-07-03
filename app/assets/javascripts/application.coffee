@@ -41,13 +41,14 @@ about supported directives.
 #
 # = require modules/handlebars/helpers
 #
-# = require modules/active_script/controller
+# = require modules/active_script/presenter
 # = require modules/active_script/model
 #
 # = require modules/search/model
-# = require modules/search/controller
+# = require modules/search/presenter
 # = require modules/search/helper
 # = require modules/search/persister
+# = require modules/search/show_view_model
 # = require modules/search/queries/base_query
 # = require modules/search/queries/facet_query
 # = require modules/search/queries/nearby_query

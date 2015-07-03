@@ -1,30 +1,17 @@
-.wrapper-inner
+#search-wrapper.wrapper-inner
   main.content-main
 
     = render 'offers/index/pending_ajax'
 
+/ Inform JS about the category structure
+#category-tree(
+  data={structure: render('offers/index/categories_nest.json', set: @category_tree, depth: 0)}
+)
 
-  = modal_for 'unavailable_location_overlay', autoopen: false do
-    p= t '.unavailable_location_modal'
-    = render '/update_requests/new', update_request: @update_request
-
-  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                              search_form: @search_form,
-                                              facets: false
-
-  aside.aside-standard
-    .aside-standard__container
-      h5.aside-standard__headline
-        = t('.map.headline_small_map')
-
-      #map-container
-        #map-canvas
-
-      a.map__button--enlarge.big-map_open[href="#big-map"]
-        = t('.map.enlarge_map')
-
-      #big-map
-         button.big-map_close X
+/ prepare modal
+= modal_for 'unavailable_location_overlay', autoopen: false do
+  p= t '.unavailable_location_modal'
+  = render '/update_requests/new', update_request: @update_request
 
 / Alert user when we used default location because they didn't give one
 - if @search_form.search_location.blank?

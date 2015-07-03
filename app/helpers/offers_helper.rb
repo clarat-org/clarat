@@ -10,11 +10,10 @@ module OffersHelper
 
   # Informative classes for category list display: how deep it's nested,
   # whether it's currently selected (active), if there are children below it
-  def category_list_classes search_form, name, depth, children
-    active_class = search_form.category_in_focus?(name) ? 'active' : ''
+  def category_list_classes depth, children
     depth_class = "depth--#{depth}"
     children_class = children.any? ? 'has-children' : ''
-    "#{active_class} #{depth_class} #{children_class}"
+    "#{depth_class} #{children_class}"
   end
 
   # collect search information for display in offers#index

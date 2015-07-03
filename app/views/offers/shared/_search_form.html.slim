@@ -16,9 +16,15 @@
                                 oninvalid: custom_validity_js('fill_field'),
                                 onchange: custom_validity_reset_js,
                                 required: true }
+
+  / Hidden Fields
+
   = f.input :generated_geolocation, as: :hidden,
                                     input_html: { \
                                       class: 'JS-Geolocation__input',
                                       value: default_geolocation }
+  = f.input :geolocation, as: :hidden
   = f.input :category, as: :hidden
+  = f.input :exact_location, as: :hidden
+  = f.input :contact_type, as: :hidden
   button.main-search__submit = t '.button'

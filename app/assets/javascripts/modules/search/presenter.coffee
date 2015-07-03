@@ -1,6 +1,6 @@
-# Frontend Search Implementation - Controller
-# Patterns: Singleton instance; Model-Template-Controller structure
-class Clarat.Search.Controller extends ActiveScript.Controller
+# Frontend Search Implementation - Presenter
+# Patterns: Singleton instance; Model-Template-Presenter structure
+class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### PUBLIC "ACTIONS" ###
 
   # Search#new is rendered by ruby as Offers#index
@@ -12,7 +12,7 @@ class Clarat.Search.Controller extends ActiveScript.Controller
   for the show view. That means #show can't be called directly without #create
   as it's not persisted.
   ###
-  create: ->
+  create: =>
     search = new Clarat.Search.Model @params()
     search.send().then(@show).catch(@failure)
 
@@ -20,22 +20,15 @@ class Clarat.Search.Controller extends ActiveScript.Controller
 
   # Rendered upon successful create.
   show: (resultSet) =>
-    personalResults = resultSet.results[0]
-    remoteResults = resultSet.results[1]
-    nearbyResults = resultSet.results[2]
+    @render 'search_results', new Clarat.Search.ShowViewModel(resultSet)
 
-    @render 'search_results',
-      personal_focus_with_remote: true # TODO
-      has_two_or_more_remote_results: remoteResults.nbHits > 1
-      remote_results_headline: I18n.t('js.search_results.remote_offers', count: remoteResults.nbHits)
-      personal_results_headline: I18n.t('js.search_results.personal_offers', count: personalResults.nbHits)
-      more_anchor: I18n.t('js.search_results.more')
-      more_href: window.location.href #offers_path(search_form: search_cache.remote_focus)
-      show_on_big_map_anchor: I18n.t('js.search_results.show_on_big_map')
-      main_offers: personalResults.hits
-      personal_count: personalResults.nbHits
-      remote_offers: remoteResults.hits
-      translate: @translateString
+  CALLBACKS:
+    '#search_form_query':
+      keyup: 'create'
+    '.JS-CategoryLink':
+      click: 'handleCategoryClick'
+    '.JS-MoreLink':
+      click: 'handleMoreClick'
 
   ### PRIVATE METHODS (not enforced) ###
 
@@ -46,14 +39,27 @@ class Clarat.Search.Controller extends ActiveScript.Controller
 
   # parameters from form fields on page
   params: ->
-    @_params ?= Clarat.Search.persister.load()
+    Clarat.Search.persister.load()
     # TODO: Params don't update
 
-Clarat.Search.controller = new Clarat.Search.Controller
 
+  ## Callbacks
 
-$('#search_form_query').on 'keyup', ->
-  Clarat.Search.controller.create()
+  handleCategoryClick: (event) =>
+    console.log 'cat clicked'
+    # TODO: update category params
+    @create()
+    event.preventDefault()
+    false
+
+  handleMoreClick: (event) =>
+    # TODO: update contact_type params
+    console.log 'more clicked'
+    @create()
+    event.preventDefault()
+    false
+
+Clarat.Search.presenter = new Clarat.Search.Presenter
 
 # class SearchManager
 #   attr_reader :search_form, :page

@@ -24,7 +24,8 @@ html class='no-js' lang=I18n.locale
       - else
         = render 'layouts/partials/search_navigation',
                  search_form: @search_form || SearchForm.new
-      = yield
+      #yield-wrap
+        = yield
     = render 'layouts/partials/footer',
              subscription: @subscription || Subscription.new
 

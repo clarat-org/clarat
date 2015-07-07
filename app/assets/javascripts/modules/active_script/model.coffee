@@ -4,5 +4,21 @@
 window.ActiveScript ?= {}
 class ActiveScript.Model
   constructor: (@attrs) ->
-    for attribute, value of @attrs
+    @assignAttributes(@attrs)
+
+  # Load stateful resource from persister. Equivalent to ActiveRecord #find
+  @load: ->
+    new this Clarat.Search.persister.load()
+    # TODO: this shouldn't know about the Clarat namepsace
+
+  save: ->
+    Clarat.Search.persister.save()
+    # TODO: this shouldn't know about the Clarat namepsace
+
+  assignAttributes: (attributes) ->
+    for attribute, value of attributes
       @[attribute] = value
+
+  updateAttributes: (attributes) ->
+    @assignAttributes(attributes)
+    @save()

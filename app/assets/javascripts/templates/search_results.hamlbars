@@ -1,43 +1,30 @@
-%main.content-main
-  /! Temporarily disable filters
-  /! > advanced_search
-  /! = render 'offers/index/advanced_search', search_cache: search_cache
+/!- if remote_focussed then main_offers = remote_offers
+/!- if personal_focussed then main_offers = personal_offers
 
-  .Listing-results
-    /!- if remote_focussed then main_offers = remote_offers
-    /!- if personal_focussed then main_offers = personal_offers
+= hb 'if personal_focus_with_remote' do
+  %h2.Listing-results__headline
+    = hb 'remote_results_headline'
 
-    = hb 'if personal_focus_with_remote' do
-      %h2.Listing-results__headline
-        = hb 'remote_results_headline'
+    = hb 'if has_two_or_more_remote_results' do
+      .more_remote-offers_open
+        %a.JS-MoreLink{ href: '{{more_href}}' }
+          = hb 'more_anchor'
 
-        = hb 'if has_two_or_more_remote_results' do
-          .more_remote-offers_open
-            %a.JS-MoreLink{ href: '{{more_href}}' }
-              = hb 'more_anchor'
-
-      %ul.Listing-results__list
-        = hb 'each remote_offers' do
-          - # first remote offer
-          = hb '> _single_search_result'
+  %ul.Listing-results__list
+    = hb 'each remote_offers' do
+      - # first remote offer
+      = hb '> _single_search_result'
 
 
-    %h2.Listing-results__headline
-      .search-string
-        = hb 'personal_results_headline'
-      %a.big-map_open{ href: "#" }
-        = hb 'show_on_big_map_anchor'
+%h2.Listing-results__headline
+  .search-string
+    = hb 'main_results_headline'
+  %a.big-map_open{ href: "#" }
+    = hb 'show_on_big_map_anchor'
 
 
-    %ul.Listing-results__list
-      = hb 'each main_offers' do
-        = hb '> _single_search_result'
+%ul.Listing-results__list
+  = hb 'each main_offers' do
+    = hb '> _single_search_result'
 
-    = hb '! pagination !'
-
-  / prepare ajax spinner
-  %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
-
-= hb '> _categories_sidebar'
-
-= hb '> _search_map'
+= hb '! pagination !'

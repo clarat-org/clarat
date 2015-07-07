@@ -4,7 +4,8 @@
 class Clarat.Search.Model extends ActiveScript.Model
   # We communicate with a remote service instead of a database. This is the
   # equivalent of a regular #save. We create a connection, then send the data
-  send: ->
+
+  getSearchResults: ->
     @client().search @queries()
 
   client: ->
@@ -13,11 +14,10 @@ class Clarat.Search.Model extends ActiveScript.Model
   ### PRIVATE METHODS (ue) ###
 
   queries: ->
-    return @_queries if @_queries
     # ,facet_query
-    @_queries = _.chain([@personal_query(), @remote_query(), @nearby_query()])
+    @_queries = _.chain [ @personal_query(), @remote_query(), @nearby_query() ]
       .compact()
-      .map (query) -> query.query_hash()
+      .map( (query) -> query.query_hash() )
       .value()
 
   personal_query: ->

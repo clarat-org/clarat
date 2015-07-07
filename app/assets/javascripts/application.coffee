@@ -46,9 +46,10 @@ about supported directives.
 # = require modules/active_script/model
 #
 # = require modules/search/model
-# = require modules/search/presenter
 # = require modules/search/persister
-# = require modules/search/show_view_model
+# = require modules/search/presenter
+# = require modules/search/search_cell
+# = require modules/search/search_results_cell
 # = require modules/search/queries/base_query
 # = require modules/search/queries/facet_query
 # = require modules/search/queries/nearby_query

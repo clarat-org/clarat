@@ -33,7 +33,7 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
   # Rails loads from URL params and cookies into the search form,
   # JS loads from the search form.
   load: ->
-    @getParamsFromSearchForm()
+    _.merge @getParamsFromSearchForm(), @getAdditionalParams()
 
   ### PRIVATE METHODS (ue) ###
 
@@ -52,4 +52,11 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
       paramHash[field] = document.getElementById("search_form_#{field}").value
     return paramHash
 
-Clarat.Search.persister =  Clarat.Search.Persister.get()
+  # Load from places other than the search form
+  getAdditionalParams: ->
+    paramHash =
+      # category tree gets transmitted as a JSON structure in a hidden element
+      categoryTree: $('#category-tree').data('structure').set
+
+
+Clarat.Search.persister = Clarat.Search.Persister.get()

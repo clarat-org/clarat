@@ -8,8 +8,8 @@ class ActiveScript.Presenter extends ActiveScript.Singleton
     @registerCallbacks()
 
   # render a template to the current browser view
-  render: (template, locals) ->
-    $('#search-wrapper').html HandlebarsTemplates[template] locals
+  render: (wrapperSelector, template, locals) ->
+    $(wrapperSelector).html HandlebarsTemplates[template] locals
 
   ### PRIVATE METHODS (ue) ###
 
@@ -19,3 +19,4 @@ class ActiveScript.Presenter extends ActiveScript.Singleton
     for selector, callback of @CALLBACKS
       for event, method of callback
         $('body').on event, selector, @[method]
+    return

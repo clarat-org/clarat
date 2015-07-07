@@ -4,10 +4,10 @@ faqClickHandlers = ->
   # since header's fixed position there calls for offset
   offsetCorrection = if ($(window).width() < 480) then 84 else 0
 
-  $('.FAQ_question').click ->
+  $('body').on 'click', '.FAQ_question', (event) ->
     $(this).next().toggle('slow')
 
-  $('.FAQ_anchor_link').on 'click', (event)->
+  $('body').on 'click', '.FAQ_anchor_link', (event) ->
     event.preventDefault()
 
     $('html, body').animate {
@@ -17,5 +17,4 @@ faqClickHandlers = ->
     $(this.hash).click()
 
 $(document).ready faqClickHandlers
-$(document).on 'page:load', faqClickHandlers
-$(window).resize faqClickHandlers
+# $(window).resize faqClickHandlers # TODO: Why? Causes bug.

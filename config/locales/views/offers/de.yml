@@ -129,7 +129,9 @@ de:
       who_contact_people:
         female: "Frau"
         male: "Herr"
-        person: "Ansprechpartner"
+        dr: "Dr."
+        prof_dr: "Prof. Dr."
+        person: "Ansprechpartner:"
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "

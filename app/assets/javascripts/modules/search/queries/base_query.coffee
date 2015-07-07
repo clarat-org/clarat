@@ -1,6 +1,6 @@
 # TODO: gueltige werte fuer category?
 class Clarat.Search.BaseQuery
-  PER_PAGE: 3 # 20
+  PER_PAGE: 20
   BASE_PRECISION: 500
 
   constructor:

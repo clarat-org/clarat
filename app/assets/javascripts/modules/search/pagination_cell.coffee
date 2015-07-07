@@ -3,8 +3,7 @@ class Clarat.Search.PaginationCell
     return @paginationViewObject()
 
   paginationViewObject: =>
-    # If no results
-    unless @results.hits.length
+    if @results.nbPages < 2 # If not enough results for pagination
       return {}
 
     return pagination =

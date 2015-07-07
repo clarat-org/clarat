@@ -46,6 +46,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleCategoryClick'
     '.JS-MoreLink':
       click: 'handleMoreClick'
+    '.JS-PaginationLink':
+      click: 'handlePaginationClick'
 
   handleQueryChange: (event) =>
     @model.assignAttributes query: event.target.value
@@ -58,12 +60,17 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $(event.target).parents('li').addClass 'active'
     # /Move
     @sendSearch()
-    @stopEvent(event)
+    @stopEvent event
 
   handleMoreClick: (event) =>
     @model.updateAttributes contact_type: 'remote'
     @sendSearch()
-    @stopEvent(event)
+    @stopEvent event
+
+  handlePaginationClick: (event) =>
+    @model.updateAttributes page: ($(event.target).data('page') - 1)
+    @sendSearch()
+    @stopEvent event
 
   # Error view, rendered in case of any sendSearch/searchResults exceptions.
   failure: (error) =>

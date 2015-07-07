@@ -12,3 +12,8 @@ Handlebars.registerHelper
       options.inverse this
     else
       options.fn this
+
+  debug: (options) ->
+    console.log 'Debugging Handlebars:'
+    console.log this
+    console.log options

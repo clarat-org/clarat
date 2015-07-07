@@ -20,6 +20,7 @@ class Clarat.Search.SearchResultsCell
 
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
+    pagination: new Clarat.Search.PaginationCell(@mainResults)
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

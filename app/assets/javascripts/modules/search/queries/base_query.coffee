@@ -1,6 +1,6 @@
 # TODO: gueltige werte fuer category?
 class Clarat.Search.BaseQuery
-  PER_PAGE: 20
+  PER_PAGE: 3 # 20
   BASE_PRECISION: 500
 
   constructor:
@@ -16,7 +16,7 @@ class Clarat.Search.BaseQuery
         aroundPrecision: @BASE_PRECISION
 
   page_query: ->
-    if @page
+    if @page?
       {
         params:
           page: @page

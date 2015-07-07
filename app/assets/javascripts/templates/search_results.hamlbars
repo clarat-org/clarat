@@ -27,4 +27,4 @@
   = hb 'each main_offers' do
     = hb '> _single_search_result'
 
-= hb '! pagination !'
+= hb '> _pagination pagination'

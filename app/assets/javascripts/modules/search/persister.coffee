@@ -58,5 +58,8 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
       # category tree gets transmitted as a JSON structure in a hidden element
       categoryTree: $('#category-tree').data('structure').set
 
+      # TODO: where do we get page from? URL params?
+      page: 0
+
 
 Clarat.Search.persister = Clarat.Search.Persister.get()

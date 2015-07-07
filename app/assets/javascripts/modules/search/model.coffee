@@ -21,7 +21,6 @@ class Clarat.Search.Model extends ActiveScript.Model
       .value()
 
   personal_query: ->
-    console.log @page
     if @isPersonal()
       new Clarat.Search.PersonalQuery(
         @geolocation, @query, @category, @facet_filters, @page

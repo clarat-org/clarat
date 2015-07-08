@@ -36,7 +36,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', viewModel
-    Clarat.Search.Concept.BuildMap.run viewModel.main_offers
+    if @model.isPersonal()
+      Clarat.Search.Concept.BuildMap.run viewModel.main_offers
     Clarat.Search.Concept.UpdateCategories.updateCounts resultSet.results.pop()
 
 
@@ -64,6 +65,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleMoreClick: (event) =>
     @model.updateAttributes contact_type: 'remote'
+    $('.aside-standard').toggle()
     @sendSearch()
     @stopEvent event
 

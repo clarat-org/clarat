@@ -1,6 +1,3 @@
-/!- if remote_focussed then main_offers = remote_offers
-/!- if personal_focussed then main_offers = personal_offers
-
 = hb 'if personal_focus_with_remote' do
   %h2.Listing-results__headline
     = hb 'remote_results_headline'
@@ -19,8 +16,10 @@
 %h2.Listing-results__headline
   .search-string
     = hb 'main_results_headline'
-  %a.big-map_open{ href: "#" }
-    = hb 'show_on_big_map_anchor'
+
+  = hb 'if personal_focus_with_remote' do
+    %a.big-map_open{ href: "#" }
+      = hb 'show_on_big_map_anchor'
 
 
 %ul.Listing-results__list

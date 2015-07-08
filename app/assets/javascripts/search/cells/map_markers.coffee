@@ -5,9 +5,8 @@ class Clarat.Search.Cell.MapMarkers
 
   markersViewObject: =>
     @markers = {}
-    collection = @mainResults
 
-    for element in collection
+    for element in @mainResults
       @makeMarker element
 
     @markers

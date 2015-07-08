@@ -33,8 +33,16 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # Rendered upon successful sendSearch.
   searchResults: (resultSet) =>
-    @render '.Listing-results', 'search_results',
-            new Clarat.Search.SearchResultsCell(resultSet, @model)
+    searchResultsObject = new Clarat.Search.SearchResultsCell resultSet, @model
+
+    @render '.Listing-results', 'search_results', searchResultsObject
+    markers = new Clarat.Search.MapMarkersCell searchResultsObject.main_offers
+    if Clarat.GMaps.loaded
+      Clarat.GMaps.Map.initialize(markers)
+    else
+      $('#search-wrapper').append(
+        $("<div id='map-data' data-markers='#{JSON.stringify markers}'>")
+      )
 
 
   ### CALLBACKS ###

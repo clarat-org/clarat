@@ -1,6 +1,7 @@
 ###
 This object acts as a bridge between the unpersisted nature of JavaScript and
-the expectations of users, that things still work after a reload:
+the expectations of users, that their choices are still applied after a reload
+or HTTP request:
 
 - When a user reloads the page, he expects to be where he was before. To
   accomplish that, we update the history when parameters change.
@@ -18,17 +19,17 @@ Think of it as the database, that the model interacts with.
 # Pattern: Singleton
 class Clarat.Search.Persister extends ActiveScript.Singleton
 
-  LOADABLE_FIELDS: [
+  LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'geolocation', 'generated_geolocation',
     'exact_location', 'contact_type', 'search_location' # TODO: facet_filters
   ]
 
   ### PUBLIC METHODS ###
 
-  save: ->
-    @updateURL()
-    @updateSearchForm()
-    @updateCookies()
+  save: (changes) ->
+    @updateURL changes
+    @updateSearchForm changes
+    @updateCookies changes
 
   # Rails loads from URL params and cookies into the search form,
   # JS loads from the search form.
@@ -37,14 +38,20 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
 
   ### PRIVATE METHODS (ue) ###
 
-  updateURL: ->
-    # TODO
+  ## Savers
 
-  updateSearchForm: ->
-    # TODO
+  updateURL: (changes) ->
+    if window.history?.replaceState # only in supported browsers
+      window.history.replaceState {}, '', @modifiedUrlString(changes)
 
-  updateCookies: ->
-    # TODO
+  updateSearchForm: (changes) ->
+    for field in @LOADABLE_FIELDS
+      $("#search_form_#{field}").val changes[field] if changes[field]?
+
+  updateCookies: (changes) ->
+    # TODO: when location
+
+  ## Loaders
 
   getParamsFromSearchForm: ->
     paramHash = {}
@@ -60,6 +67,20 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
 
       # TODO: where do we get page from? URL params?
       page: 0
+
+  ## Other
+
+  modifiedUrlString: (attributesToChange) ->
+    $.query.spaces = true
+
+    changedHref = $.query
+    for attribute, value of attributesToChange
+      changedHref = changedHref.set "search_form[#{attribute}]", value
+
+    changedHref = changedHref.toString().replace /%2B/g, '%20'
+    # ^ fix $.query tendency to convert space to plus
+
+    return window.location.href.split('?')[0] + changedHref
 
 
 Clarat.Search.persister = Clarat.Search.Persister.get()

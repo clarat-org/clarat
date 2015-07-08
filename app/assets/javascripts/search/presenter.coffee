@@ -30,6 +30,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Renders a mostly empty wireframe that the search results will be placed in.
   search: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
+    Clarat.Search.Concept.UpdateCategories.updateActiveClasses @model.category
 
   # Rendered upon successful sendSearch.
   searchResults: (resultSet) =>
@@ -45,7 +46,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
     '#search_form_query':
-      keyup: 'handleQueryChange'
+      keyup: 'handleQueryKeyUp'
+      change: 'handleQueryChange'
+    '.JS-RemoveQueryLink':
+      click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
     '.JS-MoreLink':
@@ -53,8 +57,17 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
-  handleQueryChange: (event) =>
+  handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
+    @sendSearch()
+
+  # We don't want to update all the time when user is typing. Persistence only
+  # happens when he is done (and this fires). No need to send new search.
+  handleQueryChange: (event) =>
+    @model.updateAttributes query: event.target.value
+
+  handleRemoveQueryClick: (event) =>
+    @model.updateAttributes query: ''
     @sendSearch()
 
   handleCategoryClick: (event) =>

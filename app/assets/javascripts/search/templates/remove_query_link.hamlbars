@@ -1,2 +1,2 @@
-%a{href: '#'}<
+%a.JS-RemoveQueryLink{href: '#'}<
   %i.fa.fa-times-circle

@@ -6,6 +6,7 @@ class Clarat.Search.Model extends ActiveScript.Model
   # equivalent of a regular #save. We create a connection, then send the data
 
   getSearchResults: ->
+    console.log(@queries()[3])
     @client().search @queries()
 
   client: ->
@@ -13,9 +14,9 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   ### PRIVATE METHODS (ue) ###
 
-  queries: ->
-    # ,facet_query
-    @_queries = _.chain [ @personal_query(), @remote_query(), @nearby_query() ]
+  queries: -> # TODO: nearby and facet stay the same unless location changed
+    @_queries = _.chain [
+      @personal_query(), @remote_query(), @nearby_query(), @facet_query() ]
       .compact()
       .map( (query) -> query.query_hash() )
       .value()
@@ -34,13 +35,11 @@ class Clarat.Search.Model extends ActiveScript.Model
   nearby_query: ->
     new Clarat.Search.Query.Nearby @geolocation
 
-  # facet_query: ->
-  #   new Clarat.Search.Query.Facet @facet_query_attrs()
-  #     query: @query,
-  #     category: @category,
-  #     geolocation: @geolocation,
-  #     search_radius: @search_radius,
-  #     facet_filters: @facet_filters
+  facet_query: ->
+    new Clarat.Search.Query.Facet(
+      @geolocation, @query, @category, @facet_filters
+      # @query, @category, @geolocation, @search_radius, @facet_filters
+    )
 
 
   isPersonal: ->

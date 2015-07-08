@@ -33,16 +33,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # Rendered upon successful sendSearch.
   searchResults: (resultSet) =>
-    searchResultsObject = new Clarat.Search.Cell.SearchResults resultSet, @model
+    viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
-    @render '.Listing-results', 'search_results', searchResultsObject
-    markers = new Clarat.Search.Cell.MapMarkers searchResultsObject.main_offers
-    if Clarat.GMaps.loaded
-      Clarat.GMaps.Map.initialize(markers)
-    else
-      $('#search-wrapper').append(
-        $("<div id='map-data' data-markers='#{JSON.stringify markers}'>")
-      )
+    @render '.Listing-results', 'search_results', viewModel
+    Clarat.Search.Concept.BuildMap.run viewModel.main_offers
+    Clarat.Search.Concept.UpdateCategories.updateCounts resultSet.results.pop()
 
 
   ### CALLBACKS ###
@@ -63,16 +58,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleCategoryClick: (event) =>
     @model.updateAttributes category: $(event.target).data('name')
-    # TODO: Move elsewhere
-    $('.Categories__list').find('.active').removeClass('active')
-    $(event.target).parents('li').addClass 'active'
-    # updateFacets: (facetsJSON) ->
-    #   for categoryLink in $("#categories li > a")
-    #     $categoryLink = $(categoryLink)
-    #     categoryName = $categoryLink.data('category')
-    #     facetCount = facetsJSON[categoryName] || 0
-    #
-    #     $categoryLink.html "#{categoryName} (#{facetCount})"
+    Clarat.Search.Concept.UpdateCategories.updateActiveClasses event.target
     @sendSearch()
     @stopEvent event
 

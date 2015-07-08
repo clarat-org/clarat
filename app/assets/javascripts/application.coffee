@@ -51,16 +51,17 @@ about supported directives.
 # = require search/model
 # = require search/persister
 # = require search/presenter
-# = require search/concepts/update_category
+# = require search/concepts/update_categories
+# = require search/concepts/build_map
 # = require search/cells/search
 # = require search/cells/search_results
 # = require search/cells/map_markers
 # = require search/cells/pagination
 # = require search/queries/base
-# = require search/queries/facet
 # = require search/queries/nearby
 # = require search/queries/personal
 # = require search/queries/remote
+# = require search/queries/facet
 #
 # = require modules/analytics
 # = require modules/ajax

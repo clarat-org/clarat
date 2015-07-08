@@ -1,15 +1,9 @@
-# class FacetQuery < PersonalQuery
-#   # TODO: needed?
-#   def initialize(args)
-#     super
-#   end
-#
-#   def query_hash
-#     super.merge(
-#       facets: '_tags',
-#       page: 0,
-#       hitsPerPage: 1,
-#       tagFilters: ''
-#     )
-#   end
-# end
+# To find out result counts of possible future queries
+class Clarat.Search.Query.Facet extends Clarat.Search.Query.Personal
+  query_hash: ->
+    _.merge super,
+      params:
+        facets: '_tags',
+        page: 0,
+        hitsPerPage: 1,
+        tagFilters: ''

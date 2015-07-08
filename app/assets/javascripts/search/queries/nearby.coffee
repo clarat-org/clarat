@@ -1,11 +1,11 @@
-class Clarat.Search.NearbyQuery
+class Clarat.Search.Query.Nearby
   NEARBY_RADIUS: 25000 # check later if accurate
 
   # TODO: geolocation
   constructor: (@geolocation) ->
 
   query_hash: ->
-    indexName: Clarat.Search.personalIndexName,
+    indexName: Clarat.Algolia.personalIndexName,
     query: ''
     params:
       page: 0

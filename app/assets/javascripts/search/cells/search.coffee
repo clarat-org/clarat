@@ -1,6 +1,6 @@
 # Frontend Search Implementation - ViewModel for Search#new
 # Patterns: Model-Template-Presenter structure
-class Clarat.Search.SearchCell
+class Clarat.Search.Cell.Search
   constructor: (@model) ->
     return viewObject =
       headline_small_map: I18n.t('js.search_results.map.headline_small_map')

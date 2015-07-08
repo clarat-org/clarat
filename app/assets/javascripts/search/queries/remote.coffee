@@ -1,4 +1,4 @@
-class Clarat.Search.RemoteQuery extends Clarat.Search.BaseQuery
+class Clarat.Search.Query.Remote extends Clarat.Search.Query.Base
 
   # TODO: geolocation
   constructor: (@geolocation, @teaser = false, args...) ->
@@ -9,7 +9,7 @@ class Clarat.Search.RemoteQuery extends Clarat.Search.BaseQuery
       _.merge(
         super(),
         {
-          indexName: Clarat.Search.remoteIndexName
+          indexName: Clarat.Algolia.remoteIndexName
           params:
             numericFilters: @area_filter()
         }

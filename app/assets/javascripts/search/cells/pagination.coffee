@@ -1,4 +1,4 @@
-class Clarat.Search.PaginationCell
+class Clarat.Search.Cell.Pagination
   constructor: (@results) ->
     return @paginationViewObject()
 

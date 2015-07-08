@@ -29,14 +29,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # Renders a mostly empty wireframe that the search results will be placed in.
   search: ->
-    @render '#search-wrapper', 'search', new Clarat.Search.SearchCell(@model)
+    @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
 
   # Rendered upon successful sendSearch.
   searchResults: (resultSet) =>
-    searchResultsObject = new Clarat.Search.SearchResultsCell resultSet, @model
+    searchResultsObject = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', searchResultsObject
-    markers = new Clarat.Search.MapMarkersCell searchResultsObject.main_offers
+    markers = new Clarat.Search.Cell.MapMarkers searchResultsObject.main_offers
     if Clarat.GMaps.loaded
       Clarat.GMaps.Map.initialize(markers)
     else
@@ -66,7 +66,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     # TODO: Move elsewhere
     $('.Categories__list').find('.active').removeClass('active')
     $(event.target).parents('li').addClass 'active'
-    # /Move
+    # updateFacets: (facetsJSON) ->
+    #   for categoryLink in $("#categories li > a")
+    #     $categoryLink = $(categoryLink)
+    #     categoryName = $categoryLink.data('category')
+    #     facetCount = facetsJSON[categoryName] || 0
+    #
+    #     $categoryLink.html "#{categoryName} (#{facetCount})"
     @sendSearch()
     @stopEvent event
 

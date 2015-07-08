@@ -23,6 +23,7 @@ about supported directives.
 # = require hogan
 # = require handlebars.runtime
 # = require_tree ./templates
+# = require_tree ./search/templates
 #
 # = require setup
 #
@@ -39,24 +40,27 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
-# = require modules/handlebars/helpers
+# = require handlebars/helpers
 #
-# = require modules/active_script/singleton
-# = require modules/active_script/presenter
-# = require modules/active_script/model
+# = require active_script/setup
+# = require active_script/singleton
+# = require active_script/presenter
+# = require active_script/model
 #
-# = require modules/search/model
-# = require modules/search/persister
-# = require modules/search/presenter
-# = require modules/search/search_cell
-# = require modules/search/search_results_cell
-# = require modules/search/map_markers_cell
-# = require modules/search/pagination_cell
-# = require modules/search/queries/base_query
-# = require modules/search/queries/facet_query
-# = require modules/search/queries/nearby_query
-# = require modules/search/queries/personal_query
-# = require modules/search/queries/remote_query
+# = require search/setup
+# = require search/model
+# = require search/persister
+# = require search/presenter
+# = require search/concepts/update_category
+# = require search/cells/search
+# = require search/cells/search_results
+# = require search/cells/map_markers
+# = require search/cells/pagination
+# = require search/queries/base
+# = require search/queries/facet
+# = require search/queries/nearby
+# = require search/queries/personal
+# = require search/queries/remote
 #
 # = require modules/analytics
 # = require modules/ajax

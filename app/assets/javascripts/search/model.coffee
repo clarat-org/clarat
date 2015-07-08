@@ -9,7 +9,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     @client().search @queries()
 
   client: ->
-    return @_client ?= algoliasearch Clarat.Search.appID, Clarat.Search.apiKey
+    return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
 
   ### PRIVATE METHODS (ue) ###
 
@@ -22,20 +22,20 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   personal_query: ->
     if @isPersonal()
-      new Clarat.Search.PersonalQuery(
+      new Clarat.Search.Query.Personal(
         @geolocation, @query, @category, @facet_filters, @page
       )
 
   remote_query: ->
-    new Clarat.Search.RemoteQuery(
+    new Clarat.Search.Query.Remote(
       @geolocation, @isPersonal(), @query, @category, @facet_filters, @page
     )
 
   nearby_query: ->
-    new Clarat.Search.NearbyQuery @geolocation
+    new Clarat.Search.Query.Nearby @geolocation
 
   # facet_query: ->
-  #   new Clarat.Search.FacetQuery @facet_query_attrs()
+  #   new Clarat.Search.Query.Facet @facet_query_attrs()
   #     query: @query,
   #     category: @category,
   #     geolocation: @geolocation,

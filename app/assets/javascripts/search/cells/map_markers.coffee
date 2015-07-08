@@ -1,5 +1,5 @@
 # TODO: What is this in our pattern?
-class Clarat.Search.MapMarkersCell
+class Clarat.Search.Cell.MapMarkers
   constructor: (@mainResults) ->
     return @markersViewObject()
 

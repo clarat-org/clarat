@@ -3,7 +3,7 @@
 # Is not based on the Search model, but the resultSet that the Presenter queries
 # from the remote index.
 # Patterns: Model-Template-Presenter structure
-class Clarat.Search.SearchResultsCell
+class Clarat.Search.Cell.SearchResults
   constructor: (@resultSet, @model) ->
     viewObjectFocus = if @model.isPersonal()
                         @personalFocusViewObject
@@ -20,7 +20,7 @@ class Clarat.Search.SearchResultsCell
 
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
-    pagination: new Clarat.Search.PaginationCell(@mainResults)
+    pagination: new Clarat.Search.Cell.Pagination(@mainResults)
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

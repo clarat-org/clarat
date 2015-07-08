@@ -1,12 +1,18 @@
 
-Liebe(r) <%= @contact_person.name %>,
+Sehr geehrte Damen und Herren,
 
-seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal http://www.clarat.org' zu finden.
+seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal http://www.clarat.org zu finden.
 
+<%- if @offers.count == 1 %>
+Ihr Angebot heißt bei clarat:
+"<%= @offers.first.name %>", zu finden unter folgendem Link:
+<%= offer_url(@offers.first) %>
+<%- else %>
 Ihre Angebote heißen bei clarat:
 <%- @offers.each do |offer| %>
 - "<%= offer.name %>", zu finden unter folgendem Link:
   <%= offer_url(offer) %>
+<%- end %>
 <%- end %>
 
 Fehlt etwas? Das kann sein. Denn wir sind auch weiterhin dabei, stetig Angebote zu ergänzen. Deshalb kommt es vor, dass wir noch nicht alle Angebote einer Organisation erfasst haben.

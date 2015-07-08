@@ -15,7 +15,7 @@
 
 %h2.Listing-results__headline
   .search-string
-    = hb 'main_results_headline'
+    = hb! 'main_results_headline'
 
   = hb 'if personal_focus_with_remote' do
     %a.big-map_open{ href: "#" }

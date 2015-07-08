@@ -56,3 +56,18 @@ class Clarat.Search.Model extends ActiveScript.Model
   #     100
   #   else
   #     50_000
+
+  categoryWithAncestors: ->
+    @findCategory(@categoryTree, @category)
+
+  findCategory: (array, name) ->
+    unless typeof array is 'undefined'
+      for element in array
+        return [name] if (element.name is name)
+
+        a = @findCategory(element.set, name)
+        if a?
+          a.unshift(element.name)
+          return a
+
+    return null

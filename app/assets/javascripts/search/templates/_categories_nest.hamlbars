@@ -1,7 +1,6 @@
 %ul.Categories__list
   %li.Categories__listitem{class: '{{list_classes}}'}
-    %a.JS-CategoryLink.btn{href: '#', data: {name: '{{name}}'}}
-      = hb 'name'
+    = hb '> _category_link'
     /! link_to name, offers_path(search_form: search_form.category_focus(name)), class: 'btn', data: { category: name }"
     = hb 'each set' do
       = hb '> _categories_nest'

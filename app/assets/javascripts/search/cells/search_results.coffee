@@ -27,8 +27,7 @@ class Clarat.Search.Cell.SearchResults
 
     return specificViewObject =
       personal_focus_with_remote: true
-      main_results_headline:
-        I18n.t 'js.search_results.personal_offers', count: @mainResults.nbHits
+      main_results_headline: @mainResultsHeadline('personal_offers')
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits
 
@@ -44,5 +43,33 @@ class Clarat.Search.Cell.SearchResults
 
     return specificViewObject =
       personal_focus_with_remote: false
-      main_results_headline:
-        I18n.t 'js.search_results.remote_offers', count: @mainResults.nbHits
+      main_results_headline: @mainResultsHeadline('remote_offers')
+
+
+  ## Headline Building Helpers
+
+  mainResultsHeadline: (i18nKey) ->
+    output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
+
+    if @model.category
+      output += " in #{@breadcrumbPath @model}"
+
+    if @model.query
+      output += ": &bdquo;#{@model.query}&ldquo; "
+
+      if @model.category
+        output += HandlebarsTemplates['remove_query_link']()
+
+    output + " (#{@model.search_location})"
+
+  # breadcrumps to active category
+  breadcrumbPath: (@model) ->
+    output = ''
+    ancestors = @model.categoryWithAncestors()
+    last_index = ancestors.length - 1
+
+    for category, index in ancestors
+      output += Handlebars.partials['_category_link'] name: category
+      output += ' > ' unless index is last_index
+
+    output

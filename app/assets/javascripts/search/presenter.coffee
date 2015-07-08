@@ -58,8 +58,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendSearch()
 
   handleCategoryClick: (event) =>
-    @model.updateAttributes category: $(event.target).data('name')
-    Clarat.Search.Concept.UpdateCategories.updateActiveClasses event.target
+    categoryName = $(event.target).data('name')
+    @model.updateAttributes category: categoryName
+    Clarat.Search.Concept.UpdateCategories.updateActiveClasses categoryName
     @sendSearch()
     @stopEvent event
 

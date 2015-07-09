@@ -1,5 +1,5 @@
-Clarat Search Application
-=========================
+Clarat Search Micro-Application
+===============================
 
 This is a JS application sitting inside the rails application. It handles the
 user's search request, queries an eternal search service, and displays the

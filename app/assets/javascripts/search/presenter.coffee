@@ -48,6 +48,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '#search_form_query':
       keyup: 'handleQueryKeyUp'
       change: 'handleQueryChange'
+    'document':
+      'Clarat.Location::NewLocation': 'handleNewGeolocation'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
@@ -62,9 +64,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendSearch()
 
   # We don't want to update all the time when user is typing. Persistence only
-  # happens when he is done (and this fires). No need to send new search.
+  # happens when they are done (and this fires). No need to send new search.
   handleQueryChange: (event) =>
     @model.updateAttributes query: event.target.value
+
+  handleNewGeolocation: (event, location) =>
+    @model.updateAttributes
+      search_location: location.query
+      geolocation: location.geoloc
+    @sendSearch()
 
   handleRemoveQueryClick: (event) =>
     @model.updateAttributes query: ''

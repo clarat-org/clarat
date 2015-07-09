@@ -9,6 +9,7 @@
                       autofocus: true,
                       class: 'input-xlg typeahead' }
   = f.input :search_location, label: t('.loc_label'),
+                              wrapper_html: {class: 'JS-Geolocation__wrapper'},
                               input_html: { \
                                 value: geoloc_to_s,
                                 class: 'input-xlg JS-Geolocation__display',

@@ -24,6 +24,7 @@ about supported directives.
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
+# = require_tree ./location/templates
 #
 # = require setup
 #
@@ -63,9 +64,13 @@ about supported directives.
 # = require search/queries/remote
 # = require search/queries/facet
 #
+# = require location/setup
+# = require location/presenter
+# = require location/concepts/request_geolocation_for_string
+# = require location/concepts/turn_input_into_my_location_display
+
 # = require modules/analytics
 # = require modules/ajax
-# = require modules/geolocation
 # = require modules/query_autocomplete
 # = require modules/query_field_placeholder
 # = require modules/gmaps

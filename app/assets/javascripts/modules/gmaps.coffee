@@ -143,6 +143,19 @@ Clarat.GMaps =
             Clarat.Analytics.placesAutocompleteChanged()
         )
 
+        # Hack to not immediately submit when user tries to select a location by
+        # pressing enter on the input field.
+        # See http://stackoverflow.com/a/12275591/784889
+        $('#search_form_search_location').keydown (e) ->
+          return false if (e.which == 13 && $('.pac-container:visible').length)
+
+        # When place_changed is fired, also fire the event on the form element,
+        # so other scripts can hook into that
+        google.maps.event.addListener(
+          Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed',
+          -> $('#search_form_search_location').trigger 'place_changed'
+        )
+
         # If category links exist: event listener on input change to update them
         if $('.nav-sections__list').length
           $('#search_form_search_location').on(

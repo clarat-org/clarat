@@ -44,6 +44,8 @@ class Clarat.Search.Cell.SearchResults
     return specificViewObject =
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
+      remote_focus_and_has_personal_results: @nearbyResults.nbHits > 1 # works?
+      toggle_personal_anchor: "(Zeige lokale Angebote)" # TODO: permanent? +css
 
 
   ## Headline Building Helpers

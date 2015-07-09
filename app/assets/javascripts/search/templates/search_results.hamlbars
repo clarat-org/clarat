@@ -4,7 +4,7 @@
 
     = hb 'if has_two_or_more_remote_results' do
       .more_remote-offers_open
-        %a.JS-MoreLink{ href: '{{more_href}}' }
+        %a.JS-ToggleContactType{ href: '{{more_href}}' }
           = hb 'more_anchor'
 
   %ul.Listing-results__list
@@ -16,6 +16,11 @@
 %h2.Listing-results__headline
   .search-string
     = hb! 'main_results_headline'
+
+  = hb 'if remote_focus_and_has_personal_results' do
+    .more_remote-offers_open
+      %a.JS-ToggleContactType{ href: '{{more_href}}' }
+        = hb 'toggle_personal_anchor'
 
   = hb 'if personal_focus_with_remote' do
     %a.big-map_open{ href: "#" }

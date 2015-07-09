@@ -52,8 +52,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
-    '.JS-MoreLink':
-      click: 'handleMoreClick'
+    '.JS-ToggleContactType':
+      click: 'handleToggleContactTypeClick'
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
@@ -77,9 +77,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendSearch()
     @stopEvent event
 
-  handleMoreClick: (event) =>
-    @model.updateAttributes contact_type: 'remote'
-    $('.aside-standard').toggle()
+  handleToggleContactTypeClick: (event) =>
+    if @model.isPersonal()
+      @model.updateAttributes contact_type: 'remote'
+      $('.aside-standard').hide()
+    else
+      @model.updateAttributes contact_type: 'personal'
+      $('.aside-standard').show()
     @sendSearch()
     @stopEvent event
 

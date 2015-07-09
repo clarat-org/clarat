@@ -4,12 +4,16 @@ class Clarat.Search.Concept.UpdateCategories
     $('.Categories__list').find("a[data-name='#{activeCategory}']")
       .parents('li').addClass 'active'
 
-  @updateCounts: (facetSet) ->
-    if facetSet.facets? and facetSet.facets._tags?  # TODO: Why is this necessary?
-      categoryFacets = facetSet.facets._tags
-      for categoryLink in $("#categories li > a")
-        $categoryLink = $(categoryLink)
-        categoryName = $categoryLink.data('name')
-        facetCount = categoryFacets[categoryName] || 0
+  @updateCounts: (personalFacetSet, remoteFacetSet) ->
+    personalCategoryFacets = personalFacetSet.facets._tags
+    remoteCategoryFacets = remoteFacetSet.facets._tags
 
-        $categoryLink.html "#{categoryName} (#{facetCount})"
+    for categoryLink in $("#categories li > a")
+      $categoryLink = $(categoryLink)
+      categoryName = $categoryLink.data('name')
+
+      facetCount =
+        (personalCategoryFacets?[categoryName] || 0) +
+        (remoteCategoryFacets?[categoryName] || 0)
+
+      $categoryLink.html "#{categoryName} (#{facetCount})"

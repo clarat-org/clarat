@@ -18,11 +18,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   Sending a search means that we compile the available parameters into
   a search query and instead of sending (saving) it to our database, we send
   it to a remote search index, which returns aus the completed search objects
-  for the searchResults view. That means #searchResults can't be called directly
-  without #sendSearch as it's not persisted.
+  for the onMainResults view. That means #onMainResults can't be called directly
+  without #sendMainSearch as it's not persisted.
   ###
-  sendSearch: =>
-    @model.getSearchResults().then(@searchResults).catch(@failure)
+  sendMainSearch: =>
+    @model.getMainSearchResults().then(@onMainResults).catch(@failure)
+
+  sendSupportSearch: =>
+    @model.getSupportSearchResults().then(@onSupportResults).catch(@failure)
 
 
   ### "SHOW ACTIONS" ###
@@ -32,17 +35,26 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Concept.UpdateCategories.updateActiveClasses @model.category
 
-  # Rendered upon successful sendSearch.
-  searchResults: (resultSet) =>
+  # Rendered upon successful sendMainSearch.
+  onMainResults: (resultSet) =>
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
-    if viewModel.none_nearby
-      Clarat.Modal.open('#unavailable_location_overlay') # TODO!
 
     @render '.Listing-results', 'search_results', viewModel
     if @model.isPersonal()
       Clarat.Search.Concept.BuildMap.run viewModel.main_offers
-    Clarat.Search.Concept.UpdateCategories.updateCounts resultSet.results.pop()
 
+  # Support Results only change when location changes. TODO: facets?
+  onSupportResults: (resultSet) =>
+    nearbyResults = resultSet.results[0]
+    personalFacetResults = resultSet.results[1]
+    remoteFacetResults = resultSet.results[2]
+
+    if nearbyResults.nbHits < 1
+      Clarat.Modal.open('#unavailable_location_overlay')
+
+    Clarat.Search.Concept.UpdateCategories.updateCounts(
+      personalFacetResults, remoteFacetResults
+    )
 
   ### CALLBACKS ###
 
@@ -63,7 +75,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
-    @sendSearch()
+    @sendMainSearch()
 
   # We don't want to update all the time when user is typing. Persistence only
   # happens when they are done (and this fires). No need to send new search.
@@ -74,17 +86,18 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes
       search_location: location.query
       geolocation: location.geoloc
-    @sendSearch()
+    @sendMainSearch()
+    @sendSupportSearch() # only needs to be called on new location
 
   handleRemoveQueryClick: (event) =>
     @model.updateAttributes query: ''
-    @sendSearch()
+    @sendMainSearch()
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')
     @model.updateAttributes category: categoryName
     Clarat.Search.Concept.UpdateCategories.updateActiveClasses categoryName
-    @sendSearch()
+    @sendMainSearch()
     @stopEvent event
 
   handleToggleContactTypeClick: (event) =>
@@ -94,15 +107,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     else
       @model.updateAttributes contact_type: 'personal'
       $('.aside-standard').show()
-    @sendSearch()
+    @sendMainSearch()
     @stopEvent event
 
   handlePaginationClick: (event) =>
     @model.updateAttributes page: ($(event.target).data('page') - 1)
-    @sendSearch()
+    @sendMainSearch()
     @stopEvent event
 
-  # Error view, rendered in case of any sendSearch/searchResults exceptions.
+  # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>
     console.log error
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')

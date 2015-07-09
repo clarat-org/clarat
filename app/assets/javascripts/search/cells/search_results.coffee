@@ -18,14 +18,12 @@ class Clarat.Search.Cell.SearchResults
 
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
-    none_nearby: @nearbyResults.nbHits < 1
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
 
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]
     @remoteResults = @resultSet.results[1]
-    @nearbyResults = @resultSet.results[2]
 
     return specificViewObject =
       personal_focus_with_remote: true
@@ -41,12 +39,11 @@ class Clarat.Search.Cell.SearchResults
 
   remoteFocusViewObject: =>
     @mainResults = @resultSet.results[0]
-    @nearbyResults = @resultSet.results[1]
 
     return specificViewObject =
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
-      remote_focus_and_has_personal_results: @nearbyResults.nbHits > 1 # works?
+      remote_focus: true
       toggle_personal_anchor: "(Zeige lokale Angebote)" # TODO: permanent? +css
 
 

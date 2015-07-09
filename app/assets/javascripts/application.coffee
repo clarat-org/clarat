@@ -62,7 +62,8 @@ about supported directives.
 # = require search/queries/nearby
 # = require search/queries/personal
 # = require search/queries/remote
-# = require search/queries/facet
+# = require search/queries/personal_facet
+# = require search/queries/remote_facet
 #
 # = require location/setup
 # = require location/presenter

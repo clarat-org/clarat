@@ -5,17 +5,23 @@ class Clarat.Search.Model extends ActiveScript.Model
   # We communicate with a remote service instead of a database. This is the
   # equivalent of a regular #save. We create a connection, then send the data
 
-  getSearchResults: ->
-    @client().search @queries()
+  getMainSearchResults: ->
+    @client().search @personalAndRemoteQueries()
+
+  getSupportSearchResults: ->
+    @client().search @nearbyAndFacetQueries()
 
   client: ->
     return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
 
   ### PRIVATE METHODS (ue) ###
 
-  queries: -> # TODO: nearby and facet stay the same unless location changed
-    @_queries = _.chain [
-      @personal_query(), @remote_query(), @nearby_query(), @facet_query() ]
+  nearbyAndFacetQueries: ->
+    _.map [@nearby_query(), @personal_facet_query(), @remote_facet_query()],
+          (query) -> query.query_hash()
+
+  personalAndRemoteQueries: ->
+    @_queries = _.chain [ @personal_query(), @remote_query() ]
       .compact()
       .map( (query) -> query.query_hash() )
       .value()
@@ -34,10 +40,15 @@ class Clarat.Search.Model extends ActiveScript.Model
   nearby_query: ->
     new Clarat.Search.Query.Nearby @geolocation
 
-  facet_query: ->
-    new Clarat.Search.Query.Facet(
+  personal_facet_query: ->
+    new Clarat.Search.Query.PersonalFacet(
       @geolocation, @query, @category, @facet_filters
       # @query, @category, @geolocation, @search_radius, @facet_filters
+    )
+
+  remote_facet_query: ->
+    new Clarat.Search.Query.RemoteFacet(
+      @geolocation, true, @query, @category, @facet_filters
     )
 
 

@@ -17,7 +17,7 @@
   .search-string
     = hb! 'main_results_headline'
 
-  = hb 'if remote_focus_and_has_personal_results' do
+  = hb 'if remote_focus' do
     .more_remote-offers_open
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'

@@ -8,7 +8,8 @@
 - content_for :view_specific_scripts do
 
   javascript:
-    Clarat.Search.Presenter.get().sendSearch()
+    Clarat.Search.Presenter.get().sendMainSearch()
+    Clarat.Search.Presenter.get().sendSupportSearch()
     // Clarat.Ajax.replace(
     //   $('.content-main'), window.location.href, { historyPush: false }
     // );

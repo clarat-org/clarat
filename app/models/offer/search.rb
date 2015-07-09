@@ -26,13 +26,15 @@ class Offer
                     if: :personal_indexable? do
         INDEX = %w(
           name description category_string keyword_string organization_names
+          next_steps
         )
         attributesToIndex INDEX
         ranking %w(
           typo geo words proximity attribute exact custom
         )
         ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
-                      :organization_display_name, :location_address]
+                      :organization_display_name, :location_address,
+                      :next_steps]
                      # removed: :location_street, :location_city, :location_zip
         FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
         add_attribute(*ATTRIBUTES)

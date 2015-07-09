@@ -98,9 +98,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       query: I18n.t('conf.current_location')
       geoloc: "#{position.coords.latitude},#{position.coords.longitude}"
 
-    Clarat.Location.Concept.TurnInputIntoMyLocationDisplay.run(
-      @currentLocation
-    )
+    Clarat.Location.Concept.TurnInputIntoMyLocationDisplay.run @currentLocation
 
     @render '.JS-Geolocation__display', 'location_by_browser_remove', {},
       method: 'after'

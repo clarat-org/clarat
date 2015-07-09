@@ -35,6 +35,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Rendered upon successful sendSearch.
   searchResults: (resultSet) =>
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
+    if viewModel.none_nearby
+      Clarat.Modal.open('#unavailable_location_overlay') # TODO!
 
     @render '.Listing-results', 'search_results', viewModel
     if @model.isPersonal()

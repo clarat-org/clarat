@@ -18,7 +18,9 @@ class Clarat.Search.Cell.SearchResults
 
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
+    none_nearby: @nearbyResults.nbHits < 1
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
+
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

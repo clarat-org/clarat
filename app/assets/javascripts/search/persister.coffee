@@ -30,6 +30,7 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
     @updateURL changes
     @updateSearchForm changes
     @updateCookies changes
+    @updateLinks changes
 
   # Rails loads from URL params and cookies into the search form,
   # JS loads from the search form.
@@ -50,6 +51,9 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
 
   updateCookies: (changes) ->
     # TODO: when location
+
+  updateLinks: (changes) ->
+    # TODO: "open in new tab" should work in every state
 
   ## Loaders
 

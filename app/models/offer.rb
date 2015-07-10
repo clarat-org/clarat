@@ -82,11 +82,14 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  # Get an array of websites, ordered as follows: (1) own non-pdf (2) own pdf
+  # (3+) remaining HOSTS in order, except "other"
   def structured_websites
     # TODO: Refactor!
-    sites = []
-    sites << websites.send('own').find { |i| !i.url.ends_with?('.pdf') }
-    sites << websites.send('own').find { |i| i.url.ends_with?('.pdf') }
+    sites = [
+      websites.own.non_pdf.first,
+      websites.own.pdf.first
+    ]
     Website::HOSTS[1..-2].each do |host| # no "other"
       sites << websites.send(host).first
     end

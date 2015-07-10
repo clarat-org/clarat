@@ -85,7 +85,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleNewGeolocation: (event, location) =>
     @model.updateAttributes
       search_location: location.query
-      geolocation: location.geoloc
+      generated_geolocation: location.geoloc
     @sendMainSearch()
     @sendSupportSearch() # only needs to be called on new location
 

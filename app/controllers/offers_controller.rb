@@ -9,7 +9,6 @@ class OffersController < ApplicationController
     render 'invalid_location', status: 404
   end
 
-  # TODO: can you do this with plain routing?
   def index
     @category_tree ||= Category.sorted_hash_tree
     set_position

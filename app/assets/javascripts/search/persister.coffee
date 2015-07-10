@@ -20,7 +20,7 @@ Think of it as the database, that the model interacts with.
 class Clarat.Search.Persister extends ActiveScript.Singleton
 
   LOADABLE_FIELDS: [ # form fields
-    'query', 'category', 'geolocation', 'generated_geolocation',
+    'query', 'category', 'generated_geolocation', # , 'geolocation'
     'exact_location', 'contact_type', 'search_location' # TODO: facet_filters
   ]
 

@@ -1,5 +1,10 @@
 %p
-  Sehr geehrte Damen und Herren,
+  - if @contact_person.gender == 'male'
+    Lieber Herr
+  - else
+    Liebe Frau
+  = succeed ',' do
+    = @contact_person.last_name
 
 %p
   seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal

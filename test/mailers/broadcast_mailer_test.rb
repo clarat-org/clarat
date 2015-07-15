@@ -13,7 +13,7 @@ describe BroadcastMailer do
     it 'must deliver' do
       mail = BroadcastMailer.welcome contact_person
       mail.must deliver_to 'foo@bar.baz'
-      mail.must have_body_text contact_person.name
+      mail.must have_body_text 'clarat'
     end
   end
 end

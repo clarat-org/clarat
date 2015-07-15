@@ -26,6 +26,9 @@ class Website < ActiveRecord::Base
   scope :pinterest, -> { where(host: 'pinterest') }
   scope :other, -> { where(host: 'other') }
 
+  scope :pdf, -> { where('websites.url LIKE ?', '%.pdf') }
+  scope :non_pdf, -> { where.not('websites.url LIKE ?', '%.pdf') }
+
   def shorten_url
     URI.parse(self.url).host
   end

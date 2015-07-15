@@ -30,6 +30,10 @@
     display: none;
   }
 
+  .mascot--footer {
+    bottom: 0; // remove once faq link comes back
+  }
+
   .Distributor {
     margin-right: -25px; // on non-start pages, correcting offset by .wrapper-inner
     max-width: 440px;
@@ -143,10 +147,17 @@
 
   .section-team__member {
     width: 32%;
+    margin-left: 1.8%;
+    min-height: 640px;
 
-    &:nth-child(3n) { // every third item
-      margin-right: 0;
+    &:nth-of-type(4n+1) { // reset
+      margin-left: 1.8%;
     }
+
+    &:nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
   }
 
   .Listing-results {

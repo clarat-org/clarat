@@ -1,0 +1,2 @@
+%a.JS-CategoryLink{href: '#', data: {name: '{{name}}'}}<
+  = hb 'name'

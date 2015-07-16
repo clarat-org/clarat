@@ -19,13 +19,6 @@ class ApplicationController < ActionController::Base
   after_action :verify_authorized_with_exceptions, except: :index
   after_action :verify_policy_scoped_with_exceptions, only: :index
 
-  # Misc
-  before_action :set_default_vars
-  def set_default_vars
-    @search_cache ||= SearchForm.new
-    @subscription ||= Subscription.new
-  end
-
   protected
 
   ### Pundit Helpers ###

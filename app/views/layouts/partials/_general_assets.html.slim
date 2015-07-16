@@ -7,6 +7,9 @@ javascript:
 - cache 'general_scripts' do
   = javascript_include_tag 'vendor/modernizr.custom.js'
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  noscript
+    css:
+      .jsonly { display: none; }
 
 - if turbolinks_request?
   javascript:

@@ -1,0 +1,15 @@
+%li.JS-trigger-marker.Listing-results__listitem{id: "result-offer-{{id}}"}
+  %h3.Listing-results__offer
+    %a{href: '/angebote/{{slug}}'}
+      = hb 'name'
+
+  / TODO: Refactor and rename
+  %h4.Listing-results__offerinfo
+    = hb 'ifDiffering encounter from="personal"' do
+      %span.Listing-results__contact-type
+        = hb 'i18n encounter', scope: 'js.single_search_result.encounters'
+
+    %span.Listing-results__organization
+      %span.Listing-results__emphasis
+        = hb 'organization_display_name'
+      = hb 'location_address'

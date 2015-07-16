@@ -1,0 +1,7 @@
+%ul.Categories__list
+  %li.Categories__listitem{class: '{{list_classes}}'}
+    = hb '> _category_link'
+    /! link_to name, offers_path(search_form: search_form.category_focus(name)), class: 'btn', data: { category: name }"
+    = hb 'each set' do
+      = hb '> _categories_nest'
+      /! render 'offers/index/categories_nest', set: children, facets: facets, search_form: search_form, depth: (depth + 1)"

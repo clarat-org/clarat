@@ -1,0 +1,14 @@
+%main.content-main
+  /! Temporarily disable filters
+  /! > advanced_search
+  /! = render 'offers/index/advanced_search', search_cache: search_cache
+
+  .Listing-results
+    / Will contain search_results later
+
+  / prepare ajax spinner
+  %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
+
+= hb '> _categories_sidebar'
+
+= hb '> _search_map'

@@ -9,6 +9,7 @@ gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
+# gem 'rails', '~> 4.1.11'
 gem 'rails-observers' # observers got extracted since rails 4
 
 # Translations

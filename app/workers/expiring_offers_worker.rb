@@ -5,7 +5,7 @@ class ExpiringOffersWorker
   recurrence { daily.hour_of_day(1) }
 
   def perform
-    expiring = Offer.where(expires_at: Date.current)
+    expiring = Offer.where(expires_at: Time.zone.today)
     if expiring.count > 0
       OfferMailer.delay.expiring_mail expiring.count, expiring.pluck(:id)
       expiring.update_all approved: false

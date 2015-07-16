@@ -14,7 +14,7 @@ FactoryGirl.define do
 
     # optional
     comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..399] }
-    founded { maybe((1980..Time.now.year).to_a.sample) }
+    founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     umbrella do
       maybe(
         Organization.enumerized_attributes.attributes['umbrella'].values.sample
@@ -33,7 +33,7 @@ FactoryGirl.define do
     # traits
     trait :approved do
       after :create do |orga, _evaluator|
-        Organization.where(id: orga.id).update_all completed: true, approved: true, approved_at: Time.now
+        Organization.where(id: orga.id).update_all completed: true, approved: true, approved_at: Time.zone.now
       end
       approved_by { FactoryGirl.create(:researcher).id }
     end

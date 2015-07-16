@@ -1,6 +1,6 @@
 class OfferObserver < ActiveRecord::Observer
   def after_initialize offer
-    offer.expires_at ||= (Time.now + 1.year) if offer.new_record?
+    offer.expires_at ||= (Time.zone.now + 1.year) if offer.new_record?
   end
 
   def before_save offer

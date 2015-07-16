@@ -39,7 +39,7 @@ describe Offer do
 
     describe 'custom' do
       it 'should validate expiration date' do
-        subject.expires_at = Time.now
+        subject.expires_at = Time.zone.now
         subject.valid?
         subject.errors.messages[:expires_at].must_include(
           I18n.t('shared.validations.later_date')

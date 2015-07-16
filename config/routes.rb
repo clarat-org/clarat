@@ -17,7 +17,7 @@ Clarat::Application.routes.draw do
     # resources :users, only: [:show]
     resources :update_requests, only: [:new, :create]
     resources :search_locations, only: [:show]
-    resources :contacts, only: [:new, :create, :index]
+    resources :feedbacks, only: [:new, :create]
     resources :subscriptions, only: [:new, :create]
     resources :definitions, only: [:show]
     get 'categories/:offer_name', controller: :categories, action: :index

@@ -55,19 +55,19 @@
             - @offer.organizations.each do |orga|
               li.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
 
-      / When can you contact?
+      / When can you contact them?
       - if @offer.opening_details?
         - cache [@offer, 'openings'] do
           = render 'offers/show/opening_section', offer: @offer
 
 
       / Found any mistakes?
-      = link_to new_contact_path,
+      = link_to new_feedback_path,
                 class: 'offer-contribute js-report-overlay_open' do
         i.fa.fa-exclamation-triangle
         = t 'shareds.show.cta_report_errors'
       = modal_for 'js-report-overlay' do
-        = render '/contacts/shared/new', contact: @contact, reporting: true
+        = render '/contacts/shared/new', feedback: @feedback, reporting: true
 
 /- content_for :view_specific_scripts do
 /  = javascript_include_tag "gmaps_search_results.js"

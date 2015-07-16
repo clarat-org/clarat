@@ -1,4 +1,4 @@
-class ContactPolicy < ApplicationPolicy
+class FeedbackPolicy < ApplicationPolicy
   def new?
     true
   end

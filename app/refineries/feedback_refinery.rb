@@ -1,4 +1,4 @@
-class ContactRefinery < ApplicationRefinery
+class FeedbackRefinery < ApplicationRefinery
   def default
     [
       :email, :name, :message, :url, :reporting

@@ -28,7 +28,7 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter AudienceFilter User Contact Keyword Definition
+    LanguageFilter AgeFilter AudienceFilter User Feedback Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
@@ -448,7 +448,7 @@ RailsAdmin.config do |config|
     weight 1
   end
 
-  config.model 'Contact' do
+  config.model 'Feedback' do
     weight 2
   end
 

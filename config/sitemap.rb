@@ -5,7 +5,7 @@ sitemap :site do
   url root_url, last_mod: Time.now, change_freq: 'daily', priority: 1.0
   url about_url, priority: 0.5
   url faq_url, priority: 0.5
-  url new_contact_url, priority: 0.4
+  url new_feedback_url, priority: 0.4
   url impressum_url, priority: 0.1
   url agb_url, priority: 0.1
   url privacy_url, priority: 0.1

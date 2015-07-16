@@ -26,7 +26,7 @@ module Clarat
 
     # Activate observers that should always be running.
     config.active_record.observers = %w(
-      location_observer subscription_observer contact_observer offer_observer
+      location_observer subscription_observer feedback_observer offer_observer
       organization_observer
     )
 
@@ -49,3 +49,5 @@ module Clarat
     config.middleware.use Rack::Attack
   end
 end
+
+require 'trailblazer/rails/railtie'

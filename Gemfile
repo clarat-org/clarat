@@ -14,6 +14,10 @@ gem 'rails-observers' # observers got extracted since rails 4
 # Translations
 gem 'rails-i18n'
 
+# Structural Framework
+gem 'trailblazer'
+gem 'cells'
+
 # Platforms Ruby
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db

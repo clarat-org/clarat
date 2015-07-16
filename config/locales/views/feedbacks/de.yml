@@ -1,7 +1,7 @@
 de:
-  contacts:
+  feedbacks:
     new:
-      contact_heading: "Was möchtest du uns mitteilen?"
+      feedback_heading: "Was möchtest du uns mitteilen?"
     create:
       success: "Die Nachricht wurde erfolgreich abgeschickt."
     shared:

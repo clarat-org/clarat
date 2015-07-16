@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-describe ContactsController do
+describe FeedbacksController do
   describe "GET 'new'" do
     it 'should work' do
       get :new, locale: 'de'
@@ -10,25 +10,25 @@ describe ContactsController do
   end
 
   describe "POST 'create'" do
-    it 'should work with valid contact data' do
-      contact_attrs = FactoryGirl.attributes_for :contact
+    it 'should work with valid feedback data' do
+      feedback_attrs = FactoryGirl.attributes_for :feedback
       assert_difference('Contact.count', 1) do
-        post :create, locale: 'de', contact: contact_attrs
+        post :create, locale: 'de', feedback: feedback_attrs
       end
       assert_redirected_to :root
     end
 
     it 'should work with valid report data' do
-      contact_attrs = FactoryGirl.attributes_for :report
+      feedback_attrs = FactoryGirl.attributes_for :report
       assert_difference('Contact.count', 1) do
-        post :create, locale: 'de', contact: contact_attrs
+        post :create, locale: 'de', feedback: feedback_attrs
       end
       assert_redirected_to :root
     end
 
     it 'should not work with empty data' do
       assert_difference('Contact.count', 0) do
-        post :create, locale: 'de', contact: { name: '' }
+        post :create, locale: 'de', feedback: { name: '' }
       end
       assert_template :new
     end
@@ -37,7 +37,7 @@ describe ContactsController do
   describe "GET 'index'" do
     it 'should redirect to new' do
       get :index, locale: 'de'
-      assert_redirected_to :new_contact
+      assert_redirected_to :new_feedback
     end
   end
 end

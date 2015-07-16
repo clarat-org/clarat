@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
-describe Contact do
-  let(:contact) { Contact.new }
+describe Feedback do
+  let(:contact) { Feedback.new }
   subject { contact }
 
   describe 'attributes' do

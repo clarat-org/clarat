@@ -21,7 +21,7 @@ class OffersController < ApplicationController
     authorize @offer
 
     prepare_gmaps_variable @offer
-    @contact = Contact.new url: request.url, reporting: true
+    @feedback = Feedback.new url: request.url, reporting: true
     respond_with @offer
   end
 

@@ -22,7 +22,9 @@ describe Filter do
     end
 
     describe 'LanguageFilter' do
-      it { LanguageFilter.new.must validate_length_of(:identifier).is_equal_to 3 }
+      it {
+        LanguageFilter.new.must validate_length_of(:identifier).is_equal_to 3
+      }
     end
   end
 

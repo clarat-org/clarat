@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   include Arcane
 
+  include Trailblazer::Operation::Controller
+  require 'trailblazer/operation/controller/active_record'
+  include Trailblazer::Operation::Controller::ActiveRecord
+
   # staging password protection
   clarat = Rails.application
   http_basic_authenticate_with name: clarat.secrets.protect['user'],
@@ -50,7 +54,7 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unscoped_classes
-    %w(OffersController CategoriesController ContactsController)
+    %w(OffersController CategoriesController FeedbacksController)
   end
 
   ### / Pundit Helpers ###

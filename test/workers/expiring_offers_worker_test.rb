@@ -11,6 +11,7 @@ describe ExpiringOffersWorker do
     Timecop.return
     worker.perform
     expiring.reload.approved.must_equal false
+    expiring.unapproved_reason.must_equal 'expired'
     later.reload.approved.must_equal true
     # OfferMailer.expects(:delay).once # Doesn't work!
     # TODO: Fix this and the other tests with 4.2

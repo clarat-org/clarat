@@ -19,20 +19,25 @@ class Definition < ActiveRecord::Base
     # check string for every definition in the DB
     select(:id, :key).find_each do |definition|
       # go through the set of keys for this definition
-      a = []
-      definition.keys.each do |key|
-        a << [string.index(key), key] if string.index(key)
-      end
+      occurences = definition.key_occurrences_in string
 
       # find the key that occurs first in the description
-      first_key = a.sort[0][1]
+      first_key, _first_index = occurences.min_by { |_key, index| index }
       if first_key
         regex = /\b(#{first_key})\b/i
         string.sub! regex,
-                      "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
-                      '\1</dfn>'
+                    "<dfn class='JS-tooltip' data-id='#{definition.id}'>"\
+                    '\1</dfn>'
       end
     end
     string
+  end
+
+  def key_occurrences_in string
+    occurences = {}
+    keys.each do |key|
+      occurences[key] = string.index(key) if string.index(key)
+    end
+    occurences
   end
 end

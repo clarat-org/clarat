@@ -44,8 +44,8 @@ describe Definition do
         )
       end
 
-      it 'should only ever use the first definition key when mutliple comma'\
-         ' seperated keys are given' do
+      it 'should only ever use the first definition key occurence when'\
+         ' mutliple comma seperated keys are given' do
         FactoryGirl.create :definition, key: 'big', explanation: 'huge'
         FactoryGirl.create :definition, key: 'lethargic, lazy, apathetic'
 
@@ -53,7 +53,7 @@ describe Definition do
 
         Definition.infuse(string).must_equal(
           "The <dfn class='JS-tooltip' data-id='1'>big</dfn> brown fox jumps"\
-          " over the apathetic, <dfn class='JS-tooltip' data-id='2'>lazy</dfn>"\
+          " over the <dfn class='JS-tooltip' data-id='2'>apathetic</dfn>, lazy"\
           ' dog.'
         )
       end

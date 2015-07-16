@@ -9,6 +9,7 @@ class ExpiringOffersWorker
     if expiring.count > 0
       OfferMailer.delay.expiring_mail expiring.count, expiring.pluck(:id)
       expiring.update_all approved: false
+      expiring.update_all unapproved_reason: 'expired'
     end
   end
 end

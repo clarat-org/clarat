@@ -37,6 +37,7 @@ class Offer < ActiveRecord::Base
   # Enumerization
   extend Enumerize
   enumerize :encounter, in: %w(personal hotline email chat forum online-course)
+  enumerize :unapproved_reason, in: %w(N/A not_approved expired wip paused)
 
   # Friendly ID
   extend FriendlyId

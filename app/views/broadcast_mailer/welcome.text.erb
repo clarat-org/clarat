@@ -1,6 +1,9 @@
-<%- if @contact_person.gender == 'male' %>
+<%- if @contact_person.last_name.blank? %>
+Sehr geehrte Damen und Herren,
+<%- else %><%- if @contact_person.gender == 'male' %>
 Lieber Herr<%- else %>
 Liebe Frau<%- end %> <%= @contact_person.last_name %>,
+<%- end %>
 
 seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal http://www.clarat.org zu finden.
 

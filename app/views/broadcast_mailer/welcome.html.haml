@@ -1,13 +1,20 @@
 %p
-  - if @contact_person.last_name.blank?
+  - if !@contact_person.last_name? && !@contact_person.first_name?
     Sehr geehrte Damen und Herren,
-  - else
+  - elsif @contact_person.last_name?
     - if @contact_person.gender == 'male'
       Lieber Herr
     - else
       Liebe Frau
     = succeed ',' do
       = @contact_person.last_name
+  - elsif @contact_person.first_name?
+    - if @contact_person.gender == 'male'
+      Lieber
+    - else
+      Liebe
+    = succeed ',' do
+      = @contact_person.first_name
 
 %p
   seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal

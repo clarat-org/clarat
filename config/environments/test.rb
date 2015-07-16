@@ -18,6 +18,7 @@ Clarat::Application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = false # changed from true=>404 test
+  config.cache_store = :null_store
   config.action_controller.perform_caching = false
 
   # Raise exceptions instead of rendering exception templates.

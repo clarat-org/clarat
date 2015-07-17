@@ -67,10 +67,12 @@ class Opening < ActiveRecord::Base
   # generate imaginary timestamp for a specific day
   def dummy_time_for_day day_nr
     if open && close
-      Time.new(1970, 1, day_nr, open.hour, open.min,
-               close.hour + close.min / 100.0, 0)
+      hour = open.hour
+      min = open.min
+      sec = close.hour + close.min / 100.0
     else
-      Time.new(1970, 1, day_nr, 0, 0, 0, 0)
+      hour = min = sec = 0
     end
+    Time.zone.local(1970, 1, day_nr, hour, min, sec, 0)
   end
 end

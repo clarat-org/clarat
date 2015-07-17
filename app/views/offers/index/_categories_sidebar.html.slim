@@ -2,10 +2,10 @@
 
   .Categories__show-all
     = link_to t('.all_categories'),
-            offers_path(search_form: search_cache.category_focus(''))
+            offers_path(search_form: search_form.category_focus(''))
 
   = render 'offers/index/categories_nest', set: category_tree, facets: facets,
-                                           search_cache: search_cache, depth: 0
+                                           search_form: search_form, depth: 0
 
 / ALSO REMOVE JS WHEN REMOVING THIS:
 / #categories.aside-standard__container

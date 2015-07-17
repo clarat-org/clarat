@@ -1,2 +1,2 @@
 .JS-Geolocation__prompt
-  {{{ content }}}
+  = hb 'content'

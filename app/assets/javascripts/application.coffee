@@ -19,9 +19,13 @@ about supported directives.
 # = require qtip2
 # = require i18n
 # = require i18n/translations
+# = require algoliasearch
 # = require hogan
 # = require shariff
+# = require handlebars.runtime
 # = require_tree ./templates
+# = require_tree ./search/templates
+# = require_tree ./location/templates
 #
 # = require setup
 #
@@ -38,9 +42,37 @@ about supported directives.
 # = require algolia/algoliasearch.min
 # = require algolia/typeahead.jquery
 #
+# = require handlebars/helpers
+#
+# = require active_script/setup
+# = require active_script/singleton
+# = require active_script/presenter
+# = require active_script/model
+#
+# = require search/setup
+# = require search/model
+# = require search/persister
+# = require search/presenter
+# = require search/concepts/update_categories
+# = require search/concepts/build_map
+# = require search/cells/search
+# = require search/cells/search_results
+# = require search/cells/map_markers
+# = require search/cells/pagination
+# = require search/queries/base
+# = require search/queries/nearby
+# = require search/queries/personal
+# = require search/queries/remote
+# = require search/queries/personal_facet
+# = require search/queries/remote_facet
+#
+# = require location/setup
+# = require location/presenter
+# = require location/concepts/request_geolocation_for_string
+# = require location/concepts/turn_input_into_my_location_display
+
 # = require modules/analytics
 # = require modules/ajax
-# = require modules/geolocation
 # = require modules/query_autocomplete
 # = require modules/query_field_placeholder
 # = require modules/gmaps
@@ -57,3 +89,4 @@ about supported directives.
 # = require modules/cookie_warning
 # = require modules/faq
 # = require modules/shariff_addional
+# = require modules/refocus

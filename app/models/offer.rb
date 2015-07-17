@@ -37,6 +37,7 @@ class Offer < ActiveRecord::Base
   # Enumerization
   extend Enumerize
   enumerize :encounter, in: %w(personal hotline email chat forum online-course)
+  enumerize :unapproved_reason, in: %w(N/A not_approved expired wip paused)
 
   # Friendly ID
   extend FriendlyId
@@ -103,7 +104,7 @@ class Offer < ActiveRecord::Base
   def organization_display_name
     if organizations.count > 1
       I18n.t 'offer.organization_display_name.cooperation'
-    else
+    elsif organizations.any?
       organizations.first.name
     end
   end

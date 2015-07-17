@@ -1,5 +1,4 @@
-# Form object to handle the search options, communicate with the remote search
-# server, and provide methods for the result.
+# Form object to render form elements and links. Rest is handled in JS.
 class SearchForm
   # Turn into quasi ActiveModel #
   extend ActiveModel::Naming
@@ -61,43 +60,43 @@ class SearchForm
     end
   end
 
-  # find the actual category object and return it with ancestors
-  def category_with_ancestors
-    unless category.blank?
-      @category_with_ancestors ||=
-        Category.find_by_name(category).self_and_ancestors.reverse
-    end
-  end
-
-  # link hash with empty query
-  def empty
-    to_h.merge query: ''
-  end
-
+  # # find the actual category object and return it with ancestors
+  # def category_with_ancestors
+  #   unless category.blank?
+  #     @category_with_ancestors ||=
+  #       Category.find_by_name(category).self_and_ancestors.reverse
+  #   end
+  # end
+  #
+  # # link hash with empty query
+  # def empty
+  #   to_h.merge query: ''
+  # end
+  #
   # link hash that focuses on a specific category
-  def category_focus category
-    name = category.is_a?(String) ? category : category.name
-    to_h.merge category: name
-  end
+  # def category_focus category
+  #   name = category.is_a?(String) ? category : category.name
+  #   to_h.merge category: name
+  # end
 
   # Does form object have given category_name as a parameter?
-  def category_in_focus? name
-    if category_with_ancestors
-      @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
-      @category_with_ancestor_names.include? name
-    end
-  end
-
-  # link hash that toggles the contact type to remote only
-  def remote_focus
-    to_h.merge contact_type: :remote
-  end
-
-  # Is the form object primarily looking for non-personal offers?
-  def remote_focussed?
-    contact_type == :remote
-  end
-
+  # def category_in_focus? name
+  #   if category_with_ancestors
+  #     @category_with_ancestor_names ||= category_with_ancestors.map(&:name)
+  #     @category_with_ancestor_names.include? name
+  #   end
+  # end
+  #
+  # # link hash that toggles the contact type to remote only
+  # def remote_focus
+  #   to_h.merge contact_type: :remote
+  # end
+  #
+  # # Is the form object primarily looking for non-personal offers?
+  # def remote_focussed?
+  #   contact_type == :remote
+  # end
+  #
   # Turn search_location data into a JSON string that can be saved in a cookie.
   def location_for_cookie
     return nil if search_location.blank?

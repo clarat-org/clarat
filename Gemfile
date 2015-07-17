@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.5'
+ruby '2.2.2'
 
 ###########
 # General #
@@ -8,7 +8,7 @@ ruby '2.1.5'
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails', '~> 4.1.12'
 gem 'rails-observers' # observers got extracted since rails 4
 
 # Translations
@@ -39,19 +39,23 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
-gem 'hogan_assets'
-group :assets do
-  gem 'haml'
-end
+gem 'handlebars_assets'
+gem 'hamlbars', '~> 2.0'
+
+gem 'hogan_assets' # TODO: deprecated!
+group :assets do # TODO: deprecated!
+  gem 'haml' # TODO: deprecated!
+end # TODO: deprecated!
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-lodash'
+  gem 'rails-assets-lodash' # (aka underscore) diverse js methods
   gem 'rails-assets-jquery'
   gem 'rails-assets-qtip2'
   gem 'rails-assets-shariff'
+  gem 'rails-assets-algoliasearch' # search client
 end
 
 #######
@@ -75,7 +79,7 @@ gem 'autoprefixer-rails'
 gem 'slim-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 # Background processing
 gem 'sidekiq'

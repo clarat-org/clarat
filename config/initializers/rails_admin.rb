@@ -264,6 +264,7 @@ RailsAdmin.config do |config|
     field :expires_at
     field :completed
     field :approved
+    field :unapproved_reason
     field :renewed
 
     show do

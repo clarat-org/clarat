@@ -5,8 +5,8 @@ describe Opening do
     Opening.new(
       name: 'mon 00:00-01:00',
       day: 'mon',
-      open: Time.now,
-      close: Time.now + 1.hour
+      open: Time.zone.now,
+      close: Time.zone.now + 1.hour
     )
   end
 
@@ -52,8 +52,8 @@ describe Opening do
 
     describe '#display_string' do
       it 'should output the open and close time' do
-        opening.open = Time.parse '12:01:01'
-        opening.close = Time.parse '13:02:02'
+        opening.open = Time.zone.parse '12:01:01'
+        opening.close = Time.zone.parse '13:02:02'
 
         opening.display_string.must_equal '12:01 Uhr - 13:02 Uhr'
       end
@@ -66,8 +66,8 @@ describe Opening do
       end
 
       it 'should output 24 instead of 00 for the closing time' do
-        opening.open = Time.parse '14:00:00'
-        opening.close = Time.parse '00:00:00'
+        opening.open = Time.zone.parse '14:00:00'
+        opening.close = Time.zone.parse '00:00:00'
 
         opening.display_string.must_equal '14:00 Uhr - 24:00 Uhr'
       end

@@ -7,6 +7,8 @@ class ContactPerson < ActiveRecord::Base
   has_many :contact_person_offers, inverse_of: :contact_person
   has_many :offers, through: :contact_person_offers, inverse_of: :contact_people
 
+  scope :by_name, -> { order('name DESC') }
+
   # Enumerization
   extend Enumerize
   enumerize :gender, in: %w(female male)

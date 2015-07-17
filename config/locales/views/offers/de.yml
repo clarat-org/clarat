@@ -99,14 +99,16 @@ de:
       # /index partials
 
     show:
-      what: "Worum geht's?"
-      next_steps: "Was musst du tun?"
       who: "Wo gibt’s die Hilfe?"
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
 
-      # show partials
+      # show cells
+      general_information:
+        description_title: "Worum geht's?"
+        next_steps_title: "Was musst du tun?"
+
       opening_section:
         heading: "Wann kannst du das machen?"
         days:

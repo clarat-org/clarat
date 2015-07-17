@@ -17,6 +17,7 @@ gem 'rails-i18n'
 # Structural Framework
 gem 'trailblazer'
 gem 'cells'
+gem 'cells-slim'
 
 # Platforms Ruby
 platforms :ruby do

@@ -1,0 +1,40 @@
+/ - cache [@offer, 'page_header'] do
+
+header.page-detail__header
+  h2.page-detail__title= name
+
+/ Left side (in desktop)
+.section-wrapper-major
+  / What is this service all about?
+  = general_information
+
+  / Who is offering this service?
+  - if has_contact_people?
+    section.section-content
+      h3.section-content__title = t '.heading'
+      .section-content__body
+        ul.section-content--contact-person-list
+          = show_contact_people
+
+  / Internet Presence
+  = website_section_if_websites_present
+
+/ Right side (in desktop)
+.section-wrapper-minor
+
+  = organization_and_location_section
+  
+  / / When can you contact them?
+  / - if @offer.opening_details?
+  /   - cache [@offer, 'openings'] do
+  /     = render 'offers/show/opening_section', offer: @offer
+  / 
+  / 
+  / / Found any mistakes?
+  / = link_to new_feedback_path,
+  /           class: 'offer-contribute js-report-overlay_open' do
+  /   i.fa.fa-exclamation-triangle
+  /   = t 'shareds.show.cta_report_errors'
+  /   
+  / / = modal_for 'js-report-overlay' do
+  / /   = render '/contacts/shared/new', feedback: @feedback, reporting: true

@@ -1,9 +1,6 @@
 section.section-content.section-content--internet-presence
   h3.section-content__title= t '.internet_presence'
   .section-content__body
-    - websites = offer.structured_websites
-    - last_index = websites.count - 1
-
     - websites.each_with_index do |website, index|
       = link_to t(".websites.#{website.host}") + website.pdf_appendix,
                 website.url,

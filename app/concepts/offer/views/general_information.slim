@@ -1,0 +1,14 @@
+/ - cache [@offer, 'general_info'] do
+
+/ What's it all about?
+section.section-content.section-content--what
+  h3.section-content__title = t '.description_title'
+  .section-content__body
+    == description_html
+
+/ What to do next?
+section.section-content.section-content--nextsteps
+  h3.section-content__title
+    = t '.next_steps_title'
+  .section-content__body
+    == next_steps_html

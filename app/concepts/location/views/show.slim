@@ -1,0 +1,16 @@
+/! http://microformats.org/wiki/adr start
+.adr
+  p
+    - if name?
+      .offer-location-name.org= name
+    - if addition?
+      span.extended-address= addition
+      br
+    span.street-address= street
+    br
+    span.postal-code=> zip
+    span.locality= city
+    br
+    br
+    / = t '.organizations'
+/! http://microformats.org/wiki/adr end

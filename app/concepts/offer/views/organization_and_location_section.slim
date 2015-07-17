@@ -1,0 +1,16 @@
+section.section-content.section-content--whos-offering
+  h3.section-content__title
+    = t '.who'
+
+  .section-content__body
+
+    - if location
+      #map-container
+        #map-data data={ markers: @markers.to_json }
+        #map-canvas
+
+      = show_location
+
+    / ul.Listing-organizations__list
+    /   - organizations.each do |orga|
+    /     li.Listing-organizations__link = link_to orga.name, organization_path(id: orga)

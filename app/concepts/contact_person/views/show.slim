@@ -1,0 +1,48 @@
+/ TODO: Order by no name first
+li
+  / TODO: Refactor (Move to model)
+  - if last_name?
+    = t '.person'
+    - if gender?
+      =< t ".#{gender}"
+    - if academic_title?
+      =< t ".#{academic_title}"
+    - if first_name? && last_name?
+      =< "#{first_name} #{last_name}"
+      br
+    - elsif last_name?
+      =< "#{last_name}"
+      br
+  - elsif first_name?
+    = "#{t '.person'} #{first_name}"
+    br
+  - elsif operational_name?
+    = "#{operational_name}"
+    br
+  - elsif name?
+    = "#{t '.person'} #{name}"
+    br
+
+  - if local_number_1?
+    = t '.phone'
+    a< href="tel:#{telephone_1}"
+      = area_code_1
+      =< tel_format local_number_1
+    br
+  - if local_number_2?
+    = t '.phone'
+    a< href="tel:#{telephone_2}"
+      = area_code_2
+      =< tel_format local_number_2
+    br
+  - if fax_number?
+    = t '.fax'
+    a< href="fax:#{fax}"
+      = fax_area_code
+      =< tel_format fax_number
+    br
+  - if email?
+    = t '.email'
+    span[id="secure-email-#{id}"]
+      ==< secure_email_to email, id
+    br

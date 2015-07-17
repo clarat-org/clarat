@@ -53,7 +53,8 @@ gem 'turbolinks'
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
   gem 'rails-assets-jquery'
-  gem 'rails-assets-qtip2' # tooltip lib
+  gem 'rails-assets-qtip2'
+  gem 'rails-assets-shariff'
   gem 'rails-assets-algoliasearch' # search client
 end
 

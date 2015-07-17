@@ -72,6 +72,49 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  include AASM
+  aasm do
+    ## States
+
+    # Normal Workflow
+    state :initialized
+    state :ready_for_approval
+    state :approved
+
+    # Temporary Workflow
+    state :in_renewal
+    state :renewed
+
+    # Special states object might enter after it was approved
+    state :expired # Happens automatically after a pre-set amount of time
+    state :deactivated # There was an issue
+    state :paused # I.e. Seasonal offer is in off-season
+
+
+    ## Transitions
+
+    event :advance do
+      transitions from: :initialized, to: :ready_for_approval
+      transitions from: :ready_for_approval, to: :approved
+
+      # Temporary
+      transitions from: :in_renewal, to: :renewed
+      transitions from: :renewed, to: :approved
+    end
+
+    event :expire do
+      transitions to: :expired
+    end
+
+    event :deactivate do
+      transitions to: :deactivated
+    end
+
+    event :pause do
+      transitions to: :paused
+    end
+  end
+
   # handled in observer before save
   def generate_html
     self.description_html = MarkdownRenderer.render description

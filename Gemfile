@@ -92,6 +92,9 @@ end
 
 gem 'rack-attack' # securing malicious requests
 
+# State Machine
+gem 'aasm'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

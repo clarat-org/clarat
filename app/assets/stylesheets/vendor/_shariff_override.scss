@@ -11,7 +11,7 @@
 
   li {
     list-style: none;
-    paddding-bottom: 10px;
+    padding-bottom: 10px;
 
 
     &:first-child {
@@ -33,6 +33,9 @@
     margin-left: 60px;
     z-index: 1;
 
+    &.whatsapp {
+      display: none;
+    }
 
     &:hover {
       box-shadow: 10px 10px 160px 60px rgba(255,255,255, 1);
@@ -73,4 +76,3 @@
     }
   }
 }
-

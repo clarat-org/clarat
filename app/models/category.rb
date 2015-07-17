@@ -7,6 +7,8 @@ class Category < ActiveRecord::Base
   # associtations
   has_and_belongs_to_many :offers
   has_many :organizations, through: :offers
+  # To order with closure_tree
+  has_closure_tree order: 'sort_order'
 
   # Validations
   validates :name, uniqueness: true, presence: true

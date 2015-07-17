@@ -369,6 +369,7 @@ RailsAdmin.config do |config|
   config.model 'Category' do
     field :name
     field :parent
+    field :sort_order
 
     object_label_method :name_with_optional_asterisk
 

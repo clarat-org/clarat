@@ -83,6 +83,6 @@ class Organization < ActiveRecord::Base
   end
 
   def homepage
-    websites.where(host: 'own').first
+    websites.find_by_host('own')
   end
 end

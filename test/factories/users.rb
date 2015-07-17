@@ -6,7 +6,7 @@ FactoryGirl.define do
     email { FFaker::Internet.email }
     password 'password'
 
-    confirmed_at Time.now
+    confirmed_at Time.zone.now
 
     factory :admin, aliases: [:researcher] do
       role 'researcher'

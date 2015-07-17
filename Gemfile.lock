@@ -171,7 +171,7 @@ GEM
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     geocoder (1.2.9)
-    gibbon (1.1.6)
+    gibbon (1.2.0)
       httparty
       multi_json (>= 1.9.0)
     git-version-bump (0.15.1)

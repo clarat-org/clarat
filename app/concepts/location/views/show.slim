@@ -1,3 +1,7 @@
+#map-container
+  #map-data data={ markers: @markers.to_json }
+  #map-canvas
+
 /! http://microformats.org/wiki/adr start
 .adr
   p
@@ -10,7 +14,4 @@
     br
     span.postal-code=> zip
     span.locality= city
-    br
-    br
-    / = t '.organizations'
 /! http://microformats.org/wiki/adr end

@@ -1,4 +1,7 @@
-- provide(:title, @offer.name )
+- provide :title, @offer.name
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
-    = concept('offer/cell', @offer)
+    = concept 'offer/cell', @offer
+    
+    / Found any mistakes?
+    = concept 'feedback/cell', @form, type: :report_button

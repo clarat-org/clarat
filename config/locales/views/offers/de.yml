@@ -99,46 +99,15 @@ de:
       # /index partials
 
     show:
-      who: "Wo gibt’s die Hilfe?"
+      headings:
+        description: "Worum geht's?"
+        next_steps: "Was musst du tun?"
+        contact_people: "Wo gibt’s die Hilfe?"
+        websites: "Wo erfährst du mehr im Netz?"
+        where: "Wo kannst du dich melden?"
+        openings: "Wann kannst du das machen?"
+      organizations: "Ein Angebot von:"
+
       obfuscated_email: |
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
-
-      # show cells
-      general_information:
-        description_title: "Worum geht's?"
-        next_steps_title: "Was musst du tun?"
-
-      opening_section:
-        heading: "Wann kannst du das machen?"
-        days:
-          mon: Montag
-          tue: Dienstag
-          wed: Mittwoch
-          thu: Donnerstag
-          fri: Freitag
-          sat: Samstag
-          sun: Sonntag
-      website_section:
-        internet_presence: "Wo erfährst du mehr im Netz?"
-        websites:
-          own: "Webseite"
-          facebook: "Facebook"
-          twitter: "Twitter"
-          youtube: "Youtube"
-          gplus: "Google+"
-          pinterest: "Pinterest"
-      who_contact_people:
-        female: "Frau"
-        male: "Herr"
-        dr: "Dr."
-        prof_dr: "Prof. Dr."
-        person: "Ansprechpartner:"
-        phone: "Telefon: "
-        fax: "Fax: "
-        email: "E-Mail: "
-      who_section:
-        heading: "Wo kannst du dich melden?"
-      who_location:
-        organizations: 'Ein Angebot von:'
-      # /show partials

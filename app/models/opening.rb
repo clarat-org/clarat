@@ -54,18 +54,20 @@ class Opening < ActiveRecord::Base
     end
   end
 
-  # rails_admin can only sort by a single field, that's why we are creating an
-  # imaginary time stamp that handles the sorting
+  # to be able to sort openings by day, open and close time at once, we are
+  # creating an imaginary time stamp and transform it into a sortable integer
   def calculate_sort_value
     return nil unless day
-    dummy_time = dummy_time_for_day DAYS.index(day) + 1
     self.sort_value = (dummy_time.to_f * 100).to_i
   end
 
   private
 
-  # generate imaginary timestamp for a specific day
-  def dummy_time_for_day day_nr
+  # generate imaginary timestamp that incorporates all data important for
+  # sorting
+  # rubocop:disable Metrics/AbcSize
+  def dummy_time
+    day_nr = DAYS.index(day) + 1
     if open && close
       hour = open.hour
       min = open.min
@@ -75,4 +77,5 @@ class Opening < ActiveRecord::Base
     end
     Time.zone.local(1970, 1, day_nr, hour, min, sec, 0)
   end
+  # rubocop:enable Metrics/AbcSize
 end

@@ -14,12 +14,12 @@ Clarat::Application.routes.draw do
     # RESTful resources
     resources :offers, only: [:index, :show]
     resources :organizations, only: [:show]
-    # resources :users, only: [:show]
     resources :update_requests, only: [:new, :create]
     resources :search_locations, only: [:show]
     resources :feedbacks, only: [:new, :create]
     resources :subscriptions, only: [:new, :create]
     resources :definitions, only: [:show]
+    # resources :users, only: [:show]
     get 'categories/:offer_name', controller: :categories, action: :index
 
     get '/404' => 'pages#not_found'

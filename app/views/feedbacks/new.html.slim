@@ -1,4 +1,4 @@
 .wrapper-inner
   main.content-main.section-content--contact
     h2= t '.feedback_heading'
-    = render '/feedbacks/shared/new', feedback: @form, reporting: false
+    = concept 'feedback/cell', @form

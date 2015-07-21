@@ -1,0 +1,11 @@
+de:
+  openings:
+    show:
+      days:
+        mon: Montag
+        tue: Dienstag
+        wed: Mittwoch
+        thu: Donnerstag
+        fri: Freitag
+        sat: Samstag
+        sun: Sonntag

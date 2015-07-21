@@ -1,8 +1,0 @@
-section.section-content.section-content--internet-presence
-  h3.section-content__title= t '.internet_presence'
-  .section-content__body
-    - websites.each_with_index do |website, index|
-      = link_to t(".websites.#{website.host}") + website.pdf_appendix,
-                website.url,
-                target: '_blank'
-      = ' | ' unless index == last_index

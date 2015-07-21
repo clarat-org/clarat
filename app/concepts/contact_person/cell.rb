@@ -3,31 +3,19 @@ class ContactPerson::Cell < Cell::Concept
 
   # cache TODO
 
-  property :id
-  property :name
-  property :name?
-  property :first_name
-  property :first_name?
-  property :last_name
-  property :last_name?
-  property :gender
-  property :academic_title
-  property :operational_name
-  property :operational_name?
-  property :telephone_1
-  property :telephone_2
-  property :area_code_1
-  property :area_code_2
-  property :local_number_1
-  property :local_number_1?
-  property :local_number_2
-  property :local_number_2?
-  property :fax
-  property :fax_area_code
-  property :fax_number
-  property :fax_number?
-  property :email
-  property :email?
+  property :id,
+           :name, :name?,
+           :first_name, :first_name?,
+           :last_name, :last_name?,
+           :gender,
+           :academic_title,
+           :operational_name, :operational_name?,
+           :telephone_1, :telephone_2,
+           :area_code_1, :area_code_2,
+           :local_number_1, :local_number_1?,
+           :local_number_2, :local_number_2?,
+           :fax, :fax_area_code, :fax_number, :fax_number?,
+           :email, :email?
 
   def show
     render

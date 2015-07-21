@@ -1,40 +1,61 @@
-/ - cache [@offer, 'page_header'] do
-
 header.page-detail__header
-  h2.page-detail__title= name
+  h2.page-detail__title = name
 
 / Left side (in desktop)
 .section-wrapper-major
   / What is this service all about?
-  = general_information
+  section.section-content.section-content--what
+    h3.section-content__title = t '.headings.description'
+    .section-content__body
+      == description_html
+
+  / What to do next?
+  section.section-content.section-content--nextsteps
+    h3.section-content__title = t '.headings.next_steps'
+    .section-content__body
+      == next_steps_html
 
   / Who is offering this service?
-  - if has_contact_people?
+  - if contact_people?
     section.section-content
-      h3.section-content__title = t '.heading'
+      h3.section-content__title = t '.headings.contact_people'
       .section-content__body
         ul.section-content--contact-person-list
           = show_contact_people
 
   / Internet Presence
-  = website_section_if_websites_present
+  - if websites?
+    section.section-content.section-content--internet-presence
+      h3.section-content__title = t '.headings.websites'
+      .section-content__body
+        = show_websites
 
 / Right side (in desktop)
 .section-wrapper-minor
 
-  = organization_and_location_section
-  
-  / / When can you contact them?
-  / - if @offer.opening_details?
-  /   - cache [@offer, 'openings'] do
-  /     = render 'offers/show/opening_section', offer: @offer
-  / 
-  / 
-  / / Found any mistakes?
-  / = link_to new_feedback_path,
-  /           class: 'offer-contribute js-report-overlay_open' do
-  /   i.fa.fa-exclamation-triangle
-  /   = t 'shareds.show.cta_report_errors'
-  /   
-  / / = modal_for 'js-report-overlay' do
-  / /   = render '/contacts/shared/new', feedback: @feedback, reporting: true
+  / Location & Organization Box
+  section.section-content.section-content--whos-offering
+    h3.section-content__title = t '.headings.where'
+    .section-content__body
+      - if location
+        = show_location
+
+      p = t '.organizations'
+      ul.Listing-organizations__list
+        = show_organizations
+
+  / When can you contact them?
+  - if opening_details?
+    section.section-content.section-content--when
+      h3.section-content__title = t '.headings.openings'
+      .section-content__body
+        - if openings?
+          /! use http://microformats.org/wiki/opening-hours once specified
+          table.Table
+            = show_openings
+
+          - if opening_specification?
+            br
+
+        .section-content--openingspecification
+          == opening_specification_html

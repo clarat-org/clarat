@@ -1,0 +1,20 @@
+- if reporting
+  = t('.send_us_a_message')
+
+= simple_form_for model,
+                  html: { class: 'contact-form' },
+                  remote: reporting do |f|
+
+  = f.input :name, label: false,
+                   input_html: { placeholder: t('.name_placeholder') }
+  = f.input :email, label: false,
+                    required: !reporting,
+                    input_html: { \
+                      placeholder: \
+                        t(".email_placeholder.required.#{!reporting}") }
+  = f.input :message, label: false,
+                      as: :text,
+                      input_html: { placeholder: t('.message_placeholder') }
+  = f.input :url, as: :hidden
+  = f.input :reporting, as: :hidden
+  = f.submit t '.send'

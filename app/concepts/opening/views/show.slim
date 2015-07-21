@@ -1,0 +1,9 @@
+tr
+  th
+    = t(".days.#{day}") + ':'
+  td dir='ltr'
+    - times.sort.each do |time|
+      time.Table__time = time
+      / @todo extend to using https://schema.org/LocalBusiness
+      / itemprop="openingHours", datetime attr
+      / https://schema.org/openingHours

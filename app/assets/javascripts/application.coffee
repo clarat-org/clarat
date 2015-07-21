@@ -21,6 +21,7 @@ about supported directives.
 # = require i18n/translations
 # = require algoliasearch
 # = require hogan
+# = require shariff
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
@@ -87,4 +88,5 @@ about supported directives.
 # = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/faq
+# = require modules/shariff_addional
 # = require modules/refocus

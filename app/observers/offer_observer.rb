@@ -10,6 +10,6 @@ class OfferObserver < ActiveRecord::Observer
 
   def before_create offer
     current_user = ::PaperTrail.whodunnit
-    offer.created_by = current_user.id if current_user # so unclean ...
+    offer.created_by = current_user if current_user.is_a? Integer # so unclean
   end
 end

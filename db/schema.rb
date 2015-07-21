@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717092352) do
+ActiveRecord::Schema.define(version: 20150717124051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150717092352) do
     t.datetime "updated_at"
     t.string   "icon",       limit: 12
     t.integer  "parent_id"
+    t.integer  "sort_order"
   end
 
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree

@@ -45,8 +45,8 @@ ul.section-content--contact-person-list
             = contact.fax_area_code
             =< tel_format contact.fax_number
           br
-        - if contact.email?
+        - if contact.email_address?
           = t '.email'
           span[id="secure-email-#{index}"]
-            ==< secure_email_to contact.email, index
+            ==< secure_email_to contact.email_address, index
           br

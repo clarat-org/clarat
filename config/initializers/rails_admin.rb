@@ -294,7 +294,7 @@ RailsAdmin.config do |config|
       field :name
       field :organization
       field :offers
-      field :email
+      field :email_address
     end
     field :name
     field :gender
@@ -391,6 +391,15 @@ RailsAdmin.config do |config|
     field :explanation
 
     object_label_method :key
+  end
+
+  config.model 'Email' do
+    field :address
+    field :aasm_state do
+      read_only true
+    end
+
+    object_label_method :address
   end
 
   config.model 'Filter' do

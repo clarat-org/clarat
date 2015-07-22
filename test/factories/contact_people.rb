@@ -11,16 +11,25 @@ FactoryGirl.define do
     local_number_2 { area_code_2 ? FFaker.numerify('#' * rand(7..11)) : nil }
     fax_area_code { maybe FFaker.numerify('#' * rand(3..6)) }
     fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
-    email { maybe FFaker::Internet.email }
 
     organization
 
     transient do
       offers []
+      email_address { maybe FFaker::Internet.email }
     end
 
     after :create do |contact_person, evaluator|
-      contact_person.offers = evaluator.offers unless evaluator.offers.blank?
+      if evaluator.offers.any?
+        contact_person.offers = evaluator.offers
+      end
+
+      if evaluator.email_address
+        contact_person.update_column(
+          :email_id,
+          FactoryGirl.create(:email, address: evaluator.email_address).id
+        )
+      end
     end
 
     trait :no_fields do # careful, makes object non-valid
@@ -28,7 +37,7 @@ FactoryGirl.define do
       local_number_1 nil
       local_number_2 nil
       fax_number nil
-      email nil
+      email_address nil
     end
 
     trait :just_telephone do
@@ -37,7 +46,7 @@ FactoryGirl.define do
       local_number_1 '123456'
       area_code_2 nil
       local_number_2 nil
-      email nil
+      email_address nil
       fax_number nil
       fax_area_code nil
     end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717124051) do
+ActiveRecord::Schema.define(version: 20150722083917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,6 @@ ActiveRecord::Schema.define(version: 20150717124051) do
 
   create_table "contact_people", force: true do |t|
     t.string   "name"
-    t.string   "email"
     t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -73,8 +72,10 @@ ActiveRecord::Schema.define(version: 20150717124051) do
     t.string   "gender"
     t.string   "role"
     t.string   "responsibility"
+    t.integer  "email_id"
   end
 
+  add_index "contact_people", ["email_id"], name: "index_contact_people_on_email_id", using: :btree
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
 
   create_table "contact_person_offers", force: true do |t|
@@ -97,6 +98,15 @@ ActiveRecord::Schema.define(version: 20150717124051) do
   create_table "definitions", force: true do |t|
     t.string   "key",         null: false
     t.text     "explanation", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "emails", force: true do |t|
+    t.string   "address",       limit: 64,                        null: false
+    t.string   "aasm_state",    limit: 32, default: "uninformed", null: false
+    t.string   "security_code", limit: 36
+    t.text     "log",                      default: "",           null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -144,6 +154,21 @@ ActiveRecord::Schema.define(version: 20150717124051) do
 
   add_index "keywords_offers", ["keyword_id"], name: "index_keywords_offers_on_keyword_id", using: :btree
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
+
+  create_table "languages", force: true do |t|
+    t.string   "name",                 null: false
+    t.string   "code",       limit: 3, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "languages_offers", id: false, force: true do |t|
+    t.integer "language_id", null: false
+    t.integer "offer_id",    null: false
+  end
+
+  add_index "languages_offers", ["language_id"], name: "index_languages_offers_on_language_id", using: :btree
+  add_index "languages_offers", ["offer_id"], name: "index_languages_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
     t.string   "street",                      null: false

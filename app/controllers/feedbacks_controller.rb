@@ -6,7 +6,7 @@ class FeedbacksController < ApplicationController
 
   def new
     authorize Feedback.new
-    present Feedback::Create
+    form Feedback::Create
     # @feedback = Feedback.new url: request.referrer
     # respond_with @feedback
   end

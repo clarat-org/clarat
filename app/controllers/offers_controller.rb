@@ -20,9 +20,11 @@ class OffersController < ApplicationController
     @offer = Offer.friendly.find(params[:id])
     authorize @offer
 
+    present Offer::Update
+    form Feedback::Create
+
     # prepare_gmaps_variable @offer
     # @feedback = Feedback.new url: request.url, reporting: true
-    form Feedback::Create
     # respond_with @offer
   end
 

@@ -19,8 +19,8 @@ describe BroadcastMailer do
       subject.must have_body_text 'clarat'
     end
 
-    describe 'for a genderless contact person' do
-      let(:options) { { gender: nil } }
+    describe 'for a genderless contact person without a name' do
+      let(:options) { { gender: nil, first_name: nil } }
 
       it 'must address them correctly' do
         subject.must have_body_text 'Sehr geehrte Damen und Herren,'

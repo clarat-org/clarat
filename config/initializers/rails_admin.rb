@@ -18,7 +18,7 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
-  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'FederalState',
+  config.excluded_models = ['AgeFilter', 'FederalState',
                             'OrganizationConnection', 'Filter']
 
   ## == PaperTrail ==
@@ -243,6 +243,8 @@ RailsAdmin.config do |config|
       inline_add false
       help { 'Required before approval.' }
     end
+    field :age_from
+    field :age_to
     field :openings
     field :opening_specification do
       help do

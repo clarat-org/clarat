@@ -4,7 +4,6 @@ class AddAgeLimitsToOffers < ActiveRecord::Migration
     add_column :offers, :age_to, :integer
 
     Offer.find_each do |offer|
-      puts offer.id
       if offer.filters.any?{|filter| filter.identifier == "babies"}
         offer.update_column :age_from, 0
       elsif offer.filters.any?{|filter| filter.identifier == "toddler"}

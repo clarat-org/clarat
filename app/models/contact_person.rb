@@ -24,8 +24,8 @@ class ContactPerson < ActiveRecord::Base
 
   def at_least_one_field_present
     one_field_blank = %w(first_name last_name operational_name local_number_1
-      email fax_number).all? do |field|
-        self[field].blank?
+                         email fax_number).all? do |field|
+      self[field].blank?
     end
 
     if one_field_blank

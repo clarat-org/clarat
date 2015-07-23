@@ -24,8 +24,8 @@ class Offer
       # Needs to be true before approval possible. Called in custom validation.
       # Uses method from CustomValidatable concern.
       def before_approve
-        fail_validation :age_from, 'needs_age_from' unless age_from
-        fail_validation :age_to, 'needs_age_to' unless age_to
+        fail_validation :age_from, 'needs_age' unless age_from
+        fail_validation :age_to, 'needs_age' unless age_to
         validate_associated_fields
         if organizations.where(approved: false).count > 0
           fail_validation :organizations, 'only_approved_organizations',

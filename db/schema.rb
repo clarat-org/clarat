@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722083917) do
+ActiveRecord::Schema.define(version: 20150723075554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 20150722083917) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "contact_people", force: true do |t|
-    t.string   "name"
     t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -154,21 +153,6 @@ ActiveRecord::Schema.define(version: 20150722083917) do
 
   add_index "keywords_offers", ["keyword_id"], name: "index_keywords_offers_on_keyword_id", using: :btree
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
-
-  create_table "languages", force: true do |t|
-    t.string   "name",                 null: false
-    t.string   "code",       limit: 3, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "languages_offers", id: false, force: true do |t|
-    t.integer "language_id", null: false
-    t.integer "offer_id",    null: false
-  end
-
-  add_index "languages_offers", ["language_id"], name: "index_languages_offers_on_language_id", using: :btree
-  add_index "languages_offers", ["offer_id"], name: "index_languages_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
     t.string   "street",                      null: false

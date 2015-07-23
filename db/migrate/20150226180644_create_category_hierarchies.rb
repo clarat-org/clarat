@@ -20,6 +20,6 @@ class CreateCategoryHierarchies < ActiveRecord::Migration
     remove_column :categories, :children_count, :integer, null: false,
                                                           default: 0
 
-    Category.rebuild!
+    # Category.rebuild!
   end
 end

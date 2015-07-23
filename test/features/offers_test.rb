@@ -34,7 +34,8 @@ feature 'Offer display' do
   scenario 'Muliple contact persons are shown in the right order' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :just_telephone, organization: offer.organizations.first
+      :contact_person, :no_fields, :with_telephone,
+      organization: offer.organizations.first
     )
     visit offer_path offer
     page.body.must_match(

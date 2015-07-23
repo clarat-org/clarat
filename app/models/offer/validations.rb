@@ -14,7 +14,8 @@ class Offer
       validates :comment, length: { maximum: 800 }
       validates :slug, uniqueness: true
       validates :encounter, presence: true
-      validates :expires_at, presence: true, later_date: true
+      validates :expires_at, presence: true
+      validates :expires_at, later_date: true, on: :create
 
       # Custom validations
       validate :location_fits_organization, on: :update

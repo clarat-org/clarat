@@ -30,10 +30,20 @@ describe OfferMailer do
       subject.must have_body_text 'clarat'
     end
 
-    describe 'for a genderless contact person' do
-      let(:options) { { gender: nil } }
+    describe 'for a genderless contact person without a name' do
+      let(:options) do
+        { gender: nil, first_name: nil, last_name: nil, local_number_1: '1' }
+      end
 
       it 'must address them correctly' do
+        subject.must have_body_text 'Sehr geehrte Damen und Herren,'
+      end
+    end
+
+    describe 'for an email with multiple contact people' do
+      it 'must address them correctly' do
+        FactoryGirl.create :contact_person, email_address: nil,
+                                            email: contact_person.email
         subject.must have_body_text 'Sehr geehrte Damen und Herren,'
       end
     end

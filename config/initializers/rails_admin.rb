@@ -291,12 +291,12 @@ RailsAdmin.config do |config|
     object_label_method :display_name
     list do
       field :id
-      field :name
+      field :first_name
+      field :last_name
       field :organization
       field :offers
       field :email_address
     end
-    field :name
     field :gender
     field :academic_title
     field :first_name

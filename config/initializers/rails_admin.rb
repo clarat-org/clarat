@@ -28,7 +28,7 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter AudienceFilter User Contact Keyword Definition
+    LanguageFilter AgeFilter User Contact Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
     OrganizationConnection SearchLocation ContactPerson
   )
@@ -238,9 +238,7 @@ RailsAdmin.config do |config|
       css_class 'js-category-suggestions'
     end
     field :language_filters
-    field :audience_filters do
-      inline_add false
-    end
+    field :target_gender
     field :age_filters do
       inline_add false
       help { 'Required before approval.' }
@@ -406,9 +404,6 @@ RailsAdmin.config do |config|
     parent Filter
   end
   config.model 'AgeFilter' do
-    parent Filter
-  end
-  config.model 'AudienceFilter' do
     parent Filter
   end
 

@@ -2,7 +2,7 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :contact_person do
-    name { FFaker::NameDE.name }
+    first_name { FFaker::NameDE.name }
     area_code_1 { maybe FFaker.numerify('#' * rand(3..6)) }
     local_number_1 { area_code_1 ? FFaker.numerify('#' * rand(7..11)) : nil }
     area_code_2 do
@@ -24,7 +24,7 @@ FactoryGirl.define do
     end
 
     trait :no_fields do # careful, makes object non-valid
-      name nil
+      first_name nil
       local_number_1 nil
       local_number_2 nil
       fax_number nil
@@ -32,7 +32,7 @@ FactoryGirl.define do
     end
 
     trait :just_telephone do
-      name nil
+      first_name nil
       area_code_1 '030'
       local_number_1 '123456'
       area_code_2 nil

@@ -6,7 +6,13 @@ describe ContactPerson do
   subject { contact_person }
 
   describe 'attributes' do
-    it { subject.must_respond_to :name }
+    it { subject.must_respond_to :first_name }
+    it { subject.must_respond_to :last_name }
+    it { subject.must_respond_to :operational_name }
+    it { subject.must_respond_to :academic_title }
+    it { subject.must_respond_to :gender }
+    it { subject.must_respond_to :role }
+    it { subject.must_respond_to :responsibility }
     it { subject.must_respond_to :area_code_1 }
     it { subject.must_respond_to :local_number_1 }
     it { subject.must_respond_to :area_code_2 }
@@ -37,7 +43,7 @@ describe ContactPerson do
             )
           end
           it 'should be valid if name is given' do
-            contact_person.name = 'John'
+            contact_person.first_name = 'John'
             contact_person.valid?.must_equal true
           end
           it 'should be valid if telephone is given' do
@@ -64,9 +70,18 @@ describe ContactPerson do
   describe 'methods' do
     describe '#display_name' do
       it 'should show ID, name and organization name' do
-        contact_person.assign_attributes id: 1, name: 'John Doe'
+        contact_person.assign_attributes id: 1, first_name: 'John'
+        contact_person.assign_attributes id: 1, last_name: 'Doe'
         contact_person.organization = Organization.new(name: 'ABC')
         contact_person.display_name.must_equal '#1 John Doe (ABC)'
+      end
+    end
+
+    describe '#display_name' do
+      it 'should show ID, name and organization name' do
+        contact_person.assign_attributes id: 1, operational_name: 'Headquarters'
+        contact_person.organization = Organization.new(name: 'ABC')
+        contact_person.display_name.must_equal '#1 Headquarters (ABC)'
       end
     end
 

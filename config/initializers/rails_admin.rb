@@ -297,7 +297,6 @@ RailsAdmin.config do |config|
       field :offers
       field :email
     end
-    field :name
     field :gender
     field :academic_title
     field :first_name

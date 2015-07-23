@@ -23,8 +23,9 @@ class ContactPerson < ActiveRecord::Base
   validate :at_least_one_field_present
 
   def at_least_one_field_present
-    one_field_blank = %w(name local_number_1 email fax_number).all? do |field|
-      self[field].blank?
+    one_field_blank = %w(first_name last_name operational_name local_number_1
+      email fax_number).all? do |field|
+        self[field].blank?
     end
 
     if one_field_blank
@@ -37,7 +38,11 @@ class ContactPerson < ActiveRecord::Base
 
   # For rails_admin display
   def display_name
-    "##{id} #{name} (#{organization_name})"
+    if first_name.blank? && last_name.blank?
+      "##{id} #{operational_name} (#{organization_name})"
+    else
+      "##{id} #{first_name} #{last_name} (#{organization_name})"
+    end
   end
 
   # concatenated area code and telephone number

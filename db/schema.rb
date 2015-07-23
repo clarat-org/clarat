@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717124051) do
+ActiveRecord::Schema.define(version: 20150723075554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 20150717124051) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "contact_people", force: true do |t|
-    t.string   "name"
     t.string   "email"
     t.integer  "organization_id",             null: false
     t.datetime "created_at"

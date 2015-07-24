@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150724114042) do
+ActiveRecord::Schema.define(version: 20150724145115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -191,7 +191,7 @@ ActiveRecord::Schema.define(version: 20150724114042) do
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
     t.string   "unapproved_reason",                     default: "not_approved"
-    t.string   "target_gender",                         default: "whatever"
+    t.string   "target_gender"
     t.integer  "age_from"
     t.integer  "age_to"
     t.string   "target_audience"

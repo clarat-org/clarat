@@ -18,6 +18,10 @@ describe Offer do
     it { subject.must_respond_to :completed }
     it { subject.must_respond_to :approved }
     it { subject.must_respond_to :legal_information }
+    it { subject.must_respond_to :age_from }
+    it { subject.must_respond_to :age_to }
+    it { subject.must_respond_to :target_gender }
+    it { subject.must_respond_to :target_audience }
   end
 
   describe 'validations' do
@@ -32,6 +36,10 @@ describe Offer do
       it { subject.must validate_length_of(:comment).is_at_most 800 }
       it { subject.must validate_length_of(:legal_information).is_at_most 400 }
       it { subject.must validate_presence_of :expires_at }
+      it { subject.must validate_numericality_of(:age_from).only_integer.
+        is_greater_than_or_equal_to(0).is_less_than_or_equal_to(17)}
+      it { subject.must validate_numericality_of(:age_to).only_integer.
+        is_greater_than(0).is_less_than_or_equal_to(18)}
       it do
         subject.must validate_length_of(:opening_specification).is_at_most 400
       end

@@ -16,8 +16,13 @@ class Offer
       validates :encounter, presence: true
       validates :expires_at, presence: true
       validates :expires_at, later_date: true, on: :create
-      validates :age_from, numericality: { greater_than: -1, less_than_or_equal_to: 14, only_integer: true }
-      validates :age_to, numericality: { greater_than: 0, less_than_or_equal_to: 18, only_integer: true }
+      validates :age_from,
+                numericality: { greater_than_or_equal_to: 0,
+                                less_than_or_equal_to: 17, only_integer: true,
+                                allow_blank: true }
+      validates :age_to,
+                numericality: { greater_than: 0, less_than_or_equal_to: 18,
+                                only_integer: true, allow_blank: true }
 
 
       # Custom validations
@@ -43,8 +48,8 @@ class Offer
       def validate_age_filter
         fail_validation :age_from, 'needs_age' unless age_from
         fail_validation :age_to, 'needs_age' unless age_to
-        if age_from > age_to
-          errors.add(:age_from, 'fuck off!')
+        if age_to && age_from && age_from > age_to
+          errors.add(:age_from, I18n.t('offer.validations.age_from_be_smaller'))
         end
       end
 

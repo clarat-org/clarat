@@ -16,6 +16,9 @@ class Offer
       validates :encounter, presence: true
       validates :expires_at, presence: true
       validates :expires_at, later_date: true, on: :create
+      validates :age_from, numericality: { greater_than: -1, less_than_or_equal_to: 14, only_integer: true }
+      validates :age_to, numericality: { greater_than: 0, less_than_or_equal_to: 18, only_integer: true }
+
 
       # Custom validations
       validate :location_fits_organization, on: :update

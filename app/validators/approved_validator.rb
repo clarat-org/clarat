@@ -6,7 +6,7 @@ class ApprovedValidator < ActiveModel::EachValidator
       if !record.completed?
         record.fail_validation attribute, 'incomplete'
       elsif first_version.nil? ||
-            first_version.whodunnit.to_i == PaperTrail.whodunnit.id
+            first_version.whodunnit.to_i == PaperTrail.whodunnit
         record.fail_validation attribute, 'approved_by_creator'
       end
     end

@@ -2,21 +2,11 @@
 class Geolocation
   attr_reader :latitude, :longitude
 
-  # takes either an object that responds to #latitude and #longitude, or both
-  # of those as separate floating point parameters, or a string containing
-  # them comma separated
-  def initialize *attrs
-    # if attrs[0].is_a? Float
-    #   @latitude = attrs[0]
-    #   @longitude = attrs[1]
-    # els
-    if attrs[0].is_a? String
-      @latitude, @longitude = attrs[0].split(',')
-    else
-      @object = attrs[0]
-      @latitude = @object.latitude
-      @longitude = @object.longitude
-    end
+  # @attr object has to respond to #latitude and #longitude
+  def initialize object
+    @object = object
+    @latitude = @object.latitude
+    @longitude = @object.longitude
   end
 
   def to_s

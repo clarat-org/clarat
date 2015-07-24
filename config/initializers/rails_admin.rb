@@ -239,6 +239,7 @@ RailsAdmin.config do |config|
     end
     field :language_filters
     field :target_gender
+    field :target_audience
     field :age_filters do
       inline_add false
       help { 'Required before approval.' }

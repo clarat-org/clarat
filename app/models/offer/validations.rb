@@ -28,7 +28,7 @@ class Offer
       # Uses method from CustomValidatable concern.
       def before_approve
          # TODO: Refactor age validations lead to simple HTML 5 checks which are
-         # eg not working in Safari. AlsoRubocop complains...
+         # eg not working in Safari. Also Rubocop complains...
         fail_validation :age_from, 'needs_age' unless age_from
         fail_validation :age_to, 'needs_age' unless age_to
         validate_associated_fields

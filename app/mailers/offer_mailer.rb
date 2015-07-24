@@ -17,6 +17,7 @@ class OfferMailer < ActionMailer::Base
     @multiple_contact_people = @contact_people.count > 1
     @offers = offers || email.offers.approved
 
-    mail to: email.address
+    mail to: email.address,
+         from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
   end
 end

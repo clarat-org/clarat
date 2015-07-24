@@ -16,7 +16,8 @@ FactoryGirl.define do
       after :create do |email, _evaluator|
         offers = [FactoryGirl.create(:offer)]
         email.contact_people << FactoryGirl.create(:contact_person,
-                                                   offers: offers)
+                                                   offers: offers,
+                                                   email_address: nil)
       end
     end
 
@@ -24,6 +25,22 @@ FactoryGirl.define do
       after :build do |email, _evaluator|
         email.send(:regenerate_security_code)
       end
+    end
+
+    trait :uninformed do
+      aasm_state 'uninformed'
+    end
+
+    trait :informed do
+      aasm_state 'informed'
+    end
+
+    trait :subscribed do
+      aasm_state 'subscribed'
+    end
+
+    trait :unsubscribed do
+      aasm_state 'unsubscribed'
     end
   end
 end

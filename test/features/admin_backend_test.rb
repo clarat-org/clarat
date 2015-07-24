@@ -115,6 +115,7 @@ feature 'Admin Backend' do
       fill_in 'offer_next_steps', with: 'testnextsteps'
       select 'Hotline', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
+      fill_in 'offer_age_to', with: 6
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
 
@@ -164,11 +165,10 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten, bevor dieses Angebot bestätigt'\
                              ' werden kann.'
-      page.must_have_content 'Age filters benötigt mindestens einen'\
-                             ' Altersfilter'
+      page.must_have_content 'Age from wird benötigt'
 
       # 7: age_filter given, needs an area
-      select 'Babies', from: 'offer_age_filter_ids'
+      fill_in 'offer_age_from', with: 0
       click_button 'Speichern'
       page.wont_have_content 'Age filters benötigt mindestens einen'\
                              ' Altersfilter'

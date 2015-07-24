@@ -35,7 +35,7 @@ class Offer
         ATTRIBUTES = [:category_string, :keyword_string, :organization_names,
                       :organization_display_name, :location_address,
                       :next_steps]
-        FACETS = [:_tags, :_age_filters, :_audience_filters, :_language_filters]
+        FACETS = [:_tags, :_age_filters, :_language_filters]
         add_attribute(*ATTRIBUTES)
         add_attribute(*FACETS)
         add_attribute :_geoloc

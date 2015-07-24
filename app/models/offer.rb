@@ -17,9 +17,6 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :language_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
-  has_and_belongs_to_many :audience_filters,
-                          association_foreign_key: 'filter_id',
-                          join_table: 'filters_offers'
   has_and_belongs_to_many :age_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
@@ -38,6 +35,7 @@ class Offer < ActiveRecord::Base
   extend Enumerize
   enumerize :encounter, in: %w(personal hotline email chat forum online-course)
   enumerize :unapproved_reason, in: %w(N/A not_approved expired wip paused)
+  enumerize :target_gender, in: %w(whatever boys_only girls_only)
 
   # Friendly ID
   extend FriendlyId

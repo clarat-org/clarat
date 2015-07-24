@@ -94,6 +94,14 @@ FactoryGirl.define do
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
+    trait :with_email do
+      after :create do |offer, _evaluator|
+        offer.contact_people.first.update_column(
+          :email_id, FactoryGirl.create(:email).id
+        )
+      end
+    end
+
     trait :with_location do
       encounter 'personal'
     end

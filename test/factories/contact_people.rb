@@ -18,7 +18,7 @@ FactoryGirl.define do
 
     transient do
       offers []
-      email_address { maybe FFaker::Internet.email }
+      email_address nil
     end
 
     after :create do |contact_person, evaluator|

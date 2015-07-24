@@ -21,15 +21,16 @@ class Email < ActiveRecord::Base
     state :subscribed # Email recipient has subscribed to further updates
     state :unsubscribed # Email recipient was subscribed but is no longer
 
-    event :inform, before: :regenerate_security_code do
+    event :inform do
       transitions from: :uninformed, to: :informed,
                   guard: :approved_offers?, after: :send_information
     end
 
-    event :subscribe do
+    event :subscribe, guard: :security_code_confirmed? do
       transitions from: :informed, to: :subscribed,
-                  guard: :security_code_confirmed?,
-                  after: :regenerate_security_code
+                  on_transition: :regenerate_security_code
+      transitions from: :unsubscribed, to: :subscribed,
+                  on_transition: :regenerate_security_code
     end
 
     event :unsubscribe do
@@ -39,14 +40,14 @@ class Email < ActiveRecord::Base
 
   # Methods
 
+  def security_code_confirmed?
+    given_security_code == security_code
+  end
+
   private
 
   def regenerate_security_code
     self.security_code = SecureRandom.uuid
-  end
-
-  def security_code_confirmed?
-    given_security_code == security_code
   end
 
   def approved_offers?

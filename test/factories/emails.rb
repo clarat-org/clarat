@@ -16,8 +16,7 @@ FactoryGirl.define do
       after :create do |email, _evaluator|
         offers = [FactoryGirl.create(:offer)]
         email.contact_people << FactoryGirl.create(:contact_person,
-                                                   offers: offers,
-                                                   email_address: nil)
+                                                   offers: offers)
       end
     end
 

@@ -2,8 +2,7 @@ require_relative '../test_helper'
 
 feature 'Offer display' do
   scenario 'Offer gets shown' do
-    offer = FactoryGirl.create :offer, :approved
-    offer.contact_people.first.create_email address: 'a@b.c' # test obfuscation
+    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
     visit offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name

@@ -106,9 +106,10 @@ describe Email do
           assert_raises(AASM::InvalidTransition) { subject }
         end
 
-        it 'wont be possible from unsubscribed' do
+        it 'should be possible from unsubscribed' do
           email.aasm_state = 'unsubscribed'
-          assert_raises(AASM::InvalidTransition) { subject }
+          subject.must_equal true
+          email.subscribed?.must_equal true
         end
 
         it 'should generate a new security key when transitioned' do

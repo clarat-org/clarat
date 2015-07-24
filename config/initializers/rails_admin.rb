@@ -239,10 +239,11 @@ RailsAdmin.config do |config|
     end
     field :language_filters
     field :target_gender
-    field :target_audience
-    field :age_filters do
-      inline_add false
-      help { 'Required before approval.' }
+    field :target_audience do
+      help do
+        'Richtet sich das Anegbot direkt an das Kind, oder an Erwachsene wie
+        z.B. die Eltern, einen Nachbarn oder einen Lotsen'
+      end
     end
     field :age_from
     field :age_to

@@ -21,3 +21,4 @@ de:
       incomplete: |
         kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
       needs_age: "wird benötigt"
+      age_from: "darf nicht größer sein als age_to"

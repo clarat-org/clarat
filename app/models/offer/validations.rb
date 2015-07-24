@@ -24,7 +24,6 @@ class Offer
                 numericality: { greater_than: 0, less_than_or_equal_to: 18,
                                 only_integer: true, allow_blank: true }
 
-
       # Custom validations
       validate :location_fits_organization, on: :update
       validates :approved, approved: true
@@ -32,8 +31,8 @@ class Offer
       # Needs to be true before approval possible. Called in custom validation.
       # Uses method from CustomValidatable concern.
       def before_approve
-         # TODO: Refactor age validations lead to simple HTML 5 checks which are
-         # eg not working in Safari. Also Rubocop complains...
+        # TODO: Refactor age validations lead to simple HTML 5 checks which are
+        # eg not working in Safari. Also Rubocop complains...
         validate_age_filter
         validate_associated_fields
         if organizations.where(approved: false).count > 0

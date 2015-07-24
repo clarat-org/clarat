@@ -159,7 +159,7 @@ feature 'Admin Backend' do
                              ' beinhalten, bevor dieses Angebot bestätigt'\
                              ' werden kann.'
 
-      # 6: fix all orga errors, needs age_filter
+      # 6: fix all orga errors, needs age filter
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
@@ -167,11 +167,16 @@ feature 'Admin Backend' do
                              ' werden kann.'
       page.must_have_content 'Age from wird benötigt'
 
-      # 7: age_filter given, needs an area
+      # 7: wrong age from is given
+      fill_in 'offer_age_from', with: 7
+      click_button 'Speichern'
+      page.wont_have_content 'Age from wird benötigt'
+      page.must_have_content 'Age from darf nicht größer sein als Age to'
+
+      # 8: correct age filter given, needs an area
       fill_in 'offer_age_from', with: 0
       click_button 'Speichern'
-      page.wont_have_content 'Age filters benötigt mindestens einen'\
-                             ' Altersfilter'
+      page.wont_have_content 'Age from wird benötigt'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
 

@@ -22,10 +22,12 @@ describe OfferMailer do
                            offers: [offers(:basic)] }.merge(options)
     end
     let(:options) { {} }
+    let(:email) { contact_person.email }
 
-    subject { OfferMailer.inform contact_person.email }
+    subject { OfferMailer.inform email }
 
-    it 'must deliver' do
+    it 'must deliver and update the email log' do
+      email.expects(:update_log)
       subject.must deliver_to 'foo@bar.baz'
       subject.must have_body_text 'clarat'
     end

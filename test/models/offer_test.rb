@@ -64,6 +64,25 @@ describe Offer do
     end
   end
 
+  describe 'callbacks' do
+    describe '#after_create' do
+      it 'should send emails to connected subscribed emails' do
+        offer = FactoryGirl.create :offer, :ready_for_approval,
+                                   contact_person_count: 2
+        informed_email = # won't receive mail
+          offer.contact_people.first.update_column(
+            :email_id, FactoryGirl.create(:email, :informed).id)
+        subscribeded_email = # will receive mail
+          offer.contact_people.last.update_column(
+            :email_id, FactoryGirl.create(:email, :subscribed).id)
+        OfferMailer.expect_chain(:delay, :new_offer).once
+
+        offer.approved = true
+        offer.save!
+      end
+    end
+  end
+
   describe 'methods' do
     describe '#creator' do
       it 'should return anonymous by default' do

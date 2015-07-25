@@ -12,4 +12,10 @@ class OfferObserver < ActiveRecord::Observer
     current_user = ::PaperTrail.whodunnit
     offer.created_by = current_user if current_user.is_a? Integer # so unclean
   end
+
+  def after_create offer
+    offer.emails.where(aasm_state: 'subscribed').find_each do |email|
+      OfferMailer.delay.new_offer email, offer
+    end
+  end
 end

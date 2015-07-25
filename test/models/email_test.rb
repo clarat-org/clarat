@@ -67,7 +67,7 @@ describe Email do
           assert_raises(AASM::InvalidTransition) { subject }
         end
 
-        it 'should send an info email when transitioned' do
+        it 'should send an info email and log it when transitioned' do
           OfferMailer.expect_chain(:delay, :inform)
           subject
         end

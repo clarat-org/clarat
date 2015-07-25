@@ -6,7 +6,7 @@ class Email < ActiveRecord::Base
 
   # Associations
   has_many :contact_people, inverse_of: :email
-  has_many :offers, through: :contact_people # , inverse_of: :emails
+  has_many :offers, through: :contact_people, inverse_of: :emails
 
   # Validations
   validates :address, uniqueness: true, presence: true, format: /\A.+@.+\z/,
@@ -42,6 +42,10 @@ class Email < ActiveRecord::Base
 
   def security_code_confirmed?
     given_security_code == security_code
+  end
+
+  def update_log new_text
+    update_column :log, "#{log}\n#{Time.zone.now}:\n#{new_text}"
   end
 
   private

@@ -5,6 +5,11 @@ describe OfferMailer do
   include EmailSpec::Matchers
 
   let(:offer) { offers(:basic) }
+  let(:contact_person) do
+    FactoryGirl.create :contact_person,
+                       { email: email, offers: [offer] }.merge(options)
+  end
+  let(:options) { {} }
 
   describe '#expiring_mail' do
     it 'must deliver' do
@@ -16,20 +21,19 @@ describe OfferMailer do
   end
 
   describe '#inform' do
-    let(:contact_person) do
-      FactoryGirl.create :contact_person,
-                         { email_address: 'foo@bar.baz',
-                           offers: [offers(:basic)] }.merge(options)
+    let(:email) do
+      FactoryGirl.create(:email, :with_security_code, address: 'foo@bar.baz')
     end
-    let(:options) { {} }
-    let(:email) { contact_person.email }
 
     subject { OfferMailer.inform email }
+    before { contact_person }
 
     it 'must deliver and update the email log' do
       email.expects(:update_log)
       subject.must deliver_to 'foo@bar.baz'
       subject.must have_body_text 'clarat'
+      subject.must have_body_text '/subscribe'
+      subject.must have_body_text email.security_code
     end
 
     describe 'for a genderless contact person without a name' do
@@ -44,8 +48,7 @@ describe OfferMailer do
 
     describe 'for an email with multiple contact people' do
       it 'must address them correctly' do
-        FactoryGirl.create :contact_person, email_address: nil,
-                                            email: contact_person.email
+        FactoryGirl.create :contact_person, email: email
         subject.must have_body_text 'Sehr geehrte Damen und Herren,'
       end
     end
@@ -80,6 +83,21 @@ describe OfferMailer do
       it 'must address them correctly' do
         subject.must have_body_text 'Liebe Fuz,'
       end
+    end
+  end
+
+  describe '#newly_approved_offer' do
+    let(:email) { FactoryGirl.create :email, :with_security_code, :subscribed }
+    before { contact_person }
+
+    subject { OfferMailer.newly_approved_offer email, offer }
+
+    it 'must deliver and update the email log' do
+      email.expects(:update_log)
+      subject.must deliver_to email.address
+      subject.must have_body_text 'abmelden'
+      subject.must have_body_text '/unsubscribe'
+      subject.must have_body_text email.security_code
     end
   end
 end

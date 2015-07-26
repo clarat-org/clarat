@@ -17,6 +17,8 @@ class OfferMailer < ActionMailer::Base
     @contact_person = @contact_people.first
     @multiple_contact_people = @contact_people.count > 1
     @offers = offers || email.offers.approved
+    @subscribe_href =
+      subscribe_url(id: email.id, security_code: email.security_code)
 
     text = mail to: email.address,
                 from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
@@ -25,7 +27,7 @@ class OfferMailer < ActionMailer::Base
   end
 
   # Inform email addresses about new offers after they have subscribed.
-  def new_offer email, offer
+  def newly_approved_offer email, offer
     @contact_people = email.contact_people
     @contact_person = @contact_people.first
     @multiple_contact_people = @contact_people.count > 1

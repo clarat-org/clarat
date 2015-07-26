@@ -65,20 +65,18 @@ describe Offer do
   end
 
   describe 'callbacks' do
-    describe '#after_create' do
+    describe '#after_approve' do
       it 'should send emails to connected subscribed emails' do
-        offer = FactoryGirl.create :offer, :ready_for_approval,
-                                   contact_person_count: 2
-        informed_email = # won't receive mail
-          offer.contact_people.first.update_column(
-            :email_id, FactoryGirl.create(:email, :informed).id)
-        subscribeded_email = # will receive mail
-          offer.contact_people.last.update_column(
-            :email_id, FactoryGirl.create(:email, :subscribed).id)
-        OfferMailer.expect_chain(:delay, :new_offer).once
+        offer = FactoryGirl.create :offer, contact_person_count: 2
+        # won't receive mail:
+        offer.contact_people.first.update_column(
+          :email_id, FactoryGirl.create(:email, :informed).id)
+        # will receive mail:
+        offer.contact_people.last.update_column(
+          :email_id, FactoryGirl.create(:email, :subscribed).id)
+        OfferMailer.expect_chain(:delay, :newly_approved_offer).once
 
-        offer.approved = true
-        offer.save!
+        offer.after_approve
       end
     end
   end

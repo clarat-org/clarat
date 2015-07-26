@@ -73,6 +73,14 @@ class Offer < ActiveRecord::Base
     end
   end
 
+  # Custom callback
+  def after_approve
+    super
+    emails.where(aasm_state: 'subscribed').find_each do |email|
+      OfferMailer.delay.newly_approved_offer email, self
+    end
+  end
+
   # handled in observer before save
   def generate_html
     self.description_html = MarkdownRenderer.render description

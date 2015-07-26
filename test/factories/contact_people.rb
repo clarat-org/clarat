@@ -15,22 +15,15 @@ FactoryGirl.define do
     fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
 
     organization
+    email nil
 
     transient do
       offers []
-      email_address nil
     end
 
     after :create do |contact_person, evaluator|
       if evaluator.offers.any?
         contact_person.offers = evaluator.offers
-      end
-
-      if evaluator.email_address
-        contact_person.update_column(
-          :email_id,
-          FactoryGirl.create(:email, address: evaluator.email_address).id
-        )
       end
     end
 
@@ -42,7 +35,6 @@ FactoryGirl.define do
       local_number_1 nil
       area_code_2 nil
       local_number_2 nil
-      email_address nil
       fax_number nil
       fax_area_code nil
     end

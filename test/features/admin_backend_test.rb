@@ -115,6 +115,7 @@ feature 'Admin Backend' do
       fill_in 'offer_next_steps', with: 'testnextsteps'
       select 'Hotline', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
+      fill_in 'offer_age_to', with: 6
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
 
@@ -158,20 +159,24 @@ feature 'Admin Backend' do
                              ' beinhalten, bevor dieses Angebot bestätigt'\
                              ' werden kann.'
 
-      # 6: fix all orga errors, needs age_filter
+      # 6: fix all orga errors, needs age filter
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten, bevor dieses Angebot bestätigt'\
                              ' werden kann.'
-      page.must_have_content 'Age filters benötigt mindestens einen'\
-                             ' Altersfilter'
+      page.must_have_content 'Age from wird benötigt'
 
-      # 7: age_filter given, needs an area
-      select 'Babies', from: 'offer_age_filter_ids'
+      # 7: wrong age from is given
+      fill_in 'offer_age_from', with: 7
       click_button 'Speichern'
-      page.wont_have_content 'Age filters benötigt mindestens einen'\
-                             ' Altersfilter'
+      page.wont_have_content 'Age from wird benötigt'
+      page.must_have_content 'Age from darf nicht größer sein als Age to'
+
+      # 8: correct age filter given, needs an area
+      fill_in 'offer_age_from', with: 0
+      click_button 'Speichern'
+      page.wont_have_content 'Age from wird benötigt'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
 
@@ -183,11 +188,17 @@ feature 'Admin Backend' do
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 
-      # 10: language filter given, offer is approved
+      # 10: language filter given, needs target audience
       select 'Deutsch', from: 'offer_language_filter_ids'
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
+      page.must_have_content 'Target audience wird benötigt'
+
+      # 10: target audience is given, offer is approved
+      select 'Child', from: 'offer_target_audience'
+      click_button 'Speichern'
+      page.wont_have_content 'Target audience wird benötigt'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

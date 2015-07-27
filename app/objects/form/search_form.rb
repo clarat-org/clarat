@@ -32,9 +32,6 @@ class SearchForm
   ### Age
   attribute :age_filter, String
   enumerize :age_filter, in: AgeFilter::IDENTIFIER
-  ### Audience
-  attribute :audience_filter, String
-  enumerize :audience_filter, in: AudienceFilter::IDENTIFIER
   ### Language
   attribute :language_filter, String
   enumerize :language_filter, in: LanguageFilter::IDENTIFIER

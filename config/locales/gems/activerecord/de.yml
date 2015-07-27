@@ -58,9 +58,6 @@ de:
       age_filter:
         one: Altersfilter
         other: Altersfilter
-      audience_filter:
-        one: Zielgruppenfilter
-        other: Zielgruppenfilter
       area:
         one: Gebiet
         other: Gebiete

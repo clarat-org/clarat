@@ -55,6 +55,7 @@ class Offer
       def validate_associated_fields
         validate_associated_presence :organizations
         validate_associated_presence :language_filters
+        validate_associated_presence :target_audience
       end
 
       def validate_associated_presence field

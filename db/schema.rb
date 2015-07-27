@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150717092352) do
+=======
+ActiveRecord::Schema.define(version: 20150723075554) do
+>>>>>>> feature/379-auto-mailings
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150717092352) do
     t.datetime "updated_at"
     t.string   "icon",       limit: 12
     t.integer  "parent_id"
+    t.integer  "sort_order"
   end
 
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
@@ -54,8 +59,6 @@ ActiveRecord::Schema.define(version: 20150717092352) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "contact_people", force: true do |t|
-    t.string   "name"
-    t.string   "email"
     t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -72,8 +75,10 @@ ActiveRecord::Schema.define(version: 20150717092352) do
     t.string   "gender"
     t.string   "role"
     t.string   "responsibility"
+    t.integer  "email_id"
   end
 
+  add_index "contact_people", ["email_id"], name: "index_contact_people_on_email_id", using: :btree
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
 
   create_table "contact_person_offers", force: true do |t|
@@ -96,6 +101,15 @@ ActiveRecord::Schema.define(version: 20150717092352) do
   create_table "definitions", force: true do |t|
     t.string   "key",         null: false
     t.text     "explanation", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "emails", force: true do |t|
+    t.string   "address",       limit: 64,                        null: false
+    t.string   "aasm_state",    limit: 32, default: "uninformed", null: false
+    t.string   "security_code", limit: 36
+    t.text     "log",                      default: "",           null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -2,8 +2,7 @@ require_relative '../test_helper'
 
 feature 'Offer display' do
   scenario 'Offer gets shown' do
-    offer = FactoryGirl.create :offer, :approved
-    offer.contact_people.first.update_column :email, 'a@b.c' # test obfuscation
+    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
     visit offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name
@@ -34,7 +33,8 @@ feature 'Offer display' do
   scenario 'Muliple contact persons are shown in the right order' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :just_telephone, organization: offer.organizations.first
+      :contact_person, :no_fields, :with_telephone,
+      organization: offer.organizations.first
     )
     visit offer_path offer
     page.body.must_match(

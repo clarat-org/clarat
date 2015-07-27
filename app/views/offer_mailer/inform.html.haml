@@ -1,5 +1,5 @@
 %p
-  - if !@contact_person.last_name? && !@contact_person.first_name?
+  - if @multiple_contact_people || (!@contact_person.last_name? && !@contact_person.first_name?)
     Sehr geehrte Damen und Herren,
   - elsif @contact_person.last_name?
     - if @contact_person.gender == 'male'
@@ -53,8 +53,15 @@
 
 %p
   Wir hoffen, dass Ihre Angebote mit clarat noch leichter gefunden werden als bisher. Von Menschen in Not. Aber auch von Menschen, die Kindern, Jugendlichen und Familien zeigen möchten, wo es Hilfe gibt.
+
 %p
   Wir wünschen uns, dass clarat auch Sie in Ihrer täglichen Arbeit unterstützt. Zum Beispiel, wenn Sie auf der Suche nach geeigneten Unterstützungsangeboten für hilfesuchende Menschen sind, denen Sie nicht direkt weiterhelfen können.
+
+%p
+  Wenn Sie noch mehr über clarat erfahren wollen, schauen Sie sich doch unseren kurzen
+= link_to 'Einführungsfilm', 'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/'
+an oder besuchen Sie unseren
+= link_to('Blog', 'http://blog.clarat.org') + '.'
 
 %p
   Wir freuen uns auf Ihr Feedback!
@@ -77,7 +84,8 @@
   Tel.: +49 (0)30 55 57 96 00
 
 %p
-  P.S. Wenn Sie mehr über clarat erfahren wollen, schauen Sie sich doch unseren kurzen
-  = link_to 'Einführungsfilm', 'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/'
-  an oder besuchen Sie unseren
-  = link_to('Blog', 'http://blog.clarat.org') + '.'
+  P.S. Dies ist eine einmalige Informationsemail für Sie. Falls Sie weiterhin informiert werden möchten, wenn Angebote auf clarat mit Ihnen als Kontaktperson aufgenommen werden, dann klicken Sie bitte
+  = link_to('hier', @subscribe_href) + '.'
+  Wir werden Ihnen keine Werbung senden.
+  %br
+  Wenn Sie keine weiteren Emails von uns wünschen, brauchen Sie nichts weiter tun. Wir werden Sie dann nicht noch einmal anschreiben.

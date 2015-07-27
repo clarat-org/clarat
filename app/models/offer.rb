@@ -27,6 +27,7 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
   has_many :contact_people, through: :contact_person_offers, inverse_of: :offers
+  has_many :emails, through: :contact_people, inverse_of: :offers
   has_many :organization_offers
   has_many :organizations, through: :organization_offers
   # Attention: former has_one :organization, through: :locations
@@ -79,7 +80,7 @@ class Offer < ActiveRecord::Base
     # Normal Workflow
     state :initialized
     state :ready_for_approval
-    state :approved
+    state :approved, after_enter: :after_approve
 
     # Temporary Workflow
     state :in_renewal
@@ -112,6 +113,14 @@ class Offer < ActiveRecord::Base
 
     event :pause do
       transitions to: :paused
+    end
+  end
+
+  # Custom callback
+  def after_approve
+    super
+    emails.where(aasm_state: 'subscribed').find_each do |email|
+      OfferMailer.delay.newly_approved_offer email, self
     end
   end
 

@@ -2,4 +2,5 @@ de:
   contact_person:
     validations:
       incomplete: |
-        Entweder "Name", "Local Number 1", oder "E-Mail" muss ausgefüllt werden.
+        Entweder "First name", "Last name", "Operational Name",
+        oder "Local Number 1" muss ausgefüllt werden.

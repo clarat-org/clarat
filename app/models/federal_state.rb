@@ -1,6 +1,6 @@
 # Normalization of (German) federal states.
 class FederalState < ActiveRecord::Base
-  # Associtations
+  # Associations
   has_many :locations, inverse_of: :federal_state
 
   # Validations

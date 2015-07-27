@@ -291,12 +291,12 @@ RailsAdmin.config do |config|
     object_label_method :display_name
     list do
       field :id
-      field :name
+      field :first_name
+      field :last_name
       field :organization
       field :offers
-      field :email
+      field :email_address
     end
-    field :name
     field :gender
     field :academic_title
     field :first_name
@@ -369,6 +369,7 @@ RailsAdmin.config do |config|
   config.model 'Category' do
     field :name
     field :parent
+    field :sort_order
 
     object_label_method :name_with_optional_asterisk
 
@@ -390,6 +391,15 @@ RailsAdmin.config do |config|
     field :explanation
 
     object_label_method :key
+  end
+
+  config.model 'Email' do
+    field :address
+    field :aasm_state do
+      read_only true
+    end
+
+    object_label_method :address
   end
 
   config.model 'Filter' do

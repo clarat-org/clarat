@@ -20,5 +20,5 @@ de:
       approved_by_creator: "kann nicht von dem/der Ersteller/in gesetzt werden"
       incomplete: |
         kann nicht angehakt werden, wenn nicht auch "Completed" gesetzt ist
-      needs_age: "wird benötigt"
+      is_needed: "wird benötigt"
       age_from_be_smaller: "darf nicht größer sein als Age to"

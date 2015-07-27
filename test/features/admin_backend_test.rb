@@ -188,11 +188,17 @@ feature 'Admin Backend' do
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 
-      # 10: language filter given, offer is approved
+      # 10: language filter given, needs target audience
       select 'Deutsch', from: 'offer_language_filter_ids'
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
+      page.must_have_content 'Target audience wird benötigt'
+
+      # 10: target audience is given, offer is approved
+      select 'Child', from: 'offer_target_audience'
+      click_button 'Speichern'
+      page.wont_have_content 'Target audience wird benötigt'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

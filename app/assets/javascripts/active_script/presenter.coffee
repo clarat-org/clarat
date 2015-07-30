@@ -10,6 +10,10 @@ class ActiveScript.Presenter extends ActiveScript.Singleton
   render: (wrapperSelector, template, locals, options = {method: 'html'}) ->
     $(wrapperSelector)[options.method] HandlebarsTemplates[template] locals
 
+  stopEvent: (event) ->
+    event.preventDefault()
+    return false
+
   ### PRIVATE METHODS (ue) ###
 
   # Callbacks are defined as

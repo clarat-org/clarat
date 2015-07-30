@@ -119,10 +119,3 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   failure: (error) =>
     console.log error
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')
-
-
-  ### OTHER PRIVATE METHODS (ue) ###
-
-  stopEvent: (event) ->
-    event.preventDefault()
-    false

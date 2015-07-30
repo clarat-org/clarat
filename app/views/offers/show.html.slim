@@ -67,7 +67,7 @@
         i.fa.fa-exclamation-triangle
         = t 'shareds.show.cta_report_errors'
       = modal_for 'js-report-overlay' do
-        = render '/contacts/shared/new', contact: @contact, reporting: true
+        = render '/contacts/shared/new', contact: @contact
 
   / mobile share buttons
   .shariff data={ lang: I18n.locale, \

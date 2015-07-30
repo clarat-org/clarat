@@ -26,6 +26,7 @@ about supported directives.
 # = require_tree ./templates
 # = require_tree ./search/templates
 # = require_tree ./location/templates
+# = require_tree ./single_click_button/templates
 #
 # = require setup
 #
@@ -71,7 +72,9 @@ about supported directives.
 # = require location/presenter
 # = require location/concepts/request_geolocation_for_string
 # = require location/concepts/turn_input_into_my_location_display
-
+#
+# = require single_click_button/presenter
+#
 # = require modules/analytics
 # = require modules/ajax
 # = require modules/query_autocomplete

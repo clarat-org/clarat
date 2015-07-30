@@ -1,0 +1,16 @@
+// Other small (!) JS-specific definitions
+.JS-Single-Click-Button {
+  position: relative;
+
+  .JS-Single-Click-Button__original {
+    visibility: hidden;
+  }
+  .JS-Single-Click-Button__icon {
+    position: absolute;
+    top: .4em;
+    transform: translate(-6px, 0);
+  }
+  &.JS-Single-Click-Button__active {
+    cursor: default;
+  }
+}

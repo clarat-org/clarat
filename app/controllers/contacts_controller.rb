@@ -15,10 +15,7 @@ class ContactsController < ApplicationController
     authorize @contact
     if @contact.save
       respond_to do |format|
-        format.html do
-          redirect_to root_path,
-                      flash: { success: t('.success') }
-        end
+        format.html { redirect_to root_path, flash: { success: t('.success') } }
         format.js { render :create, layout: 'modal_create' }
       end
     else

@@ -26,7 +26,7 @@ class Offer < ActiveRecord::Base
   has_many :contact_people, through: :contact_person_offers, inverse_of: :offers
   has_many :emails, through: :contact_people, inverse_of: :offers
   has_many :organization_offers
-  has_many :organizations, through: :organization_offers
+  has_many :organizations, through: :organization_offers, inverse_of: :offers
   # Attention: former has_one :organization, through: :locations
   # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable

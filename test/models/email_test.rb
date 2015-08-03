@@ -49,7 +49,15 @@ describe Email do
         it 'should be possible from uninformed' do
           OfferMailer.stub_chain(:inform, :deliver)
           subject.must_equal true
-          email.informed?.must_equal true
+          email.must_be :informed?
+        end
+
+        it 'transition to blocked when an organization is inform_email_blocked'\
+           ' and should not send email' do
+          email.organizations.first.update_column :inform_email_blocked, true
+          OfferMailer.not_expect_chain(:inform, :deliver)
+          subject
+          email.must_be :blocked?
         end
 
         it 'wont be possible from informed' do
@@ -67,7 +75,7 @@ describe Email do
           assert_raises(AASM::InvalidTransition) { subject }
         end
 
-        it 'should send an info email and log it when transitioned' do
+        it 'should send an info email when transitioned' do
           OfferMailer.expect_chain(:inform, :deliver)
           subject
         end

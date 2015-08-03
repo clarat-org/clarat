@@ -1,4 +1,6 @@
 de:
   broadcast_mailer:
-    welcome:
+    inform:
       subject: "clarat Berlin - Sie sind in den gelben Seiten für die Kinder- und Jugendhilfe"
+    newly_approved_offer:
+      subject: "Neues Angebot auf clarat"

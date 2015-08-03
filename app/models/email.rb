@@ -21,16 +21,16 @@ class Email < ActiveRecord::Base
     state :subscribed # Email recipient has subscribed to further updates
     state :unsubscribed # Email recipient was subscribed but is no longer
 
-    event :inform do
+    event :inform, after: :send_information do
       transitions from: :uninformed, to: :informed,
-                  guard: :approved_offers?, after: :send_information
+                  guard: :approved_offers?, after: :regenerate_security_code
     end
 
     event :subscribe, guard: :security_code_confirmed? do
       transitions from: :informed, to: :subscribed,
-                  on_transition: :regenerate_security_code
+                  after: :regenerate_security_code
       transitions from: :unsubscribed, to: :subscribed,
-                  on_transition: :regenerate_security_code
+                  after: :regenerate_security_code
     end
 
     event :unsubscribe do
@@ -59,6 +59,6 @@ class Email < ActiveRecord::Base
   end
 
   def send_information
-    OfferMailer.delay.inform self
+    OfferMailer.inform(self).deliver
   end
 end

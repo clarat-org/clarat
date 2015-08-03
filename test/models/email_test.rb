@@ -47,7 +47,7 @@ describe Email do
         let(:email) { FactoryGirl.create :email, :with_approved_offer }
 
         it 'should be possible from uninformed' do
-          OfferMailer.stub_chain(:delay, :inform)
+          OfferMailer.stub_chain(:inform, :deliver)
           subject.must_equal true
           email.informed?.must_equal true
         end
@@ -68,7 +68,7 @@ describe Email do
         end
 
         it 'should send an info email and log it when transitioned' do
-          OfferMailer.expect_chain(:delay, :inform)
+          OfferMailer.expect_chain(:inform, :deliver)
           subject
         end
       end
@@ -77,7 +77,7 @@ describe Email do
         let(:email) { FactoryGirl.create :email, :with_unapproved_offer }
 
         it 'should be impossible from uninformed and wont send an info mail' do
-          OfferMailer.not_expect_chain(:delay, :inform)
+          OfferMailer.not_expect_chain(:inform, :deliver)
           assert_raises(AASM::InvalidTransition) { subject }
         end
       end

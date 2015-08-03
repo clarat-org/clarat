@@ -6,14 +6,16 @@ class InformEmailsWorker
 
   def perform
     Offer.transaction do
-      informable_emails.find_each(&:inform!)
+      Email.transaction do
+        informable_emails.find_each(&:inform!)
+      end
     end
   end
 
   private
 
   def informable_emails
-    Email.where(aasm_state: 'uninformed')
+    Email.where(aasm_state: 'uninformed').uniq
       .joins(:offers).where('offers.approved = ?', true)
   end
 end

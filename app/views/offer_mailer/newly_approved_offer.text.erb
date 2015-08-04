@@ -1,0 +1,30 @@
+<%- if @multiple_contact_people || (!@contact_person.last_name? && !@contact_person.first_name?) %>
+Sehr geehrte Damen und Herren,
+<%- elsif @contact_person.last_name? %>
+<%- if @contact_person.gender == 'male' %>
+Lieber Herr<%- else %>
+Liebe Frau<%- end %> <%= @contact_person.last_name %>,
+<%- elsif @contact_person.first_name? %>
+<%- if @contact_person.gender == 'male' %>
+Lieber<%- else %>
+Liebe<%- end %> <%= @contact_person.first_name %>,
+<%- end %>
+
+es gibt ein neues Angebot auf clarat, in dem Sie als Kontakt eingetragen sind.
+
+Ihr Angebot heißt bei clarat:
+"<%= @offer.name %>", zu finden unter folgendem Link:
+<%= offer_url(@offer) %>
+
+Mit freundlichen Grüßen
+
+Das clarat Team
+
+clarat
+ein Projekt der Benckiser Stiftung Zukunft
+Französische Straße 47
+10117 Berlin
+Tel.: +49 (0)30 55 57 96 00
+
+abmelden:
+<%= @unsubscribe_href %>

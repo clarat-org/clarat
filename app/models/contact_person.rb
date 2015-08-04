@@ -3,6 +3,7 @@
 class ContactPerson < ActiveRecord::Base
   # Associations
   belongs_to :organization, inverse_of: :contact_people
+  belongs_to :email, inverse_of: :contact_people
 
   has_many :contact_person_offers, inverse_of: :contact_person
   has_many :offers, through: :contact_person_offers, inverse_of: :contact_people
@@ -24,7 +25,7 @@ class ContactPerson < ActiveRecord::Base
 
   def at_least_one_field_present
     one_field_blank = %w(first_name last_name operational_name local_number_1
-                         email fax_number).all? do |field|
+                         fax_number).all? do |field|
       self[field].blank?
     end
 
@@ -35,6 +36,7 @@ class ContactPerson < ActiveRecord::Base
 
   # Methods
   delegate :name, to: :organization, prefix: true, allow_nil: true
+  delegate :address, :address?, to: :email, prefix: true, allow_nil: true
 
   # For rails_admin display
   def display_name

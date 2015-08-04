@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150724152358) do
+ActiveRecord::Schema.define(version: 20150803135007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 20150724152358) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "contact_people", force: true do |t|
-    t.string   "email"
     t.integer  "organization_id",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -72,8 +71,10 @@ ActiveRecord::Schema.define(version: 20150724152358) do
     t.string   "gender"
     t.string   "role"
     t.string   "responsibility"
+    t.integer  "email_id"
   end
 
+  add_index "contact_people", ["email_id"], name: "index_contact_people_on_email_id", using: :btree
   add_index "contact_people", ["organization_id"], name: "index_contact_people_on_organization_id", using: :btree
 
   create_table "contact_person_offers", force: true do |t|
@@ -96,6 +97,15 @@ ActiveRecord::Schema.define(version: 20150724152358) do
   create_table "definitions", force: true do |t|
     t.string   "key",         null: false
     t.text     "explanation", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "emails", force: true do |t|
+    t.string   "address",       limit: 64,                        null: false
+    t.string   "aasm_state",    limit: 32, default: "uninformed", null: false
+    t.string   "security_code", limit: 36
+    t.text     "log",                      default: "",           null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -260,6 +270,7 @@ ActiveRecord::Schema.define(version: 20150724152358) do
     t.boolean  "renewed",                          default: false
     t.boolean  "accredited_institution",           default: false
     t.text     "description_html"
+    t.boolean  "inform_email_blocked",             default: false
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

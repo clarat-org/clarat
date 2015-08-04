@@ -19,7 +19,7 @@ describe ContactPerson do
     it { subject.must_respond_to :local_number_2 }
     it { subject.must_respond_to :fax_area_code }
     it { subject.must_respond_to :fax_number }
-    it { subject.must_respond_to :email }
+    it { subject.must_respond_to :email_id }
   end
 
   describe 'validations' do
@@ -34,24 +34,66 @@ describe ContactPerson do
 
       describe 'custom' do
         describe '#at_least_one_field_present' do
+          let(:contact_person) do
+            FactoryGirl.build :contact_person, :all_fields
+          end
           before { contact_person.organization_id = 1 }
 
-          it 'should be invalid if no telephone/email/name are given' do
+          it 'should be invalid if no first_name/last_name/operational_name/'\
+             'local_number_1/fax_number is given' do
+            contact_person.first_name = nil
+            contact_person.last_name = nil
+            contact_person.operational_name = nil
+            contact_person.local_number_1 = nil
+            contact_person.fax_number = nil
             contact_person.valid?.must_equal false
             contact_person.errors[:base].must_include(
               I18n.t('contact_person.validations.incomplete')
             )
           end
-          it 'should be valid if name is given' do
+
+          it 'should be valid if first_name is given' do
             contact_person.first_name = 'John'
+            contact_person.last_name = nil
+            contact_person.operational_name = nil
+            contact_person.local_number_1 = nil
+            contact_person.fax_number = nil
             contact_person.valid?.must_equal true
           end
-          it 'should be valid if telephone is given' do
+
+          it 'should be valid if last_name is given' do
+            contact_person.first_name = nil
+            contact_person.last_name = 'Doe'
+            contact_person.operational_name = nil
+            contact_person.local_number_1 = nil
+            contact_person.fax_number = nil
+            contact_person.valid?.must_equal true
+          end
+
+          it 'should be valid if operational_name is given' do
+            contact_person.first_name = nil
+            contact_person.last_name = nil
+            contact_person.operational_name = 'CEO'
+            contact_person.local_number_1 = nil
+            contact_person.fax_number = nil
+            contact_person.valid?.must_equal true
+          end
+
+          it 'should be valid if local_number_1 is given' do
+            contact_person.first_name = nil
+            contact_person.last_name = nil
+            contact_person.operational_name = nil
             contact_person.local_number_1 = '123'
+            contact_person.fax_number = nil
             contact_person.valid?.must_equal true
           end
-          it 'should be valid if email is given' do
-            contact_person.email = 'a@b.c'
+
+          it 'should be valid if fax_number is given' do
+            contact_person.first_name = nil
+            contact_person.last_name = nil
+            contact_person.operational_name = nil
+            contact_person.local_number_1 = nil
+            contact_person.fax_number = '123'
             contact_person.valid?.must_equal true
           end
         end
@@ -62,6 +104,7 @@ describe ContactPerson do
   describe '::Base' do
     describe 'associations' do
       it { subject.must belong_to :organization }
+      it { subject.must belong_to :email }
       it { subject.must have_many :contact_person_offers }
       it { subject.must have_many(:offers).through :contact_person_offers }
     end

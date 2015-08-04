@@ -3,4 +3,4 @@ de:
     validations:
       incomplete: |
         Entweder "First name", "Last name", "Operational Name",
-        "Local Number 1", oder "E-Mail" muss ausgefüllt werden.
+        oder "Local Number 1" muss ausgefüllt werden.

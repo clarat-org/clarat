@@ -1,0 +1,11 @@
+de:
+  emails:
+    subscribe:
+      success_html: |
+        Du hast dich erfolgreich für Benachrichtigungen zu Angeboten mit deiner
+        Email-Adresse angemeldet.
+        (<a href="%{unsubscribe_href}">wieder abmelden</a>)
+    unsubscribe:
+      success_html: |
+        Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
+        (<a href="%{subscribe_href}">wieder anmelden</a>)

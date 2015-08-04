@@ -24,8 +24,9 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
   has_many :contact_people, through: :contact_person_offers, inverse_of: :offers
+  has_many :emails, through: :contact_people, inverse_of: :offers
   has_many :organization_offers
-  has_many :organizations, through: :organization_offers
+  has_many :organizations, through: :organization_offers, inverse_of: :offers
   # Attention: former has_one :organization, through: :locations
   # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable
@@ -69,6 +70,14 @@ class Offer < ActiveRecord::Base
       offer.approved = false
       offer.categories = self.categories
       offer.contact_people = []
+    end
+  end
+
+  # Custom callback
+  def after_approve
+    super
+    emails.where(aasm_state: 'subscribed').find_each do |email|
+      OfferMailer.delay.newly_approved_offer email, self
     end
   end
 

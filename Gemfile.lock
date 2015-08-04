@@ -10,6 +10,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
+    aasm (4.2.0)
     actionmailer (4.1.12)
       actionpack (= 4.1.12)
       actionview (= 4.1.12)
@@ -567,6 +568,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   algoliasearch-rails
   arcane
   autoprefixer-rails

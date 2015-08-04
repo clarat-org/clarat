@@ -30,7 +30,7 @@ RailsAdmin.config do |config|
     Organization Website Location FederalState Offer Opening Category Filter
     LanguageFilter AgeFilter User Contact Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation ContactPerson
+    OrganizationConnection SearchLocation ContactPerson Email
   )
 
   config.actions do
@@ -104,6 +104,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+    field :inform_email_blocked
     field :completed
     field :renewed
     field :approved
@@ -297,7 +298,7 @@ RailsAdmin.config do |config|
       field :last_name
       field :organization
       field :offers
-      field :email
+      field :email_address
     end
     field :gender
     field :academic_title
@@ -393,6 +394,15 @@ RailsAdmin.config do |config|
     field :explanation
 
     object_label_method :key
+  end
+
+  config.model 'Email' do
+    field :address
+    field :aasm_state do
+      read_only true
+    end
+
+    object_label_method :address
   end
 
   config.model 'Filter' do

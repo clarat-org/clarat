@@ -10,6 +10,7 @@ Clarat::Application.routes.draw do
     get 'impressum' => 'pages#impressum', as: 'impressum'
     get 'rechtliche-hinweise' => 'pages#agb', as: 'agb'
     get 'datenschutzhinweise' => 'pages#privacy', as: 'privacy'
+    get '/404' => 'pages#not_found'
 
     # RESTful resources
     resources :offers, only: [:index, :show]
@@ -22,7 +23,11 @@ Clarat::Application.routes.draw do
     resources :definitions, only: [:show]
     get 'categories/:offer_name', controller: :categories, action: :index
 
-    get '/404' => 'pages#not_found'
+    # non-REST routes
+    get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',
+        as: 'subscribe'
+    get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
+        as: 'unsubscribe'
   end
 
   # Sidekiq interface

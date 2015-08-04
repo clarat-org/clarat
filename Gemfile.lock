@@ -241,6 +241,10 @@ GEM
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.11)
+    lograge (0.3.4)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     memcachier (0.0.2)
@@ -611,6 +615,7 @@ DEPENDENCIES
   kgio
   launchy
   letter_opener
+  lograge
   memcachier
   memory_test_fix
   meta_request

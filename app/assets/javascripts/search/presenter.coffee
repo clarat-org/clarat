@@ -24,8 +24,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   sendMainSearch: =>
     @model.getMainSearchResults().then(@onMainResults).catch(@failure)
 
-  sendSupportSearch: =>
-    @model.getSupportSearchResults().then(@onSupportResults).catch(@failure)
+  sendLocationSupportSearch: =>
+    @model.getLocationSupportResults().then(@onLocationSupportResults).catch(
+      @failure
+    )
+
+  sendQuerySupportSearch: =>
+    @model.getQuerySupportResults().then(@onQuerySupportResults).catch(
+      @failure
+    )
 
 
   ### "SHOW ACTIONS" ###
@@ -44,7 +51,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       Clarat.Search.Concept.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?
-  onSupportResults: (resultSet) =>
+  onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
     personalFacetResults = resultSet.results[1]
     remoteFacetResults = resultSet.results[2]
@@ -55,6 +62,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     Clarat.Search.Concept.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
+
+  onQuerySupportResults: (resultSet) =>
+    personalFacetResults = resultSet.results[0]
+    remoteFacetResults = resultSet.results[1]
+    Clarat.Search.Concept.UpdateCategories.updateCounts(
+      personalFacetResults, remoteFacetResults
+    )
+
 
   ### CALLBACKS ###
 
@@ -76,22 +91,25 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
+    @sendQuerySupportSearch()
 
   # We don't want to update all the time when user is typing. Persistence only
   # happens when they are done (and this fires). No need to send new search.
   handleQueryChange: (event) =>
     @model.updateAttributes query: event.target.value
+    @sendQuerySupportSearch()
 
   handleNewGeolocation: (event, location) =>
     @model.updateAttributes
       search_location: location.query
       generated_geolocation: location.geoloc
     @sendMainSearch()
-    @sendSupportSearch() # only needs to be called on new location
+    @sendLocationSupportSearch() # only needs to be called on new location
 
   handleRemoveQueryClick: (event) =>
     @model.updateAttributes query: ''
     @sendMainSearch()
+    @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')

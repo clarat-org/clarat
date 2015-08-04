@@ -41,7 +41,6 @@ about supported directives.
 #
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min
-# = require algolia/typeahead.jquery
 #
 # = require handlebars/helpers
 #
@@ -76,7 +75,6 @@ about supported directives.
 #
 # = require modules/analytics
 # = require modules/ajax
-# = require modules/query_autocomplete
 # = require modules/query_field_placeholder
 # = require modules/gmaps
 # = require modules/mobilemenu

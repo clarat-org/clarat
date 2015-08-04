@@ -135,16 +135,9 @@
       padding-left: 40px;
     }
 
-    .twitter-typeahead,
     #search_form_query,
     #search_form_search_location {
       width: 100%;
-    }
-
-    .twitter-typeahead {
-      .template--pages-home & {
-        width: 100%;
-      }
     }
 
     #search_form_query {
@@ -359,21 +352,6 @@
   // Twitter Typeahead ###########################
 
   .template--pages-home {
-
-    #new_search_form {
-
-      .twitter-typeahead {
-        span.tt-dropdown-menu {
-          // specificity, overriding JS
-          position: relative !important;
-          right: 0 !important;
-          margin-top: 0; // overriding JS
-          margin-bottom: 10px;
-          background: $brand_beige;
-        }
-      }
-    }
-
     #new_search_form {
       .input.string {
         min-height: 40px;

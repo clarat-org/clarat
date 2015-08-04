@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Offer.clear_index!
 
 user = User.create email: 'user@user.com', password: 'password',
                                            role: 'researcher'

@@ -42,6 +42,12 @@ Clarat::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
+  ## Logging
+  #Lograge
+  config.lograge.enabled = true
+  config.lograge.custom_options = -> (event) do
+    { time: event.time }
+  end
   # Set to :debug to see everything in the log.
   config.log_level = :debug
 

@@ -148,6 +148,9 @@ gem 'geocoder'
 # email
 gem 'gibbon'
 
+# Logging
+gem 'lograge' # opinionated slimmer logs for production
+
 ########################
 # For Heroku & Add-Ons #
 ########################

@@ -50,9 +50,4 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
-
-  # Hack to find out if the request was sent via turbolinks
-  def turbolinks_request?
-    request.headers['X-XHR-Referer'].present? && !request.xhr?
-  end
 end

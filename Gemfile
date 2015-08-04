@@ -47,9 +47,6 @@ group :assets do # TODO: deprecated!
   gem 'haml' # TODO: deprecated!
 end # TODO: deprecated!
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
   gem 'rails-assets-jquery'

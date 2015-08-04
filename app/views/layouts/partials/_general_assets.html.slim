@@ -6,19 +6,15 @@ javascript:
 
 - cache 'general_scripts' do
   = javascript_include_tag 'vendor/modernizr.custom.js'
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application'
   noscript
     css:
       .jsonly { display: none; }
 
-- if turbolinks_request?
-  javascript:
-    Clarat.GMaps.initialize()
-- else
-  = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
-                           'places&language=de&sensor=false&v=3.exp'\
-                           '&callback=Clarat.GMaps.initialize',
-                           cache: 'google_maps_apiv3'
+= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
+                         'places&language=de&sensor=false&v=3.exp'\
+                         '&callback=Clarat.GMaps.initialize',
+                         cache: 'google_maps_apiv3'
 
 
 - cache 'browser_dependent_code' do

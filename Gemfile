@@ -146,7 +146,7 @@ gem 'friendly_id', '>= 5.0'
 gem 'geocoder'
 
 # email
-gem 'gibbon'
+gem 'gibbon', '~> 1.2.0' # uses MailChimp API 2.0, remove version for 3.0+
 
 # Logging
 gem 'lograge' # opinionated slimmer logs for production

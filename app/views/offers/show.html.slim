@@ -1,4 +1,5 @@
 - provide :title, @offer.name
+- provide :meta_description, @offer.description.first(154) + '…'
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
     - cache [@offer, 'page_header'] do

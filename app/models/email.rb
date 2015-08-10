@@ -10,7 +10,8 @@ class Email < ActiveRecord::Base
   has_many :organizations, through: :contact_people, inverse_of: :emails
 
   # Validations
-  validates :address, uniqueness: true, presence: true, format: /\A.+@.+\z/,
+  FORMAT = /\A.+@.+\..+\z/
+  validates :address, uniqueness: true, presence: true, format: Email::FORMAT,
                       length: { minimum: 3, maximum: 64 }
 
   validates :security_code, presence: true, uniqueness: true, on: :update

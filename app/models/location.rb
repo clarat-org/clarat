@@ -16,8 +16,7 @@ class Location < ActiveRecord::Base
   validates :city, presence: true
   validates :area_code, format: /\A\d*\z/, length: { maximum: 6 }
   validates :local_number, format: /\A\d*\z/, length: { maximum: 32 }
-  validates :email,
-            format: /\A.+@.+\..+\z/, allow_blank: true
+  validates :email, format: Email::FORMAT, allow_blank: true
   validates :display_name, presence: true
 
   validates :organization_id, presence: true

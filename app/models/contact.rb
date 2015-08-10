@@ -10,9 +10,9 @@ class Contact < ActiveRecord::Base
 
   validates :name, presence: true, allow_blank: false
   validates :email,
-            format: /\A.+@.+\..+\z/, allow_blank: false, unless: :reporting?
+            format: Email::FORMAT, allow_blank: false, unless: :reporting?
   validates :email,
-            format: /\A.+@.+\..+\z/, allow_blank: true, if: :reporting?
+            format: Email::FORMAT, allow_blank: true, if: :reporting?
   validates :message, presence: true, allow_blank: false
 
   def reporting?

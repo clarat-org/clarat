@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 describe Email do
-  let(:email) { Email.new address: 'a@b' }
+  let(:email) { Email.new address: 'a@b.c' }
   subject { email }
 
   describe 'attributes' do
@@ -24,7 +24,7 @@ describe Email do
     end
 
     describe 'on update' do
-      let(:email) { Email.create! address: 'a@b' }
+      let(:email) { Email.create! address: 'a@b.c' }
       it { subject.must validate_presence_of :security_code }
     end
   end

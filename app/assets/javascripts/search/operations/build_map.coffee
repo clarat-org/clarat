@@ -1,4 +1,4 @@
-class Clarat.Search.Concept.BuildMap
+class Clarat.Search.Operation.BuildMap
   @run: (mainResultSet) ->
     markers = new Clarat.Search.Cell.MapMarkers mainResultSet
     if Clarat.GMaps.loaded

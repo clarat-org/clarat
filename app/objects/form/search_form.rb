@@ -10,8 +10,7 @@ class SearchForm
 
   # Attributes (since this is not ActiveRecord) #
 
-  attr_accessor :hits, :personal_hits, :remote_hits, :national_hits,
-                :location_fallback
+  attr_accessor :hits, :personal_hits, :remote_hits, :national_hits
 
   attribute :query, String
   attribute :search_location, String
@@ -38,14 +37,22 @@ class SearchForm
 
   # Methods #
 
-  def geolocation
-    @geolocation ||=
-      Geolocation.new SearchLocation.find_or_generate(search_location)
+  def initialize *attrs
+    super
+
+    if search_location && search_location != I18n.t('conf.current_location')
+      self.generated_geolocation = search_location_instance.geoloc
+    end
   end
 
-  # Turn search_location data into a JSON string that can be saved in a cookie.
-  def location_for_cookie
-    return nil if search_location.blank?
-    { query: search_location, geoloc: geolocation.to_s }.to_json
+  # def geolocation
+  #   @geolocation ||= Geolocation.new search_location_instance
+  # end
+
+  private
+
+  def search_location_instance
+    @_search_location_instance ||=
+      SearchLocation.find_or_generate(search_location)
   end
 end

@@ -53,8 +53,8 @@ about supported directives.
 # = require search/model
 # = require search/persister
 # = require search/presenter
-# = require search/concepts/update_categories
-# = require search/concepts/build_map
+# = require search/operations/update_categories
+# = require search/operations/build_map
 # = require search/cells/search
 # = require search/cells/search_results
 # = require search/cells/map_markers
@@ -68,17 +68,16 @@ about supported directives.
 #
 # = require location/setup
 # = require location/presenter
-# = require location/concepts/request_geolocation_for_string
-# = require location/concepts/turn_input_into_my_location_display
+# = require location/operations/request_geolocation_for_string
+# = require location/operations/turn_input_into_my_location_display
+# = require location/operations/save_to_cookie
 #
 # = require single_click_button/presenter
 #
 # = require modules/analytics
-# = require modules/ajax
 # = require modules/query_field_placeholder
 # = require modules/gmaps
 # = require modules/mobilemenu
-# = require modules/category_tree
 # = require modules/more
 # = require modules/modal
 # = require modules/modal_instances
@@ -86,7 +85,6 @@ about supported directives.
 # = require modules/flash
 # = require modules/filter_form
 # = require modules/safari_fixes
-# = require modules/category_tree
 # = require modules/cookie_warning
 # = require modules/faq
 # = require modules/shariff_addional

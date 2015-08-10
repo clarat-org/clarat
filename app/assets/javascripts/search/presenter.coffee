@@ -40,7 +40,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Renders a mostly empty wireframe that the search results will be placed in.
   search: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
-    Clarat.Search.Concept.UpdateCategories.updateActiveClasses @model.category
+    Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>
@@ -48,7 +48,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     @render '.Listing-results', 'search_results', viewModel
     if @model.isPersonal()
-      Clarat.Search.Concept.BuildMap.run viewModel.main_offers
+      Clarat.Search.Operation.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
@@ -59,14 +59,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
 
-    Clarat.Search.Concept.UpdateCategories.updateCounts(
+    Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
 
   onQuerySupportResults: (resultSet) =>
     personalFacetResults = resultSet.results[0]
     remoteFacetResults = resultSet.results[1]
-    Clarat.Search.Concept.UpdateCategories.updateCounts(
+    Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
 
@@ -114,7 +114,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')
     @model.updateAttributes category: categoryName
-    Clarat.Search.Concept.UpdateCategories.updateActiveClasses categoryName
+    Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()
     @stopEvent event
 

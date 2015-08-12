@@ -11,4 +11,4 @@ en:
       needs_encounter_filters: "needs at least one encounter filter"
       needs_age_filters: "needs at least one age filter"
       only_approved_organizations: |
-        can only contain approved organizations. Unapproved: %{list}.
+        can only contain approved organizations. Approved: %{list}.

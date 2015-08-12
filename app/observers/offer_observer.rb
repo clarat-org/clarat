@@ -4,7 +4,6 @@ class OfferObserver < ActiveRecord::Observer
   end
 
   def before_save offer
-    offer.validate_organizations
     offer.add_approved_info
     offer.generate_html
   end

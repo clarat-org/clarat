@@ -200,19 +200,17 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations benötigt mindestens eine'\
                              ' Organisation'
       page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
-                             ' beinhalten, bevor dieses Angebot bestätigt'\
-                             ' werden kann.'
+                             ' beinhalten.'
 
-      # 6: fix all orga errors, needs age filter
+      # 6: fix all orga errors, needs an area
       orga.update_column :approved, true
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
-                             ' beinhalten, bevor dieses Angebot bestätigt'\
-                             ' werden kann.'
+                             ' beinhalten.'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
 
-      # 9: area given, needs language filter
+      # 7: area given, needs language filter
       select 'Deutschland', from: 'offer_area_id'
       click_button 'Speichern'
       page.wont_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
@@ -220,14 +218,14 @@ feature 'Admin Backend' do
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 
-      # 10: language filter given, needs target audience
+      # 8: language filter given, needs target audience
       select 'Deutsch', from: 'offer_language_filter_ids'
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
       page.must_have_content 'Target audience wird benötigt'
 
-      # 10: target audience is given, offer is approved
+      # 9: target audience is given, offer is approved
       select 'Child', from: 'offer_target_audience'
       click_button 'Speichern'
       page.wont_have_content 'Target audience wird benötigt'

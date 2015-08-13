@@ -27,9 +27,10 @@ class Offer
                 presence: true
 
       # Custom validations
+      validates :approved, approved: true
+      validate :only_approved_organizations
       validate :age_from_fits_age_to
       validate :location_fits_organization, on: :update
-      validates :approved, approved: true
 
       # Needs to be true before approval possible. Called in custom validation.
       # Uses method from CustomValidatable concern.
@@ -38,7 +39,6 @@ class Offer
         # eg not working in Safari. Also Rubocop complains...
         validate_associated_fields
         validate_target_audience
-        validate_organizations
         fail_validation :area, 'needs_area_when_remote' if !personal? && !area
       end
 
@@ -53,13 +53,6 @@ class Offer
       def validate_associated_fields
         validate_associated_presence :organizations
         validate_associated_presence :language_filters
-      end
-
-      def validate_organizations
-        if organizations.where(approved: false).count > 0
-          fail_validation :organizations, 'only_approved_organizations',
-                          list: organizations.approved.pluck(:name).join(', ')
-        end
       end
 
       def validate_associated_presence field
@@ -87,6 +80,19 @@ class Offer
             I18n.t(
               'offer.validations.location_fits_organization.organization_error'
             ))
+        end
+      end
+
+      # Custom validation: Fail if an organization added to this offer is
+      # unapproved
+      def only_approved_organizations
+        return unless association_instance_get(:organizations) # tests fail w/o
+        if organizations.to_a.count { |orga| !orga.approved? } > 0
+          approved_organization_names =
+            organizations.to_a.select(&:approved?).map(&:name).join(', ')
+
+          fail_validation :organizations, 'only_approved_organizations',
+                          list: approved_organization_names
         end
       end
     end

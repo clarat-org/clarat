@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813110927) do
+ActiveRecord::Schema.define(version: 20150813145954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -176,6 +176,23 @@ ActiveRecord::Schema.define(version: 20150813110927) do
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
   add_index "locations", ["federal_state_id"], name: "index_locations_on_federal_state_id", using: :btree
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
+
+  create_table "notes", force: true do |t|
+    t.text     "text",                                         null: false
+    t.string   "topic",             limit: 32
+    t.boolean  "closed",                       default: false
+    t.integer  "user_id",                                      null: false
+    t.integer  "notable_id",                                   null: false
+    t.string   "notable_type",      limit: 64,                 null: false
+    t.integer  "referencable_id"
+    t.string   "referencable_type", limit: 64
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "notes", ["notable_id", "notable_type"], name: "index_notes_on_notable_id_and_notable_type", using: :btree
+  add_index "notes", ["referencable_id", "referencable_type"], name: "index_notes_on_referencable_id_and_referencable_type", using: :btree
+  add_index "notes", ["user_id"], name: "index_notes_on_user_id", using: :btree
 
   create_table "offers", force: true do |t|
     t.string   "name",                       limit: 80,                          null: false

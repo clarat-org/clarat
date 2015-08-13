@@ -242,7 +242,7 @@ RailsAdmin.config do |config|
     field :target_gender
     field :target_audience do
       help do
-        'Richtet sich das Anegbot direkt an das Kind, oder an Erwachsene wie
+        'Richtet sich das Angebot direkt an das Kind, oder an Erwachsene wie
         z.B. die Eltern, einen Nachbarn oder einen Lotsen'
       end
     end

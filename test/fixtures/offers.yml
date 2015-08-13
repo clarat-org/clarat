@@ -5,5 +5,7 @@ basic:
   next_steps: foobar
   encounter: personal
   expires_at: 9999-01-01
+  age_from: 0
+  age_to: 18
   completed: t
   approved: t

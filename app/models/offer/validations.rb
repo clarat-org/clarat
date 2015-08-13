@@ -19,12 +19,15 @@ class Offer
       validates :age_from,
                 numericality: { greater_than_or_equal_to: 0,
                                 less_than_or_equal_to: 17, only_integer: true,
-                                allow_blank: true }
+                                allow_blank: false },
+                presence: true
       validates :age_to,
                 numericality: { greater_than: 0, less_than_or_equal_to: 18,
-                                only_integer: true, allow_blank: true }
+                                only_integer: true, allow_blank: false },
+                presence: true
 
       # Custom validations
+      validate :age_from_fits_age_to
       validate :location_fits_organization, on: :update
       validates :approved, approved: true
 
@@ -33,7 +36,6 @@ class Offer
       def before_approve
         # TODO: Refactor age validations lead to simple HTML 5 checks which are
         # eg not working in Safari. Also Rubocop complains...
-        validate_age_filter
         validate_associated_fields
         validate_target_audience
         validate_organizations
@@ -45,14 +47,6 @@ class Offer
       def validate_target_audience
         unless target_audience
           fail_validation :target_audience, 'is_needed'
-        end
-      end
-
-      def validate_age_filter
-        fail_validation :age_from, 'is_needed' unless age_from
-        fail_validation :age_to, 'is_needed' unless age_to
-        if age_to && age_from && age_from > age_to
-          errors.add(:age_from, I18n.t('offer.validations.age_from_be_smaller'))
         end
       end
 
@@ -70,6 +64,12 @@ class Offer
 
       def validate_associated_presence field
         fail_validation field, "needs_#{field}" if send(field).count == 0
+      end
+
+      # Custom Validation : Age From has to be smaller than Age To
+      def age_from_fits_age_to
+        return if !age_from || !age_to || age_from < age_to
+        errors.add :age_from, I18n.t('offer.validations.age_from_be_smaller')
       end
 
       # Custom Validation: Ensure selected organization is the same as the

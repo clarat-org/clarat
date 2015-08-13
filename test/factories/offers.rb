@@ -6,7 +6,7 @@ FactoryGirl.define do
     name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
-    age_from { rand(0..3) }
+    age_from { rand(1..3) }
     age_to { rand(4..6) }
     encounter do
       # weighted

@@ -18,6 +18,8 @@ feature 'Admin Backend' do
         fill_in 'offer_name', with: 'testangebot'
         fill_in 'offer_description', with: 'testdescription'
         fill_in 'offer_next_steps', with: 'testnextsteps'
+        fill_in 'offer_age_from', with: 0
+        fill_in 'offer_age_to', with: 18
         select 'Personal', from: 'offer_encounter'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
@@ -75,7 +77,7 @@ feature 'Admin Backend' do
       page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
     end
 
-    scenario 'Try to create offer with a organization/location mismatch' do
+    scenario 'Try to create offer with errors' do
       location = FactoryGirl.create(:location, name: 'testname')
 
       visit rails_admin_path
@@ -92,12 +94,52 @@ feature 'Admin Backend' do
 
       click_button 'Speichern und bearbeiten'
 
+      # Orga/Location mismatch wasn't tested yet
+      page.wont_have_content(
+        'Location muss zu der unten angegebenen Organisation gehören.'
+      )
+      page.wont_have_content(
+        'Organizations muss die des angegebenen Standorts beinhalten.'
+      )
+
+      # Age From and Age To are missing
+      page.must_have_content 'Age from muss ausgefüllt werden'
+      page.must_have_content 'Age to muss ausgefüllt werden'
+
+      # Age Filter given, but not in the correct range
+      fill_in 'offer_age_from', with: -1
+      fill_in 'offer_age_to', with: 19
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Age from muss ausgefüllt werden'
+      page.wont_have_content 'Age to muss ausgefüllt werden'
+      page.must_have_content 'Age from muss größer oder gleich 0 sein'
+      page.must_have_content 'Age to muss kleiner oder gleich 18 sein'
+
+      # Age  Filter in correct range, but from is higher than to
+      fill_in 'offer_age_from', with: 9
+      fill_in 'offer_age_to', with: 8
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Age from muss größer oder gleich 0 sein'
+      page.wont_have_content 'Age to muss kleiner oder gleich 18 sein'
+      page.must_have_content 'Age from darf nicht größer sein als Age to'
+
+      # Age  Filter correct, it saves
+      fill_in 'offer_age_from', with: 0
+      fill_in 'offer_age_to', with: 18
+      click_button 'Speichern und bearbeiten'
+      page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
+
+      # Update to trigger validation
       check 'offer_completed'
-      click_button 'Speichern' # update to trigger validation
+      click_button 'Speichern'
 
       page.must_have_content 'Angebot wurde nicht aktualisiert'
-      page.must_have_content 'Location muss zu der unten angegebenen Organisation gehören.'
-      page.must_have_content 'Organizations muss die des angegebenen Standorts beinhalten.'
+      page.must_have_content(
+        'Location muss zu der unten angegebenen Organisation gehören.'
+      )
+      page.must_have_content(
+        'Organizations muss die des angegebenen Standorts beinhalten.'
+      )
     end
 
     scenario 'Approve offer' do
@@ -113,6 +155,8 @@ feature 'Admin Backend' do
       fill_in 'offer_name', with: 'testangebot'
       fill_in 'offer_description', with: 'testdescription'
       fill_in 'offer_next_steps', with: 'testnextsteps'
+      fill_in 'offer_age_from', with: 0
+      fill_in 'offer_age_to', with: 18
       select 'Hotline', from: 'offer_encounter'
       select 'foobar', from: 'offer_location_id'
       fill_in 'offer_age_to', with: 6
@@ -165,18 +209,6 @@ feature 'Admin Backend' do
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten, bevor dieses Angebot bestätigt'\
                              ' werden kann.'
-      page.must_have_content 'Age from wird benötigt'
-
-      # 7: wrong age from is given
-      fill_in 'offer_age_from', with: 7
-      click_button 'Speichern'
-      page.wont_have_content 'Age from wird benötigt'
-      page.must_have_content 'Age from darf nicht größer sein als Age to'
-
-      # 8: correct age filter given, needs an area
-      fill_in 'offer_age_from', with: 0
-      click_button 'Speichern'
-      page.wont_have_content 'Age from wird benötigt'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
 

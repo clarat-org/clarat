@@ -15,7 +15,7 @@ FactoryGirl.define do
         "https://plus.google.com/#{FFaker::Internet.domain_word}#{n}"
       when 'pinterest'
         "https://www.pinterest.com/#{FFaker::Internet.domain_word}#{n}"
-      else # when 'own', 'other'
+      else # when 'own', 'document', 'other'
         FFaker::Internet.uri(%w(http https).sample) + n.to_s
       end
     end
@@ -33,7 +33,7 @@ FactoryGirl.define do
     end
 
     trait :pdf do
-      host 'own'
+      host 'document'
       url 'http://www.t.com/t.pdf'
     end
   end

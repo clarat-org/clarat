@@ -9,7 +9,7 @@ class Website < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  HOSTS = %w(own facebook twitter youtube gplus pinterest other)
+  HOSTS = %w(own facebook twitter youtube gplus pinterest document other)
   enumerize :host, in: HOSTS
 
   # Validations
@@ -24,6 +24,7 @@ class Website < ActiveRecord::Base
   scope :youtube, -> { where(host: 'youtube') }
   scope :gplus, -> { where(host: 'gplus') }
   scope :pinterest, -> { where(host: 'pinterest') }
+  scope :document, -> { where(host: 'document') }
   scope :other, -> { where(host: 'other') }
 
   scope :pdf, -> { where('websites.url LIKE ?', '%.pdf') }

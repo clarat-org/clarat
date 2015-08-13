@@ -49,7 +49,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Webseite (PDF)</a>'
+      '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
     )
   end
 end

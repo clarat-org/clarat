@@ -1,0 +1,34 @@
+- if object.try(:notes) && object.notes.any?
+  .Notes
+    h2 Notes
+
+    - object.notes.find_each do |note|
+      hr
+      .Note class="#{'closed' if note.closed?}"
+        h3
+          | #
+          => note.id
+          | -
+          =<> link_to note.user_name, show_path('user', note.user)
+          | notierte am
+          time<> title="#{time_ago_in_words note.created_at} zuvor"
+            = note.created_at.strftime '%d.%m.%Y %H:%M'
+          | zum Thema
+          span.topic< class=note.topic
+            = t ".topics.#{note.topic}"
+          | :
+        p
+          = note.text
+
+        .Note__Edit
+          = link_to edit_path('note', note) do
+            i.icon-pencil
+
+        - ref = note.referencable
+        - if ref
+          p
+            | Referenziert:
+            - name = ref.try(:display_name) || "#{ref.class} ##{ref.id}"
+            =<> link_to name, show_path(ref.class, ref)
+
+    hr

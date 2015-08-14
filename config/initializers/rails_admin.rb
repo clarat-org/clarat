@@ -28,9 +28,9 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter User Contact Keyword Definition
-    Area Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation ContactPerson Email
+    LanguageFilter AgeFilter User Contact Keyword Definition Note Area Email
+    OrganizationConnection SearchLocation ContactPerson Subscription
+    UpdateRequest
   )
 
   config.actions do
@@ -269,6 +269,8 @@ RailsAdmin.config do |config|
     field :approved
     field :unapproved_reason
     field :renewed
+    # Nested Fields
+    field :notes
 
     show do
       field :created_at do
@@ -335,6 +337,10 @@ RailsAdmin.config do |config|
     end
     clone_config do
       custom_method :partial_dup
+    end
+
+    show do
+      field :referencing_notes
     end
   end
 
@@ -405,6 +411,62 @@ RailsAdmin.config do |config|
     object_label_method :address
   end
 
+  config.model 'Note' do
+    list do
+      field :text
+      field :topic
+      field :user
+      field :closed
+      field :created_at
+      field :notable
+      field :referencable
+    end
+
+    edit do
+      field :notable
+      field :text
+      field :topic
+      field :referencable
+
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+    end
+
+    nested do
+      field :notable do
+        visible false
+      end
+    end
+
+    update do
+      field :id do
+        read_only true
+      end
+      field :text do
+        read_only true
+      end
+      field :topic do
+        read_only true
+      end
+      field :user do
+        read_only true
+      end
+      field :notable do
+        read_only true
+      end
+      field :user_id do
+        read_only true
+        visible false
+      end
+
+      field :referencable
+      field :closed
+    end
+  end
+
   config.model 'Filter' do
     weight 1
     list do
@@ -469,14 +531,6 @@ RailsAdmin.config do |config|
 
   config.model 'UpdateRequest' do
     weight 2
-  end
-
-  config.model 'Hyperlink' do
-    weight 3
-  end
-
-  config.model 'OrganizationOffer' do
-    weight 3
   end
 
   config.model 'ContactPersonOffer' do

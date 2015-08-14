@@ -43,3 +43,6 @@ en:
       area:
         one: Area
         other: Areas
+      note:
+        one: Note
+        other: Notes

@@ -1,11 +1,14 @@
 # Comment for internal use by admins.
 # Allows adding note to any other Model. Displayed in Admin backend.
 class Note < ActiveRecord::Base
-  # Associations
-  belongs_to :notable, polymorphic: true
+  # Concerns
+  include Notable # A note can be the target of references
 
-  belongs_to :referencable, polymorphic: true
-  belongs_to :user, inverse_of: :notes # Author
+  # Associations
+  belongs_to :notable, polymorphic: true # , inverse_of: :notes
+
+  belongs_to :referencable, polymorphic: true, inverse_of: :referencing_notes
+  belongs_to :user, inverse_of: :authored_notes # Author
 
   # Enumerization
   extend Enumerize
@@ -17,4 +20,8 @@ class Note < ActiveRecord::Base
 
   validates :notable, presence: true
   validates :user, presence: true
+
+  # Methods
+
+  delegate :name, to: :user, prefix: true
 end

@@ -21,6 +21,7 @@ feature 'Admin Backend' do
         fill_in 'offer_age_from', with: 0
         fill_in 'offer_age_to', with: 18
         select 'Personal', from: 'offer_encounter'
+        select 'basicLocation', from: 'offer_location_id'
         select 'foobar', from: 'offer_organization_ids'
         check 'offer_renewed'
 
@@ -144,7 +145,6 @@ feature 'Admin Backend' do
 
     scenario 'Approve offer' do
       orga = organizations(:basic)
-      FactoryGirl.create :location, name: 'foobar', organization: orga
 
       # 1: Create incomplete offer
       visit rails_admin_path
@@ -157,8 +157,8 @@ feature 'Admin Backend' do
       fill_in 'offer_next_steps', with: 'testnextsteps'
       fill_in 'offer_age_from', with: 0
       fill_in 'offer_age_to', with: 18
-      select 'Hotline', from: 'offer_encounter'
-      select 'foobar', from: 'offer_location_id'
+      select 'Personal', from: 'offer_encounter'
+      select 'basicLocation', from: 'offer_location_id'
       fill_in 'offer_age_to', with: 6
       check 'offer_completed'
       click_button 'Speichern und bearbeiten'
@@ -202,19 +202,25 @@ feature 'Admin Backend' do
       page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
 
-      # 6: fix all orga errors, needs an area
+      # 6: fix all orga errors, needs an area and no location when not personal
       orga.update_column :approved, true
+      select 'Hotline', from: 'offer_encounter'
       click_button 'Speichern'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
+      page.must_have_content 'Location darf keinen Standort haben, wenn'\
+                             ' Encounter nicht "personal" ist'
 
-      # 7: area given, needs language filter
+      # 7: area given and no location, needs language filter
       select 'Deutschland', from: 'offer_area_id'
+      select '', from: 'offer_location_id'
       click_button 'Speichern'
       page.wont_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
+      page.wont_have_content 'Location darf keinen Standort haben, wenn'\
+                             ' Encounter nicht "personal" ist'
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 

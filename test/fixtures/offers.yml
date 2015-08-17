@@ -1,11 +1,12 @@
 basic:
   id: 1
-  name: foobar
-  description: foobar
-  next_steps: foobar
+  name: basicOfferName
+  description: basicOfferDescription
+  next_steps: basicOfferNextSteps
   encounter: personal
   expires_at: 9999-01-01
   age_from: 0
   age_to: 18
   completed: t
   approved: t
+  location_id: 1

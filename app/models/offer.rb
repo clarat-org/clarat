@@ -64,12 +64,15 @@ class Offer < ActiveRecord::Base
 
   def partial_dup
     self.dup.tap do |offer|
-      offer.name = nil
+      offer.location = nil
+      offer.organizations = self.organizations
       offer.openings = self.openings
+      offer.categories = self.categories
+      offer.language_filters = self.language_filters
+      offer.websites = self.websites
+      offer.contact_people = []
       offer.completed = false
       offer.approved = false
-      offer.categories = self.categories
-      offer.contact_people = []
     end
   end
 

@@ -46,7 +46,7 @@ class ContactPerson < ActiveRecord::Base
     if first_name.blank? && last_name.blank?
       "##{id} #{operational_name} (#{organization_name})"
     else
-      "##{id} #{first_name} #{last_name} (#{organization_name})"
+      "##{id} #{first_name} #{last_name} (#{organization_name})".squeeze(' ')
     end
   end
 

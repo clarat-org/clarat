@@ -33,15 +33,16 @@ FactoryGirl.define do
       fake_address false
     end
 
-    after :create do |offer, evaluator|
+    after :build do |offer, evaluator|
       # organization
       evaluator.organization_count.times do
-        FactoryGirl.create :organization_offer, offer: offer
+        offer.organizations << FactoryGirl.create(:organization, :approved)
       end
+      organization =
+        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
 
       # location
-      organization = offer.organizations.first
-      if organization && offer.personal?
+      if offer.personal?
         location =  organization.locations.sample ||
                     if evaluator.fake_address
                       FactoryGirl.create(:location, :fake_address,
@@ -49,13 +50,15 @@ FactoryGirl.define do
                     else
                       FactoryGirl.create(:location, organization: organization)
                     end
-        offer.update_column :location_id, location.id
+        offer.location = location
       end
+    end
 
+    after :create do |offer, evaluator|
       # Contact People
       evaluator.organization_count.times do
         offer.contact_people << FactoryGirl.create(
-          :contact_person, organization: organization
+          :contact_person, organization: offer.organizations.first
         )
       end
 
@@ -92,6 +95,7 @@ FactoryGirl.define do
       after :create do |offer, _evaluator|
         Offer.where(id: offer.id).update_all completed: true, approved: true,
                                              approved_at: Time.zone.now
+        offer.reload
       end
       approved_by { FactoryGirl.create(:researcher).id }
     end

@@ -25,11 +25,11 @@ class Offer < ActiveRecord::Base
   has_many :contact_person_offers, inverse_of: :offer
   has_many :contact_people, through: :contact_person_offers, inverse_of: :offers
   has_many :emails, through: :contact_people, inverse_of: :offers
-  has_many :organization_offers
+  has_many :organization_offers, dependent: :destroy
   has_many :organizations, through: :organization_offers, inverse_of: :offers
   # Attention: former has_one :organization, through: :locations
   # but there can also be offers without locations
-  has_many :hyperlinks, as: :linkable
+  has_many :hyperlinks, as: :linkable, dependent: :destroy
   has_many :websites, through: :hyperlinks
 
   # Enumerization
@@ -64,12 +64,15 @@ class Offer < ActiveRecord::Base
 
   def partial_dup
     self.dup.tap do |offer|
-      offer.name = nil
+      offer.location = nil
+      offer.organizations = self.organizations
       offer.openings = self.openings
+      offer.categories = self.categories
+      offer.language_filters = self.language_filters
+      offer.websites = self.websites
+      offer.contact_people = []
       offer.completed = false
       offer.approved = false
-      offer.categories = self.categories
-      offer.contact_people = []
     end
   end
 

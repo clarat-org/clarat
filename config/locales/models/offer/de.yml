@@ -14,6 +14,10 @@ de:
       needs_language_filters: "benötigt mindestens einen Sprachfilter"
       needs_area_when_remote: |
         muss ausgefüllt werden, wenn Encounter nicht "personal" ist
+      needs_location_when_personal: |
+        benötigt einen Standort, wenn Encounter "personal" ist
+      refuses_location_when_remote: |
+        darf keinen Standort haben, wenn Encounter nicht "personal" ist
       only_approved_organizations: |
         darf nur bestätigte Organisationen beinhalten. Bestätigt: %{list}.
       approved_by_creator: "kann nicht von dem/der Ersteller/in gesetzt werden"

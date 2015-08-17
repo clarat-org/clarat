@@ -12,6 +12,7 @@ class Location < ActiveRecord::Base
   validates :name, length: { maximum: 100 }
   validates :street, presence: true,
                      format: /\A.+\d+.*\z/ # ensure digit for house number
+  validates :addition, length: { maximum: 255 }
   validates :zip, presence: true, length: { is: 5 }
   validates :city, presence: true
   validates :area_code, format: /\A\d*\z/, length: { maximum: 6 }

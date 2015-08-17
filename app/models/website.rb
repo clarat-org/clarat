@@ -1,7 +1,7 @@
 # The external web addresses of organizations and offers.
 class Website < ActiveRecord::Base
   # associtations
-  has_many :hyperlinks
+  has_many :hyperlinks, dependent: :destroy
   has_many :organizations, through: :hyperlinks,
                            source: :linkable, source_type: 'Organization'
   has_many :offers, through: :hyperlinks,

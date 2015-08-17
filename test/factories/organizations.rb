@@ -33,7 +33,10 @@ FactoryGirl.define do
     # traits
     trait :approved do
       after :create do |orga, _evaluator|
-        Organization.where(id: orga.id).update_all completed: true, approved: true, approved_at: Time.zone.now
+        Organization.where(id: orga.id).update_all completed: true,
+                                                   approved: true,
+                                                   approved_at: Time.zone.now
+        orga.reload
       end
       approved_by { FactoryGirl.create(:researcher).id }
     end

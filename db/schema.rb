@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813145954) do
+ActiveRecord::Schema.define(version: 20150817093612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20150813145954) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "contact_people", force: true do |t|
-    t.integer  "organization_id",             null: false
+    t.integer  "organization_id",                             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "area_code_1",      limit: 6
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(version: 20150813145954) do
     t.string   "role"
     t.string   "responsibility"
     t.integer  "email_id"
+    t.boolean  "spoc",                        default: false, null: false
   end
 
   add_index "contact_people", ["email_id"], name: "index_contact_people_on_email_id", using: :btree

@@ -332,6 +332,11 @@ RailsAdmin.config do |config|
     field :email
     field :organization
     field :offers
+    field :spoc do
+      help do
+        "Single Point of Contact / Zentrale Anlaufstelle."
+      end
+    end
     export do
       field :id
     end

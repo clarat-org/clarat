@@ -74,3 +74,5 @@ de:
         referencable: Referenzpunkt
         created_at: Erstellungszeitpunkt
         updated_at: Editierungszeitpunkt
+      contact_person:
+        spoc: SPoC

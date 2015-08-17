@@ -46,3 +46,10 @@ en:
       note:
         one: Note
         other: Notes
+    attributes:
+      note:
+        user: Author
+        notable: Note Owner
+        referencable: Point of Reference
+      contact_person:
+        spoc: SPoC

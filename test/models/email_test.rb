@@ -52,10 +52,18 @@ describe Email do
           email.must_be :informed?
         end
 
-        it 'transition to blocked when an organization is inform_email_blocked'\
-           ' and should not send email' do
+        it 'should transition to blocked when an organization is'\
+           ' inform_email_blocked and should not send email' do
           email.organizations.first.update_column :inform_email_blocked, true
-          OfferMailer.not_expect_chain(:inform, :deliver)
+          OfferMailer.expects(:inform).never
+          subject
+          email.must_be :blocked?
+        end
+
+        it 'should transition to blocked when a contact_person is an SPoC and'\
+           ' should not send email' do
+          email.contact_people.first.update_column :spoc, true
+          OfferMailer.expects(:inform).never
           subject
           email.must_be :blocked?
         end

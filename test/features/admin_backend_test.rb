@@ -318,6 +318,27 @@ feature 'Admin Backend' do
       click_link 'Angebote', match: :first
       page.wont_have_link 'Statistiken'
     end
+
+    # scenario 'Adding notes' ~> needs javascript for the "add note" button
+
+    scenario 'Viewing notes in admin show and edit works' do
+      note = FactoryGirl.create :note, topic: 'history', closed: true,
+                                       notable: offers(:basic)
+      note_text = note.text
+
+      visit rails_admin_path
+
+      click_link 'Angebote', match: :first
+
+      click_link 'Anzeigen'
+      page.must_have_content note_text
+
+      click_link 'Bearbeiten'
+      page.must_have_content note_text
+
+      page.must_have_css '.Note.closed'
+      page.must_have_css '.topic.history'
+    end
   end
 
   describe 'as super' do

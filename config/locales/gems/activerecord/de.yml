@@ -61,3 +61,16 @@ de:
       area:
         one: Gebiet
         other: Gebiete
+      note:
+        one: Notiz
+        other: Notizen
+    attributes:
+      note:
+        text: Inhalt
+        topic: Thema
+        user: Autor
+        closed: abgehakt
+        notable: Notizträger
+        referencable: Referenzpunkt
+        created_at: Erstellungszeitpunkt
+        updated_at: Editierungszeitpunkt

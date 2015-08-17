@@ -1,0 +1,10 @@
+de:
+  rails_admin:
+    custom:
+      notes:
+        topics:
+          todo: "Aufgaben (TODO)"
+          history: "History"
+          hidden_contact: "Kontaktreferenz (hidden_contact)"
+          external_info: "Externe Infos (external_info)"
+          other: "Sonstiges (other)"

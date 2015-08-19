@@ -232,7 +232,7 @@ feature 'Admin Backend' do
       page.must_have_content 'Target audience wird benötigt'
 
       # 9: target audience is given, offer is approved
-      select 'Child', from: 'offer_target_audience'
+      select 'Acquintances', from: 'offer_target_audience'
       click_button 'Speichern'
       page.wont_have_content 'Target audience wird benötigt'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'

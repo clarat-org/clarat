@@ -4,7 +4,7 @@ describe OrganizationConnection do
   let(:organization_connection) { OrganizationConnection.new }
   subject { organization_connection }
 
-  it  { subject.wont_be :valid? }
+  it { subject.wont_be :valid? }
 
   describe 'attributes' do
     it { subject.must_respond_to :id }

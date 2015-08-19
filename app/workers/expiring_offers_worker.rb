@@ -8,8 +8,8 @@ class ExpiringOffersWorker
     expiring = Offer.approved.where('expires_at <= ?', Time.zone.today)
     if expiring.count > 0
       OfferMailer.expiring_mail(expiring.count, expiring.pluck(:id)).deliver
-      expiring.update_all approved: false
       expiring.update_all unapproved_reason: 'expired'
+      expiring.update_all approved: false
     end
   end
 end

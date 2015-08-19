@@ -24,8 +24,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   sendMainSearch: =>
     @model.getMainSearchResults().then(@onMainResults).catch(@failure)
 
-  sendSupportSearch: =>
-    @model.getSupportSearchResults().then(@onSupportResults).catch(@failure)
+  sendLocationSupportSearch: =>
+    @model.getLocationSupportResults().then(@onLocationSupportResults).catch(
+      @failure
+    )
+
+  sendQuerySupportSearch: =>
+    @model.getQuerySupportResults().then(@onQuerySupportResults).catch(
+      @failure
+    )
 
 
   ### "SHOW ACTIONS" ###
@@ -33,7 +40,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Renders a mostly empty wireframe that the search results will be placed in.
   search: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
-    Clarat.Search.Concept.UpdateCategories.updateActiveClasses @model.category
+    Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>
@@ -41,10 +48,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     @render '.Listing-results', 'search_results', viewModel
     if @model.isPersonal()
-      Clarat.Search.Concept.BuildMap.run viewModel.main_offers
+      Clarat.Search.Operation.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?
-  onSupportResults: (resultSet) =>
+  onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
     personalFacetResults = resultSet.results[1]
     remoteFacetResults = resultSet.results[2]
@@ -52,9 +59,17 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
 
-    Clarat.Search.Concept.UpdateCategories.updateCounts(
+    Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
+
+  onQuerySupportResults: (resultSet) =>
+    personalFacetResults = resultSet.results[0]
+    remoteFacetResults = resultSet.results[1]
+    Clarat.Search.Operation.UpdateCategories.updateCounts(
+      personalFacetResults, remoteFacetResults
+    )
+
 
   ### CALLBACKS ###
 
@@ -76,27 +91,30 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
+    @sendQuerySupportSearch()
 
   # We don't want to update all the time when user is typing. Persistence only
   # happens when they are done (and this fires). No need to send new search.
   handleQueryChange: (event) =>
     @model.updateAttributes query: event.target.value
+    @sendQuerySupportSearch()
 
   handleNewGeolocation: (event, location) =>
     @model.updateAttributes
       search_location: location.query
       generated_geolocation: location.geoloc
     @sendMainSearch()
-    @sendSupportSearch() # only needs to be called on new location
+    @sendLocationSupportSearch() # only needs to be called on new location
 
   handleRemoveQueryClick: (event) =>
     @model.updateAttributes query: ''
     @sendMainSearch()
+    @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')
     @model.updateAttributes category: categoryName
-    Clarat.Search.Concept.UpdateCategories.updateActiveClasses categoryName
+    Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()
     @stopEvent event
 
@@ -119,10 +137,3 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   failure: (error) =>
     console.log error
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')
-
-
-  ### OTHER PRIVATE METHODS (ue) ###
-
-  stopEvent: (event) ->
-    event.preventDefault()
-    false

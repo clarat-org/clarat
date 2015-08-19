@@ -7,9 +7,11 @@ class Email < ActiveRecord::Base
   # Associations
   has_many :contact_people, inverse_of: :email
   has_many :offers, through: :contact_people, inverse_of: :emails
+  has_many :organizations, through: :contact_people, inverse_of: :emails
 
   # Validations
-  validates :address, uniqueness: true, presence: true, format: /\A.+@.+\z/,
+  FORMAT = /\A.+@.+\..+\z/
+  validates :address, uniqueness: true, presence: true, format: Email::FORMAT,
                       length: { minimum: 3, maximum: 64 }
 
   validates :security_code, presence: true, uniqueness: true, on: :update
@@ -17,20 +19,25 @@ class Email < ActiveRecord::Base
   # State Machine
   aasm do
     state :uninformed, initial: true # E-Mail was created, owner doesn't know
-    state :informed # An offer has been approved and the owner got sent info
+    state :informed, # An offer has been approved and the owner got sent info
+          after_enter: :send_information
     state :subscribed # Email recipient has subscribed to further updates
     state :unsubscribed # Email recipient was subscribed but is no longer
+    state :blocked # Email belongs to blocked organization
 
     event :inform do
+      # First check if email needs to be blocked
+      transitions from: :uninformed, to: :blocked, guard: :blocked_organization?
+      # Else send email if there are approved offers
       transitions from: :uninformed, to: :informed,
-                  guard: :approved_offers?, after: :send_information
+                  guard: :approved_offers?, after: :regenerate_security_code
     end
 
     event :subscribe, guard: :security_code_confirmed? do
       transitions from: :informed, to: :subscribed,
-                  on_transition: :regenerate_security_code
+                  after: :regenerate_security_code
       transitions from: :unsubscribed, to: :subscribed,
-                  on_transition: :regenerate_security_code
+                  after: :regenerate_security_code
     end
 
     event :unsubscribe do
@@ -58,7 +65,11 @@ class Email < ActiveRecord::Base
     contact_people.joins(:offers).where('offers.approved = ?', true).count > 0
   end
 
+  def blocked_organization?
+    organizations.where(inform_email_blocked: true).any?
+  end
+
   def send_information
-    OfferMailer.delay.inform self
+    OfferMailer.inform(self).deliver
   end
 end

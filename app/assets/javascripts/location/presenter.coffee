@@ -11,6 +11,8 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       geoloc: $('#search_form_generated_geolocation')?.value ||
         I18n.t('conf.default_latlng') # default: middle of Berlin
 
+    @onLoad()
+
 
   CALLBACKS:
     '.JS-Geolocation__display':
@@ -23,11 +25,24 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveLocationByBrowserClick'
 
 
+  # Check if cookie had was saved to use "my location" and if so, use it again.
+  onLoad: ->
+    if @searchLocationInput.val() is I18n.t('conf.current_location')
+      # Turn input into display field because we don't just want the string
+      # "My Location" in there in plain text
+      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
+        @currentLocation
+      )
+
+      # Act as if user requested their current geolocation, since they likely
+      # still give us permission to use it
+      @handleBrowserLocationPromptClick()
+
   ## Simple place change by input or Google Places Autocomplete selection
 
   # Geolocation Display Input has new location (triggered by GMaps)
   handlePlaceChanged: (event) =>
-    Clarat.Location.Concept.RequestGeolocationForString.run(
+    Clarat.Location.Operation.RequestGeolocationForString.run(
       @searchLocationInput.val(), @updateCurrentLocation
     )
 
@@ -98,17 +113,16 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       query: I18n.t('conf.current_location')
       geoloc: "#{position.coords.latitude},#{position.coords.longitude}"
 
-    Clarat.Location.Concept.TurnInputIntoMyLocationDisplay.run @currentLocation
-
-    @render '.JS-Geolocation__display', 'location_by_browser_remove', {},
-      method: 'after'
+    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
+      @currentLocation
+    )
 
   # Remove button for the display of "using current location" clicked.
   handleRemoveLocationByBrowserClick: (event) =>
     # Reset fields
     @removePrompt()
 
-    Clarat.Location.Concept.TurnInputIntoMyLocationDisplay.revert()
+    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.revert()
 
     # Focus on display (without location prompt)
     @preventLocationByBrowserPrompt = true
@@ -125,6 +139,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
   # set new location and inform the outside
   updateCurrentLocation: (response) =>
     @currentLocation = response
+    Clarat.Location.Operation.SaveToCookie.run(response)
     $(document).trigger 'Clarat.Location::NewLocation', @currentLocation
 
 

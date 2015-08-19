@@ -1,4 +1,4 @@
-class Clarat.Search.Concept.UpdateCategories
+class Clarat.Search.Operation.UpdateCategories
   @updateActiveClasses: (activeCategory)->
     $('.Categories__list').find('.active').removeClass('active')
     $('.Categories__list').find("a[data-name='#{activeCategory}']")

@@ -23,8 +23,6 @@ de:
       noscript_warning: |
         Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
         Browser JavaScript aktiviert haben.
-      location_fallback: |
-        Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
 
       # index partials
       pending_ajax:
@@ -121,6 +119,7 @@ de:
         internet_presence: "Wo erfährst du mehr im Netz?"
         websites:
           own: "Webseite"
+          document: "Weitere Infos"
           facebook: "Facebook"
           twitter: "Twitter"
           youtube: "Youtube"

@@ -1,6 +1,6 @@
 # We have a string like "New York City" and need to get geocoordinates for
 # that. A Rails API will provide them.
-class Clarat.Location.Concept.RequestGeolocationForString
+class Clarat.Location.Operation.RequestGeolocationForString
   @run: (requestedLocation, callback) ->
 
     # request coordinates for entered String

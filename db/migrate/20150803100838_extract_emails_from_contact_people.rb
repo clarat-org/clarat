@@ -1,4 +1,10 @@
 class ExtractEmailsFromContactPeople < ActiveRecord::Migration
+
+  class ContactPerson < ActiveRecord::Base
+  end
+  class Email < ActiveRecord::Base
+  end
+
   def up
     create_table :emails do |t|
       t.string :address, null: false, unique: true, limit: 64
@@ -12,9 +18,11 @@ class ExtractEmailsFromContactPeople < ActiveRecord::Migration
     add_column :contact_people, :email_id, :integer
     add_index :contact_people, :email_id
 
-    ContactPerson.where.not(email: nil).find_each do |cp|
-      email = Email.find_by_address(cp.email) ||
-              Email.create!(address: cp.email)
+    ContactPerson.where(
+      'contact_people.email != ? AND contact_people.email IS NOT NULL', ''
+    ).find_each do |cp|
+      email = Email.find_by_address(cp['email']) ||
+              Email.create!(address: cp['email'])
 
       cp.update_column :email_id, email.id
     end

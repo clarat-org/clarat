@@ -11,7 +11,6 @@ class OffersController < ApplicationController
 
   def index
     @category_tree ||= Category.sorted_hash_tree
-    set_position
     prepare_location_unavailable
     render :index
   end
@@ -38,20 +37,6 @@ class OffersController < ApplicationController
 
   def search_params
     params.for(SearchForm).refine
-  end
-
-  # Set geolocation variables to cookie
-  def set_position
-    if @search_form.search_location == I18n.t('conf.current_location')
-      # erase cookie so that next time the current location will be used again
-      cookies[:last_search_location] = nil
-    else
-      # set cookie so that next time the same location will be prefilled
-      cookies[:last_search_location] = {
-        value: @search_form.location_for_cookie,
-        expires: 3.months.from_now
-      }
-    end
   end
 
   # prepare an UpdateRequest that will be displayed if the user entered a search

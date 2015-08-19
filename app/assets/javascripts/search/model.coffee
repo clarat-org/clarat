@@ -8,8 +8,11 @@ class Clarat.Search.Model extends ActiveScript.Model
   getMainSearchResults: ->
     @client().search @personalAndRemoteQueries()
 
-  getSupportSearchResults: ->
+  getLocationSupportResults: ->
     @client().search @nearbyAndFacetQueries()
+
+  getQuerySupportResults: ->
+    @client().search @facetQueries()
 
   client: ->
     return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
@@ -18,6 +21,10 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   nearbyAndFacetQueries: ->
     _.map [@nearby_query(), @personal_facet_query(), @remote_facet_query()],
+          (query) -> query.query_hash()
+
+  facetQueries: ->
+    _.map [@personal_facet_query(), @remote_facet_query()],
           (query) -> query.query_hash()
 
   personalAndRemoteQueries: ->

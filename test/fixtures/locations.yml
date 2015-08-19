@@ -1,0 +1,8 @@
+basic:
+  id: 1
+  street: basicStreet
+  zip: 12345
+  city: basicCity
+  organization_id: 1
+  federal_state_id: 1
+  display_name: basicLocation

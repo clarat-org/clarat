@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 describe Email do
-  let(:email) { Email.new address: 'a@b' }
+  let(:email) { Email.new address: 'a@b.c' }
   subject { email }
 
   describe 'attributes' do
@@ -24,7 +24,7 @@ describe Email do
     end
 
     describe 'on update' do
-      let(:email) { Email.create! address: 'a@b' }
+      let(:email) { Email.create! address: 'a@b.c' }
       it { subject.must validate_presence_of :security_code }
     end
   end
@@ -47,9 +47,17 @@ describe Email do
         let(:email) { FactoryGirl.create :email, :with_approved_offer }
 
         it 'should be possible from uninformed' do
-          OfferMailer.stub_chain(:delay, :inform)
+          OfferMailer.stub_chain(:inform, :deliver)
           subject.must_equal true
-          email.informed?.must_equal true
+          email.must_be :informed?
+        end
+
+        it 'transition to blocked when an organization is inform_email_blocked'\
+           ' and should not send email' do
+          email.organizations.first.update_column :inform_email_blocked, true
+          OfferMailer.not_expect_chain(:inform, :deliver)
+          subject
+          email.must_be :blocked?
         end
 
         it 'wont be possible from informed' do
@@ -67,8 +75,8 @@ describe Email do
           assert_raises(AASM::InvalidTransition) { subject }
         end
 
-        it 'should send an info email and log it when transitioned' do
-          OfferMailer.expect_chain(:delay, :inform)
+        it 'should send an info email when transitioned' do
+          OfferMailer.expect_chain(:inform, :deliver)
           subject
         end
       end
@@ -77,7 +85,7 @@ describe Email do
         let(:email) { FactoryGirl.create :email, :with_unapproved_offer }
 
         it 'should be impossible from uninformed and wont send an info mail' do
-          OfferMailer.not_expect_chain(:delay, :inform)
+          OfferMailer.not_expect_chain(:inform, :deliver)
           assert_raises(AASM::InvalidTransition) { subject }
         end
       end

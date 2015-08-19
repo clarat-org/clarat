@@ -1,2 +1,2 @@
 Clarat.Location =
-  Concept: {}
+  Operation: {}

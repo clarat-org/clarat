@@ -7,11 +7,14 @@
                       spellcheck: false,
                       autocomplete: 'off',
                       autofocus: true,
-                      class: 'input-xlg typeahead' }
+                      class: 'input-xlg' }
+
+  - search_location_value = \
+    search_form.search_location || cookies[:saved_search_location] || I18n.t('conf.default_location')
   = f.input :search_location, label: t('.loc_label'),
                               wrapper_html: {class: 'JS-Geolocation__wrapper'},
                               input_html: { \
-                                value: geoloc_to_s,
+                                value: search_location_value,
                                 class: 'input-xlg JS-Geolocation__display',
                                 placeholder: t(".loc_placeholder.#{labels}"),
                                 oninvalid: custom_validity_js('fill_field'),
@@ -20,10 +23,12 @@
 
   / Hidden Fields
 
+  - geolocation_value = \
+    search_form.generated_geolocation || cookies[:saved_geolocation] || I18n.t('conf.default_latlng')
   = f.input :generated_geolocation, as: :hidden,
                                     input_html: { \
                                       class: 'JS-Geolocation__input',
-                                      value: default_geolocation }
+                                      value: geolocation_value }
   / = f.input :geolocation, as: :hidden
   = f.input :category, as: :hidden
   = f.input :exact_location, as: :hidden

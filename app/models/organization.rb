@@ -7,11 +7,12 @@ class Organization < ActiveRecord::Base
 
   # Associtations
   has_many :locations
-  has_many :hyperlinks, as: :linkable
+  has_many :hyperlinks, as: :linkable, dependent: :destroy
   has_many :websites, through: :hyperlinks
-  has_many :organization_offers
+  has_many :organization_offers, dependent: :destroy
   has_many :contact_people
-  has_many :offers, through: :organization_offers
+  has_many :offers, through: :organization_offers, inverse_of: :organizations
+  has_many :emails, through: :contact_people, inverse_of: :organizations
   has_many :child_connections, class_name: 'OrganizationConnection',
                                foreign_key: 'parent_id'
   has_many :children, through: :child_connections

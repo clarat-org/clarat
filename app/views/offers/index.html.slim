@@ -16,10 +16,3 @@ noscript.NoScript
 = modal_for 'unavailable_location_overlay', autoopen: false do
   p= t '.unavailable_location_modal'
   = render '/update_requests/new', update_request: @update_request
-
-/ Alert user when we used default location because they didn't give one
-- if @search_form.search_location.blank?
-  - content_for :view_specific_scripts do
-
-    javascript:
-      Clarat.Flash.createFlash('alert', "#{j t('.location_fallback')}");

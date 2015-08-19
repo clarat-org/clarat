@@ -47,9 +47,6 @@ group :assets do # TODO: deprecated!
   gem 'haml' # TODO: deprecated!
 end # TODO: deprecated!
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
   gem 'rails-assets-jquery'
@@ -91,7 +88,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Rack-Based
+
 gem 'rack-attack' # securing malicious requests
+gem 'rack-rewrite' # securing malicious requests
 
 # State Machine
 gem 'aasm'
@@ -149,7 +149,10 @@ gem 'friendly_id', '>= 5.0'
 gem 'geocoder'
 
 # email
-gem 'gibbon'
+gem 'gibbon', '~> 1.2.0' # uses MailChimp API 2.0, remove version for 3.0+
+
+# Logging
+gem 'lograge' # opinionated slimmer logs for production
 
 ########################
 # For Heroku & Add-Ons #
@@ -190,7 +193,7 @@ group :development do
 end
 
 group :test do
-  gem 'memory_test_fix'  # Sqlite inmemory fix
+  gem 'memory_test_fix' # Sqlite inmemory fix
   gem 'rake'
   gem 'database_cleaner'
   # gem 'colorize' # use this when RBP quits using `colored`
@@ -222,7 +225,7 @@ group :development, :test do
 
   # test suite additions
   gem 'rails_best_practices'
-  gem 'brakeman'  # security test: execute with 'brakeman'
+  gem 'brakeman' # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
 
   # Code Coverage

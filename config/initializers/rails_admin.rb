@@ -18,7 +18,7 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
-  config.excluded_models = ['AgeFilter', 'AudienceFilter', 'FederalState',
+  config.excluded_models = ['AgeFilter', 'FederalState',
                             'OrganizationConnection', 'Filter']
 
   ## == PaperTrail ==
@@ -28,9 +28,9 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter AudienceFilter User Contact Keyword Definition
+    LanguageFilter AgeFilter User Contact Keyword Definition
     Area Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation ContactPerson
+    OrganizationConnection SearchLocation ContactPerson Email
   )
 
   config.actions do
@@ -104,6 +104,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
+    field :inform_email_blocked
     field :completed
     field :renewed
     field :approved
@@ -238,13 +239,15 @@ RailsAdmin.config do |config|
       css_class 'js-category-suggestions'
     end
     field :language_filters
-    field :audience_filters do
-      inline_add false
+    field :target_gender
+    field :target_audience do
+      help do
+        'Richtet sich das Angebot direkt an das Kind, oder an Erwachsene wie
+        z.B. die Eltern, einen Nachbarn oder einen Lotsen'
+      end
     end
-    field :age_filters do
-      inline_add false
-      help { 'Required before approval.' }
-    end
+    field :age_from
+    field :age_to
     field :openings
     field :opening_specification do
       help do
@@ -415,9 +418,6 @@ RailsAdmin.config do |config|
     parent Filter
   end
   config.model 'AgeFilter' do
-    parent Filter
-  end
-  config.model 'AudienceFilter' do
     parent Filter
   end
 

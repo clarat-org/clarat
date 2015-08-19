@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 describe EmailsController do
-  let(:email) { Email.create! address: 'a@b', security_code: 'correct' }
+  let(:email) { Email.create! address: 'a@b.c', security_code: 'correct' }
 
   describe '#subscribe' do
     before { email.update_column :aasm_state, 'informed' }

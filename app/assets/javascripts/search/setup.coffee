@@ -1,4 +1,4 @@
 Clarat.Search =
-  Concept: {}
+  Operation: {}
   Query: {}
   Cell: {}

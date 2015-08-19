@@ -2,5 +2,5 @@
 class UpdateRequest < ActiveRecord::Base
   # Validations
   validates :search_location, presence: true
-  validates :email, format: /\A.+@.+\..+\z/
+  validates :email, format: Email::FORMAT
 end

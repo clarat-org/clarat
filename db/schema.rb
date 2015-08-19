@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150717092352) do
-=======
-ActiveRecord::Schema.define(version: 20150723075554) do
->>>>>>> feature/379-auto-mailings
+ActiveRecord::Schema.define(version: 20150817112604) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -160,7 +156,7 @@ ActiveRecord::Schema.define(version: 20150723075554) do
 
   create_table "locations", force: true do |t|
     t.string   "street",                      null: false
-    t.string   "addition"
+    t.text     "addition"
     t.string   "zip",                         null: false
     t.string   "city",                        null: false
     t.boolean  "hq"
@@ -206,6 +202,10 @@ ActiveRecord::Schema.define(version: 20150723075554) do
     t.text     "opening_specification_html"
     t.string   "unapproved_reason",                     default: "not_approved"
     t.string   "aasm_state",                 limit: 32
+    t.string   "target_gender",                         default: "whatever"
+    t.integer  "age_from",                                                       null: false
+    t.integer  "age_to",                                                         null: false
+    t.string   "target_audience"
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
@@ -272,6 +272,7 @@ ActiveRecord::Schema.define(version: 20150723075554) do
     t.boolean  "accredited_institution",            default: false
     t.text     "description_html"
     t.string   "aasm_state",             limit: 32
+    t.boolean  "inform_email_blocked",              default: false
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

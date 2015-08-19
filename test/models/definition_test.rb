@@ -44,6 +44,17 @@ describe Definition do
         )
       end
 
+      it 'should be case insensitive' do
+        FactoryGirl.create :definition, key: 'Sexual Identity'
+
+        string = 'My sexual identity is great.'
+
+        Definition.infuse(string).must_equal(
+          "My <dfn class='JS-tooltip' data-id='1'>sexual identity</dfn>"\
+          ' is great.'
+        )
+      end
+
       it 'should only ever use the first definition key occurence when'\
          ' mutliple comma seperated keys are given' do
         FactoryGirl.create :definition, key: 'big', explanation: 'huge'

@@ -2,7 +2,7 @@ class ExpiringOffersWorker
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { daily.hour_of_day(1) }
+  recurrence { daily.hour_of_day(3) }
 
   def perform
     expiring = Offer.where(expires_at: Time.zone.today)

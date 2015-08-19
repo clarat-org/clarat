@@ -190,7 +190,7 @@ group :development do
 end
 
 group :test do
-  gem 'memory_test_fix'  # Sqlite inmemory fix
+  gem 'memory_test_fix' # Sqlite inmemory fix
   gem 'rake'
   gem 'database_cleaner'
   # gem 'colorize' # use this when RBP quits using `colored`
@@ -222,7 +222,7 @@ group :development, :test do
 
   # test suite additions
   gem 'rails_best_practices'
-  gem 'brakeman'  # security test: execute with 'brakeman'
+  gem 'brakeman' # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
 
   # Code Coverage

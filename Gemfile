@@ -88,7 +88,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Rack-Based
+
 gem 'rack-attack' # securing malicious requests
+gem 'rack-rewrite' # securing malicious requests
 
 # State Machine
 gem 'aasm'

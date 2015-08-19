@@ -70,7 +70,8 @@ FactoryGirl.define do
       else
         evaluator.category_count.times do
           offer.categories << (
-            Category.select(:id).all.sample
+            Category.select(:id).all.try(:sample) ||
+              FactoryGirl.create(:category)
           )
         end
       end

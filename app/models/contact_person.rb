@@ -1,6 +1,9 @@
 # The end point that can be contacted by a visitor to get Information about an
 # offer.
 class ContactPerson < ActiveRecord::Base
+  # Concerns
+  include Notable
+
   # Associations
   belongs_to :organization, inverse_of: :contact_people
   belongs_to :email, inverse_of: :contact_people
@@ -43,7 +46,7 @@ class ContactPerson < ActiveRecord::Base
     if first_name.blank? && last_name.blank?
       "##{id} #{operational_name} (#{organization_name})"
     else
-      "##{id} #{first_name} #{last_name} (#{organization_name})"
+      "##{id} #{first_name} #{last_name} (#{organization_name})".squeeze(' ')
     end
   end
 

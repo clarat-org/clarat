@@ -27,7 +27,7 @@ class Email < ActiveRecord::Base
 
     event :inform do
       # First check if email needs to be blocked
-      transitions from: :uninformed, to: :blocked, guard: :blocked_organization?
+      transitions from: :uninformed, to: :blocked, guard: :should_be_blocked?
       # Else send email if there are approved offers
       transitions from: :uninformed, to: :informed,
                   guard: :approved_offers?, after: :regenerate_security_code
@@ -65,8 +65,9 @@ class Email < ActiveRecord::Base
     contact_people.joins(:offers).where('offers.approved = ?', true).count > 0
   end
 
-  def blocked_organization?
-    organizations.where(inform_email_blocked: true).any?
+  def should_be_blocked?
+    organizations.where(inform_email_blocked: true).any? ||
+      contact_people.where(spoc: true).any?
   end
 
   def send_information

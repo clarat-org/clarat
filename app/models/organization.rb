@@ -3,7 +3,7 @@ class Organization < ActiveRecord::Base
   has_paper_trail
 
   # Concerns
-  include Creator, Approvable, CustomValidatable
+  include Creator, Approvable, CustomValidatable, Notable
 
   # Associtations
   has_many :locations

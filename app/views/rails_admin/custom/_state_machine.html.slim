@@ -4,6 +4,8 @@
     .StateMachine
       h3 Zustand
 
+      hr
+
       p
         | Aktuell:
         span.StateMachine--State< class=object.aasm_state
@@ -18,6 +20,7 @@
               - path = change_state_path(object.class, object.id, event: name)
               = link_to t(".events.#{name}"), path, class: 'btn btn-info'
 
+      hr
 
       / div style="margin: 50px auto; border: 1px dashed grey; width: 240px; text-align: center; position: fixed; top: 350px; right: 12px;"
       /   | [Test] Aussehen der anderen Icons:

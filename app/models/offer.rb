@@ -81,8 +81,8 @@ class Offer < ActiveRecord::Base
     ## States
 
     # Normal Workflow
-    state :initialized
-    state :ready_for_approval
+    state :initialized, initial: true
+    state :ready_for_approval # was "completed"
     state :approved, after_enter: :after_approve
 
     # Temporary Workflow
@@ -107,15 +107,15 @@ class Offer < ActiveRecord::Base
     end
 
     event :expire do
-      transitions to: :expired
+      transitions from: :approved, to: :expired
     end
 
     event :deactivate do
-      transitions to: :deactivated
+      transitions from: :approved, to: :deactivated
     end
 
     event :pause do
-      transitions to: :paused
+      transitions from: :approved, to: :paused
     end
   end
 

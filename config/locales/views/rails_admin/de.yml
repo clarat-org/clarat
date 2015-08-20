@@ -8,3 +8,33 @@ de:
           hidden_contact: "Kontaktreferenz (hidden_contact)"
           external_info: "Externe Infos (external_info)"
           other: "Sonstiges (other)"
+
+      state_machine:
+        states:
+          names:
+            initialized: "initialized"
+            ready_for_approval: "ready_for_approval"
+            approved: "approved"
+            in_renewal: "in_renewal"
+            renewed: "renewed"
+            expired: "expired"
+            deactivated: "deactivated"
+            paused: "paused"
+          icons:
+            initialized: "fa-file-o"
+            ready_for_approval: "fa-check-circle-o"
+            approved: "fa-check-circle"
+            in_renewal: "fa-file-text-o"
+            renewed: "fa-file-text"
+            expired: "fa-calendar-times-o"
+            deactivated: "fa-user-times"
+            paused: "fa-pause"
+        events:
+          advance: "Weiterschalten"
+          expire: "Expire"
+          deactivate: "Deaktivieren"
+          pause: "Pausieren"
+
+    main:
+      change_state:
+        success: "Die Zustandsänderung war erfolgreich."

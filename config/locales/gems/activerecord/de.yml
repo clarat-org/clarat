@@ -76,3 +76,5 @@ de:
         updated_at: Editierungszeitpunkt
       contact_person:
         spoc: SPoC
+      offer:
+        aasm_state: Zustand

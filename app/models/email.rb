@@ -35,10 +35,8 @@ class Email < ActiveRecord::Base
     end
 
     event :subscribe, guard: :security_code_confirmed? do
-      transitions from: :informed, to: :subscribed,
-                  after: :regenerate_security_code
-      transitions from: :unsubscribed, to: :subscribed,
-                  after: :regenerate_security_code
+      transitions from: :informed, to: :subscribed
+      transitions from: :unsubscribed, to: :subscribed
     end
 
     event :unsubscribe do

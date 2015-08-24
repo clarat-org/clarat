@@ -122,12 +122,6 @@ describe Email do
           subject.must_equal true
           email.subscribed?.must_equal true
         end
-
-        it 'should generate a new security key when transitioned' do
-          email.aasm_state = 'informed'
-          email.expects(:regenerate_security_code).once
-          subject
-        end
       end
 
       describe 'with an incorrect security key' do

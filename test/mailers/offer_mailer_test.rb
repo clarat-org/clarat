@@ -28,8 +28,8 @@ describe OfferMailer do
     subject { OfferMailer.inform email }
     before { contact_person }
 
-    it 'must deliver and update the email log' do
-      email.expects(:update_log)
+    it 'must deliver and create offer_mailings' do
+      email.expects(:create_offer_mailings)
       subject.must deliver_to 'foo@bar.baz'
       subject.must have_body_text 'clarat'
       subject.must have_body_text '/subscribe'
@@ -86,14 +86,14 @@ describe OfferMailer do
     end
   end
 
-  describe '#newly_approved_offer' do
+  describe '#newly_approved_offers' do
     let(:email) { FactoryGirl.create :email, :with_security_code, :subscribed }
     before { contact_person }
 
-    subject { OfferMailer.newly_approved_offer email, offer }
+    subject { OfferMailer.newly_approved_offers email, [offer] }
 
-    it 'must deliver and update the email log' do
-      email.expects(:update_log)
+    it 'must deliver and create offer_mailings' do
+      email.expects(:create_offer_mailings)
       subject.must deliver_to email.address
       subject.must have_body_text 'abmelden'
       subject.must have_body_text '/unsubscribe'

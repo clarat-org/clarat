@@ -57,8 +57,8 @@ class Email < ActiveRecord::Base
     end
   end
 
-  def not_yet_known_but_approved_offers
-    offers.approved.all - known_offers.all
+  def not_yet_but_soon_known_offers
+    offers.approved.by_mailings_enabled_organization.all - known_offers.all
   end
 
   private

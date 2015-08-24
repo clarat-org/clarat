@@ -22,7 +22,7 @@ describe OfferMailer do
 
   describe '#inform' do
     let(:email) do
-      FactoryGirl.create(:email, :with_security_code, address: 'foo@bar.baz')
+      FactoryGirl.create :email, :with_security_code, address: 'foo@bar.baz'
     end
 
     subject { OfferMailer.inform email }
@@ -34,6 +34,23 @@ describe OfferMailer do
       subject.must have_body_text 'clarat'
       subject.must have_body_text '/subscribe'
       subject.must have_body_text email.security_code
+    end
+
+    it 'only informs about offers by mailings_enabled organizations' do
+      offer2 = FactoryGirl.create :offer, :approved,
+                                  name: 'By mailings_enabled organization'
+      offer2.contact_people.first.update_column :email_id, email.id
+
+      offer3 = FactoryGirl.create :offer, :approved,
+                                  name: 'By mailings_disabled organization'
+      offer3.contact_people.first.update_column :email_id, email.id
+      offer3.organizations.first.update_column :mailings_enabled, false
+
+      assert_difference 'OfferMailing.count', 2 do
+        subject.must have_body_text 'basicOfferName'
+        subject.must have_body_text 'By mailings_enabled organization'
+        subject.wont have_body_text 'By mailings_disabled organization'
+      end
     end
 
     describe 'for a genderless contact person without a name' do

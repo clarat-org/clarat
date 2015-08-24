@@ -12,7 +12,7 @@ class SubscribedEmailsMailingsWorker
     Offer.transaction do
       Email.transaction do
         potentially_informable_emails.find_each do |email|
-          informable_offers = email.not_yet_known_but_approved_offers
+          informable_offers = email.not_yet_but_soon_known_offers
           next if informable_offers.empty?
           OfferMailer.newly_approved_offers(email, informable_offers).deliver
         end
@@ -25,5 +25,6 @@ class SubscribedEmailsMailingsWorker
   def potentially_informable_emails
     Email.where(aasm_state: 'subscribed').uniq
       .joins(:offers).where('offers.approved = ?', true)
+      .joins(:organizations).where('organizations.mailings_enabled = ?', true)
   end
 end

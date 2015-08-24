@@ -42,11 +42,11 @@ class SubscribedEmailsMailingsWorkerTest < ActiveSupport::TestCase
     worker.perform
   end
 
-  it 'does send mailing to subscribed emails with approved offers but no'\
+  it 'wont send mailing to subscribed emails with approved offers but no'\
      ' mailings_enabled organization' do
     email = FactoryGirl.create :email, :subscribed, :with_approved_offer
     email.organizations.update_all mailings_enabled: false
-    OfferMailer.expect_chain(:newly_approved_offers, :deliver).once
+    OfferMailer.expects(:newly_approved_offers).never
     worker.perform
   end
 end

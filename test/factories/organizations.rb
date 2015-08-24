@@ -42,7 +42,7 @@ FactoryGirl.define do
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
-    trait :mailing_disabled do
+    trait :mailings_disabled do
       mailings_enabled false
     end
   end

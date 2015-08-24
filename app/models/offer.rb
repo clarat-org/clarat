@@ -56,6 +56,9 @@ class Offer < ActiveRecord::Base
 
   # Scopes
   scope :approved, -> { where(approved: true) }
+  scope :by_mailings_enabled_organization, lambda {
+    joins(:organizations).where('organizations.mailings_enabled = ?', true)
+  }
 
   # Methods
 

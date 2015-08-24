@@ -177,6 +177,23 @@ ActiveRecord::Schema.define(version: 20150820132300) do
   add_index "locations", ["federal_state_id"], name: "index_locations_on_federal_state_id", using: :btree
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
+  create_table "notes", force: true do |t|
+    t.text     "text",                                         null: false
+    t.string   "topic",             limit: 32
+    t.boolean  "closed",                       default: false
+    t.integer  "user_id",                                      null: false
+    t.integer  "notable_id",                                   null: false
+    t.string   "notable_type",      limit: 64,                 null: false
+    t.integer  "referencable_id"
+    t.string   "referencable_type", limit: 64
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "notes", ["notable_id", "notable_type"], name: "index_notes_on_notable_id_and_notable_type", using: :btree
+  add_index "notes", ["referencable_id", "referencable_type"], name: "index_notes_on_referencable_id_and_referencable_type", using: :btree
+  add_index "notes", ["user_id"], name: "index_notes_on_user_id", using: :btree
+
   create_table "offer_mailings", force: true do |t|
     t.integer  "offer_id",                null: false
     t.integer  "email_id",                null: false
@@ -212,6 +229,7 @@ ActiveRecord::Schema.define(version: 20150820132300) do
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
     t.string   "unapproved_reason",                     default: "not_approved"
+    t.string   "aasm_state",                 limit: 32
     t.string   "target_gender",                         default: "whatever"
     t.integer  "age_from",                                                       null: false
     t.integer  "age_to",                                                         null: false
@@ -281,7 +299,8 @@ ActiveRecord::Schema.define(version: 20150820132300) do
     t.boolean  "renewed",                           default: false
     t.boolean  "accredited_institution",            default: false
     t.text     "description_html"
-    t.boolean  "mailings_enabled",                 default: false
+    t.string   "aasm_state",             limit: 32
+    t.boolean  "mailings_enabled",                  default: false
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

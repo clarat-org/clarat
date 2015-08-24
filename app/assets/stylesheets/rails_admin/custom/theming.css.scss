@@ -55,12 +55,11 @@
     font-size: 12px;
 
     &.initialized { background-color: darkkhaki; }
-    &.ready_for_approval { background-color: darkseagreen; }
+    &.completed { background-color: darkseagreen; }
     &.approved { background-color: darkcyan; }
-    &.in_renewal { background-color: deeppink; }
-    &.renewed { background-color: deeppink; }
     &.expired { background-color: tomato; }
-    &.deactivated { background-color: darkorange; }
+    &.internal_feedback { background-color: darkorange; }
+    &.external_feedback { background-color: chocolate; }
     &.paused { background-color: grey; }
   }
 

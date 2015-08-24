@@ -94,7 +94,7 @@ FactoryGirl.define do
 
     trait :approved do
       after :create do |offer, _evaluator|
-        Offer.where(id: offer.id).update_all completed: true, approved: true,
+        Offer.where(id: offer.id).update_all aasm_state: 'approved',
                                              approved_at: Time.zone.now
         offer.reload
       end

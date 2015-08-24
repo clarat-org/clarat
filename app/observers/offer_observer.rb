@@ -4,11 +4,11 @@ class OfferObserver < ActiveRecord::Observer
   end
 
   def before_save offer
-    offer.add_approved_info
     offer.generate_html
   end
 
   def before_create offer
+    return if offer.created_by
     current_user = ::PaperTrail.whodunnit
     offer.created_by = current_user if current_user.is_a? Integer # so unclean
   end

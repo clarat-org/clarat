@@ -34,8 +34,7 @@ FactoryGirl.define do
     # traits
     trait :approved do
       after :create do |orga, _evaluator|
-        Organization.where(id: orga.id).update_all completed: true,
-                                                   approved: true,
+        Organization.where(id: orga.id).update_all aasm_state: 'approved',
                                                    approved_at: Time.zone.now
         orga.reload
       end

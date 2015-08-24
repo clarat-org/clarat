@@ -24,7 +24,7 @@
 
       / div style="margin: 50px auto; border: 1px dashed grey; width: 240px; text-align: center; position: fixed; top: 350px; right: 12px;"
       /   | [Test] Aussehen der anderen Icons:
-      /   - %w(initialized ready_for_approval approved in_renewal renewed expired deactivated paused).each do |state|
+      /   - %w(initialized completed approved expired internal_feedback external_feedback paused).each do |state|
       /     p
       /       span.StateMachine--State< class=state
       /         i.fa> class=t(".states.icons.#{state}")

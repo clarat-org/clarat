@@ -3,7 +3,7 @@ class Organization < ActiveRecord::Base
   has_paper_trail
 
   # Concerns
-  include Creator, Approvable, CustomValidatable, Notable
+  include Creator, CustomValidatable, Notable
 
   # Associtations
   has_many :locations
@@ -34,6 +34,9 @@ class Organization < ActiveRecord::Base
   # Friendly ID
   extend FriendlyId
   friendly_id :name, use: [:slugged]
+
+  # Scopes
+  scope :approved, -> { where(aasm_state: 'approved') }
 
   # Validations
   validates :name, length: { maximum: 100 }, presence: true, uniqueness: true

@@ -74,8 +74,7 @@ RailsAdmin.config do |config|
       field :offers_count
       field :name
       field :renewed
-      field :completed
-      field :approved
+      field :aasm_state
       field :creator
       field :locations_count
       field :created_by
@@ -113,9 +112,20 @@ RailsAdmin.config do |config|
       end
       help 'Irreversibel.'
     end
-    field :completed
     field :renewed
-    field :approved
+    field :aasm_state do
+      read_only true
+    end
+
+    # Hidden fields
+    field :created_by, :hidden do
+      read_only do
+        !bindings[:object].new_record?
+      end
+      default_value do
+        bindings[:view]._current_user.id
+      end
+    end
 
     show do
       field :offers
@@ -198,6 +208,7 @@ RailsAdmin.config do |config|
     list do
       field :name
       field :location
+      field :renewed
       field :aasm_state
       field :creator
       field :expires_at
@@ -271,11 +282,22 @@ RailsAdmin.config do |config|
       inverse_of :offers
     end
     field :expires_at
+    field :renewed
     field :aasm_state do
       read_only true
     end
     # Nested Fields
     field :notes
+
+    # Hidden fields
+    field :created_by, :hidden do
+      read_only do
+        !bindings[:object].new_record?
+      end
+      default_value do
+        bindings[:view]._current_user.id
+      end
+    end
 
     show do
       field :created_at do

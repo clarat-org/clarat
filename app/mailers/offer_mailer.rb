@@ -16,26 +16,25 @@ class OfferMailer < ActionMailer::Base
     @contact_people = email.contact_people
     @contact_person = @contact_people.first
     @multiple_contact_people = @contact_people.count > 1
-    @offers = offers || email.offers.approved
+    @offers = offers || email.offers.approved.by_mailings_enabled_organization
     @subscribe_href =
       subscribe_url(id: email.id, security_code: email.security_code)
 
-    text = mail to: email.address,
-                from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
-
-    email.update_log text
+    email.create_offer_mailings @offers, :inform
+    mail to: email.address,
+         from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
   end
 
   # Inform email addresses about new offers after they have subscribed.
-  def newly_approved_offer email, offer
+  def newly_approved_offers email, offers
     @contact_people = email.contact_people
     @contact_person = @contact_people.first
     @multiple_contact_people = @contact_people.count > 1
-    @offer = offer
+    @offers = offers
     @unsubscribe_href =
       unsubscribe_url(id: email.id, security_code: email.security_code)
 
-    email.update_log mail to: email.address,
-                          from: 'clarat.org <post@clarat.org>'
+    email.create_offer_mailings @offers, :newly_approved
+    mail to: email.address, from: 'clarat.org <post@clarat.org>'
   end
 end

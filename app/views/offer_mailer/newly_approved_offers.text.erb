@@ -12,9 +12,17 @@ Liebe<%- end %> <%= @contact_person.first_name %>,
 
 es gibt ein neues Angebot auf clarat, in dem Sie als Kontakt eingetragen sind.
 
+<%- if @offers.count == 1 %>
 Ihr Angebot heißt bei clarat:
-"<%= @offer.name %>", zu finden unter folgendem Link:
-<%= offer_url(@offer) %>
+"<%= @offers.first.name %>", zu finden unter folgendem Link:
+<%= offer_url(@offers.first) %>
+<%- else %>
+Ihre Angebote heißen bei clarat:
+<%- @offers.each do |offer| %>
+- "<%= offer.name %>", zu finden unter folgendem Link:
+  <%= offer_url(offer) %>
+<%- end %>
+<%- end %>
 
 Mit freundlichen Grüßen
 

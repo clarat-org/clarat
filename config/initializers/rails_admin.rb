@@ -107,7 +107,12 @@ RailsAdmin.config do |config|
     end
 
     field :websites
-    field :inform_email_blocked
+    field :mailings_enabled do
+      read_only do
+        bindings[:object].mailings_enabled? # can only be set from false to true
+      end
+      help 'Irreversibel.'
+    end
     field :completed
     field :renewed
     field :approved

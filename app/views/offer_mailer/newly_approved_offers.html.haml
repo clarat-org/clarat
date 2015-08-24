@@ -20,12 +20,22 @@
   es gibt ein neues Angebot auf clarat, in dem Sie als Kontakt eingetragen sind.
 
 %p
-  Ihr Angebot heißt bei clarat:
-  %br
-  = '"' + @offer.name.strip + '",'
-  zu finden unter folgendem Link:
-  %br
-  = link_to offer_url(@offer), offer_url(@offer)
+  - if @offers.count == 1
+    Ihr Angebot heißt bei clarat:
+    %br
+    = '"' + @offers.first.name.strip + '",'
+    zu finden unter folgendem Link:
+    %br
+    = link_to offer_url(@offers.first), offer_url(@offers.first)
+  - else
+    Ihre Angebote heißen bei clarat:
+    %ul
+      - @offers.each do |offer|
+        %li
+          = '"' + offer.name.strip + '",'
+          zu finden unter folgendem Link:
+          %br
+          = link_to offer_url(offer), offer_url(offer)
 
 %p
   Mit freundlichen Grüßen,

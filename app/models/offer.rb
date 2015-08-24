@@ -31,6 +31,9 @@ class Offer < ActiveRecord::Base
   # but there can also be offers without locations
   has_many :hyperlinks, as: :linkable, dependent: :destroy
   has_many :websites, through: :hyperlinks
+  has_many :offer_mailings, inverse_of: :offer
+  has_many :informed_emails, source: :email, through: :offer_mailings,
+                             inverse_of: :known_offers
 
   # Enumerization
   extend Enumerize
@@ -53,6 +56,9 @@ class Offer < ActiveRecord::Base
 
   # Scopes
   scope :approved, -> { where(approved: true) }
+  scope :by_mailings_enabled_organization, lambda {
+    joins(:organizations).where('organizations.mailings_enabled = ?', true)
+  }
 
   # Methods
 

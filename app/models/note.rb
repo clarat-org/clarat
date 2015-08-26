@@ -2,7 +2,7 @@
 # Allows adding note to any other Model. Displayed in Admin backend.
 class Note < ActiveRecord::Base
   # Concerns
-  include Notable # A note can be the target of references
+  include NoteReferencable # A note can be the target of references
 
   # Associations
   belongs_to :notable, polymorphic: true # , inverse_of: :notes

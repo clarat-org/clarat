@@ -444,6 +444,21 @@ RailsAdmin.config do |config|
       field :notable do
         visible false
       end
+      field :text do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :topic do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :referencable do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
     end
 
     update do

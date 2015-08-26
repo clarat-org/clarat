@@ -38,7 +38,7 @@ class Offer < ActiveRecord::Base
   enumerize :unapproved_reason, in: %w(N/A not_approved expired paused
                                        internal_review external_feedback)
   enumerize :target_gender, in: %w(whatever boys_only girls_only)
-  enumerize :target_audience, in: %w(child family)
+  enumerize :target_audience, in: %w(children parents family acquintances)
 
   # Friendly ID
   extend FriendlyId

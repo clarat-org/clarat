@@ -219,7 +219,7 @@ ActiveRecord::Schema.define(version: 20150817112604) do
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
     t.string   "unapproved_reason",                     default: "not_approved"
-    t.string   "target_gender",                         default: "whatever"
+    t.string   "target_gender"
     t.integer  "age_from",                                                       null: false
     t.integer  "age_to",                                                         null: false
     t.string   "target_audience"

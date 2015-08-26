@@ -5,7 +5,7 @@ describe OrganizationOffer do
 
   subject { organization_offer }
 
-  it  { subject.must_be :valid? }
+  it { subject.must_be :valid? }
 
   describe 'attributes' do
     it { subject.must_respond_to :id }

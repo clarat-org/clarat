@@ -214,6 +214,7 @@ RailsAdmin.config do |config|
     field :comment do
       css_class 'js-count-character'
     end
+    field :notes
     field :next_steps do
       css_class 'js-count-character'
     end
@@ -269,8 +270,6 @@ RailsAdmin.config do |config|
     field :approved
     field :unapproved_reason
     field :renewed
-    # Nested Fields
-    field :notes
 
     show do
       field :created_at do

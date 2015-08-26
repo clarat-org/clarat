@@ -51,3 +51,10 @@
     }
   }
 }
+
+// To make sure only the last note is shown
+#offer_notes_attributes_field {
+  li:not(:last-child) {
+    display: none;
+  }
+}

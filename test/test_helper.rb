@@ -46,7 +46,7 @@ Rails.logger.level = 4
 File.open(Rails.root.join('log/test.log'), 'w') { |f| f.truncate(0) } # clear test log
 
 silence_warnings do
-  BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST
+  # BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST # needed?
 end
 
 Minitest.after_run do

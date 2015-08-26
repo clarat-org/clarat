@@ -1,0 +1,54 @@
+<%- if @multiple_contact_people || (!@contact_person.last_name? && !@contact_person.first_name?) %>
+Sehr geehrte Damen und Herren,
+<%- elsif @contact_person.last_name? %>
+<%- if @contact_person.gender == 'male' %>
+Lieber Herr<%- else %>
+Liebe Frau<%- end %> <%= @contact_person.last_name %>,
+<%- elsif @contact_person.first_name? %>
+<%- if @contact_person.gender == 'male' %>
+Lieber<%- else %>
+Liebe<%- end %> <%= @contact_person.first_name %>,
+<%- end %>
+
+erinnern Sie sich noch an clarat - das Portal, auf dem Kinder, Jugendliche und
+Familien einfach Hilfe finden?
+
+Auf clarat hat sich einiges getan! Wie versprochen, halten wir Sie darüber auf
+dem Laufenden.
+<%- if @offers.count == 1 %>
+Inzwischen gibt es auch ein neues Angebot von Ihnen:
+
+"<%= @offers.first.name %>", zu finden unter folgendem Link:
+<%= offer_url(@offers.first) %>
+<%- else %>
+Inzwischen gibt es auch neue Angebote von Ihnen:
+
+<%- @offers.each do |offer| %>
+- "<%= offer.name %>", zu finden unter folgendem Link:
+  <%= offer_url(offer) %>
+<%- end %>
+<%- end %>
+
+Hat sich ein Fehler eingeschlichen? Dann melden Sie sich doch bei uns.
+
+Wir arbeiten weiter daran, alle Unterstützungsangebote in Berlin zu erfassen.
+Wenn noch Angebote von Ihnen fehlen, informieren wir Sie wieder per Mail sobald
+diese auch auf clarat zu finden sind. Wollen Sie doch keine weiteren Infos mehr
+von uns? Dann klicken Sie einfach hier:
+<%= @unsubscribe_href %>
+
+Wir freuen uns, wenn Sie nochmal einen Blick auf Ihre Angebote werfen. Und
+wünschen uns, dass mit clarat in Zukunft noch mehr Menschen schneller Ihre Hilfe
+finden.
+
+Mit freundlichen Grüßen
+das clarat Team
+
+Anne Schulze
+
+clarat
+ein Projekt der Benckiser Stiftung Zukunft
+Französische Straße 47
+10117 Berlin
+Tel.: +49 (0)30 55 57 96 00
+www.clarat.org

@@ -72,23 +72,9 @@ describe Offer do
       it { subject.must have_and_belong_to_many :openings }
       it { subject.must have_many :hyperlinks }
       it { subject.must have_many :websites }
-    end
-  end
 
-  describe 'callbacks' do
-    describe '#after_approve' do
-      it 'should send emails to connected subscribed emails' do
-        offer = FactoryGirl.create :offer, contact_person_count: 2
-        # won't receive mail:
-        offer.contact_people.first.update_column(
-          :email_id, FactoryGirl.create(:email, :informed).id)
-        # will receive mail:
-        offer.contact_people.last.update_column(
-          :email_id, FactoryGirl.create(:email, :subscribed).id)
-        OfferMailer.expect_chain(:delay, :newly_approved_offer).once
-
-        offer.after_approve
-      end
+      it { subject.must have_many :offer_mailings }
+      it { subject.must have_many(:informed_emails).through :offer_mailings }
     end
   end
 

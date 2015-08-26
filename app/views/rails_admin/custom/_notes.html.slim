@@ -3,5 +3,5 @@
     h2 Notes
 
     .Notes-List
-      - object.notes.where.not(referencable_type: 'Note').find_each do |note|
+      - object.notes.not_referencing_note.find_each do |note|
         = render '/rails_admin/custom/note', note: note

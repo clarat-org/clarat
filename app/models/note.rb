@@ -10,6 +10,13 @@ class Note < ActiveRecord::Base
   belongs_to :referencable, polymorphic: true, inverse_of: :referencing_notes
   belongs_to :user, inverse_of: :authored_notes # Author
 
+  # Scopes
+  scope :not_referencing_note, lambda {
+    where(
+      'notes.referencable_type IS NULL OR notes.referencable_type != ?', 'Note'
+    )
+  }
+
   # Enumerization
   extend Enumerize
   enumerize :topic, in: %w(todo history hidden_contact external_info other)

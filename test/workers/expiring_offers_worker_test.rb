@@ -4,10 +4,10 @@ class ExpiringOffersWorkerTest < ActiveSupport::TestCase # to have fixtures
   let(:worker) { ExpiringOffersWorker.new }
 
   it 'sends an email for offers that expire today and unapproves them' do
-    now = Time.zone.now
-    Timecop.freeze(now - 1.day)
-    expiring = FactoryGirl.create :offer, :approved, expires_at: now
-    later = FactoryGirl.create :offer, :approved, expires_at: now + 2.days
+    today = Time.zone.today
+    Timecop.freeze(today - 1.day)
+    expiring = FactoryGirl.create :offer, :approved, expires_at: today
+    later = FactoryGirl.create :offer, :approved, expires_at: today + 2.days
     Timecop.return
     OfferMailer.expect_chain(:expiring_mail, :deliver).once
     # TODO: Fix this and the other tests with 4.2

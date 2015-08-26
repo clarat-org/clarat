@@ -7,7 +7,7 @@ class UninformedEmailsMailingsWorker
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { weekly(2).day(:monday).hour_of_day(7) }
+  recurrence { weekly(2).day(:monday).hour_of_day(20).minute_of_hour(30) }
 
   def perform
     Offer.transaction do

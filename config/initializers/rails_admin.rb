@@ -106,12 +106,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
-    field :mailings_enabled do
-      read_only do
-        bindings[:object].mailings_enabled? # can only be set from false to true
-      end
-      help 'Irreversibel.'
-    end
+    field :mailings_enabled
     field :renewed
     field :aasm_state do
       read_only true
@@ -470,6 +465,21 @@ RailsAdmin.config do |config|
     nested do
       field :notable do
         visible false
+      end
+      field :text do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :topic do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :referencable do
+        read_only do
+          !bindings[:object].new_record?
+        end
       end
     end
 

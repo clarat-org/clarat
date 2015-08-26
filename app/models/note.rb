@@ -2,13 +2,20 @@
 # Allows adding note to any other Model. Displayed in Admin backend.
 class Note < ActiveRecord::Base
   # Concerns
-  include Notable # A note can be the target of references
+  include NoteReferencable # A note can be the target of references
 
   # Associations
   belongs_to :notable, polymorphic: true # , inverse_of: :notes
 
   belongs_to :referencable, polymorphic: true, inverse_of: :referencing_notes
   belongs_to :user, inverse_of: :authored_notes # Author
+
+  # Scopes
+  scope :not_referencing_note, lambda {
+    where(
+      'notes.referencable_type IS NULL OR notes.referencable_type != ?', 'Note'
+    )
+  }
 
   # Enumerization
   extend Enumerize

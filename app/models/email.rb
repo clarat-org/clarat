@@ -27,8 +27,11 @@ class Email < ActiveRecord::Base
           after_enter: :send_information
     state :subscribed # Email recipient has subscribed to further updates
     state :unsubscribed # Email recipient was subscribed but is no longer
+    state :blocked # Email is blocked from receiving mailings
 
     event :inform, guard: :informable? do
+      # First check if email needs to be blocked
+      transitions from: :uninformed, to: :blocked, guard: :should_be_blocked?
       # Else send email if there are approved offers
       transitions from: :uninformed, to: :informed,
                   after: :regenerate_security_code
@@ -71,6 +74,10 @@ class Email < ActiveRecord::Base
   def informable?
     contact_people.joins(:offers).where('offers.approved = ?', true).any? &&
       organizations.where(mailings_enabled: true).any?
+  end
+
+  def should_be_blocked?
+    contact_people.where(spoc: true).any?
   end
 
   def send_information

@@ -2,7 +2,7 @@
 # offer.
 class ContactPerson < ActiveRecord::Base
   # Concerns
-  include Notable
+  include Notable, NoteReferencable
 
   # Associations
   belongs_to :organization, inverse_of: :contact_people

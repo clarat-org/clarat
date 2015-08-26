@@ -112,8 +112,7 @@ describe OfferMailer do
     it 'must deliver and create offer_mailings' do
       email.expects(:create_offer_mailings)
       subject.must deliver_to email.address
-      subject.must have_body_text 'abmelden'
-      subject.must have_body_text '/unsubscribe'
+      subject.must have_body_text '/unsubscribe/'
       subject.must have_body_text email.security_code
     end
   end

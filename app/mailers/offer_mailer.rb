@@ -35,6 +35,7 @@ class OfferMailer < ActionMailer::Base
       unsubscribe_url(id: email.id, security_code: email.security_code)
 
     email.create_offer_mailings @offers, :newly_approved
-    mail to: email.address, from: 'clarat.org <post@clarat.org>'
+    mail to: email.address,
+         from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
   end
 end

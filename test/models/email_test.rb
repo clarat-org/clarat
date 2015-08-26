@@ -15,6 +15,11 @@ describe Email do
     it { subject.must_respond_to :given_security_code }
   end
 
+  describe 'associations' do
+    it { subject.must have_many :offer_mailings }
+    it { subject.must have_many(:known_offers).through :offer_mailings }
+  end
+
   describe 'validations' do
     describe 'always' do
       it { subject.must validate_presence_of :address }
@@ -52,12 +57,10 @@ describe Email do
           email.must_be :informed?
         end
 
-        it 'should transition to blocked when an organization is'\
-           ' inform_email_blocked and should not send email' do
-          email.organizations.first.update_column :inform_email_blocked, true
+        it 'wont be possible if no organization is mailings_enabled' do
+          email.organizations.update_all mailings_enabled: false
           OfferMailer.expects(:inform).never
-          subject
-          email.must_be :blocked?
+          assert_raises(AASM::InvalidTransition) { subject }
         end
 
         it 'should transition to blocked when a contact_person is an SPoC and'\
@@ -93,7 +96,7 @@ describe Email do
         let(:email) { FactoryGirl.create :email, :with_unapproved_offer }
 
         it 'should be impossible from uninformed and wont send an info mail' do
-          OfferMailer.not_expect_chain(:inform, :deliver)
+          OfferMailer.expects(:inform).never
           assert_raises(AASM::InvalidTransition) { subject }
         end
       end
@@ -126,12 +129,6 @@ describe Email do
           email.aasm_state = 'unsubscribed'
           subject.must_equal true
           email.subscribed?.must_equal true
-        end
-
-        it 'should generate a new security key when transitioned' do
-          email.aasm_state = 'informed'
-          email.expects(:regenerate_security_code).once
-          subject
         end
       end
 

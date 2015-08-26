@@ -17,9 +17,10 @@
       = @contact_person.first_name
 
 %p
-  seit Kurzem sind Sie mit Ihrem Unterstützungsangebot für Kinder, Jugendliche und Familien über das neue Portal
-  = link_to 'www.clarat.org', 'http://www.clarat.org'
-  zu finden.
+  kennen Sie
+  = link_to 'clarat', 'http://www.clarat.org'
+  schon? Das ist ein neues Portal mit Unterstützungsangeboten für Kinder,
+  Jugendliche und Familien. Man kann auch Ihre Angebote bei clarat finden.
 
 %p
   - if @offers.count == 1
@@ -40,34 +41,40 @@
           = link_to offer_url(offer), offer_url(offer)
 
 %p
-  Fehlt etwas? Das kann sein. Denn wir sind auch weiterhin dabei, stetig Angebote zu ergänzen. Deshalb kommt es vor, dass wir noch nicht alle Angebote einer Organisation erfasst haben.
+  Hat sich irgendwo ein Fehler eingeschlichen? Dann melden Sie sich bei uns. Nur
+  so kann clarat besser werden.
 
 %p
-  Oder hat sich ein Fehler eingeschlichen? Melden Sie sich bei uns! Wir freuen uns über jedes Feedback.
+  clarat ist ein kostenloses Web-Verzeichnis und wird von der gemeinnützigen
+  = link_to 'Benckiser Stiftung Zukunft', 'http://www.benckiser-stiftung.org/'
+  entwickelt. Hier finden Kinder, Jugendliche und Familien einfach Hilfe in
+  ihrer Nähe. Aber auch Menschen, die anderen helfen wollen. Wir hoffen, dass
+  auch Ihre Angebote mit clarat noch leichter gefunden werden.
 
 %p
-  clarat wird von einer gemeinnützigen Stiftung entwickelt und ist ein kostenloses Web-Verzeichnis. Hier finden Kinder, Jugendliche und Familien in Not einfach Hilfe in ihrer Nähe.
+  Für clarat haben wir neben einer einfachen Navigation in Zusammenarbeit mit
+  Sprach-Experten eine leicht verständliche Sprache entwickelt. Dadurch kann
+  jedes Angebot mit einem Klick auch in weitere Sprachen (u.a. Arabisch,
+  Russisch, Türkisch) übersetzt werden. Mehr zu clarat erfahren Sie in unserem
+  kurzen
+  = link_to 'Einführungsfilm', 'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/'
+  oder auf unserem
+  = succeed '.' do
+    = link_to 'Blog', 'http://blog.clarat.org'
 
 %p
-  Neben einer einfachen Navigation haben wir auf eine leicht verständliche Sprache geachtet. Dies führt auch dazu, dass jedes Angebot mit einem Klick in weitere Sprachen (u.a. Arabisch, Russisch, Türkisch) übersetzt werden kann. Zunächst haben wir mit der Aufnahme von Unterstützungsangeboten aus Berlin Friedrichshain / Kreuzberg begonnen.
+  Sie sehen oben alle Angebote, die man von Ihnen bisher bei clarat findet.
+  Wundern Sie sich nicht, wenn noch Angebote fehlen. Wir arbeiten daran alle
+  Unterstützungsangebote in Berlin zu erfassen.
 
 %p
-  Wir hoffen, dass Ihre Angebote mit clarat noch leichter gefunden werden als bisher. Von Menschen in Not. Aber auch von Menschen, die Kindern, Jugendlichen und Familien zeigen möchten, wo es Hilfe gibt.
-
-%p
-  Wir wünschen uns, dass clarat auch Sie in Ihrer täglichen Arbeit unterstützt. Zum Beispiel, wenn Sie auf der Suche nach geeigneten Unterstützungsangeboten für hilfesuchende Menschen sind, denen Sie nicht direkt weiterhelfen können.
-
-%p
-  Wenn Sie noch mehr über clarat erfahren wollen, schauen Sie sich doch unseren kurzen
-= link_to 'Einführungsfilm', 'http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/'
-an oder besuchen Sie unseren
-= link_to('Blog', 'http://blog.clarat.org') + '.'
-
-%p
-  Wir freuen uns auf Ihr Feedback!
+  Haben Sie einen Vorschlag, was wir noch besser machen können? Lassen Sie uns
+  wissen, was Sie über clarat denken. Wir freuen uns auf Ihr Feedback!
 
 %p
   Mit freundlichen Grüßen
+  %br
+  das clarat Team
 
 %p
   Anne Schulze
@@ -82,10 +89,11 @@ an oder besuchen Sie unseren
   10117 Berlin
   %br
   Tel.: +49 (0)30 55 57 96 00
+  %br
+  = link_to 'www.clarat.org', 'http://www.clarat.org'
 
 %p
-  P.S. Dies ist eine einmalige Informationsemail für Sie. Falls Sie weiterhin informiert werden möchten, wenn Angebote auf clarat mit Ihnen als Kontaktperson aufgenommen werden, dann klicken Sie bitte
-  = link_to('hier', @subscribe_href) + '.'
-  Wir werden Ihnen keine Werbung senden.
-  %br
-  Wenn Sie keine weiteren Emails von uns wünschen, brauchen Sie nichts weiter tun. Wir werden Sie dann nicht noch einmal anschreiben.
+  P.S. Gerne informieren wir Sie, wenn mehr Ihrer Angebote online sind.
+  = succeed '.' do
+    = link_to 'Klicken Sie einfach hier', @subscribe_href
+  Ansonsten erhalten sie keine Mails mehr von uns.

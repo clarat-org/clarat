@@ -104,7 +104,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
-    field :inform_email_blocked
+    field :mailings_enabled
     field :completed
     field :renewed
     field :approved

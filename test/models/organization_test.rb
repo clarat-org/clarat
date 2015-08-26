@@ -23,7 +23,7 @@ describe Organization do
     it { subject.must_respond_to :comment }
     it { subject.must_respond_to :completed }
     it { subject.must_respond_to :approved }
-    it { subject.must_respond_to :inform_email_blocked }
+    it { subject.must_respond_to :mailings_enabled }
   end
 
   describe 'validations' do

@@ -1,0 +1,7 @@
+- if object.try(:notes) && object.notes.any?
+  .Notes
+    h2 Notes
+
+    .Notes-List
+      - object.notes.not_referencing_note.find_each do |note|
+        = render '/rails_admin/custom/note', note: note

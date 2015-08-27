@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
          omniauth_providers: [:facebook, :google_oauth2]
   # , :rememberable, :trackable
 
+  # Associations
+  has_many :authored_notes, class_name: 'Note', inverse_of: :user
+
   # Validations
   # validates :email, uniqueness: true, presence: true
 

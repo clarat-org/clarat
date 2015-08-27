@@ -7,7 +7,7 @@ class Offer < ActiveRecord::Base
   include Validations, Search, Statistics
 
   # Concerns
-  include Creator, Approvable, CustomValidatable
+  include Creator, Approvable, CustomValidatable, Notable
 
   # Associtations
   belongs_to :location, inverse_of: :offers
@@ -37,7 +37,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(personal hotline email chat forum online-course)
+  enumerize :encounter, in: %w(personal hotline email chat forum online-course list)
   enumerize :unapproved_reason, in: %w(N/A not_approved expired paused
                                        internal_review external_feedback)
   enumerize :target_gender, in: %w(whatever boys_only girls_only)

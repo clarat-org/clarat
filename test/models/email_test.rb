@@ -63,6 +63,14 @@ describe Email do
           assert_raises(AASM::InvalidTransition) { subject }
         end
 
+        it 'should transition to blocked when a contact_person is an SPoC and'\
+           ' should not send email' do
+          email.contact_people.first.update_column :spoc, true
+          OfferMailer.expects(:inform).never
+          subject
+          email.must_be :blocked?
+        end
+
         it 'wont be possible from informed' do
           email.aasm_state = 'informed'
           assert_raises(AASM::InvalidTransition) { subject }

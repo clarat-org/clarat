@@ -22,13 +22,19 @@ module RailsAdmin
         end
 
         register_instance_option :controller do
-          Proc.new do
+          proc do
+            unless @object.valid?
+              flash[:error] = t('.invalid')
+              redirect_to :back
+              next
+            end
+
             @object.send("#{params[:event]}!")
             # errors if unsuccessful
 
             flash[:success] = t('.success')
 
-            redirect_to back_or_index
+            redirect_to :back
           end
         end
       end

@@ -92,6 +92,7 @@ RailsAdmin.config do |config|
     field :comment do
       css_class 'js-count-character'
     end
+    field :locations
     field :legal_form
     field :charitable
     field :accredited_institution
@@ -113,12 +114,14 @@ RailsAdmin.config do |config|
     end
 
     # Hidden fields
-    field :created_by, :hidden do
-      read_only do
-        !bindings[:object].new_record?
-      end
-      default_value do
-        bindings[:view]._current_user.id
+    edit do
+      field :created_by, :hidden do
+        read_only do
+          !bindings[:object].new_record?
+        end
+        default_value do
+          bindings[:view]._current_user.id
+        end
       end
     end
 
@@ -244,7 +247,7 @@ RailsAdmin.config do |config|
     field :area
     field :organizations do
       help do
-        'Required before approval. Only approved organizations.'
+        'Required. Only approved organizations.'
       end
     end
     field :categories do
@@ -285,12 +288,14 @@ RailsAdmin.config do |config|
     field :notes
 
     # Hidden fields
-    field :created_by, :hidden do
-      read_only do
-        !bindings[:object].new_record?
-      end
-      default_value do
-        bindings[:view]._current_user.id
+    edit do
+      field :created_by, :hidden do
+        read_only do
+          !bindings[:object].new_record?
+        end
+        default_value do
+          bindings[:view]._current_user.id
+        end
       end
     end
 

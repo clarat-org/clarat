@@ -23,9 +23,12 @@ feature 'Admin Backend' do
         select 'Personal', from: 'offer_encounter'
         select 'basicLocation', from: 'offer_location_id'
         select 'foobar', from: 'offer_organization_ids'
+        select 'English', from: 'offer_language_filter_ids'
+        select 'Children', from: 'offer_target_audience'
         check 'offer_renewed'
 
         click_button 'Speichern'
+        page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
         page.must_have_content 'testangebot'
       end
     end
@@ -40,42 +43,59 @@ feature 'Admin Backend' do
         fill_in 'organization_name', with: 'testorganisation'
         fill_in 'organization_description', with: 'testdescription'
         select 'e.V.', from: 'organization_legal_form'
+        select 'basicLocation', from: 'organization_location_ids'
         check 'organization_renewed'
         check 'organization_accredited_institution'
 
         click_button 'Speichern'
         page.must_have_content 'testorganisation'
+        page.must_have_content 'Organisation wurde erfolgreich hinzugefügt'
         page.must_have_content '✘'
         page.must_have_content researcher.email
       end
     end
 
-    scenario 'Try to approve organization with/out hq-location' do
-      orga = FactoryGirl.create :organization, completed: true
-      # orga.update_column :approved, false
-      location = FactoryGirl.create :location, organization: orga, hq: false
-      visit rails_admin_path
+    scenario 'Try to create organization with/out hq-location' do
+      orga = organizations(:basic)
+      location = FactoryGirl.create :location, :hq, organization: orga
+      orga.update_columns aasm_state: 'initialized', created_by: researcher.id
 
-      # 1: With a non-hq locaton
+      visit rails_admin_path
       click_link 'Organisationen', match: :first
       click_link 'Bearbeiten', match: :first
-      check 'organization_approved'
+
+      click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung konnte nicht erfolgen'
+      page.must_have_content 'nicht valide'
+
+      # 1: With two hq locations
       click_button 'Speichern'
       page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
 
-      # 2: With a hq location
+      # 2: With non-hq locations
+      locations(:basic).update_column :hq, false
+      location.update_column :hq, false
+      click_button 'Speichern'
+      page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
+
+      # 3: With one hq location
       location.update_column :hq, true
-      login_as superuser
       click_button 'Speichern'
       page.must_have_content 'Organisation wurde erfolgreich aktualisiert'
 
-      # 3: With two hq locations
-      FactoryGirl.create :location, organization: orga, hq: true
-      orga.update_column :approved, false
-      click_link 'Bearbeiten', match: :first
-      check 'organization_approved'
-      click_button 'Speichern'
-      page.must_have_content 'Es muss genau eine HQ-Location zugeordnet werden'
+      # complete works
+      click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung war erfolgreich.'
+
+      # There is no approve link as same user
+      page.wont_have_link 'Freischalten'
+
+      # Approval works as different user
+      login_as superuser
+      visit current_path
+      page.must_have_link 'Freischalten'
+      click_link 'Freischalten'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
     end
 
     scenario 'Try to create offer with errors' do
@@ -135,18 +155,37 @@ feature 'Admin Backend' do
                              ' ausgewählten Organisationen gehören oder als'\
                              ' SPoC markiert sein'
 
-      # contact_person becomes SPoC, it saves
+      # contact_person becomes SPoC, still needs target_audience
       contact_person.update_column :spoc, true
       click_button 'Speichern und bearbeiten'
       page.wont_have_content 'Contact people müssen alle zu einer der'\
                              ' ausgewählten Organisationen gehören oder als'\
                              ' SPoC markiert sein'
+      page.must_have_content 'Target audience wird benötigt'
+
+      # target audience selected, needs language filters
+      select 'Children', from: 'offer_target_audience'
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Target audience wird benötigt'
+      page.must_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
+
+      # language filter selected, it saves
+      select 'English', from: 'offer_language_filter_ids'
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Language filters benötigt mindestens einen'\
+                             ' Sprachfilter'
       page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
 
-      # Update to trigger validation
-      check 'offer_completed'
-      click_button 'Speichern'
+      ## Test Update validations
 
+      # Try to complete, doesnt work
+      click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung konnte nicht erfolgen'
+      page.must_have_content 'nicht valide'
+
+      # See what the issue is (orga/location mismatch)
+      click_button 'Speichern und bearbeiten'
       page.must_have_content 'Angebot wurde nicht aktualisiert'
       page.must_have_content(
         'Location muss zu der unten angegebenen Organisation gehören.'
@@ -154,12 +193,29 @@ feature 'Admin Backend' do
       page.must_have_content(
         'Organizations muss die des angegebenen Standorts beinhalten.'
       )
+
+      # Fix Orga/Location mismatch, it saves again
+      location.update_column :organization_id, 1
+      click_button 'Speichern und bearbeiten'
+      page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
+      page.wont_have_content(
+        'Location muss zu der unten angegebenen Organisation gehören.'
+      )
+      page.wont_have_content(
+        'Organizations muss die des angegebenen Standorts beinhalten.'
+      )
+
+      # Complete works
+      click_link 'Als komplett markieren'
+      page.wont_have_content 'Zustandsänderung konnte nicht erfolgen'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
     end
 
     scenario 'Approve offer' do
       orga = organizations(:basic)
+      orga.update_column :aasm_state, 'completed'
 
-      # 1: Create incomplete offer
+      # Create incomplete offer
       visit rails_admin_path
 
       click_link 'Angebote', match: :first
@@ -170,63 +226,28 @@ feature 'Admin Backend' do
       fill_in 'offer_next_steps', with: 'testnextsteps'
       fill_in 'offer_age_from', with: 0
       fill_in 'offer_age_to', with: 18
-      select 'Personal', from: 'offer_encounter'
+      select 'Hotline', from: 'offer_encounter'
       select 'basicLocation', from: 'offer_location_id'
       fill_in 'offer_age_to', with: 6
-      check 'offer_completed'
+
+      ## Test general validations
+
+      # Doesnt save, needs organization
       click_button 'Speichern und bearbeiten'
-
-      # 2: Fail to approve as same user
-      check 'offer_approved'
-      click_button 'Speichern'
-      page.must_have_content 'Approved kann nicht von dem/der Ersteller/in'\
-                             ' gesetzt werden'
-
-      # 3: Login as user able to approve, fail to approve incomplete offer
-      login_as superuser
-
-      visit rails_admin_path
-      click_link 'Angebote', match: :first
-      click_link 'Bearbeiten', match: :first
-
-      uncheck 'offer_completed'
-      check 'offer_approved'
-      click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht von dem/der Ersteller/in'\
-                             ' gesetzt werden'
-      page.must_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
-                             ' auch "Completed" gesetzt ist'
-
-      # 4: Set complete, fail to approve offer without organization
-      check 'offer_completed'
-      click_button 'Speichern'
-      page.wont_have_content 'Approved kann nicht angehakt werden, wenn nicht'\
-                             ' auch "Completed" gesetzt ist'
       page.must_have_content 'Organizations benötigt mindestens eine'\
                              ' Organisation'
 
-      # 5: fix orga selection error, but orga is not approved
-      orga.update_column :approved, false
+      # Organization given, needs an area and no location when remote
       select 'foobar', from: 'offer_organization_ids'
-      click_button 'Speichern'
-
+      click_button 'Speichern und bearbeiten'
       page.wont_have_content 'Organizations benötigt mindestens eine'\
                              ' Organisation'
-      page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
-                             ' beinhalten.'
-
-      # 6: fix all orga errors, needs an area and no location when not personal
-      orga.update_column :approved, true
-      select 'Hotline', from: 'offer_encounter'
-      click_button 'Speichern'
-      page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
-                             ' beinhalten.'
       page.must_have_content 'Area muss ausgefüllt werden, wenn Encounter'\
                              ' nicht "personal" ist'
       page.must_have_content 'Location darf keinen Standort haben, wenn'\
                              ' Encounter nicht "personal" ist'
 
-      # 7: area given and no location, needs language filter
+      # area given and no location, needs language filter
       select 'Deutschland', from: 'offer_area_id'
       select '', from: 'offer_location_id'
       click_button 'Speichern'
@@ -237,31 +258,52 @@ feature 'Admin Backend' do
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 
-      # 8: language filter given, needs target audience
+      # language filter given, needs target audience
       select 'Deutsch', from: 'offer_language_filter_ids'
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
       page.must_have_content 'Target audience wird benötigt'
 
-      # 9: target audience is given, offer is approved
+      # target audience is given, it saves
       select 'Acquintances', from: 'offer_target_audience'
-      click_button 'Speichern'
+      click_button 'Speichern und bearbeiten'
       page.wont_have_content 'Target audience wird benötigt'
-      page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
-    end
+      page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
 
-    scenario 'Mark offer as completed' do
-      visit rails_admin_path
+      ## Test Update validations
 
-      click_link 'Angebote', match: :first
-      click_link 'Bearbeiten'
+      # Try to complete, doesnt work
+      click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung konnte nicht erfolgen'
+      page.must_have_content 'nicht valide'
 
-      check 'offer_completed'
+      # See what the issue is
+      click_button 'Speichern und bearbeiten'
+      page.must_have_content 'Angebot wurde nicht aktualisiert'
 
-      click_button 'Speichern'
+      # Organization needs to be approved
+      page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten.'
 
-      page.must_have_content '✓'
+      # Organization gets approved,
+      orga.update_column :aasm_state, 'approved'
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
+                             ' beinhalten.'
+
+      click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+
+      # There is no approve link as same user
+      page.wont_have_link 'Freischalten'
+
+      # Approval works as different user
+      login_as superuser
+      visit current_path
+      page.must_have_link 'Freischalten'
+      click_link 'Freischalten'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
     end
 
     # calls partial dup that doesn't end up in an immediately valid offer

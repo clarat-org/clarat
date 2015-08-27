@@ -21,8 +21,7 @@ describe Organization do
     it { subject.must_respond_to :created_at }
     it { subject.must_respond_to :updated_at }
     it { subject.must_respond_to :comment }
-    it { subject.must_respond_to :completed }
-    it { subject.must_respond_to :approved }
+    it { subject.must_respond_to :aasm_state }
     it { subject.must_respond_to :mailings_enabled }
   end
 
@@ -51,6 +50,23 @@ describe Organization do
       it { subject.must have_many(:children).through :child_connections }
       it { subject.must have_many :parent_connections }
       it { subject.must have_many(:parents).through :parent_connections }
+    end
+  end
+
+  describe 'Observer' do
+    describe 'before_create' do
+      it 'should not change a created_by' do
+        organization.created_by = 123
+        organization.save!
+        organization.created_by.must_equal 123
+      end
+
+      it 'should set created_by if it doesnt exist' do
+        organization.created_by = nil
+        organization.save!
+        organization.created_by.must_equal ::PaperTrail.whodunnit
+        # Note we have a spec helper for PaperTrail
+      end
     end
   end
 end

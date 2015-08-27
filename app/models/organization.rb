@@ -45,18 +45,38 @@ class Organization < ActiveRecord::Base
   validates :founded, length: { is: 4 }, allow_blank: true
   validates :comment, length: { maximum: 800 }
   validates :slug, uniqueness: true
-
   # Custom Validations
-  validates :approved, approved: true
+  validate :validate_hq_location, on: :update
 
-  def before_approve
-    if locations.where(hq: true).count != 1
+  def validate_hq_location
+    if locations.to_a.count(&:hq) != 1
       errors.add(:base, I18n.t('organization.validations.hq_location'))
     end
   end
 
   # Statistics
   extend RailsAdminStatistics
+
+  # State Machine
+
+  include AASM
+  aasm do
+    ## States
+
+    state :initialized, initial: true
+    state :completed
+    state :approved
+
+    ## Transitions
+
+    event :complete do
+      transitions from: :initialized, to: :completed
+    end
+
+    event :approve, before: :set_approved_information do
+      transitions from: :completed, to: :approved, guard: :different_actor?
+    end
+  end
 
   # Methods
 
@@ -69,8 +89,7 @@ class Organization < ActiveRecord::Base
     self.dup.tap do |orga|
       orga.name = nil
       orga.founded = nil
-      orga.completed = false
-      orga.approved = false
+      orga.aasm_state = 'initialized'
     end
   end
 
@@ -88,5 +107,14 @@ class Organization < ActiveRecord::Base
 
   def homepage
     websites.find_by_host('own')
+  end
+
+  def set_approved_information
+    self.approved_at = Time.zone.now
+    self.approved_by = current_actor
+  end
+
+  def different_actor?
+    created_by && current_actor && created_by != current_actor
   end
 end

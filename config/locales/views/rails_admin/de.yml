@@ -28,7 +28,7 @@ de:
             external_feedback: "fa-users"
             paused: "fa-pause"
         events:
-          complete: "Als Komplett Markieren"
+          complete: "Als komplett markieren"
           approve: "Freischalten"
           expire: "Expire"
           deactivate_internal: "Deaktivieren (Intenal Feedback)"
@@ -38,3 +38,6 @@ de:
     main:
       change_state:
         success: "Die Zustandsänderung war erfolgreich."
+        invalid: |
+          Die Zustandsänderung konnte nicht erfolgen, da das Objekt noch nicht
+          valide ist.

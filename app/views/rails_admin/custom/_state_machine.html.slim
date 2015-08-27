@@ -1,5 +1,5 @@
 - if object.try(:aasm_state)
-  - if @object.class == Offer
+  - if object.class == Offer || object.class == Organization
     / TODO: Find a better way to selectively render this (RA config?)
     .StateMachine
       h3 Zustand

@@ -9,8 +9,6 @@ FactoryGirl.define do
       Organization.enumerized_attributes.attributes['legal_form'].values.sample
     end
     charitable { FFaker::Boolean.maybe }
-    completed { FFaker::Boolean.maybe }
-    approved false
 
     # optional
     comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..399] }
@@ -21,14 +19,24 @@ FactoryGirl.define do
       )
     end
     mailings_enabled true
+    created_by { FactoryGirl.create(:researcher).id }
 
     # associations
     transient do
       website_count { rand(0..3) }
+      location_count 1
     end
 
     after :create do |orga, evaluator|
       create_list :hyperlink, evaluator.website_count, linkable: orga
+      # Locations
+      if evaluator.location_count > 0
+        orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
+      end
+      if evaluator.location_count > 1
+        create_list :location, (evaluator.location_count - 1),
+                    organization: orga, hq: false
+      end
     end
 
     # traits

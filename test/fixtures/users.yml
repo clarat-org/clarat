@@ -1,0 +1,13 @@
+researcher:
+  id: 1
+  name: 'researcherName'
+  email: 'researcher@researcher.com'
+  role: 'researcher'
+  confirmed_at: 2000-01-01
+
+super:
+  id: 2
+  name: 'superName'
+  email: 'super@super.com'
+  role: 'super'
+  confirmed_at: 2000-01-01

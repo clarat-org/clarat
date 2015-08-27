@@ -32,6 +32,7 @@ class Offer
       validate :age_from_fits_age_to
       validate :location_and_area_fit_encounter
       validate :location_fits_organization, on: :update
+      validate :contact_people_are_choosable
 
       # Needs to be true before approval possible. Called in custom validation.
       # Uses method from CustomValidatable concern.
@@ -105,6 +106,16 @@ class Offer
 
           fail_validation :organizations, 'only_approved_organizations',
                           list: approved_organization_names
+        end
+      end
+
+      # Contact people either belong to one of the Organizations or are SPoC
+      def contact_people_are_choosable
+        contact_people.each do |contact_person|
+          next if contact_person.spoc ||
+                  organizations.include?(contact_person.organization)
+          # There are no intersections between both sets of orgas and not SPoC
+          fail_validation :contact_people, 'contact_person_not_choosable'
         end
       end
     end

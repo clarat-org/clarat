@@ -229,6 +229,7 @@ RailsAdmin.config do |config|
     field :comment do
       css_class 'js-count-character'
     end
+    field :notes
     field :next_steps do
       css_class 'js-count-character'
     end
@@ -284,8 +285,6 @@ RailsAdmin.config do |config|
     field :aasm_state do
       read_only true
     end
-    # Nested Fields
-    field :notes
 
     # Hidden fields
     edit do

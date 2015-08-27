@@ -20,6 +20,7 @@ FactoryGirl.define do
         Organization.enumerized_attributes.attributes['umbrella'].values.sample
       )
     end
+    mailings_enabled true
 
     # associations
     transient do
@@ -39,6 +40,10 @@ FactoryGirl.define do
         orga.reload
       end
       approved_by { FactoryGirl.create(:researcher).id }
+    end
+
+    trait :mailings_disabled do
+      mailings_enabled false
     end
   end
 end

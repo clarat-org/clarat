@@ -6,3 +6,4 @@ basic:
   offers_count: 1
   completed: t
   approved: t
+  mailings_enabled: t

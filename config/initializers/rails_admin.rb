@@ -28,9 +28,9 @@ RailsAdmin.config do |config|
 
   config.included_models = %w(
     Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter User Contact Keyword Definition
-    Area Subscription UpdateRequest Hyperlink OrganizationOffer
-    OrganizationConnection SearchLocation ContactPerson Email
+    LanguageFilter AgeFilter User Contact Keyword Definition Note Area Email
+    OrganizationConnection SearchLocation ContactPerson Subscription
+    UpdateRequest
   )
 
   config.actions do
@@ -104,7 +104,7 @@ RailsAdmin.config do |config|
     end
 
     field :websites
-    field :inform_email_blocked
+    field :mailings_enabled
     field :completed
     field :renewed
     field :approved
@@ -214,6 +214,7 @@ RailsAdmin.config do |config|
     field :comment do
       css_class 'js-count-character'
     end
+    field :notes
     field :next_steps do
       css_class 'js-count-character'
     end
@@ -330,11 +331,20 @@ RailsAdmin.config do |config|
     field :email
     field :organization
     field :offers
+    field :spoc do
+      help do
+        "Single Point of Contact / Zentrale Anlaufstelle."
+      end
+    end
     export do
       field :id
     end
     clone_config do
       custom_method :partial_dup
+    end
+
+    show do
+      field :referencing_notes
     end
   end
 
@@ -405,6 +415,77 @@ RailsAdmin.config do |config|
     object_label_method :address
   end
 
+  config.model 'Note' do
+    list do
+      field :text
+      field :topic
+      field :user
+      field :closed
+      field :created_at
+      field :notable
+      field :referencable
+    end
+
+    edit do
+      field :notable
+      field :text
+      field :topic
+      field :referencable
+
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+    end
+
+    nested do
+      field :notable do
+        visible false
+      end
+      field :text do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :topic do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+      field :referencable do
+        read_only do
+          !bindings[:object].new_record?
+        end
+      end
+    end
+
+    update do
+      field :id do
+        read_only true
+      end
+      field :text do
+        read_only true
+      end
+      field :topic do
+        read_only true
+      end
+      field :user do
+        read_only true
+      end
+      field :notable do
+        read_only true
+      end
+      field :user_id do
+        read_only true
+        visible false
+      end
+
+      field :referencable
+      field :closed
+    end
+  end
+
   config.model 'Filter' do
     weight 1
     list do
@@ -469,14 +550,6 @@ RailsAdmin.config do |config|
 
   config.model 'UpdateRequest' do
     weight 2
-  end
-
-  config.model 'Hyperlink' do
-    weight 3
-  end
-
-  config.model 'OrganizationOffer' do
-    weight 3
   end
 
   config.model 'ContactPersonOffer' do

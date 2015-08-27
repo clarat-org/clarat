@@ -80,6 +80,7 @@ feature 'Admin Backend' do
 
     scenario 'Try to create offer with errors' do
       location = FactoryGirl.create(:location, name: 'testname')
+      contact_person = FactoryGirl.create :contact_person
 
       visit rails_admin_path
 
@@ -124,10 +125,22 @@ feature 'Admin Backend' do
       page.wont_have_content 'Age to muss kleiner oder gleich 18 sein'
       page.must_have_content 'Age from darf nicht größer sein als Age to'
 
-      # Age  Filter correct, it saves
+      # Age Filter correct, but wrong contact_person chosen
       fill_in 'offer_age_from', with: 0
       fill_in 'offer_age_to', with: 18
+      select contact_person.display_name, from: 'offer_contact_person_ids'
       click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Age from darf nicht größer sein als Age to'
+      page.must_have_content 'Contact people müssen alle zu einer der'\
+                             ' ausgewählten Organisationen gehören oder als'\
+                             ' SPoC markiert sein'
+
+      # contact_person becomes SPoC, it saves
+      contact_person.update_column :spoc, true
+      click_button 'Speichern und bearbeiten'
+      page.wont_have_content 'Contact people müssen alle zu einer der'\
+                             ' ausgewählten Organisationen gehören oder als'\
+                             ' SPoC markiert sein'
       page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
 
       # Update to trigger validation
@@ -323,6 +336,27 @@ feature 'Admin Backend' do
 
       click_link 'Angebote', match: :first
       page.wont_have_link 'Statistiken'
+    end
+
+    # scenario 'Adding notes' ~> needs javascript for the "add note" button
+
+    scenario 'Viewing notes in admin show and edit works' do
+      note = FactoryGirl.create :note, topic: 'history', closed: true,
+                                       notable: offers(:basic)
+      note_text = note.text
+
+      visit rails_admin_path
+
+      click_link 'Angebote', match: :first
+
+      click_link 'Anzeigen'
+      page.must_have_content note_text
+
+      click_link 'Bearbeiten'
+      page.must_have_content note_text
+
+      page.must_have_css '.Note.closed'
+      page.must_have_css '.topic.history'
     end
   end
 

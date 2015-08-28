@@ -52,6 +52,9 @@ de:
       language_filter:
         one: Sprachfilter
         other: Sprachfilter
+      target_audience_filter:
+        one: Zielgruppenfilter
+        other: Zielgruppenfilter
       encounter_filter:
         one: Kontaktfilter
         other: Kontaktfilter

@@ -20,6 +20,9 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :age_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
+  has_and_belongs_to_many :target_audience_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
@@ -41,7 +44,6 @@ class Offer < ActiveRecord::Base
   enumerize :unapproved_reason, in: %w(N/A not_approved expired paused
                                        internal_review external_feedback)
   enumerize :target_gender, in: %w(whatever boys_only girls_only)
-  enumerize :target_audience, in: %w(children parents family acquintances)
 
   # Friendly ID
   extend FriendlyId
@@ -75,6 +77,7 @@ class Offer < ActiveRecord::Base
       offer.openings = self.openings
       offer.categories = self.categories
       offer.language_filters = self.language_filters
+      offer.target_audience_filters = self.target_audience_filters
       offer.websites = self.websites
       offer.contact_people = []
       offer.completed = false

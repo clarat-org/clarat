@@ -242,12 +242,12 @@ feature 'Admin Backend' do
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
-      page.must_have_content 'Target audience wird benötigt'
+      page.must_have_content 'benötigt mindestens einen Target Audience Filter'
 
       # 9: target audience is given, offer is approved
-      select 'Acquintances', from: 'offer_target_audience'
+      select 'Bekannte', from: 'offer_target_audience_filter_ids'
       click_button 'Speichern'
-      page.wont_have_content 'Target audience wird benötigt'
+      page.wont_have_content 'benötigt mindestens einen Target Audience Filter'
       page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
     end
 

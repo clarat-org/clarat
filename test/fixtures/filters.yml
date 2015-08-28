@@ -7,7 +7,19 @@ english:
   name: English
   identifier: eng
 
-baby_age:
-  type: AgeFilter
-  name: Babies
-  identifier: babies
+children:
+  type: TargetAudienceFilter
+  name: Kinder
+  identifier: children
+parents:
+  type: TargetAudienceFilter
+  name: Eltern
+  identifier: parents
+family:
+  type: TargetAudienceFilter
+  name: Familie
+  identifier: family
+acquintances:
+  type: TargetAudienceFilter
+  name: Bekannte
+  identifier: acquintances

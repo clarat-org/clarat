@@ -15,3 +15,19 @@ FactoryGirl.define do
     end
   end
 end
+
+# FactoryGirl.define do
+#   factory :target_audience_filter do
+#     name { %w(Kinder Eltern Familie Bekannte).sample }
+#     identifier { %(children parents family aquintances).sample }
+
+#     # associations
+#     transient do
+#       offer_count 0
+#     end
+#     after :create do |target_audience_filter, evaluator|
+#       create_list :offer, evaluator.offer_count,
+#                   target_audience_filter: target_audience_filter
+#     end
+#   end
+# end

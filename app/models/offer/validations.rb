@@ -40,20 +40,14 @@ class Offer
         # TODO: Refactor age validations lead to simple HTML 5 checks which are
         # eg not working in Safari. Also Rubocop complains...
         validate_associated_fields
-        validate_target_audience
       end
 
       private
 
-      def validate_target_audience
-        unless target_audience
-          fail_validation :target_audience, 'is_needed'
-        end
-      end
-
       def validate_associated_fields
         validate_associated_presence :organizations
         validate_associated_presence :language_filters
+        validate_associated_presence :target_audience_filters
       end
 
       def validate_associated_presence field

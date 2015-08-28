@@ -18,8 +18,8 @@ RailsAdmin.config do |config|
   config.authorize_with :cancan
   config.current_user_method &:current_user
 
-  config.excluded_models = ['AgeFilter', 'FederalState',
-                            'OrganizationConnection', 'Filter']
+  # config.excluded_models = ['AgeFilter', 'FederalState',
+  #                           'OrganizationConnection', 'Filter']
 
   ## == PaperTrail ==
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
@@ -27,8 +27,8 @@ RailsAdmin.config do |config|
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
   config.included_models = %w(
-    Organization Website Location FederalState Offer Opening Category Filter
-    LanguageFilter AgeFilter User Contact Keyword Definition Note Area Email
+    Organization Website Location FederalState Offer Opening Category
+    LanguageFilter User Contact Keyword Definition Note Area Email
     OrganizationConnection SearchLocation ContactPerson Subscription
     UpdateRequest
   )
@@ -241,7 +241,7 @@ RailsAdmin.config do |config|
     end
     field :language_filters
     field :target_gender
-    field :target_audience do
+    field :target_audience_filters do
       help do
         'Richtet sich das Angebot direkt an das Kind, oder an Erwachsene wie
         z.B. die Eltern, einen Nachbarn oder einen Lotsen'
@@ -499,6 +499,9 @@ RailsAdmin.config do |config|
     parent Filter
   end
   config.model 'AgeFilter' do
+    parent Filter
+  end
+  config.model 'Target_AudienceFilter' do
     parent Filter
   end
 

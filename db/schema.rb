@@ -206,8 +206,8 @@ ActiveRecord::Schema.define(version: 20150826133113) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 80,                      null: false
-    t.text     "description",                                                null: false
+    t.string   "name",                       limit: 80,                 null: false
+    t.text     "description",                                           null: false
     t.text     "next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -221,14 +221,14 @@ ActiveRecord::Schema.define(version: 20150826133113) do
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                               default: false
-    t.date     "expires_at",                                                 null: false
+    t.date     "expires_at",                                            null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
-    t.string   "target_gender",                         default: "whatever"
-    t.integer  "age_from",                                                   null: false
-    t.integer  "age_to",                                                     null: false
+    t.string   "target_gender"
+    t.integer  "age_from",                                              null: false
+    t.integer  "age_to",                                                null: false
     t.string   "target_audience"
     t.string   "aasm_state",                 limit: 32
   end

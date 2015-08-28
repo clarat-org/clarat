@@ -78,3 +78,5 @@ de:
         spoc: SPoC
       offer:
         aasm_state: Zustand
+      organization:
+        aasm_state: Zustand

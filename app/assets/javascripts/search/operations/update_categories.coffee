@@ -1,12 +1,12 @@
 class Clarat.Search.Operation.UpdateCategories
-  @updateActiveClasses: (activeCategory)->
+  @updateActiveClasses: (activeCategory) ->
     $('.Categories__list').find('.active').removeClass('active')
     $('.Categories__list').find("a[data-name='#{activeCategory}']")
       .parents('li').addClass 'active'
 
   @updateCounts: (personalFacetSet, remoteFacetSet) ->
-    personalCategoryFacets = personalFacetSet.facets._tags
-    remoteCategoryFacets = remoteFacetSet.facets._tags
+    personalCategoryFacets = personalFacetSet?.facets._tags
+    remoteCategoryFacets = remoteFacetSet?.facets._tags
 
     for categoryLink in $("#categories li > a")
       $categoryLink = $(categoryLink)

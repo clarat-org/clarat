@@ -6,8 +6,8 @@ describe OfferMailer do
 
   let(:offer) { offers(:basic) }
   let(:contact_person) do
-    FactoryGirl.create :contact_person,
-                       { email: email, offers: [offer] }.merge(options)
+    FactoryGirl.create(:contact_person,
+                       { email: email, offers: [offer] }.merge(options))
   end
   let(:options) { {} }
 
@@ -46,7 +46,7 @@ describe OfferMailer do
       offer3.contact_people.first.update_column :email_id, email.id
       offer3.organizations.first.update_column :mailings_enabled, false
 
-      assert_difference 'OfferMailing.count', 2 do
+      assert_difference 'OfferMailing.count', 2 do # lists offer and offer2
         subject.must have_body_text 'basicOfferName'
         subject.must have_body_text 'By mailings_enabled organization'
         subject.wont have_body_text 'By mailings_disabled organization'
@@ -104,16 +104,39 @@ describe OfferMailer do
   end
 
   describe '#newly_approved_offers' do
-    let(:email) { FactoryGirl.create :email, :with_security_code, :subscribed }
+    let(:email) { FactoryGirl.create(:email, :with_security_code, :subscribed) }
+    subject { OfferMailer.newly_approved_offers(email, offerArray) }
+
     before { contact_person }
 
-    subject { OfferMailer.newly_approved_offers email, [offer] }
+    describe 'for a single offer' do
+      let(:offerArray) { [offer] }
 
-    it 'must deliver and create offer_mailings' do
-      email.expects(:create_offer_mailings)
-      subject.must deliver_to email.address
-      subject.must have_body_text '/unsubscribe/'
-      subject.must have_body_text email.security_code
+      it 'must deliver and create offer_mailings' do
+        email.expects(:create_offer_mailings)
+        subject.must deliver_to email.address
+        subject.must have_subject 'clarat Berlin - Ihr neues Angebot'
+        subject.must have_body_text 'ein neues Angebot'
+        subject.must have_body_text '/unsubscribe/'
+        subject.must have_body_text email.security_code
+      end
+    end
+
+    describe 'for multiple offers' do
+      let(:options) { { offers: offers } }
+      let(:offerArray) do
+        [
+          offer,
+          FactoryGirl.create(:offer, :approved, name: 'another named offer')
+        ]
+      end
+
+      it 'must correctly mention them' do
+        subject.must have_subject 'clarat Berlin - Ihre neuen Angebote'
+        subject.must have_body_text 'neue Angebote'
+        subject.must have_body_text 'another named offer'
+        subject.must have_body_text 'Ihre Angebote'
+      end
     end
   end
 end

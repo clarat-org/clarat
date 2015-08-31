@@ -31,11 +31,13 @@ class OfferMailer < ActionMailer::Base
     @contact_person = @contact_people.first
     @multiple_contact_people = @contact_people.count > 1
     @offers = offers
+    @offers_count = @offers.count
     @unsubscribe_href =
       unsubscribe_url(id: email.id, security_code: email.security_code)
 
     email.create_offer_mailings @offers, :newly_approved
-    mail to: email.address,
+    mail subject: t('.subject', count: @offers_count),
+         to: email.address,
          from: 'Anne Schulze | clarat <anne.schulze@clarat.org>'
   end
 end

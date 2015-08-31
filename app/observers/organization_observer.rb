@@ -1,6 +1,6 @@
 class OrganizationObserver < ActiveRecord::Observer
   def before_save orga
-    orga.generate_html
+    orga.generate_html!
   end
 
   def before_create orga

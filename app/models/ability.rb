@@ -46,5 +46,6 @@ class Ability
     can :clone, :all
     # can :nested_set, :all
     can :nestable, :all
+    can :change_state, :all
   end
 end

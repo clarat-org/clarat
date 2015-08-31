@@ -12,9 +12,8 @@ class ExpiringOffersWorkerTest < ActiveSupport::TestCase # to have fixtures
     OfferMailer.expect_chain(:expiring_mail, :deliver).once
     # TODO: Fix this and the other tests with 4.2
     worker.perform
-    expiring.reload.approved.must_equal false
-    expiring.unapproved_reason.must_equal 'expired'
-    later.reload.approved.must_equal true
+    expiring.reload.must_be :expired?
+    later.reload.must_be :approved?
   end
 
   it 'does not send an email for offers that expired previously' do
@@ -22,13 +21,13 @@ class ExpiringOffersWorkerTest < ActiveSupport::TestCase # to have fixtures
     Timecop.freeze(Time.zone.local(2015)) do
       FactoryGirl.create :offer, expires_at: yesterday
     end
-    OfferMailer.not_expect_chain(:expiring_mail, :deliver)
+    OfferMailer.expects(:expiring_mail).never
     worker.perform
   end
 
   it 'does not send an email for offers that will expire' do
     FactoryGirl.create :offer, expires_at: (Time.zone.now.end_of_day + 1)
-    OfferMailer.not_expect_chain(:expiring_mail, :deliver)
+    OfferMailer.expects(:expiring_mail).never
     worker.perform
   end
 end

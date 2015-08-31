@@ -2,4 +2,5 @@
 = rails_admin_form_for @object, url: edit_path(@abstract_model, @object.id), as: @abstract_model.param_key, html: { method: "put", multipart: true, class: "form-horizontal denser", data: { title: @page_name } } do |form|
   = form.generate action: :update
 
+= render '/rails_admin/custom/state_machine', object: @object
 = render '/rails_admin/custom/notes', object: @object

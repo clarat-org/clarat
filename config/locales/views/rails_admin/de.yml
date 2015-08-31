@@ -8,3 +8,36 @@ de:
           hidden_contact: "Kontaktreferenz (hidden_contact)"
           external_info: "Externe Infos (external_info)"
           other: "Sonstiges (other)"
+
+      state_machine:
+        states:
+          names:
+            initialized: "initialized"
+            completed: "completed"
+            approved: "approved"
+            expired: "expired"
+            internal_feedback: "internally deactivated"
+            external_feedback: "externally deactivated"
+            paused: "paused"
+          icons:
+            initialized: "fa-file-o"
+            completed: "fa-check-circle-o"
+            approved: "fa-check-circle"
+            expired: "fa-calendar-times-o"
+            internal_feedback: "fa-user-times"
+            external_feedback: "fa-users"
+            paused: "fa-pause"
+        events:
+          complete: "Als komplett markieren"
+          approve: "Freischalten"
+          expire: "Expire"
+          deactivate_internal: "Deaktivieren (Intenal Feedback)"
+          deactivate_external: "Deaktivieren (External Feedback)"
+          pause: "Pausieren"
+
+    main:
+      change_state:
+        success: "Die Zustandsänderung war erfolgreich."
+        invalid: |
+          Die Zustandsänderung konnte nicht erfolgen, da %{obj} noch nicht
+          valide ist:

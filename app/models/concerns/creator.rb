@@ -7,5 +7,9 @@ module Creator
     rescue
       'anonymous'
     end
+
+    def current_actor
+      ::PaperTrail.whodunnit
+    end
   end
 end

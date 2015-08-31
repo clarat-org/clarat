@@ -15,8 +15,7 @@ describe Offer do
     it { subject.must_respond_to :updated_at }
     it { subject.must_respond_to :opening_specification }
     it { subject.must_respond_to :comment }
-    it { subject.must_respond_to :completed }
-    it { subject.must_respond_to :approved }
+    it { subject.must_respond_to :aasm_state }
     it { subject.must_respond_to :legal_information }
     it { subject.must_respond_to :age_from }
     it { subject.must_respond_to :age_to }
@@ -120,19 +119,19 @@ describe Offer do
 
     describe '#personal_indexable?' do
       it 'should return true when personal and approved' do
-        offer.approved = true
+        offer.aasm_state = 'approved'
         offer.stubs(:personal?).returns true
         offer.personal_indexable?.must_equal true
       end
 
       it 'should return false when not personal and approved' do
-        offer.approved = true
+        offer.aasm_state = 'approved'
         offer.stubs(:personal?).returns false
         offer.personal_indexable?.must_equal false
       end
 
       it 'should return false when not approved' do
-        offer.approved = false
+        offer.aasm_state = 'completed'
         offer.expects(:personal?).never
         offer.personal_indexable?.must_equal false
       end
@@ -140,19 +139,19 @@ describe Offer do
 
     describe '#remote_indexable?' do
       it 'should return true when not personal and approved' do
-        offer.approved = true
+        offer.aasm_state = 'approved'
         offer.stubs(:personal?).returns false
         offer.remote_indexable?.must_equal true
       end
 
       it 'should return false when personal and approved' do
-        offer.approved = true
+        offer.aasm_state = 'approved'
         offer.stubs(:personal?).returns true
         offer.remote_indexable?.must_equal false
       end
 
       it 'should return false when not approved' do
-        offer.approved = false
+        offer.aasm_state = 'completed'
         offer.expects(:personal?).never
         offer.remote_indexable?.must_equal false
       end

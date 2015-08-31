@@ -4,10 +4,10 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # Modules
-  include Validations, Search, Statistics
+  include Validations, Search, Statistics, StateMachine
 
   # Concerns
-  include Creator, Approvable, CustomValidatable, Notable
+  include Creator, CustomValidatable, Notable
 
   # Associtations
   belongs_to :location, inverse_of: :offers
@@ -37,9 +37,7 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(personal hotline email chat forum online-course list)
-  enumerize :unapproved_reason, in: %w(N/A not_approved expired paused
-                                       internal_review external_feedback)
+  enumerize :encounter, in: %w(personal hotline email chat forum online-course)
   enumerize :target_gender, in: %w(whatever boys_only girls_only)
   enumerize :target_audience, in: %w(children parents family acquintances)
 
@@ -55,7 +53,7 @@ class Offer < ActiveRecord::Base
   end
 
   # Scopes
-  scope :approved, -> { where(approved: true) }
+  scope :approved, -> { where(aasm_state: 'approved') }
   scope :by_mailings_enabled_organization, lambda {
     joins(:organizations).where('organizations.mailings_enabled = ?', true)
   }
@@ -77,8 +75,7 @@ class Offer < ActiveRecord::Base
       offer.language_filters = self.language_filters
       offer.websites = self.websites
       offer.contact_people = []
-      offer.completed = false
-      offer.approved = false
+      offer.aasm_state = 'initialized'
     end
   end
 

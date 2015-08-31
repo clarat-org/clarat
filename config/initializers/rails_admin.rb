@@ -1,3 +1,5 @@
+require_relative Rails.root.join('lib', 'rails_admin_extensions', 'rails_admin_change_state.rb').to_s
+
 RailsAdmin.config do |config|
 
   ### Popular gems integration
@@ -60,6 +62,7 @@ RailsAdmin.config do |config|
     nestable do
       only ['Category']
     end
+    change_state
 
     ## With an audit adapter, you can add:
     history_index
@@ -71,8 +74,7 @@ RailsAdmin.config do |config|
       field :offers_count
       field :name
       field :renewed
-      field :completed
-      field :approved
+      field :aasm_state
       field :creator
       field :locations_count
       field :created_by
@@ -90,6 +92,7 @@ RailsAdmin.config do |config|
     field :comment do
       css_class 'js-count-character'
     end
+    field :locations
     field :legal_form
     field :charitable
     field :accredited_institution
@@ -105,9 +108,23 @@ RailsAdmin.config do |config|
 
     field :websites
     field :mailings_enabled
-    field :completed
     field :renewed
-    field :approved
+    field :aasm_state do
+      read_only true
+      help false
+    end
+
+    # Hidden fields
+    edit do
+      field :created_by, :hidden do
+        visible do
+          bindings[:object].new_record?
+        end
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+    end
 
     show do
       field :offers
@@ -191,8 +208,7 @@ RailsAdmin.config do |config|
       field :name
       field :location
       field :renewed
-      field :completed
-      field :approved
+      field :aasm_state
       field :creator
       field :expires_at
       field :approved_at
@@ -233,7 +249,7 @@ RailsAdmin.config do |config|
     field :area
     field :organizations do
       help do
-        'Required before approval. Only approved organizations.'
+        'Required. Only approved organizations.'
       end
     end
     field :categories do
@@ -266,10 +282,23 @@ RailsAdmin.config do |config|
       inverse_of :offers
     end
     field :expires_at
-    field :completed
-    field :approved
-    field :unapproved_reason
     field :renewed
+    field :aasm_state do
+      read_only true
+      help false
+    end
+
+    # Hidden fields
+    edit do
+      field :created_by, :hidden do
+        visible do
+          bindings[:object].new_record?
+        end
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+    end
 
     show do
       field :created_at do
@@ -410,6 +439,7 @@ RailsAdmin.config do |config|
     field :address
     field :aasm_state do
       read_only true
+      help false
     end
 
     object_label_method :address

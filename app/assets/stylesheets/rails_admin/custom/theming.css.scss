@@ -15,9 +15,8 @@
 
 // Custom styling for Notes section
 .Notes {
-  h3 {
-    font-size: 14px;
-  }
+  h2 { font-size: 24px; }
+  h3 { font-size: 14px; }
 
   .Notes-List {
     margin-left: 20px;
@@ -48,6 +47,40 @@
       &.hidden_contact { background-color: $brand_orange; }
       &.external_info { background-color: $brand-violet; }
       &.other { background-color: $brand_brown; }
+    }
+  }
+}
+
+// Custom Styling for StateMachine section
+.StateMachine {
+  h2 { font-size: 24px; }
+
+  .StateMachine--State {
+    padding: 2px 3px;
+    color: $brand_white;
+    font-size: 12px;
+
+    &.initialized { background-color: darkkhaki; }
+    &.completed { background-color: darkseagreen; }
+    &.approved { background-color: darkcyan; }
+    &.expired { background-color: tomato; }
+    &.internal_feedback { background-color: darkorange; }
+    &.external_feedback { background-color: chocolate; }
+    &.paused { background-color: grey; }
+  }
+
+  ul.StateMachine--EventList {
+    padding: 0;
+
+    li.StateMachine--Event {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 5px;
+
+      a.btn-info {
+        background-color: dimgrey;
+        border: none;
+      }
     }
   }
 }

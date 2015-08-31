@@ -4,7 +4,7 @@ class OfferObserver < ActiveRecord::Observer
   end
 
   def before_save offer
-    offer.generate_html
+    offer.generate_html!
   end
 
   def before_create offer

@@ -12,9 +12,10 @@ FactoryGirl.define do
       # weighted
       %w(personal personal personal personal hotline chat forum email online-course).sample
     end
+    target_audience do
+      Offer.enumerized_attributes.attributes['target_audience'].values.sample
+    end
     area { Area.first unless encounter == 'personal' }
-    completed false
-    approved false
     approved_at nil
 
     # optional fields
@@ -52,6 +53,13 @@ FactoryGirl.define do
                     end
         offer.location = location
       end
+      # Filters
+      evaluator.language_count.times do
+        offer.language_filters << (
+          LanguageFilter.all.sample ||
+            FactoryGirl.create(:language_filter)
+        )
+      end
     end
 
     after :create do |offer, evaluator|
@@ -84,17 +92,11 @@ FactoryGirl.define do
           end
         )
       end
-      evaluator.language_count.times do
-        offer.language_filters << (
-          LanguageFilter.select(:id).all.sample ||
-            FactoryGirl.create(:language_filter)
-        )
-      end
     end
 
     trait :approved do
       after :create do |offer, _evaluator|
-        Offer.where(id: offer.id).update_all completed: true, approved: true,
+        Offer.where(id: offer.id).update_all aasm_state: 'approved',
                                              approved_at: Time.zone.now
         offer.reload
       end

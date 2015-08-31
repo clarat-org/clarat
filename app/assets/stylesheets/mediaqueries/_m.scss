@@ -48,6 +48,7 @@
 
   .header-main {
     height: auto;
+    margin-bottom: 0;
 
     .wrapper-inner {
       padding: 0;
@@ -62,57 +63,214 @@
     height: 320px;
   }
 
-  .Distributor {
-    //margin-top: 25px;
-    margin-right: 0;
+  .Logo {
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 91px;
+    height: 20px;
+    background-image: image-url('logo-c.svg');
+    background-size: 90px 20px;
+    background-repeat: no-repeat;
+  }
+
+
+  .Logo--start {
+    position: relative;
+    top: auto;
+    margin-top: 25px;
     margin-left: 0;
-    padding-left: 0;
-    min-width: 100%;
+    width: 180px;
+    height: 40px;
+    background-image: image-url('logo.svg');
+    background-size: 180px 40px;
+  }
+
+  .Claim {
+    margin-top: 90px;
+  }
+
+  .Distributor {
+    margin-top: 0;
+    padding-bottom: 5px;
+    height: auto;
+  }
+
+  .Distributor--start {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .Distributor--navigation {
+    padding-bottom: 0;
+    max-height: 55px;
+    max-width: 1000px;
     width: 100%;
-    border-radius: 0;
+    margin: 0;
+    border-top-left-radius: 0;
+
+    &.is-enlarged {
+      max-height: 95px;
+    }
+
+    .JS-Geolocation__prompt {
+      bottom: 35px;
+      margin: 0 20% 0 0;
+      padding: 5px;
+      width: 80%;
+    }
+
+  }
+
+  .JS-Geolocation__remove {
+    top: 5px;
+    right: 10px;
+
+    .Distributor--navigation & {
+      top: 2px;
+      right: 60px;
+    }
   }
 
   #new_search_form {
-    margin: 0 auto;
+    position: relative;
+    z-index: 30;
+    display: block;
+    margin-left: 114px;
+    padding: 10px 0;
+    max-height: 85px;
+    width: auto;
+    margin-right: 0;
+
+    .Distributor.is-enlarged & {
+      margin-left: 15px;
+
+      .tt-dropdown-menu {
+        right: 1px; // override JS
+      }
+    }
 
     .template--pages-home & {
+      max-height: none;
+
+      #search_form_query,
       #search_form_search_location {
-        margin: 0;
         width: 100%;
-      }
-
-      .main-search__submit {
-        width: 100%;
-        background-image: none;
-        color: $brand_white; // resetting hidden text on button
-        font: inherit;
-        font-size: 20px;
-      }
-
-      .input {
-        &.search_form_query {
-          margin-right: 0;
-        }
+        max-width: none;
       }
 
       .input.string {
-        @extend %clearfix;
+        padding-right: 0;
+
+        &.search_form_search_location {
+          display: block;
+        }
+      }
+    }
+
+    #search_form_query,
+    #search_form_search_location {
+      float: none;
+      max-width: none;
+    }
+
+    #search_form_search_location {
+      padding-left: 40px;
+    }
+
+    #search_form_query,
+    #search_form_search_location {
+      width: 100%;
+    }
+
+    #search_form_query {
+      padding-left: 53px;
+    }
+
+    #search_form_query,
+    #search_form_search_location,
+    .main-search__submit {
+      .template--pages-home & {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    .main-search__submit {
+      .template--pages-home & {
+        width: 100%;
+        background-image: none;
+        color: white;
+        font: inherit;
+        font-size: 20px;
+      }
+    }
+
+    #search_form_query,
+    #search_form_search_location {
+      @include input-placeholder(rgba($brand_brown, .72), 400, 16px);
+      height: 35px;
+      font-size: 16px;
+      line-height: 35px;
+    }
+
+    .main-search__submit {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      width: 40px;
+      height: 35px;
+      background-size: 60%;
+
+      &.is-enlarged {
+        top: 10px;
+        bottom: 0;
+        height: auto;
+      }
+
+      .template--pages-home & {
+        position: relative;
+        top: 0;
+        right: auto;
+      }
+    }
+
+    .input {
+      &.string {
         display: block;
-        float: none;
-        width: auto;
-        height: 50px;
+        padding-right: 55px;
+        width: 100%;
 
-        .input.string {
-          height: auto !important;
-          min-height: 40px;
-
-          &.search_form_search_location {
-          }
+        .template--pages-home & {
+          height: 40px;
         }
 
         &.search_form_search_location {
-          margin: 10px 0;
-          height: 50px;
+          display: none;
+          margin-top: 5px;
+          margin-bottom: 10px;
+
+          &.is-visible {
+            display: block;
+          }
+        }
+      }
+    }
+
+    label {
+      &.string {
+        top: 0;
+        left: 9px;
+        font-size: 16px;
+        line-height: 35px;
+
+        .template--pages-home & {
+          top: auto;
+          bottom: 3px;
+          left: 8px;
+          max-height: 40px;
         }
       }
     }

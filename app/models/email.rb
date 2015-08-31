@@ -72,7 +72,8 @@ class Email < ActiveRecord::Base
 
   # Has approved offers and at least one organization is mailings_enabled?
   def informable?
-    contact_people.joins(:offers).where('offers.approved = ?', true).any? &&
+    contact_people.joins(:offers)
+      .where('offers.aasm_state = ?', 'approved').any? &&
       organizations.where(mailings_enabled: true).any?
   end
 

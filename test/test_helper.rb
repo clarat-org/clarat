@@ -24,7 +24,8 @@ require 'pry-rescue/minitest' if ENV['RESCUE']
 require 'sidekiq/testing'
 require 'fakeredis'
 
-# First matchers, then modules, then helpers. Helpers need to come after modules due to interdependencies.
+# Inclusions: First matchers, then modules, then helpers.
+# Helpers need to be included after modules due to interdependencies.
 Dir[Rails.root.join('test/support/matchers/*.rb')].each { |f| require f }
 Dir[Rails.root.join('test/support/modules/*.rb')].each { |f| require f }
 Dir[Rails.root.join('test/support/spec_helpers/*.rb')].each { |f| require f }
@@ -39,11 +40,12 @@ Capybara.asset_host = 'http://localhost:3000'
 # For fixtures:
 include ActionDispatch::TestProcess
 
-# ~Disable logging for test performance! Change this value if you really need the log and run your suite again~
+# ~Disable logging for test performance!
+# Change this value if you really need the log and run your suite again~
 Rails.logger.level = 4
 
 ### Test Setup ###
-File.open(Rails.root.join('log/test.log'), 'w') { |f| f.truncate(0) } # clear test log
+File.open(Rails.root.join('log/test.log'), 'w') { |f| f.truncate(0) } # clearlog
 
 silence_warnings do
   # BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST # needed?

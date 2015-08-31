@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150820132300) do
+ActiveRecord::Schema.define(version: 20150826133113) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -206,8 +206,8 @@ ActiveRecord::Schema.define(version: 20150820132300) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 80,                          null: false
-    t.text     "description",                                                    null: false
+    t.string   "name",                       limit: 80,                      null: false
+    t.text     "description",                                                null: false
     t.text     "next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -216,23 +216,21 @@ ActiveRecord::Schema.define(version: 20150820132300) do
     t.datetime "updated_at"
     t.text     "opening_specification"
     t.text     "comment"
-    t.boolean  "completed",                             default: false
-    t.boolean  "approved",                              default: false
     t.datetime "approved_at"
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                               default: false
-    t.date     "expires_at",                                                     null: false
+    t.date     "expires_at",                                                 null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
-    t.string   "unapproved_reason",                     default: "not_approved"
-    t.string   "target_gender"
-    t.integer  "age_from",                                                       null: false
-    t.integer  "age_to",                                                         null: false
+    t.string   "target_gender",                         default: "whatever"
+    t.integer  "age_from",                                                   null: false
+    t.integer  "age_to",                                                     null: false
     t.string   "target_audience"
+    t.string   "aasm_state",                 limit: 32
   end
 
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
@@ -278,27 +276,26 @@ ActiveRecord::Schema.define(version: 20150820132300) do
   add_index "organization_offers", ["organization_id"], name: "index_organization_offers_on_organization_id", using: :btree
 
   create_table "organizations", force: true do |t|
-    t.string   "name",                                             null: false
-    t.text     "description",                                      null: false
-    t.string   "legal_form",                                       null: false
-    t.boolean  "charitable",                       default: true
+    t.string   "name",                                              null: false
+    t.text     "description",                                       null: false
+    t.string   "legal_form",                                        null: false
+    t.boolean  "charitable",                        default: true
     t.integer  "founded"
     t.string   "umbrella",               limit: 8
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "comment"
-    t.boolean  "completed",                        default: false
-    t.boolean  "approved",                         default: false
     t.datetime "approved_at"
-    t.integer  "offers_count",                     default: 0
-    t.integer  "locations_count",                  default: 0
+    t.integer  "offers_count",                      default: 0
+    t.integer  "locations_count",                   default: 0
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.boolean  "renewed",                          default: false
-    t.boolean  "accredited_institution",           default: false
+    t.boolean  "renewed",                           default: false
+    t.boolean  "accredited_institution",            default: false
     t.text     "description_html"
-    t.boolean  "mailings_enabled",                 default: false
+    t.boolean  "mailings_enabled",                  default: false
+    t.string   "aasm_state",             limit: 32
   end
 
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree

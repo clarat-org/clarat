@@ -27,23 +27,25 @@ class Offer
                 presence: true
 
       # Custom validations
-      validates :approved, approved: true
-      validate :only_approved_organizations
+      validate :validate_associated_fields
+      validate :validate_target_audience
+      validate :only_approved_organizations, on: :update
       validate :age_from_fits_age_to
       validate :location_and_area_fit_encounter
       validate :location_fits_organization, on: :update
       validate :contact_people_are_choosable
 
       # Needs to be true before approval possible. Called in custom validation.
-      # Uses method from CustomValidatable concern.
-      def before_approve
-        # TODO: Refactor age validations lead to simple HTML 5 checks which are
-        # eg not working in Safari. Also Rubocop complains...
-        validate_associated_fields
-      end
+      # def before_approve
+      #   TODO: Refactor age validations lead to simple HTML 5 checks which are
+      #   eg not working in Safari. Also Rubocop complains...
+      #   validate_associated_fields
+      #   validate_target_audience
+      # end
 
       private
 
+      # Uses method from CustomValidatable concern.
       def validate_associated_fields
         validate_associated_presence :organizations
         validate_associated_presence :language_filters
@@ -51,7 +53,7 @@ class Offer
       end
 
       def validate_associated_presence field
-        fail_validation field, "needs_#{field}" if send(field).count == 0
+        fail_validation field, "needs_#{field}" if send(field).empty?
       end
 
       ## Custom Validations ##

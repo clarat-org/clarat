@@ -17,7 +17,7 @@ FactoryGirl.define do
 
   factory :target_audience_filter do
     name { %w(Kinder Eltern Familie Bekannte).sample }
-    identifier { %(children parents family aquintances).sample }
+    identifier { %w(children parents family aquintances).sample }
 
     # # associations
     # transient do

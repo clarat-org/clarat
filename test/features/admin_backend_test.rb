@@ -24,7 +24,7 @@ feature 'Admin Backend' do
         select 'basicLocation', from: 'offer_location_id'
         select 'foobar', from: 'offer_organization_ids'
         select 'English', from: 'offer_language_filter_ids'
-        select 'Children', from: 'offer_target_audience'
+        select 'Bekannte', from: 'offer_target_audience_filter_ids'
         check 'offer_renewed'
 
         click_button 'Speichern'
@@ -161,12 +161,12 @@ feature 'Admin Backend' do
       page.wont_have_content 'Contact people müssen alle zu einer der'\
                              ' ausgewählten Organisationen gehören oder als'\
                              ' SPoC markiert sein'
-      page.must_have_content 'Target audience wird benötigt'
+      page.must_have_content 'benötigt mindestens einen Target Audience Filter'
 
       # target audience selected, needs language filters
-      select 'Children', from: 'offer_target_audience'
+      select 'Bekannte', from: 'offer_target_audience_filter_ids'
       click_button 'Speichern und bearbeiten'
-      page.wont_have_content 'Target audience wird benötigt'
+      page.wont_have_content 'benötigt mindestens einen Target Audience Filter'
       page.must_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
 
@@ -263,12 +263,12 @@ feature 'Admin Backend' do
       click_button 'Speichern'
       page.wont_have_content 'Language filters benötigt mindestens einen'\
                              ' Sprachfilter'
-      page.must_have_content 'Target audience wird benötigt'
+      page.must_have_content 'benötigt mindestens einen Target Audience Filter'
 
       # target audience is given, it saves
-      select 'Acquintances', from: 'offer_target_audience'
+      select 'Bekannte', from: 'offer_target_audience_filter_ids'
       click_button 'Speichern und bearbeiten'
-      page.wont_have_content 'Target audience wird benötigt'
+      page.wont_have_content 'benötigt mindestens einen Target Audience Filter'
       page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
 
       ## Test Update validations

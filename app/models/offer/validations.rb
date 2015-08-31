@@ -28,7 +28,6 @@ class Offer
 
       # Custom validations
       validate :validate_associated_fields
-      validate :validate_target_audience
       validate :only_approved_organizations, on: :update
       validate :age_from_fits_age_to
       validate :location_and_area_fit_encounter
@@ -45,16 +44,11 @@ class Offer
 
       private
 
-      def validate_target_audience
-        unless target_audience
-          fail_validation :target_audience, 'is_needed'
-        end
-      end
-
       # Uses method from CustomValidatable concern.
       def validate_associated_fields
         validate_associated_presence :organizations
         validate_associated_presence :language_filters
+        validate_associated_presence :target_audience_filters
       end
 
       def validate_associated_presence field

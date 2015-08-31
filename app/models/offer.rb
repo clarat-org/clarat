@@ -20,6 +20,9 @@ class Offer < ActiveRecord::Base
   has_and_belongs_to_many :age_filters,
                           association_foreign_key: 'filter_id',
                           join_table: 'filters_offers'
+  has_and_belongs_to_many :target_audience_filters,
+                          association_foreign_key: 'filter_id',
+                          join_table: 'filters_offers'
   has_and_belongs_to_many :openings
   has_and_belongs_to_many :keywords, inverse_of: :offers
   has_many :contact_person_offers, inverse_of: :offer
@@ -39,7 +42,6 @@ class Offer < ActiveRecord::Base
   extend Enumerize
   enumerize :encounter, in: %w(personal hotline email chat forum online-course)
   enumerize :target_gender, in: %w(whatever boys_only girls_only)
-  enumerize :target_audience, in: %w(children parents family acquintances)
 
   # Friendly ID
   extend FriendlyId
@@ -66,6 +68,9 @@ class Offer < ActiveRecord::Base
   delegate :minlat, :maxlat, :minlong, :maxlong,
            to: :area, prefix: true, allow_nil: true
 
+  # Customize duplication.
+  # Lots of configs here, so we are OK with a longer method:
+  # rubocop:disable Metrics/AbcSize
   def partial_dup
     self.dup.tap do |offer|
       offer.location = nil
@@ -73,11 +78,13 @@ class Offer < ActiveRecord::Base
       offer.openings = self.openings
       offer.categories = self.categories
       offer.language_filters = self.language_filters
+      offer.target_audience_filters = self.target_audience_filters
       offer.websites = self.websites
       offer.contact_people = []
       offer.aasm_state = 'initialized'
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   # handled in observer before save
   def generate_html!

@@ -12,6 +12,8 @@ de:
       needs_organizations: "benötigt mindestens eine Organisation"
       needs_age_filters: "benötigt mindestens einen Altersfilter"
       needs_language_filters: "benötigt mindestens einen Sprachfilter"
+      needs_target_audience_filters: |
+        benötigt mindestens einen Target Audience Filter"
       needs_area_when_remote: |
         muss ausgefüllt werden, wenn Encounter nicht "personal" ist
       needs_location_when_personal: |

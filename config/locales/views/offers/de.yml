@@ -100,9 +100,6 @@ de:
       what: "Worum geht's?"
       next_steps: "Was musst du tun?"
       who: "Wo gibt’s die Hilfe?"
-      obfuscated_email: |
-        Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-        verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
 
       # show partials
       opening_section:
@@ -134,6 +131,9 @@ de:
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "
+        obfuscated_email: |
+          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
       who_section:
         heading: "Wo kannst du dich melden?"
       who_location:

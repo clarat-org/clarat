@@ -40,6 +40,9 @@ Clarat::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  # Sitemap path
+  mount DynamicSitemaps::Engine => '/sitemap/'
+
   # All else => 404
   match '*path', to: 'pages#not_found', via: :all
 end

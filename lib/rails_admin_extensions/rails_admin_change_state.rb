@@ -24,7 +24,11 @@ module RailsAdmin
         register_instance_option :controller do
           proc do
             unless @object.valid?
-              flash[:error] = t('.invalid')
+              error_message = t('.invalid', obj: @object.class.to_s)
+              @object.errors.full_messages.each do |message|
+                error_message += '<br/>' + message
+              end
+              flash[:error] = error_message.html_safe
               redirect_to :back
               next
             end

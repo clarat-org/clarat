@@ -39,5 +39,5 @@ de:
       change_state:
         success: "Die Zustandsänderung war erfolgreich."
         invalid: |
-          Die Zustandsänderung konnte nicht erfolgen, da das Objekt noch nicht
-          valide ist.
+          Die Zustandsänderung konnte nicht erfolgen, da %{obj} noch nicht
+          valide ist:

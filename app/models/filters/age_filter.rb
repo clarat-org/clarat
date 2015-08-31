@@ -1,4 +1,4 @@
-# TODO Remove this. Age filter is no longer needed.
+# TODO: Remove this. Age filter is no longer needed.
 class AgeFilter < Filter
   extend Enumerize
 

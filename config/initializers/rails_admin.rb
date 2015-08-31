@@ -111,13 +111,14 @@ RailsAdmin.config do |config|
     field :renewed
     field :aasm_state do
       read_only true
+      help false
     end
 
     # Hidden fields
     edit do
       field :created_by, :hidden do
-        read_only do
-          !bindings[:object].new_record?
+        visible do
+          bindings[:object].new_record?
         end
         default_value do
           bindings[:view]._current_user.id
@@ -284,13 +285,14 @@ RailsAdmin.config do |config|
     field :renewed
     field :aasm_state do
       read_only true
+      help false
     end
 
     # Hidden fields
     edit do
       field :created_by, :hidden do
-        read_only do
-          !bindings[:object].new_record?
+        visible do
+          bindings[:object].new_record?
         end
         default_value do
           bindings[:view]._current_user.id
@@ -437,6 +439,7 @@ RailsAdmin.config do |config|
     field :address
     field :aasm_state do
       read_only true
+      help false
     end
 
     object_label_method :address

@@ -80,7 +80,7 @@ class Offer < ActiveRecord::Base
   end
 
   # handled in observer before save
-  def generate_html
+  def generate_html!
     self.description_html = MarkdownRenderer.render description
     self.description_html = Definition.infuse description_html
     self.next_steps_html = MarkdownRenderer.render next_steps
@@ -88,6 +88,7 @@ class Offer < ActiveRecord::Base
       self.opening_specification_html =
         MarkdownRenderer.render opening_specification
     end
+    true
   end
 
   # Get an array of websites, ordered as follows: (1) own non-pdf (2) own pdf

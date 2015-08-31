@@ -12,9 +12,6 @@ FactoryGirl.define do
       # weighted
       %w(personal personal personal personal hotline chat forum email online-course).sample
     end
-    target_audience do
-      Offer.enumerized_attributes.attributes['target_audience'].values.sample
-    end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
 
@@ -30,6 +27,7 @@ FactoryGirl.define do
       category_count { rand(1..3) }
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
+      audience_count { rand(1..2) }
       opening_count { rand(1..5) }
       fake_address false
     end
@@ -58,6 +56,12 @@ FactoryGirl.define do
         offer.language_filters << (
           LanguageFilter.all.sample ||
             FactoryGirl.create(:language_filter)
+        )
+      end
+      evaluator.audience_count.times do
+        offer.target_audience_filters << (
+          TargetAudienceFilter.all.sample ||
+            FactoryGirl.create(:target_audience_filter)
         )
       end
     end

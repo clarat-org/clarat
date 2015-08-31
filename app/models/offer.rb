@@ -68,6 +68,9 @@ class Offer < ActiveRecord::Base
   delegate :minlat, :maxlat, :minlong, :maxlong,
            to: :area, prefix: true, allow_nil: true
 
+  # Customize duplication.
+  # Lots of configs here, so we are OK with a longer method:
+  # rubocop:disable Metrics/AbcSize
   def partial_dup
     self.dup.tap do |offer|
       offer.location = nil
@@ -81,6 +84,7 @@ class Offer < ActiveRecord::Base
       offer.aasm_state = 'initialized'
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   # handled in observer before save
   def generate_html

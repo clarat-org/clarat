@@ -28,7 +28,6 @@ class Offer
 
       # Custom validations
       validate :validate_associated_fields
-      validate :validate_target_audience
       validate :only_approved_organizations, on: :update
       validate :age_from_fits_age_to
       validate :location_and_area_fit_encounter

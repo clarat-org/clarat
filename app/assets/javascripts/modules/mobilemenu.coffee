@@ -5,7 +5,7 @@ initMobileMenu = ->
   $inputLocationContainer = $(".search_form_search_location")
   $submit = $(".main-search__submit")
   $distributor = $(".Distributor--navigation")
-  smartphone = ($(window).width() < 480)
+  smartphone = ($(window).width() < 1000)
 
   if $homeTemplate
     return

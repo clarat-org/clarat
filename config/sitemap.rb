@@ -48,4 +48,4 @@ sitemap_for(Organization.approved, &high_prio)
 #   end
 
 # Ping search engines after sitemap generation:
-# ping_with "http://#{host}/sitemaps/sitemap.xml
+ping_with "http://#{host}/sitemaps/sitemap.xml"

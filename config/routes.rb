@@ -41,7 +41,7 @@ Clarat::Application.routes.draw do
   end
 
   # Sitemap path
-  mount DynamicSitemaps::Engine => '/sitemap/'
+  mount DynamicSitemaps::Engine => '/sitemaps/'
 
   # All else => 404
   match '*path', to: 'pages#not_found', via: :all

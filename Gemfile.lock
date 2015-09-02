@@ -63,12 +63,12 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
-    aws-sdk (2.1.16)
-      aws-sdk-resources (= 2.1.16)
-    aws-sdk-core (2.1.16)
+    aws-sdk (2.1.18)
+      aws-sdk-resources (= 2.1.18)
+    aws-sdk-core (2.1.18)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.1.16)
-      aws-sdk-core (= 2.1.16)
+    aws-sdk-resources (2.1.18)
+      aws-sdk-core (= 2.1.18)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)

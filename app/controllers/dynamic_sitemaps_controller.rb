@@ -3,17 +3,12 @@ class DynamicSitemapsController < ApplicationController
   skip_before_action :authenticate_user!
 
   def sitemap
-    sitemap = ::Sitemap.where(path: request.path[9..-1]).first
+    sitemap = ::Sitemap.find_by_path(request.path[1..-1])
 
     if sitemap
       render text: sitemap.content
     else
-      not_found
+      goto_404
     end
-  end
-
-  protected
-  def not_found
-    raise ActionController::RoutingError.new('Not Found')
   end
 end

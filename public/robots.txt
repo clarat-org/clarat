@@ -3,4 +3,4 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # Disallow: /
 User-agent: *
-Sitemap: http://www.clarat.org/sitemap/sitemaps/sitemap.xml
+Sitemap: http://www.clarat.org/sitemaps/sitemap.xml

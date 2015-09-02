@@ -1,9 +1,11 @@
 # "ActiveScript" is a custom implementation of rails' Active* Style methods for
 # JavaScript.
 # Meant to be extended. Might be made into a gem.
-class ActiveScript.Presenter extends ActiveScript.Singleton
+class ActiveScript.Presenter extends ActiveScript.SingleInstance
   constructor: ->
-    # Presenters are two-way streets. We render via the presenter and callbacks give information back.
+    super()
+    # Presenters are two-way streets. We render via the presenter and callbacks
+    # give information back.
     @registerCallbacks()
 
   # render a template to the current browser view

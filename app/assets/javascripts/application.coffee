@@ -45,7 +45,7 @@ about supported directives.
 # = require handlebars/helpers
 #
 # = require active_script/setup
-# = require active_script/singleton
+# = require active_script/single_instance
 # = require active_script/presenter
 # = require active_script/model
 #

@@ -144,4 +144,4 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
 
 $(document).ready ->
-  Clarat.Location.presenter = Clarat.Location.Presenter.get()
+  Clarat.Location.presenter = new Clarat.Location.Presenter

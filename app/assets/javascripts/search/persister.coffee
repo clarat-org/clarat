@@ -16,8 +16,7 @@ or HTTP request:
 
 Think of it as the database, that the model interacts with.
 ###
-# Pattern: Singleton
-class Clarat.Search.Persister extends ActiveScript.Singleton
+class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'generated_geolocation', # , 'geolocation'
@@ -83,4 +82,4 @@ class Clarat.Search.Persister extends ActiveScript.Singleton
     return window.location.href.split('?')[0] + changedHref
 
 
-Clarat.Search.persister = Clarat.Search.Persister.get()
+Clarat.Search.persister = new Clarat.Search.Persister

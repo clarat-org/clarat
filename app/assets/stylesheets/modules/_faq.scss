@@ -9,6 +9,7 @@
 }
 
 .FAQ_question {
+  @extend %roboto_bold;
   margin-bottom: 0;
   cursor: pointer;
   text-decoration: underline;
@@ -17,6 +18,7 @@
 .FAQ_paragraph {
   display: none;
   margin-bottom: 0.5em;
+
   ul {
     padding-left: 2em;
   }

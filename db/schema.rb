@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150826133113) do
+ActiveRecord::Schema.define(version: 20150827154623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -312,6 +312,13 @@ ActiveRecord::Schema.define(version: 20150826133113) do
 
   add_index "search_locations", ["geoloc"], name: "index_search_locations_on_geoloc", using: :btree
   add_index "search_locations", ["query"], name: "index_search_locations_on_query", using: :btree
+
+  create_table "sitemaps", force: true do |t|
+    t.string "path",    null: false
+    t.text   "content"
+  end
+
+  add_index "sitemaps", ["path"], name: "index_sitemaps_on_path", unique: true, using: :btree
 
   create_table "subscriptions", force: true do |t|
     t.string   "email"

@@ -46,11 +46,12 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unverified_classes
-    %w(PagesController)
+    %w(PagesController DynamicSitemapsController)
   end
 
   def pundit_unscoped_classes
-    %w(OffersController CategoriesController ContactsController)
+    %w(OffersController CategoriesController ContactsController
+       DynamicSitemapsController)
   end
 
   ### / Pundit Helpers ###

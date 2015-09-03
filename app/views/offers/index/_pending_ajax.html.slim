@@ -5,8 +5,11 @@
       h2= t '.searching'
       i.fa.fa-spin.fa-circle-o-notch
 
-- content_for :view_specific_scripts do
-
   javascript:
-    Clarat.Search.Presenter.get().sendMainSearch()
-    Clarat.Search.Presenter.get().sendLocationSupportSearch()
+    window.onload = function() {
+      if (!Clarat.Search.presenter) {
+        Clarat.Search.presenter = new Clarat.Search.Presenter
+        Clarat.Search.presenter.sendMainSearch()
+        Clarat.Search.presenter.sendLocationSupportSearch()
+      }
+    }

@@ -33,4 +33,4 @@ class Clarat.SingleClickButton.Presenter extends ActiveScript.Presenter
         originalHTML:
           $(event.target).find('.JS-Single-Click-Button__original').html()
 
-Clarat.SingleClickButton.Presenter.get()
+new Clarat.SingleClickButton.Presenter

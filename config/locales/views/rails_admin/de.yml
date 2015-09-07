@@ -31,7 +31,7 @@ de:
           complete: "Als komplett markieren"
           approve: "Freischalten"
           expire: "Expire"
-          deactivate_internal: "Deaktivieren (Intenal Feedback)"
+          deactivate_internal: "Deaktivieren (Internal Feedback)"
           deactivate_external: "Deaktivieren (External Feedback)"
           pause: "Pausieren"
 

@@ -258,8 +258,9 @@ de:
           Zu vielen Angeboten kannst du hingehen. Bei anderen hilft man dir am
           Telefon oder online. Zum Beispiel per E-Mail und Chat. Oder in einem
           Forum oder einem Online-Kurs.
-        question_three: "> Finde ich bei clarat Unterstützungsangebote für
-          Menschen mit Behinderung?"
+        question_three: |
+          > Finde ich bei clarat Unterstützungsangebote für Menschen mit
+          Behinderung?
         answer_three_first_part: |
           Bei clarat gibt es auch Angebote für Kinder und Jugendliche mit
           Behinderung. Und für ihre Familien. Aber nur einige Angebote, denn
@@ -303,8 +304,9 @@ de:
           Unterstützungsangebote angezeigt werden, dann kannst du außerdem
           einen Suchbegriff eingeben. Schreib den Begriff in das Feld *Finde*.
           So kannst du für das Thema, das du ausgesucht hast, Angebote finden.
-        question_five: "> Was kann ich machen, wenn ich mein Problem nicht genau
-          beschreiben kann?"
+        question_five: |
+          > Was kann ich machen, wenn ich mein Problem nicht genau beschreiben
+          kann?
         answer_five: |
           Hier hilft dir die Suche über die Themen. Du kannst zwischen den
           Themen Familie, Gesundheit, Lernen und Gewalt wählen. Klicke auf eines
@@ -402,8 +404,8 @@ de:
           *Musterstraße Berlin*. Schreib in das Feld *Finde*, welche Hilfe du
           suchst. Oder was dein Problem ist. Zum Beispiel *Drogen* oder
           *arbeitslos*. Dann klick einfach auf die Lupe und finde Unterstützung!
-        question_twelve: "> Wieso finde ich keine Unterstützungsangebote in
-          meiner Nähe?"
+        question_twelve: |
+          > Wieso finde ich keine Unterstützungsangebote in meiner Nähe?
         answer_twelve_first_part: |
           Das kann daran liegen, dass wir für deinen Standort leider noch keine
           Angebote gesammelt haben. Hier einige Tipps, damit du doch Hilfe
@@ -444,7 +446,6 @@ de:
           bald ändern können, ist deine Rückmeldung für uns sehr wichtig. Gib
           uns bitte per E-Mail an post@clarat.org Bescheid, wenn du nicht
           findest, was du suchst.
-
           Hier einige Tipps, die dir bei der Suche helfen.
         answer_fourteen_bullet_one: |
           Probiere es mit einem anderen Suchbegriff. Wenn das nicht
@@ -455,8 +456,9 @@ de:
         answer_fourteen_bullet_three: |
           Wenn du auf dem Land wohnst: Dann probiere im Feld *Wo* eine Stadt bei
           dir in der Nähe einzugeben.
-        question_fifteen: "> Was kann ich machen, wenn ich nicht weiß, ob das
-          Angebot das richtige für mich ist?"
+        question_fifteen: |
+          > Was kann ich machen, wenn ich nicht weiß, ob das Angebot das
+          richtige für mich ist?"
         answer_fifteen: |
           Am besten du guckst zuerst genau, bei welchem Problem das Angebot
           hilft. Wenn es noch nicht ganz die richtige Hilfe für dich ist, dann
@@ -464,8 +466,9 @@ de:
           bist, frage am besten beim Anbieter nach. Oft kann man anrufen oder
           eine E-Mail schreiben. Telefonnummern und E-Mail-Adressen findest du
           bei clarat. Die stehen unter *Wo kannst du dich melden?*.
-        question_sixteen: "> Wie finde ich Angebote, wenn ich nicht für mich
-          selbst Hilfe suche, sondern für jemand anderen?"
+        question_sixteen: |
+          > Wie finde ich Angebote, wenn ich nicht für mich selbst Hilfe suche,
+          sondern für jemand anderen?"
         answer_sixteen: |
           Bei clarat kannst du nicht nur für dich selbst nach Hilfe suchen.
           Sondern auch für andere. Zum Beispiel für einen Freund. Oder als Onkel
@@ -493,15 +496,16 @@ de:
           mit konkreten Fragen zu seinem Problem direkt an. Die clarat-Sprache
           soll den Nutzer respektvoll behandeln und ihn da abholen, wo er
           gerade steht.
-        question_two: "> Worauf muss ich bei der Übersetzung in andere Sprachen
-          achten?"
+        question_two: |
+          > Worauf muss ich bei der Übersetzung in andere Sprachen achten?
         answer_two: |
           Schwierige Wörter werden bei clarat, wenn möglich, in einem Satz
           erklärt. Manche Wörter brauchen aber längere Erklärungen. Diese Wörter
           erkennst du bei clarat daran, dass sie unterstrichen sind. Wenn du mit
           der Maus über diese Wörter fährst, siehst du die Erklärungen.
-        question_three: "> Warum schreibt clarat immer nur zum Beispiel
-          *Schüler* und nicht *Schüler und Schülerinnen*?"
+        question_three: |
+          > Warum schreibt clarat immer nur zum Beispiel *Schüler* und nicht
+          *Schüler und Schülerinnen*?
         answer_three: |
           Bei clarat nutzen wir eine einfache Sprache. Das bedeutet auch, dass
           wir kurze Sätze verwenden. Deswegen sagen wir nicht jedesmal Schüler
@@ -537,15 +541,16 @@ de:
           wird, gibt es manchmal sprachliche Fehler. Es kann also sein, dass
           etwas komisch klingt. Schau dann lieber noch einmal in den deutschen
           Text.
-        question_seven: "> Worauf muss ich bei der Übersetzung in andere
-          Sprachen achten?"
+        question_seven: |
+          > Worauf muss ich bei der Übersetzung in andere Sprachen achten?
         answer_seven: |
           Der Google Translator macht automatische Übersetzungen. Deswegen gibt
           es machmal sprachliche Fehler. Es kann also sein, dass etwas nicht
           ganz richtig übersetzt wird. Schau dann lieber noch einmal in den
           deutschen Text.
-        question_eight: "> Worauf muss ich achten, wenn ich clarat auf einer
-          anderen Sprache benutze?"
+        question_eight: |
+          > Worauf muss ich achten, wenn ich clarat auf einer anderen Sprache
+          benutze?
         answer_eight: |
           Bei der Themen-Suche musst du das hier beachten:
           Wenn du clarat auf einer anderen Sprache benutzt, kannst du am besten
@@ -554,7 +559,6 @@ de:
           schlägt dir dann noch mehr Themen vor, die du anklicken kannst.
           Außerdem gibt es das Thema Notfall. Hier findest du Hilfe bei sehr
           dringenden Problemen.
-        
           Bei der Suche über das Feld *Finde* musst du das hier beachten:
           Du kannst auch ein Suchwort im Feld *Finde* eingeben. Pass auf, du
           musst hier deutsche Wörter eingeben. Sonst funktioniert die Suche
@@ -571,8 +575,9 @@ de:
           leicht das richtige Angebot finden.
         section_four:
         heading: "Hast du Fragen als Organisation?"
-        question_one: "> Welche Unterstützungsangebote für Kinder, Jugendliche
-          und Familien gibt es grundsätzlich bei clarat?"
+        question_one: |
+          > Welche Unterstützungsangebote für Kinder, Jugendliche und Familien
+          gibt es grundsätzlich bei clarat?
         answer_one: |
           clarat möchte Kindern und Jugendlichen unter 18 Jahren zeigen, wo sie
           Hilfe finden. Und Eltern, die Kinder und Jugendliche in diesem Alter
@@ -613,23 +618,25 @@ de:
           Organisation mehrere Standorte in Berlin hat, gib in dem Feld *Wo*
           nur *Berlin* ein. Momentan haben wir viele Angebote für Berlin
           gesammelt.
-        question_four: "> Wie kann ich mir meine Angebote in einer Übersicht
-          anzeigen lassen?"
+        question_four: |
+          > Wie kann ich mir meine Angebote in einer Übersicht anzeigen lassen?
         answer_four: |
           Du kannst in dem Feld *Finde* den Namen deiner Organisation eintragen.
           Und dann in dem Feld *Wo* den Standort deiner Organisation. Zum
           Beispiel *Mustermannstraße Berlin* oder *Berlin*. Dann bekommst du
           deine Angebote in einer Übersicht angezeigt.
-        question_five: "> Warum sind die Angebote bei clarat anders beschrieben
-          als auf unserer Webseite?"
+        question_five: |
+          > Warum sind die Angebote bei clarat anders beschrieben als auf
+          unserer Webseite?"
         answer_five: |
           Damit alle Hilfe finden, schreiben wir alle Angebote in einer
           einfachen Sprache. In einfacher Sprache müssen komplizierte Dinge
           manchmal einfacher erklärt werden, als sie in Wirklichkeit sind.
           Vielleicht findest du, dass etwas anders erklärt werden soll. Dann
           gib uns bitte per E-Mail an %{mailto} Bescheid.
-        question_six: "> Warum finde ich einige meiner Unterstützungsangebote
-          nicht bei clarat?"
+        question_six: |
+          > Warum finde ich einige meiner Unterstützungsangebote nicht bei
+          clarat?
         answer_six: |
           Die Vielfalt und Anzahl an Hilfen für Kinder, Jugendliche und Familien
           in Deutschland ist sehr groß. Und clarat wird Stück für Stück

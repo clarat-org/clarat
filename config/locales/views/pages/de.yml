@@ -162,8 +162,8 @@ de:
           Unterstützungsangebote auch auf Arabisch, Englisch, Französisch,
           Polnisch, Russisch und Türkisch lesen. clarat nutzt den
           Google-Translator. Da kannst du die Sprache einstellen.
-        question_eleven: "> Warum schreibt clarat immer in einer einfachen
-          Sprache?"
+        question_eleven: |
+          > Warum schreibt clarat immer in einer einfachen Sprache?
         answer_eleven: |
           Damit alle Hilfe finden, schreiben wir alle Angebote in einer
           einfachen Sprache. Diese einfache Sprache ist für alle leicht
@@ -183,8 +183,8 @@ de:
         answer_thirteen: |
           clarat ist kostenlos und bleibt kostenlos. Jeder kann bei clarat nach
           Hilfe für Jugendliche, Kinder und Familien suchen.
-        question_fourteen: "> Kann ich bei clarat Angebote finden, die ich
-          kostenlos nutzen kann?"
+        question_fourteen: |
+          > Kann ich bei clarat Angebote finden, die ich kostenlos nutzen kann?
         answer_fourteen: |
           Viele Angebote, die du bei clarat findest, sind kostenlos. Es gibt
           aber auch Angebote, die etwas kosten. Das heißt nicht automatisch,
@@ -197,8 +197,8 @@ de:
         answer_fifteen: |
           Die Suche bei clarat ist immer anonym. Das heißt, niemand bei clarat
           kennt deinen Namen oder deine Adresse.
-        question_sixteen: "> Kann ich bei clarat Angebote finden, die ich anonym
-          nutzen kann?"
+        question_sixteen: |
+          > Kann ich bei clarat Angebote finden, die ich anonym nutzen kann?"
         answer_sixteen: |
           Bei clarat findest du verschiedene Unterstützungsangebote. Einige
           davon kannst du anonym nutzen. Das heißt, dass du niemandem deinen
@@ -214,14 +214,14 @@ de:
           Informationen nicht mehr stimmen, dann aktualisieren wir sie. Das
           heißt, wir tauschen sie aus. Wir hoffen, dass uns auch die Anbieter
           dabei helfen.
-        question_eiqhteen: "> Ist der Programmier-Code von clarat öffentlich
-          zugänglich?"
+        question_eiqhteen: |
+          > Ist der Programmier-Code von clarat öffentlich zugänglich?
         answer_eighteen: |
           Der Programmier-Code von clarat ist öffentlich zugänglich. Den Link zu
           unserem Code findest du hier
           [externer Link: [https://github.com/clarat-org/clarat].
-        question_nineteen: "> Bietet clarat eine Schnittstelle an, um Daten
-          weiterzuverwenden?"
+        question_nineteen: |
+          > Bietet clarat eine Schnittstelle an, um Daten weiterzuverwenden?
         answer_nineteen: |
           Momentan gibt es keine Schnittstelle, über die du Daten herunterladen
           oder weiterverarbeiten kannst. Es kann sein, dass es später so eine
@@ -229,7 +229,7 @@ de:
           gerade sammeln und sortieren wir hauptsächlich Daten. Wenn Du
           Interesse an einer solchen Schnittstelle hast, schreibe uns einfach
           eine Email an %{mailto}.
-        section_two:
+      section_two:
         heading: "Suchst du bei clarat nach Hilfe?"
         question_one: "> Wer kann bei clarat suchen?"
         answer_one: |
@@ -483,7 +483,7 @@ de:
           denkst, dass das Angebot für deine Tochter passt, kannst du dich hier
           auch melden. Oder deiner Tochter sagen, dass sie hier Hilfe bekommt
           und sich selbst melden kann.
-        section_three:
+      section_three:
         heading: "Hast du Fragen zur clarat-Sprache?"
         question_one: "> Was macht die clarat-Sprache aus?"
         answer_one: |
@@ -573,7 +573,7 @@ de:
           weitere Unterstützungsangebote in einer Übersicht angezeigt. Und zwar
           direkt in der Sprache, die du vorher ausgewählt hast. So kannst du
           leicht das richtige Angebot finden.
-        section_four:
+      section_four:
         heading: "Hast du Fragen als Organisation?"
         question_one: |
           > Welche Unterstützungsangebote für Kinder, Jugendliche und Familien

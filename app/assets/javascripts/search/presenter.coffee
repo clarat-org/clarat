@@ -41,6 +41,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
+    new Clarat.MapModal.Presenter # handles Map Button
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>

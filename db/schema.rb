@@ -315,6 +315,13 @@ ActiveRecord::Schema.define(version: 20150903120353) do
   add_index "search_locations", ["geoloc"], name: "index_search_locations_on_geoloc", using: :btree
   add_index "search_locations", ["query"], name: "index_search_locations_on_query", using: :btree
 
+  create_table "sitemaps", force: true do |t|
+    t.string "path",    null: false
+    t.text   "content"
+  end
+
+  add_index "sitemaps", ["path"], name: "index_sitemaps_on_path", unique: true, using: :btree
+
   create_table "statistics", force: true do |t|
     t.string  "topic",   limit: 40, null: false
     t.integer "user_id"

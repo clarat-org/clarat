@@ -127,7 +127,8 @@ gem 'paper_trail'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
-gem 'dynamic_sitemaps'
+gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
+                        branch: 'adds-custom-storages'
 
 # Model enhancements
 gem 'sanitize' # parser based sanitization

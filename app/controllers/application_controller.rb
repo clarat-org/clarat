@@ -46,14 +46,23 @@ class ApplicationController < ActionController::Base
   end
 
   def pundit_unverified_classes
-    %w(PagesController)
+    %w(PagesController DynamicSitemapsController)
   end
 
   def pundit_unscoped_classes
-    %w(OffersController CategoriesController ContactsController)
+    %w(OffersController CategoriesController ContactsController
+       DynamicSitemapsController)
   end
 
   ### / Pundit Helpers ###
+
+  # Disable browser cache for the current response. Use as before_action.
+  def disable_caching
+    response.headers['Cache-Control'] =
+      'no-cache, no-store, max-age=0, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = 'Fri, 01 Jan 1990 00:00:00 GMT'
+  end
 
   private
 

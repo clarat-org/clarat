@@ -2,14 +2,14 @@
 # The presenter handles communication between the view and the model.
 # It's like a rails Controller, but also handles requests from the view (JS
 # callbacks)
-# Patterns: Singleton instance; Model-Template-Presenter structure
+# Patterns: Single Instance; Model-Template-Presenter-ViewModel structure
 class Clarat.Search.Presenter extends ActiveScript.Presenter
   # This SubApplication sits inside the RoR Offers#index
   constructor: ->
     super()
 
     @model = Clarat.Search.Model.load()
-    @search()
+    @searchFramework()
 
 
   ### "CREATE ACTION" ###
@@ -38,7 +38,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### "SHOW ACTIONS" ###
 
   # Renders a mostly empty wireframe that the search results will be placed in.
-  search: ->
+  searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
 

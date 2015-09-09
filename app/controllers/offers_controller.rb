@@ -4,6 +4,7 @@ class OffersController < ApplicationController
 
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :init_search_form, only: [:index]
+  before_action :disable_caching, only: :index
 
   rescue_from InvalidLocationError do |_error|
     render 'invalid_location', status: 404

@@ -66,6 +66,10 @@ class Organization < ActiveRecord::Base
     state :completed
     state :approved
 
+    # Special states object might enter after it was approved
+    state :internal_feedback # There was an issue (internal)
+    state :external_feedback # There was an issue (external)
+
     ## Transitions
 
     event :complete do
@@ -74,6 +78,18 @@ class Organization < ActiveRecord::Base
 
     event :approve, before: :set_approved_information do
       transitions from: :completed, to: :approved, guard: :different_actor?
+      transitions from: :internal_feedback, to: :approved
+      transitions from: :external_feedback, to: :approved
+    end
+
+    event :deactivate_internal do
+      transitions from: :approved, to: :internal_feedback
+      transitions from: :external_feedback, to: :internal_feedback
+    end
+
+    event :deactivate_external do
+      transitions from: :approved, to: :external_feedback
+      transitions from: :internal_feedback, to: :external_feedback
     end
   end
 

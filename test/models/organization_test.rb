@@ -39,18 +39,16 @@ describe Organization do
     end
   end
 
-  describe '::Base' do # TODO: Wieso, weshalb, warum?
-    describe 'associations' do
-      # What about has_many_through
-      it { subject.must have_many :offers }
-      it { subject.must have_many :locations }
-      it { subject.must have_many :hyperlinks }
-      it { subject.must have_many :websites }
-      it { subject.must have_many :child_connections }
-      it { subject.must have_many(:children).through :child_connections }
-      it { subject.must have_many :parent_connections }
-      it { subject.must have_many(:parents).through :parent_connections }
-    end
+  describe 'associations' do
+    # What about has_many_through
+    it { subject.must have_many :offers }
+    it { subject.must have_many :locations }
+    it { subject.must have_many :hyperlinks }
+    it { subject.must have_many :websites }
+    it { subject.must have_many :child_connections }
+    it { subject.must have_many(:children).through :child_connections }
+    it { subject.must have_many :parent_connections }
+    it { subject.must have_many(:parents).through :parent_connections }
   end
 
   describe 'Observer' do
@@ -66,6 +64,147 @@ describe Organization do
         organization.save!
         organization.created_by.must_equal ::PaperTrail.whodunnit
         # Note we have a spec helper for PaperTrail
+      end
+    end
+  end
+
+  describe 'State Machine' do
+    describe 'initialized' do
+      it 'should complete' do
+        organization.complete
+        organization.must_be :completed?
+      end
+
+      it 'wont approve' do
+        assert_raises(AASM::InvalidTransition) { organization.approve }
+        organization.must_be :initialized?
+      end
+
+      it 'wont deactivate_internal' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_internal
+        end
+        organization.must_be :initialized?
+      end
+
+      it 'wont deactivate_external' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_external
+        end
+        organization.must_be :initialized?
+      end
+    end
+
+    describe 'completed' do
+      before { organization.aasm_state = :completed }
+
+      it 'should approve with a different actor' do
+        organization.stubs(:different_actor?).returns(true)
+        organization.approve
+        organization.must_be :approved?
+      end
+
+      it 'wont approve with the same actor' do
+        organization.stubs(:different_actor?).returns(false)
+        assert_raises(AASM::InvalidTransition) { organization.approve }
+        organization.must_be :completed?
+      end
+
+      it 'wont complete' do
+        assert_raises(AASM::InvalidTransition) { organization.complete }
+        organization.must_be :completed?
+      end
+
+      it 'wont deactivate_internal' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_internal
+        end
+        organization.must_be :completed?
+      end
+
+      it 'wont deactivate_external' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_external
+        end
+        organization.must_be :completed?
+      end
+    end
+
+    describe 'approved' do
+      before { organization.aasm_state = :approved }
+
+      it 'wont complete' do
+        assert_raises(AASM::InvalidTransition) { organization.complete }
+        organization.must_be :approved?
+      end
+
+      it 'wont approve' do
+        assert_raises(AASM::InvalidTransition) { organization.approve }
+        organization.must_be :approved?
+      end
+
+      it 'must deactivate_internal' do
+        organization.deactivate_internal
+        organization.must_be :internal_feedback?
+      end
+
+      it 'must deactivate_external' do
+        organization.deactivate_external
+        organization.must_be :external_feedback?
+      end
+    end
+
+    describe 'internal_feedback' do
+      before { organization.aasm_state = :internal_feedback }
+
+      it 'wont complete' do
+        assert_raises(AASM::InvalidTransition) { organization.complete }
+        organization.must_be :internal_feedback?
+      end
+
+      it 'must approve, even with same actor' do
+        organization.stubs(:different_actor?).returns(false)
+        organization.approve
+        organization.must_be :approved?
+      end
+
+      it 'wont deactivate_internal' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_internal
+        end
+        organization.must_be :internal_feedback?
+      end
+
+      it 'must deactivate_external' do
+        organization.deactivate_external
+        organization.must_be :external_feedback?
+      end
+    end
+
+    describe 'external_feedback' do
+      before { organization.aasm_state = :external_feedback }
+
+      it 'wont complete' do
+        assert_raises(AASM::InvalidTransition) { organization.complete }
+        organization.must_be :external_feedback?
+      end
+
+      it 'must approve, even with same actor' do
+        organization.stubs(:different_actor?).returns(false)
+        organization.approve
+        organization.must_be :approved?
+      end
+
+      it 'must deactivate_internal' do
+        organization.deactivate_internal
+        organization.must_be :internal_feedback?
+      end
+
+      it 'wont deactivate_external' do
+        assert_raises(AASM::InvalidTransition) do
+          organization.deactivate_external
+        end
+        organization.must_be :external_feedback?
       end
     end
   end

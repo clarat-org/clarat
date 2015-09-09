@@ -8,3 +8,4 @@ class Clarat.Search.Cell.Search
       all_categories_anchor: I18n.t('js.categories_sidebar.all_categories')
 
       category_tree: @model.categoryTree
+      filters: @model.filters

@@ -1,0 +1,44 @@
+.filter-form
+  %fieldset.filter-form__fieldset
+    %legend.filter-form__fieldset__headline
+      Alter des Kindes?
+
+    %select
+      %option{value: 'any', selected: 'selected'} egal
+      = hb 'each age' do
+        %option{value: '{{identifier}}'}= hb 'display_name'
+
+  %fieldset.filter-form__fieldset
+    %legend.filter-form__fieldset__headline
+      Hilfe für wen?
+    %input{type: 'radio', name: 'target_audience', value: 'any', checked: 'checked'}
+      für alle
+    = hb 'each target_audience' do
+      %input{type: 'radio', name: 'target_audience', value: '{{identifier}}'}
+        = hb 'display_name'
+
+  %fieldset.filter-form__fieldset
+    %legend.filter-form__fieldset__headline
+      Geschlecht?
+    %input{type: 'radio', name: 'target_gender', value: 'any', checked: 'checked'}
+      egal
+    = hb 'each target_gender' do
+      %input{type: 'radio', name: 'target_gender', value: '{{identifier}}'}
+        = hb 'display_name'
+
+  %fieldset.filter-form__fieldset.filter-form__fieldset--last
+    %legend.filter-form__fieldset__headline
+      Sprache?
+    %select
+      %option{value: 'any', selected: 'selected'} egal
+      = hb 'each language' do
+        %option{value: '{{identifier}}'}= hb 'display_name'
+
+  %fieldset.filter-form__fieldset
+    %legend.filter-form__fieldset__headline
+      Auf welchem Weg?
+    %input{type: 'radio', name: 'encounter', value: 'any', checked: 'checked'}
+      egal
+    = hb 'each encounter' do
+      %input{type: 'radio', name: 'encounter', value: '{{identifier}}'}
+        = hb 'display_name'

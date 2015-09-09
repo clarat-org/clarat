@@ -11,8 +11,10 @@ class Offer < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :encounter, in: %w(personal hotline email chat forum online-course)
-  enumerize :target_gender, in: %w(whatever boys_only girls_only)
+  ENCOUNTERS = %w(personal hotline email chat forum online-course)
+  EXCLUSIVE_GENDERS = %w(boys_only girls_only) # nil = inclusive to any gender
+  enumerize :encounter, in: ENCOUNTERS
+  enumerize :target_gender, in: EXCLUSIVE_GENDERS
 
   # Friendly ID
   extend FriendlyId

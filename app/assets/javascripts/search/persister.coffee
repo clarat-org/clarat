@@ -61,8 +61,9 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
   # Load from places other than the search form
   getAdditionalParams: ->
     paramHash =
-      # category tree gets transmitted as a JSON structure in a hidden element
+      # cat-tree & filters get transmitted as JSON in a hidden element
       categoryTree: $('#category-tree').data('structure').set
+      filters: $('#filters').data('structure')
 
       # TODO: where do we get page from? URL params?
       page: 0

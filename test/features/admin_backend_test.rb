@@ -373,13 +373,6 @@ feature 'Admin Backend' do
     #   end
     # end
 
-    scenario 'View statistics should not work' do
-      visit rails_admin_path
-
-      click_link 'Angebote', match: :first
-      page.wont_have_link 'Statistiken'
-    end
-
     # scenario 'Adding notes' ~> needs javascript for the "add note" button
 
     scenario 'Viewing notes in admin show and edit works' do
@@ -399,23 +392,6 @@ feature 'Admin Backend' do
 
       page.must_have_css '.Note.closed'
       page.must_have_css '.topic.history'
-    end
-  end
-
-  describe 'as super' do
-    before { login_as superuser }
-
-    scenario 'View statistics' do
-      researcher # create one for stats
-      visit rails_admin_path
-
-      click_link 'Angebote', match: :first
-      click_link 'Statistiken'
-      click_link 'Weekly by user'
-      click_link 'Cumulative by user'
-
-      page.must_have_content 'Created'
-      page.must_have_content 'Approved'
     end
   end
 end

@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/clarat-org/rails_admin_statistics.git
-  revision: 380f5f1f146dceb7b248f9605de65985c64fa182
-  specs:
-    rails_admin_statistics (0.0.7)
-      rails
-      railties
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -653,7 +645,6 @@ DEPENDENCIES
   rails_admin
   rails_admin_clone
   rails_admin_nestable
-  rails_admin_statistics!
   rails_best_practices
   rake
   redcarpet

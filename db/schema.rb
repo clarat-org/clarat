@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150826133113) do
+ActiveRecord::Schema.define(version: 20150903120353) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -233,6 +233,7 @@ ActiveRecord::Schema.define(version: 20150826133113) do
     t.string   "aasm_state",                 limit: 32
   end
 
+  add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
   add_index "offers", ["area_id"], name: "index_offers_on_area_id", using: :btree
   add_index "offers", ["created_at"], name: "index_offers_on_created_at", using: :btree
@@ -298,6 +299,7 @@ ActiveRecord::Schema.define(version: 20150826133113) do
     t.string   "aasm_state",             limit: 32
   end
 
+  add_index "organizations", ["aasm_state"], name: "index_organizations_on_aasm_state", using: :btree
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree
   add_index "organizations", ["created_at"], name: "index_organizations_on_created_at", using: :btree
 
@@ -312,6 +314,15 @@ ActiveRecord::Schema.define(version: 20150826133113) do
 
   add_index "search_locations", ["geoloc"], name: "index_search_locations_on_geoloc", using: :btree
   add_index "search_locations", ["query"], name: "index_search_locations_on_query", using: :btree
+
+  create_table "statistics", force: true do |t|
+    t.string  "topic",   limit: 40, null: false
+    t.integer "user_id"
+    t.date    "x",                  null: false
+    t.integer "y",                  null: false
+  end
+
+  add_index "statistics", ["user_id"], name: "index_statistics_on_user_id", using: :btree
 
   create_table "subscriptions", force: true do |t|
     t.string   "email"

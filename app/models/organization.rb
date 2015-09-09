@@ -37,6 +37,8 @@ class Organization < ActiveRecord::Base
 
   # Scopes
   scope :approved, -> { where(aasm_state: 'approved') }
+  scope :created_at_day, ->(date) { where('created_at::date = ?', date) }
+  scope :approved_at_day, ->(date) { where('approved_at::date = ?', date) }
 
   # Validations
   validates :name, length: { maximum: 100 }, presence: true, uniqueness: true
@@ -53,9 +55,6 @@ class Organization < ActiveRecord::Base
       errors.add(:base, I18n.t('organization.validations.hq_location'))
     end
   end
-
-  # Statistics
-  extend RailsAdminStatistics
 
   # State Machine
 

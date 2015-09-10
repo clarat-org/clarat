@@ -1,0 +1,7 @@
+basicLanguage:
+  filter_id: 1
+  offer_id: 1
+
+basicAudience:
+  filter_id: 3
+  offer_id: 1

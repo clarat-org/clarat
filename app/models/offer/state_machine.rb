@@ -61,6 +61,10 @@ class Offer
         end
       end
 
+      def preapproval?
+        initialized? || completed?
+      end
+
       private
 
       def set_approved_information

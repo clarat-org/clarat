@@ -270,40 +270,43 @@ feature 'Admin Backend' do
       click_button 'Speichern und bearbeiten'
       page.wont_have_content 'benötigt mindestens einen Target Audience Filter'
       page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
+      offer = Offer.last
 
-      ## Test Update validations
-
-      # Try to complete, doesnt work
       click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+      offer.reload.must_be :completed?
+
+      # There is no approve link as same user
+      page.wont_have_link 'Freischalten'
+
+      # Approval as different user
+      login_as superuser
+      visit current_path
+      page.must_have_link 'Freischalten'
+
+      ## Test (after-)approval update validations
+
+      # Try to approve, doesnt work
+      click_link 'Freischalten'
       page.must_have_content 'Zustandsänderung konnte nicht erfolgen'
       page.must_have_content 'nicht valide'
-
-      # See what the issue is
-      click_button 'Speichern und bearbeiten'
-      page.must_have_content 'Angebot wurde nicht aktualisiert'
+      offer.reload.must_be :completed?
 
       # Organization needs to be approved
       page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
 
-      # Organization gets approved,
+      # Organization gets approved, saves
       orga.update_column :aasm_state, 'approved'
       click_button 'Speichern und bearbeiten'
+      page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
+
+      # Approval works
+      click_link 'Freischalten'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
-
-      click_link 'Als komplett markieren'
       page.must_have_content 'Zustandsänderung war erfolgreich'
-
-      # There is no approve link as same user
-      page.wont_have_link 'Freischalten'
-
-      # Approval works as different user
-      login_as superuser
-      visit current_path
-      page.must_have_link 'Freischalten'
-      click_link 'Freischalten'
-      page.must_have_content 'Zustandsänderung war erfolgreich'
+      offer.reload.must_be :approved?
     end
 
     # calls partial dup that doesn't end up in an immediately valid offer

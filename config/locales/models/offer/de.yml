@@ -30,3 +30,11 @@ de:
       contact_person_not_choosable: |
         müssen alle zu einer der ausgewählten Organisationen gehören oder
         als SPoC markiert sein
+
+    deactivate_and_inform_offers:
+      deactivate_internal!: |
+        Wurde deaktiviert, weil die zugehörige Organisation "%{orga}" in den
+        Zustand "internal_feedback" versetzt wurde.
+      deactivate_external!: |
+        Wurde deaktiviert, weil die zugehörige Organisation "%{orga}" in den
+        Zustand "external_feedback" versetzt wurde.

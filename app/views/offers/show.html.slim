@@ -63,8 +63,10 @@
 
       / Last updated?
       p
-        => t '.last_updated'
-        = @offer.updated_at.strftime("%d.%m.%Y")
+        .offer-updated-at
+          i.fa.fa-clock-o
+          => t '.last_updated'
+          = @offer.updated_at.strftime("%d.%m.%Y")
 
       / Found any mistakes?
       = link_to new_contact_path,

@@ -4,7 +4,7 @@ class Offer < ActiveRecord::Base
   has_paper_trail
 
   # Modules
-  include Validations, Search, Statistics, StateMachine
+  include Validations, Search, StateMachine
 
   # Concerns
   include Creator, CustomValidatable, Notable
@@ -59,6 +59,8 @@ class Offer < ActiveRecord::Base
   scope :by_mailings_enabled_organization, lambda {
     joins(:organizations).where('organizations.mailings_enabled = ?', true)
   }
+  scope :created_at_day, ->(date) { where('created_at::date = ?', date) }
+  scope :approved_at_day, ->(date) { where('approved_at::date = ?', date) }
 
   # Methods
 

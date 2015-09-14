@@ -53,9 +53,6 @@ RailsAdmin.config do |config|
     show_in_app
 
     clone
-    statistics do
-      only ['Organization', 'Offer', 'Location']
-    end
     # nested_set do
     #   only ['Category']
     # end
@@ -306,9 +303,6 @@ RailsAdmin.config do |config|
       end
       field :created_by
       field :approved_by
-    end
-
-    statistics do
     end
 
     clone_config do

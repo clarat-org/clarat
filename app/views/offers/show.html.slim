@@ -61,6 +61,12 @@
         - cache [@offer, 'openings'] do
           = render 'offers/show/opening_section', offer: @offer
 
+      / Last updated?
+      p
+        .offer-updated-at
+          i.fa.fa-clock-o
+          => t '.last_updated'
+          = @offer.updated_at.strftime("%d.%m.%Y")
 
       / Found any mistakes?
       = link_to new_contact_path,

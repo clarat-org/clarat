@@ -17,6 +17,7 @@ class Offer
         state :expired # Happens automatically after a pre-set amount of time
         state :internal_feedback # There was an issue (internal)
         state :external_feedback # There was an issue (external)
+        state :organization_deactivated # An associated orga was deactivated
 
         ## Transitions
 
@@ -30,6 +31,8 @@ class Offer
           transitions from: :expired, to: :approved
           transitions from: :internal_feedback, to: :approved
           transitions from: :external_feedback, to: :approved
+          transitions from: :organization_deactivated, to: :approved,
+                      guard: :all_organizations_approved?
         end
 
         event :pause do
@@ -59,9 +62,22 @@ class Offer
           transitions from: :expired, to: :external_feedback
           transitions from: :internal_feedback, to: :external_feedback
         end
+
+        event :deactivate_through_organization do
+          transitions from: :approved, to: :organization_deactivated,
+                      guard: :at_least_one_organization_not_approved?
+        end
       end
 
       private
+
+      def at_least_one_organization_not_approved?
+        organizations.where.not(aasm_state: 'approved').any?
+      end
+
+      def all_organizations_approved?
+        !at_least_one_organization_not_approved?
+      end
 
       def set_approved_information
         self.approved_at = Time.zone.now

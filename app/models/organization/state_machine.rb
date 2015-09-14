@@ -12,8 +12,12 @@ class Organization
         state :approved
 
         # Special states object might enter after it was approved
-        state :internal_feedback # There was an issue (internal)
-        state :external_feedback # There was an issue (external)
+        state :internal_feedback, # There was an issue (internal)
+              after_enter: :deactivate_offers!,
+              after_exit: :reactivate_offers!
+        state :external_feedback, # There was an issue (external)
+              after_enter: :deactivate_offers!,
+              after_exit: :reactivate_offers!
 
         ## Transitions
 
@@ -27,29 +31,32 @@ class Organization
           transitions from: :external_feedback, to: :approved
         end
 
-        event :deactivate_internal, after: :deactivate_and_inform_offers do
+        event :deactivate_internal do
           transitions from: :approved, to: :internal_feedback
           transitions from: :external_feedback, to: :internal_feedback
         end
 
-        event :deactivate_external, after: :deactivate_and_inform_offers do
+        event :deactivate_external do
           transitions from: :approved, to: :external_feedback
           transitions from: :internal_feedback, to: :external_feedback
         end
       end
 
-      def deactivate_and_inform_offers
+      # When an organization switches from approved to an unapproved state,
+      # also deactivate all it's associated approved offers
+      def deactivate_offers!
         offers.approved.find_each do |offer|
-          action =
-            internal_feedback? ? 'deactivate_internal!' : 'deactivate_external!'
+          next if offer.deactivate_through_organization!
+          raise "#deactivate_offers! failed for #{offer.id}"
+        end
+      end
 
-          raise '#deactivate_and_inform_offers' unless offer.public_send action
-          offer.notes.create!(
-            topic: :history,
-            user_id: User.system_user.id,
-            text:
-              I18n.t("offer.deactivate_and_inform_offers.#{action}", orga: name)
-          )
+      # When an organization switches from an unapproved state to approved,
+      # also reactivate all it's associated organization_deactivated offers
+      # (if possible)
+      def reactivate_offers!
+        offers.where(aasm_state: 'organization_deactivated').find_each do |o|
+          o.approve! if o.may_approve?
         end
       end
     end

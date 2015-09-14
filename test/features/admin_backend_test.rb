@@ -120,7 +120,17 @@ feature 'Admin Backend' do
 
       orga.reload.must_be :external_feedback?
       orga.offers.select(:aasm_state).map(&:aasm_state).must_equal(
-        %w(external_feedback completed internal_feedback)
+        %w(organization_deactivated completed internal_feedback)
+      )
+
+      # Approve button click: reactivates orga and all its approved offers
+
+      click_link 'Freischalten'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+
+      orga.reload.must_be :approved?
+      orga.offers.select(:aasm_state).map(&:aasm_state).must_equal(
+        %w(approved completed internal_feedback)
       )
     end
 

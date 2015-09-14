@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/clarat-org/rails_admin_statistics.git
-  revision: 380f5f1f146dceb7b248f9605de65985c64fa182
-  specs:
-    rails_admin_statistics (0.0.7)
-      rails
-      railties
-
-GIT
   remote: git://github.com/efqdalton/dynamic_sitemaps.git
   revision: f229cb40391ab3283efd2091ab58bbec68c720cf
   branch: adds-custom-storages
@@ -668,7 +660,6 @@ DEPENDENCIES
   rails_admin
   rails_admin_clone
   rails_admin_nestable
-  rails_admin_statistics!
   rails_best_practices
   rake
   redcarpet

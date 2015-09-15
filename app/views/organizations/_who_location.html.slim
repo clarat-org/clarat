@@ -1,0 +1,31 @@
+/! http://microformats.org/wiki/adr start
+.adr
+  p
+    - if organization.name?
+      .offer-location-name.org= organization.name
+    - if location.name?
+      span.org= location.name
+      br
+    - if location.addition?
+      span.extended-address= location.addition
+      br
+    span.street-address= location.street
+    br
+    span.postal-code=> location.zip
+    span.locality= location.city
+    - if location.local_number? || location.email?
+      br
+    - if location.local_number?
+      br
+      span.local-number-title= t '.phone'
+      span.local-number= location.local_number
+    - if location.email?
+      br
+      span.email-title= t '.email'
+      span.email= location.email
+    - if website
+      br
+      = link_to website.shorten_url + website.pdf_appendix, website.url,
+        target: '_blank'
+
+/! http://microformats.org/wiki/adr end

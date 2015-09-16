@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150903120353) do
+ActiveRecord::Schema.define(version: 20150916113637) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -178,12 +178,11 @@ ActiveRecord::Schema.define(version: 20150903120353) do
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
   create_table "notes", force: true do |t|
-    t.text     "text",                                         null: false
+    t.text     "text",                         null: false
     t.string   "topic",             limit: 32
-    t.boolean  "closed",                       default: false
-    t.integer  "user_id",                                      null: false
-    t.integer  "notable_id",                                   null: false
-    t.string   "notable_type",      limit: 64,                 null: false
+    t.integer  "user_id",                      null: false
+    t.integer  "notable_id",                   null: false
+    t.string   "notable_type",      limit: 64, null: false
     t.integer  "referencable_id"
     t.string   "referencable_type", limit: 64
     t.datetime "created_at"

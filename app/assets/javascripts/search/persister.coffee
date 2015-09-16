@@ -20,7 +20,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'generated_geolocation', # , 'geolocation'
-    'exact_location', 'contact_type', 'search_location' # TODO: facet_filters
+    'exact_location', 'contact_type', 'search_location',
+    'age', 'target_audience', 'target_gender', 'language', 'encounter'
   ]
 
   ### PUBLIC METHODS ###

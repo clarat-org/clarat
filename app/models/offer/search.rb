@@ -103,7 +103,7 @@ class Offer
       end
 
       # filter indexing methods
-      %w(age audience language).each do |filter|
+      %w(age target_audience language).each do |filter|
         define_method "_#{filter}_filters" do
           send("#{filter}_filters").pluck(:identifier)
         end

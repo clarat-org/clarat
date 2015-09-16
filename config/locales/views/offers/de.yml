@@ -39,6 +39,7 @@ de:
             parents: "für Eltern"
             family: "für die ganze Familie"
             acquintances: "für Bekannte und Verwandte"
+            pregnant_woman: "für Schwangere"
           target_gender:
             boys_only: "nur für Jungen und Männer"
             girls_only: "nur für Mädchen und Frauen"

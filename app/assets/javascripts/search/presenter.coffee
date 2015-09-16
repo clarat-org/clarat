@@ -89,6 +89,17 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
+    '#advanced_search .JS-AgeSelector':
+      change: 'handleAgeChange'
+    '#advanced_search .JS-TargetAudienceSelector':
+      change: 'handleTargetAudienceChange'
+    '#advanced_search .JS-TargetGenderSelector':
+      change: 'handleTargetGenderChange'
+    '#advanced_search .JS-LanguageSelector':
+      change: 'handleLanguageChange'
+    '#advanced_search .JS-EncounterSelector':
+      change: 'handleEncounterChange'
+
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
@@ -133,6 +144,25 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes page: ($(event.target).data('page') - 1)
     @sendMainSearch()
     @stopEvent event
+
+
+  handleAgeChange: (event) =>
+    alert 'handleAgeChange'
+
+  handleTargetAudienceChange: (event) =>
+    val = $(event.target).val()
+    val = if val is 'any' then '' else val
+    @model.updateAttributes target_audience: val
+    @sendMainSearch()
+
+  handleTargetGenderChange: (event) =>
+    alert 'handleTargetGenderChange'
+
+  handleLanguageChange: (event) =>
+    alert 'handleLanguageChange'
+
+  handleEncounterChange: (event) =>
+    alert 'handleEncounterChange'
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

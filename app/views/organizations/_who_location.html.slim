@@ -13,19 +13,20 @@
     br
     span.postal-code=> location.zip
     span.locality= location.city
-    - if location.local_number? || location.email?
+    - if location.local_number? || location.email? || website
+      br
       br
     - if location.local_number?
-      br
-      span.local-number-title= t '.phone'
+      span.local-number-title=> t '.phone'
       span.local-number= location.local_number
+      br
     - if location.email?
-      br
-      span.email-title= t '.email'
+      span.email-title=> t '.email'
       span.email= location.email
-    - if website
       br
+    - if website
       = link_to website.shorten_url + website.pdf_appendix, website.url,
         target: '_blank'
+      br
 
 /! http://microformats.org/wiki/adr end

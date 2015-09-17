@@ -8,7 +8,6 @@ describe Note do
     it { subject.must_respond_to :id }
     it { subject.must_respond_to :text }
     it { subject.must_respond_to :topic }
-    it { subject.must_respond_to :closed }
     it { subject.must_respond_to :user }
     it { subject.must_respond_to :notable }
     it { subject.must_respond_to :referencable }

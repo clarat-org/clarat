@@ -7,7 +7,7 @@
 #new_search_form {
   @extend %clearfix;
   padding: 25px 0 0 25px;
-  width: 640px;
+  width: 700px;
   list-style: none;
 
   .input {
@@ -57,7 +57,7 @@
 #search_form_search_location {
   margin-right: 10px;
   padding: 0 15px 0 15px;
-  max-width: 260px;
+  max-width: 310px;
   background: $brand_white;
   font-size: 20px;
   line-height: 47px;
@@ -98,4 +98,9 @@
 
 .main-search__submit {
   @extend %clarat_rounding_end;
+}
+
+.main-search__advanced-filter {
+  display: table-cell;
+  vertical-align: middle;
 }

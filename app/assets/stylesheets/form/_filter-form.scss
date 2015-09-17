@@ -10,11 +10,18 @@
   @extend %clearfix;
   @extend %clarat_rounding_start;
   @extend %clarat_rounding_end;
+  display: none;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
   padding: 10px 20px 25px 10px;
   background-color: $brand_beige;
+
+  &.is-visible {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
 
   &:before {
     position: absolute;
@@ -65,10 +72,36 @@
   cursor: pointer;
 }
 
-
 .filter-form__fieldset {
   margin: 0;
   border: none;
+  -webkit-flex: 1 0 25%;
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+
+  &#age {
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  &#target_audience {
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  &#exclusive_gender {
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+  }
+
+  &#contact_type {
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+  }
 }
 
 .filter-form__fieldset__headline {

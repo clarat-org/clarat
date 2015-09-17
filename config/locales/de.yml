@@ -49,8 +49,11 @@ de:
         - wohnen
       example_placeholder: "z.B. %{word}, …"
 
+    search:
+      form_more_label: "Weitere Suchoptionen"
+      form_less_label: "Weniger Suchoptionen"
     search_results:
-      more: "(Weitere Angebote …)"
+      more: "Weitere Angebote …"
       map:
         show_on_big_map: "Auf großer Karte anzeigen"
         enlarge_map: "Karte vergrößern"

@@ -74,6 +74,8 @@ about supported directives.
 # = require location/operations/save_to_cookie
 #
 # = require single_click_button/presenter
+# = require toggle_advanced_search/presenter
+# = require toggle_fieldsets/presenter
 #
 # = require map_modal/presenter
 #
@@ -85,7 +87,6 @@ about supported directives.
 # = require modules/modal
 # = require modules/tooltip
 # = require modules/flash
-# = require modules/filter_form
 # = require modules/safari_fixes
 # = require modules/cookie_warning
 # = require modules/faq

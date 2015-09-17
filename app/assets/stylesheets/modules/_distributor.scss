@@ -8,10 +8,21 @@
   @extend %clarat_rounding_start;
   float: right;
   margin-top: 40px;
-  max-width: 61.8%;
+  width: 68.8%;
   height: 100px;
   background: $brand_yellow;
   z-index: 2;
+}
+
+.Distributor__search-form {
+ float: left;
+}
+
+.Distributor__advanced-filter-trigger-wrapper {
+  float: right;
+  height: 100%;
+  width: 100px;
+  display: table;
 }
 
 .Distributor--start {

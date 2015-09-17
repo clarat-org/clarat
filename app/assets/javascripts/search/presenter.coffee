@@ -48,7 +48,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', viewModel
-    if @model.isPersonal()
+    if viewModel.main_result_is_empty
+      $('.aside-standard').hide()
+    else if @model.isPersonal()
+      $('.aside-standard').show()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?

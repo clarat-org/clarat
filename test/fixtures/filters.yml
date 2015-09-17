@@ -29,3 +29,7 @@ acquintances:
   type: TargetAudienceFilter
   name: Bekannte
   identifier: acquintances
+pregnant_woman:
+  type: TargetAudienceFilter
+  name: Schwangere
+  identifier: pregnant_woman

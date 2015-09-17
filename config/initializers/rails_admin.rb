@@ -323,6 +323,9 @@ RailsAdmin.config do |config|
       field :organization
       field :offers
       field :email_address
+      field :operational_name
+      field :local_number_1
+      field :local_number_2
     end
     field :gender
     field :academic_title

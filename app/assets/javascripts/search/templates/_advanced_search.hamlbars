@@ -1,20 +1,19 @@
 .filter-form#advanced_search
-  %fieldset.filter-form__fieldset
+  %fieldset.filter-form__fieldset#age
     %legend.filter-form__fieldset__headline
       Alter des Kindes?
 
     %select.JS-AgeSelector
-      %option{value: 'any', selected: 'selected', id: 'age_any'} egal
+      %option{value: 'any', id: 'age_any'} egal
       = hb 'each age' do
         %option{value: '{{identifier}}', id: 'age_{{identifier}}'}
           = hb 'display_name'
 
-  %fieldset.filter-form__fieldset
+  %fieldset.filter-form__fieldset#target_audience
     %legend.filter-form__fieldset__headline
       Hilfe für wen?
     %input{type: 'radio', name: 'target_audience', value: 'any',
-           checked: 'checked', id: 'target_audience_any',
-           class: 'JS-TargetAudienceSelector'}
+           id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
     %label{for: 'target_audience_any'} für alle
     = hb 'each target_audience' do
       %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
@@ -22,20 +21,19 @@
              class: 'JS-TargetAudienceSelector'}
       %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
 
-  %fieldset.filter-form__fieldset
+  %fieldset.filter-form__fieldset#exclusive_gender
     %legend.filter-form__fieldset__headline
       Geschlecht?
-    %input{type: 'radio', name: 'target_gender', value: 'any',
-           checked: 'checked', id: 'target_gender_any',
-           class: 'JS-TargetGenderSelector'}
-    %label{for: 'target_gender_any'} egal
-    = hb 'each target_gender' do
-      %input{type: 'radio', name: 'target_gender', value: '{{identifier}}',
-             id: 'target_gender_{{identifier}}',
-             class: 'JS-TargetGenderSelector'}
-      %label{for: 'target_gender_{{identifier}}'}= hb 'display_name'
+    %input{type: 'radio', name: 'exclusive_gender', value: 'any',
+           id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
+    %label{for: 'exclusive_gender_any'} egal
+    = hb 'each exclusive_gender' do
+      %input{type: 'radio', name: 'exclusive_gender', value: '{{identifier}}',
+             id: 'exclusive_gender_{{identifier}}',
+             class: 'JS-ExclusiveGenderSelector'}
+      %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
 
-  %fieldset.filter-form__fieldset.filter-form__fieldset--last
+  %fieldset.filter-form__fieldset.filter-form__fieldset--last#language
     %legend.filter-form__fieldset__headline
       Sprache?
     %select.JS-LanguageSelector
@@ -44,13 +42,10 @@
         %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
           = hb 'display_name'
 
-  %fieldset.filter-form__fieldset
+  %fieldset.filter-form__fieldset#contact_type
     %legend.filter-form__fieldset__headline
       Auf welchem Weg?
-    %input{type: 'radio', name: 'encounter', value: 'any', checked: 'checked',
-           id: 'encounter_any', class: 'JS-EncounterSelector'}
-    %label{for: 'encounter_any'} egal
-    = hb 'each encounter' do
-      %input{type: 'radio', name: 'encounter', value: '{{identifier}}',
-             id: 'encounter_{{identifier}}', class: 'JS-EncounterSelector'}
-      %label{for: 'encounter_{{identifier}}'}= hb 'display_name'
+    = hb 'each contact_type' do
+      %input{type: 'radio', name: 'contact_type', value: '{{identifier}}',
+             id: 'contact_type_{{identifier}}', class: 'JS-ContactTypeSelector'}
+      %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'

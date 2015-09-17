@@ -19,7 +19,7 @@ describe Offer do
     it { subject.must_respond_to :legal_information }
     it { subject.must_respond_to :age_from }
     it { subject.must_respond_to :age_to }
-    it { subject.must_respond_to :target_gender }
+    it { subject.must_respond_to :exclusive_gender }
     it { subject.must_respond_to :target_audience }
   end
 

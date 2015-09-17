@@ -40,7 +40,7 @@ de:
             family: "für die ganze Familie"
             acquintances: "für Bekannte und Verwandte"
             pregnant_woman: "für Schwangere"
-          target_gender:
+          exclusive_gender:
             boys_only: "nur für Jungen und Männer"
             girls_only: "nur für Mädchen und Frauen"
           language:
@@ -82,16 +82,18 @@ de:
             "150": "Deutsche Gebärdensprache"
             lav: "Lettisch"
             lit: "Litauisch"
-          encounter:
-            personal: "Angebote vor Ort"
-            hotline: "Telefon"
-            email: "E-Mail"
-            chat: "Chat"
-            forum: "Forum"
-            online-course: "Online-Kurs"
+          contact_type:
+            personal: "vor Ort"
+            remote: "virtuell"
+            # hotline: "Telefon"
+            # email: "E-Mail"
+            # chat: "Chat"
+            # forum: "Forum"
+            # online-course: "Online-Kurs"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
+
       # /index partials
 
     show:

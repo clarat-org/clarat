@@ -54,6 +54,7 @@ about supported directives.
 # = require search/persister
 # = require search/presenter
 # = require search/operations/update_categories
+# = require search/operations/update_advanced_search
 # = require search/operations/build_map
 # = require search/cells/search
 # = require search/cells/search_results

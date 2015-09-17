@@ -27,7 +27,7 @@ class SearchForm
   attribute :contact_type, String, default: :personal
   attribute :age, String
   attribute :target_audience, String
-  attribute :target_gender, String
+  attribute :exclusive_gender, String
   attribute :language, String
   attribute :encounter, String
 

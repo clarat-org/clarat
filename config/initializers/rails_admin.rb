@@ -253,7 +253,11 @@ RailsAdmin.config do |config|
       css_class 'js-category-suggestions'
     end
     field :language_filters
-    field :target_gender
+    field :exclusive_gender do
+      help do
+        'Optional. Leer bedeutet, dass das Angebot alle Geschlechter bedient.'
+      end
+    end
     field :target_audience_filters do
       help do
         'Richtet sich das Angebot direkt an das Kind, oder an Erwachsene wie

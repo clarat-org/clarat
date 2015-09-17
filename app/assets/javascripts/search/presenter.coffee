@@ -41,6 +41,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
+    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
     new Clarat.MapModal.Presenter # handles Map Button
 
   # Rendered upon successful sendMainSearch.
@@ -90,15 +91,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handlePaginationClick'
 
     '#advanced_search .JS-AgeSelector':
-      change: 'handleAgeChange'
+      change: 'handleFilterChange'
     '#advanced_search .JS-TargetAudienceSelector':
-      change: 'handleTargetAudienceChange'
-    '#advanced_search .JS-TargetGenderSelector':
-      change: 'handleTargetGenderChange'
+      change: 'handleFilterChange'
+    '#advanced_search .JS-ExclusiveGenderSelector':
+      change: 'handleFilterChange'
     '#advanced_search .JS-LanguageSelector':
-      change: 'handleLanguageChange'
-    '#advanced_search .JS-EncounterSelector':
-      change: 'handleEncounterChange'
+      change: 'handleFilterChange'
+    '#advanced_search .JS-ContactTypeSelector':
+      change: 'handleFilterChange'
 
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
@@ -134,9 +135,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     if @model.isPersonal()
       @model.updateAttributes contact_type: 'remote'
       $('.aside-standard').hide()
+      $('#contact_type_remote').prop('checked', true)
     else
       @model.updateAttributes contact_type: 'personal'
       $('.aside-standard').show()
+      $('#contact_type_personal').prop('checked', true)
     @sendMainSearch()
     @stopEvent event
 
@@ -145,24 +148,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @stopEvent event
 
-
-  handleAgeChange: (event) =>
-    alert 'handleAgeChange'
-
-  handleTargetAudienceChange: (event) =>
+  handleFilterChange: (event) =>
     val = $(event.target).val()
     val = if val is 'any' then '' else val
-    @model.updateAttributes target_audience: val
+    field = $(event.target).parent('fieldset').attr('id')
+
+    @model.updateAttributes "#{field}": val
     @sendMainSearch()
-
-  handleTargetGenderChange: (event) =>
-    alert 'handleTargetGenderChange'
-
-  handleLanguageChange: (event) =>
-    alert 'handleLanguageChange'
-
-  handleEncounterChange: (event) =>
-    alert 'handleEncounterChange'
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

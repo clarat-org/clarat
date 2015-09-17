@@ -444,7 +444,6 @@ RailsAdmin.config do |config|
       field :text
       field :topic
       field :user
-      field :closed
       field :created_at
       field :notable
       field :referencable
@@ -506,7 +505,6 @@ RailsAdmin.config do |config|
       end
 
       field :referencable
-      field :closed
     end
   end
 

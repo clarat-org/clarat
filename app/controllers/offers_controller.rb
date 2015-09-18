@@ -16,6 +16,7 @@ class OffersController < ApplicationController
     render :index
   end
 
+
   def show
     @offer = Offer.friendly.find(params[:id])
     authorize @offer

@@ -18,7 +18,7 @@ class Clarat.Search.Cell.SearchResults
 
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
-    main_result_is_not_empty: @mainResults.nbHits > 0
+    main_result_is_empty: @mainResults.nbHits == 0
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
 
 

@@ -22,7 +22,7 @@
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'
 
-/  = hb 'if main_result_is_not_empty' do
+/  = hb 'unless main_result_is_empty' do
 /    %a.big-map_open{ href: "#" }
 /      = hb 'show_on_big_map_anchor'
 

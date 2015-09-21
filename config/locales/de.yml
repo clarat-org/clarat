@@ -51,6 +51,7 @@ de:
 
     search_results:
       more: "(Weitere Angebote …)"
+      faq: "Hier kommst du zu den häufigen Fragen"
       map:
         show_on_big_map: "Auf großer Karte anzeigen"
         enlarge_map: "Karte vergrößern"

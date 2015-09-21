@@ -34,6 +34,9 @@ class Clarat.Search.Cell.SearchResults
       more_anchor: I18n.t('js.search_results.more')
       more_href: window.location.href # TODO: offers_path(search_form: search_cache.remote_focus)
 
+      faq_anchor: I18n.t('js.search_results.faq')
+      faq_href: "/haeufige-fragen"
+
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits
 

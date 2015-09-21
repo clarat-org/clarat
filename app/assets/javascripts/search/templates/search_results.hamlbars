@@ -17,6 +17,10 @@
   .search-string
     = hb! 'main_results_headline'
 
+    = hb 'if personal_focus_with_remote' do
+      %a{ href: '{{faq_href}}' }
+        = hb 'faq_anchor'
+
   = hb 'if remote_focus' do
     .more_remote-offers_open
       %a.JS-ToggleContactType{ href: '{{more_href}}' }

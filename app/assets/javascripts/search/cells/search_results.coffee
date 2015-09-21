@@ -13,12 +13,8 @@ class Clarat.Search.Cell.SearchResults
     return _.merge viewObjectFocus(), @generalViewObject()
 
   generalViewObject: =>
-
-    show_on_big_map_anchor: I18n.t('js.search_results.map.show_on_big_map')
-
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
-    main_result_is_empty: @mainResults.nbHits == 0
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
 
 

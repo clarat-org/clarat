@@ -48,7 +48,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', viewModel
-    if viewModel.main_result_is_empty
+    if resultSet.results[0].nbHits < 1
       $('.aside-standard').hide()
     else if @model.isPersonal()
       $('.aside-standard').show()

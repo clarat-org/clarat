@@ -22,11 +22,6 @@
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'
 
-/  = hb 'unless main_result_is_empty' do
-/    %a.big-map_open{ href: "#" }
-/      = hb 'show_on_big_map_anchor'
-
-
 %ul.Listing-results__list
   = hb 'each main_offers' do
     = hb '> _single_search_result'

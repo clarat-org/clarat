@@ -253,7 +253,7 @@
                 li
                   == t '.section_two.answer_twelve_bullet_three'
             h4.FAQ_question = t '.section_two.question_fifteen'
-            .FAQ_paragraph = t '.section_two.answer_fiteen'
+            .FAQ_paragraph = t '.section_two.answer_fifteen'
             h4.FAQ_question = t '.section_two.question_sixteen'
             .FAQ_paragraph = t '.section_two.answer_sixteen'
 
@@ -288,17 +288,17 @@
            p
              ul
                li
-                 = t '.section_four.answer_two_bullet_one'
+                 = t '.section_four.answer_one_bullet_one'
                li
-                 == t '.section_four.answer_two_bullet_two'
+                 == t '.section_four.answer_one_bullet_two'
                li
-                 = t '.section_four.answer_two_bullet_three'
+                 = t '.section_four.answer_one_bullet_three'
                li
-                 = t '.section_four.answer_two_bullet_four'
+                 = t '.section_four.answer_one_bullet_four'
                li
-                 = t '.section_four.answer_two_bullet_five'
+                 = t '.section_four.answer_one_bullet_five'
                li
-                 = t '.section_four.answer_two_bullet_six'
+                 = t '.section_four.answer_one_bullet_six'
           h4.FAQ_question = t '.section_four.question_two'
           .FAQ_paragraph = t '.section_four.answer_two'
           h4.FAQ_question = t '.section_four.question_three'
@@ -332,24 +332,24 @@
           h4.FAQ_question = t '.section_four.question_seven'
           .FAQ_paragraph
             == t '.section_four.answer_seven',
-            mailto: \
-             mail_to('post@clarat.org',
-                     'post@clarat.org',
-                     target: '_blank')
+              mailto: \
+               mail_to('post@clarat.org',
+                       'post@clarat.org',
+                       target: '_blank')
           h4.FAQ_question = t '.section_four.question_eight'
           .FAQ_paragraph
-            == t '.section_four.answer_eight'
+            == t '.section_four.answer_eight',
+              mailto: \
+              mail_to('post@clarat.org',
+                      'post@clarat.org',
+                      target: '_blank'),
+              why_incomplete: \
+              link_to('Hier',
+                      '/haeufige-fragen/#what_offers',
+                      class: 'FAQ_anchor_link')
               p
                 ul
                   li
-                   = t '.section_four.answer_eight_bullet_one'
+                    = t '.section_four.answer_eight_bullet_one'
                   li
-                   = t '.section_four.answer_eight_bullet_two',
-            mailto: \
-            mail_to('post@clarat.org',
-                    'post@clarat.org',
-                    target: '_blank'),
-            why_incomplete: \
-            link_to('Hier',
-                    '/haeufige-fragen/#what_offers',
-                    class: 'FAQ_anchor_link')
+                    = t '.section_four.answer_eight_bullet_two'

@@ -148,8 +148,8 @@ de:
         answer_nine: |
           Die %{benckiser} ist eine Familienstiftung. Das ist eine Stiftung, die
           von einer Familie gegründet worden ist. Die Stiftung macht schon lange
-          viel für Kinder und Jugendliche in Deutschland. %{benckiser_video}
-          kannst du in einem Video mehr über die Stiftung erfahren.
+          viel für Kinder und Jugendliche in Deutschland. %{benckiser_video} kannst du in
+          einem Video mehr über die Stiftung erfahren.
         question_ten: "> Was ist das Besondere an clarat?"
         answer_ten: |
           clarat zeigt dir Hilfe in deiner Nähe. Du findest alle
@@ -198,7 +198,7 @@ de:
           Die Suche bei clarat ist immer anonym. Das heißt, niemand bei clarat
           kennt deinen Namen oder deine Adresse.
         question_sixteen: |
-          > Kann ich bei clarat Angebote finden, die ich anonym nutzen kann?"
+          > Kann ich bei clarat Angebote finden, die ich anonym nutzen kann?
         answer_sixteen: |
           Bei clarat findest du verschiedene Unterstützungsangebote. Einige
           davon kannst du anonym nutzen. Das heißt, dass du niemandem deinen
@@ -218,8 +218,7 @@ de:
           > Ist der Programmier-Code von clarat öffentlich zugänglich?
         answer_eighteen: |
           Der Programmier-Code von clarat ist öffentlich zugänglich. Den Link zu
-          unserem Code findest du hier
-          [externer Link: [https://github.com/clarat-org/clarat].
+          unserem Code findest du %{github}.
         question_nineteen: |
           > Bietet clarat eine Schnittstelle an, um Daten weiterzuverwenden?
         answer_nineteen: |
@@ -441,8 +440,7 @@ de:
           Suchbegriff nicht funktioniert. Ein anderer Grund dafür kann sein:
           Wir haben für deinen Stadtteil oder deine Stadt noch keine Angebote
           gesammelt. Es kann auch sein, dass wir für dein Problem leider keine
-          passenden Angebote bei clarat haben [interner Link: Warum finde ich
-          einige meiner Unterstützungsangebote nicht bei clarat?] Damit wir das
+          passenden Angebote bei clarat haben. Damit wir das
           bald ändern können, ist deine Rückmeldung für uns sehr wichtig. Gib
           uns bitte per E-Mail an post@clarat.org Bescheid, wenn du nicht
           findest, was du suchst.

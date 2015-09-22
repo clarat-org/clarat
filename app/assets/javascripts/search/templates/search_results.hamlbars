@@ -22,9 +22,6 @@
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'
 
-  = hb 'if personal_focus_with_remote' do
-    %a.big-map_open{ href: "#" }
-      = hb 'show_on_big_map_anchor'
 
 / TODO: change to correct boolean from other branch
 = hb 'if personal_focus_with_remote' do

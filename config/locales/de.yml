@@ -53,7 +53,6 @@ de:
       more: "(Weitere Angebote …)"
       faq: "Hier kommst du zu den häufigen Fragen"
       map:
-        show_on_big_map: "Auf großer Karte anzeigen"
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"
       personal_offers:

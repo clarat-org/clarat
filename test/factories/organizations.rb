@@ -47,6 +47,7 @@ FactoryGirl.define do
         orga.reload
       end
       approved_by { FactoryGirl.create(:researcher).id }
+      approved_at { Time.zone.now }
     end
 
     trait :mailings_disabled do

@@ -45,10 +45,6 @@ class SearchForm
     end
   end
 
-  # def geolocation
-  #   @geolocation ||= Geolocation.new search_location_instance
-  # end
-
   private
 
   def search_location_instance

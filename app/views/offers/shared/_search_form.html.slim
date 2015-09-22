@@ -10,7 +10,8 @@
                       class: 'input-xlg' }
 
   - search_location_value = \
-    search_form.search_location || cookies[:saved_search_location] || I18n.t('conf.default_location')
+    search_form.search_location || cookies[:saved_search_location] || \
+    I18n.t('conf.default_location')
   = f.input :search_location, label: t('.loc_label'),
                               wrapper_html: {class: 'JS-Geolocation__wrapper'},
                               input_html: { \
@@ -24,7 +25,8 @@
   / Hidden Fields
 
   - geolocation_value = \
-    search_form.generated_geolocation || cookies[:saved_geolocation] || I18n.t('conf.default_latlng')
+    search_form.generated_geolocation || cookies[:saved_geolocation] || \
+    I18n.t('conf.default_latlng')
   = f.input :generated_geolocation, as: :hidden,
                                     input_html: { \
                                       class: 'JS-Geolocation__input',

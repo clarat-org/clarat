@@ -270,40 +270,43 @@ feature 'Admin Backend' do
       click_button 'Speichern und bearbeiten'
       page.wont_have_content 'benötigt mindestens einen Target Audience Filter'
       page.must_have_content 'Angebot wurde erfolgreich hinzugefügt'
+      offer = Offer.last
 
-      ## Test Update validations
-
-      # Try to complete, doesnt work
       click_link 'Als komplett markieren'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+      offer.reload.must_be :completed?
+
+      # There is no approve link as same user
+      page.wont_have_link 'Freischalten'
+
+      # Approval as different user
+      login_as superuser
+      visit current_path
+      page.must_have_link 'Freischalten'
+
+      ## Test (after-)approval update validations
+
+      # Try to approve, doesnt work
+      click_link 'Freischalten'
       page.must_have_content 'Zustandsänderung konnte nicht erfolgen'
       page.must_have_content 'nicht valide'
-
-      # See what the issue is
-      click_button 'Speichern und bearbeiten'
-      page.must_have_content 'Angebot wurde nicht aktualisiert'
+      offer.reload.must_be :completed?
 
       # Organization needs to be approved
       page.must_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
 
-      # Organization gets approved,
+      # Organization gets approved, saves
       orga.update_column :aasm_state, 'approved'
       click_button 'Speichern und bearbeiten'
+      page.must_have_content 'Angebot wurde erfolgreich aktualisiert'
+
+      # Approval works
+      click_link 'Freischalten'
       page.wont_have_content 'Organizations darf nur bestätigte Organisationen'\
                              ' beinhalten.'
-
-      click_link 'Als komplett markieren'
       page.must_have_content 'Zustandsänderung war erfolgreich'
-
-      # There is no approve link as same user
-      page.wont_have_link 'Freischalten'
-
-      # Approval works as different user
-      login_as superuser
-      visit current_path
-      page.must_have_link 'Freischalten'
-      click_link 'Freischalten'
-      page.must_have_content 'Zustandsänderung war erfolgreich'
+      offer.reload.must_be :approved?
     end
 
     # calls partial dup that doesn't end up in an immediately valid offer
@@ -373,18 +376,10 @@ feature 'Admin Backend' do
     #   end
     # end
 
-    scenario 'View statistics should not work' do
-      visit rails_admin_path
-
-      click_link 'Angebote', match: :first
-      page.wont_have_link 'Statistiken'
-    end
-
     # scenario 'Adding notes' ~> needs javascript for the "add note" button
 
     scenario 'Viewing notes in admin show and edit works' do
-      note = FactoryGirl.create :note, topic: 'history', closed: true,
-                                       notable: offers(:basic)
+      note = FactoryGirl.create :note, topic: 'history', notable: offers(:basic)
       note_text = note.text
 
       visit rails_admin_path
@@ -397,25 +392,8 @@ feature 'Admin Backend' do
       click_link 'Bearbeiten'
       page.must_have_content note_text
 
-      page.must_have_css '.Note.closed'
+      page.must_have_css '.Note'
       page.must_have_css '.topic.history'
-    end
-  end
-
-  describe 'as super' do
-    before { login_as superuser }
-
-    scenario 'View statistics' do
-      researcher # create one for stats
-      visit rails_admin_path
-
-      click_link 'Angebote', match: :first
-      click_link 'Statistiken'
-      click_link 'Weekly by user'
-      click_link 'Cumulative by user'
-
-      page.must_have_content 'Created'
-      page.must_have_content 'Approved'
     end
   end
 end

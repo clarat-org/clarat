@@ -74,13 +74,14 @@ about supported directives.
 #
 # = require single_click_button/presenter
 #
+# = require map_modal/presenter
+#
 # = require modules/analytics
 # = require modules/query_field_placeholder
 # = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal
-# = require modules/modal_instances
 # = require modules/tooltip
 # = require modules/flash
 # = require modules/filter_form

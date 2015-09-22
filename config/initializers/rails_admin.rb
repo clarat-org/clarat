@@ -53,9 +53,6 @@ RailsAdmin.config do |config|
     show_in_app
 
     clone
-    statistics do
-      only ['Organization', 'Offer', 'Location']
-    end
     # nested_set do
     #   only ['Category']
     # end
@@ -308,9 +305,6 @@ RailsAdmin.config do |config|
       field :approved_by
     end
 
-    statistics do
-    end
-
     clone_config do
       custom_method :partial_dup
     end
@@ -329,6 +323,9 @@ RailsAdmin.config do |config|
       field :organization
       field :offers
       field :email_address
+      field :operational_name
+      field :local_number_1
+      field :local_number_2
     end
     field :gender
     field :academic_title
@@ -450,7 +447,6 @@ RailsAdmin.config do |config|
       field :text
       field :topic
       field :user
-      field :closed
       field :created_at
       field :notable
       field :referencable
@@ -512,7 +508,6 @@ RailsAdmin.config do |config|
       end
 
       field :referencable
-      field :closed
     end
   end
 

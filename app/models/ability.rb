@@ -16,7 +16,6 @@ class Ability
       can_acces_rails_admin
       can_do_collection_scoped_actions
       can_do_member_scoped_actions
-      can :statistics, :all
     end
   end
 

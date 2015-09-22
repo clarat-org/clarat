@@ -52,7 +52,6 @@ de:
     search_results:
       more: "(Weitere Angebote …)"
       map:
-        show_on_big_map: "Auf großer Karte anzeigen"
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"
       personal_offers:
@@ -60,9 +59,9 @@ de:
         one: "Ein Angebot vor Ort"
         other: "%{count} Angebote vor Ort"
       remote_offers:
-        zero: "Keine Telefon- und Onlineberatungen"
-        one: "Eine Telefon- oder Onlineberatung"
-        other: "%{count} Telefon- und Onlineberatungen"
+        zero: "Keine Telefonberatungen und Onlineangebote"
+        one: "Eine Telefonberatung oder ein Onlineangebot"
+        other: "%{count} Telefonberatungen und Onlineangebote"
 
     categories_sidebar:
       all_categories: "Alle Kategorien"

@@ -31,8 +31,8 @@ class Clarat.Search.Cell.SearchResults
       more_anchor: I18n.t('js.search_results.more')
       more_href: window.location.href # TODO: offers_path(search_form: search_cache.remote_focus)
 
-      faq_text: I18n.t('js.search_results.faq')
-      faq_anchor: "hier"
+      faq_text: I18n.t('js.search_results.faq_text')
+      faq_anchor: I18n.t('js.search_results.faq_anchor')
       faq_href: "/haeufige-fragen"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
@@ -49,9 +49,9 @@ class Clarat.Search.Cell.SearchResults
 
 
   ## Headline Building Helpers
-  #TODO: in locale auslagern, wenn so okay
   mainResultsHeadline: (i18nKey) ->
     output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
+    enclosing = I18n.t "js.search_results.enclosing"
 
     if @model.category
       output += " in #{@breadcrumbPath @model}"
@@ -60,7 +60,7 @@ class Clarat.Search.Cell.SearchResults
       output += " für: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output + " (#{@model.search_location}) gefunden."
+    output + " (#{@model.search_location}) #{enclosing}."
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

@@ -51,7 +51,9 @@ de:
 
     search_results:
       more: "(Weitere Angebote …)"
-      faq: "Zu den häufigen Fragen und Antworten kommst du "
+      enclosing: "gefunden"
+      faq_text: "Häufige Fragen und Antworten zu unserer Suche findest du "
+      faq_anchor: "hier"
       map:
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"

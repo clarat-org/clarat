@@ -54,6 +54,10 @@
               benckiser: \
               link_to('Benckiser-Stiftung-Zukunft',
                       'http://www.benckiser-stiftung.org/',
+                      target: '_blank'),
+              benckiser_video: \
+              link_to('Hier',
+                      'http://blog.benckiser-stiftung.org/blog/2014/12/01/die-benckiser-stiftung-zukunft-im-film/',
                       target: '_blank')
           h4.FAQ_question = t '.section_one.question_ten'
           .FAQ_paragraph
@@ -62,7 +66,7 @@
               link_to('einfachen Sprache',
                       '/haeufige-fragen/#simple_language',
                       class: 'FAQ_anchor_link')
-          h4.FAQ_question#simple_language = '.section_one.question_eleven'
+          h4.FAQ_question#simple_language = t '.section_one.question_eleven'
           .FAQ_paragraph = t '.section_one.answer_eleven'
           h4.FAQ_question = t '.section_one.question_twelve'
           .FAQ_paragraph

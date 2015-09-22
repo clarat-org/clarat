@@ -23,9 +23,9 @@
         = hb 'toggle_personal_anchor'
 
 
-/ TODO: change to correct boolean from other branch
-= hb 'if personal_focus_with_remote' do
+= hb 'unless personal_focus_with_remote' do
   %h2.Listing-results__headline
+    = hb 'faq_text'
     %a{ href: '{{faq_href}}' }
       = hb 'faq_anchor'
 

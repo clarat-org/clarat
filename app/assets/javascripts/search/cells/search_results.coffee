@@ -13,9 +13,6 @@ class Clarat.Search.Cell.SearchResults
     return _.merge viewObjectFocus(), @generalViewObject()
 
   generalViewObject: =>
-
-    show_on_big_map_anchor: I18n.t('js.search_results.map.show_on_big_map')
-
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
@@ -26,7 +23,7 @@ class Clarat.Search.Cell.SearchResults
     @remoteResults = @resultSet.results[1]
 
     return specificViewObject =
-      personal_focus_with_remote: true
+      personal_focus_with_remote: @mainResults.nbHits > 0
       main_results_headline: @mainResultsHeadline('personal_offers')
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits

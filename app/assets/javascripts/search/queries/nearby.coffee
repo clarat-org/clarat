@@ -3,6 +3,7 @@ class Clarat.Search.Query.Nearby
 
   # TODO: geolocation
   constructor: (@geolocation, @exact_location = false) ->
+    console.log @geolocation
     @NEARBY_RADIUS = 250 if @exact_location == 'true'
 
   query_hash: ->

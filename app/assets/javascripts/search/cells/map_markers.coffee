@@ -14,7 +14,7 @@ class Clarat.Search.Cell.MapMarkers
   makeMarker: (object) ->
     key = "#{object._geoloc.lat},#{object._geoloc.lng}"
     if @markers[key]
-      @markers[key]['ids'] << object.id
+      @markers[key]['ids'].push object.id
     else
       @markers[key] =
         position:

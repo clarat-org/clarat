@@ -33,6 +33,7 @@ class ActiveScript.Model
 
   assignAttributes: (attributes) ->
     for attribute, value of attributes
+      console.log attribute, value
       @[attribute] = value
 
   updateAttributes: (attributes) ->

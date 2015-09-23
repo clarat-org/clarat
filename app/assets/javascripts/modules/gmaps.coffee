@@ -109,7 +109,7 @@ Clarat.GMaps =
         'search_form[generated_geolocation]',
         "#{position.latitude},#{position.longitude}"
       ).set(
-        'search_form[exact_location]', 't'
+        'search_form[exact_location]', 'true'
       ).toString()
 
     bindMarkerToResults: (marker, markerData) ->

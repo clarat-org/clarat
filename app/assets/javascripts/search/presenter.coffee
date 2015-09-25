@@ -74,7 +74,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       personalFacetResults, remoteFacetResults
     )
 
-
   ### CALLBACKS ###
 
   CALLBACKS:
@@ -85,6 +84,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       'Clarat.Location::NewLocation': 'handleNewGeolocation'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
+    '.JS-RemoveExactLocationClick':
+      click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
     '.JS-ToggleContactType':
@@ -114,6 +115,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes query: ''
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleRemoveExactLocationClick: (event) =>
+    if @model.exact_location == 'true'
+      console.log "exact_location change!!"
+      @model.assignAttributes exact_location: false
+      console.log
+      @sendMainSearch()
+      @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')

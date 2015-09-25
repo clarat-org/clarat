@@ -58,7 +58,11 @@ class Clarat.Search.Cell.SearchResults
       if @model.category
         output += HandlebarsTemplates['remove_query_link']()
 
-    output + " (#{@model.search_location})"
+    output += " (#{@model.search_location}"
+    if @model.exact_location == 'true'
+      output += ", TODO: genauer Ort! " +
+        HandlebarsTemplates['remove_exact_location']()
+    output + ")"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

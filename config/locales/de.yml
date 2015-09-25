@@ -50,7 +50,7 @@ de:
       example_placeholder: "z.B. %{word}, …"
 
     search_results:
-      more: "(Weitere Angebote …)"
+      more: "Weitere Angebote"
       map:
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"

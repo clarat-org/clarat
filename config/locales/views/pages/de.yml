@@ -126,8 +126,8 @@ de:
           du wohnst. Das sind meistens Angebote, die du per Telefon oder im
           Internet nutzen kannst. Das heißt, per E-Mail, im Chat oder im Forum.
           Viele andere Angebote kannst du da nutzen, wo du wohnst. Wir haben
-          bisher viele Angebote für Berlin und Brandenburg gesammelt. Und wir
-          sammeln weiter.
+          bisher viele Angebote für Berlin und gesammelt. Und wir sammeln
+          weiter.
         question_six: "> Wer finanziert clarat?"
         answer_six: |
           Das Geld für clarat kommt von der %{benckiser}.
@@ -148,8 +148,8 @@ de:
         answer_nine: |
           Die %{benckiser} ist eine Familienstiftung. Das ist eine Stiftung, die
           von einer Familie gegründet worden ist. Die Stiftung macht schon lange
-          viel für Kinder und Jugendliche in Deutschland. %{benckiser_video} kannst du in
-          einem Video mehr über die Stiftung erfahren.
+          viel für Kinder und Jugendliche in Deutschland. Hier kannst du in
+          einem %{benckiser_video} mehr über die Stiftung erfahren.
         question_ten: "> Was ist das Besondere an clarat?"
         answer_ten: |
           clarat zeigt dir Hilfe in deiner Nähe. Du findest alle
@@ -203,9 +203,9 @@ de:
           Bei clarat findest du verschiedene Unterstützungsangebote. Einige
           davon kannst du anonym nutzen. Das heißt, dass du niemandem deinen
           Namen sagen musst. Wenn du die Hilfe anonym nutzen kannst, steht das
-          bei clarat unter <i>Was musst du tun?</i> Wenn das da nicht steht, frage
-          am besten direkt den Anbieter, ob du die Hilfe auch anonym nutzen
-          kannst.
+          bei clarat unter <i>Was musst du tun?</i> Wenn das da nicht steht,
+          frage am besten direkt den Anbieter, ob du die Hilfe auch anonym
+          nutzen kannst.
         question_seventeen: "> Sind die Informationen bei clarat aktuell?"
         answer_seventeen: |
           Es ist wichtig, dass die Informationen bei clarat aktuell sind. Nur so
@@ -264,7 +264,7 @@ de:
           Bei clarat gibt es auch Angebote für Kinder und Jugendliche mit
           Behinderung. Und für ihre Familien. Aber nur einige Angebote, denn
           das Thema Behinderung ist kein Schwerpunkt bei clarat.
-          Als Kind oder Jugendlicher findest du dann Hilfe,
+          Als Kind oder Jugendlicher findest du dann Hilfe
         answer_three_bullet_one: |
           wenn du eine seelische Behinderung hast. Dazu zählen wir zum Beispiel
           psychische Krankheiten wie Depressionen.
@@ -286,23 +286,25 @@ de:
         answer_four_bullet_one: |
           Schreib in das Feld <i>Finde</i>, welche Hilfe du suchst. Zum Beispiel
           <i>Nachhilfe</i>. Oder was dein Problem ist. Zum Beispiel
-          <i>Streit zu Hause</i>. Auch wenn du noch kein ganzes Wort eingegeben hast,
-          bekommst du schon Angebote angezeigt. Schreib in das Feld <i>Wo</i>, an
-          welchem Ort du Unterstützung suchst. Zum Beispiel <i>Kreuzberg Berlin</i>.
+          <i>Streit zu Hause</i>. Auch wenn du noch kein ganzes Wort eingegeben
+          hast, bekommst du schon Angebote angezeigt. Schreib in das Feld
+          <i>Wo</i>, an welchem Ort du Unterstützung suchst. Zum Beispiel
+          <i>Kreuzberg Berlin</i>.
         answer_four_second_part: |
           Wenn du noch nicht genau weißt, wie dein Problem heißt, dann suche
           über die Themen-Suche.
         answer_four_bullet_two: |
-          In das Feld <i>Wo</i> schreibst du zuerst, wo du Unterstützung suchst. Dann
-          klickst du auf die Bilder. Wähle aus zwischen den Themen Familie,
+          In das Feld <i>Wo</i> schreibst du zuerst, wo du Unterstützung suchst.
+          Dann klickst du auf die Bilder. Wähle aus zwischen den Themen Familie,
           Gesundheit, Lernen und Gewalt. Wenn du zum Beispiel <i>Familie</i>
           anklickst, dann siehst du auf der linken Seite noch mehr Wörter zum
           Thema. Zum Beispiel Kinderarmut oder Familienkonflikt. Das sind auch
           Wörter, die du anklicken kannst. So kannst du herausfinden, wie man
           dein Problem nennt. Wenn dir zu diesem Thema zu viele
           Unterstützungsangebote angezeigt werden, dann kannst du außerdem
-          einen Suchbegriff eingeben. Schreib den Begriff in das Feld <i>Finde</i>.
-          So kannst du für das Thema, das du ausgesucht hast, Angebote finden.
+          einen Suchbegriff eingeben. Schreib den Begriff in das Feld
+          <i>Finde</i>.So kannst du für das Thema, das du ausgesucht hast,
+          Angebote finden.
         question_five: |
           > Was kann ich machen, wenn ich mein Problem nicht genau beschreiben
           kann?
@@ -319,17 +321,19 @@ de:
           klickst, dann siehst du auf der linken Seite noch mehr Wörter. Diese
           Wörter kannst du auch anklicken. Du kannst auswählen zwischen
         answer_six_bullet_one: |
-          Familienkonflikt
+          Erwachsenwerden
         answer_six_bullet_two: |
-          Kinder kriegen
+          Familienkonflikt
         answer_six_bullet_three: |
-          Adoption und Pflege
+          Kinder kriegen
         answer_six_bullet_four: |
-          Trauer und Tod
+          Adoption und Pflege
         answer_six_bullet_five: |
-          Migration und Flucht
+          Trauer und Tod
         answer_six_bullet_six: |
-          Kinderarmut
+          Migration und Flucht
+        answer_six_bullet_seven: |
+          Armut und Alleinsein
         answer_six_second_part: |
           Dann kannst du dich einfach durchklicken, bis du die passende Hilfe
           gefunden hast.
@@ -340,15 +344,17 @@ de:
           siehst du auf der linken Seite noch mehr Wörter, die du anklicken
           kannst. Du kannst auswählen zwischen
         answer_seven_bullet_one: |
-          schwierige Schwangerschaft und Geburt
+          Schwangerschaft und Geburt
         answer_seven_bullet_two: |
-          Sucht
-        answer_seven_bullet_three: |
           sexuell übertragbare Krankheiten
+        answer_seven_bullet_three: |
+          Sucht
         answer_seven_bullet_four: |
-          chronische Krankheiten
+          körperliche Krankheiten
         answer_seven_bullet_five: |
-          psychische Krankheiten
+          seelische Probleme
+        answer_seven_bullet_six: |
+          Behinderung
         answer_seven_second_part: |
           Dann kannst du dich einfach durchklicken, bis du die passende Hilfe
           gefunden hast.
@@ -392,17 +398,18 @@ de:
         answer_ten: |
           Wenn du auf den Blitz klickst, dann siehst du ganz bestimmte Angebote.
           Diese Angebote helfen dir in einem Notfall. Also wenn du schnell Hilfe
-          brauchst. Bei Angeboten, bei denen <i>Tag und Nacht</i> steht, kannst du
-          dich immer melden. Egal, wie spät es ist. Wenn du nicht so gerne
+          brauchst. Bei Angeboten, bei denen <i>Tag und Nacht</i> steht, kannst
+          du dich immer melden. Egal, wie spät es ist. Wenn du nicht so gerne
           rausgehen möchtest, findest du hier auch Hilfe per Telefon und über
           das Internet.
         question_eleven: "> Wie finde ich Unterstützungsangebote in meiner Nähe?"
         answer_eleven: |
-          Schreib in das Feld <i>Wo</i>, an welchem Ort du Unterstützung suchst. Zum
-          Beispiel <i>Berlin</i> oder <i>10961 Berlin</i> oder <i>Kreuzberg Berlin</i> oder
-          <i>Musterstraße Berlin</i>. Schreib in das Feld <i>Finde</i>, welche Hilfe du
-          suchst. Oder was dein Problem ist. Zum Beispiel <i>Drogen</i> oder
-          <i>arbeitslos</i>. Dann klick einfach auf die Lupe und finde Unterstützung!
+          Schreib in das Feld <i>Wo</i>, an welchem Ort du Unterstützung suchst.
+          Zum Beispiel <i>Berlin</i> oder <i>10961 Berlin</i> oder
+          <i>Kreuzberg Berlin</i> oder <i>Musterstraße Berlin</i>. Schreib in
+          das Feld <i>Finde</i>, welche Hilfe du suchst. Oder was dein Problem
+          ist. Zum Beispiel <i>Drogen</i> oder <i>arbeitslos</i>. Dann klick
+          einfach auf die Lupe und finde Unterstützung!
         question_twelve: |
           > Wieso finde ich keine Unterstützungsangebote in meiner Nähe?
         answer_twelve_first_part: |
@@ -414,11 +421,11 @@ de:
           Stadtteil in deiner Nähe einzugeben. Wenn du auch hier nichts findest,
           gib <i>Berlin</i> ein.
         answer_twelve_bullet_two: |
-          Wenn du auf dem Land wohnst: Du kannst versuchen im Feld <i>Wo</i> eine
-          Stadt in deiner Nähe einzugeben.
+          Wenn du auf dem Land wohnst: Du kannst versuchen im Feld <i>Wo</i>
+          eine Stadt in deiner Nähe einzugeben.
         answer_twelve_second_part: |
-          Wenn du immer noch nichts findest, versuche es im Feld <i>Finde</i> mit
-          einem anderen Suchwort.
+          Wenn du immer noch nichts findest, versuche es im Feld <i>Finde</i>
+          mit einem anderen Suchwort.
         answer_twelve_bullet_three: |
           Wenn dir kein anderes Suchwort einfällt, versuche über die Bilder zu
           suchen. Ein Bild steht für ein Thema. Hier kannst du zwischen den
@@ -435,15 +442,15 @@ de:
           noch mehr Informationen zu deinem Problem. Und dazu, wie du es lösen
           kannst.
         question_fourteen: "> Wieso finde ich nicht das, was ich suche?"
-        answer_fourteen: |
+        answer_fourteen_first_part: |
           Das kann verschiedene Gründe haben. Es kann sein, dass dein
           Suchbegriff nicht funktioniert. Ein anderer Grund dafür kann sein:
           Wir haben für deinen Stadtteil oder deine Stadt noch keine Angebote
-          gesammelt. Es kann auch sein, dass wir für dein Problem leider keine
-          passenden Angebote bei clarat haben. Damit wir das
-          bald ändern können, ist deine Rückmeldung für uns sehr wichtig. Gib
-          uns bitte per E-Mail an %{mailto} Bescheid, wenn du nicht
-          findest, was du suchst.
+          gesammelt. Es kann auch sein, dass wir %{why_incomplete} bei clarat
+          haben. Damit wir das bald ändern können, ist deine Rückmeldung für
+          uns sehr wichtig. Gib uns bitte per E-Mail an %{mailto} Bescheid,
+          wenn du nicht findest, was du suchst.
+        answer_fourteen_second_part: |
           Hier einige Tipps, die dir bei der Suche helfen.
         answer_fourteen_bullet_one: |
           Probiere es mit einem anderen Suchbegriff. Wenn das nicht
@@ -452,35 +459,37 @@ de:
           Wenn du in Berlin wohnst: Probiere es mal, im Feld <i>Wo</i> einen
           Stadtteil in deiner Nähe oder nur <i>Berlin</i> einzugeben.
         answer_fourteen_bullet_three: |
-          Wenn du auf dem Land wohnst: Dann probiere im Feld <i>Wo</i> eine Stadt bei
-          dir in der Nähe einzugeben.
+          Wenn du auf dem Land wohnst: Dann probiere im Feld <i>Wo</i> eine
+          Stadt bei dir in der Nähe einzugeben.
         question_fifteen: |
           > Was kann ich machen, wenn ich nicht weiß, ob das Angebot das
-          richtige für mich ist?"
+          richtige für mich ist?
         answer_fifteen: |
           Am besten du guckst zuerst genau, bei welchem Problem das Angebot
           hilft. Wenn es noch nicht ganz die richtige Hilfe für dich ist, dann
           probiere es mit einem anderen Angebot. Wenn du dir noch nicht sicher
           bist, frage am besten beim Anbieter nach. Oft kann man anrufen oder
           eine E-Mail schreiben. Telefonnummern und E-Mail-Adressen findest du
-          bei clarat. Die stehen unter <i>Wo kannst du dich melden?</i>.
+          bei clarat. Die stehen unter <i>Wo kannst du dich melden?</i>
         question_sixteen: |
           > Wie finde ich Angebote, wenn ich nicht für mich selbst Hilfe suche,
-          sondern für jemand anderen?"
-        answer_sixteen: |
+          sondern für jemand anderen?
+        answer_sixteen_first_part: |
           Bei clarat kannst du nicht nur für dich selbst nach Hilfe suchen.
           Sondern auch für andere. Zum Beispiel für einen Freund. Oder als Onkel
           für deinen Neffen. Oder als Mutter für deine Tochter. Oder als Lehrer
           für deinen Schüler. Wunder dich nicht über die Anfangsfragen in den
           Angeboten. Alle Angebote bei clarat sind ähnlich geschrieben. Wir
           sprechen immer zuerst die Person an, die bei diesem Angebot Hilfe
-          bekommt. Stell dir vor, du suchst Hausaufgabenhilfe für deine Tochter.
+          bekommt.
+        answer_sixteen_second_part: |
+          Stell dir vor, du suchst Hausaufgabenhilfe für deine Tochter.
           Du bist also richtig, wenn ein Angebot zum Beispiel mit der Frage
-          beginnt <i>Brauchst du Hilfe bei den Hausaufgaben?</i>. Hier wird deine
-          Tochter angesprochen. Sie braucht Hilfe bei den Hausaufgaben. Wenn du
-          denkst, dass das Angebot für deine Tochter passt, kannst du dich hier
-          auch melden. Oder deiner Tochter sagen, dass sie hier Hilfe bekommt
-          und sich selbst melden kann.
+          beginnt <i>Brauchst du Hilfe bei den Hausaufgaben?</i>. Hier wird
+          deine Tochter angesprochen. Sie braucht Hilfe bei den Hausaufgaben.
+          Wenn du denkst, dass das Angebot für deine Tochter passt, kannst du
+          dich hier auch melden. Oder deiner Tochter sagen, dass sie hier Hilfe
+          bekommt und sich selbst melden kann.
       section_three:
         heading: "Hast du Fragen zur clarat-Sprache?"
         question_one: "> Was macht die clarat-Sprache aus?"
@@ -495,15 +504,15 @@ de:
           soll den Nutzer respektvoll behandeln und ihn da abholen, wo er
           gerade steht.
         question_two: |
-          > Worauf muss ich bei der Übersetzung in andere Sprachen achten?
+          > Wie werden schwierige Wörter bei clarat erklärt?
         answer_two: |
           Schwierige Wörter werden bei clarat, wenn möglich, in einem Satz
           erklärt. Manche Wörter brauchen aber längere Erklärungen. Diese Wörter
           erkennst du bei clarat daran, dass sie unterstrichen sind. Wenn du mit
           der Maus über diese Wörter fährst, siehst du die Erklärungen.
         question_three: |
-          > Warum schreibt clarat immer nur zum Beispiel <i>Schüler</i> und nicht
-          <i>Schüler und Schülerinnen</i>?
+          > Warum schreibt clarat immer nur zum Beispiel <i>Schüler</i> und
+          nicht <i>Schüler und Schülerinnen</i>?
         answer_three: |
           Bei clarat nutzen wir eine einfache Sprache. Das bedeutet auch, dass
           wir kurze Sätze verwenden. Deswegen sagen wir nicht jedesmal Schüler
@@ -558,8 +567,8 @@ de:
           Außerdem gibt es das Thema Notfall. Hier findest du Hilfe bei sehr
           dringenden Problemen.
           Bei der Suche über das Feld <i>Finde</i> musst du das hier beachten:
-          Du kannst auch ein Suchwort im Feld <i>Finde</i> eingeben. Pass auf, du
-          musst hier deutsche Wörter eingeben. Sonst funktioniert die Suche
+          Du kannst auch ein Suchwort im Feld <i>Finde</i> eingeben. Pass auf,
+          du musst hier deutsche Wörter eingeben. Sonst funktioniert die Suche
           nicht.
         question_nine: "> Was kann ich mit dem Google-Translator machen?"
         answer_nine: |
@@ -609,23 +618,24 @@ de:
           Türkisch.
         question_three: "> Wie finde ich meine Angebote bei clarat?"
         answer_three: |
-          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation eintragen.
-          Und in dem Feld <i>Wo</i> den Standort deiner Organisation. Zum Beispiel
-          <i>Mustermannstraße 14 Berlin</i>. Dann bekommst du die Angebote für
-          diesen Standort in einer Übersicht angezeigt. Falls deine
-          Organisation mehrere Standorte in Berlin hat, gib in dem Feld <i>Wo</i>
-          nur <i>Berlin</i> ein. Momentan haben wir viele Angebote für Berlin
-          gesammelt.
+          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation
+          eintragen. Und in dem Feld <i>Wo</i> den Standort deiner Organisation.
+          Zum Beispiel <i>Mustermannstraße 14 Berlin</i>. Dann bekommst du die
+          Angebote für diesen Standort in einer Übersicht angezeigt. Falls deine
+          Organisation mehrere Standorte in Berlin hat, gib in dem Feld
+          <i>Wo</i> nur <i>Berlin</i> ein. Momentan haben wir viele Angebote für
+          Berlin gesammelt.
         question_four: |
           > Wie kann ich mir meine Angebote in einer Übersicht anzeigen lassen?
         answer_four: |
-          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation eintragen.
-          Und dann in dem Feld <i>Wo</i> den Standort deiner Organisation. Zum
-          Beispiel <i>Mustermannstraße Berlin</i> oder <i>Berlin</i>. Dann bekommst du
-          deine Angebote in einer Übersicht angezeigt.
+          Du kannst in dem Feld <i>Finde</i> den Namen deiner Organisation
+          eintragen. Und dann in dem Feld <i>Wo</i> den Standort deiner
+          Organisation. Zum Beispiel <i>Mustermannstraße Berlin</i> oder
+          <i>Berlin</i>. Dann bekommst du deine Angebote in einer Übersicht
+          angezeigt.
         question_five: |
           > Warum sind die Angebote bei clarat anders beschrieben als auf
-          unserer Webseite?"
+          unserer Webseite?
         answer_five: |
           Damit alle Hilfe finden, schreiben wir alle Angebote in einer
           einfachen Sprache. In einfacher Sprache müssen komplizierte Dinge
@@ -666,14 +676,14 @@ de:
         answer_eight_bullet_one: |
           Das kann daran liegen, dass wir für deinen Standort leider noch keine
           Angebote gesammelt haben. Momentan haben wir viele Angebote für Berlin
-          und einige für Brandenburg gesammelt. Die meisten Angebote gibt es
-          bisher für den Stadtteil Friedrichshain-Kreuzberg.
+          gesammelt. Die meisten Angebote gibt es bisher für den Stadtteil
+          Friedrichshain-Kreuzberg.
         answer_eight_bullet_two: |
           Oder daran, dass deine Angebote inhaltlich nicht zu clarat passen.
           Bei clarat findet man nur Angebote zu ganz bestimmten Themen. Welche
-          das sind, kannst du %{what_offers} nachlesen. Wenn wir deine Angebote bei
-          clarat aufnehmen sollen, melde dich bei uns. Am besten schreibe uns
-          eine E-Mail an %{mailto} oder ruf an unter +49 (0)30 55 57 96 00.
+          das sind, kannst du %{what_offers} nachlesen. Wenn wir deine Angebote
+          bei clarat aufnehmen sollen, melde dich bei uns. Am besten schreibe
+          uns eine E-Mail an %{mailto} oder ruf an unter +49 (0)30 55 57 96 00.
     privacy:
       title: "Datenschutz"
       heading: "Datenschutzhinweise"

@@ -61,7 +61,7 @@
                       'http://www.benckiser-stiftung.org/',
                       target: '_blank'),
               benckiser_video: \
-              link_to('Hier',
+              link_to('Video',
                       'http://blog.benckiser-stiftung.org/blog/2014/12/01/die-benckiser-stiftung-zukunft-im-film/',
                       target: '_blank')
           h4.FAQ_question = t '.section_one.question_ten'
@@ -173,6 +173,8 @@
                   == t '.section_two.answer_six_bullet_five'
                 li
                   == t '.section_two.answer_six_bullet_six'
+                li
+                  == t '.section_two.answer_six_bullet_seven'
             p
               = t '.section_two.answer_six_second_part'
           h4.FAQ_question = t '.section_two.question_seven'
@@ -190,6 +192,8 @@
                   == t '.section_two.answer_seven_bullet_four'
                 li
                   == t '.section_two.answer_seven_bullet_five'
+                li
+                  == t '.section_two.answer_seven_bullet_six'
             p
             = t '.section_two.answer_seven_second_part'
           h4.FAQ_question = t '.section_two.question_eight'
@@ -245,9 +249,9 @@
           .FAQ_paragraph = t '.section_two.answer_thirteen'
           h4.FAQ_question = t '.section_two.question_fourteen'
           .FAQ_paragraph
-            == t '.section_two.answer_fourteen',
+            == t '.section_two.answer_fourteen_first_part',
             why_incomplete: \
-            link_to('Hier',
+            link_to('für dein Problem leider keine passenden Angebote',
                     '/haeufige-fragen/#why_incomplete',
                     class: 'FAQ_anchor_link'),
               mailto: \
@@ -255,17 +259,22 @@
                       'post@clarat.org',
                       target: '_blank')
             p
+            == t '.section_two.answer_fourteen_second_part'
+            p
               ul
                 li
-                  == t '.section_two.answer_twelve_bullet_one'
+                  == t '.section_two.answer_fourteen_bullet_one'
                 li
-                  == t '.section_two.answer_twelve_bullet_two'
+                  == t '.section_two.answer_fourteen_bullet_two'
                 li
-                  == t '.section_two.answer_twelve_bullet_three'
+                  == t '.section_two.answer_fourteen_bullet_three'
           h4.FAQ_question = t '.section_two.question_fifteen'
           .FAQ_paragraph == t '.section_two.answer_fifteen'
           h4.FAQ_question = t '.section_two.question_sixteen'
-          .FAQ_paragraph == t '.section_two.answer_sixteen'
+          .FAQ_paragraph
+            == t '.section_two.answer_sixteen_first_part'
+            br
+            == t '.section_two.answer_sixteen_second_part'
 
       section
         h3.section-question-group__headline = t '.section_three.heading'

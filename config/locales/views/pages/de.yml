@@ -29,8 +29,10 @@ de:
       title: "404"
       heading: "Leider konnten wir diese Seite nicht finden."
       description: |
-        Bitte nutze den Zurück-Knopf deines Browsers und versuche es mit einem
-        anderen Link oder probiere es mit der Suchfunktion.
+        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
+        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
+        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
+        Bilder nach passender Hilfe suchen.
 
     agb:
       title: "Rechtliche Hinweise"

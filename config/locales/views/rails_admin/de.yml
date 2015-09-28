@@ -19,6 +19,7 @@ de:
             internal_feedback: "internally deactivated"
             external_feedback: "externally deactivated"
             paused: "paused"
+            organization_deactivated: "organization_deactivated"
           icons:
             initialized: "fa-file-o"
             completed: "fa-check-circle-o"
@@ -27,12 +28,14 @@ de:
             internal_feedback: "fa-user-times"
             external_feedback: "fa-users"
             paused: "fa-pause"
+            organization_deactivated: "fa-building-o"
         events:
           complete: "Als komplett markieren"
           approve: "Freischalten"
           expire: "Expire"
           deactivate_internal: "Deaktivieren (Internal Feedback)"
           deactivate_external: "Deaktivieren (External Feedback)"
+          deactivate_through_organization: "> organization_deactivated"
           pause: "Pausieren"
 
     main:

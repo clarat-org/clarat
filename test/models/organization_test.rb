@@ -6,6 +6,7 @@ describe Organization do
                      description: 'Testbeschreibung',
                      legal_form: 'ev')
   end # Necessary to test uniqueness
+  let(:orga) { organizations(:basic) }
 
   subject { organization }
 
@@ -205,6 +206,40 @@ describe Organization do
           organization.deactivate_external
         end
         organization.must_be :external_feedback?
+      end
+    end
+
+    describe 'deactivate_offers!' do
+      it 'should deactivate an approved offer belonging to this organization' do
+        orga.offers.first.must_be :approved?
+        orga.update_column :aasm_state, :internal_feedback
+        orga.deactivate_offers!
+        orga.offers.first.must_be :organization_deactivated?
+      end
+
+      it 'should raise an error when deactivation fails for an offer' do
+        Offer.any_instance.expects(:deactivate_through_organization!)
+          .returns(false)
+
+        assert_raise(RuntimeError) { orga.deactivate_offers! }
+      end
+    end
+
+    describe 'reactivate_offers!' do
+      let(:offer) { offers(:basic) }
+      it 'should reactivate an associated organization_deactivated offer' do
+        offer.update_column :aasm_state, :organization_deactivated
+        orga.reactivate_offers!
+        offer.reload.must_be :approved?
+      end
+
+      it 'wont approve offers, that have another deactivated orga' do
+        offer.update_column :aasm_state, :organization_deactivated
+        offer.organizations <<
+          FactoryGirl.create(:organization, aasm_state: 'external_feedback')
+
+        orga.reactivate_offers!
+        offer.reload.must_be :organization_deactivated?
       end
     end
   end

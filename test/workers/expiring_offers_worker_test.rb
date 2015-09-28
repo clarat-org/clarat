@@ -10,7 +10,7 @@ class ExpiringOffersWorkerTest < ActiveSupport::TestCase # to have fixtures
     later = FactoryGirl.create :offer, :approved, expires_at: today + 2.days
     Timecop.return
     OfferMailer.expect_chain(:expiring_mail, :deliver).once
-    # TODO: Fix this and the other tests with 4.2
+    AsanaCommunicator.any_instance.expects(:create_expire_task).once
     worker.perform
     expiring.reload.must_be :expired?
     later.reload.must_be :approved?
@@ -22,12 +22,14 @@ class ExpiringOffersWorkerTest < ActiveSupport::TestCase # to have fixtures
       FactoryGirl.create :offer, expires_at: yesterday
     end
     OfferMailer.expects(:expiring_mail).never
+    AsanaCommunicator.any_instance.expects(:create_expire_task).never
     worker.perform
   end
 
   it 'does not send an email for offers that will expire' do
     FactoryGirl.create :offer, expires_at: (Time.zone.now.end_of_day + 1)
     OfferMailer.expects(:expiring_mail).never
+    AsanaCommunicator.any_instance.expects(:create_expire_task).never
     worker.perform
   end
 end

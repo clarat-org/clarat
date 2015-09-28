@@ -1,25 +1,31 @@
 deutsch:
+  id: 1
   type: LanguageFilter
   name: Deutsch
   identifier: deu
 english:
+  id: 2
   type: LanguageFilter
   name: English
   identifier: eng
 
 children:
+  id: 3
   type: TargetAudienceFilter
   name: Kinder
   identifier: children
 parents:
+  id: 4
   type: TargetAudienceFilter
   name: Eltern
   identifier: parents
 family:
+  id: 5
   type: TargetAudienceFilter
   name: Familie
   identifier: family
 acquintances:
+  id: 6
   type: TargetAudienceFilter
   name: Bekannte
   identifier: acquintances

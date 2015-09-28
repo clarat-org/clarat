@@ -2,6 +2,9 @@
 class Organization < ActiveRecord::Base
   has_paper_trail
 
+  # Modules
+  include StateMachine
+
   # Concerns
   include Creator, CustomValidatable, Notable
 
@@ -22,10 +25,10 @@ class Organization < ActiveRecord::Base
 
   # Enumerization
   extend Enumerize
-  enumerize :legal_form, in: %w(ev ggmbh gag foundation gug kdor ador kirche
-                                gmbh ag ug kfm gbr ohg kg eg sonstige
-                                state_entity)
-  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk asb zwst)
+  enumerize :legal_form, in: %w(ev ggmbh gag foundation gug gmbh ag ug kfm gbr
+                                ohg kg eg sonstige state_entity)
+  enumerize :umbrella, in: %w(caritas diakonie awo dpw drk asb zwst dbs vdw bags
+                              svdkd bkd church hospital public_authority other)
 
   # Sanitization
   extend Sanitization
@@ -53,43 +56,6 @@ class Organization < ActiveRecord::Base
   def validate_hq_location
     if locations.to_a.count(&:hq) != 1
       errors.add(:base, I18n.t('organization.validations.hq_location'))
-    end
-  end
-
-  # State Machine
-
-  include AASM
-  aasm do
-    ## States
-
-    state :initialized, initial: true
-    state :completed
-    state :approved
-
-    # Special states object might enter after it was approved
-    state :internal_feedback # There was an issue (internal)
-    state :external_feedback # There was an issue (external)
-
-    ## Transitions
-
-    event :complete do
-      transitions from: :initialized, to: :completed
-    end
-
-    event :approve, before: :set_approved_information do
-      transitions from: :completed, to: :approved, guard: :different_actor?
-      transitions from: :internal_feedback, to: :approved
-      transitions from: :external_feedback, to: :approved
-    end
-
-    event :deactivate_internal do
-      transitions from: :approved, to: :internal_feedback
-      transitions from: :external_feedback, to: :internal_feedback
-    end
-
-    event :deactivate_external do
-      transitions from: :approved, to: :external_feedback
-      transitions from: :internal_feedback, to: :external_feedback
     end
   end
 

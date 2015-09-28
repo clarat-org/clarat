@@ -98,6 +98,42 @@ feature 'Admin Backend' do
       page.must_have_content 'Zustandsänderung war erfolgreich'
     end
 
+    scenario 'Deactivate Organization' do
+      orga = organizations(:basic)
+      FactoryGirl.create :offer, organization: orga, aasm_state: :completed
+      FactoryGirl.create :offer, organization: orga,
+                                 aasm_state: :internal_feedback
+
+      visit rails_admin_path
+      click_link 'Organisationen', match: :first
+      click_link 'Bearbeiten', match: :first
+
+      # Deactivation button click: deactivates orga and all its approved offers
+
+      orga.must_be :approved?
+      orga.offers.select(:aasm_state).map(&:aasm_state).must_equal(
+        %w(approved completed internal_feedback)
+      )
+
+      click_link 'Deaktivieren (External Feedback)'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+
+      orga.reload.must_be :external_feedback?
+      orga.offers.select(:aasm_state).map(&:aasm_state).must_equal(
+        %w(organization_deactivated completed internal_feedback)
+      )
+
+      # Approve button click: reactivates orga and all its approved offers
+
+      click_link 'Freischalten'
+      page.must_have_content 'Zustandsänderung war erfolgreich'
+
+      orga.reload.must_be :approved?
+      orga.offers.select(:aasm_state).map(&:aasm_state).must_equal(
+        %w(approved completed internal_feedback)
+      )
+    end
+
     scenario 'Try to create offer with errors' do
       location = FactoryGirl.create(:location, name: 'testname')
       contact_person = FactoryGirl.create :contact_person

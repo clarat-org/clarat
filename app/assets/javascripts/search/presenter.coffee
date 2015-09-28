@@ -108,6 +108,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes
       search_location: location.query
       generated_geolocation: location.geoloc
+      exact_location: false
     @sendMainSearch()
     @sendLocationSupportSearch() # only needs to be called on new location
 
@@ -119,7 +120,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleRemoveExactLocationClick: (event) =>
     if @model.exact_location == 'true'
       console.log "exact_location change!!"
-      @model.assignAttributes exact_location: false
+      @model.updateAttributes
+        exact_location: false
+        search_location: 'Berlin'
       console.log
       @sendMainSearch()
       @sendQuerySupportSearch()

@@ -90,7 +90,7 @@ Clarat.GMaps =
             title: I18n.t 'js.map_info_window_multiple.title'
             text: I18n.t 'js.map_info_window_multiple.text'
             anchor: I18n.t 'js.map_info_window_multiple.anchor'
-            url: Clarat.GMaps.Map.generate_exact_search_url markerData.position
+            url: Clarat.GMaps.Map.generate_exact_search_url markerData
       else
         contentString =
           HoganTemplates['map_info_window_offer'].render markerData
@@ -104,13 +104,17 @@ Clarat.GMaps =
       google.maps.event.addListener map, 'click', (event) ->
         infowindow.close()
 
-    generate_exact_search_url: (position) ->
+    generate_exact_search_url: (markerData) ->
       location.origin + location.pathname + $.query.set(
         'search_form[generated_geolocation]',
-        "#{position.latitude},#{position.longitude}"
+        "#{markerData.position.latitude},#{markerData.position.longitude}"
+      ).set(
+        'search_form[search_location]', "#{markerData.address}"
       ).set(
         'search_form[exact_location]', 'true'
       ).toString()
+      .replace /%2B/g, '%20'
+      # ^ fix $.query tendency to convert space to plus
 
     bindMarkerToResults: (marker, markerData) ->
       for offerID in markerData.ids

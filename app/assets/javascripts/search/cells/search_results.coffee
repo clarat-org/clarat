@@ -60,7 +60,7 @@ class Clarat.Search.Cell.SearchResults
 
     output += " (#{@model.search_location}"
     if @model.exact_location == 'true'
-      output += ", TODO: genauer Ort! " +
+      output += ", genaue Suche! " +
         HandlebarsTemplates['remove_exact_location']()
     output + ")"
 

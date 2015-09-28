@@ -11,7 +11,6 @@ describe ContactPerson do
     it { subject.must_respond_to :operational_name }
     it { subject.must_respond_to :academic_title }
     it { subject.must_respond_to :gender }
-    it { subject.must_respond_to :role }
     it { subject.must_respond_to :responsibility }
     it { subject.must_respond_to :area_code_1 }
     it { subject.must_respond_to :local_number_1 }

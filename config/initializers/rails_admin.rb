@@ -337,11 +337,6 @@ RailsAdmin.config do |config|
         z.B. 'Zentrale' eintragen"
       end
     end
-    field :role do
-      help do
-        "Z.b. 'Geschäftsführer'"
-      end
-    end
     field :responsibility do
       help do
         "Z.b. 'Zuständig für alle Anfragen von Menschen deren Nachname mit den

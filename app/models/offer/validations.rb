@@ -28,7 +28,7 @@ class Offer
 
       # Custom validations
       validate :validate_associated_fields
-      validate :only_approved_organizations, unless: :preapproval?
+      validate :only_approved_organizations, if: :approved?
       validate :age_from_fits_age_to
       validate :location_and_area_fit_encounter
       validate :location_fits_organization, on: :update

@@ -20,4 +20,11 @@ class User < ActiveRecord::Base
 
   # Scopes
   scope :researcher, -> { where(role: 'researcher') }
+
+  # Methods
+
+  def self.system_user
+    find_by_name('System') || create!(
+      name: 'System', password: SecureRandom.base64, email: 'dev@clarat.org')
+  end
 end

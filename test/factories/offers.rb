@@ -22,6 +22,7 @@ FactoryGirl.define do
 
     transient do
       organization_count 1
+      organization nil
       contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
@@ -34,8 +35,12 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       # organization
-      evaluator.organization_count.times do
-        offer.organizations << FactoryGirl.create(:organization, :approved)
+      if evaluator.organization
+        offer.organizations << evaluator.organization
+      else
+        evaluator.organization_count.times do
+          offer.organizations << FactoryGirl.create(:organization, :approved)
+        end
       end
       organization =
         offer.organizations[0] || FactoryGirl.create(:organization, :approved)

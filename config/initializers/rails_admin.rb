@@ -84,6 +84,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :description_html do
+      visible false
       read_only true
     end
     field :comment do
@@ -222,6 +223,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :description_html do
+      visible false
       read_only true
     end
     field :comment do
@@ -232,6 +234,7 @@ RailsAdmin.config do |config|
       css_class 'js-count-character'
     end
     field :next_steps_html do
+      visible false
       read_only true
     end
     field :legal_information
@@ -272,6 +275,7 @@ RailsAdmin.config do |config|
       end
     end
     field :opening_specification_html do
+      visible false
       read_only true
     end
     field :websites

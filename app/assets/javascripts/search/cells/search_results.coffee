@@ -33,7 +33,7 @@ class Clarat.Search.Cell.SearchResults
 
       faq_text: I18n.t('js.search_results.faq_text')
       faq_anchor: I18n.t('js.search_results.faq_anchor')
-      faq_href: "/haeufige-fragen"
+      faq_href: "/haeufige-fragen#no_results"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits

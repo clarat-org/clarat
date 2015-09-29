@@ -50,7 +50,7 @@ de:
       example_placeholder: "z.B. %{word}, …"
 
     search_results:
-      more: "(Weitere Angebote …)"
+      more: "Weitere Angebote"
       enclosing: "gefunden"
       faq_text: "Häufige Fragen und Antworten zu unserer Suche findest du "
       faq_anchor: "hier"

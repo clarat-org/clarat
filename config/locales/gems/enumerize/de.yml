@@ -8,9 +8,6 @@ de:
         gag: 'gAG'
         foundation: 'Stiftung'
         gug: 'gUG'
-        kdor: 'KdöR'
-        ador: 'AdöR'
-        kirche: 'Kirche'
         gmbh: 'GmbH'
         ag: 'AG'
         ug: 'UG'
@@ -29,6 +26,18 @@ de:
         drk: 'Deutsches Rotes Kreuz'
         asb: 'Arbeiter-Samariter-Bund'
         zwst: 'Zentralwohlfahrtsstelle der Juden in Deutschland'
+        dbs: 'Deutscher Blinden- und Sehbehindertenverband'
+        vdw: 'Verband deutscher Wohltätigkeitsstiftungen'
+        bags: |
+            Bundesarbeitsgemeinschaft SELBSTHILFE von Menschen mit Behinderung
+            und chronischer Erkrankung und ihren Angehörigen
+        svdkd: 'Sozialverband VdK Deutschland'
+        bkd: 'Bund der Kriegsblinden Deutschlands'
+        church: 'Kirche'
+        hospital: 'Krankenhaus'
+        public_authority: 'Öffentliche Hand'
+        other: 'Sonstige'
+
     contact_person:
       gender:
         male: Male

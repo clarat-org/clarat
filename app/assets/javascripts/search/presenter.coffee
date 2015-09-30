@@ -45,6 +45,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>
+    console.log resultSet
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', viewModel
@@ -57,8 +58,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
-    personalFacetResults = resultSet.results[1]
-    remoteFacetResults = resultSet.results[2]
+    personalFacetResults = resultSet.results[0]
+    remoteFacetResults = resultSet.results[1]
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')

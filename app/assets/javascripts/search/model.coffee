@@ -20,8 +20,13 @@ class Clarat.Search.Model extends ActiveScript.Model
   ### PRIVATE METHODS (ue) ###
 
   nearbyAndFacetQueries: ->
-    _.map [@nearby_query(), @personal_facet_query(), @remote_facet_query()],
+    @_test = _.map [@personal_facet_query(), @remote_facet_query()],
           (query) -> query.query_hash()
+    console.log "nearbyAndFacetQueries"
+    console.log @_test
+    Clarat.facetPersonal = @_test[1]
+    Clarat.facetRemote = @_test[2]
+    @_test
 
   facetQueries: ->
     _.map [@personal_facet_query(), @remote_facet_query()],
@@ -32,6 +37,11 @@ class Clarat.Search.Model extends ActiveScript.Model
       .compact()
       .map( (query) -> query.query_hash() )
       .value()
+    console.log "personalAndRemoteQueries"
+    console.log @_queries
+    Clarat.queryPersonal = @_queries[0]
+    Clarat.queryRemote = @_queries[1]
+    @_queries
 
   personal_query: ->
     if @isPersonal()

@@ -10,8 +10,8 @@ class Clarat.Search.Query.Base
     _.merge @page_query(),
       query: @query
       params:
-        tagFilters: @category
-        facets: '_age_filters,_audience_filters,_language_filters'
+        tagFilters: [@category]
+        facets: '_tags,_age_filters,_audience_filters,_language_filters'
         facetFilters: @facet_filters
         aroundPrecision: @BASE_PRECISION
 

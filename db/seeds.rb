@@ -7,12 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Offer.clear_index!
 
-user = User.create email: 'user@user.com', password: 'password',
-                                           role: 'researcher'
-user.confirm!
-admin = User.create email: 'admin@admin.com', password: 'password',
-                                              role: 'super'
-admin.confirm!
+user = User.create email: 'user@user.com', role: 'researcher'
+admin = User.create email: 'admin@admin.com', role: 'super'
 
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'

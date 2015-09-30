@@ -2,6 +2,7 @@
 class Clarat.Search.Query.Base
   PER_PAGE: 20
   BASE_PRECISION: 500
+  VALUES_PER_FACET: 300
 
   constructor:
     (@query = '', @category = null, @facet_filters = [], @page = null) ->
@@ -17,6 +18,7 @@ class Clarat.Search.Query.Base
         facets: '_age_filters,_audience_filters,_language_filters'
         facetFilters: @facet_filters
         aroundPrecision: @BASE_PRECISION
+        maxValuesPerFacet: @VALUES_PER_FACET
 
   page_query: ->
     if @page?

@@ -45,7 +45,7 @@ class Clarat.Search.Cell.SearchResults
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
       remote_focus: true
-      toggle_personal_anchor: "(Zeige lokale Angebote)" # TODO: permanent? +css
+      toggle_personal_anchor: "Zeige lokale Angebote" # TODO: permanent? +css
 
 
   ## Headline Building Helpers
@@ -61,7 +61,7 @@ class Clarat.Search.Cell.SearchResults
       output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output + " (#{@model.search_location}) #{enclosing}."
+    output + " (#{@model.search_location}) #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

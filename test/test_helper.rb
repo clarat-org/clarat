@@ -59,10 +59,6 @@ Minitest.after_run do
   end
 end
 
-class ActionController::TestCase
-  include Devise::TestHelpers
-end
-
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
 

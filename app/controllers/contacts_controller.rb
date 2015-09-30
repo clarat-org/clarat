@@ -2,17 +2,13 @@
 class ContactsController < ApplicationController
   respond_to :html, :js
 
-  skip_before_action :authenticate_user!, only: [:new, :create, :index]
-
   def new
     @contact = Contact.new url: request.referrer
-    authorize @contact
     respond_with @contact
   end
 
   def create
     @contact = Contact.new params.for(Contact).refine
-    authorize @contact
     if @contact.save
       respond_to do |format|
         format.html { redirect_to root_path, flash: { success: t('.success') } }

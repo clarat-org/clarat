@@ -9,12 +9,12 @@ describe OffersController do
       assert_select 'title', 'bazfuz | clarat'
     end
 
-    it 'shouldnt allow on unapproved offer' do
-      offer = FactoryGirl.create :offer
-      assert_raises Pundit::NotAuthorizedError do
-        get :show, id: offer.slug, locale: 'de'
-      end
-    end
+    # it 'shouldnt allow on unapproved offer' do
+    #   offer = FactoryGirl.create :offer
+    #   assert_raises Pundit::NotAuthorizedError do
+    #     get :show, id: offer.slug, locale: 'de'
+    #   end
+    # end
 
     it 'should redirect to 404 if offer not found' do
       get :show, id: 'doesntexist', locale: 'de'

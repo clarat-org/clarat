@@ -7,11 +7,14 @@ class Clarat.Search.Query.Base
     (@query = '', @category = null, @facet_filters = [], @page = null) ->
 
   query_hash: ->
+    @categoryHelper = []
+    if @category != null && @category != ""
+      @categoryHelper.push @category
     _.merge @page_query(),
       query: @query
       params:
-        tagFilters: [@category]
-        facets: '_tags,_age_filters,_audience_filters,_language_filters'
+        tagFilters: @categoryHelper
+        facets: '_age_filters,_audience_filters,_language_filters'
         facetFilters: @facet_filters
         aroundPrecision: @BASE_PRECISION
 

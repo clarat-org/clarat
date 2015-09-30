@@ -33,7 +33,7 @@ class Clarat.Search.Cell.SearchResults
 
       faq_text: I18n.t('js.search_results.faq_text')
       faq_anchor: I18n.t('js.search_results.faq_anchor')
-      faq_href: "/haeufige-fragen#no_results"
+      faq_href: "/haeufige-fragen/#search_section"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits
@@ -51,13 +51,14 @@ class Clarat.Search.Cell.SearchResults
   ## Headline Building Helpers
   mainResultsHeadline: (i18nKey) ->
     output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
+    bridge = I18n.t "js.search_results.bridge"
     enclosing = I18n.t "js.search_results.enclosing"
 
     if @model.category
       output += " in #{@breadcrumbPath @model}"
 
     if @model.query
-      output += " für: &bdquo;#{@model.query}&ldquo; "
+      output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
     output + " (#{@model.search_location}) #{enclosing}."

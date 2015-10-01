@@ -1,15 +1,16 @@
 # TODO: gueltige werte fuer category?
 class Clarat.Search.Query.Base
-  PER_PAGE: 50
+  PER_PAGE: 20
   BASE_PRECISION: 500
   VALUES_PER_FACET: 300 # must be >= Category.Count to avoid missing categories
 
   constructor:
     (@query = '', @category = null, @facet_filters = [], @page = null) ->
 
+    # Algolia seems to want this string in an array
+    @categoryArray = if @category then [@category] else []
+
   query_hash: ->
-    # Algolia seems to want this string in an array for some cases
-    @categoryArray = if @category && @category != "" then [@category] else []
     _.merge @page_query(),
       query: @query
       params:

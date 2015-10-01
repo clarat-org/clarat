@@ -1,5 +1,0 @@
-de:
-  shared:
-    validations:
-      max_count: dürfen nicht mehr als %{max} sein.
-      later_date: muss mindestens einen Tag in der Zukunft liegen

@@ -1,7 +1,0 @@
-en:
-  shared:
-    validations:
-      approved_by_creator: "can't be approved by creator"
-      incomplete: "must be completed before approval"
-      max_count: "can't be more than %{max}."
-      later_date: "must be at or after tomorrow"

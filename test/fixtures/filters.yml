@@ -19,17 +19,29 @@ parents:
   type: TargetAudienceFilter
   name: Eltern
   identifier: parents
-family:
+nuclear_family:
   id: 5
   type: TargetAudienceFilter
-  name: Familie
-  identifier: family
+  name: Kernfamilie
+  identifier: nuclear_family
 acquintances:
   id: 6
   type: TargetAudienceFilter
   name: Bekannte
   identifier: acquintances
 pregnant_woman:
+  id: 7
   type: TargetAudienceFilter
   name: Schwangere
   identifier: pregnant_woman
+
+family:
+  id: 8
+  type: SectionFilter
+  name: Family
+  identifier: family
+refugees:
+  id: 9
+  type: SectionFilter
+  name: Refugees
+  identifier: refugees

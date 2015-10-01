@@ -51,11 +51,15 @@ de:
 
     search_results:
       more: "Weitere Angebote"
+      bridge: "für"
+      enclosing: "gefunden"
+      faq_text: "Häufige Fragen und Antworten zur Suche findest du "
+      faq_anchor: "hier"
       map:
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"
       personal_offers:
-        zero: "Keine Angebote vor Ort"
+        zero: "Leider keine Angebote"
         one: "Ein Angebot vor Ort"
         other: "%{count} Angebote vor Ort"
       remote_offers:

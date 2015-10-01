@@ -23,13 +23,17 @@ class Clarat.Search.Cell.SearchResults
     @remoteResults = @resultSet.results[1]
 
     return specificViewObject =
-      personal_focus_with_remote: @mainResults.nbHits > 0
+      personal_focus_with_remote: @mainResults.nbHits + @remoteResults.nbHits > 0
       main_results_headline: @mainResultsHeadline('personal_offers')
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits
 
       more_anchor: I18n.t('js.search_results.more')
       more_href: window.location.href # TODO: offers_path(search_form: search_cache.remote_focus)
+
+      faq_text: I18n.t('js.search_results.faq_text')
+      faq_anchor: I18n.t('js.search_results.faq_anchor')
+      faq_href: "/haeufige-fragen/#search_section"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits
@@ -41,28 +45,27 @@ class Clarat.Search.Cell.SearchResults
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
       remote_focus: true
-      toggle_personal_anchor: "(Zeige lokale Angebote)" # TODO: permanent? +css
+      toggle_personal_anchor: "Zeige lokale Angebote" # TODO: permanent? +css
 
 
   ## Headline Building Helpers
-
   mainResultsHeadline: (i18nKey) ->
     output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
+    bridge = I18n.t "js.search_results.bridge"
+    enclosing = I18n.t "js.search_results.enclosing"
 
     if @model.category
       output += " in #{@breadcrumbPath @model}"
 
     if @model.query
-      output += ": &bdquo;#{@model.query}&ldquo; "
-
-      if @model.category
-        output += HandlebarsTemplates['remove_query_link']()
+      output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
+      output += HandlebarsTemplates['remove_query_link']()
 
     output += " (#{@model.search_location}"
     if @model.exact_location == 'true'
       output += ", genaue Suche! " +
         HandlebarsTemplates['remove_exact_location']()
-    output + ")"
+    output + ") #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

@@ -22,6 +22,14 @@
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'
 
+
+= hb 'unless personal_focus_with_remote' do
+  %h2.Listing-results__headline
+    = hb 'faq_text'
+    %a{ href: '{{faq_href}}' }
+      = hb 'faq_anchor'
+
+
 %ul.Listing-results__list
   = hb 'each main_offers' do
     = hb '> _single_search_result'

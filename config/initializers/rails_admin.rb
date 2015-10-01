@@ -422,6 +422,14 @@ RailsAdmin.config do |config|
       help false
     end
 
+    list do
+      field :contact_people
+    end
+
+    show do
+      field :contact_people
+    end
+
     object_label_method :address
   end
 

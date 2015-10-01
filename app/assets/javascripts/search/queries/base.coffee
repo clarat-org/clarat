@@ -6,9 +6,8 @@ class Clarat.Search.Query.Base
 
   constructor:
     (@query = '', @category = null, @facet_filters = [], @page = null) ->
-
-    # Algolia seems to want this string in an array
-    @categoryArray = if @category then [@category] else []
+      # Algolia seems to want this string in an array
+      @categoryArray = if @category then [@category] else []
 
   query_hash: ->
 

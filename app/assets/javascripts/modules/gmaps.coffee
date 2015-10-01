@@ -62,14 +62,22 @@ Clarat.GMaps =
                  userPosition.toString() == includedPoints[0].toString()
             includedPoints.push userPosition
             bounds.extend userPosition
-        ###
-        console.log image_path('gmaps_marker_1.svg')
+
+        clusterStyles = [
+          {
+            anchorText: [-4,0], # offset for correct text positioning
+            textColor: 'black',
+            url: '/assets/gmaps_marker_1.svg'
+            height: 38,
+            width: 30
+          }
+        ]
         clustererOptions = {
-          imageExtension: "svg",
-          imagePath: "/assets/gmaps_marker_"
+          averageCenter: true,
+          gridSize: 50,
+          styles: clusterStyles
         }
-        ###
-        markerCluster = new MarkerClusterer(map, markerArray, [])
+        markerCluster = new MarkerClusterer(map, markerArray, clustererOptions)
 
         # Save data for later use
         Clarat.currentMap = {}

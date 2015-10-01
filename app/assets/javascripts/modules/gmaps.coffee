@@ -20,6 +20,7 @@ Clarat.GMaps =
       markers = $('#map-data').data('markers') unless markers
       infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
       includedPoints = []
+      markerArray = []
 
       if markers
         # Create Map
@@ -42,6 +43,7 @@ Clarat.GMaps =
 
           includedPoints.push markerPosition
           bounds.extend markerPosition
+          markerArray.push marker
 
           # Bind Event Listeners To Marker
           Clarat.GMaps.Map.bindMapsEvents map, marker, markerData, infowindow
@@ -60,6 +62,14 @@ Clarat.GMaps =
                  userPosition.toString() == includedPoints[0].toString()
             includedPoints.push userPosition
             bounds.extend userPosition
+        ###
+        console.log image_path('gmaps_marker_1.svg')
+        clustererOptions = {
+          imageExtension: "svg",
+          imagePath: "/assets/gmaps_marker_"
+        }
+        ###
+        markerCluster = new MarkerClusterer(map, markerArray, [])
 
         # Save data for later use
         Clarat.currentMap = {}

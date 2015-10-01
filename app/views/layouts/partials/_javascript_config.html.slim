@@ -6,7 +6,7 @@ javascript:
     Algolia: {
       appID: "#{Rails.application.secrets.algolia['app_id']}",
       apiKey: "#{Rails.application.secrets.algolia['pub_key']}",
-      personalIndexName: "#{Offer.personal_index_name}",
-      remoteIndexName: "#{Offer.remote_index_name}"
+      personalIndexName: "Offer_staging_personal",
+      remoteIndexName: "Offer_staging_remote"
     }
   };

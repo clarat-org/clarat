@@ -119,11 +119,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleRemoveExactLocationClick: (event) =>
     if @model.exact_location == 'true'
-      console.log "exact_location change!!"
       @model.updateAttributes
         exact_location: false
         search_location: 'Berlin'
-      console.log
       @sendMainSearch()
       @sendQuerySupportSearch()
 

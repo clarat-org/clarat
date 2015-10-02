@@ -5,7 +5,6 @@ class Clarat.Search.Query.Personal extends Clarat.Search.Query.Base
   constructor: (@geolocation, @exact_location = false, args...) ->
     super args...
     @SEARCH_RADIUS = 100 if @exact_location == 'true'
-    console.log @SEARCH_RADIUS
 
   query_hash: ->
     _.merge super(),

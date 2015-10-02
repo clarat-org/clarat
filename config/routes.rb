@@ -1,8 +1,5 @@
 Clarat::Application.routes.draw do
   localized do
-    devise_for :users
-    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-
     # static pages
     root to: 'pages#home'
     get 'ueber-uns' => 'pages#about', as: 'about'
@@ -28,16 +25,6 @@ Clarat::Application.routes.draw do
         as: 'subscribe'
     get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
         as: 'unsubscribe'
-  end
-
-  # Sidekiq interface
-  require 'sidekiq/web'
-  require 'sidetiq/web'
-  constraint = lambda do |request|
-    request.env['warden'].authenticate?
-  end
-  constraints constraint do
-    mount Sidekiq::Web => '/sidekiq'
   end
 
   # Sitemap path

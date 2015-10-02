@@ -1,3 +1,7 @@
+basicSection:
+  filter_id: 8
+  offer_id: 1
+
 basicLanguage:
   filter_id: 1
   offer_id: 1

@@ -2,7 +2,6 @@ class OffersController < ApplicationController
   include GmapsVariable
   respond_to :html
 
-  skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :init_search_form, only: [:index]
   before_action :disable_caching, only: :index
 
@@ -18,7 +17,7 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.friendly.find(params[:id])
-    authorize @offer
+    self.class.password_protect unless @offer.approved?
 
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true

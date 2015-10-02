@@ -7,21 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Offer.clear_index!
 
-user = User.create email: 'user@user.com', password: 'password',
-                                           role: 'researcher'
-user.confirm!
-admin = User.create email: 'admin@admin.com', password: 'password',
-                                              role: 'super'
-admin.confirm!
+user = User.create email: 'user@user.com', role: 'researcher'
+admin = User.create email: 'admin@admin.com', role: 'super'
 
+SectionFilter.create name: 'Family', identifier: 'family'
+SectionFilter.create name: 'Refugees', identifier: 'refugees'
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'
 LanguageFilter.create name: 'Türkisch', identifier: 'tur'
-AgeFilter.create name: 'Babies', identifier: 'babies'
-AgeFilter.create name: 'Kleinkinder', identifier: 'toddler'
-AgeFilter.create name: 'Schulkinder', identifier: 'schoolkid'
-AgeFilter.create name: 'Jugendliche', identifier: 'adolescent'
-AgeFilter.create name: 'junge Erwachsene', identifier: 'young_adults'
+TargetAudienceFilter.create name: 'Kinder', identifier: 'children'
+TargetAudienceFilter.create name: 'Eltern', identifier: 'parents'
+TargetAudienceFilter.create name: 'Familie', identifier: 'nuclear_family'
+TargetAudienceFilter.create name: 'Bekannte', identifier: 'aquintances'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896

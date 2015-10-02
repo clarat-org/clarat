@@ -55,6 +55,11 @@ class Clarat.Search.Cell.SearchResults
     bridge = I18n.t 'js.search_results.bridge'
     enclosing = I18n.t 'js.search_results.enclosing'
 
+    output += " (#{@model.search_location}"
+    if @model.exact_location == 'true'
+      output += " " + HandlebarsTemplates['remove_exact_location']()
+    output += ")"
+
     if @model.category
       output += " in #{@breadcrumbPath @model}"
 
@@ -62,11 +67,7 @@ class Clarat.Search.Cell.SearchResults
       output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output += " (#{@model.search_location}"
-    if @model.exact_location == 'true'
-      output += ", genaue Suche! " +
-        HandlebarsTemplates['remove_exact_location']()
-    output + ") #{enclosing}"
+    output + " #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

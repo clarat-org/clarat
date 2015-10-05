@@ -117,6 +117,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')
+    ###
+     HOTFIX for google translation! Translation inludes two font-tags and the
+     inner one has a class that prevents our logic to work. Hotfix: grab the
+     grandparent (our link) and then get the name value 
+    ###
+    if categoryName == undefined
+      categoryName =
+        $($(event.target).context.parentElement.parentElement).data('name')
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()

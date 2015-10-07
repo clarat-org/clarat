@@ -20,5 +20,8 @@ class ExpiringOffersWorker
 
     # Set to expired
     expiring.update_all aasm_state: 'expired' # TODO: should this be event?
+
+    # trigger manual indexing for algolia search
+    expiring.find_each(&:index!)
   end
 end

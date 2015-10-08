@@ -12,7 +12,7 @@ initMobileMenu = ->
     return
 
   if smartphone
-    $inputQuery.click ->
+    $inputQuery.unbind('click').click ->
       $inputLocationContainer.toggleClass "is-visible"
       $submit.toggleClass "is-enlarged"
       $distributor.toggleClass "is-enlarged"

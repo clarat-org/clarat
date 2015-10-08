@@ -75,6 +75,7 @@
 
     &.is-enlarged {
       max-height: 95px;
+      z-index: 20;
     }
 
     .JS-Geolocation__prompt {
@@ -221,6 +222,11 @@
     }
   }
 
+  .search-form--input-wrapper {
+    left: 0;
+    z-index: 12;
+  }
+
 
   .nav-sections {
     margin: 0;
@@ -247,10 +253,10 @@
   }
 
   .content-main {
-    padding-top: 100px;
+    padding-top: 115px;
 
     .has-enlarged-header & {
-      padding-top: 148px;
+      padding-top: 163px;
     }
 
     .template--pages-home & {
@@ -372,10 +378,10 @@
   // Filter offer#index ######################################
 
   .filter-form {
-    padding-right: 5px;
-    padding-bottom: 45px;
+    padding: 12px 15px 5px;
     border-radius: 0;
-
+    margin-top: 0;
+    margin-bottom: 30px;
 
     .input {
       padding: 0;
@@ -399,18 +405,18 @@
     width: 100%;
     color: $brand_brown;
     cursor: pointer;
+    background: image-url('ico_fieldset_expand.svg') no-repeat right center;
+    background-size: 6px 8px;
 
-    &[aria-collapsed="false"] {
+    &.is-active {
       background: image-url('ico_fieldset_collapse.svg') no-repeat right center;
-    }
-
-    &[aria-collapsed="true"] {
-      background: image-url('ico_fieldset_expand.svg') no-repeat right center;
+      background-size: 6px 8px;
     }
   }
 
   .filter-form__fieldset__wrapper {
     display: none;
+    margin-bottom: 20px;
   }
 
   .filter-form__headline {

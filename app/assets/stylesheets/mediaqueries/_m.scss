@@ -127,6 +127,7 @@
   .Distributor__search-form {
     position: relative;
     right: auto;
+    width: 100%;
   }
 
   .JS-Geolocation__remove {
@@ -150,9 +151,9 @@
     margin-left: 114px;
     padding: 10px 0;
     max-height: 85px;
-    width: 100%;
-    max-width: 555px;
+    width: calc(100% - 114px);
     margin-right: 0;
+    overflow: hidden;
 
     .Distributor.is-enlarged & {
       //margin-left: 15px;
@@ -167,7 +168,7 @@
 
       #search_form_query,
       #search_form_search_location {
-        width: 100%;
+        width: inherit;
         max-width: none;
       }
 
@@ -192,7 +193,7 @@
 
     #search_form_query,
     #search_form_search_location {
-      width: 100%;
+      width: inherit;
     }
 
     #search_form_query {
@@ -291,6 +292,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-top: -5px;
   }
 
   .filter-form__fieldset {
@@ -327,12 +329,23 @@
     position: relative;
     background-color: $brand_brown;
     width: 100%;
-    display: block;
+    display: none;
     height: auto;
     text-align: center;
 
+    .has-enlarged-header & {
+      margin-top: 10px;
+    }
+
+    .template--offers-index {
+      display: block;
+    }
+
     a {
       color: $brand_white;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
     }
   }
 
@@ -384,6 +397,26 @@
     .template--offers-index & {
       float: none;
       width: 100%;
+    }
+  }
+
+  .content-main {
+    padding-top: 36px;
+
+    .template--pages-home & {
+      //padding-top: 0;
+    }
+
+    &.template--pages-about{
+      //padding-top: 100px;
+    }
+
+    &.content-main--invalid_location {
+      //padding-top: 80px;
+    }
+
+    body[class="template--pages-"] & {
+      padding-top: 68px;
     }
   }
 

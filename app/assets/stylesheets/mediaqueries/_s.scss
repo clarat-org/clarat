@@ -249,6 +249,10 @@
   .content-main {
     padding-top: 100px;
 
+    .has-enlarged-header & {
+      padding-top: 148px;
+    }
+
     .template--pages-home & {
       padding-top: 0;
     }

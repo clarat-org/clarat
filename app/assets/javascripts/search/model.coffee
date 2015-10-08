@@ -36,12 +36,12 @@ class Clarat.Search.Model extends ActiveScript.Model
   personal_query: ->
     if @isPersonal()
       new Clarat.Search.Query.Personal(
-        @generated_geolocation, @query, @category, @facet_filters, @page
+        @generated_geolocation, @query, @category, @facet_filters(), @page
       )
 
   remote_query: ->
     new Clarat.Search.Query.Remote(
-      @generated_geolocation, @isPersonal(), @query, @category, @facet_filters,
+      @generated_geolocation, @isPersonal(), @query, @category, @facet_filters(),
       @page
     )
 
@@ -50,25 +50,30 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   personal_facet_query: ->
     new Clarat.Search.Query.PersonalFacet(
-      @generated_geolocation, @query, @category, @facet_filters
-      # @query, @category, @geolocation, @search_radius, @facet_filters
+      @generated_geolocation, @query, @category, @facet_filters()
+      # @query, @category, @geolocation, @search_radius, @facet_filters()
     )
 
   remote_facet_query: ->
     new Clarat.Search.Query.RemoteFacet(
-      @generated_geolocation, true, @query, @category, @facet_filters
+      @generated_geolocation, true, @query, @category, @facet_filters()
     )
 
 
   isPersonal: ->
     @contact_type == 'personal'
 
-  # facet_filters: ->
-  #   @filters ||= %w(age audience language).map do |type|
-  #     filter = search_form.send("#{type}_filter")
-  #     "_#{type}_filters:#{filter}" if filter
-  #   end.compact
-  #
+  # snippet from advanced search branch
+  ADVANCED_SEARCH_FILTERS: [
+    'section' # add more filter names here
+  ]
+
+  facet_filters: ->
+    @ADVANCED_SEARCH_FILTERS.map((type) =>
+      filter = @[type]
+      if filter then "_#{type}_filters:#{filter}" else null
+    ).filter (element) -> element # compact / remove all falsey values
+
   # # wide radius or use exact location
   # search_radius: ->
   #   if search_form.exact_location

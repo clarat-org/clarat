@@ -5,7 +5,8 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
+gem 'clarat_base',  github: 'clarat-org/clarat_base',
+                    branch: 'section_search'
 
 gem 'bundler', '>= 1.8.4'
 

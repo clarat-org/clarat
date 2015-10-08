@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: c1d24a764d1586abaedbe649ccdfe70b1ba574f4
+  revision: 653ee5ed129224539e506c48440be169417dd6a9
+  branch: section_search
   specs:
     clarat_base (0.1.2)
       aasm
@@ -623,4 +624,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.10.5
+   1.10.6

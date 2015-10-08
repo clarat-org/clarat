@@ -20,7 +20,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'generated_geolocation', # , 'geolocation'
-    'exact_location', 'contact_type', 'search_location' # TODO: facet_filters
+    'exact_location', 'contact_type', 'search_location', 'section'
+    # TODO: facet_filters
   ]
 
   ### PUBLIC METHODS ###
@@ -63,6 +64,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
     paramHash =
       # category tree gets transmitted as a JSON structure in a hidden element
       categoryTree: $('#category-tree').data('structure').set
+      filters: $('#filters').data('structure')
 
       # TODO: where do we get page from? URL params?
       page: 0

@@ -29,20 +29,74 @@
   .Distributor {
     margin-right: -20px; // on non-start pages, correcting offset by .wrapper-inner
     max-width: none;
+    // width: auto;
+    width: 71%;
+    position: relative;
   }
 
   .Distributor--start {
     margin-right: 0;
     padding-left: 0;
     max-width: 100%;
+    width: 100%;
+  }
+
+  .Distributor__search-form {
+    position: absolute;
+    left: 0;
+    right: 120px;
+
+    .template--pages-home & {
+      position: relative;
+    }
+  }
+
+  .Distributor__advanced-filter-trigger-wrapper {
+    position: absolute;
+    right: 0;
+  }
+
+  #new_search_form .input.string {
+    width: 50%;
+
+    .template--pages-home & {
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+
+  #search_form_query,
+  #search_form_search_location {
+    max-width: none;
+    margin: 0;
+    width: calc(100% - 10px);
+  }
+
+  .main-search__submit {
+    position: absolute;
+    right: 0;
+  }
+
+  .search-form--input-wrapper {
+    position: absolute;
+    right: 75px;
+    left: 25px;
+
+    .template--pages-home & {
+      position: relative;
+      left: auto;
+      right: auto;
+    }
   }
 
   #new_search_form {
+    display: table-cell;
     margin-right: 15px;
     width: auto;
 
     .template--pages-home & {
       margin-right: auto;
+      max-width: 815px;
     }
   }
 

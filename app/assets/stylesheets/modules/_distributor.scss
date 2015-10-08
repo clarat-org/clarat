@@ -16,13 +16,22 @@
 
 .Distributor__search-form {
  float: left;
+
+  .template--pages-home & {
+    float: none;
+  }
 }
 
 .Distributor__advanced-filter-trigger-wrapper {
   float: right;
   height: 100%;
-  width: 100px;
-  display: table;
+  width: 110px;
+  display: none;
+
+  .template--offers-index & {
+    display: table;
+  }
+
 }
 
 .Distributor--start {
@@ -30,6 +39,7 @@
   margin-top: 0;
   margin-bottom: 90px;
   max-width: 100%;
+  width: 100%;
   height: 230px;
   border-radius: 0;
 

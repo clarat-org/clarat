@@ -3,8 +3,8 @@
     %legend.filter-form__fieldset__headline
       Alter des Kindes?
 
-    %div.filter-form__fieldset__wrapper
-      %select.JS-AgeSelector
+    %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
+      %select.JS-AgeSelector.filter-form__select
         %option{value: 'any', id: 'age_any'} egal
         = hb 'each age' do
           %option{value: '{{identifier}}', id: 'age_{{identifier}}'}
@@ -13,7 +13,7 @@
     %legend.filter-form__fieldset__headline
       Sprache?
     %div.filter-form__fieldset__wrapper
-      %select.JS-LanguageSelector
+      %select.JS-LanguageSelector.filter-form__select
         %option{value: 'any', selected: 'selected', id: 'language_any'} egal
         = hb 'each language' do
           %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
@@ -23,35 +23,56 @@
     %legend.filter-form__fieldset__headline
       Hilfe für wen?
     %div.filter-form__fieldset__wrapper
-      %input{type: 'radio', name: 'target_audience', value: 'any',
-             id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
-      %label{for: 'target_audience_any'} für alle
+      %div.filter-form__radio
+        %input{type: 'radio', name: 'target_audience', value: 'any',
+               id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
+        %label{for: 'target_audience_any'} egal
       = hb 'each target_audience' do
-        %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
-               id: 'target_audience_{{identifier}}',
-               class: 'JS-TargetAudienceSelector'}
-        %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
+        %div.filter-form__radio
+          %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
+                 id: 'target_audience_{{identifier}}',
+                 class: 'JS-TargetAudienceSelector'}
+          %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
 
   %fieldset.filter-form__fieldset#exclusive_gender
     %legend.filter-form__fieldset__headline
       Geschlecht?
     %div.filter-form__fieldset__wrapper
-      %input{type: 'radio', name: 'exclusive_gender', value: 'any',
-             id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
-      %label{for: 'exclusive_gender_any'} egal
+      %div.filter-form__radio
+        %input{type: 'radio', name: 'exclusive_gender', value: 'any',
+               id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
+        %label{for: 'exclusive_gender_any'} egal
       = hb 'each exclusive_gender' do
-        %input{type: 'radio', name: 'exclusive_gender', value: '{{identifier}}',
-               id: 'exclusive_gender_{{identifier}}',
-               class: 'JS-ExclusiveGenderSelector'}
-        %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
-
-
+        %div.filter-form__radio
+          %input{type: 'radio', name: 'exclusive_gender', value: '{{identifier}}',
+                 id: 'exclusive_gender_{{identifier}}',
+                 class: 'JS-ExclusiveGenderSelector'}
+          %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
 
   %fieldset.filter-form__fieldset#contact_type
     %legend.filter-form__fieldset__headline
       Auf welchem Weg?
     %div.filter-form__fieldset__wrapper
       = hb 'each contact_type' do
-        %input{type: 'radio', name: 'contact_type', value: '{{identifier}}',
-               id: 'contact_type_{{identifier}}', class: 'JS-ContactTypeSelector'}
-        %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
+        %div.filter-form__radio
+          %input{type: 'radio', name: 'contact_type', value: '{{identifier}}',
+                 id: 'contact_type_{{identifier}}', class: 'JS-ContactTypeSelector'}
+          %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
+
+      / Faking checkbox rendering here, please replace:
+      %div.filter-form__checkboxes-wrapper
+        %div.filter-form__checkbox-wrapper
+          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'phone'}
+          %label{for: 'phone'} Telefon
+        %div.filter-form__checkbox-wrapper
+          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'mail'}
+          %label{for: 'mail'} E-Mail
+        %div.filter-form__checkbox-wrapper
+          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'chat'}
+          %label{for: 'chat'} Chat
+        %div.filter-form__checkbox-wrapper
+          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'forum'}
+          %label{for: 'forum'} Forum
+        %div.filter-form__checkbox-wrapper
+          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'online_course'}
+          %label{for: 'online_course'} Online-Kurs

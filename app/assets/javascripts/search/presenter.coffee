@@ -101,6 +101,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '#advanced_search .JS-ContactTypeSelector':
       change: 'handleFilterChange'
 
+    ## Radio state handling contact_type
+    'input[name=contact_type][value=remote]:checked':
+      change: 'enableCheckboxes'
+    'input[name=contact_type][value=personal]:checked':
+      change: 'disableCheckboxes'
+
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
@@ -160,3 +166,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   failure: (error) =>
     console.log error
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')
+
+  enableCheckboxes: () =>
+    $('.filter-form__checkboxes-wrapper input').each ->
+      $(this).attr 'disabled', false
+
+  disableCheckboxes: () =>
+    $('.filter-form__checkboxes-wrapper input').each ->
+      $(this).attr 'disabled', true

@@ -124,6 +124,11 @@
 
   }
 
+  .Distributor__search-form {
+    position: relative;
+    right: auto;
+  }
+
   .JS-Geolocation__remove {
     top: 5px;
     right: 10px;
@@ -134,6 +139,10 @@
     }
   }
 
+  .search-form--input-wrapper {
+    position: relative;
+  }
+
   #new_search_form {
     position: relative;
     z-index: 30;
@@ -141,11 +150,12 @@
     margin-left: 114px;
     padding: 10px 0;
     max-height: 85px;
-    width: auto;
+    width: 100%;
+    max-width: 555px;
     margin-right: 0;
 
     .Distributor.is-enlarged & {
-      margin-left: 15px;
+      //margin-left: 15px;
 
       .tt-dropdown-menu {
         right: 1px; // override JS
@@ -245,6 +255,7 @@
 
         .template--pages-home & {
           height: 40px;
+          width: 100%;
         }
 
         &.search_form_search_location {
@@ -309,6 +320,19 @@
       -webkit-order: 4;
       -ms-flex-order: 4;
       order: 4;
+    }
+  }
+
+  .Distributor__advanced-filter-trigger-wrapper {
+    position: relative;
+    background-color: $brand_brown;
+    width: 100%;
+    display: block;
+    height: auto;
+    text-align: center;
+
+    a {
+      color: $brand_white;
     }
   }
 

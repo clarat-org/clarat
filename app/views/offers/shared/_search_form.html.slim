@@ -1,6 +1,7 @@
 div.Distributor__search-form
   = simple_form_for search_form, url: offers_path, # namespace: 'nav',
                                    html: { method: :get, novalidate: false } do |f|
+    .search-form--input-wrapper
       = f.input :query, label: t('.query_label'),
                         required: false,
                         input_html: { \
@@ -41,4 +42,4 @@ div.Distributor__search-form
       = f.input :exclusive_gender, as: :hidden
       = f.input :language, as: :hidden
       = f.input :encounter, as: :hidden
-      button.main-search__submit = t '.button'
+    button.main-search__submit = t '.button'

@@ -50,8 +50,8 @@ de:
       example_placeholder: "z.B. %{word}, …"
 
     search:
-      form_more_label: "Weitere Suchoptionen"
-      form_less_label: "Weniger Suchoptionen"
+      form_more_label: "Suchoptionen einblenden"
+      form_less_label: "Suchoptionen ausblenden"
     search_results:
       more: "Weitere Angebote …"
       map:

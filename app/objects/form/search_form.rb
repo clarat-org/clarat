@@ -34,6 +34,9 @@ class SearchForm
   ### Language
   attribute :language_filter, String
   enumerize :language_filter, in: LanguageFilter::IDENTIFIER
+  ### Section (world)
+  attribute :section, String, default: :family
+  enumerize :section, in: SectionFilter::IDENTIFIER
 
   # Methods #
 

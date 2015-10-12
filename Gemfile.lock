@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: c977221149acab4e1378d4d885c5e823093d041b
-  branch: section_search
+  revision: fd4c19b3751dd9c3f022262fc74ad00d1843ea6f
   specs:
-    clarat_base (0.1.2)
+    clarat_base (0.1.3)
       aasm
       algoliasearch-rails
       bundler (>= 1.8.4)

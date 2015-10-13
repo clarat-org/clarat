@@ -20,6 +20,8 @@ Clarat.GMaps =
       markers = $('#map-data').data('markers') unless markers
       infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
       includedPoints = []
+      is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1
+      marker_url = if is_internetExplorer11 then  'gmaps_marker_1.png' else  'gmaps_marker_1.svg'
 
       if markers
         # Create Map
@@ -38,7 +40,7 @@ Clarat.GMaps =
           marker = new google.maps.Marker
             position: markerPosition
             map: map
-            icon: image_path('gmaps_marker_1.svg')
+            icon: image_path(marker_url)
 
           includedPoints.push markerPosition
           bounds.extend markerPosition

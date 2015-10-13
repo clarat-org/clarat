@@ -129,6 +129,12 @@
 
 .filter-form__checkbox-wrapper {
   position: relative;
+
+  input[disabled] {
+    & + label {
+      opacity: .33;
+    }
+  }
 }
 
 .filter-form__select {

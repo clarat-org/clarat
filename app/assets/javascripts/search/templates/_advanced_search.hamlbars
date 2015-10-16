@@ -4,7 +4,7 @@
       Alter des Kindes?
 
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
-      %select.JS-AgeSelector.filter-form__select
+      %select.JS-AgeSelector.filter-form__select{name: 'age'}
         %option{value: 'any', id: 'age_any'} egal
         = hb 'each age' do
           %option{value: '{{identifier}}', id: 'age_{{identifier}}'}
@@ -13,7 +13,7 @@
     %legend.filter-form__fieldset__headline
       Sprache?
     %div.filter-form__fieldset__wrapper
-      %select.JS-LanguageSelector.filter-form__select
+      %select.JS-LanguageSelector.filter-form__select{name: 'language'}
         %option{value: 'any', selected: 'selected', id: 'language_any'} egal
         = hb 'each language' do
           %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
@@ -61,6 +61,14 @@
 
       / Faking checkbox rendering here, please replace:
       %div.filter-form__checkboxes-wrapper
+        / TODO: this needs some more work
+        = hb 'each encounter' do
+          %div.filter-form__checkbox-wrapper
+            %input{type: 'checkbox', disabled: 'disabled', selected: 'selected',
+                   value: '{{identifier}}', id: 'contact_type_{{identifier}}', 
+                   name: 'contact_type', class: 'JS-ContactTypeSelector', }
+            %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
+      -# start multi-line comment
         %div.filter-form__checkbox-wrapper
           %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'phone'}
           %label{for: 'phone'} Telefon

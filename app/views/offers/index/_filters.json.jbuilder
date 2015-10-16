@@ -22,3 +22,8 @@ json.contact_type Offer::CONTACT_TYPES do |identifier|
   json.identifier identifier
   json.display_name t(".contact_type.#{identifier}")
 end
+
+json.encounter Offer::ENCOUNTERS do |identifier|
+  json.identifier identifier
+  json.display_name t(".contact_type.#{identifier}")
+end

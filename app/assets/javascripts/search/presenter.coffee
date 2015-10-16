@@ -157,10 +157,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleFilterChange: (event) =>
     val = $(event.target).val()
     val = if val is 'any' then '' else val
-    field = $(event.target).parent('fieldset').attr('id')
+    field = $(event.target).attr('name')
+    field = $(event.target).parent.attr('name') if field == undefined
 
     @model.updateAttributes "#{field}": val
     @sendMainSearch()
+    @sendQuerySupportSearch()
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

@@ -85,11 +85,11 @@ de:
           contact_type:
             personal: "vor Ort"
             remote: "virtuell"
-            # hotline: "Telefon"
-            # email: "E-Mail"
-            # chat: "Chat"
-            # forum: "Forum"
-            # online-course: "Online-Kurs"
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

@@ -31,13 +31,13 @@ de:
       filters:
         json:
           age:
-            zero: "genau 0 Jahre alt"
-            one: "genau 1 Jahr alt"
-            other: "genau %{count} Jahre alt"
+            zero: "< 1 Jahr"
+            one: "1 Jahr"
+            other: "%{count} Jahre"
           target_audience:
             children: "für Kinder und Jugendliche"
             parents: "für Eltern"
-            family: "für die ganze Familie"
+            family: "für Familien"
             acquintances: "für Bekannte und Verwandte"
             pregnant_woman: "für Schwangere"
           exclusive_gender:

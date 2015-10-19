@@ -60,8 +60,7 @@ FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
 FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
 FactoryGirl.create :category, name: 'Gewalt', icon: 'd-violence'
 
-mains = []
-mains = Category.all
+mains = Category.mains.all
 
 10.times do
   FactoryGirl.create :category, parent: mains.sample

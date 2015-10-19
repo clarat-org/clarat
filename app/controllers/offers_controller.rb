@@ -18,7 +18,7 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.friendly.find(params[:id])
-    self.class.password_protect unless @offer.approved?
+    # self.class.password_protect unless @offer.approved?
 
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true

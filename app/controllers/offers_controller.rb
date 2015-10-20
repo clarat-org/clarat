@@ -3,13 +3,14 @@ class OffersController < ApplicationController
   respond_to :html
 
   before_action :init_search_form, only: [:index]
-  before_action :disable_caching, only: [:index, :show]
+  before_action :disable_caching, only: :index
 
   rescue_from InvalidLocationError do |_error|
     render 'invalid_location', status: 404
   end
 
   def index
+    puts 'DO WE GET THIS FAR??'
     # TODO: dynamic world selection by section_filter identifier
     @category_tree ||= Category.sorted_hash_tree 'family'
     prepare_location_unavailable

@@ -4,9 +4,9 @@ class ApplicationController < ActionController::Base
 
   # staging password protection
   clarat = Rails.application
-  http_basic_authenticate_with name: clarat.secrets.protect['user'],
-                               password: clarat.secrets.protect['pwd'],
-                               if: -> { Rails.env.staging? }
+  # http_basic_authenticate_with name: clarat.secrets.protect['user'],
+  #                             password: clarat.secrets.protect['pwd'],
+  #                             if: -> { Rails.env.staging? }
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.

@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   include Pundit
 
   # staging password protection
-  clarat = Rails.application
+  # clarat = Rails.application
   # http_basic_authenticate_with name: clarat.secrets.protect['user'],
   #                             password: clarat.secrets.protect['pwd'],
   #                             if: -> { Rails.env.staging? }

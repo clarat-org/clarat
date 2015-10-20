@@ -21,12 +21,12 @@ class ApplicationController < ActionController::Base
   end
 
   # single site password protection
-  def self.password_protect
-    http_basic_authenticate_with(
-      name: Rails.application.secrets.protect['user'],
-      password: Rails.application.secrets.protect['pwd']
-    )
-  end
+  # def self.password_protect
+  #  http_basic_authenticate_with(
+  #    name: Rails.application.secrets.protect['user'],
+  #    password: Rails.application.secrets.protect['pwd']
+  #  )
+  # end
 
   private
 

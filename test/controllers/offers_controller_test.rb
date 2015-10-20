@@ -24,14 +24,14 @@ describe OffersController do
       end
     end
 
-    describe 'for an unapproved offer' do
-      it 'should work but password_protect' do
-        offer = FactoryGirl.create :offer, name: 'bazfuz'
-        ApplicationController.expects(:http_basic_authenticate_with)
-        get :show, id: offer.slug, locale: 'de'
-        assert_response :success
-      end
-    end
+    # describe 'for an unapproved offer' do
+    #  it 'should work but password_protect' do
+    #    offer = FactoryGirl.create :offer, name: 'bazfuz'
+    #    ApplicationController.expects(:http_basic_authenticate_with)
+    #    get :show, id: offer.slug, locale: 'de'
+    #    assert_response :success
+    #  end
+    # end
   end
 
   describe "GET 'index'" do

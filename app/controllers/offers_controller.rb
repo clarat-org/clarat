@@ -10,7 +10,6 @@ class OffersController < ApplicationController
   end
 
   def index
-    puts 'INDEX!!'
     # TODO: dynamic world selection by section_filter identifier
     @category_tree ||= Category.sorted_hash_tree 'family'
     prepare_location_unavailable
@@ -18,7 +17,6 @@ class OffersController < ApplicationController
   end
 
   def show
-    puts 'SHOW!!'
     @offer = Offer.friendly.find(params[:id])
     self.class.password_protect unless @offer.approved?
 

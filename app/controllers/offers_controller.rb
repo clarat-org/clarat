@@ -3,7 +3,7 @@ class OffersController < ApplicationController
   respond_to :html
 
   before_action :init_search_form, only: [:index]
-  before_action :disable_caching, only: :index
+  before_action :disable_caching, only: [:index, :show]
 
   rescue_from InvalidLocationError do |_error|
     render 'invalid_location', status: 404

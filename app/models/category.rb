@@ -16,7 +16,7 @@ class Category < ActiveRecord::Base
 
     invalid_categories = []
     Category.all.find_each do |category|
-      next unless category.section_filters.include? section_filter
+      next if category.section_filters.include? section_filter
       invalid_categories << category
     end
 

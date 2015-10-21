@@ -30,6 +30,8 @@ class SearchForm
   attribute :exclusive_gender, String
   attribute :language, String
   attribute :encounter, String
+  attribute :section, String, default: :family
+  enumerize :section, in: SectionFilter::IDENTIFIER
 
   # Methods #
 

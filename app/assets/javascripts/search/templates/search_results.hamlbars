@@ -22,9 +22,12 @@
       %a.JS-ToggleContactType{ href: '{{more_href}}' }
         = hb 'toggle_personal_anchor'
 
-  = hb 'if personal_focus_with_remote' do
-    %a.big-map_open{ href: "#" }
-      = hb 'show_on_big_map_anchor'
+
+= hb 'unless personal_focus_with_remote' do
+  %h2.Listing-results__headline
+    = hb 'faq_text'
+    %a{ href: '{{faq_href}}' }
+      = hb 'faq_anchor'
 
 
 %ul.Listing-results__list

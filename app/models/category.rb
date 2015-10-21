@@ -1,39 +1,32 @@
-# Hierarchical categorier to sort offers.
+# Monkeypatch clarat_base Category
+require ClaratBase::Engine.root.join('app', 'models', 'category')
+
 class Category < ActiveRecord::Base
-  # AwesomeNestedSet
-  # acts_as_nested_set counter_cache: :children_count, depth_column: :depth
-  has_closure_tree
-
-  # associtations
-  has_and_belongs_to_many :offers
-  has_many :organizations, through: :offers
-  # To order with closure_tree
-  has_closure_tree order: 'sort_order'
-
-  # Validations
-  validates :name, uniqueness: true, presence: true
-
-  # Sanitization
-  extend Sanitization
-  auto_sanitize :name
-
-  # Scope
-  scope :mains, -> { where.not(icon: nil).order(:icon).limit(5) }
-
   # Methods
 
-  # alias for rails_admin_nestable
-  singleton_class.send :alias_method, :arrange, :hash_tree
-
   # cached hash_tree, prepared for use in offers#index
-  def self.sorted_hash_tree
-    Rails.cache.fetch 'sorted_hash_tree' do
-      hash_tree.sort_by { |tree| tree.first.icon || '' }
-    end
-  end
+  # TODO: do this differently!
+  def self.sorted_hash_tree section_filter_identifier = 'family'
+    # find every category that is not in the current section
+    section_filter = SectionFilter.find_by identifier: section_filter_identifier
 
-  # display name: main categories get an asterisk
-  def name_with_optional_asterisk
-    name + (icon ? '*' : '') if name
+    # invalid_categories =
+    #   Category.joins(:section_filters)
+    #     .where('section_filters.identifier != ?', section_filter_identifier)
+
+    invalid_categories = []
+    Category.all.find_each do |category|
+      next unless category.section_filters.include? section_filter
+      invalid_categories << category
+    end
+
+    Rails.cache.fetch "sorted_hash_tree_#{section_filter_identifier}" do
+      current_tree = hash_tree
+      # remove all invalid (without current section filter) categories
+      invalid_categories.each do |invalid_category|
+        current_tree = current_tree.deep_reject_key!(invalid_category)
+      end
+      current_tree.sort_by { |tree| tree.first.icon || '' }
+    end
   end
 end

@@ -1,6 +1,5 @@
 class EmailsController < ApplicationController
   respond_to :html
-  skip_before_action :authenticate_user!
 
   ## No use pretending this is RESTful
 
@@ -26,5 +25,9 @@ class EmailsController < ApplicationController
     @email = Email.find params[:id]
     @email.given_security_code = params[:security_code]
     authorize @email
+  end
+
+  def pundit_user
+    nil
   end
 end

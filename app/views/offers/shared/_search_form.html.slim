@@ -25,7 +25,6 @@ div.Distributor__search-form
                                     required: true }
 
       / Hidden Fields
-
       - geolocation_value = \
         search_form.generated_geolocation || cookies[:saved_geolocation] || \
         I18n.t('conf.default_latlng')
@@ -42,4 +41,5 @@ div.Distributor__search-form
       = f.input :exclusive_gender, as: :hidden
       = f.input :language, as: :hidden
       = f.input :encounter, as: :hidden
+      = f.input :section, as: :hidden
     button.main-search__submit = t '.button'

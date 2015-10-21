@@ -49,7 +49,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     viewModel = new Clarat.Search.Cell.SearchResults resultSet, @model
 
     @render '.Listing-results', 'search_results', viewModel
-    if @model.isPersonal()
+    if resultSet.results[0].nbHits < 1
+      $('.aside-standard').hide()
+    else if @model.isPersonal()
+      $('.aside-standard').show()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?
@@ -132,6 +135,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleCategoryClick: (event) =>
     categoryName = $(event.target).data('name')
+    ###
+     HOTFIX for google translation! Translation inludes two font-tags and the
+     inner one has a class that prevents our logic to work. Hotfix: grab the
+     grandparent (our link) and then get the name value 
+    ###
+    if categoryName == undefined
+      categoryName =
+        $($(event.target).context.parentElement.parentElement).data('name')
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()

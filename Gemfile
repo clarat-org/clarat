@@ -5,11 +5,12 @@ ruby '2.2.2'
 # General #
 ###########
 
+gem 'clarat_base', github: 'clarat-org/clarat_base'
+
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.1.12'
-gem 'rails-observers' # observers got extracted since rails 4
 
 # Translations
 gem 'rails-i18n'
@@ -78,11 +79,6 @@ gem 'slim-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 
-# Background processing
-gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq's web interface
-gem 'sidetiq' # Sidekiq scheduling
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -92,9 +88,6 @@ end
 
 gem 'rack-attack' # securing malicious requests
 gem 'rack-rewrite' # securing malicious requests
-
-# State Machine
-gem 'aasm'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -111,19 +104,17 @@ gem 'aasm'
 # Pretty print your Ruby objects with style
 gem 'awesome_print'
 
-gem 'rails_admin_clone' # must come before rails_admin to work correctly
-gem 'rails_admin'
+# gem 'rails_admin_clone' # must come before rails_admin to work correctly
+# gem 'rails_admin'
 # gem 'rails_admin_nested_set'
-gem 'rails_admin_nestable'
-gem 'cancan' # role based auth for rails_admin
+# gem 'rails_admin_nestable'
+# gem 'cancan' # role based auth for rails_admin
 
-gem 'devise'
-gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
+# gem 'devise'
+# gem 'omniauth-facebook'
+# gem 'omniauth-google-oauth2'
 gem 'pundit'
 gem 'arcane'
-gem 'enumerize'
-gem 'paper_trail'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
@@ -131,27 +122,10 @@ gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
                         branch: 'adds-custom-storages'
 
 # Model enhancements
-gem 'sanitize' # parser based sanitization
-# gem 'awesome_nested_set'
-gem 'closure_tree'
-gem 'redcarpet' # Markdown processing
-
-# search
-gem 'algoliasearch-rails'
 
 gem 'virtus' # form objects
 gem 'formtastic'
 gem 'simple_form'
-
-gem 'friendly_id', '>= 5.0'
-
-gem 'geocoder'
-
-# email
-gem 'gibbon', '~> 1.2.0' # uses MailChimp API 2.0, remove version for 3.0+
-
-# Logging
-gem 'lograge' # opinionated slimmer logs for production
 
 ########################
 # For Heroku & Add-Ons #
@@ -167,6 +141,12 @@ group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
   gem 'heroku-deflater' # gzip compression
 end
+
+# email
+gem 'gibbon', '~> 1.2.0' # uses MailChimp API 2.0, remove version for 3.0+
+
+# Logging
+gem 'lograge' # opinionated slimmer logs for production
 
 #####################
 # Dev/Test Specific #

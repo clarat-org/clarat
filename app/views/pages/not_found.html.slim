@@ -1,7 +1,10 @@
 - provide(:title, t('.title'))
 - cache 'not_found_page' do
 
+  / TODO: grab link text from locale
   main.content-main.content-main--wide
     .wrapper-inner
       h1= t '.heading'
-      p= t '.description'
+      p== t '.description',
+        start_page: \
+        link_to('hier', '/')

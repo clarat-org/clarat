@@ -9,17 +9,16 @@ de:
         beta_modal:
           text: |
             Unsere Internetseite clarat.org ist noch ganz neu. Für Berlin kannst
-            du schon viele Hilfsangebote finden. Als nächstes sammeln wir
-            Hilfsangebote für Brandenburg. Dann auch für andere Bundesländer.
-            Über deine Hilfe freuen wir uns: Hast du etwas gesehen, das wir
-            besser machen können? Oder funktioniert etwas nicht richtig? Dann
+            du schon viele Hilfsangebote finden. Bald sammeln wir auch
+            Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
+            Hast du etwas gesehen, das wir besser machen können? Oder
+            funktioniert etwas nicht richtig? Dann
           link: "schreibe uns einfach eine Nachricht."
         unavailable_location_modal: |
-          Leider finden sich auf unserer Plattform aktuell nur Angebote vor Ort
-          aus Berlin und Brandenburg. Wir hoffen aber schon bald auch in anderen
-          Teilen Deutschlands aktiv zu sein. Hinterlasse uns doch bitte Deine
-          E-Mail und wir werden uns einmalig bei dir melden sobald das der Fall
-          ist.
+          Leider finden sich auf unserer Plattform aktuell nur Angebote für
+          Berlin. Wir hoffen aber schon bald auch in anderen Teilen Deutschlands
+          aktiv zu sein. Hinterlasse uns doch bitte Deine E-Mail und wir werden
+          uns einmalig bei dir melden sobald das der Fall ist.
       navigation:
         claim:
           first_row: "Einfach Hilfe finden"

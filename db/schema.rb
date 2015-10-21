@@ -11,7 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917112608) do
+
+ActiveRecord::Schema.define(version: 20151005073023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +37,14 @@ ActiveRecord::Schema.define(version: 20150917112608) do
   end
 
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
+
+  create_table "categories_filters", id: false, force: true do |t|
+    t.integer "filter_id",   null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "categories_filters", ["category_id"], name: "index_filters_categories_on_category_id", using: :btree
+  add_index "categories_filters", ["filter_id"], name: "index_filters_categories_on_filter_id", using: :btree
 
   create_table "categories_offers", id: false, force: true do |t|
     t.integer "offer_id",    null: false
@@ -69,7 +78,6 @@ ActiveRecord::Schema.define(version: 20150917112608) do
     t.string   "operational_name"
     t.string   "academic_title"
     t.string   "gender"
-    t.string   "role"
     t.string   "responsibility"
     t.integer  "email_id"
     t.boolean  "spoc",                        default: false, null: false
@@ -226,8 +234,8 @@ ActiveRecord::Schema.define(version: 20150917112608) do
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
     t.string   "exclusive_gender"
-    t.integer  "age_from",                                              null: false
-    t.integer  "age_to",                                                null: false
+    t.integer  "age_from",
+    t.integer  "age_to",
     t.string   "target_audience"
     t.string   "aasm_state",                 limit: 32
   end

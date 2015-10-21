@@ -1,6 +1,0 @@
-de:
-  contact_person:
-    validations:
-      incomplete: |
-        Entweder "First name", "Last name", "Operational Name",
-        oder "Local Number 1" muss ausgefüllt werden.

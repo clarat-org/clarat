@@ -23,6 +23,9 @@ module Clarat
       #{config.root}/app/observers
       #{config.root}/app/models/filters/
     )
+    config.eager_load_paths += %W(
+      #{config.root}/lib/
+    )
 
     # Activate observers that should always be running.
     config.active_record.observers = %w(

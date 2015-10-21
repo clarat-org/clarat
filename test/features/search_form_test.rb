@@ -1,5 +1,4 @@
 require_relative '../test_helper'
-include Warden::Test::Helpers
 
 feature 'Search Form' do
   scenario 'Valid search displays an empty page (that is later filled by JS)' do

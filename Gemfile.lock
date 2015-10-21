@@ -1,6 +1,13 @@
 GIT
-  remote: git://github.com/clarat-org/clarat_base.git
-  revision: 8e3515dfc1663d2744286c693406f4916d861094
+  remote: git://github.com/efqdalton/dynamic_sitemaps.git
+  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
+  branch: adds-custom-storages
+  specs:
+    dynamic_sitemaps (2.0.0)
+      aws-sdk
+
+PATH
+  remote: ../clarat_base
   specs:
     clarat_base (0.1.4)
       aasm
@@ -18,14 +25,6 @@ GIT
       sidekiq
       sidetiq
       sinatra (>= 1.3.0)
-
-GIT
-  remote: git://github.com/efqdalton/dynamic_sitemaps.git
-  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
-  branch: adds-custom-storages
-  specs:
-    dynamic_sitemaps (2.0.0)
-      aws-sdk
 
 GEM
   remote: https://rubygems.org/

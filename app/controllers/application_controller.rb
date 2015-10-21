@@ -20,14 +20,6 @@ class ApplicationController < ActionController::Base
     response.headers['Expires'] = 'Fri, 01 Jan 1990 00:00:00 GMT'
   end
 
-  # single site password protection
-  # def self.password_protect
-  #  http_basic_authenticate_with(
-  #    name: Rails.application.secrets.protect['user'],
-  #    password: Rails.application.secrets.protect['pwd']
-  #  )
-  # end
-
   private
 
   ### Standard 404 Error ###

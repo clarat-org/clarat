@@ -3,8 +3,7 @@ class OrganizationsController < ApplicationController
   respond_to :html
 
   def show
-    @organization = Organization.friendly.find(params[:id])
-    # self.class.password_protect unless @organization.approved?
+    @organization = Organization.approved.friendly.find(params[:id])
     prepare_gmaps_variable @organization
     @contact = Contact.new url: request.url, reporting: true
     respond_with @organization

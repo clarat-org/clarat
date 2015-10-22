@@ -38,7 +38,7 @@ de:
             children: "für Kinder und Jugendliche"
             parents: "für Eltern"
             nuclear_family: "für Familien"
-            aquintances: "für Bekannte und Verwandte"
+            acquintances: "für Bekannte und Verwandte"
             pregnant_woman: "für Schwangere"
           exclusive_gender:
             boys_only: "nur für Jungen und Männer"

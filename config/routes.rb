@@ -19,6 +19,9 @@ Clarat::Application.routes.draw do
     resources :subscriptions, only: [:new, :create]
     resources :definitions, only: [:show]
     get 'categories/:offer_name', controller: :categories, action: :index
+    # Previews
+    get 'preview/offers/:id' => 'previews#show_offer'
+    get 'preview/organizations/:id' => 'previews#show_organization'
 
     # non-REST routes
     get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',

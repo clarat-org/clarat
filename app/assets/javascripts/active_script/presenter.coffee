@@ -23,9 +23,11 @@ class ActiveScript.Presenter extends ActiveScript.SingleInstance
   registerCallbacks: ->
     for selector, callback of @CALLBACKS
       for event, method of callback
-        attrs = if selector is 'document'
-                  [event, @[method]]
-                else
-                  [event, selector, @[method]]
-        $(document).on attrs...
+        switch selector
+          when 'document'
+            $(document).on event, @[method]
+          when 'window'
+            $(window).on event, @[method]
+          else
+            $(document).on event, selector, @[method]
     return

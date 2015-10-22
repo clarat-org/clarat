@@ -73,6 +73,7 @@ about supported directives.
 # = require location/operations/save_to_cookie
 #
 # = require single_click_button/presenter
+# = require sticky_sidebar/presenter
 #
 # = require map_modal/presenter
 #

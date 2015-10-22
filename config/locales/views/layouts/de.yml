@@ -5,6 +5,7 @@ de:
         teaser:
           text: "clarat.org wird gerade aufgebaut."
           refugees: "Bald auch Angebote für Flüchtlinge."
+          # TODO: Delete if beta banner changes permanently
           link: "Hier erfährst du mehr"
       modal:
         beta_modal:

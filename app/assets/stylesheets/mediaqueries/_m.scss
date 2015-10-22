@@ -319,6 +319,11 @@
     margin-bottom: 0;
   }
 
+  .aside-standard {
+    width: 100% !important; // overrinding sticky JS
+    top: 0 !important; // overrinding sticky JS
+  }
+
   .content-main,
   .Categories {
     .template--offers-index & {

@@ -12,40 +12,43 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
       $sticky = $(".template--offers-index").find(".aside-standard")
       $footer = $(".footer-main .nav-legal__list")
-      stickyWidth = $sticky.width()
       stickyHeight = $sticky.height()
       $container = $('.content-main--offers-index')
       $header = $('.header-main')
-      desktop = $(document).width() >= 750
+      desktop = $(document).innerWidth() >= 750
+      ie = $('html.ie11').length || $('html.ie10').length
 
-      console.log stickyWidth
+      $container.css('min-height', stickyHeight)
 
-      if desktop
+      if !ie
 
-        if !!$sticky.offset()
-          stickyTop = $sticky.offset().top
 
-          $container.css('min-height', stickyHeight)
+        if desktop
 
-          $(window).scroll ->
+          $sticky.css('position', 'absolute')
 
-            footerInViewport = withinviewport $footer
-            windowTop = $(window).scrollTop()
+          if !!$sticky.offset()
+            stickyTop = $sticky.offset().top
 
-            if stickyTop < windowTop
+            $(window).scroll ->
 
-              top = if footerInViewport then -210 else 0
+              footerInViewport = withinviewport $footer
+              windowTop = $(window).scrollTop()
 
-              $sticky.css
-                position: 'fixed'
-                top: if withinviewport $header then 0 else top
-                width: '27.8%'
+              if stickyTop < windowTop
 
-            else
-              $sticky.css('position', 'absolute')
+                top = if footerInViewport then -210 else 0
 
-      else
-          $sticky.css('position', 'relative')
+                $sticky.css
+                  position: 'fixed'
+                  top: if withinviewport $header then 0 else top
+                  width: '27.8%'
+
+              else
+                $sticky.css('position', 'absolute')
+
+        else
+            $sticky.css('position', 'relative')
 
 $(document).ready ->
   new Clarat.StickySidebar.Presenter

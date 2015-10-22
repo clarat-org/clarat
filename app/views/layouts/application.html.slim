@@ -12,7 +12,7 @@ html class='no-js' lang=I18n.locale
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
 
-  body class="template--#{controller_name}-#{action_name}"
+  body class="family template--#{controller_name}-#{action_name}"
     .page-wrap
       - cache 'banner' do
         = render '/layouts/partials/banner'

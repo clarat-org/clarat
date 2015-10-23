@@ -20,7 +20,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'generated_geolocation', # , 'geolocation'
-    'exact_location', 'contact_type', 'search_location',
+    'exact_location', 'contact_type', 'encounters', 'search_location',
     'age', 'target_audience', 'exclusive_gender', 'language', 'section'
   ]
 
@@ -46,7 +46,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   updateSearchForm: (changes) ->
     for field in @LOADABLE_FIELDS
-      $("#search_form_#{field}").val changes[field] if changes[field]?
+      continue unless changes[field]?
+      $("#search_form_#{field}").val changes[field]
 
   updateLinks: (changes) ->
     # TODO: right click on link -> "open in new tab" should work in every state

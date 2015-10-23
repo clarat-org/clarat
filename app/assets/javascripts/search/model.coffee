@@ -17,6 +17,14 @@ class Clarat.Search.Model extends ActiveScript.Model
   client: ->
     return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
 
+  addEncounter: (encounter) ->
+    @encounters = _.chain @encounters.split(',')
+      .push(encounter).compact().uniq().value().join(',')
+
+  removeEncounter: (encounter) ->
+    @encounters = _.chain @encounters.split(',')
+      .without(encounter).compact().uniq().value().join(',')
+
   ### PRIVATE METHODS (ue) ###
 
   nearbyAndFacetQueries: ->
@@ -41,8 +49,8 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   remote_query: ->
     new Clarat.Search.Query.Remote(
-      @generated_geolocation, @isPersonal(), @query, @category, @facetFilters(),
-      @page
+      @generated_geolocation, @encounters, @isPersonal(), @query, @category,
+      @facetFilters(), @page
     )
 
   nearby_query: ->
@@ -56,7 +64,8 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   remote_facet_query: ->
     new Clarat.Search.Query.RemoteFacet(
-      @generated_geolocation, true, @query, @category, @facetFilters()
+      @generated_geolocation, @encounters, true, @query, @category,
+      @facetFilters()
     )
 
 

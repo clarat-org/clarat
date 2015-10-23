@@ -85,6 +85,7 @@ de:
           contact_type:
             personal: "vor Ort"
             remote: "virtuell"
+          encounter:
             hotline: "Telefon"
             email: "E-Mail"
             chat: "Chat"

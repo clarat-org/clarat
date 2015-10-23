@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 86b538d66689141860d2654ef88b9344673e9cb6
+  revision: 7cc3228a08c597b48b885dad07e710263889282f
   branch: adv-search
   specs:
     clarat_base (0.1.4)

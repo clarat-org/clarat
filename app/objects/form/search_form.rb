@@ -29,7 +29,8 @@ class SearchForm
   attribute :target_audience, String
   attribute :exclusive_gender, String
   attribute :language, String
-  attribute :encounter, String
+  attribute :encounters, String,
+            default: (Offer::ENCOUNTERS - %w(personal)).join(',')
   attribute :section, String, default: :family
   enumerize :section, in: SectionFilter::IDENTIFIER
 

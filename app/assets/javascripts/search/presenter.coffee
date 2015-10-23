@@ -103,12 +103,16 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleFilterChange'
     '#advanced_search .JS-ContactTypeSelector':
       change: 'handleFilterChange'
+    '#advanced_search .JS-EncounterSelector':
+      change: 'handleEncounterChange'
 
     ## Radio state handling contact_type
     'input[name=contact_type][value=remote]:checked':
       change: 'enableCheckboxes'
     'input[name=contact_type][value=personal]:checked':
       change: 'disableCheckboxes'
+      'Clarat.Search::InitialDisable': 'disableCheckboxes'
+
 
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
@@ -138,7 +142,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     ###
      HOTFIX for google translation! Translation inludes two font-tags and the
      inner one has a class that prevents our logic to work. Hotfix: grab the
-     grandparent (our link) and then get the name value 
+     grandparent (our link) and then get the name value
     ###
     if categoryName == undefined
       categoryName =
@@ -168,10 +172,20 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleFilterChange: (event) =>
     val = $(event.target).val()
     val = if val is 'any' then '' else val
-    field = $(event.target).attr('name')
-    field = $(event.target).parent.attr('name') if field == undefined
+    field = $(event.target).attr('name') or $(event.target).parent.attr('name')
 
     @model.updateAttributes "#{field}": val
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleEncounterChange: (event) =>
+    val = $(event.target).val()
+    if $(event.target).prop('checked')
+      @model.addEncounter val
+    else
+      @model.removeEncounter val
+
+    @model.save encounters: @model.encounters
     @sendMainSearch()
     @sendQuerySupportSearch()
 

@@ -44,8 +44,8 @@
         %label{for: 'exclusive_gender_any'} egal
       = hb 'each exclusive_gender' do
         %div.filter-form__radio
-          %input{type: 'radio', name: 'exclusive_gender', value: '{{identifier}}',
-                 id: 'exclusive_gender_{{identifier}}',
+          %input{type: 'radio', name: 'exclusive_gender',
+                 value: '{{identifier}}', id: 'exclusive_gender_{{identifier}}',
                  class: 'JS-ExclusiveGenderSelector'}
           %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
 
@@ -56,31 +56,32 @@
       = hb 'each contact_type' do
         %div.filter-form__radio
           %input{type: 'radio', name: 'contact_type', value: '{{identifier}}',
-                 id: 'contact_type_{{identifier}}', class: 'JS-ContactTypeSelector'}
+                 id: 'contact_type_{{identifier}}',
+                 class: 'JS-ContactTypeSelector'}
           %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
 
       / Faking checkbox rendering here, please replace:
       %div.filter-form__checkboxes-wrapper
         / TODO: this needs some more work
-        = hb 'each encounter' do
+        = hb 'each virtual_encounter' do
           %div.filter-form__checkbox-wrapper
-            %input{type: 'checkbox', disabled: 'disabled', selected: 'selected',
-                   value: '{{identifier}}', id: 'contact_type_{{identifier}}', 
-                   name: 'contact_type', class: 'JS-ContactTypeSelector', }
-            %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
-      -# start multi-line comment
-        %div.filter-form__checkbox-wrapper
-          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'phone'}
-          %label{for: 'phone'} Telefon
-        %div.filter-form__checkbox-wrapper
-          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'mail'}
-          %label{for: 'mail'} E-Mail
-        %div.filter-form__checkbox-wrapper
-          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'chat'}
-          %label{for: 'chat'} Chat
-        %div.filter-form__checkbox-wrapper
-          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'forum'}
-          %label{for: 'forum'} Forum
-        %div.filter-form__checkbox-wrapper
-          %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'online_course'}
-          %label{for: 'online_course'} Online-Kurs
+            %input{type: 'checkbox', value: '{{identifier}}',
+                   id: 'encounter_{{identifier}}', name: 'encounter',
+                   class: 'JS-EncounterSelector'}
+            %label{for: 'encounter_{{identifier}}'}= hb 'display_name'
+
+        -# %div.filter-form__checkbox-wrapper
+        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'phone'}
+        -#   %label{for: 'phone'} Telefon
+        -# %div.filter-form__checkbox-wrapper
+        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'mail'}
+        -#   %label{for: 'mail'} E-Mail
+        -# %div.filter-form__checkbox-wrapper
+        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'chat'}
+        -#   %label{for: 'chat'} Chat
+        -# %div.filter-form__checkbox-wrapper
+        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'forum'}
+        -#   %label{for: 'forum'} Forum
+        -# %div.filter-form__checkbox-wrapper
+        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'online_course'}
+        -#   %label{for: 'online_course'} Online-Kurs

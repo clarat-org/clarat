@@ -23,7 +23,8 @@ json.contact_type Offer::CONTACT_TYPES do |identifier|
   json.display_name t(".contact_type.#{identifier}")
 end
 
-json.encounter Offer::ENCOUNTERS do |identifier|
+json.virtual_encounter Offer::ENCOUNTERS do |identifier|
+  next if identifier == 'personal' # 'personal' doubles as a contact type
   json.identifier identifier
-  json.display_name t(".contact_type.#{identifier}")
+  json.display_name t(".encounter.#{identifier}")
 end

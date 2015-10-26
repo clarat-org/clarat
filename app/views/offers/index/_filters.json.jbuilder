@@ -1,4 +1,4 @@
-json.age((0..18).to_a) do |age|
+json.age((Offer::MIN_AGE..Offer::MAX_AGE).to_a) do |age|
   json.identifier age
   json.display_name t('.age', count: age)
 end

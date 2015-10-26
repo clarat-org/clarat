@@ -18,7 +18,7 @@ LanguageFilter.create name: 'Türkisch', identifier: 'tur'
 TargetAudienceFilter.create name: 'Kinder', identifier: 'children'
 TargetAudienceFilter.create name: 'Eltern', identifier: 'parents'
 TargetAudienceFilter.create name: 'Familie', identifier: 'nuclear_family'
-TargetAudienceFilter.create name: 'Bekannte', identifier: 'aquintances'
+TargetAudienceFilter.create name: 'Bekannte', identifier: 'acquaintances'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896

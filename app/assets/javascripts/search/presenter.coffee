@@ -155,7 +155,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       @handleChangeToRemote()
     else
       @handleChangeToPersonal()
-    @sendMainSearch()
     @stopEvent event
 
   handlePaginationClick: (event) =>
@@ -188,7 +187,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   # disable and check all remote checkboxes, model has every encounter again
   handleChangeToPersonal: =>
-
     @model.contact_type = 'personal'
     $('.aside-standard').show()
     $('#contact_type_personal').prop('checked', true)
@@ -210,6 +208,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     $('.filter-form__checkboxes-wrapper input').each ->
       $(this).attr 'disabled', false
+
+    @sendMainSearch()
+    @sendQuerySupportSearch()
 
   disableCheckboxes: =>
     $('.JS-EncounterSelector').each ->

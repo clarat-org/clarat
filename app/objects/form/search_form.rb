@@ -23,14 +23,25 @@ class SearchForm
   # search focusses only on that specific point.
   attribute :exact_location, Boolean, default: false
 
-  # Hidden Filters (controls get rendered in JS)
+  # Filters
+
+  CONTACT_TYPES = [:personal, :remote]
   attribute :contact_type, String, default: :personal
+  enumerize :contact_type, in: CONTACT_TYPES
+  ### Age
   attribute :age, String
-  attribute :target_audience, String
-  attribute :exclusive_gender, String
+  enumerize :age, in: AgeFilter::IDENTIFIER
+  ### Language
   attribute :language, String
+  enumerize :language, in: LanguageFilter::IDENTIFIER
+  ### Audience
+  attribute :target_audience, String
+  ### Gender
+  attribute :exclusive_gender, String
+  ### Encounter
   attribute :encounters, String,
             default: (Offer::ENCOUNTERS - %w(personal)).join(',')
+  ### Section (world)
   attribute :section, String, default: :family
   enumerize :section, in: SectionFilter::IDENTIFIER
 

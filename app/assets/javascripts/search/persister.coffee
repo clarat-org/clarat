@@ -73,6 +73,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
   ## Other
 
   modifiedUrlString: (attributesToChange) ->
+    console.log attributesToChange
     $.query.spaces = true
 
     changedHref = $.query

@@ -101,16 +101,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleFilterChange'
     '#advanced_search .JS-LanguageSelector':
       change: 'handleFilterChange'
-    '#advanced_search .JS-ContactTypeSelector':
-      change: 'handleFilterChange'
     '#advanced_search .JS-EncounterSelector':
       change: 'handleEncounterChange'
 
     ## Radio state handling contact_type
     'input[name=contact_type][value=remote]:checked':
-      change: 'enableCheckboxes'
+      change: 'handleChangeToRemote'
     'input[name=contact_type][value=personal]:checked':
-      change: 'disableCheckboxes'
+      change: 'handleChangeToPersonal'
       'Clarat.Search::InitialDisable': 'disableCheckboxes'
 
 
@@ -154,13 +152,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleToggleContactTypeClick: (event) =>
     if @model.isPersonal()
-      @model.updateAttributes contact_type: 'remote'
-      $('.aside-standard').hide()
-      $('#contact_type_remote').prop('checked', true)
+      @handleChangeToRemote()
     else
-      @model.updateAttributes contact_type: 'personal'
-      $('.aside-standard').show()
-      $('#contact_type_personal').prop('checked', true)
+      @handleChangeToPersonal()
     @sendMainSearch()
     @stopEvent event
 
@@ -179,6 +173,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendQuerySupportSearch()
 
   handleEncounterChange: (event) =>
+    if $('.JS-EncounterSelector:checked').length is 0
+      return @handleChangeToPersonal()
+
     val = $(event.target).val()
     if $(event.target).prop('checked')
       @model.addEncounter val
@@ -189,15 +186,36 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @sendQuerySupportSearch()
 
+  # disable and check all remote checkboxes, model has every encounter again
+  handleChangeToPersonal: =>
+
+    @model.contact_type = 'personal'
+    $('.aside-standard').show()
+    $('#contact_type_personal').prop('checked', true)
+
+    that = @
+    $('.JS-EncounterSelector').each ->
+      that.model.addEncounter $(@).val()
+      $(@).attr 'disabled', true
+
+    @model.save encounters: @model.encounters, contact_type: 'personal'
+    Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleChangeToRemote: =>
+    @model.updateAttributes contact_type: 'remote'
+    $('.aside-standard').hide()
+    $('#contact_type_remote').prop('checked', true)
+
+    $('.filter-form__checkboxes-wrapper input').each ->
+      $(this).attr 'disabled', false
+
+  disableCheckboxes: =>
+    $('.JS-EncounterSelector').each ->
+      $(@).attr 'disabled', true
+
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>
     console.log error
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')
-
-  enableCheckboxes: () =>
-    $('.filter-form__checkboxes-wrapper input').each ->
-      $(this).attr 'disabled', false
-
-  disableCheckboxes: () =>
-    $('.filter-form__checkboxes-wrapper input').each ->
-      $(this).attr 'disabled', true

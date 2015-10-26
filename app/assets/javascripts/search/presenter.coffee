@@ -41,6 +41,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
+    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
     new Clarat.MapModal.Presenter # handles Map Button
 
   # Rendered upon successful sendMainSearch.
@@ -92,6 +93,25 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
+    '#advanced_search .JS-AgeSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-TargetAudienceSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-ExclusiveGenderSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-LanguageSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-EncounterSelector':
+      change: 'handleEncounterChange'
+
+    ## Radio state handling contact_type
+    'input[name=contact_type][value=remote]:checked':
+      change: 'handleChangeToRemote'
+    'input[name=contact_type][value=personal]:checked':
+      change: 'handleChangeToPersonal'
+      'Clarat.Search::InitialDisable': 'disableCheckboxes'
+
+
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
@@ -120,7 +140,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     ###
      HOTFIX for google translation! Translation inludes two font-tags and the
      inner one has a class that prevents our logic to work. Hotfix: grab the
-     grandparent (our link) and then get the name value 
+     grandparent (our link) and then get the name value
     ###
     if categoryName == undefined
       categoryName =
@@ -132,18 +152,69 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleToggleContactTypeClick: (event) =>
     if @model.isPersonal()
-      @model.updateAttributes contact_type: 'remote'
-      $('.aside-standard').hide()
+      @handleChangeToRemote()
     else
-      @model.updateAttributes contact_type: 'personal'
-      $('.aside-standard').show()
-    @sendMainSearch()
+      @handleChangeToPersonal()
     @stopEvent event
 
   handlePaginationClick: (event) =>
     @model.updateAttributes page: ($(event.target).data('page') - 1)
     @sendMainSearch()
     @stopEvent event
+
+  handleFilterChange: (event) =>
+    val = $(event.target).val()
+    val = if val is 'any' then '' else val
+    field = $(event.target).attr('name') or $(event.target).parent.attr('name')
+
+    @model.updateAttributes "#{field}": val
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleEncounterChange: (event) =>
+    if $('.JS-EncounterSelector:checked').length is 0
+      return @handleChangeToPersonal()
+
+    val = $(event.target).val()
+    if $(event.target).prop('checked')
+      @model.addEncounter val
+    else
+      @model.removeEncounter val
+
+    @model.save encounters: @model.encounters
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  # disable and check all remote checkboxes, model has every encounter again
+  handleChangeToPersonal: =>
+    @model.contact_type = 'personal'
+    $('.aside-standard').show()
+    $('#contact_type_personal').prop('checked', true)
+
+    that = @
+    $('.JS-EncounterSelector').each ->
+      that.model.addEncounter $(@).val()
+      $(@).attr 'disabled', true
+
+    @model.save encounters: @model.encounters, contact_type: 'personal'
+    Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleChangeToRemote: =>
+    @model.updateAttributes contact_type: 'remote'
+    $('.aside-standard').hide()
+    $('#contact_type_remote').prop('checked', true)
+
+    $('.filter-form__checkboxes-wrapper input').each ->
+      $(this).attr 'disabled', false
+
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  disableCheckboxes: =>
+    $('.JS-EncounterSelector').each ->
+      $(@).attr 'disabled', true
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

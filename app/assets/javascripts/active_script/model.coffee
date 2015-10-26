@@ -9,11 +9,11 @@ class ActiveScript.Model
   # Load stateful resource from persister. Equivalent to ActiveRecord #find
   @load: ->
     new this Clarat.Search.persister.load()
-    # TODO: this shouldn't know about the Clarat namepsace
+    # TODO: this shouldn't know about the Clarat/Search namepsace
 
   save: ->
     Clarat.Search.persister.save(arguments...)
-    # TODO: this shouldn't know about the Clarat namepsace
+    # TODO: this shouldn't know about the Clarat/Search namepsace
     # @persistedAttributes = @attributes()
 
   # attributes: ->

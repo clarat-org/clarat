@@ -1,5 +1,4 @@
-# Frontend Search Implementation - ViewModel for Search#new
-# Patterns: Model-Template-Presenter structure
+# Frontend Search Implementation - ViewModel for Search Template
 class Clarat.Search.Cell.Search
   constructor: (@model) ->
     return viewObject =

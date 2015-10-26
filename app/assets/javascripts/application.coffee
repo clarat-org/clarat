@@ -54,6 +54,7 @@ about supported directives.
 # = require search/persister
 # = require search/presenter
 # = require search/operations/update_categories
+# = require search/operations/update_advanced_search
 # = require search/operations/build_map
 # = require search/cells/search
 # = require search/cells/search_results
@@ -73,6 +74,8 @@ about supported directives.
 # = require location/operations/save_to_cookie
 #
 # = require single_click_button/presenter
+# = require toggle_advanced_search/presenter
+# = require toggle_fieldsets/presenter
 #
 # = require map_modal/presenter
 #
@@ -84,7 +87,6 @@ about supported directives.
 # = require modules/modal
 # = require modules/tooltip
 # = require modules/flash
-# = require modules/filter_form
 # = require modules/safari_fixes
 # = require modules/cookie_warning
 # = require modules/faq

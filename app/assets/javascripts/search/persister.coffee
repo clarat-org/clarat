@@ -20,7 +20,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
     'query', 'category', 'generated_geolocation', # , 'geolocation'
-    'exact_location', 'contact_type', 'search_location' # TODO: facet_filters
+    'exact_location', 'contact_type', 'encounters', 'search_location',
+    'age', 'target_audience', 'exclusive_gender', 'language', 'section'
   ]
 
   ### PUBLIC METHODS ###
@@ -45,7 +46,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   updateSearchForm: (changes) ->
     for field in @LOADABLE_FIELDS
-      $("#search_form_#{field}").val changes[field] if changes[field]?
+      continue unless changes[field]?
+      $("#search_form_#{field}").val changes[field]
 
   updateLinks: (changes) ->
     # TODO: right click on link -> "open in new tab" should work in every state
@@ -61,8 +63,9 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
   # Load from places other than the search form
   getAdditionalParams: ->
     paramHash =
-      # category tree gets transmitted as a JSON structure in a hidden element
+      # cat-tree & filters get transmitted as JSON in a hidden element
       categoryTree: $('#category-tree').data('structure').set
+      filters: $('#filters').data('structure')
 
       # TODO: where do we get page from? URL params?
       page: 0

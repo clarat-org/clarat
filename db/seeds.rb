@@ -18,7 +18,7 @@ LanguageFilter.create name: 'Türkisch', identifier: 'tur'
 TargetAudienceFilter.create name: 'Kinder', identifier: 'children'
 TargetAudienceFilter.create name: 'Eltern', identifier: 'parents'
 TargetAudienceFilter.create name: 'Familie', identifier: 'nuclear_family'
-TargetAudienceFilter.create name: 'Bekannte', identifier: 'aquintances'
+TargetAudienceFilter.create name: 'Bekannte', identifier: 'acquaintances'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896
@@ -49,12 +49,18 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        longitude: 13.404954,
                                        geoloc: '52.520007,13.404954'
 
-mains = []
-mains << Category.create(name: 'Notfall', icon: 'e-crisis')
-mains << Category.create(name: 'Lernen', icon: 'c-learn')
-mains << Category.create(name: 'Familie', icon: 'a-family')
-mains << Category.create(name: 'Gesundheit', icon: 'b-health')
-mains << Category.create(name: 'Gewalt', icon: 'd-violence')
+#mains << Category.create(name: 'Notfall', icon: 'e-crisis')
+#mains << Category.create(name: 'Lernen', icon: 'c-learn')
+#mains << Category.create(name: 'Familie', icon: 'a-family')
+#mains << Category.create(name: 'Gesundheit', icon: 'b-health')
+#mains << Category.create(name: 'Gewalt', icon: 'd-violence')
+FactoryGirl.create :category, name: 'Notfall', icon: 'e-crisis'
+FactoryGirl.create :category, name: 'Lernen', icon: 'c-learn'
+FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
+FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
+FactoryGirl.create :category, name: 'Gewalt', icon: 'd-violence'
+
+mains = Category.mains.all
 
 10.times do
   FactoryGirl.create :category, parent: mains.sample

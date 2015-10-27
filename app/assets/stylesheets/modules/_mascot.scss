@@ -24,7 +24,7 @@
 
 .mascot--header {
   bottom: 0;
-  left: 280px;
+  left: 240px;
   width: 114px;
   height: 126px;
 
@@ -32,11 +32,11 @@
     background-image: image-url('mascot--index.svg');
   }
 
-  .template--offers-show & {
+  .template--offers-show &, .template--previews-show_offer & {
     background-image: image-url('mascot--show.svg');
   }
 
-  .template--organizations-show & {
+  .template--organizations-show &, .template--previews-show_organization & {
     background-image: image-url('mascot--organization.svg');
   }
 

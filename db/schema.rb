@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928091911) do
+ActiveRecord::Schema.define(version: 20151005073023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,14 @@ ActiveRecord::Schema.define(version: 20150928091911) do
   end
 
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
+
+  create_table "categories_filters", id: false, force: true do |t|
+    t.integer "filter_id",   null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "categories_filters", ["category_id"], name: "index_filters_categories_on_category_id", using: :btree
+  add_index "categories_filters", ["filter_id"], name: "index_filters_categories_on_filter_id", using: :btree
 
   create_table "categories_offers", id: false, force: true do |t|
     t.integer "offer_id",    null: false
@@ -204,8 +212,8 @@ ActiveRecord::Schema.define(version: 20150928091911) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 80,                      null: false
-    t.text     "description",                                                null: false
+    t.string   "name",                       limit: 80,                 null: false
+    t.text     "description",                                           null: false
     t.text     "next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -219,14 +227,14 @@ ActiveRecord::Schema.define(version: 20150928091911) do
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                               default: false
-    t.date     "expires_at",                                                 null: false
+    t.date     "expires_at",                                            null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
-    t.string   "target_gender",                         default: "whatever"
-    t.integer  "age_from",                                                   null: false
-    t.integer  "age_to",                                                     null: false
+    t.string   "exclusive_gender"
+    t.integer  "age_from"
+    t.integer  "age_to"
     t.string   "target_audience"
     t.string   "aasm_state",                 limit: 32
   end

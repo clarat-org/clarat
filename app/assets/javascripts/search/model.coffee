@@ -17,6 +17,14 @@ class Clarat.Search.Model extends ActiveScript.Model
   client: ->
     return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
 
+  addEncounter: (encounter) ->
+    @encounters = _.chain @encounters.split(',')
+      .push(encounter).compact().uniq().value().join(',')
+
+  removeEncounter: (encounter) ->
+    @encounters = _.chain @encounters.split(',')
+      .without(encounter).compact().uniq().value().join(',')
+
   ### PRIVATE METHODS (ue) ###
 
   nearbyAndFacetQueries: ->
@@ -36,13 +44,14 @@ class Clarat.Search.Model extends ActiveScript.Model
   personal_query: ->
     if @isPersonal()
       new Clarat.Search.Query.Personal(
-        @generated_geolocation, @exact_location, @query, @category, @facet_filters, @page
+        @generated_geolocation, @exact_location, @query, @category,
+        @facetFilters(), @page
       )
 
   remote_query: ->
     new Clarat.Search.Query.Remote(
-      @generated_geolocation, @isPersonal(), @query, @category, @facet_filters,
-      @page
+      @generated_geolocation, @encounters, @isPersonal(), @query, @category,
+      @facetFilters(), @page
     )
 
   nearby_query: ->
@@ -50,25 +59,32 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   personal_facet_query: ->
     new Clarat.Search.Query.PersonalFacet(
-      @generated_geolocation, @exact_location, @query, @category, @facet_filters
-      # @query, @category, @geolocation, @search_radius, @facet_filters
+      @generated_geolocation, @exact_location, @query, @category,
+      @facetFilters()
+      # @query, @category, @geolocation, @search_radius, @facetFilters()
     )
 
   remote_facet_query: ->
     new Clarat.Search.Query.RemoteFacet(
-      @generated_geolocation, @query, @category, @facet_filters
+      @generated_geolocation, @encounters, true, @query, @category,
+      @facetFilters()
     )
 
 
   isPersonal: ->
     @contact_type == 'personal'
 
-  # facet_filters: ->
-  #   @filters ||= %w(age audience language).map do |type|
-  #     filter = search_form.send("#{type}_filter")
-  #     "_#{type}_filters:#{filter}" if filter
-  #   end.compact
-  #
+  ADVANCED_SEARCH_FILTERS: [
+    'age', 'target_audience', 'exclusive_gender', 'language', 'encounter',
+    'section'
+  ]
+
+  facetFilters: ->
+    @ADVANCED_SEARCH_FILTERS.map((type) =>
+      filter = @[type]
+      if filter then "_#{type}_filters:#{filter}" else null
+    ).filter (element) -> element # compact / remove all falsey values
+
   # # wide radius or use exact location
   # search_radius: ->
   #   if search_form.exact_location

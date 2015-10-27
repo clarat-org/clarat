@@ -8,10 +8,30 @@
   @extend %clarat_rounding_start;
   float: right;
   margin-top: 40px;
-  max-width: 61.8%;
+  width: 68.8%;
   height: 100px;
   background: $brand_yellow;
   z-index: 2;
+}
+
+.Distributor__search-form {
+ float: left;
+
+  .template--pages-home & {
+    float: none;
+  }
+}
+
+.Distributor__advanced-filter-trigger-wrapper {
+  float: right;
+  height: 100%;
+  width: 110px;
+  display: none;
+
+  .template--offers-index & {
+    display: table;
+  }
+
 }
 
 .Distributor--start {
@@ -19,6 +39,7 @@
   margin-top: 0;
   margin-bottom: 90px;
   max-width: 100%;
+  width: 100%;
   height: 230px;
   border-radius: 0;
 

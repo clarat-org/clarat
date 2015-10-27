@@ -3,16 +3,16 @@
     {
       "warning_type": "Cross Site Scripting",
       "warning_code": 4,
-      "fingerprint": "c1af86d798ff790dde30b24bc53b2bf4db3486179ebd3c3e8d6edaa833a3723c",
+      "fingerprint": "8943e105227e98dd3ccc51866b601f124f886a897f706b7f88a5372b0d50379a",
       "message": "Unsafe parameter value in link_to href",
       "file": "app/views/organizations/show.html.slim",
       "line": 52,
       "link": "http://brakemanscanner.org/docs/warning_types/link_to_href",
-      "code": "link_to((Organization.friendly.find(params[:id]).homepage.shorten_url + Organization.friendly.find(params[:id]).homepage.pdf_appendix), Organization.friendly.find(params[:id]).homepage.url, :target => \"_blank\")",
-      "render_path": ["OrganizationsController#show"],
+      "code": "link_to((Organization.approved.friendly.find(params[:id]).homepage.shorten_url + Organization.approved.friendly.find(params[:id]).homepage.pdf_appendix), Organization.approved.friendly.find(params[:id]).homepage.url, :target => \"_blank\")",
+      "render_path": [{"type":"controller","class":"OrganizationsController","method":"show","line":10,"file":"app/controllers/organizations_controller.rb"}],
       "location": {
         "type": "template",
-        "template": "organizations/show (OrganizationsController#show)"
+        "template": "organizations/show"
       },
       "user_input": "params",
       "confidence": "Medium"

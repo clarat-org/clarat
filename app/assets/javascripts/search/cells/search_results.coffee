@@ -50,6 +50,7 @@ class Clarat.Search.Cell.SearchResults
 
 
   ## Headline Building Helpers
+
   mainResultsHeadline: (i18nKey) ->
     output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
     bridge = I18n.t 'js.search_results.bridge'

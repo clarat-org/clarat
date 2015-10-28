@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: ddc79720a6ad59ec58708555301ab5fae99187ee
-  branch: feature/518-520-fewer-shown-categories
+  revision: e60c28b811e070b01fde6eaea7a6a5223396f256
   specs:
     clarat_base (0.1.4)
       aasm

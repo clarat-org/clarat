@@ -79,11 +79,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### CALLBACKS ###
 
   CALLBACKS:
+    document:
+      'Clarat.Location::NewLocation': 'handleNewGeolocation'
+    window:
+      popstate: 'handlePopstate'
     '#search_form_query':
       keyup: 'handleQueryKeyUp'
       change: 'handleQueryChange'
-    'document':
-      'Clarat.Location::NewLocation': 'handleNewGeolocation'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
@@ -150,8 +152,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @stopEvent event
 
   handlePaginationClick: (event) =>
-    @model.updateAttributes
+    changes =
       page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
+    @model.assignAttributes changes
+    @model.save changes, true
     @sendMainSearch()
     @stopEvent event
 
@@ -208,6 +212,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   disableCheckboxes: =>
     $('.JS-EncounterSelector').each ->
       $(@).attr 'disabled', true
+
+  handlePopstate: =>
+    window.location = window.location
+    # TODO: for more performance we could load from the event.state instead of
+    #       reloading
 
   ### Non-event-handling private methods ###
 

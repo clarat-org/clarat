@@ -213,7 +213,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or
-      $(eventTarget).parents(selector).data(elementName)
+      $(eventTarget).parents(selector).data(elementName) or ''
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

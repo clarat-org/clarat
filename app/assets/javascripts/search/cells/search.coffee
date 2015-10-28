@@ -8,3 +8,4 @@ class Clarat.Search.Cell.Search
 
       category_tree: @model.categoryTree
       filters: @model.filters
+      current_section: 'family'

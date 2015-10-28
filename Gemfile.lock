@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: e60c28b811e070b01fde6eaea7a6a5223396f256
+  revision: ddc79720a6ad59ec58708555301ab5fae99187ee
+  branch: feature/518-520-fewer-shown-categories
   specs:
     clarat_base (0.1.4)
       aasm
@@ -31,7 +32,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.3.0)
+    aasm (4.4.0)
     actionmailer (4.1.13)
       actionpack (= 4.1.13)
       actionview (= 4.1.13)
@@ -259,7 +260,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.6.2)
     mini_portile (0.6.2)
-    minitest (5.8.1)
+    minitest (5.8.2)
     minitest-capybara (0.7.2)
       capybara (~> 2.2)
       minitest (~> 5.0)

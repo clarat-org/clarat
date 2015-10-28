@@ -136,7 +136,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
-    categoryName = @getNestedDataElement $(event.target), 'name'
+    categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()
@@ -151,7 +151,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handlePaginationClick: (event) =>
     @model.updateAttributes
-      page: ((@getNestedDataElement $(event.target), 'page') - 1)
+      page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
     @sendMainSearch()
     @stopEvent event
 
@@ -209,21 +209,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $('.JS-EncounterSelector').each ->
       $(@).attr 'disabled', true
 
-  ###
-    Fix for google translation! Translation inludes one or two font-tags
-    and the inner one has a class that causes our logic to fail.
-    Hotfix: grab the parent/grandparent (our link) and then get the value
-  ###
-  getNestedDataElement: (eventTarget, elementName) =>
-    # normal case without translation
-    if eventTarget.data(elementName) != undefined
-      eventTarget.data(elementName)
-    # get data of parent (one font-tag included by translate)
-    else if $(eventTarget.context.parentElement).data(elementName) != undefined
-      $(eventTarget.context.parentElement).data(elementName)
-    # get data of grandparent (two font-tags included by translate)
-    else
-      $(eventTarget.context.parentElement.parentElement).data(elementName)
+  ### Non-event-handling private methods ###
+
+  getNestedData: (eventTarget, selector, elementName) ->
+    $(eventTarget).data(elementName) or
+      $(eventTarget).parents(selector).data(elementName)
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

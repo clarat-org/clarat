@@ -13,7 +13,14 @@ Handlebars.registerHelper
     else
       options.fn this
 
-  debug: (options) ->
+  ifIncludes: (array, options) ->
+    if array.indexOf(options.hash.search) isnt -1
+      options.fn this
+    else
+      options.inverse this
+
+  debug: (attr, options) ->
     console.log 'Debugging Handlebars:'
     console.log this
+    console.log attr
     console.log options

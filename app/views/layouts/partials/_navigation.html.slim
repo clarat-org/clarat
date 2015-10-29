@@ -8,13 +8,12 @@
         h2.Claim__firstrow = t '.claim.first_row'
         h3.Claim__secondrow = t '.claim.second_row'
 
-      nav.nav-world
-        .wrapper-inner
-          ul.nav-world__list
-            li
-              a[href="#"] Family
-            li
-              a[href="#"] Refugees
+      nav.nav-welt.nav-welt--start
+        ul.nav-welt__list
+          li.nav-welt__listitem
+            a#clarat--family[href="#"] Family
+          li.nav-welt__listitem
+            a#clarat--refugees[href="#"] Refugees
 
     .header-main__stage
       / Optional stage for animations
@@ -42,3 +41,6 @@
                       search_form.search_location,
                     'search_form[generated_geolocation]' => \
                       search_form.generated_geolocation)
+            li.nav-sections__listitem.nav-sections__listitem--c-learn
+              a[href='#']
+                | Lernen 2

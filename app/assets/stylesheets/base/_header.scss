@@ -20,6 +20,14 @@
     background: $brand_yellow;
     content: '';
 
+    body.refugees & {
+      border-top: 6px solid $brand_core_refugees;
+    }
+
+    body.family & {
+      border-top: 6px solid $brand_core_family;
+    }
+
     .template--500 & {
       display: none;
     }

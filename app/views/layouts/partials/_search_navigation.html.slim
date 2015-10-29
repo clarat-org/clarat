@@ -4,5 +4,12 @@ header.header-main
     .mascot.mascot--header
 
     .Distributor.Distributor--navigation
+      nav.nav-welt
+        .wrapper-inner
+          ul.nav-welt__list
+            li.nav-welt__listitem
+              a#clarat--family[href="#"] Family
+            li.nav-welt__listitem
+              a#clarat--refugees[href="#"] Refugees
       = render '/offers/shared/search_form', search_form: search_form,
                                              labels: :short

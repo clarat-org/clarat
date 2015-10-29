@@ -1,0 +1,27 @@
+.nav-welt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-welt__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-welt__listitem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  padding: 6px 10px;
+  background: $brand-grey;
+
+  a {
+    color: $brand_white;
+    text-decoration: none;
+
+  }
+}

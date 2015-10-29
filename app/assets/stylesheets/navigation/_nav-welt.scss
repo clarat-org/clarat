@@ -1,8 +1,13 @@
 .nav-welt {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
+}
+
+.nav-welt--start {
+  bottom: 0;
+  top: auto;
 }
 
 .nav-welt__list {
@@ -15,13 +20,30 @@
   margin: 0;
   padding: 0;
   float: left;
-  display: inline-block;
-  padding: 6px 10px;
-  background: $brand-grey;
 
   a {
+    @extend %roboto_bold;
+    display: inline-block;
+    padding: 6px 10px;
     color: $brand_white;
     text-decoration: none;
+    text-transform: uppercase;
+    background: $brand-grey;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+}
 
+#clarat--refugees {
+  body.refugees & {
+    background: $brand_core_refugees;
+    cursor: default;
+  }
+}
+
+#clarat--family {
+  body.family & {
+    background: $brand_core_family;
+    cursor: default;
   }
 }

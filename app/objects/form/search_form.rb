@@ -30,7 +30,7 @@ class SearchForm
   enumerize :contact_type, in: CONTACT_TYPES
   ### Age
   attribute :age, String
-  enumerize :age, in: AgeFilter::IDENTIFIER
+  enumerize :age, in: Offer::MIN_AGE..Offer::MAX_AGE
   ### Language
   attribute :language, String
   enumerize :language, in: LanguageFilter::IDENTIFIER

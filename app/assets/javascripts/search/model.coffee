@@ -25,6 +25,13 @@ class Clarat.Search.Model extends ActiveScript.Model
     @encounters = _.chain @encounters.split(',')
       .without(encounter).compact().uniq().value().join(',')
 
+  ## Parent Override
+
+  # Page is always set to 0 unless changed explicitly
+  assignAttributes: (changes) ->
+    changes.page = 0 unless changes.page
+    super changes
+
   ### PRIVATE METHODS (ue) ###
 
   nearbyAndFacetQueries: ->

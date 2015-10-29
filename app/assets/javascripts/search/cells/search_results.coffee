@@ -73,6 +73,6 @@ class Clarat.Search.Cell.SearchResults
 
     for category, index in ancestors
       output += Handlebars.partials['_category_link'] name: category
-      output += ' > ' unless index is last_index
+      output += ' &rarr; ' unless index is last_index
 
     output

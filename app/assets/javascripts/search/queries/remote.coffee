@@ -1,21 +1,19 @@
 class Clarat.Search.Query.Remote extends Clarat.Search.Query.Base
 
-  # TODO: geolocation
-  constructor: (@geolocation, @teaser = false, args...) ->
+  constructor: (@geolocation, @encounters, @teaser = false, args...) ->
     super args...
 
   query_hash: ->
-    _.merge(
-      _.merge(
-        super(),
-        {
-          indexName: Clarat.Algolia.remoteIndexName
-          params:
-            numericFilters: @area_filter()
-        }
-      ),
-      @page_options()
-    )
+    mergedHash = _.chain super()
+      .merge(
+        indexName: Clarat.Algolia.remoteIndexName
+        params:
+          numericFilters: @area_filter()
+      )
+      .merge @page_options()
+      .value()
+    mergedHash.params.facetFilters.push @encounters_filter()
+    mergedHash
 
   page_options: ->
     if @teaser
@@ -33,3 +31,9 @@ class Clarat.Search.Query.Remote extends Clarat.Search.Query.Base
     [lat, lng] = @geolocation.split ','
     "area_minlat<=#{lat},area_maxlat>=#{lat},\
     area_minlong<=#{lng},area_maxlong>=#{lng}"
+
+  # OR statement for encounter facet
+  encounters_filter: ->
+    return [] unless @encounters
+    @encounters.split(',').map (encounter) ->
+      "encounter:#{encounter}"

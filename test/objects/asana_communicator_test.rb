@@ -9,7 +9,7 @@ class AsanaCommunicatorTest < ActiveSupport::TestCase # to have fixtures
         '/tasks',
         projects: %w(44856824806357), workspace: '41140436022602',
         name: 'foobar,bazfuz-9999-01-01-basicOfferName',
-        notes: 'Expired: http://www.clarat.org/admin/offer/1/edit'
+        notes: 'Expired: http://claradmin.herokuapp.com/admin/offer/1/edit'
       )
 
       offer = offers(:basic)

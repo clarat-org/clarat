@@ -20,7 +20,7 @@ FactoryGirl.define do
       _random do
         [
           %w(children Kinder), %w(parents Eltern),
-          %w(nuclear_family Familie), %w(aquintances Bekannte)
+          %w(nuclear_family Familie), %w(acquaintances Bekannte)
         ].sample
       end
     end

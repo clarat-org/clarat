@@ -12,4 +12,4 @@
 
   = hb 'if next_page' do
     %span.next
-      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}} Vor
+      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}} Weiter

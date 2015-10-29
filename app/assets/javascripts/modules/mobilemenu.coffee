@@ -1,5 +1,6 @@
 initMobileMenu = ->
 
+  $body = $('body')
   $inputQuery = $("#search_form_query")
   $homeTemplate = $("body.template--pages-home").length
   $inputLocationContainer = $(".search_form_search_location")
@@ -11,10 +12,11 @@ initMobileMenu = ->
     return
 
   if smartphone
-    $inputQuery.click ->
+    $inputQuery.unbind('click').click ->
       $inputLocationContainer.toggleClass "is-visible"
       $submit.toggleClass "is-enlarged"
       $distributor.toggleClass "is-enlarged"
+      $body.toggleClass "has-enlarged-header"
 
 $(document).on 'page:load', initMobileMenu
 $(document).on 'ajax_loaded', initMobileMenu

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005073023) do
+ActiveRecord::Schema.define(version: 20151028112851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,12 +27,13 @@ ActiveRecord::Schema.define(version: 20151005073023) do
   end
 
   create_table "categories", force: true do |t|
-    t.string   "name",                  null: false
+    t.string   "name",                                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "icon",       limit: 12
     t.integer  "parent_id"
     t.integer  "sort_order"
+    t.boolean  "visible",               default: true
   end
 
   add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
@@ -212,8 +213,8 @@ ActiveRecord::Schema.define(version: 20151005073023) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 80,                      null: false
-    t.text     "description",                                                null: false
+    t.string   "name",                       limit: 80,                 null: false
+    t.text     "description",                                           null: false
     t.text     "next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -227,12 +228,12 @@ ActiveRecord::Schema.define(version: 20151005073023) do
     t.integer  "created_by"
     t.integer  "approved_by"
     t.boolean  "renewed",                               default: false
-    t.date     "expires_at",                                                 null: false
+    t.date     "expires_at",                                            null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
-    t.string   "target_gender",                         default: "whatever"
+    t.string   "exclusive_gender"
     t.integer  "age_from"
     t.integer  "age_to"
     t.string   "target_audience"

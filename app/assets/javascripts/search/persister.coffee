@@ -46,6 +46,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
     else if window.history?.replaceState
       window.history.replaceState {}, '', @modifiedUrlString(changes)
 
+    $.query.parseNew(location.search, '')
+
   updateSearchForm: (changes) ->
     for field in @LOADABLE_FIELDS
       continue unless changes[field]?

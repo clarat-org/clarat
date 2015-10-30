@@ -10,8 +10,7 @@ class OffersController < ApplicationController
   end
 
   def index
-    # TODO: dynamic world selection by section_filter identifier
-    @category_tree ||= Category.sorted_hash_tree 'family'
+    @category_tree ||= Category.sorted_hash_tree
     prepare_location_unavailable
     render :index
   end

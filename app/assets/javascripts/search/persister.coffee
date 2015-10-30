@@ -26,8 +26,8 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   ### PUBLIC METHODS ###
 
-  save: (changes) ->
-    @updateURL changes
+  save: (changes, pushState = false) ->
+    @updateURL changes, pushState
     @updateSearchForm changes
     @updateLinks changes
 
@@ -40,8 +40,10 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   ## Savers
 
-  updateURL: (changes) ->
-    if window.history?.replaceState # only in supported browsers
+  updateURL: (changes, pushState) -> # only in supported browsers
+    if pushState && window.history?.pushState
+      window.history.pushState {}, '', @modifiedUrlString(changes)
+    else if window.history?.replaceState
       window.history.replaceState {}, '', @modifiedUrlString(changes)
 
   updateSearchForm: (changes) ->
@@ -66,9 +68,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
       # cat-tree & filters get transmitted as JSON in a hidden element
       categoryTree: $('#category-tree').data('structure').set
       filters: $('#filters').data('structure')
-
-      # TODO: where do we get page from? URL params?
-      page: 0
+      page: $.query.keys.search_form.page or 0
 
   ## Other
 

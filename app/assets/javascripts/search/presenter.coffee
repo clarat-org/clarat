@@ -79,11 +79,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### CALLBACKS ###
 
   CALLBACKS:
+    document:
+      'Clarat.Location::NewLocation': 'handleNewGeolocation'
+    window:
+      popstate: 'handlePopstate'
     '#search_form_query':
       keyup: 'handleQueryKeyUp'
       change: 'handleQueryChange'
-    'document':
-      'Clarat.Location::NewLocation': 'handleNewGeolocation'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
@@ -136,15 +138,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
-    categoryName = $(event.target).data('name')
-    ###
-     HOTFIX for google translation! Translation inludes two font-tags and the
-     inner one has a class that prevents our logic to work. Hotfix: grab the
-     grandparent (our link) and then get the name value
-    ###
-    if categoryName == undefined
-      categoryName =
-        $($(event.target).context.parentElement.parentElement).data('name')
+    categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()
@@ -158,7 +152,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @stopEvent event
 
   handlePaginationClick: (event) =>
-    @model.updateAttributes page: ($(event.target).data('page') - 1)
+    changes =
+      page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
+    @model.assignAttributes changes
+    @model.save changes, true
     @sendMainSearch()
     @stopEvent event
 
@@ -215,6 +212,17 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   disableCheckboxes: =>
     $('.JS-EncounterSelector').each ->
       $(@).attr 'disabled', true
+
+  handlePopstate: =>
+    window.location = window.location
+    # TODO: for more performance we could load from the event.state instead of
+    #       reloading
+
+  ### Non-event-handling private methods ###
+
+  getNestedData: (eventTarget, selector, elementName) ->
+    $(eventTarget).data(elementName) or
+      $(eventTarget).parents(selector).data(elementName) or ''
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

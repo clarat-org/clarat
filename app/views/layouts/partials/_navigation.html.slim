@@ -10,10 +10,10 @@
 
       nav.nav-welt.nav-welt--start
         ul.nav-welt__list
-          li.nav-welt__listitem.nav-welt__listitem--start
-            a#clarat--family[href='javascript:;'] Family
-          li.nav-welt__listitem.nav-welt__listitem--start
-            a#clarat--refugees[href='javascript:;'] Refugees
+          - SectionFilter::IDENTIFIER.each do |section|
+            li.nav-welt__listitem.nav-welt__listitem--start
+              = link_to section, home_path(section: section),
+                        id: "clarat--#{section}"
 
     .header-main__stage
       / Optional stage for animations
@@ -23,7 +23,8 @@
   .Distributor.Distributor--start
     .wrapper-inner
       = render '/offers/shared/search_form', search_form: search_form,
-                                             labels: :long
+                                             labels: :long,
+                                             current_section: current_section
 
       - cache 'category_navigation' do
 

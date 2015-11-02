@@ -5,7 +5,8 @@ feature 'Organization display' do
     orga = FactoryGirl.create :organization, :approved
     orga.websites = []
     orga.websites << FactoryGirl.create(:website, :own, url: 'http://a.t.com/')
-    visit organization_path orga
+    FactoryGirl.create :offer, organization: orga
+    visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
     page.body.must_match(

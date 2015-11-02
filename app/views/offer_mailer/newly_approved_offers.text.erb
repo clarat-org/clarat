@@ -19,7 +19,7 @@ halten.
 Inzwischen gibt es auch ein neues Angebot von Ihnen:
 
 "<%= @offers.first.name %>", zu finden unter folgendem Link:
-<%= offer_url(@offers.first) %>
+<%= unscoped_offer_url(@offers.first) %>
 
 Werfen Sie doch einen kurzen Blick auf Ihr Angebot.
 <%- else %>
@@ -27,7 +27,7 @@ Inzwischen gibt es auch neue Angebote von Ihnen:
 
 <%- @offers.each do |offer| %>
 - "<%= offer.name %>", zu finden unter folgendem Link:
-  <%= offer_url(offer) %>
+  <%= unscoped_offer_url(offer) %>
 <%- end %>
 
 Werfen Sie doch einen kurzen Blick auf Ihre Angebote.

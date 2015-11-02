@@ -4,7 +4,8 @@ describe CategoriesController do
   describe "GET 'index'" do
     it 'should respond to json requests for an offer' do
       # sign_in FactoryGirl.create :researcher
-      get :index, locale: 'de', format: :json, offer_name: 'bla'
+      get :index, format: :json, offer_name: 'bla',
+                  locale: 'de', section: 'family'
       assert_response :success
     end
   end

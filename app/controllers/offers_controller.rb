@@ -22,6 +22,12 @@ class OffersController < ApplicationController
     respond_with @offer
   end
 
+  def section_forward
+    offer = Offer.approved.friendly.find(params[:id])
+    offer_section = offer.section_filters.pluck(:identifier).first
+    redirect_to offer_path(section: offer_section, id: offer.slug)
+  end
+
   private
 
   ### INDEX ###
@@ -34,6 +40,7 @@ class OffersController < ApplicationController
   end
 
   def search_params
+    return nil unless params['search_form']
     params.for(SearchForm).refine
   end
 

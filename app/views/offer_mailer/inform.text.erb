@@ -17,12 +17,12 @@ Angebote bei clarat finden.
 <%- if @offers.count == 1 %>
 Ihr Angebot heißt bei clarat:
 "<%= @offers.first.name %>", zu finden unter folgendem Link:
-<%= offer_url(@offers.first) %>
+<%= unscoped_offer_url(@offers.first) %>
 <%- else %>
 Ihre Angebote heißen bei clarat:
 <%- @offers.each do |offer| %>
 - "<%= offer.name %>", zu finden unter folgendem Link:
-  <%= offer_url(offer) %>
+  <%= unscoped_offer_url(offer) %>
 <%- end %>
 <%- end %>
 

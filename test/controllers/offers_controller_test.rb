@@ -5,19 +5,19 @@ describe OffersController do
     describe 'for an approved offer' do
       it 'should work (with friendly id)' do
         offer = FactoryGirl.create :offer, :approved, name: 'bazfuz'
-        get :show, id: offer.slug, locale: 'de'
+        get :show, id: offer.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
 
       it 'shouldnt show on unapproved offer' do
         offer = FactoryGirl.create :offer
-        get :show, id: offer.slug, locale: 'de'
+        get :show, id: offer.slug, locale: 'de', section: 'refugees'
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
 
       it 'should redirect to 404 if offer not found' do
-        get :show, id: 'doesntexist', locale: 'de'
+        get :show, id: 'doesntexist', locale: 'de', section: 'family'
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
     end
@@ -25,12 +25,12 @@ describe OffersController do
 
   describe "GET 'index'" do
     it 'should work' do
-      get :index, locale: 'de', search_form: { query: '' }
+      get :index, locale: 'de', section: 'refugees'
       assert_response :success
     end
 
     it 'should work with "my location"' do
-      get :index, locale: 'de', search_form: {
+      get :index, locale: 'de', section: 'family', search_form: {
         search_location: I18n.t('conf.current_location'),
         generated_geolocation: I18n.t('conf.default_latlng')
       }

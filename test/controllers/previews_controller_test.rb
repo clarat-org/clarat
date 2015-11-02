@@ -11,13 +11,13 @@ describe PreviewsController do
           'test', 'test'
         )
 
-      get :show_offer, id: @offer.slug, locale: 'de'
+      get :show_offer, id: @offer.slug, locale: 'de', section: 'family'
       assert_response :success
       assert_select 'title', 'bazfuz | clarat'
     end
 
     it 'should not allow access without http auth' do
-      get :show_offer, id: @offer.slug, locale: 'de'
+      get :show_offer, id: @offer.slug, locale: 'de', section: 'refugees'
       assert_response 401
     end
   end
@@ -33,13 +33,13 @@ describe PreviewsController do
           'test', 'test'
         )
 
-      get :show_organization, id: @orga.slug, locale: 'de'
+      get :show_organization, id: @orga.slug, locale: 'de', section: 'refugees'
       assert_response :success
       assert_select 'title', 'bazfuz | clarat'
     end
 
     it 'should not allow access without http auth' do
-      get :show_organization, id: @orga.slug, locale: 'de'
+      get :show_organization, id: @orga.slug, locale: 'de', section: 'family'
       assert_response 401
     end
   end

@@ -1,5 +1,9 @@
 # Static pages
 class PagesController < ApplicationController
+  def section_redirect
+    redirect_to '/refugees/'
+  end
+
   def home
   end
 

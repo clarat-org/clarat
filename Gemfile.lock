@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f63568104f69313eccd7b1c16c84eeb2e67bacb0
+  revision: 5626d178df98144a1dd0aa4687c6f2b5425ce9e3
   specs:
     clarat_base (0.1.4)
       aasm
@@ -122,8 +122,8 @@ GEM
     celluloid (0.16.0)
       timers (~> 4.0.0)
     choice (0.2.0)
-    closure_tree (5.2.0)
-      activerecord (>= 3.2.0)
+    closure_tree (6.0.0)
+      activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
       sexp_processor
@@ -187,7 +187,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    geocoder (1.2.11)
+    geocoder (1.2.12)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)

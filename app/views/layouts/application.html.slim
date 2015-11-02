@@ -12,7 +12,7 @@ html class='no-js' lang=I18n.locale
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
 
-  body class="refugees template--#{controller_name}-#{action_name}"
+  body class="#{@current_section} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
       - cache 'banner' do
         = render '/layouts/partials/banner'
@@ -23,14 +23,18 @@ html class='no-js' lang=I18n.locale
                      type: message[0],
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
-        = render 'layouts/partials/navigation', search_form: SearchForm.new
+        = render 'layouts/partials/navigation',
+                 search_form: SearchForm.new,
+                 current_section: @current_section
       - else
         = render 'layouts/partials/search_navigation',
-                 search_form: @search_form || SearchForm.new
+                 search_form: @search_form || SearchForm.new,
+                 current_section: @current_section
       #yield-wrap
         = yield
     = render 'layouts/partials/footer',
-             subscription: @subscription || Subscription.new
+             subscription: @subscription || Subscription.new,
+             current_section: @current_section
 
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts

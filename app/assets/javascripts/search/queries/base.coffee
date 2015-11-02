@@ -1,6 +1,6 @@
 # TODO: gueltige werte fuer category?
 class Clarat.Search.Query.Base
-  PER_PAGE: 1
+  PER_PAGE: 20
   BASE_PRECISION: 500
   VALUES_PER_FACET: 300 # must be >= Category.Count to avoid missing categories
 

@@ -46,6 +46,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
     else if window.history?.replaceState
       window.history.replaceState {}, '', @modifiedUrlString(changes)
 
+    $(document).trigger 'Clarat.Search::URLupdated'
     $.query.parseNew(location.search, '')
 
   updateSearchForm: (changes) ->

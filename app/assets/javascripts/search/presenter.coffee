@@ -43,6 +43,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
     new Clarat.MapModal.Presenter # handles Map Button
+    $(document).trigger 'Clarat.Search::FirstSearchRendered'
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>
@@ -81,6 +82,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     document:
       'Clarat.Location::NewLocation': 'handleNewGeolocation'
+      'Clarat.Search::URLupdated': 'handleURLupdated'
     window:
       popstate: 'handlePopstate'
     '#search_form_query':
@@ -213,9 +215,13 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $('.JS-EncounterSelector').each ->
       $(@).attr 'disabled', true
 
+  handleURLupdated: =>
+    # Fix for Safari & old Chrome: prevent initial popstate from affecting us.
+    @popstateEnabled = true
   handlePopstate: =>
+    return unless @popstateEnabled
     window.location = window.location
-    # TODO: for more performance we could load from the event.state instead of
+    # TODO: for more performance we could load from the event.state instead f
     #       reloading
 
   ### Non-event-handling private methods ###

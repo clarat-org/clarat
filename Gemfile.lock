@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: ac7bb6037b92b119bacd4d1dbe69f1c076ee7ac0
+  revision: 1905ed0957d56130bc57e95ee5d55de290952cec
   branch: refactor/524-workers-to-claradmin
   specs:
     clarat_base (0.1.4)
@@ -123,8 +123,8 @@ GEM
     celluloid (0.16.0)
       timers (~> 4.0.0)
     choice (0.2.0)
-    closure_tree (5.2.0)
-      activerecord (>= 3.2.0)
+    closure_tree (6.0.0)
+      activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
       sexp_processor

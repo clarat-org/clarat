@@ -4,6 +4,9 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.approved.friendly.find(params[:id])
+    unless @organization.in_section? @current_section
+      return redirect_to section: @organization.canonical_section
+    end
     prepare_gmaps_variable @organization
     @contact = Contact.new url: request.url, reporting: true
     respond_with @organization

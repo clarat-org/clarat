@@ -17,6 +17,9 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.approved.friendly.find(params[:id])
+    unless @offer.in_section? @current_section
+      return redirect_to section: @offer.canonical_section
+    end
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer

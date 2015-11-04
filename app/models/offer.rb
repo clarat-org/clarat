@@ -7,4 +7,8 @@ class Offer < ActiveRecord::Base
   def canonical_section
     section_filters.pluck(:identifier).first
   end
+
+  def in_section? section
+    section_filters.where(identifier: section).count > 0
+  end
 end

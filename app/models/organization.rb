@@ -7,4 +7,8 @@ class Organization < ActiveRecord::Base
   def canonical_section
     section_filters.pluck(:identifier).first || SectionFilter::DEFAULT
   end
+
+  def in_section? section
+    section_filters.where(identifier: section).count > 0
+  end
 end

@@ -4,8 +4,9 @@ describe OrganizationsController do
   describe "GET 'show'" do
     describe 'for an approved orga' do
       it 'should work (with friendly id)' do
-        orga = FactoryGirl.create :organization, :approved, :with_offer,
-                                  name: 'bazfuz'
+        orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
+        FactoryGirl.create :offer, :approved, section: 'family',
+                                              organization: orga
         get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
@@ -15,11 +16,20 @@ describe OrganizationsController do
         orga = FactoryGirl.create :organization, :approved
         Organization.any_instance.expects(:section_filters).returns(
           SectionFilter.where(identifier: 'family')
-        )
+        ).twice
         get :show, id: orga.slug, locale: 'de', section: 'family'
+        assert_response :success
         canonical_link = css_select('link[rel=canonical]').first
         assert_equal canonical_link.attributes['href'],
                      "http://test.host/family/organisationen/#{orga.slug}"
+      end
+
+      it 'should redirect if the wrong section was given' do
+        orga = FactoryGirl.create :organization, :approved
+        FactoryGirl.create :offer, :approved, section: 'family',
+                                              organization: orga
+        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        assert_redirected_to section: 'family'
       end
 
       it 'shouldnt show on unapproved orga' do

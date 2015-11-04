@@ -20,13 +20,13 @@ module Clarat
       #{config.root}/app/objects/service/
       #{config.root}/app/objects/value/
       #{config.root}/app/objects/queries/
-      #{config.root}/app/observers
       #{config.root}/app/models/filters/
     )
 
     # Activate observers that should always be running.
     config.active_record.observers = %w(
-      location_observer contact_observer offer_observer organization_observer
+      location_observer subscription_observer contact_observer offer_observer
+      organization_observer
     )
 
     # Set Time.zone default to the specified zone and make Active Record

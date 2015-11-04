@@ -1,4 +1,7 @@
 - provide(:title, @organization.name )
+- content_for :canonical_url,
+              organization_url(section: @organization.canonical_section,
+                               id: @organization.slug)
 - location = @organization.location
 - website = @organization.homepage
 .wrapper-inner class="#{'no-location' unless location}"

@@ -11,7 +11,7 @@ class OrganizationsController < ApplicationController
 
   def section_forward
     orga = Organization.approved.friendly.find(params[:id])
-    orga_section = orga.section_filters.pluck(:identifier).first
+    orga_section = orga.canonical_section
     return redirect_to '/404' unless orga_section
     redirect_to organization_path(section: orga_section, id: orga.slug)
   end

@@ -50,4 +50,9 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
+
+  def default_canonical_url
+    section_regex = Regexp.new(SectionFilter::IDENTIFIER.join('|'))
+    request.url.sub section_regex, SectionFilter::DEFAULT
+  end
 end

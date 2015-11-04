@@ -3,6 +3,8 @@ require ClaratBase::Engine.root.join(
 )
 
 class SectionFilter < Filter
+  DEFAULT = 'refugees'
+
   # Order so that the default (refugees) is always first
   default_scope { order('identifier DESC') }
 end

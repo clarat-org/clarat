@@ -10,6 +10,15 @@ describe OffersController do
         assert_select 'title', 'bazfuz | clarat'
       end
 
+      it 'should use the correct canonical URL' do
+        offer = FactoryGirl.create :offer, :approved
+        offer.section_filters = [filters(:family)]
+        get :show, id: offer.slug, locale: 'de', section: 'family'
+        canonical_link = css_select('link[rel=canonical]').first
+        assert_equal canonical_link.attributes['href'],
+                     "http://test.host/family/angebote/#{offer.slug}"
+      end
+
       it 'shouldnt show on unapproved offer' do
         offer = FactoryGirl.create :offer
         get :show, id: offer.slug, locale: 'de', section: 'refugees'
@@ -35,6 +44,32 @@ describe OffersController do
         generated_geolocation: I18n.t('conf.default_latlng')
       }
       assert_response :success
+    end
+  end
+
+  describe "GET 'section_forward'" do
+    it 'should redirect to the default location if it has both sections' do
+      offer = FactoryGirl.create :offer, :approved
+      offer.section_filters = [filters(:family), filters(:refugees)]
+      get :section_forward, id: offer.slug, locale: 'de'
+      assert_redirected_to controller: 'offers', action: 'show',
+                           section: SectionFilter::DEFAULT
+    end
+
+    it 'should redirect to the family section if it has only that one' do
+      offer = FactoryGirl.create :offer, :approved
+      offer.section_filters = [filters(:family)]
+      get :section_forward, id: offer.slug, locale: 'de'
+      assert_redirected_to controller: 'offers', action: 'show',
+                           section: 'family'
+    end
+
+    it 'should redirect to the refugees section if it has only that one' do
+      offer = FactoryGirl.create :offer, :approved
+      offer.section_filters = [filters(:refugees)]
+      get :section_forward, id: offer.slug, locale: 'de'
+      assert_redirected_to controller: 'offers', action: 'show',
+                           section: 'refugees'
     end
   end
 end

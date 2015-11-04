@@ -6,6 +6,8 @@ html class='no-js' lang=I18n.locale
     - meta_description = yield(:meta_description)
     - if meta_description
       meta name='description' content=meta_description
+    - canonical_url = content_for(:canonical_url) || default_canonical_url
+    link rel='canonical' href=canonical_url
 
     - cache 'html_head' do
       = render 'layouts/partials/head'

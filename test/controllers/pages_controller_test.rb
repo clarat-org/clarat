@@ -6,6 +6,13 @@ describe PagesController do
       get :home, locale: 'de', section: 'family'
       assert_response :success
     end
+
+    it 'should use a a correct canonical URL' do
+      get :home, locale: 'de', section: 'family'
+      canonical_link = css_select('link[rel=canonical]').first
+      assert_equal canonical_link.attributes['href'],
+                   'http://test.host/refugees'
+    end
   end
 
   describe "GET 'about'" do

@@ -24,7 +24,7 @@ class OffersController < ApplicationController
 
   def section_forward
     offer = Offer.approved.friendly.find(params[:id])
-    offer_section = offer.section_filters.pluck(:identifier).first
+    offer_section = offer.canonical_section
     redirect_to offer_path(section: offer_section, id: offer.slug)
   end
 

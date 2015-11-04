@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 1905ed0957d56130bc57e95ee5d55de290952cec
+  revision: a7db1ca3762c668ceed1d071234ac2df9a4b4e4e
   branch: refactor/524-workers-to-claradmin
   specs:
     clarat_base (0.1.4)

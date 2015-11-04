@@ -82,6 +82,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     document:
       'Clarat.Location::NewLocation': 'handleNewGeolocation'
+      'Clarat.Search::URLupdated': 'handleURLupdated'
+    window:
+      popstate: 'handlePopstate'
     '#search_form_query':
       keyup: 'handleQueryKeyUp'
       change: 'handleQueryChange'
@@ -211,6 +214,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   disableCheckboxes: =>
     $('.JS-EncounterSelector').each ->
       $(@).attr 'disabled', true
+
+  handleURLupdated: =>
+    # Fix for Safari & old Chrome: prevent initial popstate from affecting us.
+    @popstateEnabled = true
+  handlePopstate: =>
+    return unless @popstateEnabled
+    window.location = window.location
+    # TODO: for more performance we could load from the event.state instead f
+    #       reloading
 
   ### Non-event-handling private methods ###
 

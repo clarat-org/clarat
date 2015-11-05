@@ -57,4 +57,13 @@ describe PagesController do
       assert_response 404
     end
   end
+
+  describe "GET 'section_forward'" do
+    it 'should redirect to the default section' do
+      ActionDispatch::Request.any_instance.expects(:fullpath)
+        .returns('/somepath#someanchor').twice
+      get :section_forward, locale: 'de'
+      assert_redirected_to '/refugees/somepath#someanchor'
+    end
+  end
 end

@@ -1,7 +1,7 @@
 Clarat::Application.routes.draw do
   localized do
     # unscoped static pages
-    root to: 'pages#section_redirect'
+    root to: 'pages#section_forward'
     get '/404' => 'pages#not_found'
 
     scope ':section', section: /family|refugees/ do
@@ -27,6 +27,11 @@ Clarat::Application.routes.draw do
     get 'offers/:id' => 'offers#section_forward', as: :unscoped_offer
     get 'organizations/:id' => 'organizations#section_forward',
         as: :unscoped_orga
+    get 'ueber-uns' => 'pages#section_forward'
+    get 'haeufige-fragen' => 'pages#section_forward'
+    get 'impressum' => 'pages#section_forward'
+    get 'rechtliche-hinweise' => 'pages#section_forward'
+    get 'datenschutzhinweise' => 'pages#section_forward'
 
     # unscoped RESTful resources (only POST and non-HTML GET)
     resources :update_requests, only: [:new, :create]

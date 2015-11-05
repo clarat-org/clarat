@@ -53,6 +53,12 @@ FactoryGirl.define do
     trait :mailings_disabled do
       mailings_enabled false
     end
+
+    trait :with_offer do
+      after :create do |orga, _evaluator|
+        FactoryGirl.create :offer, organization: orga
+      end
+    end
   end
 end
 

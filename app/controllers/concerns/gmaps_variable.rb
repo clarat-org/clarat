@@ -14,7 +14,8 @@ module GmapsVariable
       @markers[key_s] = {
         position: key.to_h,
         ids: [object.id],
-        url: offer_url(object) # assumes offer, not used on organization
+        # offer only key:
+        url: offer_url(section: @current_section, id: object.slug)
       }.merge object.gmaps_info
     end
   end

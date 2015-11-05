@@ -3,7 +3,7 @@ require_relative '../test_helper'
 feature 'Offer display' do
   scenario 'Offer gets shown' do
     offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
-    visit offer_path offer
+    visit unscoped_offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name
     page.must_have_content offer.name
@@ -14,7 +14,7 @@ feature 'Offer display' do
                                description: 'A [link](http://www.example.org)',
                                next_steps: "A\n\n- list"
 
-    visit offer_path offer
+    visit unscoped_offer_path offer
     page.must_have_link 'link'
     page.body.must_match %r{\<ul\>\n\<li\>list\</li\>\n\</ul\>}
   end
@@ -24,7 +24,7 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved,
                                description: 'A complex sentence.'
 
-    visit offer_path offer
+    visit unscoped_offer_path offer
     page.body.must_match(
       %r{\<p\>A \<dfn class='JS-tooltip' data-id='1'\>complex\</dfn\> sentence.\</p\>}
     )
@@ -36,7 +36,7 @@ feature 'Offer display' do
       :contact_person, :no_fields, :with_telephone,
       organization: offer.organizations.first
     )
-    visit offer_path offer
+    visit unscoped_offer_path offer
     page.body.must_match(
       '030  12 34 56</a><br /></li></ul>'
     )
@@ -47,7 +47,7 @@ feature 'Offer display' do
     offer.websites = []
     offer.websites << FactoryGirl.create(:website, :pdf)
     offer.websites << FactoryGirl.create(:website, :own)
-    visit offer_path offer
+    visit unscoped_offer_path offer
     page.body.must_match(
       '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
     )

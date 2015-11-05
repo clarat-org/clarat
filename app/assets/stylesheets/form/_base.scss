@@ -41,6 +41,14 @@ input[type="submit"] {
   font-weight: 400;
   background-color: $brand_brown;
   color: $brand_white;
+
+  body.refugees & {
+    background-color: $brand_core_refugees;
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+  }
 }
 
 .col-wrapper {
@@ -63,5 +71,13 @@ input[type="submit"] {
   padding: 5px 10px;
   font-size: 14px;
   text-decoration: none;
+
+  body.refugees & {
+    background-color: $brand_core_refugees;
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+  }
 
 }

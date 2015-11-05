@@ -17,9 +17,18 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.approved.friendly.find(params[:id])
+    unless @offer.in_section? @current_section
+      return redirect_to section: @offer.canonical_section
+    end
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
+  end
+
+  def section_forward
+    offer = Offer.approved.friendly.find(params[:id])
+    offer_section = offer.canonical_section
+    redirect_to offer_path(section: offer_section, id: offer.slug)
   end
 
   private
@@ -34,6 +43,7 @@ class OffersController < ApplicationController
   end
 
   def search_params
+    return nil unless params['search_form']
     params.for(SearchForm).refine
   end
 

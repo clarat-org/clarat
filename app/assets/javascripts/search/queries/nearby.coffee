@@ -2,7 +2,7 @@ class Clarat.Search.Query.Nearby
   NEARBY_RADIUS: 25000 # check later if accurate
 
   # TODO: geolocation
-  constructor: (@geolocation) ->
+  constructor: (@geolocation, @section) ->
 
   query_hash: ->
     indexName: Clarat.Algolia.personalIndexName,
@@ -12,3 +12,4 @@ class Clarat.Search.Query.Nearby
       hitsPerPage: 1
       aroundLatLng: @geolocation
       aroundRadius: @NEARBY_RADIUS
+      facetFilters: ["_section_filters:#{@section}"]

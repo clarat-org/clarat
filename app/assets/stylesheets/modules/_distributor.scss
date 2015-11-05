@@ -5,13 +5,22 @@
 // ---------------------------------------------------------------
 
 .Distributor {
-  @extend %clarat_rounding_start;
+  //@extend %clarat_rounding_start;
   float: right;
-  margin-top: 40px;
+  margin-top: 52px;
   width: 68.8%;
   height: 100px;
   background: $brand_yellow;
   z-index: 2;
+  position: relative;
+
+  body.refugees & {
+    border-top: 6px solid $brand_core_refugees;
+  }
+
+  body.family & {
+    border-top: 6px solid $brand_core_family;
+  }
 }
 
 .Distributor__search-form {
@@ -46,4 +55,6 @@
   &:after {
     display: none;
   }
+
+
 }

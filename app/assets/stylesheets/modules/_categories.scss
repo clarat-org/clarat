@@ -107,6 +107,14 @@
       color: $brand_white;
       font-size: 18px;
       padding: 4px 10px;
+
+      body.refugees & {
+        background-color: rgba($brand_core_refugees, 1);
+      }
+
+      body.family & {
+        background-color: rgba($brand_core_family, 1);
+      }
     }
 
     &.active > a {

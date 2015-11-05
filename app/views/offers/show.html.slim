@@ -1,5 +1,7 @@
 - provide :title, @offer.name
 - provide :meta_description, @offer.description.first(154) + '…'
+- content_for :canonical_url,
+              offer_url(section: @offer.canonical_section, id: @offer.slug)
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
     - cache [@offer, 'page_header'] do

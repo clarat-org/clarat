@@ -10,7 +10,7 @@
   z-index: 30;
   margin: 0 auto;
   padding-top: 30px;
-  max-width: 750px;
+  max-width: 900px;
 }
 
 .nav-sections__list {
@@ -59,24 +59,64 @@
 .nav-sections__listitem--e-crisis {
   background: image-url('picto_crisis.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_crisis--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_crisis--family.svg')
+  }
 }
 
 .nav-sections__listitem--c-learn {
   background: image-url('picto_learn.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_learn--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_learn--family.svg')
+  }
 }
 
 .nav-sections__listitem--a-family {
   background: image-url('picto_family.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_family--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_family--family.svg')
+  }
 }
 
 .nav-sections__listitem--b-health {
   background: image-url('picto_health.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_health--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_health--family.svg')
+  }
 }
 
 .nav-sections__listitem--d-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_violence--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_violence--family.svg')
+  }
 }

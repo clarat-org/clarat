@@ -34,7 +34,8 @@
     = '"' + @offers.first.name.strip + '",'
     zu finden unter folgendem Link:
     %br
-    = link_to offer_url(@offers.first), offer_url(@offers.first)
+    = link_to unscoped_offer_url(@offers.first),
+              unscoped_offer_url(@offers.first)
   - else
     %ul
       - @offers.each do |offer|
@@ -42,7 +43,7 @@
           = '"' + offer.name.strip + '",'
           zu finden unter folgendem Link:
           %br
-          = link_to offer_url(offer), offer_url(offer)
+          = link_to unscoped_offer_url(offer), unscoped_offer_url(offer)
 
 
 

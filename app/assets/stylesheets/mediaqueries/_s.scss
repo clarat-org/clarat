@@ -16,7 +16,7 @@
 
   .Logo {
     position: absolute;
-    top: 10px;
+    bottom: 32px;
     z-index: 20;
     margin-top: 5px;
     margin-left: 15px;
@@ -44,7 +44,7 @@
 
   .header-main {
     position: fixed;
-    top: 30px;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 130;
@@ -71,10 +71,8 @@
 
   .Distributor--navigation {
     padding-bottom: 0;
-    max-height: 55px;
 
     &.is-enlarged {
-      max-height: 95px;
       z-index: 20;
     }
 
@@ -222,6 +220,20 @@
     }
   }
 
+  .nav-welt__listitem {
+    a {
+      font-size: 14px;
+      padding-left: 24px;
+      padding-right: 0;
+    }
+  }
+
+  .nav-welt__listitem--start {
+    a {
+      height: 38px;
+    }
+  }
+
   .search-form--input-wrapper {
     left: 0;
     z-index: 12;
@@ -253,7 +265,7 @@
   }
 
   .content-main {
-    padding-top: 115px;
+    padding-top: 130px;
 
     .has-enlarged-header & {
       padding-top: 163px;

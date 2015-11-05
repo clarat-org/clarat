@@ -16,7 +16,7 @@ class Clarat.Search.Cell.SearchResults
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
-
+    section: $('body').data('section')
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]
@@ -34,7 +34,7 @@ class Clarat.Search.Cell.SearchResults
 
       faq_text: I18n.t('js.search_results.faq_text')
       faq_anchor: I18n.t('js.search_results.faq_anchor')
-      faq_href: '/haeufige-fragen/#search_section'
+      faq_href: "/#{@model.section}/haeufige-fragen/#search_section"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits

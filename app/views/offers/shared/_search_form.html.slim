@@ -1,6 +1,7 @@
 div.Distributor__search-form
-  = simple_form_for search_form, url: offers_path, # namespace: 'nav',
-                                   html: { method: :get, novalidate: false } do |f|
+  = simple_form_for search_form,
+                    url: offers_path(section: current_section),
+                    html: { method: :get, novalidate: false } do |f|
     .search-form--input-wrapper
       = f.input :query, label: t('.query_label'),
                         required: false,

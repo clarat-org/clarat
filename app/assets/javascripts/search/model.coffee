@@ -61,7 +61,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     )
 
   nearby_query: ->
-    new Clarat.Search.Query.Nearby @generated_geolocation
+    new Clarat.Search.Query.Nearby @generated_geolocation, @section
 
   personal_facet_query: ->
     new Clarat.Search.Query.PersonalFacet(

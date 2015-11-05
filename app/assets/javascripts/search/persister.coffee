@@ -71,6 +71,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
       # cat-tree & filters get transmitted as JSON in a hidden element
       categoryTree: $('#category-tree').data('structure').set
       filters: $('#filters').data('structure')
+      section: $('body').data('section')
       page: $.query.keys.search_form?.page or 0
 
   ## Other

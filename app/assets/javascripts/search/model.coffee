@@ -35,12 +35,20 @@ class Clarat.Search.Model extends ActiveScript.Model
   ### PRIVATE METHODS (ue) ###
 
   nearbyAndFacetQueries: ->
-    _.map [@nearby_query(), @personal_facet_query(), @remote_facet_query()],
-          (query) -> query.query_hash()
+    _.chain [ @nearby_query(), @remote_facet_query(), @personal_facet_query()]
+      .compact()
+      .map( (query) -> query.query_hash() )
+      .value()
+    #_.map [@nearby_query(), @personal_facet_query(), @remote_facet_query()],
+    #      (query) -> query.query_hash()
 
   facetQueries: ->
-    _.map [@personal_facet_query(), @remote_facet_query()],
-          (query) -> query.query_hash()
+    _.chain [@remote_facet_query(), @personal_facet_query() ]
+      .compact()
+      .map( (query) -> query.query_hash() )
+      .value()
+    # _.map [@personal_facet_query(), @remote_facet_query()],
+      #    (query) -> query.query_hash()
 
   personalAndRemoteQueries: ->
     @_queries = _.chain [ @personal_query(), @remote_query() ]
@@ -64,10 +72,11 @@ class Clarat.Search.Model extends ActiveScript.Model
     new Clarat.Search.Query.Nearby @generated_geolocation
 
   personal_facet_query: ->
-    new Clarat.Search.Query.PersonalFacet(
-      @generated_geolocation, @query, @category, @facetFilters()
-      # @query, @category, @geolocation, @search_radius, @facetFilters()
-    )
+    if @isPersonal()
+      new Clarat.Search.Query.PersonalFacet(
+        @generated_geolocation, @query, @category, @facetFilters()
+        # @query, @category, @geolocation, @search_radius, @facetFilters()
+      )
 
   remote_facet_query: ->
     new Clarat.Search.Query.RemoteFacet(

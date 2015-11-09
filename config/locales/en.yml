@@ -50,16 +50,17 @@ en:
       example_placeholder: "z.B. %{word}, …"
 
     search:
-      form_more_label: "Show search options"
-      form_less_label: "Hide search options"
+      form_more_label: "show search options"
+      form_less_label: "hide search options"
     search_results:
       more: "More virtual offers"
+      show_personal: "Show local offers"
       bridge: "for"
       enclosing: ""
       faq_text: "If you have questions about our search you can find our FAQ "
       faq_anchor: "here"
       map:
-        enlarge_map: "Show big map"
+        enlarge_map: "Enlarge map"
         headline_small_map: "Local offers on the map"
       personal_offers:
         zero: "Alas, no offers" # :P

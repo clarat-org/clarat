@@ -1,0 +1,6 @@
+en:
+  organizations:
+    show:
+      who: "What does the organization do?"
+      where: "Where is the organization situated?"
+      offers_all: "Which kind of help does this organization offer?"

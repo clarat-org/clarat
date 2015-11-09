@@ -3,7 +3,7 @@ en:
     partials:
       banner:
         teaser:
-          text: "clarat.org is currently under construction
+          text: "clarat.org is currently under construction"
           refugees: "soon with offers for refugees"
           # TODO: Delete if beta banner changes permanently
           link: "Find out more"
@@ -25,7 +25,7 @@ en:
           first_row: "Find help easily"
           second_row: |
             Offers of help for children, adolescents and families
-        category_headline: "search by categories"
+        category_headline: "Search by categories"
       footer:
         gplus:
           anchor: "Google+"
@@ -36,10 +36,10 @@ en:
         fb:
           anchor: "Facebook"
           href: "https://www.facebook.com/claratpunktorg"
-        about: "about us"
+        about: "About us"
         faq: "FAQ"
-        contact: "contact"
-        blog: "blog"
+        contact: "Contact"
+        blog: "Blog"
         impressum: "site notice"
         tos: "legal information"
         privacy: "privacy"

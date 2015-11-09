@@ -1,0 +1,10 @@
+en:
+  emails:
+    subscribe:
+      success_html: |
+        You have successfully subscribed for email notifications about offers.
+        (<a href="%{unsubscribe_href}">cancel subscription</a>)
+    unsubscribe:
+      success_html: |
+        You have successfully unsubscribed from further email notifications.
+        (<a href="%{subscribe_href}">subscribe again</a>)

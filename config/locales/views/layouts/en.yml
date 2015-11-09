@@ -1,0 +1,45 @@
+en:
+  layouts:
+    partials:
+      banner:
+        teaser:
+          text: "clarat.org is currently under construction
+          refugees: "soon with offers for refugees"
+          # TODO: Delete if beta banner changes permanently
+          link: "Find out more"
+      modal:
+        beta_modal:
+          text: |
+            Our website clarat.org is just getting started. You can already find
+            many offers of help in Berlin. We will soon gather offers for other
+            cities as well. We appreciate your help: Did you find room for
+            improvement? Is something not working? Simply
+          link: "write us a message."
+        unavailable_location_modal: |
+          At the moment you can only find offers of help for Berlin. We are
+          working hard to soon be present in other parts of germany as well.
+          If you are interested, please enter your email and we will reach out
+          to you once as soon as that is the case.
+      navigation:
+        claim:
+          first_row: "Find help easily"
+          second_row: |
+            Offers of help for children, adolescents and families
+        category_headline: "search by categories"
+      footer:
+        gplus:
+          anchor: "Google+"
+          href: "https://plus.google.com/110429028641743127592/about"
+        twitter:
+          anchor: "Twitter"
+          href: "https://twitter.com/claratpunktorg"
+        fb:
+          anchor: "Facebook"
+          href: "https://www.facebook.com/claratpunktorg"
+        about: "about us"
+        faq: "FAQ"
+        contact: "contact"
+        blog: "blog"
+        impressum: "site notice"
+        tos: "legal information"
+        privacy: "privacy"

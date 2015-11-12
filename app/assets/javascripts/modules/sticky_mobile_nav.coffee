@@ -1,7 +1,5 @@
 stickyMobileNav = ->
 
-  console.log "sticky mobile nav calling!"
-
   wrap = $(window)
   smartphone = ($(window).width() < 480)
   $homeTemplate = $("body.template--pages-home").length

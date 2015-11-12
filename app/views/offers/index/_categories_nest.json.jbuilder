@@ -3,9 +3,12 @@ if set.any?
     parent = subset[0]
     children = subset[1]
 
+    next unless parent.visible
     json.name parent.name
+    json.sections parent.section_filters.pluck(:identifier)
     json.list_classes category_list_classes(depth, children)
-    json.partial! 'offers/index/categories_nest.json', set: children, depth: (depth + 1)
+    json.partial! 'offers/index/categories_nest.json',
+                  set: children, depth: (depth + 1)
 
     # set.each do |category, children|
     #   name = category.name

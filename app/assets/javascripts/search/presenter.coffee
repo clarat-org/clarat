@@ -41,7 +41,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
+    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
     new Clarat.MapModal.Presenter # handles Map Button
+    $(document).trigger 'Clarat.Search::FirstSearchRendered'
 
   # Rendered upon successful sendMainSearch.
   onMainResults: (resultSet) =>
@@ -57,8 +59,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
-    personalFacetResults = resultSet.results[1]
-    remoteFacetResults = resultSet.results[2]
+    remoteFacetResults = resultSet.results[1]
+    personalFacetResults = resultSet.results[2]
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
@@ -68,8 +70,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     )
 
   onQuerySupportResults: (resultSet) =>
-    personalFacetResults = resultSet.results[0]
-    remoteFacetResults = resultSet.results[1]
+    remoteFacetResults = resultSet.results[0]
+    personalFacetResults = resultSet.results[1]
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
@@ -78,11 +80,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   ### CALLBACKS ###
 
   CALLBACKS:
+    document:
+      'Clarat.Location::NewLocation': 'handleNewGeolocation'
+      'Clarat.Search::URLupdated': 'handleURLupdated'
+    window:
+      popstate: 'handlePopstate'
     '#search_form_query':
       keyup: 'handleQueryKeyUp'
       change: 'handleQueryChange'
-    'document':
-      'Clarat.Location::NewLocation': 'handleNewGeolocation'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
     '.JS-CategoryLink':
@@ -91,6 +96,25 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleToggleContactTypeClick'
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
+
+    '#advanced_search .JS-AgeSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-TargetAudienceSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-ExclusiveGenderSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-LanguageSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-EncounterSelector':
+      change: 'handleEncounterChange'
+
+    ## Radio state handling contact_type
+    'input[name=contact_type][value=remote]:checked':
+      change: 'handleChangeToRemote'
+    'input[name=contact_type][value=personal]:checked':
+      change: 'handleChangeToPersonal'
+      'Clarat.Search::InitialDisable': 'disableCheckboxes'
+
 
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
@@ -116,15 +140,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
-    categoryName = $(event.target).data('name')
-    ###
-     HOTFIX for google translation! Translation inludes two font-tags and the
-     inner one has a class that prevents our logic to work. Hotfix: grab the
-     grandparent (our link) and then get the name value 
-    ###
-    if categoryName == undefined
-      categoryName =
-        $($(event.target).context.parentElement.parentElement).data('name')
+    categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
     @sendMainSearch()
@@ -132,18 +148,87 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleToggleContactTypeClick: (event) =>
     if @model.isPersonal()
-      @model.updateAttributes contact_type: 'remote'
-      $('.aside-standard').hide()
+      @handleChangeToRemote()
     else
-      @model.updateAttributes contact_type: 'personal'
-      $('.aside-standard').show()
-    @sendMainSearch()
+      @handleChangeToPersonal()
     @stopEvent event
 
   handlePaginationClick: (event) =>
-    @model.updateAttributes page: ($(event.target).data('page') - 1)
+    changes =
+      page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
+    @model.assignAttributes changes
+    @model.save changes, true
     @sendMainSearch()
     @stopEvent event
+
+  handleFilterChange: (event) =>
+    val = $(event.target).val()
+    val = if val is 'any' then '' else val
+    field = $(event.target).attr('name') or $(event.target).parent.attr('name')
+
+    @model.updateAttributes "#{field}": val
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleEncounterChange: (event) =>
+    if $('.JS-EncounterSelector:checked').length is 0
+      return @handleChangeToPersonal()
+
+    val = $(event.target).val()
+    if $(event.target).prop('checked')
+      @model.addEncounter val
+    else
+      @model.removeEncounter val
+
+    @model.save encounters: @model.encounters
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  # disable and check all remote checkboxes, model has every encounter again
+  handleChangeToPersonal: =>
+    @model.contact_type = 'personal'
+    $('.aside-standard').show()
+    $('#contact_type_personal').prop('checked', true)
+
+    that = @
+    $('.JS-EncounterSelector').each ->
+      that.model.addEncounter $(@).val()
+      $(@).attr 'disabled', true
+
+    @model.save encounters: @model.encounters, contact_type: 'personal'
+    Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  handleChangeToRemote: =>
+    @model.updateAttributes contact_type: 'remote'
+    $('.aside-standard').hide()
+    $('#contact_type_remote').prop('checked', true)
+
+    $('.filter-form__checkboxes-wrapper input').each ->
+      $(this).attr 'disabled', false
+
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
+  disableCheckboxes: =>
+    $('.JS-EncounterSelector').each ->
+      $(@).attr 'disabled', true
+
+  handleURLupdated: =>
+    # Fix for Safari & old Chrome: prevent initial popstate from affecting us.
+    @popstateEnabled = true
+  handlePopstate: =>
+    return unless @popstateEnabled
+    window.location = window.location
+    # TODO: for more performance we could load from the event.state instead f
+    #       reloading
+
+  ### Non-event-handling private methods ###
+
+  getNestedData: (eventTarget, selector, elementName) ->
+    $(eventTarget).data(elementName) or
+      $(eventTarget).parents(selector).data(elementName) or ''
 
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>

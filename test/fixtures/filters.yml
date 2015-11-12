@@ -24,11 +24,11 @@ nuclear_family:
   type: TargetAudienceFilter
   name: Kernfamilie
   identifier: nuclear_family
-acquintances:
+acquaintances:
   id: 6
   type: TargetAudienceFilter
   name: Bekannte
-  identifier: acquintances
+  identifier: acquaintances
 pregnant_woman:
   id: 7
   type: TargetAudienceFilter

@@ -49,8 +49,11 @@ de:
         - wohnen
       example_placeholder: "z.B. %{word}, …"
 
+    search:
+      form_more_label: "Suchoptionen einblenden"
+      form_less_label: "Suchoptionen ausblenden"
     search_results:
-      more: "Weitere Angebote"
+      more: "Weitere virtuelle Angebote"
       bridge: "für"
       enclosing: "gefunden"
       faq_text: "Häufige Fragen und Antworten zur Suche findest du "

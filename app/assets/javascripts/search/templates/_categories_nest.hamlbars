@@ -1,0 +1,7 @@
+= hb 'ifIncludes sections search=@root.current_section' do
+  %ul.Categories__list
+    %li.Categories__listitem{class: '{{list_classes}}'}
+      = hb '> _category_link'
+
+      = hb 'each set' do
+        = hb '> _categories_nest'

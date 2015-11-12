@@ -3,20 +3,20 @@ require 'ffaker'
 FactoryGirl.define do
   factory :website do
     host { Website.enumerized_attributes.attributes['host'].values.sample }
-    url do
+    sequence(:url) do |n|
       case host
       when 'facebook'
-        "https://www.facebook.com/#{FFaker::Internet.domain_word}"
+        "https://www.facebook.com/#{FFaker::Internet.domain_word}#{n}"
       when 'twitter'
-        "https://www.twitter.com/#{FFaker::Internet.domain_word}"
+        "https://www.twitter.com/#{FFaker::Internet.domain_word}#{n}"
       when 'youtube'
-        "https://www.youtube.com/channel/#{FFaker::Internet.domain_word}"
+        "https://www.youtube.com/channel/#{FFaker::Internet.domain_word}#{n}"
       when 'gplus'
-        "https://plus.google.com/#{FFaker::Internet.domain_word}"
+        "https://plus.google.com/#{FFaker::Internet.domain_word}#{n}"
       when 'pinterest'
-        "https://www.pinterest.com/#{FFaker::Internet.domain_word}"
-      else # when 'own', 'other'
-        FFaker::Internet.uri(%w(http https).sample)
+        "https://www.pinterest.com/#{FFaker::Internet.domain_word}#{n}"
+      else # when 'own', 'document', 'other'
+        FFaker::Internet.uri(%w(http https).sample) + n.to_s
       end
     end
 
@@ -33,7 +33,7 @@ FactoryGirl.define do
     end
 
     trait :pdf do
-      host 'own'
+      host 'document'
       url 'http://www.t.com/t.pdf'
     end
   end

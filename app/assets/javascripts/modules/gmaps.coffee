@@ -1,5 +1,9 @@
 Clarat.GMaps =
+  loaded: false
+
   initialize: -> # callback for when maps script is loaded from google
+    Clarat.GMaps.loaded = true
+
     # places autocomplete always fires
     Clarat.GMaps.PlacesAutocomplete.initialize()
 
@@ -7,14 +11,17 @@ Clarat.GMaps =
     Clarat.GMaps.Map.initialize()
 
     # initialize map again each time an ajax request brought new information
-    $(document).on 'ajax_done', Clarat.GMaps.Map.initialize
+    # $(document).on 'ajax_done', Clarat.GMaps.Map.initialize
+    # $(document).on 'ActiveScript::PageChange', Clarat.GMaps.Map.initialize
 
   Map:
-    initialize: ->
+    initialize: (markers) ->
       canvas = document.getElementById('map-canvas')
-      markers = $('#map-data').data('markers')
+      markers = $('#map-data').data('markers') unless markers
       infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
       includedPoints = []
+      is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1
+      marker_url = if is_internetExplorer11 then  'gmaps_marker_1.png' else  'gmaps_marker_1.svg'
 
       if markers
         # Create Map
@@ -33,7 +40,7 @@ Clarat.GMaps =
           marker = new google.maps.Marker
             position: markerPosition
             map: map
-            icon: image_path('gmaps_marker_1.svg')
+            icon: image_path(marker_url)
 
           includedPoints.push markerPosition
           bounds.extend markerPosition
@@ -136,6 +143,19 @@ Clarat.GMaps =
         google.maps.event.addListener(
           Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed', ->
             Clarat.Analytics.placesAutocompleteChanged()
+        )
+
+        # Hack to not immediately submit when user tries to select a location by
+        # pressing enter on the input field.
+        # See http://stackoverflow.com/a/12275591/784889
+        $('#search_form_search_location').keydown (e) ->
+          return false if (e.which == 13 && $('.pac-container:visible').length)
+
+        # When place_changed is fired, also fire the event on the form element,
+        # so other scripts can hook into that
+        google.maps.event.addListener(
+          Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed',
+          -> $('#search_form_search_location').trigger 'place_changed'
         )
 
         # If category links exist: event listener on input change to update them

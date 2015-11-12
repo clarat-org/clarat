@@ -1,12 +1,11 @@
 ul.section-content--contact-person-list
-  / TODO: Order by no name first
-  - offer_contacts = offer.contact_people.order('name DESC')
+  / TODO: Refactor (Rethink order)
+  - offer_contacts = offer.contact_people.order('last_name DESC')
   - offer_contacts.each_with_index do |contact, index|
     - cache [offer, contact] do
       li
         / TODO: Refactor (Move to model)
         - if contact.last_name?
-          = t '.person'
           - if contact.gender?
             =< t ".#{contact.gender}"
           - if contact.academic_title?
@@ -18,13 +17,14 @@ ul.section-content--contact-person-list
             =< "#{contact.last_name}"
             br
         - elsif contact.first_name?
-          = "#{t '.person'} #{contact.first_name}"
+          = "#{contact.first_name}"
           br
         - elsif contact.operational_name?
           = "#{contact.operational_name}"
           br
-        - elsif contact.name?
-          = "#{t '.person'} #{contact.name}"
+
+        - if contact.responsibility?
+          = "#{contact.responsibility}"
           br
 
         - if contact.local_number_1?
@@ -45,8 +45,8 @@ ul.section-content--contact-person-list
             = contact.fax_area_code
             =< tel_format contact.fax_number
           br
-        - if contact.email?
+        - if contact.email_address?
           = t '.email'
           span[id="secure-email-#{index}"]
-            ==< secure_email_to contact.email, index
+            ==< secure_email_to contact.email_address, index
           br

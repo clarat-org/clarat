@@ -1,5 +1,0 @@
-de:
-  contact_person:
-    validations:
-      incomplete: |
-        Entweder "Name", "Local Number 1", oder "E-Mail" muss ausgefüllt werden.

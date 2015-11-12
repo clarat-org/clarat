@@ -1,0 +1,33 @@
+# "ActiveScript" is a custom implementation of rails' Active* Style methods for
+# JavaScript.
+# Meant to be extended. Might be made into a gem.
+class ActiveScript.Presenter extends ActiveScript.SingleInstance
+  constructor: ->
+    super()
+    # Presenters are two-way streets. We render via the presenter and callbacks
+    # give information back.
+    @registerCallbacks()
+
+  # render a template to the current browser view
+  render: (wrapperSelector, template, locals, options = {method: 'html'}) ->
+    $(wrapperSelector)[options.method] HandlebarsTemplates[template] locals
+
+  stopEvent: (event) ->
+    event.preventDefault()
+    return false
+
+  ### PRIVATE METHODS (ue) ###
+
+  # Callbacks are defined as
+  # CALLBACKS = {selector: {eventName: callbackFunction}}
+  registerCallbacks: ->
+    for selector, callback of @CALLBACKS
+      for event, method of callback
+        switch selector
+          when 'document'
+            $(document).on event, @[method]
+          when 'window'
+            $(window).on event, @[method]
+          else
+            $(document).on event, selector, @[method]
+    return

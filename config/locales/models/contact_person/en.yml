@@ -1,5 +1,0 @@
-en:
-  contact_person:
-    validations:
-    incomplete: |
-      Either "Name", "Telephone", or "E-mail" needs to be present.

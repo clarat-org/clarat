@@ -1,1 +1,5 @@
 = t '.success'
+
+- content_for :additional_js do
+  | $('.Contact-Submit').trigger('finished');
+  | $('#new_contact').find('span.error').remove();

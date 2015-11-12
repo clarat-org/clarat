@@ -1,33 +1,24 @@
-.wrapper-inner
+#search-wrapper.wrapper-inner.jsonly
   main.content-main
 
     = render 'offers/index/pending_ajax'
 
+noscript.NoScript
+  i.fa.fa-exclamation-triangle
+  p = t('.noscript_warning')
 
-  = modal_for 'unavailable_location_overlay', autoopen: false do
-    p= t '.unavailable_location_modal'
-    = render '/update_requests/new', update_request: @update_request
+/ Inform JS…
+/ …about the category structure
+#category-tree(
+  data={structure: render('offers/index/categories_nest.json', set: @category_tree, depth: 0)}
+)
+/ …about the filter structure
+#filters(
+  data={structure: render('offers/index/filters.json')}
+)
 
-  = render 'offers/index/categories_sidebar', category_tree: @category_tree,
-                                              search_cache: @search_cache,
-                                              facets: false
 
-  aside.aside-standard
-    .aside-standard__container
-      h5.aside-standard__headline = I18n.t('offers.map.headline_small_map')
-
-      #map-container
-        #map-canvas
-
-      a.map__button--enlarge.big-map_open[href="#big-map"] = I18n.t('offers.map.enlarge_map')
-
-      #big-map
-
-         button.big-map_close X
-
-/ Alert user when we used default location because they didn't give one
-- if @search_cache.search_location.blank?
-  - content_for :view_specific_scripts do
-
-    javascript:
-      Clarat.Flash.createFlash('alert', "#{j t('.location_fallback')}");
+/ prepare modal
+= modal_for 'unavailable_location_overlay', autoopen: false do
+  p= t '.unavailable_location_modal'
+  = render '/update_requests/new', update_request: @update_request

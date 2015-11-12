@@ -19,119 +19,89 @@ de:
         versuche gegebenenfalls mit einer alternativen Eingabe
         (z.B. "Postleitzahl Ort").
 
-    map:
-      show_on_big_map: "Auf großer Karte anzeigen"
-      enlarge_map: "Karte vergrößern"
-      headline_small_map: "Angebote vor Ort auf der Karte"
-
     index:
-      location_fallback: |
-        Du hast keinen Ort angegeben, deswegen (ver)suchen wir's in Berlin.
-
+      noscript_warning: |
+        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
+        Browser JavaScript aktiviert haben.
 
       # index partials
-      search_results:
-        more: "(Weitere Angebote …)"
-        personal_offers:
-          zero: "Keine Angebote vor Ort"
-          one: "Ein Angebot vor Ort"
-          other: "%{count} Angebote vor Ort"
-        remote_offers:
-          zero: "Keine Telefon- und Onlineberatungen"
-          one: "Eine Telefon- oder Onlineberatung"
-          other: "%{count} Telefon- und Onlineberatungen"
-
-
-      single_search_result:
-        encounters:
-          personal: "Persönlich"
-          hotline: "Telefon"
-          email: "E-Mail"
-          chat: "Chat"
-          forum: "Forum"
-          online-course: "Online-Kurs"
-
       pending_ajax:
         searching: "Suche…"
 
-      advanced_search:
-        form_headline: "Suchergebnisse filtern/einschränken"
-        fieldset_headline_contact: "Kontaktaufnahme"
-        fieldset_headline_age: "Alter des Kindes"
-        fieldset_headline_target-group: "Zielgruppe"
-        fieldset_headline_language: "Sprache"
-        submit: "Erneut suchen"
-
-        collection_names:
-          blank: "Egal"
-          personal: "Angebote vor Ort"
-          remote: "Telefon- und Onlineberatungen"
-          babies: "Babys"
-          toddler: "Kleinkinder"
-          schoolkid: "Schulkinder"
-          adolescent: "Jugendliche"
-          young_adults: "junge Erwachsene"
-          parents: "Eltern"
-          grandparents: "Großeltern"
-          boys_only: "nur für Jungen und Männer"
-          girls_only: "nur für Mädchen und Frauen"
-          single_parents: "Alleinerziehende"
-          patchwork_families: "Patchworkfamilien"
-          rainbow_families: "Regenbogenfamilien"
-          lgbt: "LGBT"
-          deu: "Deutsch"
-          eng: "Englisch"
-          tur: "Türkisch"
-          tha: "Thai"
-          bul: "Bulgarisch"
-          ron: "Rumänisch"
-          sqi: "Albanisch"
-          ara: "Arabisch"
-          fra: "Französisch"
-          kur: "Kurdisch"
-          rus: "Russisch"
-          srp: "Serbisch"
-          amh: "Amharisch"
-          bos: "Bosnisch"
-          ita: "Italienisch"
-          hrv: "Kroatisch"
-          pol: "Polnisch"
-          por: "Portugiesisch"
-          vie: "Vietnamesisch"
-          wol: "Wolof"
-          fas: "Persisch (Farsi)"
-          ben: "Bengalisch"
-          spa: "Spanisch"
-          tam: "Tamil"
-          urd: "Urdu"
-          mul: "andere Sprachen auf Anfrage"
-          aze: "Aserbaidschanisch"
-          ell: "Griechisch"
-          hin: "Hindi"
-          mkd: "Mazedonisch"
-          rom: "Romanes"
-          hun: "Ungarisch"
-          "568": "Niederländisch"
-          "326": "Ukrainisch"
-          "639": "Dari"
-          "150": "Deutsche Gebärdensprache"
-          lav: "Lettisch"
-          lit: "Litauisch"
-
-      categories_sidebar:
-        all_categories: "Alle Kategorien"
+      filters:
+        json:
+          age:
+            zero: "< 1 Jahr"
+            one: "1 Jahr"
+            other: "%{count} Jahre"
+          target_audience:
+            children: "für Kinder und Jugendliche"
+            parents: "für Eltern"
+            nuclear_family: "für Familien"
+            acquaintances: "für Bekannte und Verwandte"
+            pregnant_woman: "für Schwangere"
+          exclusive_gender:
+            boys_only: "nur für Jungen und Männer"
+            girls_only: "nur für Mädchen und Frauen"
+          language:
+            deu: "Deutsch"
+            eng: "Englisch"
+            tur: "Türkisch"
+            tha: "Thai"
+            bul: "Bulgarisch"
+            ron: "Rumänisch"
+            sqi: "Albanisch"
+            ara: "Arabisch"
+            fra: "Französisch"
+            kur: "Kurdisch"
+            rus: "Russisch"
+            srp: "Serbisch"
+            amh: "Amharisch"
+            bos: "Bosnisch"
+            ita: "Italienisch"
+            hrv: "Kroatisch"
+            pol: "Polnisch"
+            por: "Portugiesisch"
+            vie: "Vietnamesisch"
+            wol: "Wolof"
+            fas: "Persisch (Farsi)"
+            ben: "Bengalisch"
+            spa: "Spanisch"
+            tam: "Tamil"
+            urd: "Urdu"
+            mul: "andere Sprachen auf Anfrage"
+            aze: "Aserbaidschanisch"
+            ell: "Griechisch"
+            hin: "Hindi"
+            mkd: "Mazedonisch"
+            rom: "Romanes"
+            hun: "Ungarisch"
+            "568": "Niederländisch"
+            "326": "Ukrainisch"
+            "639": "Dari"
+            "150": "Deutsche Gebärdensprache"
+            lav: "Lettisch"
+            lit: "Litauisch"
+          contact_type:
+            personal: "vor Ort"
+            remote: "virtuell"
+          encounter:
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
+
       # /index partials
 
     show:
       what: "Worum geht's?"
       next_steps: "Was musst du tun?"
       who: "Wo gibt’s die Hilfe?"
-      obfuscated_email: |
-        Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-        verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+      last_updated: "Eintrag zuletzt bearbeitet am"
 
       # show partials
       opening_section:
@@ -148,6 +118,7 @@ de:
         internet_presence: "Wo erfährst du mehr im Netz?"
         websites:
           own: "Webseite"
+          document: "Weitere Infos"
           facebook: "Facebook"
           twitter: "Twitter"
           youtube: "Youtube"
@@ -158,10 +129,12 @@ de:
         male: "Herr"
         dr: "Dr."
         prof_dr: "Prof. Dr."
-        person: "Ansprechpartner:"
         phone: "Telefon: "
         fax: "Fax: "
         email: "E-Mail: "
+        obfuscated_email: |
+          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
       who_section:
         heading: "Wo kannst du dich melden?"
       who_location:

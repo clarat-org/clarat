@@ -1,8 +1,5 @@
 Clarat::Application.routes.draw do
   localized do
-    devise_for :users
-    mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-
     # static pages
     root to: 'pages#home'
     get 'ueber-uns' => 'pages#about', as: 'about'
@@ -10,6 +7,7 @@ Clarat::Application.routes.draw do
     get 'impressum' => 'pages#impressum', as: 'impressum'
     get 'rechtliche-hinweise' => 'pages#agb', as: 'agb'
     get 'datenschutzhinweise' => 'pages#privacy', as: 'privacy'
+    get '/404' => 'pages#not_found'
 
     # RESTful resources
     resources :offers, only: [:index, :show]
@@ -21,19 +19,19 @@ Clarat::Application.routes.draw do
     resources :subscriptions, only: [:new, :create]
     resources :definitions, only: [:show]
     get 'categories/:offer_name', controller: :categories, action: :index
+    # Previews
+    get 'preview/offers/:id' => 'previews#show_offer'
+    get 'preview/organizations/:id' => 'previews#show_organization'
 
-    get '/404' => 'pages#not_found'
+    # non-REST routes
+    get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',
+        as: 'subscribe'
+    get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
+        as: 'unsubscribe'
   end
 
-  # Sidekiq interface
-  require 'sidekiq/web'
-  require 'sidetiq/web'
-  constraint = lambda do |request|
-    request.env['warden'].authenticate? && request.env['warden'].user.admin?
-  end
-  constraints constraint do
-    mount Sidekiq::Web => '/sidekiq'
-  end
+  # Sitemap path
+  mount DynamicSitemaps::Engine => '/sitemaps/'
 
   # All else => 404
   match '*path', to: 'pages#not_found', via: :all

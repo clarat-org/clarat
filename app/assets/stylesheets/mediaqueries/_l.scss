@@ -30,10 +30,15 @@
     display: none;
   }
 
+  .mascot--footer {
+    bottom: 0; // remove once faq link comes back
+  }
+
   .Distributor {
-    margin-right: -25px; // on non-start pages, correcting offset by .wrapper-inner
-    max-width: 440px;
-    width: 440px;
+    width: 71%;
+    // margin-right: -25px; // on non-start pages, correcting offset by .wrapper-inner
+    // max-width: 440px;
+    // width: 440px;
   }
 
   .Distributor--start {
@@ -55,6 +60,26 @@
     }
   }
 
+  .Distributor__advanced-filter-trigger-wrapper {
+    position: absolute;
+    right: 0;
+  }
+
+  .search-form--input-wrapper {
+    right: 60px;
+  }
+
+  #new_search_form .input.string {
+    width: 50%;
+  }
+
+  #search_form_query,
+  #search_form_search_location {
+    max-width: none;
+    margin: 0;
+    width: calc(100% - 10px);
+  }
+
   #new_search_form {
     width: 435px;
 
@@ -64,7 +89,6 @@
 
     #search_form_query,
     #search_form_search_location {
-      max-width: 165px;
 
       .template--pages-home & {
         width: auto;
@@ -74,7 +98,7 @@
 
 
     .template--pages-home & {
-      max-width: 710px;
+      max-width: 655px;
       width: auto;
 
       .input {
@@ -90,7 +114,7 @@
   }
 
   .main-search__submit {
-    width: 11%;
+    width: 60px;
   }
 
   .nav-sections {
@@ -143,10 +167,17 @@
 
   .section-team__member {
     width: 32%;
+    margin-left: 1.8%;
+    min-height: 640px;
 
-    &:nth-child(3n) { // every third item
-      margin-right: 0;
+    &:nth-of-type(4n+1) { // reset
+      margin-left: 1.8%;
     }
+
+    &:nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
   }
 
   .Listing-results {
@@ -156,18 +187,6 @@
   .Listing-results__headline {
     .search-string {
       max-width: 70%
-    }
-  }
-
-
-
-  #new_search_form {
-    .template--pages-home & {
-      .twitter-typeahead {
-        span.tt-dropdown-menu {
-          right: 0 !important; // overriding JS
-        }
-      }
     }
   }
 

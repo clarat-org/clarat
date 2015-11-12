@@ -1,0 +1,7 @@
+.Listing-results
+  .Listing-results__pending-ajax
+    %h2
+      = hb 'error'
+    %i.fa.fa-exclamation-triangle
+    %p
+      = hb 'message'

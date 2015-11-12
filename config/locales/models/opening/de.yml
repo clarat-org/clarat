@@ -1,5 +1,0 @@
-de:
-  opening:
-    display_string:
-      appointment: "nach Vereinbarung"
-      time_frame: "%{open} Uhr - %{close} Uhr"

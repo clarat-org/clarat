@@ -1,8 +1,9 @@
 language: ruby
 rvm:
-  - 2.1.5
+  - 2.2.2
 notifications:
   email:
     - dev@clarat.org
 script:
   - RAILS_ENV=test bundle exec rake test:all
+sudo: false

@@ -15,7 +15,7 @@
 
   .Distributor.Distributor--start
     .wrapper-inner
-      = render '/offers/shared/search_form', search_cache: search_cache,
+      = render '/offers/shared/search_form', search_form: search_form,
                                              labels: :long
 
       - cache 'category_navigation' do
@@ -31,7 +31,6 @@
                 = link_to main.name, offers_path( \
                     'search_form[category]' => main.name,
                     'search_form[search_location]' => \
-                      search_cache.search_location,
+                      search_form.search_location,
                     'search_form[generated_geolocation]' => \
-                      search_cache.generated_geolocation),
-                    data: { no_turbolink: true }
+                      search_form.generated_geolocation)

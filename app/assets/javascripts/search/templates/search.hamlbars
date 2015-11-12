@@ -1,0 +1,13 @@
+%main.content-main
+  = hb 'with filters' do
+    = hb '> _advanced_search'
+
+  .Listing-results
+    / Will contain search_results later
+
+  / prepare ajax spinner
+  %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
+
+= hb '> _categories_sidebar'
+
+= hb '> _search_map'

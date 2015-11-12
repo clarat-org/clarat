@@ -1,8 +1,8 @@
 # TODO: schedule
-host 'developer.clarat.org'
+host 'www.clarat.org'
 
 sitemap :site do
-  url root_url, last_mod: Time.now, change_freq: 'daily', priority: 1.0
+  url root_url, last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
   url about_url, priority: 0.5
   url faq_url, priority: 0.5
   url new_contact_url, priority: 0.4
@@ -48,5 +48,4 @@ sitemap_for(Organization.approved, &high_prio)
 #   end
 
 # Ping search engines after sitemap generation:
-#
-#   ping_with "http://#{host}/sitemap.xml"
+ping_with "http://#{host}/sitemaps/sitemap.xml"

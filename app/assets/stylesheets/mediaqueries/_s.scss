@@ -84,6 +84,7 @@
 
     &.is-enlarged {
       max-height: 95px;
+      z-index: 20;
     }
 
     .JS-Geolocation__prompt {
@@ -144,16 +145,9 @@
       padding-left: 40px;
     }
 
-    .twitter-typeahead,
     #search_form_query,
     #search_form_search_location {
       width: 100%;
-    }
-
-    .twitter-typeahead {
-      .template--pages-home & {
-        width: 100%;
-      }
     }
 
     #search_form_query {
@@ -237,6 +231,11 @@
     }
   }
 
+  .search-form--input-wrapper {
+    left: 0;
+    z-index: 12;
+  }
+
 
   .nav-sections {
     margin: 0;
@@ -263,7 +262,11 @@
   }
 
   .content-main {
-    padding-top: 100px;
+    padding-top: 115px;
+
+    .has-enlarged-header & {
+      padding-top: 163px;
+    }
 
     .template--pages-home & {
       padding-top: 0;
@@ -298,9 +301,20 @@
 
   .section-team__member {
     width: 100%;
-    p {
-      min-height: 0;
+    margin-left: 0;
+
+    &:nth-of-type(4n+1) {
+      margin-left: 0;
     }
+
+    &:nth-of-type(3n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
   }
 
   .Listing-categories__item {
@@ -329,7 +343,9 @@
 
   .template--pages-faq,
   .template--offers-show,
-  .template--organizations-show {
+  .template--organizations-show,
+  .template--previews-show_offer,
+  .template--previews-show_organization {
     .content-main.content-main--wide {
       padding: 105px 0 0;
     }
@@ -357,21 +373,6 @@
   // Twitter Typeahead ###########################
 
   .template--pages-home {
-
-    #new_search_form {
-
-      .twitter-typeahead {
-        span.tt-dropdown-menu {
-          // specificity, overriding JS
-          position: relative !important;
-          right: 0 !important;
-          margin-top: 0; // overriding JS
-          margin-bottom: 10px;
-          background: $brand_beige;
-        }
-      }
-    }
-
     #new_search_form {
       .input.string {
         min-height: 40px;
@@ -388,10 +389,10 @@
   // Filter offer#index ######################################
 
   .filter-form {
-    padding-right: 5px;
-    padding-bottom: 45px;
+    padding: 12px 15px 5px;
     border-radius: 0;
-
+    margin-top: 0;
+    margin-bottom: 30px;
 
     .input {
       padding: 0;
@@ -407,21 +408,26 @@
   }
 
   .filter-form__fieldset {
-    padding-top: 0;
+    padding: 0;
+    flex: 1 0 100%;
   }
 
   .filter-form__fieldset__headline {
     width: 100%;
     color: $brand_brown;
     cursor: pointer;
+    background: image-url('ico_fieldset_expand.svg') no-repeat right center;
+    background-size: 6px 8px;
 
-    &[aria-collapsed="false"] {
+    &.is-active {
       background: image-url('ico_fieldset_collapse.svg') no-repeat right center;
+      background-size: 6px 8px;
     }
+  }
 
-    &[aria-collapsed="true"] {
-      background: image-url('ico_fieldset_expand.svg') no-repeat right center;
-    }
+  .filter-form__fieldset__wrapper {
+    display: none;
+    margin-bottom: 20px;
   }
 
   .filter-form__headline {

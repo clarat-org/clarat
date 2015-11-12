@@ -4,7 +4,9 @@ FactoryGirl.define do
   factory :user do
     name { FFaker::Internet.user_name }
     email { FFaker::Internet.email }
-    # password 'password' # not used in front end
+    password 'password'
+
+    confirmed_at Time.now
 
     factory :admin, aliases: [:researcher] do
       role 'researcher'

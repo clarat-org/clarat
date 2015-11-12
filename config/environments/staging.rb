@@ -1,6 +1,6 @@
 # STAGING ENV, SHOULD CLOSELY RESEMBLE PRODUCTION
 # to transfer data from production to staging, run:
-# heroku pg:copy clarat::DATABASE_URL DATABASE_URL -a clarat-staging
+# heroku pgbackups:transfer HEROKU_POSTGRESQL_GREEN clarat-staging::HEROKU_POSTGRESQL_COPPER --app clarat
 Clarat::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -32,6 +32,9 @@ Clarat::Application.configure do
   # Generate digests for assets URLs.
   config.assets.digest = true
 
+  # Version of your assets, change this if you want to expire all your assets.
+  config.assets.version = '1.1.2'
+
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
@@ -39,12 +42,6 @@ Clarat::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
-  ## Logging
-  #Lograge
-  config.lograge.enabled = true
-  config.lograge.custom_options = -> (event) do
-    { time: event.time }
-  end
   # Set to :debug to see everything in the log.
   config.log_level = :debug
 
@@ -109,7 +106,6 @@ Clarat::Application.configure do
   }
   config.action_mailer.default_url_options = { host: 'staging.clarat.org' }
   config.action_mailer.delivery_method = :smtp
-  # Keep the following on FALSE unless you are explicitly testing mailings:
-  config.action_mailer.perform_deliveries = false
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
 end

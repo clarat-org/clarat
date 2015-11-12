@@ -1,5 +1,5 @@
 module PaperTrail
   def self.whodunnit
-    User.last.try(:id) || FactoryGirl.create(:researcher).id
+    User.last || FactoryGirl.create(:researcher)
   end
 end

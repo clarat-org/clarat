@@ -4,7 +4,7 @@
 //
 // ---------------------------------------------------------------
 
-.template--offers-show, .template--previews-show_offer {
+.template--offers-show {
 
   .section-content--internet-presence .section-content__title {
     background: $brand_grey;
@@ -111,10 +111,6 @@
 
   .adr {
     margin: .25em 0;
-  }
-
-  .offer-updated-at {
-    color: $brand_blue
   }
 
 }

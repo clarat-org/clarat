@@ -7,7 +7,7 @@
 #new_search_form {
   @extend %clearfix;
   padding: 25px 0 0 25px;
-  width: 700px;
+  width: 640px;
   list-style: none;
 
   .input {
@@ -36,7 +36,6 @@
     margin: 0 auto;
     padding: 30px 0 0;
     width: 820px;
-    display: inherit;
 
     #search_form_query,
     #search_form_search_location,
@@ -58,7 +57,7 @@
 #search_form_search_location {
   margin-right: 10px;
   padding: 0 15px 0 15px;
-  max-width: 288px;
+  max-width: 260px;
   background: $brand_white;
   font-size: 20px;
   line-height: 47px;
@@ -99,12 +98,4 @@
 
 .main-search__submit {
   @extend %clarat_rounding_end;
-}
-
-.main-search__advanced-filter {
-  display: table-cell;
-  vertical-align: middle;
-  color: $brand_brown;
-  text-decoration: none;
-  font-size: 12px;
 }

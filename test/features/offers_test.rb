@@ -2,7 +2,8 @@ require_relative '../test_helper'
 
 feature 'Offer display' do
   scenario 'Offer gets shown' do
-    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
+    offer = FactoryGirl.create :offer, :approved
+    offer.contact_people.first.update_column :email, 'a@b.c' # test obfuscation
     visit offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name
@@ -33,8 +34,7 @@ feature 'Offer display' do
   scenario 'Muliple contact persons are shown in the right order' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :no_fields, :with_telephone,
-      organization: offer.organizations.first
+      :contact_person, :just_telephone, organization: offer.organizations.first
     )
     visit offer_path offer
     page.body.must_match(
@@ -49,7 +49,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
+      '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Webseite (PDF)</a>'
     )
   end
 end

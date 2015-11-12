@@ -34,12 +34,10 @@
 @import "modules/flash-message";
 @import "modules/banner";
 @import "modules/ajax";
-@import "modules/js";
 @import "modules/js-geolocation";
 @import "modules/js-cookie-warning";
 @import "modules/js-modal";
 @import "modules/table";
-@import "modules/noscript";
 
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
@@ -62,6 +60,6 @@
 
 @import "qtip2/jquery.qtip.scss";
 @import "vendor/qtip2_overide";
+@import "vendor/twitter-typeahead_override";
 @import "vendor/places-autocomplete_override";
 @import "vendor/formtastic";
-@import "vendor/shariff_override";

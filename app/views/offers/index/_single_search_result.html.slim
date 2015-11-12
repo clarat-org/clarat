@@ -1,0 +1,15 @@
+- cache [offer, offer.id, 'search_result'] do
+
+  li.JS-trigger-marker.Listing-results__listitem id="result-offer-#{offer.id}"
+    h3.Listing-results__offer
+      = link_to offer.name, offer_path(id: offer)
+    / TODO: Refactor and rename
+    h4.Listing-results__offerinfo
+      - unless offer.personal?
+        span.Listing-results__contact-type
+          = t ".encounters.#{offer.encounter}"
+      span.Listing-results__organization
+        .Listing-results__emphasis
+          = offer.organization_display_name
+        - if offer.location
+          = " #{offer.location_address}"

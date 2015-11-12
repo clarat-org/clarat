@@ -1,7 +1,8 @@
-- reporting = contact.reporting?
-= simple_form_for contact, html: { class: 'contact-form' }, remote: true do |f|
-  - if reporting
-    p= t('.send_us_a_message')
+- if reporting
+  = t('.send_us_a_message')
+= simple_form_for contact,
+                    html: { class: 'contact-form' },
+                    remote: reporting do |f|
   = f.input :name, label: false,
                    input_html: { placeholder: t('.name_placeholder') }
   = f.input :email, label: false,
@@ -13,5 +14,4 @@
                       input_html: { placeholder: t('.message_placeholder') }
   = f.input :url, as: :hidden
   = f.input :reporting, as: :hidden
-  button.Contact-Submit.JS-Single-Click-Button
-    = t '.send'
+  = f.submit t '.send'

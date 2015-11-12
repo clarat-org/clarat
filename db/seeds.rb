@@ -5,20 +5,32 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Offer.clear_index!
 
-user = User.create email: 'user@user.com', role: 'researcher'
-admin = User.create email: 'admin@admin.com', role: 'super'
+user = User.create email: 'user@user.com', password: 'password',
+                                           role: 'researcher'
+user.confirm!
+admin = User.create email: 'admin@admin.com', password: 'password',
+                                              role: 'super'
+admin.confirm!
 
-SectionFilter.create name: 'Family', identifier: 'family'
-SectionFilter.create name: 'Refugees', identifier: 'refugees'
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'
 LanguageFilter.create name: 'Türkisch', identifier: 'tur'
-TargetAudienceFilter.create name: 'Kinder', identifier: 'children'
-TargetAudienceFilter.create name: 'Eltern', identifier: 'parents'
-TargetAudienceFilter.create name: 'Familie', identifier: 'nuclear_family'
-TargetAudienceFilter.create name: 'Bekannte', identifier: 'acquaintances'
+AgeFilter.create name: 'Babies', identifier: 'babies'
+AgeFilter.create name: 'Kleinkinder', identifier: 'toddler'
+AgeFilter.create name: 'Schulkinder', identifier: 'schoolkid'
+AgeFilter.create name: 'Jugendliche', identifier: 'adolescent'
+AgeFilter.create name: 'junge Erwachsene', identifier: 'young_adults'
+AudienceFilter.create name: 'nur für Jungen und Männer', identifier: 'boys_only'
+AudienceFilter.create name: 'nur für Mädchen und Frauen',
+                      identifier: 'girls_only'
+AudienceFilter.create name: 'Alleinerziehende', identifier: 'single_parents'
+AudienceFilter.create name: 'Patchworkfamilien',
+                      identifier: 'patchwork_families'
+AudienceFilter.create name: 'Regenbogenfamilien', identifier: 'rainbow_families'
+AudienceFilter.create name: 'LGBT', identifier: 'lgbt'
+AudienceFilter.create name: 'Eltern', identifier: 'parents'
+AudienceFilter.create name: 'Großeltern', identifier: 'grandparents'
 
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896
@@ -49,18 +61,12 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        longitude: 13.404954,
                                        geoloc: '52.520007,13.404954'
 
-#mains << Category.create(name: 'Notfall', icon: 'e-crisis')
-#mains << Category.create(name: 'Lernen', icon: 'c-learn')
-#mains << Category.create(name: 'Familie', icon: 'a-family')
-#mains << Category.create(name: 'Gesundheit', icon: 'b-health')
-#mains << Category.create(name: 'Gewalt', icon: 'd-violence')
-FactoryGirl.create :category, name: 'Notfall', icon: 'e-crisis'
-FactoryGirl.create :category, name: 'Lernen', icon: 'c-learn'
-FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
-FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
-FactoryGirl.create :category, name: 'Gewalt', icon: 'd-violence'
-
-mains = Category.mains.all
+mains = []
+mains << Category.create(name: 'Notfall', icon: 'e-crisis')
+mains << Category.create(name: 'Lernen', icon: 'c-learn')
+mains << Category.create(name: 'Familie', icon: 'a-family')
+mains << Category.create(name: 'Gesundheit', icon: 'b-health')
+mains << Category.create(name: 'Gewalt', icon: 'd-violence')
 
 10.times do
   FactoryGirl.create :category, parent: mains.sample

@@ -4,7 +4,5 @@ basic:
   description: foobar
   legal_form: ev
   offers_count: 1
-  aasm_state: approved
-  created_by: 1
-  approved_by: 2
-  mailings_enabled: t
+  completed: t
+  approved: t

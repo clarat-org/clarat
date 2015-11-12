@@ -1,0 +1,54 @@
+.filter-form.filter-form--isCollapsed
+  / See #258 - remove filter-form--isCollapsed modifier if return to progressive enhancement approach
+  h2.filter-form__headline = t '.form_headline'
+  = simple_form_for search_cache, url: offers_path, namespace: 'advanced',
+                    html: { method: :get, novalidate: false } do |f|
+    = f.input :query, as: :hidden
+    = f.input :search_location, as: :hidden
+    = f.input :generated_geolocation, as: :hidden
+    = f.input :category, as: :hidden
+    .col-form-wrapper
+      .col-form-inner
+        fieldset.filter-form__fieldset
+          legend.filter-form__fieldset__headline
+            = t '.fieldset_headline_contact'
+          = f.input :contact_type,
+                            item_wrapper_class: 'filter-form__radio',
+                            as: :radio_buttons,
+                            label: false,
+                            boolean_style: :inline,
+                            collection: \
+                              i18n_collection(SearchForm::CONTACT_TYPES)
+      .col-form-inner
+        fieldset.filter-form__fieldset
+          legend.filter-form__fieldset__headline
+            = t '.fieldset_headline_age'
+          = f.input :age_filter,
+                            item_wrapper_class: 'filter-form__radio',
+                            as: :radio_buttons,
+                            label: false,
+                            boolean_style: :inline,
+                            collection: \
+                              i18n_collection(AgeFilter::IDENTIFIER, true)
+      .col-form-inner
+        fieldset.filter-form__fieldset
+          legend.filter-form__fieldset__headline
+            = t '.fieldset_headline_target-group'
+          = f.input :audience_filter,
+                            item_wrapper_class: 'filter-form__radio',
+                            as: :radio_buttons,
+                            label: false,
+                            boolean_style: :inline,
+                            collection: \
+                              i18n_collection(AudienceFilter::IDENTIFIER, true)
+      .col-form-inner
+        fieldset.filter-form__fieldset.filter-form__fieldset--last
+          legend.filter-form__fieldset__headline
+            = t '.fieldset_headline_language'
+          = f.input :language_filter,
+                              class: 'filter-form__select',
+                              label: false,
+                              collection: \
+                                i18n_collection(LanguageFilter::IDENTIFIER)
+
+    = f.submit t('.submit'), class: 'filter-form__submit'

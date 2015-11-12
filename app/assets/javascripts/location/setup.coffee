@@ -1,2 +1,0 @@
-Clarat.Location =
-  Operation: {}

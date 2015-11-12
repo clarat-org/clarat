@@ -14,11 +14,3 @@ sub2:
   id: 4
   name: 'sub1.2'
   parent_id: 1
-main3:
-  id: 5
-  name: 'main3'
-
-refugee1:
-  id: 6
-  name: 'refugee1'
-  parent_id: 2

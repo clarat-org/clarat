@@ -3,9 +3,6 @@ html class='no-js' lang=I18n.locale
   head
     title
       = full_title(yield(:title))
-    - meta_description = yield(:meta_description)
-    - if meta_description
-      meta name='description' content=meta_description
 
     - cache 'html_head' do
       = render 'layouts/partials/head'
@@ -23,14 +20,12 @@ html class='no-js' lang=I18n.locale
                      type: message[0],
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
-        = render 'layouts/partials/navigation', search_form: SearchForm.new
+        = render 'layouts/partials/navigation', search_cache: @search_cache
       - else
         = render 'layouts/partials/search_navigation',
-                 search_form: @search_form || SearchForm.new
-      #yield-wrap
-        = yield
-    = render 'layouts/partials/footer',
-             subscription: @subscription || Subscription.new
+                 search_cache: @search_cache
+      = yield
+    = render 'layouts/partials/footer', subscription: @subscription
 
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts

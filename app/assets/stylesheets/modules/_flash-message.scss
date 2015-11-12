@@ -12,24 +12,22 @@
   right: 0;
   left: 0;
   z-index: 99;
-
-  a { color: white; }
 }
 
 .Flash-message--alert {
-  background: $brand_brown !important;
+  background: $brand_brown;
 }
 
 .Flash-message--success {
-  background: $brand_green !important;
+  background: $brand_green;
 }
 
 .Flash-message--error {
-  background: $brand_orange !important;
+  background: $brand_orange;
 }
 
 .Flash-message--notice {
-  background: $brand_yellow !important;
+  background: $brand_yellow;
 }
 
 .Flash-message__close {

@@ -1,0 +1,16 @@
+de:
+  i18n:
+    transliterate:
+      rule:
+        ä: "ae"
+        ö: "oe"
+        ü: "ue"
+        ß: "ss"
+en:
+  i18n:
+    transliterate:
+      rule:
+        ä: "ae"
+        ö: "oe"
+        ü: "ue"
+        ß: "ss"

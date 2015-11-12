@@ -1,23 +1,42 @@
 {
   "ignored_warnings": [
     {
-      "warning_type": "Cross Site Scripting",
-      "warning_code": 4,
-      "fingerprint": "8943e105227e98dd3ccc51866b601f124f886a897f706b7f88a5372b0d50379a",
-      "message": "Unsafe parameter value in link_to href",
-      "file": "app/views/organizations/show.html.slim",
-      "line": 52,
-      "link": "http://brakemanscanner.org/docs/warning_types/link_to_href",
-      "code": "link_to((Organization.approved.friendly.find(params[:id]).homepage.shorten_url + Organization.approved.friendly.find(params[:id]).homepage.pdf_appendix), Organization.approved.friendly.find(params[:id]).homepage.url, :target => \"_blank\")",
-      "render_path": [{"type":"controller","class":"OrganizationsController","method":"show","line":10,"file":"app/controllers/organizations_controller.rb"}],
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "6aeb84dac63f65e5795e8c2d4e257402e14be50d3b291bf2c02000f6d430be20",
+      "message": "Possible SQL injection",
+      "file": "app/models/offer/statistics.rb",
+      "line": 43,
+      "link": "http://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "self.where(\"#{(field.to_s + \"_at\")} <= ?\", Date.commercial(year, cweek).to_datetime.end_of_week).where((field.to_s + \"_by\") => (user_id)).where(\"#{(field.to_s + \"_at\")} >= ?\", Date.commercial(year, cweek).to_datetime)",
+      "render_path": null,
       "location": {
-        "type": "template",
-        "template": "organizations/show"
+        "type": "method",
+        "class": "Offer",
+        "method": "Offer.calculate_user_stat"
       },
-      "user_input": "params",
+      "user_input": "field",
+      "confidence": "Medium"
+    },
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "953e366b51f9181fc55689ce70c4f5af6210450debd942de00ef5fb5d35823bb",
+      "message": "Possible SQL injection",
+      "file": "app/models/offer/statistics.rb",
+      "line": 41,
+      "link": "http://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "self.where(\"#{(field.to_s + \"_at\")} <= ?\", Date.commercial(year, cweek).to_datetime.end_of_week)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Offer",
+        "method": "Offer.calculate_user_stat"
+      },
+      "user_input": "field",
       "confidence": "Medium"
     }
   ],
-  "updated": "2015-09-30 12:13:57 +0100",
+  "updated": "2015-01-23 12:13:57 +0100",
   "brakeman_version": "3.3.0"
 }

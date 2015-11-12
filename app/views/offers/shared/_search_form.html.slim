@@ -1,45 +1,24 @@
-div.Distributor__search-form
-  = simple_form_for search_form, url: offers_path, # namespace: 'nav',
-                                   html: { method: :get, novalidate: false } do |f|
-    .search-form--input-wrapper
-      = f.input :query, label: t('.query_label'),
-                        required: false,
-                        input_html: { \
-                          placeholder: t(".query_placeholder.#{labels}"),
-                          spellcheck: false,
-                          autocomplete: 'off',
-                          autofocus: true,
-                          class: 'input-xlg' }
-
-      - search_location_value = \
-        search_form.search_location || cookies[:saved_search_location] || \
-        I18n.t('conf.default_location')
-      = f.input :search_location, label: t('.loc_label'),
-                                  wrapper_html: {class: 'JS-Geolocation__wrapper'},
-                                  input_html: { \
-                                    value: search_location_value,
-                                    class: 'input-xlg JS-Geolocation__display',
-                                    placeholder: t(".loc_placeholder.#{labels}"),
-                                    oninvalid: custom_validity_js('fill_field'),
-                                    onchange: custom_validity_reset_js,
-                                    required: true }
-
-      / Hidden Fields
-      - geolocation_value = \
-        search_form.generated_geolocation || cookies[:saved_geolocation] || \
-        I18n.t('conf.default_latlng')
-      = f.input :generated_geolocation, as: :hidden,
-                                        input_html: { \
-                                          class: 'JS-Geolocation__input',
-                                          value: geolocation_value }
-      / = f.input :geolocation, as: :hidden
-      = f.input :category, as: :hidden
-      = f.input :exact_location, as: :hidden
-      = f.input :contact_type, as: :hidden
-      = f.input :encounters, as: :hidden
-      = f.input :age, as: :hidden
-      = f.input :target_audience, as: :hidden
-      = f.input :exclusive_gender, as: :hidden
-      = f.input :language, as: :hidden
-      = f.input :section, as: :hidden
-    button.main-search__submit = t '.button'
+= simple_form_for search_cache, url: offers_path, # namespace: 'nav',
+                                html: { method: :get, novalidate: false } do |f|
+  = f.input :query, label: t('.query_label'),
+                    required: false,
+                    input_html: { \
+                      placeholder: t(".query_placeholder.#{labels}"),
+                      spellcheck: false,
+                      autocomplete: 'off',
+                      autofocus: true,
+                      class: 'input-xlg typeahead' }
+  = f.input :search_location, label: t('.loc_label'),
+                              input_html: { \
+                                value: geoloc_to_s,
+                                class: 'input-xlg JS-Geolocation__display',
+                                placeholder: t(".loc_placeholder.#{labels}"),
+                                oninvalid: custom_validity_js('fill_field'),
+                                onchange: custom_validity_reset_js,
+                                required: true }
+  = f.input :generated_geolocation, as: :hidden,
+                                    input_html: { \
+                                      class: 'JS-Geolocation__input',
+                                      value: default_geolocation }
+  = f.input :category, as: :hidden
+  button.main-search__submit = t '.button'

@@ -1,0 +1,12 @@
+// HOTFIX for bootstrap 3 compatiblitiy. Remove when possible
+.badge-success {
+  background-color: #5cb85c;
+}
+.badge-important {
+  background-color: #d9534f;
+}
+
+// Make 'Abmelden' button visible again
+.label-important {
+  background-color: #d9534f;
+}

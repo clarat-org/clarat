@@ -7,7 +7,7 @@
 .Banner {
   @extend %roboto_bold;
   min-height: 44px;
-  background: #007096;
+  background: $brand_blue;
   color: $brand_white;
   text-align: center;
   line-height: 40px;
@@ -19,16 +19,15 @@
   padding-left: 48px;
   width: auto;
 
-  // Temporarily disable to focus on Refugees
-  // &:before {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 40px;
-  //   height: 40px;
-  //   background: image-url('buggy.svg') bottom left no-repeat;
-  //   content: '';
-  // }
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: image-url('buggy.svg') bottom left no-repeat;
+    content: '';
+  }
 
 }
 

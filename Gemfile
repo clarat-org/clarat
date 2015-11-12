@@ -1,16 +1,15 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.1.5'
 
 ###########
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
-
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.12'
+gem 'rails', '4.1.5'
+gem 'rails-observers' # observers got extracted since rails 4
 
 # Translations
 gem 'rails-i18n'
@@ -40,20 +39,18 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
-gem 'handlebars_assets'
-gem 'hamlbars', '~> 2.0'
+gem 'hogan_assets'
+group :assets do
+  gem 'haml'
+end
 
-gem 'hogan_assets' # TODO: deprecated!
-group :assets do # TODO: deprecated!
-  gem 'haml' # TODO: deprecated!
-end # TODO: deprecated!
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-lodash' # (aka underscore) diverse js methods
+  gem 'rails-assets-lodash'
   gem 'rails-assets-jquery'
   gem 'rails-assets-qtip2'
-  gem 'rails-assets-shariff'
-  gem 'rails-assets-algoliasearch' # search client
 end
 
 #######
@@ -77,17 +74,19 @@ gem 'autoprefixer-rails'
 gem 'slim-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder'
+gem 'jbuilder', '~> 1.2'
+
+# Background processing
+gem 'sidekiq'
+gem 'sinatra', '>= 1.3.0', require: nil # for sidekiq's web interface
+gem 'sidetiq' # Sidekiq scheduling
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
-# Rack-Based
-
 gem 'rack-attack' # securing malicious requests
-gem 'rack-rewrite' # securing malicious requests
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -104,28 +103,45 @@ gem 'rack-rewrite' # securing malicious requests
 # Pretty print your Ruby objects with style
 gem 'awesome_print'
 
-# gem 'rails_admin_clone' # must come before rails_admin to work correctly
-# gem 'rails_admin'
+gem 'rails_admin_clone' # must come before rails_admin to work correctly
+gem 'rails_admin'
+gem 'rails_admin_statistics', github: 'clarat-org/rails_admin_statistics'
+# path: '../rails_admin_statistics' #
 # gem 'rails_admin_nested_set'
-# gem 'rails_admin_nestable'
-# gem 'cancan' # role based auth for rails_admin
+gem 'rails_admin_nestable'
+gem 'cancan' # role based auth for rails_admin
 
-# gem 'devise'
-# gem 'omniauth-facebook'
-# gem 'omniauth-google-oauth2'
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'pundit'
 gem 'arcane'
+gem 'enumerize'
+gem 'paper_trail'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
-gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
-                        branch: 'adds-custom-storages'
+gem 'dynamic_sitemaps'
 
 # Model enhancements
+gem 'sanitize' # parser based sanitization
+# gem 'awesome_nested_set'
+gem 'closure_tree'
+gem 'redcarpet' # Markdown processing
+
+# search
+gem 'algoliasearch-rails'
 
 gem 'virtus' # form objects
 gem 'formtastic'
 gem 'simple_form'
+
+gem 'friendly_id', '>= 5.0'
+
+gem 'geocoder'
+
+# email
+gem 'gibbon'
 
 ########################
 # For Heroku & Add-Ons #
@@ -141,12 +157,6 @@ group :production, :staging do
   gem 'rails_12factor' # heroku recommends this
   gem 'heroku-deflater' # gzip compression
 end
-
-# email
-gem 'gibbon', '~> 1.2.0' # uses MailChimp API 2.0, remove version for 3.0+
-
-# Logging
-gem 'lograge' # opinionated slimmer logs for production
 
 #####################
 # Dev/Test Specific #
@@ -172,7 +182,7 @@ group :development do
 end
 
 group :test do
-  gem 'memory_test_fix' # Sqlite inmemory fix
+  gem 'memory_test_fix'  # Sqlite inmemory fix
   gem 'rake'
   gem 'database_cleaner'
   # gem 'colorize' # use this when RBP quits using `colored`
@@ -204,7 +214,7 @@ group :development, :test do
 
   # test suite additions
   gem 'rails_best_practices'
-  gem 'brakeman' # security test: execute with 'brakeman'
+  gem 'brakeman'  # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
 
   # Code Coverage

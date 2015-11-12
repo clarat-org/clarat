@@ -6,32 +6,24 @@
 
 .section-team {
   @extend %clearfix;
-  margin: 40px 0 30px -.33%;
+  margin: 40px 0 30px -.5%;
 }
 
 .section-team__member {
   position: relative;
   float: left;
-  margin: 0 0 2.5% 1.33%;
+  margin: 0 1% 2.5% 0;
   padding-top: 30px;
   width: 24%;
-  min-height: 640px;
   background: $brand_beige;
 
-  &:nth-of-type(4n+1) { // every fourth item, starting at first
-    margin-left: 0;
-  }
-
-  &:first-of-type {
+  &:first-of-type:after {
     @extend %clarat_rounding_start;
-
-    .section-team__name {
-      @extend %clarat_rounding_start;
-    }
   }
 
   .section-team__name {
     @extend %roboto_bold;
+    @extend %clarat_rounding_start;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +45,7 @@
   }
 
   p {
-//    min-height: 15em;
+    min-height: 16em;
     padding: 0px 22px;
     margin-top: 0px;
   }

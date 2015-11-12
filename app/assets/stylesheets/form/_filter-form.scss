@@ -183,7 +183,10 @@
 
 .filter-form__radio,
 .filter-form__label {
-  cursor: pointer;
+  
+  label {
+    cursor: pointer;
+  }
 }
 
 .filter-form__switch {

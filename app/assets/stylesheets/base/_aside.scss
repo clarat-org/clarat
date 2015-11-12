@@ -3,10 +3,12 @@
 //  Common styles in aside and containers
 //
 // ---------------------------------------------------------------
+
 .aside-standard {
   position: absolute;
   top: 0;
-  transition: top 0.1s
+  transition: top 0.1s;
+  max-width: 330px;
 }
 
 .aside-standard__headline {

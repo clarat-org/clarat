@@ -46,6 +46,9 @@
                 #map-data data={ markers: @markers.to_json }
                 #map-canvas
 
+              #big-map
+                button.big-map_close X
+
             = render 'offers/show/who_location', offer: @offer,
                                                markers: @markers
 

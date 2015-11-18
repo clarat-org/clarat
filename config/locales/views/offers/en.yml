@@ -1,0 +1,141 @@
+en:
+  offers:
+    shared:
+      search_form:
+        loc_label: "Where"
+        loc_placeholder:
+          long: "address, district, city or zipcode"
+          short: "city, zip, …"
+        query_label: "Find"
+        query_placeholder:
+          long: "offers about the topic …"
+          short: "offers for …"
+        button: "Search"
+
+    invalid_location:
+      title: "Unfortunately we could not find the given location"
+      text: |
+        Please check the entered data and consider an alternative input format
+        (e.g. 'zipcode city').
+
+    index:
+      noscript_warning: |
+        Unfortunately, you need to active JavaScript for your browser in order
+        to use our search.
+
+      # index partials
+      pending_ajax:
+        searching: "Searching…"
+
+      filters:
+        json:
+          age:
+            zero: "< 1 year"
+            one: "1 year"
+            other: "%{count} years"
+          target_audience:
+            children: "for children and adolescents"
+            parents: "for parents"
+            nuclear_family: "for families"
+            acquaintances: "for acquaintances and relatives"
+            pregnant_woman: "for pregnant women"
+          exclusive_gender:
+            boys_only: "only for boys and men"
+            girls_only: "only for girls and women"
+          language:
+            deu: "German"
+            eng: "English"
+            tur: "Turkish"
+            tha: "Thai"
+            bul: "Bulgarian"
+            ron: "Romanian"
+            sqi: "Albanian"
+            ara: "Arabic"
+            fra: "French"
+            kur: "Kurdish"
+            rus: "Russian"
+            srp: "Serbian"
+            amh: "Amharic"
+            bos: "Bosnian"
+            ita: "Italian"
+            hrv: "Croatian"
+            pol: "Polish"
+            por: "Portuguese"
+            vie: "Vietnamese"
+            wol: "Wolof"
+            fas: "Persian (Farsi)"
+            ben: "Bengalese"
+            spa: "Spanish"
+            tam: "Tamil"
+            urd: "Urdu"
+            mul: "other languages on demand"
+            aze: "Azerbaijani"
+            ell: "Greek"
+            hin: "Hindi"
+            mkd: "Macedonian"
+            rom: "Romany"
+            hun: "Hungarian"
+            "568": "Dutch"
+            "326": "Ukrainian"
+            "639": "Dari"
+            "150": "German sign language"
+            lav: "Latvian"
+            lit: "Lithuanian"
+          contact_type:
+            personal: "locally"
+            remote: "virtual"
+          encounter:
+            hotline: "telephone"
+            email: "email"
+            chat: "chat"
+            forum: "forum"
+            online-course: "online course"
+
+      map_sidebar:
+        map_output_searchresults: Map view of search results
+
+      # /index partials
+
+    show:
+      what: "What it is about?"
+      next_steps: "What to do next?"
+      who: "Where can you get the help?"
+      last_updated: "Last updated at"
+
+      # show partials
+      opening_section:
+        heading: "When can you do it?"
+        days:
+          mon: Monday
+          tue: Tuesday
+          wed: Wednesday
+          thu: Thursday
+          fri: Friday
+          sat: Saturday
+          sun: Sunday
+      website_section:
+        internet_presence: "Where to find more on the internet?"
+        websites:
+          own: "website"
+          document: "additional information"
+          facebook: "Facebook"
+          twitter: "Twitter"
+          youtube: "Youtube"
+          gplus: "Google+"
+          pinterest: "Pinterest"
+      who_contact_people:
+        female: "Mrs."
+        male: "Mr."
+        dr: "Dr."
+        prof_dr: "Prof. Dr."
+        phone: "phone: "
+        fax: "fax: "
+        email: "email: "
+        obfuscated_email: |
+          This email address is being encrypted by JavaScript to prevent spam.
+          Please active JavaScript in order to read it.
+      who_section:
+        heading: "How can you get in touch?"
+      who_location:
+        organizations: 'An offer by:'
+      # /show partials

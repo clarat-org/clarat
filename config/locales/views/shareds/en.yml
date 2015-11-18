@@ -1,0 +1,7 @@
+en:
+  shareds:
+    forms:
+      fill_field: "Please fill out this field"
+    show:
+      cta_report_errors: |
+        Did you find an error?

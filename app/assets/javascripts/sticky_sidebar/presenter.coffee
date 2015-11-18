@@ -11,10 +11,12 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
     # Since aside is positioned absolute, prevent layout clashes with footer
     asideHeight = $('.aside-standard').height()
+    orgininalContentHeight = $('.content-main').height()
+
     $('.content-main').height asideHeight
 
     # Only activate sticky on offers index and above certain body height
-    if $('body.template--offers-index').length and $('body').innerHeight() >= 930
+    if $('body.template--offers-index').length and orgininalContentHeight > asideHeight
 
       $sticky = $(".template--offers-index").find(".aside-standard")
       $footer = $(".footer-main .nav-legal__list")

@@ -49,6 +49,18 @@
 
 }
 
+@font-face {
+  font-family: 'roboto-bolditalic';
+  src: asset-url('Roboto-BoldItalic-webfont.eot');
+  src: asset-url('Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-BoldItalic-webfont.woff') format('woff'),
+  asset-url('Roboto-BoldItalic-webfont.ttf') format('truetype'),
+  asset-url('Roboto-BoldItalic-webfont.svg#robotobolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 %roboto_regular {
   font-family: 'roboto-regular', 'Roboto', sans-serif;
 }
@@ -63,6 +75,10 @@
 
 %roboto_italic {
   font-family: 'roboto-italic', 'Roboto', sans-serif;
+}
+
+%roboto_bolditalic {
+  font-family: 'roboto-bolditalic', 'Roboto', sans-serif;
 }
 
 body {
@@ -96,6 +112,23 @@ h4 {
 
 p {
   line-height: 1.68;
+}
+
+i,
+em {
+  @extend %roboto_italic;
+  font-style: normal;
+  font-weight: inherit;
+
+  h1 &,
+  h2 &,
+  h3 &,
+  h4 &,
+  h5 &,
+  h6 & {
+    @extend %roboto_bolditalic;
+
+  }
 }
 
 // Iconfonts

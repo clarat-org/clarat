@@ -26,6 +26,15 @@
     z-index: 30;
     font-size: 20px;
 
+    body.refugees & {
+      color: $brand_core_refugees;
+    }
+
+    body.family & {
+      color: $brand_core_family;
+    }
+
+
     abbr[title="required"] {
       @extend %visually-hidden;
     }

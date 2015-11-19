@@ -6,7 +6,7 @@
 
 .Categories {
   @extend %layout-col-29;
-  margin: 10px 2.5% 20px 0;
+  margin: 26px 2.5% 20px 0;
 }
 
 .Categories__headline {
@@ -109,16 +109,24 @@
       padding: 4px 10px;
 
       body.refugees & {
+        background-color: rgba($brand_core_refugees, .6);
+      }
+
+      body.family & {
+        background-color: rgba($brand_core_family, .6);
+      }
+    }
+
+    &.active > a {
+      background: $brand_brown;
+
+      body.refugees & {
         background-color: rgba($brand_core_refugees, 1);
       }
 
       body.family & {
         background-color: rgba($brand_core_family, 1);
       }
-    }
-
-    &.active > a {
-      background: $brand_brown;
     }
   }
 }

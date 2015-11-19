@@ -1,4 +1,6 @@
 %main.content-main
+  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main Suchoptionen einblenden
+
   = hb 'with filters' do
     = hb '> _advanced_search'
 

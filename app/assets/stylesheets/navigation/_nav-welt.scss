@@ -79,6 +79,11 @@
 }
 
 #clarat--refugees {
+
+  &:hover {
+    background: $brand_core_refugees;
+  }
+
   body.refugees & {
     background: $brand_core_refugees;
     border-bottom-color: $brand_core_refugees;
@@ -92,6 +97,11 @@
 }
 
 #clarat--family {
+
+  &:hover {
+    background: $brand_core_family;
+  }
+
   body.family & {
     background: $brand_core_family;
     border-bottom-color: $brand_core_family;

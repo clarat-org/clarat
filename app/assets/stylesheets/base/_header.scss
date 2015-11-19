@@ -60,6 +60,14 @@
   background: image-url('foreground.svg') no-repeat center 102%;
   background-size: contain;
 
+  body.refugees & {
+    background: image-url('foreground--refugees.svg') no-repeat center 102%;
+  }
+
+  body.family & {
+    background: image-url('foreground--family.svg') no-repeat center 102%;
+  }
+
 }
 
 .page-detail__header {

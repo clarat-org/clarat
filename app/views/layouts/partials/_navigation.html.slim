@@ -26,23 +26,22 @@
                                              labels: :long,
                                              current_section: current_section
 
-      - cache 'category_navigation' do
+      - cache "category_navigation_#{current_section}" do
 
         nav.nav-sections
           h3.nav-sections__headline = t '.category_headline'
 
           ul.nav-sections__list
             - Category.mains.each do |main|
-              li.nav-sections__listitem(
-                class="nav-sections__listitem--#{main.icon}"
-              )
-                = link_to main.name, offers_path( \
-                    'search_form[category]' => main.name,
-                    'search_form[search_location]' => \
-                      search_form.search_location,
-                    'search_form[generated_geolocation]' => \
-                      search_form.generated_geolocation)
-            / TODO: REMOVE and replace with actual category:
-            li.nav-sections__listitem.nav-sections__listitem--c-learn
-              a[href='/angebote?search_form%5Bcategory%5D=Familie&amp;search_form%5Bsearch_location%5D=Berlin%2C%20Deutschland&amp;search_form%5Bgenerated_geolocation%5D=52.52000659999999%2C13.404954']
-                | Lernen 2
+              - if main.in_section? current_section
+                li.nav-sections__listitem(
+                  class="nav-sections__listitem--#{main.icon}"
+                )
+                  = link_to main.name, offers_path( \
+                      'search_form[category]' => main.name,
+                      'search_form[search_location]' => \
+                        search_form.search_location,
+                      'search_form[generated_geolocation]' => \
+                        search_form.generated_geolocation,
+                      'search_form[section]' => \
+                        current_section)

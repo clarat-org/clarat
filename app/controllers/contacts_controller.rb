@@ -1,6 +1,7 @@
 # Contact and report form
 class ContactsController < ApplicationController
   respond_to :html, :js
+  skip_before_filter :verify_authenticity_token, :only => :create
 
   def new
     @contact = Contact.new url: request.referrer

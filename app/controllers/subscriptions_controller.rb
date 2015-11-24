@@ -11,7 +11,7 @@ class SubscriptionsController < ApplicationController
   def create
     @subscription = Subscription.new params.for(Subscription).refine
     if @subscription.save
-      render :create
+      redirect_to root_path, flash: { success: t('.success') }
     else
       render :new
     end

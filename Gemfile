@@ -5,7 +5,7 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
+gem 'clarat_base', github: 'clarat-org/clarat_base', branch: 'fix/563-contact-and-subscribe'
 
 gem 'bundler', '>= 1.8.4'
 

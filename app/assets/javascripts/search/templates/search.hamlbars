@@ -1,7 +1,6 @@
-%main.content-main.content-main--offers-index
-  /! Temporarily disable filters
-  /! > advanced_search
-  /! = render 'offers/index/advanced_search', search_cache: search_cache
+%main.content-main
+  = hb 'with filters' do
+    = hb '> _advanced_search'
 
   .Listing-results
     / Will contain search_results later
@@ -9,7 +8,6 @@
   / prepare ajax spinner
   %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
 
-%aside.aside-standard
-  = hb '> _categories_sidebar'
+= hb '> _categories_sidebar'
 
-  = hb '> _search_map'
+= hb '> _search_map'

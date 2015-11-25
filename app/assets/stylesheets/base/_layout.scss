@@ -36,16 +36,7 @@
     padding: 0;
     width: 100%;
   }
-
-  &.content-main--offers-index {
-    position: relative;
-    width: 100%;
-    float: none;
-    padding-left: 30.5%;
-  }
 }
-
-
 
 .aside-standard {
   @extend %layout-col-29;
@@ -55,9 +46,7 @@
 .content-main,
 .Categories {
   .template--offers-index & {
-    display: block;
-    float: none;
-    width: 100%;
+    float: right;
   }
 }
 

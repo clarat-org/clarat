@@ -43,12 +43,17 @@
   }
 
   .header-main {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 0;
     left: 0;
     z-index: 130;
     background: transparent;
+
+    &.is-fixed {
+      position: fixed;
+      top: 0;
+    }
 
     .template--pages-home & {
       position: static;
@@ -56,6 +61,7 @@
       left: auto;
       z-index: auto;
     }
+    
   }
 
   .Distributor {
@@ -227,7 +233,6 @@
     z-index: 12;
   }
 
-
   .nav-sections {
     margin: 0;
   }
@@ -242,7 +247,8 @@
     line-height: 45px; // closer to optical vertical middle
   }
 
-  span.tt-dropdown-menu {  // specificity, overriding JS
+  span.tt-dropdown-menu {
+    // specificity, overriding JS
     right: 0 !important; // overriding JS
   }
 
@@ -263,7 +269,7 @@
       padding-top: 0;
     }
 
-    &.template--pages-about{
+    &.template--pages-about {
       padding-top: 100px;
     }
 
@@ -495,7 +501,7 @@
   }
 
   .Banner {
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     z-index: 300;

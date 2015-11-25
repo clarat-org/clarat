@@ -76,6 +76,7 @@ about supported directives.
 # = require single_click_button/presenter
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
+# = require sticky_mobile_nav/presenter
 #
 # = require map_modal/presenter
 #

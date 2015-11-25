@@ -11,11 +11,11 @@ class SubscriptionsController < ApplicationController
   def create
     @subscription = Subscription.new params.for(Subscription).refine
     if @subscription.save
-      render :create
-      # redirect_to root_path, flash: { success: t('.success') }
+      # render :create
+      redirect_to root_path, flash: { success: t('.success') }
     else
-      render :new
-      # redirect_to root_path, flash: { error: t('.error') }
+      # render :new
+      redirect_to root_path, flash: { error: t('.error') }
     end
   end
 end

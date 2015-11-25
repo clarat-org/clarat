@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 558f034ded5dce0575278a16c8aa81b18265f212
-  branch: fix/563-contact-and-subscribe
+  revision: 66c0dcf7fda2b31eec70061668dbd035522ee405
   specs:
     clarat_base (0.1.4)
       aasm

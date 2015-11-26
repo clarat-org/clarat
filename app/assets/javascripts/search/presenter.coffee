@@ -59,8 +59,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
-    personalFacetResults = resultSet.results[1]
-    remoteFacetResults = resultSet.results[2]
+    remoteFacetResults = resultSet.results[1]
+    personalFacetResults = resultSet.results[2]
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
@@ -70,8 +70,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     )
 
   onQuerySupportResults: (resultSet) =>
-    personalFacetResults = resultSet.results[0]
-    remoteFacetResults = resultSet.results[1]
+    remoteFacetResults = resultSet.results[0]
+    personalFacetResults = resultSet.results[1]
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )

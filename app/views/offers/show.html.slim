@@ -8,9 +8,6 @@
 
       header.page-detail__header
         h2.page-detail__title= @offer.name
-        /.page-detail__icons
-        /  - @offer.categories.mains.each do |main_tag|
-        /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
 
     / Left side (in desktop)
     .section-wrapper-major
@@ -56,11 +53,12 @@
 
           ul.Listing-organizations__list
             - @offer.organizations.each do |orga|
-              li.Listing-organizations__link = link_to orga.name, organization_path(id: orga)
+              li.Listing-organizations__link
+                = link_to orga.name, organization_path(id: orga)
 
       / When can you contact?
       - if @offer.opening_details?
-        - cache [@offer, 'openings'] do
+        - cache [@offer, 'openings', @offer.openings.pluck(:id).join(',')] do
           = render 'offers/show/opening_section', offer: @offer
 
       / Last updated?

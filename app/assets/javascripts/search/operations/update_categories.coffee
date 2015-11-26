@@ -5,7 +5,7 @@ class Clarat.Search.Operation.UpdateCategories
       .parents('li').addClass 'active'
 
   @updateCounts: (personalFacetSet, remoteFacetSet) ->
-    personalCategoryFacets = personalFacetSet.facets._tags
+    personalCategoryFacets = personalFacetSet?.facets._tags || undefined
     remoteCategoryFacets = remoteFacetSet.facets._tags
 
     for categoryLink in $("#categories li > a")

@@ -91,6 +91,7 @@
 
 #search_form_search_location {
   padding-left: 52px;
+  border-radius: 0;
 }
 
 .main-search__submit {
@@ -104,6 +105,9 @@
 
 #search_form_query {
   @extend %clarat_rounding_start;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
 }
 
 .main-search__submit {

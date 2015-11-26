@@ -9,7 +9,7 @@ class Clarat.ToggleFieldsets.Presenter extends ActiveScript.Presenter
 
   handleClick: (e) =>
 
-    if ($(window).width() < 401)
+    if ($(window).width() < 501)
       $(e.target)
         .toggleClass('is-active')
         .next('.filter-form__fieldset__wrapper').toggleClass('is-visible')

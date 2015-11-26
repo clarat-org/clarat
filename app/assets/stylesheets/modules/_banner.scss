@@ -5,8 +5,8 @@
 // ---------------------------------------------------------------
 
 .Banner {
-  display: none; // REMOVE
   @extend %roboto_bold;
+  display: none; // REMOVE
   min-height: 44px;
   background: #006b81;
   color: $brand_white;

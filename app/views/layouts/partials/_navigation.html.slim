@@ -32,16 +32,15 @@
           h3.nav-sections__headline = t '.category_headline'
 
           ul.nav-sections__list
-            - Category.mains.each do |main|
-              - if main.in_section? current_section
-                li.nav-sections__listitem(
-                  class="nav-sections__listitem--#{main.icon}"
-                )
-                  = link_to main.name, offers_path( \
-                      'search_form[category]' => main.name,
-                      'search_form[search_location]' => \
-                        search_form.search_location,
-                      'search_form[generated_geolocation]' => \
-                        search_form.generated_geolocation,
-                      'search_form[section]' => \
-                        current_section)
+            - Category.mains.in_section(current_section).each do |main|
+              li.nav-sections__listitem(
+                class="nav-sections__listitem--#{main.icon}"
+              )
+                = link_to main.name, offers_path( \
+                    'search_form[category]' => main.name,
+                    'search_form[search_location]' => \
+                      search_form.search_location,
+                    'search_form[generated_geolocation]' => \
+                      search_form.generated_geolocation,
+                    'search_form[section]' => \
+                      current_section)

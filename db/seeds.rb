@@ -10,8 +10,8 @@ Offer.clear_index!
 user = User.create email: 'user@user.com', role: 'researcher'
 admin = User.create email: 'admin@admin.com', role: 'super'
 
-SectionFilter.create name: 'Family', identifier: 'family'
-SectionFilter.create name: 'Refugees', identifier: 'refugees'
+family = SectionFilter.create name: 'Family', identifier: 'family'
+refugees = SectionFilter.create name: 'Refugees', identifier: 'refugees'
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'
 LanguageFilter.create name: 'Türkisch', identifier: 'tur'
@@ -49,25 +49,32 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        longitude: 13.404954,
                                        geoloc: '52.520007,13.404954'
 
-#mains << Category.create(name: 'Notfall', icon: 'e-crisis')
-#mains << Category.create(name: 'Lernen', icon: 'c-learn')
-#mains << Category.create(name: 'Familie', icon: 'a-family')
-#mains << Category.create(name: 'Gesundheit', icon: 'b-health')
-#mains << Category.create(name: 'Gewalt', icon: 'd-violence')
-FactoryGirl.create :category, name: 'Notfall', icon: 'e-crisis'
-FactoryGirl.create :category, name: 'Lernen', icon: 'c-learn'
-FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
-FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
-FactoryGirl.create :category, name: 'Gewalt', icon: 'd-violence'
+fam = FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
+fam.section_filters = [family]
+legal = FactoryGirl.create :category, name: 'Asyl und Recht', icon: 'a-legal'
+legal.section_filters = [refugees]
+health = FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
+health.section_filters = [family, refugees]
+learn = FactoryGirl.create :category, name: 'Lernen', icon: 'c-learn'
+learn.section_filters = [family, refugees]
+misc = FactoryGirl.create :category, name: 'Alltag', icon: 'd-misc'
+misc.section_filters = [family, refugees]
+violence = FactoryGirl.create :category, name: 'Gewalt', icon: 'e-violence'
+violence.section_filters = [family, refugees]
+crisis = FactoryGirl.create :category, name: 'Notfall', icon: 'f-crisis'
+crisis.section_filters = [family, refugees]
 
-mains = Category.mains.all
+refugee_mains = Category.mains.in_section(:refugees).all
+subcategories = []
 
 10.times do
-  FactoryGirl.create :category, parent: mains.sample
+  subcategories.push(
+    FactoryGirl.create :category, parent: refugee_mains.sample
+  )
 end
 
 20.times do
-  FactoryGirl.create :category, parent_id: Category.pluck(:id).sample
+  FactoryGirl.create :category, parent: subcategories.sample
 end
 
 FactoryGirl.create :offer, :approved, approved_by: user,

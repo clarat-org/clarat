@@ -6,8 +6,9 @@
 
 .Banner {
   @extend %roboto_bold;
+  display: none; // REMOVE
   min-height: 44px;
-  background: #007096;
+  background: #006b81;
   color: $brand_white;
   text-align: center;
   line-height: 40px;

@@ -20,7 +20,13 @@ class ApplicationController < ActionController::Base
     response.headers['Expires'] = 'Fri, 01 Jan 1990 00:00:00 GMT'
   end
 
+  before_action :note_current_section
+
   private
+
+  def note_current_section
+    @current_section = params[:section] || 'refugees'
+  end
 
   ### Standard 404 Error ###
 

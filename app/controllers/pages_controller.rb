@@ -24,4 +24,8 @@ class PagesController < ApplicationController
   def not_found
     render status: 404, formats: [:html]
   end
+
+  def section_forward
+    redirect_to '/' + SectionFilter::DEFAULT + request.fullpath
+  end
 end

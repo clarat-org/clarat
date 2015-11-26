@@ -11,4 +11,8 @@ class Category < ActiveRecord::Base
       hash_tree.sort_by { |tree| tree.first.icon || '' }
     end
   end
+
+  def in_section? section
+    section_filters.where(identifier: section).count > 0
+  end
 end

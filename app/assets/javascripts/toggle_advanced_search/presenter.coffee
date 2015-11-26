@@ -4,7 +4,7 @@ Clarat.ToggleAdvancedSearch = {}
 class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
-    '#main-search__advanced-filter':
+    '.main-search__advanced-filter':
       click: 'handleClick'
     document:
       'Clarat.Search::FirstSearchRendered': 'handleSearchRendered'
@@ -36,12 +36,13 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   isSearchFiltered: ->
     formParams = $.query.keys.search_form
-    typeof formParams.age is 'number' or
+    return false unless formParams
+    return typeof formParams.age is 'number' or
       typeof formParams.language is 'string' or
       typeof formParams.target_audience is 'string' or
       typeof formParams.exclusive_gender is 'string' or
-      typeof formParams.encounters is 'string' and
-      formParams.encounters.split(',').length < 5
+      (typeof formParams.encounters is 'string' and
+      formParams.encounters.split(',').length < 5)
 
 
 $(document).on 'ready', ->

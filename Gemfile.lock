@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: d0365415189e6f2a8be617208a4d10422ea84e0c
-  branch: feature/572-hide-address
+  revision: 88583bb5c97b00e3b59574b2f56a7e7843f97257
   specs:
     clarat_base (0.1.4)
       aasm
@@ -232,6 +231,9 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jmespath (1.1.3)
+    jquery-rails (3.1.4)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.3)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
@@ -525,7 +527,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  arcane
+  arcane (= 1.1.1)
   autoprefixer-rails
   awesome_print
   better_errors
@@ -557,6 +559,7 @@ DEPENDENCIES
   hogan_assets
   i18n-js (>= 3.0.0.rc6)
   jbuilder
+  jquery-rails
   kaminari
   kgio
   launchy

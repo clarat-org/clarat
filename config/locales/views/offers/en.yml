@@ -97,10 +97,10 @@ en:
       # /index partials
 
     show:
-      what: "What it is about?"
+      what: "What is it about?"
       next_steps: "What to do next?"
       who: "Where can you get the help?"
-      last_updated: "Last updated at"
+      last_update: "Last update at"
 
       # show partials
       opening_section:

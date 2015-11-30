@@ -9,6 +9,15 @@ feature 'Offer display' do
     page.must_have_content offer.name
   end
 
+  scenario 'Offer gets shown in a different language (English)' do
+    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
+    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+
+    visit offer_en_path offer, section: 'refugees'
+    page.must_have_content 'GET READY FOR CANADA'
+    page.must_have_css '.Automated-translation__attribution'
+  end
+
   scenario 'Offer view has evaluated markdown' do
     offer = FactoryGirl.create :offer, :approved,
                                description: 'A [link](http://www.example.org)',

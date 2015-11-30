@@ -7,7 +7,9 @@
     - cache [@offer, 'page_header'] do
 
       header.page-detail__header
-        h2.page-detail__title= @offer.name
+        h2.page-detail__title
+          == translation_block @offer.translation_automated? do
+            = @offer.name
         /.page-detail__icons
         /  - @offer.categories.mains.each do |main_tag|
         /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
@@ -20,14 +22,16 @@
         section.section-content.section-content--what
           h3.section-content__title = t '.what'
           .section-content__body
-            == @offer.description_html
+            == translation_block @offer.translation_automated? do
+              == @offer.description
 
         / What to do next?
         section.section-content.section-content--nextsteps
           h3.section-content__title
             = t '.next_steps'
           .section-content__body
-            == @offer.next_steps_html
+            == translation_block @offer.translation_automated? do
+              == @offer.next_steps
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer
@@ -63,11 +67,11 @@
         - cache [@offer, 'openings'] do
           = render 'offers/show/opening_section', offer: @offer
 
-      / Last updated?
+      / Last update?
       p
         .offer-updated-at
           i.fa.fa-clock-o
-          => t '.last_updated'
+          => t '.last_update'
           = @offer.updated_at.strftime("%d.%m.%Y")
 
       / Found any mistakes?

@@ -5,3 +5,7 @@ de:
     show:
       cta_report_errors: |
         Hast du einen Fehler entdeckt?
+      google_translate_explanation: |
+        Diese Übersetzung wurde von Google Translate automatisch gemacht.
+        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
+        klingt. Schau dann lieber noch einmal in den deutschen Text.

@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------
+//
+//  automated translation blocks
+//
+// ---------------------------------------------------------------
+
+.Automated-translation {
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 5px,
+    rgba(244,181,40,0.3) 5px,
+    rgba(244,181,40,0.3) 10px
+  );
+}
+
+.Automated-translation__text {
+  padding: 5px 5px 25px 10px;
+}
+
+.Automated-translation__attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255,255,255,0.5);
+}

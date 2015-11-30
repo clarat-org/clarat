@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 3629de676d8f87fbd7140d87d5a856992df99066
+  revision: d0365415189e6f2a8be617208a4d10422ea84e0c
+  branch: feature/572-hide-address
   specs:
     clarat_base (0.1.4)
       aasm
@@ -258,7 +259,7 @@ GEM
     metaclass (0.0.4)
     method_source (0.8.2)
     mime-types (2.99)
-    mini_portile (0.6.2)
+    mini_portile2 (2.0.0)
     minitest (5.8.3)
     minitest-capybara (0.7.2)
       capybara (~> 2.2)
@@ -284,8 +285,8 @@ GEM
     multi_xml (0.5.5)
     netrc (0.10.3)
     newrelic_rpm (3.14.0.305)
-    nokogiri (1.6.6.4)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.7)
+      mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.1)
       nokogiri
     paper_trail (4.0.0)

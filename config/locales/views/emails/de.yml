@@ -9,3 +9,29 @@ de:
       success_html: |
         Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+
+    offers_index:
+      family:
+        heading: |
+          Family-Angebote, die <span id="secure-email-0">%{email}</span>
+          zugeordnet sind
+        no_results: |
+          Es gibt derzeit keine veröffentlichten Family-Angebote für %{email}.
+        toggle_section: "Zugehörige Refugees-Angebote ansehen"
+      refugees:
+        heading: |
+          Refugees-Angebote, die <span id="secure-email-0">%{email}</span>
+          zugeordnet sind
+        no_results: |
+          Es gibt derzeit keine veröffentlichten Refugees-Angebote für %{email}.
+        toggle_section: "Zugehörige Family-Angebote ansehen"
+      shared:
+        explanation: |
+          Hier werden dir alle freigeschalteten clarat-Angebote angezeigt, bei
+          denen deine E-Mail-Adresse als Kontaktadresse eingetragen wurde. Diese
+          Seite wird aktuell gehalten. Du kannst sie also in deinen Favoriten
+          speichern und immer nachschauen, welche deiner Angebote gerade auf
+          clarat zu finden sind. Wenn du immer informiert werden möchtest, wenn
+          neue Angebote von dir eingetragen wurden, dann klick auf den
+          "anmelden"-Link am Ende der Email, die du von uns bekommen hast.
+      obfuscated_email: "deiner E-Mail-Adresse"

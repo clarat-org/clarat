@@ -19,6 +19,13 @@ class EmailsController < ApplicationController
     redirect_to root_path
   end
 
+  # List the offers of a certain email. Here we actually do pretend partial
+  # RESTfulness
+  def offers_index
+    @email = Email.find params[:id]
+    @offers = @email.offers.approved.in_section(params[:section])
+  end
+
   private
 
   def find_and_authorize_with_security_code

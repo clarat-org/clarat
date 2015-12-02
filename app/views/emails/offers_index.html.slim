@@ -1,0 +1,23 @@
+- provide :additional_meta_tags do
+  meta name='robots' content='noindex'
+
+.wrapper-inner
+  main
+    - if @offers.any?
+      h2 == t ".#{@current_section}.heading",
+           email: secure_email_to(@email.address, 0)
+
+      p = t '.shared.explanation'
+
+      ul
+        - @offers.each do |offer|
+          li = link_to offer.name,
+                       offer_path(id: offer.id, section: @current_section)
+    - else
+      h2 = t ".#{@current_section}.no_results", email: @email.address
+
+    hr
+
+    = link_to t(".#{@current_section}.toggle_section"),
+              emails_offers_path(section: inverse_section(@current_section),
+                                 id: @email.id, locale: @locale)

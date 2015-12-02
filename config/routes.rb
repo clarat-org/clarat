@@ -21,6 +21,9 @@ Clarat::Application.routes.draw do
       # Previews
       get 'preview/offers/:id' => 'previews#show_offer'
       get 'preview/organizations/:id' => 'previews#show_organization'
+
+      # Email overviews
+      get 'emails/:id/offers' => 'emails#offers_index', as: 'emails_offers'
     end
 
     # unscoped to scoped forwards

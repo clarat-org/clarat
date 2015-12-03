@@ -65,8 +65,11 @@
   display: inherit;
 }
 
-.Listing-keyword__highlight{
-  color: #F22222
+.Listing-keyword--highlight{
+  background: $brand_white;
+  display: inline-block;
+  color: $brand_orange;
+  padding: 0 5px;
 }
 
 .Listing-results__offer,

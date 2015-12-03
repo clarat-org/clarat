@@ -27,7 +27,7 @@ class Clarat.Search.Query.Base
           page: @page
           hitsPerPage: @PER_PAGE
           attributesToHighlight: 'name,organization_display_name'
-          highlightPreTag: '<span class="Listing-keyword__highlight">'
+          highlightPreTag: '<span class="Listing-keyword--highlight">'
           highlightPostTag: '</span>'
       }
     else

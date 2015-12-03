@@ -347,6 +347,7 @@ GEM
     rails-assets-imagesloaded (3.1.8)
       rails-assets-eventEmitter (~> 4.0)
       rails-assets-eventie (>= 1.0.4, < 2)
+    rails-assets-isInViewport (2.3.0)
     rails-assets-jquery (2.1.4)
     rails-assets-lodash (3.10.1)
     rails-assets-qtip2 (2.2.1)
@@ -583,6 +584,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-lodash!
   rails-assets-qtip2!

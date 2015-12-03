@@ -14,7 +14,7 @@ about supported directives.
 #
 # = require lodash
 # = require jquery
-# ? require jquery_ujs
+# = require jquery_ujs
 # = require qtip2
 # = require isInViewport
 # = require i18n

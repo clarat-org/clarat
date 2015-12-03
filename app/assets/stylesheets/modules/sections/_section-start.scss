@@ -15,8 +15,15 @@
     bottom: 0;
     width: 100%;
     height: 22px;
-    background: $brand_green;
     content: '';
+
+    body.refugees & {
+      background: $brand_core_refugees;
+    }
+
+    body.family & {
+      background: $brand_core_family;
+    }
   }
 }
 
@@ -27,11 +34,18 @@
   margin-bottom: 0;
   padding: 0 30px;
   height: 45px;
-  background: $brand_green;
   color: $brand_white;
   font-weight: 400;
   font-size: 24px;
   line-height: 45px;
+
+  body.refugees & {
+    background-color: $brand_core_refugees;
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+  }
 }
 
 .section-start__body {
@@ -47,5 +61,4 @@
 
 .section-start--why {
   @extend %layout-col-last;
-
 }

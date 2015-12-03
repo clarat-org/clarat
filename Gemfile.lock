@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 66c0dcf7fda2b31eec70061668dbd035522ee405
+  revision: 88583bb5c97b00e3b59574b2f56a7e7843f97257
   specs:
     clarat_base (0.1.4)
       aasm
@@ -231,6 +231,9 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jmespath (1.1.3)
+    jquery-rails (3.1.4)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.3)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
@@ -258,7 +261,7 @@ GEM
     metaclass (0.0.4)
     method_source (0.8.2)
     mime-types (2.99)
-    mini_portile (0.6.2)
+    mini_portile2 (2.0.0)
     minitest (5.8.3)
     minitest-capybara (0.7.2)
       capybara (~> 2.2)
@@ -284,8 +287,8 @@ GEM
     multi_xml (0.5.5)
     netrc (0.10.3)
     newrelic_rpm (3.14.0.305)
-    nokogiri (1.6.6.4)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.7)
+      mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.1)
       nokogiri
     paper_trail (4.0.0)
@@ -525,7 +528,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  arcane
+  arcane (= 1.1.1)
   autoprefixer-rails
   awesome_print
   better_errors
@@ -557,6 +560,7 @@ DEPENDENCIES
   hogan_assets
   i18n-js (>= 3.0.0.rc6)
   jbuilder
+  jquery-rails
   kaminari
   kgio
   launchy

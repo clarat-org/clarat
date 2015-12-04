@@ -100,7 +100,7 @@ de:
     show:
       what: "Worum geht's?"
       next_steps: "Was musst du tun?"
-      who: "Wo gibt’s die Hilfe?"
+      who: "Wo findest du die Organisation?"
       last_updated: "Eintrag zuletzt bearbeitet am"
 
       # show partials

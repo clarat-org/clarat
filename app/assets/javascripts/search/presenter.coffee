@@ -180,6 +180,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     else
       @model.removeEncounter val
 
+    # explicitly reset the page variable
+    @model.resetPageVariable()
     @model.save encounters: @model.encounters
     @sendMainSearch()
     @sendQuerySupportSearch()
@@ -195,6 +197,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       that.model.addEncounter $(@).val()
       $(@).attr 'disabled', true
 
+    # explicitly reset the page variable
+    @model.resetPageVariable()
     @model.save encounters: @model.encounters, contact_type: 'personal'
     Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
     @sendMainSearch()

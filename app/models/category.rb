@@ -12,17 +12,9 @@ class Category < ActiveRecord::Base
     end
   end
 
-  # TODO: BEEEEEH! Wiedervorlage spätestens 1. Februar
+  # TODO: BEEEEEH! Wiedervorlage spaetestens 1. Februar
   # auch im ApplicationController!
-
-  def self.current_section= section
-    @current_section = section
-  end
-
-  def self.current_section
-    @current_section
-  end
-
+  cattr_accessor :current_section
   def name
     original_name = super
     if original_name == 'Sorgen im Alltag' &&

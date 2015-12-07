@@ -1,8 +1,8 @@
 .filter-form#advanced_search
   %fieldset.filter-form__fieldset#age
-    %legend.filter-form__fieldset__headline
-      Alter des Kindes?
 
+    %legend.filter-form__fieldset__headline#age
+      Alter des Kindes?
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
       %select.JS-AgeSelector.filter-form__select{name: 'age'}
         %option{value: 'any', id: 'age_any'} egal

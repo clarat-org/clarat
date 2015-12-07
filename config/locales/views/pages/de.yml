@@ -6,24 +6,28 @@ de:
       how:
         heading: "Wie funktioniert clarat?"
         text: |
-          Gib ein, was dich bedrückt. Oder wähle aus unseren Themen aus. Schon
-          siehst du alle Hilfsangebote in deiner Nähe. Wir sagen dir auch, wie
-          du die Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben
-          sollst. Oder einfach vorbeigehen kannst.
+          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
+          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
+          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
+          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
+          Oder einfach vorbeigehen kannst.
       whom:
         heading: "Für wen ist clarat?"
         text: |
-          clarat ist für alle da. Für Kinder, Jugendliche und Familien. Hier
-          findest du Unterstützung bei Fragen und bei Problemen. Für dich, deine
-           Familie und deine Freunde. Oder auch für andere Menschen, die du
-           kennst und die Hilfe brauchen.
+          clarat ist für alle da. clarat family für Kinder, Jugendliche und
+          Familien. clarat refugees für Flüchtlinge. Hier findest du
+          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
+          und deine Freunde. Oder auch für andere Menschen, die du kennst und
+          die Hilfe brauchen.
       why:
         heading: "Warum gibt es clarat?"
         text: |
           Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen. Sie
-          sind aber oft schwer zu finden. Wir helfen dir dabei. Wir zeigen dir,
-          welche Hilfe es in deiner Nähe gibt.
+          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
+          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
+          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
+          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
+          refugees.
 
     not_found:
       title: "404"
@@ -1007,14 +1011,16 @@ de:
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren Projekte der Kinder- und Jugendförderung. Dabei fiel
-        uns eines immer wieder auf: Es ist schwer herauszufinden, welche
-        Unterstützungsangebote es überhaupt gibt. Und dann wurde uns etwas klar:
-        Wenn es für uns als „Experten“ schon so schwer ist, einen Überblick zu
-        bekommen, wie schwer muss es dann für Kinder, Jugendliche und Familien
-        sein, die wirklich Hilfe brauchen? Die Antwort ist: Sehr schwer! Und
-        damit war die Idee zu clarat geboren: Einfach Hilfe finden. Für alle.
-        Überall.
+        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
+        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
+        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
+        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
+        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
+        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
+        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
+        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
+        Einfach Hilfe finden. Für Familien auf clarat family. Und für
+        Flüchtlinge auf clarat refugees.
       amina: |
         Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
         sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie

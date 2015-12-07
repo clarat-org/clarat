@@ -26,6 +26,7 @@ class ApplicationController < ActionController::Base
 
   def note_current_section
     @current_section = params[:section] || 'refugees'
+    Category.current_section = @current_section
   end
 
   ### Standard 404 Error ###

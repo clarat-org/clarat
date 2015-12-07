@@ -7,6 +7,7 @@ cookieWarning = ->
 
     $('.JS-Cookie-warning--close').on 'click', ->
       $('.JS-Cookie-warning').remove()
+      $('body').removeClass 'hasCookieWarning'
       createCookie 'userAcceptsCookies', 'true', 89 # valid for 89 days
 
 $(document).ready cookieWarning

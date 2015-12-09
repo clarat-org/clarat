@@ -32,34 +32,35 @@
 
       - if location
         - cache [location, 'organization_show_text', I18n.locale] do
-
-          section.section-content.section-content--where
-            h3.section-content__title = t '.where'
-            .section-content__body
-              /! http://microformats.org/wiki/adr start
-              .adr
-                p
-                  - if location.name?
-                    span.org= location.name
+          - if location.visible || website
+            section.section-content.section-content--where
+              h3.section-content__title = t '.where'
+              .section-content__body
+                /! http://microformats.org/wiki/adr start
+                .adr
+                  p
+                    - if location.visible
+                      - if location.name?
+                        span.org= location.name
+                        br
+                      - if location.addition?
+                        span.extended-address= location.addition
+                        br
+                      span.street-address= location.street
+                      br
+                      span.postal-code=> location.zip
+                      span.locality= location.city
+                  - if website
                     br
-                  - if location.addition?
-                    span.extended-address= location.addition
-                    br
-                  span.street-address= location.street
-                  br
-                  span.postal-code=> location.zip
-                  span.locality= location.city
-                - if website
-                  br
-
                     = link_to website.shorten_url + website.pdf_appendix,
                       website.url, target: '_blank'
 
-              /! http://microformats.org/wiki/adr end
-              br
-              #map-container
-                #map-data data={ markers: @markers.to_json }
-                #map-canvas
+                /! http://microformats.org/wiki/adr end
+                - if location.visible
+                  br
+                  #map-container
+                    #map-data data={ markers: @markers.to_json }
+                    #map-canvas
 
 
       = link_to new_contact_path,

@@ -39,6 +39,10 @@
 
 .filter-form__fieldset__wrapper--age {
   margin-bottom: 15px;
+
+  body.refugees & {
+    display: none;
+  }
 }
 
 .filter-form__headline {
@@ -95,6 +99,10 @@
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2;
+
+    body.refugees & {
+      display: none;
+    }
   }
 
   &#exclusive_gender {
@@ -116,6 +124,12 @@
   color: $brand_brown;
   font-weight: normal;
   font-size: 14px;
+
+  &#age {
+    body.refugees & {
+      display: none;
+    }
+  }
 }
 
 .filter-form__checkboxes-wrapper {
@@ -183,7 +197,10 @@
 
 .filter-form__radio,
 .filter-form__label {
-  cursor: pointer;
+
+  label {
+    cursor: pointer;
+  }
 }
 
 .filter-form__switch {
@@ -210,4 +227,3 @@
     background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
   }
 }
-

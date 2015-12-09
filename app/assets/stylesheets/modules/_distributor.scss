@@ -7,7 +7,7 @@
 .Distributor {
   //@extend %clarat_rounding_start;
   float: right;
-  margin-top: 52px;
+  margin-top: 82px;
   width: 68.8%;
   height: 100px;
   background: $brand_yellow;
@@ -36,6 +36,15 @@
   height: 100%;
   width: 110px;
   display: none;
+
+  //body.family & {
+  //  background-color: rgba($brand_core_family, .6);
+  //}
+  //
+  //body.refugees & {
+  //  background-color: rgba($brand_core_refugees, .6);
+  //}
+
 
   .template--offers-index & {
     display: table;

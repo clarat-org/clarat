@@ -1,12 +1,12 @@
-- cache 'start_header' do
+- cache ['start_header', current_section] do
 
   header.header-main.header-main--wide
     .header-main__foreground.wrapper-inner
       h1.Logo.Logo--start = link_to 'clarat.org', '/'
 
       .Claim
-        h2.Claim__firstrow = t '.claim.first_row'
-        h3.Claim__secondrow = t '.claim.second_row'
+        h2.Claim__firstrow = t '.claim.main'
+        h3.Claim__secondrow = t ".claim.#{current_section}"
 
       nav.nav-welt.nav-welt--start
         ul.nav-welt__list
@@ -26,13 +26,13 @@
                                              labels: :long,
                                              current_section: current_section
 
-      - cache 'category_navigation' do
+      - cache "category_navigation_#{current_section}" do
 
         nav.nav-sections
           h3.nav-sections__headline = t '.category_headline'
 
           ul.nav-sections__list
-            - Category.mains.each do |main|
+            - Category.mains.in_section(current_section).each do |main|
               li.nav-sections__listitem(
                 class="nav-sections__listitem--#{main.icon}"
               )
@@ -41,8 +41,6 @@
                     'search_form[search_location]' => \
                       search_form.search_location,
                     'search_form[generated_geolocation]' => \
-                      search_form.generated_geolocation)
-            / TODO: REMOVE and replace with actual category:
-            li.nav-sections__listitem.nav-sections__listitem--c-learn
-              a[href='/angebote?search_form%5Bcategory%5D=Familie&amp;search_form%5Bsearch_location%5D=Berlin%2C%20Deutschland&amp;search_form%5Bgenerated_geolocation%5D=52.52000659999999%2C13.404954']
-                | Lernen 2
+                      search_form.generated_geolocation,
+                    'search_form[section]' => \
+                      current_section)

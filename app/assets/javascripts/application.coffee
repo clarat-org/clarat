@@ -14,7 +14,7 @@ about supported directives.
 #
 # = require lodash
 # = require jquery
-# ? require jquery_ujs
+# = require jquery_ujs
 # = require qtip2
 # = require i18n
 # = require i18n/translations
@@ -76,6 +76,7 @@ about supported directives.
 # = require single_click_button/presenter
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
+# = require sticky_mobile_nav/presenter
 #
 # = require map_modal/presenter
 #

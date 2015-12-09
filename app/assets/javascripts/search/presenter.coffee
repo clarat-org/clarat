@@ -59,8 +59,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
     nearbyResults = resultSet.results[0]
-    personalFacetResults = resultSet.results[1]
-    remoteFacetResults = resultSet.results[2]
+    remoteFacetResults = resultSet.results[1]
+    personalFacetResults = resultSet.results[2]
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
@@ -70,8 +70,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     )
 
   onQuerySupportResults: (resultSet) =>
-    personalFacetResults = resultSet.results[0]
-    remoteFacetResults = resultSet.results[1]
+    remoteFacetResults = resultSet.results[0]
+    personalFacetResults = resultSet.results[1]
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
@@ -180,6 +180,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     else
       @model.removeEncounter val
 
+    # explicitly reset the page variable
+    @model.resetPageVariable()
     @model.save encounters: @model.encounters
     @sendMainSearch()
     @sendQuerySupportSearch()
@@ -195,6 +197,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       that.model.addEncounter $(@).val()
       $(@).attr 'disabled', true
 
+    # explicitly reset the page variable
+    @model.resetPageVariable()
     @model.save encounters: @model.encounters, contact_type: 'personal'
     Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
     @sendMainSearch()
@@ -233,4 +237,5 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>
     console.log error
+    console.trace()
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')

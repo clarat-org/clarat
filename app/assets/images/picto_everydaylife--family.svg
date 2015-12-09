@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16618) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval + Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Clarat-Icon-Alltag-pink" sketch:type="MSLayerGroup" transform="translate(-69.000000, -74.000000)">
+            <g id="Oval-+-Group" transform="translate(71.000000, 76.000000)" sketch:type="MSShapeGroup">
+                <ellipse id="Oval" stroke="#F4B528" stroke-width="3" fill="#FFFFFF" cx="43.4651316" cy="43.5001713" rx="43.3824047" ry="43.4678031"></ellipse>
+                <g id="Group" transform="translate(11.793713, 20.893701)" fill="#AF1D3F">
+                    <path d="M31.6714185,0.046753937 C30.2554892,0.046753937 29.1075678,1.19693504 29.1075678,2.61565157 L29.1075678,55.1884843 L34.2352692,55.1884843 L34.2352692,2.61565157 C34.2352692,1.19693504 33.0873477,0.046753937 31.6714185,0.046753937 L31.6714185,0.046753937 Z" id="Shape"></path>
+                    <path d="M58.0146424,3.45842126 L36.0554322,3.45842126 L36.0554322,13.7350394 L58.0146424,13.7350394 L63.1529411,8.59690157 L58.0146424,3.45842126 Z" id="Shape"></path>
+                    <path d="M27.1436582,9.48419882 L5.18410609,9.48419882 L0.0461493124,14.6226791 L5.18410609,19.7608169 L27.1436582,19.7608169 L27.1436582,9.48419882 Z" id="Shape"></path>
+                    <path d="M12.7837014,27.0412441 L17.922,32.1797244 L27.2670648,32.1797244 L27.2670648,21.9034488 L17.922,21.9034488 L12.7837014,27.0412441 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

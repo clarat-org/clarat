@@ -4,7 +4,7 @@ Clarat.ToggleAdvancedSearch = {}
 class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
-    '#main-search__advanced-filter':
+    '.main-search__advanced-filter':
       click: 'handleClick'
     document:
       'Clarat.Search::FirstSearchRendered': 'handleSearchRendered'

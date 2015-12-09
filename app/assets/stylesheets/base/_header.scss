@@ -7,7 +7,7 @@
 .header-main {
   position: relative;
   margin-bottom: 15px;
-  height: 152px;
+  height: 182px;
   background: $brand_beige;
 
   // Visual horizontal enlargement of non startpage distributor box
@@ -59,6 +59,14 @@
   height: inherit;
   background: image-url('foreground.svg') no-repeat center 102%;
   background-size: contain;
+
+  body.refugees & {
+    background: image-url('foreground--refugees.svg') no-repeat center 102%;
+  }
+
+  body.family & {
+    background: image-url('foreground--family.svg') no-repeat center 102%;
+  }
 
 }
 

@@ -53,9 +53,9 @@ en:
         one: "One local offer"
         other: "%{count} local offers"
       remote_offers:
-        zero: "No telephone counseling and online offers"
-        one: "One telephone counseling or one online offer"
-        other: "%{count} telephone counseling and online offers"
+        zero: "No remote offers"
+        one: "One remote offer"
+        other: "%{count} remote offers"
 
     categories_sidebar:
       all_categories: "All categories"

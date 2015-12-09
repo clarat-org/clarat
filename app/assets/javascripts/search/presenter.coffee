@@ -237,4 +237,5 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Error view, rendered in case of any sendMainSearch/onMainResults exceptions.
   failure: (error) =>
     console.log error
+    console.trace()
     @render '#search-wrapper', 'error_ajax', I18n.t('js.ajax_error')

@@ -6,7 +6,11 @@
 
 .Banner {
   @extend %roboto_bold;
+  @extend %Banner-style;
   display: none; // REMOVE
+}
+
+%Banner-style {
   min-height: 44px;
   background: #006b81;
   color: $brand_white;

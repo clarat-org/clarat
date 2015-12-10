@@ -5,7 +5,7 @@
   main
     - if @offers.any?
       h2 == t ".#{@current_section}.heading",
-           email: secure_email_to(@email.address, 0)
+              email: secure_email_to(@email.address, 0)
 
       p = t '.shared.explanation'
 
@@ -14,7 +14,8 @@
           li = link_to offer.name,
                        offer_path(id: offer.id, section: @current_section)
     - else
-      h2 = t ".#{@current_section}.no_results", email: @email.address
+      h2 == t ".#{@current_section}.no_results", 
+              email: secure_email_to(@email.address, 0)
 
     hr
 

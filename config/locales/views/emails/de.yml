@@ -16,14 +16,16 @@ de:
           Family-Angebote, die <span id="secure-email-0">%{email}</span>
           zugeordnet sind
         no_results: |
-          Es gibt derzeit keine veröffentlichten Family-Angebote für %{email}.
+          Es gibt derzeit keine veröffentlichten Family-Angebote, die
+          <span id="secure-email-0">%{email}</span> zugeordnet sind.
         toggle_section: "Zugehörige Refugees-Angebote ansehen"
       refugees:
         heading: |
           Refugees-Angebote, die <span id="secure-email-0">%{email}</span>
           zugeordnet sind
         no_results: |
-          Es gibt derzeit keine veröffentlichten Refugees-Angebote für %{email}.
+          Es gibt derzeit keine veröffentlichten Refugees-Angebote, die
+          <span id="secure-email-0">%{email}</span> zugeordnet sind.
         toggle_section: "Zugehörige Family-Angebote ansehen"
       shared:
         explanation: |

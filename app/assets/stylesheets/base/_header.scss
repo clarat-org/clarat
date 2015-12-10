@@ -55,7 +55,6 @@
 
 .header-main__foreground {
   @extend %clearfix;
-  margin-top: -4px;
   height: inherit;
   background: image-url('foreground.svg') no-repeat center 102%;
   background-size: contain;

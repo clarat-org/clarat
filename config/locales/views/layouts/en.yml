@@ -7,6 +7,16 @@ en:
           refugees: "soon with offers for refugees"
           # TODO: Delete if beta banner changes permanently
           link: "Find out more"
+      nav_lang:
+        title: "Automated translations!"
+        languages:
+          de: "Deutsch"
+          en: "English"
+          ar: "عربي"
+          fr: "Français"
+          ru: "НА РУССКОМ"
+          tr: "Türkçe"
+          pl: "Polszczyzna"
       modal:
         beta_modal:
           text: |

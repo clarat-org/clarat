@@ -18,6 +18,7 @@ html class='no-js' lang=I18n.locale
     .page-wrap
       - cache 'banner' do
         = render '/layouts/partials/banner'
+      = render '/layouts/partials/nav_lang'
       #Flash-messages
         - flash.each do |message|
           - unless message[0] == 'timedout'

@@ -1,0 +1,91 @@
+.nav-lang {
+  @extend %clearfix;
+  background-color: $brand_blue;
+  color: $brand_white;
+  font-size: 15px;
+  min-height: 44px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 9px;
+  }
+}
+
+.nav-lang__title {
+  @extend %roboto_bold;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 44px;
+  min-height: 44px;
+  margin: 0;
+  float: left;
+  max-width: 50%;
+  background: image-url('welcome-language.svg') no-repeat left 0;
+  background-size: auto 60px;
+  padding-left: 60px;
+
+  body.en & {
+    background: image-url('ico_triangle.svg') no-repeat left 5px;
+    background-size: 35px 35px;
+    padding-left: 42px;
+  }
+}
+
+.nav-lang__container {
+  padding-right: 160px;
+}
+
+.nav-lang__google {
+  top: 11px;
+  position: absolute;
+  right: 0;
+}
+
+button.nav-lang__button {
+  background: image-url('ico_weltkugel.svg') no-repeat left center;
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 8px 0;
+  cursor: default;
+
+  body.family &,
+  body.refugees & {
+    background-color: transparent;
+  }
+}
+
+.nav-lang__languages {
+  float: right;
+}
+
+.nav-lang__list {
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style: none;
+  line-height: 44px;
+
+  li {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+}
+
+.nav-lang__list--vertical {
+  position: absolute;
+  top: 44px;
+  z-index: 400;
+  background: $brand_blue;
+  padding-left: 0;
+
+  li {
+    float: none;
+  }
+}
+
+.nav-lang__listitem--active {
+  @extend %roboto_black;
+}

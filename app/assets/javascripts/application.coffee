@@ -16,6 +16,7 @@ about supported directives.
 # = require jquery
 # = require jquery_ujs
 # = require qtip2
+# = require isInViewport
 # = require i18n
 # = require i18n/translations
 # = require algoliasearch
@@ -72,6 +73,8 @@ about supported directives.
 # = require location/operations/request_geolocation_for_string
 # = require location/operations/turn_input_into_my_location_display
 # = require location/operations/save_to_cookie
+#
+# = require sticky_sidebar/presenter
 #
 # = require single_click_button/presenter
 # = require toggle_advanced_search/presenter

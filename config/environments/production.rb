@@ -69,7 +69,7 @@ Clarat::Application.configure do
     entitystore: client
   }
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = true # was false, changed due to heroku tutorial
+  config.serve_static_files = true # was false, changed due to heroku tutorial
   config.static_cache_control = 'public, max-age=2592000'
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -89,6 +89,9 @@ Clarat::Application.configure do
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
+
+  # Raise errors in after_rollback/after_commit callbacks
+  config.active_record.raise_in_transactional_callbacks = true
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false

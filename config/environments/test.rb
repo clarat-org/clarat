@@ -13,7 +13,7 @@ Clarat::Application.configure do
   config.eager_load = true
 
   # Configure static asset server for tests with Cache-Control for performance.
-  config.serve_static_assets  = true
+  config.serve_static_files  = true
   config.static_cache_control = 'public, max-age=3600'
 
   # Show full error reports and disable caching.
@@ -35,4 +35,10 @@ Clarat::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # Raise errors in after_rollback/after_commit callbacks
+  config.active_record.raise_in_transactional_callbacks = true
+
+  # Test case ordering
+  config.active_support.test_order = :random
 end

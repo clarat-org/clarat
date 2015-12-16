@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4689d471936046353cabaf723968b6128ca4fc69
+  revision: d483bfe0a85f2787497d098240b1b90ebe0e2ffe
+  branch: feature/537-orga-website-validation
   specs:
     clarat_base (0.1.4)
       aasm

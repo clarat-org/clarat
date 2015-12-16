@@ -11,7 +11,6 @@ FactoryGirl.define do
     charitable { FFaker::Boolean.maybe }
 
     # optional
-    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     umbrella do
       maybe(

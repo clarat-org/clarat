@@ -15,9 +15,6 @@ FactoryGirl.define do
     area { Area.first unless encounter == 'personal' }
     approved_at nil
 
-    # optional fields
-    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..799] }
-
     # associations
 
     transient do

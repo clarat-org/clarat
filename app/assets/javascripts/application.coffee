@@ -77,6 +77,7 @@ about supported directives.
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
 # = require sticky_mobile_nav/presenter
+# = require nav_lang_bar/presenter
 #
 # = require map_modal/presenter
 #

@@ -11,7 +11,7 @@ class Clarat.StickyMobileNav.Presenter extends ActiveScript.Presenter
     wrap = $(window)
     smartphone = ($(window).width() < 501)
     $homeTemplate = $("body.template--pages-home").length
-    bannerAndNavHeight = $('.Banner').outerHeight() + $('.nav-welt--notstart').outerHeight() # + 20 if
+    bannerAndNavHeight = $('.nav-lang').outerHeight() + $('.nav-welt--notstart').outerHeight()
     distributor = $('.Distributor__search-form')
 
     if $homeTemplate

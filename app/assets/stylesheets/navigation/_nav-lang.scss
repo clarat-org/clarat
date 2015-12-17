@@ -23,23 +23,29 @@
   max-width: 50%;
   background: image-url('welcome-language.svg') no-repeat left 0;
   background-size: auto 60px;
-  padding-left: 60px;
+  padding-left: 50px;
 
   body.en & {
     background: image-url('ico_triangle.svg') no-repeat left 5px;
-    background-size: 35px 35px;
-    padding-left: 42px;
+    background-size: 32px 32px;
+    padding-left: 36px;
   }
 }
 
 .nav-lang__container {
-  padding-right: 160px;
+  padding-right: 85px;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
 }
 
-.nav-lang__google {
-  top: 11px;
+a.nav-lang__google {
   position: absolute;
-  right: 0;
+  top: 7px;
+  right: 10px;
+  width: 60px;
+  height: auto;
+  margin: 0;
 }
 
 button.nav-lang__button {
@@ -75,14 +81,17 @@ button.nav-lang__button {
 }
 
 .nav-lang__list--vertical {
+  display: block !important; // override JS
   position: absolute;
   top: 44px;
   z-index: 400;
   background: $brand_blue;
-  padding-left: 0;
+  padding: 4px 0 10px;
 
   li {
     float: none;
+    padding: 0 11px;
+    line-height: 30px;
   }
 }
 

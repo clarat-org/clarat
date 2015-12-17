@@ -1,5 +1,5 @@
 nav.nav-lang
-  .nav-lang__container.wrapper-inner
+  .nav-lang__container
     h1.nav-lang__title = t '.title'
 
     .nav-lang__languages
@@ -10,4 +10,5 @@ nav.nav-lang
           - active = I18n.locale == locale ? 'nav-lang__listitem--active' : ''
           li = link_to t(".languages.#{locale}"), {locale: locale.to_s}, class: active
 
-      img[src="/assets/banner--translated-by-google.jpg" alt="Translated by Google" class="nav-lang__google"]
+      a[href="http://translate.google.com" target="_blank" class="nav-lang__google"]
+        img[src="/assets/banner--translated-by-google.svg" alt="Translated by Google"]

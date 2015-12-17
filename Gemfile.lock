@@ -1,17 +1,20 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4689d471936046353cabaf723968b6128ca4fc69
+  revision: f7de3d5fa5d1072fb4af8a4ca4da088e227fca74
+  branch: feature/554-translations
   specs:
     clarat_base (0.1.4)
       aasm
       algoliasearch-rails
       bundler (>= 1.8.4)
       closure_tree
+      easy_translate
       enumerize
       friendly_id (>= 5.0)
       geocoder
       paper_trail
       rails (>= 4.1.12)
+      rails-i18n
       rails-observers
       redcarpet
       sanitize
@@ -163,6 +166,10 @@ GEM
     dotenv-rails (2.0.2)
       dotenv (= 2.0.2)
       railties (~> 4.0)
+    easy_translate (0.5.0)
+      json
+      thread
+      thread_safe
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
@@ -288,7 +295,7 @@ GEM
     multi_xml (0.5.5)
     netrc (0.11.0)
     newrelic_rpm (3.14.1.311)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.6)
       nokogiri
@@ -495,6 +502,7 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
     thor (0.19.1)
+    thread (0.2.2)
     thread_safe (0.3.5)
     tilt (1.4.1)
     timecop (0.8.0)

@@ -8,7 +8,7 @@ de:
           # TODO: Delete if beta banner changes permanently
           link: "Hier erfährst du mehr"
       nav_lang:
-        title: "Willkommen, wähle deine Sprache"
+        title: "Wähle deine Sprache"
         languages:
           de: "Deutsch"
           en: "English"

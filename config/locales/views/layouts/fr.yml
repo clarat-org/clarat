@@ -1,5 +1,5 @@
 # TODO
-de:
+fr:
   layouts:
     partials:
       banner:
@@ -9,7 +9,7 @@ de:
           # TODO: Delete if beta banner changes permanently
           link: "Hier erfährst du mehr"
       nav_lang:
-        title: "Willkommen, wähle deine Sprache"
+        title: "(frz: Automatische Übersetzung)"
         languages:
           de: "Deutsch"
           en: "English"

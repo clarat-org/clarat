@@ -1,26 +1,24 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 69d998da3fb864a4b8702492249b13e8f5d7c0e0
-  branch: feature/554-translations
+  revision: 4689d471936046353cabaf723968b6128ca4fc69
   specs:
     clarat_base (0.1.4)
       aasm
       algoliasearch-rails
       bundler (>= 1.8.4)
       closure_tree
-      easy_translate
       enumerize
       friendly_id (>= 5.0)
       geocoder
       paper_trail
-      rails (~> 4.1.12)
-      rails-i18n
+      rails (>= 4.1.12)
       rails-observers
       redcarpet
       sanitize
       sidekiq (~> 3.4.2)
       sidetiq
       sinatra (>= 1.3.0)
+      web-console (~> 2.0)
 
 GIT
   remote: git://github.com/efqdalton/dynamic_sitemaps.git
@@ -61,7 +59,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
     algoliasearch (1.6.1)
       httpclient (~> 2.4)
       json (>= 1.5.1)
@@ -79,12 +77,12 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
-    aws-sdk (2.2.3)
-      aws-sdk-resources (= 2.2.3)
-    aws-sdk-core (2.2.3)
+    aws-sdk (2.2.6)
+      aws-sdk-resources (= 2.2.6)
+    aws-sdk-core (2.2.6)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.3)
-      aws-sdk-core (= 2.2.3)
+    aws-sdk-resources (2.2.6)
+      aws-sdk-core (= 2.2.6)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -98,15 +96,15 @@ GEM
     bootstrap-sass (3.3.5)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
-    brakeman (3.1.2)
+    brakeman (3.1.3)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
       haml (>= 3.0, < 5.0)
-      highline (~> 1.6)
+      highline (>= 1.6.20, < 2.0)
       multi_json (~> 1.2)
       ruby2ruby (>= 2.1.1, < 2.3.0)
       ruby_parser (~> 3.7.0)
-      safe_yaml
+      safe_yaml (>= 1.0)
       sass (~> 3.0)
       slim (>= 1.3.6, < 4.0)
       terminal-table (~> 1.4)
@@ -153,7 +151,7 @@ GEM
       safe_yaml (~> 1.0.0)
     crass (1.0.2)
     daemons (1.2.3)
-    dalli (2.7.4)
+    dalli (2.7.5)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
     descendants_tracker (0.0.4)
@@ -165,10 +163,6 @@ GEM
     dotenv-rails (2.0.2)
       dotenv (= 2.0.2)
       railties (~> 4.0)
-    easy_translate (0.5.0)
-      json
-      thread
-      thread_safe
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
@@ -194,7 +188,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    geocoder (1.2.12)
+    geocoder (1.2.13)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -293,18 +287,18 @@ GEM
     multi_json (1.11.2)
     multi_xml (0.5.5)
     netrc (0.11.0)
-    newrelic_rpm (3.14.0.305)
+    newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.1)
+    nokogumbo (1.4.6)
       nokogiri
-    paper_trail (4.0.0)
+    paper_trail (4.0.1)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
       request_store (~> 1.1)
     parser (2.2.3.0)
       ast (>= 1.1, < 3.0)
-    pg (0.18.3)
+    pg (0.18.4)
     powerpack (0.1.1)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -351,12 +345,13 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.14)
       sprockets-rails (~> 2.0)
-    rails-assets-algoliasearch (3.9.3)
+    rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
     rails-assets-imagesloaded (3.2.0)
       rails-assets-eventEmitter (>= 4.2, < 5.0)
       rails-assets-eventie (~> 1.0.4)
+    rails-assets-isInViewport (2.3.0)
     rails-assets-jquery (2.1.4)
     rails-assets-lodash (3.10.1)
     rails-assets-qtip2 (2.2.1)
@@ -407,7 +402,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    route_translator (4.1.0)
+    route_translator (4.2.1)
       actionpack (>= 3.2, < 5.0)
       activesupport (>= 3.2, < 5.0)
     rubocop (0.35.1)
@@ -425,10 +420,10 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.0.0)
+    sanitize (4.0.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
-      nokogumbo (= 1.4.1)
+      nokogumbo (~> 1.4.1)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -477,7 +472,7 @@ GEM
       railties (>= 3.1, < 5.0)
       slim (~> 3.0)
     slop (3.6.0)
-    spring (1.5.0)
+    spring (1.6.0)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -500,7 +495,6 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
     thor (0.19.1)
-    thread (0.2.2)
     thread_safe (0.3.5)
     tilt (1.4.1)
     timecop (0.8.0)
@@ -521,6 +515,11 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
+    web-console (2.2.1)
+      activemodel (>= 4.0)
+      binding_of_caller (>= 0.7.2)
+      railties (>= 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
     webmock (1.22.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -596,6 +595,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-lodash!
   rails-assets-qtip2!

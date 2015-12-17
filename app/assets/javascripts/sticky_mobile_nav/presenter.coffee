@@ -17,8 +17,6 @@ class Clarat.StickyMobileNav.Presenter extends ActiveScript.Presenter
     if $homeTemplate
       return
 
-    console.log bannerAndNavHeight
-
     if smartphone
       wrap.on "scroll", ->
 

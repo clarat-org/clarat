@@ -1,0 +1,7 @@
+%h3.Map-infowindow__headline
+  %a{href: '{{ url }}'}
+    = hb 'title'
+%b
+  = hb 'organization_display_name'
+%br
+= hb 'address'

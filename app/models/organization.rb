@@ -2,7 +2,7 @@
 require ClaratBase::Engine.root.join('app', 'models', 'organization')
 
 class Organization < ActiveRecord::Base
-  # Methods
+  # Frontend-only Methods
 
   def canonical_section
     section_filters.pluck(:identifier).first || SectionFilter::DEFAULT
@@ -10,5 +10,13 @@ class Organization < ActiveRecord::Base
 
   def in_section? section
     section_filters.where(identifier: section).count > 0
+  end
+
+  # structured information to build a gmap marker for this orga
+  def gmaps_info
+    {
+      title: name,
+      address: location.address
+    }
   end
 end

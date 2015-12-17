@@ -42,7 +42,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
-    new Clarat.MapModal.Presenter # handles Map Button
     $(document).trigger 'Clarat.Search::FirstSearchRendered'
 
   # Rendered upon successful sendMainSearch.
@@ -51,9 +50,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     @render '.Listing-results', 'search_results', viewModel
     if resultSet.results[0].nbHits < 1
-      $('.aside-standard').hide()
+      @hideMapUnderCategories()
     else if @model.isPersonal()
-      $('.aside-standard').show()
+      @showMapUnderCategories()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
 
   # Support Results only change when location changes. TODO: facets?
@@ -189,7 +188,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # disable and check all remote checkboxes, model has every encounter again
   handleChangeToPersonal: =>
     @model.contact_type = 'personal'
-    $('.aside-standard').show()
+    @showMapUnderCategories()
     $('#contact_type_personal').prop('checked', true)
 
     that = @
@@ -206,7 +205,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleChangeToRemote: =>
     @model.updateAttributes contact_type: 'remote'
-    $('.aside-standard').hide()
+    @hideMapUnderCategories()
     $('#contact_type_remote').prop('checked', true)
 
     $('.filter-form__checkboxes-wrapper input').each ->
@@ -229,6 +228,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     #       reloading
 
   ### Non-event-handling private methods ###
+
+  hideMapUnderCategories: =>
+    $('.aside-standard__container').hide()
+
+  showMapUnderCategories: =>
+    $('.aside-standard__container').show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

@@ -2,4 +2,6 @@ de:
   opening:
     display_string:
       appointment: "nach Vereinbarung"
-      time_frame: "%{open} Uhr - %{close} Uhr"
+      time_frame: "%{open} - %{close}"
+      time_format: "%H:%M Uhr"
+      midnight_exception: "24:00 Uhr"

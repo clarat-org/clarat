@@ -20,7 +20,7 @@ en:
 
     index:
       noscript_warning: |
-        Unfortunately, you need to active JavaScript for your browser in order
+        Unfortunately, you need to activate JavaScript for your browser in order
         to use our search.
 
       # index partials

@@ -28,11 +28,9 @@ FactoryGirl.define do
 
     after :create do |orga, evaluator|
       evaluator.website_count.times do
-        # create website with faked name, then set it to host 'own' and assign it
-        website = FactoryGirl.create(:website)
-        website.update_columns(host: 'own')
+        website = FactoryGirl.create(:website, host: 'own')
+        website.organizations << orga
         orga.websites << website
-        website.organizations = [orga]
       end
       # Locations
       if evaluator.location_count > 0

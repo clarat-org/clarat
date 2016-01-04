@@ -31,22 +31,32 @@ de:
         Problem wiederholt auftritt, kontaktiere uns bitte.
     query_field:
       placeholder_words:
-        - Adoption
-        - Drogen
-        - Gewalt
-        - Nachhilfe
-        - Notfall
-        - Recht
-        - Waise
-        - arbeitslos
-        - essen
-        - krank
-        - obdachlos
-        - rauchen
-        - schwanger
-        - schwul
-        - schwänzen
-        - wohnen
+        family:
+          - Adoption
+          - Drogen
+          - Gewalt
+          - Nachhilfe
+          - Notfall
+          - Recht
+          - Waise
+          - arbeitslos
+          - essen
+          - krank
+          - obdachlos
+          - rauchen
+          - schwanger
+          - schwul
+          - schwänzen
+          - wohnen
+        refugees:
+          - Staatsbürgerschaft
+          - Deutschkurs
+          - Anerkennung
+          - Kriegstrauma
+          - Asylverfahren
+          - Gesundheitsversorgung
+          - Behörden
+          - Aufenthaltsrecht
       example_placeholder: "z.B. %{word}, …"
 
     search:

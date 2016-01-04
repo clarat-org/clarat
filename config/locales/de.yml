@@ -30,32 +30,33 @@ de:
         Tut uns leid, es ist ein Fehler bei der Suche aufgetreten. Wenn dieses
         Problem wiederholt auftritt, kontaktiere uns bitte.
     query_field:
-      placeholder_words_family:
-        - Adoption
-        - Drogen
-        - Gewalt
-        - Nachhilfe
-        - Notfall
-        - Recht
-        - Waise
-        - arbeitslos
-        - essen
-        - krank
-        - obdachlos
-        - rauchen
-        - schwanger
-        - schwul
-        - schwänzen
-        - wohnen
-      placeholder_words_refugees:
-        - Staatsbürgerschaft
-        - Deutschkurs
-        - Anerkennung
-        - Kriegstrauma
-        - Asylverfahren
-        - Gesundheitsversorgung
-        - Behörden
-        - Aufenthaltsrecht
+      placeholder_words:
+        family:
+          - Adoption
+          - Drogen
+          - Gewalt
+          - Nachhilfe
+          - Notfall
+          - Recht
+          - Waise
+          - arbeitslos
+          - essen
+          - krank
+          - obdachlos
+          - rauchen
+          - schwanger
+          - schwul
+          - schwänzen
+          - wohnen
+        refugees:
+          - Staatsbürgerschaft
+          - Deutschkurs
+          - Anerkennung
+          - Kriegstrauma
+          - Asylverfahren
+          - Gesundheitsversorgung
+          - Behörden
+          - Aufenthaltsrecht
       example_placeholder: "z.B. %{word}, …"
 
     search:

@@ -4,7 +4,7 @@ class Clarat.QueryFieldPlaceholder.Model
   constructor: ->
     @section = $('body').data('section')
     @placeholderWords =
-      I18n.t("js.query_field.placeholder_words_#{@section}")
+      I18n.t("js.query_field.placeholder_words.#{@section}")
 
   # get a random element of the list (except the current one)
   randomPlaceholder: ->

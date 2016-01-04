@@ -14,7 +14,7 @@
           li = link_to offer.name,
                        offer_path(id: offer.id, section: @current_section)
     - else
-      h2 == t ".#{@current_section}.no_results", 
+      h2 == t ".#{@current_section}.no_results",
               email: secure_email_to(@email.address, 0)
 
     hr

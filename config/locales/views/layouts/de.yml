@@ -24,9 +24,11 @@ de:
           Trage dazu deine E-Mail-Adresse hier ein.
       navigation:
         claim:
-          first_row: "Einfach Hilfe finden"
-          second_row: |
+          main: "Einfach Hilfe finden"
+          family: |
             Unterstützungsangebote für Kinder, Jugendliche und Familien
+          refugees: |
+            Unterstützungsangebote für Flüchtlinge
         category_headline: "Oder suche nach Kategorien"
       footer:
         gplus:

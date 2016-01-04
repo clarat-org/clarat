@@ -4,7 +4,10 @@
 //
 // ---------------------------------------------------------------
 .aside-standard {
-  transition: top 0.33s
+  position: absolute;
+  max-width: 345px;
+  top: 0;
+  transition: top 0.1s;
 }
 
 .aside-standard__headline {

@@ -16,6 +16,7 @@ about supported directives.
 # = require jquery
 # = require jquery_ujs
 # = require qtip2
+# = require isInViewport
 # = require i18n
 # = require i18n/translations
 # = require algoliasearch
@@ -26,6 +27,7 @@ about supported directives.
 # = require_tree ./search/templates
 # = require_tree ./location/templates
 # = require_tree ./single_click_button/templates
+# = require_tree ./gmaps/templates
 #
 # = require setup
 #
@@ -73,6 +75,8 @@ about supported directives.
 # = require location/operations/turn_input_into_my_location_display
 # = require location/operations/save_to_cookie
 #
+# = require sticky_sidebar/presenter
+#
 # = require single_click_button/presenter
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
@@ -80,9 +84,13 @@ about supported directives.
 #
 # = require map_modal/presenter
 #
+# = require gmaps/setup
+# = require gmaps/presenter
+# = require gmaps/operations/construct_map
+# = require gmaps/cells/multiple_offer_window
+#
 # = require modules/analytics
 # = require modules/query_field_placeholder
-# = require modules/gmaps
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal

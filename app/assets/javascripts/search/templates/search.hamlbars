@@ -1,4 +1,4 @@
-%main.content-main
+%main.content-main.content-main--offers-index
   %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main Suchoptionen einblenden
 
   = hb 'with filters' do
@@ -10,6 +10,8 @@
   / prepare ajax spinner
   %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
 
-= hb '> _categories_sidebar'
+%aside.aside-standard
 
-= hb '> _search_map'
+  = hb '> _categories_sidebar'
+
+  = hb '> _search_map'

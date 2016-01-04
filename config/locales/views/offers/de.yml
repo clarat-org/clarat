@@ -6,7 +6,7 @@ de:
         loc_placeholder:
           long: "Adresse, Stadtteil, Stadt oder PLZ"
           short: "Stadt, PLZ, …"
-        query_label: "Finde"
+        query_label: "Was"
         query_placeholder:
           long: "Angebote zum Thema …"
           short: "Angebote zu …"
@@ -84,7 +84,7 @@ de:
             lit: "Litauisch"
           contact_type:
             personal: "vor Ort"
-            remote: "virtuell"
+            remote: "telefonisch oder online"
           encounter:
             hotline: "Telefon"
             email: "E-Mail"

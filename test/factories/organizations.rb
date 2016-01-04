@@ -11,7 +11,6 @@ FactoryGirl.define do
     charitable { FFaker::Boolean.maybe }
 
     # optional
-    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     umbrella do
       maybe(
@@ -28,7 +27,11 @@ FactoryGirl.define do
     end
 
     after :create do |orga, evaluator|
-      create_list :hyperlink, evaluator.website_count, linkable: orga
+      evaluator.website_count.times do
+        website = FactoryGirl.create(:website, host: 'own')
+        website.organizations << orga
+        orga.websites << website
+      end
       # Locations
       if evaluator.location_count > 0
         orga.locations << FactoryGirl.create(:location, :hq, organization: orga)

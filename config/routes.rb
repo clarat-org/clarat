@@ -41,7 +41,6 @@ Clarat::Application.routes.draw do
     resources :search_locations, only: [:show]
     resources :subscriptions, only: [:new, :create]
     resources :definitions, only: [:show]
-    get 'categories/:offer_name', controller: :categories, action: :index
 
     # non-REST routes
     get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',

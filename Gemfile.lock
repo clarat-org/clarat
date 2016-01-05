@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4689d471936046353cabaf723968b6128ca4fc69
+  revision: 43a2960ea739e3151700419f9051e45889064f07
   specs:
     clarat_base (0.1.4)
       aasm
@@ -288,7 +288,7 @@ GEM
     multi_xml (0.5.5)
     netrc (0.11.0)
     newrelic_rpm (3.14.1.311)
-    nokogiri (1.6.7)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.6)
       nokogiri

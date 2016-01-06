@@ -27,22 +27,17 @@ footer.footer-main
           ul.nav-site__list
             li.nav-site__listitem
               = link_to t('.blog'), 'http://blog.clarat.org/'
+
+
+        nav.nav-site
+          ul.nav-site__list
             li.nav-site__listitem
-              - I18n.available_locales.each do |locale|
-                =< link_to image_tag(image_path("flags/#{locale}.svg"), style: 'width: 15px; height: 10px;'),
-                           locale: locale.to_s
-
-        - cache "#{current_section}_footer_links_4_#{I18n.locale}" do
-
-          nav.nav-site
-            ul.nav-site__list
-              li.nav-site__listitem
-                = link_to t('.about'), about_path(section: current_section)
-              li.nav-site__listitem
-                = link_to t('.faq'), faq_path(section: current_section)
-              li.nav-site__listitem
-                = link_to t('.contact'),
-                          new_contact_path(section: current_section)
+              = link_to t('.about'), about_path(section: current_section)
+            li.nav-site__listitem
+              = link_to t('.faq'), faq_path(section: current_section)
+            li.nav-site__listitem
+              = link_to t('.contact'),
+                        new_contact_path(section: current_section)
 
   - cache "#{current_section}_footer_links_3_#{I18n.locale}" do
 

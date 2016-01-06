@@ -25,7 +25,12 @@
   background-size: auto 60px;
   padding-left: 50px;
 
-  body.en & {
+  body.en &,
+  body.fr &,
+  body.ar &,
+  body.tr &,
+  body.pl &,
+  body.ru & {
     background: image-url('ico_triangle.svg') no-repeat left 5px;
     background-size: 32px 32px;
     padding-left: 36px;

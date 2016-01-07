@@ -1,3 +1,5 @@
+include ApplicationHelper
+
 class EmailsController < ApplicationController
   respond_to :html
 
@@ -24,6 +26,8 @@ class EmailsController < ApplicationController
   def offers_index
     @email = Email.find params[:id]
     @offers = @email.offers.approved.in_section(params[:section])
+    @inverse_offers_count =
+      @email.offers.approved.in_section(inverse_section(params[:section])).count
   end
 
   private

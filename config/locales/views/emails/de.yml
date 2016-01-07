@@ -17,16 +17,18 @@ de:
         no_results: |
           Es gibt derzeit keine veröffentlichten Family-Angebote für
           <span id="secure-email-0">%{email}</span>
-        toggle_section_html: |
-          Deine <strong>clarat-Refugees</strong>-Angebote
+        toggle_section_html:
+          one: "Dein <strong>clarat-Refugees</strong>-Angebot"
+          other: "Deine <strong>%{count} clarat-Refugees</strong>-Angebote"
       refugees:
         heading: |
           Deine Refugees-Angebote für <span id="secure-email-0">%{email}</span>
         no_results: |
           Es gibt derzeit keine veröffentlichten Refugees-Angebote für
           <span id="secure-email-0">%{email}</span>
-        toggle_section_html: |
-          Deine <strong>clarat-Family</strong>-Angebote
+        toggle_section_html:
+          one: "Dein <strong>clarat-Family</strong>-Angebot"
+          other: "Deine <strong>%{count} clarat-Family</strong>-Angebote"
       shared:
         info: Info
         explanation_1: |

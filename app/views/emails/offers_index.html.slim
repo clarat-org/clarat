@@ -33,7 +33,9 @@
           p = t '.shared.explanation_3'
           p = t '.shared.explanation_4'
 
-      = link_to t(".#{@current_section}.toggle_section_html"),
-                emails_offers_path(section: inverse_section(@current_section),
-                                   id: @email.id, locale: @locale),
-                class: 'emailinfo__cta'
+      - if @inverse_offers_count > 0
+        = link_to t(".#{@current_section}.toggle_section_html",
+                    count: @inverse_offers_count),
+                  emails_offers_path(section: inverse_section(@current_section),
+                                     id: @email.id, locale: @locale),
+                  class: 'emailinfo__cta'

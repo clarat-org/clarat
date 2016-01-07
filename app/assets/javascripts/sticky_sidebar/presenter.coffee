@@ -29,7 +29,6 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
         $container.css('min-height', minHeight)
 
-        console.log(contentHeight)
       else
         # Exit here, since feature is only applicable to two column xl layout
         return

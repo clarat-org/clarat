@@ -12,8 +12,8 @@
               h3.Listing-results__offer = link_to offer.name,
                          offer_path(id: offer.id, section: @current_section)
               h4.Listing-results__offerinfo
-                span.Listing-results__contact-type
-                  - if offer.encounter == 'personal'
+                - if offer.encounter && offer.encounter != 'personal'
+                  span.Listing-results__contact-type
                     = t "shareds.offer.encounter.#{offer.encounter}"
                 span.Listing-results__organization
                   span.Listing-results__emphasis

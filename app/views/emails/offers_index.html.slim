@@ -2,23 +2,38 @@
   meta name='robots' content='noindex'
 
 .wrapper-inner
-  main
     - if @offers.any?
-      h2 == t ".#{@current_section}.heading",
+      h2.headline--emails == t ".#{@current_section}.heading",
               email: secure_email_to(@email.address, 0)
-
-      p = t '.shared.explanation'
-
-      ul
-        - @offers.each do |offer|
-          li = link_to offer.name,
-                       offer_path(id: offer.id, section: @current_section)
+      .section-wrapper-major
+        ul.Listing-results__list
+          - @offers.each do |offer|
+            li.Listing-results__listitem
+              h3.Listing-results__offer = link_to offer.name,
+                         offer_path(id: offer.id, section: @current_section)
+              h4.Listing-results__offerinfo
+                span.Listing-results__contact-type
+                  - if offer.encounter == 'personal'
+                    = t "shareds.offer.encounter.#{offer.encounter}"
+                span.Listing-results__organization
+                  span.Listing-results__emphasis
+                    = offer.organization_display_name
+                  | &nbsp;
+                  = offer.location_address
     - else
       h2 == t ".#{@current_section}.no_results",
               email: secure_email_to(@email.address, 0)
 
-    hr
+    .section-wrapper-minor
+      .emailinfo
+        h3.emailinfo__headline = t '.shared.info'
+        .emailinfo__body
+          p = t '.shared.explanation_1'
+          p = t '.shared.explanation_2'
+          p = t '.shared.explanation_3'
+          p = t '.shared.explanation_4'
 
-    = link_to t(".#{@current_section}.toggle_section"),
-              emails_offers_path(section: inverse_section(@current_section),
-                                 id: @email.id, locale: @locale)
+      = link_to t(".#{@current_section}.toggle_section_html"),
+                emails_offers_path(section: inverse_section(@current_section),
+                                   id: @email.id, locale: @locale),
+                class: 'emailinfo__cta'

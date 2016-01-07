@@ -5,3 +5,10 @@ de:
     show:
       cta_report_errors: |
         Hast du einen Fehler entdeckt?
+    offer:
+      encounter:
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"

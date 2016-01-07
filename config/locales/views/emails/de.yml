@@ -13,27 +13,34 @@ de:
     offers_index:
       family:
         heading: |
-          Family-Angebote, die <span id="secure-email-0">%{email}</span>
-          zugeordnet sind
+          Deine Family-Angebote für <span id="secure-email-0">%{email}</span>
         no_results: |
-          Es gibt derzeit keine veröffentlichten Family-Angebote, die
-          <span id="secure-email-0">%{email}</span> zugeordnet sind.
-        toggle_section: "Zugehörige Refugees-Angebote ansehen"
+          Es gibt derzeit keine veröffentlichten Family-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html: |
+          Deine <strong>clarat-Refugees</strong>-Angebote
       refugees:
         heading: |
-          Refugees-Angebote, die <span id="secure-email-0">%{email}</span>
-          zugeordnet sind
+          Deine Refugees-Angebote für <span id="secure-email-0">%{email}</span>
         no_results: |
-          Es gibt derzeit keine veröffentlichten Refugees-Angebote, die
-          <span id="secure-email-0">%{email}</span> zugeordnet sind.
-        toggle_section: "Zugehörige Family-Angebote ansehen"
+          Es gibt derzeit keine veröffentlichten Refugees-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html: |
+          Deine <strong>clarat-Family</strong>-Angebote
       shared:
-        explanation: |
-          Hier werden dir alle freigeschalteten clarat-Angebote angezeigt, bei
-          denen deine E-Mail-Adresse als Kontaktadresse eingetragen wurde. Diese
-          Seite wird aktuell gehalten. Du kannst sie also in deinen Favoriten
-          speichern und immer nachschauen, welche deiner Angebote gerade auf
-          clarat zu finden sind. Wenn du immer informiert werden möchtest, wenn
-          neue Angebote von dir eingetragen wurden, dann klick auf den
-          "anmelden"-Link am Ende der Email, die du von uns bekommen hast.
+        info: Info
+        explanation_1: |
+          Hier siehst du auf einen Blick alle deine Angebote bei clarat. Das sind
+          Angebote, bei denen wir deine E-Mail-Adresse als Kontaktadresse gefunden
+          haben.
+        explanation_2: |
+          Wenn wir in Zukunft neue Angebote von dir finden, siehst du die Links zu
+          diesen neuen Angebote bei auch hier.
+        explanation_3: |
+          Du kannst dazu diese Seite in deinen Favoriten speichern und so schnell
+          auf einen Blick sehen, was es von dir bei clarat gibt.
+        explanation_4: |
+          Möchtest du per E-Mail informiert werden, wenn neue Angebote von dir bei
+          clarat online sind? Dann klicke unten auf Anmelden. Oder nutze den Link
+          am Ende der E-Mail, die du von uns bekommen hast.
       obfuscated_email: "deiner E-Mail-Adresse"

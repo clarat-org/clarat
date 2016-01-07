@@ -54,7 +54,7 @@ de:
           - Gesundheitsversorgung
           - Behörden
           - Aufenthaltsrecht
-      example_placeholder: "z.B. %{word}, …"
+      example_placeholder: "z.B. %{word}"
 
     search:
       form_more_label: "Suchoptionen einblenden"

@@ -17,6 +17,8 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
       if desktop
 
+        $(window).scroll()
+
         if !!$sticky.offset()
           stickyTop = $sticky.offset().top
 

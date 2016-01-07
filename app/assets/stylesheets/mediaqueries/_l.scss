@@ -146,6 +146,11 @@
     width: auto;
   }
 
+  .aside-standard {
+    position: absolute !important; // Override JS
+    max-width: 27%;
+  }
+
   .content-main {
     padding-bottom: 0;
   }

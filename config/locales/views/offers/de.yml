@@ -91,6 +91,7 @@ de:
             chat: "Chat"
             forum: "Forum"
             online-course: "Online-Kurs"
+            portal: "Adressliste"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

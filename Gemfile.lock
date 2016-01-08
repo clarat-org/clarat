@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 38df1583c074d2055f4f0c0bcbdaec2104130e4d
-  branch: feature/611-new-portal-encounter
+  revision: 76cb77136d5506693dfb2730099e1ae8a926569f
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +32,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.5.1)
+    aasm (4.7.0)
     actionmailer (4.1.14)
       actionpack (= 4.1.14)
       actionview (= 4.1.14)

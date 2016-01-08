@@ -82,6 +82,7 @@ de:
             "150": "Deutsche Gebärdensprache"
             lav: "Lettisch"
             lit: "Litauisch"
+            kik: "Kikuyu"
           contact_type:
             personal: "vor Ort"
             remote: "telefonisch oder online"
@@ -91,6 +92,7 @@ de:
             chat: "Chat"
             forum: "Forum"
             online-course: "Online-Kurs"
+            portal: "Adressliste"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

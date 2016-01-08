@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 43a2960ea739e3151700419f9051e45889064f07
+  revision: 5a54a90872dab95057178788bc21a55b744f75b7
   specs:
     clarat_base (0.1.4)
       aasm
@@ -32,7 +32,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.5.1)
+    aasm (4.7.0)
     actionmailer (4.1.14)
       actionpack (= 4.1.14)
       actionview (= 4.1.14)
@@ -188,7 +188,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    geocoder (1.2.13)
+    geocoder (1.2.14)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -221,7 +221,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.7.0.1)
+    httpclient (2.7.1)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
@@ -290,7 +290,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.6)
+    nokogumbo (1.4.7)
       nokogiri
     paper_trail (4.0.1)
       activerecord (>= 3.0, < 6.0)
@@ -359,6 +359,7 @@ GEM
       rails-assets-jquery (>= 1.6.0)
     rails-assets-shariff (1.21.0)
       rails-assets-jquery (~> 2.1.1)
+    rails-assets-sticky-kit (1.1.2)
     rails-erd (1.4.4)
       activerecord (>= 3.2)
       activesupport (>= 3.2)
@@ -391,7 +392,7 @@ GEM
     rainbow (2.0.0)
     rake (10.4.2)
     rdoc (4.2.0)
-    redcarpet (3.3.3)
+    redcarpet (3.3.4)
     redis (3.2.2)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
@@ -600,6 +601,7 @@ DEPENDENCIES
   rails-assets-lodash!
   rails-assets-qtip2!
   rails-assets-shariff!
+  rails-assets-sticky-kit!
   rails-erd
   rails-i18n
   rails_12factor

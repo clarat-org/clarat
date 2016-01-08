@@ -12,7 +12,7 @@ module OffersHelper
   # whether it's currently selected (active), if there are children below it
   def category_list_classes depth, children
     depth_class = "depth--#{depth}"
-    children_class = children.any? ? 'has-children' : ''
+    children_class = (children.any? && depth <= 1) ? 'has-children' : ''
     "#{depth_class} #{children_class}"
   end
 end

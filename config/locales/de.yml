@@ -32,21 +32,18 @@ de:
     query_field:
       placeholder_words:
         family:
-          - Adoption
           - Drogen
           - Gewalt
           - Nachhilfe
           - Notfall
           - Recht
-          - Waise
           - arbeitslos
-          - essen
-          - krank
+          - Erziehungsprobleme
+          - Essstörung
           - obdachlos
-          - rauchen
+          - Familienprobleme
           - schwanger
-          - schwul
-          - schwänzen
+          - Streit
           - wohnen
         refugees:
           - Staatsbürgerschaft
@@ -57,7 +54,7 @@ de:
           - Gesundheitsversorgung
           - Behörden
           - Aufenthaltsrecht
-      example_placeholder: "z.B. %{word}, …"
+      example_placeholder: "z.B. %{word}"
 
     search:
       form_more_label: "Suchoptionen einblenden"

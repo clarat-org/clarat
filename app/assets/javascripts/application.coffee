@@ -22,6 +22,8 @@ about supported directives.
 # = require algoliasearch
 # = require hogan
 # = require shariff
+# = require sticky-kit
+
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates

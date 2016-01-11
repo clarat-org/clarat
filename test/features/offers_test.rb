@@ -21,11 +21,22 @@ feature 'Offer display' do
   scenario 'Offer view has evaluated markdown' do
     offer = FactoryGirl.create :offer, :approved,
                                description: 'A [link](http://www.example.org)',
-                               next_steps: "A\n\n- list"
+                               old_next_steps: "A\n\n- list"
 
     visit unscoped_offer_path offer
     page.must_have_link 'link'
     page.body.must_match %r{\<ul\>\n\<li\>list\</li\>\n\</ul\>}
+  end
+
+  scenario 'Offer view displays new next steps instead of old if they exist' do
+    offer = FactoryGirl.create :offer, :approved, old_next_steps: 'Step one.'
+    visit unscoped_offer_path offer
+    page.must_have_content 'Step one.'
+    page.wont_have_content 'basicNextStep'
+    offer.next_steps << next_steps(:basic)
+    visit unscoped_offer_path offer
+    page.wont_have_content 'Step one.'
+    page.must_have_content 'basicNextStep'
   end
 
   scenario 'Offer view has explained words' do

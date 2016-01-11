@@ -12,6 +12,11 @@ class Offer < ActiveRecord::Base
     section_filters.where(identifier: section).count > 0
   end
 
+  def next_steps_for_current_locale
+    next_steps.select("text_#{I18n.locale}").map(&:"text_#{I18n.locale}")
+      .join(' ')
+  end
+
   # Get an array of websites, ordered as follows: (1) own non-pdf (2) own pdf
   # (3+) remaining HOSTS in order, except "other"
   def structured_websites

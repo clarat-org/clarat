@@ -6,7 +6,7 @@ ruby '2.2.2'
 ###########
 
 gem 'clarat_base', github: 'clarat-org/clarat_base', # , path: '../clarat_base'
-                   branch: 'feature/614-next-steps-lego'
+                   branch: 'feature/554-translations'
 
 gem 'bundler', '>= 1.8.4'
 

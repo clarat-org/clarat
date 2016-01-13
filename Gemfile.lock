@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: e2e4223215f0e491e846a39ee526cced687bcd0a
-  branch: feature/614-next-steps-lego
+  revision: c9e69aacabd6b78d9fe5edcac58758a863756b72
+  branch: feature/554-translations
   specs:
     clarat_base (0.1.4)
       aasm

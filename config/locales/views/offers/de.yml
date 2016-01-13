@@ -82,6 +82,20 @@ de:
             "150": "Deutsche Gebärdensprache"
             lav: "Lettisch | latviešu"
             lit: "Litauisch | lietuvių"
+            kik: "Kikuyu | TODO"
+            zho: "Chinesisch | TODO"
+            swa: "Kiswahili | TODO"
+            luo: "Luo | TODO"
+            ltz: "Luxemburgisch | TODO"
+            nor: "Norwegisch | TODO"
+            swe: "Schwedisch | TODO"
+            snk: "Soninke | TODO"
+            tgk: "Tadschikisch | TODO"
+            tel: "Telugu | TODO"
+            tuk: "Turkmenisch | TODO"
+            uzb: "Usbekisch | TODO"
+            bel: "Weißrussisch | TODO"
+            zza: "Zaza | TODO"
           contact_type:
             personal: "vor Ort"
             remote: "telefonisch oder online"
@@ -91,6 +105,7 @@ de:
             chat: "Chat"
             forum: "Forum"
             online-course: "Online-Kurs"
+            portal: "Adressliste"
 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse

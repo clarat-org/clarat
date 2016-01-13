@@ -12,4 +12,5 @@
     %span.Listing-results__organization
       %span.Listing-results__emphasis
         = hb 'organization_display_name'
-      = hb 'location_address'
+      = hb 'if location_visible' do # only show address if visible
+        = hb 'location_address'

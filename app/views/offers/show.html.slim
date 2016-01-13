@@ -41,7 +41,7 @@
 
         .section-content__body
 
-          - if @offer.location
+          - if @offer.location && @offer.location.visible
             - cache [@offer.location, 'offer_show_map']
 
               #map-container

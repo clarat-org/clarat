@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: d6490994dc93b60a437fa6c5284a9f57947c67e1
+  revision: 570645b89d735f517b14bac1a7ae0b9bd46911ca
+  branch: feature/620-hide-location-everywhere
   specs:
     clarat_base (0.1.4)
       aasm
@@ -60,7 +61,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.6.1)
+    algoliasearch (1.7.0)
       httpclient (~> 2.4)
       json (>= 1.5.1)
     algoliasearch-rails (1.14.1)
@@ -397,7 +398,7 @@ GEM
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     ref (2.0.0)
-    request_store (1.2.1)
+    request_store (1.3.0)
     require_all (1.3.3)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)

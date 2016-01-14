@@ -1,0 +1,9 @@
+tr:
+  update_requests:
+    create:
+      success: |
+        Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner
+        Nähe aktiv werden melden wir uns bei dir.
+    new:
+      email_placeholder: "E-Mail Adresse"
+      button: "Nachricht erhalten"

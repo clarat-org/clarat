@@ -1,0 +1,6 @@
+tr:
+  organizations:
+    show:
+      who: "Was macht die Organisation?"
+      where: "Wo findest du die Organisation?"
+      offers_all: "Welche Hilfe bietet diese Organisation?"

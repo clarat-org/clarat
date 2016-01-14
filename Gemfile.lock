@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: c9e69aacabd6b78d9fe5edcac58758a863756b72
+  revision: 83fbe13c79d5e4f5d88be8118123d7c4ddb01252
   branch: feature/554-translations
   specs:
     clarat_base (0.1.4)
@@ -371,7 +371,7 @@ GEM
       activesupport (>= 3.2)
       choice (~> 0.2.0)
       ruby-graphviz (~> 1.2)
-    rails-i18n (4.0.7)
+    rails-i18n (4.0.8)
       i18n (~> 0.7)
       railties (~> 4.0)
     rails-observers (0.1.2)
@@ -396,7 +396,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
-    rake (10.4.2)
+    rake (10.5.0)
     rdoc (4.2.0)
     redcarpet (3.3.4)
     redis (3.2.2)

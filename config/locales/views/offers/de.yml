@@ -139,6 +139,12 @@ de:
           youtube: "Youtube"
           gplus: "Google+"
           pinterest: "Pinterest"
+          online_consulting: "Onlineberatung"
+          chat: "Chat"
+          forum: "Forum"
+          online_course: "Online-Kurs"
+          application_form: "Anmeldeformular"
+          contact_form: "Kontaktformular"
       who_contact_people:
         female: "Frau"
         male: "Herr"

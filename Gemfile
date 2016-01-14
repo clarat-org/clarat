@@ -50,6 +50,7 @@ end # TODO: deprecated!
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
   gem 'rails-assets-jquery'
+  gem 'rails-assets-jquery-cookie'
   gem 'rails-assets-qtip2'
   gem 'rails-assets-shariff'
   gem 'rails-assets-sticky-kit'

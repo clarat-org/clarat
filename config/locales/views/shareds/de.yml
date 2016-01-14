@@ -5,3 +5,9 @@ de:
     show:
       cta_report_errors: |
         Hast du einen Fehler entdeckt?
+    tooltips:
+      welcome:
+        advanced_search: |
+          Suchoptionen einblenden ... Beschreibung ... Blindtext...
+        world_switch: |
+          Welt-Navi... Beschreibung ... Blindtext...

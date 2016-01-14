@@ -14,6 +14,7 @@ about supported directives.
 #
 # = require lodash
 # = require jquery
+# = require jquery-cookie
 # = require jquery_ujs
 # = require qtip2
 # = require isInViewport
@@ -83,6 +84,7 @@ about supported directives.
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
 # = require sticky_mobile_nav/presenter
+# = require welcome_tooltips/presenter
 #
 # = require map_modal/presenter
 #

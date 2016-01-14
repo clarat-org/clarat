@@ -8,7 +8,7 @@
         h2.Claim__firstrow = t '.claim.main'
         h3.Claim__secondrow = t ".claim.#{current_section}"
 
-      nav.nav-welt.nav-welt--start
+      nav.nav-welt.nav-welt--start.tooltip--welcome[data-tooltip-text=t('shareds.tooltips.welcome.world_switch')]
         ul.nav-welt__list
           - SectionFilter::IDENTIFIER.each do |section|
             li.nav-welt__listitem.nav-welt__listitem--start

@@ -609,4 +609,22 @@
     content: "";
   }
 
+  .template--offers-index #qtip-1 {
+    top: 135px !important;
+    left: 20px !important;
+  }
+
+  #qtip-1 {
+    .template--offers-index & {
+      top: 135px !important;
+      left: 20px !important;
+    }
+
+    .template--pages-home & {
+      left: 20px !important;
+    }
+  }
+
+
+
 }

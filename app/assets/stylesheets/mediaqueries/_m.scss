@@ -513,6 +513,11 @@
     margin-bottom: 0;
   }
 
+  .aside-standard {
+    position: relative !important; // Override JS
+    max-width: 100%;
+  }
+
   .content-main,
   .Categories {
     .template--offers-index & {

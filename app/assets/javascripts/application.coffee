@@ -22,6 +22,8 @@ about supported directives.
 # = require algoliasearch
 # = require hogan
 # = require shariff
+# = require sticky-kit
+
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
@@ -90,8 +92,11 @@ about supported directives.
 # = require gmaps/operations/construct_map
 # = require gmaps/cells/multiple_offer_window
 #
+# = require query_field_placeholder/setup
+# = require query_field_placeholder/model
+# = require query_field_placeholder/presenter
+#
 # = require modules/analytics
-# = require modules/query_field_placeholder
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal

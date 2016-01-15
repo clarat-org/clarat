@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 570645b89d735f517b14bac1a7ae0b9bd46911ca
-  branch: feature/620-hide-location-everywhere
+  revision: 26af0901260d3b014f2e5c93334396e823340520
   specs:
     clarat_base (0.1.4)
       aasm

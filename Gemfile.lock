@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: e70d7da9070c94a4d640381aeabc9c39e73092be
-  branch: feature/621-hide-contact-persons
+  revision: e24dd17f097a0377b974cc80cea0e308cfe3c210
   specs:
     clarat_base (0.1.4)
       aasm

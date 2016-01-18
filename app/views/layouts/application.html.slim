@@ -18,6 +18,8 @@ html class='no-js' lang=I18n.locale
     = csrf_meta_tags
 
   body class="#{@current_section} template--#{controller_name}-#{action_name}" data-section=@current_section
+
+
     .page-wrap
       - cache 'banner' do
         = render '/layouts/partials/banner'
@@ -43,3 +45,4 @@ html class='no-js' lang=I18n.locale
 
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts
+

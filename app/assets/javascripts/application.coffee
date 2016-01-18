@@ -22,6 +22,8 @@ about supported directives.
 # = require algoliasearch
 # = require hogan
 # = require shariff
+# = require sticky-kit
+
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
@@ -81,6 +83,7 @@ about supported directives.
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
 # = require sticky_mobile_nav/presenter
+# = require section_speaking_wrapper/presenter
 #
 # = require map_modal/presenter
 #

@@ -7,7 +7,8 @@ class Clarat.Search.Cell.MapMarkers
     @markers = {}
 
     for element in @mainResults
-      @makeMarker element
+      if element.location_visible
+        @makeMarker element
 
     @markers
 

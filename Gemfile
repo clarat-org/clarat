@@ -5,8 +5,7 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base', # , path: '../clarat_base'
-                   branch: 'feature/573-update-offer-mailings'
+gem 'clarat_base', github: 'clarat-org/clarat_base'
 
 gem 'bundler', '>= 1.8.4'
 
@@ -53,6 +52,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-qtip2'
   gem 'rails-assets-shariff'
+  gem 'rails-assets-sticky-kit'
   gem 'rails-assets-algoliasearch' # search client
   gem 'rails-assets-isInViewport'
 end

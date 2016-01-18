@@ -12,6 +12,14 @@ class Offer < ActiveRecord::Base
     section_filters.where(identifier: section).count > 0
   end
 
+  def visible_contact_people?
+    return false unless contact_people.any?
+    contact_people.each do |contact|
+      return true if contact.spoc
+    end
+    !hide_contact_people
+  end
+
   # Get an array of websites, ordered as follows: (1) own non-pdf (2) own pdf
   # (3+) remaining HOSTS in order, except "other"
   def structured_websites

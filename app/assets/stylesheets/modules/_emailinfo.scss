@@ -1,0 +1,57 @@
+.headline--emails {
+  @extend %roboto_bold;
+  font-size: 34px;
+  font-weight: 400;
+  margin: .5em 0 1em;
+  word-break: break-all;
+
+  a {
+    color: inherit;
+  }
+}
+
+.emailinfo__headline {
+  @extend %roboto_bold;
+  @extend %clarat_rounding_start;
+  padding: 7px 15px;
+  margin: 0;
+  background: $brand_green;
+  color: $brand_white;
+  content: '';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.emailinfo__body {
+  padding: 15px 15px 5px 15px;
+  background: $brand_beige;
+  font-size: 14px;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.emailinfo__cta {
+  @extend %small_button_style;
+  @extend %clarat_rounding_end;
+  font-family: 'Roboto', sans-serif;
+  border-top-left-radius: 0;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+// Specifity
+a.emailinfo__cta {
+  font-size: 18px;
+
+  body.refugees & {
+    background-color: $brand_core_family;
+  }
+
+  body.family & {
+    background-color: $brand_core_refugees;
+  }
+}

@@ -74,4 +74,14 @@ class ApplicationHelperTest < ActionView::TestCase
         'http://some.host/refugees/angebote?query=family')
     end
   end
+
+  describe '#inverse_section' do
+    it 'should return "family" when given "refugees"' do
+      inverse_section('refugees').must_equal 'family'
+    end
+
+    it 'should return "refugees" when given "family"' do
+      inverse_section('family').must_equal 'refugees'
+    end
+  end
 end

@@ -25,6 +25,6 @@ feature 'emails#offers_index' do
 
     page.wont_have_content 'baz' # because it's in different section
     page.must_have_content 'Es gibt derzeit keine veröffentlichten'\
-                           ' Refugees-Angebote'
+                           ' clarat refugees-Angebote'
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151210113954) do
+ActiveRecord::Schema.define(version: 20160115110729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -214,8 +214,8 @@ ActiveRecord::Schema.define(version: 20151210113954) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 80,                 null: false
-    t.text     "description",                                           null: false
+    t.string   "name",                       limit: 120,                 null: false
+    t.text     "description",                                            null: false
     t.text     "next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -227,8 +227,7 @@ ActiveRecord::Schema.define(version: 20151210113954) do
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.boolean  "renewed",                               default: false
-    t.date     "expires_at",                                            null: false
+    t.date     "expires_at",                                             null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
@@ -238,6 +237,7 @@ ActiveRecord::Schema.define(version: 20151210113954) do
     t.integer  "age_to"
     t.string   "target_audience"
     t.string   "aasm_state",                 limit: 32
+    t.boolean  "hide_contact_people",                    default: false
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -279,7 +279,7 @@ ActiveRecord::Schema.define(version: 20151210113954) do
     t.string   "name",                                              null: false
     t.text     "description",                                       null: false
     t.string   "legal_form",                                        null: false
-    t.boolean  "charitable",                        default: true
+    t.boolean  "charitable",                        default: false
     t.integer  "founded"
     t.string   "umbrella",               limit: 8
     t.string   "slug"
@@ -290,7 +290,6 @@ ActiveRecord::Schema.define(version: 20151210113954) do
     t.integer  "locations_count",                   default: 0
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.boolean  "renewed",                           default: false
     t.boolean  "accredited_institution",            default: false
     t.text     "description_html"
     t.boolean  "mailings_enabled",                  default: false

@@ -2,51 +2,52 @@ ul.section-content--contact-person-list
   / TODO: Refactor (Rethink order)
   - offer_contacts = offer.contact_people.order('last_name DESC')
   - offer_contacts.each_with_index do |contact, index|
-    - cache [offer, contact] do
-      li
-        / TODO: Refactor (Move to model)
-        - if contact.last_name?
-          - if contact.gender?
-            =< t ".#{contact.gender}"
-          - if contact.academic_title?
-            =< t ".#{contact.academic_title}"
-          - if contact.first_name? && contact.last_name?
-            =< "#{contact.first_name} #{contact.last_name}"
+    - if !offer.hide_contact_people || contact.spoc
+      - cache [offer, contact] do
+        li
+          / TODO: Refactor (Move to model)
+          - if contact.last_name?
+            - if contact.gender?
+              =< t ".#{contact.gender}"
+            - if contact.academic_title?
+              =< t ".#{contact.academic_title}"
+            - if contact.first_name? && contact.last_name?
+              =< "#{contact.first_name} #{contact.last_name}"
+              br
+            - elsif contact.last_name?
+              =< "#{contact.last_name}"
+              br
+          - elsif contact.first_name?
+            = "#{contact.first_name}"
             br
-          - elsif contact.last_name?
-            =< "#{contact.last_name}"
+          - elsif contact.operational_name?
+            = "#{contact.operational_name}"
             br
-        - elsif contact.first_name?
-          = "#{contact.first_name}"
-          br
-        - elsif contact.operational_name?
-          = "#{contact.operational_name}"
-          br
 
-        - if contact.responsibility?
-          = "#{contact.responsibility}"
-          br
+          - if contact.responsibility?
+            = "#{contact.responsibility}"
+            br
 
-        - if contact.local_number_1?
-          = t '.phone'
-          a< href="tel:#{contact.telephone_1}"
-            = contact.area_code_1
-            =< tel_format contact.local_number_1
-          br
-        - if contact.local_number_2?
-          = t '.phone'
-          a< href="tel:#{contact.telephone_2}"
-            = contact.area_code_2
-            =< tel_format contact.local_number_2
-          br
-        - if contact.fax_number?
-          = t '.fax'
-          a< href="fax:#{contact.fax}"
-            = contact.fax_area_code
-            =< tel_format contact.fax_number
-          br
-        - if contact.email_address?
-          = t '.email'
-          span[id="secure-email-#{index}"]
-            ==< secure_email_to contact.email_address, index
-          br
+          - if contact.local_number_1?
+            = t '.phone'
+            a< href="tel:#{contact.telephone_1}"
+              = contact.area_code_1
+              =< tel_format contact.local_number_1
+            br
+          - if contact.local_number_2?
+            = t '.phone'
+            a< href="tel:#{contact.telephone_2}"
+              = contact.area_code_2
+              =< tel_format contact.local_number_2
+            br
+          - if contact.fax_number?
+            = t '.fax'
+            a< href="fax:#{contact.fax}"
+              = contact.fax_area_code
+              =< tel_format contact.fax_number
+            br
+          - if contact.email_address?
+            = t '.email'
+            span[id="secure-email-#{index}"]
+              ==< secure_email_to contact.email_address, index
+            br

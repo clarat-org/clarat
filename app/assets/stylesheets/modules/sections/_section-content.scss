@@ -60,6 +60,28 @@
   }
 }
 
+.section-content__langlist {
+  list-style: none;
+  line-height: 1.65;
+}
+
+.section-content__wrapper {
+  margin: 15px;
+  overflow: hidden;
+
+  &.is-expanded {
+    height: auto !important; // Override JS
+  }
+}
+
+.section-content__toggle {
+  display: none;
+  width: 100%;
+  cursor: pointer;
+  min-height: 30px;
+  line-height: 30px;
+}
+
 .offer-contribute {
   @extend %clarat_rounding_end;
   @extend %roboto_regular;

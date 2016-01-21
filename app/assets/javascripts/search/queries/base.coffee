@@ -19,6 +19,9 @@ class Clarat.Search.Query.Base
         facetFilters: @facetFilters
         aroundPrecision: @BASE_PRECISION
         maxValuesPerFacet: @VALUES_PER_FACET
+        attributesToHighlight: 'name,organization_display_name'
+        highlightPreTag: '<span class="Listing-keyword--highlight">'
+        highlightPostTag: '</span>'
 
   page_query: ->
     if @page?
@@ -26,9 +29,6 @@ class Clarat.Search.Query.Base
         params:
           page: @page
           hitsPerPage: @PER_PAGE
-          attributesToHighlight: 'name,organization_display_name'
-          highlightPreTag: '<span class="Listing-keyword--highlight">'
-          highlightPostTag: '</span>'
       }
     else
       {}

@@ -62,6 +62,15 @@ meta name="theme-color" content="#F4B528"
 = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css'\
                       '/font-awesome.min.css'
 
+| <script>
+|  if (Function('/*@cc_on return document.documentMode===10@*/')()) {
+|    document.documentElement.className += ' ie10';
+|  }
+|  if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
+|    document.documentElement.className += ' ie11';
+|  }
+| </script>
+
 / Google Analytics
 - if Rails.env.production?
   javascript:

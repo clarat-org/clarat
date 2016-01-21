@@ -66,16 +66,17 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
 
   handleMarkerMouseOver: (_event, _marker, markerData) =>
     for id in markerData.ids
-      $("#result-offer-#{id}").css('outline', '10px solid red');
+      $("#result-offer-#{id} .Listing-results__offer").addClass('Listing-results__offer--highlighted');
 
   handleMarkerMouseOut: (_event, _marker, markerData) =>
     for id in markerData.ids
-      $("#result-offer-#{id}").attr('style', null);
+      $("#result-offer-#{id} .Listing-results__offer").removeClass('Listing-results__offer--highlighted');
 
   handleResultMouseOver: (event) ->
     marker = $(event.currentTarget).data('marker')
     if marker
-      marker.setIcon image_path('buggy.svg')
+      #marker.setIcon image_path('mascot--faq.svg')
+      marker.setIcon image_path('gmaps_marker_highlighted.svg')
 
   handleResultMouseOut: (event) ->
     marker = $(event.currentTarget).data('marker')

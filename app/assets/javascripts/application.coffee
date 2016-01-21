@@ -84,6 +84,7 @@ about supported directives.
 # = require toggle_fieldsets/presenter
 # = require sticky_mobile_nav/presenter
 # = require nav_lang_bar/presenter
+# = require section_speaking_wrapper/presenter
 #
 # = require map_modal/presenter
 #

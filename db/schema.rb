@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160107112024) do
+ActiveRecord::Schema.define(version: 20160115110729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,12 +64,12 @@ ActiveRecord::Schema.define(version: 20160107112024) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "category_translations", force: true do |t|
-    t.integer  "category_id",              null: false
-    t.string   "locale",                   null: false
-    t.string   "source",      default: "", null: false
+    t.integer  "category_id",                          null: false
+    t.string   "locale",      limit: nil,              null: false
+    t.string   "source",      limit: nil, default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name",        default: "", null: false
+    t.string   "name",        limit: nil, default: "", null: false
   end
 
   add_index "category_translations", ["category_id"], name: "index_category_translations_on_category_id", using: :btree
@@ -199,13 +199,13 @@ ActiveRecord::Schema.define(version: 20160107112024) do
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
 
   create_table "next_steps", force: true do |t|
-    t.string "text_de", null: false
-    t.string "text_en"
-    t.string "text_ar"
-    t.string "text_fr"
-    t.string "text_pl"
-    t.string "text_tr"
-    t.string "text_ru"
+    t.string "text_de", limit: nil, null: false
+    t.string "text_en", limit: nil
+    t.string "text_ar", limit: nil
+    t.string "text_fr", limit: nil
+    t.string "text_pl", limit: nil
+    t.string "text_tr", limit: nil
+    t.string "text_ru", limit: nil
   end
 
   add_index "next_steps", ["text_de"], name: "index_next_steps_on_text_de", using: :btree
@@ -246,13 +246,13 @@ ActiveRecord::Schema.define(version: 20160107112024) do
   add_index "offer_mailings", ["offer_id"], name: "index_offer_mailings_on_offer_id", using: :btree
 
   create_table "offer_translations", force: true do |t|
-    t.integer  "offer_id",                                      null: false
-    t.string   "locale",                                        null: false
-    t.string   "source",                           default: "", null: false
+    t.integer  "offer_id",                                       null: false
+    t.string   "locale",                limit: nil,              null: false
+    t.string   "source",                limit: nil, default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name",                  limit: 80, default: "", null: false
-    t.text     "description",                      default: "", null: false
+    t.string   "name",                  limit: 120, default: "", null: false
+    t.text     "description",                       default: "", null: false
     t.text     "old_next_steps"
     t.text     "opening_specification"
   end
@@ -261,8 +261,8 @@ ActiveRecord::Schema.define(version: 20160107112024) do
   add_index "offer_translations", ["offer_id"], name: "index_offer_translations_on_offer_id", using: :btree
 
   create_table "offers", force: true do |t|
-    t.string   "name",                       limit: 120, null: false
-    t.text     "description",                            null: false
+    t.string   "name",                       limit: 120,                 null: false
+    t.text     "description",                                            null: false
     t.text     "old_next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -274,7 +274,7 @@ ActiveRecord::Schema.define(version: 20160107112024) do
     t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.date     "expires_at",                             null: false
+    t.date     "expires_at",                                             null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
@@ -284,6 +284,7 @@ ActiveRecord::Schema.define(version: 20160107112024) do
     t.integer  "age_to"
     t.string   "target_audience"
     t.string   "aasm_state",                 limit: 32
+    t.boolean  "hide_contact_people",                    default: false
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -322,12 +323,12 @@ ActiveRecord::Schema.define(version: 20160107112024) do
   add_index "organization_offers", ["organization_id"], name: "index_organization_offers_on_organization_id", using: :btree
 
   create_table "organization_translations", force: true do |t|
-    t.integer  "organization_id",              null: false
-    t.string   "locale",                       null: false
-    t.string   "source",          default: "", null: false
+    t.integer  "organization_id",                          null: false
+    t.string   "locale",          limit: nil,              null: false
+    t.string   "source",          limit: nil, default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "description",     default: "", null: false
+    t.text     "description",                 default: "", null: false
   end
 
   add_index "organization_translations", ["locale"], name: "index_organization_translations_on_locale", using: :btree

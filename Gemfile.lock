@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 83fbe13c79d5e4f5d88be8118123d7c4ddb01252
+  revision: eaa76ae371f72e326272804fa4836ff7cef99597
   branch: feature/554-translations
   specs:
     clarat_base (0.1.4)
@@ -295,11 +295,11 @@ GEM
     multi_xml (0.5.5)
     netrc (0.11.0)
     newrelic_rpm (3.14.1.311)
-    nokogiri (1.6.7.1)
+    nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.7)
       nokogiri
-    paper_trail (4.0.1)
+    paper_trail (4.0.2)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
       request_store (~> 1.1)

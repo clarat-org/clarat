@@ -1,3 +1,4 @@
+# TODO
 en:
   shareds:
     forms:
@@ -9,3 +10,11 @@ en:
         This translation was automatically made by Google Translate. Those
         translations usually contain errors. They may sound a bit strange. In
         that case you should have a look at the German original.
+    offer:
+      encounter:
+        hotline: "Telefon"
+        email: "E-Mail"
+        chat: "Chat"
+        forum: "Forum"
+        online-course: "Online-Kurs"
+        portal: "Addressliste"

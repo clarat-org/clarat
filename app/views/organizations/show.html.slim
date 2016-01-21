@@ -25,8 +25,9 @@
               - @organization.offers.approved.order('name ASC').each do |offer|
                 li.Listing-offers__listitem
                   = link_to offer.name, offer_path(id: offer)
-                .Listing-offers__address
-                  = offer.location_address
+                - if offer.location && offer.location.visible
+                  .Listing-offers__address
+                    = offer.location_address
 
     .section-wrapper-minor
 

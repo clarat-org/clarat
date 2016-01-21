@@ -27,7 +27,11 @@ FactoryGirl.define do
     end
 
     after :create do |orga, evaluator|
-      create_list :hyperlink, evaluator.website_count, linkable: orga
+      evaluator.website_count.times do
+        website = FactoryGirl.create(:website, host: 'own')
+        website.organizations << orga
+        orga.websites << website
+      end
       # Locations
       if evaluator.location_count > 0
         orga.locations << FactoryGirl.create(:location, :hq, organization: orga)

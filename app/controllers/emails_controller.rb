@@ -1,3 +1,5 @@
+include ApplicationHelper
+
 class EmailsController < ApplicationController
   respond_to :html
 
@@ -17,6 +19,15 @@ class EmailsController < ApplicationController
     flash[:success] = t('.success_html', subscribe_href:
       subscribe_path(id: @email.id, security_code: @email.security_code))
     redirect_to root_path
+  end
+
+  # List the offers of a certain email. Here we actually do pretend partial
+  # RESTfulness
+  def offers_index
+    @email = Email.find params[:id]
+    @offers = @email.offers.approved.in_section(params[:section])
+    @inverse_offers_count =
+      @email.offers.approved.in_section(inverse_section(params[:section])).count
   end
 
   private

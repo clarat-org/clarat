@@ -54,6 +54,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     else if @model.isPersonal()
       @showMapUnderCategories()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
+    $(document).trigger 'Clarat.Search::NewResults'
 
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
@@ -142,6 +143,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'
     @model.updateAttributes category: categoryName
     Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
+    $(document).trigger 'Clarat.Search::CategoryClick'
     @sendMainSearch()
     @stopEvent event
 

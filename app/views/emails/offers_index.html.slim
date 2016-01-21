@@ -1,0 +1,41 @@
+- provide :additional_meta_tags do
+  meta name='robots' content='noindex'
+
+.wrapper-inner
+    - if @offers.any?
+      h2.headline--emails == t ".#{@current_section}.heading",
+              email: secure_email_to(@email.address, 0)
+      .section-wrapper-major
+        ul.Listing-results__list
+          - @offers.each do |offer|
+            li.Listing-results__listitem
+              h3.Listing-results__offer = link_to offer.name,
+                         offer_path(id: offer.id, section: @current_section)
+              h4.Listing-results__offerinfo
+                - if offer.encounter && offer.encounter != 'personal'
+                  span.Listing-results__contact-type
+                    = t "shareds.offer.encounter.#{offer.encounter}"
+                span.Listing-results__organization
+                  span.Listing-results__emphasis
+                    = offer.organization_display_name
+                  | &nbsp;
+                  = offer.location_address
+    - else
+      h2 == t ".#{@current_section}.no_results",
+              email: secure_email_to(@email.address, 0)
+
+    .section-wrapper-minor
+      .emailinfo
+        h3.emailinfo__headline = t '.shared.info'
+        .emailinfo__body
+          p = t '.shared.explanation_1'
+          p = t '.shared.explanation_2'
+          p = t '.shared.explanation_3'
+          p = t '.shared.explanation_4'
+
+      - if @inverse_offers_count > 0
+        = link_to t(".#{@current_section}.toggle_section_html",
+                    count: @inverse_offers_count),
+                  emails_offers_path(section: inverse_section(@current_section),
+                                     id: @email.id, locale: @locale),
+                  class: 'emailinfo__cta'

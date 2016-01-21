@@ -43,4 +43,16 @@ describe EmailsController do
       end
     end
   end
+
+  describe '#offers_index' do
+    it 'must work for an email in family' do
+      get :offers_index, id: email.id, locale: 'de', section: 'family'
+      assert_response 200
+    end
+
+    it 'must work for an email in refugees' do
+      get :offers_index, id: email.id, locale: 'de', section: 'refugees'
+      assert_response 200
+    end
+  end
 end

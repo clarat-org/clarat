@@ -146,6 +146,11 @@
     width: auto;
   }
 
+  .aside-standard {
+    position: absolute !important; // Override JS
+    max-width: 27%;
+  }
+
   .content-main {
     padding-bottom: 0;
   }
@@ -213,6 +218,12 @@
   [type="submit"].filter-form__submit,
   .filter-form__expander {
     width: 50%;
+  }
+
+  .section-wrapper-major {
+    .template--emails-offers_index & {
+      width: 100%;
+    }
   }
 
 

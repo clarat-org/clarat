@@ -22,6 +22,17 @@
     background: $brand_green;
   }
 
+  .section-content--speaking {
+    @extend %clearfix;
+    padding: 0;
+
+    .section-content__title {
+      background: $brand_green;
+    }
+  }
+
+
+
   .section-content--what {
 
     ul {
@@ -94,7 +105,7 @@
     }
 
     &.page-detail__icon--d-violence,
-    &.page-detail__icon--e-habitation, {
+    &.page-detail__icon--e-habitation {
       // ToDo: Removes
       background-image: image-url('picto_violence.svg');
     }

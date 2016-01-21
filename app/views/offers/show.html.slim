@@ -38,16 +38,13 @@
       section.section-content.section-content--speaking
         h3.section-content__title
           = t '.speaking'
-        .section-content__wrapper
+        .section-content__wrapper.is-expanded
           ul.section-content__langlist
             - @offer.language_filters.pluck(:identifier).each do |language|
               li
                 => t ".current_and_original_locale.#{language}"
 
-        button.section-content__toggle[
-          data-expanded-label=t('.lang_list_toggle.less')
-          data-collapsed-label=t('.lang_list_toggle.more')
-        ]
+        button.section-content__toggle
           = t '.speaking'
 
       section.section-content.section-content--whos-offering

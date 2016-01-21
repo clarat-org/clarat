@@ -72,12 +72,14 @@
   background: image-url('picto_family.svg') no-repeat center top;
   background-size: 105px 105px;
 
-  body.refugees & {
-    background-image: image-url('picto_family--refugees.svg')
-  }
-
   body.family & {
     background-image: image-url('picto_family--family.svg')
+  }
+}
+
+.nav-sections__listitem--e-family {
+  body.refugees & {
+    background-image: image-url('picto_family--refugees.svg')
   }
 }
 
@@ -103,7 +105,7 @@
   }
 
   body.family & {
-    background-image: image-url('picto_learn--family.svg')
+    background-image: image-url('picto_learn--family.svg');
   }
 }
 
@@ -113,11 +115,11 @@
   background-size: 105px 105px;
 
   body.refugees & {
-    background-image: image-url('picto_everydaylife--refugees.svg')
+    background-image: image-url('picto_everydaylife--refugees.svg');
   }
 
   body.family & {
-    background-image: image-url('picto_everydaylife--family.svg')
+    background-image: image-url('picto_everydaylife--family.svg');
   }
 }
 
@@ -125,24 +127,25 @@
   background: image-url('picto_violence.svg') no-repeat center top;
   background-size: 105px 105px;
 
-  body.refugees & {
-    background-image: image-url('picto_violence--refugees.svg')
-  }
 
   body.family & {
-    background-image: image-url('picto_violence--family.svg')
+    background-image: image-url('picto_violence--family.svg');
   }
+}
+
+body.refugees .nav-sections__listitem--f-violence {
+  background-image: image-url('picto_family--refugees.svg');
 }
 
 .nav-sections__listitem--f-crisis {
   background: image-url('picto_crisis.svg') no-repeat center top;
   background-size: 105px 105px;
 
-  body.refugees & {
-    background-image: image-url('picto_crisis--refugees.svg')
-  }
-
   body.family & {
-    background-image: image-url('picto_crisis--family.svg')
+    background-image: image-url('picto_crisis--family.svg');
   }
+}
+
+body.refugees .nav-sections__listitem--g-crisis {
+  background-image: image-url('picto_crisis--refugees.svg');
 }

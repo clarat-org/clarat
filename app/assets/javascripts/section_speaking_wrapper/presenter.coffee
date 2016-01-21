@@ -1,5 +1,4 @@
 # If offer spoken language count is higher that threshold, collapse the rest
-
 Clarat.SectionSpeakingWrapper = {}
 class Clarat.SectionSpeakingWrapper.Presenter extends ActiveScript.Presenter
 

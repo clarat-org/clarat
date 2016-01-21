@@ -1,44 +1,43 @@
 # If offer spoken language count is higher that threshold, collapse the rest
 Clarat.SectionSpeakingWrapper = {}
 class Clarat.SectionSpeakingWrapper.Presenter extends ActiveScript.Presenter
+  constructor: ->
+    super()
+    @trigger = $('.section-content__toggle')
+    @content = $('.section-content__wrapper')
+    @handleToggleClicked() # once initially to hide large list
+
+  THRESHOLD: 5
 
   CALLBACKS:
     window:
-      resize: 'init'
-      load: 'init'
+      load: '_setupTriggerIfNeeded'
+      resize: '_setupTriggerIfNeeded'
+    document:
+      'Clarat.SectionSpeakingWrapper::ToggleClicked': 'handleToggleClicked'
 
-  wrapper = $('.section-content__wrapper')
-  item = $('.section-content--speaking li')
-  trigger = $('.section-content__toggle')
-  labelMoreLang = trigger.data('expanded-label')
-  labelLessLang = trigger.data('collapsed-label')
-  count = item.length
-  threshold = 5
-  content = $('.section-content__wrapper')
-  collapsedMaxHeight = item.innerHeight() * threshold
-
-  # Collapse spoken languages list if necessary
-  init: ()  =>
-
-    if count > (threshold + 1)
-      wrapper.height collapsedMaxHeight
-
-      trigger.text labelLessLang
-
-      trigger.show()
-             .unbind 'click'
-             .bind 'click', this.toggleHandler
-
-  # Handle trigger interaction
-  toggleHandler: () =>
-
-    content.toggleClass 'is-expanded'
-
-    if content.hasClass 'is-expanded'
-      trigger.text labelMoreLang
+  # simple class & text toggle
+  handleToggleClicked: =>
+    if @content.hasClass 'is-expanded'
+      @content.removeClass 'is-expanded'
+      @trigger.text I18n.t('js.lang_list_toggle.more')
     else
-      trigger.text labelLessLang
+      @content.addClass 'is-expanded'
+      @trigger.text I18n.t('js.lang_list_toggle.less')
 
+
+  ### PRIVATE ###
+
+  # See if list of languages is larger than threshold, if yes set up trigger
+  _setupTriggerIfNeeded: =>
+    item = $('.section-content--speaking li')
+    if item.length > (@THRESHOLD + 1)
+      # resize window
+      $('.section-content__wrapper').height(item.innerHeight() * @THRESHOLD)
+
+      # register callback
+      @trigger.show().unbind('click').bind 'click', ->
+        $(document).trigger('Clarat.SectionSpeakingWrapper::ToggleClicked')
 
 $(document).ready ->
   new Clarat.SectionSpeakingWrapper.Presenter

@@ -11,6 +11,10 @@
   margin: 0 auto;
   padding-top: 30px;
   max-width: 900px;
+
+  body.refugees & {
+    max-width: 1045px;
+  }
 }
 
 .nav-sections__list {

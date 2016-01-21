@@ -1,5 +1,0 @@
-%h3.Map-infowindow__headline
-  %a{href: '{{{ url }}}'} {{{ title }}}
-%b {{{ organization_display_name }}}
-%br
-{{{ address }}}

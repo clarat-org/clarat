@@ -1,4 +1,7 @@
 - provide(:title, @organization.name )
+- content_for :canonical_url,
+              organization_url(section: @organization.canonical_section,
+                               id: @organization.slug)
 - location = @organization.location
 - website = @organization.homepage
 .wrapper-inner class="#{'no-location' unless location}"
@@ -21,41 +24,45 @@
               - @organization.offers.approved.order('name ASC').each do |offer|
                 li.Listing-offers__listitem
                   = link_to offer.name, offer_path(id: offer)
-                .Listing-offers__address
-                  = offer.location_address
+                - if offer.location && offer.location.visible
+                  .Listing-offers__address
+                    = offer.location_address
 
     .section-wrapper-minor
 
       - if location
         - cache [location, 'organization_show_text'] do
-
-          section.section-content.section-content--where
-            h3.section-content__title = t '.where'
-            .section-content__body
-              /! http://microformats.org/wiki/adr start
-              .adr
-                p
-                  - if location.name?
-                    span.org= location.name
+          - if location.visible || website
+            section.section-content.section-content--where
+              h3.section-content__title = t '.where'
+              .section-content__body
+                /! http://microformats.org/wiki/adr start
+                .adr
+                  p
+                    - if location.visible
+                      - if location.name?
+                        span.org= location.name
+                        br
+                      - if location.addition?
+                        span.extended-address= location.addition
+                        br
+                      span.street-address= location.street
+                      br
+                      span.postal-code=> location.zip
+                      span.locality= location.city
+                  - if website
                     br
-                  - if location.addition?
-                    span.extended-address= location.addition
-                    br
-                  span.street-address= location.street
-                  br
-                  span.postal-code=> location.zip
-                  span.locality= location.city
-                - if website
-                  br
-
                     = link_to website.shorten_url + website.pdf_appendix,
                       website.url, target: '_blank'
 
-              /! http://microformats.org/wiki/adr end
-              br
-              #map-container
-                #map-data data={ markers: @markers.to_json }
-                #map-canvas
+                /! http://microformats.org/wiki/adr end
+                - if location.visible
+                  br
+                  #map-container
+                    #map-data data={ markers: @markers.to_json }
+                    #map-canvas
+				  #big-map
+                    button.big-map_close X
 
 
       = link_to new_contact_path,

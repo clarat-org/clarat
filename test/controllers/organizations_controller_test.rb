@@ -5,21 +5,75 @@ describe OrganizationsController do
     describe 'for an approved orga' do
       it 'should work (with friendly id)' do
         orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
-        get :show, id: orga.slug, locale: 'de'
+        FactoryGirl.create :offer, :approved, section: 'family',
+                                              organization: orga
+        get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
 
+      it 'should use the correct canonical URL' do
+        orga = FactoryGirl.create :organization, :approved
+        Organization.any_instance.expects(:section_filters).returns(
+          SectionFilter.where(identifier: 'family')
+        ).twice
+        get :show, id: orga.slug, locale: 'de', section: 'family'
+        assert_response :success
+        canonical_link = css_select('link[rel=canonical]').first
+        assert_equal canonical_link.attributes['href'],
+                     "http://test.host/family/organisationen/#{orga.slug}"
+      end
+
+      it 'should redirect if the wrong section was given' do
+        orga = FactoryGirl.create :organization, :approved
+        FactoryGirl.create :offer, :approved, section: 'family',
+                                              organization: orga
+        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        assert_redirected_to section: 'family'
+      end
+
       it 'shouldnt show on unapproved orga' do
-        orga = FactoryGirl.create :organization
-        get :show, id: orga.slug, locale: 'de'
+        orga = FactoryGirl.create :organization, :with_offer
+        get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
 
       it 'should redirect to 404 if orga not found' do
-        get :show, id: 'doesntexist', locale: 'de'
+        get :show, id: 'doesntexist', locale: 'de', section: 'family'
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
+    end
+  end
+
+  describe "GET 'section_forward'" do
+    it 'should redirect to the default location if it has both sections' do
+      orga = FactoryGirl.create :organization, :approved
+      Organization.any_instance.expects(:section_filters).returns(
+        SectionFilter.all
+      )
+      get :section_forward, id: orga.slug, locale: 'de'
+      assert_redirected_to controller: 'organizations', action: 'show',
+                           section: SectionFilter::DEFAULT
+    end
+
+    it 'should redirect to the family section if it has only that one' do
+      orga = FactoryGirl.create :organization, :approved
+      Organization.any_instance.expects(:section_filters).returns(
+        SectionFilter.where(identifier: 'family')
+      )
+      get :section_forward, id: orga.slug, locale: 'de'
+      assert_redirected_to controller: 'organizations', action: 'show',
+                           section: 'family'
+    end
+
+    it 'should redirect to the refugees section if it has only that one' do
+      orga = FactoryGirl.create :organization, :approved
+      Organization.any_instance.expects(:section_filters).returns(
+        SectionFilter.where(identifier: 'refugees')
+      )
+      get :section_forward, id: orga.slug, locale: 'de'
+      assert_redirected_to controller: 'organizations', action: 'show',
+                           section: 'refugees'
     end
   end
 end

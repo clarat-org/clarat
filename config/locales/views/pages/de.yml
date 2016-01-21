@@ -6,24 +6,28 @@ de:
       how:
         heading: "Wie funktioniert clarat?"
         text: |
-          Gib ein, was dich bedrückt. Oder wähle aus unseren Themen aus. Schon
-          siehst du alle Hilfsangebote in deiner Nähe. Wir sagen dir auch, wie
-          du die Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben
-          sollst. Oder einfach vorbeigehen kannst.
+          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
+          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
+          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
+          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
+          Oder einfach vorbeigehen kannst.
       whom:
         heading: "Für wen ist clarat?"
         text: |
-          clarat ist für alle da. Für Kinder, Jugendliche und Familien. Hier
-          findest du Unterstützung bei Fragen und bei Problemen. Für dich, deine
-           Familie und deine Freunde. Oder auch für andere Menschen, die du
-           kennst und die Hilfe brauchen.
+          clarat ist für alle da. clarat family für Kinder, Jugendliche und
+          Familien. clarat refugees für Flüchtlinge. Hier findest du
+          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
+          und deine Freunde. Oder auch für andere Menschen, die du kennst und
+          die Hilfe brauchen.
       why:
         heading: "Warum gibt es clarat?"
         text: |
           Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen. Sie
-          sind aber oft schwer zu finden. Wir helfen dir dabei. Wir zeigen dir,
-          welche Hilfe es in deiner Nähe gibt.
+          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
+          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
+          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
+          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
+          refugees.
 
     not_found:
       title: "404"
@@ -1007,24 +1011,31 @@ de:
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren Projekte der Kinder- und Jugendförderung. Dabei fiel
-        uns eines immer wieder auf: Es ist schwer herauszufinden, welche
-        Unterstützungsangebote es überhaupt gibt. Und dann wurde uns etwas klar:
-        Wenn es für uns als „Experten“ schon so schwer ist, einen Überblick zu
-        bekommen, wie schwer muss es dann für Kinder, Jugendliche und Familien
-        sein, die wirklich Hilfe brauchen? Die Antwort ist: Sehr schwer! Und
-        damit war die Idee zu clarat geboren: Einfach Hilfe finden. Für alle.
-        Überall.
+        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
+        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
+        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
+        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
+        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
+        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
+        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
+        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
+        Einfach Hilfe finden. Für Familien auf clarat family. Und für
+        Flüchtlinge auf clarat refugees.
       amina: |
         Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
         sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich besonders um Online- und Telefonangebote. Ihr Lieblingssong
-        ist La Prima Estate von Erlend Oye.
+        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
+        Prima Estate von Erlend Oye.
       andrea: |
         Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
         Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
         Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
         Lieblingssong ist Work Me von The Black Keys.
+      astrid: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
+        The Roots feat. Erykah Badu.
       anne: |
         Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
         schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
@@ -1035,16 +1046,31 @@ de:
         Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
         er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
         The Mirror von Michael Jackson.
+      bettina: |
+        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
+        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
+        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
+        Lieblingssong ist Elias von Dispatch.
       elisa: |
         Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
         kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
         kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
         Behind von Kings of Convenience.
+      franziska: |
+        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
+        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
+        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Explanations von Selah Sue.
       janina: |
         Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
         Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
         Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
         weiter. Ihr Lieblingssong ist MFG von Fanta4.
+      janne: |
+        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
+        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
+        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
+        Sweat von Ry X.
       jens: |
         Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
         Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
@@ -1053,7 +1079,7 @@ de:
       jule: |
         Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
         Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team und überprüft alle Infos für die Internetseite. Ihr
+        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
         Lieblingssong ist Home von Edward Sharpe.
       julia: |
         Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
@@ -1065,10 +1091,30 @@ de:
         Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
         Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
         ist All You Need von Sublime.
+      katinka: |
+        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
+        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
+        Cat Power.
       konstantin: |
         Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
         Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
         unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
+      lavinia: |
+        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
+        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
+        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
+        Lieblingssong ist I'm Not Done von Fever Ray.
+      laura: |
+        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
+        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
+        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
+        ist Paint It Black von den Rolling Stones.
+      line: |
+        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
+        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
+        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
+        den Rolling Stones.
       lisa: |
         Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
         clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
@@ -1083,11 +1129,21 @@ de:
         über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
         Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
         Shaka Ponk.
+      nils: |
+        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
+        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
+        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
+        Jein von Fettes Brot.
       stefan: |
         Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
         Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
         er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
         Storm von The Doors.
+      tine: |
+        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
+        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
+        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Survive It von Ghostpoet.
       verena: |
         Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
         Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist

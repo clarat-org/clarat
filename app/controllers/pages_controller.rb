@@ -4,8 +4,9 @@ class PagesController < ApplicationController
   end
 
   def about
-    @names = %w(amina andrea anne basti elisa janina jens jule julia julian
-                konstantin lisa marcus nicole stefan verena)
+    @names = %w(amina andrea anne astrid basti bettina elisa franziska janina
+                janne jens jule julia julian katinka konstantin laura lavinia
+                line lisa marcus nicole nils stefan tine verena)
   end
 
   def faq
@@ -22,5 +23,9 @@ class PagesController < ApplicationController
 
   def not_found
     render status: 404, formats: [:html]
+  end
+
+  def section_forward
+    redirect_to '/' + SectionFilter::DEFAULT + request.fullpath
   end
 end

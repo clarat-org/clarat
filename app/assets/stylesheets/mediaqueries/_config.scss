@@ -15,7 +15,7 @@
     @media (max-width: 750px) { @content; }
   }
   @if $point == S {
-    @media (max-width: 440px) { @content; }
+    @media (max-width: 500px) { @content; }
   }
 }
 

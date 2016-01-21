@@ -4,25 +4,25 @@ Clarat.ToggleAdvancedSearch = {}
 class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
-    '#main-search__advanced-filter':
+    '.main-search__advanced-filter':
       click: 'handleClick'
     document:
       'Clarat.Search::FirstSearchRendered': 'handleSearchRendered'
 
   handleClick: (event) =>
     event.preventDefault()
-    @toggleState()
+    @_toggleState()
 
   # show advanced search if a filter was used
   handleSearchRendered: =>
-    return unless @isSearchFiltered()
-    @toggleState()
+    return unless @_isSearchFiltered()
+    @_toggleState()
 
   ### Private Methods (ue) ###
 
-  toggleState: ->
+  _toggleState: ->
     form = $('.filter-form')
-    trigger = $('#main-search__advanced-filter')
+    trigger = $('.main-search__advanced-filter')
     visibleClass = 'is-visible'
     formMoreLabel = I18n.t('js.search.form_more_label')
     formLessLabel = I18n.t('js.search.form_less_label')
@@ -34,15 +34,16 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
       form.addClass visibleClass
       trigger.text formLessLabel
 
-  isSearchFiltered: ->
+  _isSearchFiltered: ->
     formParams = $.query.keys.search_form
-    typeof formParams.age is 'number' or
+    return false unless formParams
+    return typeof formParams.age is 'number' or
       typeof formParams.language is 'string' or
       typeof formParams.target_audience is 'string' or
       typeof formParams.exclusive_gender is 'string' or
-      typeof formParams.encounters is 'string' and
-      formParams.encounters.split(',').length < 5
+      (typeof formParams.encounters is 'string' and
+      formParams.encounters.split(',').length < 5)
 
 
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.ToggleAdvancedSearch.Presenter

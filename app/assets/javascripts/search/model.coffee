@@ -25,6 +25,9 @@ class Clarat.Search.Model extends ActiveScript.Model
     @encounters = _.chain @encounters.split(',')
       .without(encounter).compact().uniq().value().join(',')
 
+  resetPageVariable: ->
+    @assignAttributes {page: 0}
+
   ## Parent Override
 
   # Page is always set to 0 unless changed explicitly
@@ -69,7 +72,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     )
 
   nearby_query: ->
-    new Clarat.Search.Query.Nearby @generated_geolocation
+    new Clarat.Search.Query.Nearby @generated_geolocation, @section
 
   personal_facet_query: ->
     if @isPersonal()

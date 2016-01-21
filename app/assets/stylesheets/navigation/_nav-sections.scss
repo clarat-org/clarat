@@ -10,7 +10,7 @@
   z-index: 30;
   margin: 0 auto;
   padding-top: 30px;
-  max-width: 750px;
+  max-width: 900px;
 }
 
 .nav-sections__list {
@@ -56,27 +56,89 @@
 
 }
 
-.nav-sections__listitem--e-crisis {
-  background: image-url('picto_crisis.svg') no-repeat center top;
-  background-size: 105px 105px;
-}
 
-.nav-sections__listitem--c-learn {
-  background: image-url('picto_learn.svg') no-repeat center top;
+// Legal: only in refugees
+
+.nav-sections__listitem--a-legal {
+  background: image-url('picto_legal.svg') no-repeat center top;
   background-size: 105px 105px;
 }
 
 .nav-sections__listitem--a-family {
   background: image-url('picto_family.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_family--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_family--family.svg')
+  }
 }
 
 .nav-sections__listitem--b-health {
   background: image-url('picto_health.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_health--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_health--family.svg')
+  }
 }
 
-.nav-sections__listitem--d-violence {
+.nav-sections__listitem--c-learn {
+  background: image-url('picto_learn.svg') no-repeat center top;
+  background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_learn--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_learn--family.svg')
+  }
+}
+
+
+.nav-sections__listitem--d-misc {
+  background: image-url('picto_everydaylife.svg') no-repeat center top;
+  background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_everydaylife--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_everydaylife--family.svg')
+  }
+}
+
+.nav-sections__listitem--e-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
   background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_violence--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_violence--family.svg')
+  }
+}
+
+.nav-sections__listitem--f-crisis {
+  background: image-url('picto_crisis.svg') no-repeat center top;
+  background-size: 105px 105px;
+
+  body.refugees & {
+    background-image: image-url('picto_crisis--refugees.svg')
+  }
+
+  body.family & {
+    background-image: image-url('picto_crisis--family.svg')
+  }
 }

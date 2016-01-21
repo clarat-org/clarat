@@ -40,7 +40,7 @@
 @import "modules/js-modal";
 @import "modules/table";
 @import "modules/noscript";
-
+@import "modules/emailinfo";
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
 @import "modules/sections/section-offer";
@@ -56,6 +56,7 @@
 @import "navigation/nav-sections";
 @import "navigation/nav-site";
 @import "navigation/nav-legal";
+@import "navigation/nav-welt";
 @import "vendor/pagination";
 
 @import "mediaqueries/config";
@@ -65,3 +66,4 @@
 @import "vendor/places-autocomplete_override";
 @import "vendor/formtastic";
 @import "vendor/shariff_override";
+@import "vendor/freshdesk";

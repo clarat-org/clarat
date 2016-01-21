@@ -1,10 +1,18 @@
 header.header-main
   .wrapper-inner
-    h1.Logo.Logo = link_to 'clarat.org', '/'
+    h1.Logo.Logo--notstart
+      = link_to 'clarat.org', home_path(section: current_section)
     .mascot.mascot--header
 
     .Distributor.Distributor--navigation
+      nav.nav-welt.nav-welt--notstart
+        ul.nav-welt__list
+          - SectionFilter::IDENTIFIER.each do |section|
+            li.nav-welt__listitem
+              = link_to section, offers_path(section: section),
+                        id: "clarat--#{section}"
       = render '/offers/shared/search_form', search_form: search_form,
-                                             labels: :short
+                                             labels: :short,
+                                             current_section: current_section
       .Distributor__advanced-filter-trigger-wrapper
-        a.main-search__advanced-filter#main-search__advanced-filter[href='#'] Suchoptionen einblenden
+        a.main-search__advanced-filter[href='#'] Suchoptionen einblenden

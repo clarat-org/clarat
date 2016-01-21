@@ -1,5 +1,7 @@
 - provide :title, @offer.name
 - provide :meta_description, @offer.description.first(154) + '…'
+- content_for :canonical_url,
+              offer_url(section: @offer.canonical_section, id: @offer.slug)
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
     - cache [@offer, 'page_header'] do
@@ -33,19 +35,33 @@
     / Right side (in desktop)
     .section-wrapper-minor
 
+      section.section-content.section-content--speaking
+        h3.section-content__title
+          = t '.speaking'
+        .section-content__wrapper
+          ul.section-content__langlist
+            - @offer.language_filters.pluck(:identifier).each do |language|
+              li
+                => t ".current_and_original_locale.#{language}"
+
+        button.section-content__toggle[
+          data-expanded-label=t('.lang_list_toggle.less')
+          data-collapsed-label=t('.lang_list_toggle.more')
+        ]
+          = t '.speaking'
+
       section.section-content.section-content--whos-offering
         h3.section-content__title
           = t '.who'
 
         .section-content__body
 
-          - if @offer.location
+          - if @offer.location && @offer.location.visible
             - cache [@offer.location, 'offer_show_map']
 
               #map-container
                 #map-data data={ markers: @markers.to_json }
                 #map-canvas
-
             = render 'offers/show/who_location', offer: @offer,
                                                markers: @markers
 

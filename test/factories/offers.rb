@@ -10,13 +10,10 @@ FactoryGirl.define do
     age_to { rand(4..6) }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course).sample
+      %w(personal personal personal personal hotline chat forum email online-course portal).sample
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
-
-    # optional fields
-    comment { maybe FFaker::Lorem.paragraph(rand(4..6))[0..799] }
 
     # associations
 
@@ -31,6 +28,7 @@ FactoryGirl.define do
       audience_count { rand(1..2) }
       opening_count { rand(1..5) }
       fake_address false
+      section nil
     end
 
     after :build do |offer, evaluator|
@@ -57,14 +55,20 @@ FactoryGirl.define do
         offer.location = location
       end
       # Filters
-      offer.section_filters << (
-        SectionFilter.all.sample ||
-          FactoryGirl.create(:section_filter)
-      )
+      section = evaluator.section
+      if section
+        offer.section_filters << (
+          SectionFilter.find_by_identifier(section) ||
+            FactoryGirl.create(:section_filter, identifier: section)
+        )
+      else
+        offer.section_filters << (
+          SectionFilter.all.sample || FactoryGirl.create(:section_filter)
+        )
+      end
       evaluator.language_count.times do
         offer.language_filters << (
-          LanguageFilter.all.sample ||
-            FactoryGirl.create(:language_filter)
+          LanguageFilter.all.sample || FactoryGirl.create(:language_filter)
         )
       end
       evaluator.audience_count.times do

@@ -16,6 +16,7 @@ describe SubscriptionsController do
         post :create, locale: 'de', format: :js, subscription: attrs
       end
       assert_template :create
+      # assert_redirected_to :root
     end
 
     it 'should not work with invalid email' do
@@ -24,6 +25,7 @@ describe SubscriptionsController do
                       subscription: { email: 'not a mail' }
       end
       assert_template :new
+      # assert_redirected_to :root
     end
   end
 end

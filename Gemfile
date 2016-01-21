@@ -33,8 +33,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library & plugins
-# gem 'jquery-rails'
-#
+gem 'jquery-rails'
 # gem 'qtip2-jquery-rails'
 
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
@@ -53,7 +52,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-qtip2'
   gem 'rails-assets-shariff'
+  gem 'rails-assets-sticky-kit'
   gem 'rails-assets-algoliasearch' # search client
+  gem 'rails-assets-isInViewport'
 end
 
 #######
@@ -114,7 +115,7 @@ gem 'awesome_print'
 # gem 'omniauth-facebook'
 # gem 'omniauth-google-oauth2'
 gem 'pundit'
-gem 'arcane'
+gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'

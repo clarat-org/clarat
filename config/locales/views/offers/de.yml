@@ -114,7 +114,6 @@ de:
 
     show:
       what: "Worum geht's?"
-      next_steps: "Was musst du tun?"
       who: "Wo gibt’s die Hilfe?"
       speaking: "Verfügbar in welcher Sprache?"
       last_updated: "Eintrag zuletzt bearbeitet am"
@@ -213,4 +212,7 @@ de:
         heading: "Wo kannst du dich melden?"
       who_location:
         organizations: 'Ein Angebot von:'
+      next_steps:
+        heading: "Was musst du tun?"
+        code_word: "Wonach musst du fragen oder auf der Webseite suchen?"
       # /show partials

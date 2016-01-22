@@ -20,11 +20,7 @@
             == @offer.description_html
 
         / What to do next?
-        section.section-content.section-content--nextsteps
-          h3.section-content__title
-            = t '.next_steps'
-          .section-content__body
-            == @offer.next_steps_html
+        = render 'offers/show/next_steps', offer: @offer
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer

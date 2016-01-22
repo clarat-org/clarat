@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 30ddeb364001ddef3a4817fb7f73c5c47483ee48
+  revision: 7ccb10b92208812c2cfcc44e7d7fb365a2b5ddd3
   specs:
     clarat_base (0.1.4)
       aasm
@@ -263,7 +263,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.99)
     mini_portile2 (2.0.0)
-    minitest (5.8.3)
+    minitest (5.8.4)
     minitest-capybara (0.7.2)
       capybara (~> 2.2)
       minitest (~> 5.0)
@@ -288,11 +288,11 @@ GEM
     multi_xml (0.5.5)
     netrc (0.11.0)
     newrelic_rpm (3.14.1.311)
-    nokogiri (1.6.7.1)
+    nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.7)
       nokogiri
-    paper_trail (4.0.1)
+    paper_trail (4.0.2)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
       request_store (~> 1.1)

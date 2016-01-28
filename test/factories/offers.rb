@@ -135,6 +135,20 @@ FactoryGirl.define do
     trait :with_creator do
       created_by { FactoryGirl.create(:researcher).id }
     end
+
+    trait :with_dummy_translations do
+      after :create do |offer, _evaluator|
+        I18n.available_locales.each do |locale|
+          OfferTranslation.create(
+            offer_id: offer.id, locale: locale, source: 'GoogleTranslate',
+            name: "#{locale}(#{offer.name})",
+            description: "#{locale}(#{offer.description})",
+            old_next_steps: "GET READY FOR CANADA! (#{locale})",
+            opening_specification: offer.opening_specification ? locale : nil
+          )
+        end
+      end
+    end
   end
 end
 

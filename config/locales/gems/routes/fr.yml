@@ -1,0 +1,6 @@
+fr:
+  routes:
+    offers: "angebote"
+    users: "nutzer"
+    contacts: "kontakt"
+    organizations: "organisationen"

@@ -1,0 +1,156 @@
+ar:
+  offers:
+    shared:
+      search_form:
+        loc_label: "أين"
+        loc_placeholder:
+          long: "العنوان، المنطقة، المدينة، الرقم البريدي"
+          short: "المدينة، الرقم البريدي…"
+        query_label: "ماذا"
+        query_placeholder:
+          long: "عروض خاصة بموضوع ...."
+          short: "عروض  مساعدة ل.."
+        button: "بحث"
+
+    invalid_location:
+      title: "للأسف لم نتمكن من العثور على الموقع الذي تم إدخاله بمعرفتك "
+      text: |
+        من فضلك راجع بيانات العنوان الذي قمت بإدخاله وحاول مرة أخرى عن طريق إدخال بيانات بديلة
+        (على سبيل المثال الرقم البريدي والمكان)
+
+    index:
+      noscript_warning: |
+        المعذرة، لكن لكي يمكنك إستخدام البحث الخاص بنا ؛
+        لابد أن يكون جافا سكربت على المحرك البحثي الخاص بك فعالا
+
+      # index partials
+      pending_ajax:
+        searching: "بحث…"
+
+      filters:
+        json:
+          age:
+            zero: "< واحد عام"
+            one: "واحد عام"
+            other: "%{count} سنوات"
+          target_audience:
+            children: "للأطفال والشباب"
+            parents: "للآباء"
+            nuclear_family: "للأسر"
+            acquaintances: "للمعارف والأقارب"
+            pregnant_woman: "للحوامل"
+          exclusive_gender:
+            boys_only: "فقط للصبيان والرجال"
+            girls_only: "فقط للبنات والسيدات"
+          language:
+            deu: "ألماني"
+            eng: "إنجليزي"
+            tur: "تركي"
+            tha: "تايلاندي"
+            bul: "بلغاري"
+            ron: "روماني"
+            sqi: "ألباني"
+            ara: "عربي"
+            fra: "فرنسي"
+            kur: "كردي"
+            rus: "روسي"
+            srp: "صربي"
+            amh: "الأمهرية"
+            bos: "بوسني"
+            ita: "ايطالي"
+            hrv: "كرواتي"
+            pol: "بولندي"
+            por: "برتغالي"
+            vie: "فيتنامي"
+            wol: "الولوف"
+            fas: "فارسي"
+            ben: "بنغالي"
+            spa: "أسباني"
+            tam: "التاميل"
+            urd: "أوردي"
+            mul: "لغات أخرى حسب الطلب"
+            aze: "أذربيجاني"
+            ell: "يوناني"
+            hin: "هندي"
+            mkd: "مقدونية"
+            rom: "رومانيَ"
+            hun: "مجري"
+            "568": "هولندي"
+            "326": "أوكراني"
+            "639": "داري"
+            "150": "لغة الإشارة الألمانية"
+            lav: "لاتفية"
+            lit: "الليتوانية"
+            kik: "كيكويو"
+            zho: "صيني"
+            swa: "اللغة السواحيلي"
+            luo: "لغة اللو"
+            ltz: "لكسمبورجي"
+            nor: "نرويجي"
+            swe: "سويدي"
+            snk: "سونينكي"
+            tgk: "الطاجيكية"
+            tel: "التيلوجو"
+            tuk: "تركمان
+            uzb: "الأوزبكي"
+            bel: "البيلاروسية"
+            zza: "زازا"
+          contact_type:
+            personal: "محلياّ"
+            remote: "بالتليفون أو الإنترنت"
+          encounter:
+            hotline: "تليفون"
+            email: "إيميل"
+            chat: "دردشة"
+            forum: "منتدى"
+            online-course: "دورة بالإنترنت"
+            portal: "قائمة العناورين"
+
+      map_sidebar:
+        map_output_searchresults: إظهار بطاقة نتائج البحث
+
+      # /index partials
+
+    show:
+      what: "ما هو الموضوع؟"
+      next_steps: "ماذا يجب عليك أن تفعله؟"
+      who: "أين توجد المساعدة؟"
+      last_updated: "آخر إدخال"
+
+      # show partials
+      opening_section:
+        heading: "متى يمكنك فعل هذا؟"
+        days:
+          mon: الإثنين
+          tue: الثلاثاء
+          wed: الأربعاء
+          thu: الخميس
+          fri: الجمعة
+          sat: السبت
+          sun: الأحد
+      website_section:
+        internet_presence: "أين تجد المزيد من المعلومات في النت"
+        websites:
+          own: "صفحة النت"
+          document: "المزيد من المعلومات"
+          facebook: "الفيس بوك"
+          twitter: "تويتر"
+          youtube: "اليوتيوب"
+          gplus: "جوجل بلس"
+          pinterest: "بيترست"
+      who_contact_people:
+        female: "السيدة"
+        male: "السيد"
+        dr: ".د"
+        prof_dr: "أ.د."
+        phone: " :فاكس"
+        fax: " :فاكس "
+        email: "البريد الإليكتروني:"
+        obfuscated_email: |
+          هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
+          من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
+      who_section:
+        heading: "أين يمكنك الإتصال؟"
+      who_location:
+        organizations: ' :.عرض من'
+      # /show partials

@@ -2,6 +2,6 @@ ar:
   opening:
     display_string:
       appointment: "حسب الإتفاق"
-      time_frame: "%{فتح} - %غلق}"
-      time_format: "%H:%M ساعة"
+      time_frame: "%{open} - %{close}"
+      time_format: " %H:%M ساعة "
       midnight_exception: "24:00 ساعة"

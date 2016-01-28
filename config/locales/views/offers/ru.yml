@@ -33,7 +33,8 @@ ru:
           age:
             zero: "< 1 Jahr"
             one: "1 Jahr"
-            few: "%{count} years"
+            few: "%{count} Jahre"
+            many: "%{count} Jahre"
             other: "%{count} Jahre"
           target_audience:
             children: "für Kinder und Jugendliche"

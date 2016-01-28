@@ -3,57 +3,57 @@ ar:
     partials:
       banner:
         teaser:
-          text: "clarat.org wird gerade aufgebaut"
-          refugees: "Bald auch Angebote für Flüchtlinge"
+          text: "clarat.org يتم إنشائها"
+          refugees: "قريبا سيكون هناك عروضا للأجئين أيضا"
           # TODO: Delete if beta banner changes permanently
-          link: "Hier erfährst du mehr"
+          link: "هنا يمكنك معرفة المزيد"
       nav_lang:
-        title: "Wähle deine Sprache"
+        title: "إختيار اللغة"
         languages:
-          de: "Deutsch"
-          en: "English"
+          de: "ألماني"
+          en: "إنجليزي"
           ar: "عربي"
-          fr: "Français"
-          ru: "НА РУССКОМ"
-          tr: "Türkçe"
-          pl: "Polskie"
+          fr: "فرنسي"
+          ru: "الروسية"
+          tr: "التركية"
+          pl: "البولندية"
       modal:
         beta_modal:
           text: |
-            Unsere Internetseite clarat.org ist noch ganz neu. Für Berlin kannst
-            du schon viele Hilfsangebote finden. Bald sammeln wir auch
-            Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
-            Hast du etwas gesehen, das wir besser machen können? Oder
-            funktioniert etwas nicht richtig? Dann
-          link: "schreibe uns einfach eine Nachricht."
+            صفحة الإنترنت الخاصة بكلارات. أورج لاتزال جديدة جدا.
+            في برلين يمكنك أن تجد بالفعل العديد من عروض المساعدة.
+            قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
+            هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
+            أو شيئا غير صحيح؟ إذن
+          link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
         unavailable_location_modal: |
-          Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
-          oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
-          Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
-          Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
-          Trage dazu deine E-Mail-Adresse hier ein.
+          لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
+          هذا يعني أن شخصا يساعدك عن طريق التليفون أو الإنترنت
+          مثلا عن طريق اللإيميل أو عن طريق الدردشة
+          سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
+          لذلك سجل عنوان بريدك الإليكتروني هنا
       navigation:
         claim:
-          main: "Einfach Hilfe finden"
+          main: "الحصول على المساعدة ببساطة"
           family: |
-            Unterstützungsangebote für Kinder, Jugendliche und Familien
+            عروض دعم للأطفال؛ الشبان و الأسرة
           refugees: |
-            Unterstützungsangebote für Flüchtlinge
-        category_headline: "Oder suche nach Kategorien"
+            عروض دعم للآجئين
+        category_headline: "أو البحث عن طريق التصنيف"
       footer:
         gplus:
-          anchor: "Google+"
+          anchor: "جوجل بلس"
           href: "https://plus.google.com/110429028641743127592/about"
         twitter:
-          anchor: "Twitter"
+          anchor: "تويتر"
           href: "https://twitter.com/claratpunktorg"
         fb:
-          anchor: "Facebook"
+          anchor: "فيس بوك"
           href: "https://www.facebook.com/claratpunktorg"
-        about: "Über uns"
-        faq: "Häufige Fragen"
-        contact: "Kontakt"
-        blog: "Blog"
-        impressum: "Impressum"
-        tos: "Rechtliche Hinweise"
-        privacy: "Datenschutzhinweise"
+        about: "معلومات عنا"
+        faq: " الأسئلة الشائعة"
+        contact: "الإتصال"
+        blog: "مدونة"
+        impressum: "هيئة التحرير"
+        tos: "إرشادات قانونية"
+        privacy: "إرشادات حماية البيانات الشخصية"

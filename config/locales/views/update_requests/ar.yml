@@ -2,8 +2,8 @@ ar:
   update_requests:
     create:
       success: |
-        Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner
-        Nähe aktiv werden melden wir uns bei dir.
+        شكرا؛ لقد وصلتنا رسالتك
+      وسوف نتواصل معك بمجرد أن يكون لنا نشاط بالقرب منك
     new:
-      email_placeholder: "E-Mail Adresse"
-      button: "Nachricht erhalten"
+      email_placeholder: "عنوان البريد الإليكتروني"
+      button: "الرسالة وصلت"

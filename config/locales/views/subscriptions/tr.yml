@@ -2,11 +2,10 @@ tr:
   subscriptions:
     create:
       success: |
-        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
-        Adresse gesendet.
+        Teşekkürler, onaylama kodu az önce E-Mail adresine gönderilmiştir.
       error: |
-        Bitte gib eine korrekte E-Mail Adresse ein.
+        Lütfen doğru bir E-Mail adresi giriniz.
     shared:
       new:
-        placeholder: "E-Mail Adresse"
-        button: "Newsletter abonnieren"
+        placeholder: "E-Mail Adresi"
+        button: "E-bülten aboneliği"

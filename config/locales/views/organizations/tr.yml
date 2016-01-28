@@ -1,6 +1,6 @@
 tr:
   organizations:
     show:
-      who: "Was macht die Organisation?"
-      where: "Wo findest du die Organisation?"
-      offers_all: "Welche Hilfe bietet diese Organisation?"
+      who: "Bu organizasyon ne yapmaktadır?"
+      where: "Bu organizasyonu nerede bulabilirsin?"
+      offers_all: "Bu organizasyon ne tür yardımlar sunmaktadır?"

@@ -1,16 +1,16 @@
 ar:
   contacts:
     new:
-      contact_heading: "Was möchtest du uns mitteilen?"
+      contact_heading: "ماذا تريد أن تخبرنا؟"
     create:
-      success: "Die Nachricht wurde erfolgreich abgeschickt."
+      success: "تم إرسال الرسالة بنجاح"
     shared:
       new:
-        send_us_a_message: "Schreibe uns eine Nachricht"
-        name_placeholder: "Name (Pflicht)"
+        send_us_a_message: "اكتب لنا رسالة"
+        name_placeholder: "الإسم (فرض)"
         email_placeholder:
           required:
-            :true: "E-Mail Adresse (Pflicht)"
-            :false: "E-Mail Adresse (Optional)"
-        message_placeholder: "Nachricht eingeben (Pflicht)"
-        send: "Abschicken"
+            :true: "البريد الإليكتروني (فرض)"
+            :false: "البريد الإليكتروني (إختياري)"
+        message_placeholder: "اكتب رسالة (فرض)"
+        send: "ارسال"

@@ -1,11 +1,11 @@
 ar:
   shareds:
     forms:
-      fill_field: "Bitte fülle dieses Feld aus"
+      fill_field: "من فضلك إملأ هذه الخانة"
     show:
       cta_report_errors: |
-        Hast du einen Fehler entdeckt?
+        هل اكتشفت خطأّ؟
       google_translate_explanation: |
-        Diese Übersetzung wurde von Google Translate automatisch gemacht.
-        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
-        klingt. Schau dann lieber noch einmal in den deutschen Text.
+        الترجمة تتم بشكل تلقائي من خلال برنامج جوجل للترجمة.
+        حيث أنه يوجد في الغالب أخطاءا لغوية. ومن الممكن أيضا أن تبدو الترجمة غريبة ومضحكة
+        لذلك  يفضل أن تلقى نظرة على النص الألماني

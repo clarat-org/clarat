@@ -2,8 +2,8 @@ tr:
   update_requests:
     create:
       success: |
-        Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner
-        Nähe aktiv werden melden wir uns bei dir.
+        Teşekkürler, mesajın tarafımıza ulaştı. Yakın çevrende aktif hale geldiğimiz durumda,
+        sana bilgi verilecektir.
     new:
-      email_placeholder: "E-Mail Adresse"
-      button: "Nachricht erhalten"
+      email_placeholder: "E-Mail Adresi"
+      button: "Mesaj alınmıştır"

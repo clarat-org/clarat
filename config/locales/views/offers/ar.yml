@@ -2,156 +2,155 @@ ar:
   offers:
     shared:
       search_form:
-        loc_label: "Wo"
+        loc_label: "أين"
         loc_placeholder:
-          long: "Adresse, Stadtteil, Stadt oder PLZ"
-          short: "Stadt, PLZ, …"
-        query_label: "Was"
+          long: "العنوان، المنطقة، المدينة، الرقم البريدي"
+          short: "المدينة، الرقم البريدي…"
+        query_label: "ماذا"
         query_placeholder:
-          long: "Angebote zum Thema …"
-          short: "Angebote zu …"
-        button: "Suchen"
+          long: "عروض خاصة بموضوع ...."
+          short: "عروض  مساعدة ل.."
+        button: "بحث"
 
     invalid_location:
-      title: "Leider konnten wir den von dir eingegeben Standort nicht finden"
+      title: "للأسف لم نتمكن من العثور على الموقع الذي تم إدخاله بمعرفتك "
       text: |
-        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
-        versuche gegebenenfalls mit einer alternativen Eingabe
-        (z.B. "Postleitzahl Ort").
+        من فضلك راجع بيانات العنوان الذي قمت بإدخاله وحاول مرة أخرى عن طريق إدخال بيانات بديلة
+        (على سبيل المثال الرقم البريدي والمكان)
 
     index:
       noscript_warning: |
-        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
-        Browser JavaScript aktiviert haben.
+        المعذرة، لكن لكي يمكنك إستخدام البحث الخاص بنا ؛
+        لابد أن يكون جافا سكربت على المحرك البحثي الخاص بك فعالا
 
       # index partials
       pending_ajax:
-        searching: "Suche…"
+        searching: "بحث…"
 
       filters:
         json:
           age:
-            zero: "< 1 Jahr"
-            one: "1 Jahr"
-            other: "%{count} Jahre"
+            zero: "< واحد عام"
+            one: "واحد عام"
+            other: "%{count} سنوات"
           target_audience:
-            children: "für Kinder und Jugendliche"
-            parents: "für Eltern"
-            nuclear_family: "für Familien"
-            acquaintances: "für Bekannte und Verwandte"
-            pregnant_woman: "für Schwangere"
+            children: "للأطفال والشباب"
+            parents: "للآباء"
+            nuclear_family: "للأسر"
+            acquaintances: "للمعارف والأقارب"
+            pregnant_woman: "للحوامل"
           exclusive_gender:
-            boys_only: "nur für Jungen und Männer"
-            girls_only: "nur für Mädchen und Frauen"
+            boys_only: "فقط للصبيان والرجال"
+            girls_only: "فقط للبنات والسيدات"
           language:
-            deu: "Deutsch"
-            eng: "Englisch"
-            tur: "Türkisch"
-            tha: "Thai"
-            bul: "Bulgarisch"
-            ron: "Rumänisch"
-            sqi: "Albanisch"
-            ara: "Arabisch"
-            fra: "Französisch"
-            kur: "Kurdisch"
-            rus: "Russisch"
-            srp: "Serbisch"
-            amh: "Amharisch"
-            bos: "Bosnisch"
-            ita: "Italienisch"
-            hrv: "Kroatisch"
-            pol: "Polnisch"
-            por: "Portugiesisch"
-            vie: "Vietnamesisch"
-            wol: "Wolof"
-            fas: "Persisch (Farsi)"
-            ben: "Bengalisch"
-            spa: "Spanisch"
-            tam: "Tamil"
-            urd: "Urdu"
-            mul: "weitere Sprachen auf Anfrage"
-            aze: "Aserbaidschanisch"
-            ell: "Griechisch"
-            hin: "Hindi"
-            mkd: "Mazedonisch"
-            rom: "Romanes"
-            hun: "Ungarisch"
-            "568": "Niederländisch"
-            "326": "Ukrainisch"
-            "639": "Dari"
-            "150": "Deutsche Gebärdensprache"
-            lav: "Lettisch"
-            lit: "Litauisch"
-            kik: "Kikuyu"
-            zho: "Chinesisch"
-            swa: "Kiswahili"
-            luo: "Luo"
-            ltz: "Luxemburgisch"
-            nor: "Norwegisch"
-            swe: "Schwedisch"
-            snk: "Soninke"
-            tgk: "Tadschikisch"
-            tel: "Telugu"
-            tuk: "Turkmenisch"
-            uzb: "Usbekisch"
-            bel: "Weißrussisch"
-            zza: "Zaza"
+            deu: "ألماني"
+            eng: "إنجليزي"
+            tur: "تركي"
+            tha: "تايلاندي"
+            bul: "بلغاري"
+            ron: "روماني"
+            sqi: "ألباني"
+            ara: "عربي"
+            fra: "فرنسي"
+            kur: "كردي"
+            rus: "روسي"
+            srp: "صربي"
+            amh: "الأمهرية"
+            bos: "بوسني"
+            ita: "ايطالي"
+            hrv: "كرواتي"
+            pol: "بولندي"
+            por: "برتغالي"
+            vie: "فيتنامي"
+            wol: "الولوف"
+            fas: "فارسي"
+            ben: "بنغالي"
+            spa: "أسباني"
+            tam: "التاميل"
+            urd: "أوردي"
+            mul: "لغات أخرى حسب الطلب"
+            aze: "أذربيجاني"
+            ell: "يوناني"
+            hin: "هندي"
+            mkd: "مقدونية"
+            rom: "رومانيَ"
+            hun: "مجري"
+            "568": "هولندي"
+            "326": "أوكراني"
+            "639": "داري"
+            "150": "لغة الإشارة الألمانية"
+            lav: "لاتفية"
+            lit: "الليتوانية"
+            kik: "كيكويو"
+            zho: "صيني"
+            swa: "اللغة السواحيلي"
+            luo: "لغة اللو"
+            ltz: "لكسمبورجي"
+            nor: "نرويجي"
+            swe: "سويدي"
+            snk: "سونينكي"
+            tgk: "الطاجيكية"
+            tel: "التيلوجو"
+            tuk: "تركمان
+            uzb: "الأوزبكي"
+            bel: "البيلاروسية"
+            zza: "زازا"
           contact_type:
-            personal: "vor Ort"
-            remote: "telefonisch oder online"
+            personal: "محلياّ"
+            remote: "بالتليفون أو الإنترنت"
           encounter:
-            hotline: "Telefon"
-            email: "E-Mail"
-            chat: "Chat"
-            forum: "Forum"
-            online-course: "Online-Kurs"
-            portal: "Adressliste"
+            hotline: "تليفون"
+            email: "إيميل"
+            chat: "دردشة"
+            forum: "منتدى"
+            online-course: "دورة بالإنترنت"
+            portal: "قائمة العناورين"
 
       map_sidebar:
-        map_output_searchresults: Kartenausgabe der Suchergebnisse
+        map_output_searchresults: إظهار بطاقة نتائج البحث
 
       # /index partials
 
     show:
-      what: "Worum geht's?"
-      next_steps: "Was musst du tun?"
-      who: "Wo gibt’s die Hilfe?"
-      last_updated: "Eintrag zuletzt bearbeitet am"
+      what: "ما هو الموضوع؟"
+      next_steps: "ماذا يجب عليك أن تفعله؟"
+      who: "أين توجد المساعدة؟"
+      last_updated: "آخر إدخال"
 
       # show partials
       opening_section:
-        heading: "Wann kannst du das machen?"
+        heading: "متى يمكنك فعل هذا؟"
         days:
-          mon: Montag
-          tue: Dienstag
-          wed: Mittwoch
-          thu: Donnerstag
-          fri: Freitag
-          sat: Samstag
-          sun: Sonntag
+          mon: الإثنين
+          tue: الثلاثاء
+          wed: الأربعاء
+          thu: الخميس
+          fri: الجمعة
+          sat: السبت
+          sun: الأحد
       website_section:
-        internet_presence: "Wo erfährst du mehr im Netz?"
+        internet_presence: "أين تجد المزيد من المعلومات في النت"
         websites:
-          own: "Webseite"
-          document: "Weitere Infos"
-          facebook: "Facebook"
-          twitter: "Twitter"
-          youtube: "Youtube"
-          gplus: "Google+"
-          pinterest: "Pinterest"
+          own: "صفحة النت"
+          document: "المزيد من المعلومات"
+          facebook: "الفيس بوك"
+          twitter: "تويتر"
+          youtube: "اليوتيوب"
+          gplus: "جوجل بلس"
+          pinterest: "بيترست"
       who_contact_people:
-        female: "Frau"
-        male: "Herr"
-        dr: "Dr."
-        prof_dr: "Prof. Dr."
-        phone: "Telefon: "
-        fax: "Fax: "
-        email: "E-Mail: "
+        female: "السيدة"
+        male: "السيد"
+        dr: ".د"
+        prof_dr: "أ.د."
+        phone: " :فاكس"
+        fax: " :فاكس "
+        email: "البريد الإليكتروني:"
         obfuscated_email: |
-          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+          هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
+          من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
       who_section:
-        heading: "Wo kannst du dich melden?"
+        heading: "أين يمكنك الإتصال؟"
       who_location:
-        organizations: 'Ein Angebot von:'
+        organizations: ' :.عرض من'
       # /show partials

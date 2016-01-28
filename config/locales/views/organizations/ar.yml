@@ -1,6 +1,6 @@
 ar:
   organizations:
     show:
-      who: "Was macht die Organisation?"
-      where: "Wo findest du die Organisation?"
-      offers_all: "Welche Hilfe bietet diese Organisation?"
+      who: "ماذا تفعل المنظمة؟"
+      where: "أين تجد المنظمة؟"
+      offers_all: "ما هي المساعدة التي تقدمها المنظمة؟"

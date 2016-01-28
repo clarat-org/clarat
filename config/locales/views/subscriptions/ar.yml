@@ -2,11 +2,11 @@ ar:
   subscriptions:
     create:
       success: |
-        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
-        Adresse gesendet.
+        شكرا جزيلا؛ لقد قمنا توا بإرسال رابط تأكيد
+        على عنوان البريد الإليكتروني الخاص بك
       error: |
-        Bitte gib eine korrekte E-Mail Adresse ein.
+        من فضلك إدخل عنوان بريد إليكتروني صحيح
     shared:
       new:
-        placeholder: "E-Mail Adresse"
-        button: "Newsletter abonnieren"
+        placeholder: " البريد الإليكتروني"
+        button: "الإشتراك في المجموعة الإخبارية"

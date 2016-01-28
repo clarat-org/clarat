@@ -31,9 +31,9 @@ en:
       filters:
         json:
           age:
-            zero: "< 1 Jahr"
-            one: "1 Jahr"
-            other: "%{count} Jahre"
+            zero: "< 1 year"
+            one: "1 year"
+            other: "%{count} years"
           target_audience:
             children: "für Kinder und Jugendliche"
             parents: "für Eltern"

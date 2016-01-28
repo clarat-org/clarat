@@ -65,10 +65,12 @@ ru:
       personal_offers:
         zero: "Leider keine Angebote"
         one: "Ein Angebot vor Ort"
+        few: "%{count} Angebote vor Ort"
         other: "%{count} Angebote vor Ort"
       remote_offers:
         zero: "Keine Telefonberatungen und Onlineangebote"
         one: "Eine Telefonberatung oder ein Onlineangebot"
+        few: "%{count} Telefonberatungen und Onlineangebote"
         other: "%{count} Telefonberatungen und Onlineangebote"
 
     categories_sidebar:

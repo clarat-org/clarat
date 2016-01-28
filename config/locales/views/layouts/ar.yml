@@ -10,13 +10,13 @@ ar:
       nav_lang:
         title: "إختيار اللغة"
         languages:
-          de: "ألماني"
-          en: "إنجليزي"
+          de: "Deutsch"
+          en: "English"
           ar: "عربي"
-          fr: "فرنسي"
-          ru: "الروسية"
-          tr: "التركية"
-          pl: "البولندية"
+          fr: "Français"
+          ru: "НА РУССКОМ"
+          tr: "Türkçe"
+          pl: "Polskie"
       modal:
         beta_modal:
           text: |

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 ar:
   offers:
     shared:
@@ -30,8 +31,11 @@ ar:
       filters:
         json:
           age:
-            zero: "< واحد عام"
-            one: "واحد عام"
+            zero: "أقل من سنة واحدة"
+            one: "سنة واحدة"
+            two: "سنتان"
+            few: "سنوات %{count}"
+            many: "%{count} سنوات"
             other: "%{count} سنوات"
           target_audience:
             children: "للأطفال والشباب"
@@ -91,7 +95,7 @@ ar:
             snk: "سونينكي"
             tgk: "الطاجيكية"
             tel: "التيلوجو"
-            tuk: "تركمان
+            tuk: "تركمان"
             uzb: "الأوزبكي"
             bel: "البيلاروسية"
             zza: "زازا"

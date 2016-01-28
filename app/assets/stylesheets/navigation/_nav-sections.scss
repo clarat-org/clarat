@@ -68,22 +68,25 @@
   background-size: 105px 105px;
 }
 
-.nav-sections__listitem--a-family {
+.nav-sections__listitem--b-family {
   background: image-url('picto_family.svg') no-repeat center top;
   background-size: 105px 105px;
 
   body.family & {
     background-image: image-url('picto_family--family.svg')
   }
-}
-
-.nav-sections__listitem--e-family {
   body.refugees & {
     background-image: image-url('picto_family--refugees.svg')
   }
 }
 
-.nav-sections__listitem--b-health {
+// .nav-sections__listitem--e-family {
+//   body.refugees & {
+//     background-image: image-url('picto_family--refugees.svg')
+//   }
+// }
+
+.nav-sections__listitem--c-health {
   background: image-url('picto_health.svg') no-repeat center top;
   background-size: 105px 105px;
 
@@ -96,7 +99,7 @@
   }
 }
 
-.nav-sections__listitem--c-learn {
+.nav-sections__listitem--d-learn {
   background: image-url('picto_learn.svg') no-repeat center top;
   background-size: 105px 105px;
 
@@ -110,7 +113,7 @@
 }
 
 
-.nav-sections__listitem--d-misc {
+.nav-sections__listitem--e-misc {
   background: image-url('picto_everydaylife.svg') no-repeat center top;
   background-size: 105px 105px;
 
@@ -123,7 +126,7 @@
   }
 }
 
-.nav-sections__listitem--e-violence {
+.nav-sections__listitem--f-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
   background-size: 105px 105px;
 
@@ -131,21 +134,19 @@
   body.family & {
     background-image: image-url('picto_violence--family.svg');
   }
+  body.refugees & {
+    background-image: image-url('picto_violence--refugees.svg');
+  }
 }
 
-body.refugees .nav-sections__listitem--f-violence {
-  background-image: image-url('picto_family--refugees.svg');
-}
-
-.nav-sections__listitem--f-crisis {
+.nav-sections__listitem--g-crisis {
   background: image-url('picto_crisis.svg') no-repeat center top;
   background-size: 105px 105px;
 
   body.family & {
     background-image: image-url('picto_crisis--family.svg');
   }
-}
-
-body.refugees .nav-sections__listitem--g-crisis {
-  background-image: image-url('picto_crisis--refugees.svg');
+  body.refugees & {
+    background-image: image-url('picto_crisis--refugees.svg');
+  }
 }

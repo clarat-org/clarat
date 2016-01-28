@@ -28,6 +28,11 @@
       border-top: 6px solid $brand_core_family;
     }
 
+    body.ar & {
+      left: 0;
+      right: auto;
+    }
+
     .template--500 & {
       display: none;
     }

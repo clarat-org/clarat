@@ -4,7 +4,6 @@
 //
 // ---------------------------------------------------------------
 
-
 .Listing-results__pending-ajax {
   text-align: center;
   font-size: 40px;
@@ -53,6 +52,12 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    body.ar & {
+      right: auto;
+      left: 0;
+    }
+
     a {
       text-decoration: none;
     }
@@ -64,7 +69,6 @@
   @extend %roboto_bold;
   display: inherit;
 }
-
 
 .Listing-results__offer,
 .Listing-results__offerinfo {
@@ -124,4 +128,8 @@
   background: $brand_green_alternative;
   color: $brand_white;
 
+  body.ar & {
+    margin-left: -5px;
+    margin-right: 0;
+  }
 }

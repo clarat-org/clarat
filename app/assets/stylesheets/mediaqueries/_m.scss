@@ -43,7 +43,7 @@
     float: none;
     clear: both;
     margin-top: 0;
-    max-width: 100%;
+    max-width: 60%;
   }
 
   .header-main {
@@ -138,13 +138,16 @@
      // max-height: 95px;
     }
 
+    body.ar & {
+      margin-left: 0;
+    }
+
     .JS-Geolocation__prompt {
       bottom: 35px;
       margin: 0 20% 0 0;
       padding: 5px;
       width: 80%;
     }
-
   }
 
   .Distributor__search-form {
@@ -166,6 +169,10 @@
   .search-form--input-wrapper {
     position: relative;
     left: 15px;
+
+    body.template--pages-home.ar & {
+      right: 0;
+    }
   }
 
 
@@ -227,6 +234,18 @@
 
     #search_form_query {
       padding-left: 53px;
+
+      body.ar & {
+        padding-left: 15px;
+        padding-right: 53px;
+      }
+    }
+
+    #search_form_search_location {
+      body.ar & {
+        padding-left: 15px;
+        padding-right: 40px;
+      }
     }
 
     #search_form_query,
@@ -283,6 +302,10 @@
         padding-right: 55px;
         width: 100%;
 
+        body.ar & {
+          padding-right: 0;
+        }
+
         .template--pages-home & {
           height: 40px;
           width: 100%;
@@ -311,6 +334,23 @@
           bottom: 3px;
           left: 8px;
           max-height: 40px;
+        }
+      }
+    }
+  }
+
+  body.ar {
+    &.template--pages-home {
+      #new_search_form {
+        label {
+          &.string {
+            right: 8px;
+            left: auto;
+          }
+        }
+
+        .input {
+          margin-right: 0;
         }
       }
     }
@@ -483,8 +523,21 @@
       padding: 0;
       text-align: left;
     }
+
+    body.ar & {
+      background-position: 0 top;
+
+      a {
+        text-align: right;
+      }
+    }
   }
 
+  body.ar {
+    .Claim {
+      float: none;
+    }
+  }
   // Content ######################################
 
   .page-wrap:after {
@@ -524,6 +577,11 @@
 
   .content-main.content-main--offers-index {
     padding-left: 0;
+
+    body.ar & {
+      padding-right: 0;
+      width: auto;
+    }
   }
 
   .content-main {

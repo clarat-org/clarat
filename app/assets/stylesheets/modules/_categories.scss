@@ -7,6 +7,10 @@
 .Categories {
   @extend %layout-col-29;
   margin: 26px 2.5% 20px 0;
+
+  body.ar & {
+    margin: 26px 0 20px 2.5%;
+  }
 }
 
 .Categories__headline {

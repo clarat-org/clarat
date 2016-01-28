@@ -23,9 +23,20 @@
   }
 }
 
-.Distributor__search-form {
- float: left;
+.Distributor--navigation {
+  body.ar & {
+    float: left;
+  }
+}
 
+.Distributor__search-form {
+  float: left;
+
+  body.ar & {
+    float: right;
+  }
+
+  body.ar.template--pages-home &,
   .template--pages-home & {
     float: none;
   }
@@ -37,6 +48,11 @@
   width: 110px;
   display: none;
 
+  body.ar & {
+    right: 0;
+    left: auto;
+  }
+
   //body.family & {
   //  background-color: rgba($brand_core_family, .6);
   //}
@@ -44,7 +60,6 @@
   //body.refugees & {
   //  background-color: rgba($brand_core_refugees, .6);
   //}
-
 
   .template--offers-index & {
     display: table;
@@ -64,6 +79,5 @@
   &:after {
     display: none;
   }
-
 
 }

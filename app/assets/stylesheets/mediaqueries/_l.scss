@@ -244,5 +244,16 @@
   .newsletter-subscribe__submit {
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
+
+    body.ar & {
+      border-top-left-radius: 0;
+    }
+  }
+
+  input.newsletter-subscribe__input {
+    body.ar & {
+      border-top-left-radius: 6px;
+      margin-right: 0;
+    }
   }
 }

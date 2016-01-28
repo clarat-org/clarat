@@ -11,7 +11,7 @@
 
 .mascot--footer {
   right: 350px;
-  bottom: 0px;
+  bottom: 0;
   width: 120px;
   height: 150px;
   background-image: image-url('mascot--footer.svg');
@@ -20,6 +20,11 @@
   .template--pages-home & {
     display: none;
   }
+
+  body.ar & {
+    left: 350px;
+    right: auto;
+  }
 }
 
 .mascot--header {
@@ -27,6 +32,11 @@
   left: 240px;
   width: 114px;
   height: 126px;
+
+  body.ar & {
+    right: 240px;
+    left: auto;
+  }
 
   .template--offers-index & {
     background-image: image-url('mascot--index.svg');

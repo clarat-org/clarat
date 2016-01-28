@@ -15,6 +15,10 @@
       position: relative;
       display: inline-block;
       float: left;
+
+      body.ar & {
+        float: right;
+      }
     }
   }
 
@@ -83,6 +87,10 @@
 .main-search__submit {
   float: left;
   height: 47px;
+
+  //body.ar & {
+  //  float: right;
+  //}
 }
 
 #search_form_query {

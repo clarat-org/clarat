@@ -25,16 +25,8 @@
             == translation_block @offer.translation_automated? do
               == @offer.description
 
-      / What to do next?
-      section.section-content.section-content--nextsteps
-        h3.section-content__title
-          = t '.next_steps'
-        .section-content__body
-          - if @offer.next_steps.in_current_locale.any?
-            = @offer.next_steps_for_current_locale
-          - else
-            == translation_block @offer.translation_automated? do
-              == @offer.old_next_steps
+        / What to do next?
+        = render 'offers/show/next_steps', offer: @offer
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer

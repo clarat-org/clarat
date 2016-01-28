@@ -1,0 +1,15 @@
+section.section-content.section-content--nextsteps
+  h3.section-content__title = t '.heading'
+  .section-content__body
+    - if offer.next_steps.in_current_locale.any?
+      = offer.next_steps_for_current_locale
+    - else
+      == translation_block offer.translation_automated? do
+        == offer.old_next_steps
+
+    - if offer.code_word && !offer.code_word.empty?
+      p
+        br
+        = t '.code_word'
+        b
+          =< offer.code_word

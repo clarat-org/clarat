@@ -20,6 +20,10 @@ TargetAudienceFilter.create name: 'Eltern', identifier: 'parents'
 TargetAudienceFilter.create name: 'Familie', identifier: 'nuclear_family'
 TargetAudienceFilter.create name: 'Bekannte', identifier: 'acquaintances'
 
+LogicVersion.create(version: 1, name: 'Altlasten')
+LogicVersion.create(version: 2, name: 'Split Revolution')
+LogicVersion.create(version: 3, name: 'TKKG')
+
 schland = Area.create name: 'Deutschland', minlat: 47.270111, maxlat: 55.058347,
                       minlong: 5.866342, maxlong: 15.041896
 berlin = Area.create name: 'Berlin', minlat: 52.339630, maxlat: 52.675454,

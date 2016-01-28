@@ -14,6 +14,7 @@ FactoryGirl.define do
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
+    code_word { maybe FFaker::Lorem.words(rand(1..3)).join(' ').titleize }
 
     # associations
 
@@ -138,7 +139,7 @@ FactoryGirl.define do
 
     trait :with_dummy_translations do
       after :create do |offer, _evaluator|
-        I18n.available_locales.each do |locale|
+        (I18n.available_locales - [:de]).each do |locale|
           OfferTranslation.create(
             offer_id: offer.id, locale: locale, source: 'GoogleTranslate',
             name: "#{locale}(#{offer.name})",
@@ -146,6 +147,14 @@ FactoryGirl.define do
             old_next_steps: "GET READY FOR CANADA! (#{locale})",
             opening_specification: offer.opening_specification ? locale : nil
           )
+
+          offer.organizations.each do |organization|
+            OrganizationTranslation.create(
+              organization_id: organization.id, locale: locale,
+              source: 'GoogleTranslate',
+              description: "#{locale}(#{organization.untranslated_description})"
+            )
+          end
         end
       end
     end

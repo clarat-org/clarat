@@ -53,19 +53,26 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        longitude: 13.404954,
                                        geoloc: '52.520007,13.404954'
 
-fam = FactoryGirl.create :category, name: 'Familie', icon: 'a-family'
+fam = FactoryGirl.create :category, :with_dummy_translations,
+                         name: 'Familie', icon: 'a-family'
 fam.section_filters = [family]
-legal = FactoryGirl.create :category, name: 'Asyl und Recht', icon: 'a-legal'
+legal = FactoryGirl.create :category, :with_dummy_translations,
+                           name: 'Asyl und Recht', icon: 'a-legal'
 legal.section_filters = [refugees]
-health = FactoryGirl.create :category, name: 'Gesundheit', icon: 'b-health'
+health = FactoryGirl.create :category, :with_dummy_translations,
+                            name: 'Gesundheit', icon: 'b-health'
 health.section_filters = [family, refugees]
-learn = FactoryGirl.create :category, name: 'Lernen', icon: 'c-learn'
+learn = FactoryGirl.create :category, :with_dummy_translations,
+                           name: 'Lernen', icon: 'c-learn'
 learn.section_filters = [family, refugees]
-misc = FactoryGirl.create :category, name: 'Sorgen im Alltag', icon: 'd-misc'
+misc = FactoryGirl.create :category, :with_dummy_translations,
+                          name: 'Sorgen im Alltag', icon: 'd-misc'
 misc.section_filters = [family, refugees]
-violence = FactoryGirl.create :category, name: 'Gewalt', icon: 'e-violence'
+violence = FactoryGirl.create :category, :with_dummy_translations,
+                              name: 'Gewalt', icon: 'e-violence'
 violence.section_filters = [family, refugees]
-crisis = FactoryGirl.create :category, name: 'Notfall', icon: 'f-crisis'
+crisis = FactoryGirl.create :category, :with_dummy_translations,
+                            name: 'Notfall', icon: 'f-crisis'
 crisis.section_filters = [family, refugees]
 
 refugee_mains = Category.mains.in_section(:refugees).all
@@ -73,12 +80,14 @@ subcategories = []
 
 10.times do
   subcategories.push(
-    FactoryGirl.create :category, parent: refugee_mains.sample
+    FactoryGirl.create :category, :with_dummy_translations,
+                       parent: refugee_mains.sample
   )
 end
 
 20.times do
-  FactoryGirl.create :category, parent: subcategories.sample
+  FactoryGirl.create :category, :with_dummy_translations,
+                     parent: subcategories.sample
 end
 
 FactoryGirl.create :offer, :approved, :with_dummy_translations,

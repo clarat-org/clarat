@@ -10,7 +10,6 @@
 
   // Header ######################################
 
-
   .header-main {
     &:before {
       display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
@@ -97,6 +96,18 @@
     .template--pages-home & {
       margin-right: auto;
       max-width: 815px;
+    }
+  }
+
+  .nav-sections__listitem {
+    body.refugees & {
+      margin: 0 1.6%;
+    }
+  }
+
+  .nav-sections {
+    body.refugees & {
+      width: 948px;
     }
   }
 

@@ -1,11 +1,12 @@
 class Clarat.GMaps.Operation.ConstructMap
+  @markerUrl: ->
+    if @_isInternetExplorer11()
+      image_path('gmaps_marker_1.png')
+    else
+      image_path('gmaps_marker_1.svg')
+
   @run: (markers, canvas) ->
     includedPoints = []
-    marker_url =
-      if @_isInternetExplorer11()
-        'gmaps_marker_1.png'
-      else
-        'gmaps_marker_1.svg'
 
     # Create Map
     mapOptions =
@@ -27,14 +28,14 @@ class Clarat.GMaps.Operation.ConstructMap
       marker = new google.maps.Marker
         position: markerPosition
         map: map
-        icon: image_path(marker_url)
+        icon: @markerUrl()
 
       includedPoints.push markerPosition
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
       @_bindMapsEvents map, marker, markerData, canvas
-      # @_bindMarkerToResults marker, markerData
+      @_bindMarkerToResults marker, markerData
 
     # Get User Position
     userPosition = $(canvas).data('position')
@@ -67,16 +68,28 @@ class Clarat.GMaps.Operation.ConstructMap
   # Event bindings for a single marker inside a map
   @_bindMapsEvents: (map, marker, markerData, canvas) ->
     google.maps.event.addListener(
+      map, 'click', ->
+        $('#map-container').trigger 'Clarat.GMaps::MapClick'
+    )
+    google.maps.event.addListener(
       marker, 'click', ->
         $('#map-container').trigger(
           'Clarat.GMaps::MarkerClick', [marker, markerData]
         )
     )
     google.maps.event.addListener(
-      map, 'click', ->
-        $('#map-container').trigger 'Clarat.GMaps::MapClick'
+      marker, 'mouseover', ->
+        $('#map-container').trigger(
+          'Clarat.GMaps::MarkerMouseOver', [marker, markerData]
+        )
+    )
+    google.maps.event.addListener(
+      marker, 'mouseout', ->
+        $('#map-container').trigger(
+          'Clarat.GMaps::MarkerMouseOut', [marker, markerData]
+        )
     )
 
-  # @_bindMarkerToResults: (marker, markerData) ->
-  #   for offerID in markerData.ids
-  #     $("#result-offer-#{offerID}").data('marker', marker)
+  @_bindMarkerToResults: (marker, markerData) ->
+    for offerID in markerData.ids
+      $("#result-offer-#{offerID}").data('marker', marker)

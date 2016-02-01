@@ -3,7 +3,8 @@ json.age((Offer::MIN_AGE..Offer::MAX_AGE).to_a) do |age|
   json.display_name t('.age', count: age)
 end
 
-json.target_audience TargetAudienceFilter::IDENTIFIER do |identifier|
+# TODO: 0-4 for first 5 family target audiences - Remove this for proper fix!!
+json.target_audience TargetAudienceFilter::IDENTIFIER[0..4] do |identifier|
   json.identifier identifier
   json.display_name t(".target_audience.#{identifier}")
 end

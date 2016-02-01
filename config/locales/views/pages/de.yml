@@ -2,7 +2,9 @@ de:
   pages:
 
     home:
-      title: "Unterstützungsangebote für Kinder, Jugendliche und Familien"
+      title:
+        family: "Unterstützungsangebote für Kinder, Jugendliche und Familien"
+        refugees: "Unterstützungsangebote für Flüchtlinge"
       how:
         heading: "Wie funktioniert clarat?"
         text: |

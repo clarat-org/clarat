@@ -470,6 +470,9 @@
     margin-bottom: 20px;
   }
 
+  .nav-sections__list {
+    display: block; // no need for flexbox anymore
+  }
 
   .nav-sections__listitem {
     float: none;

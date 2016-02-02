@@ -6,7 +6,7 @@ end
 json.target_audience TargetAudienceFilter.find_each do |filter|
   json.identifier filter.identifier
   json.display_name t(".target_audience.#{filter.identifier}")
-  json.section filter.section_filter.identifier
+  json.section filter.section_filter.nil? ? '' : filter.section_filter.identifier
 end
 
 json.exclusive_gender Offer::EXCLUSIVE_GENDERS do |identifier|

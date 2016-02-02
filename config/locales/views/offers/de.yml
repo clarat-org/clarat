@@ -96,6 +96,13 @@ de:
             uzb: "Usbekisch"
             bel: "Weißrussisch"
             zza: "Zaza"
+            heb: "Hebräisch"
+            cze: "Tschechisch"
+            slo: "Slowakisch"
+            kor: "Koreanisch"
+            fin: "Finnisch"
+            hat: "Haiti-Kreolisch"
+            ban: "Balinesisch"
           contact_type:
             personal: "vor Ort"
             remote: "telefonisch oder online"
@@ -170,6 +177,13 @@ de:
         uzb: "Usbekisch - Oʻzbek tili"
         bel: "Weißrussisch - беларуская мова"
         zza: "Zaza - Zazaki / Kırmancki"
+        heb: "Hebräisch - עִבְרִית"
+        cze: "Tschechisch - čeština"
+        slo: "Slowakisch - slovenčina"
+        kor: "Koreanisch - 한국말 / 조선말"
+        fin: "Finnisch - suomi"
+        hat: "Haiti-Kreolisch - Kreol"
+        ban: "Balinesisch - singgih / lumrah / sor"
 
       opening_section:
         heading: "Wann kannst du das machen?"

@@ -114,7 +114,7 @@ de:
 
     show:
       what: "Worum geht's?"
-      who: "Wo gibt’s die Hilfe?"
+      who: "Wer bietet diese Hilfe an?"
       speaking: "Verfügbar in welcher Sprache?"
       last_updated: "Eintrag zuletzt bearbeitet am"
       current_and_original_locale:

@@ -13,6 +13,13 @@ Handlebars.registerHelper
     else
       options.fn this
 
+  # Logic comparator. This goes against Handlebars conventions so use with care.
+  ifEqual: (string, options) ->
+    if string is options.hash.to
+      options.fn this
+    else
+      options.inverse this
+
   ifIncludes: (array, options) ->
     if array.indexOf(options.hash.search) isnt -1
       options.fn this

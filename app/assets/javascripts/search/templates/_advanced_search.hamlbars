@@ -27,12 +27,13 @@
         %input{type: 'radio', name: 'target_audience', value: 'any',
                id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
         %label{for: 'target_audience_any'} egal
-      = hb 'each target_audience' do
-        %div.filter-form__radio
-          %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
-                 id: 'target_audience_{{identifier}}',
-                 class: 'JS-TargetAudienceSelector'}
-          %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
+        = hb 'each target_audience' do
+          = hb 'ifEqual section to=@root.current_section' do
+            %div.filter-form__radio
+              %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
+                     id: 'target_audience_{{identifier}}',
+                     class: 'JS-TargetAudienceSelector'}
+              %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
 
   %fieldset.filter-form__fieldset#exclusive_gender
     %legend.filter-form__fieldset__headline

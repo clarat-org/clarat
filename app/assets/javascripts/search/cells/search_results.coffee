@@ -13,6 +13,7 @@ class Clarat.Search.Cell.SearchResults
     return _.merge viewObjectFocus(), @generalViewObject()
 
   generalViewObject: =>
+    @generateMainResultStamps()
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
@@ -76,3 +77,64 @@ class Clarat.Search.Cell.SearchResults
       output += ' &rarr; ' unless index is last_index
 
     output
+
+  generateMainResultStamps: =>
+    console.log @mainResults.hits[0]
+    for main_result, index in @mainResults.hits
+      main_result.stamp = @generateStampForOffer(main_result)
+    for remote_result, index in @remoteResults.hits
+      remote_result.stamp = @generateStampForOffer(main_result)
+
+  generateStampForOffer: (offer) ->
+    return 'no TA!' if offer._target_audience_filters.empty?
+    ta = offer._target_audience_filters[0]
+    locale_entry = 'js.search_results.target_audience' + ".#{ta}"
+    stamp = I18n.t('js.search_results.target_audience.prefix')
+    append_age = true
+    child_age = false
+    if ta == 'children'
+      if offer.gender_first_part_of_stamp != null
+        locale_entry += ".#{offer.gender_first_part_of_stamp}"
+      else if offer.age_from >= 14 && offer.age_to >= 14
+        locale_entry += '.adolescents'
+      else if offer.age_from < 14 && offer.age_to >= 14
+        locale_entry += '.plus_adolescents'
+      else
+        locale_entry += '.default'
+    else if ta == 'parents'
+      if offer.gender_first_part_of_stamp != null && offer.gender_second_part_of_stamp != null
+        locale_entry += ".#{offer.gender_first_part_of_stamp}.#{offer.gender_second_part_of_stamp}"
+      else if offer.gender_first_part_of_stamp != null
+        locale_entry += ".#{offer.gender_first_part_of_stamp}.default"
+        child_age = true
+      else
+        locale_entry += '.default'
+        child_age = true
+    else if ta == 'nuclear_family'
+      if offer.gender_first_part_of_stamp != null && offer.gender_second_part_of_stamp != null
+        locale_entry += ".#{offer.gender_first_part_of_stamp}.#{offer.gender_second_part_of_stamp}"
+      else if offer.gender_first_part_of_stamp != null
+        locale_entry += ".#{offer.gender_first_part_of_stamp}.default"
+      else if offer.gender_second_part_of_stamp != null
+        locale_entry += ".special_#{offer.gender_second_part_of_stamp}"
+      else
+        locale_entry += '.default'
+        append_age = false
+    else if ta == 'everyone'
+      append_age = false
+    console.log locale_entry
+    stamp += I18n.t(locale_entry)
+    stamp += @generateAgeForStamp(offer.age_from, offer.age_to, offer.age_visible && append_age, child_age)
+
+  generateAgeForStamp: (from, to, visible, child_age) ->
+    return '' if !visible
+    age_string = if child_age then "#{I18n.t('js.search_results.stamp_age.of_child')} " else ''
+    if from == 0
+      age_string += "#{I18n.t('js.search_results.stamp_age.to')} #{to}"
+    else if to == 0
+      age_string += "#{I18n.t('js.search_results.stamp_age.from')} #{from}"
+    else if from == to
+      age_string += "#{from}"
+    else
+      age_string += "#{from} - #{to}"
+    " (#{age_string} #{I18n.t('js.search_results.stamp_age.suffix')})"

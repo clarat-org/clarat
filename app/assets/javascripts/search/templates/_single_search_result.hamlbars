@@ -11,6 +11,7 @@
 
     %span.Listing-results__organization
       %span.Listing-results__emphasis
-        = hb 'organization_display_name'
+        / TODO: revert to organization_display_name and show stamp elsewhere!
+        = hb 'stamp' # = hb 'organization_display_name'
       = hb 'if location_visible' do # only show address if visible
         = hb 'location_address'

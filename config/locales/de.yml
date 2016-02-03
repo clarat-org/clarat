@@ -79,6 +79,44 @@ de:
         zero: "Keine Telefonberatungen und Onlineangebote"
         one: "Eine Telefonberatung oder ein Onlineangebot"
         other: "%{count} Telefonberatungen und Onlineangebote"
+      stamp_age:
+        of_child: "Alter des Kindes:"
+        from: "ab"
+        to: "bis"
+        suffix: "Jahre"
+      target_audience:
+        prefix: "für "
+        pregnant_woman: "Schwangere"
+        acquaintances: "Bekannte und Verwandte"
+        everyone: "Alle"
+        children:
+          default: "Kinder"
+          adolescents: "Jugendliche"
+          plus_adolescents: "Kinder und Jugendliche"
+          male: "Jungs"
+          female: "Mädchen"
+        parents:
+          default: "Eltern"
+          male:
+            default: "Mütter"
+            male: "Mütter von Söhnen"
+            female: "Mütter von Töchtern"
+          female:
+            default: "Väter"
+            male: "Väter von Söhnen"
+            female: "Väter von Töchtern"
+        nuclear_family:
+          default: "Familien"
+          male:
+            default: "Mütter mit Kind"
+            male: "Mütter mit Söhnen"
+            female: "Mütter mit Töchtern"
+          female:
+            default: "Väter mit Kind"
+            male: "Väter mit Söhnen"
+            female: "Väter mit Töchtern"
+          special_male: "Familien mit Jungs"
+          special_female: "Familien mit Mädchen"
 
     categories_sidebar:
       all_categories: "Alle Kategorien"

@@ -23,3 +23,14 @@
     margin-top: 21px;
   }
 }
+
+#qtip_welcome_overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(0,0,0,.65);
+}

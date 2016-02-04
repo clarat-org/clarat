@@ -8,12 +8,13 @@
         h2.Claim__firstrow = t '.claim.main'
         h3.Claim__secondrow = t ".claim.#{current_section}"
 
-      nav.nav-welt.nav-welt--start.tooltip--welcome[data-tooltip-text=t('shareds.tooltips.welcome.world_switch')]
+      nav.nav-welt.nav-welt--start
         ul.nav-welt__list
           - SectionFilter::IDENTIFIER.each do |section|
-            li.nav-welt__listitem.nav-welt__listitem--start
+            li.nav-welt__listitem.nav-welt__listitem--start.tooltip--welcome.tooltip--welt[data-tooltip-text=t('shareds.tooltips.welcome.world_switch')]
               = link_to section, home_path(section: section),
                         id: "clarat--#{section}"
+
 
     .header-main__stage
       / Optional stage for animations

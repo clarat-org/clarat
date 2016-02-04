@@ -8,9 +8,10 @@ de:
     tooltips:
       welcome:
         advanced_search: |
-          Suchoptionen einblenden ... Beschreibung ... Blindtext...
+          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
         world_switch: |
-          Welt-Navi... Beschreibung ... Blindtext...
+          Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder,
+          Jugendliche und Familien suchen.
     offer:
       encounter:
             hotline: "Telefon"

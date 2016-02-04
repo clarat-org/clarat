@@ -57,14 +57,15 @@
 
   .template--pages-about & {
     width: 233px;
-    height: 122px;
+    height: 132px;
     background-image: image-url('mascot--about.svg');
   }
 
   .template--contacts-new & {
     background-image: image-url('mascot--contact.svg');
     width: 181px;
-    left: 300px;
+    left: 250px;
+    height: 140px;
   }
 
   .template--pages-faq & {

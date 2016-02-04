@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="180" viewBox="0 0 150 180"><path fill="#155266" d="M42.712 124.18c-1.23-9.453 1.85-18.828 8.437-25.727l5.006 4.783c-5.135 5.378-7.532 12.687-6.577 20.05l-6.868.894z"/><path fill="#155266" d="M53.75 129.295v-20.398c0-2.72 1.08-5.328 3.003-7.25 1.922-1.922 4.53-3.002 7.25-3.002 2.72 0 5.326 1.08 7.25 3.002 1.923 1.922 3.002 4.53 3.002 7.25v20.398H53.75z"/><path fill="#108B33" d="M64.744 130.544h6.927v17.45h-6.926zM56.337 130.544h6.924v17.45h-6.923z"/><path fill="#155266" d="M73.085 106.19c6.776 6.694 16.103 9.927 25.58 8.86l-.772-6.883c-7.392.83-14.656-1.688-19.938-6.908l-4.87 4.93z"/><path fill="#FCBC00" d="M105.85 45.553c4.438-3.316 8.104-7.283 10.965-11.665-5.773-2.904-12.938-2.51-18.47 1.623-5.528 4.134-7.936 10.892-6.786 17.252 5.012-1.502 9.855-3.894 14.29-7.21z"/><circle fill="#FFD1AD" cx="64.003" cy="66.515" r="30.817"/><path fill="#FCBC00" d="M57.382 49.375l-2.174 7.78c-6.53-.712-12.827-2.203-18.793-4.387 5.055-10.12 15.508-17.07 27.588-17.07s22.535 6.95 27.588 17.07c-8.603 3.146-17.894 4.864-27.587 4.864-2.23 0-4.438-.094-6.62-.273v-7.985z"/><g fill="#F7A100"><circle opacity=".76" cx="47.686" cy="73.862" r="5.24"/><circle opacity=".76" cx="80.334" cy="73.862" r="5.24"/></g><g fill="#40301A"><circle cx="55.873" cy="69.682" r="1.516"/><circle cx="72.15" cy="69.681" r="1.517"/></g><path fill="none" stroke="#40301A" stroke-width=".424" stroke-linecap="round" stroke-miterlimit="10" d="M59.653 73.194c.95.76 2.414 1.26 3.943 1.335h.826c1.53-.075 3-.576 3.947-1.336"/><path fill="none" stroke="#40301A" stroke-width=".371" stroke-linecap="round" stroke-miterlimit="10" d="M57.96 67.378c-1.154-1.153-3.022-1.15-4.175.005M74.24 67.378c-1.156-1.153-3.026-1.15-4.18.005"/><g><path fill="#A07A54" d="M91.92 93.443c5.622-.93 10.932 2.88 11.857 8.502l-10.178 1.68-1.68-10.182z"/><path fill="#AF1D3F" d="M85.173 102.92c.74 4.496 4.987 7.54 9.486 6.797 4.492-.74 7.535-4.988 6.794-9.482l-8.142 1.345-1.342-8.142c-4.495.74-7.538 4.986-6.797 9.48z"/><path fill="none" stroke="#D8D5C1" stroke-width=".334" stroke-linecap="round" stroke-miterlimit="10" d="M91.512 97.004c-.154-.895-1.008-1.496-1.902-1.34-.897.154-1.498 1.008-1.344 1.902"/><circle fill="#D8D5C1" cx="89.887" cy="97.389" r=".586"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="84px" height="116px" viewBox="0 0 84 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>mascot--metadata-family</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="mascot--metadata-family" sketch:type="MSLayerGroup">
+            <path d="M9.712,92.18 C8.482,82.727 11.562,73.352 18.149,66.453 L23.155,71.236 C18.02,76.614 15.623,83.923 16.578,91.286 L9.71,92.18 L9.712,92.18 Z" id="Shape" fill="#155266" sketch:type="MSShapeGroup"></path>
+            <path d="M20.75,97.295 L20.75,76.897 C20.75,74.177 21.83,71.569 23.753,69.647 C25.675,67.725 28.283,66.645 31.003,66.645 C33.723,66.645 36.329,67.725 38.253,69.647 C40.176,71.569 41.255,74.177 41.255,76.897 L41.255,97.295 L20.75,97.295 L20.75,97.295 Z" id="Shape" fill="#155266" sketch:type="MSShapeGroup"></path>
+            <path d="M31.744,98.544 L38.671,98.544 L38.671,115.994 L31.745,115.994 L31.744,98.544 Z M23.337,98.544 L30.261,98.544 L30.261,115.994 L23.338,115.994 L23.337,98.544 Z" id="Shape" fill="#108B33" sketch:type="MSShapeGroup"></path>
+            <path d="M40.085,74.19 C46.861,80.884 56.188,84.117 65.665,83.05 L64.893,76.167 C57.501,76.997 50.237,74.479 44.955,69.259 L40.085,74.189 L40.085,74.19 Z" id="Shape" fill="#155266" sketch:type="MSShapeGroup"></path>
+            <path d="M72.85,13.553 C77.288,10.237 80.954,6.27 83.815,1.888 C78.042,-1.016 70.877,-0.622 65.345,3.511 C59.817,7.645 57.409,14.403 58.559,20.763 C63.571,19.261 68.414,16.869 72.849,13.553 L72.85,13.553 Z" id="Shape" fill="#FCBC00" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval" fill="#FFD1AD" sketch:type="MSShapeGroup" cx="31.003" cy="34.515" r="30.817"></circle>
+            <path d="M24.382,17.375 L22.208,25.155 C15.678,24.443 9.381,22.952 3.415,20.768 C8.47,10.648 18.923,3.698 31.003,3.698 C43.083,3.698 53.538,10.648 58.591,20.768 C49.988,23.914 40.697,25.632 31.004,25.632 C28.774,25.632 26.566,25.538 24.384,25.359 L24.384,17.374 L24.382,17.375 Z" id="Shape" fill="#FCBC00" sketch:type="MSShapeGroup"></path>
+            <g id="Group" transform="translate(9.000000, 36.000000)" fill="#F7A100" sketch:type="MSShapeGroup" opacity="0.76">
+                <circle id="Oval" cx="5.686" cy="5.862" r="5.24"></circle>
+                <circle id="Oval" cx="38.334" cy="5.862" r="5.24"></circle>
+            </g>
+            <g id="Group" transform="translate(21.000000, 36.000000)" fill="#40301A" sketch:type="MSShapeGroup">
+                <circle id="Oval" cx="1.873" cy="1.682" r="1.516"></circle>
+                <circle id="Oval" cx="18.15" cy="1.681" r="1.517"></circle>
+            </g>
+            <path d="M26.653,41.194 C27.603,41.954 29.067,42.454 30.596,42.529 L31.422,42.529 C32.952,42.454 34.422,41.953 35.369,41.193" id="Shape" stroke="#40301A" stroke-width="0.424" sketch:type="MSShapeGroup"></path>
+            <path d="M24.96,35.378 C23.806,34.225 21.938,34.228 20.785,35.383 M41.24,35.378 C40.084,34.225 38.214,34.228 37.06,35.383" id="Shape" stroke="#40301A" stroke-width="0.371" sketch:type="MSShapeGroup"></path>
+            <g id="Group" transform="translate(52.000000, 61.000000)" sketch:type="MSShapeGroup">
+                <path d="M6.92,0.443 C12.542,-0.487 17.852,3.323 18.777,8.945 L8.599,10.625 L6.919,0.443 L6.92,0.443 Z" id="Shape" fill="#A07A54"></path>
+                <path d="M0.173,9.92 C0.913,14.416 5.16,17.46 9.659,16.717 C14.151,15.977 17.194,11.729 16.453,7.235 L8.311,8.58 L6.969,0.438 C2.474,1.178 -0.569,5.424 0.172,9.918 L0.173,9.92 Z" id="Shape" fill="#AF1D3F"></path>
+                <path d="M6.512,4.004 C6.358,3.109 5.504,2.508 4.61,2.664 C3.713,2.818 3.112,3.672 3.266,4.566" id="Shape" stroke="#D8D5C1" stroke-width="0.334"></path>
+                <circle id="Oval" fill="#D8D5C1" cx="4.887" cy="4.389" r="0.586"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

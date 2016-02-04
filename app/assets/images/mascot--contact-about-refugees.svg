@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="180" viewBox="0 0 150 180"><path fill="#155266" d="M60.69 117.438c-9.503.763-18.716-2.772-25.28-9.69l5.024-4.767c5.118 5.394 12.3 8.147 19.702 7.556l.553 6.902z"/><path fill="#A07A54" d="M69.497 136.768h6.927v17.448h-6.927zM61.09 136.768h6.924v17.448H61.09z"/><path fill="#155266" d="M76.5 117.17c9.457 1.148 18.81-2 25.656-8.643l-4.824-4.973c-5.338 5.18-12.625 7.635-19.998 6.737l-.835 6.88z"/><circle fill="#A07A54" cx="68.756" cy="72.737" r="30.817"/><path fill="#291F00" d="M62.135 55.598l-2.174 7.78c-6.53-.712-12.826-2.203-18.792-4.387 5.055-10.118 15.508-17.07 27.588-17.07s22.535 6.952 27.588 17.07c-8.604 3.147-17.895 4.865-27.588 4.865-2.23 0-4.438-.094-6.62-.273v-7.984z"/><g fill="#F7A100"><circle opacity=".76" cx="52.439" cy="80.085" r="5.24"/><circle opacity=".76" cx="85.087" cy="80.085" r="5.24"/></g><g fill="#40301A"><circle cx="60.626" cy="75.904" r="1.516"/><circle cx="76.902" cy="75.903" r="1.517"/></g><path fill="none" stroke="#40301A" stroke-width=".424" stroke-linecap="round" stroke-miterlimit="10" d="M64.406 79.417c.95.76 2.414 1.26 3.943 1.335h.825c1.53-.074 3-.575 3.947-1.335"/><path fill="none" stroke="#40301A" stroke-width=".371" stroke-linecap="round" stroke-miterlimit="10" d="M62.713 73.6c-1.154-1.152-3.022-1.15-4.175.006M78.992 73.6c-1.155-1.152-3.025-1.15-4.178.006"/><path fill="#FABC00" d="M58.503 144.627v-29.51c0-2.72 1.08-5.326 3.003-7.25 1.922-1.92 4.53-3 7.25-3 2.72 0 5.326 1.08 7.25 3 1.924 1.924 3.002 4.53 3.002 7.25v29.51H58.503z"/><g><g stroke-miterlimit="10"><path fill="none" stroke="#40301A" stroke-linecap="round" d="M96.498 68.048v46.43"/><g fill="#006B81" stroke="#006B81"><circle cx="96.344" cy="44.03" r="18.246"/><path d="M92.693 68.34l3.65-6.32 3.65 6.32z"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="81px" height="130px" viewBox="0 0 81 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>mascot--contact-about-refugees</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="mascot--contact-about-refugees" sketch:type="MSLayerGroup">
+            <path d="M25.69,92.438 C16.187,93.201 6.974,89.666 0.41,82.748 L5.434,77.981 C10.552,83.375 17.734,86.128 25.136,85.537 L25.689,92.439 L25.69,92.438 Z" id="Shape" fill="#155266" sketch:type="MSShapeGroup"></path>
+            <path d="M34.497,111.768 L41.424,111.768 L41.424,129.216 L34.497,129.216 L34.497,111.768 Z M26.09,111.768 L33.014,111.768 L33.014,129.216 L26.09,129.216 L26.09,111.768 Z" id="Shape" fill="#A07A54" sketch:type="MSShapeGroup"></path>
+            <path d="M41.5,92.17 C50.957,93.318 60.31,90.17 67.156,83.527 L62.332,78.554 C56.994,83.734 49.707,86.189 42.334,85.291 L41.499,92.171 L41.5,92.17 Z" id="Shape" fill="#155266" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval" fill="#A07A54" sketch:type="MSShapeGroup" cx="33.756" cy="47.737" r="30.817"></circle>
+            <path d="M27.135,30.598 L24.961,38.378 C18.431,37.666 12.135,36.175 6.169,33.991 C11.224,23.873 21.677,16.921 33.757,16.921 C45.837,16.921 56.292,23.873 61.345,33.991 C52.741,37.138 43.45,38.856 33.757,38.856 C31.527,38.856 29.319,38.762 27.137,38.583 L27.137,30.599 L27.135,30.598 Z" id="Shape" fill="#291F00" sketch:type="MSShapeGroup"></path>
+            <g id="Group" transform="translate(12.000000, 49.000000)" fill="#F7A100" sketch:type="MSShapeGroup" opacity="0.76">
+                <circle id="Oval" cx="5.439" cy="6.085" r="5.24"></circle>
+                <circle id="Oval" cx="38.087" cy="6.085" r="5.24"></circle>
+            </g>
+            <g id="Group" transform="translate(24.000000, 49.000000)" fill="#40301A" sketch:type="MSShapeGroup">
+                <circle id="Oval" cx="1.626" cy="1.904" r="1.516"></circle>
+                <circle id="Oval" cx="17.902" cy="1.903" r="1.517"></circle>
+            </g>
+            <path d="M29.406,54.417 C30.356,55.177 31.82,55.677 33.349,55.752 L34.174,55.752 C35.704,55.678 37.174,55.177 38.121,54.417" id="Shape" stroke="#40301A" stroke-width="0.424" sketch:type="MSShapeGroup"></path>
+            <path d="M27.713,48.6 C26.559,47.448 24.691,47.45 23.538,48.606 M43.992,48.6 C42.837,47.448 40.967,47.45 39.814,48.606" id="Shape" stroke="#40301A" stroke-width="0.371" sketch:type="MSShapeGroup"></path>
+            <path d="M23.503,119.627 L23.503,90.117 C23.503,87.397 24.583,84.791 26.506,82.867 C28.428,80.947 31.036,79.867 33.756,79.867 C36.476,79.867 39.082,80.947 41.006,82.867 C42.93,84.791 44.008,87.397 44.008,90.117 L44.008,119.627 L23.503,119.627 L23.503,119.627 Z" id="Shape" fill="#FABC00" sketch:type="MSShapeGroup"></path>
+            <g id="Group" transform="translate(43.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M18.498,43.048 L18.498,89.478" id="Shape" stroke="#40301A"></path>
+                <g stroke="#006B81" fill="#006B81">
+                    <circle id="Oval" cx="18.344" cy="19.03" r="18.246"></circle>
+                    <path d="M14.693,43.34 L18.343,37.02 L21.993,43.34 L14.693,43.34 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

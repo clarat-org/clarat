@@ -75,13 +75,12 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
   handleResultMouseOver: (event) ->
     marker = $(event.currentTarget).data('marker')
     if marker
-      #marker.setIcon image_path('mascot--faq.svg')
-      marker.setIcon image_path('gmaps_marker_highlighted.svg')
+      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted')
 
   handleResultMouseOut: (event) ->
     marker = $(event.currentTarget).data('marker')
     if marker
-      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl()
+      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1')
 
   # called by library internally; listener set in Operations.ConstructMap
   handleNativeMapClick: (e) =>

@@ -1,9 +1,9 @@
 class Clarat.GMaps.Operation.ConstructMap
-  @markerUrl: ->
+  @markerUrl: (image_name) ->
     if @_isInternetExplorer11()
-      image_path('gmaps_marker_1.png')
+      image_path("#{image_name}.png")
     else
-      image_path('gmaps_marker_1.svg')
+      image_path("#{image_name}.svg")
 
   @run: (markers, canvas) ->
     includedPoints = []
@@ -28,7 +28,7 @@ class Clarat.GMaps.Operation.ConstructMap
       marker = new google.maps.Marker
         position: markerPosition
         map: map
-        icon: @markerUrl()
+        icon: @markerUrl('gmaps_marker_1')
 
       includedPoints.push markerPosition
       bounds.extend markerPosition

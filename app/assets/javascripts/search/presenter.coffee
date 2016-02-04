@@ -161,6 +161,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.save changes, true
     @sendMainSearch()
     @stopEvent event
+    window.scrollTo(0, 0)
 
   handleFilterChange: (event) =>
     val = $(event.target).val()

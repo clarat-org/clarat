@@ -11,7 +11,7 @@
 
 .mascot--footer {
   right: 350px;
-  bottom: 0px;
+  bottom: 0;
   width: 120px;
   height: 150px;
   background-image: image-url('mascot--footer.svg');
@@ -32,8 +32,23 @@
     background-image: image-url('mascot--index.svg');
   }
 
-  .template--offers-show &, .template--previews-show_offer & {
+  body.refugees.template--offers-index & {
+    background-image: image-url('mascot--index-refugees.svg');
+  }
+
+  .template--offers-show &,
+  .template--previews-show_offer & {
     background-image: image-url('mascot--show.svg');
+  }
+
+  body.family.template--offers-show &,
+  body.family.template--previews-show_offer & {
+    background-image: image-url('mascot--show-family.svg');
+  }
+
+  body.refugees.template--offers-show &,
+  body.refugees.template--previews-show_offer & {
+    background-image: image-url('mascot--show-refugees.svg');
   }
 
   .template--organizations-show &, .template--previews-show_organization & {
@@ -59,4 +74,35 @@
     background-image: image-url('mascot--faq.svg');
   }
 
+  body.family.template--pages-faq & {
+    background-image: image-url('mascot--faq-family.svg');
+  }
+
+  body.refugees.template--pages-faq & {
+    background-image: image-url('mascot--faq-refugees.svg');
+  }
+
+  body.family.template--pages-privacy &,
+  body.family.template--pages-agb &,
+  body.family.template--pages-impressum & {
+    background-image: image-url('mascot--metadata-family.svg');
+  }
+
+  body.refugees.template--pages-privacy &,
+  body.refugees.template--pages-agb &,
+  body.refugees.template--pages-impressum & {
+    background-image: image-url('mascot--metadata-refugees.svg');
+  }
+
+  body.family.template--contacts-new &,
+  body.family.template--pages-about & {
+    background-image: image-url('mascot--contact-about-family.svg');
+  }
+
+  body.refugees.template--contacts-new &,
+  body.refugees.template--pages-about & {
+    background-image: image-url('mascot--contact-about-refugees.svg');
+  }
+
 }
+

@@ -55,4 +55,10 @@ module ApplicationHelper
     section_regex = Regexp.new(SectionFilter::IDENTIFIER.join('|'))
     request.url.sub section_regex, SectionFilter::DEFAULT
   end
+
+  # Get the not selected section. THis stops working as soon as we have more
+  # than 2 sections.
+  def inverse_section section
+    section == 'family' ? 'refugees' : 'family'
+  end
 end

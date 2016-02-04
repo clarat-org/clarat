@@ -11,3 +11,10 @@ de:
           Suchoptionen einblenden ... Beschreibung ... Blindtext...
         world_switch: |
           Welt-Navi... Beschreibung ... Blindtext...
+    offer:
+      encounter:
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"

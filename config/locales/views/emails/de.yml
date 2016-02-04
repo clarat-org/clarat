@@ -3,9 +3,46 @@ de:
     subscribe:
       success_html: |
         Du hast dich erfolgreich für Benachrichtigungen zu Angeboten mit deiner
-        Email-Adresse angemeldet.
+        E-mail-Adresse angemeldet.
         (<a href="%{unsubscribe_href}">wieder abmelden</a>)
     unsubscribe:
       success_html: |
         Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+
+    offers_index:
+      family:
+        heading: |
+          Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+        no_results: |
+          Es gibt derzeit keine veröffentlichten clarat family-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: "Dein <strong>clarat refugees</strong>-Angebot"
+          other: "Deine <strong>%{count} clarat refugees</strong>-Angebote"
+      refugees:
+        heading: |
+          Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+        no_results: |
+          Es gibt derzeit keine veröffentlichten clarat refugees-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: "Dein <strong>clarat family</strong>-Angebot"
+          other: "Deine <strong>%{count} clarat family</strong>-Angebote"
+      shared:
+        info: Info
+        explanation_1: |
+          Hier siehst du auf einen Blick alle deine Angebote bei clarat. Das sind
+          Angebote, bei denen wir deine E-Mail-Adresse als Kontaktadresse gefunden
+          haben.
+        explanation_2: |
+          Wenn wir in Zukunft neue Angebote von dir finden, siehst du die Links zu
+          diesen neuen Angeboten auch hier.
+        explanation_3: |
+          Du kannst dazu diese Seite in deinen Favoriten speichern und so schnell
+          auf einen Blick sehen, was es von dir bei clarat gibt.
+        explanation_4: |
+          Möchtest du per E-Mail informiert werden, wenn neue Angebote von dir bei
+          clarat online sind? Dann nutze den Link am Ende der E-Mail, die du von
+          uns bekommen hast.
+      obfuscated_email: "deiner E-Mail-Adresse"

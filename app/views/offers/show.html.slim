@@ -20,11 +20,7 @@
             == @offer.description_html
 
         / What to do next?
-        section.section-content.section-content--nextsteps
-          h3.section-content__title
-            = t '.next_steps'
-          .section-content__body
-            == @offer.next_steps_html
+        = render 'offers/show/next_steps', offer: @offer
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer
@@ -35,13 +31,25 @@
     / Right side (in desktop)
     .section-wrapper-minor
 
+      section.section-content.section-content--speaking
+        h3.section-content__title
+          = t '.speaking'
+        .section-content__wrapper.is-expanded
+          ul.section-content__langlist
+            - @offer.language_filters.pluck(:identifier).each do |language|
+              li
+                => t ".current_and_original_locale.#{language}"
+
+        button.section-content__toggle
+          = t '.speaking'
+
       section.section-content.section-content--whos-offering
         h3.section-content__title
           = t '.who'
 
         .section-content__body
 
-          - if @offer.location
+          - if @offer.location && @offer.location.visible
             - cache [@offer.location, 'offer_show_map']
 
               #map-container

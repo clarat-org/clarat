@@ -6,6 +6,9 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @markers = $('#map-data').data('markers') unless @markers
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
 
+    @marker_image_default = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1') }
+    @marker_image_highlighted = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted') }
+
     return unless @markers
 
     @currentMap =
@@ -72,15 +75,15 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     for id in markerData.ids
       $("#result-offer-#{id} .Listing-results__offer").removeClass('Listing-results__offer--highlighted');
 
-  handleResultMouseOver: (event) ->
+  handleResultMouseOver: (event) =>
     marker = $(event.currentTarget).data('marker')
     if marker
-      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted')
+      marker.setIcon @marker_image_highlighted
 
-  handleResultMouseOut: (event) ->
+  handleResultMouseOut: (event) =>
     marker = $(event.currentTarget).data('marker')
     if marker
-      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1')
+      marker.setIcon @marker_image_default
 
   # called by library internally; listener set in Operations.ConstructMap
   handleNativeMapClick: (e) =>

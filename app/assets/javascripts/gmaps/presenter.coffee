@@ -7,7 +7,7 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
 
     @marker_image_default = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1') }
-    @marker_image_highlighted = { url: image_path('gmaps_marker_highlighted.svg') }
+    @marker_image_highlighted = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted') }
 
     return unless @markers
 

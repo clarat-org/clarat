@@ -1,7 +1,7 @@
 ar:
   pages:
     home:
-      title: "Unterstützungsangebote für Kinder, Jugendliche und Familien"
+      title: "عروض دعم للأطفال والشبان والأسر"
       how:
         heading: "Wie funktioniert clarat?"
         text: |
@@ -30,16 +30,16 @@ ar:
 
     not_found:
       title: "404"
-      heading: "Leider konnten wir diese Seite nicht finden."
+      heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
       description: |
-        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
-        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
-        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
-        Bilder nach passender Hilfe suchen.
+        اكتب ببساطة في خانة البحث؛ ما هي المساعدة التي تبحث عنها
+        أو ما هي مشكلتك؟ سوف تعرض لك كلارات عروضا أكثر بالقرب منك
+        {start_page} أو اذهب الى الصفحة الرئيسية
+        هناك يمكنك من خلال الصور المستديرة أن تبحث عن المساعدة المناسبة
 
     agb:
-      title: "Rechtliche Hinweise"
-      heading: "Rechtliche Hinweise"
+      title: "إرشادات قانونية"
+      heading: "إرشادات قانونية"
       text_html: |
         <p>
         Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
@@ -86,8 +86,8 @@ ar:
         der Bundesrepublik Deutschland.
         </p>
     faq:
-      title: "Häufige Fragen"
-      heading: "Häufige Fragen"
+      title: "أسئلة شائعة"
+      heading: "أسئلة شائعة"
       section_one:
         heading: "Wer, wie, was?"
         question_one: "> Was macht clarat?"
@@ -996,13 +996,13 @@ ar:
 
 
     impressum:
-      title: "Impressum"
-      heading: "Impressum"
+      title: "هيئة التحرير"
+      heading: "هيئة التحرير"
 
       responsible_html: |
-        Vorstand<br/>
+        مجلس الإدارة<br/>
         Dr. Dr. Christoph Glaser<br/>
-        (verantwortlich für den Inhalt der Website)
+        (مسئول عن محتويات صفحة الإنترنت)
 
     about:
       title: "Über Uns"

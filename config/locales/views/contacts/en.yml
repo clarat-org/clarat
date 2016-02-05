@@ -3,7 +3,7 @@ en:
     new:
       contact_heading: "What would you like to tell us?"
     create:
-      success: "Message send successfully."
+      success: "Message successfully sent."
     shared:
       new:
         send_us_a_message: "Write us a message"

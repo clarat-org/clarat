@@ -2,31 +2,30 @@ en:
   offers:
     shared:
       search_form:
-        loc_label: "Wo"
+        loc_label: "Where"
         loc_placeholder:
-          long: "Adresse, Stadtteil, Stadt oder PLZ"
-          short: "Stadt, PLZ, …"
-        query_label: "Was"
+          long: "Address, District, City or ZIP"
+          short: "City, ZIP, …"
+        query_label: "What"
         query_placeholder:
-          long: "Angebote zum Thema …"
-          short: "Angebote zu …"
-        button: "Suchen"
+          long: "Offers on the subject of …"
+          short: "Offers on …"
+        button: "Search"
 
     invalid_location:
-      title: "Leider konnten wir den von dir eingegeben Standort nicht finden"
+      title: "Unfortunately we could not find the location you entered"
       text: |
-        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
-        versuche gegebenenfalls mit einer alternativen Eingabe
-        (z.B. "Postleitzahl Ort").
+        Please check your entry or try searching for something else.
+        (E.g "ZIP, Location").
 
     index:
       noscript_warning: |
-        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
-        Browser JavaScript aktiviert haben.
+        We are sorry, but in order to use our search, you need to have
+        JavaScript enabled in your browser.
 
       # index partials
       pending_ajax:
-        searching: "Suche…"
+        searching: "Searching…"
 
       filters:
         json:
@@ -35,123 +34,123 @@ en:
             one: "1 year"
             other: "%{count} years"
           target_audience:
-            children: "für Kinder und Jugendliche"
+            children: "for children and adolescents"
             parents: "für Eltern"
-            nuclear_family: "für Familien"
-            acquaintances: "für Bekannte und Verwandte"
-            pregnant_woman: "für Schwangere"
+            nuclear_family: "for Families"
+            acquaintances: "for friends and Family"
+            pregnant_woman: "for pregnant women"
           exclusive_gender:
-            boys_only: "nur für Jungen und Männer"
-            girls_only: "nur für Mädchen und Frauen"
+            boys_only: "Boys and men only"
+            girls_only: "girls and women only"
           language:
-            deu: "Deutsch"
-            eng: "Englisch"
-            tur: "Türkisch"
+            deu: "German"
+            eng: "English"
+            tur: "Türkish"
             tha: "Thai"
-            bul: "Bulgarisch"
-            ron: "Rumänisch"
-            sqi: "Albanisch"
-            ara: "Arabisch"
-            fra: "Französisch"
-            kur: "Kurdisch"
-            rus: "Russisch"
-            srp: "Serbisch"
+            bul: "Bulgarian"
+            ron: "Rumanian"
+            sqi: "Albanian"
+            ara: "Arabic"
+            fra: "French"
+            kur: "Kurdish"
+            rus: "Russian"
+            srp: "Serbian"
             amh: "Amharisch"
-            bos: "Bosnisch"
-            ita: "Italienisch"
-            hrv: "Kroatisch"
-            pol: "Polnisch"
-            por: "Portugiesisch"
-            vie: "Vietnamesisch"
+            bos: "Bosnian"
+            ita: "Italian"
+            hrv: "Croatian"
+            pol: "Polish"
+            por: "Portugese"
+            vie: "Vietnamese"
             wol: "Wolof"
-            fas: "Persisch (Farsi)"
+            fas: "Persian (Farsi)"
             ben: "Bengalisch"
-            spa: "Spanisch"
+            spa: "Spanish"
             tam: "Tamil"
             urd: "Urdu"
-            mul: "weitere Sprachen auf Anfrage"
-            aze: "Aserbaidschanisch"
-            ell: "Griechisch"
+            mul: "more languages upon request"
+            aze: "Azeri"
+            ell: "Greek"
             hin: "Hindi"
-            mkd: "Mazedonisch"
+            mkd: "Macedonian"
             rom: "Romanes"
-            hun: "Ungarisch"
-            "568": "Niederländisch"
-            "326": "Ukrainisch"
+            hun: "Hungarian"
+            "568": "Dutch"
+            "326": "Ukranian"
             "639": "Dari"
-            "150": "Deutsche Gebärdensprache"
-            lav: "Lettisch"
-            lit: "Litauisch"
+            "150": "German sign language"
+            lav: "Latvian"
+            lit: "Lithuanian"
             kik: "Kikuyu"
-            zho: "Chinesisch"
+            zho: "Chinese"
             swa: "Kiswahili"
             luo: "Luo"
-            ltz: "Luxemburgisch"
-            nor: "Norwegisch"
-            swe: "Schwedisch"
+            ltz: "Luxemburgish"
+            nor: "Norwegian"
+            swe: "Schwedish"
             snk: "Soninke"
-            tgk: "Tadschikisch"
+            tgk: "Tadjik"
             tel: "Telugu"
-            tuk: "Turkmenisch"
-            uzb: "Usbekisch"
-            bel: "Weißrussisch"
+            tuk: "Turkmenian"
+            uzb: "Uzbek"
+            bel: "Belorussian"
             zza: "Zaza"
           contact_type:
-            personal: "vor Ort"
-            remote: "telefonisch oder online"
+            personal: "personal"
+            remote: "by telephone or online"
           encounter:
-            hotline: "Telefon"
-            email: "E-Mail"
+            hotline: "Telephone"
+            email: "Email"
             chat: "Chat"
             forum: "Forum"
-            online-course: "Online-Kurs"
-            portal: "Adressliste"
+            online-course: "Online-course"
+            portal: "Address list"
 
       map_sidebar:
-        map_output_searchresults: Kartenausgabe der Suchergebnisse
+        map_output_searchresults: map output of the search results
 
       # /index partials
 
     show:
-      what: "Worum geht's?"
-      next_steps: "Was musst du tun?"
-      who: "Wo gibt’s die Hilfe?"
-      last_updated: "Eintrag zuletzt bearbeitet am"
+      what: "What is it about?"
+      next_steps: "What do you need to do?"
+      who: "Where can you find the help?"
+      last_updated: "Entry last modified on"
 
       # show partials
       opening_section:
-        heading: "Wann kannst du das machen?"
+        heading: "When can you do this?"
         days:
-          mon: Montag
-          tue: Dienstag
-          wed: Mittwoch
-          thu: Donnerstag
-          fri: Freitag
-          sat: Samstag
-          sun: Sonntag
+          mon: Monday
+          tue: Tuesday
+          wed: Wednesday
+          thu: Thursday
+          fri: Friday
+          sat: Saturday
+          sun: Sunday
       website_section:
-        internet_presence: "Wo erfährst du mehr im Netz?"
+        internet_presence: "Where can you find out more online?"
         websites:
           own: "Webseite"
-          document: "Weitere Infos"
+          document: "Further Information"
           facebook: "Facebook"
           twitter: "Twitter"
           youtube: "Youtube"
           gplus: "Google+"
           pinterest: "Pinterest"
       who_contact_people:
-        female: "Frau"
-        male: "Herr"
+        female: "Ms."
+        male: "Mister"
         dr: "Dr."
         prof_dr: "Prof. Dr."
-        phone: "Telefon: "
+        phone: "Telephone: "
         fax: "Fax: "
-        email: "E-Mail: "
+        email: "Email: "
         obfuscated_email: |
-          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+          This e-mail address is protected from spam bots, you must enable JavaScript in
+          your browser to view it.
       who_section:
-        heading: "Wo kannst du dich melden?"
+        heading: "how can you get in touch?"
       who_location:
-        organizations: 'Ein Angebot von:'
+        organizations: 'An offer provided by:'
       # /show partials

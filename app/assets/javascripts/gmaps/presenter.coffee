@@ -5,7 +5,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @canvas = document.getElementById('map-canvas')
     @markers = $('#map-data').data('markers') unless @markers
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
-    
     return unless @markers
 
     @currentMap =

@@ -6,8 +6,8 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @markers = $('#map-data').data('markers') unless @markers
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
 
-    @marker_image_default = Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1')
-    @marker_image_highlighted = Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted')
+    @marker_image_default = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1') }
+    @marker_image_highlighted = { url: Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted') }
 
     return unless @markers
 
@@ -77,11 +77,13 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
 
   handleResultMouseOver: (event) =>
     marker = $(event.currentTarget).data('marker')
+    console.log @marker_image_highlighted
     if marker
       marker.setIcon @marker_image_highlighted
 
   handleResultMouseOut: (event) =>
     marker = $(event.currentTarget).data('marker')
+    console.log @marker_image_default
     if marker
       marker.setIcon @marker_image_default
 

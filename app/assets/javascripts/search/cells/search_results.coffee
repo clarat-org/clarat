@@ -17,6 +17,7 @@ class Clarat.Search.Cell.SearchResults
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     section: $('body').data('section')
+    offers_path: location.pathname
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

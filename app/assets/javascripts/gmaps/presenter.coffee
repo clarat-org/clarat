@@ -5,7 +5,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @canvas = document.getElementById('map-canvas')
     @markers = $('#map-data').data('markers') unless @markers
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
-
     return unless @markers
 
     @currentMap =
@@ -18,8 +17,13 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     '#map-container':
       mousedown: 'handleMapClick'
       'Clarat.GMaps::MarkerClick': 'handleMarkerClick'
+      'Clarat.GMaps::MarkerMouseOver': 'handleMarkerMouseOver'
+      'Clarat.GMaps::MarkerMouseOut': 'handleMarkerMouseOut'
       'Clarat.GMaps::MapClick': 'handleNativeMapClick'
       'Clarat.GMaps::Resize': 'handleMapResize'
+    '.JS-trigger-marker':
+      mouseover: 'handleResultMouseOver'
+      mouseout: 'handleResultMouseOut'
 
   # Expand map to include all currently contained markers
   handleMapResize: =>
@@ -58,6 +62,24 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @infowindow.close()
     @infowindow.setContent contentString
     @infowindow.open @currentMap.instance, marker
+
+  handleMarkerMouseOver: (_event, _marker, markerData) =>
+    for id in markerData.ids
+      $("#result-offer-#{id} .Listing-results__offer").addClass('Listing-results__offer--highlighted');
+
+  handleMarkerMouseOut: (_event, _marker, markerData) =>
+    for id in markerData.ids
+      $("#result-offer-#{id} .Listing-results__offer").removeClass('Listing-results__offer--highlighted');
+
+  handleResultMouseOver: (event) =>
+    marker = $(event.currentTarget).data('marker')
+    if marker
+      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted')
+
+  handleResultMouseOut: (event) =>
+    marker = $(event.currentTarget).data('marker')
+    if marker
+      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1')
 
   # called by library internally; listener set in Operations.ConstructMap
   handleNativeMapClick: (e) =>

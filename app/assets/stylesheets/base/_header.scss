@@ -56,15 +56,28 @@
 .header-main__foreground {
   @extend %clearfix;
   height: inherit;
-  background: image-url('foreground.svg') no-repeat center 102%;
   background-size: contain;
 
+
+
   body.refugees & {
-    background: image-url('foreground--refugees.svg') no-repeat center 102%;
+    background: image-url('foreground--refugees.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
   }
 
   body.family & {
-    background: image-url('foreground--family.svg') no-repeat center 102%;
+    background: image-url('foreground--family.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+  }
+
+  body.family &,
+  body.refugees & {
+    html.ie11 &,
+    html.ie10 &{
+      background-position: 50% 80px;
+    }
   }
 
 }

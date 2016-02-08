@@ -8,6 +8,9 @@ describe NextStep do
   describe 'scopes' do
     describe 'in_current_locale' do
       it 'should find all that are translated to the current locale' do
+        former_locales = I18n.available_locales
+        I18n.available_locales = [:de, :en, :fr, :pl]
+
         NextStep.create text_de: 'foo', text_fr: 'foo',
                         text_en: nil, text_pl: ''
 
@@ -23,6 +26,8 @@ describe NextStep do
         I18n.with_locale(:pl) do
           NextStep.in_current_locale.count.must_equal 0
         end
+
+        I18n.available_locales = former_locales
       end
     end
   end

@@ -54,25 +54,25 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        geoloc: '52.520007,13.404954'
 
 fam = FactoryGirl.create :category, :with_dummy_translations,
-                         name: 'Familie', icon: 'a-family'
+                         name: 'Familie', icon: 'b-family'
 fam.section_filters = [family]
 legal = FactoryGirl.create :category, :with_dummy_translations,
                            name: 'Asyl und Recht', icon: 'a-legal'
 legal.section_filters = [refugees]
 health = FactoryGirl.create :category, :with_dummy_translations,
-                            name: 'Gesundheit', icon: 'b-health'
+                            name: 'Gesundheit', icon: 'c-health'
 health.section_filters = [family, refugees]
 learn = FactoryGirl.create :category, :with_dummy_translations,
-                           name: 'Lernen', icon: 'c-learn'
+                           name: 'Lernen', icon: 'd-learn'
 learn.section_filters = [family, refugees]
 misc = FactoryGirl.create :category, :with_dummy_translations,
-                          name: 'Sorgen im Alltag', icon: 'd-misc'
+                          name: 'Sorgen im Alltag', icon: 'e-misc'
 misc.section_filters = [family, refugees]
 violence = FactoryGirl.create :category, :with_dummy_translations,
-                              name: 'Gewalt', icon: 'e-violence'
+                              name: 'Gewalt', icon: 'f-violence'
 violence.section_filters = [family, refugees]
 crisis = FactoryGirl.create :category, :with_dummy_translations,
-                            name: 'Notfall', icon: 'f-crisis'
+                            name: 'Notfall', icon: 'g-crisis'
 crisis.section_filters = [family, refugees]
 
 refugee_mains = Category.mains.in_section(:refugees).all

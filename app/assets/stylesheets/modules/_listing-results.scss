@@ -28,11 +28,11 @@
 
 .Listing-results__listitem {
   margin-bottom: 25px;
+}
 
-  &.JS-highlighted {
-    .Listing-results__offer {
-      background: $brand_orange;
-    }
+.Listing-results__offer {
+  &.Listing-results__offer--highlighted {
+    background: $brand_orange;
   }
 }
 

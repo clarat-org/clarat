@@ -607,6 +607,10 @@
     margin-top: -68px;
     height: 68px;
     content: "";
+
+    .template--offers-index & {
+      display: none;
+    }
   }
 
 }

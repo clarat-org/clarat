@@ -19,10 +19,11 @@ en:
       anchor: 'Show all >>'
     cookie_warning_html: |
       Cookies help us deliver our services. By using the website you agree to our
-      use of Cookies.
+      use of cookies.
       <a href="/datenschutzhinweise">More</a>.
-    more_filter_options: 'Show more filters'
-    less_filter_options: 'Show fewer filters'
+    lang_list_toggle:
+      more: "Show more filters"
+      less: "Show fewer filters"
     mobile_filter: 'Filter results'
     ajax_error:
       error: "Search error"
@@ -31,22 +32,32 @@ en:
         if this problem reoccurs.
     query_field:
       placeholder_words:
-        - adoption
-        - drugs
-        - violence
-        - private lessons
-        - emergency
-        # - justice
-        - orphan
-        - unemployed
-        - food
-        - ill
-        - homeless
-        - smoking
-        - pregnant
-        - gay
-        - skipping school
-        # - living
+        family:
+          - adoption
+          - drugs
+          - violence
+          - private lessons
+          - emergency
+          # - justice
+          - orphan
+          - unemployed
+          - food
+          - ill
+          - homeless
+          - smoking
+          - pregnant
+          - gay
+          - skipping school
+          # - living
+        refugees:
+          - citizenship
+          - German course
+          - post-war trauma
+          - PTSD
+          - asylum
+          - health care
+          - authorities
+          - residence
       example_placeholder: "e.g. %{word}, …"
 
     search:

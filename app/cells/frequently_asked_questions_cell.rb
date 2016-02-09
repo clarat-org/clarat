@@ -14,6 +14,7 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def question section_id, question_id
     link_options = link_options_hash section_id, question_id
+    @anchor = I18n.exists?(".section_#{section_id}.question_#{question_id}.anchor", :de) ? I18n.t(".section_#{section_id}.question_#{question_id}.anchor") : ''
     @question_text = I18n.t(".section_#{section_id}.question_#{question_id}.question")
     @answer_text = I18n.t ".section_#{section_id}.question_#{question_id}.answer", link_options
     render

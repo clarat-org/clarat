@@ -45,14 +45,14 @@ de:
       answer: |
         Gib dein Problem ein. Und wo du Hilfe suchst. Dann findest du passende
         Unterstützungsangebote in deiner Nähe. Oder Hilfe übers Telefon oder im
-        Internet. %{ref_to_how_to_find_offers} erklären wir dir genau, wie du
+        Internet. %{ref_to_how_to_find_right_help} erklären wir dir genau, wie du
         findest, was du suchst. Wenn du auf ein Angebot klickst, sagen wir dir,
         was du als nächstes tun musst. Zum Beispiel, ob du anrufen oder einfach
         hingehen kannst.
       link_1:
         name: "Hier"
-        var: "ref_to_how_to_find_offers"
-        url: "/haeufige-fragen/#how_to_find_offers"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
         class: "FAQ_anchor_link"
     question_4:
       question: "Ist die Suche bei clarat kostenlos?"
@@ -332,6 +332,7 @@ de:
         ist. Wenn du nicht so gerne rausgehen möchtest, hilft man dir hier auch
         am Telefon oder über das Internet.
     question_5:
+      anchor: "how_to_find_right_help"
       question: "Wie finde ich die richtige Hilfe für mich?"
       answer: |
         Es gibt zwei Möglichkeiten, wie du die richtige Hilfe für dich finden
@@ -403,7 +404,7 @@ de:
       answer: |
         Starte deine Suche nach Hilfe. Wenn du wissen möchtest, wie du die
         richtige Hilfe für dich findest, kannst du das
-        %{ref_to_how_to_find_offers} nachlesen. Wenn du jetzt auf der
+        %{ref_to_how_to_find_right_help} nachlesen. Wenn du jetzt auf der
         Ergebnisseite bist, siehst du oben rechts <b>Suchoptionen einblenden
         </b>. Wenn du darauf klickst, kannst du verschiedene Filter benutzen.
         Damit machst du deine Suche noch genauer:
@@ -442,8 +443,8 @@ de:
         </p>
       link_1:
         name: "hier"
-        var: "ref_to_how_to_find_offers"
-        url: "/haeufige-fragen/#how_to_find_offers"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
         class: "FAQ_anchor_link"
     question_10:
       question: "Wieso finde ich nicht das, was ich suche?"
@@ -455,7 +456,7 @@ de:
         Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
         mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
         versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
-        Kategorien</i>. %{ref_to_how_to_find_offers} kannst du nachlesen, wie
+        Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
         diese Suche funktioniert.
         </li>
         <li>
@@ -478,8 +479,8 @@ de:
         </p>
       link_1:
         name: "Hier"
-        var: "ref_to_how_to_find_offers"
-        url: "/haeufige-fragen/#how_to_find_offers"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
         class: "FAQ_anchor_link"
       link_2:
         name: "post@clarat.org"
@@ -563,6 +564,7 @@ de:
   section_4:
     heading: "Hast du Fragen zu clarat in verschiedenen Sprachen?"
     question_1:
+      anchor: "how_many_languages"
       question: "Auf welchen Sprachen gibt es clarat?"
       answer: |
         Alle Seiten bei clarat kannst du auf Deutsch, Englisch, Arabisch,

@@ -62,10 +62,18 @@
                 /! http://microformats.org/wiki/adr end
                 - if location.visible
                   br
+                  - map_options = { \
+                    scrollwheel: false,
+                    mapTypeControl: false,
+                    zoomControl: false,
+                    streetViewControl: false,
+                    draggableCursor: 'pointer'}
+                  - ui_options = { autoenlarge: true }
                   #map-container
-                    #map-data data={ markers: @markers.to_json }
+                    #map-data[
+                      data={ markers: @markers.to_json, options: map_options.to_json, ui: ui_options.to_json }]
                     #map-canvas
-				  #big-map
+                  #big-map
                     button.big-map_close X
 
 

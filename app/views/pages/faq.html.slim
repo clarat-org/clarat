@@ -1,2 +1,3 @@
 - provide(:title, t('.title'))
-== cell(:frequently_asked_questions)
+- cache ['faq_page', I18n.locale] do
+  == cell(:frequently_asked_questions)

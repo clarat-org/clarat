@@ -87,7 +87,9 @@ de:
         Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
         der Bundesrepublik Deutschland.
         </p>
-        
+    faq:
+      title: "Häufige Fragen"
+
     privacy:
       title: "Datenschutz"
       heading: "Datenschutzhinweise"

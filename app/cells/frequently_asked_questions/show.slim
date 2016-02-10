@@ -1,5 +1,5 @@
 main.content-main.content-main--wide
   .wrapper-inner
     h1 = I18n.t '.heading'
-    - (@section_count - 1).times do |section_number|
-      = cell(:frequently_asked_questions).call(:section, section_number + 1)
+    - @section_ids.each do |section_id|
+      = cell(:frequently_asked_questions).(:section, section_id)

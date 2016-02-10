@@ -113,7 +113,7 @@ de:
       link_1:
         name: "Benckiser Stiftung Zukunft"
         var: "link_to_bsz"
-        url: "http://www.benckiser-stiftung.org/"
+        url: "http://www.benckiser-stiftung.org/de"
         target: "_blank"
       link_2:
         name: "Video"
@@ -133,7 +133,7 @@ de:
       link_1:
         name: "Benckiser Stiftung Zukunft"
         var: "link_to_bsz"
-        url: "http://www.benckiser-stiftung.org/"
+        url: "http://www.benckiser-stiftung.org/de"
         target: "_blank"
     question_11:
       question: "Wie lange wird es clarat geben?"
@@ -146,7 +146,7 @@ de:
       link_1:
         name: "Benckiser Stiftung Zukunft"
         var: "link_to_bsz"
-        url: "http://www.benckiser-stiftung.org/"
+        url: "http://www.benckiser-stiftung.org/de"
         target: "_blank"
     question_12:
       question: "Ist der Programmier-Code von clarat öffentlich zugänglich?"
@@ -172,8 +172,9 @@ de:
         url: "http://www.clarat.org/refugees/kontakt/new"
         target: "_blank"
   section_2:
-    heading: "Hast du Fragen zu  deiner Suche?"
+    heading: "Hast du Fragen zu deiner Suche?"
     question_1:
+      anchor: "who_finds_help"
       question: "Wer findet bei clarat Hilfe?"
       answer: |
         clarat ist für alle – mit nur einem Klick entscheidest du dich für <b>
@@ -405,34 +406,34 @@ de:
         Starte deine Suche nach Hilfe. Wenn du wissen möchtest, wie du die
         richtige Hilfe für dich findest, kannst du das
         %{ref_to_how_to_find_right_help} nachlesen. Wenn du jetzt auf der
-        Ergebnisseite bist, siehst du oben rechts <b>Suchoptionen einblenden
-        </b>. Wenn du darauf klickst, kannst du verschiedene Filter benutzen.
+        Ergebnisseite bist, siehst du oben rechts <b>Suchoptionen einblenden</b>.
+        Wenn du darauf klickst, kannst du verschiedene Filter benutzen.
         Damit machst du deine Suche noch genauer:
         <p>
         <ul>
         <li>
-        <b>Alter des Kindes?</b>: Hier gibst du dein Alter ein. Oder das Alter
+        <b>Alter des Kindes?</b> Hier gibst du dein Alter ein. Oder das Alter
         von dem Kind, für das du Hilfe suchst.
         </li>
         <li>
-        <b>Sprache?</b>: Hier gibst du deine Sprache an. Dann werden
+        <b>Sprache?</b> Hier gibst du deine Sprache an. Dann werden
         dir Unterstützungsangebote gezeigt, die du in deiner Sprache nutzen
         kannst. Wenn du hier keine Sprache auswählst, werden dir automatisch
         Unterstützungsangebote angezeigt, bei denen man Deutsch spricht.
         </li>
         <li>
-        <b>Hilfe für wen?</b>: Hier kannst du auswählen, für wen die Hilfe sein
+        <b>Hilfe für wen?</b> Hier kannst du auswählen, für wen die Hilfe sein
         soll. Wenn du zum Beispiel für deine ganze Familie suchst, klicke <i>für
         Familien</i> an. Suchst du als Kind nur für dich, klicke <i>für Kinder
         und Jugendliche</i> an.
         </li>
         <li>
-        <b>Geschlecht?</b>: Hier kannst du auswählen, ob du Hilfe <i>nur für
+        <b>Geschlecht?</b> Hier kannst du auswählen, ob du Hilfe <i>nur für
         Jungen und Männer</i> oder <i>nur für Mädchen und Frauen</i> suchst.
         Wenn du nichts anklickst, bleibt der Filter automatisch auf <i>egal</i>.
         </li>
         <li>
-        <b>Auf welchem Weg?</b>: Hier kannst du auswählen, ob du zum Beispiel
+        <b>Auf welchem Weg?</b> Hier kannst du auswählen, ob du zum Beispiel
         nur Unterstützungsangebote finden möchtest, zu denen du persönlich
         hingehen kannst. Dann klicke <i>persönlich</i> an. Wenn du lieber von
         dir zu Hause aus Hilfe bekommen möchtest, klicke <i>telefonisch</i> oder
@@ -577,7 +578,7 @@ de:
         Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein,
         dass etwas komisch klingt.
     question_3:
-      question: "Wie kann ich clarat in meiner Sprache lesen?"
+      question: "Warum klingen die Texte in meiner Sprache so komisch?"
       answer: |
         Der Google Translator macht automatische Übersetzungen. Deswegen gibt es
         machmal sprachliche Fehler. Es kann also sein, dass etwas nicht ganz
@@ -663,7 +664,7 @@ de:
         </li>
         </ul>
         </p>
-        Und du findest bei clarat refugees vorerst:
+        Und du findest bei <b>clarat refugees</b> vorerst:
         <p>
         <ul>
         <li>
@@ -703,14 +704,19 @@ de:
         <li>
         Oder daran, dass die Angebote deiner Organisation inhaltlich nicht zu
         clarat passen. Bei clarat findet man nur Angebote zu ganz bestimmten
-        Themen. Welche das sind, kannst du hier nachlesen. Wenn wir die Angebote
-        deiner Organisation bei clarat aufnehmen sollen, melde dich bei uns. Am
-        besten schreibe uns eine E-Mail an %{mailto_clarat} oder ruf an unter
-        +49 (0)30 55 57 96 00.
+        Themen. Welche das sind, kannst du %{ref_to_who_finds_help} nachlesen.
+        Wenn wir die Angebote deiner Organisation bei clarat aufnehmen sollen,
+        melde dich bei uns. Am besten schreibe uns eine E-Mail an
+        %{mailto_clarat} oder ruf an unter +49 (0)30 55 57 96 00.
         </li>
         </ul>
         </p>
       link_1:
+        name: "hier"
+        var: "ref_to_who_finds_help"
+        url: "/haeufige-fragen/#who_finds_help"
+        class: "FAQ_anchor_link"
+      link_2:
         name: "post@clarat.org"
         var: "mailto_clarat"
         url: "mailto:post@clarat.org"

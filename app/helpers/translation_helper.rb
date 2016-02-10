@@ -9,27 +9,30 @@ module TranslationHelper
     end
   end
 
+  def autotranslation_attr automated = true
+    return {} unless automated
+    { lang: "#{I18n.locale}-x-mtfrom-de" }
+  end
+
   private
 
   def automated_translation_wrap text
     <<-OUTPUT
       <div class="Automated-translation">
         <div class="Automated-translation__text"
-             lang="#{I18n.locale}-x-mtfrom-de">
+             lang="#{autotranslation_attr[:lang]}">
           #{text}
         </div>
-        #{attribution_link}
+        #{automation_warning}
       </div>
     OUTPUT
   end
 
-  def attribution_link
-    link_to(
-      image_tag(image_path('poweredbygoogletranslate.png'),
-                alt: 'powered by Google Translate'),
-      'https://translate.google.com/',
-      class: 'Automated-translation__attribution JS-tooltip'\
-             ' JS-tooltip--from-title',
+  def automation_warning
+    image_tag(
+      image_path('ico_triangle.svg'),
+      alt: 'warning',
+      class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
       title: t('shareds.show.google_translate_explanation')
     )
   end

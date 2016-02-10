@@ -568,8 +568,7 @@ de:
       anchor: "how_many_languages"
       question: "Auf welchen Sprachen gibt es clarat?"
       answer: |
-        Alle Seiten bei clarat kannst du auf Deutsch, Englisch, Arabisch,
-        Französisch, Polnisch, Russisch und Türkisch lesen.
+        Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
     question_2:
       question: "Wie kann ich clarat in meiner Sprache lesen?"
       answer: |

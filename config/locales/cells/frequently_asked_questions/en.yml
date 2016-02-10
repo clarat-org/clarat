@@ -513,13 +513,6 @@ en:
         countries, those who were born here, and those who have just arrived in
         Germany; by those who speak German well and those who don’t.
     question_2:
-      question: "RAUS???? How are difficult words explained on clarat?"
-      answer: |
-        clarat explains difficult words in one sentence. Sometimes a longer
-        explanation is necessary. These words are underlined on clarat so that
-        you can identify them. When you run the mouse over these words, you will
-        see the explanations.
-    question_3:
       question: "Why does clarat use the abbreviation <i>LGBTI</i>?"
       answer: |
         On clarat you can find offerings for children, adolescents, and families
@@ -527,7 +520,7 @@ en:
         transsexuals, and intersexuals. However, we can’t always list all of
         these terms since we want our descriptions to be short and easy to
         understand. That’s why we use the abbreviation LGBTI.
-    question_4:
+    question_3:
       question: "Why does clarat use the term <i>migrants</i>?"
       answer: |
         At clarat we use simple language. That’s why we use words that are easy
@@ -535,7 +528,7 @@ en:
         as politically correct as possible. That’s why we usually use the word
         migrants instead of the term foreigners or an expression like <i>people
         with a migration background</i>.
-    question_5:
+    question_4:
       question: "Why does clarat use the term <i>refugees</i>?"
       answer: |
         On clarat we want everyone to quickly understand who is meant. Since
@@ -550,8 +543,7 @@ en:
       anchor: "how_many_languages"
       question: "Which languages are available on clarat?"
       answer: |
-        You can read all of clarat’s pages in German, English, Arabic, French,
-        Polish, Russian, and Turkish.
+        You can read all of clarat’s pages in German and English.
     question_2:
       question: "How can I use clarat in my language?"
       answer: |

@@ -1,6 +1,10 @@
 class FrequentlyAskedQuestionsCell < Cell::ViewModel
   include Cell::Slim
 
+  cache :show do |options|
+    I18n.locale
+  end
+
   def show
     @section_ids = (1..section_count - 1).to_a
     render

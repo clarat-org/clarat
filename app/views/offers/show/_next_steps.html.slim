@@ -1,5 +1,7 @@
 section.section-content.section-content--nextsteps
-  h3.section-content__title = t '.heading'
+  h3.section-content__title
+    = t '.heading'
+    = automation_warning
   .section-content__body
     - if offer.next_steps.in_current_locale.any?
       = offer.next_steps_for_current_locale

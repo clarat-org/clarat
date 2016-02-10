@@ -14,6 +14,15 @@ module TranslationHelper
     { lang: "#{I18n.locale}-x-mtfrom-de" }
   end
 
+  def automation_warning
+    image_tag(
+    image_path('ico_triangle.svg'),
+    alt: 'warning',
+    class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
+      title: t('shareds.show.google_translate_explanation')
+      )
+  end
+
   private
 
   def automated_translation_wrap text
@@ -23,17 +32,7 @@ module TranslationHelper
              lang="#{autotranslation_attr[:lang]}">
           #{text}
         </div>
-        #{automation_warning}
       </div>
     OUTPUT
-  end
-
-  def automation_warning
-    image_tag(
-      image_path('ico_triangle.svg'),
-      alt: 'warning',
-      class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
-      title: t('shareds.show.google_translate_explanation')
-    )
   end
 end

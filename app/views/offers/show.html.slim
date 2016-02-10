@@ -10,6 +10,7 @@
         h2.page-detail__title
           == translation_block @offer.translation_automated? do
             = @offer.name
+            = automation_warning
         /.page-detail__icons
         /  - @offer.categories.mains.each do |main_tag|
         /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
@@ -20,7 +21,9 @@
 
         / What's it all about?
         section.section-content.section-content--what
-          h3.section-content__title = t '.what'
+          h3.section-content__title
+            = t '.what'
+            = automation_warning
           .section-content__body
             == translation_block @offer.translation_automated? do
               == @offer.description

@@ -19,7 +19,9 @@
             == @organization.description
       - if @organization.offers.approved.any?
         section.section-content.section-content--alloffers
-          h3.section-content__title = t '.offers_all'
+          h3.section-content__title
+            = t '.offers_all'
+            = automation_warning
           .section-content__body
             ul.Listing-offers__list
               - @organization.offers.approved.order('name ASC').each do |offer|

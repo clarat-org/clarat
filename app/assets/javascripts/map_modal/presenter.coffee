@@ -32,3 +32,5 @@ class Clarat.MapModal.Presenter extends ActiveScript.Presenter
 
     # Set original bounds
     $('#map-container').trigger 'Clarat.GMaps::Resize'
+
+    $('#map-container').trigger 'Clarat.MapModal::Close'

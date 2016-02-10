@@ -15,7 +15,7 @@ feature 'Offer display' do
 
     visit offer_en_path offer, section: 'refugees'
     page.must_have_content 'GET READY FOR CANADA'
-    page.must_have_css '.Automated-translation__attribution'
+    page.must_have_css '.Automated-translation__warning'
   end
 
   scenario 'Offer view has evaluated markdown' do

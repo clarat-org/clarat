@@ -61,9 +61,19 @@
           - if @offer.location && @offer.location.visible
             - cache [@offer.location, 'offer_show_map']
 
+              - map_options = { \
+                scrollwheel: false,
+                mapTypeControl: false,
+                zoomControl: false,
+                streetViewControl: false,
+                draggableCursor: 'pointer'}
+              - ui_options = { autoenlarge: true }
               #map-container
-                #map-data data={ markers: @markers.to_json }
+                #map-data[
+                  data={markers: @markers.to_json, options: map_options.to_json, ui: ui_options.to_json }]
                 #map-canvas
+              #big-map
+                button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,
                                                markers: @markers
 

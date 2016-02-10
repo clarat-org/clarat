@@ -16,11 +16,11 @@ module TranslationHelper
 
   def automation_warning
     image_tag(
-    image_path('ico_triangle.svg'),
-    alt: 'warning',
-    class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
+      image_path('ico_triangle.svg'),
+      alt: 'warning',
+      class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
       title: t('shareds.show.google_translate_explanation')
-      )
+    )
   end
 
   private

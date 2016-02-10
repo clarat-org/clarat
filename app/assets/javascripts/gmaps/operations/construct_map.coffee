@@ -5,16 +5,10 @@ class Clarat.GMaps.Operation.ConstructMap
     else
       image_path("#{image_name}.svg")
 
-  @run: (markers, canvas) ->
+  @run: (markers, canvas, mapOptions, uiOptions) ->
     includedPoints = []
 
     # Create Map
-    mapOptions =
-      scrollwheel: false
-      mapTypeControl: false,
-      zoomControl: false,
-      streetViewControl: false
-
     map = new google.maps.Map(canvas, mapOptions)
     bounds = new google.maps.LatLngBounds()
 

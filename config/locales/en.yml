@@ -22,8 +22,8 @@ en:
       use of cookies.
       <a href="/datenschutzhinweise">More</a>.
     lang_list_toggle:
-      more: "Show more filters"
-      less: "Show fewer filters"
+      more: "Show more languages"
+      less: "Show fewer languages"
     mobile_filter: 'Filter results'
     ajax_error:
       error: "Search error"

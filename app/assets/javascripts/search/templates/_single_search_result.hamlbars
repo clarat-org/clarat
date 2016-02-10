@@ -1,6 +1,6 @@
 %li.JS-trigger-marker.Listing-results__listitem{id: "result-offer-{{id}}"}
   %h3.Listing-results__offer
-    %a{href: '{{@root.offers_path}}/{{slug}}'}
+    %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
 
   / TODO: Refactor and rename

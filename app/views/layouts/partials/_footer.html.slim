@@ -39,7 +39,7 @@ footer.footer-main
               = link_to t('.contact'),
                         new_contact_path(section: current_section)
 
-  - cache "#{current_section}_footer_links_3_#{I18n.locale}" do
+  - cache [current_section, 'footer_links_3', I18n.locale] do
 
     section.footer-main__secondrow
       .wrapper-inner

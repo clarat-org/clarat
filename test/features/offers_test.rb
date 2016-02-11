@@ -39,6 +39,25 @@ feature 'Offer display' do
     page.must_have_content 'basicNextStep'
   end
 
+  scenario 'Offer view displays translated old/new next steps' do
+    offer = FactoryGirl.create :offer, :approved, old_next_steps: 'Step one.'
+    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    next_steps(:basic).update_column :text_en, 'English step 1.'
+    visit offer_en_path offer, section: 'refugees'
+    within '.section-content--nextsteps' do
+      page.must_have_content 'GET READY FOR CANADA'
+      page.wont_have_content 'English step 1.'
+      page.must_have_css '.Automated-translation__warning'
+    end
+    offer.next_steps << next_steps(:basic)
+    visit offer_en_path offer, section: 'refugees'
+    within '.section-content--nextsteps' do
+      page.wont_have_content 'GET READY FOR CANADA'
+      page.must_have_content 'English step 1.'
+      page.wont_have_css '.Automated-translation__warning'
+    end
+  end
+
   scenario 'Offer view has explained words' do
     Definition.create key: 'complex', explanation: 'Explained!'
     offer = FactoryGirl.create :offer, :approved,

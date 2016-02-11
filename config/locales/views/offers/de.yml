@@ -12,111 +12,6 @@ de:
           short: "Angebote zu …"
         button: "Suchen"
 
-    invalid_location:
-      title: "Leider konnten wir den von dir eingegeben Standort nicht finden"
-      text: |
-        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
-        versuche es gegebenenfalls mit einer alternativen Eingabe
-        (z.B. "Postleitzahl Ort").
-
-    index:
-      noscript_warning: |
-        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
-        Browser JavaScript aktiviert haben.
-
-      # index partials
-      pending_ajax:
-        searching: "Suche…"
-
-      filters:
-        json:
-          age:
-            zero: "< 1 Jahr"
-            one: "1 Jahr"
-            other: "%{count} Jahre"
-          target_audience:
-            children: "für Kinder und Jugendliche"
-            parents: "für Eltern"
-            nuclear_family: "für Familien"
-            acquaintances: "für Bekannte und Verwandte"
-            pregnant_woman: "für Schwangere"
-          exclusive_gender:
-            boys_only: "nur für Jungen und Männer"
-            girls_only: "nur für Mädchen und Frauen"
-          language:
-            deu: "Deutsch"
-            eng: "Englisch | English"
-            tur: "Türkisch | Türkçe"
-            tha: "Thai | ภาษาไทย"
-            bul: "Bulgarisch | български"
-            ron: "Rumänisch | română"
-            sqi: "Albanisch | shqip"
-            ara: "Arabisch | العربية"
-            fra: "Französisch | français"
-            kur: "Kurdisch | کوردی"
-            rus: "Russisch | русский"
-            srp: "Serbisch | српски"
-            amh: "Amharisch | አማርኛ"
-            bos: "Bosnisch | bosanski"
-            ita: "Italienisch | italiano"
-            hrv: "Kroatisch | hrvatski"
-            pol: "Polnisch | polski"
-            por: "Portugiesisch | português"
-            vie: "Vietnamesisch | tiếng Việt"
-            wol: "Wolof | wolof"
-            fas: "Persisch (Farsi) | فارسی"
-            ben: "Bengalisch | বাংলা"
-            spa: "Spanisch | español"
-            tam: "Tamil | தமிழ்"
-            urd: "Urdu | اردو"
-            mul: "andere Sprachen auf Anfrage"
-            aze: "Aserbaidschanisch | Azərbaycan"
-            ell: "Griechisch | ελληνικά"
-            hin: "Hindi | हिन्दी"
-            mkd: "Mazedonisch | македонски"
-            rom: "Romanes | Romani"
-            hun: "Ungarisch | magyar"
-            "568": "Niederländisch | Nederlands"
-            "326": "Ukrainisch | українська"
-            "639": "Dari | دری"
-            "150": "Deutsche Gebärdensprache"
-            lav: "Lettisch | latviešu"
-            lit: "Litauisch | lietuvių"
-            kik: "Kikuyu | Gĩkũyũ"
-            zho: "Chinesisch | 普通话 / 普通話"
-            swa: "Swahili | Kiswahili"
-            luo: "Luo | Dholuo"
-            ltz: "Luxemburgisch | Lëtzebuergesch"
-            nor: "Norwegisch | Norsk"
-            swe: "Schwedisch | svenska"
-            snk: "Soninke | Soninkanxaane"
-            tgk: "Tadschikisch | тоҷикӣ / تاجیکی"
-            tel: "Telugu | తెలుగు"
-            tuk: "Turkmenisch | Türkmençe / Tүркменче"
-            uzb: "Usbekisch | Oʻzbek tili"
-            bel: "Weißrussisch | беларуская мова"
-            zza: "Zaza | Zazaki / Kırmancki"
-          contact_type:
-            personal: "vor Ort"
-            remote: "telefonisch oder online"
-          encounter:
-            hotline: "Telefon"
-            email: "E-Mail"
-            chat: "Chat"
-            forum: "Forum"
-            online-course: "Online-Kurs"
-            portal: "Adressliste"
-
-      map_sidebar:
-        map_output_searchresults: Kartenausgabe der Suchergebnisse
-
-      # /index partials
-
-    show:
-      what: "Worum geht's?"
-      who: "Wer bietet diese Hilfe an?"
-      speaking: "In welcher Sprache hilft man dir?"
-      last_updated: "Eintrag zuletzt bearbeitet am"
       current_and_original_locale:
         eng: "Englisch - English"
         deu: "Deutsch"
@@ -170,6 +65,59 @@ de:
         uzb: "Usbekisch - Oʻzbek tili"
         bel: "Weißrussisch - беларуская мова"
         zza: "Zaza - Zazaki / Kırmancki"
+
+    invalid_location:
+      title: "Leider konnten wir den von dir eingegeben Standort nicht finden"
+      text: |
+        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
+        versuche es gegebenenfalls mit einer alternativen Eingabe
+        (z.B. "Postleitzahl Ort").
+
+    index:
+      noscript_warning: |
+        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
+        Browser JavaScript aktiviert haben.
+
+      # index partials
+      pending_ajax:
+        searching: "Suche…"
+
+      filters:
+        json:
+          age:
+            zero: "< 1 Jahr"
+            one: "1 Jahr"
+            other: "%{count} Jahre"
+          target_audience:
+            children: "für Kinder und Jugendliche"
+            parents: "für Eltern"
+            nuclear_family: "für Familien"
+            acquaintances: "für Bekannte und Verwandte"
+            pregnant_woman: "für Schwangere"
+          exclusive_gender:
+            boys_only: "nur für Jungen und Männer"
+            girls_only: "nur für Mädchen und Frauen"
+          contact_type:
+            personal: "vor Ort"
+            remote: "telefonisch oder online"
+          encounter:
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"
+            portal: "Adressliste"
+
+      map_sidebar:
+        map_output_searchresults: Kartenausgabe der Suchergebnisse
+
+      # /index partials
+
+    show:
+      what: "Worum geht's?"
+      who: "Wer bietet diese Hilfe an?"
+      speaking: "In welcher Sprache hilft man dir?"
+      last_updated: "Eintrag zuletzt bearbeitet am"
 
       opening_section:
         heading: "Wann kannst du das machen?"

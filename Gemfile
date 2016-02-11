@@ -128,6 +128,10 @@ gem 'virtus' # form objects
 gem 'formtastic'
 gem 'simple_form'
 
+# cells for ViewModel in Rails
+gem 'cells', '~> 4.0.0'
+gem 'cells-slim'
+
 ########################
 # For Heroku & Add-Ons #
 ########################

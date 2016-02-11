@@ -122,6 +122,12 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    cells (4.0.3)
+      tilt (>= 1.4, < 3)
+      uber (~> 0.0.9)
+    cells-slim (0.0.3)
+      cells (~> 4.0.0.beta6)
+      slim (~> 3.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     choice (0.2.0)
@@ -511,6 +517,7 @@ GEM
     tins (1.6.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uber (0.0.15)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -552,6 +559,8 @@ DEPENDENCIES
   brakeman
   bullet
   bundler (>= 1.8.4)
+  cells (~> 4.0.0)
+  cells-slim
   clarat_base!
   coffee-rails (~> 4.0.0)
   coveralls

@@ -63,6 +63,13 @@ en:
     search:
       form_more_label: "show search options"
       form_less_label: "hide search options"
+      option_any: "any"
+      headlines:
+        age: "Age of child"
+        language: "Language"
+        target_audience: "For whom?"
+        gender: "Gender"
+        approach: "By which means?"
     search_results:
       more: "More virtual offers"
       show_personal: "Show local offers"

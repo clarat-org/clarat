@@ -5,7 +5,8 @@
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
       %select.JS-AgeSelector.filter-form__select{name: 'age'}
-        %option{value: 'any', id: 'age_any'} egal
+        %option{value: 'any', id: 'age_any'}
+          = hb '@root.option_any'
         = hb 'each age' do
           %option{value: '{{identifier}}', id: 'age_{{identifier}}'}
             = hb 'display_name'
@@ -14,7 +15,8 @@
       = hb '@root.headline_language'
     %div.filter-form__fieldset__wrapper
       %select.JS-LanguageSelector.filter-form__select{name: 'language'}
-        %option{value: 'any', selected: 'selected', id: 'language_any'} egal
+        %option{value: 'any', selected: 'selected', id: 'language_any'}
+          = hb '@root.option_any'
         = hb 'each language' do
           %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
             = hb 'display_name'
@@ -26,7 +28,8 @@
       %div.filter-form__radio
         %input{type: 'radio', name: 'target_audience', value: 'any',
                id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
-        %label{for: 'target_audience_any'} egal
+        %label{for: 'target_audience_any'}
+          = hb '@root.option_any'
       = hb 'each target_audience' do
         %div.filter-form__radio
           %input{type: 'radio', name: 'target_audience',
@@ -42,7 +45,8 @@
       %div.filter-form__radio
         %input{type: 'radio', name: 'exclusive_gender', value: 'any',
                id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
-        %label{for: 'exclusive_gender_any'} egal
+        %label{for: 'exclusive_gender_any'}
+          = hb '@root.option_any'
       = hb 'each exclusive_gender' do
         %div.filter-form__radio
           %input{type: 'radio', name: 'exclusive_gender',

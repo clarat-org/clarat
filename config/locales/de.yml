@@ -62,6 +62,7 @@ de:
     search:
       form_more_label: "Suchoptionen einblenden"
       form_less_label: "Suchoptionen ausblenden"
+      option_any: "egal"
       headlines:
         age: "Alter des Kindes"
         language: "Sprache"

@@ -35,12 +35,12 @@ en:
             other: "%{count} years"
           target_audience:
             children: "for children and adolescents"
-            parents: "für Eltern"
-            nuclear_family: "for Families"
-            acquaintances: "for friends and Family"
+            parents: "for parents"
+            nuclear_family: "for families"
+            acquaintances: "for friends and family"
             pregnant_woman: "for pregnant women"
           exclusive_gender:
-            boys_only: "Boys and men only"
+            boys_only: "boys and men only"
             girls_only: "girls and women only"
           language:
             deu: "German"

@@ -131,7 +131,7 @@ en:
           sat: Saturday
           sun: Sunday
       website_section:
-        internet_presence: "Where can you find out more online?"
+        internet_presence: "Where can you get more information online?"
         websites:
           own: "Website"
           document: "Further Information"

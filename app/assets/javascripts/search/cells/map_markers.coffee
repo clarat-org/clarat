@@ -22,7 +22,7 @@ class Clarat.Search.Cell.MapMarkers
           latitude: object._geoloc.lat
           longitude: object._geoloc.lng
         ids: [object.id]
-        url: "/angebote/#{object.slug}"
+        url: "#{location.pathname}/#{object.slug}"
         title: object.name
         address: object.location_address
         organization_display_name: object.organization_display_name

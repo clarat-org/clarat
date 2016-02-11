@@ -47,11 +47,14 @@ Clarat::Application.routes.draw do
         as: 'subscribe'
     get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
         as: 'unsubscribe'
+
+    # All other localized paths => localized 404
+    match '*path', to: 'pages#not_found', via: :all
   end
 
   # Sitemap path
   mount DynamicSitemaps::Engine => '/sitemaps/'
 
-  # All else => 404
+  # Unlocalized unknown paths are forwarded to the German 404
   match '*path', to: 'pages#not_found', via: :all
 end

@@ -17,7 +17,7 @@ module TranslationHelper
   def automation_warning automated = true
     return unless automated
     image_tag(
-      image_path('ico_triangle.svg'),
+      image_path('banner--translated-by-google.svg'),
       alt: 'warning',
       class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
       title: t('shareds.show.google_translate_explanation')

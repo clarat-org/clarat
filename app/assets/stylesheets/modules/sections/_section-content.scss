@@ -46,6 +46,12 @@
   color: $brand_white;
   font-weight: 400;
   font-size: 20px;
+
+  .section-content--nextsteps &,
+  .section-content--what & {
+    position: relative;
+    padding-right: 70px;
+  }
 }
 
 .section-content__body {

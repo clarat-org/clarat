@@ -6,15 +6,17 @@
 
 .Automated-translation {
   position: relative;
+
+  h2 & {
+    display: inline-block;
+    padding-right: 40px;
+  }
 }
 
-h2 .Automated-translation {
-  display: inline-block;
-  padding-right: 40px;
-}
-
-h2 .Automated-translation__text {
-  display: inline-block;
+.Automated-translation__text {
+  h2 & {
+    display: inline-block;
+  }
 }
 
 .Automated-translation__warning {
@@ -22,13 +24,19 @@ h2 .Automated-translation__text {
   bottom: 0;
   right: 0;
   cursor: help;
-}
 
-h2 .Automated-translation__warning {
-  bottom: 8px;
-}
+  h2 & {
+    bottom: 8px;
+  }
 
-h3 .Automated-translation__warning {
-  position: static;
-  float: right;
+  h3 & {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    max-width: 54px;
+    background: rgba(255,255,255,0.33);
+    padding: 2px;
+    margin-top: -2px;
+    border-radius: 2px;
+  }
 }

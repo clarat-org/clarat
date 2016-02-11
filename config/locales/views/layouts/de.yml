@@ -7,6 +7,16 @@ de:
           refugees: "Bald auch Angebote für Flüchtlinge"
           # TODO: Delete if beta banner changes permanently
           link: "Hier erfährst du mehr"
+      nav_lang:
+        title: "Wähle deine Sprache"
+        languages:
+          de: "Deutsch"
+          en: "English"
+          ar: "عربي"
+          fr: "Français"
+          ru: "НА РУССКОМ"
+          tr: "Türkçe"
+          pl: "Polskie"
       modal:
         beta_modal:
           text: |

@@ -5,5 +5,8 @@ class Clarat.Search.Operation.BuildMap
       Clarat.GMaps.presenter = new Clarat.GMaps.Presenter(markers)
     else
       $('#search-wrapper').append(
-        $("<div id='map-data' data-markers='#{JSON.stringify markers}'>")
+        $(
+          "<div id='map-data' data-markers='#{JSON.stringify markers}'
+          data-ui='{\"autoenlarge\": false}'>"
+        )
       )

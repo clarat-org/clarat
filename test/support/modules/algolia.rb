@@ -1,4 +1,4 @@
-#require 'algolia/webmock' # general mocks
+# require 'algolia/webmock' # general mocks
 
 module AlgoliaStubber
   EMPTY_RESPONSE = <<-RESPONSE
@@ -66,6 +66,15 @@ module AlgoliaStubber
 end
 
 AlgoliaStubber.enable_empty_response
+
+# stub <Offer instance>.index!
+WebMock.stub_request(
+  :put, /.*\.algolian?e?t?\.(io|net|com)\/1\/indexes\/[^\/]+\/[^\/]+/
+).to_return(status: 200, body: "", headers: {})
+
+WebMock.stub_request(
+  :get, /.*\.algolian?e?t?\.(io|net|com)\/1\/indexes\/[^\/]+\/settings/
+).to_return(status: 200, body: "", headers: {})
 
 # {
 # "hits" : [{

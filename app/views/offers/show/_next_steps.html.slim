@@ -1,7 +1,14 @@
 section.section-content.section-content--nextsteps
-  h3.section-content__title = t '.heading'
+  h3.section-content__title
+    = t '.heading'
+    = automation_warning
   .section-content__body
-    == offer.next_steps_html
+    - if offer.next_steps.in_current_locale.any?
+      = offer.next_steps_for_current_locale
+    - else
+      == translation_block offer.translation_automated? do
+        == offer.old_next_steps
+
     - if offer.code_word && !offer.code_word.empty?
       p
         br

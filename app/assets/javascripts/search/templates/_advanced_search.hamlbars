@@ -29,7 +29,8 @@
         %label{for: 'target_audience_any'} egal
       = hb 'each target_audience' do
         %div.filter-form__radio
-          %input{type: 'radio', name: 'target_audience', value: '{{identifier}}',
+          %input{type: 'radio', name: 'target_audience',
+                 value: '{{identifier}}',
                  id: 'target_audience_{{identifier}}',
                  class: 'JS-TargetAudienceSelector'}
           %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'

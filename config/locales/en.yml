@@ -1,9 +1,95 @@
 # Please see ./README.md for more information on I18n styles and structure.
 en:
   conf: # translations used for app-internal things
-    current_location: 'My Location'
-  js:
+    current_location: 'My location'
+    default_location: 'Berlin'
+    default_latlng: '52.520007,13.404954'
+
+  js: # translations used in JavaScript. I18n-JS forces them to be located here.
     geolocation:
-      get: Use my current location!
-      waiting: Looking up your location... You might need to allow this.
-      error: Couldn't get your current location. Please enter one manually.
+      get: Use my location!
+      waiting: Searching location... You might have to allow this.
+      error: Location not found. Please enter it manually.
+    location_required: |
+      Please enter a location at which you want to search for help.
+    autocomplete_footer: All %{results} search results for '%{query}'
+    map_info_window_multiple:
+      title: 'Multiple offers'
+      text: 'There are multiple results for this marker.'
+      anchor: 'Show all >>'
+    cookie_warning_html: |
+      Cookies help us deliver our services. By using the website you agree to our
+      use of cookies.
+      <a href="/datenschutzhinweise">More</a>.
+    lang_list_toggle:
+      more: "Show more languages"
+      less: "Show fewer languages"
+    mobile_filter: 'Filter results'
+    ajax_error:
+      error: "Search error"
+      message: |
+        We are sorry but an error occurred during the search. Please contact us
+        if this problem reoccurs.
+    query_field:
+      placeholder_words:
+        family:
+          - adoption
+          - drugs
+          - violence
+          - private lessons
+          - emergency
+          # - justice
+          - orphan
+          - unemployed
+          - food
+          - ill
+          - homeless
+          - smoking
+          - pregnant
+          - gay
+          - skipping school
+          # - living
+        refugees:
+          - citizenship
+          - German course
+          - post-war trauma
+          - PTSD
+          - asylum
+          - health care
+          - authorities
+          - residence
+      example_placeholder: "e.g. %{word}, …"
+
+    search:
+      form_more_label: "show search options"
+      form_less_label: "hide search options"
+    search_results:
+      more: "More virtual offers"
+      show_personal: "Show local offers"
+      bridge: "for"
+      enclosing: ""
+      faq_text: "If you have questions about our search you can find our FAQ "
+      faq_anchor: "here"
+      map:
+        enlarge_map: "Enlarge map"
+        headline_small_map: "Local offers on the map"
+      personal_offers:
+        zero: "Unfortuantely no offers found" #
+        one: "One local offer"
+        other: "%{count} local offers"
+      remote_offers:
+        zero: "No remote offers"
+        one: "One remote offer"
+        other: "%{count} remote offers"
+
+    categories_sidebar:
+      all_categories: "All categories"
+    single_search_result:
+      encounters:
+        personal: "personal" #?
+        hotline: "telephone"
+        email: "email"
+        chat: "chat"
+        forum: "forum"
+        online-course: "online course"
+        list: "address list"

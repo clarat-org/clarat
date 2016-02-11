@@ -1,0 +1,16 @@
+tr:
+  contacts:
+    new:
+      contact_heading: "Bize ne bildirmek istersin?"
+    create:
+      success: "Mesaj başarıyla gönderilmiştir."
+    shared:
+      new:
+        send_us_a_message: "Bize mesaj gönder"
+        name_placeholder: "İsim (zorunlu)"
+        email_placeholder:
+          required:
+            :true: "E-Mail adresi (zorunlu)"
+            :false: "E-Mail adresi (opsiyonel)"
+        message_placeholder: "Mesaj yaz (zorunlu)"
+        send: "gönder"

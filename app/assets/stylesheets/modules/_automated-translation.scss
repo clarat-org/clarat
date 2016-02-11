@@ -1,0 +1,34 @@
+// ---------------------------------------------------------------
+//
+//  automated translation blocks
+//
+// ---------------------------------------------------------------
+
+.Automated-translation {
+  position: relative;
+}
+
+h2 .Automated-translation {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+h2 .Automated-translation__text {
+  display: inline-block;
+}
+
+.Automated-translation__warning {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: help;
+}
+
+h2 .Automated-translation__warning {
+  bottom: 8px;
+}
+
+h3 .Automated-translation__warning {
+  position: static;
+  float: right;
+}

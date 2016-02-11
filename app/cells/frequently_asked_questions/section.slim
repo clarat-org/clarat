@@ -1,0 +1,6 @@
+section
+  h3.section-question-group__headline
+    = I18n.t ".section_#{@section_id}.heading"
+  .section-question-group__body
+    - @question_ids.each do |question_id|
+      = cell(:frequently_asked_questions).(:question, @section_id, question_id)

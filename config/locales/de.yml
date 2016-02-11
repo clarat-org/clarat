@@ -62,6 +62,12 @@ de:
     search:
       form_more_label: "Suchoptionen einblenden"
       form_less_label: "Suchoptionen ausblenden"
+      headlines:
+        age: "Alter des Kindes"
+        language: "Sprache"
+        target_audience: "Hilfe für wen?"
+        gender: "Geschlecht"
+        approach: "Auf welchem Weg?"
     search_results:
       more: "Weitere Telefon- und Onlineangebote"
       show_personal: "Zeige lokale Angebote"

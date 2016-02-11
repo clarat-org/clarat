@@ -35,10 +35,8 @@ de:
       navigation:
         claim:
           main: "Einfach Hilfe finden"
-          family: |
-            Unterstützungsangebote für Kinder, Jugendliche und Familien
-          refugees: |
-            Unterstützungsangebote für Flüchtlinge
+          family: "Unterstützungsangebote für Kinder, Jugendliche und Familien"
+          refugees: "Unterstützungsangebote für Flüchtlinge"
         category_headline: "Oder suche nach Kategorien"
       footer:
         gplus:

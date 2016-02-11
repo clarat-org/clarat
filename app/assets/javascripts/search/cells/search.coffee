@@ -5,6 +5,12 @@ class Clarat.Search.Cell.Search
       headline_small_map: I18n.t('js.search_results.map.headline_small_map')
       enlarge_map_anchor: I18n.t('js.search_results.map.enlarge_map')
       all_categories_anchor: I18n.t('js.categories_sidebar.all_categories')
+      more_label: I18n.t('js.search.form_more_label')
+      headline_age: I18n.t('js.search.headlines.age')
+      headline_language: I18n.t('js.search.headlines.language')
+      headline_target_group: I18n.t('js.search.headlines.target_group')
+      headline_gender: I18n.t('js.search.headlines.gender')
+      headline_approach: I18n.t('js.search.headlines.approach')
 
       category_tree: @model.categoryTree
       filters: @model.filters

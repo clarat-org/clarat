@@ -15,13 +15,11 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       load: 'init'
 
   init: =>
-
     @initFrontTooltips()
     @initOfferIndexTooltip()
 
 
   initOfferIndexTooltip: =>
-
     that = this
 
     @ttAdvancedSearch.qtip
@@ -56,38 +54,42 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
   initFrontTooltips: =>
-
     that = this
 
     @ttFrontWeltRefugees.qtip
-        position:
-          my: 'bottom center'
-          at: 'top center'
-          effect: false
-          viewport: $(window)
-        content:
-          button: 'x'
-        show:
-          event: false
-        hide:
-          event: false
-        events:
-          show: ->
-            that.showOverlay()
-          hide: ->
-            that.hideOverlay()
-        style:
-          tip:
-            height: 16
-            width: 22
-            corner: 'bottom center'
+      position:
+        my: 'bottom center'
+        at: 'top left'
+        effect: false
+        viewport: $(window)
+        adjust:
+          method: 'none none'
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that.showOverlay()
+        hide: ->
+          that.hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'bottom right'
+
 
       @ttFrontWeltFamily.qtip
         position:
           my: 'bottom center'
-          at: 'top center'
+          at: 'top right'
           effect: false
           viewport: $(window)
+          adjust:
+            method: 'none none'
         content:
           button: 'x'
         show:
@@ -103,7 +105,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           tip:
             height: 16
             width: 22
-            corner: 'bottom center'
+            corner: 'bottom left'
 
     unless @hasCookie()
 
@@ -139,10 +141,10 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
   hideOverlay: =>
-   @overlay.hide()
-   @ttAdvancedSearch.qtip('destroy')
-   @ttFrontWeltRefugees.qtip('destroy')
-   @ttFrontWeltFamily.qtip('destroy')
+    @overlay.hide()
+    @ttAdvancedSearch.qtip('destroy')
+    @ttFrontWeltRefugees.qtip('destroy')
+    @ttFrontWeltFamily.qtip('destroy')
 
 
 $(document).ready ->

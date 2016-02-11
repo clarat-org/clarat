@@ -371,6 +371,7 @@
 
   .nav-welt__listitem {
     min-width: 154px;
+    display: inline-block;
 
     &:first-child {
 
@@ -649,8 +650,10 @@
     display: block !important;
   }
 
-  .template--offers-index #qtip-1 {
-    top: 148px !important;
-    left: 20px !important;
+  .template--offers-index {
+    #qtip-1 {
+      margin-top: 0;
+    }
   }
+
 }

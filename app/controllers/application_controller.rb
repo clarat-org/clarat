@@ -37,6 +37,7 @@ class ApplicationController < ActionController::Base
   end
 
   def goto_404
-    redirect_to '/404'
+    binding.pry
+    redirect_to controller: 'pages', action: 'not_found'
   end
 end

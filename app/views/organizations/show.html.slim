@@ -13,7 +13,9 @@
     .section-wrapper-major
 
       section.section-content.section-content--who
-        h3.section-content__title = t '.who'
+        h3.section-content__title
+          = t '.who'
+          = automation_warning(@organization.translation_automated?)
         .section-content__body.section-content--what
           == translation_block @organization.translation_automated? do
             == @organization.description
@@ -21,7 +23,7 @@
         section.section-content.section-content--alloffers
           h3.section-content__title
             = t '.offers_all'
-            = automation_warning
+            = automation_warning(@organization.translation_automated?)
           .section-content__body
             ul.Listing-offers__list
               - @organization.offers.approved.order('name ASC').each do |offer|

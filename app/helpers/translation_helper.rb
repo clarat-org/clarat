@@ -14,7 +14,8 @@ module TranslationHelper
     { lang: "#{I18n.locale}-x-mtfrom-de" }
   end
 
-  def automation_warning
+  def automation_warning automated = true
+    return unless automated
     image_tag(
       image_path('ico_triangle.svg'),
       alt: 'warning',

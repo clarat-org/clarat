@@ -17,6 +17,7 @@ class Clarat.Search.Cell.SearchResults
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     section: $('body').data('section')
+    offers_path: location.pathname
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]
@@ -46,7 +47,7 @@ class Clarat.Search.Cell.SearchResults
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
       remote_focus: true
-      toggle_personal_anchor: 'Zeige Angebote vor Ort' # TODO: permanent? +css
+      toggle_personal_anchor: I18n.t('js.search_results.show_personal') # TODO: permanent? +css
 
 
   ## Headline Building Helpers

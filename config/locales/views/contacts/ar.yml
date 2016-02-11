@@ -1,0 +1,16 @@
+ar:
+  contacts:
+    new:
+      contact_heading: "ماذا تريد أن تخبرنا؟"
+    create:
+      success: "تم إرسال الرسالة بنجاح"
+    shared:
+      new:
+        send_us_a_message: "اكتب لنا رسالة"
+        name_placeholder: "الإسم (فرض)"
+        email_placeholder:
+          required:
+            :true: "البريد الإليكتروني (فرض)"
+            :false: "البريد الإليكتروني (إختياري)"
+        message_placeholder: "اكتب رسالة (فرض)"
+        send: "ارسال"

@@ -22,34 +22,24 @@ footer.footer-main
         /               class: 'Social-media__item Social-media__item--facebook'
 
       .footer-main__about
-        - cache 'footer_links_2' do
+        .mascot.mascot--footer
+        nav.nav-site
+          ul.nav-site__list
+            li.nav-site__listitem
+              = link_to t('.blog'), 'http://blog.clarat.org/'
 
-          .mascot.mascot--footer
-          nav.nav-site
-            ul.nav-site__list
-              li.nav-site__listitem
-                = link_to t('.blog'), 'http://blog.clarat.org/'
-              li.nav-site__listitem
-                #google_translate_element.JS-tooltip
-                javascript:
-                  function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
-                  }
-                script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"
 
-        - cache "#{current_section}_footer_links_4" do
+        nav.nav-site
+          ul.nav-site__list
+            li.nav-site__listitem
+              = link_to t('.about'), about_path(section: current_section)
+            li.nav-site__listitem
+              = link_to t('.faq'), faq_path(section: current_section)
+            li.nav-site__listitem
+              = link_to t('.contact'),
+                        new_contact_path(section: current_section)
 
-          nav.nav-site
-            ul.nav-site__list
-              li.nav-site__listitem
-                = link_to t('.about'), about_path(section: current_section)
-              li.nav-site__listitem
-                = link_to t('.faq'), faq_path(section: current_section)
-              li.nav-site__listitem
-                = link_to t('.contact'),
-                          new_contact_path(section: current_section)
-
-  - cache "#{current_section}_footer_links_3" do
+  - cache [current_section, 'footer_links_3', I18n.locale] do
 
     section.footer-main__secondrow
       .wrapper-inner

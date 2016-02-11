@@ -218,6 +218,10 @@
 
     #search_form_search_location {
       padding-left: 40px;
+
+      body.en & {
+        padding-left: 60px;
+      }
     }
 
     #search_form_query,
@@ -487,6 +491,10 @@
       padding: 0;
       text-align: left;
     }
+  }
+
+  .nav-lang__title {
+    font-size: 13px;
   }
 
   // Content ######################################

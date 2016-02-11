@@ -1,0 +1,6 @@
+tr:
+  routes:
+    offers: "Hizmetlerimiz"
+    users: "kullanıcılar"
+    contacts: "iletişim"
+    organizations: "organizasyonlar"

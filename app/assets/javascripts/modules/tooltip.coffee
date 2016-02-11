@@ -17,11 +17,8 @@ Clarat.Tooltip =
     content:
       text: (event, api) ->
         # ToDo: Refactor, refactor, refactor...
-        if event.currentTarget.id == 'google_translate_element'
-          'Hier kannst du dir clarat in andere Sprachen übersetzen lassen. Die
-          Übersetzungen werden automatisch gemacht. In solchen Übersetzungen
-          gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
-          klingt. Schau dann lieber noch einmal in den deutschen Text.'
+        if $(event.currentTarget).hasClass 'JS-tooltip--from-title'
+          $(event.currentTarget).attr('title')
         else
           $.ajax
             url: '/definitions/' + @data('id')

@@ -1,0 +1,9 @@
+en:
+  subscriptions:
+    create:
+      success: |
+        Thank you! We just sent a confirmation link to your email address.
+    shared:
+      new:
+        placeholder: "Email address"
+        button: "Subscribe to newsletter"

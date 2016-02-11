@@ -1,0 +1,9 @@
+tr:
+  update_requests:
+    create:
+      success: |
+        Teşekkürler, mesajın tarafımıza ulaştı. Yakın çevrende aktif hale geldiğimiz durumda,
+        sana bilgi verilecektir.
+    new:
+      email_placeholder: "E-Mail Adresi"
+      button: "Mesaj alınmıştır"

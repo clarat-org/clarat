@@ -1,4 +1,4 @@
-- cache ['start_header', current_section] do
+- cache ['start_header', current_section, I18n.locale] do
 
   header.header-main.header-main--wide
     .header-main__foreground.wrapper-inner
@@ -27,7 +27,7 @@
                                              labels: :long,
                                              current_section: current_section
 
-      - cache "category_navigation_#{current_section}" do
+      - cache ['category_navigation', current_section, I18n.locale] do
 
         nav.nav-sections
           h3.nav-sections__headline = t '.category_headline'
@@ -44,4 +44,5 @@
                     'search_form[generated_geolocation]' => \
                       search_form.generated_geolocation,
                     'search_form[section]' => \
-                      current_section)
+                      current_section),
+                    locale: I18n.locale

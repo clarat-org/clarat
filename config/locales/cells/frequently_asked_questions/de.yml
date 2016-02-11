@@ -1,0 +1,721 @@
+de:
+  heading: "Häufige Fragen"
+  section_1:
+    heading: "Wer, wie, was?"
+    question_1:
+      question: "Was ist clarat?"
+      answer: |
+        clarat ist ein Portal, auf dem man Unterstützungsangebote findet. Wir
+        helfen dir dabei, Hilfe zu finden. Aber wir beraten nicht. Dafür gibt es
+        Experten. Und genau die kannst du bei uns finden. Es gibt <b>clarat
+        family</b> und <b>clarat refugees</b>:
+        <p>
+        <ul>
+        <li>
+        <b>clarat family</b> hilft Kindern, Jugendlichen und Familien, die
+        Probleme haben. Und die Unterstützung in ihrer Nähe suchen. Hier findest
+        du einfach Hilfe. Für dich, deine Familie und deine Freunde. Oder auch
+        für andere Kinder, Jugendliche und Familien, die du kennst. Was clarat
+        family macht, kannst du dir auch in einem %{link_to_family_movie}
+        angucken.
+        </li>
+        <li>
+        <b>clarat refugees</b> hilft Flüchtlingen, die Unterstützung in ihrer
+        Nähe suchen. Hier findest du einfach Hilfe. Für dich, deine Familie und
+        deine Freunde. Auch, wenn du kein Flüchtling bist, aber Flüchtlinge
+        kennst, die Hilfe brauchen.
+        </li>
+        </ul>
+        </p>
+      link_1:
+        name: "Film"
+        var: "link_to_family_movie"
+        url: "http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/"
+        target: "_blank"
+    question_2:
+      question: "Wieso gibt es clarat?"
+      answer: |
+        In Deutschland gibt es viele Unterstützungsangebote. Für Menschen, die
+        dringend Hilfe brauchen. Diese Angebote sind aber oft schwer zu finden.
+        Zum Beispiel, weil man nicht genau weiß, wo man danach suchen soll. Oder
+        weil man nicht weiß, bei wem man sich melden muss. Das wollen wir ändern.
+    question_3:
+      question: "Wie funktioniert clarat?"
+      answer: |
+        Gib dein Problem ein. Und wo du Hilfe suchst. Dann findest du passende
+        Unterstützungsangebote in deiner Nähe. Oder Hilfe übers Telefon oder im
+        Internet. %{ref_to_how_to_find_right_help} erklären wir dir genau, wie du
+        findest, was du suchst. Wenn du auf ein Angebot klickst, sagen wir dir,
+        was du als nächstes tun musst. Zum Beispiel, ob du anrufen oder einfach
+        hingehen kannst.
+      link_1:
+        name: "Hier"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
+        class: "FAQ_anchor_link"
+    question_4:
+      question: "Ist die Suche bei clarat kostenlos?"
+      answer: |
+        clarat ist kostenlos und bleibt kostenlos. Jeder kann kostenlos bei <b>
+        clarat family</b> nach Hilfe für Kinder, Jugendliche und Familien
+        suchen. Und jeder kann kostenlos bei <b>clarat refugees</b> nach Hilfe
+        für Flüchtlinge suchen.
+    question_5:
+      question: "Ist die Suche bei clarat anonym?"
+      answer: |
+        Die Suche bei clarat ist immer anonym. Das heißt, niemand bei clarat
+        kennt deinen Namen oder deine Adresse.
+    question_6:
+      question: "Sind die Informationen bei clarat aktuell?"
+      answer: |
+        Wir gucken regelmäßig, ob die Informationen bei clarat noch aktuell
+        sind. Denn nur so kann clarat Kindern, Jugendlichen, Familien und
+        Flüchtlingen helfen. Wenn die Informationen nicht mehr stimmen, dann
+        aktualisieren wir sie. Das heißt, wir tauschen sie aus.
+    question_7:
+      question: "Gibt es clarat für ganz Deutschland?"
+      answer: |
+        Einige Angebote bei <b>clarat family</b> und bei <b>clarat refugees</b>
+        kannst du von überall aus nutzen. Egal, wo du wohnst. Es gibt viele
+        Angebote, bei denen man dir am Telefon oder im Internet hilft. Das
+        heißt, per E-Mail, im Chat oder im Forum. Viele andere Angebote kannst
+        du genau da nutzen, wo du wohnst. Bei <b>clarat refugees</b> findest du
+        bald Angebote für viele Großstädte in Deutschland. Wir haben aber mit
+        Berlin angefangen. Bei <b>clarat family</b> haben wir in Berlin
+        angefangen. Hier gibt es sehr viele Angebote. Aber wir sammeln weiter.
+        Bald auch für weitere, große Städte in Deutschland.
+    question_8:
+      question: "Was ist das Besondere an clarat?"
+      answer: |
+        clarat zeigt dir Hilfe in deiner Nähe. Du findest alle Angebote in einer
+        Übersicht. Und zwar auf einen Blick. Außerdem sagen wir dir genau, was
+        du tun musst, um die Hilfe zu bekommen. Und wir schreiben immer in
+        einfacher Sprache. Diese einfache Sprache ist für alle leicht
+        verständlich. Denn bei clarat sollen auch Menschen Hilfe finden, die
+        nicht so gut Deutsch können. Du kannst die Angebote auch auf vielen
+        anderen Sprachen lesen. Wenn du mehr darüber wissen möchtest, klicke
+        %{ref_to_how_many_languages}.
+      link_1:
+        name: "hier"
+        var: "ref_to_how_many_languages"
+        url: "/haeufige-fragen/#how_many_languages"
+        class: "FAQ_anchor_link"
+    question_9:
+      question: "Wer steckt hinter clarat?"
+      answer: |
+        clarat ist ein Projekt von der %{link_to_bsz}. Das ist eine
+        Familienstiftung, die schon lange viel für Kinder und Jugendliche macht.
+        Und mit clarat refugees jetzt auch für Flüchtlinge. Hier kannst du in
+        einem %{link_to_bsz_movie} mehr über die Stiftung erfahren. Die Idee zu
+        clarat ist Mitte 2014 entstanden. Das clarat-Team gibt es seit September
+        2014. Wenn du mehr über uns erfahren möchtest, schau %{link_to_about_us}.
+      link_1:
+        name: "Benckiser Stiftung Zukunft"
+        var: "link_to_bsz"
+        url: "http://www.benckiser-stiftung.org/de"
+        target: "_blank"
+      link_2:
+        name: "Video"
+        var: "link_to_bsz_movie"
+        url: "http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm"
+        target: "_blank"
+      link_3:
+        name: "hier"
+        var: "link_to_about_us"
+        url: "http://www.clarat.org/ueber-uns"
+        target: "_blank"
+    question_10:
+      question: "Wer finanziert clarat?"
+      answer: |
+        Das Geld für <b>clarat family</b> und <b>clarat refugees</b> kommt von
+        der %{link_to_bsz}.
+      link_1:
+        name: "Benckiser Stiftung Zukunft"
+        var: "link_to_bsz"
+        url: "http://www.benckiser-stiftung.org/de"
+        target: "_blank"
+    question_11:
+      question: "Wie lange wird es clarat geben?"
+      answer: |
+        <b>clarat family</b> und <b>clarat refugees</b> wird es für länger geben.
+        Denn die %{link_to_bsz} finanziert die beiden Portale auch in Zukunft.
+        Du kannst hier also auch in den nächsten Jahren Hilfe finden. Das gilt
+        jetzt vor allem für Berlin. Und bald auch für andere Städte und Regionen,
+        die wir noch bei clarat aufnehmen.
+      link_1:
+        name: "Benckiser Stiftung Zukunft"
+        var: "link_to_bsz"
+        url: "http://www.benckiser-stiftung.org/de"
+        target: "_blank"
+    question_12:
+      question: "Ist der Programmier-Code von clarat öffentlich zugänglich?"
+      answer: |
+        Der Programmier-Code von clarat ist öffentlich zugänglich. Den Link zu
+        unserem Code findest du %{link_to_github}.
+      link_1:
+        name: "hier"
+        var: "link_to_github"
+        url: "https://github.com/clarat-org"
+        target: "_blank"
+    question_13:
+      question: "Bietet clarat eine Schnittstelle an, um Daten weiterzuverwenden?"
+      answer: |
+        Momentan gibt es keine Schnittstelle, über die du Daten herunterladen
+        oder weiterverarbeiten kannst. Es kann sein, dass es später so eine
+        Schnittstelle geben wird. Das ist aber noch nicht ganz sicher. Jetzt
+        gerade sammeln und sortieren wir hauptsächlich Daten. Wenn Du Interesse
+        an einer solchen Schnittstelle hast, %{link_to_contact_form}.
+      link_1:
+        name: "melde dich einfach bei uns"
+        var: "link_to_contact_form"
+        url: "http://www.clarat.org/refugees/kontakt/new"
+        target: "_blank"
+  section_2:
+    heading: "Hast du Fragen zu deiner Suche?"
+    question_1:
+      anchor: "who_finds_help"
+      question: "Wer findet bei clarat Hilfe?"
+      answer: |
+        clarat ist für alle – mit nur einem Klick entscheidest du dich für <b>
+        clarat family</b> oder für <b>clarat refugees</b>:
+        <p>
+        <ul>
+        <li>
+        <b>clarat family</b> ist für Kinder, Jugendliche und Familien, die Hilfe
+        brauchen. Egal ob sie Probleme in der Familie, mit Freunden, in der
+        Schule oder woanders haben.
+        </li>
+        <li>
+        <b>clarat refugees</b> ist für alle Flüchtlinge in Deutschland. Für
+        geflüchtete Kinder und Jugendliche. Für geflüchtete Frauen und Männer.
+        Für geflüchtete Familien. Also für alle, die nach Deutschland geflüchtet
+        sind und deshalb Hilfe brauchen.
+        </li>
+        </ul>
+        </p>
+        Bei clarat können aber auch Menschen suchen, die anderen helfen wollen.
+        Zum Beispiel Erzieher, Lehrer oder Nachbarn und Bekannte.
+    question_2:
+      question: "Zu welchen Themen finde ich bei clarat family Hilfe?"
+      answer: |
+        Du findest bei <b>clarat family</b> verschiedene Unterstützungsangebote.
+        Sie helfen dir bei verschiedenen Problemen. Wir haben sie für dich nach
+        Themen geordnet:
+        <p>
+        <ul>
+        <li>
+        <b>Kinderwagen – Familie</b><br>
+        Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
+        Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
+        Beispiel bei Problemen mit dem Erwachsenwerden. Oder mit der Erziehung.
+        Hier gibt es für jeden in der Familie Hilfe. Es gibt viele Hilfen für
+        Kinder. Und viele für Eltern.
+        </li>
+        <br>
+        <li>
+        <b>Herz – Gesundheit</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn es dir schlecht geht, weil du
+        krank bist. Oder weil jemand in deiner Familie krank ist. Oder wenn
+        einer von euch ein Suchtproblem hat. Du findest aber auch Hilfe bei
+        Problemen in der Schwangerschaft.
+        </li>
+        <br>
+        <li>
+        <b>Buch – Lernen und Arbeiten</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn du Probleme in der Schule hast.
+        Oder in der Ausbildung. Du findest aber auch Hilfe, wenn du Probleme
+        hast, eine Ausbildung zu finden. Oder wenn du nach einem Deutschkurs
+        suchst.
+        </li>
+        <br>
+        <li>
+        <b>Wegweiser – Sorgen im Alltag</b><br>
+        Hier findest du Hilfe, wenn du kleine oder große Sorgen im Alltag hast.
+        Zum Beispiel, wenn du Geldsorgen hast. Oder wenn du auf der Straße lebst.
+        Aber auch, wenn du nach etwas suchst, was du in deiner Freizeit machen
+        kannst. Oder wenn du Unterstützung dabei brauchst, Formulare und Anträge
+        auszufüllen.
+        </li>
+        <br>
+        <li>
+        <b>Faust – Gewalt</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen oder
+        missbraucht hat. Du findest aber auch Hilfe, wenn du selbst aggressiv
+        oder straffällig geworden bist.
+        </li>
+        <br>
+        <li>
+        <b>Blitz – Notfall</b><br>
+        Hier findest du schnell Hilfe, wenn du in Not bist. Bei
+        Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
+        dich immer melden. Ganz egal, wie spät es ist.
+        </li>
+        </ul>
+        </p>
+    question_3:
+      question: "Zu welchen Themen finde ich bei clarat refugees Hilfe?"
+      answer: |
+        Du findest bei <b>clarat refugees</b> verschiedene
+        Unterstützungsangebote. Sie helfen dir bei verschiedenen Themen. Wir
+        haben sie für dich geordnet:
+        <p>
+        <ul>
+        <li>
+        <b>Paragraph – Asyl und Recht</b><br>
+        Hier findest du Hilfe, wenn du Fragen zum Asylverfahren hast. Egal, ob
+        vor dem Verfahren, dabei oder danach. Also zum Beispiel auch, wenn du
+        eine Duldung hast. Oder wenn du Fragen zu den deutschen Gesetzen hast.
+        Auch minderjährige Flüchtlinge finden hier Unterstützung.
+        </li>
+        <br>
+        <li>
+        <b>Kinderwagen – Familie</b><br>
+        Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
+        Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
+        Beispiel bei Problemen mit dem Erwachsenwerden. Oder mit der Erziehung.
+        Hier gibt es für jeden in der Familie Hilfe. Es gibt viele Hilfen für
+        Kinder. Und viele für Eltern.
+        </li>
+        <br>
+        <li>
+        <b>Herz – Gesundheit</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn du krank bist. Oder wenn du
+        schwanger bist. Du findest hier auch Hilfe, wenn es dir wegen Krieg und
+        Folter schlecht geht. Oder wenn du eine Behinderung hast. Du findest
+        hier Ärzte und Psychologen, die Flüchtlingen helfen.
+        </li>
+        <br>
+        <li>
+        <b>Buch – Lernen und Arbeiten</b><br>
+        Hier findest du Hilfe, wenn du Fragen zum Thema Lernen und Arbeiten
+        hast. Zum Beispiel zu Kindergärten und Schulen. Oder wenn du wissen
+        möchtest, wie du als Flüchtling studieren kannst. Oder wenn du einen
+        Ausbildungsplatz oder eine Arbeit suchst. Du findest hier auch viele
+        verschiedene Deutschkurse. Und die Integrationskurse, die du als
+        Flüchtling machen kannst.
+        </li>
+        <br>
+        <li>
+        <b>Wegweiser – Leben in Deutschland</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn du Probleme mit Ämtern hast.
+        Zum Beispiel, weil du nicht gut Deutsch sprichst. Dann findest du hier
+        jemanden, der für dich übersetzt. Oder jemanden, der mit dir zum Amt
+        geht. Du findest hier aber auch andere Hilfe. Wir zeigen dir zum
+        Beispiel Orte, wo du Essen bekommst. Oder Möbel und Kleidung. Und du
+        findest hier Angebote, bei denen du andere Leute kennenlernen kannst.
+        Zum Beispiel in Sportvereinen oder Kochkursen.
+        </li>
+        <br>
+        <li>
+        <b>Faust – Gewalt</b><br>
+        Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen hat.
+        Oder wenn man dich im Krieg gefoltert hat. Du findest aber auch Hilfe,
+        wenn du zum Beispiel aus einer islamistischen Gruppe aussteigen möchtest.
+        </li>
+        <br>
+        <li>
+        <b>Blitz – Notfall</b><br>
+        Hier findest du schnell Hilfe, wenn du in Not bist. Bei
+        Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
+        dich immer melden. Ganz egal, wie spät es ist.
+        </li>
+        </ul>
+        </p>
+    question_4:
+      question: "Wie finde ich schnell Hilfe, wenn ich in Not bin?"
+      answer: |
+        Auf der Hauptseite siehst du rechts den Blitz. Wenn du auf den Blitz
+        klickst, dann siehst du ganz bestimmte Unterstützungsangebote. Diese
+        Unterstützungsangebote helfen dir in einem Notfall. Also wenn du schnell
+        Hilfe brauchst. Bei Unterstützungsangeboten, bei denen auch <b>Tag und
+        Nacht</b> steht, kannst du dich immer melden. Ganz egal, wie spät es
+        ist. Wenn du nicht so gerne rausgehen möchtest, hilft man dir hier auch
+        am Telefon oder über das Internet.
+    question_5:
+      anchor: "how_to_find_right_help"
+      question: "Wie finde ich die richtige Hilfe für mich?"
+      answer: |
+        Es gibt zwei Möglichkeiten, wie du die richtige Hilfe für dich finden
+        kannst:
+        <p>
+        <ul>
+        <li>
+        Wenn du weißt, wie dein Problem oder die Hilfe heißt, nach der du
+        suchst, gibst du das einfach auf der Hauptseite in das Feld <b>Was?</b>
+        ein. Schreibe danach in das Feld <b>Wo?</b>, wo du Hilfe suchst.
+        Oder klicke in das Feld <b>Wo?</b>. Und dann auf <b>Benutze meinen
+        Standort</b>. Dann klick einfach auf die Lupe und finde Hilfe in deiner
+        Nähe!
+        </li>
+        <li>
+        Wenn du nicht genau weißt, wie dein Problem heißt, probiere die <b>Suche
+        nach Kategorien</b> aus. Wenn du zum Beispiel Probleme mit deinen
+        Hausaufgaben hast, klicke auf das Buch. Auf der linken Seite siehst du
+        dann viele Begriffe zum Thema <i>Lernen und Arbeiten</i>, die du wieder
+        anklicken kannst. Schreibe auch in das Feld <b>Wo?</b>, wo du Hilfe
+        suchst. Oder klicke in das Feld <b>Wo?</b>. Und dann auf <b>Benutze
+        meinen Standort</b>. Dann klick einfach auf die Lupe und finde Hilfe in
+        deiner Nähe!
+        </li>
+        </ul>
+        </p>
+    question_6:
+      question: "Finde ich Hilfe, die ich kostenlos nutzen kann?"
+      answer: |
+        Viele Unterstützungsangebote, die du bei clarat findest, sind kostenlos.
+        Es gibt aber auch Hilfen, die etwas kosten. Das heißt nicht automatisch,
+        dass du das dann selbst bezahlen musst. Es kann sein, dass die
+        Krankenkasse das bezahlt. Oder eine öffentliche Stelle. Das kann zum
+        Beispiel ein Amt sein. Oder eine Behörde. Am besten fragst du direkt da
+        nach, wo die Hilfe angeboten wird. Dann weißt du ganz sicher, ob das
+        Unterstützungsangebot für dich kostenlos ist.
+    question_7:
+      question: "Finde ich Hilfe, die ich anonym nutzen kann?"
+      answer: |
+        Einige Unterstützungsangebote, die du bei clarat findest, kannst du
+        anonym nutzen. Das heißt, dass du niemandem deinen Namen sagen musst.
+        Wenn du die Hilfe anonym nutzen kannst, steht das bei clarat unter
+        <i>Was musst du tun?</i> Wenn das da nicht steht, frage am besten direkt
+        da nach, wo die Hilfe angeboten wird.
+    question_8:
+      question: "Finde ich bei clarat family Hilfe zum Thema Behinderung?"
+      answer: |
+        Als Kind oder Jugendlicher findest du dann Hilfe,
+        <p>
+        <ul>
+        <li>
+        wenn du eine seelische Behinderung hast. Das ist, wenn du schon länger
+        psychische Probleme hast.
+        </li>
+        <li>
+        wenn du Eltern mit einer Behinderung hast. Egal, welche Behinderung sie
+        haben. Das kann eine seelische, eine geistige oder eine körperliche
+        Behinderung sein.
+        </li>
+        <li>
+        wenn du einen Bruder oder eine Schwester mit Behinderung hast. Egal,
+        welche Behinderung sie haben. Das kann eine seelische, eine geistige
+        oder eine körperliche Behinderung sein.
+        </li>
+        </ul>
+        </p>
+    question_9:
+      question: "Wie kann ich meine Suche filtern?"
+      answer: |
+        Starte deine Suche nach Hilfe. Wenn du wissen möchtest, wie du die
+        richtige Hilfe für dich findest, kannst du das
+        %{ref_to_how_to_find_right_help} nachlesen. Wenn du jetzt auf der
+        Ergebnisseite bist, siehst du oben rechts <b>Suchoptionen einblenden</b>.
+        Wenn du darauf klickst, kannst du verschiedene Filter benutzen.
+        Damit machst du deine Suche noch genauer:
+        <p>
+        <ul>
+        <li>
+        <b>Alter des Kindes?</b> Hier gibst du dein Alter ein. Oder das Alter
+        von dem Kind, für das du Hilfe suchst.
+        </li>
+        <li>
+        <b>Sprache?</b> Hier gibst du deine Sprache an. Dann werden
+        dir Unterstützungsangebote gezeigt, die du in deiner Sprache nutzen
+        kannst. Wenn du hier keine Sprache auswählst, werden dir automatisch
+        Unterstützungsangebote angezeigt, bei denen man Deutsch spricht.
+        </li>
+        <li>
+        <b>Hilfe für wen?</b> Hier kannst du auswählen, für wen die Hilfe sein
+        soll. Wenn du zum Beispiel für deine ganze Familie suchst, klicke <i>für
+        Familien</i> an. Suchst du als Kind nur für dich, klicke <i>für Kinder
+        und Jugendliche</i> an.
+        </li>
+        <li>
+        <b>Geschlecht?</b> Hier kannst du auswählen, ob du Hilfe <i>nur für
+        Jungen und Männer</i> oder <i>nur für Mädchen und Frauen</i> suchst.
+        Wenn du nichts anklickst, bleibt der Filter automatisch auf <i>egal</i>.
+        </li>
+        <li>
+        <b>Auf welchem Weg?</b> Hier kannst du auswählen, ob du zum Beispiel
+        nur Unterstützungsangebote finden möchtest, zu denen du persönlich
+        hingehen kannst. Dann klicke <i>persönlich</i> an. Wenn du lieber von
+        dir zu Hause aus Hilfe bekommen möchtest, klicke <i>telefonisch</i> oder
+        <i>online</i> an. Danach kannst du noch wählen zwischen Telefon, E-Mail,
+        Chat, Forum und Online-Kurs.
+        </li>
+        </ul>
+        </p>
+      link_1:
+        name: "hier"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
+        class: "FAQ_anchor_link"
+    question_10:
+      question: "Wieso finde ich nicht das, was ich suche?"
+      answer: |
+        Das kann verschiedene Gründe haben.
+        <p>
+        <ul>
+        <li>
+        Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
+        mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
+        versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
+        Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
+        diese Suche funktioniert.
+        </li>
+        <li>
+        Wenn du auf dem Land wohnst, und keine Hilfe in deiner Nähe findest,
+        schreibe in das Feld <b>Wo?</b> eine Stadt bei dir in der Nähe. Oder
+        gucke nach Hilfe, die du am Telefon oder im Internet bekommen kannst.
+        </li>
+        <li>
+        Ein anderer Grund dafür kann sein: Wir haben für deinen Stadtteil oder
+        deine Stadt noch keine Unterstützungsangebote gesammelt.
+        </li>
+        <li>
+        Oder wir haben für dein Problem leider noch keine passenden Angebote bei
+        clarat. Damit wir das bald ändern können, ist deine Rückmeldung für uns
+        sehr wichtig. Gib uns bitte per E-Mail an %{mailto_clarat} Bescheid,
+        wenn du nicht findest, was du suchst. Du kannst uns auch in unserem
+        Live-Chat schreiben. Den findest du ganz unten rechts auf der Seite.
+        </li>
+        </ul>
+        </p>
+      link_1:
+        name: "Hier"
+        var: "ref_to_how_to_find_right_help"
+        url: "/haeufige-fragen/#how_to_find_right_help"
+        class: "FAQ_anchor_link"
+      link_2:
+        name: "post@clarat.org"
+        var: "mailto_clarat"
+        url: "mailto:post@clarat.org"
+        target: "_blank"
+    question_11:
+      question: "Was kann ich machen, wenn ich nicht weiß, ob die Hilfe die richtige für mich ist?"
+      answer: |
+        Am besten guckst du zuerst genau, für welches Problem die Hilfe ist. Das
+        findest du unter <b>Worum geht’s?</b>. Wenn es noch nicht die richtige
+        Hilfe für dich ist, dann probiere es mit einem anderen
+        Unterstützungsangebot. Wenn du dir noch nicht sicher bist, frage am
+        besten beim Anbieter nach. Oft kann man anrufen oder eine E-Mail
+        schreiben. Telefonnummern und E-Mail-Adressen findest du bei clarat.
+        Die stehen unter <i>Wo kannst du dich melden?</i>.
+    question_12:
+      question: "Wie finde ich Hilfe, wenn ich nicht für mich selbst suche, sondern für jemand anderen?"
+      answer: |
+        Bei clarat kannst du nicht nur für dich selbst nach Hilfe suchen.
+        Sondern auch für andere. Zum Beispiel für einen Freund. Oder als Onkel
+        für deinen Neffen. Oder als Mutter für deine Tochter. Oder als Lehrer
+        für deinen Schüler. Aber wunder dich nicht nicht darüber, dass wir immer
+        zuerst die Person ansprechen, die bei diesem Angebot Hilfe bekommt. Und
+        das sind oft Kinder und Jugendliche.
+  section_3:
+    heading: "Hast du Fragen zur clarat-Sprache?"
+    question_1:
+      question: "Warum schreibt clarat immer in einer einfachen Sprache?"
+      answer: |
+        Damit alle, die bei clarat nach Hilfe suchen, bei clarat auch schnell
+        Hilfe finden, ist die clarat-Sprache entstanden. Die clarat-Sprache ist
+        für alle leicht zu verstehen. Denn sie orientiert sich an der einfachen
+        Sprache. Und clarat ist schließlich für alle da. Für Kinder, Jugendliche
+        und ihre Familien. Aus verschiedenen Ländern. Für solche, die hier
+        geboren sind. Und für solche, die gerade erst nach Deutschland gekommen
+        sind. Für solche, die gut Deutsch können. Und für solche, die nicht so
+        gut Deutsch können.
+    question_2:
+      question: "Wie werden schwierige Wörter bei clarat erklärt?"
+      answer: |
+        Schwierige Wörter werden bei clarat in einem Satz erklärt. Manche Wörter
+        brauchen aber längere Erklärungen. Diese Wörter erkennst du bei clarat
+        daran, dass sie unterstrichen sind. Wenn du mit der Maus über diese
+        Wörter fährst, siehst du die Erklärungen.
+    question_3:
+      question: "Warum schreibt clarat immer nur <i>Schüler</i> und nicht <i>Schüler und Schülerinnen</i>?"
+      answer: |
+        Bei clarat nutzen wir eine einfache Sprache. Das bedeutet auch, dass wir
+        kurze Sätze verwenden. Deswegen sagen wir nicht jedesmal Schüler und
+        Schülerinnen. Sondern nur Schüler. Obwohl wir Schüler und Schülerinnen
+        meinen. Denn wir finden es wichtig, immer alle gleich zu behandeln. Aber
+        kurze Sätze kann man leichter lesen.
+    question_4:
+      question: "Warum benutzt clarat die Abkürzung <i>LGBTI</i>?"
+      answer: |
+        Bei clarat gibt es Hilfen für Kinder, Jugendliche und Eltern jeder
+        sexuellen Orientierung. Das können Lesben, Schwule, Bisexuelle,
+        Transsexuelle und Intersexuelle sein. Die können wir aber nicht immer
+        alle aufzählen und erklären. Denn die Texte bei clarat müssen einfach
+        und kurz sein. Deswegen benutzen wir die Abkürzung LGBTI. Das ist die
+        englische Abkürzung für Lesben, Schwule, Bisexuelle, Transsexuelle und
+        Intersexuelle. Eine deutsche gibt es nicht.
+    question_5:
+      question: "Warum benutzt clarat den Begriff <i>Migranten</i>?"
+      answer: |
+        Bei clarat benutzen wir immer eine einfache Sprache. Deswegen benutzen
+        wir Wörter, die man leicht versteht. Und die viele Menschen kennen.
+        Außerdem versuchen wir, so politisch korrekt wie möglich zu sein. Aus
+        diesen Gründen benutzen wir meistens das Wort Migranten. Und selten den
+        Ausdruck Ausländer oder Menschen mit Migrationshintergrund.
+    question_6:
+      question: "Warum benutzt clarat den Begriff <i>Flüchtlinge</i>?"
+      answer: |
+        Bei clarat wollen wir, dass alle schnell verstehen, wer gemeint ist.
+        Und die meisten Menschen benutzen das Wort Flüchtlinge. Deshalb machen
+        wir das auch. Auch wenn das Wort Geflüchtete genauer ist. Bei clarat
+        versuchen wir auch, so genau wie möglich zu sein. Aber noch wichtiger
+        ist uns, dass alle schnell verstehen. Dann können alle, die Hilfe
+        suchen, auch schneller Hilfe finden.
+  section_4:
+    heading: "Hast du Fragen zu clarat in verschiedenen Sprachen?"
+    question_1:
+      anchor: "how_many_languages"
+      question: "Auf welchen Sprachen gibt es clarat?"
+      answer: |
+        Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+    question_2:
+      question: "Wie kann ich clarat in meiner Sprache lesen?"
+      answer: |
+        Oben auf der Seite kannst du deine Sprache anklicken. Und schon
+        übersetzt der  Google Translator alles automatisch in deine Sprache.
+        Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein,
+        dass etwas komisch klingt.
+    question_3:
+      question: "Warum klingen die Texte in meiner Sprache so komisch?"
+      answer: |
+        Der Google Translator macht automatische Übersetzungen. Deswegen gibt es
+        machmal sprachliche Fehler. Es kann also sein, dass etwas nicht ganz
+        richtig übersetzt wird.
+  section_5:
+    heading: "Hast du Fragen als Mitarbeiter einer Organisation?"
+    question_1:
+      question: "Warum sind die Angebote meiner Organisation bei clarat?"
+      answer: |
+        Die Angebote deiner Organisation helfen Kindern, Jugendlichen oder
+        Familien, die Probleme haben. Darum haben wir sie bei <b>clarat
+        family</b> aufgenommen. Denn wir wollen, dass die, die Hilfe brauchen,
+        schnell und unkompliziert Hilfe bei deiner Organisation finden.
+        <br>
+        Oder die Angebote deiner Organisation helfen Flüchtlingen, die nach
+        Deutschland geflüchtet sind. Deshalb haben wir sie bei <br>clarat
+        refugees</b> aufgenommen. Denn wir wollen den Flüchtlingen schnell und
+        unkompliziert zeigen, wo sie Hilfe finden.
+    question_2:
+      question: "Was macht clarat für meine Organisation?"
+      answer: |
+        <b>clarat family</b> hilft Kindern, Jugendlichen und Familien, die
+        Angebote deiner Organisation zu finden. Und <b>clarat refugees</b>
+        unterstützt Flüchtlinge bei ihrer Suche nach Hilfe. Nur wer weiß,
+        dass es deine Organisation gibt, kann auch ihre Unterstützungsangebote
+        finden. Und damit jeder versteht, welche Hilfe er genau bei deiner
+        Organisation bekommt, ist bei clarat alles in einer einfachen Sprache
+        erklärt. Außerdem können alle Angebote bei clarat automatisch in viele
+        andere Sprachen übersetzt werden.
+    question_3:
+      question: "Wie finde ich die Angebote meiner Organisation bei clarat?"
+      answer: |
+        Du kannst in dem Feld <b>Was?</b> den Namen deiner Organisation
+        eintragen. Zum Beispiel <i>Musterverein e.V.</i>. Und in dem Feld <b>Wo?
+        </b> den Standort deiner Organisation. Zum Beispiel <i>Mustermannstraße
+        14 Berlin</i>. Dann bekommst du die Angebote für diesen Standort in
+        einer Übersicht angezeigt. Falls deine Organisation mehrere Standorte
+        in Berlin hat, gib in dem Feld <b>Wo?</b> nur Berlin ein.
+    question_4:
+      question: "Warum sind die Angebote meiner Organisation bei clarat anders beschrieben als auf unserer Webseite?"
+      answer: |
+        Damit jeder Hilfe finden kann, schreiben wir alle Angebote in einer
+        einfachen Sprache. In einfacher Sprache müssen komplizierte Dinge
+        manchmal einfacher erklärt werden, als sie in Wirklichkeit sind. So
+        lassen sich die Texte auch automatisch viel besser übersetzen.
+        Vielleicht findest du, dass etwas anders erklärt werden soll. Dann gib
+        uns bitte Bescheid. Am besten schreibst du uns eine E-Mail an
+        %{mailto_clarat}.
+      link_1:
+        name: "post@clarat.org"
+        var: "mailto_clarat"
+        url: "mailto:post@clarat.org"
+        target: "_blank"
+    question_5:
+      question: "Warum werden aus einem Unterstützungsangebot von meiner Organisation mehrere Angebote bei clarat?"
+      answer: |
+        Wir wollen die Suche nach Hilfe für jeden so einfach wie möglich machen.
+        Deshalb versuchen wir, die Angebote deiner Organisation so aufzuteilen,
+        dass man für jedes konkrete Problem auch immer nur ein ganz bestimmtes
+        Angebot findet. So kann der Hilfesuchende schneller die Hilfe finden,
+        die ganz genau zu ihm passt.
+    question_6:
+      question: "Warum finde ich nicht alle Angebote meiner Organisation bei clarat?"
+      answer: |
+        Es gibt viele Unterstützungsangebote für Kinder, Jugendliche, Familien
+        und Flüchtlinge in Deutschland. Und clarat wird Stück für Stück
+        aufgebaut. Es kann also sein, dass wir noch nicht alle Angebote deiner
+        Organisation aufnehmen konnten. Oder wir haben vorerst entschieden, dass
+        nicht alle Angebote deiner Organisation bei clarat aufgenommen werden
+        können. Du findest bei <b>clarat family</b> vorerst:
+        <p>
+        <ul>
+        <li>
+        nur Angebote, die Menschen mit Problemen helfen
+        </li>
+        <li>
+        nur kostenpflichtige Angebote von Organisationen, die gemeinnützig
+        arbeiten
+        </li>
+        <li>
+        keine Angebote, bei denen Menschen ausschließlich körperlich-
+        medizinische Hilfe bekommen
+        </li>
+        </ul>
+        </p>
+        Und du findest bei <b>clarat refugees</b> vorerst:
+        <p>
+        <ul>
+        <li>
+        keine Erstaufnahme-Einrichtungen oder Sammelunterkünfte
+        </li>
+        <li>
+        keine Kirchenasyle
+        </li>
+        <li>
+        keine Ehrenamtsportale oder Spendenportale
+        </li>
+        </ul>
+        </p>
+    question_7:
+      question: "Wie kann ich Fehler oder Änderungswünsche melden?"
+      answer: |
+        Melde dich bei uns. Du kannst uns Fehler und Änderungswünsche einfach
+        mitteilen. Am besten schreibe uns eine E-Mail an %{mailto_clarat} oder
+        ruf an unter +49 (0)30 55 57 96 00.
+      link_1:
+        name: "post@clarat.org"
+        var: "mailto_clarat"
+        url: "mailto:post@clarat.org"
+        target: "_blank"
+    question_8:
+      question: "Warum ist meine Organisation nicht bei clarat?"
+      answer: |
+        Das kann zwei Gründe haben:
+        <p>
+        <ul>
+        <li>
+        Das kann daran liegen, dass wir für den Standort deiner Organisation
+        leider noch keine Angebote gesammelt haben. Und clarat wird Stück für
+        Stück aufgebaut. Es kann also sein, dass wir deine Organisation noch
+        nicht aufnehmen konnten.
+        </li>
+        <li>
+        Oder daran, dass die Angebote deiner Organisation inhaltlich nicht zu
+        clarat passen. Bei clarat findet man nur Angebote zu ganz bestimmten
+        Themen. Welche das sind, kannst du %{ref_to_who_finds_help} nachlesen.
+        Wenn wir die Angebote deiner Organisation bei clarat aufnehmen sollen,
+        melde dich bei uns. Am besten schreibe uns eine E-Mail an
+        %{mailto_clarat} oder ruf an unter +49 (0)30 55 57 96 00.
+        </li>
+        </ul>
+        </p>
+      link_1:
+        name: "hier"
+        var: "ref_to_who_finds_help"
+        url: "/haeufige-fragen/#who_finds_help"
+        class: "FAQ_anchor_link"
+      link_2:
+        name: "post@clarat.org"
+        var: "mailto_clarat"
+        url: "mailto:post@clarat.org"
+        target: "_blank"

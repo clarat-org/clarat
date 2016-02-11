@@ -1,0 +1,15 @@
+nav.nav-lang
+  .nav-lang__container
+    h1.nav-lang__title = t '.title'
+
+    .nav-lang__languages
+      button.nav-lang__button
+
+      ul.nav-lang__list
+        - I18n.available_locales.each do |locale|
+          - active = I18n.locale == locale ? 'nav-lang__listitem--active' : ''
+          li = link_to t(".languages.#{locale}"), {locale: locale.to_s}, class: active
+      = link_to 'http://translate.google.com', target: '_blank',
+                                               class: 'nav-lang__google' do
+        = image_tag 'banner--translated-by-google.svg',
+                    alt: 'Translated by Google'

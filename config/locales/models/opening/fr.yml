@@ -1,0 +1,6 @@
+fr:
+  opening:
+    display_string:
+      appointment: "sur rendez-vous"
+      time_frame: "%{open} - %{close}"
+      time_format: "%Hh%M"

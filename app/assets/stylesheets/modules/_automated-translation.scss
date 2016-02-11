@@ -4,6 +4,16 @@
 //
 // ---------------------------------------------------------------
 
+.Automated-translation__wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  width: 62px;
+  background: rgba(255, 255, 255, .33);
+}
+
 .Automated-translation {
   position: relative;
 
@@ -31,12 +41,9 @@
 
   h3 & {
     position: absolute;
-    right: 7px;
+    right: 43px;
     top: 7px;
-    max-width: 54px;
-    background: rgba(255,255,255,0.33);
-    padding: 2px;
-    margin-top: -2px;
-    border-radius: 2px;
+    width: 54px;
+    left: 4px;
   }
 }

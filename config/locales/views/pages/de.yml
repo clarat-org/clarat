@@ -38,6 +38,7 @@ de:
         dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
         Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
         Bilder nach passender Hilfe suchen.
+      link_text: "hier"
 
     agb:
       title: "Rechtliche Hinweise"

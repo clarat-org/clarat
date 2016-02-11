@@ -32,9 +32,11 @@ en:
           to you once as soon as that is the case.
       navigation:
         claim:
-          first_row: "Find help easily"
-          second_row: |
+          main: "Find help easily"
+          family: |
             Offers of help for children, adolescents and families
+          refugees: |
+            Offers of help for refugees
         category_headline: "Search by categories"
       footer:
         gplus:
@@ -50,6 +52,6 @@ en:
         faq: "FAQ"
         contact: "Contact"
         blog: "Blog"
-        impressum: "site notice"
-        tos: "legal information"
-        privacy: "privacy"
+        impressum: "Site notice"
+        tos: "Legal information"
+        privacy: "Privacy"

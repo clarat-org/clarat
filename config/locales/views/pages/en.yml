@@ -1,40 +1,43 @@
-# TODO!!!!
 en:
   pages:
     home:
       title:
-        family: "Unterstützungsangebote für Kinder, Jugendliche und Familien"
-        refugees: "Unterstützungsangebote für Flüchtlinge"
+        family: "Help and support offerings for children, adolescents and families"
+        refugees: "Help and support offerings for refugees"
       how:
-        heading: "Wie funktioniert clarat?"
+        heading: "How does clarat work?"
         text: |
-          Gib ein, was dich bedrückt. Oder wähle aus unseren Themen aus. Schon
-          siehst du alle Hilfsangebote in deiner Nähe. Wir sagen dir auch, wie
-          du die Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben
-          sollst. Oder einfach vorbeigehen kannst.
+          Simply enter the topic you need help with. Or, whatever worries you.
+          Or, choose from our categories. And we will show you all the relevant
+          offers in your neighborhood. We will also tell you how to get this
+          support. For example, if you should call or write an email. Or, just
+          stop by.
       whom:
-        heading: "Für wen ist clarat?"
+        heading: "Who is clarat for?"
         text: |
-          clarat ist für alle da. Für Kinder, Jugendliche und Familien. Hier
-          findest du Unterstützung bei Fragen und bei Problemen. Für dich, deine
-           Familie und deine Freunde. Oder auch für andere Menschen, die du
-           kennst und die Hilfe brauchen.
+          clarat is for everyone. clarat family for children, adolescents and
+          families. clarat refugees for refugees. Here, you will find the right
+          support if you are looking for help. For yourself, your family or your
+          friends. And also for anyone else you know and who might need help.
       why:
-        heading: "Warum gibt es clarat?"
+        heading: "Why does clarat exist?"
         text: |
-          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen. Sie
-          sind aber oft schwer zu finden. Wir helfen dir dabei. Wir zeigen dir,
-          welche Hilfe es in deiner Nähe gibt.
+          It is easy to find help with clarat. In Germany, there are a lot of
+          support offerings for children, adolescents and families. As well as
+          for refugees. But often, they are very hard to find. And we would like
+          to change that. You should search on clarat family if you are looking
+          for help for your family. And on clarat refugees if you are looking
+          for help for refugees.
 
     not_found:
       title: "404"
-      heading: "Leider konnten wir diese Seite nicht finden."
+      heading: "Unfortunately we could not find that page."
       description: |
-        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
-        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
-        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
-        Bilder nach passender Hilfe suchen.
+        Enter a term in the search field describing the help you're looking for.
+        Or the problem you're facing. clarat will then show you further help and
+        support offerings in your area. Or go %{start_page} to the main page.
+        Here you can search for offers of help via the icons.
+      link_text: "here"
 
     agb:
       title: "Rechtliche Hinweise"
@@ -84,6 +87,7 @@ en:
         Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
         der Bundesrepublik Deutschland.
         </p>
+
     faq:
       title: "Frequently asked questions"
 
@@ -392,108 +396,163 @@ en:
           Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
           Beschwerden oder Ähnliches richten Sie bitte an:
 
-
     impressum:
-      title: "Impressum"
-      heading: "Impressum"
+      title: "Site notice"
+      heading: "Site notice"
 
       responsible_html: |
-        Vorstand<br/>
+        CEO of the Benckiser Stiftung Zukunft<br/>
         Dr. Dr. Christoph Glaser<br/>
-        (verantwortlich für den Inhalt der Website)
+        (responsible for the website content)
 
     about:
-      title: "Über Uns"
-      heading: "Wer steckt hinter clarat?"
+      title: "About us"
+      heading: "Who are the people behind clarat?"
       text: |
-        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
-        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren Projekte der Kinder- und Jugendförderung. Dabei fiel
-        uns eines immer wieder auf: Es ist schwer herauszufinden, welche
-        Unterstützungsangebote es überhaupt gibt. Und dann wurde uns etwas klar:
-        Wenn es für uns als „Experten“ schon so schwer ist, einen Überblick zu
-        bekommen, wie schwer muss es dann für Kinder, Jugendliche und Familien
-        sein, die wirklich Hilfe brauchen? Die Antwort ist: Sehr schwer! Und
-        damit war die Idee zu clarat geboren: Einfach Hilfe finden. Für alle.
-        Überall.
+        clarat ist a project financed by the charitable Benckiser Foundation
+        (www.benckiser-stiftung.org). With the Benckiser Foundation, we have
+        been supporting effective projects in the area of child and youth
+        welfare for many years. In our work we kept noticing that it can be very
+        difficult to find out what kind of help is out there. Then we realized
+        that if we, the “experts”, can’t even get an overview of the help
+        available out there, how difficult must it be for children, adolescents,
+        and their families who are in actual need of help? Or for refugees who
+        don’t know their way around yet? The answer: Very difficult! And that is
+        how the idea for clarat came about: To find help easily. For families on
+        clarat family. And for refugees on clarat refugees.
       amina: |
-        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
-        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich besonders um Online- und Telefonangebote. Ihr Lieblingssong
-        ist La Prima Estate von Erlend Oye.
+        Amina is a sociologist, which means she knows a lot about society. She
+        has a good eye for what is important. At clarat she is part of the
+        research team, where she decides what will become an offering on clarat.
+        Her favorite song is “La Prima Estate” by Erlend Oye
       andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
+        Andrea studied intercultural management, which means she knows a lot
+        about economics and culture. She is extremely meticulous in her work. At
+        clarat she is part of the research team, where she ensures the quality
+        of our work. Her favorite song is “Work Me” by The Black Keys.
+      astrid: |
+        Astrid is a political scientist, which means she knows a lot about
+        politics and society. She is always in a good mood, which is very
+        contagious. At clarat she is part of the research team. Her favorite
+        song is “You Got Me” by the Roots feat. Erykah Badu.
       anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
+        Anne studied economics and international relations. She is a quick,
+        logical thinker. At clarat she is the boss. She takes care of the whole
+        team and organizes everything. Her favorite song is “Denken Sie Groß” by
+        Deichkind.
       basti: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
-        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
-        The Mirror von Michael Jackson.
+        Basti is a web developer, which means he knows how to program websites.
+        At clarat he is the head of IT. He helps us with technical issues. He is
+        also in charge of our vacation days and our contracts. His favorite song
+        is “Man In The Mirror” by Michael Jackson.
+      bettina: |
+        Bettina studied non-profit management, which means she knows how to
+        organize help and support. She is very organized. At clarat she is part
+        of the research team. She also searches the web for organizations. Her
+        favorite song is “Elias” by Dispatch.
       elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
+        Elisa is an expert on cultural studies, which means she knows a lot
+        about culture. She can explain complicated things in a simple way. At
+        clarat she is part of the research team. She also takes care of our
+        glossary and our users. Her favorite song is “Boat Behind by Kings” of
+        Convenience.
+      franziska: |
+        Franziska studied international law, which means she knows a lot about
+        laws that apply to many countries. She can easily understand complicated
+        things – and find solutions quickly. At clarat she is part of the
+        research team. Her favorite song is “Explanations” by Selah Sue.
       janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
+        Janina is a cultural anthropologist, which means she knows a lot about
+        people and cultures. She writes very well. At clarat she is part of the
+        research team. She is an expert for the clarat language and helps our
+        users. Her favorite song ist “MFG” by Fanta4.
+      janne: |
+        Janne studied political science and international relations. She has
+        excellent time management skills. At clarat she is part of the research
+        team. She also decides which offerings will be included on clarat. Her
+        favorite song is “Sweat” by Ry X.
       jens: |
-        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
-        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
-        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
-        Sein Lieblingssong ist 2B2 von Lambchop.
+        Jens is a specialist on educational theory (educationalist), which means
+        he knows a lot about education. He understands complicated things
+        quickly. At clarat he is part of the research team. He also decides
+        which offerings are part of clarat. His favorite song is “2B2” by
+        Lambchop.
       jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team und überprüft alle Infos für die Internetseite. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
+        Jule is specialist on peace and conflict studies, which means she knows
+        a lot about conflicts and war. She is good at finding solutions. At
+        clarat she is part of the research team. She also ensures the quality of
+        our work. Her favorite song is “Home” by Edward Sharpe.
       julia: |
-        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
-        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
-        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
-        Lieblingssong ist Reckoner von Radiohead.
+        Julia studied German language and literature, which means she is well
+        versed in texts and German. She writes very well and can explain things
+        in a simple way. At clarat she is part of the research team and is an
+        expert on our clarat language. Her favorite song is “Reckoner” by
+        Radiohead.
       julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
+        Julian studied social economics, which means he knows a lot about the
+        economy and society. He is also good with computers. At clarat he is
+        part of the research team and takes care of technical issues. His
+        favorite song is “All You Need” by Sublime.
+      katinka: |
+        Katinka is a psychologist, which means she has a good understanding of
+        people’s behavior and feelings. She is also good at sorting out
+        complicated matters. At clarat she is part of the research team. Her
+        favorite song is “The Greatest” by Cat Power.
       konstantin: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
-        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
+        Konstantin is a web developer, which means he knows how to program
+        websites. He always finds good solutions. At clarat he is part of the IT
+        team, where he designs our website. His favorite song is “Too Long” by
+        Daft Punk.
+      lavinia: |
+        Lavinia studied peace and conflict studies, which means she knows a lot
+        about conflicts and war. She is good at making compelling arguments. At
+        clarat she is part of the research team, where she organizes the
+        offerings by topics. Her favorite song is “I’m not Done” by Fever Ray.
+      laura: |
+        Laura studied Southeast Asian studies and development geography, which
+        means she knows a lot about developing countries. She always stays on
+        top of things. At clarat she is part of the research team. Her favorite
+        song is “Paint It Black” by the Rolling Stones.
+      line: |
+        Line is a theatre director. She also knows a lot about literature and
+        language, which means she knows the effect that words can have on people.
+        At clarat she is part of the research team. Her favorite song is
+        “Anybody Seen My Baby” by The Rolling Stones.
       lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
+        Lisa is a design thinker, which means she knows how to creatively plan
+        projects. At clarat she is part of the research team, where she makes
+        plans and takes care of our users. Her favorite song is “Another Day” by
+        Jamie Lidell.
       marcus: |
-        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
-        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
-        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
-        Lieblingssong ist Hysteria von MUSE.
+        Marcus is a web designer, which means he is good at programming and
+        designing websites. He is also a good planner. At clarat he is part of
+        the IT team. He ensures that our website looks good. His favorite song
+        is “Hysteria” by MUSE.
       nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
+        Nicole studied intercultural communications, which means she knows a lot
+        about cultures and language. She is good at making decisions. She is the
+        head of the research team. Her favorite song is “Palabra Mi Amor” by
         Shaka Ponk.
+      nils: |
+        Nils is a computer scientist, which means he knows how to program
+        computer programs and websites. He always comes up with good solutions
+        and is a fast learner. At clarat he is part of the IT team. His favorite
+        song is “Jein” by Fettes Brot.
       stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
+        Stefan is an expert on cultural studies, which means he knows a lot
+        about culture and society. He is good at getting people excited for a
+        cause. He is also the creator of clarat. His favorite song is “Riders On
+        The Storm” by the Doors.
+      tine: |
+        Tine is a social worker. She is a good listener. She is also a writer,
+        which means she has a gift for language and can write beautiful stories.
+        At clarat she is part of the research team. Her favorite song is
+        “Survive It” by Ghostpoet.
       verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+        Verena is a political scientist, which means she knows a lot about
+        politics and society. She is very good at gathering information. At
+        clarat she is part of the research team, where she takes care of our
+        glossary. Her favorite song is “Lose It” by Oh Wonder.
 
     shared:
       address:

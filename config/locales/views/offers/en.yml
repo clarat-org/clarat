@@ -12,111 +12,6 @@ en:
           short: "Offers on …"
         button: "Search"
 
-    invalid_location:
-      title: "Unfortunately we could not find the location you entered"
-      text: |
-        Please check your entry or try searching for something else.
-        (E.g "ZIP, Location").
-
-    index:
-      noscript_warning: |
-        We are sorry, but in order to use our search, you need to have
-        JavaScript enabled in your browser.
-
-      # index partials
-      pending_ajax:
-        searching: "Searching…"
-
-      filters:
-        json:
-          age:
-            zero: "< 1 year"
-            one: "1 year"
-            other: "%{count} years"
-          target_audience:
-            children: "for children and adolescents"
-            parents: "for parents"
-            nuclear_family: "for families"
-            acquaintances: "for friends and family"
-            pregnant_woman: "for pregnant women"
-          exclusive_gender:
-            boys_only: "boys and men only"
-            girls_only: "girls and women only"
-          language:
-            deu: "German"
-            eng: "English"
-            tur: "Turkish"
-            tha: "Thai"
-            bul: "Bulgarian"
-            ron: "Romanian"
-            sqi: "Albanian"
-            ara: "Arabic"
-            fra: "French"
-            kur: "Kurdish"
-            rus: "Russian"
-            srp: "Serbian"
-            amh: "Amharic"
-            bos: "Bosnian"
-            ita: "Italian"
-            hrv: "Croatian"
-            pol: "Polish"
-            por: "Portuegese"
-            vie: "Vietnamese"
-            wol: "Wolof"
-            fas: "Persian (Farsi)"
-            ben: "Bengalese"
-            spa: "Spanish"
-            tam: "Tamil"
-            urd: "Urdu"
-            mul: "more languages upon request"
-            aze: "Azeri"
-            ell: "Greek"
-            hin: "Hindi"
-            mkd: "Macedonian"
-            rom: "Romany"
-            hun: "Hungarian"
-            "568": "Dutch"
-            "326": "Ukranian"
-            "639": "Dari"
-            "150": "German Sign Language"
-            lav: "Latvian"
-            lit: "Lithuanian"
-            kik: "Kikuyu"
-            zho: "Chinese"
-            swa: "Kiswahili"
-            luo: "Luo"
-            ltz: "Luxembourgish"
-            nor: "Norwegian"
-            swe: "Swedish"
-            snk: "Soninke"
-            tgk: "Tadjik"
-            tel: "Telugu"
-            tuk: "Turkmen"
-            uzb: "Uzbek"
-            bel: "Belarusian"
-            zza: "Zaza"
-          contact_type:
-            personal: "personal"
-            remote: "by telephone or online"
-          encounter:
-            hotline: "Telephone"
-            email: "Email"
-            chat: "Chat"
-            forum: "Forum"
-            online-course: "Online-course"
-            portal: "Address list"
-
-      map_sidebar:
-        map_output_searchresults: map output of the search results
-
-      # /index partials
-
-    show:
-      what: "What is it about?"
-      next_steps: "What do you need to do?"
-      who: "Who offers this help?"
-      speaking: "In what language will you get help?"
-      last_updated: "Entry last modified on"
       current_and_original_locale:
         eng: "English"
         deu: "German - Deutsch"
@@ -170,6 +65,59 @@ en:
         uzb: "Uzbek - Oʻzbek tili"
         bel: "Belarusian - беларуская мова"
         zza: "Zaza - Zazaki / Kırmancki"
+
+    invalid_location:
+      title: "Unfortunately we could not find the location you entered"
+      text: |
+        Please check your entry or try searching for something else.
+        (E.g "ZIP, Location").
+
+    index:
+      noscript_warning: |
+        We are sorry, but in order to use our search, you need to have
+        JavaScript enabled in your browser.
+
+      # index partials
+      pending_ajax:
+        searching: "Searching…"
+
+      filters:
+        json:
+          age:
+            zero: "< 1 year"
+            one: "1 year"
+            other: "%{count} years"
+          target_audience:
+            children: "for children and adolescents"
+            parents: "for parents"
+            nuclear_family: "for families"
+            acquaintances: "for friends and family"
+            pregnant_woman: "for pregnant women"
+          exclusive_gender:
+            boys_only: "boys and men only"
+            girls_only: "girls and women only"
+          contact_type:
+            personal: "personal"
+            remote: "by telephone or online"
+          encounter:
+            hotline: "Telephone"
+            email: "Email"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-course"
+            portal: "Address list"
+
+      map_sidebar:
+        map_output_searchresults: map output of the search results
+
+      # /index partials
+
+    show:
+      what: "What is it about?"
+      next_steps: "What do you need to do?"
+      who: "Who offers this help?"
+      speaking: "In what language will you get help?"
+      last_updated: "Entry last modified on"
 
       # show partials
       opening_section:

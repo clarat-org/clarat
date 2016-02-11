@@ -46,7 +46,7 @@
           ul.section-content__langlist
             - @offer.language_filters.pluck(:identifier).each do |language|
               li
-                => t ".current_and_original_locale.#{language}"
+                => t "offers.shared.current_and_original_locale.#{language}"
 
         button.section-content__toggle
           = t '.speaking'

@@ -115,7 +115,7 @@ en:
       what: "What is it about?"
       next_steps: "What do you need to do?"
       who: "Who offers this help?"
-      speaking: "In what language will you get help?"
+      speaking: "What languages are spoken?"
       last_updated: "Entry last modified on"
       current_and_original_locale:
         eng: "English"
@@ -183,7 +183,7 @@ en:
           sat: Saturday
           sun: Sunday
       website_section:
-        internet_presence: "Where can you find out more online?"
+        internet_presence: "Where can you get more information online?"
         websites:
           own: "Website"
           document: "Further Information"

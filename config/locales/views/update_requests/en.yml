@@ -6,4 +6,4 @@ en:
         are present in your location.
     new:
       email_placeholder: "Email address"
-      button: "Message recieved"
+      button: "Send"

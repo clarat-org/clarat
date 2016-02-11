@@ -3,6 +3,9 @@ Clarat.welcomeTooltips = {}
 class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
     @tooltips = $('.tooltip--welcome')
+    @ttAdvancedSearch = $('.tooltip--advancedsearch')
+    @ttFrontWeltRefugees = $('.tooltip--welt-refugees')
+    @ttFrontWeltFamily = $('.tooltip--welt-family')
     @world = if $('body.refugees').length then 'refugees' else 'family'
     @overlay = $('#qtip_welcome_overlay')
     super()
@@ -13,24 +16,56 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
   init: =>
 
+    @initFrontTooltips()
+    @initOfferIndexTooltip()
+
+
+  initOfferIndexTooltip: =>
+
     that = this
 
-    @tooltips.each ->
+    @ttAdvancedSearch.qtip
+      position:
+        my: 'bottom right'
+        at: 'top center'
+        effect: false
+        viewport: $(window)
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that.showOverlay()
+        hide: ->
+          that.hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'bottom right'
 
-      text = $(this).data 'tooltip-text'
-      advancedsearch = $(this).hasClass "tooltip--advancedsearch"
+    unless @hasCookie()
 
-      my = if advancedsearch then 'bottom right' else 'bottom center'
-      corner = if advancedsearch then 'bottom right' else 'bottom center'
+      if $('body.template--offers-index').length
+        @ttAdvancedSearch.qtip('api').show()
 
-      $(this).qtip
+    return
+
+
+  initFrontTooltips: =>
+
+    that = this
+
+    @ttFrontWeltRefugees.qtip
         position:
-          my: my
+          my: 'bottom center'
           at: 'top center'
           effect: false
           viewport: $(window)
         content:
-          text: text
           button: 'x'
         show:
           event: false
@@ -45,18 +80,47 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           tip:
             height: 16
             width: 22
-            corner: corner
+            corner: 'bottom center'
+
+      @ttFrontWeltFamily.qtip
+        position:
+          my: 'bottom center'
+          at: 'top center'
+          effect: false
+          viewport: $(window)
+        content:
+          button: 'x'
+        show:
+          event: false
+        hide:
+          event: false
+        events:
+          show: ->
+            that.showOverlay()
+          hide: ->
+            that.hideOverlay()
+        style:
+          tip:
+            height: 16
+            width: 22
+            corner: 'bottom center'
 
     unless @hasCookie()
 
-      if $('body.template--pages-home').length or $('body.template--offers-index').length
-        @tooltips.qtip('api').show()
+      if $('body.family.template--pages-home').length
+
+        @ttFrontWeltRefugees.qtip('api').show()
+
+      else if $('body.refugees.template--pages-home').length
+
+        @ttFrontWeltFamily.qtip('api').show()
 
     return
 
 
   setCookie: =>
     $.cookie 'welcome-tooltips', 'true', expires: 90
+
 
   hasCookie: =>
     @setCookie()
@@ -72,11 +136,13 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @overlay.show()
     @overlay.click () ->
       that.hideOverlay()
-      that.tooltips.qtip('api').hide()
 
 
   hideOverlay: =>
    @overlay.hide()
+   @ttAdvancedSearch.qtip('destroy')
+   @ttFrontWeltRefugees.qtip('destroy')
+   @ttFrontWeltFamily.qtip('destroy')
 
 
 $(document).ready ->

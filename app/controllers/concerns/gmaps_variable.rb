@@ -13,7 +13,7 @@ module GmapsVariable
 
       @markers[key_s] = {
         position: key.to_h,
-        ids: [object.objectID],
+        ids: [object.id],
         # offer only key:
         url: offer_url(section: @current_section, id: object.slug)
       }.merge object.gmaps_info

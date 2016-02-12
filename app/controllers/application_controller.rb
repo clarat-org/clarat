@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
   end
 
   def goto_404
-    binding.pry
-    redirect_to controller: 'pages', action: 'not_found'
+    locale_string = I18n.locale == :de ? '' : "/#{I18n.locale}"
+    redirect_to "#{locale_string}/404"
   end
 end

@@ -35,7 +35,11 @@ class Offer < ActiveRecord::Base
   end
 
   def organization_display_name
-    organizations.count == 1 ? organization_names : I18n.t("js.search_results.map.cooperation")
+    if organizations.count == 1
+      organization_names
+    else
+      I18n.t('js.search_results.map.cooperation')
+    end
   end
 
   # structured information to build a gmap marker for this offer

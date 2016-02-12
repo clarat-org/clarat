@@ -4,7 +4,9 @@
 section.section-content.section-content--nextsteps
   h3.section-content__title
     = t '.heading'
-    = automation_warning(!has_next_steps && translation_automated)
+    - if offer.translation_automated?
+      .Automated-translation__wrapper
+        = automation_warning(!has_next_steps && translation_automated)
   .section-content__body
     - if has_next_steps
       = offer.next_steps_for_current_locale

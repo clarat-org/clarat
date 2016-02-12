@@ -90,6 +90,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleQueryChange'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
+   '.JS-RemoveExactLocationClick':
+      click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
     '.JS-ToggleContactType':
@@ -131,6 +133,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes
       search_location: location.query
       generated_geolocation: location.geoloc
+      exact_location: false
     @sendMainSearch()
     @sendLocationSupportSearch() # only needs to be called on new location
 
@@ -138,6 +141,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes query: ''
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleRemoveExactLocationClick: (event) =>
+    if @model.exact_location == 'true'
+      @model.updateAttributes
+        exact_location: false
+        search_location: 'Berlin'
+      @sendMainSearch()
+      @sendQuerySupportSearch()
 
   handleCategoryClick: (event) =>
     categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'

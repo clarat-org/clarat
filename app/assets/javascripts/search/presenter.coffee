@@ -90,7 +90,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleQueryChange'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
-   '.JS-RemoveExactLocationClick':
+    '.JS-RemoveExactLocationClick':
       click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'

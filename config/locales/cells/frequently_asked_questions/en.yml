@@ -54,7 +54,7 @@ en:
       link_1:
         name: "here"
         var: "ref_to_how_to_find_right_help"
-        url: "/haeufige-fragen/#how_to_find_right_help"
+        url: "/frequently-asked-questions/#how_to_find_right_help"
         class: "FAQ_anchor_link"
     question_4:
       question: "Is clarat free of charge?"
@@ -98,7 +98,7 @@ en:
       link_1:
         name: "here"
         var: "ref_to_how_many_languages"
-        url: "/haeufige-fragen/#how_many_languages"
+        url: "/frequently-asked-questions/#how_many_languages"
         class: "FAQ_anchor_link"
     question_9:
       question: "Who is behind clarat?"
@@ -439,7 +439,7 @@ en:
       link_1:
         name: "here"
         var: "ref_to_how_to_find_right_help"
-        url: "/haeufige-fragen/#how_to_find_right_help"
+        url: "/frequently-asked-questions/#how_to_find_right_help"
         class: "FAQ_anchor_link"
     question_10:
       question: "Why can’t I find what I’m looking for?"
@@ -475,7 +475,7 @@ en:
       link_1:
         name: "here"
         var: "ref_to_how_to_find_right_help"
-        url: "/haeufige-fragen/#how_to_find_right_help"
+        url: "/frequently-asked-questions/#how_to_find_right_help"
         class: "FAQ_anchor_link"
       link_2:
         name: "post@clarat.org"
@@ -680,7 +680,7 @@ en:
       link_1:
         name: "here"
         var: "ref_to_who_finds_help"
-        url: "/haeufige-fragen/#who_finds_help"
+        url: "/frequently-asked-questions/#who_finds_help"
         class: "FAQ_anchor_link"
       link_2:
         name: "post@clarat.org"

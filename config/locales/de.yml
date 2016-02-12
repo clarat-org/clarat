@@ -79,6 +79,7 @@ de:
       map:
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"
+        cooperation: "Kooperationsprojekt"
       personal_offers:
         zero: "Leider keine Angebote"
         one: "Ein Angebot vor Ort"

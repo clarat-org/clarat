@@ -25,4 +25,4 @@ class Clarat.Search.Cell.MapMarkers
         url: "#{location.pathname}/#{object.slug}"
         title: object.name
         address: object.location_address
-        organization_display_name: object.organization_display_name
+        organization_display_name: if object.organization_count == 1 then object.organization_names else I18n.t("js.search_results.map.cooperation")

@@ -22,7 +22,9 @@
         section.section-content.section-content--what
           h3.section-content__title
             = t '.what'
-            = automation_warning @offer.translation_automated?
+            - if @offer.translation_automated?
+              .Automated-translation__wrapper
+                = automation_warning
           .section-content__body
             == translation_block @offer.translation_automated? do
               == @offer.description

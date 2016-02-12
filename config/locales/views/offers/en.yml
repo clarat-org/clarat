@@ -113,7 +113,7 @@ en:
       # /index partials
 
     show:
-      what: "What is it about?"
+      what: "What is this about?"
       next_steps: "What do you need to do?"
       who: "Who offers this help?"
       speaking: "In what language will you get help?"

@@ -6,15 +6,20 @@
 
 #map-container,
 #map-canvas {
-	height: 300px;
+  height: 300px;
+}
+
+#map-container.Map__small,
+#map-canvas.Map__small {
+  height: 150px;
 }
 
 .Map-infowindow__headline {
-	margin-bottom: 0;
+  margin-bottom: 0;
 
-	a {
-		color: $brand_orange;
-	}
+  a {
+    color: $brand_orange;
+  }
 }
 
 .map__button--enlarge {

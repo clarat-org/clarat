@@ -67,10 +67,10 @@
                 streetViewControl: false,
                 draggableCursor: 'pointer'}
               - ui_options = { autoenlarge: true }
-              #map-container
+              #map-container.Map__small
                 #map-data[
                   data={markers: @markers.to_json, options: map_options.to_json, ui: ui_options.to_json }]
-                #map-canvas
+                #map-canvas.Map__small
               #big-map
                 button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,

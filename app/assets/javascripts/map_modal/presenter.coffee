@@ -20,6 +20,7 @@ class Clarat.MapModal.Presenter extends ActiveScript.Presenter
 
   # On Open: Enlarge Map
   handleModalOpen: =>
+    @initialMapHeight = @mapCanvas.height()
     @mapCanvas.css 'height', '100%'
     @mapCanvas.appendTo @mapModalContainer # move into inner modal container
 
@@ -27,7 +28,7 @@ class Clarat.MapModal.Presenter extends ActiveScript.Presenter
 
   # On Close: Revert Map
   handleModalClose: =>
-    @mapCanvas.css 'height', 300 # or inital
+    @mapCanvas.css 'height', @initialMapHeight
     @mapCanvas.appendTo @mapContainer # move back to original place
 
     # Set original bounds

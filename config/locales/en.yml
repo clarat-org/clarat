@@ -100,3 +100,6 @@ en:
         forum: "forum"
         online-course: "online course"
         list: "address list"
+
+    routes:
+      faq: "frequently-asked-questions"

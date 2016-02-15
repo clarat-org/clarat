@@ -27,8 +27,8 @@
             == translation_block @offer.translation_automated? do
               == @offer.description
 
-        / What to do next?
-        = render 'offers/show/next_steps', offer: @offer
+      / What to do next?
+      = render 'offers/show/next_steps', offer: @offer
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer

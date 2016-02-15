@@ -5,14 +5,18 @@ class Clarat.GMaps.Cell.MultipleOfferWindow
       title: I18n.t 'js.map_info_window_multiple.title'
       text: I18n.t 'js.map_info_window_multiple.text'
       anchor: I18n.t 'js.map_info_window_multiple.anchor'
-      url: @_generateExactSearchUrl markerData.position
+      url: @_generateExactSearchUrl @markerData
 
   ### PRIVATE ###
 
-  _generateExactSearchUrl: (position) ->
+  _generateExactSearchUrl: (markerData) ->
     location.origin + location.pathname + $.query.set(
       'search_form[generated_geolocation]',
-      "#{position.latitude},#{position.longitude}"
+      "#{markerData.position.latitude},#{markerData.position.longitude}"
     ).set(
-      'search_form[exact_location]', 't'
+      'search_form[search_location]', "#{markerData.address}"
+    ).set(
+      'search_form[exact_location]', 'true'
     ).toString()
+    .replace /%2B/g, '%20'
+    # ^ fix $.query tendency to convert space to plus

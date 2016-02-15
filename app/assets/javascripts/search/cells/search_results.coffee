@@ -37,7 +37,7 @@ class Clarat.Search.Cell.SearchResults
 
       faq_text: I18n.t('js.search_results.faq_text')
       faq_anchor: I18n.t('js.search_results.faq_anchor')
-      faq_href: "/#{I18n.locale}/#{@model.section}/haeufige-fragen/#search_section"
+      faq_href: "/#{I18n.locale}/#{@model.section}/haeufige-fragen/#who_finds_help"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits
@@ -60,6 +60,11 @@ class Clarat.Search.Cell.SearchResults
     bridge = I18n.t 'js.search_results.bridge'
     enclosing = I18n.t 'js.search_results.enclosing'
 
+    output += " (#{@model.search_location}"
+    if @model.exact_location == 'true'
+      output += " " + HandlebarsTemplates['remove_exact_location']()
+    output += ")"
+
     if @model.category
       output += " in #{@breadcrumbPath @model}"
 
@@ -67,7 +72,7 @@ class Clarat.Search.Cell.SearchResults
       output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output + " (#{@model.search_location}) #{enclosing}"
+    output + " #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

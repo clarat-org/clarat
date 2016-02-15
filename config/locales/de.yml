@@ -100,3 +100,6 @@ de:
         forum: "Forum"
         online-course: "Online-Kurs"
         portal: "Adressliste"
+
+    routes:
+      faq: "haeufige-fragen"

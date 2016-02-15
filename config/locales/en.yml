@@ -99,7 +99,7 @@ en:
         chat: "chat"
         forum: "forum"
         online-course: "online course"
-        list: "address list"
+        portal: "address list"
 
     routes:
       faq: "frequently-asked-questions"

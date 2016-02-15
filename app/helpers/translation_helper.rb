@@ -17,13 +17,14 @@ module TranslationHelper
   def automation_warning automated = true
     return unless automated
     '<div class="Automated-translation__wrapper">' +
-    image_tag(
-      image_path('banner--translated-by-google.svg'),
-      alt: 'warning',
-      class: 'Automated-translation__warning JS-tooltip JS-tooltip--from-title',
-      title: t('shareds.show.google_translate_explanation')
-    ) +
-    '</div>'
+      image_tag(
+        image_path('banner--translated-by-google.svg'),
+        alt: 'warning',
+        class: 'Automated-translation__warning JS-tooltip '\
+               'JS-tooltip--from-title',
+        title: t('shareds.show.google_translate_explanation')
+      ) +
+      '</div>'
   end
 
   private

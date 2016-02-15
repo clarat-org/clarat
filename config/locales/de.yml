@@ -69,6 +69,10 @@ de:
         target_audience: "Hilfe für wen?"
         gender: "Geschlecht"
         approach: "Auf welchem Weg?"
+      pagination:
+        next: "Weiter"
+        gap: "…"
+        back: "Zurück"
     search_results:
       more: "Weitere Telefon- und Onlineangebote"
       show_personal: "Zeige lokale Angebote"

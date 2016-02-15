@@ -70,6 +70,10 @@ en:
         target_audience: "For whom?"
         gender: "Gender"
         approach: "By which means?"
+      pagination:
+        next: "Next"
+        gap: "…"
+        back: "Previous"
     search_results:
       more: "More remote offers"
       show_personal: "Show local offers"

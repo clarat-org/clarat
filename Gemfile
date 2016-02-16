@@ -5,7 +5,7 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base' # , path: '../clarat_base'
+gem 'clarat_base', github: 'clarat-org/clarat_base', branch: 'feature/646-order-language-filters'
 
 gem 'bundler', '>= 1.8.4'
 

@@ -43,8 +43,12 @@
         h3.section-content__title
           = t '.speaking'
         .section-content__wrapper.is-expanded
-          ul.section-content__langlist
-            - @offer.language_filters.pluck(:identifier).each do |language|
+          ul.section-content__langlistfixed
+            - @offer.language_filters_fixed.each do |language|
+              li
+                => t "offers.shared.current_and_original_locale.#{language}"
+          ul.section-content__langlistrest
+            - @offer.language_filters_without_fixed.each do |language|
               li
                 => t "offers.shared.current_and_original_locale.#{language}"
 

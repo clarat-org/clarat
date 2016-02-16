@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: c20b46e8c59c4f0a780726cbbe3036b522bcf12b
+  revision: bc1d260eaa9c72bacde4d8768e76935c4b72716f
+  branch: feature/646-order-language-filters
   specs:
     clarat_base (0.1.4)
       aasm

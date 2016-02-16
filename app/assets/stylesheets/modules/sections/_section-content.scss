@@ -68,7 +68,13 @@
   }
 }
 
-.section-content__langlist {
+// TODO
+.section-content__langlistfixed {
+  list-style: none;
+  line-height: 1.65;
+}
+// TODO
+.section-content__langlistrest {
   list-style: none;
   line-height: 1.65;
 }

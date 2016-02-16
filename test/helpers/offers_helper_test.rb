@@ -15,11 +15,15 @@ class OffersHelperTest < ActionView::TestCase
     end
 
     it 'should produce the correct string with children' do
-      category_list_classes(1, ['whatever']).must_equal 'depth--1 has-children'
+      category_list_classes(1, [[{ visible: true }]]).must_equal 'depth--1 has-children'
     end
 
     it 'should neglect having children when the depth is greater 1' do
-      category_list_classes(2, ['whatever']).must_equal 'depth--2 '
+      category_list_classes(2, [[{ visible: true }]]).must_equal 'depth--2 '
+    end
+
+    it 'should produce the correct string with invisible children' do
+      category_list_classes(1, [[{ visible: false }]]).must_equal 'depth--1 '
     end
   end
 end

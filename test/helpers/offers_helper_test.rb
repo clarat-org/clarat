@@ -11,19 +11,19 @@ class OffersHelperTest < ActionView::TestCase
 
   describe '#category_list_classes' do
     it 'should produce the correct string without children' do
-      category_list_classes(2, []).must_equal 'depth--2 '
+      category_list_classes(2, [], 'family').must_equal 'depth--2 '
     end
 
     it 'should produce the correct string with children' do
-      category_list_classes(1, [[{ visible: true }]]).must_equal 'depth--1 has-children'
+      category_list_classes(1, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--1 has-children'
     end
 
     it 'should neglect having children when the depth is greater 1' do
-      category_list_classes(2, [[{ visible: true }]]).must_equal 'depth--2 '
+      category_list_classes(2, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--2 '
     end
 
     it 'should produce the correct string with invisible children' do
-      category_list_classes(1, [[{ visible: false }]]).must_equal 'depth--1 '
+      category_list_classes(1, [[FactoryGirl.create(:category, visible: false)]], 'refugees').must_equal 'depth--1 '
     end
   end
 end

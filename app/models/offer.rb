@@ -63,4 +63,8 @@ class Offer < ActiveRecord::Base
     language_filters.order(:name).pluck(:identifier)
       .select { |id| remaining.include? id }
   end
+
+  def all_language_filters_sorted
+    language_filters_fixed + language_filters_without_fixed
+  end
 end

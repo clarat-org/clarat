@@ -60,6 +60,7 @@ class Offer < ActiveRecord::Base
   # returns the rest of the language_filters (w/o fixed), ordered by german name
   def language_filters_without_fixed
     remaining = LanguageFilter::REMAINING_IDENTIFIER
-    language_filters.order(:name).pluck(:identifier).select { |id| remaining.include? id }
+    language_filters.order(:name).pluck(:identifier)
+      .select { |id| remaining.include? id }
   end
 end

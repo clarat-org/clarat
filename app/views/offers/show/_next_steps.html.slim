@@ -7,7 +7,7 @@ section.section-content.section-content--nextsteps
     == automation_warning(!has_next_steps && translation_automated)
   .section-content__body
     - if has_next_steps
-      = offer.next_steps_for_current_locale
+      == offer.next_steps_for_current_locale
     - else
       == translation_block translation_automated do
         == offer.old_next_steps

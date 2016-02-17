@@ -1,0 +1,56 @@
+tr:
+  layouts:
+    partials:
+      banner:
+        teaser:
+          text: "clarat.org henüz yapım aşamasındadır"
+          refugees: "Yakında mülteciler için de hizmetlerimiz olacaktır"
+          # TODO: Delete if beta banner changes permanently
+          link: "Burada daha fazla bilgi alabilirsin"
+      nav_lang:
+        title: "Dilini seç"
+        languages:
+          de: "Deutsch"
+          en: "English"
+          ar: "عربي"
+          fr: "Français"
+          ru: "НА РУССКОМ"
+          tr: "Türkçe"
+          pl: "Polskie"
+      modal:
+        beta_modal:
+          text: |
+            clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
+            Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
+            bir şey? o halde
+          link: "bize mesaj gönder."
+        unavailable_location_modal: |
+          Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
+          Yani sana telefonda ya da online olarak yardım edilecektir.
+          Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
+          memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+      navigation:
+        claim:
+          main: "Yardım bul"
+          family: |
+            Çocuklar, gençler ve aileler için yardıum çeşitleri
+          refugees: |
+            Mülteciler için yardım çeşitleri
+        category_headline: "Kategoriler arasında ara"
+      footer:
+        gplus:
+          anchor: "Google+"
+          href: "https://plus.google.com/110429028641743127592/about"
+        twitter:
+          anchor: "Twitter"
+          href: "https://twitter.com/claratpunktorg"
+        fb:
+          anchor: "Facebook"
+          href: "https://www.facebook.com/claratpunktorg"
+        about: "Hakkımızda"
+        faq: "Sıkça sorulan sorular"
+        contact: "İletişim"
+        blog: "Blog"
+        impressum: "Künye"
+        tos: "Hukuki Uyarılar"
+        privacy: "Gizlilik Politikası"

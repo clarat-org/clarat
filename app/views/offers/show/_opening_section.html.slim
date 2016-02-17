@@ -18,4 +18,5 @@ section.section-content.section-content--when
     - if offer.opening_specification? && offer.openings.any?
       br
     .section-content--openingspecification
-      == offer.opening_specification_html
+      == translation_block offer.translation_automated?
+        == offer.opening_specification

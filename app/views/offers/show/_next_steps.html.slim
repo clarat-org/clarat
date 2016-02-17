@@ -1,7 +1,17 @@
+- has_next_steps = offer.next_steps.in_current_locale.any?
+- translation_automated = offer.translation_automated?
+
 section.section-content.section-content--nextsteps
-  h3.section-content__title = t '.heading'
+  h3.section-content__title
+    = t '.heading'
+    == automation_warning(!has_next_steps && translation_automated)
   .section-content__body
-    == offer.next_steps_html
+    - if has_next_steps
+      == offer.next_steps_for_current_locale
+    - else
+      == translation_block translation_automated do
+        == offer.old_next_steps
+
     - if offer.code_word && !offer.code_word.empty?
       p
         br

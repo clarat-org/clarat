@@ -34,6 +34,7 @@
 @import "modules/flash-message";
 @import "modules/banner";
 @import "modules/ajax";
+@import "modules/automated-translation";
 @import "modules/js";
 @import "modules/js-geolocation";
 @import "modules/js-cookie-warning";
@@ -57,6 +58,8 @@
 @import "navigation/nav-site";
 @import "navigation/nav-legal";
 @import "navigation/nav-welt";
+@import "navigation/nav-lang";
+
 @import "vendor/pagination";
 
 @import "mediaqueries/config";

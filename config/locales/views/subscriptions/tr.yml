@@ -1,0 +1,11 @@
+tr:
+  subscriptions:
+    create:
+      success: |
+        Teşekkürler, onaylama kodu az önce E-Mail adresine gönderilmiştir.
+      error: |
+        Lütfen doğru bir E-Mail adresi giriniz.
+    shared:
+      new:
+        placeholder: "E-Mail Adresi"
+        button: "E-bülten aboneliği"

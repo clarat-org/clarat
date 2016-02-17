@@ -1,0 +1,13 @@
+# TODO
+fr:
+  subscriptions:
+    create:
+      success: |
+        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
+        Adresse gesendet.
+      error: |
+        Bitte gib eine korrekte E-Mail Adresse ein.
+    shared:
+      new:
+        placeholder: "E-Mail Adresse"
+        button: "Newsletter abonnieren"

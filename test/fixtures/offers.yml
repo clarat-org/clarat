@@ -2,7 +2,7 @@ basic:
   id: 1
   name: basicOfferName
   description: basicOfferDescription
-  next_steps: basicOfferNextSteps
+  old_next_steps: basicOfferNextSteps
   encounter: personal
   expires_at: 9999-01-01
   age_from: 0

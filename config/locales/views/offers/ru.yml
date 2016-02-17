@@ -1,0 +1,159 @@
+ru:
+  offers:
+    shared:
+      search_form:
+        loc_label: "Wo"
+        loc_placeholder:
+          long: "Adresse, Stadtteil, Stadt oder PLZ"
+          short: "Stadt, PLZ, …"
+        query_label: "Was"
+        query_placeholder:
+          long: "Angebote zum Thema …"
+          short: "Angebote zu …"
+        button: "Suchen"
+
+    invalid_location:
+      title: "Leider konnten wir den von dir eingegeben Standort nicht finden"
+      text: |
+        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
+        versuche gegebenenfalls mit einer alternativen Eingabe
+        (z.B. "Postleitzahl Ort").
+
+    index:
+      noscript_warning: |
+        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
+        Browser JavaScript aktiviert haben.
+
+      # index partials
+      pending_ajax:
+        searching: "Suche…"
+
+      filters:
+        json:
+          age:
+            zero: "< 1 Jahr"
+            one: "1 Jahr"
+            few: "%{count} Jahre"
+            many: "%{count} Jahre"
+            other: "%{count} Jahre"
+          target_audience:
+            children: "für Kinder und Jugendliche"
+            parents: "für Eltern"
+            nuclear_family: "für Familien"
+            acquaintances: "für Bekannte und Verwandte"
+            pregnant_woman: "für Schwangere"
+          exclusive_gender:
+            boys_only: "nur für Jungen und Männer"
+            girls_only: "nur für Mädchen und Frauen"
+          language:
+            deu: "Deutsch"
+            eng: "Englisch"
+            tur: "Türkisch"
+            tha: "Thai"
+            bul: "Bulgarisch"
+            ron: "Rumänisch"
+            sqi: "Albanisch"
+            ara: "Arabisch"
+            fra: "Französisch"
+            kur: "Kurdisch"
+            rus: "Russisch"
+            srp: "Serbisch"
+            amh: "Amharisch"
+            bos: "Bosnisch"
+            ita: "Italienisch"
+            hrv: "Kroatisch"
+            pol: "Polnisch"
+            por: "Portugiesisch"
+            vie: "Vietnamesisch"
+            wol: "Wolof"
+            fas: "Persisch (Farsi)"
+            ben: "Bengalisch"
+            spa: "Spanisch"
+            tam: "Tamil"
+            urd: "Urdu"
+            mul: "weitere Sprachen auf Anfrage"
+            aze: "Aserbaidschanisch"
+            ell: "Griechisch"
+            hin: "Hindi"
+            mkd: "Mazedonisch"
+            rom: "Romanes"
+            hun: "Ungarisch"
+            "568": "Niederländisch"
+            "326": "Ukrainisch"
+            "639": "Dari"
+            "150": "Deutsche Gebärdensprache"
+            lav: "Lettisch"
+            lit: "Litauisch"
+            kik: "Kikuyu"
+            zho: "Chinesisch"
+            swa: "Kiswahili"
+            luo: "Luo"
+            ltz: "Luxemburgisch"
+            nor: "Norwegisch"
+            swe: "Schwedisch"
+            snk: "Soninke"
+            tgk: "Tadschikisch"
+            tel: "Telugu"
+            tuk: "Turkmenisch"
+            uzb: "Usbekisch"
+            bel: "Weißrussisch"
+            zza: "Zaza"
+          contact_type:
+            personal: "vor Ort"
+            remote: "telefonisch oder online"
+          encounter:
+            hotline: "Telefon"
+            email: "E-Mail"
+            chat: "Chat"
+            forum: "Forum"
+            online-course: "Online-Kurs"
+            portal: "Adressliste"
+
+      map_sidebar:
+        map_output_searchresults: Kartenausgabe der Suchergebnisse
+
+      # /index partials
+
+    show:
+      what: "Worum geht's?"
+      next_steps: "Was musst du tun?"
+      who: "Wo gibt’s die Hilfe?"
+      last_updated: "Eintrag zuletzt bearbeitet am"
+
+      # show partials
+      opening_section:
+        heading: "Wann kannst du das machen?"
+        days:
+          mon: Montag
+          tue: Dienstag
+          wed: Mittwoch
+          thu: Donnerstag
+          fri: Freitag
+          sat: Samstag
+          sun: Sonntag
+      website_section:
+        internet_presence: "Wo erfährst du mehr im Netz?"
+        websites:
+          own: "Webseite"
+          document: "Weitere Infos"
+          facebook: "Facebook"
+          twitter: "Twitter"
+          youtube: "Youtube"
+          gplus: "Google+"
+          pinterest: "Pinterest"
+      who_contact_people:
+        female: "Frau"
+        male: "Herr"
+        dr: "Dr."
+        prof_dr: "Prof. Dr."
+        phone: "Telefon: "
+        fax: "Fax: "
+        email: "E-Mail: "
+        obfuscated_email: |
+          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+      who_section:
+        heading: "Wo kannst du dich melden?"
+      who_location:
+        organizations: 'Ein Angebot von:'
+      # /show partials

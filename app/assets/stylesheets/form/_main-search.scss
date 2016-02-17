@@ -87,11 +87,19 @@
 
 #search_form_query {
   padding-left: 62px;
+
+  body.en & {
+    padding-left: 68px;
+  }
 }
 
 #search_form_search_location {
   padding-left: 52px;
   border-radius: 0;
+
+  body.en & {
+    padding-left: 79px;
+  }
 }
 
 .main-search__submit {

@@ -5,7 +5,7 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
+gem 'clarat_base', github: 'clarat-org/clarat_base' # , path: '../clarat_base'
 
 gem 'bundler', '>= 1.8.4'
 
@@ -127,6 +127,10 @@ gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
 gem 'virtus' # form objects
 gem 'formtastic'
 gem 'simple_form'
+
+# cells for ViewModel in Rails
+gem 'cells', '~> 4.0.0'
+gem 'cells-slim'
 
 ########################
 # For Heroku & Add-Ons #

@@ -15,7 +15,7 @@ de:
     autocomplete_footer: "Alle %{results} Suchergebnisse für „%{query}“"
     map_info_window_multiple:
       title: "Mehrere Angebote"
-      text: "Es wurden mehrere Ergebnisse für diesen Marker gefunden."
+      text: "Es wurden mehrere Ergebnisse an dieser Adresse gefunden."
       anchor: "Alle ansehen >>"
     cookie_warning_html: |
       Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
@@ -62,17 +62,30 @@ de:
     search:
       form_more_label: "Suchoptionen einblenden"
       form_less_label: "Suchoptionen ausblenden"
+      option_any: "egal"
+      headlines:
+        age: "Alter des Kindes"
+        language: "Sprache"
+        target_audience: "Hilfe für wen?"
+        gender: "Geschlecht"
+        approach: "Auf welchem Weg?"
+      pagination:
+        next: "Weiter"
+        gap: "…"
+        back: "Zurück"
     search_results:
       more: "Weitere Telefon- und Onlineangebote"
-      bridge: "für"
+      show_personal: "Zeige lokale Angebote"
+      bridge: "für den Suchbegriff"
       enclosing: "gefunden"
       faq_text: "Häufige Fragen und Antworten zur Suche findest du "
       faq_anchor: "hier"
       map:
         enlarge_map: "Karte vergrößern"
         headline_small_map: "Angebote vor Ort auf der Karte"
+        cooperation: "Kooperationsprojekt"
       personal_offers:
-        zero: "Leider keine Angebote"
+        zero: "Leider keine Angebote vor Ort"
         one: "Ein Angebot vor Ort"
         other: "%{count} Angebote vor Ort"
       remote_offers:
@@ -129,3 +142,6 @@ de:
         forum: "Forum"
         online-course: "Online-Kurs"
         portal: "Adressliste"
+
+    routes:
+      faq: "haeufige-fragen"

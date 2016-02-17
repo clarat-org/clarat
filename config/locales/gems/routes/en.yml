@@ -1,0 +1,9 @@
+en:
+  routes:
+    offers: "offers"
+    users: "users"
+    contacts: "contacts"
+    organizations: "organizations"
+    impressum: "site-notice"
+    haeufige-fragen: "frequently-asked-questions"
+    ueber-uns: "about-us"

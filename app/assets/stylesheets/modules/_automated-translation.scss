@@ -1,0 +1,49 @@
+// ---------------------------------------------------------------
+//
+//  automated translation blocks
+//
+// ---------------------------------------------------------------
+
+.Automated-translation__wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  width: 62px;
+  background: rgba(255, 255, 255, .33);
+}
+
+.Automated-translation {
+  position: relative;
+
+  h2 & {
+    display: inline-block;
+    padding-right: 40px;
+  }
+}
+
+.Automated-translation__text {
+  h2 & {
+    display: inline-block;
+  }
+}
+
+.Automated-translation__warning {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: help;
+
+  h2 & {
+    bottom: 8px;
+  }
+
+  h3 & {
+    position: absolute;
+    right: 43px;
+    top: 7px;
+    width: 54px;
+    left: 4px;
+  }
+}

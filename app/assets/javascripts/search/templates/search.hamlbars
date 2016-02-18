@@ -1,5 +1,7 @@
 %main.content-main.content-main--offers-index
-  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main Suchoptionen einblenden
+  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main
+    = hb 'more_label'
+
 
   = hb 'with filters' do
     = hb '> _advanced_search'

@@ -1,7 +1,7 @@
 %nav.pagination
   = hb 'if prev_page' do
     %span.prev
-      %a.JS-PaginationLink{href: '#', data: {page: '{{ prev_page }}'}} Zurück
+      %a.JS-PaginationLink{href: '#', data: {page: '{{ prev_page }}'}}= hb 'backward_text'
 
   = hb 'each pages' do
     %span.page{class: '{{class}}'}
@@ -12,4 +12,4 @@
 
   = hb 'if next_page' do
     %span.next
-      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}} Weiter
+      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}}= hb 'forward_text'

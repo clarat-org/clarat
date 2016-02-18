@@ -1,0 +1,86 @@
+# Please see ./README.md for more information on I18n styles and structure.
+ru:
+  conf: # translations used for app-internal things
+    current_location: 'Mein Standort'
+    default_location: 'Berlin'
+    default_latlng: '52.520007,13.404954'
+
+  js: # translations used in JavaScript. I18n-JS forces them to be located here.
+    geolocation:
+      get: Benutze meinen Standort!
+      waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
+      error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
+    location_required: |
+      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+    autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
+    map_info_window_multiple:
+      title: 'Mehrere Angebote'
+      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
+      anchor: 'Alle ansehen >>'
+    cookie_warning_html: |
+      Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
+      Website erklären Sie sich einverstanden, dass wir Cookies setzen.
+      <a href="/datenschutzhinweise">Mehr</a>.
+    more_filter_options: 'Mehr Filter anzeigen'
+    less_filter_options: 'Weniger Filter anzeigen'
+    mobile_filter: 'Ergebnisse filtern'
+    ajax_error:
+      error: "Suchfehler"
+      message: |
+        Tut uns leid, es ist ein Fehler bei der Suche aufgetreten. Wenn dieses
+        Problem wiederholt auftritt, kontaktiere uns bitte.
+    query_field:
+      placeholder_words:
+        - Adoption
+        - Drogen
+        - Gewalt
+        - Nachhilfe
+        - Notfall
+        - Recht
+        - Waise
+        - arbeitslos
+        - essen
+        - krank
+        - obdachlos
+        - rauchen
+        - schwanger
+        - schwul
+        - schwänzen
+        - wohnen
+      example_placeholder: "z.B. %{word}, …"
+
+    search:
+      form_more_label: "Suchoptionen einblenden"
+      form_less_label: "Suchoptionen ausblenden"
+    search_results:
+      more: "Weitere Telefon- und Onlineangebote"
+      show_personal: "Zeige lokale Angebote"
+      bridge: "für"
+      enclosing: "gefunden"
+      faq_text: "Häufige Fragen und Antworten zur Suche findest du "
+      faq_anchor: "hier"
+      map:
+        enlarge_map: "Karte vergrößern"
+        headline_small_map: "Angebote vor Ort auf der Karte"
+      personal_offers:
+        zero: "Leider keine Angebote"
+        one: "Ein Angebot vor Ort"
+        few: "%{count} Angebote vor Ort"
+        other: "%{count} Angebote vor Ort"
+      remote_offers:
+        zero: "Keine Telefonberatungen und Onlineangebote"
+        one: "Eine Telefonberatung oder ein Onlineangebot"
+        few: "%{count} Telefonberatungen und Onlineangebote"
+        other: "%{count} Telefonberatungen und Onlineangebote"
+
+    categories_sidebar:
+      all_categories: "Alle Kategorien"
+    single_search_result:
+      encounters:
+        personal: "Persönlich" #?
+        hotline: "Telefon"
+        email: "E-Mail"
+        chat: "Chat"
+        forum: "Forum"
+        online-course: "Online-Kurs"
+        portal: "Adressliste"

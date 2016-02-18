@@ -125,6 +125,22 @@
     }
   }
 
+  .nav-lang__title {
+    margin-left: 10px;
+  }
+
+  .nav-sections__listitem {
+    body.refugees & {
+      margin: 0 1.6%;
+    }
+  }
+
+  .nav-sections {
+    body.refugees & {
+      width: 948px;
+    }
+  }
+
   // Content ######################################
 
   .section-start__headline {

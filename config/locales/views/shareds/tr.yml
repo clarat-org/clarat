@@ -1,0 +1,11 @@
+tr:
+  shareds:
+    forms:
+      fill_field: "Lütfen bu alanı doldur"
+    show:
+      cta_report_errors: |
+        Hata mı gördün?
+      google_translate_explanation: |
+        Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
+        Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
+        Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.

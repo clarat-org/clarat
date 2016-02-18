@@ -15,14 +15,14 @@ class Clarat.Search.Cell.MapMarkers
   makeMarker: (object) ->
     key = "#{object._geoloc.lat},#{object._geoloc.lng}"
     if @markers[key]
-      @markers[key]['ids'] << object.id
+      @markers[key]['ids'].push(object.objectID)
     else
       @markers[key] =
         position:
           latitude: object._geoloc.lat
           longitude: object._geoloc.lng
-        ids: [object.id]
-        url: "/angebote/#{object.slug}"
+        ids: [object.objectID]
+        url: "#{location.pathname}/#{object.slug}"
         title: object.name
         address: object.location_address
-        organization_display_name: object.organization_display_name
+        organization_display_name: if object.organization_count == 1 then object.organization_names else I18n.t("js.search_results.map.cooperation")

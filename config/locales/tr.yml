@@ -1,0 +1,83 @@
+# Please see ./README.md for more information on I18n styles and structure.
+tr:
+  conf: # translations used for app-internal things
+    current_location: 'Konumum'
+    default_location: 'Berlin'
+    default_latlng: '52.520007,13.404954'
+
+  js: # translations used in JavaScript. I18n-JS forces them to be located here.
+    geolocation:
+      get: Konumumu kullan!
+      waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
+      error: konumun bulunamamıştır. Lütfen manüel giriş yap.
+    location_required: |
+      Lütfen destek almak istediğin yerin adını gir.
+    autocomplete_footer: Tüm %{results} sonuçlar '%{query}'
+    map_info_window_multiple:
+      title: 'Birden fazla hizmet'
+      text: 'Bu konum için birden fazla sonuç bulundu.'
+      anchor: 'Tümüne göz at >>'
+    cookie_warning_html: |
+      Cookieler bu sayfayı sana sunmamızda yardımcı oluyor. Web sitemizi kullanarak
+      bu cookieleri kullanmamıza izin vermektesin.
+      <a href="/datenschutzhinweise">Mehr</a>.
+    more_filter_options: 'Daha fazla filtre göster'
+    less_filter_options: 'Daha az filtre göster'
+    mobile_filter: 'Sonuçları filtrele'
+    ajax_error:
+      error: "Arama hatası"
+      message: |
+        üzgünüz, arama da bir hata oluştu. bu hata tekrar oluşursa, bizimle irtibata geç.
+    query_field:
+      placeholder_words:
+        - Evlat edinme
+        - Uyuşturucu
+        - Şiddet
+        - Özel ders
+        - Acil durum
+        - hukuk
+        - Öksüz
+        - İşsiz
+        - yemek yemek
+        - hasta
+        - evsiz
+        - sigara içmek
+        - hamile
+        - eş cinsel
+        - okulu asmak
+        - ikamet etmek
+      example_placeholder: "örneğin %{word}, …"
+
+    search:
+      form_more_label: "Arama tercihlerini göster"
+      form_less_label: "Arama tercihlerini kapat"
+    search_results:
+      more: "Daha fazla telefon ve online hizmetler"
+      show_personal: "Yerel hizmetleri göster"
+      bridge: "için"
+      enclosing: "bulundu"
+      faq_text: "Sıkça sorulan soruları ve cevapları bulabilirsin "
+      faq_anchor: "burada"
+      map:
+        enlarge_map: "Haritayı büyüt"
+        headline_small_map: "Bulunduğum yerde sunulan hizmetleri haritada göster"
+      personal_offers:
+        zero: "Maalesef hizmet bulunmamaktadır"
+        one: "Bulunduğun yerde bir hizmet"
+        other: "%{count} Bulunduğun yerde bir hizmet"
+      remote_offers:
+        zero: "Telefon veya online hizmet bulunmamaktadır"
+        one: "Telefon ve online hizmetleri"
+        other: "%{count} Telefon ve online hizmetleri"
+
+    categories_sidebar:
+      all_categories: "Tüm kategoriler"
+    single_search_result:
+      encounters:
+        personal: "Kişisel" #?
+        hotline: "Telefon"
+        email: "E-Mail"
+        chat: "Sohbet"
+        forum: "Forum"
+        online-course: "Online kurs"
+        portal: "Adres listesi"

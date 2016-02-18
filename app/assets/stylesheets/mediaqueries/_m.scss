@@ -225,6 +225,10 @@
 
     #search_form_search_location {
       padding-left: 40px;
+
+      body.en & {
+        padding-left: 60px;
+      }
     }
 
     #search_form_query,
@@ -510,6 +514,9 @@
     margin-bottom: 20px;
   }
 
+  .nav-sections__list {
+    display: block; // no need for flexbox anymore
+  }
 
   .nav-sections__listitem {
     float: none;
@@ -532,12 +539,17 @@
       }
     }
   }
-
+  
   body.ar {
     .Claim {
       float: none;
     }
   }
+
+  .nav-lang__title {
+    font-size: 13px;
+  }
+
   // Content ######################################
 
   .page-wrap:after {

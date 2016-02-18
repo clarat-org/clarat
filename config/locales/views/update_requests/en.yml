@@ -1,0 +1,9 @@
+en:
+  update_requests:
+    create:
+      success: |
+        We recieved your message, thank you. We will get in touch as soon as we
+        are present in your location.
+    new:
+      email_placeholder: "Email address"
+      button: "Send"

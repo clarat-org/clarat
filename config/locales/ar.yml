@@ -1,0 +1,83 @@
+# Please see ./README.md for more information on I18n styles and structure.
+ar:
+  conf: # translations used for app-internal things
+    current_location: 'موقعي'
+    default_location: 'برلين'
+    default_latlng: '52.520007,13.404954'
+
+  js: # translations used in JavaScript. I18n-JS forces them to be located here.
+    geolocation:
+      get: استخدم موقعي !
+      waiting:   البحث عن موقع. ربما عليك أن تسمح بهذا أولا
+      error:  لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا.
+    location_required: |
+      من فضلك أدخل اسم المكان الذي تريد أن تبحث فيه عن مساعدة
+    autocomplete_footer: كل %{نتائجfür '%{query}'
+    map_info_window_multiple:
+      title: 'عروض أكثر'
+      text: 'تم العثور على العديد من النتائج لهذه الماركة'
+      anchor: 'مشاهدة الكل >>'
+    cookie_warning_html: |
+      الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز
+      <a href="/ارشادات حماية البيانات">Mehr</a>.
+       نا كوكيز
+    more_filter_options: 'عرض فلاتر أكثر'
+    less_filter_options: 'عرض فلاتر أقل'
+    mobile_filter: 'تنقية النتائج'
+    ajax_error:
+      error: "خطأ في البحث"
+      message: |
+        نأسف لحدوث خطأ في البحث. في حالة تكرار هذه المشكلة, اتصل بنا من فضلك
+    query_field:
+      placeholder_words:
+        - تبني
+        - مخدرات
+        - عنف
+        - دروس خصوصية
+        - طوارئ
+        - قانون
+        - يتيم
+        - بطالة
+        - أكل
+        - مرض
+        - مشرد
+        - التدخين
+        - الحمل
+        - لوطي
+        - تهرب من المدرسة
+        - السكن
+      example_placeholder: "z.B. %{كلمة}, …"
+
+    search:
+      form_more_label: "عرض خيارات البحث"
+      form_less_label: "اخفاء خيارات البحث"
+    search_results:
+      more: "عروض أخرى عن طريق التليفون أو الأنترنت"
+      show_personal: "عرض عروض مكانية أكثر"
+      bridge: "من أجل"
+      enclosing: "تم العثور على"
+      faq_text: "تجد الأسئلة الشائعة حول البحث وكذلك الإجابات "
+      faq_anchor: "هنا"
+      map:
+        enlarge_map: "تكبير الخريطة"
+        headline_small_map: "عروض محلية على الخريطة"
+      personal_offers:
+        zero: "للأسف لا توجد عروض  "
+        one: "عرض محلي"
+        other: "%{count} عروض محلية"
+      remote_offers:
+        zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
+        one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
+        other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
+
+    categories_sidebar:
+      all_categories: "جميع الفئات"
+    single_search_result:
+      encounters:
+        personal: "ذاتيا" #?
+        hotline: "تليفون"
+        email: "بريد اليكتروني"
+        chat: "دردشة"
+        forum: "منتدى"
+        online-course: "دورة بالإنترنت"
+        portal: "قائمة العناوين"

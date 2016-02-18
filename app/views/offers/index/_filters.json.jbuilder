@@ -1,9 +1,11 @@
-json.age((Offer::MIN_AGE..Offer::MAX_AGE).to_a) do |age|
+# TODO: Change this for proper fix!!
+json.age((Offer::MIN_AGE..Offer::MAX_AGE).to_a[0..17]) do |age|
   json.identifier age
   json.display_name t('.age', count: age)
 end
 
-json.target_audience TargetAudienceFilter::IDENTIFIER do |identifier|
+# TODO: 0-4 for first 5 family target audiences - Remove this for proper fix!!
+json.target_audience TargetAudienceFilter::IDENTIFIER[0..4] do |identifier|
   json.identifier identifier
   json.display_name t(".target_audience.#{identifier}")
 end
@@ -15,7 +17,7 @@ end
 
 json.language LanguageFilter::IDENTIFIER do |identifier|
   json.identifier identifier
-  json.display_name t(".language.#{identifier}")
+  json.display_name t("offers.shared.current_and_original_locale.#{identifier}")
 end
 
 json.contact_type Offer::CONTACT_TYPES do |identifier|

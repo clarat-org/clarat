@@ -72,23 +72,25 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @infowindow.setContent contentString
     @infowindow.open @currentMap.instance, marker
 
-  handleMarkerMouseOver: (_event, _marker, markerData) =>
+  handleMarkerMouseOver: (_event, marker, markerData) =>
     for id in markerData.ids
-      $("#result-offer-#{id} .Listing-results__offer").addClass('Listing-results__offer--highlighted');
+      $("#result-offer-#{id} .Listing-results__offer")
+        .addClass('Listing-results__offer--highlighted')
+    @_switchMarkerImage(marker, 'gmaps_marker_highlighted')
 
-  handleMarkerMouseOut: (_event, _marker, markerData) =>
+  handleMarkerMouseOut: (_event, marker, markerData) =>
     for id in markerData.ids
-      $("#result-offer-#{id} .Listing-results__offer").removeClass('Listing-results__offer--highlighted');
+      $("#result-offer-#{id} .Listing-results__offer")
+        .removeClass('Listing-results__offer--highlighted')
+    @_switchMarkerImage(marker, 'gmaps_marker_1')
 
   handleResultMouseOver: (event) =>
     marker = $(event.currentTarget).data('marker')
-    if marker
-      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_highlighted')
+    @_switchMarkerImage(marker, 'gmaps_marker_highlighted') if marker
 
   handleResultMouseOut: (event) =>
     marker = $(event.currentTarget).data('marker')
-    if marker
-      marker.setIcon Clarat.GMaps.Operation.ConstructMap.markerUrl('gmaps_marker_1')
+    @_switchMarkerImage(marker, 'gmaps_marker_1') if marker
 
   # called by library internally; listener set in Operations.ConstructMap
   handleNativeMapClick: (e) =>
@@ -103,6 +105,14 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     if @uiOptions['autoenlarge'] and @uiOptions['autoenlarge'] is true
       @currentMap.instance.setOptions({ draggableCursor: 'pointer' })
 
+
+  ### PRIVATE (ue) ###
+
+
+  _switchMarkerImage: (marker, state) ->
+    marker.setIcon(
+      Clarat.GMaps.Operation.ConstructMap.markerUrl(state)
+    )
 
 
 

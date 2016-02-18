@@ -15,7 +15,7 @@
       section.section-content.section-content--who
         h3.section-content__title
           = t '.who'
-          = automation_warning(@organization.translation_automated?)
+          == automation_warning(@organization.translation_automated?)
         .section-content__body.section-content--what
           == translation_block @organization.translation_automated? do
             == @organization.description
@@ -23,7 +23,7 @@
         section.section-content.section-content--alloffers
           h3.section-content__title
             = t '.offers_all'
-            = automation_warning(@organization.translation_automated?)
+            == automation_warning(@organization.translation_automated?)
           .section-content__body
             ul.Listing-offers__list
               - @organization.offers.approved.order('name ASC').each do |offer|
@@ -71,10 +71,10 @@
                     streetViewControl: false,
                     draggableCursor: 'pointer'}
                   - ui_options = { autoenlarge: true }
-                  #map-container
+                  #map-container.Map__small
                     #map-data[
                       data={ markers: @markers.to_json, options: map_options.to_json, ui: ui_options.to_json }]
-                    #map-canvas
+                    #map-canvas.Map__small
                   #big-map
                     button.big-map_close X
 

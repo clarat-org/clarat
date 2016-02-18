@@ -6,7 +6,7 @@ if set.any?
     next unless parent.visible
     json.name parent.name
     json.sections parent.section_filters.pluck(:identifier)
-    json.list_classes category_list_classes(depth, children)
+    json.list_classes category_list_classes(depth, children, @current_section)
     if depth <= 1 # only show 3 levels
       json.partial! 'offers/index/categories_nest.json',
                     set: children, depth: (depth + 1)

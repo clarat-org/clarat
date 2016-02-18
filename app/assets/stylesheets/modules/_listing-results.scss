@@ -76,6 +76,7 @@
     display: block;
     height: inherit;
     text-decoration: none;
+    min-height: 24px;
 
     &:hover {
       color: $brand_brown;

@@ -50,7 +50,7 @@ class SearchForm
   def initialize *attrs
     super
 
-    if search_location && search_location != I18n.t('conf.current_location')
+    if !exact_location && search_location && search_location != I18n.t('conf.current_location')
       self.generated_geolocation = search_location_instance.geoloc
     end
   end

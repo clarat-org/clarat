@@ -15,7 +15,7 @@ en:
     autocomplete_footer: All %{results} search results for '%{query}'
     map_info_window_multiple:
       title: 'Multiple offers'
-      text: 'There are multiple results for this marker.'
+      text: 'There are multiple results for this address.'
       anchor: 'Show all >>'
     cookie_warning_html: |
       Cookies help us deliver our services. By using the website you agree to our
@@ -70,10 +70,14 @@ en:
         target_audience: "For whom?"
         gender: "Gender"
         approach: "By which means?"
+      pagination:
+        next: "Next"
+        gap: "…"
+        back: "Previous"
     search_results:
-      more: "More virtual offers"
+      more: "More remote offers"
       show_personal: "Show local offers"
-      bridge: "for"
+      bridge: "for the search term"
       enclosing: ""
       faq_text: "If you have questions about our search you can find our FAQ "
       faq_anchor: "here"
@@ -81,7 +85,7 @@ en:
         enlarge_map: "Enlarge map"
         headline_small_map: "Local offers on the map"
       personal_offers:
-        zero: "Unfortuantely no offers found" #
+        zero: "No local offers found" #
         one: "One local offer"
         other: "%{count} local offers"
       remote_offers:
@@ -99,4 +103,7 @@ en:
         chat: "chat"
         forum: "forum"
         online-course: "online course"
-        list: "address list"
+        portal: "address list"
+
+    routes:
+      faq: "frequently-asked-questions"

@@ -33,8 +33,8 @@ en:
       navigation:
         claim:
           main: "Find help easily"
-          family: "Offers of help for children, adolescents and families"
-          refugees: "Offers of help for refugees"
+          family: "Support offerings for children, adolescents and families"
+          refugees: "Support offerings for refugees"
         category_headline: "Search by categories"
       footer:
         gplus:

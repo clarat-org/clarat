@@ -22,13 +22,13 @@
         section.section-content.section-content--what
           h3.section-content__title
             = t '.what'
-            = automation_warning @offer.translation_automated?
+            == automation_warning @offer.translation_automated?
           .section-content__body
             == translation_block @offer.translation_automated? do
               == @offer.description
 
-        / What to do next?
-        = render 'offers/show/next_steps', offer: @offer
+      / What to do next?
+      = render 'offers/show/next_steps', offer: @offer
 
       / Who is offering this service?
       = render 'offers/show/who_section', offer: @offer
@@ -44,7 +44,7 @@
           = t '.speaking'
         .section-content__wrapper.is-expanded
           ul.section-content__langlist
-            - @offer.language_filters.pluck(:identifier).each do |language|
+            - @offer.all_language_filters_sorted.each do |language|
               li
                 => t "offers.shared.current_and_original_locale.#{language}"
 
@@ -67,10 +67,10 @@
                 streetViewControl: false,
                 draggableCursor: 'pointer'}
               - ui_options = { autoenlarge: true }
-              #map-container
+              #map-container.Map__small
                 #map-data[
                   data={markers: @markers.to_json, options: map_options.to_json, ui: ui_options.to_json }]
-                #map-canvas
+                #map-canvas.Map__small
               #big-map
                 button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,

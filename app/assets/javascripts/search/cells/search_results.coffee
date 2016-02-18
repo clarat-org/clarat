@@ -87,16 +87,23 @@ class Clarat.Search.Cell.SearchResults
 
     output
 
-  ## Add additional values to search results (for hamlbars)
+  # Add additional values to search results (for hamlbars)
   addValuesToSearchResults: =>
-    for item in (@mainResults.hits + @remoteResults.hits)
-      item.stamp = @generateStampForOffer(main_result)
+    for item in (@mainResults.hits)
+      item.stamp = @generateStampForOffer(item)
       item.organization_display_name =
           if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
 
+    for item in (@remoteResults.hits)
+      item.stamp = @generateStampForOffer(item)
+
   generateStampForOffer: (offer) ->
-    return 'no TA!' if offer._target_audience_filters.empty?
+    console.log offer
+    return 'no TA!' if !offer._target_audience_filters || offer._target_audience_filters.empty?
     ta = offer._target_audience_filters[0]
+    @generateFamilyStamp(offer, ta)
+
+  generateFamilyStamp: (offer, ta) ->
     locale_entry = 'js.search_results.target_audience' + ".#{ta}"
     stamp = I18n.t('js.search_results.target_audience.prefix')
     append_age = true

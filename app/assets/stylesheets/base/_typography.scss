@@ -4,8 +4,62 @@
 //
 // ---------------------------------------------------------------
 
-@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@font-face {
+  font-family: 'roboto-regular';
+  src: asset-url('Roboto-Regular-webfont.eot');
+  src: asset-url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Regular-webfont.woff') format('woff'),
+  asset-url('Roboto-Regular-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'roboto-light';
+  src: asset-url('Roboto-Light-webfont.eot');
+  src: asset-url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Light-webfont.woff') format('woff'),
+  asset-url('Roboto-Light-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: asset-url('Roboto-Bold-webfont.eot');
+  src: asset-url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Bold-webfont.woff') format('woff'),
+  asset-url('Roboto-Bold-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-italic';
+  src: asset-url('Roboto-Italic-webfont.eot');
+  src: asset-url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Italic-webfont.woff') format('woff'),
+  asset-url('Roboto-Italic-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto-black';
+  src: asset-url('Roboto-Black-webfont.eot');
+  src: asset-url('Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('Roboto-Black-webfont.woff') format('woff'),
+  asset-url('Roboto-Black-webfont.ttf') format('truetype'),
+  asset-url('Roboto-Black-webfont.svg#robotoitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 %roboto_regular {
   font-family: 'roboto-regular', 'Roboto', sans-serif;

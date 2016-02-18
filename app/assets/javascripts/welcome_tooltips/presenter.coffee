@@ -13,6 +13,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     window:
       load: 'init'
+      resize: 'hideOverlay'
 
   init: =>
     @initFrontTooltips()
@@ -49,8 +50,29 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
       if $('body.template--offers-index').length
         @ttAdvancedSearch.qtip('api').show()
+        @highlightTooltip(@ttAdvancedSearch)
 
     return
+
+
+  highlightTooltip: (elem) =>
+
+    # Get original most imporant properties
+    left = elem.offset().left
+    top = elem.offset().top
+    height = elem.css "height"
+
+    clone = elem.clone()
+
+    # Assign them to clone
+    clone.css
+      "position": "absolute"
+      "left"    : left
+      "top"     : top
+      "max-height" : height
+
+    # Put in overlay
+    clone.prependTo @overlay;
 
 
   initFrontTooltips: =>
@@ -112,10 +134,14 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       if $('body.family.template--pages-home').length
 
         @ttFrontWeltRefugees.qtip('api').show()
+        @highlightTooltip(@ttFrontWeltRefugees)
+
 
       else if $('body.refugees.template--pages-home').length
 
         @ttFrontWeltFamily.qtip('api').show()
+        @highlightTooltip(@ttFrontWeltFamily)
+
 
     return
 
@@ -135,6 +161,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
   showOverlay: =>
     that = this
+    $('body').addClass 'overlay-active'
     @overlay.show()
     @overlay.click () ->
       that.hideOverlay()
@@ -142,6 +169,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
   hideOverlay: =>
     @overlay.hide()
+    $('body').removeClass 'overlay-active'
     @ttAdvancedSearch.qtip('destroy')
     @ttFrontWeltRefugees.qtip('destroy')
     @ttFrontWeltFamily.qtip('destroy')

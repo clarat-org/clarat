@@ -34,7 +34,6 @@
       color: $brand_core_family;
     }
 
-
     abbr[title="required"] {
       @extend %visually-hidden;
     }
@@ -123,11 +122,20 @@
 }
 
 .main-search__advanced-filter {
-  display: table-cell;
+  position: absolute;
   vertical-align: middle;
   color: $brand_brown;
   text-decoration: none;
   font-size: 12px;
+  transform: translate(0, -50%);
+  top: 50%;
+
+  .overlay-active & {
+    background: $brand_yellow;
+    padding: 15px;
+    margin-left: -15px;
+  }
+
 }
 
 .main-search__advanced-filter--within-content-main {

@@ -23,9 +23,6 @@
   padding: 0;
   float: left;
 
-  &:first-child a {
-    @extend %clarat_rounding_start;
-  }
 
   a {
     @extend %roboto_black;
@@ -42,6 +39,10 @@
     min-width: 208px;
     line-height: 30px;
     border-bottom: 6px solid;
+
+    &#clarat--family {
+      @extend %clarat_rounding_start;
+    }
 
     body.refugees & {
       border-bottom-color: $brand_core_refugees;

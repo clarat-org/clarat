@@ -15,6 +15,8 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     window:
       load: 'init'
       resize: 'hideOverlay'
+    document:
+      'Clarat.ToggleAdvancedSearch::Toggle': 'hideOverlay'
 
   init: =>
     @initFrontTooltips()

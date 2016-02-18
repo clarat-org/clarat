@@ -8,6 +8,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @ttFrontWeltFamily = $('.tooltip--welt-family')
     @world = if $('body.refugees').length then 'refugees' else 'family'
     @overlay = $('#qtip_welcome_overlay')
+    @cloneContainer = $('#clone-container')
     super()
 
   CALLBACKS:
@@ -28,7 +29,6 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
         my: 'bottom right'
         at: 'top center'
         effect: false
-        viewport: $(window)
       content:
         button: 'x'
       show:
@@ -72,7 +72,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       "max-height" : height
 
     # Put in overlay
-    clone.prependTo @overlay;
+    clone.prependTo @cloneContainer;
 
 
   initFrontTooltips: =>
@@ -163,12 +163,14 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     that = this
     $('body').addClass 'overlay-active'
     @overlay.show()
+    @cloneContainer.show()
     @overlay.click () ->
       that.hideOverlay()
 
 
   hideOverlay: =>
     @overlay.hide()
+    @cloneContainer.hide()
     $('body').removeClass 'overlay-active'
     @ttAdvancedSearch.qtip('destroy')
     @ttFrontWeltRefugees.qtip('destroy')

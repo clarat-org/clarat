@@ -664,4 +664,26 @@
     }
   }
 
+  .overlay-active .main-search__advanced-filter {
+    background: #f4b528;
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    top: 0;
+    transform: initial;
+  }
+
+  body.refugees.overlay-active .main-search__advanced-filter {
+    background: $brand_core_refugees;
+  }
+
+  body.family.overlay-active .main-search__advanced-filter {
+    background: $brand_core_family;
+  }
+
+  .template--offers-index #qtip-0 {
+    left: 10px !important; // override JS
+  }
+
 }

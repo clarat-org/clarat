@@ -38,11 +38,11 @@ ar:
             many: "%{count} سنوات"
             other: "%{count} سنوات"
           target_audience:
-            children: "للأطفال والشباب"
-            parents: "للآباء"
-            nuclear_family: "للأسر"
-            acquaintances: "للمعارف والأقارب"
-            pregnant_woman: "للحوامل"
+            family_children: "للأطفال والشباب"
+            family_parents: "للآباء"
+            family_nuclear_family: "للأسر"
+            family_acquaintances: "للمعارف والأقارب"
+            family_pregnant_woman: "للحوامل"
           exclusive_gender:
             boys_only: "فقط للصبيان والرجال"
             girls_only: "فقط للبنات والسيدات"

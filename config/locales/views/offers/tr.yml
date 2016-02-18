@@ -34,11 +34,11 @@ tr:
             one: "1 sene"
             other: "%{count} seneler"
           target_audience:
-            children: "Çocuklar ve gençler için"
-            parents: "Ebeveynler için"
-            nuclear_family: "Aileler için"
-            acquaintances: "Tanıdık ve akrabalar için"
-            pregnant_woman: "Hamileler için"
+            family_children: "Çocuklar ve gençler için"
+            family_parents: "Ebeveynler için"
+            family_nuclear_family: "Aileler için"
+            family_acquaintances: "Tanıdık ve akrabalar için"
+            family_pregnant_woman: "Hamileler için"
           exclusive_gender:
             boys_only: "Yalnızca erkekler için"
             girls_only: "Yalnızca bayanlar için"

@@ -88,11 +88,11 @@ en:
             one: "1 year"
             other: "%{count} years"
           target_audience:
-            children: "for children and adolescents"
-            parents: "for parents"
-            nuclear_family: "for families"
-            acquaintances: "for friends and family"
-            pregnant_woman: "for pregnant women"
+            family_children: "for children and adolescents"
+            family_parents: "for parents"
+            family_nuclear_family: "for families"
+            family_acquaintances: "for friends and family"
+            family_pregnant_woman: "for pregnant women"
           exclusive_gender:
             boys_only: "boys and men only"
             girls_only: "girls and women only"

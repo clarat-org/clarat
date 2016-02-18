@@ -89,35 +89,42 @@ class Clarat.Search.Cell.SearchResults
 
   # Add additional values to search results (for hamlbars)
   addValuesToSearchResults: =>
+    current_section = $('body').data('section')
     for item in (@mainResults.hits)
-      item.stamp = @generateStampForOffer(item)
+      item.stamp = @generateStampForOffer(item, current_section)
       item.organization_display_name =
           if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
 
     for item in (@remoteResults.hits)
-      item.stamp = @generateStampForOffer(item)
+      item.stamp = @generateStampForOffer(item, current_section)
 
-  generateStampForOffer: (offer) ->
-    console.log offer
-    return 'no TA!' if !offer._target_audience_filters || offer._target_audience_filters.empty?
+  generateStampForOffer: (offer, current_section) ->
+    if !offer._target_audience_filters || offer._target_audience_filters.empty?
+      console.log offer
+      return 'no TA!'
+
+
+
     ta = offer._target_audience_filters[0]
-    @generateFamilyStamp(offer, ta)
+    @generateOfferStamp(offer, ta)
 
-  generateFamilyStamp: (offer, ta) ->
-    locale_entry = 'js.search_results.target_audience' + ".#{ta}"
-    stamp = I18n.t('js.search_results.target_audience.prefix')
+
+
+  generateOfferStamp: (offer, ta) ->
+    locale_entry = 'js.search_results.stamp.target_audience' + ".#{ta}"
+    stamp = I18n.t('js.search_results.stamp.target_audience.prefix')
     append_age = true
     child_age = false
-    if ta == 'children'
+    if ta == 'family_children'
       if offer.gender_first_part_of_stamp != null
         locale_entry += ".#{offer.gender_first_part_of_stamp}"
       else if offer.age_from >= 14 && offer.age_to >= 14
         locale_entry += '.adolescents'
       else if offer.age_from < 14 && offer.age_to >= 14
-        locale_entry += '.plus_adolescents'
+        locale_entry += 'and_adolescents'
       else
         locale_entry += '.default'
-    else if ta == 'parents'
+    else if ta == 'family_parents'
       if offer.gender_first_part_of_stamp != null && offer.gender_second_part_of_stamp != null
         locale_entry += ".#{offer.gender_first_part_of_stamp}.#{offer.gender_second_part_of_stamp}"
       else if offer.gender_first_part_of_stamp != null
@@ -126,7 +133,7 @@ class Clarat.Search.Cell.SearchResults
       else
         locale_entry += '.default'
         child_age = true
-    else if ta == 'nuclear_family'
+    else if ta == 'family_nuclear_family'
       if offer.gender_first_part_of_stamp != null && offer.gender_second_part_of_stamp != null
         locale_entry += ".#{offer.gender_first_part_of_stamp}.#{offer.gender_second_part_of_stamp}"
       else if offer.gender_first_part_of_stamp != null
@@ -136,21 +143,21 @@ class Clarat.Search.Cell.SearchResults
       else
         locale_entry += '.default'
         append_age = false
-    else if ta == 'everyone'
+    else if ta == 'family_everyone'
       append_age = false
-    console.log locale_entry
+    # console.log locale_entry
     stamp += I18n.t(locale_entry)
     stamp += @generateAgeForStamp(offer.age_from, offer.age_to, offer.age_visible && append_age, child_age)
 
   generateAgeForStamp: (from, to, visible, child_age) ->
     return '' if !visible
-    age_string = if child_age then "#{I18n.t('js.search_results.stamp_age.of_child')} " else ''
+    age_string = if child_age then "#{I18n.t('js.search_results.stamp.age.of_child')} " else ''
     if from == 0
-      age_string += "#{I18n.t('js.search_results.stamp_age.to')} #{to}"
+      age_string += "#{I18n.t('js.search_results.stamp.age.to')} #{to}"
     else if to == 0
-      age_string += "#{I18n.t('js.search_results.stamp_age.from')} #{from}"
+      age_string += "#{I18n.t('js.search_results.stamp.age.from')} #{from}"
     else if from == to
       age_string += "#{from}"
     else
       age_string += "#{from} - #{to}"
-    " (#{age_string} #{I18n.t('js.search_results.stamp_age.suffix')})"
+    " (#{age_string} #{I18n.t('js.search_results.stamp.age.suffix')})"

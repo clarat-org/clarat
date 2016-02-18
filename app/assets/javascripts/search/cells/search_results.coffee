@@ -99,18 +99,19 @@ class Clarat.Search.Cell.SearchResults
       item.stamp = @generateStampForOffer(item, current_section)
 
   generateStampForOffer: (offer, current_section) ->
-    if !offer._target_audience_filters || offer._target_audience_filters.empty?
-      console.log offer
-      return 'no TA!'
+    # filter target_audience array to only include those of the current_section
+    target_audience_for_section = offer._target_audience_filters.filter (id) -> id.slice(0, current_section.length) == current_section
+    # (.......) 
+    if !target_audience_for_section[0] && current_section == 'refugees'
+      target_audience_for_section[0] = 'refugees_general'
+    # return with error if there is none => wrong target_audience_filters set
+    return 'missing correct target_audience!!' if !target_audience_for_section[0]
+    # generate frontend stamp
+    @generateOfferStamp(offer, target_audience_for_section[0])
 
 
 
-    ta = offer._target_audience_filters[0]
-    @generateOfferStamp(offer, ta)
-
-
-
-  generateOfferStamp: (offer, ta) ->
+  generateOfferStamp: (offer, ta, current_section) ->
     locale_entry = 'js.search_results.stamp.target_audience' + ".#{ta}"
     stamp = I18n.t('js.search_results.stamp.target_audience.prefix')
     append_age = true
@@ -143,18 +144,22 @@ class Clarat.Search.Cell.SearchResults
       else
         locale_entry += '.default'
         append_age = false
-    else if ta == 'family_everyone'
+    else if ta == 'family_everyone' || ta == 'refugees_families'
       append_age = false
     # console.log locale_entry
     stamp += I18n.t(locale_entry)
-    stamp += @generateAgeForStamp(offer.age_from, offer.age_to, offer.age_visible && append_age, child_age)
+    if offer.age_visible && append_age
+      stamp += @generateAgeForStamp(offer, child_age, current_section)
+    stamp
 
-  generateAgeForStamp: (from, to, visible, child_age) ->
-    return '' if !visible
+  generateAgeForStamp: (offer, child_age, current_section) ->
+    return '' if !offer._age_filters || offer._age_filters.length < 1
+    from = offer._age_filters[0]
+    to = offer._age_filters[offer._age_filters.length - 1]
     age_string = if child_age then "#{I18n.t('js.search_results.stamp.age.of_child')} " else ''
     if from == 0
       age_string += "#{I18n.t('js.search_results.stamp.age.to')} #{to}"
-    else if to == 0
+    else if to == 99 || current_section == 'family' && to > 17
       age_string += "#{I18n.t('js.search_results.stamp.age.from')} #{from}"
     else if from == to
       age_string += "#{from}"

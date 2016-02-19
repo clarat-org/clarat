@@ -4,14 +4,17 @@
       = hb 'name'
 
   / TODO: Refactor and rename
-  %h4.Listing-results__offerinfo
-    = hb 'ifDiffering encounter from="personal"' do
-      %span.Listing-results__contact-type
-        = hb 'i18n encounter', scope: 'js.single_search_result.encounters'
+  %div.Listing-results__offerinfo
 
-    %span.Listing-results__organization
-      %span.Listing-results__emphasis
-        / TODO: revert to organization_display_name and show stamp elsewhere!
-        = hb 'stamp' # = hb 'organization_display_name'
+    %section.Listing-results__stamp
+      / TODO: revert to organization_display_name and show stamp elsewhere!
+      = hb 'stamp' # = hb 'organization_display_name'
+
+      %button.Listing-results__expander{'aria-toggle' => 'false'} Expand
+
+    %section.Listing-results__meta
+      %h4.Listing-results__orga-display
+        = hb 'organization_display_name'
       = hb 'if location_visible' do # only show address if visible
-        = hb 'location_address'
+        %span.Listing-results__address
+          = hb 'location_address'

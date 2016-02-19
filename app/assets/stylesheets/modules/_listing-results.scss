@@ -87,9 +87,10 @@
 .Listing-results__offer {
   @extend %roboto_bold;
   @extend %clarat_rounding_start;
+  background: $brand_yellow image-url('ico_globe.svg') no-repeat calc(100% - 5px) center;
+  background-size: 30px 30px;
   padding: 7px 15px;
   min-height: 38px;
-  background: $brand_yellow;
   font-size: 18px;
 
   a {
@@ -103,6 +104,7 @@
 
 .Listing-results__offerinfo {
   @extend %roboto_regular;
+  @extend %clearfix;
   @extend %clarat_rounding_end;
   min-height: 32px;
   background: $brand_beige;
@@ -124,5 +126,31 @@
   padding: 6px 6px 8px;
   background: $brand_green_alternative;
   color: $brand_white;
-
 }
+
+.Listing-results__orga-display {
+  @extend %roboto_bold;
+  margin-bottom: 0;
+}
+
+.Listing-results__expander {
+  display: none;
+}
+
+.Listing-results__meta,
+.Listing-results__stamp {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  padding: 4px;
+}
+
+.Listing-results__stamp {
+  background: transparent image-url('ico_user.svg') no-repeat 4px center;
+  padding: 4px 4px 4px 30px;
+  background-size: 20px 20px;
+}
+
+
+

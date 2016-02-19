@@ -448,6 +448,13 @@
     }
   }
 
+  .Listing-results__expander {
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
   .Distributor__advanced-filter-trigger-wrapper {
     position: relative;
     background-color: $brand_brown;
@@ -455,8 +462,6 @@
     display: none;
     height: auto;
     text-align: center;
-
-
 
     .template--offers-index {
       display: block;
@@ -582,6 +587,20 @@
     textarea,
     &.formtastic .inline-errors {
       width: 410px;
+    }
+  }
+
+  .Listing-results__address,
+  .Listing-results__stamp {
+    clear: left;
+    width: 100%;
+  }
+
+  .Listing-results__meta {
+    display: none;
+
+    &.is-expanded {
+      display: block;
     }
   }
 

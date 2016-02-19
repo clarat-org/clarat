@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 1e746a48a8b8c30a034fbeb0a4a6cab9ec0818f6
+  revision: be18ac805ac8f3c472e9a2ceca5d99ca1fb3d097
   branch: feature/643-frontend-offer-stamp
   specs:
     clarat_base (0.1.4)

@@ -92,6 +92,60 @@ en:
         zero: "No remote offers"
         one: "One remote offer"
         other: "%{count} remote offers"
+      stamp:
+        age:
+          of_child: "age of child:"
+          from: "from"
+          to: "up to"
+          suffix: "years"
+        target_audience:
+          prefix: "for "
+          family_pregnant_woman: "pregnant women"
+          family_acquaintances: "acquaintances and relatives"
+          family_everyone: "everyone"
+          family_pregnant_with_child: "pregnant women with a child"
+          family_children:
+            default: "children"
+            adolescents: "adolescents"
+            and_adolescents: "children and adolescents"
+            male: "boys"
+            female: "girls"
+          family_parents:
+            default: "parents"
+            male:
+              default: "mothers"
+              male: "mothers of sons"
+              female: "mothers of daughters"
+            female:
+              default: "fathers"
+              male: "fathers of sons"
+              female: "fathers of daughters"
+          family_nuclear_family:
+            default: "families"
+            male:
+              default: "mothers with children"
+              male: "mothers with sons"
+              female: "mothers with daughters"
+            female:
+              default: "fathers with children"
+              male: "mothers with sons"
+              female: "mothers with daughters"
+            special_male: "families with boys"
+            special_female: "families with girls"
+          refugees_children: "fled children"
+          refugees_adolescents: "fled adolescents"
+          refugees_children_and_adolescents: "fled children and adolescents"
+          refugees_umf: "unaccompanied minor refugees"
+          refugees_ujf: "unaccompanied young refugees"
+          refugees_families: "fled families"
+          refugees_pre_asylum_procedure: "refugees anterior to the asylum procedure"
+          refugees_asylum_procedure: "refugees during the asylum procedure"
+          refugees_deportation_decision: "refugees with deportation decision"
+          refugees_toleration_decision: "refugees with toleration decision"
+          refugees_residence_permit: "refugees with residence permit"
+          refugees_registered: "unregistered refugees"
+          refugees_parents: "fled parents"
+          refugees_general: "refugees"
 
     categories_sidebar:
       all_categories: "All categories"

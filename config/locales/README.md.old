@@ -1,6 +1,9 @@
 Internationalization Guidelines
 ===============================
 
+**Not applicable anymore since we use localeapp which forces us to use a single
+locale file**
+
 Prelude
 --------------------------------------------------------------------------------
 

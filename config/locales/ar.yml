@@ -1,83 +1,40 @@
 ar:
   conf:
     current_location: "موقعي"
-    default_location: "برلين"
     default_latlng: 52.520007,13.404954
-  js:
-    geolocation:
-      get: "استخدم موقعي !"
-      waiting: "البحث عن موقع. ربما عليك أن تسمح بهذا أولا"
-      error: "لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا."
-    location_required: |
-      من فضلك أدخل اسم المكان الذي تريد أن تبحث فيه عن مساعدة
-    autocomplete_footer: "كل %{نتائجfür '%{query}'"
-    map_info_window_multiple:
-      title: "عروض أكثر"
-      text: "تم العثور على العديد من النتائج لهذه الماركة"
-      anchor: "مشاهدة الكل >>"
-    cookie_warning_html: |
-      الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز
-      <a href="/ارشادات حماية البيانات">Mehr</a>.
-       نا كوكيز
-    more_filter_options: "عرض فلاتر أكثر"
-    less_filter_options: "عرض فلاتر أقل"
-    mobile_filter: "تنقية النتائج"
-    ajax_error:
-      error: "خطأ في البحث"
-      message: |
-        نأسف لحدوث خطأ في البحث. في حالة تكرار هذه المشكلة, اتصل بنا من فضلك
-    query_field:
-      placeholder_words:
-      - "تبني"
-      - "مخدرات"
-      - "عنف"
-      - "دروس خصوصية"
-      - "طوارئ"
-      - "قانون"
-      - "يتيم"
-      - "بطالة"
-      - "أكل"
-      - "مرض"
-      - "مشرد"
-      - "التدخين"
-      - "الحمل"
-      - "لوطي"
-      - "تهرب من المدرسة"
-      - "السكن"
-      example_placeholder: z.B. %{كلمة}, …
-    search:
-      form_more_label: "عرض خيارات البحث"
-      form_less_label: "اخفاء خيارات البحث"
-    search_results:
-      more: "عروض أخرى عن طريق التليفون أو الأنترنت"
-      show_personal: "عرض عروض مكانية أكثر"
-      bridge: "من أجل"
-      enclosing: "تم العثور على"
-      faq_text: "تجد الأسئلة الشائعة حول البحث وكذلك الإجابات "
-      faq_anchor: "هنا"
-      map:
-        enlarge_map: "تكبير الخريطة"
-        headline_small_map: "عروض محلية على الخريطة"
-      personal_offers:
-        zero: "للأسف لا توجد عروض  "
-        one: "عرض محلي"
-        other: "%{count} عروض محلية"
-      remote_offers:
-        zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
-        one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
-        other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
-    categories_sidebar:
-      all_categories: "جميع الفئات"
-    single_search_result:
-      encounters:
-        personal: "ذاتيا"
-        hotline: "تليفون"
-        email: "بريد اليكتروني"
-        chat: "دردشة"
-        forum: "منتدى"
-        online-course: "دورة بالإنترنت"
-        portal: "قائمة العناوين"
+    default_location: "برلين"
+  contacts:
+    create:
+      success: "تم إرسال الرسالة بنجاح"
+    new:
+      contact_heading: "ماذا تريد أن تخبرنا؟"
+    shared:
+      new:
+        email_placeholder:
+          required:
+            'false': "البريد الإليكتروني (إختياري)"
+            'true': "البريد الإليكتروني (فرض)"
+        message_placeholder: "اكتب رسالة (فرض)"
+        name_placeholder: "الإسم (فرض)"
+        send: "ارسال"
+        send_us_a_message: "اكتب لنا رسالة"
   emails:
+    offers_index:
+      family:
+        heading: 
+        no_results: 
+        toggle_section_html: 
+      obfuscated_email: 
+      refugees:
+        heading: 
+        no_results: 
+        toggle_section_html: 
+      shared:
+        explanation_1: 
+        explanation_2: 
+        explanation_3: 
+        explanation_4: 
+        info: 
     subscribe:
       success_html: |
         لقد قمت بتسجيل نفسك بنجاح للحصول على إشعارات عن عروض
@@ -87,66 +44,455 @@ ar:
       success_html: |
         لقد قمت بنجاح بإلغاء تسجيلك من الحصول على إشعارات أخرى
         (<a href="%{subscribe_href}">إعادة التسجيل</a>)
+  enumerize:
+    required:
+      html: 
+      mark: 
+      text: 
+    search_form:
+      age:
+        '0': 
+        '1': 
+        '10': 
+        '11': 
+        '12': 
+        '13': 
+        '14': 
+        '15': 
+        '16': 
+        '17': 
+        '18': 
+        '19': 
+        '2': 
+        '20': 
+        '21': 
+        '22': 
+        '23': 
+        '24': 
+        '25': 
+        '26': 
+        '27': 
+        '28': 
+        '29': 
+        '3': 
+        '30': 
+        '31': 
+        '32': 
+        '33': 
+        '34': 
+        '35': 
+        '36': 
+        '37': 
+        '38': 
+        '39': 
+        '4': 
+        '40': 
+        '41': 
+        '42': 
+        '43': 
+        '44': 
+        '45': 
+        '46': 
+        '47': 
+        '48': 
+        '49': 
+        '5': 
+        '50': 
+        '51': 
+        '52': 
+        '53': 
+        '54': 
+        '55': 
+        '56': 
+        '57': 
+        '58': 
+        '59': 
+        '6': 
+        '60': 
+        '61': 
+        '62': 
+        '63': 
+        '64': 
+        '65': 
+        '66': 
+        '67': 
+        '68': 
+        '69': 
+        '7': 
+        '70': 
+        '71': 
+        '72': 
+        '73': 
+        '74': 
+        '75': 
+        '76': 
+        '77': 
+        '78': 
+        '79': 
+        '8': 
+        '80': 
+        '81': 
+        '82': 
+        '83': 
+        '84': 
+        '85': 
+        '86': 
+        '87': 
+        '88': 
+        '89': 
+        '9': 
+        '90': 
+        '91': 
+        '92': 
+        '93': 
+        '94': 
+        '95': 
+        '96': 
+        '97': 
+        '98': 
+        '99': 
+      contact_type:
+        personal: 
+        remote: 
+      language:
+        '150': 
+        '326': 
+        '568': 
+        '639': 
+        amh: 
+        ara: 
+        aze: 
+        bel: 
+        ben: 
+        bos: 
+        bul: 
+        deu: 
+        ell: 
+        eng: 
+        fas: 
+        fra: 
+        hin: 
+        hrv: 
+        hun: 
+        ita: 
+        kik: 
+        kur: 
+        lav: 
+        lit: 
+        ltz: 
+        luo: 
+        mkd: 
+        nor: 
+        pol: 
+        por: 
+        rom: 
+        ron: 
+        rus: 
+        snk: 
+        spa: 
+        sqi: 
+        srp: 
+        swa: 
+        swe: 
+        tam: 
+        tel: 
+        tgk: 
+        tha: 
+        tuk: 
+        tur: 
+        urd: 
+        uzb: 
+        vie: 
+        wol: 
+        zho: 
+        zza: 
+      section:
+        family: 
+        refugees: 
+  heading: 
+  js:
+    ajax_error:
+      error: "خطأ في البحث"
+      message: |
+        نأسف لحدوث خطأ في البحث. في حالة تكرار هذه المشكلة, اتصل بنا من فضلك
+    autocomplete_footer: 
+    categories_sidebar:
+      all_categories: "جميع الفئات"
+    cookie_warning_html: |
+      الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز
+      <a href="/ارشادات حماية البيانات">Mehr</a>.
+       نا كوكيز
+    geolocation:
+      error: "لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا."
+      get: "استخدم موقعي !"
+      waiting: "البحث عن موقع. ربما عليك أن تسمح بهذا أولا"
+    lang_list_toggle:
+      less: 
+      more: 
+    less_filter_options: "عرض فلاتر أقل"
+    location_required: |
+      من فضلك أدخل اسم المكان الذي تريد أن تبحث فيه عن مساعدة
+    map_info_window_multiple:
+      anchor: "مشاهدة الكل >>"
+      text: "تم العثور على العديد من النتائج لهذه الماركة"
+      title: "عروض أكثر"
+    mobile_filter: "تنقية النتائج"
+    more_filter_options: "عرض فلاتر أكثر"
+    query_field:
+      example_placeholder: 
+      placeholder_words:
+        family: 
+        refugees: 
+    search:
+      form_less_label: "اخفاء خيارات البحث"
+      form_more_label: "عرض خيارات البحث"
+      headlines:
+        age: 
+        approach: 
+        gender: 
+        language: 
+        target_audience: 
+      option_any: 
+      pagination:
+        back: 
+        gap: 
+        next: 
+    search_results:
+      bridge: "من أجل"
+      enclosing: "تم العثور على"
+      faq_anchor: "هنا"
+      faq_text: "تجد الأسئلة الشائعة حول البحث وكذلك الإجابات "
+      map:
+        cooperation: 
+        enlarge_map: "تكبير الخريطة"
+        headline_small_map: "عروض محلية على الخريطة"
+      more: "عروض أخرى عن طريق التليفون أو الأنترنت"
+      personal_offers:
+        one: "عرض محلي"
+        other: "%{count} عروض محلية"
+        zero: "للأسف لا توجد عروض  "
+      remote_offers:
+        one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
+        other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
+        zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
+      show_personal: "عرض عروض مكانية أكثر"
+    single_search_result:
+      encounters:
+        chat: "دردشة"
+        email: "بريد اليكتروني"
+        forum: "منتدى"
+        hotline: "تليفون"
+        online-course: "دورة بالإنترنت"
+        personal: "ذاتيا"
+        portal: "قائمة العناوين"
   layouts:
     partials:
       banner:
         teaser:
-          text: clarat.org يتم إنشائها
-          refugees: "قريبا سيكون هناك عروضا للأجئين أيضا"
           link: "هنا يمكنك معرفة المزيد"
-      nav_lang:
-        title: "إختيار اللغة"
-        languages:
-          de: Deutsch
-          en: English
-          ar: "عربي"
-          fr: Français
-          ru: "НА РУССКОМ"
-          tr: Türkçe
-          pl: Polskie
+          refugees: "قريبا سيكون هناك عروضا للأجئين أيضا"
+          text: clarat.org يتم إنشائها
+      footer:
+        about: "معلومات عنا"
+        blog: "مدونة"
+        contact: "الإتصال"
+        faq: " الأسئلة الشائعة"
+        fb:
+          anchor: "فيس بوك"
+          href: https://www.facebook.com/claratpunktorg
+        gplus:
+          anchor: "جوجل بلس"
+          href: https://plus.google.com/110429028641743127592/about
+        impressum: "هيئة التحرير"
+        privacy: "إرشادات حماية البيانات الشخصية"
+        tos: "إرشادات قانونية"
+        twitter:
+          anchor: "تويتر"
+          href: https://twitter.com/claratpunktorg
       modal:
         beta_modal:
+          link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
           text: |
             صفحة الإنترنت الخاصة بكلارات. أورج لاتزال جديدة جدا.
             في برلين يمكنك أن تجد بالفعل العديد من عروض المساعدة.
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
-          link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
           هذا يعني أن شخصا يساعدك عن طريق التليفون أو الإنترنت
           مثلا عن طريق اللإيميل أو عن طريق الدردشة
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
+      nav_lang:
+        languages:
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polskie
+          ru: "НА РУССКОМ"
+          tr: Türkçe
+        title: "إختيار اللغة"
       navigation:
+        category_headline: "أو البحث عن طريق التصنيف"
         claim:
-          main: "الحصول على المساعدة ببساطة"
           family: |
             عروض دعم للأطفال؛ الشبان و الأسرة
+          main: "الحصول على المساعدة ببساطة"
           refugees: |
             عروض دعم للآجئين
-        category_headline: "أو البحث عن طريق التصنيف"
-      footer:
-        gplus:
-          anchor: "جوجل بلس"
-          href: https://plus.google.com/110429028641743127592/about
-        twitter:
-          anchor: "تويتر"
-          href: https://twitter.com/claratpunktorg
-        fb:
-          anchor: "فيس بوك"
-          href: https://www.facebook.com/claratpunktorg
-        about: "معلومات عنا"
-        faq: " الأسئلة الشائعة"
-        contact: "الإتصال"
-        blog: "مدونة"
-        impressum: "هيئة التحرير"
-        tos: "إرشادات قانونية"
-        privacy: "إرشادات حماية البيانات الشخصية"
   offers:
+    index:
+      filters:
+        json:
+          age:
+            few: "سنوات %{count}"
+            many: "%{count} سنوات"
+            one: "سنة واحدة"
+            other: "%{count} سنوات"
+            two: "سنتان"
+            zero: "أقل من سنة واحدة"
+          contact_type:
+            personal: "محلياّ"
+            remote: "بالتليفون أو الإنترنت"
+          encounter:
+            chat: "دردشة"
+            email: "إيميل"
+            forum: "منتدى"
+            hotline: "تليفون"
+            online-course: "دورة بالإنترنت"
+            portal: "قائمة العناورين"
+          exclusive_gender:
+            boys_only: "فقط للصبيان والرجال"
+            girls_only: "فقط للبنات والسيدات"
+          language:
+            '150': "لغة الإشارة الألمانية"
+            '326': "أوكراني"
+            '568': "هولندي"
+            '639': "داري"
+            amh: "الأمهرية"
+            ara: "عربي"
+            aze: "أذربيجاني"
+            bel: "البيلاروسية"
+            ben: "بنغالي"
+            bos: "بوسني"
+            bul: "بلغاري"
+            deu: "ألماني"
+            ell: "يوناني"
+            eng: "إنجليزي"
+            fas: "فارسي"
+            fra: "فرنسي"
+            hin: "هندي"
+            hrv: "كرواتي"
+            hun: "مجري"
+            ita: "ايطالي"
+            kik: "كيكويو"
+            kur: "كردي"
+            lav: "لاتفية"
+            lit: "الليتوانية"
+            ltz: "لكسمبورجي"
+            luo: "لغة اللو"
+            mkd: "مقدونية"
+            mul: "لغات أخرى حسب الطلب"
+            nor: "نرويجي"
+            pol: "بولندي"
+            por: "برتغالي"
+            rom: "رومانيَ"
+            ron: "روماني"
+            rus: "روسي"
+            snk: "سونينكي"
+            spa: "أسباني"
+            sqi: "ألباني"
+            srp: "صربي"
+            swa: "اللغة السواحيلي"
+            swe: "سويدي"
+            tam: "التاميل"
+            tel: "التيلوجو"
+            tgk: "الطاجيكية"
+            tha: "تايلاندي"
+            tuk: "تركمان"
+            tur: "تركي"
+            urd: "أوردي"
+            uzb: "الأوزبكي"
+            vie: "فيتنامي"
+            wol: "الولوف"
+            zho: "صيني"
+            zza: "زازا"
+          target_audience:
+            acquaintances: "للمعارف والأقارب"
+            children: "للأطفال والشباب"
+            nuclear_family: "للأسر"
+            parents: "للآباء"
+            pregnant_woman: "للحوامل"
+      map_sidebar:
+        map_output_searchresults: "إظهار بطاقة نتائج البحث"
+      noscript_warning: |
+        المعذرة، لكن لكي يمكنك إستخدام البحث الخاص بنا ؛
+        لابد أن يكون جافا سكربت على المحرك البحثي الخاص بك فعالا
+      pending_ajax:
+        searching: "بحث…"
+    invalid_location:
+      text: |
+        من فضلك راجع بيانات العنوان الذي قمت بإدخاله وحاول مرة أخرى عن طريق إدخال بيانات بديلة
+        (على سبيل المثال الرقم البريدي والمكان)
+      title: "للأسف لم نتمكن من العثور على الموقع الذي تم إدخاله بمعرفتك "
     shared:
+      current_and_original_locale:
+        '150': 
+        '326': 
+        '568': 
+        '639': 
+        amh: 
+        ara: 
+        aze: 
+        bel: 
+        ben: 
+        bos: 
+        bul: 
+        deu: 
+        ell: 
+        eng: 
+        fas: 
+        fra: 
+        hin: 
+        hrv: 
+        hun: 
+        ita: 
+        kik: 
+        kur: 
+        lav: 
+        lit: 
+        ltz: 
+        luo: 
+        mkd: 
+        mul: 
+        nor: 
+        pol: 
+        por: 
+        rom: 
+        ron: 
+        rus: 
+        snk: 
+        spa: 
+        sqi: 
+        srp: 
+        swa: 
+        swe: 
+        tam: 
+        tel: 
+        tgk: 
+        tha: 
+        tuk: 
+        tur: 
+        urd: 
+        uzb: 
+        vie: 
+        wol: 
+        zho: 
+        zza: 
       search_form:
+        button: "بحث"
         loc_label: "أين"
         loc_placeholder:
           long: "العنوان، المنطقة، المدينة، الرقم البريدي"
@@ -155,187 +501,212 @@ ar:
         query_placeholder:
           long: "عروض خاصة بموضوع ...."
           short: "عروض  مساعدة ل.."
-        button: "بحث"
-    invalid_location:
-      title: "للأسف لم نتمكن من العثور على الموقع الذي تم إدخاله بمعرفتك "
-      text: |
-        من فضلك راجع بيانات العنوان الذي قمت بإدخاله وحاول مرة أخرى عن طريق إدخال بيانات بديلة
-        (على سبيل المثال الرقم البريدي والمكان)
-    index:
-      noscript_warning: |
-        المعذرة، لكن لكي يمكنك إستخدام البحث الخاص بنا ؛
-        لابد أن يكون جافا سكربت على المحرك البحثي الخاص بك فعالا
-      pending_ajax:
-        searching: "بحث…"
-      filters:
-        json:
-          age:
-            zero: "أقل من سنة واحدة"
-            one: "سنة واحدة"
-            two: "سنتان"
-            few: "سنوات %{count}"
-            many: "%{count} سنوات"
-            other: "%{count} سنوات"
-          target_audience:
-            children: "للأطفال والشباب"
-            parents: "للآباء"
-            nuclear_family: "للأسر"
-            acquaintances: "للمعارف والأقارب"
-            pregnant_woman: "للحوامل"
-          exclusive_gender:
-            boys_only: "فقط للصبيان والرجال"
-            girls_only: "فقط للبنات والسيدات"
-          language:
-            deu: "ألماني"
-            eng: "إنجليزي"
-            tur: "تركي"
-            tha: "تايلاندي"
-            bul: "بلغاري"
-            ron: "روماني"
-            sqi: "ألباني"
-            ara: "عربي"
-            fra: "فرنسي"
-            kur: "كردي"
-            rus: "روسي"
-            srp: "صربي"
-            amh: "الأمهرية"
-            bos: "بوسني"
-            ita: "ايطالي"
-            hrv: "كرواتي"
-            pol: "بولندي"
-            por: "برتغالي"
-            vie: "فيتنامي"
-            wol: "الولوف"
-            fas: "فارسي"
-            ben: "بنغالي"
-            spa: "أسباني"
-            tam: "التاميل"
-            urd: "أوردي"
-            mul: "لغات أخرى حسب الطلب"
-            aze: "أذربيجاني"
-            ell: "يوناني"
-            hin: "هندي"
-            mkd: "مقدونية"
-            rom: "رومانيَ"
-            hun: "مجري"
-            '568': "هولندي"
-            '326': "أوكراني"
-            '639': "داري"
-            '150': "لغة الإشارة الألمانية"
-            lav: "لاتفية"
-            lit: "الليتوانية"
-            kik: "كيكويو"
-            zho: "صيني"
-            swa: "اللغة السواحيلي"
-            luo: "لغة اللو"
-            ltz: "لكسمبورجي"
-            nor: "نرويجي"
-            swe: "سويدي"
-            snk: "سونينكي"
-            tgk: "الطاجيكية"
-            tel: "التيلوجو"
-            tuk: "تركمان"
-            uzb: "الأوزبكي"
-            bel: "البيلاروسية"
-            zza: "زازا"
-          contact_type:
-            personal: "محلياّ"
-            remote: "بالتليفون أو الإنترنت"
-          encounter:
-            hotline: "تليفون"
-            email: "إيميل"
-            chat: "دردشة"
-            forum: "منتدى"
-            online-course: "دورة بالإنترنت"
-            portal: "قائمة العناورين"
-      map_sidebar:
-        map_output_searchresults: "إظهار بطاقة نتائج البحث"
     show:
-      what: "ما هو الموضوع؟"
-      next_steps: "ماذا يجب عليك أن تفعله؟"
-      who: "أين توجد المساعدة؟"
       last_updated: "آخر إدخال"
+      next_steps:
+        code_word: 
+        heading: 
       opening_section:
-        heading: "متى يمكنك فعل هذا؟"
         days:
-          mon: "الإثنين"
-          tue: "الثلاثاء"
-          wed: "الأربعاء"
-          thu: "الخميس"
           fri: "الجمعة"
+          mon: "الإثنين"
           sat: "السبت"
           sun: "الأحد"
+          thu: "الخميس"
+          tue: "الثلاثاء"
+          wed: "الأربعاء"
+        heading: "متى يمكنك فعل هذا؟"
+      speaking: 
       website_section:
         internet_presence: "أين تجد المزيد من المعلومات في النت"
         websites:
-          own: "صفحة النت"
+          application_form: 
+          chat: 
+          contact_form: 
           document: "المزيد من المعلومات"
           facebook: "الفيس بوك"
+          forum: 
+          gplus: "جوجل بلس"
+          online_consulting: 
+          online_course: 
+          own: "صفحة النت"
+          pinterest: "بيترست"
           twitter: "تويتر"
           youtube: "اليوتيوب"
-          gplus: "جوجل بلس"
-          pinterest: "بيترست"
+      what: "ما هو الموضوع؟"
+      who: "أين توجد المساعدة؟"
       who_contact_people:
+        dr: ".د"
+        email: "البريد الإليكتروني:"
+        fax: " :فاكس "
         female: "السيدة"
         male: "السيد"
-        dr: ".د"
-        prof_dr: "أ.د."
-        phone: " :فاكس"
-        fax: " :فاكس "
-        email: "البريد الإليكتروني:"
         obfuscated_email: |
           هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
           من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
-      who_section:
-        heading: "أين يمكنك الإتصال؟"
+        phone: " :فاكس"
+        prof_dr: "أ.د."
       who_location:
         organizations: " :.عرض من"
+      who_section:
+        heading: "أين يمكنك الإتصال؟"
+  opening:
+    display_string:
+      appointment: "حسب الإتفاق"
+      midnight_exception: 24:00 ساعة
+      time_format: " %H:%M ساعة "
+      time_frame: "%{open} - %{close}"
   organizations:
     show:
-      who: "ماذا تفعل المنظمة؟"
-      where: "أين تجد المنظمة؟"
       offers_all: "ما هي المساعدة التي تقدمها المنظمة؟"
+      where: "أين تجد المنظمة؟"
+      who: "ماذا تفعل المنظمة؟"
   pages:
-    home:
-      title:
-        family: "عروض دعم للأطفال والشبان والأسر"
-        refugees: Unterstützungsangebote für Flüchtlinge
-      how:
-        heading: Wie funktioniert clarat?
-        text: |
-          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
-          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
-          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
-          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
-          Oder einfach vorbeigehen kannst.
-      whom:
-        heading: Für wen ist clarat?
-        text: |
-          clarat ist für alle da. clarat family für Kinder, Jugendliche und
-          Familien. clarat refugees für Flüchtlinge. Hier findest du
-          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
-          und deine Freunde. Oder auch für andere Menschen, die du kennst und
-          die Hilfe brauchen.
-      why:
-        heading: Warum gibt es clarat?
-        text: |
-          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
-          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
-          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
-          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
-          refugees.
-    not_found:
-      title: '404'
-      heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
-      description: |
-        اكتب ببساطة في خانة البحث؛ ما هي المساعدة التي تبحث عنها
-        أو ما هي مشكلتك؟ سوف تعرض لك كلارات عروضا أكثر بالقرب منك
-        {start_page} أو اذهب الى الصفحة الرئيسية
-        هناك يمكنك من خلال الصور المستديرة أن تبحث عن المساعدة المناسبة
-      link_text: here
+    about:
+      amina: |
+        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
+        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
+        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
+        Prima Estate von Erlend Oye.
+      andrea: |
+        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
+        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
+        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
+        Lieblingssong ist Work Me von The Black Keys.
+      anne: |
+        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
+        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
+        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
+        Sie Groß von Deichkind.
+      astrid: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
+        The Roots feat. Erykah Badu.
+      basti: |
+        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
+        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
+        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
+        The Mirror von Michael Jackson.
+      bettina: |
+        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
+        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
+        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
+        Lieblingssong ist Elias von Dispatch.
+      elisa: |
+        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
+        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
+        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
+        Behind von Kings of Convenience.
+      franziska: |
+        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
+        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
+        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Explanations von Selah Sue.
+      heading: Wer steckt hinter clarat?
+      janina: |
+        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
+        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
+        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
+        weiter. Ihr Lieblingssong ist MFG von Fanta4.
+      janne: |
+        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
+        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
+        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
+        Sweat von Ry X.
+      jens: |
+        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
+        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
+        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
+        Sein Lieblingssong ist 2B2 von Lambchop.
+      jule: |
+        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
+        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
+        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
+        Lieblingssong ist Home von Edward Sharpe.
+      julia: |
+        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
+        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
+        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
+        Lieblingssong ist Reckoner von Radiohead.
+      julian: |
+        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
+        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
+        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
+        ist All You Need von Sublime.
+      katinka: |
+        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
+        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
+        Cat Power.
+      konstantin: |
+        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
+        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
+        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
+      laura: |
+        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
+        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
+        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
+        ist Paint It Black von den Rolling Stones.
+      lavinia: |
+        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
+        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
+        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
+        Lieblingssong ist I'm Not Done von Fever Ray.
+      line: |
+        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
+        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
+        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
+        den Rolling Stones.
+      lisa: |
+        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
+        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
+        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
+      marcus: |
+        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
+        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
+        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
+        Lieblingssong ist Hysteria von MUSE.
+      nicole: |
+        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
+        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
+        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
+        Shaka Ponk.
+      nils: |
+        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
+        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
+        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
+        Jein von Fettes Brot.
+      stefan: |
+        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
+        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
+        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
+        Storm von The Doors.
+      text: |
+        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
+        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
+        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
+        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
+        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
+        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
+        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
+        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
+        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
+        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
+        Einfach Hilfe finden. Für Familien auf clarat family. Und für
+        Flüchtlinge auf clarat refugees.
+      tine: |
+        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
+        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
+        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Survive It von Ghostpoet.
+      title: "Über Uns"
+      verena: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
+        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
+        Lieblingssong ist Lose It von Oh Wonder.
     agb:
-      title: "إرشادات قانونية"
       heading: "إرشادات قانونية"
       text_html: |
         <p>
@@ -382,24 +753,143 @@ ar:
         Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
         der Bundesrepublik Deutschland.
         </p>
+      title: "إرشادات قانونية"
     faq:
       title: "أسئلة شائعة"
+    home:
+      how:
+        heading: Wie funktioniert clarat?
+        text: |
+          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
+          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
+          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
+          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
+          Oder einfach vorbeigehen kannst.
+      title:
+        family: "عروض دعم للأطفال والشبان والأسر"
+        refugees: Unterstützungsangebote für Flüchtlinge
+      whom:
+        heading: Für wen ist clarat?
+        text: |
+          clarat ist für alle da. clarat family für Kinder, Jugendliche und
+          Familien. clarat refugees für Flüchtlinge. Hier findest du
+          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
+          und deine Freunde. Oder auch für andere Menschen, die du kennst und
+          die Hilfe brauchen.
+      why:
+        heading: Warum gibt es clarat?
+        text: |
+          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
+          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
+          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
+          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
+          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
+          refugees.
+    impressum:
+      heading: "هيئة التحرير"
+      responsible_html: |
+        مجلس الإدارة<br/>
+        Dr. Dr. Christoph Glaser<br/>
+        (مسئول عن محتويات صفحة الإنترنت)
+      title: "هيئة التحرير"
+    not_found:
+      description: 
+      heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
+      link_text: here
+      title: 404
     privacy:
-      title: Datenschutz
-      heading: Datenschutzhinweise
-      intro_first_part: |
-        Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
-        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
-        Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
-        wir personenbezogene Daten ausschließlich im Rahmen der geltenden
-        Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
-      intro_second_part: |
-        Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
-        Verwendung personenbezogener Daten unterrichten. Sie können diese
-        Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
-        Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
-        Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
-        Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      chapter_eight:
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_second_paragraph: |
+          Ihre Fragen zum
+          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
+          Beschwerden oder Ähnliches richten Sie bitte an:
+        text: |
+          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
+          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
+          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
+          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
+          folgenden Link klicken:
+          %{google_optout}.
+      chapter_five:
+        heading: 5. Social Media Plugins
+        nested_text_four: |
+          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
+          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
+          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
+          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
+          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
+          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
+          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
+          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
+          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
+          wurde.
+        nested_text_one: |
+          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
+          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
+          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
+          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
+          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
+          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
+          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
+          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
+          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
+          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
+          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
+          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
+          diese Information an Ihr Facebook-Profil in die USA übermittelt.
+          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
+          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
+          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
+          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Facebook (%{facebook}).
+        nested_text_three: |
+          Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
+          600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
+          Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an
+          Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Twitter (%{twitter}).
+        nested_text_two: |
+          Wir verwenden Social Plugins von Google. Klicken Sie auf den
+          Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an
+          Google in die USA übermittelt und Ihrem Google-Konto zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch Google,
+          über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
+          Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
+          (%{google}).
+        nested_title_four: 5.4. Whats App
+        nested_title_one: 5.1 Facebook
+        nested_title_three: 5.3 Twitter
+        nested_title_two: 5.2 Google+
+        text: |
+          Auf dieser Webseite werden Plugins von sozialen Netzwerken nach den
+          folgenden Maßgaben verwendet:
+      chapter_four:
+        heading: 4. Einbindung von Diensten Dritter
+        text: |
+          Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
+          Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
+          davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner
+          herstellen können und damit Ihre IP-Adresse erhalten. Nähere
+          Informationen zur Erhebung und Nutzung der Daten durch die
+          Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
       chapter_one:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: |
@@ -414,56 +904,55 @@ ar:
           gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter
           nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung
           zusenden).
-      chapter_two:
+      chapter_seven:
         heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
-        text: |
-          Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
-          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
-          freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
-          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
-          unter Umständen weitere personenbezogene Daten übermitteln, speichern
-          und nutzen wir diese Angaben nur zur Erbringung der jeweils
-          angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
-          Zusendung unseres Newsletters).
-        nested_title_one: 2.1 Kontaktformular
+          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
         nested_text_one: |
-          Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
-          Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
-          zur Erbringung der jeweils angefragten Leistung verwenden.
-        nested_title_two: 2.2 Newsletter-Anmeldung
+          Für den Versand unseres Newsletters
+          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
+          einem Unternehmen der The Rocket Science Group, LLC aus den USA
+          zurück. Dort erfolgt die Datenverarbeitung für uns streng
+          weisungsgebunden als technische Dienstleistung im Rahmen einer
+          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
+          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
+          verpflichtet sind.
         nested_text_two: |
-          Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
-          gestellten personenbezogenen Daten werden wir nutzen, um Ihnen
-          gelegentlich E-Mails mit Informationen über neue oder spezielle
-          Angebote zuzusenden.
-        nested_title_three: 2.3 Standortdaten
-        nested_text_three: |
-          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
-          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
-          berechnet der Hersteller Ihres Browsers anhand bestimmter
-          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
-          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
-          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
-          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
-          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
-          Nutzungsbestimmungen Ihres Browsers.
+          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
+          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
+          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
+          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
+          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
+          Verarbeitung von Daten. Bitte beachten Sie auch die
+          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
+          Verwendung des Service-Portals ist mindestens die Angabe einer
+          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
+          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
+          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
+          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
+          optional und dient der Verbesserung und Beschleunigung unseres
+          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
+          Datenspeicherung im externen System von Freshdesk nicht einverstanden
+          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
+          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
+        nested_title_one: 7.1. MailChimp/Mandrill
+        nested_title_two: 7.2. Freshdesk
+        text: |
+          Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
+          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
+          elektronische und organisatorische Schutzprozesse eingerichtet, die
+          die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
+          nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
+          der vorstehenden Regelung sind unsere Dienstleistungspartner, die
+          wir zur Abwicklung unserer Leistungen benötigen.
+      chapter_six:
+        heading: 6. Datenlöschung
+        text: |
+          Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
+          ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
+          Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
+          weitergehenden Speicherung verpflichtet sind.
       chapter_three:
         heading: 3. Informationen über Ihr Nutzungsverhalten
-        text: |
-          Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
-          anpassen möchten, benötigen wir Informationen über das allgemeine
-          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
-          welche wir zur Ermöglichung der Inanspruchnahme unseres
-          Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
-          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
-          den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
-          (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
-          Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
-          oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
-          Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
-          können Sie jederzeit widersprechen.
-        nested_title_one: 3.1 Analyse
         nested_text_one: |
           Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
           Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
@@ -521,7 +1010,6 @@ ar:
           %{optimizely_privacy}. Sie können das Optimizely-Tracking
           jederzeit deaktivieren, indem Sie der Anleitung auf
           %{optimizely_optout} folgen
-        nested_title_two: 3.2 Cookies
         nested_text_two: |
           Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
           werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
@@ -547,306 +1035,304 @@ ar:
           Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir
           möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
           Funktionsfähigkeit dieser Webseite beeinträchtigen können.
-      chapter_four:
-        heading: 4. Einbindung von Diensten Dritter
+        nested_title_one: 3.1 Analyse
+        nested_title_two: 3.2 Cookies
         text: |
-          Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
-          Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
-          davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner
-          herstellen können und damit Ihre IP-Adresse erhalten. Nähere
-          Informationen zur Erhebung und Nutzung der Daten durch die
-          Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
-      chapter_five:
-        heading: 5. Social Media Plugins
-        text: |
-          Auf dieser Webseite werden Plugins von sozialen Netzwerken nach den
-          folgenden Maßgaben verwendet:
-        nested_title_one: 5.1 Facebook
-        nested_text_one: |
-          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
-          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
-          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
-          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
-          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
-          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
-          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
-          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
-          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
-          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
-          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
-          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
-          diese Information an Ihr Facebook-Profil in die USA übermittelt.
-          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
-          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
-          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
-          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
-          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
-          Facebook (%{facebook}).
-        nested_title_two: 5.2 Google+
-        nested_text_two: |
-          Wir verwenden Social Plugins von Google. Klicken Sie auf den
-          Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
-          Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
-          nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind
-          und auf den Button klicken, werden Information über Ihr
-          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an
-          Google in die USA übermittelt und Ihrem Google-Konto zugeordnet.
-          Nähere Informationen zur Erhebung und Nutzung der Daten durch Google,
-          über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
-          Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
-          (%{google}).
-        nested_title_three: 5.3 Twitter
-        nested_text_three: |
-          Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
-          600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
-          Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
-          Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
-          nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind
-          und auf den Button klicken, werden Information über Ihr
-          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an
-          Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet.
-          Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
-          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
-          Twitter (%{twitter}).
-        nested_title_four: 5.4. Whats App
-        nested_text_four: |
-          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
-          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
-          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
-          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
-          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
-          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
-          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
-          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
-          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
-          wurde.
-      chapter_six:
-        heading: 6. Datenlöschung
-        text: |
-          Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
-          ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
-          Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
-          weitergehenden Speicherung verpflichtet sind.
-      chapter_seven:
+          Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
+          anpassen möchten, benötigen wir Informationen über das allgemeine
+          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
+          welche wir zur Ermöglichung der Inanspruchnahme unseres
+          Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
+          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
+          den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
+          (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
+          Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
+          oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
+          Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
+          können Sie jederzeit widersprechen.
+      chapter_two:
         heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
-        text: |
-          Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
-          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
-          elektronische und organisatorische Schutzprozesse eingerichtet, die
-          die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
-          nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
-          der vorstehenden Regelung sind unsere Dienstleistungspartner, die
-          wir zur Abwicklung unserer Leistungen benötigen.
-        nested_title_one: 7.1. MailChimp/Mandrill
+          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
         nested_text_one: |
-          Für den Versand unseres Newsletters
-          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
-          einem Unternehmen der The Rocket Science Group, LLC aus den USA
-          zurück. Dort erfolgt die Datenverarbeitung für uns streng
-          weisungsgebunden als technische Dienstleistung im Rahmen einer
-          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
-          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
-          verpflichtet sind.
-        nested_title_two: 7.2. Freshdesk
+          Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
+          Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
+          zur Erbringung der jeweils angefragten Leistung verwenden.
+        nested_text_three: |
+          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
+          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
+          berechnet der Hersteller Ihres Browsers anhand bestimmter
+          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
+          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
+          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
+          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
+          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
+          Nutzungsbestimmungen Ihres Browsers.
         nested_text_two: |
-          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
-          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
-          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
-          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
-          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
-          Verarbeitung von Daten. Bitte beachten Sie auch die
-          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
-          Verwendung des Service-Portals ist mindestens die Angabe einer
-          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
-          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
-          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
-          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
-          optional und dient der Verbesserung und Beschleunigung unseres
-          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
-          Datenspeicherung im externen System von Freshdesk nicht einverstanden
-          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
-          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
-      chapter_eight:
-        heading: 8. Recht auf Widerspruch und Ansprechpartner
+          Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
+          gestellten personenbezogenen Daten werden wir nutzen, um Ihnen
+          gelegentlich E-Mails mit Informationen über neue oder spezielle
+          Angebote zuzusenden.
+        nested_title_one: 2.1 Kontaktformular
+        nested_title_three: 2.3 Standortdaten
+        nested_title_two: 2.2 Newsletter-Anmeldung
         text: |
-          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
-          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
-          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
-          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
-          folgenden Link klicken:
-          %{google_optout}.
-        nested_text_second_paragraph: |
-          Ihre Fragen zum
-          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
-          Beschwerden oder Ähnliches richten Sie bitte an:
-    impressum:
-      title: "هيئة التحرير"
-      heading: "هيئة التحرير"
-      responsible_html: |
-        مجلس الإدارة<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (مسئول عن محتويات صفحة الإنترنت)
-    about:
-      title: "Über Uns"
-      heading: Wer steckt hinter clarat?
-      text: |
-        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
-        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
-        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
-        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
-        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
-        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
-        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
-        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
-        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
-        Einfach Hilfe finden. Für Familien auf clarat family. Und für
-        Flüchtlinge auf clarat refugees.
-      amina: |
-        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
-        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
-        Prima Estate von Erlend Oye.
-      andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
-      astrid: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
-        The Roots feat. Erykah Badu.
-      anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
-      basti: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
-        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
-        The Mirror von Michael Jackson.
-      bettina: |
-        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
-        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
-        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
-        Lieblingssong ist Elias von Dispatch.
-      elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
-      franziska: |
-        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
-        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
-        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Explanations von Selah Sue.
-      janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
-      janne: |
-        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
-        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
-        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
-        Sweat von Ry X.
-      jens: |
-        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
-        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
-        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
-        Sein Lieblingssong ist 2B2 von Lambchop.
-      jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
-      julia: |
-        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
-        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
-        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
-        Lieblingssong ist Reckoner von Radiohead.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
-      katinka: |
-        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
-        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
-        Cat Power.
-      konstantin: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
-        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
-      lavinia: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
-      laura: |
-        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
-        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
-        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
-        ist Paint It Black von den Rolling Stones.
-      line: |
-        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
-        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
-        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
-        den Rolling Stones.
-      lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
-      marcus: |
-        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
-        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
-        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
-        Lieblingssong ist Hysteria von MUSE.
-      nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
-      nils: |
-        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
-        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
-        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
-        Jein von Fettes Brot.
-      stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
-      tine: |
-        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
-        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
-        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Survive It von Ghostpoet.
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+          Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
+          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
+          freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
+          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
+          unter Umständen weitere personenbezogene Daten übermitteln, speichern
+          und nutzen wir diese Angaben nur zur Erbringung der jeweils
+          angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
+          Zusendung unseres Newsletters).
+      heading: Datenschutzhinweise
+      intro_first_part: |
+        Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
+        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
+        Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
+        wir personenbezogene Daten ausschließlich im Rahmen der geltenden
+        Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: |
+        Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
+        Verwendung personenbezogener Daten unterrichten. Sie können diese
+        Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
+        Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
+        Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
+        Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
     shared:
       address:
+        email: |
+          %{mailto}
+        fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat
         name2: Projekt der Benckiser Stiftung Zukunft
         street: Französische Straße 47
-        zip_city: 10117 Berlin
         telephone: Tel +49 (0)30 55 57 96 00
-        fax: Fax +49 (0)30 55 57 96 09 9
-        email: |
-          %{mailto}
+        zip_city: 10117 Berlin
+  section_1:
+    heading: 
+    question_1:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_10:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_11:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_12:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_13:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_2:
+      answer: 
+      question: 
+    question_3:
+      answer: 
+      link_1:
+        class: 
+        name: 
+        url: 
+        var: 
+      question: 
+    question_4:
+      answer: 
+      question: 
+    question_5:
+      answer: 
+      question: 
+    question_6:
+      answer: 
+      question: 
+    question_7:
+      answer: 
+      question: 
+    question_8:
+      answer: 
+      link_1:
+        class: 
+        name: 
+        url: 
+        var: 
+      question: 
+    question_9:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      link_2:
+        name: 
+        target: 
+        url: 
+        var: 
+      link_3:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+  section_2:
+    heading: 
+    question_1:
+      anchor: 
+      answer: 
+      question: 
+    question_10:
+      answer: 
+      link_1:
+        class: 
+        name: 
+        url: 
+        var: 
+      link_2:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_11:
+      answer: 
+      question: 
+    question_12:
+      answer: 
+      question: 
+    question_2:
+      answer: 
+      question: 
+    question_3:
+      answer: 
+      question: 
+    question_4:
+      answer: 
+      question: 
+    question_5:
+      anchor: 
+      answer: 
+      question: 
+    question_6:
+      answer: 
+      question: 
+    question_7:
+      answer: 
+      question: 
+    question_8:
+      answer: 
+      question: 
+    question_9:
+      answer: 
+      link_1:
+        class: 
+        name: 
+        url: 
+        var: 
+      question: 
+  section_3:
+    heading: 
+    question_1:
+      answer: 
+      question: 
+    question_2:
+      answer: 
+      question: 
+    question_3:
+      answer: 
+      question: 
+    question_4:
+      answer: 
+      question: 
+    question_5:
+      answer: 
+      question: 
+    question_6:
+      answer: 
+      question: 
+  section_4:
+    heading: 
+    question_1:
+      anchor: 
+      answer: 
+      question: 
+    question_2:
+      answer: 
+      question: 
+    question_3:
+      answer: 
+      question: 
+  section_5:
+    heading: 
+    question_1:
+      answer: 
+      question: 
+    question_2:
+      answer: 
+      question: 
+    question_3:
+      answer: 
+      question: 
+    question_4:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_5:
+      answer: 
+      question: 
+    question_6:
+      answer: 
+      question: 
+    question_7:
+      answer: 
+      link_1:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
+    question_8:
+      answer: 
+      link_1:
+        class: 
+        name: 
+        url: 
+        var: 
+      link_2:
+        name: 
+        target: 
+        url: 
+        var: 
+      question: 
   shareds:
     forms:
       fill_field: "من فضلك إملأ هذه الخانة"
@@ -859,41 +1345,20 @@ ar:
         لذلك  يفضل أن تلقى نظرة على النص الألماني
   subscriptions:
     create:
+      error: |
+        من فضلك إدخل عنوان بريد إليكتروني صحيح
       success: |
         شكرا جزيلا؛ لقد قمنا توا بإرسال رابط تأكيد
         على عنوان البريد الإليكتروني الخاص بك
-      error: |
-        من فضلك إدخل عنوان بريد إليكتروني صحيح
     shared:
       new:
-        placeholder: " البريد الإليكتروني"
         button: "الإشتراك في المجموعة الإخبارية"
+        placeholder: " البريد الإليكتروني"
   update_requests:
     create:
       success: |
         شكرا؛ لقد وصلتنا رسالتك
         وسوف نتواصل معك بمجرد أن يكون لنا نشاط بالقرب منك
     new:
-      email_placeholder: "عنوان البريد الإليكتروني"
       button: "الرسالة وصلت"
-  opening:
-    display_string:
-      appointment: "حسب الإتفاق"
-      time_frame: "%{open} - %{close}"
-      time_format: " %H:%M ساعة "
-      midnight_exception: 24:00 ساعة
-  contacts:
-    new:
-      contact_heading: "ماذا تريد أن تخبرنا؟"
-    create:
-      success: "تم إرسال الرسالة بنجاح"
-    shared:
-      new:
-        send_us_a_message: "اكتب لنا رسالة"
-        name_placeholder: "الإسم (فرض)"
-        email_placeholder:
-          required:
-            :true: "البريد الإليكتروني (فرض)"
-            :false: "البريد الإليكتروني (إختياري)"
-        message_placeholder: "اكتب رسالة (فرض)"
-        send: "ارسال"
+      email_placeholder: "عنوان البريد الإليكتروني"

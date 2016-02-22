@@ -163,10 +163,10 @@ tr:
           answer: 
           question: 
         question_5:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
         question_6:
-          answer: 
+          answer: NOTRANSLATE
           question: 
       section_4:
         heading: 
@@ -435,6 +435,7 @@ tr:
       section:
         family: 
         refugees: 
+  heading: 
   js:
     ajax_error:
       error: Arama hatası
@@ -1288,6 +1289,29 @@ tr:
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
+  routes:
+    '404': 
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    new: 
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    unsubscribe: 
+    update_requests: 
+  section_1:
+    heading: 
+  section_2:
+    heading: 
+  section_3:
+    heading: 
+  section_4:
+    heading: 
+  section_5:
+    heading: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1298,6 +1322,19 @@ tr:
         Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
         Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
         Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.
+  simple_form:
+    hints:
+      search_form:
+        faq:
+          query: 
+          search_location: 
+      subscription:
+        faq:
+          email: 
+    required:
+      html: 
+      mark: 
+      text: 
   subscriptions:
     create:
       error: |

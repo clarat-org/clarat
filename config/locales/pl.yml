@@ -163,11 +163,11 @@ pl:
           answer: 
           question: 
         question_5:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
         question_6:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
       section_4:
         heading: 
         question_1:
@@ -436,6 +436,7 @@ pl:
       section:
         family: 
         refugees: 
+  heading: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1341,6 +1342,29 @@ pl:
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
+  routes:
+    '404': 
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    new: 
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    unsubscribe: 
+    update_requests: 
+  section_1:
+    heading: 
+  section_2:
+    heading: 
+  section_3:
+    heading: 
+  section_4:
+    heading: 
+  section_5:
+    heading: 
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1351,6 +1375,19 @@ pl:
         Diese Übersetzung wurde von Google Translate automatisch gemacht.
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
+  simple_form:
+    hints:
+      search_form:
+        faq:
+          query: 
+          search_location: 
+      subscription:
+        faq:
+          email: 
+    required:
+      html: 
+      mark: 
+      text: 
   subscriptions:
     create:
       error: |

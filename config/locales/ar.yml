@@ -163,11 +163,11 @@ ar:
           answer: 
           question: 
         question_5:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
         question_6:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
       section_4:
         heading: 
         question_1:
@@ -436,6 +436,7 @@ ar:
       section:
         family: 
         refugees: 
+  heading: 
   js:
     ajax_error:
       error: "خطأ في البحث"
@@ -1335,6 +1336,29 @@ ar:
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
+  routes:
+    '404': 
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    new: 
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    unsubscribe: 
+    update_requests: 
+  section_1:
+    heading: 
+  section_2:
+    heading: 
+  section_3:
+    heading: 
+  section_4:
+    heading: 
+  section_5:
+    heading: 
   shareds:
     forms:
       fill_field: "من فضلك إملأ هذه الخانة"
@@ -1345,6 +1369,19 @@ ar:
         الترجمة تتم بشكل تلقائي من خلال برنامج جوجل للترجمة.
         حيث أنه يوجد في الغالب أخطاءا لغوية. ومن الممكن أيضا أن تبدو الترجمة غريبة ومضحكة
         لذلك  يفضل أن تلقى نظرة على النص الألماني
+  simple_form:
+    hints:
+      search_form:
+        faq:
+          query: 
+          search_location: 
+      subscription:
+        faq:
+          email: 
+    required:
+      html: 
+      mark: 
+      text: 
   subscriptions:
     create:
       error: |

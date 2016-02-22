@@ -1842,39 +1842,7 @@ de:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: 
-  simple_form:
-    hints:
-      search_form:
-        home:
-          query: 
-          search_location: 
-        index:
-          query: 
-          search_location: 
-      subscription:
-        home:
-          email: 
-        index:
-          email: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
-  routes:
-    '404': 404
-    datenschutzhinweise: datenschutzhinweise
-    definitions: definitions
-    emails: emails
-    new: new
-    preview: preview
-    rechtliche-hinweise: rechtliche-hinweise
-    search_locations: search_locations
-    subscribe: subscribe
-    subscriptions: subscriptions
-    unsubscribe: unsubscribe
-    update_requests: update_requests

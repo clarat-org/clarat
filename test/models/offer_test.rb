@@ -20,4 +20,21 @@ describe Offer do
       )
     end
   end
+
+  describe 'language_filters' do
+    before do
+      LanguageFilter.create name: 'Litauisch', identifier: 'lit'
+      LanguageFilter.create name: 'Bosnisch', identifier: 'bos'
+      LanguageFilter.create name: 'Kikuyu', identifier: 'kik'
+      offers(:basic).language_filters = LanguageFilter.all
+    end
+
+    it 'should correctly return fixed sorted language_filters' do
+      offers(:basic).language_filters_fixed.must_equal(%w(deu eng))
+    end
+
+    it 'should correctly return the remaining language_filters sorted by name' do
+      offers(:basic).language_filters_without_fixed.must_equal(%w(bos kik lit))
+    end
+  end
 end

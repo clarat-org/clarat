@@ -1,6 +1,0 @@
-en:
-  opening:
-    display_string:
-      appointment: "by appointment"
-      time_frame: "%{open} - %{close}"
-      time_format: "%l:%M %P"

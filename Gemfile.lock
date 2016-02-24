@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: be18ac805ac8f3c472e9a2ceca5d99ca1fb3d097
+  revision: 4c51f9dff9866bf995ca1451db18d22e1903d728
   branch: feature/643-frontend-offer-stamp
   specs:
     clarat_base (0.1.4)
@@ -35,7 +35,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.8.0)
+    aasm (4.9.0)
     actionmailer (4.1.14.1)
       actionpack (= 4.1.14.1)
       actionview (= 4.1.14.1)
@@ -201,7 +201,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    geocoder (1.3.0)
+    geocoder (1.3.1)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -274,7 +274,7 @@ GEM
       railties (>= 3.0.0, < 5.0.0)
     metaclass (0.0.4)
     method_source (0.8.2)
-    mime-types (2.99)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     minitest-capybara (0.7.2)

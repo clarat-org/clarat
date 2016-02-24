@@ -92,60 +92,6 @@ de:
         zero: "Keine Telefonberatungen und Onlineangebote"
         one: "Eine Telefonberatung oder ein Onlineangebot"
         other: "%{count} Telefonberatungen und Onlineangebote"
-      stamp:
-        age:
-          of_child: "Alter des Kindes:"
-          from: "ab"
-          to: "bis"
-          suffix: "Jahre"
-        target_audience:
-          prefix: "für "
-          family_pregnant_woman: "Schwangere"
-          family_acquaintances: "Bekannte und Verwandte"
-          family_everyone: "Alle"
-          family_pregnant_with_child: "Schwangere mit Kind"
-          family_children:
-            default: "Kinder"
-            adolescents: "Jugendliche"
-            and_adolescents: "Kinder und Jugendliche"
-            male: "Jungs"
-            female: "Mädchen"
-          family_parents:
-            default: "Eltern"
-            male:
-              default: "Mütter"
-              male: "Mütter von Söhnen"
-              female: "Mütter von Töchtern"
-            female:
-              default: "Väter"
-              male: "Väter von Söhnen"
-              female: "Väter von Töchtern"
-          family_nuclear_family:
-            default: "Familien"
-            male:
-              default: "Mütter mit Kind"
-              male: "Mütter mit Söhnen"
-              female: "Mütter mit Töchtern"
-            female:
-              default: "Väter mit Kind"
-              male: "Väter mit Söhnen"
-              female: "Väter mit Töchtern"
-            special_male: "Familien mit Jungs"
-            special_female: "Familien mit Mädchen"
-          refugees_children: "geflüchtete Kinder"
-          refugees_adolescents: "geflüchtete Jugendliche"
-          refugees_children_and_adolescents: "geflüchtete Kinder und Jugendliche"
-          refugees_umf: "unbegleitete minderjährige Flüchtlinge"
-          refugees_ujf: "unbegleitete junge Flüchtlinge"
-          refugees_families: "geflüchtete Familien"
-          refugees_pre_asylum_procedure: "Flüchtlinge vor dem Asylantrag"
-          refugees_asylum_procedure: "Flüchtlinge im Asylverfahren"
-          refugees_deportation_decision: "Flüchtlinge mit Abschiebebescheid"
-          refugees_toleration_decision: "Flüchtlinge mit Duldung"
-          refugees_residence_permit: "Flüchtlinge mit Aufenthaltserlaubnis"
-          refugees_registered: "registrierte Flüchtlinge"
-          refugees_parents: "geflüchtete Eltern"
-          refugees_general: "Flüchtlinge"
 
     categories_sidebar:
       all_categories: "Alle Kategorien"

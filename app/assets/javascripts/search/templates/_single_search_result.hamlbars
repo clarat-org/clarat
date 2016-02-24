@@ -8,7 +8,7 @@
 
     %section.Listing-results__stamp
       / TODO: revert to organization_display_name and show stamp elsewhere!
-      = hb 'stamp' # = hb 'organization_display_name'
+      = hb "stamp" # = hb 'organization_display_name'
 
       %button.Listing-results__expander{'aria-toggle' => 'false'} Expand
 

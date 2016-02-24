@@ -616,14 +616,15 @@ en:
             searching for help can find exactly the help they need.
           question: Why does one of my organization’s offering turn into several offerings on clarat?
         question_6:
-          answer: |
+          answer: |-
             There are many help and support offerings for children, adolescents,
             families, and refugees in Germany. Since clarat is still under
             construction, it is possible that we have not yet been able to include
             all of your organization’s offerings on clarat, or we may have decided
             that not all of your organization’s offerings can be included on clarat
-            at this time. on <b>clarat family</b> you can only find:
+            at this time.
             <p>
+            On <b>clarat family</b> you can only find:
             <ul>
             <li>
             offerings that help people with problems
@@ -902,6 +903,11 @@ en:
       section:
         family: 
         refugees: 
+  formtastic:
+    hints:
+      update_request:
+        index:
+          email: 
   js:
     ajax_error:
       error: Search error
@@ -1849,12 +1855,42 @@ en:
         In that case you should have a look at the German original.
   simple_form:
     hints:
+      contact:
+        new:
+          email: 
+          message: 
+          name: 
       search_form:
+        about:
+          query: 
+          search_location: 
         faq:
           query: 
           search_location: 
+        home:
+          query: 
+          search_location: 
+        index:
+          query: 
+          search_location: 
+        new:
+          query: 
+          search_location: 
+        not_found:
+          query: 
+          search_location: 
       subscription:
+        about:
+          email: 
         faq:
+          email: 
+        home:
+          email: 
+        index:
+          email: 
+        new:
+          email: 
+        not_found:
           email: 
     required:
       html: 

@@ -436,6 +436,11 @@ ar:
       section:
         family: 
         refugees: 
+  formtastic:
+    hints:
+      update_request:
+        index:
+          email: 
   js:
     ajax_error:
       error: "خطأ في البحث"
@@ -1360,12 +1365,42 @@ ar:
         لذلك  يفضل أن تلقى نظرة على النص الألماني
   simple_form:
     hints:
+      contact:
+        new:
+          email: 
+          message: 
+          name: 
       search_form:
+        about:
+          query: 
+          search_location: 
         faq:
           query: 
           search_location: 
+        home:
+          query: 
+          search_location: 
+        index:
+          query: 
+          search_location: 
+        new:
+          query: 
+          search_location: 
+        not_found:
+          query: 
+          search_location: 
       subscription:
+        about:
+          email: 
         faq:
+          email: 
+        home:
+          email: 
+        index:
+          email: 
+        new:
+          email: 
+        not_found:
           email: 
     required:
       html: 

@@ -435,7 +435,6 @@ tr:
       section:
         family: 
         refugees: 
-  heading: 
   js:
     ajax_error:
       error: Arama hatası
@@ -1302,16 +1301,6 @@ tr:
     subscriptions: 
     unsubscribe: 
     update_requests: 
-  section_1:
-    heading: 
-  section_2:
-    heading: 
-  section_3:
-    heading: 
-  section_4:
-    heading: 
-  section_5:
-    heading: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

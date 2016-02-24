@@ -902,7 +902,6 @@ en:
       section:
         family: 
         refugees: 
-  heading: 
   js:
     ajax_error:
       error: Search error
@@ -1838,16 +1837,6 @@ en:
     subscriptions: 
     unsubscribe: 
     update_requests: 
-  section_1:
-    heading: 
-  section_2:
-    heading: 
-  section_3:
-    heading: 
-  section_4:
-    heading: 
-  section_5:
-    heading: 
   shareds:
     forms:
       fill_field: Please fill out this field

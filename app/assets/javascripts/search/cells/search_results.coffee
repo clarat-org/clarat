@@ -89,10 +89,11 @@ class Clarat.Search.Cell.SearchResults
 
   # Add additional values to search results (for hamlbars)
   addValuesToSearchResults: =>
+    stamp_variable_name = '_stamp_' + $('body').data('section')
     for item in (@mainResults.hits)
       item.organization_display_name =
           if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
-      item.stamp = if $('body').data('section') == 'family' then item._stamp_family else item._stamp_refugees
+      item.current_stamp = item[stamp_variable_name]
 
     for item in (@remoteResults.hits)
-      item.stamp = if $('body').data('section') == 'family' then item._stamp_family else item._stamp_refugees
+      item.current_stamp = item[stamp_variable_name]

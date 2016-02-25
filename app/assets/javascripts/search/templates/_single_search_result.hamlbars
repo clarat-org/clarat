@@ -11,7 +11,7 @@
 
     %section.Listing-results__stamp
       / TODO: revert to organization_display_name and show stamp elsewhere!
-      = hb 'current_stamp' # = hb 'organization_display_name'
+      = hb 'language_explanation' # = hb 'organization_display_name'
 
       %button.Listing-results__expander{'aria-toggle' => 'false'}
         = hb '@root.toggle_search_result_details'

@@ -94,6 +94,19 @@ class Clarat.Search.Cell.SearchResults
       item.organization_display_name =
           if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
       item.current_stamp = item[stamp_variable_name]
+      item.language_explanation = @generateLanguageExplanation(item._language_filters)
 
     for item in (@remoteResults.hits)
       item.current_stamp = item[stamp_variable_name]
+      item.language_explanation = @generateLanguageExplanation(item._language_filters)
+
+  generateLanguageExplanation: (language_filters) ->
+    return if language_filters.length <= 1
+    output = I18n.t 'js.search_results.language_explanation.prefix'
+    for filter, index in language_filters
+      output += I18n.t('js.shared.current_and_original_locale.' + filter).split(' - ')[0]
+      if index < language_filters.length - 2
+        output += ', '
+      else if index < language_filters.length - 1
+        output += I18n.t 'js.search_results.language_explanation.connector'
+    output += I18n.t 'js.search_results.language_explanation.suffix'

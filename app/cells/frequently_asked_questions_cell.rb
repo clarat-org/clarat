@@ -14,10 +14,10 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def question s_id, q_id
     link_options = link_options_hash s_id, q_id
-    question_hash = I18n.t ".section_#{s_id}.question_#{q_id}"
+    question_hash = t "section_#{s_id}.question_#{q_id}"
     @anchor = question_hash[:anchor] ? question_hash[:anchor] : ''
     @question = question_hash[:question]
-    @answer = I18n.t ".section_#{s_id}.question_#{q_id}.answer", link_options
+    @answer = t "section_#{s_id}.question_#{q_id}.answer", link_options
     render
   end
 
@@ -25,23 +25,21 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def section_count
     count = 1
-    count += 1 while I18n.exists?(".section_#{count}", I18n.locale)
+    count += 1 while t_exists?("section_#{count}")
     count
   end
 
   def question_count section_id
     count = 1
-    count += 1 while I18n.exists?(".section_#{section_id}.question_#{count}",
-                                  I18n.locale)
+    count += 1 while t_exists?("section_#{section_id}.question_#{count}")
     count
   end
 
   def link_options_hash index, q_id
     l_id = 1
     options_hash = {}
-    while I18n.exists?(".section_#{index}.question_#{q_id}.link_#{l_id}.var",
-                       I18n.locale)
-      link_hash = I18n.t(".section_#{index}.question_#{q_id}.link_#{l_id}")
+    while t_exists?("section_#{index}.question_#{q_id}.link_#{l_id}.var")
+      link_hash = t("section_#{index}.question_#{q_id}.link_#{l_id}")
       target = link_hash[:target] ? link_hash[:target] : ''
       klass = link_hash[:class] ? link_hash[:class] : ''
       options_hash[link_hash[:var].to_sym] =
@@ -49,5 +47,15 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
       l_id += 1
     end
     options_hash
+  end
+
+  # Helper method to load translation from correct path
+  def t locator, *args
+    I18n.t "cells.faq.#{locator}", *args
+  end
+
+  # Helper method to check for existence of translation in correct path
+  def t_exists? locator, locale
+    I18n.t("cells.faq.#{locator}", locale) != 'NOTRANSLATE'
   end
 end

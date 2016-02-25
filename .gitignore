@@ -64,6 +64,7 @@ tags
 .env
 Procfile.development
 .byebug_history
+config/initializers/localeapp.rb
 
 # staging only files
 .htaccess

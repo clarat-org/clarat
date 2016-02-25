@@ -1,6 +1,10 @@
 tr:
   routes:
-    offers: "Hizmetlerimiz"
+    offers: "hizmetlerimiz"
     users: "kullanıcılar"
     contacts: "iletişim"
     organizations: "organizasyonlar"
+    impressum: "impressum"
+    haeufige-fragen: "haeufige-fragen"
+    ueber-uns: "ueber-uns"
+    faq: "haeufige-fragen"

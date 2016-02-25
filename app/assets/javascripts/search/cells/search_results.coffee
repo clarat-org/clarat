@@ -19,6 +19,8 @@ class Clarat.Search.Cell.SearchResults
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     section: $('body').data('section')
     offers_path: location.pathname
+    toggle_search_result_details: 'Expand/Collapse'
+    globe_img: image_path('ico_globe.svg')
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

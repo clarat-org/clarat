@@ -2,6 +2,9 @@
   %h3.Listing-results__offer
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
+    %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', 'title' => 'fbfjkds hfjdsdfj hjkfdhjkshfjd  hjfdsjhfkjds', 'class' => ''}
+
+  -#= hb '@root.globe_img'
 
   / TODO: Refactor and rename
   %div.Listing-results__offerinfo
@@ -10,11 +13,27 @@
       / TODO: revert to organization_display_name and show stamp elsewhere!
       = hb 'current_stamp' # = hb 'organization_display_name'
 
-      %button.Listing-results__expander{'aria-toggle' => 'false'} Expand
+      %button.Listing-results__expander{'aria-toggle' => 'false'}
+        = hb '@root.toggle_search_result_details'
 
-    %section.Listing-results__meta
-      %h4.Listing-results__orga-display
-        = hb 'organization_display_name'
-      = hb 'if location_visible' do # only show address if visible
-        %span.Listing-results__address
-          = hb 'location_address'
+    = hb 'if location_visible' do
+      %section.Listing-results__meta.Listing-results__meta--with-address
+        %h4.Listing-results__orga-display
+          = hb 'organization_display_name'
+        %div.Listing-results__address{'itemscope'=> '', 'itemtype' => 'http://schema.org/ContactPoint'}
+          %div{'itemscope'=> '', 'itemtype' => 'http://schema.org/PostalAddress'}
+            = hb 'location_address'
+      = hb 'else'
+      %section.Listing-results__meta
+        %h4.Listing-results__orga-display
+          = hb 'organization_display_name'
+
+
+
+
+
+
+
+
+
+

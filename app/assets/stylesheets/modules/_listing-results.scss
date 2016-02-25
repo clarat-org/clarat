@@ -87,8 +87,7 @@
 .Listing-results__offer {
   @extend %roboto_bold;
   @extend %clarat_rounding_start;
-  background: $brand_yellow image-url('ico_globe.svg') no-repeat calc(100% - 5px) center;
-  background-size: 30px 30px;
+  background: $brand_yellow;
   padding: 7px 15px;
   min-height: 38px;
   font-size: 18px;
@@ -115,6 +114,15 @@
   }
 }
 
+.Listing-results__globe {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+
 .Listing-results__organization {
   display: inline-block;
   padding: 6px 15px;
@@ -131,10 +139,28 @@
 .Listing-results__orga-display {
   @extend %roboto_bold;
   margin-bottom: 0;
+  line-height: 1.65;
 }
 
 .Listing-results__expander {
+  @extend %hide_text;
   display: none;
+  width: 40px;
+  height: 24px;
+  background: transparent no-repeat center center;
+
+  &[aria-toggle='false'] {
+    background-image: image-url('ico_expand.svg');
+  }
+
+  &[aria-toggle='true'] {
+    background-image: image-url('ico_collapse.svg');
+  }
+
+  body.refugees &,
+  body.family & {
+    background-color: transparent;
+  }
 }
 
 .Listing-results__meta,
@@ -146,10 +172,21 @@
   padding: 4px;
 }
 
+.Listing-results__meta--with-address {
+  background: transparent image-url('gmaps_marker.svg') no-repeat left center;
+  background-size: auto 30px;
+  padding-left: 30px;
+}
+
+.Listing-results__address {
+  margin-bottom: 4px;
+}
+
 .Listing-results__stamp {
-  background: transparent image-url('ico_user.svg') no-repeat 4px center;
-  padding: 4px 4px 4px 30px;
-  background-size: 20px 20px;
+  background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
+  padding: 4px 4px 0 30px;
+  background-size: auto 20px;
+  line-height: 1.8;
 }
 
 

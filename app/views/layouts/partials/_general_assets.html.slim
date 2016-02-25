@@ -8,8 +8,8 @@ javascript:
   = javascript_include_tag 'vendor/modernizr.custom.js'
   = javascript_include_tag 'application'
   noscript
-    css:
-      .jsonly { display: none; }
+    style type="text/css"
+      | .jsonly { display: none; }
 
 = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
                          'places&language=de&v=3.exp'\

@@ -102,11 +102,11 @@ class Clarat.Search.Cell.SearchResults
 
   generateLanguageExplanation: (language_filters) ->
     return if language_filters.length <= 1
-    output = I18n.t 'js.search_results.language_explanation.prefix'
+    languages = ''
     for filter, index in language_filters
-      output += I18n.t('js.shared.current_and_original_locale.' + filter).split(' - ')[0]
+      languages += I18n.t('js.shared.current_and_original_locale.' + filter).split(' - ')[0]
       if index < language_filters.length - 2
-        output += ', '
+        languages += ', '
       else if index < language_filters.length - 1
-        output += I18n.t 'js.search_results.language_explanation.connector'
-    output += I18n.t 'js.search_results.language_explanation.suffix'
+        languages += ' ' + I18n.t('js.search_results.language_explanation.connector') + ' '
+    I18n.t('js.search_results.language_explanation.text', language_list: languages)

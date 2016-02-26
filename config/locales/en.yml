@@ -924,7 +924,7 @@ en:
     lang_list_toggle:
       less: Show fewer languages
       more: Show more languages
-    less_filter_options: 
+    less_filter_options: Show less filters
     location_required: |
       Please enter a location at which you want to search for help.
     map_info_window_multiple:
@@ -932,7 +932,7 @@ en:
       text: There are multiple results for this address.
       title: Multiple offers
     mobile_filter: Filter results
-    more_filter_options: 
+    more_filter_options: Show more filters
     query_field:
       example_placeholder: e.g. %{word}, …
       placeholder_words:
@@ -978,14 +978,14 @@ en:
         next: Next
     search_results:
       bridge: for the search term
-      enclosing: 
+      enclosing: found
       faq_anchor: here
       faq_text: 'If you have questions about our search you can find our FAQ '
       language_explanation:
         connector: and
         text: This offer is available in %{language_list}.
       map:
-        cooperation: 
+        cooperation: cooperation project
         enlarge_map: Enlarge map
         headline_small_map: Local offers on the map
       more: More remote offers
@@ -1894,7 +1894,7 @@ en:
       text: 
   subscriptions:
     create:
-      error: 
+      error: Please enter a valid email address.
       success: |
         Thank you! We just sent a confirmation link to your email address.
     shared:

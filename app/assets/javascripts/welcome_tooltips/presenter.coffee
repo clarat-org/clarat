@@ -4,8 +4,8 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
     @tooltips = $('.tooltip--welcome')
     @ttAdvancedSearch = $('.tooltip--advancedsearch')
-    @ttFrontWeltRefugees = $('.tooltip--welt-refugees')
-    @ttFrontWeltFamily = $('.tooltip--welt-family')
+    @ttWeltRefugees = $(' .tooltip--welt-refugees')
+    @ttWeltFamily = $(' .tooltip--welt-family')
     @world = if $('body.refugees').length then 'refugees' else 'family'
     @overlay = $('#qtip_welcome_overlay')
     @cloneContainer = $('#clone-container')
@@ -19,11 +19,14 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       'Clarat.ToggleAdvancedSearch::Toggle': 'hideOverlay'
 
   init: =>
-    @initFrontTooltips()
-    @initOfferIndexTooltip()
+
+    if $('body.template--pages-home').length
+      @initFrontTooltips()
+    else
+      @initNotFrontTooltips()
 
 
-  initOfferIndexTooltip: =>
+  initNotFrontTooltips: =>
     that = this
 
     @ttAdvancedSearch.qtip
@@ -48,16 +51,69 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           width: 22
           corner: 'bottom right'
 
+    @ttWeltRefugees.qtip
+      position:
+        my: 'top right'
+        at: 'bottom right'
+        effect: false
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that.showOverlay()
+        hide: ->
+          that.hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'top center'
+
+    @ttWeltFamily.qtip
+      position:
+        my: 'top right'
+        at: 'bottom right'
+        effect: false
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that.showOverlay()
+        hide: ->
+          that.hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'top center'
+
     unless @hasCookie()
 
-      if $('body.template--offers-index').length
+     unless $('body.template--pages-home').length
         @ttAdvancedSearch.qtip('api').show()
-        @highlightTooltip(@ttAdvancedSearch)
+
+        if @world == "refugees"
+          @ttWeltFamily.qtip('api').show()
+          @_highlightTooltip(@ttWeltFamily)
+        else
+          @ttWeltRefugees.qtip('api').show()
+          @_highlightTooltip(@ttWeltRefugees)
+
+        @_highlightTooltip(@ttAdvancedSearch)
+
 
     return
 
 
-  highlightTooltip: (elem) =>
+  _highlightTooltip: (elem) =>
 
     # Get original most imporant properties
     left = elem.offset().left
@@ -80,7 +136,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   initFrontTooltips: =>
     that = this
 
-    @ttFrontWeltRefugees.qtip
+    @ttWeltRefugees.qtip
       position:
         my: 'bottom center'
         at: 'top left'
@@ -106,7 +162,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           corner: 'bottom right'
 
 
-      @ttFrontWeltFamily.qtip
+      @ttWeltFamily.qtip
         position:
           my: 'bottom center'
           at: 'top right'
@@ -133,17 +189,13 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     unless @hasCookie()
 
-      if $('body.family.template--pages-home').length
+      if @world == "family"
+        @ttWeltRefugees.qtip('api').show()
+        @_highlightTooltip(@ttWeltRefugees)
 
-        @ttFrontWeltRefugees.qtip('api').show()
-        @highlightTooltip(@ttFrontWeltRefugees)
-
-
-      else if $('body.refugees.template--pages-home').length
-
-        @ttFrontWeltFamily.qtip('api').show()
-        @highlightTooltip(@ttFrontWeltFamily)
-
+      else
+        @ttWeltFamily.qtip('api').show()
+        @_highlightTooltip(@ttWeltFamily)
 
     return
 
@@ -166,7 +218,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     $('body').addClass 'overlay-active'
     @overlay.show()
     @cloneContainer.show()
-    @overlay.click () ->
+    @cloneContainer.click () ->
       that.hideOverlay()
 
 
@@ -175,8 +227,8 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @cloneContainer.hide()
     $('body').removeClass 'overlay-active'
     @ttAdvancedSearch.qtip('destroy')
-    @ttFrontWeltRefugees.qtip('destroy')
-    @ttFrontWeltFamily.qtip('destroy')
+    @ttWeltRefugees.qtip('destroy')
+    @ttWeltFamily.qtip('destroy')
 
 
 $(document).ready ->

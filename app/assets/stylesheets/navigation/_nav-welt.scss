@@ -23,7 +23,6 @@
   padding: 0;
   float: left;
 
-
   a {
     @extend %roboto_black;
     display: inline-block;
@@ -39,6 +38,10 @@
     min-width: 208px;
     line-height: 30px;
     border-bottom: 6px solid;
+
+    #clone-container & {
+      border-bottom: none;
+    }
 
     &#clarat--family {
       @extend %clarat_rounding_start;

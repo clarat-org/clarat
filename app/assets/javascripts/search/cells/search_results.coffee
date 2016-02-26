@@ -103,7 +103,8 @@ class Clarat.Search.Cell.SearchResults
       item.language_explanation = @generateLanguageExplanation(item._language_filters)
 
   generateLanguageExplanation: (language_filters) ->
-    return if language_filters.length <= 1
+    # dont show explanation when german is the only language
+    return if language_filters.length == 1 && language_filters[0] == 'deu'
     languages = ''
     for filter, index in language_filters
       languages += I18n.t('js.shared.current_and_original_locale.' + filter).split(' - ')[0]

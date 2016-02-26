@@ -2,7 +2,8 @@
   %h3.Listing-results__offer
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
-    %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', 'title' => 'fbfjkds hfjdsdfj hjkfdhjkshfjd  hjfdsjhfkjds', 'class' => ''}
+    = hb 'if language_explanation' do
+      %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', 'title' => '{{language_explanation}}', 'class' => ''}
 
   -#= hb '@root.globe_img'
 
@@ -10,8 +11,7 @@
   %div.Listing-results__offerinfo
 
     %section.Listing-results__stamp
-      / TODO: revert to organization_display_name and show stamp elsewhere!
-      = hb 'language_explanation' # = hb 'organization_display_name'
+      = hb 'current_stamp'
 
       %button.Listing-results__expander{'aria-toggle' => 'false'}
         = hb '@root.toggle_search_result_details'
@@ -27,13 +27,3 @@
       %section.Listing-results__meta
         %h4.Listing-results__orga-display
           = hb 'organization_display_name'
-
-
-
-
-
-
-
-
-
-

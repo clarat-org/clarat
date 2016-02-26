@@ -25,20 +25,20 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def section_count
     count = 1
-    count += 1 while t_exists?("section_#{count}", I18n.locale)
+    count += 1 while t_exists?("section_#{count}")
     count
   end
 
   def question_count section_id
     count = 1
-    count += 1 while t_exists?("section_#{section_id}.question_#{count}", I18n.locale)
+    count += 1 while t_exists?("section_#{section_id}.question_#{count}")
     count
   end
 
   def link_options_hash index, q_id
     l_id = 1
     options_hash = {}
-    while t_exists?("section_#{index}.question_#{q_id}.link_#{l_id}.var", I18n.locale)
+    while t_exists?("section_#{index}.question_#{q_id}.link_#{l_id}.var")
       link_hash = t("section_#{index}.question_#{q_id}.link_#{l_id}")
       target = link_hash[:target] ? link_hash[:target] : ''
       klass = link_hash[:class] ? link_hash[:class] : ''

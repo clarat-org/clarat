@@ -1920,6 +1920,9 @@ de:
           message: 
           name: 
       search_form:
+        faq:
+          query: 
+          search_location: 
         home:
           query: 
           search_location: 
@@ -1930,6 +1933,8 @@ de:
           query: 
           search_location: 
       subscription:
+        faq:
+          email: 
         home:
           email: 
         index:

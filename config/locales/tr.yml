@@ -1338,6 +1338,9 @@ tr:
           message: 
           name: 
       search_form:
+        faq:
+          query: 
+          search_location: 
         home:
           query: 
           search_location: 
@@ -1348,6 +1351,8 @@ tr:
           query: 
           search_location: 
       subscription:
+        faq:
+          email: 
         home:
           email: 
         index:

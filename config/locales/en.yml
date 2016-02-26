@@ -1872,6 +1872,9 @@ en:
           message: 
           name: 
       search_form:
+        faq:
+          query: 
+          search_location: 
         home:
           query: 
           search_location: 
@@ -1882,6 +1885,8 @@ en:
           query: 
           search_location: 
       subscription:
+        faq:
+          email: 
         home:
           email: 
         index:

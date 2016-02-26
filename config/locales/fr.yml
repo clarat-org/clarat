@@ -16,33 +16,33 @@ fr:
           answer: 
           link_1:
             name: 
-            target: 
-            url: 
-            var: 
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
           question: 
         question_11:
           answer: 
           link_1:
             name: 
-            target: 
-            url: 
-            var: 
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
           question: 
         question_12:
           answer: 
           link_1:
             name: 
-            target: 
-            url: 
-            var: 
+            target: _blank
+            url: https://github.com/clarat-org
+            var: link_to_github
           question: 
         question_13:
           answer: 
           link_1:
             name: 
-            target: 
+            target: _blank
             url: 
-            var: 
+            var: link_to_contact_form
           question: 
         question_2:
           answer: 
@@ -84,9 +84,9 @@ fr:
             var: 
           link_2:
             name: 
-            target: 
-            url: 
-            var: 
+            target: _blank
+            url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
+            var: link_to_bsz_movie
           link_3:
             name: 
             target: 

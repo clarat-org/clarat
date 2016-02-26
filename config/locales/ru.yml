@@ -3,102 +3,127 @@ ru:
     faq:
       heading: 
       section_1:
-        heading: 
+        heading: "Кто, как, что?"
         question_1:
-          answer: 
+          answer: |-
+            clarat - это портал, на котором находится информация о помощи. Мы помогаем тебе найти помощь. Но мы не даём советы. Для этого есть эксперты. И именно их  ты можешь у нас найти. Информация распределяется по категориям <b>clarat family</b> и <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            <b>clarat family</b> - предоставляет помощь детям, подросткам и семьям, имеющим проблемы и ищущим помощь в их округе. Здесь ты очень просто найдёшь помощь. Для тебя, твоей семьи и твоих друзей. И также для других знакомых детей, подростков и семей. Что clarat делает, ты можешь увидеть в %{link_to_family_movie}.
+            </li>
+            <li>
+            <b>clarat refugees</b> - предоставляет помощь беженцам, которые ищут помощь в их округе. Здесь ты очень просто найдёшь помощь. Даже если ты сам не беженец, но знаком с беженцами, которые ищут помощь.
+            </li>
+            </ul>
+            </p>
           link_1:
-            name: 
+            name: "фильме"
             target: 
             url: 
             var: 
-          question: 
+          question: "Что значит clarat?"
         question_10:
-          answer: 
+          answer: "Деньги для <b>clarat family</b> и <b>clarat refugees</b> поступают от фонда Бэнкизер, Будущее (%{link_to_bsz})."
           link_1:
             name: 
-            target: 
-            url: 
-            var: 
-          question: 
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: "Кто финансирует clarat?"
         question_11:
-          answer: 
+          answer: "<b>clarat family</b> и <b>clarat refugees</b> будет долго существовать. Потому что фонд Бэнкизер, Будущее (%{link_to_bsz}) продолжает финансировать оба портала. Здесь ты можешь и в ближайшие  годы найти помощь. Это действует в Берлине и вскоре в других больших городах и регионах, которые мы примем в clarat."
           link_1:
-            name: 
-            target: 
-            url: 
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
             var: 
-          question: 
+          question: "Как долго будет существовать clarat?"
         question_12:
-          answer: 
+          answer: "Программный код clarat общественно доступен всем. Ссылку к коду ты найдёшь %{link_to_github}."
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
-          question: 
+            name: "здесь"
+            target: _blank
+            url: https://github.com/clarat-org
+            var: link_to_github
+          question: "Программный код clarat общественно-доступный?"
         question_13:
-          answer: 
+          answer: "Пока что нет возможности скачать и переработать данные. Возможно в будущем это будет возможным. Но в этом мы ещё не уверены. Сейчас мы в основном собираем и сортируем данные. Если ты интересуешься такой возможностью, %{link_to_contact_form}."
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
-          question: 
+            name: "обратись к нам"
+            target: _blank
+            url: http://www.clarat.org/refugees/kontakt/new
+            var: link_to_contact_form
+          question: "Предлагает clarat возможность для передачи данных?"
         question_2:
-          answer: 
-          question: 
+          answer: "В Германии существует большой выбор предложений помощи. Для людей, которые срочно нуждаются в помощи. Но именно эту помощь очень часто трудно найти. Например потому что неизвестно, где её искать. Или неизвестно, к кому обратиться. Это мы хотим изменить."
+          question: "Почему существует clarat?"
         question_3:
-          answer: 
+          answer: "Напиши свою проблему и где ты ищешь помощь. И ты сразу же найдёшь подходящие возможности в твоей округе. Или телефонную помощь или помощь в интернете. %{ref_to_how_to_find_right_help}  мы тебе точно объясним как ты сможешь найти то, что ты ищешь. Если ты щёлкнешь мышью на одно из предложений, мы скажем тебя, что ты должен сделать дальше. Например можешь ли ты позвонить или прости прийти."
           link_1:
             class: 
             name: 
             url: 
-            var: 
-          question: 
+            var: "Здесь"
+          question: "Как работает clarat?"
         question_4:
-          answer: 
-          question: 
+          answer: clarat есть и будет бесплатным. Каждый может в категории <b>clarat family</b> бесплатно искать помощь для детей, подростков и семей. И так же каждый может в <b>clarat refugees</b> бесплатно искать помощь для беженцев.
+          question: "Поиск на странице clarat бесплатный?"
         question_5:
-          answer: 
-          question: 
+          answer: "Поиск на странице clarat всегда анонимный. Это значит что никто в clarat не узнает твоего имени и адреса."
+          question: "Поиск на станице clarat анонимный?"
         question_6:
-          answer: 
-          question: 
+          answer: "Мы регулярно проверяем актуальность информации на странице clarat. Потому что только так clarat может помочь детям, подросткам, семьям и беженцам. Если информация не актуальная, мы её обновляем. Это значит, что мы её заменяем."
+          question: "Информация на странице clarat актуальная?"
         question_7:
-          answer: 
-          question: 
+          answer: "Некоторой помощью в <b>clarat family</b> и в clarat refugees ты можешь воспользоваться ото всюду. Независимо от того, где ты живёшь. Есть помощь, которую ты можешь получить по телефону или в интернете. Это значит, по электронной почте, в чате или в форуме. Также есть помощь, которой ты можешь воспользоваться там где ты живёшь. В clarat refugees ты найдёшь помощь по всей Германии. <b>clarat family</b> мы начали в Берлине. Здесь ты найдёшь много помощи. Мы дальше собираем информацию. Вскоре clarat тоже будет предлагать помощь в других больших городах Германии."
+          question: "Существует clarat во всей Германии?"
         question_8:
-          answer: 
+          answer: clarat помогает тебе найти помощь в твоей округе. Здесь ты найдёшь обзор всей возможной помощи по близости с одного взгляда. Кроме того, мы говорим тебе что точно ты должен/должна сделать чтобы получить помощь. Мы всегда пишем на упрощённом языке. Этот упрощенный стиль понятен всем. В clarat должны найти помощь даже те люди, которые не очень хорошо говорят по-немецки. Всю информацию ты можешь также прочитать на многих других языках. Если ты хочешь больше узнать об этом, нажми %{ref_to_how_many_languages}.
           link_1:
             class: 
             name: 
             url: 
             var: 
-          question: 
+          question: "Что особенного в clarat?"
         question_9:
-          answer: 
+          answer: |-
+            clarat это проект Фонда Бэнкизер, Будущее (%{link_to_bsz}). Это семейный фонд, который уже давно помогает детям и подросткам. И теперь clarat refugees также помогает беженцам. Здесь ты можешь посмотреть %{link_to_bsz_movie} и узнать больше о фонде.
+            Идея создать clarat возникла в середине 2014 года. Команда clarat существует с сентября 2014 года. Если ты хочешь больше узнать об этом, загляни %{link_to_about_us}.
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
           link_2:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: "фильм"
+            target: _blank
+            url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
+            var: link_to_bsz_movie
           link_3:
-            name: 
+            name: "сюда"
             target: 
             url: 
             var: 
-          question: 
+          question: "Кто организует clarat?"
       section_2:
-        heading: 
+        heading: "У тебя есть вопросы по поиску?"
         question_1:
           anchor: 
-          answer: 
-          question: 
+          answer: |-
+            clarat открыт для всех - при помощи одного клика ты решаешь между <b>clarat family</b> или <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            <b>clarat family</b> - для детей, молодежи и семей, которые нуждаются в помощи. Будь то проблемы в семье, с друзьями, в школе или где бы то ни было еще.
+            </li>
+            <li>
+            <b>clarat refugees</b> - для всех беженцев в Германии. Для беженцев-детей и молодых людей. Для беженцев-мужчин и женщин. Для семей беженцев. Т.е. для всех, кто бежал в Германию и поэтому нуждаются в помощи.
+            </li>
+            </ul>
+            </p>
+            В clarat так же могут обращаться те, кто хочет предложить пмощь. Например воспитатели, учителя или соседи и знакомые.
+          question: "Кто находит помощь в clarat?"
         question_10:
           answer: 
           link_1:
@@ -119,11 +144,45 @@ ru:
           answer: 
           question: 
         question_2:
-          answer: 
-          question: 
+          answer: |-
+            В <b>clarat family</b> ты найдешь различные предложения по поддержке. Они помогают в самых разных ситуациях и проблемах. Мы отсортировали их по темам:
+            <p>
+            <ul>
+            <li>
+            <b>Детская коляска - семейные проблемы</b><br>
+            Здесь ты найдешь помощь, если в твоей семье есть проблемы. Например при ссорах. И при многих других, как например тех, с которыми сталкиваешься, когда взролеешь. Либо воспитание детей. Здесь найдется помощь для каждогов  семье. Так же здесь есть много помощи детям и родителям.
+            </li>
+            <br>
+            <li>
+            <b>Сердце - здоровье</b><br>
+            Здесь ты найдешь помощь, например если тебе плохо, если ты болеешь. Либо если кто-либо в твоей семье болеет. Или если кто-то из вас брется с зависимостью. Так же здесь можно найти помощь при беременности.
+            </li>
+            <br>
+            <li>
+            <b>Книга - учеба и работа</b><br>
+            Здесь ты найдешь помощь, например если у тебя проблемы в школе. Либо в учебе. Так же ты найдешь здесь помощь в выборе будущей профессии. Либо при поиске курса немецкго языка.
+            </li>
+            <br>
+            <li>
+            <b>Указатель - заботы в повседневнеой жизни</b><br>
+            Здесь ты найдешь помощь, если у тебя маленькие или боьшие проблемы в повседневной жизни. Например если у тебя проблемы с деньгами. Или если ты живешь на улице. А так же, еси ты что-то ищешь, чем заняться в свободное время. Либо тебе нужна помощь заполнить документы и формуляры.
+            </li>
+            <br>
+            <li>
+            <b>Кулак - насилие</b><br>
+            Здесь ты найдешь помощь, например если кто-то тебя бьет или ты подвергаешься насилию. Ты так же найдешь здесь помощь, если ты сам стал агрессивным или совершил что-то плохое.
+            </li>
+            <br>
+            <li>
+            <b>Молния - острая необходимость</b><br>
+            Здесь ты быстро найдешь помощь, если ты в крайней нужде или беде. В предложениях помощи, где стоит <b>Днем и Ночью</b>, ты можешь обращаться в любое время суток.
+            </li>
+            </ul>
+            </p>
+          question: "По каким темам могу я найти помощь в clarat family?"
         question_3:
-          answer: 
-          question: 
+          answer: "В <b>clarat refugees</b> ты найдешь множество предложений помощи. Для тебя мы их упорядочили:\n<p>\n<ul>\n<li>\n<b>Параграф - убежище и право</b><br>\nЗдесь ты найдешь помощь, если у тебя есть вопросы по процессу рассмотрения заявлений для предоставления временного убежища или статуса беженца. Не важно, перед поачей заявления, во время или после. Например также, если у тебя право на кратковременное ограниченное пребывание в стране. Или если у тебя вопросы по немецким законам. Также несовершентнолетние бежнецы найдут здесь поддержку. \n</li>\n<br>\n<li>\n<b>Детская коляска - семейные проблемы</b><br>\nЗдесь ты найдешь помощь, если в твоей семье есть проблемы. Например при ссорах. И при многих других, как например тех, с которыми сталкиваешься, когда взролеешь. Либо воспитание детей. Здесь найдется помощь для каждогов  семье. Так же здесь есть много помощи детям и родителям.\n</li>\n<br>\n<li>\n<b>Сердце - здоровье</b><br>\nЗдесь ты найдешь помощь, если ты болеешь. Либо во время беременности. Ты также найдешь здесь помощь, если тебе плохо из-за войны и пыток. Либо если ты инвалид. Здесь ты найдешь врачей и психологов, которые помогают беженцам.\n</li>\n<br>\n<li>\n<b>Книга - учеба и работа</b><br>\nЗдесь ты найдешь помощь, если у тебя есть вопросы относительно учебы и работы. Нарпимер по детским садикам и школам. Или если ты хочешь знать, как ты можешь со статусом бежена здесь получить образование. Или если ты ищешь место профессиональной подготовки или работы. Так же ты найдешь здесь много разных курсов немецкого языка и курсы интеграции, которые ты можешь пройти как беженец. \n</li>\n<br>\n<li>\n<b>Указатель - жизнь в Германии</b><br>\nЗдесь ты найдешь помощь, если у тебя проблемы с ведомствами и учреждениями. Например если ты не знаешь немецкого языка, тогда здесь ты найдешь кого-нибудь, кто для тебя переведет. Либо кого-то, кто с тобой сходит в это учреждение. Также ты найдешь здесь и другую помощь - мы покажем тебе, например, места, где можно получить еду или мебель, одежду. И ты найдешь здесь возможности познакомитсья с другими людьми. Например в спортивном кружке или на курсах готовки.\n</li>\n<br>\n<li>\n<b>Кулак - насилие</b><br>\nЗдесь ты найдешь помощь, например если тебя кто-то ударил. Или во время войны ты подвергался пыткам. Также ты найдешь здесь помощь, если ты хочешь выйти из исламистской группировки.\n</li>\n<br>\n<li>\n<b>Молния - острая необходимость</b><br>\nЗдесь ты быстро найдешь помощь, если ты в крайней нужде или беде. В предложениях помощи, где стоит Днем и Ночью, ты можешь обращаться в любое время суток.\n</li>\n</ul>\n</p>"
+          question: "По каким темам могу я найти помощь в clarat refugees?"
         question_4:
           answer: 
           question: 
@@ -790,149 +849,37 @@ ru:
       who: "Чем занимается организация?"
   pages:
     about:
-      amina: |
-        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
-        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
-        Prima Estate von Erlend Oye.
-      andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
-      anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
-      astrid: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
-        The Roots feat. Erykah Badu.
-      basti: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
-        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
-        The Mirror von Michael Jackson.
-      bettina: |
-        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
-        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
-        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
-        Lieblingssong ist Elias von Dispatch.
-      elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
-      franziska: |
-        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
-        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
-        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Explanations von Selah Sue.
-      heading: Wer steckt hinter clarat?
-      janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
-      janne: |
-        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
-        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
-        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
-        Sweat von Ry X.
-      jens: |
-        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
-        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
-        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
-        Sein Lieblingssong ist 2B2 von Lambchop.
-      jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
-      julia: |
-        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
-        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
-        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
-        Lieblingssong ist Reckoner von Radiohead.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
-      katinka: |
-        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
-        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
-        Cat Power.
-      konstantin: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
-        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
-      laura: |
-        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
-        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
-        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
-        ist Paint It Black von den Rolling Stones.
-      lavinia: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
-      line: |
-        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
-        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
-        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
-        den Rolling Stones.
-      lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
-      marcus: |
-        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
-        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
-        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
-        Lieblingssong ist Hysteria von MUSE.
-      nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
-      nils: |
-        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
-        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
-        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
-        Jein von Fettes Brot.
-      stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
-      text: |
-        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
-        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
-        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
-        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
-        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
-        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
-        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
-        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
-        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
-        Einfach Hilfe finden. Für Familien auf clarat family. Und für
-        Flüchtlinge auf clarat refugees.
-      tine: |
-        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
-        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
-        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Survive It von Ghostpoet.
+      amina: "Амина - социолог. Она много знает об обществе. Она быстро замечает самое важное. В clarat она работает в команде сбора информации. Она решает, как именно будет clarat помогать. Ее любимая песня - La Prima Estate Эрленда Ойа (Erlend Oye)."
+      andrea: "Андреа изучала международный менеджмент. Она многое знает об экономике и культуре. Она работает очень точно. В clarat она работает в команде сбора информации. Она следит за качеством работы нашей команды. Ее любимая песня Work Me Блэк киз (The Black Keys)."
+      anne: "Анне изучала экономику и международные отношения. Она может очень быстро думать логически. Она главная в clarat. Она заботится о всей команде и все организует. Ее любимая песня Denken Sie Groß группы Дайхкинд (Deichkind) из Гамбурга."
+      astrid: "Астрид политолог Она знает много о политике и обществе. У нее всегда отличное настроение и этим она заражает всех вокруг. В clarat она работает в команде сбора информации. Ее любимая песня You Got Me от Рутс и Эрика Баду (The Roots feat. Erykah Badu)."
+      basti: "Басти интернет-разработчик. Он хорошо умеет программировать интернет страницы. В clarat он шеф по информационным технологиям. А так же он занимается нашими отпусками и договорами. Его любимая песня Man In The Mirror  Майкла Джексона (Michael Jackson)."
+      bettina: "Беттина изучала управление в некоммерческой деятельности. Она знает как организовать помощь и следит за порядком.  В clarat она работает в команде сбора информации и ищет в интернете подходящие организации, с которым будет работать clarat. Ее любимая песня - Elias группы Диспэтч (Dispatch)."
+      elisa: "Элиза - культуролог. Она многое знает о культуре. Она может сложное объяснить простыми словами. В clarat она работает в команде сбора информации. Еще она заботится о текстах  и пользователях нашего сайта. Ее любимая песня - Boat Behind группы Кингс оф конвиниенс (Kings of Convenience)."
+      franziska: "Франциска - международный юрист. Она многое знает о законах, которые действительны для всех стран. Она быстро понимает сложные вещи и находит решения. В clarat она работает в команде сбора информации. Ее любимая песня - Explanations певицы из Бельгии Села Сью (Selah Sue)"
+      heading: "Что подразумевает clarat"
+      janina: "Янина изучала этнологию культуры. Это значит, что она многое знает о культурах и людях. Она очень хорошо пишет. В clarat она работает в команде сбора информации. Ее любимая песня - MFG группы Fanta4."
+      janne: "Янне изучала политику и международные отношения. Она очень хорошо распределяет свое время. В clarat она работает в команде сбора информации. Ее любимая песня - Sweat австралийского исполнителя Ry X."
+      jens: |2-
+
+        Енс Научный работник по воспитанию. Это значит, что он хорошо разбирается в воспитании. Он быстро понимает сложные вопросы. В clarat он работает в команде сбора информации и решает какие предложения относятся к clarat. Его любимая песня (2В2) от группы Лэмбчоп (Lambchop).
+      jule: "Юле Исследовательница мира и конфликтов. Это значит, что она много знает о конфликтах и войне. Она хорошо умеет разрешать проблемы. В clarat она работает в команде сбора информации и следит за качеством нашей работы. Её любимая песня Home от исполнителя Эдварда Шарпа (Edward Sharpe)."
+      julia: "Юлия Германист. Это значит, что она хорошо разбирается в текстах и в немецком языке. Она может хорошо писать у понятно объяснять вещи. В clarat она работает в команде сбора информации и является экспертом по языку clarat. Её любимая песня Reckoner от группы  Рэдиохэд (Radiohead)."
+      julian: "Юлиан Социальный экономист. Это значит, что он знает много о экономике и обществе. Он хорошо разбирается в компьютерах. В clarat он работает в команде сбора информации и занимается техническими вопросами. Его любимая песня All You Need от Сублим (Sublime)."
+      katinka: "Катинка Психолог. Это значит что она хорошо понимает поведение и чувства людей. Она может быстро разбираться в сложных вопросах. В clarat она работает в команде сбора информации. Её любимая песня  The Greatest от Кэт Пауэр (Cat Power)."
+      konstantin: "Константин Интернет-разработчик. Это значит, что он умеет программировать страницы в интернете. Он всегда хорошо разрешает проблемы. В clarat он работает в команде технической инвентаризации. Его любимая песня Too Long от  французской группы Дафт Панк (Daft Punk). "
+      laura: "Лаура Изучала науки южной Азии и научные исследования географического развития. Это значит, что она много знает о развивающихся странах. Она всегда имеет полный обзор. В clarat она работает в команде сбора информации. Её любимая песня Paint it Black от Роллинг Стонс (Rolling Stones)."
+      lavinia: "Лавиния Исследователь мира и конфликтов. Это значит, что она много знает о конфликтах и войне. Она может хорошо убеждать людей в новых идеях. В clarat она работает в команде сбора информации и сортирует предложения помощи по темам. Её любимая песня I'm Not Donе от Фивер Рэй (Fever Ray)."
+      line: "Лине Театральный режиссёр. Она хорошо разбирается в литературе и языке. Поэтому он знает как слова влияют на людей. В clarat она работает в команде сбора информации. Её любимая песня Anybody Seen My Baby от Роллинг Стонс (Rolling Stones)."
+      lisa: "Лиза Дизайн мыслительница (Design Thinker). Это значит, что она может планировать креативные "
+      marcus: "Маркус Дизайнер по интернету. Это значит, что он умеет программировать и составлять сайты в интернете. Он тоже хорошо умеет планировать. В clarat он работает в команде технической информации. Он заботится о том, чтобы наш сайт в интернете хорошо выглядел. Его любимая песня Hysteria от группы Мьюз (Muse)."
+      nicole: "Николь Изучала межкультурную коммуникацию. Это значит, что она знает много о разных культурах и языках. Она хорошо может принимать решения. В clarat она работает в команде сбора информации. Её любимая песня Palabra Mi Amor от Шака Понк (Shaka Ponk)."
+      nils: "Нильс Специалист по информатике. Это значит, что он хорошо умеет программировать компьютерные программы и сайты в интернете. Он хорошо решает проблемы и быстро осваивает новые вещи. В clarat он работает команде технической информации. Его любимая песня Jein от группы Фэттэс Брот (Fettes Brot)."
+      stefan: "Штефан Специалист по науке культуры. Это значит, что он знает много о культуре и обществе. Он хорошо умеет увлекать людей. Он создал clarat. Его любимая песня Riders in The Storm от Де Доорс (The Doors)."
+      text: 'clarat это проект некоммерческого фонда Benckiser Stiftung Zukunft (фонд Бенкизер, Будущее) - www.benckiser-stiftung.org. Вместе с этим фондом уже несколько лет мы содействуем в продвижении проектов для детей и молодежи. При этом мы снова и снова обращали внимание на одну вещь: довольно тяжело найти какие возможности поддержки и помощи в целом существуют и трудно в них разобраться. Тогда мы поняли, что если для нас, "экспертов" тяжело найти и понять это, то каково детям, молодежи, семьям, которым действительно нужна помощь? Либо беженцам, которые здесь, в Германии еще вовсе не освоились? На это есть один ответ: очень сложно! Так и родилась идея создать clarat: возможность легко найти помощь. Для семей - в clarat family и для беженцев - в clarat refugee.'
+      tine: "Тине Социальный педагог. Она может хорошо слушать людей. Она также писатель. Это значит что она хорошо владеет языком и красиво умеет писать истории. В clarat она работает в команде научного сбора информации. Её любимая песня Survive от Гостпоэт (Ghostpoet)."
       title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      verena: "Верена Политолог. Это значит, что она знает много о политике и обществе. Она хорошо умеет собирать информацию. В clarat она работает в команде сбора информации и следит за нашей лексикой. Её любимая песня Lose It от О Вондер (Oh Wonder)."
     agb:
       heading: Rechtliche Hinweise
       text_html: |
@@ -1587,33 +1534,17 @@ ru:
       title: "Частые вопросы"
     home:
       how:
-        heading: Wie funktioniert clarat?
-        text: |
-          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
-          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
-          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
-          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
-          Oder einfach vorbeigehen kannst.
+        heading: Kак работает clarat?
+        text: "Напиши, в чем именно у тебя проблемы. Или что тебя волнует. Либо выбери из предложенных тем. Ты сразу же найдешь рядом с тобой по близости все возможные варианты помощи и поддержки. Мы так же расскажем тебе, как ты можешь получить эту помощь. Позвони, напиши email или просто приходи."
       title:
         family: 
         refugees: 
       whom:
-        heading: Für wen ist clarat?
-        text: |
-          clarat ist für alle da. clarat family für Kinder, Jugendliche und
-          Familien. clarat refugees für Flüchtlinge. Hier findest du
-          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
-          und deine Freunde. Oder auch für andere Menschen, die du kennst und
-          die Hilfe brauchen.
+        heading: "Для кого clarat?"
+        text: clarat открыт для всех. clarat family - для детей, молодежи и семей. clarat refugees - для беженцев. Здесь ты найдешь поддержку и помощь во всех вопросах и проблемах. Ты, твоя семья, твои друзья или любой другой человек, которого ты знаешь, могут обратиться к нам за помощью.
       why:
-        heading: Warum gibt es clarat?
-        text: |
-          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
-          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
-          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
-          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
-          refugees.
+        heading: "Для чего существует clarat?"
+        text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
     impressum:
       heading: "Импрессум"
       responsible_html: |

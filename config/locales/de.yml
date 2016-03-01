@@ -1890,7 +1890,7 @@ de:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 404
+    '404': 
     contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions

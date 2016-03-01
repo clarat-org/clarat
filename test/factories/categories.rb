@@ -2,7 +2,7 @@ require 'ffaker'
 
 FactoryGirl.define do
   factory :category do
-    name { FFaker::Lorem.words(rand(2..3)).join(' ').titleize }
+    name_de { FFaker::Lorem.words(rand(2..3)).join(' ').titleize }
 
     after :build do |category|
       # Filters

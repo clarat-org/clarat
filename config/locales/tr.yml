@@ -103,7 +103,7 @@ tr:
           answer: "clarat herkes içindir - tek bir tıklama ile <b>clarat family</b>  ile clarat refugees arasında seçim yapabilirsin:\n<p>\n<ul>\n<li>\n<b>clarat family</b> destek arayan çocuklar, gençler ve aileler için olmaktadır. \nHangi Aile, arkadaşlar, okul ya da başka bir konu ile ilgili sorunlar olabilir. \n</li>\n<li>\n<b>clarat refugees</b> Almanya’da bulunan tüm mülteciler içindir. \nMülteci çocuk ve gençler için; mülteci bayan ve erkekler için; mülteci aileler için. \nYani Almanya’ya iltica etmek zorunda kalıp, yardıma ihtiyaç duyan herkes içindir.\n</li>\n</ul>\n</p>\nAncak clarat’ta başkalarına destek olmak isteyenler de arayış içerisine girebilir. Mesela öğretmenler, komşular ve tanıdıklar. "
           question: clarat’ta kimler destek bulabilir?
         question_10:
-          answer: "Bunun çeşitli sebepleri olabilir.\n<p>\n<ul>\n<li>\nAradığın kelimenin çalışmadığı olabilir. Bu durumda başka bir kelime girişi yapmayı deneyebilirsin. Aklına başka bir kelime gelmiyorsa, resimler yardımıyla arama yapmaı deneyebilirsin. clarat sayfasında bunun adı: Kategorilere göre arama. %{ref_to_how_to_find_right_help}, bu aramanın nasıl çalıştığını öğrenebilirsin. \n</li>\n<li>\nKöyde yada şehir merkezine uzak bir yerde oturuyor ve böylelikle yakınında bir destek bulamıyorsan, <b>Wo?</b> kısmına yakında bulunan bir şehir yazıp aratabilirsin. Veya telefon ya da internet üzerinden alabileceğin yardımlara bakabilirsin.\n</li>\n<li>\nBaşka bir sebebi, bulunduğun şehirde henüz destek veremiyor olmamız olabilir.\n</li>\n<li>\nSenin aradığın destek türüne uygun bir seçeneyimiz henüz olmayabilir. Bu durumda bize geri dönüş sağlaman önemli, çünkü böylece sorunu çzebilirz. Bunun için bize %{mailto_clarat} mail yazabilirsin. \n</li>\n</ul>\n</p>"
+          answer: "Bunun çeşitli sebepleri olabilir.\n<p>\n<ul>\n<li>\nAradığın kelimenin çalışmadığı olabilir. Bu durumda başka bir kelime girişi yapmayı deneyebilirsin. Aklına başka bir kelime gelmiyorsa, resimler yardımıyla arama yapmaı deneyebilirsin. clarat sayfasında bunun adı: Kategorilere göre arama. %{ref_to_how_to_find_right_help}, bu aramanın nasıl çalıştığını öğrenebilirsin. \n</li>\n<li>\nKöyde yada şehir merkezine uzak bir yerde oturuyor ve böylelikle yakınında bir destek bulamıyorsan, <b>Nerede?</b> kısmına yakında bulunan bir şehir yazıp aratabilirsin. Veya telefon ya da internet üzerinden alabileceğin yardımlara bakabilirsin.\n</li>\n<li>\nBaşka bir sebebi, bulunduğun şehirde henüz destek veremiyor olmamız olabilir.\n</li>\n<li>\nSenin aradığın destek türüne uygun bir seçeneyimiz henüz olmayabilir. Bu durumda bize geri dönüş sağlaman önemli, çünkü böylece sorunu çzebilirz. Bunun için bize %{mailto_clarat} mail yazabilirsin. \n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
             name: Burada
@@ -116,7 +116,7 @@ tr:
             var: mailto_clarat
           question: Aradığımı neden bulamıyorum?
         question_11:
-          answer: "En iyisi, ilk olarak bulduğun destek türünün hangi soruna uygun olduğuna bakman olacaktır. \nBunu  <b>Worum geht’s?</b> yazan kısımda bulabilirsin. Henüz doğru seçenek değilse başka bir destek türünü seçebilirsin.\nHala emin değilsen desteği sunan yere başvurabilirsin. Çoğu zaman mail yazılabilir ya da telefon ile ulaşılabilir. Mail adreslerini ve telefon numaralarını clarat’da bulabilirsin. Bunlar <i>Wo kannst du dich melden?</i> kısmında yer almaktadır.\n"
+          answer: "En iyisi, ilk olarak bulduğun destek türünün hangi soruna uygun olduğuna bakman olacaktır. \nBunu  <b>Konu ne?</b> yazan kısımda bulabilirsin. Henüz doğru seçenek değilse başka bir destek türünü seçebilirsin.\nHala emin değilsen desteği sunan yere başvurabilirsin. Çoğu zaman mail yazılabilir ya da telefon ile ulaşılabilir. Mail adreslerini ve telefon numaralarını clarat’da bulabilirsin. Bunlar <i>Nereye başvurabilirsin?</i> kısmında yer almaktadır."
           question: Bulduğum destek türün benim için uygun olduğundan emin değilsem ne yapmalıyım?
         question_12:
           answer: "clarat’ta yalnızca kendin için değil, başkası için de bir destek bulabilirsin. \nMesela bir arkadaşın için, ya da Amca olarak yeğenin için. Ya da Anne olarak kızın için. \nVeya bir öğretmen olarak, bir öğrencin için. Ancak, öncelikle desteği alacak olan kişiye hitap edildiği için şaşırma. \nDesteği alan kişiler çoğunlukla çocuk ve gençler."
@@ -263,18 +263,29 @@ tr:
             var: mailto_clarat
           question: Yanlış veya düzeltme önerilerini nasıl bildirebilirim?
         question_8:
-          answer: 
+          answer: |-
+            Bunun iki olası nedeni olabilir:
+            <p>
+            <ul>
+            <li>
+            Bunun nedeni, senin kuruluşunun konumu hakkında bilgi edınılmemesi. clarat şu an parça parça inşa ediliyor. Bu yüzden belki senin kuruluşunun tekliflerini henüz kaleme alamamış olabiliriz.
+            </li>
+            <li>
+            Veya senin kuruluşunun  içerik açısından bizim sunumlarımıza uymadığından.clarat’ta sadece belirli konular hakkında imkanlar bulunmaktadır.Hangi konular olduğunu, %{ref_to_who_finds_help}  okuyabilirsin. Eğer senin kuruluşunun tekliflerini clarat’ta sunulmasını istiyorsun bizimle irtibata geçebilirisin.En iyisi bize %{mailto_clarat}  adresinden bir mail atıp veya +49 (0)30 55 57 96 00 numara’dan ulaşman.
+            </li>
+            </ul>
+            </p>
           link_1:
             class: FAQ_anchor_link
-            name: burada
-            url: 
+            name: buradan
+            url: "/haeufige-fragen/#who_finds_help"
             var: ref_to_who_finds_help
           link_2:
             name: post@clarat.org
             target: _blank
             url: mailto:post@clarat.org
             var: mailto_clarat
-          question: 
+          question: Benim kuruluşum neden clarat’ta değil?
   conf:
     current_location: Konumum
     default_latlng: 52.520007,13.404954
@@ -322,169 +333,169 @@ tr:
   enumerize:
     search_form:
       age:
-        '0': 
-        '1': 
-        '10': 
-        '11': 
-        '12': 
-        '13': 
-        '14': 
-        '15': 
-        '16': 
-        '17': 
-        '18': 
-        '19': 
-        '2': 
-        '20': 
-        '21': 
-        '22': 
-        '23': 
-        '24': 
-        '25': 
-        '26': 
-        '27': 
-        '28': 
-        '29': 
-        '3': 
-        '30': 
-        '31': 
-        '32': 
-        '33': 
-        '34': 
-        '35': 
-        '36': 
-        '37': 
-        '38': 
-        '39': 
-        '4': 
-        '40': 
-        '41': 
-        '42': 
-        '43': 
-        '44': 
-        '45': 
-        '46': 
-        '47': 
-        '48': 
-        '49': 
-        '5': 
-        '50': 
-        '51': 
-        '52': 
-        '53': 
-        '54': 
-        '55': 
-        '56': 
-        '57': 
-        '58': 
-        '59': 
-        '6': 
-        '60': 
-        '61': 
-        '62': 
-        '63': 
-        '64': 
-        '65': 
-        '66': 
-        '67': 
-        '68': 
-        '69': 
-        '7': 
-        '70': 
-        '71': 
-        '72': 
-        '73': 
-        '74': 
-        '75': 
-        '76': 
-        '77': 
-        '78': 
-        '79': 
-        '8': 
-        '80': 
-        '81': 
-        '82': 
-        '83': 
-        '84': 
-        '85': 
-        '86': 
-        '87': 
-        '88': 
-        '89': 
-        '9': 
-        '90': 
-        '91': 
-        '92': 
-        '93': 
-        '94': 
-        '95': 
-        '96': 
-        '97': 
-        '98': 
-        '99': 
+        '0': 0
+        '1': 1
+        '10': 10
+        '11': 11
+        '12': 12
+        '13': 13
+        '14': 14
+        '15': 15
+        '16': 16
+        '17': 17
+        '18': 18
+        '19': 19
+        '2': 2
+        '20': 20
+        '21': 21
+        '22': 22
+        '23': 23
+        '24': 24
+        '25': 25
+        '26': 26
+        '27': 27
+        '28': 28
+        '29': 29
+        '3': 3
+        '30': 30
+        '31': 31
+        '32': 32
+        '33': 33
+        '34': 34
+        '35': 35
+        '36': 36
+        '37': 37
+        '38': 38
+        '39': 39
+        '4': 4
+        '40': 40
+        '41': 41
+        '42': 42
+        '43': 43
+        '44': 44
+        '45': 45
+        '46': 46
+        '47': 47
+        '48': 48
+        '49': 49
+        '5': 5
+        '50': 50
+        '51': 51
+        '52': 52
+        '53': 53
+        '54': 54
+        '55': 55
+        '56': 56
+        '57': 57
+        '58': 58
+        '59': 59
+        '6': 6
+        '60': 60
+        '61': 61
+        '62': 62
+        '63': 63
+        '64': 64
+        '65': 65
+        '66': 66
+        '67': 67
+        '68': 68
+        '69': 69
+        '7': 7
+        '70': 70
+        '71': 71
+        '72': 72
+        '73': 73
+        '74': 74
+        '75': 75
+        '76': 76
+        '77': 77
+        '78': 78
+        '79': 79
+        '8': 8
+        '80': 80
+        '81': 81
+        '82': 82
+        '83': 83
+        '84': 84
+        '85': 85
+        '86': 86
+        '87': 87
+        '88': 88
+        '89': 89
+        '9': 9
+        '90': 90
+        '91': 91
+        '92': 92
+        '93': 93
+        '94': 94
+        '95': 95
+        '96': 96
+        '97': 97
+        '98': 98
+        '99': 99
       contact_type:
-        personal: 
-        remote: 
+        personal: Personal
+        remote: Remote
       language:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
+        '150': 150
+        '326': 326
+        '568': 568
+        '639': 639
+        amh: Amh
+        ara: Ara
+        aze: Aze
+        bel: Bel
+        ben: Ben
+        bos: Bos
+        bul: Bul
+        deu: Deu
+        ell: Ell
+        eng: Eng
+        fas: Fas
+        fra: Fra
+        hin: Hin
+        hrv: Hrv
+        hun: Hun
+        ita: Ita
+        kik: Kik
+        kur: Kur
+        lav: Lav
+        lit: Lit
+        ltz: Ltz
+        luo: Luo
+        mkd: Mkd
+        nor: Nor
+        pol: Pol
+        por: Por
+        rom: Rom
+        ron: Ron
+        rus: Rus
+        snk: Snk
+        spa: Spa
+        sqi: Sqi
+        srp: Srp
+        swa: Swa
+        swe: Swe
+        tam: Tam
+        tel: Tel
+        tgk: Tgk
+        tha: Tha
+        tuk: Tuk
+        tur: Tur
+        urd: Urd
+        uzb: Uzb
+        vie: Vie
+        wol: Wol
+        zho: Zho
+        zza: Zza
       section:
-        family: 
-        refugees: 
+        family: Family
+        refugees: Refugees
   formtastic:
     hints:
       update_request:
         index:
-          email: 
+          email: NOTRANSLATE
   js:
     ajax_error:
       error: Arama hatası
@@ -847,198 +858,78 @@ tr:
       who: Bu organizasyon ne yapmaktadır?
   pages:
     about:
-      amina: |
-        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
-        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
-        Prima Estate von Erlend Oye.
-      andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
-      anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
+      amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
+      andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
+      anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: |
         Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
         Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
         clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
         The Roots feat. Erykah Badu.
-      basti: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
-        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
-        The Mirror von Michael Jackson.
-      bettina: |
-        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
-        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
-        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
-        Lieblingssong ist Elias von Dispatch.
-      elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
-      franziska: |
-        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
-        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
-        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Explanations von Selah Sue.
-      heading: Wer steckt hinter clarat?
-      janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
-      janne: |
-        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
-        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
-        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
-        Sweat von Ry X.
-      jens: |
-        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
-        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
-        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
-        Sein Lieblingssong ist 2B2 von Lambchop.
-      jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
-      julia: |
-        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
-        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
-        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
-        Lieblingssong ist Reckoner von Radiohead.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
-      katinka: |
-        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
-        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
-        Cat Power.
-      konstantin: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
-        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
-      laura: |
-        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
-        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
-        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
-        ist Paint It Black von den Rolling Stones.
-      lavinia: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
-      line: |
-        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
-        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
-        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
-        den Rolling Stones.
-      lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
-      marcus: |
-        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
-        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
-        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
-        Lieblingssong ist Hysteria von MUSE.
+      basti: Basti Web Geliştiricisi, internet sayfalarını programlıyor. Clarat’ta IT şefi. Tüm teknik sorunlarda bize yardımcı oluyor. Tatil ve sözleşmelerden sorumlu. Michael Jackson’un Man in the Mirror şarkısı en sevdiği parça.
+      bettina: Kâr amacı olmayan şirket yönetimi mezunu ve bu sayede yardım organizasyonlarının nasıl yapıldığını iyi biliyor. Clarat’ta araştırma ekibinde. En sevdiği parça Dispatch’in Elias şarkısı.
+      elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
+      franziska: Uluslararası hukukçu ve her ülkede geçerli olan yasalar hakkında bilgisi çok derin. Komplike konuları iyi anlıyor ve çabuk çözümler sunuyor. Clarat’ta araştırma ekibinde. Selah Sue’nun Explanations şarkısı en sevdiği parça.
+      heading: Clarat’ın arka planında kim var?
+      janina: Janina kültür antropoloğu ve böylelikle değişik insan ve kültürler hakkında çok kapsamlı bilgisi var. Clarat’ta araştırma grubunda. Kendisi clarat-dil uzmanı ve kullanıcılarımıza yardımcı oluyor. En sevdigi parça Fanta4 grubunun MFG şarkısı.
+      janne: Janne politika ve uluslararası ilişkiler okudu. Zamanını çok iyi planlayabiliyor. Clarat’ta araştırma ekibinde ve bu kapsamda hangi sunumların clarat teklifi olabileceğine karar veriyor. En sevdigi müzik parçası Ry X’in Sweat parçası.
+      jens: |-
+        bir eğitim bilimcisi. Bu, eğitim hakkında iyi bir bilgiye sahip olması demektir.
+        Komplike şeyleri hızlıca anlıyor. clarat’da ise araştırma ekibinde yer alıyor. Kendisi hangi projelerin clarat’a ait olacağını belirliyor. En sevdiği şarkı Lambchop’un 2B2 şarkısı.
+      jule: barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. Hızlıca çözüm üretebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. Kendisi işimizin kalitesini sağlıyor. En sevdiği şarkı Edward Sharpe’ın Home şarkısı.
+      julia: bir Alman filoloğu. Bu, metinler ve Alman dili ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Clarat’da ise araştırma ekibinde clarat dilimizin uzmanı olmakta. En sevdiği şarkı Radiohead’in Reckoner şarkışı.
+      julian: bir sosyal ekonomist. Bu, kendisinin ekonomi ve toplum ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Aynı zamanda bilgisayarlarla da haşır neşir. Clarat’da ise araştırma ekibinde yer alıyor ve teknik kısmımızla ilgileniyor. En sevdiği şarkı Sublime’ın All You Need şarkısı.
+      katinka: bir psikolog. Bu, insanların davranışlarını ve duygularını iyi anlayabildiği anlamına geliyor. Ayrıca komplike şeyleri iyi düzenleyebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. En sevdiği şarkı Cat Power’in The Greatest şarkısı.
+      konstantin: bir web geliştirme uzmanı. Bu, internet sayfalarını programlayabildiği anlamına geliyor. Her zaman iyi çözümler bulabiliyor. clarat’da ise IT bölümünde yer alıyor ve internet sayfamızı yapıyor. En sevdiği şarkı Daft Punk’ın Too Long şarkısı.
+      laura: Güney Asya çalışmaları ve coğrafi kalkınma uzmanlığı dalında okumuş. Bu, gelişmekte olan ülkeler hakkında çok bilgiye sahip olduğu anlamına geliyor. Kavrayış gücü oldukça yüksektir. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Paint It Black.
+      lavinia: bir barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksek. Clarat’da araştırma ekibinde yer almakta ve projeleri konulara göre düzenliyor. En sevdiği şarkı Fever Ray’in Not Done şarkısı.
+      line: bir tiyatro yönetmeni. Aynı zamanda edebiyat ve dil ile ilgili çok bilgiye sahip. Bu nedenle kelimelerin insanlarda yarattığı etkiyi çok iyi biliyor. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Anybody Seen My Baby.
+      lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
+      marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
       nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
+        Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
-      stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
-      text: |
-        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
-        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
-        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
-        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
-        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
-        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
-        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
-        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
-        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
-        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
-        Einfach Hilfe finden. Für Familien auf clarat family. Und für
-        Flüchtlinge auf clarat refugees.
-      tine: |
-        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
-        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
-        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Survive It von Ghostpoet.
-      title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
+      text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
+      tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
+      title: Hakkımızda
+      verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
     agb:
       heading: 
-      text_html: 
+      text_html: NOTRANSLATE
       title: Rechtliche Hinweise
     faq:
       title: 
     home:
       how:
-        heading: Wie funktioniert clarat?
-        text: |
-          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
-          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
-          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
-          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
-          Oder einfach vorbeigehen kannst.
+        heading: Clarat nasıl çalışıyor?
+        text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
       title:
         family: 
         refugees: 
       whom:
-        heading: Für wen ist clarat?
-        text: |
-          clarat ist für alle da. clarat family für Kinder, Jugendliche und
-          Familien. clarat refugees für Flüchtlinge. Hier findest du
-          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
-          und deine Freunde. Oder auch für andere Menschen, die du kennst und
-          die Hilfe brauchen.
+        heading: Clarat kimler için var?
+        text: Clarat herkes için var. Clarat family çocuklar, gençler ve ailelerin hizmetinde. Clarat refugees mülteciler için. Burada kendin, ailen veya arkadaşlarınla ilgili her soruya ve probleme çözüm bulabilirsin. Yardıma ihtiyacı olan tanıdığın diğer insanlar için de destek veriyoruz.
       why:
-        heading: Warum gibt es clarat?
-        text: |
-          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
-          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
-          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
-          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
-          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
-          refugees.
+        heading: Clarat neden var?
+        text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
     impressum:
       heading: Impressum
-      responsible_html: |
-        Vorstand<br/>
+      responsible_html: |-
+        Yönetim Kurulu<br/>
         Dr. Dr. Christoph Glaser<br/>
-        (verantwortlich für den Inhalt der Website)
+        (Web sitenin içeriğinden sorumludur)
       title: Impressum
     not_found:
-      description: |
-        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
-        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
-        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
-        Bilder nach passender Hilfe suchen.
-      heading: Leider konnten wir diese Seite nicht finden.
+      description: |-
+        Arama kısmına nasıl bir yardıma ihtiyaç duyduğunu yaz. Ya da sorunun ne olduğunu.
+        clarat sana yakınında bulunan destek çeşitlerini gösterecektir.
+        Ya da %{start_page} anasayfaya git. Burada daire içindeki resimler yardımıyla, uygun desteği arayabilirsin.
+      heading: "Üzgünüz, bu sayfayı bulamadık."
       link_text: 
       title: 404
     privacy:
@@ -1355,17 +1246,25 @@ tr:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: iletişim
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: 
+    offers: hizmetlerimiz
+    organizations: organizasyonlar
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: ueber-uns
     unsubscribe: 
     update_requests: 
+    users: kullanıcılar
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1380,35 +1279,35 @@ tr:
     hints:
       contact:
         show:
-          email: 
-          message: 
-          name: 
+          email: NOTRANSLATE
+          message: NOTRANSLATE
+          name: NOTRANSLATE
       search_form:
         faq:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
         home:
-          query: 
+          query: NOTRANSLATE
           search_location: 
         index:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
         show:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
       subscription:
         faq:
-          email: 
+          email: NOTRANSLATE
         home:
-          email: 
+          email: NOTRANSLATE
         index:
-          email: 
+          email: NOTRANSLATE
         show:
-          email: 
+          email: NOTRANSLATE
     required:
-      html: 
-      mark: 
-      text: 
+      html: NOTRANSLATE
+      mark: NOTRANSLATE
+      text: NOTRANSLATE
   subscriptions:
     create:
       error: |

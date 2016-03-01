@@ -2,7 +2,7 @@
   %h3.Listing-results__offer
 
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
-      = hb 'name'
+      = hb! '_highlightResult.name.value'
 
   / TODO: Refactor and rename
   %h4.Listing-results__offerinfo
@@ -12,6 +12,6 @@
 
     %span.Listing-results__organization
       %span.Listing-results__emphasis
-        = hb 'organization_display_name'
+        = hb! 'organization_display_name'
       = hb 'if location_visible' do # only show address if visible
         = hb 'location_address'

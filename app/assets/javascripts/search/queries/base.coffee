@@ -19,7 +19,7 @@ class Clarat.Search.Query.Base
         facetFilters: @facetFilters
         aroundPrecision: @BASE_PRECISION
         maxValuesPerFacet: @VALUES_PER_FACET
-        attributesToHighlight: 'name,organization_display_name'
+        attributesToHighlight: 'name,organization_names'
         highlightPreTag: '<span class="Listing-keyword--highlight">'
         highlightPostTag: '</span>'
 

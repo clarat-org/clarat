@@ -91,4 +91,6 @@ class Clarat.Search.Cell.SearchResults
   addValuesToSearchResults: (@results) ->
     for item in @results
       item.organization_display_name =
-        if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
+        if item.organization_count == 1
+          item._highlightResult.organization_names.value
+        else I18n.t("js.search_results.map.cooperation")

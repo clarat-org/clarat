@@ -1384,24 +1384,24 @@ ru:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: "контакты"
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: 
+    offers: "предложения"
+    organizations: "орагнизации"
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: ueber-uns
     unsubscribe: 
     update_requests: 
-    contacts: "контакты"
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
-    offers: "предложения"
-    organizations: "орагнизации"
-    ueber-uns: ueber-uns
     users: "пользователь"
   shareds:
     forms:

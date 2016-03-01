@@ -1365,24 +1365,24 @@ ar:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: "إتصال"
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: 
+    offers: "عروض"
+    organizations: "منظمة"
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: ueber-uns
     unsubscribe: 
     update_requests: 
-    contacts: "إتصال"
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
-    offers: "عروض"
-    organizations: "منظمة"
-    ueber-uns: ueber-uns
     users: "مستخدم"
   shareds:
     forms:

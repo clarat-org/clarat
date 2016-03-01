@@ -1831,24 +1831,24 @@ en:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: contacts
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: frequently-asked-questions
+    haeufige-fragen: frequently-asked-questions
+    impressum: site-notice
     new: 
+    offers: offers
+    organizations: organizations
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: about-us
     unsubscribe: 
     update_requests: 
-    contacts: contacts
-    faq: frequently-asked-questions
-    haeufige-fragen: frequently-asked-questions
-    impressum: site-notice
-    offers: offers
-    organizations: organizations
-    ueber-uns: about-us
     users: users
   shareds:
     forms:

@@ -1376,24 +1376,24 @@ fr:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: kontakt
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: 
+    offers: angebote
+    organizations: organisationen
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: ueber-uns
     unsubscribe: 
     update_requests: 
-    contacts: kontakt
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
-    offers: angebote
-    organizations: organisationen
-    ueber-uns: ueber-uns
     users: nutzer
   shareds:
     forms:

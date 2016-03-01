@@ -1246,24 +1246,24 @@ tr:
         zip_city: 10117 Berlin
   routes:
     '404': 
+    contacts: iletişim
     datenschutzhinweise: 
     definitions: 
     emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: 
+    offers: hizmetlerimiz
+    organizations: organizasyonlar
     preview: 
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
     subscriptions: 
+    ueber-uns: ueber-uns
     unsubscribe: 
     update_requests: 
-    contacts: iletişim
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
-    offers: hizmetlerimiz
-    organizations: organizasyonlar
-    ueber-uns: ueber-uns
     users: kullanıcılar
   shareds:
     forms:

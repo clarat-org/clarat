@@ -952,7 +952,7 @@ de:
     hints:
       update_request:
         index:
-          email: NOTRANSLATE
+          email: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1891,24 +1891,24 @@ de:
         zip_city: 10117 Berlin
   routes:
     '404': 404
+    contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
     emails: emails
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
     new: new
+    offers: angebote
+    organizations: organisationen
     preview: preview
     rechtliche-hinweise: rechtliche-hinweise
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
+    ueber-uns: ueber-uns
     unsubscribe: unsubscribe
     update_requests: update_requests
-    contacts: kontakt
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
-    offers: angebote
-    organizations: organisationen
-    ueber-uns: ueber-uns
     users: nutzer
   shareds:
     forms:
@@ -1932,11 +1932,11 @@ de:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
         home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
         index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
         show:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
@@ -1944,9 +1944,9 @@ de:
         faq:
           email: NOTRANSLATE
         home:
-          email: NOTRANSLATE
+          email: 
         index:
-          email: NOTRANSLATE
+          email: 
         show:
           email: NOTRANSLATE
     required:

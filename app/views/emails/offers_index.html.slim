@@ -14,7 +14,7 @@
               h4.Listing-results__offerinfo
                 - if offer.encounter && offer.encounter != 'personal'
                   span.Listing-results__contact-type
-                    = t "shareds.offer.encounter.#{offer.encounter}"
+                    = t "js.single_search_result.encounters.#{offer.encounter}"
                 span.Listing-results__organization
                   span.Listing-results__emphasis
                     = offer.organization_display_name

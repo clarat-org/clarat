@@ -17,10 +17,13 @@ class Clarat.Search.Cell.SearchResults
     main_count: @mainResults.nbHits
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     section: $('body').data('section')
+    offers_path: location.pathname
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]
     @remoteResults = @resultSet.results[1]
+    @addValuesToSearchResults(@mainResults.hits)
+    @addValuesToSearchResults(@remoteResults.hits)
 
     return specificViewObject =
       personal_focus_with_remote:
@@ -34,19 +37,20 @@ class Clarat.Search.Cell.SearchResults
 
       faq_text: I18n.t('js.search_results.faq_text')
       faq_anchor: I18n.t('js.search_results.faq_anchor')
-      faq_href: "/#{@model.section}/haeufige-fragen/#search_section"
+      faq_href: "#{I18n.t('js.routes.faq')}#who_finds_help"
 
       has_two_or_more_remote_results: @remoteResults.nbHits > 1
       remote_offers: @remoteResults.hits
 
   remoteFocusViewObject: =>
     @mainResults = @resultSet.results[0]
+    @addValuesToSearchResults(@mainResults.hits)
 
     return specificViewObject =
       personal_focus_with_remote: false
       main_results_headline: @mainResultsHeadline('remote_offers')
       remote_focus: true
-      toggle_personal_anchor: 'Zeige Angebote vor Ort' # TODO: permanent? +css
+      toggle_personal_anchor: I18n.t('js.search_results.show_personal') # TODO: permanent? +css
 
 
   ## Headline Building Helpers
@@ -56,6 +60,11 @@ class Clarat.Search.Cell.SearchResults
     bridge = I18n.t 'js.search_results.bridge'
     enclosing = I18n.t 'js.search_results.enclosing'
 
+    output += " (#{@model.search_location}"
+    if @model.exact_location == 'true'
+      output += " " + HandlebarsTemplates['remove_exact_location']()
+    output += ")"
+
     if @model.category
       output += " in #{@breadcrumbPath @model}"
 
@@ -63,7 +72,7 @@ class Clarat.Search.Cell.SearchResults
       output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output + " (#{@model.search_location}) #{enclosing}"
+    output + " #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->
@@ -76,3 +85,10 @@ class Clarat.Search.Cell.SearchResults
       output += ' &rarr; ' unless index is last_index
 
     output
+
+  ## Add additional values to search results (for hamlbars)
+
+  addValuesToSearchResults: (@results) ->
+    for item in @results
+      item.organization_display_name =
+        if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")

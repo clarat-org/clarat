@@ -1,0 +1,10 @@
+ar:
+  routes:
+    offers: "عروض"
+    users: "مستخدم"
+    contacts: "إتصال"
+    organizations: "منظمة"
+    impressum: "impressum"
+    haeufige-fragen: "haeufige-fragen"
+    ueber-uns: "ueber-uns"
+    faq: "haeufige-fragen"

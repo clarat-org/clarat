@@ -62,7 +62,8 @@ class Clarat.Search.Model extends ActiveScript.Model
   personal_query: ->
     if @isPersonal()
       new Clarat.Search.Query.Personal(
-        @generated_geolocation, @query, @category, @facetFilters(), @page
+        @generated_geolocation, @exact_location, @query, @category,
+        @facetFilters(), @page
       )
 
   remote_query: ->
@@ -77,7 +78,8 @@ class Clarat.Search.Model extends ActiveScript.Model
   personal_facet_query: ->
     if @isPersonal()
       new Clarat.Search.Query.PersonalFacet(
-        @generated_geolocation, @query, @category, @facetFilters()
+        @generated_geolocation, @exact_location, @query, @category,
+        @facetFilters()
         # @query, @category, @geolocation, @search_radius, @facetFilters()
       )
 

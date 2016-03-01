@@ -34,6 +34,14 @@ class Offer < ActiveRecord::Base
     sites.compact
   end
 
+  def organization_display_name
+    if organizations.count == 1
+      organization_names
+    else
+      I18n.t('js.search_results.map.cooperation')
+    end
+  end
+
   # structured information to build a gmap marker for this offer
   def gmaps_info
     {
@@ -41,5 +49,22 @@ class Offer < ActiveRecord::Base
       address: location_address,
       organization_display_name: organization_display_name
     }
+  end
+
+  # returns the fixed sorted language_filters
+  def language_filters_fixed
+    fixed = LanguageFilter::FIXED_IDENTIFIER
+    fixed.select { |l| language_filters.pluck(:identifier).include? l }
+  end
+
+  # returns the rest of the language_filters (w/o fixed), ordered by german name
+  def language_filters_without_fixed
+    remaining = LanguageFilter::REMAINING_IDENTIFIER
+    language_filters.order(:name).pluck(:identifier)
+      .select { |id| remaining.include? id }
+  end
+
+  def all_language_filters_sorted
+    language_filters_fixed + language_filters_without_fixed
   end
 end

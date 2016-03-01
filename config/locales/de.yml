@@ -1,90 +1,1966 @@
-# Please see ./README.md for more information on I18n styles and structure.
 de:
-  conf: # translations used for app-internal things
-    current_location: 'Mein Standort'
-    default_location: 'Berlin'
-    default_latlng: '52.520007,13.404954'
-
-  js: # translations used in JavaScript. I18n-JS forces them to be located here.
-    geolocation:
-      get: Benutze meinen Standort!
-      waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
-      error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
-    location_required: |
-      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
-    autocomplete_footer: Alle %{results} Suchergebnisse für '%{query}'
-    map_info_window_multiple:
-      title: 'Mehrere Angebote'
-      text: 'Es wurden mehrere Ergebnisse für diesen Marker gefunden.'
-      anchor: 'Alle ansehen >>'
+  cells:
+    faq:
+      heading: Häufige Fragen
+      section_1:
+        heading: Wer, wie, was?
+        question_1:
+          answer: |
+            clarat ist ein Portal, auf dem man Unterstützungsangebote findet. Wir
+            helfen dir dabei, Hilfe zu finden. Aber wir beraten nicht. Dafür gibt es
+            Experten. Und genau die kannst du bei uns finden. Es gibt <b>clarat
+            family</b> und <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            <b>clarat family</b> hilft Kindern, Jugendlichen und Familien, die
+            Probleme haben. Und die Unterstützung in ihrer Nähe suchen. Hier findest
+            du einfach Hilfe. Für dich, deine Familie und deine Freunde. Oder auch
+            für andere Kinder, Jugendliche und Familien, die du kennst. Was clarat
+            family macht, kannst du dir auch in einem %{link_to_family_movie}
+            angucken.
+            </li>
+            <li>
+            <b>clarat refugees</b> hilft Flüchtlingen, die Unterstützung in ihrer
+            Nähe suchen. Hier findest du einfach Hilfe. Für dich, deine Familie und
+            deine Freunde. Auch, wenn du kein Flüchtling bist, aber Flüchtlinge
+            kennst, die Hilfe brauchen.
+            </li>
+            </ul>
+            </p>
+          link_1:
+            name: Film
+            target: _blank
+            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            var: link_to_family_movie
+          question: Was ist clarat?
+        question_10:
+          answer: |
+            Das Geld für <b>clarat family</b> und <b>clarat refugees</b> kommt von
+            der %{link_to_bsz}.
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: Wer finanziert clarat?
+        question_11:
+          answer: |
+            <b>clarat family</b> und <b>clarat refugees</b> wird es für länger geben.
+            Denn die %{link_to_bsz} finanziert die beiden Portale auch in Zukunft.
+            Du kannst hier also auch in den nächsten Jahren Hilfe finden. Das gilt
+            jetzt vor allem für Berlin. Und bald auch für andere Städte und Regionen,
+            die wir noch bei clarat aufnehmen.
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: Wie lange wird es clarat geben?
+        question_12:
+          answer: |
+            Der Programmier-Code von clarat ist öffentlich zugänglich. Den Link zu
+            unserem Code findest du %{link_to_github}.
+          link_1:
+            name: hier
+            target: _blank
+            url: https://github.com/clarat-org
+            var: link_to_github
+          question: Ist der Programmier-Code von clarat öffentlich zugänglich?
+        question_13:
+          answer: |
+            Momentan gibt es keine Schnittstelle, über die du Daten herunterladen
+            oder weiterverarbeiten kannst. Es kann sein, dass es später so eine
+            Schnittstelle geben wird. Das ist aber noch nicht ganz sicher. Jetzt
+            gerade sammeln und sortieren wir hauptsächlich Daten. Wenn Du Interesse
+            an einer solchen Schnittstelle hast, %{link_to_contact_form}.
+          link_1:
+            name: melde dich einfach bei uns
+            target: _blank
+            url: http://www.clarat.org/refugees/kontakt/new
+            var: link_to_contact_form
+          question: Bietet clarat eine Schnittstelle an, um Daten weiterzuverwenden?
+        question_2:
+          answer: |
+            In Deutschland gibt es viele Unterstützungsangebote. Für Menschen, die
+            dringend Hilfe brauchen. Diese Angebote sind aber oft schwer zu finden.
+            Zum Beispiel, weil man nicht genau weiß, wo man danach suchen soll. Oder
+            weil man nicht weiß, bei wem man sich melden muss. Das wollen wir ändern.
+          question: Wieso gibt es clarat?
+        question_3:
+          answer: |
+            Gib dein Problem ein. Und wo du Hilfe suchst. Dann findest du passende
+            Unterstützungsangebote in deiner Nähe. Oder Hilfe übers Telefon oder im
+            Internet. %{ref_to_how_to_find_right_help} erklären wir dir genau, wie du
+            findest, was du suchst. Wenn du auf ein Angebot klickst, sagen wir dir,
+            was du als nächstes tun musst. Zum Beispiel, ob du anrufen oder einfach
+            hingehen kannst.
+          link_1:
+            class: FAQ_anchor_link
+            name: Hier
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          question: Wie funktioniert clarat?
+        question_4:
+          answer: |
+            clarat ist kostenlos und bleibt kostenlos. Jeder kann kostenlos bei <b>
+            clarat family</b> nach Hilfe für Kinder, Jugendliche und Familien
+            suchen. Und jeder kann kostenlos bei <b>clarat refugees</b> nach Hilfe
+            für Flüchtlinge suchen.
+          question: Ist die Suche bei clarat kostenlos?
+        question_5:
+          answer: |
+            Die Suche bei clarat ist immer anonym. Das heißt, niemand bei clarat
+            kennt deinen Namen oder deine Adresse.
+          question: Ist die Suche bei clarat anonym?
+        question_6:
+          answer: |
+            Wir gucken regelmäßig, ob die Informationen bei clarat noch aktuell
+            sind. Denn nur so kann clarat Kindern, Jugendlichen, Familien und
+            Flüchtlingen helfen. Wenn die Informationen nicht mehr stimmen, dann
+            aktualisieren wir sie. Das heißt, wir tauschen sie aus.
+          question: Sind die Informationen bei clarat aktuell?
+        question_7:
+          answer: |
+            Einige Angebote bei <b>clarat family</b> und bei <b>clarat refugees</b>
+            kannst du von überall aus nutzen. Egal, wo du wohnst. Es gibt viele
+            Angebote, bei denen man dir am Telefon oder im Internet hilft. Das
+            heißt, per E-Mail, im Chat oder im Forum. Viele andere Angebote kannst
+            du genau da nutzen, wo du wohnst. Bei <b>clarat refugees</b> findest du
+            bald Angebote für viele Großstädte in Deutschland. Wir haben aber mit
+            Berlin angefangen. Bei <b>clarat family</b> haben wir in Berlin
+            angefangen. Hier gibt es sehr viele Angebote. Aber wir sammeln weiter.
+            Bald auch für weitere, große Städte in Deutschland.
+          question: Gibt es clarat für ganz Deutschland?
+        question_8:
+          answer: |
+            clarat zeigt dir Hilfe in deiner Nähe. Du findest alle Angebote in einer
+            Übersicht. Und zwar auf einen Blick. Außerdem sagen wir dir genau, was
+            du tun musst, um die Hilfe zu bekommen. Und wir schreiben immer in
+            einfacher Sprache. Diese einfache Sprache ist für alle leicht
+            verständlich. Denn bei clarat sollen auch Menschen Hilfe finden, die
+            nicht so gut Deutsch können. Du kannst die Angebote auch auf vielen
+            anderen Sprachen lesen. Wenn du mehr darüber wissen möchtest, klicke
+            %{ref_to_how_many_languages}.
+          link_1:
+            class: FAQ_anchor_link
+            name: hier
+            url: "/haeufige-fragen/#how_many_languages"
+            var: ref_to_how_many_languages
+          question: Was ist das Besondere an clarat?
+        question_9:
+          answer: |
+            clarat ist ein Projekt von der %{link_to_bsz}. Das ist eine
+            Familienstiftung, die schon lange viel für Kinder und Jugendliche macht.
+            Und mit clarat refugees jetzt auch für Flüchtlinge. Hier kannst du in
+            einem %{link_to_bsz_movie} mehr über die Stiftung erfahren. Die Idee zu
+            clarat ist Mitte 2014 entstanden. Das clarat-Team gibt es seit September
+            2014. Wenn du mehr über uns erfahren möchtest, schau %{link_to_about_us}.
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          link_2:
+            name: Video
+            target: _blank
+            url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
+            var: link_to_bsz_movie
+          link_3:
+            name: hier
+            target: _blank
+            url: http://www.clarat.org/ueber-uns
+            var: link_to_about_us
+          question: Wer steckt hinter clarat?
+      section_2:
+        heading: Hast du Fragen zu deiner Suche?
+        question_1:
+          anchor: who_finds_help
+          answer: |
+            clarat ist für alle – mit nur einem Klick entscheidest du dich für <b>
+            clarat family</b> oder für <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            <b>clarat family</b> ist für Kinder, Jugendliche und Familien, die Hilfe
+            brauchen. Egal ob sie Probleme in der Familie, mit Freunden, in der
+            Schule oder woanders haben.
+            </li>
+            <li>
+            <b>clarat refugees</b> ist für alle Flüchtlinge in Deutschland. Für
+            geflüchtete Kinder und Jugendliche. Für geflüchtete Frauen und Männer.
+            Für geflüchtete Familien. Also für alle, die nach Deutschland geflüchtet
+            sind und deshalb Hilfe brauchen.
+            </li>
+            </ul>
+            </p>
+            Bei clarat können aber auch Menschen suchen, die anderen helfen wollen.
+            Zum Beispiel Erzieher, Lehrer oder Nachbarn und Bekannte.
+          question: Wer findet bei clarat Hilfe?
+        question_10:
+          answer: |
+            Das kann verschiedene Gründe haben.
+            <p>
+            <ul>
+            <li>
+            Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
+            mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
+            versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
+            Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
+            diese Suche funktioniert.
+            </li>
+            <li>
+            Wenn du auf dem Land wohnst, und keine Hilfe in deiner Nähe findest,
+            schreibe in das Feld <b>Wo?</b> eine Stadt bei dir in der Nähe. Oder
+            gucke nach Hilfe, die du am Telefon oder im Internet bekommen kannst.
+            </li>
+            <li>
+            Ein anderer Grund dafür kann sein: Wir haben für deinen Stadtteil oder
+            deine Stadt noch keine Unterstützungsangebote gesammelt.
+            </li>
+            <li>
+            Oder wir haben für dein Problem leider noch keine passenden Angebote bei
+            clarat. Damit wir das bald ändern können, ist deine Rückmeldung für uns
+            sehr wichtig. Gib uns bitte per E-Mail an %{mailto_clarat} Bescheid,
+            wenn du nicht findest, was du suchst. Du kannst uns auch in unserem
+            Live-Chat schreiben. Den findest du ganz unten rechts auf der Seite.
+            </li>
+            </ul>
+            </p>
+          link_1:
+            class: FAQ_anchor_link
+            name: Hier
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          link_2:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Wieso finde ich nicht das, was ich suche?
+        question_11:
+          answer: |
+            Am besten guckst du zuerst genau, für welches Problem die Hilfe ist. Das
+            findest du unter <b>Worum geht’s?</b>. Wenn es noch nicht die richtige
+            Hilfe für dich ist, dann probiere es mit einem anderen
+            Unterstützungsangebot. Wenn du dir noch nicht sicher bist, frage am
+            besten beim Anbieter nach. Oft kann man anrufen oder eine E-Mail
+            schreiben. Telefonnummern und E-Mail-Adressen findest du bei clarat.
+            Die stehen unter <i>Wo kannst du dich melden?</i>.
+          question: Was kann ich machen, wenn ich nicht weiß, ob die Hilfe die richtige für mich ist?
+        question_12:
+          answer: |
+            Bei clarat kannst du nicht nur für dich selbst nach Hilfe suchen.
+            Sondern auch für andere. Zum Beispiel für einen Freund. Oder als Onkel
+            für deinen Neffen. Oder als Mutter für deine Tochter. Oder als Lehrer
+            für deinen Schüler. Aber wunder dich nicht nicht darüber, dass wir immer
+            zuerst die Person ansprechen, die bei diesem Angebot Hilfe bekommt. Und
+            das sind oft Kinder und Jugendliche.
+          question: Wie finde ich Hilfe, wenn ich nicht für mich selbst suche, sondern für jemand anderen?
+        question_2:
+          answer: |-
+            Du findest bei <b>clarat family</b> verschiedene Unterstützungsangebote.
+            Sie helfen dir bei verschiedenen Problemen. Wir haben sie für dich nach
+            Themen geordnet:
+            <p>
+            <ul>
+            <li>
+            <b>Kinderwagen – Familie</b><br>
+            Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
+            Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
+            Beispiel bei Problemen mit dem Erwachsenwerden. Oder mit der Erziehung.
+            Hier gibt es für jeden in der Familie Hilfe. Es gibt viele Hilfen für
+            Kinder. Und viele für Eltern.
+            </li>
+            <br>
+            <li>
+            <b>Herz – Gesundheit</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn es dir schlecht geht, weil du
+            krank bist. Oder weil jemand in deiner Familie krank ist. Oder wenn
+            einer von euch ein Suchtproblem hat. Du findest aber auch Hilfe bei
+            Problemen in der Schwangerschaft.
+            </li>
+            <br>
+            <li>
+            <b>Buch – Lernen und Arbeiten</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn du Probleme in der Schule hast.
+            Oder in der Ausbildung. Du findest aber auch Hilfe, wenn du Probleme
+            hast, eine Ausbildung zu finden. Oder wenn du nach einem Deutschkurs
+            suchst.
+            </li>
+            <br>
+            <li>
+            <b>Wegweiser – Sorgen im Alltag</b><br>
+            Hier findest du Hilfe, wenn du kleine oder große Sorgen im Alltag hast.
+            Zum Beispiel, wenn du Geldsorgen hast. Oder wenn du auf der Straße lebst.
+            Aber auch, wenn du nach etwas suchst, was du in deiner Freizeit machen
+            kannst. Oder wenn du Unterstützung dabei brauchst, Formulare und Anträge
+            auszufüllen.
+            </li>
+            <br>
+            <li>
+            <b>Faust – Gewalt</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen oder
+            missbraucht hat. Du findest aber auch Hilfe, wenn du selbst aggressiv
+            oder straffällig geworden bist.
+            </li>
+            <br>
+            <li>
+            <b>Blitz – Notfall</b><br>
+            Hier findest du schnell Hilfe, wenn du in Not bist. Bei
+            Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
+            dich immer melden. Ganz egal, wie spät es ist.
+            </li>
+            </ul>
+            </p>
+          question: Zu welchen Themen finde ich bei clarat family Hilfe?
+        question_3:
+          answer: |
+            Du findest bei <b>clarat refugees</b> verschiedene
+            Unterstützungsangebote. Sie helfen dir bei verschiedenen Themen. Wir
+            haben sie für dich geordnet:
+            <p>
+            <ul>
+            <li>
+            <b>Paragraph – Asyl und Recht</b><br>
+            Hier findest du Hilfe, wenn du Fragen zum Asylverfahren hast. Egal, ob
+            vor dem Verfahren, dabei oder danach. Also zum Beispiel auch, wenn du
+            eine Duldung hast. Oder wenn du Fragen zu den deutschen Gesetzen hast.
+            Auch minderjährige Flüchtlinge finden hier Unterstützung.
+            </li>
+            <br>
+            <li>
+            <b>Kinderwagen – Familie</b><br>
+            Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
+            Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
+            Beispiel bei Problemen mit dem Erwachsenwerden. Oder mit der Erziehung.
+            Hier gibt es für jeden in der Familie Hilfe. Es gibt viele Hilfen für
+            Kinder. Und viele für Eltern.
+            </li>
+            <br>
+            <li>
+            <b>Herz – Gesundheit</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn du krank bist. Oder wenn du
+            schwanger bist. Du findest hier auch Hilfe, wenn es dir wegen Krieg und
+            Folter schlecht geht. Oder wenn du eine Behinderung hast. Du findest
+            hier Ärzte und Psychologen, die Flüchtlingen helfen.
+            </li>
+            <br>
+            <li>
+            <b>Buch – Lernen und Arbeiten</b><br>
+            Hier findest du Hilfe, wenn du Fragen zum Thema Lernen und Arbeiten
+            hast. Zum Beispiel zu Kindergärten und Schulen. Oder wenn du wissen
+            möchtest, wie du als Flüchtling studieren kannst. Oder wenn du einen
+            Ausbildungsplatz oder eine Arbeit suchst. Du findest hier auch viele
+            verschiedene Deutschkurse. Und die Integrationskurse, die du als
+            Flüchtling machen kannst.
+            </li>
+            <br>
+            <li>
+            <b>Wegweiser – Leben in Deutschland</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn du Probleme mit Ämtern hast.
+            Zum Beispiel, weil du nicht gut Deutsch sprichst. Dann findest du hier
+            jemanden, der für dich übersetzt. Oder jemanden, der mit dir zum Amt
+            geht. Du findest hier aber auch andere Hilfe. Wir zeigen dir zum
+            Beispiel Orte, wo du Essen bekommst. Oder Möbel und Kleidung. Und du
+            findest hier Angebote, bei denen du andere Leute kennenlernen kannst.
+            Zum Beispiel in Sportvereinen oder Kochkursen.
+            </li>
+            <br>
+            <li>
+            <b>Faust – Gewalt</b><br>
+            Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen hat.
+            Oder wenn man dich im Krieg gefoltert hat. Du findest aber auch Hilfe,
+            wenn du zum Beispiel aus einer islamistischen Gruppe aussteigen möchtest.
+            </li>
+            <br>
+            <li>
+            <b>Blitz – Notfall</b><br>
+            Hier findest du schnell Hilfe, wenn du in Not bist. Bei
+            Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
+            dich immer melden. Ganz egal, wie spät es ist.
+            </li>
+            </ul>
+            </p>
+          question: Zu welchen Themen finde ich bei clarat refugees Hilfe?
+        question_4:
+          answer: |
+            Auf der Hauptseite siehst du rechts den Blitz. Wenn du auf den Blitz
+            klickst, dann siehst du ganz bestimmte Unterstützungsangebote. Diese
+            Unterstützungsangebote helfen dir in einem Notfall. Also wenn du schnell
+            Hilfe brauchst. Bei Unterstützungsangeboten, bei denen auch <b>Tag und
+            Nacht</b> steht, kannst du dich immer melden. Ganz egal, wie spät es
+            ist. Wenn du nicht so gerne rausgehen möchtest, hilft man dir hier auch
+            am Telefon oder über das Internet.
+          question: Wie finde ich schnell Hilfe, wenn ich in Not bin?
+        question_5:
+          anchor: how_to_find_right_help
+          answer: |
+            Es gibt zwei Möglichkeiten, wie du die richtige Hilfe für dich finden
+            kannst:
+            <p>
+            <ul>
+            <li>
+            Wenn du weißt, wie dein Problem oder die Hilfe heißt, nach der du
+            suchst, gibst du das einfach auf der Hauptseite in das Feld <b>Was?</b>
+            ein. Schreibe danach in das Feld <b>Wo?</b>, wo du Hilfe suchst.
+            Oder klicke in das Feld <b>Wo?</b>. Und dann auf <b>Benutze meinen
+            Standort</b>. Dann klick einfach auf die Lupe und finde Hilfe in deiner
+            Nähe!
+            </li>
+            <li>
+            Wenn du nicht genau weißt, wie dein Problem heißt, probiere die <b>Suche
+            nach Kategorien</b> aus. Wenn du zum Beispiel Probleme mit deinen
+            Hausaufgaben hast, klicke auf das Buch. Auf der linken Seite siehst du
+            dann viele Begriffe zum Thema <i>Lernen und Arbeiten</i>, die du wieder
+            anklicken kannst. Schreibe auch in das Feld <b>Wo?</b>, wo du Hilfe
+            suchst. Oder klicke in das Feld <b>Wo?</b>. Und dann auf <b>Benutze
+            meinen Standort</b>. Dann klick einfach auf die Lupe und finde Hilfe in
+            deiner Nähe!
+            </li>
+            </ul>
+            </p>
+          question: Wie finde ich die richtige Hilfe für mich?
+        question_6:
+          answer: |
+            Viele Unterstützungsangebote, die du bei clarat findest, sind kostenlos.
+            Es gibt aber auch Hilfen, die etwas kosten. Das heißt nicht automatisch,
+            dass du das dann selbst bezahlen musst. Es kann sein, dass die
+            Krankenkasse das bezahlt. Oder eine öffentliche Stelle. Das kann zum
+            Beispiel ein Amt sein. Oder eine Behörde. Am besten fragst du direkt da
+            nach, wo die Hilfe angeboten wird. Dann weißt du ganz sicher, ob das
+            Unterstützungsangebot für dich kostenlos ist.
+          question: Finde ich Hilfe, die ich kostenlos nutzen kann?
+        question_7:
+          answer: |
+            Einige Unterstützungsangebote, die du bei clarat findest, kannst du
+            anonym nutzen. Das heißt, dass du niemandem deinen Namen sagen musst.
+            Wenn du die Hilfe anonym nutzen kannst, steht das bei clarat unter
+            <i>Was musst du tun?</i> Wenn das da nicht steht, frage am besten direkt
+            da nach, wo die Hilfe angeboten wird.
+          question: Finde ich Hilfe, die ich anonym nutzen kann?
+        question_8:
+          answer: |
+            Als Kind oder Jugendlicher findest du dann Hilfe,
+            <p>
+            <ul>
+            <li>
+            wenn du eine seelische Behinderung hast. Das ist, wenn du schon länger
+            psychische Probleme hast.
+            </li>
+            <li>
+            wenn du Eltern mit einer Behinderung hast. Egal, welche Behinderung sie
+            haben. Das kann eine seelische, eine geistige oder eine körperliche
+            Behinderung sein.
+            </li>
+            <li>
+            wenn du einen Bruder oder eine Schwester mit Behinderung hast. Egal,
+            welche Behinderung sie haben. Das kann eine seelische, eine geistige
+            oder eine körperliche Behinderung sein.
+            </li>
+            </ul>
+            </p>
+          question: Finde ich bei clarat family Hilfe zum Thema Behinderung?
+        question_9:
+          answer: |
+            Starte deine Suche nach Hilfe. Wenn du wissen möchtest, wie du die
+            richtige Hilfe für dich findest, kannst du das
+            %{ref_to_how_to_find_right_help} nachlesen. Wenn du jetzt auf der
+            Ergebnisseite bist, siehst du oben rechts <b>Suchoptionen einblenden</b>.
+            Wenn du darauf klickst, kannst du verschiedene Filter benutzen.
+            Damit machst du deine Suche noch genauer:
+            <p>
+            <ul>
+            <li>
+            <b>Alter des Kindes?</b> Hier gibst du dein Alter ein. Oder das Alter
+            von dem Kind, für das du Hilfe suchst.
+            </li>
+            <li>
+            <b>Sprache?</b> Hier gibst du deine Sprache an. Dann werden
+            dir Unterstützungsangebote gezeigt, die du in deiner Sprache nutzen
+            kannst. Wenn du hier keine Sprache auswählst, werden dir automatisch
+            Unterstützungsangebote angezeigt, bei denen man Deutsch spricht.
+            </li>
+            <li>
+            <b>Hilfe für wen?</b> Hier kannst du auswählen, für wen die Hilfe sein
+            soll. Wenn du zum Beispiel für deine ganze Familie suchst, klicke <i>für
+            Familien</i> an. Suchst du als Kind nur für dich, klicke <i>für Kinder
+            und Jugendliche</i> an.
+            </li>
+            <li>
+            <b>Geschlecht?</b> Hier kannst du auswählen, ob du Hilfe <i>nur für
+            Jungen und Männer</i> oder <i>nur für Mädchen und Frauen</i> suchst.
+            Wenn du nichts anklickst, bleibt der Filter automatisch auf <i>egal</i>.
+            </li>
+            <li>
+            <b>Auf welchem Weg?</b> Hier kannst du auswählen, ob du zum Beispiel
+            nur Unterstützungsangebote finden möchtest, zu denen du persönlich
+            hingehen kannst. Dann klicke <i>persönlich</i> an. Wenn du lieber von
+            dir zu Hause aus Hilfe bekommen möchtest, klicke <i>telefonisch</i> oder
+            <i>online</i> an. Danach kannst du noch wählen zwischen Telefon, E-Mail,
+            Chat, Forum und Online-Kurs.
+            </li>
+            </ul>
+            </p>
+          link_1:
+            class: FAQ_anchor_link
+            name: hier
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          question: Wie kann ich meine Suche filtern?
+      section_3:
+        heading: Hast du Fragen zur clarat-Sprache?
+        question_1:
+          answer: |
+            Damit alle, die bei clarat nach Hilfe suchen, bei clarat auch schnell
+            Hilfe finden, ist die clarat-Sprache entstanden. Die clarat-Sprache ist
+            für alle leicht zu verstehen. Denn sie orientiert sich an der einfachen
+            Sprache. Und clarat ist schließlich für alle da. Für Kinder, Jugendliche
+            und ihre Familien. Aus verschiedenen Ländern. Für solche, die hier
+            geboren sind. Und für solche, die gerade erst nach Deutschland gekommen
+            sind. Für solche, die gut Deutsch können. Und für solche, die nicht so
+            gut Deutsch können.
+          question: Warum schreibt clarat immer in einer einfachen Sprache?
+        question_2:
+          answer: |
+            Schwierige Wörter werden bei clarat in einem Satz erklärt. Manche Wörter
+            brauchen aber längere Erklärungen. Diese Wörter erkennst du bei clarat
+            daran, dass sie unterstrichen sind. Wenn du mit der Maus über diese
+            Wörter fährst, siehst du die Erklärungen.
+          question: Wie werden schwierige Wörter bei clarat erklärt?
+        question_3:
+          answer: |
+            Bei clarat nutzen wir eine einfache Sprache. Das bedeutet auch, dass wir
+            kurze Sätze verwenden. Deswegen sagen wir nicht jedesmal Schüler und
+            Schülerinnen. Sondern nur Schüler. Obwohl wir Schüler und Schülerinnen
+            meinen. Denn wir finden es wichtig, immer alle gleich zu behandeln. Aber
+            kurze Sätze kann man leichter lesen.
+          question: Warum schreibt clarat immer nur <i>Schüler</i> und nicht <i>Schüler und Schülerinnen</i>?
+        question_4:
+          answer: |
+            Bei clarat gibt es Hilfen für Kinder, Jugendliche und Eltern jeder
+            sexuellen Orientierung. Das können Lesben, Schwule, Bisexuelle,
+            Transsexuelle und Intersexuelle sein. Die können wir aber nicht immer
+            alle aufzählen und erklären. Denn die Texte bei clarat müssen einfach
+            und kurz sein. Deswegen benutzen wir die Abkürzung LGBTI. Das ist die
+            englische Abkürzung für Lesben, Schwule, Bisexuelle, Transsexuelle und
+            Intersexuelle. Eine deutsche gibt es nicht.
+          question: Warum benutzt clarat die Abkürzung <i>LGBTI</i>?
+        question_5:
+          answer: |
+            Bei clarat benutzen wir immer eine einfache Sprache. Deswegen benutzen
+            wir Wörter, die man leicht versteht. Und die viele Menschen kennen.
+            Außerdem versuchen wir, so politisch korrekt wie möglich zu sein. Aus
+            diesen Gründen benutzen wir meistens das Wort Migranten. Und selten den
+            Ausdruck Ausländer oder Menschen mit Migrationshintergrund.
+          question: Warum benutzt clarat den Begriff <i>Migranten</i>?
+        question_6:
+          answer: |
+            Bei clarat wollen wir, dass alle schnell verstehen, wer gemeint ist.
+            Und die meisten Menschen benutzen das Wort Flüchtlinge. Deshalb machen
+            wir das auch. Auch wenn das Wort Geflüchtete genauer ist. Bei clarat
+            versuchen wir auch, so genau wie möglich zu sein. Aber noch wichtiger
+            ist uns, dass alle schnell verstehen. Dann können alle, die Hilfe
+            suchen, auch schneller Hilfe finden.
+          question: Warum benutzt clarat den Begriff <i>Flüchtlinge</i>?
+      section_4:
+        heading: Hast du Fragen zu clarat in verschiedenen Sprachen?
+        question_1:
+          anchor: how_many_languages
+          answer: |
+            Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+          question: Auf welchen Sprachen gibt es clarat?
+        question_2:
+          answer: |
+            Oben auf der Seite kannst du deine Sprache anklicken. Und schon
+            übersetzt der  Google Translator alles automatisch in deine Sprache.
+            Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein,
+            dass etwas komisch klingt.
+          question: Wie kann ich clarat in meiner Sprache lesen?
+        question_3:
+          answer: |
+            Der Google Translator macht automatische Übersetzungen. Deswegen gibt es
+            machmal sprachliche Fehler. Es kann also sein, dass etwas nicht ganz
+            richtig übersetzt wird.
+          question: Warum klingen die Texte in meiner Sprache so komisch?
+      section_5:
+        heading: Hast du Fragen als Mitarbeiter einer Organisation?
+        question_1:
+          answer: |-
+            Die Angebote deiner Organisation helfen Kindern, Jugendlichen oder
+            Familien, die Probleme haben. Darum haben wir sie bei <b>clarat
+            family</b> aufgenommen. Denn wir wollen, dass die, die Hilfe brauchen,
+            schnell und unkompliziert Hilfe bei deiner Organisation finden.
+            <br>
+            Oder die Angebote deiner Organisation helfen Flüchtlingen, die nach
+            Deutschland geflüchtet sind. Deshalb haben wir sie bei <b>clarat
+            refugees</b> aufgenommen. Denn wir wollen den Flüchtlingen schnell und
+            unkompliziert zeigen, wo sie Hilfe finden.
+          question: Warum sind die Angebote meiner Organisation bei clarat?
+        question_2:
+          answer: |
+            <b>clarat family</b> hilft Kindern, Jugendlichen und Familien, die
+            Angebote deiner Organisation zu finden. Und <b>clarat refugees</b>
+            unterstützt Flüchtlinge bei ihrer Suche nach Hilfe. Nur wer weiß,
+            dass es deine Organisation gibt, kann auch ihre Unterstützungsangebote
+            finden. Und damit jeder versteht, welche Hilfe er genau bei deiner
+            Organisation bekommt, ist bei clarat alles in einer einfachen Sprache
+            erklärt. Außerdem können alle Angebote bei clarat automatisch in viele
+            andere Sprachen übersetzt werden.
+          question: Was macht clarat für meine Organisation?
+        question_3:
+          answer: |
+            Du kannst in dem Feld <b>Was?</b> den Namen deiner Organisation
+            eintragen. Zum Beispiel <i>Musterverein e.V.</i>. Und in dem Feld <b>Wo?
+            </b> den Standort deiner Organisation. Zum Beispiel <i>Mustermannstraße
+            14 Berlin</i>. Dann bekommst du die Angebote für diesen Standort in
+            einer Übersicht angezeigt. Falls deine Organisation mehrere Standorte
+            in Berlin hat, gib in dem Feld <b>Wo?</b> nur Berlin ein.
+          question: Wie finde ich die Angebote meiner Organisation bei clarat?
+        question_4:
+          answer: |
+            Damit jeder Hilfe finden kann, schreiben wir alle Angebote in einer
+            einfachen Sprache. In einfacher Sprache müssen komplizierte Dinge
+            manchmal einfacher erklärt werden, als sie in Wirklichkeit sind. So
+            lassen sich die Texte auch automatisch viel besser übersetzen.
+            Vielleicht findest du, dass etwas anders erklärt werden soll. Dann gib
+            uns bitte Bescheid. Am besten schreibst du uns eine E-Mail an
+            %{mailto_clarat}.
+          link_1:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Warum sind die Angebote meiner Organisation bei clarat anders beschrieben als auf unserer Webseite?
+        question_5:
+          answer: |
+            Wir wollen die Suche nach Hilfe für jeden so einfach wie möglich machen.
+            Deshalb versuchen wir, die Angebote deiner Organisation so aufzuteilen,
+            dass man für jedes konkrete Problem auch immer nur ein ganz bestimmtes
+            Angebot findet. So kann der Hilfesuchende schneller die Hilfe finden,
+            die ganz genau zu ihm passt.
+          question: Warum werden aus einem Unterstützungsangebot von meiner Organisation mehrere Angebote bei clarat?
+        question_6:
+          answer: |-
+            Es gibt viele Unterstützungsangebote für Kinder, Jugendliche, Familien
+            und Flüchtlinge in Deutschland. Und clarat wird Stück für Stück
+            aufgebaut. Es kann also sein, dass wir noch nicht alle Angebote deiner
+            Organisation aufnehmen konnten. Oder wir haben vorerst entschieden, dass
+            nicht alle Angebote deiner Organisation bei clarat aufgenommen werden
+            können.
+            <p>
+            Du findest bei <b>clarat family</b> vorerst:
+            <ul>
+            <li>
+            nur Angebote, die Menschen mit Problemen helfen
+            </li>
+            <li>
+            nur kostenpflichtige Angebote von Organisationen, die gemeinnützig
+            arbeiten
+            </li>
+            <li>
+            keine Angebote, bei denen Menschen ausschließlich körperlich-
+            medizinische Hilfe bekommen
+            </li>
+            </ul>
+            </p>
+            Und du findest bei <b>clarat refugees</b> vorerst:
+            <p>
+            <ul>
+            <li>
+            keine Erstaufnahme-Einrichtungen oder Sammelunterkünfte
+            </li>
+            <li>
+            keine Kirchenasyle
+            </li>
+            <li>
+            keine Ehrenamtsportale oder Spendenportale
+            </li>
+            </ul>
+            </p>
+          question: Warum finde ich nicht alle Angebote meiner Organisation bei clarat?
+        question_7:
+          answer: |
+            Melde dich bei uns. Du kannst uns Fehler und Änderungswünsche einfach
+            mitteilen. Am besten schreibe uns eine E-Mail an %{mailto_clarat} oder
+            ruf an unter +49 (0)30 55 57 96 00.
+          link_1:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Wie kann ich Fehler oder Änderungswünsche melden?
+        question_8:
+          answer: |
+            Das kann zwei Gründe haben:
+            <p>
+            <ul>
+            <li>
+            Das kann daran liegen, dass wir für den Standort deiner Organisation
+            leider noch keine Angebote gesammelt haben. Und clarat wird Stück für
+            Stück aufgebaut. Es kann also sein, dass wir deine Organisation noch
+            nicht aufnehmen konnten.
+            </li>
+            <li>
+            Oder daran, dass die Angebote deiner Organisation inhaltlich nicht zu
+            clarat passen. Bei clarat findet man nur Angebote zu ganz bestimmten
+            Themen. Welche das sind, kannst du %{ref_to_who_finds_help} nachlesen.
+            Wenn wir die Angebote deiner Organisation bei clarat aufnehmen sollen,
+            melde dich bei uns. Am besten schreibe uns eine E-Mail an
+            %{mailto_clarat} oder ruf an unter +49 (0)30 55 57 96 00.
+            </li>
+            </ul>
+            </p>
+          link_1:
+            class: FAQ_anchor_link
+            name: hier
+            url: "/haeufige-fragen/#who_finds_help"
+            var: ref_to_who_finds_help
+          link_2:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Warum ist meine Organisation nicht bei clarat?
+  conf:
+    current_location: Mein Standort
+    default_latlng: 52.520007,13.404954
+    default_location: Berlin
+  contacts:
+    create:
+      success: Die Nachricht wurde erfolgreich abgeschickt.
+    new:
+      contact_heading: Was möchtest du uns mitteilen?
+    shared:
+      new:
+        email_placeholder:
+          required:
+            'false': E-Mail Adresse (Optional)
+            'true': E-Mail Adresse (Pflicht)
+        message_placeholder: Nachricht eingeben (Pflicht)
+        name_placeholder: Name (Pflicht)
+        send: Abschicken
+        send_us_a_message: Schreibe uns eine Nachricht
+  emails:
+    offers_index:
+      family:
+        heading: |
+          Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+        no_results: |
+          Es gibt derzeit keine veröffentlichten clarat family-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: Dein <strong>clarat refugees</strong>-Angebot
+          other: Deine <strong>%{count} clarat refugees</strong>-Angebote
+      obfuscated_email: deine E-Mail-Adresse
+      refugees:
+        heading: |
+          Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+        no_results: |
+          Es gibt derzeit keine veröffentlichten clarat refugees-Angebote für
+          <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: Dein <strong>clarat family</strong>-Angebot
+          other: Deine <strong>%{count} clarat family</strong>-Angebote
+      shared:
+        explanation_1: |
+          Hier siehst du auf einen Blick alle deine Angebote bei clarat. Das sind
+          Angebote, bei denen wir deine E-Mail-Adresse als Kontaktadresse gefunden
+          haben.
+        explanation_2: |
+          Wenn wir in Zukunft neue Angebote von dir finden, siehst du die Links zu
+          diesen neuen Angeboten auch hier.
+        explanation_3: |
+          Du kannst dazu diese Seite in deinen Favoriten speichern und so schnell
+          auf einen Blick sehen, was es von dir bei clarat gibt.
+        explanation_4: |
+          Möchtest du per E-Mail informiert werden, wenn neue Angebote von dir bei
+          clarat online sind? Dann nutze den Link am Ende der E-Mail, die du von
+          uns bekommen hast.
+        info: Info
+    subscribe:
+      success_html: |
+        Du hast dich erfolgreich für Benachrichtigungen zu Angeboten mit deiner
+        E-mail-Adresse angemeldet.
+        (<a href="%{unsubscribe_href}">wieder abmelden</a>)
+    unsubscribe:
+      success_html: |
+        Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
+        (<a href="%{subscribe_href}">wieder anmelden</a>)
+  enumerize:
+    search_form:
+      age:
+        '0': 0
+        '1': 1
+        '10': 10
+        '11': 11
+        '12': 12
+        '13': 13
+        '14': 14
+        '15': 15
+        '16': 16
+        '17': 17
+        '18': 18
+        '19': 19
+        '2': 2
+        '20': 20
+        '21': 21
+        '22': 22
+        '23': 23
+        '24': 24
+        '25': 25
+        '26': 26
+        '27': 27
+        '28': 28
+        '29': 29
+        '3': 3
+        '30': 30
+        '31': 31
+        '32': 32
+        '33': 33
+        '34': 34
+        '35': 35
+        '36': 36
+        '37': 37
+        '38': 38
+        '39': 39
+        '4': 4
+        '40': 40
+        '41': 41
+        '42': 42
+        '43': 43
+        '44': 44
+        '45': 45
+        '46': 46
+        '47': 47
+        '48': 48
+        '49': 49
+        '5': 5
+        '50': 50
+        '51': 51
+        '52': 52
+        '53': 53
+        '54': 54
+        '55': 55
+        '56': 56
+        '57': 57
+        '58': 58
+        '59': 59
+        '6': 6
+        '60': 60
+        '61': 61
+        '62': 62
+        '63': 63
+        '64': 64
+        '65': 65
+        '66': 66
+        '67': 67
+        '68': 68
+        '69': 69
+        '7': 7
+        '70': 70
+        '71': 71
+        '72': 72
+        '73': 73
+        '74': 74
+        '75': 75
+        '76': 76
+        '77': 77
+        '78': 78
+        '79': 79
+        '8': 8
+        '80': 80
+        '81': 81
+        '82': 82
+        '83': 83
+        '84': 84
+        '85': 85
+        '86': 86
+        '87': 87
+        '88': 88
+        '89': 89
+        '9': 9
+        '90': 90
+        '91': 91
+        '92': 92
+        '93': 93
+        '94': 94
+        '95': 95
+        '96': 96
+        '97': 97
+        '98': 98
+        '99': 99
+      contact_type:
+        personal: Personal
+        remote: Remote
+      language:
+        '150': 150
+        '326': 326
+        '568': 568
+        '639': 639
+        amh: Amh
+        ara: Ara
+        aze: Aze
+        bel: Bel
+        ben: Ben
+        bos: Bos
+        bul: Bul
+        deu: Deu
+        ell: Ell
+        eng: Eng
+        fas: Fas
+        fra: Fra
+        hin: Hin
+        hrv: Hrv
+        hun: Hun
+        ita: Ita
+        kik: Kik
+        kur: Kur
+        lav: Lav
+        lit: Lit
+        ltz: Ltz
+        luo: Luo
+        mkd: Mkd
+        nor: Nor
+        pol: Pol
+        por: Por
+        rom: Rom
+        ron: Ron
+        rus: Rus
+        snk: Snk
+        spa: Spa
+        sqi: Sqi
+        srp: Srp
+        swa: Swa
+        swe: Swe
+        tam: Tam
+        tel: Tel
+        tgk: Tgk
+        tha: Tha
+        tuk: Tuk
+        tur: Tur
+        urd: Urd
+        uzb: Uzb
+        vie: Vie
+        wol: Wol
+        zho: Zho
+        zza: Zza
+      section:
+        family: Family
+        refugees: Refugees
+  formtastic:
+    hints:
+      update_request:
+        index:
+          email: 
+  js:
+    ajax_error:
+      error: Suchfehler
+      message: |
+        Tut uns leid, es ist ein Fehler bei der Suche aufgetreten. Wenn dieses
+        Problem wiederholt auftritt, kontaktiere uns bitte.
+    autocomplete_footer: Alle %{results} Suchergebnisse für „%{query}“
+    categories_sidebar:
+      all_categories: Alle Kategorien
     cookie_warning_html: |
       Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
       Website erklären Sie sich einverstanden, dass wir Cookies setzen.
       <a href="/datenschutzhinweise">Mehr</a>.
-    more_filter_options: 'Mehr Filter anzeigen'
-    less_filter_options: 'Weniger Filter anzeigen'
-    mobile_filter: 'Ergebnisse filtern'
-    ajax_error:
-      error: "Suchfehler"
-      message: |
-        Tut uns leid, es ist ein Fehler bei der Suche aufgetreten. Wenn dieses
-        Problem wiederholt auftritt, kontaktiere uns bitte.
+    geolocation:
+      error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
+      get: Benutze meinen Standort!
+      waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
+    lang_list_toggle:
+      less: Weniger Sprachen zeigen
+      more: Mehr Sprachen zeigen
+    less_filter_options: Weniger Filter anzeigen
+    location_required: |
+      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+    map_info_window_multiple:
+      anchor: Alle ansehen >>
+      text: Es wurden mehrere Ergebnisse an dieser Adresse gefunden.
+      title: Mehrere Angebote
+    mobile_filter: Ergebnisse filtern
+    more_filter_options: Mehr Filter anzeigen
     query_field:
+      example_placeholder: z.B. %{word}
       placeholder_words:
         family:
-          - Drogen
-          - Gewalt
-          - Nachhilfe
-          - Notfall
-          - Recht
-          - arbeitslos
-          - Erziehungsprobleme
-          - Essstörung
-          - obdachlos
-          - Familienprobleme
-          - schwanger
-          - Streit
-          - wohnen
+        - Drogen
+        - Gewalt
+        - Nachhilfe
+        - Notfall
+        - Recht
+        - arbeitslos
+        - Erziehungsprobleme
+        - Essstörung
+        - obdachlos
+        - Familienprobleme
+        - schwanger
+        - Streit
+        - wohnen
         refugees:
-          - Staatsbürgerschaft
-          - Deutschkurs
-          - Anerkennung
-          - Kriegstrauma
-          - Asylverfahren
-          - Gesundheitsversorgung
-          - Behörden
-          - Aufenthaltsrecht
-      example_placeholder: "z.B. %{word}"
-
+        - Staatsbürgerschaft
+        - Deutschkurs
+        - Anerkennung
+        - Kriegstrauma
+        - Asylverfahren
+        - Gesundheitsversorgung
+        - Behörden
+        - Aufenthaltsrecht
+    routes:
+      faq: haeufige-fragen
     search:
-      form_more_label: "Suchoptionen einblenden"
-      form_less_label: "Suchoptionen ausblenden"
+      form_less_label: Suchoptionen ausblenden
+      form_more_label: Suchoptionen einblenden
+      headlines:
+        age: Alter des Kindes
+        approach: Auf welchem Weg?
+        gender: Geschlecht
+        language: Sprache
+        target_audience: Hilfe für wen?
+      option_any: egal
+      pagination:
+        back: Zurück
+        gap: "…"
+        next: Weiter
     search_results:
-      more: "Weitere Telefon- und Onlineangebote"
-      bridge: "für"
-      enclosing: "gefunden"
-      faq_text: "Häufige Fragen und Antworten zur Suche findest du "
-      faq_anchor: "hier"
+      bridge: für den Suchbegriff
+      enclosing: gefunden
+      faq_anchor: hier
+      faq_text: 'Häufige Fragen und Antworten zur Suche findest du '
+      language_explanation:
+        connector: und
+        text: Dieses Angebot gibt es auf %{language_list}.
       map:
-        enlarge_map: "Karte vergrößern"
-        headline_small_map: "Angebote vor Ort auf der Karte"
+        cooperation: Kooperationsprojekt
+        enlarge_map: Karte vergrößern
+        headline_small_map: Angebote vor Ort auf der Karte
+      more: Weitere Telefon- und Onlineangebote
       personal_offers:
-        zero: "Leider keine Angebote"
-        one: "Ein Angebot vor Ort"
+        one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
+        zero: Leider keine Angebote vor Ort
       remote_offers:
-        zero: "Keine Telefonberatungen und Onlineangebote"
-        one: "Eine Telefonberatung oder ein Onlineangebot"
+        one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
-
-    categories_sidebar:
-      all_categories: "Alle Kategorien"
+        zero: Keine Telefonberatungen und Onlineangebote
+      show_personal: Zeige lokale Angebote
+    shared:
+      current_and_original_locale:
+        "'150'": Deutsche Gebärdensprache
+        "'326'": Ukrainisch - українська
+        "'568'": Niederländisch - Nederlands
+        "'639'": Dari - دری
+        '150': Deutsche Gebärdensprache
+        '326': Ukrainisch - українська
+        '568': Niederländisch - Nederlands
+        '639': Dari - دری
+        amh: Amharisch - አማርኛ
+        ara: Arabisch - عربي
+        aze: Aserbaidschanisch - Azərbaycan
+        bel: Weißrussisch - беларуская мова
+        ben: Bengalisch - বাংলা
+        bos: Bosnisch - bosanski
+        bul: Bulgarisch - български
+        deu: Deutsch
+        ell: Griechisch - ελληνικά
+        eng: Englisch - English
+        fas: Persisch (Farsi) - فارسی
+        fra: Französisch - Français
+        hin: Hindi - हिन्दी
+        hrv: Kroatisch - hrvatski
+        hun: Ungarisch - magyar
+        ita: Italienisch - italiano
+        kik: Kikuyu - Gĩkũyũ
+        kur: Kurdisch - کوردی
+        lav: Lettisch - latviešu
+        lit: Litauisch - lietuvių
+        ltz: Luxemburgisch - Lëtzebuergesch
+        luo: Luo - Dholuo
+        mkd: Mazedonisch - македонски
+        mul: weitere Sprachen auf Anfrage
+        nor: Norwegisch - Norsk
+        pol: Polnisch - polski
+        por: Portugiesisch - português
+        rom: Romanes - Romani
+        ron: Rumänisch - română
+        rus: Russisch - русский
+        snk: Soninke - Soninkanxaane
+        spa: Spanisch - español
+        sqi: Albanisch - Shqipja
+        srp: Serbisch - српски
+        swa: Swahili - Kiswahili
+        swe: Schwedisch - svenska
+        tam: Tamil - தமிழ்
+        tel: Telugu - తెలుగు
+        tgk: Tadschikisch - тоҷикӣ / تاجیکی
+        tha: Thai - ภาษาไทย
+        tuk: Turkmenisch - Türkmençe / Tүркменче
+        tur: Türkisch - Türkçe
+        urd: Urdu - اردو
+        uzb: Usbekisch - Oʻzbek tili
+        vie: Vietnamesisch - tiếng Việt
+        wol: Wolof - wɔlɔf
+        zho: Chinesisch - 普通话 / 普通話
+        zza: Zaza - Zazaki / Kırmancki
     single_search_result:
       encounters:
-        personal: "Persönlich" #?
-        hotline: "Telefon"
-        email: "E-Mail"
-        chat: "Chat"
-        forum: "Forum"
-        online-course: "Online-Kurs"
-        portal: "Adressliste"
+        chat: Chat
+        email: E-Mail
+        forum: Forum
+        hotline: Telefon
+        online-course: Online-Kurs
+        personal: Persönlich
+        portal: Adressliste
+  layouts:
+    partials:
+      banner:
+        teaser:
+          link: Hier erfährst du mehr
+          refugees: Bald auch Angebote für Flüchtlinge
+          text: clarat.org wird gerade aufgebaut
+      footer:
+        about: "Über uns"
+        blog: Blog
+        contact: Kontakt
+        faq: Häufige Fragen
+        fb:
+          anchor: Facebook
+          href: https://www.facebook.com/claratpunktorg
+        gplus:
+          anchor: Google+
+          href: https://plus.google.com/110429028641743127592/about
+        impressum: Impressum
+        privacy: Datenschutzhinweise
+        tos: Rechtliche Hinweise
+        twitter:
+          anchor: Twitter
+          href: https://twitter.com/claratpunktorg
+      modal:
+        beta_modal:
+          link: schreibe uns einfach eine Nachricht.
+          text: |
+            Unsere Internetseite clarat.org ist noch ganz neu. Für Berlin kannst
+            du schon viele Hilfsangebote finden. Bald sammeln wir auch
+            Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
+            Hast du etwas gesehen, das wir besser machen können? Oder
+            funktioniert etwas nicht richtig? Dann
+        unavailable_location_modal: |
+          Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
+          oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
+          Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
+          Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
+          Trage dazu deine E-Mail-Adresse hier ein.
+      nav_lang:
+        languages:
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polskie
+          ru: "НА РУССКОМ"
+          tr: Türkçe
+        title: Wähle deine Sprache
+      navigation:
+        category_headline: Oder suche nach Kategorien
+        claim:
+          family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+          main: Einfach Hilfe finden
+          refugees: Unterstützungsangebote für Flüchtlinge
+  offers:
+    index:
+      filters:
+        json:
+          age:
+            one: 1 Jahr
+            other: "%{count} Jahre"
+            zero: "< 1 Jahr"
+          contact_type:
+            personal: vor Ort
+            remote: telefonisch oder online
+          encounter:
+            chat: Chat
+            email: E-Mail
+            forum: Forum
+            hotline: Telefon
+            online-course: Online-Kurs
+            portal: Adressliste
+          exclusive_gender:
+            boys_only: nur für Jungen und Männer
+            girls_only: nur für Mädchen und Frauen
+          target_audience:
+            acquaintances: für Bekannte und Verwandte
+            children: für Kinder und Jugendliche
+            family_acquaintances: für Bekannte und Verwandte
+            family_children: für Kinder und Jugendliche
+            family_nuclear_family: für Familien
+            family_parents: für Eltern
+            family_pregnant_woman: für Schwangere
+            nuclear_family: für Familien
+            parents: für Eltern
+            pregnant_woman: für Schwangere
+      map_sidebar:
+        map_output_searchresults: Kartenausgabe der Suchergebnisse
+      noscript_warning: |
+        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
+        Browser JavaScript aktiviert haben.
+      pending_ajax:
+        searching: Suche…
+    invalid_location:
+      text: |
+        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
+        versuche es gegebenenfalls mit einer alternativen Eingabe
+        (z.B. "Postleitzahl Ort").
+      title: Leider konnten wir den von dir eingegeben Standort nicht finden
+    shared:
+      current_and_original_locale:
+        '150': Deutsche Gebärdensprache
+        '326': Ukrainisch - українська
+        '568': Niederländisch - Nederlands
+        '639': Dari - دری
+        amh: Amharisch - አማርኛ
+        ara: Arabisch - عربي
+        aze: Aserbaidschanisch - Azərbaycan
+        bel: Weißrussisch - беларуская мова
+        ben: Bengalisch - বাংলা
+        bos: Bosnisch - bosanski
+        bul: Bulgarisch - български
+        deu: Deutsch
+        ell: Griechisch - ελληνικά
+        eng: Englisch - English
+        fas: Persisch (Farsi) - فارسی
+        fra: Französisch - Français
+        hin: Hindi - हिन्दी
+        hrv: Kroatisch - hrvatski
+        hun: Ungarisch - magyar
+        ita: Italienisch - italiano
+        kik: Kikuyu - Gĩkũyũ
+        kur: Kurdisch - کوردی
+        lav: Lettisch - latviešu
+        lit: Litauisch - lietuvių
+        ltz: Luxemburgisch - Lëtzebuergesch
+        luo: Luo - Dholuo
+        mkd: Mazedonisch - македонски
+        mul: weitere Sprachen auf Anfrage
+        nor: Norwegisch - Norsk
+        pol: Polnisch - polski
+        por: Portugiesisch - português
+        rom: Romanes - Romani
+        ron: Rumänisch - română
+        rus: Russisch - русский
+        snk: Soninke - Soninkanxaane
+        spa: Spanisch - español
+        sqi: Albanisch - Shqipja
+        srp: Serbisch - српски
+        swa: Swahili - Kiswahili
+        swe: Schwedisch - svenska
+        tam: Tamil - தமிழ்
+        tel: Telugu - తెలుగు
+        tgk: Tadschikisch - тоҷикӣ / تاجیکی
+        tha: Thai - ภาษาไทย
+        tuk: Turkmenisch - Türkmençe / Tүркменче
+        tur: Türkisch - Türkçe
+        urd: Urdu - اردو
+        uzb: Usbekisch - Oʻzbek tili
+        vie: Vietnamesisch - tiếng Việt
+        wol: Wolof - wɔlɔf
+        zho: Chinesisch - 普通话 / 普通話
+        zza: Zaza - Zazaki / Kırmancki
+      search_form:
+        button: Suchen
+        loc_label: Wo
+        loc_placeholder:
+          long: Adresse, Stadtteil, Stadt oder PLZ
+          short: Stadt, PLZ, …
+        query_label: Was
+        query_placeholder:
+          long: Angebote zum Thema …
+          short: Angebote zu …
+    show:
+      last_update: Eintrag zuletzt bearbeitet am
+      next_steps:
+        code_word: Wonach musst du fragen oder auf der Webseite suchen?
+        heading: Was musst du tun?
+      opening_section:
+        days:
+          fri: Freitag
+          mon: Montag
+          sat: Samstag
+          sun: Sonntag
+          thu: Donnerstag
+          tue: Dienstag
+          wed: Mittwoch
+        heading: Wann kannst du das machen?
+      speaking: In welcher Sprache hilft man dir?
+      website_section:
+        internet_presence: Wo erfährst du mehr im Netz?
+        websites:
+          application_form: Anmeldeformular
+          chat: Chat
+          contact_form: Kontaktformular
+          document: Weitere Infos
+          facebook: Facebook
+          forum: Forum
+          gplus: Google+
+          online_consulting: Onlineberatung
+          online_course: Online-Kurs
+          own: Webseite
+          pinterest: Pinterest
+          twitter: Twitter
+          youtube: Youtube
+      what: Worum geht's?
+      who: Wer bietet diese Hilfe an?
+      who_contact_people:
+        dr: Dr.
+        email: 'E-Mail: '
+        fax: 'Fax: '
+        female: Frau
+        male: Herr
+        obfuscated_email: |
+          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+        phone: 'Telefon: '
+        prof_dr: Prof. Dr.
+      who_location:
+        organizations: 'Ein Angebot von:'
+      who_section:
+        heading: Wo kannst du dich melden?
+  opening:
+    display_string:
+      appointment: nach Vereinbarung
+      midnight_exception: 24:00 Uhr
+      time_format: "%H:%M Uhr"
+      time_frame: "%{open} - %{close}"
+  organizations:
+    show:
+      offers_all: Welche Hilfe bietet diese Organisation?
+      where: Wo findest du die Organisation?
+      who: Was macht die Organisation?
+  pages:
+    about:
+      amina: |
+        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
+        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
+        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
+        Prima Estate von Erlend Oye.
+      andrea: |
+        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
+        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
+        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
+        Lieblingssong ist Work Me von The Black Keys.
+      anne: |
+        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
+        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
+        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
+        Sie Groß von Deichkind.
+      astrid: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
+        The Roots feat. Erykah Badu.
+      basti: |
+        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
+        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
+        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
+        The Mirror von Michael Jackson.
+      bettina: |
+        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
+        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
+        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
+        Lieblingssong ist Elias von Dispatch.
+      elisa: |
+        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
+        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
+        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
+        Behind von Kings of Convenience.
+      franziska: |
+        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
+        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
+        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Explanations von Selah Sue.
+      heading: Wer steckt hinter clarat?
+      janina: |
+        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
+        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
+        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
+        weiter. Ihr Lieblingssong ist MFG von Fanta4.
+      janne: |
+        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
+        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
+        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
+        Sweat von Ry X.
+      jens: |
+        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
+        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
+        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
+        Sein Lieblingssong ist 2B2 von Lambchop.
+      jule: |
+        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
+        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
+        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
+        Lieblingssong ist Home von Edward Sharpe.
+      julia: |
+        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
+        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
+        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
+        Lieblingssong ist Reckoner von Radiohead.
+      julian: |
+        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
+        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
+        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
+        ist All You Need von Sublime.
+      katinka: |
+        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
+        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
+        Cat Power.
+      konstantin: |
+        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
+        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
+        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
+      laura: |
+        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
+        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
+        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
+        ist Paint It Black von den Rolling Stones.
+      lavinia: |
+        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
+        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
+        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
+        Lieblingssong ist I'm Not Done von Fever Ray.
+      line: |
+        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
+        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
+        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
+        den Rolling Stones.
+      lisa: |
+        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
+        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
+        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
+      marcus: |
+        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
+        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
+        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
+        Lieblingssong ist Hysteria von MUSE.
+      nicole: |
+        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
+        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
+        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
+        Shaka Ponk.
+      nils: |
+        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
+        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
+        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
+        Jein von Fettes Brot.
+      stefan: |
+        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
+        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
+        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
+        Storm von The Doors.
+      text: |
+        clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
+        (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
+        seit vielen Jahren wirksame Projekte der Kinder- und Jugendförderung.
+        Dabei fiel uns eines immer wieder auf: Es ist schwer herauszufinden,
+        welche Unterstützungsangebote es überhaupt gibt. Und dann wurde uns
+        etwas klar: Wenn es für uns als „Experten“ schon so schwer ist, einen
+        Überblick zu bekommen, wie schwer muss es dann für Kinder, Jugendliche
+        und Familien sein, die wirklich Hilfe brauchen? Oder für Flüchtlinge,
+        die sich ja hier in Deutschland noch überhaupt nicht auskennen? Die
+        Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
+        Einfach Hilfe finden. Für Familien auf clarat family. Und für
+        Flüchtlinge auf clarat refugees.
+      tine: |
+        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
+        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
+        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
+        Lieblingssong ist Survive It von Ghostpoet.
+      title: "Über Uns"
+      verena: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
+        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
+        Lieblingssong ist Lose It von Oh Wonder.
+    agb:
+      heading: Rechtliche Hinweise
+      text_html: |
+        <p>
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
+        Stiftung Zukunft („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
+        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
+        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
+        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
+        </p>
+        <p>
+        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
+        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
+        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
+        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
+        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
+        Serviceleistungen oder Informationen, die Sie über unsere Webseite
+        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
+        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
+        können aus ihnen keine Rechtsansprüche abgeleitet werden.
+        </p>
+        <p>
+        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
+        </p>
+        <p>
+        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
+        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
+        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
+        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
+        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
+        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
+        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
+        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
+        Genehmigung erfolgt.
+        </p>
+        <p>
+        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
+        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
+        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
+        Inhalt solcher Webseiten nicht zu Eigen.
+        </p>
+        <p>
+        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
+        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
+        der Bundesrepublik Deutschland.
+        </p>
+      title: Rechtliche Hinweise
+    faq:
+      title: Häufige Fragen
+    home:
+      how:
+        heading: Wie funktioniert clarat?
+        text: |
+          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
+          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
+          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
+          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
+          Oder einfach vorbeigehen kannst.
+      title:
+        family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+        refugees: Unterstützungsangebote für Flüchtlinge
+      whom:
+        heading: Für wen ist clarat?
+        text: |
+          clarat ist für alle da. clarat family für Kinder, Jugendliche und
+          Familien. clarat refugees für Flüchtlinge. Hier findest du
+          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
+          und deine Freunde. Oder auch für andere Menschen, die du kennst und
+          die Hilfe brauchen.
+      why:
+        heading: Warum gibt es clarat?
+        text: |
+          Mit clarat lässt sich einfach Hilfe finden. In Deutschland gibt es
+          viele Angebote, die Kinder, Jugendliche und Familien unterstützen.
+          Und auch ganz viele Angebote für Flüchtlinge. Sie sind aber oft schwer
+          zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
+          auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
+          refugees.
+    impressum:
+      heading: Impressum
+      responsible_html: |
+        Vorstand<br/>
+        Dr. Dr. Christoph Glaser<br/>
+        (verantwortlich für den Inhalt der Website)
+      title: Impressum
+    not_found:
+      description: |
+        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
+        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
+        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
+        Bilder nach passender Hilfe suchen.
+      heading: Leider konnten wir diese Seite nicht finden.
+      link_text: hier
+      title: 404
+    privacy:
+      chapter_eight:
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_second_paragraph: |
+          Ihre Fragen zum
+          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
+          Beschwerden oder Ähnliches richten Sie bitte an:
+        text: |
+          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
+          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
+          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
+          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
+          folgenden Link klicken:
+          %{google_optout}.
+      chapter_five:
+        heading: 5. Social Media Plugins
+        nested_text_four: |
+          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
+          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
+          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
+          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
+          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
+          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
+          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
+          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
+          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
+          wurde.
+        nested_text_one: |
+          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
+          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
+          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
+          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
+          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
+          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
+          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
+          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
+          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
+          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
+          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
+          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
+          diese Information an Ihr Facebook-Profil in die USA übermittelt.
+          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
+          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
+          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
+          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Facebook (%{facebook}).
+        nested_text_three: |
+          Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
+          600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
+          Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an
+          Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Twitter (%{twitter}).
+        nested_text_two: |
+          Wir verwenden Social Plugins von Google. Klicken Sie auf den
+          Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an
+          Google in die USA übermittelt und Ihrem Google-Konto zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch Google,
+          über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
+          Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
+          (%{google}).
+        nested_title_four: 5.4. Whats App
+        nested_title_one: 5.1 Facebook
+        nested_title_three: 5.3 Twitter
+        nested_title_two: 5.2 Google+
+        text: |
+          Auf dieser Webseite werden Plugins von sozialen Netzwerken nach den
+          folgenden Maßgaben verwendet:
+      chapter_four:
+        heading: 4. Einbindung von Diensten Dritter
+        text: |
+          Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
+          Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
+          davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner
+          herstellen können und damit Ihre IP-Adresse erhalten. Nähere
+          Informationen zur Erhebung und Nutzung der Daten durch die
+          Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
+      chapter_one:
+        heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
+        text: |
+          Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern
+          wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen:
+          Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und
+          Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung
+          sowie über die Art Ihres Browsers und Betriebssystems. Die
+          Verarbeitung dieser Informationen ist technisch notwendig, um die
+          Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn
+          Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht
+          gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter
+          nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung
+          zusenden).
+      chapter_seven:
+        heading: |
+          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        nested_text_one: |
+          Für den Versand unseres Newsletters
+          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
+          einem Unternehmen der The Rocket Science Group, LLC aus den USA
+          zurück. Dort erfolgt die Datenverarbeitung für uns streng
+          weisungsgebunden als technische Dienstleistung im Rahmen einer
+          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
+          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
+          verpflichtet sind.
+        nested_text_two: |
+          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
+          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
+          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
+          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
+          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
+          Verarbeitung von Daten. Bitte beachten Sie auch die
+          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
+          Verwendung des Service-Portals ist mindestens die Angabe einer
+          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
+          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
+          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
+          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
+          optional und dient der Verbesserung und Beschleunigung unseres
+          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
+          Datenspeicherung im externen System von Freshdesk nicht einverstanden
+          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
+          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
+        nested_title_one: 7.1. MailChimp/Mandrill
+        nested_title_two: 7.2. Freshdesk
+        text: |
+          Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
+          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
+          elektronische und organisatorische Schutzprozesse eingerichtet, die
+          die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
+          nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
+          der vorstehenden Regelung sind unsere Dienstleistungspartner, die
+          wir zur Abwicklung unserer Leistungen benötigen.
+      chapter_six:
+        heading: 6. Datenlöschung
+        text: |
+          Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
+          ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
+          Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
+          weitergehenden Speicherung verpflichtet sind.
+      chapter_three:
+        heading: 3. Informationen über Ihr Nutzungsverhalten
+        nested_text_one: |
+          Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
+          Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
+          Textdateien, die auf Ihrem Computer gespeichert werden und die eine
+          Analyse der Benutzung der Website durch Sie ermöglichen. Die durch
+          den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite
+          (einschließlich Ihrer IP-Adresse) werden in der Regel an einen Server
+          von Google in den USA übertragen und dort gespeichert. Im Falle der
+          Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre
+          IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der
+          Europäischen Union oder in anderen Vertragsstaaten des Abkommens
+          über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in
+          Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in
+          den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
+          Website wird Google diese Informationen benutzen, um Ihre Nutzung der
+          Webseite auszuwerten, um Berichte über die Webseiteaktivitäten für die
+          Webseitebetreiber zusammenzustellen und um weitere mit der
+          Webseitenutzung und der Internetnutzung verbundene Dienstleistungen
+          zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser
+          übermittelte IP-Adresse wird nicht mit anderen Daten von Google
+          zusammengeführt. Sie können die Speicherung der Cookies durch eine
+          entsprechende Einstellung Ihrer Browser Software verhindern; wir
+          weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
+          nicht sämtliche Funktionen dieser Website vollumfänglich werden
+          nutzen können. Sie können darüber hinaus die Erfassung der durch das
+          Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
+          (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten
+          durch Google verhindern, indem sie das unter dem folgenden Link
+          verfügbare Browser-Plugin herunterladen und installieren: %{google_optout}.
+          Nähere Informationen zu
+          Nutzungsbedingungen und Datenschutz finden Sie unter %{analytics_terms}
+           bzw. unter
+          %{policies}. Angesichts der Diskussion um
+          den Einsatz von Analysetools mit vollständigen IP-Adressen möchten wir
+          darauf hinweisen, dass diese Webseite Google Analytics mit der
+          Erweiterung “_anonymizeIp()” verwendet und daher IP-Adressen nur
+          gekürzt weiterverarbeitet werden, um eine direkte
+          Personenbeziehbarkeit auszuschließen. Diese Website nutzt die
+          Google-Analytics-Berichte zu demografischen Merkmalen, in denen Daten
+          aus interessenbezogener Werbung von Google sowie Besucherdaten von
+          Drittanbietern (z. B. Alter, Geschlecht und Interessen) verwendet
+          werden. Diese Daten sind nicht auf eine bestimmte Person
+          zurückzuführen und können jederzeit über die Anzeigeneinstellungen
+          %{ads} deaktiviert werden. Durch die
+          Nutzung dieser Webseite erklären Sie sich mit der Bearbeitung der über
+          Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und
+          Weise und zu dem zuvor benannten Zweck einverstanden.
+        nested_text_one_second_paragraph: |
+          Daneben setzt diese Webseite den Webanalysedienst Optimizely von
+          Optimizely Inc. ein, der für A/B-Tests verwendet wird. Dieser Service
+          verwendet Cookies um den Browser eines Besuchers zu identifizieren
+          und die Nutzung dieser Webseite zu analysieren. Die Cookies sammeln
+          keine personenbezogenen Daten. Mehr Informationen darüber, wie
+          Optimizely Ihre Daten verarbeitet, finden Sie unter
+          %{optimizely_privacy}. Sie können das Optimizely-Tracking
+          jederzeit deaktivieren, indem Sie der Anleitung auf
+          %{optimizely_optout} folgen
+        nested_text_two: |
+          Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
+          werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
+          werden von dem Web-Server, den Sie zur Herstellung einer Verbindung
+          mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) verwendet
+          haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies,
+          hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa
+          um den zuletzt von Ihnen nachgesuchten Standort für Sie zu speichern.
+          Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur
+          während der Dauer ihres Besuches auf der Webseite funktionieren und
+          nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende
+          Web-Session oder den Browser schließen, wird das Cookie automatisch
+          gelöscht. Davon ausgenommen sind die Informationen über den von Ihnen
+          zuletzt nachgesuchten Standort; diese werden nach Ablauf von drei
+          Monaten automatisch gelöscht.
+        nested_text_two_second_paragraph: |
+          Browser Einstellungen: Die meisten Browser sind so eingestellt, dass
+          sie Cookies automatisch akzeptieren. Sie können jedoch das Speichern
+          von Cookies deaktivieren oder Ihren Browser so einstellen, dass er sie
+          benachrichtigt, sobald Cookies gesendet werden. Außerdem können Sie
+          Cookies auch jederzeit von Ihrem Rechner löschen (z.B: im Windows
+          Explorer). Wenn Sie dies tun möchten, verwenden Sie bitte die
+          Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir
+          möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
+          Funktionsfähigkeit dieser Webseite beeinträchtigen können.
+        nested_title_one: 3.1 Analyse
+        nested_title_two: 3.2 Cookies
+        text: |
+          Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
+          anpassen möchten, benötigen wir Informationen über das allgemeine
+          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
+          welche wir zur Ermöglichung der Inanspruchnahme unseres
+          Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
+          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
+          den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
+          (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
+          Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
+          oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
+          Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
+          können Sie jederzeit widersprechen.
+      chapter_two:
+        heading: |
+          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        nested_text_one: |
+          Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
+          Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
+          zur Erbringung der jeweils angefragten Leistung verwenden.
+        nested_text_three: |
+          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
+          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
+          berechnet der Hersteller Ihres Browsers anhand bestimmter
+          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
+          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
+          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
+          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
+          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
+          Nutzungsbestimmungen Ihres Browsers.
+        nested_text_two: |
+          Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
+          gestellten personenbezogenen Daten werden wir nutzen, um Ihnen
+          gelegentlich E-Mails mit Informationen über neue oder spezielle
+          Angebote zuzusenden.
+        nested_title_one: 2.1 Kontaktformular
+        nested_title_three: 2.3 Standortdaten
+        nested_title_two: 2.2 Newsletter-Anmeldung
+        text: |
+          Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
+          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
+          freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
+          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
+          unter Umständen weitere personenbezogene Daten übermitteln, speichern
+          und nutzen wir diese Angaben nur zur Erbringung der jeweils
+          angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
+          Zusendung unseres Newsletters).
+      heading: Datenschutzhinweise
+      intro_first_part: |
+        Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
+        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
+        Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
+        wir personenbezogene Daten ausschließlich im Rahmen der geltenden
+        Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: |
+        Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
+        Verwendung personenbezogener Daten unterrichten. Sie können diese
+        Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
+        Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
+        Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
+        Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
+    shared:
+      address:
+        email: |
+          %{mailto}
+        fax: Fax +49 (0)30 55 57 96 09 9
+        name: clarat
+        name2: Projekt der Benckiser Stiftung Zukunft
+        street: Französische Straße 47
+        telephone: Tel +49 (0)30 55 57 96 00
+        zip_city: 10117 Berlin
+  routes:
+    '404': 
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    new: 
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    unsubscribe: 
+    update_requests: 
+  shareds:
+    forms:
+      fill_field: Bitte fülle dieses Feld aus
+    show:
+      cta_report_errors: |
+        Hast du einen Fehler entdeckt?
+      google_translate_explanation: |
+        Diese Übersetzungen wurden von Google Translate automatisch gemacht.
+        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
+        klingt. Schau dann lieber noch einmal in den deutschen Text.
+  simple_form:
+    hints:
+      contact:
+        show:
+          email: 
+          message: 
+          name: 
+      search_form:
+        faq:
+          query: 
+          search_location: 
+        home:
+          query: 
+          search_location: 
+        index:
+          query: 
+          search_location: 
+        show:
+          query: 
+          search_location: 
+      subscription:
+        faq:
+          email: 
+        home:
+          email: 
+        index:
+          email: 
+        show:
+          email: 
+    required:
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
+  subscriptions:
+    create:
+      error: |
+        Bitte gib eine korrekte E-Mail Adresse ein.
+      success: |
+        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
+        Adresse gesendet.
+    shared:
+      new:
+        button: Newsletter abonnieren
+        placeholder: E-Mail Adresse
+  update_requests:
+    create:
+      success: |
+        Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner
+        Nähe aktiv werden melden wir uns bei dir.
+    new:
+      button: Nachricht erhalten
+      email_placeholder: E-Mail Adresse

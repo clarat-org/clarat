@@ -63,6 +63,7 @@ tags
 # development only files
 .env
 Procfile.development
+.byebug_history
 
 # staging only files
 .htaccess

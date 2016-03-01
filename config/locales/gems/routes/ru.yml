@@ -1,0 +1,10 @@
+ru:
+  routes:
+    offers: "предложения"
+    users: "пользователь"
+    contacts: "контакты"
+    organizations: "орагнизации"
+    impressum: "impressum"
+    haeufige-fragen: "haeufige-fragen"
+    ueber-uns: "ueber-uns"
+    faq: "haeufige-fragen"

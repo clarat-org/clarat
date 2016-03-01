@@ -37,6 +37,7 @@ class ApplicationController < ActionController::Base
   end
 
   def goto_404
-    redirect_to '/404'
+    locale_string = I18n.locale == :de ? '' : "/#{I18n.locale}"
+    redirect_to "#{locale_string}/404"
   end
 end

@@ -258,7 +258,7 @@ de:
             das sind oft Kinder und Jugendliche.
           question: Wie finde ich Hilfe, wenn ich nicht für mich selbst suche, sondern für jemand anderen?
         question_2:
-          answer: |
+          answer: |-
             Du findest bei <b>clarat family</b> verschiedene Unterstützungsangebote.
             Sie helfen dir bei verschiedenen Problemen. Wir haben sie für dich nach
             Themen geordnet:
@@ -1891,17 +1891,25 @@ de:
         zip_city: 10117 Berlin
   routes:
     '404': 
-    datenschutzhinweise: 
-    definitions: 
-    emails: 
-    new: 
-    preview: 
-    rechtliche-hinweise: 
-    search_locations: 
-    subscribe: 
-    subscriptions: 
-    unsubscribe: 
-    update_requests: 
+    contacts: kontakt
+    datenschutzhinweise: datenschutzhinweise
+    definitions: definitions
+    emails: emails
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
+    new: new
+    offers: angebote
+    organizations: organisationen
+    preview: preview
+    rechtliche-hinweise: rechtliche-hinweise
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: subscriptions
+    ueber-uns: ueber-uns
+    unsubscribe: unsubscribe
+    update_requests: update_requests
+    users: nutzer
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1916,13 +1924,13 @@ de:
     hints:
       contact:
         show:
-          email: 
-          message: 
-          name: 
+          email: NOTRANSLATE
+          message: NOTRANSLATE
+          name: NOTRANSLATE
       search_form:
         faq:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
         home:
           query: 
           search_location: 
@@ -1930,17 +1938,17 @@ de:
           query: 
           search_location: 
         show:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
       subscription:
         faq:
-          email: 
+          email: NOTRANSLATE
         home:
           email: 
         index:
           email: 
         show:
-          email: 
+          email: NOTRANSLATE
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

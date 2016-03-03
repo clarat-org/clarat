@@ -19,7 +19,7 @@ module OffersHelper
         arr.first.visible &&
         arr.first.section_filters.pluck(:identifier).include?(current_section)
       end.include?(true)
-    children_class = (visible_children && depth <= 1) ? 'has-children' : ''
+    children_class = (visible_children && depth <= 3) ? 'has-children' : ''
     "#{depth_class} #{children_class}"
   end
 end

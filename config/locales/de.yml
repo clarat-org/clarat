@@ -952,7 +952,7 @@ de:
     hints:
       update_request:
         index:
-          email: NOTRANSLATE
+          email: 
   js:
     ajax_error:
       error: Suchfehler

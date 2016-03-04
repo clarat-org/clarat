@@ -20,8 +20,6 @@ class Clarat.enhanceListingResults.Presenter extends ActiveScript.Presenter
 
 
   initGlobeTooltip: () =>
-    console.log $('.Listing-results__globe')
-
     $('.Listing-results__globe').qtip
       position:
         my: 'bottom left'

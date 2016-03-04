@@ -25,8 +25,6 @@ class Clarat.Search.Cell.SearchResults
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]
     @remoteResults = @resultSet.results[1]
-    # @addValuesToSearchResults(@mainResults.hits)
-    # @addValuesToSearchResults(@remoteResults.hits)
 
     return specificViewObject =
       personal_focus_with_remote:
@@ -47,7 +45,6 @@ class Clarat.Search.Cell.SearchResults
 
   remoteFocusViewObject: =>
     @mainResults = @resultSet.results[0]
-    # @addValuesToSearchResults(@mainResults.hits)
 
     return specificViewObject =
       personal_focus_with_remote: false
@@ -98,9 +95,12 @@ class Clarat.Search.Cell.SearchResults
       item.current_stamp = item[stamp_variable_name]
       item.language_explanation = @generateLanguageExplanation(item._language_filters)
 
-    for item in (@remoteResults.hits)
-      item.current_stamp = item[stamp_variable_name]
-      item.language_explanation = @generateLanguageExplanation(item._language_filters)
+    if @remoteResults
+      for item in (@remoteResults.hits)
+        item.organization_display_name =
+            if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")
+        item.current_stamp = item[stamp_variable_name]
+        item.language_explanation = @generateLanguageExplanation(item._language_filters)
 
   generateLanguageExplanation: (language_filters) ->
     # dont show explanation when german is the only language

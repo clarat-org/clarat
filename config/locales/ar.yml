@@ -1,94 +1,106 @@
 ar:
   cells:
     faq:
-      heading: 
+      heading: "أسئلة شائعة"
       section_1:
-        heading: 
+        heading: "من؛  كيف؛ ماذا؟"
         question_1:
-          answer: 
+          answer: |-
+            كلارات هي بوابة إليكترونية  والتي عن طريقها يمكن للمرء أن يجد عروض للمساعدة والدعم. فنحن نساعدك في العثور على مساعدة؛ ولكننا لا نقدم المشورة؛ لأن لها خبراء ونحن ندلك عليهم فقط. هنا يوجد <b>كلارات الأسرة<b> و <b>كلارات اللاجئين<b>
+            <p>
+            <ul>
+            <li>
+            <b>كلارات الأسرة<b> تساعد الأطفال والشبان والأسر، الذين لديهم مشاكل ويبحثون عن مساعدة بالقرب منهم. فهنا تجد بسهولة مساعدة لك شخصيا أو لأسرتك أو لأصدقائك. وأيضاً لمن تعرف من الأطفال الآخرين  والشبان والأسر. يمكنك مشاهدة ما تقوم به كلارات الأسرة في هذا الفيلم %{link_to_family_movie}
+            </li>
+            <li>
+            <b>كلارات اللاجئين</b> تساعد اللاجئين، الذين يبحثون عن دعم بالقرب منهم. هنا يمكنك بسهولة أن تجد مساعدة على لك شخصيا ولأسرتك وأصدقائك. حتى وإن لك تكن أنت من اللاجئين ولكنك تعرف لاجئين في حاجة لمساعدة.
+            </li>
+            </ul>
+            </p>
           link_1:
-            name: 
+            name: "فيلم"
             target: 
-            url: 
-            var: 
-          question: 
+            url: http://blog.clarat.org/العثور على مساعدة بسهولة-مشروعنا-كلارات-في-فيلم قصير/
+            var: "رابط _ل_الأسرة_فيلم"
+          question: "ما هي كلارات؟"
         question_10:
-          answer: 
+          answer: "تمويل <b>كلارات الأسرة<b> و<b>كلارات للاجئين<b> يأتي من %{link_to_bsz}."
           link_1:
-            name: 
-            target: 
+            name: "مؤسسة بتكيزير المستقبل"
+            target: blank_
             url: 
-            var: 
-          question: 
+            var: link_to_bsz
+          question: "من يمول كلارات؟"
         question_11:
-          answer: 
+          answer: |
+            <b>كلارات الأسرة<b> و <b>كلارات اللاجئين<b> سوف تستمر لوقت طويل، حيث أن  %{link_to_bsz}  سوف تستمر بتمويل هاتين البوابتين الإليكترونيتين أيضا في المستقبل. فيمكنك هنا أيضا على مدار السنوات القادمة ان تجد مساعدة. وهذا يسري بشكل خاص على برلين وقريبا لمدن ومقاطعات أخرى في ألمانيا؛ التي سوف يتم إدراجها لاحقا في كلارات.
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
-          question: 
+            name: "مؤسسة بنكيزير المستقبل"
+            target: blank_
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: "إلى متى ستستمر كلارات؟"
         question_12:
-          answer: 
+          answer: "رمز البرمجة الخاص بكلارات متاح للجمهور. الرابط لهذا الرمز تجده هنا %{link_to_github}."
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
-          question: 
+            name: "هنا"
+            target: blank_
+            url: https://github.com/clarat-org
+            var: link_to_github
+          question: "هل رمز البرمجة الخاض بكلارات متاح للجمهور؟"
         question_13:
-          answer: 
+          answer: "في الوقت الحالي لا توجد أي وصلة يمكنك من خلالها تنزيل البيانات أو إعادة العمل عليها. ربما يكون من المحتمل أنه توجد لاحقا مثل هذه الوصلة، ولكن هذا غير مؤكد. نحن الآن نقوم بتجميع وتصنيف البيانات بشكل أساسي. إذا كنت مهتما بمثل هذه الوصلات%{link_to_contact_form}."
           link_1:
-            name: 
-            target: 
+            name: "يمكنك الإتصال بنا بسهولة."
+            target: blank_
             url: 
-            var: 
-          question: 
+            var: link_to_contact_form
+          question: "هل تقدم كلارات وصلة يمكن من خلالها إعادة إستخدام المعلومات؟"
         question_2:
-          answer: 
-          question: 
+          answer: "يوجد في ألمانيا العديد من عروض الدعم التي تقدم للناس الذين في إحتياج عاجل لمساعدة. ولكن في الغالب يكون من الصعب العثورعلى هذه العروض, على سبيل المثال إذا كان الفرد لا يعرف بالتحديد أين يجب أن يبحث بعد ذلك أو إذا كان لا يعرف بمن عليه أن يتصل. ونحن نريد ان نغير هذا الوضع."
+          question: "لماذا توجد كلارات؟"
         question_3:
-          answer: 
+          answer: "أدخل المشكلة الخاصة بك أو المكان الذي تريد أن تبحث عن مساعدة فيه. فستجد عروض الدعم المناسبة التي بالقرب منك. أو ستجد مساعدة عن طريق التليفون أوفي  الإنترنت. %{ref_to_how_to_find_right_help} وهنا نوضح نحن لك بالضبط، كيف تجد ما تبحث عنه. فعندما تقوم بالنقر على أحد العروض فإننا نقول لك ما يجب عليك أن تفعل بعد ذلك. على سبيل المثال إذا كان عليك الإتصال أو الذهاب إلى مكان ما."
           link_1:
             class: 
-            name: 
+            name: "هنا"
             url: 
             var: 
-          question: 
+          question: "كيف تعمل كلارات؟"
         question_4:
-          answer: 
-          question: 
+          answer: "كلارات مجانية وستظل مجانية. فأي شخص يمكنه أن يبحث في <b>كلارات الأسرة<b> عن مساعدة للأطفال والشباب والأسر. وأي شخص يمكنه أن يبحث في <b>كلارات اللاجئين<b> عن مساعدة للاجئين."
+          question: "هل البحث في كلارات مجاني؟"
         question_5:
-          answer: 
-          question: 
+          answer: "البحث في كلارات دائما مجهول. وهذا يعني أنه لن يعرف أحد اسمك او عنوانك."
+          question: "هل البحث في كلارات مجهول؟"
         question_6:
-          answer: 
-          question: 
+          answer: "نحن ننظر بشكل دائم إذا ما كانت المعلومات في كلارات لاتزال معاصرة. لأنه بهذه الطريقة  فقط يمكننا مساعدة الأطفال والشباب والأسر واللاجئين. فإذا لم تكن المعلومات لاتزال صحيحة فإنه يتم  تحديثها أي أننا نستبدلها. "
+          question: "هل المعلومات في كلارات حديثة؟"
         question_7:
-          answer: 
-          question: 
+          answer: "بعض العروض في <b>كلارات الأسرة<b> و<b>كلارات اللاجئين<b> يمكن الأستفادة منها من  كل الأنحاء؛ سواء كنت تسكن في أي مكان ستجد العديد من العروض والتي من خلالها يساعدك شخص عن طريق التليفون او الإنترنت؛ أي عن طريق الشات أو المنتديات. ولكن العديد من العروض يمكنك الإستفادة منها فقط حيت تسكن. في <b>كلارات اللاجئين<b> تجد عروضا في كل ألمانيا. اما في <b>كلارات الأسرة<b> فقد بدأنا ببرلين؛ هنا توجد بالفعل عروض كثيرة. ولكننا نجمع عروضا أكثر وقريبا سيكون لمدن كبرى أخرى في ألمانيا. "
+          question: "هل توجد كلارات لألمانيا كلها؟"
         question_8:
-          answer: 
+          answer: "كلارات تعرض لك المساعدة المتاحة بالقرب منك. فإنك تجد كل العروض مجمعة وبشكل عام. علاوة على ذلك فنحن نقول لك ما يجب عليك أن تفعل بالضبط لكي تحصل على المساعدة. ونحن نكتب دائما بلغة سهلة ويمكن للجميع ان يفهمها. حتى يتمكن الناس الذين لا يجيدون الألمانية من العثور على المساعدة؛ كما يمكنك أيضا أن تقرأ العروض بلغات أخرى عديدة. إذا أردت أن تعرف أكثر عن هذه اللغات؛ إضغط هنا %{ref_to_how_many_languages}."
           link_1:
             class: 
             name: 
             url: 
             var: 
-          question: 
+          question: "ما هو المميز في كلارات؟"
         question_9:
-          answer: 
+          answer: "كلارات إحدي مشاريع مؤسسة بنكيزير للمستقبل%{link_to_bsz}. وهي مجموعة مؤسسات والتي تقوم منذ وقت طويل بأعمال من أجل الأطفال والشباب. والآن للاجئين من خلال كلارات للاجئين. هنا يمكنك مشاهدة هذا الفيلم التسجيلي لمعرفة الكثير عن المؤسسة %{link_to_bsz_movie}. فكرة كلارات جاءت في منتصف عام 2014. وفريق عمل كلارات تكون منذ سبتمبر 2014. إذا أردت معرفة الكثير عن فريق العمل انقر هنا %{link_to_about_us}."
           link_1:
-            name: 
+            name: "مؤسسة بنكيزير المستقبل"
             target: 
             url: 
             var: 
           link_2:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: "فيديو"
+            target: blank_
+            url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
+            var: link_to_bsz_movie
           link_3:
-            name: 
+            name: "هنا"
             target: 
             url: 
             var: 
@@ -102,15 +114,15 @@ ar:
         question_10:
           answer: 
           link_1:
-            class: 
+            class: FAQ_anchor_link
             name: 
             url: 
             var: 
           link_2:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: post@clarat.org
+            target: blank_
+            url: mailto:post@clarat.org
+            var: mailto_clarat
           question: 
         question_11:
           answer: 
@@ -143,10 +155,10 @@ ar:
         question_9:
           answer: 
           link_1:
-            class: 
+            class: FAQ_anchor_link
             name: 
             url: 
-            var: 
+            var: ref_to_how_to_find_right_help
           question: 
       section_3:
         heading: 
@@ -154,24 +166,24 @@ ar:
           answer: 
           question: 
         question_2:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
         question_3:
-          answer: 
-          question: 
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
         question_4:
           answer: 
           question: 
         question_5:
-          answer: NOTRANSLATE
-          question: NOTRANSLATE
+          answer: 
+          question: 
         question_6:
-          answer: NOTRANSLATE
-          question: NOTRANSLATE
+          answer: 
+          question: 
       section_4:
         heading: 
         question_1:
-          anchor: 
+          anchor: how_many_languages
           answer: 
           question: 
         question_2:
@@ -194,10 +206,10 @@ ar:
         question_4:
           answer: 
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: post@clarat.org
+            target: blank_
+            url: mailto:post@clarat.org
+            var: mailto_clarat
           question: 
         question_5:
           answer: 
@@ -208,23 +220,23 @@ ar:
         question_7:
           answer: 
           link_1:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: post@clarat.org
+            target: blank_
+            url: mailto:post@clarat.org
+            var: mailto_clarat
           question: 
         question_8:
           answer: 
           link_1:
-            class: 
+            class: FAQ_anchor_link
             name: 
             url: 
-            var: 
+            var: ref_to_who_finds_help
           link_2:
-            name: 
-            target: 
-            url: 
-            var: 
+            name: post@clarat.org
+            target: blank_
+            url: mailto:post@clarat.org
+            var: mailto_clarat
           question: 
   conf:
     current_location: "موقعي"
@@ -272,175 +284,171 @@ ar:
         لقد قمت بنجاح بإلغاء تسجيلك من الحصول على إشعارات أخرى
         (<a href="%{subscribe_href}">إعادة التسجيل</a>)
   enumerize:
-    required:
-      html: 
-      mark: 
-      text: 
     search_form:
       age:
-        '0': 
-        '1': 
-        '10': 
-        '11': 
-        '12': 
-        '13': 
-        '14': 
-        '15': 
-        '16': 
-        '17': 
-        '18': 
-        '19': 
-        '2': 
-        '20': 
-        '21': 
-        '22': 
-        '23': 
-        '24': 
-        '25': 
-        '26': 
-        '27': 
-        '28': 
-        '29': 
-        '3': 
-        '30': 
-        '31': 
-        '32': 
-        '33': 
-        '34': 
-        '35': 
-        '36': 
-        '37': 
-        '38': 
-        '39': 
-        '4': 
-        '40': 
-        '41': 
-        '42': 
-        '43': 
-        '44': 
-        '45': 
-        '46': 
-        '47': 
-        '48': 
-        '49': 
-        '5': 
-        '50': 
-        '51': 
-        '52': 
-        '53': 
-        '54': 
-        '55': 
-        '56': 
-        '57': 
-        '58': 
-        '59': 
-        '6': 
-        '60': 
-        '61': 
-        '62': 
-        '63': 
-        '64': 
-        '65': 
-        '66': 
-        '67': 
-        '68': 
-        '69': 
-        '7': 
-        '70': 
-        '71': 
-        '72': 
-        '73': 
-        '74': 
-        '75': 
-        '76': 
-        '77': 
-        '78': 
-        '79': 
-        '8': 
-        '80': 
-        '81': 
-        '82': 
-        '83': 
-        '84': 
-        '85': 
-        '86': 
-        '87': 
-        '88': 
-        '89': 
-        '9': 
-        '90': 
-        '91': 
-        '92': 
-        '93': 
-        '94': 
-        '95': 
-        '96': 
-        '97': 
-        '98': 
-        '99': 
+        '0': 0
+        '1': 1
+        '10': 10
+        '11': 11
+        '12': 12
+        '13': 13
+        '14': 14
+        '15': 15
+        '16': 16
+        '17': 17
+        '18': 18
+        '19': 19
+        '2': 2
+        '20': 20
+        '21': 21
+        '22': 22
+        '23': 23
+        '24': 24
+        '25': 25
+        '26': 26
+        '27': 27
+        '28': 28
+        '29': 29
+        '3': 3
+        '30': 30
+        '31': 31
+        '32': 32
+        '33': 33
+        '34': 34
+        '35': 35
+        '36': 36
+        '37': 37
+        '38': 38
+        '39': 39
+        '4': 4
+        '40': 40
+        '41': 41
+        '42': 42
+        '43': 43
+        '44': 44
+        '45': 45
+        '46': 46
+        '47': 47
+        '48': 48
+        '49': 49
+        '5': 5
+        '50': 50
+        '51': 51
+        '52': 52
+        '53': 53
+        '54': 54
+        '55': 55
+        '56': 56
+        '57': 57
+        '58': 58
+        '59': 59
+        '6': 6
+        '60': 60
+        '61': 61
+        '62': 62
+        '63': 63
+        '64': 64
+        '65': 65
+        '66': 66
+        '67': 67
+        '68': 68
+        '69': 69
+        '7': 7
+        '70': 70
+        '71': 71
+        '72': 72
+        '73': 73
+        '74': 74
+        '75': 75
+        '76': 76
+        '77': 77
+        '78': 78
+        '79': 79
+        '8': 8
+        '80': 80
+        '81': 81
+        '82': 82
+        '83': 83
+        '84': 84
+        '85': 85
+        '86': 86
+        '87': 87
+        '88': 88
+        '89': 89
+        '9': 9
+        '90': 90
+        '91': 91
+        '92': 92
+        '93': 93
+        '94': 94
+        '95': 95
+        '96': 96
+        '97': 97
+        '98': 98
+        '99': 99
       contact_type:
-        personal: 
-        remote: 
+        personal: Personal
+        remote: Remote
       language:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
+        '150': 150
+        '326': 326
+        '568': 568
+        '639': 639
+        amh: Amh
+        ara: Ara
+        aze: Aze
+        bel: Bel
+        ben: Ben
+        bos: Bos
+        bul: Bul
+        deu: Deu
+        ell: Ell
+        eng: Eng
+        fas: Fas
+        fra: Fra
+        hin: Hin
+        hrv: Hrv
+        hun: Hun
+        ita: Ita
+        kik: Kik
+        kur: Kur
+        lav: Lav
+        lit: Lit
+        ltz: Ltz
+        luo: Luo
+        mkd: Mkd
+        nor: Nor
+        pol: Pol
+        por: Por
+        rom: Rom
+        ron: Ron
+        rus: Rus
+        snk: Snk
+        spa: Spa
+        sqi: Sqi
+        srp: Srp
+        swa: Swa
+        swe: Swe
+        tam: Tam
+        tel: Tel
+        tgk: Tgk
+        tha: Tha
+        tuk: Tuk
+        tur: Tur
+        urd: Urd
+        uzb: Uzb
+        vie: Vie
+        wol: Wol
+        zho: Zho
+        zza: Zza
       section:
-        family: 
-        refugees: 
+        family: Family
+        refugees: Refugees
   formtastic:
     hints:
       update_request:
         index:
-          email: 
+          email: NOTRANSLATE
   js:
     ajax_error:
       error: "خطأ في البحث"
@@ -474,6 +482,8 @@ ar:
       placeholder_words:
         family: 
         refugees: 
+    routes:
+      faq: 
     search:
       form_less_label: "اخفاء خيارات البحث"
       form_more_label: "عرض خيارات البحث"
@@ -493,6 +503,9 @@ ar:
       enclosing: "تم العثور على"
       faq_anchor: "هنا"
       faq_text: "تجد الأسئلة الشائعة حول البحث وكذلك الإجابات "
+      language_explanation:
+        connector: 
+        text: 
       map:
         cooperation: 
         enlarge_map: "تكبير الخريطة"
@@ -507,13 +520,70 @@ ar:
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
       show_personal: "عرض عروض مكانية أكثر"
+    shared:
+      current_and_original_locale:
+        "'150'": 
+        "'326'": 
+        "'568'": 
+        "'639'": 
+        '150': 
+        '326': 
+        '568': 
+        '639': 
+        amh: 
+        ara: 
+        aze: 
+        bel: 
+        ben: 
+        bos: 
+        bul: 
+        deu: 
+        ell: 
+        eng: 
+        fas: 
+        fra: 
+        hin: 
+        hrv: 
+        hun: 
+        ita: 
+        kik: 
+        kur: 
+        lav: 
+        lit: 
+        ltz: 
+        luo: 
+        mkd: 
+        mul: 
+        nor: 
+        pol: 
+        por: 
+        rom: 
+        ron: 
+        rus: 
+        snk: 
+        spa: 
+        sqi: 
+        srp: 
+        swa: 
+        swe: 
+        tam: 
+        tel: 
+        tgk: 
+        tha: 
+        tuk: 
+        tur: 
+        urd: 
+        uzb: 
+        vie: 
+        wol: 
+        zho: 
+        zza: 
     single_search_result:
       encounters:
         chat: "دردشة"
         email: "بريد اليكتروني"
         forum: "منتدى"
         hotline: "تليفون"
-        list: 
         online-course: "دورة بالإنترنت"
         personal: "ذاتيا"
         portal: "قائمة العناوين"
@@ -598,62 +668,14 @@ ar:
           exclusive_gender:
             boys_only: "فقط للصبيان والرجال"
             girls_only: "فقط للبنات والسيدات"
-          language:
-            '150': "لغة الإشارة الألمانية"
-            '326': "أوكراني"
-            '568': "هولندي"
-            '639': "داري"
-            amh: "الأمهرية"
-            ara: "عربي"
-            aze: "أذربيجاني"
-            bel: "البيلاروسية"
-            ben: "بنغالي"
-            bos: "بوسني"
-            bul: "بلغاري"
-            deu: "ألماني"
-            ell: "يوناني"
-            eng: "إنجليزي"
-            fas: "فارسي"
-            fra: "فرنسي"
-            hin: "هندي"
-            hrv: "كرواتي"
-            hun: "مجري"
-            ita: "ايطالي"
-            kik: "كيكويو"
-            kur: "كردي"
-            lav: "لاتفية"
-            lit: "الليتوانية"
-            ltz: "لكسمبورجي"
-            luo: "لغة اللو"
-            mkd: "مقدونية"
-            mul: "لغات أخرى حسب الطلب"
-            nor: "نرويجي"
-            pol: "بولندي"
-            por: "برتغالي"
-            rom: "رومانيَ"
-            ron: "روماني"
-            rus: "روسي"
-            snk: "سونينكي"
-            spa: "أسباني"
-            sqi: "ألباني"
-            srp: "صربي"
-            swa: "اللغة السواحيلي"
-            swe: "سويدي"
-            tam: "التاميل"
-            tel: "التيلوجو"
-            tgk: "الطاجيكية"
-            tha: "تايلاندي"
-            tuk: "تركمان"
-            tur: "تركي"
-            urd: "أوردي"
-            uzb: "الأوزبكي"
-            vie: "فيتنامي"
-            wol: "الولوف"
-            zho: "صيني"
-            zza: "زازا"
           target_audience:
             acquaintances: "للمعارف والأقارب"
             children: "للأطفال والشباب"
+            family_acquaintances: 
+            family_children: 
+            family_nuclear_family: 
+            family_parents: 
+            family_pregnant_woman: 
             nuclear_family: "للأسر"
             parents: "للآباء"
             pregnant_woman: "للحوامل"
@@ -734,7 +756,7 @@ ar:
           long: "عروض خاصة بموضوع ...."
           short: "عروض  مساعدة ل.."
     show:
-      last_updated: "آخر إدخال"
+      last_update: "آخر إدخال"
       next_steps:
         code_word: 
         heading: 
@@ -987,181 +1009,6 @@ ar:
         </p>
       title: "إرشادات قانونية"
     faq:
-      heading: 
-      section_four:
-        answer_eight: 
-        answer_eight_bullet_one: 
-        answer_eight_bullet_two: 
-        answer_five: 
-        answer_four: 
-        answer_one: 
-        answer_one_bullet_five: 
-        answer_one_bullet_four: 
-        answer_one_bullet_one: 
-        answer_one_bullet_six: 
-        answer_one_bullet_three: 
-        answer_one_bullet_two: 
-        answer_seven: 
-        answer_six: 
-        answer_six_bullet_five: 
-        answer_six_bullet_four: 
-        answer_six_bullet_one: 
-        answer_six_bullet_six: 
-        answer_six_bullet_three: 
-        answer_six_bullet_two: 
-        answer_three: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_five: 
-        question_four: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_three: 
-        question_two: 
-      section_one:
-        answer_eight: 
-        answer_eighteen: 
-        answer_eleven: 
-        answer_fifteen: 
-        answer_five: 
-        answer_four: 
-        answer_fourteen: 
-        answer_nine: 
-        answer_nineteen: 
-        answer_one: 
-        answer_seven: 
-        answer_seventeen: 
-        answer_six: 
-        answer_sixteen: 
-        answer_ten: 
-        answer_thirteen: 
-        answer_three: 
-        answer_twelve: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_eighteen: 
-        question_eleven: 
-        question_fifteen: 
-        question_five: 
-        question_four: 
-        question_fourteen: 
-        question_nine: 
-        question_nineteen: 
-        question_one: 
-        question_seven: 
-        question_seventeen: 
-        question_six: 
-        question_sixteen: 
-        question_ten: 
-        question_thirteen: 
-        question_three: 
-        question_twelve: 
-        question_two: 
-      section_three:
-        answer_eight: 
-        answer_five: 
-        answer_four: 
-        answer_nine: 
-        answer_one: 
-        answer_seven: 
-        answer_six: 
-        answer_three: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_five: 
-        question_four: 
-        question_nine: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_three: 
-        question_two: 
-      section_two:
-        answer_eight_bullet_one: 
-        answer_eight_bullet_three: 
-        answer_eight_bullet_two: 
-        answer_eight_first_part: 
-        answer_eight_second_part: 
-        answer_eleven: 
-        answer_fifteen: 
-        answer_five: 
-        answer_four_bullet_one: 
-        answer_four_bullet_two: 
-        answer_four_first_part: 
-        answer_four_second_part: 
-        answer_fourteen_bullet_one: 
-        answer_fourteen_bullet_three: 
-        answer_fourteen_bullet_two: 
-        answer_fourteen_first_part: 
-        answer_fourteen_second_part: 
-        answer_nine_bullet_five: 
-        answer_nine_bullet_four: 
-        answer_nine_bullet_one: 
-        answer_nine_bullet_three: 
-        answer_nine_bullet_two: 
-        answer_nine_first_part: 
-        answer_nine_second_part: 
-        answer_one: 
-        answer_seven_bullet_five: 
-        answer_seven_bullet_four: 
-        answer_seven_bullet_one: 
-        answer_seven_bullet_six: 
-        answer_seven_bullet_three: 
-        answer_seven_bullet_two: 
-        answer_seven_first_part: 
-        answer_seven_second_part: 
-        answer_six_bullet_five: 
-        answer_six_bullet_four: 
-        answer_six_bullet_one: 
-        answer_six_bullet_seven: 
-        answer_six_bullet_six: 
-        answer_six_bullet_three: 
-        answer_six_bullet_two: 
-        answer_six_first_part: 
-        answer_six_second_part: 
-        answer_sixteen_first_part: 
-        answer_sixteen_second_part: 
-        answer_ten: 
-        answer_thirteen: 
-        answer_three_bullet_one: 
-        answer_three_bullet_three: 
-        answer_three_bullet_two: 
-        answer_three_first_part: 
-        answer_three_second_part: 
-        answer_twelve_bullet_one: 
-        answer_twelve_bullet_three: 
-        answer_twelve_bullet_two: 
-        answer_twelve_first_part: 
-        answer_twelve_second_part: 
-        answer_two_bullet_five: 
-        answer_two_bullet_four: 
-        answer_two_bullet_one: 
-        answer_two_bullet_six: 
-        answer_two_bullet_three: 
-        answer_two_bullet_two: 
-        answer_two_first_part: 
-        answer_two_second_part: 
-        heading: 
-        question_eight: 
-        question_eleven: 
-        question_fifteen: 
-        question_five: 
-        question_four: 
-        question_fourteen: 
-        question_nine: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_sixteen: 
-        question_ten: 
-        question_thirteen: 
-        question_three: 
-        question_twelve: 
-        question_two: 
       title: "أسئلة شائعة"
     home:
       how:
@@ -1516,6 +1363,27 @@ ar:
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
+  routes:
+    '404': 
+    contacts: "إتصال"
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
+    new: 
+    offers: "عروض"
+    organizations: "منظمة"
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    ueber-uns: ueber-uns
+    unsubscribe: 
+    update_requests: 
+    users: "مستخدم"
   shareds:
     forms:
       fill_field: "من فضلك إملأ هذه الخانة"
@@ -1529,46 +1397,36 @@ ar:
   simple_form:
     hints:
       contact:
-        new:
-          email: 
-          message: 
-          name: 
+        show:
+          email: NOTRANSLATE
+          message: NOTRANSLATE
+          name: NOTRANSLATE
       search_form:
-        about:
-          query: 
-          search_location: 
         faq:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
         home:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
         index:
-          query: 
-          search_location: 
-        new:
-          query: 
-          search_location: 
-        not_found:
-          query: 
-          search_location: 
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
+        show:
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
       subscription:
-        about:
-          email: 
         faq:
-          email: 
+          email: NOTRANSLATE
         home:
-          email: 
+          email: NOTRANSLATE
         index:
-          email: 
-        new:
-          email: 
-        not_found:
-          email: 
+          email: NOTRANSLATE
+        show:
+          email: NOTRANSLATE
     required:
-      html: 
-      mark: 
-      text: 
+      html: NOTRANSLATE
+      mark: NOTRANSLATE
+      text: NOTRANSLATE
   subscriptions:
     create:
       error: |

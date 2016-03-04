@@ -1402,22 +1402,33 @@ ar:
           message: NOTRANSLATE
           name: NOTRANSLATE
       search_form:
+        agb:
+          query: 
+          search_location: 
         faq:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
         home:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
+        impressum:
+          query: 
+          search_location: 
         index:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
         not_found:
           query: 
           search_location: 
+        privacy:
+          query: 
+          search_location: 
         show:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
       subscription:
+        agb:
+          email: 
         faq:
           email: NOTRANSLATE
         home:
@@ -1425,6 +1436,8 @@ ar:
         index:
           email: NOTRANSLATE
         not_found:
+          email: 
+        privacy:
           email: 
         show:
           email: NOTRANSLATE

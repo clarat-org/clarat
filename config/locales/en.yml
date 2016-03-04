@@ -1830,18 +1830,18 @@ en:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': "'404'"
     contacts: contacts
     datenschutzhinweise: 
     definitions: 
-    emails: 
+    emails: emails
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
     impressum: site-notice
-    new: 
+    new: new
     offers: offers
     organizations: organizations
-    preview: 
+    preview: preview
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
@@ -1868,29 +1868,44 @@ en:
           message: 
           name: 
       search_form:
+        agb:
+          query: 
+          search_location: 
         faq:
           query: 
           search_location: 
         home:
           query: 
           search_location: 
+        impressum:
+          query: 
+          search_location: 
         index:
           query: 
           search_location: 
         not_found:
+          query: 
+          search_location: 
+        privacy:
           query: 
           search_location: 
         show:
           query: 
           search_location: 
       subscription:
+        agb:
+          email: 
         faq:
           email: 
         home:
           email: 
+        impressum:
+          email: 
         index:
           email: 
         not_found:
+          email: 
+        privacy:
           email: 
         show:
           email: 

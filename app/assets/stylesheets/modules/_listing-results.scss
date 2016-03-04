@@ -65,6 +65,12 @@
   display: inherit;
 }
 
+.Listing-keyword--highlight{
+  background: $brand_white;
+  display: inline-block;
+  color: $brand_orange;
+  padding: 0 5px;
+}
 
 .Listing-results__offer,
 .Listing-results__offerinfo {

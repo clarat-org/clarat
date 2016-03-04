@@ -1864,35 +1864,40 @@ en:
     hints:
       contact:
         show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
+          email: 
+          message: 
+          name: 
       search_form:
         faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
         home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
         index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
+        not_found:
+          query: 
+          search_location: 
         show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
       subscription:
         faq:
-          email: NOTRANSLATE
+          email: 
         home:
-          email: NOTRANSLATE
+          email: 
         index:
-          email: NOTRANSLATE
+          email: 
+        not_found:
+          email: 
         show:
-          email: NOTRANSLATE
+          email: 
     required:
-      html: NOTRANSLATE
-      mark: NOTRANSLATE
-      text: NOTRANSLATE
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
   subscriptions:
     create:
       error: Please enter a valid email address.

@@ -1430,6 +1430,9 @@ ru:
         index:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
+        not_found:
+          query: 
+          search_location: 
         show:
           query: NOTRANSLATE
           search_location: NOTRANSLATE
@@ -1440,6 +1443,8 @@ ru:
           email: NOTRANSLATE
         index:
           email: NOTRANSLATE
+        not_found:
+          email: 
         show:
           email: NOTRANSLATE
     required:

@@ -952,7 +952,7 @@ de:
     hints:
       update_request:
         index:
-          email: 
+          email: NOTRANSLATE
   js:
     ajax_error:
       error: Suchfehler
@@ -1924,31 +1924,36 @@ de:
     hints:
       contact:
         show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
+          email: 
+          message: 
+          name: 
       search_form:
         faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
         home:
           query: 
           search_location: 
         index:
           query: 
           search_location: 
+        not_found:
+          query: 
+          search_location: 
         show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
+          query: 
+          search_location: 
       subscription:
         faq:
-          email: NOTRANSLATE
+          email: 
         home:
           email: 
         index:
           email: 
+        not_found:
+          email: 
         show:
-          email: NOTRANSLATE
+          email: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

@@ -1,83 +1,1348 @@
-# Please see ./README.md for more information on I18n styles and structure.
 tr:
-  conf: # translations used for app-internal things
-    current_location: 'Konumum'
-    default_location: 'Berlin'
-    default_latlng: '52.520007,13.404954'
-
-  js: # translations used in JavaScript. I18n-JS forces them to be located here.
-    geolocation:
-      get: Konumumu kullan!
-      waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
-      error: konumun bulunamamıştır. Lütfen manüel giriş yap.
-    location_required: |
-      Lütfen destek almak istediğin yerin adını gir.
+  cells:
+    faq:
+      heading: Sıkça sorulan sorular
+      section_1:
+        heading: Kim, ney ve nasıl?
+        question_1:
+          answer: "Clarat, destek ve yardım imkanları bulmana yardımcı olan bir portaldir. Burada sana danışmanlik yapmiyoruz, bunun için uzman kişiler var ve biz sana bu uzmanları bulmanda yardımcı oluyoruz. \nclarat, <b>clarat family</b> ve <b>clarat refugees</b> olarak ikiye ayrılıyor:\n<p>\n<ul>\n<li>\n<b>clarat family</b> sorun yaşayan çocuklara, gençlere ve ailelere yardım etmektedir. \nBurada ihtiyacın olan yardımı bulunduğun şehirde kolayca arayabilirsin.\nBunu kendin, ailen, arkadaşlarin yada başka aileler, gençler ve çocuklar için de yapabilirsin. \nClarat family’nin yaptıklarını bu %{link_to_family_movie} da izleyebilirsin. \n</li>\n<li>\n<b>clarat refugees</b> bulunduğu şehirde destek arayan mülteciler için var. \nBurada kolayca kendin veya ailen için yardım bulabilirsin.Eğer mülteci değilsen ama tanıdığın yardıma ihtiyacı olan mülteciler varsa, \nonlara da destek veriyoruz.\n</li>\n</ul>\n</p>"
+          link_1:
+            name: videoda
+            target: _blank
+            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            var: link_to_family_movie
+          question: Clarat nedir?
+        question_10:
+          answer: |2-
+             <b>clarat family</b> ve <b>clarat refugees</b> %{link_to_bsz} kuruluşu tarafından finanse ediliyor.
+             .
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: Clarat‘ı kim finanse ediyor?
+        question_11:
+          answer: "<b>clarat family</b> ve <b>clarat refugees</b> uzun bir süre daha hizmet verecek cünkü %{link_to_bsz} her iki portala uzun vadeli yatırımlar yapıyor. \nBu demek ki, buradan gelecek senelerde destek alabilirsin, özellikle Berlinde. \nYakında bir çok şehirde danışmanlarımız olacak.\n"
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          question: Clarat ne kadar daha hizmet verecek?
+        question_12:
+          answer: 'clarat’ın programlama kodu halka açıktır ve ona bu %{link_to_github} ulaşabilirisin. '
+          link_1:
+            name: burada
+            target: _blank
+            url: https://github.com/clarat-org
+            var: link_to_github
+          question: clarat‘ın programlama kodu halka açık mı?
+        question_13:
+          answer: "Su anda veri indirip, işleyebileceğin bir arayüz yok. Gelecekte böyle bir arayüz eklenebilir ancak bu konu henüz kesin değil. Su an, her şeyden önce veri biriktirip sınıflara ayırıyoruz. \nBöyle bir arayüz ile ilgileniyorsan bizim ile irtibata geçebilirsin %{link_to_contact_form}."
+          link_1:
+            name: Bizim ile irtibata geç.
+            target: _blank
+            url: http://www.clarat.org/refugees/kontakt/new
+            var: link_to_contact_form
+          question: Clarat verileri yeniden kullanmak için bir arayüz sunuyor mu?
+        question_2:
+          answer: "Almanya’da destek bazında bir çok imkan bulunmaktadır. Özellikle acil yardıma ihtiyacı olan insanlar için. \nBu imkanları bulmak zor, mesela nerede nasıl veya kimden bir destek bulunabileceği bilinmiyor. \nBiz bunu değiştirmek istiyoruz."
+          question: Clarat neden var?
+        question_3:
+          answer: "Problemini belirle ve hangi şehirde desteğe ihtiyacın olduğunu yaz. Ardından sana destek imkanları sunulacaktır. \nYardımlara telefon veya internet üzerinden ulaşabilirsin. %{ref_to_how_to_find_right_help} hangi yardıma nereden ve nasıl ulaşabileceğini a açıklıyoruz. \nMenümüzde sunulan kategorilerden seçersen sana hangi olanakların olduğunu gösteriyoruz. Mesela telefon ile arayıp veya şahsen ofisimize gelebilir misin diye."
+          link_1:
+            class: FAQ_anchor_link
+            name: Burada
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          question: Clarat nasıl çalışıyor?
+        question_4:
+          answer: 'Clarat ücretsizdir ve ücretsiz kalacaktir. Herkes, ücretsiz olan  <b>clarat family</b> çocuklar, gençler ve aileler için yardım talep edebilir ve <b>clarat refugees</b> mülteciler için ücretsiz destek alabilir. '
+          question: |
+            Clarat’da arama ücretsiz mi?
+        question_5:
+          answer: Clarat’taki aramalar daima isimsiz olarak yapılır. Bu demektir ki, senin ne adını, ne de adresini kimse göremez ve bilemez.
+          question: Clarat’taki aramalar isimsiz mi?
+        question_6:
+          answer: "Biz düzenli olarak bilgilerin güncelliğini kontrol ediyor ve buna çok onem veriyoruz cünkü sadece bu sekilde çocuklara, gençlere, ailelere ve mültecilere yardımcı  olabiliriz. \nEğer bir bilgi güncel değil ise, onu hemen güncelliyoruz, buda demek oluyor ki, bilgileri değiştiriyoruz."
+          question: Clarat‘taki bilgiler güncel mi?
+        question_7:
+          answer: "<b>clarat family</b> ve <b>clarat refugees</b>deki bir çok imkana her yerden ulaşabilirsin. Nerede oturduğun fark etmiyor. \nTelefon veya internet üzerinden sunulabilecek bir çok olanak var, bu demek ki, e-mail ve chat ile veya forum üzerinden bilgi edinebilirsin. \nBu imkanların bir çoğunu oturduğun bölgeden değerlendirebilirsin. \n <b>clarat refugees</b>’de Almanya genelinde imkanlar sunuyor. <b>clarat family</b> Berlin’de ilk adımını atmıştır.\nBurada bir çok imkanlar var ve başka imkanlarıda bulmaya devam ediyoruz. Yakında Almanya’nın bir çok büyük şehrinde de hizmet vereceğiz."
+          question: Clarat tüm Almanya genelinde mi var?
+        question_8:
+          answer: 'clarat, sana yakınlarındaki yardımları gösteriyor. Bir bakısta çeşitli öneriler sunuyoruz. Buna ek olarak, destek alabilmen için sana ne yapacağını tam olarak anlatıyoruz. Bu basıt dil herkes için çok kolayca anlaşılabiliyor çünkü clarat’ta yeterli almancası olmayan insanlara yardımcı olmak istiyoruz. Destek ve öneriler birçok farklı dilde tercüme edildi. Bu konu hakkında daha fazla bilgi edinmek istiyorsan, lütfen %{ref_to_how_many_languages} tıkla. '
+          link_1:
+            class: FAQ_anchor_link
+            name: buraya
+            url: "/haeufige-fragen/#how_many_languages"
+            var: ref_to_how_many_languages
+          question: Clarat‘ın özelliği nedir?
+        question_9:
+          answer: "clarat, %{link_to_bsz} kuruluşunun bir projesidir. Benckiser Stiftung Zukunft, uzun bir süredir çocuk ve yetişkinler için farklı destekler sunan bir aile vakıfıdır. \nClarat refugees ile şimdi mültecilere de destek veriliyor. Bu %{link_to_bsz_movie} üzerinden kuruluş hakkinda daha fazla bilgi edinebilirsin.\nclarat fikri 2014 senesinin ortalarinda ortaya cikti. clarat ekibi Eylül 2014’de calışmaya başladı. Bizim hakkımızda daha fazla bilgi edinmek istiyorsan, lütfen %{link_to_about_us} tıkla. "
+          link_1:
+            name: Benckiser Stiftung Zukunft
+            target: _blank
+            url: http://www.benckiser-stiftung.org/de
+            var: link_to_bsz
+          link_2:
+            name: videoda
+            target: _blank
+            url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
+            var: link_to_bsz_movie
+          link_3:
+            name: buraya
+            target: _blank
+            url: http://www.clarat.org/ueber-uns
+            var: link_to_about_us
+          question: Clarat‘ın arkasında  kim var?
+      section_2:
+        heading: Arayışın ile ilgili soruların mı var?
+        question_1:
+          anchor: who_finds_help
+          answer: "clarat herkes içindir - tek bir tıklama ile <b>clarat family</b>  ile clarat refugees arasında seçim yapabilirsin:\n<p>\n<ul>\n<li>\n<b>clarat family</b> destek arayan çocuklar, gençler ve aileler için olmaktadır. \nHangi Aile, arkadaşlar, okul ya da başka bir konu ile ilgili sorunlar olabilir. \n</li>\n<li>\n<b>clarat refugees</b> Almanya’da bulunan tüm mülteciler içindir. \nMülteci çocuk ve gençler için; mülteci bayan ve erkekler için; mülteci aileler için. \nYani Almanya’ya iltica etmek zorunda kalıp, yardıma ihtiyaç duyan herkes içindir.\n</li>\n</ul>\n</p>\nAncak clarat’ta başkalarına destek olmak isteyenler de arayış içerisine girebilir. Mesela öğretmenler, komşular ve tanıdıklar. "
+          question: clarat’ta kimler destek bulabilir?
+        question_10:
+          answer: "Bunun çeşitli sebepleri olabilir.\n<p>\n<ul>\n<li>\nAradığın kelimenin çalışmadığı olabilir. Bu durumda başka bir kelime girişi yapmayı deneyebilirsin. Aklına başka bir kelime gelmiyorsa, resimler yardımıyla arama yapmaı deneyebilirsin. clarat sayfasında bunun adı: Kategorilere göre arama. %{ref_to_how_to_find_right_help}, bu aramanın nasıl çalıştığını öğrenebilirsin. \n</li>\n<li>\nKöyde yada şehir merkezine uzak bir yerde oturuyor ve böylelikle yakınında bir destek bulamıyorsan, <b>Nerede?</b> kısmına yakında bulunan bir şehir yazıp aratabilirsin. Veya telefon ya da internet üzerinden alabileceğin yardımlara bakabilirsin.\n</li>\n<li>\nBaşka bir sebebi, bulunduğun şehirde henüz destek veremiyor olmamız olabilir.\n</li>\n<li>\nSenin aradığın destek türüne uygun bir seçeneyimiz henüz olmayabilir. Bu durumda bize geri dönüş sağlaman önemli, çünkü böylece sorunu çzebilirz. Bunun için bize %{mailto_clarat} mail yazabilirsin. \n</li>\n</ul>\n</p>"
+          link_1:
+            class: FAQ_anchor_link
+            name: Burada
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          link_2:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Aradığımı neden bulamıyorum?
+        question_11:
+          answer: "En iyisi, ilk olarak bulduğun destek türünün hangi soruna uygun olduğuna bakman olacaktır. \nBunu  <b>Konu ne?</b> yazan kısımda bulabilirsin. Henüz doğru seçenek değilse başka bir destek türünü seçebilirsin.\nHala emin değilsen desteği sunan yere başvurabilirsin. Çoğu zaman mail yazılabilir ya da telefon ile ulaşılabilir. Mail adreslerini ve telefon numaralarını clarat’da bulabilirsin. Bunlar <i>Nereye başvurabilirsin?</i> kısmında yer almaktadır."
+          question: Bulduğum destek türün benim için uygun olduğundan emin değilsem ne yapmalıyım?
+        question_12:
+          answer: "clarat’ta yalnızca kendin için değil, başkası için de bir destek bulabilirsin. \nMesela bir arkadaşın için, ya da Amca olarak yeğenin için. Ya da Anne olarak kızın için. \nVeya bir öğretmen olarak, bir öğrencin için. Ancak, öncelikle desteği alacak olan kişiye hitap edildiği için şaşırma. \nDesteği alan kişiler çoğunlukla çocuk ve gençler."
+          question: Başkası için aradığım desteği nasıl bulabilirim?
+        question_2:
+          answer: "<b>clarat family’de</b> çeşitli destek türleri bulabilirsin. Bunlar farklı farklı sorunlarında destek bulmana yardımcı olacaktır. \nBunları senin için konulara ayırdık:\n<p>\n<ul>\n<li>\n<b>Bebek Arabası - Ailesel Sorunlar</b><br>\nBurada, ailen ile ilgili sorun yaşadığında, destek bulabilirsin. Mesela bir  kavgada. Ama tabii başka konularda da. \nMesela büyümek ya da eğitim ile ilgili. Burada aile ile ilgili tüm konularda destek bulman mümkün. \nHem çocuklar için hem erişkinler ile ilgili bir çok yardım bulunmaktadır. \n</li>\n<br>\n<li>\n<b>Kalp - Sağlık</b><br>\nHasta olup, kendini iyi hissetmediğinde, burada destek bulabilirsin. \nAynı zamanda, ailenden biri hastalandığında ya da birinizin bağımlılık sorunu olduğunda. \n</li>\n<br>\n<li>\n<b>Kitap - Öğrenim ve Çalışmak</b><br>\nBurada, örneğin okulda ya da meslek öğreniminde sorun yaşadığında, destek bulabilirsin. \nAynı zamanda, öğrenim yeri arayışında olduğunda da destek alabilirsin ya da bir \nAlmanca kursu aradığında. \n</li>\n<br>\n<li>\n<b>Kılavuz - Günlük Yaşamda Karşılaşılan Sorunlar</b><br>\nBurada, günlük yaşamında küçük ya da büyük sorunların olduğunda, destek bulabilirsin. \nVe ya sokakta yaşıyorsan. Ayrıca, boş zamanında yapacak bir meşgale aradığında, ya da form ve dilekçe \ndoldurmakta zorlandığında da, buraya başvurabilirsin.\n</li>\n<br>\n<li>\n<b>Yumruk - Şiddet</b><br>\nBirisi seni dövdüğünde ya da tacize uğradığında burada destek bulabilirsin. Kendin agresif isen\nya da suç işliyorsan da buraya başvurabilirsin. \n</li>\n<br>\n<li>\n<b>Şimşek - Acil Durum</b><br>\nAcil durumlarda, burada yardım bulabilirsin. Gündüz ve gece yazan destek türlerine her zaman başvurabilirsin. Bu durumda saatin hiç bir önemi yoktur. \n</li>\n</ul>\n</p>"
+          question: Clarat family’de hangi konular ile ilgili destek bulabilirim?
+        question_3:
+          answer: "<b>clarat refugees’de</b> çeşitli destek türleri bulabilirsin. \nBunlar farklı farklı sorunlarında destek bulmana yardımcı olacaktır. \nBunları senin için konulara ayırmış bulunmaktayız:\n<p>\n<ul>\n<li>\n<b>Paragraf – İltica ve Haklar</b><br>\nİlticalık ile ilgili soruların olduğunda, buraya başvurabilirsin. \nÖncesinde, iltica esnasında ya da sonrasında olması fark etmemektedir. Yani mesela geçici bir kalma iznin var ise ya da \nAlman kanunları ile igili soruların olduğunda. 18 yaşından küçük mülteciler de burada destek alabilirler.\n</li>\n<br>\n<li>\n<b>Bebek Arabası – Ailesel Sorunlar</b><br>\nBurada, ailen ile ilgili sorun yaşadığında, destek bulabilirsin. Mesela bir  kavgada. Ama tabii başka konularda da. \nMesela büyümek ya da eğitim ile ilgili. Burada aile ile ilgili tüm konularda destek bulman mümkün. \nHem çocuklar için hem erişkinler ile ilgili bir çok yardım bulunmaktadır. \n</li>\n<br>\n<li>\n<b>Kalp – Sağlık</b><br>\nBurada hasta olduğunda, ya da belki hamile olduğunda destek bulabilirsin. \nAynı zamanda kendini savaş ve işkence nedeniyle kötü hissediyorsan, buraya başvurabilirsin. \nYa da engelli isen. Burada, mültecilere yardım eden doktorlar ve psikologlar bulman mümkün.\n</li>\n<br>\n<li>\n<b>Kitap – Öğrenim ve Çalışmak</b><br>\nBurada, örneğin okulda ya da meslek öğreniminde sorun yaşadığında, destek bulabilirsin.\n Aynı zamanda, öğrenim yeri arayışında olduğunda da destek alabilirsin ya da bir Almanca kursu aradığında. \nMülteci olarak katılman gereken entegrasyon kurslarını da burada bulman mümkün. \n</li>\n<br>\n<li>\n<b>Kılavuz – Günlük Yaşamda Karşılaşılan Sorunlar</b><br>\nBurada, resmi daireler ile ilgili sorun yaşadığında, destek bulabilirsin. Mesela yeterince iyi Almanca konuşamadığın için. \nBu durumda, burada tercümanlık yapabilecek kişileri ya da seni resmi daireye giderken eşlik eden kişileri bulabilirsin. \nDaha farklı yardımlar da bulman mümkün tabii. Sana nerede yemek, mobilya ya da kıyafet bulabileceğin yerleri gösterebiliriz. \nAyrıca başka kişilerle tanışabileceğin etkinlikleri de burada bulabilirsin. Örneğin bir spor kulübü ya da aşçılık kursu.\n</li>\n<br>\n<li>\n<b>Yumruk – Şiddet</b><br>\nBirisi seni dövdüğünde ya da savaş esnasında işkenceye maruz kaldın ise, burada destek bulabilirsin. \nAynı zamanda, belirli bir örgütten çıkmak istediğinde de, buraya başvurabilirsin.\n</li>\n<br>\n<li>\n<b>Şimşek – Acil Durum</b><br>\nAcil durumlarda, burada yardım bulabilirsin. \n<b>Gündüz ve gece</b> yazan destek türlerine her zaman başvurabilirsin. \nBu durumda saatin hiç bir önemi yoktur. \n</li>\n</ul>\n</p>"
+          question: Clarat refugees’de hangi konular ile ilgili destek bulabilirim?
+        question_4:
+          answer: "Anasayfanın sağ kısmında bir şimşek işareti görebilirsin. Şimşeğe tıkladığında seçili destek çeşitleri bulabilirsin. \nBu destek çeşitleri sana acil durumlarda, yani hemen yardıma ihtiyaç duyduğunda, yararlanabilirsin. \n<b>Gece ve gündüz</b> yazan destek türlerine her zaman başvurabilirsin. Bu durumda saatin hiç bir önemi yoktur. \nDışarı çıkmak istemezsen, sana telefonda ya da internet üzerinden de yardımcı olabilinir."
+          question: Zor durumda isem, nasıl acil yardım alabilirim?
+        question_5:
+          anchor: how_to_find_right_help
+          answer: "Kendin için doğru desteği bulabilmen için, iki seçenek mevcut olmaktadır:\n<p>\n<ul>\n<li>\nSorunun ya da almak istediğin yardımın adını koyabiliyorsan, anasayfada bulunan  <b>Ne?</b> \nkısmına yazabilirsin.  <b>Nerede?</b> kısmına ise, nerede destek aradığını yazabilirsin. \nAynı zamanda <b>Nerede?</b> kısmında <b>konumumu kullan</b> butonuna tıklayabilirsin. \nDaha sonra büyüteç işaretine tıklarsan, yakınında alabileceğin desteği görebilirsin.\n</li>\n<li>\nSorununun tam olarak nasıl adlandıracağını bilemediğind, <b>kategoriler arasında aramayı</b> denemelisin. \nÖrneğin ödevlerin ile ilgili sorunların varsa, kitaba tıklayabilirsin. Tıkladığında, sol tarafta <i>Öğrenim ve Çalışmak</i> ile ilgili, yine seçebileceğin,\nbir çok sözcük bulabilirsin. <b>Nerede?</b> kısmına ise, nerede destek aradığını yazabilirsin. Aynı zamanda <b>Nerede?</b> \nkısmında <b>konumumu kullan</b> butonuna tıklayabilirsin. Daha sonra büyüteç işaretine tıklarsan, yakınında alabileceğin desteği görebilirsin.\n</li>\n</ul>\n</p>"
+          question: Kendim için nasıl doğru desteği bulabilirim?
+        question_6:
+          answer: clarat’ta bulabileceğin çoğu destek türleri ücretsizdir. Bazı destek çeşitleri ücretli olmaktadır. Ancak bu otomatikmen, senin ödemen gerektiği anlamına gelmez. Sağlık sigortasının ya da başka bir kurumun bunu ödemesi de mümkün olmaktadır. Bu kurum mesela bir resmi daire olabilir. En iyisi, bunu desteği alacağın yere sormaktır. Bu şekilde alacağın desteğin ücretsiz olup olmadığını öğrenebilirsin.
+          question: "Ücretsiz olarak alabileceğim destek mevcut mudur?"
+        question_7:
+          answer: "clarat’ta bulabileceğin bazı destek türlerinden ismini belirtmeden yararlanabilirsin. Bu durum söz konusu ise, bu <i>Ne yapmalısın?</i> başlığı altında belirtilmektedir. \nBu başlığı bulamadığında, desteği alacağın yere de sorabilirsin."
+          question: |
+            Gizli olarak alabileceğim destek mevcut mudur?
+        question_8:
+          answer: |-
+            Çocuk ya da genç olarak,
+            <p>
+            <ul>
+            <li>
+            ruhsal bir engelin olduğunda, yani uzun süredir psikolojik sorun yaşadığında
+            </li>
+            <li>
+            Annen/Baban engelli ise. Ne tür bir engellilik olduğu önemli olmamaktadır; ruhsal, zihinsel ya da bedensel bir engel olabilir.
+            </li>
+            <li>
+            kardeşin engelli ise. Ne tür bir engellilik olduğu önemli olmamaktadırİ ruhsal, zihinsel ya da bedensel bir engel olabilir.
+            </li>
+            </ul>
+            </p>
+          question: Clarat family’de engellilik hakkında destek almam mümkün mü?
+        question_9:
+          answer: "Aramalarını destek türlerine göre başlatmalısın. Doğru desteği nasıl bulabileceğini buraya tıklayarak öğrenebilirsin. \nSonuç sayfasına ulaştıysan sağ üst kısımda <b>arama seçeneklerini göster</b> butonunu görebilirsin. %{ref_to_how_to_find_right_help} tıkladığında çeşitli filtreler kullanabilirsin. \nBu şekilde daha detaylı bir arama gerçekleştirebilirsin:\n<p>\n<ul>\n<li>\n<b>Çocuğun yaşı?</b> Buraya yaşını yazmalısın; ya da destek aradığın çocuğun yaşını.\n</li>\n<li>\n<b>Dil?</b> Buraya dilini girmelisin. Dilini seçtiğinde, kendi dilinde kullanabileceğin destek türlerini bulabilirsin. \nHerhangi bir dil seçmediğinde, otomatik olarak Almanca destek türleri gösterilecektir.\n</li>\n<li>\n<b>Destek kime?</b>  Burada, desteğin kime yapılacağını belirtebilirsin. \nÖrneğin tüm ailen için destek aradığında, <i>aileler’i</i> tıklamalısın. \nYalnızca çocuklar için (yani kendin için) destek aradığında <i>Çocuk ve Gençler’i</i> tıklamalısın. \n</li>\n<li>\n<b>Cinsiyet?</b> Burada desteğin <i>yalnızca erkekler</i> ya da <i>yalnızca kızlar için</i> olacağını belirteyebilirsin. \nherhangi bir şeye tıklamadığında, filtre otomatikmen  <i>farketmez’e</i> geçecektir.\n</li>\n<li>\n<b>Auf welchem Weg?</b> Hier kannst du auswählen, ob du zum Beispiel\nnur Unterstützungsangebote finden möchtest, zu denen du persönlich\nhingehen kannst. Dann klicke <i>persönlich</i> an. Wenn du lieber von\ndir zu Hause aus Hilfe bekommen möchtest, klicke <i>telefonisch</i> oder\n<i>online</i> an. Danach kannst du noch wählen zwischen Telefon, E-Mail,\nChat, Forum und Online-Kurs.\n</li>\n</ul>\n</p>"
+          link_1:
+            class: FAQ_anchor_link
+            name: burada
+            url: "/haeufige-fragen/#how_to_find_right_help"
+            var: ref_to_how_to_find_right_help
+          question: Aramamı nasıl filtreleyebilirim?
+      section_3:
+        heading: |
+          Clarat dili ile ilgili soruların mı var?
+        question_1:
+          answer: "clarat’ta destek arayan herkes, desteğini hızlı bir şekilde bulabilmesi için, clarat dili yaratılmıştır. \nClarat dili herkes için anlaşılır olmaktadır, çünkü basit bir dildir. Ve sonuçta clarat herkes içindir. \nÇocuklar, gençler ve aileleri için. Bunlar farklı ülkelerden olabilir. Burada doğanlar için ya da \nAlmanya’ya henüz yeni gelenler için. Almancayı iyi bilenler için ve ya Almancayı henüz çok iyi bilmeyenler için."
+          question: Clarat neden her zaman çok basit bir dil kullanıyor?
+        question_2:
+          answer: "Zor kelimeler clarat’ta bir cümle ile açıklanmaktadır. Bazı kelimeler daha uzun açıklamalar gerektirebilir.\nBu kelimelerin altı çizili olmaktadır. \nFare ile üzerlerinden geçtiğinde açıklamalarını görebilirsin. "
+          question: Clarat’ta zor kelimeler nasıl açıklanıyor?
+        question_3:
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
+        question_4:
+          answer: "clarat’ta her türlü cinsel tercihi olan çocuklar, gençler ve erişkinler için destek bulunuyor. \nBunlar lezbiyen, homoseksüel, biseksüel, transseksüel ya da iki cinsiyetliler olabilir. \nAncak tüm bu grupları her zaman sayamıyoruz. Çünkü clarat’taki metinler her zaman basit ve kısa olmalıdır. \nBu nedenle  LGBTI kısaltısını kullanıyoruz. Bu tüm bu grupların ingilizce kısaltısıdır. Almanca bir kısaltı yoktur."
+          question: Clarat neden <i>LGBTI</i> kısaltmasını kullanıyor?
+        question_5:
+          answer: 
+          question: Clarat neden <i>göçmen</i> kelimesini kullanıyor?
+        question_6:
+          answer: "clarat’ta herkesin kimden bahsedildiğini hemen anlamasını istiyoruz. Ve çoğu insan göçmen kelimesini kullanıyor. \nBu yüzden bizde bunu yapıyoruz. clarat’ta her şeye dikkat etmeye çalışıyoruz. Ama herkesin her şeyi anlaması daha önemli. \nBöylece, destek arayan herkes, hızlıca destek bulabilir. "
+          question: Clarat neden <i>mülteci</i> kelimesini kullanıyor?
+      section_4:
+        heading: 
+        question_1:
+          anchor: how_many_languages
+          answer: 
+          question: Clarat hangi dillerde var?
+        question_2:
+          answer: "Sayfanın üst tarafinda dil secimini tıklayıp anında Google Translator ile otomatik olarak sayfayı kendi diline tercüme ettirebilirsin. \nNe yazık ki bazen dilsel hatalar olabiliyor. Bu nedenle garip tercümeler oluşabiliyor."
+          question: Clarat sayfasını nasıl anadilim ile okuyabilirim?
+        question_3:
+          answer: "Google Translator otomatik olarak tercüme ediyor. \nBu nedenle bazen dilsel hatalar oluşup ve bazı sözler doğru tercüme edilemiyor."
+          question: Anadilim veya kendi dilimde bazi metinler niye kulağa garip geliyor?
+      section_5:
+        heading: Bir yardım kuruluşu çalışanı/gönüllüsü olarak soruların mı var?
+        question_1:
+          answer: "Senin kuruluşunun teklifleri, sorun yaşayan çocuklara, gençlere ve ailelere yardım sunuyor \nve onun için bu organizasyounu <b>clarat family’e</b> ekledik. \nBizim amacımız, yardıma ihtiyacı olan kişilerin, kolay ve çabukça senin \nkuruluşun üzerinden desteğe ulaşmaları.\n<br>\nVeya senin kuruluşun Almanya’ya kaçmıs olan mültecilere destek veriyor. Bu sebep’le bu organizasyounu clarat refugees’e ekledik. \nBizim amacımız, yardıma ihtiyacı olan mültecilerin, kolay ve çabukça senin kuruluşun üzerinden desteğe ulaşmaları."
+          question: Benim kuruluşumun teklifleri neden clarat’ta?
+        question_2:
+          answer: "<b>Clarat family</b> çocuklara, gençlere ve ailelere senin kuruluşunun yardım imkanlarını bulmalarında yardımcı  oluyor. \n<b>Clarat refugees‘de</b> mültecilere destek bulmalarında yardım sunuyor. Senin kuruluşunun var olduğunu sadece bilgilendirdiğimiz şahıslar bilir.\nHerkes hangi desteği hangi organizasyon üzerinden alabilceğini oğrenirse, yardıma o kadar çabuk ulaşabilir. \nClarat bu yolu kolay bir dil ile şahıslara ulaştırıyor. Buna ek olarak, bütün teklifler otomatik olarak bir çok farklı yabanci dil’e tercüme ediliyor. "
+          question: Clarat benim kuruluşum için neler yapiyor?
+        question_3:
+          answer: "<b>Neyi?</b> denen alanda organizasyonun adını girebilirsin. Mesela <i>örnek derneği e.V.</i>.  \n<b>Nerede?</b> alanına organisazyonunun konumunu/adresini belirleyebilirsin. \nMesela <i>örnek cadde 14, Berlin</i>. Sonra bir genel bakışta ekranda Berlin’de nerede yardim alabileceğin gösteriliyor. \nŞayet kuruluşunun Berlin’de birçok adresleri varsa, <b>Nerede?</b> alanınan sadece Berlin yaz ve aramanı başlat. "
+          question: Benim kuruluşumun tekliflerini clarat’a nasıl bulabilirim?
+        question_4:
+          answer: 'Herkesin yardıma ulaşabilmesi için, tüm teklifleri farklı yabanci dillerde sunuyoruz. Bazı karmaşık konuların gerçekte olduğundan daha basit bir dil ile açıklanması gerekiyor. Yani metinler otomatik olarak daha iyi tercüme edilebiliyor. Belki daha farklı anlatılacak bazı şeyler bulabilirisin. Eğer böyle birsey ile karşılasırşan, lütfen bize bildir. En iyisi bize %{mailto_clarat} adresinden bir e-Mail gödermen. '
+          link_1:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Benim kuruluşumun teklifleri kendi website’lerinden niye daha farklı sunuluyor?
+        question_5:
+          answer: |
+            Biz her birey için mümkün olduğunca kolay yardım sunmak istiyoruz. Bu nedenle, kuruluşunun tekliflerini bölüp ve yaymaya çalışıyoruz. Her belli sorunda sadece tek bir teklif belirlensin istiyoruz. Böylelikle yardıma ihtiyacı olanlar, onlara en uygun olan yardımı bulabiliyorlar.
+          question: Benim kuruluşumun destek teklifleri clarat’ta neden coğaliyor?
+        question_6:
+          answer: |-
+            Almanya’da çocuklara, gençlere, ailelere ve mültecilere bir çok yardım sunuluyor. clarat şu an parça parça inşa ediliyor. Bu yüzden belki senin kuruluşunun tüm tekliflerini karşılayamamış olabiliriz. Ya da şu an için senin kuruluşunun tüm tekliflerini sunmaya  karar vermemiş olabiliriz.
+            <p>
+            <b>clarat family’de</b> şimdilik:
+            <ul>
+            <li>
+            sadece sorunları olan insanlara yardımcı olacak imkanlar bulunuyor
+            </li>
+            <li>
+            ücretli olan ve kamu yararına çalışan organizasyonun imkanlarına ulaşabilirsin
+            </li>
+            <li>
+            fiziksel veya tıbbi yardıma ihtiyacı olan insanlar için yardım bulunmamaktadir
+            </li>
+            </ul>
+            </p>
+            <b>clarat refugees’de</b> şimdilik olmayanlar:
+            <p>
+            <ul>
+            <li>
+            Karşılama konutları yada toplu yerleşim olanakları
+            </li>
+            <li>
+            Kilise’de sığınmacı olarak devlet erişiminden koruma
+            </li>
+            <li>
+            Gönüllülük portalları veya bağış portalları
+            </li>
+            </ul>
+            </p>
+          question: Benim kuruluşumun neden tüm teklifleri clarat’ta yok?
+        question_7:
+          answer: 'Bizim ile irtibata geç. Hata veya düzeltme önerilerini kolaylıkla bize bildirebilirsin. En iyisi bize  %{mailto_clarat} adresinden bir mail atıp veya +49 (0)30 55 57 96 00 numara’dan ulaşman. '
+          link_1:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Yanlış veya düzeltme önerilerini nasıl bildirebilirim?
+        question_8:
+          answer: |-
+            Bunun iki olası nedeni olabilir:
+            <p>
+            <ul>
+            <li>
+            Bunun nedeni, senin kuruluşunun konumu hakkında bilgi edınılmemesi. clarat şu an parça parça inşa ediliyor. Bu yüzden belki senin kuruluşunun tekliflerini henüz kaleme alamamış olabiliriz.
+            </li>
+            <li>
+            Veya senin kuruluşunun  içerik açısından bizim sunumlarımıza uymadığından.clarat’ta sadece belirli konular hakkında imkanlar bulunmaktadır.Hangi konular olduğunu, %{ref_to_who_finds_help}  okuyabilirsin. Eğer senin kuruluşunun tekliflerini clarat’ta sunulmasını istiyorsun bizimle irtibata geçebilirisin.En iyisi bize %{mailto_clarat}  adresinden bir mail atıp veya +49 (0)30 55 57 96 00 numara’dan ulaşman.
+            </li>
+            </ul>
+            </p>
+          link_1:
+            class: FAQ_anchor_link
+            name: buradan
+            url: "/haeufige-fragen/#who_finds_help"
+            var: ref_to_who_finds_help
+          link_2:
+            name: post@clarat.org
+            target: _blank
+            url: mailto:post@clarat.org
+            var: mailto_clarat
+          question: Benim kuruluşum neden clarat’ta değil?
+  conf:
+    current_location: Konumum
+    default_latlng: 52.520007,13.404954
+    default_location: Berlin
+  contacts:
+    create:
+      success: Mesaj başarıyla gönderilmiştir.
+    new:
+      contact_heading: Bize ne bildirmek istersin?
+    shared:
+      new:
+        email_placeholder:
+          required:
+            'false': E-Mail adresi (opsiyonel)
+            'true': E-Mail adresi (zorunlu)
+        message_placeholder: Mesaj yaz (zorunlu)
+        name_placeholder: "İsim (zorunlu)"
+        send: gönder
+        send_us_a_message: Bize mesaj gönder
+  emails:
+    offers_index:
+      family:
+        heading: 
+        no_results: 
+        toggle_section_html: 
+      obfuscated_email: 
+      refugees:
+        heading: 
+        no_results: 
+        toggle_section_html: 
+      shared:
+        explanation_1: 
+        explanation_2: 
+        explanation_3: 
+        explanation_4: 
+        info: 
+    subscribe:
+      success_html: |
+        E-bülten aboneliğine başarıyla kayıt oldun.
+        (<a href="%{unsubscribe_href}">abonelikten çık</a>)
+    unsubscribe:
+      success_html: |
+        E-bülten aboneliğinden başarıyla çıktın.
+        (<a href="%{subscribe_href}">tekrar abone ol</a>)
+  enumerize:
+    search_form:
+      age:
+        '0': 0
+        '1': 1
+        '10': 10
+        '11': 11
+        '12': 12
+        '13': 13
+        '14': 14
+        '15': 15
+        '16': 16
+        '17': 17
+        '18': 18
+        '19': 19
+        '2': 2
+        '20': 20
+        '21': 21
+        '22': 22
+        '23': 23
+        '24': 24
+        '25': 25
+        '26': 26
+        '27': 27
+        '28': 28
+        '29': 29
+        '3': 3
+        '30': 30
+        '31': 31
+        '32': 32
+        '33': 33
+        '34': 34
+        '35': 35
+        '36': 36
+        '37': 37
+        '38': 38
+        '39': 39
+        '4': 4
+        '40': 40
+        '41': 41
+        '42': 42
+        '43': 43
+        '44': 44
+        '45': 45
+        '46': 46
+        '47': 47
+        '48': 48
+        '49': 49
+        '5': 5
+        '50': 50
+        '51': 51
+        '52': 52
+        '53': 53
+        '54': 54
+        '55': 55
+        '56': 56
+        '57': 57
+        '58': 58
+        '59': 59
+        '6': 6
+        '60': 60
+        '61': 61
+        '62': 62
+        '63': 63
+        '64': 64
+        '65': 65
+        '66': 66
+        '67': 67
+        '68': 68
+        '69': 69
+        '7': 7
+        '70': 70
+        '71': 71
+        '72': 72
+        '73': 73
+        '74': 74
+        '75': 75
+        '76': 76
+        '77': 77
+        '78': 78
+        '79': 79
+        '8': 8
+        '80': 80
+        '81': 81
+        '82': 82
+        '83': 83
+        '84': 84
+        '85': 85
+        '86': 86
+        '87': 87
+        '88': 88
+        '89': 89
+        '9': 9
+        '90': 90
+        '91': 91
+        '92': 92
+        '93': 93
+        '94': 94
+        '95': 95
+        '96': 96
+        '97': 97
+        '98': 98
+        '99': 99
+      contact_type:
+        personal: Personal
+        remote: Remote
+      language:
+        '150': 150
+        '326': 326
+        '568': 568
+        '639': 639
+        amh: Amh
+        ara: Ara
+        aze: Aze
+        bel: Bel
+        ben: Ben
+        bos: Bos
+        bul: Bul
+        deu: Deu
+        ell: Ell
+        eng: Eng
+        fas: Fas
+        fra: Fra
+        hin: Hin
+        hrv: Hrv
+        hun: Hun
+        ita: Ita
+        kik: Kik
+        kur: Kur
+        lav: Lav
+        lit: Lit
+        ltz: Ltz
+        luo: Luo
+        mkd: Mkd
+        nor: Nor
+        pol: Pol
+        por: Por
+        rom: Rom
+        ron: Ron
+        rus: Rus
+        snk: Snk
+        spa: Spa
+        sqi: Sqi
+        srp: Srp
+        swa: Swa
+        swe: Swe
+        tam: Tam
+        tel: Tel
+        tgk: Tgk
+        tha: Tha
+        tuk: Tuk
+        tur: Tur
+        urd: Urd
+        uzb: Uzb
+        vie: Vie
+        wol: Wol
+        zho: Zho
+        zza: Zza
+      section:
+        family: Family
+        refugees: Refugees
+  formtastic:
+    hints:
+      update_request:
+        index:
+          email: NOTRANSLATE
+  js:
+    ajax_error:
+      error: Arama hatası
+      message: |
+        üzgünüz, arama da bir hata oluştu. bu hata tekrar oluşursa, bizimle irtibata geç.
     autocomplete_footer: Tüm %{results} sonuçlar '%{query}'
-    map_info_window_multiple:
-      title: 'Birden fazla hizmet'
-      text: 'Bu konum için birden fazla sonuç bulundu.'
-      anchor: 'Tümüne göz at >>'
+    categories_sidebar:
+      all_categories: Tüm kategoriler
     cookie_warning_html: |
       Cookieler bu sayfayı sana sunmamızda yardımcı oluyor. Web sitemizi kullanarak
       bu cookieleri kullanmamıza izin vermektesin.
       <a href="/datenschutzhinweise">Mehr</a>.
-    more_filter_options: 'Daha fazla filtre göster'
-    less_filter_options: 'Daha az filtre göster'
-    mobile_filter: 'Sonuçları filtrele'
-    ajax_error:
-      error: "Arama hatası"
-      message: |
-        üzgünüz, arama da bir hata oluştu. bu hata tekrar oluşursa, bizimle irtibata geç.
+    geolocation:
+      error: konumun bulunamamıştır. Lütfen manüel giriş yap.
+      get: Konumumu kullan!
+      waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
+    lang_list_toggle:
+      less: 
+      more: 
+    less_filter_options: Daha az filtre göster
+    location_required: |
+      Lütfen destek almak istediğin yerin adını gir.
+    map_info_window_multiple:
+      anchor: Tümüne göz at >>
+      text: Bu konum için birden fazla sonuç bulundu.
+      title: Birden fazla hizmet
+    mobile_filter: Sonuçları filtrele
+    more_filter_options: Daha fazla filtre göster
     query_field:
-      placeholder_words:
-        - Evlat edinme
-        - Uyuşturucu
-        - Şiddet
-        - Özel ders
-        - Acil durum
-        - hukuk
-        - Öksüz
-        - İşsiz
-        - yemek yemek
-        - hasta
-        - evsiz
-        - sigara içmek
-        - hamile
-        - eş cinsel
-        - okulu asmak
-        - ikamet etmek
       example_placeholder: "örneğin %{word}, …"
-
+      placeholder_words:
+        family: 
+        refugees: 
+    routes:
+      faq: 
     search:
-      form_more_label: "Arama tercihlerini göster"
-      form_less_label: "Arama tercihlerini kapat"
+      form_less_label: Arama tercihlerini kapat
+      form_more_label: Arama tercihlerini göster
+      headlines:
+        age: 
+        approach: 
+        gender: 
+        language: 
+        target_audience: 
+      option_any: 
+      pagination:
+        back: 
+        gap: 
+        next: 
     search_results:
-      more: "Daha fazla telefon ve online hizmetler"
-      show_personal: "Yerel hizmetleri göster"
-      bridge: "için"
-      enclosing: "bulundu"
-      faq_text: "Sıkça sorulan soruları ve cevapları bulabilirsin "
-      faq_anchor: "burada"
+      bridge: için
+      enclosing: bulundu
+      faq_anchor: burada
+      faq_text: 'Sıkça sorulan soruları ve cevapları bulabilirsin '
+      language_explanation:
+        connector: 
+        text: 
       map:
-        enlarge_map: "Haritayı büyüt"
-        headline_small_map: "Bulunduğum yerde sunulan hizmetleri haritada göster"
+        cooperation: 
+        enlarge_map: Haritayı büyüt
+        headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
+      more: Daha fazla telefon ve online hizmetler
       personal_offers:
-        zero: "Maalesef hizmet bulunmamaktadır"
-        one: "Bulunduğun yerde bir hizmet"
+        one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
+        zero: Maalesef hizmet bulunmamaktadır
       remote_offers:
-        zero: "Telefon veya online hizmet bulunmamaktadır"
-        one: "Telefon ve online hizmetleri"
+        one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
-
-    categories_sidebar:
-      all_categories: "Tüm kategoriler"
+        zero: Telefon veya online hizmet bulunmamaktadır
+      show_personal: Yerel hizmetleri göster
+    shared:
+      current_and_original_locale:
+        "'150'": 
+        "'326'": 
+        "'568'": 
+        "'639'": 
+        '150': 
+        '326': 
+        '568': 
+        '639': 
+        amh: 
+        ara: 
+        aze: 
+        bel: 
+        ben: 
+        bos: 
+        bul: 
+        deu: 
+        ell: 
+        eng: 
+        fas: 
+        fra: 
+        hin: 
+        hrv: 
+        hun: 
+        ita: 
+        kik: 
+        kur: 
+        lav: 
+        lit: 
+        ltz: 
+        luo: 
+        mkd: 
+        mul: 
+        nor: 
+        pol: 
+        por: 
+        rom: 
+        ron: 
+        rus: 
+        snk: 
+        spa: 
+        sqi: 
+        srp: 
+        swa: 
+        swe: 
+        tam: 
+        tel: 
+        tgk: 
+        tha: 
+        tuk: 
+        tur: 
+        urd: 
+        uzb: 
+        vie: 
+        wol: 
+        zho: 
+        zza: 
     single_search_result:
       encounters:
-        personal: "Kişisel" #?
-        hotline: "Telefon"
-        email: "E-Mail"
-        chat: "Sohbet"
-        forum: "Forum"
-        online-course: "Online kurs"
-        portal: "Adres listesi"
+        chat: Sohbet
+        email: E-Mail
+        forum: Forum
+        hotline: Telefon
+        online-course: Online kurs
+        personal: Kişisel
+        portal: Adres listesi
+  layouts:
+    partials:
+      banner:
+        teaser:
+          link: Burada daha fazla bilgi alabilirsin
+          refugees: Yakında mülteciler için de hizmetlerimiz olacaktır
+          text: clarat.org henüz yapım aşamasındadır
+      footer:
+        about: Hakkımızda
+        blog: Blog
+        contact: "İletişim"
+        faq: Sıkça sorulan sorular
+        fb:
+          anchor: Facebook
+          href: https://www.facebook.com/claratpunktorg
+        gplus:
+          anchor: Google+
+          href: https://plus.google.com/110429028641743127592/about
+        impressum: Künye
+        privacy: Gizlilik Politikası
+        tos: Hukuki Uyarılar
+        twitter:
+          anchor: Twitter
+          href: https://twitter.com/claratpunktorg
+      modal:
+        beta_modal:
+          link: bize mesaj gönder.
+          text: |
+            clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
+            Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
+            bir şey? o halde
+        unavailable_location_modal: |
+          Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
+          Yani sana telefonda ya da online olarak yardım edilecektir.
+          Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
+          memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+      nav_lang:
+        languages:
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polskie
+          ru: "НА РУССКОМ"
+          tr: Türkçe
+        title: Dilini seç
+      navigation:
+        category_headline: Kategoriler arasında ara
+        claim:
+          family: |
+            Çocuklar, gençler ve aileler için yardıum çeşitleri
+          main: Yardım bul
+          refugees: |
+            Mülteciler için yardım çeşitleri
+  offers:
+    index:
+      filters:
+        json:
+          age:
+            one: 1 sene
+            other: "%{count} seneler"
+            zero: "< 1 sene"
+          contact_type:
+            personal: bulunulan yerde
+            remote: telefon ile veya online
+          encounter:
+            chat: Sohbet
+            email: E-Mail
+            forum: Forum
+            hotline: Telefon
+            online-course: Online kurs
+            portal: Adres listesi
+          exclusive_gender:
+            boys_only: Yalnızca erkekler için
+            girls_only: Yalnızca bayanlar için
+          target_audience:
+            acquaintances: Tanıdık ve akrabalar için
+            children: "Çocuklar ve gençler için"
+            family_acquaintances: 
+            family_children: 
+            family_nuclear_family: 
+            family_parents: 
+            family_pregnant_woman: 
+            nuclear_family: Aileler için
+            parents: Ebeveynler için
+            pregnant_woman: Hamileler için
+      map_sidebar:
+        map_output_searchresults: Aramalarını haritaya dök
+      noscript_warning: |
+        Üzgünüz, ancak aramanı gerçekleştirebilmen için internet brwoserinde
+        JavaScript aktif olmalıdır.
+      pending_ajax:
+        searching: Arama…
+    invalid_location:
+      text: |
+        Girmiş olduğun adres bilgilerini başka bir şekilde arat.
+        (örneğin "Posta kodu ilçe").
+      title: Aramış olduğun yeri maalesef bulumadık.
+    shared:
+      current_and_original_locale:
+        '150': 
+        '326': 
+        '568': 
+        '639': 
+        amh: 
+        ara: 
+        aze: 
+        bel: 
+        ben: 
+        bos: 
+        bul: 
+        deu: 
+        ell: 
+        eng: 
+        fas: 
+        fra: 
+        hin: 
+        hrv: 
+        hun: 
+        ita: 
+        kik: 
+        kur: 
+        lav: 
+        lit: 
+        ltz: 
+        luo: 
+        mkd: 
+        mul: 
+        nor: 
+        pol: 
+        por: 
+        rom: 
+        ron: 
+        rus: 
+        snk: 
+        spa: 
+        sqi: 
+        srp: 
+        swa: 
+        swe: 
+        tam: 
+        tel: 
+        tgk: 
+        tha: 
+        tuk: 
+        tur: 
+        urd: 
+        uzb: 
+        vie: 
+        wol: 
+        zho: 
+        zza: 
+      search_form:
+        button: Arama
+        loc_label: Nerede
+        loc_placeholder:
+          long: Adres, İlçe, Semt veya posta kodu
+          short: "İl, posta kodu, …"
+        query_label: Ne
+        query_placeholder:
+          long: "… konu ile ilgili yardımlar"
+          short: "… ile ilgili yardımlar"
+    show:
+      last_update: Son kayıt düzenleme tarihi
+      next_steps:
+        code_word: 
+        heading: 
+      opening_section:
+        days:
+          fri: Cuma
+          mon: Pazartesi
+          sat: Cumartesi
+          sun: Pazar
+          thu: Perşembe
+          tue: Salı
+          wed: "Çarşamba"
+        heading: Ne zaman yapabilirsin?
+      speaking: 
+      website_section:
+        internet_presence: "İnternette nerede daha fazla bilgi bulabilirim?"
+        websites:
+          application_form: 
+          chat: 
+          contact_form: 
+          document: Daha fazla bilgi al
+          facebook: Facebook
+          forum: 
+          gplus: Google+
+          online_consulting: 
+          online_course: 
+          own: Web Sitesi
+          pinterest: Pinterest
+          twitter: Twitter
+          youtube: Youtube
+      what: Konu nedir?
+      who: Nerede yardım bulabilirim?
+      who_contact_people:
+        dr: Dr.
+        email: 'E-Mail: '
+        fax: 'Faks: '
+        female: Bayan
+        male: Bay
+        obfuscated_email: |
+          Bu E-Mail adresi spam koruma adına JavaScript ile
+          şifrelenmiştir. Okumak için JavaScript aktifleştir.
+        phone: 'Telefon: '
+        prof_dr: Prof. Dr.
+      who_location:
+        organizations: 'bir ... hizmetidir:'
+      who_section:
+        heading: Nereye başvurabilirsin?
+  opening:
+    display_string:
+      appointment: Sözleşilen vakit
+      midnight_exception: Saat 24:00
+      time_format: "%H:%M Saat"
+      time_frame: "%{open} - %{close}"
+  organizations:
+    show:
+      offers_all: Bu organizasyon ne tür yardımlar sunmaktadır?
+      where: Bu organizasyonu nerede bulabilirsin?
+      who: Bu organizasyon ne yapmaktadır?
+  pages:
+    about:
+      amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
+      andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
+      anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
+      astrid: |
+        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
+        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
+        The Roots feat. Erykah Badu.
+      basti: Basti Web Geliştiricisi, internet sayfalarını programlıyor. Clarat’ta IT şefi. Tüm teknik sorunlarda bize yardımcı oluyor. Tatil ve sözleşmelerden sorumlu. Michael Jackson’un Man in the Mirror şarkısı en sevdiği parça.
+      bettina: Kâr amacı olmayan şirket yönetimi mezunu ve bu sayede yardım organizasyonlarının nasıl yapıldığını iyi biliyor. Clarat’ta araştırma ekibinde. En sevdiği parça Dispatch’in Elias şarkısı.
+      elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
+      franziska: Uluslararası hukukçu ve her ülkede geçerli olan yasalar hakkında bilgisi çok derin. Komplike konuları iyi anlıyor ve çabuk çözümler sunuyor. Clarat’ta araştırma ekibinde. Selah Sue’nun Explanations şarkısı en sevdiği parça.
+      heading: Clarat’ın arka planında kim var?
+      janina: Janina kültür antropoloğu ve böylelikle değişik insan ve kültürler hakkında çok kapsamlı bilgisi var. Clarat’ta araştırma grubunda. Kendisi clarat-dil uzmanı ve kullanıcılarımıza yardımcı oluyor. En sevdigi parça Fanta4 grubunun MFG şarkısı.
+      janne: Janne politika ve uluslararası ilişkiler okudu. Zamanını çok iyi planlayabiliyor. Clarat’ta araştırma ekibinde ve bu kapsamda hangi sunumların clarat teklifi olabileceğine karar veriyor. En sevdigi müzik parçası Ry X’in Sweat parçası.
+      jens: |-
+        bir eğitim bilimcisi. Bu, eğitim hakkında iyi bir bilgiye sahip olması demektir.
+        Komplike şeyleri hızlıca anlıyor. clarat’da ise araştırma ekibinde yer alıyor. Kendisi hangi projelerin clarat’a ait olacağını belirliyor. En sevdiği şarkı Lambchop’un 2B2 şarkısı.
+      jule: barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. Hızlıca çözüm üretebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. Kendisi işimizin kalitesini sağlıyor. En sevdiği şarkı Edward Sharpe’ın Home şarkısı.
+      julia: bir Alman filoloğu. Bu, metinler ve Alman dili ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Clarat’da ise araştırma ekibinde clarat dilimizin uzmanı olmakta. En sevdiği şarkı Radiohead’in Reckoner şarkışı.
+      julian: bir sosyal ekonomist. Bu, kendisinin ekonomi ve toplum ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Aynı zamanda bilgisayarlarla da haşır neşir. Clarat’da ise araştırma ekibinde yer alıyor ve teknik kısmımızla ilgileniyor. En sevdiği şarkı Sublime’ın All You Need şarkısı.
+      katinka: bir psikolog. Bu, insanların davranışlarını ve duygularını iyi anlayabildiği anlamına geliyor. Ayrıca komplike şeyleri iyi düzenleyebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. En sevdiği şarkı Cat Power’in The Greatest şarkısı.
+      konstantin: bir web geliştirme uzmanı. Bu, internet sayfalarını programlayabildiği anlamına geliyor. Her zaman iyi çözümler bulabiliyor. clarat’da ise IT bölümünde yer alıyor ve internet sayfamızı yapıyor. En sevdiği şarkı Daft Punk’ın Too Long şarkısı.
+      laura: Güney Asya çalışmaları ve coğrafi kalkınma uzmanlığı dalında okumuş. Bu, gelişmekte olan ülkeler hakkında çok bilgiye sahip olduğu anlamına geliyor. Kavrayış gücü oldukça yüksektir. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Paint It Black.
+      lavinia: bir barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksek. Clarat’da araştırma ekibinde yer almakta ve projeleri konulara göre düzenliyor. En sevdiği şarkı Fever Ray’in Not Done şarkısı.
+      line: bir tiyatro yönetmeni. Aynı zamanda edebiyat ve dil ile ilgili çok bilgiye sahip. Bu nedenle kelimelerin insanlarda yarattığı etkiyi çok iyi biliyor. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Anybody Seen My Baby.
+      lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
+      marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
+      nicole: |
+        Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
+      nils: |
+        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
+        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
+        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
+        Jein von Fettes Brot.
+      stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
+      text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
+      tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
+      title: Hakkımızda
+      verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
+    agb:
+      heading: 
+      text_html: NOTRANSLATE
+      title: Rechtliche Hinweise
+    faq:
+      title: 
+    home:
+      how:
+        heading: Clarat nasıl çalışıyor?
+        text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
+      title:
+        family: 
+        refugees: 
+      whom:
+        heading: Clarat kimler için var?
+        text: Clarat herkes için var. Clarat family çocuklar, gençler ve ailelerin hizmetinde. Clarat refugees mülteciler için. Burada kendin, ailen veya arkadaşlarınla ilgili her soruya ve probleme çözüm bulabilirsin. Yardıma ihtiyacı olan tanıdığın diğer insanlar için de destek veriyoruz.
+      why:
+        heading: Clarat neden var?
+        text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
+    impressum:
+      heading: Impressum
+      responsible_html: |-
+        Yönetim Kurulu<br/>
+        Dr. Dr. Christoph Glaser<br/>
+        (Web sitenin içeriğinden sorumludur)
+      title: Impressum
+    not_found:
+      description: |-
+        Arama kısmına nasıl bir yardıma ihtiyaç duyduğunu yaz. Ya da sorunun ne olduğunu.
+        clarat sana yakınında bulunan destek çeşitlerini gösterecektir.
+        Ya da %{start_page} anasayfaya git. Burada daire içindeki resimler yardımıyla, uygun desteği arayabilirsin.
+      heading: "Üzgünüz, bu sayfayı bulamadık."
+      link_text: 
+      title: 404
+    privacy:
+      chapter_eight:
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_second_paragraph: |
+          Ihre Fragen zum
+          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
+          Beschwerden oder Ähnliches richten Sie bitte an:
+        text: |
+          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
+          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
+          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
+          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
+          folgenden Link klicken:
+          %{google_optout}.
+      chapter_five:
+        heading: 5. Social Media Plugins
+        nested_text_four: |
+          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
+          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
+          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
+          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
+          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
+          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
+          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
+          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
+          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
+          wurde.
+        nested_text_one: |
+          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
+          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
+          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
+          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
+          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
+          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
+          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
+          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
+          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
+          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
+          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
+          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
+          diese Information an Ihr Facebook-Profil in die USA übermittelt.
+          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
+          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
+          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
+          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Facebook (%{facebook}).
+        nested_text_three: |
+          Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
+          600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
+          Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an
+          Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Twitter (%{twitter}).
+        nested_text_two: |
+          Wir verwenden Social Plugins von Google. Klicken Sie auf den
+          Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
+          Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
+          nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf
+          Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind
+          und auf den Button klicken, werden Information über Ihr
+          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an
+          Google in die USA übermittelt und Ihrem Google-Konto zugeordnet.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch Google,
+          über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
+          Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
+          (%{google}).
+        nested_title_four: 5.4. Whats App
+        nested_title_one: 5.1 Facebook
+        nested_title_three: 5.3 Twitter
+        nested_title_two: 5.2 Google+
+        text: |
+          Auf dieser Webseite werden Plugins von sozialen Netzwerken nach den
+          folgenden Maßgaben verwendet:
+      chapter_four:
+        heading: 4. Einbindung von Diensten Dritter
+        text: |
+          Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
+          Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
+          davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner
+          herstellen können und damit Ihre IP-Adresse erhalten. Nähere
+          Informationen zur Erhebung und Nutzung der Daten durch die
+          Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
+      chapter_one:
+        heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
+        text: |
+          Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern
+          wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen:
+          Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und
+          Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung
+          sowie über die Art Ihres Browsers und Betriebssystems. Die
+          Verarbeitung dieser Informationen ist technisch notwendig, um die
+          Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn
+          Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht
+          gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter
+          nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung
+          zusenden).
+      chapter_seven:
+        heading: |
+          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        nested_text_one: |
+          Für den Versand unseres Newsletters
+          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
+          einem Unternehmen der The Rocket Science Group, LLC aus den USA
+          zurück. Dort erfolgt die Datenverarbeitung für uns streng
+          weisungsgebunden als technische Dienstleistung im Rahmen einer
+          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
+          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
+          verpflichtet sind.
+        nested_text_two: |
+          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
+          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
+          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
+          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
+          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
+          Verarbeitung von Daten. Bitte beachten Sie auch die
+          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
+          Verwendung des Service-Portals ist mindestens die Angabe einer
+          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
+          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
+          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
+          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
+          optional und dient der Verbesserung und Beschleunigung unseres
+          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
+          Datenspeicherung im externen System von Freshdesk nicht einverstanden
+          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
+          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
+        nested_title_one: 7.1. MailChimp/Mandrill
+        nested_title_two: 7.2. Freshdesk
+        text: |
+          Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
+          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
+          elektronische und organisatorische Schutzprozesse eingerichtet, die
+          die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
+          nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
+          der vorstehenden Regelung sind unsere Dienstleistungspartner, die
+          wir zur Abwicklung unserer Leistungen benötigen.
+      chapter_six:
+        heading: 6. Datenlöschung
+        text: |
+          Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
+          ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
+          Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
+          weitergehenden Speicherung verpflichtet sind.
+      chapter_three:
+        heading: 3. Informationen über Ihr Nutzungsverhalten
+        nested_text_one: |
+          Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
+          Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
+          Textdateien, die auf Ihrem Computer gespeichert werden und die eine
+          Analyse der Benutzung der Website durch Sie ermöglichen. Die durch
+          den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite
+          (einschließlich Ihrer IP-Adresse) werden in der Regel an einen Server
+          von Google in den USA übertragen und dort gespeichert. Im Falle der
+          Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre
+          IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der
+          Europäischen Union oder in anderen Vertragsstaaten des Abkommens
+          über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in
+          Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in
+          den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
+          Website wird Google diese Informationen benutzen, um Ihre Nutzung der
+          Webseite auszuwerten, um Berichte über die Webseiteaktivitäten für die
+          Webseitebetreiber zusammenzustellen und um weitere mit der
+          Webseitenutzung und der Internetnutzung verbundene Dienstleistungen
+          zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser
+          übermittelte IP-Adresse wird nicht mit anderen Daten von Google
+          zusammengeführt. Sie können die Speicherung der Cookies durch eine
+          entsprechende Einstellung Ihrer Browser Software verhindern; wir
+          weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
+          nicht sämtliche Funktionen dieser Website vollumfänglich werden
+          nutzen können. Sie können darüber hinaus die Erfassung der durch das
+          Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
+          (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten
+          durch Google verhindern, indem sie das unter dem folgenden Link
+          verfügbare Browser-Plugin herunterladen und installieren: %{google_optout}.
+          Nähere Informationen zu
+          Nutzungsbedingungen und Datenschutz finden Sie unter %{analytics_terms}
+           bzw. unter
+          %{policies}. Angesichts der Diskussion um
+          den Einsatz von Analysetools mit vollständigen IP-Adressen möchten wir
+          darauf hinweisen, dass diese Webseite Google Analytics mit der
+          Erweiterung “_anonymizeIp()” verwendet und daher IP-Adressen nur
+          gekürzt weiterverarbeitet werden, um eine direkte
+          Personenbeziehbarkeit auszuschließen. Diese Website nutzt die
+          Google-Analytics-Berichte zu demografischen Merkmalen, in denen Daten
+          aus interessenbezogener Werbung von Google sowie Besucherdaten von
+          Drittanbietern (z. B. Alter, Geschlecht und Interessen) verwendet
+          werden. Diese Daten sind nicht auf eine bestimmte Person
+          zurückzuführen und können jederzeit über die Anzeigeneinstellungen
+          %{ads} deaktiviert werden. Durch die
+          Nutzung dieser Webseite erklären Sie sich mit der Bearbeitung der über
+          Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und
+          Weise und zu dem zuvor benannten Zweck einverstanden.
+        nested_text_one_second_paragraph: |
+          Daneben setzt diese Webseite den Webanalysedienst Optimizely von
+          Optimizely Inc. ein, der für A/B-Tests verwendet wird. Dieser Service
+          verwendet Cookies um den Browser eines Besuchers zu identifizieren
+          und die Nutzung dieser Webseite zu analysieren. Die Cookies sammeln
+          keine personenbezogenen Daten. Mehr Informationen darüber, wie
+          Optimizely Ihre Daten verarbeitet, finden Sie unter
+          %{optimizely_privacy}. Sie können das Optimizely-Tracking
+          jederzeit deaktivieren, indem Sie der Anleitung auf
+          %{optimizely_optout} folgen
+        nested_text_two: |
+          Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
+          werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
+          werden von dem Web-Server, den Sie zur Herstellung einer Verbindung
+          mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) verwendet
+          haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies,
+          hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa
+          um den zuletzt von Ihnen nachgesuchten Standort für Sie zu speichern.
+          Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur
+          während der Dauer ihres Besuches auf der Webseite funktionieren und
+          nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende
+          Web-Session oder den Browser schließen, wird das Cookie automatisch
+          gelöscht. Davon ausgenommen sind die Informationen über den von Ihnen
+          zuletzt nachgesuchten Standort; diese werden nach Ablauf von drei
+          Monaten automatisch gelöscht.
+        nested_text_two_second_paragraph: |
+          Browser Einstellungen: Die meisten Browser sind so eingestellt, dass
+          sie Cookies automatisch akzeptieren. Sie können jedoch das Speichern
+          von Cookies deaktivieren oder Ihren Browser so einstellen, dass er sie
+          benachrichtigt, sobald Cookies gesendet werden. Außerdem können Sie
+          Cookies auch jederzeit von Ihrem Rechner löschen (z.B: im Windows
+          Explorer). Wenn Sie dies tun möchten, verwenden Sie bitte die
+          Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir
+          möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
+          Funktionsfähigkeit dieser Webseite beeinträchtigen können.
+        nested_title_one: 3.1 Analyse
+        nested_title_two: 3.2 Cookies
+        text: |
+          Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
+          anpassen möchten, benötigen wir Informationen über das allgemeine
+          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
+          welche wir zur Ermöglichung der Inanspruchnahme unseres
+          Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
+          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
+          den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
+          (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
+          Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
+          oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
+          Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
+          können Sie jederzeit widersprechen.
+      chapter_two:
+        heading: |
+          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        nested_text_one: |
+          Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
+          Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
+          zur Erbringung der jeweils angefragten Leistung verwenden.
+        nested_text_three: |
+          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
+          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
+          berechnet der Hersteller Ihres Browsers anhand bestimmter
+          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
+          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
+          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
+          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
+          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
+          Nutzungsbestimmungen Ihres Browsers.
+        nested_text_two: |
+          Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
+          gestellten personenbezogenen Daten werden wir nutzen, um Ihnen
+          gelegentlich E-Mails mit Informationen über neue oder spezielle
+          Angebote zuzusenden.
+        nested_title_one: 2.1 Kontaktformular
+        nested_title_three: 2.3 Standortdaten
+        nested_title_two: 2.2 Newsletter-Anmeldung
+        text: |
+          Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
+          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
+          freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
+          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
+          unter Umständen weitere personenbezogene Daten übermitteln, speichern
+          und nutzen wir diese Angaben nur zur Erbringung der jeweils
+          angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
+          Zusendung unseres Newsletters).
+      heading: Datenschutzhinweise
+      intro_first_part: |
+        Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
+        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
+        Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
+        wir personenbezogene Daten ausschließlich im Rahmen der geltenden
+        Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: |
+        Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
+        Verwendung personenbezogener Daten unterrichten. Sie können diese
+        Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
+        Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
+        Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
+        Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
+    shared:
+      address:
+        email: |
+          %{mailto}
+        fax: Fax +49 (0)30 55 57 96 09 9
+        name: clarat
+        name2: Projekt der Benckiser Stiftung Zukunft
+        street: Französische Straße 47
+        telephone: Tel +49 (0)30 55 57 96 00
+        zip_city: 10117 Berlin
+  routes:
+    '404': 
+    contacts: iletişim
+    datenschutzhinweise: 
+    definitions: 
+    emails: 
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
+    new: 
+    offers: hizmetlerimiz
+    organizations: organizasyonlar
+    preview: 
+    rechtliche-hinweise: 
+    search_locations: 
+    subscribe: 
+    subscriptions: 
+    ueber-uns: ueber-uns
+    unsubscribe: 
+    update_requests: 
+    users: kullanıcılar
+  shareds:
+    forms:
+      fill_field: Lütfen bu alanı doldur
+    show:
+      cta_report_errors: |
+        Hata mı gördün?
+      google_translate_explanation: |
+        Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
+        Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
+        Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.
+  simple_form:
+    hints:
+      contact:
+        show:
+          email: NOTRANSLATE
+          message: NOTRANSLATE
+          name: NOTRANSLATE
+      search_form:
+        agb:
+          query: 
+          search_location: 
+        faq:
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
+        home:
+          query: NOTRANSLATE
+          search_location: 
+        impressum:
+          query: 
+          search_location: 
+        index:
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
+        not_found:
+          query: 
+          search_location: 
+        privacy:
+          query: 
+          search_location: 
+        show:
+          query: NOTRANSLATE
+          search_location: NOTRANSLATE
+      subscription:
+        agb:
+          email: 
+        faq:
+          email: NOTRANSLATE
+        home:
+          email: NOTRANSLATE
+        impressum:
+          email: 
+        index:
+          email: NOTRANSLATE
+        not_found:
+          email: 
+        privacy:
+          email: 
+        show:
+          email: NOTRANSLATE
+    required:
+      html: NOTRANSLATE
+      mark: NOTRANSLATE
+      text: NOTRANSLATE
+  subscriptions:
+    create:
+      error: |
+        Lütfen doğru bir E-Mail adresi giriniz.
+      success: |
+        Teşekkürler, onaylama kodu az önce E-Mail adresine gönderilmiştir.
+    shared:
+      new:
+        button: E-bülten aboneliği
+        placeholder: E-Mail Adresi
+  update_requests:
+    create:
+      success: |
+        Teşekkürler, mesajın tarafımıza ulaştı. Yakın çevrende aktif hale geldiğimiz durumda,
+        sana bilgi verilecektir.
+    new:
+      button: Mesaj alınmıştır
+      email_placeholder: E-Mail Adresi

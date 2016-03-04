@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 20160229141529) do
     t.integer  "parent_id"
     t.integer  "sort_order"
     t.boolean  "visible",                default: true
-    t.string   "name_en"
-    t.string   "name_ar"
-    t.string   "name_fr"
-    t.string   "name_pl"
-    t.string   "name_tr"
-    t.string   "name_ru"
+    t.string   "name_en",    limit: nil
+    t.string   "name_ar",    limit: nil
+    t.string   "name_fr",    limit: nil
+    t.string   "name_pl",    limit: nil
+    t.string   "name_tr",    limit: nil
+    t.string   "name_ru",    limit: nil
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
@@ -190,6 +190,7 @@ ActiveRecord::Schema.define(version: 20160229141529) do
     t.string   "local_number",     limit: 32
     t.string   "email",            limit: nil
     t.boolean  "visible",                      default: true
+    t.boolean  "in_germany",                   default: true
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree

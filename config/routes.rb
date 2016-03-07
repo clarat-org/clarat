@@ -1,4 +1,7 @@
 Clarat::Application.routes.draw do
+  # Sitemap path
+  mount DynamicSitemaps::Engine => '/sitemaps/'
+
   localized do
     # unscoped static pages
     root to: 'pages#section_forward'
@@ -51,9 +54,6 @@ Clarat::Application.routes.draw do
     # All other localized paths => localized 404
     match '*path', to: 'pages#not_found', via: :all
   end
-
-  # Sitemap path
-  mount DynamicSitemaps::Engine => '/sitemaps/'
 
   # Unlocalized unknown paths are forwarded to the German 404
   match '*path', to: 'pages#not_found', via: :all

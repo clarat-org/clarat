@@ -569,61 +569,61 @@ tr:
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:
-        "'150'": 
-        "'326'": 
-        "'568'": 
+        "'150'": Almanca işaret dili
+        "'326'": Ukraynaca - українська
+        "'568'": Felemenkçe - Nederlands
         "'639'": 
-        '150': 
-        '326': 
-        '568': 
+        '150': Almanca işaret dili
+        '326': Ukraynaca - українська
+        '568': Felemenkçe - Nederlands
         '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
+        amh: Amharca - አማርኛ
+        ara: Arapça - عربي
+        aze: Azerice - Azərbaycan
+        bel: Beyaz Rusça - беларуская мова
+        ben: Bengalce - বাংলা
+        bos: Boşnakça - bosanski
+        bul: Bulgarca - български
+        deu: Almanca
+        ell: Yunanca - ελληνικά
+        eng: "İngilizce - English"
+        fas: Farsça - فارسی
+        fra: Fransızca - Français
+        hin: Hintçe - हिन्दी
+        hrv: Hırvatça - hrvatski
+        hun: Macarca - magyar
+        ita: "İtalyanca - italiano"
         kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
+        kur: Kürtçe - کوردی
+        lav: Letonca - latviešu
+        lit: Litvanca - lietuvių
+        ltz: Lüksemburgca - Lëtzebuergesch
+        luo: Luo - Dholuo
+        mkd: Makedonca - македонски
+        mul: Talep üzerine diğer diller
+        nor: Norveççe - Norsk
+        pol: Lehçe - polski
+        por: Portekizce - português
+        rom: "Çingenece - Romani"
+        ron: Rumence - română
+        rus: Rusça - русский
         snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
+        spa: "İspanyolca - español"
+        sqi: Arnavutça - Shqipja
+        srp: Sırpça - српски
+        swa: Svahili - Kiswahili
+        swe: "İsveççe - svenska"
+        tam: Tamilce - தமிழ்
+        tel: Telugu dili - తెలుగు
+        tgk: Tacikçe - тоҷикӣ / تاجیکی
+        tha: Tayca - ภาษาไทย
+        tuk: Türkmence - Türkmençe / Tүркменче
+        tur: Türkçe - Türkçe
+        urd: Urduca - اردو
+        uzb: "Özbekçe - Oʻzbek tili"
+        vie: Vietnamca - tiếng Việt
         wol: 
-        zho: 
+        zho: "Çince - 普通话 / 普通話"
         zza: 
     single_search_result:
       encounters:
@@ -733,59 +733,6 @@ tr:
         (örneğin "Posta kodu ilçe").
       title: Aramış olduğun yeri maalesef bulumadık.
     shared:
-      current_and_original_locale:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
       search_form:
         button: Arama
         loc_label: Nerede

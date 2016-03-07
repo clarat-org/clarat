@@ -523,25 +523,25 @@ ar:
     shared:
       current_and_original_locale:
         "'150'": 
-        "'326'": 
-        "'568'": 
+        "'326'": " لغة أوكرانية - українська"
+        "'568'": " لغة هولندية - Nederlands"
         "'639'": 
         '150': 
-        '326': 
-        '568': 
+        '326': " لغة أوكرانية - українська"
+        '568': " لغة هولندية - Nederlands"
         '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
+        amh: "لغة أمهرية - አማርኛ"
+        ara: " لغة عربية - عربي"
+        aze: "لغة أذرية - Azərbaycan"
+        bel: "لغة بيلاروسية - беларуская мова"
+        ben: " لغة بنغالية - বাংলা"
+        bos: "لغة بوسنوية - bosanski"
+        bul: "لغة بلغارية - български"
+        deu: "لغة ألمانية - Deutsch"
+        ell: "لغة يونانية - ελληνικά"
+        eng: "لغة إنجليزية - English"
+        fas: "لغة فارسية - فارسی"
+        fra: "لغة فرنسية - Français"
         hin: 
         hrv: 
         hun: 
@@ -692,59 +692,6 @@ ar:
         (على سبيل المثال الرقم البريدي والمكان)
       title: "للأسف لم نتمكن من العثور على الموقع الذي تم إدخاله بمعرفتك "
     shared:
-      current_and_original_locale:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
       search_form:
         button: "بحث"
         loc_label: "أين"
@@ -1441,6 +1388,8 @@ ar:
           email: 
         show:
           email: NOTRANSLATE
+        impressum:
+          email: 
     required:
       html: NOTRANSLATE
       mark: NOTRANSLATE

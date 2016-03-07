@@ -514,25 +514,25 @@ pl:
     shared:
       current_and_original_locale:
         "'150'": 
-        "'326'": 
-        "'568'": 
+        "'326'": Język ukraiński - українська
+        "'568'": Język niderlandzki - Nederlands
         "'639'": 
         '150': 
-        '326': 
-        '568': 
+        '326': Język ukraiński - українська
+        '568': Język niderlandzki - Nederlands
         '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
+        amh: Język amharski - አማርኛ
+        ara: Język arabski - عربي
+        aze: Język azerski - Azərbaycan
+        bel: Język białoruski - беларуская мова
+        ben: Język bengalski - বাংলা
+        bos: Język bośniacki - bosanski
+        bul: Język bułgarski - български
+        deu: Język niemiecki
+        ell: Język grecki - ελληνικά
+        eng: Język angielski - English
+        fas: Język perski - فارسی
+        fra: Język francuski - Français
         hin: 
         hrv: 
         hun: 
@@ -682,59 +682,6 @@ pl:
         (z.B. "Postleitzahl Ort").
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
     shared:
-      current_and_original_locale:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
       search_form:
         button: Suchen
         loc_label: Wo

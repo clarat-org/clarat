@@ -649,28 +649,28 @@ fr:
       show_personal: Zeige lokale Angebote
     shared:
       current_and_original_locale:
-        "'150'": 
-        "'326'": 
-        "'568'": 
+        "'150'": Langue des signes allemande
+        "'326'": Ukrainien - українська
+        "'568'": Néerlandais - Nederlands
         "'639'": 
-        '150': 
-        '326': 
-        '568': 
+        '150': Langue des signes allemande
+        '326': Ukrainien - українська
+        '568': Néerlandais - Nederlands
         '639': 
-        amh: 
+        amh: Amharique - አማርኛ
         ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
+        aze: Azéri - Azərbaycan
+        bel: Biélorusse - беларуская мова
+        ben: Bengali - বাংলা
+        bos: Bosnien - bosanski
+        bul: Bulgare - български
+        deu: Allemand
+        ell: Grec - ελληνικά
+        eng: Anglais - English
+        fas: Persan - فارسی
+        fra: Français
+        hin: Hindi - हिन्दी
+        hrv: Croate - hrvatski
         hun: 
         ita: 
         kik: 
@@ -817,59 +817,6 @@ fr:
         (z.B. "Postleitzahl Ort").
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
     shared:
-      current_and_original_locale:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
       search_form:
         button: Suchen
         loc_label: Wo

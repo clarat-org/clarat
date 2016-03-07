@@ -1214,59 +1214,6 @@ de:
         (z.B. "Postleitzahl Ort").
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
     shared:
-      current_and_original_locale:
-        '150': Deutsche Gebärdensprache
-        '326': Ukrainisch - українська
-        '568': Niederländisch - Nederlands
-        '639': Dari - دری
-        amh: Amharisch - አማርኛ
-        ara: Arabisch - عربي
-        aze: Aserbaidschanisch - Azərbaycan
-        bel: Weißrussisch - беларуская мова
-        ben: Bengalisch - বাংলা
-        bos: Bosnisch - bosanski
-        bul: Bulgarisch - български
-        deu: Deutsch
-        ell: Griechisch - ελληνικά
-        eng: Englisch - English
-        fas: Persisch (Farsi) - فارسی
-        fra: Französisch - Français
-        hin: Hindi - हिन्दी
-        hrv: Kroatisch - hrvatski
-        hun: Ungarisch - magyar
-        ita: Italienisch - italiano
-        kik: Kikuyu - Gĩkũyũ
-        kur: Kurdisch - کوردی
-        lav: Lettisch - latviešu
-        lit: Litauisch - lietuvių
-        ltz: Luxemburgisch - Lëtzebuergesch
-        luo: Luo - Dholuo
-        mkd: Mazedonisch - македонски
-        mul: weitere Sprachen auf Anfrage
-        nor: Norwegisch - Norsk
-        pol: Polnisch - polski
-        por: Portugiesisch - português
-        rom: Romanes - Romani
-        ron: Rumänisch - română
-        rus: Russisch - русский
-        snk: Soninke - Soninkanxaane
-        spa: Spanisch - español
-        sqi: Albanisch - Shqipja
-        srp: Serbisch - српски
-        swa: Swahili - Kiswahili
-        swe: Schwedisch - svenska
-        tam: Tamil - தமிழ்
-        tel: Telugu - తెలుగు
-        tgk: Tadschikisch - тоҷикӣ / تاجیکی
-        tha: Thai - ภาษาไทย
-        tuk: Turkmenisch - Türkmençe / Tүркменче
-        tur: Türkisch - Türkçe
-        urd: Urdu - اردو
-        uzb: Usbekisch - Oʻzbek tili
-        vie: Vietnamesisch - tiếng Việt
-        wol: Wolof - wɔlɔf
-        zho: Chinesisch - 普通话 / 普通話
-        zza: Zaza - Zazaki / Kırmancki
       search_form:
         button: Suchen
         loc_label: Wo

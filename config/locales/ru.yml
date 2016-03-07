@@ -26,7 +26,7 @@ ru:
         question_10:
           answer: "Деньги для <b>clarat family</b> и <b>clarat refugees</b> поступают от фонда Бэнкизер, Будущее (%{link_to_bsz})."
           link_1:
-            name: 
+            name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/de
             var: link_to_bsz
@@ -674,51 +674,51 @@ ru:
       show_personal: "Показать предложения на месте"
     shared:
       current_and_original_locale:
-        "'150'": 
-        "'326'": 
-        "'568'": 
+        "'150'": "Немецкий язык жестов"
+        "'326'": "Украинский язык - українська"
+        "'568'": "Нидерландский язык - Nederlands"
         "'639'": 
-        '150': 
-        '326': 
-        '568': 
+        '150': "Немецкий язык жестов"
+        '326': "Украинский язык - українська"
+        '568': "Нидерландский язык - Nederlands"
         '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
+        amh: "Амхарский язык - አማርኛ"
+        ara: "Арабский язык - عربي"
+        aze: "Азербайджанский язык - Azərbaycan"
+        bel: "Белорусский язык - беларуская мова"
+        ben: "Бенгальский язык - বাংলা"
+        bos: "Боснийский язык - bosanski"
+        bul: "Болгарский язык - български"
+        deu: "Немецкий язык"
+        ell: "Греческий язык - ελληνικά"
+        eng: "Английский язык - English"
+        fas: "Персидский язык - فارسی"
+        fra: "Французский язык - Français"
+        hin: "Хинди - हिन्दी"
+        hrv: "Хорватский язык - hrvatski"
+        hun: "Венгерский язык - magyar"
+        ita: "Итальянский язык - italiano"
+        kik: "Кикуйю язык - Gĩkũyũ"
+        kur: "Курдские языки - کوردی"
+        lav: "Латышский язык - latviešu"
+        lit: "Литовский язык - lietuvių"
+        ltz: "Люксембургский язык - Lëtzebuergesch"
+        luo: "Долуо - Dholuo"
+        mkd: "Македонский язык - македонски"
+        mul: "другие языки по запросу"
+        nor: "Норвежский язык - Norsk"
+        pol: "Польский язык - polski"
+        por: "Португальский язык - português"
+        rom: "Цыганский язык - Romani"
+        ron: "Румынский язык - română"
+        rus: "Русский язык - русский"
+        snk: "Сонинке язык - Soninkanxaane"
+        spa: "Испанский язык - español"
+        sqi: "Албанский язык - Shqipja"
+        srp: "Сербский язык - српски"
+        swa: "Суахили - Kiswahili"
+        swe: "Шведский язык - svenska"
+        tam: "Тамильский язык - தமிழ்"
         tel: 
         tgk: 
         tha: 
@@ -839,59 +839,6 @@ ru:
         (например "Индекс город").
       title: "К сожалению, мы не можем найти твое местонахождения"
     shared:
-      current_and_original_locale:
-        '150': 
-        '326': 
-        '568': 
-        '639': 
-        amh: 
-        ara: 
-        aze: 
-        bel: 
-        ben: 
-        bos: 
-        bul: 
-        deu: 
-        ell: 
-        eng: 
-        fas: 
-        fra: 
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
       search_form:
         button: "Искать"
         loc_label: "Где"

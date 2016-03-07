@@ -1151,59 +1151,6 @@ en:
         (E.g "ZIP, Location").
       title: Unfortunately we could not find the location you entered
     shared:
-      current_and_original_locale:
-        '150': German Sign Language - Deutsche Gebärdensprache
-        '326': Ukrainian - українська
-        '568': Dutch - Nederlands
-        '639': Dari - دری
-        amh: Amharic - አማርኛ
-        ara: Arabian - عربي
-        aze: Azerbaijani - Azərbaycan
-        bel: Belarusian - беларуская мова
-        ben: Bengalese - বাংলা
-        bos: Bosnian - bosanski
-        bul: Bulgarian - български
-        deu: German - Deutsch
-        ell: Greek - ελληνικά
-        eng: English
-        fas: Persian (Farsi) - فارسی
-        fra: French - Français
-        hin: Hindi - हिन्दी
-        hrv: Kroatian - hrvatski
-        hun: Hungarian - magyar
-        ita: Italic - italiano
-        kik: Kikuyu - Gĩkũyũ
-        kur: Kurdish - کوردی
-        lav: Latvian - latviešu
-        lit: Lithuanian - lietuvių
-        ltz: Luxembourgish - Lëtzebuergesch
-        luo: Luo - Dholuo
-        mkd: Macedonian - македонски
-        mul: more languages upon request
-        nor: Norwegian - Norsk
-        pol: Polish - polski
-        por: Portuguese - português
-        rom: Romany - Romani
-        ron: Romanian - română
-        rus: Russian - русский
-        snk: Soninke - Soninkanxaane
-        spa: Spanish - español
-        sqi: Albanian - Shqipja
-        srp: Serbian - српски
-        swa: Swahili - Kiswahili
-        swe: Swedish - svenska
-        tam: Tamil - தமிழ்
-        tel: Telugu - తెలుగు
-        tgk: Tadjik - тоҷикӣ / تاجیکی
-        tha: Thai - ภาษาไทย
-        tuk: Turkmen - Türkmençe / Tүркменче
-        tur: Turkish - Türkçe
-        urd: Urdu - اردو
-        uzb: Uzbek - Oʻzbek tili
-        vie: Vietnamese - tiếng Việt
-        wol: Wolof - wɔlɔf
-        zho: Chinese - 普通话 / 普通話
-        zza: Zaza - Zazaki / Kırmancki
       search_form:
         button: Search
         loc_label: Where

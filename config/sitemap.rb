@@ -3,12 +3,20 @@ host 'www.clarat.org'
 
 sitemap :site do
   url root_url, last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
-  url about_url, priority: 0.5
-  url faq_url, priority: 0.5
-  url new_contact_url, priority: 0.4
-  url impressum_url, priority: 0.1
-  url agb_url, priority: 0.1
-  url privacy_url, priority: 0.1
+
+  I18n.available_locales.each do |locale|
+    url send(:"offers_#{locale}_url", section: :refugees), priority: 0.6
+    url send(:"offers_#{locale}_url", section: :family), priority: 0.6
+
+    url send(:"about_#{locale}_url", section: :refugees), priority: 0.5
+    url send(:"faq_#{locale}_url", section: :refugees), priority: 0.5
+
+    url send(:"new_contact_#{locale}_url", section: :refugees), priority: 0.4
+  end
+
+  url impressum_url(section: :refugees), priority: 0.1
+  url agb_url(section: :refugees), priority: 0.1
+  url privacy_url(section: :refugees), priority: 0.1
 end
 
 # You can have multiple sitemaps like the above - just make sure their names are different.
@@ -19,12 +27,19 @@ end
 #
 #   sitemap_for Page.scoped
 
-high_prio = proc do |record|
-  url record, last_mod: record.updated_at, priority: 0.9
+sitemap_for Offer.approved do |offer|
+  I18n.available_locales.each do |locale|
+    url send(:"offer_#{locale}_url", offer.canonical_section, offer),
+        last_mod: offer.updated_at, priority: 0.9
+  end
 end
 
-sitemap_for(Offer.approved, &high_prio)
-sitemap_for(Organization.approved, &high_prio)
+sitemap_for Organization.approved do |orga|
+  I18n.available_locales.each do |locale|
+    url send(:"organization_#{locale}_url", orga.canonical_section, orga),
+        last_mod: orga.updated_at, priority: 0.8
+  end
+end
 
 # For products with special sitemap name and priority, and link to comments:
 #

@@ -681,8 +681,21 @@
     background: $brand_core_family;
   }
 
-  .template--offers-index #qtip-0 {
+  #qtip-ttWeltFamily,
+  #qtip-ttWeltRefugees {
     left: 10px !important; // override JS
+
+    .template--offers-index & {
+      top: 10px !important;
+    }
+  }
+
+  #qtip-ttAdvancedSearch {
+    margin-top: 50px;
+  }
+
+  .qtip-tip {
+    display: none !important; // override JS
   }
 
 }

@@ -1,4 +1,4 @@
-#
+# Conditionally init and position welcome tooltips, cookie-based
 Clarat.welcomeTooltips = {}
 class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
@@ -20,6 +20,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     document:
       'Clarat.ToggleAdvancedSearch::Toggle': '_hideOverlay'
 
+      
   init: =>
 
     if @isFrontPage
@@ -67,15 +68,20 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     # Put in overlay
     clone.prependTo @cloneContainer;
 
+
   initNavWeltTooltips: =>
     that = this
 
+    position_my = if @isFrontPage then "top center" else "bottom center"
+    position_at = if @isFrontPage then "bottom center" else "top center"
+
     @ttWeltRefugees.qtip
+      id: 'ttWeltRefugees'
       position:
-        my: 'bottom center'
-        at: 'top center'
+        my: position_my
+        at: position_at
         effect: false
-        viewport: $(window)
+        viewport: $('body')
         adjust:
           method: 'invert adjust'
       content:
@@ -95,12 +101,14 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           width: 22
           corner: 'top center'
 
+
     @ttWeltFamily.qtip
+      id: 'ttWeltFamily'
       position:
-        my: 'bottom center'
-        at: 'top center'
+        my: position_my
+        at: position_at
         effect: false
-        viewport: $(window)
+        viewport: $('body')
         adjust:
           method: 'invert adjust'
       content:
@@ -119,6 +127,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           height: 16
           width: 22
           corner: 'top center'
+
 
     if @world == "family"
       @ttWeltRefugees.qtip('api').show()
@@ -130,13 +139,15 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     return
 
+
   initAdvSearchTooltips: =>
     that = this
 
-    position_my = if $(window).width() < 750 then "top right" else "bottom right"
-    position_at = if $(window).width() < 750 then "bottom center" else "top center"
+    position_my = if $(window).width() < 750 then 'top center' else 'bottom right'
+    position_at = if $(window).width() < 750 then 'top center' else 'top right'
 
     @ttAdvancedSearch.qtip
+      id: 'ttAdvancedSearch'
       position:
         my: position_my
         at: position_at
@@ -154,6 +165,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           that._hideOverlay()
       style:
         tip:
+          corner: false
           height: 16
           width: 22
           corner: 'bottom right'
@@ -165,15 +177,18 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     return
 
+
   setCookieNavWelt: =>
     $.cookie 'welcome-tooltips-navwelt', 'true',
       expires: @cookieLifespan
       path: '/'
 
+
   setCookieAdvSearch: =>
     $.cookie 'welcome-tooltips-advsearch', 'true',
       expires: @cookieLifespan
       path: '/'
+
 
   _showOverlay: =>
     that = this
@@ -182,6 +197,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @cloneContainer.show()
     @cloneContainer.click () ->
       that._hideOverlay()
+
 
   _hideOverlay: =>
     @overlay.hide()

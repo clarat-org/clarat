@@ -2,120 +2,55 @@
 Clarat.welcomeTooltips = {}
 class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
-    @tooltips = $('.tooltip--welcome')
-    @ttAdvancedSearch = $('.tooltip--advancedsearch')
-    @ttWeltRefugees = $(' .tooltip--welt-refugees')
-    @ttWeltFamily = $(' .tooltip--welt-family')
-    @world = if $('body.refugees').length then 'refugees' else 'family'
-    @overlay = $('#qtip_welcome_overlay')
-    @cloneContainer = $('#clone-container')
+
+    @cookieLifespan     = 90
+    @isFrontPage        = $('.template--pages-home').length
+    @world              = if $('body.refugees').length then 'refugees' else 'family'
+    @ttAdvancedSearch   = $('.tooltip--advancedsearch')
+    @ttWeltRefugees     = $('.tooltip--welt-refugees')
+    @ttWeltFamily       = $('.tooltip--welt-family')
+    @overlay            = $('#qtip_welcome_overlay')
+    @cloneContainer     = $('#clone-container')
     super()
 
   CALLBACKS:
     window:
       load: 'init'
-      resize: 'hideOverlay'
+      resize: '_hideOverlay'
     document:
-      'Clarat.ToggleAdvancedSearch::Toggle': 'hideOverlay'
+      'Clarat.ToggleAdvancedSearch::Toggle': '_hideOverlay'
 
   init: =>
 
-    if $('body.template--pages-home').length
-      @initFrontTooltips()
+    if @isFrontPage
+      @testForNavWeltCookie()
     else
-      @initNotFrontTooltips()
+      @testForNavWeltCookie()
+      @testForAdvSearchCookie()
 
 
-  initNotFrontTooltips: =>
-    that = this
+  testForNavWeltCookie: () =>
 
-    @ttAdvancedSearch.qtip
-      position:
-        my: 'bottom right'
-        at: 'top center'
-        effect: false
-      content:
-        button: 'x'
-      show:
-        event: false
-      hide:
-        event: false
-      events:
-        show: ->
-          that.showOverlay()
-        hide: ->
-          that.hideOverlay()
-      style:
-        tip:
-          height: 16
-          width: 22
-          corner: 'bottom right'
-
-    @ttWeltRefugees.qtip
-      position:
-        my: 'top right'
-        at: 'bottom right'
-        effect: false
-      content:
-        button: 'x'
-      show:
-        event: false
-      hide:
-        event: false
-      events:
-        show: ->
-          that.showOverlay()
-        hide: ->
-          that.hideOverlay()
-      style:
-        tip:
-          height: 16
-          width: 22
-          corner: 'top center'
-
-    @ttWeltFamily.qtip
-      position:
-        my: 'top right'
-        at: 'bottom right'
-        effect: false
-      content:
-        button: 'x'
-      show:
-        event: false
-      hide:
-        event: false
-      events:
-        show: ->
-          that.showOverlay()
-        hide: ->
-          that.hideOverlay()
-      style:
-        tip:
-          height: 16
-          width: 22
-          corner: 'top center'
-
-    unless @hasCookie()
-
-     unless $('body.template--pages-home').length
-        @ttAdvancedSearch.qtip('api').show()
-
-        if @world == "refugees"
-          @ttWeltFamily.qtip('api').show()
-          @_highlightTooltip(@ttWeltFamily)
-        else
-          @ttWeltRefugees.qtip('api').show()
-          @_highlightTooltip(@ttWeltRefugees)
-
-        @_highlightTooltip(@ttAdvancedSearch)
+    # NavWelt cookie detect
+    if $.cookie 'welcome-tooltips-navwelt'
+      return false
+    else
+      @initNavWeltTooltips()
+      @setCookieNavWelt()
 
 
-    return
+  testForAdvSearchCookie: () =>
+
+    # Advanced search cookie detect
+    if $.cookie 'welcome-tooltips-advsearch'
+      return false
+    else
+      @initAdvSearchTooltips()
+      @setCookieAdvSearch()
 
 
   _highlightTooltip: (elem) =>
-
-    # Get original most imporant properties
+    # Get original most important properties
     left = elem.offset().left
     top = elem.offset().top
     height = elem.css "height"
@@ -132,18 +67,17 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     # Put in overlay
     clone.prependTo @cloneContainer;
 
-
-  initFrontTooltips: =>
+  initNavWeltTooltips: =>
     that = this
 
     @ttWeltRefugees.qtip
       position:
         my: 'bottom center'
-        at: 'top left'
+        at: 'top center'
         effect: false
         viewport: $(window)
         adjust:
-          method: 'none none'
+          method: 'invert adjust'
       content:
         button: 'x'
       show:
@@ -152,77 +86,104 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
         event: false
       events:
         show: ->
-          that.showOverlay()
+          that._showOverlay()
         hide: ->
-          that.hideOverlay()
+          that._hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'top center'
+
+    @ttWeltFamily.qtip
+      position:
+        my: 'bottom center'
+        at: 'top center'
+        effect: false
+        viewport: $(window)
+        adjust:
+          method: 'invert adjust'
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that._showOverlay()
+        hide: ->
+          that._hideOverlay()
+      style:
+        tip:
+          height: 16
+          width: 22
+          corner: 'top center'
+
+    if @world == "family"
+      @ttWeltRefugees.qtip('api').show()
+      @_highlightTooltip(@ttWeltRefugees)
+
+    else
+      @ttWeltFamily.qtip('api').show()
+      @_highlightTooltip(@ttWeltFamily)
+
+    return
+
+  initAdvSearchTooltips: =>
+    that = this
+
+    position_my = if $(window).width() < 750 then "top right" else "bottom right"
+    position_at = if $(window).width() < 750 then "bottom center" else "top center"
+
+    @ttAdvancedSearch.qtip
+      position:
+        my: position_my
+        at: position_at
+        effect: false
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that._showOverlay()
+        hide: ->
+          that._hideOverlay()
       style:
         tip:
           height: 16
           width: 22
           corner: 'bottom right'
 
+    unless @isFrontPage
 
-      @ttWeltFamily.qtip
-        position:
-          my: 'bottom center'
-          at: 'top right'
-          effect: false
-          viewport: $(window)
-          adjust:
-            method: 'none none'
-        content:
-          button: 'x'
-        show:
-          event: false
-        hide:
-          event: false
-        events:
-          show: ->
-            that.showOverlay()
-          hide: ->
-            that.hideOverlay()
-        style:
-          tip:
-            height: 16
-            width: 22
-            corner: 'bottom left'
-
-    unless @hasCookie()
-
-      if @world == "family"
-        @ttWeltRefugees.qtip('api').show()
-        @_highlightTooltip(@ttWeltRefugees)
-
-      else
-        @ttWeltFamily.qtip('api').show()
-        @_highlightTooltip(@ttWeltFamily)
+      @ttAdvancedSearch.qtip('api').show()
+      @_highlightTooltip(@ttAdvancedSearch)
 
     return
 
+  setCookieNavWelt: =>
+    $.cookie 'welcome-tooltips-navwelt', 'true',
+      expires: @cookieLifespan
+      path: '/'
 
-  setCookie: =>
-    $.cookie 'welcome-tooltips', 'true', expires: 90
+  setCookieAdvSearch: =>
+    $.cookie 'welcome-tooltips-advsearch', 'true',
+      expires: @cookieLifespan
+      path: '/'
 
-
-  hasCookie: =>
-    @setCookie()
-    return false
-#    unless $.cookie 'welcome-tooltips'
-#      return false
-#
-#    else
-#      return true
-
-  showOverlay: =>
+  _showOverlay: =>
     that = this
     $('body').addClass 'overlay-active'
     @overlay.show()
     @cloneContainer.show()
     @cloneContainer.click () ->
-      that.hideOverlay()
+      that._hideOverlay()
 
-
-  hideOverlay: =>
+  _hideOverlay: =>
     @overlay.hide()
     @cloneContainer.hide()
     $('body').removeClass 'overlay-active'

@@ -17,7 +17,7 @@ end
 
 json.language LanguageFilter::IDENTIFIER do |identifier|
   json.identifier identifier
-  json.display_name t("offers.shared.current_and_original_locale.#{identifier}")
+  json.display_name t("js.shared.current_and_original_locale.#{identifier}")
 end
 
 json.contact_type Offer::CONTACT_TYPES do |identifier|

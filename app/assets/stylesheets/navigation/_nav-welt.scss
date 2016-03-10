@@ -61,7 +61,8 @@
     }
 
     &:before {
-      display: inline-block;
+      display: none;
+      visibility: hidden;
       content: '';
       width: 0;
       height: 0;
@@ -96,8 +97,8 @@
     cursor: default;
 
     &:before {
-      visibility: hidden;
-      display: none;
+      visibility: visible;
+      display: inline-block;
     }
   }
 }
@@ -114,8 +115,8 @@
     cursor: default;
 
     &:before {
-      visibility: hidden;
-      display: none;
+      visibility: visible;
+      display: inline-block;
     }
   }
 }

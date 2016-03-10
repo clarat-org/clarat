@@ -83,6 +83,7 @@ about supported directives.
 # = require single_click_button/presenter
 # = require toggle_advanced_search/presenter
 # = require toggle_fieldsets/presenter
+# = require enhance_listing_results/presenter
 # = require sticky_mobile_nav/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter

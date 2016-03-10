@@ -20,7 +20,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     document:
       'Clarat.ToggleAdvancedSearch::Toggle': '_hideOverlay'
 
-      
+
   init: =>
 
     if @isFrontPage

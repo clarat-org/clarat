@@ -448,6 +448,13 @@
     }
   }
 
+  .Listing-results__expander {
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
   .Distributor__advanced-filter-trigger-wrapper {
     position: relative;
     background-color: $brand_brown;
@@ -455,8 +462,6 @@
     display: none;
     height: auto;
     text-align: center;
-
-
 
     .template--offers-index {
       display: block;
@@ -506,6 +511,7 @@
 
     .page-detail__title {
       padding-right: 50px;
+      font-size: 24px;
     }
 
     .page-detail__icon {
@@ -513,6 +519,11 @@
       height: 40px;
       background-size: 40px 40px;
     }
+  }
+
+  .Listing-results__meta {
+    background: none;
+    padding: 6px;
   }
 
   .aside-standard__container {
@@ -557,6 +568,15 @@
     }
   }
 
+  .Listing-results__meta {
+    width: 100%;
+  }
+
+  .Listing-results__orga-display {
+    border-top: 2px solid $brand_grey;
+    padding-top: 4px;
+  }
+
   .section-team__member {
     width: 49%;
     min-height: 670px;
@@ -585,6 +605,20 @@
     }
   }
 
+  .Listing-results__address,
+  .Listing-results__stamp {
+    clear: left;
+    width: 100%;
+  }
+
+  .Listing-results__meta {
+    display: none;
+
+    &.is-expanded {
+      display: block;
+    }
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {
@@ -594,6 +628,10 @@
 
   .mascot--footer {
     display: none;
+  }
+
+  .footer-main__firstrow {
+    margin-top: 0;
   }
 
   .footer-main__subscribe,

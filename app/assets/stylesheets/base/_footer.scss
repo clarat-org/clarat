@@ -4,7 +4,6 @@
 //
 // ---------------------------------------------------------------
 
-
 .footer-main,
 .footer-main__firstrow,
 .footer-main__secondrow {
@@ -12,8 +11,9 @@
 }
 
 .footer-main__firstrow {
-  background: $brand_yellow;
   height: 120px;
+  margin-top: 35px;
+  background: $brand_yellow;
 }
 
 .footer-main__secondrow {

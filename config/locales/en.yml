@@ -887,11 +887,6 @@ en:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: 
   js:
     ajax_error:
       error: Search error
@@ -1808,54 +1803,6 @@ en:
         Those translations usually contain errors. They may sound a bit strange.
         In that case you should have a look at the German original.
   simple_form:
-    hints:
-      contact:
-        show:
-          email: 
-          message: 
-          name: 
-      search_form:
-        agb:
-          query: 
-          search_location: 
-        faq:
-          query: 
-          search_location: 
-        home:
-          query: 
-          search_location: 
-        impressum:
-          query: 
-          search_location: 
-        index:
-          query: 
-          search_location: 
-        not_found:
-          query: 
-          search_location: 
-        privacy:
-          query: 
-          search_location: 
-        show:
-          query: 
-          search_location: 
-      subscription:
-        agb:
-          email: 
-        faq:
-          email: 
-        home:
-          email: 
-        impressum:
-          email: 
-        index:
-          email: 
-        not_found:
-          email: 
-        privacy:
-          email: 
-        show:
-          email: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1877,3 +1824,19 @@ en:
     new:
       button: Send
       email_placeholder: Email address
+  activerecord:
+    attributes:
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      contact:
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+        email: NOTRANSLATE
+    models:
+      update_request: NOTRANSLATE
+      subscription: NOTRANSLATE
+      contact: NOTRANSLATE
+  success: 

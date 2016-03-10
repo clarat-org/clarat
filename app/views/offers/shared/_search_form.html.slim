@@ -3,7 +3,7 @@ div.Distributor__search-form
                     url: offers_path(section: current_section),
                     html: { method: :get, novalidate: false } do |f|
     .search-form--input-wrapper
-      = f.input :query, label: t('.query_label'),
+      = f.input :query, label: t('.query_label'), hint: false,
                         required: false,
                         input_html: { \
                           placeholder: t(".query_placeholder.#{labels}"),
@@ -15,7 +15,7 @@ div.Distributor__search-form
       - search_location_value = \
         search_form.search_location || cookies[:saved_search_location] || \
         I18n.t('conf.default_location')
-      = f.input :search_location, label: t('.loc_label'),
+      = f.input :search_location, label: t('.loc_label'), hint: false,
                                   wrapper_html: {class: 'JS-Geolocation__wrapper'},
                                   input_html: { \
                                     value: search_location_value,

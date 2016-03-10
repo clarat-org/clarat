@@ -3,98 +3,118 @@ pl:
     faq:
       heading: 
       section_1:
-        heading: 
+        heading: Kto, jak, co?
         question_1:
-          answer: 
+          answer: |-
+            Clarat jest portalem, w którym można znaleźć propozycje pomocy. Wspomagamy w znalezieniu pomocy. Jednakże nie doradzamy. Od tego są specjaliści. I własnie tych możesz u nas znaleźć. Istnieje <b>clarat family</b> oraz <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            <b>clarat family</b> pomaga dzieciom, młodzieży i rodzinom, które mają problemy i poszukują pomocy w okolicy miejsca swego zamieszkania. Tu znajdziesz pomoc, dla siebie, twojej rodziny oraz twoich przyjaciół, ale również dla innych dzieci, młodzieży oraz rodzin, które znasz. Czym zajmuje się clarat rodzinny, możesz zapoznać się oglądając film %{link_to_family_movie}.
+            </li>
+            <li>
+            <b>clarat refugees</b> pomaga uchodźcom w znalezieniu pomocy w miejscu przebywania. Tu po prostu znajdziesz pomoc dla siebie, twojej rodziny i przyjaciół.
+            Również w przypadku, kiedy sam nie jesteś przesiedleńcem, ale znasz uchodźców, którzy potrzebują pomocy.
+            </li>
+            </ul>
+            </p>
           link_1:
-            name: 
+            name: film
             target: 
             url: 
-            var: 
-          question: 
+            var: link_to_family_movie
+          question: Co to jest clarat?
         question_10:
-          answer: 
+          answer: "<b>clarat family</b> oraz <b>clarat refugees</b> finansuje %{link_to_bsz}."
           link_1:
-            name: 
+            name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/de
             var: link_to_bsz
-          question: 
+          question: Kto finansuje clarat?
         question_11:
-          answer: 
+          answer: |
+            <b>clarat family</b> oraz <b>clarat refugees</b> będzie istniał dłuższy czas, ponieważ oba portale finansuje %{link_to_bsz}. Tak więc znajdziesz tu pomoc również w nadchodzących latach. Dotyczy to przede wszystkim Berlina, lecz w niedługim czasie dołączą inne miasta i regiony.
           link_1:
             name: 
             target: _blank
             url: http://www.benckiser-stiftung.org/de
             var: link_to_bsz
-          question: 
+          question: Jak długo clarat będzie istniał?
         question_12:
-          answer: 
+          answer: Kod programowy claratu jest ogólnodostępny. Link do naszego kodu znajdziesz tu %{link_to_github}.
           link_1:
             name: 
             target: _blank
             url: https://github.com/clarat-org
             var: link_to_github
-          question: 
+          question: Czy kod programowy jest ogólnodostępny?
         question_13:
-          answer: 
+          answer: Chwilowo nie istnieje możliwość ładowania i dalszego opracowania danych. Nie wykluczone, że w przyszłości będzie to możliwe lecz jest to jeszcze bardzo niepewne. W chwili obecnej zbieramy i sortujemy dane. Jeśli interesuje cię interfejs, po prostu daj nam znać %{link_to_contact_form}.
           link_1:
             name: 
             target: _blank
             url: 
             var: link_to_contact_form
-          question: 
+          question: Czy clarat oferuje otwarty interfejs, który umożliwiłby dalsze wykorzystanie danych?
         question_2:
-          answer: 
-          question: 
+          answer: w Niemczech istnieją duże możliwości niesienia pomocy ludziom, którzy tej pomocy pilnie potrzebują. Niemniej nie zawsze łatwo jest taką pomoc znaleźć, ponieważ nie wiadomo dokładnie  gdzie i u kogo szukać wsparcia. To chcemy zmienić.
+          question: Dlaczego istnieje clarat?
         question_3:
-          answer: 
+          answer: |-
+            Wpisz problem oraz miejsce pobytu. Otrzymasz odpowiednią propozycję pomocy udzielanej w pobliżu miejsca twego przebywania, lub otrzymasz informację jak uzyskać pomoc przez telefon albo w internecie. %{ref_to_how_to_find_right_help} wyjaśnienie, jak znaleźć to, czego szukasz.
+            Jeśli klikniesz na pewien temat, powiemy jak dalej postąpić, np. czy masz zadzwonić, czy też udać sie na miejsce osobiście.
           link_1:
             class: 
-            name: 
+            name: Tu znajdziesz dokładne
             url: 
             var: 
-          question: 
+          question: Jak funkcjonuje clarat?
         question_4:
-          answer: 
-          question: 
+          answer: "clarat jest bezpłatny i pozostanie bezpłatny. W <b>clarat family</b> nkażdy może bezpłatnie szukać pomocy dla dzieci, młodzieży oraz rodzin. \nRównież w <b>clarat refugees</b> ażdy może bezpłatnie szukać pomocy dla uchodźców."
+          question: Czy wyszukiwanie claratu jest bezpłatne?
         question_5:
-          answer: 
-          question: 
+          answer: Czy wyszukiwanie w claracie jest bezpłatne?
+          question: Czy szukanie w clarat jest anonimowe?
         question_6:
-          answer: 
-          question: 
+          answer: Regularnie sprawdzamy, czy informacje podawane w clarat są aktualne. Tylko w ten sposób może clarat dzieciom, młodieży, rodzinom oraz uchodźcom pomóc. Jeśli informacje straciły swoją aktualność, zostają przez nas wymienione na aktualne.
+          question: Czy informacje przekazywane przez clarat są aktualne?
         question_7:
-          answer: 
-          question: 
+          answer: |2
+             Z wielu ofert w clarat family oraz clarat refugees możesz z każdego miejsca kożystać, bez względu na miejsce zamieszkania. Istnieje wiele ofert pomocy przez telefon lub internet tzn. przez e-mail, chat albo na forum. Z wielu innych propozycji można skorzystać w miejscu zamieszkania. W <b>clarat refugees</b> znajdziesz oferty z całych Niemiec. <b>Clarat family</b> rozpoczął swoją działalność w Berlinie. Tu oferta jest bardzo duża. Zbieramy dalsze informacje dotyczące dużych miast w Niemczech, które niebawem będą udostępnione dla zainteresowanych.
+          question: Czy clarat jest w całych Niemczech dostępny?
         question_8:
-          answer: 
+          answer: |-
+            clarat wskazuje ci pomoc na miejscu. Wszystkie oferty znajdziesz w jednym podglądzie. Poza tym powiemy co trzeba zrobić, aby otrzymać pomoc. Piszemy zawsze prostym, zrozumiałym dla wszystkich językiem, tak aby ci, którzy nie znają zbyt dobrze Niemieckiego, również mogli z oferowanej pomocy skorzystać.
+            Nasze oferty udostępnione są w wielu innych językach. Chcesz więcej informacji na ten temat, %{ref_to_how_many_languages}.
           link_1:
             class: 
-            name: 
+            name: kliknij tu
             url: 
             var: 
-          question: 
+          question: Czym wyróżnia się clarat?
         question_9:
-          answer: 
+          answer: |-
+            clarat jest projektem %{link_to_bsz}. Jest to rodzinna fundacja, która od dawna działa na polu pomocy dzieciom i młodzieży, a obecnie z clarat refugees niesie pomoc uchodźcom. Więcej o fundacji możesz dowiedzieć się z tego %{link_to_bsz_movie}.
+            Pomysł na stworzenie claratu powstał w połowie roku 2014. Grupa zajmująca się claratem powstała w październiku 2014 roku. Jeżeli chcesz sie o nas wiecej dowiedzieć %{link_to_about_us}.
           link_1:
-            name: 
+            name: Benckiser Stiftung Zukunft
             target: 
             url: 
             var: 
           link_2:
-            name: 
+            name: Video
             target: _blank
             url: http://www.benckiser-stiftung.org/blog/uebersicht-unserer-gegenwaertigen-projekte-im-kurzfilm
             var: link_to_bsz_movie
           link_3:
-            name: 
+            name: kliknij tu
             target: 
             url: 
             var: 
-          question: 
+          question: " Kto kryje się za claratem?"
       section_2:
-        heading: 
+        heading: Masz pytania na temat wyszukiwania?
         question_1:
           anchor: 
           answer: 
@@ -103,7 +123,8 @@ pl:
           answer: 
           link_1:
             class: 
-            name: 
+            name: |
+              Tu
             url: 
             var: 
           link_2:
@@ -111,7 +132,7 @@ pl:
             target: _blank
             url: mailto:post@clarat.org
             var: mailto_clarat
-          question: 
+          question: Dlaczego nie mogę znaleźć tego, czego szukam?
         question_11:
           answer: 
           question: 
@@ -149,7 +170,7 @@ pl:
             var: ref_to_how_to_find_right_help
           question: 
       section_3:
-        heading: 
+        heading: Masz pytania dotyczące języka claratu?
         question_1:
           answer: 
           question: 
@@ -181,7 +202,7 @@ pl:
           answer: 
           question: 
       section_5:
-        heading: 
+        heading: Masz pytanie jako współpracownik jakiejś organizacji?
         question_1:
           answer: 
           question: 
@@ -432,11 +453,6 @@ pl:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: NOTRANSLATE
   js:
     ajax_error:
       error: Suchfehler
@@ -485,7 +501,7 @@ pl:
       option_any: 
       pagination:
         back: 
-        gap: 
+        gap: "..."
         next: 
     search_results:
       bridge: für
@@ -513,11 +529,11 @@ pl:
       show_personal: Zeige lokale Angebote
     shared:
       current_and_original_locale:
-        "'150'": 
+        "'150'": Niemiecki język migowy
         "'326'": Język ukraiński - українська
         "'568'": Język niderlandzki - Nederlands
         "'639'": 
-        '150': 
+        '150': Niemiecki język migowy
         '326': Język ukraiński - українська
         '568': Język niderlandzki - Nederlands
         '639': 
@@ -533,42 +549,42 @@ pl:
         eng: Język angielski - English
         fas: Język perski - فارسی
         fra: Język francuski - Français
-        hin: 
-        hrv: 
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
+        hin: Język hindi - हिन्दी
+        hrv: Język chorwacki - hrvatski
+        hun: Język węgierski - magyar
+        ita: Język włoski - italiano
+        kik: Kikuyu - Gĩkũyũ
+        kur: Język kurdyjski - کوردی
+        lav: Język łotewski - latviešu
+        lit: Język litewski - lietuvių
+        ltz: Język luksemburski - Lëtzebuergesch
+        luo: Język luo - Dholuo
+        mkd: Język macedoński - македонски
+        mul: inne języki na życzenie
+        nor: Język norweski - Norsk
+        pol: Język polski - polski
+        por: Język portugalski - português
+        rom: Język romski - Romani
+        ron: Język rumuński - română
+        rus: Język rosyjski - русский
+        snk: Język soninke - Soninkanxaane
+        spa: Język hiszpański - español
+        sqi: Język albański - Shqipja
+        srp: Język serbski - српски
+        swa: Suahili - Kiswahili
+        swe: Język szwedzki - svenska
+        tam: Język tamilski - தமிழ்
+        tel: Język telugu - తెలుగు
+        tgk: Język tadżycki - тоҷикӣ / تاجیکی
+        tha: Język tajski - ภาษาไทย
+        tuk: Język turkmeński - Türkmençe / Tүркменче
+        tur: Język turecki - Türkçe
+        urd: Język urdu - اردو
+        uzb: Język uzbecki - Oʻzbek tili
+        vie: Język wietnamski - tiếng Việt
+        wol: Język wolof - wɔlɔf
+        zho: Język chiński - 普通话 / 普通話
+        zza: Język zazaki - Zazaki / Kırmancki
     single_search_result:
       encounters:
         chat: Chat
@@ -1305,7 +1321,7 @@ pl:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': "'404'"
     contacts: kontakt
     datenschutzhinweise: 
     definitions: 
@@ -1336,58 +1352,10 @@ pl:
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
   simple_form:
-    hints:
-      contact:
-        show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
-      search_form:
-        agb:
-          query: 
-          search_location: 
-        faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        impressum:
-          query: 
-          search_location: 
-        index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        not_found:
-          query: 
-          search_location: 
-        privacy:
-          query: 
-          search_location: 
-        show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-      subscription:
-        agb:
-          email: 
-        faq:
-          email: NOTRANSLATE
-        home:
-          email: NOTRANSLATE
-        impressum:
-          email: 
-        index:
-          email: NOTRANSLATE
-        not_found:
-          email: 
-        privacy:
-          email: 
-        show:
-          email: NOTRANSLATE
     required:
-      html: NOTRANSLATE
-      mark: NOTRANSLATE
-      text: NOTRANSLATE
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
   subscriptions:
     create:
       error: |
@@ -1407,3 +1375,19 @@ pl:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  activerecord:
+    attributes:
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      contact:
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+        email: NOTRANSLATE
+    models:
+      update_request: NOTRANSLATE
+      subscription: NOTRANSLATE
+      contact: NOTRANSLATE
+  success: 

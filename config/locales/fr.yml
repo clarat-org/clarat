@@ -570,11 +570,6 @@ fr:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: NOTRANSLATE
   js:
     ajax_error:
       error: Suchfehler
@@ -623,7 +618,7 @@ fr:
       option_any: 
       pagination:
         back: 
-        gap: 
+        gap: "..."
         next: 
     search_results:
       bridge: für
@@ -658,7 +653,7 @@ fr:
         '568': Néerlandais - Nederlands
         '639': 
         amh: Amharique - አማርኛ
-        ara: 
+        ara: Arabe - عربي
         aze: Azéri - Azərbaycan
         bel: Biélorusse - беларуская мова
         ben: Bengali - বাংলা
@@ -671,40 +666,41 @@ fr:
         fra: Français
         hin: Hindi - हिन्दी
         hrv: Croate - hrvatski
-        hun: 
-        ita: 
-        kik: 
-        kur: 
-        lav: 
-        lit: 
-        ltz: 
-        luo: 
-        mkd: 
-        mul: 
-        nor: 
-        pol: 
-        por: 
-        rom: 
-        ron: 
-        rus: 
-        snk: 
-        spa: 
-        sqi: 
-        srp: 
-        swa: 
-        swe: 
-        tam: 
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
+        hun: Hongrois - magyar
+        ita: Italien - italiano
+        kik: Kikuyu - Gĩkũyũ
+        kur: Kurde - کوردی
+        lav: Letton - latviešu
+        lit: Lituanien - lietuvių
+        ltz: Luxembourgeois - Lëtzebuergesch
+        luo: Luo - Dholuo
+        mkd: Macédonien - македонски
+        mul: autres langues sur demande
+        nor: Norvégien - Norsk
+        pol: Polonais - polski
+        por: Portugais - português
+        rom: Romani - Romani
+        ron: Roumain - română
+        rus: Russe - русский
+        snk: Soninké - Soninkanxaane
+        spa: Espagnol - español
+        sqi: Albanais - Shqipja
+        srp: Serbe - српски
+        swa: Swahili - Kiswahili
+        swe: Suédois - svenska
+        tam: Tamoul - தமிழ்
+        tel: Télougou - తెలుగు
+        tgk: Tadjik - тоҷикӣ / تاجیکی
+        tha: Thaï - ภาษาไทย
+        tuk: Turkmène - Türkmençe / Tүркменче
+        tur: Turc - Türkçe
+        urd: Ourdou - اردو
+        uzb: Ouzbek - Oʻzbek tili
+        vie: Vietnamien - tiếng Việt
+        wol: Wolof - wɔlɔf
+        zho: Langues chinoises - 普通话 / 普通話
+        zza: |
+          Zazaki - Zazaki / Kırmancki
     single_search_result:
       encounters:
         chat: Chat
@@ -1314,7 +1310,7 @@ fr:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': "'404'"
     contacts: kontakt
     datenschutzhinweise: 
     definitions: 
@@ -1345,58 +1341,10 @@ fr:
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
   simple_form:
-    hints:
-      contact:
-        show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
-      search_form:
-        agb:
-          query: 
-          search_location: 
-        faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        impressum:
-          query: 
-          search_location: 
-        index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        not_found:
-          query: 
-          search_location: 
-        privacy:
-          query: 
-          search_location: 
-        show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-      subscription:
-        agb:
-          email: 
-        faq:
-          email: NOTRANSLATE
-        home:
-          email: NOTRANSLATE
-        impressum:
-          email: 
-        index:
-          email: NOTRANSLATE
-        not_found:
-          email: 
-        privacy:
-          email: 
-        show:
-          email: NOTRANSLATE
     required:
-      html: NOTRANSLATE
-      mark: NOTRANSLATE
-      text: NOTRANSLATE
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
   subscriptions:
     create:
       error: |
@@ -1416,3 +1364,19 @@ fr:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  activerecord:
+    attributes:
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      contact:
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+        email: NOTRANSLATE
+    models:
+      update_request: NOTRANSLATE
+      subscription: NOTRANSLATE
+      contact: NOTRANSLATE
+  success: 

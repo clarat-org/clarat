@@ -66,6 +66,17 @@
     }
   }
 
+  &.ar  {
+
+    .section-content--contact-person-list {
+      li {
+        margin-right: 25px;
+        margin-left: 0;
+      }
+    }
+
+  }
+
   .page-detail__header {
     position: relative;
   }

@@ -30,6 +30,11 @@
     z-index: 30;
     font-size: 20px;
 
+    body.ar & {
+      right: 14px;
+      left: auto;
+    }
+
     body.refugees & {
       color: $brand_core_refugees;
     }
@@ -99,6 +104,11 @@
   body.en & {
     padding-left: 68px;
   }
+
+  body.ar & {
+    padding-right: 42px;
+    padding-left: 14px;
+  }
 }
 
 #search_form_search_location {
@@ -107,6 +117,11 @@
 
   body.en & {
     padding-left: 79px;
+  }
+
+  body.ar & {
+    padding-right: 42px;
+    padding-left: 14px;
   }
 }
 

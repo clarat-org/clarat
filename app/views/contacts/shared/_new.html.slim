@@ -2,14 +2,14 @@
 = simple_form_for contact, html: { class: 'contact-form' }, remote: true do |f|
   - if reporting
     p= t('.send_us_a_message')
-  = f.input :name, label: false,
+  = f.input :name, label: false, hint: false,
                    input_html: { placeholder: t('.name_placeholder') }
-  = f.input :email, label: false,
+  = f.input :email, label: false, hint: false,
                     required: !reporting,
                     input_html: { \
                       placeholder: \
                         t(".email_placeholder.required.#{!reporting}") }
-  = f.input :message, label: false,
+  = f.input :message, label: false, hint: false,
                       input_html: { placeholder: t('.message_placeholder') }
   = f.input :url, as: :hidden
   = f.input :reporting, as: :hidden

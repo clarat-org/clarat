@@ -37,7 +37,7 @@
     .section-wrapper-minor
 
       - if location
-        - cache [location, 'organization_show_text', I18n.locale] do
+        - cache [location, website, 'organization_show_text', I18n.locale] do
           - if location.visible || website
             section.section-content.section-content--where
               h3.section-content__title = t '.where'

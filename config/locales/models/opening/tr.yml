@@ -1,7 +1,0 @@
-tr:
-  opening:
-    display_string:
-      appointment: "Sözleşilen vakit"
-      time_frame: "%{open} - %{close}"
-      time_format: "%H:%M Saat"
-      midnight_exception: "Saat 24:00"

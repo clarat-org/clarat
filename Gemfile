@@ -22,6 +22,12 @@ platforms :ruby do
   gem 'pg', group: [:production, :staging, :development] # postgres
 end
 
+#######################
+# Front-End Specifics #
+#######################
+
+gem 'localeapp'
+
 ##############
 # JavaScript #
 ##############

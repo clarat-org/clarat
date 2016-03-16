@@ -688,20 +688,26 @@ pl:
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         aze: Język azerski - Azərbaycan
+        ban: 
         bel: Język białoruski - беларуская мова
         ben: Język bengalski - বাংলা
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cze: 
         deu: Język niemiecki
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
         fas: Język perski - فارسی
+        fin: 
         fra: Język francuski - Français
+        hbs: 
+        heb: 
         hin: Język hindi - हिन्दी
         hrv: Język chorwacki - hrvatski
         hun: Język węgierski - magyar
         ita: Język włoski - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: 
         kur: Język kurdyjski - کوردی
         lav: Język łotewski - latviešu
         lit: Język litewski - lietuvių
@@ -715,7 +721,9 @@ pl:
         rom: Język romski - Romani
         ron: Język rumuński - română
         rus: Język rosyjski - русский
+        slo: 
         snk: Język soninke - Soninkanxaane
+        som: 
         spa: Język hiszpański - español
         sqi: Język albański - Shqipja
         srp: Język serbski - српски
@@ -725,6 +733,7 @@ pl:
         tel: Język telugu - తెలుగు
         tgk: Język tadżycki - тоҷикӣ / تاجیکی
         tha: Język tajski - ภาษาไทย
+        tir: 
         tuk: Język turkmeński - Türkmençe / Tүркменче
         tur: Język turecki - Türkçe
         urd: Język urdu - اردو

@@ -595,20 +595,26 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         aze: Azerice - Azərbaycan
+        ban: 
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cze: 
         deu: Almanca
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
         fas: Farsça - فارسی
+        fin: 
         fra: Fransızca - Français
+        hbs: 
+        heb: 
         hin: Hintçe - हिन्दी
         hrv: Hırvatça - hrvatski
         hun: Macarca - magyar
         ita: "İtalyanca - italiano"
         kik: Kikuyu - Gĩkũyũ
+        kor: 
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
         lit: Litvanca - lietuvių
@@ -622,7 +628,9 @@ tr:
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
+        slo: 
         snk: Soninke - Soninkanxaane
+        som: 
         spa: "İspanyolca - español"
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
@@ -632,6 +640,7 @@ tr:
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tha: Tayca - ภาษาไทย
+        tir: 
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
         urd: Urduca - اردو

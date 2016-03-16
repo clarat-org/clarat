@@ -1010,20 +1010,26 @@ en:
         amh: Amharic - አማርኛ
         ara: Arabian - عربي
         aze: Azerbaijani - Azərbaycan
+        ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
         bos: Bosnian - bosanski
         bul: Bulgarian - български
+        cze: Czech - čeština
         deu: German - Deutsch
         ell: Greek - ελληνικά
         eng: English
         fas: Persian (Farsi) - فارسی
+        fin: Finnish - suomi
         fra: French - Français
+        hbs: Montenegrin - Crnogorski jezik / Црногорски језик
+        heb: Hebrew - עברית
         hin: Hindi - हिन्दी
         hrv: Kroatian - hrvatski
         hun: Hungarian - magyar
         ita: Italic - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: Korean - 한국말 / 조선말
         kur: Kurdish - کوردی
         lav: Latvian - latviešu
         lit: Lithuanian - lietuvių
@@ -1037,7 +1043,9 @@ en:
         rom: Romany - Romani
         ron: Romanian - română
         rus: Russian - русский
+        slo: Slovak - slovenský jazyk
         snk: Soninke - Soninkanxaane
+        som: Somali - Soomaali
         spa: Spanish - español
         sqi: Albanian - Shqipja
         srp: Serbian - српски
@@ -1047,6 +1055,7 @@ en:
         tel: Telugu - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tha: Thai - ภาษาไทย
+        tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
         urd: Urdu - اردو

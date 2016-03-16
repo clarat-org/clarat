@@ -7,6 +7,7 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
   end
 
   def section section_id
+    @anchor = t_exists?("section_#{section_id}.anchor") ? t("section_#{section_id}.anchor") : ''
     @section_id = section_id
     @question_ids = (1..question_count(section_id) - 1).to_a
     render

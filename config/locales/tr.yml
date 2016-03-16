@@ -1,4 +1,19 @@
 tr:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Sıkça sorulan sorular
@@ -97,6 +112,7 @@ tr:
             var: link_to_about_us
           question: Clarat‘ın arkasında  kim var?
       section_2:
+        anchor: questions_about_our_search
         heading: Arayışın ile ilgili soruların mı var?
         question_1:
           anchor: who_finds_help
@@ -1221,6 +1237,12 @@ tr:
         Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
         Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
         Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1236,6 +1258,7 @@ tr:
       new:
         button: E-bülten aboneliği
         placeholder: E-Mail Adresi
+  success: 
   update_requests:
     create:
       success: |
@@ -1244,19 +1267,3 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

@@ -1,4 +1,19 @@
 ru:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: 
@@ -107,6 +122,7 @@ ru:
             var: link_to_about_us
           question: "Кто организует clarat?"
       section_2:
+        anchor: questions_about_our_search
         heading: "У тебя есть вопросы по поиску?"
         question_1:
           anchor: who_finds_help
@@ -1355,6 +1371,12 @@ ru:
         Эта страница автоматически переведена с помощью Google Translate.
         Поэтому могут встречаться языковые ошибки. Что-то может звучать странно.
         Тогда лучше посмотри еще раз в немецкой версии.
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1369,6 +1391,7 @@ ru:
       new:
         button: "Подписаться на новости"
         placeholder: E-Mail адрес
+  success: 
   update_requests:
     create:
       success: |
@@ -1377,19 +1400,3 @@ ru:
     new:
       button: "Получить сообщение"
       email_placeholder: E-Mail адрес
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

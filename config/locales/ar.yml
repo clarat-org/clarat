@@ -1,4 +1,19 @@
 ar:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: "أسئلة شائعة"
@@ -106,6 +121,7 @@ ar:
             var: 
           question: "من وراء كلارات؟"
       section_2:
+        anchor: questions_about_our_search
         heading: "هل لديك أسئلة بالنسبة للبحث؟"
         question_1:
           anchor: 
@@ -1351,6 +1367,12 @@ ar:
         الترجمة تتم بشكل تلقائي من خلال برنامج جوجل للترجمة.
         حيث أنه يوجد في الغالب أخطاءا لغوية. ومن الممكن أيضا أن تبدو الترجمة غريبة ومضحكة
         لذلك  يفضل أن تلقى نظرة على النص الألماني
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1367,6 +1389,7 @@ ar:
       new:
         button: "الإشتراك في المجموعة الإخبارية"
         placeholder: " البريد الإليكتروني"
+  success: 
   update_requests:
     create:
       success: |
@@ -1375,19 +1398,3 @@ ar:
     new:
       button: "الرسالة وصلت"
       email_placeholder: "عنوان البريد الإليكتروني"
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

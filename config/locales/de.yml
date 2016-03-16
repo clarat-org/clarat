@@ -1,4 +1,19 @@
 de:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Häufige Fragen
@@ -173,6 +188,7 @@ de:
             var: link_to_about_us
           question: Wer steckt hinter clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Hast du Fragen zu deiner Suche?
         question_1:
           anchor: who_finds_help
@@ -1832,7 +1848,7 @@ de:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': "'404'"
+    '404': 404
     contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
@@ -1862,6 +1878,13 @@ de:
         Diese Übersetzungen wurden von Google Translate automatisch gemacht.
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
+    tooltips:
+      welcome:
+        advanced_search: |
+          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        world_switch:
+          family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
+          refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1878,6 +1901,7 @@ de:
       new:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
+  success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
   update_requests:
     create:
       success: |
@@ -1886,19 +1910,3 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

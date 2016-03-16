@@ -81,14 +81,37 @@ feature 'Offer display' do
     )
   end
 
-  scenario 'With a non PDF and PDF own website' do
+  scenario 'With a non PDF (document) and PDF (own) website' do
     offer = FactoryGirl.create :offer, :approved
     offer.websites = []
     offer.websites << FactoryGirl.create(:website, :pdf)
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">Webseite</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
+      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
+    )
+  end
+
+  scenario 'With a non PDF and PDF (both own) website' do
+    offer = FactoryGirl.create :offer, :approved
+    offer.websites = []
+    offer.websites << FactoryGirl.create(:website, :pdf, host: 'own')
+    offer.websites << FactoryGirl.create(:website, :own)
+    visit unscoped_offer_path offer
+    page.body.must_match(
+      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
+    )
+  end
+
+  scenario 'With three own websites, one of which is a pdf' do
+    offer = FactoryGirl.create :offer, :approved
+    offer.websites = []
+    offer.websites << FactoryGirl.create(:website, :pdf, host: 'own')
+    offer.websites << FactoryGirl.create(:website, :own)
+    offer.websites << FactoryGirl.create(:website, host: 'own', url: 'http://www.example2.com/')
+    visit unscoped_offer_path offer
+    page.body.must_match(
+      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.example2.com/" target="_blank">www.example2.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
     )
   end
 end

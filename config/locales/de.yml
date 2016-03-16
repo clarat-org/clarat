@@ -1,4 +1,19 @@
 de:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Häufige Fragen
@@ -173,6 +188,7 @@ de:
             var: link_to_about_us
           question: Wer steckt hinter clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Hast du Fragen zu deiner Suche?
         question_1:
           anchor: who_finds_help
@@ -948,11 +964,6 @@ de:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1059,20 +1070,26 @@ de:
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         aze: Aserbaidschanisch - Azərbaycan
+        ban: Balinesisch - Basa Bali
         bel: Weißrussisch - беларуская мова
         ben: Bengalisch - বাংলা
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cze: Tschechisch - čeština
         deu: Deutsch
         ell: Griechisch - ελληνικά
         eng: Englisch - English
         fas: Persisch (Farsi) - فارسی
+        fin: Finnisch - suomi
         fra: Französisch - Français
+        hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
+        heb: Hebräisch - עברית
         hin: Hindi - हिन्दी
         hrv: Kroatisch - hrvatski
         hun: Ungarisch - magyar
         ita: Italienisch - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: Koreanisch - 한국말 / 조선말
         kur: Kurdisch - کوردی
         lav: Lettisch - latviešu
         lit: Litauisch - lietuvių
@@ -1086,7 +1103,9 @@ de:
         rom: Romanes - Romani
         ron: Rumänisch - română
         rus: Russisch - русский
+        slo: Slowakisch - slovenský jazyk
         snk: Soninke - Soninkanxaane
+        som: Somali - Soomaali
         spa: Spanisch - español
         sqi: Albanisch - Shqipja
         srp: Serbisch - српски
@@ -1096,6 +1115,7 @@ de:
         tel: Telugu - తెలుగు
         tgk: Tadschikisch - тоҷикӣ / تاجیکی
         tha: Thai - ภาษาไทย
+        tir: Tigrinisch - ትግርኛ
         tuk: Turkmenisch - Türkmençe / Tүркменче
         tur: Türkisch - Türkçe
         urd: Urdu - اردو
@@ -1214,59 +1234,6 @@ de:
         (z.B. "Postleitzahl Ort").
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
     shared:
-      current_and_original_locale:
-        '150': Deutsche Gebärdensprache
-        '326': Ukrainisch - українська
-        '568': Niederländisch - Nederlands
-        '639': Dari - دری
-        amh: Amharisch - አማርኛ
-        ara: Arabisch - عربي
-        aze: Aserbaidschanisch - Azərbaycan
-        bel: Weißrussisch - беларуская мова
-        ben: Bengalisch - বাংলা
-        bos: Bosnisch - bosanski
-        bul: Bulgarisch - български
-        deu: Deutsch
-        ell: Griechisch - ελληνικά
-        eng: Englisch - English
-        fas: Persisch (Farsi) - فارسی
-        fra: Französisch - Français
-        hin: Hindi - हिन्दी
-        hrv: Kroatisch - hrvatski
-        hun: Ungarisch - magyar
-        ita: Italienisch - italiano
-        kik: Kikuyu - Gĩkũyũ
-        kur: Kurdisch - کوردی
-        lav: Lettisch - latviešu
-        lit: Litauisch - lietuvių
-        ltz: Luxemburgisch - Lëtzebuergesch
-        luo: Luo - Dholuo
-        mkd: Mazedonisch - македонски
-        mul: weitere Sprachen auf Anfrage
-        nor: Norwegisch - Norsk
-        pol: Polnisch - polski
-        por: Portugiesisch - português
-        rom: Romanes - Romani
-        ron: Rumänisch - română
-        rus: Russisch - русский
-        snk: Soninke - Soninkanxaane
-        spa: Spanisch - español
-        sqi: Albanisch - Shqipja
-        srp: Serbisch - српски
-        swa: Swahili - Kiswahili
-        swe: Schwedisch - svenska
-        tam: Tamil - தமிழ்
-        tel: Telugu - తెలుగు
-        tgk: Tadschikisch - тоҷикӣ / تاجیکی
-        tha: Thai - ภาษาไทย
-        tuk: Turkmenisch - Türkmençe / Tүркменче
-        tur: Türkisch - Türkçe
-        urd: Urdu - اردو
-        uzb: Usbekisch - Oʻzbek tili
-        vie: Vietnamesisch - tiếng Việt
-        wol: Wolof - wɔlɔf
-        zho: Chinesisch - 普通话 / 普通話
-        zza: Zaza - Zazaki / Kırmancki
       search_form:
         button: Suchen
         loc_label: Wo
@@ -1890,7 +1857,7 @@ de:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': 404
     contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
@@ -1920,35 +1887,14 @@ de:
         Diese Übersetzungen wurden von Google Translate automatisch gemacht.
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
+    tooltips:
+      welcome:
+        advanced_search: |
+          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        world_switch:
+          family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
+          refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
-    hints:
-      contact:
-        show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
-      search_form:
-        faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        home:
-          query: 
-          search_location: 
-        index:
-          query: 
-          search_location: 
-        show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-      subscription:
-        faq:
-          email: NOTRANSLATE
-        home:
-          email: 
-        index:
-          email: 
-        show:
-          email: NOTRANSLATE
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1964,6 +1910,7 @@ de:
       new:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
+  success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
   update_requests:
     create:
       success: |

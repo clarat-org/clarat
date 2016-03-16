@@ -19,8 +19,8 @@ FactoryGirl.define do
     transient do
       _random do
         [
-          %w(children Kinder), %w(parents Eltern),
-          %w(nuclear_family Familie), %w(acquaintances Bekannte)
+          %w(family_children Kinder), %w(family_parents Eltern),
+          %w(family_nuclear_family Familie), %w(family_acquaintances Bekannte)
         ].sample
       end
     end

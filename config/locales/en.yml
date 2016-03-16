@@ -1,4 +1,19 @@
 en:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Frequently asked questions
@@ -173,6 +188,7 @@ en:
             var: link_to_about_us
           question: Who is behind clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Do you have questions about your search?
         question_1:
           anchor: who_finds_help
@@ -887,11 +903,6 @@ en:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: NOTRANSLATE
   js:
     ajax_error:
       error: Search error
@@ -999,20 +1010,26 @@ en:
         amh: Amharic - አማርኛ
         ara: Arabian - عربي
         aze: Azerbaijani - Azərbaycan
+        ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
         bos: Bosnian - bosanski
         bul: Bulgarian - български
+        cze: Czech - čeština
         deu: German - Deutsch
         ell: Greek - ελληνικά
         eng: English
         fas: Persian (Farsi) - فارسی
+        fin: Finnish - suomi
         fra: French - Français
+        hbs: Montenegrin - Crnogorski jezik / Црногорски језик
+        heb: Hebrew - עברית
         hin: Hindi - हिन्दी
         hrv: Kroatian - hrvatski
         hun: Hungarian - magyar
         ita: Italic - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: Korean - 한국말 / 조선말
         kur: Kurdish - کوردی
         lav: Latvian - latviešu
         lit: Lithuanian - lietuvių
@@ -1026,7 +1043,9 @@ en:
         rom: Romany - Romani
         ron: Romanian - română
         rus: Russian - русский
+        slo: Slovak - slovenský jazyk
         snk: Soninke - Soninkanxaane
+        som: Somali - Soomaali
         spa: Spanish - español
         sqi: Albanian - Shqipja
         srp: Serbian - српски
@@ -1036,6 +1055,7 @@ en:
         tel: Telugu - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tha: Thai - ภาษาไทย
+        tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
         urd: Urdu - اردو
@@ -1151,59 +1171,6 @@ en:
         (E.g "ZIP, Location").
       title: Unfortunately we could not find the location you entered
     shared:
-      current_and_original_locale:
-        '150': German Sign Language - Deutsche Gebärdensprache
-        '326': Ukrainian - українська
-        '568': Dutch - Nederlands
-        '639': Dari - دری
-        amh: Amharic - አማርኛ
-        ara: Arabian - عربي
-        aze: Azerbaijani - Azərbaycan
-        bel: Belarusian - беларуская мова
-        ben: Bengalese - বাংলা
-        bos: Bosnian - bosanski
-        bul: Bulgarian - български
-        deu: German - Deutsch
-        ell: Greek - ελληνικά
-        eng: English
-        fas: Persian (Farsi) - فارسی
-        fra: French - Français
-        hin: Hindi - हिन्दी
-        hrv: Kroatian - hrvatski
-        hun: Hungarian - magyar
-        ita: Italic - italiano
-        kik: Kikuyu - Gĩkũyũ
-        kur: Kurdish - کوردی
-        lav: Latvian - latviešu
-        lit: Lithuanian - lietuvių
-        ltz: Luxembourgish - Lëtzebuergesch
-        luo: Luo - Dholuo
-        mkd: Macedonian - македонски
-        mul: more languages upon request
-        nor: Norwegian - Norsk
-        pol: Polish - polski
-        por: Portuguese - português
-        rom: Romany - Romani
-        ron: Romanian - română
-        rus: Russian - русский
-        snk: Soninke - Soninkanxaane
-        spa: Spanish - español
-        sqi: Albanian - Shqipja
-        srp: Serbian - српски
-        swa: Swahili - Kiswahili
-        swe: Swedish - svenska
-        tam: Tamil - தமிழ்
-        tel: Telugu - తెలుగు
-        tgk: Tadjik - тоҷикӣ / تاجیکی
-        tha: Thai - ภาษาไทย
-        tuk: Turkmen - Türkmençe / Tүркменче
-        tur: Turkish - Türkçe
-        urd: Urdu - اردو
-        uzb: Uzbek - Oʻzbek tili
-        vie: Vietnamese - tiếng Việt
-        wol: Wolof - wɔlɔf
-        zho: Chinese - 普通话 / 普通話
-        zza: Zaza - Zazaki / Kırmancki
       search_form:
         button: Search
         loc_label: Where
@@ -1830,18 +1797,18 @@ en:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': "'404'"
     contacts: contacts
     datenschutzhinweise: 
     definitions: 
-    emails: 
+    emails: emails
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
     impressum: site-notice
-    new: 
+    new: new
     offers: offers
     organizations: organizations
-    preview: 
+    preview: preview
     rechtliche-hinweise: 
     search_locations: 
     subscribe: 
@@ -1860,39 +1827,17 @@ en:
         Translations here were automatically generated by Google Translate.
         Those translations usually contain errors. They may sound a bit strange.
         In that case you should have a look at the German original.
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
-    hints:
-      contact:
-        show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
-      search_form:
-        faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-      subscription:
-        faq:
-          email: NOTRANSLATE
-        home:
-          email: NOTRANSLATE
-        index:
-          email: NOTRANSLATE
-        show:
-          email: NOTRANSLATE
     required:
-      html: NOTRANSLATE
-      mark: NOTRANSLATE
-      text: NOTRANSLATE
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
   subscriptions:
     create:
       error: Please enter a valid email address.
@@ -1902,6 +1847,7 @@ en:
       new:
         button: Subscribe to our newsletter
         placeholder: Email address
+  success: 
   update_requests:
     create:
       success: |

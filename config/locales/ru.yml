@@ -562,20 +562,26 @@ ru:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -588,7 +594,9 @@ ru:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -598,6 +606,7 @@ ru:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd

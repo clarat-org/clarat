@@ -20,14 +20,11 @@ class Offer < ActiveRecord::Base
     !hide_contact_people
   end
 
-  # Get an array of websites, ordered as follows: (1) own non-pdf (2) own pdf
+  # Get an array of websites, ordered as follows: (1) 2x own non-pdf (2) own pdf
   # (3+) remaining HOSTS in order, except "other"
   def structured_websites
-    # TODO: Refactor!
-    sites = [
-      websites.own.non_pdf.first,
-      websites.own.pdf.first
-    ]
+    sites = two_own_websites_and_one_pdf
+
     Website::HOSTS[1..-2].each do |host| # no "other"
       sites << websites.send(host).first
     end
@@ -66,5 +63,12 @@ class Offer < ActiveRecord::Base
 
   def all_language_filters_sorted
     language_filters_fixed + language_filters_without_fixed
+  end
+
+  private
+
+  def two_own_websites_and_one_pdf
+    sites = websites.own.non_pdf.first(2)
+    sites << websites.own.pdf.first
   end
 end

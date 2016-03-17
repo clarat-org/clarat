@@ -5,6 +5,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     @cookieLifespan     = 90
     @isFrontPage        = $('.template--pages-home').length
+    @isOfferIndexPage   = $('.template--offers-index').length
     @world              = if $('body.refugees').length then 'refugees' else 'family'
     @ttAdvancedSearch   = $('.tooltip--advancedsearch')
     @ttWeltRefugees     = $('.tooltip--welt-refugees')
@@ -25,9 +26,11 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     if @isFrontPage
       @testForNavWeltCookie()
-    else
+    else if @isOfferIndexPage
       @testForNavWeltCookie()
       @testForAdvSearchCookie()
+    else
+      @testForNavWeltCookie()
 
 
   testForNavWeltCookie: () =>

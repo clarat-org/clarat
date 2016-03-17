@@ -1,4 +1,19 @@
 de:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Häufige Fragen
@@ -173,6 +188,7 @@ de:
             var: link_to_about_us
           question: Wer steckt hinter clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Hast du Fragen zu deiner Suche?
         question_1:
           anchor: who_finds_help
@@ -901,20 +917,26 @@ de:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -927,7 +949,9 @@ de:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -937,6 +961,7 @@ de:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -1054,20 +1079,26 @@ de:
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         aze: Aserbaidschanisch - Azərbaycan
+        ban: Balinesisch - Basa Bali
         bel: Weißrussisch - беларуская мова
         ben: Bengalisch - বাংলা
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cze: Tschechisch - čeština
         deu: Deutsch
         ell: Griechisch - ελληνικά
         eng: Englisch - English
         fas: Persisch (Farsi) - فارسی
+        fin: Finnisch - suomi
         fra: Französisch - Français
+        hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
+        heb: Hebräisch - עברית
         hin: Hindi - हिन्दी
         hrv: Kroatisch - hrvatski
         hun: Ungarisch - magyar
         ita: Italienisch - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: Koreanisch - 한국말 / 조선말
         kur: Kurdisch - کوردی
         lav: Lettisch - latviešu
         lit: Litauisch - lietuvių
@@ -1081,7 +1112,9 @@ de:
         rom: Romanes - Romani
         ron: Rumänisch - română
         rus: Russisch - русский
+        slo: Slowakisch - slovenský jazyk
         snk: Soninke - Soninkanxaane
+        som: Somali - Soomaali
         spa: Spanisch - español
         sqi: Albanisch - Shqipja
         srp: Serbisch - српски
@@ -1091,6 +1124,7 @@ de:
         tel: Telugu - తెలుగు
         tgk: Tadschikisch - тоҷикӣ / تاجیکی
         tha: Thai - ภาษาไทย
+        tir: Tigrinisch - ትግርኛ
         tuk: Turkmenisch - Türkmençe / Tүркменче
         tur: Türkisch - Türkçe
         urd: Urdu - اردو
@@ -1832,7 +1866,7 @@ de:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': "'404'"
+    '404': 404
     contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
@@ -1862,6 +1896,13 @@ de:
         Diese Übersetzungen wurden von Google Translate automatisch gemacht.
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
+    tooltips:
+      welcome:
+        advanced_search: |
+          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        world_switch:
+          family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
+          refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1878,6 +1919,7 @@ de:
       new:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
+  success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
   update_requests:
     create:
       success: |
@@ -1886,19 +1928,3 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

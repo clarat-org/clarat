@@ -1,4 +1,19 @@
 tr:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Sıkça sorulan sorular
@@ -97,6 +112,7 @@ tr:
             var: link_to_about_us
           question: Clarat‘ın arkasında  kim var?
       section_2:
+        anchor: questions_about_our_search
         heading: Arayışın ile ilgili soruların mı var?
         question_1:
           anchor: who_finds_help
@@ -446,20 +462,26 @@ tr:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -472,7 +494,9 @@ tr:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -482,6 +506,7 @@ tr:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -579,20 +604,26 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         aze: Azerice - Azərbaycan
+        ban: 
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cze: 
         deu: Almanca
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
         fas: Farsça - فارسی
+        fin: 
         fra: Fransızca - Français
+        hbs: 
+        heb: 
         hin: Hintçe - हिन्दी
         hrv: Hırvatça - hrvatski
         hun: Macarca - magyar
         ita: "İtalyanca - italiano"
         kik: Kikuyu - Gĩkũyũ
+        kor: 
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
         lit: Litvanca - lietuvių
@@ -606,7 +637,9 @@ tr:
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
+        slo: 
         snk: Soninke - Soninkanxaane
+        som: 
         spa: "İspanyolca - español"
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
@@ -616,6 +649,7 @@ tr:
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tha: Tayca - ภาษาไทย
+        tir: 
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
         urd: Urduca - اردو
@@ -1221,6 +1255,12 @@ tr:
         Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
         Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
         Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1236,6 +1276,7 @@ tr:
       new:
         button: E-bülten aboneliği
         placeholder: E-Mail Adresi
+  success: 
   update_requests:
     create:
       success: |
@@ -1244,19 +1285,3 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

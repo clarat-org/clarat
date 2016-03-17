@@ -1,7 +1,22 @@
 fr:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
-      heading: 
+      heading: Questions fréquentes
       section_1:
         heading: qui, comment, quoi?
         question_1:
@@ -54,7 +69,7 @@ fr:
             name: |
               [ le lien  est sur le formulairede contact]
             target: _blank
-            url: 
+            url: http://www.clarat.org/refugees/kontakt/new
             var: link_to_contact_form
           question: Clarat propose une interface pour réutiliser les données?
         question_2:
@@ -65,7 +80,7 @@ fr:
           link_1:
             class: FAQ_anchor_link
             name: Ici
-            url: 
+            url: "/questions-fréquentes#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           question: Clarat, comment ça marche?
         question_4:
@@ -86,7 +101,7 @@ fr:
           link_1:
             class: FAQ_anchor_link
             name: ici
-            url: 
+            url: "/questions-fréquentes#how_many_languages"
             var: ref_to_how_many_languages
           question: Quelle est la particularité de clarat?
         question_9:
@@ -106,10 +121,11 @@ fr:
           link_3:
             name: ici
             target: _blank
-            url: 
+            url: http://clarat.org/à-propos-de-nous
             var: link_to_about_us
           question: Qui se trouve derrière clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Tu as des questions par rapport à tes recherches?
         question_1:
           anchor: who_finds_help
@@ -150,7 +166,7 @@ fr:
           link_1:
             class: FAQ_anchor_link
             name: Ici
-            url: 
+            url: "/questions-fréquentes#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           link_2:
             name: post@clarat.org
@@ -258,7 +274,7 @@ fr:
           link_1:
             class: FAQ_anchor_link
             name: ici
-            url: 
+            url: "/questions-fréquentes#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           question: Comment filtrer mes recherches?
       section_3:
@@ -284,17 +300,17 @@ fr:
             Et la plus part des gens utilisent le mot réfugiés. C’est pour ça qu’on le fait aussi. Même si le mot en exil est plus juste. Sur clarat, on essaie d’être le plus précis possible. Mais ce qui est encore le plus important a nos yeux: que tout le monde comprenne vite. comme ça tout le monde peut chercher de l’aide, même encore plus vite.
           question: Pourquoi clarat utilise le terme de <i>réfugiés</i>?
       section_4:
-        heading: 
+        heading: Tu as des questions par rapport à Clarat dans différentes langues?
         question_1:
           anchor: how_many_languages
-          answer: 
-          question: 
+          answer: Toutes les pages de clarat sont en allemand et en anglais.
+          question: Dans quelles langues clarat est-elle consultable?
         question_2:
-          answer: 
-          question: 
+          answer: Clique sur ta langue en haut sur la page. Et tout est automatiquement  traduit dans ta langue par Google Translator. C'est pourquoi il y a parfois malheureusement des erreurs linguistiques. C'est possible que certaines choses paraissent étranges.
+          question: Comment j'arrive à lire dans ma langue?
         question_3:
-          answer: 
-          question: 
+          answer: Google Translator traduit automatiquement. C'est pourquoi il y a parfois des erreurs linguistiques. C'est possibles que certaines choses ne soient par tout à fait bien traduites.
+          question: Le texte dans ma langue est bizarre, pourquoi?
       section_5:
         heading: Tu as des questions entant que collaborateur d’une organisation?
         question_1:
@@ -336,7 +352,7 @@ fr:
           link_1:
             class: FAQ_anchor_link
             name: ici
-            url: 
+            url: "/questions-fréquentes#who_finds_help"
             var: ref_to_who_finds_help
           link_2:
             name: post@clarat.org
@@ -345,23 +361,23 @@ fr:
             var: mailto_clarat
           question: Mon organisation n’est pas sur clarat, pourquoi?
   conf:
-    current_location: 
+    current_location: Ma localisation
     default_latlng: 52.520007,13.404954
     default_location: Berlin
   contacts:
     create:
-      success: 
+      success: Le message a été envoyé avec succès.
     new:
-      contact_heading: 
+      contact_heading: Tu voudrais nous dire quoi?
     shared:
       new:
         email_placeholder:
           required:
-            'false': 
-            'true': 
-        message_placeholder: 
-        name_placeholder: 
-        send: 
+            'false': adresse électronique (facultatif)
+            'true': adresse électronique (obligatoire)
+        message_placeholder: Entrer le message (obligatoire)
+        name_placeholder: Nom (obligatoire)
+        send: Envoyer
         send_us_a_message: Schreibe uns eine Nachricht
   emails:
     offers_index:
@@ -523,20 +539,26 @@ fr:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -549,7 +571,9 @@ fr:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -559,6 +583,7 @@ fr:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -588,8 +613,8 @@ fr:
       get: Benutze meinen Standort!
       waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
     lang_list_toggle:
-      less: 
-      more: 
+      less: Montrer moins de langues
+      more: Montrer plus de langues
     less_filter_options: Weniger Filter anzeigen
     location_required: |
       Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
@@ -602,34 +627,34 @@ fr:
     query_field:
       example_placeholder: z.B. %{word}, …
       placeholder_words:
-        family: 
-        refugees: 
+        family: '["Drogues", "violence", "Soutien", "Urgence", "Droit", "Chômage", "Problème d''éducation", "Troubles alimentaires", "SDF", "Problèmes familiaux", "Grossesse", "Conflit", "Logement"]'
+        refugees: '["Nationalité", "Cours d''allemand", "Reconnaissance", "Traumatismes liés à la guerre", "Procédure de demande d''asile", "Couverture sociale", "Administrations", "Droit de séjour"]'
     routes:
-      faq: 
+      faq: Questions-fréquentes
     search:
       form_less_label: Suchoptionen ausblenden
       form_more_label: Suchoptionen einblenden
       headlines:
-        age: 
-        approach: 
-        gender: 
-        language: 
-        target_audience: 
-      option_any: 
+        age: "Âge de l'enfant"
+        approach: De quelle Manière?
+        gender: Sexe
+        language: Langue
+        target_audience: De l'aide pour qui?
+      option_any: "égal"
       pagination:
-        back: 
+        back: Retour
         gap: "..."
-        next: 
+        next: de nouveau
     search_results:
       bridge: für
       enclosing: gefunden
       faq_anchor: hier
       faq_text: 'Häufige Fragen und Antworten zur Suche findest du '
       language_explanation:
-        connector: 
-        text: 
+        connector: et
+        text: Cette proposition se trouve sur %{language_list}
       map:
-        cooperation: 
+        cooperation: Projet de coopération
         enlarge_map: Karte vergrößern
         headline_small_map: Angebote vor Ort auf der Karte
       more: Weitere Telefon- und Onlineangebote
@@ -647,28 +672,34 @@ fr:
         "'150'": Langue des signes allemande
         "'326'": Ukrainien - українська
         "'568'": Néerlandais - Nederlands
-        "'639'": 
+        "'639'": Dari
         '150': Langue des signes allemande
         '326': Ukrainien - українська
         '568': Néerlandais - Nederlands
-        '639': 
+        '639': Dari
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
         aze: Azéri - Azərbaycan
+        ban: 
         bel: Biélorusse - беларуская мова
         ben: Bengali - বাংলা
         bos: Bosnien - bosanski
         bul: Bulgare - български
+        cze: 
         deu: Allemand
         ell: Grec - ελληνικά
         eng: Anglais - English
         fas: Persan - فارسی
+        fin: 
         fra: Français
+        hbs: 
+        heb: 
         hin: Hindi - हिन्दी
         hrv: Croate - hrvatski
         hun: Hongrois - magyar
         ita: Italien - italiano
         kik: Kikuyu - Gĩkũyũ
+        kor: 
         kur: Kurde - کوردی
         lav: Letton - latviešu
         lit: Lituanien - lietuvių
@@ -682,7 +713,9 @@ fr:
         rom: Romani - Romani
         ron: Roumain - română
         rus: Russe - русский
+        slo: 
         snk: Soninké - Soninkanxaane
+        som: 
         spa: Espagnol - español
         sqi: Albanais - Shqipja
         srp: Serbe - српски
@@ -692,6 +725,7 @@ fr:
         tel: Télougou - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tha: Thaï - ภาษาไทย
+        tir: 
         tuk: Turkmène - Türkmençe / Tүркменче
         tur: Turc - Türkçe
         urd: Ourdou - اردو
@@ -791,19 +825,17 @@ fr:
           target_audience:
             acquaintances: für Bekannte und Verwandte
             children: für Kinder und Jugendliche
-            family_acquaintances: 
-            family_children: 
-            family_nuclear_family: 
-            family_parents: 
-            family_pregnant_woman: 
+            family_acquaintances: pour les connaissances et la parenté
+            family_children: pour les enfants et les ados
+            family_nuclear_family: pour les familles
+            family_parents: pour les parents
+            family_pregnant_woman: pour les femmes enceintes
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
-      noscript_warning: |
-        Tut uns leid, aber um unsere Suche benutzen zu können, musst dein
-        Browser JavaScript aktiviert haben.
+      noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
       pending_ajax:
         searching: Suche…
     invalid_location:
@@ -824,10 +856,10 @@ fr:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
-      last_update: 
+      last_update: Dernière entrée traitée le
       next_steps:
-        code_word: 
-        heading: 
+        code_word: Quelles questions posées et où chercher sur le site?
+        heading: qu'est-ce que tu dois faire?
       opening_section:
         days:
           fri: Freitag
@@ -838,19 +870,19 @@ fr:
           tue: Dienstag
           wed: Mittwoch
         heading: Wann kannst du das machen?
-      speaking: 
+      speaking: On peut d'aider dans quelle langue?
       website_section:
         internet_presence: Wo erfährst du mehr im Netz?
         websites:
-          application_form: 
-          chat: 
-          contact_form: 
+          application_form: Formulaire d'inscription
+          chat: messagerie instantanée
+          contact_form: Formulaire de contact
           document: Weitere Infos
           facebook: Facebook
-          forum: 
+          forum: Forum
           gplus: Google+
-          online_consulting: 
-          online_course: 
+          online_consulting: Conseil en ligne
+          online_course: Cours en ligne
           own: Webseite
           pinterest: Pinterest
           twitter: Twitter
@@ -875,7 +907,7 @@ fr:
   opening:
     display_string:
       appointment: sur rendez-vous
-      midnight_exception: 
+      midnight_exception: 24 heures
       time_format: "%Hh%M"
       time_frame: "%{open} - %{close}"
   organizations:
@@ -971,8 +1003,8 @@ fr:
         text: |
           Tape  dans le champ de recherche le problème pour lequel tu as besoin d’aide.. Ou ce qui t’oppresse.. Ou choisis parmi nos thèmes. Tu vois déjà toutes les listes d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       title:
-        family: 
-        refugees: 
+        family: Listes d'aide pour les enfants, les ados et les familles
+        refugees: Listes d'aide pour les réfugiés
       whom:
         heading: |
           Clarat, c’est pour qui?
@@ -995,7 +1027,7 @@ fr:
         Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
         Bilder nach passender Hilfe suchen.
       heading: Leider konnten wir diese Seite nicht finden.
-      link_text: 
+      link_text: Ici
       title: 404
     privacy:
       chapter_eight:
@@ -1312,23 +1344,23 @@ fr:
   routes:
     '404': "'404'"
     contacts: kontakt
-    datenschutzhinweise: 
-    definitions: 
-    emails: 
+    datenschutzhinweise: protection des données
+    definitions: Définitions
+    emails: Adresses électroniques
     faq: haeufige-fragen
     haeufige-fragen: haeufige-fragen
     impressum: impressum
-    new: 
+    new: new
     offers: angebote
     organizations: organisationen
-    preview: 
-    rechtliche-hinweise: 
-    search_locations: 
-    subscribe: 
-    subscriptions: 
+    preview: preview
+    rechtliche-hinweise: conseils juridiques
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: subscriptions
     ueber-uns: ueber-uns
-    unsubscribe: 
-    update_requests: 
+    unsubscribe: unsubscribe
+    update_requests: update_requests
     users: nutzer
   shareds:
     forms:
@@ -1340,6 +1372,12 @@ fr:
         Diese Übersetzung wurde von Google Translate automatisch gemacht.
         Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
         klingt. Schau dann lieber noch einmal in den deutschen Text.
+    tooltips:
+      welcome:
+        advanced_search: Tu veux faire une recherche plus détaillée? Alors clique ici. Une fenêtre avec de nombreuses possibilités s'affiche sur l'écran;
+        world_switch:
+          family: En cliquant ici, tu te retrouves sur clarat family. Sur clarat family, tu peux faire recherche pour de l'aide pour des enfants, des ados et des familles.
+          refugees: en cliquant ici, tu te retrouves sur clarat Refugees. Sur clarat Refugees, tu peux faire une recherche d'aide pour les réfugiés.
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1356,6 +1394,7 @@ fr:
       new:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
+  success: Merci beaucoup. Nous allons bientôt avoir des propositions d'aide près de chez toi. Dès que cela est le cas, tu vas recevoir un courrier électronique de notre part.
   update_requests:
     create:
       success: |
@@ -1364,19 +1403,3 @@ fr:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

@@ -177,6 +177,14 @@
     float: none;
     margin-right: 0;
     width: auto;
+
+    // Repeat to override specificity
+    body.ar & {
+      display: block;
+      float: none;
+      margin-left: 0;
+      width: auto;
+    }
   }
 
   .aside-standard {

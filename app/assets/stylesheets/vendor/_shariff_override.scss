@@ -9,6 +9,11 @@
   top: 50%;
   right: -60px;
 
+  body.ar & {
+    left: -120px;
+    right: auto;
+  }
+
   li {
     list-style: none;
     padding-bottom: 10px;
@@ -68,11 +73,19 @@
       width: 20px;
       display: inline-block;
       text-align: center;
+
+      body.ar & {
+        float: right;
+      }
     }
 
     .share_text {
       float: right;
       text-transform: uppercase;
+
+      body.ar & {
+        float: left;
+      }
     }
   }
 }

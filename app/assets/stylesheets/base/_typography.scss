@@ -118,6 +118,11 @@ p {
 
 .fa {
   margin-right: 5px;
+
+  body.ar & {
+    margin-right: 0;
+    margin-left: 5px;
+  }
 }
 
 dfn {

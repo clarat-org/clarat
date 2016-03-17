@@ -49,8 +49,7 @@
   display: none;
 
   body.ar & {
-    right: 0;
-    left: auto;
+    float: left;
   }
 
   //body.family & {

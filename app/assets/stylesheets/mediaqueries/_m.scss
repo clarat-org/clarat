@@ -85,6 +85,8 @@
     body.refugees &, // Specifity
     body.family & { // Specifity
       background-size: 160px 64px;
+      margin-right: 15px;
+      margin-left: 0;
     }
 
   }
@@ -180,11 +182,15 @@
     position: relative;
     z-index: 30;
     display: block;
-    padding: 10px 0;
     width: auto;
     margin-right: 0;
     overflow: hidden;
     background-color: $brand_yellow;
+
+    &,
+    body.ar & {
+      padding: 10px 0;
+    }
 
     .template--pages-home & .input.string.search_form_search_location {
       margin-bottom: 10px;
@@ -307,6 +313,7 @@
         width: 100%;
 
         body.ar & {
+          padding-left: 55px;
           padding-right: 0;
         }
 
@@ -367,7 +374,7 @@
   .main-search__advanced-filter--within-content-main {
     display: block;
     font-size: 13px;
-    margin: 0 -25px;
+    margin: 0 -20px;
     text-align: center;
     color: $brand_white;
     cursor: pointer;

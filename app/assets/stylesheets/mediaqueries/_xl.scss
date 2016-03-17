@@ -87,13 +87,14 @@
     width: calc(100% - 10px);
   }
 
-  .main-search__submit {
+  #new_search_form .main-search__submit {
     position: absolute;
     right: 0;
 
     body.ar & {
-      left: 0;
+      left: 20px;
       right: auto;
+      margin-left: 0;
     }
   }
 

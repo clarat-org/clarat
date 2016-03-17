@@ -67,6 +67,11 @@
 
   .search-form--input-wrapper {
     right: 60px;
+
+    body.ar & {
+      left: 60px;
+      right: 15px;
+    }
   }
 
   #new_search_form .input.string {

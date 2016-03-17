@@ -76,6 +76,14 @@
 
 }
 
+.template--pages-home {
+  &.ar {
+    #new_search_form {
+      padding-right: 0;
+    }
+  }
+}
+
 #search_form_query,
 #search_form_search_location {
   margin-right: 10px;
@@ -165,7 +173,6 @@
 
   body.ar & {
     border-bottom-right-radius: 0; // reset
-    margin-left: 10px;
     @extend %clarat_rounding_start;
   }
 }

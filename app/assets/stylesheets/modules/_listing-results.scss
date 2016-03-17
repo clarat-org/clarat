@@ -189,6 +189,12 @@
   background: transparent image-url('gmaps_marker.svg') no-repeat left center;
   background-size: auto 30px;
   padding-left: 30px;
+
+  body.ar & {
+    background-position: calc(100% - 5px) center;
+    padding-left: 0;
+    padding-right: 30px;
+  }
 }
 
 .Listing-results__address {
@@ -206,4 +212,9 @@
   background-size: auto 20px;
   line-height: 1.8;
   overflow: hidden;
+
+  body.ar & {
+    background-position: calc(100% - 6px) 5px;
+    padding: 4px 30px 0 4px;
+  }
 }

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 63dae1135ca67d6ac3087e527cf90778f76e85b1
+  revision: 910735c3baa536b6a01b8757ce9d86c3eb44a1e8
   branch: feature/tr-ru-locales
   specs:
     clarat_base (0.1.4)

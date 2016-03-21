@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 0a3a1fbb7dbd4643b757311d17797d20aa44f0a0
+  revision: 02807c3d7f752e16588b9f1951ce9929f05835a9
+  branch: feature/708-remove-fields-from-location
   specs:
     clarat_base (0.1.4)
       aasm
@@ -166,7 +167,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.25)
+    domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -532,7 +533,7 @@ GEM
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.2)
     uniform_notifier (1.9.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)

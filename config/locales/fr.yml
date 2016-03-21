@@ -387,7 +387,7 @@ fr:
         toggle_section_html:
           one: Dein <strong>clarat refugees</strong>-Angebot
           other: Deine <strong>%{count} clarat refugees</strong>-Angebote
-      obfuscated_email: deine E-Mail-Adresse
+      obfuscated_email: 
       refugees:
         heading: |
           Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
@@ -414,10 +414,7 @@ fr:
           uns bekommen hast.
         info: Info
     subscribe:
-      success_html: |
-        Du hast dich erfolgreich für Benachrichtigungen zu Angeboten mit deiner
-        Email-Adresse angemeldet.
-        (<a href="%{unsubscribe_href}">wieder abmelden</a>)
+      success_html: 
     unsubscribe:
       success_html: |
         Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
@@ -622,10 +619,31 @@ fr:
     mobile_filter: Ergebnisse filtern
     more_filter_options: Mehr Filter anzeigen
     query_field:
-      example_placeholder: z.B. %{word}, …
+      example_placeholder: z.B. %{word}
       placeholder_words:
-        family: '["Drogues", "violence", "Soutien", "Urgence", "Droit", "Chômage", "Problème d''éducation", "Troubles alimentaires", "SDF", "Problèmes familiaux", "Grossesse", "Conflit", "Logement"]'
-        refugees: '["Nationalité", "Cours d''allemand", "Reconnaissance", "Traumatismes liés à la guerre", "Procédure de demande d''asile", "Couverture sociale", "Administrations", "Droit de séjour"]'
+        family:
+        - Drogues
+        - violence
+        - Soutien
+        - Urgence
+        - Droit
+        - Chômage
+        - Problème d'éducation
+        - Troubles alimentaires
+        - SDF
+        - Problèmes familiaux
+        - Grossesse
+        - Conflit
+        - Logement
+        refugees:
+        - Nationalité
+        - Cours d''allemand
+        - Reconnaissance
+        - Traumatismes liés à la guerre
+        - Procédure de demande d''asile
+        - Couverture sociale
+        - Administrations
+        - Droit de séjour
     routes:
       faq: Questions-fréquentes
     search:
@@ -786,10 +804,10 @@ fr:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
-          ru: "НА РУССКОМ"
+          pl: Polski
+          ru: "Русский"
           tr: Türkçe
-        title: "(frz: Automatische Übersetzung)"
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -831,27 +849,25 @@ fr:
             parents: für Eltern
             pregnant_woman: für Schwangere
       map_sidebar:
-        map_output_searchresults: Kartenausgabe der Suchergebnisse
+        map_output_searchresults: 
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
       pending_ajax:
-        searching: Suche…
+        searching: 
     invalid_location:
-      text: |
-        Bitte überprüfe noch mal die von dir eingegebenen Adressdaten und
-        versuche gegebenenfalls mit einer alternativen Eingabe
-        (z.B. "Postleitzahl Ort").
-      title: Leider konnten wir den von dir eingegeben Standort nicht finden
+      text: |2+
+
+      title: 
     shared:
       search_form:
-        button: Suchen
-        loc_label: Wo
+        button: 
+        loc_label: 
         loc_placeholder:
-          long: Adresse, Stadtteil, Stadt oder PLZ
-          short: Stadt, PLZ, …
-        query_label: Was
+          long: 
+          short: 
+        query_label: 
         query_placeholder:
           long: Angebote zum Thema …
-          short: Angebote zu …
+          short: 
     show:
       last_update: Dernière entrée traitée le
       next_steps:
@@ -859,17 +875,17 @@ fr:
         heading: qu'est-ce que tu dois faire?
       opening_section:
         days:
-          fri: Freitag
+          fri: 
           mon: Montag
           sat: Samstag
           sun: Sonntag
           thu: Donnerstag
           tue: Dienstag
           wed: Mittwoch
-        heading: Wann kannst du das machen?
+        heading: 
       speaking: On peut d'aider dans quelle langue?
       website_section:
-        internet_presence: Wo erfährst du mehr im Netz?
+        internet_presence: 
         websites:
           application_form: Formulaire d'inscription
           chat: messagerie instantanée
@@ -884,23 +900,21 @@ fr:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: Worum geht's?
-      who: Wo gibt’s die Hilfe?
+      what: 
+      who: 
       who_contact_people:
-        dr: Dr.
-        email: 'E-Mail: '
-        fax: 'Fax: '
-        female: Frau
-        male: Herr
-        obfuscated_email: |
-          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
-        phone: 'Telefon: '
-        prof_dr: Prof. Dr.
+        dr: 
+        email: 
+        fax: 
+        female: 
+        male: 
+        obfuscated_email: 
+        phone: 
+        prof_dr: 
       who_location:
-        organizations: 'Ein Angebot von:'
+        organizations: 
       who_section:
-        heading: Wo kannst du dich melden?
+        heading: 
   opening:
     display_string:
       appointment: sur rendez-vous

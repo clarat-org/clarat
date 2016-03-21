@@ -645,8 +645,8 @@ pl:
         zho: Zho
         zza: Zza
       section:
-        family: Rodzina
-        refugees: Uchodźcy
+        family: Family
+        refugees: Refugees
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -673,7 +673,7 @@ pl:
     mobile_filter: Filtruj wyniki
     more_filter_options: Pokaż więcej filtrów
     query_field:
-      example_placeholder: z.B. %{word}, …
+      example_placeholder: z.B. %{word}
       placeholder_words:
         family: 
         refugees: 
@@ -839,9 +839,9 @@ pl:
           en: English
           fr: Français
           pl: Polski
-          ru: "НА РУССКОМ"
+          ru: "Русский"
           tr: Türkçe
-        title: Wähle deine Sprache
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:

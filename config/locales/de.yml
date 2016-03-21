@@ -1187,10 +1187,10 @@ de:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
-          ru: "НА РУССКОМ"
+          pl: Polski
+          ru: "Русский"
           tr: Türkçe
-        title: Wähle deine Sprache
+        title: Automatische Übersetzungen!
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:

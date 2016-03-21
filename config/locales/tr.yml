@@ -596,34 +596,34 @@ tr:
         "'150'": Almanca işaret dili
         "'326'": Ukraynaca - українська
         "'568'": Felemenkçe - Nederlands
-        "'639'": 
+        "'639'": Farsça - دری
         '150': Almanca işaret dili
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
-        '639': 
+        '639': Farsça - دری
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         aze: Azerice - Azərbaycan
-        ban: 
+        ban: Bali dili - Basa Bali
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
-        cze: 
-        deu: Almanca
+        cze: "Çekçe - čeština"
+        deu: Almanca - Deutsch
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
         fas: Farsça - فارسی
-        fin: 
+        fin: Fince - suomi
         fra: Fransızca - Français
-        hbs: 
-        heb: 
+        hbs: Karadağca - Crnogorski jezik / Црногорски језик
+        heb: "İbranice - עברית"
         hin: Hintçe - हिन्दी
         hrv: Hırvatça - hrvatski
         hun: Macarca - magyar
         ita: "İtalyanca - italiano"
         kik: Kikuyu - Gĩkũyũ
-        kor: 
+        kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
         lit: Litvanca - lietuvių
@@ -637,9 +637,9 @@ tr:
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
-        slo: 
+        slo: Slovakça - slovenský jazyk
         snk: Soninke - Soninkanxaane
-        som: 
+        som: Somalice - Soomaali
         spa: "İspanyolca - español"
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
@@ -649,7 +649,7 @@ tr:
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tha: Tayca - ภาษาไทย
-        tir: 
+        tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
         urd: Urduca - اردو

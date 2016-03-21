@@ -84,7 +84,7 @@ fr:
             var: ref_to_how_to_find_right_help
           question: Clarat, comment ça marche?
         question_4:
-          answer: Clarat, c’est gratuit et ça ne changera pas. Tout le monde peut faire gratuitement une recherche d’aide  pour des enfants, des ados, des familles sur clarat-famille. Tout comme tout le monde peut faire gratuitement une recherche d’aide pour des réfugiés sur <b>clarat refugees</b>.
+          answer: Clarat, c’est gratuit et ça ne changera pas. Tout le monde peut faire gratuitement une recherche d’aide pour des enfants, des ados, des familles sur clarat-famille. Tout comme tout le monde peut faire gratuitement une recherche d’aide pour des réfugiés sur <b>clarat refugees</b>.
           question: Faire une recherche sur clarat, c’est gratuit?
         question_5:
           answer: Une recherche sur clarat est toujours anonyme. Ça signifie que personne sur clarat ne connaît ton nom ou ton adresse.
@@ -129,7 +129,7 @@ fr:
         heading: Tu as des questions par rapport à tes recherches?
         question_1:
           anchor: who_finds_help
-          answer: |
+          answer: |-
             Clarat est là pour tous - avec un simple clic, tu choisis <b>
             clarat family</b> ou <b>clarat refugees</b>
             <p>
@@ -138,7 +138,7 @@ fr:
             <b>clarat family</b> c’est pour les enfants, les ados, les familles qui ont besoin d’aide. Peu importe s’ils ont des problèmes à la maison , avec des amis, à l’école ou ailleurs.
             </li>
             <li>
-            <b>clarat refugees</b> c’est pour les réfugiés en Allemagne. Pour les enfants réfugiés, les ados réfugiés. Pour les femmes et les hommes réfugiés. Pour les familles réfugiées. Bref, pour tous ceux qui ce sont réfugiés en Allemagne et qui ont pour cette raison besoin d’aide.
+            <b>clarat refugees</b> c’est pour les réfugiés en Allemagne. Pour les enfants réfugiés, les ados réfugiés. Pour les femmes et les hommes réfugiés. Pour les familles réfugiées. Bref, pour tous ceux qui se sont réfugiés en Allemagne et qui ont pour cette raison besoin d’aide.
             </li>
             </ul>
             </p>
@@ -153,13 +153,13 @@ fr:
             C’est possible que ton mot clé ne marche pas. Essaie alors avec un autre mot. Si aucun autre mot clé ne te vient à l’esprit, essaie avec une image. Ça signifie sur clarat: <i>recherche par catégories</i>. %{ref_to_how_to_find_right_help} tu peux lire, comment marche la recherche.
             </li>
             <li>
-            Si tu vis à  la campagne, que tu ne trouves pas d’aide à proximité, écris dans le champ <b>Ou?</b> le nom d’une ville proche de toi. Où vois situ peux recevoir de l’aide par téléphone, internet.
+            Si tu vis à  la campagne, que tu ne trouves pas d’aide à proximité, écris dans le champ <b>Ou?</b> le nom d’une ville proche de toi. Où vois si tu peux recevoir de l’aide par téléphone, internet.
             </li>
             <li>
             Une autre raison: on n’a pas encore collecté des services d’aide dans ton quartier ou ta ville.
             </li>
             <li>
-            ou on n’a encore aucune offre satisfaisante à ton problème sur clarat. Pour qu’on puisse changer ça dans un avenir proche, c’est très important pour nous de recevoir un retour. Si tu trouves ce que tu cherches, merci de nous le signaler  par courriel à %{mailto_clarat} tu peux aussi nous écrire sur notre chat en direct. Tu le trouves tout en hat à droite sur la page.
+            ou on n’a encore aucune offre satisfaisante à ton problème sur clarat. Pour qu’on puisse changer ça dans un avenir proche, c’est très important pour nous de recevoir un retour. Si tu trouves ce que tu cherches, merci de nous le signaler  par courriel à %{mailto_clarat} tu peux aussi nous écrire sur notre chat en direct. Tu le trouves tout en bas à droite sur la page.
             </li>
             </ul>
             </p>
@@ -178,24 +178,23 @@ fr:
           answer: "Le mieux, c’est que tu regardes bien pour quel problème l’aide est. Voir la section <b>de quoi il s’agit</b>? Si ce n’est toujours l’aide qu’il te faut,alors essaie avec un autre service d’aide. Si tu n’es pas tout à fait sûr, le mieux, c’est que tu le demandes directement à la personne qui propose ce service. On peut souvent appeler ou écrire un courriel. numéros de téléphone et adresses électroniques se trouvent sur clarat voir la section <i>à qui m’adresser</i>? \n"
           question: Je peux faire quoi, si je ne sais pas si l’aide que j’ai trouvée est celle qu’il me faut?
         question_12:
-          answer: |
-            Tu peux chercher de l’aide sur clarat non seulement pour toi mais aussi pour une autre personne. Par exemple pour un ami. Ou un oncle pour son neveu. Ou une mère pour sa fille. Ou un professeur pour son élève. Mais ne t’étonne pas qu’on s’adresse toujours en premier à la personne qui doit recevoir de l’aide. Et la plus part du temps, ce sont des enfnats, des ados.
+          answer: Tu peux chercher de l’aide sur clarat non seulement pour toi mais aussi pour une autre personne. Par exemple pour un ami. Ou un oncle pour son neveu. Ou une mère pour sa fille. Ou un professeur pour son élève. Mais ne t’étonne pas, on s’adresse toujours en premier à la personne qui doit recevoir de l’aide. Et la plus part du temps, ce sont des enfants, des ados.
           question: Comment trouver de l’aide si je ne cherche pas pour moi mais pour une autre personne?
         question_2:
-          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classé par thèmes:\n<p>\n<ul>\n<li>\n<b>Poussette - problèmes familaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li>\n<b>Cœur - Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li>\n<b>Livre - Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li>\n<b>Petit guide - Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li>\n<b>Poing - Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li>\n<b>Éclair - Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
+          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classési par thèmes:\n<p>\n<ul>\n<li>\n<b>Poussette - problèmes familiaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li>\n<b>Cœur - Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li>\n<b>Livre - Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li>\n<b>Petit guide - Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li>\n<b>Poing - Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li>\n<b>Éclair - Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
           question: Je trouve de l’aide sur quels thèmes sur clarat family?
         question_3:
-          answer: |2-
-             Tu trouves sur <b>clarat refugees</b> différentes listes d’aide. Elles t’aide sur différents thèmes. On les a classer pour toi:
+          answer: |-
+            Tu trouves sur <b>clarat refugees</b> différentes listes d’aide. Elles t’aident sur différents thèmes. On les a classer pour toi:
             <p>
             <ul>
             <li>
             <b>Paragraphe - Asile et droit</b><br>
-            Ici, tu trouves de l’aide si tu as des questions sur la procédure de demande d’asile. Que ce soit avant, pendant ou après la procédure. Donc par exemple si tu as une autorisation pprovisoire de séjour. Ou si tu as des questions sur les lois allemandes. Même les réfugiés mineurs trouvent ici un soutien.
+            Ici, tu trouves de l’aide si tu as des questions sur la procédure de demande d’asile. Que ce soit avant, pendant ou après la procédure. Donc par exemple si tu as une autorisation de séjour provisoire. Ou si tu as des questions sur les lois allemandes. Même les réfugiés mineurs trouvent ici un soutien.
             </li>
             <br>
             <li>
-            <b>Poussette - problèmes familaux</b><br>
+            <b>Poussette - problèmes familiaux</b><br>
             Ici, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.
             </li>
             <br>
@@ -206,7 +205,7 @@ fr:
             <br>
             <li>
             <b>Livre - Apprendre et travailler</b><br>
-            Ici, tu trouves de l’aide si tu as des questions touchant l’apprentissage et le travail.Par exemple sur les jardins d’enfants, les écoles. Ou si tu voudrais savoir comment, en tant que réfugiés tu peux étudier. Ou si tu cherches une place d’apprenti ou un travail. tu trouve ici de nombreux cours d’allemand différents. Et des cours d’intégration que tu doit faire en tant que réfugié.
+            Ici, tu trouves de l’aide si tu as des questions touchant l’apprentissage et le travail. Par exemple sur les jardins d’enfants, les écoles. Ou si tu voudrais savoir comment, en tant que réfugiés tu peux étudier. Ou si tu cherches une place d’apprenti ou un travail. tu trouves ici de nombreux cours d’allemand différents. Et des cours d’intégration que tu dois faire en tant que réfugié.
             </li>
             <br>
             <li>
@@ -216,41 +215,39 @@ fr:
             <br>
             <li>
             <b>Poing - Violence</b><br>
-            Ici tu trouves de l’aide si on t’a par exemple battu. Ou si on t’a torturé en temps de guerre. De l’aide, tu en trouves aussi si par exemple tu souhaite quitter un groupe islamiste.
+            Ici tu trouves de l’aide si on t’a par exemple battu. Ou si on t’a torturé en temps de guerre. De l’aide, tu en trouves aussi si par exemple tu souhaites quitter un groupe islamiste.
             </li>
             <br>
             <li>
             <b>Éclair - Cas d’urgence</b><br>
-            Ici tu trouves rapidement del’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.
+            Ici tu trouves rapidement de l’aide si tu es en situation de détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.
             </li>
             </ul>
             </p>
           question: Je trouve de l’aide sur quels thèmes sur clarat refugees?
         question_4:
-          answer: |
-            Sur la page d’accueil tu vois à droite un éclair. En cliquant sur l’éclair tu vois une liste précise d’aide; Cette liste t’aide en situation de détresse. Donc si tu a rapidement besoin d’aide. Dans la liste des types d’aide, là où est écrit  <b>jour et nuit</b>, tu peux toujours prendre contact avec quelqu’un. Quelle que soit l’heure. Si tu ne souhaites pas sortir, on peut t’aider par téléphone ou sur internet.
-          question: Comment trouver rapidement de l’aide si je suis en détresse?
+          answer: Sur la page d’accueil tu vois à droite un éclair. En cliquant sur l’éclair tu vois une liste d’aide précise; Cette liste t’aide en situation de détresse. Donc si tu as rapidement besoin d’aide. Dans la liste des types d’aide, là où est écrit  <b>jour et nuit</b>, tu peux toujours prendre contact avec quelqu’un. Quelle que soit l’heure. Si tu ne souhaites pas sortir, on peut t’aider par téléphone ou sur internet.
+          question: Comment trouver rapidement de l’aide si je suis en situation de détresse?
         question_5:
           anchor: how_to_find_right_help
-          answer: |2-
-
+          answer: |-
             Il y a deux possibilités pour que tu puisses trouver l’aide qu’il te faut:
             <p>
             <ul>
             <li>
-            Si tu sais comment s’appellent ton problème ou l’aide que tu cherches , tape-le simplement sur la page d’accueil  dans le champ <b>quoi?</b>. écris après dans le champ <b>où</b> où tu as besoin d’aide. Où clique dans le champ <b>où</b>. Et après clique sur <b>partager ma localisation</b>. Ensuite clique simplement sur la loupe et trouve de l’aide à proximité!
+            Si tu sais comment s’appellent ton problème ou l’aide que tu cherches , tape-le simplement sur la page d’accueil  dans le champ <b>quoi?</b>. écris après dans le champ <b>où</b> où tu as besoin d’aide. Où clique dans le champ <b>où</b>. Et après clique sur <b>partager ma situation géographique </b>. Ensuite clique simplement sur la loupe et trouve de l’aide à proximité!
             </li>
             <li>
-            si tu ne sais pas exactement  comment s’appelle ton problème, essaie de faire  une recherche par catégories. Si tu as par exemple des problèmes pour faire tes devoirs, clique sur le livre. Sur le côté gauche ,tu vois alors beaucoup de termes touchant à l’apprentissage et le travail, tu peux cliquer dessus. Écris aussi dans le champ “où”, où tu cherches de l’aide Et après clique sur <b>partager ma localisation</b>. Ensuite clique simplement sur la loupe et trouve de l’aide à proximité!
+            si tu ne sais pas exactement  comment s’appelle ton problème, essaie de faire une recherche par catégorie. Si tu as par exemple des problèmes pour faire tes devoirs, clique sur le livre. Sur le côté gauche ,tu vois alors beaucoup de termes touchant à l’apprentissage et au travail, tu peux cliquer dessus. Écris aussi dans le champ “où”, où tu cherches de l’aide Et après clique sur <b>partager ma situation géographique </b>. Ensuite clique simplement sur la loupe et trouve de l’aide à proximité!
             </li>
             </ul>
             </p>
           question: Comment trouver l’aide qu’il me faut?
         question_6:
-          answer: Beaucoup de services de soutien, que tu trouves sur clarat sont gratuits. Il y a aussi des aides qui sont payantes. Ça ne veut pas automatiquement dire que tu dois payer toi-même. C’est possible que la caisse maladie  le paie. Ou un organisme public. Ça peut être par exemple une administration. Ou un service. Le mieux est que tu demandes directement là où on te propose de l’aide. Alors tu sais à cent pourcent si le service  de soutien est gratuit ou non.
-          question: Je trouve de l’aide dont je peux profiter gratuitement?
+          answer: Beaucoup de services de soutien, que tu trouves sur clarat sont gratuits. Il y a aussi des aides qui sont payantes. Ça ne veut pas automatiquement dire que tu doives payer toi-même. C’est possible que la caisse maladie le paie. Ou un organisme public. Ça peut être par exemple une administration. Ou un service. Le mieux est que tu demandes directement là où on te propose de l’aide. Alors tu es à cent pourcent sûr si le service  de soutien est gratuit ou non.
+          question: Je trouve de l’aide dont je peux en profiter gratuitement?
         question_7:
-          answer: Tu peux profiter anonymement de beaucoup de services de soutien que tu trouves sur clarat. Ça signifie que tu ne doit dire à personne ton nom. Si tu peux profiter anonyment de l’aide , tout est expliqué sur clarat <i>tu dois faire quoi?</i> Si ce n’est pas écrit, le mieux à faire est de le demander directement là où on te propose de l’aide.
+          answer: Tu peux profiter anonymement de beaucoup de services de soutien que tu trouves sur clarat. Ça signifie que tu ne dois dire à personne ton nom. Si tu peux profiter anonymement de l’aide , tout est expliqué sur clarat <i>tu dois faire quoi?</i> Si ce n’est pas écrit, le mieux à faire est de le demander directement là où on te propose de l’aide.
           question: Je trouve de l’aide dont je peux profiter anonymement?
         question_8:
           answer: |-
@@ -258,7 +255,7 @@ fr:
             <p>
             <ul>
             <li>
-            si tu as un handicap psychique. C’est quand ça fait longtemps que du as des problèmes mentaux.
+            si tu as un handicap psychique. C’est quand ça fait longtemps que tu as des problèmes mentaux.
             </li>
             <li>
             si tes parents ont un handicap. Quel que soit leur handicap. Ça peut être un handicap psychique,mental, ou physique.
@@ -270,7 +267,7 @@ fr:
             </p>
           question: Je trouve de l’aide sur clarat-famille sur le thème handicap?
         question_9:
-          answer: "Lance une recherche d’aide. Si tu souhaites savoir comment trouver l’aide qu’il te faut, tu peux le lire %{ref_to_how_to_find_right_help}. Si  tu es maintenant sur la page de résultats, tu vois en haut à droite <b>afficher les recherches</b>. Si tu cliques dessus, tu peux utiliser différents filtres.\nTu peux affiner ta recherche de la façon suivante:\n<p>\n<ul>\n<li>\n<b>Âge de l’enfant?</b> ici tu tapes ton âge. Ou l’âge de l’enfant pour qui tu veux trouver de l’aide.\n</li>\n<li>\n<b>Langue?</b> •\tici tu tapes ta langue. On te montre des services d’aide dont tu peux te servir dans ta langue. Si tu ne choisis pas de langue, des services d’aide te seront automatiquement montrés en allemand.\n</li>\n<li>\n<b>De l’aide, pour qui?</b> •\tici ,tu peux choisir pour qui tu cherches de l’aide. Si par exemple tu cherches de l’aide pour toute ta famille, clique sur pour les <i>familles</i>. Tu es un <i>enfant et tu cherches</i> de ll’aide uniquement pour toi, clique sur pour les enfants et les ados.\n</li>\n<li>\n<b>Sexe?</b> Ici, tu peux choisir si tu cherches de l’aide  <i>seulement pour les garçons et les hommes</i> ou <i>seulement pour les filles et les femmes</i>. Si tu ne cliques sur rien, alors le filtre reste automatiquement <i>identique</i>.\n</li>\n<li>\n<b>Par quel moyen?</b> ici tu peux choisir si par exemple tu souhaites seulement trouver des services d’aide où tu peux aller personnellement. Alors clique  <i>personnel</i>. Si tu préfères recevoir de l’aide chez toi, clique sur <i>par téléphone</i> ou\n<i>en ligne</i>. Après, tu peux encore choisir entre par téléphone, courriel, chat, forum et cours en ligne.\n</li>\n</ul>\n</p>"
+          answer: "Lance une recherche d’aide. Si tu souhaites savoir comment trouver l’aide qu’il te faut, tu peux le lire %{ref_to_how_to_find_right_help}. Si  tu es maintenant sur la page de résultats, tu vois en haut à droite <b>afficher les recherches</b>. Si tu cliques dessus, tu peux utiliser différents filtres.\nTu peux affiner ta recherche de la façon suivante:\n<p>\n<ul>\n<li>\n<b>Âge de l’enfant?</b> ici tu tapes ton âge. Ou l’âge de l’enfant pour qui tu veux trouver de l’aide.\n</li>\n<li>\n<b>Langue?</b> •\tici tu tapes ta langue. On te montre des services d’aide dont tu peux te servir dans ta langue. Si tu ne choisis pas de langue, des services d’aide te seront automatiquement montrés en allemand.\n</li>\n<li>\n<b>De l’aide, pour qui?</b> •\tici ,tu peux choisir pour qui tu cherches de l’aide. Si par exemple tu cherches de l’aide pour toute ta famille, clique sur pour les <i>familles</i>. Tu es un <i>enfant et tu cherches</i> de l’aide uniquement pour toi, clique sur pour les enfants et les ados.\n</li>\n<li>\n<b>Sexe?</b> Ici, tu peux choisir si tu cherches de l’aide  <i>seulement pour les garçons et les hommes</i> ou <i>seulement pour les filles et les femmes</i>. Si tu ne cliques sur rien, alors le filtre reste automatiquement <i>identique</i>.\n</li>\n<li>\n<b>Par quel moyen?</b> ici tu peux choisir si tu souhaites seulement trouver des services d’aide où tu peux aller personnellement, par exemple. Alors clique  <i>personnel</i>. Si tu préfères recevoir de l’aide chez toi, clique sur <i>par téléphone</i> ou\n<i>en ligne</i>. Après, tu peux encore choisir entre par téléphone, courriel, chat, forum et cours en ligne.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
             name: ici
@@ -280,7 +277,7 @@ fr:
       section_3:
         heading: Tu as des questions sur le langage de clarat?
         question_1:
-          answer: Pour que toutes les personnes qui cherche de l’aide sur clarat puisse trouver rapidement de l’aide, on a créé le langage clarat. Le langage clarat est facile à comprendre. Car il se fonde sur un langage simple. Et finalement clarat est là pour tout le monde. Pour les enfants, les ados, les familles; Issues de différents pays. Pour ceux qui sont nnés ici. Pour ceux qui viennent tout juste d’arriver en Allemagne. Pour ceux qui parle bien allemand. Et pour ceux qui ne parle pas très bien allemand.
+          answer: Pour que toutes les personnes qui cherchent de l’aide sur clarat puissent trouver rapidement de l’aide, on a créé le langage clarat. Le langage clarat est facile à comprendre. Car il se fonde sur un langage simple. Et finalement clarat est là pour tout le monde. Pour les enfants, les ados, les familles; Issues de différents pays. Pour ceux qui sont nés ici. Pour ceux qui viennent tout juste d’arriver en Allemagne. Pour ceux qui parle bien allemand. Et pour ceux qui ne parle pas très bien allemand.
           question: Clarat écrit toujours dans une langue simple, pourquoi?
         question_2:
           answer: Sur clarat,les mots compliqués sont expliqués en une phrase. Mais pour certains mots, l’explication est plus longue. Ces mots, tu les reconnais sur clarat car ils sont soulignés. Si tu survoles le mot avec la souris, l’explication apparaît.
@@ -300,7 +297,7 @@ fr:
             Et la plus part des gens utilisent le mot réfugiés. C’est pour ça qu’on le fait aussi. Même si le mot en exil est plus juste. Sur clarat, on essaie d’être le plus précis possible. Mais ce qui est encore le plus important a nos yeux: que tout le monde comprenne vite. comme ça tout le monde peut chercher de l’aide, même encore plus vite.
           question: Pourquoi clarat utilise le terme de <i>réfugiés</i>?
       section_4:
-        heading: Tu as des questions par rapport à Clarat dans différentes langues?
+        heading: Tu as des questions par rapport à clarat dans différentes langues?
         question_1:
           anchor: how_many_languages
           answer: Toutes les pages de clarat sont en allemand et en anglais.
@@ -312,7 +309,7 @@ fr:
           answer: Google Translator traduit automatiquement. C'est pourquoi il y a parfois des erreurs linguistiques. C'est possibles que certaines choses ne soient par tout à fait bien traduites.
           question: Le texte dans ma langue est bizarre, pourquoi?
       section_5:
-        heading: Tu as des questions entant que collaborateur d’une organisation?
+        heading: Tu as des questions en tant que collaborateur d’une organisation?
         question_1:
           answer: |-
             Les services de ton organisation aident les enfants, les ados ou les familles qui ont des problèmes. c’est pour ça qu’on les a repris dans <b>clarat family</b>. Car on veut que ceux qui ont besoin d’aide, en trouve facilement et simplement dans ton organisation.
@@ -326,7 +323,7 @@ fr:
           answer: Tu peut taper le nom de ton organisation dans le champ  <b>Quoi?</b>. Par exemple  <i>xyz</i>. zef et dans le champ <b>Ou?</b> le lieu où se trouve ton organisation. Par exemple <i>xyz10117Berlin</i>. Alors tu reçois les services qui s’affichent pour ce lieu. Au cas où ton organisation ait plusieurs site à Berlin, tape seulement Berlin dans le champ <b>où</b>.
           question: Comment trouver les services de mon organisation sur clarat?
         question_4:
-          answer: Pour que chaque personne puisse trouver de l’aide, on écris tous les services simplement. Les choses compliquées doivent être parfois plus simplement expliquées qu’elles ne sont en réalité. on peut ainsi traduire automatiquement les textes. Tu penses qu’on peut peut-être expliquer les choses autrement. Signale-le. Le mieux en nous envoyant un courriel à %{mailto_clarat}.
+          answer: Pour que chaque personne puisse trouver de l’aide, on écrit tous les services simplement. Les choses compliquées doivent être parfois plus simplement expliquées qu’elles ne sont en réalité. on peut ainsi traduire automatiquement les textes. Tu penses qu’on peut peut-être expliquer les choses autrement. Signale-le. Le mieux en nous envoyant un courriel à %{mailto_clarat}.
           link_1:
             name: post@clarat.org
             target: _blank
@@ -672,34 +669,34 @@ fr:
         "'150'": Langue des signes allemande
         "'326'": Ukrainien - українська
         "'568'": Néerlandais - Nederlands
-        "'639'": Dari
+        "'639'": Dari - دری
         '150': Langue des signes allemande
         '326': Ukrainien - українська
         '568': Néerlandais - Nederlands
-        '639': Dari
+        '639': Dari - دری
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
         aze: Azéri - Azərbaycan
-        ban: 
+        ban: Balinais - Basa Bali
         bel: Biélorusse - беларуская мова
         ben: Bengali - বাংলা
         bos: Bosnien - bosanski
         bul: Bulgare - български
-        cze: 
-        deu: Allemand
+        cze: Tchèque - čeština
+        deu: Allemand - Deutsch
         ell: Grec - ελληνικά
         eng: Anglais - English
         fas: Persan - فارسی
-        fin: 
+        fin: Finnois - suomi
         fra: Français
-        hbs: 
-        heb: 
+        hbs: Monténégrin - Crnogorski jezik / Црногорски језик
+        heb: Hébreu - עברית
         hin: Hindi - हिन्दी
         hrv: Croate - hrvatski
         hun: Hongrois - magyar
         ita: Italien - italiano
         kik: Kikuyu - Gĩkũyũ
-        kor: 
+        kor: Coréen - 한국말 / 조선말
         kur: Kurde - کوردی
         lav: Letton - latviešu
         lit: Lituanien - lietuvių
@@ -713,9 +710,9 @@ fr:
         rom: Romani - Romani
         ron: Roumain - română
         rus: Russe - русский
-        slo: 
+        slo: Slovaque - slovenský jazyk
         snk: Soninké - Soninkanxaane
-        som: 
+        som: Somali - Soomaali
         spa: Espagnol - español
         sqi: Albanais - Shqipja
         srp: Serbe - српски
@@ -725,7 +722,7 @@ fr:
         tel: Télougou - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tha: Thaï - ภาษาไทย
-        tir: 
+        tir: Tigrigna - ትግርኛ
         tuk: Turkmène - Türkmençe / Tүркменче
         tur: Turc - Türkçe
         urd: Ourdou - اردو
@@ -907,7 +904,7 @@ fr:
   opening:
     display_string:
       appointment: sur rendez-vous
-      midnight_exception: 24 heures
+      midnight_exception: 24h00
       time_format: "%Hh%M"
       time_frame: "%{open} - %{close}"
   organizations:
@@ -1397,9 +1394,7 @@ fr:
   success: Merci beaucoup. Nous allons bientôt avoir des propositions d'aide près de chez toi. Dès que cela est le cas, tu vas recevoir un courrier électronique de notre part.
   update_requests:
     create:
-      success: |
-        Vielen Dank, wir haben deine Nachricht erhalten. Sobald wir in deiner
-        Nähe aktiv werden melden wir uns bei dir.
+      success: Merci beaucoup, nous avons bien reçu ton message. Dès que nous serons actifs près de chez toi, nous nous manifesterons.
     new:
-      button: Nachricht erhalten
-      email_placeholder: E-Mail Adresse
+      button: Message reçu
+      email_placeholder: Adresse électronique

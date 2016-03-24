@@ -10,9 +10,10 @@
         h2.page-detail__title
           == translation_block @offer.translation_automated? do
             = @offer.name
-        /.page-detail__icons
-        /  - @offer.categories.mains.each do |main_tag|
-        /    .page-detail__icon title=main_tag.name class="page-detail__icon--#{main_tag.icon}"
+
+        .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
+          div[itemprop='name']
+            = @offer.send("_stamp_#{@current_section}", @locale)
 
     / Left side (in desktop)
     .section-wrapper-major

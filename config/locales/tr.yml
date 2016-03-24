@@ -930,7 +930,7 @@ tr:
         Ya da %{start_page} anasayfaya git. Burada daire içindeki resimler yardımıyla, uygun desteği arayabilirsin.
       heading: "Üzgünüz, bu sayfayı bulamadık."
       link_text: burada
-      title: "'404'"
+      title: 404
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner

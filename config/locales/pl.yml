@@ -1082,7 +1082,7 @@ pl:
         Lub przejdź na %{start_page} stronę startową. Tam możesz wyszukać odpowiednią pomoc klikając na obrazki.
       heading: Niestety nie mogliśmy odnaleźć tej strony.
       link_text: tu
-      title: "'404'"
+      title: 404
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner

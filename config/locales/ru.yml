@@ -1072,7 +1072,7 @@ ru:
       description: "Напиши в поле поиска, какую помощь ты ищешь. Или какая\nу тебя проблема. clarat покажет предложения помощи рядом с тобой.\nИли перейди %{start_page} на главную страницу. Там ты можешь по круглым \nкартинкам найти нужную помощь.\n"
       heading: "К сожалению, эта страница не найдена."
       link_text: "здесь"
-      title: "'404'"
+      title: 404
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner

@@ -1,4 +1,19 @@
 ru:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: 
@@ -107,6 +122,7 @@ ru:
             var: link_to_about_us
           question: "Кто организует clarat?"
       section_2:
+        anchor: questions_about_our_search
         heading: "У тебя есть вопросы по поиску?"
         question_1:
           anchor: who_finds_help
@@ -546,20 +562,26 @@ ru:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -572,7 +594,9 @@ ru:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -582,6 +606,7 @@ ru:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -593,11 +618,6 @@ ru:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: NOTRANSLATE
   js:
     ajax_error:
       error: "Ошибка в поиске"
@@ -646,7 +666,7 @@ ru:
       option_any: 
       pagination:
         back: 
-        gap: 
+        gap: "..."
         next: 
     search_results:
       bridge: "для"
@@ -685,20 +705,26 @@ ru:
         amh: "Амхарский язык - አማርኛ"
         ara: "Арабский язык - عربي"
         aze: "Азербайджанский язык - Azərbaycan"
+        ban: 
         bel: "Белорусский язык - беларуская мова"
         ben: "Бенгальский язык - বাংলা"
         bos: "Боснийский язык - bosanski"
         bul: "Болгарский язык - български"
+        cze: 
         deu: "Немецкий язык"
         ell: "Греческий язык - ελληνικά"
         eng: "Английский язык - English"
         fas: "Персидский язык - فارسی"
+        fin: 
         fra: "Французский язык - Français"
+        hbs: 
+        heb: 
         hin: "Хинди - हिन्दी"
         hrv: "Хорватский язык - hrvatski"
         hun: "Венгерский язык - magyar"
         ita: "Итальянский язык - italiano"
         kik: "Кикуйю язык - Gĩkũyũ"
+        kor: 
         kur: "Курдские языки - کوردی"
         lav: "Латышский язык - latviešu"
         lit: "Литовский язык - lietuvių"
@@ -712,24 +738,27 @@ ru:
         rom: "Цыганский язык - Romani"
         ron: "Румынский язык - română"
         rus: "Русский язык - русский"
+        slo: 
         snk: "Сонинке язык - Soninkanxaane"
+        som: 
         spa: "Испанский язык - español"
         sqi: "Албанский язык - Shqipja"
         srp: "Сербский язык - српски"
         swa: "Суахили - Kiswahili"
         swe: "Шведский язык - svenska"
         tam: "Тамильский язык - தமிழ்"
-        tel: 
-        tgk: 
-        tha: 
-        tuk: 
-        tur: 
-        urd: 
-        uzb: 
-        vie: 
-        wol: 
-        zho: 
-        zza: 
+        tel: "Телугу - తెలుగు"
+        tgk: "Таджикский язык - тоҷикӣ / تاجیکی"
+        tha: "Тайский язык - ภาษาไทย"
+        tir: 
+        tuk: "Туркменский язык - Türkmençe / Tүркменче"
+        tur: "Турецкий язык - Türkçe"
+        urd: "Урду - اردو"
+        uzb: "Узбекский язык - Oʻzbek tili"
+        vie: "Вьетнамский язык - tiếng Việt"
+        wol: "Волоф язык - wɔlɔf"
+        zho: "Китайский язык - 普通话 / 普通話"
+        zza: "Зазаки - Zazaki / Kırmancki"
     single_search_result:
       encounters:
         chat: "Чат"
@@ -1330,7 +1359,7 @@ ru:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 
+    '404': "'404'"
     contacts: "контакты"
     datenschutzhinweise: 
     definitions: 
@@ -1360,59 +1389,17 @@ ru:
         Эта страница автоматически переведена с помощью Google Translate.
         Поэтому могут встречаться языковые ошибки. Что-то может звучать странно.
         Тогда лучше посмотри еще раз в немецкой версии.
+    tooltips:
+      welcome:
+        advanced_search: 
+        world_switch:
+          family: 
+          refugees: 
   simple_form:
-    hints:
-      contact:
-        show:
-          email: NOTRANSLATE
-          message: NOTRANSLATE
-          name: NOTRANSLATE
-      search_form:
-        agb:
-          query: 
-          search_location: 
-        faq:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        home:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        impressum:
-          query: 
-          search_location: 
-        index:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-        not_found:
-          query: 
-          search_location: 
-        privacy:
-          query: 
-          search_location: 
-        show:
-          query: NOTRANSLATE
-          search_location: NOTRANSLATE
-      subscription:
-        agb:
-          email: 
-        faq:
-          email: NOTRANSLATE
-        home:
-          email: NOTRANSLATE
-        impressum:
-          email: 
-        index:
-          email: NOTRANSLATE
-        not_found:
-          email: 
-        privacy:
-          email: 
-        show:
-          email: NOTRANSLATE
     required:
-      html: NOTRANSLATE
-      mark: NOTRANSLATE
-      text: NOTRANSLATE
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
   subscriptions:
     create:
       error: |
@@ -1422,6 +1409,7 @@ ru:
       new:
         button: "Подписаться на новости"
         placeholder: E-Mail адрес
+  success: 
   update_requests:
     create:
       success: |

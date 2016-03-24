@@ -26,16 +26,14 @@ class PreviewsController < ApplicationController
     initialize_markers
     prepare_gmaps_variable model_instance
     @contact = Contact.new url: request.url, reporting: true
-    @current_section = preferred_section(model_instance)
+    preferred_section model_instance
     render "/#{model_type}s/show"
   end
 
   # set section directly if it is distinct
   def preferred_section model_instance
     if model_instance.section_filters.count == 1
-      model_instance.section_filters.first.identifier
-    else
-      'refugees'
+      @current_section = model_instance.section_filters.first.identifier
     end
   end
 end

@@ -292,7 +292,7 @@ ar:
     offers_index:
       family:
         heading: 
-        no_results: 
+        no_results: "في الوقت الحاضر لا توجد عروض منشورة في كلارات الأسرة من أجل \n<span id=\"secure-email-0\">%{email}</span>"
         toggle_section_html: 
       obfuscated_email: "عنوان البريد الإليكتروني الخاض بك"
       refugees:
@@ -527,20 +527,20 @@ ar:
         approach: "بأي طريقة؟"
         gender: "النوع"
         language: "اللغة"
-        target_audience: 
-      option_any: 
+        target_audience: "المساعدة لمن؟"
+      option_any: "سواء"
       pagination:
-        back: 
+        back: "للخلف"
         gap: "..."
-        next: 
+        next: "لاحقا"
     search_results:
       bridge: "من أجل"
       enclosing: "تم العثور على"
       faq_anchor: "هنا"
       faq_text: "تجد الأسئلة الشائعة حول البحث وكذلك الإجابات "
       language_explanation:
-        connector: 
-        text: 
+        connector: "و"
+        text: "هذا العرض يوجد في  %{language_list}."
       map:
         cooperation: "مشروع تعاون"
         enlarge_map: "تكبير الخريطة"
@@ -679,7 +679,7 @@ ar:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
-        title: 
+        title: "ترجمة فورية"
       navigation:
         category_headline: "أو البحث عن طريق التصنيف"
         claim:
@@ -1020,7 +1020,7 @@ ar:
         (مسئول عن محتويات صفحة الإنترنت)
       title: "هيئة التحرير"
     not_found:
-      description: 
+      description: "اكتب فقط في خانة-بحث ما هي المساعدة التي تبحث عنها أو ما هي مشكلتك.\nوسوف تعرض لك كلارات عروض المساعدة التي بالقرب منك. \nأو اذهب إلى %{start_page} على الصفحة الرئيسية.\nهناك يمكنك عن طريق الصور الدائرية أن تبحث عن المساعدة المناسبة. "
       heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
       link_text: here
       title: "'404'"
@@ -1339,8 +1339,8 @@ ar:
   routes:
     '404': "'404'"
     contacts: "إتصال"
-    datenschutzhinweise: 
-    definitions: 
+    datenschutzhinweise: "إؤشادات حماية البيانات "
+    definitions: "تعريف"
     emails: "رسائل بريد إليكتروني"
     faq: haeufige-fragen
     haeufige-fragen: haeufige-fragen
@@ -1355,7 +1355,7 @@ ar:
     subscriptions: "إشتراكات"
     ueber-uns: ueber-uns
     unsubscribe: "إلغاء الأشتراك"
-    update_requests: 
+    update_requests: "طلبات-تحديث"
     users: "مستخدم"
   shareds:
     forms:
@@ -1371,8 +1371,8 @@ ar:
       welcome:
         advanced_search: "هل تريد جعل البحث محددا أكثر؛ إذا انقر هنا. سيفتح نافذة بها إختيارات"
         world_switch:
-          family: 
-          refugees: 
+          family: "عندما تقوم بالنقر هنا؛ تصل إلى كلارات الأسرة. وفي كلارات الأسرة يمكنك البحث عن مساعدة للأطفال والشبان والأسر."
+          refugees: "عندما تقوم بالنقر هنا؛ تصل إلى كلارات اللاجئين. وفي كلارات-اللاجئين يمكنك البحث عن مساعدة للاجئين"
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1389,7 +1389,7 @@ ar:
       new:
         button: "الإشتراك في المجموعة الإخبارية"
         placeholder: " البريد الإليكتروني"
-  success: 
+  success: "شكرا جزيلا. في القريب سيكون لدينا عروضا بالقرب منك. عندما تتوفر لدينا هذه العروض سوف يصلك إيميل منا. "
   update_requests:
     create:
       success: |

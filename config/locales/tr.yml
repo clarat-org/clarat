@@ -731,7 +731,7 @@ tr:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
-        title: 
+        title: 'Bitte folgendes übersetzen: ''Automatische Übersetzungen!'''
       navigation:
         category_headline: Kategoriler arasında ara
         claim:

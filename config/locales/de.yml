@@ -1187,10 +1187,10 @@ de:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
-          ru: "НА РУССКОМ"
+          pl: Polski
+          ru: "Русский"
           tr: Türkçe
-        title: Wähle deine Sprache
+        title: Automatische Übersetzungen!
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1552,7 +1552,7 @@ de:
         Bilder nach passender Hilfe suchen.
       heading: Leider konnten wir diese Seite nicht finden.
       link_text: hier
-      title: 404
+      title: "'404'"
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner
@@ -1866,7 +1866,7 @@ de:
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
-    '404': 404
+    '404': "'404'"
     contacts: kontakt
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions

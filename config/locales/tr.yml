@@ -547,12 +547,31 @@ tr:
     mobile_filter: Sonuçları filtrele
     more_filter_options: Daha fazla filtre göster
     query_field:
-      example_placeholder: "örneğin %{word}, …"
+      example_placeholder: "örneğin %{word}"
       placeholder_words:
-        family: |-
-          [''Uyuşturucu'', ''Şiddet'', ''Özel ders'', ''Acil durum'', ''hak'', ''işsiz'', ''eğitim sorunları'', ''yeme bozukluğu'', ''evsiz''
-          ''aile sorunları'', ''hamile'', ''kavga'', ''ikamet ederim'']
-        refugees: "[''Uyruk'', ''Almanca kursu'', ''kabul'', ''savaş travması'', ''iltica işlemleri'', ''sağlık'', ''resmi daireler'', ''ikametgah'']"
+        family:
+        - Uyuşturucu
+        - "Şiddet"
+        - "Özel ders"
+        - Acil durum
+        - hak
+        - işsiz
+        - eğitim sorunları
+        - yeme bozukluğu
+        - evsiz
+        - aile sorunları
+        - hamile
+        - kavga
+        - ikamet ederim
+        refugees:
+        - Uyruk
+        - Almanca kursu
+        - kabul
+        - savaş travması
+        - iltica işlemleri
+        - sağlık
+        - resmi daireler
+        - ikametgah
     routes:
       faq: Sıkça sorulan sorular
     search:
@@ -596,34 +615,34 @@ tr:
         "'150'": Almanca işaret dili
         "'326'": Ukraynaca - українська
         "'568'": Felemenkçe - Nederlands
-        "'639'": 
+        "'639'": Farsça - دری
         '150': Almanca işaret dili
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
-        '639': 
+        '639': Farsça - دری
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         aze: Azerice - Azərbaycan
-        ban: 
+        ban: Bali dili - Basa Bali
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
-        cze: 
-        deu: Almanca
+        cze: "Çekçe - čeština"
+        deu: Almanca - Deutsch
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
         fas: Farsça - فارسی
-        fin: 
+        fin: Fince - suomi
         fra: Fransızca - Français
-        hbs: 
-        heb: 
+        hbs: Karadağca - Crnogorski jezik / Црногорски језик
+        heb: "İbranice - עברית"
         hin: Hintçe - हिन्दी
         hrv: Hırvatça - hrvatski
         hun: Macarca - magyar
         ita: "İtalyanca - italiano"
         kik: Kikuyu - Gĩkũyũ
-        kor: 
+        kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
         lit: Litvanca - lietuvių
@@ -637,9 +656,9 @@ tr:
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
-        slo: 
+        slo: Slovakça - slovenský jazyk
         snk: Soninke - Soninkanxaane
-        som: 
+        som: Somalice - Soomaali
         spa: "İspanyolca - español"
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
@@ -649,7 +668,7 @@ tr:
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tha: Tayca - ภาษาไทย
-        tir: 
+        tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
         urd: Urduca - اردو
@@ -709,10 +728,10 @@ tr:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
-          ru: "НА РУССКОМ"
+          pl: Polski
+          ru: "Русский"
           tr: Türkçe
-        title: Dilini seç
+        title: 
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -911,7 +930,7 @@ tr:
         Ya da %{start_page} anasayfaya git. Burada daire içindeki resimler yardımıyla, uygun desteği arayabilirsin.
       heading: "Üzgünüz, bu sayfayı bulamadık."
       link_text: burada
-      title: 404
+      title: "'404'"
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner

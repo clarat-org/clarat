@@ -4,16 +4,17 @@
               offer_url(section: @offer.canonical_section, id: @offer.slug)
 .wrapper-inner class="#{'no-location' unless @location}"
   main.content-main.content-main--wide
-    - cache [@offer, 'page_header'] do
 
-      header.page-detail__header
-        h2.page-detail__title
-          == translation_block @offer.translation_automated? do
-            = @offer.name
+    header.page-detail__header
+      h2.page-detail__title
+        == translation_block @offer.translation_automated? do
+          = @offer.name
 
-        .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
-          div[itemprop='name']
-            = @offer.send("_stamp_#{@current_section}", @locale)
+    - cache [@offer, @current_section, @locale] do
+      .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
+        div[itemprop='name']
+          - stamp_method = @current_section == 'family' ? "_stamp_family" : "_stamp_refugees"
+          = @offer.send(stamp_method, @locale)
 
     / Left side (in desktop)
     .section-wrapper-major

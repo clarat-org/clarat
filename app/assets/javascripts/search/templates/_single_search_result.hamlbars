@@ -3,7 +3,7 @@
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
     = hb 'if language_explanation' do
-      %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', 'title' => '{{language_explanation}}', 'class' => ''}
+      %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', title: '{{language_explanation}}', class: ''}
 
   -#= hb '@root.globe_img'
 
@@ -20,8 +20,8 @@
       %section.Listing-results__meta.Listing-results__meta--with-address
         %h4.Listing-results__orga-display
           = hb 'organization_display_name'
-        %div.Listing-results__address{'itemscope'=> '', 'itemtype' => 'http://schema.org/ContactPoint'}
-          %div{'itemscope'=> '', 'itemtype' => 'http://schema.org/PostalAddress'}
+        %div.Listing-results__address{itemscope: '', itemtype: 'http://schema.org/ContactPoint'}
+          %div{itemscope: '', itemtype: 'http://schema.org/PostalAddress'}
             = hb 'location_address'
       = hb 'else'
       %section.Listing-results__meta

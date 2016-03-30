@@ -165,7 +165,6 @@
 
 .Listing-results__meta,
 .Listing-results__stamp {
-  width: 50%;
   box-sizing: border-box;
   display: inline-block;
   float: left;
@@ -182,12 +181,14 @@
   margin-bottom: 4px;
 }
 
+.Listing-results__meta {
+  width: 62%;
+}
+
 .Listing-results__stamp {
+  width: 38%;
   background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
   padding: 4px 4px 0 30px;
   background-size: auto 20px;
   line-height: 1.8;
 }
-
-
-

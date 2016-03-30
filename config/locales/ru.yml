@@ -1,7 +1,22 @@
 ru:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
-      heading: 
+      heading: "Часто задаваемые вопросы"
       section_1:
         heading: "Кто, как, что?"
         question_1:
@@ -62,7 +77,7 @@ ru:
           answer: "Напиши свою проблему и где ты ищешь помощь. И ты сразу же найдёшь подходящие возможности в твоей округе. Или телефонную помощь или помощь в интернете. %{ref_to_how_to_find_right_help}  мы тебе точно объясним как ты сможешь найти то, что ты ищешь. Если ты щёлкнешь мышью на одно из предложений, мы скажем тебя, что ты должен сделать дальше. Например можешь ли ты позвонить или прости прийти."
           link_1:
             class: FAQ_anchor_link
-            name: 
+            name: "здесь"
             url: "/haeufige-fragen/#how_to_find_right_help"
             var: "Здесь"
           question: "Как работает clarat?"
@@ -82,7 +97,7 @@ ru:
           answer: clarat помогает тебе найти помощь в твоей округе. Здесь ты найдёшь обзор всей возможной помощи по близости с одного взгляда. Кроме того, мы говорим тебе что точно ты должен/должна сделать чтобы получить помощь. Мы всегда пишем на упрощённом языке. Этот упрощенный стиль понятен всем. В clarat должны найти помощь даже те люди, которые не очень хорошо говорят по-немецки. Всю информацию ты можешь также прочитать на многих других языках. Если ты хочешь больше узнать об этом, нажми %{ref_to_how_many_languages}.
           link_1:
             class: FAQ_anchor_link
-            name: 
+            name: "здесь"
             url: "/haeufige-fragen/#how_many_languages"
             var: ref_to_how_many_languages
           question: "Что особенного в clarat?"
@@ -107,6 +122,7 @@ ru:
             var: link_to_about_us
           question: "Кто организует clarat?"
       section_2:
+        anchor: questions_about_our_search
         heading: "У тебя есть вопросы по поиску?"
         question_1:
           anchor: who_finds_help
@@ -290,7 +306,7 @@ ru:
           answer: "В clarat мы хотим, чтобы все как можно быстрее понимали,  чем идет речь. И большинство людей используют слово “беженец”. Поэтому мы это делаем тоже. Даже когда слова “спасшиеся бегством” точнее. В clarat мы так же пытаемся быть как можно более точными. Но еще более нам важно, что бы нас быстро и легко  понимали. Тогда все, кому нужна помощь, легко ее найдут."
           question: "Почему clarat использует термин “<i>беженец</i>”?"
       section_4:
-        heading: 
+        heading: "У тебя есть вопросы к clarat на других языках?"
         question_1:
           anchor: how_many_languages
           answer: "Все страницы clarat ты можешь прочитать на немецком, английском, французском, польском, русском и турецком языке."
@@ -412,20 +428,26 @@ ru:
   emails:
     offers_index:
       family:
-        heading: 
-        no_results: 
-        toggle_section_html: 
-      obfuscated_email: 
+        heading: Твои clarat family предложения для <span id="secure-email-0">%{email}</span>
+        no_results: На данный момент нет предложений clarat family для <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: "Твое предложение  <strong>clarat refugees</strong>"
+          other: "Твои предложения  <strong>%{count} clarat refugees</strong>"
+      obfuscated_email: "твой адрес электронной почты"
       refugees:
-        heading: 
-        no_results: 
-        toggle_section_html: 
+        heading: Твое предложение  clarat refugees для <span id="secure-email-0">%{email}</span>
+        no_results: На данный момент нет предложений clarat refugees для <span id="secure-email-0">%{email}</span>
+        toggle_section_html:
+          one: "Твое предложение  <strong>clarat family</strong>"
+          other: "Твои предложения  <strong>%{count} clarat family</strong>"
       shared:
-        explanation_1: 
-        explanation_2: 
-        explanation_3: 
-        explanation_4: 
-        info: 
+        explanation_1: "Здесь ты видишь все предложения в clarat. Это предложения, в которых \nмы в контактах нашли твой адрес электронной почты."
+        explanation_2: |-
+          Если мы в будущем найдем предложения от тебя, ты увидишь ссылки
+          на них здесь.
+        explanation_3: "Ты можешь сохранить эту страницу в закладках. Так у тебя будет \nвозможность увидеть все свои предложения в clarat."
+        explanation_4: "Ты хочешь, что бы тебе сообщили по электронной почте, если от тебя \nпоявятся новые предложения в clarat? Тогда воспользуйся ссылкой в конце \nэлектронного письма, которое ты от нас получил.\n"
+        info: "Информация"
     subscribe:
       success_html: "Ты успешно подписался на рассылку сообщений по предложениям \nна твой Email адрес.\n(<a href=\"%{unsubscribe_href}\">отменить подписку</a>)\n"
     unsubscribe:
@@ -546,20 +568,26 @@ ru:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
@@ -572,7 +600,9 @@ ru:
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -582,6 +612,7 @@ ru:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -611,8 +642,8 @@ ru:
       get: "Использовать мое местонахождения!"
       waiting: "Искать местонахождения... Возможно тебе нужно сначала это разрешить."
     lang_list_toggle:
-      less: 
-      more: 
+      less: "Показать меньше языков"
+      more: "Показать больше языков"
     less_filter_options: "Показать меньше фильтров"
     location_required: |
       Пожалуйста, введи место, где ты хочешь найтипредложение о помощи.
@@ -623,36 +654,57 @@ ru:
     mobile_filter: "Результаты фильтровать"
     more_filter_options: "Показать больше фильтров"
     query_field:
-      example_placeholder: "Например %{word}, …"
+      example_placeholder: "Например %{word}"
       placeholder_words:
-        family: 
-        refugees: 
+        family:
+        - "наркотики"
+        - "насилие"
+        - "помощь"
+        - "экстренный случай"
+        - "право"
+        - "безработный"
+        - "проблемы воспитания"
+        - "нарушения приема пищи"
+        - "бездомный"
+        - "семейные проблемы"
+        - "беременная"
+        - "ссора"
+        - "жить"
+        refugees:
+        - "гражданство"
+        - "курс немецкого"
+        - "подтверждение"
+        - "военная травма"
+        - "заявление на временное убежище"
+        - "медицинское обслуживание"
+        - "ведомства"
+        - "право жительства"
     routes:
-      faq: 
+      faq: "Частые вопросы"
     search:
       form_less_label: "Скрыть фильтры поиска"
       form_more_label: "Показать поиск"
       headlines:
-        age: 
-        approach: 
-        gender: 
-        language: 
-        target_audience: 
-      option_any: 
+        age: "Возраст ребенка"
+        approach: "Каким образом?"
+        gender: "Пол"
+        language: "Язык"
+        target_audience: "Помощь для кого?"
+      option_any: "все равно"
       pagination:
-        back: 
+        back: "Назад"
         gap: "..."
-        next: 
+        next: "Дальше"
     search_results:
       bridge: "для"
       enclosing: "найдено"
       faq_anchor: "здесь"
       faq_text: "Частые вопросы по поиску ты найдешь"
       language_explanation:
-        connector: 
-        text: 
+        connector: "и"
+        text: "Это предложение есть также на %{language_list}."
       map:
-        cooperation: 
+        cooperation: "Совместный проект"
         enlarge_map: "Увеличить карту"
         headline_small_map: "Предложения на месте показать на карте"
       more: "Дугие предложения по телефону и он-лайн"
@@ -672,28 +724,34 @@ ru:
         "'150'": "Немецкий язык жестов"
         "'326'": "Украинский язык - українська"
         "'568'": "Нидерландский язык - Nederlands"
-        "'639'": 
+        "'639'": "Персидский язык - دری"
         '150': "Немецкий язык жестов"
         '326': "Украинский язык - українська"
         '568': "Нидерландский язык - Nederlands"
-        '639': 
+        '639': "Персидский язык - دری"
         amh: "Амхарский язык - አማርኛ"
         ara: "Арабский язык - عربي"
         aze: "Азербайджанский язык - Azərbaycan"
+        ban: "Балийский язык - Basa Bali"
         bel: "Белорусский язык - беларуская мова"
         ben: "Бенгальский язык - বাংলা"
         bos: "Боснийский язык - bosanski"
         bul: "Болгарский язык - български"
-        deu: "Немецкий язык"
+        cze: "Чешский язык - čeština"
+        deu: "Немецкий язык - Deutsch"
         ell: "Греческий язык - ελληνικά"
         eng: "Английский язык - English"
         fas: "Персидский язык - فارسی"
+        fin: "Финский язык - suomi"
         fra: "Французский язык - Français"
+        hbs: "Черногорский язык - Crnogorski jezik / Црногорски језик"
+        heb: "Иврит - עברית"
         hin: "Хинди - हिन्दी"
         hrv: "Хорватский язык - hrvatski"
         hun: "Венгерский язык - magyar"
         ita: "Итальянский язык - italiano"
         kik: "Кикуйю язык - Gĩkũyũ"
+        kor: "Корейский язык - 한국말 / 조선말"
         kur: "Курдские языки - کوردی"
         lav: "Латышский язык - latviešu"
         lit: "Литовский язык - lietuvių"
@@ -707,7 +765,9 @@ ru:
         rom: "Цыганский язык - Romani"
         ron: "Румынский язык - română"
         rus: "Русский язык - русский"
+        slo: "Словацкий язык - slovenský jazyk"
         snk: "Сонинке язык - Soninkanxaane"
+        som: "Сомалийский язык - Soomaali"
         spa: "Испанский язык - español"
         sqi: "Албанский язык - Shqipja"
         srp: "Сербский язык - српски"
@@ -717,6 +777,7 @@ ru:
         tel: "Телугу - తెలుగు"
         tgk: "Таджикский язык - тоҷикӣ / تاجیکی"
         tha: "Тайский язык - ภาษาไทย"
+        tir: "Тигринья - ትግርኛ"
         tuk: "Туркменский язык - Türkmençe / Tүркменче"
         tur: "Турецкий язык - Türkçe"
         urd: "Урду - اردو"
@@ -774,10 +835,10 @@ ru:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
+          pl: Polski
           ru: "Русский"
           tr: Türkçe
-        title: "Выбери свой язык"
+        title: "Автоматический перевод!"
       navigation:
         category_headline: "Или поиск по категориям"
         claim:
@@ -812,11 +873,11 @@ ru:
           target_audience:
             acquaintances: "для знакомых и родственников"
             children: "для детей и молодежи"
-            family_acquaintances: 
-            family_children: 
-            family_nuclear_family: 
-            family_parents: 
-            family_pregnant_woman: 
+            family_acquaintances: "для знакомых и родственников"
+            family_children: "для детей и молодежи"
+            family_nuclear_family: "для семей"
+            family_parents: "для родителей"
+            family_pregnant_woman: "для беременных"
             nuclear_family: "для семей"
             parents: "для родителей"
             pregnant_woman: "для беременных"
@@ -847,8 +908,8 @@ ru:
     show:
       last_update: "В последний раз обновлено"
       next_steps:
-        code_word: 
-        heading: 
+        code_word: "Что ты должен спросить или найти на веб-странице?"
+        heading: "Что ты должен сделать?"
       opening_section:
         days:
           fri: "Пятница"
@@ -859,19 +920,19 @@ ru:
           tue: "Вторник"
           wed: "Среда"
         heading: "Когда ты можешь это сделать?"
-      speaking: 
+      speaking: "На каком языке тебе можно помочь?"
       website_section:
         internet_presence: "Где ты можешь найти больше в сети?"
         websites:
-          application_form: 
-          chat: 
-          contact_form: 
+          application_form: "Заявка"
+          chat: "Чат"
+          contact_form: "Контактные данные"
           document: "Другая информация"
           facebook: Facebook
-          forum: 
+          forum: "Форум"
           gplus: Google+
-          online_consulting: 
-          online_course: 
+          online_consulting: "Он-лайн консультация"
+          online_course: "Он-лайн курс"
           own: "Интернет страница"
           pinterest: Pinterest
           twitter: Twitter
@@ -992,8 +1053,8 @@ ru:
         heading: Kак работает clarat?
         text: "Напиши, в чем именно у тебя проблемы. Или что тебя волнует. Либо выбери из предложенных тем. Ты сразу же найдешь рядом с тобой по близости все возможные варианты помощи и поддержки. Мы так же расскажем тебе, как ты можешь получить эту помощь. Позвони, напиши email или просто приходи."
       title:
-        family: 
-        refugees: 
+        family: "Предложения помощи для детей, молодежи и семей"
+        refugees: "Предложения помощи для беженцев"
       whom:
         heading: "Для кого clarat?"
         text: clarat открыт для всех. clarat family - для детей, молодежи и семей. clarat refugees - для беженцев. Здесь ты найдешь поддержку и помощь во всех вопросах и проблемах. Ты, твоя семья, твои друзья или любой другой человек, которого ты знаешь, могут обратиться к нам за помощью.
@@ -1010,7 +1071,7 @@ ru:
     not_found:
       description: "Напиши в поле поиска, какую помощь ты ищешь. Или какая\nу тебя проблема. clarat покажет предложения помощи рядом с тобой.\nИли перейди %{start_page} на главную страницу. Там ты можешь по круглым \nкартинкам найти нужную помощь.\n"
       heading: "К сожалению, эта страница не найдена."
-      link_text: 
+      link_text: "здесь"
       title: 404
     privacy:
       chapter_eight:
@@ -1327,23 +1388,23 @@ ru:
   routes:
     '404': "'404'"
     contacts: "контакты"
-    datenschutzhinweise: 
-    definitions: 
-    emails: 
+    datenschutzhinweise: "заявление о конфиденциальности"
+    definitions: "формулировки"
+    emails: "электронные письма"
     faq: haeufige-fragen
     haeufige-fragen: haeufige-fragen
     impressum: impressum
-    new: 
+    new: "новый"
     offers: "предложения"
     organizations: "орагнизации"
-    preview: 
-    rechtliche-hinweise: 
-    search_locations: 
-    subscribe: 
-    subscriptions: 
+    preview: "предварительный просмотр"
+    rechtliche-hinweise: "юридические указания"
+    search_locations: "поиск местонахождения"
+    subscribe: "подписаться"
+    subscriptions: "подписки"
     ueber-uns: ueber-uns
-    unsubscribe: 
-    update_requests: 
+    unsubscribe: "отменить подписку"
+    update_requests: "обновить запросы"
     users: "пользователь"
   shareds:
     forms:
@@ -1355,6 +1416,12 @@ ru:
         Эта страница автоматически переведена с помощью Google Translate.
         Поэтому могут встречаться языковые ошибки. Что-то может звучать странно.
         Тогда лучше посмотри еще раз в немецкой версии.
+    tooltips:
+      welcome:
+        advanced_search: "Ты хочешь уточнить свой поиск? Тогда жми сюда. Откроется блок с возможностью выбора."
+        world_switch:
+          family: "Если ты нажмешь сюда, то перейдешь к clarat Family. В clarat Family ты найдешь помощь для детей, молодежи и семей."
+          refugees: "Если ты нажмешь сюда, то перейдешь к clarat Refugees. В clarat Refugees ты найдешь помощь для беженцев."
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1369,6 +1436,7 @@ ru:
       new:
         button: "Подписаться на новости"
         placeholder: E-Mail адрес
+  success: "Большое спасибо. Вскоре у нас появятся предложения рядом с тобой. Мы свяжемся с тобой по электронной почте"
   update_requests:
     create:
       success: |
@@ -1377,19 +1445,3 @@ ru:
     new:
       button: "Получить сообщение"
       email_placeholder: E-Mail адрес
-  activerecord:
-    attributes:
-      update_request:
-        email: NOTRANSLATE
-        search_location: NOTRANSLATE
-      subscription:
-        email: NOTRANSLATE
-      contact:
-        message: NOTRANSLATE
-        name: NOTRANSLATE
-        email: NOTRANSLATE
-    models:
-      update_request: NOTRANSLATE
-      subscription: NOTRANSLATE
-      contact: NOTRANSLATE
-  success: 

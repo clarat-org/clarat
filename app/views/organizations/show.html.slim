@@ -24,15 +24,26 @@
           h3.section-content__title
             = t '.offers_all'
             == automation_warning(@organization.translation_automated?)
-          .section-content__body
-            ul.Listing-offers__list
-              - @organization.offers.approved.order('name ASC').each do |offer|
-                li.Listing-offers__listitem
-                  = link_to offer.name, offer_path(id: offer),
-                    autotranslation_attr(@organization.translation_automated?)
-                - if offer.location && offer.location.visible
-                  .Listing-offers__address
-                    = offer.location_address
+          .section-content__body.section-content__body--offers-of-orga
+            - SectionFilter.all.each do |section|
+
+              h4.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"
+
+              ul.Listing-offers__list class="Listing--#{section.identifier}"
+                - @organization.offers.approved.in_section(section.identifier).order('name ASC').each do |offer|
+                  li.Listing-offers__listitem
+                    .Listing-results__stamp
+                      button.Listing-results__expander aria-toggle='false' Expand/Collapse
+                      = offer.send("_stamp_#{section.identifier}", @current_locale)
+                    .Listing-results__meta.Listing-results__meta--inorga[
+                      class=('Listing-results__meta--with-address' if offer.location && offer.location.visible?)
+                    ]
+                      h5.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
+                              autotranslation_attr(@organization.translation_automated?)
+                      - if offer.location && offer.location.visible
+                      .Listing-offers__address
+                        = offer.location_address
+
 
     .section-wrapper-minor
 

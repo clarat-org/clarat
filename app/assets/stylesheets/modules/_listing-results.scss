@@ -60,6 +60,12 @@
 
 }
 
+.Listing-results__headline--world {
+  @extend %roboto_bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
 .Listing-results__emphasis {
   @extend %roboto_bold;
   display: inherit;
@@ -138,7 +144,8 @@
 
 .Listing-results__orga-display {
   @extend %roboto_bold;
-  margin-bottom: 0;
+  margin: 0;
+  font-size: inherit;
   line-height: 1.65;
 }
 
@@ -186,9 +193,11 @@
 }
 
 .Listing-results__stamp {
+  position: relative;
   width: 38%;
   background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
   padding: 4px 4px 0 30px;
   background-size: auto 20px;
   line-height: 1.8;
 }
+

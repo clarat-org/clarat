@@ -644,6 +644,7 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        mul: 
       section:
         family: Family
         refugees: Refugees
@@ -868,6 +869,7 @@ pl:
             one: 1 rok
             other: "%{count} lat"
             zero: "< 1 rok"
+            many: "%{count} lat"
           contact_type:
             personal: na miejscu
             remote: telefonicznie lub online
@@ -971,6 +973,10 @@ pl:
       offers_all: Jaką pomoc oferuje ta organizacja?
       where: Gdzie znajdziesz tę organizację?
       who: Co robi ta organizacja?
+      headline--family: 
+      headline-offers--family: 
+      headline-offers--refugees: 
+      headline--refugees: 
   pages:
     about:
       amina: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Szybko orientuje się, co jest ważne. W clarat jest w zespole badawczym. Ona decyduje, co znajdzie się w ofertach claratu. Jej ulubionym utworem jest “La Prima Estate” Erlenda Oye.
@@ -1448,3 +1454,11 @@ pl:
     new:
       button: Wiadomość otrzymana
       email_placeholder: adres e-mail
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        family_children:
+          default: 
+        prefix: 
+        refugees_general: 

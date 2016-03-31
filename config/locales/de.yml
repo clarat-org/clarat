@@ -970,6 +970,7 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        mul: Mul
       section:
         family: Family
         refugees: Refugees
@@ -1313,6 +1314,10 @@ de:
       offers_all: Welche Hilfe bietet diese Organisation?
       where: Wo findest du die Organisation?
       who: Was macht die Organisation?
+      headline--family: 
+      headline-offers--family: 
+      headline-offers--refugees: 
+      headline--refugees: 
   pages:
     about:
       amina: |
@@ -1928,3 +1933,11 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        family_children:
+          default: 
+        prefix: 
+        refugees_general: 

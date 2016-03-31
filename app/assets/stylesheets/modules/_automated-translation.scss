@@ -12,6 +12,11 @@
   left: auto;
   width: 62px;
   background: rgba(255, 255, 255, .33);
+
+  body.ar & {
+    left: 0;
+    right: auto;
+  }
 }
 
 .Automated-translation {
@@ -20,7 +25,14 @@
   h2 & {
     display: inline-block;
     padding-right: 40px;
+
+    body.ar & {
+      padding-left: 40px;
+      padding-right: 0;
+    }
   }
+
+
 }
 
 .Automated-translation__text {
@@ -45,5 +57,10 @@
     top: 7px;
     width: 54px;
     left: 4px;
+
+    body.ar & {
+      left: auto;
+      right: 4px;
+    }
   }
 }

@@ -42,6 +42,11 @@
     width: 100%;
     float: none;
     padding-left: calc(31% + 2px);
+
+    body.ar & {
+      padding-right: calc(31% + 2px);
+      padding-left: 0;
+    }
   }
 }
 
@@ -79,7 +84,6 @@
 
 .template--emails-offers_index {
 
-
   .section-wrapper-minor {
     float: left;
   }
@@ -87,6 +91,32 @@
   .section-wrapper-major {
     float: right;
     margin: 0 0 0 2.5%;
+  }
+}
+
+.footer-main__subscribe {
+  body.ar & {
+    float: right;
+  }
+}
+
+.footer-main__about {
+  body.ar & {
+    float: left;
+  }
+}
+
+.section-wrapper-minor {
+  body.ar & {
+    float: left;
+  }
+}
+
+.section-wrapper-major {
+  body.ar & {
+    float: right;
+    margin-right: 0;
+    margin-left: 2.5%;
   }
 }
 

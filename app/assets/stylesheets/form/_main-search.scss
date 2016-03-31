@@ -10,11 +10,19 @@
   width: 700px;
   list-style: none;
 
+  body.ar & {
+    padding: 22px 25px 0 0;
+  }
+
   .input {
     &.string {
       position: relative;
       display: inline-block;
       float: left;
+
+      body.ar & {
+        float: right;
+      }
     }
   }
 
@@ -25,6 +33,11 @@
     left: 14px;
     z-index: 30;
     font-size: 20px;
+
+    body.ar & {
+      right: 14px;
+      left: auto;
+    }
 
     body.refugees & {
       color: $brand_core_refugees;
@@ -63,6 +76,14 @@
 
 }
 
+.template--pages-home {
+  &.ar {
+    #new_search_form {
+      padding-right: 0;
+    }
+  }
+}
+
 #search_form_query,
 #search_form_search_location {
   margin-right: 10px;
@@ -71,10 +92,16 @@
   background: $brand_white;
   font-size: 20px;
   line-height: 47px;
+  box-sizing: border-box;
 
   // explicit definition and using important to override twitter-typeahead
   &:focus {
     background: $brand_beige !important;
+  }
+
+  body.ar & {
+    margin-left: 10px;
+    margin-right: 0;
   }
 }
 
@@ -83,9 +110,14 @@
 .main-search__submit {
   float: left;
   height: 47px;
+
+  //body.ar & {
+  //  float: right;
+  //}
 }
 
 #search_form_query {
+  width: 288px;
   padding-left: 62px;
 
   body.en & {
@@ -95,9 +127,15 @@
   body.pl & {
     padding-left: 45px;
   }
+
+  body.ar & {
+    padding-right: 48px;
+    padding-left: 14px;
+  }
 }
 
 #search_form_search_location {
+  width: 278px;
   padding-left: 52px;
   border-radius: 0;
 
@@ -111,6 +149,11 @@
 
   body.pl & {
     padding-left: 72px;
+  }
+
+  body.ar & {
+    padding-right: 47px;
+    padding-left: 14px;
   }
 }
 
@@ -128,10 +171,22 @@
   -webkit-border-bottom-left-radius: 0;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-top-right-radius: 0;
+
+  body.ar & {
+    border-top-left-radius: 0; // reset
+    @extend %clarat_rounding_end;
+    margin-left: 10px;
+    margin-right: 0;
+  }
 }
 
 .main-search__submit {
   @extend %clarat_rounding_end;
+
+  body.ar & {
+    border-bottom-right-radius: 0; // reset
+    @extend %clarat_rounding_start;
+  }
 }
 
 .main-search__advanced-filter {

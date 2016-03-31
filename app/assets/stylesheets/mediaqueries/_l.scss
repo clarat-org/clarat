@@ -67,6 +67,11 @@
 
   .search-form--input-wrapper {
     right: 60px;
+
+    body.ar & {
+      left: 60px;
+      right: 15px;
+    }
   }
 
   #new_search_form .input.string {
@@ -172,6 +177,14 @@
     float: none;
     margin-right: 0;
     width: auto;
+
+    // Repeat to override specificity
+    body.ar & {
+      display: block;
+      float: none;
+      margin-left: 0;
+      width: auto;
+    }
   }
 
   .aside-standard {
@@ -278,5 +291,16 @@
   .newsletter-subscribe__submit {
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
+
+    body.ar & {
+      border-top-left-radius: 0;
+    }
+  }
+
+  input.newsletter-subscribe__input {
+    body.ar & {
+      border-top-left-radius: 6px;
+      margin-right: 0;
+    }
   }
 }

@@ -13,6 +13,10 @@
 .nav-welt__list {
   margin: 0;
   padding: 0;
+
+  body.ar & {
+    float: right;
+  }
 }
 
 .nav-welt__listitem {
@@ -65,6 +69,13 @@
       border-style: solid;
       border-width: 10px 0 10px 10px;
       border-color: transparent transparent transparent $brand_white;
+
+      body.ar & {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent $brand_white transparent transparent;
+        margin-right: 0;
+        margin-left: 8px;
+      }
     }
   }
 }

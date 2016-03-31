@@ -10,11 +10,12 @@
   div {
     display: inline-block;
   }
+
 }
 
 .newsletter-subscribe__input,
 .newsletter-subscribe__submit {
-  height: 32px;
+  min-height: 32px;
 }
 
 input.newsletter-subscribe__input {
@@ -23,8 +24,16 @@ input.newsletter-subscribe__input {
   width: 230px;
   margin-right: 4px;
   padding: 0 10px;
+
+  body.ar & {
+    border-radius: 0;
+  }
 }
 
 .newsletter-subscribe__submit {
   padding: 0 15px;
+
+  body.ar & {
+    @extend %clarat_rounding_start;
+  }
 }

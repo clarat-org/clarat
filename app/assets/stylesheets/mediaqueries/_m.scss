@@ -375,6 +375,7 @@
 
   .nav-welt__listitem {
     min-width: 154px;
+    display: inline-block;
 
     &:first-child {
 
@@ -400,8 +401,7 @@
       }
 
       &:before {
-        border-width: 8px 0 8px 8px;
-        margin-bottom: -3px;
+        display: none;
       }
     }
   }
@@ -694,4 +694,46 @@
   .shariff-button.whatsapp {
     display: block !important;
   }
+
+  .template--offers-index {
+    #qtip-1 {
+      margin-top: 0;
+    }
+  }
+
+  .overlay-active .main-search__advanced-filter {
+    background: #f4b528;
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    top: 0;
+    transform: initial;
+  }
+
+  body.refugees.overlay-active .main-search__advanced-filter {
+    background: $brand_core_refugees;
+  }
+
+  body.family.overlay-active .main-search__advanced-filter {
+    background: $brand_core_family;
+  }
+
+  #qtip-ttWeltFamily,
+  #qtip-ttWeltRefugees {
+    left: 10px !important; // override JS
+
+    .template--offers-index & {
+      top: 10px !important;
+    }
+  }
+
+  #qtip-ttAdvancedSearch {
+    margin-top: 50px;
+  }
+
+  .qtip-tip {
+    display: none !important; // override JS
+  }
+
 }

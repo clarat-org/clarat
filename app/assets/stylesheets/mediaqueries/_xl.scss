@@ -129,4 +129,10 @@
   .section-start__body {
     min-height: 370px;
   }
+
+  // Misc ########################################
+
+  #qtip-ttWeltFamily {
+    left: 0 !important; // override JS
+  }
 }

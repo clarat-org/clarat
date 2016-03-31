@@ -13,6 +13,8 @@
 .nav-welt__list {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  max-height: 45px;
 }
 
 .nav-welt__listitem {
@@ -20,10 +22,6 @@
   margin: 0;
   padding: 0;
   float: left;
-
-  &:first-child a {
-    @extend %clarat_rounding_start;
-  }
 
   a {
     @extend %roboto_black;
@@ -38,8 +36,16 @@
     text-align: center;
     height: 50px;
     min-width: 208px;
-    line-height: 30px;
+    line-height: 25px;
     border-bottom: 6px solid;
+
+    #clone-container & {
+      border-bottom: none;
+    }
+
+    &#clarat--family {
+      @extend %clarat_rounding_start;
+    }
 
     body.refugees & {
       border-bottom-color: $brand_core_refugees;

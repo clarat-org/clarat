@@ -12,6 +12,7 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
   handleClick: (event) =>
     event.preventDefault()
     @_toggleState()
+    $(document).trigger 'Clarat.ToggleAdvancedSearch::Toggle'
 
   # show advanced search if a filter was used
   handleSearchRendered: =>

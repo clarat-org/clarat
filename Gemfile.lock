@@ -374,6 +374,8 @@ GEM
       rails-assets-eventie (~> 1.0.4)
     rails-assets-isInViewport (2.3.0)
     rails-assets-jquery (2.1.4)
+    rails-assets-jquery-cookie (1.4.1)
+      rails-assets-jquery (>= 1.2)
     rails-assets-lodash (3.10.1)
     rails-assets-qtip2 (2.2.1)
       rails-assets-imagesloaded (>= 3.0.0)
@@ -625,6 +627,7 @@ DEPENDENCIES
   rails-assets-algoliasearch!
   rails-assets-isInViewport!
   rails-assets-jquery!
+  rails-assets-jquery-cookie!
   rails-assets-lodash!
   rails-assets-qtip2!
   rails-assets-shariff!

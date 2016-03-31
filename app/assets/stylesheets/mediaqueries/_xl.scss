@@ -161,5 +161,10 @@
     body.fr & {
       padding-right: 45%;
     }
+    
+  // Misc ########################################
+
+  #qtip-ttWeltFamily {
+    left: 0 !important; // override JS
   }
 }

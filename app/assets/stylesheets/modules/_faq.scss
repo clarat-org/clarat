@@ -22,6 +22,11 @@
 
   ul {
     padding-left: 2em;
+
+    body.ar & {
+      padding-left: 0;
+      padding-right: 2em;
+    }
   }
 }
 

@@ -222,6 +222,10 @@
       body.en & {
         padding-left: 60px;
       }
+
+      body.pl & {
+        padding-left: 54px;
+      }
     }
 
     #search_form_query,
@@ -231,6 +235,10 @@
 
     #search_form_query {
       padding-left: 53px;
+
+      body.pl & {
+        padding-left: 34px;
+      }
     }
 
     #search_form_query,
@@ -565,6 +573,14 @@
 
     body[class="template--pages-"] & {
       padding-top: 68px;
+    }
+  }
+
+  .Listing-results__headline {
+
+    body.pl &,
+    body.fr & {
+      padding-right: 0;
     }
   }
 

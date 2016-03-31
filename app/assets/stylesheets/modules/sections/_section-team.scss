@@ -18,6 +18,10 @@
   min-height: 640px;
   background: $brand_beige;
 
+  body.ru & {
+    min-height: 690px;
+  }
+
   &:nth-of-type(4n+1) { // every fourth item, starting at first
     margin-left: 0;
   }

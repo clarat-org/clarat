@@ -73,6 +73,9 @@
     .share_text {
       float: right;
       text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 52px;
     }
   }
 }

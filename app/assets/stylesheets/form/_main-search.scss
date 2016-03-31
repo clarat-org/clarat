@@ -91,6 +91,10 @@
   body.en & {
     padding-left: 68px;
   }
+
+  body.pl & {
+    padding-left: 45px;
+  }
 }
 
 #search_form_search_location {
@@ -99,6 +103,14 @@
 
   body.en & {
     padding-left: 79px;
+  }
+
+  body.fr & {
+    padding-left: 44px;
+  }
+
+  body.pl & {
+    padding-left: 72px;
   }
 }
 

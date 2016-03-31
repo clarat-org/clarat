@@ -14,6 +14,11 @@ textarea {
   @include input-placeholder(rgba($brand_brown, .72), 400, null);
   @extend %roboto_light;
   background-color: $brand_beige;
+
+  body.pl &,
+  body.ru & {
+    @extend %roboto_regular;
+  }
 }
 
 input,

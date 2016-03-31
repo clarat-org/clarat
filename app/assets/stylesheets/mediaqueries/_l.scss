@@ -218,8 +218,14 @@
   }
 
   .Listing-results__headline {
+
+    body.pl &,
+    body.fr & {
+      padding-right: 50%;
+    }
+
     .search-string {
-      max-width: 70%
+      max-width: 70%;
     }
   }
 

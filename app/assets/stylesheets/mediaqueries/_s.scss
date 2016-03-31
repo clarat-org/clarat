@@ -338,7 +338,7 @@
 
   .nav-welt__listitem--start {
     a {
-      height: 38px;
+      height: 28px;
     }
   }
 
@@ -404,16 +404,14 @@
 
   .main-search__advanced-filter--within-content-main {
     margin: 0 -15px;
+    position: relative;
+    transform: initial;
   }
 
   .content-main {
 
     .template--pages-home & {
       padding-top: 0;
-    }
-
-    &.template--pages-about {
-      padding-top: 100px;
     }
 
     &.content-main--invalid_location {
@@ -481,7 +479,6 @@
     margin-bottom: 15px;
   }
 
-  .template--pages-faq,
   .template--organizations-show,
   .template--previews-show_organization {
     .content-main.content-main--wide {
@@ -680,6 +677,10 @@
     .template--offers-index & {
       display: none;
     }
+  }
+
+  div.qtip-content {
+    font-size: 11px;
   }
 
 }

@@ -79,7 +79,7 @@ ru:
             class: FAQ_anchor_link
             name: "здесь"
             url: "/haeufige-fragen/#how_to_find_right_help"
-            var: "Здесь"
+            var: ref_to_how_to_find_right_help
           question: "Как работает clarat?"
         question_4:
           answer: clarat есть и будет бесплатным. Каждый может в категории <b>clarat family</b> бесплатно искать помощь для детей, подростков и семей. И так же каждый может в <b>clarat refugees</b> бесплатно искать помощь для беженцев.
@@ -621,6 +621,7 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        mul: 
       section:
         family: Family
         refugees: Refugees
@@ -965,6 +966,10 @@ ru:
       offers_all: "Какую помощь эта организация предлагает?"
       where: "Где ты найдешь организацию?"
       who: "Чем занимается организация?"
+      headline--family: 
+      headline-offers--family: 
+      headline-offers--refugees: 
+      headline--refugees: 
   pages:
     about:
       amina: "Амина - социолог. Она много знает об обществе. Она быстро замечает самое важное. В clarat она работает в команде сбора информации. Она решает, как именно будет clarat помогать. Ее любимая песня - La Prima Estate Эрленда Ойа (Erlend Oye)."
@@ -1445,3 +1450,11 @@ ru:
     new:
       button: "Получить сообщение"
       email_placeholder: E-Mail адрес
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        family_children:
+          default: 
+        prefix: 
+        refugees_general: 

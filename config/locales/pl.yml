@@ -617,6 +617,7 @@ pl:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -865,6 +866,7 @@ pl:
         json:
           age:
             few: "%{count} lat"
+            many: "%{count} lat"
             one: 1 rok
             other: "%{count} lat"
             zero: "< 1 rok"
@@ -968,6 +970,10 @@ pl:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: Jaką pomoc oferuje ta organizacja?
       where: Gdzie znajdziesz tę organizację?
       who: Co robi ta organizacja?
@@ -1071,9 +1077,9 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
-      responsible_html: |
-        Vorstand<br/>
-        Dr. Dr. Christoph Glaser<br/>
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
@@ -1390,8 +1396,7 @@ pl:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1410,10 +1415,10 @@ pl:
     preview: podgląd
     rechtliche-hinweise: nota prawna
     search_locations: wyszukaj
-    subscribe: subskrybuj
+    subscribe: subscribe
     subscriptions: subskrypcje
     ueber-uns: o nas
-    unsubscribe: odwołaj subskrypcję
+    unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
   shareds:

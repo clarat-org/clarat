@@ -462,6 +462,7 @@ ar:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: 
         nor: Nor
         pol: Pol
         por: Por
@@ -489,7 +490,6 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
-        mul: 
       section:
         family: Family
         refugees: Refugees
@@ -812,13 +812,13 @@ ar:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: "ما هي المساعدة التي تقدمها المنظمة؟"
       where: "أين تجد المنظمة؟"
       who: "ماذا تفعل المنظمة؟"
-      headline--family: 
-      headline-offers--family: 
-      headline-offers--refugees: 
-      headline--refugees: 
   pages:
     about:
       amina: |
@@ -1026,12 +1026,12 @@ ar:
         heading: Warum gibt es clarat?
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
     impressum:
-      heading: "هيئة التحرير"
-      responsible_html: |
-        مجلس الإدارة<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (مسئول عن محتويات صفحة الإنترنت)
-      title: "هيئة التحرير"
+      heading: Impressum
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
+      title: Impressum
     not_found:
       description: "اكتب فقط في خانة-بحث ما هي المساعدة التي تبحث عنها أو ما هي مشكلتك.\nوسوف تعرض لك كلارات عروض المساعدة التي بالقرب منك. \nأو اذهب إلى %{start_page} على الصفحة الرئيسية.\nهناك يمكنك عن طريق الصور الدائرية أن تبحث عن المساعدة المناسبة. "
       heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
@@ -1345,7 +1345,6 @@ ar:
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1364,10 +1363,10 @@ ar:
     preview: "عرض"
     rechtliche-hinweise: "إرشادات-قانونية"
     search_locations: "بحث_المواقع"
-    subscribe: "إشترك"
+    subscribe: subscribe
     subscriptions: "إشتراكات"
     ueber-uns: ueber-uns
-    unsubscribe: "إلغاء الأشتراك"
+    unsubscribe: unsubscribe
     update_requests: "طلبات-تحديث"
     users: "مستخدم"
   shareds:
@@ -1411,11 +1410,3 @@ ar:
     new:
       button: "الرسالة وصلت"
       email_placeholder: "عنوان البريد الإليكتروني"
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        family_children:
-          default: 
-        prefix: 
-        refugees_general: 

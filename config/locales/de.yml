@@ -943,6 +943,7 @@ de:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -970,7 +971,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        mul: Mul
       section:
         family: Family
         refugees: Refugees
@@ -1311,13 +1311,13 @@ de:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: Welche Hilfe bietet diese Organisation?
       where: Wo findest du die Organisation?
       who: Was macht die Organisation?
-      headline--family: 
-      headline-offers--family: 
-      headline-offers--refugees: 
-      headline--refugees: 
   pages:
     about:
       amina: |
@@ -1544,9 +1544,9 @@ de:
           refugees.
     impressum:
       heading: Impressum
-      responsible_html: |
-        Vorstand<br/>
-        Dr. Dr. Christoph Glaser<br/>
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
@@ -1865,8 +1865,7 @@ de:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1933,11 +1932,3 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        family_children:
-          default: 
-        prefix: 
-        refugees_general: 

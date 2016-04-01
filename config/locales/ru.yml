@@ -594,6 +594,7 @@ ru:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -621,7 +622,6 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        mul: 
       section:
         family: Family
         refugees: Refugees
@@ -853,8 +853,8 @@ ru:
       filters:
         json:
           age:
-            few: "%{count} Jahre"
-            many: "%{count} Jahre"
+            few: "%{count} лет"
+            many: "%{count} лет"
             one: 1 год
             other: "%{count} лет"
             zero: "< 1 года"
@@ -963,13 +963,13 @@ ru:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: "Какую помощь эта организация предлагает?"
       where: "Где ты найдешь организацию?"
       who: "Чем занимается организация?"
-      headline--family: 
-      headline-offers--family: 
-      headline-offers--refugees: 
-      headline--refugees: 
   pages:
     about:
       amina: "Амина - социолог. Она много знает об обществе. Она быстро замечает самое важное. В clarat она работает в команде сбора информации. Она решает, как именно будет clarat помогать. Ее любимая песня - La Prima Estate Эрленда Ойа (Erlend Oye)."
@@ -1067,12 +1067,12 @@ ru:
         heading: "Для чего существует clarat?"
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
     impressum:
-      heading: "Импрессум"
-      responsible_html: |
-        Председатель<br/>
-        Кристоф Глазер<br/>
-        (ответственный за содержание информации на сайте)
-      title: "Импрессум"
+      heading: Impressum
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
+      title: Impressum
     not_found:
       description: "Напиши в поле поиска, какую помощь ты ищешь. Или какая\nу тебя проблема. clarat покажет предложения помощи рядом с тобой.\nИли перейди %{start_page} на главную страницу. Там ты можешь по круглым \nкартинкам найти нужную помощь.\n"
       heading: "К сожалению, эта страница не найдена."
@@ -1385,8 +1385,7 @@ ru:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1405,10 +1404,10 @@ ru:
     preview: "предварительный просмотр"
     rechtliche-hinweise: "юридические указания"
     search_locations: "поиск местонахождения"
-    subscribe: "подписаться"
+    subscribe: subscribe
     subscriptions: "подписки"
     ueber-uns: ueber-uns
-    unsubscribe: "отменить подписку"
+    unsubscribe: unsubscribe
     update_requests: "обновить запросы"
     users: "пользователь"
   shareds:
@@ -1450,11 +1449,3 @@ ru:
     new:
       button: "Получить сообщение"
       email_placeholder: E-Mail адрес
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        family_children:
-          default: 
-        prefix: 
-        refugees_general: 

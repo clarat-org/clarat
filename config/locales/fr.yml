@@ -544,6 +544,7 @@ fr:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -571,7 +572,6 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
-        mul: 
       section:
         family: Family
         refugees: Refugees
@@ -893,13 +893,13 @@ fr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: cette organisation propose quel type d'aide?
       where: tu trouves cette organisation où?
       who: Cette organisation, elle fait quoi?
-      headline--family: 
-      headline-offers--family: 
-      headline-offers--refugees: 
-      headline--refugees: 
   pages:
     about:
       amina: est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
@@ -956,10 +956,10 @@ fr:
     impressum:
       heading: Impressum
       responsible_html: |-
-        conseil d'administration<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (responsable du contenu du site internet)
-      title: mentions légales
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
+      title: Impressum
     not_found:
       description: "écris simplement le type d'aide que tu recherches dans le champ. Ou \nen quoi consiste ton problème.Clarat te montre alors plus de services proche de chez toi.\nou va %{start_page} sur la page d'accueil. Là, tu peux trouver l'aide adaptée \nen utilisant les images circulaires."
       heading: Malheureusement, nous ne pouvons pas trouver cette page.
@@ -1233,8 +1233,7 @@ fr:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1291,11 +1290,3 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        family_children:
-          default: 
-        prefix: 
-        refugees_general: 

@@ -488,6 +488,7 @@ tr:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: 
         nor: Nor
         pol: Pol
         por: Por
@@ -852,6 +853,10 @@ tr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: Bu organizasyon ne tür yardımlar sunmaktadır?
       where: Bu organizasyonu nerede bulabilirsin?
       who: Bu organizasyon ne yapmaktadır?
@@ -919,9 +924,9 @@ tr:
     impressum:
       heading: Impressum
       responsible_html: |-
-        Yönetim Kurulu<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (Web sitenin içeriğinden sorumludur)
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
       description: |-
@@ -1238,8 +1243,7 @@ tr:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1258,10 +1262,10 @@ tr:
     preview: "Ön izleme"
     rechtliche-hinweise: Yasal uyarılar
     search_locations: 
-    subscribe: 
+    subscribe: subscribe
     subscriptions: 
     ueber-uns: ueber-uns
-    unsubscribe: 
+    unsubscribe: unsubscribe
     update_requests: 
     users: kullanıcılar
   shareds:

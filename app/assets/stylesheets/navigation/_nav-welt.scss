@@ -98,6 +98,10 @@
 
 #clarat--refugees {
 
+  body.refugees & {
+    box-shadow: 0 0 33px -8px rgba(0, 0, 0, .9);
+  }
+
   &:hover {
     background: $brand_core_refugees;
   }
@@ -112,9 +116,17 @@
       display: inline-block;
     }
   }
+
+  body.family & {
+    box-shadow: 0 0 15px -4px rgba(0, 0, 0, .28), 12px 0 8px -4px rgba(0, 0, 0, .28) inset;
+  }
 }
 
 #clarat--family {
+
+  body.family & {
+    box-shadow: 0 0 33px -8px rgba(0, 0, 0, .9);
+  }
 
   &:hover {
     background: $brand_core_family;

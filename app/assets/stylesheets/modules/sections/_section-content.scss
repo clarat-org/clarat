@@ -53,6 +53,11 @@
   .section-content--alloffers & {
     position: relative;
     padding-right: 70px;
+
+    body.ar & {
+      padding-left: 70px;
+      padding-right: 15px;
+    }
   }
 }
 

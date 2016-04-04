@@ -225,7 +225,7 @@ fr:
             </p>
           question: Je trouve de l’aide sur quels thèmes sur clarat refugees?
         question_4:
-          answer: Sur la page d’accueil tu vois à droite un éclair. En cliquant sur l’éclair tu vois une liste d’aide précise; Cette liste t’aide en situation de détresse. Donc si tu as rapidement besoin d’aide. Dans la liste des types d’aide, là où est écrit  <b>jour et nuit</b>, tu peux toujours prendre contact avec quelqu’un. Quelle que soit l’heure. Si tu ne souhaites pas sortir, on peut t’aider par téléphone ou sur internet.
+          answer: Sur la page d’accueil, tu vois à droite un éclair. En cliquant sur l’éclair tu vois une liste d’aide précise; Cette liste t’aide en situation de détresse. Donc si tu as rapidement besoin d’aide. Dans la liste des types d’aide, là où est écrit  <b>jour et nuit</b>, tu peux toujours prendre contact avec quelqu’un. Quelle que soit l’heure. Si tu ne souhaites pas sortir, on peut t’aider par téléphone ou sur internet.
           question: Comment trouver rapidement de l’aide si je suis en situation de détresse?
         question_5:
           anchor: how_to_find_right_help
@@ -544,6 +544,7 @@ fr:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -760,7 +761,7 @@ fr:
           href: https://plus.google.com/110429028641743127592/about
         impressum: impression
         privacy: informations sur la protection des données
-        tos: Rechtliche Hinweise
+        tos: informations juridiques
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
@@ -840,7 +841,7 @@ fr:
     show:
       last_update: Dernière entrée traitée le
       next_steps:
-        code_word: Quelles questions posées et où chercher sur le site?
+        code_word: Quelles questions poser et où chercher sur le site?
         heading: qu'est-ce que tu dois faire?
       opening_section:
         days:
@@ -869,10 +870,10 @@ fr:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: 
-      who: 
+      what: de quoi s'agit-il?
+      who: qui propose cette aide?
       who_contact_people:
-        dr: 
+        dr: Dr.
         email: courrier électronique
         fax: 'fax:'
         female: madame
@@ -892,6 +893,10 @@ fr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline--family: Family
+      headline--refugees: Refugees
+      headline-offers--family: Family
+      headline-offers--refugees: Refugees
       offers_all: cette organisation propose quel type d'aide?
       where: tu trouves cette organisation où?
       who: Cette organisation, elle fait quoi?
@@ -901,87 +906,42 @@ fr:
       andrea: a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Chez.Clarat, elle est dans l'équipe recherche. Elle assure la qualité de notre travail. Sa chanson préférée est Work Me des Black Keys.
       anne: a étudié économie et relations internationales. Elle pense de façon très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
       astrid: est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne  est contagieuse. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est You Got Me de The Roots feat. Erykah Badu.
-      basti: est web designer. Cela signifie qu'il s'y connaît en programmation de sites internet. Chez Clarat il est chef d’équipe. Il nous aide quand on rencontre des problèmes techniques. Et il s'occupe des congés, des contrats. Sa chanson préférée est Man In The Mirror de Michael Jackson.
+      basti: est web designer. Cela signifie qu'il s'y connaît en programmation de sites internet. Chez Clarat, il est chef d’équipe. Il nous aide quand on rencontre des problèmes techniques. Et il s'occupe des congés, des contrats. Sa chanson préférée est Man In The Mirror de Michael Jackson.
       bettina: 'Bettina a étudié le management des organisations à but non lucratif. Cela signifie qu''elle sait comment organiser une aide. Pour elle: une place pour chaque chose et chaque chose à sa place. Chez clarat, elle est  dans l''équipe recherche. Et elle recherche des organisations sur internet.'
       elisa: a fait des études de cultural studies. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Chez Clarat, elle est dans l'équipe recherche. Elle s'occupe également du lexique et des utilisateurs. Sa chanson préférée est Boat Behind de Kings of Convenience.
       franziska: a étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
       heading: Qui est derrière clarat?
       janina: A étudié l’anthropologie culturelle. Cela signifie qu'elle sait beaucoup de choses sur  les hommes et les différentes cultures. Elle écrit très bien. Chez clarat, elle est dans l’équipe recherche. Elle est l’experte de notre language clarat et s’occupe de nos utilisateurs. Sa chanson préférée est MFG de Fanta4.
-      janne: A étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat elle est dans l’équipe  recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat von Ry X.
-      jens: Est pédagogue. Cela signifie qu'il sait beaucoup de choses sur  l’éducation. Il comprend facilement des choses complexes. Chez clarat il est dans l’équipe recherche. Et il décide quels services vont être inclus sur clarat.. Sa chanson préférée est 2B2 von Lambchop.
-      jule: fait de la recherche  sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat elle est dans l’équipe recherche. Et elle s’assure de la qualité de notre travail. Sa chanson préférée est Home de Edward Sharpe.
-      julia: Est germaniste. Ça signifie que la langue allemande n’a pas de secret pour elle. Et elle sait bien écrire et expliquer simplement les choses. Chez clarat elle est dans l’équipe recherche et elle est experte de notre language clarat. Sa chanson préférée est Reckoner de Radiohead.
+      janne: A étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat, elle est dans l’équipe  recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat von Ry X.
+      jens: Est pédagogue. Cela signifie qu'il sait beaucoup de choses sur  l’éducation. Il comprend facilement des choses complexes. Chez clarat, il est dans l’équipe recherche. Et il décide quels services vont être inclus sur clarat.. Sa chanson préférée est 2B2 von Lambchop.
+      jule: fait de la recherche  sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat, elle est dans l’équipe recherche. Et elle s’assure de la qualité de notre travail. Sa chanson préférée est Home de Edward Sharpe.
+      julia: Est germaniste. Ça signifie que la langue allemande n’a pas de secret pour elle. Et elle sait bien écrire et expliquer simplement les choses. Chez clarat, elle est dans l’équipe recherche et elle est experte de notre language clarat. Sa chanson préférée est Reckoner de Radiohead.
       julian: Est socioéconomiste. Ça signifie qu’il sait beaucoup de choses sur l’économie et la sociéte. En informatique, il s’y connaît bien aussi. Chez clarat, il est dans l’équipe recherche et il s’occupe des questions techniques. Sa chanson préférée est All You Need de Sublime.
-      katinka: Est psychologue. Ça signifie qu’elle comprend bien le comportement et les sentiments des gens. Elle sait comment organiser des choses compliquées. Chez clarat elle est dans l’équipe recherche. Sa chanson préférée est The Greatest de Cat Power.
-      konstantin: Est web designer. Ça signifie qu’il sait programmer des sites internet. Il trouve toujours de bonnes solutions. Chez clarat il est dans  l’équipe TI et il crée nos sites internet. Sa chanson préférée est Too Long de Daft Punk.
-      laura: A étudié l’Asie du sud et fait de la recherche en développement géographique. Ça signifie qu’elle sait beaucoup de choses sur les pays en voie de développement. Elle a toujours un aperçu de la situation. Chez clarat elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
-      lavinia: fait de la recherche en paix et conflits. Ça signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat elle est dans  l’équipe recherche et elle classe nos services par thèmes. Sa chanson préférée est I'm Not Done de Fever Ray.
-      line: Est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et la langue. C’est pour ça qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat elle est dans  l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
-      lisa: Fait du Design Thinking. Ça signifie qu’elle sait comment planifier des projets de façon créative. Chez clarat elle est dans l’équipe recherche et elle fait des plans d’avenir et elle s’occupe de nos utilisateurs. Sa chanson préférée est Another Day de Jamie Lidell.
-      marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet.C’ est également un bon concepteur. Chez clarat il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
+      katinka: Est psychologue. Ça signifie qu’elle comprend bien le comportement et les sentiments des gens. Elle sait comment organiser des choses compliquées. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est The Greatest de Cat Power.
+      konstantin: Est web designer. Ça signifie qu’il sait programmer des sites internet. Il trouve toujours de bonnes solutions. Chez clarat, il est dans  l’équipe TI et il crée nos sites internet. Sa chanson préférée est Too Long de Daft Punk.
+      laura: A étudié l’Asie du sud et fait de la recherche en développement géographique. Ça signifie qu’elle sait beaucoup de choses sur les pays en voie de développement. Elle a toujours une vue d'ensemble de la situation. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
+      lavinia: fait de la recherche en paix et conflits. Ça signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans  l’équipe recherche et elle classe nos services par thèmes. Sa chanson préférée est I'm Not Done de Fever Ray.
+      line: Est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et la langue. C’est pour ça qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans  l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
+      lisa: Fait du Design Thinking. Ça signifie qu’elle sait comment planifier des projets de façon créative. Chez clarat, elle est dans l’équipe recherche et elle fait des plans d’avenir et elle s’occupe de nos utilisateurs. Sa chanson préférée est Another Day de Jamie Lidell.
+      marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
       nicole: A fait des études de communication interculturelle. Ça signifie qu’elle sait beaucoup de choses sur les cultures et les languages. Elle fait des choix judicieux. Elle dirige l’équipe de recherche. Sa chanson préférée est Palabra Mi Amor de Shaka Ponk.
-      nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
+      nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
       stefan: A fait des études de sciences de la culture. Ça signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
-      tine: est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
-      title: A propos de nous
-      verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
+      tine: est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
+      title: "à propos de nous"
+      verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat, elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
     agb:
-      heading: Rechtliche Hinweise
-      text_html: |
-        <p>
-        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
-        Stiftung Zukunft („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
-        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
-        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
-        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
-        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
-        </p>
-        <p>
-        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
-        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
-        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
-        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
-        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
-        Serviceleistungen oder Informationen, die Sie über unsere Webseite
-        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
-        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
-        können aus ihnen keine Rechtsansprüche abgeleitet werden.
-        </p>
-        <p>
-        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
-        </p>
-        <p>
-        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
-        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
-        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
-        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
-        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
-        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
-        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
-        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
-        Genehmigung erfolgt.
-        </p>
-        <p>
-        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
-        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
-        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
-        Inhalt solcher Webseiten nicht zu Eigen.
-        </p>
-        <p>
-        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
-        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
-        der Bundesrepublik Deutschland.
-        </p>
-      title: Rechtliche Hinweise
+      heading: informations juridiques
+      text_html: "<p>\nCe site web a  été créé avec le plus grand soin. La fondation Benckiser\nStiftung Zukunft („clarat“ ou „nous“) ne donne aucune garantie eu égard \nà  l'intégralité, l'actualité, la disponibilité tout comme l'exactitude des \ninformations offertes sur le site internet et les liens.\nLe site internet est exclusivement conçu pour l'utilisation privée, toute \nutilisation à des fins commerciales est interdite.\n</p>\n<p>\nNous vous signalons que les informations présentées sur le site internet\npeuvent contenir des erreurs et des inexactitudes et que nous excluons\nexpressément toute responsabilité pour de telles inexactitudes ou erreurs.\nNous soulignons également qu'il est de notre propre et entière responsabilité\nd'assurer que les services offerts et les informations obtenues à partir de notre site\ninternet répondent à vos besoins spécifiques.\nLes informations fournies par notre site internet ne constituent en aucun cas\nune garantie légale et ne peuvent en aucun cas donner lieu à une responsabilité\n juridique./aucun recours juridique ne peut être dégagé de celles-ci.\n</p>\n<p>\nNous pouvons modifier le site internet sans aucun préavis préalable.\n</p>\n<p>\nLe contenu du site internet a été rédigé par et pour clarat. Le droit d'auteur \net les autres droits de protection du contenu de notre site internet reviennent à clarat\nou à une personne à qui nous accordons le droit d'utilisation.\nCela concerne entre autres , mais pas uniquement, le design, la mise en page,\nles textes, tout comme les illustrations, les images, les graphiques.\nNous nous opposons à tout stockage complet ou partiel, à toute reproduction et ou publication \net engagerons une procédure juridique dans la mesure où pour une telle action, \nnotre accord n'aurait pas été au préalable donné.\n  </p>\n<p>\nPour autant que d'autres domaines ou pages internet ont été indiqués, ou au moyen d'un hyperlien,\nl'attention est attirée sur le fait que nous ne sommes pas responsables du contenu de telles\npages internet , nous n'assumons aucune responsabilité et ne répondons pas du contenu de ces\npages.\n</p>\n<p>\nLes informations juridiques ainsi que toutes les questions et litiges en rapport avec cette page \ninternet  sont soumis au droit de la République fédérale d'Allemagne.\n</p>"
+      title: informations juridiques
     faq:
-      title: Häufige Fragen
+      title: questions fréquentes
     home:
       how:
         heading: |
           Clarat, comment ça fonctionne?
-        text: |
-          Tape  dans le champ de recherche le problème pour lequel tu as besoin d’aide.. Ou ce qui t’oppresse.. Ou choisis parmi nos thèmes. Tu vois déjà toutes les listes d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
+        text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide.. Ou ce qui t’oppresse.. Ou choisis parmi nos thèmes. Tu vois déjà toutes les listes d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       title:
         family: Listes d'aide pour les enfants, les ados et les familles
         refugees: Listes d'aide pour les réfugiés
@@ -995,68 +955,25 @@ fr:
         text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoups de services de soutien pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
     impressum:
       heading: Impressum
-      responsible_html: |
-        Vorstand<br/>
-        Dr. Dr. Christoph Glaser<br/>
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
-      description: |
-        Schreibe einfach in das Finde-Feld, welche Hilfe du suchst. Oder was
-        dein Problem ist. clarat zeigt dir dann weitere Angebote in deiner Nähe.
-        Oder gehe %{start_page} auf die Startseite. Dort kannst du über die runden
-        Bilder nach passender Hilfe suchen.
-      heading: Leider konnten wir diese Seite nicht finden.
+      description: "écris simplement le type d'aide que tu recherches dans le champ. Ou \nen quoi consiste ton problème.Clarat te montre alors plus de services proche de chez toi.\nou va %{start_page} sur la page d'accueil. Là, tu peux trouver l'aide adaptée \nen utilisant les images circulaires."
+      heading: Malheureusement, nous ne pouvons pas trouver cette page.
       link_text: Ici
       title: 404
     privacy:
       chapter_eight:
-        heading: 8. Recht auf Widerspruch und Ansprechpartner
-        nested_text_second_paragraph: |
-          Ihre Fragen zum
-          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
-          Beschwerden oder Ähnliches richten Sie bitte an:
-        text: |
-          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
-          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
-          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
-          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
-          folgenden Link klicken:
-          %{google_optout}.
+        heading: 8. Droit de recours et interlocuteur
+        nested_text_second_paragraph: "Adressez vos questions relatives\n à la protection des données, aux contradictions,  aux demandes de renseignements ou \nd'effacement de vos données, aux plaintes ou toutes autres choses à:"
+        text: "Vous avez à tout moment le droit de faire opposition à l'utilisation susmentionnée de vos données\net /ou de révoquer votre consentement, cette révocation prenant effet pour l'avenir.\nVous avez, en outre, la possibilité de faire opposition à l'utilisation \nde Google Analytics en cliquant sur le lien suivant: \n%{google_optout}."
       chapter_five:
         heading: 5. Social Media Plugins
-        nested_text_four: |
-          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
-          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
-          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
-          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
-          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
-          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
-          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
-          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
-          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
-          wurde.
-        nested_text_one: |
-          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
-          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
-          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
-          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
-          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
-          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
-          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
-          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
-          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
-          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
-          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
-          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
-          diese Information an Ihr Facebook-Profil in die USA übermittelt.
-          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
-          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
-          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
-          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
-          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
-          Facebook (%{facebook}).
+        nested_text_four: "Sur notre site internet, nous recourons à une touche de WhatsApp\nInc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA\n(„WhatsApp“). Vous pouvez ainsi communiquer les contenus de notre site internet\nà un tiers. Ce bouton correspond à un lien internet régulier (HTML-Hyperlink). Cela signifie\nque ce n'est pas parce que vous appuyer sur la fonction que vos données sont \ncommuniquées à WhatsApp. Ce n'est qu'en activant la fonction que WhatsApp\napprendra quels contenus vous souhaitez partager sur WhatsApp et que la fonction a été \nconsultée à partir de notre site internet.\n"
+        nested_text_one: "Nous utilisons des Plugins du réseau social Facebook.com ce dernier est \nexploité par Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA\n(\"Facebook\"). Via l'utilisation de la fonction recommandation de Facebook,\nvous pouvez recommander notre site internet et nos prestations et les faire \nconnaître à vos amis. Cliquez sur la fonction et vous serez invité à vous connecter\nsur Facebook dans une nouvelle fenêtre. Pour ce cas précis, un Facebook-Cookie \nest installé sur votre ordinateur. Facebook reçoit ainsi certaines informations\n(au moins votre adresse IP et le cookie d'identification) que vous avez visité sur notre site.\nSi vous ne cliquez pas sur la fonction ou si vous n'êtes pas connecté sur Facebook\nalors le Facebook-Cookie ne sera pas installé. Si vous êtes utilisateur de Facebook et que \nvous êtes connecté et que vous cliquez sur le fonction, alors ces informations seront transmises\nsur votre Facebook-Profil aux Etats-Unis. D'autres utilisateurs pourront alors voir\nque vous recommandez nos prestations. Quels utilisateurs reçoivent exactement ces informations?\ncela dépend des paramètres de confidentialité que vous avez choisi sur Facebook.\nvous trouverez plus d'informations concernant la saisie et l'utilisation des données sur Facebook \nainsi que sur vos droits et la protection de la vie privée, rendez vous dans la rubrique «Politique d'utilisation des données\" de Facebook (%{facebook})."
         nested_text_three: |
           Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
           600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
@@ -1316,42 +1233,37 @@ fr:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
     '404': "'404'"
-    contacts: kontakt
+    contacts: contact
     datenschutzhinweise: protection des données
     definitions: Définitions
     emails: Adresses électroniques
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
+    faq: questions fréquentes
+    haeufige-fragen: questions fréquentes
+    impressum: coordonnées
     new: new
-    offers: angebote
-    organizations: organisationen
+    offers: liste de services
+    organizations: organisations
     preview: preview
     rechtliche-hinweise: conseils juridiques
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
-    ueber-uns: ueber-uns
+    ueber-uns: "à propose de nous"
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
   shareds:
     forms:
-      fill_field: Bitte fülle dieses Feld aus
+      fill_field: veuillez remplir ce champ
     show:
-      cta_report_errors: |
-        Hast du einen Fehler entdeckt?
-      google_translate_explanation: |
-        Diese Übersetzung wurde von Google Translate automatisch gemacht.
-        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
-        klingt. Schau dann lieber noch einmal in den deutschen Text.
+      cta_report_errors: tu as vu une erreur?
+      google_translate_explanation: les traductions ont été automatiquement effectuées par Google Translate. Il y a souvent des erreurs de langues. Il est donc possible que ça te paraisse bizarre. Vérifie alors dans le texte allemand.
     tooltips:
       welcome:
         advanced_search: Tu veux faire une recherche plus détaillée? Alors clique ici. Une fenêtre avec de nombreuses possibilités s'affiche sur l'écran;
@@ -1365,15 +1277,12 @@ fr:
       text: required
   subscriptions:
     create:
-      error: |
-        Bitte gib eine korrekte E-Mail Adresse ein.
-      success: |
-        Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
-        Adresse gesendet.
+      error: Veuillez entrer une adresse électronique correctement.
+      success: Nous venons d'envoyer à ton adresse électronique un message avec un lien de confirmation.
     shared:
       new:
-        button: Newsletter abonnieren
-        placeholder: E-Mail Adresse
+        button: s'abonner à la newsletter
+        placeholder: adresse électronique
   success: Merci beaucoup. Nous allons bientôt avoir des propositions d'aide près de chez toi. Dès que cela est le cas, tu vas recevoir un courrier électronique de notre part.
   update_requests:
     create:

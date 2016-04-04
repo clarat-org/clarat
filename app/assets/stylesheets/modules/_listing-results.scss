@@ -4,7 +4,6 @@
 //
 // ---------------------------------------------------------------
 
-
 .Listing-results__pending-ajax {
   text-align: center;
   font-size: 40px;
@@ -53,6 +52,12 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    body.ar & {
+      right: auto;
+      left: 0;
+    }
+
     a {
       text-decoration: none;
     }
@@ -70,7 +75,6 @@
   @extend %roboto_bold;
   display: inherit;
 }
-
 
 .Listing-results__offer,
 .Listing-results__offerinfo {
@@ -126,6 +130,11 @@
   top: 4px;
   width: 30px;
   height: 30px;
+
+  body.ar & {
+    left: 4px;
+    right: auto;
+  }
 }
 
 
@@ -140,6 +149,11 @@
   padding: 6px 6px 8px;
   background: $brand_green_alternative;
   color: $brand_white;
+
+  body.ar & {
+    margin-left: -5px;
+    margin-right: 0;
+  }
 }
 
 .Listing-results__orga-display {
@@ -182,6 +196,12 @@
   background: transparent image-url('gmaps_marker.svg') no-repeat left center;
   background-size: auto 30px;
   padding-left: 30px;
+
+  body.ar & {
+    background-position: calc(100% - 5px) center;
+    padding-left: 0;
+    padding-right: 30px;
+  }
 }
 
 .Listing-results__address {
@@ -199,5 +219,11 @@
   padding: 4px 4px 0 30px;
   background-size: auto 20px;
   line-height: 1.8;
+  overflow: hidden;
+
+  body.ar & {
+    background-position: calc(100% - 6px) 5px;
+    padding: 4px 30px 0 4px;
+  }
 }
 

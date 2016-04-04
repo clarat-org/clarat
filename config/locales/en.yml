@@ -1101,7 +1101,7 @@ en:
         gplus:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
-        impressum: imprint
+        impressum: Imprint
         privacy: Privacy
         tos: Legal information
         twitter:
@@ -1248,10 +1248,8 @@ en:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: Support offerings for children, adolescents and families
+      headline-offers--refugees: Support offerings for refugees
       offers_all: What kind of help does the organization offer?
       where: Where is the organization located?
       who: What does the organization do?

@@ -1311,10 +1311,8 @@ de:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+      headline-offers--refugees: Unterstützungsangebote für Flüchtlinge
       offers_all: Welche Hilfe bietet diese Organisation?
       where: Wo findest du die Organisation?
       who: Was macht die Organisation?

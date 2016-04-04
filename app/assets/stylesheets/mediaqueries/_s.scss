@@ -54,14 +54,20 @@
     width: 95px;
     height: 38px;
 
+    body.ar & {
+      margin-right: 15px;
+    }
+
     body.family &,
     body.refugees & {
       background-size: 95px 38px;
     }
+
   }
 
   .Claim {
     margin-top: 90px;
+    max-width: 100%;
   }
 
   .header-main {
@@ -84,7 +90,7 @@
   .header-main__foreground {
     body.refugees &,
     body.family & {
-      background-position: center calc(100% - 40px);
+      background-position: center bottom;
     }
   }
 
@@ -152,6 +158,14 @@
       border-color: $brand_core_refugees;
     }
 
+    body.ar & {
+      padding: 10px 15px 0 0;
+
+      label.string {
+        right: 9px;
+        left: auto;
+      }
+    }
 
     .Distributor.is-enlarged & {
 
@@ -202,6 +216,7 @@
       padding-left: 53px;
     }
 
+
     .main-search__submit {
       position: absolute;
       top: 10px;
@@ -209,6 +224,18 @@
       width: 40px;
       height: 35px;
       background-size: 60%;
+
+      body.template--pages-home.ar & {
+        left: 0;
+      }
+
+      body.ar & {
+        left: 15px;
+        right: auto;
+        z-index: 20;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 0;
+      }
 
       &.is-enlarged {
         bottom: 10px;
@@ -265,11 +292,21 @@
     left: 0;
   }
 
+  .nav-welt__list {
+    body.ar & {
+      float: none;
+    }
+  }
+
   .nav-welt--notstart {
     float: right;
     height: 31px;
     margin-top: 21px;
     margin-right: 7px;
+
+    body.ar & {
+      float: left;
+    }
 
     li {
       a:before {
@@ -329,6 +366,11 @@
   .search-form--input-wrapper {
     left: 0;
     z-index: 12;
+
+    body.ar & {
+      right: 0;
+      left: auto;
+    }
   }
 
   .nav-sections {
@@ -338,6 +380,10 @@
   .nav-sections__headline {
     margin-bottom: 10px;
     text-align: left;
+
+    body.ar & {
+      text-align: right;
+    }
   }
 
   .nav-sections__listitem {
@@ -507,6 +553,10 @@
     cursor: pointer;
     background: image-url('ico_fieldset_expand.svg') no-repeat right center;
     background-size: 6px 8px;
+
+    body.ar & {
+      background-position: left center;
+    }
 
     &.is-active {
       background: image-url('ico_fieldset_collapse.svg') no-repeat right center;

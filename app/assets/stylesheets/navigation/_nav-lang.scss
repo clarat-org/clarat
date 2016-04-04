@@ -102,4 +102,8 @@ button.nav-lang__button {
 
 .nav-lang__listitem--active {
   @extend %roboto_black;
+
+  body.ru & {
+    font-weight: 700;
+  }
 }

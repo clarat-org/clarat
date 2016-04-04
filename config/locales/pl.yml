@@ -970,10 +970,8 @@ pl:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+      headline-offers--refugees: Oferty wsparcia dla uchodźców
       offers_all: Jaką pomoc oferuje ta organizacja?
       where: Gdzie znajdziesz tę organizację?
       who: Co robi ta organizacja?

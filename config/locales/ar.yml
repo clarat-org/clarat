@@ -812,10 +812,8 @@ ar:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: "عروض دعم للأطفال؛ الشبان و الأسرة"
+      headline-offers--refugees: "عروض دعم للآجئين"
       offers_all: "ما هي المساعدة التي تقدمها المنظمة؟"
       where: "أين تجد المنظمة؟"
       who: "ماذا تفعل المنظمة؟"

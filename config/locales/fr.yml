@@ -893,10 +893,8 @@ fr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: listes d'aide pour les enfants, les ados et les familles
+      headline-offers--refugees: listes d'aide pour les réfugiés
       offers_all: cette organisation propose quel type d'aide?
       where: tu trouves cette organisation où?
       who: Cette organisation, elle fait quoi?

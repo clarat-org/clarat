@@ -963,10 +963,8 @@ ru:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline--family: Family
-      headline--refugees: Refugees
-      headline-offers--family: Family
-      headline-offers--refugees: Refugees
+      headline-offers--family: "Предложения о помощи детям, молодежи и семьям"
+      headline-offers--refugees: "Предложения о помощи для беженцев"
       offers_all: "Какую помощь эта организация предлагает?"
       where: "Где ты найдешь организацию?"
       who: "Чем занимается организация?"

@@ -10,6 +10,10 @@ ru:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: 
+        longitude: 
+        query: 
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE

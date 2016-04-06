@@ -10,10 +10,15 @@ de:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: Latitude
+        longitude: Longitude
+        query: Query
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: Search location
   cells:
     faq:
       heading: Häufige Fragen

@@ -14,11 +14,16 @@ de:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Häufige Fragen
@@ -1236,6 +1241,7 @@ de:
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
+            family_parents_to_be: für werdende Eltern
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1254,8 +1260,8 @@ de:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Adresse, Stadtteil, Stadt oder PLZ
-          short: Stadt, PLZ, …
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Was
         query_placeholder:
           long: Angebote zum Thema …

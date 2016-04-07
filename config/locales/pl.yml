@@ -14,11 +14,16 @@ pl:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Często zadawane pytania
@@ -73,7 +78,7 @@ pl:
           link_1:
             name: po prostu daj nam znać
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/pl/refugees/kontakt/nowe
             var: link_to_contact_form
           question: Czy clarat oferuje otwarty interfejs, który umożliwiłby dalsze wykorzystanie danych?
         question_2:
@@ -126,7 +131,7 @@ pl:
           link_3:
             name: kliknij tu
             target: _blank
-            url: http://www.clarat.org/ueber-uns
+            url: http://www.clarat.org/pl/refugees/o-nas
             var: link_to_about_us
           question: " Kto kryje się za claratem?"
       section_2:
@@ -900,6 +905,7 @@ pl:
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
+            family_parents_to_be: dla przyszłych rodziców
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -915,8 +921,8 @@ pl:
         button: Szukaj
         loc_label: Gdzie
         loc_placeholder:
-          long: adres, dzielnica, miasto lub kod pocztowy
-          short: miasto, kod pocztowy, …
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Co
         query_placeholder:
           long: Oferty na temat …
@@ -1421,7 +1427,7 @@ pl:
     search_locations: wyszukaj
     subscribe: subscribe
     subscriptions: subskrypcje
-    ueber-uns: o nas
+    ueber-uns: o-nas
     unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy

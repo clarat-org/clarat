@@ -14,11 +14,16 @@ ar:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: "أسئلة شائعة"
@@ -73,7 +78,7 @@ ar:
           link_1:
             name: "يمكنك الإتصال بنا بسهولة."
             target: blank_
-            url: 
+            url: http://www.clarat.org/refugees/إتصال/جديد
             var: link_to_contact_form
           question: "هل تقدم كلارات وصلة يمكن من خلالها إعادة إستخدام المعلومات؟"
         question_2:
@@ -84,7 +89,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: 
+            url: "/haeufige-fragen/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           question: "كيف تعمل كلارات؟"
         question_4:
@@ -104,7 +109,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: 
+            url: "/haeufige-fragen/#how_many_languages"
             var: ref_to_how_many_languages
           question: "ما هو المميز في كلارات؟"
         question_9:
@@ -112,7 +117,7 @@ ar:
           link_1:
             name: "مؤسسة بنكيزير المستقبل"
             target: _blank
-            url: 
+            url: http://www.benckiser-stiftung.org/
             var: link_to_bsz
           link_2:
             name: "فيديو"
@@ -137,7 +142,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: 
+            url: "/haeufige-fragen/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           link_2:
             name: post@clarat.org
@@ -306,12 +311,24 @@ ar:
       family:
         heading: 
         no_results: "في الوقت الحاضر لا توجد عروض منشورة في كلارات الأسرة من أجل \n<span id=\"secure-email-0\">%{email}</span>"
-        toggle_section_html: 
+        toggle_section_html:
+          few: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          many: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          one: "لك <strong>كلارات اللاجئين</strong>-عرض"
+          other: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          two: "لك <strong>%{count} كلارات اللاجئين</strong>-عرض"
+          zero: NOTRANSLATE
       obfuscated_email: "عنوان البريد الإليكتروني الخاض بك"
       refugees:
         heading: عروض كلارات اللاجئين الخاصة بك بالنسبة ل  <span id="secure-email-0">%{email}</span>
         no_results: "في الوقت الحالي لا توجد عروض منشورة في كلارات اللاجئين بالنسبة ل  \n<span id=\"secure-email-0\">%{email}</span>"
-        toggle_section_html: 
+        toggle_section_html:
+          few: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          many: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          one: "لك <strong>كلارات الأسرة</strong>-عرض"
+          other: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          two: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
+          zero: NOTRANSLATE
       shared:
         explanation_1: "هنا سترى كل العروض الخاصة بك بشكل مجمع. هذه العروض هي التي وجدنا عندها عنوان البريد الإليكتروني الخاص بك كعنوان للتواصل. "
         explanation_2: "لذا  وجدنا في المستقبل عروضا خاصة بك فسوف تتمكن من روية الروابط لهذه العروض أيضا."
@@ -506,10 +523,7 @@ ar:
     autocomplete_footer: "كل %{results} نتائج البحث ل „%{query}“"
     categories_sidebar:
       all_categories: "جميع الفئات"
-    cookie_warning_html: |-
-      الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز
-      <a href="/datenschutzhinweise">Mehr</a>.
-       نا كوكيز
+    cookie_warning_html: "الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز\n<a href=\"/datenschutzhinweise\">Mehr</a>.\n  "
     geolocation:
       error: "لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا."
       get: "استخدم موقعي !"
@@ -529,8 +543,29 @@ ar:
     query_field:
       example_placeholder: 
       placeholder_words:
-        family: '["المخدرات", "العنف", "دروس خصوصية", "حالة طوارئ", "حق", "عاطل", "مشاكل التربية", "إضطرابات في الأكل", "بلا مأوى", "مشكلات أسرية", "حامل", "شجار", "السكن"]'
-        refugees: '["التجنيس", "دورة لغة ألمانية", "إعتراف", "صدمة الحرب", "إجراءات اللجوء", "رعاية صحية", "سلطات", "حق الإقامة"]'
+        family:
+        - "المخدرات"
+        - "العنف"
+        - "دروس خصوصية"
+        - "حالة طوارئ"
+        - "حق"
+        - "عاطل"
+        - "مشاكل التربية"
+        - "إضطرابات في الأكل"
+        - "بلا مأوى"
+        - "مشكلات أسرية"
+        - "حامل"
+        - "شجار"
+        - "السكن"
+        refugees:
+        - "التجنيس"
+        - "دورة لغة ألمانية"
+        - "إعتراف"
+        - "صدمة الحرب"
+        - "إجراءات اللجوء"
+        - "رعاية صحية"
+        - "سلطات"
+        - "حق الإقامة"
     routes:
       faq: 
     search:
@@ -738,6 +773,7 @@ ar:
             nuclear_family: "للأسر"
             parents: "للآباء"
             pregnant_woman: "للحوامل"
+            family_parents_to_be: "لمن سوف يصيرون والدين"
       map_sidebar:
         map_output_searchresults: "إظهار بطاقة نتائج البحث"
       noscript_warning: |
@@ -755,8 +791,8 @@ ar:
         button: "بحث"
         loc_label: "أين"
         loc_placeholder:
-          long: "العنوان، المنطقة، المدينة، الرقم البريدي"
-          short: "المدينة، الرقم البريدي…"
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: "ماذا"
         query_placeholder:
           long: "عروض خاصة بموضوع ...."
@@ -825,137 +861,36 @@ ar:
       who: "ماذا تفعل المنظمة؟"
   pages:
     about:
-      amina: |
-        Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie
-        sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
-        entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
-        Prima Estate von Erlend Oye.
-      andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
-      anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
-      astrid: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
-        The Roots feat. Erykah Badu.
-      basti: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
-        er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
-        The Mirror von Michael Jackson.
-      bettina: |
-        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
-        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
-        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
-        Lieblingssong ist Elias von Dispatch.
-      elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
-      franziska: |
-        Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
-        alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
-        schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Explanations von Selah Sue.
-      heading: Wer steckt hinter clarat?
-      janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
-      janne: |
-        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
-        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
-        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
-        Sweat von Ry X.
-      jens: |
-        Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
-        Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
-        Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
-        Sein Lieblingssong ist 2B2 von Lambchop.
-      jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
-      julia: |
-        Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
-        Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
-        clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
-        Lieblingssong ist Reckoner von Radiohead.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
+      amina: "أخصائية إجتماعية. هذا يعني أنها تعرف الكثير عن المجتمع. فهي تلاحظ بسرعة ما هو مهم. في كلارات هي تعمل مع فريق البحث وتقرر أي العروض يصلح ليكون ضمن عروض كلارات. أعنيتها المفضلة هي لابريما ايستيت ل. إيرلند أوي."
+      andrea: "درست إدارة متعددة الثقافات. هذه يعني أنها تعرف عن الإقتصاد والثقافة. هي تعمل بدقة شديدة. في كلارات هي عضوة بالفريق البحثي وتتأكد من جودة العمل هنا. أعنيتها المفضلة هي ورك مي ل. بلاك كيس."
+      anne: "درست إقتصاد وعلاقات عامة. هي سريعة جدا في التفكير المنطقي. في كلارات هي المديرة. وهي تتابع عمل الفريق بأكمله وتقوم بتنظيم كل شئ. أعنيتها المفضلة هي دنكين زي جروس ل. دايشكند."
+      astrid: "خبيرة سياسية. هذا يعني أنها تعرف الكثير عن السياسة والمجتمع.  هي دائما مرحة وتعكس هذا على الآخرين. هي عضوة في فريق البحث لدى كلارات. أعنيتها المفضلة هي يو جوت مي ل. زاروتس فييت. إريكا بادو."
+      basti: "مطور ويب. هذا يعني أنه على معرفة جيدة ببرمجة مواقع وصفحات الإنترنت. في كلارات هو مدير الآي تي أو تكنولوجيا المعلومات. فهو يساعدنا في المشاكل التقنية, كما يقوم بأعمال أخري تتعلق بالإجازات وعقود العمل. أغنيته المفضلة هي مان ان زا ميرور ل. مايكل جاكسون."
+      bettina: "بيتينا درست علوم الإدارة غير الربحية. هذه يعني أنها تعرف كيف يتم تنظيم مساعدات. هي بارعة في إنجاز العمل بشكل مرتب. في كلارات هي عضوة في الفريق البحثي؛ فهي تبحث في الإنترنت عن منظمات. أغنيتها المفضلة هي إلياس ل. ديسباتش"
+      elisa: "خبيرة ثقافية. هذا يعني أنها تعرف الكثير عن الثقافات. يمكنها شرح الأمور الصعبة. في كلارات هي عضوة في فريق البحث. هي تقوم أيضا بالعمل في معجم كلارات وتتواصل مع مستخدمي الصفحة. أعنيتها المفضلة هي بوت بيهيند ل. كنجس اوف كونفينينس"
+      franziska: "خبيرة في القانون الدولي. هذا يعني أنها على دراية جيدة بالقوانين التي تطبق على كل الدول. هي قادرة على فهم الأمور المعقدة جيدا وإيجاد حلول سريعة. في كلارات هي عضوة في فريق البحث. أغنيتها المفضلة هي اكسبلانيشنس ل. سيلاه سوي"
+      heading: "من وراء كلارات؟"
+      janina: "خبيرة في الإنتروبولوجيا الثقافية هذا يعني أنها تعرف الكتير عن الإنسان والثقافات. هي تكتب بشكل جيد. في كلارات هي عضوة في فريق البحث وخبيرة في لغة كلارات الخاصة كما تساعد المستخدمين. أعنيتها المفضلة هي ام اف جي ل. فانتا فور"
+      janne: "ياننا درست سياسة وعلاقات دولية. يمكنها تنظيم وقتها بشكل جيد. في كلارات هي عضوة في فريق البحث وهي تقرر أي العروض يصلح ان يكون من ضمن عروض كلارات. أعنيتها المفضلة هي سويت ل. راي إكس."
+      jens: "خبير تربوي. هذا يعني أنه على دراية بالتعليم. هو يفهم الأشياء المعقدة بسرعة. في كلارات هو عضو في فريق البحث ويقرر أي العروض يصلح لكلارات. أغنيته المفضلة هي تو بي تو ل. لامبشوب."
+      jule: "باحثة في دراسات السلام والصراعات. هذا يعني أنها على دراية بكثير من الصراعات والحروب. هي قادرة على إيجاد حلول. في كلارات هي عضوة في فريق البحث وتتأكد من جودة العمل. أعنيتها المفضلة هي هوم ل. إدوارد شارب."
+      julia: "خبيرة لغة ألمانية. هذا يعني أنها على دراية جيدة باللغة الألمانية وكتابة النصوص. يمكنها الكتابة بشكل جيد وكذلك تفسير الأمور بشكل بسيط. في كلارات هي عضوة في فريق البحث وخبيرة في لغة كلارات الخاصة. أعنيتها المفضلة هي ريكونر ل. راديوهيد. "
+      julian: "خبير في الإقتصاد الإجتماعي. هذا يعني أنه يعرف الكثير عن الإقتصاد والمجتمع. هو على دراية جيدة أيضا بالكمبيوتر. في كلارات هو عضو في فريق البحث كما يقوم بأعمال تقنية أخرى. أغنيته المفضلة هي آول يو نيد ل. سابليما."
       katinka: |
-        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
-        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
-        Cat Power.
-      konstantin: |
-        Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
-        Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
-        unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
-      laura: |
-        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
-        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
-        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
-        ist Paint It Black von den Rolling Stones.
-      lavinia: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
-      line: |
-        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
-        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
-        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
-        den Rolling Stones.
-      lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
-      marcus: |
-        Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
-        gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
-        Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
-        Lieblingssong ist Hysteria von MUSE.
-      nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
-      nils: |
-        Ist Informatiker. Das heißt, er kann gut Computerprogramme und
-        Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
-        er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
-        Jein von Fettes Brot.
-      stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
+        أخصائية نفسية. هذا يعني أنها تستطيع أن تفهم السلوك والمشاعر الإنسانية جيدا. كما يمكنها ترتيب الأمور المعقدة. في كلارات هي عضوة في فريق البحث. أغنيتها المفضلة هي زا جريتست ل. كات بور.
+      konstantin: "مطور ويب. هذا يعني أنه يستطيع بشكل جيد أن يبرمج صفحات إنترنت. هو يجد دائما حلولا جيدة. في كلارات هو عضو في فريق الآي تي أو تكنولوجيا المعلومات ويقوم بعمل صفحات الإنترنت الخاصة بنا. أغنيته المفضلة هي توو لونج ل. دافت بونكت."
+      laura: "درست دراسات جنوب آسيا وأبحاث التطورات الجغرافية. هذا يعني أنها على دراية جيدة بالدول النامية. لديها دائمة نظرة عامة للأمور. في كلارات هي عضوة في فريق البحث. أغنيتها المفضلة هي بينت ات بلاك ل.دينرولينج ستونس."
+      lavinia: "باحثة في دراسات السلام والصراعات. هذا يعني أنها تعرف الكثير عن الصراعات والحروب. يمكنها اقناع الآخرين بأفكار ما. في كلارات هي عضوة في فريق البحث وتقوم بترتيب العروض حسب الموضوع. أعنيتها المفضلة هي آيام نوت دون ل.فيفر راي."
+      line: "مخرجة مسرحية. وهي أيضا على دراية جيدة بالأدب واللغة. لذلك تعرف كيفية تأثير الكلمات على الناس. في كلارات هي عضوة في فريق البحث. أغنيتها المفضلة هي آني بودي سيين ماي بيبي ل. دينرولينج ستونس."
+      lisa: "مصممة إبتكارات. هذا يعني أنها يمكنها تخطيط مشروعات بشكل مبتكر. في كلارات هي عضوة في فريق البحث وتقوم بوضع خطط وتتواصل مع مستخدمي صفحة كلارات. أغنيتها المفضلة هي آنوزر داي ل. جيمي ليدل."
+      marcus: "مصمم ويب. هذا يعني أنه يستطيع برمجة صفحات الإنترنت والشكل العام للصفحة. هو أيضا واضع خطط جيد. في كلارات هو عضو بفريق الآي تي أو تكنولوجيا المعلومات. ويعتني بجعل صفحات الإنترنت الخاصة بنا تبدو في شكل جيد. أغنيته المفضلة هي هيستيريا ل. موسي"
+      nicole: "درست علوم التواصل بين الثقافات. هذا يعني أنها تعرف الكثير عن الثقافات و اللغة. قادرة على اتخاذ قرارات جيدة. هي مديرة لفريق البحث. أغنتها المفضلة هي بالابرا مي آمور ل. شاكا بونك."
+      nils: "خبير في الكمبيوتر والمعلومات. هذا يعني أنه يستطيع برمجة الكمبيوتر وصفحات الإنترنت. لديه دائما حل جيد كما انه يتعلم بسرعة. في كلارات هو عضو بفريق الآي تي أو تكنولوجيا المعلومات. أغنيته المفضلة هي يين ل. فييتس بروت."
+      stefan: "خبير ثقافي. هذا يعني أنه يعرف الكثير عن الثقافة والمجتمع. يمكنه إثارة إهتمام الناس لشئ ما ,هو من إبتكر فكرة كلارات. أغنيته المفضلة هي ريدرس اون زا ستورم ل. زا دورس."
       text: "كلارات هو مشروع تابع لمؤسسة بنكيزير الخيرية للمستقبل  (www.benckiser-stiftung.org) .\n نحن ننهض من خلال مؤسسة بنكيزيز منذ عدة سنوات بمشروعات فعالة لدعم الأطفال والشباب. \nوكنا نلاحظ دائما آنه من الصعب معرفة إذا ما كان هناك عروض للدعم. لذلك أصبح من الواضح لدينا:\n إذا كان بالفعل من الصعب علينا كخبراء أن نحصل على فكرة عامة؛ فكيف سيكون الأمر بالنسبة للأطفال والشباب والأسرة الذين يحتاجون بالفعل للمساعدة؟ \nأو بالنسبة للاجئين الذين في الأصل ليس لهم معرفة بإلمانيا بعد؟ \nفكانت الإجابة على هذه الإسئلة هي: صعب جدا! من هنا جاءت الفكرة لتولد كلارات: \n لإيجاد المساعدةبسهولة للأسرة عن طريق كلارات الأسرة وللاجئين عن طريق كلارات اللاجئين."
-      tine: |
-        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
-        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
-        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Survive It von Ghostpoet.
+      tine: "أخصائية إجتماعية. هي تستمع للناس بشكل جيد. كما أنها مؤلفة. هذا يعني أنها تجيد اللغة وتكتب قصص جميلة. في كلارات هي عضوة في فريق البحث. أعنيتها المفضلة هي سيرفيف إت ل. جوستبويت."
       title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      verena: "خبيرة سياسية. هذا يعني أنها تعرف الكثير عن السياسة والمجتمع. يمكنها جمع المعلومات بشكل جيد. في كلارات هي عضوة في فريق البحث. كما تقوم بعمل المعجم. أغنيتها المفضلة هي لوز إت ل. أوه وندر."
     agb:
       heading: "إرشادات قانونية"
       text_html: |
@@ -1008,26 +943,16 @@ ar:
       title: "أسئلة شائعة"
     home:
       how:
-        heading: Wie funktioniert clarat?
-        text: |
-          Gib ein, bei welchem Problem du Hilfe brauchst. Oder was dich
-          bedrückt. Oder wähle aus unseren Themen aus. Schon siehst du alle
-          Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
-          Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
-          Oder einfach vorbeigehen kannst.
+        heading: "كيف تعمل كلارات؟"
+        text: "أكتب المشكلة التي تحتاح مساعدة في حلها, او التي تقلقك. يمكنك أيضا أن تختار من الموضوعات الموجودة لدينا, فتري في الحال كل العروض التي تقدم الدعم بالقرب منك. وكذلك تعرف أيضا, كيف تحصل على المساعدة و بأي  وسيلة إتصال, سواء عن طريق التليفون أو إرسال إيميل أو الذهاب الي عنوان ما"
       title:
         family: "عروض دعم للأطفال والشبان والأسر"
         refugees: "عروض مساعدة للاجئين"
       whom:
-        heading: Für wen ist clarat?
-        text: |
-          clarat ist für alle da. clarat family für Kinder, Jugendliche und
-          Familien. clarat refugees für Flüchtlinge. Hier findest du
-          Unterstützung bei Fragen und bei Problemen. Für dich, deine Familie
-          und deine Freunde. Oder auch für andere Menschen, die du kennst und
-          die Hilfe brauchen.
+        heading: "كلارات من أجل من؟"
+        text: "كلارات للجميع, حيث إن كلارات الأسرة موجهة إلي الأطفال والشباب والأسر و كلارات اللاجئين موجهة للاجئين. فهنا تجد مساعدة إذا كان لديك سؤال أو مشكلة خاصة بك أو بأسرتك أو بأصدقائك أو لأي شخص آخرتعرفه وهو في حاجة لمساعدة "
       why:
-        heading: Warum gibt es clarat?
+        heading: "لماذا توجد كلارات؟"
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
     impressum:
       heading: Impressum
@@ -1039,7 +964,7 @@ ar:
     not_found:
       description: "اكتب فقط في خانة-بحث ما هي المساعدة التي تبحث عنها أو ما هي مشكلتك.\nوسوف تعرض لك كلارات عروض المساعدة التي بالقرب منك. \nأو اذهب إلى %{start_page} على الصفحة الرئيسية.\nهناك يمكنك عن طريق الصور الدائرية أن تبحث عن المساعدة المناسبة. "
       heading: "للأسف لم نتمكن من العثور على هذه الصفحة"
-      link_text: here
+      link_text: "هنا"
       title: 404
     privacy:
       chapter_eight:

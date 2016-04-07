@@ -14,11 +14,16 @@ fr:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Questions fréquentes
@@ -74,7 +79,7 @@ fr:
             name: |
               [ le lien  est sur le formulairede contact]
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/fr/refugees/contact/new
             var: link_to_contact_form
           question: Clarat propose une interface pour réutiliser les données?
         question_2:
@@ -125,7 +130,7 @@ fr:
           link_3:
             name: ici
             target: _blank
-            url: http://clarat.org/à-propos-de-nous
+            url: http://www.clarat.org/fr/refugees/a-propose-de-nous
             var: link_to_about_us
           question: Qui se trouve derrière clarat?
       section_2:
@@ -338,7 +343,35 @@ fr:
           answer: On veut rendre la recherche d’aide aussi facile que possible. C’est pourquoi on essaie de structurer les services de ton organisation de telle façon qu’on ne trouve pour chaque problème qu’un service spécifique. La personne qui cherche de l’aide peut de cette manière trouver plus rapidement celle dont il a besoin.
           question: Des services d’aides de mon organisation on fait plusieurs services sur clarat, pourquoi?
         question_6:
-          answer: "•\tEn Allemagne, il y a beaucoup de services d’aide pour les enfants, les ados, les familles et les réfugiés. On construit clarat petit à petit. C’est donc possible qu’on n’ait pas encore enregistré tous les services de ton organisation. Ou on a décidé dans un premier temps qu’on ne pouvait pas enregistrer tous les services de ton organisation sur clarat. Tu trouves\n<p>\nsur <b>clarat family</b> dans un premier temps:\n<ul>\n<li>\nseulement les services qui aident les personnes qui ont des problèmes.\n</li>\n<li>\nseulement les services payants offerts par des organisations à but non lucratif.\n</li>\n</ul>\n<br>\nPas de services pour lesquels les personnes reçoivent uniquement une aide médicale et physique.\n</p>\nEt tu trouves en premier lieu sur <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\npas de centres d’enregistrement ou de camp de réfugiés\n</li>\n<li>\npas de droit d’asile dans les églises\n</li>\n<li>\npas de portail pour bénévoles ou de portail pour les dons\n</li>\n</ul>\n</p>"
+          answer: |-
+            En Allemagne, il y a beaucoup de services d'aide pour les enfants, les ados, les familles et les réfugiés. On construit clarat petit à petit. C’est donc possible qu’on n’ait pas encore enregistré tous les services de ton organisation. Ou on a décidé dans un premier temps qu’on ne pouvait pas enregistrer tous les services de ton organisation sur clarat. Tu trouves
+            <p>
+            sur <b>clarat family</b> dans un premier temps:
+            <ul>
+            <li>
+            seulement les services qui aident les personnes qui ont des problèmes.
+            </li>
+            <li>
+            seulement les services payants offerts par des organisations à but non lucratif.
+            </li>
+            </ul>
+            <br>
+            Pas de services pour lesquels les personnes reçoivent uniquement une aide médicale et physique.
+            </p>
+            Et tu trouves en premier lieu sur <b>clarat refugees</b>:
+            <p>
+            <ul>
+            <li>
+            pas de centres d’enregistrement ou de camp de réfugiés
+            </li>
+            <li>
+            pas de droit d’asile dans les églises
+            </li>
+            <li>
+            pas de portail pour bénévoles ou de portail pour les dons
+            </li>
+            </ul>
+            </p>
           question: Je ne trouve pas tous les services de mon organisations sur clarat, pourquoi?
         question_7:
           answer: Adresse-toi à nous. Tu peux simplement nous signaler des erreurs et des propositions de modifications. Le mieux est de nous envoyer un courriel à %{mailto_clarat} ou de nous appeler au +49 (0)30 55 57 96 00.
@@ -825,6 +858,7 @@ fr:
             nuclear_family: pour les familles
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
+            family_parents_to_be: pour de futurs parents
       map_sidebar:
         map_output_searchresults: "émission de cartes des résultats de recherches"
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
@@ -838,8 +872,8 @@ fr:
         button: chercher
         loc_label: où
         loc_placeholder:
-          long: adresse, quartier, ville ou code postal
-          short: ville, code postal,...
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: quoi
         query_placeholder:
           long: services sur le thème …
@@ -1258,7 +1292,7 @@ fr:
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
-    ueber-uns: "à propose de nous"
+    ueber-uns: a-propose-de-nous
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer

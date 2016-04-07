@@ -660,7 +660,7 @@ ru:
     mobile_filter: "Результаты фильтровать"
     more_filter_options: "Показать больше фильтров"
     query_field:
-      example_placeholder: "Например %{word}"
+      example_placeholder: "нпр. %{word}…"
       placeholder_words:
         family:
         - "наркотики"

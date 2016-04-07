@@ -948,7 +948,7 @@ en:
     mobile_filter: Filter results
     more_filter_options: Show more filters
     query_field:
-      example_placeholder: e.g. %{word}
+      example_placeholder: e.g. %{word}…
       placeholder_words:
         family:
         - adoption

@@ -1009,7 +1009,7 @@ de:
     mobile_filter: Ergebnisse filtern
     more_filter_options: Mehr Filter anzeigen
     query_field:
-      example_placeholder: z.B. %{word}
+      example_placeholder: z.B. %{word}…
       placeholder_words:
         family:
         - Drogen

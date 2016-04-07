@@ -536,7 +536,7 @@ ar:
     mobile_filter: "تنقية النتائج"
     more_filter_options: "عرض فلاتر أكثر"
     query_field:
-      example_placeholder: "مثلا: %{word}"
+      example_placeholder: "مثلا: %{word}…"
       placeholder_words:
         family:
         - "المخدرات"

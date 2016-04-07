@@ -634,7 +634,7 @@ fr:
     mobile_filter: Filtrer les résultats
     more_filter_options: Afficher plus de filtres
     query_field:
-      example_placeholder: Par ex. %{word}
+      example_placeholder: Par ex. %{word}…
       placeholder_words:
         family:
         - Drogues
@@ -807,12 +807,12 @@ fr:
       nav_lang:
         languages:
           ar: "عربي"
-          de: Allemand
-          en: Anglais
+          de: Deutsch
+          en: English
           fr: Français
-          pl: Polonais
+          pl: Polski
           ru: "Русский"
-          tr: Turc
+          tr: Türkçe
         title: Traductions automatiques
       navigation:
         category_headline: ou recherches par catégories

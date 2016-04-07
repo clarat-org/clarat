@@ -679,7 +679,7 @@ pl:
     mobile_filter: Filtruj wyniki
     more_filter_options: Pokaż więcej filtrów
     query_field:
-      example_placeholder: n.p. %{word}
+      example_placeholder: n.p. %{word}…
       placeholder_words:
         family:
         - narkotyki

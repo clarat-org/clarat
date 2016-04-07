@@ -6,9 +6,9 @@ de:
         message: NOTRANSLATE
         name: NOTRANSLATE
       search_location:
-        latitude: Latitude
-        longitude: Longitude
-        query: Query
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -20,7 +20,7 @@ de:
         query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
-      search_location: Search location
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
       search_location: NOTRANSLATE

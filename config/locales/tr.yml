@@ -5,6 +5,10 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ tr:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -58,7 +63,7 @@ tr:
           link_1:
             name: Bizim ile irtibata geç.
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/tr/refugees/iletişim/yeni
             var: link_to_contact_form
           question: Clarat verileri yeniden kullanmak için bir arayüz sunuyor mu?
         question_2:
@@ -769,6 +774,7 @@ tr:
             family_children: "Çocuk ve gençler için"
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
+            family_parents_to_be: Ebeveyn adayları için
             family_pregnant_woman: Hamileler için
             nuclear_family: Aileler için
             parents: Ebeveynler için
@@ -790,8 +796,8 @@ tr:
         button: Arama
         loc_label: Nerede
         loc_placeholder:
-          long: Adres, İlçe, Semt veya posta kodu
-          short: "İl, posta kodu, …"
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Ne
         query_placeholder:
           long: "… konu ile ilgili yardımlar"

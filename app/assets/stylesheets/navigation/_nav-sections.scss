@@ -40,6 +40,13 @@
   height: 110px;
   text-align: center;
   font-size: 18px;
+  word-wrap: break-word;
+
+  // For visual consistency, avoiding multi line on desktop
+
+  body.pl & {
+    font-size: 16px;
+  }
 
   a {
     position: absolute;

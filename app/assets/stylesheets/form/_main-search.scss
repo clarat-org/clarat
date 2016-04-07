@@ -123,6 +123,10 @@
     padding-left: 68px;
   }
 
+  body.tr & {
+    padding-left: 48px;
+  }
+
   body.pl & {
     padding-left: 45px;
   }
@@ -140,6 +144,10 @@
 
   body.en & {
     padding-left: 79px;
+  }
+
+  body.tr & {
+    padding-left: 83px;
   }
 
   body.fr & {

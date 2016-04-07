@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 88e67cf869d0ea880a06179580e383d8a808cf0c
-  branch: feature/753-languages
+  revision: 9d2d9fbf913806c1043654ed6d64a2dcc9b8bb1c
   specs:
     clarat_base (0.1.4)
       aasm

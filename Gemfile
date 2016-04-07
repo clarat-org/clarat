@@ -5,7 +5,7 @@ ruby '2.2.2'
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base', branch: 'feature/753-languages'
+gem 'clarat_base', github: 'clarat-org/clarat_base'
 
 gem 'bundler', '>= 1.8.4'
 

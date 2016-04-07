@@ -679,7 +679,7 @@ pl:
     mobile_filter: Filtruj wyniki
     more_filter_options: Pokaż więcej filtrów
     query_field:
-      example_placeholder: n.p. %{word}
+      example_placeholder: n.p. %{word}…
       placeholder_words:
         family:
         - narkotyki
@@ -1084,7 +1084,9 @@ pl:
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: |-

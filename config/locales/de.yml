@@ -1009,7 +1009,7 @@ de:
     mobile_filter: Ergebnisse filtern
     more_filter_options: Mehr Filter anzeigen
     query_field:
-      example_placeholder: z.B. %{word}
+      example_placeholder: z.B. %{word}…
       placeholder_words:
         family:
         - Drogen
@@ -1548,10 +1548,12 @@ de:
           refugees.
     impressum:
       heading: Impressum
-      responsible_html: |-
+      responsible_html: |
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: |

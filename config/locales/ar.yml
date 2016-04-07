@@ -536,7 +536,7 @@ ar:
     mobile_filter: "تنقية النتائج"
     more_filter_options: "عرض فلاتر أكثر"
     query_field:
-      example_placeholder: "مثلا: %{word}"
+      example_placeholder: "مثلا: %{word}…"
       placeholder_words:
         family:
         - "المخدرات"
@@ -953,7 +953,9 @@ ar:
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: "اكتب فقط في خانة-بحث ما هي المساعدة التي تبحث عنها أو ما هي مشكلتك.\nوسوف تعرض لك كلارات عروض المساعدة التي بالقرب منك. \nأو اذهب إلى %{start_page} على الصفحة الرئيسية.\nهناك يمكنك عن طريق الصور الدائرية أن تبحث عن المساعدة المناسبة. "

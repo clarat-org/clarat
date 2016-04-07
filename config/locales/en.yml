@@ -948,7 +948,7 @@ en:
     mobile_filter: Filter results
     more_filter_options: Show more filters
     query_field:
-      example_placeholder: e.g. %{word}
+      example_placeholder: e.g. %{word}…
       placeholder_words:
         family:
         - adoption
@@ -1491,7 +1491,9 @@ en:
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: |

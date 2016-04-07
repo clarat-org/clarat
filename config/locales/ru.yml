@@ -660,7 +660,7 @@ ru:
     mobile_filter: "Результаты фильтровать"
     more_filter_options: "Показать больше фильтров"
     query_field:
-      example_placeholder: "Например %{word}"
+      example_placeholder: "нпр. %{word}…"
       placeholder_words:
         family:
         - "наркотики"
@@ -1075,7 +1075,9 @@ ru:
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: "Напиши в поле поиска, какую помощь ты ищешь. Или какая\nу тебя проблема. clarat покажет предложения помощи рядом с тобой.\nИли перейди %{start_page} на главную страницу. Там ты можешь по круглым \nкартинкам найти нужную помощь.\n"

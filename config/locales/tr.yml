@@ -553,7 +553,7 @@ tr:
     mobile_filter: Sonuçları filtrele
     more_filter_options: Daha fazla filtre göster
     query_field:
-      example_placeholder: "örneğin %{word}"
+      example_placeholder: "örneğin %{word}…"
       placeholder_words:
         family:
         - Uyuşturucu
@@ -930,7 +930,9 @@ tr:
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: |-

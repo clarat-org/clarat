@@ -14,11 +14,16 @@ ru:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: "Часто задаваемые вопросы"
@@ -888,6 +893,7 @@ ru:
             nuclear_family: "для семей"
             parents: "для родителей"
             pregnant_woman: "для беременных"
+            family_parents_to_be: "для будущих родителей"
       map_sidebar:
         map_output_searchresults: "Вывод результатов поиска на карту"
       noscript_warning: |

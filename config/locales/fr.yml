@@ -14,11 +14,16 @@ fr:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Questions fréquentes
@@ -853,6 +858,7 @@ fr:
             nuclear_family: pour les familles
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
+            family_parents_to_be: pour de futurs parents
       map_sidebar:
         map_output_searchresults: "émission de cartes des résultats de recherches"
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.

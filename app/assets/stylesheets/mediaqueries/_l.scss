@@ -142,6 +142,7 @@
   .nav-sections__listitem {
     height: auto;
     width: 14.5%;
+    max-width: 107px;
     margin: 0;
     background-size: contain;
 
@@ -214,7 +215,7 @@
   .section-team__member {
     width: 32%;
     margin-left: 1.8%;
-    min-height: 640px;
+    min-height: 660px;
 
     &:nth-of-type(4n+1) { // reset
       margin-left: 1.8%;

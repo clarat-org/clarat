@@ -29,14 +29,19 @@ acquaintances:
   type: TargetAudienceFilter
   name: Bekannte
   identifier: family_acquaintances
+parents_to_be:
+  id: 7
+  type: TargetAudienceFilter
+  name: werdende Eltern
+  identifier: family_parents_to_be
 
 family:
-  id: 7
+  id: 8
   type: SectionFilter
   name: Family
   identifier: family
 refugees:
-  id: 8
+  id: 9
   type: SectionFilter
   name: Refugees
   identifier: refugees

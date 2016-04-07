@@ -5,6 +5,10 @@ ru:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ ru:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -67,7 +72,7 @@ ru:
           link_1:
             name: "обратись к нам"
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/ru/refugees/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9
             var: link_to_contact_form
           question: "Предлагает clarat возможность для передачи данных?"
         question_2:
@@ -878,6 +883,7 @@ ru:
             family_children: "для детей и молодежи"
             family_nuclear_family: "для семей"
             family_parents: "для родителей"
+            family_parents_to_be: "для будущих родителей"
             family_pregnant_woman: "для беременных"
             nuclear_family: "для семей"
             parents: "для родителей"
@@ -900,8 +906,8 @@ ru:
         button: "Искать"
         loc_label: "Где"
         loc_placeholder:
-          long: "Адрес, район, город или индекс"
-          short: "Город, индекс, …"
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: "Что"
         query_placeholder:
           long: "Предложения по теме …"

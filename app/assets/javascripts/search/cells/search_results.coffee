@@ -60,7 +60,7 @@ class Clarat.Search.Cell.SearchResults
     bridge = I18n.t 'js.search_results.bridge'
     enclosing = I18n.t 'js.search_results.enclosing'
 
-    output += " (#{@model.search_location}"
+    output += " (#{@model.search_location || I18n.t('conf.default_location')}"
     if @model.exact_location == 'true'
       output += " " + HandlebarsTemplates['remove_exact_location']()
     output += ")"

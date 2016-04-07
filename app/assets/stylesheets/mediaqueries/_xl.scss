@@ -77,6 +77,12 @@
       width: auto;
       margin-right: 10px;
     }
+
+    body.ar.template--pages-home & {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 0;
+    }
   }
 
   #search_form_query,

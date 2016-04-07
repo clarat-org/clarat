@@ -766,6 +766,12 @@
     text-align: left;
   }
 
+  .newsletter-subscribe__submit {
+    body.ar & {
+      padding: 0;
+    }
+  }
+
   // Misc ######################################
 
   .JS-Cookie-warning {

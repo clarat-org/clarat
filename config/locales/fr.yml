@@ -5,6 +5,10 @@ fr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ fr:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -815,6 +820,7 @@ fr:
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents
+            family_parents_to_be: pour de futurs parents
             family_pregnant_woman: pour les femmes enceintes
             nuclear_family: pour les familles
             parents: pour les parents

@@ -5,6 +5,10 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ tr:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -769,6 +774,7 @@ tr:
             family_children: "Çocuk ve gençler için"
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
+            family_parents_to_be: Ebeveyn adayları için
             family_pregnant_woman: Hamileler için
             nuclear_family: Aileler için
             parents: Ebeveynler için

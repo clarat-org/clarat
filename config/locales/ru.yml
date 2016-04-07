@@ -5,6 +5,10 @@ ru:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ ru:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -878,6 +883,7 @@ ru:
             family_children: "для детей и молодежи"
             family_nuclear_family: "для семей"
             family_parents: "для родителей"
+            family_parents_to_be: "для будущих родителей"
             family_pregnant_woman: "для беременных"
             nuclear_family: "для семей"
             parents: "для родителей"

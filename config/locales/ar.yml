@@ -5,6 +5,10 @@ ar:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ ar:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -462,7 +467,7 @@ ar:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
-        mul: 
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -728,6 +733,7 @@ ar:
             family_children: "للأطفال والشبان"
             family_nuclear_family: "للأسر"
             family_parents: "للآباء"
+            family_parents_to_be: "لمن سوف يصيرون والدين"
             family_pregnant_woman: "للحوامل"
             nuclear_family: "للأسر"
             parents: "للآباء"

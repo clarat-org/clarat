@@ -11,13 +11,14 @@ en:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
       search_location:
-        latitude: 
-        longitude: 
-        query: 
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Frequently asked questions
@@ -1172,6 +1173,7 @@ en:
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
+            family_parents_to_be: for parents to be
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1825,9 +1827,9 @@ en:
     organizations: organizations
     preview: preview
     rechtliche-hinweise: legal-information
-    search_locations: 
+    search_locations: search_locations
     subscribe: subscribe
-    subscriptions: 
+    subscriptions: subscriptions
     ueber-uns: about-us
     unsubscribe: unsubscribe
     update_requests: update_requests

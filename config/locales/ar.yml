@@ -11,13 +11,14 @@ ar:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
       search_location:
-        latitude: 
-        longitude: 
-        query: 
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: "أسئلة شائعة"
@@ -466,7 +467,7 @@ ar:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
-        mul: 
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -736,6 +737,7 @@ ar:
             nuclear_family: "للأسر"
             parents: "للآباء"
             pregnant_woman: "للحوامل"
+            family_parents_to_be: "لمن سوف يصيرون والدين"
       map_sidebar:
         map_output_searchresults: "إظهار بطاقة نتائج البحث"
       noscript_warning: |

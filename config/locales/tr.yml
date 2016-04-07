@@ -11,13 +11,14 @@ tr:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
       search_location:
-        latitude: 
-        longitude: 
-        query: 
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Sıkça sorulan sorular
@@ -777,6 +778,7 @@ tr:
             nuclear_family: Aileler için
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
+            family_parents_to_be: Ebeveyn adayları için
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |

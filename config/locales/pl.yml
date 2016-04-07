@@ -11,13 +11,14 @@ pl:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
       search_location:
-        latitude: 
-        longitude: 
-        query: 
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      search_location: NOTRANSLATE
   cells:
     faq:
       heading: Często zadawane pytania
@@ -898,6 +899,7 @@ pl:
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
+            family_parents_to_be: dla przyszłych rodziców
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.

@@ -186,12 +186,21 @@
     display: inline-block;
     margin: 0 0 3px 19px;
     font-size: 12px;
+
+    body.ar & {
+      margin: 0 19px 3px 0;
+    }
   }
 
   input {
     position: absolute;
     top: 5px;
     left: 0;
+
+    body.ar & {
+      right: 0;
+      left: auto;
+    }
   }
 }
 

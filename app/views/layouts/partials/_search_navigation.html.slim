@@ -8,11 +8,12 @@ header.header-main
       nav.nav-welt.nav-welt--notstart
         ul.nav-welt__list
           - SectionFilter::IDENTIFIER.each do |section|
-            li.nav-welt__listitem
-              = link_to section, offers_path(section: section),
+            li.nav-welt__listitem.nav-welt__listitem--start.tooltip--welcome.tooltip--welt[class="tooltip--welt-#{section}" title=t("shareds.tooltips.welcome.world_switch.#{section}")]              = link_to section, offers_path(section: section),
                         id: "clarat--#{section}"
       = render '/offers/shared/search_form', search_form: search_form,
                                              labels: :short,
                                              current_section: current_section
-      .Distributor__advanced-filter-trigger-wrapper
-        a.main-search__advanced-filter[href='#'] = t 'js.search.form_more_label'
+      .Distributor__advanced-filter-trigger-wrapper.tooltip--welcome.tooltip--advancedsearch[title=t('shareds.tooltips.welcome.advanced_search') href='#']
+        a.main-search__advanced-filter[href='#']
+          = t('js.search.form_more_label')
+

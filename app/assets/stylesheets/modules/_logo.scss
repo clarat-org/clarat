@@ -22,6 +22,10 @@
     background-size: 215px 88px;
   }
 
+  body.ar & {
+    float: right;
+  }
+
   a {
     display: block;
     width: inherit;

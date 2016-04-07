@@ -50,7 +50,10 @@ class SearchForm
   def initialize *attrs
     super
 
-    if !exact_location && search_location && search_location != I18n.t('conf.current_location')
+    return if exact_location
+    if search_location.blank? # Blank location means default wanted.
+      self.generated_geolocation = I18n.t('conf.default_latlng')
+    elsif search_location && search_location != I18n.t('conf.current_location')
       self.generated_geolocation = search_location_instance.geoloc
     end
   end

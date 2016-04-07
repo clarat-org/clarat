@@ -29,11 +29,11 @@ acquaintances:
   type: TargetAudienceFilter
   name: Bekannte
   identifier: family_acquaintances
-pregnant_woman:
+parents_to_be:
   id: 7
   type: TargetAudienceFilter
-  name: Schwangere
-  identifier: family_pregnant_woman
+  name: werdende Eltern
+  identifier: family_parents_to_be
 
 family:
   id: 8

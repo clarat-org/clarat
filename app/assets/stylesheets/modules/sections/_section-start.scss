@@ -32,12 +32,16 @@
   @extend %clarat_rounding_start;
   position: relative;
   margin-bottom: 0;
-  padding: 0 30px;
-  height: 45px;
+  min-height: 45px;
   color: $brand_white;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 45px;
+  padding: 9px 30px;
+
+  // For visual consistency, avoiding two line headline on desktop
+  body.fr & {
+    font-size: 22px;
+  }
 
   body.refugees & {
     background-color: $brand_core_refugees;

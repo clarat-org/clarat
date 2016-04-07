@@ -66,8 +66,28 @@
     }
   }
 
+  &.ar  {
+
+    .section-content--contact-person-list {
+      li {
+        margin-right: 25px;
+        margin-left: 0;
+      }
+    }
+
+    .page-detail__stamp {
+      background-position: right center;
+      padding-right: 25px;
+    }
+
+  }
+
   .page-detail__header {
     position: relative;
+  }
+
+  .page-detail__title {
+    font-weight: 700;
   }
 
   .page-detail__icons {
@@ -87,7 +107,9 @@
     background-size: auto 20px;
     line-height: 1.8;
     margin-bottom: 10px;
+
   }
+
 
   .page-detail__icon {
     display: inline-block;

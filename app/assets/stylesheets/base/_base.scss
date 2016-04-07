@@ -18,6 +18,10 @@ html {
 
 body {
   min-height: 100%;
+
+  &.ar {
+    direction: rtl;
+  }
 }
 
 html,

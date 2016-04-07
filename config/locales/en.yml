@@ -5,6 +5,10 @@ en:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ en:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -882,6 +887,7 @@ en:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -1100,7 +1106,7 @@ en:
         gplus:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
-        impressum: Site notice
+        impressum: Imprint
         privacy: Privacy
         tos: Legal information
         twitter:
@@ -1163,6 +1169,7 @@ en:
             family_children: for children and adolescents
             family_nuclear_family: for families
             family_parents: for parents
+            family_parents_to_be: for parents to be
             family_pregnant_woman: for pregnant women
             nuclear_family: for families
             parents: for parents
@@ -1184,8 +1191,8 @@ en:
         button: Search
         loc_label: Where
         loc_placeholder:
-          long: Address, District, City or ZIP
-          short: City, ZIP, …
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: What
         query_placeholder:
           long: Offers on the subject of …
@@ -1205,7 +1212,7 @@ en:
           tue: Tuesday
           wed: Wednesday
         heading: When can you do that?
-      speaking: In what language will you get help?
+      speaking: What languages do they speak?
       website_section:
         internet_presence: Where can you get more information online?
         websites:
@@ -1247,6 +1254,8 @@ en:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline-offers--family: Support offerings for children, adolescents and families
+      headline-offers--refugees: Support offerings for refugees
       offers_all: What kind of help does the organization offer?
       where: Where is the organization located?
       who: What does the organization do?
@@ -1478,12 +1487,12 @@ en:
           for help for your family. And on clarat refugees if you are looking
           for help for refugees.
     impressum:
-      heading: Site notice
-      responsible_html: |
-        CEO of the Benckiser Stiftung Zukunft<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (responsible for the website content)
-      title: Site notice
+      heading: Impressum
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
+      title: Impressum
     not_found:
       description: |
         Enter a term in the search field describing the help you're looking for.
@@ -1800,31 +1809,30 @@ en:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
   routes:
     '404': "'404'"
     contacts: contacts
-    datenschutzhinweise: 
-    definitions: 
+    datenschutzhinweise: privacy
+    definitions: definitions
     emails: emails
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
-    impressum: site-notice
+    impressum: impressum
     new: new
     offers: offers
     organizations: organizations
     preview: preview
-    rechtliche-hinweise: 
-    search_locations: 
-    subscribe: 
-    subscriptions: 
+    rechtliche-hinweise: legal-information
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: subscriptions
     ueber-uns: about-us
-    unsubscribe: 
-    update_requests: 
+    unsubscribe: unsubscribe
+    update_requests: update_requests
     users: users
   shareds:
     forms:
@@ -1838,10 +1846,10 @@ en:
         In that case you should have a look at the German original.
     tooltips:
       welcome:
-        advanced_search: 
+        advanced_search: Do you want to refine your search? Click here. Advanced search options will open up automatically.
         world_switch:
-          family: 
-          refugees: 
+          family: Click here to get to clarat family. In clarat family, you can search for help and support offerings for children, adolescents and families.
+          refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support offerings for refugees.
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1856,7 +1864,7 @@ en:
       new:
         button: Subscribe to our newsletter
         placeholder: Email address
-  success: 
+  success: 'Thanks! Soon, clarat will exist in your area, too. We will inform you respectively. '
   update_requests:
     create:
       success: |

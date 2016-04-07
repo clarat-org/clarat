@@ -5,6 +5,10 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ tr:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -58,7 +63,7 @@ tr:
           link_1:
             name: Bizim ile irtibata geç.
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/tr/refugees/iletişim/yeni
             var: link_to_contact_form
           question: Clarat verileri yeniden kullanmak için bir arayüz sunuyor mu?
         question_2:
@@ -335,7 +340,7 @@ tr:
       shared:
         explanation_1: "Burada clarat'taki tüm tekliflerini bir arada görebilirsin. \nBunlar, e-mail adresini bulduğumuz teklifler olmaktadır."
         explanation_2: Gelecekte yeni tekliflerini bulursak, bunların bağlantılarını burada da bulabileceksin.
-        explanation_3: 
+        explanation_3: Bunun için bu sayfayı yer işareti olarak kayderek clarat'ta senin ile ilgili neler olduğunu hızlıca görebilirsin.
         explanation_4: |-
           Yeni teklfilerin clarat'ta yayınlandığında e-mail yolu ile haberdar olmak ister misin?
           O halde sana yolladığımız e-mailin sonundaki bağlantıyı kullan.
@@ -488,6 +493,7 @@ tr:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -579,7 +585,7 @@ tr:
       form_more_label: Arama tercihlerini göster
       headlines:
         age: "Çocuğun yaşı"
-        approach: 
+        approach: Nasıl?
         gender: Cinsiyet
         language: Dil
         target_audience: Kim için destek?
@@ -595,9 +601,9 @@ tr:
       faq_text: 'Sıkça sorulan soruları ve cevapları bulabilirsin '
       language_explanation:
         connector: ve
-        text: 
+        text: Bu destek türü %{language_list} mevcuttur.
       map:
-        cooperation: 
+        cooperation: Ortak çalışılan bir proje
         enlarge_map: Haritayı büyüt
         headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
       more: Daha fazla telefon ve online hizmetler
@@ -731,7 +737,7 @@ tr:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
-        title: 'Bitte folgendes übersetzen: ''Automatische Übersetzungen!'''
+        title: Otomatik çeviriler
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -768,6 +774,7 @@ tr:
             family_children: "Çocuk ve gençler için"
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
+            family_parents_to_be: Ebeveyn adayları için
             family_pregnant_woman: Hamileler için
             nuclear_family: Aileler için
             parents: Ebeveynler için
@@ -789,8 +796,8 @@ tr:
         button: Arama
         loc_label: Nerede
         loc_placeholder:
-          long: Adres, İlçe, Semt veya posta kodu
-          short: "İl, posta kodu, …"
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Ne
         query_placeholder:
           long: "… konu ile ilgili yardımlar"
@@ -798,7 +805,7 @@ tr:
     show:
       last_update: Son kayıt düzenleme tarihi
       next_steps:
-        code_word: 
+        code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
         heading: Ne yapmalısın?
       opening_section:
         days:
@@ -852,6 +859,8 @@ tr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline-offers--family: "Çocuklar, gençler ve aileler için yardıum çeşitleri"
+      headline-offers--refugees: Mülteciler için yardım çeşitleri
       offers_all: Bu organizasyon ne tür yardımlar sunmaktadır?
       where: Bu organizasyonu nerede bulabilirsin?
       who: Bu organizasyon ne yapmaktadır?
@@ -919,9 +928,9 @@ tr:
     impressum:
       heading: Impressum
       responsible_html: |-
-        Yönetim Kurulu<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (Web sitenin içeriğinden sorumludur)
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
       description: |-
@@ -1238,8 +1247,7 @@ tr:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1257,12 +1265,12 @@ tr:
     organizations: organizasyonlar
     preview: "Ön izleme"
     rechtliche-hinweise: Yasal uyarılar
-    search_locations: 
-    subscribe: 
-    subscriptions: 
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: supsciptions
     ueber-uns: ueber-uns
-    unsubscribe: 
-    update_requests: 
+    unsubscribe: unsubscribe
+    update_requests: update_request
     users: kullanıcılar
   shareds:
     forms:
@@ -1276,10 +1284,10 @@ tr:
         Bu gibi durumlarda Almanca metne bakman daha doğru olacaktır.
     tooltips:
       welcome:
-        advanced_search: 
+        advanced_search: Daha detaylı bir arama mı yapmak istiyorsun? O halde buraya tıkla. Karşına seçenekler içeren bir kutu açılacak.
         world_switch:
-          family: 
-          refugees: 
+          family: Buraya tıkladığında clarat Family erişebilirsin. clarat Family'de çocuklar, gençler ve aileler için destek arayabilirsin.
+          refugees: Buraya tıkladığında clarat Refugees'e erişebilirsin. clarat Refugees'de mülteciler için destek arayabilirsin.
   simple_form:
     required:
       html: <abbr title="required">*</abbr>
@@ -1295,7 +1303,7 @@ tr:
       new:
         button: E-bülten aboneliği
         placeholder: E-Mail Adresi
-  success: 
+  success: Teşekkür ederiz. Çok yakında senin bulunduğun yerde de desteklerimiz olacak. Bu gerçekleşince tarafımızdan bir e-mail alacaksın.
   update_requests:
     create:
       success: |

@@ -7,6 +7,10 @@
 .Categories {
   @extend %layout-col-29;
   margin: 26px 2.5% 20px 0;
+
+  body.ar & {
+    margin: 26px 0 20px 2.5%;
+  }
 }
 
 .Categories__headline {
@@ -19,12 +23,13 @@
     @extend %roboto_bold;
     @extend %clarat_rounding_start;
     @extend %clarat_rounding_end;
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     padding: 4px 10px;
     background: $brand_yellow;
     color: $brand_white;
     text-decoration: none;
+    word-break: break-all;
   }
 }
 

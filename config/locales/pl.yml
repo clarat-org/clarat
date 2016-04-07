@@ -5,6 +5,10 @@ pl:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      search_location:
+        latitude: NOTRANSLATE
+        longitude: NOTRANSLATE
+        query: NOTRANSLATE
       subscription:
         email: NOTRANSLATE
       update_request:
@@ -12,6 +16,7 @@ pl:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -68,7 +73,7 @@ pl:
           link_1:
             name: po prostu daj nam znać
             target: _blank
-            url: http://www.clarat.org/refugees/kontakt/new
+            url: http://www.clarat.org/pl/refugees/kontakt/nowe
             var: link_to_contact_form
           question: Czy clarat oferuje otwarty interfejs, który umożliwiłby dalsze wykorzystanie danych?
         question_2:
@@ -121,7 +126,7 @@ pl:
           link_3:
             name: kliknij tu
             target: _blank
-            url: http://www.clarat.org/ueber-uns
+            url: http://www.clarat.org/pl/refugees/o-nas
             var: link_to_about_us
           question: " Kto kryje się za claratem?"
       section_2:
@@ -265,7 +270,7 @@ pl:
           answer: Wiele ofert pomocy, które znajdziesz w claracie, są bezpłatne. Jednakże istnieją formy pomocy, które są płatne, co nie znaczy, że będziesz musiał sam wnieść opłaty za usługę. Jest możliwe, że kasa chorych (ZUS) poniesie koszty. Nie wykluczone, że koszty przejmie instytucja publiczna, np. urząd. Niemniej jednak, najlepiej poinformować się o ewentualnych kosztach tam, gdzie pomoc jest oferowana. Wówczas dowiesz się na pewno, czy musisz liczyć się z kosztami, czy też usługa jest dla ciebie bezpłatna.
           question: Czy znajdę bezpłatną pomoc?
         question_7:
-          answer: Z niektórych propozycji pomocy, które znajdziesz w claracie, możesz skorzystać anonimowo. To znaczy, że nikomu nie musisz mówić, jak się nazywasz. Jeśli z danej pomocy możesz skorzystać anonimowo, znajdziesz to w claracie pod <i>co musisz zrobić?<i/> Jeśli tego brakuje, najlepiej dowiedz się niezwłocznie w miejscu, gdzie pomoc jest proponowana.
+          answer: Z niektórych propozycji pomocy, które znajdziesz w claracie, możesz skorzystać anonimowo. To znaczy, że nikomu nie musisz mówić, jak się nazywasz. Jeśli z danej pomocy możesz skorzystać anonimowo, znajdziesz to w claracie pod <i>co musisz zrobić?</i> Jeśli tego brakuje, najlepiej dowiedz się niezwłocznie w miejscu, gdzie pomoc jest proponowana.
           question: Znajdę pomoc, z której mogę anonimowo skorzystać?
         question_8:
           answer: |-
@@ -323,7 +328,7 @@ pl:
           question: Jak tłumaczymy trudne słowa w clarat?
         question_3:
           answer: W clarat stosujemy prosty język. To znaczy między innymi, że używamy krótkich zdań. Dlatego nie piszemy np. uczniowie i uczennice. Zamiast tego tylko uczniowie. Choć mamy na myśli uczniów i uczennice. To dla nas ważne, traktować wszystkich na równych prawach. Ale krótkie zdania są łatwiejsze w czytaniu.
-          question: Dlaczego w clarat zawsze jest napisane tylko <i>uczniowie<i/>, a nie <i>uczniowie i uczennice<i/>?
+          question: Dlaczego w clarat zawsze jest napisane tylko <i>uczniowie</i>, a nie <i>uczniowie i uczennice</i>?
         question_4:
           answer: W clarat znajdziesz pomoc dla dzieci, młodzieży i rodziców każdej orientacji seksualnej. Dla lesbijek, gejów, osób biseksualnych, transseksualnych i interseksualnych. Nie możemy zawsze ich wymieniać i opisywać. Ponieważ teksty w clarat muszą być proste i krótkie. Dlatego stosujemy skrót LGBTI. To angielski skrót oznaczający lesbijki, gejów, osoby biseksualne, transseksualne i interseksualne.
           question: Dlaczego clarat stosuje skrót <i>LGBTI</i>?
@@ -617,6 +622,7 @@ pl:
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
@@ -865,6 +871,7 @@ pl:
         json:
           age:
             few: "%{count} lat"
+            many: "%{count} lat"
             one: 1 rok
             other: "%{count} lat"
             zero: "< 1 rok"
@@ -888,6 +895,7 @@ pl:
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
+            family_parents_to_be: dla przyszłych rodziców
             family_pregnant_woman: dla kobiet w ciąży
             nuclear_family: dla rodzin
             parents: dla rodziców
@@ -907,8 +915,8 @@ pl:
         button: Szukaj
         loc_label: Gdzie
         loc_placeholder:
-          long: adres, dzielnica, miasto lub kod pocztowy
-          short: miasto, kod pocztowy, …
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Co
         query_placeholder:
           long: Oferty na temat …
@@ -968,6 +976,8 @@ pl:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline-offers--family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+      headline-offers--refugees: Oferty wsparcia dla uchodźców
       offers_all: Jaką pomoc oferuje ta organizacja?
       where: Gdzie znajdziesz tę organizację?
       who: Co robi ta organizacja?
@@ -1071,9 +1081,9 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
-      responsible_html: |
-        Vorstand<br/>
-        Dr. Dr. Christoph Glaser<br/>
+      responsible_html: |-
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)
       title: Impressum
     not_found:
@@ -1390,8 +1400,7 @@ pl:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
@@ -1410,10 +1419,10 @@ pl:
     preview: podgląd
     rechtliche-hinweise: nota prawna
     search_locations: wyszukaj
-    subscribe: subskrybuj
+    subscribe: subscribe
     subscriptions: subskrypcje
-    ueber-uns: o nas
-    unsubscribe: odwołaj subskrypcję
+    ueber-uns: o-nas
+    unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
   shareds:

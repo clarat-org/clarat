@@ -14,16 +14,11 @@ ar:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      search_location:
-        latitude: NOTRANSLATE
-        longitude: NOTRANSLATE
-        query: NOTRANSLATE
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
-      search_location: NOTRANSLATE
   cells:
     faq:
       heading: "أسئلة شائعة"
@@ -89,7 +84,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: "/haeufige-fragen/#how_to_find_right_help"
+            url: "/أسئلة-شائعة/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           question: "كيف تعمل كلارات؟"
         question_4:
@@ -109,7 +104,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: "/haeufige-fragen/#how_many_languages"
+            url: "/أسئلة-شائعة/#how_many_languages"
             var: ref_to_how_many_languages
           question: "ما هو المميز في كلارات؟"
         question_9:
@@ -127,7 +122,7 @@ ar:
           link_3:
             name: "هنا"
             target: _blank
-            url: 
+            url: http://www.clarat.org/ar/refugees/about-us
             var: link_to_about_us
           question: "من وراء كلارات؟"
       section_2:
@@ -142,7 +137,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: "/haeufige-fragen/#how_to_find_right_help"
+            url: "/أسئلة-شائعة/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           link_2:
             name: post@clarat.org
@@ -205,7 +200,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "هنا"
-            url: 
+            url: "/أسئلة-شائعة/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           question: "كيف يمكنني تنقية نتائج البحث؟"
       section_3:
@@ -279,7 +274,7 @@ ar:
           link_1:
             class: FAQ_anchor_link
             name: "فيفضل"
-            url: 
+            url: "/أسئلة-شائعة/#who_finds_help"
             var: ref_to_who_finds_help
           link_2:
             name: post@clarat.org
@@ -309,7 +304,7 @@ ar:
   emails:
     offers_index:
       family:
-        heading: 
+        heading: لك كلارات الأسرة-عرض ل <span id="secure-email-0">%{email}</span>
         no_results: "في الوقت الحاضر لا توجد عروض منشورة في كلارات الأسرة من أجل \n<span id=\"secure-email-0\">%{email}</span>"
         toggle_section_html:
           few: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
@@ -541,7 +536,7 @@ ar:
     mobile_filter: "تنقية النتائج"
     more_filter_options: "عرض فلاتر أكثر"
     query_field:
-      example_placeholder: 
+      example_placeholder: "مثلا: %{word}"
       placeholder_words:
         family:
         - "المخدرات"
@@ -567,7 +562,7 @@ ar:
         - "سلطات"
         - "حق الإقامة"
     routes:
-      faq: 
+      faq: "أسئلة-شائعة"
     search:
       form_less_label: "اخفاء خيارات البحث"
       form_more_label: "عرض خيارات البحث"
@@ -773,7 +768,6 @@ ar:
             nuclear_family: "للأسر"
             parents: "للآباء"
             pregnant_woman: "للحوامل"
-            family_parents_to_be: "لمن سوف يصيرون والدين"
       map_sidebar:
         map_output_searchresults: "إظهار بطاقة نتائج البحث"
       noscript_warning: |
@@ -889,7 +883,7 @@ ar:
       stefan: "خبير ثقافي. هذا يعني أنه يعرف الكثير عن الثقافة والمجتمع. يمكنه إثارة إهتمام الناس لشئ ما ,هو من إبتكر فكرة كلارات. أغنيته المفضلة هي ريدرس اون زا ستورم ل. زا دورس."
       text: "كلارات هو مشروع تابع لمؤسسة بنكيزير الخيرية للمستقبل  (www.benckiser-stiftung.org) .\n نحن ننهض من خلال مؤسسة بنكيزيز منذ عدة سنوات بمشروعات فعالة لدعم الأطفال والشباب. \nوكنا نلاحظ دائما آنه من الصعب معرفة إذا ما كان هناك عروض للدعم. لذلك أصبح من الواضح لدينا:\n إذا كان بالفعل من الصعب علينا كخبراء أن نحصل على فكرة عامة؛ فكيف سيكون الأمر بالنسبة للأطفال والشباب والأسرة الذين يحتاجون بالفعل للمساعدة؟ \nأو بالنسبة للاجئين الذين في الأصل ليس لهم معرفة بإلمانيا بعد؟ \nفكانت الإجابة على هذه الإسئلة هي: صعب جدا! من هنا جاءت الفكرة لتولد كلارات: \n لإيجاد المساعدةبسهولة للأسرة عن طريق كلارات الأسرة وللاجئين عن طريق كلارات اللاجئين."
       tine: "أخصائية إجتماعية. هي تستمع للناس بشكل جيد. كما أنها مؤلفة. هذا يعني أنها تجيد اللغة وتكتب قصص جميلة. في كلارات هي عضوة في فريق البحث. أعنيتها المفضلة هي سيرفيف إت ل. جوستبويت."
-      title: "Über Uns"
+      title: "معلومات عن فريق عمل كلارات"
       verena: "خبيرة سياسية. هذا يعني أنها تعرف الكثير عن السياسة والمجتمع. يمكنها جمع المعلومات بشكل جيد. في كلارات هي عضوة في فريق البحث. كما تقوم بعمل المعجم. أغنيتها المفضلة هي لوز إت ل. أوه وندر."
     agb:
       heading: "إرشادات قانونية"
@@ -1284,7 +1278,7 @@ ar:
     definitions: "تعريف"
     emails: "رسائل بريد إليكتروني"
     faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
+    haeufige-fragen: "أسئلة-شائعة"
     impressum: impressum
     new: "جديد"
     offers: "عروض"
@@ -1294,7 +1288,7 @@ ar:
     search_locations: "بحث_المواقع"
     subscribe: subscribe
     subscriptions: "إشتراكات"
-    ueber-uns: ueber-uns
+    ueber-uns: about-us
     unsubscribe: unsubscribe
     update_requests: "طلبات-تحديث"
     users: "مستخدم"

@@ -21,9 +21,9 @@
                   | &nbsp;
                   / Last update to make sort order transparent
                   span
-                      i.fa.fa-clock-o
-                      => t 'offers.show.last_update'
-                      = offer.updated_at.strftime("%d.%m.%Y")
+                    i.fa.fa-clock-o
+                    => t 'offers.show.last_update'
+                    = offer.updated_at.strftime("%d.%m.%Y")
     - else
       h2 == t ".#{@current_section}.no_results",
               email: secure_email_to(@email.address, 0)

@@ -984,13 +984,15 @@ fr:
           clarat est là pour tous. clarat family pour les enfants, les ados et les familles. clarat refugees pour les réfugiés. Ici tu trouves de l’aide si tu as des questions ou des problèmes. De l’aide pour toi, pour ta famille ou pour tes amis. Ou pour d’autre gens que tu connais et qui ont besoin d’aide.
       why:
         heading: Clarat, pourquoi ça existe?
-        text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoups de services de soutien pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
+        text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoup de services de soutien pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
     impressum:
       heading: Impressum
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
-        (verantwortlich für den Inhalt der Website)
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: "écris simplement le type d'aide que tu recherches dans le champ. Ou \nen quoi consiste ton problème.Clarat te montre alors plus de services proche de chez toi.\nou va %{start_page} sur la page d'accueil. Là, tu peux trouver l'aide adaptée \nen utilisant les images circulaires."

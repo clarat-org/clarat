@@ -10,7 +10,7 @@
         == translation_block @offer.translation_automated? do
           = @offer.name
 
-    - cache [@offer, @current_section, @locale] do
+    - cache [@offer, @offer.target_audience_filters.pluck(:id).sort.join(','), @current_section, @locale] do
       .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
         div[itemprop='name']
           - stamp_method = @current_section == 'family' ? "_stamp_family" : "_stamp_refugees"

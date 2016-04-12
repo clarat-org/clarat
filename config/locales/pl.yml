@@ -738,11 +738,21 @@ pl:
         one: Jedna oferta na miejscu
         other: "%{count} oferty na miejscu"
         zero: Niestety brak ofert na miejscu
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
         other: "%{count} porady telefoniczne i oferty online"
         zero: Brak porad telefonicznych i ofert online
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Pokaż oferty lokalne
     shared:
       current_and_original_locale:

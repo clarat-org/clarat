@@ -1067,10 +1067,44 @@ de:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
         zero: Leider keine Angebote vor Ort
+      personal_offers_new:
+        _query:
+          one: Ein Angebot vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+        category:
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} gefunden
+        category_query:
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+        default:
+          one: Ein Angebot vor Ort (%{location}) gefunden
+          other: "%{count} Angebote vor Ort (%{location}) gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) gefunden
       remote_offers:
         one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
         zero: Keine Telefonberatungen und Onlineangebote
+      remote_offers_new:
+        _query:
+          one: Eine Telefonberatung oder ein Onlineangebot für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden
+        category:
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} gefunden
+        category_query:
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden
+        default:
+          one: Eine Telefonberatung oder ein Onlineangebot
+          other: "%{count} Telefonberatungen und Onlineangebote"
+          zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
     shared:
       current_and_original_locale:

@@ -594,10 +594,20 @@ ar:
         one: "عرض محلي"
         other: "%{count} عروض محلية"
         zero: "للأسف لا توجد عروض  "
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: "عرض عروض مكانية أكثر"
     shared:
       current_and_original_locale:

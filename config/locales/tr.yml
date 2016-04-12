@@ -611,10 +611,20 @@ tr:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
         zero: Maalesef hizmet bulunmamaktadır
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:

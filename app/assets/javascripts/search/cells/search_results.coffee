@@ -56,23 +56,49 @@ class Clarat.Search.Cell.SearchResults
   ## Headline Building Helpers
 
   mainResultsHeadline: (i18nKey) ->
-    output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
-    bridge = I18n.t 'js.search_results.bridge'
-    enclosing = I18n.t 'js.search_results.enclosing'
+    locale_entry = "js.search_results.#{i18nKey}_new"
 
-    output += " (#{@model.search_location || I18n.t('conf.default_location')}"
-    if @model.exact_location == 'true'
-      output += " " + HandlebarsTemplates['remove_exact_location']()
-    output += ")"
+    variable_hash = {count: @mainResults.nbHits}
+    appendix = ''
+
+    if i18nKey == 'personal_offers'
+      location = "#{@model.search_location || I18n.t('conf.default_location')}"
+      if @model.exact_location == 'true'
+        location += " " + HandlebarsTemplates['remove_exact_location']()
+      variable_hash['location'] = location
 
     if @model.category
-      output += " in #{@breadcrumbPath @model}"
+      variable_hash['category_path'] = @breadcrumbPath(@model)
+      appendix += 'category'
 
     if @model.query
-      output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
-      output += HandlebarsTemplates['remove_query_link']()
+      variable_hash['search_query'] = " &bdquo;#{@model.query}&ldquo; " + HandlebarsTemplates['remove_query_link']()
+      appendix += '_query'
 
-    output + " #{enclosing}"
+    if appendix == ''
+      locale_entry += '.default'
+    else
+      locale_entry += ('.' + appendix)
+
+    I18n.t locale_entry, variable_hash
+
+    # output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
+    # bridge = I18n.t 'js.search_results.bridge'
+    # enclosing = I18n.t 'js.search_results.enclosing'
+    #
+    # output += " (#{@model.search_location || I18n.t('conf.default_location')}"
+    # if @model.exact_location == 'true'
+    #   output += " " + HandlebarsTemplates['remove_exact_location']()
+    # output += ")"
+    #
+    # if @model.category
+    #   output += " in #{@breadcrumbPath @model}"
+    #
+    # if @model.query
+    #   output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
+    #   output += HandlebarsTemplates['remove_query_link']()
+    #
+    # output + " #{enclosing}"
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->

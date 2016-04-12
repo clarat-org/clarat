@@ -719,11 +719,21 @@ ru:
         one: "Предложение на месте"
         other: "%{count} Предложения на месте"
         zero: "К сожалению, нет предложений"
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         few: "%{count} Telefonberatungen und Onlineangebote"
         one: "Одно предложение по телефону или одно предложение он-лайн"
         other: "%{count} Предложения по телефону и он-лайн"
         zero: "Нет предложений по телефону или он-лайн"
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: "Показать предложения на месте"
     shared:
       current_and_original_locale:

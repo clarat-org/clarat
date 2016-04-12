@@ -1007,10 +1007,20 @@ en:
         one: One local offer
         other: "%{count} local offers"
         zero: No local offers found
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
         zero: No remote offers
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Show local offers
     shared:
       current_and_original_locale:

@@ -979,6 +979,12 @@ de:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: Nearby
+        relevance: Relevance
+      sort_order:
+        nearby: Nearby
+        relevance: Relevance
   js:
     ajax_error:
       error: Suchfehler
@@ -1072,6 +1078,40 @@ de:
         other: "%{count} Telefonberatungen und Onlineangebote"
         zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
+      personal_offers_new:
+        category:
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} gefunden
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} gefunden"
+        category_query:
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden"
+        default:
+          one: Ein Angebot vor Ort (%{location}) gefunden
+          zero: Leider keine Angebote vor Ort (%{location}) gefunden
+          other: "%{count} Angebote vor Ort (%{location}) gefunden"
+        _query:
+          zero: Leider keine Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+          one: Ein Angebot vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden"
+      remote_offers_new:
+        category:
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} gefunden
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} gefunden"
+        category_query:
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden"
+        default:
+          zero: Keine Telefonberatungen und Onlineangebote
+          one: Eine Telefonberatung oder ein Onlineangebot
+          other: "%{count} Telefonberatungen und Onlineangebote"
+        _query:
+          zero: Leider keine Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden
+          one: Eine Telefonberatung oder ein Onlineangebot für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden"
     shared:
       current_and_original_locale:
         "'150'": Deutsche Gebärdensprache
@@ -1902,10 +1942,7 @@ de:
     show:
       cta_report_errors: |
         Hast du einen Fehler entdeckt?
-      google_translate_explanation: |
-        Diese Übersetzungen wurden von Google Translate automatisch gemacht.
-        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
-        klingt. Schau dann lieber noch einmal in den deutschen Text.
+      google_translate_explanation: Oben auf der Seite kannst du deine Sprache anklicken. Dann kannst du clarat in deiner Sprache lesen. Einen Teil der Übersetzung hat die Google Translate API gemacht. Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein, dass etwas komisch klingt.
     tooltips:
       welcome:
         advanced_search: |

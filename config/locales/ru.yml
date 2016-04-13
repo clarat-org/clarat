@@ -630,6 +630,12 @@ ru:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: "Ошибка в поиске"
@@ -725,6 +731,16 @@ ru:
         other: "%{count} Предложения по телефону и он-лайн"
         zero: "Нет предложений по телефону или он-лайн"
       show_personal: "Показать предложения на месте"
+      personal_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
+      remote_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
     shared:
       current_and_original_locale:
         "'150'": "Немецкий язык жестов"

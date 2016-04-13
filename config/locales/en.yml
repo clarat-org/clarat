@@ -918,6 +918,12 @@ en:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Search error
@@ -1012,6 +1018,16 @@ en:
         other: "%{count} remote offers"
         zero: No remote offers
       show_personal: Show local offers
+      personal_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
+      remote_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
     shared:
       current_and_original_locale:
         "'150'": German Sign Language - Deutsche Gebärdensprache

@@ -524,6 +524,12 @@ tr:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Arama hatası
@@ -616,6 +622,16 @@ tr:
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
       show_personal: Yerel hizmetleri göster
+      personal_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
+      remote_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
     shared:
       current_and_original_locale:
         "'150'": Almanca işaret dili

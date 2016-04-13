@@ -608,6 +608,12 @@ fr:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: erreur de recherche
@@ -697,6 +703,16 @@ fr:
         other: "%{count} Assistances téléphoniques ou services en ligne"
         zero: pas d'assistance téléphonique ni de service en ligne
       show_personal: Montre les services locaux
+      personal_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
+      remote_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
     shared:
       current_and_original_locale:
         "'150'": Langue des signes allemande

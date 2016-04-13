@@ -109,6 +109,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleFilterChange'
     '#advanced_search .JS-EncounterSelector':
       change: 'handleEncounterChange'
+    '#advanced_search .JS-SortOrderSelector':
+      change: 'handleSortOrderChange'
 
     ## Radio state handling contact_type
     'input[name=contact_type][value=remote]:checked':
@@ -182,6 +184,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes "#{field}": val
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleSortOrderChange: (event) =>
+    requestedSortOrder = $(event.target).val()
+    @model.updateAttributes sort_order: requestedSortOrder
+    @sendMainSearch()
 
   handleEncounterChange: (event) =>
     if $('.JS-EncounterSelector:checked').length is 0

@@ -21,6 +21,17 @@
           %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
             = hb 'display_name'
 
+    / TODO: WIP!
+    %legend.filter-form__fieldset__headline
+      SOATIERUNG
+    %div.filter-form__fieldset__wrapper
+      %select.JS-SortOrderSelector.filter-form__select{name: 'sort_order'}
+        %option{value: 'nearby', id: 'sort_order_nearby'}
+          Nahe dran!
+        %option{value: 'relevance', id: 'sort_order_relevance'}
+          Je toller desto höher
+    / /WIP
+
   %fieldset.filter-form__fieldset#target_audience
     %legend.filter-form__fieldset__headline
       = hb '@root.headline_targt_audience'

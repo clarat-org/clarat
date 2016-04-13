@@ -510,6 +510,12 @@ ar:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: "خطأ في البحث"
@@ -599,6 +605,16 @@ ar:
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
       show_personal: "عرض عروض مكانية أكثر"
+      personal_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
+      remote_offers_new:
+        category: 
+        category_query: 
+        default: 
+        _query: 
     shared:
       current_and_original_locale:
         "'150'": "لغة الإشارة الألمانية"

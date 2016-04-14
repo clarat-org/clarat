@@ -458,6 +458,7 @@ pl:
           few: Twoich ofert <strong>%{count} clarat refugees</strong>
           one: Twoja oferta <strong>clarat refugees</strong>
           other: Twoje oferty <strong>%{count} clarat refugees</strong>
+      last_update: Last update
       obfuscated_email: twój adres e-mail
       refugees:
         heading: Twoje oferty clarat refugees dla <span id="secure-email-0">%{email}</span>
@@ -476,7 +477,7 @@ pl:
         info: Info
     subscribe:
       success_html: |-
-        Zapisałeś(aś) pomyślnie zapisany(a) na otrzymywanie powiadomień o ofertach na Twój adres e-mail.
+        Zostałeś(aś) pomyślnie zapisany(a) na otrzymywanie powiadomień o ofertach na Twój adres e-mail.
         (<a href="%{unsubscribe_href}">wieder abmelden</a>)
     unsubscribe:
       success_html: |-
@@ -653,6 +654,12 @@ pl:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -738,11 +745,21 @@ pl:
         one: Jedna oferta na miejscu
         other: "%{count} oferty na miejscu"
         zero: Niestety brak ofert na miejscu
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
         other: "%{count} porady telefoniczne i oferty online"
         zero: Brak porad telefonicznych i ofert online
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Pokaż oferty lokalne
     shared:
       current_and_original_locale:
@@ -935,7 +952,7 @@ pl:
           thu: Czwartek
           tue: Wtorek
           wed: "Środa"
-        heading: Kiedy możesz to zrobić?
+        heading: Kiedy możesz się zgłosić?
       speaking: W jakim języku można Ci pomóc?
       website_section:
         internet_presence: Gdzie dowiesz się więcej w sieci?
@@ -1432,7 +1449,7 @@ pl:
       fill_field: Proszę wypełnij to pole
     show:
       cta_report_errors: Zauważyłeś błąd?
-      google_translate_explanation: To tłumaczenie zostało wykonane automatycznie przez Tłumacza Google. Dlatego często występują błędy językowe. Może się też zdarzyć, że coś brzmi dziwacznie. Wtedy najlepiej przeczytać ten tekst po niemiecku.
+      google_translate_explanation: Tutaj możesz wybrać Twój język. Będziesz mógł przeglądać clarat w Twoim języku. Część tłumaczenia wykonuje aplikacja Tłumacz Google. Niestety czasem występują w nim błędy. Dlatego część tekstu może brzmieć dziwacznie.
     tooltips:
       welcome:
         advanced_search: Chcesz, aby Twoje wyszukiwanie było dokładniejsze? Kliknij tutaj. Otworzy się okienko wyboru.

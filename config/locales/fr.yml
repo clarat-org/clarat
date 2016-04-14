@@ -416,6 +416,7 @@ fr:
         toggle_section_html:
           one: Ton <strong>clarat refugees</strong>-Service
           other: Tes <strong>%{count} clarat refugees</strong>-Services
+      last_update: Last update
       obfuscated_email: Ton adresse électronique
       refugees:
         heading: Tes services sur clarat refugees pour <span id="secure-email-0">%{email}</span>
@@ -608,6 +609,12 @@ fr:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: erreur de recherche
@@ -692,10 +699,20 @@ fr:
         one: un service sur place
         other: "%{count} services sur place"
         zero: malheureusement pas de service
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: Une assistance téléphonique ou un service en ligne
         other: "%{count} Assistances téléphoniques ou services en ligne"
         zero: pas d'assistance téléphonique ni de service en ligne
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Montre les services locaux
     shared:
       current_and_original_locale:

@@ -313,6 +313,7 @@ ar:
           other: "لك <strong>%{count} كلارات اللاجئين</strong>-عروض"
           two: "لك <strong>%{count} كلارات اللاجئين</strong>-عرض"
           zero: NOTRANSLATE
+      last_update: Last update
       obfuscated_email: "عنوان البريد الإليكتروني الخاض بك"
       refugees:
         heading: عروض كلارات اللاجئين الخاصة بك بالنسبة ل  <span id="secure-email-0">%{email}</span>
@@ -510,6 +511,12 @@ ar:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: "خطأ في البحث"
@@ -594,10 +601,20 @@ ar:
         one: "عرض محلي"
         other: "%{count} عروض محلية"
         zero: "للأسف لا توجد عروض  "
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: "عرض عروض مكانية أكثر"
     shared:
       current_and_original_locale:

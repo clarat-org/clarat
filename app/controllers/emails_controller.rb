@@ -25,9 +25,10 @@ class EmailsController < ApplicationController
   # RESTfulness
   def offers_index
     @email = Email.find params[:id]
-    @offers = @email.offers.approved.in_section(params[:section])
-    @inverse_offers_count =
-      @email.offers.approved.in_section(inverse_section(params[:section])).count
+    @offers = approved_offers_of_email(@email).in_section(params[:section])
+              .order(updated_at: :desc)
+    @inverse_offers_count = approved_offers_of_email(@email)
+                            .in_section(inverse_section(params[:section])).count
   end
 
   private
@@ -40,5 +41,9 @@ class EmailsController < ApplicationController
 
   def pundit_user
     nil
+  end
+
+  def approved_offers_of_email email
+    email.offers.approved
   end
 end

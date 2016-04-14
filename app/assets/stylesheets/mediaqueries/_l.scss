@@ -189,7 +189,7 @@
   }
 
   .aside-standard {
-    position: absolute !important; // Override JS
+    position: absolute;
     max-width: 27%;
   }
 
@@ -231,18 +231,18 @@
     min-height: 0;
   }
 
-  .Listing-results__headline {
+  .Listing-results__headline--remote {
 
     body.pl &,
     body.fr & {
       padding-right: 50%;
     }
 
-    .search-string {
-      max-width: 70%;
+    body.ru & {
+      padding-right: 60%;
     }
   }
-
+  
   .filter-form {
     .col-form-wrapper {
       display: block;

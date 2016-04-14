@@ -69,6 +69,10 @@
   &.active {
     > a {
       @extend %roboto_bold;
+
+      body.ru & {
+        font-weight: 700;
+      }
     }
 
     > .Categories__list {

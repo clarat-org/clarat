@@ -42,8 +42,8 @@
   font-weight: 400;
   font-size: 20px;
 
-  .search-string {
-    max-width: 75%
+  body.ru & {
+    padding-right: 30%;
   }
 
   .big-map_open,

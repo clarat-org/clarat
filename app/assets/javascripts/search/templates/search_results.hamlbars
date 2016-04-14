@@ -1,5 +1,5 @@
 = hb 'if personal_focus_with_remote' do
-  %h2.Listing-results__headline
+  %h2.Listing-results__headline.Listing-results__headline--remote
     = hb 'remote_results_headline'
 
     = hb 'if has_two_or_more_remote_results' do

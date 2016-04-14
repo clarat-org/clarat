@@ -109,5 +109,5 @@ about supported directives.
 # = require modules/safari_fixes
 # = require modules/cookie_warning
 # = require modules/faq
-# = require modules/shariff_addional
+# = require modules/shariff_additonal
 # = require modules/refocus

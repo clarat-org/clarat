@@ -76,6 +76,20 @@
   display: inherit;
 }
 
+.Listing-results__updateinfo {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  padding: 0 5px;
+  background: $brand-green;
+  color: $brand_white;
+  line-height: 32px;
+  text-align: center;
+}
+
 .Listing-results__offer,
 .Listing-results__offerinfo {
   position: relative;
@@ -122,6 +136,10 @@
   a {
     color: $brand_brown;
   }
+}
+
+.Listing-results__offerinfo--hasupdateinfo {
+  padding-right: 155px;
 }
 
 .Listing-results__globe {

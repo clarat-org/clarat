@@ -155,10 +155,14 @@
     min-height: 370px;
   }
 
-  .Listing-results__headline {
+  .Listing-results__headline--remote {
     body.pl &,
     body.fr & {
       padding-right: 45%;
+    }
+
+    body.ru & {
+      padding-right: 55%;
     }
 
     body.ar & {

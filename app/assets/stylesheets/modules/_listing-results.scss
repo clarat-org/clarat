@@ -42,8 +42,8 @@
   font-weight: 400;
   font-size: 20px;
 
-  .search-string {
-    max-width: 75%
+  body.ru & {
+    padding-right: 30%;
   }
 
   .big-map_open,
@@ -74,6 +74,20 @@
 .Listing-results__emphasis {
   @extend %roboto_bold;
   display: inherit;
+}
+
+.Listing-results__updateinfo {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  padding: 0 5px;
+  background: $brand-green;
+  color: $brand_white;
+  line-height: 32px;
+  text-align: center;
 }
 
 .Listing-results__offer,
@@ -122,6 +136,10 @@
   a {
     color: $brand_brown;
   }
+}
+
+.Listing-results__offerinfo--hasupdateinfo {
+  padding-right: 206px;
 }
 
 .Listing-results__globe {

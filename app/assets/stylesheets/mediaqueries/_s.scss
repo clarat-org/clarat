@@ -427,6 +427,19 @@
     padding-right: 0;
   }
 
+  .Listing-results__updateinfo {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    color: inherit;
+
+    .fa {
+      color: $brand_green;
+    }
+  }
+
   .section-start__headline {
     height: 35px;
     font-size: 16px;

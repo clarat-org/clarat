@@ -332,6 +332,7 @@ tr:
         heading: "<span id=''secure-email-0>%{email}</span> için clarat family tekliflerin"
         no_results: "Şuan <span id=''secure-email-0>%{email}</span> için yayınlanmış clarat family teklifleri bulunmamaktadır."
         toggle_section_html: "<strong>%{count} clarat refugees</strong> tekliflerin"
+      last_update: Last update
       obfuscated_email: e-mail adresin
       refugees:
         heading: "<span id=''secure-email-0>%{email}</span> için clarat refugees tekliflerin"
@@ -524,6 +525,12 @@ tr:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Arama hatası
@@ -611,10 +618,20 @@ tr:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
         zero: Maalesef hizmet bulunmamaktadır
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:

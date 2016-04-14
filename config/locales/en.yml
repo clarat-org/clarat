@@ -726,6 +726,7 @@ en:
         toggle_section_html:
           one: Your <strong>clarat refugees</strong> offer
           other: Your <strong>%{count} clarat refugees</strong> offers
+      last_update: Last update
       obfuscated_email: your email address
       refugees:
         heading: Your clarat refugees offers for <span id="secure-email-0">%{email}</span>
@@ -918,6 +919,12 @@ en:
       section:
         family: Family
         refugees: Refugees
+      sort:
+        nearby: 
+        relevance: 
+      sort_order:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Search error
@@ -1007,10 +1014,20 @@ en:
         one: One local offer
         other: "%{count} local offers"
         zero: No local offers found
+      personal_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
         zero: No remote offers
+      remote_offers_new:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Show local offers
     shared:
       current_and_original_locale:

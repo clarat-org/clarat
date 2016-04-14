@@ -22,8 +22,7 @@
                   / Last update to make sort order transparent
                   span.Listing-results__updateinfo
                     i.fa.fa-clock-o
-                    / => t 'offers.show.last_update'
-                    | Update:&nbsp;
+                    => t 'offers.show.last_update'
                     = offer.updated_at.strftime("%d.%m.%Y")
     - else
       h2 == t ".#{@current_section}.no_results",

@@ -42,6 +42,9 @@
   font-weight: 400;
   font-size: 20px;
 
+  body.ru & {
+    padding-right: 30%;
+  }
 
   .big-map_open,
   .more_remote-offers_open {
@@ -61,8 +64,6 @@
   }
 
 }
-
-
 
 .Listing-results__headline--world {
   @extend %roboto_bold;

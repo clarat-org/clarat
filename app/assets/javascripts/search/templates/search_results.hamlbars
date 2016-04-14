@@ -13,7 +13,7 @@
       = hb '> _single_search_result'
 
 
-%h2.Listing-results__headline
+%h2.Listing-results__headline.Listing-results__headline--remote
   .search-string
     = hb! 'main_results_headline'
 

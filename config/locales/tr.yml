@@ -113,7 +113,7 @@ tr:
           link_3:
             name: buraya
             target: _blank
-            url: http://www.clarat.org/ueber-uns
+            url: http://www.clarat.org/tr/refugees/Hakkımızda
             var: link_to_about_us
           question: Clarat‘ın arkasında  kim var?
       section_2:
@@ -539,10 +539,10 @@ tr:
     autocomplete_footer: Tüm %{results} sonuçlar '%{query}'
     categories_sidebar:
       all_categories: Tüm kategoriler
-    cookie_warning_html: |
+    cookie_warning_html: |-
       Cookieler bu sayfayı sana sunmamızda yardımcı oluyor. Web sitemizi kullanarak
       bu cookieleri kullanmamıza izin vermektesin.
-      <a href="/datenschutzhinweise">Mehr</a>.
+      <a href="/Gizlilik-Politikası">daha fazla</a>.
     geolocation:
       error: konumun bulunamamıştır. Lütfen manüel giriş yap.
       get: Konumumu kullan!
@@ -586,7 +586,7 @@ tr:
         - resmi daireler
         - ikametgah
     routes:
-      faq: Sıkça sorulan sorular
+      faq: sıkça-sorulan-sorular
     search:
       form_less_label: Arama tercihlerini kapat
       form_more_label: Arama tercihlerini göster
@@ -886,11 +886,7 @@ tr:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
-      astrid: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
-        The Roots feat. Erykah Badu.
+      astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
       basti: Basti Web Geliştiricisi, internet sayfalarını programlıyor. Clarat’ta IT şefi. Tüm teknik sorunlarda bize yardımcı oluyor. Tatil ve sözleşmelerden sorumlu. Michael Jackson’un Man in the Mirror şarkısı en sevdiği parça.
       bettina: Kâr amacı olmayan şirket yönetimi mezunu ve bu sayede yardım organizasyonlarının nasıl yapıldığını iyi biliyor. Clarat’ta araştırma ekibinde. En sevdiği parça Dispatch’in Elias şarkısı.
       elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
@@ -924,8 +920,52 @@ tr:
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
     agb:
-      heading: Yasal Uyarılar
-      text_html: NOTRANSLATE
+      heading: Rechtliche Hinweise
+      text_html: |-
+        <p>
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
+        Stiftung Zukunft („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
+        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
+        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
+        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
+        </p>
+        <p>
+        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
+        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
+        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
+        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
+        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
+        Serviceleistungen oder Informationen, die Sie über unsere Webseite
+        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
+        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
+        können aus ihnen keine Rechtsansprüche abgeleitet werden.
+        </p>
+        <p>
+        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
+        </p>
+        <p>
+        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
+        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
+        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
+        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
+        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
+        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
+        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
+        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
+        Genehmigung erfolgt.
+        </p>
+        <p>
+        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
+        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
+        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
+        Inhalt solcher Webseiten nicht zu Eigen.
+        </p>
+        <p>
+        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
+        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
+        der Bundesrepublik Deutschland.
+        </p>
       title: Rechtliche Hinweise
     faq:
       title: Sıkça sorulan sorular
@@ -1273,21 +1313,21 @@ tr:
   routes:
     '404': "'404'"
     contacts: iletişim
-    datenschutzhinweise: Veri koruma uyarıları
+    datenschutzhinweise: Gizlilik-Politikası
     definitions: tanım
     emails: emailler
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
+    faq: sıkça-sorulan-sorular
+    haeufige-fragen: sıkça-sorulan-sorular
+    impressum: Künye
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
     preview: "Ön izleme"
-    rechtliche-hinweise: Yasal uyarılar
+    rechtliche-hinweise: hukuki-uyarılar
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: supsciptions
-    ueber-uns: ueber-uns
+    ueber-uns: Hakkımızda
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar

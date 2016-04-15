@@ -669,7 +669,7 @@ pl:
       all_categories: Wszystkie kategorie
     cookie_warning_html: |-
       Ciasteczka pomagają nam w tworzeniu tej strony. Używając tej strony wyrażają Państwo zgodę na stosowanie ciasteczek.
-      <a href="/datenschutzhinweise">Mehr</a>.
+      <a href="/ochrona-danych">więcej</a>.
     geolocation:
       error: Lokalizacja nie mogła zostać odnaleziona. Prosimy wprowadzić ją ręcznie.
       get: Użyj mojej lokalizacji!
@@ -712,7 +712,7 @@ pl:
         - urzędy
         - prawo pobytu
     routes:
-      faq: Często zadawane pytania
+      faq: często-zadawane-pytania
     search:
       form_less_label: Ukryj opcje wyszukiwania
       form_more_label: Pokaż opcje wyszukiwania
@@ -1034,7 +1034,7 @@ pl:
       title: " O nas"
       verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” Oh Wonder.
     agb:
-      heading: Nota prawna
+      heading: Rechtliche Hinweise
       text_html: |-
         <p>
         Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
@@ -1080,7 +1080,7 @@ pl:
         Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
         der Bundesrepublik Deutschland.
         </p>
-      title: Nota prawna
+      title: Rechtliche Hinweise
     faq:
       title: Często zadawane pytania
     home:
@@ -1426,17 +1426,17 @@ pl:
   routes:
     '404': "'404'"
     contacts: kontakt
-    datenschutzhinweise: ochrona danych
+    datenschutzhinweise: ochrona-danych
     definitions: definicje
     emails: e-maile
-    faq: często zadawane pytania
-    haeufige-fragen: często zadawane pytania
+    faq: często-zadawane-pytania
+    haeufige-fragen: często-zadawane-pytania
     impressum: impressum
     new: nowe
     offers: oferty
     organizations: organizacje
     preview: podgląd
-    rechtliche-hinweise: nota prawna
+    rechtliche-hinweise: nota-prawna
     search_locations: wyszukaj
     subscribe: subscribe
     subscriptions: subskrypcje

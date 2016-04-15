@@ -1,10 +1,22 @@
 ru:
   routes:
-    offers: "предложения"
-    users: "пользователь"
+    '404': "'404'"
     contacts: "контакты"
+    datenschutzhinweise: "Правила-конфиденциальности"
+    definitions: "формулировки"
+    emails: "электронные-письма"
+    faq: "Частые-вопросы"
+    haeufige-fragen: "Частые-вопросы"
+    impressum: "Импрессум"
+    new: "новый"
+    offers: "предложения"
     organizations: "орагнизации"
-    impressum: "impressum"
-    haeufige-fragen: "haeufige-fragen"
-    ueber-uns: "ueber-uns"
-    faq: "haeufige-fragen"
+    preview: "предварительный-просмотр"
+    rechtliche-hinweise: "юридические-указания"
+    search_locations: "поиск-местонахождения"
+    subscribe: subscribe
+    subscriptions: "подписки"
+    ueber-uns: "о-нас"
+    unsubscribe: unsubscribe
+    update_requests: "обновить-запросы"
+    users: "пользователь"

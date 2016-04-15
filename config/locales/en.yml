@@ -98,7 +98,7 @@ en:
           link_1:
             name: please contact us
             target: _blank
-            url: http://www.clarat.org/en/refugees/contacts/new
+            url: http://www.clarat.org/en/refugees/contact/new
             var: link_to_contact_form
           question: Does clarat offer an interface to download and edit data?
         question_2:
@@ -934,10 +934,10 @@ en:
     autocomplete_footer: All %{results} search results for '%{query}'
     categories_sidebar:
       all_categories: All categories
-    cookie_warning_html: |
+    cookie_warning_html: |-
       Cookies help us deliver our services. By using the website you agree to our
       use of cookies.
-      <a href="/datenschutzhinweise">More</a>.
+      <a href="/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
       get: Use my location!
@@ -1115,7 +1115,7 @@ en:
       footer:
         about: About us
         blog: Blog
-        contact: Contact
+        contact: contact
         faq: FAQ
         fb:
           anchor: Facebook
@@ -1123,9 +1123,9 @@ en:
         gplus:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
-        impressum: Imprint
-        privacy: Privacy
-        tos: Legal information
+        impressum: imprint
+        privacy: privacy
+        tos: legal information
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
@@ -1834,13 +1834,13 @@ en:
         zip_city: 10117 Berlin
   routes:
     '404': "'404'"
-    contacts: contacts
+    contacts: contact
     datenschutzhinweise: privacy
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
-    impressum: impressum
+    impressum: imprint
     new: new
     offers: offers
     organizations: organizations

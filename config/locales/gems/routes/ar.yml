@@ -1,10 +1,22 @@
 ar:
   routes:
+    '404': "'404'"
+    contacts: "الإتصال"
+    datenschutzhinweise: "إرشادات-حماية-البيانات-الشخصية"
+    definitions: "تعريف"
+    emails: "رسائل بريد إليكتروني"
+    faq: "أسئلة-شائعة"
+    haeufige-fragen: "أسئلة-شائعة"
+    impressum: "هيئة التحرير"
+    new: "جديد"
     offers: "عروض"
-    users: "مستخدم"
-    contacts: "إتصال"
     organizations: "منظمة"
-    impressum: "impressum"
-    haeufige-fragen: "haeufige-fragen"
-    ueber-uns: "ueber-uns"
-    faq: "haeufige-fragen"
+    preview: "عرض"
+    rechtliche-hinweise: "إرشادات-قانونية"
+    search_locations: "بحث_المواقع"
+    subscribe: subscribe
+    subscriptions: "إشتراكات"
+    ueber-uns: about-us
+    unsubscribe: unsubscribe
+    update_requests: "طلبات-تحديث"
+    users: "مستخدم"

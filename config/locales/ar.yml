@@ -525,7 +525,9 @@ ar:
     autocomplete_footer: "كل %{results} نتائج البحث ل „%{query}“"
     categories_sidebar:
       all_categories: "جميع الفئات"
-    cookie_warning_html: "الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز\n<a href=\"/datenschutzhinweise\">Mehr</a>.\n  "
+    cookie_warning_html: |-
+      الكوكيز تساعدنا على أن تظل صفحتنا متوفرة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز
+      <a href="/إرشادات-حماية-البيانات-الشخصية">Mehr</a>.
     geolocation:
       error: "لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا."
       get: "استخدم موقعي !"
@@ -903,7 +905,7 @@ ar:
       title: "معلومات عن فريق عمل كلارات"
       verena: "خبيرة سياسية. هذا يعني أنها تعرف الكثير عن السياسة والمجتمع. يمكنها جمع المعلومات بشكل جيد. في كلارات هي عضوة في فريق البحث. كما تقوم بعمل المعجم. أغنيتها المفضلة هي لوز إت ل. أوه وندر."
     agb:
-      heading: "إرشادات قانونية"
+      heading: Rechtliche Hinweise
       text_html: |
         <p>
         Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
@@ -949,7 +951,7 @@ ar:
         Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
         der Bundesrepublik Deutschland.
         </p>
-      title: "إرشادات قانونية"
+      title: Rechtliche Hinweise
     faq:
       title: "أسئلة شائعة"
     home:
@@ -1292,13 +1294,13 @@ ar:
         zip_city: 10117 Berlin
   routes:
     '404': "'404'"
-    contacts: "إتصال"
-    datenschutzhinweise: "إؤشادات حماية البيانات "
+    contacts: "الإتصال"
+    datenschutzhinweise: "إرشادات-حماية-البيانات-الشخصية"
     definitions: "تعريف"
     emails: "رسائل بريد إليكتروني"
-    faq: haeufige-fragen
+    faq: "أسئلة-شائعة"
     haeufige-fragen: "أسئلة-شائعة"
-    impressum: impressum
+    impressum: "هيئة التحرير"
     new: "جديد"
     offers: "عروض"
     organizations: "منظمة"

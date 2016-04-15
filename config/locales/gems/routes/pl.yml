@@ -1,10 +1,22 @@
 pl:
   routes:
-    offers: "angebote"
-    users: "nutzer"
-    contacts: "kontakt"
-    organizations: "organisationen"
-    impressum: "impressum"
-    haeufige-fragen: "haeufige-fragen"
-    ueber-uns: "ueber-uns"
-    faq: "haeufige-fragen"
+    '404': "'404'"
+    contacts: kontakt
+    datenschutzhinweise: ochrona-danych
+    definitions: definicje
+    emails: e-maile
+    faq: często-zadawane-pytania
+    haeufige-fragen: często-zadawane-pytania
+    impressum: impressum
+    new: nowe
+    offers: oferty
+    organizations: organizacje
+    preview: podgląd
+    rechtliche-hinweise: nota-prawna
+    search_locations: wyszukaj
+    subscribe: subscribe
+    subscriptions: subskrypcje
+    ueber-uns: o-nas
+    unsubscribe: unsubscribe
+    update_requests: odśwież
+    users: użytkownicy

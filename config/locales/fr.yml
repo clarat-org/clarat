@@ -74,7 +74,7 @@ fr:
             name: |
               [ le lien  est sur le formulairede contact]
             target: _blank
-            url: http://www.clarat.org/fr/refugees/contact/new
+            url: http://www.clarat.org/fr/refugees/contact/nouveau
             var: link_to_contact_form
           question: Clarat propose une interface pour réutiliser les données?
         question_2:
@@ -624,7 +624,7 @@ fr:
       all_categories: Toutes les catégories
     cookie_warning_html: |-
       Les cookies nous aident lors de la mise en place de ce site internet. En utilisant ce site, vous acceptez les cookies que nous plaçons.
-      <a href="/informations sur la protection des données">Plus</a>.
+      <a href="/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
       get: J'utlise ma localisation!
@@ -667,7 +667,7 @@ fr:
         - Administrations
         - Droit de séjour
     routes:
-      faq: Questions-fréquentes
+      faq: questions-fréquentes
     search:
       form_less_label: masquer les options de recherches
       form_more_label: Démasquer les options de recherche
@@ -801,7 +801,7 @@ fr:
       footer:
         about: "à propos de nous"
         blog: blog
-        contact: contacts
+        contact: contact
         faq: questions fréquentes
         fb:
           anchor: Facebook
@@ -810,7 +810,7 @@ fr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impression
-        privacy: informations sur la protection des données
+        privacy: protection des données
         tos: informations juridiques
         twitter:
           anchor: Twitter
@@ -981,9 +981,53 @@ fr:
       title: "à propos de nous"
       verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat, elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
     agb:
-      heading: informations juridiques
-      text_html: "<p>\nCe site web a  été créé avec le plus grand soin. La fondation Benckiser\nStiftung Zukunft („clarat“ ou „nous“) ne donne aucune garantie eu égard \nà  l'intégralité, l'actualité, la disponibilité tout comme l'exactitude des \ninformations offertes sur le site internet et les liens.\nLe site internet est exclusivement conçu pour l'utilisation privée, toute \nutilisation à des fins commerciales est interdite.\n</p>\n<p>\nNous vous signalons que les informations présentées sur le site internet\npeuvent contenir des erreurs et des inexactitudes et que nous excluons\nexpressément toute responsabilité pour de telles inexactitudes ou erreurs.\nNous soulignons également qu'il est de notre propre et entière responsabilité\nd'assurer que les services offerts et les informations obtenues à partir de notre site\ninternet répondent à vos besoins spécifiques.\nLes informations fournies par notre site internet ne constituent en aucun cas\nune garantie légale et ne peuvent en aucun cas donner lieu à une responsabilité\n juridique./aucun recours juridique ne peut être dégagé de celles-ci.\n</p>\n<p>\nNous pouvons modifier le site internet sans aucun préavis préalable.\n</p>\n<p>\nLe contenu du site internet a été rédigé par et pour clarat. Le droit d'auteur \net les autres droits de protection du contenu de notre site internet reviennent à clarat\nou à une personne à qui nous accordons le droit d'utilisation.\nCela concerne entre autres , mais pas uniquement, le design, la mise en page,\nles textes, tout comme les illustrations, les images, les graphiques.\nNous nous opposons à tout stockage complet ou partiel, à toute reproduction et ou publication \net engagerons une procédure juridique dans la mesure où pour une telle action, \nnotre accord n'aurait pas été au préalable donné.\n  </p>\n<p>\nPour autant que d'autres domaines ou pages internet ont été indiqués, ou au moyen d'un hyperlien,\nl'attention est attirée sur le fait que nous ne sommes pas responsables du contenu de telles\npages internet , nous n'assumons aucune responsabilité et ne répondons pas du contenu de ces\npages.\n</p>\n<p>\nLes informations juridiques ainsi que toutes les questions et litiges en rapport avec cette page \ninternet  sont soumis au droit de la République fédérale d'Allemagne.\n</p>"
-      title: informations juridiques
+      heading: Rechtliche Hinweise
+      text_html: |-
+        <p>
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
+        Stiftung Zukunft („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
+        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
+        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
+        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
+        </p>
+        <p>
+        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
+        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
+        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
+        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
+        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
+        Serviceleistungen oder Informationen, die Sie über unsere Webseite
+        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
+        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
+        können aus ihnen keine Rechtsansprüche abgeleitet werden.
+        </p>
+        <p>
+        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
+        </p>
+        <p>
+        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
+        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
+        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
+        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
+        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
+        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
+        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
+        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
+        Genehmigung erfolgt.
+        </p>
+        <p>
+        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
+        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
+        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
+        Inhalt solcher Webseiten nicht zu Eigen.
+        </p>
+        <p>
+        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
+        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
+        der Bundesrepublik Deutschland.
+        </p>
+      title: Rechtliche Hinweise
     faq:
       title: questions fréquentes
     home:
@@ -1018,13 +1062,52 @@ fr:
       title: 404
     privacy:
       chapter_eight:
-        heading: 8. Droit de recours et interlocuteur
-        nested_text_second_paragraph: "Adressez vos questions relatives\n à la protection des données, aux contradictions,  aux demandes de renseignements ou \nd'effacement de vos données, aux plaintes ou toutes autres choses à:"
-        text: "Vous avez à tout moment le droit de faire opposition à l'utilisation susmentionnée de vos données\net /ou de révoquer votre consentement, cette révocation prenant effet pour l'avenir.\nVous avez, en outre, la possibilité de faire opposition à l'utilisation \nde Google Analytics en cliquant sur le lien suivant: \n%{google_optout}."
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_second_paragraph: |-
+          Ihre Fragen zum
+          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
+          Beschwerden oder Ähnliches richten Sie bitte an:
+        text: |-
+          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
+          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
+          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
+          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
+          folgenden Link klicken:
+          %{google_optout}.
       chapter_five:
         heading: 5. Social Media Plugins
-        nested_text_four: "Sur notre site internet, nous recourons à une touche de WhatsApp\nInc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA\n(„WhatsApp“). Vous pouvez ainsi communiquer les contenus de notre site internet\nà un tiers. Ce bouton correspond à un lien internet régulier (HTML-Hyperlink). Cela signifie\nque ce n'est pas parce que vous appuyer sur la fonction que vos données sont \ncommuniquées à WhatsApp. Ce n'est qu'en activant la fonction que WhatsApp\napprendra quels contenus vous souhaitez partager sur WhatsApp et que la fonction a été \nconsultée à partir de notre site internet.\n"
-        nested_text_one: "Nous utilisons des Plugins du réseau social Facebook.com ce dernier est \nexploité par Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA\n(\"Facebook\"). Via l'utilisation de la fonction recommandation de Facebook,\nvous pouvez recommander notre site internet et nos prestations et les faire \nconnaître à vos amis. Cliquez sur la fonction et vous serez invité à vous connecter\nsur Facebook dans une nouvelle fenêtre. Pour ce cas précis, un Facebook-Cookie \nest installé sur votre ordinateur. Facebook reçoit ainsi certaines informations\n(au moins votre adresse IP et le cookie d'identification) que vous avez visité sur notre site.\nSi vous ne cliquez pas sur la fonction ou si vous n'êtes pas connecté sur Facebook\nalors le Facebook-Cookie ne sera pas installé. Si vous êtes utilisateur de Facebook et que \nvous êtes connecté et que vous cliquez sur le fonction, alors ces informations seront transmises\nsur votre Facebook-Profil aux Etats-Unis. D'autres utilisateurs pourront alors voir\nque vous recommandez nos prestations. Quels utilisateurs reçoivent exactement ces informations?\ncela dépend des paramètres de confidentialité que vous avez choisi sur Facebook.\nvous trouverez plus d'informations concernant la saisie et l'utilisation des données sur Facebook \nainsi que sur vos droits et la protection de la vie privée, rendez vous dans la rubrique «Politique d'utilisation des données\" de Facebook (%{facebook})."
+        nested_text_four: |-
+          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
+          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
+          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
+          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
+          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
+          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
+          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
+          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
+          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
+          wurde.
+        nested_text_one: |-
+          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
+          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
+          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
+          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
+          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
+          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
+          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
+          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
+          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
+          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
+          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
+          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
+          diese Information an Ihr Facebook-Profil in die USA übermittelt.
+          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
+          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
+          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
+          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
+          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
+          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
+          Facebook (%{facebook}).
         nested_text_three: |
           Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
           600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
@@ -1291,24 +1374,24 @@ fr:
   routes:
     '404': "'404'"
     contacts: contact
-    datenschutzhinweise: protection des données
+    datenschutzhinweise: protection-des-données
     definitions: Définitions
     emails: Adresses électroniques
-    faq: questions fréquentes
-    haeufige-fragen: questions fréquentes
-    impressum: coordonnées
-    new: new
-    offers: liste de services
+    faq: questions-fréquentes
+    haeufige-fragen: questions-fréquentes
+    impressum: impression
+    new: nouveau
+    offers: liste-de-services
     organizations: organisations
     preview: preview
-    rechtliche-hinweise: conseils juridiques
+    rechtliche-hinweise: informations-juridiques
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
     ueber-uns: a-propose-de-nous
     unsubscribe: unsubscribe
     update_requests: update_requests
-    users: nutzer
+    users: utilisateur
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

@@ -72,7 +72,7 @@ ru:
           link_1:
             name: "обратись к нам"
             target: _blank
-            url: http://www.clarat.org/ru/refugees/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9
+            url: http://www.clarat.org/ru/refugees/контакты/новый
             var: link_to_contact_form
           question: "Предлагает clarat возможность для передачи данных?"
         question_2:
@@ -123,7 +123,7 @@ ru:
           link_3:
             name: "сюда"
             target: _blank
-            url: http://www.clarat.org/ueber-uns
+            url: http://www.clarat.org/ru/refugees/о-нас
             var: link_to_about_us
           question: "Кто организует clarat?"
       section_2:
@@ -646,10 +646,10 @@ ru:
     autocomplete_footer: "Все %{results} результаты поиска для '%{query}'"
     categories_sidebar:
       all_categories: "Все категории"
-    cookie_warning_html: |
+    cookie_warning_html: |-
       Cookies помогают нам в создании этой страницы. Пользуясь этой страницей
       вы соглашается с использованием нами Cookies.
-      <a href="/datenschutzhinweise">Далее</a>.
+      <a href="/Правила-конфиденциальности">Далее</a>.
     geolocation:
       error: "Местонахождение не найдено. Пожалуйста введи сам."
       get: "Использовать мое местонахождения!"
@@ -693,7 +693,7 @@ ru:
         - "ведомства"
         - "право жительства"
     routes:
-      faq: "Частые вопросы"
+      faq: "Частые-вопросы"
     search:
       form_less_label: "Скрыть фильтры поиска"
       form_more_label: "Показать поиск"
@@ -838,7 +838,7 @@ ru:
           href: https://plus.google.com/110429028641743127592/about
         impressum: "Импрессум"
         privacy: "Правила конфиденциальности"
-        tos: "Условия пользования"
+        tos: "юридические указания"
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
@@ -1415,23 +1415,23 @@ ru:
   routes:
     '404': "'404'"
     contacts: "контакты"
-    datenschutzhinweise: "заявление о конфиденциальности"
+    datenschutzhinweise: "Правила-конфиденциальности"
     definitions: "формулировки"
-    emails: "электронные письма"
-    faq: haeufige-fragen
-    haeufige-fragen: haeufige-fragen
-    impressum: impressum
+    emails: "электронные-письма"
+    faq: "Частые-вопросы"
+    haeufige-fragen: "Частые-вопросы"
+    impressum: "Импрессум"
     new: "новый"
     offers: "предложения"
     organizations: "орагнизации"
-    preview: "предварительный просмотр"
-    rechtliche-hinweise: "юридические указания"
-    search_locations: "поиск местонахождения"
+    preview: "предварительный-просмотр"
+    rechtliche-hinweise: "юридические-указания"
+    search_locations: "поиск-местонахождения"
     subscribe: subscribe
     subscriptions: "подписки"
-    ueber-uns: ueber-uns
+    ueber-uns: "о-нас"
     unsubscribe: unsubscribe
-    update_requests: "обновить запросы"
+    update_requests: "обновить-запросы"
     users: "пользователь"
   shareds:
     forms:

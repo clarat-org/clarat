@@ -669,7 +669,7 @@ pl:
       all_categories: Wszystkie kategorie
     cookie_warning_html: |-
       Ciasteczka pomagają nam w tworzeniu tej strony. Używając tej strony wyrażają Państwo zgodę na stosowanie ciasteczek.
-      <a href="/ochrona-danych">więcej</a>.
+      <a href="/pl/refugees/ochrona-danych">więcej</a>.
     geolocation:
       error: Lokalizacja nie mogła zostać odnaleziona. Prosimy wprowadzić ją ręcznie.
       get: Użyj mojej lokalizacji!

@@ -937,7 +937,7 @@ en:
     cookie_warning_html: |-
       Cookies help us deliver our services. By using the website you agree to our
       use of cookies.
-      <a href="/privacy">More</a>.
+      <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
       get: Use my location!

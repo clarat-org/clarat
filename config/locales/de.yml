@@ -995,10 +995,10 @@ de:
     autocomplete_footer: Alle %{results} Suchergebnisse für „%{query}“
     categories_sidebar:
       all_categories: Alle Kategorien
-    cookie_warning_html: |
+    cookie_warning_html: |-
       Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
       Website erklären Sie sich einverstanden, dass wir Cookies setzen.
-      <a href="/datenschutzhinweise">Mehr</a>.
+      <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
       get: Benutze meinen Standort!

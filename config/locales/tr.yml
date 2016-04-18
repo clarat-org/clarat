@@ -542,7 +542,7 @@ tr:
     cookie_warning_html: |-
       Cookieler bu sayfayı sana sunmamızda yardımcı oluyor. Web sitemizi kullanarak
       bu cookieleri kullanmamıza izin vermektesin.
-      <a href="/Gizlilik-Politikası">daha fazla</a>.
+      <a href="/tr/refugees/Gizlilik-Politikası">daha fazla</a>.
     geolocation:
       error: konumun bulunamamıştır. Lütfen manüel giriş yap.
       get: Konumumu kullan!

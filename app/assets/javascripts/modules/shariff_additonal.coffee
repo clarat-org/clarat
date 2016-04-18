@@ -12,5 +12,4 @@ shariffAdditional = ->
   , ->
     $buttons.addClass "shariff-button--expanded"
 
-$(document).on 'page:load', shariffAdditional
 $(document).ready shariffAdditional

@@ -59,6 +59,11 @@
       content: ' · ';
       left: -10px;
       font-weight: 700;
+
+      body.ar & {
+        right: -19px;
+        left: auto;
+      }
     }
   }
 
@@ -92,6 +97,11 @@
         content: ' › ';
         left: -9px;
         font-weight: 700;
+
+        body.ar & {
+          right: -19px;
+          left: auto;
+        }
       }
     }
 
@@ -142,6 +152,11 @@
 
 .Categories__list .Categories__list {
   padding-left: 30px;
+
+  body.ar & {
+    padding-right: 30px;
+    padding-left: 0;
+  }
 }
 
 

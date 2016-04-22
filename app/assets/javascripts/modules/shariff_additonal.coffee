@@ -1,6 +1,8 @@
-shariffExpand = ->
+shariffAdditional = ->
 
   $buttons = $('.shariff-button')
+
+  $('.shariff').find('a[href^="mailto"]').attr('target', '_blank')
 
   $buttons.hover ->
 
@@ -10,5 +12,4 @@ shariffExpand = ->
   , ->
     $buttons.addClass "shariff-button--expanded"
 
-$(document).on 'page:load', shariffExpand
-$(document).ready shariffExpand
+$(document).ready shariffAdditional

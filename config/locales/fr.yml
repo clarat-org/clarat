@@ -624,7 +624,7 @@ fr:
       all_categories: Toutes les catégories
     cookie_warning_html: |-
       Les cookies nous aident lors de la mise en place de ce site internet. En utilisant ce site, vous acceptez les cookies que nous plaçons.
-      <a href="/protection-des-données">Plus</a>.
+      <a href="/fr/refugees/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
       get: J'utlise ma localisation!

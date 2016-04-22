@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f10b07db0e265c4be641b7f832aeb11e9ec6283b
+  revision: f037178e9831bfa7d6380ac469fd52a5d22fac4b
   specs:
     clarat_base (0.1.4)
       aasm
@@ -201,7 +201,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    geocoder (1.3.3)
+    geocoder (1.3.4)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -416,7 +416,7 @@ GEM
     rake (11.1.2)
     rdoc (4.2.0)
     redcarpet (3.3.4)
-    redis (3.2.2)
+    redis (3.3.0)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     ref (2.0.0)

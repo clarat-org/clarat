@@ -185,44 +185,44 @@ fr:
           answer: Tu peux chercher de l’aide sur clarat non seulement pour toi mais aussi pour une autre personne. Par exemple pour un ami. Ou un oncle pour son neveu. Ou une mère pour sa fille. Ou un professeur pour son élève. Mais ne t’étonne pas, on s’adresse toujours en premier à la personne qui doit recevoir de l’aide. Et la plus part du temps, ce sont des enfants, des ados.
           question: Comment trouver de l’aide si je ne cherche pas pour moi mais pour une autre personne?
         question_2:
-          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classés par thèmes:\n<p>\n<ul>\n<li>\n<b>Poussette - problèmes familiaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li>\n<b>Cœur - Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li>\n<b>Livre - Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li>\n<b>Petit guide - Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li>\n<b>Poing - Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li>\n<b>Éclair - Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
+          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classés par thèmes:\n<p>\n<ul>\n<li class=\"FAQ__ico--family--family\">\n<b>Poussette - problèmes familiaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li class=\"FAQ__ico--health--family\">\n<b>Cœur - Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li class=\"FAQ__ico--learn--family\">\n<b>Livre - Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--family\">\n<b>Petit guide - Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li class=\"FAQ__ico--violence--family\">\n<b>Poing - Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--family\">\n<b>Éclair - Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
           question: Je trouve de l’aide sur quels thèmes sur clarat family?
         question_3:
           answer: |-
             Tu trouves sur <b>clarat refugees</b> différentes listes d’aide. Elles t’aident sur différents thèmes. On les a classer pour toi:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--legal--refugees">
             <b>Paragraphe - Asile et droit</b><br>
             Ici, tu trouves de l’aide si tu as des questions sur la procédure de demande d’asile. Que ce soit avant, pendant ou après la procédure. Donc par exemple si tu as une autorisation de séjour provisoire. Ou si tu as des questions sur les lois allemandes. Même les réfugiés mineurs trouvent ici un soutien.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--family--refugees">
             <b>Poussette - problèmes familiaux</b><br>
             Ici, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--refugees">
             <b>Cœur - Santé</b><br>
             Ici tu trouves par exemple de l’aide si tu es malade. Ou si tu es enceinte. De l’aide tu en trouves aussi si tu vas mal à cause de traumatisme de guerre et de torture. Ou si tu as un handicap. Tu trouves ici des médecins et des psychologues qui aident les réfugiés.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--refugees">
             <b>Livre - Apprendre et travailler</b><br>
             Ici, tu trouves de l’aide si tu as des questions touchant l’apprentissage et le travail. Par exemple sur les jardins d’enfants, les écoles. Ou si tu voudrais savoir comment, en tant que réfugiés tu peux étudier. Ou si tu cherches une place d’apprenti ou un travail. tu trouves ici de nombreux cours d’allemand différents. Et des cours d’intégration que tu dois faire en tant que réfugié.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--refugees">
             <b>Petit guide - Vivre en Allemagne</b><br>
             Ici tu trouves de l’aide si par exemple tu as des problèmes administratifs. Par exemple parce que tu ne parles pas très bien allemand. Alors tu trouves ici quelqu’un qui traduit pour toi. Ou quelqu’un qui va avec toi chez le médecin. Tu trouves aussi ici d’autres types d’aide. On te montre par exemple des endroits où on te donne à manger. Ou des meubles et des vêtements. Et tu trouves ici la possibilité de faire la connaissance d’autres personnes. Par exemple dans des associations sportives ou des cours de cuisine.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--refugees">
             <b>Poing - Violence</b><br>
             Ici tu trouves de l’aide si on t’a par exemple battu. Ou si on t’a torturé en temps de guerre. De l’aide, tu en trouves aussi si par exemple tu souhaites quitter un groupe islamiste.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--refugees">
             <b>Éclair - Cas d’urgence</b><br>
             Ici tu trouves rapidement de l’aide si tu es en situation de détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.
             </li>
@@ -893,7 +893,7 @@ fr:
       last_update: Dernière entrée traitée le
       next_steps:
         code_word: Quelles questions poser et où chercher sur le site?
-        heading: qu'est-ce que tu dois faire?
+        heading: Qu'est-ce que tu dois faire?
       opening_section:
         days:
           fri: vendredi
@@ -903,39 +903,39 @@ fr:
           thu: jeudi
           tue: mardi
           wed: mercredi
-        heading: tu peux faire ça quand?
+        heading: Tu peux faire ça quand?
       speaking: On peut d'aider dans quelle langue?
       website_section:
-        internet_presence: tu peux en apprendre plus sur internet où?
+        internet_presence: Tu peux en apprendre plus sur internet où?
         websites:
           application_form: Formulaire d'inscription
           chat: messagerie instantanée
           contact_form: Formulaire de contact
-          document: plus d'infos
+          document: Plus d'infos
           facebook: Facebook
           forum: forum
           gplus: Google+
           online_consulting: Conseil en ligne
           online_course: Cours en ligne
-          own: page internet
+          own: Page internet
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: de quoi s'agit-il?
-      who: qui propose cette aide?
+      what: De quoi s'agit-il?
+      who: Qui propose cette aide?
       who_contact_people:
         dr: Dr.
-        email: courrier électronique
-        fax: 'fax:'
-        female: madame
-        male: monsieur
-        obfuscated_email: cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
+        email: Courrier électronique
+        fax: 'Fax:'
+        female: Madame
+        male: Monsieur
+        obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
         phone: téléphone
         prof_dr: Prof. Dr
       who_location:
-        organizations: 'un service de:'
+        organizations: 'Un service de:'
       who_section:
-        heading: tu peux t'adresser à qui?
+        heading: Tu peux t'adresser à qui?
   opening:
     display_string:
       appointment: sur rendez-vous
@@ -944,21 +944,21 @@ fr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: listes d'aide pour les enfants, les ados et les familles
-      headline-offers--refugees: listes d'aide pour les réfugiés
-      offers_all: cette organisation propose quel type d'aide?
-      where: tu trouves cette organisation où?
+      headline-offers--family: Listes d'aide pour les enfants, les ados et les familles
+      headline-offers--refugees: Listes d'aide pour les réfugiés
+      offers_all: Cette organisation propose quel type d'aide?
+      where: Tu trouves cette organisation où?
       who: Cette organisation, elle fait quoi?
   pages:
     about:
-      amina: est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
-      andrea: a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Chez.Clarat, elle est dans l'équipe recherche. Elle assure la qualité de notre travail. Sa chanson préférée est Work Me des Black Keys.
-      anne: a étudié économie et relations internationales. Elle pense de façon très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
-      astrid: est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne  est contagieuse. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est You Got Me de The Roots feat. Erykah Badu.
-      basti: est web designer. Cela signifie qu'il s'y connaît en programmation de sites internet. Chez Clarat, il est chef d’équipe. Il nous aide quand on rencontre des problèmes techniques. Et il s'occupe des congés, des contrats. Sa chanson préférée est Man In The Mirror de Michael Jackson.
+      amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
+      andrea: A étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Chez.Clarat, elle est dans l'équipe recherche. Elle assure la qualité de notre travail. Sa chanson préférée est Work Me des Black Keys.
+      anne: A étudié économie et relations internationales. Elle pense de façon très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
+      astrid: Est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne  est contagieuse. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est You Got Me de The Roots feat. Erykah Badu.
+      basti: Est web designer. Cela signifie qu'il s'y connaît en programmation de sites internet. Chez Clarat, il est chef d’équipe. Il nous aide quand on rencontre des problèmes techniques. Et il s'occupe des congés, des contrats. Sa chanson préférée est Man In The Mirror de Michael Jackson.
       bettina: 'Bettina a étudié le management des organisations à but non lucratif. Cela signifie qu''elle sait comment organiser une aide. Pour elle: une place pour chaque chose et chaque chose à sa place. Chez clarat, elle est  dans l''équipe recherche. Et elle recherche des organisations sur internet.'
-      elisa: a fait des études de cultural studies. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Chez Clarat, elle est dans l'équipe recherche. Elle s'occupe également du lexique et des utilisateurs. Sa chanson préférée est Boat Behind de Kings of Convenience.
-      franziska: a étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
+      elisa: A fait des études de cultural studies. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Chez Clarat, elle est dans l'équipe recherche. Elle s'occupe également du lexique et des utilisateurs. Sa chanson préférée est Boat Behind de Kings of Convenience.
+      franziska: A étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
       heading: Qui est derrière clarat?
       janina: A étudié l’anthropologie culturelle. Cela signifie qu'elle sait beaucoup de choses sur  les hommes et les différentes cultures. Elle écrit très bien. Chez clarat, elle est dans l’équipe recherche. Elle est l’experte de notre language clarat et s’occupe de nos utilisateurs. Sa chanson préférée est MFG de Fanta4.
       janne: A étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat, elle est dans l’équipe  recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat von Ry X.
@@ -968,7 +968,7 @@ fr:
       julian: Est socioéconomiste. Ça signifie qu’il sait beaucoup de choses sur l’économie et la sociéte. En informatique, il s’y connaît bien aussi. Chez clarat, il est dans l’équipe recherche et il s’occupe des questions techniques. Sa chanson préférée est All You Need de Sublime.
       katinka: Est psychologue. Ça signifie qu’elle comprend bien le comportement et les sentiments des gens. Elle sait comment organiser des choses compliquées. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est The Greatest de Cat Power.
       konstantin: Est web designer. Ça signifie qu’il sait programmer des sites internet. Il trouve toujours de bonnes solutions. Chez clarat, il est dans  l’équipe TI et il crée nos sites internet. Sa chanson préférée est Too Long de Daft Punk.
-      laura: A étudié l’Asie du sud et fait de la recherche en développement géographique. Ça signifie qu’elle sait beaucoup de choses sur les pays en voie de développement. Elle a toujours une vue d'ensemble de la situation. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
+      laura: A fait des études de l’Asie du sud et fait de la recherche en développement géographique. Ça signifie qu’elle sait beaucoup de choses sur les pays en voie de développement. Elle a toujours une vue d'ensemble de la situation. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
       lavinia: fait de la recherche en paix et conflits. Ça signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans  l’équipe recherche et elle classe nos services par thèmes. Sa chanson préférée est I'm Not Done de Fever Ray.
       line: Est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et la langue. C’est pour ça qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans  l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
       lisa: Fait du Design Thinking. Ça signifie qu’elle sait comment planifier des projets de façon créative. Chez clarat, elle est dans l’équipe recherche et elle fait des plans d’avenir et elle s’occupe de nos utilisateurs. Sa chanson préférée est Another Day de Jamie Lidell.
@@ -977,8 +977,8 @@ fr:
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
       stefan: A fait des études de sciences de la culture. Ça signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
-      tine: est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
-      title: "à propos de nous"
+      tine: Est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
+      title: "À propos de nous"
       verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat, elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
     agb:
       heading: Rechtliche Hinweise
@@ -1029,7 +1029,7 @@ fr:
         </p>
       title: Rechtliche Hinweise
     faq:
-      title: questions fréquentes
+      title: Questions fréquentes
     home:
       how:
         heading: |
@@ -1056,9 +1056,9 @@ fr:
         HRB 174379 B
       title: Impressum
     not_found:
-      description: "écris simplement le type d'aide que tu recherches dans le champ. Ou \nen quoi consiste ton problème.Clarat te montre alors plus de services proche de chez toi.\nou va %{start_page} sur la page d'accueil. Là, tu peux trouver l'aide adaptée \nen utilisant les images circulaires."
+      description: "Écris simplement le type d'aide que tu recherches dans le champ. Ou \nen quoi consiste ton problème.Clarat te montre alors plus de services proche de chez toi.\nou va %{start_page} sur la page d'accueil. Là, tu peux trouver l'aide adaptée \nen utilisant les images circulaires."
       heading: Malheureusement, nous ne pouvons pas trouver cette page.
-      link_text: Ici
+      link_text: ici
       title: 404
     privacy:
       chapter_eight:

@@ -285,7 +285,7 @@ de:
             Themen geordnet:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--family--family">
             <b>Kinderwagen – Familie</b><br>
             Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
             Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
@@ -294,7 +294,7 @@ de:
             Kinder. Und viele für Eltern.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--family">
             <b>Herz – Gesundheit</b><br>
             Hier findest du zum Beispiel Hilfe, wenn es dir schlecht geht, weil du
             krank bist. Oder weil jemand in deiner Familie krank ist. Oder wenn
@@ -302,7 +302,7 @@ de:
             Problemen in der Schwangerschaft.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--family">
             <b>Buch – Lernen und Arbeiten</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du Probleme in der Schule hast.
             Oder in der Ausbildung. Du findest aber auch Hilfe, wenn du Probleme
@@ -310,7 +310,7 @@ de:
             suchst.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--family">
             <b>Wegweiser – Sorgen im Alltag</b><br>
             Hier findest du Hilfe, wenn du kleine oder große Sorgen im Alltag hast.
             Zum Beispiel, wenn du Geldsorgen hast. Oder wenn du auf der Straße lebst.
@@ -319,14 +319,14 @@ de:
             auszufüllen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--family">
             <b>Faust – Gewalt</b><br>
             Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen oder
             missbraucht hat. Du findest aber auch Hilfe, wenn du selbst aggressiv
             oder straffällig geworden bist.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--family">
             <b>Blitz – Notfall</b><br>
             Hier findest du schnell Hilfe, wenn du in Not bist. Bei
             Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
@@ -336,13 +336,13 @@ de:
             </p>
           question: Zu welchen Themen finde ich bei clarat family Hilfe?
         question_3:
-          answer: |
+          answer: |-
             Du findest bei <b>clarat refugees</b> verschiedene
             Unterstützungsangebote. Sie helfen dir bei verschiedenen Themen. Wir
             haben sie für dich geordnet:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--legal--refugees">
             <b>Paragraph – Asyl und Recht</b><br>
             Hier findest du Hilfe, wenn du Fragen zum Asylverfahren hast. Egal, ob
             vor dem Verfahren, dabei oder danach. Also zum Beispiel auch, wenn du
@@ -350,7 +350,7 @@ de:
             Auch minderjährige Flüchtlinge finden hier Unterstützung.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--family--refugees">
             <b>Kinderwagen – Familie</b><br>
             Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
             Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
@@ -359,7 +359,7 @@ de:
             Kinder. Und viele für Eltern.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--refugees">
             <b>Herz – Gesundheit</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du krank bist. Oder wenn du
             schwanger bist. Du findest hier auch Hilfe, wenn es dir wegen Krieg und
@@ -367,7 +367,7 @@ de:
             hier Ärzte und Psychologen, die Flüchtlingen helfen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--refugees">
             <b>Buch – Lernen und Arbeiten</b><br>
             Hier findest du Hilfe, wenn du Fragen zum Thema Lernen und Arbeiten
             hast. Zum Beispiel zu Kindergärten und Schulen. Oder wenn du wissen
@@ -377,7 +377,7 @@ de:
             Flüchtling machen kannst.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--refugees">
             <b>Wegweiser – Leben in Deutschland</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du Probleme mit Ämtern hast.
             Zum Beispiel, weil du nicht gut Deutsch sprichst. Dann findest du hier
@@ -388,14 +388,14 @@ de:
             Zum Beispiel in Sportvereinen oder Kochkursen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--refugees">
             <b>Faust – Gewalt</b><br>
             Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen hat.
             Oder wenn man dich im Krieg gefoltert hat. Du findest aber auch Hilfe,
             wenn du zum Beispiel aus einer islamistischen Gruppe aussteigen möchtest.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--refugees">
             <b>Blitz – Notfall</b><br>
             Hier findest du schnell Hilfe, wenn du in Not bist. Bei
             Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du

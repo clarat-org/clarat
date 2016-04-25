@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: e549c72ee9d578b6a7c9ce33febf1c73adf8b967
-  branch: feature/779-add-new-encounters
+  revision: f888bebf5d5b24727f84c945e35b318456ca9ca7
   specs:
     clarat_base (0.1.4)
       aasm

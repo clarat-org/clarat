@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f037178e9831bfa7d6380ac469fd52a5d22fac4b
+  revision: f888bebf5d5b24727f84c945e35b318456ca9ca7
   specs:
     clarat_base (0.1.4)
       aasm
@@ -235,7 +235,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.7.1)
+    httpclient (2.7.2)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
@@ -305,7 +305,7 @@ GEM
       minitest-rails (~> 2.1)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multi_xml (0.5.5)
     netrc (0.11.0)
     newrelic_rpm (3.14.1.311)

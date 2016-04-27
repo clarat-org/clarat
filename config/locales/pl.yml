@@ -846,7 +846,7 @@ pl:
           text: clarat.org jest właśnie przebudowywany
       footer:
         about: O nas
-        blog: blog
+        blog: Blog
         contact: kontakt
         faq: Często zadawane pytania
         fb:
@@ -976,7 +976,7 @@ pl:
       who: Kto oferuje tę pomoc?
       who_contact_people:
         dr: Dr
-        email: 'e-mail:'
+        email: 'E-mail:'
         fax: 'fax:'
         female: Pani
         male: Pan
@@ -1100,6 +1100,7 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
+      notice: 
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>

@@ -174,32 +174,32 @@ pl:
             W clarat family znajdziesz propozycje pomocy różnego rodzaju. Pomogą Ci w różnych problemach. Oferty pomocy uporządkowane są tematycznie:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--family--family">
             <b>Wózek dziecięcy – problem rodzinny</b><br>
             Tu znajdziesz pomoc, jeśli w rodzinie występują problemy. Na przykład kłótnia, ale również wiele innych problemów. Jak na przykład z dorastającą młodzieżą. Problemy wychowawcze. Tu znajdziesz pomoc dla każdego członka rodziny, dla dzieci, jak również dla rodziców.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--family">
             <b>Książka – uczyć się i pracować</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli masz problemy w szkole lub też na praktyce. Tu znajdziesz również pomoc, jeśli masz problem ze znalezieniem miejsca w szkole zawodowej, ale również w poszukiwaniu kursu języka niemieckiego.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--family">
             <b> Serce - zdrowie</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli z powodu choroby nie czujesz się dobrze. Lub też ktoś z rodziny jest chory. Tu znajdziesz pomoc dla osób, które mają problemy z nałogiem. Albo jeśli jesteś w ciąży, tu znajdziesz poradę.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--family">
             <b>Wskazówki – problemy dnia powszedniego</b><br>
             Tu znajdziesz pomoc, jeśli masz codzienne, małe czy duże, problemy. Np. problemy finansowe. Lub też jesteś bezdomny. Również wtedy, kiedy szukasz czegoś, co chciałbyś robić w wolnym czasie. Tu znajdziesz pomoc w wypełnianiu formularzy lub podań.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--family">
             <b> Pięść – przemoc</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli ktoś cię pobił lub oszukał. Tu również znajdziesz pomoc, jeśli ty sam byłeś agresywny lub dokonałeś czynu karalnego.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--family">
             <b>Błyskawica – nagły wypadek</b><br>
             Tu znajdziesz szybką pomoc, jeśli znajdziesz się w pilnej potrzebie. Z propozycji pomocy czynnej całą dobę, możesz korzystać bez względu na <b>porę dnia czy nocy</b>.
             </li>
@@ -211,37 +211,37 @@ pl:
             W <b>clarat refugees</b> znajdziesz propozycje pomocy różnego rodzaju. Są one pomocne w wielu tematach. Uporządkowaliśmy je z myślą o tobie:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--legal--refugees">
             <b> Paragrafy – azyl i prawo</b><br>
             Tu znajdziesz pomoc, jeśli masz pytania dotyczące azylu, bez względu na jakim etapie załatwiania sprawy się znajdujesz. Na przykład, kiedy twój pobyt w Niemczech jest tolerowany. Lub też gdybyś miał pytania dotyczące Prawa Niemieckiego. Również nieletni uchodźcy znajdą tu wsparcie.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--family--refugees">
             <b>Wózek dziecięcy – problem rodzinny</b><br>
             Tu znajdziesz pomoc, jeśli w rodzinie występują problemy. Na przykład kłótnia, ale również przy wielu innych problemach, jak na przykład z dorastającą młodzieżą. Problemy wychowawcze. Tu znajdziesz pomoc dla każdego członka rodziny, dla dzieci jak również dla rodziców.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--refugees">
             <b>Serce – zdrowie</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli jesteś chory(a). Lub gdy jesteś w ciąży. Również tu znajdziesz pomoc w przypadku, kiedy wojna i tortury spowodowały u ciebie stany chorobowe. Lub wtedy, kiedy jesteś upośledzony(a). Tu znajdziesz lekarzy I psychologów, którzy pomagają uchodźcom.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--refugees">
             <b>Książka – uczyć się i pracować</b><br>
             Tu znajdziesz pomoc jeśli masz pytania dotyczące nauki i pracy. Na przykład pytania o przedszkola i szkoły. Lub jeśli chciałbyś dowiedzieć się, co trzeba zrobić jako uchodźca, aby dostać się na studia. Również jeśli szukasz miejsca w szkole zawodowej lub miejsca pracy. Tu również znajdziesz informacje o różnych kursach nauki Języka Niemieckiego, oraz kursy integracyjne przeznaczone dla przesiedleńców.
             </li>
             <br>
-            <li>
-            <b> Wskazówki – życie w Niemczech</b><br>
+            <li class="FAQ__ico--everydaylife--refugees">
+            <b>Wskazówki – życie w Niemczech</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli masz problemy z urzędami. Np. w przypadku niedostatecznej znajomości języka niemieckiego. Wówczas znajdziesz tu kogoś, kto dla ciebie przetłumaczy, lub też uda się z tobą do urzędu. Jednakże znajdziesz tu również pomoc innego rodzaju. Wskażemy ci miejsca, gdzie możesz otrzymać posiłki, jak również meble oraz odzież. Tu możesz też skorzystać z propozycji poznania innych osób. Np. w klubach sportowych lub na kursach gotowania.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--refugees">
             <b>Pięść – przemoc</b><br>
             Tu, na przykład, znajdziesz pomoc, jeśli zostałeś pobity. Również kiedy doznałeś na wojnie tortur. Tu również znajdziesz pomoc, jeśli np. chciałbyś wystąpić z jakiejś muzułmańskiej organizacji.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--refugees">
             <b>Błyskawica – nagły wypadek</b><br>
             Tu znajdziesz szybką pomoc, jeśli znajdziesz się w pilnej potrzebie. Z propozycji pomocy czynnej całą dobę, możesz korzystać bez względu na <b>porę dnia czy nocy</b>.
             </li>
@@ -846,7 +846,7 @@ pl:
           text: clarat.org jest właśnie przebudowywany
       footer:
         about: O nas
-        blog: blog
+        blog: Blog
         contact: kontakt
         faq: Często zadawane pytania
         fb:
@@ -898,10 +898,12 @@ pl:
           encounter:
             chat: chat
             email: e-Mail
+            fax: 
             forum: forum
             hotline: telefon
+            letter: 
             online-course: kurs online
-            portal: lista adresowa
+            portal: lista adresów
           exclusive_gender:
             boys_only: tylko dla chłopców i mężczyzn
             girls_only: tylko dla dziewcząt i kobiet
@@ -974,7 +976,7 @@ pl:
       who: Kto oferuje tę pomoc?
       who_contact_people:
         dr: Dr
-        email: 'e-mail:'
+        email: 'E-mail:'
         fax: 'fax:'
         female: Pani
         male: Pan
@@ -1098,6 +1100,7 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
+      notice: 
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>

@@ -801,7 +801,7 @@ fr:
       footer:
         about: "À propos de nous"
         blog: Blog
-        contact: contact
+        contact: Contact
         faq: Questions fréquentes
         fb:
           anchor: Facebook
@@ -905,7 +905,7 @@ fr:
           tue: mardi
           wed: mercredi
         heading: Tu peux faire ça quand?
-      speaking: On peut d'aider dans quelle langue?
+      speaking: On peut t'aider dans quelle langue?
       website_section:
         internet_presence: Tu peux en apprendre plus sur internet où?
         websites:
@@ -1383,7 +1383,7 @@ fr:
     haeufige-fragen: questions-fréquentes
     impressum: Impression
     new: nouveau
-    offers: liste-de-services
+    offers: offres-d-aide
     organizations: organisations
     preview: preview
     rechtliche-hinweise: Informations-juridiques

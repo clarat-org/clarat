@@ -31,4 +31,17 @@
 #big-map {
   width: 95%;
   height: 95%;
+
 }
+
+// Dealing with BESbewy phenomenon of GM Api in AR locale
+// http://stackoverflow.com/questions/29587637/remove-besbewy-from-google-api
+
+body.ar {
+  &.has-google-map {
+    & > span:last-of-type {
+      display: none !important;
+    }
+  }
+}
+

@@ -15,6 +15,9 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
     return unless @markers
 
+    # For Issue #783
+    $('body').addClass 'has-google-map'
+
     @currentMap = Clarat.GMaps.Operation.ConstructMap.run(
       @markers, @canvas, @mapOptions, @uiOptions)
     @handleMapResize()

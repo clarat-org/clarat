@@ -600,6 +600,7 @@ pl:
         ban: Ban
         bel: Bel
         ben: Ben
+        ber: Ber
         bos: Bos
         bul: Bul
         cze: Cze
@@ -616,6 +617,7 @@ pl:
         hun: Hun
         ita: Ita
         kik: Kik
+        kin: Kin
         kor: Kor
         kur: Kur
         lav: Lav
@@ -641,6 +643,7 @@ pl:
         tam: Tam
         tel: Tel
         tgk: Tgk
+        tgl: Tgl
         tha: Tha
         tir: Tir
         tuk: Tuk
@@ -777,6 +780,7 @@ pl:
         ban: Język balijski - Basa Bali
         bel: Język białoruski - беларуская мова
         ben: Język bengalski - বাংলা
+        ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
         cze: Język czeski - čeština
@@ -793,6 +797,7 @@ pl:
         hun: Język węgierski - magyar
         ita: Język włoski - italiano
         kik: Kikuyu - Gĩkũyũ
+        kin: Język ruanda-rundi - kinyaRwanda
         kor: Język koreański - 한국말 / 조선말
         kur: Język kurdyjski - کوردی
         lav: Język łotewski - latviešu
@@ -818,6 +823,7 @@ pl:
         tam: Język tamilski - தமிழ்
         tel: Język telugu - తెలుగు
         tgk: Język tadżycki - тоҷикӣ / تاجیکی
+        tgl: Język tagalski - Tagálog
         tha: Język tajski - ภาษาไทย
         tir: Język tigrinia - ትግርኛ
         tuk: Język turkmeński - Türkmençe / Tүркменче

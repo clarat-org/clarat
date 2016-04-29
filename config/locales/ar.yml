@@ -457,6 +457,7 @@ ar:
         ban: Ban
         bel: Bel
         ben: Ben
+        ber: Ber
         bos: Bos
         bul: Bul
         cze: Cze
@@ -473,6 +474,7 @@ ar:
         hun: Hun
         ita: Ita
         kik: Kik
+        kin: Kin
         kor: Kor
         kur: Kur
         lav: Lav
@@ -498,6 +500,7 @@ ar:
         tam: Tam
         tel: Tel
         tgk: Tgk
+        tgl: Tgl
         tha: Tha
         tir: Tir
         tuk: Tuk
@@ -634,6 +637,7 @@ ar:
         ban: "لغة بالية - Basa Bali"
         bel: "لغة بيلاروسية - беларуская мова"
         ben: " لغة بنغالية - বাংলা"
+        ber: "لغة أمازيغية - Tamaziɣt"
         bos: "لغة بوسنوية - bosanski"
         bul: "لغة بلغارية - български"
         cze: "لغة تشيكية - čeština"
@@ -650,6 +654,7 @@ ar:
         hun: "لغة مجرية - magyar"
         ita: "لغة إيطالية - italiano"
         kik: "زبان کیکویو - Gĩkũyũ"
+        kin: "لغة كينيارواندا - kinyaRwanda"
         kor: "لغة كورية - 한국말 / 조선말"
         kur: " لغة كردية - کوردی"
         lav: "لغة لاتفية - latviešu"
@@ -675,6 +680,7 @@ ar:
         tam: "لغة تاميلية - தமிழ்"
         tel: "لغة تيلوغوية - తెలుగు"
         tgk: "لغة طاجيكية - тоҷикӣ / تاجیکی"
+        tgl: "لغة تاغالوغية - Tagálog"
         tha: "لغة تايلندية - ภาษาไทย"
         tir: "لغة تغرينية - ትግርኛ"
         tuk: "لغة تركمانية - Türkmençe / Tүркменче"

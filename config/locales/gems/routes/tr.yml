@@ -1,10 +1,22 @@
 tr:
   routes:
-    offers: "hizmetlerimiz"
-    users: "kullanıcılar"
-    contacts: "iletişim"
-    organizations: "organizasyonlar"
-    impressum: "impressum"
-    haeufige-fragen: "haeufige-fragen"
-    ueber-uns: "ueber-uns"
-    faq: "haeufige-fragen"
+    '404': "'404'"
+    contacts: iletişim
+    datenschutzhinweise: Gizlilik-Politikası
+    definitions: tanım
+    emails: emailler
+    faq: sıkça-sorulan-sorular
+    haeufige-fragen: sıkça-sorulan-sorular
+    impressum: Künye
+    new: yeni
+    offers: hizmetlerimiz
+    organizations: organizasyonlar
+    preview: "Ön izleme"
+    rechtliche-hinweise: hukuki-uyarılar
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: supsciptions
+    ueber-uns: Hakkımızda
+    unsubscribe: unsubscribe
+    update_requests: update_request
+    users: kullanıcılar

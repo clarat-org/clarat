@@ -1,4 +1,24 @@
 de:
+  activerecord:
+    attributes:
+      contact:
+        email: NOTRANSLATE
+        message: NOTRANSLATE
+        name: NOTRANSLATE
+      search_location:
+        latitude: Latitude
+        longitude: Longitude
+        query: Query
+      subscription:
+        email: NOTRANSLATE
+      update_request:
+        email: NOTRANSLATE
+        search_location: NOTRANSLATE
+    models:
+      contact: NOTRANSLATE
+      search_location: Search location
+      subscription: NOTRANSLATE
+      update_request: NOTRANSLATE
   cells:
     faq:
       heading: Häufige Fragen
@@ -173,6 +193,7 @@ de:
             var: link_to_about_us
           question: Wer steckt hinter clarat?
       section_2:
+        anchor: questions_about_our_search
         heading: Hast du Fragen zu deiner Suche?
         question_1:
           anchor: who_finds_help
@@ -258,13 +279,13 @@ de:
             das sind oft Kinder und Jugendliche.
           question: Wie finde ich Hilfe, wenn ich nicht für mich selbst suche, sondern für jemand anderen?
         question_2:
-          answer: |
+          answer: |-
             Du findest bei <b>clarat family</b> verschiedene Unterstützungsangebote.
             Sie helfen dir bei verschiedenen Problemen. Wir haben sie für dich nach
             Themen geordnet:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--family--family">
             <b>Kinderwagen – Familie</b><br>
             Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
             Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
@@ -273,7 +294,7 @@ de:
             Kinder. Und viele für Eltern.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--family">
             <b>Herz – Gesundheit</b><br>
             Hier findest du zum Beispiel Hilfe, wenn es dir schlecht geht, weil du
             krank bist. Oder weil jemand in deiner Familie krank ist. Oder wenn
@@ -281,7 +302,7 @@ de:
             Problemen in der Schwangerschaft.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--family">
             <b>Buch – Lernen und Arbeiten</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du Probleme in der Schule hast.
             Oder in der Ausbildung. Du findest aber auch Hilfe, wenn du Probleme
@@ -289,7 +310,7 @@ de:
             suchst.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--family">
             <b>Wegweiser – Sorgen im Alltag</b><br>
             Hier findest du Hilfe, wenn du kleine oder große Sorgen im Alltag hast.
             Zum Beispiel, wenn du Geldsorgen hast. Oder wenn du auf der Straße lebst.
@@ -298,14 +319,14 @@ de:
             auszufüllen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--family">
             <b>Faust – Gewalt</b><br>
             Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen oder
             missbraucht hat. Du findest aber auch Hilfe, wenn du selbst aggressiv
             oder straffällig geworden bist.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--family">
             <b>Blitz – Notfall</b><br>
             Hier findest du schnell Hilfe, wenn du in Not bist. Bei
             Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
@@ -315,13 +336,13 @@ de:
             </p>
           question: Zu welchen Themen finde ich bei clarat family Hilfe?
         question_3:
-          answer: |
+          answer: |-
             Du findest bei <b>clarat refugees</b> verschiedene
             Unterstützungsangebote. Sie helfen dir bei verschiedenen Themen. Wir
             haben sie für dich geordnet:
             <p>
             <ul>
-            <li>
+            <li class="FAQ__ico--legal--refugees">
             <b>Paragraph – Asyl und Recht</b><br>
             Hier findest du Hilfe, wenn du Fragen zum Asylverfahren hast. Egal, ob
             vor dem Verfahren, dabei oder danach. Also zum Beispiel auch, wenn du
@@ -329,7 +350,7 @@ de:
             Auch minderjährige Flüchtlinge finden hier Unterstützung.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--family--refugees">
             <b>Kinderwagen – Familie</b><br>
             Hier findest du Hilfe, wenn es Probleme in deiner Familie gibt. Zum
             Beispiel bei Streit. Aber auch bei vielen anderen Problemen. Wie zum
@@ -338,7 +359,7 @@ de:
             Kinder. Und viele für Eltern.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--health--refugees">
             <b>Herz – Gesundheit</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du krank bist. Oder wenn du
             schwanger bist. Du findest hier auch Hilfe, wenn es dir wegen Krieg und
@@ -346,7 +367,7 @@ de:
             hier Ärzte und Psychologen, die Flüchtlingen helfen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--learn--refugees">
             <b>Buch – Lernen und Arbeiten</b><br>
             Hier findest du Hilfe, wenn du Fragen zum Thema Lernen und Arbeiten
             hast. Zum Beispiel zu Kindergärten und Schulen. Oder wenn du wissen
@@ -356,7 +377,7 @@ de:
             Flüchtling machen kannst.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--everydaylife--refugees">
             <b>Wegweiser – Leben in Deutschland</b><br>
             Hier findest du zum Beispiel Hilfe, wenn du Probleme mit Ämtern hast.
             Zum Beispiel, weil du nicht gut Deutsch sprichst. Dann findest du hier
@@ -367,14 +388,14 @@ de:
             Zum Beispiel in Sportvereinen oder Kochkursen.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--violence--refugees">
             <b>Faust – Gewalt</b><br>
             Hier findest du zum Beispiel Hilfe, wenn dich jemand geschlagen hat.
             Oder wenn man dich im Krieg gefoltert hat. Du findest aber auch Hilfe,
             wenn du zum Beispiel aus einer islamistischen Gruppe aussteigen möchtest.
             </li>
             <br>
-            <li>
+            <li class="FAQ__ico--crisis--refugees">
             <b>Blitz – Notfall</b><br>
             Hier findest du schnell Hilfe, wenn du in Not bist. Bei
             Unterstützungsangeboten, bei denen <b>Tag und Nacht</b> steht, kannst du
@@ -752,6 +773,7 @@ de:
         toggle_section_html:
           one: Dein <strong>clarat refugees</strong>-Angebot
           other: Deine <strong>%{count} clarat refugees</strong>-Angebote
+      last_update: Zuletzt geändert
       obfuscated_email: deine E-Mail-Adresse
       refugees:
         heading: |
@@ -788,10 +810,6 @@ de:
         Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
   enumerize:
-    required:
-      html: <abbr title="required">*</abbr>
-      mark: "*"
-      text: required
     search_form:
       age:
         '0': 0
@@ -905,33 +923,42 @@ de:
         amh: Amh
         ara: Ara
         aze: Aze
+        ban: Ban
         bel: Bel
         ben: Ben
         bos: Bos
         bul: Bul
+        cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
         fas: Fas
+        fin: Fin
         fra: Fra
+        hbs: Hbs
+        heb: Heb
         hin: Hin
         hrv: Hrv
         hun: Hun
         ita: Ita
         kik: Kik
+        kor: Kor
         kur: Kur
         lav: Lav
         lit: Lit
         ltz: Ltz
         luo: Luo
         mkd: Mkd
+        mul: Mul
         nor: Nor
         pol: Pol
         por: Por
         rom: Rom
         ron: Ron
         rus: Rus
+        slo: Slo
         snk: Snk
+        som: Som
         spa: Spa
         sqi: Sqi
         srp: Srp
@@ -941,6 +968,7 @@ de:
         tel: Tel
         tgk: Tgk
         tha: Tha
+        tir: Tir
         tuk: Tuk
         tur: Tur
         urd: Urd
@@ -952,11 +980,12 @@ de:
       section:
         family: Family
         refugees: Refugees
-  formtastic:
-    hints:
-      update_request:
-        index:
-          email: 
+      sort:
+        nearby: Nearby
+        relevance: Relevance
+      sort_order:
+        nearby: Nearby
+        relevance: Relevance
   js:
     ajax_error:
       error: Suchfehler
@@ -966,10 +995,10 @@ de:
     autocomplete_footer: Alle %{results} Suchergebnisse für „%{query}“
     categories_sidebar:
       all_categories: Alle Kategorien
-    cookie_warning_html: |
+    cookie_warning_html: |-
       Cookies helfen uns beim Bereitstellen dieser Website. Durch das Nutzen der
       Website erklären Sie sich einverstanden, dass wir Cookies setzen.
-      <a href="/datenschutzhinweise">Mehr</a>.
+      <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
       get: Benutze meinen Standort!
@@ -987,7 +1016,7 @@ de:
     mobile_filter: Ergebnisse filtern
     more_filter_options: Mehr Filter anzeigen
     query_field:
-      example_placeholder: z.B. %{word}
+      example_placeholder: z.B. %{word}…
       placeholder_words:
         family:
         - Drogen
@@ -1012,6 +1041,8 @@ de:
         - Gesundheitsversorgung
         - Behörden
         - Aufenthaltsrecht
+    routes:
+      faq: haeufige-fragen
     search:
       form_less_label: Suchoptionen ausblenden
       form_more_label: Suchoptionen einblenden
@@ -1031,6 +1062,9 @@ de:
       enclosing: gefunden
       faq_anchor: hier
       faq_text: 'Häufige Fragen und Antworten zur Suche findest du '
+      language_explanation:
+        connector: und
+        text: Dieses Angebot gibt es auf %{language_list}.
       map:
         cooperation: Kooperationsprojekt
         enlarge_map: Karte vergrößern
@@ -1040,18 +1074,118 @@ de:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
         zero: Leider keine Angebote vor Ort
+      personal_offers_new:
+        _query:
+          one: Ein Angebot vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) für den Suchbegriff %{search_query} gefunden
+        category:
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} gefunden
+        category_query:
+          one: Ein Angebot vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) in %{category_path} für den Suchbegriff %{search_query} gefunden
+        default:
+          one: Ein Angebot vor Ort (%{location}) gefunden
+          other: "%{count} Angebote vor Ort (%{location}) gefunden"
+          zero: Leider keine Angebote vor Ort (%{location}) gefunden
       remote_offers:
         one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
         zero: Keine Telefonberatungen und Onlineangebote
+      remote_offers_new:
+        _query:
+          one: Eine Telefonberatung oder ein Onlineangebot für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote für den Suchbegriff %{search_query} gefunden
+        category:
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} gefunden
+        category_query:
+          one: Eine Telefonberatung oder ein Onlineangebot in %{category_path} für den Suchbegriff %{search_query} gefunden
+          other: "%{count} Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden"
+          zero: Leider keine Telefonberatungen und Onlineangebote in %{category_path} für den Suchbegriff %{search_query} gefunden
+        default:
+          one: Eine Telefonberatung oder ein Onlineangebot
+          other: "%{count} Telefonberatungen und Onlineangebote"
+          zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
+    shared:
+      current_and_original_locale:
+        "'150'": Deutsche Gebärdensprache
+        "'326'": Ukrainisch - українська
+        "'568'": Niederländisch - Nederlands
+        "'639'": Dari - دری
+        '150': Deutsche Gebärdensprache
+        '326': Ukrainisch - українська
+        '568': Niederländisch - Nederlands
+        '639': Dari - دری
+        amh: Amharisch - አማርኛ
+        ara: Arabisch - عربي
+        aze: Aserbaidschanisch - Azərbaycan
+        ban: Balinesisch - Basa Bali
+        bel: Weißrussisch - беларуская мова
+        ben: Bengalisch - বাংলা
+        bos: Bosnisch - bosanski
+        bul: Bulgarisch - български
+        cze: Tschechisch - čeština
+        deu: Deutsch
+        ell: Griechisch - ελληνικά
+        eng: Englisch - English
+        fas: Persisch (Farsi) - فارسی
+        fin: Finnisch - suomi
+        fra: Französisch - Français
+        hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
+        heb: Hebräisch - עברית
+        hin: Hindi - हिन्दी
+        hrv: Kroatisch - hrvatski
+        hun: Ungarisch - magyar
+        ita: Italienisch - italiano
+        kik: Kikuyu - Gĩkũyũ
+        kor: Koreanisch - 한국말 / 조선말
+        kur: Kurdisch - کوردی
+        lav: Lettisch - latviešu
+        lit: Litauisch - lietuvių
+        ltz: Luxemburgisch - Lëtzebuergesch
+        luo: Luo - Dholuo
+        mkd: Mazedonisch - македонски
+        mul: weitere Sprachen auf Anfrage
+        nor: Norwegisch - Norsk
+        pol: Polnisch - polski
+        por: Portugiesisch - português
+        rom: Romanes - Romani
+        ron: Rumänisch - română
+        rus: Russisch - русский
+        slo: Slowakisch - slovenský jazyk
+        snk: Soninke - Soninkanxaane
+        som: Somali - Soomaali
+        spa: Spanisch - español
+        sqi: Albanisch - Shqipja
+        srp: Serbisch - српски
+        swa: Swahili - Kiswahili
+        swe: Schwedisch - svenska
+        tam: Tamil - தமிழ்
+        tel: Telugu - తెలుగు
+        tgk: Tadschikisch - тоҷикӣ / تاجیکی
+        tha: Thai - ภาษาไทย
+        tir: Tigrinisch - ትግርኛ
+        tuk: Turkmenisch - Türkmençe / Tүркменче
+        tur: Türkisch - Türkçe
+        urd: Urdu - اردو
+        uzb: Usbekisch - Oʻzbek tili
+        vie: Vietnamesisch - tiếng Việt
+        wol: Wolof - wɔlɔf
+        zho: Chinesisch - 普通话 / 普通話
+        zza: Zaza - Zazaki / Kırmancki
     single_search_result:
       encounters:
         chat: Chat
         email: E-Mail
         forum: Forum
         hotline: Telefon
-        list: 
         online-course: Online-Kurs
         personal: Persönlich
         portal: Adressliste
@@ -1100,8 +1234,8 @@ de:
           de: Deutsch
           en: English
           fr: Français
-          pl: Polskie
-          ru: "НА РУССКОМ"
+          pl: Polski
+          ru: "Русский"
           tr: Türkçe
         title: Wähle deine Sprache
       navigation:
@@ -1124,69 +1258,24 @@ de:
           encounter:
             chat: Chat
             email: E-Mail
+            fax: Fax
             forum: Forum
             hotline: Telefon
+            letter: Brief
             online-course: Online-Kurs
             portal: Adressliste
           exclusive_gender:
             boys_only: nur für Jungen und Männer
             girls_only: nur für Mädchen und Frauen
-          language:
-            '150': 
-            '326': 
-            '568': 
-            '639': 
-            amh: 
-            ara: 
-            aze: 
-            bel: 
-            ben: 
-            bos: 
-            bul: 
-            deu: 
-            ell: 
-            eng: 
-            fas: 
-            fra: 
-            hin: 
-            hrv: 
-            hun: 
-            ita: 
-            kik: 
-            kur: 
-            lav: 
-            lit: 
-            ltz: 
-            luo: 
-            mkd: 
-            mul: 
-            nor: 
-            pol: 
-            por: 
-            rom: 
-            ron: 
-            rus: 
-            snk: 
-            spa: 
-            sqi: 
-            srp: 
-            swa: 
-            swe: 
-            tam: 
-            tel: 
-            tgk: 
-            tha: 
-            tuk: 
-            tur: 
-            urd: 
-            uzb: 
-            vie: 
-            wol: 
-            zho: 
-            zza: 
           target_audience:
             acquaintances: für Bekannte und Verwandte
             children: für Kinder und Jugendliche
+            family_acquaintances: für Bekannte und Verwandte
+            family_children: für Kinder und Jugendliche
+            family_nuclear_family: für Familien
+            family_parents: für Eltern
+            family_parents_to_be: für werdende Eltern
+            family_pregnant_woman: für Schwangere
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
@@ -1204,71 +1293,18 @@ de:
         (z.B. "Postleitzahl Ort").
       title: Leider konnten wir den von dir eingegeben Standort nicht finden
     shared:
-      current_and_original_locale:
-        '150': Deutsche Gebärdensprache
-        '326': Ukrainisch - українська
-        '568': Niederländisch - Nederlands
-        '639': Dari - دری
-        amh: Amharisch - አማርኛ
-        ara: Arabisch - عربي
-        aze: Aserbaidschanisch - Azərbaycan
-        bel: Weißrussisch - беларуская мова
-        ben: Bengalisch - বাংলা
-        bos: Bosnisch - bosanski
-        bul: Bulgarisch - български
-        deu: Deutsch
-        ell: Griechisch - ελληνικά
-        eng: Englisch - English
-        fas: Persisch (Farsi) - فارسی
-        fra: Französisch - Français
-        hin: Hindi - हिन्दी
-        hrv: Kroatisch - hrvatski
-        hun: Ungarisch - magyar
-        ita: Italienisch - italiano
-        kik: Kikuyu - Gĩkũyũ
-        kur: Kurdisch - کوردی
-        lav: Lettisch - latviešu
-        lit: Litauisch - lietuvių
-        ltz: Luxemburgisch - Lëtzebuergesch
-        luo: Luo - Dholuo
-        mkd: Mazedonisch - македонски
-        mul: weitere Sprachen auf Anfrage
-        nor: Norwegisch - Norsk
-        pol: Polnisch - polski
-        por: Portugiesisch - português
-        rom: Romanes - Romani
-        ron: Rumänisch - română
-        rus: Russisch - русский
-        snk: Soninke - Soninkanxaane
-        spa: Spanisch - español
-        sqi: Albanisch - Shqipja
-        srp: Serbisch - српски
-        swa: Swahili - Kiswahili
-        swe: Schwedisch - svenska
-        tam: Tamil - தமிழ்
-        tel: Telugu - తెలుగు
-        tgk: Tadschikisch - тоҷикӣ / تاجیکی
-        tha: Thai - ภาษาไทย
-        tuk: Turkmenisch - Türkmençe / Tүркменче
-        tur: Türkisch - Türkçe
-        urd: Urdu - اردو
-        uzb: Usbekisch - Oʻzbek tili
-        vie: Vietnamesisch - tiếng Việt
-        wol: Wolof - wɔlɔf
-        zho: Chinesisch - 普通话 / 普通話
-        zza: Zaza - Zazaki / Kırmancki
       search_form:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Adresse, Stadtteil, Stadt oder PLZ
-          short: Stadt, PLZ, …
+          long: Berlin, Deutschland
+          short: Berlin
         query_label: Was
         query_placeholder:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
-      last_updated: Eintrag zuletzt bearbeitet am
+      last_update: Eintrag zuletzt bearbeitet am
       next_steps:
         code_word: Wonach musst du fragen oder auf der Webseite suchen?
         heading: Was musst du tun?
@@ -1324,6 +1360,8 @@ de:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
+      headline-offers--family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+      headline-offers--refugees: Unterstützungsangebote für Flüchtlinge
       offers_all: Welche Hilfe bietet diese Organisation?
       where: Wo findest du die Organisation?
       who: Was macht die Organisation?
@@ -1521,181 +1559,6 @@ de:
         </p>
       title: Rechtliche Hinweise
     faq:
-      heading: 
-      section_four:
-        answer_eight: 
-        answer_eight_bullet_one: 
-        answer_eight_bullet_two: 
-        answer_five: 
-        answer_four: 
-        answer_one: 
-        answer_one_bullet_five: 
-        answer_one_bullet_four: 
-        answer_one_bullet_one: 
-        answer_one_bullet_six: 
-        answer_one_bullet_three: 
-        answer_one_bullet_two: 
-        answer_seven: 
-        answer_six: 
-        answer_six_bullet_five: 
-        answer_six_bullet_four: 
-        answer_six_bullet_one: 
-        answer_six_bullet_six: 
-        answer_six_bullet_three: 
-        answer_six_bullet_two: 
-        answer_three: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_five: 
-        question_four: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_three: 
-        question_two: 
-      section_one:
-        answer_eight: 
-        answer_eighteen: 
-        answer_eleven: 
-        answer_fifteen: 
-        answer_five: 
-        answer_four: 
-        answer_fourteen: 
-        answer_nine: 
-        answer_nineteen: 
-        answer_one: 
-        answer_seven: 
-        answer_seventeen: 
-        answer_six: 
-        answer_sixteen: 
-        answer_ten: 
-        answer_thirteen: 
-        answer_three: 
-        answer_twelve: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_eighteen: 
-        question_eleven: 
-        question_fifteen: 
-        question_five: 
-        question_four: 
-        question_fourteen: 
-        question_nine: 
-        question_nineteen: 
-        question_one: 
-        question_seven: 
-        question_seventeen: 
-        question_six: 
-        question_sixteen: 
-        question_ten: 
-        question_thirteen: 
-        question_three: 
-        question_twelve: 
-        question_two: 
-      section_three:
-        answer_eight: 
-        answer_five: 
-        answer_four: 
-        answer_nine: 
-        answer_one: 
-        answer_seven: 
-        answer_six: 
-        answer_three: 
-        answer_two: 
-        heading: 
-        question_eight: 
-        question_five: 
-        question_four: 
-        question_nine: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_three: 
-        question_two: 
-      section_two:
-        answer_eight_bullet_one: 
-        answer_eight_bullet_three: 
-        answer_eight_bullet_two: 
-        answer_eight_first_part: 
-        answer_eight_second_part: 
-        answer_eleven: 
-        answer_fifteen: 
-        answer_five: 
-        answer_four_bullet_one: 
-        answer_four_bullet_two: 
-        answer_four_first_part: 
-        answer_four_second_part: 
-        answer_fourteen_bullet_one: 
-        answer_fourteen_bullet_three: 
-        answer_fourteen_bullet_two: 
-        answer_fourteen_first_part: 
-        answer_fourteen_second_part: 
-        answer_nine_bullet_five: 
-        answer_nine_bullet_four: 
-        answer_nine_bullet_one: 
-        answer_nine_bullet_three: 
-        answer_nine_bullet_two: 
-        answer_nine_first_part: 
-        answer_nine_second_part: 
-        answer_one: 
-        answer_seven_bullet_five: 
-        answer_seven_bullet_four: 
-        answer_seven_bullet_one: 
-        answer_seven_bullet_six: 
-        answer_seven_bullet_three: 
-        answer_seven_bullet_two: 
-        answer_seven_first_part: 
-        answer_seven_second_part: 
-        answer_six_bullet_five: 
-        answer_six_bullet_four: 
-        answer_six_bullet_one: 
-        answer_six_bullet_seven: 
-        answer_six_bullet_six: 
-        answer_six_bullet_three: 
-        answer_six_bullet_two: 
-        answer_six_first_part: 
-        answer_six_second_part: 
-        answer_sixteen_first_part: 
-        answer_sixteen_second_part: 
-        answer_ten: 
-        answer_thirteen: 
-        answer_three_bullet_one: 
-        answer_three_bullet_three: 
-        answer_three_bullet_two: 
-        answer_three_first_part: 
-        answer_three_second_part: 
-        answer_twelve_bullet_one: 
-        answer_twelve_bullet_three: 
-        answer_twelve_bullet_two: 
-        answer_twelve_first_part: 
-        answer_twelve_second_part: 
-        answer_two_bullet_five: 
-        answer_two_bullet_four: 
-        answer_two_bullet_one: 
-        answer_two_bullet_six: 
-        answer_two_bullet_three: 
-        answer_two_bullet_two: 
-        answer_two_first_part: 
-        answer_two_second_part: 
-        heading: 
-        question_eight: 
-        question_eleven: 
-        question_fifteen: 
-        question_five: 
-        question_four: 
-        question_fourteen: 
-        question_nine: 
-        question_one: 
-        question_seven: 
-        question_six: 
-        question_sixteen: 
-        question_ten: 
-        question_thirteen: 
-        question_three: 
-        question_twelve: 
-        question_two: 
       title: Häufige Fragen
     home:
       how:
@@ -1728,10 +1591,13 @@ de:
           refugees.
     impressum:
       heading: Impressum
+      notice: clarat hilft dir dabei, Hilfe zu finden. Aber bei clarat bekommst du keine Beratung. Dafür gibt es Experten. Und genau die kannst du über uns finden.
       responsible_html: |
-        Vorstand<br/>
-        Dr. Dr. Christoph Glaser<br/>
-        (verantwortlich für den Inhalt der Website)
+        Geschäftsführer<br/>
+        Dr. Stefan Shaw und Mathias Barth<br/>
+        (verantwortlich für den Inhalt der Website)<br/><br/>
+        Handelsregister: AG Charlottenburg<br/>
+        HRB 174379 B
       title: Impressum
     not_found:
       description: |
@@ -2049,60 +1915,46 @@ de:
         email: |
           %{mailto}
         fax: Fax +49 (0)30 55 57 96 09 9
-        name: clarat
-        name2: Projekt der Benckiser Stiftung Zukunft
+        name: clarat gGmbH
         street: Französische Straße 47
         telephone: Tel +49 (0)30 55 57 96 00
         zip_city: 10117 Berlin
+  routes:
+    '404': "'404'"
+    contacts: kontakt
+    datenschutzhinweise: datenschutzhinweise
+    definitions: definitions
+    emails: emails
+    faq: haeufige-fragen
+    haeufige-fragen: haeufige-fragen
+    impressum: impressum
+    new: new
+    offers: angebote
+    organizations: organisationen
+    preview: preview
+    rechtliche-hinweise: rechtliche-hinweise
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: subscriptions
+    ueber-uns: ueber-uns
+    unsubscribe: unsubscribe
+    update_requests: update_requests
+    users: nutzer
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
     show:
       cta_report_errors: |
         Hast du einen Fehler entdeckt?
-      google_translate_explanation: |
-        Diese Übersetzungen wurden von Google Translate automatisch gemacht.
-        Da gibt es oft sprachliche Fehler. Es kann also sein, dass etwas komisch
-        klingt. Schau dann lieber noch einmal in den deutschen Text.
+      google_translate_explanation: Oben auf der Seite kannst du deine Sprache anklicken. Dann kannst du clarat in deiner Sprache lesen. Einen Teil der Übersetzung hat die Google Translate API gemacht. Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein, dass etwas komisch klingt.
+    tooltips:
+      welcome:
+        advanced_search: |
+          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        world_switch:
+          family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
+          refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
-    hints:
-      contact:
-        new:
-          email: 
-          message: 
-          name: 
-      search_form:
-        about:
-          query: 
-          search_location: 
-        faq:
-          query: 
-          search_location: 
-        home:
-          query: 
-          search_location: 
-        index:
-          query: 
-          search_location: 
-        new:
-          query: 
-          search_location: 
-        not_found:
-          query: 
-          search_location: 
-      subscription:
-        about:
-          email: 
-        faq:
-          email: 
-        home:
-          email: 
-        index:
-          email: 
-        new:
-          email: 
-        not_found:
-          email: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -2118,6 +1970,7 @@ de:
       new:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
+  success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
   update_requests:
     create:
       success: |

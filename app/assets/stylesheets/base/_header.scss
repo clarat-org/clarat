@@ -28,6 +28,11 @@
       border-top: 6px solid $brand_core_family;
     }
 
+    body.ar & {
+      left: 0;
+      right: auto;
+    }
+
     .template--500 & {
       display: none;
     }
@@ -57,7 +62,6 @@
   @extend %clearfix;
   height: inherit;
   background-size: contain;
-
 
 
   body.refugees & {
@@ -91,6 +95,10 @@
   @extend %roboto_bold;
   font-weight: 400;
   font-size: 34px;
+
+  .template--offers-show & {
+    margin-bottom: 0;
+  }
 }
 
 .jump-to-categories {

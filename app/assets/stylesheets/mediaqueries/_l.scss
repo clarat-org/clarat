@@ -67,6 +67,11 @@
 
   .search-form--input-wrapper {
     right: 60px;
+
+    body.ar & {
+      left: 60px;
+      right: 15px;
+    }
   }
 
   #new_search_form .input.string {
@@ -137,6 +142,7 @@
   .nav-sections__listitem {
     height: auto;
     width: 14.5%;
+    max-width: 107px;
     margin: 0;
     background-size: contain;
 
@@ -172,10 +178,18 @@
     float: none;
     margin-right: 0;
     width: auto;
+
+    // Repeat to override specificity
+    body.ar & {
+      display: block;
+      float: none;
+      margin-left: 0;
+      width: auto;
+    }
   }
 
   .aside-standard {
-    position: absolute !important; // Override JS
+    position: absolute;
     max-width: 27%;
   }
 
@@ -201,7 +215,7 @@
   .section-team__member {
     width: 32%;
     margin-left: 1.8%;
-    min-height: 640px;
+    min-height: 660px;
 
     &:nth-of-type(4n+1) { // reset
       margin-left: 1.8%;
@@ -217,12 +231,18 @@
     min-height: 0;
   }
 
-  .Listing-results__headline {
-    .search-string {
-      max-width: 70%
+  .Listing-results__headline--remote {
+
+    body.pl &,
+    body.fr & {
+      padding-right: 50%;
+    }
+
+    body.ru & {
+      padding-right: 60%;
     }
   }
-
+  
   .filter-form {
     .col-form-wrapper {
       display: block;
@@ -272,5 +292,16 @@
   .newsletter-subscribe__submit {
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
+
+    body.ar & {
+      border-top-left-radius: 0;
+    }
+  }
+
+  input.newsletter-subscribe__input {
+    body.ar & {
+      border-top-left-radius: 6px;
+      margin-right: 0;
+    }
   }
 }

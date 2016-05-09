@@ -65,5 +65,26 @@ describe PagesController do
       get :section_forward, locale: 'de'
       assert_redirected_to '/refugees/somepath#someanchor'
     end
+
+    it 'should redirect correctly for the default root path' do
+      ActionDispatch::Request.any_instance.stubs(:fullpath)
+        .returns('/')
+      get :section_forward, locale: 'de'
+      assert_redirected_to '/refugees/'
+    end
+
+    it 'should redirect correctly for a translated root path' do
+      ActionDispatch::Request.any_instance.stubs(:fullpath)
+        .returns('/en')
+      get :section_forward, locale: 'en'
+      assert_redirected_to '/en/refugees'
+    end
+
+    it 'should redirect correctly for a translated page' do
+      ActionDispatch::Request.any_instance.stubs(:fullpath)
+        .returns('/en/about-us')
+      get :section_forward, locale: 'en'
+      assert_redirected_to '/en/refugees/about-us'
+    end
   end
 end

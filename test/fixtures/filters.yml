@@ -13,27 +13,27 @@ children:
   id: 3
   type: TargetAudienceFilter
   name: Kinder
-  identifier: children
+  identifier: family_children
 parents:
   id: 4
   type: TargetAudienceFilter
   name: Eltern
-  identifier: parents
+  identifier: family_parents
 nuclear_family:
   id: 5
   type: TargetAudienceFilter
   name: Kernfamilie
-  identifier: nuclear_family
+  identifier: family_nuclear_family
 acquaintances:
   id: 6
   type: TargetAudienceFilter
   name: Bekannte
-  identifier: acquaintances
-pregnant_woman:
+  identifier: family_acquaintances
+parents_to_be:
   id: 7
   type: TargetAudienceFilter
-  name: Schwangere
-  identifier: pregnant_woman
+  name: werdende Eltern
+  identifier: family_parents_to_be
 
 family:
   id: 8

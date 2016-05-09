@@ -7,6 +7,7 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
   end
 
   def section section_id
+    @anchor = t_exists?("section_#{section_id}.anchor") ? t("section_#{section_id}.anchor") : ''
     @section_id = section_id
     @question_ids = (1..question_count(section_id) - 1).to_a
     render
@@ -31,7 +32,7 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def question_count section_id
     count = 1
-    count += 1 while t_exists?("section_#{section_id}.question_#{count}")
+    count += 1 while t_exists?("section_#{section_id}.question_#{count}.question")
     count
   end
 
@@ -51,11 +52,12 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   # Helper method to load translation from correct path
   def t locator, *args
-    I18n.t "cells.faq.#{locator}", *args
+    I18n.t("cells.faq.#{locator}", I18n.locale, *args)
   end
 
   # Helper method to check for existence of translation in correct path
-  def t_exists? locator, locale
-    I18n.t("cells.faq.#{locator}", locale) != 'NOTRANSLATE'
+  def t_exists? locator
+    I18n.exists?("cells.faq.#{locator}", I18n.locale) &&
+      I18n.t("cells.faq.#{locator}", I18n.locale) != 'NOTRANSLATE'
   end
 end

@@ -44,7 +44,7 @@
   padding: 7px 15px;
   background: $brand_yellow;
   color: $brand_white;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
 
   .section-content--nextsteps &,
@@ -53,6 +53,11 @@
   .section-content--alloffers & {
     position: relative;
     padding-right: 70px;
+
+    body.ar & {
+      padding-left: 70px;
+      padding-right: 15px;
+    }
   }
 }
 
@@ -66,6 +71,11 @@
   .day {
     padding-right: 5px;
   }
+}
+
+.section-content__body--offers-of-orga {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-content__langlist {

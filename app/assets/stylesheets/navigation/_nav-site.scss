@@ -7,6 +7,10 @@
 .nav-site {
   float: right;
   padding: 15px 15px 15px;
+
+  body.ar & {
+    float: left;
+  }
 }
 
 .nav-site__list {

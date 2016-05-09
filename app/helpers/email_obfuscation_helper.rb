@@ -48,7 +48,7 @@ module EmailObfuscationHelper
               (c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26
         );});
         document.getElementById('secure-email-' + #{index}).innerHTML =
-          '<a href='+'ma'+'il'+'to:'+ string +'>#{linktext}</a>';
+          '<a href='+'ma'+'il'+'to:'+ string +' target="_blank">#{linktext}</a>';
       //]]></script>
     SCRIPT
       .html_safe

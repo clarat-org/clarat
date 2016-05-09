@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127110021) do
+ActiveRecord::Schema.define(version: 20160321120917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,17 +26,27 @@ ActiveRecord::Schema.define(version: 20160127110021) do
     t.datetime "updated_at"
   end
 
+  create_table "base_offers", force: true do |t|
+    t.string "name"
+  end
+
   create_table "categories", force: true do |t|
-    t.string   "name",                                 null: false
+    t.string   "name_de",                              null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "icon",       limit: 12
     t.integer  "parent_id"
     t.integer  "sort_order"
     t.boolean  "visible",               default: true
+    t.string   "name_en"
+    t.string   "name_ar"
+    t.string   "name_fr"
+    t.string   "name_pl"
+    t.string   "name_tr"
+    t.string   "name_ru"
   end
 
-  add_index "categories", ["name"], name: "index_categories_on_name", using: :btree
+  add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
 
   create_table "categories_filters", id: false, force: true do |t|
     t.integer "filter_id",   null: false
@@ -63,18 +73,6 @@ ActiveRecord::Schema.define(version: 20160127110021) do
   add_index "category_hierarchies", ["ancestor_id", "descendant_id", "generations"], name: "category_anc_desc_idx", unique: true, using: :btree
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
-  create_table "category_translations", force: true do |t|
-    t.integer  "category_id",              null: false
-    t.string   "locale",                   null: false
-    t.string   "source",      default: "", null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "name",        default: "", null: false
-  end
-
-  add_index "category_translations", ["category_id"], name: "index_category_translations_on_category_id", using: :btree
-  add_index "category_translations", ["locale"], name: "index_category_translations_on_locale", using: :btree
-
   create_table "contact_people", force: true do |t|
     t.integer  "organization_id",                             null: false
     t.datetime "created_at"
@@ -93,6 +91,7 @@ ActiveRecord::Schema.define(version: 20160127110021) do
     t.string   "responsibility"
     t.integer  "email_id"
     t.boolean  "spoc",                        default: false, null: false
+    t.string   "position"
   end
 
   add_index "contact_people", ["email_id"], name: "index_contact_people_on_email_id", using: :btree
@@ -116,7 +115,7 @@ ActiveRecord::Schema.define(version: 20160127110021) do
   end
 
   create_table "definitions", force: true do |t|
-    t.string   "key",         null: false
+    t.text     "key",         null: false
     t.text     "explanation", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -178,23 +177,21 @@ ActiveRecord::Schema.define(version: 20160127110021) do
   add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
 
   create_table "locations", force: true do |t|
-    t.string   "street",                                     null: false
+    t.string   "street",                          null: false
     t.text     "addition"
-    t.string   "zip",                                        null: false
-    t.string   "city",                                       null: false
+    t.string   "zip",                             null: false
+    t.string   "city",                            null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",                            null: false
-    t.integer  "federal_state_id",                           null: false
+    t.integer  "organization_id",                 null: false
+    t.integer  "federal_state_id",                null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "display_name",                               null: false
-    t.string   "area_code",        limit: 6
-    t.string   "local_number",     limit: 32
-    t.string   "email"
-    t.boolean  "visible",                     default: true
+    t.string   "display_name",                    null: false
+    t.boolean  "visible",          default: true
+    t.boolean  "in_germany",       default: true
   end
 
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
@@ -302,11 +299,13 @@ ActiveRecord::Schema.define(version: 20160127110021) do
     t.string   "gender_first_part_of_stamp"
     t.string   "gender_second_part_of_stamp"
     t.integer  "logic_version_id"
+    t.integer  "base_offer_id"
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
   add_index "offers", ["approved_at"], name: "index_offers_on_approved_at", using: :btree
   add_index "offers", ["area_id"], name: "index_offers_on_area_id", using: :btree
+  add_index "offers", ["base_offer_id"], name: "index_offers_on_base_offer_id", using: :btree
   add_index "offers", ["created_at"], name: "index_offers_on_created_at", using: :btree
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
   add_index "offers", ["logic_version_id"], name: "index_offers_on_logic_version_id", using: :btree

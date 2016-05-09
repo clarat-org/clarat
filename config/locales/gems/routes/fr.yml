@@ -1,10 +1,22 @@
 fr:
   routes:
-    offers: "angebote"
-    users: "nutzer"
-    contacts: "kontakt"
-    organizations: "organisationen"
-    impressum: "impressum"
-    haeufige-fragen: "haeufige-fragen"
-    ueber-uns: "ueber-uns"
-    faq: "haeufige-fragen"
+    '404': "'404'"
+    contacts: contact
+    datenschutzhinweise: protection-des-données
+    definitions: Définitions
+    emails: Adresses électroniques
+    faq: questions-fréquentes
+    haeufige-fragen: questions-fréquentes
+    impressum: impression
+    new: nouveau
+    offers: offres-d-aide
+    organizations: organisations
+    preview: preview
+    rechtliche-hinweise: informations-juridiques
+    search_locations: search_locations
+    subscribe: subscribe
+    subscriptions: subscriptions
+    ueber-uns: a-propose-de-nous
+    unsubscribe: unsubscribe
+    update_requests: update_requests
+    users: utilisateur

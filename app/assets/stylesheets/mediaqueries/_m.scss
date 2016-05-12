@@ -737,6 +737,14 @@
     }
   }
 
+  li[class^="FAQ__ico"] {
+    list-style: none;
+    padding-left: 50px;
+    background-repeat: no-repeat ;
+    background-position: left top;
+    background-size: 39px auto;
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {

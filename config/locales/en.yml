@@ -865,6 +865,7 @@ en:
         ban: Ban
         bel: Bel
         ben: Ben
+        ber: Ber
         bos: Bos
         bul: Bul
         cze: Cze
@@ -881,6 +882,7 @@ en:
         hun: Hun
         ita: Ita
         kik: Kik
+        kin: Kin
         kor: Kor
         kur: Kur
         lav: Lav
@@ -906,6 +908,7 @@ en:
         tam: Tam
         tel: Tel
         tgk: Tgk
+        tgl: Tgl
         tha: Tha
         tir: Tir
         tuk: Tuk
@@ -1045,6 +1048,7 @@ en:
         ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
+        ber: Berber - Tamaziɣt
         bos: Bosnian - bosanski
         bul: Bulgarian - български
         cze: Czech - čeština
@@ -1061,6 +1065,7 @@ en:
         hun: Hungarian - magyar
         ita: Italic - italiano
         kik: Kikuyu - Gĩkũyũ
+        kin: Kinyarwanda - kinyaRwanda
         kor: Korean - 한국말 / 조선말
         kur: Kurdish - کوردی
         lav: Latvian - latviešu
@@ -1075,6 +1080,7 @@ en:
         rom: Romany - Romani
         ron: Romanian - română
         rus: Russian - русский
+        skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
         slo: Slovak - slovenský jazyk
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
@@ -1086,6 +1092,7 @@ en:
         tam: Tamil - தமிழ்
         tel: Telugu - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
+        tgl: Tagalog language - Tagálog
         tha: Thai - ภาษาไทย
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче

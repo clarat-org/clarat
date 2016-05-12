@@ -471,6 +471,7 @@ tr:
         ban: Ban
         bel: Bel
         ben: Ben
+        ber: Ber
         bos: Bos
         bul: Bul
         cze: Cze
@@ -487,6 +488,7 @@ tr:
         hun: Hun
         ita: Ita
         kik: Kik
+        kin: Kin
         kor: Kor
         kur: Kur
         lav: Lav
@@ -512,6 +514,7 @@ tr:
         tam: Tam
         tel: Tel
         tgk: Tgk
+        tgl: Tgl
         tha: Tha
         tir: Tir
         tuk: Tuk
@@ -649,6 +652,7 @@ tr:
         ban: Bali dili - Basa Bali
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
+        ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
         cze: "Çekçe - čeština"
@@ -665,6 +669,7 @@ tr:
         hun: Macarca - magyar
         ita: "İtalyanca - italiano"
         kik: Kikuyu - Gĩkũyũ
+        kin: Ruandaca - kinyaRwanda
         kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
@@ -679,6 +684,7 @@ tr:
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
+        skr: Sırp-Hırvatça - српскохрватски / hrvatskosrpski
         slo: Slovakça - slovenský jazyk
         snk: Soninke - Soninkanxaane
         som: Somalice - Soomaali
@@ -690,6 +696,7 @@ tr:
         tam: Tamilce - தமிழ்
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
+        tgl: Tagalogca - Tagálog
         tha: Tayca - ภาษาไทย
         tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче

@@ -503,6 +503,7 @@ tr:
         rom: Rom
         ron: Ron
         rus: Rus
+        skr: Skr
         slo: Slo
         snk: Snk
         som: Som
@@ -1323,21 +1324,21 @@ tr:
   routes:
     '404': "'404'"
     contacts: iletişim
-    datenschutzhinweise: Gizlilik-Politikası
+    datenschutzhinweise: gizlilik-politikası
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
     haeufige-fragen: sıkça-sorulan-sorular
-    impressum: Künye
+    impressum: künye
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
-    preview: "Ön izleme"
+    preview: "ön-izleme"
     rechtliche-hinweise: hukuki-uyarılar
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: supsciptions
-    ueber-uns: Hakkımızda
+    ueber-uns: hakkımızda
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar

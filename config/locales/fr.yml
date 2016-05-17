@@ -587,6 +587,7 @@ fr:
         rom: Rom
         ron: Ron
         rus: Rus
+        skr: Skr
         slo: Slo
         snk: Snk
         som: Som
@@ -1384,16 +1385,16 @@ fr:
     '404': "'404'"
     contacts: contact
     datenschutzhinweise: protection-des-données
-    definitions: Définitions
-    emails: Adresses électroniques
+    definitions: définitions
+    emails: adresses-électroniques
     faq: questions-fréquentes
     haeufige-fragen: questions-fréquentes
-    impressum: Impression
+    impressum: impression
     new: nouveau
     offers: offres-d-aide
     organizations: organisations
     preview: preview
-    rechtliche-hinweise: Informations-juridiques
+    rechtliche-hinweise: informations-juridiques
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions

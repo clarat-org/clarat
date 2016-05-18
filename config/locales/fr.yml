@@ -185,7 +185,7 @@ fr:
           answer: Tu peux chercher de l’aide sur clarat non seulement pour toi mais aussi pour une autre personne. Par exemple pour un ami. Ou un oncle pour son neveu. Ou une mère pour sa fille. Ou un professeur pour son élève. Mais ne t’étonne pas, on s’adresse toujours en premier à la personne qui doit recevoir de l’aide. Et la plus part du temps, ce sont des enfants, des ados.
           question: Comment trouver de l’aide si je ne cherche pas pour moi mais pour une autre personne?
         question_2:
-          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classés par thèmes:\n<p>\n<ul>\n<li class=\"FAQ__ico--family--family\">\n<b>Poussette - problèmes familiaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li class=\"FAQ__ico--health--family\">\n<b>Cœur - Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li class=\"FAQ__ico--learn--family\">\n<b>Livre - Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--family\">\n<b>Petit guide - Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li class=\"FAQ__ico--violence--family\">\n<b>Poing - Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--family\">\n<b>Éclair - Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
+          answer: "Tu trouves sur <b>clarat family</b> différents types d’aide. Ils t’aident  pour différents problèmes. On les a classés par thèmes:\n<p>\n<ul>\n<li class=\"FAQ__ico--family--family\">\n<b>Problèmes familiaux</b><br>\nIci, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.\n</li>\n<br>\n<li class=\"FAQ__ico--health--family\">\n<b>Santé</b><br>\nIci tu trouves de l’aide si par exemple tu te sens mal parce que tu es malade. Ou parce que quelqu’un chez toi est malade. Ou si un de vous a des problèmes de dépendance. \n</li>\n<br>\n<li class=\"FAQ__ico--learn--family\">\n<b>Apprendre et Travailler</b><br>\nIci, tu trouves de l’aide par exemple si tu as des problèmes à l’école. Ou dans ta formation. De l’aide, tu en trouves aussi si tu as des problèmes pour trouver une formation. Ou si tu cherches un cours d’allemand.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--family\">\n<b>Soucis de la vie quotidienne</b><br>\nIci, tu trouves de l’aide si tu as des soucis  dans la vie de tous les jours, , petits ou grands . Par exemple si tu as des soucis d’argent. Ou si tu vis dans la rue. Mais aussi, si tu cherches quelque chose à faire pendant ton temps libre. Ou si tu as besoin qu’on t’aide à remplir des formulaires, des demandes.\n</li>\n<br>\n<li class=\"FAQ__ico--violence--family\">\n<b>Violence</b><br>\nIci, tu trouves de l’aide, si par exemple,  on t’a battu ou maltraité. De l’aide, tu en trouves aussi si  tu es devenu agressif ou si  tu as commis des infractions.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--family\">\n<b>Cas d’urgence</b><br>\nIci, tu trouves rapidement de l’aide si tu es en détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.\n</li>\n</ul>\n</p>"
           question: Je trouve de l’aide sur quels thèmes sur clarat family?
         question_3:
           answer: |-
@@ -193,37 +193,37 @@ fr:
             <p>
             <ul>
             <li class="FAQ__ico--legal--refugees">
-            <b>Paragraphe - Asile et droit</b><br>
+            <b>Asile et droit</b><br>
             Ici, tu trouves de l’aide si tu as des questions sur la procédure de demande d’asile. Que ce soit avant, pendant ou après la procédure. Donc par exemple si tu as une autorisation de séjour provisoire. Ou si tu as des questions sur les lois allemandes. Même les réfugiés mineurs trouvent ici un soutien.
             </li>
             <br>
             <li class="FAQ__ico--family--refugees">
-            <b>Poussette - problèmes familiaux</b><br>
+            <b>problèmes familiaux</b><br>
             Ici, tu trouves de l’aide en cas de problèmes à la maison. Par exemple en cas de dispute. Mais aussi pour beaucoup d’autres problèmes. Comme par exemple  le problème du passage à l’âge adulte.. Ou avec l’éducation que tu reçois. Ici, chaque membre de ta famille peut recevoir de l’aide. Les enfants peuvent se faire aider. Et les parents aussi.
             </li>
             <br>
             <li class="FAQ__ico--health--refugees">
-            <b>Cœur - Santé</b><br>
+            <b>Santé</b><br>
             Ici tu trouves par exemple de l’aide si tu es malade. Ou si tu es enceinte. De l’aide tu en trouves aussi si tu vas mal à cause de traumatisme de guerre et de torture. Ou si tu as un handicap. Tu trouves ici des médecins et des psychologues qui aident les réfugiés.
             </li>
             <br>
             <li class="FAQ__ico--learn--refugees">
-            <b>Livre - Apprendre et travailler</b><br>
+            <b>Apprendre et travailler</b><br>
             Ici, tu trouves de l’aide si tu as des questions touchant l’apprentissage et le travail. Par exemple sur les jardins d’enfants, les écoles. Ou si tu voudrais savoir comment, en tant que réfugiés tu peux étudier. Ou si tu cherches une place d’apprenti ou un travail. tu trouves ici de nombreux cours d’allemand différents. Et des cours d’intégration que tu dois faire en tant que réfugié.
             </li>
             <br>
             <li class="FAQ__ico--everydaylife--refugees">
-            <b>Petit guide - Vivre en Allemagne</b><br>
+            <b>Vivre en Allemagne</b><br>
             Ici tu trouves de l’aide si par exemple tu as des problèmes administratifs. Par exemple parce que tu ne parles pas très bien allemand. Alors tu trouves ici quelqu’un qui traduit pour toi. Ou quelqu’un qui va avec toi chez le médecin. Tu trouves aussi ici d’autres types d’aide. On te montre par exemple des endroits où on te donne à manger. Ou des meubles et des vêtements. Et tu trouves ici la possibilité de faire la connaissance d’autres personnes. Par exemple dans des associations sportives ou des cours de cuisine.
             </li>
             <br>
             <li class="FAQ__ico--violence--refugees">
-            <b>Poing - Violence</b><br>
+            <b>Violence</b><br>
             Ici tu trouves de l’aide si on t’a par exemple battu. Ou si on t’a torturé en temps de guerre. De l’aide, tu en trouves aussi si par exemple tu souhaites quitter un groupe islamiste.
             </li>
             <br>
             <li class="FAQ__ico--crisis--refugees">
-            <b>Éclair - Cas d’urgence</b><br>
+            <b>Cas d’urgence</b><br>
             Ici tu trouves rapidement de l’aide si tu es en situation de détresse. Dans la liste des types d’aide, là où est écrit  jour et nuit, tu peux toujours prendre contact avec quelqu’un. et ce quelle que soit l’heure.
             </li>
             </ul>

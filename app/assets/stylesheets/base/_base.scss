@@ -47,3 +47,11 @@ a[href^="fax"]:hover {
   text-decoration: none;
   pointer-events: none;
 }
+
+.offcanvas-active {
+  .page-wrap {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+

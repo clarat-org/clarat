@@ -1,0 +1,26 @@
+.tablist {
+  margin: 1em 0 0 ;
+  padding: 0;
+  list-style: none;
+}
+
+.tablist__tab {
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  padding: 0.5em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tablist__tab.is-active {
+  font-weight: 700;
+  background-color: #F6B600;
+}
+
+.tablist__panel {
+  overflow: scroll;
+
+  &.is-hidden {
+    display: none;
+  }
+}

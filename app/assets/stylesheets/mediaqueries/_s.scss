@@ -537,10 +537,14 @@
   // Filter offer#index ######################################
 
   .filter-form {
-    padding: 12px 15px 5px;
+    padding: 12px 0 5px;
     border-radius: 0;
     margin-top: 0;
     margin-bottom: 30px;
+
+    &:after {
+      display: none;
+    }
 
     .input {
       padding: 0;
@@ -549,6 +553,11 @@
     .col-form-inner {
       width: 100%;
     }
+  }
+
+  .filter-form__radio label,
+  .filter-form__checkbox-wrapper label {
+    font-size: initial;
   }
 
   .filter-form__headline {
@@ -564,7 +573,6 @@
     width: 100%;
     color: $brand_brown;
     cursor: pointer;
-    background: image-url('ico_fieldset_expand.svg') no-repeat right center;
     background-size: 6px 8px;
 
     body.ar & {
@@ -578,7 +586,6 @@
   }
 
   .filter-form__fieldset__wrapper {
-    display: none;
     margin-bottom: 20px;
   }
 
@@ -680,15 +687,19 @@
     line-height: 28px;
   }
 
-  // Creating offset for internal anchor jump
-  #categories:before {
-    display: block;
-    margin-top: -68px;
-    height: 68px;
-    content: "";
+  #categories {
+    margin-bottom: 65px;
 
-    .template--offers-index & {
-      display: none;
+    // Creating offset for internal anchor jump
+    &:before {
+      display: block;
+      margin-top: -68px;
+      height: 68px;
+      content: "";
+
+      .template--offers-index & {
+        display: none;
+      }
     }
   }
 

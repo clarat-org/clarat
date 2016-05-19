@@ -9,14 +9,12 @@
   display: none;
   position: relative;
   // overflow: hidden;
-  margin: -25px 0 45px;
+  margin: -25px 1px 45px;
   padding: 12px 20px 5px 10px;
   background-color: $brand_beige;
 
-  &.is-visible {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  #off-canvas-container & {
+    display: block;
   }
 
   &:after {
@@ -235,4 +233,32 @@
     margin-bottom: 0;
     background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
   }
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: transparent;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid $brand_brown ;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: $brand_brown;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid $brand_brown;
 }

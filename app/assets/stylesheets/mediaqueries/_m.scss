@@ -493,6 +493,7 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 0;
+    background-color: transparent;
   }
 
   .filter-form__fieldset {
@@ -737,6 +738,10 @@
     }
   }
 
+  #off-canvas-container {
+    display: block;
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {
@@ -854,4 +859,33 @@
     display: none !important; // override JS
   }
 
+  input[type='radio'] {
+    &:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: transparent;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid $brand_brown;
+    }
+
+    &:checked:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $brand_brown;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid $brand_brown;
+    }
+  }
 }

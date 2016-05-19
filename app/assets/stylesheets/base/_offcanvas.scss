@@ -1,0 +1,19 @@
+#off-canvas-container {
+  display: none;
+  width: 100%;
+  left: -100%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background: rgba($brand_beige, .89);
+  overflow-y: auto;
+  transition: left 0.4s ease;
+  box-sizing: border-box;
+  padding: 25px;
+  z-index: 100001; // Stay above Freshdesk button
+
+  &.active {
+    left: 0;
+  }
+}
+

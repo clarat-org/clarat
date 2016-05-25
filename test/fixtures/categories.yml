@@ -1,23 +1,27 @@
 main1:
   id: 1
   name_de: 'main1'
+  name_en: 'main1en'
   icon: 'a-main1'
 main2:
   id: 2
   name_de: 'main2'
+  name_en: 'main2en'
   icon: 'b-main2'
 sub1:
   id: 3
   name_de: 'sub1.1'
+  name_en: 'sub1.1en'
   parent_id: 1
 sub2:
   id: 4
   name_de: 'sub1.2'
+  name_en: 'sub1.2en'
   parent_id: 1
 main3:
   id: 5
   name_de: 'main3'
-
+  name_en: 'main3en'
 refugee1:
   id: 6
   name_de: 'refugee1'

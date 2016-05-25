@@ -11,16 +11,16 @@ describe NextStep do
         former_locales = I18n.available_locales
         I18n.available_locales = [:de, :en, :fr, :pl]
 
-        NextStep.create text_de: 'foo', text_fr: 'foo',
-                        text_en: nil, text_pl: ''
+        NextStep.create text_de: 'foo', text_fr: nil,
+                        text_en: 'bar', text_pl: ''
 
         I18n.with_locale(:de) do
           NextStep.in_current_locale.count.must_equal 2
         end
-        I18n.with_locale(:fr) do
+        I18n.with_locale(:en) do
           NextStep.in_current_locale.count.must_equal 1
         end
-        I18n.with_locale(:en) do
+        I18n.with_locale(:fr) do
           NextStep.in_current_locale.count.must_equal 0
         end
         I18n.with_locale(:pl) do

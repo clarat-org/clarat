@@ -34,8 +34,18 @@
               li
                 h4.Privacy__title
                   = t '.chapter_three.nested_title_one'
+                p = t '.chapter_three.nested_text_one'
                 p
-                  == t '.chapter_three.nested_text_one',
+                  = t '.chapter_three'\
+                      '.nested_text_one_second_paragraph'
+                p
+                  = t '.chapter_three'\
+                      '.nested_text_one_third_paragraph'
+              li
+                h4.Privacy__title
+                  = t '.chapter_three.nested_title_two'
+                p
+                  == t '.chapter_three.nested_text_two',
                        google_optout: \
                         link_to( \
                           'http://tools.google.com/dlpage/gaoptout',
@@ -45,17 +55,13 @@
                           'http://www.google.com/analytics/terms/de.html',
                           'http://www.google.com/analytics/terms/de.html',
                           target: '_blank'),
-                        policies: link_to( \
-                          'http://www.google.com/analytics/terms/de.html',
-                          'http://www.google.com/analytics/terms/de.html',
-                          target: '_blank'),
                         ads: link_to( \
                           'https://www.google.de/settings/ads',
                           'https://www.google.de/settings/ads',
                           target: '_blank')
                 p
                   == t  '.chapter_three'\
-                        '.nested_text_one_second_paragraph',
+                        '.nested_text_two_second_paragraph',
                         optimizely_privacy: \
                           link_to('http://www.optimizely.com/privacy',
                                   'http://www.optimizely.com/privacy',
@@ -64,13 +70,6 @@
                           link_to('http://www.optimizely.com/opt_out',
                                   'http://www.optimizely.com/opt_out',
                                   target: '_blank')
-              li
-                h4.Privacy__title
-                  = t '.chapter_three.nested_title_two'
-                p = t '.chapter_three.nested_text_two'
-                p
-                  = t '.chapter_three'\
-                      '.nested_text_two_second_paragraph'
           li
             h3.Privacy__title = t '.chapter_four.heading'
             p = t '.chapter_four.text'
@@ -125,6 +124,10 @@
                     mailchimp: \
                     link_to('http://mailchimp.com/legal/terms/',
                             'http://mailchimp.com/legal/terms/',
+                            target: '_blank'),
+                    sendgrid: \
+                    link_to('https://sendgrid.com/privacy',
+                            'https://sendgrid.com/privacy',
                             target: '_blank')
               li
                 h4.Privacy__title
@@ -145,6 +148,12 @@
                       link_to('https://tools.google.com/dlpage/gaoptout?hl=de',
                               'https://tools.google.com/dlpage/gaoptout?hl=de',
                               target: '_blank')
+            p
+              == t '.chapter_eight.nested_text_first_paragraph',
+                  optimizely_optout: \
+                    link_to('http://www.optimizely.com/opt_out',
+                            'http://www.optimizely.com/opt_out',
+                            target: '_blank')
             p = t '.chapter_eight.nested_text_second_paragraph'
 
             .Privacy__address

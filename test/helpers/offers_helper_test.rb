@@ -18,8 +18,8 @@ class OffersHelperTest < ActionView::TestCase
       category_list_classes(1, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--1 has-children'
     end
 
-    it 'should neglect having children when the depth is greater 1' do
-      category_list_classes(2, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--2 '
+    it 'should neglect having children when the depth is greater 3' do
+      category_list_classes(4, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--4 '
     end
 
     it 'should produce the correct string with invisible children' do

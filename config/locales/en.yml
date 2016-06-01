@@ -56,9 +56,9 @@ en:
             var: link_to_family_movie
           question: What is clarat?
         question_10:
-          answer: |
-            The money for <b>clarat family</b> and <b>clarat refugees</b> comes from
-            the %{link_to_bsz}.
+          answer: |-
+            The money for <b>clarat family</b> and <b>clarat refugees</b> comes mostly from
+            the %{link_to_bsz}. However in the future, we would like to bring additional supporters along on board.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -144,14 +144,13 @@ en:
             information is outdated, then we will update it.
           question: Is the information on clarat up to-date?
         question_7:
-          answer: |
-            Some of the offerings found on <b>clarat family</b> and <b>clarat
-            refugees</b> can be accessed wherever you are. There are many offerings
-            that allow you to receive help over the phone or online, for example
-            via e-mail, via chat, or in an online forum. On <b>clarat refugees</b>
-            you can find offerings for all of Germany. On <b>clarat family</b> you
-            can find a large selection of offerings for Berlin, but we will soon
-            start compiling information for other larger cities in Germany.
+          answer: |-
+            You can use some of the offerings at <b>clarat family</b> and at <b>clarat
+            refugees</b> from anywhere. It doesn't matter where you live. There are many offerings
+            that allow you to receive help over the phone or online--in other words,
+            via e-mail, via chat, or in an online forum. You can use many other offerings right there where you live. At <b>clarat refugees</b>
+            you will soon find offerings for many large cities in Germany. At the moment, that means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we have started with Berlin. Here you
+            can find a lot of offerings. But we are collecting further. Soon also for other large cities in Germany.
           question: Is clarat available for all of Germany?
         question_8:
           answer: |
@@ -169,13 +168,11 @@ en:
             var: ref_to_how_many_languages
           question: What is special about clarat?
         question_9:
-          answer: |
-            clarat is a project of the %{link_to_bsz}, which is a family foundation
-            with a long history of supporting children and adolescents. Now it wants
+          answer: |-
+            clarat was brought to life in 2014 by the %{link_to_bsz}, which is a family foundation
+            with a long history of supporting children and adolescents. And with clarat, it now wants
             to help refugees as well. Watch this %{link_to_bsz_movie} to learn more
-            about the foundation. The idea for clarat was conceived in mid-2014, and
-            the clarat team got started in September 2014. If you want to know more
-            about us, have a look %{link_to_about_us}.
+            about the foundation.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -735,10 +732,10 @@ en:
           one: Your <strong>clarat family</strong> offer
           other: Your <strong>%{count} clarat family</strong> offers
       shared:
-        explanation_1: 
-        explanation_2: 
-        explanation_3: 
-        explanation_4: 
+        explanation_1: Here you can see at a glance all of your offerings at clarat. These are offerings we found, using your e-mail address as contact address.
+        explanation_2: If in the future we find new offerings from you, you will see links to these new offerings here as well.
+        explanation_3: You can save this page amongst your favorites and thereby see at a glance what clarat has in store for you.
+        explanation_4: Would you like to be informed by e-mail if new offerings from you are online at clarat? Then use the link at the end of the e-mail you have received from us.
         info: Info
     subscribe:
       success_html: |
@@ -924,11 +921,11 @@ en:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
       sort_order:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
   js:
     ajax_error:
       error: Search error
@@ -1514,7 +1511,7 @@ en:
           for help for refugees.
     impressum:
       heading: Impressum
-      notice: 
+      notice: clarat helps you find help. But at clarat, you won't get any advice. There are experts for that. And it is they whom you can find through us.
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>
@@ -1627,10 +1624,7 @@ en:
     show:
       cta_report_errors: |
         Did you find an error?
-      google_translate_explanation: |
-        Translations here were automatically generated by Google Translate.
-        Those translations usually contain errors. They may sound a bit strange.
-        In that case you should have a look at the German original.
+      google_translate_explanation: Above on the page, you can click on your language. Then you can read clarat in your language. The Google Translate API did part of the translation. Unfortunately, that sometimes causes grammatical errors. It is also possible that a given sentence sounds a bit funny.
     tooltips:
       welcome:
         advanced_search: Do you want to refine your search? Click here. Advanced search options will open up automatically.

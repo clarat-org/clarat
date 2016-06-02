@@ -1,0 +1,14 @@
+.hint {
+  @extend %clarat_rounding;
+  background-color: $brand_orange;
+  color: $brand_white;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+
+.hint__icon {
+  float: left;
+  font-size: 34px;
+  margin-right: 10px;
+}

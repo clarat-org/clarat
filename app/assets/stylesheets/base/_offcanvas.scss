@@ -5,15 +5,50 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  background: rgba($brand_beige, .89);
+  background: rgba($brand_beige, .91);
   overflow-y: auto;
   transition: left 0.4s ease;
   box-sizing: border-box;
-  padding: 25px;
   z-index: 100001; // Stay above Freshdesk button
 
   &.active {
     left: 0;
+  }
+}
+
+.off-canvas-container__top {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.off-canvas-container__close {
+  font-size: 24px;
+  padding: 0 10px;
+
+  body.refugees,
+  body.family {
+    & {
+      background-color: $brand_orange;
+    }
+  }
+}
+
+.off-canvas-container__content {
+  padding: 35px 15px 5px;
+}
+
+.off-canvas-container__trigger--within-oc {
+  width: 100%;
+  text-align: center;
+
+  body.refugees & {
+    background-color: $brand_core_refugees_lightened;
+  }
+
+  body.family & {
+    background-color: $brand_core_family_lightened;
   }
 }
 

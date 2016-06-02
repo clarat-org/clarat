@@ -8,7 +8,6 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
       resize: 'resizeHandler'
     document:
       'Clarat.Search::NewResults': 'newResultsHandler'
-      'Clarat.Search::CategoryClick': 'remoteCloseHandler'
     '.off-canvas-container__trigger':
       click: 'toggleHandler'
 
@@ -76,19 +75,7 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
 
 
     $('.off-canvas-container__number').text(hits + "\xa0")
-
-
-  remoteCloseHandler: =>
-
-    _.delay((->
-      $('#off-canvas-container').removeClass 'active'
-      $('body').toggleClass 'offcanvas-active'
-
-    ), 600)
-
-  registerClickEvent: ->
-
-    $('.off-canvas-container__trigger').click @toggleHandler
+    
 
   initTabs: ->
 

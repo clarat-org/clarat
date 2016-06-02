@@ -774,6 +774,18 @@
     text-align: left;
   }
 
+  .hint {
+    display: flex;
+    font-size: 13px;
+    margin-right: 8px;
+    padding: 14px;
+  }
+
+  .hint__icon {
+    float: none;
+    font-size: 21px;
+  }
+
   // Misc ######################################
 
   .JS-Cookie-warning {

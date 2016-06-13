@@ -500,6 +500,7 @@ tr:
         nor: Nor
         pol: Pol
         por: Por
+        pus: Pus
         rom: Rom
         ron: Ron
         rus: Rus
@@ -520,6 +521,7 @@ tr:
         tir: Tir
         tuk: Tuk
         tur: Tur
+        twi: Twi
         urd: Urd
         uzb: Uzb
         vie: Vie
@@ -682,6 +684,7 @@ tr:
         nor: Norveççe - Norsk
         pol: Lehçe - polski
         por: Portekizce - português
+        pus: Peştuca - پښتو‎
         rom: "Çingenece - Romani"
         ron: Rumence - română
         rus: Rusça - русский
@@ -702,6 +705,7 @@ tr:
         tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
+        twi: Twi - Twi
         urd: Urduca - اردو
         uzb: "Özbekçe - Oʻzbek tili"
         vie: Vietnamca - tiếng Việt

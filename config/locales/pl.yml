@@ -629,6 +629,7 @@ pl:
         nor: Nor
         pol: Pol
         por: Por
+        pus: Pus
         rom: Rom
         ron: Ron
         rus: Rus
@@ -649,6 +650,7 @@ pl:
         tir: Tir
         tuk: Tuk
         tur: Tur
+        twi: Twi
         urd: Urd
         uzb: Uzb
         vie: Vie
@@ -810,6 +812,7 @@ pl:
         nor: Język norweski - Norsk
         pol: Język polski - polski
         por: Język portugalski - português
+        pus: Język paszto - پښتو‎
         rom: Język romski - Romani
         ron: Język rumuński - română
         rus: Język rosyjski - русский
@@ -830,6 +833,7 @@ pl:
         tir: Język tigrinia - ትግርኛ
         tuk: Język turkmeński - Türkmençe / Tүркменче
         tur: Język turecki - Türkçe
+        twi: Język twi - Twi
         urd: Język urdu - اردو
         uzb: Język uzbecki - Oʻzbek tili
         vie: Język wietnamski - tiếng Việt

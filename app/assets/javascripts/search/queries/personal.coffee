@@ -1,5 +1,5 @@
 class Clarat.Search.Query.Personal extends Clarat.Search.Query.Base
-  SEARCH_RADIUS: 50000
+  SEARCH_RADIUS: 25000
 
   # TODO: geolocation
   constructor: (@geolocation, @exact_location, args...) ->

@@ -369,6 +369,8 @@ GEM
     rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
+    rails-assets-iCheck (1.0.2)
+      rails-assets-jquery (>= 1.7)
     rails-assets-imagesloaded (3.2.0)
       rails-assets-eventEmitter (>= 4.2, < 5.0)
       rails-assets-eventie (~> 1.0.4)
@@ -625,6 +627,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-iCheck!
   rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-jquery-cookie!

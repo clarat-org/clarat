@@ -891,6 +891,7 @@ en:
         nor: Nor
         pol: Pol
         por: Por
+        pus: Pus
         rom: Rom
         ron: Ron
         rus: Rus
@@ -911,6 +912,7 @@ en:
         tir: Tir
         tuk: Tuk
         tur: Tur
+        twi: Twi
         urd: Urd
         uzb: Uzb
         vie: Vie
@@ -1075,6 +1077,7 @@ en:
         nor: Norwegian - Norsk
         pol: Polish - polski
         por: Portuguese - português
+        pus: Pashto - پښتو‎
         rom: Romany - Romani
         ron: Romanian - română
         rus: Russian - русский
@@ -1095,6 +1098,7 @@ en:
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
+        twi: Twi - Twi
         urd: Urdu - اردو
         uzb: Uzbek - Oʻzbek tili
         vie: Vietnamese - tiếng Việt

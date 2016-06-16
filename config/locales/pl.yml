@@ -651,6 +651,8 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        pus: Pus
+        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -828,6 +830,8 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+        pus: Język paszto - پښتو‎
+        twi: Język twi - Twi
     single_search_result:
       encounters:
         chat: chat
@@ -1100,7 +1104,7 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
-      notice: 
+      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>

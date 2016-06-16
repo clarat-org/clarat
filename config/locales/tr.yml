@@ -522,6 +522,8 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        pus: Pus
+        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -700,6 +702,8 @@ tr:
         wol: Wolof - wɔlɔf
         zho: "Çince - 普通话 / 普通話"
         zza: Zazaca - Zazaki / Kırmancki
+        pus: Peştuca - پښتو‎
+        twi: Twi - Twi
     single_search_result:
       encounters:
         chat: Sohbet
@@ -986,7 +990,7 @@ tr:
         text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
     impressum:
       heading: Impressum
-      notice: 
+      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>

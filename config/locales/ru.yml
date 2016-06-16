@@ -628,6 +628,8 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        pus: Pus
+        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -809,6 +811,8 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
+        pus: "Пушту - پښتو‎"
+        twi: "Чви - Twi"
     single_search_result:
       encounters:
         chat: "Чат"
@@ -1091,7 +1095,7 @@ ru:
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
     impressum:
       heading: Impressum
-      notice: 
+      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
         Dr. Stefan Shaw und Mathias Barth<br/>

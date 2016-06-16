@@ -28,6 +28,77 @@
       padding-right: 2em;
     }
   }
+
+}
+
+.FAQ_paragraph {
+  ul {
+    padding-left: 0;
+  }
+}
+
+li[class^="FAQ__ico"] {
+  list-style: none;
+  padding-left: 80px;
+  background-repeat: no-repeat ;
+  background-position: left top;
+  background-size: 66px auto;
+}
+
+.FAQ__ico--family--family {
+  background-image: image-url('picto_family--family.svg');
+}
+
+.FAQ__ico--health--family {
+  background-image: image-url('picto_health--family.svg');
+}
+
+.FAQ__ico--learn--family {
+  background-image: image-url('picto_learn--family.svg');
+}
+
+.FAQ__ico--everydaylife--family {
+  background-image: image-url('picto_everydaylife--family.svg');
+}
+
+.FAQ__ico--violence--family {
+  background-image: image-url('picto_violence--family.svg');
+}
+
+.FAQ__ico--crisis--family {
+  background-image: image-url('picto_crisis--family.svg');
+}
+
+.FAQ__ico--legal--refugees {
+  background-image: image-url('picto_legal--refugees.svg');
+}
+
+.FAQ__ico--family--refugees {
+  background-image: image-url('picto_family--refugees.svg');
+}
+
+.FAQ__ico--health--refugees {
+  background-image: image-url('picto_health--refugees.svg');
+}
+
+.FAQ__ico--legal--refugees {
+  background-image: image-url('picto_legal.svg');
+}
+
+.FAQ__ico--learn--refugees {
+  background-image: image-url('picto_learn--refugees.svg');
+}
+
+.FAQ__ico--everydaylife--refugees {
+  background-image: image-url('picto_everydaylife--refugees.svg');
+}
+
+.FAQ__ico--violence--refugees {
+  background-image: image-url('picto_violence--refugees.svg');
+}
+
+.FAQ__ico--crisis--refugees {
+  background-image: image-url('picto_crisis--refugees.svg');
 }
 
 .section-question-group__headline {

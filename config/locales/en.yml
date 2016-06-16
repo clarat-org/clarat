@@ -278,7 +278,7 @@ en:
             <p>
             <ul>
             <li class="FAQ__ico--family--family">
-            <b>Stroller – Family problems</b><br>
+            <b>Family problems</b><br>
             This is where you can find help if you have problems in your family, for
             example because of an argument. You can also find help for many other
             issues such as coming of age and raising children. Any member of the
@@ -287,7 +287,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--health--family">
-            <b>Heart – Health</b><br>
+            <b>Health</b><br>
             Here you can find help with health-related problems: for example if
             you’re facing problems because you or someone in your family is ill, or
             if you or someone you know is dealing with addiction. You will also find
@@ -296,7 +296,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--learn--family">
-            <b>Book – Learning and working</b><br>
+            <b>Learning and working</b><br>
             Here you can find help if you have problems at school or in your
             vocational training. You will also find help if you’re having trouble
             finding a spot in a vocational training program, or if you’re looking
@@ -304,7 +304,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--everydaylife--family">
-            <b>Signpost – Everyday worries</b><br>
+            <b>Everyday worries</b><br>
             Here you can find help with smaller and bigger problems in your everyday
             life: for example, if you have money troubles, or if you are living on
             the street. You will also find offerings for free time activities and
@@ -312,14 +312,14 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--violence--family">
-            <b>Fist – Violence</b><br>
+            <b>Violence</b><br>
             Here you can find help if someone has hit or abused you. You will also
             find help if you’re having trouble with aggression yourself or if you
             have committed a crime.
             </li>
             <br>
             <li class="FAQ__ico--crisis--family">
-            <b>Flash (Lightning bolt) – Emergency</b><br>
+            <b>Emergency</b><br>
             Here you can find support if you are in urgent need of help. If an
             offering’s title says <b>day and night</b> that means you can reach
             someone at any time – no matter how late it is.
@@ -335,7 +335,7 @@ en:
             <p>
             <ul>
             <li class="FAQ__ico--legal--refugees">
-            <b>Paragraph – Asylum and the law</b><br>
+            <b>Asylum and the law</b><br>
             Here you can find help if you have questions about the asylum process or
             about German laws. This section is for you regardless of whether you’re
             about to apply for asylum or a decision has already been made, for
@@ -344,7 +344,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--family--refugees">
-            <b>Stroller  – Family problems</b><br>
+            <b>Family problems</b><br>
             This is where you can find help if you have problems in your family,
             for example because of an argument. You can also find help for many
             other issues such as coming of age and raising children. Any member of
@@ -353,7 +353,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--health--refugees">
-            <b>Heart – Health</b><br>
+            <b>Health</b><br>
             Here you can find help if you are ill or if you are pregnant. You can
             also find offerings to help you if you are dealing with emotional or
             psychological trauma as a result of war or torture. This section will
@@ -362,7 +362,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--learn--refugees">
-            <b>Book – Learning and working</b><br>
+            <b>Learning and working</b><br>
             Here you can find help if you have questions about learning and working
             in Germany. You might want to learn more about preschools (kindergarten)
             and schools, what you need to do in order to study at a university, or
@@ -372,7 +372,7 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--everydaylife--refugees">
-            <b>Signpost – Living in Germany</b><br>
+            <b>Living in Germany</b><br>
             Here you can find help if you’re having trouble dealing with government
             agencies, for example because you don’t speak German. Here you can find
             someone who can translate or interpret for you, or someone who can
@@ -383,14 +383,14 @@ en:
             </li>
             <br>
             <li class="FAQ__ico--violence--refugees">
-            <b>Fist – Violence</b><br>
+            <b>Violence</b><br>
             Here you can find help if you have experienced violence or were tortured
             in your home country. You will also find help if, for example, you want
             to leave an extremist group.
             </li>
             <br>
             <li class="FAQ__ico--crisis--refugees">
-            <b>Flash (Lightning bolt) – Emergency</b><br>
+            <b>Emergency</b><br>
             Here you can find support if you are in urgent need of help. If an
             offering’s title says <b>day and night</b> that means you can reach
             someone at any time – no matter how late it is.
@@ -862,6 +862,7 @@ en:
         ban: Ban
         bel: Bel
         ben: Ben
+        ber: Ber
         bos: Bos
         bul: Bul
         cze: Cze
@@ -878,6 +879,7 @@ en:
         hun: Hun
         ita: Ita
         kik: Kik
+        kin: Kin
         kor: Kor
         kur: Kur
         lav: Lav
@@ -889,9 +891,11 @@ en:
         nor: Nor
         pol: Pol
         por: Por
+        pus: Pus
         rom: Rom
         ron: Ron
         rus: Rus
+        skr: Skr
         slo: Slo
         snk: Snk
         som: Som
@@ -903,10 +907,12 @@ en:
         tam: Tam
         tel: Tel
         tgk: Tgk
+        tgl: Tgl
         tha: Tha
         tir: Tir
         tuk: Tuk
         tur: Tur
+        twi: Twi
         urd: Urd
         uzb: Uzb
         vie: Vie
@@ -1044,6 +1050,7 @@ en:
         ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
+        ber: Berber - Tamaziɣt
         bos: Bosnian - bosanski
         bul: Bulgarian - български
         cze: Czech - čeština
@@ -1060,6 +1067,7 @@ en:
         hun: Hungarian - magyar
         ita: Italic - italiano
         kik: Kikuyu - Gĩkũyũ
+        kin: Kinyarwanda - kinyaRwanda
         kor: Korean - 한국말 / 조선말
         kur: Kurdish - کوردی
         lav: Latvian - latviešu
@@ -1071,9 +1079,11 @@ en:
         nor: Norwegian - Norsk
         pol: Polish - polski
         por: Portuguese - português
+        pus: Pashto - پښتو‎
         rom: Romany - Romani
         ron: Romanian - română
         rus: Russian - русский
+        skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
         slo: Slovak - slovenský jazyk
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
@@ -1085,10 +1095,12 @@ en:
         tam: Tamil - தமிழ்
         tel: Telugu - తెలుగు
         tgk: Tadjik - тоҷикӣ / تاجیکی
+        tgl: Tagalog language - Tagálog
         tha: Thai - ภาษาไทย
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
+        twi: Twi - Twi
         urd: Urdu - اردو
         uzb: Uzbek - Oʻzbek tili
         vie: Vietnamese - tiếng Việt
@@ -1430,10 +1442,9 @@ en:
         glossary. Her favorite song is “Lose It” by Oh Wonder.
     agb:
       heading: Rechtliche Hinweise
-      text_html: |
+      text_html: |-
         <p>
-        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die Benckiser
-        Stiftung Zukunft („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die clarat gGmbH („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
         Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
         die Richtigkeit der auf dieser Webseite angebotenen Informationen und
         Links. Die Webseite ist ausschließlich für den privaten Gebrauch
@@ -1528,80 +1539,15 @@ en:
     privacy:
       chapter_eight:
         heading: 8. Recht auf Widerspruch und Ansprechpartner
-        nested_text_second_paragraph: |
-          Ihre Fragen zum
-          Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren,
-          Beschwerden oder Ähnliches richten Sie bitte an:
-        text: |
-          Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer
-          Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung
-          für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der
-          Verwendung von Google Analytics zu widersprechen, indem Sie auf den
-          folgenden Link klicken:
-          %{google_optout}.
+        nested_text_first_paragraph: 'Um der Verwendung des Webanalysedienstes von Optimizely zu widersprechen, können Sie folgendem Link folgen: %{optimizely_optout}.'
+        nested_text_second_paragraph: 'Ihre Fragen zum Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren, Beschwerden oder Ähnliches richten Sie bitte an: '
+        text: 'Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der Verwendung von Google Analytics zu widersprechen, indem Sie auf den folgenden Link klicken: %{google_optout}.'
       chapter_five:
         heading: 5. Social Media Plugins
-        nested_text_four: |
-          Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp
-          Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA
-          („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte
-          unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht
-          in ihrer Funktion einem regulärem Weblink (HTML-Hyperlink). Das
-          bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen
-          an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche
-          aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen
-          möchte und dass die Schaltfläche von unserer Website aus aufgerufen
-          wurde.
-        nested_text_one: |
-          Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von
-          der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA
-          betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons
-          von Facebook können Sie unsere Webseite und Leistungen empfehlen und
-          Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden
-          Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In
-          diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert.
-          Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und
-          die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den
-          Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird
-          auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie
-          Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird
-          diese Information an Ihr Facebook-Profil in die USA übermittelt.
-          Andere Nutzer können dann sehen, dass Sie unsere Leistungen
-          empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon
-          ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen
-          haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
-          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
-          Facebook (%{facebook}).
-        nested_text_three: |
-          Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite
-          600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den
-          Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
-          Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
-          nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind
-          und auf den Button klicken, werden Information über Ihr
-          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an
-          Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet.
-          Nähere Informationen zur Erhebung und Nutzung der Daten durch
-          Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum
-          Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von
-          Twitter (%{twitter}).
-        nested_text_two: |
-          Wir verwenden Social Plugins von Google. Klicken Sie auf den
-          Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei
-          Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder
-          nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf
-          Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind
-          und auf den Button klicken, werden Information über Ihr
-          Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an
-          Google in die USA übermittelt und Ihrem Google-Konto zugeordnet.
-          Nähere Informationen zur Erhebung und Nutzung der Daten durch Google,
-          über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer
-          Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1
-          (%{google}).
+        nested_text_four: Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht in ihrer Funktion einem regulären Weblink (HTML-Hyperlink). Das bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen möchte und dass die Schaltfläche von unserer Website aus aufgerufen wurde.
+        nested_text_one: Wir verwenden Plugins des sozialen Netzwerks facebook.com, welches von der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA betrieben wird ("Facebook"). Über die Nutzung des Empfehlen-Buttons von Facebook können Sie unsere Webseite und Leistungen empfehlen und Ihre Freunde darüber informieren. Klicken Sie auf den Button, werden Sie in einem neuen Fenster zur Anmeldung bei Facebook aufgefordert. In diesem Fall wird auch ein Facebook-Cookie auf Ihrem Rechner platziert. Facebook erhält dadurch Informationen (mindestens Ihre IP-Adresse und die Cookie-ID), dass Sie unsere Webseite besucht haben. Wenn Sie den Button nicht anklicken oder nicht bei Facebook eingeloggt sind, wird auch kein Facebook-Cookie auf Ihrem Rechner platziert. Wenn Sie Facebook-Nutzer und eingeloggt sind und auf den Button klicken, wird diese Information an Ihr Facebook-Profil in die USA übermittelt. Andere Nutzer können dann sehen, dass Sie unsere Leistungen empfehlen. Welche Nutzer genau diese Information bekommen, hängt davon ab, welche Privatsphäre-Einstellungen Sie auf Facebook vorgenommen haben. Nähere Informationen zur Erhebung und Nutzung der Daten durch Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Facebook (%{facebook}).
+        nested_text_three: Wir verwenden Social Plugins von Twitter Inc., 795 Folsom St., Suite 600, San Franscisco, CA 94107, USA („Twitter“). Klicken Sie auf den Twitter-Button, werden Sie in einem neuen Fenster zur Anmeldung bei Twitter aufgefordert. In diesem Fall wird auch ein Twitter-Cookie auf Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder nicht bei Twitter eingeloggt sind, wird auch kein Twitter-Cookie auf Ihrem Rechner platziert. Wenn Sie Twitter-Nutzer und eingeloggt sind und auf den Button klicken, werden Information über Ihr Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID) an Twitter in die USA übermittelt und Ihrem Twitter-Account zugeordnet. Nähere Informationen zur Erhebung und Nutzung der Daten durch Twitter, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Twitter (%{twitter}).
+        nested_text_two: Wir verwenden Social Plugins von Google. Klicken Sie auf den Google+1-Button, werden Sie in einem neuen Fenster zur Anmeldung bei Google aufgefordert. In diesem Fall wird auch ein Google-Cookie auf Ihrem Rechner platziert. Wenn Sie den Button nicht anklicken oder nicht bei Google eingeloggt sind, wird auch kein Google-Cookie auf Ihrem Rechner platziert. Wenn Sie Google-Nutzer und eingeloggt sind und auf den Button klicken, werden Information über Ihr Benutzerverhalten (mindestens Ihre IP-Adresse und die Cookie-ID), an Google in die USA übermittelt und Ihrem Google-Konto zugeordnet. Nähere Informationen zur Erhebung und Nutzung der Daten durch Google, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Google+1 (%{google}).
         nested_title_four: 5.4. Whats App
         nested_title_one: 5.1 Facebook
         nested_title_three: 5.3 Twitter
@@ -1611,221 +1557,44 @@ en:
           folgenden Maßgaben verwendet:
       chapter_four:
         heading: 4. Einbindung von Diensten Dritter
-        text: |
-          Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa
-          Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste
-          davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner
-          herstellen können und damit Ihre IP-Adresse erhalten. Nähere
-          Informationen zur Erhebung und Nutzung der Daten durch die
-          Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
+        text: Soweit wir die Dienste Dritter in unsere Webseite einbinden (etwa Kartenmaterial von Google Maps), so hängt die Nutzung dieser Dienste davon ab, dass die Drittanbieter eine Verbindung zu Ihrem Rechner herstellen können und damit Ihre IP-Adresse erhalten. Nähere Informationen zur Erhebung und Nutzung der Daten durch die Drittanbieter finden Sie in deren jeweiligen Datenschutzhinweisen.
       chapter_one:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
-        text: |
-          Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern
-          wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen:
-          Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und
-          Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung
-          sowie über die Art Ihres Browsers und Betriebssystems. Die
-          Verarbeitung dieser Informationen ist technisch notwendig, um die
-          Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn
-          Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht
-          gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter
-          nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung
-          zusenden).
+        text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
         heading: |
           7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
-        nested_text_one: |
-          Für den Versand unseres Newsletters
-          auf die Unterstützung von MailChimp/Mandrill, (%{mailchimp}) zurück,
-          einem Unternehmen der The Rocket Science Group, LLC aus den USA
-          zurück. Dort erfolgt die Datenverarbeitung für uns streng
-          weisungsgebunden als technische Dienstleistung im Rahmen einer
-          Auftragsdatenverarbeitung. Ansonsten erfolgt eine Weitergabe von Daten
-          an Dritte nur, wenn Sie eingewilligt haben oder wir hierzu rechtlich
-          verpflichtet sind.
-        nested_text_two: |
-          Wir verwenden zur Abwicklung von Service-Anfragen ein externes
-          Ticket-System von Freshdesk Inc, 311 California street, San Francisco,
-          CA 94104, USA. Freshdesk ist dem Datenschutzabkommen Safe Harbor
-          beigetreten und kann eine entsprechende Zertifizierung vorweisen und
-          erfüllt somit die Mindestvoraussetzungen für eine gesetzeskonforme
-          Verarbeitung von Daten. Bitte beachten Sie auch die
-          Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur
-          Verwendung des Service-Portals ist mindestens die Angabe einer
-          korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist
-          möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es
-          notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten
-          erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist
-          optional und dient der Verbesserung und Beschleunigung unseres
-          Kundenservice. Wenn Sie mit einer Datenerhebung über und einer
-          Datenspeicherung im externen System von Freshdesk nicht einverstanden
-          sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur
-          Einreichung von Service-Anfragen, zum Beispiel telefonisch.
-        nested_title_one: 7.1. MailChimp/Mandrill
+        nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
+        nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
+        nested_title_one: 7.1. MailChimp/Sendgrid
         nested_title_two: 7.2. Freshdesk
-        text: |
-          Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte
-          Zugriffe oder Veröffentlichung zu verhindern, haben wir physische,
-          elektronische und organisatorische Schutzprozesse eingerichtet, die
-          die von uns online erhobenen Daten schützen. Wir werden Ihre Daten
-          nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von
-          der vorstehenden Regelung sind unsere Dienstleistungspartner, die
-          wir zur Abwicklung unserer Leistungen benötigen.
+        text: 'Die Sicherheit Ihrer Daten ist uns sehr wichtig. Um unerlaubte Zugriffe oder Veröffentlichung zu verhindern, haben wir physische, elektronische und organisatorische Schutzprozesse eingerichtet, die die von uns online erhobenen Daten schützen. Wir werden Ihre Daten nicht verkaufen, vermieten oder an Dritte weitergeben. Ausgenommen von der vorstehenden Regelung sind unsere Dienstleistungspartner, die wir zur Abwicklung unserer Leistungen benötigen. '
       chapter_six:
         heading: 6. Datenlöschung
-        text: |
-          Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt
-          ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des
-          Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer
-          weitergehenden Speicherung verpflichtet sind.
+        text: 'Soweit in diesen Hinweisen zum Datenschutz nichts anderes bestimmt ist, löschen wir Ihre Daten spätestens drei Monate nach Wegfall des Zwecks der Speicherung, soweit wir gesetzlich nicht zu einer weitergehenden Speicherung verpflichtet sind. '
       chapter_three:
         heading: 3. Informationen über Ihr Nutzungsverhalten
-        nested_text_one: |
-          Diese Webseite benutzt Google Analytics, einen Webanalysedienst der
-          Google Inc. (“Google”). Google Analytics verwendet sog. “Cookies”,
-          Textdateien, die auf Ihrem Computer gespeichert werden und die eine
-          Analyse der Benutzung der Website durch Sie ermöglichen. Die durch
-          den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite
-          (einschließlich Ihrer IP-Adresse) werden in der Regel an einen Server
-          von Google in den USA übertragen und dort gespeichert. Im Falle der
-          Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre
-          IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der
-          Europäischen Union oder in anderen Vertragsstaaten des Abkommens
-          über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in
-          Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in
-          den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
-          Website wird Google diese Informationen benutzen, um Ihre Nutzung der
-          Webseite auszuwerten, um Berichte über die Webseiteaktivitäten für die
-          Webseitebetreiber zusammenzustellen und um weitere mit der
-          Webseitenutzung und der Internetnutzung verbundene Dienstleistungen
-          zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser
-          übermittelte IP-Adresse wird nicht mit anderen Daten von Google
-          zusammengeführt. Sie können die Speicherung der Cookies durch eine
-          entsprechende Einstellung Ihrer Browser Software verhindern; wir
-          weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
-          nicht sämtliche Funktionen dieser Website vollumfänglich werden
-          nutzen können. Sie können darüber hinaus die Erfassung der durch das
-          Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
-          (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten
-          durch Google verhindern, indem sie das unter dem folgenden Link
-          verfügbare Browser-Plugin herunterladen und installieren: %{google_optout}.
-          Nähere Informationen zu
-          Nutzungsbedingungen und Datenschutz finden Sie unter %{analytics_terms}
-           bzw. unter
-          %{policies}. Angesichts der Diskussion um
-          den Einsatz von Analysetools mit vollständigen IP-Adressen möchten wir
-          darauf hinweisen, dass diese Webseite Google Analytics mit der
-          Erweiterung “_anonymizeIp()” verwendet und daher IP-Adressen nur
-          gekürzt weiterverarbeitet werden, um eine direkte
-          Personenbeziehbarkeit auszuschließen. Diese Website nutzt die
-          Google-Analytics-Berichte zu demografischen Merkmalen, in denen Daten
-          aus interessenbezogener Werbung von Google sowie Besucherdaten von
-          Drittanbietern (z. B. Alter, Geschlecht und Interessen) verwendet
-          werden. Diese Daten sind nicht auf eine bestimmte Person
-          zurückzuführen und können jederzeit über die Anzeigeneinstellungen
-          %{ads} deaktiviert werden. Durch die
-          Nutzung dieser Webseite erklären Sie sich mit der Bearbeitung der über
-          Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und
-          Weise und zu dem zuvor benannten Zweck einverstanden.
-        nested_text_one_second_paragraph: |
-          Daneben setzt diese Webseite den Webanalysedienst Optimizely von
-          Optimizely Inc. ein, der für A/B-Tests verwendet wird. Dieser Service
-          verwendet Cookies um den Browser eines Besuchers zu identifizieren
-          und die Nutzung dieser Webseite zu analysieren. Die Cookies sammeln
-          keine personenbezogenen Daten. Mehr Informationen darüber, wie
-          Optimizely Ihre Daten verarbeitet, finden Sie unter
-          %{optimizely_privacy}. Sie können das Optimizely-Tracking
-          jederzeit deaktivieren, indem Sie der Anleitung auf
-          %{optimizely_optout} folgen
-        nested_text_two: |
-          Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert
-          werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien
-          werden von dem Web-Server, den Sie zur Herstellung einer Verbindung
-          mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) verwendet
-          haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies,
-          hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa
-          um den zuletzt von Ihnen nachgesuchten Standort für Sie zu speichern.
-          Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur
-          während der Dauer ihres Besuches auf der Webseite funktionieren und
-          nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende
-          Web-Session oder den Browser schließen, wird das Cookie automatisch
-          gelöscht. Davon ausgenommen sind die Informationen über den von Ihnen
-          zuletzt nachgesuchten Standort; diese werden nach Ablauf von drei
-          Monaten automatisch gelöscht.
-        nested_text_two_second_paragraph: |
-          Browser Einstellungen: Die meisten Browser sind so eingestellt, dass
-          sie Cookies automatisch akzeptieren. Sie können jedoch das Speichern
-          von Cookies deaktivieren oder Ihren Browser so einstellen, dass er sie
-          benachrichtigt, sobald Cookies gesendet werden. Außerdem können Sie
-          Cookies auch jederzeit von Ihrem Rechner löschen (z.B: im Windows
-          Explorer). Wenn Sie dies tun möchten, verwenden Sie bitte die
-          Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir
-          möchten Sie jedoch darauf hinweisen, dass Sie dadurch die
-          Funktionsfähigkeit dieser Webseite beeinträchtigen können.
-        nested_title_one: 3.1 Analyse
-        nested_title_two: 3.2 Cookies
-        text: |
-          Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal
-          anpassen möchten, benötigen wir Informationen über das allgemeine
-          Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten,
-          welche wir zur Ermöglichung der Inanspruchnahme unseres
-          Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter
-          Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in
-          den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten
-          (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal.
-          Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person
-          oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung
-          Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen
-          können Sie jederzeit widersprechen.
+        nested_text_one: Cookies sind kleine Text-Dateien, die auf Ihrer Festplatte gespeichert werden können, wenn Sie eine Webseite besuchen. Diese Text-Dateien werden von dem Web-Server, den Sie zur Herstellung einer Verbindung mit Hilfe Ihres Web-Browsers (z.B. Internet Explorer) verwendet haben, erzeugt und an Sie versendet. Auch wir verwenden Cookies, hauptsächlich um die Verwendung unserer Webseite zu erleichtern, etwa um den zuletzt von Ihnen nachgesuchten Standort für Sie zu speichern. Zu diesem Zweck verwenden wir u.a. sog. „Session-Cookies“, die nur während der Dauer ihres Besuches auf der Webseite funktionieren und nur solange Ihr Browser geöffnet ist. Sobald Sie die entsprechende Web-Session oder den Browser schließen, wird das Cookie automatisch gelöscht. Davon ausgenommen sind die Informationen über den von Ihnen zuletzt nachgesuchten Standort; diese werden nach Ablauf von drei Monaten automatisch gelöscht. Außerdem verwenden wir Cookies zur Erstellung von pseudonymen Nutzungsprofilen. Nähere Informationen zu diesen Cookies finden Sie im nächsten Kapitel „Analyse“.
+        nested_text_one_second_paragraph: Sofern Sie zum ersten Mal unsere Webseite besuchen, wird Ihnen auf Ihrer Einstiegsseite der Hinweis zum Datenschutz mit dem Einwilligungstext in Cookies angezeigt. Indem Sie dann mit der aktiven Nutzung der Webseite fortfahren und der Nutzung von Cookies nicht widersprechen, willigen Sie in die Verwendung von Cookies ein und diese Einwilligung wird (in Form eines Cookies) auf Ihrem Browser gespeichert, damit wir Ihnen diesen Hinweis nicht auf jeder Seite erneut anzeigen müssen. Sofern dieser Hinweis in Ihrem Browser fehlt (z.B. indem Sie den Browserverlauf löschen), wird dieser Hinweis bei einem erneuten Besuch unserer Webseite eingeblendet.
+        nested_text_one_third_paragraph: 'Browser Einstellungen: Die meisten Browser sind so eingestellt, dass sie Cookies automatisch akzeptieren. Sie können jedoch das Speichern von Cookies deaktivieren oder Ihren Browser so einstellen, dass er sie benachrichtigt, sobald Cookies gesendet werden. Außerdem können Sie Cookies auch jederzeit von Ihrem Rechner löschen (z.B. im Windows Explorer). Wenn Sie dies tun möchten, verwenden Sie bitte die Hilfe-Funktion Ihres Web-Browser bzw. Ihres Betriebssystems. Wir möchten Sie jedoch darauf hinweisen, dass Sie dadurch die Funktionsfähigkeit dieser Webseite beeinträchtigen können. Falls Sie lediglich die Verwendung von Cookies zur Erstellung pseudonymer Nutzungsprofile unterbinden möchten, können Sie die im nächsten Kapitel „Analyse“ enthaltenen technischen Möglichkeiten verwenden.'
+        nested_text_two: 'Diese Webseite benutzt Google Analytics, einen Webanalysedienst der Google Inc. (“Google”). Google Analytics verwendet Cookies (Informationen zu Cookies finden Sie ein Kapitel weiter oben). Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite (einschließlich Ihrer IP-Adresse) werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Berichte über die Webseitenaktivitäten für die Webseitenbetreiber zusammenzustellen und um weitere mit der Webseitennutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: %{google_optout}. Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter %{analytics_terms}. Angesichts der Diskussion um den Einsatz von Analysetools mit vollständigen IP-Adressen möchten wir darauf hinweisen, dass diese Webseite Google Analytics mit der Erweiterung “_anonymizeIp()” verwendet und daher IP-Adressen nur gekürzt weiterverarbeitet werden, um eine direkte Personenbeziehbarkeit auszuschließen. Diese Website nutzt die Google-Analytics-Berichte zu demografischen Merkmalen, in denen Daten aus interessenbezogener Werbung von Google sowie Besucherdaten von Drittanbietern (z. B. Alter, Geschlecht und Interessen) verwendet werden. Diese Daten sind nicht auf eine bestimmte Person zurückzuführen und können jederzeit über die Anzeigeneinstellungen (%{ads}) deaktiviert werden.'
+        nested_text_two_second_paragraph: Daneben setzt diese Webseite den Webanalysedienst Optimizely von Optimizely Inc. ein, der für A/B-Tests verwendet wird. Dieser Service verwendet Cookies um den Browser eines Besuchers zu identifizieren und die Nutzung dieser Webseite zu analysieren. Die Cookies sammeln keine personenbezogenen Daten. Mehr Informationen darüber, wie Optimizely Ihre Daten verarbeitet, finden Sie unter %{optimizely_privacy}. Sie können das Optimizely-Tracking jederzeit deaktivieren, indem Sie der Anleitung auf %{optimizely_optout} folgen.
+        nested_title_one: 3.1 Cookies
+        nested_title_two: 3.2 Analyse
+        text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
         heading: |
           2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
-        nested_text_one: |
-          Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur
-          Verfügung gestellten personenbezogenen Daten werden wir ausschließlich
-          zur Erbringung der jeweils angefragten Leistung verwenden.
-        nested_text_three: |
-          Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes
-          Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden,
-          berechnet der Hersteller Ihres Browsers anhand bestimmter
-          Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden
-          diese Information, um auf Ihren Standort abgestimmte Suchergebnisse
-          liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau
-          die Standortangaben sind und wie Sie diese Funktion deaktivieren,
-          entnehmen Sie bitte den jeweiligen Datenschutz- bzw.
-          Nutzungsbestimmungen Ihres Browsers.
-        nested_text_two: |
-          Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung
-          gestellten personenbezogenen Daten werden wir nutzen, um Ihnen
-          gelegentlich E-Mails mit Informationen über neue oder spezielle
-          Angebote zuzusenden.
+        nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
+        nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
+        nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
         nested_title_one: 2.1 Kontaktformular
         nested_title_three: 2.3 Standortdaten
         nested_title_two: 2.2 Newsletter-Anmeldung
-        text: |
-          Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter
-          oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion
-          freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten,
-          Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie
-          unter Umständen weitere personenbezogene Daten übermitteln, speichern
-          und nutzen wir diese Angaben nur zur Erbringung der jeweils
-          angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur
-          Zusendung unseres Newsletters).
+        text: 'Wenn Sie uns über das Formular zur Anmeldung für unseren Newsletter oder über das Kontaktformular, bzw. über eine Live-Chat-Funktion freiwillig personenbezogene Daten wie Ihren Namen, Ihre Kontaktdaten, Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Postleitzahl sowie unter Umständen weitere personenbezogene Daten übermitteln, speichern und nutzen wir diese Angaben nur zur Erbringung der jeweils angefragten Leistungen (etwa zur Beantwortung Ihrer Fragen oder zur Zusendung unseres Newsletters). '
       heading: Datenschutzhinweise
-      intro_first_part: |
-        Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und
-        an clarat, einem Projekt der Benckiser Stiftung Zukunft. Wir nehmen den
-        Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden
-        wir personenbezogene Daten ausschließlich im Rahmen der geltenden
-        Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
-      intro_second_part: |
-        Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und
-        Verwendung personenbezogener Daten unterrichten. Sie können diese
-        Unterrichtung jederzeit auf unserer Webseite abrufen. Die Benckiser
-        Stiftung Zukunft behält sich Änderungen dieser Datenschutzhinweise vor.
-        Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn
-        Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     shared:
       address:

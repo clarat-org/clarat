@@ -46,6 +46,8 @@ a[href^="fax"]:visited,
 a[href^="fax"]:hover {
   text-decoration: none;
   pointer-events: none;
+  direction: ltr;
+  unicode-bidi: embed;
 }
 
 .offcanvas-active {

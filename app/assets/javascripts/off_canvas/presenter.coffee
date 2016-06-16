@@ -17,9 +17,17 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
     @resizeHandler()
     @initTabs()
     @initInputStyling()
+    @detectSwipeRight()
+
+  detectSwipeRight: () =>
+
+    hammertime = new Hammer(document.getElementById('off-canvas-container'))
+    hammertime.on 'swipeleft', () =>
+      @toggleHandler()
+
 
   initInputStyling: () =>
-    $('input').iCheck();
+    $('input').iCheck()
 
 
   newResultsHandler: (event, resultSet) =>

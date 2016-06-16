@@ -25,6 +25,7 @@ about supported directives.
 # = require shariff
 # = require sticky-kit
 # = require iCheck
+# = require hammerjs
 
 
 # = require handlebars.runtime

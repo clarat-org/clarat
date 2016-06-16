@@ -90,6 +90,7 @@ about supported directives.
 # = require nav_lang_bar/presenter
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
+# = require toggle_advanced_search/presenter
 #
 # = require map_modal/presenter
 #

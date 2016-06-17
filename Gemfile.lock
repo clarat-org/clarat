@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 9891d4c56ac77712c10b4fac712afb9ccdcf53d5
+  revision: ab8857065c7fd09b13fe979936f999c04530ca47
+  branch: feature/834-add-stamp-to-search-index
   specs:
     clarat_base (0.1.4)
       aasm
@@ -163,7 +164,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160310)
+    domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)

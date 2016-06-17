@@ -3,7 +3,9 @@ if set.any?
     parent = subset[0]
     children = subset[1]
 
-    next unless parent.visible
+    has_offers = parent.self_and_descendants.to_a.map{|i| i.offers.approved.in_section(@current_section).any?}.any?
+
+    next unless parent.visible && has_offers
     json.name parent.name
     json.sections parent.section_filters.pluck(:identifier)
     json.list_classes category_list_classes(depth, children, @current_section)

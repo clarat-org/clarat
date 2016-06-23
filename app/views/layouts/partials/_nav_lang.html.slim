@@ -4,6 +4,7 @@ nav.nav-lang
 
     .nav-lang__languages
       button.nav-lang__button
+        span.sr-only = t '.title'
 
       ul.nav-lang__list
         - I18n.available_locales.each do |locale|

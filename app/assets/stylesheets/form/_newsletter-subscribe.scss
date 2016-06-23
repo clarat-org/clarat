@@ -11,6 +11,10 @@
     display: inline-block;
   }
 
+  label {
+    @extend .sr-only;
+  }
+
 }
 
 .newsletter-subscribe__input,

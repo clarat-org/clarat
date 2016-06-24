@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 9891d4c56ac77712c10b4fac712afb9ccdcf53d5
+  revision: ebdef12a45e76858486891803bb7f4b61627151b
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +33,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.10.1)
+    aasm (4.11.0)
     actionmailer (4.1.15)
       actionpack (= 4.1.15)
       actionview (= 4.1.15)
@@ -61,7 +61,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.8.1)
+    algoliasearch (1.9.0)
       httpclient (~> 2.7.1)
       json (>= 1.5.1)
     algoliasearch-rails (1.14.1)
@@ -163,7 +163,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160310)
+    domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)

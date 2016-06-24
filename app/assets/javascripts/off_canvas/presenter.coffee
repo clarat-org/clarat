@@ -79,11 +79,11 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
     remoteHits = remote?.nbHits || 0
     persHits = pers?.nbHits || 0
 
-    hits = +remoteHits + +persHits
+    resultText = I18n.t('js.search_results.off_canvas.result_text',
+                        result_count: (remoteHits + persHits))
 
+    $('.off-canvas-container__result-text').text(resultText)
 
-    $('.off-canvas-container__number').text(hits + "\xa0")
-    
 
   initTabs: ->
 
@@ -108,4 +108,3 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
 
 $(document).on 'ready', ->
   new Clarat.OffCanvas.Presenter
-

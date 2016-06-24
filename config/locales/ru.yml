@@ -634,8 +634,6 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        pus: Pus
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -750,6 +748,8 @@ ru:
         category_query: 
         default: 
       show_personal: "Показать предложения на месте"
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "Немецкий язык жестов"
@@ -823,8 +823,6 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
-        pus: "Пушту - پښتو‎"
-        twi: "Чви - Twi"
     single_search_result:
       encounters:
         chat: "Чат"

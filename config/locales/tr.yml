@@ -528,8 +528,6 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
-        pus: Pus
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -641,6 +639,8 @@ tr:
         category_query: 
         default: 
       show_personal: Yerel hizmetleri göster
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Almanca işaret dili
@@ -714,8 +714,6 @@ tr:
         wol: Wolof - wɔlɔf
         zho: "Çince - 普通话 / 普通話"
         zza: Zazaca - Zazaki / Kırmancki
-        pus: Peştuca - پښتو‎
-        twi: Twi - Twi
     single_search_result:
       encounters:
         chat: Sohbet

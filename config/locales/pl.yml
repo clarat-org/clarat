@@ -657,8 +657,6 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        pus: Pus
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -769,6 +767,8 @@ pl:
         category_query: 
         default: 
       show_personal: Pokaż oferty lokalne
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Niemiecki język migowy
@@ -842,8 +842,6 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        pus: Język paszto - پښتو‎
-        twi: Język twi - Twi
     single_search_result:
       encounters:
         chat: chat

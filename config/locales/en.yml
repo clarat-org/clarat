@@ -919,8 +919,6 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
-        pus: Pus
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -1034,6 +1032,8 @@ en:
         category_query: 
         default: 
       show_personal: Show local offers
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": German Sign Language - Deutsche Gebärdensprache
@@ -1107,8 +1107,6 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        pus: Pashto - پښتو‎
-        twi: Twi - Twi
     single_search_result:
       encounters:
         chat: chat

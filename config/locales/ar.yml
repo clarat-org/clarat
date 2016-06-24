@@ -514,8 +514,6 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
-        pus: Pus
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -624,6 +622,8 @@ ar:
         category_query: 
         default: 
       show_personal: "عرض عروض مكانية أكثر"
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "لغة الإشارة الألمانية"
@@ -697,11 +697,6 @@ ar:
         wol: "لغة ولوفية - wɔlɔf"
         zho: "لغة صينية - 普通话 / 普通話"
         zza: "لغة زازاكية - Zazaki / Kırmancki"
-        ber: "لغة أمازيغية - Tamaziɣt"
-        pus: "لغة بشتوية - پښتو‎"
-        skr: "لغة صربية كرواتية - српскохрватски / hrvatskosrpski"
-        tgl: "لغة تاغالوغية - Tagálog"
-        twi: "التوي - Twi"
     single_search_result:
       encounters:
         chat: "دردشة"

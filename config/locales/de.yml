@@ -975,12 +975,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        ber: Ber
-        kin: Kin
-        pus: Pus
-        skr: Skr
-        tgl: Tgl
-        twi: Twi
       section:
         family: Family
         refugees: Refugees
@@ -1117,6 +1111,8 @@ de:
           other: "%{count} Telefonberatungen und Onlineangebote"
           zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
+      off_canvas:
+        result_text: "%{result_count} Suchergebnisse anzeigen"
     shared:
       current_and_original_locale:
         "'150'": Deutsche Gebärdensprache
@@ -1190,8 +1186,6 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        pus: Paschtu - پښتو‎
-        twi: Twi - Twi
     single_search_result:
       encounters:
         chat: Chat

@@ -34,7 +34,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.10.1)
+    aasm (4.11.0)
     actionmailer (4.1.15)
       actionpack (= 4.1.15)
       actionview (= 4.1.15)
@@ -62,7 +62,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.8.1)
+    algoliasearch (1.9.0)
       httpclient (~> 2.7.1)
       json (>= 1.5.1)
     algoliasearch-rails (1.14.1)

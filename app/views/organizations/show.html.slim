@@ -35,7 +35,7 @@
                     li.Listing-offers__listitem
                       .Listing-results__stamp
                         button.Listing-results__expander aria-toggle='false' Expand/Collapse
-                        = offer.send("_stamp_#{section.identifier}", @current_locale)
+                        = offer.send("stamp_#{section.identifier}", @current_locale)
                       .Listing-results__meta.Listing-results__meta--inorga[
                         class=('Listing-results__meta--with-address' if offer.location && offer.location.visible?)
                       ]

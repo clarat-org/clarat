@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: ebdef12a45e76858486891803bb7f4b61627151b
+  revision: 25e6348e38122e5f4af77a57c536575d92cfc2ac
   specs:
     clarat_base (0.1.4)
       aasm
@@ -309,7 +309,7 @@ GEM
       pkg-config (~> 1.1.7)
     nokogumbo (1.4.7)
       nokogiri
-    paper_trail (5.1.1)
+    paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
       request_store (~> 1.1)
@@ -364,6 +364,9 @@ GEM
     rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
+    rails-assets-hammerjs (2.0.8)
+    rails-assets-iCheck (1.0.2)
+      rails-assets-jquery (>= 1.7)
     rails-assets-imagesloaded (3.2.0)
       rails-assets-eventEmitter (>= 4.2, < 5.0)
       rails-assets-eventie (~> 1.0.4)
@@ -606,6 +609,8 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-hammerjs!
+  rails-assets-iCheck!
   rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-jquery-cookie!

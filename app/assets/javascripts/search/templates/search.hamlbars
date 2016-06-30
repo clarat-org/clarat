@@ -1,5 +1,5 @@
 %main.content-main.content-main--offers-index
-  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main
+  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main.off-canvas-container__trigger
     = hb 'more_label'
 
   = hb 'with filters' do

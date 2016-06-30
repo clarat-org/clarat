@@ -1111,6 +1111,8 @@ de:
           other: "%{count} Telefonberatungen und Onlineangebote"
           zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
+      off_canvas:
+        result_text: "%{result_count} Suchergebnisse anzeigen"
     shared:
       current_and_original_locale:
         "'150'": Deutsche Gebärdensprache
@@ -1340,7 +1342,7 @@ de:
           twitter: Twitter
           youtube: Youtube
       what: Worum geht's?
-      who: Wer bietet diese Hilfe an?
+      who: Wo bekommst du diese Hilfe?
       who_contact_people:
         dr: Dr.
         email: 'E-Mail: '

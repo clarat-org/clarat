@@ -43,6 +43,8 @@ html class='no-js' lang=I18n.locale
              subscription: @subscription || Subscription.new,
              current_section: @current_section
 
+    = render 'layouts/partials/offcanvas'
+
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts
 

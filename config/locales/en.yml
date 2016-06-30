@@ -1032,6 +1032,8 @@ en:
         category_query: 
         default: 
       show_personal: Show local offers
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": German Sign Language - Deutsche Gebärdensprache

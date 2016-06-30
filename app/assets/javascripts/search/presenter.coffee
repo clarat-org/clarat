@@ -54,7 +54,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     else if @model.isPersonal()
       @showMapUnderCategories()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
-    $(document).trigger 'Clarat.Search::NewResults'
+    $(document).trigger 'Clarat.Search::NewResults', resultSet
 
   # Support Results only change when location changes. TODO: facets?
   onLocationSupportResults: (resultSet) =>
@@ -68,6 +68,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
+    $(document).trigger 'Clarat.Search::NewLocationSupportResults', [
+      remoteFacetResults,
+      personalFacetResults
+    ]
+
 
   onQuerySupportResults: (resultSet) =>
     remoteFacetResults = resultSet.results[0]
@@ -75,6 +80,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
+    $(document).trigger 'Clarat.Search::NewQuerySupportResults', [
+      remoteFacetResults,
+      personalFacetResults
+    ]
 
 
   ### CALLBACKS ###

@@ -29,7 +29,8 @@ html class='no-js' lang=I18n.locale
             = render '/layouts/partials/flash',
                      type: message[0],
                      content: message[1]
-      - if controller_name == 'pages' && action_name == 'home'
+      - if controller_name == 'pages' && \
+        %w(home section_choice).include? action_name
         = render 'layouts/partials/navigation',
                  search_form: SearchForm.new,
                  current_section: @current_section

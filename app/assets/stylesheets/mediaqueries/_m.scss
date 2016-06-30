@@ -752,6 +752,13 @@
     display: block;
   }
 
+  .Listing-results__headline,
+  .Listing-results__headline--remote {
+    body.ar & {
+      padding-left: 0;
+    }
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {

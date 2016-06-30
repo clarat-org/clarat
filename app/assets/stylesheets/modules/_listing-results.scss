@@ -35,6 +35,13 @@
   }
 }
 
+.Listing-results__headline,
+.Listing-results__headline--remote {
+  body.ar & {
+    padding-right: 0;
+  }
+}
+
 .Listing-results__headline {
   @extend %roboto_bold;
   position: relative;

@@ -16,6 +16,7 @@
 @import "base/footer";
 @import "base/aside";
 @import "base/states";
+@import "base/offcanvas";
 
 @import "modules/logo";
 @import "modules/claim";
@@ -42,7 +43,9 @@
 @import "modules/table";
 @import "modules/noscript";
 @import "modules/emailinfo";
+@import "modules/tablist";
 @import "modules/hint";
+
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
 @import "modules/sections/section-offer";

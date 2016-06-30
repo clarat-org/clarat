@@ -767,6 +767,8 @@ pl:
         category_query: 
         default: 
       show_personal: Pokaż oferty lokalne
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Niemiecki język migowy

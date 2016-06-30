@@ -748,6 +748,8 @@ ru:
         category_query: 
         default: 
       show_personal: "Показать предложения на месте"
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "Немецкий язык жестов"

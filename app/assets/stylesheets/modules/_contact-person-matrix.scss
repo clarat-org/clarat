@@ -1,0 +1,48 @@
+.contact-person-matrix {
+  width: 100%;
+
+  tr {
+    > td {
+      &:first-child {
+        border-right: 1px solid #C8BEAB;
+        width: 49%;
+      }
+    }
+
+    td:nth-child(2) {
+      position: relative;
+      width: 48%;
+      padding-left: 3%;
+
+      $triangle_dimension: 10px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        content: ' ';
+        width: 0;
+        height: 0;
+        border-bottom: $triangle_dimension solid transparent;
+        border-top: $triangle_dimension solid transparent;
+        border-left: $triangle_dimension solid $brand-grey;
+        font-size: 0;
+        line-height: 0;
+        margin-top: -($triangle_dimension);
+      }
+    }
+  }
+
+  td {
+    padding: 12px 0;
+  }
+}
+
+.contact-person-matrix__title {
+  font-weight: 700;
+  display: block;
+}
+
+.contact-person-matrix__subline {
+  font-size: 12px;
+}

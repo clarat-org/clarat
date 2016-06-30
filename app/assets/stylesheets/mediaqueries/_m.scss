@@ -745,6 +745,23 @@
     background-size: 39px auto;
   }
 
+  .contact-person-matrix {
+    font-size: 82%;
+
+    tr {
+      td:nth-child(2) {
+        &:before {
+          border-bottom-width: 5px;
+          border-top-width: 5px;
+          border-left-width: 5px;
+          font-size: 0;
+          line-height: 0;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
   // Footer ######################################
 
   .nav-site__listitem {

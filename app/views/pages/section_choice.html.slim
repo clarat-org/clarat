@@ -1,6 +1,19 @@
 - provide(:title, t(".title.#{@current_section}"))
 - cache ['section_choice', I18n.t] do
 
-  main.content-main.content-main--wide
-    .wrapper-inner
-      h1 Choose Family or Refugees
+  main.content-main.content-main--wide.content-main--section_choice
+    ul.section-choice
+      li.section-choice__container
+        section.section-choice__family
+          a[href="#"]
+            h1.section-choice__headline.section-choice__headline--family Family
+          .section-choice__stage.section-choice__stage--family
+            a.section-choice__cta.section-choice__cta--family[href="#"]
+              | Unterstützungsangebote für Kinder, Jugendliche und Familien
+      li.section-choice__container
+        section.section-choice__refugees
+          a[href="#"]
+            h1.section-choice__headline.section-choice__headline--refugees Refugees
+          .section-choice__stage.section-choice__stage--refugees
+            a.section-choice__cta.section-choice__cta--refugees[href="#"]
+              | Unterstützungsangebote für Flüchtlinge

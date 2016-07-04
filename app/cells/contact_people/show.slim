@@ -1,0 +1,14 @@
+section.section-content
+  h3.section-content__title = t '.heading'
+  .section-content__body
+    table.contact-person-matrix
+      tbody
+        - each_contact_set do |contact_info, person_info_array|
+          - person_info_count = person_info_array.length
+          - person_info_array.each_with_index do |person_info, index|
+            tr
+              td
+                = person_info
+              - if index == 0
+                td rowspan=person_info_count
+                  = contact_info

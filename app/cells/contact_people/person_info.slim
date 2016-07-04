@@ -1,0 +1,21 @@
+span.contact-person-matrix__title
+  - if model.last_name?
+    - if model.gender?
+      =< t ".#{model.gender}"
+    - if model.academic_title?
+      =< t ".#{model.academic_title}"
+    - if model.first_name? && model.last_name?
+      =< "#{model.first_name} #{model.last_name}"
+      br
+    - elsif model.last_name?
+      =< "#{model.last_name}"
+      br
+  - elsif model.first_name?
+    = "#{model.first_name}"
+    br
+  - elsif model.operational_name?
+    = "#{model.operational_name}"
+    br
+
+span.contact-person-matrix__subline
+  = organization_name

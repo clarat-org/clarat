@@ -21,6 +21,7 @@ module Clarat
       #{config.root}/app/objects/value/
       #{config.root}/app/objects/queries/
       #{config.root}/app/models/filters/
+      #{config.root}/app/cells/
     )
 
     # Activate observers that should always be running.

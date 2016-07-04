@@ -20,6 +20,18 @@ tr:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr.
+      email: 'E-Mail: '
+      fax: 'Faks: '
+      female: Bayan
+      heading: Nereye başvurabilirsin?
+      male: Bay
+      obfuscated_email: |
+        Bu E-Mail adresi spam koruma adına JavaScript ile
+        şifrelenmiştir. Okumak için JavaScript aktifleştir.
+      phone: 'Telefon: '
+      prof_dr: Prof. Dr.
     faq:
       heading: Sıkça sorulan sorular
       section_1:
@@ -620,6 +632,8 @@ tr:
         enlarge_map: Haritayı büyüt
         headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
       more: Daha fazla telefon ve online hizmetler
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
@@ -867,21 +881,8 @@ tr:
           youtube: Youtube
       what: Konu nedir?
       who: Nerede yardım bulabilirim?
-      who_contact_people:
-        dr: Dr.
-        email: 'E-Mail: '
-        fax: 'Faks: '
-        female: Bayan
-        male: Bay
-        obfuscated_email: |
-          Bu E-Mail adresi spam koruma adına JavaScript ile
-          şifrelenmiştir. Okumak için JavaScript aktifleştir.
-        phone: 'Telefon: '
-        prof_dr: Prof. Dr.
       who_location:
         organizations: 'bir ... hizmetidir:'
-      who_section:
-        heading: Nereye başvurabilirsin?
   opening:
     display_string:
       appointment: Sözleşilen vakit
@@ -1073,6 +1074,9 @@ tr:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1090,6 +1094,7 @@ tr:
     emails: emailler
     faq: sıkça-sorulan-sorular
     haeufige-fragen: sıkça-sorulan-sorular
+    home: 
     impressum: künye
     new: yeni
     offers: hizmetlerimiz

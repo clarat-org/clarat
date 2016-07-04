@@ -1,0 +1,23 @@
+- if model.local_number_1?
+  = t '.phone'
+  a< href="tel:#{model.telephone_1}"
+    = model.area_code_1
+    =< tel_format model.local_number_1
+  br
+- if model.local_number_2?
+  = t '.phone'
+  a< href="tel:#{model.telephone_2}"
+    = model.area_code_2
+    =< tel_format model.local_number_2
+  br
+- if model.fax_number?
+  = t '.fax'
+  a< href="fax:#{model.fax}"
+    = model.fax_area_code
+    =< tel_format model.fax_number
+  br
+- if model.email_address?
+  = t '.email'
+  span[id="secure-email-#{index}"]
+    ==< secure_email
+  br

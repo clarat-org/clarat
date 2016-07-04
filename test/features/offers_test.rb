@@ -77,7 +77,7 @@ feature 'Offer display' do
     )
     visit unscoped_offer_path offer
     page.body.must_match(
-      '030  12 34 56</a><br /></li></ul>'
+      '030  12 34 56'
     )
   end
 

@@ -7,12 +7,16 @@ class ContactPeopleCell < Cell::ViewModel
 
   private
 
+  def contacts
+    model.contact_people.order('last_name DESC')
+  end
+
   def each_contact_set &block
     contact_set = {}
-    contacts = model.contact_people.order('last_name DESC')
 
     contacts.each_with_index do |contact, index|
-      return if model.hide_contact_people && !contact.spoc
+      next if model.hide_contact_people && !contact.spoc
+
       contact_info =
         cell('contact_people_cell/contact_info', contact, index: index).to_s
       person_info = cell('contact_people_cell/person_info', contact).to_s

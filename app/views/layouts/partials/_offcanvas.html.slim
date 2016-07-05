@@ -1,0 +1,11 @@
+#off-canvas-container.off-canvas-container
+  .off-canvas-container__top
+    button.off-canvas-container__trigger.off-canvas-container__trigger--within-oc
+      span.off-canvas-container__result-text
+    button.off-canvas-container__close.off-canvas-container__trigger aria-label="Close" ×
+  .off-canvas-container__content
+    ul.tablist role="tablist"
+      li#tab1.tablist__tab.is-active aria-controls="tab_filter" aria-selected="true" role="tab" tabindex="0"  Filter
+      li#tab2.tablist__tab aria-controls="tab_categories" aria-selected="false" role="tab" tabindex="0"  Kategorien
+    #tab_filter.tablist__panel aria-hidden="false" aria-labelledby="tab1" role="tabpanel"
+    #tab_categories.tablist__panel.is-hidden aria-hidden="true" aria-labelledby="tab2" role="tabpanel"

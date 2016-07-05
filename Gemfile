@@ -62,6 +62,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-sticky-kit'
   gem 'rails-assets-algoliasearch' # search client
   gem 'rails-assets-isInViewport'
+  gem 'rails-assets-iCheck'
+  gem 'rails-assets-hammerjs'
 end
 
 #######

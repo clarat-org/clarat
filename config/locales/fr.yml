@@ -720,6 +720,8 @@ fr:
         category_query: 
         default: 
       show_personal: Montre les services locaux
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Langue des signes allemande

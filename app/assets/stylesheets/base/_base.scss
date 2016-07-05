@@ -49,3 +49,11 @@ a[href^="fax"]:hover {
   direction: ltr;
   unicode-bidi: embed;
 }
+
+.offcanvas-active {
+  .page-wrap {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+

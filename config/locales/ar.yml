@@ -622,6 +622,8 @@ ar:
         category_query: 
         default: 
       show_personal: "عرض عروض مكانية أكثر"
+      off_canvas:
+        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "لغة الإشارة الألمانية"

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 9891d4c56ac77712c10b4fac712afb9ccdcf53d5
+  revision: 25e6348e38122e5f4af77a57c536575d92cfc2ac
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +33,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.10.1)
+    aasm (4.11.0)
     actionmailer (4.1.15)
       actionpack (= 4.1.15)
       actionview (= 4.1.15)
@@ -61,7 +61,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.8.1)
+    algoliasearch (1.9.0)
       httpclient (~> 2.7.1)
       json (>= 1.5.1)
     algoliasearch-rails (1.14.1)
@@ -163,7 +163,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160310)
+    domain_name (0.5.20160615)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -309,7 +309,7 @@ GEM
       pkg-config (~> 1.1.7)
     nokogumbo (1.4.7)
       nokogiri
-    paper_trail (5.1.1)
+    paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
       request_store (~> 1.1)
@@ -364,6 +364,9 @@ GEM
     rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
+    rails-assets-hammerjs (2.0.8)
+    rails-assets-iCheck (1.0.2)
+      rails-assets-jquery (>= 1.7)
     rails-assets-imagesloaded (3.2.0)
       rails-assets-eventEmitter (>= 4.2, < 5.0)
       rails-assets-eventie (~> 1.0.4)
@@ -606,6 +609,8 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-hammerjs!
+  rails-assets-iCheck!
   rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-jquery-cookie!

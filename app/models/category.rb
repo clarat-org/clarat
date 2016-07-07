@@ -11,4 +11,12 @@ class Category < ActiveRecord::Base
       hash_tree.sort_by { |tree| tree.first.icon || '' }
     end
   end
+
+  # Does this category or any of its decendants have offers? Needed to
+  # determine if it shoul be shown in the search results
+  def offers_in_section? section
+    self_and_descendants.any? do |category|
+      category.offers.approved.in_section(section).any?
+    end
+  end
 end

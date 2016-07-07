@@ -20,6 +20,16 @@ fr:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr.
+      email: 'E-mail:'
+      fax: 'Fax:'
+      female: Madame
+      heading: Tu peux t'adresser à qui?
+      male: Monsieur
+      obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
+      phone: Téléphone
+      prof_dr: Prof. Dr
     faq:
       heading: Questions fréquentes
       section_1:
@@ -701,6 +711,8 @@ fr:
         enlarge_map: agrandir la carte
         headline_small_map: services sur place sur la carte
       more: d'autres services par téléphone ou en ligne
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         one: un service sur place
         other: "%{count} services sur place"
@@ -720,8 +732,6 @@ fr:
         category_query: 
         default: 
       show_personal: Montre les services locaux
-      off_canvas:
-        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Langue des signes allemande
@@ -938,19 +948,8 @@ fr:
           youtube: Youtube
       what: De quoi s'agit-il?
       who: Qui propose cette aide?
-      who_contact_people:
-        dr: Dr.
-        email: 'E-mail:'
-        fax: 'Fax:'
-        female: Madame
-        male: Monsieur
-        obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
-        phone: Téléphone
-        prof_dr: Prof. Dr
       who_location:
         organizations: 'Un service de:'
-      who_section:
-        heading: Tu peux t'adresser à qui?
   opening:
     display_string:
       appointment: sur rendez-vous
@@ -1135,6 +1134,9 @@ fr:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1152,6 +1154,7 @@ fr:
     emails: adresses-électroniques
     faq: questions-fréquentes
     haeufige-fragen: questions-fréquentes
+    home: 
     impressum: impression
     new: nouveau
     offers: offres-d-aide

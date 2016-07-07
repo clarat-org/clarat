@@ -20,6 +20,18 @@ ar:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: ".د"
+      email: "البريد الإليكتروني:"
+      fax: " :فاكس "
+      female: "السيدة"
+      heading: "أين يمكنك الإتصال؟"
+      male: "السيد"
+      obfuscated_email: |
+        هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
+        من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
+      phone: ":تليفون"
+      prof_dr: "أ.د."
     faq:
       heading: "أسئلة شائعة"
       section_1:
@@ -603,6 +615,8 @@ ar:
         enlarge_map: "تكبير الخريطة"
         headline_small_map: "عروض محلية على الخريطة"
       more: "عروض أخرى عن طريق التليفون أو الأنترنت"
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         one: "عرض محلي"
         other: "%{count} عروض محلية"
@@ -622,8 +636,6 @@ ar:
         category_query: 
         default: 
       show_personal: "عرض عروض مكانية أكثر"
-      off_canvas:
-        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "لغة الإشارة الألمانية"
@@ -858,21 +870,8 @@ ar:
           youtube: "اليوتيوب"
       what: "ما هو الموضوع؟"
       who: "أين توجد المساعدة؟"
-      who_contact_people:
-        dr: ".د"
-        email: "البريد الإليكتروني:"
-        fax: " :فاكس "
-        female: "السيدة"
-        male: "السيد"
-        obfuscated_email: |
-          هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
-          من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
-        phone: " :فاكس"
-        prof_dr: "أ.د."
       who_location:
         organizations: " :.عرض من"
-      who_section:
-        heading: "أين يمكنك الإتصال؟"
   opening:
     display_string:
       appointment: "حسب الإتفاق"
@@ -1055,6 +1054,9 @@ ar:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1072,6 +1074,7 @@ ar:
     emails: "رسائل بريد إليكتروني"
     faq: "أسئلة-شائعة"
     haeufige-fragen: "أسئلة-شائعة"
+    home: 
     impressum: "هيئة التحرير"
     new: "جديد"
     offers: "عروض"

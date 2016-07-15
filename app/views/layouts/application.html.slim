@@ -4,6 +4,7 @@ html class='no-js' lang=I18n.locale
     meta charset="utf-8"
     title
       = full_title(yield(:title))
+    meta property="og:title" content=full_title(yield(:title))
     - meta_description = yield(:meta_description)
     - if meta_description
       meta name='description' content=meta_description

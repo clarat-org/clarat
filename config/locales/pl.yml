@@ -20,6 +20,16 @@ pl:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr
+      email: 'E-mail:'
+      fax: 'fax:'
+      female: Pani
+      heading: Gdzie możesz się zgłosić?
+      male: Pan
+      obfuscated_email: Ten adres e-mail jest chroniony przez JavaScript dla ochrony przed spamem. Proszę, aktywuj JavaScript, aby móc czytać.
+      phone: 'telefon:'
+      prof_dr: Prof. Dr
     faq:
       heading: Często zadawane pytania
       section_1:
@@ -746,6 +756,8 @@ pl:
         enlarge_map: Powiększ mapę
         headline_small_map: Oferty na mapie
       more: Inne oferty telefoniczne i online
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         few: "%{count} ofert na miejscu"
         one: Jedna oferta na miejscu
@@ -767,8 +779,6 @@ pl:
         category_query: 
         default: 
       show_personal: Pokaż oferty lokalne
-      off_canvas:
-        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": Niemiecki język migowy
@@ -875,6 +885,9 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      head:
+        title:
+          family: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
@@ -989,18 +1002,13 @@ pl:
       what: O co chodzi?
       who: Kto oferuje tę pomoc?
       who_contact_people:
-        dr: Dr
-        email: 'E-mail:'
-        fax: 'fax:'
-        female: Pani
-        male: Pan
-        obfuscated_email: Ten adres e-mail jest chroniony przez JavaScript dla ochrony przed spamem. Proszę, aktywuj JavaScript, aby móc czytać.
-        phone: 'telefon:'
-        prof_dr: Prof. Dr
+        fax: 
+        female: 
+        phone: 
       who_location:
         organizations: 'Oferta od:'
       who_section:
-        heading: Gdzie możesz się zgłosić?
+        heading: 
   opening:
     display_string:
       appointment: do uzgodnienia
@@ -1188,6 +1196,9 @@ pl:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1205,6 +1216,7 @@ pl:
     emails: e-maile
     faq: często-zadawane-pytania
     haeufige-fragen: często-zadawane-pytania
+    home: 
     impressum: impressum
     new: nowe
     offers: oferty

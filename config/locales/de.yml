@@ -20,6 +20,18 @@ de:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr.
+      email: 'E-Mail: '
+      fax: 'Fax: '
+      female: Frau
+      heading: Wo kannst du dich melden?
+      male: Herr
+      obfuscated_email: |
+        Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+        verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+      phone: 'Telefon: '
+      prof_dr: Prof. Dr.
     faq:
       heading: Häufige Fragen
       section_1:
@@ -1068,6 +1080,8 @@ de:
         enlarge_map: Karte vergrößern
         headline_small_map: Angebote vor Ort auf der Karte
       more: Weitere Telefon- und Onlineangebote
+      off_canvas:
+        result_text: "%{result_count} Suchergebnisse anzeigen"
       personal_offers:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
@@ -1111,8 +1125,6 @@ de:
           other: "%{count} Telefonberatungen und Onlineangebote"
           zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
-      off_canvas:
-        result_text: "%{result_count} Suchergebnisse anzeigen"
     shared:
       current_and_original_locale:
         "'150'": Deutsche Gebärdensprache
@@ -1219,6 +1231,9 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      head:
+        title:
+          family: 
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1344,20 +1359,13 @@ de:
       what: Worum geht's?
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
-        dr: Dr.
-        email: 'E-Mail: '
-        fax: 'Fax: '
-        female: Frau
-        male: Herr
-        obfuscated_email: |
-          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
-          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
-        phone: 'Telefon: '
-        prof_dr: Prof. Dr.
+        fax: 
+        female: 
+        phone: 
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
-        heading: Wo kannst du dich melden?
+        heading: 
   opening:
     display_string:
       appointment: nach Vereinbarung
@@ -1673,6 +1681,9 @@ de:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1690,6 +1701,7 @@ de:
     emails: emails
     faq: haeufige-fragen
     haeufige-fragen: haeufige-fragen
+    home: home
     impressum: impressum
     new: new
     offers: angebote

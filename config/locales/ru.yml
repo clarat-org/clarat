@@ -20,6 +20,18 @@ ru:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: "Доктор"
+      email: 'E-Mail: '
+      fax: "Факс: "
+      female: "Госпожа"
+      heading: "Куда ты можешь обратиться?"
+      male: "Господин"
+      obfuscated_email: |
+        Этот E-Mail адрес для защиты от спама закодирован через
+        JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
+      phone: "Телефон: "
+      prof_dr: "Профессор доктор"
     faq:
       heading: "Часто задаваемые вопросы"
       section_1:
@@ -727,6 +739,8 @@ ru:
         enlarge_map: "Увеличить карту"
         headline_small_map: "Предложения на месте показать на карте"
       more: "Дугие предложения по телефону и он-лайн"
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         few: "%{count} Angebote vor Ort"
         one: "Предложение на месте"
@@ -748,8 +762,6 @@ ru:
         category_query: 
         default: 
       show_personal: "Показать предложения на месте"
-      off_canvas:
-        result_text: Show %{result_count} results
     shared:
       current_and_original_locale:
         "'150'": "Немецкий язык жестов"
@@ -856,6 +868,9 @@ ru:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      head:
+        title:
+          family: 
       modal:
         beta_modal:
           link: "просто напиши нам E-Mail."
@@ -980,20 +995,13 @@ ru:
       what: "О чем это?"
       who: "Где есть помощь?"
       who_contact_people:
-        dr: "Доктор"
-        email: 'E-Mail: '
-        fax: "Факс: "
-        female: "Госпожа"
-        male: "Господин"
-        obfuscated_email: |
-          Этот E-Mail адрес для защиты от спама закодирован через
-          JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
-        phone: "Телефон: "
-        prof_dr: "Профессор доктор"
+        fax: 
+        female: 
+        phone: 
       who_location:
         organizations: "Предложения от:"
       who_section:
-        heading: "Куда ты можешь обратиться?"
+        heading: 
   opening:
     display_string:
       appointment: "по записи"
@@ -1177,6 +1185,9 @@ ru:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1194,6 +1205,7 @@ ru:
     emails: "электронные-письма"
     faq: "Частые-вопросы"
     haeufige-fragen: "Частые-вопросы"
+    home: 
     impressum: "Импрессум"
     new: "новый"
     offers: "предложения"

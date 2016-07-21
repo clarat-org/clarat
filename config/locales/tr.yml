@@ -22,15 +22,15 @@ tr:
   cells:
     contact_people:
       dr: Dr.
-      email: 'E-Mail: '
-      fax: 'Faks: '
+      email: 'E-Mail:'
+      fax: 'Faks:'
       female: Bayan
       heading: Nereye başvurabilirsin?
       male: Bay
-      obfuscated_email: |
+      obfuscated_email: |-
         Bu E-Mail adresi spam koruma adına JavaScript ile
         şifrelenmiştir. Okumak için JavaScript aktifleştir.
-      phone: 'Telefon: '
+      phone: 'Telefon:'
       prof_dr: Prof. Dr.
     faq:
       heading: Sıkça sorulan sorular
@@ -885,13 +885,20 @@ tr:
       what: Konu nedir?
       who: Nerede yardım bulabilirim?
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: Dr.
+        email: 'E-Mail: '
+        fax: 'Faks: '
+        female: Bayan
+        male: Bay
+        obfuscated_email: |
+          Bu E-Mail adresi spam koruma adına JavaScript ile
+          şifrelenmiştir. Okumak için JavaScript aktifleştir.
+        phone: 'Telefon: '
+        prof_dr: Prof. Dr.
       who_location:
         organizations: 'bir ... hizmetidir:'
       who_section:
-        heading: 
+        heading: Nereye başvurabilirsin?
   opening:
     display_string:
       appointment: Sözleşilen vakit

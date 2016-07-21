@@ -23,11 +23,11 @@ ar:
     contact_people:
       dr: ".د"
       email: "البريد الإليكتروني:"
-      fax: " :فاكس "
+      fax: ":فاكس"
       female: "السيدة"
       heading: "أين يمكنك الإتصال؟"
       male: "السيد"
-      obfuscated_email: |
+      obfuscated_email: |-
         هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
         من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
       phone: ":تليفون"
@@ -874,13 +874,20 @@ ar:
       what: "ما هو الموضوع؟"
       who: "أين توجد المساعدة؟"
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: ".د"
+        email: "البريد الإليكتروني:"
+        fax: " :فاكس "
+        female: "السيدة"
+        male: "السيد"
+        obfuscated_email: |
+          هذا البريد الإليكتروني مشفر للحماية من الأيميل المزعج من خلال برنامج جافا سكربت.
+          من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
+        phone: ":تليفون"
+        prof_dr: "أ.د."
       who_location:
         organizations: " :.عرض من"
       who_section:
-        heading: 
+        heading: "أين يمكنك الإتصال؟"
   opening:
     display_string:
       appointment: "حسب الإتفاق"

@@ -22,15 +22,15 @@ de:
   cells:
     contact_people:
       dr: Dr.
-      email: 'E-Mail: '
-      fax: 'Fax: '
+      email: 'E-Mail:'
+      fax: 'Fax:'
       female: Frau
       heading: Wo kannst du dich melden?
       male: Herr
-      obfuscated_email: |
+      obfuscated_email: |-
         Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
         verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
-      phone: 'Telefon: '
+      phone: 'Telefon:'
       prof_dr: Prof. Dr.
     faq:
       heading: Häufige Fragen
@@ -1359,13 +1359,20 @@ de:
       what: Worum geht's?
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: Dr.
+        email: 'E-Mail: '
+        fax: 'Fax: '
+        female: Frau
+        male: Herr
+        obfuscated_email: |
+          Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+          verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+        phone: 'Telefon: '
+        prof_dr: Prof. Dr.
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
-        heading: 
+        heading: Wo kannst du dich melden?
   opening:
     display_string:
       appointment: nach Vereinbarung

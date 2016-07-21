@@ -22,15 +22,15 @@ ru:
   cells:
     contact_people:
       dr: "Доктор"
-      email: 'E-Mail: '
-      fax: "Факс: "
+      email: 'E-Mail:'
+      fax: "Факс:"
       female: "Госпожа"
       heading: "Куда ты можешь обратиться?"
       male: "Господин"
-      obfuscated_email: |
+      obfuscated_email: |-
         Этот E-Mail адрес для защиты от спама закодирован через
         JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
-      phone: "Телефон: "
+      phone: "Телефон:"
       prof_dr: "Профессор доктор"
     faq:
       heading: "Часто задаваемые вопросы"
@@ -995,13 +995,20 @@ ru:
       what: "О чем это?"
       who: "Где есть помощь?"
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: "Доктор"
+        email: 'E-Mail: '
+        fax: "Факс: "
+        female: "Госпожа"
+        male: "Господин"
+        obfuscated_email: |
+          Этот E-Mail адрес для защиты от спама закодирован через
+          JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
+        phone: "Телефон: "
+        prof_dr: "Профессор доктор"
       who_location:
         organizations: "Предложения от:"
       who_section:
-        heading: 
+        heading: "Куда ты можешь обратиться?"
   opening:
     display_string:
       appointment: "по записи"

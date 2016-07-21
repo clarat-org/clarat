@@ -22,15 +22,15 @@ en:
   cells:
     contact_people:
       dr: Dr.
-      email: 'Email: '
-      fax: 'Fax: '
+      email: 'Email:'
+      fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
       male: Mister
-      obfuscated_email: |
+      obfuscated_email: |-
         This e-mail address is protected from spam bots, you must enable
         JavaScript in your browser to view it.
-      phone: 'Telephone: '
+      phone: 'Telephone:'
       prof_dr: Prof. Dr.
     faq:
       heading: Frequently asked questions
@@ -1277,13 +1277,20 @@ en:
       what: What is this about?
       who: Who offers this help?
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: Dr.
+        email: 'Email: '
+        fax: 'Fax: '
+        female: Ms.
+        male: Mister
+        obfuscated_email: |
+          This e-mail address is protected from spam bots, you must enable
+          JavaScript in your browser to view it.
+        phone: 'Telephone: '
+        prof_dr: Prof. Dr.
       who_location:
         organizations: 'An offer provided by:'
       who_section:
-        heading: 
+        heading: How can you get in touch?
   opening:
     display_string:
       appointment: by appointment

@@ -23,7 +23,7 @@ pl:
     contact_people:
       dr: Dr
       email: 'E-mail:'
-      fax: 'fax:'
+      fax: 'Fax:'
       female: Pani
       heading: Gdzie możesz się zgłosić?
       male: Pan
@@ -1002,13 +1002,18 @@ pl:
       what: O co chodzi?
       who: Kto oferuje tę pomoc?
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: Dr
+        email: 'E-mail:'
+        fax: 'fax:'
+        female: Pani
+        male: Pan
+        obfuscated_email: Ten adres e-mail jest chroniony przez JavaScript dla ochrony przed spamem. Proszę, aktywuj JavaScript, aby móc czytać.
+        phone: 'telefon:'
+        prof_dr: Prof. Dr
       who_location:
         organizations: 'Oferta od:'
       who_section:
-        heading: 
+        heading: Gdzie możesz się zgłosić?
   opening:
     display_string:
       appointment: do uzgodnienia

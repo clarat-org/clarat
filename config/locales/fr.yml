@@ -28,7 +28,7 @@ fr:
       heading: Tu peux t'adresser à qui?
       male: Monsieur
       obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
-      phone: Téléphone
+      phone: 'Téléphone:'
       prof_dr: Prof. Dr
     faq:
       heading: Questions fréquentes
@@ -952,13 +952,18 @@ fr:
       what: De quoi s'agit-il?
       who: Qui propose cette aide?
       who_contact_people:
-        fax: 
-        female: 
-        phone: 
+        dr: Dr.
+        email: 'E-mail:'
+        fax: 'Fax:'
+        female: Madame
+        male: Monsieur
+        obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
+        phone: 'Téléphone:'
+        prof_dr: Prof. Dr
       who_location:
         organizations: 'Un service de:'
       who_section:
-        heading: 
+        heading: Tu peux t'adresser à qui?
   opening:
     display_string:
       appointment: sur rendez-vous

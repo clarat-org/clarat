@@ -407,8 +407,9 @@
     text-align: center;
     color: $brand_white;
     cursor: pointer;
-    height: 30px;
-    line-height: 30px;
+    height: auto;
+    line-height: 1.4;
+    padding: 5px 0;
 
     body.family & {
       background-color: rgba($brand_core_family, .6);

@@ -1327,7 +1327,7 @@ de:
     show:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
-        code_word: Wonach musst du fragen oder auf der Webseite suchen?
+        code_word: 
         heading: Was musst du tun?
       opening_section:
         days:
@@ -1356,7 +1356,9 @@ de:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: Worum geht's?
+      what:
+        code_word: 'So heißt die Hilfe beim Anbieter:'
+        heading: Worum geht's?
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
         dr: Dr.

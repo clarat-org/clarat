@@ -970,7 +970,7 @@ pl:
     show:
       last_update: Ostatnio zaktualizowano
       next_steps:
-        code_word: O co musisz spytać lub czego szukać na stronie internetowej?
+        code_word: 
         heading: Co musisz zrobić?
       opening_section:
         days:
@@ -999,7 +999,9 @@ pl:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: O co chodzi?
+      what:
+        code_word: O co musisz spytać lub czego szukać na stronie internetowej?
+        heading: O co chodzi?
       who: Kto oferuje tę pomoc?
       who_contact_people:
         dr: Dr

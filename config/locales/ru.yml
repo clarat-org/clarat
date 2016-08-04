@@ -963,7 +963,7 @@ ru:
     show:
       last_update: "В последний раз обновлено"
       next_steps:
-        code_word: "Что ты должен спросить или найти на веб-странице?"
+        code_word: 
         heading: "Что ты должен сделать?"
       opening_section:
         days:
@@ -992,7 +992,9 @@ ru:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: "О чем это?"
+      what:
+        code_word: "Что ты должен спросить или найти на веб-странице?"
+        heading: "О чем это?"
       who: "Где есть помощь?"
       who_contact_people:
         dr: "Доктор"

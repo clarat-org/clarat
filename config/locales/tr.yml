@@ -853,7 +853,7 @@ tr:
     show:
       last_update: Son kayıt düzenleme tarihi
       next_steps:
-        code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
+        code_word: 
         heading: Ne yapmalısın?
       opening_section:
         days:
@@ -882,7 +882,9 @@ tr:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: Konu nedir?
+      what:
+        code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
+        heading: Konu nedir?
       who: Nerede yardım bulabilirim?
       who_contact_people:
         dr: Dr.

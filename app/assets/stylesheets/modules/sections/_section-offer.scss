@@ -31,7 +31,34 @@
     }
   }
 
+  .section-content--more-info {
+    @extend %clearfix;
 
+    .section-content__title {
+      background: $brand_green;
+    }
+  }
+
+  .section-content__tag-list {
+    @extend %clearfix;
+    list-style: none;
+    margin: 4px 15px 10px;
+
+    li {
+      border-radius: 5px 0;
+      float: left;
+      display: inline-block;
+      padding: 5px 3px 7px 7px;
+      border: 1px solid;
+      margin: 6px 6px 0 0;
+      font-size: 82.5%;
+
+      .fa {
+        margin-right: 3px;
+        margin-left: 1px;
+      }
+    }
+  }
 
   .section-content--what {
 

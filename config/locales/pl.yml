@@ -1020,7 +1020,8 @@ pl:
     display_string:
       appointment: do uzgodnienia
       midnight_exception: godzina 24:00
-      time_format: godzina %H:%M
+      time_format_close: "%H:%M"
+      time_format_open: godzina %H:%M
       time_frame: "%{open} - %{close}"
   organizations:
     show:

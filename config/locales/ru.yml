@@ -1015,7 +1015,8 @@ ru:
     display_string:
       appointment: "по записи"
       midnight_exception: '24:00'
-      time_format: "%H:%M"
+      time_format_close: "%H:%M"
+      time_format_open: "%H:%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

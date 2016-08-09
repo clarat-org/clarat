@@ -970,7 +970,8 @@ fr:
     display_string:
       appointment: sur rendez-vous
       midnight_exception: 24h00
-      time_format: "%Hh%M"
+      time_format_close: "%Hh%M"
+      time_format_open: "%Hh%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

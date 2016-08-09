@@ -16,7 +16,7 @@ describe Opening do
         opening.open = Time.zone.parse '12:01:01'
         opening.close = Time.zone.parse '13:02:02'
 
-        opening.display_string.must_equal '12:01 Uhr - 13:02 Uhr'
+        opening.display_string.must_equal '12:01 - 13:02 Uhr'
       end
 
       it 'should output a special string when there are no open/close times' do
@@ -30,7 +30,7 @@ describe Opening do
         opening.open = Time.zone.parse '14:00:00'
         opening.close = Time.zone.parse '00:00:00'
 
-        opening.display_string.must_equal '14:00 Uhr - 24:00 Uhr'
+        opening.display_string.must_equal '14:00 - 24:00 Uhr'
       end
     end
   end

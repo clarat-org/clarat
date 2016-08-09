@@ -894,7 +894,8 @@ ar:
     display_string:
       appointment: "حسب الإتفاق"
       midnight_exception: 24:00 ساعة
-      time_format: " %H:%M ساعة "
+      time_format_close: "%H:%M ساعة"
+      time_format_open: " %H:%M ساعة "
       time_frame: "%{open} - %{close}"
   organizations:
     show:

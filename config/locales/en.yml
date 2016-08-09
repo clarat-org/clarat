@@ -1297,7 +1297,8 @@ en:
     display_string:
       appointment: by appointment
       midnight_exception: midnight
-      time_format: "%l:%M %P"
+      time_format_close: "%l:%M %P"
+      time_format_open: "%l:%M %P"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

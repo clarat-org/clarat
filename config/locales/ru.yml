@@ -963,7 +963,7 @@ ru:
     show:
       last_update: "В последний раз обновлено"
       next_steps:
-        code_word: 
+        code_word: "Что ты должен спросить или найти на веб-странице?"
         heading: "Что ты должен сделать?"
       opening_section:
         days:

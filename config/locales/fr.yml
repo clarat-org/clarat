@@ -920,7 +920,7 @@ fr:
     show:
       last_update: Dernière entrée traitée le
       next_steps:
-        code_word: 
+        code_word: Quelles questions poser et où chercher sur le site?
         heading: Qu'est-ce que tu dois faire?
       opening_section:
         days:

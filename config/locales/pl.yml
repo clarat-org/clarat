@@ -970,7 +970,7 @@ pl:
     show:
       last_update: Ostatnio zaktualizowano
       next_steps:
-        code_word: 
+        code_word: O co musisz spytać lub czego szukać na stronie internetowej?
         heading: Co musisz zrobić?
       opening_section:
         days:

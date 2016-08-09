@@ -1245,7 +1245,7 @@ en:
     show:
       last_update: Entry last modified on
       next_steps:
-        code_word: 
+        code_word: What do you have to ask for or look for on the website?
         heading: What do you have to do?
       opening_section:
         days:

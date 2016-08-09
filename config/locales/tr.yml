@@ -853,7 +853,7 @@ tr:
     show:
       last_update: Son kayıt düzenleme tarihi
       next_steps:
-        code_word: 
+        code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
         heading: Ne yapmalısın?
       opening_section:
         days:

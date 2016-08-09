@@ -842,7 +842,7 @@ ar:
     show:
       last_update: "آخر إدخال"
       next_steps:
-        code_word: 
+        code_word: "ما هو سؤالك أو عن ماذا تبحث في الموقع؟"
         heading: "ماذا يجب عليك أن تفعل؟"
       opening_section:
         days:

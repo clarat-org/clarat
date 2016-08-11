@@ -6,14 +6,14 @@
       li.section-choice__container
         section.section-choice__family
           a[href="#"]
-            h1.section-choice__headline.section-choice__headline--family Family
+            h1.section-choice__headline.section-choice__headline--family = t '.section_choice.family.title'
           .section-choice__stage.section-choice__stage--family
-            a.section-choice__cta.section-choice__cta--family[href="#"]
-              | Unterstützungsangebote für Kinder, Jugendliche und Familien
+          a.section-choice__cta.section-choice__cta--family[href="#"]
+            = t '.section_choice.family.claim'
       li.section-choice__container
         section.section-choice__refugees
           a[href="#"]
-            h1.section-choice__headline.section-choice__headline--refugees Refugees
+            h1.section-choice__headline.section-choice__headline--refugees = t '.section_choice.refugees.title'
           .section-choice__stage.section-choice__stage--refugees
-            a.section-choice__cta.section-choice__cta--refugees[href="#"]
-              | Unterstützungsangebote für Flüchtlinge
+          a.section-choice__cta.section-choice__cta--refugees[href="#"]
+            = t '.section_choice.refugees.claim'

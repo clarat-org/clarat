@@ -949,7 +949,9 @@ fr:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: De quoi s'agit-il?
+      what:
+        code_word: Quelles questions poser et où chercher sur le site?
+        heading: De quoi s'agit-il?
       who: Qui propose cette aide?
       who_contact_people:
         dr: Dr.
@@ -968,7 +970,8 @@ fr:
     display_string:
       appointment: sur rendez-vous
       midnight_exception: 24h00
-      time_format: "%Hh%M"
+      time_format_close: "%Hh%M"
+      time_format_open: "%Hh%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

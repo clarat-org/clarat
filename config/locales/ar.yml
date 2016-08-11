@@ -842,7 +842,7 @@ ar:
     show:
       last_update: "آخر إدخال"
       next_steps:
-        code_word: "ما هو سؤالك أو عن ماذا تبحث في الموقع؟ "
+        code_word: "ما هو سؤالك أو عن ماذا تبحث في الموقع؟"
         heading: "ماذا يجب عليك أن تفعل؟"
       opening_section:
         days:
@@ -871,7 +871,9 @@ ar:
           pinterest: "بيترست"
           twitter: "تويتر"
           youtube: "اليوتيوب"
-      what: "ما هو الموضوع؟"
+      what:
+        code_word: "ما هو سؤالك أو عن ماذا تبحث في الموقع؟ "
+        heading: "ما هو الموضوع؟"
       who: "أين توجد المساعدة؟"
       who_contact_people:
         dr: ".د"
@@ -892,7 +894,8 @@ ar:
     display_string:
       appointment: "حسب الإتفاق"
       midnight_exception: 24:00 ساعة
-      time_format: " %H:%M ساعة "
+      time_format_close: "%H:%M ساعة"
+      time_format_open: " %H:%M ساعة "
       time_frame: "%{open} - %{close}"
   organizations:
     show:

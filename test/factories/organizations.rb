@@ -12,7 +12,7 @@ FactoryGirl.define do
 
     # optional
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
-    mailings_enabled true
+    mailings 'enabled'
     created_by { FactoryGirl.create(:researcher).id }
 
     # associations
@@ -57,7 +57,7 @@ FactoryGirl.define do
     end
 
     trait :mailings_disabled do
-      mailings_enabled false
+      mailings 'force_disabled'
     end
 
     trait :with_offer do

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160708141922) do
+ActiveRecord::Schema.define(version: 20160805081635) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -319,6 +319,9 @@ ActiveRecord::Schema.define(version: 20160708141922) do
     t.integer  "logic_version_id"
     t.integer  "split_base_id"
     t.boolean  "all_inclusive",                           default: false
+    t.date     "starts_at"
+    t.datetime "completed_at"
+    t.integer  "completed_by"
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -373,9 +376,9 @@ ActiveRecord::Schema.define(version: 20160708141922) do
   add_index "organization_translations", ["organization_id"], name: "index_organization_translations_on_organization_id", using: :btree
 
   create_table "organizations", force: true do |t|
-    t.string   "name",                   limit: nil,                 null: false
-    t.text     "description",                                        null: false
-    t.string   "legal_form",             limit: nil,                 null: false
+    t.string   "name",                   limit: nil,                      null: false
+    t.text     "description",                                             null: false
+    t.string   "legal_form",             limit: nil,                      null: false
     t.boolean  "charitable",                         default: false
     t.integer  "founded"
     t.string   "slug",                   limit: nil
@@ -388,8 +391,8 @@ ActiveRecord::Schema.define(version: 20160708141922) do
     t.integer  "approved_by"
     t.boolean  "accredited_institution",             default: false
     t.text     "description_html"
-    t.boolean  "mailings_enabled",                   default: false
     t.string   "aasm_state",             limit: 32
+    t.string   "mailings",                           default: "disabled", null: false
   end
 
   add_index "organizations", ["aasm_state"], name: "index_organizations_on_aasm_state", using: :btree

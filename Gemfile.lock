@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: bbb27bde5428dc5fbe580616101ac549b73d2715
+  revision: 7d856375ebdd1ec05ae27049b5bd714e28884a48
   specs:
     clarat_base (0.1.4)
       aasm
@@ -128,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.0.0)
+    closure_tree (6.1.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (1.1.1)
+    enumerize (2.0.0)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -306,7 +306,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.7)
+    nokogumbo (1.4.9)
       nokogiri
     paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)
@@ -414,7 +414,7 @@ GEM
     rake (11.2.2)
     rdoc (4.2.0)
     redcarpet (3.3.4)
-    redis (3.3.0)
+    redis (3.3.1)
     ref (2.0.0)
     request_store (1.3.1)
     require_all (1.3.3)
@@ -440,7 +440,7 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.0.1)
+    sanitize (4.1.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4.1)

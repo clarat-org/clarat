@@ -992,7 +992,9 @@ ru:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: "О чем это?"
+      what:
+        code_word: "Что ты должен спросить или найти на веб-странице?"
+        heading: "О чем это?"
       who: "Где есть помощь?"
       who_contact_people:
         dr: "Доктор"
@@ -1013,7 +1015,8 @@ ru:
     display_string:
       appointment: "по записи"
       midnight_exception: '24:00'
-      time_format: "%H:%M"
+      time_format_close: "%H:%M"
+      time_format_open: "%H:%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f3b9dd7e90a0f32557ec5854c824bec048a68645
+  revision: 7d856375ebdd1ec05ae27049b5bd714e28884a48
   specs:
     clarat_base (0.1.4)
       aasm
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (1.1.1)
+    enumerize (2.0.0)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -306,7 +306,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.7)
+    nokogumbo (1.4.9)
       nokogiri
     paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)

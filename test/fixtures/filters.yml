@@ -45,3 +45,15 @@ refugees:
   type: SectionFilter
   name: Refugees
   identifier: refugees
+
+everyone:
+  id: 10
+  type: TargetAudienceFilter
+  name: Alle
+  identifier: family_everyone
+
+diakonie:
+  id: 11
+  type: UmbrellaFilter
+  name: Diakonie
+  identifier: diakonie

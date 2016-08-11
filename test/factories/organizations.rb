@@ -12,18 +12,21 @@ FactoryGirl.define do
 
     # optional
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
-    umbrella do
-      maybe(
-        Organization.enumerized_attributes.attributes['umbrella'].values.sample
-      )
-    end
-    mailings_enabled true
+    mailings 'enabled'
     created_by { FactoryGirl.create(:researcher).id }
 
     # associations
     transient do
       website_count { rand(0..3) }
       location_count 1
+    end
+
+    after :build do |orga|
+      # Filters
+      orga.umbrella_filters << (
+        UmbrellaFilter.all.sample ||
+          UmbrellaFilter.create(identifier: 'diakonie', name: 'Diakonie')
+      )
     end
 
     after :create do |orga, evaluator|
@@ -54,7 +57,7 @@ FactoryGirl.define do
     end
 
     trait :mailings_disabled do
-      mailings_enabled false
+      mailings 'force_disabled'
     end
 
     trait :with_offer do

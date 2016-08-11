@@ -23,7 +23,7 @@
         / What's it all about?
         section.section-content.section-content--what
           h3.section-content__title
-            = t '.what'
+            = t '.what.heading'
             == automation_warning @offer.translation_automated?
           .section-content__body
             == translation_block @offer.translation_automated? do

@@ -91,8 +91,7 @@ FactoryGirl.define do
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
       if evaluator.category
-        offer.categories << FactoryGirl.create(:category,
-                                               name: evaluator.category)
+        offer.categories << evaluator.category
       else
         evaluator.category_count.times do
           offer.categories << (

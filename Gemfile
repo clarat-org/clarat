@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
 
+gem 'nokogiri', '1.6.7.2' # 1.6.8 doesnt install on some pcs. Remove when fixed
+
 ###########
 # General #
 ###########
@@ -64,8 +66,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-isInViewport'
   gem 'rails-assets-iCheck'
   gem 'rails-assets-hammerjs'
-
-
 end
 
 #######

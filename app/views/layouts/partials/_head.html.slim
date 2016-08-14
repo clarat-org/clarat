@@ -82,3 +82,14 @@ meta name="theme-color" content="#F4B528"
     ga('create', 'UA-59626864-1', 'auto');
     ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
+
+javascript:
+  var trackOutboundLink = function (url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function () {
+        document.location = url;
+      }
+    });
+  };
+

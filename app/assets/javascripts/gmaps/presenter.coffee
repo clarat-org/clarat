@@ -146,7 +146,7 @@ Clarat.GMaps.PlacesAutocomplete =
         # register event listener that pushes to GA when field is changed
         google.maps.event.addListener(
           Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed', ->
-            Clarat.Analytics.placesAutocompleteChanged()
+            $(document).trigger 'Clarat::GMaps::placesAutocompleteTriggered'
         )
 
         # Hack to not immediately submit when user tries to select a location by

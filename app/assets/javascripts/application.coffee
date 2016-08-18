@@ -91,7 +91,7 @@ about supported directives.
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
 # = require toggle_advanced_search/presenter
-# = require track_external_links/presenter
+# = require analytics/presenter
 #
 # = require map_modal/presenter
 #
@@ -104,7 +104,6 @@ about supported directives.
 # = require query_field_placeholder/model
 # = require query_field_placeholder/presenter
 #
-# = require modules/analytics
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal

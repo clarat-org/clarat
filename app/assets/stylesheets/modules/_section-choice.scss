@@ -1,0 +1,75 @@
+.section-choice {
+  position: relative;
+  width: 1058px;
+  list-style: none;
+}
+
+.section-choice__container {
+  float: left;
+  position: relative;
+  width: 529px;
+}
+
+.section-choice__stage {
+  padding-top: 32%;
+  background: no-repeat center top;
+  background-size: 439px 170px;
+}
+
+.section-choice__stage--family {
+  background-image: image-url('reduced_illu_family.svg');
+}
+
+.section-choice__stage--refugees {
+  background-image: image-url('reduced_illu_refugees.svg');
+}
+
+.section-choice__headline {
+  @extend %hide_text;
+  width: 100%;
+  background: no-repeat center top;
+  height: 140px;
+}
+
+.section-choice__headline--family {
+  background-image: image-url('logo--family.svg');
+  background-size: 367px 140px;
+}
+
+.section-choice__headline--refugees {
+  background-image: image-url('logo--refugees.svg');
+  background-size: 367px 140px;
+}
+
+.section-choice__cta {
+  @extend %clarat_rounding_start;
+  @extend %clarat_rounding_end;
+  //position: absolute;
+  //left: 50%;
+  width: 493px;
+  height: 90px;
+  background: image-url('skinny-arrow-right.svg') no-repeat 14px center ;
+  background-size: 28px 49px;
+  color: $brand_white;
+  text-decoration: none;
+  padding: 7px 7px 7px 55px;
+  font-size: 27px;
+  display: inline-block;
+}
+
+.section-choice__cta--refugees {
+  background-color: $brand_core_refugees;
+}
+
+.section-choice__cta--family {
+  background-color: $brand_core_family;
+}
+
+.template--pages-section_choice {
+  background: image-url("bg_scratches.jpg");
+  background-size: cover;
+}
+
+.content-main--section_choice {
+  height: 75vh;
+}

@@ -30,6 +30,12 @@
 .content-main {
   @extend %layout-col-69;
 
+  &.content-main--section_choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &.content-main--wide {
     float: none;
     margin: 25px auto 0;
@@ -63,6 +69,7 @@
     width: 100%;
   }
 }
+
 
 
 // Sticky footer related

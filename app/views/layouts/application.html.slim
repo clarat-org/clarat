@@ -32,11 +32,11 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
         = render 'layouts/partials/navigation',
-                 search_form: SearchForm.new,
+                 search_form: SearchForm.new(cookies),
                  current_section: @current_section
       - else
         = render 'layouts/partials/search_navigation',
-                 search_form: @search_form || SearchForm.new,
+                 search_form: @search_form || SearchForm.new(cookies),
                  current_section: @current_section
       #yield-wrap
         = yield

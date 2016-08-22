@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 7d856375ebdd1ec05ae27049b5bd714e28884a48
+  revision: aa101bb483f5f8fa25b0b1fdf810806246d9d71f
   specs:
     clarat_base (0.1.4)
       aasm
@@ -61,11 +61,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.10.0)
-      httpclient (~> 2.7.1)
+    algoliasearch (1.11.0)
+      httpclient (~> 2.8.2)
       json (>= 1.5.1)
-    algoliasearch-rails (1.14.1)
-      algoliasearch (>= 1.2.14)
+    algoliasearch-rails (1.15.0)
+      algoliasearch (~> 1.11.0)
       json (>= 1.5.1)
     arcane (1.1.1)
       actionpack (>= 3.0.0, < 5.0.0)
@@ -231,7 +231,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.7.2)
+    httpclient (2.8.2.2)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)

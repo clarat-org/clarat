@@ -4,7 +4,9 @@
     %legend.filter-form__fieldset__headline
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
-      %select.JS-AgeSelector.filter-form__select{name: 'age'}
+      %label.sr-only{for: 'age'}
+        = hb '@root.headline_age'
+      %select.JS-AgeSelector.filter-form__select{name: 'age', id: 'age'}
         %option{value: 'any', id: 'age_any'}
           = hb '@root.option_any'
         = hb 'each age' do
@@ -14,7 +16,9 @@
     %legend.filter-form__fieldset__headline
       = hb '@root.headline_language'
     %div.filter-form__fieldset__wrapper
-      %select.JS-LanguageSelector.filter-form__select{name: 'language'}
+      %label.sr-only{for: 'language'}
+        = hb '@root.headline_language'
+      %select.JS-LanguageSelector.filter-form__select{name: 'language', id: 'language'}
         %option{value: 'any', selected: 'selected', id: 'language_any'}
           = hb '@root.option_any'
         = hb 'each language' do

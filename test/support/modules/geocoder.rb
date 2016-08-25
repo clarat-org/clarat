@@ -34,3 +34,12 @@ Geocoder::Lookup::Test.add_stub( # stub for non-existant location queries
     }
   ]
 )
+
+Geocoder::Lookup::Test.add_stub( # stub different valid location
+  'Köln', [
+    {
+      'latitude'  => 50.09,
+      'longitude' => 6.95
+    }
+  ]
+)

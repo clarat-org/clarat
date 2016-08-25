@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160805081635) do
+ActiveRecord::Schema.define(version: 20160819081453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -497,10 +497,11 @@ ActiveRecord::Schema.define(version: 20160805081635) do
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
 
   create_table "websites", force: true do |t|
-    t.string   "host",       limit: nil, null: false
-    t.string   "url",        limit: nil, null: false
+    t.string   "host",              limit: nil,             null: false
+    t.string   "url",               limit: nil,             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "unreachable_count",             default: 0, null: false
   end
 
   add_index "websites", ["host"], name: "index_websites_on_host", using: :btree

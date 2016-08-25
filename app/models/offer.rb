@@ -48,21 +48,10 @@ class Offer < ActiveRecord::Base
     }
   end
 
-  # returns the fixed sorted language_filters
-  def language_filters_fixed
-    fixed = LanguageFilter::FIXED_IDENTIFIER
-    fixed.select { |l| language_filters.pluck(:identifier).include? l }
-  end
-
-  # returns the rest of the language_filters (w/o fixed), ordered by german name
-  def language_filters_without_fixed
-    remaining = LanguageFilter::REMAINING_IDENTIFIER
+  def language_filters_alphabetical_sorted
+    german_alphabetical = LanguageFilter::IDENTIFIER
     language_filters.order(:name).pluck(:identifier)
-      .select { |id| remaining.include? id }
-  end
-
-  def all_language_filters_sorted
-    language_filters_fixed + language_filters_without_fixed
+      .select { |id| german_alphabetical.include? id }
   end
 
   private

@@ -42,8 +42,8 @@
                         h5.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
                                 autotranslation_attr(@organization.translation_automated?)
                         - if offer.location && offer.location.visible
-                        .Listing-offers__address
-                          = offer.location_address
+                          .Listing-offers__address
+                            = offer.location_address
 
 
     .section-wrapper-minor

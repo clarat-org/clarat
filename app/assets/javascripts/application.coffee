@@ -40,7 +40,6 @@ about supported directives.
 # = require jquery.popupoverlay
 # = require jquery.query-object
 #
-# = require vendor/analytics
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix

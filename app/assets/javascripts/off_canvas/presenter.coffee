@@ -68,8 +68,18 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
 
 
   toggleHandler: =>
-    $('#off-canvas-container').toggleClass 'active'
+    $trigger = $('.main-search__advanced-filter--within-content-main')
+    $offCanvasContainer = $('#off-canvas-container')
+    formMoreLabel = I18n.t('js.search.form_more_label')
+    formLessLabel = I18n.t('js.search.form_less_label')
+
+    $offCanvasContainer.toggleClass 'active'
     $('body').toggleClass 'offcanvas-active'
+
+    if $offCanvasContainer.hasClass 'active'
+      $trigger.text formLessLabel
+    else
+      $trigger.text formMoreLabel
 
   getResultsCountFromMainResults: (event, resultSet) =>
     @getResultsCount event, resultSet.results[0], resultSet.results[1]

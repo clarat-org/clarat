@@ -46,6 +46,7 @@
 .off-canvas-container__trigger--within-oc {
   width: 100%;
   text-align: center;
+  text-decoration: underline;
 
   body.refugees & {
     background-color: $brand_core_refugees_lightened;

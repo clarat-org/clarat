@@ -39,7 +39,7 @@ class OffersController < ApplicationController
   # @search_form is set in ApplicationController!?
   # work with instance variable instead
   def init_search_form
-    @search_form = SearchForm.new(search_params)
+    @search_form = SearchForm.new(cookies, search_params)
   end
 
   def search_params

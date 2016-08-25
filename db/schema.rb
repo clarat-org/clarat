@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160805081635) do
+ActiveRecord::Schema.define(version: 20160819135238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,12 @@ ActiveRecord::Schema.define(version: 20160805081635) do
 
   add_index "category_hierarchies", ["ancestor_id", "descendant_id", "generations"], name: "category_anc_desc_idx", unique: true, using: :btree
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
+
+  create_table "cities", force: true do |t|
+    t.string   "name",       limit: nil, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "contact_people", force: true do |t|
     t.integer  "organization_id",                              null: false
@@ -194,7 +200,6 @@ ActiveRecord::Schema.define(version: 20160805081635) do
     t.string   "street",           limit: nil,                null: false
     t.text     "addition"
     t.string   "zip",              limit: nil,                null: false
-    t.string   "city",             limit: nil,                null: false
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
@@ -206,8 +211,10 @@ ActiveRecord::Schema.define(version: 20160805081635) do
     t.string   "display_name",     limit: nil,                null: false
     t.boolean  "visible",                      default: true
     t.boolean  "in_germany",                   default: true
+    t.integer  "city_id"
   end
 
+  add_index "locations", ["city_id"], name: "index_locations_on_city_id", using: :btree
   add_index "locations", ["created_at"], name: "index_locations_on_created_at", using: :btree
   add_index "locations", ["federal_state_id"], name: "index_locations_on_federal_state_id", using: :btree
   add_index "locations", ["organization_id"], name: "index_locations_on_organization_id", using: :btree
@@ -497,10 +504,11 @@ ActiveRecord::Schema.define(version: 20160805081635) do
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
 
   create_table "websites", force: true do |t|
-    t.string   "host",       limit: nil, null: false
-    t.string   "url",        limit: nil, null: false
+    t.string   "host",              limit: nil,             null: false
+    t.string   "url",               limit: nil,             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "unreachable_count",             default: 0, null: false
   end
 
   add_index "websites", ["host"], name: "index_websites_on_host", using: :btree

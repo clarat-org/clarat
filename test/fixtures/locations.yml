@@ -2,7 +2,7 @@ basic:
   id: 1
   street: basicStreet 1
   zip: 12345
-  city: basicCity
+  city_id: 1
   hq: t
   organization_id: 1
   federal_state_id: 1

@@ -1,7 +1,7 @@
 .filter-form#advanced_search
-  %fieldset.filter-form__fieldset#age
+  %fieldset.filter-form__fieldset
 
-    %legend.filter-form__fieldset__headline#age
+    %legend.filter-form__fieldset__headline
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
       %select.JS-AgeSelector.filter-form__select{name: 'age'}

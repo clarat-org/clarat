@@ -894,6 +894,7 @@ pl:
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1132,7 +1133,7 @@ pl:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1205,6 +1206,13 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      section_choice:
+        family:
+          claim: 
+          title: 
+        refugees:
+          claim: 
+          title: 
       title:
         refugees: 
     shared:

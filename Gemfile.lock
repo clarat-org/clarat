@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 39828cdfc375d0e07c25256004deb309a1884d63
+  revision: 07475c798b3c2790bb2dc2cd4fc96d468205ad55
   specs:
     clarat_base (0.1.4)
       aasm
@@ -254,12 +254,12 @@ GEM
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.13)
-    localeapp (1.0.2)
+    localeapp (2.0.0)
       gli
-      i18n
-      json
-      rack
-      rest-client
+      i18n (~> 0.4)
+      json (~> 1.8)
+      mime-types (~> 2.6)
+      rest-client (~> 1.8)
       ya2yaml
     lograge (0.3.5)
       actionpack (>= 3)
@@ -440,7 +440,7 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.1.0)
+    sanitize (4.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4.1)

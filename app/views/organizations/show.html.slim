@@ -67,7 +67,7 @@
                       span.street-address= location.street
                       br
                       span.postal-code=> location.zip
-                      span.locality= location.city
+                      span.locality= location.city.name
                   - if website
                     br
                     = link_to website.shorten_url + website.pdf_appendix,

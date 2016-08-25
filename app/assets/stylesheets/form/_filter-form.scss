@@ -9,14 +9,16 @@
   display: none;
   position: relative;
   // overflow: hidden;
-  margin: -25px 0 45px;
+  margin: -25px 1px 45px;
   padding: 12px 20px 5px 10px;
   background-color: $brand_beige;
 
   &.is-visible {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
+  }
+
+  #off-canvas-container & {
+    display: block;
   }
 
   &:after {
@@ -236,3 +238,5 @@
     background: $brand_blue image-url('ico_fieldset_collapse--ondark.svg') no-repeat calc(100% - 15px) center;
   }
 }
+
+

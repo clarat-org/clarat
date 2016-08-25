@@ -20,6 +20,18 @@ de:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr.
+      email: 'E-Mail:'
+      fax: 'Fax:'
+      female: Frau
+      heading: Wo kannst du dich melden?
+      male: Herr
+      obfuscated_email: |-
+        Diese E-Mail-Adresse wird zum Spam-Schutz durch JavaScript
+        verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
+      phone: 'Telefon:'
+      prof_dr: Prof. Dr.
     faq:
       heading: Häufige Fragen
       section_1:
@@ -1068,6 +1080,8 @@ de:
         enlarge_map: Karte vergrößern
         headline_small_map: Angebote vor Ort auf der Karte
       more: Weitere Telefon- und Onlineangebote
+      off_canvas:
+        result_text: "%{result_count} Suchergebnisse anzeigen"
       personal_offers:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
@@ -1217,6 +1231,9 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      head:
+        title:
+          family: 
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1233,6 +1250,7 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
+        german_content_warning: Wähle deine Sprache
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1310,7 +1328,7 @@ de:
     show:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
-        code_word: Wonach musst du fragen oder auf der Webseite suchen?
+        code_word: 'So heißt die Hilfe beim Anbieter:'
         heading: Was musst du tun?
       opening_section:
         days:
@@ -1339,8 +1357,10 @@ de:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: Worum geht's?
-      who: Wer bietet diese Hilfe an?
+      what:
+        code_word: 'So heißt die Hilfe beim Anbieter:'
+        heading: Worum geht's?
+      who: Wo bekommst du diese Hilfe?
       who_contact_people:
         dr: Dr.
         email: 'E-Mail: '
@@ -1360,7 +1380,8 @@ de:
     display_string:
       appointment: nach Vereinbarung
       midnight_exception: 24:00 Uhr
-      time_format: "%H:%M Uhr"
+      time_format_close: "%H:%M Uhr"
+      time_format_open: "%H:%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:
@@ -1595,9 +1616,9 @@ de:
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
-      responsible_html: |
+      responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1671,6 +1692,16 @@ de:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      section_choice:
+        family:
+          claim: 
+          title: 
+        refugees:
+          claim: 
+          title: 
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1688,6 +1719,7 @@ de:
     emails: emails
     faq: haeufige-fragen
     haeufige-fragen: haeufige-fragen
+    home: home
     impressum: impressum
     new: new
     offers: angebote

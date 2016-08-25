@@ -1,6 +1,9 @@
 nav.nav-lang
   .nav-lang__container
-    h1.nav-lang__title = t '.title'
+    - if %w(impressum privacy agb).include? controller.action_name
+      h1.nav-lang__title = t '.german_content_warning'
+    - else
+      h1.nav-lang__title = t '.title'
 
     .nav-lang__languages
       button.nav-lang__button

@@ -2,8 +2,6 @@
   %h3.Listing-results__offer
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
-    = hb 'if language_explanation' do
-      %img.Listing-results__globe{src: '{{@root.globe_img}}', alt: '', title: '{{language_explanation}}', class: ''}
 
   -#= hb '@root.globe_img'
 

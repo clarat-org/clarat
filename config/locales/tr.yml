@@ -20,6 +20,18 @@ tr:
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
+    contact_people:
+      dr: Dr.
+      email: 'E-Mail:'
+      fax: 'Faks:'
+      female: Bayan
+      heading: Nereye başvurabilirsin?
+      male: Bay
+      obfuscated_email: |-
+        Bu E-Mail adresi spam koruma adına JavaScript ile
+        şifrelenmiştir. Okumak için JavaScript aktifleştir.
+      phone: 'Telefon:'
+      prof_dr: Prof. Dr.
     faq:
       heading: Sıkça sorulan sorular
       section_1:
@@ -620,6 +632,8 @@ tr:
         enlarge_map: Haritayı büyüt
         headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
       more: Daha fazla telefon ve online hizmetler
+      off_canvas:
+        result_text: Show %{result_count} results
       personal_offers:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
@@ -745,6 +759,9 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      head:
+        title:
+          family: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -758,6 +775,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -865,7 +883,9 @@ tr:
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
-      what: Konu nedir?
+      what:
+        code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
+        heading: Konu nedir?
       who: Nerede yardım bulabilirim?
       who_contact_people:
         dr: Dr.
@@ -886,7 +906,8 @@ tr:
     display_string:
       appointment: Sözleşilen vakit
       midnight_exception: Saat 24:00
-      time_format: "%H:%M Saat"
+      time_format_close: "%H:%M Saat"
+      time_format_open: "%H:%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:
@@ -1000,7 +1021,7 @@ tr:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1073,6 +1094,16 @@ tr:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
+    section_choice:
+      section_choice:
+        family:
+          claim: 
+          title: 
+        refugees:
+          claim: 
+          title: 
+      title:
+        refugees: 
     shared:
       address:
         email: |
@@ -1090,6 +1121,7 @@ tr:
     emails: emailler
     faq: sıkça-sorulan-sorular
     haeufige-fragen: sıkça-sorulan-sorular
+    home: 
     impressum: künye
     new: yeni
     offers: hizmetlerimiz

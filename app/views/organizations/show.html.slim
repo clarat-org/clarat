@@ -35,15 +35,15 @@
                     li.Listing-offers__listitem
                       .Listing-results__stamp
                         button.Listing-results__expander aria-toggle='false' Expand/Collapse
-                        = offer.send("_stamp_#{section.identifier}", @current_locale)
+                        = offer.send("stamp_#{section.identifier}", @current_locale)
                       .Listing-results__meta.Listing-results__meta--inorga[
                         class=('Listing-results__meta--with-address' if offer.location && offer.location.visible?)
                       ]
                         h5.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
                                 autotranslation_attr(@organization.translation_automated?)
                         - if offer.location && offer.location.visible
-                        .Listing-offers__address
-                          = offer.location_address
+                          .Listing-offers__address
+                            = offer.location_address
 
 
     .section-wrapper-minor
@@ -67,7 +67,7 @@
                       span.street-address= location.street
                       br
                       span.postal-code=> location.zip
-                      span.locality= location.city
+                      span.locality= location.city.name
                   - if website
                     br
                     = link_to website.shorten_url + website.pdf_appendix,

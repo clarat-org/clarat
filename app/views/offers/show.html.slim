@@ -13,7 +13,7 @@
     - cache [@offer, @offer.target_audience_filters.pluck(:id).sort.join(','), @current_section, @locale] do
       .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
         div[itemprop='name']
-          - stamp_method = @current_section == 'family' ? "_stamp_family" : "_stamp_refugees"
+          - stamp_method = @current_section == 'family' ? "stamp_family" : "stamp_refugees"
           = @offer.send(stamp_method, @locale)
 
     / Left side (in desktop)
@@ -23,7 +23,7 @@
         / What's it all about?
         section.section-content.section-content--what
           h3.section-content__title
-            = t '.what'
+            = t '.what.heading'
             == automation_warning @offer.translation_automated?
           .section-content__body
             == translation_block @offer.translation_automated? do
@@ -46,7 +46,7 @@
           = t '.speaking'
         .section-content__wrapper.is-expanded
           ul.section-content__langlist
-            - @offer.all_language_filters_sorted.each do |language|
+            - @offer.language_filters_alphabetical_sorted.each do |language|
               li
                 => t "js.shared.current_and_original_locale.#{language}"
 

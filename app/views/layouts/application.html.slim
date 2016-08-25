@@ -1,9 +1,10 @@
 doctype html
-html class='no-js' lang=I18n.locale
+html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
   head
     meta charset="utf-8"
     title
       = full_title(yield(:title))
+    meta property="og:title" content=full_title(yield(:title))
     - meta_description = yield(:meta_description)
     - if meta_description
       meta name='description' content=meta_description
@@ -31,11 +32,11 @@ html class='no-js' lang=I18n.locale
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
         = render 'layouts/partials/navigation',
-                 search_form: SearchForm.new,
+                 search_form: SearchForm.new(cookies),
                  current_section: @current_section
       - else
         = render 'layouts/partials/search_navigation',
-                 search_form: @search_form || SearchForm.new,
+                 search_form: @search_form || SearchForm.new(cookies),
                  current_section: @current_section
       #yield-wrap
         = yield
@@ -43,7 +44,8 @@ html class='no-js' lang=I18n.locale
              subscription: @subscription || Subscription.new,
              current_section: @current_section
 
+    = render 'layouts/partials/offcanvas'
+
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts
 
-        / Todo: #{I18n.locale} instead of "ar"

@@ -11,7 +11,7 @@ noscript.NoScript
 / Inform JS…
 / …about the category structure
 #category-tree(
-  data={structure: render('offers/index/categories_nest.json', set: @category_tree, depth: 0)}
+  data={structure: render('offers/index/categories_nest.json', section: @current_section, set: @category_tree, depth: 0)}
 )
 / …about the filter structure
 #filters(

@@ -24,6 +24,9 @@ about supported directives.
 # = require hogan
 # = require shariff
 # = require sticky-kit
+# = require iCheck
+# = require hammerjs
+
 
 # = require handlebars.runtime
 # = require_tree ./templates
@@ -37,7 +40,6 @@ about supported directives.
 # = require jquery.popupoverlay
 # = require jquery.query-object
 #
-# = require vendor/analytics
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix
@@ -81,13 +83,14 @@ about supported directives.
 # = require sticky_sidebar/presenter
 #
 # = require single_click_button/presenter
-# = require toggle_advanced_search/presenter
-# = require toggle_fieldsets/presenter
 # = require enhance_listing_results/presenter
 # = require sticky_mobile_nav/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
 # = require section_speaking_wrapper/presenter
+# = require off_canvas/presenter
+# = require toggle_advanced_search/presenter
+# = require analytics/presenter
 #
 # = require map_modal/presenter
 #
@@ -100,7 +103,6 @@ about supported directives.
 # = require query_field_placeholder/model
 # = require query_field_placeholder/presenter
 #
-# = require modules/analytics
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal

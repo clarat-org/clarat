@@ -970,7 +970,7 @@ pl:
     show:
       last_update: Ostatnio zaktualizowano
       next_steps:
-        code_word: 
+        code_word: O co musisz spytać lub czego szukać na stronie internetowej?
         heading: Co musisz zrobić?
       opening_section:
         days:
@@ -1020,7 +1020,8 @@ pl:
     display_string:
       appointment: do uzgodnienia
       midnight_exception: godzina 24:00
-      time_format: godzina %H:%M
+      time_format_close: "%H:%M"
+      time_format_open: godzina %H:%M
       time_frame: "%{open} - %{close}"
   organizations:
     show:

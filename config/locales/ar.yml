@@ -842,7 +842,7 @@ ar:
     show:
       last_update: "آخر إدخال"
       next_steps:
-        code_word: 
+        code_word: "ما هو سؤالك أو عن ماذا تبحث في الموقع؟"
         heading: "ماذا يجب عليك أن تفعل؟"
       opening_section:
         days:
@@ -894,7 +894,8 @@ ar:
     display_string:
       appointment: "حسب الإتفاق"
       midnight_exception: 24:00 ساعة
-      time_format: " %H:%M ساعة "
+      time_format_close: "%H:%M ساعة"
+      time_format_open: " %H:%M ساعة "
       time_frame: "%{open} - %{close}"
   organizations:
     show:

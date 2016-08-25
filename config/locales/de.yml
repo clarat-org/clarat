@@ -1327,7 +1327,7 @@ de:
     show:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
-        code_word: 
+        code_word: Wonach musst du fragen oder auf der Webseite suchen?
         heading: Was musst du tun?
       opening_section:
         days:
@@ -1379,7 +1379,8 @@ de:
     display_string:
       appointment: nach Vereinbarung
       midnight_exception: 24:00 Uhr
-      time_format: "%H:%M Uhr"
+      time_format_close: "%H:%M Uhr"
+      time_format_open: "%H:%M"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

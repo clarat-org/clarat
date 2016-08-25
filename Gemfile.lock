@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f3b9dd7e90a0f32557ec5854c824bec048a68645
+  revision: 39828cdfc375d0e07c25256004deb309a1884d63
   specs:
     clarat_base (0.1.4)
       aasm
@@ -61,11 +61,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.10.0)
-      httpclient (~> 2.7.1)
+    algoliasearch (1.11.0)
+      httpclient (~> 2.8.2)
       json (>= 1.5.1)
-    algoliasearch-rails (1.14.1)
-      algoliasearch (>= 1.2.14)
+    algoliasearch-rails (1.15.0)
+      algoliasearch (~> 1.11.0)
       json (>= 1.5.1)
     arcane (1.1.1)
       actionpack (>= 3.0.0, < 5.0.0)
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (1.1.1)
+    enumerize (2.0.0)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -231,7 +231,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.7.2)
+    httpclient (2.8.2.2)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
@@ -306,7 +306,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.7)
+    nokogumbo (1.4.9)
       nokogiri
     paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)

@@ -7,4 +7,4 @@ basic:
   aasm_state: approved
   created_by: 1
   approved_by: 2
-  mailings_enabled: t
+  mailings: enabled

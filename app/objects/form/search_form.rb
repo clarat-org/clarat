@@ -47,18 +47,28 @@ class SearchForm
 
   # Methods #
 
-  def initialize *attrs
-    super
+  def initialize cookies, *attrs
+    super(*attrs)
 
     return if exact_location
-    if search_location.blank? # Blank location means default wanted.
-      self.generated_geolocation = I18n.t('conf.default_latlng')
+    if search_location.blank? # Blank location => use cookies or default fallback
+      load_geolocation_values!(cookies)
     elsif search_location && search_location != I18n.t('conf.current_location')
       self.generated_geolocation = search_location_instance.geoloc
     end
   end
 
   private
+
+  def load_geolocation_values! cookies
+    if cookies[:saved_search_location] && cookies[:saved_geolocation]
+      self.search_location = cookies[:saved_search_location]
+      self.generated_geolocation = cookies[:saved_geolocation]
+    else
+      self.search_location = I18n.t('conf.default_location')
+      self.generated_geolocation = I18n.t('conf.default_latlng')
+    end
+  end
 
   def search_location_instance
     @_search_location_instance ||=

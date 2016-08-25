@@ -1245,7 +1245,7 @@ en:
     show:
       last_update: Entry last modified on
       next_steps:
-        code_word: 
+        code_word: What do you have to ask for or look for on the website?
         heading: What do you have to do?
       opening_section:
         days:
@@ -1297,7 +1297,8 @@ en:
     display_string:
       appointment: by appointment
       midnight_exception: midnight
-      time_format: "%l:%M %P"
+      time_format_close: "%l:%M %P"
+      time_format_open: "%l:%M %P"
       time_frame: "%{open} - %{close}"
   organizations:
     show:

@@ -4,14 +4,14 @@ Clarat::Application.routes.draw do
 
   localized do
     # unscoped static pages
-    root to: 'pages#section_forward'
+    # root to: 'pages#section_forward'
     get '/404' => 'pages#not_found'
 
+    root to: 'pages#section_choice', as: 'section_choice'
     scope ':section', section: /family|refugees/ do
-      root to: 'pages#section_choice', as: 'section_choice'
 
       # scoped static pages
-      get 'home' => 'pages#home', as: 'home'
+      get '/' => 'pages#home', as: 'home'
       get 'ueber-uns' => 'pages#about', as: 'about'
       get 'haeufige-fragen' => 'pages#faq', as: 'faq'
       get 'impressum' => 'pages#impressum', as: 'impressum'

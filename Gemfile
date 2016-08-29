@@ -30,6 +30,9 @@ end
 
 gem 'localeapp'
 
+# Puma server
+gem 'puma'
+
 ##############
 # JavaScript #
 ##############

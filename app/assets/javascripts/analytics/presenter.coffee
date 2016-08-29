@@ -14,14 +14,15 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
   trackClick: (e) =>
     $(e).each =>
       @trackOutboundLink(e.target.href)
+    return true
 
 
   trackOutboundLink: (url) =>
     ga? 'send', 'event', 'outbound', 'click', url,
       'transport': 'beacon'
-      'hitCallback': ->
-        document.location = url
-        return
+      # 'hitCallback': ->
+      #   document.location = url
+      #   return
 
 
   detectPlacesAutocompleteTriggered: () =>

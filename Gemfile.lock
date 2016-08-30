@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 07475c798b3c2790bb2dc2cd4fc96d468205ad55
+  revision: 292211622f2eded21146672b13b9d5d38e01d0ad
   specs:
     clarat_base (0.1.4)
       aasm
@@ -231,7 +231,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.8.2.2)
+    httpclient (2.8.2.3)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)

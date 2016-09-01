@@ -877,10 +877,12 @@ en:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -1057,7 +1059,7 @@ en:
         '568': Dutch - Nederlands
         '639': Dari - دری
         amh: Amharic - አማርኛ
-        ara: Arabian - عربي
+        ara: Arabic - عربي
         aze: Azerbaijani - Azərbaycan
         ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
@@ -1065,10 +1067,12 @@ en:
         ber: Berber - Tamaziɣt
         bos: Bosnian - bosanski
         bul: Bulgarian - български
+        cpe: Kamtok - Pidgin
         cze: Czech - čeština
         deu: German - Deutsch
         ell: Greek - ελληνικά
         eng: English
+        ewo: Ewondo / Kolo - Ewondo
         fas: Persian (Farsi) - فارسی
         fin: Finnish - suomi
         fra: French - Français
@@ -1077,7 +1081,7 @@ en:
         hin: Hindi - हिन्दी
         hrv: Kroatian - hrvatski
         hun: Hungarian - magyar
-        ita: Italic - italiano
+        ita: Italian - italiano
         kik: Kikuyu - Gĩkũyũ
         kin: Kinyarwanda - kinyaRwanda
         kor: Korean - 한국말 / 조선말
@@ -1146,7 +1150,7 @@ en:
         gplus:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
-        impressum: imprint
+        impressum: impressum
         privacy: privacy
         tos: legal information
         twitter:
@@ -1169,6 +1173,7 @@ en:
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
+        german_content_warning: Legal information can only be viewed in German
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1398,11 +1403,10 @@ en:
         means she knows a lot about developing countries. She always stays on
         top of things. At clarat she is part of the research team. Her favorite
         song is “Paint It Black” by the Rolling Stones.
-      lavinia: |
+      lavinia: |-
         Lavinia studied peace and conflict studies, which means she knows a lot
         about conflicts and war. She is good at making compelling arguments. At
-        clarat she is part of the research team, where she organizes the
-        offerings by topics. Her favorite song is “I’m not Done” by Fever Ray.
+        clarat she is part of the research team. Her favorite song is “I’m not Done” by Fever Ray.
       line: |
         Line is a theatre director. She also knows a lot about literature and
         language, which means she knows the effect that words can have on people.
@@ -1538,7 +1542,7 @@ en:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1613,8 +1617,19 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
+      claim:
+        family: 
         refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
+      title: 
     shared:
       address:
         email: |
@@ -1633,7 +1648,7 @@ en:
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
     home: 
-    impressum: imprint
+    impressum: impressum
     new: new
     offers: offers
     organizations: organizations

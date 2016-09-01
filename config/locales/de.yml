@@ -933,10 +933,12 @@ de:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -1144,10 +1146,12 @@ de:
         ber: Berberisch - Tamaziɣt
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cpe: Kamtok - Pidgin
         cze: Tschechisch - čeština
         deu: Deutsch
         ell: Griechisch - ελληνικά
         eng: Englisch - English
+        ewo: Ewondo - Ewondo
         fas: Persisch (Farsi) - فارسی
         fin: Finnisch - suomi
         fra: Französisch - Français
@@ -1250,6 +1254,7 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
+        german_content_warning: Wähle deine Sprache
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1327,7 +1332,7 @@ de:
     show:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
-        code_word: Wonach musst du fragen oder auf der Webseite suchen?
+        code_word: 'So heißt die Hilfe beim Anbieter:'
         heading: Was musst du tun?
       opening_section:
         days:
@@ -1476,11 +1481,10 @@ de:
         Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
         den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
         ist Paint It Black von den Rolling Stones.
-      lavinia: |
+      lavinia: |-
         Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
         Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist I'm Not Done von Fever Ray.
       line: |
         Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
         Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
@@ -1615,9 +1619,9 @@ de:
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
-      responsible_html: |
+      responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1692,8 +1696,19 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
+      claim:
+        family: 
         refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
+      title: Bitte wähle deine clarat-Welt
     shared:
       address:
         email: |

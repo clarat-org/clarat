@@ -592,10 +592,12 @@ ru:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -781,10 +783,12 @@ ru:
         ber: "берберский - Tamaziɣt"
         bos: "Боснийский язык - bosanski"
         bul: "Болгарский язык - български"
+        cpe: Kamtok - Pidgin
         cze: "Чешский язык - čeština"
         deu: "Немецкий язык - Deutsch"
         ell: "Греческий язык - ελληνικά"
         eng: "Английский язык - English"
+        ewo: "Эвондо - Ewondo"
         fas: "Персидский язык - فارسی"
         fin: "Финский язык - suomi"
         fra: "Французский язык - Français"
@@ -882,6 +886,7 @@ ru:
             рабоатет не правильно? Тогда
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1125,7 +1130,7 @@ ru:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1196,8 +1201,19 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
+      claim:
+        family: 
         refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
+      title: 
     shared:
       address:
         email: |

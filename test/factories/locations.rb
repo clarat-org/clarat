@@ -5,7 +5,6 @@ FactoryGirl.define do
     # required
     sequence(:street) { |n| "Foobar #{n}" }
     sequence(:zip) { |n| n.to_s.rjust(5, '0') }
-    city 'Berlin'
     hq { rand(9) == 0 }
 
     latitude { rand 52.4..52.6 } # somewhere within approximate bounds of Berlin
@@ -25,6 +24,9 @@ FactoryGirl.define do
     organization
     federal_state do
       FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
+    end
+    city do
+      City.all.to_a.sample || City.create!(name: 'Berlin')
     end
 
     trait :fake_address do

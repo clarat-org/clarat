@@ -472,10 +472,12 @@ ar:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -655,10 +657,12 @@ ar:
         ber: "لغة أمازيغية - Tamaziɣt"
         bos: "لغة بوسنوية - bosanski"
         bul: "لغة بلغارية - български"
+        cpe: Kamtok - Pidgin
         cze: "لغة تشيكية - čeština"
         deu: "لغة ألمانية - Deutsch"
         ell: "لغة يونانية - ελληνικά"
         eng: "لغة إنجليزية - English"
+        ewo: Ewondo - Ewondo
         fas: "لغة فارسية - فارسی"
         fin: "لغة فنلندية - suomi"
         fra: "لغة فرنسية - Français"
@@ -761,6 +765,7 @@ ar:
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1003,7 +1008,7 @@ ar:
       notice: "كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط."
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1074,8 +1079,19 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
+      claim:
+        family: 
         refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
+      title: 
     shared:
       address:
         email: |

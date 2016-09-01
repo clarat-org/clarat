@@ -486,10 +486,12 @@ tr:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -672,10 +674,12 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cpe: Kamtok - Pidgin
         cze: "Çekçe - čeština"
         deu: Almanca - Deutsch
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
+        ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
         fin: Fince - suomi
         fra: Fransızca - Français
@@ -775,6 +779,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1020,7 +1025,7 @@ tr:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1094,8 +1099,19 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
+      claim:
+        family: 
         refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
+      title: 
     shared:
       address:
         email: |

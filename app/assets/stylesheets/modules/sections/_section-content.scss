@@ -75,8 +75,7 @@
 }
 
 .section-content__body--offers-of-orga {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .section-content__langlist {
@@ -108,5 +107,17 @@
   background: transparent;
   color: $brand_brown;
   width: auto;
+}
 
+.section-content--alloffers {
+  &,
+  .section-content__title {
+    background: transparent;
+    padding: 0;
+  }
+
+  .section-content__title {
+    @extend .Listing-results__headline;
+    color: inherit;
+  }
 }

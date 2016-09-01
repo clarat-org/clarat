@@ -488,10 +488,11 @@
     font-size: 16px;
   }
 
-  //.Listing-results__listitem {
-  //  margin-bottom: 15px;
-  //}
+  .Listing-results__listitem {
+    margin-bottom: 15px;
+  }
 
+  .template--organizations-show,
   .template--previews-show_organization {
     .content-main.content-main--wide {
       padding: 105px 0 0;

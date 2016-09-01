@@ -26,7 +26,6 @@
 }
 
 .Listing-results__listitem {
-  @extend %clearfix;
   margin-bottom: 25px;
 }
 
@@ -241,9 +240,9 @@
 
 .Listing-results__stamp {
   position: relative;
-  width: 100%;
-  background: $brand_beige image-url('ico_user.svg') no-repeat 10px 7px;
-  padding: 4px 4px 0 40px;
+  width: 38%;
+  background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
+  padding: 4px 4px 0 30px;
   background-size: auto 20px;
   line-height: 1.8;
   overflow: hidden;

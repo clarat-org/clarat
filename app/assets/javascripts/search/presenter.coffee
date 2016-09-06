@@ -61,6 +61,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     nearbyResults = resultSet.results[0]
     remoteFacetResults = resultSet.results[1]
     personalFacetResults = resultSet.results[2]
+    @geocodeLatLng(nearbyResults.aroundLatLng)
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
@@ -77,6 +78,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   onQuerySupportResults: (resultSet) =>
     remoteFacetResults = resultSet.results[0]
     personalFacetResults = resultSet.results[1]
+    @geocodeLatLng(personalFacetResults.aroundLatLng)
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
     )
@@ -85,6 +87,19 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       personalFacetResults
     ]
 
+  geocodeLatLng: (latlngString) =>
+    return if latlngString.empty?
+    console.log latlngString
+    latlng = {lat: parseFloat(latlngString.split(',')[0]), lng: parseFloat(latlngString.split(',')[1])}
+    geocoder = new google.maps.Geocoder
+    geocoder.geocode {'location': latlng}, (results, status) ->
+      console.log '==> geoCodeResult'
+      if status == google.maps.GeocoderStatus.OK && results[1]
+        console.log results
+        console.log results[1].formatted_address
+        document.title = results[1].formatted_address
+      else
+        console.log status
 
   ### CALLBACKS ###
 

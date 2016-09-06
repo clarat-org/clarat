@@ -8,5 +8,9 @@ javascript:
       apiKey: "#{Rails.application.secrets.algolia['pub_key']}",
       personalIndexName: "#{Offer.personal_index_name(I18n.locale)}",
       remoteIndexName: "#{Offer.remote_index_name(I18n.locale)}"
+    },
+    Google: {
+      apiKey: "#{Rails.application.secrets.google['api']}",
+      appID: "#{Rails.application.secrets.google['id']}"
     }
   };

@@ -10,5 +10,5 @@ class Clarat.Search.Query.Personal extends Clarat.Search.Query.Base
     _.merge super(),
       indexName: Clarat.Algolia.personalIndexName,
       params:
-        aroundLatLng: @geolocation
+        aroundLatLngViaIP: true
         aroundRadius: @SEARCH_RADIUS

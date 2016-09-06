@@ -10,6 +10,6 @@ class Clarat.Search.Query.Nearby
     params:
       page: 0
       hitsPerPage: 1
-      aroundLatLng: @geolocation
+      aroundLatLngViaIP: true
       aroundRadius: @NEARBY_RADIUS
       facetFilters: ["_section_filters:#{@section}"]

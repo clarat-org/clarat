@@ -98,8 +98,11 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
         console.log results
         console.log results[1].formatted_address
         document.title = results[1].formatted_address
+        document.getElementById('search_form_search_location').value = results[1].formatted_address
       else
         console.log status
+        document.title = latlngString
+        document.getElementById('search_form_search_location').value  = latlngString
 
   ### CALLBACKS ###
 

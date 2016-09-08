@@ -646,6 +646,8 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -835,6 +837,8 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
+        cpe: Kamtok - Pidgin
+        ewo: "Эвондо - Ewondo"
     single_search_result:
       encounters:
         chat: "Чат"
@@ -1200,6 +1204,15 @@ ru:
         family: 
         refugees: 
       title: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

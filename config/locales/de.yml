@@ -987,6 +987,8 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -1198,6 +1200,8 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        cpe: Kamtok - Pidgin
+        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: Chat
@@ -1695,6 +1699,15 @@ de:
         family: 
         refugees: 
       title: Bitte wähle deine clarat-Welt
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

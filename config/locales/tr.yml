@@ -540,6 +540,8 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -726,6 +728,8 @@ tr:
         wol: Wolof - wɔlɔf
         zho: "Çince - 普通话 / 普通話"
         zza: Zazaca - Zazaki / Kırmancki
+        cpe: Kamtok - Pidgin
+        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: Sohbet
@@ -1098,6 +1102,15 @@ tr:
         family: 
         refugees: 
       title: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

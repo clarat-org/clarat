@@ -622,6 +622,8 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -806,6 +808,8 @@ fr:
         zho: Langues chinoises - 普通话 / 普通話
         zza: |
           Zazaki - Zazaki / Kırmancki
+        cpe: Pidgin camerounais - Pidgin
+        ewo: Ewondo / kóló - Ewondo
     single_search_result:
       encounters:
         chat: discussion en ligne
@@ -1156,6 +1160,15 @@ fr:
         family: 
         refugees: 
       title: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

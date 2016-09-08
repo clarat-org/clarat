@@ -526,6 +526,8 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -709,6 +711,8 @@ ar:
         wol: "لغة ولوفية - wɔlɔf"
         zho: "لغة صينية - 普通话 / 普通話"
         zza: "لغة زازاكية - Zazaki / Kırmancki"
+        cpe: Kamtok - Pidgin
+        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: "دردشة"
@@ -1078,6 +1082,15 @@ ar:
         family: 
         refugees: 
       title: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

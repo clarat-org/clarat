@@ -667,6 +667,8 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        cpe: Cpe
+        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -852,6 +854,8 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+        cpe: Język kamtok - Pidgin
+        ewo: Język yaunde - Ewondo
     single_search_result:
       encounters:
         chat: chat
@@ -1209,6 +1213,15 @@ pl:
         family: 
         refugees: 
       title: 
+      family:
+        title: 
+      refugees:
+        title: 
+      section_choice:
+        family:
+          title: 
+        refugees:
+          title: 
     shared:
       address:
         email: |

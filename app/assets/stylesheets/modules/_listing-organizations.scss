@@ -6,9 +6,13 @@
 
 
 .Listing-organizations__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  li {
+    margin-left: 25px;
+    list-style-type: square;
+  }
 }
 
 .Listing-organizations__link {

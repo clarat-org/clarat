@@ -542,17 +542,15 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
       sort:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
       sort_order:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Arama hatası
@@ -643,19 +641,19 @@ tr:
         other: "%{count} Bulunduğun yerde bir hizmet"
         zero: Maalesef hizmet bulunmamaktadır
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:
@@ -732,8 +730,6 @@ tr:
         wol: Wolof - wɔlɔf
         zho: "Çince - 普通话 / 普通話"
         zza: Zazaca - Zazaki / Kırmancki
-        cpe: Kamtok - Pidgin
-        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: Sohbet
@@ -769,7 +765,7 @@ tr:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family:
+          family: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -783,7 +779,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        german_content_warning:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -815,10 +811,10 @@ tr:
           encounter:
             chat: Sohbet
             email: E-Mail
-            fax:
+            fax: 
             forum: Forum
             hotline: Telefon
-            letter:
+            letter: 
             online-course: Online kurs
             portal: Adres listesi
           exclusive_gender:
@@ -1103,19 +1099,16 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family:
-        refugees:
-      title:
       family:
-        title:
+        title: 
       refugees:
-        title:
+        title: 
       section_choice:
         family:
-          title:
+          title: 
         refugees:
-          title:
+          title: 
+      title: 
     shared:
       address:
         email: |
@@ -1133,7 +1126,7 @@ tr:
     emails: emailler
     faq: sıkça-sorulan-sorular
     haeufige-fragen: sıkça-sorulan-sorular
-    home:
+    home: 
     impressum: künye
     new: yeni
     offers: hizmetlerimiz

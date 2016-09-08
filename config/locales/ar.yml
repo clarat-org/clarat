@@ -528,8 +528,6 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -626,19 +624,19 @@ ar:
         other: "%{count} عروض محلية"
         zero: "للأسف لا توجد عروض  "
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: "عرض عروض مكانية أكثر"
     shared:
       current_and_original_locale:
@@ -715,8 +713,6 @@ ar:
         wol: "لغة ولوفية - wɔlɔf"
         zho: "لغة صينية - 普通话 / 普通話"
         zza: "لغة زازاكية - Zazaki / Kırmancki"
-        cpe: Kamtok - Pidgin
-        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: "دردشة"
@@ -752,7 +748,7 @@ ar:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family:
+          family: 
       modal:
         beta_modal:
           link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
@@ -769,7 +765,7 @@ ar:
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
-        german_content_warning:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1083,19 +1079,16 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family:
-        refugees:
-      title:
       family:
-        title:
+        title: 
       refugees:
-        title:
+        title: 
       section_choice:
         family:
-          title:
+          title: 
         refugees:
-          title:
+          title: 
+      title: 
     shared:
       address:
         email: |
@@ -1113,7 +1106,7 @@ ar:
     emails: "رسائل بريد إليكتروني"
     faq: "أسئلة-شائعة"
     haeufige-fragen: "أسئلة-شائعة"
-    home:
+    home: 
     impressum: "هيئة التحرير"
     new: "جديد"
     offers: "عروض"

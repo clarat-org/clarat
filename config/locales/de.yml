@@ -989,8 +989,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -1204,8 +1202,6 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        cpe: Kamtok - Pidgin
-        ewo: Ewondo - Ewondo
     single_search_result:
       encounters:
         chat: Chat
@@ -1700,13 +1696,6 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family: 
-        refugees: 
-<<<<<<< HEAD
-      title: Bitte wähle deine clarat-Welt
-=======
->>>>>>> 3aeb11fd77c6011ee30109c06de5ad757c6ded34
       family:
         title: 
       refugees:
@@ -1716,10 +1705,7 @@ de:
           title: 
         refugees:
           title: 
-<<<<<<< HEAD
-=======
       title: Bitte wähle deine clarat-Welt
->>>>>>> 3aeb11fd77c6011ee30109c06de5ad757c6ded34
     shared:
       address:
         email: |

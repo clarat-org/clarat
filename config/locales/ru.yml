@@ -648,17 +648,15 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
       sort:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
       sort_order:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: "Ошибка в поиске"
@@ -751,20 +749,20 @@ ru:
         other: "%{count} Предложения на месте"
         zero: "К сожалению, нет предложений"
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         few: "%{count} Telefonberatungen und Onlineangebote"
         one: "Одно предложение по телефону или одно предложение он-лайн"
         other: "%{count} Предложения по телефону и он-лайн"
         zero: "Нет предложений по телефону или он-лайн"
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: "Показать предложения на месте"
     shared:
       current_and_original_locale:
@@ -841,8 +839,6 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
-        cpe: Kamtok - Pidgin
-        ewo: "Эвондо - Ewondo"
     single_search_result:
       encounters:
         chat: "Чат"
@@ -878,7 +874,7 @@ ru:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family:
+          family: 
       modal:
         beta_modal:
           link: "просто напиши нам E-Mail."
@@ -890,7 +886,7 @@ ru:
             рабоатет не правильно? Тогда
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
-        german_content_warning:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -924,10 +920,10 @@ ru:
           encounter:
             chat: "Чат"
             email: E-Mail
-            fax:
+            fax: 
             forum: "Форум"
             hotline: "Телефон"
-            letter:
+            letter: 
             online-course: "Он-лайн курс"
             portal: "Список адресов"
           exclusive_gender:
@@ -1205,19 +1201,16 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family:
-        refugees:
-      title:
       family:
-        title:
+        title: 
       refugees:
-        title:
+        title: 
       section_choice:
         family:
-          title:
+          title: 
         refugees:
-          title:
+          title: 
+      title: 
     shared:
       address:
         email: |
@@ -1235,7 +1228,7 @@ ru:
     emails: "электронные-письма"
     faq: "Частые-вопросы"
     haeufige-fragen: "Частые-вопросы"
-    home:
+    home: 
     impressum: "Импрессум"
     new: "новый"
     offers: "предложения"

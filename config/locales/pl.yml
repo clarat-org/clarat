@@ -669,17 +669,15 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
       sort:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
       sort_order:
-        nearby:
-        relevance:
+        nearby: 
+        relevance: 
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -768,20 +766,20 @@ pl:
         other: "%{count} oferty na miejscu"
         zero: Niestety brak ofert na miejscu
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
         other: "%{count} porady telefoniczne i oferty online"
         zero: Brak porad telefonicznych i ofert online
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Pokaż oferty lokalne
     shared:
       current_and_original_locale:
@@ -858,8 +856,6 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        cpe: Język kamtok - Pidgin
-        ewo: Język yaunde - Ewondo
     single_search_result:
       encounters:
         chat: chat
@@ -895,14 +891,14 @@ pl:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family:
+          family: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        german_content_warning:
+        german_content_warning: 
         languages:
           ar: "عربي"
           de: Deutsch
@@ -934,10 +930,10 @@ pl:
           encounter:
             chat: chat
             email: e-Mail
-            fax:
+            fax: 
             forum: forum
             hotline: telefon
-            letter:
+            letter: 
             online-course: kurs online
             portal: lista adresów
           exclusive_gender:
@@ -1214,19 +1210,16 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family:
-        refugees:
-      title:
       family:
-        title:
+        title: 
       refugees:
-        title:
+        title: 
       section_choice:
         family:
-          title:
+          title: 
         refugees:
-          title:
+          title: 
+      title: 
     shared:
       address:
         email: |
@@ -1244,7 +1237,7 @@ pl:
     emails: e-maile
     faq: często-zadawane-pytania
     haeufige-fragen: często-zadawane-pytania
-    home:
+    home: 
     impressum: impressum
     new: nowe
     offers: oferty

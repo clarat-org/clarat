@@ -37,30 +37,7 @@ en:
       section_1:
         heading: Who, how, what?
         question_1:
-          answer: |
-            clarat is an online platform where you can find help and support
-            offerings. We help you find the help you need. We do not offer advising
-            or consulting services – there are experts for that. And it is precisely
-            their offerings that you will find on clarat: on <b>clarat
-            family</b> and on <b>clarat refugees</b>:
-            <p>
-            <ul>
-            <li>
-            <b>clarat family</b> helps children, adolescents, and families, who are
-            facing problems and who are looking for help nearby. Here you can easily
-            find help for yourself, your family, and your friends, or for other
-            children, adolescents, and families you might know. If you want to
-            better understand what clarat family is all about, you can watch this
-            short %{link_to_family_movie}.
-            </li>
-            <li>
-            <b>clarat refugees</b> helps refugees who are looking for support
-            nearby. You can easily find help here: for yourself, your family, and
-            your friends. You can also find help if you are not a refugee yourself,
-            but know refugees who need help.
-            </li>
-            </ul>
-            </p>
+          answer: "clarat is an online platform where you can find help and support\nservices. We can help you to find the help you need. We do not offer advising\nor counselling services ourselves. There are experts for that. And it's \ntheir support services you will find on clarat: on <b>clarat\nfamily</b> and on <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\n<b>clarat family</b> helps children, adolescents and families, who are\nfacing problems and who are looking for help nearby. Here you can easily\nfind help for yourself, your family and your friends, or for other\nchildren, adolescents and families you might know. If you want to\nunderstand what clarat family is all about, you can watch this\nshort %{link_to_family_movie}.\n</li>\n<li>\n<b>clarat refugees</b> helps refugees who are looking for support\nnearby. You can easily find help here: for yourself, your family and\nyour friends. You can also find help if you are not a refugee yourself,\nbut know refugees who need help.\n</li>\n</ul>\n</p>"
           link_1:
             name: video
             target: _blank
@@ -70,7 +47,7 @@ en:
         question_10:
           answer: |-
             The money for <b>clarat family</b> and <b>clarat refugees</b> comes mostly from
-            the %{link_to_bsz}. However in the future, we would like to bring additional supporters along on board.
+            the %{link_to_bsz}. However in the future, we would like to have even more supporters on board.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -102,10 +79,10 @@ en:
             var: link_to_github
           question: Is clarat’s programming code open source?
         question_13:
-          answer: |
+          answer: |-
             For the time being, clarat does not offer an interface to download and
             edit data. We may have an interface in the future, but this is not
-            entirely certain. For now, we primarily compile and sort data. If you
+            entirely certain. For now, we are primarily compiling and sorting data. If you
             are interested in such an interface, %{link_to_contact_form}.
           link_1:
             name: please contact us
@@ -114,12 +91,7 @@ en:
             var: link_to_contact_form
           question: Does clarat offer an interface to download and edit data?
         question_2:
-          answer: |
-            There are many help and support offerings available in Germany for
-            people who really need help. However, these offerings can often be hard
-            to find. On the one hand, this is because it can be hard to know exactly
-            where to look for them. On the other hand, this is because the contact
-            partners are not always clear. That is exactly what we want to change.
+          answer: "In Germany, there are lots of support programmes and services for \npeople who really need help. However, these services can often be hard\nto find. Sometimes, you might not be sure what you're looking for. Or maybe\nit's not clear who you should get in touch with. And this is exactly what we \nwant to change."
           question: Why does clarat exist?
         question_3:
           answer: |
@@ -933,8 +905,6 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
-        cpe: Cpe
-        ewo: Ewo
       section:
         family: Family
         refugees: Refugees
@@ -1036,19 +1006,19 @@ en:
         other: "%{count} local offers"
         zero: No local offers found
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
         zero: No remote offers
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Show local offers
     shared:
       current_and_original_locale:
@@ -1125,8 +1095,6 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        cpe: Kamtok - Pidgin
-        ewo: Ewondo / Kolo - Ewondo
     single_search_result:
       encounters:
         chat: chat
@@ -1162,7 +1130,7 @@ en:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family:
+          family: 
       modal:
         beta_modal:
           link: write us a message.
@@ -1621,19 +1589,16 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family:
-        refugees:
-      title: Please choose your clarat-section
       family:
-        title:
+        title: 
       refugees:
-        title:
+        title: 
       section_choice:
         family:
-          title:
+          title: 
         refugees:
-          title:
+          title: 
+      title: Please choose your clarat-section
     shared:
       address:
         email: |
@@ -1651,7 +1616,7 @@ en:
     emails: emails
     faq: frequently-asked-questions
     haeufige-fragen: frequently-asked-questions
-    home:
+    home: 
     impressum: impressum
     new: new
     offers: offers

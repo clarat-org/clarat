@@ -14,6 +14,7 @@
   background-color: $brand_beige;
 
   &.is-visible {
+    display: block;
     display: flex;
   }
 

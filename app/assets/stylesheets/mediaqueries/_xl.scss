@@ -46,9 +46,9 @@
   }
 
   .Distributor__search-form {
-    position: absolute;
-    left: 0;
-    right: 120px;
+    //position: absolute;
+    //left: 0;
+    //right: 120px;
 
     .template--pages-home & {
       position: relative;
@@ -88,7 +88,7 @@
 
   #new_search_form .main-search__submit {
     position: absolute;
-    right: 0;
+    right: 20px;
 
     body.ar & {
       left: 0;
@@ -99,7 +99,7 @@
 
   .search-form--input-wrapper {
     position: absolute;
-    right: 75px;
+    right: 95px;
     left: 25px;
 
     body.ar & {
@@ -115,9 +115,7 @@
   }
 
   #new_search_form {
-    display: table-cell;
-    margin-right: 15px;
-    width: auto;
+    height: 76px;
 
     .template--pages-home & {
       margin-right: auto;

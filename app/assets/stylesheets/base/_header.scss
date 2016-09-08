@@ -10,33 +10,7 @@
   height: 182px;
   background: $brand_beige;
 
-  // Visual horizontal enlargement of non startpage distributor box
-  &:before {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100px;
-    background: $brand_yellow;
-    content: '';
 
-    body.refugees & {
-      border-top: 6px solid $brand_core_refugees;
-    }
-
-    body.family & {
-      border-top: 6px solid $brand_core_family;
-    }
-
-    body.ar & {
-      left: 0;
-      right: auto;
-    }
-
-    .template--500 & {
-      display: none;
-    }
-  }
 }
 
 .header-main--wide {

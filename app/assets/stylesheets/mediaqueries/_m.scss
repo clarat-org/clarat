@@ -48,7 +48,6 @@
 
   .header-main {
     height: auto;
-    min-height: 116px;
     margin-bottom: 0;
 
     .wrapper-inner {
@@ -74,7 +73,7 @@
   .Logo {
     margin-bottom: 15px;
     position: absolute;
-    top: 14px;
+    top: 2px;
     z-index: 20;
     margin-top: 5px;
     margin-left: 15px;
@@ -86,7 +85,7 @@
     body.family & { // Specifity
       background-size: 160px 64px;
       margin-right: 15px;
-      margin-left: 5px;
+      margin-left: 12px;
     }
 
   }
@@ -134,7 +133,6 @@
     padding-bottom: 0;
     margin: 26px 0 0 0;
     max-width: 1000px;
-    border-top-left-radius: 0;
 
     &.is-enlarged {
       // max-height: 95px;
@@ -153,6 +151,7 @@
   }
 
   .Distributor__search-form {
+    @extend %clarat_rounding_start;
     position: relative;
     right: auto;
     width: 100%;
@@ -182,6 +181,7 @@
     z-index: 30;
     display: block;
     width: auto;
+    height: auto;
     margin-right: 0;
     overflow: hidden;
     background-color: $brand_yellow;
@@ -310,7 +310,7 @@
     .main-search__submit {
       position: absolute;
       top: 10px;
-      right: 20px;
+      right: 15px;
       width: 40px;
       height: 35px;
       background-size: 60%;
@@ -402,13 +402,19 @@
   .main-search__advanced-filter--within-content-main {
     display: block;
     position: relative;
-    font-size: 13px;
-    margin: 15px -20px -15px;
+    margin: 0 -20px -15px;
+    padding-left: 0;
+    height: 30px;
     text-align: center;
+    font-size: 13px;
     color: $brand_white;
     cursor: pointer;
-    height: 30px;
     line-height: 30px;
+
+    &[aria-expanded="true"],
+    &[aria-expanded="false"] {
+      background-image: none;
+    }
 
     body.family & {
       background-color: rgba($brand_core_family, .6);
@@ -526,6 +532,10 @@
       -ms-flex-order: 4;
       order: 4;
     }
+  }
+
+  .Listing-results {
+    padding-top: 20px;
   }
 
   .Listing-results__expander {
@@ -856,11 +866,12 @@
   .overlay-active .main-search__advanced-filter {
     background: #f4b528;
     padding: 0;
-    margin-left: 0;
-    width: 100%;
     display: block;
     top: 0;
     transform: initial;
+    left: 0;
+    right: 0;
+    width: 100vw;
   }
 
   body.refugees.overlay-active .main-search__advanced-filter {

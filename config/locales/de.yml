@@ -933,10 +933,12 @@ de:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -1144,10 +1146,12 @@ de:
         ber: Berberisch - Tamaziɣt
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cpe: Kamtok - Pidgin
         cze: Tschechisch - čeština
         deu: Deutsch
         ell: Griechisch - ελληνικά
         eng: Englisch - English
+        ewo: Ewondo - Ewondo
         fas: Persisch (Farsi) - فارسی
         fin: Finnisch - suomi
         fra: Französisch - Français
@@ -1477,11 +1481,10 @@ de:
         Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
         den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
         ist Paint It Black von den Rolling Stones.
-      lavinia: |
+      lavinia: |-
         Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
         Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
+        clarat ist sie im Research-Team. Ihr Lieblingssong ist I'm Not Done von Fever Ray.
       line: |
         Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
         Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
@@ -1693,15 +1696,19 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      claim:
+        family: 
+        refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
       section_choice:
         family:
-          claim: 
           title: 
         refugees:
-          claim: 
           title: 
-      title:
-        refugees: 
+      title: Bitte wähle deine clarat-Welt
     shared:
       address:
         email: |

@@ -613,10 +613,12 @@ pl:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -798,10 +800,12 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cpe: Język kamtok - Pidgin
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
         fin: Język fiński - suomi
         fra: Język francuski - Français
@@ -1206,15 +1210,19 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      claim:
+        family: 
+        refugees: 
+      family:
+        title: 
+      refugees:
+        title: 
       section_choice:
         family:
-          claim: 
           title: 
         refugees:
-          claim: 
           title: 
-      title:
-        refugees: 
+      title: 
     shared:
       address:
         email: |

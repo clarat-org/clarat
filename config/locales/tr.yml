@@ -486,10 +486,12 @@ tr:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -546,11 +548,11 @@ tr:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
       sort_order:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
   js:
     ajax_error:
       error: Arama hatası
@@ -641,19 +643,19 @@ tr:
         other: "%{count} Bulunduğun yerde bir hizmet"
         zero: Maalesef hizmet bulunmamaktadır
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:
@@ -674,10 +676,12 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cpe: Kamtok - Pidgin
         cze: "Çekçe - čeština"
         deu: Almanca - Deutsch
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
+        ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
         fin: Fince - suomi
         fra: Fransızca - Français
@@ -765,7 +769,7 @@ tr:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family: 
+          family:
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -779,6 +783,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
+        german_content_warning:
         languages:
           ar: "عربي"
           de: Deutsch
@@ -810,10 +815,10 @@ tr:
           encounter:
             chat: Sohbet
             email: E-Mail
-            fax: 
+            fax:
             forum: Forum
             hotline: Telefon
-            letter: 
+            letter:
             online-course: Online kurs
             portal: Adres listesi
           exclusive_gender:
@@ -1024,7 +1029,7 @@ tr:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1099,18 +1104,18 @@ tr:
       title: Datenschutz
     section_choice:
       claim:
-        family: 
-        refugees: 
-      title: 
+        family:
+        refugees:
+      title:
       family:
-        title: 
+        title:
       refugees:
-        title: 
+        title:
       section_choice:
         family:
-          title: 
+          title:
         refugees:
-          title: 
+          title:
     shared:
       address:
         email: |
@@ -1128,7 +1133,7 @@ tr:
     emails: emailler
     faq: sıkça-sorulan-sorular
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home:
     impressum: künye
     new: yeni
     offers: hizmetlerimiz

@@ -40,7 +40,6 @@ about supported directives.
 # = require jquery.popupoverlay
 # = require jquery.query-object
 #
-# = require vendor/analytics
 # = require vendor/cookie_lib
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix
@@ -91,6 +90,7 @@ about supported directives.
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
 # = require toggle_advanced_search/presenter
+# = require analytics/presenter
 #
 # = require map_modal/presenter
 #
@@ -103,7 +103,6 @@ about supported directives.
 # = require query_field_placeholder/model
 # = require query_field_placeholder/presenter
 #
-# = require modules/analytics
 # = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal

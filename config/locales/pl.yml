@@ -613,10 +613,12 @@ pl:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -673,11 +675,11 @@ pl:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
       sort_order:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -766,20 +768,20 @@ pl:
         other: "%{count} oferty na miejscu"
         zero: Niestety brak ofert na miejscu
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
         other: "%{count} porady telefoniczne i oferty online"
         zero: Brak porad telefonicznych i ofert online
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Pokaż oferty lokalne
     shared:
       current_and_original_locale:
@@ -800,10 +802,12 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cpe: Język kamtok - Pidgin
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
         fin: Język fiński - suomi
         fra: Język francuski - Français
@@ -891,13 +895,14 @@ pl:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family: 
+          family:
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
+        german_content_warning:
         languages:
           ar: "عربي"
           de: Deutsch
@@ -929,10 +934,10 @@ pl:
           encounter:
             chat: chat
             email: e-Mail
-            fax: 
+            fax:
             forum: forum
             hotline: telefon
-            letter: 
+            letter:
             online-course: kurs online
             portal: lista adresów
           exclusive_gender:
@@ -1136,7 +1141,7 @@ pl:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1210,18 +1215,18 @@ pl:
       title: Datenschutz
     section_choice:
       claim:
-        family: 
-        refugees: 
-      title: 
+        family:
+        refugees:
+      title:
       family:
-        title: 
+        title:
       refugees:
-        title: 
+        title:
       section_choice:
         family:
-          title: 
+          title:
         refugees:
-          title: 
+          title:
     shared:
       address:
         email: |
@@ -1239,7 +1244,7 @@ pl:
     emails: e-maile
     faq: często-zadawane-pytania
     haeufige-fragen: często-zadawane-pytania
-    home: 
+    home:
     impressum: impressum
     new: nowe
     offers: oferty

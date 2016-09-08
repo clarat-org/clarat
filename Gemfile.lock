@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 7d856375ebdd1ec05ae27049b5bd714e28884a48
+  revision: 292211622f2eded21146672b13b9d5d38e01d0ad
   specs:
     clarat_base (0.1.4)
       aasm
@@ -61,11 +61,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.10.0)
-      httpclient (~> 2.7.1)
+    algoliasearch (1.11.0)
+      httpclient (~> 2.8.2)
       json (>= 1.5.1)
-    algoliasearch-rails (1.14.1)
-      algoliasearch (>= 1.2.14)
+    algoliasearch-rails (1.15.0)
+      algoliasearch (~> 1.11.0)
       json (>= 1.5.1)
     arcane (1.1.1)
       actionpack (>= 3.0.0, < 5.0.0)
@@ -231,7 +231,7 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.7.2)
+    httpclient (2.8.2.3)
     i18n (0.7.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
@@ -254,12 +254,12 @@ GEM
     letter_opener (1.4.1)
       launchy (~> 2.2)
     libv8 (3.16.14.13)
-    localeapp (1.0.2)
+    localeapp (2.0.0)
       gli
-      i18n
-      json
-      rack
-      rest-client
+      i18n (~> 0.4)
+      json (~> 1.8)
+      mime-types (~> 2.6)
+      rest-client (~> 1.8)
       ya2yaml
     lograge (0.3.5)
       actionpack (>= 3)
@@ -334,6 +334,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    puma (3.0.2)
     pundit (1.0.1)
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
@@ -440,7 +441,7 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.1.0)
+    sanitize (4.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4.1)
@@ -608,6 +609,7 @@ DEPENDENCIES
   pry-rails
   pry-rescue
   pry-stack_explorer
+  puma
   pundit
   quiet_assets
   rack-attack

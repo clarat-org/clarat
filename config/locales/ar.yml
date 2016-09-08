@@ -472,10 +472,12 @@ ar:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -624,19 +626,19 @@ ar:
         other: "%{count} عروض محلية"
         zero: "للأسف لا توجد عروض  "
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_offers:
         one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: "لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت"
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: "عرض عروض مكانية أكثر"
     shared:
       current_and_original_locale:
@@ -657,10 +659,12 @@ ar:
         ber: "لغة أمازيغية - Tamaziɣt"
         bos: "لغة بوسنوية - bosanski"
         bul: "لغة بلغارية - български"
+        cpe: Kamtok - Pidgin
         cze: "لغة تشيكية - čeština"
         deu: "لغة ألمانية - Deutsch"
         ell: "لغة يونانية - ελληνικά"
         eng: "لغة إنجليزية - English"
+        ewo: Ewondo - Ewondo
         fas: "لغة فارسية - فارسی"
         fin: "لغة فنلندية - suomi"
         fra: "لغة فرنسية - Français"
@@ -748,7 +752,7 @@ ar:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family: 
+          family:
       modal:
         beta_modal:
           link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
@@ -765,6 +769,7 @@ ar:
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
+        german_content_warning:
         languages:
           ar: "عربي"
           de: Deutsch
@@ -1007,7 +1012,7 @@ ar:
       notice: "كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط."
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1079,18 +1084,18 @@ ar:
       title: Datenschutz
     section_choice:
       claim:
-        family: 
-        refugees: 
-      title: 
+        family:
+        refugees:
+      title:
       family:
-        title: 
+        title:
       refugees:
-        title: 
+        title:
       section_choice:
         family:
-          title: 
+          title:
         refugees:
-          title: 
+          title:
     shared:
       address:
         email: |
@@ -1108,7 +1113,7 @@ ar:
     emails: "رسائل بريد إليكتروني"
     faq: "أسئلة-شائعة"
     haeufige-fragen: "أسئلة-شائعة"
-    home: 
+    home:
     impressum: "هيئة التحرير"
     new: "جديد"
     offers: "عروض"

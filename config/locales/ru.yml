@@ -592,10 +592,12 @@ ru:
         ber: Ber
         bos: Bos
         bul: Bul
+        cpe: Cpe
         cze: Cze
         deu: Deu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
@@ -652,11 +654,11 @@ ru:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
       sort_order:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
   js:
     ajax_error:
       error: "Ошибка в поиске"
@@ -749,20 +751,20 @@ ru:
         other: "%{count} Предложения на месте"
         zero: "К сожалению, нет предложений"
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_offers:
         few: "%{count} Telefonberatungen und Onlineangebote"
         one: "Одно предложение по телефону или одно предложение он-лайн"
         other: "%{count} Предложения по телефону и он-лайн"
         zero: "Нет предложений по телефону или он-лайн"
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: "Показать предложения на месте"
     shared:
       current_and_original_locale:
@@ -783,10 +785,12 @@ ru:
         ber: "берберский - Tamaziɣt"
         bos: "Боснийский язык - bosanski"
         bul: "Болгарский язык - български"
+        cpe: Kamtok - Pidgin
         cze: "Чешский язык - čeština"
         deu: "Немецкий язык - Deutsch"
         ell: "Греческий язык - ελληνικά"
         eng: "Английский язык - English"
+        ewo: "Эвондо - Ewondo"
         fas: "Персидский язык - فارسی"
         fin: "Финский язык - suomi"
         fra: "Французский язык - Français"
@@ -874,7 +878,7 @@ ru:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family: 
+          family:
       modal:
         beta_modal:
           link: "просто напиши нам E-Mail."
@@ -886,6 +890,7 @@ ru:
             рабоатет не правильно? Тогда
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
+        german_content_warning:
         languages:
           ar: "عربي"
           de: Deutsch
@@ -919,10 +924,10 @@ ru:
           encounter:
             chat: "Чат"
             email: E-Mail
-            fax: 
+            fax:
             forum: "Форум"
             hotline: "Телефон"
-            letter: 
+            letter:
             online-course: "Он-лайн курс"
             portal: "Список адресов"
           exclusive_gender:
@@ -1129,7 +1134,7 @@ ru:
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1201,18 +1206,18 @@ ru:
       title: Datenschutz
     section_choice:
       claim:
-        family: 
-        refugees: 
-      title: 
+        family:
+        refugees:
+      title:
       family:
-        title: 
+        title:
       refugees:
-        title: 
+        title:
       section_choice:
         family:
-          title: 
+          title:
         refugees:
-          title: 
+          title:
     shared:
       address:
         email: |
@@ -1230,7 +1235,7 @@ ru:
     emails: "электронные-письма"
     faq: "Частые-вопросы"
     haeufige-fragen: "Частые-вопросы"
-    home: 
+    home:
     impressum: "Импрессум"
     new: "новый"
     offers: "предложения"

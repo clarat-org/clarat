@@ -10,7 +10,7 @@ class EmailsController < ApplicationController
     @email.subscribe!
     flash[:success] = t('.success_html', unsubscribe_href:
       unsubscribe_path(id: @email.id, security_code: @email.security_code))
-    redirect_to root_path
+    redirect_to section_choice_path
   end
 
   def unsubscribe
@@ -18,7 +18,7 @@ class EmailsController < ApplicationController
     @email.unsubscribe!
     flash[:success] = t('.success_html', subscribe_href:
       subscribe_path(id: @email.id, security_code: @email.security_code))
-    redirect_to root_path
+    redirect_to section_choice_path
   end
 
   # List the offers of a certain email. Here we actually do pretend partial

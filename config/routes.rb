@@ -8,8 +8,8 @@ Clarat::Application.routes.draw do
     get '/404' => 'pages#not_found'
 
     root to: 'pages#section_choice', as: 'section_choice'
-    scope ':section', section: /family|refugees/ do
 
+    scope ':section', section: /family|refugees/ do
       # scoped static pages
       get '/' => 'pages#home', as: 'home'
       get 'ueber-uns' => 'pages#about', as: 'about'

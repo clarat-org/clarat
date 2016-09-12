@@ -143,12 +143,42 @@
 
   // Content ######################################
 
-  .section-start__headline {
-    font-size: 20px;
-  }
-
   .wrapper-inner {
     padding: 0 20px;
+  }
+
+  .section-choice {
+    width: 90vw;
+  }
+
+  .section-choice__headline {
+    background-size: auto 90%;
+  }
+
+  .section-choice__family,
+  .section-choice__refugees {
+    width: inherit;
+  }
+
+  .section-choice__stage {
+    background-size: 100% 100%;
+  }
+
+  .section-choice__container {
+    width: 45vw;
+  }
+
+  .section-choice__cta {
+    width: 90%;
+    height: 65px;
+    margin: 0 5%;
+    background-size: 18px 32px;
+    padding-left: 45px;
+    font-size: inherit;
+  }
+
+  .section-start__headline {
+    font-size: 20px;
   }
 
   .section-start__body {

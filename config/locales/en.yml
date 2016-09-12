@@ -37,30 +37,7 @@ en:
       section_1:
         heading: Who, how, what?
         question_1:
-          answer: |
-            clarat is an online platform where you can find help and support
-            offerings. We help you find the help you need. We do not offer advising
-            or consulting services – there are experts for that. And it is precisely
-            their offerings that you will find on clarat: on <b>clarat
-            family</b> and on <b>clarat refugees</b>:
-            <p>
-            <ul>
-            <li>
-            <b>clarat family</b> helps children, adolescents, and families, who are
-            facing problems and who are looking for help nearby. Here you can easily
-            find help for yourself, your family, and your friends, or for other
-            children, adolescents, and families you might know. If you want to
-            better understand what clarat family is all about, you can watch this
-            short %{link_to_family_movie}.
-            </li>
-            <li>
-            <b>clarat refugees</b> helps refugees who are looking for support
-            nearby. You can easily find help here: for yourself, your family, and
-            your friends. You can also find help if you are not a refugee yourself,
-            but know refugees who need help.
-            </li>
-            </ul>
-            </p>
+          answer: "clarat is an online platform where you can find help and support\nservices. We can help you to find the help you need. We do not offer advising\nor counselling services ourselves. There are experts for that. And it's \ntheir support services you will find on clarat: on <b>clarat\nfamily</b> and on <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\n<b>clarat family</b> helps children, adolescents and families, who are\nfacing problems and who are looking for help nearby. Here you can easily\nfind help for yourself, your family and your friends, or for other\nchildren, adolescents and families you might know. If you want to\nunderstand what clarat family is all about, you can watch this\nshort %{link_to_family_movie}.\n</li>\n<li>\n<b>clarat refugees</b> helps refugees who are looking for support\nnearby. You can easily find help here: for yourself, your family and\nyour friends. You can also find help if you are not a refugee yourself,\nbut know refugees who need help.\n</li>\n</ul>\n</p>"
           link_1:
             name: video
             target: _blank
@@ -70,7 +47,7 @@ en:
         question_10:
           answer: |-
             The money for <b>clarat family</b> and <b>clarat refugees</b> comes mostly from
-            the %{link_to_bsz}. However in the future, we would like to bring additional supporters along on board.
+            the %{link_to_bsz}. However in the future, we would like to have even more supporters on board.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -102,10 +79,10 @@ en:
             var: link_to_github
           question: Is clarat’s programming code open source?
         question_13:
-          answer: |
+          answer: |-
             For the time being, clarat does not offer an interface to download and
             edit data. We may have an interface in the future, but this is not
-            entirely certain. For now, we primarily compile and sort data. If you
+            entirely certain. For now, we are primarily compiling and sorting data. If you
             are interested in such an interface, %{link_to_contact_form}.
           link_1:
             name: please contact us
@@ -114,22 +91,10 @@ en:
             var: link_to_contact_form
           question: Does clarat offer an interface to download and edit data?
         question_2:
-          answer: |
-            There are many help and support offerings available in Germany for
-            people who really need help. However, these offerings can often be hard
-            to find. On the one hand, this is because it can be hard to know exactly
-            where to look for them. On the other hand, this is because the contact
-            partners are not always clear. That is exactly what we want to change.
+          answer: "In Germany, there are lots of support programmes and services for \npeople who really need help. However, these services can often be hard\nto find. Sometimes, you might not be sure what you're looking for. Or maybe\nit's not clear who you should get in touch with. And this is exactly what we \nwant to change."
           question: Why does clarat exist?
         question_3:
-          answer: |
-            Enter a search term describing your problem. Then add the location. You
-            will find matching help and support offerings in your area. You will
-            also be shown the help you can get over the phone or online. Have a look
-            %{ref_to_how_to_find_right_help} for information about how to find what
-            you’re looking for. When you click on the title of an offering, we tell
-            you what you need to do to obtain the help you need, for example whether
-            you need to call or whether you can just go there.
+          answer: "First of all, enter a search term describing your problem. And then tell us \nwhere you are. Once you've done that, all the local support services which\ncould help you will come up. Or support you can get using your phone or the \ninternet. Have a look %{ref_to_how_to_find_right_help} for a more detailed\nexplanation about how to get help When you click on one of the support services,\nwe'll tell you what to do next. For example: if you should make a phone call or \njust go by in person."
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -137,9 +102,9 @@ en:
             var: ref_to_how_to_find_right_help
           question: How does clarat work?
         question_4:
-          answer: |
-            clarat is and will stay free of charge. Anyone can search on <b>clarat
-            family</b> for help and support for children, adolescents, and families
+          answer: |-
+            clarat is and will always be free of charge. Anyone can search on <b>clarat
+            family</b> for help and support for children, adolescents and families
             for free. And anyone can search on <b>clarat refugees</b> for help for
             refugees for free.
           question: Is clarat free of charge?
@@ -149,30 +114,17 @@ en:
             clarat will know your name or your address
           question: Can I search anonymously on clarat?
         question_6:
-          answer: |
-            We regularly check whether the information on clarat is still up-to-date.
-            After all, this is the only way we can ensure that clarat is really
-            helpful for children, adolescents, families, and refugees. If the
-            information is outdated, then we will update it.
-          question: Is the information on clarat up to-date?
-        question_7:
           answer: |-
-            You can use some of the offerings at <b>clarat family</b> and at <b>clarat
-            refugees</b> from anywhere. It doesn't matter where you live. There are many offerings
-            that allow you to receive help over the phone or online--in other words,
-            via e-mail, via chat, or in an online forum. You can use many other offerings right there where you live. At <b>clarat refugees</b>
-            you will soon find offerings for many large cities in Germany. At the moment, that means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we have started with Berlin. Here you
-            can find a lot of offerings. But we are collecting further. Soon also for other large cities in Germany.
+            We regularly check whether the information on clarat is still up to date.
+            After all, this is the only way we can ensure that clarat is really
+            helpful for children, adolescents, families and refugees. If the
+            information is out of date, then we will update it.
+          question: Is the information on clarat up to date?
+        question_7:
+          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. It doesn't matter where you live. \nA lot of the support services help you over the telephone. Or over the internet\n - that means using  e-mails, chat, or online forums. But a lot of support \nservices can help you right there, where you live. At <b>clarat refugees</b>\nyou will soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we have \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
           question: Is clarat available for all of Germany?
         question_8:
-          answer: |
-            clarat shows you an overview of help and support offerings in your area,
-            meaning all in one place. We also tell you exactly what you need to do
-            to get help. We always use simple language that anyone can easily
-            understand. This is because at clarat we want everyone to find the help
-            they need – no matter how well they speak German. On clarat, you can
-            also switch to other languages. If you want to know more, click
-            %{ref_to_how_many_languages}.
+          answer: "clarat shows you the help you can get in your local area. All the information \nyou need is in one place. Our layout is simple and clear. And we tell you exactly \nwhat you need to do to get help. We write in a clear, simple language. So that \neveryone can understand what we've written. Because at clarat we want to help \neveryone who needs help. Even people who don't speak very good German. On\nclarat, you can read about the support services in other languages, too. If you \nwant to know more, click %{ref_to_how_many_languages}."
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -180,11 +132,7 @@ en:
             var: ref_to_how_many_languages
           question: What is special about clarat?
         question_9:
-          answer: |-
-            clarat was brought to life in 2014 by the %{link_to_bsz}, which is a family foundation
-            with a long history of supporting children and adolescents. And with clarat, it now wants
-            to help refugees as well. Watch this %{link_to_bsz_movie} to learn more
-            about the foundation.
+          answer: "clarat was founded in 2014 by the %{link_to_bsz}, which is a family foundation\nwith a long history of supporting children and adolescents. And with clarat refugees, \nit now wants to help refugees as well. Watch this %{link_to_bsz_movie} to learn more\nabout the foundation."
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -206,54 +154,10 @@ en:
         heading: Do you have questions about your search?
         question_1:
           anchor: who_finds_help
-          answer: |
-            clarat is for everyone: With only one click you can decide whether you
-            want to search on <b>clarat family</b> or <b>clarat refugees</b>:
-            <p>
-            <ul>
-            <li>
-            <b>clarat family</b> is for children, adolescents, and families in need
-            of help – regardless of whether they have problems in their families,
-            with friends, at school, or somewhere else.
-            </li>
-            <li>
-            <b>clarat refugees</b> is for all refugees in Germany: for children and
-            adolescents, for men and women, and for families, who have fled their
-            home countries and are now in need of assistance.
-            </li>
-            </ul>
-            </p>
-            clarat can also be useful for people who want to help others, such as
-            teachers, neighbors, and friends.
+          answer: "clarat is for everyone: With just one click you can decide whether you\nwant to search on <b>clarat family</b> or <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\n<b>clarat family</b> is for children, adolescents and families in need\nof help – regardless of whether they have problems in their families,\nwith friends, at school, or somewhere else.\n</li>\n<li>\n<b>clarat refugees</b> is for all refugees in Germany: for children and\nadolescents, for men and women, and for families. For everyone who \nhas fled their home country and now needs help.\n</ul>\n</p>\nclarat can also be useful for people who want to help others. People like\nteachers, neighbours and friends."
           question: Who can find help on clarat?
         question_10:
-          answer: |
-            There could be several reasons for this.
-            <p>
-            <ul>
-            <li>
-            It could be that your search term can’t be found. In that case, you
-            should try another search with a different term. If you can’t think of
-            another term, try searching by clicking on our icons. On clarat that
-            means: <i>search by categories</i>. You can read about it
-            %{ref_to_how_to_find_right_help}.
-            </li>
-            <li>
-            If you live in a rural area and can’t seem to find any offerings nearby,
-            enter the name of the nearest city in the search box that says
-            <b>Where?</b> Or try searching for help offered via telephone or online.
-            </li>
-            <li>
-            Another reason could be that we haven’t yet compiled any information on
-            offerings in your district or city.
-            </li>
-            <li>
-            Or we don’t yet have any matching offerings in our database. In order
-            for us to change that, we need your feedback. If you can’t find what
-            you’re looking for, please send an e-mail to %{mailto_clarat}.
-            </li>
-            </ul>
-            </p>
+          answer: "There could be several reasons for this.\n<p>\n<ul>\n<li>\nIt could be that your search term can’t be found. In this case, you\nshould try another search with a different word. If you can’t think of\nanother word, try searching by clicking on our icons. On clarat that\nmeans: <i>search by categories</i>. You can read about it\n%{ref_to_how_to_find_right_help}.\n</li>\n<li>\nIf you live in the countryside and can’t seem to find any support \nservices nearby, enter the name of the nearest city in the search box that says\n<b>Where?</b> Or try searching for help offered via telephone or online.\n</li>\n<li>\nAnother reason could be that we haven’t compiled any information on\nsupport services in your district or city yet.\n</li>\n<li>\nOr we don’t yet have any matching support services in our database. In order\nfor us to change that, we need your feedback. If you can’t find what\nyou’re looking for, please send an e-mail to %{mailto_clarat}.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -266,150 +170,22 @@ en:
             var: mailto_clarat
           question: Why can’t I find what I’m looking for?
         question_11:
-          answer: |
-            First, you should check what kind of problem the offering addresses. You
-            can find information in the description under <b>What’s it about?</b> If
-            you don’t think that an offering provides the right kind of help for
-            you, try a different one. If you’re still not sure, try contacting the
-            organization. Usually there’s a number you can call or an e-mail address.
-            You can find these contact details under <i>How can you get in touch?</i>
+          answer: "First of all, you should check what kind of problem the support service helps \npeople with. You can find information in the description under <b>What’s it about?</b> If\nyou don’t think that a support service provides the right kind of help for\nyou, try a different one. If you’re still not sure, try contacting the\norganization. Usually there’s a number you can call or an e-mail address.\nYou can find these contact details under <i>How can you get in touch?</i>"
           question: What can I do if I don’t know whether a help or support offering is right for me?
         question_12:
-          answer: |
-            On clarat you can also look for help and support offerings for others,
-            for example for a friend, as an uncle for your nephew, as a mother for
-            your child, or as a teacher for your student. However, in our
-            descriptions we usually address the person who will be receiving the
-            help (usually children and adolescents).
+          answer: |-
+            On clarat you can also look for help and support for others.
+            For example,  for a friend. Or as an uncle for your nephew. Or as a mother for
+            your child. Or as a teacher for your student. However, in our
+            descriptions we usually talk to the person who will be receiving the
+            help. And that's often usually children and adolescents.
           question: How do I find help if I’m not looking for myself, but for someone else?
         question_2:
-          answer: |-
-            On <b>clarat family</b> you can find different help and support
-            offerings for different kinds of problems. We have organized them for
-            you by topics:
-            <p>
-            <ul>
-            <li class="FAQ__ico--family--family">
-            <b>Family problems</b><br>
-            This is where you can find help if you have problems in your family, for
-            example because of an argument. You can also find help for many other
-            issues such as coming of age and raising children. Any member of the
-            family can find help here. There are many offerings for children as well
-            as for parents.
-            </li>
-            <br>
-            <li class="FAQ__ico--health--family">
-            <b>Health</b><br>
-            Here you can find help with health-related problems: for example if
-            you’re facing problems because you or someone in your family is ill, or
-            if you or someone you know is dealing with addiction. You will also find
-            help and support offerings for problems that can come up during
-            pregnancy.
-            </li>
-            <br>
-            <li class="FAQ__ico--learn--family">
-            <b>Learning and working</b><br>
-            Here you can find help if you have problems at school or in your
-            vocational training. You will also find help if you’re having trouble
-            finding a spot in a vocational training program, or if you’re looking
-            for a German language course.
-            </li>
-            <br>
-            <li class="FAQ__ico--everydaylife--family">
-            <b>Everyday worries</b><br>
-            Here you can find help with smaller and bigger problems in your everyday
-            life: for example, if you have money troubles, or if you are living on
-            the street. You will also find offerings for free time activities and
-            offerings that can help you with filling out forms and applications.
-            </li>
-            <br>
-            <li class="FAQ__ico--violence--family">
-            <b>Violence</b><br>
-            Here you can find help if someone has hit or abused you. You will also
-            find help if you’re having trouble with aggression yourself or if you
-            have committed a crime.
-            </li>
-            <br>
-            <li class="FAQ__ico--crisis--family">
-            <b>Emergency</b><br>
-            Here you can find support if you are in urgent need of help. If an
-            offering’s title says <b>day and night</b> that means you can reach
-            someone at any time – no matter how late it is.
-            </li>
-            </ul>
-            </p>
-          question: On what topics can I find help on clarat family?
+          answer: "On <b>clarat family</b> you can find different help and support\nservices for all different kinds of problems. We have organized them for\nyou by topic:\n<p>\n<ul>\n<li class=\"FAQ__ico--family--family\">\n<b>Family problems</b><br>\nThis is where you can find help if you have problems in your family. For\nexample, problems because of arguments. You can also find help for many \nother problems. Things like parenting problems. Or children growing up. Any \nmember of the family can find help here. There's support for children as well\nas for parents.\n</li>\n<br>\n<li class=\"FAQ__ico--health--family\">\n<b>Health</b><br>\nThis is where you can find help if you have problems with your health. \nFor example, if you don't feel well, because you are sick. Or if someone in \nyour family is ill. Or if you or someone you know has problems with addiction.\nYou can also find here if you have problems during your pregnancy.\n</li>\n<br>\n<li class=\"FAQ__ico--learn--family\">\n<b>Learning and working</b><br>\nThis is where you can find help if you have problems at school. Or in a\nvocational training programme. You'll also find help if you’re having trouble\nfinding a spot in a vocational training programme or an apprenticeship.\nOr if you’re looking for a German language course.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--family\">\n<b>Everyday worries</b><br>\nThis is where you can find help with everyday problems. They can be \nbig problems or small problems. For example, if you have money problems \nor if you're living on the street. But you'll  will also find help here if you are \nlooking for something to do in your free-time. Or if you need support filling in forms\nand applications. \n<br>\n<li class=\"FAQ__ico--violence--family\">\n<b>Violence</b><br>\nThis is where you can find help if someone has hit or abused you. You'll also\nfind help here if you’re having trouble with aggression yourself. Or if you've committed a crime.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--family\">\n<b>Emergency</b><br>\nThis is where you can find  help if you are in a crisis situation. If a\nsupoort service’s title says <b>day and night</b> that means you can reach\nsomeone at any time. No matter how late it is.\n</li>\n</ul>\n</p>"
+          question: Which issues can clarat family help me with?
         question_3:
-          answer: |-
-            On <b>clarat refugees</b> you can find different help and support
-            offerings for different kinds of problems. We have organized them for
-            you by topics:
-            <p>
-            <ul>
-            <li class="FAQ__ico--legal--refugees">
-            <b>Asylum and the law</b><br>
-            Here you can find help if you have questions about the asylum process or
-            about German laws. This section is for you regardless of whether you’re
-            about to apply for asylum or a decision has already been made, for
-            example if you have received a temporary residence permit. Refugee
-            minors will also find support offerings here.
-            </li>
-            <br>
-            <li class="FAQ__ico--family--refugees">
-            <b>Family problems</b><br>
-            This is where you can find help if you have problems in your family,
-            for example because of an argument. You can also find help for many
-            other issues such as coming of age and raising children. Any member of
-            the family can find help here. There are many offerings for children as
-            well as for parents.
-            </li>
-            <br>
-            <li class="FAQ__ico--health--refugees">
-            <b>Health</b><br>
-            Here you can find help if you are ill or if you are pregnant. You can
-            also find offerings to help you if you are dealing with emotional or
-            psychological trauma as a result of war or torture. This section will
-            also help you find offerings if you have a disability. On clarat you can
-            find doctors and psychologists offering help to refugees.
-            </li>
-            <br>
-            <li class="FAQ__ico--learn--refugees">
-            <b>Learning and working</b><br>
-            Here you can find help if you have questions about learning and working
-            in Germany. You might want to learn more about preschools (kindergarten)
-            and schools, what you need to do in order to study at a university, or
-            how to go about finding a job or a spot in a vocational training program.
-            You will also find many different German language courses as well as
-            integration courses that are designed for refugees.
-            </li>
-            <br>
-            <li class="FAQ__ico--everydaylife--refugees">
-            <b>Living in Germany</b><br>
-            Here you can find help if you’re having trouble dealing with government
-            agencies, for example because you don’t speak German. Here you can find
-            someone who can translate or interpret for you, or someone who can
-            accompany you to appointments. But you will also find other kinds of
-            support here. We will show you where you can get food, furniture, and
-            clothing. You’ll also find offerings where you can meet other people,
-            for example at sports clubs or cooking classes.
-            </li>
-            <br>
-            <li class="FAQ__ico--violence--refugees">
-            <b>Violence</b><br>
-            Here you can find help if you have experienced violence or were tortured
-            in your home country. You will also find help if, for example, you want
-            to leave an extremist group.
-            </li>
-            <br>
-            <li class="FAQ__ico--crisis--refugees">
-            <b>Emergency</b><br>
-            Here you can find support if you are in urgent need of help. If an
-            offering’s title says <b>day and night</b> that means you can reach
-            someone at any time – no matter how late it is.
-            </li>
-            </ul>
-            </p>
-          question: On what topics can I find help on clarat refugees?
+          answer: "On <b>clarat refugees</b> you can find different help and support\nservices for all different kinds of problems. We have organized them for\nyou by topic:\n<p>\n<ul>\n<li class=\"FAQ__ico--legal--refugees\">\n<b>Asylum and the law</b><br>\nThis is where you can find help if you have questions about the asylum \nprocess. Or questions about asylum law in Germany. It doesn't matter \nwhat your status is. It doesn't matter if you are going to apply for asylum \nin the future. Or if a decision has already been made. Everyone can get \nhelp here. For example, refugees who have a Duldung status - a temporary \nsuspension of deportation. And refugee minors - that means children and \nteenagers - can get help here too.\n</li>\n<br>\n<li class=\"FAQ__ico--family--refugees\">\n<b>Family problems</b><br>\nThis is where you can find help if you have problems in your family.\nFor example, problems because of arguments.You can also find help for many \nother problems. Things like parenting problems. Or children growing up. Any \nmember of the family can find help here. There's lots of support for children here. \nAnd lots of support for adults, too.\n</li>\n<br>\n<li class=\"FAQ__ico--health--refugees\">\n<b>Health</b><br>\nThis is where you can find help if you are ill. Or if you're pregnant. You can\nalso find support services to help you if you have problems because of war or \ntorture. Or if you have a disability. Here you will find doctors and psychologists\nwho help refugees.\n</li>\n<br>\n<li class=\"FAQ__ico--learn--refugees\">\n<b>Learning and working</b><br>\nThis is where you can find help if you have questions about learning and working\nin Germany. Questions about nursery schools or childcare facilities. Or questions about \nschools. Or if you want to find out what you need to do to study at a university or college.\nOr how to find a job or a place in a vocational training programme.\nAnd you'll find lots of different German language courses here too. And\nintegration courses for refugees.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--refugees\">\n<b>Living in Germany</b><br>\nThis is where you can find help if you’re having problems with government\nagencies. For example, problems because you don’t speak German. Here\nyou can find someone who can translate or interpret for you. Or someone \nwho can accompany you to appointments. But you'll also find kinds of\nsupport here. too. We will show you places, where you can get food. Or \nfurniture and clothing. You’ll also find support services where you can meet \nother people. For example at places like sports clubs or cooking classes.\n</li>\n<br>\n<li class=\"FAQ__ico--violence--refugees\">\n<b>Violence</b><br>\nThis is where you can find help if you have been hit or experienced violence. \nOr if you were tortured in your home country. But you can find other help here too.\nFor example, if you want to leave an extremist group.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--refugees\">\n<b>Emergency</b><br>\nThis is where you can find help if you are in a crisis situation. If a\nsupport service's title says <b>day and night</b> that means you can reach\nsomeone at any time. No matter how late it is.\n</li>\n</ul>\n</p>"
+          question: Which issues can clarat refugees help me with?
         question_4:
           answer: |
             On the right side of the main page you will see a flash (lightning bolt)
@@ -1617,9 +1393,6 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family: 
-        refugees: 
       family:
         title: 
       refugees:
@@ -1629,7 +1402,7 @@ en:
           title: 
         refugees:
           title: 
-      title: 
+      title: Please choose your clarat-section
     shared:
       address:
         email: |

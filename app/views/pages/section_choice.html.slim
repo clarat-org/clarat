@@ -1,0 +1,21 @@
+- provide(:title, t('.title'))
+- cache ['section_choice', I18n.t] do
+
+  main.content-main.content-main--wide.content-main--section_choice
+    ul.section-choice
+      li.section-choice__container
+        section.section-choice__family
+          = link_to '/family/' do
+            h1.section-choice__headline.section-choice__headline--family
+              = t '.family.title'
+          a.section-choice__stage.section-choice__stage--family[href='/family/']
+          a.section-choice__cta.section-choice__cta--family[href='/family/']
+            = t 'layouts.partials.navigation.claim.family'
+      li.section-choice__container
+        section.section-choice__refugees
+          a[href='/refugees/']
+            h1.section-choice__headline.section-choice__headline--refugees
+              = t '.refugees.title'
+          a.section-choice__stage.section-choice__stage--refugees[href='/refugees/']
+          a.section-choice__cta.section-choice__cta--refugees[href='/refugees/']
+            = t 'layouts.partials.navigation.claim.refugees'

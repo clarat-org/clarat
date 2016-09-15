@@ -1,9 +1,9 @@
 %div.result-order
   %label{for: "result-order", class: "result-order__label"} Sortieren nach
   %div.result-order__select-wrapper
-    %select{name: "result-order", id: "result-order", class: 'result-order__select'}
-      %option Beste Treffer
-      %option Angebote in deiner Nähe
+    %select{name: "result-order", id: "sort_order", class: 'result-order__select'}
+      %option{value: 'sort_order_relevance', id: 'sort_order_sort_order_relevance'} Beste Treffer
+      %option{value: 'sort_order_nearby', id: 'sort_order_sort_order_nearby'} Angebote in deiner Nähe
 
 %ul.Type-results
   %li.Type-results__item.Type-results__item--active
@@ -11,30 +11,15 @@
   %li.Type-results__item
     %a.Type-results__link{href: '#'} Online und Telefon (0)
 
+.search-string
+  = hb! 'main_results_query'
+  = hb! 'main_results_location'
+  = hb! 'main_results_headline'
 
-= hb 'if personal_focus_with_remote' do
-  %h2.Listing-results__headline.Listing-results__headline--remote
-    = hb 'remote_results_headline'
-
-    = hb 'if has_two_or_more_remote_results' do
-      .more_remote-offers_open
-        %a.JS-ToggleContactType{ href: '{{more_href}}' }
-          = hb 'more_anchor'
-
-  %ul.Listing-results__list
-    = hb 'each remote_offers' do
-      - # first remote offer
-      = hb '> _single_search_result'
-
-
-%h2.Listing-results__headline.Listing-results__headline--remote
-  .search-string
-    = hb! 'main_results_headline'
-
-  = hb 'if remote_focus' do
-    .more_remote-offers_open
-      %a.JS-ToggleContactType{ href: '{{more_href}}' }
-        = hb 'toggle_personal_anchor'
+= hb 'if remote_focus' do
+  .more_remote-offers_open
+    %a.JS-ToggleContactType{ href: '{{more_href}}' }
+      = hb 'toggle_personal_anchor'
 
 
 = hb 'unless personal_focus_with_remote' do

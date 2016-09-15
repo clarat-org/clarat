@@ -133,12 +133,12 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
     if @world == "family"
-      @ttWeltRefugees.qtip('api').show()
-      @_highlightTooltip(@ttWeltRefugees)
+      # @ttWeltRefugees.qtip('api').show()
+      # @_highlightTooltip(@ttWeltRefugees)
 
     else
-      @ttWeltFamily.qtip('api').show()
-      @_highlightTooltip(@ttWeltFamily)
+      # @ttWeltFamily.qtip('api').show()
+      # @_highlightTooltip(@ttWeltFamily)
 
     return
 

@@ -30,6 +30,8 @@ class Clarat.Search.Cell.SearchResults
       personal_focus_with_remote:
         @mainResults.nbHits + @remoteResults.nbHits > 0
       main_results_headline: @mainResultsHeadline('personal_offers')
+      main_results_location: @mainResultsLocation()
+      main_results_query: @mainResultsQuery()
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits
 
@@ -53,26 +55,24 @@ class Clarat.Search.Cell.SearchResults
       toggle_personal_anchor: I18n.t('js.search_results.show_personal') # TODO: permanent? +css
 
 
-  ## Headline Building Helpers
-
   mainResultsHeadline: (i18nKey) ->
-    output = I18n.t "js.search_results.#{i18nKey}", count: @mainResults.nbHits
-    bridge = I18n.t 'js.search_results.bridge'
-    enclosing = I18n.t 'js.search_results.enclosing'
-
-    output += " (#{@model.search_location || I18n.t('conf.default_location')}"
-    if @model.exact_location == 'true'
-      output += " " + HandlebarsTemplates['remove_exact_location']()
-    output += ")"
 
     if @model.category
-      output += " in #{@breadcrumbPath @model}"
+      output = "#{@breadcrumbPath @model}"
 
+    output
+
+  mainResultsQuery: () ->
     if @model.query
-      output += " #{bridge}: &bdquo;#{@model.query}&ldquo; "
+      output = "#{@model.query} "
       output += HandlebarsTemplates['remove_query_link']()
 
-    output + " #{enclosing}"
+  mainResultsLocation: () ->
+    output = "#{@model.search_location || I18n.t('conf.default_location')}"
+    if @model.exact_location == 'true'
+      output += HandlebarsTemplates['remove_exact_location']()
+
+    output
 
   # breadcrumps to active category
   breadcrumbPath: (@model) ->
@@ -82,7 +82,7 @@ class Clarat.Search.Cell.SearchResults
 
     for category, index in ancestors
       output += Handlebars.partials['_category_link'] name: category
-      output += ' &rarr; ' unless index is last_index
+      output += ' <span class="fooo">-</span> ' unless index is last_index
 
     output
 

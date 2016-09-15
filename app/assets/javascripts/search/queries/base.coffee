@@ -5,7 +5,8 @@ class Clarat.Search.Query.Base
   VALUES_PER_FACET: 300 # must be >= Category.Count to avoid missing categories
 
   constructor:
-    (@query = '', @category = null, @facetFilters = [], @page = null) ->
+    (@query = '', @category = null, @facetFilters = [], @page = null,
+      @sort_order = 'nearby') ->
       # Algolia seems to want this string in an array
       @categoryArray = if @category then [@category] else []
 
@@ -29,3 +30,9 @@ class Clarat.Search.Query.Base
       }
     else
       {}
+
+  _precisionPerSortOrder: ->
+    if @sort_order == 'nearby'
+      @BASE_PRECISION
+    else
+      @SEARCH_RADIUS || 50000

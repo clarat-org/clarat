@@ -25,12 +25,12 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   init: =>
 
     if @isFrontPage
-      # @testForNavWeltCookie()
+      @testForNavWeltCookie()
     else if @isOfferIndexPage
-      # @testForNavWeltCookie()
+      @testForNavWeltCookie()
       @testForAdvSearchCookie()
     else
-      # @testForNavWeltCookie()
+      @testForNavWeltCookie()
 
 
   testForNavWeltCookie: () =>
@@ -50,7 +50,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       return false
     else
       @initAdvSearchTooltips()
-      # @setCookieAdvSearch()
+      @setCookieAdvSearch()
 
 
   _highlightTooltip: (elem) =>
@@ -187,7 +187,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       path: '/'
 
 
-  # setCookieAdvSearch: =>
+  setCookieAdvSearch: =>
     $.cookie 'welcome-tooltips-advsearch', 'true',
       expires: @cookieLifespan
       path: '/'

@@ -274,8 +274,15 @@
     }
   }
 
+  .result-order__label {
+    display: none;
+  }
 
-  // Footer ######################################
+  .result-order__select {
+    font-size: 13px;
+  }
+
+    // Footer ######################################
 
   .footer-main {
     padding-top: 80px;

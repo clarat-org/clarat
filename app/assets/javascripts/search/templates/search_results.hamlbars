@@ -1,3 +1,17 @@
+%div.result-order
+  %label{for: "result-order", class: "result-order__label"} Sortieren nach
+  %div.result-order__select-wrapper
+    %select{name: "result-order", id: "result-order", class: 'result-order__select'}
+      %option Beste Treffer
+      %option Angebote in deiner Nähe
+
+%ul.Type-results
+  %li.Type-results__item.Type-results__item--active
+    %a.Type-results__link{href: '#'} Vor Ort (12)
+  %li.Type-results__item
+    %a.Type-results__link{href: '#'} Online und Telefon (0)
+
+
 = hb 'if personal_focus_with_remote' do
   %h2.Listing-results__headline.Listing-results__headline--remote
     = hb 'remote_results_headline'

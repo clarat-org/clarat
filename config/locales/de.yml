@@ -1237,7 +1237,7 @@ de:
           href: https://twitter.com/claratpunktorg
       head:
         title:
-          family: 
+          family:
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1658,14 +1658,14 @@ de:
       title: Datenschutz
     section_choice:
       family:
-        title: 
+        title:
       refugees:
-        title: 
+        title:
       section_choice:
         family:
-          title: 
+          title:
         refugees:
-          title: 
+          title:
       title: Bitte wähle deine clarat-Welt
     shared:
       address:
@@ -1700,6 +1700,7 @@ de:
     update_requests: update_requests
     users: nutzer
     fr: fr
+    liste: liste
     liste-de-services: liste-de-services
   shareds:
     forms:

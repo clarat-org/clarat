@@ -1218,6 +1218,7 @@ fr:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: utilisateur
+    liste: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

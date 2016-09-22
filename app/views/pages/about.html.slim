@@ -10,7 +10,7 @@
         - @names.each do |name|
           .section-team__member
             .section-team__name
-              = name.titleize
+              = name.split('_').first.titleize
             = image_tag image_path("team/#{name}.jpg"),
                         class: 'section-team__profile'
             p = t ".#{name}"

@@ -1696,9 +1696,6 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      claim:
-        family: 
-        refugees: 
       family:
         title: 
       refugees:
@@ -1740,6 +1737,9 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    fr: fr
+    liste: liste
+    liste-de-services: liste-de-services
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

@@ -61,6 +61,16 @@
   }
 }
 
+.section-content--alloffers {
+  background: transparent;
+
+  .section-content__title {
+    padding: 0;
+    background: transparent;
+    color: inherit;
+  }
+}
+
 .section-content__body {
   padding: 15px;
   line-height: 1.68;
@@ -75,8 +85,7 @@
 }
 
 .section-content__body--offers-of-orga {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .section-content__langlist {

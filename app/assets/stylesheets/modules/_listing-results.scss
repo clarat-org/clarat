@@ -247,6 +247,11 @@
   line-height: 1.8;
   overflow: hidden;
 
+  .section-content__body--offers-of-orga & {
+    padding-left: 36px;
+    background-position: 8px 5px;
+  }
+
   body.ar & {
     background-position: calc(100% - 6px) 5px;
     padding: 4px 30px 0 4px;

@@ -1,5 +1,8 @@
 # Static pages
 class PagesController < ApplicationController
+  def section_choice
+  end
+
   def home
   end
 

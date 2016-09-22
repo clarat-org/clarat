@@ -1305,10 +1305,12 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
+    fr: 
     haeufige-fragen: frequently-asked-questions
     home: 
     impressum: impressum
     liste: 
+    liste-de-services: 
     new: new
     offers: offers
     organizations: organizations
@@ -1321,7 +1323,6 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
-    liste: 
   shareds:
     forms:
       fill_field: Please fill out this field

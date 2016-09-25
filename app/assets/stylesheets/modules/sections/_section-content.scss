@@ -110,14 +110,10 @@
     background-position: left 50%;
     background-repeat: no-repeat;
     background-size: 15px auto;
-  }
 
-  .is-expanded + & {
-
-    &::after {
+    .section-content__wrapper.is-expanded + & {
       background-image: image-url('ico_fieldset_collapse--ondark.svg');
     }
-
   }
 }
 

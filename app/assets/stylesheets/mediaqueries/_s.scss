@@ -492,7 +492,6 @@
     margin-bottom: 15px;
   }
 
-  .template--organizations-show,
   .template--previews-show_organization {
     .content-main.content-main--wide {
       padding: 105px 0 0;
@@ -515,6 +514,52 @@
     textarea,
     &.formtastic .inline-errors {
       width: 100%;
+    }
+  }
+
+  .content-main--section_choice {
+    height: 70vh;
+    min-height: 460px;
+
+    &.content-main.content-main--wide {
+      margin: 0;
+      align-items: flex-start;
+    }
+  }
+
+  .section-choice {
+    transform: none;
+    left: auto;
+    width: auto;
+    margin: 0 10px;
+  }
+
+  .section-choice__container {
+    margin-bottom: 0;
+  }
+
+  .section-choice__stage {
+    background-size: 47% auto;
+    background-position: right bottom;
+  }
+
+  .section-choice__cta {
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .section-choice__headline {
+    height: 45%;
+    position: absolute;
+    left: 10px;
+    background-position: left center;
+    top: 35px;
+  }
+
+  .template--pages-section_choice {
+    .footer-main {
+      padding-top: 0;
     }
   }
 

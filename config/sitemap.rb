@@ -2,7 +2,8 @@
 host 'www.clarat.org'
 
 sitemap :site do
-  url root_url, last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
+  url section_choice_url,
+      last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
 
   I18n.available_locales.each do |locale|
     url send(:"offers_#{locale}_url", section: :refugees), priority: 0.6

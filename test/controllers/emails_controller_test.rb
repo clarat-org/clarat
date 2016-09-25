@@ -9,7 +9,7 @@ describe EmailsController do
     it 'must work with a correct security code' do
       get :subscribe, id: email.id, security_code: email.security_code,
                       locale: 'de'
-      assert_redirected_to :root
+      assert_redirected_to :section_choice
       assert_equal(
         I18n.t('emails.subscribe.success_html',
                unsubscribe_href:
@@ -30,7 +30,7 @@ describe EmailsController do
     it 'must work with a correct security code' do
       get :unsubscribe, id: email.id, security_code: email.security_code,
                         locale: 'de'
-      assert_redirected_to :root
+      assert_redirected_to :section_choice
       assert_equal(
         I18n.t('emails.unsubscribe.success_html',
                subscribe_href: '/emails/1/subscribe/correct'),

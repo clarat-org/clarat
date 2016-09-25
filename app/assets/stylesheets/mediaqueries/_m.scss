@@ -694,7 +694,6 @@
   }
 
   .Listing-results__orga-display {
-    border-top: 2px solid $brand_grey;
     padding-top: 4px;
   }
 
@@ -758,6 +757,22 @@
       padding-left: 0;
     }
   }
+
+  .section-choice__container {
+    float: none;
+    width: auto;
+    margin-bottom: 2em;
+  }
+
+  .section-choice__headline {
+    height: 100px;
+  }
+
+  .section-choice__cta {
+    height: auto;
+    min-height: 45px;
+  }
+
 
   // Footer ######################################
 

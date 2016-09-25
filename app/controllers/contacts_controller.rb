@@ -11,7 +11,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new params.for(Contact).refine
     if @contact.save
       respond_to do |format|
-        format.html { redirect_to root_path, flash: { success: t('.success') } }
+        format.html do
+          redirect_to section_choice_path, flash: { success: t('.success') }
+        end
         format.js { render :create, layout: 'modal_create' }
       end
     else

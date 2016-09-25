@@ -39,8 +39,8 @@
 
                       .Listing-results__offerinfo.Listing-results__stamp
                         = offer.send("stamp_#{section.identifier}", @current_locale)
-                      - if offer.location && offer.location.visible
-                        .Listing-offers__address
+                      .Listing-offers__address
+                        - if offer.location && offer.location.visible
                           = offer.location_address
 
 

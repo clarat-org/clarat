@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160819135238) do
+ActiveRecord::Schema.define(version: 20160826130459) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "absences", force: true do |t|
+    t.date    "starts_at",                null: false
+    t.date    "ends_at",                  null: false
+    t.integer "user_id",                  null: false
+    t.boolean "sync",      default: true
+  end
+
+  add_index "absences", ["user_id"], name: "index_absences_on_user_id", using: :btree
 
   create_table "areas", force: true do |t|
     t.string   "name",       limit: nil, null: false
@@ -40,6 +49,7 @@ ActiveRecord::Schema.define(version: 20160819135238) do
     t.string   "name_pl",    limit: nil
     t.string   "name_tr",    limit: nil
     t.string   "name_ru",    limit: nil
+    t.string   "name_fa",    limit: nil
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
@@ -235,6 +245,7 @@ ActiveRecord::Schema.define(version: 20160819135238) do
     t.string   "text_ru",    limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "text_fa",    limit: nil
   end
 
   add_index "next_steps", ["text_de"], name: "index_next_steps_on_text_de", using: :btree
@@ -406,6 +417,19 @@ ActiveRecord::Schema.define(version: 20160819135238) do
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree
   add_index "organizations", ["created_at"], name: "index_organizations_on_created_at", using: :btree
 
+  create_table "productivity_goals", force: true do |t|
+    t.string  "title",              limit: nil, null: false
+    t.date    "starts_at",                      null: false
+    t.date    "ends_at",                        null: false
+    t.string  "target_model",       limit: nil, null: false
+    t.integer "target_count",                   null: false
+    t.string  "target_field_name",  limit: nil, null: false
+    t.string  "target_field_value", limit: nil, null: false
+    t.integer "user_team_id",                   null: false
+  end
+
+  add_index "productivity_goals", ["user_team_id"], name: "index_productivity_goals_on_user_team_id", using: :btree
+
   create_table "search_locations", force: true do |t|
     t.string   "query",      limit: nil, null: false
     t.float    "latitude",               null: false
@@ -455,13 +479,20 @@ ActiveRecord::Schema.define(version: 20160819135238) do
   add_index "split_bases", ["solution_category_id"], name: "index_split_bases_on_solution_category_id", using: :btree
 
   create_table "statistics", force: true do |t|
-    t.string  "topic",   limit: 40, null: false
+    t.string  "topic",             limit: nil
     t.integer "user_id"
-    t.date    "x",                  null: false
-    t.integer "y",                  null: false
+    t.date    "date",                                            null: false
+    t.float   "count",                         default: 0.0,     null: false
+    t.integer "user_team_id"
+    t.string  "model",             limit: nil
+    t.string  "field_name",        limit: nil
+    t.string  "field_start_value", limit: nil
+    t.string  "field_end_value",   limit: nil
+    t.string  "time_frame",        limit: nil, default: "daily"
   end
 
   add_index "statistics", ["user_id"], name: "index_statistics_on_user_id", using: :btree
+  add_index "statistics", ["user_team_id"], name: "index_statistics_on_user_team_id", using: :btree
 
   create_table "subscriptions", force: true do |t|
     t.string   "email",      limit: nil
@@ -469,11 +500,33 @@ ActiveRecord::Schema.define(version: 20160819135238) do
     t.datetime "updated_at"
   end
 
+  create_table "time_allocations", force: true do |t|
+    t.integer "user_id",                    null: false
+    t.integer "year",                       null: false
+    t.integer "week_number",      limit: 2, null: false
+    t.integer "desired_wa_hours",           null: false
+    t.integer "actual_wa_hours"
+  end
+
+  add_index "time_allocations", ["user_id"], name: "index_time_allocations_on_user_id", using: :btree
+
   create_table "update_requests", force: true do |t|
     t.string   "search_location", limit: nil, null: false
     t.string   "email",           limit: nil, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "user_team_users", force: true do |t|
+    t.integer "user_team_id"
+    t.integer "user_id"
+  end
+
+  add_index "user_team_users", ["user_id"], name: "index_user_team_users_on_user_id", using: :btree
+  add_index "user_team_users", ["user_team_id"], name: "index_user_team_users_on_user_team_id", using: :btree
+
+  create_table "user_teams", force: true do |t|
+    t.string "name", limit: nil, null: false
   end
 
   create_table "users", force: true do |t|
@@ -487,8 +540,10 @@ ActiveRecord::Schema.define(version: 20160819135238) do
     t.string   "provider",           limit: nil
     t.string   "uid",                limit: nil
     t.string   "name",               limit: nil
+    t.integer  "current_team_id"
   end
 
+  add_index "users", ["current_team_id"], name: "index_users_on_current_team_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
   create_table "versions", force: true do |t|

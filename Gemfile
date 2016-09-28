@@ -7,7 +7,7 @@ gem 'nokogiri', '1.6.7.2' # 1.6.8 doesnt install on some pcs. Remove when fixed
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
+gem 'clarat_base', github: 'clarat-org/clarat_base', branch: 'feature/890-add-farsi-to-locales'
 
 gem 'bundler', '>= 1.8.4'
 

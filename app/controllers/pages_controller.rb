@@ -8,10 +8,10 @@ class PagesController < ApplicationController
 
   def about
     @names = %w(amina andrea anja anna anne astrid basti bettina birte chrissy
-                claudia eleonore elisa esther franziska jacinta jakob janina
-                janne jenny jens jule julia julian juliane karo katinka katja
-                konstantin laura_i laura_w lavinia line lisa marcus michaela
-                nathalie nicole nils philipp sabine stefan tine verena)
+                claudia eleonore elisa esther jakob janina janne jenny jens jule
+                julia julian juliane karo katinka katja laura_i laura_w lavinia
+                line lisa michaela nathalie nicole nils philipp sabine stefan
+                tine verena)
   end
 
   def faq

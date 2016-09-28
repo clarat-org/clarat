@@ -20,10 +20,10 @@ class Clarat.SectionSpeakingWrapper.Presenter extends ActiveScript.Presenter
   handleToggleClicked: =>
     if @content.hasClass 'is-expanded'
       @content.removeClass 'is-expanded'
-      @trigger.text I18n.t('js.lang_list_toggle.more')
+      @trigger.html "<span>" + I18n.t('js.lang_list_toggle.more') + "</span>"
     else
       @content.addClass 'is-expanded'
-      @trigger.text I18n.t('js.lang_list_toggle.less')
+      @trigger.html "<span>" + I18n.t('js.lang_list_toggle.less') + "</span>"
 
 
   ### PRIVATE ###

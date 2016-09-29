@@ -11,14 +11,14 @@ class Clarat.Search.Query.Base
       @categoryArray = if @category then [@category] else []
 
   query_hash: ->
-
+    console.log(@sort_order, @_precisionPerSortOrder())
     _.merge @page_query(),
       query: @query
       params:
         tagFilters: @categoryArray
         facets: '_age_filters,_target_audience_filters,_language_filters'
         facetFilters: @facetFilters
-        aroundPrecision: @BASE_PRECISION
+        aroundPrecision: @_precisionPerSortOrder()
         maxValuesPerFacet: @VALUES_PER_FACET
 
   page_query: ->

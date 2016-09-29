@@ -616,11 +616,15 @@ tr:
         gender: Cinsiyet
         language: Dil
         target_audience: Kim için destek?
+        sort: 
       option_any: fark etmez
       pagination:
         back: geri
         gap: "..."
         next: ileri
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: için
       enclosing: bulundu

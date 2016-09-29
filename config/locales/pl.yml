@@ -740,11 +740,15 @@ pl:
         gender: Płeć
         language: Język
         target_audience: Pomoc dla kogo?
+        sort: 
       option_any: obojętne
       pagination:
         back: Wróć
         gap: "..."
         next: Dalej
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono

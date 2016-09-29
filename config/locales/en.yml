@@ -1009,11 +1009,15 @@ en:
         gender: Gender
         language: Language
         target_audience: For whom?
+        sort: 
       option_any: any
       pagination:
         back: Previous
         gap: "…"
         next: Next
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: for the search term
       enclosing: found

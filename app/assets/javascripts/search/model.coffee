@@ -125,3 +125,17 @@ class Clarat.Search.Model extends ActiveScript.Model
           return a
 
     return null
+
+  getFilters: ->
+    _.merge(@filters, { sort_order: @getSortOrders() })
+
+  getSortOrders: ->
+    [
+      display_name: I18n.t('js.search.sort.nearby')
+      identifier: 'nearby'
+      selected: @sort_order == 'nearby'
+    ,
+      display_name: I18n.t('js.search.sort.relevance')
+      identifier: 'relevance'
+      selected: @sort_order == 'relevance'
+    ]

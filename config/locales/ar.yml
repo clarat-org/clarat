@@ -599,11 +599,15 @@ ar:
         gender: "النوع"
         language: "اللغة"
         target_audience: "المساعدة لمن؟"
+        sort: 
       option_any: "سواء"
       pagination:
         back: "للخلف"
         gap: "..."
         next: "لاحقا"
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: "من أجل"
       enclosing: "تم العثور على"

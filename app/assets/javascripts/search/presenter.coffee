@@ -108,6 +108,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
+    '.JS-SortOrderSelector':
+      change: 'handleSortOrderChange'
     '#advanced_search .JS-AgeSelector':
       change: 'handleFilterChange'
     '#advanced_search .JS-TargetAudienceSelector':
@@ -118,8 +120,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleFilterChange'
     '#advanced_search .JS-EncounterSelector':
       change: 'handleEncounterChange'
-    '#sort_order':
-       change: 'handleSortOrderChange'
 
     ## Radio state handling contact_type
     'input[name=contact_type][value=remote]:checked':
@@ -147,15 +147,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       exact_location: false
     @sendMainSearch()
     @sendLocationSupportSearch() # only needs to be called on new location
-
-
-  handleSortOrderChange: (event) =>
-    requestedSortOrder = $(event.target).val()
-    @model.updateAttributes sort_order: requestedSortOrder
-    console.log "req: ", requestedSortOrder
-    @sendMainSearch()
-    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
-
 
   handleRemoveQueryClick: (event) =>
     @model.updateAttributes query: ''
@@ -202,6 +193,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes "#{field}": val
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleSortOrderChange: (event) =>
+    requestedSortOrder = $(event.target).val()
+    @model.updateAttributes sort_order: requestedSortOrder
+    @sendMainSearch()
+    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
 
   handleEncounterChange: (event) =>
     if $('.JS-EncounterSelector:checked').length is 0

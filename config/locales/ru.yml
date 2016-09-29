@@ -723,11 +723,15 @@ ru:
         gender: "Пол"
         language: "Язык"
         target_audience: "Помощь для кого?"
+        sort: 
       option_any: "все равно"
       pagination:
         back: "Назад"
         gap: "..."
         next: "Дальше"
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: "для"
       enclosing: "найдено"

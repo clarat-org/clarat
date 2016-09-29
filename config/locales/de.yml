@@ -1064,11 +1064,15 @@ de:
         gender: Geschlecht
         language: Sprache
         target_audience: Hilfe für wen?
+        sort: Sortieren nach
       option_any: egal
       pagination:
         back: Zurück
         gap: "…"
         next: Weiter
+      sort:
+        nearby: In der Nähe
+        relevance: Beste Treffer
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1740,6 +1744,7 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    liste: liste
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

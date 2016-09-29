@@ -695,11 +695,15 @@ fr:
         gender: Sexe
         language: Langue
         target_audience: De l'aide pour qui?
+        sort: 
       option_any: "égal"
       pagination:
         back: Retour
         gap: "..."
         next: de nouveau
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé

@@ -21,6 +21,8 @@ class Clarat.Search.Cell.SearchResults
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
     globe_img: image_path('ico_globe.svg')
+    headline_sort_order: I18n.t('js.search.headlines.sort')
+    sort_order: @model.getSortOrders()
 
   personalFocusViewObject: =>
     @mainResults = @resultSet.results[0]

@@ -46,7 +46,7 @@
     height: auto;
     max-width: 100%;
     width: 100%;
-    zoom:1;
+    zoom: 1;
 
     &:before, &:after {
       display: block;
@@ -60,13 +60,13 @@
     }
   }
 
-  .Distributor__advanced-filter-trigger-wrapper {
-    position: absolute;
-    right: 0;
-  }
+  //.Distributor__advanced-filter-trigger-wrapper {
+  //  position: absolute;
+  //  right: 0;
+  //}
 
   .search-form--input-wrapper {
-    right: 60px;
+    right: 80px;
 
     body.ar & {
       left: 60px;
@@ -100,7 +100,6 @@
         max-width: none;
       }
     }
-
 
     .template--pages-home & {
       max-width: 655px;
@@ -242,7 +241,7 @@
       padding-right: 60%;
     }
   }
-  
+
   .filter-form {
     .col-form-wrapper {
       display: block;
@@ -276,6 +275,14 @@
 
   .section-choice__headline {
     background-size: auto 80%;
+  }
+  
+  .result-order__label {
+    display: none;
+  }
+
+  .result-order__select {
+    font-size: 13px;
   }
 
   // Footer ######################################

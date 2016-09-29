@@ -11,7 +11,7 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   handleClick: (event) =>
     event.preventDefault()
-    @_toggleState()
+    @_toggleState(event)
     $(document).trigger 'Clarat.ToggleAdvancedSearch::Toggle'
 
   # show advanced search if a filter was used
@@ -21,12 +21,15 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   ### Private Methods (ue) ###
 
-  _toggleState: ->
+  _toggleState: (event) ->
     form = $('.filter-form')
     trigger = $('.main-search__advanced-filter')
     visibleClass = 'is-visible'
     formMoreLabel = I18n.t('js.search.form_more_label')
     formLessLabel = I18n.t('js.search.form_less_label')
+
+    $(event.target).attr 'aria-expanded', (i, attr) ->
+      if attr == 'true' then 'false' else 'true'
 
     if form.hasClass visibleClass
       form.removeClass visibleClass

@@ -642,6 +642,8 @@ ar:
         category_query: 
         default: 
       show_personal: "عرض عروض مكانية أكثر"
+      personal_anchor: 
+      remote_anchor: 
     shared:
       current_and_original_locale:
         "'150'": "لغة الإشارة الألمانية"

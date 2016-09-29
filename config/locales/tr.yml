@@ -659,6 +659,8 @@ tr:
         category_query: 
         default: 
       show_personal: Yerel hizmetleri göster
+      personal_anchor: 
+      remote_anchor: 
     shared:
       current_and_original_locale:
         "'150'": Almanca işaret dili

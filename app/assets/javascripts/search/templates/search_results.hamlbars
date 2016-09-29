@@ -7,10 +7,12 @@
   /     %option{value: 'sort_order_nearby', id: 'sort_order_sort_order_nearby'} Angebote in deiner Nähe
 
 %ul.Type-results
-  %li.Type-results__item.Type-results__item--active
-    %a.Type-results__link{href: '#'} Vor Ort (12)
-  %li.Type-results__item
-    %a.Type-results__link{href: '#'} Online und Telefon (0)
+  %li.Type-results__item{class: '{{personalActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToPersonal{href: '{{switch_href}}'}
+      = hb 'personal_anchor'
+  %li.Type-results__item{class: '{{remoteActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToRemote{href: '{{switch_href}}'}
+      = hb 'remote_anchor'
 
 .search-string
   = hb! 'main_results_query'

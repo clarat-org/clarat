@@ -1131,6 +1131,14 @@ de:
           other: "%{count} Telefonberatungen und Onlineangebote"
           zero: Keine Telefonberatungen und Onlineangebote
       show_personal: Zeige lokale Angebote
+      personal_anchor:
+        other: Vor Ort (%{count})
+        content_item: '{"description"=>"Vor Ort (%{count})"}'
+        one: Vor Ort (%{count})
+      remote_anchor:
+        other: Online und Telefon (%{count})
+        content_item: '{"description"=>"Online und Telefon (%{count})"}'
+        one: Online und Telefon (%{count})
     shared:
       current_and_original_locale:
         "'150'": Deutsche Gebärdensprache

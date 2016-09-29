@@ -6,3 +6,6 @@ fa:
       sort:
         nearby: 
         relevance: 
+    search_results:
+      personal_anchor: 
+      remote_anchor: 

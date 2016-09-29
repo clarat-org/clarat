@@ -103,8 +103,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
-    '.JS-ToggleContactType':
-      click: 'handleToggleContactTypeClick'
+    '.JS-SwitchToRemote':
+      click: 'handleClickToRemote'
+    '.JS-SwitchToPersonal':
+      click: 'handleClickToPersonal'
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
@@ -169,13 +171,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @stopEvent event
 
-  handleToggleContactTypeClick: (event) =>
-    if @model.isPersonal()
-      @handleChangeToRemote()
-    else
-      @handleChangeToPersonal()
-    @stopEvent event
-
   handlePaginationClick: (event) =>
     changes =
       page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
@@ -216,6 +211,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @sendQuerySupportSearch()
 
+  handleClickToPersonal: (event) =>
+    @stopEvent event
+    @handleChangeToPersonal()
+
   # disable and check all remote checkboxes, model has every encounter again
   handleChangeToPersonal: =>
     @model.contact_type = 'personal'
@@ -233,6 +232,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleClickToRemote: (event) =>
+    @stopEvent event
+    @handleChangeToRemote()
 
   handleChangeToRemote: =>
     @model.updateAttributes contact_type: 'remote'

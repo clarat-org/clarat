@@ -1052,6 +1052,8 @@ en:
         category_query: 
         default: 
       show_personal: Show local offers
+      personal_anchor: 
+      remote_anchor: 
     shared:
       current_and_original_locale:
         "'150'": German Sign Language - Deutsche Gebärdensprache

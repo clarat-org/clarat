@@ -768,6 +768,8 @@ ru:
         category_query: 
         default: 
       show_personal: "Показать предложения на месте"
+      personal_anchor: 
+      remote_anchor: 
     shared:
       current_and_original_locale:
         "'150'": "Немецкий язык жестов"

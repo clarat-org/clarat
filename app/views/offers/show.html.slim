@@ -18,16 +18,14 @@
 
     / Left side (in desktop)
     .section-wrapper-major
-      - cache [@offer, 'general_info'] do
-
-        / What's it all about?
-        section.section-content.section-content--what
-          h3.section-content__title
-            = t '.what.heading'
-            == automation_warning @offer.translation_automated?
-          .section-content__body
-            == translation_block @offer.translation_automated? do
-              == @offer.description
+      / What's it all about?
+      section.section-content.section-content--what
+        h3.section-content__title
+          = t '.what.heading'
+          == automation_warning @offer.translation_automated?
+        .section-content__body
+          == translation_block @offer.translation_automated? do
+            == @offer.description
 
       / What to do next?
       = render 'offers/show/next_steps', offer: @offer
@@ -76,10 +74,10 @@
               #big-map
                 button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,
-                                               markers: @markers
+                                                 markers: @markers
 
           ul.Listing-organizations__list
-            - @offer.organizations.each do |orga|
+            - @offer.organizations.order(:name).each do |orga|
               li.Listing-organizations__link
                 = link_to orga.name, organization_path(id: orga)
 

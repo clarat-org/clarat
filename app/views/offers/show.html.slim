@@ -83,8 +83,7 @@
 
       / When can you contact?
       - if @offer.opening_details?
-        - cache [@offer, 'openings', @offer.openings.pluck(:id).join(',')] do
-          = render 'offers/show/opening_section', offer: @offer
+        = render 'offers/show/opening_section', offer: @offer
 
       / Last update?
       p

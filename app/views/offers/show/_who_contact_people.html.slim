@@ -3,7 +3,7 @@ ul.section-content--contact-person-list
   - offer_contacts = offer.contact_people.order('last_name DESC')
   - offer_contacts.each_with_index do |contact, index|
     - if !offer.hide_contact_people || contact.spoc
-      - cache [offer, contact] do
+      - cache [offer, contact, index] do
         li
           / TODO: Refactor (Move to model)
           - if contact.last_name?

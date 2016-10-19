@@ -1,7 +1,7 @@
 .nav-lang {
-  @extend %clearfix;
-  background-color: $brand_blue;
-  color: $brand_white;
+  display: inline-block;
+  float: right;
+  color: $brand_coal;
   font-size: 15px;
   min-height: 44px;
 
@@ -45,12 +45,15 @@
 }
 
 a.nav-lang__google {
-  position: absolute;
-  top: 7px;
-  right: 10px;
+  float: right;
   width: 60px;
   height: auto;
-  margin: 0;
+  margin: 8px 20px 4px;
+
+  img {
+    width: inherit;
+    height: auto;
+  }
 }
 
 button.nav-lang__button {
@@ -58,7 +61,7 @@ button.nav-lang__button {
   width: 25px;
   height: 25px;
   float: left;
-  margin: 8px 0;
+  margin: 11px 0 8px;
   cursor: default;
 
   body.family &,
@@ -72,8 +75,9 @@ button.nav-lang__button {
 }
 
 .nav-lang__list {
+  float: left;
   margin: 0;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 10px;
   list-style: none;
   line-height: 44px;
 
@@ -90,7 +94,8 @@ button.nav-lang__button {
   position: absolute;
   top: 44px;
   z-index: 400;
-  background: $brand_blue;
+  background: $brand_coal;
+  color: white;
   padding: 4px 0 10px;
 
   li {

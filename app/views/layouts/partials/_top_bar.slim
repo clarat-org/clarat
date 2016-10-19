@@ -1,0 +1,23 @@
+.top-bar
+    .top-bar__container
+      / @Todo: Routes, Locale App labels:
+      a.top-bar__world-link[href="#"] ‹ zurück zu XXXXXX
+      .top-bar__world-select
+        button.top-bar__world-select-button#top-bar__world-select-button[aria-label="Switch to other clarat section" aria-expanded="false"]
+        .top-bar__world-select-overlay[aria-hidden="true"]
+          ul.top-bar__world-list
+            li.top-bar__world-list-item.top-bar__world-list-item--otherworld
+              a[href="#"] zu XXXXXXX wechseln
+            li.top-bar__world-list-item.top-bar__world-list-item--worldhome
+              a[href="#"] zur YYYYYY Startseite
+
+      .nav-lang
+        button.nav-lang__button[aria-label="Switch language"]
+        ul.nav-lang__list
+          - I18n.available_locales.each do |locale|
+            - active = I18n.locale == locale ? 'nav-lang__listitem--active' : ''
+            li = link_to t(".languages.#{locale}"), {locale: locale.to_s}, class: active
+        = link_to 'http://translate.google.com', target: '_blank',
+                                                 class: 'nav-lang__google' do
+          = image_tag 'banner--translated-by-google.svg',
+                      alt: 'Translated by Google'

@@ -1,0 +1,190 @@
+.top-bar {
+  @extend %clearfix;
+  border-bottom: 2px solid transparent;
+  background-color: white;
+
+  body.family & {
+    border-color: $brand_core_family;
+  }
+
+  body.refugees & {
+    border-color: $brand_core_refugees;
+  }
+}
+
+.top-bar__world-link {
+  @extend %roboto_bold;
+  float: left;
+  text-decoration: none;
+  line-height: 48px;
+  padding-left: 20px;
+
+  body.family & {
+    color: $brand_core_refugees;
+  }
+
+  body.refugees & {
+    color: $brand_core_family;
+  }
+}
+
+.top-bar__world-select-overlay {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  left: 0;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  &[aria-hidden="false"] {
+    display: block;
+  }
+}
+
+.top-bar__world-select-button {
+  display: none; // visible at breakpoint s
+  float: left;
+  height: 44px;
+  width: 180px;
+  background-color: transparent !important;
+  background: no-repeat 10px center;
+  background-size: auto 38px;
+
+  .template--pages-section_choice & {
+    display: none;
+  }
+
+  body.family & {
+    background-image: image-url('logo-btn-family--collapsed.svg');
+
+    &[aria-expanded="true"] {
+      background-image: image-url('logo-btn-family--expanded.svg');
+    }
+  }
+
+  body.refugees & {
+    background-image: image-url('logo-btn-refugees--collapsed.svg');
+
+    &[aria-expanded="true"] {
+      background-image: image-url('logo-btn-refugees--expanded.svg');
+    }
+  }
+}
+
+.top-bar__world-list {
+  z-index: 40000 !important;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+    line-height: 48px;
+  }
+}
+
+.top-bar__world-list-item {
+  font-size: 16px;
+  height: 48px;
+}
+
+.top-bar__world-list-item--otherworld {
+  body.refugees & {
+    background-color: $brand_core_family;
+  }
+
+  body.family & {
+    background-color: $brand_core_refugees;
+  }
+}
+
+.top-bar__world-list-item--worldhome {
+  body.refugees & {
+    background-color: $brand_core_refugees;
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+  }
+}
+
+//.nav-lang {
+//  color: $brand_white;
+//  font-size: 15px;
+//
+//  a {
+//    color: inherit;
+//    text-decoration: none;
+//    margin: 0 9px;
+//  }
+//}
+//
+//
+//
+//a.nav-lang__google {
+//  position: absolute;
+//  top: 7px;
+//  right: 10px;
+//  width: 60px;
+//  height: auto;
+//  margin: 0;
+//}
+//
+//button.nav-lang__button {
+//  background: image-url('ico_weltkugel.svg') no-repeat left center;
+//  width: 25px;
+//  height: 25px;
+//  float: left;
+//  margin: 8px 0;
+//  cursor: default;
+//
+//  body.family &,
+//  body.refugees & {
+//    background-color: transparent;
+//  }
+//}
+//
+//.nav-lang__languages {
+//  float: right;
+//}
+//
+//.nav-lang__list {
+//  margin: 0;
+//  padding: 0 0 0 30px;
+//  list-style: none;
+//  line-height: 44px;
+//
+//  li {
+//    margin: 0;
+//    padding: 0;
+//    float: left;
+//  }
+//
+//}
+//
+//.nav-lang__list--vertical {
+//  display: block !important; // override JS
+//  position: absolute;
+//  top: 44px;
+//  z-index: 400;
+//  background: $brand_blue;
+//  padding: 4px 0 10px;
+//
+//  li {
+//    float: none;
+//    padding: 0 11px;
+//    line-height: 30px;
+//  }
+//}
+//
+//.nav-lang__listitem--active {
+//  @extend %roboto_black;
+//
+//  body.ru & {
+//    font-weight: 700;
+//  }
+//}

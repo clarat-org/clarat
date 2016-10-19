@@ -83,6 +83,7 @@ about supported directives.
 # = require sticky_sidebar/presenter
 #
 # = require single_click_button/presenter
+# = require handle_mobile_layout/presenter
 # = require enhance_listing_results/presenter
 # = require sticky_mobile_nav/presenter
 # = require welcome_tooltips/presenter

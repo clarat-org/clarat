@@ -10,26 +10,31 @@ class Clarat.HandleMobileLayout.Presenter extends ActiveScript.Presenter
       click: 'handleWorldSelectOverlay'
 
   init: () =>
-    console.log "init called"
 
     if $('body.template--offers-index').length
       @repositionElements()
 
   repositionElements: () =>
 
+    console.log "repositionElements fired"
+
     if ($(window).width() > 750)
 
-      console.log "original place select"
+      console.log "> 750"
+
       $('.aside-standard__container').appendTo $('.aside-standard')
       $('#map-container').trigger 'Clarat.GMaps::Resize'
 
+      $('.result-orders').prependTo $('.Listing-results')
+
     else
 
-      console.log "new place select"
+      console.log "< 750"
+
       $('.aside-standard__container').appendTo $('#tab_map')
       $('#map-container').trigger 'Clarat.GMaps::Resize'
 
-# console.log $('.result-order')
+      $('.result-order').prependTo $('.filter-form')
 
   handleWorldSelectOverlay: (e) =>
 

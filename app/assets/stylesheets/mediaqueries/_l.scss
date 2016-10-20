@@ -276,13 +276,15 @@
   .section-choice__headline {
     background-size: auto 80%;
   }
-  
-  .result-order__label {
-    display: none;
-  }
 
-  .result-order__select {
-    font-size: 13px;
+  .Listing-results {
+    .result-order__label {
+      display: none;
+    }
+
+    .result-order__select {
+      font-size: 13px;
+    }
   }
 
   // Footer ######################################

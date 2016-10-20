@@ -20,16 +20,12 @@ class Clarat.HandleMobileLayout.Presenter extends ActiveScript.Presenter
 
     if ($(window).width() > 750)
 
-      console.log "> 750"
-
       $('.aside-standard__container').appendTo $('.aside-standard')
       $('#map-container').trigger 'Clarat.GMaps::Resize'
 
       $('.result-orders').prependTo $('.Listing-results')
 
     else
-
-      console.log "< 750"
 
       $('.aside-standard__container').appendTo $('#tab_map')
       $('#map-container').trigger 'Clarat.GMaps::Resize'

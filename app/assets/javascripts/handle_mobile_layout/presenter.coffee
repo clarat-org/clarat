@@ -4,26 +4,32 @@ class Clarat.HandleMobileLayout.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     window:
       resize: 'init'
-      load: 'init'
+    document:
+      'Clarat.Search::NewResults': 'init'
     '#top-bar__world-select-button':
       click: 'handleWorldSelectOverlay'
 
   init: () =>
+    console.log "init called"
 
-    if $('.template--offers-index').length
-      @repositionSelect()
+    if $('body.template--offers-index').length
+      @repositionElements()
 
-  repositionSelect: () =>
+  repositionElements: () =>
 
     if ($(window).width() > 750)
 
       console.log "original place select"
-#      console.log $('.result-order')
+      $('.aside-standard__container').appendTo $('.aside-standard')
+      $('#map-container').trigger 'Clarat.GMaps::Resize'
 
     else
 
       console.log "new place select"
-#      console.log $('.result-order')
+      $('.aside-standard__container').appendTo $('#tab_map')
+      $('#map-container').trigger 'Clarat.GMaps::Resize'
+
+# console.log $('.result-order')
 
   handleWorldSelectOverlay: (e) =>
 

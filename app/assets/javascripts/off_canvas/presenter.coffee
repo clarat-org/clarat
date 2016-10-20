@@ -41,12 +41,9 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
       $offCanvasContainer = $('#off-canvas-container')
       $tabFilter = $offCanvasContainer.find('#tab_filter')
       $tabCategories = $offCanvasContainer.find('#tab_categories')
-      $tabMap = $offCanvasContainer.find('#tab_map')
       $advancedSearch = $('#advanced_search')
       $categories = $('#categories')
-      $map = $('#map-container')
       $asideStandard = $('.aside-standard:first')
-      $asideStandardMap = $('.aside-standard:eq(1)')
       $listingResults = $('.Listing-results:first')
 
       if $(window).width() < 750
@@ -54,15 +51,13 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
         $categories.appendTo $tabCategories
         # Put $advancedSearch in offcanvascontainer
         $advancedSearch.appendTo $tabFilter
-        # Put $advancedSearch in mapcontainer
-        $map.appendTo $tabMap
+
       else
         # Put categories in aside
         $categories.prependTo $asideStandard
         # Put $advancedSearch above Listing-results
         $advancedSearch.insertBefore $listingResults
-        # Put categories in aside
-        $map.prependTo $asideStandardMap
+
       return
     ), 50, this)
 

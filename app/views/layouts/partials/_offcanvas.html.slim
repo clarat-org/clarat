@@ -5,7 +5,12 @@
     button.off-canvas-container__close.off-canvas-container__trigger aria-label="Close" ×
   .off-canvas-container__content
     ul.tablist role="tablist"
+      / TodoBeforePR: label i18n
       li#tab1.tablist__tab.is-active aria-controls="tab_filter" aria-selected="true" role="tab" tabindex="0"  Filter
+      / TodoBeforePR: label i18n
       li#tab2.tablist__tab aria-controls="tab_categories" aria-selected="false" role="tab" tabindex="0"  Kategorien
+      / TodoBeforePR: label i18n
+      li#tab3.tablist__tab aria-controls="tab_map" aria-selected="false" role="tab" tabindex="0"  Karte
     #tab_filter.tablist__panel aria-hidden="false" aria-labelledby="tab1" role="tabpanel"
     #tab_categories.tablist__panel.is-hidden aria-hidden="true" aria-labelledby="tab2" role="tabpanel"
+    #tab_map.tablist__panel.is-hidden aria-hidden="true" aria-labelledby="tab3" role="tabpanel"

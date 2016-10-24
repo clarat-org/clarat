@@ -542,6 +542,10 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: 
+        dyu: 
+        man: 
+        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -730,6 +734,10 @@ tr:
         wol: Wolof - wɔlɔf
         zho: "Çince - 普通话 / 普通話"
         zza: Zazaca - Zazaki / Kırmancki
+        bam: Bambara - Bamanankan
+        dyu: Jula - Julakan
+        man: Maninka - Maninka
+        slv: Slovence - Slovenščina
     single_search_result:
       encounters:
         chat: Sohbet
@@ -797,6 +805,15 @@ tr:
           main: Yardım bul
           refugees: |
             Mülteciler için yardım çeşitleri
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

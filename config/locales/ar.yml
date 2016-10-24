@@ -56,7 +56,7 @@ ar:
             var: link_to_family_movie
           question: "ما هي كلارات؟"
         question_10:
-          answer: "تمويل <b>كلارات الأسرة</b> و<b>كلارات للاجئين</b> يأتي في الأساس من %{link_to_bsz}. إلا أننا نود في المستقبل جلب مزيد من الموردين."
+          answer: "تمويل <b>clarat family</b> و<b>clarat refugees</b> يأتي في الأساس من %{link_to_bsz}. إلا أننا نود في المستقبل جلب مزيد من الموردين."
           link_1:
             name: "مؤسسة بتكيزير المستقبل"
             target: blank_
@@ -528,6 +528,10 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: 
+        dyu: 
+        man: 
+        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -713,6 +717,10 @@ ar:
         wol: "لغة ولوفية - wɔlɔf"
         zho: "لغة صينية - 普通话 / 普通話"
         zza: "لغة زازاكية - Zazaki / Kırmancki"
+        bam: Bambara - Bamanankan
+        dyu: Jula - Julakan
+        man: Maninka - Maninka
+        slv: Slowenisch - Slovenščina
     single_search_result:
       encounters:
         chat: "دردشة"
@@ -783,6 +791,15 @@ ar:
           main: "الحصول على المساعدة ببساطة"
           refugees: |
             عروض دعم للآجئين
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

@@ -648,6 +648,10 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: 
+        dyu: 
+        man: 
+        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -839,6 +843,10 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
+        bam: "Бамана́ - Bamanankan"
+        dyu: "Дьюла - Julakan"
+        man: Maninka - Maninka
+        slv: "Словенский язык - Slovenščina"
     single_search_result:
       encounters:
         chat: "Чат"
@@ -904,6 +912,15 @@ ru:
           main: "Просто найти помощь"
           refugees: |
             Предложения о помощи для беженцев
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

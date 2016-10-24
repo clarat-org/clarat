@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20160826130459) do
     t.string   "name_pl",    limit: nil
     t.string   "name_tr",    limit: nil
     t.string   "name_ru",    limit: nil
-    t.string   "name_fa",    limit: nil
+    t.string   "name_fa"
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
@@ -245,7 +245,7 @@ ActiveRecord::Schema.define(version: 20160826130459) do
     t.string   "text_ru",    limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "text_fa",    limit: nil
+    t.string   "text_fa"
   end
 
   add_index "next_steps", ["text_de"], name: "index_next_steps_on_text_de", using: :btree

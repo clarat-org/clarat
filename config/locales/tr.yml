@@ -480,6 +480,7 @@ tr:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -489,6 +490,7 @@ tr:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -509,6 +511,7 @@ tr:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -520,6 +523,7 @@ tr:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -615,12 +619,16 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
+        sort: 
         target_audience: Kim için destek?
       option_any: fark etmez
       pagination:
         back: geri
         gap: "..."
         next: ileri
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: için
       enclosing: bulundu
@@ -636,6 +644,7 @@ tr:
       more: Daha fazla telefon ve online hizmetler
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: 
       personal_offers:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
@@ -645,6 +654,7 @@ tr:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
@@ -668,6 +678,7 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         aze: Azerice - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
         bel: Beyaz Rusça - беларуская мова
         ben: Bengalce - বাংলা
@@ -677,6 +688,7 @@ tr:
         cpe: Kamtok - Pidgin
         cze: "Çekçe - čeština"
         deu: Almanca - Deutsch
+        dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
         eng: "İngilizce - English"
         ewo: Ewondo - Ewondo
@@ -697,6 +709,7 @@ tr:
         lit: Litvanca - lietuvių
         ltz: Lüksemburgca - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Makedonca - македонски
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
@@ -708,6 +721,7 @@ tr:
         rus: Rusça - русский
         skr: Sırp-Hırvatça - српскохрватски / hrvatskosrpski
         slo: Slovakça - slovenský jazyk
+        slv: Slovence - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somalice - Soomaali
         spa: "İspanyolca - español"
@@ -797,6 +811,15 @@ tr:
           main: Yardım bul
           refugees: |
             Mülteciler için yardım çeşitleri
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

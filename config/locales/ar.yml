@@ -56,7 +56,7 @@ ar:
             var: link_to_family_movie
           question: "ما هي كلارات؟"
         question_10:
-          answer: "تمويل <b>كلارات الأسرة</b> و<b>كلارات للاجئين</b> يأتي في الأساس من %{link_to_bsz}. إلا أننا نود في المستقبل جلب مزيد من الموردين."
+          answer: "تمويل <b>clarat family</b> و<b>clarat refugees</b> يأتي في الأساس من %{link_to_bsz}. إلا أننا نود في المستقبل جلب مزيد من الموردين."
           link_1:
             name: "مؤسسة بتكيزير المستقبل"
             target: blank_
@@ -466,6 +466,7 @@ ar:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -475,6 +476,7 @@ ar:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -495,6 +497,7 @@ ar:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -506,6 +509,7 @@ ar:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -598,12 +602,16 @@ ar:
         approach: "بأي طريقة؟"
         gender: "النوع"
         language: "اللغة"
+        sort: 
         target_audience: "المساعدة لمن؟"
       option_any: "سواء"
       pagination:
         back: "للخلف"
         gap: "..."
         next: "لاحقا"
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: "من أجل"
       enclosing: "تم العثور على"
@@ -619,6 +627,7 @@ ar:
       more: "عروض أخرى عن طريق التليفون أو الأنترنت"
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: 
       personal_offers:
         one: "عرض محلي"
         other: "%{count} عروض محلية"
@@ -628,6 +637,7 @@ ar:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         one: " استشارة  هاتفية أو عرض مساعدة عن طريق الإنترنت"
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
@@ -651,6 +661,7 @@ ar:
         amh: "لغة أمهرية - አማርኛ"
         ara: " لغة عربية - عربي"
         aze: "لغة أذرية - Azərbaycan"
+        bam: Bambara - Bamanankan
         ban: "لغة بالية - Basa Bali"
         bel: "لغة بيلاروسية - беларуская мова"
         ben: " لغة بنغالية - বাংলা"
@@ -660,6 +671,7 @@ ar:
         cpe: Kamtok - Pidgin
         cze: "لغة تشيكية - čeština"
         deu: "لغة ألمانية - Deutsch"
+        dyu: Jula - Julakan
         ell: "لغة يونانية - ελληνικά"
         eng: "لغة إنجليزية - English"
         ewo: Ewondo - Ewondo
@@ -680,6 +692,7 @@ ar:
         lit: "لغة ليتوانية - lietuvių"
         ltz: "لغة لوكسمبورغية - Lëtzebuergesch"
         luo: "لوو - Dholuo"
+        man: Maninka - Maninka
         mkd: "لغة مقدونية - македонски"
         mul: "لغات أخرى عند الطلب"
         nor: "لغة نرويجية - Norsk"
@@ -691,6 +704,7 @@ ar:
         rus: "لغة روسية - русский"
         skr: "لغة صربية كرواتية - српскохрватски / hrvatskosrpski"
         slo: "لغة سلوفاكية - slovenský jazyk"
+        slv: Slowenisch - Slovenščina
         snk: "لغة سوننكية - Soninkanxaane"
         som: "لغة صومالية - Soomaali"
         spa: "لغة إسبانية - español"
@@ -783,6 +797,15 @@ ar:
           main: "الحصول على المساعدة ببساطة"
           refugees: |
             عروض دعم للآجئين
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

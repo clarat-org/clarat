@@ -223,14 +223,14 @@ de:
             Zum Beispiel Erzieher, Lehrer oder Nachbarn und Bekannte.
           question: Wer findet bei clarat Hilfe?
         question_10:
-          answer: |
+          answer: |-
             Das kann verschiedene Gründe haben.
             <p>
             <ul>
             <li>
             Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
             mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
-            versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
+            versuche über die Bilder zu suchen. Das heißt bei claratSuche nach
             Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
             diese Suche funktioniert.
             </li>
@@ -927,6 +927,7 @@ de:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -936,6 +937,7 @@ de:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -956,6 +958,7 @@ de:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -967,6 +970,7 @@ de:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -989,10 +993,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: Bam
-        dyu: Dyu
-        man: Man
-        slv: Slv
       section:
         family: Family
         refugees: Refugees
@@ -1067,12 +1067,16 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        sort: Sortieren nach
         target_audience: Hilfe für wen?
       option_any: egal
       pagination:
         back: Zurück
         gap: "…"
         next: Weiter
+      sort:
+        nearby: In der Nähe
+        relevance: Beste Treffer
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1088,6 +1092,10 @@ de:
       more: Weitere Telefon- und Onlineangebote
       off_canvas:
         result_text: "%{result_count} Suchergebnisse anzeigen"
+      personal_anchor:
+        content_item: '{"description"=>"Vor Ort (%{count})"}'
+        one: Vor Ort (%{count})
+        other: Vor Ort (%{count})
       personal_offers:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
@@ -1109,6 +1117,10 @@ de:
           one: Ein Angebot vor Ort (%{location}) gefunden
           other: "%{count} Angebote vor Ort (%{location}) gefunden"
           zero: Leider keine Angebote vor Ort (%{location}) gefunden
+      remote_anchor:
+        content_item: '{"description"=>"Online und Telefon (%{count})"}'
+        one: Online und Telefon (%{count})
+        other: Online und Telefon (%{count})
       remote_offers:
         one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
@@ -1144,6 +1156,7 @@ de:
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         aze: Aserbaidschanisch - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Balinesisch - Basa Bali
         bel: Weißrussisch - беларуская мова
         ben: Bengalisch - বাংলা
@@ -1153,6 +1166,7 @@ de:
         cpe: Kamtok - Pidgin
         cze: Tschechisch - čeština
         deu: Deutsch
+        dyu: Dioula - Julakan
         ell: Griechisch - ελληνικά
         eng: Englisch - English
         ewo: Ewondo - Ewondo
@@ -1173,6 +1187,7 @@ de:
         lit: Litauisch - lietuvių
         ltz: Luxemburgisch - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Mazedonisch - македонски
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
@@ -1184,6 +1199,7 @@ de:
         rus: Russisch - русский
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
         slo: Slowakisch - slovenský jazyk
+        slv: Slowenisch - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
         spa: Spanisch - español
@@ -1274,6 +1290,15 @@ de:
           family: Unterstützungsangebote für Kinder, Jugendliche und Familien
           main: Einfach Hilfe finden
           refugees: Unterstützungsangebote für Flüchtlinge
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:
@@ -1449,7 +1474,7 @@ de:
         Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
         Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
         ist All You Need von Sublime.
-      juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
+      juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine kreative Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
       karo: Hat Europawissenschaften studiert. Das heißt, sie weiß viel über europäische Politik. Sie kann gut organisieren. Bei clarat ist sie im Research-Team. Und sie kümmert sich um unser Handbuch. Ihr Lieblingssong ist Alive von Pearl Jam.
       katinka: Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle von Menschen verstehen. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer alles clarat nutzt. Ihr Lieblingssong ist The Greatest von Cat Power.
       katja: Ist Germanistin. Sie kennt sich gut mit komplizierten Texten aus. Und mit der deutschen Sprache. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Mysteries von Beth Gibbons.

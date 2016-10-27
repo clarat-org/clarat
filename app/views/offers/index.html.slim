@@ -1,7 +1,6 @@
 - content_for :canonical_url, request.url
 #search-wrapper.wrapper-inner.jsonly
   main.content-main
-
     = render 'offers/index/pending_ajax'
 
 noscript.NoScript
@@ -10,9 +9,10 @@ noscript.NoScript
 
 / Inform JS…
 / …about the category structure
-#category-tree(
-  data={structure: render('offers/index/categories_nest.json', section: @current_section, set: @category_tree, depth: 0)}
-)
+- cache ['categories_nest', @current_section, @category_tree.length] do
+  #category-tree(
+    data={structure: render('offers/index/categories_nest.json', section: @current_section, set: @category_tree, depth: 0)}
+  )
 / …about the filter structure
 #filters(
   data={structure: render('offers/index/filters.json')}

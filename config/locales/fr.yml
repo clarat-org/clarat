@@ -624,6 +624,10 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: 
+        dyu: 
+        man: 
+        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -810,6 +814,10 @@ fr:
         zho: Langues chinoises - 普通话 / 普通話
         zza: |
           Zazaki - Zazaki / Kırmancki
+        bam: bambara - bamanankan
+        dyu: dioula - julakan
+        man: Maninka - Maninka
+        slv: slovène - slovenščina
     single_search_result:
       encounters:
         chat: discussion en ligne
@@ -868,6 +876,15 @@ fr:
           family: Offres d'aide pour les enfants, les ados et les familles
           main: Trouver simplement de l'aide
           refugees: Offres d'aide pour les réfugiés
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f90286ff0e06994203b668452f9b45140ac7a258
+  revision: ca150a9a2706fff9710ebb5b9ea163ce8e348532
   specs:
     clarat_base (0.1.4)
       aasm
@@ -128,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.1.0)
+    closure_tree (6.2.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (2.0.0)
+    enumerize (2.0.1)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -647,5 +647,8 @@ DEPENDENCIES
   virtus
   webmock
 
+RUBY VERSION
+   ruby 2.2.2p95
+
 BUNDLED WITH
-   1.11.2
+   1.13.3

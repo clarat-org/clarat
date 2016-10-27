@@ -223,14 +223,14 @@ de:
             Zum Beispiel Erzieher, Lehrer oder Nachbarn und Bekannte.
           question: Wer findet bei clarat Hilfe?
         question_10:
-          answer: |
+          answer: |-
             Das kann verschiedene Gründe haben.
             <p>
             <ul>
             <li>
             Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
             mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
-            versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
+            versuche über die Bilder zu suchen. Das heißt bei claratSuche nach
             Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
             diese Suche funktioniert.
             </li>
@@ -989,6 +989,10 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: Bam
+        dyu: Dyu
+        man: Man
+        slv: Slv
       section:
         family: Family
         refugees: Refugees
@@ -1202,6 +1206,10 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        bam: Bambara - Bamanankan
+        dyu: Dioula - Julakan
+        man: Maninka - Maninka
+        slv: Slowenisch - Slovenščina
     single_search_result:
       encounters:
         chat: Chat
@@ -1270,6 +1278,15 @@ de:
           family: Unterstützungsangebote für Kinder, Jugendliche und Familien
           main: Einfach Hilfe finden
           refugees: Unterstützungsangebote für Flüchtlinge
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:
@@ -1445,7 +1462,7 @@ de:
         Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
         Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
         ist All You Need von Sublime.
-      juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
+      juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine kreative Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
       karo: Hat Europawissenschaften studiert. Das heißt, sie weiß viel über europäische Politik. Sie kann gut organisieren. Bei clarat ist sie im Research-Team. Und sie kümmert sich um unser Handbuch. Ihr Lieblingssong ist Alive von Pearl Jam.
       katinka: Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle von Menschen verstehen. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer alles clarat nutzt. Ihr Lieblingssong ist The Greatest von Cat Power.
       katja: Ist Germanistin. Sie kennt sich gut mit komplizierten Texten aus. Und mit der deutschen Sprache. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Mysteries von Beth Gibbons.

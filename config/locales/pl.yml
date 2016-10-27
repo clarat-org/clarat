@@ -669,6 +669,10 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        bam: 
+        dyu: 
+        man: 
+        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -856,6 +860,10 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+        bam: Język bambara - Bamanankan
+        dyu: Język diula - julakan
+        man: Maninka - Maninka
+        slv: Język słoweński - Slovenščina
     single_search_result:
       encounters:
         chat: chat
@@ -914,6 +922,15 @@ pl:
           family: Oferty wsparcia dla dzieci, młodzieży i rodzin
           main: Proste szukanie pomocy
           refugees: Oferty wsparcia dla uchodźców
+      top_bar:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
   offers:
     index:
       filters:

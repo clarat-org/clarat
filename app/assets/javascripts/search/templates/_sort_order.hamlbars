@@ -1,0 +1,12 @@
+%fieldset.filter-form__fieldset.sort_order
+  %legend.filter-form__fieldset__headline
+    = hb '@root.headline_sort_order'
+  %div.filter-form__fieldset__wrapper
+    %select.JS-SortOrderSelector.filter-form__select{name: 'sort_order'}
+      = hb 'each sort_order' do
+        = hb 'if selected' do
+          %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}', selected: 'selected'}
+            = hb 'display_name'
+          = hb 'else'
+          %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}'}
+            = hb 'display_name'

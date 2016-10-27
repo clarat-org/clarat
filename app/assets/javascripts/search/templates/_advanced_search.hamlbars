@@ -1,6 +1,7 @@
 .filter-form#advanced_search
-  %fieldset.filter-form__fieldset#age
+  = hb '> _sort_order'
 
+  %fieldset.filter-form__fieldset#age
     %legend.filter-form__fieldset__headline#age
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age

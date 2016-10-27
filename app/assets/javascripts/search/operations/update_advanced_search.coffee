@@ -6,8 +6,9 @@ class Clarat.Search.Operation.UpdateAdvancedSearch
 
     for field in fields
       currentIdentifier = model[field] or 'any'
-      currentlySelectedField =
-        $("##{field}_#{currentIdentifier}")
+      currentlySelectedField = $("##{field}_#{currentIdentifier}")
+      if !currentlySelectedField.length
+        currentlySelectedField = $(".#{field}_#{currentIdentifier}")
 
       if currentlySelectedField.is 'input'
         currentlySelectedField.prop('checked', true)

@@ -1,15 +1,18 @@
 %div.result-order
-  %label{for: "result-order", class: "result-order__label"} Sortieren nach
-  %div.result-order__select-wrapper
-    %select{name: "result-order", id: "sort_order", class: 'result-order__select'}
-      %option{value: 'sort_order_relevance', id: 'sort_order_sort_order_relevance'} Beste Treffer
-      %option{value: 'sort_order_nearby', id: 'sort_order_sort_order_nearby'} Angebote in deiner Nähe
+  = hb '> _sort_order'
+  / %label{for: "result-order", class: "result-order__label"} Sortieren nach
+  / %div.result-order__select-wrapper
+  /   %select{name: "result-order", id: "sort_order", class: 'result-order__select'}
+  /     %option{value: 'sort_order_relevance', id: 'sort_order_sort_order_relevance'} Beste Treffer
+  /     %option{value: 'sort_order_nearby', id: 'sort_order_sort_order_nearby'} Angebote in deiner Nähe
 
 %ul.Type-results
-  %li.Type-results__item.Type-results__item--active
-    %a.Type-results__link{href: '#'} Vor Ort (12)
-  %li.Type-results__item
-    %a.Type-results__link{href: '#'} Online und Telefon (0)
+  %li.Type-results__item{class: '{{personalActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToPersonal{href: '{{switch_href}}'}
+      = hb 'personal_anchor'
+  %li.Type-results__item{class: '{{remoteActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToRemote{href: '{{switch_href}}'}
+      = hb 'remote_anchor'
 
 .search-string
   = hb! 'main_results_query'

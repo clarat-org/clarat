@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: ca150a9a2706fff9710ebb5b9ea163ce8e348532
+  revision: f90286ff0e06994203b668452f9b45140ac7a258
   specs:
     clarat_base (0.1.4)
       aasm
@@ -128,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.2.0)
+    closure_tree (6.1.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (2.0.1)
+    enumerize (2.0.0)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -364,6 +364,7 @@ GEM
     rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
+    rails-assets-flexibility (2.0.1)
     rails-assets-hammerjs (2.0.8)
     rails-assets-iCheck (1.0.2)
       rails-assets-jquery (>= 1.7)
@@ -616,6 +617,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-flexibility!
   rails-assets-hammerjs!
   rails-assets-iCheck!
   rails-assets-isInViewport!
@@ -651,4 +653,4 @@ RUBY VERSION
    ruby 2.2.2p95
 
 BUNDLED WITH
-   1.13.3
+   1.12.5

@@ -31,10 +31,10 @@
   .Logo--start {
     body.refugees &.Logo,
     body.family &.Logo { // Specifity
-      margin: 0 0 45px 0;
-      height: 64px;
-      width: 180px;
-      background-size: 180px 64px;
+      margin: 19px 0 45px 0;
+      height: 46px;
+      width: 130px;
+      background-size: 130px 46px;
     }
   }
 
@@ -46,6 +46,16 @@
     max-width: 60%;
   }
 
+  .Claim__firstrow {
+    font-size: 18px;
+  }
+
+  .Claim__secondrow {
+    position: relative;
+    top: auto;
+    display: inline-block;
+  }
+
   .header-main {
     height: auto;
     margin-bottom: 0;
@@ -55,12 +65,13 @@
 
       .template--pages-home & {
         padding: 0 20px;
+        background-size: 80% auto;
       }
     }
   }
 
   .header-main--wide {
-    height: 320px;
+    height: 180px;
   }
 
   body.family,
@@ -99,10 +110,6 @@
     height: 40px;
     background-image: image-url('logo.svg');
     background-size: 180px 40px;
-  }
-
-  .Claim {
-    margin-top: 90px;
   }
 
   .Distributor {
@@ -168,6 +175,7 @@
   }
 
   .search-form--input-wrapper {
+    flex-direction: column;
     position: relative;
     left: 15px;
 
@@ -205,6 +213,7 @@
 
     .template--pages-home & {
       max-height: none;
+      flex-direction: column;
 
       #search_form_query,
       #search_form_search_location {
@@ -351,7 +360,7 @@
 
         &.search_form_search_location {
           display: none;
-          margin-top: 5px;
+          margin-top: 10px;
 
           &.is-visible {
             display: block;

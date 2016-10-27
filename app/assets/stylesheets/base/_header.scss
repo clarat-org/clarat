@@ -33,21 +33,16 @@
 .header-main__foreground {
   @extend %clearfix;
   height: inherit;
-  background-position: right bottom;
+  background-position: right calc(100% + 1px);
   background-size: 60% auto;
+  background-repeat: no-repeat;
 
   body.refugees & {
-    background: image-url('foreground--refugees.svg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 60% auto;
+    background-image: image-url('foreground--refugees.svg');
   }
 
   body.family & {
-    background: image-url('foreground--family.svg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 60% auto;
+    background-image: image-url('foreground--family.svg');
   }
 
   body.family &,

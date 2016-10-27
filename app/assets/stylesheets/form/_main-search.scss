@@ -6,6 +6,7 @@
 
 #new_search_form {
   @extend %clearfix;
+  display: flex;
   padding: 29px 25px 0;
   list-style: none;
 
@@ -15,10 +16,8 @@
 
   .input {
     &.string {
+      flex: 1;
       position: relative;
-      display: inline-block;
-      float: left;
-      width: 46.87%;
 
       body.ar & {
         float: right;
@@ -52,11 +51,23 @@
     }
   }
 
+  .search-form--input-wrapper {
+    flex: 1;
+    -js-display: flex;
+    display: flex;
+
+    .template--pages-home & {
+      -js-display: flex;
+      display: flex;
+    }
+  }
+
   .template--pages-home & {
+    -js-display: flex;
+    display: flex;
     position: relative;
     margin: 0 auto;
     padding: 30px 0 0;
-    display: inherit;
 
     #search_form_query,
     #search_form_search_location,
@@ -85,7 +96,7 @@
 #search_form_search_location {
   margin-right: 10px;
   padding: 0 15px 0 15px;
-  //max-width: 288px;
+  width: calc(100% - 10px);
   background: $brand_white;
   font-size: 20px;
   line-height: 47px;
@@ -137,7 +148,9 @@
 
 #search_form_query,
 #search_form_search_location {
-  width: calc(100% - 10px);
+  .template--pages-home & {
+    width: calc(100% - 10px);
+  }
 }
 
 #search_form_search_location {
@@ -192,8 +205,6 @@
 .main-search__submit {
   @extend %clarat_rounding_end;
 
-  float: right;
-
   body.ar & {
     border-bottom-right-radius: 0; // reset
     @extend %clarat_rounding_start;
@@ -208,6 +219,10 @@
   background: no-repeat left center;
   margin-left: 25px;
   margin-top: 8px;
+
+  body:not(.template--offers-index) & {
+    display: none;
+  }
 
   body.refugees &,
   body.family & {

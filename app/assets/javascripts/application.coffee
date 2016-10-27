@@ -39,6 +39,7 @@ about supported directives.
 #
 # = require jquery.popupoverlay
 # = require jquery.query-object
+# = require flexibility
 #
 # = require vendor/cookie_lib
 # = require vendor/inviewport

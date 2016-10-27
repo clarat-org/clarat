@@ -12,12 +12,18 @@
   }
 }
 
+.top-bar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 40px;
+
+}
+
 .top-bar__world-link {
   @extend %roboto_bold;
   float: left;
   text-decoration: none;
   line-height: 48px;
-  padding-left: 20px;
 
   body.family & {
     color: $brand_core_refugees;
@@ -48,7 +54,7 @@
   display: none; // visible at breakpoint s
   float: left;
   height: 44px;
-  width: 180px;
+  width: 165px;
   background-color: transparent !important;
   background: no-repeat 10px center;
   background-size: auto 38px;
@@ -140,6 +146,4 @@ $amount: 15%;
   background-image: image-url('ico_home.svg');
   background-size: 20px 20px;
   background-position: 16px center;
-
-
 }

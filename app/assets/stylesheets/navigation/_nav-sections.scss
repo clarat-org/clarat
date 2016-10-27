@@ -10,16 +10,15 @@
   z-index: 30;
   margin: 0 auto;
   padding-top: 30px;
-
-  body.refugees & {
-    max-width: 1045px;
-  }
 }
 
 .nav-sections__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  -js-display: flex; // polyfill rule
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-sections__headline {
@@ -34,9 +33,8 @@
   @extend %roboto_bold;
   position: relative;
   float: left;
-  margin: 0 22px;
-  width: 105px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
   text-align: center;
   font-size: 18px;
   word-wrap: break-word;
@@ -54,7 +52,7 @@
     bottom: 0;
     left: 0;
     display: block;
-    padding-top: 110px;
+    padding-top: 138px;
     color: $brand_brown;
     text-decoration: none;
 
@@ -69,14 +67,16 @@
 
 // Legal: only in refugees
 
+$dimension: 130px;
+
 .nav-sections__listitem--a-legal {
   background: image-url('picto_legal.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 }
 
 .nav-sections__listitem--b-family {
   background: image-url('picto_family.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.family & {
     background-image: image-url('picto_family--family.svg')
@@ -88,7 +88,7 @@
 
 .nav-sections__listitem--c-health {
   background: image-url('picto_health.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_health--refugees.svg')
@@ -101,7 +101,7 @@
 
 .nav-sections__listitem--d-learn {
   background: image-url('picto_learn.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_learn--refugees.svg')
@@ -115,7 +115,7 @@
 
 .nav-sections__listitem--e-misc {
   background: image-url('picto_everydaylife.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_everydaylife--refugees.svg');
@@ -128,7 +128,7 @@
 
 .nav-sections__listitem--f-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
 
   body.family & {
@@ -141,7 +141,7 @@
 
 .nav-sections__listitem--g-crisis {
   background: image-url('picto_crisis.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.family & {
     background-image: image-url('picto_crisis--family.svg');

@@ -1,72 +1,54 @@
-.Listing-results {
-  .result-order {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
-  }
+.result-order {
+  position: absolute;
+  right: 0;
+  width: auto;
+  top: 36px;
+}
 
-  .result-order__select {
-    @extend %roboto_bold;
-    position: relative;
-    border-radius: 5px 0 5px 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-size: 16px;
-    width: 100%;
-    border: 1px solid $brand_brown;
-    padding: 1px 36px 1px 8px;
-    background-color: white;
-    background-position: right;
-    background-repeat: no-repeat;
+.result-order__select {
+  @extend %roboto_bold;
+  position: relative;
+  border-radius: 5px 0 5px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid $brand_brown;
+  padding: 1px 36px 1px 8px;
+  background-color: white;
+  background-position: right;
+  background-repeat: no-repeat;
 
-    &::-ms-expand {
-      display: none;
-    }
-
-  }
-
-  .result-order__label {
-    float: left;
-    font-size: 15px;
-    padding-right: 6px;
-    height: 25px;
-    line-height: 30px;
-
-  }
-
-  .result-order__select-wrapper {
-    position: relative;
-    float: left;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 26px;
-      border-left: 1px solid $brand_brown;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      pointer-events: none;
-      background: image-url('ico_advsearch_expand.svg') no-repeat 45% center;
-      background-size: 14px auto;
-    }
-
+  &::-ms-expand {
+    display: none;
   }
 
 }
 
-.filter-form {
-  .result-order__label {
-    @extend .filter-form__fieldset__headline;
+.result-order__label {
+  float: left;
+  font-size: 15px;
+  padding-right: 6px;
+  height: 25px;
+  line-height: 30px;
+}
+
+.result-order__select-wrapper {
+  position: relative;
+  float: left;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    border-left: 1px solid $brand_brown;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: image-url('ico_advsearch_expand.svg') no-repeat 45% center;
+    background-size: 14px auto;
   }
 
-  .result-order {
-    padding: 0.35em 0.625em 0.75em;
-  }
-
-  .result-order__select {
-    @extend .filter-form__select;
-  }
 }

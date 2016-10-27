@@ -152,6 +152,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleSortOrderChange: (event) =>
     requestedSortOrder = $(event.target).val()
     @model.updateAttributes sort_order: requestedSortOrder
+    console.log "req: ", requestedSortOrder
     @sendMainSearch()
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
 

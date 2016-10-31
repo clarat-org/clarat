@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: ca150a9a2706fff9710ebb5b9ea163ce8e348532
+  revision: dd78e2a8f8ed375963b83c4eb1f9ad3527fada76
+  branch: feature/878-assignment-refactoring
   specs:
     clarat_base (0.1.4)
       aasm
@@ -163,7 +164,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160826)
+    domain_name (0.5.20161021)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)

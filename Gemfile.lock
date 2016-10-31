@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: dd78e2a8f8ed375963b83c4eb1f9ad3527fada76
+  revision: aaaa0fe1a6d15fa1db2e366f7887ba20f0ceb3a2
   branch: feature/878-assignment-refactoring
   specs:
     clarat_base (0.1.4)

@@ -28,8 +28,10 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
     target = $(event.target).data 'target'
 
     if target
+      # We're on mobile/off canvas
       $(target).trigger 'click'
     else
+      # We're on desktop
       filterForm = $('.filter-form')
       filterForm.toggleClass 'is-visible'
       filterForm.attr 'aria-hidden', (i, attr) ->
@@ -37,7 +39,6 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
     $(event.target).attr 'aria-expanded', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
-
 
 
   _isSearchFiltered: ->

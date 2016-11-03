@@ -2,11 +2,13 @@
   %legend.filter-form__fieldset__headline
     = hb '@root.headline_sort_order'
   %div.filter-form__fieldset__wrapper
-    %select.JS-SortOrderSelector.filter-form__select{name: 'sort_order'}
-      = hb 'each sort_order' do
-        = hb 'if selected' do
-          %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}', selected: 'selected'}
-            = hb 'display_name'
-          = hb 'else'
-          %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}'}
-            = hb 'display_name'
+    %label.result-order__label{for: 'sort_order'}
+    %div.result-order__select-wrapper
+      %select.JS-SortOrderSelector.result-order__select.filter-form__select{name: 'sort_order', id: 'sort_order'}
+        = hb 'each sort_order' do
+          = hb 'if selected' do
+            %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}', selected: 'selected'}
+              = hb 'display_name'
+            = hb 'else'
+            %option{value: '{{identifier}}', class: 'sort_order_{{identifier}}'}
+              = hb 'display_name'

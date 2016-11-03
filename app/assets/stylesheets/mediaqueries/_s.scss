@@ -393,6 +393,10 @@
     line-height: 45px; // closer to optical vertical middle
   }
 
+  .nav-off-canvas-trigger {
+    margin-top: -5px;
+  }
+
   span.tt-dropdown-menu {
     // specificity, overriding JS
     right: 0 !important; // overriding JS
@@ -412,6 +416,7 @@
     margin: 0;
     position: relative;
     transform: initial;
+    line-height: 30px;
   }
 
   .content-main {

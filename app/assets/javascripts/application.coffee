@@ -86,7 +86,6 @@ about supported directives.
 # = require single_click_button/presenter
 # = require handle_mobile_layout/presenter
 # = require enhance_listing_results/presenter
-# = require sticky_mobile_nav/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
 # = require section_speaking_wrapper/presenter

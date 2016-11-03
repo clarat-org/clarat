@@ -1,0 +1,25 @@
+.nav-off-canvas-trigger {
+  display: flex;
+  list-style: none;
+  margin: -5px -20px 0;
+  padding: 0;
+}
+
+.nav-off-canvas-trigger__item {
+  flex: 1;
+}
+
+.nav-off-canvas-trigger__icon {
+  body.refugees & {
+    color: $brand_core_refugees;
+  }
+
+  body.family & {
+    color: $brand_core_family;
+  }
+}
+
+.fa.nav-off-canvas-trigger__icon,
+.nav-off-canvas-trigger__label {
+  font-size: 16px;
+}

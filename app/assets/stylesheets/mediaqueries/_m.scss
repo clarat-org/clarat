@@ -35,6 +35,7 @@
       height: 46px;
       width: 130px;
       background-size: 130px 46px;
+      top: 0;
     }
   }
 
@@ -54,6 +55,9 @@
     position: relative;
     top: auto;
     display: inline-block;
+    font-size: 18px;
+    margin-top: 14px;
+    max-width: 60%;
   }
 
   .header-main {
@@ -65,7 +69,6 @@
 
       .template--pages-home & {
         padding: 0 20px;
-        background-size: 80% auto;
       }
     }
   }
@@ -84,7 +87,7 @@
   .Logo {
     margin-bottom: 15px;
     position: absolute;
-    top: 2px;
+    top: 10px;
     z-index: 20;
     margin-top: 5px;
     margin-left: 15px;
@@ -138,7 +141,7 @@
 
   .Distributor--navigation {
     padding-bottom: 0;
-    margin: 26px 0 0 0;
+    margin: 0;
     max-width: 1000px;
 
     &.is-enlarged {
@@ -321,8 +324,9 @@
       top: 10px;
       right: 15px;
       width: 40px;
-      height: 35px;
+      height: auto;
       background-size: 60%;
+      bottom: 10px;
 
       body.ar:not(.template--pages-home) & {
         right: auto;
@@ -359,7 +363,6 @@
         }
 
         &.search_form_search_location {
-          display: none;
           margin-top: 10px;
 
           &.is-visible {
@@ -413,25 +416,20 @@
     position: relative;
     margin: 0 -20px -15px;
     padding-left: 0;
-    height: 30px;
+    height: 35px;
     text-align: center;
     font-size: 13px;
-    color: $brand_white;
+    color: $brand_brown;
+    font-weight: 700;
     cursor: pointer;
     line-height: 30px;
+    background-color: $brand_yellow;
 
     &[aria-expanded="true"],
     &[aria-expanded="false"] {
       background-image: none;
     }
 
-    body.family & {
-      background-color: rgba($brand_core_family, .6);
-    }
-
-    body.refugees & {
-      background-color: rgba($brand_core_refugees, .6);
-    }
   }
 
   .nav-welt {
@@ -543,9 +541,9 @@
     }
   }
 
-  .Listing-results {
-    padding-top: 20px;
-  }
+  //.Listing-results {
+  //  padding-top: 20px;
+  //}
 
   .Listing-results__expander {
     display: block;
@@ -622,6 +620,8 @@
 
   // Content ######################################
 
+
+
   .page-wrap:after {
     height: 136px;
   }
@@ -645,6 +645,12 @@
       width: 40px;
       height: 40px;
       background-size: 40px 40px;
+    }
+  }
+
+  .Listing-results {
+    .filter-form__fieldset.sort_order {
+      display: none;
     }
   }
 

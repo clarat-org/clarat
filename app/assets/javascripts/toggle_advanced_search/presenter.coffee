@@ -4,7 +4,7 @@ Clarat.ToggleAdvancedSearch = {}
 class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
-    '.main-search__advanced-filter':
+    '.off-canvas-container__trigger':
       click: 'handleClick'
     document:
       'Clarat.Search::FirstSearchRendered': 'handleSearchRendered'
@@ -23,20 +23,15 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   _toggleState: (event) ->
     form = $('.filter-form')
-    trigger = $('.main-search__advanced-filter')
-    visibleClass = 'is-visible'
-    formMoreLabel = I18n.t('js.search.form_more_label')
-    formLessLabel = I18n.t('js.search.form_less_label')
+    target = $(event.target).data 'target'
+
+    console.log target
+
+    $(target).trigger 'click'
 
     $(event.target).attr 'aria-expanded', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
 
-    if form.hasClass visibleClass
-      form.removeClass visibleClass
-      trigger.text formMoreLabel
-    else
-      form.addClass visibleClass
-      trigger.text formLessLabel
 
   _isSearchFiltered: ->
     formParams = $.query.keys.search_form

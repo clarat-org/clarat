@@ -67,6 +67,7 @@
   .Claim__secondrow {
     margin: 15px 0 0;
     padding: 0;
+    max-width: 100%;
   }
 
   .header-main {
@@ -92,6 +93,9 @@
     body.family & {
       background-position: center bottom;
     }
+
+    background-size: 80% auto;
+
   }
 
   a.nav-lang__google {
@@ -107,6 +111,7 @@
     margin-top: 0;
     padding-bottom: 5px;
     height: auto;
+    pointer-events: all !important;
   }
 
   .Distributor--start {
@@ -223,8 +228,9 @@
       top: 10px;
       right: 15px;
       width: 40px;
-      height: 35px;
       background-size: 60%;
+      bottom: 10px;
+      height: auto;
 
       body.template--pages-home.ar & {
         left: 0;
@@ -236,11 +242,6 @@
         z-index: 20;
         border-top-left-radius: 6px;
         border-bottom-right-radius: 0;
-      }
-
-      &.is-enlarged {
-        bottom: 10px;
-        height: auto;
       }
 
       .template--pages-home & {
@@ -256,12 +257,12 @@
         padding-right: 55px;
         width: 100%;
 
+
         .template--pages-home & {
           height: 40px;
         }
 
         &.search_form_search_location {
-          display: none;
           margin-top: 5px;
           margin-bottom: 10px;
 
@@ -404,7 +405,7 @@
   }
 
   .main-search__advanced-filter--within-content-main {
-    margin: 0 -15px;
+    margin: 0;
     position: relative;
     transform: initial;
   }

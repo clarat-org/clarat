@@ -29,14 +29,15 @@
 }
 
 .Claim__secondrow {
-  margin-top: 10px;
-  padding: 7px 9px 6px;
-  font-size: 22px;
-  line-height: 1.3;
+  margin-top: 0;
+  padding: 0 9px 6px;
+  font-size: 26px;
+  line-height: 1.5;
   position: absolute;
   left: 0;
   top: 160px;
-  max-width: 300px;
+  max-width: 410px;
+;
 
   body.refugees & {
     color: $brand_core_refugees;

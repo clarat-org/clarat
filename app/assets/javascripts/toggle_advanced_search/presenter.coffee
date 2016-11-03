@@ -6,6 +6,8 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     '.off-canvas-container__trigger':
       click: 'handleClick'
+    '.main-search__advanced-filter':
+      click: 'handleClick'
     document:
       'Clarat.Search::FirstSearchRendered': 'handleSearchRendered'
 
@@ -25,12 +27,17 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
     form = $('.filter-form')
     target = $(event.target).data 'target'
 
-    console.log target
-
-    $(target).trigger 'click'
+    if target
+      $(target).trigger 'click'
+    else
+      filterForm = $('.filter-form')
+      filterForm.toggleClass 'is-visible'
+      filterForm.attr 'aria-hidden', (i, attr) ->
+        if attr == 'true' then 'false' else 'true'
 
     $(event.target).attr 'aria-expanded', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
+
 
 
   _isSearchFiltered: ->

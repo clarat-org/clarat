@@ -1,4 +1,4 @@
-.filter-form#advanced_search
+.filter-form#advanced_search(aria-hidden='true')
   = hb '> _sort_order'
 
   %fieldset.filter-form__fieldset#age

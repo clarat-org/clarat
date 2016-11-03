@@ -402,6 +402,10 @@
 
   .wrapper-inner {
     padding: 0 15px;
+
+    .content-main > & {
+      padding: 15px;
+    }
   }
 
   .main-search__advanced-filter--within-content-main {

@@ -10,8 +10,11 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @ttAutoTranslations = $('.nav-lang__button')
     @ttWeltRefugees     = $('.tooltip--welt-refugees')
     @ttWeltFamily       = $('.tooltip--welt-family')
+    @ttAdvancedSearch   = $('.tooltip--advancedsearch')
     @overlay            = $('#qtip_welcome_overlay')
     @cloneContainer     = $('#clone-container')
+
+
     super()
 
   CALLBACKS:
@@ -127,6 +130,43 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           width: 22
           corner: 'top center'
 
+  initAdvSearchTooltips: =>
+    that = this
+
+    position_my = if $(window).width() < 750 then 'bottom left' else 'bottom right'
+    position_at = if $(window).width() < 750 then 'bottom left' else 'top right'
+
+    @ttAdvancedSearch.qtip
+      id: 'ttAdvancedSearch'
+      position:
+        my: position_my
+        at: position_at
+        effect: false
+      content:
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that._showOverlay()
+        hide: ->
+          that._hideOverlay()
+      style:
+        tip:
+          corner: false
+          height: 16
+          width: 22
+          corner: 'bottom right'
+
+    unless @isFrontPage
+
+      @ttAdvancedSearch.qtip('api').show()
+      @_highlightTooltip(@ttAdvancedSearch)
+
+    return
+
   initAutomatedTranslationTooltip: =>
     that = this
 
@@ -185,6 +225,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     @overlay.hide()
     @cloneContainer.hide()
     $('body').removeClass 'overlay-active'
+    @ttAdvancedSearch.qtip('destroy')
     @ttAutoTranslations.qtip('destroy')
     @ttWeltRefugees.qtip('destroy')
     @ttWeltFamily.qtip('destroy')

@@ -264,4 +264,12 @@
   }
 }
 
+// To be made visible by JS, necessary to start hidden, see
+// https://github.com/clarat-org/clarat/issues/931#issuecomment-259730110
+#tab3,
+#search-wrapper .nav-off-canvas-trigger > li:nth-child(3),
+#advanced_search .sort_order {
+  display: none;
+}
+
 

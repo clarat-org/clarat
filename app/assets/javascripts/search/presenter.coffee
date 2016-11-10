@@ -219,6 +219,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleChangeToPersonal: =>
     @model.contact_type = 'personal'
     @showMapUnderCategories()
+    @showSortDropdown()
     $('#contact_type_personal').prop('checked', true)
 
     that = @
@@ -240,6 +241,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleChangeToRemote: =>
     @model.updateAttributes contact_type: 'remote'
     @hideMapUnderCategories()
+    @hideSortDropdown()
     $('#contact_type_remote').prop('checked', true)
 
     $('.filter-form__checkboxes-wrapper input').each ->
@@ -268,6 +270,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   showMapUnderCategories: =>
     $('.aside-standard__container').show()
+
+  hideSortDropdown: =>
+    $('#sort_order').hide()
+
+  showSortDropdown: =>
+    $('#sort_order').show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

@@ -9,7 +9,7 @@ noscript.NoScript
 
 / Inform JS…
 / …about the category structure
-- cache ['categories_nest', @current_section, @category_tree.length] do
+- cache ['categories_nest', @current_section, @category_tree.length, I18n.locale] do
   #category-tree(
     data={structure: render('offers/index/categories_nest.json', section: @current_section, set: @category_tree, depth: 0)}
   )

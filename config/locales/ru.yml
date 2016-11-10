@@ -586,6 +586,7 @@ ru:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: 
         ban: Ban
         bel: Bel
         ben: Ben
@@ -595,6 +596,7 @@ ru:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: 
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -615,6 +617,7 @@ ru:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: 
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -626,6 +629,7 @@ ru:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: 
         snk: Snk
         som: Som
         spa: Spa
@@ -648,10 +652,6 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: 
-        dyu: 
-        man: 
-        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -726,12 +726,16 @@ ru:
         approach: "Каким образом?"
         gender: "Пол"
         language: "Язык"
+        sort: 
         target_audience: "Помощь для кого?"
       option_any: "все равно"
       pagination:
         back: "Назад"
         gap: "..."
         next: "Дальше"
+      sort:
+        nearby: 
+        relevance: 
     search_results:
       bridge: "для"
       enclosing: "найдено"
@@ -747,6 +751,7 @@ ru:
       more: "Дугие предложения по телефону и он-лайн"
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: 
       personal_offers:
         few: "%{count} Angebote vor Ort"
         one: "Предложение на месте"
@@ -757,6 +762,7 @@ ru:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         few: "%{count} Telefonberatungen und Onlineangebote"
         one: "Одно предложение по телефону или одно предложение он-лайн"
@@ -781,6 +787,7 @@ ru:
         amh: "Амхарский язык - አማርኛ"
         ara: "Арабский язык - عربي"
         aze: "Азербайджанский язык - Azərbaycan"
+        bam: "Бамана́ - Bamanankan"
         ban: "Балийский язык - Basa Bali"
         bel: "Белорусский язык - беларуская мова"
         ben: "Бенгальский язык - বাংলা"
@@ -790,6 +797,7 @@ ru:
         cpe: Kamtok - Pidgin
         cze: "Чешский язык - čeština"
         deu: "Немецкий язык - Deutsch"
+        dyu: "Дьюла - Julakan"
         ell: "Греческий язык - ελληνικά"
         eng: "Английский язык - English"
         ewo: "Эвондо - Ewondo"
@@ -810,6 +818,7 @@ ru:
         lit: "Литовский язык - lietuvių"
         ltz: "Люксембургский язык - Lëtzebuergesch"
         luo: "Долуо - Dholuo"
+        man: Maninka - Maninka
         mkd: "Македонский язык - македонски"
         mul: "другие языки по запросу"
         nor: "Норвежский язык - Norsk"
@@ -821,6 +830,7 @@ ru:
         rus: "Русский язык - русский"
         skr: "Сербохорватский язык - српскохрватски / hrvatskosrpski"
         slo: "Словацкий язык - slovenský jazyk"
+        slv: "Словенский язык - Slovenščina"
         snk: "Сонинке язык - Soninkanxaane"
         som: "Сомалийский язык - Soomaali"
         spa: "Испанский язык - español"
@@ -843,10 +853,6 @@ ru:
         wol: "Волоф язык - wɔlɔf"
         zho: "Китайский язык - 普通话 / 普通話"
         zza: "Зазаки - Zazaki / Kırmancki"
-        bam: "Бамана́ - Bamanankan"
-        dyu: "Дьюла - Julakan"
-        man: Maninka - Maninka
-        slv: "Словенский язык - Slovenščina"
     single_search_result:
       encounters:
         chat: "Чат"

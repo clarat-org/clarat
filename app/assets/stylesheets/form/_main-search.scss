@@ -12,7 +12,7 @@
   list-style: none;
 
   body.ar & {
-    padding: 29px 25px 0 0;
+    padding: 29px 15px 0 15px;
   }
 
   .input {
@@ -228,6 +228,10 @@
   body.refugees &,
   body.family & {
     background-color: transparent;
+  }
+
+  body.ar & {
+    padding-right: 15px;
   }
 
   &[aria-expanded="false"] {

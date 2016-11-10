@@ -272,10 +272,18 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $('.aside-standard__container').show()
 
   hideSortDropdown: =>
-    $('#sort_order').hide()
+    $('.filter-form__fieldset.sort_order').hide()
+    # @TodoBeforePR
+    # Also:
+    # $("#tab3").hide()
+    # $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
 
   showSortDropdown: =>
-    $('#sort_order').show()
+    $('.filter-form__fieldset.sort_order').show()
+    # @TodoBeforePR
+    # Also:
+    # $("#tab3").show()
+    # $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

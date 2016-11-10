@@ -6,6 +6,7 @@
 
 #new_search_form {
   @extend %clearfix;
+  -js-display: flex;
   display: flex;
   padding: 29px 25px 0;
   list-style: none;

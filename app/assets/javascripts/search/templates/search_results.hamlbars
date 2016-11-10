@@ -14,16 +14,15 @@
     %a.Type-results__link.JS-SwitchToRemote{href: '{{switch_href}}'}
       = hb 'remote_anchor'
 
-.search-string
-  = hb! 'main_results_query'
-  = hb! 'main_results_location'
-  = hb! 'main_results_headline'
-
-= hb 'if remote_focus' do
-  .more_remote-offers_open
-    %a.JS-ToggleContactType{ href: '{{more_href}}' }
-      = hb 'toggle_personal_anchor'
-
+.Breadcrumbs--offer-index
+  %div.Breadcrumb__container
+    = hb! 'main_results_query'
+    %div.Breadcrumb__path
+      = hb! 'main_results_headline'
+    %div.Breadcrumb__location
+      = hb! 'main_results_location'
+  %a{href: 'https://www.algolia.com/', target: '_blank'}
+    %img.Breadcrumbs__sponsor{src: '{{algolia_logo_path}}', alt: 'Algolia Logo'}
 
 = hb 'unless personal_focus_with_remote' do
   %h2.Listing-results__headline

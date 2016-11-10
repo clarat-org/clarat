@@ -265,6 +265,14 @@
     width: 50%;
   }
 
+  .result-order {
+    position: relative;
+
+    .filter-form__fieldset {
+      padding: 0;
+    }
+  }
+
   .section-wrapper-major {
     .template--emails-offers_index & {
       width: 100%;

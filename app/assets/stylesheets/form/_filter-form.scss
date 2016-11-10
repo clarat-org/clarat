@@ -9,12 +9,12 @@
   display: none;
   position: relative;
   // overflow: hidden;
-  margin: -25px 1px 45px;
+  margin: -15px 1px 45px;
   padding: 12px 20px 5px 10px;
   background-color: $brand_beige;
 
   &.is-visible {
-    display: block;
+    -js-display: flex;
     display: flex;
   }
 
@@ -38,6 +38,11 @@
   &.is-visible {
     display: block;
   }
+
+  .result-order & {
+    float: right;
+  }
+
 }
 
 .filter-form__fieldset__wrapper--age {
@@ -92,6 +97,23 @@
   -ms-flex: 1 0 25%;
   flex: 1 0 25%;
 
+  // Hidden on desktop within advanced search
+  #advanced_search &.sort_order {
+    display: none;
+  }
+
+  #tab_filter &.sort_order {
+    display: block;
+
+    .filter-form__select {
+      font-size: 16px;
+    }
+  }
+
+  .result-order & {
+    padding: 0;
+  }
+
   &#age {
     -ms-flex-order: 1;
     -webkit-order: 1;
@@ -133,6 +155,12 @@
       display: none;
     }
   }
+
+  .result-order & {
+    float: left;
+    line-height: 26px;
+    margin-right: 5px;
+  }
 }
 
 .filter-form__checkboxes-wrapper {
@@ -160,17 +188,13 @@
 
 
 [type="submit"].filter-form__submit {
-  @extend %clarat_rounding_end;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 40;
-  padding: 10px 15px 10px 30px;
   min-height: 40px;
   width: 25%;
   width: calc(25% + 13px);
-  background: $brand_brown image-url('ico_search.svg') no-repeat 12px center;
-  background-size: 20px 20px;
 }
 
 #advanced_search_form_language_filter,

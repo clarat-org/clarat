@@ -783,6 +783,20 @@
     }
   }
 
+  .Type-results__link {
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .Type-results__item {
+    padding: 5px 8px;
+    max-width: 50%;
+  }
+
   .section-choice__container {
     float: none;
     width: auto;
@@ -829,6 +843,7 @@
   }
 
   .hint {
+    -js-display: flex;
     display: flex;
     font-size: 13px;
     margin-right: 8px;

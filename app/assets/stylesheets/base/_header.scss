@@ -44,15 +44,7 @@
   body.family & {
     background-image: image-url('foreground--family.svg');
   }
-
-  body.family &,
-  body.refugees & {
-    html.ie11 &,
-    html.ie10 &{
-      background-position: 50% 80px;
-    }
-  }
-
+  
 }
 
 .page-detail__header {

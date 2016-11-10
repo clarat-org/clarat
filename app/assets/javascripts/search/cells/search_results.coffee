@@ -20,7 +20,7 @@ class Clarat.Search.Cell.SearchResults
     section: $('body').data('section')
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
-    globe_img: image_path('ico_globe.svg')
+    algolia_logo_path: image_path('banner--powered-by-algolia.svg')
     headline_sort_order: I18n.t('js.search.headlines.sort')
     sort_order: @model.getSortOrders()
 
@@ -75,8 +75,7 @@ class Clarat.Search.Cell.SearchResults
 
   mainResultsQuery: () ->
     if @model.query
-      output = "#{@model.query} "
-      output += HandlebarsTemplates['remove_query_link']()
+      HandlebarsTemplates['remove_query_link'](query: @model.query)
 
   mainResultsLocation: () ->
     output = "#{@model.search_location || I18n.t('conf.default_location')}"
@@ -93,7 +92,7 @@ class Clarat.Search.Cell.SearchResults
 
     for category, index in ancestors
       output += Handlebars.partials['_category_link'] name: category
-      output += ' <span class="fooo">-</span> ' unless index is last_index
+      output += '&nbsp;›&nbsp;' unless index is last_index
 
     output
 

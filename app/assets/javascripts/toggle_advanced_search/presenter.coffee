@@ -37,8 +37,13 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
       filterForm.attr 'aria-hidden', (i, attr) ->
         if attr == 'true' then 'false' else 'true'
 
-    $(event.target).attr 'aria-expanded', (i, attr) ->
-      if attr == 'true' then 'false' else 'true'
+      if form.hasClass 'is-visible'
+        $('.main-search__advanced-filter').text I18n.t('js.search.form_less_label')
+      else
+        $('.main-search__advanced-filter').text I18n.t('js.search.form_more_label')
+
+      $(event.target).attr 'aria-expanded', (i, attr) ->
+        if attr == 'true' then 'false' else 'true'
 
 
   _isSearchFiltered: ->

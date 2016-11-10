@@ -394,7 +394,8 @@
   }
 
   .nav-off-canvas-trigger {
-    margin-top: -5px;
+    margin: -5px -15px 0;
+    overflow: hidden;
   }
 
   span.tt-dropdown-menu {
@@ -417,6 +418,10 @@
     position: relative;
     transform: initial;
     line-height: 30px;
+  }
+
+  .Breadcrumbs--offer-index {
+    display: none;
   }
 
   .content-main {

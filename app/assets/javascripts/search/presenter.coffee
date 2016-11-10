@@ -53,6 +53,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       @hideMapUnderCategories()
     else if @model.isPersonal()
       @showMapUnderCategories()
+      @showPersonalControls()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
     $(document).trigger 'Clarat.Search::NewResults', resultSet
 
@@ -219,7 +220,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleChangeToPersonal: =>
     @model.contact_type = 'personal'
     @showMapUnderCategories()
-    @showSortDropdown()
+    @showPersonalControls()
     $('#contact_type_personal').prop('checked', true)
 
     that = @
@@ -241,7 +242,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleChangeToRemote: =>
     @model.updateAttributes contact_type: 'remote'
     @hideMapUnderCategories()
-    @hideSortDropdown()
+    @hidePersonalControls()
     $('#contact_type_remote').prop('checked', true)
 
     $('.filter-form__checkboxes-wrapper input').each ->
@@ -260,7 +261,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handlePopstate: =>
     return unless @popstateEnabled
     window.location = window.location
-    # TODO: for more performance we could load from the event.state instead f
+    # TODO: for more performance we could load from the event.state instead of
     #       reloading
 
   ### Non-event-handling private methods ###
@@ -271,19 +272,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   showMapUnderCategories: =>
     $('.aside-standard__container').show()
 
-  hideSortDropdown: =>
-    $('.filter-form__fieldset.sort_order').hide()
-    # @TodoBeforePR
-    # Also:
-    # $("#tab3").hide()
-    # $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
+  hidePersonalControls: =>
+    $('#advanced_search .sort_order').hide()
+    $("#tab3").hide()
+    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
 
-  showSortDropdown: =>
-    $('.filter-form__fieldset.sort_order').show()
-    # @TodoBeforePR
-    # Also:
-    # $("#tab3").show()
-    # $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
+  showPersonalControls: =>
+    $('#advanced_search .sort_order').show()
+    $("#tab3").show()
+    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

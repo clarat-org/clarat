@@ -11,7 +11,6 @@ class Clarat.Search.Query.Base
       @categoryArray = if @category then [@category] else []
 
   query_hash: ->
-    console.log(@sort_order, @_precisionPerSortOrder())
     _.merge @page_query(),
       query: @query
       params:

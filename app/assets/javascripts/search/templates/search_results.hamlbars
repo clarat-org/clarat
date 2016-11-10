@@ -1,10 +1,6 @@
 %div.result-order
-  = hb '> _sort_order'
-  / %label{for: "result-order", class: "result-order__label"} Sortieren nach
-  / %div.result-order__select-wrapper
-  /   %select{name: "result-order", id: "sort_order", class: 'result-order__select'}
-  /     %option{value: 'sort_order_relevance', id: 'sort_order_sort_order_relevance'} Beste Treffer
-  /     %option{value: 'sort_order_nearby', id: 'sort_order_sort_order_nearby'} Angebote in deiner Nähe
+  = hb 'if personal' do
+    = hb '> _sort_order'
 
 %ul.Type-results
   %li.Type-results__item{class: '{{personalActiveClass}}'}

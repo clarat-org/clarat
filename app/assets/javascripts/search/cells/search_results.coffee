@@ -23,6 +23,7 @@ class Clarat.Search.Cell.SearchResults
     algolia_logo_path: image_path('banner--powered-by-algolia.svg')
     headline_sort_order: I18n.t('js.search.headlines.sort')
     sort_order: @model.getSortOrders()
+    personal: @model.isPersonal()
 
     personal_anchor: I18n.t(
       'js.search_results.personal_anchor', count: @resultSet.results[0].nbHits
@@ -67,11 +68,8 @@ class Clarat.Search.Cell.SearchResults
 
 
   mainResultsHeadline: (i18nKey) ->
-
     if @model.category
-      output = "#{@breadcrumbPath @model}"
-
-    output
+      "#{@breadcrumbPath @model}"
 
   mainResultsQuery: () ->
     if @model.query

@@ -525,6 +525,7 @@ en:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: 
         ban: Ban
         bel: Bel
         ben: Ben
@@ -534,6 +535,7 @@ en:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: 
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -554,6 +556,7 @@ en:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: 
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -565,6 +568,7 @@ en:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: 
         snk: Snk
         som: Som
         spa: Spa
@@ -587,10 +591,6 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: 
-        dyu: 
-        man: 
-        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -666,13 +666,16 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
-        target_audience: For whom?
         sort: Sort by
+        target_audience: For whom?
       option_any: any
       pagination:
         back: Previous
         gap: "…"
         next: Next
+      sort:
+        nearby: nearby
+        relevance: 
     search_results:
       bridge: for the search term
       enclosing: found
@@ -688,6 +691,7 @@ en:
       more: More remote offers
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: In your area (%{count})
       personal_offers:
         one: One local offer
         other: "%{count} local offers"
@@ -697,6 +701,7 @@ en:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
@@ -707,7 +712,6 @@ en:
         category_query: 
         default: 
       show_personal: Show local offers
-      personal_anchor: In your area (%{count})
     shared:
       current_and_original_locale:
         "'150'": German Sign Language - Deutsche Gebärdensprache
@@ -721,6 +725,7 @@ en:
         amh: Amharic - አማርኛ
         ara: Arabic - عربي
         aze: Azerbaijani - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
@@ -730,6 +735,7 @@ en:
         cpe: Kamtok - Pidgin
         cze: Czech - čeština
         deu: German - Deutsch
+        dyu: Jula - Julakan
         ell: Greek - ελληνικά
         eng: English
         ewo: Ewondo / Kolo - Ewondo
@@ -750,6 +756,7 @@ en:
         lit: Lithuanian - lietuvių
         ltz: Luxembourgish - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Macedonian - македонски
         mul: more languages upon request
         nor: Norwegian - Norsk
@@ -761,6 +768,7 @@ en:
         rus: Russian - русский
         skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
         slo: Slovak - slovenský jazyk
+        slv: Slovene - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
         spa: Spanish - español
@@ -783,10 +791,6 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        bam: Bambara - Bamanankan
-        dyu: Jula - Julakan
-        man: Maninka - Maninka
-        slv: Slovene - Slovenščina
     single_search_result:
       encounters:
         chat: chat
@@ -923,7 +927,7 @@ en:
     show:
       last_update: Entry last modified on
       next_steps:
-        code_word: What do you have to ask for or look for on the website?
+        code_word: 'This is what the service provider calls this support service:'
         heading: What do you have to do?
       opening_section:
         days:
@@ -953,9 +957,9 @@ en:
           twitter: Twitter
           youtube: Youtube
       what:
-        code_word: What do you have to ask for or look for on the website?
+        code_word: 'This is what the service provider calls this support service:'
         heading: What is this about?
-      who: Who offers this help?
+      who: Where can you get this help?
       who_contact_people:
         dr: Dr.
         email: 'Email: '
@@ -1315,7 +1319,7 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
-    fr: 
+    fr: fr
     haeufige-fragen: frequently-asked-questions
     home: 
     impressum: impressum

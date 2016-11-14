@@ -5,17 +5,22 @@
     ul.section-choice
       li.section-choice__container
         section.section-choice__family
-          = link_to '/family/' do
+          = link_to home_path(section: :family) do
             h1.section-choice__headline.section-choice__headline--family
               = t '.family.title'
-          a.section-choice__stage.section-choice__stage--family[href='/family/']
-          a.section-choice__cta.section-choice__cta--family[href='/family/']
+          /a.section-choice__stage.section-choice__stage--family[href='/family/']
+          = link_to '', home_path(section: :family),
+                    class: 'section-choice__stage section-choice__stage--family'
+          = link_to home_path(section: :family),
+                    class: 'section-choice__cta section-choice__cta--family' do
             = t 'layouts.partials.navigation.claim.family'
       li.section-choice__container
         section.section-choice__refugees
-          a[href='/refugees/']
+          = link_to home_path(section: :refugees) do
             h1.section-choice__headline.section-choice__headline--refugees
               = t '.refugees.title'
-          a.section-choice__stage.section-choice__stage--refugees[href='/refugees/']
-          a.section-choice__cta.section-choice__cta--refugees[href='/refugees/']
+          = link_to '', home_path(section: :refugees),
+                    class: 'section-choice__stage section-choice__stage--refugees'
+          = link_to home_path(section: :refugees),
+                    class: 'section-choice__cta section-choice__cta--refugees' do
             = t 'layouts.partials.navigation.claim.refugees'

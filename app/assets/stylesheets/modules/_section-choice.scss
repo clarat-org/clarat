@@ -46,12 +46,13 @@
   @extend %clarat_rounding_start;
   @extend %clarat_rounding_end;
   width: auto;
+  min-width: 90%;
   height: 90px;
   background: image-url('skinny-arrow-right.svg') no-repeat 14px center ;
   background-size: 28px 49px;
   color: $brand_white;
   text-decoration: none;
-  margin: 0 28px;
+  margin: -1px 28px 0;
   padding: 7px 7px 7px 55px;
   font-size: 27px;
   display: inline-block;

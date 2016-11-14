@@ -562,6 +562,7 @@ fr:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -571,6 +572,7 @@ fr:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -591,6 +593,7 @@ fr:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -602,6 +605,7 @@ fr:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -624,10 +628,6 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: 
-        dyu: 
-        man: 
-        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -698,12 +698,20 @@ fr:
         approach: De quelle Manière?
         gender: Sexe
         language: Langue
+        sort: 
         target_audience: De l'aide pour qui?
       option_any: "égal"
       pagination:
         back: Retour
         gap: "..."
         next: de nouveau
+      sort:
+        nearby: 
+        relevance: 
+      tabs:
+        categories: 
+        filter: 
+        map: 
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé
@@ -719,6 +727,7 @@ fr:
       more: d'autres services par téléphone ou en ligne
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: 
       personal_offers:
         one: un service sur place
         other: "%{count} services sur place"
@@ -728,6 +737,7 @@ fr:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         one: Une assistance téléphonique ou un service en ligne
         other: "%{count} Assistances téléphoniques ou services en ligne"
@@ -751,6 +761,7 @@ fr:
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
         aze: Azéri - Azərbaycan
+        bam: bambara - bamanankan
         ban: Balinais - Basa Bali
         bel: Biélorusse - беларуская мова
         ben: Bengali - বাংলা
@@ -760,6 +771,7 @@ fr:
         cpe: Pidgin camerounais - Pidgin
         cze: Tchèque - čeština
         deu: Allemand - Deutsch
+        dyu: dioula - julakan
         ell: Grec - ελληνικά
         eng: Anglais - English
         ewo: Ewondo / kóló - Ewondo
@@ -780,6 +792,7 @@ fr:
         lit: Lituanien - lietuvių
         ltz: Luxembourgeois - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Macédonien - македонски
         mul: autres langues sur demande
         nor: Norvégien - Norsk
@@ -791,6 +804,7 @@ fr:
         rus: Russe - русский
         skr: Serbo-croate - српскохрватски / hrvatskosrpski
         slo: Slovaque - slovenský jazyk
+        slv: slovène - slovenščina
         snk: Soninké - Soninkanxaane
         som: Somali - Soomaali
         spa: Espagnol - español
@@ -814,10 +828,6 @@ fr:
         zho: Langues chinoises - 普通话 / 普通話
         zza: |
           Zazaki - Zazaki / Kırmancki
-        bam: bambara - bamanankan
-        dyu: dioula - julakan
-        man: Maninka - Maninka
-        slv: slovène - slovenščina
     single_search_result:
       encounters:
         chat: discussion en ligne
@@ -886,6 +896,18 @@ fr:
           ru: 
           tr: 
         title: 
+        "#{@current_locale}": 
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
   offers:
     index:
       filters:

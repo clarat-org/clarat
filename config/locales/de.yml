@@ -927,6 +927,7 @@ de:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -936,6 +937,7 @@ de:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -956,6 +958,7 @@ de:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -967,6 +970,7 @@ de:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -989,10 +993,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: Bam
-        dyu: Dyu
-        man: Man
-        slv: Slv
       section:
         family: Family
         refugees: Refugees
@@ -1067,12 +1067,20 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        sort: Sortieren nach
         target_audience: Hilfe für wen?
       option_any: egal
       pagination:
         back: Zurück
         gap: "…"
         next: Weiter
+      sort:
+        nearby: In der Nähe
+        relevance: Beste Treffer
+      tabs:
+        categories: Kategorien
+        filter: Filter
+        map: Karte
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1088,6 +1096,10 @@ de:
       more: Weitere Telefon- und Onlineangebote
       off_canvas:
         result_text: "%{result_count} Suchergebnisse anzeigen"
+      personal_anchor:
+        content_item: '{"description"=>"Vor Ort (%{count})"}'
+        one: Vor Ort (%{count})
+        other: Vor Ort (%{count})
       personal_offers:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
@@ -1109,6 +1121,10 @@ de:
           one: Ein Angebot vor Ort (%{location}) gefunden
           other: "%{count} Angebote vor Ort (%{location}) gefunden"
           zero: Leider keine Angebote vor Ort (%{location}) gefunden
+      remote_anchor:
+        content_item: '{"description"=>"Online und Telefon (%{count})"}'
+        one: Online und Telefon (%{count})
+        other: Online und Telefon (%{count})
       remote_offers:
         one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
@@ -1144,6 +1160,7 @@ de:
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         aze: Aserbaidschanisch - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Balinesisch - Basa Bali
         bel: Weißrussisch - беларуская мова
         ben: Bengalisch - বাংলা
@@ -1153,6 +1170,7 @@ de:
         cpe: Kamtok - Pidgin
         cze: Tschechisch - čeština
         deu: Deutsch
+        dyu: Dioula - Julakan
         ell: Griechisch - ελληνικά
         eng: Englisch - English
         ewo: Ewondo - Ewondo
@@ -1173,6 +1191,7 @@ de:
         lit: Litauisch - lietuvių
         ltz: Luxemburgisch - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Mazedonisch - македонски
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
@@ -1184,6 +1203,7 @@ de:
         rus: Russisch - русский
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
         slo: Slowakisch - slovenský jazyk
+        slv: Slowenisch - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
         spa: Spanisch - español
@@ -1206,10 +1226,6 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        bam: Bambara - Bamanankan
-        dyu: Dioula - Julakan
-        man: Maninka - Maninka
-        slv: Slowenisch - Slovenščina
     single_search_result:
       encounters:
         chat: Chat
@@ -1288,6 +1304,18 @@ de:
           ru: 
           tr: 
         title: 
+        "#{@current_locale}": 
+        section_link:
+          desktop:
+            family: "‹ zu clarat refugees"
+            refugees: "‹ zu clarat family"
+          mobile:
+            home:
+              family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
+              refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
+            switch:
+              family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
+              refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
   offers:
     index:
       filters:

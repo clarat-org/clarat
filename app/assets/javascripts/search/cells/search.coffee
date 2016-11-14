@@ -13,6 +13,9 @@ class Clarat.Search.Cell.Search
       headline_gender: I18n.t('js.search.headlines.gender')
       headline_approach: I18n.t('js.search.headlines.approach')
       option_any: I18n.t('js.search.option_any')
+      tab_filter: I18n.t('js.search.tabs.filter')
+      tab_categories: I18n.t('js.search.tabs.categories')
+      tab_map: I18n.t('js.search.tabs.map')
 
       category_tree: @model.categoryTree
       filters: @model.getFilters()

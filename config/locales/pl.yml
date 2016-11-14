@@ -607,6 +607,7 @@ pl:
         amh: Amh
         ara: Ara
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -616,6 +617,7 @@ pl:
         cpe: Cpe
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -636,6 +638,7 @@ pl:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -647,6 +650,7 @@ pl:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -669,10 +673,6 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        bam: 
-        dyu: 
-        man: 
-        slv: 
       section:
         family: Family
         refugees: Refugees
@@ -743,12 +743,20 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
+        sort: 
         target_audience: Pomoc dla kogo?
       option_any: obojętne
       pagination:
         back: Wróć
         gap: "..."
         next: Dalej
+      sort:
+        nearby: 
+        relevance: 
+      tabs:
+        categories: 
+        filter: 
+        map: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -764,6 +772,7 @@ pl:
       more: Inne oferty telefoniczne i online
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor: 
       personal_offers:
         few: "%{count} ofert na miejscu"
         one: Jedna oferta na miejscu
@@ -774,6 +783,7 @@ pl:
         category: 
         category_query: 
         default: 
+      remote_anchor: 
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
@@ -798,6 +808,7 @@ pl:
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         aze: Język azerski - Azərbaycan
+        bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
         bel: Język białoruski - беларуская мова
         ben: Język bengalski - বাংলা
@@ -807,6 +818,7 @@ pl:
         cpe: Język kamtok - Pidgin
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
+        dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
         ewo: Język yaunde - Ewondo
@@ -827,6 +839,7 @@ pl:
         lit: Język litewski - lietuvių
         ltz: Język luksemburski - Lëtzebuergesch
         luo: Język luo - Dholuo
+        man: Maninka - Maninka
         mkd: Język macedoński - македонски
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
@@ -838,6 +851,7 @@ pl:
         rus: Język rosyjski - русский
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
         slo: Język słowacki - slovenský jazyk
+        slv: Język słoweński - Slovenščina
         snk: Język soninke - Soninkanxaane
         som: Język somalijski - Soomaali
         spa: Język hiszpański - español
@@ -860,10 +874,6 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        bam: Język bambara - Bamanankan
-        dyu: Język diula - julakan
-        man: Maninka - Maninka
-        slv: Język słoweński - Slovenščina
     single_search_result:
       encounters:
         chat: chat
@@ -932,6 +942,18 @@ pl:
           ru: 
           tr: 
         title: 
+        "#{@current_locale}": 
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
   offers:
     index:
       filters:

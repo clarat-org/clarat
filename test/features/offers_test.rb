@@ -10,8 +10,9 @@ feature 'Offer display' do
   end
 
   scenario 'Offer gets shown in a different language (English)' do
-    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
-    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer = FactoryGirl.create :offer, :approved, :with_email,
+                               :with_dummy_translations # test obfuscation
+    # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
     visit offer_en_path offer, section: 'refugees'
     page.must_have_content 'GET READY FOR CANADA'
@@ -19,7 +20,7 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view has evaluated markdown' do
-    offer = FactoryGirl.create :offer, :approved,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
                                description: 'A [link](http://www.example.org)',
                                old_next_steps: "A\n\n- list"
 
@@ -40,8 +41,9 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view displays translated old/new next steps' do
-    offer = FactoryGirl.create :offer, :approved, old_next_steps: 'Step one.'
-    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
+                               old_next_steps: 'Step one.'
+    # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
     next_steps(:basic).update_column :text_en, 'English step 1.'
     visit offer_en_path offer, section: 'refugees'
     within '.section-content--nextsteps' do
@@ -60,7 +62,7 @@ feature 'Offer display' do
 
   scenario 'Offer view has explained words' do
     Definition.create key: 'complex', explanation: 'Explained!'
-    offer = FactoryGirl.create :offer, :approved,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
                                description: 'A complex sentence.'
 
     visit unscoped_offer_path offer

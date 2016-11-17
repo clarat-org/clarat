@@ -56,6 +56,8 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
         # Put map in tab map in Off C
         $asideStandardContainer.appendTo $tabMap
         $('#map-container').trigger 'Clarat.GMaps::Resize'
+        window.dispatchEvent new Event('resize')
+
 
       else
         # Put categories in aside
@@ -71,6 +73,7 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
   toggleHandler: =>
     $('#off-canvas-container').toggleClass 'active'
     $('#map-container').trigger 'Clarat.GMaps::Resize'
+    window.dispatchEvent new Event('resize')
 
     $('body').toggleClass 'offcanvas-active'
 

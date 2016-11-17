@@ -781,9 +781,6 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -796,17 +793,6 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
-      nav_lang:
-        german_content_warning: 
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Otomatik çeviriler
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -816,16 +802,15 @@ tr:
           refugees: |
             Mülteciler için yardım çeşitleri
       top_bar:
+        german_content_warning: 
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-        title: 
-        "#{@current_locale}": 
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polski
+          ru: "Русский"
+          tr: Türkçe
         section_link:
           desktop:
             family: 
@@ -837,6 +822,7 @@ tr:
             switch:
               family: 
               refugees: 
+        title: Otomatik çeviriler
   offers:
     index:
       filters:
@@ -1158,15 +1144,6 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: 
     shared:
       address:

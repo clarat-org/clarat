@@ -675,9 +675,9 @@ fa:
         nearby: "در نزدیکی"
         relevance: "بهترین هدف"
       tabs:
-        categories: 
-        filter: 
-        map: 
+        categories: "طبقه بندی ها"
+        filter: "فیلتر"
+        map: "نقشه"
     search_results:
       bridge: "برای جستجوی عبارت"
       enclosing: "پیدا کردن"
@@ -856,15 +856,18 @@ fa:
         twitter:
           anchor: "توییتر"
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: "برای ما پیغام بنویسید"
           text: "صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس"
         unavailable_location_modal: "در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید."
-      nav_lang:
+      navigation:
+        category_headline: "یا بدنبال طبقه بندی ها"
+        claim:
+          family: "پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها "
+          main: "به راحتی کمک یافتن"
+          refugees: "پیشنهادهای حمایتی برای پناهندگان"
+      top_bar:
         german_content_warning: "زبان خود را انتخاب کن"
         languages:
           ar: "عربی - عربي"
@@ -874,35 +877,18 @@ fa:
           pl: "لهستانی"
           ru: "روسی - Русский"
           tr: "ترکی"
-        title: "زبان خود را انتخاب کنید"
-      navigation:
-        category_headline: "یا بدنبال طبقه بندی ها"
-        claim:
-          family: "پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها "
-          main: "به راحتی کمک یافتن"
-          refugees: "پیشنهادهای حمایتی برای پناهندگان"
-      top_bar:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-        title: 
-        "#{@current_locale}": 
         section_link:
           desktop:
-            family: 
-            refugees: 
+            family: "به طرف clarat refugees >"
+            refugees: "به طرف clarat family >"
           mobile:
             home:
-              family: 
-              refugees: 
+              family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
+              refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              family: 
-              refugees: 
+              family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
+              refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
+        title: "زبان خود را انتخاب کنید"
   offers:
     index:
       filters:
@@ -1171,15 +1157,6 @@ fa:
       intro_second_part: "در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید."
       title: "حفاظت از اطلاعات"
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: "لطفا موضوع خود را از دنیای clarat انتخاب کنید"
     shared:
       address:

@@ -278,7 +278,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
 
   showPersonalControls: =>
-    $('#advanced_search .sort_order').show()
+    unless $(window).width() < 750
+      $('#advanced_search .sort_order').show()
     $("#tab3").css("display", "inline-block")
     $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 

@@ -13,6 +13,7 @@ javascript:
 
 = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?libraries='\
                          'places&language=de&v=3.exp'\
+                         "&key=#{Rails.application.secrets.google['public']}"\
                          '&callback=Clarat.GMaps.initialize',
                          cache: 'google_maps_apiv3'
 

@@ -1,9 +1,10 @@
 .top-bar
   .top-bar__container
     - inverse_section = (@current_section == 'family') ? 'refugees' : 'family'
-    = link_to home_path(section: inverse_section),
-              class: 'top-bar__world-link' do
-      = t (".section_link.desktop.#{@current_section}")
+    - if request.path != section_choice_path
+      = link_to home_path(section: inverse_section),
+                class: 'top-bar__world-link' do
+        = t (".section_link.desktop.#{@current_section}")
     .top-bar__world-select
       button.top-bar__world-select-button#top-bar__world-select-button[aria-label="Switch to other clarat section" aria-expanded="false"]
       .top-bar__world-select-overlay[aria-hidden="true"]

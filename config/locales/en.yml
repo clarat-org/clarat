@@ -26,10 +26,11 @@ en:
       fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
-      male: Mister
-      obfuscated_email: |-
-        This e-mail address is protected from spam bots, you must enable
+      male: Mr.
+      obfuscated_email: |+
+        This e-mail address is protected from spam bots. You must enable
         JavaScript in your browser to view it.
+
       phone: 'Telephone:'
       prof_dr: Prof. Dr.
     faq:
@@ -60,7 +61,7 @@ en:
             name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/
-            var: link_to_bsz
+            var: NOTRANSLATE
           question: How long will clarat exist?
         question_12:
           answer: |
@@ -675,7 +676,7 @@ en:
         next: Next
       sort:
         nearby: nearby
-        relevance: 
+        relevance: Best matches
       tabs:
         categories: Categories
         filter: Filter
@@ -828,9 +829,6 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: write us a message.
@@ -844,7 +842,13 @@ en:
           working hard to soon be present in other parts of germany as well.
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
-      nav_lang:
+      navigation:
+        category_headline: Search by categories
+        claim:
+          family: Support offerings for children, adolescents and families
+          main: Find help easily
+          refugees: Support offerings for refugees
+      top_bar:
         german_content_warning: Legal information can only be viewed in German
         languages:
           ar: "عربي"
@@ -854,24 +858,6 @@ en:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
-        title: Automated translations!
-      navigation:
-        category_headline: Search by categories
-        claim:
-          family: Support offerings for children, adolescents and families
-          main: Find help easily
-          refugees: Support offerings for refugees
-      top_bar:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-        title: 
-        "#{@current_locale}": 
         section_link:
           desktop:
             family: "‹ to clarat refugees"
@@ -883,6 +869,7 @@ en:
             switch:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
+        title: Automated translations!
   offers:
     index:
       filters:
@@ -1310,15 +1297,6 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: Please choose your clarat-section
     shared:
       address:
@@ -1338,10 +1316,10 @@ en:
     faq: frequently-asked-questions
     fr: fr
     haeufige-fragen: frequently-asked-questions
-    home: 
+    home: home
     impressum: impressum
-    liste: 
-    liste-de-services: 
+    liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: offers
     organizations: organizations

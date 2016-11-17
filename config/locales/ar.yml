@@ -614,8 +614,8 @@ ar:
         relevance: "أفضل النتائج"
       tabs:
         categories: 
-        filter: 
-        map: 
+        filter: "فلتر"
+        map: "خريطة"
     search_results:
       bridge: "من أجل"
       enclosing: "تم العثور على"
@@ -764,9 +764,6 @@ ar:
         twitter:
           anchor: "تويتر"
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: "ارسل لنا ببساطة رسالة بريد إليكتروني"
@@ -782,17 +779,6 @@ ar:
           مثلا عن طريق اللإيميل أو عن طريق الدردشة
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
-      nav_lang:
-        german_content_warning: "إختر لغتك"
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: "ترجمة فورية"
       navigation:
         category_headline: "أو البحث عن طريق التصنيف"
         claim:
@@ -802,20 +788,19 @@ ar:
           refugees: |
             عروض دعم للآجئين
       top_bar:
+        german_content_warning: "إختر لغتك"
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-        title: 
-        "#{@current_locale}": 
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polski
+          ru: "Русский"
+          tr: Türkçe
         section_link:
           desktop:
-            family: 
-            refugees: 
+            family: "إلي"
+            refugees: "إلى كلارات اللاجئين"
           mobile:
             home:
               family: 
@@ -823,6 +808,7 @@ ar:
             switch:
               family: 
               refugees: 
+        title: "ترجمة فورية"
   offers:
     index:
       filters:
@@ -1137,15 +1123,6 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: "إختر قسم كلارات الذي يخصك"
     shared:
       address:

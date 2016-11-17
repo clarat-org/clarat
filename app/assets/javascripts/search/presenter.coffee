@@ -53,7 +53,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       @hideMapUnderCategories()
     else if @model.isPersonal()
       @showMapUnderCategories()
-      @showPersonalControls()
+      if $(window).width() < 750
+        @showPersonalControls()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
     $(document).trigger 'Clarat.Search::NewResults', resultSet
 
@@ -278,8 +279,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
 
   showPersonalControls: =>
-    unless $(window).width() < 750
-      $('#advanced_search .sort_order').show()
+    $('#advanced_search .sort_order').show()
     $("#tab3").css("display", "inline-block")
     $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 

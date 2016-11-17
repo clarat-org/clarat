@@ -279,7 +279,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   showPersonalControls: =>
     $('#advanced_search .sort_order').show()
-    $("#tab3").show()
+    $("#tab3").css("display", "inline-block")
     $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 
   getNestedData: (eventTarget, selector, elementName) ->

@@ -16,6 +16,7 @@ class Clarat.Search.Cell.SearchResults
     @addValuesToSearchResults()
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
+    main_results_query: @mainResultsQuery()
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     section: $('body').data('section')
     offers_path: location.pathname
@@ -46,7 +47,6 @@ class Clarat.Search.Cell.SearchResults
         @mainResults.nbHits + @remoteResults.nbHits > 0
       main_results_headline: @mainResultsHeadline('personal_offers')
       main_results_location: @mainResultsLocation()
-      main_results_query: @mainResultsQuery()
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits
 

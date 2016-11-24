@@ -15,7 +15,7 @@ class Clarat.enhanceListingResults.Presenter extends ActiveScript.Presenter
 
     $(address).toggleClass('is-expanded')
 
-    $(that).attr 'aria-toggle', (i, attr) ->
+    $(that).attr 'aria-expanded', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
 
 

@@ -46,5 +46,8 @@ module Clarat
 
     # Rack extensions
     config.middleware.use Rack::Attack
+
+    # Middleware for JS-Translations
+    config.middleware.use I18n::JS::Middleware
   end
 end

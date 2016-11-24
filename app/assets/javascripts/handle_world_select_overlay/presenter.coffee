@@ -7,6 +7,9 @@ class Clarat.HandleWorldSelectOverlay.Presenter extends ActiveScript.Presenter
 
   handle: (e) =>
 
+    $('.nav-lang__button').removeClass('is-active')
+    $('.nav-lang__list').removeClass('nav-lang__list--vertical')
+
     btn = $(e.target)
 
     btn.attr 'aria-expanded', (i, attr) ->

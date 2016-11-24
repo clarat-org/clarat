@@ -26,10 +26,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
   init: =>
-
-    if @isOfferIndexPage
-      @testForAutoTranslateCookie()
-      return
+    @testForAutoTranslateCookie()
 
   testForAutoTranslateCookie: () =>
 

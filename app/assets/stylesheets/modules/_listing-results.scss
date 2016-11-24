@@ -219,7 +219,7 @@
 }
 
 .Listing-results__meta--with-address {
-  background: transparent image-url('gmaps_marker.svg') no-repeat left center;
+  background: $brand_beige image-url('gmaps_marker.svg') no-repeat left center;
   background-size: auto 30px;
   padding-left: 30px;
 

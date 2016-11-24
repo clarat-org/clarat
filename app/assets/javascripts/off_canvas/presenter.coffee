@@ -56,7 +56,6 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
         # Put map in tab map in Off C
         $asideStandardContainer.appendTo $tabMap
         $('#map-container').trigger 'Clarat.GMaps::Resize'
-        window.dispatchEvent new Event('resize')
 
 
       else

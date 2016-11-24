@@ -866,6 +866,16 @@ fr:
           link: "écris-nous tout simplement un message"
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
+      nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: ou recherches par catégories
         claim:
@@ -1202,6 +1212,10 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      family:
+        title: 
+      refugees:
+        title: 
       title: 
     shared:
       address:

@@ -706,7 +706,9 @@ en:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        one: Online and telephone (%{count})
+        other: Online and telephone (%{count})
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
@@ -842,6 +844,16 @@ en:
           working hard to soon be present in other parts of germany as well.
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
+      nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: Search by categories
         claim:
@@ -1297,6 +1309,10 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      family:
+        title: 
+      refugees:
+        title: 
       title: Please choose your clarat-section
     shared:
       address:

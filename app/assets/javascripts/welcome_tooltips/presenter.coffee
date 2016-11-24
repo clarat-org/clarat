@@ -28,7 +28,6 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   init: =>
 
     if @isOfferIndexPage
-      @testForAdvSearchCookie()
       @testForAutoTranslateCookie()
       return
 
@@ -40,16 +39,6 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
     else
       @initAutomatedTranslationTooltip()
       @setCookieAutoTranslate()
-
-
-  testForAdvSearchCookie: () =>
-
-    # Advanced search cookie detect
-    if $.cookie 'welcome-tooltips-advsearch'
-      return false
-    else
-      @initAdvSearchTooltips()
-      @setCookieAdvSearch()
 
 
   _highlightTooltip: (elem) =>
@@ -130,43 +119,6 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           width: 22
           corner: 'top center'
 
-  initAdvSearchTooltips: =>
-    that = this
-
-    position_my = if $(window).width() < 750 then 'bottom left' else 'bottom right'
-    position_at = if $(window).width() < 750 then 'bottom left' else 'top right'
-
-    @ttAdvancedSearch.qtip
-      id: 'ttAdvancedSearch'
-      position:
-        my: position_my
-        at: position_at
-        effect: false
-      content:
-        button: 'x'
-      show:
-        event: false
-      hide:
-        event: false
-      events:
-        show: ->
-          that._showOverlay()
-        hide: ->
-          that._hideOverlay()
-      style:
-        tip:
-          corner: false
-          height: 16
-          width: 22
-          corner: 'bottom right'
-
-    unless @isFrontPage
-
-      @ttAdvancedSearch.qtip('api').show()
-      @_highlightTooltip(@ttAdvancedSearch)
-
-    return
-
   initAutomatedTranslationTooltip: =>
     that = this
 
@@ -201,9 +153,10 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
   setCookieAutoTranslate: =>
-    $.cookie 'welcome-tooltips-autotranslation', 'true',
-      expires: @cookieLifespan
-      path: '/'
+    unless $('html[lang="de"]').length
+      $.cookie 'welcome-tooltips-autotranslation', 'true',
+        expires: @cookieLifespan
+        path: '/'
 
 
   setCookieAdvSearch: =>

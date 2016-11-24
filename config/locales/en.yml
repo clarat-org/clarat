@@ -853,7 +853,10 @@ en:
           pl: 
           ru: 
           tr: 
-        title: 
+        title: |-
+          Automated translations!
+          <br><br>
+          On clarat, some of the texts in your language have been translated by Google Translate. These texts might sound a bit strange sometimes. Or the language might be a bit wrong
       navigation:
         category_headline: Search by categories
         claim:

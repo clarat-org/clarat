@@ -10,6 +10,7 @@
   z-index: 30;
   margin: 0 auto;
   padding-top: 30px;
+  max-width: 85%;
 }
 
 .nav-sections__list {
@@ -33,8 +34,8 @@
   @extend %roboto_bold;
   position: relative;
   float: left;
-  width: 130px;
-  height: 130px;
+  width: 115px;
+  height: 115px;
   text-align: center;
   font-size: 18px;
   word-wrap: break-word;
@@ -67,7 +68,7 @@
 
 // Legal: only in refugees
 
-$dimension: 130px;
+$dimension: 115px;
 
 .nav-sections__listitem--a-legal {
   background: image-url('picto_legal.svg') no-repeat center top;

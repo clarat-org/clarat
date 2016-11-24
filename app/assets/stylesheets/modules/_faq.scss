@@ -35,6 +35,11 @@
   ul {
     padding-left: 0;
   }
+
+  li {
+    margin-left: 20px;
+    list-style-type: square;
+  }
 }
 
 li[class^="FAQ__ico"] {

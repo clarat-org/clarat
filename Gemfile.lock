@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: f90286ff0e06994203b668452f9b45140ac7a258
+  revision: b1facccc91cc9e341fd4594c8fa5c70e79cff0f4
   specs:
     clarat_base (0.1.4)
       aasm
@@ -64,7 +64,7 @@ GEM
     algoliasearch (1.11.0)
       httpclient (~> 2.8.2)
       json (>= 1.5.1)
-    algoliasearch-rails (1.15.1)
+    algoliasearch-rails (1.16.2)
       algoliasearch (~> 1.11.0)
       json (>= 1.5.1)
     arcane (1.1.1)
@@ -128,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.1.0)
+    closure_tree (6.2.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -145,7 +145,7 @@ GEM
     coffee-script-source (1.10.0)
     colored (1.2)
     concurrent-ruby (1.0.2)
-    connection_pool (2.2.0)
+    connection_pool (2.2.1)
     coveralls (0.8.10)
       json (~> 1.8)
       rest-client (>= 1.6.8, < 2)
@@ -163,7 +163,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20160826)
+    domain_name (0.5.20161021)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -176,7 +176,7 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    enumerize (2.0.0)
+    enumerize (2.0.1)
       activesupport (>= 3.2)
     equalizer (0.0.11)
     erubis (2.7.0)
@@ -306,7 +306,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.9)
+    nokogumbo (1.4.10)
       nokogiri
     paper_trail (5.2.2)
       activerecord (>= 3.0, < 6.0)
@@ -368,6 +368,7 @@ GEM
     rails-assets-hammerjs (2.0.8)
     rails-assets-iCheck (1.0.2)
       rails-assets-jquery (>= 1.7)
+    rails-assets-ifvisible.js (1.0.6)
     rails-assets-imagesloaded (3.2.0)
       rails-assets-eventEmitter (>= 4.2, < 5.0)
       rails-assets-eventie (~> 1.0.4)
@@ -415,7 +416,7 @@ GEM
     rake (11.3.0)
     rdoc (4.2.0)
     redcarpet (3.3.4)
-    redis (3.3.1)
+    redis (3.3.2)
     ref (2.0.0)
     request_store (1.3.1)
     require_all (1.3.3)
@@ -620,6 +621,7 @@ DEPENDENCIES
   rails-assets-flexibility!
   rails-assets-hammerjs!
   rails-assets-iCheck!
+  rails-assets-ifvisible.js!
   rails-assets-isInViewport!
   rails-assets-jquery!
   rails-assets-jquery-cookie!
@@ -648,6 +650,9 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   virtus
   webmock
+
+RUBY VERSION
+   ruby 2.2.2p95
 
 BUNDLED WITH
    1.12.5

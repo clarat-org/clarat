@@ -124,8 +124,10 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       return
 
     @ttAutoTranslations.qtip
-      id: '@ttAutoTranslations'
+      id: 'ttAutoTranslations'
       position:
+        my: "top center"
+        at: "bottom center"
         effect: false
       content:
         button: 'x'
@@ -141,7 +143,6 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       style:
         tip:
           corner: false
-          corner: 'top left'
 
 
     @ttAutoTranslations.qtip('api').show()

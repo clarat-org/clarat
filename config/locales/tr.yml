@@ -793,6 +793,16 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+      nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -1144,6 +1154,10 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      family:
+        title: 
+      refugees:
+        title: 
       title: 
     shared:
       address:

@@ -1274,6 +1274,16 @@ de:
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
+      nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1689,6 +1699,10 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      family:
+        title: 
+      refugees:
+        title: 
       title: Bitte wähle deine clarat-Welt
     shared:
       address:

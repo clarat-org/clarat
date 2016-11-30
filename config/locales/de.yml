@@ -1077,6 +1077,10 @@ de:
       sort:
         nearby: In der Nähe
         relevance: Beste Treffer
+      tabs:
+        categories: Kategorien
+        filter: Filter
+        map: Karte
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1255,9 +1259,6 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1274,6 +1275,22 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
+      navigation:
+        category_headline: Oder suche nach Kategorien
+        claim:
+          family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+          main: Einfach Hilfe finden
+          refugees: Unterstützungsangebote für Flüchtlinge
+      top_bar:
         german_content_warning: Wähle deine Sprache
         languages:
           ar: "عربي"
@@ -1283,22 +1300,18 @@ de:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
+        section_link:
+          desktop:
+            family: "‹ zu clarat refugees"
+            refugees: "‹ zu clarat family"
+          mobile:
+            home:
+              family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
+              refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
+            switch:
+              family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
+              refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
-      navigation:
-        category_headline: Oder suche nach Kategorien
-        claim:
-          family: Unterstützungsangebote für Kinder, Jugendliche und Familien
-          main: Einfach Hilfe finden
-          refugees: Unterstützungsangebote für Flüchtlinge
-      top_bar:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
   offers:
     index:
       filters:
@@ -1452,10 +1465,12 @@ de:
         alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
         schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
         Lieblingssong ist Explanations von Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Wer steckt hinter clarat?
       jacinta: Hat Deutsch und Französisch studiert. Ihre Muttersprache ist Englisch. Sie kann gut einfach und klar schreiben. Bei clarat ist sie um Übersetzer-Team und übersetzt clarat ins Englische. Ihr Lieblingssong ist Wannabe von den Spice Girls.
       jakob: Ist Asien- und Afrikawissenschaftler. Das heißt, er weiß viel über diese Kontinente. Er bleibt auch bei Stress immer ruhig. Bei clarat ist er im Research-Team. Und er sucht im Internet nach Organisationen. Sein Lieblingssong ist Simplicity von Mbarga.
       janina: Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter, wenn sie Fragen haben. Ihr Lieblingssong ist MFG von Fanta4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: Janne hat Politik und internationale Beziehungen studiert. Sie kann gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist Sweat von Ry X.
       jenny: 'Ist Sozialanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie findet immer eine Lösung. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist I sing I swim von Seabear. '
       jens: |
@@ -1469,6 +1484,7 @@ de:
         Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
         clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
         Lieblingssong ist Reckoner von Radiohead.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: |
         Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
         Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
@@ -1507,6 +1523,7 @@ de:
         Jein von Fettes Brot.
       philipp: Hat Geschichte, Politik und Recht studiert. Er weiß viel über Politik und Gesellschaft. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist This Is Our Science von Astronautalis.
       sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
+      sophie: Hat Nonprofit Management studiert. Sie kann gut organisieren und erkennt schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Lost von Frank Ocean.
       stefan: Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und Gesellschaft. Er kann Menschen gut für eine Sache begeistern. Und er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The Storm von The Doors.
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
@@ -1523,11 +1540,7 @@ de:
         Flüchtlinge auf clarat refugees.
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1690,11 +1703,6 @@ de:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: Bitte wähle deine clarat-Welt
     shared:
       address:

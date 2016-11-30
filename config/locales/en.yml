@@ -26,10 +26,11 @@ en:
       fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
-      male: Mister
-      obfuscated_email: |-
-        This e-mail address is protected from spam bots, you must enable
+      male: Mr.
+      obfuscated_email: |+
+        This e-mail address is protected from spam bots. You must enable
         JavaScript in your browser to view it.
+
       phone: 'Telephone:'
       prof_dr: Prof. Dr.
     faq:
@@ -60,7 +61,7 @@ en:
             name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/
-            var: link_to_bsz
+            var: NOTRANSLATE
           question: How long will clarat exist?
         question_12:
           answer: |
@@ -525,7 +526,7 @@ en:
         amh: Amh
         ara: Ara
         aze: Aze
-        bam: 
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -535,7 +536,7 @@ en:
         cpe: Cpe
         cze: Cze
         deu: Deu
-        dyu: 
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -556,7 +557,7 @@ en:
         lit: Lit
         ltz: Ltz
         luo: Luo
-        man: 
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -568,7 +569,7 @@ en:
         rus: Rus
         skr: Skr
         slo: Slo
-        slv: 
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -675,7 +676,11 @@ en:
         next: Next
       sort:
         nearby: nearby
-        relevance: 
+        relevance: Best matches
+      tabs:
+        categories: Categories
+        filter: Filter
+        map: Map
     search_results:
       bridge: for the search term
       enclosing: found
@@ -701,7 +706,9 @@ en:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        one: Online and telephone (%{count})
+        other: Online and telephone (%{count})
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
@@ -824,9 +831,6 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: write us a message.
@@ -841,6 +845,25 @@ en:
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: |-
+          Automated translations!
+          <br><br>
+          On clarat, some of the texts in your language have been translated by Google Translate. These texts might sound a bit strange sometimes. Or the language might be a bit wrong.
+      navigation:
+        category_headline: Search by categories
+        claim:
+          family: Support offerings for children, adolescents and families
+          main: Find help easily
+          refugees: Support offerings for refugees
+      top_bar:
         german_content_warning: Legal information can only be viewed in German
         languages:
           ar: "عربي"
@@ -850,22 +873,18 @@ en:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
+        section_link:
+          desktop:
+            family: "‹ to clarat refugees"
+            refugees: "‹ to clarat family"
+          mobile:
+            home:
+              family: to the <span class="top-bar__emphasis">clarat family</span> homepage
+              refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
+            switch:
+              family: switch to <span class="top-bar__emphasis">clarat refugees</span>
+              refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-      navigation:
-        category_headline: Search by categories
-        claim:
-          family: Support offerings for children, adolescents and families
-          main: Find help easily
-          refugees: Support offerings for refugees
-      top_bar:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
   offers:
     index:
       filters:
@@ -1036,6 +1055,7 @@ en:
         laws that apply to lots of different countries. She can understand complicated
         things easily. And she find solutions quickly, too. At clarat she's part of the
         research team. Her favourite song is “Explanations” by Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Who are the people behind clarat?
       jacinta: Jacinta studied French and German. Her native language is English. She can write things easily and clearly. At clarat she's in the translator team and translates clarat into the English language. Her favourite song is "Wannabe" by the Spice Girls.
       jakob: Jakob is an African and Asian studies expert. That means he knows a lot about these two continents. Jakob stays calm in stressful situations. At clarat he's in the research team. And he uses the internet to look for organizations. His favourite song is "Simplicity" by Mbarga.
@@ -1044,6 +1064,7 @@ en:
         people and cultures. She writes very well. She is part of the clarat
         research team. She helps clarat
         users when they have questions. Her favourite song ist “MFG” by Fanta4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: |-
         Janne studied political science and international relations. She has
         excellent time management skills. At clarat she is part of the research
@@ -1065,6 +1086,7 @@ en:
         in a simple way. At clarat she is part of the research team and is an
         expert on our clarat language. Her favorite song is “Reckoner” by
         Radiohead.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: |-
         Julian studied social economics. That means he knows a lot about the
         economy and society. He is also good with computers. At clarat he is
@@ -1119,6 +1141,7 @@ en:
         song is “Jein” by Fettes Brot.
       philipp: Philipp studied history, politics and law. He knows a lot about society and politics. He can understand complicated things. He's part of the clarat research team. His favourite song is "This is our Science" by Astronautalis.
       sabine: Sabine is a sociologist. That means she knows a lot about society. She can understand complicated things very well. At clarat, she's in the research team. She explains the asylum laws in Germany to us. Her favourite song is "Vesna" by Kino.
+      sophie: 
       stefan: |-
         Stefan is an expert on cultural studies, which means he knows a lot
         about culture and society. He is good at getting people excited about a
@@ -1297,11 +1320,6 @@ en:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: Please choose your clarat-section
     shared:
       address:
@@ -1321,10 +1339,10 @@ en:
     faq: frequently-asked-questions
     fr: fr
     haeufige-fragen: frequently-asked-questions
-    home: 
+    home: home
     impressum: impressum
-    liste: 
-    liste-de-services: 
+    liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: offers
     organizations: organizations

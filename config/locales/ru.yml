@@ -586,7 +586,7 @@ ru:
         amh: Amh
         ara: Ara
         aze: Aze
-        bam: 
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
@@ -596,7 +596,7 @@ ru:
         cpe: Cpe
         cze: Cze
         deu: Deu
-        dyu: 
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -617,7 +617,7 @@ ru:
         lit: Lit
         ltz: Ltz
         luo: Luo
-        man: 
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -629,7 +629,7 @@ ru:
         rus: Rus
         skr: Skr
         slo: Slo
-        slv: 
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -736,6 +736,10 @@ ru:
       sort:
         nearby: 
         relevance: 
+      tabs:
+        categories: 
+        filter: 
+        map: 
     search_results:
       bridge: "для"
       enclosing: "найдено"
@@ -886,9 +890,6 @@ ru:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: "просто напиши нам E-Mail."
@@ -900,16 +901,15 @@ ru:
             рабоатет не правильно? Тогда
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
-        german_content_warning: 
         languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: "Автоматический перевод!"
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: "Или поиск по категориям"
         claim:
@@ -919,14 +919,27 @@ ru:
           refugees: |
             Предложения о помощи для беженцев
       top_bar:
+        german_content_warning: 
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fr: Français
+          pl: Polski
+          ru: "Русский"
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
+        title: "Автоматический перевод!"
   offers:
     index:
       filters:
@@ -1070,10 +1083,12 @@ ru:
       elisa: "Элиза - культуролог. Она многое знает о культуре. Она может сложное объяснить простыми словами. В clarat она работает в команде сбора информации. Еще она заботится о текстах  и пользователях нашего сайта. Ее любимая песня - Boat Behind группы Кингс оф конвиниенс (Kings of Convenience)."
       esther: 
       franziska: "Франциска - международный юрист. Она многое знает о законах, которые действительны для всех стран. Она быстро понимает сложные вещи и находит решения. В clarat она работает в команде сбора информации. Ее любимая песня - Explanations певицы из Бельгии Села Сью (Selah Sue)"
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: "Что подразумевает clarat"
       jacinta: 
       jakob: 
       janina: "Янина изучала этнологию культуры. Это значит, что она многое знает о культурах и людях. Она очень хорошо пишет. В clarat она работает в команде сбора информации. Ее любимая песня - MFG группы Fanta4."
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: "Янне изучала политику и международные отношения. Она очень хорошо распределяет свое время. В clarat она работает в команде сбора информации. Ее любимая песня - Sweat австралийского исполнителя Ry X."
       jenny: 
       jens: |2-
@@ -1081,6 +1096,7 @@ ru:
         Енс Научный работник по воспитанию. Это значит, что он хорошо разбирается в воспитании. Он быстро понимает сложные вопросы. В clarat он работает в команде сбора информации и решает какие предложения относятся к clarat. Его любимая песня (2В2) от группы Лэмбчоп (Lambchop).
       jule: "Юле Исследовательница мира и конфликтов. Это значит, что она много знает о конфликтах и войне. Она хорошо умеет разрешать проблемы. В clarat она работает в команде сбора информации и следит за качеством нашей работы. Её любимая песня Home от исполнителя Эдварда Шарпа (Edward Sharpe)."
       julia: "Юлия Германист. Это значит, что она хорошо разбирается в текстах и в немецком языке. Она может хорошо писать у понятно объяснять вещи. В clarat она работает в команде сбора информации и является экспертом по языку clarat. Её любимая песня Reckoner от группы  Рэдиохэд (Radiohead)."
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: "Юлиан Социальный экономист. Это значит, что он знает много о экономике и обществе. Он хорошо разбирается в компьютерах. В clarat он работает в команде сбора информации и занимается техническими вопросами. Его любимая песня All You Need от Сублим (Sublime)."
       juliane: 
       karo: 
@@ -1100,6 +1116,7 @@ ru:
       nils: "Нильс Специалист по информатике. Это значит, что он хорошо умеет программировать компьютерные программы и сайты в интернете. Он хорошо решает проблемы и быстро осваивает новые вещи. В clarat он работает команде технической информации. Его любимая песня Jein от группы Фэттэс Брот (Fettes Brot)."
       philipp: 
       sabine: 
+      sophie: 
       stefan: "Штефан Специалист по науке культуры. Это значит, что он знает много о культуре и обществе. Он хорошо умеет увлекать людей. Он создал clarat. Его любимая песня Riders in The Storm от Де Доорс (The Doors)."
       text: 'clarat это проект некоммерческого фонда Benckiser Stiftung Zukunft (фонд Бенкизер, Будущее) - www.benckiser-stiftung.org. Вместе с этим фондом уже несколько лет мы содействуем в продвижении проектов для детей и молодежи. При этом мы снова и снова обращали внимание на одну вещь: довольно тяжело найти какие возможности поддержки и помощи в целом существуют и трудно в них разобраться. Тогда мы поняли, что если для нас, "экспертов" тяжело найти и понять это, то каково детям, молодежи, семьям, которым действительно нужна помощь? Либо беженцам, которые здесь, в Германии еще вовсе не освоились? На это есть один ответ: очень сложно! Так и родилась идея создать clarat: возможность легко найти помощь. Для семей - в clarat family и для беженцев - в clarat refugee.'
       tine: "Тине Социальный педагог. Она может хорошо слушать людей. Она также писатель. Это значит что она хорошо владеет языком и красиво умеет писать истории. В clarat она работает в команде научного сбора информации. Её любимая песня Survive от Гостпоэт (Ghostpoet)."
@@ -1247,11 +1264,6 @@ ru:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: 
     shared:
       address:

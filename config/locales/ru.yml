@@ -585,6 +585,7 @@ ru:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
         bam: Bam
         ban: Ban
@@ -593,6 +594,7 @@ ru:
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
@@ -790,6 +792,7 @@ ru:
         '639': "Персидский язык - دری"
         amh: "Амхарский язык - አማርኛ"
         ara: "Арабский язык - عربي"
+        arc: "Арамейские языки - ארמית / Arāmît"
         aze: "Азербайджанский язык - Azərbaycan"
         bam: "Бамана́ - Bamanankan"
         ban: "Балийский язык - Basa Bali"
@@ -798,6 +801,7 @@ ru:
         ber: "берберский - Tamaziɣt"
         bos: "Боснийский язык - bosanski"
         bul: "Болгарский язык - български"
+        cau: "Абазинский язык - абаза бызшва"
         cpe: Kamtok - Pidgin
         cze: "Чешский язык - čeština"
         deu: "Немецкий язык - Deutsch"

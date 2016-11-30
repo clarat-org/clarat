@@ -606,6 +606,7 @@ pl:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
         bam: Bam
         ban: Ban
@@ -614,6 +615,7 @@ pl:
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
@@ -807,6 +809,7 @@ pl:
         '639': Język perski (dari) - دری
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
+        arc: Język aramejski - ארמית / Arāmît
         aze: Język azerski - Azərbaycan
         bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
@@ -815,6 +818,7 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cau: Język abazyński - абаза бызшва
         cpe: Język kamtok - Pidgin
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch

@@ -465,6 +465,7 @@ ar:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
         bam: Bam
         ban: Ban
@@ -473,6 +474,7 @@ ar:
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
@@ -664,6 +666,7 @@ ar:
         '639': " لغة فارسية - دری"
         amh: "لغة أمهرية - አማርኛ"
         ara: " لغة عربية - عربي"
+        arc: "لغة آرامية - ארמית / Arāmît"
         aze: "لغة أذرية - Azərbaycan"
         bam: Bambara - Bamanankan
         ban: "لغة بالية - Basa Bali"
@@ -672,6 +675,7 @@ ar:
         ber: "لغة أمازيغية - Tamaziɣt"
         bos: "لغة بوسنوية - bosanski"
         bul: "لغة بلغارية - български"
+        cau: "لغة أباظية - абаза бызшва"
         cpe: Kamtok - Pidgin
         cze: "لغة تشيكية - čeština"
         deu: "لغة ألمانية - Deutsch"

@@ -479,6 +479,7 @@ tr:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
         bam: Bam
         ban: Ban
@@ -487,6 +488,7 @@ tr:
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
@@ -681,6 +683,7 @@ tr:
         '639': Farsça - دری
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
+        arc: Aramice - ארמית / Arāmît
         aze: Azerice - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
@@ -689,6 +692,7 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cau: Abazaca - абаза бызшва
         cpe: Kamtok - Pidgin
         cze: "Çekçe - čeština"
         deu: Almanca - Deutsch

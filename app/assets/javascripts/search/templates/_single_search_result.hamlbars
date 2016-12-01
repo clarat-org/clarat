@@ -11,7 +11,7 @@
     %div.Listing-results__stamp
       = hb 'current_stamp'
 
-      %button.Listing-results__expander{'aria-toggle' => 'false'}
+      %button.Listing-results__expander{'aria-expanded' => 'false'}
         = hb '@root.toggle_search_result_details'
 
     = hb 'if location_visible' do

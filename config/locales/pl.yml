@@ -745,7 +745,7 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
-        sort: 
+        sort: Sortuj według
         target_audience: Pomoc dla kogo?
       option_any: obojętne
       pagination:
@@ -753,12 +753,12 @@ pl:
         gap: "..."
         next: Dalej
       sort:
-        nearby: 
-        relevance: 
+        nearby: blisko
+        relevance: Najlepsze mecze
       tabs:
-        categories: 
-        filter: 
-        map: 
+        categories: Kategorie
+        filter: Filtr
+        map: Mapa
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -773,8 +773,11 @@ pl:
         headline_small_map: Oferty na mapie
       more: Inne oferty telefoniczne i online
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: Pokaż %{result_count} wyników
+      personal_anchor:
+        few: W Twojej okolicy (%{count})
+        one: W Twojej okolicy (%{count})
+        other: W Twojej okolicy (%{count})
       personal_offers:
         few: "%{count} ofert na miejscu"
         one: Jedna oferta na miejscu
@@ -785,7 +788,10 @@ pl:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        few: Online i telefon (%{count})
+        one: Online i telefon (%{count})
+        other: Online i telefon (%{count})
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
@@ -938,6 +944,7 @@ pl:
           ar: "عربي"
           de: Deutsch
           en: English
+          fa: 
           fr: Français
           pl: Polski
           ru: "Русский"

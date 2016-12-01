@@ -621,7 +621,7 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
-        sort: 
+        sort: Göre sırala
         target_audience: Kim için destek?
       option_any: fark etmez
       pagination:
@@ -629,12 +629,12 @@ tr:
         gap: "..."
         next: ileri
       sort:
-        nearby: 
-        relevance: 
+        nearby: Yakınlardaki
+        relevance: En iyi maçlar
       tabs:
-        categories: 
-        filter: 
-        map: 
+        categories: Kategoriler
+        filter: filtre
+        map: Harita
     search_results:
       bridge: için
       enclosing: bulundu
@@ -649,8 +649,8 @@ tr:
         headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
       more: Daha fazla telefon ve online hizmetler
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: "%{result_count} sonuç göster"
+      personal_anchor: Yakınlardaki (%{count})
       personal_offers:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
@@ -660,7 +660,7 @@ tr:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor: Online ve telefon (%{count})
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
@@ -821,6 +821,7 @@ tr:
           ar: "عربي"
           de: Deutsch
           en: English
+          fa: 
           fr: Français
           pl: Polski
           ru: "Русский"

@@ -11,6 +11,10 @@
     display: inline-block;
   }
 
+  label[for="subscription_email"] {
+    @extend %visually-hidden;
+  }
+
 }
 
 .newsletter-subscribe__input,

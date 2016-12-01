@@ -41,34 +41,39 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
       $offCanvasContainer = $('#off-canvas-container')
       $tabFilter = $offCanvasContainer.find('#tab_filter')
       $tabCategories = $offCanvasContainer.find('#tab_categories')
-      $tabMap = $offCanvasContainer.find('#tab_map')
       $advancedSearch = $('#advanced_search')
       $categories = $('#categories')
-      $map = $('#map-container')
       $asideStandard = $('.aside-standard:first')
-      $asideStandardMap = $('.aside-standard:eq(1)')
       $listingResults = $('.Listing-results:first')
+      $asideStandardContainer = $('.aside-standard__container') # quasi map
+      $tabMap = $('#tab_map')
 
       if $(window).width() < 750
         # Put categories in offcanvascontainer
         $categories.appendTo $tabCategories
         # Put $advancedSearch in offcanvascontainer
         $advancedSearch.appendTo $tabFilter
-        # Put $advancedSearch in mapcontainer
-        $map.appendTo $tabMap
+        # Put map in tab map in Off C
+        $asideStandardContainer.appendTo $tabMap
+        $('#map-container').trigger 'Clarat.GMaps::Resize'
+
+
       else
         # Put categories in aside
         $categories.prependTo $asideStandard
         # Put $advancedSearch above Listing-results
         $advancedSearch.insertBefore $listingResults
-        # Put categories in aside
-        $map.prependTo $asideStandardMap
+        # Put map to sidebar again
+        $asideStandardContainer.appendTo $asideStandard
       return
     ), 50, this)
 
 
   toggleHandler: =>
     $('#off-canvas-container').toggleClass 'active'
+    $('#map-container').trigger 'Clarat.GMaps::Resize'
+    window.dispatchEvent new Event('resize')
+
     $('body').toggleClass 'offcanvas-active'
 
   getResultsCountFromMainResults: (event, resultSet) =>

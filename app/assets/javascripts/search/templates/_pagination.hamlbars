@@ -1,15 +1,18 @@
 %nav.pagination
   = hb 'if prev_page' do
     %span.prev
-      %a.JS-PaginationLink{href: '#', data: {page: '{{ prev_page }}'}}= hb 'backward_text'
+      %a.JS-PaginationLink{href: '#', data: {page: '{{ prev_page }}'}}
+        = hb 'backward_text'
 
   = hb 'each pages' do
     %span.page{class: '{{class}}'}
       = hb 'if link' do
-        %a.JS-PaginationLink{href: '#', data: {page: '{{ text }}'}}= hb 'text'
+        %a.JS-PaginationLink{href: '#', data: {page: '{{ text }}'}}
+          = hb 'text'
         = hb 'else' # The indentation is correct.
         = hb 'text'
 
   = hb 'if next_page' do
     %span.next
-      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}}= hb 'forward_text'
+      %a.JS-PaginationLink{href: '#', data: {page: '{{ next_page }}'}}
+        = hb 'forward_text'

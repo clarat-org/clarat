@@ -6,19 +6,19 @@
 
 #new_search_form {
   @extend %clearfix;
-  padding: 22px 0 0 25px;
-  width: 700px;
+  -js-display: flex;
+  display: flex;
+  padding: 29px 25px 0;
   list-style: none;
 
   body.ar & {
-    padding: 22px 25px 0 0;
+    padding: 29px 15px 0 15px;
   }
 
   .input {
     &.string {
+      flex: 1;
       position: relative;
-      display: inline-block;
-      float: left;
 
       body.ar & {
         float: right;
@@ -52,12 +52,24 @@
     }
   }
 
+  .search-form--input-wrapper {
+    flex: 1;
+    -js-display: flex;
+    display: flex;
+
+    .template--pages-home & {
+      -js-display: flex;
+      display: flex;
+    }
+  }
+
   .template--pages-home & {
+    -js-display: flex;
+    display: flex;
     position: relative;
     margin: 0 auto;
     padding: 30px 0 0;
-    width: 820px;
-    display: inherit;
+    max-width: 85%;
 
     #search_form_query,
     #search_form_search_location,
@@ -69,7 +81,6 @@
     #search_form_query,
     #search_form_search_location {
       max-width: 100%;
-      width: 360px;
     }
   }
 
@@ -87,7 +98,7 @@
 #search_form_search_location {
   margin-right: 10px;
   padding: 0 15px 0 15px;
-  max-width: 288px;
+  width: calc(100% - 10px);
   background: $brand_white;
   font-size: 20px;
   line-height: 47px;
@@ -116,7 +127,7 @@
 }
 
 #search_form_query {
-  width: 288px;
+  //max-width: 328px;
   padding-left: 62px;
 
   body.en & {
@@ -137,8 +148,14 @@
   }
 }
 
+#search_form_query,
 #search_form_search_location {
-  width: 278px;
+  .template--pages-home & {
+    width: calc(100% - 10px);
+  }
+}
+
+#search_form_search_location {
   padding-left: 52px;
   border-radius: 0;
 
@@ -197,18 +214,33 @@
 }
 
 .main-search__advanced-filter {
-  position: absolute;
-  vertical-align: middle;
+  font-size: 18px;
   color: $brand_brown;
   text-decoration: none;
-  font-size: 12px;
-  transform: translate(0, -50%);
-  top: 50%;
+  padding-left: 30px;
+  background: no-repeat left center;
+  margin-left: 25px;
+  margin-top: 8px;
 
-  .overlay-active & {
-    background: $brand_yellow;
-    padding: 15px;
-    margin-left: -15px;
+  body:not(.template--offers-index) & {
+    display: none;
+  }
+
+  body.refugees &,
+  body.family & {
+    background-color: transparent;
+  }
+
+  body.ar & {
+    padding-right: 15px;
+  }
+
+  &[aria-expanded="false"] {
+    background-image:  image-url('ico_advsearch_expand.svg');
+  }
+
+  &[aria-expanded="true"] {
+    background-image:  image-url('ico_advsearch_collapse.svg');
   }
 
 }

@@ -700,7 +700,7 @@ fr:
         approach: De quelle Manière?
         gender: Sexe
         language: Langue
-        sort: 
+        sort: Trier par
         target_audience: De l'aide pour qui?
       option_any: "égal"
       pagination:
@@ -708,12 +708,12 @@ fr:
         gap: "..."
         next: de nouveau
       sort:
-        nearby: 
-        relevance: 
+        nearby: proche
+        relevance: Meilleurs matchs
       tabs:
-        categories: 
-        filter: 
-        map: 
+        categories: Catégories
+        filter: Filtre
+        map: Carte
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé
@@ -728,8 +728,12 @@ fr:
         headline_small_map: services sur place sur la carte
       more: d'autres services par téléphone ou en ligne
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: |2-
+
+          Afficher %{result_count} résultats
+      personal_anchor:
+        one: Dans votre région (%{count})
+        other: Dans votre région (%{count})
       personal_offers:
         one: un service sur place
         other: "%{count} services sur place"
@@ -739,7 +743,13 @@ fr:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        one: |2-
+
+          En ligne et téléphone (%{count})
+        other: |2-
+
+          En ligne et téléphone (%{count})
       remote_offers:
         one: Une assistance téléphonique ou un service en ligne
         other: "%{count} Assistances téléphoniques ou services en ligne"
@@ -892,6 +902,7 @@ fr:
           ar: "عربي"
           de: Deutsch
           en: English
+          fa: 
           fr: Français
           pl: Polski
           ru: "Русский"

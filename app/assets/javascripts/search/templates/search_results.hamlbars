@@ -1,27 +1,24 @@
-= hb 'if personal_focus_with_remote' do
-  %h2.Listing-results__headline.Listing-results__headline--remote
-    = hb 'remote_results_headline'
+%div.result-order
+  = hb 'if personal' do
+    = hb '> _sort_order'
 
-    = hb 'if has_two_or_more_remote_results' do
-      .more_remote-offers_open
-        %a.JS-ToggleContactType{ href: '{{more_href}}' }
-          = hb 'more_anchor'
+%ul.Type-results
+  %li.Type-results__item{class: '{{personalActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToPersonal{href: '{{switch_href}}'}
+      = hb 'personal_anchor'
+  %li.Type-results__item{class: '{{remoteActiveClass}}'}
+    %a.Type-results__link.JS-SwitchToRemote{href: '{{switch_href}}'}
+      = hb 'remote_anchor'
 
-  %ul.Listing-results__list
-    = hb 'each remote_offers' do
-      - # first remote offer
-      = hb '> _single_search_result'
-
-
-%h2.Listing-results__headline.Listing-results__headline--remote
-  .search-string
-    = hb! 'main_results_headline'
-
-  = hb 'if remote_focus' do
-    .more_remote-offers_open
-      %a.JS-ToggleContactType{ href: '{{more_href}}' }
-        = hb 'toggle_personal_anchor'
-
+.Breadcrumbs--offer-index
+  %div.Breadcrumb__container
+    = hb! 'main_results_query'
+    %div.Breadcrumb__path
+      = hb! 'main_results_headline'
+    %div.Breadcrumb__location
+      = hb! 'main_results_location'
+  %a{href: 'https://www.algolia.com/', target: '_blank'}
+    %img.Breadcrumbs__sponsor{src: '{{algolia_logo_path}}', alt: 'Algolia Logo'}
 
 = hb 'unless personal_focus_with_remote' do
   %h2.Listing-results__headline

@@ -728,7 +728,7 @@ ru:
         approach: "Каким образом?"
         gender: "Пол"
         language: "Язык"
-        sort: 
+        sort: "Сортировка по"
         target_audience: "Помощь для кого?"
       option_any: "все равно"
       pagination:
@@ -736,12 +736,12 @@ ru:
         gap: "..."
         next: "Дальше"
       sort:
-        nearby: 
-        relevance: 
+        nearby: "неподалеку"
+        relevance: "Лучшие матчи"
       tabs:
-        categories: 
-        filter: 
-        map: 
+        categories: "категории"
+        filter: "Фильтр"
+        map: "карта"
     search_results:
       bridge: "для"
       enclosing: "найдено"
@@ -756,8 +756,12 @@ ru:
         headline_small_map: "Предложения на месте показать на карте"
       more: "Дугие предложения по телефону и он-лайн"
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: "Показать %{result_count} результатов"
+      personal_anchor:
+        few: "В вашем районе (%{count})"
+        many: "В вашем районе (%{count})"
+        one: "В вашем районе (%{count})"
+        other: "В вашем районе (%{count})"
       personal_offers:
         few: "%{count} Angebote vor Ort"
         one: "Предложение на месте"
@@ -768,7 +772,11 @@ ru:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        few: "Интернет и телефон (%{count})"
+        many: "Интернет и телефон (%{count})"
+        one: "Интернет и телефон (%{count})"
+        other: "Интернет и телефон (%{count})"
       remote_offers:
         few: "%{count} Telefonberatungen und Onlineangebote"
         one: "Одно предложение по телефону или одно предложение он-лайн"
@@ -928,6 +936,7 @@ ru:
           ar: "عربي"
           de: Deutsch
           en: English
+          fa: 
           fr: Français
           pl: Polski
           ru: "Русский"

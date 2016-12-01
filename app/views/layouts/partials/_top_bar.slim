@@ -1,10 +1,10 @@
 .top-bar
   .top-bar__container
-    - inverse_section = (@current_section == 'family') ? 'refugees' : 'family'
+    - inverse_section = (current_section == 'family') ? 'refugees' : 'family'
     - if request.path != section_choice_path
       = link_to home_path(section: inverse_section),
                 class: 'top-bar__world-link' do
-        = t (".section_link.desktop.#{@current_section}")
+        = t (".section_link.desktop.#{current_section}")
     .top-bar__world-select
       button.top-bar__world-select-button#top-bar__world-select-button[aria-label="Switch to other clarat section" aria-expanded="false"]
       .top-bar__world-select-overlay[aria-hidden="true"]
@@ -12,11 +12,11 @@
           li.top-bar__world-list-item.top-bar__world-list-item--otherworld
             = link_to home_path(section: inverse_section),
                       class: 'top-bar__world-list-link--otherworld' do
-              == t (".section_link.mobile.switch.#{@current_section}")
+              == t (".section_link.mobile.switch.#{current_section}")
           li.top-bar__world-list-item.top-bar__world-list-item--worldhome
-            = link_to home_path(section: @current_section),
+            = link_to home_path(section: current_section),
                       class: 'top-bar__world-list-link--worldhome' do
-              == t (".section_link.mobile.home.#{@current_section}")
+              == t (".section_link.mobile.home.#{current_section}")
 
     .nav-lang
       - if I18n.locale == :de

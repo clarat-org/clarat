@@ -364,6 +364,7 @@ GEM
     rails-assets-algoliasearch (3.10.2)
     rails-assets-eventEmitter (4.3.0)
     rails-assets-eventie (1.0.6)
+    rails-assets-flexibility (2.0.1)
     rails-assets-hammerjs (2.0.8)
     rails-assets-iCheck (1.0.2)
       rails-assets-jquery (>= 1.7)
@@ -617,6 +618,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.1.12)
   rails-assets-algoliasearch!
+  rails-assets-flexibility!
   rails-assets-hammerjs!
   rails-assets-iCheck!
   rails-assets-ifvisible.js!

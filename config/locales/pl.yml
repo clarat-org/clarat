@@ -606,18 +606,20 @@ pl:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
-        bam: 
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
-        dyu: 
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -638,7 +640,7 @@ pl:
         lit: Lit
         ltz: Ltz
         luo: Luo
-        man: 
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -650,7 +652,7 @@ pl:
         rus: Rus
         skr: Skr
         slo: Slo
-        slv: 
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -753,6 +755,10 @@ pl:
       sort:
         nearby: 
         relevance: 
+      tabs:
+        categories: 
+        filter: 
+        map: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -803,6 +809,7 @@ pl:
         '639': Język perski (dari) - دری
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
+        arc: Język aramejski - ארמית / Arāmît
         aze: Język azerski - Azərbaycan
         bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
@@ -811,6 +818,7 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cau: Język abazyński - абаза бызшва
         cpe: Język kamtok - Pidgin
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
@@ -903,15 +911,28 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
+        languages:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
+      navigation:
+        category_headline: Lub szukaj w kategoriach
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+          main: Proste szukanie pomocy
+          refugees: Oferty wsparcia dla uchodźców
+      top_bar:
         german_content_warning: 
         languages:
           ar: "عربي"
@@ -921,22 +942,18 @@ pl:
           pl: Polski
           ru: "Русский"
           tr: Türkçe
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
         title: Automatyczne Tłumaczenia!
-      navigation:
-        category_headline: Lub szukaj w kategoriach
-        claim:
-          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
-          main: Proste szukanie pomocy
-          refugees: Oferty wsparcia dla uchodźców
-      top_bar:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
   offers:
     index:
       filters:
@@ -1077,15 +1094,18 @@ pl:
       elisa: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze. Potrafi też łatwo wytłumaczyć skomplikowane rzeczy. W clarat jest w zespole badawczym. Zajmuje się również leksykonem i użytkownikami. Jej ulubiony utwór to “Boat Behind” zespołu Kings of Convenience.
       esther: 
       franziska: Jest ekspertem prawa międzynarodowego.To znaczy, że wie dużo o prawie, które obowiązuje we wszystkich krajach. Potrafi zrozumieć skomplikowane rzeczy i znaleźć szybko rozwiązanie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Explanations” Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Kto się kryje za claratem?
       jacinta: 
       jakob: 
       janina: Jest antropologiem kulturowym. To znaczy, że wie dużo o ludziach i kulturach. Potrafi dobrze pisać. W clarat jest w zespole badawczym. Jest ekspertem językowym claratu i pomaga naszym użytkownikom. Jej ulubiony utwór to “MFG” Fanty4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: Janne studiowała Politykę i Stosunki Międzynarodowe. Potrafi świetnie gospodarować swoim czasem. W clarat jest w zespole badawczym. Ona decyduje, jakie oferty przynależą do claratu. Jej ulubiony utwór to “Sweat” Ry X.
       jenny: 
       jens: Jest pedagogiem. To znaczy, że zna się na wykształceniu. Szybko pojmuje skomplikowane rzeczy. W clarat jet w zespole badawczym i decyduje jakie oferty wybierze clarat. Jego ulubionym utworem jest “2B2” zespolu Lambchop.
       jule: Jest badaczem pokojowego rozwiązywania konfliktów. Wie dużo o konfliktach i wojnach. Potrafi dobrze znajdować rozwiązania. W clarat jest w zespole badawczym. Zabezpiecza jakość naszej pracy. Jej ulubiony utwór to “Home” Edwarda Sharpe.
       julia: Jest germanistką. To znaczy, że zna się dobrze na tekstach i na języku niemieckim. Potrafi dobrze pisać i łatwo wyjaśniać zagadnienia. W clarat jest w zespole badawczym. Jest też ekspertem językowym claratu. Jej ulubiony utwór to “Reckoner” Radiohead.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: Jest ekonomem społecznym. To znaczy, że wie dużo o gospodarce i społeczeństwie. Zna się też dobrze na komputerach. W clarat jest w zespole badawczym oraz zajmuje się sprawami technicznymi. Jego ulubiony utwór to “All You Need” Sublime.
       juliane: 
       karo: 
@@ -1107,6 +1127,7 @@ pl:
       nils: Jest informatykiem. To znaczy, że potrafi dobrze programować strony internetowe i programy komputerowe. Szybko znajduje dobre rozwiązania i szybko się uczy. W clarat jest w zespole IT. Jego ulubiony utwór to “Jein” grupy Fettes Brot.
       philipp: 
       sabine: 
+      sophie: 
       stefan: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze i społeczeństwie. Potrafi świetnie przekonywać ludzi do dobrej sprawy. On jest pomysłodawcą claratu. Jego ulubionym utworem jest “Riders On The Storm” The Doors.
       text: "clarat jest projektem stowarzyszenia użytecznosci publicznej, Stowarzyszenia Benckiser-Przyszłość (www.benckiser-stiftung.org). Przez stowarzyszenie Benckiser promujemy od wielu lat skuteczne projekty rozwojowe dla dzieci i młodzieży. Dlatego zauważyliśmy: Jak trudno jest rozeznać się w istniejących już ofertach pomocy. Ale jedno stało się jasne: Skoro nam “ekspertom” nie jest łatwo się w tym rozeznać, to jak trudne musi to być dla dzieci, młodzieży czy rodzin, które potrzebują pomocy? Albo dla uchodźców, którzy tutaj w Niemczech nie maja jeszcze jakiegokolwiek rozeznania? \nOdpowiedz jest prosta: Bardzo trudno! I stąd zrodził się pomysł na clarat: proste znalezienie pomocy. Dla rodzin: na stronie clarat family. A dla uchodźców: na clarat refugee."
       tine: Jest pedagogiem socjalnym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ Ghostpoet.
@@ -1256,11 +1277,6 @@ pl:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: 
     shared:
       address:

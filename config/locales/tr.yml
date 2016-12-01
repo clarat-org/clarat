@@ -479,18 +479,20 @@ tr:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
-        bam: 
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
-        dyu: 
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -511,7 +513,7 @@ tr:
         lit: Lit
         ltz: Ltz
         luo: Luo
-        man: 
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -523,7 +525,7 @@ tr:
         rus: Rus
         skr: Skr
         slo: Slo
-        slv: 
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -619,7 +621,7 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
-        sort: 
+        sort: Göre sırala
         target_audience: Kim için destek?
       option_any: fark etmez
       pagination:
@@ -627,8 +629,12 @@ tr:
         gap: "..."
         next: ileri
       sort:
-        nearby: 
-        relevance: 
+        nearby: Yakınlardaki
+        relevance: En iyi maçlar
+      tabs:
+        categories: Kategoriler
+        filter: filtre
+        map: Harita
     search_results:
       bridge: için
       enclosing: bulundu
@@ -643,8 +649,8 @@ tr:
         headline_small_map: Bulunduğum yerde sunulan hizmetleri haritada göster
       more: Daha fazla telefon ve online hizmetler
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: "%{result_count} sonuç göster"
+      personal_anchor: Yakınlardaki (%{count})
       personal_offers:
         one: Bulunduğun yerde bir hizmet
         other: "%{count} Bulunduğun yerde bir hizmet"
@@ -654,7 +660,7 @@ tr:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor: Online ve telefon (%{count})
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
@@ -677,6 +683,7 @@ tr:
         '639': Farsça - دری
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
+        arc: Aramice - ארמית / Arāmît
         aze: Azerice - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
@@ -685,6 +692,7 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        cau: Abazaca - абаза бызшва
         cpe: Kamtok - Pidgin
         cze: "Çekçe - čeština"
         deu: Almanca - Deutsch
@@ -777,9 +785,6 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -793,16 +798,15 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        german_content_warning: 
         languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Otomatik çeviriler
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        title: 
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -812,14 +816,28 @@ tr:
           refugees: |
             Mülteciler için yardım çeşitleri
       top_bar:
+        german_content_warning: 
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fa: 
+          fr: Français
+          pl: Polski
+          ru: "Русский"
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
+        title: Otomatik çeviriler
   offers:
     index:
       filters:
@@ -960,10 +978,12 @@ tr:
       elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
       esther: 
       franziska: Uluslararası hukukçu ve her ülkede geçerli olan yasalar hakkında bilgisi çok derin. Komplike konuları iyi anlıyor ve çabuk çözümler sunuyor. Clarat’ta araştırma ekibinde. Selah Sue’nun Explanations şarkısı en sevdiği parça.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Clarat’ın arka planında kim var?
       jacinta: 
       jakob: 
       janina: Janina kültür antropoloğu ve böylelikle değişik insan ve kültürler hakkında çok kapsamlı bilgisi var. Clarat’ta araştırma grubunda. Kendisi clarat-dil uzmanı ve kullanıcılarımıza yardımcı oluyor. En sevdigi parça Fanta4 grubunun MFG şarkısı.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: Janne politika ve uluslararası ilişkiler okudu. Zamanını çok iyi planlayabiliyor. Clarat’ta araştırma ekibinde ve bu kapsamda hangi sunumların clarat teklifi olabileceğine karar veriyor. En sevdigi müzik parçası Ry X’in Sweat parçası.
       jenny: 
       jens: |-
@@ -971,6 +991,7 @@ tr:
         Komplike şeyleri hızlıca anlıyor. clarat’da ise araştırma ekibinde yer alıyor. Kendisi hangi projelerin clarat’a ait olacağını belirliyor. En sevdiği şarkı Lambchop’un 2B2 şarkısı.
       jule: barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. Hızlıca çözüm üretebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. Kendisi işimizin kalitesini sağlıyor. En sevdiği şarkı Edward Sharpe’ın Home şarkısı.
       julia: bir Alman filoloğu. Bu, metinler ve Alman dili ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Clarat’da ise araştırma ekibinde clarat dilimizin uzmanı olmakta. En sevdiği şarkı Radiohead’in Reckoner şarkışı.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: bir sosyal ekonomist. Bu, kendisinin ekonomi ve toplum ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Aynı zamanda bilgisayarlarla da haşır neşir. Clarat’da ise araştırma ekibinde yer alıyor ve teknik kısmımızla ilgileniyor. En sevdiği şarkı Sublime’ın All You Need şarkısı.
       juliane: 
       karo: 
@@ -995,6 +1016,7 @@ tr:
         Jein von Fettes Brot.
       philipp: 
       sabine: 
+      sophie: 
       stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
       text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
@@ -1145,11 +1167,6 @@ tr:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: 
     shared:
       address:

@@ -1,2 +1,5 @@
-%a.JS-RemoveQueryLink{href: '#'}<
-  %i.fa.fa-times-circle
+.Breadcrumb__query
+  = hb 'query'
+  &nbsp;
+  %a.JS-RemoveQueryLink{href: '#'}
+    %i.fa.fa-times-circle

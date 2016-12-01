@@ -17,6 +17,7 @@
 }
 
 .off-canvas-container__top {
+  -js-display: flex;
   display: flex;
   z-index: 2000; // resolve z-index bug on real mobile devices
   left: 0;

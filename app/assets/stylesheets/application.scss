@@ -46,6 +46,11 @@
 @import "modules/tablist";
 @import "modules/hint";
 @import "modules/section-choice";
+@import "modules/type-results";
+@import "modules/result-order";
+@import "modules/top-bar";
+@import "modules/breadcrumbs";
+
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
 @import "modules/sections/section-offer";
@@ -63,6 +68,7 @@
 @import "navigation/nav-legal";
 @import "navigation/nav-welt";
 @import "navigation/nav-lang";
+@import "navigation/nav-off-canvas-trigger";
 
 @import "vendor/pagination";
 

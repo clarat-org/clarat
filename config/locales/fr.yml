@@ -561,18 +561,20 @@ fr:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
-        bam: 
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
-        dyu: 
+        dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
@@ -593,7 +595,7 @@ fr:
         lit: Lit
         ltz: Ltz
         luo: Luo
-        man: 
+        man: Man
         mkd: Mkd
         mul: Mul
         nor: Nor
@@ -605,7 +607,7 @@ fr:
         rus: Rus
         skr: Skr
         slo: Slo
-        slv: 
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -698,7 +700,7 @@ fr:
         approach: De quelle Manière?
         gender: Sexe
         language: Langue
-        sort: 
+        sort: Trier par
         target_audience: De l'aide pour qui?
       option_any: "égal"
       pagination:
@@ -706,8 +708,12 @@ fr:
         gap: "..."
         next: de nouveau
       sort:
-        nearby: 
-        relevance: 
+        nearby: proche
+        relevance: Meilleurs matchs
+      tabs:
+        categories: Catégories
+        filter: Filtre
+        map: Carte
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé
@@ -722,8 +728,12 @@ fr:
         headline_small_map: services sur place sur la carte
       more: d'autres services par téléphone ou en ligne
       off_canvas:
-        result_text: Show %{result_count} results
-      personal_anchor: 
+        result_text: |2-
+
+          Afficher %{result_count} résultats
+      personal_anchor:
+        one: Dans votre région (%{count})
+        other: Dans votre région (%{count})
       personal_offers:
         one: un service sur place
         other: "%{count} services sur place"
@@ -733,7 +743,13 @@ fr:
         category: 
         category_query: 
         default: 
-      remote_anchor: 
+      remote_anchor:
+        one: |2-
+
+          En ligne et téléphone (%{count})
+        other: |2-
+
+          En ligne et téléphone (%{count})
       remote_offers:
         one: Une assistance téléphonique ou un service en ligne
         other: "%{count} Assistances téléphoniques ou services en ligne"
@@ -756,6 +772,7 @@ fr:
         '639': Dari - دری
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
+        arc: Araméen - ארמית / Arāmît
         aze: Azéri - Azərbaycan
         bam: bambara - bamanankan
         ban: Balinais - Basa Bali
@@ -764,6 +781,7 @@ fr:
         ber: Berbère - Tamaziɣt
         bos: Bosnien - bosanski
         bul: Bulgare - български
+        cau: Abaza - абаза бызшва
         cpe: Pidgin camerounais - Pidgin
         cze: Tchèque - čeština
         deu: Allemand - Deutsch
@@ -857,32 +875,12 @@ fr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: "écris-nous tout simplement un message"
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
-        german_content_warning: 
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Traductions automatiques
-      navigation:
-        category_headline: ou recherches par catégories
-        claim:
-          family: Offres d'aide pour les enfants, les ados et les familles
-          main: Trouver simplement de l'aide
-          refugees: Offres d'aide pour les réfugiés
-      top_bar:
         languages:
           ar: 
           de: 
@@ -891,6 +889,36 @@ fr:
           pl: 
           ru: 
           tr: 
+        title: 
+      navigation:
+        category_headline: ou recherches par catégories
+        claim:
+          family: Offres d'aide pour les enfants, les ados et les familles
+          main: Trouver simplement de l'aide
+          refugees: Offres d'aide pour les réfugiés
+      top_bar:
+        german_content_warning: 
+        languages:
+          ar: "عربي"
+          de: Deutsch
+          en: English
+          fa: 
+          fr: Français
+          pl: Polski
+          ru: "Русский"
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: 
+            refugees: 
+          mobile:
+            home:
+              family: 
+              refugees: 
+            switch:
+              family: 
+              refugees: 
+        title: Traductions automatiques
   offers:
     index:
       filters:
@@ -1025,15 +1053,18 @@ fr:
       elisa: A fait des études de cultural studies. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Chez Clarat, elle est dans l'équipe recherche. Elle s'occupe également du lexique et des utilisateurs. Sa chanson préférée est Boat Behind de Kings of Convenience.
       esther: 
       franziska: A étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Qui est derrière clarat?
       jacinta: 
       jakob: 
       janina: A étudié l’anthropologie culturelle. Cela signifie qu'elle sait beaucoup de choses sur  les hommes et les différentes cultures. Elle écrit très bien. Chez clarat, elle est dans l’équipe recherche. Elle est l’experte de notre language clarat et s’occupe de nos utilisateurs. Sa chanson préférée est MFG de Fanta4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: A étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat, elle est dans l’équipe  recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat von Ry X.
       jenny: 
       jens: Est pédagogue. Cela signifie qu'il sait beaucoup de choses sur  l’éducation. Il comprend facilement des choses complexes. Chez clarat, il est dans l’équipe recherche. Et il décide quels services vont être inclus sur clarat.. Sa chanson préférée est 2B2 von Lambchop.
       jule: fait de la recherche  sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat, elle est dans l’équipe recherche. Et elle s’assure de la qualité de notre travail. Sa chanson préférée est Home de Edward Sharpe.
       julia: Est germaniste. Ça signifie que la langue allemande n’a pas de secret pour elle. Et elle sait bien écrire et expliquer simplement les choses. Chez clarat, elle est dans l’équipe recherche et elle est experte de notre language clarat. Sa chanson préférée est Reckoner de Radiohead.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: Est socioéconomiste. Ça signifie qu’il sait beaucoup de choses sur l’économie et la sociéte. En informatique, il s’y connaît bien aussi. Chez clarat, il est dans l’équipe recherche et il s’occupe des questions techniques. Sa chanson préférée est All You Need de Sublime.
       juliane: 
       karo: 
@@ -1053,6 +1084,7 @@ fr:
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
       philipp: 
       sabine: 
+      sophie: 
       stefan: A fait des études de sciences de la culture. Ça signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
       tine: Est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
@@ -1203,11 +1235,6 @@ fr:
         title: 
       refugees:
         title: 
-      section_choice:
-        family:
-          title: 
-        refugees:
-          title: 
       title: 
     shared:
       address:

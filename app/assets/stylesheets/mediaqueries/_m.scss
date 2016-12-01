@@ -31,10 +31,11 @@
   .Logo--start {
     body.refugees &.Logo,
     body.family &.Logo { // Specifity
-      margin: 0 0 45px 0;
-      height: 64px;
-      width: 180px;
-      background-size: 180px 64px;
+      margin: 19px 0 45px 0;
+      height: 46px;
+      width: 130px;
+      background-size: 130px 46px;
+      top: 0;
     }
   }
 
@@ -46,9 +47,21 @@
     max-width: 60%;
   }
 
+  .Claim__firstrow {
+    font-size: 18px;
+  }
+
+  .Claim__secondrow {
+    position: relative;
+    top: auto;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 14px;
+    max-width: 60%;
+  }
+
   .header-main {
     height: auto;
-    min-height: 116px;
     margin-bottom: 0;
 
     .wrapper-inner {
@@ -61,7 +74,7 @@
   }
 
   .header-main--wide {
-    height: 320px;
+    height: 180px;
   }
 
   body.family,
@@ -74,7 +87,7 @@
   .Logo {
     margin-bottom: 15px;
     position: absolute;
-    top: 14px;
+    top: 10px;
     z-index: 20;
     margin-top: 5px;
     margin-left: 15px;
@@ -86,7 +99,7 @@
     body.family & { // Specifity
       background-size: 160px 64px;
       margin-right: 15px;
-      margin-left: 5px;
+      margin-left: 12px;
     }
 
   }
@@ -100,10 +113,6 @@
     height: 40px;
     background-image: image-url('logo.svg');
     background-size: 180px 40px;
-  }
-
-  .Claim {
-    margin-top: 90px;
   }
 
   .Distributor {
@@ -132,9 +141,8 @@
 
   .Distributor--navigation {
     padding-bottom: 0;
-    margin: 26px 0 0 0;
+    margin: 0;
     max-width: 1000px;
-    border-top-left-radius: 0;
 
     &.is-enlarged {
       // max-height: 95px;
@@ -153,6 +161,7 @@
   }
 
   .Distributor__search-form {
+    @extend %clarat_rounding_start;
     position: relative;
     right: auto;
     width: 100%;
@@ -164,11 +173,12 @@
 
     .Distributor--navigation & {
       top: 2px;
-      right: 60px;
+      right: 75px;
     }
   }
 
   .search-form--input-wrapper {
+    flex-direction: column;
     position: relative;
     left: 15px;
 
@@ -182,6 +192,7 @@
     z-index: 30;
     display: block;
     width: auto;
+    height: auto;
     margin-right: 0;
     overflow: hidden;
     background-color: $brand_yellow;
@@ -205,6 +216,7 @@
 
     .template--pages-home & {
       max-height: none;
+      flex-direction: column;
 
       #search_form_query,
       #search_form_search_location {
@@ -310,10 +322,11 @@
     .main-search__submit {
       position: absolute;
       top: 10px;
-      right: 20px;
+      right: 15px;
       width: 40px;
-      height: 35px;
+      height: auto;
       background-size: 60%;
+      bottom: 10px;
 
       body.ar:not(.template--pages-home) & {
         right: auto;
@@ -350,8 +363,7 @@
         }
 
         &.search_form_search_location {
-          display: none;
-          margin-top: 5px;
+          margin-top: 10px;
 
           &.is-visible {
             display: block;
@@ -402,21 +414,22 @@
   .main-search__advanced-filter--within-content-main {
     display: block;
     position: relative;
-    font-size: 13px;
-    margin: 15px -20px -15px;
+    margin: 0 -20px -15px;
+    padding-left: 0;
+    height: 35px;
     text-align: center;
-    color: $brand_white;
+    font-size: 13px;
+    color: $brand_brown;
+    font-weight: 700;
     cursor: pointer;
-    height: 30px;
-    line-height: 30px;
+    line-height: 35px;
+    background-color: $brand_yellow;
 
-    body.family & {
-      background-color: rgba($brand_core_family, .6);
+    &[aria-expanded="true"],
+    &[aria-expanded="false"] {
+      background-image: none;
     }
 
-    body.refugees & {
-      background-color: rgba($brand_core_refugees, .6);
-    }
   }
 
   .nav-welt {
@@ -528,6 +541,10 @@
     }
   }
 
+  //.Listing-results {
+  //  padding-top: 20px;
+  //}
+
   .Listing-results__expander {
     display: block;
     position: absolute;
@@ -603,6 +620,8 @@
 
   // Content ######################################
 
+
+
   .page-wrap:after {
     height: 136px;
   }
@@ -626,6 +645,12 @@
       width: 40px;
       height: 40px;
       background-size: 40px 40px;
+    }
+  }
+
+  .Listing-results {
+    .filter-form__fieldset.sort_order {
+      display: none;
     }
   }
 
@@ -695,6 +720,11 @@
 
   .Listing-results__orga-display {
     padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .Listing-results__location {
+    padding: 0 0 4px 6px;
   }
 
   .section-team__member {
@@ -758,6 +788,20 @@
     }
   }
 
+  .Type-results__link {
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .Type-results__item {
+    padding: 5px 8px;
+    max-width: 50%;
+  }
+
   .section-choice__container {
     float: none;
     width: auto;
@@ -804,6 +848,7 @@
   }
 
   .hint {
+    -js-display: flex;
     display: flex;
     font-size: 13px;
     margin-right: 8px;
@@ -871,11 +916,12 @@
   .overlay-active .main-search__advanced-filter {
     background: #f4b528;
     padding: 0;
-    margin-left: 0;
-    width: 100%;
     display: block;
     top: 0;
     transform: initial;
+    left: 0;
+    right: 0;
+    width: 100vw;
   }
 
   body.refugees.overlay-active .main-search__advanced-filter {
@@ -897,6 +943,7 @@
 
   #qtip-ttAdvancedSearch {
     margin-top: 50px;
+    max-width: 60%;
   }
 
   .qtip-tip {

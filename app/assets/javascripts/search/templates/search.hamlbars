@@ -1,6 +1,17 @@
 %main.content-main.content-main--offers-index
-  %a.main-search__advanced-filter.main-search__advanced-filter--within-content-main.off-canvas-container__trigger
-    = hb 'more_label'
+  %ul.nav-off-canvas-trigger
+    %li.nav-off-canvas-trigger__item
+      %a.main-search__advanced-filter--within-content-main.off-canvas-container__trigger(data-target='#tab1')
+        %i.fa.fa-filter.nav-off-canvas-trigger__icon(aria-hidden='true')
+        %span.nav-off-canvas-trigger__label= hb 'tab_filter'
+    %li.nav-off-canvas-trigger__item
+      %a.main-search__advanced-filter--within-content-main.off-canvas-container__trigger(data-target='#tab2')
+        %i.fa.fa-tags.nav-off-canvas-trigger__icon(aria-hidden='true')
+        %span.nav-off-canvas-trigger__label= hb 'tab_categories'
+    %li.nav-off-canvas-trigger__item
+      %a.main-search__advanced-filter--within-content-main.off-canvas-container__trigger(data-target='#tab3')
+        %i.fa.fa-map-marker.nav-off-canvas-trigger__icon(aria-hidden='true')
+        %span.nav-off-canvas-trigger__label= hb 'tab_map'
 
   = hb 'with filters' do
     = hb '> _advanced_search'

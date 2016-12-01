@@ -4,6 +4,10 @@
 //
 // ---------------------------------------------------------------
 
+.Listing-results {
+  position: relative;
+}
+
 .Listing-results__pending-ajax {
   text-align: center;
   font-size: 40px;
@@ -121,7 +125,7 @@
   @extend %clarat_rounding_start;
   background: $brand_yellow;
   padding: 7px 15px;
-  min-height: 38px;
+  min-height: 28px;
   font-size: 18px;
 
   a {
@@ -238,18 +242,24 @@
   width: 62%;
 }
 
+.Listing-results__location {
+  line-height: 2;
+}
+
 .Listing-results__stamp {
   position: relative;
   width: 38%;
-  background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
-  padding: 4px 4px 0 30px;
+  background: transparent image-url('ico_user.svg') no-repeat 9px 5px;
+  padding: 0 4px 0 36px;
   background-size: auto 20px;
-  line-height: 1.8;
+  min-height: 32px;
+  line-height: 30px;
   overflow: hidden;
 
   .section-content__body--offers-of-orga & {
     padding-left: 36px;
-    background-position: 8px 5px;
+    background-position: 5px 3px;
+    line-height: 2;
   }
 
   body.ar & {

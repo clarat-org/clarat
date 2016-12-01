@@ -1,0 +1,149 @@
+.top-bar {
+  @extend %clearfix;
+  border-bottom: 2px solid transparent;
+  background-color: white;
+
+  body.family & {
+    border-color: $brand_core_family;
+  }
+
+  body.refugees & {
+    border-color: $brand_core_refugees;
+  }
+}
+
+.top-bar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 40px;
+
+}
+
+.top-bar__world-link {
+  @extend %roboto_bold;
+  float: left;
+  text-decoration: none;
+  line-height: 48px;
+
+  body.family & {
+    color: $brand_core_refugees;
+  }
+
+  body.refugees & {
+    color: $brand_core_family;
+  }
+}
+
+.top-bar__world-select-overlay {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  left: 0;
+  z-index: 4001;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  &[aria-hidden="false"] {
+    display: block;
+  }
+}
+
+.top-bar__world-select-button {
+  display: none; // visible at breakpoint s
+  float: left;
+  height: 44px;
+  width: 165px;
+  background-color: transparent !important;
+  background: no-repeat 10px center;
+  background-size: auto 38px;
+
+  .template--pages-section_choice & {
+    display: none;
+  }
+
+  body.family & {
+    background-image: image-url('logo-btn-family--collapsed.svg');
+
+    &[aria-expanded="true"] {
+      background-image: image-url('logo-btn-family--expanded.svg');
+    }
+  }
+
+  body.refugees & {
+    background-image: image-url('logo-btn-refugees--collapsed.svg');
+
+    &[aria-expanded="true"] {
+      background-image: image-url('logo-btn-refugees--expanded.svg');
+    }
+  }
+}
+
+.top-bar__world-list {
+  z-index: 40000 !important;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.62);
+}
+
+.top-bar__world-list-item {
+  font-size: 16px;
+  height: 48px;
+}
+
+$amount: 15%;
+
+.top-bar__world-list-item--otherworld {
+  body.refugees & {
+    background-color: $brand_core_family;
+    border-bottom: 1px solid lighten($brand_core_family, $amount);
+  }
+
+  body.family & {
+    background-color: $brand_core_refugees;
+    border-bottom: 1px solid lighten($brand_core_refugees, $amount);
+
+  }
+}
+
+.top-bar__world-list-item--worldhome {
+  body.refugees & {
+    background-color: $brand_core_refugees;
+    border-top: 1px solid lighten($brand_core_refugees, $amount);
+
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+    border-top: 1px solid lighten($brand_core_family, $amount);
+  }
+}
+
+.top-bar__emphasis {
+  @extend %roboto_bold;
+}
+
+.top-bar__world-list-link--otherworld,
+.top-bar__world-list-link--worldhome {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px 0 45px;
+  line-height: 48px;
+}
+
+.top-bar__world-list-link--otherworld {
+  background-image: image-url('ico_angle-right.svg');
+  background-size: 26px 26px;
+  background-position: 12px center;
+
+}
+
+.top-bar__world-list-link--worldhome {
+  background-image: image-url('ico_home.svg');
+  background-size: 20px 20px;
+  background-position: 16px center;
+}

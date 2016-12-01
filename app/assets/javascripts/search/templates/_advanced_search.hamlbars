@@ -1,10 +1,13 @@
-.filter-form#advanced_search
-  %fieldset.filter-form__fieldset#age
+.filter-form#advanced_search(aria-hidden='true')
+  = hb '> _sort_order'
 
+  %fieldset.filter-form__fieldset#age
     %legend.filter-form__fieldset__headline#age
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
-      %select.JS-AgeSelector.filter-form__select{name: 'age'}
+      %label.sr-only{for: 'age_select'}
+        = hb '@root.headline_age'
+      %select.JS-AgeSelector.filter-form__select{name: 'age', id: 'age_select'}
         %option{value: 'any', id: 'age_any'}
           = hb '@root.option_any'
         = hb 'each age' do
@@ -14,7 +17,9 @@
     %legend.filter-form__fieldset__headline
       = hb '@root.headline_language'
     %div.filter-form__fieldset__wrapper
-      %select.JS-LanguageSelector.filter-form__select{name: 'language'}
+      %label.sr-only{for: 'language_select'}
+        = hb '@root.headline_language'
+      %select.JS-LanguageSelector.filter-form__select{name: 'language', id: 'language_select'}
         %option{value: 'any', selected: 'selected', id: 'language_any'}
           = hb '@root.option_any'
         = hb 'each language' do

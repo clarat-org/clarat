@@ -2,12 +2,13 @@ class Clarat.Search.Operation.UpdateAdvancedSearch
   @run: (model) ->
     # Update dropdowns and radio buttons
     fields =
-      ['age', 'target_audience', 'exclusive_gender', 'language', 'contact_type']
+      ['age', 'target_audience', 'exclusive_gender', 'language', 'contact_type', 'sort_order']
 
     for field in fields
       currentIdentifier = model[field] or 'any'
-      currentlySelectedField =
-        $("#advanced_search ##{field}_#{currentIdentifier}")
+      currentlySelectedField = $("##{field}_#{currentIdentifier}")
+      if !currentlySelectedField.length
+        currentlySelectedField = $(".#{field}_#{currentIdentifier}")
 
       if currentlySelectedField.is 'input'
         currentlySelectedField.prop('checked', true)

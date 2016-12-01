@@ -69,6 +69,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-isInViewport'
   gem 'rails-assets-iCheck'
   gem 'rails-assets-hammerjs'
+  gem 'rails-assets-flexibility'
   gem 'rails-assets-ifvisible.js'
 end
 

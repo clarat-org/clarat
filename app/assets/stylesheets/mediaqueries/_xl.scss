@@ -20,6 +20,10 @@
     max-width: 40%;
   }
 
+  .Claim__secondrow {
+    margin-left: 20px;
+  }
+
   .mascot--header {
     bottom: 0;
     left: 245px;
@@ -46,9 +50,9 @@
   }
 
   .Distributor__search-form {
-    position: absolute;
-    left: 0;
-    right: 120px;
+    //position: absolute;
+    //left: 0;
+    //right: 120px;
 
     .template--pages-home & {
       position: relative;
@@ -74,8 +78,7 @@
     width: 50%;
 
     .template--pages-home & {
-      width: auto;
-      margin-right: 10px;
+      width: 46.60%;
     }
   }
 
@@ -87,8 +90,6 @@
   }
 
   #new_search_form .main-search__submit {
-    position: absolute;
-    right: 0;
 
     body.ar & {
       left: 0;
@@ -98,14 +99,14 @@
   }
 
   .search-form--input-wrapper {
-    position: absolute;
-    right: 75px;
-    left: 25px;
-
-    body.ar & {
-      right: 25px;
-      left: 75px;
-    }
+    //position: absolute;
+    //right: 95px;
+    //left: 25px;
+    //
+    //body.ar & {
+    //  right: 25px;
+    //  left: 75px;
+    //}
 
     .template--pages-home & {
       position: relative;
@@ -115,13 +116,10 @@
   }
 
   #new_search_form {
-    display: table-cell;
-    margin-right: 15px;
-    width: auto;
+    height: 76px;
 
     .template--pages-home & {
       margin-right: auto;
-      max-width: 815px;
     }
   }
 
@@ -129,20 +127,9 @@
     margin-left: 10px;
   }
 
-  .nav-sections__listitem {
-    body.refugees & {
-      margin: 0 1.6%;
-    }
-  }
-
-  .nav-sections {
-    body.refugees & {
-      width: 948px;
-    }
-  }
-
   // Content ######################################
 
+  .top-bar__container,
   .wrapper-inner {
     padding: 0 20px;
   }

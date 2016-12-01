@@ -6,21 +6,21 @@
       li.section-choice__container
         section.section-choice__family
           = link_to home_path(section: :family) do
-            h1.section-choice__headline.section-choice__headline--family
-              = t '.family.title'
+            h1.section-choice__headline.section-choice__headline--family[aria-hidden="true"]
           /a.section-choice__stage.section-choice__stage--family[href='/family/']
           = link_to '', home_path(section: :family),
-                    class: 'section-choice__stage section-choice__stage--family'
+                    class: 'section-choice__stage section-choice__stage--family',
+                    'aria-hidden' => 'true'
           = link_to home_path(section: :family),
                     class: 'section-choice__cta section-choice__cta--family' do
             = t 'layouts.partials.navigation.claim.family'
       li.section-choice__container
         section.section-choice__refugees
           = link_to home_path(section: :refugees) do
-            h1.section-choice__headline.section-choice__headline--refugees
-              = t '.refugees.title'
+            h1.section-choice__headline.section-choice__headline--refugees[aria-hidden="true"]
           = link_to '', home_path(section: :refugees),
-                    class: 'section-choice__stage section-choice__stage--refugees'
+                    class: 'section-choice__stage section-choice__stage--refugees',
+                    'aria-hidden' => 'true'
           = link_to home_path(section: :refugees),
                     class: 'section-choice__cta section-choice__cta--refugees' do
             = t 'layouts.partials.navigation.claim.refugees'

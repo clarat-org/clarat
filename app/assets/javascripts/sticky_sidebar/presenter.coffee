@@ -14,7 +14,7 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
     if $('body.template--offers-index').length
 
       # Third party script buggy in IE/Edge
-      if (($('html.ie11').length) || (navigator.userAgent.indexOf('Edge') >= 0)) then return
+      # if (($('html.ie11').length) || (navigator.userAgent.indexOf('Edge') >= 0)) then return
 
       $window = $(window)
       contentHeight = $window.innerHeight()

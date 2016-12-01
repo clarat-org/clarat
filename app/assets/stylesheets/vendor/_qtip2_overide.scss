@@ -32,6 +32,10 @@
   pointer-events: none;
 }
 
+#qtip-ttAutoTranslations {
+  right: 20px !important; // Override JS
+}
+
 #clone-container {
   display: none;
   position: absolute;
@@ -41,4 +45,5 @@
   right: 0;
   z-index: 9000;
   pointer-events: all;
+  overflow: hidden;
 }

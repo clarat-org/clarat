@@ -40,6 +40,7 @@ about supported directives.
 #
 # = require jquery.popupoverlay
 # = require jquery.query-object
+# = require flexibility
 #
 # = require vendor/cookie_lib
 # = require vendor/inviewport
@@ -84,8 +85,8 @@ about supported directives.
 # = require sticky_sidebar/presenter
 #
 # = require single_click_button/presenter
+# = require handle_world_select_overlay/presenter
 # = require enhance_listing_results/presenter
-# = require sticky_mobile_nav/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
 # = require section_speaking_wrapper/presenter

@@ -10,40 +10,12 @@
   height: 182px;
   background: $brand_beige;
 
-  // Visual horizontal enlargement of non startpage distributor box
-  &:before {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100px;
-    background: $brand_yellow;
-    content: '';
 
-    body.refugees & {
-      border-top: 6px solid $brand_core_refugees;
-    }
-
-    body.family & {
-      border-top: 6px solid $brand_core_family;
-    }
-
-    body.ar & {
-      left: 0;
-      right: auto;
-    }
-
-    .template--500 & {
-      display: none;
-    }
-  }
 }
 
 .header-main--wide {
-  height: 475px;
-  // border-top: 4px solid $brand_yellow; // disabled when banner is active
-  background: image-url('bg_scratches.jpg') no-repeat center bottom;
-  background-size: cover;
+  height: 290px;
+  background: $brand_beige;
 
   .template--pages-home & {
     margin-bottom: 0;
@@ -61,29 +33,18 @@
 .header-main__foreground {
   @extend %clearfix;
   height: inherit;
-  background-size: contain;
-
+  background-position: right calc(100% + 1px);
+  background-size: 60% auto;
+  background-repeat: no-repeat;
 
   body.refugees & {
-    background: image-url('foreground--refugees.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-image: image-url('foreground--refugees.svg');
   }
 
   body.family & {
-    background: image-url('foreground--family.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-image: image-url('foreground--family.svg');
   }
-
-  body.family &,
-  body.refugees & {
-    html.ie11 &,
-    html.ie10 &{
-      background-position: 50% 80px;
-    }
-  }
-
+  
 }
 
 .page-detail__header {

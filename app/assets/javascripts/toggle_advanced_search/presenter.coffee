@@ -4,6 +4,8 @@ Clarat.ToggleAdvancedSearch = {}
 class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
+    '.off-canvas-container__trigger':
+      click: 'handleClick'
     '.main-search__advanced-filter':
       click: 'handleClick'
     document:
@@ -11,7 +13,7 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   handleClick: (event) =>
     event.preventDefault()
-    @_toggleState()
+    @_toggleState(event)
     $(document).trigger 'Clarat.ToggleAdvancedSearch::Toggle'
 
   # show advanced search if a filter was used
@@ -21,19 +23,28 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   ### Private Methods (ue) ###
 
-  _toggleState: ->
+  _toggleState: (event) ->
     form = $('.filter-form')
-    trigger = $('.main-search__advanced-filter')
-    visibleClass = 'is-visible'
-    formMoreLabel = I18n.t('js.search.form_more_label')
-    formLessLabel = I18n.t('js.search.form_less_label')
+    target = $(event.target).data 'target'
 
-    if form.hasClass visibleClass
-      form.removeClass visibleClass
-      trigger.text formMoreLabel
+    if target
+      # We're on mobile/off canvas
+      $(target).trigger 'click'
     else
-      form.addClass visibleClass
-      trigger.text formLessLabel
+      # We're on desktop
+      filterForm = $('.filter-form')
+      filterForm.toggleClass 'is-visible'
+      filterForm.attr 'aria-hidden', (i, attr) ->
+        if attr == 'true' then 'false' else 'true'
+
+      if form.hasClass 'is-visible'
+        $('.main-search__advanced-filter').text I18n.t('js.search.form_less_label')
+      else
+        $('.main-search__advanced-filter').text I18n.t('js.search.form_more_label')
+
+      $(event.target).attr 'aria-expanded', (i, attr) ->
+        if attr == 'true' then 'false' else 'true'
+
 
   _isSearchFiltered: ->
     formParams = $.query.keys.search_form

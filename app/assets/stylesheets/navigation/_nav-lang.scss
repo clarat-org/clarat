@@ -51,6 +51,11 @@ a.nav-lang__google {
   width: 60px;
   height: auto;
   margin: 0;
+
+  img {
+    height: inherit;
+    width: inherit;
+  }
 }
 
 button.nav-lang__button {

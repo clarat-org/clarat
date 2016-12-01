@@ -926,6 +926,7 @@ de:
         '639': 639
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
         bam: Bam
         ban: Ban
@@ -934,6 +935,7 @@ de:
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
         cpe: Cpe
         cze: Cze
         deu: Deu
@@ -1159,6 +1161,7 @@ de:
         '639': Dari - دری
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
+        arc: Aramäisch - ארמית / Arāmît
         aze: Aserbaidschanisch - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Balinesisch - Basa Bali
@@ -1167,6 +1170,7 @@ de:
         ber: Berberisch - Tamaziɣt
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cau: Abasinisch - абаза бызшва
         cpe: Kamtok - Pidgin
         cze: Tschechisch - čeština
         deu: Deutsch
@@ -1465,10 +1469,12 @@ de:
         alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
         schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
         Lieblingssong ist Explanations von Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Wer steckt hinter clarat?
       jacinta: Hat Deutsch und Französisch studiert. Ihre Muttersprache ist Englisch. Sie kann gut einfach und klar schreiben. Bei clarat ist sie um Übersetzer-Team und übersetzt clarat ins Englische. Ihr Lieblingssong ist Wannabe von den Spice Girls.
       jakob: Ist Asien- und Afrikawissenschaftler. Das heißt, er weiß viel über diese Kontinente. Er bleibt auch bei Stress immer ruhig. Bei clarat ist er im Research-Team. Und er sucht im Internet nach Organisationen. Sein Lieblingssong ist Simplicity von Mbarga.
       janina: Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter, wenn sie Fragen haben. Ihr Lieblingssong ist MFG von Fanta4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: Janne hat Politik und internationale Beziehungen studiert. Sie kann gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist Sweat von Ry X.
       jenny: 'Ist Sozialanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie findet immer eine Lösung. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist I sing I swim von Seabear. '
       jens: |
@@ -1482,6 +1488,7 @@ de:
         Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
         clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
         Lieblingssong ist Reckoner von Radiohead.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
       julian: |
         Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
         Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
@@ -1520,6 +1527,7 @@ de:
         Jein von Fettes Brot.
       philipp: Hat Geschichte, Politik und Recht studiert. Er weiß viel über Politik und Gesellschaft. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist This Is Our Science von Astronautalis.
       sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
+      sophie: Hat Nonprofit Management studiert. Sie kann gut organisieren und erkennt schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Lost von Frank Ocean.
       stefan: Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und Gesellschaft. Er kann Menschen gut für eine Sache begeistern. Und er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The Storm von The Doors.
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
@@ -1536,11 +1544,7 @@ de:
         Flüchtlinge auf clarat refugees.
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-

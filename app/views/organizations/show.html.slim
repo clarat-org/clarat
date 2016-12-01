@@ -37,11 +37,12 @@
                       h5.Listing-results__offer.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
                               autotranslation_attr(@organization.translation_automated?)
 
-                      .Listing-results__offerinfo.Listing-results__stamp
-                        = offer.send("stamp_#{section.identifier}", @current_locale)
-                      - if offer.location && offer.location.visible
-                        .Listing-offers__address
-                          = offer.location_address
+                      .Listing-offers__address
+                        .Listing-results__offerinfo.Listing-results__stamp
+                          = offer.send("stamp_#{section.identifier}", @current_locale)
+                        - if offer.location && offer.location.visible
+                          .Listing-results__location
+                            = offer.location_address
 
 
 

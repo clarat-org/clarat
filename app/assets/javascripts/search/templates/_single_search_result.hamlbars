@@ -8,20 +8,20 @@
   / TODO: Refactor and rename
   %div.Listing-results__offerinfo
 
-    %section.Listing-results__stamp
+    %div.Listing-results__stamp
       = hb 'current_stamp'
 
       %button.Listing-results__expander{'aria-expanded' => 'false'}
         = hb '@root.toggle_search_result_details'
 
     = hb 'if location_visible' do
-      %section.Listing-results__meta.Listing-results__meta--with-address
+      %div.Listing-results__meta.Listing-results__meta--with-address
         %h4.Listing-results__orga-display
           = hb 'organization_display_name'
         %div.Listing-results__address{itemscope: '', itemtype: 'http://schema.org/ContactPoint'}
           %div{itemscope: '', itemtype: 'http://schema.org/PostalAddress'}
             = hb 'location_address'
       = hb 'else'
-      %section.Listing-results__meta
+      %div.Listing-results__meta
         %h4.Listing-results__orga-display
           = hb 'organization_display_name'

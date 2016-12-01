@@ -24,7 +24,7 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
       - cache ['banner', I18n.locale] do
         = render '/layouts/partials/banner'
       // = render '/layouts/partials/nav_lang'
-      = render '/layouts/partials/top_bar'
+      = render '/layouts/partials/top_bar', current_section: @current_section
       #Flash-messages
         - flash.each do |message|
           - unless message[0] == 'timedout'

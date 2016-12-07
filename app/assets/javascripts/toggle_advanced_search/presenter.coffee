@@ -23,7 +23,7 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
 
   ### Private Methods (ue) ###
 
-  _toggleState: (event) ->
+  _toggleState: (event = {}) ->
     form = $('.filter-form')
     target = $(event.target).data 'target'
 

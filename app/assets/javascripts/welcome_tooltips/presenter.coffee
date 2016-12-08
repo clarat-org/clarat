@@ -3,7 +3,7 @@ Clarat.welcomeTooltips = {}
 class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
 
-    @cookieLifespan     = 90
+    @cookieLifespanMin  = 120
     @isFrontPage        = $('.template--pages-home').length
     @isOfferIndexPage   = $('.template--offers-index').length
     @world              = if $('body.refugees').length then 'refugees' else 'family'
@@ -152,8 +152,12 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
   setCookieAutoTranslate: =>
     unless $('html[lang="de"]').length
+
+      date = new Date
+      date.setTime date.getTime() + @cookieLifespanMin * 60 * 1000
+
       $.cookie 'welcome-tooltips-autotranslation', 'true',
-        expires: @cookieLifespan
+        expires: date
         path: '/'
 
 

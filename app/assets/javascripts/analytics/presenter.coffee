@@ -41,25 +41,21 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
   setupGoalTracking: =>
     @goalOffset = $('#scroll-goal').offset()?.top
     if @goalOffset
-      unless @onScroll()
+      unless @onScroll(null, true)
         $(window).on 'scroll', @onScroll
 
-  onScroll: =>
+  onScroll: (event, initialCall = false) =>
     windowTop = $(window).scrollTop()
-    windowBottom = windowTop + $(window).height()
+    windowHeight = $(window).height()
+    windowBottom = windowTop + windowHeight
+    if event then @didScroll = true
+    if initialCall then @hasToScroll = @goalOffset > windowHeight
     if (@goalOffset <= windowBottom)
-      @onGoalAreaViewed()
+      @goalViewed = true
       $(window).off 'scroll', @onScroll
       true
     else
       false
-
-  onGoalAreaViewed: ->
-    console.log 'scrolling goal reached'
-    ga?(
-      'send', 'event', 'PageView', 'contact_person_viewed',
-      'Goal Reached: Contact Person Area Displayed'
-    )
 
   onLoad: ->
     @pageViewTime = 0
@@ -68,6 +64,13 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
+    if @goalOffset
+      ga?(
+        'send', 'event', 'PageView', 'unload',
+        "goalViewed:#{!!@goalViewed};hadToScrollToGoal:#{!!@hasToScroll};" +
+        "didScroll:#{!!@didScroll};",
+        @pageViewTime
+      )
 
 
 $(document).ready ->

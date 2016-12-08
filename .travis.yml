@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.2
+  - 2.3.3
 notifications:
   email:
     - dev@clarat.org

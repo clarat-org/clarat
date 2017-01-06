@@ -91,8 +91,9 @@ tr:
           question: Clarat nasıl çalışıyor?
         question_4:
           answer: 'Clarat ücretsizdir ve ücretsiz kalacaktir. Herkes, ücretsiz olan  <b>clarat family</b> çocuklar, gençler ve aileler için yardım talep edebilir ve <b>clarat refugees</b> mülteciler için ücretsiz destek alabilir. '
-          question: |
-            Clarat’da arama ücretsiz mi?
+          question: 'Clarat’da arama ücretsiz mi?
+
+'
         question_5:
           answer: Clarat’taki aramalar daima isimsiz olarak yapılır. Bu demektir ki, senin ne adını, ne de adresini kimse göremez ve bilemez.
           question: Clarat’taki aramalar isimsiz mi?
@@ -169,11 +170,12 @@ tr:
           question: Kendim için nasıl doğru desteği bulabilirim?
         question_6:
           answer: clarat’ta bulabileceğin çoğu destek türleri ücretsizdir. Bazı destek çeşitleri ücretli olmaktadır. Ancak bu otomatikmen, senin ödemen gerektiği anlamına gelmez. Sağlık sigortasının ya da başka bir kurumun bunu ödemesi de mümkün olmaktadır. Bu kurum mesela bir resmi daire olabilir. En iyisi, bunu desteği alacağın yere sormaktır. Bu şekilde alacağın desteğin ücretsiz olup olmadığını öğrenebilirsin.
-          question: "Ücretsiz olarak alabileceğim destek mevcut mudur?"
+          question: Ücretsiz olarak alabileceğim destek mevcut mudur?
         question_7:
           answer: "clarat’ta bulabileceğin bazı destek türlerinden ismini belirtmeden yararlanabilirsin. Bu durum söz konusu ise, bu <i>Ne yapmalısın?</i> başlığı altında belirtilmektedir. \nBu başlığı bulamadığında, desteği alacağın yere de sorabilirsin."
-          question: |
-            Gizli olarak alabileceğim destek mevcut mudur?
+          question: 'Gizli olarak alabileceğim destek mevcut mudur?
+
+'
         question_8:
           answer: |-
             Çocuk ya da genç olarak,
@@ -200,8 +202,9 @@ tr:
             var: ref_to_how_to_find_right_help
           question: Aramamı nasıl filtreleyebilirim?
       section_3:
-        heading: |
-          Clarat dili ile ilgili soruların mı var?
+        heading: 'Clarat dili ile ilgili soruların mı var?
+
+'
         question_1:
           answer: "clarat’ta destek arayan herkes, desteğini hızlı bir şekilde bulabilmesi için, clarat dili yaratılmıştır. \nClarat dili herkes için anlaşılır olmaktadır, çünkü basit bir dildir. Ve sonuçta clarat herkes içindir. \nÇocuklar, gençler ve aileleri için. Bunlar farklı ülkelerden olabilir. Burada doğanlar için ya da \nAlmanya’ya henüz yeni gelenler için. Almancayı iyi bilenler için ve ya Almancayı henüz çok iyi bilmeyenler için."
           question: Clarat neden her zaman çok basit bir dil kullanıyor?
@@ -252,8 +255,9 @@ tr:
             var: mailto_clarat
           question: Benim kuruluşumun teklifleri kendi website’lerinden niye daha farklı sunuluyor?
         question_5:
-          answer: |
-            Biz her birey için mümkün olduğunca kolay yardım sunmak istiyoruz. Bu nedenle, kuruluşunun tekliflerini bölüp ve yaymaya çalışıyoruz. Her belli sorunda sadece tek bir teklif belirlensin istiyoruz. Böylelikle yardıma ihtiyacı olanlar, onlara en uygun olan yardımı bulabiliyorlar.
+          answer: 'Biz her birey için mümkün olduğunca kolay yardım sunmak istiyoruz. Bu nedenle, kuruluşunun tekliflerini bölüp ve yaymaya çalışıyoruz. Her belli sorunda sadece tek bir teklif belirlensin istiyoruz. Böylelikle yardıma ihtiyacı olanlar, onlara en uygun olan yardımı bulabiliyorlar.
+
+'
           question: Benim kuruluşumun destek teklifleri clarat’ta neden coğaliyor?
         question_6:
           answer: |-
@@ -335,20 +339,20 @@ tr:
             'false': E-Mail adresi (opsiyonel)
             'true': E-Mail adresi (zorunlu)
         message_placeholder: Mesaj yaz (zorunlu)
-        name_placeholder: "İsim (zorunlu)"
+        name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
   emails:
     offers_index:
       family:
         heading: "<span id=''secure-email-0>%{email}</span> için clarat family tekliflerin"
-        no_results: "Şuan <span id=''secure-email-0>%{email}</span> için yayınlanmış clarat family teklifleri bulunmamaktadır."
+        no_results: Şuan <span id=''secure-email-0>%{email}</span> için yayınlanmış clarat family teklifleri bulunmamaktadır.
         toggle_section_html: "<strong>%{count} clarat refugees</strong> tekliflerin"
       last_update: Last update
       obfuscated_email: e-mail adresin
       refugees:
         heading: "<span id=''secure-email-0>%{email}</span> için clarat refugees tekliflerin"
-        no_results: "Şuan <span id=''secure-email-0>%{email}</span> için yayınlanmış clarat refugees tekliflerin bulunmamaktadır."
+        no_results: Şuan <span id=''secure-email-0>%{email}</span> için yayınlanmış clarat refugees tekliflerin bulunmamaktadır.
         toggle_section_html: "<strong>%{count} clarat family</strong>-tekliflerin"
       shared:
         explanation_1: "Burada clarat'taki tüm tekliflerini bir arada görebilirsin. \nBunlar, e-mail adresini bulduğumuz teklifler olmaktadır."
@@ -477,6 +481,7 @@ tr:
         '326': 326
         '568': 568
         '639': 639
+        abk: Abk
         amh: Amh
         ara: Ara
         arc: Arc
@@ -499,6 +504,7 @@ tr:
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -560,8 +566,9 @@ tr:
   js:
     ajax_error:
       error: Arama hatası
-      message: |
-        üzgünüz, arama da bir hata oluştu. bu hata tekrar oluşursa, bizimle irtibata geç.
+      message: 'üzgünüz, arama da bir hata oluştu. bu hata tekrar oluşursa, bizimle irtibata geç.
+
+'
     autocomplete_footer: Tüm %{results} sonuçlar '%{query}'
     categories_sidebar:
       all_categories: Tüm kategoriler
@@ -577,8 +584,9 @@ tr:
       less: Daha az dil göster
       more: Daha fazla dil göster
     less_filter_options: Daha az filtre göster
-    location_required: |
-      Lütfen destek almak istediğin yerin adını gir.
+    location_required: 'Lütfen destek almak istediğin yerin adını gir.
+
+'
     map_info_window_multiple:
       anchor: Tümüne göz at >>
       text: Bu konum için birden fazla sonuç bulundu.
@@ -586,12 +594,12 @@ tr:
     mobile_filter: Sonuçları filtrele
     more_filter_options: Daha fazla filtre göster
     query_field:
-      example_placeholder: "örneğin %{word}…"
+      example_placeholder: örneğin %{word}…
       placeholder_words:
         family:
         - Uyuşturucu
-        - "Şiddet"
-        - "Özel ders"
+        - Şiddet
+        - Özel ders
         - Acil durum
         - hak
         - işsiz
@@ -617,7 +625,7 @@ tr:
       form_less_label: Arama tercihlerini kapat
       form_more_label: Arama tercihlerini göster
       headlines:
-        age: "Çocuğun yaşı"
+        age: Çocuğun yaşı
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
@@ -681,6 +689,7 @@ tr:
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
         '639': Farsça - دری
+        abk: Abhazca - аҧсуа бызшәа
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         arc: Aramice - ארמית / Arāmît
@@ -694,21 +703,22 @@ tr:
         bul: Bulgarca - български
         cau: Abazaca - абаза бызшва
         cpe: Kamtok - Pidgin
-        cze: "Çekçe - čeština"
+        cze: Çekçe - čeština
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
-        eng: "İngilizce - English"
+        eng: İngilizce - English
         ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
         fin: Fince - suomi
         fra: Fransızca - Français
+        fuf: Pular - Pular
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
-        heb: "İbranice - עברית"
+        heb: İbranice - עברית
         hin: Hintçe - हिन्दी
         hrv: Hırvatça - hrvatski
         hun: Macarca - magyar
-        ita: "İtalyanca - italiano"
+        ita: İtalyanca - italiano
         kik: Kikuyu - Gĩkũyũ
         kin: Ruandaca - kinyaRwanda
         kor: Korece - 한국말 / 조선말
@@ -724,7 +734,7 @@ tr:
         pol: Lehçe - polski
         por: Portekizce - português
         pus: Peştuca - پښتو‎
-        rom: "Çingenece - Romani"
+        rom: Çingenece - Romani
         ron: Rumence - română
         rus: Rusça - русский
         skr: Sırp-Hırvatça - српскохрватски / hrvatskosrpski
@@ -732,11 +742,11 @@ tr:
         slv: Slovence - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somalice - Soomaali
-        spa: "İspanyolca - español"
+        spa: İspanyolca - español
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
         swa: Svahili - Kiswahili
-        swe: "İsveççe - svenska"
+        swe: İsveççe - svenska
         tam: Tamilce - தமிழ்
         tel: Telugu dili - తెలుగు
         tgk: Tacikçe - тоҷикӣ / تاجیکی
@@ -747,10 +757,10 @@ tr:
         tur: Türkçe - Türkçe
         twi: Twi - Twi
         urd: Urduca - اردو
-        uzb: "Özbekçe - Oʻzbek tili"
+        uzb: Özbekçe - Oʻzbek tili
         vie: Vietnamca - tiếng Việt
         wol: Wolof - wɔlɔf
-        zho: "Çince - 普通话 / 普通話"
+        zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
     single_search_result:
       encounters:
@@ -771,7 +781,7 @@ tr:
       footer:
         about: Hakkımızda
         blog: Blog
-        contact: "İletişim"
+        contact: İletişim
         faq: Sıkça sorulan sorular
         fb:
           anchor: Facebook
@@ -810,21 +820,23 @@ tr:
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
-          family: |
-            Çocuklar, gençler ve aileler için yardıum çeşitleri
+          family: 'Çocuklar, gençler ve aileler için yardıum çeşitleri
+
+'
           main: Yardım bul
-          refugees: |
-            Mülteciler için yardım çeşitleri
+          refugees: 'Mülteciler için yardım çeşitleri
+
+'
       top_bar:
         german_content_warning: 
         languages:
-          ar: "عربي"
+          ar: عربي
           de: Deutsch
           en: English
           fa: 
           fr: Français
           pl: Polski
-          ru: "Русский"
+          ru: Русский
           tr: Türkçe
         section_link:
           desktop:
@@ -863,9 +875,9 @@ tr:
             girls_only: Yalnızca bayanlar için
           target_audience:
             acquaintances: Tanıdık ve akrabalar için
-            children: "Çocuklar ve gençler için"
+            children: Çocuklar ve gençler için
             family_acquaintances: Tanıdık ve akrabalar için
-            family_children: "Çocuk ve gençler için"
+            family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
             family_parents_to_be: Ebeveyn adayları için
@@ -909,15 +921,15 @@ tr:
           sun: Pazar
           thu: Perşembe
           tue: Salı
-          wed: "Çarşamba"
+          wed: Çarşamba
         heading: Ne zaman yapabilirsin?
       speaking: Sana hangi dilde yardımcı olunuyor?
       website_section:
-        internet_presence: "İnternette nerede daha fazla bilgi bulabilirim?"
+        internet_presence: İnternette nerede daha fazla bilgi bulabilirim?
         websites:
           application_form: Kayıt formu
           chat: Sohbet
-          contact_form: "İletişim formu"
+          contact_form: İletişim formu
           document: Daha fazla bilgi al
           facebook: Facebook
           forum: Forum
@@ -956,7 +968,7 @@ tr:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: "Çocuklar, gençler ve aileler için yardıum çeşitleri"
+      headline-offers--family: Çocuklar, gençler ve aileler için yardıum çeşitleri
       headline-offers--refugees: Mülteciler için yardım çeşitleri
       offers_all: Bu organizasyon ne tür yardımlar sunmaktadır?
       where: Bu organizasyonu nerede bulabilirsin?
@@ -1007,8 +1019,9 @@ tr:
       michaela: 
       nahla: 
       nathalie: 
-      nicole: |
-        Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
+      nicole: 'Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
+
+'
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
@@ -1076,7 +1089,7 @@ tr:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
       title:
-        family: "Çocuk, genç ve aileler için destek programları"
+        family: Çocuk, genç ve aileler için destek programları
         refugees: Mülteciler için destek programları
       whom:
         heading: Clarat kimler için var?
@@ -1099,7 +1112,7 @@ tr:
         Arama kısmına nasıl bir yardıma ihtiyaç duyduğunu yaz. Ya da sorunun ne olduğunu.
         clarat sana yakınında bulunan destek çeşitlerini gösterecektir.
         Ya da %{start_page} anasayfaya git. Burada daire içindeki resimler yardımıyla, uygun desteği arayabilirsin.
-      heading: "Üzgünüz, bu sayfayı bulamadık."
+      heading: Üzgünüz, bu sayfayı bulamadık.
       link_text: burada
       title: 404
     privacy:
@@ -1128,8 +1141,9 @@ tr:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1149,8 +1163,9 @@ tr:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1170,8 +1185,7 @@ tr:
       title: 
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47
@@ -1193,7 +1207,7 @@ tr:
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
-    preview: "ön-izleme"
+    preview: ön-izleme
     rechtliche-hinweise: hukuki-uyarılar
     search_locations: search_locations
     subscribe: subscribe
@@ -1206,8 +1220,9 @@ tr:
     forms:
       fill_field: Lütfen bu alanı doldur
     show:
-      cta_report_errors: |
-        Hata mı gördün?
+      cta_report_errors: 'Hata mı gördün?
+
+'
       google_translate_explanation: |
         Bu çeviri otomatik olarak Google Translate tarafından gerçekleştirilmiştir.
         Bu nedenle hatalar oluşabilmektedir. Yani bazı cümleler tuhaf olabilir.
@@ -1225,10 +1240,12 @@ tr:
       text: required
   subscriptions:
     create:
-      error: |
-        Lütfen doğru bir E-Mail adresi giriniz.
-      success: |
-        Teşekkürler, onaylama kodu az önce E-Mail adresine gönderilmiştir.
+      error: 'Lütfen doğru bir E-Mail adresi giriniz.
+
+'
+      success: 'Teşekkürler, onaylama kodu az önce E-Mail adresine gönderilmiştir.
+
+'
     shared:
       new:
         button: E-bülten aboneliği

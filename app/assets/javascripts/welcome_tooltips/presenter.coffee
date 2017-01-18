@@ -4,6 +4,8 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
 
     @isFrontPage        = $('.template--pages-home').length
+    @isLegalPage        = $('.template--pages-impressum').length || $('.template--pages-agb').length || $('.template--pages-privacy').length
+    @isGermanLocale     = $('html[lang="de"]').length > 0
     @isOfferIndexPage   = $('.template--offers-index').length
     @ttAutoTranslations = $('.nav-lang__button')
     @overlay            = $('#qtip_welcome_overlay')
@@ -19,7 +21,46 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
 
   init: =>
-    @testForAutoTranslateCookie()
+
+    # Don't init if in German version
+    if @isGermanLocale
+      return
+
+    if @isLegalPage
+      @initNoTranslationOnLegalPagesHint()
+    else
+      @testForAutoTranslateCookie()
+
+
+  initNoTranslationOnLegalPagesHint: () =>
+
+    that = this
+
+    @ttAutoTranslations.qtip
+      id: 'ttAutoTranslations'
+      position:
+        my: "top center"
+        at: "bottom center"
+        effect: false
+      content:
+        text: @ttAutoTranslations.data "title"
+        button: 'x'
+      show:
+        event: false
+      hide:
+        event: false
+      events:
+        show: ->
+          that._showOverlay()
+        hide: ->
+          that._hideOverlay()
+      style:
+        tip:
+          corner: false
+
+    @ttAutoTranslations.qtip('api').show()
+    return
+
 
   testForAutoTranslateCookie: () =>
 
@@ -30,12 +71,9 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       @initAutomatedTranslationTooltip()
       @setCookieAutoTranslate()
 
+
   initAutomatedTranslationTooltip: =>
     that = this
-
-    # Don't init if in German version
-    if $('html[lang="de"]').length > 0
-      return
 
     @ttAutoTranslations.qtip
       id: 'ttAutoTranslations'
@@ -60,6 +98,7 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
     @ttAutoTranslations.qtip('api').show()
     return
+
 
   setCookieAutoTranslate: =>
     unless $('html[lang="de"]').length

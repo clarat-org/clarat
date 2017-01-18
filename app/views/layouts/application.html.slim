@@ -11,6 +11,11 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
 
     = yield(:additional_meta_tags)
 
+    link rel='dns-prefetch' href='https://bam.nr-data.net'
+    link rel='dns-prefetch' href='https://csi.gstatic.com'
+    link rel='dns-prefetch' href='https://maps.googleapis.com'
+    link rel='dns-prefetch' href='https://maps.gstatic.com'
+
     - canonical_url = content_for(:canonical_url) || default_canonical_url
     link rel='canonical' href=canonical_url
 

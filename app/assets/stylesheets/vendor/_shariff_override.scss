@@ -38,7 +38,20 @@
     margin-left: 60px;
     z-index: 1;
 
+    &.facebook {
+      background: #3b5998;
+    }
+
+    &.mail {
+      background: #a8a8a8;
+    }
+
+    &.twitter {
+      background: #55acee;
+    }
+
     &.whatsapp {
+      background: #5cbe4a;
       display: none;
     }
 
@@ -49,22 +62,6 @@
 
     &.shariff-button--expanded {
       margin-left: 0;
-
-      &.facebook:hover {
-        background: #3b5998;
-      }
-
-      &.mail:hover {
-        background: #a8a8a8;
-      }
-
-      &.twitter:hover {
-        background: #55acee;
-      }
-
-      &.whatsapp:hover {
-        background: #5cbe4a;
-      }
     }
 
     .fa {

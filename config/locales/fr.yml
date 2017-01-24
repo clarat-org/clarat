@@ -950,7 +950,7 @@ fr:
           target_audience:
             acquaintances: pour les connaissances ou la parenté
             children: pour les enfants et les ados
-            family_acquaintances: pour les connaissances et la parenté
+            family_relatives: pour les connaissances et la parenté
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents

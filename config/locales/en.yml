@@ -924,7 +924,7 @@ en:
           target_audience:
             acquaintances: for friends and family
             children: for children and adolescents
-            family_acquaintances: for friends and family
+            family_relatives: for friends and family
             family_children: for children and adolescents
             family_nuclear_family: for families
             family_parents: for parents

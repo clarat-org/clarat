@@ -994,7 +994,7 @@ pl:
           target_audience:
             acquaintances: dla znajomych i krewnych
             children: dla dzieci i młodzieży
-            family_acquaintances: dla znajomych i krewnych
+            family_relatives: dla znajomych i krewnych
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców

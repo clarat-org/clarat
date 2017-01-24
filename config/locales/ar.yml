@@ -873,7 +873,7 @@ ar:
           target_audience:
             acquaintances: للمعارف والأقارب
             children: للأطفال والشباب
-            family_acquaintances: من أجل المعارف والأقارب
+            family_relatives: من أجل المعارف والأقارب
             family_children: للأطفال والشبان
             family_nuclear_family: للأسر
             family_parents: للآباء

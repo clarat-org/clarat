@@ -1351,7 +1351,7 @@ de:
           target_audience:
             acquaintances: für Bekannte und Verwandte
             children: für Kinder und Jugendliche
-            family_acquaintances: für Bekannte und Verwandte
+            family_relatives: für Bekannte und Verwandte
             family_children: für Kinder und Jugendliche
             family_nuclear_family: für Familien
             family_parents: für Eltern

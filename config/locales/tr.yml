@@ -876,7 +876,7 @@ tr:
           target_audience:
             acquaintances: Tanıdık ve akrabalar için
             children: Çocuklar ve gençler için
-            family_acquaintances: Tanıdık ve akrabalar için
+            family_relatives: Tanıdık ve akrabalar için
             family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için

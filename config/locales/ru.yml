@@ -988,7 +988,7 @@ ru:
           target_audience:
             acquaintances: для знакомых и родственников
             children: для детей и молодежи
-            family_acquaintances: для знакомых и родственников
+            family_relatives: для знакомых и родственников
             family_children: для детей и молодежи
             family_nuclear_family: для семей
             family_parents: для родителей

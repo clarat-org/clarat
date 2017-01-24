@@ -934,7 +934,7 @@ fa:
           target_audience:
             acquaintances: برای آشنایان و فامیل
             children: برای بچه ها و جوانان
-            family_acquaintances: برای آشنایان و فامیل
+            family_relatives: برای آشنایان و فامیل
             family_children: برای بچه ها و جوانان
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین

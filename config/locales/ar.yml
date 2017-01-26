@@ -753,6 +753,8 @@ ar:
         wol: لغة ولوفية - wɔlɔf
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
+    shariff:
+      share_label: 
     single_search_result:
       encounters:
         chat: دردشة
@@ -810,6 +812,7 @@ ar:
           pl: 
           ru: 
           tr: 
+        legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
         category_headline: أو البحث عن طريق التصنيف

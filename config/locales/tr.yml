@@ -762,6 +762,8 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
+    shariff:
+      share_label: 
     single_search_result:
       encounters:
         chat: Sohbet
@@ -816,6 +818,7 @@ tr:
           pl: 
           ru: 
           tr: 
+        legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
         category_headline: Kategoriler arasında ara

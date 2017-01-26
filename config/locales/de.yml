@@ -592,8 +592,9 @@ de:
         heading: Hast du Fragen zu clarat in verschiedenen Sprachen?
         question_1:
           anchor: how_many_languages
-          answer: |
-            Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+          answer: 'Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+
+'
           question: Auf welchen Sprachen gibt es clarat?
         question_2:
           answer: |
@@ -769,8 +770,9 @@ de:
   emails:
     offers_index:
       family:
-        heading: |
-          Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+        heading: 'Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+
+'
         no_results: |
           Es gibt derzeit keine veröffentlichten clarat family-Angebote für
           <span id="secure-email-0">%{email}</span>
@@ -780,8 +782,9 @@ de:
       last_update: Zuletzt geändert
       obfuscated_email: deine E-Mail-Adresse
       refugees:
-        heading: |
-          Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+        heading: 'Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+
+'
         no_results: |
           Es gibt derzeit keine veröffentlichten clarat refugees-Angebote für
           <span id="secure-email-0">%{email}</span>
@@ -924,6 +927,7 @@ de:
         '326': 326
         '568': 568
         '639': 639
+        abk: Abk
         amh: Amh
         ara: Ara
         arc: Arc
@@ -946,6 +950,7 @@ de:
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -1025,8 +1030,9 @@ de:
       less: Weniger Sprachen zeigen
       more: Mehr Sprachen zeigen
     less_filter_options: Weniger Filter anzeigen
-    location_required: |
-      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+    location_required: 'Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+
+'
     map_info_window_multiple:
       anchor: Alle ansehen >>
       text: Es wurden mehrere Ergebnisse an dieser Adresse gefunden.
@@ -1159,6 +1165,7 @@ de:
         '326': Ukrainisch - українська
         '568': Niederländisch - Nederlands
         '639': Dari - دری
+        abk: Abchasisch - аҧсуа бызшәа
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         arc: Aramäisch - ארמית / Arāmît
@@ -1181,6 +1188,7 @@ de:
         fas: Persisch (Farsi) - فارسی
         fin: Finnisch - suomi
         fra: Französisch - Français
+        fuf: Pular - Pular
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
         heb: Hebräisch - עברית
         hin: Hindi - हिन्दी
@@ -1247,7 +1255,7 @@ de:
           refugees: Bald auch Angebote für Flüchtlinge
           text: clarat.org wird gerade aufgebaut
       footer:
-        about: "Über uns"
+        about: Über uns
         blog: Blog
         contact: Kontakt
         faq: Häufige Fragen
@@ -1297,13 +1305,13 @@ de:
       top_bar:
         german_content_warning: Wähle deine Sprache
         languages:
-          ar: "عربي"
+          ar: عربي
           de: Deutsch
           en: English
           fa: 
           fr: Français
           pl: Polski
-          ru: "Русский"
+          ru: Русский
           tr: Türkçe
         section_link:
           desktop:
@@ -1544,7 +1552,7 @@ de:
         Einfach Hilfe finden. Für Familien auf clarat family. Und für
         Flüchtlinge auf clarat refugees.
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
-      title: "Über Uns"
+      title: Über Uns
       verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
     agb:
       heading: Rechtliche Hinweise
@@ -1669,8 +1677,9 @@ de:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1690,8 +1699,9 @@ de:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1711,8 +1721,7 @@ de:
       title: Bitte wähle deine clarat-Welt
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47
@@ -1747,13 +1756,15 @@ de:
     forms:
       fill_field: Bitte fülle dieses Feld aus
     show:
-      cta_report_errors: |
-        Hast du einen Fehler entdeckt?
+      cta_report_errors: 'Hast du einen Fehler entdeckt?
+
+'
       google_translate_explanation: Oben auf der Seite kannst du deine Sprache anklicken. Dann kannst du clarat in deiner Sprache lesen. Einen Teil der Übersetzung hat die Google Translate API gemacht. Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein, dass etwas komisch klingt.
     tooltips:
       welcome:
-        advanced_search: |
-          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        advanced_search: 'Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+
+'
         world_switch:
           family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
           refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
@@ -1764,8 +1775,9 @@ de:
       text: required
   subscriptions:
     create:
-      error: |
-        Bitte gib eine korrekte E-Mail Adresse ein.
+      error: 'Bitte gib eine korrekte E-Mail Adresse ein.
+
+'
       success: |
         Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
         Adresse gesendet.

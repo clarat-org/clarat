@@ -70,8 +70,9 @@ fr:
             var: link_to_bsz
           question: Clarat sera encore là dans un an?
         question_12:
-          answer: |
-            Le code de programmation de clarat est accessible au public? Le lien vers le code se trouve %{link_to_github}.
+          answer: 'Le code de programmation de clarat est accessible au public? Le lien vers le code se trouve %{link_to_github}.
+
+'
           link_1:
             name: ici
             target: _blank
@@ -81,8 +82,7 @@ fr:
         question_13:
           answer: Pour l’instant, il n’exite pas d’interface qui te permettrait de télécharger des données ou de les modifier. Il y aura peut-être plus tard une interface. Rien n’est encore sûr. Maintenant, on collecte des données pour principalement les trier. Si tu es intéressé par une interface de la sorte, adresse-toi tout simplement à nous, %{link_to_contact_form}.
           link_1:
-            name: |
-              [ le lien  est sur le formulairede contact]
+            name: "[ le lien  est sur le formulairede contact]\n"
             target: _blank
             url: http://www.clarat.org/fr/refugees/contact/nouveau
             var: link_to_contact_form
@@ -417,7 +417,7 @@ fr:
         message_placeholder: Entrer le message (obligatoire)
         name_placeholder: Nom (obligatoire)
         send: Envoyer
-        send_us_a_message: "Écris-nous un message"
+        send_us_a_message: Écris-nous un message
   emails:
     offers_index:
       family:
@@ -559,6 +559,7 @@ fr:
         '326': 326
         '568': 568
         '639': 639
+        abk: Abk
         amh: Amh
         ara: Ara
         arc: Arc
@@ -581,6 +582,7 @@ fr:
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -696,13 +698,13 @@ fr:
       form_less_label: masquer les options de recherches
       form_more_label: Démasquer les options de recherche
       headlines:
-        age: "Âge de l'enfant"
+        age: Âge de l'enfant
         approach: De quelle Manière?
         gender: Sexe
         language: Langue
         sort: Trier par
         target_audience: De l'aide pour qui?
-      option_any: "égal"
+      option_any: égal
       pagination:
         back: Retour
         gap: "..."
@@ -770,6 +772,7 @@ fr:
         '326': Ukrainien - українська
         '568': Néerlandais - Nederlands
         '639': Dari - دری
+        abk: Abkhaze - аҧсуа бызшәа
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
         arc: Araméen - ארמית / Arāmît
@@ -792,6 +795,7 @@ fr:
         fas: Persan - فارسی
         fin: Finnois - suomi
         fra: Français
+        fuf: Pular - Pular
         hbs: Monténégrin - Crnogorski jezik / Црногорски језик
         heb: Hébreu - עברית
         hin: Hindi - हिन्दी
@@ -840,8 +844,9 @@ fr:
         vie: Vietnamien - tiếng Việt
         wol: Wolof - wɔlɔf
         zho: Langues chinoises - 普通话 / 普通話
-        zza: |
-          Zazaki - Zazaki / Kırmancki
+        zza: 'Zazaki - Zazaki / Kırmancki
+
+'
     single_search_result:
       encounters:
         chat: discussion en ligne
@@ -859,7 +864,7 @@ fr:
           refugees: Bientôt des services pour les réfugiés
           text: clarat.org est en train d'être actualisée
       footer:
-        about: "À propos de nous"
+        about: À propos de nous
         blog: Blog
         contact: Contact
         faq: Questions fréquentes
@@ -877,7 +882,7 @@ fr:
           href: https://twitter.com/claratpunktorg
       modal:
         beta_modal:
-          link: "écris-nous tout simplement un message"
+          link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
@@ -899,13 +904,13 @@ fr:
       top_bar:
         german_content_warning: 
         languages:
-          ar: "عربي"
+          ar: عربي
           de: Deutsch
           en: English
           fa: 
           fr: Français
           pl: Polski
-          ru: "Русский"
+          ru: Русский
           tr: Türkçe
         section_link:
           desktop:
@@ -955,7 +960,7 @@ fr:
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
       map_sidebar:
-        map_output_searchresults: "émission de cartes des résultats de recherches"
+        map_output_searchresults: émission de cartes des résultats de recherches
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
       pending_ajax:
         searching: recherche
@@ -1088,7 +1093,7 @@ fr:
       stefan: A fait des études de sciences de la culture. Ça signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
       tine: Est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
-      title: "À propos de nous"
+      title: À propos de nous
       verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat, elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
     agb:
       heading: Rechtliche Hinweise
@@ -1141,17 +1146,20 @@ fr:
       title: Questions fréquentes
     home:
       how:
-        heading: |
-          Clarat, comment ça fonctionne?
+        heading: 'Clarat, comment ça fonctionne?
+
+'
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés
       whom:
-        heading: |
-          Clarat, c’est pour qui?
-        text: |
-          clarat est là pour tous. clarat family pour les enfants, les ados et les familles. clarat refugees pour les réfugiés. Ici tu trouves de l’aide si tu as des questions ou des problèmes. De l’aide pour toi, pour ta famille ou pour tes amis. Ou pour d’autre gens que tu connais et qui ont besoin d’aide.
+        heading: 'Clarat, c’est pour qui?
+
+'
+        text: 'clarat est là pour tous. clarat family pour les enfants, les ados et les familles. clarat refugees pour les réfugiés. Ici tu trouves de l’aide si tu as des questions ou des problèmes. De l’aide pour toi, pour ta famille ou pour tes amis. Ou pour d’autre gens que tu connais et qui ont besoin d’aide.
+
+'
       why:
         heading: Clarat, pourquoi ça existe?
         text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoup d'offres d'aide pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
@@ -1196,8 +1204,9 @@ fr:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1217,8 +1226,9 @@ fr:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1238,8 +1248,7 @@ fr:
       title: 
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47

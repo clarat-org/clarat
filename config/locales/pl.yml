@@ -163,8 +163,9 @@ pl:
           answer: "Mogą to być różne przyczyny.\n<p>\n<ul>\n<li>\nMoże się zdarzyć, że twoje hasło nie działa. Wówczas musisz spróbować użyć innego słowa. Jeśli nie znajdziesz innego odpowiedniego wyrazu, możesz szukać za pomocą obrazów, klikając na nie. W claracie oznacza to: <i>wyszukiwanie wg. kategorii</i>. %{ref_to_how_to_find_right_help} możesz otrzymać informację, jak funkcjonuje wyszukiwanie.\n</li>\n<li>\nJeśli mieszkasz na wsi i w pobliżu nie możesz uzyskać pomocy, wpisz w polu <b>gdzie?</b> nazwę pobliskiego miasta, lub też zwróć rozważ możliwość otrzymania pomocy drogą telefoniczną lub przez internet.\n</li>\n<li>\nInnym powodem może być: brak danych dla twojego terenu.\n</li>\n<li>\nMożliwe jest, że niestety jeszcze nie posiadamy odpowiednich propozycji, które byłyby dla ciebie pomocne. Abyśmy mogli ten stan rzeczy niebawem zmienić, jest dla nas bardzo ważne, abyśmy otrzymali od ciebie informację w tej sprawie. Proszę nas powiadomić o nieudanych próbach wyszukiwania na adres: \n%{mailto_clarat}. Możesz również napisać do nas w Live-Chat, który znajdziesz na stronie w prawym, dolnym rogu.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
-            name: |
-              Tu
+            name: 'Tu
+
+'
             url: "/haeufige-fragen/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           link_2:
@@ -604,6 +605,7 @@ pl:
         '326': 326
         '568': 568
         '639': 639
+        abk: Abk
         amh: Amh
         ara: Ara
         arc: Arc
@@ -626,6 +628,7 @@ pl:
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -813,6 +816,7 @@ pl:
         '326': Język ukraiński - українська
         '568': Język niderlandzki - Nederlands
         '639': Język perski (dari) - دری
+        abk: Język abchaski - аҧсуа бызшәа
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         arc: Język aramejski - ארמית / Arāmît
@@ -835,6 +839,7 @@ pl:
         fas: Język perski (farsi) - فارسی
         fin: Język fiński - suomi
         fra: Język francuski - Français
+        fuf: Pular - Pular
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
         hin: Język hindi - हिन्दी
@@ -941,13 +946,13 @@ pl:
       top_bar:
         german_content_warning: 
         languages:
-          ar: "عربي"
+          ar: عربي
           de: Deutsch
           en: English
           fa: 
           fr: Français
           pl: Polski
-          ru: "Русский"
+          ru: Русский
           tr: Türkçe
         section_link:
           desktop:
@@ -1032,7 +1037,7 @@ pl:
           sun: Niedziela
           thu: Czwartek
           tue: Wtorek
-          wed: "Środa"
+          wed: Środa
         heading: Kiedy możesz się zgłosić?
       speaking: W jakim języku można Ci pomóc?
       website_section:
@@ -1245,8 +1250,9 @@ pl:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1266,8 +1272,9 @@ pl:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1287,8 +1294,7 @@ pl:
       title: 
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47

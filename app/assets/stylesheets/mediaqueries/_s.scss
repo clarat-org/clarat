@@ -230,6 +230,7 @@
       width: 40px;
       background-size: 60%;
       bottom: 10px;
+      z-index: 400;
       height: auto;
 
       body.template--pages-home.ar & {
@@ -406,7 +407,12 @@
   // Content ######################################
 
   .wrapper-inner {
-    padding: 0 15px;
+    padding: 15px 15px 0;
+
+    .template--pages-home &,
+    .template--offers-index & {
+      padding-top: 0;
+    }
 
     .content-main > & {
       padding: 15px;

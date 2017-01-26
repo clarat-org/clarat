@@ -909,6 +909,7 @@
     left: 0;
     right: 0;
     z-index: 1000 !important; // Prevents DOM change
+    background-color: $brand_white;
 
     > ul {
       display: flex;
@@ -916,6 +917,15 @@
 
     li:first-child {
       margin: 0;
+      flex: 1 1 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    .shariff__label {
+      color: $brand_orange;
     }
 
     .shariff-button {
@@ -924,15 +934,14 @@
       margin: 0;
 
       .fa {
-        width: auto;
+        display: block;
+        width: 100%;
         font-size: calc(2.5vw + 1vh);
         line-height: calc(2.5vw + 1vh);
       }
 
       .share_text {
-        float: left;
-        width: auto;
-        font-size: calc(1.75vw + 1vh);
+        display: none;
       }
 
       &:hover {

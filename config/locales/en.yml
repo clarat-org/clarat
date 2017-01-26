@@ -824,7 +824,7 @@ en:
       banner:
         teaser:
           link: Find out more
-          refugees: soon with offers for refugees
+          refugees: Soon with offers for refugees
           text: clarat.org is currently under construction
       footer:
         about: About us
@@ -846,14 +846,14 @@ en:
       modal:
         beta_modal:
           link: write us a message.
-          text: |
+          text: |-
             Our website clarat.org is just getting started. You can already find
-            many offers of help in Berlin. We will soon gather offers for other
-            cities as well. We appreciate your help: Is there something we can do better?
-            Is something not working? Simply
-        unavailable_location_modal: |
+            many support services and programmes in Berlin. Soon we will be collecting support services for other
+            cities as well. And we appreciate your help: is there anything you think we could do better?
+            Or is something not working? Simply
+        unavailable_location_modal: |-
           At the moment you can only find offers of help for Berlin. We are
-          working hard to soon be present in other parts of germany as well.
+          working hard to soon be present in other parts of Germany as well.
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
@@ -865,6 +865,7 @@ en:
           pl: 
           ru: 
           tr: 
+        legal_title: On clarat, legal text can only be read in German.
         title: |-
           Automated translations!
           <br><br>
@@ -872,9 +873,9 @@ en:
       navigation:
         category_headline: Search by categories
         claim:
-          family: Support offerings for children, adolescents and families
+          family: Support services and programmes for children, adolescents and families
           main: Find help easily
-          refugees: Support offerings for refugees
+          refugees: Support services and programmes for refugees
       top_bar:
         german_content_warning: Legal information can only be viewed in German
         languages:
@@ -923,9 +924,9 @@ en:
             girls_only: girls and women only
           target_audience:
             acquaintances: for friends and family
-            children: for children and adolescents
+            children: for children and teenagers
             family_acquaintances: for friends and family
-            family_children: for children and adolescents
+            family_children: for children and teenagers
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -944,7 +945,7 @@ en:
       text: |
         Please check your entry or try searching for something else.
         (E.g "ZIP, Location").
-      title: Unfortunately we could not find the location you entered
+      title: Unfortunately we couldn't find the location you entered
     shared:
       search_form:
         button: Search
@@ -954,8 +955,8 @@ en:
           short: Berlin
         query_label: What
         query_placeholder:
-          long: Offers on the subject of …
-          short: Offers on …
+          long: Support services and programmes connected with...
+          short: Support services about  …
     show:
       last_update: Entry last modified on
       next_steps:
@@ -978,11 +979,11 @@ en:
           application_form: Application Form
           chat: Chat
           contact_form: Contact Form
-          document: Further Information
+          document: Further information
           facebook: Facebook
           forum: Forum
           gplus: Google+
-          online_consulting: Online Consultation
+          online_consulting: Online advising session
           online_course: Online Course
           own: Website
           pinterest: Pinterest
@@ -990,21 +991,21 @@ en:
           youtube: Youtube
       what:
         code_word: 'This is what the service provider calls this support service:'
-        heading: What is this about?
+        heading: What's this about?
       who: Where can you get this help?
       who_contact_people:
         dr: Dr.
         email: 'Email: '
         fax: 'Fax: '
         female: Ms.
-        male: Mister
+        male: Mr.
         obfuscated_email: |
           This e-mail address is protected from spam bots, you must enable
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
       who_location:
-        organizations: 'An offer provided by:'
+        organizations: 'This is a support service provided by:'
       who_section:
         heading: How can you get in touch?
   opening:
@@ -1397,9 +1398,9 @@ en:
   success: 'Thanks! Soon, clarat will exist in your area, too. We will inform you respectively. '
   update_requests:
     create:
-      success: |
-        We recieved your message, thank you. We will get in touch as soon as we
-        are present in your location.
+      success: |-
+        We've received your message, thank you. We will get in touch as soon as we
+        are actively present in your neighbourhood.
     new:
-      button: Send
+      button: Message received
       email_placeholder: Email address

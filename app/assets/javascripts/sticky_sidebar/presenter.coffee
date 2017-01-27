@@ -42,7 +42,7 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
         # Init sticky-kit on sidebar
         $sidebar.stick_in_parent
-          recalc_every: 10
+          recalc_every: 1
           spacer: false
 
 $(document).ready ->

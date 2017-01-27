@@ -1238,6 +1238,8 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+    shariff:
+      share_label: Teilen
     single_search_result:
       encounters:
         chat: Chat
@@ -1295,6 +1297,7 @@ de:
           pl: 
           ru: 
           tr: 
+        legal_title: 
         title: 
       navigation:
         category_headline: Oder suche nach Kategorien

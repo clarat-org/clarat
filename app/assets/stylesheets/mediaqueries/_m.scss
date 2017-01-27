@@ -903,6 +903,54 @@
     position: relative !important;
   }
 
+  div[class="shariff"] {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000 !important; // Prevents DOM change
+    background-color: $brand_white;
+
+    > ul {
+      display: flex;
+    }
+
+    li:first-child {
+      margin: 0;
+      flex: 1 1 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    .shariff__label {
+      color: $brand_orange;
+    }
+
+    .shariff-button {
+      flex: 1 1 25%;
+      width: auto;
+      margin: 0;
+
+      .fa {
+        display: block;
+        width: 100%;
+        font-size: calc(2.5vw + 1vh);
+        line-height: calc(2.5vw + 1vh);
+      }
+
+      .share_text {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: none;
+        background: $brand_orange;
+      }
+    }
+  }
+
   .shariff-button.whatsapp {
     display: block !important;
   }

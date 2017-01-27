@@ -59,7 +59,7 @@ meta name="theme-color" content="#F4B528"
 / Stylesheets
 = stylesheet_link_tag 'application', media: 'all'
 = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css'\
-                      '/font-awesome.min.css'
+                      '/font-awesome.min.css', media: 'none', onload: "if(media!='all')media='all'"
 
 | <script>
 |  if (Function('/*@cc_on return document.documentMode===10@*/')()) {

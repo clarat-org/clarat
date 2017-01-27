@@ -204,6 +204,11 @@ group :test do
 
   # testing emails
   gem 'email_spec'
+
+  # js tests
+  gem 'poltergeist'
+  # gem 'capybara-webkit'
+  # gem 'capybara-selenium'
 end
 
 group :development, :test do
@@ -216,12 +221,17 @@ group :development, :test do
 
   # test suite
   gem 'minitest' # Testing using Minitest
+  gem 'minitest-metadata', require: false
+  gem 'minitest-around'
+  gem 'minitest-spec-rails'
   gem 'minitest-matchers'
   gem 'minitest-line'
   gem 'launchy' # save_and_open_page
   gem 'shoulda'
   gem 'minitest-rails-capybara'
+  gem 'minitest-capybara', '>= 0.8.0'
   gem 'mocha'
+  # gem 'selenium-webdriver'
 
   # test suite additions
   gem 'rails_best_practices'

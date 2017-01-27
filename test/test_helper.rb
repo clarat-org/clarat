@@ -20,6 +20,9 @@ require 'minitest/spec'
 require 'minitest/mock'
 require 'minitest-matchers'
 require 'minitest/hell'
+require 'minitest/metadata'
+require 'capybara/poltergeist'
+# require 'capybara-webkit'
 require 'pry-rescue/minitest' if ENV['RESCUE']
 require 'sidekiq/testing'
 require 'fakeredis'
@@ -37,12 +40,22 @@ Sidekiq::Testing.inline!
 Redis.current = Redis.new
 Capybara.asset_host = 'http://localhost:3000'
 
+# JS Tests
+Capybara.register_driver :poltergeist_debug do |app|
+  Capybara::Poltergeist::Driver.new(app, :inspector => true, :debug => true)#, :port => 3000, :phantomjs_options => ['--ignore-ssl-errors=yes'])
+end
+
+Capybara.javascript_driver = :poltergeist_debug
+# Capybara.javascript_driver = :selenium
+# Setup Webmock to allow localhost connections and block everything else
+WebMock.disable_net_connect!(:allow_localhost => true)
+
 # For fixtures:
 include ActionDispatch::TestProcess
 
 # ~Disable logging for test performance!
 # Change this value if you really need the log and run your suite again~
-Rails.logger.level = 4
+Rails.logger.level = 1
 
 ### Test Setup ###
 File.open(Rails.root.join('log/test.log'), 'w') { |f| f.truncate(0) } # clearlog
@@ -58,6 +71,21 @@ Minitest.after_run do
     rubocop
   end
 end
+
+# Share the active-record connection between rake_test and webkit
+class ActiveRecord::Base
+  mattr_accessor :shared_connection
+  @@shared_connection = nil
+
+  def self.connection
+    @@shared_connection || retrieve_connection
+  end
+end
+ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
+
+# DatabaseCleaner.clean_with :truncation
+# DatabaseCleaner.strategy = :truncation
+DatabaseCleaner.strategy = :transaction
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
@@ -93,6 +121,29 @@ class MiniTest::Spec
   # Add more helper methods to be used by all tests here...
 end
 
-$suite_passing = true
+class AcceptanceTest < MiniTest::Capybara::Spec
+  include MiniTest::Metadata
 
-DatabaseCleaner.strategy = :transaction
+  before :each do
+    Capybara.reset_sessions!
+    # DatabaseCleaner.start
+    if metadata[:js] == true
+      Capybara.current_driver = Capybara.javascript_driver
+    end
+  end
+
+  after :each do
+    # DatabaseCleaner.clean
+    Capybara.current_driver = Capybara.default_driver
+
+    $suite_passing = false if failure
+  end
+
+  around do |tests|
+    DatabaseCleaner.cleaning(&tests)
+  end
+
+  # Add more helper methods to be used by all tests here...
+end
+
+$suite_passing = true

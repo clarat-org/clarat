@@ -8,7 +8,7 @@
       "file": "app/views/organizations/show.html.slim",
       "line": 52,
       "link": "http://brakemanscanner.org/docs/warning_types/link_to_href",
-      "code": "link_to((Organization.approved.friendly.find(params[:id]).homepage.shorten_url + Organization.approved.friendly.find(params[:id]).homepage.pdf_appendix), Organization.approved.friendly.find(params[:id]).homepage.url, :target => \"_blank\")",
+      "code": "link_to((Organization.visible_in_frontend.friendly.find(params[:id]).homepage.shorten_url + Organization.visible_in_frontend.friendly.find(params[:id]).homepage.pdf_appendix), Organization.visible_in_frontend.friendly.find(params[:id]).homepage.url, :target => \"_blank\")",
       "render_path": [{"type":"controller","class":"OrganizationsController","method":"show","line":10,"file":"app/controllers/organizations_controller.rb"}],
       "location": {
         "type": "template",

@@ -28,14 +28,14 @@ end
 #
 #   sitemap_for Page.scoped
 
-sitemap_for Offer.approved do |offer|
+sitemap_for Offer.visible_in_frontend do |offer|
   I18n.available_locales.each do |locale|
     url send(:"offer_#{locale}_url", offer.canonical_section, offer),
         last_mod: offer.updated_at, priority: 0.9
   end
 end
 
-sitemap_for Organization.approved do |orga|
+sitemap_for Organization.visible_in_frontend do |orga|
   I18n.available_locales.each do |locale|
     url send(:"organization_#{locale}_url", orga.canonical_section, orga),
         last_mod: orga.updated_at, priority: 0.8

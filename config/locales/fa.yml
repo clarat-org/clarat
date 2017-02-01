@@ -831,6 +831,8 @@ fa:
         wol: ولفی - wɔlɔf
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
+    shariff:
+      share_label: 
     single_search_result:
       encounters:
         chat: چت
@@ -878,6 +880,7 @@ fa:
           pl: 
           ru: 
           tr: 
+        legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
         category_headline: یا بدنبال طبقه بندی ها

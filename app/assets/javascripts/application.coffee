@@ -89,6 +89,7 @@ about supported directives.
 # = require enhance_listing_results/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
+# = require shariff_additional/presenter
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
 # = require toggle_advanced_search/presenter
@@ -113,5 +114,4 @@ about supported directives.
 # = require modules/safari_fixes
 # = require modules/cookie_warning
 # = require modules/faq
-# = require modules/shariff_additonal
 # = require modules/refocus

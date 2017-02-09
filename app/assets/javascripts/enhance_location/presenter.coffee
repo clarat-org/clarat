@@ -1,3 +1,4 @@
+# For #936: Handle the case of empty location input
 Clarat.enhanceLocation = {}
 
 class Clarat.enhanceLocation.Presenter extends ActiveScript.Presenter

@@ -20,9 +20,11 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       focus: 'handleFocussedLocationInput'
       blur: 'handleBlurredLocationInput'
     '.JS-Geolocation__prompt':
-      click: 'handleBrowserLocationPromptClick'
+      click: 'handleRequestGeolocation'
     '.JS-Geolocation__remove':
       click: 'handleRemoveLocationByBrowserClick'
+    document:
+      'Clarat.Location::RequestGeolocation': 'handleRequestGeolocation'
 
 
   # Check if cookie had was saved to use "my location" and if so, use it again.
@@ -36,7 +38,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
       # Act as if user requested their current geolocation, since they likely
       # still give us permission to use it
-      @handleBrowserLocationPromptClick()
+      @handleRequestGeolocation()
 
   ## Simple place change by input or Google Places Autocomplete selection
 
@@ -46,6 +48,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       @searchLocationInput.val(), @updateCurrentLocation
     )
 
+  initMyLocationDisplay: (location) =>
+    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
+      location
+    )
 
   ## Place Change by querying browser location
 
@@ -67,7 +73,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @promptTimeout = setTimeout @removePrompt, 1000
 
   # Prompt clicked: Find out browser's geolocation
-  handleBrowserLocationPromptClick: (event) =>
+  handleRequestGeolocation: (event) =>
     # Prompt was clicked, doesn't need to be timed out anymore
     clearTimeout @promptTimeout
 
@@ -89,16 +95,13 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     else
       # Fallback for no geolocation
       @handleBrowserGeolocationRequestError('No JS Geolocation')
+      $(document).trigger 'Clarat.Location::GeolocationRequestError'
 
   # Browser returned an error while trying to find geolocation
   handleBrowserGeolocationRequestError: (error = 'Timeout') =>
+    $(document).trigger 'Clarat.Location::GeolocationRequestError'
     clearTimeout @geolocationTimeout
     console.log error
-
-    # Inform user that something went wrong
-    @render '.JS-Geolocation__prompt', 'location_by_browser_error',
-      content: I18n.t('js.geolocation.error')
-    , method: 'replaceWith'
 
   # Browser returned with a geolocation
   handleBrowserGeolocationRequestSuccess: (position) =>
@@ -113,9 +116,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       query: I18n.t('conf.current_location')
       geoloc: "#{position.coords.latitude},#{position.coords.longitude}"
 
-    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
-      @currentLocation
-    )
+    @initMyLocationDisplay(@currentLocation)
 
   # Remove button for the display of "using current location" clicked.
   handleRemoveLocationByBrowserClick: (event) =>

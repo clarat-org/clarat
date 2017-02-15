@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: c9b71e8f7f49d6d665c4c992be065cdb48983cb1
-  branch: feature/986-show-expired-offers-in-frontend
+  revision: c7d05301d0cdd6208653efe72e255bc92232c9c4
   specs:
     clarat_base (0.1.4)
       aasm
@@ -65,7 +64,7 @@ GEM
     algoliasearch (1.12.6)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.17.0)
+    algoliasearch-rails (1.17.1)
       algoliasearch (~> 1.12.4)
       json (>= 1.5.1)
     arcane (1.1.1)
@@ -129,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.2.0)
+    closure_tree (6.3.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -199,7 +198,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.0)
       activerecord (>= 4.0.0)
-    geocoder (1.4.1)
+    geocoder (1.4.3)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -233,7 +232,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.7.0)
+    i18n (0.8.0)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
     ice_nine (0.11.1)

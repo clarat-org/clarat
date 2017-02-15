@@ -16,7 +16,7 @@ class Category < ActiveRecord::Base
   # determine if it shoul be shown in the search results
   def offers_in_section? section
     self_and_descendants.any? do |category|
-      category.offers.approved.in_section(section).any?
+      category.offers.visible_in_frontend.in_section(section).any?
     end
   end
 end

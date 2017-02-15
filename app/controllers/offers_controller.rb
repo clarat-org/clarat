@@ -16,7 +16,7 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.approved.friendly.find(params[:id])
+    @offer = Offer.visible_in_frontend.friendly.find(params[:id])
     unless @offer.in_section? @current_section
       return redirect_to section: @offer.canonical_section
     end
@@ -26,7 +26,7 @@ class OffersController < ApplicationController
   end
 
   def section_forward
-    offer = Offer.approved.friendly.find(params[:id])
+    offer = Offer.visible_in_frontend.friendly.find(params[:id])
     offer_section = offer.canonical_section
     redirect_to offer_path(section: offer_section, id: offer.slug)
   end

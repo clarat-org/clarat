@@ -7,11 +7,16 @@ feature 'emails#offers_index' do
                                 section: 'family', name: 'baz'
     offer2 = FactoryGirl.create :offer, :approved,
                                 section: 'refugees', name: 'fuz'
+    offer3 = FactoryGirl.create :offer, :approved,
+                                section: 'family', name: 'foo'
     offer1.contact_people.first.update_column :email_id, email.id
     offer2.contact_people.first.update_column :email_id, email.id
+    offer3.contact_people.first.update_column :email_id, email.id
+    offer3.update_columns aasm_state: 'expired'
     visit emails_offers_path(section: 'family', id: email.id, locale: 'de')
 
     page.must_have_content 'baz'
+    page.must_have_content 'foo' # expired family offer
     page.wont_have_content 'fuz' # because it's in different section
     page.wont_have_content email.address # because js obfuscated
   end

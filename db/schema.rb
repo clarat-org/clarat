@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160826130459) do
+ActiveRecord::Schema.define(version: 20170120120937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,29 @@ ActiveRecord::Schema.define(version: 20160826130459) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "assignments", force: true do |t|
+    t.integer  "assignable_id",                                       null: false
+    t.string   "assignable_type",       limit: 32,                    null: false
+    t.string   "assignable_field_type", limit: 64,   default: "",     null: false
+    t.integer  "creator_id"
+    t.integer  "creator_team_id"
+    t.integer  "reciever_id"
+    t.integer  "reciever_team_id"
+    t.string   "message",               limit: 1000
+    t.integer  "parent_id"
+    t.string   "aasm_state",            limit: 32,   default: "open", null: false
+    t.datetime "created_at",                                          null: false
+    t.datetime "updated_at",                                          null: false
+  end
+
+  add_index "assignments", ["aasm_state"], name: "index_assignments_on_aasm_state", using: :btree
+  add_index "assignments", ["assignable_id", "assignable_type"], name: "index_assignments_on_assignable_id_and_assignable_type", using: :btree
+  add_index "assignments", ["creator_id"], name: "index_assignments_on_creator_id", using: :btree
+  add_index "assignments", ["creator_team_id"], name: "index_assignments_on_creator_team_id", using: :btree
+  add_index "assignments", ["parent_id"], name: "index_assignments_on_parent_id", using: :btree
+  add_index "assignments", ["reciever_id"], name: "index_assignments_on_reciever_id", using: :btree
+  add_index "assignments", ["reciever_team_id"], name: "index_assignments_on_reciever_team_id", using: :btree
 
   create_table "categories", force: true do |t|
     t.string   "name_de",    limit: nil,                null: false
@@ -80,7 +103,7 @@ ActiveRecord::Schema.define(version: 20160826130459) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "cities", force: true do |t|
-    t.string   "name",       null: false
+    t.string   "name",       limit: nil, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -135,6 +158,17 @@ ActiveRecord::Schema.define(version: 20160826130459) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "divisions", force: true do |t|
+    t.string   "name",              limit: nil, null: false
+    t.text     "description"
+    t.integer  "organization_id",               null: false
+    t.integer  "section_filter_id",             null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  add_index "divisions", ["organization_id"], name: "index_divisions_on_organization_id", using: :btree
 
   create_table "emails", force: true do |t|
     t.string   "address",       limit: 64,                        null: false
@@ -340,6 +374,7 @@ ActiveRecord::Schema.define(version: 20160826130459) do
     t.date     "starts_at"
     t.datetime "completed_at"
     t.integer  "completed_by"
+    t.string   "residency_status",            limit: nil
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -501,11 +536,12 @@ ActiveRecord::Schema.define(version: 20160826130459) do
   end
 
   create_table "time_allocations", force: true do |t|
-    t.integer "user_id",                    null: false
-    t.integer "year",                       null: false
-    t.integer "week_number",      limit: 2, null: false
-    t.integer "desired_wa_hours",           null: false
+    t.integer "user_id",                       null: false
+    t.integer "year",                          null: false
+    t.integer "week_number",       limit: 2,   null: false
+    t.integer "desired_wa_hours",              null: false
     t.integer "actual_wa_hours"
+    t.string  "actual_wa_comment", limit: nil
   end
 
   add_index "time_allocations", ["user_id"], name: "index_time_allocations_on_user_id", using: :btree
@@ -526,7 +562,8 @@ ActiveRecord::Schema.define(version: 20160826130459) do
   add_index "user_team_users", ["user_team_id"], name: "index_user_team_users_on_user_team_id", using: :btree
 
   create_table "user_teams", force: true do |t|
-    t.string "name", limit: nil, null: false
+    t.string "name",           limit: nil,                        null: false
+    t.string "classification", limit: nil, default: "researcher"
   end
 
   create_table "users", force: true do |t|

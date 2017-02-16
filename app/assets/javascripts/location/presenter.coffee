@@ -23,12 +23,15 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       click: 'handleRequestGeolocation'
     '.JS-Geolocation__remove':
       click: 'handleRemoveLocationByBrowserClick'
+    '#new_search_form':
+      submit: 'handleFormSubmit'
     document:
       'Clarat.Location::RequestGeolocation': 'handleRequestGeolocation'
 
 
   # Check if cookie had was saved to use "my location" and if so, use it again.
   onLoad: ->
+    @startGarbageCollection()
     if @searchLocationInput.val() is I18n.t('conf.current_location')
       # Turn input into display field because we don't just want the string
       # "My Location" in there in plain text
@@ -40,7 +43,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       # still give us permission to use it
       @handleRequestGeolocation()
 
-    if @searchLocationInput.val() = "Alexanderplatz, Berlin, Deutschland"
+    if @searchLocationInput.val() is I18n.t('js.geolocation.fallback')
       Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.revert()
 
 
@@ -61,9 +64,8 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
   # Geolocation Display Input focussed
   handleFocussedLocationInput: (event) =>
-    unless @preventLocationByBrowserPrompt
-      # Clear remaining timeouts in case of rapid clicking
-      clearTimeout @promptTimeout
+    unless @preventLocationByBrowserPrompt or @promptIsInUse
+      @promptIsInUse = true
 
       # Open prompt to use browser's location
       if @searchLocationInput.val() isnt I18n.t('conf.current_location') or searchLocationInput.val() isnt "Alexanderplatz, Berlin, Deutschland"
@@ -73,22 +75,21 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
   # Geolocation Display Input left
   handleBlurredLocationInput: (event) =>
-    # User has one second after leaving focus to click the prompt
-    @promptTimeout = setTimeout @removePrompt, 1000
+    @promptIsInUse = false
 
   # Prompt clicked: Find out browser's geolocation
   handleRequestGeolocation: (event) =>
     # Prompt was clicked, doesn't need to be timed out anymore
-    clearTimeout @promptTimeout
+    @promptIsInUse = true
 
     # Inform user that the request is now pending
     @render '.JS-Geolocation__prompt', 'location_by_browser_waiting',
       content: I18n.t('js.geolocation.waiting')
     , method: 'replaceWith'
 
-    # Request Beolocation from browser
+    # Request Geolocation from browser
     if navigator.geolocation
-      # Timeout because the default doesn't work in all browsers
+      # Timeout because the geolocation query doesn't work in all browsers
       @geolocationTimeout =
         setTimeout(@handleBrowserGeolocationRequestError, 10000)
 
@@ -98,14 +99,25 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       )
     else
       # Fallback for no geolocation
-      @handleBrowserGeolocationRequestError('No JS Geolocation')
-      $(document).trigger 'Clarat.Location::GeolocationRequestError'
+      # @handleBrowserGeolocationRequestError('no_js_geolocation')
+      @handleBrowserGeolocationRequestError(code: 4)
 
   # Browser returned an error while trying to find geolocation
-  handleBrowserGeolocationRequestError: (error = 'Timeout') =>
-    $(document).trigger 'Clarat.Location::GeolocationRequestError'
+  # Code reference:
+  # 1 - User denied Geolocation
+  # 2 - Position unavailable
+  # 3 - Timeout
+  # 4 - Browser doesn't support Geolocation (custom code)
+  handleBrowserGeolocationRequestError: (error = code: 3) =>
     clearTimeout @geolocationTimeout
-    console.log error
+
+    # Inform user that we chose a fallback
+    @render '.JS-Geolocation__wrapper', 'location_by_browser_fallback',
+      content: I18n.t "js.geolocation.fallback_clarification.code#{error.code}"
+    , method: 'append'
+
+    # Set location to fallback
+    $('#search_form_search_location').val I18n.t('js.geolocation.fallback')
 
   # Browser returned with a geolocation
   handleBrowserGeolocationRequestSuccess: (position) =>
@@ -134,6 +146,12 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     $('.JS-Geolocation__display').focus()
     @preventLocationByBrowserPrompt = false
 
+  handleFormSubmit: (event) =>
+    if $('#search_form_search_location').val() == ""
+      $('#search_form_search_location').blur() # always loose focus
+      $(document).trigger 'Clarat.Location::RequestGeolocation'
+      @stopEvent event
+
 
   ### PRIVATE METHODS (ue) ###
 
@@ -147,6 +165,13 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     Clarat.Location.Operation.SaveToCookie.run(response)
     $(document).trigger 'Clarat.Location::NewLocation', @currentLocation
 
+  # Garbage collection: regularly check, whether an existing prompt is visiblei
+  # and may be removed
+  startGarbageCollection: ->
+    setInterval(@tickGarbageCollection, 4000)
+  tickGarbageCollection: =>
+    if $('.JS-Geolocation__prompt') and not @promptIsInUse
+      @removePrompt()
 
 $(document).ready ->
   Clarat.Location.presenter = new Clarat.Location.Presenter

@@ -1,3 +1,4 @@
+# DEPRECATED
 # For #936: Handle the case of empty location input
 Clarat.enhanceLocation = {}
 
@@ -31,5 +32,5 @@ class Clarat.enhanceLocation.Presenter extends ActiveScript.Presenter
 
 
 
-$(document).ready ->
-  new Clarat.enhanceLocation.Presenter
+# $(document).ready ->
+#   new Clarat.enhanceLocation.Presenter

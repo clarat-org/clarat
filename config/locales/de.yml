@@ -1024,9 +1024,12 @@ de:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
-      fallback_clarification: |-
-        Der Alexanderplatz in Berlin ist nicht in deiner Nähe? Dann gib hier bitte
-        deine Adresse, PLZ oder Stadt ein.
+      fallback: Alexanderplatz, Berlin, Deutschland
+      fallback_clarification:
+        code1: Der Alexanderplatz in Berlin ist nicht in deiner Nähe? Dann gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code2: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code3: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code4: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
       get: Benutze meinen Standort!
       waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
     lang_list_toggle:

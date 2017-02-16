@@ -678,7 +678,12 @@ ru:
       <a href="/ru/refugees/Правила-конфиденциальности">Далее</a>.
     geolocation:
       error: Местонахождение не найдено. Пожалуйста введи сам.
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Использовать мое местонахождения!
       waiting: Искать местонахождения... Возможно тебе нужно сначала это разрешить.
     lang_list_toggle:

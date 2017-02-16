@@ -699,7 +699,12 @@ pl:
       <a href="/pl/refugees/ochrona-danych">więcej</a>.
     geolocation:
       error: Lokalizacja nie mogła zostać odnaleziona. Prosimy wprowadzić ją ręcznie.
-      fallback_clarification: Alexanderplatz w Berlinie nie jest w twojej okolicy? Podaj mi proszę twój adres, kod pocztowy lub dzielnice.
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Użyj mojej lokalizacji!
       waiting: Szukam lokalizacji... Prawdopodobnie musisz najpierw wyrazić zgodę.
     lang_list_toggle:

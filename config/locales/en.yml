@@ -621,7 +621,12 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:

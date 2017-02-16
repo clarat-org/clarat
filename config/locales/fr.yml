@@ -651,7 +651,12 @@ fr:
       <a href="/fr/refugees/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: J'utlise ma localisation!
       waiting: Recherche localisation...... éventuellement, tu dois en premier lieu l'autoriser.
     lang_list_toggle:

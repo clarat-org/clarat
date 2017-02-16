@@ -578,7 +578,12 @@ tr:
       <a href="/tr/refugees/Gizlilik-Politikası">daha fazla</a>.
     geolocation:
       error: konumun bulunamamıştır. Lütfen manüel giriş yap.
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Konumumu kullan!
       waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
     lang_list_toggle:

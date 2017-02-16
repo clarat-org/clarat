@@ -62,7 +62,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       clearTimeout @promptTimeout
 
       # Open prompt to use browser's location
-      if @searchLocationInput.val() isnt I18n.t('conf.current_location') or searchLocationInput.val() isnt ""
+      if @searchLocationInput.val() isnt I18n.t('conf.current_location') or searchLocationInput.val() isnt "Alexanderplatz, Berlin, Deutschland"
         @render '.JS-Geolocation__wrapper', 'location_by_browser_prompt',
           content: I18n.t('js.geolocation.get')
         , method: 'append'

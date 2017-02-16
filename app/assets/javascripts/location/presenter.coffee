@@ -43,9 +43,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       # still give us permission to use it
       @handleRequestGeolocation()
 
-    if @searchLocationInput.val() is I18n.t('js.geolocation.fallback')
-      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.revert()
-
 
   ## Simple place change by input or Google Places Autocomplete selection
 
@@ -116,7 +113,9 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     )
 
     # Set location to fallback
-    $('#search_form_search_location').val I18n.t('js.geolocation.fallback')
+    @updateCurrentLocation
+      query: I18n.t('js.geolocation.fallback')
+      geoloc: I18n.t('conf.default_latlng')
 
   # Browser returned with a geolocation
   handleBrowserGeolocationRequestSuccess: (position) =>
@@ -159,9 +158,11 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     $('.JS-Geolocation__prompt').remove()
 
   # set new location and inform the outside
-  updateCurrentLocation: (response) =>
-    @currentLocation = response
-    Clarat.Location.Operation.SaveToCookie.run(response)
+  updateCurrentLocation: (locationObject) =>
+    @currentLocation = locationObject
+    $('.JS-Geolocation__input').val locationObject.geoloc
+    $('.JS-Geolocation__display').val locationObject.query
+    Clarat.Location.Operation.SaveToCookie.run(locationObject)
     $(document).trigger 'Clarat.Location::NewLocation', @currentLocation
 
   render_prompt: (template_name, content) =>

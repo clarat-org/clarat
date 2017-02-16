@@ -1024,6 +1024,9 @@ de:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
+      fallback_clarification: |-
+        Der Alexanderplatz in Berlin ist nicht in deiner Nähe? Dann gib hier bitte
+        deine Adresse, PLZ oder Stadt ein.
       get: Benutze meinen Standort!
       waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
     lang_list_toggle:
@@ -1352,17 +1355,17 @@ de:
             boys_only: nur für Jungen und Männer
             girls_only: nur für Mädchen und Frauen
           target_audience:
-            acquaintances: für Bekannte und Verwandte
             children: für Kinder und Jugendliche
-            family_acquaintances: für Bekannte und Verwandte
             family_children: für Kinder und Jugendliche
             family_nuclear_family: für Familien
             family_parents: für Eltern
             family_parents_to_be: für werdende Eltern
             family_pregnant_woman: für Schwangere
+            family_relatives: für Bekannte und Verwandte
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
+            relatives: für Bekannte und Verwandte
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1381,7 +1384,7 @@ de:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Berlin, Deutschland
+          long: Adresse, Stadt oder PLZ
           short: Berlin
         query_label: Was
         query_placeholder:

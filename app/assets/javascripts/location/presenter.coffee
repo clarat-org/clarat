@@ -68,10 +68,11 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       @promptIsInUse = true
 
       # Open prompt to use browser's location
-      if @searchLocationInput.val() isnt I18n.t('conf.current_location') or searchLocationInput.val() isnt "Alexanderplatz, Berlin, Deutschland"
-        @render '.JS-Geolocation__wrapper', 'location_by_browser_prompt',
-          content: I18n.t('js.geolocation.get')
-        , method: 'append'
+      static_location_values = [
+        I18n.t('conf.current_location'), I18n.t('js.geolocation.fallback')
+      ]
+      unless static_location_values.includes @searchLocationInput.val()
+        @render_prompt 'location_by_browser_prompt', I18n.t('js.geolocation.get')
 
   # Geolocation Display Input left
   handleBlurredLocationInput: (event) =>
@@ -83,13 +84,11 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @promptIsInUse = true
 
     # Inform user that the request is now pending
-    @render '.JS-Geolocation__prompt', 'location_by_browser_waiting',
-      content: I18n.t('js.geolocation.waiting')
-    , method: 'replaceWith'
+    @render_prompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
 
     # Request Geolocation from browser
     if navigator.geolocation
-      # Timeout because the geolocation query doesn't work in all browsers
+      # Timeout because the default timeout doesn't work in all browsers
       @geolocationTimeout =
         setTimeout(@handleBrowserGeolocationRequestError, 10000)
 
@@ -99,7 +98,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       )
     else
       # Fallback for no geolocation
-      # @handleBrowserGeolocationRequestError('no_js_geolocation')
       @handleBrowserGeolocationRequestError(code: 4)
 
   # Browser returned an error while trying to find geolocation
@@ -112,9 +110,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     clearTimeout @geolocationTimeout
 
     # Inform user that we chose a fallback
-    @render '.JS-Geolocation__wrapper', 'location_by_browser_fallback',
-      content: I18n.t "js.geolocation.fallback_clarification.code#{error.code}"
-    , method: 'append'
+    @render_prompt(
+      'location_by_browser_fallback',
+      I18n.t "js.geolocation.fallback_clarification.code#{error.code}"
+    )
 
     # Set location to fallback
     $('#search_form_search_location').val I18n.t('js.geolocation.fallback')
@@ -164,6 +163,18 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @currentLocation = response
     Clarat.Location.Operation.SaveToCookie.run(response)
     $(document).trigger 'Clarat.Location::NewLocation', @currentLocation
+
+  render_prompt: (template_name, content) =>
+    if $('.JS-Geolocation__prompt').length
+      selector = 'prompt'
+      method = 'replaceWith'
+    else
+      selector = 'wrapper'
+      method = 'append'
+
+    @render ".JS-Geolocation__#{selector}", template_name,
+      content: content
+    , method: method
 
   # Garbage collection: regularly check, whether an existing prompt is visiblei
   # and may be removed

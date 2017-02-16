@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4744f703fe0b3474b16876576fed11a3a54b311a
-  branch: feature/941-stamp-refugees
+  revision: 5873e29894cc884b4ed8349cce42b29a4e446c5d
   specs:
     clarat_base (0.1.4)
       aasm

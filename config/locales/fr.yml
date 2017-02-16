@@ -54,15 +54,15 @@ fr:
             var: link_to_family_movie
           question: Clarat, c’est quoi?
         question_10:
-          answer: L’argent pour financer <b>clarat family</b> et <b>clarat-réfugiés</b> vient de %{link_to_bsz}.
+          answer: L’argent pour financer <b>clarat family</b> et <b>clarat refugees</b> vient essentiellement de %{link_to_bsz}. Nous souhaitons cependant ajouter d'autres organismes de financement à l'avenir.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/de
             var: link_to_bsz
-          question: Qui finance clarat?
+          question: Qui finance clarat ?
         question_11:
-          answer: "<b>clarat family</b> et <b>clarat refugees</b> sont là pour longtemps. Car le %{link_to_bsz} va aussi financer les deux portails internet à l'avenir. Tu peux donc trouver de l'aide auprès de clarat même au cours des prochaines années. Cela vaut à présent avant tout pour Berlin . Et bientôt pour d'autres villes et régions que nous accueillons au sein de clarat."
+          answer: "<b>clarat family</b> et <b>clarat refugees</b> sont là pour longtemps. Tu pourras donc trouver de l'aide auprès de clarat même au cours des prochaines années. Cela vaut à présent avant tout pour Berlin. Et bientôt pour d'autres villes et régions que nous accueillons au sein de clarat."
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -88,7 +88,7 @@ fr:
             var: link_to_contact_form
           question: Clarat propose une interface pour réutiliser les données?
         question_2:
-          answer: on trouve différents types d’aide en Allemagne. Pour les personnes qui ont grand besoin d’aide, ces types d’aide sont souvent difficiles à trouver. Par exemple, parce qu’on ne sait pas exactement où on doit chercher. Ou parce qu’on ne sait pas à qui s’adresser . C’est ce qu’ on veut changer.
+          answer: On trouve différents types d’aide en Allemagne. Pour les personnes qui ont grand besoin d’aide, ces types d’aide sont souvent difficiles à trouver. Par exemple, parce qu’on ne sait pas exactement où on doit chercher. Ou parce qu’on ne sait pas à qui s’adresser. C’est ce qu’on veut changer.
           question: Clarat, pourquoi ça existe?
         question_3:
           answer: Entre ton problème. Et où tu cherches de l’aide. Ensuite tu trouves les types d’aide proposés tout près de chez toi. Ou de l’aide par téléphone ou sur internet. %{ref_to_how_to_find_right_help} on t’explique en détail comment tu peux trouver ce que tu cherches. Quand tu cliques sur un type d’aide, on te dit ce que tu dois faire ensuite. Par exemple si tu peux appeler quelqu’un ou tout simplement aller voir quelqu’un.
@@ -108,7 +108,7 @@ fr:
           answer: On vérifie régulièrement que les informations sur clarat sont actuelles. C’est le seul moyen pour que clarat puisse aider les enfants, les ados, les familles. Quand les infos ne sont plus exactes, alors on les actualise. Ça signifie qu’on les remplace.
           question: Les informations qu’on trouve sur clarat sont-elles toujours d’actualité?
         question_7:
-          answer: Tu peux te servir de certains types d’aide de <b>clarat family</b> und bei <b>clarat refugees</b> où que tu sois.  où que tu habites. Il existe beaucoup de services où on peut t’aider par téléphone ou sur internet. Ça signifie  par courriel, sur des sites de chat ou des forums. Tu trouves des offres dans toute l’Allemagne sur clarat-refugee. Sur clarat-family, nous avons réuni beaucoup d'offres à Berlin. Et on continue de réunir des services. Bientôt tu nous trouveras dans d’autres grandes villes d’Allemagne.
+          answer: Tu peux te servir de certains types d’aide de <b>clarat family</b> et de <b>clarat refugees</b> où que tu sois, où que tu habites. Il existe beaucoup de services où l'on peut t’aider par téléphone ou sur internet, donc par e-mail, chat ou sur des forums. De nombreuses offres sont proposées exactement à l'endroit où tu te trouves. Tu trouveras bientôt des offres dans toutes les grandes villes d’Allemagne sur <b>clarat refugees</b>. Pour l'instant, elles se limitent à Berlin, Cologne et Dusseldorf. Sur <b>clarat family</b>, nous avons commencé par Berlin, où tu peux déjà trouver de nombreux services. Nous continuons cependant de recueillir des propositions. Bientôt tu nous trouveras dans d’autres grandes villes d’Allemagne.
           question: On trouve clarat partout en Allemagne?
         question_8:
           answer: "Clarat te montre où tu peux trouver de l’aide tout près de chez toi.  Tu as un aperçu rapide de la liste d’aide proposée. De plus, on t’explique en détail ce que tu dois faire pour recevoir cette aide. On écrit toujours les choses simplement. Écrire simplement, c’est pouvoir être compris facilement. Car même les personnes qui ne parlent pas très bien allemand doivent pouvoir trouver de l’aide auprès de clarat. Tu peux lire les offres dans beaucoup d’autres langues. Pour en apprendre plus sur le sujet clique %{ref_to_how_many_languages}. \n"
@@ -119,9 +119,7 @@ fr:
             var: ref_to_how_many_languages
           question: Quelle est la particularité de clarat?
         question_9:
-          answer: |-
-            Clarat est un projet de %{link_to_bsz}. C'est une fondation familliale qui déjà depuis  longtemps en fait beaucoup pour les enfants et les ados. Et maintenant aussi pour les réfugiés avec clarat-refugee. Ici en regardant une %{link_to_bsz_movie} tu peux en savoir plus sur la fondation.
-            L'idée clarat est née mi 2014. L'équipe de clarat existe depuis septembre 2014. Si tu veux en savoir plus sur nous, regarde %{link_to_about_us}.
+          answer: Clarat est un projet de %{link_to_bsz} qui a vu le jour en 2014. C'est une fondation familiale qui aide déjà depuis longtemps les enfants et les ados, et maintenant aussi les réfugiés, grâce à clarat refugee. Tu pourras en apprendre plus sur la fondation en cliquant ici %{link_to_bsz_movie}.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -291,7 +289,7 @@ fr:
       section_3:
         heading: Tu as des questions sur le langage de clarat?
         question_1:
-          answer: Pour que toutes les personnes qui cherchent de l’aide sur clarat puissent trouver rapidement de l’aide, on a créé le langage clarat. Le langage clarat est facile à comprendre. Car il se fonde sur un langage simple. Et finalement clarat est là pour tout le monde. Pour les enfants, les ados, les familles; Issus de différents pays. Pour ceux qui sont nés ici. Pour ceux qui viennent tout juste d’arriver en Allemagne. Pour ceux qui parle bien allemand. Et pour ceux qui ne parle pas très bien allemand.
+          answer: Pour que toutes les personnes qui cherchent de l’aide sur clarat puissent trouver rapidement de l’aide, on a créé le langage clarat. Le langage clarat est facile à comprendre. Car il se fonde sur un langage simple. Et finalement clarat est là pour tout le monde. Pour les enfants, les ados, les familles; Issus de différents pays. Pour ceux qui sont nés ici. Pour ceux qui viennent tout juste d’arriver en Allemagne. Pour ceux qui parlent bien allemand. Et pour ceux qui ne parlent pas très bien allemand.
           question: Clarat écrit toujours dans une langue simple, pourquoi?
         question_2:
           answer: Sur clarat,les mots compliqués sont expliqués en une phrase. Mais pour certains mots, l’explication est plus longue. Ces mots, tu les reconnais sur clarat car ils sont soulignés. Si tu survoles le mot avec la souris, l’explication apparaît.
@@ -426,7 +424,7 @@ fr:
         toggle_section_html:
           one: Ton <strong>clarat refugees</strong>-Service
           other: Tes <strong>%{count} clarat refugees</strong>-Services
-      last_update: Last update
+      last_update: Dernière mise à jour
       obfuscated_email: Ton adresse électronique
       refugees:
         heading: Tes services sur clarat refugees pour <span id="secure-email-0">%{email}</span>
@@ -636,11 +634,11 @@ fr:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby: À proximité
+        relevance: Pertinence
       sort_order:
-        nearby: 
-        relevance: 
+        nearby: À proximité
+        relevance: Pertinence
   js:
     ajax_error:
       error: erreur de recherche
@@ -653,6 +651,7 @@ fr:
       <a href="/fr/refugees/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
+      fallback_clarification: 
       get: J'utlise ma localisation!
       waiting: Recherche localisation...... éventuellement, tu dois en premier lieu l'autoriser.
     lang_list_toggle:
@@ -710,8 +709,8 @@ fr:
         gap: "..."
         next: de nouveau
       sort:
-        nearby: proche
-        relevance: Meilleurs matchs
+        nearby: À proximité
+        relevance: Meilleurs résultats
       tabs:
         categories: Catégories
         filter: Filtre
@@ -735,7 +734,7 @@ fr:
           Afficher %{result_count} résultats
       personal_anchor:
         one: Dans votre région (%{count})
-        other: Dans votre région (%{count})
+        other: Sur place (%{count})
       personal_offers:
         one: un service sur place
         other: "%{count} services sur place"
@@ -810,7 +809,7 @@ fr:
         lit: Lituanien - lietuvių
         ltz: Luxembourgeois - Lëtzebuergesch
         luo: Luo - Dholuo
-        man: Maninka - Maninka
+        man: Malinké - Maninka
         mkd: Macédonien - македонски
         mul: autres langues sur demande
         nor: Norvégien - Norsk
@@ -848,7 +847,7 @@ fr:
 
 '
     shariff:
-      share_label: 
+      share_label: Partager
     single_search_result:
       encounters:
         chat: discussion en ligne
@@ -905,7 +904,7 @@ fr:
           main: Trouver simplement de l'aide
           refugees: Offres d'aide pour les réfugiés
       top_bar:
-        german_content_warning: 
+        german_content_warning: Choisis ta langue
         languages:
           ar: عربي
           de: Deutsch
@@ -917,15 +916,15 @@ fr:
           tr: Türkçe
         section_link:
           desktop:
-            family: 
-            refugees: 
+            family: "‹ aller à la page clarat refugees"
+            refugees: "‹ aller à la page clarat family"
           mobile:
             home:
-              family: 
-              refugees: 
+              family: aller à la page de démarrage de <span class="top-bar__emphasis">clarat family</span>
+              refugees: aller à la page de démarrage de <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              family: 
-              refugees: 
+              family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
+              refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
   offers:
     index:
@@ -941,27 +940,27 @@ fr:
           encounter:
             chat: discussion instantanée
             email: E-mail
-            fax: 
+            fax: Fax
             forum: forum
             hotline: téléphone
-            letter: 
+            letter: Lettre
             online-course: cours en ligne
             portal: liste d'adresses
           exclusive_gender:
             boys_only: seulement pour les garçons ou les hommes
             girls_only: seulement pour les filles et les femmes
           target_audience:
-            acquaintances: pour les connaissances ou la parenté
             children: pour les enfants et les ados
-            family_relatives: pour les connaissances et la parenté
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents
             family_parents_to_be: pour de futurs parents
             family_pregnant_woman: pour les femmes enceintes
+            family_relatives: pour les connaissances et la parenté
             nuclear_family: pour les familles
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
+            relatives: pour les connaissances ou la parenté
       map_sidebar:
         map_output_searchresults: émission de cartes des résultats de recherches
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
@@ -984,7 +983,7 @@ fr:
     show:
       last_update: Dernière entrée traitée le
       next_steps:
-        code_word: Quelles questions poser et où chercher sur le site?
+        code_word: 'Chez ce fournisseur, l''aide s’appelle :'
         heading: Qu'est-ce que tu dois faire?
       opening_section:
         days:
@@ -1014,9 +1013,9 @@ fr:
           twitter: Twitter
           youtube: Youtube
       what:
-        code_word: Quelles questions poser et où chercher sur le site?
+        code_word: 'Chez ce fournisseur, l''aide s’appelle :'
         heading: De quoi s'agit-il?
-      who: Qui propose cette aide?
+      who: Qui propose cette aide ?
       who_contact_people:
         dr: Dr.
         email: 'E-mail:'
@@ -1047,57 +1046,57 @@ fr:
   pages:
     about:
       amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
-      andrea: A étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Chez.Clarat, elle est dans l'équipe recherche. Elle assure la qualité de notre travail. Sa chanson préférée est Work Me des Black Keys.
-      anja: 
-      anna: 
-      anne: A étudié économie et relations internationales. Elle pense de façon très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
-      astrid: Est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne  est contagieuse. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est You Got Me de The Roots feat. Erykah Badu.
+      andrea: Elle a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Elle fait partie de l'équipe recherche de clarat. Elle a une vue d'ensemble sur le monde de notre famille. Sa chanson préférée est Work Me des Black Keys.
+      anja: Elle est oncologue et ingénieure. Elle pense rapidement et de façon logique. Elle fait partie de l'équipe recherche de clarat. Elle est chargée de contrôler la qualité de notre travail. Sa chanson préférée est Where is my mind des Pixies.
+      anna: Elle est philologue. Cela veut dire qu'elle sait beaucoup de choses sur les langues. Elle s'y connait également bien en littérature. Elle sait très bien comprendre les choses compliquées. Elle fait partie de l'équipe recherche de clarat. Sa chanson préférée est 1009 de Bonobo.
+      anne: Elle a fait des études en économie et relations internationales. Elle pense de façon rapide et très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
+      astrid: Elle est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne est contagieuse. Elle fait partie de l'équipe recherche de clarat. Elle recherche aussi de nouveaux organismes sur internet. Sa chanson préférée est You Got Me de The Roots.
       basti: Est web designer. Cela signifie qu'il s'y connaît en programmation de sites internet. Chez Clarat, il est chef d’équipe. Il nous aide quand on rencontre des problèmes techniques. Et il s'occupe des congés, des contrats. Sa chanson préférée est Man In The Mirror de Michael Jackson.
-      bettina: 'Bettina a étudié le management des organisations à but non lucratif. Cela signifie qu''elle sait comment organiser une aide. Pour elle: une place pour chaque chose et chaque chose à sa place. Chez clarat, elle est  dans l''équipe recherche. Et elle recherche des organisations sur internet.'
-      birte: 
-      chrissy: 
-      claudia: 
-      eleonore: 
-      elisa: A fait des études de cultural studies. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Chez Clarat, elle est dans l'équipe recherche. Elle s'occupe également du lexique et des utilisateurs. Sa chanson préférée est Boat Behind de Kings of Convenience.
-      esther: 
+      bettina: Elle a étudié le management des organisations à but non lucratif. Cela signifie qu'elle sait comment organiser une aide. Elle sait bien mettre de l'ordre. Elle fait partie de l'équipe recherche de clarat et c'est elle qui décide ce qu'est une offre clarat. Sa chanson préférée est Elias de Dispatch.
+      birte: Elle a fait des études en sciences de l'éducation. Elle sait bien s'y prendre avec les enfants et sait bien se mettre à la place des autres. Elle a aussi beaucoup travaillé avec les médias. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Borderline de Madonna.
+      chrissy: C'est une politologue, c'est à dire quelqu'un qui connait beaucoup de choses sur la politique et la société. Elle sait très bien planifier et classer. Elle fait partie de l'équipe de chercheurs de clarat. Elle recherche également des organismes sur internet. Sa chanson préférée est Rough Hands d'Alexisonfire.
+      claudia: Avant de travailler chez clarat, elle travaillait dans le secteur du commerce de détail. Elle sait bien s'y prendre avec les personnes. Elle fait partie de l'équipe de chercheurs de clarat. Elle aide nos utilisateurs. Sa chanson préférée est Chandelier de Sia.
+      eleonore: Elle a étudié la musique, les médias et l'économie. Elle sait comment récolter et comprendre rapidement les informations. Elle fait partie de l'équipe de chercheurs de clarat. Elle fait de sorte que les utilisateurs trouvent facilement clarat sur internet. Sa chanson préférée est Je Veux de Zaz.
+      elisa: Elle est experte en sciences culturelles. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Elle veille également à ce que notre site internet soit joli à voir. Sa chanson préférée est Boat Behind de Kings of Convenience.
+      esther: Elle a fait des études en sciences culturelles. Ell s'y connait bien en histoire et en politique. Et elle apprend facilement de nouvelles choses. Elle fait partie de l'équipe de recherche de clarat et s'occupe de notre dictionnaire. Sa chanson préférée est This charming man de The Smiths.
       franziska: A étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
-      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
+      hassan: Il a travaillé en tant qu'interprète en langue perse. Il est de langue maternelle perse. Il sait organiser vite et bien. Il fait partie de l'équipe de traducteurs de clarat et traduit en persan. Sa chanson préférée est Looking For The Summer de Chris Rea.
       heading: Qui est derrière clarat?
-      jacinta: 
-      jakob: 
-      janina: A étudié l’anthropologie culturelle. Cela signifie qu'elle sait beaucoup de choses sur  les hommes et les différentes cultures. Elle écrit très bien. Chez clarat, elle est dans l’équipe recherche. Elle est l’experte de notre language clarat et s’occupe de nos utilisateurs. Sa chanson préférée est MFG de Fanta4.
-      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
-      janne: A étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat, elle est dans l’équipe  recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat von Ry X.
-      jenny: 
+      jacinta: Elle a étudié le français et l'allemand. Sa langue maternelle est l'anglais. Elle sait bien écrire de façon claire et simple. Elle fait partie de l'équipe de traducteurs de clarat et traduit en anglais. Sa chanson préférée est Wannabe des Spice Girls.
+      jakob: C'est un scientifique spécialisé dans l'Asie et l'Afrique. Cela signifie qu'il sait beaucoup de choses sur ces continents. Même dans une situation de stress, il garde toujours le calme. Il fait partie de l'équipe de recherche de clarat et recherche des organisations sur internet. Sa chanson préférée est Simplicity de Mbarga.
+      janina: C'est une anthropologue culturelle. Cela signifie qu'elle sait beaucoup de choses sur les hommes et les différentes cultures. Elle écrit très bien. Elle fait partie de l'équipe de recherche de clarat. Elle s’occupe de nos utilisateurs et répond à toutes leurs questions. Sa chanson préférée est MFG de Fanta4.
+      janina_m: C'est la directrice d'enseignement ménager. Elle sait bien organiser. Elle s'occupe des employés de clarat et de nos bureaux. Elle fait de sorte que tout fonctionne bien. Sa chanson préférée est Kinder an die Macht de Herbert Grönemeyer.
+      janne: Janne a étudié les sciences politique de les relations internationales. Elle sait très bien gérer son temps. Chez clarat, elle est dans l’équipe de recherche. Et elle décide quels services vont être inclus sur clarat. Sa chanson préférée est Sweat de Ry X.
+      jenny: Elle est anthropologue sociale. Cela signifie qu'elle sait beaucoup de choses sur les hommes et les cultures. Chez clarat, elle est dans l’équipe de recherche. Elle fait de sorte que notre site internet soit beau à voir. Sa chanson préférée est I sing I swim de Seabear.
       jens: Est pédagogue. Cela signifie qu'il sait beaucoup de choses sur  l’éducation. Il comprend facilement des choses complexes. Chez clarat, il est dans l’équipe recherche. Et il décide quels services vont être inclus sur clarat.. Sa chanson préférée est 2B2 von Lambchop.
-      jule: fait de la recherche  sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat, elle est dans l’équipe recherche. Et elle s’assure de la qualité de notre travail. Sa chanson préférée est Home de Edward Sharpe.
+      jule: Elle fait des recherches sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat, elle est dans l’équipe recherche. Elle a une vue d'ensemble sur notre monde des réfugiés. Sa chanson préférée est Home de Edward Sharpe.
       julia: Est germaniste. Ça signifie que la langue allemande n’a pas de secret pour elle. Et elle sait bien écrire et expliquer simplement les choses. Chez clarat, elle est dans l’équipe recherche et elle est experte de notre language clarat. Sa chanson préférée est Reckoner de Radiohead.
-      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
+      julia_b: Elle a fait des études de travail social. Elle a déjà beaucoup travaillé avec les enfants et les jeunes. Elle sait bien se mettre à la place des autres. Elle est dans l'équipe de recherche de clarat. Sa chanson préférée est Nantes de Beirut.
       julian: Est socioéconomiste. Ça signifie qu’il sait beaucoup de choses sur l’économie et la sociéte. En informatique, il s’y connaît bien aussi. Chez clarat, il est dans l’équipe recherche et il s’occupe des questions techniques. Sa chanson préférée est All You Need de Sublime.
-      juliane: 
-      karo: 
-      katinka: Est psychologue. Ça signifie qu’elle comprend bien le comportement et les sentiments des gens. Elle sait comment organiser des choses compliquées. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est The Greatest de Cat Power.
-      katja: 
+      juliane: Elle a fait des études de tourisme et un apprentissage de gestion d'entreprise. Elle sait bien planifier et trouve toujours une solution créative. Chez clarat, elle s'occupe du marketing. Sa chanson préférée est Easy des Commodores.
+      karo: Elle a fait des études européennes. Elle sait donc beaucoup de choses sur la politique européenne. Elle sait bien organiser. Elle fait partie de l'équipe de recherche de clarat. Elle s'occupe de notre manuel. Sa chanson préférée est Alive de Pearl Jam.
+      katinka: Elle est psychologue. Cela signifie qu’elle comprend bien le comportement et les sentiments des gens. Chez clarat, elle est dans l’équipe recherche et elle découvre qui utilise clarat. Sa chanson préférée est The Greatest de Cat Power.
+      katja: Elle est germaniste. Elle s'y connait très bien en textes compliqués et en langue allemande. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Mysteries de Beth Gibbons.
       konstantin: Est web designer. Ça signifie qu’il sait programmer des sites internet. Il trouve toujours de bonnes solutions. Chez clarat, il est dans  l’équipe TI et il crée nos sites internet. Sa chanson préférée est Too Long de Daft Punk.
-      laura_i: 
-      laura_w: A fait des études de l’Asie du sud et fait de la recherche en développement géographique. Ça signifie qu’elle sait beaucoup de choses sur les pays en voie de développement. Elle a toujours une vue d'ensemble de la situation. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
-      lavinia: fait de la recherche en paix et conflits. Ça signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans  l’équipe recherche et elle classe nos services par thèmes. Sa chanson préférée est I'm Not Done de Fever Ray.
-      line: Est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et la langue. C’est pour ça qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans  l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
-      lisa: Fait du Design Thinking. Ça signifie qu’elle sait comment planifier des projets de façon créative. Chez clarat, elle est dans l’équipe recherche et elle fait des plans d’avenir et elle s’occupe de nos utilisateurs. Sa chanson préférée est Another Day de Jamie Lidell.
+      laura_i: Elle est agent de voyage et experte en sciences culturelles. Elle sait bien organiser. Elle garde toujours le contrôle et aime apprendre de nouvelles choses. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Proud Mary d'Ike und Tina Turner.
+      laura_w: Elle a étudié dans le domaine de la recherche sur le développement géographique. Elle sait donc beaucoup de choses sur les pays en voie de développement. Elle a toujours une vue d'ensemble de la situation. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Paint It Black des Rolling Stones.
+      lavinia: Elle fait de la recherche en paix et conflits. Cela signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans l’équipe recherche et est l'experte de notre langage. Sa chanson préférée est I'm Not Done de Fever Ray.
+      line: Elle est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et le langage. C’est pour cela qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
+      lisa: Elle fait du Design Thinking. Elle aime planifier des projets avec les autres de façon créative. Elle sait bien dessiner. Elle fait partie de l'équipe de recherche de clarat et elle communique avec nos utilisateurs. Elle doit découvrir qui utilise clarat et de quelle façon. Sa chanson préférée est Resolution de Matt Corby.
       marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
-      michaela: 
-      nahla: 
-      nathalie: 
+      michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
+      nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.
+      nathalie: Elle a étudié la politique internationale et les droits de l'homme. Elle sait bien expliquer et elle sait aussi bien écouter. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Me in You des Kings of Convenience.
       nicole: A fait des études de communication interculturelle. Ça signifie qu’elle sait beaucoup de choses sur les cultures et les languages. Elle fait des choix judicieux. Elle dirige l’équipe de recherche. Sa chanson préférée est Palabra Mi Amor de Shaka Ponk.
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
-      philipp: 
-      sabine: 
-      sophie: 
-      stefan: A fait des études de sciences de la culture. Ça signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
+      philipp: Il a étudie l'Histoire, la politique et le droit. Il sait beaucoup de choses sur la politique et la société. Il comprend très bien les choses compliquées. Il fait partie de l'équipe de recherche de clarat. Sa chanson préférée est This Is Our Science des Astronautalis.
+      sabine: Elle est sociologue. Cela signifie qu'elle sait beaucoup de choses sur la société. Elle comprend très bien les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Vesna de Kino.
+      sophie: Elle a étudié le management des organisations à but non lucratif. Elle a une bonne organisation et repère facilement ce qui est important. Elle fait partie de l'équipe de recherche de clarat. Elle découvre également qui utilise clarat et de quelle façon. Sa chanson préférée est Lost de Frank Ocean.
+      stefan: C'est un spécialiste en sciences culturelles. Cela signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
-      tine: Est éducatrice spécialisée. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Ça signifie qu’elle sait jouer avec les mots et écrire de belles histoires. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Survive It de Ghostpoet.
+      tine: C'est une éducatrice sociale. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Cela signifie qu’elle sait écrire de belles histoires. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Survive It de Ghostpoet.
       title: À propos de nous
-      verena: Est politologue. Ça signifie qu’elle sait beaucoup de choses sur la politique et la société. Elle a un don pour recueillir les informations. Chez clarat, elle est dans l’équipe recherche et elle s’occupe de notre lexique. Sa chanson préférée est Lose It de Oh Wonder.
+      verena: Elle fait des études de genre. Ça signifie qu’elle sait beaucoup de choses sur les différents sexes et sur notre société. Elle sait bien s'organiser. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Lose It de Oh Wonder.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1168,7 +1167,7 @@ fr:
         text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoup d'offres d'aide pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
     impressum:
       heading: Impressum
-      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
+      notice: clarat est un moteur de recherche. clarat te dit où tu peux trouver de l'aide. Par exemple, où tu peux trouver un expert capable de t'aider à résoudre ton problème. clarat peut seulement t'aider à effectuer ta recherche.
       responsible_html: |-
         Geschäftsführer<br/>
         Anne Schulze und Mathias Barth<br/>
@@ -1248,7 +1247,7 @@ fr:
         title: 
       refugees:
         title: 
-      title: 
+      title: Choisis ton monde clarat
     shared:
       address:
         email: "%{mailto}\n"
@@ -1264,14 +1263,14 @@ fr:
     definitions: définitions
     emails: adresses-électroniques
     faq: questions-fréquentes
-    fr: 
+    fr: fr
     haeufige-fragen: questions-fréquentes
-    home: 
+    home: page de démarrage
     impressum: impression
-    liste: 
-    liste-de-services: 
+    liste: liste
+    liste-de-services: iste de services
     new: nouveau
-    offers: offres-d-aide
+    offers: offres d'aide
     organizations: organisations
     preview: preview
     rechtliche-hinweise: informations-juridiques
@@ -1287,7 +1286,7 @@ fr:
       fill_field: veuillez remplir ce champ
     show:
       cta_report_errors: tu as vu une erreur?
-      google_translate_explanation: les traductions ont été automatiquement effectuées par Google Translate. Il y a souvent des erreurs de langues. Il est donc possible que ça te paraisse bizarre. Vérifie alors dans le texte allemand.
+      google_translate_explanation: Tu peux sélectionner ta langue en haut de la page. Ainsi tu pourras afficher clarat dans ta langue. Une partie de la page a été automatiquement effectuées par Google Translate. Malheureusement, il y a parfois des erreurs linguistiques. Il est donc possible que ça te paraisse bizarre.
     tooltips:
       welcome:
         advanced_search: Tu veux faire une recherche plus détaillée? Alors clique ici. Une fenêtre avec de nombreuses possibilités s'affiche sur l'écran;

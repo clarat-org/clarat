@@ -619,6 +619,7 @@ fa:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: موقعیت جغرافیایی شما را نتوانستیم پیدا کنیم.لطفا آن را تایپ کنید
+      fallback_clarification: 
       get: از موقعیت جغرافیایی من استفاده کن!
       waiting: جستجوی موقعیت جغرافیایی...در صورت امکان باید ابتدا اجازه آن را بدهی
     lang_list_toggle:
@@ -832,7 +833,7 @@ fa:
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
     shariff:
-      share_label: 
+      share_label: تقسیم کردن
     single_search_result:
       encounters:
         chat: چت
@@ -935,17 +936,17 @@ fa:
             boys_only: فقط برای پسرها و مردان
             girls_only: فقط برای دختران و بانوان
           target_audience:
-            acquaintances: برای آشنایان و فامیل
             children: برای بچه ها و جوانان
-            family_relatives: برای آشنایان و فامیل
             family_children: برای بچه ها و جوانان
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین
             family_parents_to_be: برای پدر و مادران آینده
             family_pregnant_woman: برای زنان باردار
+            family_relatives: برای آشنایان و فامیل
             nuclear_family: برای خانواده ها
             parents: برای والدین
             pregnant_woman: برای زنان باردار
+            relatives: برای آشنایان و فامیل
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '

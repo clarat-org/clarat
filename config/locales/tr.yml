@@ -578,6 +578,7 @@ tr:
       <a href="/tr/refugees/Gizlilik-Politikası">daha fazla</a>.
     geolocation:
       error: konumun bulunamamıştır. Lütfen manüel giriş yap.
+      fallback_clarification: 
       get: Konumumu kullan!
       waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
     lang_list_toggle:
@@ -877,17 +878,17 @@ tr:
             boys_only: Yalnızca erkekler için
             girls_only: Yalnızca bayanlar için
           target_audience:
-            acquaintances: Tanıdık ve akrabalar için
             children: Çocuklar ve gençler için
-            family_relatives: Tanıdık ve akrabalar için
             family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
             family_parents_to_be: Ebeveyn adayları için
             family_pregnant_woman: Hamileler için
+            family_relatives: Tanıdık ve akrabalar için
             nuclear_family: Aileler için
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
+            relatives: Tanıdık ve akrabalar için
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |

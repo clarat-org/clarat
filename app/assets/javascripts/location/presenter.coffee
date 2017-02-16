@@ -40,6 +40,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       # still give us permission to use it
       @handleRequestGeolocation()
 
+    if @searchLocationInput.val() = "Alexanderplatz, Berlin, Deutschland"
+      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.revert()
+
+
   ## Simple place change by input or Google Places Autocomplete selection
 
   # Geolocation Display Input has new location (triggered by GMaps)

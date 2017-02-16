@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 92d91dd9edea0c56638c7e26e25bb1d2419b8a4b
+  revision: 4744f703fe0b3474b16876576fed11a3a54b311a
   branch: feature/941-stamp-refugees
   specs:
     clarat_base (0.1.4)
@@ -129,7 +129,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.2.0)
+    closure_tree (6.3.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -199,7 +199,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.0)
       activerecord (>= 4.0.0)
-    geocoder (1.4.2)
+    geocoder (1.4.3)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)

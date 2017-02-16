@@ -22,7 +22,7 @@
       - if I18n.locale == :de
         button.nav-lang__button[aria-label="Switch language"]
       - else
-        button.nav-lang__button[aria-label="Switch language" title="#{t 'layouts.partials.nav_lang.title'}"]
+        button.nav-lang__button[aria-label="Switch language" title="#{t 'layouts.partials.nav_lang.title'}" data-title="#{t 'layouts.partials.nav_lang.legal_title'}"]
       ul.nav-lang__list
         - I18n.available_locales.each do |locale|
           - active = I18n.locale == locale ? 'nav-lang__listitem--active' : ''

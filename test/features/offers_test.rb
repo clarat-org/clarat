@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 feature 'Offer display' do
-  scenario 'Offer gets shown' do
+  scenario 'Approved offer gets shown' do
     offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
     visit unscoped_offer_path offer
     page.must_have_content offer.name
@@ -9,11 +9,29 @@ feature 'Offer display' do
     page.must_have_content offer.name
   end
 
-  scenario 'Offer gets shown in a different language (English)' do
+  scenario 'Expired offer gets shown' do
+    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
+    offer.update_columns aasm_state: 'expired'
+    visit unscoped_offer_path offer
+    page.must_have_content offer.name
+    click_link offer.organizations.first.name
+    page.must_have_content offer.name
+  end
+
+  scenario 'Approved offer gets shown in a different language (English)' do
     offer = FactoryGirl.create :offer, :approved, :with_email,
                                :with_dummy_translations # test obfuscation
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
+    visit offer_en_path offer, section: 'refugees'
+    page.must_have_content 'GET READY FOR CANADA'
+    page.must_have_css '.Automated-translation__warning'
+  end
+
+  scenario 'Expired offer gets shown in a different language (English)' do
+    offer = FactoryGirl.create :offer, :approved, :with_email,
+                               :with_dummy_translations # test obfuscation
+    offer.update_columns aasm_state: 'expired'
     visit offer_en_path offer, section: 'refugees'
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'

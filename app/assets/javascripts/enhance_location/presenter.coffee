@@ -13,10 +13,11 @@ class Clarat.enhanceLocation.Presenter extends ActiveScript.Presenter
 
     if $('#search_form_search_location').val() == ""
       e.preventDefault()
+      $('#search_form_search_location').blur()
       $(document).trigger 'Clarat.Location::RequestGeolocation'
 
   handleGeolocationRequestError: () =>
-    # German text "Wir schlagen vor hier zu suchen: 'Berlin-Alexanderplatz'. Wenn du woanders suchen willst gib hier eine andere Adresse, Stadt oder Postleitzahl ein."
+    # German text "Der Alexanderplatz in Berlin ist nicht in deiner Nähe? Dann gib hier bitte deine Adresse, PLZ oder Stadt ein."
     fallbackClarification =  I18n.t('js.geolocation.fallback_clarification')
     fallbackLocation = 'Alexanderplatz, Berlin, Deutschland'
 

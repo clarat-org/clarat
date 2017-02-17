@@ -619,7 +619,12 @@ fa:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: موقعیت جغرافیایی شما را نتوانستیم پیدا کنیم.لطفا آن را تایپ کنید
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: از موقعیت جغرافیایی من استفاده کن!
       waiting: جستجوی موقعیت جغرافیایی...در صورت امکان باید ابتدا اجازه آن را بدهی
     lang_list_toggle:
@@ -937,6 +942,7 @@ fa:
             girls_only: فقط برای دختران و بانوان
           target_audience:
             children: برای بچه ها و جوانان
+            family_acquaintances: 
             family_children: برای بچه ها و جوانان
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین

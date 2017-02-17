@@ -621,7 +621,12 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
-      fallback_clarification: 
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
@@ -927,6 +932,7 @@ en:
             girls_only: girls and women only
           target_audience:
             children: for children and teenagers
+            family_acquaintances: 
             family_children: for children and teenagers
             family_nuclear_family: for families
             family_parents: for parents

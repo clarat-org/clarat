@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: d18d8bc391fbcc114570f984fe1c7ec19d97de55
+  revision: 44c2a0805f4b1b0e99585b12243deb41591a0149
+  branch: feature/996_997_1003_new_language
   specs:
     clarat_base (0.1.4)
       aasm
@@ -652,4 +653,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.7
+   1.14.4

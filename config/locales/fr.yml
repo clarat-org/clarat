@@ -630,6 +630,11 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -851,6 +856,11 @@ fr:
         zza: 'Zazaki - Zazaki / Kırmancki
 
 '
+        aar: 'L''afar - Qafar-áf '
+        ckb: 'Sorani - سۆرانی '
+        cus: Saho - ሳሆኛ
+        msa: Malais – بهاس ملايو
+        tig: Tigré - ትግሬ
     shariff:
       share_label: Partager
     single_search_result:

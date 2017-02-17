@@ -67,9 +67,9 @@ class SearchForm
     if cookies[:saved_search_location] && cookies[:saved_geolocation]
       self.search_location = cookies[:saved_search_location]
       self.generated_geolocation = cookies[:saved_geolocation]
-    # else
-    #   self.search_location = I18n.t('conf.default_location')
-    #   self.generated_geolocation = I18n.t('conf.default_latlng')
+      # else
+      # self.search_location = I18n.t('conf.default_location')
+      # self.generated_geolocation = I18n.t('conf.default_latlng')
     end
   end
 

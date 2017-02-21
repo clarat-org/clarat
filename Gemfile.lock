@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 44c2a0805f4b1b0e99585b12243deb41591a0149
-  branch: feature/996_997_1003_new_language
+  revision: 99ca2c14e221d0aec6bc332efcecfe6d35305509
   specs:
     clarat_base (0.1.4)
       aasm
@@ -129,7 +128,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.3.0)
+    closure_tree (6.4.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -540,7 +539,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
-    with_advisory_lock (3.0.0)
+    with_advisory_lock (3.1.0)
       activerecord (>= 3.2)
       thread_safe
     xpath (2.0.0)

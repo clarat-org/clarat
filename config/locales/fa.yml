@@ -16,7 +16,7 @@ fa:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
-      search_location: جستجوی مکان
+      search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -388,6 +388,8 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
+    success:
+      success: 
   emails:
     offers_index:
       family:
@@ -598,6 +600,11 @@ fa:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: خانواده
         refugees: پناهندگان
@@ -837,6 +844,11 @@ fa:
         wol: ولفی - wɔlɔf
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
+        aar: 'زبان عفار - Qafar-áf '
+        ckb: 'سورانی - سۆرانی '
+        cus: Saho - ሳሆኛ
+        msa: زبان مالایی – بهاس ملايو
+        tig: زبان تیگره - ትግሬ
     shariff:
       share_label: تقسیم کردن
     single_search_result:

@@ -342,6 +342,8 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
+    success:
+      success: 
   emails:
     offers_index:
       family:
@@ -554,6 +556,11 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -768,6 +775,11 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
+        aar: 'Afar - Qafar-áf '
+        ckb: Soranice - سۆرانی
+        cus: Saho - ሳሆኛ
+        msa: Malayca – بهاس ملايو
+        tig: Tigre - ትግሬ
     shariff:
       share_label: 
     single_search_result:

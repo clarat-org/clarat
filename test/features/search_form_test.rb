@@ -20,7 +20,7 @@ feature 'Search Form' do
   scenario 'Search with changed location is working correctly' do
     # root path => default location is used
     visit home_path(section: :family)
-    page.must_have_field('search_form_search_location', with: 'Berlin')
+    page.must_have_field('search_form_search_location')
     # change location and search => valid seach at the given location
     fill_in 'search_form_search_location', with: 'Köln'
     # manually fill in cookie values

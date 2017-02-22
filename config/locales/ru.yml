@@ -440,6 +440,8 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
+    success:
+      success: 
   emails:
     offers_index:
       family:
@@ -654,6 +656,11 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -878,6 +885,11 @@ ru:
         wol: Волоф язык - wɔlɔf
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
+        aar: 'Афарский - Qafar-áf '
+        ckb: 'Сорани́ - سۆرانی '
+        cus: Сaxo - ሳሆኛ
+        msa: Мала́йский язы́к – بهاس ملايو
+        tig: Тигре - ትግሬ
     shariff:
       share_label: Разделить
     single_search_result:

@@ -28,7 +28,7 @@ acquaintances:
   id: 6
   type: TargetAudienceFilter
   name: Bekannte
-  identifier: family_acquaintances
+  identifier: family_relatives
 parents_to_be:
   id: 7
   type: TargetAudienceFilter

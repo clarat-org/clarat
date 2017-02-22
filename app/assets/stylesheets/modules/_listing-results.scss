@@ -200,11 +200,11 @@
   height: 24px;
   background: transparent no-repeat center center;
 
-  &[aria-toggle='false'] {
+  &[aria-expanded='false'] {
     background-image: image-url('ico_expand.svg');
   }
 
-  &[aria-toggle='true'] {
+  &[aria-expanded='true'] {
     background-image: image-url('ico_collapse.svg');
   }
 
@@ -250,10 +250,10 @@
   position: relative;
   width: 38%;
   background: transparent image-url('ico_user.svg') no-repeat 9px 5px;
-  padding: 0 4px 0 36px;
+  padding: .45em 10px .45em 36px;
   background-size: auto 20px;
   min-height: 32px;
-  line-height: 30px;
+  line-height: 1.4;
   overflow: hidden;
 
   .section-content__body--offers-of-orga & {

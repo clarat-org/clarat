@@ -53,9 +53,11 @@
   color: $brand_white;
   text-decoration: none;
   margin: -1px 28px 0;
-  padding: 7px 7px 7px 55px;
+  padding: 6px 7px 9px 55px;
   font-size: 27px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  line-height: 1.33;
 }
 
 .section-choice__cta--refugees {

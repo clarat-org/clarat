@@ -1,0 +1,46 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	color: #41311a;
+	background-color: #f6eedc;
+}
+
+a {
+	color: inherit;
+}
+
+.wf-roboto-n3-active .content,
+.wf-roboto-n3-active .footer-main {
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+.wf-robotoslab-n4-active .hero {
+	font-family: 'Roboto Slab';
+}
+
+.hero__content {
+	font-size: 18px;
+	line-height: 1.55;
+}
+
+
+.hero__headline {
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.content {
+	line-height: 1.75;
+}
+
+.btn {
+	background-color: #B0193E;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}

@@ -47,7 +47,7 @@
   @extend %clarat_rounding_end;
   width: auto;
   min-width: 90%;
-  height: 90px;
+  min-height: 90px;
   background: image-url('skinny-arrow-right.svg') no-repeat 14px center ;
   background-size: 28px 49px;
   color: $brand_white;

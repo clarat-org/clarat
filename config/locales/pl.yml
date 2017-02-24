@@ -458,6 +458,11 @@ pl:
         name_placeholder: Imię (Pole obowiązkowe)
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
+        city_placeholder: 
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -1002,7 +1007,6 @@ pl:
             girls_only: tylko dla dziewcząt i kobiet
           target_audience:
             children: dla dzieci i młodzieży
-            family_acquaintances: 
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
@@ -1013,6 +1017,7 @@ pl:
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
             relatives: dla znajomych i krewnych
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -1299,10 +1304,6 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: Wybierz swój clarat-świat
     shared:
       address:
@@ -1337,6 +1338,8 @@ pl:
     unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole
@@ -1369,3 +1372,8 @@ pl:
     new:
       button: Wiadomość otrzymana
       email_placeholder: adres e-mail
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

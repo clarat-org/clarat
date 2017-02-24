@@ -440,6 +440,11 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
+        city_placeholder: 
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -994,7 +999,6 @@ ru:
             girls_only: только для девочек и женщин
           target_audience:
             children: для детей и молодежи
-            family_acquaintances: 
             family_children: для детей и молодежи
             family_nuclear_family: для семей
             family_parents: для родителей
@@ -1005,6 +1009,7 @@ ru:
             parents: для родителей
             pregnant_woman: для беременных
             relatives: для знакомых и родственников
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
       noscript_warning: |
@@ -1290,10 +1295,6 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: Пожалуйста,  выберите ваш мир clarat
     shared:
       address:
@@ -1328,6 +1329,8 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле
@@ -1366,3 +1369,8 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

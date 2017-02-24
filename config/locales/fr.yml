@@ -416,6 +416,11 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
+        city_placeholder: 
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -956,7 +961,6 @@ fr:
             girls_only: seulement pour les filles et les femmes
           target_audience:
             children: pour les enfants et les ados
-            family_acquaintances: 
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents
@@ -967,6 +971,7 @@ fr:
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
             relatives: pour les connaissances ou la parenté
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: émission de cartes des résultats de recherches
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
@@ -1249,10 +1254,6 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: Choisis ton monde clarat
     shared:
       address:
@@ -1287,6 +1288,8 @@ fr:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: utilisateur
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ
@@ -1319,3 +1322,8 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

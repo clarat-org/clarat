@@ -342,6 +342,11 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
+        city_placeholder: 
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -884,7 +889,6 @@ tr:
             girls_only: Yalnızca bayanlar için
           target_audience:
             children: Çocuklar ve gençler için
-            family_acquaintances: 
             family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
@@ -895,6 +899,7 @@ tr:
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
             relatives: Tanıdık ve akrabalar için
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |
@@ -1188,10 +1193,6 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: 
     shared:
       address:
@@ -1226,6 +1227,8 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1269,3 +1272,8 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

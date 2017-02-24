@@ -388,6 +388,11 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
+        city_placeholder: 
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -942,7 +947,6 @@ fa:
             girls_only: فقط برای دختران و بانوان
           target_audience:
             children: برای بچه ها و جوانان
-            family_acquaintances: 
             family_children: برای بچه ها و جوانان
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین
@@ -953,6 +957,7 @@ fa:
             parents: برای والدین
             pregnant_woman: برای زنان باردار
             relatives: برای آشنایان و فامیل
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1190,10 +1195,6 @@ fa:
       intro_second_part: در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید.
       title: حفاظت از اطلاعات
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:
       address:
@@ -1228,6 +1229,8 @@ fa:
     unsubscribe: بدون شرح
     update_requests: update_requests
     users: کاربر
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن
@@ -1260,3 +1263,8 @@ fa:
     new:
       button: پیغام دریافت شد
       email_placeholder: آدرس ایمیل
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

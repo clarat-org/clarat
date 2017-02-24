@@ -1,9 +1,15 @@
-$('.popup_content_visible').popup('hide');
-$('body').prepend(
+$('.contact_heading').html(
   "<%=
-    j render 'layouts/partials/flash',
-             type: 'success',
+    j render 'layouts/partials/h2',
+             type: 't.contacts.create.success',
              content: yield
   %>"
 );
+$('.contact_name').hide();
+$('.contact_email').hide();
+$('.contact_city').hide();
+$('.contact_message').hide();
+if(window.location.href.indexOf("kontakt") > -1) {
+$('.contact_message').wrap( ' <p><a href="https://www.clarat.org">Zurück zur Startseite</a></p>' );
+}
 <%= content_for :additional_js %>

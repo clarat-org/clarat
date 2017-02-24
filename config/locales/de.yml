@@ -767,6 +767,11 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
+        city_placeholder: Wohnort (Optional)
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -1359,7 +1364,6 @@ de:
             girls_only: nur für Mädchen und Frauen
           target_audience:
             children: für Kinder und Jugendliche
-            family_acquaintances: 
             family_children: für Kinder und Jugendliche
             family_nuclear_family: für Familien
             family_parents: für Eltern
@@ -1370,6 +1374,7 @@ de:
             parents: für Eltern
             pregnant_woman: für Schwangere
             relatives: für Bekannte und Verwandte
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1724,10 +1729,6 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
       title: Bitte wähle deine clarat-Welt
     shared:
       address:
@@ -1762,6 +1763,8 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    dankeschoen: dankeschoen
+    danke: danke
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1804,3 +1807,8 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  contact_success: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 

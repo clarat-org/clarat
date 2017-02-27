@@ -13,6 +13,10 @@ $('.contact_email').hide();
 $('.contact_city').hide();
 $('.contact_message').hide();
 if(window.location.href.indexOf("kontakt") > -1) {
-$('.contact_message').wrap( ' <p><a href="/">Zurück zur Startseite</a></p>' );
+  if(window.location.href.indexOf("family") > -1) {
+    $('.contact_message').wrap( ' <p><a href="/family"> < zurück zu clarat family</a></p>' );
+  } else {
+    $('.contact_message').wrap( ' <p><a href="/refugees"> < zurück zu clarat refugees</a></p>' );
+  }
 }
 <%= content_for :additional_js %>

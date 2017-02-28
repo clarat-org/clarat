@@ -1171,6 +1171,12 @@ fr:
       why:
         heading: Clarat, pourquoi ça existe?
         text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoup d'offres d'aide pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: clarat est un moteur de recherche. clarat te dit où tu peux trouver de l'aide. Par exemple, où tu peux trouver un expert capable de t'aider à résoudre ton problème. clarat peut seulement t'aider à effectuer ta recherche.
@@ -1254,6 +1260,8 @@ fr:
       refugees:
         title: 
       title: Choisis ton monde clarat
+      meta_description: 
+      meta_title: 
     shared:
       address:
         email: "%{mailto}\n"

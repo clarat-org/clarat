@@ -1,3 +1,9 @@
+- provide(:title, t(".title.#{@current_section}"))
+- provide(:meta_description, t(".meta_description.#{@current_section}"))
+- provide(:meta_title, t(".meta_title.#{@current_section}"))
+- provide(:og_image, asset_url("meta/og_home.png"))
+- provide(:twitter_image, asset_url("meta/tw_#{@current_section}.png"))
+
 .top-bar
   .top-bar__container
     - inverse_section = (current_section == 'family') ? 'refugees' : 'family'

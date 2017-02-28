@@ -1642,6 +1642,12 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
+      meta_description:
+        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
+        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
+      meta_title:
+        family: Einfach Hilfe finden | clarat family
+        refugees: Einfach Hilfe finden | clarat refugees
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1729,6 +1735,8 @@ de:
       refugees:
         title: 
       title: Bitte wähle deine clarat-Welt
+      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
+      meta_title: clarat klärt auf | clarat
     shared:
       address:
         email: "%{mailto}\n"

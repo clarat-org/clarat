@@ -1,6 +1,6 @@
 ul.section-content--contact-person-list
   / TODO: Refactor (Rethink order)
-  - offer_contacts = offer.contact_people.order('last_name DESC')
+  - offer_contacts = offer.contact_people.order('last_name ASC')
   - offer_contacts.each_with_index do |contact, index|
     - if !offer.hide_contact_people || contact.spoc
       - cache [offer, contact, index] do

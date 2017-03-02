@@ -76,7 +76,8 @@ class Clarat.Search.Cell.SearchResults
       HandlebarsTemplates['remove_query_link'](query: @model.query)
 
   mainResultsLocation: () ->
-    output = "#{@model.search_location || I18n.t('conf.default_location')}"
+    # output = "#{@model.search_location || I18n.t('conf.default_location')}"
+    output = @model.search_location
     if @model.exact_location == 'true'
       output += HandlebarsTemplates['remove_exact_location']()
 

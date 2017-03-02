@@ -1,28 +1,12 @@
 ul.section-content--contact-person-list
   / TODO: Refactor (Rethink order)
-  - offer_contacts = offer.contact_people.order('last_name ASC')
+  - offer_contacts = offer_with_contacts offer
   - offer_contacts.each_with_index do |contact, index|
-    - if !offer.hide_contact_people || contact.spoc
+    - if display_contacts? offer, contact
       - cache [offer, contact, index] do
         li
-          / TODO: Refactor (Move to model)
-          - if contact.last_name?
-            - if contact.gender?
-              =< t ".#{contact.gender}"
-            - if contact.academic_title?
-              =< t ".#{contact.academic_title}"
-            - if contact.first_name? && contact.last_name?
-              =< "#{contact.first_name} #{contact.last_name}"
-              br
-            - elsif contact.last_name?
-              =< "#{contact.last_name}"
-              br
-          - elsif contact.first_name?
-            = "#{contact.first_name}"
-            br
-          - elsif contact.operational_name?
-            = "#{contact.operational_name}"
-            br
+          = "#{contact_name contact}"
+          br
 
           - if contact.responsibility?
             = "#{contact.responsibility}"

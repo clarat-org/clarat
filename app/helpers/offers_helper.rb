@@ -23,4 +23,38 @@ module OffersHelper
     children_class = (visible_children && depth <= 3) ? 'has-children' : ''
     "#{depth_class} #{children_class}"
   end
+
+  def offer_with_contacts offer
+    offer.contact_people.order('last_name ASC')
+  end
+
+  def display_contacts? offer, contact
+    !offer.hide_contact_people || contact.spoc
+  end
+
+  def contact_name contact
+    if contact.last_name?
+      "#{contact_gender(contact)} #{contact_academic_title(contact)} #{contact_full_name(contact)}"
+    elsif contact.first_name?
+      contact.first_name
+    elsif contact.operational_name?
+      contact.operational_name
+    end
+  end
+
+  def contact_gender contact
+    t ".#{contact.gender}" if contact.gender?
+  end
+
+  def contact_academic_title contact
+    t ".#{contact.academic_title}" if contact.academic_title?
+  end
+
+  def contact_full_name contact
+    if contact.first_name? && contact.last_name?
+      "#{contact.first_name} #{contact.last_name}"
+    elsif contact.last_name?
+      contact.last_name
+    end
+  end
 end

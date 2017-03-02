@@ -334,6 +334,7 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
+        city_placeholder: 
         email_placeholder:
           required:
             'false': E-Mail adresi (opsiyonel)
@@ -342,8 +343,6 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
-    success:
-      success: 
   emails:
     offers_index:
       family:
@@ -483,6 +482,7 @@ tr:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -496,7 +496,9 @@ tr:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -523,6 +525,7 @@ tr:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -546,6 +549,7 @@ tr:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -556,11 +560,6 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -702,6 +701,7 @@ tr:
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
         '639': Farsça - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abhazca - аҧсуа бызшәа
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
@@ -715,7 +715,9 @@ tr:
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
         cau: Abazaca - абаза бызшва
+        ckb: Soranice - سۆرانی
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
@@ -742,6 +744,7 @@ tr:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
         pol: Lehçe - polski
@@ -765,6 +768,7 @@ tr:
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tgl: Tagalogca - Tagálog
         tha: Tayca - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
@@ -775,11 +779,6 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
-        aar: 'Afar - Qafar-áf '
-        ckb: Soranice - سۆرانی
-        cus: Saho - ሳሆኛ
-        msa: Malayca – بهاس ملايو
-        tig: Tigre - ትግሬ
     shariff:
       share_label: 
     single_search_result:
@@ -859,6 +858,12 @@ tr:
           pl: Polski
           ru: Русский
           tr: Türkçe
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
         section_link:
           desktop:
             family: 
@@ -871,6 +876,10 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
   offers:
     index:
       filters:
@@ -967,6 +976,8 @@ tr:
         heading: Konu nedir?
       who: Nerede yardım bulabilirim?
       who_contact_people:
+        NicoleTest: 
+        PeterFriesen: 
         dr: Dr.
         email: 'E-Mail: '
         fax: 'Faks: '
@@ -1110,6 +1121,12 @@ tr:
       how:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Çocuk, genç ve aileler için destek programları
         refugees: Mülteciler için destek programları
@@ -1200,10 +1217,8 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: 
     shared:
       address:
@@ -1216,6 +1231,8 @@ tr:
   routes:
     '404': "'404'"
     contacts: iletişim
+    danke: 
+    dankeschoen: 
     datenschutzhinweise: gizlilik-politikası
     definitions: tanım
     emails: emailler
@@ -1273,6 +1290,13 @@ tr:
         button: E-bülten aboneliği
         placeholder: E-Mail Adresi
   success: Teşekkür ederiz. Çok yakında senin bulunduğun yerde de desteklerimiz olacak. Bu gerçekleşince tarafımızdan bir e-mail alacaksın.
+  t:
+    contacts:
+      new:
+        contact_heading: 
+      shared:
+        new:
+          send_us_a_message: 
   update_requests:
     create:
       success: |

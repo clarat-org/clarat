@@ -450,6 +450,7 @@ pl:
       contact_heading: Czym chcesz się z nami podzielić?
     shared:
       new:
+        city_placeholder: 
         email_placeholder:
           required:
             'false': Adres e-mail (Opcjonalnie)
@@ -458,8 +459,6 @@ pl:
         name_placeholder: Imię (Pole obowiązkowe)
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
-    success:
-      success: 
   emails:
     offers_index:
       family:
@@ -607,6 +606,7 @@ pl:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -620,7 +620,9 @@ pl:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -647,6 +649,7 @@ pl:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -670,6 +673,7 @@ pl:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -680,11 +684,6 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -829,6 +828,7 @@ pl:
         '326': Język ukraiński - українська
         '568': Język niderlandzki - Nederlands
         '639': Język perski (dari) - دری
+        aar: 'Język afar - Qafar-áf '
         abk: Język abchaski - аҧсуа бызшәа
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
@@ -842,7 +842,9 @@ pl:
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
         cau: Język abazyński - абаза бызшва
+        ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
+        cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
         dyu: Język diula - julakan
@@ -869,6 +871,7 @@ pl:
         luo: Język luo - Dholuo
         man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
         pol: Język polski - polski
@@ -892,6 +895,7 @@ pl:
         tgk: Język tadżycki - тоҷикӣ / تاجیکی
         tgl: Język tagalski - Tagálog
         tha: Język tajski - ภาษาไทย
+        tig: Język tigre - ትግሬ
         tir: Język tigrinia - ትግርኛ
         tuk: Język turkmeński - Türkmençe / Tүркменче
         tur: Język turecki - Türkçe
@@ -902,11 +906,6 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        aar: 'Język afar - Qafar-áf '
-        ckb: 'Język sorani - سۆرانی '
-        cus: Język Saho - ሳሆኛ
-        msa: Język malajski – بهاس ملايو
-        tig: Język tigre - ትግሬ
     shariff:
       share_label: Podziel
     single_search_result:
@@ -975,6 +974,12 @@ pl:
           pl: Polski
           ru: Русский
           tr: Türkçe
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
         section_link:
           desktop:
             family: do clarat refugees
@@ -987,6 +992,10 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1083,6 +1092,8 @@ pl:
         heading: O co chodzi?
       who: Kto oferuje tę pomoc?
       who_contact_people:
+        NicoleTest: 
+        PeterFriesen: 
         dr: Dr
         email: 'E-mail:'
         fax: 'fax:'
@@ -1222,6 +1233,12 @@ pl:
       how:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Oferty wsparcia dla dzieci, młodzieży i rodzin
         refugees: Oferty wsparcia dla uchodźców
@@ -1311,10 +1328,8 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: Wybierz swój clarat-świat
     shared:
       address:
@@ -1327,6 +1342,8 @@ pl:
   routes:
     '404': "'404'"
     contacts: kontakt
+    danke: 
+    dankeschoen: 
     datenschutzhinweise: ochrona-danych
     definitions: definicje
     emails: e-maile
@@ -1375,6 +1392,13 @@ pl:
         button: Zapisz się na newsletter
         placeholder: adres e-mail
   success: Dziękujemy. Wkrótce będziemy mieli oferty w Twojej okolicy. Wtedy otrzymasz od nas wiadomość e-mail.
+  t:
+    contacts:
+      new:
+        contact_heading: 
+      shared:
+        new:
+          send_us_a_message: 
   update_requests:
     create:
       success: Dziękujemy, otrzymaliśmy Twoją wiadomość. Kiedy tylko staniemy się aktywni w Twojej okolicy, damy Ci znać.

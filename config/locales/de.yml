@@ -768,6 +768,7 @@ de:
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
         city_placeholder: Wohnort (Optional)
+        back_to_hp: zurück zur Startseite
     success:
       success: 
     danke:
@@ -1339,6 +1340,12 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1446,6 +1453,8 @@ de:
           verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
@@ -1647,6 +1656,9 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1812,3 +1824,10 @@ de:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

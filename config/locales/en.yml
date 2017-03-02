@@ -384,6 +384,7 @@ en:
         send: Send
         send_us_a_message: Write us a message
         city_placeholder: place of residence (optional)
+        back_to_hp: 
     success:
       success: 
     danke:
@@ -912,6 +913,12 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1018,6 +1025,8 @@ en:
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'This is a support service provided by:'
       who_section:
@@ -1260,6 +1269,9 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1421,3 +1433,10 @@ en:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

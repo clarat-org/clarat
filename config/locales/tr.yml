@@ -343,6 +343,7 @@ tr:
         send: gönder
         send_us_a_message: Bize mesaj gönder
         city_placeholder: 
+        back_to_hp: 
     success:
       success: 
     danke:
@@ -864,6 +865,12 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -970,6 +977,8 @@ tr:
           şifrelenmiştir. Okumak için JavaScript aktifleştir.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'bir ... hizmetidir:'
       who_section:
@@ -1112,6 +1121,9 @@ tr:
       why:
         heading: Clarat neden var?
         text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1277,3 +1289,10 @@ tr:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

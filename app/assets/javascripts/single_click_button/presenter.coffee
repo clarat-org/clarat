@@ -15,6 +15,7 @@ class Clarat.SingleClickButton.Presenter extends ActiveScript.Presenter
 
   handleClick: (event) =>
     $target = $(event.target)
+    $target.removeClass 'JS-Single-Click-Button__fin'
     if not $target.hasClass('JS-Single-Click-Button') or
        @buttonStates[event.target.className] is 'clicked'
 

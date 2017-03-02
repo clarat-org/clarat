@@ -459,6 +459,7 @@ pl:
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
         city_placeholder: 
+        back_to_hp: 
     success:
       success: 
     danke:
@@ -980,6 +981,12 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1084,6 +1091,8 @@ pl:
         obfuscated_email: Ten adres e-mail jest chroniony przez JavaScript dla ochrony przed spamem. Proszę, aktywuj JavaScript, aby móc czytać.
         phone: 'telefon:'
         prof_dr: Prof. Dr
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Oferta od:'
       who_section:
@@ -1224,6 +1233,9 @@ pl:
       why:
         heading: Dlaczego istnieje clarat?
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
@@ -1377,3 +1389,10 @@ pl:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

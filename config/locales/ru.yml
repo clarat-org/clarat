@@ -441,6 +441,7 @@ ru:
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
         city_placeholder: 
+        back_to_hp: 
     success:
       success: 
     danke:
@@ -972,6 +973,12 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1081,6 +1088,8 @@ ru:
           JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
         phone: 'Телефон: '
         prof_dr: Профессор доктор
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Предложения от:'
       who_section:
@@ -1217,6 +1226,9 @@ ru:
       why:
         heading: Для чего существует clarat?
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: Impressum
       notice: clarat — это поисковик. clarat скажет вам, где вы можете получить помощь. Например, где вы найдете специалистов, которые помогут с вашей проблемой. clarat также может помочь вам в ваших поисках.
@@ -1374,3 +1386,10 @@ ru:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

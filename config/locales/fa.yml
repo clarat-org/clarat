@@ -389,6 +389,7 @@ fa:
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
         city_placeholder: 
+        back_to_hp: 
     success:
       success: 
     danke:
@@ -922,6 +923,12 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1022,6 +1029,8 @@ fa:
         obfuscated_email: این ایمیل آدرس بمنظور حفاظت از Spam توسط  JavaScript قفل می باشد.لطفا JavaScript را فعال کرده تا بتوان آن را باز کرد و خواند.
         phone: 'تلفن:'
         prof_dr: پروفسور
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'یک پیشنهاد از:'
       who_section:
@@ -1128,6 +1137,9 @@ fa:
         text: |-
           با clarat پیدا کردن کمک آسانتر می شود.در آلمان پیشنهاد های زیادی وجود دارند که از بچه ها ٬جوانان و خانواده ها حمایت می کنند.و همچنین پیشنهاد های زیادی برای پناهندگان.اغلب ولی پیدا کردن آنها سخت می باشد.اگر موضوع خانواده باشد در clarat family و  اگر موضوع پناهندگی در  clarat
           refugees جستجو کن.
+      claim:
+        family: 
+        refugees: 
     impressum:
       heading: اطلاعات کلی شرکت
       notice: clarat  ماشین جستجو است.clarat به تو می گوید کجا کمک دریافت می کنی.بطور مثال کجا کارشناسانی را پیدا میکنی٬ اگر مشکلی داری به تو کمک کنند.clarat تو را فقط در جستجوی کمک یاری می کند.
@@ -1268,3 +1280,10 @@ fa:
     stamp:
       target_audience:
         family_acquaintances: 
+  t:
+    contacts:
+      shared:
+        new:
+          send_us_a_message: 
+      new:
+        contact_heading: 

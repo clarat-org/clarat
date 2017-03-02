@@ -684,6 +684,11 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -906,6 +911,11 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+        aar: 'Język afar - Qafar-áf '
+        ckb: 'Język sorani - سۆرانی '
+        cus: Język Saho - ሳሆኛ
+        msa: Język malajski – بهاس ملايو
+        tig: Język tigre - ትግሬ
     shariff:
       share_label: Podziel
     single_search_result:

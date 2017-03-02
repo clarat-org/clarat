@@ -542,6 +542,11 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -770,6 +775,11 @@ ar:
         wol: لغة ولوفية - wɔlɔf
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
+        aar: 'لغة عفارية - Qafar-áf '
+        ckb: لهجة كردية سورانية - سۆرانی
+        cus: لغة ساهو - ሳሆኛ
+        msa: لغة ملايو – بهاس ملايو
+        tig: لغة تجرية - ትግሬ
     shariff:
       share_label: 
     single_search_result:

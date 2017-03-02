@@ -1006,6 +1006,11 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        aar: Aar
+        ckb: Ckb
+        cus: Cus
+        msa: Msa
+        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -1255,6 +1260,11 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        aar: 'Afar - Qafar-áf '
+        ckb: 'Sorani - سۆرانی '
+        cus: Saho - ሳሆኛ
+        msa: Malaiisch – بهاس ملايو
+        tig: Tigre - ትግሬ
     shariff:
       share_label: Teilen
     single_search_result:

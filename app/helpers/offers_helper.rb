@@ -25,7 +25,7 @@ module OffersHelper
   end
 
   def offer_with_contacts offer
-    offer.contact_people.order('last_name ASC')
+    offer.contact_people.order('last_name ASC').order('first_name ASC')
   end
 
   def display_contacts? offer, contact
@@ -34,7 +34,7 @@ module OffersHelper
 
   def contact_name contact
     if contact.last_name?
-      "#{contact_gender(contact)} #{contact_academic_title(contact)} #{contact_full_name(contact)}"
+      contact_gender(contact).to_s + contact_academic_title(contact).to_s + contact_full_name(contact).to_s
     elsif contact.first_name?
       contact.first_name
     elsif contact.operational_name?
@@ -43,11 +43,17 @@ module OffersHelper
   end
 
   def contact_gender contact
-    t ".#{contact.gender}" if contact.gender?
+    if contact.gender?
+      gender = t "offers.show.who_contact_people.#{contact.gender}"
+      "#{gender} "
+    end
   end
 
   def contact_academic_title contact
-    t ".#{contact.academic_title}" if contact.academic_title?
+    if contact.academic_title?
+      title = t "offers.show.who_contact_people.#{contact.academic_title}"
+      "#{title} "
+    end
   end
 
   def contact_full_name contact

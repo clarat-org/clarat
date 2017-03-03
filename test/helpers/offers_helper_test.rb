@@ -1,3 +1,4 @@
+# rubocop:disable Style/ClassLength
 require_relative '../test_helper'
 
 class OffersHelperTest < ActionView::TestCase
@@ -160,3 +161,4 @@ class OffersHelperTest < ActionView::TestCase
     end
   end
 end
+# rubocop:enable Style/ClassLength

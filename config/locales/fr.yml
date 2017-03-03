@@ -408,6 +408,8 @@ fr:
       contact_heading: Tu voudrais nous dire quoi?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': adresse électronique (facultatif)
@@ -557,6 +559,7 @@ fr:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -570,7 +573,9 @@ fr:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -597,6 +602,7 @@ fr:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -620,6 +626,7 @@ fr:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -630,11 +637,6 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -781,6 +783,7 @@ fr:
         '326': Ukrainien - українська
         '568': Néerlandais - Nederlands
         '639': Dari - دری
+        aar: 'L''afar - Qafar-áf '
         abk: Abkhaze - аҧсуа бызшәа
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
@@ -794,7 +797,9 @@ fr:
         bos: Bosnien - bosanski
         bul: Bulgare - български
         cau: Abaza - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
         cpe: Pidgin camerounais - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Tchèque - čeština
         deu: Allemand - Deutsch
         dyu: dioula - julakan
@@ -821,6 +826,7 @@ fr:
         luo: Luo - Dholuo
         man: Malinké - Maninka
         mkd: Macédonien - македонски
+        msa: Malais – بهاس ملايو
         mul: autres langues sur demande
         nor: Norvégien - Norsk
         pol: Polonais - polski
@@ -844,6 +850,7 @@ fr:
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tgl: Tagalog - Tagálog
         tha: Thaï - ภาษาไทย
+        tig: Tigré - ትግሬ
         tir: Tigrigna - ትግርኛ
         tuk: Turkmène - Türkmençe / Tүркменче
         tur: Turc - Türkçe
@@ -856,11 +863,6 @@ fr:
         zza: 'Zazaki - Zazaki / Kırmancki
 
 '
-        aar: 'L''afar - Qafar-áf '
-        ckb: 'Sorani - سۆرانی '
-        cus: Saho - ሳሆኛ
-        msa: Malais – بهاس ملايو
-        tig: Tigré - ትግሬ
     shariff:
       share_label: Partager
     single_search_result:
@@ -966,7 +968,6 @@ fr:
             girls_only: seulement pour les filles et les femmes
           target_audience:
             children: pour les enfants et les ados
-            family_acquaintances: 
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents
@@ -1168,6 +1169,12 @@ fr:
 
 '
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés
@@ -1259,10 +1266,8 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: Choisis ton monde clarat
     shared:
       address:

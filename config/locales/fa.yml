@@ -16,7 +16,7 @@ fa:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
-      search_location: NOTRANSLATE
+      search_location: جستجوی مکان
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
   cells:
@@ -380,7 +380,6 @@ fa:
       contact_heading: جه جیزی را می خواهی با ما در میان بگذاری؟
     shared:
       new:
-        city_placeholder: 
         email_placeholder:
           required:
             'false': آدرس ایمیل اختیاری
@@ -526,7 +525,6 @@ fa:
         '326': ۳۲۶
         '568': ۵۲۸
         '639': ۶۳۹
-        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -540,9 +538,7 @@ fa:
         bos: Bos
         bul: Bul
         cau: Cau
-        ckb: Ckb
         cpe: Cpe
-        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -569,7 +565,6 @@ fa:
         luo: Luo
         man: Man
         mkd: Mkd
-        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -593,7 +588,6 @@ fa:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
-        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -775,7 +769,6 @@ fa:
         '326': اوکراینی - українська
         '568': هلندی - Nederlands
         '639': دری
-        aar: 'زبان عفار - Qafar-áf '
         abk: زبان آبخازی - аҧсуа бызшәа
         amh: امهری - አማርኛ
         ara: عربی
@@ -789,9 +782,7 @@ fa:
         bos: بوسنیایی - bosanski
         bul: بلغاری - български
         cau: زبان آبازی - абаза бызшва
-        ckb: 'سورانی - سۆرانی '
         cpe: کامرونی - Pidgin
-        cus: Saho - ሳሆኛ
         cze: چکی - čeština
         deu: آلمانی
         dyu: دیولا - Julakan
@@ -818,7 +809,6 @@ fa:
         luo: لوآیی - Dholuo
         man: مانینکایی -  Maninka
         mkd: مقدونیه ای - македонски
-        msa: زبان مالایی – بهاس ملايو
         mul: بقیه زبانها با توجه به درخواست
         nor: نروژی - Norsk
         pol: لهستانی -  polski
@@ -842,7 +832,6 @@ fa:
         tgk: تاجیکی - тоҷикӣ / تاجیکی
         tgl: تاگالوگ -  Tagálog
         tha: تایلندی - ภาษาไทย
-        tig: زبان تیگره - ትግሬ
         tir: " تیگرینیا - ትግርኛ"
         tuk: ترکمنی - Türkmençe / Tүркменче
         tur: ترکی - Türkçe
@@ -926,12 +915,6 @@ fa:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: به طرف clarat refugees ›
@@ -944,10 +927,6 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1040,8 +1019,6 @@ fa:
         heading: موضوع چیست؟
       who: کجا این کمک را دریافت می کنی؟
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: دکتر
         email: 'ایمیل:'
         fax: 'فاکس:'
@@ -1145,12 +1122,6 @@ fa:
       how:
         heading: clarat چگونه عمل می کند؟
         text: مشکل و همچنین کمک درخواستی خود را وارد کنید و یا اینکه از موضوعات ما انتخاب کنید.بعد از آن تمام پیشنهاد های حمایتی در نزدیکی محل سکونت خود را می بینی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه تو آیا تلفن یا ایمیل بزنی و یا اینکه حضوری مراجعه کنی.
-      meta_description:
-        family: 
-        refugees: 
-      meta_title:
-        family: 
-        refugees: 
       title:
         family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
         refugees: پیشنهاد های حمایتی برای پناهندگان
@@ -1229,8 +1200,10 @@ fa:
       intro_second_part: در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید.
       title: حفاظت از اطلاعات
     section_choice:
-      meta_description: 
-      meta_title: 
+      family:
+        title: 
+      refugees:
+        title: 
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:
       address:
@@ -1243,8 +1216,6 @@ fa:
   routes:
     '404': "'404'"
     contacts: تماس
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: نکات حفاظت از اطلاعات
     definitions: توضیحات
     emails: ایمیل ها
@@ -1293,13 +1264,6 @@ fa:
         button: آبونمان مجله اطلاعاتی
         placeholder: آدرس ایمیل
   success: با تشکر.به زودی پیشنهاد هایی در نزدیکی تو خواهیم داشت.در وقت مناسب٬به تو ایمیل می زنیم.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: با تشکر.ما پیغام تو را دریافت کردیم.یه محض اینکه در نزدیکی تو فعال شویم تو را در جریان می گذاریم.

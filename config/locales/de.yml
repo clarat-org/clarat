@@ -759,7 +759,6 @@ de:
       contact_heading: Was möchtest du uns mitteilen?
     shared:
       new:
-        city_placeholder: Wohnort (Optional)
         email_placeholder:
           required:
             'false': E-Mail Adresse (Optional)
@@ -928,7 +927,6 @@ de:
         '326': 326
         '568': 568
         '639': 639
-        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -942,9 +940,7 @@ de:
         bos: Bos
         bul: Bul
         cau: Cau
-        ckb: Ckb
         cpe: Cpe
-        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -971,7 +967,6 @@ de:
         luo: Luo
         man: Man
         mkd: Mkd
-        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -995,7 +990,6 @@ de:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
-        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -1182,7 +1176,6 @@ de:
         '326': Ukrainisch - українська
         '568': Niederländisch - Nederlands
         '639': Dari - دری
-        aar: 'Afar - Qafar-áf '
         abk: Abchasisch - аҧсуа бызшәа
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
@@ -1196,9 +1189,7 @@ de:
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
         cau: Abasinisch - абаза бызшва
-        ckb: 'Sorani - سۆرانی '
         cpe: Kamtok - Pidgin
-        cus: Saho - ሳሆኛ
         cze: Tschechisch - čeština
         deu: Deutsch
         dyu: Dioula - Julakan
@@ -1225,7 +1216,6 @@ de:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Mazedonisch - македонски
-        msa: Malaiisch – بهاس ملايو
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
         pol: Polnisch - polski
@@ -1249,7 +1239,6 @@ de:
         tgk: Tadschikisch - тоҷикӣ / تاجیکی
         tgl: Tagalog - Tagálog
         tha: Thai - ภาษาไทย
-        tig: Tigre - ትግሬ
         tir: Tigrinisch - ትግርኛ
         tuk: Turkmenisch - Türkmençe / Tүркменче
         tur: Türkisch - Türkçe
@@ -1343,12 +1332,6 @@ de:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ zu clarat refugees"
@@ -1361,10 +1344,6 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1462,8 +1441,6 @@ de:
         heading: Worum geht's?
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr.
         email: 'E-Mail: '
         fax: 'Fax: '
@@ -1655,12 +1632,6 @@ de:
           Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
-      meta_description:
-        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
-        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
-      meta_title:
-        family: Einfach Hilfe finden | clarat family
-        refugees: Einfach Hilfe finden | clarat refugees
       title:
         family: Unterstützungsangebote für Kinder, Jugendliche und Familien
         refugees: Unterstützungsangebote für Flüchtlinge
@@ -1763,8 +1734,10 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
-      meta_title: clarat klärt auf | clarat
+      family:
+        title: 
+      refugees:
+        title: 
       title: Bitte wähle deine clarat-Welt
     shared:
       address:
@@ -1777,8 +1750,6 @@ de:
   routes:
     '404': "'404'"
     contacts: kontakt
-    danke: danke
-    dankeschoen: dankeschoen
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
     emails: emails
@@ -1835,13 +1806,6 @@ de:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
   success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

@@ -432,7 +432,6 @@ ru:
       contact_heading: Чем ты хочешь с нами поделиться?
     shared:
       new:
-        city_placeholder: 
         email_placeholder:
           required:
             'false': E-Mail адрес (обязательно)
@@ -582,7 +581,6 @@ ru:
         '326': 326
         '568': 568
         '639': 639
-        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -596,9 +594,7 @@ ru:
         bos: Bos
         bul: Bul
         cau: Cau
-        ckb: Ckb
         cpe: Cpe
-        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -625,7 +621,6 @@ ru:
         luo: Luo
         man: Man
         mkd: Mkd
-        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -649,7 +644,6 @@ ru:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
-        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -816,7 +810,6 @@ ru:
         '326': Украинский язык - українська
         '568': Нидерландский язык - Nederlands
         '639': Персидский язык - دری
-        aar: 'Афарский - Qafar-áf '
         abk: Абхазский язык - аҧсуа бызшәа
         amh: Амхарский язык - አማርኛ
         ara: Арабский язык - عربي
@@ -830,9 +823,7 @@ ru:
         bos: Боснийский язык - bosanski
         bul: Болгарский язык - български
         cau: Абазинский язык - абаза бызшва
-        ckb: 'Сорани́ - سۆرانی '
         cpe: Камток-Пиджин
-        cus: Сaxo - ሳሆኛ
         cze: Чешский язык - čeština
         deu: Немецкий язык - Deutsch
         dyu: Дьюла - Julakan
@@ -859,7 +850,6 @@ ru:
         luo: Долуо - Dholuo
         man: Манинка-Манинка
         mkd: Македонский язык - македонски
-        msa: Мала́йский язы́к – بهاس ملايو
         mul: другие языки по запросу
         nor: Норвежский язык - Norsk
         pol: Польский язык - polski
@@ -883,7 +873,6 @@ ru:
         tgk: Таджикский язык - тоҷикӣ / تاجیکی
         tgl: Тагальский язык - Tagálog
         tha: Тайский язык - ภาษาไทย
-        tig: Тигре - ትግሬ
         tir: Тигринья - ትግርኛ
         tuk: Туркменский язык - Türkmençe / Tүркменче
         tur: Турецкий язык - Türkçe
@@ -976,12 +965,6 @@ ru:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ к clarat refugees"
@@ -994,10 +977,6 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1097,8 +1076,6 @@ ru:
         heading: О чем это?
       who: Где получит помощь?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Доктор
         email: 'E-Mail: '
         fax: 'Факс: '
@@ -1236,12 +1213,6 @@ ru:
       how:
         heading: Kак работает clarat?
         text: Напиши, в чем именно у тебя проблемы. Или что тебя волнует. Либо выбери из предложенных тем. Ты сразу же найдешь рядом с тобой по близости все возможные варианты помощи и поддержки. Мы так же расскажем тебе, как ты можешь получить эту помощь. Позвони, напиши email или просто приходи.
-      meta_description:
-        family: 
-        refugees: 
-      meta_title:
-        family: 
-        refugees: 
       title:
         family: Предложения помощи для детей, молодежи и семей
         refugees: Предложения помощи для беженцев
@@ -1329,8 +1300,10 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: 
-      meta_title: 
+      family:
+        title: 
+      refugees:
+        title: 
       title: Пожалуйста,  выберите ваш мир clarat
     shared:
       address:
@@ -1343,8 +1316,6 @@ ru:
   routes:
     '404': "'404'"
     contacts: контакты
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: Правила-конфиденциальности
     definitions: формулировки
     emails: электронные-письма
@@ -1397,13 +1368,6 @@ ru:
         button: Подписаться на новости
         placeholder: E-Mail адрес
   success: Большое спасибо. Вскоре у нас появятся предложения рядом с тобой. Мы свяжемся с тобой по электронной почте
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

@@ -305,7 +305,6 @@ ar:
       contact_heading: ماذا تريد أن تخبرنا؟
     shared:
       new:
-        city_placeholder: 
         email_placeholder:
           required:
             'false': البريد الإليكتروني (إختياري)
@@ -464,7 +463,6 @@ ar:
         '326': 326
         '568': 568
         '639': 639
-        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -478,9 +476,7 @@ ar:
         bos: Bos
         bul: Bul
         cau: Cau
-        ckb: Ckb
         cpe: Cpe
-        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -507,7 +503,6 @@ ar:
         luo: Luo
         man: Man
         mkd: Mkd
-        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -531,7 +526,6 @@ ar:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
-        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -697,7 +691,6 @@ ar:
         '326': " لغة أوكرانية - українська"
         '568': " لغة هولندية - Nederlands"
         '639': " لغة فارسية - دری"
-        aar: 'لغة عفارية - Qafar-áf '
         abk: لغة أبخازية - аҧсуа бызшәа
         amh: لغة أمهرية - አማርኛ
         ara: " لغة عربية - عربي"
@@ -711,9 +704,7 @@ ar:
         bos: لغة بوسنوية - bosanski
         bul: لغة بلغارية - български
         cau: لغة أباظية - абаза бызшва
-        ckb: لهجة كردية سورانية - سۆرانی
         cpe: الكاميروني - Pidgin
-        cus: لغة ساهو - ሳሆኛ
         cze: لغة تشيكية - čeština
         deu: لغة ألمانية - Deutsch
         dyu: الديولا - Julakan
@@ -740,7 +731,6 @@ ar:
         luo: لوو - Dholuo
         man: " الغيلية - Maninka"
         mkd: لغة مقدونية - македонски
-        msa: لغة ملايو – بهاس ملايو
         mul: لغات أخرى عند الطلب
         nor: لغة نرويجية - Norsk
         pol: لغة بولندية - polski
@@ -764,7 +754,6 @@ ar:
         tgk: لغة طاجيكية - тоҷикӣ / تاجیکی
         tgl: لغة تاغالوغية - Tagálog
         tha: لغة تايلندية - ภาษาไทย
-        tig: لغة تجرية - ትግሬ
         tir: لغة تغرينية - ትግርኛ
         tuk: لغة تركمانية - Türkmençe / Tүркменче
         tur: لغة تركية - Türkçe
@@ -862,12 +851,6 @@ ar:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: إلي كلارات اللاجئين ›
@@ -880,10 +863,6 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -983,8 +962,6 @@ ar:
         heading: ما هو الموضوع؟
       who: أين يمكنك أن تحصل على هذه المساعدة؟
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: ".د"
         email: 'البريد الإليكتروني:'
         fax: " :فاكس "
@@ -1120,16 +1097,6 @@ ar:
       how:
         heading: كيف تعمل كلارات؟
         text: أكتب المشكلة التي تحتاح مساعدة في حلها, او التي تقلقك. يمكنك أيضا أن تختار من الموضوعات الموجودة لدينا, فتري في الحال كل العروض التي تقدم الدعم بالقرب منك. وكذلك تعرف أيضا, كيف تحصل على المساعدة و بأي  وسيلة إتصال, سواء عن طريق التليفون أو إرسال إيميل أو الذهاب الي عنوان ما
-      meta_description:
-        family: |-
-          "مع كلارات العائلة تجد بسهولة المساعدة.
-          عروض الدعم للاطفال، الشباب، والعائلات. عبر الانترنت. حالياً. في كل برلين."
-        refugees: |-
-          "مع كلارات اللاجئين تجد بسهولة المساعدة.
-          عروض الدعم للاجئين. عبر الانترنت. حالياً. متعدد اللغات. في كل المانيا."
-      meta_title:
-        family: إيجاد المساعدة ببساطة | كلارات العائلة
-        refugees: إيجاد المساعدة ببساطة | كلارات اللاجئين
       title:
         family: عروض دعم للأطفال والشبان والأسر
         refugees: عروض مساعدة للاجئين
@@ -1217,8 +1184,10 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: 'تقوم كلارات بالإرشاد لشبكة ضخمة من خدمات الدعم في المانيا. للاطفال، الشباب، العائلات واللاجئين. عبر الانترنت. ببساطة. في الجوار. '
-      meta_title: كلارات توضح | كلارات
+      family:
+        title: 
+      refugees:
+        title: 
       title: إختر قسم كلارات الذي يخصك
     shared:
       address:
@@ -1231,8 +1200,6 @@ ar:
   routes:
     '404': "'404'"
     contacts: الإتصال
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: إرشادات-حماية-البيانات-الشخصية
     definitions: تعريف
     emails: رسائل بريد إليكتروني
@@ -1287,13 +1254,6 @@ ar:
         button: الإشتراك في المجموعة الإخبارية
         placeholder: " البريد الإليكتروني"
   success: 'شكرا جزيلا. في القريب سيكون لدينا عروضا بالقرب منك. عندما تتوفر لدينا هذه العروض سوف يصلك إيميل منا. '
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

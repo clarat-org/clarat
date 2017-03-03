@@ -759,6 +759,7 @@ de:
       contact_heading: Was möchtest du uns mitteilen?
     shared:
       new:
+        back_to_hp: zurück zur Startseite
         city_placeholder: Wohnort (Optional)
         email_placeholder:
           required:
@@ -1006,11 +1007,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -1260,11 +1256,6 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        aar: 'Afar - Qafar-áf '
-        ckb: 'Sorani - سۆرانی '
-        cus: Saho - ሳሆኛ
-        msa: Malaiisch – بهاس ملايو
-        tig: Tigre - ትግሬ
     shariff:
       share_label: Teilen
     single_search_result:
@@ -1343,12 +1334,6 @@ de:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ zu clarat refugees"
@@ -1361,10 +1346,6 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1390,7 +1371,6 @@ de:
             girls_only: nur für Mädchen und Frauen
           target_audience:
             children: für Kinder und Jugendliche
-            family_acquaintances: 
             family_children: für Kinder und Jugendliche
             family_nuclear_family: für Familien
             family_parents: für Eltern
@@ -1462,8 +1442,6 @@ de:
         heading: Worum geht's?
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr.
         email: 'E-Mail: '
         fax: 'Fax: '
@@ -1777,8 +1755,6 @@ de:
   routes:
     '404': "'404'"
     contacts: kontakt
-    danke: danke
-    dankeschoen: dankeschoen
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
     emails: emails
@@ -1835,13 +1811,6 @@ de:
         button: Newsletter abonnieren
         placeholder: E-Mail Adresse
   success: Vielen Dank. Bald haben wir auch Angebote in deiner Nähe. Wenn es soweit ist, bekommst du von uns eine E-Mail.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

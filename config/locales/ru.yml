@@ -432,6 +432,7 @@ ru:
       contact_heading: Чем ты хочешь с нами поделиться?
     shared:
       new:
+        back_to_hp: 
         city_placeholder: 
         email_placeholder:
           required:
@@ -660,11 +661,6 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -894,11 +890,6 @@ ru:
         wol: Волоф язык - wɔlɔf
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
-        aar: 'Афарский - Qafar-áf '
-        ckb: 'Сорани́ - سۆرانی '
-        cus: Сaxo - ሳሆኛ
-        msa: Мала́йский язы́к – بهاس ملايو
-        tig: Тигре - ትግሬ
     shariff:
       share_label: Разделить
     single_search_result:
@@ -976,12 +967,6 @@ ru:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ к clarat refugees"
@@ -994,10 +979,6 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -1025,7 +1006,6 @@ ru:
             girls_only: только для девочек и женщин
           target_audience:
             children: для детей и молодежи
-            family_acquaintances: 
             family_children: для детей и молодежи
             family_nuclear_family: для семей
             family_parents: для родителей
@@ -1097,8 +1077,6 @@ ru:
         heading: О чем это?
       who: Где получит помощь?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Доктор
         email: 'E-Mail: '
         fax: 'Факс: '
@@ -1343,8 +1321,6 @@ ru:
   routes:
     '404': "'404'"
     contacts: контакты
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: Правила-конфиденциальности
     definitions: формулировки
     emails: электронные-письма
@@ -1397,13 +1373,6 @@ ru:
         button: Подписаться на новости
         placeholder: E-Mail адрес
   success: Большое спасибо. Вскоре у нас появятся предложения рядом с тобой. Мы свяжемся с тобой по электронной почте
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

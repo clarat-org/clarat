@@ -334,6 +334,7 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
+        back_to_hp: 
         city_placeholder: 
         email_placeholder:
           required:
@@ -560,11 +561,6 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -784,11 +780,6 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
-        aar: 'Afar - Qafar-áf '
-        ckb: Soranice - سۆرانی
-        cus: Saho - ሳሆኛ
-        msa: Malayca – بهاس ملايو
-        tig: Tigre - ትግሬ
     shariff:
       share_label: 
     single_search_result:
@@ -868,12 +859,6 @@ tr:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: 
@@ -886,10 +871,6 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -915,7 +896,6 @@ tr:
             girls_only: Yalnızca bayanlar için
           target_audience:
             children: Çocuklar ve gençler için
-            family_acquaintances: 
             family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
@@ -986,8 +966,6 @@ tr:
         heading: Konu nedir?
       who: Nerede yardım bulabilirim?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr.
         email: 'E-Mail: '
         fax: 'Faks: '
@@ -1241,8 +1219,6 @@ tr:
   routes:
     '404': "'404'"
     contacts: iletişim
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: gizlilik-politikası
     definitions: tanım
     emails: emailler
@@ -1300,13 +1276,6 @@ tr:
         button: E-bülten aboneliği
         placeholder: E-Mail Adresi
   success: Teşekkür ederiz. Çok yakında senin bulunduğun yerde de desteklerimiz olacak. Bu gerçekleşince tarafımızdan bir e-mail alacaksın.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

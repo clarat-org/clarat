@@ -375,6 +375,7 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
+        back_to_hp: 
         city_placeholder: place of residence (optional)
         email_placeholder:
           required:
@@ -603,11 +604,6 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -832,11 +828,6 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        aar: 'Afar - Qafar-áf '
-        ckb: 'Sorani - سۆرانی '
-        cus: Saho - ሳሆኛ
-        msa: Malay – بهاس ملايو
-        tig: Tigre - ትግሬ
     shariff:
       share_label: Share
     single_search_result:
@@ -916,12 +907,6 @@ en:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ to clarat refugees"
@@ -934,10 +919,6 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -963,7 +944,6 @@ en:
             girls_only: girls and women only
           target_audience:
             children: for children and teenagers
-            family_acquaintances: 
             family_children: for children and teenagers
             family_nuclear_family: for families
             family_parents: for parents
@@ -1034,8 +1014,6 @@ en:
         heading: What's this about?
       who: Where can you get this help?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr.
         email: 'Email: '
         fax: 'Fax: '
@@ -1390,8 +1368,6 @@ en:
   routes:
     '404': "'404'"
     contacts: contact
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: privacy
     definitions: definitions
     emails: emails
@@ -1444,13 +1420,6 @@ en:
         button: Subscribe to our newsletter
         placeholder: Email address
   success: 'Thanks! Soon, clarat will exist in your area, too. We will inform you respectively. '
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |-

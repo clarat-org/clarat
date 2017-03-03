@@ -408,6 +408,7 @@ fr:
       contact_heading: Tu voudrais nous dire quoi?
     shared:
       new:
+        back_to_hp: 
         city_placeholder: 
         email_placeholder:
           required:
@@ -636,11 +637,6 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -867,11 +863,6 @@ fr:
         zza: 'Zazaki - Zazaki / Kırmancki
 
 '
-        aar: 'L''afar - Qafar-áf '
-        ckb: 'Sorani - سۆرانی '
-        cus: Saho - ሳሆኛ
-        msa: Malais – بهاس ملايو
-        tig: Tigré - ትግሬ
     shariff:
       share_label: Partager
     single_search_result:
@@ -940,12 +931,6 @@ fr:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: "‹ aller à la page clarat refugees"
@@ -958,10 +943,6 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -987,7 +968,6 @@ fr:
             girls_only: seulement pour les filles et les femmes
           target_audience:
             children: pour les enfants et les ados
-            family_acquaintances: 
             family_children: pour les enfants et les ados
             family_nuclear_family: pour les familles
             family_parents: pour les parents
@@ -1054,8 +1034,6 @@ fr:
         heading: De quoi s'agit-il?
       who: Qui propose cette aide ?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr.
         email: 'E-mail:'
         fax: 'Fax:'
@@ -1302,8 +1280,6 @@ fr:
   routes:
     '404': "'404'"
     contacts: contact
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: protection-des-données
     definitions: définitions
     emails: adresses-électroniques
@@ -1352,13 +1328,6 @@ fr:
         button: s'abonner à la newsletter
         placeholder: adresse électronique
   success: Merci beaucoup. Nous allons bientôt avoir des propositions d'aide près de chez toi. Dès que cela est le cas, tu vas recevoir un e-mail de notre part.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: Merci beaucoup, nous avons bien reçu ton message. Dès que nous serons actifs près de chez toi, nous nous manifesterons.

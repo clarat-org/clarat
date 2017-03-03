@@ -305,6 +305,7 @@ ar:
       contact_heading: ماذا تريد أن تخبرنا؟
     shared:
       new:
+        back_to_hp: 
         city_placeholder: 
         email_placeholder:
           required:
@@ -542,11 +543,6 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
-        aar: Aar
-        ckb: Ckb
-        cus: Cus
-        msa: Msa
-        tig: Tig
       section:
         family: Family
         refugees: Refugees
@@ -775,11 +771,6 @@ ar:
         wol: لغة ولوفية - wɔlɔf
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
-        aar: 'لغة عفارية - Qafar-áf '
-        ckb: لهجة كردية سورانية - سۆرانی
-        cus: لغة ساهو - ሳሆኛ
-        msa: لغة ملايو – بهاس ملايو
-        tig: لغة تجرية - ትግሬ
     shariff:
       share_label: 
     single_search_result:
@@ -862,12 +853,6 @@ ar:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: إلي كلارات اللاجئين ›
@@ -880,10 +865,6 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
   offers:
     index:
       filters:
@@ -912,7 +893,6 @@ ar:
             girls_only: فقط للبنات والسيدات
           target_audience:
             children: للأطفال والشباب
-            family_acquaintances: 
             family_children: للأطفال والشبان
             family_nuclear_family: للأسر
             family_parents: للآباء
@@ -983,8 +963,6 @@ ar:
         heading: ما هو الموضوع؟
       who: أين يمكنك أن تحصل على هذه المساعدة؟
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: ".د"
         email: 'البريد الإليكتروني:'
         fax: " :فاكس "
@@ -1231,8 +1209,6 @@ ar:
   routes:
     '404': "'404'"
     contacts: الإتصال
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: إرشادات-حماية-البيانات-الشخصية
     definitions: تعريف
     emails: رسائل بريد إليكتروني
@@ -1287,13 +1263,6 @@ ar:
         button: الإشتراك في المجموعة الإخبارية
         placeholder: " البريد الإليكتروني"
   success: 'شكرا جزيلا. في القريب سيكون لدينا عروضا بالقرب منك. عندما تتوفر لدينا هذه العروض سوف يصلك إيميل منا. '
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: |

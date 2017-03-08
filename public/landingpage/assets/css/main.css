@@ -86,6 +86,11 @@ a {
 	justify-content: center;
 }
 
+.hero__intro {
+	max-width: 40%;
+	line-height: 1.55;
+}
+
 .hero__headline {
 	font-size: 2.5em;
 	line-height: 1.2;
@@ -110,6 +115,10 @@ a {
 	margin-top: 28px;
 }
 
+.content__mobile-intro {
+	display: none;
+}
+
 /* ############## Generic ############## */
 
 .header-main {
@@ -124,7 +133,7 @@ a {
 	color: #fff;
 	text-decoration: none;
 	display: flex;
-	min-height: 55px;
+	min-height: 75px;
 	width: 100%;
 	border: 1px solid;
 	justify-content: center;
@@ -132,7 +141,7 @@ a {
 	font-size: 135%;
 	font-weight: 700;
 	border-radius: 12px 0;
-	margin: 1.125em 0;
+	margin: 0 0  1.125em;
 }
 
 .btn:hover {
@@ -289,6 +298,19 @@ a {
 	.cta__info br {
 		display: none;
 	}
+}
+
+@media screen and (max-width: 970px) {
+
+	.content__mobile-intro {
+		display: block;
+		margin-bottom: 1.5em;
+	}
+
+	.hero__intro {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 770px) {

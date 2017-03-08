@@ -59,15 +59,6 @@ a {
 	background-position: center center;
 }
 
-.hero::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-}
 
 .hero__container {
 	z-index: 2;
@@ -99,6 +90,7 @@ a {
 	font-size: 2.5em;
 	line-height: 1.2;
 	margin-bottom: .5em;
+	max-width: 65%;
 }
 
 /* ############## Content ############## */
@@ -111,11 +103,11 @@ a {
 
 .content {
 	line-height: 1.75;
-	margin-bottom: 128px;
+	margin-bottom: 28px;
 }
 
-.content p {
-	margin-bottom: 28px;
+.content p + p {
+	margin-top: 28px;
 }
 
 /* ############## Generic ############## */
@@ -132,7 +124,7 @@ a {
 	color: #fff;
 	text-decoration: none;
 	display: flex;
-	height: 100%;
+	min-height: 55px;
 	width: 100%;
 	border: 1px solid;
 	justify-content: center;
@@ -140,6 +132,7 @@ a {
 	font-size: 135%;
 	font-weight: 700;
 	border-radius: 12px 0;
+	margin: 1.125em 0;
 }
 
 .btn:hover {
@@ -183,8 +176,7 @@ a {
 
 .content__left {
 	padding-right: 14px;
-	min-width: 40%;
-
+	min-width: 44%;
 }
 
 .content__right {

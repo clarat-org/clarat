@@ -1121,17 +1121,8 @@ en:
         expert on our clarat language. Her favorite song is “Reckoner” by
         Radiohead.
       julia_b: Julia studied Social Work. And she's already done a lot of work with children and young adults. She can relate to others easily. She's in clarat's research team. Her favourite song is "Nantes" by Beirut.
-      julian: |-
-        Julian studied social economics. That means he knows a lot about the
-        economy and society. He is also good with computers. At clarat he is
-        part of the research team and takes care of technical issues. His
-        favorite song is “All You Need” by Sublime.
       juliane: Juliane studied business adminstration and tourism. She's very good at planning. And finding creative solutions. She's in charge of marketing at clarat. Her favourite song is "Easy" by The Commodores.
       karo: Karo studied European studies. That means she knows a lot about European politics. She is good at organizing things. She's part of the clarat research team. And she is in charge of our handbook. Her favourite song is "Alive" from Pearl Jam.
-      katinka: |-
-        Katinka is a psychologist. That means she has a good understanding of
-        people’s behaviour and feelings. At clarat she is part of the research team. And she finds out about the people using clarat. Her
-        favourite song is “The Greatest” by Cat Power.
       katja: Katja studied German. She is good at reading complicated texts. And she's good at German, too. She's in the clarat research team. Her favourite song is Mysteries by Beth Gibbons.
       konstantin: |-
         Konstantin is a web developer, which means he knows how to program
@@ -1163,11 +1154,6 @@ en:
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. Her favourite song is "Me in You" by Kings of Convenience.
-      nicole: |-
-        Nicole studied intercultural communications, which means she knows a lot
-        about cultures and language. She is good at making decisions. She is the
-        head of the research team. Her favourite song is “Palabra Mi Amor” by
-        Shaka Ponk.
       nils: |-
         Nils is a computer scientist, which means he knows how to program
         computer programs and websites. He always comes up with good solutions
@@ -1200,6 +1186,13 @@ en:
         “Survive It” by Ghostpoet.
       title: About us
       verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1428,3 +1421,7 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
+  offer:
+    stamp:
+      target_audience:
+        refugees_adolescents: 

@@ -89,15 +89,15 @@ feature 'Offer display' do
     )
   end
 
-  scenario 'Muliple contact persons are shown in the right order' do
+  scenario 'Multiple contact persons are present' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :no_fields, :with_telephone,
+      :contact_person, :all_fields, :with_telephone,
       organization: offer.organizations.first
     )
     visit unscoped_offer_path offer
     page.body.must_match(
-      '030  12 34 56</a><br /></li></ul>'
+      '030  12 34 56'
     )
   end
 

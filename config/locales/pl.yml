@@ -1139,12 +1139,8 @@ pl:
       jule: Jest badaczem pokojowego rozwiązywania konfliktów. Wie dużo o konfliktach i wojnach. Potrafi znaleźć rozwiązanie każdego problemu. W clarat jest w zespole badawczym. Zabezpiecza jakość naszej pracy. Jej ulubiony utwór to “Home” Edwarda Sharpe.
       julia: Jest germanistką. To znaczy, że zna się dobrze na tekstach i na języku niemieckim. Potrafi dobrze pisać i łatwo wyjaśniać zagadnienia. W clarat jest w zespole badawczym. Jest też ekspertem językowym claratu. Jej ulubiony utwór to “Reckoner” Radiohead.
       julia_b: Studiowała prace społeczne. Pracowała wiele z dziećmi i młodzieżą. Potrafi dobrze zrozumieć drugiego człowieka. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Nantes" zespołu Beirut.
-      julian: Jest ekonomem społecznym. To znaczy, że wie dużo o gospodarce i społeczeństwie. Zna się też dobrze na komputerach. W clarat jest w zespole badawczym oraz zajmuje się sprawami technicznymi. Jego ulubiony utwór to “All You Need” Sublime.
       juliane: Studiowała administracje biznesową i turystykę. Potrafi dobrze planować. Zawsze znajdzie kreatywne rozwiązanie. W clarat troszczy się o marketing. Jej ulubionym utworem jest "Easy" zespołu The Commodores.
       karo: Studiowała europeistykę. To znaczy, że wie sporo o polityce europejskiej. Potrafi doskonale organizować. W clarat pracuje dla Research-Teamu. Troszczy się o naszą księgowość. Jej ulbionym utworem jest "Alive" zespołu Pearl Jam.
-      katinka: |-
-        Jest psychologiem. To znaczy, że potrafi zrozumieć zachowania i uczucia innych ludzi. Potrafi uporządkować skomplikowane sprawy.
-        W clarat jest w zespole badawczym. Jej ulubiony utwór to “Greatest” zespołu Cat Power.
       katja: Jest gerministką. Zna się dobrze na złozonych tekstach i języku niemieckim. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Mysteries" Beth Gibbons.
       konstantin: Jest web developerem. To znaczy, że potrafi dobrze programować strony internetowe. Zawsze znajduje dobre rozwiązania. W clarat jest w zespole IT i tworzy naszą stronę internetową. Jego ulubionym utworem jest “Too Long” Daft Punk.
       laura_i: |-
@@ -1158,7 +1154,6 @@ pl:
       michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
       nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.
       nathalie: Studiowała prawa człowieka i politykę międzynarodową. Potrafi dobrze tłumaczyć i świetnie słuchać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Me in You" zespołu Kings of Convienience.
-      nicole: Studiowała komunikację międzykulturową. To znaczy, że wie dużo o kulturze i językach. Potrafi dobrze podejmować decyzje. Jest kierowniczką zespołu badawczego. Jej ulubiony utwór to “Palabra Mi Amor” Shaka Ponk.
       nils: Jest informatykiem. To znaczy, że potrafi dobrze programować strony internetowe i programy komputerowe. Szybko znajduje dobre rozwiązania i szybko się uczy. W clarat jest w zespole IT. Jego ulubiony utwór to “Jein” grupy Fettes Brot.
       philipp: Studiował historie, politykę i prawo. Wie wiele o polityce i społeczeństwie. Potrafi łatwo zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamie. Jego ulubionym utworem jest "This Is Our Science" zespołu Astronautalis.
       sabine: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Potrafi dobrze zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamu. Wyjaśnia nam prawne kwestie azylu politycznego. Jej ulubionym utworem jest "Vensa" zespołu Kino.
@@ -1168,6 +1163,13 @@ pl:
       tine: Jest pedagogiem społecznym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ zespołu Ghostpoet.
       title: " O nas"
       verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” zespołu Oh Wonder.
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1384,3 +1386,7 @@ pl:
     new:
       button: Wiadomość otrzymana
       email_placeholder: adres e-mail
+  offer:
+    stamp:
+      target_audience:
+        refugees_adolescents: 

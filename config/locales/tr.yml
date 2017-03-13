@@ -1025,10 +1025,8 @@ tr:
       jule: barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. Hızlıca çözüm üretebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. Kendisi işimizin kalitesini sağlıyor. En sevdiği şarkı Edward Sharpe’ın Home şarkısı.
       julia: bir Alman filoloğu. Bu, metinler ve Alman dili ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Clarat’da ise araştırma ekibinde clarat dilimizin uzmanı olmakta. En sevdiği şarkı Radiohead’in Reckoner şarkışı.
       julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
-      julian: bir sosyal ekonomist. Bu, kendisinin ekonomi ve toplum ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Aynı zamanda bilgisayarlarla da haşır neşir. Clarat’da ise araştırma ekibinde yer alıyor ve teknik kısmımızla ilgileniyor. En sevdiği şarkı Sublime’ın All You Need şarkısı.
       juliane: 
       karo: 
-      katinka: bir psikolog. Bu, insanların davranışlarını ve duygularını iyi anlayabildiği anlamına geliyor. Ayrıca komplike şeyleri iyi düzenleyebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. En sevdiği şarkı Cat Power’in The Greatest şarkısı.
       katja: 
       konstantin: bir web geliştirme uzmanı. Bu, internet sayfalarını programlayabildiği anlamına geliyor. Her zaman iyi çözümler bulabiliyor. clarat’da ise IT bölümünde yer alıyor ve internet sayfamızı yapıyor. En sevdiği şarkı Daft Punk’ın Too Long şarkısı.
       laura_i: 
@@ -1040,9 +1038,6 @@ tr:
       michaela: 
       nahla: 
       nathalie: 
-      nicole: 'Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
-
-'
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
@@ -1056,6 +1051,13 @@ tr:
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1284,3 +1286,7 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+  offer:
+    stamp:
+      target_audience:
+        refugees_adolescents: 

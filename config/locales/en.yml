@@ -375,6 +375,8 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
+        back_to_hp:
+        city_placeholder: place of residence (optional)
         email_placeholder:
           required:
             'false': Email address (optional)
@@ -384,11 +386,11 @@ en:
         send: Send
         send_us_a_message: Write us a message
         city_placeholder: place of residence (optional)
-        back_to_hp: 
+        back_to_hp:
     success:
-      success: 
+      success:
     danke:
-      success: 
+      success:
   emails:
     offers_index:
       family:
@@ -530,6 +532,7 @@ en:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -543,7 +546,9 @@ en:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -570,6 +575,7 @@ en:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -593,6 +599,7 @@ en:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -627,12 +634,12 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
-      fallback: 
+      fallback:
       fallback_clarification:
-        code1: 
-        code2: 
-        code3: 
-        code4: 
+        code1:
+        code2:
+        code3:
+        code4:
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
@@ -722,10 +729,10 @@ en:
         other: "%{count} local offers"
         zero: No local offers found
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_anchor:
         one: Online and telephone (%{count})
         other: Online and telephone (%{count})
@@ -734,10 +741,10 @@ en:
         other: "%{count} remote offers"
         zero: No remote offers
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Show local offers
     shared:
       current_and_original_locale:
@@ -749,6 +756,7 @@ en:
         '326': Ukrainian - українська
         '568': Dutch - Nederlands
         '639': Dari - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abkhaz - аҧсуа бызшәа
         amh: Amharic - አማርኛ
         ara: Arabic - عربي
@@ -762,7 +770,9 @@ en:
         bos: Bosnian - bosanski
         bul: Bulgarian - български
         cau: Abaza - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Czech - čeština
         deu: German - Deutsch
         dyu: Jula - Julakan
@@ -789,6 +799,7 @@ en:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Macedonian - македонски
+        msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
         pol: Polish - polski
@@ -812,6 +823,7 @@ en:
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tgl: Tagalog language - Tagálog
         tha: Thai - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
@@ -872,13 +884,13 @@ en:
           to you once as soon as that is the case.
       nav_lang:
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar:
+          de:
+          en:
+          fr:
+          pl:
+          ru:
+          tr:
         legal_title: On clarat, legal text can only be read in German.
         title: |-
           Automated translations!
@@ -896,7 +908,7 @@ en:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa:
           fr: Français
           pl: Polski
           ru: Русский
@@ -914,11 +926,11 @@ en:
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
         meta_description:
-          family: 
-          refugees: 
+          family:
+          refugees:
         meta_title:
-          family: 
-          refugees: 
+          family:
+          refugees:
   offers:
     index:
       filters:
@@ -954,7 +966,7 @@ en:
             parents: for parents
             pregnant_woman: for pregnant women
             relatives: for friends and family
-            family_acquaintances: 
+            family_acquaintances:
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1025,8 +1037,8 @@ en:
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
-        NicoleTest: 
-        PeterFriesen: 
+        NicoleTest:
+        PeterFriesen:
       who_location:
         organizations: 'This is a support service provided by:'
       who_section:
@@ -1124,17 +1136,8 @@ en:
         expert on our clarat language. Her favorite song is “Reckoner” by
         Radiohead.
       julia_b: Julia studied Social Work. And she's already done a lot of work with children and young adults. She can relate to others easily. She's in clarat's research team. Her favourite song is "Nantes" by Beirut.
-      julian: |-
-        Julian studied social economics. That means he knows a lot about the
-        economy and society. He is also good with computers. At clarat he is
-        part of the research team and takes care of technical issues. His
-        favorite song is “All You Need” by Sublime.
       juliane: Juliane studied business adminstration and tourism. She's very good at planning. And finding creative solutions. She's in charge of marketing at clarat. Her favourite song is "Easy" by The Commodores.
       karo: Karo studied European studies. That means she knows a lot about European politics. She is good at organizing things. She's part of the clarat research team. And she is in charge of our handbook. Her favourite song is "Alive" from Pearl Jam.
-      katinka: |-
-        Katinka is a psychologist. That means she has a good understanding of
-        people’s behaviour and feelings. At clarat she is part of the research team. And she finds out about the people using clarat. Her
-        favourite song is “The Greatest” by Cat Power.
       katja: Katja studied German. She is good at reading complicated texts. And she's good at German, too. She's in the clarat research team. Her favourite song is Mysteries by Beth Gibbons.
       konstantin: |-
         Konstantin is a web developer, which means he knows how to program
@@ -1166,11 +1169,6 @@ en:
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. Her favourite song is "Me in You" by Kings of Convenience.
-      nicole: |-
-        Nicole studied intercultural communications, which means she knows a lot
-        about cultures and language. She is good at making decisions. She is the
-        head of the research team. Her favourite song is “Palabra Mi Amor” by
-        Shaka Ponk.
       nils: |-
         Nils is a computer scientist, which means he knows how to program
         computer programs and websites. He always comes up with good solutions
@@ -1203,6 +1201,13 @@ en:
         “Survive It” by Ghostpoet.
       title: About us
       verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
+      ann-sophie:
+      damjan:
+      fabian:
+      magdalena:
+      marie:
+      omar:
+      patrick:
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1256,6 +1261,12 @@ en:
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees
@@ -1269,9 +1280,12 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
-      claim:
-        family: 
-        refugees: 
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1353,8 +1367,11 @@ en:
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
-    section_choice:
+      meta_description:
+      meta_title:
       title: Please choose your clarat-section
+      meta_description:
+      meta_title:
     shared:
       address:
         email: "%{mailto}\n"
@@ -1388,8 +1405,8 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
-    dankeschoen: 
-    danke: 
+    dankeschoen:
+    danke:
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1428,15 +1445,7 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
-  contact_success: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-  t:
-    contacts:
-      shared:
-        new:
-          send_us_a_message: 
-      new:
-        contact_heading: 
+        refugees_adolescents:

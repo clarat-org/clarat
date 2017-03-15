@@ -21,9 +21,6 @@ class ContactsController < ApplicationController
     end
   end
 
-  def danke
-  end
-
   # just a forward action so that a GET to /kontakt works
   def index
     redirect_to :new_contact

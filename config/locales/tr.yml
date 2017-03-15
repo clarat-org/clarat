@@ -334,6 +334,8 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
+        back_to_hp:
+        city_placeholder:
         email_placeholder:
           required:
             'false': E-Mail adresi (opsiyonel)
@@ -342,12 +344,12 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
-        city_placeholder: 
-        back_to_hp: 
+        city_placeholder:
+        back_to_hp:
     success:
-      success: 
+      success:
     danke:
-      success: 
+      success:
   emails:
     offers_index:
       family:
@@ -487,6 +489,7 @@ tr:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -500,7 +503,9 @@ tr:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -527,6 +532,7 @@ tr:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -550,6 +556,7 @@ tr:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -564,11 +571,11 @@ tr:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
       sort_order:
-        nearby: 
-        relevance: 
+        nearby:
+        relevance:
   js:
     ajax_error:
       error: Arama hatası
@@ -584,12 +591,12 @@ tr:
       <a href="/tr/refugees/Gizlilik-Politikası">daha fazla</a>.
     geolocation:
       error: konumun bulunamamıştır. Lütfen manüel giriş yap.
-      fallback: 
+      fallback:
       fallback_clarification:
-        code1: 
-        code2: 
-        code3: 
-        code4: 
+        code1:
+        code2:
+        code3:
+        code4:
       get: Konumumu kullan!
       waiting: Konumumu ara... Konumunun kullanılmasına izin vermelisin.
     lang_list_toggle:
@@ -676,20 +683,20 @@ tr:
         other: "%{count} Bulunduğun yerde bir hizmet"
         zero: Maalesef hizmet bulunmamaktadır
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_anchor: Online ve telefon (%{count})
       remote_offers:
         one: Telefon ve online hizmetleri
         other: "%{count} Telefon ve online hizmetleri"
         zero: Telefon veya online hizmet bulunmamaktadır
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Yerel hizmetleri göster
     shared:
       current_and_original_locale:
@@ -701,6 +708,7 @@ tr:
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
         '639': Farsça - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abhazca - аҧсуа бызшәа
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
@@ -714,7 +722,9 @@ tr:
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
         cau: Abazaca - абаза бызшва
+        ckb: Soranice - سۆرانی
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
@@ -741,6 +751,7 @@ tr:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
         pol: Lehçe - polski
@@ -764,6 +775,7 @@ tr:
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tgl: Tagalogca - Tagálog
         tha: Tayca - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
@@ -775,7 +787,7 @@ tr:
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
     shariff:
-      share_label: 
+      share_label:
     single_search_result:
       encounters:
         chat: Sohbet
@@ -823,15 +835,15 @@ tr:
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar:
+          de:
+          en:
+          fr:
+          pl:
+          ru:
+          tr:
         legal_title: On clarat, legal text can only be read in German
-        title: 
+        title:
       navigation:
         category_headline: Kategoriler arasında ara
         claim:
@@ -843,34 +855,34 @@ tr:
 
 '
       top_bar:
-        german_content_warning: 
+        german_content_warning:
         languages:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa:
           fr: Français
           pl: Polski
           ru: Русский
           tr: Türkçe
         section_link:
           desktop:
-            family: 
-            refugees: 
+            family:
+            refugees:
           mobile:
             home:
-              family: 
-              refugees: 
+              family:
+              refugees:
             switch:
-              family: 
-              refugees: 
+              family:
+              refugees:
         title: Otomatik çeviriler
         meta_description:
-          family: 
-          refugees: 
+          family:
+          refugees:
         meta_title:
-          family: 
-          refugees: 
+          family:
+          refugees:
   offers:
     index:
       filters:
@@ -885,10 +897,10 @@ tr:
           encounter:
             chat: Sohbet
             email: E-Mail
-            fax: 
+            fax:
             forum: Forum
             hotline: Telefon
-            letter: 
+            letter:
             online-course: Online kurs
             portal: Adres listesi
           exclusive_gender:
@@ -906,7 +918,7 @@ tr:
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
             relatives: Tanıdık ve akrabalar için
-            family_acquaintances: 
+            family_acquaintances:
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |
@@ -977,8 +989,8 @@ tr:
           şifrelenmiştir. Okumak için JavaScript aktifleştir.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
-        NicoleTest: 
-        PeterFriesen: 
+        NicoleTest:
+        PeterFriesen:
       who_location:
         organizations: 'bir ... hizmetidir:'
       who_section:
@@ -1001,64 +1013,66 @@ tr:
     about:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
-      anja: 
-      anna: 
+      anja:
+      anna:
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
       basti: Basti Web Geliştiricisi, internet sayfalarını programlıyor. Clarat’ta IT şefi. Tüm teknik sorunlarda bize yardımcı oluyor. Tatil ve sözleşmelerden sorumlu. Michael Jackson’un Man in the Mirror şarkısı en sevdiği parça.
       bettina: Kâr amacı olmayan şirket yönetimi mezunu ve bu sayede yardım organizasyonlarının nasıl yapıldığını iyi biliyor. Clarat’ta araştırma ekibinde. En sevdiği parça Dispatch’in Elias şarkısı.
-      birte: 
-      chrissy: 
-      claudia: 
-      eleonore: 
+      birte:
+      chrissy:
+      claudia:
+      eleonore:
       elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
-      esther: 
+      esther:
       franziska: Uluslararası hukukçu ve her ülkede geçerli olan yasalar hakkında bilgisi çok derin. Komplike konuları iyi anlıyor ve çabuk çözümler sunuyor. Clarat’ta araştırma ekibinde. Selah Sue’nun Explanations şarkısı en sevdiği parça.
       hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Clarat’ın arka planında kim var?
-      jacinta: 
-      jakob: 
+      jacinta:
+      jakob:
       janina: Janina kültür antropoloğu ve böylelikle değişik insan ve kültürler hakkında çok kapsamlı bilgisi var. Clarat’ta araştırma grubunda. Kendisi clarat-dil uzmanı ve kullanıcılarımıza yardımcı oluyor. En sevdigi parça Fanta4 grubunun MFG şarkısı.
       janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
       janne: Janne politika ve uluslararası ilişkiler okudu. Zamanını çok iyi planlayabiliyor. Clarat’ta araştırma ekibinde ve bu kapsamda hangi sunumların clarat teklifi olabileceğine karar veriyor. En sevdigi müzik parçası Ry X’in Sweat parçası.
-      jenny: 
+      jenny:
       jens: |-
         bir eğitim bilimcisi. Bu, eğitim hakkında iyi bir bilgiye sahip olması demektir.
         Komplike şeyleri hızlıca anlıyor. clarat’da ise araştırma ekibinde yer alıyor. Kendisi hangi projelerin clarat’a ait olacağını belirliyor. En sevdiği şarkı Lambchop’un 2B2 şarkısı.
       jule: barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. Hızlıca çözüm üretebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. Kendisi işimizin kalitesini sağlıyor. En sevdiği şarkı Edward Sharpe’ın Home şarkısı.
       julia: bir Alman filoloğu. Bu, metinler ve Alman dili ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Clarat’da ise araştırma ekibinde clarat dilimizin uzmanı olmakta. En sevdiği şarkı Radiohead’in Reckoner şarkışı.
       julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
-      julian: bir sosyal ekonomist. Bu, kendisinin ekonomi ve toplum ile ilgili çok bilgiye sahip olduğu anlamına geliyor. Aynı zamanda bilgisayarlarla da haşır neşir. Clarat’da ise araştırma ekibinde yer alıyor ve teknik kısmımızla ilgileniyor. En sevdiği şarkı Sublime’ın All You Need şarkısı.
-      juliane: 
-      karo: 
-      katinka: bir psikolog. Bu, insanların davranışlarını ve duygularını iyi anlayabildiği anlamına geliyor. Ayrıca komplike şeyleri iyi düzenleyebiliyor. Clarat’da ise araştırma ekibinde yer alıyor. En sevdiği şarkı Cat Power’in The Greatest şarkısı.
-      katja: 
+      juliane:
+      karo:
+      katja:
       konstantin: bir web geliştirme uzmanı. Bu, internet sayfalarını programlayabildiği anlamına geliyor. Her zaman iyi çözümler bulabiliyor. clarat’da ise IT bölümünde yer alıyor ve internet sayfamızı yapıyor. En sevdiği şarkı Daft Punk’ın Too Long şarkısı.
-      laura_i: 
+      laura_i:
       laura_w: Güney Asya çalışmaları ve coğrafi kalkınma uzmanlığı dalında okumuş. Bu, gelişmekte olan ülkeler hakkında çok bilgiye sahip olduğu anlamına geliyor. Kavrayış gücü oldukça yüksektir. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Paint It Black.
       lavinia: bir barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksek. Clarat’da araştırma ekibinde yer almakta ve projeleri konulara göre düzenliyor. En sevdiği şarkı Fever Ray’in Not Done şarkısı.
       line: bir tiyatro yönetmeni. Aynı zamanda edebiyat ve dil ile ilgili çok bilgiye sahip. Bu nedenle kelimelerin insanlarda yarattığı etkiyi çok iyi biliyor. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Anybody Seen My Baby.
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
-      michaela: 
-      nahla: 
-      nathalie: 
-      nicole: 'Kültürler arası iletişim dalında okumuş. Bu, kültürler ve dil hakkında çok bilgiye sahip olduğu anlamına geliyor. Karar verebilme yeteneği oldukça iyi. Kendisi araştırma ekibin yönetmeni. En sevdiği şarkı Shaka Ponk’un Palabra Mi Amor şarkısı.
-
-'
+      michaela:
+      nahla:
+      nathalie:
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
-      philipp: 
-      sabine: 
-      sophie: 
+      philipp:
+      sabine:
+      sophie:
       stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
       text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
+      ann-sophie:
+      damjan:
+      fabian:
+      magdalena:
+      marie:
+      omar:
+      patrick:
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1112,6 +1126,12 @@ tr:
       how:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
       title:
         family: Çocuk, genç ve aileler için destek programları
         refugees: Mülteciler için destek programları
@@ -1121,9 +1141,12 @@ tr:
       why:
         heading: Clarat neden var?
         text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
-      claim:
-        family: 
-        refugees: 
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1205,7 +1228,11 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title: 
+      meta_description:
+      meta_title:
+      title:
+      meta_description:
+      meta_title:
     shared:
       address:
         email: "%{mailto}\n"
@@ -1221,12 +1248,12 @@ tr:
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
-    fr: 
+    fr:
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home:
     impressum: künye
-    liste: 
-    liste-de-services: 
+    liste:
+    liste-de-services:
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
@@ -1239,8 +1266,8 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
-    dankeschoen: 
-    danke: 
+    dankeschoen:
+    danke:
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1284,15 +1311,7 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  contact_success: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-  t:
-    contacts:
-      shared:
-        new:
-          send_us_a_message: 
-      new:
-        contact_heading: 
+        refugees_adolescents: 

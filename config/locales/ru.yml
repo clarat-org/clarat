@@ -432,6 +432,8 @@ ru:
       contact_heading: Чем ты хочешь с нами поделиться?
     shared:
       new:
+        back_to_hp:
+        city_placeholder:
         email_placeholder:
           required:
             'false': E-Mail адрес (обязательно)
@@ -440,12 +442,12 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
-        city_placeholder: 
-        back_to_hp: 
+        city_placeholder:
+        back_to_hp:
     success:
-      success: 
+      success:
     danke:
-      success: 
+      success:
   emails:
     offers_index:
       family:
@@ -587,6 +589,7 @@ ru:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -600,7 +603,9 @@ ru:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -627,6 +632,7 @@ ru:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -650,6 +656,7 @@ ru:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -684,12 +691,12 @@ ru:
       <a href="/ru/refugees/Правила-конфиденциальности">Далее</a>.
     geolocation:
       error: Местонахождение не найдено. Пожалуйста введи сам.
-      fallback: 
+      fallback:
       fallback_clarification:
-        code1: 
-        code2: 
-        code3: 
-        code4: 
+        code1:
+        code2:
+        code3:
+        code4:
       get: Использовать мое местонахождения!
       waiting: Искать местонахождения... Возможно тебе нужно сначала это разрешить.
     lang_list_toggle:
@@ -781,10 +788,10 @@ ru:
         other: "%{count} Предложения на месте"
         zero: К сожалению, нет предложений
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_anchor:
         few: Интернет и телефон (%{count})
         many: Интернет и телефон (%{count})
@@ -796,10 +803,10 @@ ru:
         other: "%{count} Предложения по телефону и он-лайн"
         zero: Нет предложений по телефону или он-лайн
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Показать предложения на месте
     shared:
       current_and_original_locale:
@@ -811,6 +818,7 @@ ru:
         '326': Украинский язык - українська
         '568': Нидерландский язык - Nederlands
         '639': Персидский язык - دری
+        aar: 'Афарский - Qafar-áf '
         abk: Абхазский язык - аҧсуа бызшәа
         amh: Амхарский язык - አማርኛ
         ara: Арабский язык - عربي
@@ -824,7 +832,9 @@ ru:
         bos: Боснийский язык - bosanski
         bul: Болгарский язык - български
         cau: Абазинский язык - абаза бызшва
+        ckb: 'Сорани́ - سۆرانی '
         cpe: Камток-Пиджин
+        cus: Сaxo - ሳሆኛ
         cze: Чешский язык - čeština
         deu: Немецкий язык - Deutsch
         dyu: Дьюла - Julakan
@@ -851,6 +861,7 @@ ru:
         luo: Долуо - Dholuo
         man: Манинка-Манинка
         mkd: Македонский язык - македонски
+        msa: Мала́йский язы́к – بهاس ملايو
         mul: другие языки по запросу
         nor: Норвежский язык - Norsk
         pol: Польский язык - polski
@@ -874,6 +885,7 @@ ru:
         tgk: Таджикский язык - тоҷикӣ / تاجیکی
         tgl: Тагальский язык - Tagálog
         tha: Тайский язык - ภาษาไทย
+        tig: Тигре - ትግሬ
         tir: Тигринья - ትግርኛ
         tuk: Туркменский язык - Türkmençe / Tүркменче
         tur: Турецкий язык - Türkçe
@@ -931,15 +943,15 @@ ru:
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar:
+          de:
+          en:
+          fr:
+          pl:
+          ru:
+          tr:
         legal_title: On clarat, legal text can only be read in German
-        title: 
+        title:
       navigation:
         category_headline: Или поиск по категориям
         claim:
@@ -956,7 +968,7 @@ ru:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa:
           fr: Français
           pl: Polski
           ru: Русский
@@ -974,11 +986,11 @@ ru:
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
         meta_description:
-          family: 
-          refugees: 
+          family:
+          refugees:
         meta_title:
-          family: 
-          refugees: 
+          family:
+          refugees:
   offers:
     index:
       filters:
@@ -1016,7 +1028,7 @@ ru:
             parents: для родителей
             pregnant_woman: для беременных
             relatives: для знакомых и родственников
-            family_acquaintances: 
+            family_acquaintances:
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
       noscript_warning: |
@@ -1088,8 +1100,8 @@ ru:
           JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
         phone: 'Телефон: '
         prof_dr: Профессор доктор
-        NicoleTest: 
-        PeterFriesen: 
+        NicoleTest:
+        PeterFriesen:
       who_location:
         organizations: 'Предложения от:'
       who_section:
@@ -1139,10 +1151,8 @@ ru:
       jule: Она - исследовательница мирных времен и конфликтов. Это значит, что она много знает о конфликтах и войне. Она хорошо умеет решать проблемы. В clarat она работает в исследовательской команде. Она в курсе событий в странах наших беженцев. Её любимая песня Home исполнителя Edward Sharpe.
       julia: Юлия Германист. Это значит, что она хорошо разбирается в текстах и в немецком языке. Она может хорошо писать у понятно объяснять вещи. В clarat она работает в команде сбора информации и является экспертом по языку clarat. Её любимая песня Reckoner от группы  Рэдиохэд (Radiohead).
       julia_b: Она изучала социальную работу. Она долгое время работала с детьми и подростками. Она умеет ставить себя на место других. В Clarat она работает в исследовательской команде. Её любимая песня - Nantes от Beirut.
-      julian: Юлиан Социальный экономист. Это значит, что он знает много о экономике и обществе. Он хорошо разбирается в компьютерах. В clarat он работает в команде сбора информации и занимается техническими вопросами. Его любимая песня All You Need от Сублим (Sublime).
       juliane: Она изучала управление предприятием и туризм. Она хорошо умеет планировать. И всегда находит креативные решения. В Clarat она следит за маркетингом. Её любимая песня - группы The Commodores.
       karo: Она изучала европейские науки. Следовательно, она знает много о европейской политике. У нее хорошие организаторские способности. В clarat она работает в исследовательской группе и занимается подготовкой нашего справочника. Ее любимая песня — Alive от Pearl Jam.
-      katinka: Она психолог. Это значит, что она хорошо понимает поведение и чувства людей. В clarat она работает в исследовательской группе. И она выясняет, кто пользуется всей системой clarat. Ее любимая песня — The Greatest от Cat Power.
       katja: Она германист. Она хорошо разбирается в сложных текстах и немецком языке. В clarat она работает в исследовательской группе. Ее любимая песня — Mysteries от Beth Gibbons.
       konstantin: 'Константин Интернет-разработчик. Это значит, что он умеет программировать страницы в интернете. Он всегда хорошо разрешает проблемы. В clarat он работает в команде технической инвентаризации. Его любимая песня Too Long от  французской группы Дафт Панк (Daft Punk). '
       laura_i: Она туристический агент и культуролог. У нее хорошие организаторские способности. Она всегда видит общую картину и охотно изучает новые вещи. В clarat она работает в исследовательской группе. Ее любимая песня — Proud Mary от Ike und Tina Turner.
@@ -1154,7 +1164,6 @@ ru:
       michaela: Она изучала экономическую информатику. Она может воодушевлять других людей. И она хорошо разбирается в новых СМИ. В clarat она работает в исследовательской группе и обеспечивает хорошую работу нашего сайта. Ее любимая песня — Digital Love от Daft Punk.
       nahla: Она археолог. Он много знает об истории людей. Он может быстро работать. В clatrat она работает в команде переводчиков и переводит clarat на арабский язык.  Ее любимая песня — Nassam Allina El Hawa от Fayrouz.
       nathalie: Она изучала права человека и международные политические исследования. Она умеет хорошо объяснять. И хорошо слушать. В Clarat она работает в исследовательской команде. Её любимая песня - Me in You от Kings of Convenience.
-      nicole: Николь Изучала межкультурную коммуникацию. Это значит, что она знает много о разных культурах и языках. Она хорошо может принимать решения. В clarat она работает в команде сбора информации. Её любимая песня Palabra Mi Amor от Шака Понк (Shaka Ponk).
       nils: Нильс Специалист по информатике. Это значит, что он хорошо умеет программировать компьютерные программы и сайты в интернете. Он хорошо решает проблемы и быстро осваивает новые вещи. В clarat он работает команде технической информации. Его любимая песня Jein от группы Фэттэс Брот (Fettes Brot).
       philipp: Имеет истории, политики и права исследований. Он много знает о политике и обществе. Он может понять сложные вещи. В Clarat он находится в исследовательской группе. Его любимая песня This Is Our Наука Astronautalis.
       sabine: Является ли социолог. То есть, они знают много о компании. Вы можете понять сложные вещи. В Clarat он находится в исследовательской группе. И она объясняет немецкий закон о предоставлении убежища. ее любимая песня Vesna Kino.
@@ -1164,6 +1173,13 @@ ru:
       tine: Она - социальный педагог. Она умеет выслушивать людей. Кроме того, она - писатель. Это значит, что она хорошо владеет языком и пишет хорошие истории. В clarat она работает в исследовательской команде. Её любимая песня Survive от Ghostpoet.
       title: Über Uns
       verena: Оан изучала гендерные исследования. Это значит, что она много знает о разных гендерах и о нашем обществе. Она хорошо организовывает. В clarat она работает в исследовательской команде . Её любимая песня - Metropolis отNeonschwarz.
+      ann-sophie:
+      damjan:
+      fabian:
+      magdalena:
+      marie:
+      omar:
+      patrick:
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1217,6 +1233,12 @@ ru:
       how:
         heading: Kак работает clarat?
         text: Напиши, в чем именно у тебя проблемы. Или что тебя волнует. Либо выбери из предложенных тем. Ты сразу же найдешь рядом с тобой по близости все возможные варианты помощи и поддержки. Мы так же расскажем тебе, как ты можешь получить эту помощь. Позвони, напиши email или просто приходи.
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
       title:
         family: Предложения помощи для детей, молодежи и семей
         refugees: Предложения помощи для беженцев
@@ -1226,9 +1248,12 @@ ru:
       why:
         heading: Для чего существует clarat?
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
-      claim:
-        family: 
-        refugees: 
+      meta_description:
+        family:
+        refugees:
+      meta_title:
+        family:
+        refugees:
     impressum:
       heading: Impressum
       notice: clarat — это поисковик. clarat скажет вам, где вы можете получить помощь. Например, где вы найдете специалистов, которые помогут с вашей проблемой. clarat также может помочь вам в ваших поисках.
@@ -1307,7 +1332,11 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      meta_description:
+      meta_title:
       title: Пожалуйста,  выберите ваш мир clarat
+      meta_description:
+      meta_title:
     shared:
       address:
         email: "%{mailto}\n"
@@ -1341,8 +1370,8 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
-    dankeschoen: 
-    danke: 
+    dankeschoen:
+    danke:
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле
@@ -1381,15 +1410,7 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
-  contact_success: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-  t:
-    contacts:
-      shared:
-        new:
-          send_us_a_message: 
-      new:
-        contact_heading: 
+        refugees_adolescents: 

@@ -759,6 +759,8 @@ de:
       contact_heading: Was möchtest du uns mitteilen?
     shared:
       new:
+        back_to_hp: zurück zur Startseite
+        city_placeholder: Wohnort (Optional)
         email_placeholder:
           required:
             'false': E-Mail Adresse (Optional)
@@ -770,9 +772,9 @@ de:
         city_placeholder: Wohnort (Optional)
         back_to_hp: zurück zur Startseite
     success:
-      success: 
+      success:
     danke:
-      success: 
+      success:
   emails:
     offers_index:
       family:
@@ -933,6 +935,7 @@ de:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -946,7 +949,9 @@ de:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -973,6 +978,7 @@ de:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -996,6 +1002,7 @@ de:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -1177,6 +1184,7 @@ de:
         '326': Ukrainisch - українська
         '568': Niederländisch - Nederlands
         '639': Dari - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abchasisch - аҧсуа бызшәа
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
@@ -1190,7 +1198,9 @@ de:
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
         cau: Abasinisch - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Tschechisch - čeština
         deu: Deutsch
         dyu: Dioula - Julakan
@@ -1217,6 +1227,7 @@ de:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Mazedonisch - македонски
+        msa: Malaiisch – بهاس ملايو
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
         pol: Polnisch - polski
@@ -1240,6 +1251,7 @@ de:
         tgk: Tadschikisch - тоҷикӣ / تاجیکی
         tgl: Tagalog - Tagálog
         tha: Thai - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrinisch - ትግርኛ
         tuk: Turkmenisch - Türkmençe / Tүркменче
         tur: Türkisch - Türkçe
@@ -1302,15 +1314,15 @@ de:
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
         languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-        legal_title: 
-        title: 
+          ar:
+          de:
+          en:
+          fr:
+          pl:
+          ru:
+          tr:
+        legal_title:
+        title:
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1323,7 +1335,7 @@ de:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa:
           fr: Français
           pl: Polski
           ru: Русский
@@ -1341,11 +1353,11 @@ de:
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
         meta_description:
-          family: 
-          refugees: 
+          family:
+          refugees:
         meta_title:
-          family: 
-          refugees: 
+          family:
+          refugees:
   offers:
     index:
       filters:
@@ -1381,7 +1393,7 @@ de:
             parents: für Eltern
             pregnant_woman: für Schwangere
             relatives: für Bekannte und Verwandte
-            family_acquaintances: 
+            family_acquaintances:
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1453,8 +1465,8 @@ de:
           verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
-        NicoleTest: 
-        PeterFriesen: 
+        NicoleTest:
+        PeterFriesen:
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
@@ -1482,7 +1494,7 @@ de:
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
       anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
-      anna: Ist Philologin. Das heißt, sie weiß viel über Sprachen. Und sie kennt sich mit Literatur aus. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist 1009 von Bonobo.
+      anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
       basti: |
@@ -1491,7 +1503,7 @@ de:
         er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
         The Mirror von Michael Jackson.
       bettina: Hat Nonprofit Management studiert. Das heißt, sie weiß, wie man Hilfe organisiert. Sie kann gut Ordnung schaffen. Bei clarat ist sie im Research-Team. Und sie entscheidet, was ein clarat-Angebot ist. Ihr Lieblingssong ist Elias von Dispatch.
-      birte: Hat Erziehungswissenschaften studiert. Sie kennt sich gut mit Kindern aus. Und sie kann sich gut in andere hineinversetzen. Sie hat auch viel mit Medien gearbeitet. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Borderline von Madonna.
+      birte: Hat Erziehungswissenschaften studiert. Sie kennt sich gut mit Kindern aus. Und sie kann sich gut in andere hineinversetzen. Bei clarat ist sie im Research-Team. Und sie macht mit beim Marketing. Ihr Lieblingssong ist Borderline von Madonna.
       chrissy: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie kann gut planen und ordnen. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist Rough Hands von Alexisonfire.
       claudia: Hat vor clarat im Einzelhandel gearbeitet. Sie kann gut mit Menschen umgehen. Und schnell Informationen sammeln. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter. Ihr Lieblingssong ist Chandelier von Sia.
       eleonore: Hat Musik, Medien und Wirtschaft studiert. Sie kann schnell Informationen sammeln und verstehen. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass Nutzer clarat gut im Internet finden können. Ihr Lieblingssong ist Je Veux von Zaz.
@@ -1522,15 +1534,9 @@ de:
         clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
         Lieblingssong ist Reckoner von Radiohead.
       julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
       juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine kreative Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
       karo: Hat Europawissenschaften studiert. Das heißt, sie weiß viel über europäische Politik. Sie kann gut organisieren. Bei clarat ist sie im Research-Team. Und sie kümmert sich um unser Handbuch. Ihr Lieblingssong ist Alive von Pearl Jam.
-      katinka: Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle von Menschen verstehen. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer alles clarat nutzt. Ihr Lieblingssong ist The Greatest von Cat Power.
-      katja: Ist Germanistin. Sie kennt sich gut mit komplizierten Texten aus. Und mit der deutschen Sprache. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Mysteries von Beth Gibbons.
+      katja: Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Mysteries von Beth Gibbons.
       konstantin: |
         Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
         Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
@@ -1547,18 +1553,15 @@ de:
         Lieblingssong ist Hysteria von MUSE.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
-      nathalie: 'Hat Menschenrechte und internationale Politik studiert. Sie kann gut erklären. Und gut zuhören. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Me in You von Kings of Convenience. '
-      nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
+      nathalie: 'Hat Menschenrechte und internationale Politik studiert. Sie kann gut erklären. Und gut zuhören. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Me in You von Kings of Convenience.
+
+'
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
-      philipp: Hat Geschichte, Politik und Recht studiert. Er weiß viel über Politik und Gesellschaft. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist This Is Our Science von Astronautalis.
+      philipp: Hat Geschichte, Politik und Recht studiert. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Und er sorgt dafür, dass wir gut arbeiten können. Sein Lieblingssong ist This Is Our Science von Astronautalis.
       sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
       sophie: Hat Nonprofit Management studiert. Sie kann gut organisieren und erkennt schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Lost von Frank Ocean.
       stefan: Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und Gesellschaft. Er kann Menschen gut für eine Sache begeistern. Und er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The Storm von The Doors.
@@ -1578,6 +1581,13 @@ de:
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: Über Uns
       verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
+      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
+      damjan: Ist Informatiker. Das heißt, er kennt sich gut mit Computern aus. Und kann gut programmieren. Er weiß schnell, wie man ein Problem lösen kann. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Forever More von Moloko.
+      fabian: Hat Politik und Geschichte studiert. Er kann sich gut in andere Menschen hineinversetzen. Und verstehen, warum sie etwas machen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Battery von Metallica.
+      magdalena: Hat Interdisziplinäre Lateinamerikastudien studiert. Das heißt, sie weiß viel über die Kultur und Politik in Lateinamerika. Sie kann sehr gut planen und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Summer Breeze von CocoRosie.
+      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
+      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut Internetseiten programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
+      patrick: Hat Geschichte und Politik studiert. Er weiß besonders viel über das Land Jamaika. Er kann gut komplizierte Dinge verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Kingston Be Wise von Protoje.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1636,6 +1646,12 @@ de:
           Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
+      meta_description:
+        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
+        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
+      meta_title:
+        family: Einfach Hilfe finden | clarat family
+        refugees: Einfach Hilfe finden | clarat refugees
       title:
         family: Unterstützungsangebote für Kinder, Jugendliche und Familien
         refugees: Unterstützungsangebote für Flüchtlinge
@@ -1656,9 +1672,12 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
-      claim:
-        family: 
-        refugees: 
+      meta_description:
+        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
+        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
+      meta_title:
+        family: Einfach Hilfe finden | clarat family
+        refugees: Einfach Hilfe finden | clarat refugees
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1741,7 +1760,11 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
+      meta_title: clarat klärt auf | clarat
       title: Bitte wähle deine clarat-Welt
+      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
+      meta_title: clarat klärt auf | clarat
     shared:
       address:
         email: "%{mailto}\n"
@@ -1819,15 +1842,7 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  contact_success: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-  t:
-    contacts:
-      shared:
-        new:
-          send_us_a_message: 
-      new:
-        contact_heading: 
+        refugees_adolescents:

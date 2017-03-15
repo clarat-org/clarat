@@ -18,7 +18,6 @@ Clarat::Application.routes.draw do
       get 'rechtliche-hinweise' => 'pages#agb', as: 'agb'
       get 'datenschutzhinweise' => 'pages#privacy', as: 'privacy'
 
-
       # RESTful resources
       resources :offers, only: [:index, :show]
       resources :organizations, only: [:show]

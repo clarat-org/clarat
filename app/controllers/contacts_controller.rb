@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
         format.html do
           redirect_to section_choice_path, flash: { success: t('.success') }
         end
-          format.js { render :create, layout: 'modal_create' }
+        format.js { render :create, layout: 'modal_create' }
       end
     else
       render :new

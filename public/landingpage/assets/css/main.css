@@ -141,7 +141,7 @@ a {
 	font-size: 135%;
 	font-weight: 700;
 	border-radius: 12px 0;
-	margin: 0 0  1.125em;
+	margin: 1.125em 0 0;
 }
 
 .btn:hover {

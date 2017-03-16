@@ -1,12 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="de">
 <head>
-    <link rel="dns-prefetch" href="//google-analytics.com">
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mobbing in der Schule | clarat</title>
-    <meta name="description" content="">
+    <title>Familienzusammenführung - Einfach Hilfe finden mit clarat.org</title>
+    <meta name="description" content="Die Regeln für die Familienzusammenführung für Flüchtlinge sind nicht einfach zu verstehen. Es gibt viele Ausnahmen. Hier findest du Hilfe!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -24,7 +23,7 @@
     <div class="layout-inner">
         <svg class="header-main__logo" xmlns="http://www.w3.org/2000/svg" width="224" height="60" viewBox="0 0 224 60" role="img"
              aria-label="clarat Family">
-            <title>clarat Family</title>
+            <title>clarat Logo</title>
             <g fill="none" fill-rule="evenodd">
 
                 <path fill="#F3B529"
@@ -52,13 +51,12 @@
 
             <p class="content__mobile-intro"><b>Die Familie ist für viele Menschen sehr wichtig. Besonders Flüchtlinge in einer schweren Situation brauchen oft ihre Verwandten. Darum gibt es in Deutschland die Familienzusammenführung für Flüchtlinge.</b></p>
 
-            <a class="btn" href="#0">Jetzt Hilfe finden ›</a>
-
-
             <h2>Was bedeutet Familien&shy;zusammen&shy;führung?</h2>
 
             <p>Viele Flüchtlinge kommen ohne ihre Familie nach Deutschland. Frau und Kind sind zum Beispiel noch in Syrien. Und der Mann kommt allein nach Deutschland. Die Familie wohnt also in zwei unterschiedlichen Ländern.
-                </p><p>Familienzusammenführung heißt, dass alle wieder zusammen leben. Die Familie aus dem Ausland kann ein Visum beantragen. Und dann auch nach Deutschland ziehen. Das nennt man auch Familiennachzug. Es bedeutet das gleiche wie Familien&shy;zusammen&shy;führung?.</p>
+                </p><p>Familienzusammenführung heißt, dass alle wieder zusammen leben. Die Familie aus dem Ausland kann ein Visum beantragen. Und dann auch nach Deutschland ziehen. Das nennt man auch Familiennachzug. Es bedeutet das gleiche wie Familien&shy;zusammen&shy;führung?</p>
+
+            <a class="btn" id="lp-button" href="#0">Jetzt Hilfe finden ›</a>
 
         </div>
         <div class="content__right">
@@ -87,16 +85,24 @@
         </div>
 </main>
 
-
 <script>
-    window.ga = function () {
-        ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o
+),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore
+(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js',
+    'ga');
+
+ga('create', 'UA-59626864-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');</script><meta content="2EF21E72D848CCA021AC432F95FA63EA" name="msvalidate.01" /><script>// Namespace
+
+document.getElementById('lp-button').addEventListener('click', function () {
+    ga('send', 'event', {
+        eventCategory: "LP Button",
+        eventAction: 'click',
+        eventLabel: 'SEA_LP1'
+    });
+});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   margin-right: 15%;
   max-width: 30%;
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }

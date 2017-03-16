@@ -36,7 +36,7 @@
     width: 71%;
     position: relative;
 
-    body.ar & {
+    html[dir="rtl"] & {
       margin-left: -20px;
       margin-right: 0;
     }
@@ -58,7 +58,7 @@
       position: relative;
     }
 
-    body.ar & {
+    html[dir="rtl"] & {
       left: 120px;
       right: 0;
     }
@@ -68,7 +68,7 @@
     position: absolute;
     right: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       left: 0;
       right: auto;
     }
@@ -91,7 +91,7 @@
 
   #new_search_form .main-search__submit {
 
-    body.ar & {
+    bhtml[dir="rtl"] & {
       left: 0;
       right: auto;
       margin-left: 0;
@@ -184,7 +184,7 @@
       padding-right: 55%;
     }
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-left: 45%;
     }
   }

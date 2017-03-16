@@ -9,7 +9,7 @@
   top: 50%;
   right: -60px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     left: -120px;
     right: auto;
   }
@@ -79,7 +79,7 @@
       display: inline-block;
       text-align: center;
 
-      body.ar & {
+      html[dir="rtl"] & {
         float: right;
       }
     }

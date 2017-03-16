@@ -1142,12 +1142,6 @@ fa:
         text: |-
           با clarat پیدا کردن کمک آسانتر می شود.در آلمان پیشنهاد های زیادی وجود دارند که از بچه ها ٬جوانان و خانواده ها حمایت می کنند.و همچنین پیشنهاد های زیادی برای پناهندگان.اغلب ولی پیدا کردن آنها سخت می باشد.اگر موضوع خانواده باشد در clarat family و  اگر موضوع پناهندگی در  clarat
           refugees جستجو کن.
-      meta_description:
-        family: 
-        refugees: 
-      meta_title:
-        family: 
-        refugees: 
     impressum:
       heading: اطلاعات کلی شرکت
       notice: clarat  ماشین جستجو است.clarat به تو می گوید کجا کمک دریافت می کنی.بطور مثال کجا کارشناسانی را پیدا میکنی٬ اگر مشکلی داری به تو کمک کنند.clarat تو را فقط در جستجوی کمک یاری می کند.
@@ -1218,8 +1212,6 @@ fa:
       meta_description: 
       meta_title: 
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
-      meta_description: 
-      meta_title: 
     shared:
       address:
         email: "%{mailto}"

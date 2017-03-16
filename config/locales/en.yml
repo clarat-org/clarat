@@ -1265,12 +1265,6 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
-      meta_description:
-        family: 
-        refugees: 
-      meta_title:
-        family: 
-        refugees: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1356,8 +1350,6 @@ en:
       meta_description: 
       meta_title: 
       title: Please choose your clarat-section
-      meta_description: 
-      meta_title: 
     shared:
       address:
         email: "%{mailto}\n"

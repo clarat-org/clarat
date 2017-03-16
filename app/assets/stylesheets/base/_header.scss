@@ -57,6 +57,12 @@
   font-weight: 400;
   font-size: 34px;
 
+  // Fixes #983
+  .template--organizations-show.ar & {
+    text-align: right;
+    direction: ltr;
+  }
+
   .template--offers-show & {
     margin-bottom: 0;
   }

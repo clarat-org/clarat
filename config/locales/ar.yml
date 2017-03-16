@@ -305,8 +305,8 @@ ar:
       contact_heading: ماذا تريد أن تخبرنا؟
     shared:
       new:
-        back_to_hp:
-        city_placeholder:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': البريد الإليكتروني (إختياري)
@@ -315,12 +315,10 @@ ar:
         name_placeholder: الإسم (فرض)
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
-        city_placeholder:
-        back_to_hp:
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -570,12 +568,12 @@ ar:
     cookie_warning_html: الكوكيز تساعدنا على أن تظل صفحتنا متاحة. من خلال استخدامك للصفحة فأنت تبين تفهمك لأننا وضعنا كوكيز. <a href="/refugees/datenschutzhinweise">Mehr</a>
     geolocation:
       error: لم يتم العثور على موقع، من فضلك أدخل اسم الموقع ذاتيا.
-      fallback:
+      fallback: 
       fallback_clarification:
-        code1:
-        code2:
-        code3:
-        code4:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: استخدم موقعي !
       waiting: البحث عن موقع. ربما عليك أن تسمح بهذا أولا
     lang_list_toggle:
@@ -668,10 +666,10 @@ ar:
         other: "%{count} عروض محلية"
         zero: 'للأسف لا توجد عروض  '
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         few: أونلاين وهاتفي  (%{count})
         many: أونلاين وهاتفي  (%{count})
@@ -684,10 +682,10 @@ ar:
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: عرض عروض مكانية أكثر
     shared:
       current_and_original_locale:
@@ -778,7 +776,7 @@ ar:
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
     shariff:
-      share_label:
+      share_label: 
     single_search_result:
       encounters:
         chat: دردشة
@@ -829,15 +827,15 @@ ar:
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
         legal_title: On clarat, legal text can only be read in German
-        title:
+        title: 
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:
@@ -854,7 +852,7 @@ ar:
           ar: عربي
           de: Deutsch
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -872,11 +870,11 @@ ar:
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -915,7 +913,7 @@ ar:
             parents: للآباء
             pregnant_woman: للحوامل
             relatives: للمعارف والأقارب
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -986,8 +984,8 @@ ar:
           من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
         phone: ":تليفون"
         prof_dr: أ.د.
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: " :.عرض من"
       who_section:
@@ -1057,13 +1055,13 @@ ar:
       tine: أخصائية إجتماعية. هي تستمع للناس بشكل جيد. كما أنها مؤلفة. هذا يعني أنها تجيد كتابة القصص. في كلارات هي عضوة في فريق البحث ومختصة بلغة كلارات. أغنيتها المفضلة هي سيرفيف إت ل. جوستبويت.
       title: معلومات عن فريق عمل كلارات
       verena: درست علوم الأجناس. هذا يعني أنها تعرف الكثير عن الأجناس المختلفة وكذلك عن مجتمعنا. يمكنها تنسيق الأمور وترتيبها. في كلارات هي عضوة في فريق البحث. أغنيتها المفضلة هي ميتروبوليس ل. نيونشفارتس.
-      ann-sophie:
-      damjan:
-      fabian:
-      magdalena:
-      marie:
-      omar:
-      patrick:
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1136,16 +1134,6 @@ ar:
       why:
         heading: لماذا توجد كلارات؟
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
-      meta_description:
-        family: |-
-          "مع كلارات العائلة تجد بسهولة المساعدة.
-          عروض الدعم للاطفال، الشباب، والعائلات. عبر الانترنت. حالياً. في كل برلين."
-        refugees: |-
-          "مع كلارات اللاجئين تجد بسهولة المساعدة.
-          عروض الدعم للاجئين. عبر الانترنت. حالياً. متعدد اللغات. في كل المانيا."
-      meta_title:
-        family: إيجاد المساعدة ببساطة | كلارات العائلة
-        refugees: إيجاد المساعدة ببساطة | كلارات اللاجئين
     impressum:
       heading: Impressum
       notice: كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط.
@@ -1227,8 +1215,6 @@ ar:
       meta_description: 'تقوم كلارات بالإرشاد لشبكة ضخمة من خدمات الدعم في المانيا. للاطفال، الشباب، العائلات واللاجئين. عبر الانترنت. ببساطة. في الجوار. '
       meta_title: كلارات توضح | كلارات
       title: إختر قسم كلارات الذي يخصك
-      meta_description: 'تقوم كلارات بالإرشاد لشبكة ضخمة من خدمات الدعم في المانيا. للاطفال، الشباب، العائلات واللاجئين. عبر الانترنت. ببساطة. في الجوار. '
-      meta_title: كلارات توضح | كلارات
     shared:
       address:
         email: "%{mailto}\n"
@@ -1244,9 +1230,9 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
-    fr:
+    fr: 
     haeufige-fragen: أسئلة-شائعة
-    home:
+    home: 
     impressum: هيئة التحرير
     liste: القائمة
     liste-de-services: قائمة الخدمات
@@ -1262,8 +1248,8 @@ ar:
     unsubscribe: unsubscribe
     update_requests: طلبات-تحديث
     users: مستخدم
-    dankeschoen:
-    danke:
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة
@@ -1307,4 +1293,4 @@ ar:
   offer:
     stamp:
       target_audience:
-        refugees_adolescents:
+        refugees_adolescents: 

@@ -3,40 +3,43 @@ class Clarat.ContactForm.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
     '#new_contact':
-      formsent: 'handleSuccess'
-    '.JS-Single-Click-Button__fin':
+      'ContactForm::CreateSuccess': 'handleSuccess'
+    '.JS-ContactForm-Button__finish':
       click: 'resetForm'
 
   handleSuccess: (e) =>
+    $('.Contact-Submit').trigger('Clarat.ContactForm::CreateSuccess')
 
-      $('.Contact-Submit').trigger('finished');
-      $('.Contact-Submit').addClass('JS-Single-Click-Button__fin');
-      $('#new_contact').find('span.error').remove();
-      $('.contact_heading').hide();
-      $('.js-report-overlay_close').addClass('greenOverlay');
-      $('.success_message').show();
-      $('.contact_name').hide();
-      $('.contact_email').hide();
-      $('.contact_city').hide();
-      $('.contact_message').hide();
-      if window.location.href.indexOf('kontakt') > -1
-        $('.back_to_hp').show();
+    $('#new_contact').find('span.error').remove()
+    @toggleContactFormVisibility('hide')
+    $('.Contact-Submit').addClass('JS-ContactForm-Button__finish')
+    $('.success_message').show()
+    $('.js-report-overlay_close').addClass('greenOverlay')
 
+    if @isFullPageContact()
+      $('.back_to_hp').show()
 
   resetForm: (e) =>
+    $('.Contact-Submit').trigger('Clarat.ContactForm::Reset')
 
-    $sent = $(event.target).find('.JS-Single-Click-Button__original').html()
-    $('.success_message').hide();
-    $('.contact_name').show();
-    $('.contact_email').show();
-    $('.contact_city').show();
-    $('.contact_message').show();
-    $('.contact_heading').show();
-    $('.back_to_hp').hide();
-    $('.Contact-Submit').removeClass('JS-Single-Click-Button__active');
-    $('.Contact-Submit').html($sent);
-    $('.js-report-overlay_close').removeClass('greenOverlay');
+    @toggleContactFormVisibility('show')
+    $('.Contact-Submit').removeClass 'JS-ContactForm-Button__finish'
+    $('.success_message').hide()
+    $('.js-report-overlay_close').removeClass('greenOverlay')
+    $('.back_to_hp').hide()
+    $('#new_contact')[0].reset()
 
+  ### private ###
+
+  isFullPageContact: ->
+    window.location.href.indexOf('kontakt') > -1
+
+  toggleContactFormVisibility: (method) ->
+    $('.contact_name')[method]()
+    $('.contact_email')[method]()
+    $('.contact_city')[method]()
+    $('.contact_message')[method]()
+    $('.contact_heading')[method]()
 
 
 $(document).ready ->

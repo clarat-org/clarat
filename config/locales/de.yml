@@ -769,12 +769,10 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
-        city_placeholder: Wohnort (Optional)
-        back_to_hp: zurück zur Startseite
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -1314,15 +1312,15 @@ de:
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
-        legal_title:
-        title:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+        legal_title: 
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1335,7 +1333,7 @@ de:
           ar: عربي
           de: Deutsch
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -1353,11 +1351,11 @@ de:
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1393,7 +1391,7 @@ de:
             parents: für Eltern
             pregnant_woman: für Schwangere
             relatives: für Bekannte und Verwandte
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1465,8 +1463,8 @@ de:
           verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
@@ -1672,12 +1670,6 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
-      meta_description:
-        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
-        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
-      meta_title:
-        family: Einfach Hilfe finden | clarat family
-        refugees: Einfach Hilfe finden | clarat refugees
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1763,8 +1755,6 @@ de:
       meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
       meta_title: clarat klärt auf | clarat
       title: Bitte wähle deine clarat-Welt
-      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
-      meta_title: clarat klärt auf | clarat
     shared:
       address:
         email: "%{mailto}\n"
@@ -1845,4 +1835,4 @@ de:
   offer:
     stamp:
       target_audience:
-        refugees_adolescents:
+        refugees_adolescents: 

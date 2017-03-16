@@ -408,8 +408,8 @@ fr:
       contact_heading: Tu voudrais nous dire quoi?
     shared:
       new:
-        back_to_hp:
-        city_placeholder:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': adresse électronique (facultatif)
@@ -418,12 +418,10 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
-        city_placeholder:
-        back_to_hp:
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -664,12 +662,12 @@ fr:
       <a href="/fr/refugees/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
-      fallback:
+      fallback: 
       fallback_clarification:
-        code1:
-        code2:
-        code3:
-        code4:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: J'utlise ma localisation!
       waiting: Recherche localisation...... éventuellement, tu dois en premier lieu l'autoriser.
     lang_list_toggle:
@@ -758,10 +756,10 @@ fr:
         other: "%{count} services sur place"
         zero: malheureusement pas de service
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         one: |2-
 
@@ -774,10 +772,10 @@ fr:
         other: "%{count} Assistances téléphoniques ou services en ligne"
         zero: pas d'assistance téléphonique ni de service en ligne
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Montre les services locaux
     shared:
       current_and_original_locale:
@@ -911,15 +909,15 @@ fr:
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
         legal_title: On clarat, legal text can only be read in German
-        title:
+        title: 
       navigation:
         category_headline: ou recherches par catégories
         claim:
@@ -932,7 +930,7 @@ fr:
           ar: عربي
           de: Deutsch
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -950,11 +948,11 @@ fr:
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -990,7 +988,7 @@ fr:
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
             relatives: pour les connaissances ou la parenté
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: émission de cartes des résultats de recherches
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
@@ -1055,8 +1053,8 @@ fr:
         obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
         phone: 'Téléphone:'
         prof_dr: Prof. Dr
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Un service de:'
       who_section:
@@ -1126,13 +1124,13 @@ fr:
       tine: C'est une éducatrice sociale. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Cela signifie qu’elle sait écrire de belles histoires. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Survive It de Ghostpoet.
       title: À propos de nous
       verena: Elle fait des études de genre. Ça signifie qu’elle sait beaucoup de choses sur les différents sexes et sur notre société. Elle sait bien s'organiser. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Lose It de Oh Wonder.
-      ann-sophie:
-      damjan:
-      fabian:
-      magdalena:
-      marie:
-      omar:
-      patrick:
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1189,11 +1187,11 @@ fr:
 '
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       meta_description:
-        family:
-        refugees:
+        family: 
+        refugees: 
       meta_title:
-        family:
-        refugees:
+        family: 
+        refugees: 
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés
@@ -1207,12 +1205,6 @@ fr:
       why:
         heading: Clarat, pourquoi ça existe?
         text: Avec clarat on peut facilement trouver de l’aide. En Allemagne, il y a beaucoup d'offres d'aide pour les enfants, les ados et les familles. Aussi pour les réfugiés. Mais ils ne sont pas toujours faciles à trouver. Nous allons t’aider.  S’il est question de sujets ayant trait à la famille, va sur clarat family. S’il est question de sujets ayant trait aux réfugiés, va sur clarat refugees.
-      meta_description:
-        family:
-        refugees:
-      meta_title:
-        family:
-        refugees:
     impressum:
       heading: Impressum
       notice: clarat est un moteur de recherche. clarat te dit où tu peux trouver de l'aide. Par exemple, où tu peux trouver un expert capable de t'aider à résoudre ton problème. clarat peut seulement t'aider à effectuer ta recherche.
@@ -1291,11 +1283,9 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description:
-      meta_title:
+      meta_description: 
+      meta_title: 
       title: Choisis ton monde clarat
-      meta_description:
-      meta_title:
     shared:
       address:
         email: "%{mailto}\n"
@@ -1329,8 +1319,8 @@ fr:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: utilisateur
-    dankeschoen:
-    danke:
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ
@@ -1366,4 +1356,4 @@ fr:
   offer:
     stamp:
       target_audience:
-        refugees_adolescents:
+        refugees_adolescents: 

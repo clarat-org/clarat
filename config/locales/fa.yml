@@ -380,8 +380,8 @@ fa:
       contact_heading: جه جیزی را می خواهی با ما در میان بگذاری؟
     shared:
       new:
-        back_to_hp:
-        city_placeholder:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': آدرس ایمیل اختیاری
@@ -390,12 +390,10 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-        city_placeholder:
-        back_to_hp:
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -632,12 +630,12 @@ fa:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: موقعیت جغرافیایی شما را نتوانستیم پیدا کنیم.لطفا آن را تایپ کنید
-      fallback:
+      fallback: 
       fallback_clarification:
-        code1:
-        code2:
-        code3:
-        code4:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: از موقعیت جغرافیایی من استفاده کن!
       waiting: جستجوی موقعیت جغرافیایی...در صورت امکان باید ابتدا اجازه آن را بدهی
     lang_list_toggle:
@@ -897,15 +895,15 @@ fa:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
         legal_title: On clarat, legal text can only be read in German
-        title:
+        title: 
       navigation:
         category_headline: یا بدنبال طبقه بندی ها
         claim:
@@ -918,7 +916,7 @@ fa:
           ar: عربي
           de: آلمانی
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -936,11 +934,11 @@ fa:
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -976,7 +974,7 @@ fa:
             parents: برای والدین
             pregnant_woman: برای زنان باردار
             relatives: برای آشنایان و فامیل
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1041,8 +1039,8 @@ fa:
         obfuscated_email: این ایمیل آدرس بمنظور حفاظت از Spam توسط  JavaScript قفل می باشد.لطفا JavaScript را فعال کرده تا بتوان آن را باز کرد و خواند.
         phone: 'تلفن:'
         prof_dr: پروفسور
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'یک پیشنهاد از:'
       who_section:
@@ -1118,13 +1116,13 @@ fa:
       tine: او کارشناس تعلیم و تربیت اجتماعی است.او می تواند به خوبی به آدمها گوش دهد.او همچنین نویسنده است و این بدین معنی است که او می تواند به خوبی داستانهای زیبایی را بنویسد.در clarat در تیم تحقیقات فعالیت دارد و کارشناس تیم زبان ما می باشد.موسیقی مورد علاقه او Survive It از Ghostpoet.
       title: در مورد ما
       verena: او کارشناس مسائل سیاسی است.این بدین معنی است که او اطلاعات زیادی در مورد سیاست و اجتماع دارد.او به خوبی می تواند اطلاعات جمع آوری کند.در clarat در تیم تحقیقات و فرهنگ لغت فعالیت دارد.موسیقی مورد علاقه او Lose It از Oh Wonder می باشد.
-      ann-sophie:
-      damjan:
-      fabian:
-      magdalena:
-      marie:
-      omar:
-      patrick:
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: اطلاعات قانونی
       text_html: |-
@@ -1141,11 +1139,11 @@ fa:
         heading: clarat چگونه عمل می کند؟
         text: مشکل و همچنین کمک درخواستی خود را وارد کنید و یا اینکه از موضوعات ما انتخاب کنید.بعد از آن تمام پیشنهاد های حمایتی در نزدیکی محل سکونت خود را می بینی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه تو آیا تلفن یا ایمیل بزنی و یا اینکه حضوری مراجعه کنی.
       meta_description:
-        family:
-        refugees:
+        family: 
+        refugees: 
       meta_title:
-        family:
-        refugees:
+        family: 
+        refugees: 
       title:
         family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
         refugees: پیشنهاد های حمایتی برای پناهندگان
@@ -1157,12 +1155,6 @@ fa:
         text: |-
           با clarat پیدا کردن کمک آسانتر می شود.در آلمان پیشنهاد های زیادی وجود دارند که از بچه ها ٬جوانان و خانواده ها حمایت می کنند.و همچنین پیشنهاد های زیادی برای پناهندگان.اغلب ولی پیدا کردن آنها سخت می باشد.اگر موضوع خانواده باشد در clarat family و  اگر موضوع پناهندگی در  clarat
           refugees جستجو کن.
-      meta_description:
-        family:
-        refugees:
-      meta_title:
-        family:
-        refugees:
     impressum:
       heading: اطلاعات کلی شرکت
       notice: clarat  ماشین جستجو است.clarat به تو می گوید کجا کمک دریافت می کنی.بطور مثال کجا کارشناسانی را پیدا میکنی٬ اگر مشکلی داری به تو کمک کنند.clarat تو را فقط در جستجوی کمک یاری می کند.
@@ -1178,7 +1170,7 @@ fa:
         heading: حقوق اعتراض و مسئول مربوطه
         nested_text_first_paragraph: اگر به طرز استفاده و خدمات آنالیز وب از Optimizely اعترض دارید٬می تونید لینک %{optimizely_optout} را دنبال کنید.
         nested_text_second_paragraph: سوالات خود در مورد حفاظت از اطلاعات٬اعتراض داشتن٬راهنمایی جهت حذف٬شکایت و غیره را به ما اعلام کنید.
-        text:
+        text: 
       chapter_five:
         heading: افزایه های شبکه اجتماعی
         nested_text_four: ما همچنین در وبسایت خود فضایی برای فعال کردن اطلاعات از طریق  شرکت WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) دایر کرده ایی که از این طریق می توانید دیگران را از این راه ارتباطی از اطلاعات وبسایت ما آگاه کنید و عملکرد آن از طریق لینک قانونی (HTML-Hyperlink) انجام می شود و فقط با موافقت و فعال کردن شخص شما اطلاعاتی که شما با دیگران به اشتراک گذاشته اید در WhatsApp ذخیره میشوند.
@@ -1230,11 +1222,9 @@ fa:
       intro_second_part: در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید.
       title: حفاظت از اطلاعات
     section_choice:
-      meta_description:
-      meta_title:
+      meta_description: 
+      meta_title: 
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
-      meta_description:
-      meta_title:
     shared:
       address:
         email: "%{mailto}"
@@ -1268,8 +1258,8 @@ fa:
     unsubscribe: بدون شرح
     update_requests: update_requests
     users: کاربر
-    dankeschoen:
-    danke:
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

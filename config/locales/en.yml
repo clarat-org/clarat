@@ -375,7 +375,7 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
-        back_to_hp:
+        back_to_hp: 
         city_placeholder: place of residence (optional)
         email_placeholder:
           required:
@@ -385,12 +385,10 @@ en:
         name_placeholder: Name (obligatory)
         send: Send
         send_us_a_message: Write us a message
-        city_placeholder: place of residence (optional)
-        back_to_hp:
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -634,12 +632,12 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
-      fallback:
+      fallback: 
       fallback_clarification:
-        code1:
-        code2:
-        code3:
-        code4:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
@@ -729,10 +727,10 @@ en:
         other: "%{count} local offers"
         zero: No local offers found
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         one: Online and telephone (%{count})
         other: Online and telephone (%{count})
@@ -741,10 +739,10 @@ en:
         other: "%{count} remote offers"
         zero: No remote offers
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Show local offers
     shared:
       current_and_original_locale:
@@ -884,13 +882,13 @@ en:
           to you once as soon as that is the case.
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
         legal_title: On clarat, legal text can only be read in German.
         title: |-
           Automated translations!
@@ -908,7 +906,7 @@ en:
           ar: عربي
           de: Deutsch
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -926,11 +924,11 @@ en:
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -966,7 +964,7 @@ en:
             parents: for parents
             pregnant_woman: for pregnant women
             relatives: for friends and family
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1037,8 +1035,8 @@ en:
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'This is a support service provided by:'
       who_section:
@@ -1201,13 +1199,13 @@ en:
         “Survive It” by Ghostpoet.
       title: About us
       verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
-      ann-sophie:
-      damjan:
-      fabian:
-      magdalena:
-      marie:
-      omar:
-      patrick:
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1262,11 +1260,11 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
-        family:
-        refugees:
+        family: 
+        refugees: 
       meta_title:
-        family:
-        refugees:
+        family: 
+        refugees: 
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees
@@ -1280,12 +1278,6 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
-      meta_description:
-        family:
-        refugees:
-      meta_title:
-        family:
-        refugees:
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1366,12 +1358,9 @@ en:
       heading: Datenschutzhinweise
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
-      title: Datenschutz
-      meta_description:
-      meta_title:
       title: Please choose your clarat-section
-      meta_description:
-      meta_title:
+      meta_description: 
+      meta_title: 
     shared:
       address:
         email: "%{mailto}\n"
@@ -1405,8 +1394,8 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
-    dankeschoen:
-    danke:
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1448,4 +1437,4 @@ en:
   offer:
     stamp:
       target_audience:
-        refugees_adolescents:
+        refugees_adolescents: 

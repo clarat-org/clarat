@@ -432,8 +432,8 @@ ru:
       contact_heading: Чем ты хочешь с нами поделиться?
     shared:
       new:
-        back_to_hp:
-        city_placeholder:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': E-Mail адрес (обязательно)
@@ -442,12 +442,10 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
-        city_placeholder:
-        back_to_hp:
     success:
-      success:
+      success: 
     danke:
-      success:
+      success: 
   emails:
     offers_index:
       family:
@@ -691,12 +689,12 @@ ru:
       <a href="/ru/refugees/Правила-конфиденциальности">Далее</a>.
     geolocation:
       error: Местонахождение не найдено. Пожалуйста введи сам.
-      fallback:
+      fallback: 
       fallback_clarification:
-        code1:
-        code2:
-        code3:
-        code4:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Использовать мое местонахождения!
       waiting: Искать местонахождения... Возможно тебе нужно сначала это разрешить.
     lang_list_toggle:
@@ -788,10 +786,10 @@ ru:
         other: "%{count} Предложения на месте"
         zero: К сожалению, нет предложений
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         few: Интернет и телефон (%{count})
         many: Интернет и телефон (%{count})
@@ -803,10 +801,10 @@ ru:
         other: "%{count} Предложения по телефону и он-лайн"
         zero: Нет предложений по телефону или он-лайн
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Показать предложения на месте
     shared:
       current_and_original_locale:
@@ -943,15 +941,15 @@ ru:
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
         languages:
-          ar:
-          de:
-          en:
-          fr:
-          pl:
-          ru:
-          tr:
+          ar: 
+          de: 
+          en: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
         legal_title: On clarat, legal text can only be read in German
-        title:
+        title: 
       navigation:
         category_headline: Или поиск по категориям
         claim:
@@ -968,7 +966,7 @@ ru:
           ar: عربي
           de: Deutsch
           en: English
-          fa:
+          fa: 
           fr: Français
           pl: Polski
           ru: Русский
@@ -986,11 +984,11 @@ ru:
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
         meta_description:
-          family:
-          refugees:
+          family: 
+          refugees: 
         meta_title:
-          family:
-          refugees:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1028,7 +1026,7 @@ ru:
             parents: для родителей
             pregnant_woman: для беременных
             relatives: для знакомых и родственников
-            family_acquaintances:
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
       noscript_warning: |
@@ -1100,8 +1098,8 @@ ru:
           JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
         phone: 'Телефон: '
         prof_dr: Профессор доктор
-        NicoleTest:
-        PeterFriesen:
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Предложения от:'
       who_section:
@@ -1173,13 +1171,13 @@ ru:
       tine: Она - социальный педагог. Она умеет выслушивать людей. Кроме того, она - писатель. Это значит, что она хорошо владеет языком и пишет хорошие истории. В clarat она работает в исследовательской команде. Её любимая песня Survive от Ghostpoet.
       title: Über Uns
       verena: Оан изучала гендерные исследования. Это значит, что она много знает о разных гендерах и о нашем обществе. Она хорошо организовывает. В clarat она работает в исследовательской команде . Её любимая песня - Metropolis отNeonschwarz.
-      ann-sophie:
-      damjan:
-      fabian:
-      magdalena:
-      marie:
-      omar:
-      patrick:
+      ann-sophie: 
+      damjan: 
+      fabian: 
+      magdalena: 
+      marie: 
+      omar: 
+      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1234,11 +1232,11 @@ ru:
         heading: Kак работает clarat?
         text: Напиши, в чем именно у тебя проблемы. Или что тебя волнует. Либо выбери из предложенных тем. Ты сразу же найдешь рядом с тобой по близости все возможные варианты помощи и поддержки. Мы так же расскажем тебе, как ты можешь получить эту помощь. Позвони, напиши email или просто приходи.
       meta_description:
-        family:
-        refugees:
+        family: 
+        refugees: 
       meta_title:
-        family:
-        refugees:
+        family: 
+        refugees: 
       title:
         family: Предложения помощи для детей, молодежи и семей
         refugees: Предложения помощи для беженцев
@@ -1248,12 +1246,6 @@ ru:
       why:
         heading: Для чего существует clarat?
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
-      meta_description:
-        family:
-        refugees:
-      meta_title:
-        family:
-        refugees:
     impressum:
       heading: Impressum
       notice: clarat — это поисковик. clarat скажет вам, где вы можете получить помощь. Например, где вы найдете специалистов, которые помогут с вашей проблемой. clarat также может помочь вам в ваших поисках.
@@ -1332,11 +1324,9 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description:
-      meta_title:
+      meta_description: 
+      meta_title: 
       title: Пожалуйста,  выберите ваш мир clarat
-      meta_description:
-      meta_title:
     shared:
       address:
         email: "%{mailto}\n"
@@ -1370,8 +1360,8 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
-    dankeschoen:
-    danke:
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

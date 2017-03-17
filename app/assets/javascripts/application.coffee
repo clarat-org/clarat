@@ -58,6 +58,8 @@ about supported directives.
 # = require active_script/presenter
 # = require active_script/model
 #
+# = require category_links_to_search/presenter
+#
 # = require search/setup
 # = require search/model
 # = require search/persister
@@ -81,6 +83,8 @@ about supported directives.
 # = require location/operations/request_geolocation_for_string
 # = require location/operations/turn_input_into_my_location_display
 # = require location/operations/save_to_cookie
+#
+# = require places_autocomplete/presenter
 #
 # = require sticky_sidebar/presenter
 #

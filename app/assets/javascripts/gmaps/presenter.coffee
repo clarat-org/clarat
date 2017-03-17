@@ -36,6 +36,20 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     '.JS-trigger-marker':
       mouseover: 'handleResultMouseOver'
       mouseout: 'handleResultMouseOut'
+    
+  # Check if cookie had was saved to use "my location" and if so, use it again.
+  onLoad: ->
+    @startGarbageCollection()
+    if @searchLocationInput.val() is I18n.t('conf.current_location')
+      # Turn input into display field because we don't just want the string
+      # "My Location" in there in plain text
+      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
+        @currentLocation
+      )
+
+      # Act as if user requested their current geolocation, since they likely
+      # still give us permission to use it
+      @handleRequestGeolocation()
 
   # Expand map to include all currently contained markers
   handleMapResize: =>
@@ -116,89 +130,3 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     marker.setIcon(
       Clarat.GMaps.Operation.ConstructMap.markerUrl(state)
     )
-
-
-
-### ---------------- cut here ---------------- ###
-
-
-### TODO: ALSO NEEDS REFACTORING: (deprecated as is) ###
-
-Clarat.GMaps.PlacesAutocomplete =
-    initialize: ->
-      location_input = document.getElementById('search_form_search_location')
-      if location_input
-        # autocomplete settings
-        opts =
-          bounds: new google.maps.LatLngBounds(
-            new google.maps.LatLng(53, 14),
-            new google.maps.LatLng(52, 12.5)
-          )
-          types: ['geocode']
-          language: 'de'
-          componentRestrictions:
-            country: 'de'
-
-        # instantiate autocomplete field
-        Clarat.GMaps.PlacesAutocomplete.instance =
-          new google.maps.places.Autocomplete location_input, opts
-
-        # register event listener that pushes to GA when field is changed
-        google.maps.event.addListener(
-          Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed', ->
-            $(document).trigger 'Clarat::GMaps::placesAutocompleteTriggered'
-        )
-
-        # Hack to not immediately submit when user tries to select a location by
-        # pressing enter on the input field.
-        # See http://stackoverflow.com/a/12275591/784889
-        $('#search_form_search_location').keydown (e) ->
-          return false if (e.which == 13 && $('.pac-container:visible').length)
-
-        # When place_changed is fired, also fire the event on the form element,
-        # so other scripts can hook into that
-        google.maps.event.addListener(
-          Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed',
-          -> $('#search_form_search_location').trigger 'place_changed'
-        )
-
-        # If category links exist: event listener on input change to update them
-        if $('.nav-sections__list').length
-          $('#search_form_search_location').on(
-            'input', Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks)
-          $('#search_form_generated_geolocation').on(
-            'input', Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks)
-          google.maps.event.addListener(
-            Clarat.GMaps.PlacesAutocomplete.instance, 'place_changed',
-            Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks
-          )
-
-          Clarat.GMaps.PlacesAutocomplete.updateCategoryLinksPeriodically()
-
-
-    ### Start Page needs category links updated from autocomplete changes ###
-
-    updateCategoryLinksPeriodically: ->
-      # in 1 sec interval to catch other changes
-      categoryUpdateInterval =
-        setInterval Clarat.GMaps.PlacesAutocomplete.updateCategoryLinks, 1000
-      $(document).on 'page:before-change', ->
-        clearInterval categoryUpdateInterval
-
-    updateCategoryLinks: ->
-      search_location = $('#search_form_search_location').val()
-      generated_geolocation = $('#search_form_generated_geolocation').val()
-
-      for link in $('.nav-sections__listitem a')
-        originalHref = link.href
-        [originalBase, originalParams] = originalHref.split '?'
-        $.query.spaces = true
-        changedHref =
-          $.query.parseNew originalParams
-            .set 'search_form[search_location]', search_location
-            .set 'search_form[generated_geolocation]', generated_geolocation
-            .toString()
-            .replace /%2B/g, '%20'
-            # ^ fix $.query tendency to convert space to plus
-
-        link.href = originalBase + changedHref

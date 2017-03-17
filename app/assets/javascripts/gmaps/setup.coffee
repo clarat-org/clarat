@@ -10,7 +10,7 @@ Clarat.GMaps =
     Clarat.GMaps.loaded = true
 
     # init PlacesAutocomplete on every page
-    Clarat.GMaps.PlacesAutocomplete.initialize()
+    # Clarat.GMaps.PlacesAutocomplete.initialize()
 
     # init map if there is a canvas
     if document.getElementById('map-canvas')

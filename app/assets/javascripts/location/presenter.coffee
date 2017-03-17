@@ -16,7 +16,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
     '.JS-Geolocation__display':
-      place_changed: 'handlePlaceChanged'
       focus: 'handleFocussedLocationInput'
       blur: 'handleBlurredLocationInput'
     '.JS-Geolocation__prompt':
@@ -26,6 +25,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     '#new_search_form':
       submit: 'handleFormSubmit'
     document:
+      'Clarat.PlacesAutocomplete::placesAutocompleteTriggered': 'handlePlaceChanged'
       'Clarat.Location::RequestGeolocation': 'handleRequestGeolocation'
 
 
@@ -69,7 +69,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
         I18n.t('conf.current_location'), I18n.t('js.geolocation.fallback')
       ]
       unless static_location_values.includes @searchLocationInput.val()
-        @render_prompt 'location_by_browser_prompt', I18n.t('js.geolocation.get')
+        @renderPrompt 'location_by_browser_prompt', I18n.t('js.geolocation.get')
 
   # Geolocation Display Input left
   handleBlurredLocationInput: (event) =>
@@ -81,7 +81,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @promptIsInUse = true
 
     # Inform user that the request is now pending
-    @render_prompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
+    @renderPrompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
 
     # Request Geolocation from browser
     if navigator.geolocation
@@ -107,7 +107,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     clearTimeout @geolocationTimeout
 
     # Inform user that we chose a fallback
-    @render_prompt(
+    @renderPrompt(
       'location_by_browser_fallback',
       I18n.t "js.geolocation.fallback_clarification.code#{error.code}"
     )
@@ -165,7 +165,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     Clarat.Location.Operation.SaveToCookie.run(locationObject)
     $(document).trigger 'Clarat.Location::NewLocation', @currentLocation
 
-  render_prompt: (template_name, content) =>
+  renderPrompt: (template_name, content) =>
     if $('.JS-Geolocation__prompt').length
       selector = 'prompt'
       method = 'replaceWith'

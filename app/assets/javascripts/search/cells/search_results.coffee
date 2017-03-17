@@ -6,6 +6,7 @@
 class Clarat.Search.Cell.SearchResults
   constructor: (@resultSet, @model) ->
     viewObjectFocus = if @model.isPersonal()
+                        console.log(@model)
                         @personalFocusViewObject
                       else
                         @remoteFocusViewObject

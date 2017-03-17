@@ -9,6 +9,7 @@ class Clarat.Search.Query.Base
       @sort_order = 'nearby') ->
       # Algolia seems to want this string in an array
       @categoryArray = if @category then [@category] else []
+      console.log (@categoryArray)
 
   query_hash: ->
     _.merge @page_query(),

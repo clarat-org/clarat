@@ -5,7 +5,7 @@ class Clarat.CategoryLinksToSearch.Presenter extends ActiveScript.Presenter
 
   # TO DO: Fix, not working yet.
   CALLBACKS:
-    'button.test':
+    'button':
       click: 'setHiddenFieldAndSubmit'
 
   setHiddenFieldAndSubmit: (event) =>

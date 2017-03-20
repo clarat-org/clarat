@@ -51,8 +51,6 @@ class Clarat.PlacesAutocomplete.Presenter extends ActiveScript.Presenter
     $(document).trigger(
       'Clarat::PlacesAutocomplete::placesAutocompleteTriggered'
     )
-    if $('.nav-sections__list').length
-      @updateCategoryLinks()
 
   # Prompt clicked: Find out browser's geolocation
   # handleRequestGeolocation: (event) =>

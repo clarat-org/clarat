@@ -35,14 +35,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     if @searchLocationInput.val() is I18n.t('conf.current_location')
       # Turn input into display field because we don't just want the string
       # "My Location" in there in plain text
-      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
-        @currentLocation
-      )
+      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run()
 
       # Act as if user requested their current geolocation, since they likely
       # still give us permission to use it
-      @handleRequestGeolocation()
-
 
   ## Simple place change by input or Google Places Autocomplete selection
 
@@ -53,9 +49,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     )
 
   initMyLocationDisplay: (location) =>
-    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
-      location
-    )
+    Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run()
 
   ## Place Change by querying browser location
 
@@ -82,7 +76,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
     # Inform user that the request is now pending
     @renderPrompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
-
     # Request Geolocation from browser
     if navigator.geolocation
       # Timeout because the default timeout doesn't work in all browsers
@@ -93,6 +86,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
         @handleBrowserGeolocationRequestSuccess,
         @handleBrowserGeolocationRequestError
       )
+
     else
       # Fallback for no geolocation
       @handleBrowserGeolocationRequestError(code: 4)
@@ -149,7 +143,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
       $('#search_form_search_location').blur() # always loose focus
       $(document).trigger 'Clarat.Location::RequestGeolocation'
       @stopEvent event
-
 
   ### PRIVATE METHODS (ue) ###
 

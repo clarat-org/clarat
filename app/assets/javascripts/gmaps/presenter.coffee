@@ -43,9 +43,7 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     if @searchLocationInput.val() is I18n.t('conf.current_location')
       # Turn input into display field because we don't just want the string
       # "My Location" in there in plain text
-      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run(
-        @currentLocation
-      )
+      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run()
 
       # Act as if user requested their current geolocation, since they likely
       # still give us permission to use it

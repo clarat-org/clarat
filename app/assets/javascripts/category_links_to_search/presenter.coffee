@@ -11,10 +11,9 @@ class Clarat.CategoryLinksToSearch.Presenter extends ActiveScript.Presenter
   setHiddenFieldAndSubmit: (event) =>
     # ... Setting hidden field ...
     category =event.target.dataset['category']
-    #alert(category)
-    console.log(category)
     $('input[name="search_form[category]"]').val(category)
     $('#new_search_form').submit();
+    $( document.body ).scrollTop( 0 );
 
 $(document).ready ->
   Clarat.CategoryLinksToSearch.presenter = new Clarat.CategoryLinksToSearch.Presenter

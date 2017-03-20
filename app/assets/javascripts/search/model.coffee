@@ -6,7 +6,6 @@ class Clarat.Search.Model extends ActiveScript.Model
   # equivalent of a regular #save. We create a connection, then send the data
 
   getMainSearchResults: ->
-    console.log(@personalAndRemoteQueries)
     @client().search @personalAndRemoteQueries()
 
   getLocationSupportResults: ->

@@ -26,11 +26,9 @@
           ul.nav-sections__list
             - Category.mains.in_section(current_section).each do |main|
               li.nav-sections__listitem(
-                class="nav-sections__listitem--#{main.icon} JS-Geolocation__display"
+                class="nav-sections__listitem--#{main.icon}"
               )
-                - puts "<<<<<<<<<<<<<<< #{search_form.generated_geolocation}"
                 button.test data-category=main.name
-                  - puts "<<<<<<<<<<<<<<< #{main.inspect}"
                   = main.name
 
 // javascript:

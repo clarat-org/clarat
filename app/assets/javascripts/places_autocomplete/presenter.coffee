@@ -57,7 +57,6 @@ class Clarat.PlacesAutocomplete.Presenter extends ActiveScript.Presenter
   # Prompt clicked: Find out browser's geolocation
   # handleRequestGeolocation: (event) =>
   #   # Prompt was clicked, doesn't need to be timed out anymore
-  #   console.log("GET hERE")
   #   @promptIsInUse = true
 
   #   # Inform user that the request is now pending

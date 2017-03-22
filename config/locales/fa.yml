@@ -390,6 +390,10 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -929,6 +933,12 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -964,6 +974,7 @@ fa:
             parents: برای والدین
             pregnant_woman: برای زنان باردار
             relatives: برای آشنایان و فامیل
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1028,6 +1039,8 @@ fa:
         obfuscated_email: این ایمیل آدرس بمنظور حفاظت از Spam توسط  JavaScript قفل می باشد.لطفا JavaScript را فعال کرده تا بتوان آن را باز کرد و خواند.
         phone: 'تلفن:'
         prof_dr: پروفسور
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'یک پیشنهاد از:'
       who_section:
@@ -1245,6 +1258,8 @@ fa:
     unsubscribe: بدون شرح
     update_requests: update_requests
     users: کاربر
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

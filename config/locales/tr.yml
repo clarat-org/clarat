@@ -344,6 +344,10 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -871,6 +875,12 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -906,6 +916,7 @@ tr:
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
             relatives: Tanıdık ve akrabalar için
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |
@@ -976,6 +987,8 @@ tr:
           şifrelenmiştir. Okumak için JavaScript aktifleştir.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'bir ... hizmetidir:'
       who_section:
@@ -1243,6 +1256,8 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

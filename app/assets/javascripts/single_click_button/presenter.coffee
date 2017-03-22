@@ -12,15 +12,16 @@ class Clarat.SingleClickButton.Presenter extends ActiveScript.Presenter
     '.JS-Single-Click-Button':
       click: 'handleClick'
       finished: 'handleFinished' # custom event
+      'Clarat.ContactForm::CreateSuccess': 'handleFinished'
+      'Clarat.ContactForm::Reset': 'handleReset'
 
   handleClick: (event) =>
     $target = $(event.target)
-    if not $target.hasClass('JS-Single-Click-Button') or
-       @buttonStates[event.target.className] is 'clicked'
+    if (@buttonStates[event.target.className] is 'clicked') or
+        $target.hasClass('JS-Single-Click-Button__active')
 
       return @stopEvent event
     else
-
       $target.addClass 'JS-Single-Click-Button__active'
       @buttonStates[event.target.className] = 'clicked'
 
@@ -32,5 +33,13 @@ class Clarat.SingleClickButton.Presenter extends ActiveScript.Presenter
       @render event.target, 'single_click_button_finished',
         originalHTML:
           $(event.target).find('.JS-Single-Click-Button__original').html()
+
+  handleReset: (event) =>
+    @buttonStates[event.target.className] = 'ready'
+    $target = $(event.target)
+    $target.removeClass 'JS-Single-Click-Button__active'
+    $sent = $target.find('.JS-Single-Click-Button__original').html()
+    $(event.target).html($sent)
+
 
 new Clarat.SingleClickButton.Presenter

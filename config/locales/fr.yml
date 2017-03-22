@@ -418,6 +418,10 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -943,6 +947,12 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -978,6 +988,7 @@ fr:
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
             relatives: pour les connaissances ou la parenté
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: émission de cartes des résultats de recherches
       noscript_warning: Nous sommes désolés, mais pour pouvoir utiliser nos recherches, tu dois avoir activé ton Bowser JavaScript.
@@ -1042,6 +1053,8 @@ fr:
         obfuscated_email: Cette adresse électronique est protégée contre les robots collecteurs d'adresses par JavaScript. Active JavaScript pour les lire.
         phone: 'Téléphone:'
         prof_dr: Prof. Dr
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Un service de:'
       who_section:
@@ -1306,6 +1319,8 @@ fr:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: utilisateur
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

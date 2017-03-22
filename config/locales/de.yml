@@ -769,6 +769,10 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -1346,6 +1350,12 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1381,6 +1391,7 @@ de:
             parents: für Eltern
             pregnant_woman: für Schwangere
             relatives: für Bekannte und Verwandte
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1452,6 +1463,8 @@ de:
           verschlüsselt. Bitte aktiviere JavaScript um sie lesen zu können.
         phone: 'Telefon: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Ein Angebot von:'
       who_section:
@@ -1775,6 +1788,8 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    dankeschoen: dankeschoen
+    danke: danke
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

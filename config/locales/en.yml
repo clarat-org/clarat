@@ -385,6 +385,10 @@ en:
         name_placeholder: Name (obligatory)
         send: Send
         send_us_a_message: Write us a message
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -919,6 +923,12 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -954,6 +964,7 @@ en:
             parents: for parents
             pregnant_woman: for pregnant women
             relatives: for friends and family
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1024,6 +1035,8 @@ en:
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'This is a support service provided by:'
       who_section:
@@ -1345,10 +1358,6 @@ en:
       heading: Datenschutzhinweise
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
-      title: Datenschutz
-    section_choice:
-      meta_description: 
-      meta_title: 
       title: Please choose your clarat-section
     shared:
       address:
@@ -1383,6 +1392,8 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Please fill out this field

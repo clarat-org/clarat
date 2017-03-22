@@ -460,6 +460,10 @@ pl:
         name_placeholder: Imię (Pole obowiązkowe)
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -987,6 +991,12 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1024,6 +1034,7 @@ pl:
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
             relatives: dla znajomych i krewnych
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -1090,6 +1101,8 @@ pl:
         obfuscated_email: Ten adres e-mail jest chroniony przez JavaScript dla ochrony przed spamem. Proszę, aktywuj JavaScript, aby móc czytać.
         phone: 'telefon:'
         prof_dr: Prof. Dr
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Oferta od:'
       who_section:
@@ -1354,6 +1367,8 @@ pl:
     unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

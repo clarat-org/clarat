@@ -315,6 +315,10 @@ ar:
         name_placeholder: الإسم (فرض)
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -865,6 +869,12 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -903,6 +913,7 @@ ar:
             parents: للآباء
             pregnant_woman: للحوامل
             relatives: للمعارف والأقارب
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -973,6 +984,8 @@ ar:
           من فضلك ثم بتفعيل جافا سكربت لكي تتمكن من تتمكن من قراءتها
         phone: ":تليفون"
         prof_dr: أ.د.
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: " :.عرض من"
       who_section:
@@ -1235,6 +1248,8 @@ ar:
     unsubscribe: unsubscribe
     update_requests: طلبات-تحديث
     users: مستخدم
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

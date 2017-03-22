@@ -442,6 +442,10 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
+    success:
+      success: 
+    danke:
+      success: 
   emails:
     offers_index:
       family:
@@ -979,6 +983,12 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+        meta_description:
+          family: 
+          refugees: 
+        meta_title:
+          family: 
+          refugees: 
   offers:
     index:
       filters:
@@ -1016,6 +1026,7 @@ ru:
             parents: для родителей
             pregnant_woman: для беременных
             relatives: для знакомых и родственников
+            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
       noscript_warning: |
@@ -1087,6 +1098,8 @@ ru:
           JavaScript. Пожалуйста активируй JavaScript чтобы его прочитать.
         phone: 'Телефон: '
         prof_dr: Профессор доктор
+        NicoleTest: 
+        PeterFriesen: 
       who_location:
         organizations: 'Предложения от:'
       who_section:
@@ -1347,6 +1360,8 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
+    dankeschoen: 
+    danke: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

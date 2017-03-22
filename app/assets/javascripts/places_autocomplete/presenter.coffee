@@ -52,27 +52,5 @@ class Clarat.PlacesAutocomplete.Presenter extends ActiveScript.Presenter
       'Clarat::PlacesAutocomplete::placesAutocompleteTriggered'
     )
 
-  # Prompt clicked: Find out browser's geolocation
-  # handleRequestGeolocation: (event) =>
-  #   # Prompt was clicked, doesn't need to be timed out anymore
-  #   @promptIsInUse = true
-
-  #   # Inform user that the request is now pending
-  #   @render_prompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
-
-  #   # Request Geolocation from browser
-  #   if navigator.geolocation
-  #     # Timeout because the default timeout doesn't work in all browsers
-  #     @geolocationTimeout =
-  #       setTimeout(@handleBrowserGeolocationRequestError, 10000)
-
-  #     navigator.geolocation.getCurrentPosition(
-  #       @handleBrowserGeolocationRequestSuccess,
-  #       @handleBrowserGeolocationRequestError
-  #     )
-  #   else
-  #     # Fallback for no geolocation
-  #     @handleBrowserGeolocationRequestError(code: 4)
-
 $(document).ready ->
   Clarat.PlacesAutocomplete.presenter = new Clarat.PlacesAutocomplete.Presenter

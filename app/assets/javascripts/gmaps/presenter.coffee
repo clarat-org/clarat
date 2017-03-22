@@ -37,18 +37,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
       mouseover: 'handleResultMouseOver'
       mouseout: 'handleResultMouseOut'
     
-  # Check if cookie had was saved to use "my location" and if so, use it again.
-  onLoad: ->
-    @startGarbageCollection()
-    if @searchLocationInput.val() is I18n.t('conf.current_location')
-      # Turn input into display field because we don't just want the string
-      # "My Location" in there in plain text
-      Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run()
-
-      # Act as if user requested their current geolocation, since they likely
-      # still give us permission to use it
-      @handleRequestGeolocation()
-
   # Expand map to include all currently contained markers
   handleMapResize: =>
     google.maps.event.trigger @currentMap.instance, 'resize'

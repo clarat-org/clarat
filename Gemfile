@@ -12,7 +12,7 @@ gem 'clarat_base', github: 'clarat-org/clarat_base'
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.12'
+gem 'rails', '~> 4.2'
 
 # Translations
 gem 'rails-i18n'

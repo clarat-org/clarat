@@ -375,6 +375,8 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: place of residence (optional)
         email_placeholder:
           required:
             'false': Email address (optional)
@@ -524,6 +526,7 @@ en:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -537,7 +540,9 @@ en:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -564,6 +569,7 @@ en:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -587,6 +593,7 @@ en:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -743,6 +750,7 @@ en:
         '326': Ukrainian - українська
         '568': Dutch - Nederlands
         '639': Dari - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abkhaz - аҧсуа бызшәа
         amh: Amharic - አማርኛ
         ara: Arabic - عربي
@@ -756,7 +764,9 @@ en:
         bos: Bosnian - bosanski
         bul: Bulgarian - български
         cau: Abaza - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Czech - čeština
         deu: German - Deutsch
         dyu: Jula - Julakan
@@ -783,6 +793,7 @@ en:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Macedonian - македонски
+        msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
         pol: Polish - polski
@@ -806,6 +817,7 @@ en:
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tgl: Tagalog language - Tagálog
         tha: Thai - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
@@ -932,7 +944,6 @@ en:
             girls_only: girls and women only
           target_audience:
             children: for children and teenagers
-            family_acquaintances: 
             family_children: for children and teenagers
             family_nuclear_family: for families
             family_parents: for parents
@@ -1242,6 +1253,12 @@ en:
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees
@@ -1337,10 +1354,8 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: Please choose your clarat-section
     shared:
       address:

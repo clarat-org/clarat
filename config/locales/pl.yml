@@ -450,6 +450,8 @@ pl:
       contact_heading: Czym chcesz się z nami podzielić?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': Adres e-mail (Opcjonalnie)
@@ -605,6 +607,7 @@ pl:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -618,7 +621,9 @@ pl:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -645,6 +650,7 @@ pl:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -668,6 +674,7 @@ pl:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -822,6 +829,7 @@ pl:
         '326': Język ukraiński - українська
         '568': Język niderlandzki - Nederlands
         '639': Język perski (dari) - دری
+        aar: 'Język afar - Qafar-áf '
         abk: Język abchaski - аҧсуа бызшәа
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
@@ -835,7 +843,9 @@ pl:
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
         cau: Język abazyński - абаза бызшва
+        ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
+        cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
         dyu: Język diula - julakan
@@ -862,6 +872,7 @@ pl:
         luo: Język luo - Dholuo
         man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
         pol: Język polski - polski
@@ -885,6 +896,7 @@ pl:
         tgk: Język tadżycki - тоҷикӣ / تاجیکی
         tgl: Język tagalski - Tagálog
         tha: Język tajski - ภาษาไทย
+        tig: Język tigre - ትግሬ
         tir: Język tigrinia - ትግርኛ
         tuk: Język turkmeński - Türkmençe / Tүркменче
         tur: Język turecki - Türkçe
@@ -1002,7 +1014,6 @@ pl:
             girls_only: tylko dla dziewcząt i kobiet
           target_audience:
             children: dla dzieci i młodzieży
-            family_acquaintances: 
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
@@ -1210,6 +1221,12 @@ pl:
       how:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Oferty wsparcia dla dzieci, młodzieży i rodzin
         refugees: Oferty wsparcia dla uchodźców
@@ -1299,10 +1316,8 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: Wybierz swój clarat-świat
     shared:
       address:

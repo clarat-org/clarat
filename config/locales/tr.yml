@@ -334,6 +334,8 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': E-Mail adresi (opsiyonel)
@@ -481,6 +483,7 @@ tr:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
         abk: Abk
         amh: Amh
         ara: Ara
@@ -494,7 +497,9 @@ tr:
         bos: Bos
         bul: Bul
         cau: Cau
+        ckb: Ckb
         cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
         dyu: Dyu
@@ -521,6 +526,7 @@ tr:
         luo: Luo
         man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
         pol: Pol
@@ -544,6 +550,7 @@ tr:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -695,6 +702,7 @@ tr:
         '326': Ukraynaca - українська
         '568': Felemenkçe - Nederlands
         '639': Farsça - دری
+        aar: 'Afar - Qafar-áf '
         abk: Abhazca - аҧсуа бызшәа
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
@@ -708,7 +716,9 @@ tr:
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
         cau: Abazaca - абаза бызшва
+        ckb: Soranice - سۆرانی
         cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
@@ -735,6 +745,7 @@ tr:
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
         pol: Lehçe - polski
@@ -758,6 +769,7 @@ tr:
         tgk: Tacikçe - тоҷикӣ / تاجیکی
         tgl: Tagalogca - Tagálog
         tha: Tayca - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrinya dili - ትግርኛ
         tuk: Türkmence - Türkmençe / Tүркменче
         tur: Türkçe - Türkçe
@@ -884,7 +896,6 @@ tr:
             girls_only: Yalnızca bayanlar için
           target_audience:
             children: Çocuklar ve gençler için
-            family_acquaintances: 
             family_children: Çocuk ve gençler için
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
@@ -1098,6 +1109,12 @@ tr:
       how:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Çocuk, genç ve aileler için destek programları
         refugees: Mülteciler için destek programları
@@ -1188,10 +1205,8 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      family:
-        title: 
-      refugees:
-        title: 
+      meta_description: 
+      meta_title: 
       title: 
     shared:
       address:

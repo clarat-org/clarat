@@ -9,7 +9,6 @@
         h2.Claim__firstrow = t '.claim.main'
 
          .header-main__stage
-      / Optional stage for animations
 
 - if controller_name == 'pages' && action_name == 'home'
 
@@ -28,5 +27,5 @@
               li.nav-sections__listitem(
                 class="nav-sections__listitem--#{main.icon}"
               )
-                button data-category=main.name
+                button.nav-sections__button data-category=main.name
                   = main.name

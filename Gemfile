@@ -138,6 +138,8 @@ gem 'route_translator'
 gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
                         branch: 'adds-custom-storages'
 
+gem 'responders', '~> 2.0'
+
 # Model enhancements
 
 gem 'virtus' # form objects

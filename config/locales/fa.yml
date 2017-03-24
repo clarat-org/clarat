@@ -573,6 +573,7 @@ fa:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -817,6 +818,7 @@ fa:
         msa: زبان مالایی – بهاس ملايو
         mul: بقیه زبانها با توجه به درخواست
         nor: نروژی - Norsk
+        pan: زبان پنجابی - پنجابی / ਪੰਜਾਬੀ
         pol: لهستانی -  polski
         por: پرتغالی - português
         pus: پشتو -  پښتو‎

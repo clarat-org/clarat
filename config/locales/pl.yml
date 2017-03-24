@@ -653,6 +653,7 @@ pl:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -875,6 +876,7 @@ pl:
         msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
+        pan: Język pendżabski - پنجابی / ਪੰਜਾਬੀ
         pol: Język polski - polski
         por: Język portugalski - português
         pus: Język paszto - پښتو‎

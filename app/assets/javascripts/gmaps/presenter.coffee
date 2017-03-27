@@ -36,7 +36,7 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     '.JS-trigger-marker':
       mouseover: 'handleResultMouseOver'
       mouseout: 'handleResultMouseOut'
-    
+
   # Expand map to include all currently contained markers
   handleMapResize: =>
     google.maps.event.trigger @currentMap.instance, 'resize'
@@ -108,9 +108,7 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     if @uiOptions['autoenlarge'] and @uiOptions['autoenlarge'] is true
       @currentMap.instance.setOptions({ draggableCursor: 'pointer' })
 
-
   ### PRIVATE (ue) ###
-
 
   _switchMarkerImage: (marker, state) ->
     marker.setIcon(

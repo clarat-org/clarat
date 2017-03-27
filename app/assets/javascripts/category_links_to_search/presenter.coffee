@@ -17,8 +17,8 @@ class Clarat.CategoryLinksToSearch.Presenter extends ActiveScript.Presenter
       $('<div class="nav-sections__notification"><i class="fa fa-exclamation" aria-hidden="true"></i></div>').insertBefore $(event.target)
 
     $('input[name="search_form[category]"]').val(category)
-    $('#new_search_form').submit();
-    $( document.body ).scrollTop( 0 );
+    $('#new_search_form').submit()
+    $( document.body ).scrollTop( 0 )
 
 $(document).ready ->
   Clarat.CategoryLinksToSearch.presenter = new Clarat.CategoryLinksToSearch.Presenter

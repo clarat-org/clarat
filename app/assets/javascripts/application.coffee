@@ -35,6 +35,7 @@ about supported directives.
 # = require_tree ./location/templates
 # = require_tree ./single_click_button/templates
 # = require_tree ./gmaps/templates
+# = require_tree ./category_links_to_search/templates
 #
 # = require setup
 #

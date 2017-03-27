@@ -132,7 +132,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleChangeToPersonal'
       'Clarat.Search::InitialDisable': 'disableCheckboxes'
 
-
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()

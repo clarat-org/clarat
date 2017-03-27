@@ -11,10 +11,11 @@ class Clarat.CategoryLinksToSearch.Presenter extends ActiveScript.Presenter
     # ... Setting hidden field ...
     category = event.target.dataset['category']
 
-    # Fire this only when location empty
+    # Remove past markers
+    $('.nav-sections__notification').remove()
+
+    # Add alert marker to category when location is empty
     if $('input[name="search_form[search_location]"]').val() is ''
-      # Add alert marker to category
-      $('.nav-sections__notification').remove()
       @render event.target, 'category_alert_marker', {}, method: 'before'
 
     $('input[name="search_form[category]"]').val(category)

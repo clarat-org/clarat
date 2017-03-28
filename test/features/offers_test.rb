@@ -89,15 +89,15 @@ feature 'Offer display' do
     )
   end
 
-  scenario 'Muliple contact persons are shown in the right order' do
+  scenario 'Multiple contact persons are present' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :no_fields, :with_telephone,
+      :contact_person, :all_fields, :with_telephone,
       organization: offer.organizations.first
     )
     visit unscoped_offer_path offer
     page.body.must_match(
-      '030  12 34 56</a><br /></li></ul>'
+      '030  12 34 56'
     )
   end
 
@@ -108,7 +108,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">Weitere Infos (PDF)</a>'
     )
   end
 
@@ -119,7 +119,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 
@@ -131,7 +131,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, host: 'own', url: 'http://www.example2.com/')
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.example2.com/" target="_blank">www.example2.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.example2.com/">www.example2.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 end

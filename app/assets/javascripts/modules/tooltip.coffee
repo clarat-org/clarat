@@ -10,7 +10,6 @@ Clarat.Tooltip =
       my: 'bottom left'
       at: 'top center'
       effect: false
-      viewport: $(document)
       # To make sure the tooltip is always shown above
       # adjust:
       #   method: 'none shift'

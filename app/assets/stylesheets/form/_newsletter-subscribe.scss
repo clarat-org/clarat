@@ -29,7 +29,7 @@ input.newsletter-subscribe__input {
   margin-right: 4px;
   padding: 0 10px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     border-radius: 0;
   }
 }
@@ -37,7 +37,7 @@ input.newsletter-subscribe__input {
 .newsletter-subscribe__submit {
   padding: 0 15px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     @extend %clarat_rounding_start;
   }
 }

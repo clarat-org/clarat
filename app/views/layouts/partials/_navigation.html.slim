@@ -9,7 +9,6 @@
         h2.Claim__firstrow = t '.claim.main'
 
          .header-main__stage
-      / Optional stage for animations
 
 - if controller_name == 'pages' && action_name == 'home'
 
@@ -20,7 +19,6 @@
                                              current_section: current_section
 
       - cache ['category_navigation', current_section, I18n.locale] do
-
         nav.nav-sections
           h3.nav-sections__headline = t '.category_headline'
 
@@ -29,12 +27,5 @@
               li.nav-sections__listitem(
                 class="nav-sections__listitem--#{main.icon}"
               )
-                = link_to main.name, offers_path( \
-                    'search_form[category]' => main.name,
-                    'search_form[search_location]' => \
-                      search_form.search_location,
-                    'search_form[generated_geolocation]' => \
-                      search_form.generated_geolocation,
-                    'search_form[section]' => \
-                      current_section),
-                    locale: I18n.locale
+                button.nav-sections__button data-category=main.name
+                  = main.name

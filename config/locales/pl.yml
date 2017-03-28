@@ -450,6 +450,7 @@ pl:
       contact_heading: Czym chcesz się z nami podzielić?
     shared:
       new:
+        back_to_hp: 
         city_placeholder: 
         email_placeholder:
           required:
@@ -652,6 +653,7 @@ pl:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -874,6 +876,7 @@ pl:
         msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
+        pan: Język pendżabski - پنجابی / ਪੰਜਾਬੀ
         pol: Język polski - polski
         por: Język portugalski - português
         pus: Język paszto - پښتو‎
@@ -947,14 +950,6 @@ pl:
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
         legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
@@ -974,12 +969,6 @@ pl:
           pl: Polski
           ru: Русский
           tr: Türkçe
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
         section_link:
           desktop:
             family: do clarat refugees
@@ -996,6 +985,7 @@ pl:
     stamp:
       target_audience:
         family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1023,7 +1013,6 @@ pl:
             girls_only: tylko dla dziewcząt i kobiet
           target_audience:
             children: dla dzieci i młodzieży
-            family_acquaintances: 
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
@@ -1092,8 +1081,6 @@ pl:
         heading: O co chodzi?
       who: Kto oferuje tę pomoc?
       who_contact_people:
-        NicoleTest: 
-        PeterFriesen: 
         dr: Dr
         email: 'E-mail:'
         fax: 'fax:'
@@ -1125,6 +1112,7 @@ pl:
       amina: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Szybko orientuje się, co jest ważne. W clarat jest w zespole badawczym. Ona decyduje, co znajdzie się w ofertach claratu. Jej ulubionym utworem jest “La Prima Estate” Erlenda Oye.
       andrea: 'Studiowała Zarządzanie Międzykulturowe. Stąd wie tez niemało o gospodarce czy kulturze. Jest bardzo dokładna w swojej pracy. W clarat jest częścią zespołu badawczego. Andrea zabezpiecza jakość naszej pracy. Jej ulubiony utwór to: “Work Me” The Black Keys.'
       anja: Jest ekologiem i inżynierem. Potrafi szybko i logicznie myśleć. W clarat pracuje w Research-Teamie. Jest gwarancją najwyższej jakości. Jej ulubioną piosenką jest "Where is my mind" grupy Pixies.
+      ann-sophie: 
       anna: Jest filologiem. To znaczy, one wie sporo o językach. Literatura też nie jest jej obca. Potrafi dobrze zrozumieć spokomplikowane zagadnienia. W clarat pracuje w Research-Teamie. Jej ulubioną piosenką jest "1009" grupy Bonobo.
       anne: |-
         Studiowała Gospodarkę i Stosunki Międzynarodowe. Potrafi bardzo szybko logicznie myśleć. W clarat jest szefem.
@@ -1135,9 +1123,11 @@ pl:
       birte: Studiowała pedagogikę. Rozumie się dobrze z dziećmi. Potrafi wczuć się w drugiego człowieka. Pracowała dużo z mediami. W clarat działa w Research-Teamie. Jej ulubionym utworem jest "Borderline" Madonny.
       chrissy: Jest politologiem. To znaczy, że wie wiele ona o polityce i społeczeństwie. Jest dobra w planowaniu i organizacji. W clarat działa w Research-Teamie. Wyszukuje organizcje w internecie. Jej ulubionym utworem jest "Rough Hands" grupy Alexisonfire.
       claudia: Przed claratem pracowała w handlu detalicznym. Wie jak się obchodzić z ludźmi. Potrafi szybko zbierać informacje. W clarat pracuje dla Research-Teamu. Potrafi pomóc naszym użytkownikom. Jej ulubionym utworem jest "Chandelier" Sia.
+      damjan: 
       eleonore: Studiowała muzykę, media i gospodarke. Potrafi szybko zbierać i zrozumieć informacje. W clarat pracuje w Research-Teamie. Troszczy się o to, by użytkownicy łatwo mogli znaleźć clarat w internecie. Jej ulubionym utworem jest "Je Veux" grupy Zaz.
       elisa: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze. Potrafi też łatwo wytłumaczyć skomplikowane rzeczy. W clarat jest w zespole badawczym. Zajmuje się również leksykonem i użytkownikami. Jej ulubiony utwór to “Boat Behind” zespołu Kings of Convenience.
       esther: Studiowała kulturoznawstwo. Zna doskonale historie i politykę. Szybko uczy się nowych rzeczy. W clarat pracuje dla Research-Teamu i troszczy się o leksykon. Jej ulubionym utworem jest "This charming man" zespołu The Smiths.
+      fabian: 
       franziska: Jest ekspertem prawa międzynarodowego.To znaczy, że wie dużo o prawie, które obowiązuje we wszystkich krajach. Potrafi zrozumieć skomplikowane rzeczy i znaleźć szybko rozwiązanie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Explanations” Selah Sue.
       hassan: Pracował jako tłumacz języka perskiego. Jest szybki i dobrze zoorganizowany. W clarat pracuje w zespole tłumaczeniowym i tłumaczy clarat na język perski. Jego ulubionym utworem jest "Looking For The Summer" Chrisa Rea.
       heading: Kto się kryje za claratem?
@@ -1151,12 +1141,8 @@ pl:
       jule: Jest badaczem pokojowego rozwiązywania konfliktów. Wie dużo o konfliktach i wojnach. Potrafi znaleźć rozwiązanie każdego problemu. W clarat jest w zespole badawczym. Zabezpiecza jakość naszej pracy. Jej ulubiony utwór to “Home” Edwarda Sharpe.
       julia: Jest germanistką. To znaczy, że zna się dobrze na tekstach i na języku niemieckim. Potrafi dobrze pisać i łatwo wyjaśniać zagadnienia. W clarat jest w zespole badawczym. Jest też ekspertem językowym claratu. Jej ulubiony utwór to “Reckoner” Radiohead.
       julia_b: Studiowała prace społeczne. Pracowała wiele z dziećmi i młodzieżą. Potrafi dobrze zrozumieć drugiego człowieka. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Nantes" zespołu Beirut.
-      julian: Jest ekonomem społecznym. To znaczy, że wie dużo o gospodarce i społeczeństwie. Zna się też dobrze na komputerach. W clarat jest w zespole badawczym oraz zajmuje się sprawami technicznymi. Jego ulubiony utwór to “All You Need” Sublime.
       juliane: Studiowała administracje biznesową i turystykę. Potrafi dobrze planować. Zawsze znajdzie kreatywne rozwiązanie. W clarat troszczy się o marketing. Jej ulubionym utworem jest "Easy" zespołu The Commodores.
       karo: Studiowała europeistykę. To znaczy, że wie sporo o polityce europejskiej. Potrafi doskonale organizować. W clarat pracuje dla Research-Teamu. Troszczy się o naszą księgowość. Jej ulbionym utworem jest "Alive" zespołu Pearl Jam.
-      katinka: |-
-        Jest psychologiem. To znaczy, że potrafi zrozumieć zachowania i uczucia innych ludzi. Potrafi uporządkować skomplikowane sprawy.
-        W clarat jest w zespole badawczym. Jej ulubiony utwór to “Greatest” zespołu Cat Power.
       katja: Jest gerministką. Zna się dobrze na złozonych tekstach i języku niemieckim. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Mysteries" Beth Gibbons.
       konstantin: Jest web developerem. To znaczy, że potrafi dobrze programować strony internetowe. Zawsze znajduje dobre rozwiązania. W clarat jest w zespole IT i tworzy naszą stronę internetową. Jego ulubionym utworem jest “Too Long” Daft Punk.
       laura_i: |-
@@ -1166,12 +1152,15 @@ pl:
       lavinia: Jest polemologiem. Wie dużo o konfliktach i wojnie. Ma dar przekonywania. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem  jest “I´m Not Done” zespołu Fever Ray.
       line: Jest reżyserką teatralną. Zna się dobrze na literaturze i języku. Dlatego wie jak słowa działają na ludzi. Jej ulubiony utwór to “Anybody Seen My Baby”  grupy Rolling Stones.
       lisa: Jest designerem. To znaczy, że chętnie znajduje nowe, kreatywne rozwiązania i potrafi to dobrze pokazać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest “Another Day” Jamie Lidell.
+      magdalena: 
       marcus: Jest webdesignerem. To znaczy, że potrafi programować szatę graficzną stron internetowych. Potrafi też dobrze planować. W clarat jest w zespole IT. Dba o to, aby nasza strona internetowa dobrze wyglądała. Jego ulubionym utworem jest “Hysteria” zespolu Muse.
+      marie: 
       michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
       nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.
       nathalie: Studiowała prawa człowieka i politykę międzynarodową. Potrafi dobrze tłumaczyć i świetnie słuchać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Me in You" zespołu Kings of Convienience.
-      nicole: Studiowała komunikację międzykulturową. To znaczy, że wie dużo o kulturze i językach. Potrafi dobrze podejmować decyzje. Jest kierowniczką zespołu badawczego. Jej ulubiony utwór to “Palabra Mi Amor” Shaka Ponk.
       nils: Jest informatykiem. To znaczy, że potrafi dobrze programować strony internetowe i programy komputerowe. Szybko znajduje dobre rozwiązania i szybko się uczy. W clarat jest w zespole IT. Jego ulubiony utwór to “Jein” grupy Fettes Brot.
+      omar: 
+      patrick: 
       philipp: Studiował historie, politykę i prawo. Wie wiele o polityce i społeczeństwie. Potrafi łatwo zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamie. Jego ulubionym utworem jest "This Is Our Science" zespołu Astronautalis.
       sabine: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Potrafi dobrze zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamu. Wyjaśnia nam prawne kwestie azylu politycznego. Jej ulubionym utworem jest "Vensa" zespołu Kino.
       sophie: Studiowała zarządzanie spółkami non-profit. Jest dobra w organizacji i szybko poznaje istote rzeczy. W clarat pracuje dla Research-Teamu. Dowiaduje się, kto i jak używa clarat. Jej ulubionym utworem jest "Lost" Franka Ocean.
@@ -1342,8 +1331,6 @@ pl:
   routes:
     '404': "'404'"
     contacts: kontakt
-    danke: 
-    dankeschoen: 
     datenschutzhinweise: ochrona-danych
     definitions: definicje
     emails: e-maile
@@ -1379,6 +1366,10 @@ pl:
           family: Jeśli klikniesz tutaj, przejdziesz do clarat family. W clarat family możesz szukać pomocy dla dzieci, młodzieży i rodzin.
           refugees: Jeśli klikniesz tutaj, przejdziesz do clarat refugees. W clarat refugees możesz szukać pomocy dla uchodźców.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1392,13 +1383,6 @@ pl:
         button: Zapisz się na newsletter
         placeholder: adres e-mail
   success: Dziękujemy. Wkrótce będziemy mieli oferty w Twojej okolicy. Wtedy otrzymasz od nas wiadomość e-mail.
-  t:
-    contacts:
-      new:
-        contact_heading: 
-      shared:
-        new:
-          send_us_a_message: 
   update_requests:
     create:
       success: Dziękujemy, otrzymaliśmy Twoją wiadomość. Kiedy tylko staniemy się aktywni w Twojej okolicy, damy Ci znać.

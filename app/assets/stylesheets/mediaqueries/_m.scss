@@ -608,6 +608,24 @@
     }
   }
 
+  .nav-sections__button {
+    body.family &,
+    body.refugees & {
+      text-align: left;
+      padding-top: 0;
+      width: 100%;
+    }
+  }
+
+  .nav-sections__notification {
+    right: -5px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    font-size: 16px;
+  }
+
   html[dir="rtl"] {
     .Claim {
       float: none;

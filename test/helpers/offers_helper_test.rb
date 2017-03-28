@@ -156,7 +156,7 @@ class OffersHelperTest < ActionView::TestCase
       before { offer.contact_people.first.assign_attributes first_name: 'Jane', last_name: '' }
 
       it 'should return nil' do
-        contact_full_name(offer.contact_people.first).must_equal nil
+        assert_nil contact_full_name(offer.contact_people.first)
       end
     end
   end

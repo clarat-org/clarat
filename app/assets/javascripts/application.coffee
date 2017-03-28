@@ -99,6 +99,8 @@ about supported directives.
 # = require off_canvas/presenter
 # = require toggle_advanced_search/presenter
 # = require analytics/presenter
+# = require equal_height_helper/presenter
+
 #
 # = require map_modal/presenter
 #
@@ -120,3 +122,5 @@ about supported directives.
 # = require modules/cookie_warning
 # = require modules/faq
 # = require modules/refocus
+#
+# = require contact_form/presenter

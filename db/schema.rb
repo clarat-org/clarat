@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170120120937) do
+ActiveRecord::Schema.define(version: 20170222135228) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20170120120937) do
     t.string   "name_pl",    limit: nil
     t.string   "name_tr",    limit: nil
     t.string   "name_ru",    limit: nil
-    t.string   "name_fa",    limit: nil
+    t.string   "name_fa"
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   add_index "category_hierarchies", ["descendant_id"], name: "category_desc_idx", using: :btree
 
   create_table "cities", force: true do |t|
-    t.string   "name",       limit: nil, null: false
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -150,6 +150,7 @@ ActiveRecord::Schema.define(version: 20170120120937) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "internal_mail",              default: false
+    t.string   "city"
   end
 
   create_table "definitions", force: true do |t|
@@ -160,12 +161,12 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   end
 
   create_table "divisions", force: true do |t|
-    t.string   "name",              limit: nil, null: false
+    t.string   "name",              null: false
     t.text     "description"
-    t.integer  "organization_id",               null: false
-    t.integer  "section_filter_id",             null: false
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.integer  "organization_id",   null: false
+    t.integer  "section_filter_id", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   add_index "divisions", ["organization_id"], name: "index_divisions_on_organization_id", using: :btree
@@ -213,9 +214,9 @@ ActiveRecord::Schema.define(version: 20170120120937) do
 
   create_table "gengo_orders", force: true do |t|
     t.integer  "order_id"
-    t.string   "expected_slug", limit: nil
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "expected_slug"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "hyperlinks", force: true do |t|
@@ -279,7 +280,7 @@ ActiveRecord::Schema.define(version: 20170120120937) do
     t.string   "text_ru",    limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "text_fa",    limit: nil
+    t.string   "text_fa"
   end
 
   add_index "next_steps", ["text_de"], name: "index_next_steps_on_text_de", using: :btree
@@ -374,7 +375,7 @@ ActiveRecord::Schema.define(version: 20170120120937) do
     t.date     "starts_at"
     t.datetime "completed_at"
     t.integer  "completed_by"
-    t.string   "residency_status",            limit: nil
+    t.string   "residency_status"
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -453,14 +454,14 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   add_index "organizations", ["created_at"], name: "index_organizations_on_created_at", using: :btree
 
   create_table "productivity_goals", force: true do |t|
-    t.string  "title",              limit: nil, null: false
-    t.date    "starts_at",                      null: false
-    t.date    "ends_at",                        null: false
-    t.string  "target_model",       limit: nil, null: false
-    t.integer "target_count",                   null: false
-    t.string  "target_field_name",  limit: nil, null: false
-    t.string  "target_field_value", limit: nil, null: false
-    t.integer "user_team_id",                   null: false
+    t.string  "title",              null: false
+    t.date    "starts_at",          null: false
+    t.date    "ends_at",            null: false
+    t.string  "target_model",       null: false
+    t.integer "target_count",       null: false
+    t.string  "target_field_name",  null: false
+    t.string  "target_field_value", null: false
+    t.integer "user_team_id",       null: false
   end
 
   add_index "productivity_goals", ["user_team_id"], name: "index_productivity_goals_on_user_team_id", using: :btree
@@ -514,16 +515,16 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   add_index "split_bases", ["solution_category_id"], name: "index_split_bases_on_solution_category_id", using: :btree
 
   create_table "statistics", force: true do |t|
-    t.string  "topic",             limit: nil
+    t.string  "topic"
     t.integer "user_id"
-    t.date    "date",                                            null: false
-    t.float   "count",                         default: 0.0,     null: false
+    t.date    "date",                                null: false
+    t.float   "count",             default: 0.0,     null: false
     t.integer "user_team_id"
-    t.string  "model",             limit: nil
-    t.string  "field_name",        limit: nil
-    t.string  "field_start_value", limit: nil
-    t.string  "field_end_value",   limit: nil
-    t.string  "time_frame",        limit: nil, default: "daily"
+    t.string  "model"
+    t.string  "field_name"
+    t.string  "field_start_value"
+    t.string  "field_end_value"
+    t.string  "time_frame",        default: "daily"
   end
 
   add_index "statistics", ["user_id"], name: "index_statistics_on_user_id", using: :btree
@@ -536,12 +537,12 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   end
 
   create_table "time_allocations", force: true do |t|
-    t.integer "user_id",                       null: false
-    t.integer "year",                          null: false
-    t.integer "week_number",       limit: 2,   null: false
-    t.integer "desired_wa_hours",              null: false
+    t.integer "user_id",                     null: false
+    t.integer "year",                        null: false
+    t.integer "week_number",       limit: 2, null: false
+    t.integer "desired_wa_hours",            null: false
     t.integer "actual_wa_hours"
-    t.string  "actual_wa_comment", limit: nil
+    t.string  "actual_wa_comment"
   end
 
   add_index "time_allocations", ["user_id"], name: "index_time_allocations_on_user_id", using: :btree
@@ -562,8 +563,8 @@ ActiveRecord::Schema.define(version: 20170120120937) do
   add_index "user_team_users", ["user_team_id"], name: "index_user_team_users_on_user_team_id", using: :btree
 
   create_table "user_teams", force: true do |t|
-    t.string "name",           limit: nil,                        null: false
-    t.string "classification", limit: nil, default: "researcher"
+    t.string "name",                                  null: false
+    t.string "classification", default: "researcher"
   end
 
   create_table "users", force: true do |t|

@@ -22,6 +22,7 @@
 
   .modal__close,
   button[class$="overlay_close"],
+  button[class$="overlay_close greenOverlay"],
   button[class$="big-map_close"],
   [class$="beta_banner_close"] {
     position: absolute;
@@ -29,6 +30,9 @@
     right: -10px;
     width: 30px;
     height: 30px;
+  }
+  .greenOverlay {
+    background-color: #8cbd86;
   }
 }
 

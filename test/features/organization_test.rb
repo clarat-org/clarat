@@ -10,7 +10,7 @@ feature 'Organization display' do
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
     page.body.must_match(
-      '<a href="http://a.t.com/" target="_blank">a.t.com</a>'
+      '<a target="_blank" href="http://a.t.com/">a.t.com</a>'
     )
   end
 
@@ -24,7 +24,7 @@ feature 'Organization display' do
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
     page.body.must_match(
-      '<a href="http://a.t.com/" target="_blank">a.t.com</a>'
+      '<a target="_blank" href="http://a.t.com/">a.t.com</a>'
     )
   end
 

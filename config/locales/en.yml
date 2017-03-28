@@ -22,7 +22,7 @@ en:
   cells:
     contact_people:
       dr: Dr.
-      email: 'Email:'
+      email: 'E-mail:'
       fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
@@ -97,7 +97,7 @@ en:
             var: ref_to_how_to_find_right_help
           question: How does clarat work?
         question_4:
-          answer: "clarat is and will always be free of charge. Everyone can use clarat for free.\nEveryone can search on <b>clarat family</b> for help and support for children, \nteenagers and families for free. And everyone can search on <b>clarat refugees</b>\nfor help for refugees for free."
+          answer: "clarat is and always will be free of charge. Everyone can use clarat for free.\nEveryone can search on <b>clarat family</b> for help and support for children, \nteenagers and families for free. And everyone can search on <b>clarat refugees</b>\nfor help for refugees for free."
           question: Is clarat free of charge?
         question_5:
           answer: |
@@ -385,39 +385,35 @@ en:
         name_placeholder: Name (obligatory)
         send: Send
         send_us_a_message: Write us a message
-    success:
-      success: 
-    danke:
-      success: 
   emails:
     offers_index:
       family:
-        heading: Your offers in clarat family for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat family for <span id="secure-email-0">%{email}</span>
+        heading: Your support services and programmes in clarat family for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes listed in clarat family for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat refugees</strong> offer
-          other: Your <strong>%{count} clarat refugees</strong> offers
+          one: Your <strong>clarat refugees</strong> support service
+          other: Your <strong>%{count} clarat refugees</strong> support services
       last_update: Last update
-      obfuscated_email: your email address
+      obfuscated_email: your e-mail address
       refugees:
-        heading: Your clarat refugees offers for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat refugees for <span id="secure-email-0">%{email}</span>
+        heading: Your clarat refugees support services for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes in clarat refugees for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat family</strong> offer
-          other: Your <strong>%{count} clarat family</strong> offers
+          one: Your <strong>clarat family</strong> support service
+          other: Your <strong>%{count} clarat family</strong> support services
       shared:
-        explanation_1: Here you can see at a glance all of your offerings at clarat. These are offerings we found, using your e-mail address as contact address.
-        explanation_2: If in the future we find new offerings from you, you will see links to these new offerings here as well.
-        explanation_3: You can save this page amongst your favorites and thereby see at a glance what clarat has in store for you.
-        explanation_4: Would you like to be informed by e-mail if new offerings from you are online at clarat? Then use the link at the end of the e-mail you have received from us.
+        explanation_1: Here you can see all of your support services which are listed at clarat. These are the support services we found using your e-mail address as our contact address.
+        explanation_2: If we find new support services you offer in the future, we will list the links to these new support services here, too.
+        explanation_3: If you save this page as one of your favourites, you will be able to see which of your services are listed here at clarat.
+        explanation_4: Would you like to be informed by e-mail when new support services you offer go online at clarat? Then use the link at the end of the e-mail you received from us.
         info: Info
     subscribe:
-      success_html: |
-        You have successfully subscribed for email notifications about offers.
+      success_html: |-
+        You have successfully subscribed for e-mail notifications about offers.
         (<a href="%{unsubscribe_href}">cancel subscription</a>)
     unsubscribe:
-      success_html: |
-        You have successfully unsubscribed from further email notifications.
+      success_html: |-
+        You have successfully unsubscribed from further e-mail notifications.
         (<a href="%{subscribe_href}">subscribe again</a>)
   enumerize:
     search_form:
@@ -576,6 +572,7 @@ en:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -800,6 +797,7 @@ en:
         msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
+        pan: Punjabi - پنجابی / ਪੰਜਾਬੀ
         pol: Polish - polski
         por: Portuguese - português
         pus: Pashto - پښتو‎
@@ -881,14 +879,6 @@ en:
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
         legal_title: On clarat, legal text can only be read in German.
         title: |-
           Automated translations!
@@ -923,12 +913,11 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-        meta_description:
-          family: 
-          refugees: 
-        meta_title:
-          family: 
-          refugees: 
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -964,7 +953,6 @@ en:
             parents: for parents
             pregnant_woman: for pregnant women
             relatives: for friends and family
-            family_acquaintances: 
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1035,8 +1023,6 @@ en:
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
-        NicoleTest: 
-        PeterFriesen: 
       who_location:
         organizations: 'This is a support service provided by:'
       who_section:
@@ -1054,7 +1040,7 @@ en:
       headline-offers--refugees: Support services for refugees
       offers_all: What kind of help does the organization offer?
       where: Where is the organization located?
-      who: What does the organization do?
+      who: What does this organization do?
   pages:
     about:
       amina: |-
@@ -1067,6 +1053,7 @@ en:
         about economics and culture. She's a precise worker. At
         clarat she is part of the research team. She keeps an eye on everything that happens in the clarat family world. Her favourite song is “Work Me” by The Black Keys.
       anja: Anja is an ecologist and engineer. She can think quickly and logically. She works in clarat's research team, She ensures the quality of our work. Her favourite song is "Where is my My Mind?" by the Pixies.
+      ann-sophie: 
       anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team. Her favourite song is "1009" by Bonobo
       anne: |-
         Anne studied economics and international relations. She's a quick,
@@ -1090,6 +1077,7 @@ en:
       birte: Birte studied educational science. She knows a lot about children. And she's very good at putting herself in other people's shoes. And she's worked a lot with media. At clarat, she's in the research team. "Borderline" by Madonna is her favourite song.
       chrissy: Chrissy is a political scientist. That means she knows a lot about society and politics. And she's good at planning and organizing things. At clarat, she's in the research team. She uses the internet to look for organizations. Her favourite song is "Rough Hands" by Akexisonfire.
       claudia: Before coming to clarat, Claudia worked in retail. She's good at dealing with people. And finding information as quickly as possible. She's in clarat's research team. She helps people find help. Her favourite song is "Chandelier" by Sia.
+      damjan: 
       eleonore: Eleonore studied music, media and business studies. She can find and process information very quickly. She's in clarat's research team. It's her job to make sure people can find clarat easily online. Her favourite song is "Je Veux" by Zaz.
       elisa: |-
         Elisa is an expert on cultural studies. That means she knows a lot
@@ -1097,6 +1085,7 @@ en:
         clarat she is part of the research team. And she makes sure our website is looking good. Her favourite song is “Boat Behind" by Kings of
         Convenience.
       esther: Esther studied cultural studies. She knows a lot about history and politics. She is always learning new things. At clarat she's in the research team. She's in charge of our special clarat dictionary. Her favourite song is "This Charming Man" from The Smiths.
+      fabian: 
       franziska: |-
         Franziska studied international law. That means she knows a lot about
         laws that apply to lots of different countries. She can understand complicated
@@ -1159,11 +1148,13 @@ en:
       lisa: |-
         Lisa is a design thinker. That means she knows how to plan
         projects creatively. At clarat she is part of the research team, where she takes care of our users. She also tries to find out who our users are. Her favourite song is "Resolution" by Matt Corby.
+      magdalena: 
       marcus: |-
         Marcus is a web designer. This means he's good at programming and
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
+      marie: 
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. Her favourite song is "Me in You" by Kings of Convenience.
@@ -1172,6 +1163,8 @@ en:
         computer programs and websites. He always comes up with good solutions
         and is a fast learner. At clarat he is part of the IT team. His favourite
         song is “Jein” by Fettes Brot.
+      omar: 
+      patrick: 
       philipp: Philipp studied history, politics and law. He knows a lot about society and politics. He can understand complicated things. He's part of the clarat research team. His favourite song is "This is our Science" by Astronautalis.
       sabine: Sabine is a sociologist. That means she knows a lot about society. She can understand complicated things very well. At clarat, she's in the research team. She explains the asylum laws in Germany to us. Her favourite song is "Vesna" by Kino.
       sophie: Sophie studied Non-profit Management. She's a very organized person. And she's good at recognizing what's important. She's in clarat's research team. She's trying to find out who is using clarat and how they're using it. Ger facourite song is "Lost" from Frank Ocean.
@@ -1199,13 +1192,6 @@ en:
         “Survive It” by Ghostpoet.
       title: About us
       verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
-      ann-sophie: 
-      damjan: 
-      fabian: 
-      magdalena: 
-      marie: 
-      omar: 
-      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1260,11 +1246,11 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
-        family: 
-        refugees: 
+        family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
+        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Berlin.
       meta_title:
-        family: 
-        refugees: 
+        family: Find help easily | clarat family
+        refugees: Find help easily | clarat refugees
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees
@@ -1358,6 +1344,10 @@ en:
       heading: Datenschutzhinweise
       intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
+    section_choice:
+      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      meta_title: clarat explains | clarat
       title: Please choose your clarat-section
     shared:
       address:
@@ -1392,8 +1382,6 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
-    dankeschoen: 
-    danke: 
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1409,6 +1397,10 @@ en:
           family: Click here to get to clarat family. In clarat family, you can search for help and support offerings for children, adolescents and families.
           refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support offerings for refugees.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1432,7 +1424,3 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
-  offer:
-    stamp:
-      target_audience:
-        refugees_adolescents: 

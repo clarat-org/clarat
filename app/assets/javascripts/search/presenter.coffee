@@ -132,7 +132,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleChangeToPersonal'
       'Clarat.Search::InitialDisable': 'disableCheckboxes'
 
-
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
@@ -146,8 +145,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleNewGeolocation: (event, location) =>
     @model.updateAttributes
-      search_location: location.query
-      generated_geolocation: location.geoloc
+      search_location: location.query || ''
+      generated_geolocation: location.geoloc || ''
       exact_location: false
     @sendMainSearch()
     @sendLocationSupportSearch() # only needs to be called on new location

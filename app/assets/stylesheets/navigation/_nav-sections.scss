@@ -65,6 +65,16 @@
 
 }
 
+.nav-sections__button {
+  body.refugees &,
+  body.family & {
+    height: inherit;
+    background: transparent;
+    padding-top: 7em;
+    color: $brand_brown;
+  }
+}
+
 
 // Legal: only in refugees
 
@@ -110,6 +120,25 @@ $dimension: 115px;
 
   body.family & {
     background-image: image-url('picto_learn--family.svg');
+  }
+}
+
+.nav-sections__notification {
+  position: absolute;
+  right: 0;
+  background: $brand-orange;
+  color: $brand_white;
+  border-radius: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $brand_white;
+  animation-name: pulse;
+  animation-duration: .5s;
+  pointer-events: none;
+
+  .fa {
+    margin: 0;
   }
 }
 

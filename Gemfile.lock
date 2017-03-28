@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4cce5df85c7701a336f3252459ab583bf32f2bbb
+  revision: 449660a81da4445f91a0b0a1068412b93b8b9dea
   specs:
     clarat_base (0.1.4)
       aasm
@@ -539,7 +539,7 @@ GEM
     tilt (1.4.1)
     timecop (0.8.0)
     tins (1.6.0)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
     uber (0.0.15)
     uglifier (2.7.2)

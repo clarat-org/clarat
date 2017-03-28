@@ -47,7 +47,7 @@
     display: none;
 
 
-    body.ar & {
+    html[dir="rtl"] & {
       margin-right: 15px;
     }
 
@@ -162,9 +162,9 @@
     min-height: 58px;
     max-height: 98px;
     width: auto;
+    overflow: visible;
 
-
-    body.ar & {
+    html[dir="rtl"] & {
       padding: 10px 15px 0 0;
 
       label.string {
@@ -237,7 +237,7 @@
         left: 0;
       }
 
-      body.ar & {
+      html[dir="rtl"] & {
         left: 15px;
         right: auto;
         z-index: 20;
@@ -296,7 +296,7 @@
   }
 
   .nav-welt__list {
-    body.ar & {
+    html[dir="rtl"] & {
       float: none;
     }
   }
@@ -307,7 +307,7 @@
     margin-top: 21px;
     margin-right: 7px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       float: left;
     }
 
@@ -370,7 +370,7 @@
     left: 0;
     z-index: 12;
 
-    body.ar & {
+    html[dir="rtl"] & {
       right: 0;
       left: auto;
     }
@@ -384,7 +384,7 @@
     margin-bottom: 10px;
     text-align: left;
 
-    body.ar & {
+    html[dir="rtl"] & {
       text-align: right;
     }
   }
@@ -465,7 +465,7 @@
   .section-start__headline {
     height: 35px;
     font-size: 16px;
-    line-height: 37px;
+    line-height: 28px;
   }
 
   .section-start__body {
@@ -642,7 +642,7 @@
     cursor: pointer;
     background-size: 6px 8px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       background-position: left center;
     }
 

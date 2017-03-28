@@ -8,7 +8,7 @@
   float: right;
   padding: 15px 15px 15px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }

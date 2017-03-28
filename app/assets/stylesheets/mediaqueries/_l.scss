@@ -64,7 +64,7 @@
   .search-form--input-wrapper {
     right: 80px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       left: 60px;
       right: 15px;
     }
@@ -174,7 +174,7 @@
     width: auto;
 
     // Repeat to override specificity
-    body.ar & {
+    html[dir="rtl"] & {
       display: block;
       float: none;
       margin-left: 0;
@@ -310,13 +310,13 @@
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       border-top-left-radius: 0;
     }
   }
 
   input.newsletter-subscribe__input {
-    body.ar & {
+    html[dir="rtl"] & {
       border-top-left-radius: 6px;
       margin-right: 0;
     }

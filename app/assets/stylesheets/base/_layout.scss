@@ -51,7 +51,7 @@
     padding-left: calc(31% + 2px);
     padding-top: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-right: calc(31% + 2px);
       padding-left: 0;
     }
@@ -104,25 +104,25 @@
 }
 
 .footer-main__subscribe {
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
   }
 }
 
 .footer-main__about {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
 
 .section-wrapper-minor {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
 
 .section-wrapper-major {
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
     margin-right: 0;
     margin-left: 2.5%;

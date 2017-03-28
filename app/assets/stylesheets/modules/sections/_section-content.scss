@@ -54,7 +54,7 @@
     position: relative;
     padding-right: 70px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-left: 70px;
       padding-right: 15px;
     }

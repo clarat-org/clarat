@@ -334,7 +334,7 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
-        back_to_hp: 
+        back_to_hp: ana sayfaya geri
         city_placeholder: 
         email_placeholder:
           required:
@@ -566,11 +566,11 @@ tr:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
       sort_order:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
   js:
     ajax_error:
       error: Arama hatası
@@ -848,7 +848,7 @@ tr:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa: فارسی
           fr: Français
           pl: Polski
           ru: Русский

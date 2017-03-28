@@ -7,7 +7,7 @@
 }
 
 #fc_chat_layout {
-  body.ar & {
+  html[dir="rtl"] & {
     left: 30px;
     right: auto;
   }

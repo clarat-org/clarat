@@ -1,5 +1,5 @@
 doctype html
-html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
+html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa)?'rtl':'ltr'}"
   head
     meta charset="utf-8"
     title
@@ -24,7 +24,7 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
 
-  body class="#{@current_section} #{I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
+  body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
       - cache ['banner', I18n.locale] do
         = render '/layouts/partials/banner'

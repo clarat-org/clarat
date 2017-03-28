@@ -148,7 +148,7 @@
       // max-height: 95px;
     }
 
-    body.ar & {
+    html[dir="rtl"] & {
       margin-left: 0;
     }
 
@@ -198,7 +198,7 @@
     background-color: $brand_yellow;
 
     &,
-    body.ar & {
+    html[dir="rtl"] & {
       padding: 10px 0;
     }
 
@@ -267,18 +267,18 @@
         padding-left: 34px;
       }
 
-      body.ar & {
+      html[dir="rtl"] & {
         padding-left: 15px;
         padding-right: 53px;
       }
 
-      body.ar .is-enlarged & {
+      html[dir="rtl"] .is-enlarged & {
         border-bottom-right-radius: 0;
       }
     }
 
     #search_form_search_location {
-      body.ar & {
+      html[dir="rtl"] & {
         padding-left: 15px;
         padding-right: 40px;
       }
@@ -287,7 +287,7 @@
         padding-left: 66px;
       }
 
-      body.ar .is-enlarged & {
+      html[dir="rtl"] .is-enlarged & {
         border-bottom-right-radius: $border_radius;
       }
     }
@@ -328,7 +328,7 @@
       background-size: 60%;
       bottom: 10px;
 
-      body.ar:not(.template--pages-home) & {
+      html[dir="rtl"] body:not(.template--pages-home) & {
         right: auto;
         left: 20px;
       }
@@ -352,7 +352,7 @@
         padding-right: 55px;
         width: 100%;
 
-        body.ar & {
+        html[dir="rtl"] & {
           padding-left: 55px;
           padding-right: 0;
         }
@@ -389,7 +389,7 @@
     }
   }
 
-  body.ar {
+  html[dir="rtl"] {
     &.template--pages-home {
       #new_search_form {
         label {
@@ -551,7 +551,7 @@
     right: 4px;
     top: 4px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       left: 4px;
       right: auto;
     }
@@ -599,7 +599,7 @@
       text-align: left;
     }
 
-    body.ar & {
+    html[dir="rtl"] & {
       background-position: 0 top;
 
       a {
@@ -626,7 +626,7 @@
     font-size: 16px;
   }
 
-  body.ar {
+  html[dir="rtl"] {
     .Claim {
       float: none;
     }
@@ -698,7 +698,7 @@
   .content-main.content-main--offers-index {
     padding-left: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-right: 0;
       width: auto;
     }
@@ -801,7 +801,7 @@
 
   .Listing-results__headline,
   .Listing-results__headline--remote {
-    body.ar & {
+    html[dir="rtl"] & {
       padding-left: 0;
     }
   }

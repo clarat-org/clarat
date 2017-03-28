@@ -21,7 +21,7 @@
     display: none;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     left: 350px;
     right: auto;
   }
@@ -33,7 +33,7 @@
   width: 114px;
   height: 126px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     right: 240px;
     left: auto;
   }

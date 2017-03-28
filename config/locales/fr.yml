@@ -605,6 +605,7 @@ fr:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -829,6 +830,7 @@ fr:
         msa: Malais – بهاس ملايو
         mul: autres langues sur demande
         nor: Norvégien - Norsk
+        pan: Pendjabi - پنجابی / ਪੰਜਾਬੀ
         pol: Polonais - polski
         por: Portugais - português
         pus: Pachto - پښتو‎
@@ -904,14 +906,6 @@ fr:
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
         legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
@@ -926,7 +920,7 @@ fr:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa: فارسی
           fr: Français
           pl: Polski
           ru: Русский
@@ -943,6 +937,11 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1065,6 +1064,7 @@ fr:
       amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
       andrea: Elle a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Elle fait partie de l'équipe recherche de clarat. Elle a une vue d'ensemble sur le monde de notre famille. Sa chanson préférée est Work Me des Black Keys.
       anja: Elle est oncologue et ingénieure. Elle pense rapidement et de façon logique. Elle fait partie de l'équipe recherche de clarat. Elle est chargée de contrôler la qualité de notre travail. Sa chanson préférée est Where is my mind des Pixies.
+      ann-sophie: 
       anna: Elle est philologue. Cela veut dire qu'elle sait beaucoup de choses sur les langues. Elle s'y connait également bien en littérature. Elle sait très bien comprendre les choses compliquées. Elle fait partie de l'équipe recherche de clarat. Sa chanson préférée est 1009 de Bonobo.
       anne: Elle a fait des études en économie et relations internationales. Elle pense de façon rapide et très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
       astrid: Elle est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne est contagieuse. Elle fait partie de l'équipe recherche de clarat. Elle recherche aussi de nouveaux organismes sur internet. Sa chanson préférée est You Got Me de The Roots.
@@ -1073,9 +1073,11 @@ fr:
       birte: Elle a fait des études en sciences de l'éducation. Elle sait bien s'y prendre avec les enfants et sait bien se mettre à la place des autres. Elle a aussi beaucoup travaillé avec les médias. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Borderline de Madonna.
       chrissy: C'est une politologue, c'est à dire quelqu'un qui connait beaucoup de choses sur la politique et la société. Elle sait très bien planifier et classer. Elle fait partie de l'équipe de chercheurs de clarat. Elle recherche également des organismes sur internet. Sa chanson préférée est Rough Hands d'Alexisonfire.
       claudia: Avant de travailler chez clarat, elle travaillait dans le secteur du commerce de détail. Elle sait bien s'y prendre avec les personnes. Elle fait partie de l'équipe de chercheurs de clarat. Elle aide nos utilisateurs. Sa chanson préférée est Chandelier de Sia.
+      damjan: 
       eleonore: Elle a étudié la musique, les médias et l'économie. Elle sait comment récolter et comprendre rapidement les informations. Elle fait partie de l'équipe de chercheurs de clarat. Elle fait de sorte que les utilisateurs trouvent facilement clarat sur internet. Sa chanson préférée est Je Veux de Zaz.
       elisa: Elle est experte en sciences culturelles. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Elle veille également à ce que notre site internet soit joli à voir. Sa chanson préférée est Boat Behind de Kings of Convenience.
       esther: Elle a fait des études en sciences culturelles. Ell s'y connait bien en histoire et en politique. Et elle apprend facilement de nouvelles choses. Elle fait partie de l'équipe de recherche de clarat et s'occupe de notre dictionnaire. Sa chanson préférée est This charming man de The Smiths.
+      fabian: 
       franziska: A étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
       hassan: Il a travaillé en tant qu'interprète en langue perse. Il est de langue maternelle perse. Il sait organiser vite et bien. Il fait partie de l'équipe de traducteurs de clarat et traduit en persan. Sa chanson préférée est Looking For The Summer de Chris Rea.
       heading: Qui est derrière clarat?
@@ -1089,10 +1091,8 @@ fr:
       jule: Elle fait des recherches sur la paix et les conflits. Cela signifie qu'elle sait beaucoup de choses sur les conflits et la guerre. Elle trouve facilement des solutions. Chez clarat, elle est dans l’équipe recherche. Elle a une vue d'ensemble sur notre monde des réfugiés. Sa chanson préférée est Home de Edward Sharpe.
       julia: Est germaniste. Ça signifie que la langue allemande n’a pas de secret pour elle. Et elle sait bien écrire et expliquer simplement les choses. Chez clarat, elle est dans l’équipe recherche et elle est experte de notre language clarat. Sa chanson préférée est Reckoner de Radiohead.
       julia_b: Elle a fait des études de travail social. Elle a déjà beaucoup travaillé avec les enfants et les jeunes. Elle sait bien se mettre à la place des autres. Elle est dans l'équipe de recherche de clarat. Sa chanson préférée est Nantes de Beirut.
-      julian: Est socioéconomiste. Ça signifie qu’il sait beaucoup de choses sur l’économie et la sociéte. En informatique, il s’y connaît bien aussi. Chez clarat, il est dans l’équipe recherche et il s’occupe des questions techniques. Sa chanson préférée est All You Need de Sublime.
       juliane: Elle a fait des études de tourisme et un apprentissage de gestion d'entreprise. Elle sait bien planifier et trouve toujours une solution créative. Chez clarat, elle s'occupe du marketing. Sa chanson préférée est Easy des Commodores.
       karo: Elle a fait des études européennes. Elle sait donc beaucoup de choses sur la politique européenne. Elle sait bien organiser. Elle fait partie de l'équipe de recherche de clarat. Elle s'occupe de notre manuel. Sa chanson préférée est Alive de Pearl Jam.
-      katinka: Elle est psychologue. Cela signifie qu’elle comprend bien le comportement et les sentiments des gens. Chez clarat, elle est dans l’équipe recherche et elle découvre qui utilise clarat. Sa chanson préférée est The Greatest de Cat Power.
       katja: Elle est germaniste. Elle s'y connait très bien en textes compliqués et en langue allemande. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Mysteries de Beth Gibbons.
       konstantin: Est web designer. Ça signifie qu’il sait programmer des sites internet. Il trouve toujours de bonnes solutions. Chez clarat, il est dans  l’équipe TI et il crée nos sites internet. Sa chanson préférée est Too Long de Daft Punk.
       laura_i: Elle est agent de voyage et experte en sciences culturelles. Elle sait bien organiser. Elle garde toujours le contrôle et aime apprendre de nouvelles choses. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Proud Mary d'Ike und Tina Turner.
@@ -1100,12 +1100,15 @@ fr:
       lavinia: Elle fait de la recherche en paix et conflits. Cela signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans l’équipe recherche et est l'experte de notre langage. Sa chanson préférée est I'm Not Done de Fever Ray.
       line: Elle est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et le langage. C’est pour cela qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
       lisa: Elle fait du Design Thinking. Elle aime planifier des projets avec les autres de façon créative. Elle sait bien dessiner. Elle fait partie de l'équipe de recherche de clarat et elle communique avec nos utilisateurs. Elle doit découvrir qui utilise clarat et de quelle façon. Sa chanson préférée est Resolution de Matt Corby.
+      magdalena: 
       marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
+      marie: 
       michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
       nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.
       nathalie: Elle a étudié la politique internationale et les droits de l'homme. Elle sait bien expliquer et elle sait aussi bien écouter. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Me in You des Kings of Convenience.
-      nicole: A fait des études de communication interculturelle. Ça signifie qu’elle sait beaucoup de choses sur les cultures et les languages. Elle fait des choix judicieux. Elle dirige l’équipe de recherche. Sa chanson préférée est Palabra Mi Amor de Shaka Ponk.
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
+      omar: 
+      patrick: 
       philipp: Il a étudie l'Histoire, la politique et le droit. Il sait beaucoup de choses sur la politique et la société. Il comprend très bien les choses compliquées. Il fait partie de l'équipe de recherche de clarat. Sa chanson préférée est This Is Our Science des Astronautalis.
       sabine: Elle est sociologue. Cela signifie qu'elle sait beaucoup de choses sur la société. Elle comprend très bien les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Vesna de Kino.
       sophie: Elle a étudié le management des organisations à but non lucratif. Elle a une bonne organisation et repère facilement ce qui est important. Elle fait partie de l'équipe de recherche de clarat. Elle découvre également qui utilise clarat et de quelle façon. Sa chanson préférée est Lost de Frank Ocean.
@@ -1315,6 +1318,10 @@ fr:
           family: En cliquant ici, tu te retrouves sur clarat family. Sur clarat family, tu peux faire recherche pour de l'aide pour des enfants, des ados et des familles.
           refugees: en cliquant ici, tu te retrouves sur clarat Refugees. Sur clarat Refugees, tu peux faire une recherche d'aide pour les réfugiés.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

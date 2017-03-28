@@ -16,7 +16,7 @@
 }
 
 .Distributor--navigation {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
@@ -24,7 +24,7 @@
 .Distributor__search-form {
 
 
-  body.ar.template--pages-home &,
+  html[dir="rtl"] body.template--pages-home &,
   .template--pages-home & {
     float: none;
   }
@@ -33,7 +33,7 @@
 .Distributor__advanced-filter-trigger-wrapper {
   width: 100%;
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 

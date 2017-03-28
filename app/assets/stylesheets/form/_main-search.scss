@@ -11,7 +11,7 @@
   padding: 29px 25px 0;
   list-style: none;
 
-  body.ar & {
+  html[dir="rtl"] & {
     padding: 29px 15px 0 15px;
   }
 
@@ -20,7 +20,7 @@
       flex: 1;
       position: relative;
 
-      body.ar & {
+      html[dir="rtl"] & {
         float: right;
       }
     }
@@ -34,7 +34,7 @@
     z-index: 30;
     font-size: 20px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       right: 14px;
       left: auto;
     }
@@ -109,7 +109,7 @@
     background: $brand_beige !important;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     margin-left: 10px;
     margin-right: 0;
   }
@@ -142,7 +142,7 @@
     padding-left: 45px;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     padding-right: 48px;
     padding-left: 14px;
   }
@@ -175,7 +175,7 @@
     padding-left: 72px;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     padding-right: 47px;
     padding-left: 14px;
   }
@@ -196,7 +196,7 @@
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-top-right-radius: 0;
 
-  body.ar & {
+  html[dir="rtl"] & {
     border-top-left-radius: 0; // reset
     @extend %clarat_rounding_end;
     margin-left: 10px;
@@ -207,7 +207,7 @@
 .main-search__submit {
   @extend %clarat_rounding_end;
 
-  body.ar & {
+  html[dir="rtl"] & {
     border-bottom-right-radius: 0; // reset
     @extend %clarat_rounding_start;
   }
@@ -231,7 +231,7 @@
     background-color: transparent;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     padding-right: 15px;
   }
 

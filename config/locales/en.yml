@@ -22,7 +22,7 @@ en:
   cells:
     contact_people:
       dr: Dr.
-      email: 'Email:'
+      email: 'E-mail:'
       fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
@@ -97,7 +97,7 @@ en:
             var: ref_to_how_to_find_right_help
           question: How does clarat work?
         question_4:
-          answer: "clarat is and will always be free of charge. Everyone can use clarat for free.\nEveryone can search on <b>clarat family</b> for help and support for children, \nteenagers and families for free. And everyone can search on <b>clarat refugees</b>\nfor help for refugees for free."
+          answer: "clarat is and always will be free of charge. Everyone can use clarat for free.\nEveryone can search on <b>clarat family</b> for help and support for children, \nteenagers and families for free. And everyone can search on <b>clarat refugees</b>\nfor help for refugees for free."
           question: Is clarat free of charge?
         question_5:
           answer: |
@@ -388,32 +388,32 @@ en:
   emails:
     offers_index:
       family:
-        heading: Your offers in clarat family for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat family for <span id="secure-email-0">%{email}</span>
+        heading: Your support services and programmes in clarat family for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes listed in clarat family for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat refugees</strong> offer
-          other: Your <strong>%{count} clarat refugees</strong> offers
+          one: Your <strong>clarat refugees</strong> support service
+          other: Your <strong>%{count} clarat refugees</strong> support services
       last_update: Last update
-      obfuscated_email: your email address
+      obfuscated_email: your e-mail address
       refugees:
-        heading: Your clarat refugees offers for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat refugees for <span id="secure-email-0">%{email}</span>
+        heading: Your clarat refugees support services for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes in clarat refugees for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat family</strong> offer
-          other: Your <strong>%{count} clarat family</strong> offers
+          one: Your <strong>clarat family</strong> support service
+          other: Your <strong>%{count} clarat family</strong> support services
       shared:
-        explanation_1: Here you can see at a glance all of your offerings at clarat. These are offerings we found, using your e-mail address as contact address.
-        explanation_2: If in the future we find new offerings from you, you will see links to these new offerings here as well.
-        explanation_3: You can save this page amongst your favorites and thereby see at a glance what clarat has in store for you.
-        explanation_4: Would you like to be informed by e-mail if new offerings from you are online at clarat? Then use the link at the end of the e-mail you have received from us.
+        explanation_1: Here you can see all of your support services which are listed at clarat. These are the support services we found using your e-mail address as our contact address.
+        explanation_2: If we find new support services you offer in the future, we will list the links to these new support services here, too.
+        explanation_3: If you save this page as one of your favourites, you will be able to see which of your services are listed here at clarat.
+        explanation_4: Would you like to be informed by e-mail when new support services you offer go online at clarat? Then use the link at the end of the e-mail you received from us.
         info: Info
     subscribe:
-      success_html: |
-        You have successfully subscribed for email notifications about offers.
+      success_html: |-
+        You have successfully subscribed for e-mail notifications about offers.
         (<a href="%{unsubscribe_href}">cancel subscription</a>)
     unsubscribe:
-      success_html: |
-        You have successfully unsubscribed from further email notifications.
+      success_html: |-
+        You have successfully unsubscribed from further e-mail notifications.
         (<a href="%{subscribe_href}">subscribe again</a>)
   enumerize:
     search_form:
@@ -572,6 +572,7 @@ en:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -796,6 +797,7 @@ en:
         msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
+        pan: Punjabi - پنجابی / ਪੰਜਾਬੀ
         pol: Polish - polski
         por: Portuguese - português
         pus: Pashto - پښتو‎
@@ -914,6 +916,7 @@ en:
   offer:
     stamp:
       target_audience:
+        family_acquaintances: 
         refugees_adolescents: 
   offers:
     index:
@@ -1037,7 +1040,7 @@ en:
       headline-offers--refugees: Support services for refugees
       offers_all: What kind of help does the organization offer?
       where: Where is the organization located?
-      who: What does the organization do?
+      who: What does this organization do?
   pages:
     about:
       amina: |-
@@ -1243,11 +1246,11 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
-        family: 
-        refugees: 
+        family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
+        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Berlin.
       meta_title:
-        family: 
-        refugees: 
+        family: Find help easily | clarat family
+        refugees: Find help easily | clarat refugees
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees
@@ -1343,8 +1346,8 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: 
-      meta_title: 
+      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      meta_title: clarat explains | clarat
       title: Please choose your clarat-section
     shared:
       address:

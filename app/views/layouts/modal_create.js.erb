@@ -1,9 +1,1 @@
-$('.popup_content_visible').popup('hide');
-$('body').prepend(
-  "<%=
-    j render 'layouts/partials/flash',
-             type: 'success',
-             content: yield
-  %>"
-);
-<%= content_for :additional_js %>
+$('.Contact-Submit').trigger('ContactForm::CreateSuccess');

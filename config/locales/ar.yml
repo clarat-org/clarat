@@ -511,6 +511,7 @@ ar:
         msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -739,6 +740,7 @@ ar:
         msa: لغة ملايو – بهاس ملايو
         mul: لغات أخرى عند الطلب
         nor: لغة نرويجية - Norsk
+        pan: لغة بنجابية - پنجابی / ਪੰਜਾਬੀ
         pol: لغة بولندية - polski
         por: لغة برتغالية - português
         pus: لغة بشتوية - پښتو‎
@@ -860,6 +862,7 @@ ar:
   offer:
     stamp:
       target_audience:
+        family_acquaintances: 
         refugees_adolescents: 
   offers:
     index:

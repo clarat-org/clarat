@@ -117,3 +117,5 @@ about supported directives.
 # = require modules/cookie_warning
 # = require modules/faq
 # = require modules/refocus
+#
+# = require contact_form/presenter

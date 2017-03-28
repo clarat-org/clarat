@@ -22,7 +22,7 @@
     background-size: 215px 88px;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
   }
 

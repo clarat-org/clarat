@@ -1309,14 +1309,6 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
         legal_title: 
         title: 
       navigation:
@@ -1331,7 +1323,7 @@ de:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa: فارسی
           fr: Français
           pl: Polski
           ru: Русский
@@ -1348,6 +1340,11 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1481,6 +1478,7 @@ de:
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
       anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
+      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
       anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
@@ -1493,9 +1491,11 @@ de:
       birte: Hat Erziehungswissenschaften studiert. Sie kennt sich gut mit Kindern aus. Und sie kann sich gut in andere hineinversetzen. Bei clarat ist sie im Research-Team. Und sie macht mit beim Marketing. Ihr Lieblingssong ist Borderline von Madonna.
       chrissy: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie kann gut planen und ordnen. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist Rough Hands von Alexisonfire.
       claudia: Hat vor clarat im Einzelhandel gearbeitet. Sie kann gut mit Menschen umgehen. Und schnell Informationen sammeln. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter. Ihr Lieblingssong ist Chandelier von Sia.
+      damjan: Ist Informatiker. Das heißt, er kennt sich gut mit Computern aus. Und kann gut programmieren. Er weiß schnell, wie man ein Problem lösen kann. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Forever More von Moloko.
       eleonore: Hat Musik, Medien und Wirtschaft studiert. Sie kann schnell Informationen sammeln und verstehen. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass Nutzer clarat gut im Internet finden können. Ihr Lieblingssong ist Je Veux von Zaz.
       elisa: Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Boat Behind von Kings of Convenience.
       esther: Hat Kulturwissenschaften studiert. Sie kennt sich gut mit Geschichte und Politik aus. Und lernt schnell neue Dinge. Bei clarat ist sie im Research-Team und kümmert sich um unser Lexikon. Ihr Lieblingssong ist This charming man von The Smiths.
+      fabian: Hat Politik und Geschichte studiert. Er kann sich gut in andere Menschen hineinversetzen. Und verstehen, warum sie etwas machen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Battery von Metallica.
       franziska: |
         Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
         alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
@@ -1533,11 +1533,13 @@ de:
       lavinia: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist I'm Not Done von Fever Ray.
       line: Ist Theaterregisseurin. Sie kennt sich gut aus mit Literatur und Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Unintended von Muse.
       lisa: Ist Design Thinkerin. Sie entwickelt gern mit anderen kreative Lösungen. Und kann gut zeichnen. Bei clarat ist sie im Research-Team und spricht mit Nutzern. Sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Resolution von Matt Corby.
+      magdalena: Hat Interdisziplinäre Lateinamerikastudien studiert. Das heißt, sie weiß viel über die Kultur und Politik in Lateinamerika. Sie kann sehr gut planen und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Summer Breeze von CocoRosie.
       marcus: |
         Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
+      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
       nathalie: 'Hat Menschenrechte und internationale Politik studiert. Sie kann gut erklären. Und gut zuhören. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Me in You von Kings of Convenience.
@@ -1548,6 +1550,8 @@ de:
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
+      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut Internetseiten programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
+      patrick: Hat Geschichte und Politik studiert. Er weiß besonders viel über das Land Jamaika. Er kann gut komplizierte Dinge verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Kingston Be Wise von Protoje.
       philipp: Hat Geschichte, Politik und Recht studiert. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Und er sorgt dafür, dass wir gut arbeiten können. Sein Lieblingssong ist This Is Our Science von Astronautalis.
       sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
       sophie: Hat Nonprofit Management studiert. Sie kann gut organisieren und erkennt schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Lost von Frank Ocean.
@@ -1568,13 +1572,6 @@ de:
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: Über Uns
       verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
-      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
-      damjan: Ist Informatiker. Das heißt, er kennt sich gut mit Computern aus. Und kann gut programmieren. Er weiß schnell, wie man ein Problem lösen kann. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Forever More von Moloko.
-      fabian: Hat Politik und Geschichte studiert. Er kann sich gut in andere Menschen hineinversetzen. Und verstehen, warum sie etwas machen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Battery von Metallica.
-      magdalena: Hat Interdisziplinäre Lateinamerikastudien studiert. Das heißt, sie weiß viel über die Kultur und Politik in Lateinamerika. Sie kann sehr gut planen und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Summer Breeze von CocoRosie.
-      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
-      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut Internetseiten programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
-      patrick: Hat Geschichte und Politik studiert. Er weiß besonders viel über das Land Jamaika. Er kann gut komplizierte Dinge verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Kingston Be Wise von Protoje.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1794,6 +1791,10 @@ de:
           family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
           refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1819,7 +1820,3 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  offer:
-    stamp:
-      target_audience:
-        refugees_adolescents: 

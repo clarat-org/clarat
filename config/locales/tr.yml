@@ -334,7 +334,7 @@ tr:
       contact_heading: Bize ne bildirmek istersin?
     shared:
       new:
-        back_to_hp: 
+        back_to_hp: ana sayfaya geri
         city_placeholder: 
         email_placeholder:
           required:
@@ -566,11 +566,11 @@ tr:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
       sort_order:
-        nearby: 
-        relevance: 
+        nearby: Nearby
+        relevance: Relevance
   js:
     ajax_error:
       error: Arama hatası
@@ -830,14 +830,6 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        languages:
-          ar: 
-          de: 
-          en: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
         legal_title: On clarat, legal text can only be read in German
         title: 
       navigation:
@@ -856,7 +848,7 @@ tr:
           ar: عربي
           de: Deutsch
           en: English
-          fa: 
+          fa: فارسی
           fr: Français
           pl: Polski
           ru: Русский
@@ -873,6 +865,11 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1001,6 +998,7 @@ tr:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
       anja: 
+      ann-sophie: 
       anna: 
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
@@ -1009,9 +1007,11 @@ tr:
       birte: 
       chrissy: 
       claudia: 
+      damjan: 
       eleonore: 
       elisa: Elisa kültür bilimi uzmanı. Kültürler hakkında geniş bilgiye sahip. Zor konuları kolaylıkla izah edebiliyor. Clarat’ta araştırma ekibinde. Sözlükten ve sözlük kullanıcılarıyla ilgileniyor. Kings of Convenience grubunun Boat Behind şarkısı en sevdiği parça.
       esther: 
+      fabian: 
       franziska: Uluslararası hukukçu ve her ülkede geçerli olan yasalar hakkında bilgisi çok derin. Komplike konuları iyi anlıyor ve çabuk çözümler sunuyor. Clarat’ta araştırma ekibinde. Selah Sue’nun Explanations şarkısı en sevdiği parça.
       hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Clarat’ın arka planında kim var?
@@ -1036,7 +1036,9 @@ tr:
       lavinia: bir barış ve çatışma araştırmacısı. Bu, çatışmalar ve savaş hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksek. Clarat’da araştırma ekibinde yer almakta ve projeleri konulara göre düzenliyor. En sevdiği şarkı Fever Ray’in Not Done şarkısı.
       line: bir tiyatro yönetmeni. Aynı zamanda edebiyat ve dil ile ilgili çok bilgiye sahip. Bu nedenle kelimelerin insanlarda yarattığı etkiyi çok iyi biliyor. Clarat’da araştırma ekibinde yer alıyor. En sevdiği şarkı Rolling Stones’tan Anybody Seen My Baby.
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
+      magdalena: 
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
+      marie: 
       michaela: 
       nahla: 
       nathalie: 
@@ -1045,6 +1047,8 @@ tr:
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
+      omar: 
+      patrick: 
       philipp: 
       sabine: 
       sophie: 
@@ -1053,13 +1057,6 @@ tr:
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
-      ann-sophie: 
-      damjan: 
-      fabian: 
-      magdalena: 
-      marie: 
-      omar: 
-      patrick: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1263,6 +1260,10 @@ tr:
           family: Buraya tıkladığında clarat Family erişebilirsin. clarat Family'de çocuklar, gençler ve aileler için destek arayabilirsin.
           refugees: Buraya tıkladığında clarat Refugees'e erişebilirsin. clarat Refugees'de mülteciler için destek arayabilirsin.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1288,7 +1289,3 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  offer:
-    stamp:
-      target_audience:
-        refugees_adolescents: 

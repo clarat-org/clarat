@@ -41,7 +41,7 @@
 
 .Listing-results__headline,
 .Listing-results__headline--remote {
-  body.ar & {
+  html[dir="rtl"] & {
     padding-right: 0;
   }
 }
@@ -65,7 +65,7 @@
     right: 0;
     top: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       right: auto;
       left: 0;
     }
@@ -161,7 +161,7 @@
   width: 30px;
   height: 30px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     left: 4px;
     right: auto;
   }
@@ -180,7 +180,7 @@
   background: $brand_green_alternative;
   color: $brand_white;
 
-  body.ar & {
+  html[dir="rtl"] & {
     margin-left: -5px;
     margin-right: 0;
   }
@@ -227,7 +227,7 @@
   background-size: auto 30px;
   padding-left: 30px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     background-position: calc(100% - 5px) center;
     padding-left: 0;
     padding-right: 34px;
@@ -262,7 +262,7 @@
     line-height: 2;
   }
 
-  body.ar & {
+  html[dir="rtl"] & {
     background-position: calc(100% - 6px) 5px;
     padding: 4px 30px 0 4px;
   }

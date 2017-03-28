@@ -3,7 +3,8 @@ if set.any?
     parent = subset[0]
     children = subset[1]
 
-    next unless parent.visible && parent.offers_in_section?(section)
+    next unless (parent.offers_in_section?(section) || parent.parent_id.nil?) &&
+                parent.visible
     json.name parent.name
     json.sections parent.section_filters.pluck(:identifier)
     json.list_classes category_list_classes(depth, children, section)

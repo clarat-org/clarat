@@ -58,6 +58,10 @@
   display: flex;
   align-items: center;
   line-height: 1.33;
+
+  html[dir="rtl"] & {
+    background-image: image-url('skinny-arrow-left.svg');
+  }
 }
 
 .section-choice__cta--refugees {

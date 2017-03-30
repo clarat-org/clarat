@@ -12,6 +12,8 @@ class Clarat.GMaps.Operation.ConstructMap
     map = new google.maps.Map(canvas, mapOptions)
     bounds = new google.maps.LatLngBounds()
 
+    @_handleMapClick map
+
     # Create Markers inside Map
     for key, markerData of markers
       continue unless markerData.position
@@ -55,28 +57,32 @@ class Clarat.GMaps.Operation.ConstructMap
 
   ### PRIVATE ###
 
-
   @_isInternetExplorer11: ->
     navigator.userAgent.toLowerCase().indexOf('trident') > -1
 
-  # Event bindings for a single marker inside a map
-  @_bindMapsEvents: (map, marker, markerData, canvas) ->
+  @_handleMapClick: (map) ->
     google.maps.event.addListener(
       map, 'click', ->
         $('#map-container').trigger 'Clarat.GMaps::MapClick'
     )
+
+  # Event bindings for a single marker inside a map
+  @_bindMapsEvents: (map, marker, markerData, canvas) ->
+
     google.maps.event.addListener(
       marker, 'click', ->
         $('#map-container').trigger(
           'Clarat.GMaps::MarkerClick', [marker, markerData]
         )
     )
+
     google.maps.event.addListener(
       marker, 'mouseover', ->
         $('#map-container').trigger(
           'Clarat.GMaps::MarkerMouseOver', [marker, markerData]
         )
     )
+
     google.maps.event.addListener(
       marker, 'mouseout', ->
         $('#map-container').trigger(

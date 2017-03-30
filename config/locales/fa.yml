@@ -19,6 +19,9 @@ fa:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -1025,6 +1028,27 @@ fa:
         organizations: 'یک پیشنهاد از:'
       who_section:
         heading: به کجا می توانی مراجعه کنی؟
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: طبق توافق انجام شده
@@ -1274,3 +1298,9 @@ fa:
     new:
       button: پیغام دریافت شد
       email_placeholder: آدرس ایمیل
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

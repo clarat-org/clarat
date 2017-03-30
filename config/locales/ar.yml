@@ -19,6 +19,9 @@ ar:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: ".د"
@@ -976,6 +979,27 @@ ar:
         organizations: " :.عرض من"
       who_section:
         heading: أين يمكنك الإتصال؟
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: حسب الإتفاق
@@ -1280,3 +1304,9 @@ ar:
     new:
       button: الرسالة وصلت
       email_placeholder: عنوان البريد الإليكتروني
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

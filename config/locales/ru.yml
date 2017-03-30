@@ -19,6 +19,9 @@ ru:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Доктор
@@ -1090,6 +1093,27 @@ ru:
         organizations: 'Предложения от:'
       who_section:
         heading: Куда ты можешь обратиться?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: по записи
@@ -1388,3 +1412,9 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

@@ -19,6 +19,9 @@ tr:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -979,6 +982,27 @@ tr:
         organizations: 'bir ... hizmetidir:'
       who_section:
         heading: Nereye başvurabilirsin?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: Sözleşilen vakit
@@ -1289,3 +1313,9 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

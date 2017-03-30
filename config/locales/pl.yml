@@ -19,6 +19,9 @@ pl:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr
@@ -1093,6 +1096,27 @@ pl:
         organizations: 'Oferta od:'
       who_section:
         heading: Gdzie możesz się zgłosić?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: do uzgodnienia
@@ -1389,3 +1413,9 @@ pl:
     new:
       button: Wiadomość otrzymana
       email_placeholder: adres e-mail
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

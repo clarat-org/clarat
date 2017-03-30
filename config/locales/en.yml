@@ -19,6 +19,9 @@ en:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -632,9 +635,9 @@ en:
       fallback: Alexanderplatz, Berlin, Germany
       fallback_clarification:
         code1: You're not near Alexanderplatz? Then please enter your address, post code or city here.
-        code2: 
-        code3: 
-        code4: 
+        code2: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
+        code3: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
+        code4: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
@@ -1027,6 +1030,27 @@ en:
         organizations: 'This is a support service provided by:'
       who_section:
         heading: How can you get in touch?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: by appointment
@@ -1424,3 +1448,9 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

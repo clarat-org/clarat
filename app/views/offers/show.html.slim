@@ -54,7 +54,8 @@
 
       / More info "tags"
       section.section-content.section-content--more-info
-        h3.section-content__title Weitere Informationen
+        h3.section-content__title
+          = t '.trait_filters_headline'
 
         ul.section-content__tag-list
           - @offer.trait_filters.each do |filter|

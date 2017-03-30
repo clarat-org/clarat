@@ -223,14 +223,14 @@ de:
             Zum Beispiel Erzieher, Lehrer oder Nachbarn und Bekannte.
           question: Wer findet bei clarat Hilfe?
         question_10:
-          answer: |
+          answer: |-
             Das kann verschiedene Gründe haben.
             <p>
             <ul>
             <li>
             Es kann sein, dass dein Suchwort nicht funktioniert. Dann probiere es
             mit einem anderen Wort. Wenn dir kein anderes Suchwort einfällt,
-            versuche über die Bilder zu suchen. Das heißt bei clarat: <i>Suche nach
+            versuche über die Bilder zu suchen. Das heißt bei claratSuche nach
             Kategorien</i>. %{ref_to_how_to_find_right_help} kannst du nachlesen, wie
             diese Suche funktioniert.
             </li>
@@ -592,8 +592,9 @@ de:
         heading: Hast du Fragen zu clarat in verschiedenen Sprachen?
         question_1:
           anchor: how_many_languages
-          answer: |
-            Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+          answer: 'Alle Seiten bei clarat kannst du auf Deutsch und Englisch lesen.
+
+'
           question: Auf welchen Sprachen gibt es clarat?
         question_2:
           answer: |
@@ -758,6 +759,8 @@ de:
       contact_heading: Was möchtest du uns mitteilen?
     shared:
       new:
+        back_to_hp: zurück zur Startseite
+        city_placeholder: Wohnort (Optional)
         email_placeholder:
           required:
             'false': E-Mail Adresse (Optional)
@@ -769,8 +772,9 @@ de:
   emails:
     offers_index:
       family:
-        heading: |
-          Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+        heading: 'Deine clarat family-Angebote für <span id="secure-email-0">%{email}</span>
+
+'
         no_results: |
           Es gibt derzeit keine veröffentlichten clarat family-Angebote für
           <span id="secure-email-0">%{email}</span>
@@ -780,8 +784,9 @@ de:
       last_update: Zuletzt geändert
       obfuscated_email: deine E-Mail-Adresse
       refugees:
-        heading: |
-          Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+        heading: 'Deine clarat refugees-Angebote für <span id="secure-email-0">%{email}</span>
+
+'
         no_results: |
           Es gibt derzeit keine veröffentlichten clarat refugees-Angebote für
           <span id="secure-email-0">%{email}</span>
@@ -924,22 +929,33 @@ de:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
+        abk: Abk
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
+        ckb: Ckb
+        cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -954,9 +970,12 @@ de:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -965,6 +984,7 @@ de:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -977,6 +997,7 @@ de:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -1011,14 +1032,21 @@ de:
       <a href="/refugees/datenschutzhinweise">Mehr</a>.
     geolocation:
       error: Standort konnte nicht gefunden werden. Bitte manuell eingeben.
+      fallback: Alexanderplatz, Berlin, Deutschland
+      fallback_clarification:
+        code1: Der Alexanderplatz in Berlin ist nicht in deiner Nähe? Dann gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code2: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code3: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
+        code4: Leider konnten wir deinen Standort nicht ermitteln. Wir suchen daher am Alexanderplatz in Berlin. Wenn das nicht in deiner Nähe ist gib hier bitte deine Adresse, PLZ oder Stadt ein.
       get: Benutze meinen Standort!
       waiting: Suche Standort... Möglicherweise musst du dies erst erlauben.
     lang_list_toggle:
       less: Weniger Sprachen zeigen
       more: Mehr Sprachen zeigen
     less_filter_options: Weniger Filter anzeigen
-    location_required: |
-      Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+    location_required: 'Bitte gib einen Ort an wo du nach einem Hilfsangebot suchen möchtest.
+
+'
     map_info_window_multiple:
       anchor: Alle ansehen >>
       text: Es wurden mehrere Ergebnisse an dieser Adresse gefunden.
@@ -1061,12 +1089,20 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        sort: Sortieren nach
         target_audience: Hilfe für wen?
       option_any: egal
       pagination:
         back: Zurück
         gap: "…"
         next: Weiter
+      sort:
+        nearby: In der Nähe
+        relevance: Beste Treffer
+      tabs:
+        categories: Kategorien
+        filter: Filter
+        map: Karte
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1082,6 +1118,10 @@ de:
       more: Weitere Telefon- und Onlineangebote
       off_canvas:
         result_text: "%{result_count} Suchergebnisse anzeigen"
+      personal_anchor:
+        content_item: '{"description"=>"Vor Ort (%{count})"}'
+        one: Vor Ort (%{count})
+        other: Vor Ort (%{count})
       personal_offers:
         one: Ein Angebot vor Ort
         other: "%{count} Angebote vor Ort"
@@ -1103,6 +1143,10 @@ de:
           one: Ein Angebot vor Ort (%{location}) gefunden
           other: "%{count} Angebote vor Ort (%{location}) gefunden"
           zero: Leider keine Angebote vor Ort (%{location}) gefunden
+      remote_anchor:
+        content_item: '{"description"=>"Online und Telefon (%{count})"}'
+        one: Online und Telefon (%{count})
+        other: Online und Telefon (%{count})
       remote_offers:
         one: Eine Telefonberatung oder ein Onlineangebot
         other: "%{count} Telefonberatungen und Onlineangebote"
@@ -1135,22 +1179,33 @@ de:
         '326': Ukrainisch - українська
         '568': Niederländisch - Nederlands
         '639': Dari - دری
+        aar: 'Afar - Qafar-áf '
+        abk: Abchasisch - аҧсуа бызшәа
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
+        arc: Aramäisch - ארמית / Arāmît
         aze: Aserbaidschanisch - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Balinesisch - Basa Bali
         bel: Weißrussisch - беларуская мова
         ben: Bengalisch - বাংলা
         ber: Berberisch - Tamaziɣt
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        cau: Abasinisch - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
+        cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Tschechisch - čeština
         deu: Deutsch
+        dyu: Dioula - Julakan
         ell: Griechisch - ελληνικά
         eng: Englisch - English
+        ewo: Ewondo - Ewondo
         fas: Persisch (Farsi) - فارسی
         fin: Finnisch - suomi
         fra: Französisch - Français
+        fuf: Pular - Pular
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
         heb: Hebräisch - עברית
         hin: Hindi - हिन्दी
@@ -1165,9 +1220,12 @@ de:
         lit: Litauisch - lietuvių
         ltz: Luxemburgisch - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Mazedonisch - македонски
+        msa: Malaiisch – بهاس ملايو
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
+        pan: Panjabi - پنجابی / ਪੰਜਾਬੀ
         pol: Polnisch - polski
         por: Portugiesisch - português
         pus: Paschtu - پښتو‎
@@ -1176,6 +1234,7 @@ de:
         rus: Russisch - русский
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
         slo: Slowakisch - slovenský jazyk
+        slv: Slowenisch - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
         spa: Spanisch - español
@@ -1188,6 +1247,7 @@ de:
         tgk: Tadschikisch - тоҷикӣ / تاجیکی
         tgl: Tagalog - Tagálog
         tha: Thai - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrinisch - ትግርኛ
         tuk: Turkmenisch - Türkmençe / Tүркменче
         tur: Türkisch - Türkçe
@@ -1198,6 +1258,8 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+    shariff:
+      share_label: Teilen
     single_search_result:
       encounters:
         chat: Chat
@@ -1215,7 +1277,7 @@ de:
           refugees: Bald auch Angebote für Flüchtlinge
           text: clarat.org wird gerade aufgebaut
       footer:
-        about: "Über uns"
+        about: Über uns
         blog: Blog
         contact: Kontakt
         faq: Häufige Fragen
@@ -1231,9 +1293,6 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1250,21 +1309,42 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Wähle deine Sprache
+        legal_title: 
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
           family: Unterstützungsangebote für Kinder, Jugendliche und Familien
           main: Einfach Hilfe finden
           refugees: Unterstützungsangebote für Flüchtlinge
+      top_bar:
+        german_content_warning: Wähle deine Sprache
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: "‹ zu clarat refugees"
+            refugees: "‹ zu clarat family"
+          mobile:
+            home:
+              family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
+              refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
+            switch:
+              family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
+              refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
+        title: Wähle deine Sprache
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1289,17 +1369,17 @@ de:
             boys_only: nur für Jungen und Männer
             girls_only: nur für Mädchen und Frauen
           target_audience:
-            acquaintances: für Bekannte und Verwandte
             children: für Kinder und Jugendliche
-            family_acquaintances: für Bekannte und Verwandte
             family_children: für Kinder und Jugendliche
             family_nuclear_family: für Familien
             family_parents: für Eltern
             family_parents_to_be: für werdende Eltern
             family_pregnant_woman: für Schwangere
+            family_relatives: für Bekannte und Verwandte
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
+            relatives: für Bekannte und Verwandte
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1318,7 +1398,7 @@ de:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Berlin, Deutschland
+          long: Adresse, Stadt oder PLZ
           short: Berlin
         query_label: Was
         query_placeholder:
@@ -1327,7 +1407,7 @@ de:
     show:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
-        code_word: Wonach musst du fragen oder auf der Webseite suchen?
+        code_word: 'So heißt die Hilfe beim Anbieter:'
         heading: Was musst du tun?
       opening_section:
         days:
@@ -1396,120 +1476,86 @@ de:
         sieht schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Sie
         entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
         Prima Estate von Erlend Oye.
-      andrea: |
-        Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über
-        Wirtschaft und Kultur. Sie arbeitet sehr genau. Bei clarat ist sie im
-        Research-Team. Sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Work Me von The Black Keys.
-      anne: |
-        Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann sehr
-        schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um
-        das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken
-        Sie Groß von Deichkind.
-      astrid: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie ist immer gut gelaunt und steckt alle damit an. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist You Got Me von
-        The Roots feat. Erykah Badu.
+      andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
+      anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
+      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
+      anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
+      anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
+      astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
       basti: |
         Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
         Bei clarat ist er der IT-Chef. Er hilft uns bei technischen Fragen. Und
         er kümmert sich um Urlaub und Verträge. Sein Lieblingssong ist Man In
         The Mirror von Michael Jackson.
-      bettina: |
-        Bettina hat Nonprofit Management studiert. Das heißt, sie weiß, wie man
-        Hilfe organisiert. Sie kann sehr gut Ordnung schaffen. Bei clarat ist
-        sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr
-        Lieblingssong ist Elias von Dispatch.
-      elisa: |
-        Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie
-        kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Sie
-        kümmert sich auch ums Lexikon und die Nutzer. Ihr Lieblingssong ist Boat
-        Behind von Kings of Convenience.
+      bettina: Hat Nonprofit Management studiert. Das heißt, sie weiß, wie man Hilfe organisiert. Sie kann gut Ordnung schaffen. Bei clarat ist sie im Research-Team. Und sie entscheidet, was ein clarat-Angebot ist. Ihr Lieblingssong ist Elias von Dispatch.
+      birte: Hat Erziehungswissenschaften studiert. Sie kennt sich gut mit Kindern aus. Und sie kann sich gut in andere hineinversetzen. Bei clarat ist sie im Research-Team. Und sie macht mit beim Marketing. Ihr Lieblingssong ist Borderline von Madonna.
+      chrissy: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie kann gut planen und ordnen. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist Rough Hands von Alexisonfire.
+      claudia: Hat vor clarat im Einzelhandel gearbeitet. Sie kann gut mit Menschen umgehen. Und schnell Informationen sammeln. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter. Ihr Lieblingssong ist Chandelier von Sia.
+      damjan: Ist Informatiker. Das heißt, er kennt sich gut mit Computern aus. Und kann gut programmieren. Er weiß schnell, wie man ein Problem lösen kann. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Forever More von Moloko.
+      eleonore: Hat Musik, Medien und Wirtschaft studiert. Sie kann schnell Informationen sammeln und verstehen. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass Nutzer clarat gut im Internet finden können. Ihr Lieblingssong ist Je Veux von Zaz.
+      elisa: Ist Kulturwissenschaftlerin. Das heißt, sie weiß viel über Kultur. Sie kann Schweres einfach erklären. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Boat Behind von Kings of Convenience.
+      esther: Hat Kulturwissenschaften studiert. Sie kennt sich gut mit Geschichte und Politik aus. Und lernt schnell neue Dinge. Bei clarat ist sie im Research-Team und kümmert sich um unser Lexikon. Ihr Lieblingssong ist This charming man von The Smiths.
+      fabian: Hat Politik und Geschichte studiert. Er kann sich gut in andere Menschen hineinversetzen. Und verstehen, warum sie etwas machen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Battery von Metallica.
       franziska: |
         Ist Völkerrechtlerin. Das heißt, sie weiß viel über Gesetze, die für
         alle Länder gelten. Sie kann gut komplizierte Sachen verstehen. Und
         schnell Lösungen finden. Bei clarat ist sie im Research-Team. Ihr
         Lieblingssong ist Explanations von Selah Sue.
+      hassan: Hat als Dolmetscher für Persisch gearbeitet. Persisch ist seine Muttersprache. Er ist schnell und gut organisiert. Bei clarat ist er im Übersetzer-Team und übersetzt clarat ins Persische. Sein Lieblingssong ist Looking For The Summer von Chris Rea.
       heading: Wer steckt hinter clarat?
-      janina: |
-        Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und
-        Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team.
-        Sie ist Expertin für die clarat-Sprache und hilft unseren Nutzern
-        weiter. Ihr Lieblingssong ist MFG von Fanta4.
-      janne: |
-        Janne hat Politik und internationale Beziehungen studiert. Sie kann sehr
-        gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie
-        entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist
-        Sweat von Ry X.
+      jacinta: Hat Deutsch und Französisch studiert. Ihre Muttersprache ist Englisch. Sie kann gut einfach und klar schreiben. Bei clarat ist sie um Übersetzer-Team und übersetzt clarat ins Englische. Ihr Lieblingssong ist Wannabe von den Spice Girls.
+      jakob: Ist Asien- und Afrikawissenschaftler. Das heißt, er weiß viel über diese Kontinente. Er bleibt auch bei Stress immer ruhig. Bei clarat ist er im Research-Team. Und er sucht im Internet nach Organisationen. Sein Lieblingssong ist Simplicity von Mbarga.
+      janina: Ist Kulturanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie kann gut schreiben. Bei clarat ist sie im Research-Team. Und sie hilft unseren Nutzern weiter, wenn sie Fragen haben. Ihr Lieblingssong ist MFG von Fanta4.
+      janina_m: Ist Hauswirtschaftliche Betriebsleiterin. Sie kann gut organisieren. Bei clarat kümmert sie sich um unsere Mitarbeiter. Und um unsere Büros. Sie sorgt dafür, dass alles funktioniert. Ihr Lieblingssong ist Kinder an die Macht von Herbert Grönemeyer.
+      janne: Janne hat Politik und internationale Beziehungen studiert. Sie kann gut ihre Zeit einteilen. Bei clarat ist sie im Research-Team. Und sie entscheidet, welche Angebote zu clarat gehören. Ihr Lieblingssong ist Sweat von Ry X.
+      jenny: 'Ist Sozialanthropologin. Das heißt, sie weiß viel über Menschen und Kulturen. Sie findet immer eine Lösung. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist I sing I swim von Seabear. '
       jens: |
         Ist Erziehungswissenschaftler. Das heißt, er kennt sich gut aus mit
         Bildung. Er versteht komplizierte Sachen schnell. Bei clarat ist er im
         Research-Team. Und er entscheidet, welche Angebote zu clarat gehören.
         Sein Lieblingssong ist 2B2 von Lambchop.
-      jule: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im
-        Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr
-        Lieblingssong ist Home von Edward Sharpe.
+      jule: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann gut Lösungen finden. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere refugees-Welt. Ihr Lieblingssong ist Home von Edward Sharpe.
       julia: |
         Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit
         Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei
         clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr
         Lieblingssong ist Reckoner von Radiohead.
-      julian: |
-        Ist Sozialökonom. Das heißt, er weiß viel über die Wirtschaft und die
-        Gesellschaft. Er kennt sich gut aus mit Computern. Bei clarat ist er im
-        Research-Team und kümmert sich um technische Dinge. Sein Lieblingssong
-        ist All You Need von Sublime.
-      katinka: |
-        Ist Psychologin. Das heißt, sie kann gut das Verhalten und die Gefühle
-        von Menschen verstehen. Und sie kann gut komplizierte Dinge ordnen. Bei
-        clarat ist sie im Research-Team. Ihr Lieblingssong ist The Greatest von
-        Cat Power.
+      julia_b: Hat Soziale Arbeit studiert. Und schon viel mit Kindern und Jugendlichen gearbeitet. Sie kann sich gut in andere Menschen hineinversetzen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Nantes von Beirut.
+      juliane: Hat Betriebswirtschaftslehre und Tourismus studiert. Sie kann gut planen. Und sie findet immer eine kreative Lösung. Bei clarat kümmert sie sich um das Marketing. Ihr Lieblingssong ist Easy von The Commodores.
+      karo: Hat Europawissenschaften studiert. Das heißt, sie weiß viel über europäische Politik. Sie kann gut organisieren. Bei clarat ist sie im Research-Team. Und sie kümmert sich um unser Handbuch. Ihr Lieblingssong ist Alive von Pearl Jam.
+      katja: Ist Germanistin. Das heißt, sie kennt sich gut mit Texten und mit Deutsch aus. Sie kann gut schreiben und Sachen leicht erklären. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Mysteries von Beth Gibbons.
       konstantin: |
         Ist Web-Developer. Das heißt, er kann gut Internetseiten programmieren.
         Er findet immer gute Lösungen. Bei clarat ist er im IT-Team und macht
         unsere Internetseite. Sein Liebslingssong ist Too Long von Daft Punk.
-      laura: |
-        Hat Südasienstudien und Geographische Entwicklungsforschung studiert.
-        Das heißt, sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer
-        den Überblick. Bei clarat ist sie im Research-Team. Ihr Lieblingssong
-        ist Paint It Black von den Rolling Stones.
-      lavinia: |
-        Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über
-        Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei
-        clarat ist sie im Research-Team und ordnet Angebote nach Themen. Ihr
-        Lieblingssong ist I'm Not Done von Fever Ray.
-      line: |
-        Ist Theaterregisseurin. Sie kennt sich auch gut aus mit Literatur und
-        Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat
-        ist sie im Research-Team. Ihr Lieblingssong ist Anybody Seen My Baby von
-        den Rolling Stones.
-      lisa: |
-        Ist Design Thinkerin. Das heißt, sie kann kreativ Projekte planen. Bei
-        clarat ist sie im Research-Team, macht Pläne und kümmert sich um die
-        Nutzer. Ihr Lieblingssong ist Another Day von Jamie Lidell.
+      laura_i: Ist Reiseverkehrskauffrau und Kulturwissenschaftlerin. Sie kann gut organisieren. Sie behält immer den Überblick und sie lernt gern neue Sachen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Proud Mary von Ike und Tina Turner.
+      laura_w: Hat Geographische Entwicklungsforschung studiert. Sie kennt sich gut aus mit Entwicklungsländern. Sie hat immer den Überblick. Bei clarat ist sie im Research-Team und kümmert sich um unsere Nutzer. Ihr Lieblingssong ist Paint It Black von den Rolling Stones.
+      lavinia: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann gut andere von Ideen überzeugen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist I'm Not Done von Fever Ray.
+      line: Ist Theaterregisseurin. Sie kennt sich gut aus mit Literatur und Sprache. Deshalb weiß sie, wie Wörter auf Menschen wirken. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Unintended von Muse.
+      lisa: Ist Design Thinkerin. Sie entwickelt gern mit anderen kreative Lösungen. Und kann gut zeichnen. Bei clarat ist sie im Research-Team und spricht mit Nutzern. Sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Resolution von Matt Corby.
+      magdalena: Hat Interdisziplinäre Lateinamerikastudien studiert. Das heißt, sie weiß viel über die Kultur und Politik in Lateinamerika. Sie kann sehr gut planen und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Summer Breeze von CocoRosie.
       marcus: |
         Ist Web-Designer. Das heißt, er kann Internetseiten programmieren und
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
-      nicole: |
-        Hat Interkulturelle Kommunikation studiert. Das heißt, sie weiß viel
-        über Kulturen und Sprache. Sie kann gut Entscheidungen treffen. Sie ist
-        Leiterin des Research-Teams. Ihr Lieblingssong ist Palabra Mi Amor von
-        Shaka Ponk.
+      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
+      michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
+      nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
+      nathalie: 'Hat Menschenrechte und internationale Politik studiert. Sie kann gut erklären. Und gut zuhören. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Me in You von Kings of Convenience.
+
+'
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
-      stefan: |
-        Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und
-        Gesellschaft. Er kann Menschen sehr gut für eine Sache begeistern. Und
-        er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The
-        Storm von The Doors.
+      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut Internetseiten programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
+      patrick: Hat Geschichte und Politik studiert. Er weiß besonders viel über das Land Jamaika. Er kann gut komplizierte Dinge verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Kingston Be Wise von Protoje.
+      philipp: Hat Geschichte, Politik und Recht studiert. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Und er sorgt dafür, dass wir gut arbeiten können. Sein Lieblingssong ist This Is Our Science von Astronautalis.
+      sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
+      sophie: Hat Nonprofit Management studiert. Sie kann gut organisieren und erkennt schnell, was wichtig ist. Bei clarat ist sie im Research-Team. Und sie findet heraus, wer clarat wie nutzt. Ihr Lieblingssong ist Lost von Frank Ocean.
+      stefan: Ist Kulturwissenschaftler. Das heißt, er weiß viel über Kultur und Gesellschaft. Er kann Menschen gut für eine Sache begeistern. Und er ist der Erfinder von clarat. Sein Lieblingssong ist Riders On The Storm von The Doors.
       text: |
         clarat ist ein Projekt der gemeinnützigen Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org). Mit der Benckiser Stiftung fördern wir
@@ -1523,17 +1569,9 @@ de:
         Antwort ist: Sehr schwer! Und damit war die Idee zu clarat geboren:
         Einfach Hilfe finden. Für Familien auf clarat family. Und für
         Flüchtlinge auf clarat refugees.
-      tine: |
-        Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch
-        Schriftstellerin. Das heißt, sie kann gut mit Sprache umgehen und schöne
-        Geschichten schreiben. Bei clarat ist sie im Research-Team. Ihr
-        Lieblingssong ist Survive It von Ghostpoet.
-      title: "Über Uns"
-      verena: |
-        Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und
-        Gesellschaft. Sie kann sehr gut Informationen sammeln. Bei clarat ist
-        sie im Research-Team und kümmert sich um unser Lexikon. Ihr
-        Lieblingssong ist Lose It von Oh Wonder.
+      tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
+      title: Über Uns
+      verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1592,6 +1630,12 @@ de:
           Unterstützungsangebote in deiner Nähe. Wir sagen dir auch, wie du die
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
+      meta_description:
+        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
+        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
+      meta_title:
+        family: Einfach Hilfe finden | clarat family
+        refugees: Einfach Hilfe finden | clarat refugees
       title:
         family: Unterstützungsangebote für Kinder, Jugendliche und Familien
         refugees: Unterstützungsangebote für Flüchtlinge
@@ -1615,9 +1659,9 @@ de:
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
-      responsible_html: |
+      responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1657,8 +1701,9 @@ de:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1678,8 +1723,9 @@ de:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1692,12 +1738,12 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
-        refugees: 
+      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
+      meta_title: clarat klärt auf | clarat
+      title: Bitte wähle deine clarat-Welt
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47
@@ -1710,9 +1756,12 @@ de:
     definitions: definitions
     emails: emails
     faq: haeufige-fragen
+    fr: fr
     haeufige-fragen: haeufige-fragen
     home: home
     impressum: impressum
+    liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen
@@ -1729,25 +1778,32 @@ de:
     forms:
       fill_field: Bitte fülle dieses Feld aus
     show:
-      cta_report_errors: |
-        Hast du einen Fehler entdeckt?
+      cta_report_errors: 'Hast du einen Fehler entdeckt?
+
+'
       google_translate_explanation: Oben auf der Seite kannst du deine Sprache anklicken. Dann kannst du clarat in deiner Sprache lesen. Einen Teil der Übersetzung hat die Google Translate API gemacht. Leider gibt es deshalb manchmal sprachliche Fehler. Es kann also sein, dass etwas komisch klingt.
     tooltips:
       welcome:
-        advanced_search: |
-          Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+        advanced_search: 'Willst du deine Suche genauer machen? Dann klicke hier. Es öffnet sich eine Box mit Auswahl-Möglichkeiten.
+
+'
         world_switch:
           family: Wenn du hier klickst, kommst du zu clarat Family. In clarat Family kannst du nach Hilfe für Kinder, Jugendliche und Familien suchen.
           refugees: Wenn du hier klickst, kommst du zu clarat Refugees. In clarat-refugees kannst du nach Hilfe für Flüchtlinge suchen.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
   subscriptions:
     create:
-      error: |
-        Bitte gib eine korrekte E-Mail Adresse ein.
+      error: 'Bitte gib eine korrekte E-Mail Adresse ein.
+
+'
       success: |
         Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
         Adresse gesendet.

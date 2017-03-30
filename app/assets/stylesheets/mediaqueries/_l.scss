@@ -10,10 +10,6 @@
 
   // Header ######################################
 
-  .header-main--wide {
-    height: 375px; // smaller height, @ToDo refactoring into container with a certain ratio by paddding-bottom: 39.5833333%
-  }
-
   .Claim {
     max-width: 40%;
   }
@@ -23,7 +19,7 @@
   }
 
   .Claim__secondrow {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .mascot--header {
@@ -46,7 +42,7 @@
     height: auto;
     max-width: 100%;
     width: 100%;
-    zoom:1;
+    zoom: 1;
 
     &:before, &:after {
       display: block;
@@ -60,15 +56,15 @@
     }
   }
 
-  .Distributor__advanced-filter-trigger-wrapper {
-    position: absolute;
-    right: 0;
-  }
+  //.Distributor__advanced-filter-trigger-wrapper {
+  //  position: absolute;
+  //  right: 0;
+  //}
 
   .search-form--input-wrapper {
-    right: 60px;
+    right: 80px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       left: 60px;
       right: 15px;
     }
@@ -86,7 +82,6 @@
   }
 
   #new_search_form {
-    width: 435px;
 
     .tt-dropdown-menu {
       margin-right: 0;
@@ -96,15 +91,13 @@
     #search_form_search_location {
 
       .template--pages-home & {
-        width: auto;
         max-width: none;
       }
     }
 
-
     .template--pages-home & {
-      max-width: 655px;
       width: auto;
+      max-width: 100%;
 
       .input {
         &.search_form_query {
@@ -135,8 +128,9 @@
   }
 
   .nav-sections__list {
+    -js-display: flex;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .nav-sections__listitem {
@@ -180,7 +174,7 @@
     width: auto;
 
     // Repeat to override specificity
-    body.ar & {
+    html[dir="rtl"] & {
       display: block;
       float: none;
       margin-left: 0;
@@ -195,6 +189,10 @@
 
   .content-main {
     padding-bottom: 0;
+
+    &.content-main--wide {
+      margin-top: 0;
+    }
   }
 
   .section-start {
@@ -242,7 +240,7 @@
       padding-right: 60%;
     }
   }
-  
+
   .filter-form {
     .col-form-wrapper {
       display: block;
@@ -268,12 +266,31 @@
     width: 50%;
   }
 
+  .result-order {
+    position: relative;
+
+    .filter-form__fieldset {
+      padding: 0;
+    }
+  }
+
   .section-wrapper-major {
     .template--emails-offers_index & {
       width: 100%;
     }
   }
 
+  .section-choice__headline {
+    background-size: auto 80%;
+  }
+  
+  .result-order__label {
+    display: none;
+  }
+
+  .result-order__select {
+    font-size: 13px;
+  }
 
   // Footer ######################################
 
@@ -293,13 +310,13 @@
     border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       border-top-left-radius: 0;
     }
   }
 
   input.newsletter-subscribe__input {
-    body.ar & {
+    html[dir="rtl"] & {
       border-top-left-radius: 6px;
       margin-right: 0;
     }

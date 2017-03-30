@@ -2,7 +2,8 @@
 host 'www.clarat.org'
 
 sitemap :site do
-  url root_url, last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
+  url section_choice_url,
+      last_mod: Time.zone.now, change_freq: 'daily', priority: 1.0
 
   I18n.available_locales.each do |locale|
     url send(:"offers_#{locale}_url", section: :refugees), priority: 0.6
@@ -27,14 +28,14 @@ end
 #
 #   sitemap_for Page.scoped
 
-sitemap_for Offer.approved do |offer|
+sitemap_for Offer.visible_in_frontend do |offer|
   I18n.available_locales.each do |locale|
     url send(:"offer_#{locale}_url", offer.canonical_section, offer),
         last_mod: offer.updated_at, priority: 0.9
   end
 end
 
-sitemap_for Organization.approved do |orga|
+sitemap_for Organization.visible_in_frontend do |orga|
   I18n.available_locales.each do |locale|
     url send(:"organization_#{locale}_url", orga.canonical_section, orga),
         last_mod: orga.updated_at, priority: 0.8

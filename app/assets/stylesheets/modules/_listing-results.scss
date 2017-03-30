@@ -4,6 +4,10 @@
 //
 // ---------------------------------------------------------------
 
+.Listing-results {
+  position: relative;
+}
+
 .Listing-results__pending-ajax {
   text-align: center;
   font-size: 40px;
@@ -37,7 +41,7 @@
 
 .Listing-results__headline,
 .Listing-results__headline--remote {
-  body.ar & {
+  html[dir="rtl"] & {
     padding-right: 0;
   }
 }
@@ -61,7 +65,7 @@
     right: 0;
     top: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       right: auto;
       left: 0;
     }
@@ -121,7 +125,7 @@
   @extend %clarat_rounding_start;
   background: $brand_yellow;
   padding: 7px 15px;
-  min-height: 38px;
+  min-height: 28px;
   font-size: 18px;
 
   a {
@@ -157,7 +161,7 @@
   width: 30px;
   height: 30px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     left: 4px;
     right: auto;
   }
@@ -176,7 +180,7 @@
   background: $brand_green_alternative;
   color: $brand_white;
 
-  body.ar & {
+  html[dir="rtl"] & {
     margin-left: -5px;
     margin-right: 0;
   }
@@ -196,11 +200,11 @@
   height: 24px;
   background: transparent no-repeat center center;
 
-  &[aria-toggle='false'] {
+  &[aria-expanded='false'] {
     background-image: image-url('ico_expand.svg');
   }
 
-  &[aria-toggle='true'] {
+  &[aria-expanded='true'] {
     background-image: image-url('ico_collapse.svg');
   }
 
@@ -223,7 +227,7 @@
   background-size: auto 30px;
   padding-left: 30px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     background-position: calc(100% - 5px) center;
     padding-left: 0;
     padding-right: 34px;
@@ -238,16 +242,27 @@
   width: 62%;
 }
 
+.Listing-results__location {
+  line-height: 2;
+}
+
 .Listing-results__stamp {
   position: relative;
   width: 38%;
-  background: transparent image-url('ico_user.svg') no-repeat 6px 5px;
-  padding: 4px 4px 0 30px;
+  background: transparent image-url('ico_user.svg') no-repeat 9px 5px;
+  padding: .45em 10px .45em 36px;
   background-size: auto 20px;
-  line-height: 1.8;
+  min-height: 32px;
+  line-height: 1.4;
   overflow: hidden;
 
-  body.ar & {
+  .section-content__body--offers-of-orga & {
+    padding-left: 36px;
+    background-position: 5px 3px;
+    line-height: 2;
+  }
+
+  html[dir="rtl"] & {
     background-position: calc(100% - 6px) 5px;
     padding: 4px 30px 0 4px;
   }

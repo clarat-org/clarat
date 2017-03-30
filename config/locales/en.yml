@@ -22,14 +22,15 @@ en:
   cells:
     contact_people:
       dr: Dr.
-      email: 'Email:'
+      email: 'E-mail:'
       fax: 'Fax:'
       female: Ms.
       heading: How can you get in touch?
-      male: Mister
-      obfuscated_email: |-
-        This e-mail address is protected from spam bots, you must enable
+      male: Mr.
+      obfuscated_email: |+
+        This e-mail address is protected from spam bots. You must enable
         JavaScript in your browser to view it.
+
       phone: 'Telephone:'
       prof_dr: Prof. Dr.
     faq:
@@ -37,30 +38,7 @@ en:
       section_1:
         heading: Who, how, what?
         question_1:
-          answer: |
-            clarat is an online platform where you can find help and support
-            offerings. We help you find the help you need. We do not offer advising
-            or consulting services – there are experts for that. And it is precisely
-            their offerings that you will find on clarat: on <b>clarat
-            family</b> and on <b>clarat refugees</b>:
-            <p>
-            <ul>
-            <li>
-            <b>clarat family</b> helps children, adolescents, and families, who are
-            facing problems and who are looking for help nearby. Here you can easily
-            find help for yourself, your family, and your friends, or for other
-            children, adolescents, and families you might know. If you want to
-            better understand what clarat family is all about, you can watch this
-            short %{link_to_family_movie}.
-            </li>
-            <li>
-            <b>clarat refugees</b> helps refugees who are looking for support
-            nearby. You can easily find help here: for yourself, your family, and
-            your friends. You can also find help if you are not a refugee yourself,
-            but know refugees who need help.
-            </li>
-            </ul>
-            </p>
+          answer: "clarat is an online platform where you can find help and support\nservices. We can help you find the help you need. But we don't \noffer advising or counselling services ourselves. There are experts \nfor that. And it's their support you will find here. On <b>clarat\nfamily</b> and on <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\n<b>clarat family</b> helps children, teenagers and families who have problems. \nAnd who are looking for help nearby. Here you can easily\nfind help. Help for yourself, your family and your friends. Or for other\nchildren, teenagers and families you know. If you want to\nunderstand what clarat family is all about, you can watch this\nshort %{link_to_family_movie}.\n</li>\n<li>\n<b>clarat refugees</b> helps refugees who are looking for support\nnearby. You can easily find help here. Help for yourself, your family and\nyour friends. You can also find help if you are not a refugee yourself,\nbut know refugees who need help.\n</li>\n</ul>\n</p>"
           link_1:
             name: video
             target: _blank
@@ -69,8 +47,8 @@ en:
           question: What is clarat?
         question_10:
           answer: |-
-            The money for <b>clarat family</b> and <b>clarat refugees</b> comes mostly from
-            the %{link_to_bsz}. However in the future, we would like to bring additional supporters along on board.
+            The money for <b>clarat family</b> and <b>clarat refugees</b> mostly comes from
+            the %{link_to_bsz}. However, we would like to have even more supporters on board in the future.
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -78,18 +56,12 @@ en:
             var: link_to_bsz
           question: Who finances clarat?
         question_11:
-          answer: |
-            <b>clarat family</b> and <b>clarat refugees</b> are meant to exist for a
-            long time. The %{link_to_bsz} will finance both platforms for the long
-            term. This means that you will also be able to find help on clarat in
-            the years to come. For now, the offerings are mostly in Berlin, but we
-            will start adding offerings from other cities and regions to clarat very
-            soon.
+          answer: "<b>clarat family</b> and <b>clarat refugees</b> are intended to be long-term projects. \nThis means that you'll be able to find help on clarat in\nthe years to come. For now, the support services are mostly in Berlin. \nBut we'll start adding other cities and regions to clarat very soon."
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
             url: http://www.benckiser-stiftung.org/
-            var: link_to_bsz
+            var: NOTRANSLATE
           question: How long will clarat exist?
         question_12:
           answer: |
@@ -102,10 +74,10 @@ en:
             var: link_to_github
           question: Is clarat’s programming code open source?
         question_13:
-          answer: |
+          answer: |-
             For the time being, clarat does not offer an interface to download and
             edit data. We may have an interface in the future, but this is not
-            entirely certain. For now, we primarily compile and sort data. If you
+            entirely certain. For now, we are primarily compiling and sorting data. If you
             are interested in such an interface, %{link_to_contact_form}.
           link_1:
             name: please contact us
@@ -114,22 +86,10 @@ en:
             var: link_to_contact_form
           question: Does clarat offer an interface to download and edit data?
         question_2:
-          answer: |
-            There are many help and support offerings available in Germany for
-            people who really need help. However, these offerings can often be hard
-            to find. On the one hand, this is because it can be hard to know exactly
-            where to look for them. On the other hand, this is because the contact
-            partners are not always clear. That is exactly what we want to change.
+          answer: "In Germany, there are lots of support programmes and services. For \npeople who really need help. However, these services can often be hard\nto find. Sometimes, for example, you might not be sure what you should look\nfor. Or maybe it's not clear who you should contact. And this is what we \nwant to change."
           question: Why does clarat exist?
         question_3:
-          answer: |
-            Enter a search term describing your problem. Then add the location. You
-            will find matching help and support offerings in your area. You will
-            also be shown the help you can get over the phone or online. Have a look
-            %{ref_to_how_to_find_right_help} for information about how to find what
-            you’re looking for. When you click on the title of an offering, we tell
-            you what you need to do to obtain the help you need, for example whether
-            you need to call or whether you can just go there.
+          answer: "First of all, enter your problem. And then tell us where you are. Then you'll \nfind all the support services near you. Or support you can get using your phone or the \ninternet. Have a look %{ref_to_how_to_find_right_help} for a more detailed\nexplanation about how to get help. When you click on one of the support services,\nwe'll tell you what to do next. For example, if you should make a phone call or \njust go by in person."
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -137,11 +97,7 @@ en:
             var: ref_to_how_to_find_right_help
           question: How does clarat work?
         question_4:
-          answer: |
-            clarat is and will stay free of charge. Anyone can search on <b>clarat
-            family</b> for help and support for children, adolescents, and families
-            for free. And anyone can search on <b>clarat refugees</b> for help for
-            refugees for free.
+          answer: "clarat is and always will be free of charge. Everyone can use clarat for free.\nEveryone can search on <b>clarat family</b> for help and support for children, \nteenagers and families for free. And everyone can search on <b>clarat refugees</b>\nfor help for refugees for free."
           question: Is clarat free of charge?
         question_5:
           answer: |
@@ -149,30 +105,17 @@ en:
             clarat will know your name or your address
           question: Can I search anonymously on clarat?
         question_6:
-          answer: |
-            We regularly check whether the information on clarat is still up-to-date.
-            After all, this is the only way we can ensure that clarat is really
-            helpful for children, adolescents, families, and refugees. If the
-            information is outdated, then we will update it.
-          question: Is the information on clarat up to-date?
-        question_7:
           answer: |-
-            You can use some of the offerings at <b>clarat family</b> and at <b>clarat
-            refugees</b> from anywhere. It doesn't matter where you live. There are many offerings
-            that allow you to receive help over the phone or online--in other words,
-            via e-mail, via chat, or in an online forum. You can use many other offerings right there where you live. At <b>clarat refugees</b>
-            you will soon find offerings for many large cities in Germany. At the moment, that means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we have started with Berlin. Here you
-            can find a lot of offerings. But we are collecting further. Soon also for other large cities in Germany.
+            We regularly check to see if the information on clarat is still up to date.
+            Because this is the only way we can ensure that clarat is really
+            helpful for children, teenagers, families and refugees. If the
+            information is out of date, then we will update it.
+          question: Is the information on clarat up to date?
+        question_7:
+          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
           question: Is clarat available for all of Germany?
         question_8:
-          answer: |
-            clarat shows you an overview of help and support offerings in your area,
-            meaning all in one place. We also tell you exactly what you need to do
-            to get help. We always use simple language that anyone can easily
-            understand. This is because at clarat we want everyone to find the help
-            they need – no matter how well they speak German. On clarat, you can
-            also switch to other languages. If you want to know more, click
-            %{ref_to_how_many_languages}.
+          answer: "clarat shows you the help you can get in your local area. All the information \nyou need is in one place. Our layout is simple and clear. And we tell you exactly \nwhat you need to do to get help. We write in a clear, simple language. So that \neveryone can understand what we've written. Because at clarat we want to help \neveryone who needs help. Even people who don't speak very good German. On\nclarat, you can read about the support services in other languages, too. If you \nwant to know more, click %{ref_to_how_many_languages}."
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -181,9 +124,9 @@ en:
           question: What is special about clarat?
         question_9:
           answer: |-
-            clarat was brought to life in 2014 by the %{link_to_bsz}, which is a family foundation
-            with a long history of supporting children and adolescents. And with clarat, it now wants
-            to help refugees as well. Watch this %{link_to_bsz_movie} to learn more
+            clarat was founded in 2014 by the %{link_to_bsz}. This is a family foundation
+            which has been helping children and teenagers for a long time now. And now,
+            with clarat refugees, refugees too. Watch this %{link_to_bsz_movie} to learn more
             about the foundation.
           link_1:
             name: Benckiser Stiftung Zukunft
@@ -206,54 +149,10 @@ en:
         heading: Do you have questions about your search?
         question_1:
           anchor: who_finds_help
-          answer: |
-            clarat is for everyone: With only one click you can decide whether you
-            want to search on <b>clarat family</b> or <b>clarat refugees</b>:
-            <p>
-            <ul>
-            <li>
-            <b>clarat family</b> is for children, adolescents, and families in need
-            of help – regardless of whether they have problems in their families,
-            with friends, at school, or somewhere else.
-            </li>
-            <li>
-            <b>clarat refugees</b> is for all refugees in Germany: for children and
-            adolescents, for men and women, and for families, who have fled their
-            home countries and are now in need of assistance.
-            </li>
-            </ul>
-            </p>
-            clarat can also be useful for people who want to help others, such as
-            teachers, neighbors, and friends.
+          answer: "clarat is for everyone: With just one click you can decide whether you\nwant to search on <b>clarat family</b> or <b>clarat refugees</b>:\n<p>\n<ul>\n<li>\n<b>clarat family</b> is for children, teenagers and families who need\nhelp. It doesn't matter whether they have problems in their families,\nwith friends, at school, or somewhere else.\n</li>\n<li>\n<b>clarat refugees</b> is for all refugees in Germany: for children and\nteenagers, for men and women, and for families. For everyone who \nhas fled their home country and now needs help.\n</ul>\n</p>\nclarat can also be useful for people who want to help others. People like\nteachers, neighbours and friends."
           question: Who can find help on clarat?
         question_10:
-          answer: |
-            There could be several reasons for this.
-            <p>
-            <ul>
-            <li>
-            It could be that your search term can’t be found. In that case, you
-            should try another search with a different term. If you can’t think of
-            another term, try searching by clicking on our icons. On clarat that
-            means: <i>search by categories</i>. You can read about it
-            %{ref_to_how_to_find_right_help}.
-            </li>
-            <li>
-            If you live in a rural area and can’t seem to find any offerings nearby,
-            enter the name of the nearest city in the search box that says
-            <b>Where?</b> Or try searching for help offered via telephone or online.
-            </li>
-            <li>
-            Another reason could be that we haven’t yet compiled any information on
-            offerings in your district or city.
-            </li>
-            <li>
-            Or we don’t yet have any matching offerings in our database. In order
-            for us to change that, we need your feedback. If you can’t find what
-            you’re looking for, please send an e-mail to %{mailto_clarat}.
-            </li>
-            </ul>
-            </p>
+          answer: "There could be several reasons for this.\n<p>\n<ul>\n<li>\nIt could be that your search term can’t be found. In this case, you\nshould try another search with a different word. If you can’t think of\nanother word, try searching by clicking on our icons. On clarat that\nmeans: <i>search by categories</i>. You can read about it\n%{ref_to_how_to_find_right_help}.\n</li>\n<li>\nIf you live in the countryside and can’t seem to find any support \nservices nearby, enter the name of the nearest city in the search box that says\n<b>Where?</b> Or try searching for help offered via telephone or online.\n</li>\n<li>\nAnother reason could be that we haven’t compiled any information on\nsupport services in your district or city yet.\n</li>\n<li>\nOr we don’t yet have any matching support services in our database. In order\nfor us to change that, we need your feedback. If you can’t find what\nyou’re looking for, please send an e-mail to %{mailto_clarat}.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -266,162 +165,28 @@ en:
             var: mailto_clarat
           question: Why can’t I find what I’m looking for?
         question_11:
-          answer: |
-            First, you should check what kind of problem the offering addresses. You
-            can find information in the description under <b>What’s it about?</b> If
-            you don’t think that an offering provides the right kind of help for
-            you, try a different one. If you’re still not sure, try contacting the
-            organization. Usually there’s a number you can call or an e-mail address.
-            You can find these contact details under <i>How can you get in touch?</i>
+          answer: "First of all, you should check what kind of problem the support service helps \npeople with. You can find information in the description under <b>What’s it about?</b> If\nyou don’t think that a support service provides the right kind of help for\nyou, try a different one. If you’re still not sure, try contacting the\norganization. Usually there’s a number you can call or an e-mail address.\nYou can find these contact details under <i>How can you get in touch?</i>"
           question: What can I do if I don’t know whether a help or support offering is right for me?
         question_12:
-          answer: |
-            On clarat you can also look for help and support offerings for others,
-            for example for a friend, as an uncle for your nephew, as a mother for
-            your child, or as a teacher for your student. However, in our
-            descriptions we usually address the person who will be receiving the
-            help (usually children and adolescents).
+          answer: |-
+            On clarat you can also look for help and support for others.
+            For example, for a friend. Or as an uncle for your nephew. Or as a mother for
+            your child. Or as a teacher for your student. However, in our
+            descriptions we usually talk to the person who will be receiving the
+            help. And that's often usually children and adolescents.
           question: How do I find help if I’m not looking for myself, but for someone else?
         question_2:
-          answer: |-
-            On <b>clarat family</b> you can find different help and support
-            offerings for different kinds of problems. We have organized them for
-            you by topics:
-            <p>
-            <ul>
-            <li class="FAQ__ico--family--family">
-            <b>Family problems</b><br>
-            This is where you can find help if you have problems in your family, for
-            example because of an argument. You can also find help for many other
-            issues such as coming of age and raising children. Any member of the
-            family can find help here. There are many offerings for children as well
-            as for parents.
-            </li>
-            <br>
-            <li class="FAQ__ico--health--family">
-            <b>Health</b><br>
-            Here you can find help with health-related problems: for example if
-            you’re facing problems because you or someone in your family is ill, or
-            if you or someone you know is dealing with addiction. You will also find
-            help and support offerings for problems that can come up during
-            pregnancy.
-            </li>
-            <br>
-            <li class="FAQ__ico--learn--family">
-            <b>Learning and working</b><br>
-            Here you can find help if you have problems at school or in your
-            vocational training. You will also find help if you’re having trouble
-            finding a spot in a vocational training program, or if you’re looking
-            for a German language course.
-            </li>
-            <br>
-            <li class="FAQ__ico--everydaylife--family">
-            <b>Everyday worries</b><br>
-            Here you can find help with smaller and bigger problems in your everyday
-            life: for example, if you have money troubles, or if you are living on
-            the street. You will also find offerings for free time activities and
-            offerings that can help you with filling out forms and applications.
-            </li>
-            <br>
-            <li class="FAQ__ico--violence--family">
-            <b>Violence</b><br>
-            Here you can find help if someone has hit or abused you. You will also
-            find help if you’re having trouble with aggression yourself or if you
-            have committed a crime.
-            </li>
-            <br>
-            <li class="FAQ__ico--crisis--family">
-            <b>Emergency</b><br>
-            Here you can find support if you are in urgent need of help. If an
-            offering’s title says <b>day and night</b> that means you can reach
-            someone at any time – no matter how late it is.
-            </li>
-            </ul>
-            </p>
-          question: On what topics can I find help on clarat family?
+          answer: "On <b>clarat family</b> you can find different help and support\nservices for all different kinds of problems. We have organized them for\nyou by topic:\n<p>\n<ul>\n<li class=\"FAQ__ico--family--family\">\n<b>Family problems</b><br>\nThis is where you can find help if you have problems in your family. For\nexample, problems because of arguments. You can also find help for many \nother problems. Things like parenting problems. Or children growing up. Any \nmember of the family can find help here. There's support for children as well\nas for parents.\n</li>\n<br>\n<li class=\"FAQ__ico--health--family\">\n<b>Health</b><br>\nThis is where you can find help if you have problems with your health. \nFor example, if you don't feel well, because you are sick. Or if someone in \nyour family is ill. Or if you or someone you know has problems with addiction.\nYou can also find here if you have problems during your pregnancy.\n</li>\n<br>\n<li class=\"FAQ__ico--learn--family\">\n<b>Learning and working</b><br>\nThis is where you can find help if you have problems at school. Or in a\nvocational training programme. You'll also find help if you’re having trouble\nfinding a spot in a vocational training programme or an apprenticeship.\nOr if you’re looking for a German language course.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--family\">\n<b>Everyday worries</b><br>\nThis is where you can find help with everyday problems. They can be \nbig problems or small problems. For example, if you have money problems \nor if you're living on the street. But you'll  will also find help here if you are \nlooking for something to do in your free-time. Or if you need support filling in forms\nand applications. \n<br>\n<li class=\"FAQ__ico--violence--family\">\n<b>Violence</b><br>\nThis is where you can find help if someone has hit or abused you. You'll also\nfind help here if you’re having trouble with aggression yourself. Or if you've committed a crime.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--family\">\n<b>Emergency</b><br>\nThis is where you can find  help if you are in a crisis situation. If a\nsupoort service’s title says <b>day and night</b> that means you can reach\nsomeone at any time. No matter how late it is.\n</li>\n</ul>\n</p>"
+          question: Which issues can clarat family help me with?
         question_3:
-          answer: |-
-            On <b>clarat refugees</b> you can find different help and support
-            offerings for different kinds of problems. We have organized them for
-            you by topics:
-            <p>
-            <ul>
-            <li class="FAQ__ico--legal--refugees">
-            <b>Asylum and the law</b><br>
-            Here you can find help if you have questions about the asylum process or
-            about German laws. This section is for you regardless of whether you’re
-            about to apply for asylum or a decision has already been made, for
-            example if you have received a temporary residence permit. Refugee
-            minors will also find support offerings here.
-            </li>
-            <br>
-            <li class="FAQ__ico--family--refugees">
-            <b>Family problems</b><br>
-            This is where you can find help if you have problems in your family,
-            for example because of an argument. You can also find help for many
-            other issues such as coming of age and raising children. Any member of
-            the family can find help here. There are many offerings for children as
-            well as for parents.
-            </li>
-            <br>
-            <li class="FAQ__ico--health--refugees">
-            <b>Health</b><br>
-            Here you can find help if you are ill or if you are pregnant. You can
-            also find offerings to help you if you are dealing with emotional or
-            psychological trauma as a result of war or torture. This section will
-            also help you find offerings if you have a disability. On clarat you can
-            find doctors and psychologists offering help to refugees.
-            </li>
-            <br>
-            <li class="FAQ__ico--learn--refugees">
-            <b>Learning and working</b><br>
-            Here you can find help if you have questions about learning and working
-            in Germany. You might want to learn more about preschools (kindergarten)
-            and schools, what you need to do in order to study at a university, or
-            how to go about finding a job or a spot in a vocational training program.
-            You will also find many different German language courses as well as
-            integration courses that are designed for refugees.
-            </li>
-            <br>
-            <li class="FAQ__ico--everydaylife--refugees">
-            <b>Living in Germany</b><br>
-            Here you can find help if you’re having trouble dealing with government
-            agencies, for example because you don’t speak German. Here you can find
-            someone who can translate or interpret for you, or someone who can
-            accompany you to appointments. But you will also find other kinds of
-            support here. We will show you where you can get food, furniture, and
-            clothing. You’ll also find offerings where you can meet other people,
-            for example at sports clubs or cooking classes.
-            </li>
-            <br>
-            <li class="FAQ__ico--violence--refugees">
-            <b>Violence</b><br>
-            Here you can find help if you have experienced violence or were tortured
-            in your home country. You will also find help if, for example, you want
-            to leave an extremist group.
-            </li>
-            <br>
-            <li class="FAQ__ico--crisis--refugees">
-            <b>Emergency</b><br>
-            Here you can find support if you are in urgent need of help. If an
-            offering’s title says <b>day and night</b> that means you can reach
-            someone at any time – no matter how late it is.
-            </li>
-            </ul>
-            </p>
-          question: On what topics can I find help on clarat refugees?
+          answer: "On <b>clarat refugees</b> you can find different help and support\nservices for all different kinds of problems. We have organized them for\nyou by topic:\n<p>\n<ul>\n<li class=\"FAQ__ico--legal--refugees\">\n<b>Asylum and the law</b><br>\nThis is where you can find help if you have questions about the asylum \nprocess. Or questions about asylum law in Germany. It doesn't matter \nwhat your status is. It doesn't matter if you are going to apply for asylum \nin the future. Or if a decision has already been made. Everyone can get \nhelp here. For example, refugees who have a Duldung status - a temporary \nsuspension of deportation. And refugee minors - that means children and \nteenagers - can get help here too.\n</li>\n<br>\n<li class=\"FAQ__ico--family--refugees\">\n<b>Family problems</b><br>\nThis is where you can find help if you have problems in your family.\nFor example, problems because of arguments.You can also find help for many \nother problems. Things like parenting problems. Or children growing up. Any \nmember of the family can find help here. There's lots of support for children here. \nAnd lots of support for adults, too.\n</li>\n<br>\n<li class=\"FAQ__ico--health--refugees\">\n<b>Health</b><br>\nThis is where you can find help if you are ill. Or if you're pregnant. You can\nalso find support services to help you if you have problems because of war or \ntorture. Or if you have a disability. Here you will find doctors and psychologists\nwho help refugees.\n</li>\n<br>\n<li class=\"FAQ__ico--learn--refugees\">\n<b>Learning and working</b><br>\nThis is where you can find help if you have questions about learning and working\nin Germany. Questions about nursery schools or childcare facilities. Or questions about \nschools. Or if you want to find out what you need to do to study at a university or college.\nOr how to find a job or a place in a vocational training programme.\nAnd you'll find lots of different German language courses here too. And\nintegration courses for refugees.\n</li>\n<br>\n<li class=\"FAQ__ico--everydaylife--refugees\">\n<b>Living in Germany</b><br>\nThis is where you can find help if you’re having problems with government\nagencies. For example, problems because you don’t speak German. Here\nyou can find someone who can translate or interpret for you. Or someone \nwho can accompany you to appointments. But you'll also find kinds of\nsupport here. too. We will show you places, where you can get food. Or \nfurniture and clothing. You’ll also find support services where you can meet \nother people. For example at places like sports clubs or cooking classes.\n</li>\n<br>\n<li class=\"FAQ__ico--violence--refugees\">\n<b>Violence</b><br>\nThis is where you can find help if you have been hit or experienced violence. \nOr if you were tortured in your home country. But you can find other help here too.\nFor example, if you want to leave an extremist group.\n</li>\n<br>\n<li class=\"FAQ__ico--crisis--refugees\">\n<b>Emergency</b><br>\nThis is where you can find help if you are in a crisis situation. If a\nsupport service's title says <b>day and night</b> that means you can reach\nsomeone at any time. No matter how late it is.\n</li>\n</ul>\n</p>"
+          question: Which issues can clarat refugees help me with?
         question_4:
-          answer: |
-            On the right side of the main page you will see a flash (lightning bolt)
-            symbol. If you click on the flash you will see help and support
-            offerings for emergency situations, meaning if you need help fast. If an
-            offer says <b>day and night</b> you can reach someone at any time– no
-            matter how late it is. You can also find offerings where you can receive
-            help over the phone or online, if that’s what you prefer.
+          answer: "On the right side of the main page you will see a flash (lightning bolt)\nsymbol. If you click on the flash, you'll see help and support services for \nemergency situations. These support services can help you if you need \nhelp fast. meaning if you need help fast. If a support service says \n<b>day and night</b>, that means you can reach someone at any time. No\nmatter how late it is. You can also find support services where you can get\nhelp over the telephone or online, if you would prefer."
           question: How can I find help fast in case of an emergency?
         question_5:
           anchor: how_to_find_right_help
-          answer: |
+          answer: |-
             There are two ways of looking for help and support offerings:
             <p>
             <ul>
@@ -436,93 +201,49 @@ en:
             <li>
             If you don’t know the exact word describing your problem you can try
             searching our categories. If, for example, you’re having trouble with
-            your homework, you can click on the book. On the left side you will see
+            your homework, you can click on the book. On the left side, you'll see
             a selection of terms on the topics of learning and working. Pick one.
             Enter a location in the field that says <b>Where?</b> You can also click
             on the word <b>Where?</b> and then on <b>Use my location</b>. Then click
-            on the magnifying glass and press Enter. You will be shown offerings in
+            on the magnifying glass and press Enter. You'll be shown support services in
             your area!
             </li>
             </ul>
             </p>
           question: How can I find the right kind of help?
         question_6:
-          answer: |
-            Many of the offerings that you will find on clarat are free of charge.
-            However there are also offerings for which you have to pay. That doesn’t
-            necessarily mean that you will have to pay for them yourself. Sometimes
-            health insurance or a public service covers the costs. The best option
-            is always to ask the organization directly. That way you can make sure
-            the offer is free of charge for you or not.
+          answer: "Many of the support services that you'll find on clarat are free of charge.\nHowever, there are also some support programmes for which you have to pay. \nBut that doesn’t necessarily mean you'll have to pay for them yourself. Sometimes\nyour health insurance can pay the costs for you. Or a public administration office \nmight cover the costs. The best option is always to ask the organization directly. \nThat way, you can make sure the support service is free of charge for you."
           question: Will I find help that is free of charge?
         question_7:
-          answer: |
-            Some of the offerings you will find on clarat can be used anonymously.
-            That means that you don’t need to tell anyone your name. If an offering
+          answer: |-
+            Some of the support services you'll find on clarat can be used anonymously.
+            That means that you don’t need to tell anyone your name. If a service
             can be used anonymously, this will be stated under <i>What do you have
-            to do?</i> If it is not mentioned there, it is best to ask the
+            to do?</i> If it isn't mentioned there, it'is best to ask the
             organization directly.
           question: Will I find help where I can stay anonymous?
         question_8:
-          answer: |
-            As a child or adolescent, you can find help and support offerings if
+          answer: |-
+            If you're a child or teenager, you can find help if
             <p>
             <ul>
             <li>
-            you have a mental illness, meaning if you are suffering from
+            you have a mental illness. That means if you are suffering from
             psychological or emotional problems.
             </li>
             <li>
-            you have a parent with a disability, regardless of whether they have a
+            you have a parent with a disability. It doesn't matter whether they have a
             mental or physical disability.
             </li>
             <li>
-            you have a brother or sister with a disability, regardless of whether
+            you have a brother or sister with a disability. It doesn't matter whether
             they have a mental or physical disability.
             </li>
             </ul>
             </p>
           question: Can I find help regarding disabilities on clarat family?
         question_9:
-          answer: |
-            Start your search for help and support offerings. If you want to know
-            how you can find the right kind of help, you can read about that
-            %{ref_to_how_to_find_right_help}. If you are on the results page you
-            will see the button <b>Show search options</b>. If you click on it you
-            will see different filters from which you may choose to narrow down your
-            search.
-            <p>
-            <ul>
-            <li>
-            <b>Age of the child?</b> Enter your age or the age of the child who
-            needs help.
-            </li>
-            <li>
-            <b>Language?</b> Enter your native language here. You will be shown the
-            help that is offered in your native language. If you don’t select a
-            language you will be shown help and support offerings that are provided
-            in German.
-            </li>
-            <li>
-            <b>Help for whom?</b> You can select who the help is for. If you are
-            looking for support for your whole family, click on <i>for families</i>.
-            If you are a child and you are looking for help for yourself, click on
-            <i>for children and adolescents</i>.
-            </li>
-            <li>
-            <b>Gender?</b> You can select whether you are looking for offerings
-            <i>only for boys and men</i> or <i>only for girls and women</i>. If you
-            do not select anything here, you will be shown both options.
-            </li>
-            <li>
-            <b>How?</b> You have several choices. If you would like to find
-            offerings where you obtain help in person, click on <i>in person</i>. If
-            you prefer to stay at home, click <i>by telephone</i> or <i>online</i>.
-            You can then choose between offerings where you receive help over the
-            phone, via e-mail, chat, an online forum, or online courses.
-            </li>
-            </ul>
-            </p>
+          answer: "First of all, start looking for help. If you want to know\nhow you can find the right kind of help, you can read about that\n%{ref_to_how_to_find_right_help}. Once you're on the results page, \nyou'll see the button <b>Show search options</b>. If you click on it,\n you'll see different filters. You can use these filters to narrow down \nyour search.\n<p>\n<ul>\n<li>\n<b>Child's age?</b> You can enter your age here. Or the age of the child who\nneeds help.\n</li>\n<li>\n<b>Language?</b> You can enter your native language here. You will be shown \nthe help that is offered in your language. If you don’t select a language,\nthen you'll be shown support services where German is spoken.\n</li>\n<li>\n<b>Help for whom?</b> You can choose who the help is for here. If you're\nlooking for support for your whole family, click on <i>for families</i>.\nIf you're a child and you are looking for help for yourself, click on\n<i>for children and teenagers</i>.\n</li>\n<li>\n<b>Gender?</b> You can select whether you are looking for support\n<i>only for boys and men</i> or <i>only for girls and women</i> here. If you\ndon't select anything here, you'll be shown both options.\n</li>\n<li>\n<b>How?</b> You can decide what kind of help you want here. If you'd like to find\nsupport programmes where you get help in person, click on <i>in person</i>. But if\nyou'd prefer to stay at home, click <i>by telephone</i> or <i>online</i>.\nThen you can choose between support services where you get help over the\ntelephone or through e-mail, chat, an online forum, or online courses.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
             name: here
@@ -532,14 +253,7 @@ en:
       section_3:
         heading: Do you have questions about the language used on clarat?
         question_1:
-          answer: |
-            Every person looking for help on clarat should be able to find it
-            easily. That’s why clarat developed its own language. clarat’s language
-            is easy to understand because it is based on the rules of plain
-            language. clarat is for everyone and should be understood by everyone:
-            by children, adolescents, and families; by people from different
-            countries, those who were born here, and those who have just arrived in
-            Germany; by those who speak German well and those who don’t.
+          answer: "Everybody looking for help on clarat should be able to find it\neasily. That’s why the clarat-language was created. And the clarat-language\nis easy to understand. Because it uses clear, simple language. And  because \nclarat is for everybody, everybody should be able to understand\nthe clarat-language. Children, teenagers. and families. People from different\ncountries. People who were born here, and those who've just arrived. \nPeople who speak German well and those who don’t."
           question: Why does clarat use simple language?
         question_2:
           answer: NOTRANSLATE
@@ -548,128 +262,70 @@ en:
           answer: NOTRANSLATE
           question: NOTRANSLATE
         question_4:
-          answer: On clarat you can find offerings for children, adolescents, and families of all sexual orientations. That means for lesbians, gays, bisexuals, transsexuals, and intersexuals. However, we can’t always list all of these terms since we want our descriptions to be short and easy to understand. That’s why we use the abbreviation LGBTI.
+          answer: "On clarat you can find support for children, teenagers and families of all sexual orientations. \nThat means there's support for lesbian, gay, bisexual, transgender, and intersexual people. \nHowever, we want our descriptions to be short and easy to understand. \nSo we can’t always list all of these terms.That’s why we use the abbreviation LGBTI."
           question: Why does clarat use the abbreviation <i>LGBTI</i>?
         question_5:
-          answer: At clarat we use simple language. That’s why we use words that are easy to understand and that many people are familiar with. We also try to be as politically correct as possible. That’s why we usually use the word migrants instead of the term foreigners or an expression like <i>people with a migration background</i>.
+          answer: "At clarat we use simple language. That’s why we use words that are easy to \nunderstand. Words that many people know and use. And we also try to be \nas politically correct as possible. This is why we usually use the word migrants. \nAnd we try to avoid words like foreigners or expressions like <i>people with \na migration background</i>."
           question: Why does clarat use the term <i>migrants</i>?
         question_6:
-          answer: On clarat we want everyone to quickly understand who is meant. Since most people use the term refugees, so do we, even though displaced persons might be more accurate. On clarat we try to be as accurate as possible, but it is more important to us that people understand everything quickly. That way everyone looking for help and support can find it even quicker.
-          question: Why does clarat use the term <i>refugees</i>?
+          answer: NOTRANSLATE
+          question: NOTRANSLATE
       section_4:
         heading: Do you have questions about using clarat in different languages?
         question_1:
           anchor: how_many_languages
-          answer: |
-            You can read all of clarat’s pages in German and English.
+          answer: 'You can read all of clarat’s pages in German and English.
+
+'
           question: Which languages are available on clarat?
         question_2:
-          answer: |
+          answer: |-
             You can select your language at the top of the page. Google Translate
             will then automatically translate everything into your language. Since
             it’s an automatic translation, there might be a few mistakes. The
-            translation could thus sound a bit strange.
+            translation might sound a bit strange sometimes.
           question: How can I use clarat in my language?
         question_3:
-          answer: |
-            Google Translate generates automatic translations, which is why there
+          answer: |-
+            Google Translate generates automatic translations. This is why there
             might be a few mistakes. This means that the translation might not
             always be entirely correct.
           question: Why do the texts sound so strange in my language?
       section_5:
         heading: Do you have questions regarding your organization?
         question_1:
-          answer: |
-            Your organization offers help to children, adolescents, and families.
-            That’s why we’ve included your offerings on <b>clarat family</b>. We
-            want to enable those in need to find your help and support offerings as
-            fast and as easily as possible.
-            <br>
-            Or your organization’s offerings provide help for refugees, who have
-            fled to Germany. That’s why we’ve included them on <b>clarat
-            refugees</b>. We want to give refugees quick and simple information on
-            where they can find the help they need.
+          answer: "Your organization offers help to children, teenagers and families.\nThat’s why we’ve included your support services on <b>clarat family</b>. \nWe want to people who need your support as quickly and easily as possible.\n<br>\nOr perhaps your organization’s support services provide help for refugees \nwho have fled to Germany. That’s why we’ve included your services on <b>clarat\nrefugees</b>. We want to give refugees quick and simple information about\nwhere they can find the help they need."
           question: Why are my organization’s offerings on clarat?
         question_2:
-          answer: |
-            <b>clarat family</b> helps children, adolescents, and families find your
-            organization’s offerings. <b>clarat refugees</b> helps refugees find the
-            support they need. Your organization’s offerings can only be found if
-            people know about your organization. To make sure that everybody really
-            understands the kind of help your organization provides, we explain
-            everything in plain language. In addition to that, all offerings can be
-            automatically translated into a variety of languages.
+          answer: "<b>clarat family</b> helps children, teenagers and families find your\norganization’s support services. <b>clarat refugees</b> helps refugees \nfind the support they need. Your organization’s supprt programmes can \nonly be found if people know about your organization. To make sure that \neverybody really understands the kind of help your organization provides, \nwe explain everything in clear, simple language. What's more, all the \nsupport services can be automatically translated into a variety of languages, \ntoo."
           question: What does clarat do for my organization?
         question_3:
-          answer: |
+          answer: |-
             You can enter the name of your organization in the search field where it
-            says <b>What?</b> and its location in the search field that says
-            <b>Where?</b> You will then be shown a list of offerings provided in
+            says <b>What?</b>. And your location in the search field that says
+            <b>Where?</b> Then you'll be shown a list of support services provided in
             that location. If your organization is based in more than one location
-            in Berlin, just enter Berlin in the search field where it says <b>Where?</b>
-          question: How can I find my organization’s offerings on clarat?
+            in Berlin, then just enter Berlin in the search field where it says <b>Where?</b>
+          question: How can I find my organization’s support services on clarat?
         question_4:
-          answer: |
-            All offerings on clarat are written in simple language so that everyone
-            can easily find help. Using simple language means that complicated
-            things need to be simplified. Doing this also ensures that the automatic
-            translation is much better. If you think that something should be
-            explained differently, please let us know by sending an e-mail to
-            %{mailto_clarat}.
+          answer: "All the support services on clarat are described in simple language \nso that everyone can find help as easily as possible. Using simple language \nmeans that complicated things sometimes need to be explained in a simple way. \nSome ideas need to be simplified. Doing this ensures that the automatic\ntranslation is much better. If you think that something should be\nexplained differently, please let us know. You can send an e-mail to\n%{mailto_clarat}."
           link_1:
             name: post@clarat.org
             target: _blank
             url: mailto:post@clarat.org
             var: mailto_clarat
-          question: Why do the descriptions of our offerings on clarat differ from the ones we have on our website?
+          question: Why are the descriptions of our support services on clarat so different  from the ones we have on our website?
         question_5:
-          answer: |
-            We want to make it possible for anyone to search for help as easily as
-            possible. That’s why we split up your organization’s offerings so that
-            there is just one offering for each specific problem. That way people
-            searching for help can find exactly the help they need.
-          question: Why does one of my organization’s offering turn into several offerings on clarat?
+          answer: "We want to make it help people to find help as easily as possible.\nThis is why we've split up your organization’s support services so that\nthere is just one service for each specific problem. That way people \nlooking for help can find exactly the help they need."
+          question: My organization offers just one support service. But on the clarat page this one service is listed as many. Why?
         question_6:
-          answer: |-
-            There are many help and support offerings for children, adolescents,
-            families, and refugees in Germany. Since clarat is still under
-            construction, it is possible that we have not yet been able to include
-            all of your organization’s offerings on clarat, or we may have decided
-            that not all of your organization’s offerings can be included on clarat
-            at this time.
-            <p>
-            On <b>clarat family</b> you can only find:
-            <ul>
-            <li>
-            offerings that help people with problems
-            </li>
-            <li>
-            for-cost offerings provided by charitable organizations
-            </li>
-            </ul>
-            <br>
-            You will not find any offerings that solely provide medical help.
-            </p>
-            On <b>clarat refugees</b> you will currently not find:
-            <p>
-            <ul>
-            <li>
-            first admission facilities and refugee shelters
-            </li>
-            <li>
-            church asylum offerings
-            </li>
-            <li>
-            online platforms for donations or volunteering
-            </li>
-            </ul>
-            </p>
-          question: Why can’t I find all of my organization’s offerings on clarat?
+          answer: "In Germany, there are a lot of different support services for children, \nteenagers, families and refugees. But clarat is still under construction. \nSo it's possible that we haven't been able to include all of your organization’s \nsupport programmes on clarat yet. Or we might have decided\nthat not all of your organization’s programmes should be included on clarat\nat this time.\n<p>\nOn <b>clarat family</b> you can only find:\n<ul>\n<li>\nservices that help people with problems\n</li>\n<li>\nservices people have to pay for only if they are provided by charitable organizations\n</li>\n</ul>\n<br>\nand you will not find any services that solely provide medical help\n</p>\nOn <b>clarat refugees</b> you will not find:\n<p>\n<ul>\n<li>\nrefugee reception centres or refugee shelters\n</li>\n<li>\nchurch asylum or sanctuary programmes\n</li>\n<li>\nonline platforms for donations or volunteering\n</li>\n</ul>\n</p>"
+          question: Why can’t I find all of my organization’s support services on clarat?
         question_7:
-          answer: |
+          answer: |-
             Get in touch with us. You can tell us where we made a mistake and what
             you would like us to change. You can write us an e-mail at
-            %{mailto_clarat} or call us at +49 (0)30 55 57 96 00.
+            %{mailto_clarat} or call us on +49 (0)30 55 57 96 00.
           link_1:
             name: post@clarat.org
             target: _blank
@@ -719,6 +375,8 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: place of residence (optional)
         email_placeholder:
           required:
             'false': Email address (optional)
@@ -730,32 +388,32 @@ en:
   emails:
     offers_index:
       family:
-        heading: Your offers in clarat family for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat family for <span id="secure-email-0">%{email}</span>
+        heading: Your support services and programmes in clarat family for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes listed in clarat family for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat refugees</strong> offer
-          other: Your <strong>%{count} clarat refugees</strong> offers
+          one: Your <strong>clarat refugees</strong> support service
+          other: Your <strong>%{count} clarat refugees</strong> support services
       last_update: Last update
-      obfuscated_email: your email address
+      obfuscated_email: your e-mail address
       refugees:
-        heading: Your clarat refugees offers for <span id="secure-email-0">%{email}</span>
-        no_results: There are no public offers in clarat refugees for <span id="secure-email-0">%{email}</span>
+        heading: Your clarat refugees support services for <span id="secure-email-0">%{email}</span>
+        no_results: There are no public support services or programmes in clarat refugees for <span id="secure-email-0">%{email}</span>
         toggle_section_html:
-          one: Your <strong>clarat family</strong> offer
-          other: Your <strong>%{count} clarat family</strong> offers
+          one: Your <strong>clarat family</strong> support service
+          other: Your <strong>%{count} clarat family</strong> support services
       shared:
-        explanation_1: Here you can see at a glance all of your offerings at clarat. These are offerings we found, using your e-mail address as contact address.
-        explanation_2: If in the future we find new offerings from you, you will see links to these new offerings here as well.
-        explanation_3: You can save this page amongst your favorites and thereby see at a glance what clarat has in store for you.
-        explanation_4: Would you like to be informed by e-mail if new offerings from you are online at clarat? Then use the link at the end of the e-mail you have received from us.
+        explanation_1: Here you can see all of your support services which are listed at clarat. These are the support services we found using your e-mail address as our contact address.
+        explanation_2: If we find new support services you offer in the future, we will list the links to these new support services here, too.
+        explanation_3: If you save this page as one of your favourites, you will be able to see which of your services are listed here at clarat.
+        explanation_4: Would you like to be informed by e-mail when new support services you offer go online at clarat? Then use the link at the end of the e-mail you received from us.
         info: Info
     subscribe:
-      success_html: |
-        You have successfully subscribed for email notifications about offers.
+      success_html: |-
+        You have successfully subscribed for e-mail notifications about offers.
         (<a href="%{unsubscribe_href}">cancel subscription</a>)
     unsubscribe:
-      success_html: |
-        You have successfully unsubscribed from further email notifications.
+      success_html: |-
+        You have successfully unsubscribed from further e-mail notifications.
         (<a href="%{subscribe_href}">subscribe again</a>)
   enumerize:
     search_form:
@@ -868,22 +526,33 @@ en:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
+        abk: Abk
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
+        ckb: Ckb
+        cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -898,9 +567,12 @@ en:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -909,6 +581,7 @@ en:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -921,6 +594,7 @@ en:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -955,14 +629,21 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
       less: Show fewer languages
       more: Show more languages
     less_filter_options: Show less filters
-    location_required: |
-      Please enter a location at which you want to search for help.
+    location_required: 'Please enter a location at which you want to search for help.
+
+'
     map_info_window_multiple:
       anchor: Show all >>
       text: There are multiple results for this address.
@@ -1006,12 +687,20 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        sort: Sort by
         target_audience: For whom?
       option_any: any
       pagination:
         back: Previous
         gap: "…"
         next: Next
+      sort:
+        nearby: nearby
+        relevance: Best matches
+      tabs:
+        categories: Categories
+        filter: Filter
+        map: Map
     search_results:
       bridge: for the search term
       enclosing: found
@@ -1027,6 +716,9 @@ en:
       more: More remote offers
       off_canvas:
         result_text: Show %{result_count} results
+      personal_anchor:
+        one: In your area (%{count})
+        other: In your area (%{count})
       personal_offers:
         one: One local offer
         other: "%{count} local offers"
@@ -1036,6 +728,9 @@ en:
         category: 
         category_query: 
         default: 
+      remote_anchor:
+        one: Online and telephone (%{count})
+        other: Online and telephone (%{count})
       remote_offers:
         one: One remote offer
         other: "%{count} remote offers"
@@ -1056,28 +751,39 @@ en:
         '326': Ukrainian - українська
         '568': Dutch - Nederlands
         '639': Dari - دری
+        aar: 'Afar - Qafar-áf '
+        abk: Abkhaz - аҧсуа бызшәа
         amh: Amharic - አማርኛ
-        ara: Arabian - عربي
+        ara: Arabic - عربي
+        arc: Aramaic - ארמית / Arāmît
         aze: Azerbaijani - Azərbaycan
+        bam: Bambara - Bamanankan
         ban: Balinese - Basa Bali
         bel: Belarusian - беларуская мова
         ben: Bengalese - বাংলা
         ber: Berber - Tamaziɣt
         bos: Bosnian - bosanski
         bul: Bulgarian - български
+        cau: Abaza - абаза бызшва
+        ckb: 'Sorani - سۆرانی '
+        cpe: Kamtok - Pidgin
+        cus: Saho - ሳሆኛ
         cze: Czech - čeština
         deu: German - Deutsch
+        dyu: Jula - Julakan
         ell: Greek - ελληνικά
         eng: English
+        ewo: Ewondo / Kolo - Ewondo
         fas: Persian (Farsi) - فارسی
         fin: Finnish - suomi
         fra: French - Français
+        fuf: Pular - Pular
         hbs: Montenegrin - Crnogorski jezik / Црногорски језик
         heb: Hebrew - עברית
         hin: Hindi - हिन्दी
         hrv: Kroatian - hrvatski
         hun: Hungarian - magyar
-        ita: Italic - italiano
+        ita: Italian - italiano
         kik: Kikuyu - Gĩkũyũ
         kin: Kinyarwanda - kinyaRwanda
         kor: Korean - 한국말 / 조선말
@@ -1086,9 +792,12 @@ en:
         lit: Lithuanian - lietuvių
         ltz: Luxembourgish - Lëtzebuergesch
         luo: Luo - Dholuo
+        man: Maninka - Maninka
         mkd: Macedonian - македонски
+        msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
+        pan: Punjabi - پنجابی / ਪੰਜਾਬੀ
         pol: Polish - polski
         por: Portuguese - português
         pus: Pashto - پښتو‎
@@ -1097,6 +806,7 @@ en:
         rus: Russian - русский
         skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
         slo: Slovak - slovenský jazyk
+        slv: Slovene - Slovenščina
         snk: Soninke - Soninkanxaane
         som: Somali - Soomaali
         spa: Spanish - español
@@ -1109,6 +819,7 @@ en:
         tgk: Tadjik - тоҷикӣ / تاجیکی
         tgl: Tagalog language - Tagálog
         tha: Thai - ภาษาไทย
+        tig: Tigre - ትግሬ
         tir: Tigrigna - ትግርኛ
         tuk: Turkmen - Türkmençe / Tүркменче
         tur: Turkish - Türkçe
@@ -1119,6 +830,8 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+    shariff:
+      share_label: Share
     single_search_result:
       encounters:
         chat: chat
@@ -1133,7 +846,7 @@ en:
       banner:
         teaser:
           link: Find out more
-          refugees: soon with offers for refugees
+          refugees: Soon with offers for refugees
           text: clarat.org is currently under construction
       footer:
         about: About us
@@ -1146,44 +859,65 @@ en:
         gplus:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
-        impressum: imprint
+        impressum: impressum
         privacy: privacy
         tos: legal information
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: write us a message.
-          text: |
+          text: |-
             Our website clarat.org is just getting started. You can already find
-            many offers of help in Berlin. We will soon gather offers for other
-            cities as well. We appreciate your help: Is there something we can do better?
-            Is something not working? Simply
-        unavailable_location_modal: |
+            many support services and programmes in Berlin. Soon we will be collecting support services for other
+            cities as well. And we appreciate your help: is there anything you think we could do better?
+            Or is something not working? Simply
+        unavailable_location_modal: |-
           At the moment you can only find offers of help for Berlin. We are
-          working hard to soon be present in other parts of germany as well.
+          working hard to soon be present in other parts of Germany as well.
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Automated translations!
+        legal_title: On clarat, legal text can only be read in German.
+        title: |-
+          Automated translations!
+          <br><br>
+          On clarat, some of the texts in your language have been translated by Google Translate. These texts might sound a bit strange sometimes. Or the language might be a bit wrong.
       navigation:
         category_headline: Search by categories
         claim:
-          family: Support offerings for children, adolescents and families
+          family: Support services and programmes for children, adolescents and families
           main: Find help easily
-          refugees: Support offerings for refugees
+          refugees: Support services and programmes for refugees
+      top_bar:
+        german_content_warning: Legal information can only be viewed in German
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: "‹ to clarat refugees"
+            refugees: "‹ to clarat family"
+          mobile:
+            home:
+              family: to the <span class="top-bar__emphasis">clarat family</span> homepage
+              refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
+            switch:
+              family: switch to <span class="top-bar__emphasis">clarat refugees</span>
+              refugees: switch to <span class="top-bar__emphasis">clarat family</span>
+        title: Automated translations!
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -1208,17 +942,17 @@ en:
             boys_only: boys and men only
             girls_only: girls and women only
           target_audience:
-            acquaintances: for friends and family
-            children: for children and adolescents
-            family_acquaintances: for friends and family
-            family_children: for children and adolescents
+            children: for children and teenagers
+            family_children: for children and teenagers
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
             family_pregnant_woman: for pregnant women
+            family_relatives: for friends and family
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
+            relatives: for friends and family
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1230,7 +964,7 @@ en:
       text: |
         Please check your entry or try searching for something else.
         (E.g "ZIP, Location").
-      title: Unfortunately we could not find the location you entered
+      title: Unfortunately we couldn't find the location you entered
     shared:
       search_form:
         button: Search
@@ -1240,12 +974,12 @@ en:
           short: Berlin
         query_label: What
         query_placeholder:
-          long: Offers on the subject of …
-          short: Offers on …
+          long: Support services and programmes connected with...
+          short: Support services about  …
     show:
       last_update: Entry last modified on
       next_steps:
-        code_word: What do you have to ask for or look for on the website?
+        code_word: 'This is what the service provider calls this support service:'
         heading: What do you have to do?
       opening_section:
         days:
@@ -1264,33 +998,33 @@ en:
           application_form: Application Form
           chat: Chat
           contact_form: Contact Form
-          document: Further Information
+          document: Further information
           facebook: Facebook
           forum: Forum
           gplus: Google+
-          online_consulting: Online Consultation
+          online_consulting: Online advising session
           online_course: Online Course
           own: Website
           pinterest: Pinterest
           twitter: Twitter
           youtube: Youtube
       what:
-        code_word: What do you have to ask for or look for on the website?
-        heading: What is this about?
-      who: Who offers this help?
+        code_word: 'This is what the service provider calls this support service:'
+        heading: What's this about?
+      who: Where can you get this help?
       who_contact_people:
         dr: Dr.
         email: 'Email: '
         fax: 'Fax: '
         female: Ms.
-        male: Mister
+        male: Mr.
         obfuscated_email: |
           This e-mail address is protected from spam bots, you must enable
           JavaScript in your browser to view it.
         phone: 'Telephone: '
         prof_dr: Prof. Dr.
       who_location:
-        organizations: 'An offer provided by:'
+        organizations: 'This is a support service provided by:'
       who_section:
         heading: How can you get in touch?
   opening:
@@ -1302,160 +1036,162 @@ en:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: Support offerings for children, adolescents and families
-      headline-offers--refugees: Support offerings for refugees
+      headline-offers--family: Support services for children, teenagers and families
+      headline-offers--refugees: Support services for refugees
       offers_all: What kind of help does the organization offer?
       where: Where is the organization located?
-      who: What does the organization do?
+      who: What does this organization do?
   pages:
     about:
-      amina: |
+      amina: |-
         Amina is a sociologist, which means she knows a lot about society. She
-        has a good eye for what is important. At clarat she is part of the
-        research team, where she decides what will become an offering on clarat.
-        Her favorite song is “La Prima Estate” by Erlend Oye
-      andrea: |
-        Andrea studied intercultural management, which means she knows a lot
-        about economics and culture. She is extremely meticulous in her work. At
-        clarat she is part of the research team, where she ensures the quality
-        of our work. Her favorite song is “Work Me” by The Black Keys.
-      anne: |
-        Anne studied economics and international relations. She is a quick,
-        logical thinker. At clarat she is the boss. She takes care of the whole
+        has a good eye for what is important. At clarat, she's part of the
+        research team. She decides what will be listed as a clarat support service.
+        Her favourite song is “La Prima Estate” by Erlend Oye
+      andrea: |-
+        Andrea studied intercultural management. That means she knows a lot
+        about economics and culture. She's a precise worker. At
+        clarat she is part of the research team. She keeps an eye on everything that happens in the clarat family world. Her favourite song is “Work Me” by The Black Keys.
+      anja: Anja is an ecologist and engineer. She can think quickly and logically. She works in clarat's research team, She ensures the quality of our work. Her favourite song is "Where is my My Mind?" by the Pixies.
+      ann-sophie: 
+      anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team. Her favourite song is "1009" by Bonobo
+      anne: |-
+        Anne studied economics and international relations. She's a quick,
+        logical thinker. Here at clarat, she's the boss. She takes care of the whole
         team and organizes everything. Her favorite song is “Denken Sie Groß” by
         Deichkind.
-      astrid: |
-        Astrid is a political scientist, which means she knows a lot about
-        politics and society. She is always in a good mood, which is very
-        contagious. At clarat she is part of the research team. Her favorite
+      astrid: |-
+        Astrid is a political scientist. That means she knows a lot about
+        politics and society. She's always in a contagiously good mood. At clarat she's part of the research team. Her favourite
         song is “You Got Me” by the Roots feat. Erykah Badu.
-      basti: |
-        Basti is a web developer, which means he knows how to program websites.
-        At clarat he is the head of IT. He helps us with technical issues. He is
-        also in charge of our vacation days and our contracts. His favorite song
+      basti: |-
+        Basti is a web developer. That means he knows how to program websites.
+        At clarat he's the head of IT. He helps us with technical issues. He's
+        also in charge of our vacation days and our contracts. His favourite song
         is “Man In The Mirror” by Michael Jackson.
-      bettina: |
+      bettina: |-
         Bettina studied non-profit management, which means she knows how to
-        organize help and support. She is very organized. At clarat she is part
-        of the research team. She also searches the web for organizations. Her
-        favorite song is “Elias” by Dispatch.
-      elisa: |
-        Elisa is an expert on cultural studies, which means she knows a lot
+        organize help and support. She is very organized. At clarat, she's part
+        of the research team. She decides what should be listed as a support service. Her
+        favourite song is “Elias” by Dispatch.
+      birte: Birte studied educational science. She knows a lot about children. And she's very good at putting herself in other people's shoes. And she's worked a lot with media. At clarat, she's in the research team. "Borderline" by Madonna is her favourite song.
+      chrissy: Chrissy is a political scientist. That means she knows a lot about society and politics. And she's good at planning and organizing things. At clarat, she's in the research team. She uses the internet to look for organizations. Her favourite song is "Rough Hands" by Akexisonfire.
+      claudia: Before coming to clarat, Claudia worked in retail. She's good at dealing with people. And finding information as quickly as possible. She's in clarat's research team. She helps people find help. Her favourite song is "Chandelier" by Sia.
+      damjan: 
+      eleonore: Eleonore studied music, media and business studies. She can find and process information very quickly. She's in clarat's research team. It's her job to make sure people can find clarat easily online. Her favourite song is "Je Veux" by Zaz.
+      elisa: |-
+        Elisa is an expert on cultural studies. That means she knows a lot
         about culture. She can explain complicated things in a simple way. At
-        clarat she is part of the research team. She also takes care of our
-        glossary and our users. Her favorite song is “Boat Behind by Kings” of
+        clarat she is part of the research team. And she makes sure our website is looking good. Her favourite song is “Boat Behind" by Kings of
         Convenience.
-      franziska: |
-        Franziska studied international law, which means she knows a lot about
-        laws that apply to many countries. She can easily understand complicated
-        things – and find solutions quickly. At clarat she is part of the
-        research team. Her favorite song is “Explanations” by Selah Sue.
+      esther: Esther studied cultural studies. She knows a lot about history and politics. She is always learning new things. At clarat she's in the research team. She's in charge of our special clarat dictionary. Her favourite song is "This Charming Man" from The Smiths.
+      fabian: 
+      franziska: |-
+        Franziska studied international law. That means she knows a lot about
+        laws that apply to lots of different countries. She can understand complicated
+        things easily. And she find solutions quickly, too. At clarat she's part of the
+        research team. Her favourite song is “Explanations” by Selah Sue.
+      hassan: Hassan has worked as a Persian interpreter. Persian is his mother tongue. He works quickly and efficiently. Here at clarat he's in the translator team and translates clarat into Persian. His favourite song is "Looking for the Summer" from Chris Rea.
       heading: Who are the people behind clarat?
-      janina: |
-        Janina is a cultural anthropologist, which means she knows a lot about
-        people and cultures. She writes very well. At clarat she is part of the
-        research team. She is an expert for the clarat language and helps our
-        users. Her favorite song ist “MFG” by Fanta4.
-      janne: |
+      jacinta: Jacinta studied French and German. Her native language is English. She can write things easily and clearly. At clarat she's in the translator team and translates clarat into the English language. Her favourite song is "Wannabe" by the Spice Girls.
+      jakob: Jakob is an African and Asian studies expert. That means he knows a lot about these two continents. Jakob stays calm in stressful situations. At clarat he's in the research team. And he uses the internet to look for organizations. His favourite song is "Simplicity" by Mbarga.
+      janina: |-
+        Janina is a cultural anthropologist. That means she knows a lot about
+        people and cultures. She writes very well. She is part of the clarat
+        research team. She helps clarat
+        users when they have questions. Her favourite song ist “MFG” by Fanta4.
+      janina_m: Janina has home economic qualifications. At clarat she's our office manager. She can plan and organize things will. Here at clarat she looks after all our staff. And our offices. She makes sure everything's working. Her favourite song is "Kinder an die Macht" by Herbert Grönemeyer.
+      janne: |-
         Janne studied political science and international relations. She has
         excellent time management skills. At clarat she is part of the research
-        team. She also decides which offerings will be included on clarat. Her
-        favorite song is “Sweat” by Ry X.
-      jens: |
-        Jens is a specialist on educational theory (educationalist), which means
+        team. She also decides which support services will be included on clarat. Her
+        favourite song is “Sweat” by Ry X.
+      jenny: Jenny's a social anthropologist. That means she knows a lot about people and culture. She's always looking for solutions. She's part of the clarat research team. She makes sure our website is organized well. Her favourite song is "I sing I swim" from Seabear.
+      jens: |-
+        Jens is an educational sciences expert. That means
         he knows a lot about education. He understands complicated things
-        quickly. At clarat he is part of the research team. He also decides
-        which offerings are part of clarat. His favorite song is “2B2” by
+        quickly. At clarat he is part of the research team. And he decides
+        which support services should be listed on clarat. His favourite song is “2B2” by
         Lambchop.
-      jule: |
-        Jule is specialist on peace and conflict studies, which means she knows
-        a lot about conflicts and war. She is good at finding solutions. At
-        clarat she is part of the research team. She also ensures the quality of
-        our work. Her favorite song is “Home” by Edward Sharpe.
-      julia: |
-        Julia studied German language and literature, which means she is well
-        versed in texts and German. She writes very well and can explain things
+      jule: |-
+        Jule is specialist on peace and conflict studies. That means she knows
+        a lot about conflicts and war. She's good at finding solutions. At
+        clarat she is part of the research team. She makes sure that everything on clarat refugees is up to standard. Her favourite song is “Home” by Edward Sharpe.
+      julia: |-
+        Julia studied German language and literature. That means she knows a lot about language in general – and the German language in particular. She writes very well and can explain things
         in a simple way. At clarat she is part of the research team and is an
         expert on our clarat language. Her favorite song is “Reckoner” by
         Radiohead.
-      julian: |
-        Julian studied social economics, which means he knows a lot about the
-        economy and society. He is also good with computers. At clarat he is
-        part of the research team and takes care of technical issues. His
-        favorite song is “All You Need” by Sublime.
-      katinka: |
-        Katinka is a psychologist, which means she has a good understanding of
-        people’s behavior and feelings. She is also good at sorting out
-        complicated matters. At clarat she is part of the research team. Her
-        favorite song is “The Greatest” by Cat Power.
-      konstantin: |
+      julia_b: Julia studied Social Work. And she's already done a lot of work with children and young adults. She can relate to others easily. She's in clarat's research team. Her favourite song is "Nantes" by Beirut.
+      juliane: Juliane studied business adminstration and tourism. She's very good at planning. And finding creative solutions. She's in charge of marketing at clarat. Her favourite song is "Easy" by The Commodores.
+      karo: Karo studied European studies. That means she knows a lot about European politics. She is good at organizing things. She's part of the clarat research team. And she is in charge of our handbook. Her favourite song is "Alive" from Pearl Jam.
+      katja: Katja studied German. She is good at reading complicated texts. And she's good at German, too. She's in the clarat research team. Her favourite song is Mysteries by Beth Gibbons.
+      konstantin: |-
         Konstantin is a web developer, which means he knows how to program
         websites. He always finds good solutions. At clarat he is part of the IT
-        team, where he designs our website. His favorite song is “Too Long” by
+        team, where he designs our website. His favourite song is “Too Long” by
         Daft Punk.
-      laura: |
-        Laura studied Southeast Asian studies and development geography, which
-        means she knows a lot about developing countries. She always stays on
-        top of things. At clarat she is part of the research team. Her favorite
+      laura_i: Laura is a qualified travel agent and cultural studies expert. She's very good at organizing things. She keeps everything in check. She likes learning new things, too. She is part of the clarat research team. Her favourite song is "Proud Mary" from Ike and Tina Turner.
+      laura_w: |-
+        Laura studied development geography. She knows a lot about developing countries. She always stays on
+        top of things. At clarat she is part of the research team. Her favourite
         song is “Paint It Black” by the Rolling Stones.
-      lavinia: |
-        Lavinia studied peace and conflict studies, which means she knows a lot
-        about conflicts and war. She is good at making compelling arguments. At
-        clarat she is part of the research team, where she organizes the
-        offerings by topics. Her favorite song is “I’m not Done” by Fever Ray.
-      line: |
-        Line is a theatre director. She also knows a lot about literature and
-        language, which means she knows the effect that words can have on people.
-        At clarat she is part of the research team. Her favorite song is
-        “Anybody Seen My Baby” by The Rolling Stones.
-      lisa: |
-        Lisa is a design thinker, which means she knows how to creatively plan
-        projects. At clarat she is part of the research team, where she makes
-        plans and takes care of our users. Her favorite song is “Another Day” by
-        Jamie Lidell.
-      marcus: |
-        Marcus is a web designer, which means he is good at programming and
-        designing websites. He is also a good planner. At clarat he is part of
-        the IT team. He ensures that our website looks good. His favorite song
+      lavinia: |-
+        Lavinia studied peace and conflict studies. This means she knows a lot
+        about conflicts and war. She is very good at making compelling arguments. At
+        clarat she is part of the research team. Her favourite song is “I’m not Done” by Fever Ray.
+      line: |-
+        Line is a theatre director. She knows a lot about literature and
+        language. This means she knows the effect that words can have on people.
+        At clarat she is part of the research team. She's an expert on the clarat language. Her favourite song is
+        "Unintended" by Muse.
+      lisa: |-
+        Lisa is a design thinker. That means she knows how to plan
+        projects creatively. At clarat she is part of the research team, where she takes care of our users. She also tries to find out who our users are. Her favourite song is "Resolution" by Matt Corby.
+      magdalena: 
+      marcus: |-
+        Marcus is a web designer. This means he's good at programming and
+        designing websites. He's also a good planner. At clarat he is part of
+        the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      nicole: |
-        Nicole studied intercultural communications, which means she knows a lot
-        about cultures and language. She is good at making decisions. She is the
-        head of the research team. Her favorite song is “Palabra Mi Amor” by
-        Shaka Ponk.
-      nils: |
+      marie: 
+      michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
+      nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
+      nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. Her favourite song is "Me in You" by Kings of Convenience.
+      nils: |-
         Nils is a computer scientist, which means he knows how to program
         computer programs and websites. He always comes up with good solutions
-        and is a fast learner. At clarat he is part of the IT team. His favorite
+        and is a fast learner. At clarat he is part of the IT team. His favourite
         song is “Jein” by Fettes Brot.
-      stefan: |
+      omar: 
+      patrick: 
+      philipp: Philipp studied history, politics and law. He knows a lot about society and politics. He can understand complicated things. He's part of the clarat research team. His favourite song is "This is our Science" by Astronautalis.
+      sabine: Sabine is a sociologist. That means she knows a lot about society. She can understand complicated things very well. At clarat, she's in the research team. She explains the asylum laws in Germany to us. Her favourite song is "Vesna" by Kino.
+      sophie: Sophie studied Non-profit Management. She's a very organized person. And she's good at recognizing what's important. She's in clarat's research team. She's trying to find out who is using clarat and how they're using it. Ger facourite song is "Lost" from Frank Ocean.
+      stefan: |-
         Stefan is an expert on cultural studies, which means he knows a lot
-        about culture and society. He is good at getting people excited for a
-        cause. He is also the creator of clarat. His favorite song is “Riders On
+        about culture and society. He is good at getting people excited about a
+        cause. He is also the creator of clarat. His favourite song is “Riders On
         The Storm” by the Doors.
-      text: |
+      text: |-
         clarat ist a project financed by the charitable Benckiser Foundation
         (www.benckiser-stiftung.org). With the Benckiser Foundation, we have
         been supporting effective projects in the area of child and youth
         welfare for many years. In our work we kept noticing that it can be very
-        difficult to find out what kind of help is out there. Then we realized
-        that if we, the “experts”, can’t even get an overview of the help
-        available out there, how difficult must it be for children, adolescents,
+        difficult to find out what kind of help is out there. And then we realized:
+        if even we, the “experts”, can’t get an overview of the help
+        available out there, how difficult must it be for children, teenagers,
         and their families who are in actual need of help? Or for refugees who
-        don’t know their way around yet? The answer: Very difficult! And that is
-        how the idea for clarat came about: To find help easily. For families on
+        don’t know their way around yet? The answer: very difficult! And that's
+        how the idea for clarat came about: helping people find help easily. For families on
         clarat family. And for refugees on clarat refugees.
-      tine: |
-        Tine is a social worker. She is a good listener. She is also a writer,
-        which means she has a gift for language and can write beautiful stories.
-        At clarat she is part of the research team. Her favorite song is
+      tine: |-
+        Tine is a social education worker. She's a good listener. And she's a writer, too.
+        This means it's easy for her to write nice stories.
+        At clarat she is part of the research team. Her favourite song is
         “Survive It” by Ghostpoet.
       title: About us
-      verena: |
-        Verena is a political scientist, which means she knows a lot about
-        politics and society. She is very good at gathering information. At
-        clarat she is part of the research team, where she takes care of our
-        glossary. Her favorite song is “Lose It” by Oh Wonder.
+      verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1508,37 +1244,32 @@ en:
     home:
       how:
         heading: How does clarat work?
-        text: |
-          Simply enter the topic you need help with. Or, whatever worries you.
-          Or, choose from our categories. And we will show you all the relevant
-          offers in your neighborhood. We will also tell you how to get this
-          support. For example, if you should call or write an email. Or, just
-          stop by.
+        text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
+      meta_description:
+        family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
+        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Berlin.
+      meta_title:
+        family: Find help easily | clarat family
+        refugees: Find help easily | clarat refugees
       title:
-        family: Help and support offerings for children, adolescents and families
-        refugees: Help and support offerings for refugees
+        family: Help and support services for children, teenagers and families
+        refugees: Help and support services for refugees
       whom:
         heading: Who is clarat for?
-        text: |
-          clarat is for everyone. clarat family for children, adolescents and
-          families. clarat refugees for refugees. Here, you will find the right
-          support if you are looking for help. For yourself, your family or your
-          friends. And also for anyone else you know and who might need help.
+        text: |-
+          clarat is for everyone. clarat family for children, teenagers and
+          families. clarat refugees for refugees. Here you'll find the right
+          support if you're looking for help. For yourself, your family or your
+          friends. Or for any other people you know who need help.
       why:
         heading: Why does clarat exist?
-        text: |
-          It is easy to find help with clarat. In Germany, there are a lot of
-          support offerings for children, adolescents and families. As well as
-          for refugees. But often, they are very hard to find. And we would like
-          to change that. You should search on clarat family if you are looking
-          for help for your family. And on clarat refugees if you are looking
-          for help for refugees.
+        text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
     impressum:
       heading: Impressum
-      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
+      notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1578,8 +1309,9 @@ en:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1599,8 +1331,9 @@ en:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1613,12 +1346,12 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
-        refugees: 
+      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      meta_title: clarat explains | clarat
+      title: Please choose your clarat-section
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47
@@ -1631,9 +1364,12 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
+    fr: fr
     haeufige-fragen: frequently-asked-questions
-    home: 
-    impressum: imprint
+    home: home
+    impressum: impressum
+    liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: offers
     organizations: organizations
@@ -1650,8 +1386,9 @@ en:
     forms:
       fill_field: Please fill out this field
     show:
-      cta_report_errors: |
-        Did you find an error?
+      cta_report_errors: 'Did you find an error?
+
+'
       google_translate_explanation: Above on the page, you can click on your language. Then you can read clarat in your language. The Google Translate API did part of the translation. Unfortunately, that sometimes causes grammatical errors. It is also possible that a given sentence sounds a bit funny.
     tooltips:
       welcome:
@@ -1660,6 +1397,10 @@ en:
           family: Click here to get to clarat family. In clarat family, you can search for help and support offerings for children, adolescents and families.
           refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support offerings for refugees.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1667,8 +1408,9 @@ en:
   subscriptions:
     create:
       error: Please enter a valid email address.
-      success: |
-        Thank you! We just sent a confirmation link to your email address.
+      success: 'Thank you! We just sent a confirmation link to your email address.
+
+'
     shared:
       new:
         button: Subscribe to our newsletter
@@ -1676,9 +1418,9 @@ en:
   success: 'Thanks! Soon, clarat will exist in your area, too. We will inform you respectively. '
   update_requests:
     create:
-      success: |
-        We recieved your message, thank you. We will get in touch as soon as we
-        are present in your location.
+      success: |-
+        We've received your message, thank you. We will get in touch as soon as we
+        are actively present in your neighbourhood.
     new:
-      button: Send
+      button: Message received
       email_placeholder: Email address

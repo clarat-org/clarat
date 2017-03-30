@@ -7,6 +7,7 @@
 @import "config/variables";
 @import "config/helpers";
 @import "config/mixins";
+@import "config/animation";
 
 @import "base/normalize";
 @import "base/typography";
@@ -45,6 +46,11 @@
 @import "modules/emailinfo";
 @import "modules/tablist";
 @import "modules/hint";
+@import "modules/section-choice";
+@import "modules/type-results";
+@import "modules/result-order";
+@import "modules/top-bar";
+@import "modules/breadcrumbs";
 
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
@@ -63,6 +69,7 @@
 @import "navigation/nav-legal";
 @import "navigation/nav-welt";
 @import "navigation/nav-lang";
+@import "navigation/nav-off-canvas-trigger";
 
 @import "vendor/pagination";
 

@@ -23,7 +23,7 @@
   ul {
     padding-left: 2em;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-left: 0;
       padding-right: 2em;
     }
@@ -34,6 +34,11 @@
 .FAQ_paragraph {
   ul {
     padding-left: 0;
+  }
+
+  li {
+    margin-left: 20px;
+    list-style-type: square;
   }
 }
 

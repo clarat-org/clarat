@@ -1,15 +1,44 @@
 doctype html
-html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
+html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa)?'rtl':'ltr'}"
   head
     meta charset="utf-8"
     title
       = full_title(yield(:title))
-    meta property="og:title" content=full_title(yield(:title))
+
+    - og_title = yield(:meta_title)
+    - if !og_title.blank?
+      meta property="og:title" content=og_title
+      meta property="twitter:title" content=og_title
+    - else
+      meta property="og:title" content=t("pages.home.meta_title.#{@current_section}")
+      meta property="twitter:title" content=t("pages.home.meta_title.#{@current_section}")
+
     - meta_description = yield(:meta_description)
-    - if meta_description
+    - if !meta_description.blank?
       meta name='description' content=meta_description
+      meta name='og:description' content=meta_description
+      meta name='twitter:description' content=meta_description
+    - else
+      meta name='description' content=t("pages.home.meta_description.#{@current_section}")
+      meta name='og:description' content=t("pages.home.meta_description.#{@current_section}")
+      meta name='twitter:description' content=t("pages.home.meta_description.#{@current_section}")
+
+    - og_image = yield(:og_image)
+    - if og_image
+      meta property="og:image" content=asset_url("meta/og_#{@current_section}.png")
+
+    - twitter_image = yield(:twitter_image)
+    - if twitter_image
+      meta property="twitter:image" content=asset_url("meta/tw_#{@current_section}.png")
+
+    meta property="og:site_name" content="clarat"
 
     = yield(:additional_meta_tags)
+
+    link rel='dns-prefetch' href='https://bam.nr-data.net'
+    link rel='dns-prefetch' href='https://csi.gstatic.com'
+    link rel='dns-prefetch' href='https://maps.googleapis.com'
+    link rel='dns-prefetch' href='https://maps.gstatic.com'
 
     - canonical_url = content_for(:canonical_url) || default_canonical_url
     link rel='canonical' href=canonical_url
@@ -19,11 +48,12 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
 
-  body class="#{@current_section} #{I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
+  body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
       - cache ['banner', I18n.locale] do
         = render '/layouts/partials/banner'
-      = render '/layouts/partials/nav_lang'
+      // = render '/layouts/partials/nav_lang'
+      = render '/layouts/partials/top_bar', current_section: @current_section
       #Flash-messages
         - flash.each do |message|
           - unless message[0] == 'timedout'
@@ -32,9 +62,9 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
         = render 'layouts/partials/navigation',
-                 search_form: SearchForm.new(cookies),
-                 current_section: @current_section
-      - else
+                search_form: SearchForm.new(cookies),
+                current_section: @current_section
+      - elsif action_name != 'section_choice'
         = render 'layouts/partials/search_navigation',
                  search_form: @search_form || SearchForm.new(cookies),
                  current_section: @current_section
@@ -48,5 +78,3 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar)?'rtl':'ltr'}"
 
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts
-
-        / Todo: #{I18n.locale} instead of "ar"

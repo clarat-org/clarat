@@ -3,10 +3,6 @@ meta http-equiv="X-UA-Compatible" content="IE=edge"
 meta( name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=1")
 
-/ TODO: Fill these
-meta property="og:site_name" content=""
-meta property="og:image" content=""
-
 link( rel="apple-touch-icon"
       sizes="57x57"
       href="/favicons/apple-touch-icon-57x57.png")
@@ -44,11 +40,11 @@ link( rel="icon"
       sizes="96x96")
 link( rel="icon"
       type="image/png"
-      href="/favicons/favicon-32x32.png"
+      href="/favicons/favicon--#{Rails.env}-32x32.png"
       sizes="32x32")
 link( rel="icon"
       type="image/png"
-      href="/favicons/favicon-16x16.png"
+      href="/favicons/favicon--#{Rails.env}-16x16.png"
       sizes="16x16")
 link rel="manifest" href="/favicons/android-chrome-manifest.json"
 meta name="msapplication-TileColor" content="#f4b528"
@@ -59,7 +55,7 @@ meta name="theme-color" content="#F4B528"
 / Stylesheets
 = stylesheet_link_tag 'application', media: 'all'
 = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css'\
-                      '/font-awesome.min.css'
+                      '/font-awesome.min.css', media: 'none', onload: "if(media!='all')media='all'"
 
 | <script>
 |  if (Function('/*@cc_on return document.documentMode===10@*/')()) {
@@ -82,3 +78,6 @@ meta name="theme-color" content="#F4B528"
     ga('create', 'UA-59626864-1', 'auto');
     ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
+
+  / Bing
+  meta name="msvalidate.01" content="2EF21E72D848CCA021AC432F95FA63EA"

@@ -30,9 +30,16 @@
 .content-main {
   @extend %layout-col-69;
 
+  &.content-main--section_choice {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &.content-main--wide {
     float: none;
-    margin: 25px auto 0;
+    margin: 60px auto 0;
     padding: 0;
     width: 100%;
   }
@@ -42,8 +49,9 @@
     width: 100%;
     float: none;
     padding-left: calc(31% + 2px);
+    padding-top: 0;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-right: calc(31% + 2px);
       padding-left: 0;
     }
@@ -63,6 +71,7 @@
     width: 100%;
   }
 }
+
 
 
 // Sticky footer related
@@ -95,25 +104,25 @@
 }
 
 .footer-main__subscribe {
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
   }
 }
 
 .footer-main__about {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
 
 .section-wrapper-minor {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
 
 .section-wrapper-major {
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
     margin-right: 0;
     margin-left: 2.5%;

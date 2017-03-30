@@ -14,7 +14,7 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
     if $('body.template--offers-index').length
 
       # Third party script buggy in IE/Edge
-      if (($('html.ie11').length) || (navigator.userAgent.indexOf('Edge') >= 0)) then return
+      # if (($('html.ie11').length) || (navigator.userAgent.indexOf('Edge') >= 0)) then return
 
       $window = $(window)
       contentHeight = $window.innerHeight()
@@ -42,7 +42,7 @@ class Clarat.StickySidebar.Presenter extends ActiveScript.Presenter
 
         # Init sticky-kit on sidebar
         $sidebar.stick_in_parent
-          recalc_every: 10
+          recalc_every: 1
           spacer: false
 
 $(document).ready ->

@@ -54,10 +54,20 @@
     position: relative;
     padding-right: 70px;
 
-    body.ar & {
+    html[dir="rtl"] & {
       padding-left: 70px;
       padding-right: 15px;
     }
+  }
+}
+
+.section-content--alloffers {
+  background: transparent;
+
+  .section-content__title {
+    padding: 0;
+    background: transparent;
+    color: inherit;
   }
 }
 
@@ -75,8 +85,7 @@
 }
 
 .section-content__body--offers-of-orga {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .section-content__langlist {
@@ -98,7 +107,23 @@
   width: 100%;
   cursor: pointer;
   min-height: 30px;
-  line-height: 30px;
+  line-height: 27px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  span {
+    display: inline-block;
+    padding-left: 25px;
+    background-image: image-url('ico_fieldset_expand--ondark.svg');
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+
+    .section-content__wrapper.is-expanded + & {
+      background-image: image-url('ico_fieldset_collapse--ondark.svg');
+    }
+  }
 }
 
 .offer-contribute {

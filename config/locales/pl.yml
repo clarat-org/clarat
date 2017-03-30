@@ -6,7 +6,7 @@ pl:
         message: NOTRANSLATE
         name: NOTRANSLATE
       search_location:
-        latitude: NOTRANSLATE
+        latitude: Podejście
         longitude: NOTRANSLATE
         query: NOTRANSLATE
       subscription:
@@ -55,7 +55,7 @@ pl:
             var: link_to_family_movie
           question: Co to jest clarat?
         question_10:
-          answer: "<b>clarat family</b> oraz <b>clarat refugees</b> są finansowane przez %{link_to_bsz}."
+          answer: Pieniądze dla <b>clarat family</b> oraz <b>clarat refugees</b> pochodzą z %{link_to_bsz}. W przyszłości jednakże, chcemy wprowadzić do gry nwoych sposorów
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -109,7 +109,7 @@ pl:
           answer: Regularnie sprawdzamy, czy informacje podawane w clarat są aktualne. Tylko w ten sposób clarat może pomóc dzieciom, młodzieży, rodzinom oraz uchodźcom. Jeśli informacje już się nie zgadzają, aktualizujemy je. To znaczy, wymieniamy je na aktualne.
           question: Czy informacje przekazywane przez clarat są aktualne?
         question_7:
-          answer: Z wielu ofert w clarat family oraz clarat refugees możesz korzystać z każdego miejsca, bez względu na miejsce zamieszkania. Istnieje wiele ofert pomocy przez telefon lub internet tzn. przez e-mail, chat albo na forum. Z wielu innych propozycji można skorzystać w miejscu zamieszkania. W <b>clarat refugees</b> znajdziesz oferty z całych Niemiec. <b>Clarat family</b> rozpoczął swoją działalność w Berlinie. Tu oferta jest bardzo duża. Zbieramy dalsze informacje dotyczące dużych miast w Niemczech, które niebawem będą udostępnione dla zainteresowanych.
+          answer: Z róznorodnych oferty clarat family oraz clarat refugees można skorzystać praktycznie wszedzie, bez względu na miejsce zamieszkania. Opcji jest wiele, można zadzwonić lub użyć w tym celu internetu tzn. e-maila, chatu lub forum. Z wielu innych propozycji można też skorzystać w miejscu zamieszkania. W <b>clarat refugees</b> znajdziesz oferty z całych Niemiec. <b>Clarat family</b> rozpoczął swoją działalność w Berlinie. Tu oferta jest ogromna. Zbieramy dalsze informacje dotyczące dużych miast w Niemczech, które niebawem będą udostępnione dla zainteresowanych.
           question: Czy clarat jest dostępny w całych Niemczech?
         question_8:
           answer: clarat wskazuje ci pomoc w okolicy. Wszystkie oferty znajdziesz w jednym podglądzie. Poza tym powiemy Ci, co trzeba zrobić, aby otrzymać pomoc. Piszemy zawsze prostym, zrozumiałym dla wszystkich językiem, tak aby ci, którzy nie znają zbyt dobrze Niemieckiego, również mogli z oferowanej pomocy skorzystać. Nasze oferty udostępnione są w wielu innych językach. Chcesz więcej informacji na ten temat, kliknij tutaj %{ref_to_how_many_languages}.
@@ -120,9 +120,9 @@ pl:
             var: ref_to_how_many_languages
           question: Czym wyróżnia się clarat?
         question_9:
-          answer: |-
-            clarat jest projektem %{link_to_bsz}. Jest to rodzinna fundacja, która od dawna działa na polu pomocy dzieciom i młodzieży, a obecnie z clarat refugees niesie pomoc uchodźcom. Więcej o fundacji możesz dowiedzieć się z tego %{link_to_bsz_movie}.
-            Pomysł na stworzenie claratu powstał w połowie roku 2014. Grupa zajmująca się claratem powstała w październiku 2014 roku. Jeżeli chcesz się o nas więcej dowiedzieć, zobacz to %{link_to_about_us}.
+          answer: 'clarat został w 2014 przez %{link_to_bsz} wprowadzony w życie. Jest to rodzinna fundacja, która od dawna działa na polu pomocy dzieciom i młodzieży, a obecnie  clarat refugees niesie pomoc uchodźcom. Więcej o fundacji możesz dowiedzieć się pod tym adresem %{link_to_bsz_movie}.
+
+'
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -163,8 +163,9 @@ pl:
           answer: "Mogą to być różne przyczyny.\n<p>\n<ul>\n<li>\nMoże się zdarzyć, że twoje hasło nie działa. Wówczas musisz spróbować użyć innego słowa. Jeśli nie znajdziesz innego odpowiedniego wyrazu, możesz szukać za pomocą obrazów, klikając na nie. W claracie oznacza to: <i>wyszukiwanie wg. kategorii</i>. %{ref_to_how_to_find_right_help} możesz otrzymać informację, jak funkcjonuje wyszukiwanie.\n</li>\n<li>\nJeśli mieszkasz na wsi i w pobliżu nie możesz uzyskać pomocy, wpisz w polu <b>gdzie?</b> nazwę pobliskiego miasta, lub też zwróć rozważ możliwość otrzymania pomocy drogą telefoniczną lub przez internet.\n</li>\n<li>\nInnym powodem może być: brak danych dla twojego terenu.\n</li>\n<li>\nMożliwe jest, że niestety jeszcze nie posiadamy odpowiednich propozycji, które byłyby dla ciebie pomocne. Abyśmy mogli ten stan rzeczy niebawem zmienić, jest dla nas bardzo ważne, abyśmy otrzymali od ciebie informację w tej sprawie. Proszę nas powiadomić o nieudanych próbach wyszukiwania na adres: \n%{mailto_clarat}. Możesz również napisać do nas w Live-Chat, który znajdziesz na stronie w prawym, dolnym rogu.\n</li>\n</ul>\n</p>"
           link_1:
             class: FAQ_anchor_link
-            name: |
-              Tu
+            name: 'Tu
+
+'
             url: "/haeufige-fragen/#how_to_find_right_help"
             var: ref_to_how_to_find_right_help
           link_2:
@@ -449,6 +450,8 @@ pl:
       contact_heading: Czym chcesz się z nami podzielić?
     shared:
       new:
+        back_to_hp: 
+        city_placeholder: 
         email_placeholder:
           required:
             'false': Adres e-mail (Opcjonalnie)
@@ -468,7 +471,7 @@ pl:
           few: Twoich ofert <strong>%{count} clarat refugees</strong>
           one: Twoja oferta <strong>clarat refugees</strong>
           other: Twoje oferty <strong>%{count} clarat refugees</strong>
-      last_update: Last update
+      last_update: Ostatnie zmiany
       obfuscated_email: twój adres e-mail
       refugees:
         heading: Twoje oferty clarat refugees dla <span id="secure-email-0">%{email}</span>
@@ -604,22 +607,33 @@ pl:
         '326': 326
         '568': 568
         '639': 639
+        aar: Aar
+        abk: Abk
         amh: Amh
         ara: Ara
+        arc: Arc
         aze: Aze
+        bam: Bam
         ban: Ban
         bel: Bel
         ben: Ben
         ber: Ber
         bos: Bos
         bul: Bul
+        cau: Cau
+        ckb: Ckb
+        cpe: Cpe
+        cus: Cus
         cze: Cze
         deu: Deu
+        dyu: Dyu
         ell: Ell
         eng: Eng
+        ewo: Ewo
         fas: Fas
         fin: Fin
         fra: Fra
+        fuf: Fuf
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -634,9 +648,12 @@ pl:
         lit: Lit
         ltz: Ltz
         luo: Luo
+        man: Man
         mkd: Mkd
+        msa: Msa
         mul: Mul
         nor: Nor
+        pan: Pan
         pol: Pol
         por: Por
         pus: Pus
@@ -645,6 +662,7 @@ pl:
         rus: Rus
         skr: Skr
         slo: Slo
+        slv: Slv
         snk: Snk
         som: Som
         spa: Spa
@@ -657,6 +675,7 @@ pl:
         tgk: Tgk
         tgl: Tgl
         tha: Tha
+        tig: Tig
         tir: Tir
         tuk: Tuk
         tur: Tur
@@ -671,11 +690,11 @@ pl:
         family: Family
         refugees: Refugees
       sort:
-        nearby: 
-        relevance: 
+        nearby: Blisko
+        relevance: W związku z tematem
       sort_order:
-        nearby: 
-        relevance: 
+        nearby: Blisko
+        relevance: W związku z tematem
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -688,6 +707,12 @@ pl:
       <a href="/pl/refugees/ochrona-danych">więcej</a>.
     geolocation:
       error: Lokalizacja nie mogła zostać odnaleziona. Prosimy wprowadzić ją ręcznie.
+      fallback: 
+      fallback_clarification:
+        code1: 
+        code2: 
+        code3: 
+        code4: 
       get: Użyj mojej lokalizacji!
       waiting: Szukam lokalizacji... Prawdopodobnie musisz najpierw wyrazić zgodę.
     lang_list_toggle:
@@ -737,12 +762,20 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
+        sort: Sortuj według
         target_audience: Pomoc dla kogo?
       option_any: obojętne
       pagination:
         back: Wróć
         gap: "..."
         next: Dalej
+      sort:
+        nearby: W pobliżu
+        relevance: Lepszy strzał
+      tabs:
+        categories: Kategorie
+        filter: Filtr
+        map: Mapa
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -757,7 +790,11 @@ pl:
         headline_small_map: Oferty na mapie
       more: Inne oferty telefoniczne i online
       off_canvas:
-        result_text: Show %{result_count} results
+        result_text: Pokaż %{result_count} wyniki wyszukiwania
+      personal_anchor:
+        few: Lokalnie (%{count})
+        one: Lokalnie (%{count})
+        other: Lokalnie (%{count})
       personal_offers:
         few: "%{count} ofert na miejscu"
         one: Jedna oferta na miejscu
@@ -768,6 +805,10 @@ pl:
         category: 
         category_query: 
         default: 
+      remote_anchor:
+        few: Online i telefon (%{count})
+        one: Online i telefon (%{count})
+        other: Online i telefon (%{count})
       remote_offers:
         few: "%{count} porad telefonicznych i ofert online"
         one: Jedna porada telefoniczna lub oferta online
@@ -789,22 +830,33 @@ pl:
         '326': Język ukraiński - українська
         '568': Język niderlandzki - Nederlands
         '639': Język perski (dari) - دری
+        aar: 'Język afar - Qafar-áf '
+        abk: Język abchaski - аҧсуа бызшәа
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
+        arc: Język aramejski - ארמית / Arāmît
         aze: Język azerski - Azərbaycan
+        bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
         bel: Język białoruski - беларуская мова
         ben: Język bengalski - বাংলা
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        cau: Język abazyński - абаза бызшва
+        ckb: 'Język sorani - سۆرانی '
+        cpe: Język kamtok - Pidgin
+        cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
         deu: Język niemiecki - Deutsch
+        dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
         fin: Język fiński - suomi
         fra: Język francuski - Français
+        fuf: Pular - Pular
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
         hin: Język hindi - हिन्दी
@@ -819,9 +871,12 @@ pl:
         lit: Język litewski - lietuvių
         ltz: Język luksemburski - Lëtzebuergesch
         luo: Język luo - Dholuo
+        man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
+        pan: Język pendżabski - پنجابی / ਪੰਜਾਬੀ
         pol: Język polski - polski
         por: Język portugalski - português
         pus: Język paszto - پښتو‎
@@ -830,6 +885,7 @@ pl:
         rus: Język rosyjski - русский
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
         slo: Język słowacki - slovenský jazyk
+        slv: Język słoweński - Slovenščina
         snk: Język soninke - Soninkanxaane
         som: Język somalijski - Soomaali
         spa: Język hiszpański - español
@@ -842,6 +898,7 @@ pl:
         tgk: Język tadżycki - тоҷикӣ / تاجیکی
         tgl: Język tagalski - Tagálog
         tha: Język tajski - ภาษาไทย
+        tig: Język tigre - ትግሬ
         tir: Język tigrinia - ትግርኛ
         tuk: Język turkmeński - Türkmençe / Tүркменче
         tur: Język turecki - Türkçe
@@ -852,6 +909,8 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+    shariff:
+      share_label: Podziel
     single_search_result:
       encounters:
         chat: chat
@@ -885,30 +944,48 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-      head:
-        title:
-          family: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        languages:
-          ar: "عربي"
-          de: Deutsch
-          en: English
-          fr: Français
-          pl: Polski
-          ru: "Русский"
-          tr: Türkçe
-        title: Automatyczne Tłumaczenia!
+        legal_title: On clarat, legal text can only be read in German
+        title: 
       navigation:
         category_headline: Lub szukaj w kategoriach
         claim:
           family: Oferty wsparcia dla dzieci, młodzieży i rodzin
           main: Proste szukanie pomocy
           refugees: Oferty wsparcia dla uchodźców
+      top_bar:
+        german_content_warning: Wybierz Twój język
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+        section_link:
+          desktop:
+            family: do clarat refugees
+            refugees: do rodziny clarat
+          mobile:
+            home:
+              family: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
+              refugees: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
+            switch:
+              family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
+              refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
+        title: Automatyczne Tłumaczenia!
+  offer:
+    stamp:
+      target_audience:
+        family_acquaintances: 
+        refugees_adolescents: 
   offers:
     index:
       filters:
@@ -925,27 +1002,27 @@ pl:
           encounter:
             chat: chat
             email: e-Mail
-            fax: 
+            fax: Faks
             forum: forum
             hotline: telefon
-            letter: 
+            letter: List
             online-course: kurs online
             portal: lista adresów
           exclusive_gender:
             boys_only: tylko dla chłopców i mężczyzn
             girls_only: tylko dla dziewcząt i kobiet
           target_audience:
-            acquaintances: dla znajomych i krewnych
             children: dla dzieci i młodzieży
-            family_acquaintances: dla znajomych i krewnych
             family_children: dla dzieci i młodzieży
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
             family_parents_to_be: dla przyszłych rodziców
             family_pregnant_woman: dla kobiet w ciąży
+            family_relatives: dla znajomych i krewnych
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
+            relatives: dla znajomych i krewnych
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -980,7 +1057,7 @@ pl:
           sun: Niedziela
           thu: Czwartek
           tue: Wtorek
-          wed: "Środa"
+          wed: Środa
         heading: Kiedy możesz się zgłosić?
       speaking: W jakim języku można Ci pomóc?
       website_section:
@@ -1033,38 +1110,65 @@ pl:
   pages:
     about:
       amina: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Szybko orientuje się, co jest ważne. W clarat jest w zespole badawczym. Ona decyduje, co znajdzie się w ofertach claratu. Jej ulubionym utworem jest “La Prima Estate” Erlenda Oye.
-      andrea: 'Studiowała Zarządzanie Międzykulturowe. To znaczy, że wie dużo o gospodarce i kulturze. Jest bardzo dokładna w swojej pracy. W clarat jet częścią zespołu badawczego. Andrea zabezpiecza jakość naszej pracy. Jej ulubiony utwór to: “Work Me” The Black Keys.'
+      andrea: 'Studiowała Zarządzanie Międzykulturowe. Stąd wie tez niemało o gospodarce czy kulturze. Jest bardzo dokładna w swojej pracy. W clarat jest częścią zespołu badawczego. Andrea zabezpiecza jakość naszej pracy. Jej ulubiony utwór to: “Work Me” The Black Keys.'
+      anja: Jest ekologiem i inżynierem. Potrafi szybko i logicznie myśleć. W clarat pracuje w Research-Teamie. Jest gwarancją najwyższej jakości. Jej ulubioną piosenką jest "Where is my mind" grupy Pixies.
+      ann-sophie: 
+      anna: Jest filologiem. To znaczy, one wie sporo o językach. Literatura też nie jest jej obca. Potrafi dobrze zrozumieć spokomplikowane zagadnienia. W clarat pracuje w Research-Teamie. Jej ulubioną piosenką jest "1009" grupy Bonobo.
       anne: |-
         Studiowała Gospodarkę i Stosunki Międzynarodowe. Potrafi bardzo szybko logicznie myśleć. W clarat jest szefem.
-        Opiekuje się całym zespołem i organizuje wszystko. Jej ulubionym utworem jest: “Denken Sie Groß” formacji Deichkind.
+        Opiekuje się całym zespołem i organizuje wszystko. Jej ulubionym utworem jest: “Denken Sie Groß” grupy Deichkind.
       astrid: "Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Ma zawsze dobry humor i zaraża nim wszystkich. W \nclarat jest w zespole badawczym. Jej ulubiony utwór to: ”You Got Me” zespołu The Roots feat. Erykah Badu."
       basti: 'Jest web developerem.To znaczy, że potrafi dobrze programować strony internetowe. W clarat jest kierownikiem zespołu IT. Pomaga przy zadaniach technicznych oraz zajmuje się sprawami urlopowymi i umowami. Jego ulubionym utworem jest: “Man in The Mirror” Michaela Jacksona.'
       bettina: Bettina studiowała zarządzanie non-profit. To znaczy, że wie, jak zorganizować pomoc. Potrafi też świetnie wszystko uporządkować. W clarat jest w zespole badawczym i zajmuje się wyszukiwaniem organizacji w internecie. Jej ulubionym utworem jest “Elias” grupy Dispatch.
+      birte: Studiowała pedagogikę. Rozumie się dobrze z dziećmi. Potrafi wczuć się w drugiego człowieka. Pracowała dużo z mediami. W clarat działa w Research-Teamie. Jej ulubionym utworem jest "Borderline" Madonny.
+      chrissy: Jest politologiem. To znaczy, że wie wiele ona o polityce i społeczeństwie. Jest dobra w planowaniu i organizacji. W clarat działa w Research-Teamie. Wyszukuje organizcje w internecie. Jej ulubionym utworem jest "Rough Hands" grupy Alexisonfire.
+      claudia: Przed claratem pracowała w handlu detalicznym. Wie jak się obchodzić z ludźmi. Potrafi szybko zbierać informacje. W clarat pracuje dla Research-Teamu. Potrafi pomóc naszym użytkownikom. Jej ulubionym utworem jest "Chandelier" Sia.
+      damjan: 
+      eleonore: Studiowała muzykę, media i gospodarke. Potrafi szybko zbierać i zrozumieć informacje. W clarat pracuje w Research-Teamie. Troszczy się o to, by użytkownicy łatwo mogli znaleźć clarat w internecie. Jej ulubionym utworem jest "Je Veux" grupy Zaz.
       elisa: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze. Potrafi też łatwo wytłumaczyć skomplikowane rzeczy. W clarat jest w zespole badawczym. Zajmuje się również leksykonem i użytkownikami. Jej ulubiony utwór to “Boat Behind” zespołu Kings of Convenience.
+      esther: Studiowała kulturoznawstwo. Zna doskonale historie i politykę. Szybko uczy się nowych rzeczy. W clarat pracuje dla Research-Teamu i troszczy się o leksykon. Jej ulubionym utworem jest "This charming man" zespołu The Smiths.
+      fabian: 
       franziska: Jest ekspertem prawa międzynarodowego.To znaczy, że wie dużo o prawie, które obowiązuje we wszystkich krajach. Potrafi zrozumieć skomplikowane rzeczy i znaleźć szybko rozwiązanie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Explanations” Selah Sue.
+      hassan: Pracował jako tłumacz języka perskiego. Jest szybki i dobrze zoorganizowany. W clarat pracuje w zespole tłumaczeniowym i tłumaczy clarat na język perski. Jego ulubionym utworem jest "Looking For The Summer" Chrisa Rea.
       heading: Kto się kryje za claratem?
+      jacinta: Studiowała niemiecki i francuski. Jej jęzzykiem ojczystym jest angielski. Potrafi jasno i klarownie pisać. W clarat pracuje w zespole tłumaczeniowym i tłumaczy clarat na angielski. Jej ulubionym utworem jest "Wannabe" zespołu Spice Girls.
+      jakob: Jest naukowcem zajmującym się Azją i Afryką. To znaczy, że wie on wiele o kontynentach. W stresowych sytuacjach zachowuje spokój. W clarat pracuje w Research-Teamie. Wyszukuje organizacji w internecie. Jego ulubionym utworem jest "Simplicity" zespołu Mbarga.
       janina: Jest antropologiem kulturowym. To znaczy, że wie dużo o ludziach i kulturach. Potrafi dobrze pisać. W clarat jest w zespole badawczym. Jest ekspertem językowym claratu i pomaga naszym użytkownikom. Jej ulubiony utwór to “MFG” Fanty4.
+      janina_m: Jest menadżerem opercji krajowych. Jest dobrze zoorganizowana. W clarat troszczy się o naszych współpracowników i nasze biura. Również o to, żeby wszystko funkcjonowało jak należy. Jej ulubionym utworem jest "Kinder an die Macht" Herberta Grönemeyera.
       janne: Janne studiowała Politykę i Stosunki Międzynarodowe. Potrafi świetnie gospodarować swoim czasem. W clarat jest w zespole badawczym. Ona decyduje, jakie oferty przynależą do claratu. Jej ulubiony utwór to “Sweat” Ry X.
+      jenny: Jest antropologiem społeznym. To znaczy, że wie wiele o ludziach i kulturze. Zawsze znajdzie jakieś rozwiązanie. W clarat pracuje dla Research-Teamu. Troszczy się o porządek na naszych stronach internetowych. Jej ulubionych utworem jest "I sing I swim" zespołu Seabear.
       jens: Jest pedagogiem. To znaczy, że zna się na wykształceniu. Szybko pojmuje skomplikowane rzeczy. W clarat jet w zespole badawczym i decyduje jakie oferty wybierze clarat. Jego ulubionym utworem jest “2B2” zespolu Lambchop.
-      jule: Jest badaczem pokojowego rozwiązywania konfliktów. Wie dużo o konfliktach i wojnach. Potrafi dobrze znajdować rozwiązania. W clarat jest w zespole badawczym. Zabezpiecza jakość naszej pracy. Jej ulubiony utwór to “Home” Edwarda Sharpe.
+      jule: Jest badaczem pokojowego rozwiązywania konfliktów. Wie dużo o konfliktach i wojnach. Potrafi znaleźć rozwiązanie każdego problemu. W clarat jest w zespole badawczym. Zabezpiecza jakość naszej pracy. Jej ulubiony utwór to “Home” Edwarda Sharpe.
       julia: Jest germanistką. To znaczy, że zna się dobrze na tekstach i na języku niemieckim. Potrafi dobrze pisać i łatwo wyjaśniać zagadnienia. W clarat jest w zespole badawczym. Jest też ekspertem językowym claratu. Jej ulubiony utwór to “Reckoner” Radiohead.
-      julian: Jest ekonomem społecznym. To znaczy, że wie dużo o gospodarce i społeczeństwie. Zna się też dobrze na komputerach. W clarat jest w zespole badawczym oraz zajmuje się sprawami technicznymi. Jego ulubiony utwór to “All You Need” Sublime.
-      katinka: |-
-        Jest psychologiem. To znaczy, że zna się na zachowaniach i uczuciach ludzi. Potrafi uporządkować skomplikowane sprawy.
-        W clarat jest w zespole badawczym. Jej ulubiony utwór to “Greatest” Cat Power.
+      julia_b: Studiowała prace społeczne. Pracowała wiele z dziećmi i młodzieżą. Potrafi dobrze zrozumieć drugiego człowieka. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Nantes" zespołu Beirut.
+      juliane: Studiowała administracje biznesową i turystykę. Potrafi dobrze planować. Zawsze znajdzie kreatywne rozwiązanie. W clarat troszczy się o marketing. Jej ulubionym utworem jest "Easy" zespołu The Commodores.
+      karo: Studiowała europeistykę. To znaczy, że wie sporo o polityce europejskiej. Potrafi doskonale organizować. W clarat pracuje dla Research-Teamu. Troszczy się o naszą księgowość. Jej ulbionym utworem jest "Alive" zespołu Pearl Jam.
+      katja: Jest gerministką. Zna się dobrze na złozonych tekstach i języku niemieckim. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Mysteries" Beth Gibbons.
       konstantin: Jest web developerem. To znaczy, że potrafi dobrze programować strony internetowe. Zawsze znajduje dobre rozwiązania. W clarat jest w zespole IT i tworzy naszą stronę internetową. Jego ulubionym utworem jest “Too Long” Daft Punk.
-      laura: Studiowała Nauki o Azji Południowej i Geografię Rozwoju Regionalnego. To znaczy, że zna się na krajach rozwijających się. Zawsze ma dobre rozeznanie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Paint in Black” Rolling Stones.
-      lavinia: Jest badaczem stosunków pokojowych. Wie dużo o konfliktach i wojnie. Potrafi dobrze przekonywać innych. W clarat jest w zespole badawczym i porządkuje tematycznie oferty. Jej ulubionym utworem  jest “I´m Not Done” Fever Ray.
-      line: Jest reżyserką teatralną. Zna się dobrze na literaturze i języku. Dlatego wie jak słowa działają na ludzi. Jej ulubiony utwór to “Anybody Seen My Baby”  Rolling Stones.
-      lisa: Jest technikiem designu. To znaczy, że potrafi kreatywnie rozplanować projekty. W clarat zajmuje się planowaniem i użytkownikami. Jej ulubionym utworem jest “Another Day” Jamie Lidell.
+      laura_i: |-
+        Jest agentem biura podróży i kulturoznawcą. Potrafi dobrze organizować. Zawsze widzi rzeczy w szerszej perspektywie i szybko się uczy nowych rzeczy.
+        W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Proud Mary" Tiny Turner.
+      laura_w: Studiowała Nauki o Azji Południowej i Geografię Rozwoju Regionalnego. To znaczy, że zna się na krajach rozwijających się. Zawsze ma dobre rozeznanie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Paint in Black” grupy Rolling Stones.
+      lavinia: Jest polemologiem. Wie dużo o konfliktach i wojnie. Ma dar przekonywania. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem  jest “I´m Not Done” zespołu Fever Ray.
+      line: Jest reżyserką teatralną. Zna się dobrze na literaturze i języku. Dlatego wie jak słowa działają na ludzi. Jej ulubiony utwór to “Anybody Seen My Baby”  grupy Rolling Stones.
+      lisa: Jest designerem. To znaczy, że chętnie znajduje nowe, kreatywne rozwiązania i potrafi to dobrze pokazać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest “Another Day” Jamie Lidell.
+      magdalena: 
       marcus: Jest webdesignerem. To znaczy, że potrafi programować szatę graficzną stron internetowych. Potrafi też dobrze planować. W clarat jest w zespole IT. Dba o to, aby nasza strona internetowa dobrze wyglądała. Jego ulubionym utworem jest “Hysteria” zespolu Muse.
-      nicole: Studiowała komunikację międzykulturową. To znaczy, że wie dużo o kulturze i językach. Potrafi dobrze podejmować decyzje. Jest kierowniczką zespołu badawczego. Jej ulubiony utwór to “Palabra Mi Amor” Shaka Ponk.
+      marie: 
+      michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
+      nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.
+      nathalie: Studiowała prawa człowieka i politykę międzynarodową. Potrafi dobrze tłumaczyć i świetnie słuchać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Me in You" zespołu Kings of Convienience.
       nils: Jest informatykiem. To znaczy, że potrafi dobrze programować strony internetowe i programy komputerowe. Szybko znajduje dobre rozwiązania i szybko się uczy. W clarat jest w zespole IT. Jego ulubiony utwór to “Jein” grupy Fettes Brot.
-      stefan: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze i społeczeństwie. Potrafi świetnie przekonywać ludzi do dobrej sprawy. On jest pomysłodawcą claratu. Jego ulubionym utworem jest “Riders On The Storm” The Doors.
+      omar: 
+      patrick: 
+      philipp: Studiował historie, politykę i prawo. Wie wiele o polityce i społeczeństwie. Potrafi łatwo zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamie. Jego ulubionym utworem jest "This Is Our Science" zespołu Astronautalis.
+      sabine: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Potrafi dobrze zrozumieć skomplikowane rzeczy. W clarat pracuje dla Research-Teamu. Wyjaśnia nam prawne kwestie azylu politycznego. Jej ulubionym utworem jest "Vensa" zespołu Kino.
+      sophie: Studiowała zarządzanie spółkami non-profit. Jest dobra w organizacji i szybko poznaje istote rzeczy. W clarat pracuje dla Research-Teamu. Dowiaduje się, kto i jak używa clarat. Jej ulubionym utworem jest "Lost" Franka Ocean.
+      stefan: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze i społeczeństwie. Potrafi świetnie przekonywać ludzi do dobrej sprawy. On jest pomysłodawcą claratu. Jego ulubionym utworem jest “Riders On The Storm” zespołu The Doors.
       text: "clarat jest projektem stowarzyszenia użytecznosci publicznej, Stowarzyszenia Benckiser-Przyszłość (www.benckiser-stiftung.org). Przez stowarzyszenie Benckiser promujemy od wielu lat skuteczne projekty rozwojowe dla dzieci i młodzieży. Dlatego zauważyliśmy: Jak trudno jest rozeznać się w istniejących już ofertach pomocy. Ale jedno stało się jasne: Skoro nam “ekspertom” nie jest łatwo się w tym rozeznać, to jak trudne musi to być dla dzieci, młodzieży czy rodzin, które potrzebują pomocy? Albo dla uchodźców, którzy tutaj w Niemczech nie maja jeszcze jakiegokolwiek rozeznania? \nOdpowiedz jest prosta: Bardzo trudno! I stąd zrodził się pomysł na clarat: proste znalezienie pomocy. Dla rodzin: na stronie clarat family. A dla uchodźców: na clarat refugee."
-      tine: Jest pedagogiem socjalnym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ Ghostpoet.
+      tine: Jest pedagogiem społecznym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ zespołu Ghostpoet.
       title: " O nas"
-      verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” Oh Wonder.
+      verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” zespołu Oh Wonder.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1118,6 +1222,12 @@ pl:
       how:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
+      meta_description:
+        family: 
+        refugees: 
+      meta_title:
+        family: 
+        refugees: 
       title:
         family: Oferty wsparcia dla dzieci, młodzieży i rodzin
         refugees: Oferty wsparcia dla uchodźców
@@ -1129,10 +1239,10 @@ pl:
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
-      notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
+      notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
       responsible_html: |-
         Geschäftsführer<br/>
-        Dr. Stefan Shaw und Mathias Barth<br/>
+        Anne Schulze und Mathias Barth<br/>
         (verantwortlich für den Inhalt der Website)<br/><br/>
         Handelsregister: AG Charlottenburg<br/>
         HRB 174379 B
@@ -1170,8 +1280,9 @@ pl:
         heading: 1. Ermöglichung der Inanspruchnahme unseres Webseitenangebots
         text: 'Wenn Sie die Angebote unserer Webseiten abrufen, erheben und speichern wir folgende Nutzungsdaten, um Ihnen die Nutzung zu ermöglichen: Merkmal zu Ihrer Identifikation (Ihre IP-Adresse, u.U. Nutzername und Passworte), Angaben zu Beginn, Ende, Art und Umfang Ihrer Nutzung sowie über die Art Ihres Browsers und Betriebssystems. Die Verarbeitung dieser Informationen ist technisch notwendig, um die Inanspruchnahme unserer Webseite zu ermöglichen. Gleiches gilt, wenn Sie auf die Inhalte aus unseren Newslettern zugreifen (sofern nicht gesetzlich anderweitig zulässig, werden wir Ihnen unsere Newsletter nur auf Ihren Wunsch und mit Ihrer ausdrücklichen Einwilligung zusenden). '
       chapter_seven:
-        heading: |
-          7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+        heading: '7. Sicherheit und Kontrolle über Ihre Daten, externe Dienstleister
+
+'
         nested_text_one: Für den Versand unseres Newsletters bzw. unserer Infomails nutzen wir einerseits „MailChimp“, einen Service der The Rocket Science Group LLC aus den USA (%{mailchimp}), sowie SendGrid, einen Service der Sendgrid Inc., ebenfalls aus den USA (%{sendgrid}). Die jeweiligen Datenverarbeitungen werden dort für uns streng weisungsgebunden als technische Dienstleistung im Rahmen einer Auftragsdatenverarbeitung erbracht. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt in beiden Fällen auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit The Rocket Science Group LLC bzw. Sendgrid Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben.
         nested_text_two: 'Wir verwenden zur Abwicklung von Service-Anfragen ein externes Ticket-System von Freshdesk Inc, 311 California street, San Francisco, CA 94104, USA. Die in diesem Zusammenhang notwendige Übermittlung von personenbezogenen Daten in die USA erfolgt auf Grundlage der von der Europäischen Kommission erlassenen „Standardvertragsklauseln für die Übermittlung personenbezogener Daten an Auftragsverarbeiter in Drittländern“, die wir mit Freshdesk Inc. zum Schutze Ihrer Persönlichkeitsrechte vereinbart haben. Bitte beachten Sie auch die Datenschutzhinweise von Freshdesk: (%{freshdesk}). Zur Verwendung des Service-Portals ist mindestens die Angabe einer korrekten E-Mail-Adresse notwendig. Eine pseudonyme Nutzung ist möglich. Im Verlauf der Bearbeitung von Service-Anfragen, kann es notwendig sein, dass (z.B. zur Zusendung von Dokumenten) weitere Daten erhoben werden (Name, Adresse). Die Nutzung des Service-Portals ist optional und dient der Verbesserung und Beschleunigung unseres Kundenservice. Wenn Sie mit einer Datenerhebung über und einer Datenspeicherung im externen System von Freshdesk nicht einverstanden sind, bieten wir Ihnen alternative Kontaktmöglichkeiten zur Einreichung von Service-Anfragen, zum Beispiel telefonisch. '
         nested_title_one: 7.1. MailChimp/Sendgrid
@@ -1191,8 +1302,9 @@ pl:
         nested_title_two: 3.2 Analyse
         text: 'Da wir unsere Angebote den Bedürfnissen unserer Nutzer optimal anpassen möchten, benötigen wir Informationen über das allgemeine Nutzungsverhalten. Daher erstellen wir aus jenen Nutzungsdaten, welche wir zur Ermöglichung der Inanspruchnahme unseres Webseitenangebotes zulässigerweise erheben, Nutzungsprofile unter Verwendung von Pseudonymen. D.h. wir ersetzen sämtliche Angaben in den Nutzungsdaten, die Rückschlüsse auf Ihre Person zulassen könnten (wie IP-Adresse, Nutzernamen, Passworte) durch ein abstraktes Merkmal. Eine Zusammenführung der Nutzungsprofile mit Daten zu Ihrer Person oder eine Nutzung für andere Zwecke erfolgt nicht. Der Verwendung Ihrer personenbezogenen Daten zur Erstellung von Nutzungsprofilen können Sie jederzeit widersprechen. '
       chapter_two:
-        heading: |
-          2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+        heading: '2. Von Ihnen freiwillig zur Verfügung gestellte personenbezogene Daten
+
+'
         nested_text_one: 'Die mittels des Kontaktformulars bzw. einer Live-Chat-Funktion zur Verfügung gestellten personenbezogenen Daten werden wir ausschließlich zur Erbringung der jeweils angefragten Leistung verwenden. '
         nested_text_three: 'Wenn der von Ihnen verwendete Browser die Funktion „standortbezogenes Surfen“ unterstützt und Sie diese Funktion in Ihrem Browser verwenden, berechnet der Hersteller Ihres Browsers anhand bestimmter Informationen Ihren Standort und teilt uns diesen mit. Wir verwenden diese Information, um auf Ihren Standort abgestimmte Suchergebnisse liefern zu können. Welche Daten Ihr Browser dabei verwendet, wie genau die Standortangaben sind und wie Sie diese Funktion deaktivieren, entnehmen Sie bitte den jeweiligen Datenschutz- bzw. Nutzungsbestimmungen Ihres Browsers. '
         nested_text_two: 'Die mittels des Formulars zur Newsletter-Anmeldung zur Verfügung gestellten personenbezogenen Daten werden wir nutzen, um Ihnen gelegentlich E-Mails mit Informationen über neue oder spezielle Angebote zuzusenden. '
@@ -1205,12 +1317,12 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      title:
-        refugees: 
+      meta_description: 
+      meta_title: 
+      title: Wybierz swój clarat-świat
     shared:
       address:
-        email: |
-          %{mailto}
+        email: "%{mailto}\n"
         fax: Fax +49 (0)30 55 57 96 09 9
         name: clarat gGmbH
         street: Französische Straße 47
@@ -1223,9 +1335,12 @@ pl:
     definitions: definicje
     emails: e-maile
     faq: często-zadawane-pytania
+    fr: fr
     haeufige-fragen: często-zadawane-pytania
-    home: 
+    home: home
     impressum: impressum
+    liste: Lista
+    liste-de-services: liste-de-services
     new: nowe
     offers: oferty
     organizations: organizacje
@@ -1251,6 +1366,10 @@ pl:
           family: Jeśli klikniesz tutaj, przejdziesz do clarat family. W clarat family możesz szukać pomocy dla dzieci, młodzieży i rodzin.
           refugees: Jeśli klikniesz tutaj, przejdziesz do clarat refugees. W clarat refugees możesz szukać pomocy dla uchodźców.
   simple_form:
+    placeholders:
+      search_form:
+        home:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

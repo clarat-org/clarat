@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.3.3'
 
 gem 'nokogiri', '1.6.7.2' # 1.6.8 doesnt install on some pcs. Remove when fixed
 
@@ -12,7 +12,7 @@ gem 'clarat_base', github: 'clarat-org/clarat_base'
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.12'
+gem 'rails', '~> 4.2'
 
 # Translations
 gem 'rails-i18n'
@@ -29,6 +29,9 @@ end
 #######################
 
 gem 'localeapp'
+
+# Puma server
+gem 'puma'
 
 ##############
 # JavaScript #
@@ -66,6 +69,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-isInViewport'
   gem 'rails-assets-iCheck'
   gem 'rails-assets-hammerjs'
+  gem 'rails-assets-flexibility'
+  gem 'rails-assets-ifvisible.js'
 end
 
 #######
@@ -132,6 +137,8 @@ gem 'kaminari' # pagination
 gem 'route_translator'
 gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
                         branch: 'adds-custom-storages'
+
+gem 'responders', '~> 2.0'
 
 # Model enhancements
 

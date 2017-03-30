@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 
 feature 'Offer display' do
-  scenario 'Offer gets shown' do
+  scenario 'Approved offer gets shown' do
     offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
     visit unscoped_offer_path offer
     page.must_have_content offer.name
@@ -9,17 +9,36 @@ feature 'Offer display' do
     page.must_have_content offer.name
   end
 
-  scenario 'Offer gets shown in a different language (English)' do
+  scenario 'Expired offer gets shown' do
     offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
-    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer.update_columns aasm_state: 'expired'
+    visit unscoped_offer_path offer
+    page.must_have_content offer.name
+    click_link offer.organizations.first.name
+    page.must_have_content offer.name
+  end
+
+  scenario 'Approved offer gets shown in a different language (English)' do
+    offer = FactoryGirl.create :offer, :approved, :with_email,
+                               :with_dummy_translations # test obfuscation
+    # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
     visit offer_en_path offer, section: 'refugees'
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'
   end
 
+  scenario 'Expired offer gets shown in a different language (English)' do
+    offer = FactoryGirl.create :offer, :approved, :with_email,
+                               :with_dummy_translations # test obfuscation
+    offer.update_columns aasm_state: 'expired'
+    visit offer_en_path offer, section: 'refugees'
+    page.must_have_content 'GET READY FOR CANADA'
+    page.must_have_css '.Automated-translation__warning'
+  end
+
   scenario 'Offer view has evaluated markdown' do
-    offer = FactoryGirl.create :offer, :approved,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
                                description: 'A [link](http://www.example.org)',
                                old_next_steps: "A\n\n- list"
 
@@ -40,8 +59,9 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view displays translated old/new next steps' do
-    offer = FactoryGirl.create :offer, :approved, old_next_steps: 'Step one.'
-    TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
+                               old_next_steps: 'Step one.'
+    # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
     next_steps(:basic).update_column :text_en, 'English step 1.'
     visit offer_en_path offer, section: 'refugees'
     within '.section-content--nextsteps' do
@@ -60,7 +80,7 @@ feature 'Offer display' do
 
   scenario 'Offer view has explained words' do
     Definition.create key: 'complex', explanation: 'Explained!'
-    offer = FactoryGirl.create :offer, :approved,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
                                description: 'A complex sentence.'
 
     visit unscoped_offer_path offer
@@ -69,15 +89,15 @@ feature 'Offer display' do
     )
   end
 
-  scenario 'Muliple contact persons are shown in the right order' do
+  scenario 'Multiple contact persons are present' do
     offer = FactoryGirl.create :offer, :approved
     offer.contact_people << FactoryGirl.create(
-      :contact_person, :no_fields, :with_telephone,
+      :contact_person, :all_fields, :with_telephone,
       organization: offer.organizations.first
     )
     visit unscoped_offer_path offer
     page.body.must_match(
-      '030  12 34 56</a><br /></li></ul>'
+      '030  12 34 56'
     )
   end
 
@@ -88,7 +108,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">Weitere Infos (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">Weitere Infos (PDF)</a>'
     )
   end
 
@@ -99,7 +119,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 
@@ -111,7 +131,7 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, host: 'own', url: 'http://www.example2.com/')
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a href="http://www.example.com/" target="_blank">www.example.com</a> | <a href="http://www.example2.com/" target="_blank">www.example2.com</a> | <a href="http://www.t.com/t.pdf" target="_blank">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.example2.com/">www.example2.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 end

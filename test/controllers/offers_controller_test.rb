@@ -14,9 +14,8 @@ describe OffersController do
       it 'should use the correct canonical URL' do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         get :show, id: offer.slug, locale: 'de', section: 'family'
-        canonical_link = css_select('link[rel=canonical]').first
-        assert_equal canonical_link.attributes['href'],
-                     "http://test.host/family/angebote/#{offer.slug}"
+        assert_includes response.body,
+                        "http://test.host/family/angebote/#{offer.slug}"
       end
 
       it 'should redirect if the wrong section was given' do
@@ -34,6 +33,32 @@ describe OffersController do
       it 'should redirect to 404 if offer not found' do
         get :show, id: 'doesntexist', locale: 'de', section: 'family'
         assert_redirected_to controller: 'pages', action: 'not_found'
+      end
+    end
+
+    describe 'for an expired offer' do
+      it 'should work (with friendly id)' do
+        offer = FactoryGirl.create :offer, :approved, name: 'bazfuz',
+                                                      section: 'family'
+        offer.update_columns aasm_state: 'expired'
+        get :show, id: offer.slug, locale: 'de', section: 'family'
+        assert_response :success
+        assert_select 'title', 'bazfuz | clarat'
+      end
+
+      it 'should use the correct canonical URL' do
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer.update_columns aasm_state: 'expired'
+        get :show, id: offer.slug, locale: 'de', section: 'family'
+        assert_includes response.body,
+                        "http://test.host/family/angebote/#{offer.slug}"
+      end
+
+      it 'should redirect if the wrong section was given' do
+        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
+        offer.update_columns aasm_state: 'expired'
+        get :show, id: offer.slug, locale: 'de', section: 'family'
+        assert_redirected_to section: 'refugees'
       end
     end
   end

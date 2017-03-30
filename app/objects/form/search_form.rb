@@ -41,6 +41,9 @@ class SearchForm
   ### Encounter
   attribute :encounters, String,
             default: (Offer::ENCOUNTERS - %w(personal)).join(',')
+  ### Sort Order
+  attribute :sort_order, String, default: :nearby
+  enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
   attribute :section, String, default: :family
   enumerize :section, in: SectionFilter::IDENTIFIER
@@ -64,9 +67,6 @@ class SearchForm
     if cookies[:saved_search_location] && cookies[:saved_geolocation]
       self.search_location = cookies[:saved_search_location]
       self.generated_geolocation = cookies[:saved_geolocation]
-    else
-      self.search_location = I18n.t('conf.default_location')
-      self.generated_geolocation = I18n.t('conf.default_latlng')
     end
   end
 

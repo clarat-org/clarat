@@ -10,17 +10,16 @@
   z-index: 30;
   margin: 0 auto;
   padding-top: 30px;
-  max-width: 900px;
-
-  body.refugees & {
-    max-width: 1045px;
-  }
+  max-width: 85%;
 }
 
 .nav-sections__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  -js-display: flex; // polyfill rule
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-sections__headline {
@@ -35,9 +34,8 @@
   @extend %roboto_bold;
   position: relative;
   float: left;
-  margin: 0 22px;
-  width: 105px;
-  height: 110px;
+  width: 115px;
+  height: 115px;
   text-align: center;
   font-size: 18px;
   word-wrap: break-word;
@@ -55,7 +53,7 @@
     bottom: 0;
     left: 0;
     display: block;
-    padding-top: 110px;
+    padding-top: 138px;
     color: $brand_brown;
     text-decoration: none;
 
@@ -67,17 +65,29 @@
 
 }
 
+.nav-sections__button {
+  body.refugees &,
+  body.family & {
+    height: inherit;
+    background: transparent;
+    padding-top: 7em;
+    color: $brand_brown;
+  }
+}
+
 
 // Legal: only in refugees
 
+$dimension: 115px;
+
 .nav-sections__listitem--a-legal {
   background: image-url('picto_legal.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 }
 
 .nav-sections__listitem--b-family {
   background: image-url('picto_family.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.family & {
     background-image: image-url('picto_family--family.svg')
@@ -89,7 +99,7 @@
 
 .nav-sections__listitem--c-health {
   background: image-url('picto_health.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_health--refugees.svg')
@@ -102,7 +112,7 @@
 
 .nav-sections__listitem--d-learn {
   background: image-url('picto_learn.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_learn--refugees.svg')
@@ -113,10 +123,29 @@
   }
 }
 
+.nav-sections__notification {
+  position: absolute;
+  right: 0;
+  background: $brand-orange;
+  color: $brand_white;
+  border-radius: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $brand_white;
+  animation-name: pulse;
+  animation-duration: .5s;
+  pointer-events: none;
+
+  .fa {
+    margin: 0;
+  }
+}
+
 
 .nav-sections__listitem--e-misc {
   background: image-url('picto_everydaylife.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.refugees & {
     background-image: image-url('picto_everydaylife--refugees.svg');
@@ -129,7 +158,7 @@
 
 .nav-sections__listitem--f-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
 
   body.family & {
@@ -142,7 +171,7 @@
 
 .nav-sections__listitem--g-crisis {
   background: image-url('picto_crisis.svg') no-repeat center top;
-  background-size: 105px 105px;
+  background-size: $dimension $dimension;
 
   body.family & {
     background-image: image-url('picto_crisis--family.svg');

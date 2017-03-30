@@ -15,7 +15,7 @@ describe ContactsController do
       assert_difference('Contact.count', 1) do
         post :create, locale: 'de', section: 'refugees', contact: contact_attrs
       end
-      assert_redirected_to :root
+      assert_redirected_to :section_choice
     end
 
     it 'should work with valid report data' do
@@ -23,7 +23,7 @@ describe ContactsController do
       assert_difference('Contact.count', 1) do
         post :create, locale: 'de', section: 'family', contact: contact_attrs
       end
-      assert_redirected_to :root
+      assert_redirected_to :section_choice
     end
 
     it 'should not work with empty data' do

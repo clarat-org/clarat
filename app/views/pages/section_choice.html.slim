@@ -1,0 +1,32 @@
+- provide(:title, t('.title'))
+- provide(:meta_title, t('.meta_title'))
+- provide(:meta_description, t('.meta_description'))
+- provide(:og_image, asset_url("meta/og_home.png"))
+- provide(:twitter_image, asset_url("meta/tw_home.png"))
+
+/home meta
+- cache ['section_choice', I18n.t] do
+
+  main.content-main.content-main--wide.content-main--section_choice
+    ul.section-choice
+      li.section-choice__container
+        section.section-choice__family
+          = link_to home_path(section: :family) do
+            h1.section-choice__headline.section-choice__headline--family[aria-hidden="true"]
+          /a.section-choice__stage.section-choice__stage--family[href='/family/']
+          = link_to '', home_path(section: :family),
+                    class: 'section-choice__stage section-choice__stage--family',
+                    'aria-hidden' => 'true'
+          = link_to home_path(section: :family),
+                    class: 'section-choice__cta section-choice__cta--family' do
+            = t 'layouts.partials.navigation.claim.family'
+      li.section-choice__container
+        section.section-choice__refugees
+          = link_to home_path(section: :refugees) do
+            h1.section-choice__headline.section-choice__headline--refugees[aria-hidden="true"]
+          = link_to '', home_path(section: :refugees),
+                    class: 'section-choice__stage section-choice__stage--refugees',
+                    'aria-hidden' => 'true'
+          = link_to home_path(section: :refugees),
+                    class: 'section-choice__cta section-choice__cta--refugees' do
+            = t 'layouts.partials.navigation.claim.refugees'

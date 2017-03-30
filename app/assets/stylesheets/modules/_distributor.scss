@@ -5,50 +5,35 @@
 // ---------------------------------------------------------------
 
 .Distributor {
-  //@extend %clarat_rounding_start;
+  @extend %clarat_rounding_start;
   float: right;
-  margin-top: 82px;
+  margin-top: 41px;
   width: 68.8%;
-  height: 100px;
+  height: 141px;
   background: $brand_yellow;
   z-index: 2;
   position: relative;
-
-  body.refugees & {
-    border-top: 6px solid $brand_core_refugees;
-  }
-
-  body.family & {
-    border-top: 6px solid $brand_core_family;
-  }
 }
 
 .Distributor--navigation {
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 }
 
 .Distributor__search-form {
-  float: left;
 
-  body.ar & {
-    float: right;
-  }
 
-  body.ar.template--pages-home &,
+  html[dir="rtl"] body.template--pages-home &,
   .template--pages-home & {
     float: none;
   }
 }
 
 .Distributor__advanced-filter-trigger-wrapper {
-  float: right;
-  height: 100%;
-  width: 110px;
-  display: none;
+  width: 100%;
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: left;
   }
 
@@ -60,9 +45,9 @@
   //  background-color: rgba($brand_core_refugees, .6);
   //}
 
-  .template--offers-index & {
-    display: table;
-  }
+  //.template--offers-index & {
+  //  display: table;
+  //}
 
 }
 

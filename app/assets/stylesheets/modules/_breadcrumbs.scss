@@ -1,0 +1,50 @@
+.Breadcrumbs--offer-index {
+  @extend %clearfix;
+  margin-bottom: 1em;
+}
+
+.Breadcrumb__container {
+  -js-display: flex;
+  display: flex;
+  float: left;
+  width: calc( 100% - 70px );
+}
+
+.Breadcrumb__query,
+.Breadcrumb__path,
+.Breadcrumb__location {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  white-space: nowrap;
+}
+
+.Breadcrumb__path {
+  //max-width: 55%;
+  flex: 0 1 auto;
+  padding: 0 22px 0 0;
+}
+
+.Breadcrumb__query {
+  flex: 0 1 auto;
+  padding-right: 22px;
+  margin-right: 15px;
+
+  a {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.Breadcrumb__location {
+  flex: 1 1 auto;
+}
+
+.Breadcrumbs__sponsor {
+  width: 60px;
+  margin-top: -12px;
+  margin-left: 10px;
+  max-height: 45px;
+}

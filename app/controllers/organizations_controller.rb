@@ -3,7 +3,7 @@ class OrganizationsController < ApplicationController
   respond_to :html
 
   def show
-    @organization = Organization.approved.friendly.find(params[:id])
+    @organization = Organization.visible_in_frontend.friendly.find(params[:id])
     unless @organization.in_section? @current_section
       return redirect_to section: @organization.canonical_section
     end
@@ -13,7 +13,7 @@ class OrganizationsController < ApplicationController
   end
 
   def section_forward
-    orga = Organization.approved.friendly.find(params[:id])
+    orga = Organization.visible_in_frontend.friendly.find(params[:id])
     orga_section = orga.canonical_section
     return redirect_to '/404' unless orga_section
     redirect_to organization_path(section: orga_section, id: orga.slug)

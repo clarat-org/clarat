@@ -15,10 +15,14 @@ refugees = SectionFilter.create name: 'Refugees', identifier: 'refugees'
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'
 LanguageFilter.create name: 'Türkisch', identifier: 'tur'
+LanguageFilter.create name: 'Französisch', identifier: 'fra'
+LanguageFilter.create name: 'Italienisch', identifier: 'ita'
+LanguageFilter.create name: 'Russisch', identifier: 'rus'
+LanguageFilter.create name: 'Schwedisch', identifier: 'swe'
 TargetAudienceFilter.create name: 'Kinder', identifier: 'family_children'
 TargetAudienceFilter.create name: 'Eltern', identifier: 'family_parents'
 TargetAudienceFilter.create name: 'Familie', identifier: 'family_nuclear_family'
-TargetAudienceFilter.create name: 'Bekannte', identifier: 'family_acquaintances'
+TargetAudienceFilter.create name: 'Bekannte', identifier: 'family_relatives'
 
 LogicVersion.create(version: 1, name: 'Altlasten')
 LogicVersion.create(version: 2, name: 'Split Revolution')

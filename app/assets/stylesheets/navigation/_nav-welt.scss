@@ -16,7 +16,7 @@
   display: inline-block;
   max-height: 45px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     float: right;
   }
 }
@@ -45,6 +45,7 @@
 
     #clone-container & {
       border-bottom: none;
+
     }
 
     &#clarat--family {
@@ -76,7 +77,7 @@
       border-width: 10px 0 10px 10px;
       border-color: transparent transparent transparent $brand_white;
 
-      body.ar & {
+      html[dir="rtl"] & {
         border-width: 10px 10px 10px 0;
         border-color: transparent $brand_white transparent transparent;
         margin-right: 0;

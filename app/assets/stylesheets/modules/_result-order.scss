@@ -1,0 +1,26 @@
+.result-order {
+  position: absolute;
+  right: 0;
+  width: auto;
+  top: 0;
+}
+
+.result-order__select {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+
+
+  &::-ms-expand {
+    display: none;
+  }
+
+}
+
+.result-order__label {
+  float: left;
+  font-size: 15px;
+  padding-right: 6px;
+  height: 25px;
+  line-height: 30px;
+}

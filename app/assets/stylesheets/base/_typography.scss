@@ -121,7 +121,7 @@ p {
 .fa {
   margin-right: 5px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     margin-right: 0;
     margin-left: 5px;
   }

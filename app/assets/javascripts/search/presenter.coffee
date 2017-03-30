@@ -53,6 +53,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       @hideMapUnderCategories()
     else if @model.isPersonal()
       @showMapUnderCategories()
+      if $(window).width() < 750
+        @showPersonalControls()
       Clarat.Search.Operation.BuildMap.run viewModel.main_offers
     $(document).trigger 'Clarat.Search::NewResults', resultSet
 
@@ -103,11 +105,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
       click: 'handleCategoryClick'
-    '.JS-ToggleContactType':
-      click: 'handleToggleContactTypeClick'
+    '.JS-SwitchToRemote':
+      click: 'handleClickToRemote'
+    '.JS-SwitchToPersonal':
+      click: 'handleClickToPersonal'
     '.JS-PaginationLink':
       click: 'handlePaginationClick'
 
+    '.JS-SortOrderSelector':
+      change: 'handleSortOrderChange'
     '#advanced_search .JS-AgeSelector':
       change: 'handleFilterChange'
     '#advanced_search .JS-TargetAudienceSelector':
@@ -126,7 +132,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleChangeToPersonal'
       'Clarat.Search::InitialDisable': 'disableCheckboxes'
 
-
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
     @sendMainSearch()
@@ -140,8 +145,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleNewGeolocation: (event, location) =>
     @model.updateAttributes
-      search_location: location.query
-      generated_geolocation: location.geoloc
+      search_location: location.query || ''
+      generated_geolocation: location.geoloc || ''
       exact_location: false
     @sendMainSearch()
     @sendLocationSupportSearch() # only needs to be called on new location
@@ -167,13 +172,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @stopEvent event
 
-  handleToggleContactTypeClick: (event) =>
-    if @model.isPersonal()
-      @handleChangeToRemote()
-    else
-      @handleChangeToPersonal()
-    @stopEvent event
-
   handlePaginationClick: (event) =>
     changes =
       page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
@@ -192,6 +190,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @sendQuerySupportSearch()
 
+  handleSortOrderChange: (event) =>
+    requestedSortOrder = $(event.target).val()
+    @model.updateAttributes sort_order: requestedSortOrder
+    @sendMainSearch()
+    Clarat.Search.Operation.UpdateAdvancedSearch.run @model
+
   handleEncounterChange: (event) =>
     if $('.JS-EncounterSelector:checked').length is 0
       return @handleChangeToPersonal()
@@ -208,10 +212,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @sendQuerySupportSearch()
 
+  handleClickToPersonal: (event) =>
+    @stopEvent event
+    @handleChangeToPersonal()
+
   # disable and check all remote checkboxes, model has every encounter again
   handleChangeToPersonal: =>
     @model.contact_type = 'personal'
     @showMapUnderCategories()
+    @showPersonalControls()
     $('#contact_type_personal').prop('checked', true)
 
     that = @
@@ -226,9 +235,14 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     @sendQuerySupportSearch()
 
+  handleClickToRemote: (event) =>
+    @stopEvent event
+    @handleChangeToRemote()
+
   handleChangeToRemote: =>
     @model.updateAttributes contact_type: 'remote'
     @hideMapUnderCategories()
+    @hidePersonalControls()
     $('#contact_type_remote').prop('checked', true)
 
     $('.filter-form__checkboxes-wrapper input').each ->
@@ -247,7 +261,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handlePopstate: =>
     return unless @popstateEnabled
     window.location = window.location
-    # TODO: for more performance we could load from the event.state instead f
+    # TODO: for more performance we could load from the event.state instead of
     #       reloading
 
   ### Non-event-handling private methods ###
@@ -257,6 +271,15 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   showMapUnderCategories: =>
     $('.aside-standard__container').show()
+
+  hidePersonalControls: =>
+    $('#advanced_search .sort_order').hide()
+    $("#tab3").hide()
+    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
+
+  showPersonalControls: =>
+    $("#tab3").css("display", "inline-block")
+    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

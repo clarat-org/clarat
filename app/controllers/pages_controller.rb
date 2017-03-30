@@ -1,12 +1,17 @@
 # Static pages
 class PagesController < ApplicationController
+  def section_choice
+  end
+
   def home
   end
 
   def about
-    @names = %w(amina andrea anne astrid basti bettina elisa franziska janina
-                janne jens jule julia julian katinka konstantin laura lavinia
-                line lisa marcus nicole nils stefan tine verena)
+    @names = %w(amina andrea anja ann-sophie anna anne astrid basti bettina birte chrissy
+                claudia eleonore damjan elisa esther fabian hassan jakob janina janina_m jenny
+                jens jule julia_b julia juliane karo katja
+                konstantin laura_i laura_w line lisa magdalena marie michaela nahla nathalie
+                nils omar patrick philipp sabine sophie stefan tine verena)
   end
 
   def faq

@@ -19,7 +19,7 @@
         .section-content__body.section-content--what
           == translation_block @organization.translation_automated? do
             == @organization.description
-      - if @organization.offers.approved.any?
+      - if @organization.offers.visible_in_frontend.any?
         section.section-content.section-content--alloffers
           h3.section-content__title
             = t '.offers_all'
@@ -27,23 +27,23 @@
           .section-content__body.section-content__body--offers-of-orga
             - SectionFilter.all.each do |section|
 
-              - unless @organization.offers.approved.in_section(section.identifier).empty?
+              - unless @organization.offers.visible_in_frontend.in_section(section.identifier).empty?
                 h4.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"
 
-                ul.Listing-offers__list class="Listing--#{section.identifier}"
-                  - @organization.offers.approved.in_section(section.identifier).order('name ASC').each do |offer|
-                    li.Listing-offers__listitem
-                      .Listing-results__stamp
-                        button.Listing-results__expander aria-toggle='false' Expand/Collapse
-                        = offer.send("stamp_#{section.identifier}", @current_locale)
-                      .Listing-results__meta.Listing-results__meta--inorga[
-                        class=('Listing-results__meta--with-address' if offer.location && offer.location.visible?)
-                      ]
-                        h5.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
-                                autotranslation_attr(@organization.translation_automated?)
+                ul.Listing-results__list class="Listing--#{section.identifier}"
+                  - @organization.offers.visible_in_frontend.in_section(section.identifier).order('name ASC').each do |offer|
+                    li.Listing-results__listitem
+
+                      h5.Listing-results__offer.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
+                              autotranslation_attr(@organization.translation_automated?)
+
+                      .Listing-offers__address
+                        .Listing-results__offerinfo.Listing-results__stamp
+                          = offer.send("stamp_#{section.identifier}", @current_locale)
                         - if offer.location && offer.location.visible
-                          .Listing-offers__address
+                          .Listing-results__location
                             = offer.location_address
+
 
 
     .section-wrapper-minor
@@ -67,7 +67,7 @@
                       span.street-address= location.street
                       br
                       span.postal-code=> location.zip
-                      span.locality= location.city
+                      span.locality= location.city.name
                   - if website
                     br
                     = link_to website.shorten_url + website.pdf_appendix,

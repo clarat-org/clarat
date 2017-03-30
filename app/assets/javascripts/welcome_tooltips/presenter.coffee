@@ -3,15 +3,13 @@ Clarat.welcomeTooltips = {}
 class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
   constructor: ->
 
-    @cookieLifespan     = 90
     @isFrontPage        = $('.template--pages-home').length
+    @isLegalPage        = $('.template--pages-impressum').length || $('.template--pages-agb').length || $('.template--pages-privacy').length
+    @isGermanLocale     = $('html[lang="de"]').length > 0
     @isOfferIndexPage   = $('.template--offers-index').length
-    @world              = if $('body.refugees').length then 'refugees' else 'family'
-    @ttAdvancedSearch   = $('.tooltip--advancedsearch')
-    @ttWeltRefugees     = $('.tooltip--welt-refugees')
-    @ttWeltFamily       = $('.tooltip--welt-family')
+    @ttAutoTranslations = $('.nav-lang__button')
     @overlay            = $('#qtip_welcome_overlay')
-    @cloneContainer     = $('#clone-container')
+
     super()
 
   CALLBACKS:
@@ -24,70 +22,28 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
 
   init: =>
 
-    if @isFrontPage
-      @testForNavWeltCookie()
-    else if @isOfferIndexPage
-      @testForNavWeltCookie()
-      @testForAdvSearchCookie()
+    # Don't init if in German version
+    if @isGermanLocale
+      return
+
+    if @isLegalPage
+      @initNoTranslationOnLegalPagesHint()
     else
-      @testForNavWeltCookie()
+      @testForAutoTranslateCookie()
 
 
-  testForNavWeltCookie: () =>
+  initNoTranslationOnLegalPagesHint: () =>
 
-    # NavWelt cookie detect
-    if $.cookie 'welcome-tooltips-navwelt'
-      return false
-    else
-      @initNavWeltTooltips()
-      @setCookieNavWelt()
-
-
-  testForAdvSearchCookie: () =>
-
-    # Advanced search cookie detect
-    if $.cookie 'welcome-tooltips-advsearch'
-      return false
-    else
-      @initAdvSearchTooltips()
-      @setCookieAdvSearch()
-
-
-  _highlightTooltip: (elem) =>
-    # Get original most important properties
-    left = elem.offset().left
-    top = elem.offset().top
-    height = elem.css "height"
-
-    clone = elem.clone()
-
-    # Assign them to clone
-    clone.css
-      "position": "absolute"
-      "left"    : left
-      "top"     : top
-      "max-height" : height
-
-    # Put in overlay
-    clone.prependTo @cloneContainer;
-
-
-  initNavWeltTooltips: =>
     that = this
 
-    position_my = if @isFrontPage then "top center" else "bottom center"
-    position_at = if @isFrontPage then "bottom center" else "top center"
-
-    @ttWeltRefugees.qtip
-      id: 'ttWeltRefugees'
+    @ttAutoTranslations.qtip
+      id: 'ttAutoTranslations'
       position:
-        my: position_my
-        at: position_at
+        my: "top center"
+        at: "bottom center"
         effect: false
-        viewport: $('body')
-        adjust:
-          method: 'invert adjust'
       content:
+        text: @ttAutoTranslations.data "title"
         button: 'x'
       show:
         event: false
@@ -100,60 +56,30 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
           that._hideOverlay()
       style:
         tip:
-          height: 16
-          width: 22
-          corner: 'top center'
+          corner: false
 
-
-    @ttWeltFamily.qtip
-      id: 'ttWeltFamily'
-      position:
-        my: position_my
-        at: position_at
-        effect: false
-        viewport: $('body')
-        adjust:
-          method: 'invert adjust'
-      content:
-        button: 'x'
-      show:
-        event: false
-      hide:
-        event: false
-      events:
-        show: ->
-          that._showOverlay()
-        hide: ->
-          that._hideOverlay()
-      style:
-        tip:
-          height: 16
-          width: 22
-          corner: 'top center'
-
-
-    if @world == "family"
-      @ttWeltRefugees.qtip('api').show()
-      @_highlightTooltip(@ttWeltRefugees)
-
-    else
-      @ttWeltFamily.qtip('api').show()
-      @_highlightTooltip(@ttWeltFamily)
-
+    @ttAutoTranslations.qtip('api').show()
     return
 
 
-  initAdvSearchTooltips: =>
+  testForAutoTranslateCookie: () =>
+
+    # AutoTranslate warning cookie detect
+    if $.cookie 'welcome-tooltips-autotranslation'
+      return false
+    else
+      @initAutomatedTranslationTooltip()
+      @setCookieAutoTranslate()
+
+
+  initAutomatedTranslationTooltip: =>
     that = this
 
-    position_my = if $(window).width() < 750 then 'top center' else 'bottom right'
-    position_at = if $(window).width() < 750 then 'top center' else 'top right'
-
-    @ttAdvancedSearch.qtip
-      id: 'ttAdvancedSearch'
+    @ttAutoTranslations.qtip
+      id: 'ttAutoTranslations'
       position:
-        my: position_my
-        at: position_at
+        my: "top center"
+        at: "bottom center"
         effect: false
       content:
         button: 'x'
@@ -169,46 +95,31 @@ class Clarat.welcomeTooltips.Presenter extends ActiveScript.Presenter
       style:
         tip:
           corner: false
-          height: 16
-          width: 22
-          corner: 'bottom right'
 
-    unless @isFrontPage
-
-      @ttAdvancedSearch.qtip('api').show()
-      @_highlightTooltip(@ttAdvancedSearch)
-
+    @ttAutoTranslations.qtip('api').show()
     return
 
 
-  setCookieNavWelt: =>
-    $.cookie 'welcome-tooltips-navwelt', 'true',
-      expires: @cookieLifespan
-      path: '/'
+  setCookieAutoTranslate: =>
+    unless $('html[lang="de"]').length
 
-
-  setCookieAdvSearch: =>
-    $.cookie 'welcome-tooltips-advsearch', 'true',
-      expires: @cookieLifespan
-      path: '/'
+      $.cookie 'welcome-tooltips-autotranslation', 'true',
+        expires: 2/24
+        path: '/'
 
 
   _showOverlay: =>
     that = this
     $('body').addClass 'overlay-active'
     @overlay.show()
-    @cloneContainer.show()
-    @cloneContainer.click () ->
+    @overlay.click () ->
       that._hideOverlay()
 
 
   _hideOverlay: =>
     @overlay.hide()
-    @cloneContainer.hide()
     $('body').removeClass 'overlay-active'
-    @ttAdvancedSearch.qtip('destroy')
-    @ttWeltRefugees.qtip('destroy')
-    @ttWeltFamily.qtip('destroy')
+    @ttAutoTranslations.qtip('destroy')
 
 
 $(document).ready ->

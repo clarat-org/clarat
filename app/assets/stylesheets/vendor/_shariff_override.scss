@@ -9,7 +9,7 @@
   top: 50%;
   right: -60px;
 
-  body.ar & {
+  html[dir="rtl"] & {
     left: -120px;
     right: auto;
   }
@@ -25,8 +25,15 @@
 
     a {
       color: #fff;
+      text-decoration: none;
     }
 
+  }
+
+  .shariff__label {
+    @extend %roboto_bold;
+    text-transform: uppercase;
+    font-size: 13px;
   }
 
   .shariff-button {
@@ -38,7 +45,20 @@
     margin-left: 60px;
     z-index: 1;
 
+    &.facebook {
+      background: #3b5998;
+    }
+
+    &.mail {
+      background: #a8a8a8;
+    }
+
+    &.twitter {
+      background: #55acee;
+    }
+
     &.whatsapp {
+      background: #5cbe4a;
       display: none;
     }
 
@@ -49,45 +69,18 @@
 
     &.shariff-button--expanded {
       margin-left: 0;
-
-      &.facebook:hover {
-        background: #3b5998;
-      }
-
-      &.mail:hover {
-        background: #a8a8a8;
-      }
-
-      &.twitter:hover {
-        background: #55acee;
-      }
-
-      &.whatsapp:hover {
-        background: #5cbe4a;
-      }
+      cursor: pointer;
     }
 
     .fa {
       float: left;
       font-size: 135%;
-      width: 20px;
+      width: 27px;
       display: inline-block;
       text-align: center;
 
-      body.ar & {
+      html[dir="rtl"] & {
         float: right;
-      }
-    }
-
-    .share_text {
-      float: right;
-      text-transform: uppercase;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 52px;
-
-      body.ar & {
-        float: left;
       }
     }
   }

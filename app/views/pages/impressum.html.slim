@@ -4,10 +4,11 @@
   main.content-main.content-main--wide
     .wrapper-inner
 
-      .hint.hint--imprint
-        .hint__icon.hint__icon--info
-          i.fa.fa-info-circle
-        = t '.notice'
+      - if I18n.locale != :de
+        .hint.hint--imprint
+          .hint__icon.hint__icon--info
+            i.fa.fa-info-circle
+          = t '.notice'
 
       h1 = t '.heading'
 
@@ -17,6 +18,6 @@
       p = t 'pages.shared.address.telephone'
       p = t 'pages.shared.address.fax'
       p = link_to('post@clarat.org', 'mailto:post@clarat.org')
-      p = link_to root_url
+      p = link_to section_choice_url
 
       p = t '.responsible_html'

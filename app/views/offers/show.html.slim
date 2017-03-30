@@ -57,9 +57,13 @@
         h3.section-content__title Weitere Informationen
 
         ul.section-content__tag-list
-          li kostenlos
-          li anonym
-          li Tag und Nacht
+          - @offer.trait_filters.each do |filter|
+            - title = I18n.exists?("offers.show.trait_filters.explanation.#{filter.identifier}") ? \
+                t(".trait_filters.explanation.#{filter.identifier}") : nil
+            li[title=title]
+              = t ".trait_filters.title.#{filter.identifier}"
+
+
 
       section.section-content.section-content--whos-offering
         h3.section-content__title

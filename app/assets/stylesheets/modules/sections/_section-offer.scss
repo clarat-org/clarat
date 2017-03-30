@@ -47,8 +47,12 @@
     li {
       float: left;
       display: inline-block;
-      border-bottom: 1px dashed;
       margin: 6px 15px 0 0;
+      border-bottom: 1px dashed transparent;
+
+      &[title] {
+        border-color: $brand_brown;
+      }
     }
   }
 

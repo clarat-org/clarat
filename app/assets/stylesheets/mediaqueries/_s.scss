@@ -245,6 +245,11 @@
         border-bottom-right-radius: 0;
       }
 
+      html[dir="rtl"][lang="fa"] & {
+        left: auto;
+      }
+
+
       .template--pages-home & {
         position: relative;
         top: 0;

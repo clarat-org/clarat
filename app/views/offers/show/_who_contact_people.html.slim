@@ -4,8 +4,9 @@ ul.section-content--contact-person-list
     - if display_contacts? offer, contact
       - cache [offer, contact, index] do
         li
-          = "#{contact_name contact}"
-          br
+          - if contact_name contact
+            = "#{contact_name contact}"
+            br
 
           - if contact.responsibility?
             = "#{contact.responsibility}"

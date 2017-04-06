@@ -37,7 +37,7 @@ class SearchForm
   ### Audience
   attribute :target_audience, String
   ### Gender
-  attribute :exclusive_gender, String
+  attribute :gender_first_part_of_stamp, String
   ### Encounter
   attribute :encounters, String,
             default: (Offer::ENCOUNTERS - %w(personal)).join(',')

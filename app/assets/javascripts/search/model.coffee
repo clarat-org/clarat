@@ -93,7 +93,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     @contact_type == 'personal'
 
   ADVANCED_SEARCH_FILTERS: [
-    'age', 'target_audience', 'exclusive_gender', 'language', 'encounter',
+    'age', 'target_audience', 'gender_first_part_of_stamp', 'language', 'encounter',
     'section'
   ]
 

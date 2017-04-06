@@ -1003,9 +1003,9 @@ ru:
             letter: Письмо
             online-course: Он-лайн курс
             portal: Список адресов
-          exclusive_gender:
-            boys_only: только для мальчиков и мужчин
-            girls_only: только для девочек и женщин
+          gender_first_part_of_stamp:
+            male: только для мальчиков и мужчин
+            female: только для девочек и женщин
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи

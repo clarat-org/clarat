@@ -965,9 +965,9 @@ fr:
             letter: Lettre
             online-course: cours en ligne
             portal: liste d'adresses
-          exclusive_gender:
-            boys_only: seulement pour les garçons ou les hommes
-            girls_only: seulement pour les filles et les femmes
+          gender_first_part_of_stamp:
+            male: seulement pour les garçons ou les hommes
+            female: seulement pour les filles et les femmes
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados

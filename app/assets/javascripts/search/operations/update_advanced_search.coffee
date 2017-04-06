@@ -2,7 +2,7 @@ class Clarat.Search.Operation.UpdateAdvancedSearch
   @run: (model) ->
     # Update dropdowns and radio buttons
     fields =
-      ['age', 'target_audience', 'exclusive_gender', 'language', 'contact_type', 'sort_order']
+      ['age', 'target_audience', 'gender_first_part_of_stamp', 'language', 'contact_type', 'sort_order']
 
     for field in fields
       currentIdentifier = model[field] or 'any'

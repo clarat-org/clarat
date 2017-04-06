@@ -1011,9 +1011,9 @@ pl:
             letter: List
             online-course: kurs online
             portal: lista adresów
-          exclusive_gender:
-            boys_only: tylko dla chłopców i mężczyzn
-            girls_only: tylko dla dziewcząt i kobiet
+          gender_first_part_of_stamp:
+            male: tylko dla chłopców i mężczyzn
+            female: tylko dla dziewcząt i kobiet
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży

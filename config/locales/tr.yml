@@ -893,9 +893,9 @@ tr:
             letter: 
             online-course: Online kurs
             portal: Adres listesi
-          exclusive_gender:
-            boys_only: Yalnızca erkekler için
-            girls_only: Yalnızca bayanlar için
+          gender_first_part_of_stamp:
+            male: Yalnızca erkekler için
+            female: Yalnızca bayanlar için
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için

@@ -43,21 +43,21 @@
                  class: 'JS-TargetAudienceSelector'}
           %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
 
-  %fieldset.filter-form__fieldset#exclusive_gender
+  %fieldset.filter-form__fieldset#gender_first_part_of_stamp
     %legend.filter-form__fieldset__headline
       = hb '@root.headline_gender'
     %div.filter-form__fieldset__wrapper
       %div.filter-form__radio
-        %input{type: 'radio', name: 'exclusive_gender', value: 'any',
-               id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
-        %label{for: 'exclusive_gender_any'}
+        %input{type: 'radio', name: 'gender_first_part_of_stamp', value: 'any',
+               id: 'gender_first_part_of_stamp_any', class: 'JS-ExclusiveGenderSelector'}
+        %label{for: 'gender_first_part_of_stamp_any'}
           = hb '@root.option_any'
-      = hb 'each exclusive_gender' do
+      = hb 'each gender_first_part_of_stamp' do
         %div.filter-form__radio
-          %input{type: 'radio', name: 'exclusive_gender',
-                 value: '{{identifier}}', id: 'exclusive_gender_{{identifier}}',
+          %input{type: 'radio', name: 'gender_first_part_of_stamp',
+                 value: '{{identifier}}', id: 'gender_first_part_of_stamp_{{identifier}}',
                  class: 'JS-ExclusiveGenderSelector'}
-          %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
+          %label{for: 'gender_first_part_of_stamp_{{identifier}}'}= hb 'display_name'
 
   %fieldset.filter-form__fieldset#contact_type
     %legend.filter-form__fieldset__headline

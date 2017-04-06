@@ -10,9 +10,9 @@ json.target_audience TargetAudienceFilter::IDENTIFIER[0..4] do |identifier|
   json.display_name t(".target_audience.#{identifier}")
 end
 
-json.exclusive_gender Offer::EXCLUSIVE_GENDERS do |identifier|
+json.gender_first_part_of_stamp Offer::BENEFICIARY_GENDERS do |identifier|
   json.identifier identifier
-  json.display_name t(".exclusive_gender.#{identifier}")
+  json.display_name t(".gender_first_part_of_stamp.#{identifier}")
 end
 
 json.language LanguageFilter::IDENTIFIER do |identifier|

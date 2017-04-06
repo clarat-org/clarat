@@ -890,9 +890,9 @@ ar:
             letter: بريد
             online-course: دورة بالإنترنت
             portal: قائمة العناوين
-          exclusive_gender:
-            boys_only: فقط للصبيان والرجال
-            girls_only: فقط للبنات والسيدات
+          gender_first_part_of_stamp:
+            male: فقط للصبيان والرجال
+            female: فقط للبنات والسيدات
           target_audience:
             children: للأطفال والشباب
             family_children: للأطفال والشبان

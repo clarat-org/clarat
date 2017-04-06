@@ -7,7 +7,7 @@ class SearchFormRefinery < ApplicationRefinery
     [
       :query, :generated_geolocation, :search_location, :category,
       :exact_location, :contact_type, :encounters,
-      :age, :target_audience, :exclusive_gender, :language
+      :age, :target_audience, :gender_first_part_of_stamp, :language
     ]
   end
 end

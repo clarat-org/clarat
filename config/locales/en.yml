@@ -941,9 +941,9 @@ en:
             letter: Letter
             online-course: Online-course
             portal: address list
-          exclusive_gender:
-            boys_only: boys and men only
-            girls_only: girls and women only
+          gender_first_part_of_stamp:
+            male: boys and men only
+            female: girls and women only
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers

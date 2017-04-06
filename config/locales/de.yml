@@ -1368,9 +1368,9 @@ de:
             letter: Brief
             online-course: Online-Kurs
             portal: Adressliste
-          exclusive_gender:
-            boys_only: nur für Jungen und Männer
-            girls_only: nur für Mädchen und Frauen
+          gender_first_part_of_stamp:
+            male: nur für Männer
+            female: nur für Frauen
           target_audience:
             children: für Kinder und Jugendliche
             family_children: für Kinder und Jugendliche

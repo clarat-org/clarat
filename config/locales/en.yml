@@ -944,6 +944,8 @@ en:
           exclusive_gender:
             boys_only: boys and men only
             girls_only: girls and women only
+            female: girls and women only
+            male: boys and men only
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers

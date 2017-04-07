@@ -1014,6 +1014,8 @@ pl:
           exclusive_gender:
             boys_only: tylko dla chłopców i mężczyzn
             girls_only: tylko dla dziewcząt i kobiet
+            female: tylko dla dziewcząt i kobiet
+            male: tylko dla chłopców i mężczyzn
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży

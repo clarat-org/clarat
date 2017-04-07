@@ -948,6 +948,8 @@ fa:
           exclusive_gender:
             boys_only: فقط برای پسرها و مردان
             girls_only: فقط برای دختران و بانوان
+            female: فقط برای دختران و بانوان
+            male: فقط برای پسرها و مردان
           target_audience:
             children: برای بچه ها و جوانان
             family_children: برای بچه ها و جوانان

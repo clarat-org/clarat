@@ -893,6 +893,8 @@ ar:
           exclusive_gender:
             boys_only: فقط للصبيان والرجال
             girls_only: فقط للبنات والسيدات
+            female: فقط للبنات والسيدات
+            male: فقط للصبيان والرجال
           target_audience:
             children: للأطفال والشباب
             family_children: للأطفال والشبان

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 449660a81da4445f91a0b0a1068412b93b8b9dea
+  revision: a1c696835d060ac40ab46da8d60a02870eabc708
   specs:
     clarat_base (0.1.4)
       aasm
@@ -8,7 +8,7 @@ GIT
       bundler (>= 1.8.4)
       closure_tree
       easy_translate
-      enumerize
+      enumerize (= 2.0.1)
       friendly_id (>= 5.0)
       geocoder
       localeapp
@@ -319,7 +319,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.10)
       nokogiri
-    paper_trail (6.0.2)
+    paper_trail (7.0.0)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)

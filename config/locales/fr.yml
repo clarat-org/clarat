@@ -1,4 +1,5 @@
 fr:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,7 +19,11 @@ fr:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
       update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -397,10 +402,12 @@ fr:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Mon organisation n’est pas sur clarat, pourquoi?
+  charged: 
   conf:
     current_location: Ma localisation
     default_latlng: 52.520007,13.404954
     default_location: Berlin
+  confidential: 
   contacts:
     create:
       success: Le message a été envoyé avec succès.
@@ -418,6 +425,7 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -647,6 +655,7 @@ fr:
       sort_order:
         nearby: À proximité
         relevance: Pertinence
+  free: 
   js:
     ajax_error:
       error: erreur de recherche
@@ -964,7 +973,9 @@ fr:
             portal: liste d'adresses
           exclusive_gender:
             boys_only: seulement pour les garçons ou les hommes
+            female: seulement pour les filles et les femmes
             girls_only: seulement pour les filles et les femmes
+            male: seulement pour les garçons ou les hommes
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados
@@ -997,6 +1008,12 @@ fr:
           long: services sur le thème …
           short: services pour...
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Dernière entrée traitée le
       next_steps:
         code_word: 'Chez ce fournisseur, l''aide s’appelle :'
@@ -1012,6 +1029,22 @@ fr:
           wed: mercredi
         heading: Tu peux faire ça quand?
       speaking: On peut t'aider dans quelle langue?
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: Tu peux en apprendre plus sur internet où?
         websites:

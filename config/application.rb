@@ -49,5 +49,12 @@ module Clarat
 
     # Middleware for JS-Translations
     config.middleware.use I18n::JS::Middleware
+
+    # rais exceptions in after_rollback/after_commit callbacks
+    # (default in Rails 5) to silence deprecation warnings
+    config.active_record.raise_in_transactional_callbacks = true
+
+    # specific test order (default in Rails 5) to silence deprecation warnings
+    config.active_support.test_order = :random
   end
 end

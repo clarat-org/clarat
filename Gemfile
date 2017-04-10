@@ -12,7 +12,7 @@ gem 'clarat_base', github: 'clarat-org/clarat_base'
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.1.12'
+gem 'rails', '~> 4.2'
 
 # Translations
 gem 'rails-i18n'
@@ -137,6 +137,8 @@ gem 'kaminari' # pagination
 gem 'route_translator'
 gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
                         branch: 'adds-custom-storages'
+
+gem 'responders', '~> 2.0'
 
 # Model enhancements
 

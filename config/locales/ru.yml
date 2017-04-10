@@ -1,4 +1,5 @@
 ru:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,7 +19,11 @@ ru:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
       update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Доктор
@@ -421,10 +426,12 @@ ru:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Почему моей организации нет на странице clarat?
+  charged: 
   conf:
     current_location: Мое местонахождения
     default_latlng: 52.520007,13.404954
     default_location: Берлин
+  confidential: 
   contacts:
     create:
       success: Сообщение было отправлено успешно.
@@ -442,6 +449,7 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -671,6 +679,7 @@ ru:
       sort_order:
         nearby: Около
         relevance: Релевантность
+  free: 
   js:
     ajax_error:
       error: Ошибка в поиске
@@ -1002,7 +1011,9 @@ ru:
             portal: Список адресов
           exclusive_gender:
             boys_only: только для мальчиков и мужчин
+            female: только для девочек и женщин
             girls_only: только для девочек и женщин
+            male: только для мальчиков и мужчин
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи
@@ -1040,6 +1051,12 @@ ru:
           long: Предложения по теме …
           short: Предложения …
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: В последний раз обновлено
       next_steps:
         code_word: 'Так называется помощь поставщика:'
@@ -1055,6 +1072,22 @@ ru:
           wed: Среда
         heading: Когда ты можешь это сделать?
       speaking: На каком языке тебе можно помочь?
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: Где ты можешь найти больше в сети?
         websites:

@@ -1,4 +1,5 @@
 pl:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,7 +19,11 @@ pl:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
       update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Dr
@@ -439,10 +444,12 @@ pl:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Dlaczego moja organizacja nie znajduje się w clarat?
+  charged: 
   conf:
     current_location: Moja lokalizacja
     default_latlng: 52.520007,13.404954
     default_location: Berlin
+  confidential: 
   contacts:
     create:
       success: Wiadomość została pomyślnie wysłana.
@@ -460,6 +467,7 @@ pl:
         name_placeholder: Imię (Pole obowiązkowe)
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -695,6 +703,7 @@ pl:
       sort_order:
         nearby: Blisko
         relevance: W związku z tematem
+  free: 
   js:
     ajax_error:
       error: Błąd wyszukiwania
@@ -1010,7 +1019,9 @@ pl:
             portal: lista adresów
           exclusive_gender:
             boys_only: tylko dla chłopców i mężczyzn
+            female: tylko dla dziewcząt i kobiet
             girls_only: tylko dla dziewcząt i kobiet
+            male: tylko dla chłopców i mężczyzn
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży
@@ -1045,6 +1056,12 @@ pl:
           long: Oferty na temat …
           short: Oferty dla …
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Ostatnio zaktualizowano
       next_steps:
         code_word: O co musisz spytać lub czego szukać na stronie internetowej?
@@ -1060,6 +1077,22 @@ pl:
           wed: Środa
         heading: Kiedy możesz się zgłosić?
       speaking: W jakim języku można Ci pomóc?
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: Gdzie dowiesz się więcej w sieci?
         websites:

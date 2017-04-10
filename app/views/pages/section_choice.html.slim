@@ -1,4 +1,10 @@
 - provide(:title, t('.title'))
+- provide(:meta_title, t('.meta_title'))
+- provide(:meta_description, t('.meta_description'))
+- provide(:og_image, asset_url("meta/og_home.png"))
+- provide(:twitter_image, asset_url("meta/tw_home.png"))
+
+/home meta
 - cache ['section_choice', I18n.t] do
 
   main.content-main.content-main--wide.content-main--section_choice

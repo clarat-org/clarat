@@ -968,6 +968,8 @@ fr:
           exclusive_gender:
             boys_only: seulement pour les garçons ou les hommes
             girls_only: seulement pour les filles et les femmes
+            female: seulement pour les filles et les femmes
+            male: seulement pour les garçons ou les hommes
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados

@@ -896,6 +896,8 @@ tr:
           exclusive_gender:
             boys_only: Yalnızca erkekler için
             girls_only: Yalnızca bayanlar için
+            female: Yalnızca bayanlar için
+            male: Yalnızca erkekler için
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için

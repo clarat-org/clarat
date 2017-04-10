@@ -1006,6 +1006,8 @@ ru:
           exclusive_gender:
             boys_only: только для мальчиков и мужчин
             girls_only: только для девочек и женщин
+            female: только для девочек и женщин
+            male: только для мальчиков и мужчин
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи

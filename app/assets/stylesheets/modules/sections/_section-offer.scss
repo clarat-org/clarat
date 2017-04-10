@@ -31,7 +31,30 @@
     }
   }
 
+  .section-content--more-info {
+    @extend %clearfix;
 
+    .section-content__title {
+      background: $brand_green;
+    }
+  }
+
+  .section-content__tag-list {
+    @extend %clearfix;
+    list-style: none;
+    margin: 4px 15px 10px;
+
+    li {
+      float: left;
+      display: inline-block;
+      margin: 6px 15px 0 0;
+      border-bottom: 1px dashed transparent;
+
+      &[title] {
+        border-color: $brand_brown;
+      }
+    }
+  }
 
   .section-content--what {
 

@@ -1,4 +1,5 @@
 fa:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,10 +19,11 @@ fa:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
-      update_request: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: 
+      update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -116,7 +118,7 @@ fa:
             var: ref_to_how_many_languages
           question: clarat چه ویژگی به خصوصی دارد؟
         question_9:
-          answer: clarat در سال ۲۰۱۴ از طرف %{link_to_bsz} متولد شده است.این بنیاد و موسسه خانوادگی مدت زیادی است که خدمات بزرگی را برای کودکان و جوانان و همچنین در حال حاضر از طریق  clarat refugees برای پناهندگان ارائه می دهد.در لینک زیر می توانی اطلاعات بیشتری در رابطه با این بنیاد بدست آوری.%{link_to_bsz_movie}
+          answer: clarat در سال ۲۰۱۴ از طرف %{link_to_bsz} تشکیل شده است.این بنیاد و موسسه خانوادگی مدت زیادی است که خدمات بزرگی را برای کودکان و جوانان و همچنین در حال حاضر از طریق  clarat refugees برای پناهندگان ارائه می دهد.در لینک مقابل می توانی اطلاعات بیشتری در رابطه با این بنیاد بدست آوری.%{link_to_bsz_movie}
           link_1:
             name: Benckiser Stiftung Zukunft
             target: _blank
@@ -132,7 +134,7 @@ fa:
             target: _blank
             url: http://www.clarat.org/ueber-uns
             var: NOTRANSLATE
-          question: clarat متعلق به چه کسیت؟
+          question: clarat متعلق به چه کسی است؟
       section_2:
         anchor: questions_about_our_search
         heading: آیا در رابطه با جستجوی خود سوالاتی داری؟
@@ -372,10 +374,12 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
+  charged: 
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
+  confidential: 
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -393,6 +397,7 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -618,6 +623,7 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+  free: 
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -947,8 +953,8 @@ fa:
             portal: لیست آدرس
           exclusive_gender:
             boys_only: فقط برای پسرها و مردان
-            girls_only: فقط برای دختران و بانوان
             female: فقط برای دختران و بانوان
+            girls_only: فقط برای دختران و بانوان
             male: فقط برای پسرها و مردان
           target_audience:
             children: برای بچه ها و جوانان
@@ -982,9 +988,15 @@ fa:
           long: پیشنهاد مربوط به موضوع
           short: پیشنهاد...
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
-        code_word: 'نام کمک پیشنهادی عرضه کننده:'
+        code_word: 'نام این کمک نزد عرضه کننده:'
         heading: چه کاری باید انجام دهی؟
       opening_section:
         days:
@@ -997,6 +1009,22 @@ fa:
           wed: چهارشنبه
         heading: کی می توانی انجام بدهی؟
       speaking: به چه زبانی به تو کمک می شود؟
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟
         websites:
@@ -1030,27 +1058,6 @@ fa:
         organizations: 'یک پیشنهاد از:'
       who_section:
         heading: به کجا می توانی مراجعه کنی؟
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
-      trait_filters:
-        explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
-        title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
   opening:
     display_string:
       appointment: طبق توافق انجام شده
@@ -1116,13 +1123,13 @@ fa:
       michaela: او در رشته علوم اقتصاد کامپیوتر تحصیل کرده است.او می تواند دیگران را به هیجان بیاورد و اطلاعات زیادی در مورد رسانه های جدید دارد.در clarat در تیم تحقیق فعالیت می کند و مراقب آن است که صفحه اینترنتی ما به خوبی عمل کند.موسیقی مورد علاقه او Digital Love از Daft Punk می باشد.
       nahla: او کارشناس باستان شناسی است.او اطلاعات زیادی در مورد تاریخ و انسانها دارد.سرعت کار او بالاست.در clarat در تیم ترجمه به زبان عربی فعالیت دارد.موسیقی مورد علاقه او Nassam Allina El Hawa از Fayrouz می باشد.
       nathalie: او در رشته حقوق بشر و سیاست بین الملل تحصیل کرده است.او به خوبی می تواند مسائل را توضیح دهد و همچنین گوش دهد.در clarat در تیم تحقیق فعالیت دارد و برای نظم در صفحه اینترنتی ما تلاش می کند.موسیقی مورد علاقه او Me in You از Kings of Convenience می باشد.
-      nils: او کارشناس علوم کامپیوتر است.این بدین معنی است که او می تواند به خوبی یرنامه های کامپیوتری و صفحات اینترنت را برنامه ریزی کند.او همیشه راه حل مناسب به ذهنش می رسد و سریع یاد می گیرد.در clarat در تیم IT  فعالیت دارد.موسیقی مورد علاقه او Jein از Fettes Brot می باشد.
+      nils: او کارشناس علوم کامپیوتر است.این بدین معنی است که او می تواند به خوبی برنامه های کامپیوتری و صفحات اینترنت را برنامه ریزی کند.او همیشه راه حل مناسب به ذهنش می رسد و سریع یاد می گیرد.در clarat در تیم IT  فعالیت دارد.موسیقی مورد علاقه او Jein از Fettes Brot می باشد.
       omar: او در رشته علوم کامپیوتر تحصیل کرده است.او به خوبی می تواند صفحات اینترنت را برنامه ریزی کند و مسائل پیچیده را درک کند.او در clarat در تیم IT فعالیت می کند و موسیقی مورد علاقه او Nothing Else Matters از Metallica می باشد.
       patrick: او در رشته تاریخ و سیاست تحصیل کرده است.او به خصوص در مورد کشور جامائیکا آگاهی دارد و می توانی چیزهای پیچیده را به خوبی درک کند.او در clarat در تیم تحقیق فعالیت می کند و موسیقی مورد علاقه او Kingston Be Wise از Protoje می باشد.
       philipp: او در رشته تاریخ٬ سیاست و حقوق تحصیل کرده است.او به خوبی می تواند مسائل پیچیده را درک کند.او در clarat در تیم تحقیق فعالیت می کند و تلاش می کند تا ما بهتر بتوانیم کار کنیم.موسیقی مورد علاقه او his Is Our Science از Astronautalis می باشد.
       sabine: او کارشناس جامعه شناسی است.این بدان معنی است که او اطلاعات زیادی در مورد اجتماع دارد.او به خوبی می تواند مسائل پیچیده را درک کند.در clarat در تیم تحقیق فعالیت می کند و قوانین مربوط به پناهندگان را به ما توضیح می دهد.موسیقی مورد علاقه او Vesna از Kino می باشد.
-      sophie: او در رشته مدیریت سازمانهای بدون سود تحصیل کرده است.او به خوبی می تواند سازمان دهی کند و به سرعت تشخیص می دهد که چه چیزی مهم است.در clarat در تیم تحقیق فعالیت دارد و می داند که چه کسانی و چگونه از کلارات استفاده می کنند.موسیقی مورد علاقه او Lost از Frank Ocean می باشد.
-      stefan: او کارشناس مطالعات فرهنگی است.این بدین معنی است که او اطلاعات زیادی در مورد فرهنگ و جامعه دارد.او به خوبی می تواند انسانها را در مورد موضوعی به وجد بیاورد و او مخترع و بوجود آورنده clarat می باشد.موسیقی مورد علاقه اوRiders On The Storm از The Doors می باشد.
+      sophie: او در رشته مدیریت سازمانهای بدون منفعت تحصیل کرده است و به خوبی می تواند سازمان دهی کند و به سرعت تشخیص می دهد که چه چیزی مهم است.در clarat در تیم تحقیق فعالیت دارد و می داند که چه کسانی و چگونه از کلارات استفاده می کنند.موسیقی مورد علاقه او Lost از Frank Ocean می باشد.
+      stefan: او کارشناس مطالعات فرهنگی است.این بدین معنی است که او اطلاعات زیادی در مورد فرهنگ و جامعه دارد.او به خوبی می تواند انسانها را در مورد موضوعی به هیجان بیاورد و او مخترع  clarat می باشد.موسیقی مورد علاقه اوRiders On The Storm از The Doors می باشد.
       text: |-
         clarat یک پروژه عام المنفعه متعلق به Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org) می باشد. ما همراه با Benckiser Stiftung از پروژه های موثر مربوط به پشتیبانی کودکان و جوانان حمایت می کنیم.در این راستا یک چیز همیشه به ذهن ما می رسد:خیلی سخت می توان دریافت که چه پیشنهاد های حمایتی به طور کلی وجود دارند و سپس برای ما روشن شد که اگر برای ما کارشناسان تا این حد سخت است نگاه کلی به این موضوع داشته باشیم٬ پس حتما برای کودکان و جوانان که بدنبال کمک واقعی هستند تا چه اندازه سخت تر می تواند باشد و یا برای پناهندگانی که با کشور آلمان آشنایی ندارند؟جواب این سوال:خیلی سخت!و بدین ترتیب ایده پیدایش clarat و تولد آن بوجود آمد.به راحتی کمک یافتن .برای خانواده ها در clarat family و برای پناهندگان در clarat refugees
@@ -1143,7 +1150,7 @@ fa:
     home:
       how:
         heading: نحوه عملکرد clarat چگونه است؟
-        text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه تو آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
+        text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
         family: از طریق clarat family به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای کودکان٬ جوانان و خانواده‌ها.به صورت آنلاین٬ به روز و در سراسر برلین.
         refugees: از طریق clarat refugees به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای پناهندگان.به صورت آنلاین٬ به روز٬ به زبانهای مختلف و در سراسر آلمان.
@@ -1300,9 +1307,3 @@ fa:
     new:
       button: پیغام دریافت شد
       email_placeholder: آدرس ایمیل
-  accessibility: 
-  anonymous: 
-  charged: 
-  confidential: 
-  day_and_night: 
-  free: 

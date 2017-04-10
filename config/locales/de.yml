@@ -1,4 +1,5 @@
 de:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,10 +19,11 @@ de:
       contact: NOTRANSLATE
       search_location: Search location
       subscription: NOTRANSLATE
-      update_request: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: anonym
+      update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -751,10 +753,12 @@ de:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Warum ist meine Organisation nicht bei clarat?
+  charged: 
   conf:
     current_location: Mein Standort
     default_latlng: 52.520007,13.404954
     default_location: Berlin
+  confidential: 
   contacts:
     create:
       success: Die Nachricht wurde erfolgreich abgeschickt.
@@ -772,6 +776,7 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -1020,6 +1025,7 @@ de:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+  free: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1370,8 +1376,8 @@ de:
             portal: Adressliste
           exclusive_gender:
             boys_only: nur für Jungen und Männer
-            girls_only: nur für Mädchen und Frauen
             female: nur für Mädchen und Frauen
+            girls_only: nur für Mädchen und Frauen
             male: nur für Jungen und Männer
           target_audience:
             children: für Kinder und Jugendliche
@@ -1410,6 +1416,12 @@ de:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
         code_word: 'So heißt die Hilfe beim Anbieter:'
@@ -1425,6 +1437,22 @@ de:
           wed: Mittwoch
         heading: Wann kannst du das machen?
       speaking: In welcher Sprache hilft man dir?
+      trait_filters:
+        explanation:
+          accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
+          anonymous: Das heißt, du musst deinen Namen nicht sagen.
+          charged: 
+          confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
+          day_and_night: 
+          free: 
+        title:
+          accessibility: barrierefrei
+          anonymous: anonym
+          charged: kostenpflichtig
+          confidential: vertraulich
+          day_and_night: Tag und Nacht
+          free: kostenlos
+      trait_filters_headline: Weitere Informationen
       website_section:
         internet_presence: Wo erfährst du mehr im Netz?
         websites:
@@ -1460,27 +1488,6 @@ de:
         organizations: 'Ein Angebot von:'
       who_section:
         heading: Wo kannst du dich melden?
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
-      trait_filters:
-        explanation:
-          accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
-          anonymous: Das heißt, du musst deinen Namen nicht sagen.
-          charged: 
-          confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
-          day_and_night: 
-          free: 
-        title:
-          accessibility: barrierefrei
-          anonymous: anonym
-          charged: kostenpflichtig
-          confidential: vertraulich
-          day_and_night: Tag und Nacht
-          free: kostenlos
   opening:
     display_string:
       appointment: nach Vereinbarung
@@ -1846,9 +1853,3 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
-  accessibility: 
-  anonymous: 
-  charged: 
-  confidential: 
-  day_and_night: 
-  free: 

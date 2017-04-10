@@ -53,14 +53,22 @@
   color: $brand_white;
   text-decoration: none;
   margin: -1px 28px 0;
-  padding: 6px 7px 9px 55px;
   font-size: 27px;
   display: flex;
   align-items: center;
   line-height: 1.33;
 
   html[dir="rtl"] & {
-    background-image: image-url('skinny-arrow-left.svg');
+    padding: 6px 60px 9px 7px;
+    background: image-url('skinny-arrow-left.svg') no-repeat calc(100% - 19px) center;
+
+    &.section-choice__cta--refugees {
+      background-color: $brand_core_refugees;
+    }
+
+    &.section-choice__cta--family {
+      background-color: $brand_core_family;
+    }
   }
 }
 

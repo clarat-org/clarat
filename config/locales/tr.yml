@@ -19,6 +19,9 @@ tr:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -893,6 +896,8 @@ tr:
           exclusive_gender:
             boys_only: Yalnızca erkekler için
             girls_only: Yalnızca bayanlar için
+            female: Yalnızca bayanlar için
+            male: Yalnızca erkekler için
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için
@@ -979,6 +984,27 @@ tr:
         organizations: 'bir ... hizmetidir:'
       who_section:
         heading: Nereye başvurabilirsin?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: Sözleşilen vakit
@@ -1289,3 +1315,9 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

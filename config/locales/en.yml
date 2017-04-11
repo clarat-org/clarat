@@ -19,6 +19,9 @@ en:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -375,7 +378,7 @@ en:
       contact_heading: What would you like to tell us?
     shared:
       new:
-        back_to_hp: 
+        back_to_hp: back to the homepage
         city_placeholder: place of residence (optional)
         email_placeholder:
           required:
@@ -629,12 +632,12 @@ en:
       <a href="/en/refugees/privacy">More</a>.
     geolocation:
       error: Location not found. Please enter it manually.
-      fallback: 
+      fallback: Alexanderplatz, Berlin, Germany
       fallback_clarification:
-        code1: 
-        code2: 
-        code3: 
-        code4: 
+        code1: You're not near Alexanderplatz? Then please enter your address, post code or city here.
+        code2: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
+        code3: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
+        code4: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
       get: Use my location!
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
@@ -941,6 +944,8 @@ en:
           exclusive_gender:
             boys_only: boys and men only
             girls_only: girls and women only
+            female: girls and women only
+            male: boys and men only
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
@@ -1027,6 +1032,27 @@ en:
         organizations: 'This is a support service provided by:'
       who_section:
         heading: How can you get in touch?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: by appointment
@@ -1053,8 +1079,8 @@ en:
         about economics and culture. She's a precise worker. At
         clarat she is part of the research team. She keeps an eye on everything that happens in the clarat family world. Her favourite song is “Work Me” by The Black Keys.
       anja: Anja is an ecologist and engineer. She can think quickly and logically. She works in clarat's research team, She ensures the quality of our work. Her favourite song is "Where is my My Mind?" by the Pixies.
-      ann-sophie: 
-      anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team. Her favourite song is "1009" by Bonobo
+      ann-sophie: Ann-Sophie studied socio-cultural studies. She knows a lot about the topic of migration. She can understand things well. She works for the clarat research team. Her favourite song is "Papertrails" from Darkside.
+      anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team and she's a clarat language expert. Her favourite song is "1009" by Bonobo
       anne: |-
         Anne studied economics and international relations. She's a quick,
         logical thinker. Here at clarat, she's the boss. She takes care of the whole
@@ -1074,10 +1100,10 @@ en:
         organize help and support. She is very organized. At clarat, she's part
         of the research team. She decides what should be listed as a support service. Her
         favourite song is “Elias” by Dispatch.
-      birte: Birte studied educational science. She knows a lot about children. And she's very good at putting herself in other people's shoes. And she's worked a lot with media. At clarat, she's in the research team. "Borderline" by Madonna is her favourite song.
+      birte: Birte studied educational science. She knows a lot about children. And she's very good at putting herself in other people's shoes. At clarat, she's in the research team. "Borderline" by Madonna is her favourite song.
       chrissy: Chrissy is a political scientist. That means she knows a lot about society and politics. And she's good at planning and organizing things. At clarat, she's in the research team. She uses the internet to look for organizations. Her favourite song is "Rough Hands" by Akexisonfire.
       claudia: Before coming to clarat, Claudia worked in retail. She's good at dealing with people. And finding information as quickly as possible. She's in clarat's research team. She helps people find help. Her favourite song is "Chandelier" by Sia.
-      damjan: 
+      damjan: Damjan is an IT specialist. That means he knows a lot about computers. And he can do programming very well. He knows how to solve problems. He works in clarat's IT team. And his favourite song is "Forever More" by Moloko.
       eleonore: Eleonore studied music, media and business studies. She can find and process information very quickly. She's in clarat's research team. It's her job to make sure people can find clarat easily online. Her favourite song is "Je Veux" by Zaz.
       elisa: |-
         Elisa is an expert on cultural studies. That means she knows a lot
@@ -1085,7 +1111,7 @@ en:
         clarat she is part of the research team. And she makes sure our website is looking good. Her favourite song is “Boat Behind" by Kings of
         Convenience.
       esther: Esther studied cultural studies. She knows a lot about history and politics. She is always learning new things. At clarat she's in the research team. She's in charge of our special clarat dictionary. Her favourite song is "This Charming Man" from The Smiths.
-      fabian: 
+      fabian: 'Fabian studied politics and history. He can easily put himself into other people''s shoes. And he can understand why people do the things they do. He is in the clarat research team. His favourite song is "Battery" by Metallica. '
       franziska: |-
         Franziska studied international law. That means she knows a lot about
         laws that apply to lots of different countries. She can understand complicated
@@ -1125,7 +1151,7 @@ en:
       julia_b: Julia studied Social Work. And she's already done a lot of work with children and young adults. She can relate to others easily. She's in clarat's research team. Her favourite song is "Nantes" by Beirut.
       juliane: Juliane studied business adminstration and tourism. She's very good at planning. And finding creative solutions. She's in charge of marketing at clarat. Her favourite song is "Easy" by The Commodores.
       karo: Karo studied European studies. That means she knows a lot about European politics. She is good at organizing things. She's part of the clarat research team. And she is in charge of our handbook. Her favourite song is "Alive" from Pearl Jam.
-      katja: Katja studied German. She is good at reading complicated texts. And she's good at German, too. She's in the clarat research team. Her favourite song is Mysteries by Beth Gibbons.
+      katja: Katja studied German. She is good at reading complicated texts. And she's good at German, too. She can write well and explain things easily. She's in the clarat research team. She's an expert for the clarat language. Her favourite song is "Mysteries" by Beth Gibbons.
       konstantin: |-
         Konstantin is a web developer, which means he knows how to program
         websites. He always finds good solutions. At clarat he is part of the IT
@@ -1148,24 +1174,24 @@ en:
       lisa: |-
         Lisa is a design thinker. That means she knows how to plan
         projects creatively. At clarat she is part of the research team, where she takes care of our users. She also tries to find out who our users are. Her favourite song is "Resolution" by Matt Corby.
-      magdalena: 
+      magdalena: Magdalena studied interdisciplinary Latin American studies. That means she knows lots about culture and politics in Latin America. She can plan and organize things very well. She's in the clarat research team. Her favourite song is "Summer Breeze" from CocoRosie.
       marcus: |-
         Marcus is a web designer. This means he's good at programming and
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      marie: 
+      marie: Marie is an academic researcher into the fields of peace and conflict research. This means she knows a lot about conflict and war. She can gather and sort information quickly. She works in clarat's research team. Her favourite song is "Move On Up" by Curtis Mayfield.
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
-      nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. Her favourite song is "Me in You" by Kings of Convenience.
+      nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. She makes sure our website is up-to-date. Her favourite song is "Me in You" by Kings of Convenience.
       nils: |-
         Nils is a computer scientist, which means he knows how to program
         computer programs and websites. He always comes up with good solutions
         and is a fast learner. At clarat he is part of the IT team. His favourite
         song is “Jein” by Fettes Brot.
-      omar: 
-      patrick: 
-      philipp: Philipp studied history, politics and law. He knows a lot about society and politics. He can understand complicated things. He's part of the clarat research team. His favourite song is "This is our Science" by Astronautalis.
+      omar: Omar studied computer engineering. He is good at programming websites and understanding complicated things quickly. He works for clarat's research team. His favourite song is "Nothing Else Matters" by Metallica.
+      patrick: Patrick studied history and politics. He knows a lot about the country Jamaica. He can understand complicated things very easily. He's in clarat's research team. And his favourite song is "Kingston Be Wose" ny Protoje.
+      philipp: Philipp studied history, politics and law. He knows a lot about society and politics. He can understand complicated things. He's part of the clarat research team. It's his job to make sure we can all work well. His favourite song is "This is our Science" by Astronautalis.
       sabine: Sabine is a sociologist. That means she knows a lot about society. She can understand complicated things very well. At clarat, she's in the research team. She explains the asylum laws in Germany to us. Her favourite song is "Vesna" by Kino.
       sophie: Sophie studied Non-profit Management. She's a very organized person. And she's good at recognizing what's important. She's in clarat's research team. She's trying to find out who is using clarat and how they're using it. Ger facourite song is "Lost" from Frank Ocean.
       stefan: |-
@@ -1424,3 +1450,9 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

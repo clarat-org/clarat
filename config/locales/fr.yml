@@ -19,6 +19,9 @@ fr:
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -965,6 +968,8 @@ fr:
           exclusive_gender:
             boys_only: seulement pour les garçons ou les hommes
             girls_only: seulement pour les filles et les femmes
+            female: seulement pour les filles et les femmes
+            male: seulement pour les garçons ou les hommes
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados
@@ -1045,6 +1050,27 @@ fr:
         organizations: 'Un service de:'
       who_section:
         heading: Tu peux t'adresser à qui?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
   opening:
     display_string:
       appointment: sur rendez-vous
@@ -1341,3 +1367,9 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

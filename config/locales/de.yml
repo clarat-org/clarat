@@ -19,6 +19,9 @@ de:
       search_location: Search location
       subscription: NOTRANSLATE
       update_request: NOTRANSLATE
+      trait_filter:
+        identifier:
+          anonymous: anonym
   cells:
     contact_people:
       dr: Dr.
@@ -1368,6 +1371,8 @@ de:
           exclusive_gender:
             boys_only: nur für Jungen und Männer
             girls_only: nur für Mädchen und Frauen
+            female: nur für Mädchen und Frauen
+            male: nur für Jungen und Männer
           target_audience:
             children: für Kinder und Jugendliche
             family_children: für Kinder und Jugendliche
@@ -1455,6 +1460,27 @@ de:
         organizations: 'Ein Angebot von:'
       who_section:
         heading: Wo kannst du dich melden?
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
+      trait_filters:
+        explanation:
+          accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
+          anonymous: Das heißt, du musst deinen Namen nicht sagen.
+          charged: 
+          confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
+          day_and_night: 
+          free: 
+        title:
+          accessibility: barrierefrei
+          anonymous: anonym
+          charged: kostenpflichtig
+          confidential: vertraulich
+          day_and_night: Tag und Nacht
+          free: kostenlos
   opening:
     display_string:
       appointment: nach Vereinbarung
@@ -1820,3 +1846,9 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  accessibility: 
+  anonymous: 
+  charged: 
+  confidential: 
+  day_and_night: 
+  free: 

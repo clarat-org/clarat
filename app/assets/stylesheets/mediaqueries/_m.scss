@@ -202,6 +202,10 @@
       padding: 10px 0;
     }
 
+    html[dir="rtl"][lang="fa"] .template--pages-home & {
+      padding: 10px 0;
+    }
+
     .template--pages-home & .input.string.search_form_search_location {
       margin-bottom: 10px;
     }
@@ -272,6 +276,11 @@
         padding-right: 53px;
       }
 
+      html[dir="rtl"][lang="fa"]  & {
+        padding-left: 15px;
+        padding-right: 83px;
+      }
+
       html[dir="rtl"] .is-enlarged & {
         border-bottom-right-radius: 0;
       }
@@ -281,6 +290,11 @@
       html[dir="rtl"] & {
         padding-left: 15px;
         padding-right: 40px;
+      }
+
+      html[dir="rtl"][lang="fa"] & {
+        padding-left: 15px;
+        padding-right: 60px;
       }
 
       body.tr & {
@@ -354,6 +368,11 @@
 
         html[dir="rtl"] & {
           padding-left: 55px;
+          padding-right: 0;
+        }
+
+        html[dir="rtl"][lang="fa"] .template--pages-home & {
+          padding-left: 0;
           padding-right: 0;
         }
 

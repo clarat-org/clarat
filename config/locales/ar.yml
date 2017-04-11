@@ -1,4 +1,5 @@
 ar:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,10 +19,11 @@ ar:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
-      update_request: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: 
+      update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: ".د"
@@ -297,10 +299,12 @@ ar:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: لماذا لا توجد منظمتي في كلارات؟
+  charged: 
   conf:
     current_location: موقعي
     default_latlng: 52.520007,13.404954
     default_location: برلين
+  confidential: 
   contacts:
     create:
       success: تم إرسال الرسالة بنجاح
@@ -318,6 +322,7 @@ ar:
         name_placeholder: الإسم (فرض)
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -556,6 +561,7 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
+  free: 
   js:
     ajax_error:
       error: خطأ في البحث
@@ -892,8 +898,8 @@ ar:
             portal: قائمة العناوين
           exclusive_gender:
             boys_only: فقط للصبيان والرجال
-            girls_only: فقط للبنات والسيدات
             female: فقط للبنات والسيدات
+            girls_only: فقط للبنات والسيدات
             male: فقط للصبيان والرجال
           target_audience:
             children: للأطفال والشباب
@@ -931,6 +937,12 @@ ar:
           long: عروض خاصة بموضوع ....
           short: عروض  مساعدة ل..
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: آخر إدخال
       next_steps:
         code_word: هكذا تسمى المساعدة لدى مقدم الدعم.
@@ -946,6 +958,22 @@ ar:
           wed: الأربعاء
         heading: متى يمكنك فعل هذا؟
       speaking: في أي لغة تقدم لك المساعدة؟
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: أين تجد المزيد من المعلومات في النت؟
         websites:
@@ -981,27 +1009,6 @@ ar:
         organizations: " :.عرض من"
       who_section:
         heading: أين يمكنك الإتصال؟
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
-      trait_filters:
-        explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
-        title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
   opening:
     display_string:
       appointment: حسب الإتفاق
@@ -1306,9 +1313,3 @@ ar:
     new:
       button: الرسالة وصلت
       email_placeholder: عنوان البريد الإليكتروني
-  accessibility: 
-  anonymous: 
-  charged: 
-  confidential: 
-  day_and_night: 
-  free: 

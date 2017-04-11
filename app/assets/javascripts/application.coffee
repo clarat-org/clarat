@@ -100,6 +100,7 @@ about supported directives.
 # = require toggle_advanced_search/presenter
 # = require analytics/presenter
 # = require equal_height_helper/presenter
+# = require offer_show_tooltips/presenter
 
 #
 # = require map_modal/presenter

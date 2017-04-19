@@ -670,6 +670,12 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -901,6 +907,12 @@ ru:
         wol: Волоф язык - wɔlɔf
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
+        arm: Армянский язык - Հայերեն / Hajeren
+        dan: Датский язык - Dansk
+        fil: Филиппинский язык - Wikang Filipino
+        hau: Хаусский язык - Hausanci
+        lin: Язык Lingála - Ngála
+        mos: Муз язык - Moose
     shariff:
       share_label: Разделить
     single_search_result:

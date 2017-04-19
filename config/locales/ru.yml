@@ -1,4 +1,5 @@
 ru:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,10 +19,11 @@ ru:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
-      update_request: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: 
+      update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Доктор
@@ -424,10 +426,12 @@ ru:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Почему моей организации нет на странице clarat?
+  charged: 
   conf:
     current_location: Мое местонахождения
     default_latlng: 52.520007,13.404954
     default_location: Берлин
+  confidential: 
   contacts:
     create:
       success: Сообщение было отправлено успешно.
@@ -445,6 +449,7 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -665,6 +670,12 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -674,6 +685,7 @@ ru:
       sort_order:
         nearby: Около
         relevance: Релевантность
+  free: 
   js:
     ajax_error:
       error: Ошибка в поиске
@@ -895,6 +907,12 @@ ru:
         wol: Волоф язык - wɔlɔf
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
+        arm: Армянский язык - Հայերեն / Hajeren
+        dan: Датский язык - Dansk
+        fil: Филиппинский язык - Wikang Filipino
+        hau: Хаусский язык - Hausanci
+        lin: Язык Lingála - Ngála
+        mos: Муз язык - Moose
     shariff:
       share_label: Разделить
     single_search_result:
@@ -1005,8 +1023,8 @@ ru:
             portal: Список адресов
           exclusive_gender:
             boys_only: только для мальчиков и мужчин
-            girls_only: только для девочек и женщин
             female: только для девочек и женщин
+            girls_only: только для девочек и женщин
             male: только для мальчиков и мужчин
           target_audience:
             children: для детей и молодежи
@@ -1045,6 +1063,12 @@ ru:
           long: Предложения по теме …
           short: Предложения …
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: В последний раз обновлено
       next_steps:
         code_word: 'Так называется помощь поставщика:'
@@ -1060,6 +1084,22 @@ ru:
           wed: Среда
         heading: Когда ты можешь это сделать?
       speaking: На каком языке тебе можно помочь?
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: Где ты можешь найти больше в сети?
         websites:
@@ -1095,27 +1135,6 @@ ru:
         organizations: 'Предложения от:'
       who_section:
         heading: Куда ты можешь обратиться?
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
-      trait_filters:
-        explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
-        title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
   opening:
     display_string:
       appointment: по записи
@@ -1414,9 +1433,3 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
-  accessibility: 
-  anonymous: 
-  charged: 
-  confidential: 
-  day_and_night: 
-  free: 

@@ -1,4 +1,5 @@
 tr:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -18,10 +19,11 @@ tr:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
       subscription: NOTRANSLATE
-      update_request: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: 
+      update_request: NOTRANSLATE
+  anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -326,10 +328,12 @@ tr:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Benim kuruluşum neden clarat’ta değil?
+  charged: 
   conf:
     current_location: Konumum
     default_latlng: 52.520007,13.404954
     default_location: Berlin
+  confidential: 
   contacts:
     create:
       success: Mesaj başarıyla gönderilmiştir.
@@ -347,6 +351,7 @@ tr:
         name_placeholder: İsim (zorunlu)
         send: gönder
         send_us_a_message: Bize mesaj gönder
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -565,6 +570,12 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -574,6 +585,7 @@ tr:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+  free: 
   js:
     ajax_error:
       error: Arama hatası
@@ -785,6 +797,12 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
+        arm: Ermenice - Հայերեն / Hajeren
+        dan: Danimarka - Dansk
+        fil: Filipince - Wikang Filipino
+        hau: Hausa - Hausanci
+        lin: Lingaca - Ngála
+        mos: Geyik - Moose
     shariff:
       share_label: 
     single_search_result:
@@ -895,8 +913,8 @@ tr:
             portal: Adres listesi
           exclusive_gender:
             boys_only: Yalnızca erkekler için
-            girls_only: Yalnızca bayanlar için
             female: Yalnızca bayanlar için
+            girls_only: Yalnızca bayanlar için
             male: Yalnızca erkekler için
           target_audience:
             children: Çocuklar ve gençler için
@@ -934,6 +952,12 @@ tr:
           long: "… konu ile ilgili yardımlar"
           short: "… ile ilgili yardımlar"
     show:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Son kayıt düzenleme tarihi
       next_steps:
         code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
@@ -949,6 +973,22 @@ tr:
           wed: Çarşamba
         heading: Ne zaman yapabilirsin?
       speaking: Sana hangi dilde yardımcı olunuyor?
+      trait_filters:
+        explanation:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+        title:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
+      trait_filters_headline: 
       website_section:
         internet_presence: İnternette nerede daha fazla bilgi bulabilirim?
         websites:
@@ -984,27 +1024,6 @@ tr:
         organizations: 'bir ... hizmetidir:'
       who_section:
         heading: Nereye başvurabilirsin?
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
-      trait_filters:
-        explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
-        title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
   opening:
     display_string:
       appointment: Sözleşilen vakit
@@ -1315,9 +1334,3 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  accessibility: 
-  anonymous: 
-  charged: 
-  confidential: 
-  day_and_night: 
-  free: 

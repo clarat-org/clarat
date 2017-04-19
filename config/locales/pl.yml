@@ -694,6 +694,12 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -918,6 +924,12 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
+        arm: Język ormiański - Հայերեն / Hajeren
+        dan: język duński - Dansk
+        fil: filipino - Wikang Filipino
+        hau: język hausa - Hausa
+        lin: lingala - Ngála
+        mos: Mòoré - Moose
     shariff:
       share_label: Podziel
     single_search_result:

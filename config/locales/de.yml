@@ -1016,6 +1016,12 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: Arm
+        dan: Dan
+        fil: Fil
+        hau: Hau
+        lin: Lin
+        mos: Mos
       section:
         family: Family
         refugees: Refugees
@@ -1267,6 +1273,12 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        arm: Armenisch - Հայերեն / Hajeren
+        dan: Dänisch - Dansk
+        fil: Filipino - Wikang Filipino
+        hau: Hausa - Hausanci
+        lin: Lingála - Ngála
+        mos: Mòoré - Moose
     shariff:
       share_label: Teilen
     single_search_result:
@@ -1409,8 +1421,8 @@ de:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Adresse, Stadt oder PLZ
-          short: Berlin
+          long: Adresse, Stadteil, Stadt oder PLZ
+          short: Adresse, Stadteil, Stadt oder PLZ
         query_label: Was
         query_placeholder:
           long: Angebote zum Thema …

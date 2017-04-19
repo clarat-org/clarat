@@ -646,6 +646,12 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -874,6 +880,12 @@ fr:
         zza: 'Zazaki - Zazaki / Kırmancki
 
 '
+        arm: arménien - Հայերեն լեզու
+        dan: danois - Dansk
+        fil: filipino - Wikang Filipino
+        hau: haoussa - Hausancī
+        lin: lingala - lingála
+        mos: moré - Mòoré
     shariff:
       share_label: Partager
     single_search_result:

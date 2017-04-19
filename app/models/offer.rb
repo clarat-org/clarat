@@ -5,11 +5,11 @@ class Offer < ActiveRecord::Base
   # Frontend-only Methods
 
   def canonical_section
-    section_filters.pluck(:identifier).first
+    section_filter.identifier if section_filter.present?
   end
 
   def in_section? section
-    section_filters.where(identifier: section).count > 0
+    section_filter.identifier.eql? section if section_filter.present?
   end
 
   def visible_contact_people?

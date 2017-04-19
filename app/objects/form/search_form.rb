@@ -46,7 +46,7 @@ class SearchForm
   enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
   attribute :section, String, default: :family
-  enumerize :section, in: SectionFilter::IDENTIFIER
+  #enumerize :section, in: SectionFilter::IDENTIFIER
 
   # Methods #
 

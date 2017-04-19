@@ -32,8 +32,13 @@ class PreviewsController < ApplicationController
 
   # set section directly if it is distinct
   def preferred_section model_instance
-    if model_instance.section_filters.count == 1
-      @current_section = model_instance.section_filters.first.identifier
+    case @current_section
+    when model_instance.class.name == "Offer"
+      model_instance.section_filter.identifier
+    when model_instance.section_filters.count >= 1
+      model_instance.section_filters.first.identifier
+    else
+      nil #display nothing if there are no section_filters
     end
   end
 end

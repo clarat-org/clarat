@@ -58,12 +58,12 @@ FactoryGirl.define do
       # Filters
       section = evaluator.section
       if section
-        offer.section_filters << (
+        offer.section_filter = (
           SectionFilter.find_by_identifier(section) ||
             FactoryGirl.create(:section_filter, identifier: section)
         )
       else
-        offer.section_filters << (
+        offer.section_filter = (
           SectionFilter.all.sample || FactoryGirl.create(:section_filter)
         )
       end

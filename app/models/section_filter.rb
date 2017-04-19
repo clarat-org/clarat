@@ -1,8 +1,8 @@
 require ClaratBase::Engine.root.join(
-  'app', 'models', 'filters', 'section_filter'
+  'app', 'models', 'section_filter'
 )
 
-class SectionFilter < Filter
+class SectionFilter < ActiveRecord::Base
   DEFAULT = 'refugees'
 
   # Order so that the default (refugees) is always first

@@ -79,13 +79,6 @@ describe OffersController do
   end
 
   describe "GET 'section_forward'" do
-    it 'should redirect to the default location if it has both sections' do
-      offer = FactoryGirl.create :offer, :approved
-      offer.section_filter = filters(:family), filters(:refugees)
-      get :section_forward, id: offer.slug, locale: 'de'
-      assert_redirected_to controller: 'offers', action: 'show',
-                           section: SectionFilter::DEFAULT
-    end
 
     it 'should redirect to the family section if it has only that one' do
       offer = FactoryGirl.create :offer, :approved, section: 'family'

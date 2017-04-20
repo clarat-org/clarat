@@ -552,6 +552,12 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -782,6 +788,12 @@ ar:
         wol: لغة ولوفية - wɔlɔf
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
+        arm: لغة أرمنية - Հայերեն / Hajeren
+        dan: لغة دنماركية - Dansk
+        fil: لغة فلبينية - Wikang Filipino
+        hau: لغة هوسية - Hausanci
+        lin: لغة لينغالا - Ngála
+        mos: لغة موريه - Moose
     shariff:
       share_label: مشاركة
     single_search_result:

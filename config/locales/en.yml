@@ -613,6 +613,12 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
+        arm: 
+        dan: 
+        fil: 
+        hau: 
+        lin: 
+        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -839,6 +845,12 @@ en:
         wol: Wolof - wɔlɔf
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        arm: Armenian - Հայերեն / Hajeren
+        dan: Danish - Dansk
+        fil: Filipino - Wikang Filipino
+        hau: Hausa - Hausanci
+        lin: Lingala - Ngála
+        mos: Mossi - Mòoré
     shariff:
       share_label: Share
     single_search_result:

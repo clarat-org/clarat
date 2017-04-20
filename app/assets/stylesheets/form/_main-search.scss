@@ -179,6 +179,11 @@
     padding-right: 47px;
     padding-left: 14px;
   }
+
+  html[dir="rtl"][lang="fa"] & {
+    padding-right: 77px;
+    padding-left: 14px;
+  }
 }
 
 .main-search__submit {
@@ -197,8 +202,9 @@
   -webkit-border-top-right-radius: 0;
 
   html[dir="rtl"] & {
-    border-top-left-radius: 0; // reset
     @extend %clarat_rounding_end;
+    border-top-left-radius: 0; // reset
+    padding-right: 100px;
     margin-left: 10px;
     margin-right: 0;
   }

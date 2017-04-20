@@ -1,4 +1,4 @@
-- provide :title, @offer.name
+- provide :meta_title, @offer.name + ' | clarat'
 - provide :meta_description, @offer.description.gsub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').first(154) + '…'
 - content_for :canonical_url,
               offer_url(section: @offer.canonical_section, id: @offer.slug)
@@ -39,6 +39,7 @@
     / Right side (in desktop)
     .section-wrapper-minor
 
+      / Spoken languages
       section.section-content.section-content--speaking
         h3.section-content__title
           = t '.speaking'
@@ -50,6 +51,20 @@
 
         button.section-content__toggle
           = t '.speaking'
+
+
+      / More info "tags"
+      - if @offer.trait_filters.any?
+        section.section-content.section-content--more-info
+          h3.section-content__title
+            = t '.trait_filters_headline'
+
+          ul.section-content__tag-list
+            - @offer.trait_filters.each do |filter|
+              - title = I18n.exists?("offers.show.trait_filters.explanation.#{filter.identifier}") ? \
+                  t(".trait_filters.explanation.#{filter.identifier}") : nil
+              li[title=title]
+                = t ".trait_filters.title.#{filter.identifier}"
 
       section.section-content.section-content--whos-offering
         h3.section-content__title

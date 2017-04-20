@@ -96,3 +96,6 @@ end
 $suite_passing = true
 
 DatabaseCleaner.strategy = :transaction
+
+Percy::Capybara.initialize_build
+MiniTest.after_run { Percy::Capybara.finalize_build }

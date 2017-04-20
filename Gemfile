@@ -240,6 +240,7 @@ group :development, :test do
   gem 'letter_opener' # emails in browser
   gem 'timecop' # time travel!
   gem 'dotenv-rails' # handle environment variables
+  gem 'percy-capybara'
 end
 
 group :development, :test, :staging do

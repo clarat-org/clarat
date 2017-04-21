@@ -16,7 +16,7 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.visible_in_frontend.friendly.find(params[:id])
+    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
     unless @offer.in_section? @current_section
       return redirect_to section: @offer.canonical_section
     end

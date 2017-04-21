@@ -18,11 +18,6 @@ describe OffersController do
                         "http://test.host/family/angebote/#{offer.slug}"
       end
 
-      it 'should redirect if the wrong section was given' do
-        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
-        get :show, id: offer.slug, locale: 'de', section: 'family'
-        assert_redirected_to section: 'refugees'
-      end
 
       it 'shouldnt show on unapproved offer' do
         offer = FactoryGirl.create :offer
@@ -54,12 +49,6 @@ describe OffersController do
                         "http://test.host/family/angebote/#{offer.slug}"
       end
 
-      it 'should redirect if the wrong section was given' do
-        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
-        offer.update_columns aasm_state: 'expired'
-        get :show, id: offer.slug, locale: 'de', section: 'family'
-        assert_redirected_to section: 'refugees'
-      end
     end
   end
 

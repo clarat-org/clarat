@@ -34,9 +34,9 @@ class ApplicationHelperTest < ActionView::TestCase
 
     it 'replaces another non-default section with the default refugees' do
       # setup
-      original_section_identifiers = SectionFilter::IDENTIFIER
+      original_section_identifiers = Section::IDENTIFIER
       silence_warnings do
-        SectionFilter::IDENTIFIER = %w(family somethingelse refugees)
+        Section::IDENTIFIER = %w(family somethingelse refugees)
       end
 
       # test
@@ -45,7 +45,7 @@ class ApplicationHelperTest < ActionView::TestCase
 
       # cleanup
       silence_warnings do
-        SectionFilter::IDENTIFIER = original_section_identifiers
+        Section::IDENTIFIER = original_section_identifiers
       end
     end
 

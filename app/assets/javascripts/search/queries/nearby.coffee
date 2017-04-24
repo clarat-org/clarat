@@ -12,4 +12,4 @@ class Clarat.Search.Query.Nearby
       hitsPerPage: 1
       aroundLatLng: @geolocation
       aroundRadius: @NEARBY_RADIUS
-      facetFilters: ["_section_filters:#{@section}"]
+      facetFilters: ["section_identifier:#{@section}"]

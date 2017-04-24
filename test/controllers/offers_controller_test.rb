@@ -47,7 +47,6 @@ describe OffersController do
         assert_includes response.body,
                         "http://test.host/family/angebote/#{offer.slug}"
       end
-
     end
   end
 
@@ -67,7 +66,6 @@ describe OffersController do
   end
 
   describe "GET 'section_forward'" do
-
     it 'should redirect to the family section if it has only that one' do
       offer = FactoryGirl.create :offer, :approved, section: 'family'
       get :section_forward, id: offer.slug, locale: 'de'

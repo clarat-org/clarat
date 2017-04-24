@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 6eb27ce9257e6638d15c3a4733f722cd3d767ff0
+  revision: 75f8d4bf1b3238f8dc6c2c3eddffe2a298d5a3aa
   branch: feature/1004-one-section-per-offer
   specs:
     clarat_base (0.1.4)
@@ -175,7 +175,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20170223)
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -216,8 +216,8 @@ GEM
       multi_json (>= 1.9.0)
     git-version-bump (0.15.1)
     gli (2.16.0)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
     haml (4.0.7)
       tilt
     hamlbars (2.1.1)
@@ -550,7 +550,7 @@ GEM
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
+    unf_ext (0.0.7.4)
     uniform_notifier (1.9.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)

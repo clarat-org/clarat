@@ -17,7 +17,7 @@ module OffersHelper
       children.any? &&
       children.map do |arr|
         arr.first.visible &&
-        arr.first.section_filters.pluck(:identifier).include?(current_section)
+        arr.first.sections.pluck(:identifier).include?(current_section)
       end.include?(true)
     # depth = 3 => 5 categories shown
     children_class = (visible_children && depth <= 3) ? 'has-children' : ''

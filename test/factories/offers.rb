@@ -58,13 +58,13 @@ FactoryGirl.define do
       # Filters
       section = evaluator.section
       if section
-        offer.section_filter = (
-          SectionFilter.find_by_identifier(section) ||
-            FactoryGirl.create(:section_filter, identifier: section)
+        offer.section = (
+          Section.find_by_identifier(section) ||
+            FactoryGirl.create(:section, identifier: section)
         )
       else
-        offer.section_filter = (
-          SectionFilter.all.sample || FactoryGirl.create(:section_filter)
+        offer.section = (
+          Section.all.sample || FactoryGirl.create(:section)
         )
       end
       evaluator.language_count.times do

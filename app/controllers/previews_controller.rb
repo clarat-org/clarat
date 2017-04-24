@@ -20,7 +20,7 @@ class PreviewsController < ApplicationController
   private
 
   def show model_type
-    model_instance = model_type.classify == 'Offer' ? model_type.classify.constantize.in_section(@current_section).friendly.find(params[:id]) : model_type.classify.constantize.friendly.find(params[:id])
+    model_instance = model_instance model_type, params[:id]
     instance_variable_set "@#{model_type}", model_instance
     initialize_markers
     prepare_gmaps_variable model_instance
@@ -28,4 +28,12 @@ class PreviewsController < ApplicationController
     render "/#{model_type}s/show"
   end
 
+  def model_instance model_type, model_id
+    if model_type.classify == 'Offer'
+       model_type.classify.constantize.in_section(@current_section).friendly
+         .find(model_id)
+     else
+       model_type.classify.constantize.friendly.find(model_id)
+     end
+  end
 end

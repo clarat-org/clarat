@@ -7,8 +7,8 @@ FactoryGirl.define do
 
     after :build do |category|
       # Filters
-      category.section_filters << (
-        SectionFilter.find_by(name: 'Refugees') || FactoryGirl.create(:section_filter)
+      category.sections << (
+        Section.find_by(name: 'Refugees') || FactoryGirl.create(:section)
       )
     end
 

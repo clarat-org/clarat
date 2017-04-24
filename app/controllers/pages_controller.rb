@@ -35,7 +35,7 @@ class PagesController < ApplicationController
     split_path = request.fullpath.split('/', -1)
     insertion_index = split_path.last == params['locale'] ? -1 : -2
     forward_path =
-      split_path.insert(insertion_index, SectionFilter::DEFAULT).join('/')
+      split_path.insert(insertion_index, Section::DEFAULT).join('/')
     redirect_to forward_path
   end
 end

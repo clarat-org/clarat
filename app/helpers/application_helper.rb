@@ -43,8 +43,8 @@ module ApplicationHelper
   end
 
   def default_canonical_url
-    section_regex = Regexp.new(SectionFilter::IDENTIFIER.join('|'))
-    request.url.sub section_regex, SectionFilter::DEFAULT
+    section_regex = Regexp.new(Section::IDENTIFIER.join('|'))
+    request.url.sub section_regex, Section::DEFAULT
   end
 
   # Get the not selected section. THis stops working as soon as we have more

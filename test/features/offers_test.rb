@@ -23,7 +23,7 @@ feature 'Offer display' do
                                :with_dummy_translations # test obfuscation
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
-    visit offer_en_path offer, section: offer.section_filter.identifier
+    visit offer_en_path offer, section: offer.section.identifier
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'
   end
@@ -32,7 +32,7 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved, :with_email,
                                :with_dummy_translations # test obfuscation
     offer.update_columns aasm_state: 'expired'
-    visit offer_en_path offer, section: offer.section_filter.identifier
+    visit offer_en_path offer, section: offer.section.identifier
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'
   end
@@ -62,7 +62,7 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
                                old_next_steps: 'Step one.'
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
-    offer.update_columns section_filter_id: 2
+    offer.update_columns section_id: 2
     next_steps(:basic).update_column :text_en, 'English step 1.'
     visit offer_en_path offer, section: 'refugees'
     within '.section-content--nextsteps' do
@@ -71,7 +71,7 @@ feature 'Offer display' do
       page.must_have_css '.Automated-translation__warning'
     end
     offer.next_steps << next_steps(:basic)
-    visit offer_en_path offer, section: offer.section_filter.identifier
+    visit offer_en_path offer, section: offer.section.identifier
     within '.section-content--nextsteps' do
       page.wont_have_content 'GET READY FOR CANADA'
       page.must_have_content 'English step 1.'

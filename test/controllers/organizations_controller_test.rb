@@ -14,8 +14,8 @@ describe OrganizationsController do
 
       it 'should use the correct canonical URL' do
         orga = FactoryGirl.create :organization, :approved
-        Organization.any_instance.expects(:section_filters).returns(
-          SectionFilter.where(identifier: 'family')
+        Organization.any_instance.expects(:sections).returns(
+          Section.where(identifier: 'family')
         ).twice
         get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
@@ -56,8 +56,8 @@ describe OrganizationsController do
       it 'should use the correct canonical URL' do
         orga = FactoryGirl.create :organization, :approved
         orga.update_columns aasm_state: 'all_done'
-        Organization.any_instance.expects(:section_filters).returns(
-          SectionFilter.where(identifier: 'family')
+        Organization.any_instance.expects(:sections).returns(
+          Section.where(identifier: 'family')
         ).twice
         get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
@@ -78,18 +78,18 @@ describe OrganizationsController do
   describe "GET 'section_forward'" do
     it 'should redirect to the default location if it has both sections' do
       orga = FactoryGirl.create :organization, :approved
-      Organization.any_instance.expects(:section_filters).returns(
-        SectionFilter.all
+      Organization.any_instance.expects(:sections).returns(
+        Section.all
       )
       get :section_forward, id: orga.slug, locale: 'de'
       assert_redirected_to controller: 'organizations', action: 'show',
-                           section: SectionFilter::DEFAULT
+                           section: Section::DEFAULT
     end
 
     it 'should redirect to the family section if it has only that one' do
       orga = FactoryGirl.create :organization, :approved
-      Organization.any_instance.expects(:section_filters).returns(
-        SectionFilter.where(identifier: 'family')
+      Organization.any_instance.expects(:sections).returns(
+        Section.where(identifier: 'family')
       )
       get :section_forward, id: orga.slug, locale: 'de'
       assert_redirected_to controller: 'organizations', action: 'show',
@@ -98,8 +98,8 @@ describe OrganizationsController do
 
     it 'should redirect to the refugees section if it has only that one' do
       orga = FactoryGirl.create :organization, :approved
-      Organization.any_instance.expects(:section_filters).returns(
-        SectionFilter.where(identifier: 'refugees')
+      Organization.any_instance.expects(:sections).returns(
+        Section.where(identifier: 'refugees')
       )
       get :section_forward, id: orga.slug, locale: 'de'
       assert_redirected_to controller: 'organizations', action: 'show',

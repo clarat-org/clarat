@@ -5,7 +5,7 @@ class Offer < ActiveRecord::Base
   # Frontend-only Methods
 
   def canonical_section
-    section_filter.identifier if section_filter.present?
+    section.identifier
   end
 
   def visible_contact_people?

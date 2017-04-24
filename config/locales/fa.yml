@@ -1,5 +1,5 @@
 fa:
-  accessibility: 
+  accessibility:
   activerecord:
     attributes:
       contact:
@@ -7,7 +7,7 @@ fa:
         message: NOTRANSLATE
         name: NOTRANSLATE
       offer:
-        organizations: 
+        organizations:
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -23,9 +23,9 @@ fa:
       subscription: NOTRANSLATE
       trait_filter:
         identifier:
-          anonymous: 
+          anonymous:
       update_request: NOTRANSLATE
-  anonymous: 
+  anonymous:
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -371,12 +371,12 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
-  charged: 
+  charged:
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-  confidential: 
+  confidential:
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -394,7 +394,7 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-  day_and_night: 
+  day_and_night:
   emails:
     offers_index:
       family:
@@ -626,7 +626,7 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-  free: 
+  free:
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -905,7 +905,11 @@ fa:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
+<<<<<<< HEAD
         title: "ترجمه خودکار\n<br><br>\nدر  clarat بعضی از متون به زبان مادری شما، توسط Google Translate ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد. "
+=======
+        title:
+>>>>>>> develop
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:
@@ -938,10 +942,10 @@ fa:
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
+        family_acquaintances:
+        refugees_adolescents:
     validations:
-      only_visible_organizations: 
+      only_visible_organizations:
   offers:
     index:
       filters:
@@ -999,12 +1003,12 @@ fa:
           long: پیشنهاد مربوط به موضوع
           short: پیشنهاد...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
+      accessibility:
+      anonymous:
+      charged:
+      confidential:
+      day_and_night:
+      free:
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
         code_word: 'نام این کمک نزد عرضه کننده:'
@@ -1022,23 +1026,23 @@ fa:
       speaking: به چه زبانی به تو کمک می شود؟
       trait_filters:
         explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility:
+          anonymous:
+          charged:
+          confidential:
+          day_and_night:
+          free:
         title:
           accessibility: دسترس‌پذیری
           anonymous: گمنام
           charged: هزینه الزامی
           confidential: محرمانه
           day_and_night: شبانه روزی
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
+          family_nuclear_family:
+          family_parents:
+          family_relatives:
           free: رایگان
-      trait_filters_headline: 
+      trait_filters_headline:
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟
         websites:
@@ -1339,7 +1343,7 @@ fa:
     placeholders:
       search_form:
         home:
-          query: 
+          query:
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

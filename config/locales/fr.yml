@@ -1,5 +1,5 @@
 fr:
-  accessibility: 
+  accessibility:
   activerecord:
     attributes:
       contact:
@@ -7,7 +7,7 @@ fr:
         message: NOTRANSLATE
         name: NOTRANSLATE
       offer:
-        organizations: 
+        organizations:
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -23,9 +23,9 @@ fr:
       subscription: NOTRANSLATE
       trait_filter:
         identifier:
-          anonymous: 
+          anonymous:
       update_request: NOTRANSLATE
-  anonymous: 
+  anonymous:
   cells:
     contact_people:
       dr: Dr.
@@ -404,12 +404,12 @@ fr:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Mon organisation n’est pas sur clarat, pourquoi?
-  charged: 
+  charged:
   conf:
     current_location: Ma localisation
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential: 
+  confidential:
   contacts:
     create:
       success: Le message a été envoyé avec succès.
@@ -417,8 +417,8 @@ fr:
       contact_heading: Tu voudrais nous dire quoi?
     shared:
       new:
-        back_to_hp: 
-        city_placeholder: 
+        back_to_hp:
+        city_placeholder:
         email_placeholder:
           required:
             'false': adresse électronique (facultatif)
@@ -427,7 +427,7 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
-  day_and_night: 
+  day_and_night:
   emails:
     offers_index:
       family:
@@ -663,7 +663,7 @@ fr:
       sort_order:
         nearby: À proximité
         relevance: Pertinence
-  free: 
+  free:
   js:
     ajax_error:
       error: erreur de recherche
@@ -676,12 +676,12 @@ fr:
       <a href="/fr/refugees/protection-des-données">Plus</a>.
     geolocation:
       error: La localisation n'a pas été trouvée. Donnez-là manuellement , s'il vous plaît.
-      fallback: 
+      fallback:
       fallback_clarification:
-        code1: 
-        code2: 
-        code3: 
-        code4: 
+        code1:
+        code2:
+        code3:
+        code4:
       get: J'utlise ma localisation!
       waiting: Recherche localisation...... éventuellement, tu dois en premier lieu l'autoriser.
     lang_list_toggle:
@@ -770,10 +770,10 @@ fr:
         other: "%{count} services sur place"
         zero: malheureusement pas de service
       personal_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       remote_anchor:
         one: |2-
 
@@ -786,10 +786,10 @@ fr:
         other: "%{count} Assistances téléphoniques ou services en ligne"
         zero: pas d'assistance téléphonique ni de service en ligne
       remote_offers_new:
-        _query: 
-        category: 
-        category_query: 
-        default: 
+        _query:
+        category:
+        category_query:
+        default:
       show_personal: Montre les services locaux
     shared:
       current_and_original_locale:
@@ -930,7 +930,7 @@ fr:
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
-        title: 
+        title:
       navigation:
         category_headline: ou recherches par catégories
         claim:
@@ -963,10 +963,10 @@ fr:
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
+        family_acquaintances:
+        refugees_adolescents:
     validations:
-      only_visible_organizations: 
+      only_visible_organizations:
   offers:
     index:
       filters:
@@ -1024,12 +1024,12 @@ fr:
           long: services sur le thème …
           short: services pour...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
+      accessibility:
+      anonymous:
+      charged:
+      confidential:
+      day_and_night:
+      free:
       last_update: Dernière entrée traitée le
       next_steps:
         code_word: 'Chez ce fournisseur, l''aide s’appelle :'
@@ -1047,23 +1047,23 @@ fr:
       speaking: On peut t'aider dans quelle langue?
       trait_filters:
         explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility:
+          anonymous:
+          charged:
+          confidential:
+          day_and_night:
+          free:
         title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
-          free: 
-      trait_filters_headline: 
+          accessibility:
+          anonymous:
+          charged:
+          confidential:
+          day_and_night:
+          family_nuclear_family:
+          family_parents:
+          family_relatives:
+          free:
+      trait_filters_headline:
       website_section:
         internet_presence: Tu peux en apprendre plus sur internet où?
         websites:
@@ -1116,7 +1116,7 @@ fr:
       amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
       andrea: Elle a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Elle fait partie de l'équipe recherche de clarat. Elle a une vue d'ensemble sur le monde de notre famille. Sa chanson préférée est Work Me des Black Keys.
       anja: Elle est oncologue et ingénieure. Elle pense rapidement et de façon logique. Elle fait partie de l'équipe recherche de clarat. Elle est chargée de contrôler la qualité de notre travail. Sa chanson préférée est Where is my mind des Pixies.
-      ann-sophie: 
+      ann-sophie:
       anna: Elle est philologue. Cela veut dire qu'elle sait beaucoup de choses sur les langues. Elle s'y connait également bien en littérature. Elle sait très bien comprendre les choses compliquées. Elle fait partie de l'équipe recherche de clarat. Sa chanson préférée est 1009 de Bonobo.
       anne: Elle a fait des études en économie et relations internationales. Elle pense de façon rapide et très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
       astrid: Elle est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne est contagieuse. Elle fait partie de l'équipe recherche de clarat. Elle recherche aussi de nouveaux organismes sur internet. Sa chanson préférée est You Got Me de The Roots.
@@ -1125,11 +1125,11 @@ fr:
       birte: Elle a fait des études en sciences de l'éducation. Elle sait bien s'y prendre avec les enfants et sait bien se mettre à la place des autres. Elle a aussi beaucoup travaillé avec les médias. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Borderline de Madonna.
       chrissy: C'est une politologue, c'est à dire quelqu'un qui connait beaucoup de choses sur la politique et la société. Elle sait très bien planifier et classer. Elle fait partie de l'équipe de chercheurs de clarat. Elle recherche également des organismes sur internet. Sa chanson préférée est Rough Hands d'Alexisonfire.
       claudia: Avant de travailler chez clarat, elle travaillait dans le secteur du commerce de détail. Elle sait bien s'y prendre avec les personnes. Elle fait partie de l'équipe de chercheurs de clarat. Elle aide nos utilisateurs. Sa chanson préférée est Chandelier de Sia.
-      damjan: 
+      damjan:
       eleonore: Elle a étudié la musique, les médias et l'économie. Elle sait comment récolter et comprendre rapidement les informations. Elle fait partie de l'équipe de chercheurs de clarat. Elle fait de sorte que les utilisateurs trouvent facilement clarat sur internet. Sa chanson préférée est Je Veux de Zaz.
       elisa: Elle est experte en sciences culturelles. Cela signifie qu'elle sait beaucoup de choses sur la culture. Elle sait expliquer simplement les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Elle veille également à ce que notre site internet soit joli à voir. Sa chanson préférée est Boat Behind de Kings of Convenience.
       esther: Elle a fait des études en sciences culturelles. Ell s'y connait bien en histoire et en politique. Et elle apprend facilement de nouvelles choses. Elle fait partie de l'équipe de recherche de clarat et s'occupe de notre dictionnaire. Sa chanson préférée est This charming man de The Smiths.
-      fabian: 
+      fabian:
       franziska: A étudié le droit international. Cela signifie qu'elle sait beaucoup de choses sur les lois, qui sont en vigueur dans d'autres pays. Elle comprend rapidement des choses compliquées. Et trouve tout aussi rapidement des solutions. Chez clarat, elle est dans l'équipe recherche. Sa chanson préférée est Explanations de Selah Sue.
       hassan: Il a travaillé en tant qu'interprète en langue perse. Il est de langue maternelle perse. Il sait organiser vite et bien. Il fait partie de l'équipe de traducteurs de clarat et traduit en persan. Sa chanson préférée est Looking For The Summer de Chris Rea.
       heading: Qui est derrière clarat?
@@ -1152,15 +1152,15 @@ fr:
       lavinia: Elle fait de la recherche en paix et conflits. Cela signifie qu’elle sait beaucoup de choses sur les conflits et la guerre. Elle sait très bien vendre ses idées aux autres. Chez clarat, elle est dans l’équipe recherche et est l'experte de notre langage. Sa chanson préférée est I'm Not Done de Fever Ray.
       line: Elle est metteur en scène de théâtre. Elle sait beaucoup de choses sur la littérature et le langage. C’est pour cela qu’elle sait bien quels effets les mots ont sur les gens. Chez clarat, elle est dans l’équipe recherche. Sa chanson préférée est Anybody Seen My Baby des Rolling Stones.
       lisa: Elle fait du Design Thinking. Elle aime planifier des projets avec les autres de façon créative. Elle sait bien dessiner. Elle fait partie de l'équipe de recherche de clarat et elle communique avec nos utilisateurs. Elle doit découvrir qui utilise clarat et de quelle façon. Sa chanson préférée est Resolution de Matt Corby.
-      magdalena: 
+      magdalena:
       marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
-      marie: 
+      marie:
       michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
       nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.
       nathalie: Elle a étudié la politique internationale et les droits de l'homme. Elle sait bien expliquer et elle sait aussi bien écouter. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Me in You des Kings of Convenience.
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
-      omar: 
-      patrick: 
+      omar:
+      patrick:
       philipp: Il a étudie l'Histoire, la politique et le droit. Il sait beaucoup de choses sur la politique et la société. Il comprend très bien les choses compliquées. Il fait partie de l'équipe de recherche de clarat. Sa chanson préférée est This Is Our Science des Astronautalis.
       sabine: Elle est sociologue. Cela signifie qu'elle sait beaucoup de choses sur la société. Elle comprend très bien les choses compliquées. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Vesna de Kino.
       sophie: Elle a étudié le management des organisations à but non lucratif. Elle a une bonne organisation et repère facilement ce qui est important. Elle fait partie de l'équipe de recherche de clarat. Elle découvre également qui utilise clarat et de quelle façon. Sa chanson préférée est Lost de Frank Ocean.
@@ -1225,11 +1225,11 @@ fr:
 '
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       meta_description:
-        family: 
-        refugees: 
+        family:
+        refugees:
       meta_title:
-        family: 
-        refugees: 
+        family:
+        refugees:
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés
@@ -1321,8 +1321,8 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: 
-      meta_title: 
+      meta_description:
+      meta_title:
       title: Choisis ton monde clarat
     shared:
       address:
@@ -1373,7 +1373,7 @@ fr:
     placeholders:
       search_form:
         home:
-          query: 
+          query:
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

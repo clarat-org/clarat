@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -57,16 +58,13 @@ FactoryGirl.define do
       end
       # Filters
       section = evaluator.section
-      if section
-        offer.section = (
-          Section.find_by_identifier(section) ||
-            FactoryGirl.create(:section, identifier: section)
-        )
-      else
-        offer.section = (
+      offer.section =
+        if section
+          Section.find_by(identifier: section) ||
+          FactoryGirl.create(:section, identifier: section)
+        else
           Section.all.sample || FactoryGirl.create(:section)
-        )
-      end
+        end
       evaluator.language_count.times do
         offer.language_filters << (
           LanguageFilter.all.sample || FactoryGirl.create(:language_filter)
@@ -102,7 +100,7 @@ FactoryGirl.define do
       end
       evaluator.opening_count.times do
         offer.openings << (
-          if Opening.count != 0 && rand(2) == 0
+          if Opening.count != 0 && rand(2).zero?
             Opening.select(:id).all.sample
           else
             FactoryGirl.create(:opening)
@@ -172,5 +170,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class OffersController < ApplicationController
   include GmapsVariable
   respond_to :html

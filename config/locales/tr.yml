@@ -15,6 +15,8 @@ tr:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      offer:
+        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -851,7 +853,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
       navigation:
         category_headline: Kategoriler arasında ara
@@ -891,6 +893,8 @@ tr:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -988,6 +992,9 @@ tr:
           confidential: 
           day_and_night: 
           free: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
       trait_filters_headline: 
       website_section:
         internet_presence: İnternette nerede daha fazla bilgi bulabilirim?

@@ -15,6 +15,8 @@ pl:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      offer:
+        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -971,7 +973,7 @@ pl:
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
       navigation:
         category_headline: Lub szukaj w kategoriach
@@ -1007,6 +1009,8 @@ pl:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1104,6 +1108,9 @@ pl:
           confidential: 
           day_and_night: 
           free: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
       trait_filters_headline: 
       website_section:
         internet_presence: Gdzie dowiesz się więcej w sieci?

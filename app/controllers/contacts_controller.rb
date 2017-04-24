@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 # Contact and report form
 class ContactsController < ApplicationController
   respond_to :html, :js
 
   def new
-    @contact = Contact.new url: request.referrer
+    @contact = Contact.new url: request.referer
     respond_with @contact
   end
 

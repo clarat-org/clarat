@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Hash that sorts openings, it's possible to have multiple on the same day
 class OpeningHash < Hash
   # Initialize a hash that contains each day in order, sort the given offer's
@@ -15,7 +16,7 @@ class OpeningHash < Hash
   # Iterate over every day that has openings
   def each_open_day
     each do |day, times|
-      if times.length > 0
+      unless times.empty?
         yield day, times
       end
     end

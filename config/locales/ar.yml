@@ -15,6 +15,8 @@ ar:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      offer:
+        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -845,8 +847,8 @@ ar:
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
-        title: 
+        legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
+        title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة اللغة غير صحيحة.
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:
@@ -885,6 +887,8 @@ ar:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -985,6 +989,9 @@ ar:
           confidential: سري
           day_and_night: ليلاً ونهاراً
           free: مجاني
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
       trait_filters_headline: 
       website_section:
         internet_presence: أين تجد المزيد من المعلومات في النت؟

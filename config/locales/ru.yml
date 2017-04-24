@@ -15,6 +15,8 @@ ru:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
+      offer:
+        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -959,8 +961,8 @@ ru:
             рабоатет не правильно? Тогда
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
-        title: 
+        legal_title: На clarat юридический текст можно читать только на немецком языке.
+        title: "Автоматический перевод! \n<br><br>\nВ некоторых случаях тексты clarat на вашем языке переведены Google Translate. Иногда эти тексты могут звучать несколько странно. Или язык может быть немного неправильным."
       navigation:
         category_headline: Или поиск по категориям
         claim:
@@ -999,6 +1001,8 @@ ru:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1093,12 +1097,15 @@ ru:
           day_and_night: 
           free: 
         title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility: безбарьерный
+          anonymous: анонимный
+          charged: 'платный '
+          confidential: конфиденциальный
+          day_and_night: круглосуточный
+          free: бесплатный
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
       trait_filters_headline: 
       website_section:
         internet_presence: Где ты можешь найти больше в сети?

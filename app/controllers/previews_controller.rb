@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Shows previews for non-approved offers and organizations
 class PreviewsController < ApplicationController
   # Needs auth - the main reason this is in a separate controller
@@ -30,10 +31,10 @@ class PreviewsController < ApplicationController
 
   def model_instance model_type, model_id
     if model_type.classify == 'Offer'
-       model_type.classify.constantize.in_section(@current_section).friendly
-         .find(model_id)
-     else
-       model_type.classify.constantize.friendly.find(model_id)
-     end
+      model_type.classify.constantize.in_section(@current_section).friendly
+        .find(model_id)
+    else
+      model_type.classify.constantize.friendly.find(model_id)
+    end
   end
 end

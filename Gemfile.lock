@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 75f8d4bf1b3238f8dc6c2c3eddffe2a298d5a3aa
-  branch: feature/1004-one-section-per-offer
+  revision: 70c70212d8e642f9cac4ec9b4c91aed75e97245f
   specs:
     clarat_base (0.1.4)
       aasm

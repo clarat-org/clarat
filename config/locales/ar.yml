@@ -1,5 +1,5 @@
 ar:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -7,7 +7,7 @@ ar:
         message: NOTRANSLATE
         name: NOTRANSLATE
       offer:
-        organizations:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -23,9 +23,9 @@ ar:
       subscription: NOTRANSLATE
       trait_filter:
         identifier:
-          anonymous:
+          anonymous: 
       update_request: NOTRANSLATE
-  anonymous:
+  anonymous: 
   cells:
     contact_people:
       dr: ".د"
@@ -301,12 +301,12 @@ ar:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: لماذا لا توجد منظمتي في كلارات؟
-  charged:
+  charged: 
   conf:
     current_location: موقعي
     default_latlng: 52.520007,13.404954
     default_location: برلين
-  confidential:
+  confidential: 
   contacts:
     create:
       success: تم إرسال الرسالة بنجاح
@@ -324,7 +324,7 @@ ar:
         name_placeholder: الإسم (فرض)
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
-  day_and_night:
+  day_and_night: 
   emails:
     offers_index:
       family:
@@ -569,7 +569,7 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
-  free:
+  free: 
   js:
     ajax_error:
       error: خطأ في البحث
@@ -680,10 +680,10 @@ ar:
         other: "%{count} عروض محلية"
         zero: 'للأسف لا توجد عروض  '
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         few: أونلاين وهاتفي  (%{count})
         many: أونلاين وهاتفي  (%{count})
@@ -696,10 +696,10 @@ ar:
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: عرض عروض مكانية أكثر
     shared:
       current_and_original_locale:
@@ -848,11 +848,7 @@ ar:
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
-<<<<<<< HEAD
         title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة أو بها أخطاء لغوية.
-=======
-        title:
->>>>>>> develop
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:
@@ -889,10 +885,10 @@ ar:
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -957,12 +953,12 @@ ar:
           long: عروض خاصة بموضوع ....
           short: عروض  مساعدة ل..
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: آخر إدخال
       next_steps:
         code_word: هكذا تسمى المساعدة لدى مقدم الدعم.
@@ -980,23 +976,23 @@ ar:
       speaking: في أي لغة تقدم لك المساعدة؟
       trait_filters:
         explanation:
-          accessibility:
-          anonymous:
-          charged:
-          confidential:
-          day_and_night:
-          free:
+          accessibility: 
+          anonymous: 
+          charged: 
+          confidential: 
+          day_and_night: 
+          free: 
         title:
           accessibility: خالي من العوائق مناسب للكراسي المتحركة
           anonymous: مجهول
           charged: ذو تكلفة
           confidential: سري
           day_and_night: ليلاً ونهاراً
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: مجاني
-      trait_filters_headline:
+      trait_filters_headline: 
       website_section:
         internet_presence: أين تجد المزيد من المعلومات في النت؟
         websites:
@@ -1276,9 +1272,9 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
-    fr:
+    fr: 
     haeufige-fragen: أسئلة-شائعة
-    home:
+    home: 
     impressum: هيئة التحرير
     liste: القائمة
     liste-de-services: قائمة الخدمات
@@ -1312,7 +1308,7 @@ ar:
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

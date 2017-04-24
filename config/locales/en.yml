@@ -1030,12 +1030,12 @@ en:
           day_and_night: 
           free: 
         title:
-          accessibility: accessible
-          anonymous: anonym
-          charged: with costs
+          accessibility: disabled and pushchair access
+          anonymous: anonymous
+          charged: for a fee
           confidential: confidential
-          day_and_night: 24/7
-          free: free
+          day_and_night: day and night
+          free: free of charge
       trait_filters_headline: Additional information
       website_section:
         internet_presence: Where can you get more information online?

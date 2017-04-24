@@ -62,7 +62,9 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     ifvisible.onEvery 0.5, =>
       @pageViewTime += 500
 
-    if (!$('body').hasClass('de'))
+    if ($('body').hasClass('de'))
+      @automatedTranslation = 'de'
+    else
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
   onBeforeUnload: =>

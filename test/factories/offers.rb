@@ -10,7 +10,7 @@ FactoryGirl.define do
     age_to { rand(4..6) }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course portal fax letter).sample
+      %w(personal personal personal personal hotline chat forum email online-course portal).sample
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil

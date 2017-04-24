@@ -1,4 +1,4 @@
-- provide :title, @offer.name
+- provide :meta_title, @offer.name + ' | clarat'
 - provide :meta_description, @offer.description.gsub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').first(154) + '…'
 - content_for :canonical_url,
               offer_url(section: @offer.canonical_section, id: @offer.slug)

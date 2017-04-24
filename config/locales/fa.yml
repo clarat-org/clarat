@@ -1014,7 +1014,7 @@ fa:
           thu: پنج شنبه
           tue: سه شنبه
           wed: چهارشنبه
-        heading: کی می توانی انجام بدهی؟
+        heading: چه زمانی می توانی مراجعه کنی؟
       speaking: به چه زبانی به تو کمک می شود؟
       trait_filters:
         explanation:
@@ -1025,12 +1025,12 @@ fa:
           day_and_night: 
           free: 
         title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility: دسترس‌پذیری
+          anonymous: گمنام
+          charged: هزینه الزامی
+          confidential: محرمانه
+          day_and_night: شبانه روزی
+          free: رایگان
       trait_filters_headline: 
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟

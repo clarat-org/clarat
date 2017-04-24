@@ -8,10 +8,6 @@ class Organization < ActiveRecord::Base
     section_filters.pluck(:identifier).first || SectionFilter::DEFAULT
   end
 
-  def in_section? section
-    section_filters.where(identifier: section).count > 0
-  end
-
   # structured information to build a gmap marker for this orga
   def gmaps_info
     {

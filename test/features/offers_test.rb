@@ -62,6 +62,7 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
                                old_next_steps: 'Step one.'
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer.update_columns section_filter_id: 2
     next_steps(:basic).update_column :text_en, 'English step 1.'
     visit offer_en_path offer, section: 'refugees'
     within '.section-content--nextsteps' do

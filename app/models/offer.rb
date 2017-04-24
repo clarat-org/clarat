@@ -8,10 +8,6 @@ class Offer < ActiveRecord::Base
     section_filter.identifier if section_filter.present?
   end
 
-  def in_section? section
-    section_filter.identifier.eql? section if section_filter.present?
-  end
-
   def visible_contact_people?
     return false unless contact_people.any?
     contact_people.each do |contact|

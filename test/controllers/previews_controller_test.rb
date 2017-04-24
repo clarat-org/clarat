@@ -11,7 +11,8 @@ describe PreviewsController do
           'test', 'test'
         )
 
-      get :show_offer, id: @offer.slug, locale: 'de', section: 'family'
+      get :show_offer, id: @offer.slug, locale: 'de',
+                       section: @offer.section_filter.identifier
       assert_response :success
       assert_select 'title', 'bazfuz | clarat'
     end

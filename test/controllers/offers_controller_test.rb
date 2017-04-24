@@ -18,7 +18,6 @@ describe OffersController do
                         "http://test.host/family/angebote/#{offer.slug}"
       end
 
-
       it 'shouldnt show on unapproved offer' do
         offer = FactoryGirl.create :offer
         get :show, id: offer.slug, locale: 'de', section: 'refugees'

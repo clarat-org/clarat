@@ -6,6 +6,8 @@ ru:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -15,8 +17,6 @@ ru:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      offer:
-        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -598,6 +598,7 @@ ru:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -611,15 +612,18 @@ ru:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -631,11 +635,13 @@ ru:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -672,12 +678,6 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -835,6 +835,7 @@ ru:
         amh: Амхарский язык - አማርኛ
         ara: Арабский язык - عربي
         arc: Арамейский язык - ארמית / Arāmît
+        arm: Армянский язык - Հայերեն / Hajeren
         aze: Азербайджанский язык - Azərbaycan
         bam: Бамана́ - Bamanankan
         ban: Балийский язык - Basa Bali
@@ -848,15 +849,18 @@ ru:
         cpe: Камток-Пиджин
         cus: Сaxo - ሳሆኛ
         cze: Чешский язык - čeština
+        dan: Датский язык - Dansk
         deu: Немецкий язык - Deutsch
         dyu: Дьюла - Julakan
         ell: Греческий язык - ελληνικά
         eng: Английский язык - English
         ewo: Эвондо - Эвондо
         fas: Персидский язык - فارسی
+        fil: Филиппинский язык - Wikang Filipino
         fin: Финский язык - suomi
         fra: Французский язык - Français
         fuf: Пулар-Пулар
+        hau: Хаусский язык - Hausanci
         hbs: Черногорский язык - Crnogorski jezik / Црногорски језик
         heb: Иврит - עברית
         hin: Хинди - हिन्दी
@@ -868,11 +872,13 @@ ru:
         kor: Корейский язык - 한국말 / 조선말
         kur: Курдские языки - کوردی
         lav: Латышский язык - latviešu
+        lin: Язык Lingála - Ngála
         lit: Литовский язык - lietuvių
         ltz: Люксембургский язык - Lëtzebuergesch
         luo: Долуо - Dholuo
         man: Манинка-Манинка
         mkd: Македонский язык - македонски
+        mos: Муз язык - Moose
         msa: Мала́йский язы́к – بهاس ملايو
         mul: другие языки по запросу
         nor: Норвежский язык - Norsk
@@ -909,12 +915,6 @@ ru:
         wol: Волоф язык - wɔlɔf
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
-        arm: Армянский язык - Հայերեն / Hajeren
-        dan: Датский язык - Dansk
-        fil: Филиппинский язык - Wikang Filipino
-        hau: Хаусский язык - Hausanci
-        lin: Язык Lingála - Ngála
-        mos: Муз язык - Moose
     shariff:
       share_label: Разделить
     single_search_result:
@@ -1102,10 +1102,10 @@ ru:
           charged: 'платный '
           confidential: конфиденциальный
           day_and_night: круглосуточный
-          free: бесплатный
           family_nuclear_family: 
           family_parents: 
           family_relatives: 
+          free: бесплатный
       trait_filters_headline: 
       website_section:
         internet_presence: Где ты можешь найти больше в сети?

@@ -6,6 +6,8 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -15,8 +17,6 @@ tr:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      offer:
-        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -498,6 +498,7 @@ tr:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -511,15 +512,18 @@ tr:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -531,11 +535,13 @@ tr:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -572,12 +578,6 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -725,6 +725,7 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         arc: Aramice - ארמית / Arāmît
+        arm: Ermenice - Հայերեն / Hajeren
         aze: Azerice - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
@@ -738,15 +739,18 @@ tr:
         cpe: Kamtok - Pidgin
         cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
+        dan: Danimarka - Dansk
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
         eng: İngilizce - English
         ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
+        fil: Filipince - Wikang Filipino
         fin: Fince - suomi
         fra: Fransızca - Français
         fuf: Pular - Pular
+        hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
         heb: İbranice - עברית
         hin: Hintçe - हिन्दी
@@ -758,11 +762,13 @@ tr:
         kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
+        lin: Lingaca - Ngála
         lit: Litvanca - lietuvių
         ltz: Lüksemburgca - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        mos: Geyik - Moose
         msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
@@ -799,12 +805,6 @@ tr:
         wol: Wolof - wɔlɔf
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
-        arm: Ermenice - Հայերեն / Hajeren
-        dan: Danimarka - Dansk
-        fil: Filipince - Wikang Filipino
-        hau: Hausa - Hausanci
-        lin: Lingaca - Ngála
-        mos: Geyik - Moose
     shariff:
       share_label: 
     single_search_result:
@@ -991,10 +991,10 @@ tr:
           charged: 
           confidential: 
           day_and_night: 
-          free: 
           family_nuclear_family: 
           family_parents: 
           family_relatives: 
+          free: 
       trait_filters_headline: 
       website_section:
         internet_presence: İnternette nerede daha fazla bilgi bulabilirim?

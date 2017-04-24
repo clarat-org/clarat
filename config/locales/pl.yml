@@ -6,6 +6,8 @@ pl:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: Podejście
         longitude: NOTRANSLATE
@@ -15,8 +17,6 @@ pl:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      offer:
-        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -622,6 +622,7 @@ pl:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -635,15 +636,18 @@ pl:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -655,11 +659,13 @@ pl:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -696,12 +702,6 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -852,6 +852,7 @@ pl:
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         arc: Język aramejski - ארמית / Arāmît
+        arm: Język ormiański - Հայերեն / Hajeren
         aze: Język azerski - Azərbaycan
         bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
@@ -865,15 +866,18 @@ pl:
         cpe: Język kamtok - Pidgin
         cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
+        dan: język duński - Dansk
         deu: Język niemiecki - Deutsch
         dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
         ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
+        fil: filipino - Wikang Filipino
         fin: Język fiński - suomi
         fra: Język francuski - Français
         fuf: Pular - Pular
+        hau: język hausa - Hausa
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
         hin: Język hindi - हिन्दी
@@ -885,11 +889,13 @@ pl:
         kor: Język koreański - 한국말 / 조선말
         kur: Język kurdyjski - کوردی
         lav: Język łotewski - latviešu
+        lin: lingala - Ngála
         lit: Język litewski - lietuvių
         ltz: Język luksemburski - Lëtzebuergesch
         luo: Język luo - Dholuo
         man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        mos: Mòoré - Moose
         msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
@@ -926,12 +932,6 @@ pl:
         wol: Język wolof - wɔlɔf
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        arm: Język ormiański - Հայերեն / Hajeren
-        dan: język duński - Dansk
-        fil: filipino - Wikang Filipino
-        hau: język hausa - Hausa
-        lin: lingala - Ngála
-        mos: Mòoré - Moose
     shariff:
       share_label: Podziel
     single_search_result:
@@ -1107,10 +1107,10 @@ pl:
           charged: 
           confidential: 
           day_and_night: 
-          free: 
           family_nuclear_family: 
           family_parents: 
           family_relatives: 
+          free: 
       trait_filters_headline: 
       website_section:
         internet_presence: Gdzie dowiesz się więcej w sieci?

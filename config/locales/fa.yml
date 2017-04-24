@@ -6,6 +6,8 @@ fa:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -15,8 +17,6 @@ fa:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      offer:
-        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -537,6 +537,7 @@ fa:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -550,15 +551,18 @@ fa:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -570,11 +574,13 @@ fa:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -611,12 +617,6 @@ fa:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: خانواده
         refugees: پناهندگان
@@ -783,6 +783,7 @@ fa:
         amh: امهری - አማርኛ
         ara: عربی
         arc: زبان آرامی - ארמית / Arāmît
+        arm: زبان ارمنی - Հայերեն / Hajeren
         aze: آذری - Azərbaycan
         bam: بامبارایی - Bamanankan
         ban: زبان بالی- Basa Bali
@@ -796,15 +797,18 @@ fa:
         cpe: کامرونی - Pidgin
         cus: Saho - ሳሆኛ
         cze: چکی - čeština
+        dan: زبان دانمارکی - Dansk
         deu: Deutsch
         dyu: دیولا - Julakan
         ell: یونانی -  ελληνικά
         eng: انگلیسی -  English
         ewo: اووندو - Ewondo
         fas: فارسی
+        fil: زبان فیلیپینی - Wikang Filipino
         fin: فنلاندی - suomi
         fra: فرانسوی - Français
         fuf: Pular - Pular
+        hau: هوسى - Hausanci
         hbs: مونتنگرایی - Crnogorski jezik / Црногорски језик
         heb: عبری - עברית
         hin: هندی - हिन्दी
@@ -816,11 +820,13 @@ fa:
         kor: کره ای -  한국말 / 조선말
         kur: کردی - کوردی
         lav: لاتویایی - latviešu
+        lin: زبان لينغالا - Ngála
         lit: لیتوانی - lietuvių
         ltz: لوکزامبورگی - Lëtzebuergesch
         luo: لوآیی - Dholuo
         man: مانینکایی -  Maninka
         mkd: مقدونیه ای - македонски
+        mos: Mossi - Moose
         msa: زبان مالایی – بهاس ملايو
         mul: بقیه زبانها با توجه به درخواست
         nor: نروژی - Norsk
@@ -857,12 +863,6 @@ fa:
         wol: ولفی - wɔlɔf
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
-        arm: زبان ارمنی - Հայերեն / Hajeren
-        dan: زبان دانمارکی - Dansk
-        fil: زبان فیلیپینی - Wikang Filipino
-        hau: هوسى - Hausanci
-        lin: زبان لينغالا - Ngála
-        mos: Mossi - Moose
     shariff:
       share_label: تقسیم کردن
     single_search_result:
@@ -1034,10 +1034,10 @@ fa:
           charged: هزینه الزامی
           confidential: محرمانه
           day_and_night: شبانه روزی
-          free: رایگان
           family_nuclear_family: 
           family_parents: 
           family_relatives: 
+          free: رایگان
       trait_filters_headline: 
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟

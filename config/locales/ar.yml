@@ -6,6 +6,8 @@ ar:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -15,8 +17,6 @@ ar:
       update_request:
         email: NOTRANSLATE
         search_location: NOTRANSLATE
-      offer:
-        organizations: 
     models:
       contact: NOTRANSLATE
       search_location: NOTRANSLATE
@@ -480,6 +480,7 @@ ar:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -493,15 +494,18 @@ ar:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -513,11 +517,13 @@ ar:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -554,12 +560,6 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -716,6 +716,7 @@ ar:
         amh: لغة أمهرية - አማርኛ
         ara: " لغة عربية - عربي"
         arc: لغة آرامية - ארמית / Arāmît
+        arm: لغة أرمنية - Հայերեն / Hajeren
         aze: لغة أذرية - Azərbaycan
         bam: البامبارا - Bamanankan
         ban: لغة بالية - Basa Bali
@@ -729,15 +730,18 @@ ar:
         cpe: الكاميروني - Pidgin
         cus: لغة ساهو - ሳሆኛ
         cze: لغة تشيكية - čeština
+        dan: لغة دنماركية - Dansk
         deu: لغة ألمانية - Deutsch
         dyu: الديولا - Julakan
         ell: لغة يونانية - ελληνικά
         eng: لغة إنجليزية - English
         ewo: إيفوندو - Ewondo
         fas: لغة فارسية - فارسی
+        fil: لغة فلبينية - Wikang Filipino
         fin: لغة فنلندية - suomi
         fra: لغة فرنسية - Français
         fuf: Pular - Pular
+        hau: لغة هوسية - Hausanci
         hbs: لغة مونتنغرية - Crnogorski jezik / Црногорски језик
         heb: " لغة عبرية - עברית"
         hin: لغة هندية - हिन्दी
@@ -749,11 +753,13 @@ ar:
         kor: لغة كورية - 한국말 / 조선말
         kur: " لغة كردية - کوردی"
         lav: لغة لاتفية - latviešu
+        lin: لغة لينغالا - Ngála
         lit: لغة ليتوانية - lietuvių
         ltz: لغة لوكسمبورغية - Lëtzebuergesch
         luo: لوو - Dholuo
         man: " الغيلية - Maninka"
         mkd: لغة مقدونية - македонски
+        mos: لغة موريه - Moose
         msa: لغة ملايو – بهاس ملايو
         mul: لغات أخرى عند الطلب
         nor: لغة نرويجية - Norsk
@@ -790,12 +796,6 @@ ar:
         wol: لغة ولوفية - wɔlɔf
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
-        arm: لغة أرمنية - Հայերեն / Hajeren
-        dan: لغة دنماركية - Dansk
-        fil: لغة فلبينية - Wikang Filipino
-        hau: لغة هوسية - Hausanci
-        lin: لغة لينغالا - Ngála
-        mos: لغة موريه - Moose
     shariff:
       share_label: مشاركة
     single_search_result:
@@ -848,7 +848,7 @@ ar:
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
-        title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة اللغة غير صحيحة.
+        title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة أو بها أخطاء لغوية.
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:
@@ -988,10 +988,10 @@ ar:
           charged: ذو تكلفة
           confidential: سري
           day_and_night: ليلاً ونهاراً
-          free: مجاني
           family_nuclear_family: 
           family_parents: 
           family_relatives: 
+          free: مجاني
       trait_filters_headline: 
       website_section:
         internet_presence: أين تجد المزيد من المعلومات في النت؟

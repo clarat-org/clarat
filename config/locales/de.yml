@@ -6,6 +6,8 @@ de:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: Organizations
       search_location:
         latitude: Latitude
         longitude: Longitude
@@ -942,6 +944,7 @@ de:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -955,15 +958,18 @@ de:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -975,11 +981,13 @@ de:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -1016,12 +1024,6 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: Arm
-        dan: Dan
-        fil: Fil
-        hau: Hau
-        lin: Lin
-        mos: Mos
       section:
         family: Family
         refugees: Refugees
@@ -1199,6 +1201,7 @@ de:
         amh: Amharisch - አማርኛ
         ara: Arabisch - عربي
         arc: Aramäisch - ארמית / Arāmît
+        arm: Armenisch - Հայերեն / Hajeren
         aze: Aserbaidschanisch - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Balinesisch - Basa Bali
@@ -1212,15 +1215,18 @@ de:
         cpe: Kamtok - Pidgin
         cus: Saho - ሳሆኛ
         cze: Tschechisch - čeština
+        dan: Dänisch - Dansk
         deu: Deutsch
         dyu: Dioula - Julakan
         ell: Griechisch - ελληνικά
         eng: Englisch - English
         ewo: Ewondo - Ewondo
         fas: Persisch (Farsi) - فارسی
+        fil: Filipino - Wikang Filipino
         fin: Finnisch - suomi
         fra: Französisch - Français
         fuf: Pular - Pular
+        hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
         heb: Hebräisch - עברית
         hin: Hindi - हिन्दी
@@ -1232,11 +1238,13 @@ de:
         kor: Koreanisch - 한국말 / 조선말
         kur: Kurdisch - کوردی
         lav: Lettisch - latviešu
+        lin: Lingála - Ngála
         lit: Litauisch - lietuvių
         ltz: Luxemburgisch - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Mazedonisch - македонски
+        mos: Mòoré - Moose
         msa: Malaiisch – بهاس ملايو
         mul: weitere Sprachen auf Anfrage
         nor: Norwegisch - Norsk
@@ -1273,12 +1281,6 @@ de:
         wol: Wolof - wɔlɔf
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
-        arm: Armenisch - Հայերեն / Hajeren
-        dan: Dänisch - Dansk
-        fil: Filipino - Wikang Filipino
-        hau: Hausa - Hausanci
-        lin: Lingála - Ngála
-        mos: Mòoré - Moose
     shariff:
       share_label: Teilen
     single_search_result:
@@ -1366,6 +1368,8 @@ de:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1421,8 +1425,8 @@ de:
         button: Suchen
         loc_label: Wo
         loc_placeholder:
-          long: Adresse, Stadteil, Stadt oder PLZ
-          short: Adresse, Stadteil, Stadt oder PLZ
+          long: Adresse, Stadtteil, Stadt oder PLZ
+          short: Adresse, Stadtteil, Ort oder PLZ
         query_label: Was
         query_placeholder:
           long: Angebote zum Thema …
@@ -1463,6 +1467,9 @@ de:
           charged: kostenpflichtig
           confidential: vertraulich
           day_and_night: Tag und Nacht
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: kostenlos
       trait_filters_headline: Weitere Informationen
       website_section:

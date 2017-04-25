@@ -6,6 +6,8 @@ fa:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -40,12 +42,7 @@ fa:
       section_1:
         heading: چه کسی٬ چگونه٬ چه چیزی؟
         question_1:
-          answer: |-
-            clarat دروازه ای است که در آن می توان پیشنهادهایی جهت حمایت پیدا کرد.ما تو را در پیدا کردن کمک همراهی می کنیم اما مشاوره نمی دهیم.به همین منظور کارشناسانی هستند که دقیقآ می توانی از طریق ما آنها را پیدا کنی.clarat به دو بخش b>clarat
-            family</b> و <b>clarat refugees</b>: تقسیم می شود.<b>clarat family</b> به کودکان٬ خانواده و جوانان که در نزدیکی محل سکونت خود احتیاج به حمایت دارند کمک می کند.در اینجا به راحتی برای خود٬ خانواده و دوستان کمک پیدا می کنی.حتی برای کودکان٬ جوانان و خانواده های دیگری که تو می شناسی.کاری که clarat
-            family انجام می دهد را می توانی در این لینک %{link_to_family_movie} مشاهده کنی.</li>
-            <li>
-            <b>clarat refugees</b> به پناهندگانی که در نزدیکی محل سکونت خود به دنبال حمایت هستند کمک می کند.در اینجا نه تنها به تو یا خانواده تو و یا به دوستانت بلکه حتی اگر پناهنده نباشی ولی پناهندگانی را که می شناسی که احتیاج به حمایت دارند نیز کمک می شود.
+          answer: "clarat دروازه ای است که در آن می توان پیشنهادهایی جهت حمایت پیدا کرد.ما تو را در پیدا کردن کمک همراهی می کنیم اما مشاوره نمی دهیم.به همین منظور کارشناسانی هستند که دقیقآ می توانی از طریق ما آنها را پیدا کنی.clarat به دو بخش \n <b>clarat family</b> و  <b>clarat refugees</b>: تقسیم می شود.<b>clarat family</b> به کودکان، خانواده و جوانان که در نزدیکی محل سکونت خود احتیاج به حمایت دارند کمک می کند.در اینجا به راحتی برای خود، خانواده و دوستان کمک پیدا می کنی.حتی برای کودکان، جوانان و خانواده های دیگری که تو می شناسی.خدماتی که clarat\nfamily ارائه می دهد را می توانی در این لینک %{link_to_family_movie} مشاهده کنی.</li>\n<li>\n<b>clarat refugees</b> به پناهندگانی که در نزدیکی محل سکونت خود به دنبال حمایت هستند کمک می کند.در اینجا نه تنها به تو، خانواده تو و یا به دوستانت، بلکه حتی اگر پناهنده نباشی ولی پناهندگانی را که می شناسی که احتیاج به حمایت دارند، نیز کمک می شود."
           link_1:
             name: فیلم
             target: _blank
@@ -540,6 +537,7 @@ fa:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: 
         aze: Aze
         bam: Bam
         ban: Ban
@@ -553,15 +551,18 @@ fa:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: 
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: 
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: 
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -573,11 +574,13 @@ fa:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: 
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: 
         msa: Msa
         mul: Mul
         nor: Nor
@@ -780,6 +783,7 @@ fa:
         amh: امهری - አማርኛ
         ara: عربی
         arc: زبان آرامی - ארמית / Arāmît
+        arm: زبان ارمنی - Հայերեն / Hajeren
         aze: آذری - Azərbaycan
         bam: بامبارایی - Bamanankan
         ban: زبان بالی- Basa Bali
@@ -793,15 +797,18 @@ fa:
         cpe: کامرونی - Pidgin
         cus: Saho - ሳሆኛ
         cze: چکی - čeština
+        dan: زبان دانمارکی - Dansk
         deu: Deutsch
         dyu: دیولا - Julakan
         ell: یونانی -  ελληνικά
         eng: انگلیسی -  English
         ewo: اووندو - Ewondo
         fas: فارسی
+        fil: زبان فیلیپینی - Wikang Filipino
         fin: فنلاندی - suomi
         fra: فرانسوی - Français
         fuf: Pular - Pular
+        hau: هوسى - Hausanci
         hbs: مونتنگرایی - Crnogorski jezik / Црногорски језик
         heb: عبری - עברית
         hin: هندی - हिन्दी
@@ -813,11 +820,13 @@ fa:
         kor: کره ای -  한국말 / 조선말
         kur: کردی - کوردی
         lav: لاتویایی - latviešu
+        lin: زبان لينغالا - Ngála
         lit: لیتوانی - lietuvių
         ltz: لوکزامبورگی - Lëtzebuergesch
         luo: لوآیی - Dholuo
         man: مانینکایی -  Maninka
         mkd: مقدونیه ای - македонски
+        mos: Mossi - Moose
         msa: زبان مالایی – بهاس ملايو
         mul: بقیه زبانها با توجه به درخواست
         nor: نروژی - Norsk
@@ -895,7 +904,7 @@ fa:
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
         title: 
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
@@ -931,6 +940,8 @@ fa:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1007,7 +1018,7 @@ fa:
           thu: پنج شنبه
           tue: سه شنبه
           wed: چهارشنبه
-        heading: کی می توانی انجام بدهی؟
+        heading: چه زمانی می توانی مراجعه کنی؟
       speaking: به چه زبانی به تو کمک می شود؟
       trait_filters:
         explanation:
@@ -1018,12 +1029,15 @@ fa:
           day_and_night: 
           free: 
         title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility: دسترس‌پذیری
+          anonymous: گمنام
+          charged: هزینه الزامی
+          confidential: محرمانه
+          day_and_night: شبانه روزی
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
+          free: رایگان
       trait_filters_headline: 
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟
@@ -1137,14 +1151,52 @@ fa:
       title: در مورد ما
       verena: او کارشناس مسائل سیاسی است.این بدین معنی است که او اطلاعات زیادی در مورد سیاست و اجتماع دارد.او به خوبی می تواند اطلاعات جمع آوری کند.در clarat در تیم تحقیقات و فرهنگ لغت فعالیت دارد.موسیقی مورد علاقه او Lose It از Oh Wonder می باشد.
     agb:
-      heading: اطلاعات قانونی
+      heading: Rechtliche Hinweise
       text_html: |-
-        این وبسایت با دقت زیادی طراحی شده است.clarat gGmbH با این حال در مورد اطلاعات٬صحت٬به روز بودن و در دسترس بودن مطالب ولینک ها هیچ ضمانتی ندارد.این وبسایت یرای دسترسی شخصی طراحی شده و استفاده تجاری از آن ممنوع می باشد.</p>
-        <p>ما پیشاپیش اشاره میکنیم که اطلاعات وب‌سایت ممکن است دقیق نباشد یا اشتباهاتی را در برگیرد که ما مسئولیتی را در این مورد نمی‌پذیریم.ما همچنین اشاره می کنیم به این موضوع که مسئولیت خدمات و اطلاعاتی که با توجه به نیاز شما از وبسایت ما دریافت می کنید بر عهده شخص شما می باشد.استفاده از اطلاعات وبسایت ما همچنین هیچ فعالیتی در مورد حقوق قانونی شما ندارد و همه مسئولیت ها بر عهده شخص شماست.</p>
-        <p>محتوی وبسایت clarat توسط خود ما و یا برای ما طراحی شده است.هرگونه سواستفاده و استفاده از آن بدون اطلاع ما از مطالب ما با توجه که مطالب در انحصار ما می باشد ممنوع بوده و پیگرد قانونی در بر خواهد داشت و ما به آن اعتراض خواهیم کرد.</p>
-        <p> به لینک ها و وبسایت ها و دومین هایی که از طریق ما به آن دسترسی پیدا می کنید٬در مورد اطلاعات آنها هیچ مسئولیتی متوجه ما نخواهد بود و ضمانت آنها بر عهده ما نیست.</p>
-        <p>اطلاعات٬ سئوالات و اشاره به مطالب در این وبسایت با توجه به در نظر گرفتن قوانین جمهوری فدرال آلمان طراحی و در دسترس قرار گرفته شده است.</p>
-      title: اطلاعات حقوقی
+        <p>
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die clarat gGmbH („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
+        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
+        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
+        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
+        </p>
+        <p>
+        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
+        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
+        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
+        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
+        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
+        Serviceleistungen oder Informationen, die Sie über unsere Webseite
+        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
+        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
+        können aus ihnen keine Rechtsansprüche abgeleitet werden.
+        </p>
+        <p>
+        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
+        </p>
+        <p>
+        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
+        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
+        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
+        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
+        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
+        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
+        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
+        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
+        Genehmigung erfolgt.
+        </p>
+        <p>
+        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
+        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
+        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
+        Inhalt solcher Webseiten nicht zu Eigen.
+        </p>
+        <p>
+        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
+        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
+        der Bundesrepublik Deutschland.
+        </p>
+      title: Rechtliche Hinweise
     faq:
       title: سوالات رایج
     home:
@@ -1180,13 +1232,13 @@ fa:
       title: 404
     privacy:
       chapter_eight:
-        heading: حقوق اعتراض و مسئول مربوطه
-        nested_text_first_paragraph: اگر به طرز استفاده و خدمات آنالیز وب از Optimizely اعترض دارید٬می تونید لینک %{optimizely_optout} را دنبال کنید.
-        nested_text_second_paragraph: سوالات خود در مورد حفاظت از اطلاعات٬اعتراض داشتن٬راهنمایی جهت حذف٬شکایت و غیره را به ما اعلام کنید.
-        text: 
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_first_paragraph: 'Um der Verwendung des Webanalysedienstes von Optimizely zu widersprechen, können Sie folgendem Link folgen: %{optimizely_optout}.'
+        nested_text_second_paragraph: 'Ihre Fragen zum Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren, Beschwerden oder Ähnliches richten Sie bitte an:'
+        text: 'Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der Verwendung von Google Analytics zu widersprechen, indem Sie auf den folgenden Link klicken: %{google_optout}.'
       chapter_five:
-        heading: افزایه های شبکه اجتماعی
-        nested_text_four: ما همچنین در وبسایت خود فضایی برای فعال کردن اطلاعات از طریق  شرکت WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) دایر کرده ایی که از این طریق می توانید دیگران را از این راه ارتباطی از اطلاعات وبسایت ما آگاه کنید و عملکرد آن از طریق لینک قانونی (HTML-Hyperlink) انجام می شود و فقط با موافقت و فعال کردن شخص شما اطلاعاتی که شما با دیگران به اشتراک گذاشته اید در WhatsApp ذخیره میشوند.
+        heading: 5. Social Media Plugins
+        nested_text_four: Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht in ihrer Funktion einem regulären Weblink (HTML-Hyperlink). Das bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen möchte und dass die Schaltfläche von unserer Website aus aufgerufen wurde.
         nested_text_one: ما Pluginsهایی از  شبکه اجتمایی فیسبوک ("Facebook") که در Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA واقع شده است٬استفاده می کنیم.به این طریق که در ابتدا با دکمه درخواستی و باز شدن صفحه دیگری که شما باید مشخصات فیسبوک خود را وارد کنید تا بتوانید مطالب صفحه ما را برای دوستان خود به اشتراک بگذارید.همزمان در سیستم شما Facebook-Cookie فعال شده و فیسبوک از این طریق اطلاعاتی از قبیل IP-Adresse و Cookie-ID شما را بدست می آورد.این امکان فقط در صورت کلیک کردن دکمه به اشتراک گذاشتن در فیسبوک می افتد.در این صورت اطلاعات به فیسبوک انتقال داده می شود و دیگران مشاهده خواهند کرد که شما به آنها ما را پیشنهاد می کنید.جه کسانی این اطلاعات را بدست می آورند بستگی به آن دارد که در قسمت تنظیمات فیسبوک خود چه تغییراتی را داده اید.برای کسب اطلاعات بیشتر و استفاده اطلاعات توسط فیسبوک و همچنین حقوق شما در مورد حفاظت از اطلاعات می توانید به اطلاعات داده شده توسط فیسبوک مراجعه کنید(%{facebook}).
         nested_text_three: ما Pluginsهایی از  شبکه اجتمایی توییتر  (Inc., 795 Folsom St., Suite 600, San Franscisco, CA 94107, USA („Twitter“) استفاده میکنیم که اگر یر روی Twitter  کلیک کنید٬پنجره های باز می شود که از شما می خواهد آدرس و مشخصات توییتر خو را وارد کنید.در این صورت Twitter-Cookie ها در کامپیوتر شما فعال می شوند و این در صورتی است که شما با پس ورد و نام کاربری خود در توییتر logg in شده باشید و آن را وارد کرده باشید که در اینصورت اطلاعات شما مانند IP-Adresse und die Cookie-ID به توییتر انتقال داده می شود.برای اطلاعات بیشتر در مورد نحوه استفاده از به اشتراک گذاشتن و حقوق قانونی و حفاظت از اطلاعات شخصی می توانید به اطلاعات داده شده توسط Twitter مراجعه کنید.(%{twitter}).
         nested_text_two: ما Pluginsهایی از  شبکه اجتمایی گوگل استفاده میکنیم که اگر بر رویGoogle+1 کلیک کنید٬ پنجره های باز می شود که از شما می خواهد آدرس و مشخصات گوگل خو را وارد کنید.در این صورت Google-Cookie ها در کامپیوتر شما فعال می شوند و این در صورتی است که شما با پس ورد و نام کاربری خود در گوگل logg in شده باشید و آن را وارد کرده باشید که در اینصورت اطلاعات شما مانند IP-Adresse und die Cookie-ID به گوگل انتقال داده می شود.برای اطلاعات بیشتر در مورد نحوه استفاده از به اشتراک گذاشتن و حقوق قانونی و حفاظت از اطلاعات شخصی می توانید به اطلاعات داده شده توسط گوگل مراجعه کنید(%{google}).
@@ -1230,10 +1282,10 @@ fa:
         nested_title_three: 'اطلاعات موقعیتی '
         nested_title_two: ثبت نام در مجله اطلاعاتی
         text: اگر اطلاعات خود را از طریق ثبت نام در مجله اطلاعاتی ما و یا از طریق  Live-Chat بصورت دلخواه مانند نام٬آدرس محل سکونت٬تلفن٬ایمیل٬کدپستی به ما داده باشید٬ما از آنها جهت ارسال با توجه به موضوعی که شما درخواست کمک دارید خدمات خود را برای پاسخگویی به شما و یا فرستادن مجله اطلاعاتی از طریق ایمیل استفاده میکنیم.
-      heading: حفاظت از اطلاعات
-      intro_first_part: ما خیلی خوشحالیم از اینکه صفحه ما www.clarat.org و clarat gGmbH مورد جلب توجه شما قرار گرفته است.حفاظت از اطلاعات شخصی شما را ما جدی می گیریم.بدیهی است که ما اطلاعات مربوط به هر شخصی را در انحصار چارچوب قوانین حفاظتی آلمان رعایت و از آن بکار می گیریم.
-      intro_second_part: در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید.
-      title: حفاظت از اطلاعات
+      heading: Datenschutzhinweise
+      intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
     section_choice:
       meta_description: clarat مسائل را از طریق اینترنت و ویشنهادات حمایتی روشن می سازد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان بصورت آنلاین٬ آسان و در نزدیکی آنها.
       meta_title: clarat شفاف سازی می کند | clarat

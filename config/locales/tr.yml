@@ -6,6 +6,8 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -496,6 +498,7 @@ tr:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: 
         aze: Aze
         bam: Bam
         ban: Ban
@@ -509,15 +512,18 @@ tr:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: 
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: 
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: 
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -529,11 +535,13 @@ tr:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: 
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: 
         msa: Msa
         mul: Mul
         nor: Nor
@@ -717,6 +725,7 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         arc: Aramice - ארמית / Arāmît
+        arm: Ermenice - Հայերեն / Hajeren
         aze: Azerice - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
@@ -730,15 +739,18 @@ tr:
         cpe: Kamtok - Pidgin
         cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
+        dan: Danimarka - Dansk
         deu: Almanca - Deutsch
         dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
         eng: İngilizce - English
         ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
+        fil: Filipince - Wikang Filipino
         fin: Fince - suomi
         fra: Fransızca - Français
         fuf: Pular - Pular
+        hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
         heb: İbranice - עברית
         hin: Hintçe - हिन्दी
@@ -750,11 +762,13 @@ tr:
         kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
+        lin: Lingaca - Ngála
         lit: Litvanca - lietuvių
         ltz: Lüksemburgca - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        mos: Geyik - Moose
         msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
@@ -839,7 +853,7 @@ tr:
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
       navigation:
         category_headline: Kategoriler arasında ara
@@ -879,6 +893,8 @@ tr:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -975,6 +991,9 @@ tr:
           charged: 
           confidential: 
           day_and_night: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:

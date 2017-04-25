@@ -11,6 +11,9 @@ class Clarat.CategoryLinksToSearch.Presenter extends ActiveScript.Presenter
     # ... Setting hidden field ...
     category = event.target.dataset['category']
 
+    $('.nav-sections__button').attr('aria-selected', false)
+    $(event.target).attr('aria-selected', true)
+
     # Remove past markers
     $('.nav-sections__notification').remove()
 

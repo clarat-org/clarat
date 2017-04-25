@@ -6,6 +6,8 @@ en:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -539,6 +541,7 @@ en:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: 
         aze: Aze
         bam: Bam
         ban: Ban
@@ -552,15 +555,18 @@ en:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: 
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: 
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: 
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -572,11 +578,13 @@ en:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: 
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: 
         msa: Msa
         mul: Mul
         nor: Nor
@@ -765,6 +773,7 @@ en:
         amh: Amharic - አማርኛ
         ara: Arabic - عربي
         arc: Aramaic - ארמית / Arāmît
+        arm: Armenian - Հայերեն / Hajeren
         aze: Azerbaijani - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Balinese - Basa Bali
@@ -778,15 +787,18 @@ en:
         cpe: Kamtok - Pidgin
         cus: Saho - ሳሆኛ
         cze: Czech - čeština
+        dan: Danish - Dansk
         deu: German - Deutsch
         dyu: Jula - Julakan
         ell: Greek - ελληνικά
         eng: English
         ewo: Ewondo / Kolo - Ewondo
         fas: Persian (Farsi) - فارسی
+        fil: Filipino - Wikang Filipino
         fin: Finnish - suomi
         fra: French - Français
         fuf: Pular - Pular
+        hau: Hausa - Hausanci
         hbs: Montenegrin - Crnogorski jezik / Црногорски језик
         heb: Hebrew - עברית
         hin: Hindi - हिन्दी
@@ -798,11 +810,13 @@ en:
         kor: Korean - 한국말 / 조선말
         kur: Kurdish - کوردی
         lav: Latvian - latviešu
+        lin: Lingala - Ngála
         lit: Lithuanian - lietuvių
         ltz: Luxembourgish - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Macedonian - македонски
+        mos: Mossi - Mòoré
         msa: Malay – بهاس ملايو
         mul: more languages upon request
         nor: Norwegian - Norsk
@@ -888,7 +902,7 @@ en:
           If you are interested, please enter your email and we will reach out
           to you once as soon as that is the case.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German.
+        legal_title: On, legal text can only be read in German.
         title: |-
           Automated translations!
           <br><br>
@@ -927,6 +941,8 @@ en:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1018,12 +1034,15 @@ en:
           day_and_night: 
           free: 
         title:
-          accessibility: accessible
-          anonymous: anonym
-          charged: with costs
+          accessibility: disabled and pushchair access
+          anonymous: anonymous
+          charged: for a fee
           confidential: confidential
-          day_and_night: 24/7
-          free: free
+          day_and_night: day and night
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
+          free: free of charge
       trait_filters_headline: Additional information
       website_section:
         internet_presence: Where can you get more information online?

@@ -9,23 +9,27 @@
     color: $color;
     font-weight: $font-weight;
     font-size: $font-size;
+    font-style: italic;
   }
 
   &::-moz-placeholder {
     color: $color;
     font-weight: $font-weight;
     font-size: $font-size;
+    font-style: italic;
   }
 
   &::-webkit-input-placeholder {
     color: $color;
     font-weight: $font-weight;
     font-size: $font-size;
+    font-style: italic;
   }
 
   &:-ms-input-placeholder {
     color: $color;
     font-weight: $font-weight;
     font-size: $font-size;
+    font-style: italic;
   }
 }

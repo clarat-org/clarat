@@ -25,7 +25,7 @@
             = t '.offers_all'
             == automation_warning(@organization.translation_automated?)
           .section-content__body.section-content__body--offers-of-orga
-            - SectionFilter.all.each do |section|
+            - Section.all.each do |section|
 
               - unless @organization.offers.visible_in_frontend.in_section(section.identifier).empty?
                 h4.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"

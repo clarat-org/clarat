@@ -537,7 +537,7 @@ fa:
         amh: Amh
         ara: Ara
         arc: Arc
-        arm: 
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -551,18 +551,18 @@ fa:
         cpe: Cpe
         cus: Cus
         cze: Cze
-        dan: 
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
-        fil: 
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
-        hau: 
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -574,13 +574,13 @@ fa:
         kor: Kor
         kur: Kur
         lav: Lav
-        lin: 
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
-        mos: 
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -905,7 +905,7 @@ fa:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
-        title: 
+        title: "ترجمه خودکار\n<br><br>\nدر  clarat بعضی از متون به زبان مادری شما، توسط Google Translate ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد. "
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:

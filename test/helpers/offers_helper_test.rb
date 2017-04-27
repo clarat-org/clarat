@@ -1,4 +1,5 @@
-# rubocop:disable Style/ClassLength
+# frozen_string_literal: true
+# rubocop:disable Metrics/ClassLength
 require_relative '../test_helper'
 
 class OffersHelperTest < ActionView::TestCase
@@ -161,4 +162,4 @@ class OffersHelperTest < ActionView::TestCase
     end
   end
 end
-# rubocop:enable Style/ClassLength
+# rubocop:enable Metrics/ClassLength

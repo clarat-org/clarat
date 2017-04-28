@@ -56,7 +56,7 @@ class SearchForm
     return if exact_location
     if search_location.blank? # Blank location => use cookies or default fallback
       load_geolocation_values!(cookies)
-    elsif search_location && generated_geolocation # if geolocation has been set, use it!
+    elsif search_location.eql? I18n.t('conf.current_location') && generated_geolocation # if geolocation has been set, use it!
       generated_geolocation
     elsif search_location && search_location != I18n.t('conf.current_location')
       self.generated_geolocation = search_location_instance.geoloc

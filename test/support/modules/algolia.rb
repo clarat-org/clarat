@@ -10,7 +10,7 @@ module AlgoliaStubber
       "hitsPerPage" : 10,
       "processingTimeMS" : 1,
       "facets" : {
-        "_tags": {}
+        "_categories": {}
       },
       "query" : "",
       "params" : "query="
@@ -54,7 +54,7 @@ module AlgoliaStubber
       'hitsPerPage' => 10,
       'processingTimeMS' => 1,
       'facets' => {
-        '_tags' => categories
+        '_categories' => categories
       },
       'query' => "#{query}",
       'params' => "query=#{query}"
@@ -135,7 +135,7 @@ WebMock.stub_request(
 # "hitsPerPage" : 10,
 # "processingTimeMS" : 1,
 # "facets" : {
-#   "_tags" : {
+#   "_categories" : {
 #     "Erziehungsberatung" : 3,
 #     "Konfliktlösung" : 3,
 #     "Krisenintervention" : 3,

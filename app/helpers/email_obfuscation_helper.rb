@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module EmailObfuscationHelper
   # source: http://unixmonkey.net/?p=20
 

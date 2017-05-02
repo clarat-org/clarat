@@ -35,17 +35,6 @@ parents_to_be:
   name: werdende Eltern
   identifier: family_parents_to_be
 
-family:
-  id: 8
-  type: SectionFilter
-  name: Family
-  identifier: family
-refugees:
-  id: 9
-  type: SectionFilter
-  name: Refugees
-  identifier: refugees
-
 everyone:
   id: 10
   type: TargetAudienceFilter

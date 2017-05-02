@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -22,16 +23,6 @@ FactoryGirl.define do
           %w(family_children Kinder), %w(family_parents Eltern),
           %w(family_nuclear_family Familie), %w(family_relatives Bekannte)
         ].sample
-      end
-    end
-    identifier { _random[0] }
-    name { _random[1] }
-  end
-
-  factory :section_filter do
-    transient do
-      _random do
-        [%w(family Family), %w(refugees Refugees)].sample
       end
     end
     identifier { _random[0] }

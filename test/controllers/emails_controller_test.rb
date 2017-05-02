@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 describe EmailsController do
@@ -14,7 +15,8 @@ describe EmailsController do
         I18n.t('emails.subscribe.success_html',
                unsubscribe_href:
                  "/emails/1/unsubscribe/#{email.reload.security_code}"),
-        flash[:success])
+        flash[:success]
+      )
     end
 
     it 'wont work with an incorrect security code' do
@@ -34,7 +36,8 @@ describe EmailsController do
       assert_equal(
         I18n.t('emails.unsubscribe.success_html',
                subscribe_href: '/emails/1/subscribe/correct'),
-        flash[:success])
+        flash[:success]
+      )
     end
 
     it 'wont work with an incorrect security code' do

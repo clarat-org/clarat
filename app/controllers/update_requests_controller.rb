@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # "Send me an update when you have offers in my city" Request Form
 class UpdateRequestsController < ApplicationController
   respond_to :js

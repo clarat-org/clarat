@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Form object to render form elements and links. Rest is handled in JS.
 class SearchForm
   # Turn into quasi ActiveModel #
@@ -25,7 +26,7 @@ class SearchForm
 
   # Filters
 
-  CONTACT_TYPES = [:personal, :remote]
+  CONTACT_TYPES = [:personal, :remote].freeze
   attribute :contact_type, String, default: :personal
   enumerize :contact_type, in: CONTACT_TYPES
   ### Age
@@ -45,8 +46,7 @@ class SearchForm
   attribute :sort_order, String, default: :nearby
   enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
-  attribute :section, String, default: :family
-  enumerize :section, in: SectionFilter::IDENTIFIER
+  attribute :section_identifier, String, default: :family
 
   # Methods #
 

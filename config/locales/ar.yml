@@ -480,7 +480,7 @@ ar:
         amh: Amh
         ara: Ara
         arc: Arc
-        arm: 
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -494,18 +494,18 @@ ar:
         cpe: Cpe
         cus: Cus
         cze: Cze
-        dan: 
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
-        fil: 
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
-        hau: 
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -517,13 +517,13 @@ ar:
         kor: Kor
         kur: Kur
         lav: Lav
-        lin: 
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
-        mos: 
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -848,7 +848,7 @@ ar:
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
-        title: 
+        title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة أو بها أخطاء لغوية.
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:

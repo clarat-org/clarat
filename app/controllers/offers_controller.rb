@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class OffersController < ApplicationController
   include GmapsVariable
   respond_to :html
@@ -16,10 +17,7 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.visible_in_frontend.friendly.find(params[:id])
-    unless @offer.in_section? @current_section
-      return redirect_to section: @offer.canonical_section
-    end
+    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer

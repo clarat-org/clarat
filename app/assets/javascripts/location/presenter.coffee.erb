@@ -2,7 +2,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
   constructor: ->
     # It's easier with Ruby, sorry!
     @currentLocationList = <%= %i[ar de en fa fr pl ru tr].map {|t| I18n.backend.send(:translations)[t][:conf][:current_location]} %>
-    
     # Make sure input value gets updated with the proper translation if current_location has been set
     if @currentLocationList.includes($('.JS-Geolocation__display').val())
       $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')

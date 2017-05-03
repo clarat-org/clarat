@@ -32,7 +32,19 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
   # Check if cookie had was saved to use "my location" and if so, use it again.
   onLoad: ->
     @startGarbageCollection()
-    if @searchLocationInput.val() is I18n.t('conf.current_location')
+    #debugger
+    current_location = I18n.t('conf.current_location')
+   
+    # If 'Mein Standort' has been set and user switches to another language, we want to keep the highlighting and update the form input to the equivalent, e.g. 'My location'
+    if $('.JS-Geolocation__display').val() == 'Mein Standort' #To Do: check for translations
+      $('.JS-Geolocation__display')[0].value = current_location
+      $('.JS-Geolocation__display')[0].disabled = true
+      @searchLocationInput = $('.JS-Geolocation__display')
+    
+    console.log(@searchLocationInput.val())
+    #debugger
+    if @searchLocationInput.val() is current_location
+      #console.log(@searchLocationInput.val())
       # Turn input into display field because we don't just want the string
       # "My Location" in there in plain text
       Clarat.Location.Operation.TurnInputIntoMyLocationDisplay.run()
@@ -139,6 +151,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @preventLocationByBrowserPrompt = false
 
   handleFormSubmit: (event) =>
+    console.log($('#search_form_search_location').val())
     if $('#search_form_search_location').val() == ""
       $('#search_form_search_location').blur() # always loose focus
       $(document).trigger 'Clarat.Location::RequestGeolocation'

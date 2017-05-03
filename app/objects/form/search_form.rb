@@ -52,11 +52,13 @@ class SearchForm
 
   def initialize cookies, *attrs
     super(*attrs)
-
+    puts "<<<<<<< #{I18n.t('conf.current_location')} : #{generated_geolocation}"
     return if exact_location
+    binding.pry
     if search_location.blank? # Blank location => use cookies or default fallback
       load_geolocation_values!(cookies)
     elsif search_location.eql? I18n.t('conf.current_location') && generated_geolocation # if geolocation has been set, use it!
+      binding.pry
       generated_geolocation
     elsif search_location && search_location != I18n.t('conf.current_location')
       self.generated_geolocation = search_location_instance.geoloc

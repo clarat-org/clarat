@@ -17,7 +17,10 @@
     = hb 'if location_visible' do
       %div.Listing-results__meta.Listing-results__meta--with-address
         %h4.Listing-results__orga-display
-          = hb 'organization_display_name'
+          = hb 'if location_name' do
+            = hb 'location_name'
+            = hb 'else'
+            = hb 'organization_display_name'
         %div.Listing-results__address{itemscope: '', itemtype: 'http://schema.org/ContactPoint'}
           %div{itemscope: '', itemtype: 'http://schema.org/PostalAddress'}
             = hb 'location_address'

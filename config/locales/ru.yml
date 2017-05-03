@@ -433,6 +433,8 @@ ru:
     current_location: Мое местонахождения
     default_latlng: 52.520007,13.404954
     default_location: Берлин
+    en:
+      current_location: 
   confidential: 
   contacts:
     create:
@@ -1440,3 +1442,6 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
+  de:
+    en:
+      current_location: 

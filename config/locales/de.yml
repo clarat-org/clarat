@@ -760,6 +760,8 @@ de:
     current_location: Mein Standort
     default_latlng: 52.520007,13.404954
     default_location: Berlin
+    en:
+      current_location: 
   confidential: 
   contacts:
     create:
@@ -1872,3 +1874,6 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+  de:
+    en:
+      current_location: 

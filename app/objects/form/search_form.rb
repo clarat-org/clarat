@@ -52,14 +52,13 @@ class SearchForm
 
   def initialize cookies, *attrs
     super(*attrs)
-    current_location_list = %i[ar de en fa fr pl ru tr].map { |t| I18n.backend.send(:translations)[t][:conf][:current_location] }
     return if exact_location
 
     if search_location.blank? # Blank location => use cookies or default fallback
       load_geolocation_values!(cookies)
     elsif (current_location_list.include? search_location) && generated_geolocation.present? # if geolocation has been set, use it!
       generated_geolocation
-    elsif search_location && search_location != I18n.t('conf.current_location')
+    else
       self.generated_geolocation = search_location_instance.geoloc
     end
   end
@@ -76,5 +75,9 @@ class SearchForm
   def search_location_instance
     @_search_location_instance ||=
       SearchLocation.find_or_generate(search_location)
+  end
+
+  def current_location_list
+    %i(ar de en fa fr pl ru tr).map { |t| I18n.backend.send(:translations)[t][:conf][:current_location] }
   end
 end

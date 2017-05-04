@@ -1,6 +1,8 @@
 class Clarat.Location.Presenter extends ActiveScript.Presenter
   constructor: ->
-    @currentLocationList = ['ar', 'de', 'en', 'fa', 'fr', 'pl', 'ru', 'tr'].map (loc) -> I18n.t("conf.current_location", {locale: loc })
+    @currentLocationList =
+      ['ar', 'de', 'en', 'fa', 'fr', 'pl', 'ru', 'tr'].map (loc) ->
+        I18n.t("conf.current_location", {locale: loc })
     # Make sure input value gets updated with the proper translation if current_location has been set
     if @currentLocationList.includes($('.JS-Geolocation__display').val())
       $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')
@@ -39,7 +41,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @startGarbageCollection()
 
     # If 'Mein Standort' has been set and user switches to another language, we want to keep the highlighting and update the form input to the equivalent, e.g. 'My location'
-
     if @currentLocationList.includes($('.JS-Geolocation__display').val())
       $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')
       $('.JS-Geolocation__display')[0].disabled = true

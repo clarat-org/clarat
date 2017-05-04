@@ -1,0 +1,143 @@
+{
+  "id": "faq",
+  "viewports": [
+    {
+      "name": "smartphone",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "name": "tablet_portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "tablet_landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 980
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "DE: Clarat FAQ",
+      "url": "http://localhost:3000/family/haeufige-fragen",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "EN: Clarat FAQ",
+      "url": "http://localhost:3000/en/family/frequently-asked-questions",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "AR: Clarat FAQ",
+      "url": "http://localhost:3000/ar/family/أسئلة-شائعة",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FA: Clarat FAQ",
+      "url": "http://localhost:3000/fa/family/سوالات%20رایج",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "TR: Clarat FAQ",
+      "url": "http://localhost:3000/tr/family/sıkça-sorulan-sorular",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "PL: Clarat FAQ",
+      "url": "http://localhost:3000/pl/family/często-zadawane-pytania",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "RU: Clarat FAQ",
+      "url": "http://localhost:3000/ru/family/Частые-вопросы",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FR: Clarat FAQ",
+      "url": "http://localhost:3000/fr/family/questions-fréquentes",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    }
+
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "casper_scripts": "backstop_data/casper_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

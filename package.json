@@ -1,0 +1,41 @@
+{
+  "name": "clarat",
+  "version": "1.0.0",
+  "description": "clarat",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "backstop-worldchoice": "backstop test --config=backstop/world_choice.json",
+    "backstop-worldchoice-ref": "backstop reference --config=backstop/world_choice.json",
+    "backstop-offerindex": "backstop test --config=backstop/offer_index.json",
+    "backstop-offerindex-ref": "backstop reference --config=backstop/offer_index.json",
+    "backstop-offershow": "backstop test --config=backstop/offer_show.json",
+    "backstop-offershow-ref": "backstop reference --config=backstop/offer_show.json",
+    "backstop-about": "backstop test --config=backstop/about.json",
+    "backstop-about-ref": "backstop reference --config=backstop/about.json",
+    "backstop-faq": "backstop test --config=backstop/faq.json",
+    "backstop-faq-ref": "backstop reference --config=backstop/faq.json",
+    "backstop-orgashow": "backstop test --config=backstop/orga_show.json",
+    "backstop-orgashow-ref": "backstop reference --config=backstop/orga_show.json",
+    "backstop-worldstart": "backstop test --config=backstop/world_start.json",
+    "backstop-worldstart-ref": "backstop reference --config=backstop/world_start.json",
+    "backstop-report": "backstop openReport",
+    "backstop-init": "backstop genConfig"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarat-org/clarat.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarat-org/clarat/issues"
+  },
+  "homepage": "https://github.com/clarat-org/clarat#readme",
+  "devDependencies": {
+    "backstopjs": "^2.6.11",
+    "phantomjs": "^2.1.7"
+  }
+}

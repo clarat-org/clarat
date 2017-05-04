@@ -21,6 +21,7 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @currentMap = Clarat.GMaps.Operation.ConstructMap.run(
       @markers, @canvas, @mapOptions, @uiOptions)
     @handleMapResize()
+    console.log 'backstopjs_ready'
 
     @mapModal = new Clarat.MapModal.Presenter # handles Map Button
 

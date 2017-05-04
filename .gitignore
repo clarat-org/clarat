@@ -68,3 +68,6 @@ Procfile.development
 # staging only files
 .htaccess
 .htpasswd
+
+# Tests
+backstop_data/

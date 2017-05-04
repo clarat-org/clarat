@@ -1,0 +1,142 @@
+{
+  "id": "orga_show",
+  "viewports": [
+    {
+      "name": "smartphone",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "name": "tablet_portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "tablet_landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 980
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "DE: Clarat Orga Show",
+      "url": "http://localhost:3000/family/organisationen/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "EN: Clarat Orga Show",
+      "url": "http://localhost:3000/en/family/organizations/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "AR: Clarat Orga Show",
+      "url": "http://localhost:3000/ar/family/منظمة/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FA: Clarat Orga Show",
+      "url": "http://localhost:3000/fa/family/سازمان%20ها/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "TR: Clarat Orga Show",
+      "url": "http://localhost:3000/tr/family/organizasyonlar/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "PL: Clarat Orga Show",
+      "url": "http://localhost:3000/pl/family/organizacje/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "RU: Clarat Orga Show",
+      "url": "http://localhost:3000/ru/family/орагнизации/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FR: Clarat Orga Show",
+      "url": "http://localhost:3000/fr/family/organisations/1",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "casper_scripts": "backstop/casper_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

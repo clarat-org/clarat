@@ -1,0 +1,142 @@
+{
+  "id": "offer_index",
+  "viewports": [
+    {
+      "name": "smartphone",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "name": "tablet_portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "tablet_landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 980
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "DE: Clarat Offer Index",
+      "url": "http://localhost:3000/family/angebote?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal%2Cfax%2Cletter&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "EN: Clarat Offer Index",
+      "url": "http://localhost:3000/en/family/offers?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "AR: Clarat Offer Index",
+      "url": "http://localhost:3000/ar/family/عروض?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FA: Clarat Offer Index",
+      "url": "http://localhost:3000/fa/family/پیشنهادها?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "TR: Clarat Offer Index",
+      "url": "http://localhost:3000/tr/family/hizmetlerimiz?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "PL: Clarat Offer Index",
+      "url": "http://localhost:3000/pl/family/oferty?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "RU: Clarat Offer Index",
+      "url": "http://localhost:3000/ru/family/предложения?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "FR: Clarat Offer Index",
+      "url": "http://localhost:3000/fr/family/offres-d-aide?utf8=✓&search_form%5Bquery%5D=&search_form%5Bsearch_location%5D=Alexanderplatz%2C+Berlin%2C+Deutschland&search_form%5Bgenerated_geolocation%5D=52.520007%2C13.404954&search_form%5Bcategory%5D=&search_form%5Bexact_location%5D=false&search_form%5Bcontact_type%5D=personal&search_form%5Bencounters%5D=hotline%2Cemail%2Cchat%2Cforum%2Conline-course%2Cportal&search_form%5Bage%5D=&search_form%5Btarget_audience%5D=&search_form%5Bexclusive_gender%5D=&search_form%5Blanguage%5D=&search_form%5Bsort_order%5D=nearby&search_form%5Bsection_identifier%5D=family",
+      "hideSelectors": [".aside-standard__container"],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "backstopjs_ready",
+      "delay": 2500,
+      "misMatchThreshold" : 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "casper_scripts": "backstop/casper_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

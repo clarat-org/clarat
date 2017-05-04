@@ -162,6 +162,10 @@
     background-size: 18px 32px;
     padding-left: 45px;
     font-size: inherit;
+
+    html[dir="rtl"] & {
+      background-size: 18px 32px;
+    }
   }
 
   .section-start__headline {

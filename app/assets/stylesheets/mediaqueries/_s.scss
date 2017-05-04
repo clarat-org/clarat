@@ -557,7 +557,7 @@
   .section-choice {
     transform: none;
     left: auto;
-    width: auto;
+    width: 100%;
     margin: 0 10px;
   }
 
@@ -574,6 +574,8 @@
     width: 100%;
     font-size: 14px;
     margin: 0;
+
+
   }
 
   .section-choice__headline {

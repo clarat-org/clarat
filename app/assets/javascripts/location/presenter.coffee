@@ -1,5 +1,12 @@
 class Clarat.Location.Presenter extends ActiveScript.Presenter
   constructor: ->
+    @currentLocationList =
+      ['ar', 'de', 'en', 'fa', 'fr', 'pl', 'ru', 'tr'].map (loc) ->
+        I18n.t("conf.current_location", {locale: loc })
+    # Make sure input value gets updated with the proper translation if current_location has been set
+    if @currentLocationList.includes($('.JS-Geolocation__display').val())
+      $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')
+
     @searchLocationInput = $('.JS-Geolocation__display')
     return null unless @searchLocationInput.length
 
@@ -32,6 +39,13 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
   # Check if cookie had was saved to use "my location" and if so, use it again.
   onLoad: ->
     @startGarbageCollection()
+
+    # If 'Mein Standort' has been set and user switches to another language, we want to keep the highlighting and update the form input to the equivalent, e.g. 'My location'
+    if @currentLocationList.includes($('.JS-Geolocation__display').val())
+      $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')
+      $('.JS-Geolocation__display')[0].disabled = true
+      @searchLocationInput = $('.JS-Geolocation__display')
+
     if @searchLocationInput.val() is I18n.t('conf.current_location')
       # Turn input into display field because we don't just want the string
       # "My Location" in there in plain text

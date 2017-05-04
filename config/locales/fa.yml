@@ -376,8 +376,6 @@ fa:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-    en:
-      current_location: 
   confidential: 
   contacts:
     create:
@@ -1361,6 +1359,3 @@ fa:
     new:
       button: پیغام دریافت شد
       email_placeholder: آدرس ایمیل
-  de:
-    en:
-      current_location: 

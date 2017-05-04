@@ -153,7 +153,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @preventLocationByBrowserPrompt = false
 
   handleFormSubmit: (event) =>
-    console.log($('#search_form_search_location').val())
     if $('#search_form_search_location').val() == ""
       $('#search_form_search_location').blur() # always loose focus
       $(document).trigger 'Clarat.Location::RequestGeolocation'

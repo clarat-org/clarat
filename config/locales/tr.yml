@@ -335,8 +335,6 @@ tr:
     current_location: Konumum
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-    en:
-      current_location: 
   confidential: 
   contacts:
     create:
@@ -1343,6 +1341,3 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
-  de:
-    en:
-      current_location: 

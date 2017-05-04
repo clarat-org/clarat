@@ -306,8 +306,6 @@ ar:
     current_location: موقعي
     default_latlng: 52.520007,13.404954
     default_location: برلين
-    en:
-      current_location: 
   confidential: 
   contacts:
     create:
@@ -1336,6 +1334,3 @@ ar:
     new:
       button: الرسالة وصلت
       email_placeholder: عنوان البريد الإليكتروني
-  de:
-    en:
-      current_location: 

@@ -1,10 +1,9 @@
+# frozen_string_literal: true
 # Static pages
 class PagesController < ApplicationController
-  def section_choice
-  end
+  def section_choice; end
 
-  def home
-  end
+  def home; end
 
   def about
     @names = %w(amina andrea anja ann-sophie anna anne astrid basti bettina
@@ -15,17 +14,13 @@ class PagesController < ApplicationController
                 stefan tine verena)
   end
 
-  def faq
-  end
+  def faq; end
 
-  def impressum
-  end
+  def impressum; end
 
-  def agb
-  end
+  def agb; end
 
-  def privacy
-  end
+  def privacy; end
 
   def not_found
     render status: 404, formats: [:html]
@@ -35,7 +30,7 @@ class PagesController < ApplicationController
     split_path = request.fullpath.split('/', -1)
     insertion_index = split_path.last == params['locale'] ? -1 : -2
     forward_path =
-      split_path.insert(insertion_index, SectionFilter::DEFAULT).join('/')
+      split_path.insert(insertion_index, Section::DEFAULT).join('/')
     redirect_to forward_path
   end
 end

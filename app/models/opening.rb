@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Monkeypatch clarat_base Opening
 require ClaratBase::Engine.root.join('app', 'models', 'opening')
 

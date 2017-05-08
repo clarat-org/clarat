@@ -18,7 +18,6 @@ class Clarat.Search.Cell.SearchResults
     main_count: @mainResults.nbHits
     main_results_query: @mainResultsQuery()
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
-    section: $('body').data('section')
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
     algolia_logo_path: image_path('banner--powered-by-algolia.svg')

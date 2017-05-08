@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 describe PreviewsController do
   describe "GET 'show_offer'" do
@@ -11,7 +12,8 @@ describe PreviewsController do
           'test', 'test'
         )
 
-      get :show_offer, id: @offer.slug, locale: 'de', section: 'family'
+      get :show_offer, id: @offer.slug, locale: 'de',
+                       section: @offer.section.identifier
       assert_response :success
       assert_select 'title', 'bazfuz | clarat'
     end

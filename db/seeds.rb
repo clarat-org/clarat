@@ -10,8 +10,8 @@ Offer.clear_index!
 user = User.create email: 'user@user.com', role: 'researcher'
 User.create email: 'admin@admin.com', role: 'super'
 
-family = SectionFilter.create name: 'Family', identifier: 'family'
-refugees = SectionFilter.create name: 'Refugees', identifier: 'refugees'
+family = Section.create name: 'Family', identifier: 'family'
+refugees = Section.create name: 'Refugees', identifier: 'refugees'
 LanguageFilter.create name: 'Deutsch', identifier: 'deu'
 LanguageFilter.create name: 'Englisch', identifier: 'eng'
 LanguageFilter.create name: 'Türkisch', identifier: 'tur'
@@ -62,7 +62,7 @@ fam = FactoryGirl.create :category,
                          name_en: 'Family', name_ar: "الأسرة",
                          name_fr: "famille", name_pl: "Rodzina",
                          name_tr: "aile", name_ru: "семья"
-fam.section_filters = [family, refugees]
+fam.sections = [family, refugees]
 legal = FactoryGirl.create :category,
                            name_de: 'Asyl und Recht', icon: 'a-legal',
                            name_en: "Asylum and law",
@@ -71,13 +71,13 @@ legal = FactoryGirl.create :category,
                            name_pl: "Azyl i prawo",
                            name_tr: "iltica ve hukuk",
                            name_ru: "убежище и право"
-legal.section_filters = [refugees]
+legal.sections = [refugees]
 health = FactoryGirl.create :category,
                             name_de: 'Gesundheit', icon: 'c-health',
                             name_en: "Health", name_ar: "الصحة",
                             name_fr: "santé", name_pl: "Zdrowie",
                             name_tr: "sağlık", name_ru: "здоровье"
-health.section_filters = [family, refugees]
+health.sections = [family, refugees]
 learn = FactoryGirl.create :category,
                            name_de: 'Lernen und Arbeiten', icon: 'd-learn',
                            name_en: "Learning and working",
@@ -86,7 +86,7 @@ learn = FactoryGirl.create :category,
                            name_pl: "Nauka i praca",
                            name_tr: "öğrenmek ve çalışmak",
                            name_ru: "учеба и работа"
-learn.section_filters = [family, refugees]
+learn.sections = [family, refugees]
 misc = FactoryGirl.create :category,
                           name_de: 'Sorgen im Alltag', icon: 'e-misc',
                           name_en: "Worries in everyday life",
@@ -95,7 +95,7 @@ misc = FactoryGirl.create :category,
                           name_pl: "Zmartwienia w codziennym życiu",
                           name_tr: "güncel hayatta sorun",
                           name_ru: "проблемы в обычной жизни"
-misc.section_filters = [family]
+misc.sections = [family]
 misc = FactoryGirl.create :category,
                           name_de: 'Leben in Deutschland', icon: 'e-misc',
                           name_en: "Living in Germany",
@@ -104,7 +104,7 @@ misc = FactoryGirl.create :category,
                           name_pl: "Życie w Niemczech",
                           name_tr: "Almanya'da yaşamak",
                           name_ru: "жить в Германии"
-misc.section_filters = [refugees]
+misc.sections = [refugees]
 violence = FactoryGirl.create :category,
                               name_de: 'Gewalt und Kriminalität',
                               icon: 'f-violence',
@@ -114,13 +114,13 @@ violence = FactoryGirl.create :category,
                               name_pl: "Przemoc i przestpczość",
                               name_tr: "şiddet ve suç",
                               name_ru: "насилие и криминал"
-violence.section_filters = [family, refugees]
+violence.sections = [family, refugees]
 crisis = FactoryGirl.create :category,
                             name_de: 'Notfall', icon: 'g-crisis',
                             name_en: "Emergency", name_ar: "طوارئ",
                             name_fr: "urgence", name_pl: "Nagły wypadek",
                             name_tr: "Acil durum", name_ru: "экстренный случай"
-crisis.section_filters = [family, refugees]
+crisis.sections = [family, refugees]
 
 refugee_mains = Category.mains.in_section(:refugees).all
 subcategories = []

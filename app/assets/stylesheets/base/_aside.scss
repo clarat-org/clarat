@@ -19,5 +19,10 @@
 }
 
 .aside-standard__container {
+  display: none;
   margin-bottom: 50px;
+
+  body.has-google-map & {
+    display: block;
+  }
 }

@@ -10,7 +10,7 @@ module AlgoliaStubber
       "hitsPerPage" : 10,
       "processingTimeMS" : 1,
       "facets" : {
-        "_categories": {}
+        "_tags": {}
       },
       "query" : "",
       "params" : "query="
@@ -54,7 +54,7 @@ module AlgoliaStubber
       'hitsPerPage' => 10,
       'processingTimeMS' => 1,
       'facets' => {
-        '_categories' => categories
+        '_tags' => categories
       },
       'query' => "#{query}",
       'params' => "query=#{query}"
@@ -103,7 +103,7 @@ WebMock.stub_request(
 #     "lat" : 52.60169,
 #     "lng" : 13.35807
 #   },
-#   "_categories" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
+#   "_tags" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
 #   "organization_name" : "Lebenswelt gGmbH",
 #   "objectID" : "311",
 #   "_highlightResult" : {
@@ -135,7 +135,7 @@ WebMock.stub_request(
 # "hitsPerPage" : 10,
 # "processingTimeMS" : 1,
 # "facets" : {
-#   "_categories" : {
+#   "_tags" : {
 #     "Erziehungsberatung" : 3,
 #     "Konfliktlösung" : 3,
 #     "Krisenintervention" : 3,

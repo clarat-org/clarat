@@ -3,7 +3,7 @@ class Clarat.Search.Query.PersonalFacet extends Clarat.Search.Query.Personal
   query_hash: ->
     _.merge super(),
       params:
-        facets: '_categories',
+        facets: '_tags',
         page: 0,
         hitsPerPage: 1,
         tagFilters: ''

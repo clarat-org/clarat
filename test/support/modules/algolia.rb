@@ -103,7 +103,7 @@ WebMock.stub_request(
 #     "lat" : 52.60169,
 #     "lng" : 13.35807
 #   },
-#   "_categories" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
+#   "_tags" : ["Lernen", "Schulverweigerung", "Krisenintervention", "Migranten", "Mediation", "Konfliktlösung", "Lehrer", "Erziehungsberatung", "Schulsozialarbeit"],
 #   "organization_name" : "Lebenswelt gGmbH",
 #   "objectID" : "311",
 #   "_highlightResult" : {

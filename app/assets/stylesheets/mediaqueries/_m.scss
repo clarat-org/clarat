@@ -634,13 +634,13 @@
       padding-top: 0;
       width: 100%;
     }
-    
+
     &[aria-selected="true"] {
       body.family &,
       body.refugees & {
         color: $brand_brown;
         text-decoration: underline;
-      } 
+      }
     }
   }
 
@@ -844,7 +844,6 @@
 
   .Type-results__item {
     padding: 5px 8px;
-    max-width: 50%;
   }
 
   .section-choice__container {

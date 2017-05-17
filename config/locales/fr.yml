@@ -6,6 +6,8 @@ fr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -426,6 +428,10 @@ fr:
         send: Envoyer
         send_us_a_message: Écris-nous un message
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -456,6 +462,9 @@ fr:
         (<a href="%{unsubscribe_href}">réinscription</a>)
     unsubscribe:
       success_html: "Tu t'es désinscrit avec succès pour les notifications \n(<a href=\"%{subscribe_href}\">réinscription</a>)"
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -572,6 +581,7 @@ fr:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -585,15 +595,18 @@ fr:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -605,11 +618,13 @@ fr:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -646,12 +661,6 @@ fr:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -804,6 +813,7 @@ fr:
         amh: Amharique - አማርኛ
         ara: Arabe - عربي
         arc: Araméen - ארמית / Arāmît
+        arm: arménien - Հայերեն լեզու
         aze: Azéri - Azərbaycan
         bam: bambara - bamanankan
         ban: Balinais - Basa Bali
@@ -812,20 +822,27 @@ fr:
         ber: Berbère - Tamaziɣt
         bos: Bosnien - bosanski
         bul: Bulgare - български
+        bur: birman - မြန်မာစာ
         cau: Abaza - абаза бызшва
         ckb: 'Sorani - سۆرانی '
         cpe: Pidgin camerounais - Pidgin
         cus: Saho - ሳሆኛ
         cze: Tchèque - čeština
+        dan: danois - Dansk
         deu: Allemand - Deutsch
         dyu: dioula - julakan
         ell: Grec - ελληνικά
         eng: Anglais - English
+        est: estonien - eesti keel
         ewo: Ewondo / kóló - Ewondo
         fas: Persan - فارسی
+        fil: filipino - Wikang Filipino
         fin: Finnois - suomi
         fra: Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: géorgien - ქართული
+        hau: haoussa - Hausancī
         hbs: Monténégrin - Crnogorski jezik / Црногорски језик
         heb: Hébreu - עברית
         hin: Hindi - हिन्दी
@@ -837,11 +854,13 @@ fr:
         kor: Coréen - 한국말 / 조선말
         kur: Kurde - کوردی
         lav: Letton - latviešu
+        lin: lingala - lingála
         lit: Lituanien - lietuvių
         ltz: Luxembourgeois - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Malinké - Maninka
         mkd: Macédonien - македонски
+        mos: moré - Mòoré
         msa: Malais – بهاس ملايو
         mul: autres langues sur demande
         nor: Norvégien - Norsk
@@ -852,6 +871,7 @@ fr:
         rom: Romani - Romani
         ron: Roumain - română
         rus: Russe - русский
+        sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Serbo-croate - српскохрватски / hrvatskosrpski
         slo: Slovaque - slovenský jazyk
         slv: slovène - slovenščina
@@ -860,6 +880,7 @@ fr:
         spa: Espagnol - español
         sqi: Albanais - Shqipja
         srp: Serbe - српски
+        sus: soussou - Sosoxui
         swa: Swahili - Kiswahili
         swe: Suédois - svenska
         tam: Tamoul - தமிழ்
@@ -876,16 +897,11 @@ fr:
         uzb: Ouzbek - Oʻzbek tili
         vie: Vietnamien - tiếng Việt
         wol: Wolof - wɔlɔf
+        xxx: langue des signes d'accompagnement - speech-acc. gestures
         zho: Langues chinoises - 普通话 / 普通話
         zza: 'Zazaki - Zazaki / Kırmancki
 
 '
-        arm: arménien - Հայերեն լեզու
-        dan: danois - Dansk
-        fil: filipino - Wikang Filipino
-        hau: haoussa - Hausancī
-        lin: lingala - lingála
-        mos: moré - Mòoré
     shariff:
       share_label: Partager
     single_search_result:
@@ -927,7 +943,7 @@ fr:
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 
       navigation:
         category_headline: ou recherches par catégories
@@ -963,6 +979,8 @@ fr:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1055,6 +1073,9 @@ fr:
           charged: 
           confidential: 
           day_and_night: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:

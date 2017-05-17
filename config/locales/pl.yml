@@ -6,6 +6,8 @@ pl:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: Podejście
         longitude: NOTRANSLATE
@@ -468,6 +470,10 @@ pl:
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -504,6 +510,9 @@ pl:
       success_html: |-
         Pomyślnie usunąłeś(aś) się z listy powiadomień.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -620,6 +629,7 @@ pl:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -633,15 +643,18 @@ pl:
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
         dyu: Dyu
         ell: Ell
         eng: Eng
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -653,11 +666,13 @@ pl:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -694,12 +709,6 @@ pl:
         wol: Wol
         zho: Zho
         zza: Zza
-        arm: 
-        dan: 
-        fil: 
-        hau: 
-        lin: 
-        mos: 
       section:
         family: Family
         refugees: Refugees
@@ -850,6 +859,7 @@ pl:
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         arc: Język aramejski - ארמית / Arāmît
+        arm: Język ormiański - Հայերեն / Hajeren
         aze: Język azerski - Azərbaycan
         bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
@@ -858,20 +868,27 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        bur: Birmańczyk - မြန်မာစာ
         cau: Język abazyński - абаза бызшва
         ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
         cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
+        dan: język duński - Dansk
         deu: Język niemiecki - Deutsch
         dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        est: estoński - eesti keel
         ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
+        fil: filipino - Wikang Filipino
         fin: Język fiński - suomi
         fra: Język francuski - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: gruziński - ქართული
+        hau: język hausa - Hausa
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
         hin: Język hindi - हिन्दी
@@ -883,11 +900,13 @@ pl:
         kor: Język koreański - 한국말 / 조선말
         kur: Język kurdyjski - کوردی
         lav: Język łotewski - latviešu
+        lin: lingala - Ngála
         lit: Język litewski - lietuvių
         ltz: Język luksemburski - Lëtzebuergesch
         luo: Język luo - Dholuo
         man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        mos: Mòoré - Moose
         msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
@@ -898,6 +917,7 @@ pl:
         rom: Język romski - Romani
         ron: Język rumuński - română
         rus: Język rosyjski - русский
+        sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
         slo: Język słowacki - slovenský jazyk
         slv: Język słoweński - Slovenščina
@@ -906,6 +926,7 @@ pl:
         spa: Język hiszpański - español
         sqi: Język albański - Shqipja
         srp: Język serbski - српски
+        sus: Susu - Sosoxui
         swa: Suahili - Kiswahili
         swe: Język szwedzki - svenska
         tam: Język tamilski - தமிழ்
@@ -922,14 +943,9 @@ pl:
         uzb: Język uzbecki - Oʻzbek tili
         vie: Język wietnamski - tiếng Việt
         wol: Język wolof - wɔlɔf
+        xxx: Towarzyszący język migowy - speech-acc. gestures
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
-        arm: Język ormiański - Հայերեն / Hajeren
-        dan: język duński - Dansk
-        fil: filipino - Wikang Filipino
-        hau: język hausa - Hausa
-        lin: lingala - Ngála
-        mos: Mòoré - Moose
     shariff:
       share_label: Podziel
     single_search_result:
@@ -971,7 +987,7 @@ pl:
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
       navigation:
         category_headline: Lub szukaj w kategoriach
@@ -1007,6 +1023,8 @@ pl:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1103,6 +1121,9 @@ pl:
           charged: 
           confidential: 
           day_and_night: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:

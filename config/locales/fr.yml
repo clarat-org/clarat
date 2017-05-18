@@ -428,6 +428,10 @@ fr:
         send: Envoyer
         send_us_a_message: Écris-nous un message
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -458,6 +462,9 @@ fr:
         (<a href="%{unsubscribe_href}">réinscription</a>)
     unsubscribe:
       success_html: "Tu t'es désinscrit avec succès pour les notifications \n(<a href=\"%{subscribe_href}\">réinscription</a>)"
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -815,6 +822,7 @@ fr:
         ber: Berbère - Tamaziɣt
         bos: Bosnien - bosanski
         bul: Bulgare - български
+        bur: birman - မြန်မာစာ
         cau: Abaza - абаза бызшва
         ckb: 'Sorani - سۆرانی '
         cpe: Pidgin camerounais - Pidgin
@@ -825,12 +833,15 @@ fr:
         dyu: dioula - julakan
         ell: Grec - ελληνικά
         eng: Anglais - English
+        est: estonien - eesti keel
         ewo: Ewondo / kóló - Ewondo
         fas: Persan - فارسی
         fil: filipino - Wikang Filipino
         fin: Finnois - suomi
         fra: Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: géorgien - ქართული
         hau: haoussa - Hausancī
         hbs: Monténégrin - Crnogorski jezik / Црногорски језик
         heb: Hébreu - עברית
@@ -860,6 +871,7 @@ fr:
         rom: Romani - Romani
         ron: Roumain - română
         rus: Russe - русский
+        sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Serbo-croate - српскохрватски / hrvatskosrpski
         slo: Slovaque - slovenský jazyk
         slv: slovène - slovenščina
@@ -868,6 +880,7 @@ fr:
         spa: Espagnol - español
         sqi: Albanais - Shqipja
         srp: Serbe - српски
+        sus: soussou - Sosoxui
         swa: Swahili - Kiswahili
         swe: Suédois - svenska
         tam: Tamoul - தமிழ்
@@ -884,6 +897,7 @@ fr:
         uzb: Ouzbek - Oʻzbek tili
         vie: Vietnamien - tiếng Việt
         wol: Wolof - wɔlɔf
+        xxx: langue des signes d'accompagnement - speech-acc. gestures
         zho: Langues chinoises - 普通话 / 普通話
         zza: 'Zazaki - Zazaki / Kırmancki
 

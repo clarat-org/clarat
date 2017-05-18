@@ -470,6 +470,10 @@ pl:
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -506,6 +510,9 @@ pl:
       success_html: |-
         Pomyślnie usunąłeś(aś) się z listy powiadomień.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -861,6 +868,7 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        bur: Birmańczyk - မြန်မာစာ
         cau: Język abazyński - абаза бызшва
         ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
@@ -871,12 +879,15 @@ pl:
         dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        est: estoński - eesti keel
         ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
         fil: filipino - Wikang Filipino
         fin: Język fiński - suomi
         fra: Język francuski - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: gruziński - ქართული
         hau: język hausa - Hausa
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
@@ -906,6 +917,7 @@ pl:
         rom: Język romski - Romani
         ron: Język rumuński - română
         rus: Język rosyjski - русский
+        sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
         slo: Język słowacki - slovenský jazyk
         slv: Język słoweński - Slovenščina
@@ -914,6 +926,7 @@ pl:
         spa: Język hiszpański - español
         sqi: Język albański - Shqipja
         srp: Język serbski - српски
+        sus: Susu - Sosoxui
         swa: Suahili - Kiswahili
         swe: Język szwedzki - svenska
         tam: Język tamilski - தமிழ்
@@ -930,6 +943,7 @@ pl:
         uzb: Język uzbecki - Oʻzbek tili
         vie: Język wietnamski - tiếng Việt
         wol: Język wolof - wɔlɔf
+        xxx: Towarzyszący język migowy - speech-acc. gestures
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
     shariff:

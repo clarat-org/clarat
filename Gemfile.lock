@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 6eda52c9f494e19650de930e698b837388e4f6d0
+  revision: 3fbc3d741027ccfe5d08820819cafb95df635b27
   specs:
     clarat_base (0.1.4)
       aasm
@@ -209,7 +209,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.1)
       activerecord (>= 4.0.0)
-    geocoder (1.4.3)
+    geocoder (1.4.4)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -319,9 +319,9 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.10)
+    nokogumbo (1.4.11)
       nokogiri
-    paper_trail (7.0.1)
+    paper_trail (7.0.2)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)

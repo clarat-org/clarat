@@ -395,6 +395,10 @@ fa:
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -421,6 +425,9 @@ fa:
         (<a href="%{unsubscribe_href}">wieder abmelden</a>)
     unsubscribe:
       success_html: تو با موفقیت از بخش پیغام ها بعدی خارج شدی(<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -792,6 +799,7 @@ fa:
         ber: " بربری - Tamaziɣt"
         bos: بوسنیایی - bosanski
         bul: بلغاری - български
+        bur: برمهای - မြန်မာစာ
         cau: زبان آبازی - абаза бызшва
         ckb: 'سورانی - سۆرانی '
         cpe: کامرونی - Pidgin
@@ -802,12 +810,15 @@ fa:
         dyu: دیولا - Julakan
         ell: یونانی -  ελληνικά
         eng: انگلیسی -  English
+        est: استونیایی - eesti keel
         ewo: اووندو - Ewondo
         fas: فارسی
         fil: زبان فیلیپینی - Wikang Filipino
         fin: فنلاندی - suomi
         fra: فرانسوی - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: گرجی - ქართული
         hau: هوسى - Hausanci
         hbs: مونتنگرایی - Crnogorski jezik / Црногорски језик
         heb: عبری - עברית
@@ -837,6 +848,7 @@ fa:
         rom: رومانی - Romani
         ron: رومانیایی -  Romani
         rus: روسی - русский
+        sdh: كورمانجى - كورمانجى / Kurmancî
         skr: صربستانی -  српскохрватски / hrvatskosrpski
         slo: اسلواکی - slovenský jazyk
         slv: اسلوونیایی - Slovenščina
@@ -845,6 +857,7 @@ fa:
         spa: اسپانیایی - español
         sqi: آلبانی - Shqipja
         srp: صربستانی -  српски
+        sus: Susu - Sosoxui
         swa: سواحیلی -  Kiswahili
         swe: سوئدی - svenska
         tam: " تامیلی - தமிழ்"
@@ -861,6 +874,7 @@ fa:
         uzb: ازبکی - Oʻzbek tili
         vie: ویتنامی - tiếng Việt
         wol: ولفی - wɔlɔf
+        xxx: زبان اشاره همراه - speech-acc. gestures
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
     shariff:
@@ -905,7 +919,10 @@ fa:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
-        title: "ترجمه خودکار\n<br><br>\nدر  clarat بعضی از متون به زبان مادری شما، توسط Google Translate ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد. "
+        title: |-
+          ترجمه خودکار!
+          <br><br>
+          در  clarat بعضی از متون به زبان مادری شما، توسط Google Translate ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد.
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:

@@ -325,6 +325,10 @@ ar:
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -364,6 +368,9 @@ ar:
       success_html: |
         لقد قمت بنجاح بإلغاء تسجيلك من الحصول على إشعارات أخرى
         (<a href="%{subscribe_href}">إعادة التسجيل</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -725,6 +732,7 @@ ar:
         ber: لغة أمازيغية - Tamaziɣt
         bos: لغة بوسنوية - bosanski
         bul: لغة بلغارية - български
+        bur: البورمية - မြန်မာစာ
         cau: لغة أباظية - абаза бызшва
         ckb: لهجة كردية سورانية - سۆرانی
         cpe: الكاميروني - Pidgin
@@ -735,12 +743,15 @@ ar:
         dyu: الديولا - Julakan
         ell: لغة يونانية - ελληνικά
         eng: لغة إنجليزية - English
+        est: الإستونية - eesti keel
         ewo: إيفوندو - Ewondo
         fas: لغة فارسية - فارسی
         fil: لغة فلبينية - Wikang Filipino
         fin: لغة فنلندية - suomi
         fra: لغة فرنسية - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: الجورجية - ქართული
         hau: لغة هوسية - Hausanci
         hbs: لغة مونتنغرية - Crnogorski jezik / Црногорски језик
         heb: " لغة عبرية - עברית"
@@ -770,6 +781,7 @@ ar:
         rom: لغة رومنية - Romani
         ron: لغة رومانية - română
         rus: لغة روسية - русский
+        sdh: الكورمانجية - كورمانجى / Kurmancî
         skr: لغة صربية كرواتية - српскохрватски / hrvatskosrpski
         slo: لغة سلوفاكية - slovenský jazyk
         slv: سلوفيني - Slovenščina
@@ -778,6 +790,7 @@ ar:
         spa: لغة إسبانية - español
         sqi: لغة ألبانية - Shqipja
         srp: لغة صربية - српски
+        sus: Susu - Sosoxui
         swa: لغة سواحلية - Kiswahili
         swe: لغة سويدية - svenska
         tam: لغة تاميلية - தமிழ்
@@ -794,6 +807,7 @@ ar:
         uzb: لغة أوزبكية - Oʻzbek tili
         vie: لغة فيتنامية - tiếng Việt
         wol: لغة ولوفية - wɔlɔf
+        xxx: لغة الإشارة المرافقة - speech-acc. gestures
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
     shariff:
@@ -848,7 +862,10 @@ ar:
           لذلك سجل عنوان بريدك الإليكتروني هنا
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
-        title: بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة أو بها أخطاء لغوية.
+        title: |2-
+           ترجمة آلية!
+          <br><br>
+          بعض النصوص في كلارات مترجمة عن طريق جوجل. هذه النصوص تبدو أحياناً غريبة أو بها أخطاء لغوية. لكننا نقوم حالياً بتحسين الترجمة.
       navigation:
         category_headline: أو البحث عن طريق التصنيف
         claim:

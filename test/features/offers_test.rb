@@ -39,7 +39,7 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view has evaluated markdown' do
-    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown,
                                description: 'A [link](http://www.example.org)',
                                old_next_steps: "A\n\n- list"
 
@@ -78,17 +78,6 @@ feature 'Offer display' do
       page.must_have_content 'English step 1.'
       page.wont_have_css '.Automated-translation__warning'
     end
-  end
-
-  scenario 'Offer view has explained words' do
-    Definition.create key: 'complex', explanation: 'Explained!'
-    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
-                               description: 'A complex sentence.'
-
-    visit unscoped_offer_path offer
-    page.body.must_match(
-      %r{\<p\>A \<dfn class='JS-tooltip' data-id='1'\>complex\</dfn\> sentence.\</p\>}
-    )
   end
 
   scenario 'Multiple contact persons are present' do

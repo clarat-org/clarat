@@ -779,6 +779,10 @@ de:
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -828,6 +832,9 @@ de:
       success_html: |
         Du hast dich erfolgreich von weiteren Benachrichtigungen abgemeldet.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -1210,6 +1217,7 @@ de:
         ber: Berberisch - Tamaziɣt
         bos: Bosnisch - bosanski
         bul: Bulgarisch - български
+        bur: Burmesisch - မြန်မာစာ
         cau: Abasinisch - абаза бызшва
         ckb: 'Sorani - سۆرانی '
         cpe: Kamtok - Pidgin
@@ -1220,12 +1228,15 @@ de:
         dyu: Dioula - Julakan
         ell: Griechisch - ελληνικά
         eng: Englisch - English
+        est: Estnisch - eesti keel
         ewo: Ewondo - Ewondo
         fas: Persisch (Farsi) - فارسی
         fil: Filipino - Wikang Filipino
         fin: Finnisch - suomi
         fra: Französisch - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: Georgisch - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
         heb: Hebräisch - עברית
@@ -1255,6 +1266,7 @@ de:
         rom: Romanes - Romani
         ron: Rumänisch - română
         rus: Russisch - русский
+        sdh: Kurmandschi - كورمانجى / Kurmancî
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
         slo: Slowakisch - slovenský jazyk
         slv: Slowenisch - Slovenščina
@@ -1263,6 +1275,7 @@ de:
         spa: Spanisch - español
         sqi: Albanisch - Shqipja
         srp: Serbisch - српски
+        sus: Susu - Sosoxui
         swa: Swahili - Kiswahili
         swe: Schwedisch - svenska
         tam: Tamil - தமிழ்
@@ -1279,6 +1292,7 @@ de:
         uzb: Usbekisch - Oʻzbek tili
         vie: Vietnamesisch - tiếng Việt
         wol: Wolof - wɔlɔf
+        xxx: lautsprachebegl. Gebärden - speech-acc. gestures
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
     shariff:

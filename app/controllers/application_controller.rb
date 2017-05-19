@@ -21,12 +21,36 @@ class ApplicationController < ActionController::Base
     response.headers['Expires'] = 'Fri, 01 Jan 1990 00:00:00 GMT'
   end
 
-  before_action :note_current_section
+  before_action :note_current_section, :session_cookie
 
   private
 
   def note_current_section
     @current_section = params[:section] || 'refugees'
+  end
+
+  def session_cookie
+    date = Date.today
+    visited_once  = 'visits=1'
+    visited_twice = 'visits=2'
+
+    if !cookies[:session]
+      cookies[:session] = {
+        value: "#{date.to_s}, #{visited_once}",
+        expires: 28.days.from_now
+      }
+      redirect_to '/refugees/kontakt/popup' # to do: remove, only for testing
+    elsif !cookies[:session].include? Date.today.to_s
+      if cookies[:session].include? visited_once
+        cookies[:session] = {
+          value: "#{date.to_s}, #{visited_twice}",
+          expires: 28.days.from_now
+        }
+      elsif cookies[:session].include? visited_twice
+        # render modal
+        # redirect_to '/refugees/kontakt/popup'
+      end
+    end
   end
 
   ### Standard 404 Error ###

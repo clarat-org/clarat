@@ -24,8 +24,31 @@
           = t '.what.heading'
           == automation_warning @offer.translation_automated?
         .section-content__body
-          == translation_block @offer.translation_automated? do
-            == @offer.description
+          .section-content--editiorial
+            == translation_block @offer.translation_automated? do
+              == @offer.description
+          .Offer-taxonomy
+            h4.Offer-taxonomy__headline Dieses Angebot hilft dir bei:
+            / ToDo: Delete line above, use one below:
+            / h4.Offer-taxonomy__headline = t '.what.offertaxonomy.heading'
+            ul.Offer-taxonomy__list
+              / ToDo: Loop thru tags and categories, #1144
+              li.Offer-taxonomy__listitem Notfall
+              li.Offer-taxonomy__listitem Betreuung
+              li.Offer-taxonomy__listitem Lorem
+              li.Offer-taxonomy__listitem Ipsum
+              li.Offer-taxonomy__listitem Dolor Sit
+              li.Offer-taxonomy__listitem Amet
+              li.Offer-taxonomy__listitem Nobis
+              li.Offer-taxonomy__listitem Psychoterror
+              li.Offer-taxonomy__listitem Notfall
+              li.Offer-taxonomy__listitem Betreuung
+              li.Offer-taxonomy__listitem Lorem
+              li.Offer-taxonomy__listitem Ipsum
+              li.Offer-taxonomy__listitem Dolor Sit
+              li.Offer-taxonomy__listitem Amet
+              li.Offer-taxonomy__listitem Nobis
+              li.Offer-taxonomy__listitem Psychoterror
 
       / What to do next?
       = render 'offers/show/next_steps', offer: @offer
@@ -90,7 +113,7 @@
                 button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,
                                                  markers: @markers
-
+            - @offer.categories.each do |category|
           ul.Listing-organizations__list
             - @offer.organizations.order(:name).each do |orga|
               li.Listing-organizations__link

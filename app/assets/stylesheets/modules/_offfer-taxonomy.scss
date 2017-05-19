@@ -1,0 +1,22 @@
+.Offer-taxonomy__headline {
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.Offer-taxonomy__list {
+  overflow: hidden;
+}
+
+.Offer-taxonomy__listitem {
+  float: left;
+  list-style: none;
+  margin: .4em .75em .4em 0;
+  color: #fff;
+  display: inline-block;
+  padding: 0.125em 2.375em 0.125em 0.66em;
+  // Do not use background short hand because of MS Edge,
+  // https://developer.microsoft.com/microsoft-edge/platform/issues/846292/
+  background: $brand_blue image-url('ico_folder.svg') no-repeat;
+  background-position: calc(100% - 8px) center;
+  background-size: auto 1em;
+}

@@ -1,6 +1,13 @@
 GIT
-  remote: git://github.com/clarat-org/clarat_base.git
-  revision: 3fbc3d741027ccfe5d08820819cafb95df635b27
+  remote: git://github.com/efqdalton/dynamic_sitemaps.git
+  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
+  branch: adds-custom-storages
+  specs:
+    dynamic_sitemaps (2.0.0)
+      aws-sdk
+
+PATH
+  remote: ../clarat_base
   specs:
     clarat_base (0.1.4)
       aasm
@@ -20,14 +27,6 @@ GIT
       sanitize
       sidekiq (~> 4.1.2)
       web-console (~> 2.0)
-
-GIT
-  remote: git://github.com/efqdalton/dynamic_sitemaps.git
-  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
-  branch: adds-custom-storages
-  specs:
-    dynamic_sitemaps (2.0.0)
-      aws-sdk
 
 GEM
   remote: https://rubygems.org/
@@ -209,7 +208,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.1)
       activerecord (>= 4.0.0)
-    geocoder (1.4.4)
+    geocoder (1.4.3)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -319,7 +318,7 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.11)
+    nokogumbo (1.4.10)
       nokogiri
     paper_trail (7.0.2)
       activerecord (>= 4.0, < 5.2)

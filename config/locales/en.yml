@@ -658,7 +658,7 @@ en:
         code2: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
         code3: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
         code4: Sorry, unfortunately we are unable to determine your location. So we're going to use Alexanderplatz in Berlin as your location instead. If this location isn't near where you are, then please enter your address, post code or city here.
-      get: Use my location!
+      get: Use my location.
       waiting: Searching location... You might have to allow this.
     lang_list_toggle:
       less: Show fewer languages
@@ -670,7 +670,7 @@ en:
     map_info_window_multiple:
       anchor: Show all >>
       text: There are multiple results for this address.
-      title: Multiple offers
+      title: More support services and programmes
     mobile_filter: Filter results
     more_filter_options: Show more filters
     query_field:
@@ -731,12 +731,12 @@ en:
       faq_text: 'If you have questions about our search you can find our FAQ '
       language_explanation:
         connector: and
-        text: This offer is available in %{language_list}.
+        text: This support service is available in %{language_list}.
       map:
         cooperation: cooperation project
         enlarge_map: Enlarge map
-        headline_small_map: Local offers on the map
-      more: More remote offers
+        headline_small_map: Local support services on the map
+      more: More telephone and online support services
       off_canvas:
         result_text: Show %{result_count} results
       personal_anchor:
@@ -910,6 +910,11 @@ en:
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
+        popup:
+          footer: 
+          headline: 
+          text: 
+          button: 
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-
@@ -1455,8 +1460,8 @@ en:
       welcome:
         advanced_search: Do you want to refine your search? Click here. Advanced search options will open up automatically.
         world_switch:
-          family: Click here to get to clarat family. In clarat family, you can search for help and support offerings for children, adolescents and families.
-          refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support offerings for refugees.
+          family: Click here to get to clarat family. In clarat family, you can search for help and support services for children, teenagers and families.
+          refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support services for refugees.
   simple_form:
     placeholders:
       search_form:

@@ -1,1 +1,6 @@
-p Popup modal goes here
+/ prepare modal
+= simple_form_for @contact, html: { class: 'contact-form' }, remote: true do |f|
+   = f.input :name, label: false, hint: false
+   = f.input :email, label: false, hint: false
+   = link_to 'hier geht es zur Startseite', '/'
+    

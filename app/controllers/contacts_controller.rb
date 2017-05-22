@@ -23,6 +23,7 @@ class ContactsController < ApplicationController
   end
 
   def popup
+    @contact = Contact.new url: request.referer
   end
 
   # just a forward action so that a GET to /kontakt works

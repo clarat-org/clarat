@@ -40,6 +40,21 @@
 	display: none;
 }
 
+#popup {
+  width: 800px;
+  font-size: 22px;
+
+  p.footer {
+    font-size: 12px;
+  }
+
+  input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 #unavailable_location_overlay {
   .formtastic {
     &.update_request {

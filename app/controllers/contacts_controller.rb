@@ -18,12 +18,16 @@ class ContactsController < ApplicationController
         format.js { render :create, layout: 'modal_create' }
       end
     else
-      render :new
+      if params[:contact][:message].eql? "Ich möchte an der Umfrage teilnehmen"
+        render :popup
+      else
+        render :new
+      end
     end
   end
 
   def popup
-    @contact = Contact.new url: request.referer
+    @contact = Contact.new
   end
 
   # just a forward action so that a GET to /kontakt works

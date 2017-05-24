@@ -24,9 +24,6 @@ Clarat::Application.routes.draw do
       resources :organizations, only: [:show]
       resources :contacts, only: [:new, :create, :index]
 
-      get 'kontakt/popup', to: 'contacts#popup'
-
-
       # Previews
       get 'preview/offers/:id' => 'previews#show_offer'
       get 'preview/organizations/:id' => 'previews#show_organization'

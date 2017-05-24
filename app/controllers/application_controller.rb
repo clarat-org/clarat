@@ -39,8 +39,6 @@ class ApplicationController < ActionController::Base
         value: "#{date.to_s}, #{visited_once}",
         expires: 28.days.from_now
       }
-      #render '/contacts/popup'
-      #redirect_to "/refugees/kontakt/popup" # to do: remove, only for testing
     elsif !cookies[:session].include? Date.today.to_s and @current_section
       if cookies[:session].include? visited_once
         cookies[:session] = {
@@ -48,11 +46,7 @@ class ApplicationController < ActionController::Base
           expires: 28.days.from_now
         }
       elsif cookies[:session].include? visited_twice
-        # render modal
-        puts "<<<<<< GET HERE"
-        #@contact = Contact.new
-
-        #redirect_to "/#{@current_section}/kontakt/popup"
+        redirect_to new_contact_path(popup: true, section: @current_section)
         cookies.delete :session
       end
     end

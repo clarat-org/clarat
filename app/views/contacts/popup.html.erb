@@ -2,8 +2,8 @@
   <h1><%= t 'layouts.partials.modal.popup.headline' %></h1>
   <p><%= t 'layouts.partials.modal.popup.text' %></p>
   <%= simple_form_for @contact do |f| %>
-    <%= f.input :name, label: false, required: true, placeholder: 'Name*' %>
-    <%= f.input :email, label: false, required: true, placeholder: 'E-Mail*' %>
+    <%= f.input :name, label: false, placeholder: 'Name*' %>
+    <%= f.input :email, label: false, placeholder: 'E-Mail*' %>
     <%= f.hidden_field :message, value: 'Ich möchte an der Umfrage teilnehmen' %>
     <%= f.button :submit, value: t('layouts.partials.modal.popup.button') %>
   <% end %>

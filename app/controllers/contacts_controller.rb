@@ -5,7 +5,11 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new url: request.referer
-    respond_with @contact
+    if params[:popup]
+      render :popup
+    else
+      respond_with @contact
+    end
   end
 
   def create
@@ -24,10 +28,6 @@ class ContactsController < ApplicationController
         render :new
       end
     end
-  end
-
-  def popup
-    @contact = Contact.new
   end
 
   # just a forward action so that a GET to /kontakt works

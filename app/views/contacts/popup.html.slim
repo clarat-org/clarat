@@ -1,3 +1,4 @@
+script src="/assets/application.js"
 = modal_for 'popup', autoopen: false do
   h1= t 'layouts.partials.modal.popup.headline'
   p= t 'layouts.partials.modal.popup.text'
@@ -7,8 +8,6 @@
     = f.hidden_field :message, value: 'Ich möchte an der Umfrage teilnehmen'
     = f.button :submit, value: t('layouts.partials.modal.popup.button')
   p.footer = t 'layouts.partials.modal.popup.footer'
-
-script src="/assets/application.js"
 
 javascript:
   $('.JS-modal').popup('show');

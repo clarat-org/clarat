@@ -68,10 +68,10 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
   onBeforeUnload: =>
-    ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
+    ga?('send', 'PageView', 'timing', 'total', @pageViewTime)
     if @goalOffset
       ga?(
-        'send', 'event', 'PageView', 'unload',
+        'send', 'PageView', 'event', 'unload',
         "goalViewed:#{!!@goalViewed};hadToScrollToGoal:#{!!@hasToScroll};" +
         "didScroll:#{!!@didScroll};" +
         "isGoogleTranslation:#{@automatedTranslation};",

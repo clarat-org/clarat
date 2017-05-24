@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
         format.js { render :create, layout: 'modal_create' }
       end
     else
-      if params[:contact][:message].eql? "Ich möchte an der Umfrage teilnehmen"
+      if params[:contact][:message].eql? 'Ich möchte an der Umfrage teilnehmen'
         render :popup
       else
         render :new

@@ -1346,10 +1346,10 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
         popup:
-          footer: "* Ihr Name und Ihre E-Mail-Adresse werden ausschließlich zur Kontaktaufnahme verarbeitet. Sie abonnieren keinen Newsletter und Ihre E-Mail-Adresse wird nicht an Dritte weitergegeben."
-          headline: 20 Euro für Ihre Gedanken
-          text: Wir würden gern mit Ihnen sprechen. Um Clarat zu verbessern. Haben Sie Interesse?
-          button: Ja, warum nicht!
+          footer: "* Dein Name und deine E-Mail-Adresse werden ausschließlich zur Kontaktaufnahme verarbeitet. Du abonnierst keinen Newsletter und deine E-Mail-Adresse wird nicht an Dritte weitergegeben."
+          headline: 20 Euro für deine Meinung
+          text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+          button: Ja, bitte
       nav_lang:
         legal_title: 
         title: 

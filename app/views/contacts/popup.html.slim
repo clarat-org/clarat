@@ -3,8 +3,8 @@ head
   script src="/assets/application.js"
 body
   = modal_for 'popup', autoopen: false do
-    h1= t 'layouts.partials.modal.popup.headline'
-    p= t 'layouts.partials.modal.popup.text'
+    h2= t 'layouts.partials.modal.popup.headline'
+    p.text= t 'layouts.partials.modal.popup.text'
     = simple_form_for @contact do |f|
       = f.input :name, label: false, placeholder: 'Name*'
       = f.input :email, label: false, placeholder: 'Email*'

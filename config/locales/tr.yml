@@ -354,6 +354,10 @@ tr:
         send: gönder
         send_us_a_message: Bize mesaj gönder
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -382,6 +386,9 @@ tr:
       success_html: |
         E-bülten aboneliğinden başarıyla çıktın.
         (<a href="%{subscribe_href}">tekrar abone ol</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -734,6 +741,7 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        bur: Birmanyalı - မြန်မာစာ
         cau: Abazaca - абаза бызшва
         ckb: Soranice - سۆرانی
         cpe: Kamtok - Pidgin
@@ -744,12 +752,15 @@ tr:
         dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
         eng: İngilizce - English
+        est: Estonyalı - eesti keel
         ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
         fil: Filipince - Wikang Filipino
         fin: Fince - suomi
         fra: Fransızca - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        geo: Gürcü - ქართული
         hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
         heb: İbranice - עברית
@@ -779,6 +790,7 @@ tr:
         rom: Çingenece - Romani
         ron: Rumence - română
         rus: Rusça - русский
+        sdh: Kurmanci - كورمانجى / Kurmancî
         skr: Sırp-Hırvatça - српскохрватски / hrvatskosrpski
         slo: Slovakça - slovenský jazyk
         slv: Slovence - Slovenščina
@@ -787,6 +799,7 @@ tr:
         spa: İspanyolca - español
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
+        sus: Susu - Sosoxui
         swa: Svahili - Kiswahili
         swe: İsveççe - svenska
         tam: Tamilce - தமிழ்
@@ -803,6 +816,7 @@ tr:
         uzb: Özbekçe - Oʻzbek tili
         vie: Vietnamca - tiếng Việt
         wol: Wolof - wɔlɔf
+        xxx: eşlik eden işaret dili - speech-acc. gestures
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
     shariff:

@@ -156,10 +156,10 @@ FactoryGirl.define do
       end
     end
 
-    trait :with_markdown_and_definition do
+    trait :with_markdown do
       after :create do |offer, _evaluator|
-        offer.update_column :description, Definition.infuse(
-          MarkdownRenderer.render(offer.untranslated_description)
+        offer.update_column :description, MarkdownRenderer.render(
+          offer.untranslated_description
         )
         offer.update_column :old_next_steps, MarkdownRenderer.render(
           offer.untranslated_old_next_steps

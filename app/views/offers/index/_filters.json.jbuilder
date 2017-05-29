@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 # TODO: Change this for proper fix!!
-json.age((Offer::MIN_AGE..Offer::MAX_AGE).to_a[0..17]) do |age|
+json.age((TargetAudienceFiltersOffer::MIN_AGE..TargetAudienceFiltersOffer::MAX_AGE).to_a[0..17]) do |age|
   json.identifier age
   json.display_name t('.age', count: age)
 end
@@ -11,7 +11,7 @@ json.target_audience TargetAudienceFilter::IDENTIFIER[0..4] do |identifier|
   json.display_name t(".target_audience.#{identifier}")
 end
 
-json.exclusive_gender Offer::EXCLUSIVE_GENDERS do |identifier|
+json.exclusive_gender TargetAudienceFiltersOffer::STAMP_FIRST_PART_GENDERS do |identifier|
   json.identifier identifier
   json.display_name t(".exclusive_gender.#{identifier}")
 end

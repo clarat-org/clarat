@@ -1,17 +1,15 @@
-head
-  script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-  script src="/assets/application.js"
-body
-  = modal_for 'popup', autoopen: false do
-    h2= t 'layouts.partials.modal.popup.headline'
-    p.text= t 'layouts.partials.modal.popup.text'
-    = simple_form_for @contact do |f|
-      = f.input :name, label: false, placeholder: 'Name*'
-      = f.input :email, label: false, placeholder: 'Email*'
-      = f.hidden_field :message, value: 'Ich möchte an der Umfrage teilnehmen'
-      = f.button :submit, value: t('layouts.partials.modal.popup.button')
-    p.footer = t 'layouts.partials.modal.popup.footer'
+= modal_for 'popup', autoopen: false do
+  h2= t 'layouts.partials.modal.popup.headline'
+  p.text= t 'layouts.partials.modal.popup.text'
+  = simple_form_for @contact do |f|
+    = f.input :name, label: false, placeholder: 'Name*'
+    = f.input :email, label: false, placeholder: 'Email*'
+    = f.hidden_field :message, value: 'Ich möchte an der Umfrage teilnehmen'
+    = f.button :submit, value: t('layouts.partials.modal.popup.button')
+  p.footer = t 'layouts.partials.modal.popup.footer'
 
 javascript:
-  $('.JS-modal').popup('show');
+  window.onload = function() {
+    $('.JS-modal').popup('show');
+  };
                     

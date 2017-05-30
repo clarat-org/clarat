@@ -911,10 +911,15 @@ en:
             Or is something not working? Simply
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
         popup:
-          footer: 
-          headline: 
-          text: 
-          button: 
+          footer: "* Your name and email address will only be used to contact you. You won't be subscribing to any newsletters and we won't pass it on to third parties."
+          headline: 20 Euros for your thoughts
+          text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
+          button: Yes, please
+          message: I'd like to participate
+          email_placeholder: email address *
+          name_placeholder: Name *
+          email: 
+          name: 
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-
@@ -1471,6 +1476,11 @@ en:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: Please enter a valid email address.

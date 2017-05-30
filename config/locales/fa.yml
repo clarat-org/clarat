@@ -922,6 +922,11 @@ fa:
           headline: 
           text: 
           button: 
+          message: 
+          email_placeholder: آدرس ایمیل *
+          name_placeholder: نام *
+          email: 
+          name: 
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
         title: |-
@@ -1366,6 +1371,11 @@ fa:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: ضروری
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: لطفا آدرس ایمیل دقیق خود را بدهید.

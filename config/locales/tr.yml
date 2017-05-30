@@ -871,6 +871,11 @@ tr:
           headline: 
           text: 
           button: 
+          message: 
+          email_placeholder: E-Mail Adresi *
+          name_placeholder: İsim *
+          email: 
+          name: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -1339,6 +1344,11 @@ tr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: 'Lütfen doğru bir E-Mail adresi giriniz.

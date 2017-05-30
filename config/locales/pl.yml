@@ -991,6 +991,11 @@ pl:
           headline: 
           text: 
           button: 
+          message: 
+          email_placeholder: adres e-mail *
+          name_placeholder: Imię *
+          email: 
+          name: 
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
@@ -1445,6 +1450,11 @@ pl:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: Proszę wpisz poprawny adres e-mail.

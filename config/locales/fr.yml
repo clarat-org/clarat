@@ -947,6 +947,11 @@ fr:
           headline: 
           text: 
           button: 
+          message: 
+          email_placeholder: Adresse électronique *
+          name_placeholder: Nom *
+          email: 
+          name: 
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 
@@ -1397,6 +1402,11 @@ fr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: Veuillez entrer une adresse électronique correctement.

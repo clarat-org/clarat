@@ -979,6 +979,11 @@ ru:
           headline: 
           text: 
           button: 
+          message: 
+          email_placeholder: E-Mail адрес *
+          name_placeholder: Имя *
+          email: 
+          name: 
       nav_lang:
         legal_title: Юридический текст clarat можно читать только на немецком языке.
         title: "Автоматический перевод! \n<br><br>\nНекоторые тексты clarat переведены на твой язык Google Translate. Иногда эти тексты могут звучать несколько странно и неправильно. Мы работаем над улучшением качества наших переводов."
@@ -1440,6 +1445,11 @@ ru:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: 'Пожалуйста, введи точный E-Mail адрес.

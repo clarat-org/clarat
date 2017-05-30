@@ -10,9 +10,9 @@
     p.back_to_hp style=("display: none;")
       a href="/refugees" = t('.back_to_hp')
 
-  = f.input :name, label: false, hint: false,
+  = f.input :name, label: false,
                    input_html: { placeholder: t('.name_placeholder') }
-  = f.input :email, label: false, hint: false,
+  = f.input :email, label: false,
                     required: !reporting,
                     input_html: { \
                       placeholder: \

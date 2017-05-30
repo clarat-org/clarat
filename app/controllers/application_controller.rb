@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
     if !cookies[:session]
       write_cookie(date, visited_once)
     elsif !cookies[:session].include?(date) && @current_section
-      update_cookie(date, visited_twice)
+      update_cookie(date, visited_once, visited_twice)
     end
   end
 
@@ -48,9 +48,9 @@ class ApplicationController < ActionController::Base
     }
   end
 
-  def update_cookie(date, visited_twice)
+  def update_cookie(date, visited_once, visited_twice)
     if cookies[:session].include? visited_once
-      write_cookie(date, visited_once)
+      write_cookie(date, visited_twice)
     elsif cookies[:session].include? visited_twice
       redirect_to new_contact_path(popup: true, section: @current_section)
       cookies.delete :session

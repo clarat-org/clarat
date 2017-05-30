@@ -2,9 +2,10 @@
   h2= t 'layouts.partials.modal.popup.headline'
   p.text= t 'layouts.partials.modal.popup.text'
   = simple_form_for @contact do |f|
-    = f.input :name, label: false, placeholder: 'Name*'
-    = f.input :email, label: false, placeholder: 'Email*'
-    = f.hidden_field :message, value: 'Ich möchte an der Umfrage teilnehmen'
+    = f.input :name, label: false, hint: false,
+                   input_html: { placeholder: t('contact.new.name') }
+    = f.input :email, label: false, input_html: { placeholder: t("contact.new.email") }
+    = f.hidden_field :message, value: t('layouts.partials.modal.popup.message')
     = f.button :submit, value: t('layouts.partials.modal.popup.button')
   p.footer = t 'layouts.partials.modal.popup.footer'
 

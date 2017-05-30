@@ -30,25 +30,30 @@ class ApplicationController < ActionController::Base
   end
 
   def session_cookie
-    date = Date.today
+    date = Date.today.to_s
     visited_once  = 'visits=1'
     visited_twice = 'visits=2'
 
     if !cookies[:session]
-      cookies[:session] = {
-        value: "#{date.to_s}, #{visited_once}",
-        expires: 28.days.from_now
-      }
-    elsif !cookies[:session].include? Date.today.to_s and @current_section
-      if cookies[:session].include? visited_once
-        cookies[:session] = {
-          value: "#{date.to_s}, #{visited_twice}",
-          expires: 28.days.from_now
-        }
-      elsif cookies[:session].include? visited_twice
-        redirect_to new_contact_path(popup: true, section: @current_section)
-        cookies.delete :session
-      end
+      write_cookie(date, visited_once)
+    elsif !cookies[:session].include?(date) && @current_section
+      update_cookie(date, visited_twice)
+    end
+  end
+
+  def write_cookie(date, number_of_visits)
+    cookies[:session] = {
+      value: "#{date}, #{number_of_visits}",
+      expires: 28.days.from_now
+    }
+  end
+
+  def update_cookie(date, visited_twice)
+    if cookies[:session].include? visited_once
+      write_cookie(date, visited_once)
+    elsif cookies[:session].include? visited_twice
+      redirect_to new_contact_path(popup: true, section: @current_section)
+      cookies.delete :session
     end
   end
 

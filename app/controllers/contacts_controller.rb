@@ -22,16 +22,22 @@ class ContactsController < ApplicationController
         format.js { render :create, layout: 'modal_create' }
       end
     else
-      if params[:contact][:message].eql? 'Ich möchte an der Umfrage teilnehmen'
-        render :popup
-      else
-        render :new
-      end
+      validation_fail_render
     end
   end
 
   # just a forward action so that a GET to /kontakt works
   def index
     redirect_to :new_contact
+  end
+
+  private
+
+  def validation_fail_render
+    if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')
+      render :popup
+    else
+      render :new
+    end
   end
 end

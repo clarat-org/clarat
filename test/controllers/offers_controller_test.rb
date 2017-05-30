@@ -64,6 +64,29 @@ describe OffersController do
       }
       assert_response :success
     end
+
+    it 'should set the session cookie when none exists' do
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=1")
+    end
+
+    it 'should update the session cookie when page has been visited once on different day' do
+      cookies['session'] = "#{Date.yesterday}, visits=1"
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=2")
+    end
+
+    it 'should not update the session cookie when page has been visited before on same day' do
+      cookies['session'] = "#{Date.today}, visits=1"
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=1")
+    end
+
+    it 'should open modal and reset the session cookie when page has been visited twice on different days' do
+      cookies['session'] = "#{Date.yesterday}, visits=2"
+      get :index, locale: 'de', section: 'refugees'
+      assert_nil(cookies['session'])
+    end
   end
 
   describe "GET 'section_forward'" do

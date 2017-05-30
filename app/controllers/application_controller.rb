@@ -33,11 +33,12 @@ class ApplicationController < ActionController::Base
     date = Date.today.to_s
     visited_once  = 'visits=1'
     visited_twice = 'visits=2'
-
     if !cookies[:session]
       write_cookie(date, visited_once)
     elsif !cookies[:session].include?(date) && @current_section
       update_cookie(date, visited_once, visited_twice)
+    else
+      cookies[:session]
     end
   end
 

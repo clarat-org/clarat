@@ -1884,7 +1884,7 @@ de:
           name: 
   subscriptions:
     create:
-      error: 'Bitte gib eine korrekte E-Mail Adresse ein.'
+      error: Bitte gib eine korrekte E-Mail Adresse ein.
       success: |
         Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
         Adresse gesendet.

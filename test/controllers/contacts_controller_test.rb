@@ -10,6 +10,14 @@ describe ContactsController do
     end
   end
 
+  describe 'GET power user popup contact form' do
+    it 'should work' do
+      get :new, popup: true, locale: 'de', section: 'family'
+      assert_response :success
+      assert_template :popup
+    end
+  end
+
   describe "POST 'create'" do
     it 'should work with valid contact data' do
       contact_attrs = FactoryGirl.attributes_for :contact
@@ -32,6 +40,11 @@ describe ContactsController do
         post :create, locale: 'de', section: 'refugees', contact: { name: '' }
       end
       assert_template :new
+    end
+
+    it 'should not work with empty form data for popup contact form' do
+      post :create, locale: 'de', section: 'refugees', contact: { message: 'Ich möchte an der Umfrage teilnehmen', name: '' }
+      assert_template :popup
     end
   end
 

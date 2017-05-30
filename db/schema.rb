@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170502133942) do
+ActiveRecord::Schema.define(version: 20170521063647) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -621,6 +621,31 @@ ActiveRecord::Schema.define(version: 20170502133942) do
 
   add_index "tags_offers", ["offer_id"], name: "index_tags_offers_on_offer_id", using: :btree
   add_index "tags_offers", ["tag_id"], name: "index_tags_offers_on_tag_id", using: :btree
+
+  create_table "target_audience_filters_offers", force: :cascade do |t|
+    t.integer  "target_audience_filter_id",                   null: false
+    t.integer  "offer_id",                                    null: false
+    t.string   "residency_status"
+    t.string   "gender_first_part_of_stamp"
+    t.string   "gender_second_part_of_stamp"
+    t.string   "addition"
+    t.integer  "age_from"
+    t.integer  "age_to"
+    t.boolean  "age_visible",                 default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "stamp_de"
+    t.string   "stamp_en"
+    t.string   "stamp_ar"
+    t.string   "stamp_fa"
+    t.string   "stamp_fr"
+    t.string   "stamp_tr"
+    t.string   "stamp_ru"
+    t.string   "stamp_pl"
+  end
+
+  add_index "target_audience_filters_offers", ["offer_id"], name: "index_target_audience_filters_offers_on_offer_id", using: :btree
+  add_index "target_audience_filters_offers", ["target_audience_filter_id"], name: "index_ta_filters_offers_on_target_audience_filter_id", using: :btree
 
   create_table "time_allocations", force: :cascade do |t|
     t.integer "user_id",                     null: false

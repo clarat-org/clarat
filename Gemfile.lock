@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 3fbc3d741027ccfe5d08820819cafb95df635b27
+  revision: 5ba38bb3698764505f86f311353caea869700579
   specs:
     clarat_base (0.1.4)
       aasm
@@ -87,13 +87,13 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
-    aws-sdk (2.9.11)
-      aws-sdk-resources (= 2.9.11)
-    aws-sdk-core (2.9.11)
+    aws-sdk (2.9.23)
+      aws-sdk-resources (= 2.9.23)
+    aws-sdk-core (2.9.23)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.11)
-      aws-sdk-core (= 2.9.11)
+    aws-sdk-resources (2.9.23)
+      aws-sdk-core (= 2.9.23)
     aws-sigv4 (1.0.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -170,7 +170,7 @@ GEM
     daemons (1.2.3)
     dalli (2.7.5)
     database_cleaner (1.5.1)
-    debug_inspector (0.0.2)
+    debug_inspector (0.0.3)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
@@ -278,7 +278,7 @@ GEM
       railties (>= 3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
+    mail (2.6.5)
       mime-types (>= 1.16, < 4)
     memcachier (0.0.2)
     memory_test_fix (1.3.0)
@@ -351,7 +351,7 @@ GEM
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.5)
+    rack (1.6.8)
     rack-attack (4.3.0)
       rack
     rack-cache (1.5.1)
@@ -620,7 +620,7 @@ DEPENDENCIES
   memcachier
   memory_test_fix
   meta_request
-  minitest
+  minitest (= 5.10.1)
   minitest-line
   minitest-matchers
   minitest-rails-capybara

@@ -13,8 +13,7 @@
     - cache [@offer, @offer.target_audience_filters.pluck(:id).sort.join(','), @current_section, @locale] do
       .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
         div[itemprop='name']
-          - stamp_method = @current_section == 'family' ? "stamp_family" : "stamp_refugees"
-          = @offer.send(stamp_method, @locale)
+          = @offer.send("stamps_string", @locale)
 
     / Left side (in desktop)
     .section-wrapper-major

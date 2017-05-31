@@ -99,6 +99,7 @@
                 button.big-map_close X
             = render 'offers/show/who_location', offer: @offer,
                                                  markers: @markers
+
           ul.Listing-organizations__list
             - @offer.organizations.order(:name).each do |orga|
               li.Listing-organizations__link

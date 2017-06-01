@@ -85,7 +85,7 @@ class Clarat.Search.Cell.SearchResults
   # breadcrumps to active category
   breadcrumbPath: (@model) ->
     output = ''
-    ancestors = @model.categoryWithAncestors()
+    ancestors = @model.categoryWithAncestors() || []
     last_index = ancestors.length - 1
 
     for category, index in ancestors

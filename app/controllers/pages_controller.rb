@@ -6,12 +6,12 @@ class PagesController < ApplicationController
   def home; end
 
   def about
-    @names = %w(amina andrea anja ann-sophie anna anne astrid basti bettina
+    @names = %w(andrea anja ann-sophie anna anne astrid basti bettina
                 birte chrissy claudia damjan eleonore elisa esther fabian hassan
-                jakob janina janina_m jenny jens jule julia_b julia juliane karo
-                katja konstantin laura_i laura_w line lisa magdalena marie
-                michaela nahla nathalie nils omar patrick philipp sabine sophie
-                stefan tine verena)
+                jakob janina janina_m jenny jule julia_b julia juliane karo
+                katja konstantin laura_i laura_w line magdalena marie
+                michaela nahla nathalie nicole nils omar philipp sabine sophie
+                stefan tian tine verena)
   end
 
   def faq; end

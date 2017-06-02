@@ -26,11 +26,27 @@ class Clarat.GMaps.Operation.ConstructMap
         map: map
         icon: @markerUrl('gmaps_marker_1')
 
+      infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
+      contentString =
+        # if is organization
+        if not markerData.organization_display_name
+          HandlebarsTemplates['map_info_window_organization'](markerData)
+        # if multiple offer locations exist for that marker
+        else if markerData.ids[1] != undefined
+          HandlebarsTemplates['map_info_window_multiple'](
+            new Clarat.GMaps.Cell.MultipleOfferWindow(markerData)
+          )
+        # if a single offer exists for that location
+        else
+          HandlebarsTemplates['map_info_window_offer'](markerData)
+
+      infowindow.setContent contentString
+
       includedPoints.push markerPosition
       bounds.extend markerPosition
 
       # Bind Event Listeners To Marker
-      @_bindMapsEvents map, marker, markerData, canvas
+      @_bindMapsEvents map, marker, markerData, canvas, infowindow
       @_bindMarkerToResults marker, markerData
 
     # Get User Position
@@ -54,7 +70,6 @@ class Clarat.GMaps.Operation.ConstructMap
       includedPoints: includedPoints
     }
 
-
   ### PRIVATE ###
 
   @_isInternetExplorer11: ->
@@ -67,13 +82,11 @@ class Clarat.GMaps.Operation.ConstructMap
     )
 
   # Event bindings for a single marker inside a map
-  @_bindMapsEvents: (map, marker, markerData, canvas) ->
+  @_bindMapsEvents: (map, marker, markerData, canvas, infowindow) ->
 
-    google.maps.event.addListener(
-      marker, 'click', ->
-        $('#map-container').trigger(
-          'Clarat.GMaps::MarkerClick', [marker, markerData]
-        )
+    google.maps.event.addListener(marker, 'click', ->
+      map.setCenter marker.getPosition()
+      infowindow.open(map, marker)
     )
 
     google.maps.event.addListener(

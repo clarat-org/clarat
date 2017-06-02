@@ -10,10 +10,10 @@
         == translation_block @offer.translation_automated? do
           = @offer.name
 
-    - cache [@offer, @offer.target_audience_filters_offers.pluck(:target_audience_filter_id).sort.join(','), @current_section, @locale] do
-      .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
-        div[itemprop='name']
-          = @offer.send("stamps_string", @locale)
+    / Offer Stamp
+    .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
+      div[itemprop='name']
+        = @offer.send("stamps_string", @locale)
 
     / Left side (in desktop)
     .section-wrapper-major

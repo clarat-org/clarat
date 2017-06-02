@@ -918,8 +918,6 @@ en:
           message: I'd like to participate
           email_placeholder: email address *
           name_placeholder: Name *
-          email: 
-          name: 
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-
@@ -1263,6 +1261,8 @@ en:
         “Survive It” by Ghostpoet.
       title: About us
       verena: Verena studied Gender Studies. That means she knows lots about the different genders. And about our society. She's good at sorting things out. She's in clarat's research team. Her favourite song is "Metropolis" by Neonschwarz.
+      nicole: 
+      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-

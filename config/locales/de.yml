@@ -1,5 +1,5 @@
 de:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,7 +25,7 @@ de:
         identifier:
           anonymous: anonym
       update_request: NOTRANSLATE
-  anonymous:
+  anonymous: 
   cells:
     contact_people:
       dr: Dr.
@@ -755,12 +755,12 @@ de:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Warum ist meine Organisation nicht bei clarat?
-  charged:
+  charged: 
   conf:
     current_location: Mein Standort
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential:
+  confidential: 
   contacts:
     create:
       success: Die Nachricht wurde erfolgreich abgeschickt.
@@ -778,11 +778,11 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
-  day_and_night:
+  day_and_night: 
   de:
     en:
-      conf:
-      current_location:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -834,7 +834,7 @@ de:
         (<a href="%{subscribe_href}">wieder anmelden</a>)
   en:
     conf:
-      current_location:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -1040,7 +1040,7 @@ de:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-  free:
+  free: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1353,11 +1353,9 @@ de:
           message: Ich möchte an der Umfrage teilnehmen
           email_placeholder: E-Mail-Adresse *
           name_placeholder: Name *
-          email:
-          name:
       nav_lang:
-        legal_title:
-        title:
+        legal_title: 
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1390,10 +1388,10 @@ de:
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1456,12 +1454,12 @@ de:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
         code_word: 'So heißt die Hilfe beim Anbieter:'
@@ -1481,19 +1479,19 @@ de:
         explanation:
           accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
           anonymous: Das heißt, du musst deinen Namen nicht sagen.
-          charged:
+          charged: 
           confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
-          day_and_night:
-          free:
+          day_and_night: 
+          free: 
         title:
           accessibility: barrierefrei
           anonymous: anonym
           charged: kostenpflichtig
           confidential: vertraulich
           day_and_night: Tag und Nacht
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: kostenlos
       trait_filters_headline: Weitere Informationen
       website_section:
@@ -1650,6 +1648,8 @@ de:
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: Über Uns
       verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
+      nicole: hat Ungarisch studiert. Und sie kann gut Webseiten programmieren. Sie hat immer schnell eine Idee, wie man ein Problem lösen kann. Bei clarat ist sie im IT-Team. Ihr Lieblingssong ist Disorder von Joy Division.
+      tian: hat Wirtschaft studiert. Sie hat immer den Überblick und kann gut mit Zahlen umgehen. Bei clarat ist sie im Research-Team. Und sie kümmert sich um die Qualität unserer Arbeit. Ihr Lieblingssong ist Supergirl von Reamonn.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1872,7 +1872,7 @@ de:
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1880,8 +1880,8 @@ de:
     hints:
       contact:
         new:
-          email:
-          name:
+          email: 
+          name: 
   subscriptions:
     create:
       error: Bitte gib eine korrekte E-Mail Adresse ein.

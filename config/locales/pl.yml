@@ -994,8 +994,6 @@ pl:
           message: 
           email_placeholder: adres e-mail *
           name_placeholder: Imię *
-          email: 
-          name: 
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
@@ -1245,6 +1243,8 @@ pl:
       tine: Jest pedagogiem społecznym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ zespołu Ghostpoet.
       title: " O nas"
       verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” zespołu Oh Wonder.
+      nicole: 
+      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-

@@ -950,8 +950,6 @@ fr:
           message: 
           email_placeholder: Adresse électronique *
           name_placeholder: Nom *
-          email: 
-          name: 
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 
@@ -1193,6 +1191,8 @@ fr:
       tine: C'est une éducatrice sociale. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Cela signifie qu’elle sait écrire de belles histoires. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Survive It de Ghostpoet.
       title: À propos de nous
       verena: Elle fait des études de genre. Ça signifie qu’elle sait beaucoup de choses sur les différents sexes et sur notre société. Elle sait bien s'organiser. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Lose It de Oh Wonder.
+      nicole: 
+      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-

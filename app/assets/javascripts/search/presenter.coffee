@@ -66,6 +66,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
+      @handleChangeToRemote()
 
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults

@@ -514,6 +514,7 @@ tr:
         ber: Ber
         bos: Bos
         bul: Bul
+        bur: Bur
         cau: Cau
         ckb: Ckb
         cpe: Cpe
@@ -524,12 +525,15 @@ tr:
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
         ewo: Ewo
         fas: Fas
         fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        ful: Ful
+        geo: Geo
         hau: Hau
         hbs: Hbs
         heb: Heb
@@ -559,6 +563,7 @@ tr:
         rom: Rom
         ron: Ron
         rus: Rus
+        sdh: Sdh
         skr: Skr
         slo: Slo
         slv: Slv
@@ -567,6 +572,7 @@ tr:
         spa: Spa
         sqi: Sqi
         srp: Srp
+        sus: Sus
         swa: Swa
         swe: Swe
         tam: Tam
@@ -594,6 +600,8 @@ tr:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+  formtastic:
+    required: required
   free: 
   js:
     ajax_error:
@@ -861,19 +869,19 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        popup:
+          button: 
+          email_placeholder: E-Mail Adresi *
+          footer: 
+          headline: 
+          message: 
+          name_placeholder: İsim *
+          text: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
-        popup:
-          footer: 
-          headline: 
-          text: 
-          button: 
-          message: 
-          email_placeholder: E-Mail Adresi *
-          name_placeholder: İsim *
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -1037,6 +1045,8 @@ tr:
       what:
         code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
         heading: Konu nedir?
+        offertaxonomy:
+          heading: 
       who: Nerede yardım bulabilirim?
       who_contact_people:
         dr: Dr.
@@ -1116,6 +1126,7 @@ tr:
       michaela: 
       nahla: 
       nathalie: 
+      nicole: 
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
@@ -1128,11 +1139,10 @@ tr:
       sophie: 
       stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
       text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
+      tian: 
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
-      nicole: 
-      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1304,6 +1314,7 @@ tr:
     haeufige-fragen: sıkça-sorulan-sorular
     home: 
     impressum: künye
+    kontakt: 
     liste: 
     liste-de-services: 
     new: yeni
@@ -1336,6 +1347,14 @@ tr:
           family: Buraya tıkladığında clarat Family erişebilirsin. clarat Family'de çocuklar, gençler ve aileler için destek arayabilirsin.
           refugees: Buraya tıkladığında clarat Refugees'e erişebilirsin. clarat Refugees'de mülteciler için destek arayabilirsin.
   simple_form:
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
+        show:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:
@@ -1344,11 +1363,6 @@ tr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
-    hints:
-      contact:
-        new:
-          email: 
-          name: 
   subscriptions:
     create:
       error: 'Lütfen doğru bir E-Mail adresi giriniz.

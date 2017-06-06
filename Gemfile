@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 
 gem 'nokogiri', '1.6.7.2' # 1.6.8 doesnt install on some pcs. Remove when fixed
+gem 'nokogumbo', '1.4.11' # 1.4.12 causes problems on heroku (see https://github.com/rubys/nokogumbo/issues/61)
 
 ###########
 # General #

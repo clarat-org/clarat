@@ -1,13 +1,6 @@
 GIT
-  remote: git://github.com/efqdalton/dynamic_sitemaps.git
-  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
-  branch: adds-custom-storages
-  specs:
-    dynamic_sitemaps (2.0.0)
-      aws-sdk
-
-PATH
-  remote: ../clarat_base
+  remote: git://github.com/clarat-org/clarat_base.git
+  revision: f8dbc4e3f512572312094385a7bfeebc9c7d5196
   specs:
     clarat_base (0.1.4)
       aasm
@@ -27,6 +20,14 @@ PATH
       sanitize
       sidekiq (~> 4.1.2)
       web-console (~> 2.0)
+
+GIT
+  remote: git://github.com/efqdalton/dynamic_sitemaps.git
+  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
+  branch: adds-custom-storages
+  specs:
+    dynamic_sitemaps (2.0.0)
+      aws-sdk
 
 GEM
   remote: https://rubygems.org/
@@ -167,11 +168,11 @@ GEM
     daemons (1.2.3)
     dalli (2.7.5)
     database_cleaner (1.5.1)
-    debug_inspector (0.0.2)
+    debug_inspector (0.0.3)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     docile (1.1.5)
-    domain_name (0.5.20170223)
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
@@ -206,14 +207,14 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.1)
       activerecord (>= 4.0.0)
-    geocoder (1.4.3)
+    geocoder (1.4.4)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
     git-version-bump (0.15.1)
     gli (2.16.0)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
     haml (4.0.7)
       tilt
     hamlbars (2.1.1)
@@ -242,7 +243,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.8.1)
+    i18n (0.8.4)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
     ice_nine (0.11.1)
@@ -275,7 +276,7 @@ GEM
       railties (>= 3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
+    mail (2.6.5)
       mime-types (>= 1.16, < 4)
     memcachier (0.0.2)
     memory_test_fix (1.3.0)
@@ -289,7 +290,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.99.3)
     mini_portile2 (2.0.0)
-    minitest (5.10.1)
+    minitest (5.10.2)
     minitest-capybara (0.7.2)
       capybara (~> 2.2)
       minitest (~> 5.0)
@@ -316,9 +317,9 @@ GEM
     newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.10)
+    nokogumbo (1.4.12)
       nokogiri
-    paper_trail (7.0.2)
+    paper_trail (7.0.3)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)
@@ -348,7 +349,7 @@ GEM
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.5)
+    rack (1.6.8)
     rack-attack (4.3.0)
       rack
     rack-cache (1.5.1)
@@ -463,7 +464,7 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.4.0)
+    sanitize (4.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4.1)
@@ -546,7 +547,7 @@ GEM
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
+    unf_ext (0.0.7.4)
     uniform_notifier (1.9.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)

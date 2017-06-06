@@ -18,7 +18,6 @@ class Clarat.Search.Cell.SearchResults
     main_count: @mainResults.nbHits
     main_results_query: @mainResultsQuery()
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
-    section: $('body').data('section')
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
     algolia_logo_path: image_path('banner--powered-by-algolia.svg')
@@ -86,7 +85,7 @@ class Clarat.Search.Cell.SearchResults
   # breadcrumps to active category
   breadcrumbPath: (@model) ->
     output = ''
-    ancestors = @model.categoryWithAncestors()
+    ancestors = @model.categoryWithAncestors() || []
     last_index = ancestors.length - 1
 
     for category, index in ancestors
@@ -97,7 +96,7 @@ class Clarat.Search.Cell.SearchResults
 
   # Add additional values to search results (for hamlbars)
   addValuesToSearchResults: =>
-    stamp_variable_name = 'stamp_' + $('body').data('section')
+    stamp_variable_name = 'singular_stamp'
     for item in (@mainResults.hits)
       item.organization_display_name =
           if item.organization_count == 1 then item.organization_names else I18n.t("js.search_results.map.cooperation")

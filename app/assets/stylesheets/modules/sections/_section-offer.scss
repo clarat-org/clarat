@@ -50,13 +50,17 @@
       margin: 6px 15px 0 0;
       border-bottom: 1px dashed transparent;
 
+      html[dir="rtl"] & {
+        float: right;
+      }
+
       &[title] {
         border-color: $brand_brown;
       }
     }
   }
 
-  .section-content--what {
+  .section-content--editiorial {
 
     ul {
       margin: .66em 0;

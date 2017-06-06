@@ -59,6 +59,11 @@
   color: $brand_orange;
   font-size: 22px;
 
+  html[dir="rtl"] & {
+    left: 15px;
+    right: auto;
+  }
+
   &:hover {
     cursor: pointer;
   }

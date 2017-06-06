@@ -1,4 +1,4 @@
-- provide :title, @offer.name
+- provide :meta_title, @offer.name + ' | clarat'
 - provide :meta_description, @offer.description.gsub(/<("[^"]*"|'[^']*'|[^'">])*>/, '').first(154) + '…'
 - content_for :canonical_url,
               offer_url(section: @offer.canonical_section, id: @offer.slug)
@@ -10,11 +10,10 @@
         == translation_block @offer.translation_automated? do
           = @offer.name
 
-    - cache [@offer, @offer.target_audience_filters.pluck(:id).sort.join(','), @current_section, @locale] do
-      .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
-        div[itemprop='name']
-          - stamp_method = @current_section == 'family' ? "stamp_family" : "stamp_refugees"
-          = @offer.send(stamp_method, @locale)
+    / Offer Stamp
+    .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
+      div[itemprop='name']
+        = @offer.send("stamps_string", @locale)
 
     / Left side (in desktop)
     .section-wrapper-major
@@ -24,8 +23,18 @@
           = t '.what.heading'
           == automation_warning @offer.translation_automated?
         .section-content__body
-          == translation_block @offer.translation_automated? do
-            == @offer.description
+          .section-content--editiorial
+            == translation_block @offer.translation_automated? do
+              == @offer.description
+          .Offer-taxonomy
+            h4.Offer-taxonomy__headline = t '.what.offertaxonomy.heading'
+            ul.Offer-taxonomy__list
+              - @offer.categories.each do |cat|
+                li.Offer-taxonomy__listitem
+                  = cat.send("name_#{locale}") == nil ? cat.name_en : cat.send("name_#{locale}")
+              - @offer.tags.each do |tag|
+                li.Offer-taxonomy__listitem
+                  = tag.send("name_#{locale}") == nil ? tag.name_en : tag.send("name_#{locale}")
 
       / What to do next?
       = render 'offers/show/next_steps', offer: @offer

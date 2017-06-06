@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 describe OffersController do
@@ -16,12 +17,6 @@ describe OffersController do
         get :show, id: offer.slug, locale: 'de', section: 'family'
         assert_includes response.body,
                         "http://test.host/family/angebote/#{offer.slug}"
-      end
-
-      it 'should redirect if the wrong section was given' do
-        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
-        get :show, id: offer.slug, locale: 'de', section: 'family'
-        assert_redirected_to section: 'refugees'
       end
 
       it 'shouldnt show on unapproved offer' do
@@ -53,13 +48,6 @@ describe OffersController do
         assert_includes response.body,
                         "http://test.host/family/angebote/#{offer.slug}"
       end
-
-      it 'should redirect if the wrong section was given' do
-        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
-        offer.update_columns aasm_state: 'expired'
-        get :show, id: offer.slug, locale: 'de', section: 'family'
-        assert_redirected_to section: 'refugees'
-      end
     end
   end
 
@@ -76,17 +64,32 @@ describe OffersController do
       }
       assert_response :success
     end
+
+    it 'should set the session cookie when none exists' do
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=1")
+    end
+
+    it 'should update the session cookie when page has been visited once on different day' do
+      cookies['session'] = "#{Date.yesterday}, visits=1"
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=2")
+    end
+
+    it 'should not update the session cookie when page has been visited before on same day' do
+      cookies['session'] = "#{Date.today}, visits=1"
+      get :index, locale: 'de', section: 'refugees'
+      assert_includes(cookies['session'], "#{Date.today}, visits=1")
+    end
+
+    it 'should open modal and reset the session cookie when page has been visited twice on different days' do
+      cookies['session'] = "#{Date.yesterday}, visits=2"
+      get :index, locale: 'de', section: 'refugees'
+      assert_nil(cookies['session'])
+    end
   end
 
   describe "GET 'section_forward'" do
-    it 'should redirect to the default location if it has both sections' do
-      offer = FactoryGirl.create :offer, :approved
-      offer.section_filters = [filters(:family), filters(:refugees)]
-      get :section_forward, id: offer.slug, locale: 'de'
-      assert_redirected_to controller: 'offers', action: 'show',
-                           section: SectionFilter::DEFAULT
-    end
-
     it 'should redirect to the family section if it has only that one' do
       offer = FactoryGirl.create :offer, :approved, section: 'family'
       get :section_forward, id: offer.slug, locale: 'de'

@@ -1345,6 +1345,14 @@ de:
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
+        popup:
+          footer: "* Dein Name und deine E-Mail-Adresse werden ausschließlich zur Kontaktaufnahme verarbeitet. Du abonnierst keinen Newsletter und deine E-Mail-Adresse wird nicht an Dritte weitergegeben."
+          headline: 20 Euro für deine Meinung
+          text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+          button: Ja, bitte
+          message: Ich möchte an der Umfrage teilnehmen
+          email_placeholder: E-Mail-Adresse *
+          name_placeholder: Name *
       nav_lang:
         legal_title: 
         title: 
@@ -1505,6 +1513,8 @@ de:
       what:
         code_word: 'So heißt die Hilfe beim Anbieter:'
         heading: Worum geht's?
+        offertaxonomy:
+          heading: 'Hier kennt man sich aus mit:'
       who: Wo bekommst du diese Hilfe?
       who_contact_people:
         dr: Dr.
@@ -1616,7 +1626,7 @@ de:
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
         er lernt schnell. Bei clarat ist er im IT-Team. Sein Lieblingssong ist
         Jein von Fettes Brot.
-      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut Internetseiten programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im IT-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
+      omar: Hat Computer-Ingenieurwesen studiert. Er kann gut programmieren und schnell komplizierte Dinge verstehen. Bei clarat ist er im Marketing-Team. Sein Lieblingssong ist Nothing Else Matters von Metallica.
       patrick: Hat Geschichte und Politik studiert. Er weiß besonders viel über das Land Jamaika. Er kann gut komplizierte Dinge verstehen. Bei clarat ist er im Research-Team. Sein Lieblingssong ist Kingston Be Wise von Protoje.
       philipp: Hat Geschichte, Politik und Recht studiert. Er kann gut komplizierte Sachen verstehen. Bei clarat ist er im Research-Team. Und er sorgt dafür, dass wir gut arbeiten können. Sein Lieblingssong ist This Is Our Science von Astronautalis.
       sabine: Ist Soziologin. Das heißt, sie weiß viel über die Gesellschaft. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team. Und sie erklärt uns die deutschen Asylgesetze. ihr Lieblingssong ist Vesna von Kino.
@@ -1638,6 +1648,8 @@ de:
       tine: Ist Sozialpädagogin. Sie kann Menschen gut zuhören. Sie ist auch Schriftstellerin. Das heißt, sie kann gut schöne Geschichten schreiben. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist Survive It von Ghostpoet.
       title: Über Uns
       verena: Studiert Gender Studies. Das heißt, sie weiß viel über die verschiedenen Geschlechter. Und über unsere Gesellschaft. Sie kann gut ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Metropolis von Neonschwarz.
+      nicole: hat Ungarisch studiert. Und sie kann gut Webseiten programmieren. Sie hat immer schnell eine Idee, wie man ein Problem lösen kann. Bei clarat ist sie im IT-Team. Ihr Lieblingssong ist Disorder von Joy Division.
+      tian: hat Wirtschaft studiert. Sie hat immer den Überblick und kann gut mit Zahlen umgehen. Bei clarat ist sie im Research-Team. Und sie kümmert sich um die Qualität unserer Arbeit. Ihr Lieblingssong ist Supergirl von Reamonn.
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1865,11 +1877,14 @@ de:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
-      error: 'Bitte gib eine korrekte E-Mail Adresse ein.
-
-'
+      error: Bitte gib eine korrekte E-Mail Adresse ein.
       success: |
         Vielen Dank, wir haben soeben einen Bestätigungslink an deine E-Mail
         Adresse gesendet.

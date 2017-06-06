@@ -112,7 +112,7 @@ li[class^="FAQ__ico"] {
   position: relative;
   margin-bottom: 0;
   padding: 0 1em;
-  height: 40px;
+  min-height: 40px;
   background: $brand_blue;
   color: $brand_white;
 

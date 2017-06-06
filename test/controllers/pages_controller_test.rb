@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 describe PagesController do
@@ -9,7 +10,7 @@ describe PagesController do
 
     it 'should use a a correct canonical URL' do
       get :home, locale: 'de', section: 'family'
-      assert_includes response.body, 'http://test.host/refugees'
+      assert_includes response.body, 'http://test.host/family'
     end
   end
 

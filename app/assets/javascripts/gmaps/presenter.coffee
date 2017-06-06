@@ -12,7 +12,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
     @markers = @data.data('markers') unless @markers
     @mapOptions = @data.data('options') or {}
     @uiOptions = @data.data('ui') or {}
-    @infowindow = new (google.maps.InfoWindow)({ maxWidth: 200 })
     return unless @markers
 
     # For Issue #783
@@ -27,7 +26,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
   CALLBACKS:
     '#map-container':
       mousedown: 'handleMapClick'
-      'Clarat.GMaps::MarkerClick': 'handleMarkerClick'
       'Clarat.GMaps::MarkerMouseOver': 'handleMarkerMouseOver'
       'Clarat.GMaps::MarkerMouseOut': 'handleMarkerMouseOut'
       'Clarat.GMaps::MapClick': 'handleNativeMapClick'
@@ -51,29 +49,6 @@ class Clarat.GMaps.Presenter extends ActiveScript.Presenter
         @currentMap.bounds.getCenter()
       )
       @currentMap.instance.setZoom 15
-
-  # called by library internally; listener set in Operations.ConstructMap
-  handleMarkerClick: (event, marker, markerData) =>
-    # render template for marker's info window
-    contentString =
-      # if is organization
-      if not markerData.organization_display_name
-        HandlebarsTemplates['map_info_window_organization'](markerData)
-
-      # if multiple offer locations exist for that marker
-      else if markerData.ids[1] != undefined
-        HandlebarsTemplates['map_info_window_multiple'](
-          new Clarat.GMaps.Cell.MultipleOfferWindow(markerData)
-        )
-
-      # if a single offer exists for that location
-      else
-        HandlebarsTemplates['map_info_window_offer'](markerData)
-
-    @currentMap.instance.setCenter marker.getPosition()
-    @infowindow.close()
-    @infowindow.setContent contentString
-    @infowindow.open @currentMap.instance, marker
 
   handleMarkerMouseOver: (_event, marker, markerData) =>
     for id in markerData.ids

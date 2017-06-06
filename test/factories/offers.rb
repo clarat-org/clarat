@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -10,7 +11,7 @@ FactoryGirl.define do
     age_to { rand(4..6) }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course portal fax letter).sample
+      %w(personal personal personal personal hotline chat forum email online-course portal).sample
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
@@ -57,16 +58,13 @@ FactoryGirl.define do
       end
       # Filters
       section = evaluator.section
-      if section
-        offer.section_filters << (
-          SectionFilter.find_by_identifier(section) ||
-            FactoryGirl.create(:section_filter, identifier: section)
-        )
-      else
-        offer.section_filters << (
-          SectionFilter.all.sample || FactoryGirl.create(:section_filter)
-        )
-      end
+      offer.section =
+        if section
+          Section.find_by(identifier: section) ||
+          FactoryGirl.create(:section, identifier: section)
+        else
+          Section.all.sample || FactoryGirl.create(:section)
+        end
       evaluator.language_count.times do
         offer.language_filters << (
           LanguageFilter.all.sample || FactoryGirl.create(:language_filter)
@@ -102,7 +100,7 @@ FactoryGirl.define do
       end
       evaluator.opening_count.times do
         offer.openings << (
-          if Opening.count != 0 && rand(2) == 0
+          if Opening.count != 0 && rand(2).zero?
             Opening.select(:id).all.sample
           else
             FactoryGirl.create(:opening)
@@ -158,10 +156,10 @@ FactoryGirl.define do
       end
     end
 
-    trait :with_markdown_and_definition do
+    trait :with_markdown do
       after :create do |offer, _evaluator|
-        offer.update_column :description, Definition.infuse(
-          MarkdownRenderer.render(offer.untranslated_description)
+        offer.update_column :description, MarkdownRenderer.render(
+          offer.untranslated_description
         )
         offer.update_column :old_next_steps, MarkdownRenderer.render(
           offer.untranslated_old_next_steps
@@ -172,5 +170,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

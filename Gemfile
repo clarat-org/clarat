@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 ruby '2.3.3'
 
@@ -217,7 +218,7 @@ group :development, :test do
   gem 'pry-doc' # read ruby docs in console
 
   # test suite
-  gem 'minitest' # Testing using Minitest
+  gem 'minitest', '5.10.1' # Testing using Minitest
   gem 'minitest-matchers'
   gem 'minitest-line'
   gem 'launchy' # save_and_open_page

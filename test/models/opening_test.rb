@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 describe Opening do
@@ -22,7 +23,7 @@ describe Opening do
       it 'should output a special string when there are no open/close times' do
         opening.close = nil
         opening.display_string.must_equal(
-          I18n.t 'opening.display_string.appointment'
+          I18n.t('opening.display_string.appointment')
         )
       end
 

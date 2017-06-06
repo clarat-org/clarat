@@ -46,7 +46,6 @@
   .Logo--notstart {
     display: none;
 
-
     html[dir="rtl"] & {
       margin-right: 15px;
     }
@@ -222,7 +221,6 @@
       padding-left: 53px;
     }
 
-
     .main-search__submit {
       position: absolute;
       top: 10px;
@@ -249,7 +247,6 @@
         left: auto;
       }
 
-
       .template--pages-home & {
         position: relative;
         top: 0;
@@ -262,7 +259,6 @@
         display: block;
         padding-right: 55px;
         width: 100%;
-
 
         .template--pages-home & {
           height: 40px;
@@ -435,6 +431,10 @@
     display: none;
   }
 
+  .Offer-taxonomy__listitem {
+    font-size: 13px;
+  }
+
   .content-main {
 
     .template--pages-home & {
@@ -557,7 +557,7 @@
   .section-choice {
     transform: none;
     left: auto;
-    width: auto;
+    width: 100%;
     margin: 0 10px;
   }
 

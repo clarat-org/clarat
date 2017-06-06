@@ -986,6 +986,14 @@ pl:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
+        popup:
+          footer: 
+          headline: 
+          text: 
+          button: 
+          message: 
+          email_placeholder: adres e-mail *
+          name_placeholder: Imię *
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
@@ -1235,6 +1243,8 @@ pl:
       tine: Jest pedagogiem społecznym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ zespołu Ghostpoet.
       title: " O nas"
       verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” zespołu Oh Wonder.
+      nicole: 
+      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1440,6 +1450,11 @@ pl:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: Proszę wpisz poprawny adres e-mail.

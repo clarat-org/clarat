@@ -37,5 +37,5 @@ div.Distributor__search-form
       = f.input :exclusive_gender, as: :hidden
       = f.input :language, as: :hidden
       = f.input :sort_order, as: :hidden
-      = f.input :section, as: :hidden
-    button.main-search__submit = t '.button'
+      = f.input :section_identifier, as: :hidden
+    button.main-search__submit[type="submit"] = t '.button'

@@ -866,6 +866,14 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+        popup:
+          footer: 
+          headline: 
+          text: 
+          button: 
+          message: 
+          email_placeholder: E-Mail Adresi *
+          name_placeholder: İsim *
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -1123,6 +1131,8 @@ tr:
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
+      nicole: 
+      tian: 
     agb:
       heading: Rechtliche Hinweise
       text_html: |-
@@ -1334,6 +1344,11 @@ tr:
       html: <abbr title="required">*</abbr>
       mark: "*"
       text: required
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
   subscriptions:
     create:
       error: 'Lütfen doğru bir E-Mail adresi giriniz.

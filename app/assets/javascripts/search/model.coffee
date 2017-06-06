@@ -72,7 +72,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     )
 
   nearby_query: ->
-    new Clarat.Search.Query.Nearby @generated_geolocation, @section
+    new Clarat.Search.Query.Nearby @generated_geolocation, @section_identifier
 
   personal_facet_query: ->
     if @isPersonal()
@@ -93,15 +93,16 @@ class Clarat.Search.Model extends ActiveScript.Model
     @contact_type == 'personal'
 
   ADVANCED_SEARCH_FILTERS: [
-    'age', 'target_audience', 'exclusive_gender', 'language', 'encounter',
-    'section'
+    'age', 'target_audience', 'exclusive_gender', 'language', 'encounter'
   ]
 
   facetFilters: ->
-    @ADVANCED_SEARCH_FILTERS.map((type) =>
+    filterArray = @ADVANCED_SEARCH_FILTERS.map((type) =>
       filter = @[type]
       if filter then "_#{type}_filters:#{filter}" else null
     ).filter (element) -> element # compact / remove all falsey values
+    filterArray.push("section_identifier:#{@section_identifier}")
+    filterArray
 
   # # wide radius or use exact location
   # search_radius: ->

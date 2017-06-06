@@ -1,7 +1,7 @@
 # inherit_from: rubocop_todo.yml
 
 AllCops:
-  RunRailsCops: true
+  TargetRubyVersion: 2.3
   Exclude:
     - 'db/**/*'
     - 'vendor/**/*'
@@ -10,6 +10,7 @@ AllCops:
     - 'config/initializers/**/*'
     - 'test/test_helper.rb'
     - 'test/support/**/*'
+    - 'lib/tasks/**/*'
 
 HasAndBelongsToMany:
   Enabled: false
@@ -40,3 +41,28 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 16
+
+Rails:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+LambdaCall:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/SingleLineMethods:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+HttpPositionalArguments:
+  Enabled: false
+
+# only alphabetical sort
+Bundler/OrderedGems:
+  Enabled: false

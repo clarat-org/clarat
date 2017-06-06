@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Form object to render form elements and links. Rest is handled in JS.
 class SearchForm
   # Turn into quasi ActiveModel #
@@ -25,12 +26,12 @@ class SearchForm
 
   # Filters
 
-  CONTACT_TYPES = [:personal, :remote]
+  CONTACT_TYPES = [:personal, :remote].freeze
   attribute :contact_type, String, default: :personal
   enumerize :contact_type, in: CONTACT_TYPES
   ### Age
   attribute :age, String
-  enumerize :age, in: Offer::MIN_AGE..Offer::MAX_AGE
+  enumerize :age, in: TargetAudienceFiltersOffer::MIN_AGE..TargetAudienceFiltersOffer::MAX_AGE
   ### Language
   attribute :language, String
   enumerize :language, in: LanguageFilter::IDENTIFIER
@@ -45,18 +46,18 @@ class SearchForm
   attribute :sort_order, String, default: :nearby
   enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
-  attribute :section, String, default: :family
-  enumerize :section, in: SectionFilter::IDENTIFIER
+  attribute :section_identifier, String, default: :family
 
   # Methods #
 
   def initialize cookies, *attrs
     super(*attrs)
-
     return if exact_location
     if search_location.blank? # Blank location => use cookies or default fallback
       load_geolocation_values!(cookies)
-    elsif search_location && search_location != I18n.t('conf.current_location')
+    elsif (current_location_list.include? search_location) && generated_geolocation.present? # if geolocation has been set, use it!
+      generated_geolocation
+    else
       self.generated_geolocation = search_location_instance.geoloc
     end
   end
@@ -73,5 +74,11 @@ class SearchForm
   def search_location_instance
     @_search_location_instance ||=
       SearchLocation.find_or_generate(search_location)
+  end
+
+  def current_location_list
+    %i(ar de en fa fr pl ru tr).map do |t|
+      I18n.backend.send(:translations)[t][:conf][:current_location]
+    end
   end
 end

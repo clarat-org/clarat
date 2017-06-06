@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -36,7 +37,7 @@ FactoryGirl.define do
         orga.websites << website
       end
       # Locations
-      if evaluator.location_count > 0
+      if evaluator.location_count.positive?
         orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
       end
       if evaluator.location_count > 1
@@ -69,5 +70,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

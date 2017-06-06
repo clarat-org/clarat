@@ -5,7 +5,11 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new url: request.referer
-    respond_with @contact
+    if params[:popup]
+      render :popup
+    else
+      respond_with @contact
+    end
   end
 
   def create
@@ -18,12 +22,22 @@ class ContactsController < ApplicationController
         format.js { render :create, layout: 'modal_create' }
       end
     else
-      render :new
+      validation_fail_render
     end
   end
 
   # just a forward action so that a GET to /kontakt works
   def index
     redirect_to :new_contact
+  end
+
+  private
+
+  def validation_fail_render
+    if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')
+      render :popup
+    else
+      render :new
+    end
   end
 end

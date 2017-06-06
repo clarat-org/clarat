@@ -21,12 +21,41 @@ class ApplicationController < ActionController::Base
     response.headers['Expires'] = 'Fri, 01 Jan 1990 00:00:00 GMT'
   end
 
-  before_action :note_current_section
+  before_action :note_current_section, :session_cookie
 
   private
 
   def note_current_section
     @current_section = params[:section] || 'refugees'
+  end
+
+  def session_cookie
+    date = Date.today.to_s
+    visited_once  = 'visits=1'
+    visited_twice = 'visits=2'
+    if !cookies[:session]
+      write_cookie(date, visited_once)
+    elsif !cookies[:session].include?(date) && @current_section
+      update_cookie(date, visited_once, visited_twice)
+    else
+      cookies[:session]
+    end
+  end
+
+  def write_cookie(date, number_of_visits)
+    cookies[:session] = {
+      value: "#{date}, #{number_of_visits}",
+      expires: 28.days.from_now
+    }
+  end
+
+  def update_cookie(date, visited_once, visited_twice)
+    if cookies[:session].include? visited_once
+      write_cookie(date, visited_twice)
+    elsif cookies[:session].include? visited_twice
+      redirect_to new_contact_path(popup: true, section: @current_section)
+      cookies.delete :session
+    end
   end
 
   ### Standard 404 Error ###

@@ -590,6 +590,7 @@ fr:
         ber: Ber
         bos: Bos
         bul: Bul
+        bur: Bur
         cau: Cau
         ckb: Ckb
         cpe: Cpe
@@ -600,12 +601,15 @@ fr:
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
         ewo: Ewo
         fas: Fas
         fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        ful: Ful
+        geo: Geo
         hau: Hau
         hbs: Hbs
         heb: Heb
@@ -635,6 +639,7 @@ fr:
         rom: Rom
         ron: Ron
         rus: Rus
+        sdh: Sdh
         skr: Skr
         slo: Slo
         slv: Slv
@@ -643,6 +648,7 @@ fr:
         spa: Spa
         sqi: Sqi
         srp: Srp
+        sus: Sus
         swa: Swa
         swe: Swe
         tam: Tam
@@ -670,6 +676,8 @@ fr:
       sort_order:
         nearby: À proximité
         relevance: Pertinence
+  formtastic:
+    required: required
   free: 
   js:
     ajax_error:
@@ -941,6 +949,14 @@ fr:
         beta_modal:
           link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
+        popup:
+          button: 
+          email_placeholder: Adresse électronique *
+          footer: 
+          headline: 
+          message: 
+          name_placeholder: Nom *
+          text: 
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
@@ -1097,6 +1113,8 @@ fr:
       what:
         code_word: 'Chez ce fournisseur, l''aide s’appelle :'
         heading: De quoi s'agit-il?
+        offertaxonomy:
+          heading: 
       who: Qui propose cette aide ?
       who_contact_people:
         dr: Dr.
@@ -1172,6 +1190,7 @@ fr:
       michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
       nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.
       nathalie: Elle a étudié la politique internationale et les droits de l'homme. Elle sait bien expliquer et elle sait aussi bien écouter. Elle fait partie de l'équipe de recherche de clarat. Sa chanson préférée est Me in You des Kings of Convenience.
+      nicole: 
       nils: Est informaticien. Ça signifie qu’il sait bien programmer des logiciels et des sites internet. Il trouve toujours de bonnes solutions et il apprend vite. Chez clarat, il est dans l’équipe TI. Sa chanson préférée est Jein de Fettes Brot.
       omar: 
       patrick: 
@@ -1180,6 +1199,7 @@ fr:
       sophie: Elle a étudié le management des organisations à but non lucratif. Elle a une bonne organisation et repère facilement ce qui est important. Elle fait partie de l'équipe de recherche de clarat. Elle découvre également qui utilise clarat et de quelle façon. Sa chanson préférée est Lost de Frank Ocean.
       stefan: C'est un spécialiste en sciences culturelles. Cela signifie qu’il sait beaucoup de choses sur la culture et la société. Il a un don pour enthousiasmer les gens. Et il est l’inventeur de clarat. Sa chanson préférée est Riders On The Storm de The Doors.
       text: 'clarat est un projet de la fondation à but non lucratif Benckiser (www.benckiser-stiftung.org). Depuis de nombreuses années, nous promouvons avec la Fondation Benckiser des projets efficaces pour aider les enfants et les jeunes. Quelque chose nous a frappé encore et toujours: Il est difficile de découvrir, quels  services de soutien existent réellement. Et alors, on s’est rendus compte d’une chose: Si déjà pour nous – des experts – c’est compliqué d’avoir une vue d’ensemble du secteur, qu’est-ce que ça  doit être pour des enfants, des ados et des familles, qui ont vraiment besoin d’aide? Ou pour des réfugiées, qui ne connaissent pas encore l’Allemagne? La réponse: C’est très difficile! Et c’est ainsi que  l’idée de clarat est née: Trouver facilement de l’aide. Pour les familles sur clarat family. Et pour les réfugiés sur clarat refugees.'
+      tian: 
       tine: C'est une éducatrice sociale. Elle sait être à l’écoute des gens. Elle est aussi écrivaine. Cela signifie qu’elle sait écrire de belles histoires. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Survive It de Ghostpoet.
       title: À propos de nous
       verena: Elle fait des études de genre. Ça signifie qu’elle sait beaucoup de choses sur les différents sexes et sur notre société. Elle sait bien s'organiser. Elle fait partie de l’équipe de recherche de clarat. Sa chanson préférée est Lose It de Oh Wonder.
@@ -1357,6 +1377,7 @@ fr:
     haeufige-fragen: questions-fréquentes
     home: page de démarrage
     impressum: impression
+    kontakt: 
     liste: liste
     liste-de-services: iste de services
     new: nouveau
@@ -1384,6 +1405,14 @@ fr:
           family: En cliquant ici, tu te retrouves sur clarat family. Sur clarat family, tu peux faire recherche pour de l'aide pour des enfants, des ados et des familles.
           refugees: en cliquant ici, tu te retrouves sur clarat Refugees. Sur clarat Refugees, tu peux faire une recherche d'aide pour les réfugiés.
   simple_form:
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
+        show:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:

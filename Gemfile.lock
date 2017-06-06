@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: acd1369c6cc1918b1bfa007b16f7d7e0c63b1f95
+  revision: f8dbc4e3f512572312094385a7bfeebc9c7d5196
   specs:
     clarat_base (0.1.4)
       aasm
@@ -321,7 +321,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.11)
       nokogiri
-    paper_trail (7.0.2)
+    paper_trail (7.0.3)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)
@@ -466,7 +466,7 @@ GEM
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     safe_yaml (1.0.4)
-    sanitize (4.4.0)
+    sanitize (4.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
       nokogumbo (~> 1.4.1)
@@ -627,6 +627,7 @@ DEPENDENCIES
   mocha
   newrelic_rpm
   nokogiri (= 1.6.7.2)
+  nokogumbo (= 1.4.11)
   pg
   pry-byebug
   pry-doc

@@ -67,6 +67,17 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     else
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
+    @tooltipActive = false
+    startHover = $.now()
+
+    $('dfn.JS-tooltip').hover (->
+      startHover = $.now()
+    ), ->
+      endHover = $.now()
+      msHovered = endHover - startHover
+      if (msHovered / 1000) >= 1
+        @tooltipActive = true
+
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
     if @goalOffset
@@ -77,7 +88,11 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         "isGoogleTranslation:#{@automatedTranslation};",
         @pageViewTime
       )
-
+    if @tooltipActive
+      ga?(
+        'send', 'event', 'PageView', 'unload', "tooltipActive:#{@tooltipActive}",
+        @pageViewTime
+      )
 
 $(document).ready ->
   new Clarat.Analytics.Presenter

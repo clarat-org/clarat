@@ -67,16 +67,20 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     else
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
-    @tooltipActive = false
+
     startHover = $.now()
 
     $('dfn.JS-tooltip').hover (->
       startHover = $.now()
     ), ->
       endHover = $.now()
-      msHovered = endHover - startHover
-      if (msHovered / 1000) >= 1
-        @tooltipActive = true
+      keyword = $(this).html()
+      sHovered = (endHover - startHover)/1000
+      if (sHovered) >= 1
+        ga?(
+          'send', 'event', 'TooltipRead', 'hoverout', 'tooltipActive:true;' +
+          "keyword:#{keyword}", sHovered
+        )
 
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
@@ -88,11 +92,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         "isGoogleTranslation:#{@automatedTranslation};",
         @pageViewTime
       )
-    if @tooltipActive
-      ga?(
-        'send', 'event', 'PageView', 'unload', "tooltipActive:#{@tooltipActive}",
-        @pageViewTime
-      )
+
 
 $(document).ready ->
   new Clarat.Analytics.Presenter

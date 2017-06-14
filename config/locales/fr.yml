@@ -954,7 +954,7 @@ fr:
           email_placeholder: Adresse électronique *
           footer: 
           headline: 
-          message: 
+          message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Nom *
           text: 
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"

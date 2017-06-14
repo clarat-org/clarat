@@ -998,7 +998,7 @@ pl:
           email_placeholder: adres e-mail *
           footer: 
           headline: 
-          message: 
+          message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Imię *
           text: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.

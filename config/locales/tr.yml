@@ -874,7 +874,7 @@ tr:
           email_placeholder: E-Mail Adresi *
           footer: 
           headline: 
-          message: 
+          message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: İsim *
           text: 
         unavailable_location_modal: |

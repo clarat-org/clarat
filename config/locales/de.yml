@@ -971,6 +971,7 @@ de:
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -978,6 +979,7 @@ de:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        geo: Geo
         hau: Hau
         hbs: Hbs
         heb: Heb
@@ -1884,6 +1886,7 @@ de:
           email: 
           name: 
         show:
+          email: 
           name: 
           email: 
     placeholders:

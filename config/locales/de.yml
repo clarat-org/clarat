@@ -1037,6 +1037,8 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        est: Est
+        geo: Geo
       section:
         family: Family
         refugees: Refugees
@@ -1886,6 +1888,7 @@ de:
         show:
           email: 
           name: 
+          email: 
     placeholders:
       search_form:
         home:

@@ -2,7 +2,7 @@
   = hb '> _sort_order'
 
   %fieldset.filter-form__fieldset
-    %legend.filter-form__fieldset__headline
+    %legend.filter-form__fieldset__headline#age
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
       %label.sr-only{for: 'age_select'}

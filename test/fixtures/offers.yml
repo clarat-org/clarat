@@ -5,8 +5,6 @@ basic:
   old_next_steps: basicOfferNextSteps
   encounter: personal
   expires_at: 9999-01-01
-  age_from: 0
-  age_to: 17
   aasm_state: approved
   location_id: 1
   created_by: 1

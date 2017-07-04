@@ -26,6 +26,8 @@ de:
           anonymous: anonym
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -1276,6 +1278,7 @@ de:
         pus: Paschtu - پښتو‎
         rom: Romanes - Romani
         ron: Rumänisch - română
+        run: Kirundi
         rus: Russisch - русский
         sdh: Kurmandschi - كورمانجى / Kurmancî
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
@@ -1627,6 +1630,7 @@ de:
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
       marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
+      meta_description: Das ist das Team hinter Deutschlands Hilfeverzeichnis. Mehr als 40 Kollegen arbeiten täglich daran, dass Du einfach Hilfe findest.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
       nathalie: 'Hat Menschenrechte und internationale Politik studiert. Sie kann gut erklären. Und gut zuhören. Bei clarat ist sie im Research-Team. Und sie sorgt für Ordnung auf unserer Internetseite. Ihr Lieblingssong ist Me in You von Kings of Convenience.
@@ -1720,8 +1724,8 @@ de:
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
       meta_description:
-        family: Mit clarat family findest du einfach Hilfe. Unterstützungsangebote für Kinder, Jugendliche und Familien. Online. Aktuell. In ganz Berlin.
-        refugees: Mit clarat refugees findest du einfach Hilfe. Unterstützungsangebote für Flüchtlinge. Online. Aktuell. Mehrsprachig. In ganz Deutschland.
+        family: Mit clarat family findest Du einfach Hilfe für Kinder, Jugendliche und Familien. Übersichtlich. Mehrsprachig. In ganz Berlin. Und deutschlandweit.
+        refugees: 'Mit clarat refugees findest Du einfach Hilfe für Flüchtlinge. Übersichtlich. Mehrsprachig. In deiner Nähe. Und in ganz Deutschland. '
       meta_title:
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
@@ -1827,7 +1831,7 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat klärt auf. Über das Netz an Unterstützungsangeboten in Deutschland. Für Kinder, Jugendliche, Familien und Flüchtlinge. Online. Einfach. In der Nähe.
+      meta_description: clarat.org zeigt, welche Hilfen es in Deutschland gibt. Für Kinder, Jugendliche & Familien. Und für Flüchtlinge. Online. Einfach. In deiner Nähe.
       meta_title: clarat klärt auf | clarat
       title: Bitte wähle deine clarat-Welt
     shared:

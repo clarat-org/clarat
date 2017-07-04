@@ -19,13 +19,15 @@ fa:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
-      search_location: NOTRANSLATE
+      search_location: محل جستجو
       subscription: NOTRANSLATE
       trait_filter:
         identifier:
           anonymous: گمنام
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -289,7 +291,7 @@ fa:
         question_1:
           anchor: how_many_languages
           answer: NOTRANSLATION
-          question: NOTRANSLATION
+          question: کلارات به چه زبانهایی وجود دارد؟
         question_2:
           answer: NOTRANSLATION
           question: NOTRANSLATION
@@ -858,6 +860,7 @@ fa:
         pus: پشتو -  پښتو‎
         rom: رومانی - Romani
         ron: رومانیایی -  Romani
+        run: كيروندي
         rus: روسی - русский
         sdh: كورمانجى - كورمانجى / Kurmancî
         skr: صربستانی -  српскохрватски / hrvatskosrpski
@@ -1026,14 +1029,14 @@ fa:
     shared:
       search_form:
         button: جستجو کردن
-        loc_label: در کجا
+        loc_label: " کجا"
         loc_placeholder:
-          long: برلین٬آلمان
-          short: برلین
+          long: آدرس،منطقه،شهر یا کدپستی
+          short: آدرس،منطقه،شهر یا کدپستی
         query_label: چه چیزی
         query_placeholder:
-          long: پیشنهاد مربوط به موضوع
-          short: پیشنهاد...
+          long: پیشنهاد مربوط به موضوع...
+          short: پیشنهاد در مورد...
     show:
       accessibility: 
       anonymous: 
@@ -1121,7 +1124,7 @@ fa:
     show:
       headline-offers--family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
       headline-offers--refugees: 'پیشنهادهای حمایتی برای پناهندگان '
-      offers_all: چه نوع کمکی این سازمان ارائه میدهد؟
+      offers_all: " این سازمان چه نوع کمکی را ارائه می دهد؟"
       where: کجا سازمان مربوطه را پیدا می کنی؟
       who: این سازمان وظایفش چیست؟
   pages:
@@ -1172,6 +1175,7 @@ fa:
       magdalena: او در رشته پژوهشی آمریکای لاتین تحصیل کرده است.این بدین معنی است که او اطلاعات زیادی در مورد فرهنگ و سیاست آمریکای لاتین دارد.او به خوبی می توانی برنامه ریزی و جهت یابی کند.او در clarat در تیم تحقیق فعالیت می کند و موسیقی مورد علاقه او Summer Breeze از CocoRosie می باشد.
       marcus: او طراح وب است.این بدین معنی است که صفحات اینترنت را برنامه ریزی و می سازد و همچنین به خوبی طرح می ریزد.در clarat در تیم IT فعالیت می کند و مراقب آن است که صفحه اینترنتی ما زیباتر و بهتر جلوه دهد.موسیقی مورد علاقه او Hysteria از MUSE می باشد.
       marie: او محقق صلح و اختلافات می باشد.این بدین معنی است که او اطلاعات زیادی در مورد جنگ و اختلافات دارد.او به سرعت می تواند اطلاعات را جمع آوری و تنظیم کند و در clarat در تیم تحقیق فعالیت می کند.موسیقی مورد علاقه او Move On Up از Mayfield می باشد.
+      meta_description: این اعضای تیم پشت صحنه در لیست کمکی آلمان می باشد.بیش از ۴۰ کارمند روزانه در این زمینه کار می کنند که تو به راحتی کمک پیدا کنی.
       michaela: او در رشته علوم اقتصاد کامپیوتر تحصیل کرده است.او می تواند دیگران را به هیجان بیاورد و اطلاعات زیادی در مورد رسانه های جدید دارد.در clarat در تیم تحقیق فعالیت می کند و مراقب آن است که صفحه اینترنتی ما به خوبی عمل کند.موسیقی مورد علاقه او Digital Love از Daft Punk می باشد.
       nahla: او کارشناس باستان شناسی است.او اطلاعات زیادی در مورد تاریخ و انسانها دارد.سرعت کار او بالاست.در clarat در تیم ترجمه به زبان عربی فعالیت دارد.موسیقی مورد علاقه او Nassam Allina El Hawa از Fayrouz می باشد.
       nathalie: او در رشته حقوق بشر و سیاست بین الملل تحصیل کرده است.او به خوبی می تواند مسائل را توضیح دهد و همچنین گوش دهد.در clarat در تیم تحقیق فعالیت دارد و برای نظم در صفحه اینترنتی ما تلاش می کند.موسیقی مورد علاقه او Me in You از Kings of Convenience می باشد.
@@ -1244,8 +1248,8 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
-        family: از طریق clarat family به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای کودکان٬ جوانان و خانواده‌ها.به صورت آنلاین٬ به روز و در سراسر برلین.
-        refugees: از طریق clarat refugees به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای پناهندگان.به صورت آنلاین٬ به روز٬ به زبانهای مختلف و در سراسر آلمان.
+        family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
+        refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
       meta_title:
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
@@ -1327,7 +1331,7 @@ fa:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat مسائل را از طریق اینترنت و ویشنهادات حمایتی روشن می سازد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان بصورت آنلاین٬ آسان و در نزدیکی آنها.
+      meta_description: clarat.org نشان می دهد که چه کمکهایی در آلمان وجود دارد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان. بصورت آنلاین٬ آسان و در نزدیکی آنها.
       meta_title: clarat شفاف سازی می کند | clarat
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:

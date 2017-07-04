@@ -26,6 +26,8 @@ pl:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr
@@ -927,6 +929,7 @@ pl:
         pus: Język paszto - پښتو‎
         rom: Język romski - Romani
         ron: Język rumuński - română
+        run: Kirundi
         rus: Język rosyjski - русский
         sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
@@ -1242,6 +1245,7 @@ pl:
       magdalena: 
       marcus: Jest webdesignerem. To znaczy, że potrafi programować szatę graficzną stron internetowych. Potrafi też dobrze planować. W clarat jest w zespole IT. Dba o to, aby nasza strona internetowa dobrze wyglądała. Jego ulubionym utworem jest “Hysteria” zespolu Muse.
       marie: 
+      meta_description: 
       michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
       nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.
       nathalie: Studiowała prawa człowieka i politykę międzynarodową. Potrafi dobrze tłumaczyć i świetnie słuchać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Me in You" zespołu Kings of Convienience.

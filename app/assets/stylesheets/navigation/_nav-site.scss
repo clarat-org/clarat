@@ -57,4 +57,8 @@
     background-size: contain;
     background: image-url('ico_facebook.svg') no-repeat left center;
   }
+
+  body.template--pages-section_choice & a {
+    display: block;
+  }
 }

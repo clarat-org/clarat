@@ -26,6 +26,8 @@ pl:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr
@@ -927,6 +929,7 @@ pl:
         pus: Język paszto - پښتو‎
         rom: Język romski - Romani
         ron: Język rumuński - română
+        run: Kirundi
         rus: Język rosyjski - русский
         sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
@@ -979,6 +982,9 @@ pl:
         about: O nas
         blog: Blog
         contact: kontakt
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: Często zadawane pytania
         fb:
           anchor: facebook

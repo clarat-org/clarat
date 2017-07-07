@@ -26,6 +26,8 @@ ar:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: ".د"
@@ -791,6 +793,7 @@ ar:
         pus: لغة بشتوية - پښتو‎
         rom: لغة رومنية - Romani
         ron: لغة رومانية - română
+        run: كيروندي
         rus: لغة روسية - русский
         sdh: الكورمانجية - كورمانجى / Kurmancî
         skr: لغة صربية كرواتية - српскохрватски / hrvatskosrpski
@@ -843,6 +846,9 @@ ar:
         about: معلومات عنا
         blog: مدونة
         contact: الإتصال
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: " الأسئلة الشائعة"
         fb:
           anchor: فيس بوك

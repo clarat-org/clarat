@@ -151,6 +151,7 @@
     background-size: auto 100%;
   }
 
+  html[lang="de"] .section-choice__container,
   .section-choice__container {
     width: 45vw;
   }
@@ -162,6 +163,10 @@
     background-size: 18px 32px;
     padding-left: 45px;
     font-size: inherit;
+
+    html[lang="de"] & {
+      font-size: 20px;
+    }
 
     html[dir="rtl"] & {
       background-size: 18px 32px;

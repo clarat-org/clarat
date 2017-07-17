@@ -67,6 +67,21 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     else
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
+
+    startHover = $.now()
+
+    $('dfn.JS-tooltip').hover (->
+      startHover = $.now()
+    ), ->
+      endHover = $.now()
+      keyword = $(this).html()
+      sHovered = (endHover - startHover)/1000
+      if (sHovered) >= 1
+        ga?(
+          'send', 'event', 'TooltipRead', 'hoverout', 'tooltipActive:true;' +
+          "keyword:#{keyword}", sHovered
+        )
+
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
     if @goalOffset

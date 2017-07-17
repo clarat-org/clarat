@@ -13,7 +13,7 @@
     / Offer Stamp
     .page-detail__stamp[itemscope itemtype='http://schema.org/Audience']
       div[itemprop='name']
-        = @offer.send("stamps_string", @locale)
+        = @offer.send("stamps_string", locale)
 
     / Left side (in desktop)
     .section-wrapper-major
@@ -31,10 +31,20 @@
             ul.Offer-taxonomy__list
               - @offer.categories.each do |cat|
                 li.Offer-taxonomy__listitem
-                  = cat.send("name_#{locale}") == nil ? cat.name_en : cat.send("name_#{locale}")
+                  - explanation_text = cat.try("explanations_#{locale}") == nil ? cat.explanations_en : cat.send("explanations_#{locale}")
+                  - if explanation_text != nil && explanation_text != ""
+                    dfn.JS-tooltip.JS-tooltip--from-title title=explanation_text
+                      = cat.send("name_#{locale}") || cat.name_en
+                  - else
+                    = cat.send("name_#{locale}") || cat.name_en
               - @offer.tags.each do |tag|
                 li.Offer-taxonomy__listitem
-                  = tag.send("name_#{locale}") == nil ? tag.name_en : tag.send("name_#{locale}")
+                  - explanation_text = tag.try("explanations_#{locale}") == nil ? tag.explanations_en : tag.send("explanations_#{locale}")
+                  - if explanation_text != nil && explanation_text != ""
+                    dfn.JS-tooltip.JS-tooltip--from-title title=explanation_text
+                      = tag.send("name_#{locale}") || tag.name_en
+                  - else
+                    = tag.send("name_#{locale}") || tag.name_en
 
       / What to do next?
       = render 'offers/show/next_steps', offer: @offer

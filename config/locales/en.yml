@@ -26,6 +26,8 @@ en:
           anonymous: anonymously
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -804,10 +806,12 @@ en:
         cze: Czech - čeština
         dan: Danish - Dansk
         deu: German - Deutsch
+        dje: Zarma - Djerma
         dyu: Jula - Julakan
         ell: Greek - ελληνικά
         eng: English
         est: Estonian - eesti keel
+        ewe: Ewe - Eʋegbe
         ewo: Ewondo / Kolo - Ewondo
         fas: Persian (Farsi) - فارسی
         fil: Filipino - Wikang Filipino
@@ -815,6 +819,7 @@ en:
         fra: French - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gen: Gen - Mina
         geo: Georgian - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrin - Crnogorski jezik / Црногорски језик
@@ -844,6 +849,7 @@ en:
         pus: Pashto - پښتو‎
         rom: Romany - Romani
         ron: Romanian - română
+        run: Kirundi
         rus: Russian - русский
         sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
@@ -896,6 +902,9 @@ en:
         about: About us
         blog: Blog
         contact: Contact
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: FAQ
         fb:
           anchor: Facebook
@@ -922,7 +931,7 @@ en:
           email_placeholder: email address *
           footer: "* Your name and email address will only be used to contact you. You won't be subscribing to any newsletters and we won't pass it on to third parties."
           headline: 20 Euros for your thoughts
-          message: I'd like to participate
+          message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
@@ -1089,7 +1098,7 @@ en:
         code_word: 'This is what the service provider calls this support service:'
         heading: What's this about?
         offertaxonomy:
-          heading: 'This offer helps you with these topics: '
+          heading: 'The staff here know lots about these topics:'
       who: Where can you get this help?
       who_contact_people:
         dr: Dr.
@@ -1234,10 +1243,11 @@ en:
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
       marie: Marie is an academic researcher into the fields of peace and conflict research. This means she knows a lot about conflict and war. She can gather and sort information quickly. She works in clarat's research team. Her favourite song is "Move On Up" by Curtis Mayfield.
+      meta_description: 
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. She makes sure our website is up-to-date. Her favourite song is "Me in You" by Kings of Convenience.
-      nicole: 
+      nicole: She studied Hungarian. And she is good at programming websites. She always has good ideas for solving problems. Here at clarat she works for the IT department. Her favourite song is "Disorder" from Joy Division.
       nils: |-
         Nils is a computer scientist, which means he knows how to program
         computer programs and websites. He always comes up with good solutions
@@ -1265,7 +1275,7 @@ en:
         don’t know their way around yet? The answer: very difficult! And that's
         how the idea for clarat came about: helping people find help easily. For families on
         clarat family. And for refugees on clarat refugees.
-      tian: 
+      tian: She studied Commerce. She is good at keeping an overview of everything. And she's good with numbers, too. She is part of clarat's research team. She makes sure our work os of high quality. Her favourite song is "Supergirl" by Reamonn.
       tine: |-
         Tine is a social education worker. She's a good listener. And she's a writer, too.
         This means it's easy for her to write nice stories.
@@ -1449,7 +1459,7 @@ en:
     haeufige-fragen: frequently-asked-questions
     home: home
     impressum: impressum
-    kontakt: 
+    kontakt: contact
     liste: liste
     liste-de-services: liste-de-services
     new: new

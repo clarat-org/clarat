@@ -26,6 +26,8 @@ ru:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Доктор
@@ -867,10 +869,12 @@ ru:
         cze: Чешский язык - čeština
         dan: Датский язык - Dansk
         deu: Немецкий язык - Deutsch
+        dje: Zarma - Djerma
         dyu: Дьюла - Julakan
         ell: Греческий язык - ελληνικά
         eng: Английский язык - English
         est: эстонский - eesti keel
+        ewe: эве - Eʋegbe
         ewo: Эвондо - Эвондо
         fas: Персидский язык - فارسی
         fil: Филиппинский язык - Wikang Filipino
@@ -878,6 +882,7 @@ ru:
         fra: Французский язык - Français
         fuf: Пулар-Пулар
         ful: Ful - Fulfulde
+        gen: Gen - Mina
         geo: грузинский - ქართული
         hau: Хаусский язык - Hausanci
         hbs: Черногорский язык - Crnogorski jezik / Црногорски језик
@@ -907,6 +912,7 @@ ru:
         pus: Пушту - پښتو‎
         rom: Цыганский язык - Romani
         ron: Румынский язык - română
+        run: Kirundi
         rus: Русский язык - русский
         sdh: курманджи - كورمانجى / Kurmancî
         skr: Сербохорватский язык - српскохрватски / hrvatskosrpski
@@ -959,6 +965,9 @@ ru:
         about: О нас
         blog: Блог
         contact: Контакты
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: Частые вопросы
         fb:
           anchor: Facebook
@@ -986,7 +995,7 @@ ru:
           email_placeholder: E-Mail адрес *
           footer: 
           headline: 
-          message: 
+          message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Имя *
           text: 
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
@@ -1234,6 +1243,7 @@ ru:
       magdalena: 
       marcus: Маркус Дизайнер по интернету. Это значит, что он умеет программировать и составлять сайты в интернете. Он тоже хорошо умеет планировать. В clarat он работает в команде технической информации. Он заботится о том, чтобы наш сайт в интернете хорошо выглядел. Его любимая песня Hysteria от группы Мьюз (Muse).
       marie: 
+      meta_description: 
       michaela: Она изучала экономическую информатику. Она может воодушевлять других людей. И она хорошо разбирается в новых СМИ. В clarat она работает в исследовательской группе и обеспечивает хорошую работу нашего сайта. Ее любимая песня — Digital Love от Daft Punk.
       nahla: Она археолог. Он много знает об истории людей. Он может быстро работать. В clatrat она работает в команде переводчиков и переводит clarat на арабский язык.  Ее любимая песня — Nassam Allina El Hawa от Fayrouz.
       nathalie: Она изучала права человека и международные политические исследования. Она умеет хорошо объяснять. И хорошо слушать. В Clarat она работает в исследовательской команде. Её любимая песня - Me in You от Kings of Convenience.

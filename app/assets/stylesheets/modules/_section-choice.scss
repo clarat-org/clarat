@@ -1,5 +1,9 @@
 .section-choice {
   position: relative;
+  display: flex;
+  -js-display: flex;
+  justify-content: center;
+  flex-direction: inherit;
   width: 1058px;
   list-style: none;
 }
@@ -8,6 +12,10 @@
   float: left;
   position: relative;
   width: 529px;
+
+  html[lang="de"] & {
+    width: 450px;
+  }
 }
 
 .section-choice__stage {

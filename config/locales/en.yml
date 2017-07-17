@@ -26,6 +26,8 @@ en:
           anonymous: anonymously
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -847,6 +849,7 @@ en:
         pus: Pashto - پښتو‎
         rom: Romany - Romani
         ron: Romanian - română
+        run: Kirundi
         rus: Russian - русский
         sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Serbo-Croatian - српскохрватски / hrvatskosrpski
@@ -899,6 +902,9 @@ en:
         about: About us
         blog: Blog
         contact: Contact
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: FAQ
         fb:
           anchor: Facebook

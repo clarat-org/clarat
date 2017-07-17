@@ -36,3 +36,29 @@
     line-height: 15px;
   }
 }
+
+.nav-site__listitem--facebook-family {
+  body.refugees & a {
+    display: none;
+  }
+}
+
+.nav-site__listitem--facebook-refugees {
+  body.family & a {
+    display: none;
+  }
+}
+
+.nav-site__listitem--facebook-family,
+.nav-site__listitem--facebook-refugees {
+  a {
+    display: block;
+    padding-left: 27px;
+    background-size: contain;
+    background: image-url('ico_facebook.svg') no-repeat left center;
+  }
+
+  body.template--pages-section_choice & a {
+    display: block;
+  }
+}

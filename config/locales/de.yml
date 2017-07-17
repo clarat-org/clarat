@@ -26,6 +26,8 @@ de:
           anonymous: anonym
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -1276,6 +1278,7 @@ de:
         pus: Paschtu - پښتو‎
         rom: Romanes - Romani
         ron: Rumänisch - română
+        run: Kirundi
         rus: Russisch - русский
         sdh: Kurmandschi - كورمانجى / Kurmancî
         skr: Serbokroatisch - српскохрватски / hrvatskosrpski
@@ -1328,6 +1331,9 @@ de:
         about: Über uns
         blog: Blog
         contact: Kontakt
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: Häufige Fragen
         fb:
           anchor: Facebook
@@ -1370,9 +1376,9 @@ de:
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
-          family: Unterstützungsangebote für Kinder, Jugendliche und Familien
+          family: Hilfe für Kinder, Jugendliche und Familien
           main: Einfach Hilfe finden
-          refugees: Unterstützungsangebote für Flüchtlinge
+          refugees: Hilfe für Flüchtlinge
       top_bar:
         german_content_warning: Wähle deine Sprache
         languages:
@@ -1551,8 +1557,8 @@ de:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: Unterstützungsangebote für Kinder, Jugendliche und Familien
-      headline-offers--refugees: Unterstützungsangebote für Flüchtlinge
+      headline-offers--family: Hilfe für Kinder, Jugendliche und Familien
+      headline-offers--refugees: Hilfe für Flüchtlinge
       offers_all: Welche Hilfe bietet diese Organisation?
       where: Wo findest du die Organisation?
       who: Was macht die Organisation?
@@ -1727,8 +1733,8 @@ de:
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
       title:
-        family: Unterstützungsangebote für Kinder, Jugendliche und Familien
-        refugees: Unterstützungsangebote für Flüchtlinge
+        family: Hilfe für Kinder, Jugendliche und Familien
+        refugees: Hilfe für Flüchtlinge
       whom:
         heading: Für wen ist clarat?
         text: |

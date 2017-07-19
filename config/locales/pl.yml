@@ -1033,17 +1033,17 @@ pl:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: do clarat refugees
             refugees: do rodziny clarat
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
               refugees: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
             switch:
+              2017-07-17, visits=2: 
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
-              2017-07-17, visits=2: 
         title: Automatyczne Tłumaczenia!
   offer:
     stamp:
@@ -1321,13 +1321,13 @@ pl:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
-        2017-07-17, visits=2: 
       title:
         family: Oferty wsparcia dla dzieci, młodzieży i rodzin
         refugees: Oferty wsparcia dla uchodźców

@@ -960,17 +960,17 @@ en:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: "‹ to clarat refugees"
             refugees: "‹ to clarat family"
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: to the <span class="top-bar__emphasis">clarat family</span> homepage
               refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
             switch:
+              2017-07-17, visits=2: 
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
-              2017-07-17, visits=2: 
         title: Automated translations!
   offer:
     stamp:
@@ -1341,11 +1341,10 @@ en:
       meta_description:
         family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
         refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: Find help easily | clarat family
         refugees: Find help easily | clarat refugees
-        2017-07-17, visits=2: 
       title:
         family: Help and support services for children, teenagers and families
         refugees: Help and support services for refugees

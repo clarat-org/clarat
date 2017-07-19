@@ -910,17 +910,17 @@ ar:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: إلي كلارات اللاجئين ›
             refugees: إلى كلارات الأسرة ›
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> الصفحة الرئيسية
               refugees: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> الصفحة الرئيسية
             switch:
+              2017-07-17, visits=2: 
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
-              2017-07-17, visits=2: 
         title: ترجمة فورية
   offer:
     stamp:
@@ -1207,11 +1207,10 @@ ar:
         refugees: |-
           مع clarat refugees  تجد المساعدة بسهولة.
           فيها عروض دعم للاجئين. قائمة شاملة ومتعددة اللغات. بالقرب منك وفي كل المانيا.
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: إيجاد المساعدة ببساطة | كلارات العائلة
         refugees: إيجاد المساعدة ببساطة | كلارات اللاجئين
-        2017-07-17, visits=2: 
       title:
         family: مساعدة للأطفال والمراهقين والأسر
         refugees: " مساعدة للاجئين"

@@ -1025,17 +1025,17 @@ ru:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: "‹ к clarat refugees"
             refugees: "‹ к clarat family"
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: 'к Стартовой странице <span class="top-bar__emphasis">clarat family</span> '
               refugees: к Стартовой странице <span class="top-bar__emphasis">clarat refugees</span>
             switch:
+              2017-07-17, visits=2: 
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
-              2017-07-17, visits=2: 
         title: Автоматический перевод!
   offer:
     stamp:
@@ -1316,13 +1316,13 @@ ru:
         heading: Kак работает clarat?
         text: Напиши, в чем именно заключается твоя проблема. Или что тебя волнует. Или выбери из предложенных тем. И ты сразу найдешь все возможные варианты помощи и поддержки поблизости. Мы также расскажем тебе, как ты можешь получить эту помощь. Например, нужно ли позвонить, написать email или прийти лично.
       meta_description:
+        2017-07-17, visits=2: 
         family: 'С помощью clarat family ты быстро найдешь поддержку. Для детей, молодежи и семей. В интернете. '
         refugees: 
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
-        2017-07-17, visits=2: 
       title:
         family: Предложения помощи для детей, молодежи и семей
         refugees: Предложения помощи для беженцев

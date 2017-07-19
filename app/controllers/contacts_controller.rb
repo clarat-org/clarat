@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
   def new
     @contact = Contact.new url: request.referer
     if params[:popup]
+      @link = redirect_link(session[:url])
       render :popup
     else
       respond_with @contact
@@ -38,6 +39,14 @@ class ContactsController < ApplicationController
       render :popup
     else
       render :new
+    end
+  end
+
+  def redirect_link(url)
+    if url.include?('popup')
+      '/'
+    else
+      url
     end
   end
 end

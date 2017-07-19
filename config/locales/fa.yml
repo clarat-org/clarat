@@ -1,5 +1,5 @@
 fa:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,16 +25,16 @@ fa:
         identifier:
           anonymous: گمنام
       update_request: NOTRANSLATE
-  anonymous:
-  arabisch:
-  arb:
+  anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: 'دکتر:'
       email: 'ایمیل:'
       fax: 'فاکس:'
       female: خانم
-      heading: به کجا میتوانی مراجعه کنی؟
+      heading: به کجا می توانی مراجعه کنی؟
       male: آقای
       obfuscated_email: این ایمیل آدرس برای جلوگیری و حفاظت از Spam قفل می باشد.لطفا JavaScript را فعال کن.
       phone: 'تلفن:'
@@ -373,12 +373,12 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
-  charged:
+  charged: 
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-  confidential:
+  confidential: 
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -396,11 +396,11 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-  day_and_night:
+  day_and_night: 
   de:
     en:
-      conf:
-      current_location:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -429,7 +429,7 @@ fa:
       success_html: تو با موفقیت از بخش پیغام ها بعدی خارج شدی(<a href="%{subscribe_href}">wieder anmelden</a>)
   en:
     conf:
-      current_location:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -643,7 +643,7 @@ fa:
         relevance: Relevance
   formtastic:
     required: required
-  free:
+  free: 
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -913,7 +913,7 @@ fa:
         about: در مورد ما
         blog: بلاگ
         contact: تماس
-        facebook-family:
+        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: سوالات رایج
@@ -951,9 +951,9 @@ fa:
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:
-          family: 'پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها '
+          family: کمک برای کودکان،جوانان و خانواده ها
           main: یافتن کمک به آسانی
-          refugees: پیشنهادهای حمایتی برای پناهندگان
+          refugees: کمک برای پناهندگان
       top_bar:
         german_content_warning: زبان خود را انتخاب کن
         languages:
@@ -969,6 +969,7 @@ fa:
           desktop:
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
+            2017-07-17, visits=2: 
           mobile:
             home:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
@@ -976,14 +977,15 @@ fa:
             switch:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
+              2017-07-17, visits=2: 
         title: زبان خود را انتخاب کنید
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1041,12 +1043,12 @@ fa:
           long: پیشنهاد مربوط به موضوع...
           short: پیشنهاد در مورد...
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
         code_word: 'نام این کمک نزد عرضه کننده:'
@@ -1066,19 +1068,19 @@ fa:
         explanation:
           accessibility: این بدین معنی است که تو در اینجا می توانی به آرامی با صندلی چرخ دار خود را حرکت بدهی و یا با یک کالسکه کودک
           anonymous: این بدین معنی است که تو نباید نام خود را اعلام کنی.
-          charged:
+          charged: 
           confidential: این بدین معنی است که صحبتهای تو با کارمندان اینجا محرمانه باقی می ماند.
-          day_and_night:
-          free:
+          day_and_night: 
+          free: 
         title:
           accessibility: دسترس‌پذیری
           anonymous: گمنام
           charged: هزینه الزامی
           confidential: محرمانه
           day_and_night: شبانه روزی
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: رایگان
       trait_filters_headline: اطلاعات بعدی
       website_section:
@@ -1125,8 +1127,8 @@ fa:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-      headline-offers--refugees: 'پیشنهادهای حمایتی برای پناهندگان '
+      headline-offers--family: کمک برای کودکان،جوانان و خانواده‌ها
+      headline-offers--refugees: کمک برای پناهندگان
       offers_all: " این سازمان چه نوع کمکی را ارائه می دهد؟"
       where: کجا سازمان مربوطه را پیدا می کنی؟
       who: این سازمان وظایفش چیست؟
@@ -1253,12 +1255,14 @@ fa:
       meta_description:
         family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
         refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
+        2017-07-17, visits=2: 
       meta_title:
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
+        2017-07-17, visits=2: 
       title:
-        family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-        refugees: پیشنهاد های حمایتی برای پناهندگان
+        family: کمک برای کودکان،جوانان و خانواده ها
+        refugees: کمک برای پناهندگان
       whom:
         heading: چه کسانی می توانند از clarat استفاده کنند؟
         text: clarat برای استفاده همه افراد است.clarat family برای کودکان و جوانان و خانواده‌ها می باشد و clarat refugees برای پناهندگان.در صورت داشتن سوالات یا مشکلات در اینجا می توانی برای خود یا خانواده خود و دوستانت و یا برای افراد دیگری که آنها را می شناسی و احتیاج به کمک دارند حمایت دریافت می کنی.
@@ -1387,15 +1391,15 @@ fa:
     hints:
       contact:
         new:
-          email:
-          name:
+          email: 
+          name: 
         show:
-          email:
-          name:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

@@ -11,5 +11,8 @@
 javascript:
   window.onload = function() {
     $('.JS-modal').popup('show');
+
+    $( ".popup_close" ).click(function() {
+      window.location.replace("#{@link}");
+    });
   };
-                    

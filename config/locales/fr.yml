@@ -991,6 +991,7 @@ fr:
           desktop:
             family: "‹ aller à la page clarat refugees"
             refugees: "‹ aller à la page clarat family"
+            2017-07-17, visits=2: 
           mobile:
             home:
               family: aller à la page de démarrage de <span class="top-bar__emphasis">clarat family</span>
@@ -998,6 +999,7 @@ fr:
             switch:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
+              2017-07-17, visits=2: 
         title: Traductions automatiques
   offer:
     stamp:
@@ -1271,9 +1273,11 @@ fr:
       meta_description:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       meta_title:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés

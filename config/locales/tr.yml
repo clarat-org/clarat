@@ -919,6 +919,7 @@ tr:
           desktop:
             family: 
             refugees: 
+            2017-07-17, visits=2: 
           mobile:
             home:
               family: 
@@ -926,6 +927,7 @@ tr:
             switch:
               family: 
               refugees: 
+              2017-07-17, visits=2: 
         title: Otomatik çeviriler
   offer:
     stamp:
@@ -1209,9 +1211,11 @@ tr:
       meta_description:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       meta_title:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       title:
         family: Çocuk, genç ve aileler için destek programları
         refugees: Mülteciler için destek programları

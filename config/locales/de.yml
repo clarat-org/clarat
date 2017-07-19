@@ -1394,6 +1394,7 @@ de:
           desktop:
             family: "‹ zu clarat refugees"
             refugees: "‹ zu clarat family"
+            2017-07-17, visits=2: 
           mobile:
             home:
               family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
@@ -1401,6 +1402,7 @@ de:
             switch:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
+              2017-07-17, visits=2: 
         title: Wähle deine Sprache
   offer:
     stamp:
@@ -1729,9 +1731,11 @@ de:
       meta_description:
         family: Mit clarat family findest Du einfach Hilfe für Kinder, Jugendliche und Familien. Übersichtlich. Mehrsprachig. In ganz Berlin. Und deutschlandweit.
         refugees: 'Mit clarat refugees findest Du einfach Hilfe für Flüchtlinge. Übersichtlich. Mehrsprachig. In deiner Nähe. Und in ganz Deutschland. '
+        2017-07-17, visits=2: 
       meta_title:
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
+        2017-07-17, visits=2: 
       title:
         family: Hilfe für Kinder, Jugendliche und Familien
         refugees: Hilfe für Flüchtlinge

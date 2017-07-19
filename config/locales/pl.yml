@@ -1035,6 +1035,7 @@ pl:
           desktop:
             family: do clarat refugees
             refugees: do rodziny clarat
+            2017-07-17, visits=2: 
           mobile:
             home:
               family: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
@@ -1042,6 +1043,7 @@ pl:
             switch:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
+              2017-07-17, visits=2: 
         title: Automatyczne Tłumaczenia!
   offer:
     stamp:
@@ -1321,9 +1323,11 @@ pl:
       meta_description:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       meta_title:
         family: 
         refugees: 
+        2017-07-17, visits=2: 
       title:
         family: Oferty wsparcia dla dzieci, młodzieży i rodzin
         refugees: Oferty wsparcia dla uchodźców

@@ -9,13 +9,13 @@ gem 'nokogumbo', '1.4.11' # 1.4.12 causes problems on heroku (see https://github
 # General #
 ###########
 
-gem 'clarat_base', github: 'clarat-org/clarat_base'
+gem 'clarat_base', github: 'clarat-org/clarat_base', branch: 'feature/975-rails-5-upgrade'
 
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
-gem 'rails-observers', '= 0.1.2'
+gem 'rails', '~> 5.1'
+gem 'rails-observers', '~> 0.1'
 
 # Translations
 gem 'rails-i18n'
@@ -44,7 +44,7 @@ gem 'puma'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.0'
 
 # Use jquery as the JavaScript library & plugins
 gem 'jquery-rails'
@@ -54,12 +54,7 @@ gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
 gem 'handlebars_assets'
-gem 'hamlbars', '~> 2.0'
-
-gem 'hogan_assets' # TODO: deprecated!
-group :assets do # TODO: deprecated!
-  gem 'haml' # TODO: deprecated!
-end # TODO: deprecated!
+gem 'hamlbars', '~> 2.1'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
@@ -83,7 +78,7 @@ end
 gem 'font-awesome-rails'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 5.0.6'
 
 # More styling
 gem 'bootstrap-sass'
@@ -134,7 +129,6 @@ gem 'awesome_print'
 # gem 'omniauth-facebook'
 # gem 'omniauth-google-oauth2'
 gem 'pundit'
-gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
@@ -188,9 +182,6 @@ group :development do
 
   # debugging in chrome with RailsPanel
   gem 'meta_request'
-
-  # Quiet Assets to disable asset pipeline in log
-  gem 'quiet_assets'
 
   # requires graphviz to generate
   # entity relationship diagrams

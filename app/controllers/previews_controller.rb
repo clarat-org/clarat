@@ -3,8 +3,8 @@
 class PreviewsController < ApplicationController
   # Needs auth - the main reason this is in a separate controller
   http_basic_authenticate_with(
-    name: Rails.application.secrets.protect['user'],
-    password: Rails.application.secrets.protect['pwd']
+    name: Rails.application.secrets.protect[:user],
+    password: Rails.application.secrets.protect[:pwd]
   )
 
   include GmapsVariable

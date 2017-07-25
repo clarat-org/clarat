@@ -42,7 +42,11 @@ class OffersController < ApplicationController
 
   def search_params
     return nil unless params['search_form']
-    params.for(SearchForm).refine
+    search_form_params
+  end
+
+  def search_form_params
+    params.require(:search_form).permit(:query, :generated_geolocation, :search_location, :category, :exact_location, :contact_type, :encounters, :age, :target_audience, :exclusive_gender, :language)
   end
 
   # prepare an UpdateRequest that will be displayed if the user entered a search

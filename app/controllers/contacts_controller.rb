@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new params.for(Contact).refine
+    @contact = Contact.new contact_params
     if @contact.save
       respond_to do |format|
         format.html do
@@ -33,6 +33,10 @@ class ContactsController < ApplicationController
   end
 
   private
+
+  def contact_params
+    params.require(:contact).permit(:email, :name, :message, :city, :url, :reporting)
+  end
 
   def validation_fail_render
     if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')

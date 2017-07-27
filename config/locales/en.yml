@@ -635,6 +635,11 @@ en:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: 
+        ewe: 
+        gej: 
+        run: 
+        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -880,6 +885,7 @@ en:
         xxx: speech-acc. gestures
         zho: Chinese - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: Share
     single_search_result:

@@ -1039,6 +1039,11 @@ de:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: Dje
+        ewe: Ewe
+        gej: Gej
+        run: Run
+        xxx: Xxx
       section:
         family: Family
         refugees: Refugees
@@ -1309,6 +1314,7 @@ de:
         xxx: lautsprachebegl. Gebärden - speech-acc. gestures
         zho: Chinesisch - 普通话 / 普通話
         zza: Zaza - Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: Teilen
     single_search_result:

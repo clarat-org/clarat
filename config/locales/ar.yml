@@ -575,6 +575,11 @@ ar:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: 
+        ewe: 
+        gej: 
+        run: 
+        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -824,6 +829,7 @@ ar:
         xxx: لغة الإشارة المرافقة - speech-acc. gestures
         zho: لغة صينية - 普通话 / 普通話
         zza: لغة زازاكية - Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: مشاركة
     single_search_result:

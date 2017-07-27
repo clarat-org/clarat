@@ -593,6 +593,11 @@ tr:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: 
+        ewe: 
+        gej: 
+        run: 
+        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -833,6 +838,7 @@ tr:
         xxx: eşlik eden işaret dili - speech-acc. gestures
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: 
     single_search_result:

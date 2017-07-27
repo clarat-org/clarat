@@ -693,6 +693,11 @@ ru:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: 
+        ewe: 
+        gej: 
+        run: 
+        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -943,6 +948,7 @@ ru:
         xxx: сопровождающий язык жестов - speech-acc. gestures
         zho: Китайский язык - 普通话 / 普通話
         zza: Зазаки - Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: Разделить
     single_search_result:

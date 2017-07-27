@@ -632,6 +632,11 @@ fa:
         wol: Wol
         zho: Zho
         zza: Zza
+        dje: 
+        ewe: 
+        gej: 
+        run: 
+        xxx: 
       section:
         family: خانواده
         refugees: پناهندگان
@@ -891,6 +896,7 @@ fa:
         xxx: زبان اشاره همراه - speech-acc. gestures
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
+        gej: 
     shariff:
       share_label: تقسیم کردن
     single_search_result:

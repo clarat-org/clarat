@@ -600,10 +600,12 @@ fr:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -611,6 +613,7 @@ fr:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -640,6 +643,7 @@ fr:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -667,6 +671,7 @@ fr:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -853,6 +858,7 @@ fr:
         fra: Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: géorgien - ქართული
         hau: haoussa - Hausancī
@@ -989,17 +995,17 @@ fr:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: "‹ aller à la page clarat refugees"
             refugees: "‹ aller à la page clarat family"
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: aller à la page de démarrage de <span class="top-bar__emphasis">clarat family</span>
               refugees: aller à la page de démarrage de <span class="top-bar__emphasis">clarat refugees</span>
             switch:
+              2017-07-17, visits=2: 
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
-              2017-07-17, visits=2: 
         title: Traductions automatiques
   offer:
     stamp:
@@ -1271,13 +1277,13 @@ fr:
 '
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
-        2017-07-17, visits=2: 
       title:
         family: Offres d'aide pour les enfants, les ados et les familles
         refugees: Offres d'aide pour les réfugiés

@@ -563,10 +563,12 @@ fa:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -574,6 +576,7 @@ fa:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -603,6 +606,7 @@ fa:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -630,6 +634,7 @@ fa:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -830,6 +835,7 @@ fa:
         fra: فرانسوی - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: جين  - Mina
         geo: گرجی - ქართული
         hau: هوسى - Hausanci
@@ -967,17 +973,17 @@ fa:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
-            2017-07-17, visits=2: 
           mobile:
             home:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
               refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
+              2017-07-17, visits=2: 
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
-              2017-07-17, visits=2: 
         title: زبان خود را انتخاب کنید
   offer:
     stamp:
@@ -1253,13 +1259,13 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
+        2017-07-17, visits=2: 
         family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
         refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
-        2017-07-17, visits=2: 
       meta_title:
+        2017-07-17, visits=2: 
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
-        2017-07-17, visits=2: 
       title:
         family: کمک برای کودکان،جوانان و خانواده ها
         refugees: کمک برای پناهندگان

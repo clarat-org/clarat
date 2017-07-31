@@ -33,3 +33,22 @@
     font-style: italic;
   }
 }
+
+@mixin clearfix {
+  zoom:1;
+
+  &:before, &:after {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin clarat_rounding_start {
+  border-top-left-radius: $border_radius;
+}

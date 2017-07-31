@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base Opening
 require ClaratBase::Engine.root.join('app', 'models', 'opening')
 
-class Opening < ActiveRecord::Base
+class Opening < ApplicationRecord
   # Frontend Methods
 
   # The way an opening time frame is displayed to the user in the front end.

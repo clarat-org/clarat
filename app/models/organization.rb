@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base Organization
 require ClaratBase::Engine.root.join('app', 'models', 'organization')
 
-class Organization < ActiveRecord::Base
+class Organization < ApplicationRecord
   # Frontend-only Methods
 
   def canonical_section

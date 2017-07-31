@@ -53,8 +53,9 @@ gem 'jquery-rails'
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
+gem 'haml'
 gem 'handlebars_assets'
-gem 'hamlbars', '~> 2.1'
+gem 'hogan_assets'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
@@ -89,7 +90,7 @@ gem 'autoprefixer-rails'
 #########
 
 # Templating with slim
-gem 'slim-rails'
+gem 'slim-rails', '3.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
@@ -211,6 +212,7 @@ group :development, :test do
   gem 'pry-doc' # read ruby docs in console
 
   # test suite
+  gem 'rails-controller-testing'
   gem 'minitest', '5.10.1' # Testing using Minitest
   gem 'minitest-matchers'
   gem 'minitest-line'

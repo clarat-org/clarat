@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base Website
 require ClaratBase::Engine.root.join('app', 'models', 'website')
 
-class Website < ActiveRecord::Base
+class Website < ApplicationRecord
   # Frontend-only Methods
 
   def pdf_appendix

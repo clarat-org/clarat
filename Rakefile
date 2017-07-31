@@ -10,15 +10,15 @@ Clarat::Application.load_tasks
 
 require 'rake/testtask'
 
-Rails::TestTask.new do |t|
+Rake::TestTask.new do |t|
   t.pattern = 'test/**/*_test.rb'
 end
 
-Rails::TestTask.new('test:features' => 'test:prepare') do |t|
+Rake::TestTask.new('test:features' => 'test:prepare') do |t|
   t.pattern = 'test/features/**/*_test.rb'
 end
 
-Rails::TestTask.new('test:helpers' => 'test:prepare') do |t|
+Rake::TestTask.new('test:helpers' => 'test:prepare') do |t|
   t.pattern = 'test/helpers/**/*_test.rb'
 end
 
@@ -26,7 +26,7 @@ end
 #   t.pattern = "test/libs/**/*_test.rb"
 # end
 
-Rails::TestTask.new('test:helper' => 'test:prepare') do |t|
+Rake::TestTask.new('test:helper' => 'test:prepare') do |t|
   t.pattern = 'test/helper/**/*_test.rb'
 end
 

@@ -1,15 +1,14 @@
-Rails.application.configure do
-  # Enable the asset pipeline
-  config.assets.enabled = true
-  config.assets.initialize_on_precompile = false
+# Be sure to restart your server when you modify this file.
 
-  # Version of your assets, change this if you want to expire all your assets
-  config.assets.version = '1.1.6'
+# Version of your assets, change this if you want to expire all your assets.
+Rails.application.config.assets.version = '1.0'
 
-  # Enable fonts directory
-  config.assets.paths << Rails.root.join("app", "assets", "fonts")
+# Add additional assets to the asset load path.
+# Rails.application.config.assets.paths << Emoji.images_path
+# Add Yarn node_modules folder to the asset load path.
+Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
-  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  #config.assets.precompile += Dir["app/assets/stylesheets/controller/*.scss"].map{|file| "controller/#{File.basename file,'.scss'}" }
-  config.assets.precompile += %w( vendor/modernizr.custom.js )
-end
+# Precompile additional assets.
+# application.js, application.css, and all non-JS/CSS in the app/assets
+# folder are already added.
+# Rails.application.config.assets.precompile += %w( admin.js admin.css )

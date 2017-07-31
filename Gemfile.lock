@@ -86,13 +86,13 @@ GEM
     autoprefixer-rails (7.1.2.3)
       execjs
     awesome_print (1.8.0)
-    aws-sdk (2.10.15)
-      aws-sdk-resources (= 2.10.15)
-    aws-sdk-core (2.10.15)
+    aws-sdk (2.10.16)
+      aws-sdk-resources (= 2.10.16)
+    aws-sdk-core (2.10.16)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.10.15)
-      aws-sdk-core (= 2.10.15)
+    aws-sdk-resources (2.10.16)
+      aws-sdk-core (= 2.10.16)
     aws-sigv4 (1.0.1)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -208,11 +208,6 @@ GEM
     haml (5.0.1)
       temple (>= 0.8.0)
       tilt
-    hamlbars (2.1.1)
-      execjs (>= 1.2)
-      haml
-      sprockets (>= 2.0)
-      tilt
     handlebars_assets (0.23.2)
       execjs (~> 2.0)
       sprockets (>= 2.0.0)
@@ -221,6 +216,10 @@ GEM
     heroku-deflater (0.6.3)
       rack (>= 1.4.5)
     hirb (0.7.3)
+    hogan_assets (1.6.0)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt (>= 1.3.3)
     htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -311,7 +310,7 @@ GEM
     multi_xml (0.6.0)
     mustermann (1.0.0)
     netrc (0.11.0)
-    newrelic_rpm (4.2.0.334)
+    newrelic_rpm (4.3.0.335)
     nio4r (2.1.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -320,7 +319,7 @@ GEM
     paper_trail (7.1.0)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
-    parallel (1.11.2)
+    parallel (1.12.0)
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.21.0)
@@ -371,7 +370,7 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.1.2)
       sprockets-rails (>= 2.0.0)
-    rails-assets-algoliasearch (3.24.1)
+    rails-assets-algoliasearch (3.24.3)
     rails-assets-ev-emitter (1.1.1)
     rails-assets-flexibility (2.0.1)
     rails-assets-hammerjs (2.0.8)
@@ -390,6 +389,10 @@ GEM
       rails-assets-jquery (>= 1.6.0)
     rails-assets-shariff (1.25.2)
     rails-assets-sticky-kit (1.1.2)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -502,7 +505,7 @@ GEM
     slim (3.0.8)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 1.3.3, < 2.1)
-    slim-rails (3.1.2)
+    slim-rails (3.1.1)
       actionpack (>= 3.1)
       railties (>= 3.1)
       slim (~> 3.0)
@@ -596,10 +599,11 @@ DEPENDENCIES
   font-awesome-rails
   formtastic
   gibbon (~> 1.2.0)
-  hamlbars (~> 2.1)
+  haml
   handlebars_assets
   heroku-deflater
   hirb
+  hogan_assets
   i18n-js (>= 3.0.0.rc6)
   jbuilder
   jquery-rails
@@ -644,6 +648,7 @@ DEPENDENCIES
   rails-assets-qtip2!
   rails-assets-shariff!
   rails-assets-sticky-kit!
+  rails-controller-testing
   rails-erd
   rails-i18n
   rails-observers (~> 0.1)
@@ -658,7 +663,7 @@ DEPENDENCIES
   shoulda
   simple_form
   simplecov
-  slim-rails
+  slim-rails (= 3.1.1)
   spring
   sqlite3
   therubyracer

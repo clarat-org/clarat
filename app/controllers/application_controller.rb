@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 class ApplicationController < ActionController::Base
-  include Arcane
   include Pundit
 
   # staging password protection

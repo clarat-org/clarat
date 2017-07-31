@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base SearchLocation
 require ClaratBase::Engine.root.join('app', 'models', 'search_location')
 
-class SearchLocation < ActiveRecord::Base
+class SearchLocation < ApplicationRecord
   # Frontend-only Methods
 
   def self.find_or_generate location_string

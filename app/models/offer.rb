@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base Offer
 require ClaratBase::Engine.root.join('app', 'models', 'offer')
 
-class Offer < ActiveRecord::Base
+class Offer < ApplicationRecord
   # Frontend-only Methods
 
   def canonical_section

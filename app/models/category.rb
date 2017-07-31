@@ -2,7 +2,7 @@
 # Monkeypatch clarat_base Category
 require ClaratBase::Engine.root.join('app', 'models', 'category')
 
-class Category < ActiveRecord::Base
+class Category < ApplicationRecord
   # Methods
 
   # cached hash_tree, prepared for use in offers#index

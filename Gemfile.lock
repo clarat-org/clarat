@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 271b2af7f078c4eb61607938fd46689bed4f7de1
+  revision: 78be8ac755aad503a9e69ca724aa3a36948046b2
+  branch: refactoring/translated_field
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +34,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.12.0)
+    aasm (4.12.1)
       concurrent-ruby (~> 1.0)
     actionmailer (4.2.9)
       actionpack (= 4.2.9)
@@ -139,7 +140,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.5.0)
+    closure_tree (6.6.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -245,7 +246,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.8.4)
+    i18n (0.8.6)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
     ice_nine (0.11.1)
@@ -321,7 +322,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.11)
       nokogiri
-    paper_trail (7.0.3)
+    paper_trail (7.1.0)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)

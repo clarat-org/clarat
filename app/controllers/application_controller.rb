@@ -53,8 +53,6 @@ class ApplicationController < ActionController::Base
     if cookies[:session].include? visited_once
       write_cookie(date, visited_twice)
     elsif cookies[:session].include? visited_twice
-      session[:url] = request.url
-      redirect_to new_contact_path(popup: true, section: @current_section)
       cookies.delete :session
     end
   end

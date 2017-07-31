@@ -2,17 +2,14 @@
   h2= t 'layouts.partials.modal.popup.headline'
   p.text= t 'layouts.partials.modal.popup.text'
   = simple_form_for @contact do |f|
-    = f.input :name, label: false, input_html: { placeholder: t('layouts.partials.modal.popup.name_placeholder') }
-    = f.input :email, label: false, input_html: { placeholder: t('layouts.partials.modal.popup.email_placeholder') }
+    = f.input :name, label: false, input_html: { required: true, placeholder: t('layouts.partials.modal.popup.name_placeholder') }
+    = f.input :email, label: false, input_html: { required: true, placeholder: t('layouts.partials.modal.popup.email_placeholder') }
     = f.hidden_field :message, value: t('layouts.partials.modal.popup.message')
     = f.button :submit, value: t('layouts.partials.modal.popup.button')
   p.footer = t 'layouts.partials.modal.popup.footer'
 
 javascript:
-  window.onload = function() {
-    $('.JS-modal').popup('show');
-
-    $( ".popup_close" ).click(function() {
-      window.location.replace("#{@link}");
-    });
+  setTimeout(showPopup, 5000)
+  function showPopup() {
+    $('#popup').popup('show');
   };

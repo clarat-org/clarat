@@ -5,12 +5,7 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new url: request.referer
-    if params[:popup]
-      @link = session[:url].nil? || session[:url].include?('popup') ? '/' : session[:url]
-      render :popup
-    else
-      respond_with @contact
-    end
+    respond_with @contact
   end
 
   def create
@@ -36,7 +31,7 @@ class ContactsController < ApplicationController
 
   def validation_fail_render
     if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')
-      render :popup
+      render partial: 'popup'
     else
       render :new
     end

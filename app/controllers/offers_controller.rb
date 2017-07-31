@@ -17,6 +17,7 @@ class OffersController < ApplicationController
   end
 
   def show
+    @cookie = cookies[:session].include?('visits=1') ? cookies[:session] : nil
     @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true

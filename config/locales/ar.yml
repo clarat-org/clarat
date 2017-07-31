@@ -61,7 +61,7 @@ ar:
           link_1:
             name: فيلم
             target: _blank
-            url: http://blog.clarat.org/العثور على مساعدة بسهولة-مشروعنا-كلارات-في-فيلم قصير/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart-auf-arabisch/
             var: link_to_family_movie
           question: ما هي كلارات؟
         question_10:
@@ -863,6 +863,7 @@ ar:
           anchor: جوجل بلس
           href: https://plus.google.com/110429028641743127592/about
         impressum: هيئة التحرير
+        plus: clarat plus
         privacy: إرشادات حماية البيانات الشخصية
         tos: إرشادات قانونية
         twitter:

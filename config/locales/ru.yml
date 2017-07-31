@@ -61,7 +61,7 @@ ru:
           link_1:
             name: фильме
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Что значит clarat?
         question_10:
@@ -982,6 +982,7 @@ ru:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Импрессум
+        plus: clarat plus
         privacy: Правила конфиденциальности
         tos: юридические указания
         twitter:

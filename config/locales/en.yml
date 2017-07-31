@@ -51,7 +51,7 @@ en:
           link_1:
             name: video
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: What is clarat?
         question_10:
@@ -919,6 +919,7 @@ en:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: privacy
         tos: legal information
         twitter:

@@ -970,10 +970,12 @@ de:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: Dje
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: Ewe
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -981,6 +983,7 @@ de:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: Gej
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -1010,6 +1013,7 @@ de:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: Run
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -1037,6 +1041,7 @@ de:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: Xxx
         zho: Zho
         zza: Zza
       section:
@@ -1248,6 +1253,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci

@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 78be8ac755aad503a9e69ca724aa3a36948046b2
-  branch: refactoring/translated_field
+  revision: 60ba3b8d33dc57855acdab52a07fbf3069e77a76
+  branch: develop
   specs:
     clarat_base (0.1.4)
       aasm
@@ -71,11 +71,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.12.7)
+    algoliasearch (1.14.0)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.19.1)
-      algoliasearch (~> 1.12.4)
+    algoliasearch-rails (1.20.0)
+      algoliasearch (~> 1.14.0)
       json (>= 1.5.1)
     arcane (1.1.1)
       actionpack (>= 3.0.0, < 5.0.0)

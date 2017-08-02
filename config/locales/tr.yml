@@ -524,10 +524,12 @@ tr:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -535,6 +537,7 @@ tr:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -564,6 +567,7 @@ tr:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -591,6 +595,7 @@ tr:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -772,6 +777,7 @@ tr:
         fra: Fransızca - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: Gürcü - ქართული
         hau: Hausa - Hausanci
@@ -917,6 +923,7 @@ tr:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: 
             refugees: 
           mobile:
@@ -924,6 +931,7 @@ tr:
               family: 
               refugees: 
             switch:
+              2017-07-17, visits=2: 
               family: 
               refugees: 
         title: Otomatik çeviriler
@@ -1207,9 +1215,11 @@ tr:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:

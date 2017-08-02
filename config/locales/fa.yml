@@ -34,7 +34,7 @@ fa:
       email: 'ایمیل:'
       fax: 'فاکس:'
       female: خانم
-      heading: به کجا میتوانی مراجعه کنی؟
+      heading: به کجا می توانی مراجعه کنی؟
       male: آقای
       obfuscated_email: این ایمیل آدرس برای جلوگیری و حفاظت از Spam قفل می باشد.لطفا JavaScript را فعال کن.
       phone: 'تلفن:'
@@ -563,10 +563,12 @@ fa:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -574,6 +576,7 @@ fa:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -603,6 +606,7 @@ fa:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -630,6 +634,7 @@ fa:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -830,6 +835,7 @@ fa:
         fra: فرانسوی - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: جين  - Mina
         geo: گرجی - ქართული
         hau: هوسى - Hausanci
@@ -951,9 +957,9 @@ fa:
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:
-          family: 'پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها '
+          family: کمک برای کودکان،جوانان و خانواده ها
           main: یافتن کمک به آسانی
-          refugees: پیشنهادهای حمایتی برای پناهندگان
+          refugees: کمک برای پناهندگان
       top_bar:
         german_content_warning: زبان خود را انتخاب کن
         languages:
@@ -967,6 +973,7 @@ fa:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
           mobile:
@@ -974,6 +981,7 @@ fa:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
               refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
+              2017-07-17, visits=2: 
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
@@ -1125,8 +1133,8 @@ fa:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-      headline-offers--refugees: 'پیشنهادهای حمایتی برای پناهندگان '
+      headline-offers--family: کمک برای کودکان،جوانان و خانواده‌ها
+      headline-offers--refugees: کمک برای پناهندگان
       offers_all: " این سازمان چه نوع کمکی را ارائه می دهد؟"
       where: کجا سازمان مربوطه را پیدا می کنی؟
       who: این سازمان وظایفش چیست؟
@@ -1251,14 +1259,16 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
+        2017-07-17, visits=2: 
         family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
         refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
       meta_title:
+        2017-07-17, visits=2: 
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
       title:
-        family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-        refugees: پیشنهاد های حمایتی برای پناهندگان
+        family: کمک برای کودکان،جوانان و خانواده ها
+        refugees: کمک برای پناهندگان
       whom:
         heading: چه کسانی می توانند از clarat استفاده کنند؟
         text: clarat برای استفاده همه افراد است.clarat family برای کودکان و جوانان و خانواده‌ها می باشد و clarat refugees برای پناهندگان.در صورت داشتن سوالات یا مشکلات در اینجا می توانی برای خود یا خانواده خود و دوستانت و یا برای افراد دیگری که آنها را می شناسی و احتیاج به کمک دارند حمایت دریافت می کنی.

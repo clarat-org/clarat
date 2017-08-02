@@ -219,6 +219,11 @@
     &.content-main--wide {
       margin-top: 0;
     }
+
+    .template--pages-section_choice & {
+      margin-top: 3em;
+      height: auto;
+    }
   }
 
   .section-start {
@@ -306,10 +311,16 @@
     }
   }
 
+  html[lang="de"] .section-choice__container,
+  .section-choice__container {
+    width: auto;
+    min-width: 50%;
+  }
+
   .section-choice__headline {
     background-size: auto 80%;
   }
-  
+
   .result-order__label {
     display: none;
   }

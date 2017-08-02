@@ -566,10 +566,12 @@ en:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -577,6 +579,7 @@ en:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -606,6 +609,7 @@ en:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -633,6 +637,7 @@ en:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -819,6 +824,7 @@ en:
         fra: French - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: Georgian - ქართული
         hau: Hausa - Hausanci
@@ -960,6 +966,7 @@ en:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: "‹ to clarat refugees"
             refugees: "‹ to clarat family"
           mobile:
@@ -967,6 +974,7 @@ en:
               family: to the <span class="top-bar__emphasis">clarat family</span> homepage
               refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
             switch:
+              2017-07-17, visits=2: 
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
@@ -1337,9 +1345,11 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
+        2017-07-17, visits=2: 
         family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
         refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
       meta_title:
+        2017-07-17, visits=2: 
         family: Find help easily | clarat family
         refugees: Find help easily | clarat refugees
       title:

@@ -163,7 +163,7 @@ de:
             Angebote, bei denen man dir am Telefon oder im Internet hilft. Das
             heißt, per E-Mail, im Chat oder im Forum. Viele andere Angebote kannst
             du genau da nutzen, wo du wohnst. Bei <b>clarat refugees</b> findest du
-            bald Angebote für viele Großstädte in Deutschland. Im Moment sind das Berlin, Köln und Düsseldorf. Bei <b>clarat family</b> haben wir in Berlin
+            bald Angebote für viele Großstädte in Deutschland. Im Moment sind das Berlin, Hamburg, München, Dortmund, Düsseldorf, Köln, Nürnberg und Stuttgart. Bei <b>clarat family</b> haben wir in Berlin
             angefangen. Hier gibt es sehr viele Angebote. Aber wir sammeln weiter.
             Bald auch für weitere, große Städte in Deutschland.
           question: Gibt es clarat für ganz Deutschland?
@@ -970,10 +970,12 @@ de:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: Dje
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: Ewe
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -981,6 +983,7 @@ de:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: Gej
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -1010,6 +1013,7 @@ de:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: Run
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -1037,6 +1041,7 @@ de:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: Xxx
         zho: Zho
         zza: Zza
       section:
@@ -1248,6 +1253,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
@@ -1392,6 +1398,7 @@ de:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: "‹ zu clarat refugees"
             refugees: "‹ zu clarat family"
           mobile:
@@ -1399,6 +1406,7 @@ de:
               family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
               refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
             switch:
+              2017-07-17, visits=2: 
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
@@ -1727,9 +1735,11 @@ de:
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
       meta_description:
+        2017-07-17, visits=2: 
         family: Mit clarat family findest Du einfach Hilfe für Kinder, Jugendliche und Familien. Übersichtlich. Mehrsprachig. In ganz Berlin. Und deutschlandweit.
         refugees: 'Mit clarat refugees findest Du einfach Hilfe für Flüchtlinge. Übersichtlich. Mehrsprachig. In deiner Nähe. Und in ganz Deutschland. '
       meta_title:
+        2017-07-17, visits=2: 
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
       title:

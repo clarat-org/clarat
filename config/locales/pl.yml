@@ -648,10 +648,12 @@ pl:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -659,6 +661,7 @@ pl:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -688,6 +691,7 @@ pl:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -715,6 +719,7 @@ pl:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -899,6 +904,7 @@ pl:
         fra: Język francuski - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
+        gej: 
         gen: Gen - Mina
         geo: gruziński - ქართული
         hau: język hausa - Hausa
@@ -1033,6 +1039,7 @@ pl:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: do clarat refugees
             refugees: do rodziny clarat
           mobile:
@@ -1040,6 +1047,7 @@ pl:
               family: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
               refugees: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
             switch:
+              2017-07-17, visits=2: 
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
@@ -1319,9 +1327,11 @@ pl:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:

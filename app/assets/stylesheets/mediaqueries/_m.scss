@@ -846,8 +846,12 @@
     padding: 5px 8px;
   }
 
+  .section-choice {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .section-choice__container {
-    float: none;
     width: auto;
     margin-bottom: 2em;
   }

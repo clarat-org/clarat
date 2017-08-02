@@ -81,6 +81,8 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
           $(this).attr( 'timeHovered', sHovered )
 
   onBeforeUnload: =>
+    ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
+
     if $('dfn.JS-tooltip.hovered').length > 0
       keyword = $('dfn.JS-tooltip.hovered').html()
       time = $('dfn.JS-tooltip.hovered').attr('timeHovered')
@@ -88,8 +90,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         'send', 'event', 'TooltipRead', 'hoverout', 'tooltipActive:true;' +
         "keyword:#{keyword}", time
       )
-
-    ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
 
     if @goalOffset
       ga?(

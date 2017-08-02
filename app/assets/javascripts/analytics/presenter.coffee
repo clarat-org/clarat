@@ -77,7 +77,8 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       sHovered = (endHover - startHover)/1000
       if (sHovered) >= 1
         $(this).addClass(' hovered')
-        $(this).attr( 'timeHovered', sHovered )
+        if !$(this).attr('timeHovered') || $(this).attr('timeHovered') < sHovered
+          $(this).attr( 'timeHovered', sHovered )
 
   onBeforeUnload: =>
     if $('dfn.JS-tooltip.hovered').length > 0

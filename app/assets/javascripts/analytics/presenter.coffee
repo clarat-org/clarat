@@ -90,6 +90,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       )
 
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
+
     if @goalOffset
       ga?(
         'send', 'event', 'PageView', 'unload',

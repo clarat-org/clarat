@@ -898,6 +898,7 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+        send: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 

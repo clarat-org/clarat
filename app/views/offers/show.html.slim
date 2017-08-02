@@ -142,5 +142,6 @@
   / - content_for :view_specific_scripts do
   /   = javascript_include_tag "gmaps_search_results.js"
   / prepare modal
-- if @cookie
-  = render '/contacts/popup'
+- if @no_cookie
+  .user-popup
+    = render 'contacts/popup'

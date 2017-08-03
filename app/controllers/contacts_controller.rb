@@ -9,11 +9,12 @@ class ContactsController < ApplicationController
   end
 
   def create
+    referer = request.referer || '/'
     @contact = Contact.new params.for(Contact).refine
     if @contact.save
       respond_to do |format|
         format.html do
-          redirect_to request.referer, flash: { success: t('.success') }
+          redirect_to referer, flash: { success: t('.success') }
         end
         format.js { render :create, layout: 'modal_create' }
       end

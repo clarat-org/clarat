@@ -16,7 +16,7 @@ describe OffersController do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         get :show, id: offer.slug, locale: 'de', section: 'family'
         assert_includes response.body,
-                        'http://test.host/family/angebote/#{offer.slug}'
+                        "http://test.host/family/angebote/#{offer.slug}"
       end
 
       it 'shouldnt show on unapproved offer' do

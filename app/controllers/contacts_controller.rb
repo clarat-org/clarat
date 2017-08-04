@@ -32,7 +32,7 @@ class ContactsController < ApplicationController
 
   def validation_fail_render
     if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')
-      render :popup
+      render 'popup.js'
     else
       render :new
     end

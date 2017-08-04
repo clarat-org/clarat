@@ -43,6 +43,11 @@ describe ContactsController do
       end
       assert_template :new
     end
+
+    it 'should not work with empty form data for popup contact form' do
+      post :create, locale: 'de', section: 'refugees', contact: { message: 'Ich möchte an der Umfrage teilnehmen', name: '' }
+      assert_template 'popup.js'
+    end
   end
 
   describe "GET 'index'" do

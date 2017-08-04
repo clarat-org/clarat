@@ -935,6 +935,8 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

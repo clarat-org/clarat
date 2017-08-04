@@ -13,10 +13,12 @@ class Clarat.Search.Cell.SearchResults
     return _.merge viewObjectFocus(), @generalViewObject()
 
   generalViewObject: =>
+
     @addValuesToSearchResults()
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
     main_results_query: @mainResultsQuery()
+    more_informaiton_text: @moreInformationText()
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
@@ -73,6 +75,12 @@ class Clarat.Search.Cell.SearchResults
   mainResultsQuery: () ->
     if @model.query
       HandlebarsTemplates['remove_query_link'](query: @model.query)
+
+  moreInformationText: () ->
+    if @model.category
+      "#{@model.category}"
+    else if @model.attrs.query
+      "#{@model.attrs.query}"
 
   mainResultsLocation: () ->
     # output = "#{@model.search_location || I18n.t('conf.default_location')}"

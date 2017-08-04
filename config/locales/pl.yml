@@ -1051,6 +1051,8 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

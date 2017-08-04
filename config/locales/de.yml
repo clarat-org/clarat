@@ -1410,6 +1410,8 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

@@ -985,6 +985,8 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

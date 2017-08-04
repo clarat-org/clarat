@@ -928,6 +928,8 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

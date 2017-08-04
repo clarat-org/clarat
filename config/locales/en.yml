@@ -978,6 +978,8 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+    modal_create:
+      success: 
   offer:
     stamp:
       target_audience:

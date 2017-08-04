@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe OffersController do
@@ -28,6 +29,12 @@ describe OffersController do
       it 'should redirect to 404 if offer not found' do
         get :show, id: 'doesntexist', locale: 'de', section: 'family'
         assert_redirected_to controller: 'pages', action: 'not_found'
+      end
+
+      it 'should set the session cookie when none exists' do
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        get :show, id: offer.slug, locale: 'de', section: 'refugees'
+        assert_includes(cookies['session'], 'user_popup')
       end
     end
 
@@ -63,29 +70,6 @@ describe OffersController do
         generated_geolocation: I18n.t('conf.default_latlng')
       }
       assert_response :success
-    end
-
-    it 'should set the session cookie when none exists' do
-      get :index, locale: 'de', section: 'refugees'
-      assert_includes(cookies['session'], "#{Date.today}, visits=1")
-    end
-
-    it 'should update the session cookie when page has been visited once on different day' do
-      cookies['session'] = "#{Date.yesterday}, visits=1"
-      get :index, locale: 'de', section: 'refugees'
-      assert_includes(cookies['session'], "#{Date.today}, visits=2")
-    end
-
-    it 'should not update the session cookie when page has been visited before on same day' do
-      cookies['session'] = "#{Date.today}, visits=1"
-      get :index, locale: 'de', section: 'refugees'
-      assert_includes(cookies['session'], "#{Date.today}, visits=1")
-    end
-
-    it 'should open modal and reset the session cookie when page has been visited twice on different days' do
-      cookies['session'] = "#{Date.yesterday}, visits=2"
-      get :index, locale: 'de', section: 'refugees'
-      assert_nil(cookies['session'])
     end
   end
 

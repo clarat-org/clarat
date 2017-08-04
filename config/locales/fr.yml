@@ -961,6 +961,7 @@ fr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: écris-nous tout simplement un message
@@ -974,6 +975,7 @@ fr:
           name_placeholder: Nom *
           text: 
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
+        send: 
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 

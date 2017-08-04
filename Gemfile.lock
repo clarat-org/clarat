@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 271b2af7f078c4eb61607938fd46689bed4f7de1
+  revision: 4aefe0f13259effc6b889e7ac39c378c2813c85b
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +33,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.12.0)
+    aasm (4.12.1)
       concurrent-ruby (~> 1.0)
     actionmailer (4.2.9)
       actionpack (= 4.2.9)
@@ -70,11 +70,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    algoliasearch (1.12.7)
+    algoliasearch (1.14.0)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.19.1)
-      algoliasearch (~> 1.12.4)
+    algoliasearch-rails (1.20.1)
+      algoliasearch (~> 1.14.0)
       json (>= 1.5.1)
     arcane (1.1.1)
       actionpack (>= 3.0.0, < 5.0.0)
@@ -139,7 +139,7 @@ GEM
       cells (~> 4.0.0.beta6)
       slim (~> 3.0)
     choice (0.2.0)
-    closure_tree (6.5.0)
+    closure_tree (6.6.0)
       activerecord (>= 4.1.0)
       with_advisory_lock (>= 3.0.0)
     code_analyzer (0.4.5)
@@ -214,7 +214,7 @@ GEM
       httparty
       multi_json (>= 1.9.0)
     git-version-bump (0.15.1)
-    gli (2.16.0)
+    gli (2.16.1)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     haml (4.0.7)
@@ -245,7 +245,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.8.4)
+    i18n (0.8.6)
     i18n-js (3.0.0.rc11)
       i18n (~> 0.6)
     ice_nine (0.11.1)
@@ -321,7 +321,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.11)
       nokogiri
-    paper_trail (7.0.3)
+    paper_trail (7.1.0)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
     parser (2.2.3.0)
@@ -681,4 +681,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.6
+   1.15.3

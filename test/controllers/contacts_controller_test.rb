@@ -12,28 +12,29 @@ describe ContactsController do
 
   describe 'GET power user popup contact form' do
     it 'should work' do
-      session[:url] = 'localhost:3000/family'
-      get :new, popup: true, locale: 'de', section: 'family'
+      offer = FactoryGirl.create :offer, :approved, section: 'family'
+      get :new, id: offer.slug, locale: 'de', section: 'family'
       assert_response :success
-      assert_template :popup
     end
   end
 
   describe "POST 'create'" do
     it 'should work with valid contact data' do
       contact_attrs = FactoryGirl.attributes_for :contact
+      request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
         post :create, locale: 'de', section: 'refugees', contact: contact_attrs
       end
-      assert_redirected_to :section_choice
+      assert_redirected_to request.referer
     end
 
     it 'should work with valid report data' do
       contact_attrs = FactoryGirl.attributes_for :report
+      request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
         post :create, locale: 'de', section: 'family', contact: contact_attrs
       end
-      assert_redirected_to :section_choice
+      assert_redirected_to request.referer
     end
 
     it 'should not work with empty data' do
@@ -45,7 +46,7 @@ describe ContactsController do
 
     it 'should not work with empty form data for popup contact form' do
       post :create, locale: 'de', section: 'refugees', contact: { message: 'Ich möchte an der Umfrage teilnehmen', name: '' }
-      assert_template :popup
+      assert_template 'popup.js'
     end
   end
 

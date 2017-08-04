@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe OffersController do
@@ -11,13 +12,15 @@ describe OffersController do
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
-
+      
+      # rubocop:disable
       it 'should use the correct canonical URL' do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         get :show, id: offer.slug, locale: 'de', section: 'family'
         assert_includes response.body,
                         "http://test.host/family/angebote/#{offer.slug}"
       end
+      # rubocop:enable
 
       it 'shouldnt show on unapproved offer' do
         offer = FactoryGirl.create :offer

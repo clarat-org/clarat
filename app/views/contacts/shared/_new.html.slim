@@ -1,5 +1,5 @@
 - reporting = contact.reporting?
-= simple_form_for contact, html: { class: 'contact-form' }, remote: true do |f|
+= simple_form_for contact, html: { class: 'contact-form contact-request' }, remote: true do |f|
   - if reporting
     p.contact_heading= t('.send_us_a_message')
     p.success_message style=("display: none;") = t('contacts.create.success')

@@ -1,7 +1,7 @@
-= modal_for 'popup' do
+= modal_for 'popup', html: { class: 'user-popup' } do
   h2= t 'layouts.partials.modal.popup.headline'
   p.text= t 'layouts.partials.modal.popup.text'
-  = simple_form_for contact do |f|
+  = simple_form_for contact, remote: true do |f|
     = f.input :name, label: false, input_html: { placeholder: t('layouts.partials.modal.popup.name_placeholder') }
     = f.input :email, required: true, label: false, input_html: { placeholder: t('layouts.partials.modal.popup.email_placeholder') }
     = f.hidden_field :message, value: t('layouts.partials.modal.popup.message')
@@ -9,7 +9,7 @@
   p.footer = t 'layouts.partials.modal.popup.footer'
 
 javascript:
-  setTimeout(showPopup, 5000)
+  setTimeout(showPopup, 10000)
   function showPopup() {
     $('#popup').popup('show');
   };

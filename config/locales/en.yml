@@ -51,7 +51,7 @@ en:
           link_1:
             name: video
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: What is clarat?
         question_10:
@@ -924,6 +924,7 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: write us a message.
@@ -941,6 +942,7 @@ en:
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
+        send: 
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-

@@ -48,7 +48,7 @@ fa:
           link_1:
             name: فیلم
             target: _blank
-            url: ttp://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-auf-farsi-erklart/
             var: link_to_family_movie
           question: "  clarat چیست؟"
         question_10:
@@ -935,6 +935,7 @@ fa:
         twitter:
           anchor: توییتر
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
@@ -948,6 +949,7 @@ fa:
           name_placeholder: نام *
           text: آن چیزی را که ما می توانیم بهبود بدهیم و یا مورد علاقه تو می باشد را به ما اعلام کن.بدین منظور ما با کمال میل با تو تماس می گیریم.آیا اجازه ارسال ایمیل با اعلام جزئیات را به تو داریم؟
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
+        send: 
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
         title: |-

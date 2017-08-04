@@ -5,20 +5,16 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new url: request.referer
-    if params[:popup]
-      @link = session[:url].nil? || session[:url].include?('popup') ? '/' : session[:url]
-      render :popup
-    else
-      respond_with @contact
-    end
+    respond_with @contact
   end
 
   def create
+    referer = request.referer || '/'
     @contact = Contact.new params.for(Contact).refine
     if @contact.save
       respond_to do |format|
         format.html do
-          redirect_to section_choice_path, flash: { success: t('.success') }
+          redirect_to referer, flash: { success: t('.success') }
         end
         format.js { render :create, layout: 'modal_create' }
       end
@@ -36,7 +32,7 @@ class ContactsController < ApplicationController
 
   def validation_fail_render
     if params[:contact][:message].eql? t('layouts.partials.modal.popup.message')
-      render :popup
+      render 'popup.js'
     else
       render :new
     end

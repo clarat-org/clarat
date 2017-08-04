@@ -72,7 +72,7 @@ de:
           link_1:
             name: Film
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Was ist clarat?
         question_10:
@@ -1353,6 +1353,7 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1376,6 +1377,7 @@ de:
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
+        send: 
       nav_lang:
         legal_title: 
         title: 

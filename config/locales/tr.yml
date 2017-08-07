@@ -50,7 +50,7 @@ tr:
           link_1:
             name: videoda
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Clarat nedir?
         question_10:
@@ -872,11 +872,13 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -897,6 +899,7 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
+        send: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 

@@ -1,5 +1,5 @@
-%div.more-information
-  = hb 'if more_informaiton_text' do
+= hb 'if more_informaiton_text' do
+  %div.more-information
     %div.more-information-svg
       %svg{:height => "35px", :version => "1.1", :viewbox => "0 0 64 65", :width => "34px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
         / Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch

@@ -121,7 +121,7 @@ en:
             information is out of date, then we will update it.
           question: Is the information on clarat up to date?
         question_7:
-          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
+          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Hamburg, Munich, Dortmund, Dusseldorf, Cologne Nuremberg and Stuttgart. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
           question: Is clarat available for all of Germany?
         question_8:
           answer: "clarat shows you the help you can get in your local area. All the information \nyou need is in one place. Our layout is simple and clear. And we tell you exactly \nwhat you need to do to get help. We write in a clear, simple language. So that \neveryone can understand what we've written. Because at clarat we want to help \neveryone who needs help. Even people who don't speak very good German. On\nclarat, you can read about the support services in other languages, too. If you \nwant to know more, click %{ref_to_how_many_languages}."
@@ -925,7 +925,6 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: write us a message.

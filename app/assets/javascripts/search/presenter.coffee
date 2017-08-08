@@ -104,6 +104,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveQueryClick'
     '.JS-MoreInformationButton':
       click: 'handleShowMoreInformaiton'
+    '.more-information-text':
+      click: 'handleShowMoreInformaiton'
     '.JS-RemoveExactLocationClick':
       click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':

@@ -24,6 +24,7 @@ noscript.NoScript
   p= t '.unavailable_location_modal'
   = render '/update_requests/new', update_request: @update_request
 
-/ prepare fake door Modal
+/ prepare fake door modal
 = modal_for 'more_information_overlay', autoopen: false do
-  p= 'Hello hello turn the radio on. Is there anybody out there?'  
+  p= t '.more_information_overlay'
+  = render '/update_requests/new', update_request: @more_info_interest

@@ -9,6 +9,10 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     window.onbeforeunload = @onBeforeUnload
 
   CALLBACKS:
+    '.JS-MoreInformationButton':
+      click: 'handleShowMoreInformaitonClick'
+    '.more-information-text':
+      click: 'handleShowMoreInformaitonClick'
     'a[href^="http"]':
       click: 'trackClick'
     document:
@@ -20,6 +24,9 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @trackOutboundLink(e.target.href)
     return true
 
+  handleShowMoreInformaitonClick: =>
+    topic = $('span.more_information_theme').html().trim()
+    ga?('send', 'event', 'MoreInfo', 'click', "topic:#{topic};", @pageViewTime)
 
   trackOutboundLink: (url) =>
     ga? 'send', 'event', 'outbound', 'click', url,
@@ -100,6 +107,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         @pageViewTime
       )
 
+    debugger;
 
 $(document).ready ->
   new Clarat.Analytics.Presenter

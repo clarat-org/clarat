@@ -675,6 +675,8 @@ ar:
         categories: الفئات
         filter: فلتر
         map: خريطة
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: من أجل
       enclosing: تم العثور على

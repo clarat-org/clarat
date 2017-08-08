@@ -730,6 +730,8 @@ fa:
         categories: طبقه بندی ها
         filter: فیلتر
         map: نقشه
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: برای جستجوی عبارت
       enclosing: پیدا کردن

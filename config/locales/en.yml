@@ -739,6 +739,8 @@ en:
         categories: Categories
         filter: Filter
         map: Map
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: for the search term
       enclosing: found

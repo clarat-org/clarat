@@ -1142,6 +1142,8 @@ de:
         categories: Kategorien
         filter: Filter
         map: Karte
+      more_info_button: Zum Ratgeber
+      more_info_text: 'Mehr Informationen zu:'
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1378,6 +1380,7 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
         send: 
+        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
         legal_title: 
         title: 

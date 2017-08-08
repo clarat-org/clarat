@@ -107,7 +107,5 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         @pageViewTime
       )
 
-    debugger;
-
 $(document).ready ->
   new Clarat.Analytics.Presenter

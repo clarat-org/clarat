@@ -815,6 +815,8 @@ pl:
         categories: Kategorie
         filter: Filtr
         map: Mapa
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono

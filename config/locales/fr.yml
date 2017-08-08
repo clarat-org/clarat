@@ -767,6 +767,8 @@ fr:
         categories: Catégories
         filter: Filtre
         map: Carte
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé

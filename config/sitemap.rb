@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 # TODO: schedule
 host 'www.clarat.org'
+protocol "https"
 
 sitemap :site do
   url section_choice_url,

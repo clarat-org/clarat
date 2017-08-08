@@ -138,8 +138,8 @@ gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
-gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
-                        branch: 'adds-custom-storages'
+gem 'dynamic_sitemaps', github: 'allthegoldt/dynamic_sitemaps',
+                        branch: 'master'
 
 gem 'responders', '~> 2.0'
 

@@ -92,7 +92,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
     if $('dfn.JS-tooltip.hovered').length > 0
       keyword = $('dfn.JS-tooltip.hovered').html()
-      time = $('dfn.JS-tooltip.hovered').attr('timeHovered')
+      time = parseInt($('dfn.JS-tooltip.hovered').attr('timeHovered'))
       ga?(
         'send', 'event', 'TooltipRead', 'hoverout', 'tooltipActive:true;' +
         "keyword:#{keyword}", time

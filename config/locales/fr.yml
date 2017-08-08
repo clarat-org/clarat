@@ -934,6 +934,8 @@ fr:
         personal: personnel
         portal: liste d'adresses
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -955,16 +957,17 @@ fr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impression
+        plus: clarat plus
         privacy: Protection des données
         tos: Informations juridiques
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: Adresse électronique *
@@ -973,8 +976,8 @@ fr:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Nom *
           text: 
-        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
         send: 
+        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 
@@ -1166,8 +1169,6 @@ fr:
     about:
       amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
       andrea: Elle a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Elle fait partie de l'équipe recherche de clarat. Elle a une vue d'ensemble sur le monde de notre famille. Sa chanson préférée est Work Me des Black Keys.
-      anja: Elle est oncologue et ingénieure. Elle pense rapidement et de façon logique. Elle fait partie de l'équipe recherche de clarat. Elle est chargée de contrôler la qualité de notre travail. Sa chanson préférée est Where is my mind des Pixies.
-      ann-sophie: 
       anna: Elle est philologue. Cela veut dire qu'elle sait beaucoup de choses sur les langues. Elle s'y connait également bien en littérature. Elle sait très bien comprendre les choses compliquées. Elle fait partie de l'équipe recherche de clarat. Sa chanson préférée est 1009 de Bonobo.
       anne: Elle a fait des études en économie et relations internationales. Elle pense de façon rapide et très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
       astrid: Elle est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne est contagieuse. Elle fait partie de l'équipe recherche de clarat. Elle recherche aussi de nouveaux organismes sur internet. Sa chanson préférée est You Got Me de The Roots.
@@ -1205,7 +1206,6 @@ fr:
       lisa: Elle fait du Design Thinking. Elle aime planifier des projets avec les autres de façon créative. Elle sait bien dessiner. Elle fait partie de l'équipe de recherche de clarat et elle communique avec nos utilisateurs. Elle doit découvrir qui utilise clarat et de quelle façon. Sa chanson préférée est Resolution de Matt Corby.
       magdalena: 
       marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
-      marie: 
       meta_description: 
       michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
       nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.

@@ -851,6 +851,8 @@ tr:
         personal: Kişisel
         portal: Adres listesi
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -872,12 +874,12 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -885,6 +887,7 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: E-Mail Adresi *
@@ -893,12 +896,12 @@ tr:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: İsim *
           text: 
+        send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
-        send: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -1100,8 +1103,6 @@ tr:
     about:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
-      anja: 
-      ann-sophie: 
       anna: 
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
@@ -1141,7 +1142,6 @@ tr:
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
       magdalena: 
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
-      marie: 
       meta_description: 
       michaela: 
       nahla: 

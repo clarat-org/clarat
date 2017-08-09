@@ -39,7 +39,7 @@ class OffersHelperTest < ActionView::TestCase
     end
 
     it 'orders contacts alphabetically by last name' do
-      last_names = offer.contact_people.pluck(:last_name).sort
+      last_names = offer.contact_people.pluck(:last_name).compact.sort
       offer_with_contacts(offer).first.last_name.must_equal last_names.first
     end
   end

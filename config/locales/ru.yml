@@ -796,6 +796,8 @@ ru:
         categories: категории
         filter: Фильтр
         map: карта
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: для
       enclosing: найдено

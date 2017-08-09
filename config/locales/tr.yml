@@ -696,6 +696,8 @@ tr:
         categories: Kategoriler
         filter: filtre
         map: Harita
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: için
       enclosing: bulundu

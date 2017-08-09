@@ -13,7 +13,6 @@ class Clarat.Search.Cell.SearchResults
     return _.merge viewObjectFocus(), @generalViewObject()
 
   generalViewObject: =>
-
     @addValuesToSearchResults()
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
@@ -82,7 +81,8 @@ class Clarat.Search.Cell.SearchResults
     if @model.category
       "#{@model.category}"
     else if @model.attrs.query
-      "#{@model.attrs.query}"
+      "#{@model.attrs.query}" unless document.referrer.indexOf('/themen/') > -1
+
 
   mainResultsLocation: () ->
     # output = "#{@model.search_location || I18n.t('conf.default_location')}"

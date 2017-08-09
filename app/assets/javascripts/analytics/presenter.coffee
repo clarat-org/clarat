@@ -10,9 +10,11 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
   CALLBACKS:
     '.JS-MoreInformationButton':
-      click: 'handleShowMoreInformaitonClick'
+      click: 'handleShowMoreInformationClick'
     '.more-information-text':
-      click: 'handleShowMoreInformaitonClick'
+      click: 'handleShowMoreInformationClick'
+    '.JS-CategoryLink':
+      click: 'handleCategoryClick'
     'a[href^="http"]':
       click: 'trackClick'
     document:
@@ -24,7 +26,22 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @trackOutboundLink(e.target.href)
     return true
 
-  handleShowMoreInformaitonClick: =>
+  handleCategoryClick: (e) =>
+    if !@moreInfo && $('span.more_information_theme').html()
+      @moreInfo = $('span.more_information_theme').html().trim()
+      @trackMoreInfoShow(@moreInfo)
+
+    category = e.target.getAttribute('data-name')
+    if (@moreInfo && @moreInfo != category) || !@moreInfo
+      @moreInfo = category
+      @trackMoreInfoShow(@moreInfo)
+
+  trackMoreInfoShow: (moreInfo) =>
+    ga?('send', 'event', 'MoreInfo', 'show',
+        "topic:#{moreInfo};", @pageViewTime
+    )
+
+  handleShowMoreInformationClick: =>
     topic = $('span.more_information_theme').html().trim()
     ga?('send', 'event', 'MoreInfo', 'click', "topic:#{topic};", @pageViewTime)
 
@@ -34,7 +51,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       # 'hitCallback': ->
       #   document.location = url
       #   return
-
 
   detectPlacesAutocompleteTriggered: =>
     place = Clarat.GMaps.PlacesAutocomplete.instance.getPlace()
@@ -75,6 +91,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
     startHover = $.now()
+    @moreInfo = $('span.more_information_theme').html()
 
     $('dfn.JS-tooltip').hover (->
       startHover = $.now()
@@ -89,6 +106,11 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
+
+    if !@moreInfo && $('span.more_information_theme').html()
+      if @moreInfo != $('span.more_information_theme').html().trim()
+        @moreInfo = $('span.more_information_theme').html().trim()
+        @trackMoreInfoShow(@moreInfo)
 
     if $('dfn.JS-tooltip.hovered').length > 0
       keyword = $('dfn.JS-tooltip.hovered').html()

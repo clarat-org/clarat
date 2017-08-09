@@ -10,7 +10,7 @@ section.section-content.section-content--nextsteps
       == offer.next_steps_for_current_locale
     - else
       == translation_block translation_automated do
-        == offer.old_next_steps
+        == offer.translated_old_next_steps
 
     - if offer.code_word && !offer.code_word.empty?
       p

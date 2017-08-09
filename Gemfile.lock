@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 4aefe0f13259effc6b889e7ac39c378c2813c85b
+  revision: b92dde6fcd8cadb948df1060111d4e34bcdc722e
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +33,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.12.1)
+    aasm (4.12.2)
       concurrent-ruby (~> 1.0)
     actionmailer (4.2.9)
       actionpack (= 4.2.9)

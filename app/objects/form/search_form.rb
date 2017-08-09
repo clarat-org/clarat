@@ -43,7 +43,7 @@ class SearchForm
   attribute :encounters, String,
             default: (Offer::ENCOUNTERS - %w(personal)).join(',')
   ### Sort Order
-  attribute :sort_order, String, default: :nearby
+  attribute :sort_order, String, default: :relevance
   enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
   attribute :section_identifier, String, default: :family

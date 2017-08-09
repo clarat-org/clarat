@@ -121,7 +121,7 @@ en:
             information is out of date, then we will update it.
           question: Is the information on clarat up to date?
         question_7:
-          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
+          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Hamburg, Munich, Dortmund, Dusseldorf, Cologne Nuremberg and Stuttgart. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
           question: Is clarat available for all of Germany?
         question_8:
           answer: "clarat shows you the help you can get in your local area. All the information \nyou need is in one place. Our layout is simple and clear. And we tell you exactly \nwhat you need to do to get help. We write in a clear, simple language. So that \neveryone can understand what we've written. Because at clarat we want to help \neveryone who needs help. Even people who don't speak very good German. On\nclarat, you can read about the support services in other languages, too. If you \nwant to know more, click %{ref_to_how_many_languages}."
@@ -898,6 +898,8 @@ en:
         personal: personal
         portal: address list
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -925,7 +927,6 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: write us a message.
@@ -934,6 +935,7 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
+        more_information_overlay: 
         popup:
           button: Yes, please
           email_placeholder: email address *
@@ -942,8 +944,8 @@ en:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
-        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
         send: 
+        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-
@@ -1151,8 +1153,6 @@ en:
         Andrea studied intercultural management. That means she knows a lot
         about economics and culture. She's a precise worker. At
         clarat she is part of the research team. She keeps an eye on everything that happens in the clarat family world. Her favourite song is “Work Me” by The Black Keys.
-      anja: Anja is an ecologist and engineer. She can think quickly and logically. She works in clarat's research team, She ensures the quality of our work. Her favourite song is "Where is my My Mind?" by the Pixies.
-      ann-sophie: Ann-Sophie studied socio-cultural studies. She knows a lot about the topic of migration. She can understand things well. She works for the clarat research team. Her favourite song is "Papertrails" from Darkside.
       anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team and she's a clarat language expert. Her favourite song is "1009" by Bonobo
       anne: |-
         Anne studied economics and international relations. She's a quick,
@@ -1253,7 +1253,6 @@ en:
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      marie: Marie is an academic researcher into the fields of peace and conflict research. This means she knows a lot about conflict and war. She can gather and sort information quickly. She works in clarat's research team. Her favourite song is "Move On Up" by Curtis Mayfield.
       meta_description: 
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.

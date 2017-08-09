@@ -1050,8 +1050,6 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-    modal_create:
-      success: 
   offer:
     stamp:
       target_audience:

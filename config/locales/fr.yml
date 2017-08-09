@@ -1014,8 +1014,6 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
-    modal_create:
-      success: 
   offer:
     stamp:
       target_audience:

@@ -138,8 +138,7 @@ gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
-gem 'dynamic_sitemaps', github: 'allthegoldt/dynamic_sitemaps',
-                        branch: 'master'
+gem 'dynamic_sitemaps', github: 'allthegoldt/dynamic_sitemaps'
 
 gem 'responders', '~> 2.0'
 

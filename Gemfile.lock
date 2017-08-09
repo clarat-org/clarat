@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/allthegoldt/dynamic_sitemaps.git
   revision: 246d9ff5bf6bfac986d45b4e635b18cc1c902486
-  branch: master
   specs:
     dynamic_sitemaps (2.0.0)
       aws-sdk
@@ -87,13 +86,13 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
-    aws-sdk (2.10.21)
-      aws-sdk-resources (= 2.10.21)
-    aws-sdk-core (2.10.21)
+    aws-sdk (2.10.22)
+      aws-sdk-resources (= 2.10.22)
+    aws-sdk-core (2.10.22)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.10.21)
-      aws-sdk-core (= 2.10.21)
+    aws-sdk-resources (2.10.22)
+      aws-sdk-core (= 2.10.22)
     aws-sigv4 (1.0.1)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)

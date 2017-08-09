@@ -62,7 +62,6 @@
     }
   }
 
-
 }
 
 .nav-sections__button {
@@ -73,8 +72,14 @@
     padding-top: 7em;
     color: $brand_brown;
   }
-}
 
+  &[aria-selected="true"] {
+    body.refugees &,
+    body.family & {
+      color: $brand-orange;
+    }
+  }
+}
 
 // Legal: only in refugees
 
@@ -142,7 +147,6 @@ $dimension: 115px;
   }
 }
 
-
 .nav-sections__listitem--e-misc {
   background: image-url('picto_everydaylife.svg') no-repeat center top;
   background-size: $dimension $dimension;
@@ -159,7 +163,6 @@ $dimension: 115px;
 .nav-sections__listitem--f-violence {
   background: image-url('picto_violence.svg') no-repeat center top;
   background-size: $dimension $dimension;
-
 
   body.family & {
     background-image: image-url('picto_violence--family.svg');

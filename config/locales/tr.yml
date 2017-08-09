@@ -6,6 +6,8 @@ tr:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -24,6 +26,8 @@ tr:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -46,7 +50,7 @@ tr:
           link_1:
             name: videoda
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Clarat nedir?
         question_10:
@@ -352,6 +356,10 @@ tr:
         send: gönder
         send_us_a_message: Bize mesaj gönder
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -380,6 +388,9 @@ tr:
       success_html: |
         E-bülten aboneliğinden başarıyla çıktın.
         (<a href="%{subscribe_href}">tekrar abone ol</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -496,6 +507,7 @@ tr:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -504,20 +516,30 @@ tr:
         ber: Ber
         bos: Bos
         bul: Bul
+        bur: Bur
         cau: Cau
         ckb: Ckb
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        ful: Ful
+        gej: 
+        geo: Geo
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -529,11 +551,13 @@ tr:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -543,7 +567,9 @@ tr:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
+        sdh: Sdh
         skr: Skr
         slo: Slo
         slv: Slv
@@ -552,6 +578,7 @@ tr:
         spa: Spa
         sqi: Sqi
         srp: Srp
+        sus: Sus
         swa: Swa
         swe: Swe
         tam: Tam
@@ -568,6 +595,7 @@ tr:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -579,6 +607,8 @@ tr:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+  formtastic:
+    required: required
   free: 
   js:
     ajax_error:
@@ -666,6 +696,8 @@ tr:
         categories: Kategoriler
         filter: filtre
         map: Harita
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: için
       enclosing: bulundu
@@ -717,6 +749,7 @@ tr:
         amh: Amharca - አማርኛ
         ara: Arapça - عربي
         arc: Aramice - ארמית / Arāmît
+        arm: Ermenice - Հայերեն / Hajeren
         aze: Azerice - Azərbaycan
         bam: Bambara - Bamanankan
         ban: Bali dili - Basa Bali
@@ -725,20 +758,31 @@ tr:
         ber: Berberi dilleri - Tamaziɣt
         bos: Boşnakça - bosanski
         bul: Bulgarca - български
+        bur: Birmanyalı - မြန်မာစာ
         cau: Abazaca - абаза бызшва
         ckb: Soranice - سۆرانی
         cpe: Kamtok - Pidgin
         cus: Saho - ሳሆኛ
         cze: Çekçe - čeština
+        dan: Danimarka - Dansk
         deu: Almanca - Deutsch
+        dje: Zarma - Djerma
         dyu: Jula - Julakan
         ell: Yunanca - ελληνικά
         eng: İngilizce - English
+        est: Estonyalı - eesti keel
+        ewe: Ewe - Eʋegbe
         ewo: Ewondo - Ewondo
         fas: Farsça - فارسی
+        fil: Filipince - Wikang Filipino
         fin: Fince - suomi
         fra: Fransızca - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        gej: 
+        gen: Gen - Mina
+        geo: Gürcü - ქართული
+        hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
         heb: İbranice - עברית
         hin: Hintçe - हिन्दी
@@ -750,11 +794,13 @@ tr:
         kor: Korece - 한국말 / 조선말
         kur: Kürtçe - کوردی
         lav: Letonca - latviešu
+        lin: Lingaca - Ngála
         lit: Litvanca - lietuvių
         ltz: Lüksemburgca - Lëtzebuergesch
         luo: Luo - Dholuo
         man: Maninka - Maninka
         mkd: Makedonca - македонски
+        mos: Geyik - Moose
         msa: Malayca – بهاس ملايو
         mul: Talep üzerine diğer diller
         nor: Norveççe - Norsk
@@ -764,7 +810,9 @@ tr:
         pus: Peştuca - پښتو‎
         rom: Çingenece - Romani
         ron: Rumence - română
+        run: Kirundi
         rus: Rusça - русский
+        sdh: Kurmanci - كورمانجى / Kurmancî
         skr: Sırp-Hırvatça - српскохрватски / hrvatskosrpski
         slo: Slovakça - slovenský jazyk
         slv: Slovence - Slovenščina
@@ -773,6 +821,7 @@ tr:
         spa: İspanyolca - español
         sqi: Arnavutça - Shqipja
         srp: Sırpça - српски
+        sus: Susu - Sosoxui
         swa: Svahili - Kiswahili
         swe: İsveççe - svenska
         tam: Tamilce - தமிழ்
@@ -789,6 +838,7 @@ tr:
         uzb: Özbekçe - Oʻzbek tili
         vie: Vietnamca - tiếng Việt
         wol: Wolof - wɔlɔf
+        xxx: eşlik eden işaret dili - speech-acc. gestures
         zho: Çince - 普通话 / 普通話
         zza: Zazaca - Zazaki / Kırmancki
     shariff:
@@ -803,6 +853,8 @@ tr:
         personal: Kişisel
         portal: Adres listesi
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -813,6 +865,9 @@ tr:
         about: Hakkımızda
         blog: Blog
         contact: İletişim
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: Sıkça sorulan sorular
         fb:
           anchor: Facebook
@@ -821,6 +876,7 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
@@ -833,13 +889,23 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        more_information_overlay: 
+        popup:
+          button: 
+          email_placeholder: E-Mail Adresi *
+          footer: 
+          headline: 
+          message: Ich möchte an der Umfrage teilnehmen
+          name_placeholder: İsim *
+          text: 
+        send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
       navigation:
         category_headline: Kategoriler arasında ara
@@ -864,6 +930,7 @@ tr:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: 
             refugees: 
           mobile:
@@ -871,6 +938,7 @@ tr:
               family: 
               refugees: 
             switch:
+              2017-07-17, visits=2: 
               family: 
               refugees: 
         title: Otomatik çeviriler
@@ -879,6 +947,8 @@ tr:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -975,6 +1045,9 @@ tr:
           charged: 
           confidential: 
           day_and_night: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:
@@ -996,6 +1069,8 @@ tr:
       what:
         code_word: Ne sorman gerekir veya sitede neyi araman gerekir?
         heading: Konu nedir?
+        offertaxonomy:
+          heading: 
       who: Nerede yardım bulabilirim?
       who_contact_people:
         dr: Dr.
@@ -1030,8 +1105,6 @@ tr:
     about:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
-      anja: 
-      ann-sophie: 
       anna: 
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
@@ -1071,10 +1144,11 @@ tr:
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
       magdalena: 
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
-      marie: 
+      meta_description: 
       michaela: 
       nahla: 
       nathalie: 
+      nicole: 
       nils: |
         Ist Informatiker. Das heißt, er kann gut Computerprogramme und
         Internetseiten programmieren. Ihm fällt immer eine gute Lösung ein und
@@ -1087,6 +1161,7 @@ tr:
       sophie: 
       stefan: bir kültürel çalışmalar uzmanı. Bu, kültürler ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. İkna kabiliyeti oldukça yüksektir. Ayrıca clarat’ın mucididir. En sevdiği şarkı The Doors’un Riders On The Storm şarkısı.
       text: 'Clarat, kâr amacı gütmeyen bir vakıf olan Benckiser Stiftung Zukunft’un (www.benckiser-stiftung.org) gönüllü bir projesidir. Benckiser Vakfı ile yıllardan beri çocuk ve gençleri destekleme anlamında etkili projeler düzenlemekteyiz. Bu projeleri yürütürken bir şey dikkatimizi çekti: Destek bazında teklifler bulmak çok zor. Bu arada bir şey fark ettik ki; bizim gibi uzmanlar bile teklifleri bulmakta zorluk çekerse, yardıma ihtiyacı olan çocuklar, gençler ve aileler nasıl bir yol bulsunlar? Veya Almanya''daki günlük yaşam hakkında hiç bir şey bilmeyen mülteciler ne yapsın? Cevap: Çok zor! İşte tam da bu sebepten dolayı Clarat fikri doğdu: Yardıma ihtiyacı olanlara kolayca destek bulmak için. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.'
+      tian: 
       tine: bir sosyal pedagog. İnsanları dinlemesini çok iyi biliyor. Ayrıca kendisi bir yazar. Bu dile çok hâkim olduğu ve güzel hikayeler yazdığı anlamına geliyor. clarad’da araştırma ekibinde yer alıyor. En sevdiği şarkı Ghostpoet’ten Survive It şarkısı.
       title: Hakkımızda
       verena: bir siyaset bilimleri uzmanı. Bu, siyaset ve toplum hakkında çok bilgiye sahip olduğu anlamına geliyor. Bilgi edinme kabiliyeti çok yüksek. Clarat’da araştırma ekibinde yer alıyor ve ansiklopedimiz ile ilgileniyor. En sevdiği şarkı Oh Wonder’in Lose It şarkısı.
@@ -1144,9 +1219,11 @@ tr:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:
@@ -1261,6 +1338,7 @@ tr:
     haeufige-fragen: sıkça-sorulan-sorular
     home: 
     impressum: künye
+    kontakt: 
     liste: 
     liste-de-services: 
     new: yeni
@@ -1293,6 +1371,14 @@ tr:
           family: Buraya tıkladığında clarat Family erişebilirsin. clarat Family'de çocuklar, gençler ve aileler için destek arayabilirsin.
           refugees: Buraya tıkladığında clarat Refugees'e erişebilirsin. clarat Refugees'de mülteciler için destek arayabilirsin.
   simple_form:
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
+        show:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:

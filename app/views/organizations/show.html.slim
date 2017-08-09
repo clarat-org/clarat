@@ -1,4 +1,4 @@
-- provide(:title, @organization.name )
+- provide(:meta_title, @organization.name + ' | clarat')
 - content_for :canonical_url,
               organization_url(section: @organization.canonical_section,
                                id: @organization.slug)
@@ -18,14 +18,14 @@
           == automation_warning(@organization.translation_automated?)
         .section-content__body.section-content--what
           == translation_block @organization.translation_automated? do
-            == @organization.description
+            == @organization.translated_description
       - if @organization.offers.visible_in_frontend.any?
         section.section-content.section-content--alloffers
           h3.section-content__title
             = t '.offers_all'
             == automation_warning(@organization.translation_automated?)
           .section-content__body.section-content__body--offers-of-orga
-            - SectionFilter.all.each do |section|
+            - Section.all.each do |section|
 
               - unless @organization.offers.visible_in_frontend.in_section(section.identifier).empty?
                 h4.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"
@@ -39,7 +39,7 @@
 
                       .Listing-offers__address
                         .Listing-results__offerinfo.Listing-results__stamp
-                          = offer.send("stamp_#{section.identifier}", @current_locale)
+                          = offer.send("singular_stamp", @current_locale)
                         - if offer.location && offer.location.visible
                           .Listing-results__location
                             = offer.location_address

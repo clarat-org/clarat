@@ -1,7 +1,7 @@
 .filter-form#advanced_search(aria-hidden='true')
   = hb '> _sort_order'
 
-  %fieldset.filter-form__fieldset#age
+  %fieldset.filter-form__fieldset
     %legend.filter-form__fieldset__headline#age
       = hb '@root.headline_age'
     %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age

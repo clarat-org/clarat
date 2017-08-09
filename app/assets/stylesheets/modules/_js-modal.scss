@@ -40,7 +40,23 @@
 	display: none;
 }
 
-#unavailable_location_overlay {
+#popup {
+  width: 800px;
+
+  p {
+    &.footer {
+      font-size: 0.7em;
+    }
+  }
+
+  input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 0.5em;
+  }
+}
+
+#unavailable_location_overlay, #more_information_overlay {
   .formtastic {
     &.update_request {
       margin-top: 25px;

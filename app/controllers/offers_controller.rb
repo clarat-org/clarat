@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class OffersController < ApplicationController
   include GmapsVariable
   respond_to :html
@@ -12,18 +13,23 @@ class OffersController < ApplicationController
   def index
     @category_tree ||= Category.sorted_hash_tree
     prepare_location_unavailable
+    prepare_more_info_interest
     render :index
   end
 
+  # rubocop:disable Metrics/AbcSize
   def show
-    @offer = Offer.visible_in_frontend.friendly.find(params[:id])
-    unless @offer.in_section? @current_section
-      return redirect_to section: @offer.canonical_section
+    unless cookies[:session]
+      @no_cookie = true
+      cookies[:session] = { value: 'user_popup', expires: 3.days.from_now }
     end
+
+    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
   end
+  # rubocop:enable Metrics/AbcSize
 
   def section_forward
     offer = Offer.visible_in_frontend.friendly.find(params[:id])
@@ -52,6 +58,12 @@ class OffersController < ApplicationController
   def prepare_location_unavailable
     @update_request = UpdateRequest.new(
       search_location: @search_form.search_location # TODO: set by JS
+    )
+  end
+
+  def prepare_more_info_interest
+    @more_info_interest = UpdateRequest.new(
+      search_location: @search_form.query || @search_form.category # TODO: set by JS
     )
   end
 

@@ -634,6 +634,14 @@
       padding-top: 0;
       width: 100%;
     }
+
+    &[aria-selected="true"] {
+      body.family &,
+      body.refugees & {
+        color: $brand_brown;
+        text-decoration: underline;
+      }
+    }
   }
 
   .nav-sections__notification {
@@ -825,6 +833,16 @@
     }
   }
 
+  .more-information-text,
+  .JS-MoreInformationButton {
+    font-size: 14px;
+    max-width: 300px;
+  }
+
+  .JS-MoreInformationButton {
+    width: 130px;
+  }
+
   .Type-results__link {
     font-size: 14px;
     width: 100%;
@@ -836,11 +854,14 @@
 
   .Type-results__item {
     padding: 5px 8px;
-    max-width: 50%;
+  }
+
+  .section-choice {
+    flex-direction: column;
+    align-items: center;
   }
 
   .section-choice__container {
-    float: none;
     width: auto;
     margin-bottom: 2em;
   }
@@ -896,6 +917,10 @@
   .hint__icon {
     float: none;
     font-size: 21px;
+  }
+
+  .more-information-text {
+    width: 50%;
   }
 
   // Misc ######################################

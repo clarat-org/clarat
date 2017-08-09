@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 class ApplicationHelperTest < ActionView::TestCase
@@ -34,9 +35,9 @@ class ApplicationHelperTest < ActionView::TestCase
 
     it 'replaces another non-default section with the default refugees' do
       # setup
-      original_section_identifiers = SectionFilter::IDENTIFIER
+      original_section_identifiers = Section::IDENTIFIER
       silence_warnings do
-        SectionFilter::IDENTIFIER = %w(family somethingelse refugees)
+        Section::IDENTIFIER = %w(family somethingelse refugees).freeze
       end
 
       # test
@@ -45,7 +46,7 @@ class ApplicationHelperTest < ActionView::TestCase
 
       # cleanup
       silence_warnings do
-        SectionFilter::IDENTIFIER = original_section_identifiers
+        Section::IDENTIFIER = original_section_identifiers
       end
     end
 
@@ -64,14 +65,16 @@ class ApplicationHelperTest < ActionView::TestCase
     it 'replaces only the first section part of the URL' do
       @request.expect(:url, 'http://some.host/family/angebote?query=family')
       default_canonical_url.must_equal(
-        'http://some.host/refugees/angebote?query=family')
+        'http://some.host/refugees/angebote?query=family'
+      )
     end
 
     it 'shouldnt replace any part other than the section part, even if it'\
        ' contains a non-default string' do
       @request.expect(:url, 'http://some.host/refugees/angebote?query=family')
       default_canonical_url.must_equal(
-        'http://some.host/refugees/angebote?query=family')
+        'http://some.host/refugees/angebote?query=family'
+      )
     end
   end
 

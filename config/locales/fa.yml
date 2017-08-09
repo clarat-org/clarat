@@ -1,11 +1,13 @@
 fa:
-  accessibility: 
+  accessibility:
   activerecord:
     attributes:
       contact:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: سازمانها
       search_location:
         latitude: NOTRANSLATE
         longitude: NOTRANSLATE
@@ -17,20 +19,22 @@ fa:
         search_location: NOTRANSLATE
     models:
       contact: NOTRANSLATE
-      search_location: NOTRANSLATE
+      search_location: محل جستجو
       subscription: NOTRANSLATE
       trait_filter:
         identifier:
-          anonymous: 
+          anonymous: گمنام
       update_request: NOTRANSLATE
-  anonymous: 
+  anonymous:
+  arabisch:
+  arb:
   cells:
     contact_people:
       dr: 'دکتر:'
       email: 'ایمیل:'
       fax: 'فاکس:'
       female: خانم
-      heading: به کجا میتوانی مراجعه کنی؟
+      heading: به کجا می توانی مراجعه کنی؟
       male: آقای
       obfuscated_email: این ایمیل آدرس برای جلوگیری و حفاظت از Spam قفل می باشد.لطفا JavaScript را فعال کن.
       phone: 'تلفن:'
@@ -40,16 +44,11 @@ fa:
       section_1:
         heading: چه کسی٬ چگونه٬ چه چیزی؟
         question_1:
-          answer: |-
-            clarat دروازه ای است که در آن می توان پیشنهادهایی جهت حمایت پیدا کرد.ما تو را در پیدا کردن کمک همراهی می کنیم اما مشاوره نمی دهیم.به همین منظور کارشناسانی هستند که دقیقآ می توانی از طریق ما آنها را پیدا کنی.clarat به دو بخش b>clarat
-            family</b> و <b>clarat refugees</b>: تقسیم می شود.<b>clarat family</b> به کودکان٬ خانواده و جوانان که در نزدیکی محل سکونت خود احتیاج به حمایت دارند کمک می کند.در اینجا به راحتی برای خود٬ خانواده و دوستان کمک پیدا می کنی.حتی برای کودکان٬ جوانان و خانواده های دیگری که تو می شناسی.کاری که clarat
-            family انجام می دهد را می توانی در این لینک %{link_to_family_movie} مشاهده کنی.</li>
-            <li>
-            <b>clarat refugees</b> به پناهندگانی که در نزدیکی محل سکونت خود به دنبال حمایت هستند کمک می کند.در اینجا نه تنها به تو یا خانواده تو و یا به دوستانت بلکه حتی اگر پناهنده نباشی ولی پناهندگانی را که می شناسی که احتیاج به حمایت دارند نیز کمک می شود.
+          answer: "clarat دروازه ای است که در آن می توان پیشنهادهایی جهت حمایت پیدا کرد.ما تو را در پیدا کردن کمک همراهی می کنیم اما مشاوره نمی دهیم.به همین منظور کارشناسانی هستند که دقیقآ می توانی از طریق ما آنها را پیدا کنی.clarat به دو بخش \n <b>clarat family</b> و  <b>clarat refugees</b>: تقسیم می شود.<b>clarat family</b> به کودکان، خانواده و جوانان که در نزدیکی محل سکونت خود احتیاج به حمایت دارند کمک می کند.در اینجا به راحتی برای خود، خانواده و دوستان کمک پیدا می کنی.حتی برای کودکان، جوانان و خانواده های دیگری که تو می شناسی.خدماتی که clarat\nfamily ارائه می دهد را می توانی در این لینک %{link_to_family_movie} مشاهده کنی.</li>\n<li>\n<b>clarat refugees</b> به پناهندگانی که در نزدیکی محل سکونت خود به دنبال حمایت هستند کمک می کند.در اینجا نه تنها به تو، خانواده تو و یا به دوستانت، بلکه حتی اگر پناهنده نباشی ولی پناهندگانی را که می شناسی که احتیاج به حمایت دارند، نیز کمک می شود."
           link_1:
             name: فیلم
             target: _blank
-            url: ttp://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-auf-farsi-erklart/
             var: link_to_family_movie
           question: "  clarat چیست؟"
         question_10:
@@ -107,7 +106,7 @@ fa:
           answer: ما همیشه بر اینکه اطلاعات در clarat به روز باشد نظارت می کنیم.زیرا فقط در این صورت clarat می تواند به کودکان٬جوانان٬خانواده و پناهندگان کمک کند.اگر اطلاعات صحیح نباشند ما آنها را به روز رسانی کرده و تغییر می دهیم.
           question: آیا اطلاعات clarat به روز می باشد؟
         question_7:
-          answer: بعضی از پیشنهادها را در <b>clarat family</b> و در <b>clarat refugees</b> می توانی از همه جا استفاده کنی.مهم نیست که کجا زندگی می کنی.پیشنهاد های بسیاری را از طریق تلفن و یا اینترنت می توانی پیدا کنی که تو را کمک خواهند کرد.بدین معنی که این کمک ها از طریق ایمیل٬چت و روی صفحه آنلاین ارائه می شود.از سایر پیشنهادهای بسیار دیگر نیز می توانی در نزدیکی محل سکونت خود بهره ببری. در  <b>clarat refugees</b> به زودی پیشنهادهای بسیاری در شهرهای بزرگ سراسر آلمان پیدا می کنی.در حال حاضر این خدمات در شهرهای برلین٬ کلن و دوسلدورف ارائه می شود.ما خدمات <b>clarat family</b> را از برلین شروع به کار کردیم.در اینجا پیشنهادهای بسیاری وجود دارند٬ با این حال ما به جمع آوری اطلاعات ادامه می دهیم.به زودی حتی در شهرهای بزرگ دیگر آلمان.
+          answer: بعضی از پیشنهادها را در <b>clarat family</b> و در <b>clarat refugees</b> می توانی از همه جا استفاده کنی.مهم نیست که کجا زندگی می کنی.پیشنهاد های بسیاری را از طریق تلفن و یا اینترنت می توانی پیدا کنی که تو را کمک خواهند کرد.بدین معنی که این کمک ها از طریق ایمیل٬چت و روی صفحه آنلاین ارائه می شود.از سایر پیشنهادهای بسیار دیگر نیز می توانی در نزدیکی محل سکونت خود بهره ببری. در  <b>clarat refugees</b> به زودی پیشنهادهای بسیاری در شهرهای بزرگ سراسر آلمان پیدا می کنی.در حال حاضر این خدمات در شهرهای برلین٬ هامبورگ،مونیخ،دورتموند،کلن، دوسلدورف،نورنبرگ و اشتوتگارت ارائه می شود.ما خدمات <b>clarat family</b> را از برلین شروع به کار کردیم.در اینجا پیشنهادهای بسیاری وجود دارند٬ با این حال ما به جمع آوری اطلاعات ادامه می دهیم.به زودی حتی در شهرهای بزرگ دیگر آلمان.
           question: آیا clarat در سراسر آلمان فعالیت دارد؟
         question_8:
           answer: clarat کمک هایی را که می توانی در نزدیکی خود پیدا کنی را در یک فهرست و دید کلی به تو نشان می دهد.همچنین ما به تو می گوییم دقیقا چه کاری را باید انجام دهی تا این که کمک دریافت کنی. ما همیشه با زبان ساده آنها را می نویسیم برای اینکه درک آن برای همه آسان باشد.چرا که در clarat باید حتی کسانی که آلمانی به خوبی صحبت نمی کنند نیز کمک بیابند.همچنین می توانی همه پیشنهادها را به زبان های دیگر مطالعه کنی.برای اطلاعات بیشتر روی این لینک کلیک کن%{ref_to_how_many_languages}.
@@ -290,15 +289,15 @@ fa:
       section_4:
         heading: آیا از clarat به زبانهای مختلف سوالی دارید؟
         question_1:
-          anchor: how_many_languages
-          answer: NOTRANSLATION
-          question: NOTRANSLATION
+          anchor: چندین زبان خارجی
+          answer: تمام صفحات در کلارات را می توانی به زبانهای آلمانی و انگلیسی مطالعه کنی.
+          question: کلارات به چه زبانهایی وجود دارد؟
         question_2:
-          answer: NOTRANSLATION
-          question: NOTRANSLATION
+          answer: بالای صفحه می توانی زبان دلخواه خود را انتخاب کنی و از این طریق گوگل ترانسلتور همه چیز را بصورت اتوماتیک به زبان تو ترجمه می کند.متاسفانه به این دلیل اشتباهاتی در ترجمه وجود دارد و امکان دارد که چیزی عجیب و غریب ترجمه شده باشد.
+          question: چگونه می توان کلارات را به زبان خود مطالعه کرد؟
         question_3:
-          answer: NOTRANSLATION
-          question: NOTRANSLATION
+          answer: گوگل ترانسلیتور به صورت اتوماتیک ترجمه می کند.به این دلیل گاهی اوقات اشتباهاتی در ترجمه وجود دارد و امکان دارد که متن یا لغتی به طور کامل و صحیح ترجمه نشود.
+          question: چرا متون به زبان من به نظر من عجیب و غریب به نظر می آیند؟
       section_5:
         heading: آیا به عنوان کارمند سازمانی٬ سوالی دارید؟
         question_1:
@@ -374,12 +373,12 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
-  charged: 
+  charged:
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-  confidential: 
+  confidential:
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -397,7 +396,11 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-  day_and_night: 
+  day_and_night:
+  de:
+    en:
+      conf:
+      current_location:
   emails:
     offers_index:
       family:
@@ -424,6 +427,9 @@ fa:
         (<a href="%{unsubscribe_href}">wieder abmelden</a>)
     unsubscribe:
       success_html: تو با موفقیت از بخش پیغام ها بعدی خارج شدی(<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location:
   enumerize:
     search_form:
       age:
@@ -540,6 +546,7 @@ fa:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -548,20 +555,30 @@ fa:
         ber: Ber
         bos: Bos
         bul: Bul
+        bur: Bur
         cau: Cau
         ckb: Ckb
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
+        dje:
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
+        ewe:
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        ful: Ful
+        gej:
+        geo: Geo
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -573,11 +590,13 @@ fa:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -587,7 +606,9 @@ fa:
         pus: Pus
         rom: Rom
         ron: Ron
+        run:
         rus: Rus
+        sdh: Sdh
         skr: Skr
         slo: Slo
         slv: Slv
@@ -596,6 +617,7 @@ fa:
         spa: Spa
         sqi: Sqi
         srp: Srp
+        sus: Sus
         swa: Swa
         swe: Swe
         tam: Tam
@@ -612,6 +634,7 @@ fa:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx:
         zho: Zho
         zza: Zza
       section:
@@ -623,7 +646,9 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-  free: 
+  formtastic:
+    required: required
+  free:
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -705,6 +730,8 @@ fa:
         categories: طبقه بندی ها
         filter: فیلتر
         map: نقشه
+      more_info_button: نزد مشاور
+      more_info_text: 'اطلاعات بیشتر در مورد:'
     search_results:
       bridge: برای جستجوی عبارت
       enclosing: پیدا کردن
@@ -780,6 +807,7 @@ fa:
         amh: امهری - አማርኛ
         ara: عربی
         arc: زبان آرامی - ארמית / Arāmît
+        arm: زبان ارمنی - Հայերեն / Hajeren
         aze: آذری - Azərbaycan
         bam: بامبارایی - Bamanankan
         ban: زبان بالی- Basa Bali
@@ -788,20 +816,31 @@ fa:
         ber: " بربری - Tamaziɣt"
         bos: بوسنیایی - bosanski
         bul: بلغاری - български
+        bur: برمهای - မြန်မာစာ
         cau: زبان آبازی - абаза бызшва
         ckb: 'سورانی - سۆرانی '
         cpe: کامرونی - Pidgin
         cus: Saho - ሳሆኛ
         cze: چکی - čeština
+        dan: زبان دانمارکی - Dansk
         deu: Deutsch
+        dje: زارما - Djerma
         dyu: دیولا - Julakan
         ell: یونانی -  ελληνικά
         eng: انگلیسی -  English
+        est: استونیایی - eesti keel
+        ewe: إيفي - Eʋegbe
         ewo: اووندو - Ewondo
         fas: فارسی
+        fil: زبان فیلیپینی - Wikang Filipino
         fin: فنلاندی - suomi
         fra: فرانسوی - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        gej:
+        gen: جين  - Mina
+        geo: گرجی - ქართული
+        hau: هوسى - Hausanci
         hbs: مونتنگرایی - Crnogorski jezik / Црногорски језик
         heb: عبری - עברית
         hin: هندی - हिन्दी
@@ -813,11 +852,13 @@ fa:
         kor: کره ای -  한국말 / 조선말
         kur: کردی - کوردی
         lav: لاتویایی - latviešu
+        lin: زبان لينغالا - Ngála
         lit: لیتوانی - lietuvių
         ltz: لوکزامبورگی - Lëtzebuergesch
         luo: لوآیی - Dholuo
         man: مانینکایی -  Maninka
         mkd: مقدونیه ای - македонски
+        mos: Mossi - Moose
         msa: زبان مالایی – بهاس ملايو
         mul: بقیه زبانها با توجه به درخواست
         nor: نروژی - Norsk
@@ -827,7 +868,9 @@ fa:
         pus: پشتو -  پښتو‎
         rom: رومانی - Romani
         ron: رومانیایی -  Romani
+        run: كيروندي
         rus: روسی - русский
+        sdh: كورمانجى - كورمانجى / Kurmancî
         skr: صربستانی -  српскохрватски / hrvatskosrpski
         slo: اسلواکی - slovenský jazyk
         slv: اسلوونیایی - Slovenščina
@@ -836,6 +879,7 @@ fa:
         spa: اسپانیایی - español
         sqi: آلبانی - Shqipja
         srp: صربستانی -  српски
+        sus: Susu - Sosoxui
         swa: سواحیلی -  Kiswahili
         swe: سوئدی - svenska
         tam: " تامیلی - தமிழ்"
@@ -852,6 +896,7 @@ fa:
         uzb: ازبکی - Oʻzbek tili
         vie: ویتنامی - tiếng Việt
         wol: ولفی - wɔlɔf
+        xxx: زبان اشاره همراه - speech-acc. gestures
         zho: چینی - 普通话 / 普通話
         zza: دیملی -  Zazaki / Kırmancki
     shariff:
@@ -866,6 +911,8 @@ fa:
         personal: شخصی
         portal: لیست آدرس
   layouts:
+    modal_create:
+      success:
     partials:
       banner:
         teaser:
@@ -876,6 +923,9 @@ fa:
         about: در مورد ما
         blog: بلاگ
         contact: تماس
+        facebook-family:
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: سوالات رایج
         fb:
           anchor: فیسبوک
@@ -884,6 +934,7 @@ fa:
           anchor: گوگل پلاس
           href: https://plus.google.com/110429028641743127592/about
         impressum: اطلاعات کلی شرکت
+        plus: clarat plus
         privacy: نکات حفاظت از اطلاعات
         tos: نکات حقوقی
         twitter:
@@ -893,16 +944,29 @@ fa:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
+        more_information_overlay: با عرض پوزش.متاسفانه برای جستجوی تو هیچ مشاوری وجود ندارد.ما اما سعی می کنیم پیشنهادات خود را توسعه بدهیم.با کمال میل و به محض اینکه در clarat اطلاعات بیشتری در مورد جستجوی تو بدست آوردیم،تو را در جریان می گذاریم.به همین منظور آدرس ایمیل خود را در اینجا وارد کن.
+        popup:
+          button: بله،لطفا
+          email_placeholder: عنوان الإیمیل *
+          footer: از نام و آدرس ایمیل تو فقط در جهت برقراری ارتباط با تو استفاده می شود.تو بوسیله آنها مشترک هیچگونه مجله خبری از طریق ایمیل نمی شوی و آدرس ایمیل تو به شخص ثالثی داده نمی شود.
+          headline: ۲۰ یورو برای ابراز نظر تو
+          message: Ich möchte an der Umfrage teilnehmen
+          name_placeholder: نام *
+          text: آن چیزی را که ما می توانیم بهبود بدهیم و یا مورد علاقه تو می باشد را به ما اعلام کن.بدین منظور ما با کمال میل با تو تماس می گیریم.آیا اجازه ارسال ایمیل با اعلام جزئیات را به تو داریم؟
+        send:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
-        title: 
+        legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
+        title: |-
+          ترجمه خودکار!
+          <br><br>
+          در کلارات بعضی از متون به زبان مادری شما، توسط گوگل ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد.
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:
-          family: 'پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها '
+          family: کمک برای کودکان،جوانان و خانواده ها
           main: یافتن کمک به آسانی
-          refugees: پیشنهادهای حمایتی برای پناهندگان
+          refugees: کمک برای پناهندگان
       top_bar:
         german_content_warning: زبان خود را انتخاب کن
         languages:
@@ -916,6 +980,7 @@ fa:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2:
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
           mobile:
@@ -923,14 +988,17 @@ fa:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
               refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
+              2017-07-17, visits=2:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
+        family_acquaintances:
+        refugees_adolescents:
+    validations:
+      only_visible_organizations:
   offers:
     index:
       filters:
@@ -979,21 +1047,21 @@ fa:
     shared:
       search_form:
         button: جستجو کردن
-        loc_label: در کجا
+        loc_label: " کجا"
         loc_placeholder:
-          long: برلین٬آلمان
-          short: برلین
+          long: آدرس،منطقه،شهر یا کدپستی
+          short: آدرس،منطقه،شهر یا کدپستی
         query_label: چه چیزی
         query_placeholder:
-          long: پیشنهاد مربوط به موضوع
-          short: پیشنهاد...
+          long: پیشنهاد مربوط به موضوع...
+          short: پیشنهاد در مورد...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
+      accessibility:
+      anonymous:
+      charged:
+      confidential:
+      day_and_night:
+      free:
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
         code_word: 'نام این کمک نزد عرضه کننده:'
@@ -1007,24 +1075,27 @@ fa:
           thu: پنج شنبه
           tue: سه شنبه
           wed: چهارشنبه
-        heading: کی می توانی انجام بدهی؟
+        heading: چه زمانی می توانی مراجعه کنی؟
       speaking: به چه زبانی به تو کمک می شود؟
       trait_filters:
         explanation:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
+          accessibility: این بدین معنی است که تو در اینجا می توانی به آرامی با صندلی چرخ دار خود را حرکت بدهی و یا با یک کالسکه کودک
+          anonymous: این بدین معنی است که تو نباید نام خود را اعلام کنی.
+          charged:
+          confidential: این بدین معنی است که صحبتهای تو با کارمندان اینجا محرمانه باقی می ماند.
+          day_and_night:
+          free:
         title:
-          accessibility: 
-          anonymous: 
-          charged: 
-          confidential: 
-          day_and_night: 
-          free: 
-      trait_filters_headline: 
+          accessibility: دسترس‌پذیری
+          anonymous: گمنام
+          charged: هزینه الزامی
+          confidential: محرمانه
+          day_and_night: شبانه روزی
+          family_nuclear_family:
+          family_parents:
+          family_relatives:
+          free: رایگان
+      trait_filters_headline: اطلاعات بعدی
       website_section:
         internet_presence: اطلاعات بیشتر را کجا در اینترنت پیدا می کنی؟
         websites:
@@ -1044,6 +1115,8 @@ fa:
       what:
         code_word: 'نام کمک نزد عرضه کننده:'
         heading: موضوع چیست؟
+        offertaxonomy:
+          heading: 'با این موضوعات کارمندان اینجا آشنایی دارند:'
       who: کجا این کمک را دریافت می کنی؟
       who_contact_people:
         dr: دکتر
@@ -1067,9 +1140,9 @@ fa:
       time_frame: "%{open} - %{close}"
   organizations:
     show:
-      headline-offers--family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-      headline-offers--refugees: 'پیشنهادهای حمایتی برای پناهندگان '
-      offers_all: چه نوع کمکی این سازمان ارائه میدهد؟
+      headline-offers--family: کمک برای کودکان،جوانان و خانواده‌ها
+      headline-offers--refugees: کمک برای پناهندگان
+      offers_all: " این سازمان چه نوع کمکی را ارائه می دهد؟"
       where: کجا سازمان مربوطه را پیدا می کنی؟
       who: این سازمان وظایفش چیست؟
   pages:
@@ -1078,8 +1151,6 @@ fa:
         او  کارشناس رشته جامعه شناسی است.این یعنی اینکه او اطلاعات زیادی در مورد اجتماع دارد.چیزی که مهم هست را سریع می بیند.در clarat در تیم تحقیق فعالیت دارد.او تصمیم میگیرد که چه چیزهایی در clarat به عنوان پیشنهاد ثبت شود.موسیقی دوست داشتنی او
         La Prima Estate از Erlend Oye می باشد.
       andrea: او در رشته مدیریت بین فرهنگی تحصیل کرده است.این بدین معنی است که او اطلاعات زیادی درمورد اقتصاد و قرهنگ دارد.او دقیق کار می کند.در clarat در تیم تحقیق فعالیت دارد و نگاه کلی در مورد موضوع دنیای خانواده دارد.موسیقی دوست داشتنی اوWork Me از The Black Keys می باشد.
-      anja: او مهندس و در رشته اکولوژی تحصیل کرده است و می تواند منطقی و سریع فکر کند.او در clarat در تیم تحقیق فعالیت دارد و ما را از کیفیت کارها مطمئن می کند.موسیقی دوست داشتنی او Where is my mind از den Pixies می باشد.
-      ann-sophie: او در رشته دانش فرهنگ اجتماعی تحصیل کرده است و به خوبی با موضوع مهاجرت آشنایی دارد.او به خوبی می تواند مسائل را درک و برنامه ریزی کند و در clarat در تیم تحقیق فعالیت می کند.موسیقی مورد علاقه او Papertrails از Darkside می باشد.
       anna: او کارشناس رشته لغت‌شناسی است.این بدین معنی است که او در مورد زبان و ادبیات اطلاعات زیادی دارد و می تواند به خوبی مسائل پیچیده را درک کند.در clarat در تیم تحقیق فعالیت دارد و کارشناس در بخش clarat-Sprache نیز می باشد.موسیقی مورد علاقه او 1009 از Bonobo می باشد.
       anne: او در رشته اقتصاد و روابط بین الملل تحصیل کرده است.او می تواند سریع منطقی فکر کند.در clarat او رئیس است.او وظیفه تمام تیم را بر عهده گرفته است و همه چیز را ساز مان دهی می کند.موسیقی مورد علاقه اوDenken Sie Groß از Deichkind می باشد.
       astrid: او کارشناس رشته سیاست است.این بدین معنی است که او اطلاعات زیادی درباره سیاست و اجتماع دارد.او با انرژی مثبت و انتقال آن به دیگران در clarat در تیم تحقیق فعالیت دارد و در اینترنت به دنبال سازمان های مختلف میگردد.موسیقی مورد علاقه او You Got Meاز The Roots می باشد.
@@ -1119,12 +1190,13 @@ fa:
       lisa: او کارشناس طراحی است و به همراه دیگران در توسعه راه حل های خلاقانه فعالیت می کند.او به خوبی قادر به طراحی است و در clarat در تیم تحقیق و گفتگو با استفاده کنندگان از سایت ما فعال مست.او قادر است دیگران را از نحوه استفاده از clarat آگاه کند.موسیقی مورد علاقه او Resolution از Matt Corby می باشد.
       magdalena: او در رشته پژوهشی آمریکای لاتین تحصیل کرده است.این بدین معنی است که او اطلاعات زیادی در مورد فرهنگ و سیاست آمریکای لاتین دارد.او به خوبی می توانی برنامه ریزی و جهت یابی کند.او در clarat در تیم تحقیق فعالیت می کند و موسیقی مورد علاقه او Summer Breeze از CocoRosie می باشد.
       marcus: او طراح وب است.این بدین معنی است که صفحات اینترنت را برنامه ریزی و می سازد و همچنین به خوبی طرح می ریزد.در clarat در تیم IT فعالیت می کند و مراقب آن است که صفحه اینترنتی ما زیباتر و بهتر جلوه دهد.موسیقی مورد علاقه او Hysteria از MUSE می باشد.
-      marie: او محقق صلح و اختلافات می باشد.این بدین معنی است که او اطلاعات زیادی در مورد جنگ و اختلافات دارد.او به سرعت می تواند اطلاعات را جمع آوری و تنظیم کند و در clarat در تیم تحقیق فعالیت می کند.موسیقی مورد علاقه او Move On Up از Mayfield می باشد.
+      meta_description: این اعضای تیم پشت صحنه در لیست کمکی آلمان می باشد.بیش از ۴۰ کارمند روزانه در این زمینه کار می کنند که تو به راحتی کمک پیدا کنی.
       michaela: او در رشته علوم اقتصاد کامپیوتر تحصیل کرده است.او می تواند دیگران را به هیجان بیاورد و اطلاعات زیادی در مورد رسانه های جدید دارد.در clarat در تیم تحقیق فعالیت می کند و مراقب آن است که صفحه اینترنتی ما به خوبی عمل کند.موسیقی مورد علاقه او Digital Love از Daft Punk می باشد.
       nahla: او کارشناس باستان شناسی است.او اطلاعات زیادی در مورد تاریخ و انسانها دارد.سرعت کار او بالاست.در clarat در تیم ترجمه به زبان عربی فعالیت دارد.موسیقی مورد علاقه او Nassam Allina El Hawa از Fayrouz می باشد.
       nathalie: او در رشته حقوق بشر و سیاست بین الملل تحصیل کرده است.او به خوبی می تواند مسائل را توضیح دهد و همچنین گوش دهد.در clarat در تیم تحقیق فعالیت دارد و برای نظم در صفحه اینترنتی ما تلاش می کند.موسیقی مورد علاقه او Me in You از Kings of Convenience می باشد.
+      nicole: او در رشته زبان مجارستانی تحصیل کرده است و به خوبی می تواند وب سایتها را برنامه ریزی کند.او به همیشه و به سرعت یک ایده جهت حل مشکلات دارد.در clarat در تیم IT فعالیت می کند و موسیقی مورد علاقه او Disorder از Joy Division است.
       nils: او کارشناس علوم کامپیوتر است.این بدین معنی است که او می تواند به خوبی برنامه های کامپیوتری و صفحات اینترنت را برنامه ریزی کند.او همیشه راه حل مناسب به ذهنش می رسد و سریع یاد می گیرد.در clarat در تیم IT  فعالیت دارد.موسیقی مورد علاقه او Jein از Fettes Brot می باشد.
-      omar: او در رشته علوم کامپیوتر تحصیل کرده است.او به خوبی می تواند صفحات اینترنت را برنامه ریزی کند و مسائل پیچیده را درک کند.او در clarat در تیم IT فعالیت می کند و موسیقی مورد علاقه او Nothing Else Matters از Metallica می باشد.
+      omar: او در رشته علوم کامپیوتر تحصیل کرده است.او به خوبی می تواند صفحات اینترنت را برنامه ریزی کند و مسائل پیچیده را به سرعت درک کند.او در clarat در تیم بازاریابی فعالیت می کند و موسیقی مورد علاقه او Nothing Else Matters از Metallica می باشد.
       patrick: او در رشته تاریخ و سیاست تحصیل کرده است.او به خصوص در مورد کشور جامائیکا آگاهی دارد و می توانی چیزهای پیچیده را به خوبی درک کند.او در clarat در تیم تحقیق فعالیت می کند و موسیقی مورد علاقه او Kingston Be Wise از Protoje می باشد.
       philipp: او در رشته تاریخ٬ سیاست و حقوق تحصیل کرده است.او به خوبی می تواند مسائل پیچیده را درک کند.او در clarat در تیم تحقیق فعالیت می کند و تلاش می کند تا ما بهتر بتوانیم کار کنیم.موسیقی مورد علاقه او his Is Our Science از Astronautalis می باشد.
       sabine: او کارشناس جامعه شناسی است.این بدان معنی است که او اطلاعات زیادی در مورد اجتماع دارد.او به خوبی می تواند مسائل پیچیده را درک کند.در clarat در تیم تحقیق فعالیت می کند و قوانین مربوط به پناهندگان را به ما توضیح می دهد.موسیقی مورد علاقه او Vesna از Kino می باشد.
@@ -1133,18 +1205,57 @@ fa:
       text: |-
         clarat یک پروژه عام المنفعه متعلق به Benckiser Stiftung Zukunft
         (www.benckiser-stiftung.org) می باشد. ما همراه با Benckiser Stiftung از پروژه های موثر مربوط به پشتیبانی کودکان و جوانان حمایت می کنیم.در این راستا یک چیز همیشه به ذهن ما می رسد:خیلی سخت می توان دریافت که چه پیشنهاد های حمایتی به طور کلی وجود دارند و سپس برای ما روشن شد که اگر برای ما کارشناسان تا این حد سخت است نگاه کلی به این موضوع داشته باشیم٬ پس حتما برای کودکان و جوانان که بدنبال کمک واقعی هستند تا چه اندازه سخت تر می تواند باشد و یا برای پناهندگانی که با کشور آلمان آشنایی ندارند؟جواب این سوال:خیلی سخت!و بدین ترتیب ایده پیدایش clarat و تولد آن بوجود آمد.به راحتی کمک یافتن .برای خانواده ها در clarat family و برای پناهندگان در clarat refugees
+      tian: او در رشته اقتصاد تحصیل کرده است و با نگاه کلی می تواند به خوبی با اعداد کار کند.او در clarat در تیم تحقیق فعالیت می کند و در زمینه کیفیت کار ما فعالیت می کند و موسیقی مورد علاقه او Supergirl از Reamonn می باشد.
       tine: او کارشناس تعلیم و تربیت اجتماعی است.او می تواند به خوبی به آدمها گوش دهد.او همچنین نویسنده است و این بدین معنی است که او می تواند به خوبی داستانهای زیبایی را بنویسد.در clarat در تیم تحقیقات فعالیت دارد و کارشناس تیم زبان ما می باشد.موسیقی مورد علاقه او Survive It از Ghostpoet.
       title: در مورد ما
       verena: او کارشناس مسائل سیاسی است.این بدین معنی است که او اطلاعات زیادی در مورد سیاست و اجتماع دارد.او به خوبی می تواند اطلاعات جمع آوری کند.در clarat در تیم تحقیقات و فرهنگ لغت فعالیت دارد.موسیقی مورد علاقه او Lose It از Oh Wonder می باشد.
     agb:
-      heading: اطلاعات قانونی
+      heading: Rechtliche Hinweise
       text_html: |-
-        این وبسایت با دقت زیادی طراحی شده است.clarat gGmbH با این حال در مورد اطلاعات٬صحت٬به روز بودن و در دسترس بودن مطالب ولینک ها هیچ ضمانتی ندارد.این وبسایت یرای دسترسی شخصی طراحی شده و استفاده تجاری از آن ممنوع می باشد.</p>
-        <p>ما پیشاپیش اشاره میکنیم که اطلاعات وب‌سایت ممکن است دقیق نباشد یا اشتباهاتی را در برگیرد که ما مسئولیتی را در این مورد نمی‌پذیریم.ما همچنین اشاره می کنیم به این موضوع که مسئولیت خدمات و اطلاعاتی که با توجه به نیاز شما از وبسایت ما دریافت می کنید بر عهده شخص شما می باشد.استفاده از اطلاعات وبسایت ما همچنین هیچ فعالیتی در مورد حقوق قانونی شما ندارد و همه مسئولیت ها بر عهده شخص شماست.</p>
-        <p>محتوی وبسایت clarat توسط خود ما و یا برای ما طراحی شده است.هرگونه سواستفاده و استفاده از آن بدون اطلاع ما از مطالب ما با توجه که مطالب در انحصار ما می باشد ممنوع بوده و پیگرد قانونی در بر خواهد داشت و ما به آن اعتراض خواهیم کرد.</p>
-        <p> به لینک ها و وبسایت ها و دومین هایی که از طریق ما به آن دسترسی پیدا می کنید٬در مورد اطلاعات آنها هیچ مسئولیتی متوجه ما نخواهد بود و ضمانت آنها بر عهده ما نیست.</p>
-        <p>اطلاعات٬ سئوالات و اشاره به مطالب در این وبسایت با توجه به در نظر گرفتن قوانین جمهوری فدرال آلمان طراحی و در دسترس قرار گرفته شده است.</p>
-      title: اطلاعات حقوقی
+        <p>
+        Diese Webseite wurde mit größtmöglicher Sorgfalt erstellt. Die clarat gGmbH („clarat“ oder „wir“) übernimmt jedoch keine Gewähr in
+        Bezug auf die Vollständigkeit, die Aktualität, die Verfügbarkeit sowie
+        die Richtigkeit der auf dieser Webseite angebotenen Informationen und
+        Links. Die Webseite ist ausschließlich für den privaten Gebrauch
+        bestimmt, eine Nutzung zu eigenen kommerziellen Zwecken ist unzulässig.
+        </p>
+        <p>
+        Wir weisen vorsorglich darauf hin, dass die Informationen auf der
+        Webseite Ungenauigkeiten und Fehler enthalten können und dass eine
+        Haftung für solche Ungenauigkeiten oder Fehler grundsätzlich
+        ausgeschlossen ist. Wir weisen ferner ausdrücklich darauf hin, dass es
+        in Ihrer eigenen Verantwortung liegt, sicherzustellen, dass die
+        Serviceleistungen oder Informationen, die Sie über unsere Webseite
+        beziehen, Ihren speziellen Anforderungen genügen. Die Informationen auf
+        unserer Webseite stellen keine rechtlichen Zusicherungen dar und es
+        können aus ihnen keine Rechtsansprüche abgeleitet werden.
+        </p>
+        <p>
+        Die Webseite kann jederzeit ohne Benachrichtigung geändert werden.
+        </p>
+        <p>
+        Die Inhalte der Webseite wurden von oder für clarat erstellt. Das
+        Urheberrecht und sonstige Schutzrechte an den Inhalten unserer Webseite
+        stehen clarat oder demjenigen zu, der uns daran Nutzungsrechte
+        eingeräumt hat. Dies bezieht sich unter anderem, aber nicht
+        ausschließlich, auf das Design, das Layout, die Texte sowie Abbildungen,
+        Bilder und Grafiken. Wir widersprechen einer vollständigen oder
+        teilweisen Speicherung, Vervielfältigung und/oder Veröffentlichung und
+        behalten uns rechtliche Schritte vor, sofern eine solche ohne unsere
+        Genehmigung erfolgt.
+        </p>
+        <p>
+        Soweit auf andere Domains oder Webseiten hingewiesen oder mittels eines
+        Hyperlinks verlinkt wird, sind wir für den Inhalt solcher Webseiten
+        nicht verantwortlich, übernehmen dafür keine Gewähr und machen uns den
+        Inhalt solcher Webseiten nicht zu Eigen.
+        </p>
+        <p>
+        Die rechtlichen Hinweise auf dieser Webseite sowie alle Fragen und
+        Streitigkeiten im Zusammenhang mit dieser Webseite unterliegen dem Recht
+        der Bundesrepublik Deutschland.
+        </p>
+      title: Rechtliche Hinweise
     faq:
       title: سوالات رایج
     home:
@@ -1152,14 +1263,16 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
-        family: از طریق clarat family به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای کودکان٬ جوانان و خانواده‌ها.به صورت آنلاین٬ به روز و در سراسر برلین.
-        refugees: از طریق clarat refugees به آسانی کمک پیدا می کنی.پیشنهادات حمایتی برای پناهندگان.به صورت آنلاین٬ به روز٬ به زبانهای مختلف و در سراسر آلمان.
+        2017-07-17, visits=2:
+        family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
+        refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
       meta_title:
+        2017-07-17, visits=2:
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
       title:
-        family: پیشنهاد های حمایتی برای کودکان٬جوانان و خانواده ها
-        refugees: پیشنهاد های حمایتی برای پناهندگان
+        family: کمک برای کودکان،جوانان و خانواده ها
+        refugees: کمک برای پناهندگان
       whom:
         heading: چه کسانی می توانند از clarat استفاده کنند؟
         text: clarat برای استفاده همه افراد است.clarat family برای کودکان و جوانان و خانواده‌ها می باشد و clarat refugees برای پناهندگان.در صورت داشتن سوالات یا مشکلات در اینجا می توانی برای خود یا خانواده خود و دوستانت و یا برای افراد دیگری که آنها را می شناسی و احتیاج به کمک دارند حمایت دریافت می کنی.
@@ -1180,13 +1293,13 @@ fa:
       title: 404
     privacy:
       chapter_eight:
-        heading: حقوق اعتراض و مسئول مربوطه
-        nested_text_first_paragraph: اگر به طرز استفاده و خدمات آنالیز وب از Optimizely اعترض دارید٬می تونید لینک %{optimizely_optout} را دنبال کنید.
-        nested_text_second_paragraph: سوالات خود در مورد حفاظت از اطلاعات٬اعتراض داشتن٬راهنمایی جهت حذف٬شکایت و غیره را به ما اعلام کنید.
-        text: 
+        heading: 8. Recht auf Widerspruch und Ansprechpartner
+        nested_text_first_paragraph: 'Um der Verwendung des Webanalysedienstes von Optimizely zu widersprechen, können Sie folgendem Link folgen: %{optimizely_optout}.'
+        nested_text_second_paragraph: 'Ihre Fragen zum Datenschutz, Widersprüche, Auskunfts- oder Löschungsbegehren, Beschwerden oder Ähnliches richten Sie bitte an:'
+        text: 'Sie haben jederzeit das Recht der oben beschriebenen Verwendung Ihrer Daten zu widersprechen und/oder Ihre erteilte Einwilligung mit Wirkung für die Zukunft zu widerrufen. Außerdem haben Sie die Möglichkeit der Verwendung von Google Analytics zu widersprechen, indem Sie auf den folgenden Link klicken: %{google_optout}.'
       chapter_five:
-        heading: افزایه های شبکه اجتماعی
-        nested_text_four: ما همچنین در وبسایت خود فضایی برای فعال کردن اطلاعات از طریق  شرکت WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) دایر کرده ایی که از این طریق می توانید دیگران را از این راه ارتباطی از اطلاعات وبسایت ما آگاه کنید و عملکرد آن از طریق لینک قانونی (HTML-Hyperlink) انجام می شود و فقط با موافقت و فعال کردن شخص شما اطلاعاتی که شما با دیگران به اشتراک گذاشته اید در WhatsApp ذخیره میشوند.
+        heading: 5. Social Media Plugins
+        nested_text_four: Wir setzen auf unserer Website zudem eine Schaltfläche der WhatsApp Inc. 650 Castro Street, Suite 120-219, Mountain View, CA 94041, USA („WhatsApp“) ein. Mit Hilfe dieser Schaltfläche können Sie Inhalte unserer Website an Dritte kommunizieren. Die Schaltfläche entspricht in ihrer Funktion einem regulären Weblink (HTML-Hyperlink). Das bedeutet, dass beim Aufruf der Schaltfläche noch keine Daten von Ihnen an WhatsApp übermittelt werden. Erst wenn Sie die Schaltfläche aktivieren, erfährt WhatsApp welchen Inhalt Sie über WhatsApp teilen möchte und dass die Schaltfläche von unserer Website aus aufgerufen wurde.
         nested_text_one: ما Pluginsهایی از  شبکه اجتمایی فیسبوک ("Facebook") که در Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA واقع شده است٬استفاده می کنیم.به این طریق که در ابتدا با دکمه درخواستی و باز شدن صفحه دیگری که شما باید مشخصات فیسبوک خود را وارد کنید تا بتوانید مطالب صفحه ما را برای دوستان خود به اشتراک بگذارید.همزمان در سیستم شما Facebook-Cookie فعال شده و فیسبوک از این طریق اطلاعاتی از قبیل IP-Adresse و Cookie-ID شما را بدست می آورد.این امکان فقط در صورت کلیک کردن دکمه به اشتراک گذاشتن در فیسبوک می افتد.در این صورت اطلاعات به فیسبوک انتقال داده می شود و دیگران مشاهده خواهند کرد که شما به آنها ما را پیشنهاد می کنید.جه کسانی این اطلاعات را بدست می آورند بستگی به آن دارد که در قسمت تنظیمات فیسبوک خود چه تغییراتی را داده اید.برای کسب اطلاعات بیشتر و استفاده اطلاعات توسط فیسبوک و همچنین حقوق شما در مورد حفاظت از اطلاعات می توانید به اطلاعات داده شده توسط فیسبوک مراجعه کنید(%{facebook}).
         nested_text_three: ما Pluginsهایی از  شبکه اجتمایی توییتر  (Inc., 795 Folsom St., Suite 600, San Franscisco, CA 94107, USA („Twitter“) استفاده میکنیم که اگر یر روی Twitter  کلیک کنید٬پنجره های باز می شود که از شما می خواهد آدرس و مشخصات توییتر خو را وارد کنید.در این صورت Twitter-Cookie ها در کامپیوتر شما فعال می شوند و این در صورتی است که شما با پس ورد و نام کاربری خود در توییتر logg in شده باشید و آن را وارد کرده باشید که در اینصورت اطلاعات شما مانند IP-Adresse und die Cookie-ID به توییتر انتقال داده می شود.برای اطلاعات بیشتر در مورد نحوه استفاده از به اشتراک گذاشتن و حقوق قانونی و حفاظت از اطلاعات شخصی می توانید به اطلاعات داده شده توسط Twitter مراجعه کنید.(%{twitter}).
         nested_text_two: ما Pluginsهایی از  شبکه اجتمایی گوگل استفاده میکنیم که اگر بر رویGoogle+1 کلیک کنید٬ پنجره های باز می شود که از شما می خواهد آدرس و مشخصات گوگل خو را وارد کنید.در این صورت Google-Cookie ها در کامپیوتر شما فعال می شوند و این در صورتی است که شما با پس ورد و نام کاربری خود در گوگل logg in شده باشید و آن را وارد کرده باشید که در اینصورت اطلاعات شما مانند IP-Adresse und die Cookie-ID به گوگل انتقال داده می شود.برای اطلاعات بیشتر در مورد نحوه استفاده از به اشتراک گذاشتن و حقوق قانونی و حفاظت از اطلاعات شخصی می توانید به اطلاعات داده شده توسط گوگل مراجعه کنید(%{google}).
@@ -1230,12 +1343,12 @@ fa:
         nested_title_three: 'اطلاعات موقعیتی '
         nested_title_two: ثبت نام در مجله اطلاعاتی
         text: اگر اطلاعات خود را از طریق ثبت نام در مجله اطلاعاتی ما و یا از طریق  Live-Chat بصورت دلخواه مانند نام٬آدرس محل سکونت٬تلفن٬ایمیل٬کدپستی به ما داده باشید٬ما از آنها جهت ارسال با توجه به موضوعی که شما درخواست کمک دارید خدمات خود را برای پاسخگویی به شما و یا فرستادن مجله اطلاعاتی از طریق ایمیل استفاده میکنیم.
-      heading: حفاظت از اطلاعات
-      intro_first_part: ما خیلی خوشحالیم از اینکه صفحه ما www.clarat.org و clarat gGmbH مورد جلب توجه شما قرار گرفته است.حفاظت از اطلاعات شخصی شما را ما جدی می گیریم.بدیهی است که ما اطلاعات مربوط به هر شخصی را در انحصار چارچوب قوانین حفاظتی آلمان رعایت و از آن بکار می گیریم.
-      intro_second_part: در ادامه شما را از روش٬هدف استفاده از اطلاعات شخصی فرد متقاضی آگاه خواهیم کرد.شما می توانید اطلاعات بیشتر در این ضمینه را از وبسایت ما بازخوانی کنید.clarat gGmbH آگاهی دادن در تغییرات اطلاعات را مشروط می داند.اگر پس از مدت طولانی از وبسایت ما دوباره بازدید می کنید به شما توصیه می شود مجدد موارد مربوط به حفاظت اطلاعات شخصی خود را فراخوانید.
-      title: حفاظت از اطلاعات
+      heading: Datenschutzhinweise
+      intro_first_part: Wir freuen uns über Ihr Interesse an unserer Webseite www.clarat.org und an der clarat gGmbH. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Selbstverständlich werden wir personenbezogene Daten ausschließlich im Rahmen der geltenden Bestimmungen des deutschen Datenschutzrechts erheben und verwenden.
+      intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
+      title: Datenschutz
     section_choice:
-      meta_description: clarat مسائل را از طریق اینترنت و ویشنهادات حمایتی روشن می سازد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان بصورت آنلاین٬ آسان و در نزدیکی آنها.
+      meta_description: clarat.org نشان می دهد که چه کمکهایی در آلمان وجود دارد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان. بصورت آنلاین٬ آسان و در نزدیکی آنها.
       meta_title: clarat شفاف سازی می کند | clarat
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:
@@ -1257,6 +1370,7 @@ fa:
     haeufige-fragen: سوالات رایج
     home: خانه
     impressum: 'اطلاعات کلی '
+    kontakt: تماس
     liste: لیست
     liste-de-services: لیست خدمات
     new: جدید
@@ -1284,10 +1398,18 @@ fa:
           family: اگر اینجا را کلیک کنید٬به clarat Family وارد می شوی.در clarat Family می توانی بدنبال کمک برای کودکان٬جوانان و خانواده ها باشی.
           refugees: اگر اینجا را کلیک کنید٬به clarat Refugees وارد می شوید.در clarat Refugees می توانی بدنبال کمک برای پناهندگان باشی.
   simple_form:
+    hints:
+      contact:
+        new:
+          email:
+          name:
+        show:
+          email:
+          name:
     placeholders:
       search_form:
         home:
-          query: 
+          query:
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -9,6 +10,7 @@ FactoryGirl.define do
       Organization.enumerized_attributes.attributes['legal_form'].values.sample
     end
     charitable { FFaker::Boolean.maybe }
+    website { FactoryGirl.create(:website, host: 'own') }
 
     # optional
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
@@ -17,7 +19,6 @@ FactoryGirl.define do
 
     # associations
     transient do
-      website_count { rand(0..3) }
       location_count 1
     end
 
@@ -30,13 +31,8 @@ FactoryGirl.define do
     end
 
     after :create do |orga, evaluator|
-      evaluator.website_count.times do
-        website = FactoryGirl.create(:website, host: 'own')
-        website.organizations << orga
-        orga.websites << website
-      end
       # Locations
-      if evaluator.location_count > 0
+      if evaluator.location_count.positive?
         orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
       end
       if evaluator.location_count > 1
@@ -62,12 +58,13 @@ FactoryGirl.define do
 
     trait :with_offer do
       after :create do |orga, _evaluator|
-        FactoryGirl.create :offer, organization: orga
+        offer = FactoryGirl.create :offer
+        offer.split_base.divisions.first.update_columns organization_id: orga.id
       end
     end
   end
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

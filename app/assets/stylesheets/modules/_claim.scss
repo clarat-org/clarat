@@ -37,7 +37,10 @@
   left: 0;
   top: 160px;
   max-width: 410px;
-;
+
+  html[lang="de"] & {
+    max-width: 340px;
+  }
 
   body.refugees & {
     color: $brand_core_refugees;

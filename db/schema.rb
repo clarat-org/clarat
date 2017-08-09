@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170407081405) do
+ActiveRecord::Schema.define(version: 20170802094621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "pg_trgm"
 
   create_table "absences", force: :cascade do |t|
     t.date    "starts_at",                null: false
@@ -48,6 +49,8 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.string   "aasm_state",            limit: 32,   default: "open", null: false
     t.datetime "created_at",                                          null: false
     t.datetime "updated_at",                                          null: false
+    t.string   "topic"
+    t.boolean  "created_by_system",                  default: false
   end
 
   add_index "assignments", ["aasm_state"], name: "index_assignments_on_aasm_state", using: :btree
@@ -59,13 +62,13 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "assignments", ["receiver_team_id"], name: "index_assignments_on_receiver_team_id", using: :btree
 
   create_table "categories", force: :cascade do |t|
-    t.string   "name_de",                              null: false
+    t.string   "name_de",                                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "icon",       limit: 12
+    t.string   "icon",            limit: 12
     t.integer  "parent_id"
     t.integer  "sort_order"
-    t.boolean  "visible",               default: true
+    t.boolean  "visible",                    default: true
     t.string   "name_en"
     t.string   "name_ar"
     t.string   "name_fr"
@@ -73,6 +76,14 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.string   "name_tr"
     t.string   "name_ru"
     t.string   "name_fa"
+    t.text     "keywords_de"
+    t.text     "keywords_en"
+    t.text     "keywords_ar"
+    t.text     "keywords_fa"
+    t.text     "explanations_de"
+    t.text     "explanations_en"
+    t.text     "explanations_ar"
+    t.text     "explanations_fa"
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
@@ -93,6 +104,16 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "categories_offers", ["category_id"], name: "index_categories_offers_on_category_id", using: :btree
   add_index "categories_offers", ["offer_id"], name: "index_categories_offers_on_offer_id", using: :btree
 
+  create_table "categories_sections", force: :cascade do |t|
+    t.integer  "category_id"
+    t.integer  "section_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "categories_sections", ["category_id"], name: "index_categories_sections_on_category_id", using: :btree
+  add_index "categories_sections", ["section_id"], name: "index_categories_sections_on_section_id", using: :btree
+
   create_table "category_hierarchies", id: false, force: :cascade do |t|
     t.integer "ancestor_id",   null: false
     t.integer "descendant_id", null: false
@@ -109,7 +130,7 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   end
 
   create_table "contact_people", force: :cascade do |t|
-    t.integer  "organization_id",                              null: false
+    t.integer  "organization_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "area_code_1",      limit: 6
@@ -172,16 +193,55 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.datetime "updated_at"
   end
 
-  create_table "divisions", force: :cascade do |t|
-    t.string   "name",              null: false
-    t.text     "description"
-    t.integer  "organization_id"
-    t.integer  "section_filter_id", null: false
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+  create_table "definitions_offers", force: :cascade do |t|
+    t.integer "definition_id", null: false
+    t.integer "offer_id",      null: false
   end
 
+  add_index "definitions_offers", ["definition_id"], name: "index_definitions_offers_on_definition_id", using: :btree
+  add_index "definitions_offers", ["offer_id"], name: "index_definitions_offers_on_offer_id", using: :btree
+
+  create_table "definitions_organizations", force: :cascade do |t|
+    t.integer "definition_id",   null: false
+    t.integer "organization_id", null: false
+  end
+
+  add_index "definitions_organizations", ["definition_id"], name: "index_definitions_organizations_on_definition_id", using: :btree
+  add_index "definitions_organizations", ["organization_id"], name: "index_definitions_organizations_on_organization_id", using: :btree
+
+  create_table "divisions", force: :cascade do |t|
+    t.string   "addition"
+    t.integer  "organization_id"
+    t.integer  "section_id",                         null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+    t.text     "comment"
+    t.boolean  "done",            default: false
+    t.string   "size",            default: "medium", null: false
+    t.integer  "city_id"
+    t.integer  "area_id"
+  end
+
+  add_index "divisions", ["area_id"], name: "index_divisions_on_area_id", using: :btree
+  add_index "divisions", ["city_id"], name: "index_divisions_on_city_id", using: :btree
   add_index "divisions", ["organization_id"], name: "index_divisions_on_organization_id", using: :btree
+  add_index "divisions", ["section_id"], name: "index_divisions_on_section_id", using: :btree
+
+  create_table "divisions_presumed_categories", id: false, force: :cascade do |t|
+    t.integer "division_id", null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "divisions_presumed_categories", ["category_id"], name: "index_divisions_presumed_categories_on_category_id", using: :btree
+  add_index "divisions_presumed_categories", ["division_id"], name: "index_divisions_presumed_categories_on_division_id", using: :btree
+
+  create_table "divisions_presumed_solution_categories", id: false, force: :cascade do |t|
+    t.integer "division_id",          null: false
+    t.integer "solution_category_id", null: false
+  end
+
+  add_index "divisions_presumed_solution_categories", ["division_id"], name: "index_divisions_presumed_solution_categories_on_division_id", using: :btree
+  add_index "divisions_presumed_solution_categories", ["solution_category_id"], name: "index_presumed_s_categories_on_s_category", using: :btree
 
   create_table "emails", force: :cascade do |t|
     t.string   "address",       limit: 64,                        null: false
@@ -198,15 +258,15 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   end
 
   create_table "filters", force: :cascade do |t|
-    t.string   "name",                         null: false
-    t.string   "identifier",        limit: 35, null: false
+    t.string   "name",                  null: false
+    t.string   "identifier", limit: 35, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "type",                         null: false
-    t.integer  "section_filter_id"
+    t.string   "type",                  null: false
+    t.integer  "section_id"
   end
 
-  add_index "filters", ["section_filter_id"], name: "index_filters_on_section_filter_id", using: :btree
+  add_index "filters", ["section_id"], name: "index_filters_on_section_id", using: :btree
 
   create_table "filters_offers", id: false, force: :cascade do |t|
     t.integer "filter_id", null: false
@@ -240,19 +300,6 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "hyperlinks", ["linkable_id", "linkable_type"], name: "index_hyperlinks_on_linkable_id_and_linkable_type", using: :btree
   add_index "hyperlinks", ["website_id"], name: "index_hyperlinks_on_website_id", using: :btree
 
-  create_table "keywords", force: :cascade do |t|
-    t.string "name"
-    t.text   "synonyms"
-  end
-
-  create_table "keywords_offers", id: false, force: :cascade do |t|
-    t.integer "keyword_id", null: false
-    t.integer "offer_id",   null: false
-  end
-
-  add_index "keywords_offers", ["keyword_id"], name: "index_keywords_offers_on_keyword_id", using: :btree
-  add_index "keywords_offers", ["offer_id"], name: "index_keywords_offers_on_offer_id", using: :btree
-
   create_table "locations", force: :cascade do |t|
     t.string   "street",                          null: false
     t.text     "addition"
@@ -260,7 +307,7 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.boolean  "hq"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "organization_id",                 null: false
+    t.integer  "organization_id"
     t.integer  "federal_state_id",                null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -350,8 +397,8 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "offer_translations", ["offer_id"], name: "index_offer_translations_on_offer_id", using: :btree
 
   create_table "offers", force: :cascade do |t|
-    t.string   "name",                        limit: 120,                 null: false
-    t.text     "description",                                             null: false
+    t.string   "name",                       limit: 120,                 null: false
+    t.text     "description",                                            null: false
     t.text     "old_next_steps"
     t.string   "encounter"
     t.string   "slug"
@@ -360,33 +407,25 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.datetime "updated_at"
     t.text     "opening_specification"
     t.datetime "approved_at"
-    t.text     "legal_information"
     t.integer  "created_by"
     t.integer  "approved_by"
-    t.date     "expires_at",                                              null: false
+    t.date     "expires_at",                                             null: false
     t.integer  "area_id"
     t.text     "description_html"
     t.text     "next_steps_html"
     t.text     "opening_specification_html"
-    t.integer  "age_from",                                default: 0
-    t.integer  "age_to",                                  default: 99
     t.string   "target_audience"
-    t.string   "aasm_state",                  limit: 32
-    t.boolean  "hide_contact_people",                     default: false
-    t.boolean  "age_visible",                             default: false
-    t.string   "code_word",                   limit: 140
+    t.string   "aasm_state",                 limit: 32
+    t.boolean  "hide_contact_people",                    default: false
+    t.string   "code_word",                  limit: 140
     t.integer  "solution_category_id"
-    t.string   "treatment_type"
-    t.string   "participant_structure"
-    t.string   "gender_first_part_of_stamp"
-    t.string   "gender_second_part_of_stamp"
     t.integer  "logic_version_id"
     t.integer  "split_base_id"
-    t.boolean  "all_inclusive",                           default: false
+    t.boolean  "all_inclusive",                          default: false
     t.date     "starts_at"
     t.datetime "completed_at"
     t.integer  "completed_by"
-    t.string   "residency_status"
+    t.integer  "section_id"
   end
 
   add_index "offers", ["aasm_state"], name: "index_offers_on_aasm_state", using: :btree
@@ -395,6 +434,7 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "offers", ["created_at"], name: "index_offers_on_created_at", using: :btree
   add_index "offers", ["location_id"], name: "index_offers_on_location_id", using: :btree
   add_index "offers", ["logic_version_id"], name: "index_offers_on_logic_version_id", using: :btree
+  add_index "offers", ["section_id"], name: "index_offers_on_section_id", using: :btree
   add_index "offers", ["solution_category_id"], name: "index_offers_on_solution_category_id", using: :btree
   add_index "offers", ["split_base_id"], name: "index_offers_on_split_base_id", using: :btree
 
@@ -442,8 +482,8 @@ ActiveRecord::Schema.define(version: 20170407081405) do
 
   create_table "organizations", force: :cascade do |t|
     t.string   "name",                                                    null: false
-    t.text     "description",                                             null: false
-    t.string   "legal_form",                                              null: false
+    t.text     "description"
+    t.text     "legal_form"
     t.boolean  "charitable",                         default: false
     t.integer  "founded"
     t.string   "slug"
@@ -459,11 +499,15 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.string   "aasm_state",             limit: 32
     t.string   "mailings",               limit: 255, default: "disabled", null: false
     t.boolean  "priority",                           default: false,      null: false
+    t.text     "comment"
+    t.integer  "website_id"
+    t.string   "pending_reason"
   end
 
   add_index "organizations", ["aasm_state"], name: "index_organizations_on_aasm_state", using: :btree
   add_index "organizations", ["approved_at"], name: "index_organizations_on_approved_at", using: :btree
   add_index "organizations", ["created_at"], name: "index_organizations_on_created_at", using: :btree
+  add_index "organizations", ["website_id"], name: "index_organizations_on_website_id", using: :btree
 
   create_table "search_locations", force: :cascade do |t|
     t.string   "query",                 null: false
@@ -476,6 +520,13 @@ ActiveRecord::Schema.define(version: 20170407081405) do
 
   add_index "search_locations", ["geoloc"], name: "index_search_locations_on_geoloc", using: :btree
   add_index "search_locations", ["query"], name: "index_search_locations_on_query", using: :btree
+
+  create_table "sections", force: :cascade do |t|
+    t.string   "name"
+    t.string   "identifier"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "sitemaps", force: :cascade do |t|
     t.string "path",    null: false
@@ -500,11 +551,21 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "solution_category_hierarchies", ["ancestor_id", "descendant_id", "generations"], name: "solution_category_anc_desc_idx", unique: true, using: :btree
   add_index "solution_category_hierarchies", ["descendant_id"], name: "solution_category_desc_idx", using: :btree
 
+  create_table "split_base_divisions", force: :cascade do |t|
+    t.integer  "split_base_id", null: false
+    t.integer  "division_id",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "split_base_divisions", ["division_id"], name: "index_split_base_divisions_on_division_id", using: :btree
+  add_index "split_base_divisions", ["split_base_id"], name: "index_split_base_divisions_on_split_base_id", using: :btree
+
   create_table "split_bases", force: :cascade do |t|
     t.string   "title",                null: false
     t.string   "clarat_addition"
     t.text     "comments"
-    t.integer  "organization_id",      null: false
+    t.integer  "organization_id"
     t.integer  "solution_category_id", null: false
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
@@ -552,25 +613,75 @@ ActiveRecord::Schema.define(version: 20170407081405) do
 
   create_table "statistics", force: :cascade do |t|
     t.string  "topic"
-    t.integer "user_id"
     t.date    "date",                                null: false
     t.float   "count",             default: 0.0,     null: false
-    t.integer "user_team_id"
     t.string  "model"
     t.string  "field_name"
     t.string  "field_start_value"
     t.string  "field_end_value"
     t.string  "time_frame",        default: "daily"
+    t.string  "trackable_type"
+    t.integer "trackable_id"
   end
 
-  add_index "statistics", ["user_id"], name: "index_statistics_on_user_id", using: :btree
-  add_index "statistics", ["user_team_id"], name: "index_statistics_on_user_team_id", using: :btree
+  add_index "statistics", ["trackable_id", "trackable_type"], name: "index_statistics_on_trackable_id_and_trackable_type", using: :btree
 
   create_table "subscriptions", force: :cascade do |t|
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name_de"
+    t.text   "keywords_de"
+    t.text   "keywords_en"
+    t.text   "keywords_ar"
+    t.text   "keywords_fa"
+    t.string "name_en"
+    t.string "name_fr"
+    t.string "name_pl"
+    t.string "name_ru"
+    t.string "name_ar"
+    t.string "name_fa"
+    t.string "name_tr"
+    t.text   "explanations_de"
+    t.text   "explanations_en"
+    t.text   "explanations_ar"
+    t.text   "explanations_fa"
+  end
+
+  create_table "tags_offers", id: false, force: :cascade do |t|
+    t.integer "tag_id",   null: false
+    t.integer "offer_id", null: false
+  end
+
+  add_index "tags_offers", ["offer_id"], name: "index_tags_offers_on_offer_id", using: :btree
+  add_index "tags_offers", ["tag_id"], name: "index_tags_offers_on_tag_id", using: :btree
+
+  create_table "target_audience_filters_offers", force: :cascade do |t|
+    t.integer  "target_audience_filter_id",                   null: false
+    t.integer  "offer_id",                                    null: false
+    t.string   "residency_status"
+    t.string   "gender_first_part_of_stamp"
+    t.string   "gender_second_part_of_stamp"
+    t.integer  "age_from",                    default: 0,     null: false
+    t.integer  "age_to",                      default: 99,    null: false
+    t.boolean  "age_visible",                 default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "stamp_de"
+    t.string   "stamp_en"
+    t.string   "stamp_ar"
+    t.string   "stamp_fa"
+    t.string   "stamp_fr"
+    t.string   "stamp_tr"
+    t.string   "stamp_ru"
+    t.string   "stamp_pl"
+  end
+
+  add_index "target_audience_filters_offers", ["offer_id"], name: "index_target_audience_filters_offers_on_offer_id", using: :btree
+  add_index "target_audience_filters_offers", ["target_audience_filter_id"], name: "index_ta_filters_offers_on_target_audience_filter_id", using: :btree
 
   create_table "time_allocations", force: :cascade do |t|
     t.integer "user_id",                     null: false
@@ -590,6 +701,16 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.datetime "updated_at"
   end
 
+  create_table "user_team_observing_users", force: :cascade do |t|
+    t.integer  "user_id",      null: false
+    t.integer  "user_team_id", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "user_team_observing_users", ["user_id"], name: "index_user_team_observing_users_on_user_id", using: :btree
+  add_index "user_team_observing_users", ["user_team_id"], name: "index_user_team_observing_users_on_user_team_id", using: :btree
+
   create_table "user_team_users", force: :cascade do |t|
     t.integer "user_team_id"
     t.integer "user_id"
@@ -599,9 +720,14 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "user_team_users", ["user_team_id"], name: "index_user_team_users_on_user_team_id", using: :btree
 
   create_table "user_teams", force: :cascade do |t|
-    t.string "name",                                  null: false
-    t.string "classification", default: "researcher"
+    t.string  "name",                                  null: false
+    t.string  "classification", default: "researcher"
+    t.integer "lead_id"
+    t.integer "parent_id"
   end
+
+  add_index "user_teams", ["lead_id"], name: "index_user_teams_on_lead_id", using: :btree
+  add_index "user_teams", ["parent_id"], name: "index_user_teams_on_parent_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",              default: "",         null: false
@@ -614,10 +740,9 @@ ActiveRecord::Schema.define(version: 20170407081405) do
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
-    t.integer  "current_team_id"
+    t.boolean  "active",             default: true
   end
 
-  add_index "users", ["current_team_id"], name: "index_users_on_current_team_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
   create_table "versions", force: :cascade do |t|
@@ -633,11 +758,12 @@ ActiveRecord::Schema.define(version: 20170407081405) do
   add_index "versions", ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id", using: :btree
 
   create_table "websites", force: :cascade do |t|
-    t.string   "host",                          null: false
-    t.string   "url",                           null: false
+    t.string   "host",                               null: false
+    t.string   "url",                                null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "unreachable_count", default: 0, null: false
+    t.integer  "unreachable_count",  default: 0,     null: false
+    t.boolean  "ignored_by_crawler", default: false
   end
 
   add_index "websites", ["host"], name: "index_websites_on_host", using: :btree

@@ -1,7 +1,9 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 ruby '2.3.3'
 
 gem 'nokogiri', '1.6.7.2' # 1.6.8 doesnt install on some pcs. Remove when fixed
+gem 'nokogumbo', '1.4.11' # 1.4.12 causes problems on heroku (see https://github.com/rubys/nokogumbo/issues/61)
 
 ###########
 # General #
@@ -13,6 +15,7 @@ gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2'
+gem 'rails-observers', '= 0.1.2'
 
 # Translations
 gem 'rails-i18n'
@@ -135,8 +138,7 @@ gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
-gem 'dynamic_sitemaps', github: 'efqdalton/dynamic_sitemaps',
-                        branch: 'adds-custom-storages'
+gem 'dynamic_sitemaps', github: 'allthegoldt/dynamic_sitemaps'
 
 gem 'responders', '~> 2.0'
 
@@ -217,7 +219,7 @@ group :development, :test do
   gem 'pry-doc' # read ruby docs in console
 
   # test suite
-  gem 'minitest' # Testing using Minitest
+  gem 'minitest', '5.10.1' # Testing using Minitest
   gem 'minitest-matchers'
   gem 'minitest-line'
   gem 'launchy' # save_and_open_page

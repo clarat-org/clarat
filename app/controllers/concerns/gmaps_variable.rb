@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Google Maps variable setter for Offer and Organization
 module GmapsVariable
   extend ActiveSupport::Concern

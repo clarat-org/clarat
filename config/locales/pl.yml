@@ -6,6 +6,8 @@ pl:
         email: NOTRANSLATE
         message: NOTRANSLATE
         name: NOTRANSLATE
+      offer:
+        organizations: 
       search_location:
         latitude: Podejście
         longitude: NOTRANSLATE
@@ -24,6 +26,8 @@ pl:
           anonymous: 
       update_request: NOTRANSLATE
   anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr
@@ -56,7 +60,7 @@ pl:
           link_1:
             name: film
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Co to jest clarat?
         question_10:
@@ -468,6 +472,10 @@ pl:
         send: Wyślij
         send_us_a_message: Napisz do nas wiadomość
   day_and_night: 
+  de:
+    en:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -504,6 +512,9 @@ pl:
       success_html: |-
         Pomyślnie usunąłeś(aś) się z listy powiadomień.
         (<a href="%{subscribe_href}">wieder anmelden</a>)
+  en:
+    conf:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -620,6 +631,7 @@ pl:
         amh: Amh
         ara: Ara
         arc: Arc
+        arm: Arm
         aze: Aze
         bam: Bam
         ban: Ban
@@ -628,20 +640,30 @@ pl:
         ber: Ber
         bos: Bos
         bul: Bul
+        bur: Bur
         cau: Cau
         ckb: Ckb
         cpe: Cpe
         cus: Cus
         cze: Cze
+        dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
+        est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
+        fil: Fil
         fin: Fin
         fra: Fra
         fuf: Fuf
+        ful: Ful
+        gej: 
+        geo: Geo
+        hau: Hau
         hbs: Hbs
         heb: Heb
         hin: Hin
@@ -653,11 +675,13 @@ pl:
         kor: Kor
         kur: Kur
         lav: Lav
+        lin: Lin
         lit: Lit
         ltz: Ltz
         luo: Luo
         man: Man
         mkd: Mkd
+        mos: Mos
         msa: Msa
         mul: Mul
         nor: Nor
@@ -667,7 +691,9 @@ pl:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
+        sdh: Sdh
         skr: Skr
         slo: Slo
         slv: Slv
@@ -676,6 +702,7 @@ pl:
         spa: Spa
         sqi: Sqi
         srp: Srp
+        sus: Sus
         swa: Swa
         swe: Swe
         tam: Tam
@@ -692,6 +719,7 @@ pl:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -703,6 +731,8 @@ pl:
       sort_order:
         nearby: Blisko
         relevance: W związku z tematem
+  formtastic:
+    required: required
   free: 
   js:
     ajax_error:
@@ -785,6 +815,8 @@ pl:
         categories: Kategorie
         filter: Filtr
         map: Mapa
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -844,6 +876,7 @@ pl:
         amh: Język amharski - አማርኛ
         ara: Język arabski - عربي
         arc: Język aramejski - ארמית / Arāmît
+        arm: Język ormiański - Հայերեն / Hajeren
         aze: Język azerski - Azərbaycan
         bam: Język bambara - Bamanankan
         ban: Język balijski - Basa Bali
@@ -852,20 +885,31 @@ pl:
         ber: Języki berberyjskie - Tamaziɣt
         bos: Język bośniacki - bosanski
         bul: Język bułgarski - български
+        bur: Birmańczyk - မြန်မာစာ
         cau: Język abazyński - абаза бызшва
         ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
         cus: Język Saho - ሳሆኛ
         cze: Język czeski - čeština
+        dan: język duński - Dansk
         deu: Język niemiecki - Deutsch
+        dje: Zarma - Djerma
         dyu: Język diula - julakan
         ell: Język grecki - ελληνικά
         eng: Język angielski - English
+        est: estoński - eesti keel
+        ewe: Ewe - Eʋegbe
         ewo: Język yaunde - Ewondo
         fas: Język perski (farsi) - فارسی
+        fil: filipino - Wikang Filipino
         fin: Język fiński - suomi
         fra: Język francuski - Français
         fuf: Pular - Pular
+        ful: Ful - Fulfulde
+        gej: 
+        gen: Gen - Mina
+        geo: gruziński - ქართული
+        hau: język hausa - Hausa
         hbs: Język czarnogórski - Crnogorski jezik / Црногорски језик
         heb: Język hebrajski - עברית
         hin: Język hindi - हिन्दी
@@ -877,11 +921,13 @@ pl:
         kor: Język koreański - 한국말 / 조선말
         kur: Język kurdyjski - کوردی
         lav: Język łotewski - latviešu
+        lin: lingala - Ngála
         lit: Język litewski - lietuvių
         ltz: Język luksemburski - Lëtzebuergesch
         luo: Język luo - Dholuo
         man: Maninka - Maninka
         mkd: Język macedoński - македонски
+        mos: Mòoré - Moose
         msa: Język malajski – بهاس ملايو
         mul: inne języki na życzenie
         nor: Język norweski - Norsk
@@ -891,7 +937,9 @@ pl:
         pus: Język paszto - پښتو‎
         rom: Język romski - Romani
         ron: Język rumuński - română
+        run: Kirundi
         rus: Język rosyjski - русский
+        sdh: Kurmanji - كورمانجى / Kurmancî
         skr: Język serbsko-chorwacki - српскохрватски / hrvatskosrpski
         slo: Język słowacki - slovenský jazyk
         slv: Język słoweński - Slovenščina
@@ -900,6 +948,7 @@ pl:
         spa: Język hiszpański - español
         sqi: Język albański - Shqipja
         srp: Język serbski - српски
+        sus: Susu - Sosoxui
         swa: Suahili - Kiswahili
         swe: Język szwedzki - svenska
         tam: Język tamilski - தமிழ்
@@ -916,6 +965,7 @@ pl:
         uzb: Język uzbecki - Oʻzbek tili
         vie: Język wietnamski - tiếng Việt
         wol: Język wolof - wɔlɔf
+        xxx: Towarzyszący język migowy - speech-acc. gestures
         zho: Język chiński - 普通话 / 普通話
         zza: Język zazaki - Zazaki / Kırmancki
     shariff:
@@ -930,6 +980,8 @@ pl:
         personal: osobiście
         portal: lista adresów
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -940,6 +992,9 @@ pl:
         about: O nas
         blog: Blog
         contact: kontakt
+        facebook-family: 
+        facebook_family: clarat family
+        facebook_refugees: clarat refugees
         faq: Często zadawane pytania
         fb:
           anchor: facebook
@@ -948,6 +1003,7 @@ pl:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: Ochrona danych
         tos: Nota prawna
         twitter:
@@ -957,9 +1013,19 @@ pl:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
+        more_information_overlay: 
+        popup:
+          button: 
+          email_placeholder: adres e-mail *
+          footer: 
+          headline: 
+          message: Ich möchte an der Umfrage teilnehmen
+          name_placeholder: Imię *
+          text: 
+        send: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
-        legal_title: On clarat, legal text can only be read in German
+        legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
       navigation:
         category_headline: Lub szukaj w kategoriach
@@ -980,6 +1046,7 @@ pl:
           tr: Türkçe
         section_link:
           desktop:
+            2017-07-17, visits=2: 
             family: do clarat refugees
             refugees: do rodziny clarat
           mobile:
@@ -987,6 +1054,7 @@ pl:
               family: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
               refugees: 'Przejdź do strony startowej <span class="top-bar__emphasis">clarat refugees</span> '
             switch:
+              2017-07-17, visits=2: 
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
@@ -995,6 +1063,8 @@ pl:
       target_audience:
         family_acquaintances: 
         refugees_adolescents: 
+    validations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1091,6 +1161,9 @@ pl:
           charged: 
           confidential: 
           day_and_night: 
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:
@@ -1112,6 +1185,8 @@ pl:
       what:
         code_word: O co musisz spytać lub czego szukać na stronie internetowej?
         heading: O co chodzi?
+        offertaxonomy:
+          heading: 
       who: Kto oferuje tę pomoc?
       who_contact_people:
         dr: Dr
@@ -1144,8 +1219,6 @@ pl:
     about:
       amina: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Szybko orientuje się, co jest ważne. W clarat jest w zespole badawczym. Ona decyduje, co znajdzie się w ofertach claratu. Jej ulubionym utworem jest “La Prima Estate” Erlenda Oye.
       andrea: 'Studiowała Zarządzanie Międzykulturowe. Stąd wie tez niemało o gospodarce czy kulturze. Jest bardzo dokładna w swojej pracy. W clarat jest częścią zespołu badawczego. Andrea zabezpiecza jakość naszej pracy. Jej ulubiony utwór to: “Work Me” The Black Keys.'
-      anja: Jest ekologiem i inżynierem. Potrafi szybko i logicznie myśleć. W clarat pracuje w Research-Teamie. Jest gwarancją najwyższej jakości. Jej ulubioną piosenką jest "Where is my mind" grupy Pixies.
-      ann-sophie: 
       anna: Jest filologiem. To znaczy, one wie sporo o językach. Literatura też nie jest jej obca. Potrafi dobrze zrozumieć spokomplikowane zagadnienia. W clarat pracuje w Research-Teamie. Jej ulubioną piosenką jest "1009" grupy Bonobo.
       anne: |-
         Studiowała Gospodarkę i Stosunki Międzynarodowe. Potrafi bardzo szybko logicznie myśleć. W clarat jest szefem.
@@ -1187,10 +1260,11 @@ pl:
       lisa: Jest designerem. To znaczy, że chętnie znajduje nowe, kreatywne rozwiązania i potrafi to dobrze pokazać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest “Another Day” Jamie Lidell.
       magdalena: 
       marcus: Jest webdesignerem. To znaczy, że potrafi programować szatę graficzną stron internetowych. Potrafi też dobrze planować. W clarat jest w zespole IT. Dba o to, aby nasza strona internetowa dobrze wyglądała. Jego ulubionym utworem jest “Hysteria” zespolu Muse.
-      marie: 
+      meta_description: 
       michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
       nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.
       nathalie: Studiowała prawa człowieka i politykę międzynarodową. Potrafi dobrze tłumaczyć i świetnie słuchać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest "Me in You" zespołu Kings of Convienience.
+      nicole: 
       nils: Jest informatykiem. To znaczy, że potrafi dobrze programować strony internetowe i programy komputerowe. Szybko znajduje dobre rozwiązania i szybko się uczy. W clarat jest w zespole IT. Jego ulubiony utwór to “Jein” grupy Fettes Brot.
       omar: 
       patrick: 
@@ -1199,6 +1273,7 @@ pl:
       sophie: Studiowała zarządzanie spółkami non-profit. Jest dobra w organizacji i szybko poznaje istote rzeczy. W clarat pracuje dla Research-Teamu. Dowiaduje się, kto i jak używa clarat. Jej ulubionym utworem jest "Lost" Franka Ocean.
       stefan: Jest kulturoznawcą. To znaczy, że wie dużo o kulturze i społeczeństwie. Potrafi świetnie przekonywać ludzi do dobrej sprawy. On jest pomysłodawcą claratu. Jego ulubionym utworem jest “Riders On The Storm” zespołu The Doors.
       text: "clarat jest projektem stowarzyszenia użytecznosci publicznej, Stowarzyszenia Benckiser-Przyszłość (www.benckiser-stiftung.org). Przez stowarzyszenie Benckiser promujemy od wielu lat skuteczne projekty rozwojowe dla dzieci i młodzieży. Dlatego zauważyliśmy: Jak trudno jest rozeznać się w istniejących już ofertach pomocy. Ale jedno stało się jasne: Skoro nam “ekspertom” nie jest łatwo się w tym rozeznać, to jak trudne musi to być dla dzieci, młodzieży czy rodzin, które potrzebują pomocy? Albo dla uchodźców, którzy tutaj w Niemczech nie maja jeszcze jakiegokolwiek rozeznania? \nOdpowiedz jest prosta: Bardzo trudno! I stąd zrodził się pomysł na clarat: proste znalezienie pomocy. Dla rodzin: na stronie clarat family. A dla uchodźców: na clarat refugee."
+      tian: 
       tine: Jest pedagogiem społecznym. Potrafi dobrze wsłuchać się w ludzi. Jest również pisarką. To znaczy, że dobrze posługuje się językiem i pisze ładne historie. W clarat jest w zespole badawczym. Jej ulubionym utworem jest “Survive It“ zespołu Ghostpoet.
       title: " O nas"
       verena: Jest politologiem. To znaczy, że wie dużo o polityce i społeczeństwie. Potrafi bardzo dobrze zbierać informacje. W clarat jest w zespole badawczym i zajmuje się leksykonem. Jej ulubionym utworem jest “Lose It” zespołu Oh Wonder.
@@ -1256,9 +1331,11 @@ pl:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
       meta_description:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       meta_title:
+        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:
@@ -1372,6 +1449,7 @@ pl:
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
+    kontakt: 
     liste: Lista
     liste-de-services: liste-de-services
     new: nowe
@@ -1399,6 +1477,14 @@ pl:
           family: Jeśli klikniesz tutaj, przejdziesz do clarat family. W clarat family możesz szukać pomocy dla dzieci, młodzieży i rodzin.
           refugees: Jeśli klikniesz tutaj, przejdziesz do clarat refugees. W clarat refugees możesz szukać pomocy dla uchodźców.
   simple_form:
+    hints:
+      contact:
+        new:
+          email: 
+          name: 
+        show:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:

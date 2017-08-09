@@ -66,6 +66,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     if nearbyResults.nbHits < 1
       Clarat.Modal.open('#unavailable_location_overlay')
+      @handleChangeToRemote()
 
     Clarat.Search.Operation.UpdateCategories.updateCounts(
       personalFacetResults, remoteFacetResults
@@ -101,6 +102,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleQueryChange'
     '.JS-RemoveQueryLink':
       click: 'handleRemoveQueryClick'
+    '.JS-MoreInformationButton':
+      click: 'handleShowMoreInformaiton'
+    '.more-information-text':
+      click: 'handleShowMoreInformaiton'
     '.JS-RemoveExactLocationClick':
       click: 'handleRemoveExactLocationClick'
     '.JS-CategoryLink':
@@ -155,6 +160,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes query: ''
     @sendMainSearch()
     @sendQuerySupportSearch()
+
+  handleShowMoreInformaiton: (event) =>
+    Clarat.Modal.open('#more_information_overlay')
 
   handleRemoveExactLocationClick: (event) =>
     if @model.exact_location == 'true'

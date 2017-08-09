@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../test_helper'
 
 feature 'Offer display' do
@@ -23,7 +24,7 @@ feature 'Offer display' do
                                :with_dummy_translations # test obfuscation
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
-    visit offer_en_path offer, section: 'refugees'
+    visit offer_en_path offer, section: offer.section.identifier
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'
   end
@@ -32,13 +33,13 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved, :with_email,
                                :with_dummy_translations # test obfuscation
     offer.update_columns aasm_state: 'expired'
-    visit offer_en_path offer, section: 'refugees'
+    visit offer_en_path offer, section: offer.section.identifier
     page.must_have_content 'GET READY FOR CANADA'
     page.must_have_css '.Automated-translation__warning'
   end
 
   scenario 'Offer view has evaluated markdown' do
-    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
+    offer = FactoryGirl.create :offer, :approved, :with_markdown,
                                description: 'A [link](http://www.example.org)',
                                old_next_steps: "A\n\n- list"
 
@@ -62,6 +63,7 @@ feature 'Offer display' do
     offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
                                old_next_steps: 'Step one.'
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
+    offer.update_columns section_id: 2
     next_steps(:basic).update_column :text_en, 'English step 1.'
     visit offer_en_path offer, section: 'refugees'
     within '.section-content--nextsteps' do
@@ -70,23 +72,12 @@ feature 'Offer display' do
       page.must_have_css '.Automated-translation__warning'
     end
     offer.next_steps << next_steps(:basic)
-    visit offer_en_path offer, section: 'refugees'
+    visit offer_en_path offer, section: offer.section.identifier
     within '.section-content--nextsteps' do
       page.wont_have_content 'GET READY FOR CANADA'
       page.must_have_content 'English step 1.'
       page.wont_have_css '.Automated-translation__warning'
     end
-  end
-
-  scenario 'Offer view has explained words' do
-    Definition.create key: 'complex', explanation: 'Explained!'
-    offer = FactoryGirl.create :offer, :approved, :with_markdown_and_definition,
-                               description: 'A complex sentence.'
-
-    visit unscoped_offer_path offer
-    page.body.must_match(
-      %r{\<p\>A \<dfn class='JS-tooltip' data-id='1'\>complex\</dfn\> sentence.\</p\>}
-    )
   end
 
   scenario 'Multiple contact persons are present' do

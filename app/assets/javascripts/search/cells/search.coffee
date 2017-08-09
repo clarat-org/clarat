@@ -19,4 +19,4 @@ class Clarat.Search.Cell.Search
 
       category_tree: @model.categoryTree
       filters: @model.getFilters()
-      current_section: @model.section
+      current_section: @model.section_identifier

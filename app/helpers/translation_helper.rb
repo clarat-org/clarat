@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module TranslationHelper
   # render data as HTML string
   def translation_block automated, &block

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -6,11 +7,9 @@ FactoryGirl.define do
     name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
     description { FFaker::Lorem.paragraph(rand(4..6))[0..399] }
     old_next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
-    age_from { rand(1..3) }
-    age_to { rand(4..6) }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course portal fax letter).sample
+      %w(personal personal personal personal hotline chat forum email online-course portal).sample
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
@@ -19,8 +18,6 @@ FactoryGirl.define do
     # associations
 
     transient do
-      organization_count 1
-      organization nil
       contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
@@ -33,16 +30,9 @@ FactoryGirl.define do
     end
 
     after :build do |offer, evaluator|
-      # organization
-      if evaluator.organization
-        offer.organizations << evaluator.organization
-      else
-        evaluator.organization_count.times do
-          offer.organizations << FactoryGirl.create(:organization, :approved)
-        end
-      end
-      organization =
-        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
+      # SplitBase => Division(s) => Organization(s)
+      offer.split_base = FactoryGirl.create(:split_base)
+      organization = offer.organizations[0]
 
       # location
       if offer.personal?
@@ -57,16 +47,13 @@ FactoryGirl.define do
       end
       # Filters
       section = evaluator.section
-      if section
-        offer.section_filters << (
-          SectionFilter.find_by_identifier(section) ||
-            FactoryGirl.create(:section_filter, identifier: section)
-        )
-      else
-        offer.section_filters << (
-          SectionFilter.all.sample || FactoryGirl.create(:section_filter)
-        )
-      end
+      offer.section =
+        if section
+          Section.find_by(identifier: section) ||
+          FactoryGirl.create(:section, identifier: section)
+        else
+          Section.all.sample || FactoryGirl.create(:section)
+        end
       evaluator.language_count.times do
         offer.language_filters << (
           LanguageFilter.all.sample || FactoryGirl.create(:language_filter)
@@ -102,7 +89,7 @@ FactoryGirl.define do
       end
       evaluator.opening_count.times do
         offer.openings << (
-          if Opening.count != 0 && rand(2) == 0
+          if Opening.count != 0 && rand(2).zero?
             Opening.select(:id).all.sample
           else
             FactoryGirl.create(:opening)
@@ -151,20 +138,20 @@ FactoryGirl.define do
             OrganizationTranslation.create(
               organization_id: organization.id, locale: locale,
               source: 'GoogleTranslate',
-              description: "#{locale}(#{organization.untranslated_description})"
+              description: "#{locale}(#{organization.description})"
             )
           end
         end
       end
     end
 
-    trait :with_markdown_and_definition do
+    trait :with_markdown do
       after :create do |offer, _evaluator|
-        offer.update_column :description, Definition.infuse(
-          MarkdownRenderer.render(offer.untranslated_description)
+        offer.update_column :description, MarkdownRenderer.render(
+          offer.description
         )
         offer.update_column :old_next_steps, MarkdownRenderer.render(
-          offer.untranslated_old_next_steps
+          offer.old_next_steps
         )
       end
     end
@@ -172,5 +159,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

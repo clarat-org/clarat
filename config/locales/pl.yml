@@ -980,6 +980,8 @@ pl:
         personal: osobiście
         portal: lista adresów
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -1011,6 +1013,7 @@ pl:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: adres e-mail *
@@ -1019,8 +1022,8 @@ pl:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Imię *
           text: 
-        unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
         send: 
+        unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 
@@ -1218,8 +1221,6 @@ pl:
     about:
       amina: Jest socjologiem. To znaczy, że wie dużo o społeczeństwie. Szybko orientuje się, co jest ważne. W clarat jest w zespole badawczym. Ona decyduje, co znajdzie się w ofertach claratu. Jej ulubionym utworem jest “La Prima Estate” Erlenda Oye.
       andrea: 'Studiowała Zarządzanie Międzykulturowe. Stąd wie tez niemało o gospodarce czy kulturze. Jest bardzo dokładna w swojej pracy. W clarat jest częścią zespołu badawczego. Andrea zabezpiecza jakość naszej pracy. Jej ulubiony utwór to: “Work Me” The Black Keys.'
-      anja: Jest ekologiem i inżynierem. Potrafi szybko i logicznie myśleć. W clarat pracuje w Research-Teamie. Jest gwarancją najwyższej jakości. Jej ulubioną piosenką jest "Where is my mind" grupy Pixies.
-      ann-sophie: 
       anna: Jest filologiem. To znaczy, one wie sporo o językach. Literatura też nie jest jej obca. Potrafi dobrze zrozumieć spokomplikowane zagadnienia. W clarat pracuje w Research-Teamie. Jej ulubioną piosenką jest "1009" grupy Bonobo.
       anne: |-
         Studiowała Gospodarkę i Stosunki Międzynarodowe. Potrafi bardzo szybko logicznie myśleć. W clarat jest szefem.
@@ -1261,7 +1262,6 @@ pl:
       lisa: Jest designerem. To znaczy, że chętnie znajduje nowe, kreatywne rozwiązania i potrafi to dobrze pokazać. W clarat pracuje dla Research-Teamu. Jej ulubionym utworem jest “Another Day” Jamie Lidell.
       magdalena: 
       marcus: Jest webdesignerem. To znaczy, że potrafi programować szatę graficzną stron internetowych. Potrafi też dobrze planować. W clarat jest w zespole IT. Dba o to, aby nasza strona internetowa dobrze wyglądała. Jego ulubionym utworem jest “Hysteria” zespolu Muse.
-      marie: 
       meta_description: 
       michaela: Studiowała informatykę gospodarczą. Potrafi zachwycić innych ludzi. Zna się dobrze na mediach. W clarat pracuje dla Research-Teamu. Troszczy się o to, by nasze strony internetowe dobrze funkcjonowały. Jej ulubionym utworem jest "Digital Love" zespołu Daft Punk.
       nahla: Jest archeologiem. Wie wiele o historii i człowieczeństwie. Potrafi szybko pracować. W clarat pracuje dla zespołu tłumaczeniowego i tłumaczy clarat na arabski. Jej ulubionym utworem jest "Nassam Allina El Hawa" zespołu Fayrouz.

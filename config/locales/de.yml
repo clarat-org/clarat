@@ -1,5 +1,5 @@
 de:
-  accessibility: 
+  accessibility:
   activerecord:
     attributes:
       contact:
@@ -25,9 +25,9 @@ de:
         identifier:
           anonymous: anonym
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
+  anonymous:
+  arabisch:
+  arb:
   cells:
     contact_people:
       dr: Dr.
@@ -757,12 +757,12 @@ de:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Warum ist meine Organisation nicht bei clarat?
-  charged: 
+  charged:
   conf:
     current_location: Mein Standort
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential: 
+  confidential:
   contacts:
     create:
       success: Die Nachricht wurde erfolgreich abgeschickt.
@@ -780,11 +780,11 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
-  day_and_night: 
+  day_and_night:
   de:
     en:
-      conf: 
-      current_location: 
+      conf:
+      current_location:
   emails:
     offers_index:
       family:
@@ -836,7 +836,7 @@ de:
         (<a href="%{subscribe_href}">wieder anmelden</a>)
   en:
     conf:
-      current_location: 
+      current_location:
   enumerize:
     search_form:
       age:
@@ -1055,7 +1055,7 @@ de:
         relevance: Relevance
   formtastic:
     required: required
-  free: 
+  free:
   js:
     ajax_error:
       error: Suchfehler
@@ -1255,7 +1255,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
+        gej:
         gen: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
@@ -1329,6 +1329,8 @@ de:
         personal: Persönlich
         portal: Adressliste
   layouts:
+    modal_create:
+      success:
     partials:
       banner:
         teaser:
@@ -1339,7 +1341,7 @@ de:
         about: Über uns
         blog: Blog
         contact: Kontakt
-        facebook-family: 
+        facebook-family:
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: Häufige Fragen
@@ -1365,6 +1367,7 @@ de:
             Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
             Hast du etwas gesehen, das wir besser machen können? Oder
             funktioniert etwas nicht richtig? Dann
+        more_information_overlay:
         popup:
           button: Ja, bitte
           email_placeholder: E-Mail-Adresse *
@@ -1373,6 +1376,7 @@ de:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+        send:
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
           oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
@@ -1382,8 +1386,8 @@ de:
         send: 
         more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
-        legal_title: 
-        title: 
+        legal_title:
+        title:
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1403,7 +1407,7 @@ de:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
+            2017-07-17, visits=2:
             family: "‹ zu clarat refugees"
             refugees: "‹ zu clarat family"
           mobile:
@@ -1411,19 +1415,19 @@ de:
               family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
               refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
             switch:
-              2017-07-17, visits=2: 
+              2017-07-17, visits=2:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
     modal_create:
-      success: 
+      success:
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
+        family_acquaintances:
+        refugees_adolescents:
     validations:
-      only_visible_organizations: 
+      only_visible_organizations:
   offers:
     index:
       filters:
@@ -1486,12 +1490,12 @@ de:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
+      accessibility:
+      anonymous:
+      charged:
+      confidential:
+      day_and_night:
+      free:
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
         code_word: 'So heißt die Hilfe beim Anbieter:'
@@ -1511,19 +1515,19 @@ de:
         explanation:
           accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
           anonymous: Das heißt, du musst deinen Namen nicht sagen.
-          charged: 
+          charged:
           confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
-          day_and_night: 
-          free: 
+          day_and_night:
+          free:
         title:
           accessibility: barrierefrei
           anonymous: anonym
           charged: kostenpflichtig
           confidential: vertraulich
           day_and_night: Tag und Nacht
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
+          family_nuclear_family:
+          family_parents:
+          family_relatives:
           free: kostenlos
       trait_filters_headline: Weitere Informationen
       website_section:
@@ -1585,8 +1589,6 @@ de:
         entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
-      anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
-      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
       anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
@@ -1647,7 +1649,6 @@ de:
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
-      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
       meta_description: Das ist das Team hinter Deutschlands Hilfeverzeichnis. Mehr als 40 Kollegen arbeiten täglich daran, dass Du einfach Hilfe findest.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
@@ -1742,11 +1743,11 @@ de:
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
       meta_description:
-        2017-07-17, visits=2: 
+        2017-07-17, visits=2:
         family: Mit clarat family findest Du einfach Hilfe für Kinder, Jugendliche und Familien. Übersichtlich. Mehrsprachig. In ganz Berlin. Und deutschlandweit.
         refugees: 'Mit clarat refugees findest Du einfach Hilfe für Flüchtlinge. Übersichtlich. Mehrsprachig. In deiner Nähe. Und in ganz Deutschland. '
       meta_title:
-        2017-07-17, visits=2: 
+        2017-07-17, visits=2:
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
       title:
@@ -1908,15 +1909,15 @@ de:
     hints:
       contact:
         new:
-          email: 
-          name: 
+          email:
+          name:
         show:
-          email: 
-          name: 
+          email:
+          name:
     placeholders:
       search_form:
         home:
-          query: 
+          query:
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

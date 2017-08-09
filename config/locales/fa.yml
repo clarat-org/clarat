@@ -1,5 +1,5 @@
 fa:
-  accessibility: 
+  accessibility:
   activerecord:
     attributes:
       contact:
@@ -25,9 +25,9 @@ fa:
         identifier:
           anonymous: گمنام
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
+  anonymous:
+  arabisch:
+  arb:
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -373,12 +373,12 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
-  charged: 
+  charged:
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-  confidential: 
+  confidential:
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -396,11 +396,11 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-  day_and_night: 
+  day_and_night:
   de:
     en:
-      conf: 
-      current_location: 
+      conf:
+      current_location:
   emails:
     offers_index:
       family:
@@ -429,7 +429,7 @@ fa:
       success_html: تو با موفقیت از بخش پیغام ها بعدی خارج شدی(<a href="%{subscribe_href}">wieder anmelden</a>)
   en:
     conf:
-      current_location: 
+      current_location:
   enumerize:
     search_form:
       age:
@@ -563,12 +563,12 @@ fa:
         cze: Cze
         dan: Dan
         deu: Deu
-        dje: 
+        dje:
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
-        ewe: 
+        ewe:
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -576,7 +576,7 @@ fa:
         fra: Fra
         fuf: Fuf
         ful: Ful
-        gej: 
+        gej:
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -606,7 +606,7 @@ fa:
         pus: Pus
         rom: Rom
         ron: Ron
-        run: 
+        run:
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -634,7 +634,7 @@ fa:
         uzb: Uzb
         vie: Vie
         wol: Wol
-        xxx: 
+        xxx:
         zho: Zho
         zza: Zza
       section:
@@ -648,7 +648,7 @@ fa:
         relevance: Relevance
   formtastic:
     required: required
-  free: 
+  free:
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -837,7 +837,7 @@ fa:
         fra: فرانسوی - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
+        gej:
         gen: جين  - Mina
         geo: گرجی - ქართული
         hau: هوسى - Hausanci
@@ -911,6 +911,8 @@ fa:
         personal: شخصی
         portal: لیست آدرس
   layouts:
+    modal_create:
+      success:
     partials:
       banner:
         teaser:
@@ -921,7 +923,7 @@ fa:
         about: در مورد ما
         blog: بلاگ
         contact: تماس
-        facebook-family: 
+        facebook-family:
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: سوالات رایج
@@ -942,6 +944,7 @@ fa:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
+        more_information_overlay:
         popup:
           button: بله،لطفا
           email_placeholder: عنوان الإیمیل *
@@ -950,8 +953,9 @@ fa:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: نام *
           text: آن چیزی را که ما می توانیم بهبود بدهیم و یا مورد علاقه تو می باشد را به ما اعلام کن.بدین منظور ما با کمال میل با تو تماس می گیریم.آیا اجازه ارسال ایمیل با اعلام جزئیات را به تو داریم؟
+        send:
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
-        send: 
+        send:
         more_information_overlay: با عرض پوزش.متاسفانه برای جستجوی تو هیچ مشاوری وجود ندارد.ما اما سعی می کنیم پیشنهادات خود را توسعه بدهیم.با کمال میل و به محض اینکه در clarat اطلاعات بیشتری در مورد جستجوی تو بدست آوردیم،تو را در جریان می گذاریم.به همین منظور آدرس ایمیل خود را در اینجا وارد کن.
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
@@ -978,7 +982,7 @@ fa:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
+            2017-07-17, visits=2:
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
           mobile:
@@ -986,19 +990,19 @@ fa:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
               refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              2017-07-17, visits=2: 
+              2017-07-17, visits=2:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
     modal_create:
-      success: 
+      success:
   offer:
     stamp:
       target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
+        family_acquaintances:
+        refugees_adolescents:
     validations:
-      only_visible_organizations: 
+      only_visible_organizations:
   offers:
     index:
       filters:
@@ -1056,12 +1060,12 @@ fa:
           long: پیشنهاد مربوط به موضوع...
           short: پیشنهاد در مورد...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
+      accessibility:
+      anonymous:
+      charged:
+      confidential:
+      day_and_night:
+      free:
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
         code_word: 'نام این کمک نزد عرضه کننده:'
@@ -1081,19 +1085,19 @@ fa:
         explanation:
           accessibility: این بدین معنی است که تو در اینجا می توانی به آرامی با صندلی چرخ دار خود را حرکت بدهی و یا با یک کالسکه کودک
           anonymous: این بدین معنی است که تو نباید نام خود را اعلام کنی.
-          charged: 
+          charged:
           confidential: این بدین معنی است که صحبتهای تو با کارمندان اینجا محرمانه باقی می ماند.
-          day_and_night: 
-          free: 
+          day_and_night:
+          free:
         title:
           accessibility: دسترس‌پذیری
           anonymous: گمنام
           charged: هزینه الزامی
           confidential: محرمانه
           day_and_night: شبانه روزی
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
+          family_nuclear_family:
+          family_parents:
+          family_relatives:
           free: رایگان
       trait_filters_headline: اطلاعات بعدی
       website_section:
@@ -1151,8 +1155,6 @@ fa:
         او  کارشناس رشته جامعه شناسی است.این یعنی اینکه او اطلاعات زیادی در مورد اجتماع دارد.چیزی که مهم هست را سریع می بیند.در clarat در تیم تحقیق فعالیت دارد.او تصمیم میگیرد که چه چیزهایی در clarat به عنوان پیشنهاد ثبت شود.موسیقی دوست داشتنی او
         La Prima Estate از Erlend Oye می باشد.
       andrea: او در رشته مدیریت بین فرهنگی تحصیل کرده است.این بدین معنی است که او اطلاعات زیادی درمورد اقتصاد و قرهنگ دارد.او دقیق کار می کند.در clarat در تیم تحقیق فعالیت دارد و نگاه کلی در مورد موضوع دنیای خانواده دارد.موسیقی دوست داشتنی اوWork Me از The Black Keys می باشد.
-      anja: او مهندس و در رشته اکولوژی تحصیل کرده است و می تواند منطقی و سریع فکر کند.او در clarat در تیم تحقیق فعالیت دارد و ما را از کیفیت کارها مطمئن می کند.موسیقی دوست داشتنی او Where is my mind از den Pixies می باشد.
-      ann-sophie: او در رشته دانش فرهنگ اجتماعی تحصیل کرده است و به خوبی با موضوع مهاجرت آشنایی دارد.او به خوبی می تواند مسائل را درک و برنامه ریزی کند و در clarat در تیم تحقیق فعالیت می کند.موسیقی مورد علاقه او Papertrails از Darkside می باشد.
       anna: او کارشناس رشته لغت‌شناسی است.این بدین معنی است که او در مورد زبان و ادبیات اطلاعات زیادی دارد و می تواند به خوبی مسائل پیچیده را درک کند.در clarat در تیم تحقیق فعالیت دارد و کارشناس در بخش clarat-Sprache نیز می باشد.موسیقی مورد علاقه او 1009 از Bonobo می باشد.
       anne: او در رشته اقتصاد و روابط بین الملل تحصیل کرده است.او می تواند سریع منطقی فکر کند.در clarat او رئیس است.او وظیفه تمام تیم را بر عهده گرفته است و همه چیز را ساز مان دهی می کند.موسیقی مورد علاقه اوDenken Sie Groß از Deichkind می باشد.
       astrid: او کارشناس رشته سیاست است.این بدین معنی است که او اطلاعات زیادی درباره سیاست و اجتماع دارد.او با انرژی مثبت و انتقال آن به دیگران در clarat در تیم تحقیق فعالیت دارد و در اینترنت به دنبال سازمان های مختلف میگردد.موسیقی مورد علاقه او You Got Meاز The Roots می باشد.
@@ -1192,7 +1194,6 @@ fa:
       lisa: او کارشناس طراحی است و به همراه دیگران در توسعه راه حل های خلاقانه فعالیت می کند.او به خوبی قادر به طراحی است و در clarat در تیم تحقیق و گفتگو با استفاده کنندگان از سایت ما فعال مست.او قادر است دیگران را از نحوه استفاده از clarat آگاه کند.موسیقی مورد علاقه او Resolution از Matt Corby می باشد.
       magdalena: او در رشته پژوهشی آمریکای لاتین تحصیل کرده است.این بدین معنی است که او اطلاعات زیادی در مورد فرهنگ و سیاست آمریکای لاتین دارد.او به خوبی می توانی برنامه ریزی و جهت یابی کند.او در clarat در تیم تحقیق فعالیت می کند و موسیقی مورد علاقه او Summer Breeze از CocoRosie می باشد.
       marcus: او طراح وب است.این بدین معنی است که صفحات اینترنت را برنامه ریزی و می سازد و همچنین به خوبی طرح می ریزد.در clarat در تیم IT فعالیت می کند و مراقب آن است که صفحه اینترنتی ما زیباتر و بهتر جلوه دهد.موسیقی مورد علاقه او Hysteria از MUSE می باشد.
-      marie: او محقق صلح و اختلافات می باشد.این بدین معنی است که او اطلاعات زیادی در مورد جنگ و اختلافات دارد.او به سرعت می تواند اطلاعات را جمع آوری و تنظیم کند و در clarat در تیم تحقیق فعالیت می کند.موسیقی مورد علاقه او Move On Up از Mayfield می باشد.
       meta_description: این اعضای تیم پشت صحنه در لیست کمکی آلمان می باشد.بیش از ۴۰ کارمند روزانه در این زمینه کار می کنند که تو به راحتی کمک پیدا کنی.
       michaela: او در رشته علوم اقتصاد کامپیوتر تحصیل کرده است.او می تواند دیگران را به هیجان بیاورد و اطلاعات زیادی در مورد رسانه های جدید دارد.در clarat در تیم تحقیق فعالیت می کند و مراقب آن است که صفحه اینترنتی ما به خوبی عمل کند.موسیقی مورد علاقه او Digital Love از Daft Punk می باشد.
       nahla: او کارشناس باستان شناسی است.او اطلاعات زیادی در مورد تاریخ و انسانها دارد.سرعت کار او بالاست.در clarat در تیم ترجمه به زبان عربی فعالیت دارد.موسیقی مورد علاقه او Nassam Allina El Hawa از Fayrouz می باشد.
@@ -1266,11 +1267,11 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
-        2017-07-17, visits=2: 
+        2017-07-17, visits=2:
         family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
         refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
       meta_title:
-        2017-07-17, visits=2: 
+        2017-07-17, visits=2:
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
       title:
@@ -1404,15 +1405,15 @@ fa:
     hints:
       contact:
         new:
-          email: 
-          name: 
+          email:
+          name:
         show:
-          email: 
-          name: 
+          email:
+          name:
     placeholders:
       search_form:
         home:
-          query: 
+          query:
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

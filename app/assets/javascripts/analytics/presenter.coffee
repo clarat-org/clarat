@@ -91,10 +91,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
     startHover = $.now()
-<<<<<<< HEAD
     @moreInfo = $('span.more_information_theme').html()
-=======
->>>>>>> origin/master
 
     $('dfn.JS-tooltip').hover (->
       startHover = $.now()

@@ -74,7 +74,7 @@ GEM
     algoliasearch (1.14.0)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.20.0)
+    algoliasearch-rails (1.20.1)
       algoliasearch (~> 1.14.0)
       json (>= 1.5.1)
     arcane (1.1.1)
@@ -215,7 +215,7 @@ GEM
       httparty
       multi_json (>= 1.9.0)
     git-version-bump (0.15.1)
-    gli (2.16.0)
+    gli (2.16.1)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     haml (4.0.7)
@@ -682,4 +682,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.6
+   1.15.3

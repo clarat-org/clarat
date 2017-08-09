@@ -61,7 +61,7 @@ ar:
           link_1:
             name: فيلم
             target: _blank
-            url: http://blog.clarat.org/العثور على مساعدة بسهولة-مشروعنا-كلارات-في-فيلم قصير/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart-auf-arabisch/
             var: link_to_family_movie
           question: ما هي كلارات؟
         question_10:
@@ -863,11 +863,13 @@ ar:
           anchor: جوجل بلس
           href: https://plus.google.com/110429028641743127592/about
         impressum: هيئة التحرير
+        plus: clarat plus
         privacy: إرشادات حماية البيانات الشخصية
         tos: إرشادات قانونية
         twitter:
           anchor: تويتر
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -891,6 +893,7 @@ ar:
           مثلا عن طريق اللإيميل أو عن طريق الدردشة
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
+        send: 
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
         title: |-

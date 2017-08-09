@@ -61,7 +61,7 @@ ru:
           link_1:
             name: фильме
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Что значит clarat?
         question_10:
@@ -982,11 +982,13 @@ ru:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Импрессум
+        plus: clarat plus
         privacy: Правила конфиденциальности
         tos: юридические указания
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: просто напиши нам E-Mail.
@@ -1005,6 +1007,7 @@ ru:
           name_placeholder: Имя *
           text: Скажите, что мы можем улучшить. Или то, что тебе действительно нравится. Мы будем рады созвониться с тобой. Можно выслать тебе E-Mail с деталями?
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
+        send: 
       nav_lang:
         legal_title: Юридический текст clarat можно читать только на немецком языке.
         title: "Автоматический перевод! \n<br><br>\nНекоторые тексты clarat переведены на твой язык Google Translate. Иногда эти тексты могут звучать несколько странно и неправильно. Мы работаем над улучшением качества наших переводов."

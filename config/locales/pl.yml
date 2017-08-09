@@ -60,7 +60,7 @@ pl:
           link_1:
             name: film
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Co to jest clarat?
         question_10:
@@ -999,11 +999,13 @@ pl:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: Ochrona danych
         tos: Nota prawna
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+        plus: clarat plus
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
@@ -1017,6 +1019,7 @@ pl:
           name_placeholder: Imię *
           text: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
+        send: 
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 

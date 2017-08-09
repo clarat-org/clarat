@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/allthegoldt/dynamic_sitemaps.git
+  revision: 246d9ff5bf6bfac986d45b4e635b18cc1c902486
+  specs:
+    dynamic_sitemaps (2.0.0)
+      aws-sdk
+
+GIT
   remote: git://github.com/clarat-org/clarat_base.git
   revision: b92dde6fcd8cadb948df1060111d4e34bcdc722e
   specs:
@@ -20,14 +27,6 @@ GIT
       sanitize
       sidekiq (~> 4.1.2)
       web-console (~> 2.0)
-
-GIT
-  remote: git://github.com/efqdalton/dynamic_sitemaps.git
-  revision: f229cb40391ab3283efd2091ab58bbec68c720cf
-  branch: adds-custom-storages
-  specs:
-    dynamic_sitemaps (2.0.0)
-      aws-sdk
 
 GEM
   remote: https://rubygems.org/
@@ -87,14 +86,14 @@ GEM
       execjs
       json
     awesome_print (1.6.1)
-    aws-sdk (2.9.23)
-      aws-sdk-resources (= 2.9.23)
-    aws-sdk-core (2.9.23)
+    aws-sdk (2.10.22)
+      aws-sdk-resources (= 2.10.22)
+    aws-sdk-core (2.10.22)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.23)
-      aws-sdk-core (= 2.9.23)
-    aws-sigv4 (1.0.0)
+    aws-sdk-resources (2.10.22)
+      aws-sdk-core (= 2.10.22)
+    aws-sigv4 (1.0.1)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)

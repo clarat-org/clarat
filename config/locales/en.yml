@@ -899,6 +899,8 @@ en:
         personal: personal
         portal: address list
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -920,12 +922,12 @@ en:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: privacy
         tos: legal information
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: write us a message.
@@ -934,6 +936,7 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
+        more_information_overlay: 'Sorry. Unfortunately, there are no advisers for your search. But we are trying to add to our service all the time. We will let you know as soon as there is more information on clarat about your search. Please enter your email address here. '
         popup:
           button: Yes, please
           email_placeholder: email address *
@@ -942,9 +945,9 @@ en:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
-        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
         send: 
         more_information_overlay: 'Sorry. Unfortunately, there are no advisers for your search. But we are trying to add to our service all the time. We will let you know as soon as there is more information on clarat about your search. Please enter your email address here. '
+        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-

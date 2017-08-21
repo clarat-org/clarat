@@ -979,6 +979,8 @@ pl:
         personal: osobiście
         portal: lista adresów
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -1000,16 +1002,17 @@ pl:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: Ochrona danych
         tos: Nota prawna
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: adres e-mail *
@@ -1018,9 +1021,9 @@ pl:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Imię *
           text: 
-        unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
         send: 
         more_information_overlay: 
+        unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
         title: 

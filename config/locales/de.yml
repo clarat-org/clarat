@@ -1328,6 +1328,8 @@ de:
         personal: Persönlich
         portal: Adressliste
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -1349,12 +1351,12 @@ de:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impressum
+        plus: clarat plus
         privacy: Datenschutzhinweise
         tos: Rechtliche Hinweise
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1364,6 +1366,7 @@ de:
             Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
             Hast du etwas gesehen, das wir besser machen können? Oder
             funktioniert etwas nicht richtig? Dann
+        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
         popup:
           button: Ja, bitte
           email_placeholder: E-Mail-Adresse *
@@ -1372,6 +1375,7 @@ de:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+        send: 
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
           oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.

@@ -852,6 +852,8 @@ tr:
         personal: Kişisel
         portal: Adres listesi
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -873,12 +875,12 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -886,6 +888,7 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: E-Mail Adresi *
@@ -894,6 +897,7 @@ tr:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: İsim *
           text: 
+        send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.

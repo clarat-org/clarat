@@ -935,6 +935,8 @@ fr:
         personal: personnel
         portal: liste d'adresses
   layouts:
+    modal_create:
+      success: 
     partials:
       banner:
         teaser:
@@ -956,16 +958,17 @@ fr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impression
+        plus: clarat plus
         privacy: Protection des données
         tos: Informations juridiques
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
       modal:
         beta_modal:
           link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: Adresse électronique *
@@ -974,9 +977,9 @@ fr:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Nom *
           text: 
-        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
         send: 
         more_information_overlay: 
+        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 

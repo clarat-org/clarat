@@ -3,10 +3,10 @@ require_relative '../test_helper'
 
 feature 'Organization display' do
   scenario 'Organization with map and website gets shown' do
-    orga = FactoryGirl.create :organization, :approved
-    orga.websites = []
-    orga.websites << FactoryGirl.create(:website, :own, url: 'http://a.t.com/')
-    FactoryGirl.create :offer, organization: orga
+    offer = FactoryGirl.create :offer
+    orga = offer.organizations.first
+    orga.update_columns aasm_state: 'approved'
+    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
@@ -16,11 +16,10 @@ feature 'Organization display' do
   end
 
   scenario 'all_done organization with map and website gets shown' do
-    orga = FactoryGirl.create :organization, :approved
+    offer = FactoryGirl.create :offer
+    orga = offer.organizations.first
     orga.update_columns aasm_state: 'all_done'
-    orga.websites = []
-    orga.websites << FactoryGirl.create(:website, :own, url: 'http://a.t.com/')
-    FactoryGirl.create :offer, organization: orga
+    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
@@ -31,24 +30,25 @@ feature 'Organization display' do
 
   scenario 'Organization with invisible location does not show it but shows'\
            'the website' do
-    orga = FactoryGirl.create :organization, :approved
+    offer = FactoryGirl.create :offer
+    orga = offer.organizations.first
+    orga.update_columns aasm_state: 'approved'
     orga.locations.first.update_columns visible: false
-    orga.websites = []
-    orga.websites << FactoryGirl.create(:website, :own, url: 'http://a.t.com/')
-    FactoryGirl.create :offer, organization: orga
+    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
-    page.must_have_content orga.websites.first.shorten_url
+    page.must_have_content orga.website.shorten_url
     page.must_have_content I18n.t 'organizations.show.where'
     page.wont_have_content orga.locations.first.street
   end
 
   scenario 'Organization with invisible location and without website does'\
            'not show where section' do
-    orga = FactoryGirl.create :organization, :approved
+    offer = FactoryGirl.create :offer
+    orga = offer.organizations.first
+    orga.update_columns aasm_state: 'approved'
     orga.locations.first.update_columns visible: false
-    orga.websites = []
-    FactoryGirl.create :offer, organization: orga
+    orga.update_columns website_id: nil
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.wont_have_content orga.locations.first.street

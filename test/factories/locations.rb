@@ -5,6 +5,7 @@ FactoryGirl.define do
   factory :location do
     # required
     sequence(:street) { |n| "Foobar #{n}" }
+    sequence(:display_name) { |n| "Foobar #{n}" }
     sequence(:zip) { |n| n.to_s.rjust(5, '0') }
     hq { rand(9).zero? }
 

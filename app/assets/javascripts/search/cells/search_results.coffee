@@ -17,6 +17,9 @@ class Clarat.Search.Cell.SearchResults
     main_offers: @mainResults.hits
     main_count: @mainResults.nbHits
     main_results_query: @mainResultsQuery()
+    more_informaiton_text: @moreInformationText()
+    more_info_text: I18n.t('js.search.more_info_text')
+    more_info_button: I18n.t('js.search.more_info_button')
     pagination: new Clarat.Search.Cell.Pagination(@mainResults)
     offers_path: location.pathname
     toggle_search_result_details: 'Expand/Collapse'
@@ -73,6 +76,13 @@ class Clarat.Search.Cell.SearchResults
   mainResultsQuery: () ->
     if @model.query
       HandlebarsTemplates['remove_query_link'](query: @model.query)
+
+  moreInformationText: () ->
+    if @model.category
+      "#{@model.category}"
+    else if @model.attrs.query
+      "#{@model.attrs.query}" unless document.referrer.indexOf('/themen/') > -1
+
 
   mainResultsLocation: () ->
     # output = "#{@model.search_location || I18n.t('conf.default_location')}"

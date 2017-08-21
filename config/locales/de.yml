@@ -1142,6 +1142,8 @@ de:
         categories: Kategorien
         filter: Filter
         map: Karte
+      more_info_button: Zum Ratgeber
+      more_info_text: 'Mehr Informationen zu:'
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1253,8 +1255,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
@@ -1378,6 +1379,7 @@ de:
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
         send: 
+        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
         legal_title: 
         title: 
@@ -1412,6 +1414,10 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    modal_create:
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
   offer:
     stamp:
       target_audience:
@@ -1580,8 +1586,6 @@ de:
         entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
-      anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
-      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
       anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
@@ -1642,7 +1646,6 @@ de:
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
-      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
       meta_description: Das ist das Team hinter Deutschlands Hilfeverzeichnis. Mehr als 40 Kollegen arbeiten täglich daran, dass Du einfach Hilfe findest.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
@@ -1937,3 +1940,4 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+      placeholder: 

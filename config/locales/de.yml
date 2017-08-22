@@ -1255,8 +1255,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
@@ -1383,6 +1382,8 @@ de:
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
+        send: 
+        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
         legal_title: 
         title: 
@@ -1417,6 +1418,10 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    modal_create:
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
   offer:
     stamp:
       target_audience:
@@ -1939,3 +1944,4 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+      placeholder: 

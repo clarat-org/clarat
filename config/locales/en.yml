@@ -826,8 +826,7 @@ en:
         fra: French - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgian - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrin - Crnogorski jezik / Црногорски језик
@@ -947,6 +946,7 @@ en:
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
         send: 
+        more_information_overlay: 'Sorry. Unfortunately, there are no advisers for your search. But we are trying to add to our service all the time. We will let you know as soon as there is more information on clarat about your search. Please enter your email address here. '
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
         legal_title: Legal text can only be read in German.
@@ -957,9 +957,9 @@ en:
       navigation:
         category_headline: Search by categories
         claim:
-          family: Support services and programmes for children, teenagers and families
+          family: Support services for children, teenagers and families
           main: Find help easily
-          refugees: Support services and programmes for refugees
+          refugees: Support services for refugees
       top_bar:
         german_content_warning: Legal information can only be viewed in German
         languages:
@@ -985,6 +985,10 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+    modal_create:
+      js:
+        erb:
+          success: 
   offer:
     stamp:
       target_audience:
@@ -1538,3 +1542,4 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
+      placeholder: 

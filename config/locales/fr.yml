@@ -978,6 +978,7 @@ fr:
           name_placeholder: Nom *
           text: 
         send: 
+        more_information_overlay: 
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
@@ -1013,6 +1014,10 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+    modal_create:
+      js:
+        erb:
+          success: 
   offer:
     stamp:
       target_audience:
@@ -1459,3 +1464,4 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
+      placeholder: 

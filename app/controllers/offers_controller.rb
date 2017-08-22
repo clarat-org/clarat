@@ -19,7 +19,7 @@ class OffersController < ApplicationController
 
   # rubocop:disable Metrics/AbcSize
   def show
-    unless cookies[:session]
+    unless (@current_section.eql? 'refugees') || cookies[:session]
       @no_cookie = true
       cookies[:session] = { value: 'user_popup', expires: 3.days.from_now }
     end

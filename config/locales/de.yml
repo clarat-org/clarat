@@ -1330,6 +1330,9 @@ de:
   layouts:
     modal_create:
       success: 
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
     partials:
       banner:
         teaser:

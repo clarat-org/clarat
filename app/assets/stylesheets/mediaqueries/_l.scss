@@ -137,6 +137,20 @@
     }
   }
 
+  html[lang="ar"] {
+
+    body.family,
+    body.refugees {
+      .nav-sections__button {
+        text-align: right;
+      }
+    }
+
+    .template--pages-home #new_search_form .input.search_form_query {
+      margin-right: 0;
+    }
+  }
+
   .main-search__submit {
     width: 60px;
   }

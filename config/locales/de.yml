@@ -1329,7 +1329,10 @@ de:
         portal: Adressliste
   layouts:
     modal_create:
-      success:
+      success: 
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
     partials:
       banner:
         teaser:

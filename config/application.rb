@@ -55,5 +55,9 @@ module Clarat
 
     # specific test order (default in Rails 5) to silence deprecation warnings
     config.active_support.test_order = :random
+
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'ALLOWALL'
+    }
   end
 end

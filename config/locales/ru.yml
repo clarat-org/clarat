@@ -963,7 +963,9 @@ ru:
         portal: Список адресов
   layouts:
     modal_create:
-      success: 
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
@@ -1010,7 +1012,6 @@ ru:
           name_placeholder: Имя *
           text: Скажите, что мы можем улучшить. Или то, что тебе действительно нравится. Мы будем рады созвониться с тобой. Можно выслать тебе E-Mail с деталями?
         send: 
-        more_information_overlay: 
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
         legal_title: Юридический текст clarat можно читать только на немецком языке.
@@ -1050,10 +1051,6 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-    modal_create:
-      js:
-        erb:
-          success: 
   offer:
     stamp:
       target_audience:
@@ -1461,6 +1458,7 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
+    widget: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

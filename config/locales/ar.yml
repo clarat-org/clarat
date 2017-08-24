@@ -1,5 +1,5 @@
 ar:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +25,9 @@ ar:
         identifier:
           anonymous: مجهول
       update_request: NOTRANSLATE
-  anonymous:
-  arabisch:
-  arb:
+  anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: ".د"
@@ -303,12 +303,12 @@ ar:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: لماذا لا توجد منظمتي في كلارات؟
-  charged:
+  charged: 
   conf:
     current_location: موقعي
     default_latlng: 52.520007,13.404954
     default_location: برلين
-  confidential:
+  confidential: 
   contacts:
     create:
       success: تم إرسال الرسالة بنجاح
@@ -326,11 +326,11 @@ ar:
         name_placeholder: الإسم (فرض)
         send: ارسال
         send_us_a_message: اكتب لنا رسالة
-  day_and_night:
+  day_and_night: 
   de:
     en:
-      conf:
-      current_location:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -372,7 +372,7 @@ ar:
         (<a href="%{subscribe_href}">إعادة التسجيل</a>)
   en:
     conf:
-      current_location:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -506,12 +506,12 @@ ar:
         cze: Cze
         dan: Dan
         deu: Deu
-        dje:
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
-        ewe:
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -519,7 +519,7 @@ ar:
         fra: Fra
         fuf: Fuf
         ful: Ful
-        gej:
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -549,7 +549,7 @@ ar:
         pus: Pus
         rom: Rom
         ron: Ron
-        run:
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -577,7 +577,7 @@ ar:
         uzb: Uzb
         vie: Vie
         wol: Wol
-        xxx:
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -591,7 +591,7 @@ ar:
         relevance: الأهمية
   formtastic:
     required: required
-  free:
+  free: 
   js:
     ajax_error:
       error: خطأ في البحث
@@ -704,10 +704,10 @@ ar:
         other: "%{count} عروض محلية"
         zero: 'للأسف لا توجد عروض  '
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         few: أونلاين وهاتفي  (%{count})
         many: أونلاين وهاتفي  (%{count})
@@ -720,10 +720,10 @@ ar:
         other: "%{count} استشارات  هاتفية و عروض مساعدة عن طريق الإنترنت"
         zero: لا توجد استشارات  هاتفية أو عروض مساعدة عن طريق الإنترنت
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: عرض عروض مكانية أكثر
     shared:
       current_and_original_locale:
@@ -844,7 +844,9 @@ ar:
         portal: قائمة العناوين
   layouts:
     modal_create:
-      success:
+      js:
+        erb:
+          success: تم إدخال الإيميل بنجاح!
     partials:
       banner:
         teaser:
@@ -855,7 +857,7 @@ ar:
         about: معلومات عنا
         blog: مدونة
         contact: الإتصال
-        facebook-family:
+        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: " الأسئلة الشائعة"
@@ -881,9 +883,7 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
-        more_information_overlay: 'عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.
-
-'
+        more_information_overlay: عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.
         popup:
           button: نعم؛ من فضلك
           email_placeholder: عنوان البريد الإليكتروني *
@@ -892,15 +892,13 @@ ar:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: الإسم *
           text: قل لنا ما الذي يمكننا تحسينه. أو ما الذي يعجبك. يسعدنا التواصل معك تليفونياً. هل يمكن أن نرسل لك إيميل بالتفاصيل؟
-        send:
+        send: 
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
           هذا يعني أن شخصا يساعدك عن طريق التليفون أو الإنترنت
           مثلا عن طريق اللإيميل أو عن طريق الدردشة
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
-        send: 
-        more_information_overlay: 'عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.'
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
         title: |-
@@ -926,7 +924,7 @@ ar:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2:
+            2017-07-17, visits=2: 
             family: إلي كلارات اللاجئين ›
             refugees: إلى كلارات الأسرة ›
           mobile:
@@ -934,21 +932,17 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> الصفحة الرئيسية
               refugees: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> الصفحة الرئيسية
             switch:
-              2017-07-17, visits=2:
+              2017-07-17, visits=2: 
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
-    modal_create:
-      js:
-        erb:
-          success: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1013,12 +1007,12 @@ ar:
           long: عروض خاصة بموضوع ....
           short: عروض  مساعدة ل..
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: آخر إدخال
       next_steps:
         code_word: هكذا تسمى المساعدة لدى مقدم الدعم.
@@ -1038,19 +1032,19 @@ ar:
         explanation:
           accessibility: هذا يعني أنه يمكنك هنا التنقل بسهولة بالكرسي المتحرك أو بعربة الأطفال.
           anonymous: هذا يعني أنه لا يجب عليك ذكر إسمك.
-          charged:
+          charged: 
           confidential: هذا يعني أن الموظفون سوف يحتفظون بكل ما تقوله سراً.
-          day_and_night:
-          free:
+          day_and_night: 
+          free: 
         title:
           accessibility: خالي من العوائق مناسب للكراسي المتحركة
           anonymous: مجهول
           charged: ذو تكلفة
           confidential: سري
           day_and_night: ليلاً ونهاراً
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: مجاني
       trait_filters_headline: مزيد من المعلومات
       website_section:
@@ -1220,13 +1214,13 @@ ar:
         heading: كيف تعمل كلارات؟
         text: أكتب المشكلة التي تحتاح مساعدة في حلها, او التي تقلقك. يمكنك أيضا أن تختار من الموضوعات الموجودة لدينا, فتري في الحال كل العروض التي تقدم الدعم بالقرب منك. وكذلك تعرف أيضا, كيف تحصل على المساعدة و بأي  وسيلة إتصال, سواء عن طريق التليفون أو إرسال إيميل أو الذهاب الي عنوان ما
       meta_description:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: مع  clarat family تجد المساعدة بسهولة. فيها عروض دعم للاطفال والمراهقين والأسر. قائمة شاملة ومتعددة اللغات. في كل برلين وفي أنحاء ألمانيا."
         refugees: |-
           مع clarat refugees  تجد المساعدة بسهولة.
           فيها عروض دعم للاجئين. قائمة شاملة ومتعددة اللغات. بالقرب منك وفي كل المانيا.
       meta_title:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: إيجاد المساعدة ببساطة | كلارات العائلة
         refugees: إيجاد المساعدة ببساطة | كلارات اللاجئين
       title:
@@ -1334,7 +1328,7 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
-    fr:
+    fr: 
     haeufige-fragen: أسئلة-شائعة
     home: الصفحة الرئيسية
     impressum: هيئة التحرير
@@ -1353,6 +1347,7 @@ ar:
     unsubscribe: unsubscribe
     update_requests: طلبات-تحديث
     users: مستخدم
+    widget: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة
@@ -1371,15 +1366,15 @@ ar:
     hints:
       contact:
         new:
-          email:
-          name:
+          email: 
+          name: 
         show:
-          email:
-          name:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

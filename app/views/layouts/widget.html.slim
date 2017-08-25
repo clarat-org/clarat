@@ -56,15 +56,6 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
   body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
       .wrapper-inner
-        h2 style="margin-top:0.83em; color: #006b81;" Einfach Hilfe finden auf clarat.org
-        p style="color: #006b81;" clarat.org ist ein Verzeichnis mit Hilfsangeboten für geflüchtete Menschen. Gib ein Thema und einen Standort ein und klicke auf 'Suchen'!
-        h1.Logo.Logo--notstart style="float:none"
-          = link_to 'clarat.org', home_path(section: @current_section)
-        .Distributor.Distributor--navigation style="float:none;height:105px;"
-          = render '/offers/shared/search_form', search_form: @search_form || SearchForm.new(cookies),
-                                                 labels: :short,
-                                                 current_section: @current_section
-      .wrapper-inner
         h1.Logo.Logo--notstart style="float:none"
           = link_to 'clarat.org', home_path(section: @current_section)
         h2 style="margin-top:0.83em; color: #006b81;" Einfach Hilfe finden auf clarat.org

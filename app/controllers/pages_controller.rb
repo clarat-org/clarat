@@ -25,7 +25,9 @@ class PagesController < ApplicationController
     render status: 404, formats: [:html]
   end
 
-  def widget; end
+  def widget
+    render layout: 'widget'
+  end
 
   def section_forward
     split_path = request.fullpath.split('/', -1)

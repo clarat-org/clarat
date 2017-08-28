@@ -4,6 +4,6 @@ basic:
   zip: 12345
   city_id: 1
   hq: t
-  organization_id: 1
+  organization_id: 2
   federal_state_id: 1
   display_name: basicLocation

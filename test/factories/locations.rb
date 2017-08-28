@@ -20,15 +20,19 @@ FactoryGirl.define do
         "Raum #{rand(1..20)}"
       ].sample
     end
+    federal_state_id (FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')).id
+    city_id (City.all.to_a.sample || City.create!(name: 'Berlin')).id
+    display_name 'Berlin'
+
 
     # associations
     organization
-    federal_state do
-      FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
-    end
-    city do
-      City.all.to_a.sample || City.create!(name: 'Berlin')
-    end
+    # federal_state do
+    #   FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
+    # end
+    # city do
+    #   City.all.to_a.sample || City.create!(name: 'Berlin')
+    # end
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }

@@ -18,8 +18,8 @@ FactoryGirl.define do
     # associations
 
     transient do
-      organization_count 1
-      organization nil
+      #organization_count 1
+      organizations []
       contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
@@ -32,27 +32,18 @@ FactoryGirl.define do
     end
 
     after :build do |offer, evaluator|
-      # organization
-      if evaluator.organization
-        offer.organizations << evaluator.organization
-      else
-        evaluator.organization_count.times do
-          offer.organizations << FactoryGirl.create(:organization, :approved)
-        end
-      end
       organization =
-        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
+      offer.organizations[0] || FactoryGirl.create(:organization, :approved)
 
       # location
       if offer.personal?
-        location =  organization.locations.sample ||
-                    if evaluator.fake_address
+        location =  if evaluator.fake_address
                       FactoryGirl.create(:location, :fake_address,
-                                         organization: organization)
+                                         organization_id: organization.id)
                     else
-                      FactoryGirl.create(:location, organization: organization)
+                      FactoryGirl.create(:location, organization_id: organization.id)
                     end
-        offer.location = location
+        offer.location_id = location.id
       end
       # Filters
       section = evaluator.section

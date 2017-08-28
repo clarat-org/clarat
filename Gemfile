@@ -187,6 +187,7 @@ group :development do
   # requires graphviz to generate
   # entity relationship diagrams
   gem 'rails-erd', require: false
+  gem 'listen'
 end
 
 group :test do

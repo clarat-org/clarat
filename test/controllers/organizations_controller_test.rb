@@ -6,8 +6,8 @@ describe OrganizationsController do
     describe 'for an approved orga' do
       it 'should work (with friendly id)' do
         orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
-        FactoryGirl.create :offer, :approved, section: 'family',
-                                              organization: orga
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer.organizations << orga
         get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
@@ -25,8 +25,8 @@ describe OrganizationsController do
 
       it 'should redirect if the wrong section was given' do
         orga = FactoryGirl.create :organization, :approved
-        FactoryGirl.create :offer, :approved, section: 'family',
-                                              organization: orga
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer.organizations << orga
         get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to section: 'family'
       end
@@ -46,8 +46,8 @@ describe OrganizationsController do
     describe 'for an all_done orga' do
       it 'should work (with friendly id)' do
         orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
-        FactoryGirl.create :offer, :approved, section: 'family',
-                                              organization: orga
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer.organizations << orga
         orga.update_columns aasm_state: 'all_done'
         get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
@@ -68,8 +68,8 @@ describe OrganizationsController do
       it 'should redirect if the wrong section was given' do
         orga = FactoryGirl.create :organization, :approved
         orga.update_columns aasm_state: 'all_done'
-        FactoryGirl.create :offer, :approved, section: 'family',
-                                              organization: orga
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer.organizations << orga
         get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to section: 'family'
       end

@@ -15,10 +15,10 @@ FactoryGirl.define do
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     mailings 'enabled'
     created_by { FactoryGirl.create(:researcher).id }
+    website { FactoryGirl.create(:website, host: 'own') }
 
     # associations
     transient do
-      website_count { rand(0..3) }
       location_count 1
     end
 
@@ -31,19 +31,16 @@ FactoryGirl.define do
     end
 
     after :create do |orga, evaluator|
-      evaluator.website_count.times do
-        website = FactoryGirl.create(:website, host: 'own')
-        website.organizations << orga
-        orga.websites << website
-      end
       # Locations
-      if evaluator.location_count.positive?
-        orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
-      end
-      if evaluator.location_count > 1
-        create_list :location, (evaluator.location_count - 1),
-                    organization: orga, hq: false
-      end
+      create_list(:location, evaluator.location_count, organization_id: orga.id, hq: false)
+
+      # if evaluator.location_count.positive?
+      #   orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
+      # end
+      # if evaluator.location_count > 1
+      #   create_list :location, (evaluator.location_count - 1),
+      #               organization: orga, hq: false
+      # end
     end
 
     # traits

@@ -105,7 +105,9 @@ class OffersHelperTest < ActionView::TestCase
       end
 
       describe 'with a gender and no academic title present' do
-        before { offer.contact_people.first.assign_attributes gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
+        before do
+          offer.contact_people.first.assign_attributes gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO'
+        end
         it "should return 'Frau Jane Doe'" do
           contact_name(offer.contact_people.first).must_equal 'Frau Jane Doe'
         end

@@ -49,6 +49,13 @@ describe PagesController do
     end
   end
 
+  describe "GET 'widget'" do
+    it 'should work' do
+      get :widget, locale: 'de', section: 'refugees'
+      assert_response :success
+    end
+  end
+
   describe "GET 'not_found'" do
     it 'should work' do
       get :not_found, locale: 'de'

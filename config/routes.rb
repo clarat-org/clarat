@@ -30,6 +30,7 @@ Clarat::Application.routes.draw do
 
       # Email overviews
       get 'emails/:id/offers' => 'emails#offers_index', as: 'emails_offers'
+      get 'widget' => 'pages#widget', as: 'home'
     end
 
     # unscoped to scoped forwards

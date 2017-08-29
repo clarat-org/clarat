@@ -980,7 +980,9 @@ pl:
         portal: lista adresów
   layouts:
     modal_create:
-      success: 
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
@@ -1022,7 +1024,6 @@ pl:
           name_placeholder: Imię *
           text: 
         send: 
-        more_information_overlay: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
         legal_title: W klarownym tekście prawnym można czytać po niemiecku.
@@ -1058,10 +1059,6 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
-    modal_create:
-      js:
-        erb:
-          success: 
   offer:
     stamp:
       target_audience:
@@ -1468,6 +1465,7 @@ pl:
     unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
+    widget: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

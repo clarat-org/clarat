@@ -1,4 +1,4 @@
 = semantic_form_for update_request, remote: true do |f|
   = f.input :email, label: false, placeholder: t('.email_placeholder')
   = f.input :search_location, as: :hidden
-  = f.action :submit, label: t('.button')
+  = f.action :submit, label: t('.button'), button_html: { class: 'JS-Single-Click-Button'}

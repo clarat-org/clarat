@@ -1,5 +1,5 @@
 en:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +25,9 @@ en:
         identifier:
           anonymous: anonymously
       update_request: NOTRANSLATE
-  anonymous:
-  arabisch:
-  arb:
+  anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -372,12 +372,12 @@ en:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Why isn’t my organization on clarat?
-  charged:
+  charged: 
   conf:
     current_location: My location
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential:
+  confidential: 
   contacts:
     create:
       success: Message successfully sent.
@@ -395,11 +395,11 @@ en:
         name_placeholder: Name (obligatory)
         send: Send
         send_us_a_message: Write us a message
-  day_and_night:
+  day_and_night: 
   de:
     en:
-      conf:
-      current_location:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -432,7 +432,7 @@ en:
         (<a href="%{subscribe_href}">subscribe again</a>)
   en:
     conf:
-      current_location:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -566,12 +566,12 @@ en:
         cze: Cze
         dan: Dan
         deu: Deu
-        dje:
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
-        ewe:
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -579,7 +579,7 @@ en:
         fra: Fra
         fuf: Fuf
         ful: Ful
-        gej:
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -609,7 +609,7 @@ en:
         pus: Pus
         rom: Rom
         ron: Ron
-        run:
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -637,7 +637,7 @@ en:
         uzb: Uzb
         vie: Vie
         wol: Wol
-        xxx:
+        xxx: 
         zho: Zho
         zza: Zza
       section:
@@ -651,7 +651,7 @@ en:
         relevance: Relevance
   formtastic:
     required: required
-  free:
+  free: 
   js:
     ajax_error:
       error: Search error
@@ -764,10 +764,10 @@ en:
         other: "%{count} local offers"
         zero: No local offers found
       personal_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       remote_anchor:
         one: Online and telephone (%{count})
         other: Online and telephone (%{count})
@@ -776,10 +776,10 @@ en:
         other: "%{count} remote offers"
         zero: No remote offers
       remote_offers_new:
-        _query:
-        category:
-        category_query:
-        default:
+        _query: 
+        category: 
+        category_query: 
+        default: 
       show_personal: Show local offers
     shared:
       current_and_original_locale:
@@ -900,7 +900,9 @@ en:
         portal: address list
   layouts:
     modal_create:
-      success:
+      js:
+        erb:
+          success: Email successfully entered!
     partials:
       banner:
         teaser:
@@ -911,7 +913,7 @@ en:
         about: About us
         blog: Blog
         contact: Contact
-        facebook-family:
+        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: FAQ
@@ -945,8 +947,7 @@ en:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
-        send:
-        more_information_overlay: 'Sorry. Unfortunately, there are no advisers for your search. But we are trying to add to our service all the time. We will let you know as soon as there is more information on clarat about your search. Please enter your email address here. '
+        send: 
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
         legal_title: Legal text can only be read in German.
@@ -973,7 +974,7 @@ en:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2:
+            2017-07-17, visits=2: 
             family: "‹ to clarat refugees"
             refugees: "‹ to clarat family"
           mobile:
@@ -981,21 +982,17 @@ en:
               family: to the <span class="top-bar__emphasis">clarat family</span> homepage
               refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
             switch:
-              2017-07-17, visits=2:
+              2017-07-17, visits=2: 
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-    modal_create:
-      js:
-        erb:
-          success:
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1057,12 +1054,12 @@ en:
           long: Support services and programmes connected with...
           short: Support services about  …
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Entry last modified on
       next_steps:
         code_word: 'This is what the service provider calls this support service:'
@@ -1082,19 +1079,19 @@ en:
         explanation:
           accessibility: That means you can come here if you're in a wheelchair. Or if you have a pushchair or a pram.
           anonymous: That means you won't have to tell anyone your name.
-          charged:
+          charged: 
           confidential: That means the staff won't tell anybody-else anything you tell them.
-          day_and_night:
-          free:
+          day_and_night: 
+          free: 
         title:
           accessibility: disabled and pushchair access
           anonymous: anonymous
           charged: for a fee
           confidential: confidential
           day_and_night: day and night
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: free of charge
       trait_filters_headline: Additional information
       website_section:
@@ -1259,7 +1256,7 @@ en:
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      meta_description:
+      meta_description: 
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. She makes sure our website is up-to-date. Her favourite song is "Me in You" by Kings of Convenience.
@@ -1353,11 +1350,11 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
         refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
       meta_title:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: Find help easily | clarat family
         refugees: Find help easily | clarat refugees
       title:
@@ -1492,6 +1489,7 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
+    widget: 
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1510,15 +1508,15 @@ en:
     hints:
       contact:
         new:
-          email:
-          name:
+          email: 
+          name: 
         show:
-          email:
-          name:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1542,4 +1540,4 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
-      placeholder:
+      placeholder: 

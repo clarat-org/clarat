@@ -25,6 +25,10 @@ class PagesController < ApplicationController
     render status: 404, formats: [:html]
   end
 
+  def widget
+    render layout: 'widget'
+  end
+
   def section_forward
     split_path = request.fullpath.split('/', -1)
     insertion_index = split_path.last == params['locale'] ? -1 : -2

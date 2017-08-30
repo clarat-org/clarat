@@ -32,7 +32,7 @@ describe OrganizationsController do
       end
 
       it 'shouldnt show on unapproved orga' do
-        orga = FactoryGirl.create :organization, :with_offer
+        orga = FactoryGirl.create :organization
         get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to controller: 'pages', action: 'not_found'
       end

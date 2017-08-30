@@ -20,19 +20,31 @@ FactoryGirl.define do
         "Raum #{rand(1..20)}"
       ].sample
     end
-    federal_state_id (FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')).id
-    city_id (City.all.to_a.sample || City.create!(name: 'Berlin')).id
     display_name 'Berlin'
-
 
     # associations
     organization
-    # federal_state do
-    #   FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
-    # end
-    # city do
-    #   City.all.to_a.sample || City.create!(name: 'Berlin')
-    # end
+    federal_state
+    city
+    #association :federal_state, factory: :federal_state
+    #association :city, factory: :city
+
+    transient do
+      offer_count 1
+    end
+
+    after :build do |location, evaluator|
+      # Locations
+      #create_list(:offer, evaluator.offer_count, location_id: location.id)
+
+      # if evaluator.location_count.positive?
+      #   orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
+      # end
+      # if evaluator.location_count > 1
+      #   create_list :location, (evaluator.location_count - 1),
+      #               organization: orga, hq: false
+      # end
+    end
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }

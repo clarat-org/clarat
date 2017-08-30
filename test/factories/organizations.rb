@@ -16,10 +16,12 @@ FactoryGirl.define do
     mailings 'enabled'
     created_by { FactoryGirl.create(:researcher).id }
     website { FactoryGirl.create(:website, host: 'own') }
+    #offers []
 
     # associations
     transient do
       location_count 1
+      #offer_count 1
     end
 
     after :build do |orga|
@@ -32,7 +34,7 @@ FactoryGirl.define do
 
     after :create do |orga, evaluator|
       # Locations
-      create_list(:location, evaluator.location_count, organization_id: orga.id, hq: false)
+      #create_list(:location, evaluator.location_count, organization_id: orga.id, hq: false)
 
       # if evaluator.location_count.positive?
       #   orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
@@ -60,7 +62,11 @@ FactoryGirl.define do
 
     trait :with_offer do
       after :create do |orga, _evaluator|
-        FactoryGirl.create :offer, organization: orga
+        binding.pry
+        offer = FactoryGirl.create :offer
+        orga.offers << offer
+        #binding.pry
+        #FactoryGirl.create :offer, organization: orga
       end
     end
   end

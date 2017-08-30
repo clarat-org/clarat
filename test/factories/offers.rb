@@ -14,6 +14,7 @@ FactoryGirl.define do
     area { Area.first unless encounter == 'personal' }
     approved_at nil
     code_word { maybe FFaker::Lorem.words(rand(1..3)).join(' ').titleize }
+    location
 
     # associations
 
@@ -33,18 +34,18 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       organization =
-      offer.organizations[0] || FactoryGirl.create(:organization, :approved)
+        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
 
       # location
-      if offer.personal?
-        location =  if evaluator.fake_address
-                      FactoryGirl.create(:location, :fake_address,
-                                         organization_id: organization.id)
-                    else
-                      FactoryGirl.create(:location, organization_id: organization.id)
-                    end
-        offer.location_id = location.id
-      end
+      # if offer.personal?
+      #   location =  if evaluator.fake_address
+      #                 FactoryGirl.create(:location, :fake_address,
+      #                                    organization_id: organization.id)
+      #               else
+      #                 FactoryGirl.create(:location, organization_id: organization.id)
+      #               end
+      #   offer.location_id = location.id
+      # end
       # Filters
       section = evaluator.section
       offer.section =

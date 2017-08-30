@@ -25,7 +25,11 @@ class PagesController < ApplicationController
     render status: 404, formats: [:html]
   end
 
-  def widget
+  def widget_swaf
+    render layout: 'widget'
+  end
+
+  def widget_hg
     render layout: 'widget'
   end
 

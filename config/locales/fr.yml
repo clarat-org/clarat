@@ -1015,6 +1015,8 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1418,6 +1420,10 @@ fr:
     update_requests: update_requests
     users: utilisateur
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

@@ -986,6 +986,8 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1490,6 +1492,10 @@ en:
     update_requests: update_requests
     users: users
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Please fill out this field

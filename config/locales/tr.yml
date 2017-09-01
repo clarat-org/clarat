@@ -943,6 +943,8 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1355,6 +1357,10 @@ tr:
     update_requests: update_request
     users: kullanıcılar
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

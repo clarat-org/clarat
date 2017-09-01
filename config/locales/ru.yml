@@ -1051,6 +1051,8 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1459,6 +1461,10 @@ ru:
     update_requests: обновить-запросы
     users: пользователь
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

@@ -993,6 +993,8 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1387,6 +1389,10 @@ fa:
     update_requests: update_requests
     users: کاربر
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

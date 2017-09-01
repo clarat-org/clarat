@@ -936,6 +936,8 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1348,6 +1350,10 @@ ar:
     update_requests: طلبات-تحديث
     users: مستخدم
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

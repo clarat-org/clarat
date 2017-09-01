@@ -1418,6 +1418,8 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1887,6 +1889,10 @@ de:
     update_requests: update_requests
     users: nutzer
     widget: widget
+    widget-handbook-germany: widget-handbook-germany
+    widget-hg: widget-hg
+    widget-start-with-a-friend: widget-start-with-a-friend
+    widget-swaf: widget-swaf
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

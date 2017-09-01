@@ -1059,6 +1059,8 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1466,6 +1468,10 @@ pl:
     update_requests: odśwież
     users: użytkownicy
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

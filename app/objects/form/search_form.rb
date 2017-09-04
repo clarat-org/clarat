@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 # Form object to render form elements and links. Rest is handled in JS.
 class SearchForm
+  include ActiveModel::Model
   # Turn into quasi ActiveModel #
   extend ActiveModel::Naming
   include Virtus.model

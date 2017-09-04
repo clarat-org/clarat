@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 require_relative '../test_helper'
 
+class SearchForm < ActiveSupport::TestCase
+  attr_accessor :search_location, :generated_geolocation
+end
+
 feature 'Search Form' do
   scenario 'Valid search displays an empty page (that is later filled by JS)' do
     visit home_path(section: :family)

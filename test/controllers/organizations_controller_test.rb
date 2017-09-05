@@ -8,7 +8,7 @@ describe OrganizationsController do
         orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         offer.organizations << orga
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -18,7 +18,7 @@ describe OrganizationsController do
         Organization.any_instance.expects(:sections).returns(
           Section.where(identifier: 'family')
         ).twice
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
       end
@@ -27,18 +27,18 @@ describe OrganizationsController do
         orga = FactoryGirl.create :organization, :approved
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         offer.organizations << orga
-        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to section: 'family'
       end
 
       it 'shouldnt show on unapproved orga' do
         orga = FactoryGirl.create :organization
-        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees'}
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
 
       it 'should redirect to 404 if orga not found' do
-        get :show, id: 'doesntexist', locale: 'de', section: 'family'
+        get :show, params: { id: 'doesntexist', locale: 'de', section: 'family' }
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
     end
@@ -49,7 +49,7 @@ describe OrganizationsController do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         offer.organizations << orga
         orga.update_columns aasm_state: 'all_done'
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -60,7 +60,7 @@ describe OrganizationsController do
         Organization.any_instance.expects(:sections).returns(
           Section.where(identifier: 'family')
         ).twice
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family'}
         assert_response :success
         assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
       end
@@ -70,7 +70,7 @@ describe OrganizationsController do
         orga.update_columns aasm_state: 'all_done'
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         offer.organizations << orga
-        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to section: 'family'
       end
     end
@@ -82,7 +82,7 @@ describe OrganizationsController do
       Organization.any_instance.expects(:sections).returns(
         Section.all
       )
-      get :section_forward, id: orga.slug, locale: 'de'
+      get :section_forward, params: { id: orga.slug, locale: 'de' }
       assert_redirected_to controller: 'organizations', action: 'show',
                            section: Section::DEFAULT
     end
@@ -92,7 +92,7 @@ describe OrganizationsController do
       Organization.any_instance.expects(:sections).returns(
         Section.where(identifier: 'family')
       )
-      get :section_forward, id: orga.slug, locale: 'de'
+      get :section_forward, params: { id: orga.slug, locale: 'de' }
       assert_redirected_to controller: 'organizations', action: 'show',
                            section: 'family'
     end
@@ -102,7 +102,7 @@ describe OrganizationsController do
       Organization.any_instance.expects(:sections).returns(
         Section.where(identifier: 'refugees')
       )
-      get :section_forward, id: orga.slug, locale: 'de'
+      get :section_forward, params: { id: orga.slug, locale: 'de' }
       assert_redirected_to controller: 'organizations', action: 'show',
                            section: 'refugees'
     end

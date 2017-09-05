@@ -5,7 +5,7 @@ class DynamicSitemapsController < ApplicationController
     sitemap = ::Sitemap.find_by(path: request.path[1..-1])
 
     if sitemap
-      render text: sitemap.content
+      render plain: sitemap.content
     else
       goto_404
     end

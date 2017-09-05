@@ -5,7 +5,7 @@ require_relative '../test_helper'
 class OffersHelperTest < ActionView::TestCase
   include OffersHelper
 
-  let(:offer) { FactoryGirl.create(:offer) }
+  let(:offer) { offers(:basic) }
 
   describe '#tel_format' do
     it 'should format a phone number' do
@@ -33,9 +33,8 @@ class OffersHelperTest < ActionView::TestCase
 
   describe '#offer_with_contacts' do
     before do
-      offer.contact_people << FactoryGirl.create(:contact_person, :all_fields, :with_telephone, organization: offer.organizations.first)
-      offer.contact_people.first.update_attributes last_name: 'two'
-      offer.contact_people.last.update_attributes last_name: 'one'
+      offer.contact_people.first.update_columns last_name: 'two'
+      offer.contact_people.last.update_columns last_name: 'one'
     end
 
     it 'orders contacts alphabetically by last name' do
@@ -52,7 +51,7 @@ class OffersHelperTest < ActionView::TestCase
 
     describe 'with no spoc contact and hidden contacts' do
       before do
-        offer.assign_attributes hide_contact_people: true
+        offer.update_columns hide_contact_people: true
       end
 
       it 'should equal false' do
@@ -62,8 +61,8 @@ class OffersHelperTest < ActionView::TestCase
 
     describe 'with a spoc contact and hidden contacts' do
       before do
-        offer.assign_attributes hide_contact_people: true
-        offer.contact_people.first.assign_attributes spoc: true
+        offer.update_columns hide_contact_people: true
+        offer.contact_people.first.update_columns spoc: true
       end
 
       it 'should equal true' do
@@ -73,7 +72,7 @@ class OffersHelperTest < ActionView::TestCase
 
     describe 'with a spoc contact and no hidden contacts' do
       before do
-        offer.contact_people.first.assign_attributes spoc: true
+        offer.contact_people.first.update_columns spoc: true
       end
       it 'should equal true' do
         display_contacts?(offer, offer.contact_people.first).must_equal true
@@ -83,14 +82,14 @@ class OffersHelperTest < ActionView::TestCase
 
   describe '#contact_name' do
     describe 'with only the operational name present' do
-      before { offer.contact_people.first.assign_attributes gender: '', last_name: '', first_name: '', operational_name: 'CEO' }
+      before { offer.contact_people.first.update_columns gender: '', last_name: '', first_name: '', operational_name: 'CEO' }
       it "should return the name as 'CEO'" do
         contact_name(offer.contact_people.first).must_equal 'CEO'
       end
     end
 
     describe 'with the first name present' do
-      before { offer.contact_people.first.assign_attributes gender: 'female', last_name: '', first_name: 'Jane', operational_name: 'CEO' }
+      before { offer.contact_people.first.update_columns gender: 'female', last_name: '', first_name: 'Jane', operational_name: 'CEO' }
       it "should return the name as 'Jane'" do
         contact_name(offer.contact_people.first).must_equal 'Jane'
       end
@@ -98,7 +97,7 @@ class OffersHelperTest < ActionView::TestCase
 
     describe 'with the full name present' do
       describe 'with no gender or academic title present' do
-        before { offer.contact_people.first.assign_attributes gender: '', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
+        before { offer.contact_people.first.update_columns gender: '', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
         it "should return the name as 'Jane'" do
           contact_name(offer.contact_people.first).must_equal 'Jane Doe'
         end
@@ -106,7 +105,7 @@ class OffersHelperTest < ActionView::TestCase
 
       describe 'with a gender and no academic title present' do
         before do
-          offer.contact_people.first.assign_attributes gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO'
+          offer.contact_people.first.update_columns gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO'
         end
         it "should return 'Frau Jane Doe'" do
           contact_name(offer.contact_people.first).must_equal 'Frau Jane Doe'
@@ -114,7 +113,7 @@ class OffersHelperTest < ActionView::TestCase
       end
 
       describe 'with a gender and an academic title present' do
-        before { offer.contact_people.first.assign_attributes gender: 'female', academic_title: 'prof_dr', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
+        before { offer.contact_people.first.update_columns gender: 'female', academic_title: 'prof_dr', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
         it "should return 'Frau Prof. Dr. Jane Doe'" do
           contact_name(offer.contact_people.first).must_equal 'Frau Prof. Dr. Jane Doe'
         end
@@ -123,7 +122,7 @@ class OffersHelperTest < ActionView::TestCase
   end
 
   describe '#contact_gender' do
-    before { offer.contact_people.first.assign_attributes gender: 'female' }
+    before { offer.contact_people.first.update_columns gender: 'female' }
 
     it "should return the gender as 'Frau'" do
       contact_gender(offer.contact_people.first).must_equal 'Frau '
@@ -131,7 +130,7 @@ class OffersHelperTest < ActionView::TestCase
   end
 
   describe '#contact_academic_title' do
-    before { offer.contact_people.first.assign_attributes academic_title: 'prof_dr' }
+    before { offer.contact_people.first.update_columns academic_title: 'prof_dr' }
 
     it "should return the gender as 'Frau'" do
       contact_academic_title(offer.contact_people.first).must_equal 'Prof. Dr. '
@@ -140,7 +139,7 @@ class OffersHelperTest < ActionView::TestCase
 
   describe '#contact_full_name' do
     describe 'with first and last name present' do
-      before { offer.contact_people.first.assign_attributes first_name: 'Jane', last_name: 'Doe' }
+      before { offer.contact_people.first.update_columns first_name: 'Jane', last_name: 'Doe' }
 
       it "should return the full name as 'Jane Doe'" do
         contact_full_name(offer.contact_people.first).must_equal 'Jane Doe'
@@ -148,7 +147,7 @@ class OffersHelperTest < ActionView::TestCase
     end
 
     describe 'with only the last name present' do
-      before { offer.contact_people.first.assign_attributes first_name: '', last_name: 'Doe' }
+      before { offer.contact_people.first.update_columns first_name: '', last_name: 'Doe' }
 
       it "should return 'Doe'" do
         contact_full_name(offer.contact_people.first).must_equal 'Doe'
@@ -156,7 +155,7 @@ class OffersHelperTest < ActionView::TestCase
     end
 
     describe 'with only the first name present' do
-      before { offer.contact_people.first.assign_attributes first_name: 'Jane', last_name: '' }
+      before { offer.contact_people.first.update_columns first_name: 'Jane', last_name: '' }
 
       it 'should return nil' do
         assert_nil contact_full_name(offer.contact_people.first)

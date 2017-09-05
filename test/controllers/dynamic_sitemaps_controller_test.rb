@@ -6,13 +6,13 @@ describe DynamicSitemapsController do
 
   it 'must work' do
     request.stubs(:path).returns('/sitemaps/site.xml')
-    get :sitemap, sitemaps: sitemap.path, use_route: 'sitemaps'
+    get :sitemap, params: { sitemaps: sitemap.path, use_route: 'sitemaps' }
     assert_response :success
     response.body.must_equal 'foo'
   end
 
   it 'wont work without sitemap' do
-    get :sitemap, sitemaps: 'doesntexist', use_route: 'sitemaps'
+    get :sitemap, params: { sitemaps: 'doesntexist', use_route: 'sitemaps' }
     assert_redirected_to '/404'
   end
 end

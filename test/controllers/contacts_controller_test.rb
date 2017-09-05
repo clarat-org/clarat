@@ -13,7 +13,7 @@ describe ContactsController do
   describe 'GET power user popup contact form' do
     it 'should work' do
       session[:url] = 'localhost:3000/family'
-      get :new, popup: true, params: { locale: 'de', section: 'family' }
+      get :new, params: { popup: true, locale: 'de', section: 'family' }
       assert_response :success
       assert_template :popup
     end

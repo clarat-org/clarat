@@ -4,7 +4,7 @@ require_relative '../test_helper'
 describe SubscriptionsController do
   describe "GET 'new'" do
     it 'should work' do
-      xhr :get, :new, locale: 'de'
+      xhr :get, :new, params: { locale: 'de' }
       assert_response :success
       assert_template :new
     end
@@ -22,8 +22,9 @@ describe SubscriptionsController do
 
     it 'should not work with invalid email' do
       assert_difference('Subscription.count', 0) do
-        post :create, locale: 'de', format: :js,
+        post :create, params: { locale: 'de', format: :js,
                       subscription: { email: 'not a mail' }
+                    }
       end
       assert_template :new
       # assert_redirected_to :root

@@ -9,4 +9,7 @@ basic:
   location_id: 1
   created_by: 1
   approved_by: 2
+  split_base_id: 1
+  logic_version_id: 1
   section_id: 1
+  solution_category_id: 1

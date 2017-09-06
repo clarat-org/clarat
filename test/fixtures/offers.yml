@@ -13,3 +13,6 @@ basic:
   logic_version_id: 1
   section_id: 1
   solution_category_id: 1
+  split_base_id: 1
+  contact_people: [ contact_one ]
+

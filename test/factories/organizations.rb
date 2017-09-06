@@ -10,6 +10,7 @@ FactoryGirl.define do
       Organization.enumerized_attributes.attributes['legal_form'].values.sample
     end
     charitable { FFaker::Boolean.maybe }
+    website { FactoryGirl.create(:website, host: 'own') }
 
     # optional
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
@@ -62,11 +63,8 @@ FactoryGirl.define do
 
     trait :with_offer do
       after :create do |orga, _evaluator|
-        binding.pry
         offer = FactoryGirl.create :offer
-        orga.offers << offer
-        #binding.pry
-        #FactoryGirl.create :offer, organization: orga
+        offer.split_base.divisions.first.update_columns organization_id: orga.id
       end
     end
   end

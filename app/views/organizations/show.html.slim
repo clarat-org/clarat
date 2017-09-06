@@ -18,7 +18,7 @@
           == automation_warning(@organization.translation_automated?)
         .section-content__body.section-content--what
           == translation_block @organization.translation_automated? do
-            == @organization.description
+            == @organization.translated_description
       - if @organization.offers.visible_in_frontend.any?
         section.section-content.section-content--alloffers
           h3.section-content__title

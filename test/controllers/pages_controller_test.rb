@@ -49,6 +49,20 @@ describe PagesController do
     end
   end
 
+  describe "GET 'widget-start-with-a-friend'" do
+    it 'should work' do
+      get :widget_swaf, params: { locale: 'de', section: 'refugees' }
+      assert_response :success
+    end
+  end
+
+  describe "GET 'widget-handbook-germany'" do
+    it 'should work' do
+      get :widget_hg, params: { locale: 'de', section: 'refugees' }
+      assert_response :success
+    end
+  end
+
   describe "GET 'not_found'" do
     it 'should work' do
       get :not_found, params: { locale: 'de' }

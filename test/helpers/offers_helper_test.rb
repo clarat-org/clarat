@@ -19,26 +19,39 @@ class OffersHelperTest < ActionView::TestCase
     end
 
     it 'should produce the correct string with children' do
-      category_list_classes(1, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--1 has-children'
+      category_list_classes(1, [[FactoryGirl.create(:category)]], 'refugees')
+        .must_equal 'depth--1 has-children'
     end
 
     it 'should neglect having children when the depth is greater 3' do
-      category_list_classes(4, [[FactoryGirl.create(:category)]], 'refugees').must_equal 'depth--4 '
+      category_list_classes(4, [[FactoryGirl.create(:category)]], 'refugees')
+        .must_equal 'depth--4 '
     end
 
     it 'should produce the correct string with invisible children' do
-      category_list_classes(1, [[FactoryGirl.create(:category, visible: false)]], 'refugees').must_equal 'depth--1 '
+      category_list_classes(
+        1, [[FactoryGirl.create(:category, visible: false)]], 'refugees'
+      ).must_equal 'depth--1 '
     end
   end
 
   describe '#offer_with_contacts' do
     before do
-      offer.contact_people.first.update_columns last_name: 'two'
-      offer.contact_people.last.update_columns last_name: 'one'
+      offer.contact_people = [
+        FactoryGirl.create(
+          :contact_person, :all_fields, :with_telephone,
+          organization: offer.organizations.first, last_name: 'two'
+        ),
+        FactoryGirl.create(
+          :contact_person, :all_fields, :with_telephone,
+          organization: offer.organizations.first, last_name: 'one'
+        )
+      ]
     end
 
     it 'orders contacts alphabetically by last name' do
-      offer_with_contacts(offer).first.last_name.must_equal 'one'
+      last_names = offer.contact_people.pluck(:last_name).sort
+      offer_with_contacts(offer).first.last_name.must_equal(last_names.first)
     end
   end
 
@@ -104,9 +117,7 @@ class OffersHelperTest < ActionView::TestCase
       end
 
       describe 'with a gender and no academic title present' do
-        before do
-          offer.contact_people.first.update_columns gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO'
-        end
+        before { offer.contact_people.first.update_columns gender: 'female', academic_title: '', last_name: 'Doe', first_name: 'Jane', operational_name: 'CEO' }
         it "should return 'Frau Jane Doe'" do
           contact_name(offer.contact_people.first).must_equal 'Frau Jane Doe'
         end

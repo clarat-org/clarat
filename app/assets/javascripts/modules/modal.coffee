@@ -10,5 +10,8 @@ Clarat.Modal =
   open: (selector) ->
     $(selector).popup 'show'
 
+  close: (selector) ->
+    $(selector).popup 'hide'
+
 $(document).ready Clarat.Modal.initializeAllModals
 $(document).on 'page:load', Clarat.Modal.initializeAllModals

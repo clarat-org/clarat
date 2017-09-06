@@ -50,7 +50,7 @@ tr:
           link_1:
             name: videoda
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Clarat nedir?
         question_10:
@@ -524,10 +524,12 @@ tr:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -535,6 +537,7 @@ tr:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -564,6 +567,7 @@ tr:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -591,6 +595,7 @@ tr:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
         dje: 
@@ -696,6 +701,8 @@ tr:
         categories: Kategoriler
         filter: filtre
         map: Harita
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: için
       enclosing: bulundu
@@ -777,7 +784,7 @@ tr:
         fra: Fransızca - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Gürcü - ქართული
         hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
@@ -850,6 +857,10 @@ tr:
         personal: Kişisel
         portal: Adres listesi
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
@@ -871,6 +882,7 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
@@ -883,6 +895,7 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        more_information_overlay: 
         popup:
           button: 
           email_placeholder: E-Mail Adresi *
@@ -891,6 +904,7 @@ tr:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: İsim *
           text: 
+        send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.
@@ -1097,8 +1111,6 @@ tr:
     about:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
-      anja: 
-      ann-sophie: 
       anna: 
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
@@ -1138,7 +1150,6 @@ tr:
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
       magdalena: 
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
-      marie: 
       meta_description: 
       michaela: 
       nahla: 
@@ -1348,6 +1359,7 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    widget: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1403,3 +1415,4 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+      placeholder: 

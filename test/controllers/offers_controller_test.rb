@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe OffersController do
@@ -28,6 +29,18 @@ describe OffersController do
       it 'should redirect to 404 if offer not found' do
         get :show, params: { id: 'doesntexist', locale: 'de', section: 'family' }
         assert_redirected_to controller: 'pages', action: 'not_found'
+      end
+
+      it 'should set the session cookie in the family section when none exists' do
+        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        get :show, id: offer.slug, locale: 'de', section: 'family'
+        assert_includes(cookies['session'], 'user_popup')
+      end
+
+      it "shouldn't set the session cookie in the refugees section" do
+        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
+        get :show, id: offer.slug, locale: 'de', section: 'refugees'
+        assert_nil(cookies['session'], 'user_popup')
       end
     end
 

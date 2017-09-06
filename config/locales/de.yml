@@ -72,7 +72,7 @@ de:
           link_1:
             name: Film
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Was ist clarat?
         question_10:
@@ -970,10 +970,12 @@ de:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: Dje
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: Ewe
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -981,6 +983,7 @@ de:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: Gej
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -1010,6 +1013,7 @@ de:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: Run
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -1037,6 +1041,7 @@ de:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: Xxx
         zho: Zho
         zza: Zza
         dje: Dje
@@ -1142,6 +1147,8 @@ de:
         categories: Kategorien
         filter: Filter
         map: Karte
+      more_info_button: Zum Ratgeber
+      more_info_text: 'Mehr Informationen zu:'
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1253,7 +1260,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
@@ -1326,6 +1333,10 @@ de:
         personal: Persönlich
         portal: Adressliste
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
     partials:
       banner:
         teaser:
@@ -1347,6 +1358,7 @@ de:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impressum
+        plus: clarat plus
         privacy: Datenschutzhinweise
         tos: Rechtliche Hinweise
         twitter:
@@ -1361,6 +1373,7 @@ de:
             Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
             Hast du etwas gesehen, das wir besser machen können? Oder
             funktioniert etwas nicht richtig? Dann
+        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
         popup:
           button: Ja, bitte
           email_placeholder: E-Mail-Adresse *
@@ -1369,6 +1382,7 @@ de:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+        send: 
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
           oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
@@ -1577,8 +1591,6 @@ de:
         entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
-      anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
-      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
       anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
@@ -1639,7 +1651,6 @@ de:
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
-      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
       meta_description: Das ist das Team hinter Deutschlands Hilfeverzeichnis. Mehr als 40 Kollegen arbeiten täglich daran, dass Du einfach Hilfe findest.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
@@ -1880,6 +1891,7 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    widget: widget
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1934,3 +1946,4 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+      placeholder: 

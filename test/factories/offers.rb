@@ -19,8 +19,6 @@ FactoryGirl.define do
     # associations
 
     transient do
-      #organization_count 1
-      organizations []
       contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
@@ -33,8 +31,9 @@ FactoryGirl.define do
     end
 
     after :build do |offer, evaluator|
-      organization =
-        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
+      # SplitBase => Division(s) => Organization(s)
+      offer.split_base = FactoryGirl.create(:split_base)
+      organization = offer.organizations[0]
 
       # location
       # if offer.personal?
@@ -139,7 +138,7 @@ FactoryGirl.define do
             OrganizationTranslation.create(
               organization_id: organization.id, locale: locale,
               source: 'GoogleTranslate',
-              description: "#{locale}(#{organization.untranslated_description})"
+              description: "#{locale}(#{organization.description})"
             )
           end
         end
@@ -149,10 +148,10 @@ FactoryGirl.define do
     trait :with_markdown do
       after :create do |offer, _evaluator|
         offer.update_column :description, MarkdownRenderer.render(
-          offer.untranslated_description
+          offer.description
         )
         offer.update_column :old_next_steps, MarkdownRenderer.render(
-          offer.untranslated_old_next_steps
+          offer.old_next_steps
         )
       end
     end

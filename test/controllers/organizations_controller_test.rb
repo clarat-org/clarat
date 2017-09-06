@@ -5,10 +5,10 @@ describe OrganizationsController do
   describe "GET 'show'" do
     describe 'for an approved orga' do
       it 'should work (with friendly id)' do
-        orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
         offer = FactoryGirl.create :offer, :approved, section: 'family'
-        offer.organizations << orga
-        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
+        orga = offer.organizations.first
+        orga.update_columns name: 'bazfuz'
+        get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -24,10 +24,9 @@ describe OrganizationsController do
       end
 
       it 'should redirect if the wrong section was given' do
-        orga = FactoryGirl.create :organization, :approved
         offer = FactoryGirl.create :offer, :approved, section: 'family'
-        offer.organizations << orga
-        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
+        orga = offer.organizations.first
+        get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to section: 'family'
       end
 
@@ -45,11 +44,10 @@ describe OrganizationsController do
 
     describe 'for an all_done orga' do
       it 'should work (with friendly id)' do
-        orga = FactoryGirl.create :organization, :approved, name: 'bazfuz'
         offer = FactoryGirl.create :offer, :approved, section: 'family'
-        offer.organizations << orga
-        orga.update_columns aasm_state: 'all_done'
-        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
+        orga = offer.organizations.first
+        orga.update_columns aasm_state: 'all_done', name: 'bazfuz'
+        get :show, id: orga.slug, locale: 'de', section: 'family'
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -66,11 +64,10 @@ describe OrganizationsController do
       end
 
       it 'should redirect if the wrong section was given' do
-        orga = FactoryGirl.create :organization, :approved
-        orga.update_columns aasm_state: 'all_done'
         offer = FactoryGirl.create :offer, :approved, section: 'family'
-        offer.organizations << orga
-        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
+        orga = offer.organizations.first
+        orga.update_columns aasm_state: 'all_done'
+        get :show, id: orga.slug, locale: 'de', section: 'refugees'
         assert_redirected_to section: 'family'
       end
     end

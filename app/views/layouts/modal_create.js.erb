@@ -1,1 +1,13 @@
 $('.Contact-Submit').trigger('ContactForm::CreateSuccess');
+
+// temporay solution for user popup
+Clarat.Modal.close('#more_information_overlay')
+Clarat.Modal.close('#unavailable_location_overlay')
+$('.JS-Single-Click-Button').removeClass('JS-Single-Click-Button__active')
+$('body').prepend(
+  "<%=
+    j render 'layouts/partials/flash',
+             type: 'success',
+             content: t('.success')
+  %>"
+);

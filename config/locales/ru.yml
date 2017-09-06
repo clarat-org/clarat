@@ -61,7 +61,7 @@ ru:
           link_1:
             name: фильме
             target: _blank
-            url: http://blog.clarat.org/einfach-hilfe-finden-unser-projekt-clarat-im-kurzfilm/
+            url: https://plus.clarat.org/magazin/clarat.org-kurz-erklart/
             var: link_to_family_movie
           question: Что значит clarat?
         question_10:
@@ -624,10 +624,12 @@ ru:
         cze: Cze
         dan: Dan
         deu: Deu
+        dje: 
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
+        ewe: 
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -635,6 +637,7 @@ ru:
         fra: Fra
         fuf: Fuf
         ful: Ful
+        gej: 
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -664,6 +667,7 @@ ru:
         pus: Pus
         rom: Rom
         ron: Ron
+        run: 
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -691,6 +695,7 @@ ru:
         uzb: Uzb
         vie: Vie
         wol: Wol
+        xxx: 
         zho: Zho
         zza: Zza
         dje: 
@@ -796,6 +801,8 @@ ru:
         categories: категории
         filter: Фильтр
         map: карта
+      more_info_button: 
+      more_info_text: 
     search_results:
       bridge: для
       enclosing: найдено
@@ -887,7 +894,7 @@ ru:
         fra: Французский язык - Français
         fuf: Пулар-Пулар
         ful: Ful - Fulfulde
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: грузинский - ქართული
         hau: Хаусский язык - Hausanci
         hbs: Черногорский язык - Crnogorski jezik / Црногорски језик
@@ -960,6 +967,10 @@ ru:
         personal: Персонально
         portal: Список адресов
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
@@ -981,6 +992,7 @@ ru:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Импрессум
+        plus: clarat plus
         privacy: Правила конфиденциальности
         tos: юридические указания
         twitter:
@@ -995,6 +1007,7 @@ ru:
             предложения для других городов. Мы будем рады твоей помощи:
             ты что-либо заметил, что нам стоит улучшить? Или что-то
             рабоатет не правильно? Тогда
+        more_information_overlay: 
         popup:
           button: Да, пожалуйста
           email_placeholder: E-Mail адрес *
@@ -1003,6 +1016,7 @@ ru:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Имя *
           text: Скажите, что мы можем улучшить. Или то, что тебе действительно нравится. Мы будем рады созвониться с тобой. Можно выслать тебе E-Mail с деталями?
+        send: 
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
         legal_title: Юридический текст clarat можно читать только на немецком языке.
@@ -1208,8 +1222,6 @@ ru:
     about:
       amina: Амина - социолог. Она много знает об обществе. Она быстро замечает самое важное. В clarat она работает в команде сбора информации. Она решает, как именно будет clarat помогать. Ее любимая песня - La Prima Estate Эрленда Ойа (Erlend Oye).
       andrea: Андреа изучала международный менеджмент. Она многое знает об экономике и культуре. Она работает очень педантично. В clarat она работает в исследовательской команде. Она следит за качеством работы нашей команды. Ее любимая песня Work Me от The Black Keys.
-      anja: 
-      ann-sophie: 
       anna: Она - филолог. Это значит, что она много знает о языках. Кроме того, она знает толк в литературе. Она хорошо разбирается в сложных вещах. В clarat она работает в исследовательской команде. Её любимая песня - 1009 группы Bonobo.
       anne: Она изучала экономику и международные отношения. Она может очень быстро думать логически. Она главная в clarat. Она заботится о всей команде и все организует. Ее любимая песня - Denken Sie Groß группы Deichkind.
       astrid: Она политолог. Она знает много о политике и обществе. У нее всегда отличное настроение и этим она заражает всех вокруг. В clarat она работает в исследовательской команде. Ее любимая песня - You Got Me группы Рутс.
@@ -1249,7 +1261,6 @@ ru:
       lisa: Она специалист по дизайну. Это значит, что она может планировать креативные решения. И прекрасно рисует. В clarat она работает в исследовательской группе и общается с пользователями. Она также выясняет, кто пользуется системой clarat.  Ее любимая песня — Resolution от Matt Corby.
       magdalena: 
       marcus: Маркус Дизайнер по интернету. Это значит, что он умеет программировать и составлять сайты в интернете. Он тоже хорошо умеет планировать. В clarat он работает в команде технической информации. Он заботится о том, чтобы наш сайт в интернете хорошо выглядел. Его любимая песня Hysteria от группы Мьюз (Muse).
-      marie: 
       meta_description: 
       michaela: Она изучала экономическую информатику. Она может воодушевлять других людей. И она хорошо разбирается в новых СМИ. В clarat она работает в исследовательской группе и обеспечивает хорошую работу нашего сайта. Ее любимая песня — Digital Love от Daft Punk.
       nahla: Она археолог. Он много знает об истории людей. Он может быстро работать. В clatrat она работает в команде переводчиков и переводит clarat на арабский язык.  Ее любимая песня — Nassam Allina El Hawa от Fayrouz.
@@ -1452,6 +1463,7 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
+    widget: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле
@@ -1502,3 +1514,4 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
+      placeholder: 

@@ -69,6 +69,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
   # Geolocation Display Input focussed
   handleFocussedLocationInput: (event) =>
+    $('.JS-Geolocation__display').select()
     unless @preventLocationByBrowserPrompt or @promptIsInUse
       @promptIsInUse = true
 

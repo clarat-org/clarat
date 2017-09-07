@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170802094621) do
+ActiveRecord::Schema.define(version: 20170809115013) do
 
   create_table "absences", force: :cascade do |t|
     t.date "starts_at", null: false
@@ -78,13 +78,6 @@ ActiveRecord::Schema.define(version: 20170802094621) do
     t.text "explanations_ar"
     t.text "explanations_fa"
     t.index ["name_de"], name: "index_categories_on_name_de"
-  end
-
-  create_table "categories_filters", id: false, force: :cascade do |t|
-    t.integer "filter_id", null: false
-    t.integer "category_id", null: false
-    t.index ["category_id"], name: "index_filters_categories_on_category_id"
-    t.index ["filter_id"], name: "index_filters_categories_on_filter_id"
   end
 
   create_table "categories_offers", id: false, force: :cascade do |t|

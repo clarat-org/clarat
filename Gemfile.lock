@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 57db0b364efb65584792411ad1ef3a8e86a9c57e
+  revision: 35d6dd3e3119bc016876f21fb0b1459d2fbf226b
   branch: feature/975-rails-5-upgrade
   specs:
     clarat_base (0.1.4)

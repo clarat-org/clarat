@@ -14,7 +14,7 @@ describe SubscriptionsController do
     it 'should work with valid email' do
       attrs = FactoryGirl.attributes_for :subscription
       assert_difference('Subscription.count', 1) do
-        post :create, locale: 'de', format: :js, subscription: attrs
+        post :create, params: { locale: 'de', format: :js, subscription: attrs }
       end
       assert_template :create
       # assert_redirected_to :root

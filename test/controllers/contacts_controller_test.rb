@@ -13,7 +13,7 @@ describe ContactsController do
   describe 'GET power user popup contact form' do
     it 'should work' do
       offer = FactoryGirl.create :offer, :approved, section: 'family'
-      get :new, id: offer.slug, locale: 'de', section: 'family'
+      get :new, params: { id: offer.slug, locale: 'de', section: 'family' }
       assert_response :success
     end
   end
@@ -45,7 +45,7 @@ describe ContactsController do
     end
 
     it 'should not work with empty form data for popup contact form' do
-      post :create, locale: 'de', section: 'refugees', contact: { message: 'Ich möchte an der Umfrage teilnehmen', name: '' }
+      post :create, params: { locale: 'de', section: 'refugees', contact: { message: 'Ich möchte an der Umfrage teilnehmen', name: '' } }
       assert_template 'popup.js'
     end
   end

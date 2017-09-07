@@ -15,4 +15,4 @@ basic:
   solution_category_id: 1
   split_base_id: 1
   contact_people: [ contact_one ]
-
+  slug: basicSlug

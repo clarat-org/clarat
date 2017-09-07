@@ -8,7 +8,7 @@ describe OrganizationsController do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         orga = offer.organizations.first
         orga.update_columns name: 'bazfuz'
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -26,7 +26,7 @@ describe OrganizationsController do
       it 'should redirect if the wrong section was given' do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         orga = offer.organizations.first
-        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to section: 'family'
       end
 
@@ -47,7 +47,7 @@ describe OrganizationsController do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         orga = offer.organizations.first
         orga.update_columns aasm_state: 'all_done', name: 'bazfuz'
-        get :show, id: orga.slug, locale: 'de', section: 'family'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
@@ -67,7 +67,7 @@ describe OrganizationsController do
         offer = FactoryGirl.create :offer, :approved, section: 'family'
         orga = offer.organizations.first
         orga.update_columns aasm_state: 'all_done'
-        get :show, id: orga.slug, locale: 'de', section: 'refugees'
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to section: 'family'
       end
     end

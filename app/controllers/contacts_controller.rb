@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   def create
     referer = request.referer || '/'
-    @contact = Contact.new params.for(Contact).refine
+    @contact = Contact.new contact_params
     if @contact.save
       respond_to do |format|
         format.html do

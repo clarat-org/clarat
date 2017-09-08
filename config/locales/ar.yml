@@ -663,6 +663,8 @@ ar:
         language: اللغة
         sort: رتب حسب
         target_audience: المساعدة لمن؟
+      more_info_button: 'إلى مقدم المشورة:'
+      more_info_text: 'للمزيد من المعلومات حول:'
       option_any: سواء
       pagination:
         back: للخلف
@@ -675,8 +677,6 @@ ar:
         categories: الفئات
         filter: فلتر
         map: خريطة
-      more_info_button: 'إلى مقدم المشورة:'
-      more_info_text: 'للمزيد من المعلومات حول:'
     search_results:
       bridge: من أجل
       enclosing: تم العثور على
@@ -874,6 +874,23 @@ ar:
         twitter:
           anchor: تويتر
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: مساعدة للأطفال والمراهقين و الأسرة
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -883,7 +900,9 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
-        more_information_overlay: عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.
+        more_information_overlay: 'عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.
+
+'
         popup:
           button: نعم؛ من فضلك
           email_placeholder: عنوان البريد الإليكتروني *
@@ -936,6 +955,8 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1328,13 +1349,11 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
-    fr: 
     haeufige-fragen: أسئلة-شائعة
     home: الصفحة الرئيسية
     impressum: هيئة التحرير
     kontakt: إتصال
     liste: القائمة
-    liste-de-services: قائمة الخدمات
     new: جديد
     offers: عروض
     organizations: منظمة
@@ -1348,6 +1367,10 @@ ar:
     update_requests: طلبات-تحديث
     users: مستخدم
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

@@ -1130,6 +1130,8 @@ de:
         language: Sprache
         sort: Sortieren nach
         target_audience: Hilfe für wen?
+      more_info_button: Zum Ratgeber
+      more_info_text: 'Mehr Informationen zu:'
       option_any: egal
       pagination:
         back: Zurück
@@ -1142,8 +1144,6 @@ de:
         categories: Kategorien
         filter: Filter
         map: Karte
-      more_info_button: Zum Ratgeber
-      more_info_text: 'Mehr Informationen zu:'
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1359,6 +1359,23 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Hilfe für Kinder, Jugendliche und Familien
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1418,6 +1435,8 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1867,13 +1886,11 @@ de:
     definitions: definitions
     emails: emails
     faq: haeufige-fragen
-    fr: fr
     haeufige-fragen: haeufige-fragen
     home: home
     impressum: impressum
     kontakt: kontakt
     liste: liste
-    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen
@@ -1887,6 +1904,10 @@ de:
     update_requests: update_requests
     users: nutzer
     widget: widget
+    widget-handbook-germany: widget-handbook-germany
+    widget-hg: widget-hg
+    widget-start-with-a-friend: widget-start-with-a-friend
+    widget-swaf: widget-swaf
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

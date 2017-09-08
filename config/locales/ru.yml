@@ -784,6 +784,8 @@ ru:
         language: Язык
         sort: Сортировка по
         target_audience: Помощь для кого?
+      more_info_button: 
+      more_info_text: 
       option_any: все равно
       pagination:
         back: Назад
@@ -796,8 +798,6 @@ ru:
         categories: категории
         filter: Фильтр
         map: карта
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: для
       enclosing: найдено
@@ -993,6 +993,23 @@ ru:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Предложения о помощи детям, молодежи и семьям
       modal:
         beta_modal:
           link: просто напиши нам E-Mail.
@@ -1051,6 +1068,8 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1439,13 +1458,11 @@ ru:
     definitions: формулировки
     emails: электронные-письма
     faq: Частые-вопросы
-    fr: фр
     haeufige-fragen: Частые-вопросы
     home: главная страница
     impressum: Импрессум
-    kontakt: 
+    kontakt: contact
     liste: список
-    liste-de-services: список-услуг
     new: новый
     offers: предложения
     organizations: орагнизации
@@ -1459,6 +1476,10 @@ ru:
     update_requests: обновить-запросы
     users: пользователь
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

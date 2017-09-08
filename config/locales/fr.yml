@@ -755,6 +755,8 @@ fr:
         language: Langue
         sort: Trier par
         target_audience: De l'aide pour qui?
+      more_info_button: 
+      more_info_text: 
       option_any: égal
       pagination:
         back: Retour
@@ -767,8 +769,6 @@ fr:
         categories: Catégories
         filter: Filtre
         map: Carte
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: pour le terme de recherche
       enclosing: trouvé
@@ -966,6 +966,23 @@ fr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Offres d'aide pour les enfants, les ados et les familles
       modal:
         beta_modal:
           link: écris-nous tout simplement un message
@@ -1015,6 +1032,8 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1398,15 +1417,13 @@ fr:
     definitions: définitions
     emails: adresses-électroniques
     faq: questions-fréquentes
-    fr: fr
     haeufige-fragen: questions-fréquentes
     home: page de démarrage
     impressum: impression
-    kontakt: 
+    kontakt: contact
     liste: liste
-    liste-de-services: iste de services
     new: nouveau
-    offers: offres d'aide
+    offers: offres-d-aide
     organizations: organisations
     preview: preview
     rechtliche-hinweise: informations-juridiques
@@ -1418,6 +1435,10 @@ fr:
     update_requests: update_requests
     users: utilisateur
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

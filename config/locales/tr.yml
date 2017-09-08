@@ -684,6 +684,8 @@ tr:
         language: Dil
         sort: Göre sırala
         target_audience: Kim için destek?
+      more_info_button: 
+      more_info_text: 
       option_any: fark etmez
       pagination:
         back: geri
@@ -696,8 +698,6 @@ tr:
         categories: Kategoriler
         filter: filtre
         map: Harita
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: için
       enclosing: bulundu
@@ -883,6 +883,23 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -943,6 +960,8 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1335,13 +1354,11 @@ tr:
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
-    fr: 
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home: home
     impressum: künye
-    kontakt: 
-    liste: 
-    liste-de-services: 
+    kontakt: contact
+    liste: liste
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
@@ -1355,6 +1372,10 @@ tr:
     update_requests: update_request
     users: kullanıcılar
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

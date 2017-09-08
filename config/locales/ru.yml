@@ -784,6 +784,8 @@ ru:
         language: Язык
         sort: Сортировка по
         target_audience: Помощь для кого?
+      more_info_button: 
+      more_info_text: 
       option_any: все равно
       pagination:
         back: Назад
@@ -796,8 +798,6 @@ ru:
         categories: категории
         filter: Фильтр
         map: карта
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: для
       enclosing: найдено
@@ -993,6 +993,23 @@ ru:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Предложения о помощи детям, молодежи и семьям
       modal:
         beta_modal:
           link: просто напиши нам E-Mail.
@@ -1441,13 +1458,11 @@ ru:
     definitions: формулировки
     emails: электронные-письма
     faq: Частые-вопросы
-    fr: фр
     haeufige-fragen: Частые-вопросы
     home: главная страница
     impressum: Импрессум
-    kontakt: 
+    kontakt: contact
     liste: список
-    liste-de-services: список-услуг
     new: новый
     offers: предложения
     organizations: орагнизации

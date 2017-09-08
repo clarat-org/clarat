@@ -718,6 +718,8 @@ fa:
         language: زبان
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
+      more_info_button: نزد مشاور
+      more_info_text: 'اطلاعات بیشتر در مورد:'
       option_any: اهمیت ندارد
       pagination:
         back: بازگشت
@@ -730,8 +732,6 @@ fa:
         categories: طبقه بندی ها
         filter: فیلتر
         map: نقشه
-      more_info_button: نزد مشاور
-      more_info_text: 'اطلاعات بیشتر در مورد:'
     search_results:
       bridge: برای جستجوی عبارت
       enclosing: پیدا کردن
@@ -941,6 +941,23 @@ fa:
         twitter:
           anchor: توییتر
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: کمک برای کودکان،جوانان و خانواده ها
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
@@ -1369,13 +1386,11 @@ fa:
     definitions: توضیحات
     emails: ایمیل ها
     faq: سوالات رایج
-    fr: fr
     haeufige-fragen: سوالات رایج
     home: خانه
     impressum: 'اطلاعات کلی '
     kontakt: تماس
     liste: لیست
-    liste-de-services: لیست خدمات
     new: جدید
     offers: پیشنهادها
     organizations: سازمان ها

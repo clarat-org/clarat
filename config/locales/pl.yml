@@ -803,6 +803,8 @@ pl:
         language: Język
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
+      more_info_button: 
+      more_info_text: 
       option_any: obojętne
       pagination:
         back: Wróć
@@ -815,8 +817,6 @@ pl:
         categories: Kategorie
         filter: Filtr
         map: Mapa
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -1010,6 +1010,23 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
@@ -1448,13 +1465,11 @@ pl:
     definitions: definicje
     emails: e-maile
     faq: często-zadawane-pytania
-    fr: fr
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
-    kontakt: 
+    kontakt: contact
     liste: Lista
-    liste-de-services: liste-de-services
     new: nowe
     offers: oferty
     organizations: organizacje

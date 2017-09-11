@@ -34,12 +34,12 @@
                   - @organization.offers.visible_in_frontend.in_section(section.identifier).order('name ASC').each do |offer|
                     li.Listing-results__listitem
 
-                      h5.Listing-results__offer.Listing-results__orga-display = link_to offer.name, offer_path(id: offer),
+                      h5.Listing-results__offer.Listing-results__orga-display = link_to offer.send("name_#{locale}"), offer_path(id: offer),
                               autotranslation_attr(@organization.translation_automated?)
 
                       .Listing-offers__address
                         .Listing-results__offerinfo.Listing-results__stamp
-                          = offer.send("singular_stamp", @current_locale)
+                          = offer.send("singular_stamp", locale)
                         - if offer.location && offer.location.visible
                           .Listing-results__location
                             = offer.location_address

@@ -598,11 +598,6 @@ tr:
         xxx: 
         zho: Zho
         zza: Zza
-        dje: 
-        ewe: 
-        gej: 
-        run: 
-        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -948,6 +943,23 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
   offer:
     stamp:
       target_audience:
@@ -1340,13 +1352,12 @@ tr:
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
-    fr: 
+    fr: fr
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home: home
     impressum: künye
-    kontakt: 
-    liste: 
-    liste-de-services: 
+    kontakt: contact
+    liste: liste
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar

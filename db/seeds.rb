@@ -127,25 +127,25 @@ subcategories = []
 
 10.times do
   subcategories.push(
-    FactoryGirl.create :category, :with_dummy_translations,
+    FactoryGirl.create :category,
                        parent: refugee_mains.sample
   )
 end
 
 20.times do
-  FactoryGirl.create :category, :with_dummy_translations,
+  FactoryGirl.create :category,
                      parent: subcategories.sample
 end
 
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Lokales Angebot',
                    encounter: 'personal'
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Lokale Hotline',
                    encounter: 'hotline', area: berlin
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Bundesweiter Chat',
                    encounter: 'chat', area: schland
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Bundesweite Hotline',
                    encounter: 'hotline', area: schland

@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 FactoryGirl.define do
   factory :opening do
     day { Opening.enumerized_attributes.attributes['day'].values.sample }

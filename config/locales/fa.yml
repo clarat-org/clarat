@@ -637,11 +637,6 @@ fa:
         xxx: 
         zho: Zho
         zza: Zza
-        dje: 
-        ewe: 
-        gej: 
-        run: 
-        xxx: 
       section:
         family: خانواده
         refugees: پناهندگان
@@ -998,6 +993,23 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: کمک برای کودکان،جوانان و خانواده ها
   offer:
     stamp:
       target_audience:
@@ -1378,7 +1390,6 @@ fa:
     impressum: 'اطلاعات کلی '
     kontakt: تماس
     liste: لیست
-    liste-de-services: لیست خدمات
     new: جدید
     offers: پیشنهادها
     organizations: سازمان ها

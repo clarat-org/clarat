@@ -25,7 +25,7 @@ describe PreviewsController do
 
   describe "GET 'show_organization'" do
     before do
-      @orga = offers(:basic)
+      @orga = organizations(:basic)
       @orga.name = 'bazfuz'
     end
 

@@ -698,11 +698,6 @@ ru:
         xxx: 
         zho: Zho
         zza: Zza
-        dje: 
-        ewe: 
-        gej: 
-        run: 
-        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -1056,6 +1051,23 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Предложения о помощи детям, молодежи и семьям
   offer:
     stamp:
       target_audience:
@@ -1444,13 +1456,12 @@ ru:
     definitions: формулировки
     emails: электронные-письма
     faq: Частые-вопросы
-    fr: фр
+    fr: fr
     haeufige-fragen: Частые-вопросы
     home: главная страница
     impressum: Импрессум
-    kontakt: 
+    kontakt: contact
     liste: список
-    liste-de-services: список-услуг
     new: новый
     offers: предложения
     organizations: орагнизации

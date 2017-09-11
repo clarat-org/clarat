@@ -8,3 +8,5 @@ basic:
   federal_state_id: 1
   display_name: basicLocation
   visible: t
+  organization_id: 1
+  #offer: basic

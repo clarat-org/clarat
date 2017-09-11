@@ -580,11 +580,6 @@ ar:
         xxx: 
         zho: Zho
         zza: Zza
-        dje: 
-        ewe: 
-        gej: 
-        run: 
-        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -941,6 +936,23 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: مساعدة للأطفال والمراهقين و الأسرة
   offer:
     stamp:
       target_audience:
@@ -1339,7 +1351,6 @@ ar:
     impressum: هيئة التحرير
     kontakt: إتصال
     liste: القائمة
-    liste-de-services: قائمة الخدمات
     new: جديد
     offers: عروض
     organizations: منظمة

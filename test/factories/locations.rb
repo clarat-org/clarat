@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'ffaker'
 
 FactoryGirl.define do
@@ -7,7 +6,7 @@ FactoryGirl.define do
     sequence(:street) { |n| "Foobar #{n}" }
     sequence(:display_name) { |n| "Foobar #{n}" }
     sequence(:zip) { |n| n.to_s.rjust(5, '0') }
-    hq { rand(9).zero? }
+    hq { rand(9) == 0 }
 
     latitude { rand 52.4..52.6 } # somewhere within approximate bounds of Berlin
     longitude { rand 13.25..13.6 }
@@ -21,31 +20,12 @@ FactoryGirl.define do
         "Raum #{rand(1..20)}"
       ].sample
     end
-    display_name 'Berlin'
 
-    # associations
-    organization
-    federal_state
-    city
-    #association :federal_state, factory: :federal_state
-    #association :city, factory: :city
+    # associations    
+    federal_state { FederalState.all.to_a.sample || FederalState.create!(name: 'Berlin') }
+    city { City.all.to_a.sample || City.create!(name: 'Berlin') }
+    organization { Organization.last || FactoryGirl.create(:organization) }
 
-    transient do
-      offer_count 1
-    end
-
-    after :build do |location, evaluator|
-      # Locations
-      #create_list(:offer, evaluator.offer_count, location_id: location.id)
-
-      # if evaluator.location_count.positive?
-      #   orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
-      # end
-      # if evaluator.location_count > 1
-      #   create_list :location, (evaluator.location_count - 1),
-      #               organization: orga, hq: false
-      # end
-    end
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }
@@ -59,5 +39,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2).zero? ? nil : result
+  rand(2) == 0 ? nil : result
 end

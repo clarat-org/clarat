@@ -722,11 +722,6 @@ pl:
         xxx: 
         zho: Zho
         zza: Zza
-        dje: 
-        ewe: 
-        gej: 
-        run: 
-        xxx: 
       section:
         family: Family
         refugees: Refugees
@@ -1064,6 +1059,23 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
   offer:
     stamp:
       target_audience:
@@ -1455,9 +1467,8 @@ pl:
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
-    kontakt: 
+    kontakt: contact
     liste: Lista
-    liste-de-services: liste-de-services
     new: nowe
     offers: oferty
     organizations: organizacje

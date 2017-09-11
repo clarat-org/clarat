@@ -1044,11 +1044,6 @@ de:
         xxx: Xxx
         zho: Zho
         zza: Zza
-        dje: Dje
-        ewe: Ewe
-        gej: Gej
-        run: Run
-        xxx: Xxx
       section:
         family: Family
         refugees: Refugees
@@ -1423,6 +1418,23 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Hilfe für Kinder, Jugendliche und Familien
   offer:
     stamp:
       target_audience:
@@ -1878,7 +1890,6 @@ de:
     impressum: impressum
     kontakt: kontakt
     liste: liste
-    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen

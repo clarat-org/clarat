@@ -1,7 +1,7 @@
 div.Distributor__search-form
   = simple_form_for search_form,
                     url: offers_path(section: current_section),
-                    html: { target: :_top, method: :get, novalidate: false } do |f|
+                    html: { target: target(params), method: :get, novalidate: false } do |f|
     .search-form--input-wrapper
       = f.input :query, label: t('.query_label'), hint: false,
                         required: false,
@@ -13,7 +13,7 @@ div.Distributor__search-form
                           class: 'input-xlg' }
 
       = f.input :search_location, label: t('.loc_label'), hint: false,
-                                  wrapper_html: {class: 'JS-Geolocation__wrapper'},
+                                  wrapper_html: {class: 'JS-Geolocation__wrapper', style: display_where(params)},
                                   input_html: { \
                                     value: search_form.search_location,
                                     class: 'input-xlg JS-Geolocation__display',
@@ -26,7 +26,7 @@ div.Distributor__search-form
       = f.input :generated_geolocation, as: :hidden,
                                         input_html: { \
                                           class: 'JS-Geolocation__input',
-                                          value: search_form.generated_geolocation }
+                                          value: geo_location(params, search_form.generated_geolocation) }
       / = f.input :geolocation, as: :hidden
       = f.input :category, as: :hidden
       = f.input :exact_location, as: :hidden

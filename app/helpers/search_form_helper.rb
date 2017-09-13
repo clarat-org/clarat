@@ -20,6 +20,17 @@ module SearchFormHelper
     end
   end
 
+  def location params, search_location
+    case params[:city]
+    when 'berlin' then 'Berlin'
+    when 'hamburg' then 'Hamburg'
+    when 'muenchen' then 'München'
+    when 'dortmund' then 'Dortmund'
+    else
+      search_location
+    end
+  end
+
   def display_where params
     if params[:city]
       'display:none'

@@ -15,7 +15,7 @@ div.Distributor__search-form
       = f.input :search_location, label: t('.loc_label'), hint: false,
                                   wrapper_html: {class: 'JS-Geolocation__wrapper', style: display_where(params)},
                                   input_html: { \
-                                    value: search_form.search_location,
+                                    value: location(params, search_form.search_location),
                                     class: 'input-xlg JS-Geolocation__display',
                                     placeholder: t(".loc_placeholder.#{labels}"),
                                     oninvalid: custom_validity_js('fill_field'),

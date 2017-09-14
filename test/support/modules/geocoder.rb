@@ -19,6 +19,7 @@ Geocoder::Lookup::Test.add_stub( # stub for non-fixture location query
 )
 
 # use above stub for any Location#geocode calls
+require_relative '../../../app/models/location'
 class Location < ApplicationRecord
   geocoded_by :_alt_addr
   def _alt_addr

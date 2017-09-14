@@ -1,19 +1,19 @@
 - content_for :canonical_url, request.url
 - cache ['home_page', I18n.t] do
 
-  main.content-main.content-main--wide
-    .wrapper-inner
-      section.section-start.section-start--how
-        h4.section-start__headline = t '.how.heading'
-        .section-start__body
-          p = t '.how.text'
+  .Callout
+    section
+      p Icon
+      h4.Callout__headline = t '.how.heading'
+      p = t '.how.text'
+    section
+      p Icon
+      h4.Callout__headline =  t '.whom.heading'
+      p = t '.whom.text'
+    section
+      p Icon
+      h4.Callout__headline =  t '.why.heading'
+      p = t '.why.text'
 
-      section.section-start.section-start--whom
-        h4.section-start__headline = t '.whom.heading'
-        .section-start__body
-          p = t '.whom.text'
-
-      section.section-start.section-start--why
-        h4.section-start__headline = t '.why.heading'
-        .section-start__body
-          p = t '.why.text'
+  .Explainaition-area.wrapper-inner#explaination
+    p Explaination Video

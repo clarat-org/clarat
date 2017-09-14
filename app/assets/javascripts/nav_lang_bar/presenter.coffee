@@ -10,7 +10,7 @@ class Clarat.NavLangBar.Presenter extends ActiveScript.Presenter
 
   init: () =>
 
-    if ($('body').width() <= 1000)
+    if ($('body').width() <= 768)
       $('.nav-lang__button')
         .unbind 'click'
         .bind 'click', this.toggleMenu

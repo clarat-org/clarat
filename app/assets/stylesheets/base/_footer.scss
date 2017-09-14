@@ -5,33 +5,37 @@
 // ---------------------------------------------------------------
 
 .footer-main {
-  .offcanvas-active & {
-    display: none;
-  }
+  background-color: $brand_yellow;
 }
-
-.footer-main,
-.footer-main__firstrow,
-.footer-main__secondrow {
-  @extend %clearfix;
-}
-
-.footer-main__firstrow {
-  height: 120px;
-  margin-top: 35px;
-  background: $brand_yellow;
-}
-
-.footer-main__secondrow {
-  background: $brand_beige;
-}
-
-.footer-main__subscribe,
-.footer-main__about {
-  @extend %layout-col-50;
-}
-
-.footer-main__about {
-  @extend %layout-col-last;
-  position: relative;
-}
+//
+//.footer-main {
+//  .offcanvas-active & {
+//    display: none;
+//  }
+//}
+//
+//.footer-main,
+//.footer-main__firstrow,
+//.footer-main__secondrow {
+//  @extend %clearfix;
+//}
+//
+//.footer-main__firstrow {
+//  height: 120px;
+//  margin-top: 35px;
+//  background: $brand_yellow;
+//}
+//
+//.footer-main__secondrow {
+//  background: $brand_beige;
+//}
+//
+//.footer-main__subscribe,
+//.footer-main__about {
+//  @extend %layout-col-50;
+//}
+//
+//.footer-main__about {
+//  @extend %layout-col-last;
+//  position: relative;
+//}

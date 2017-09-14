@@ -1,0 +1,46 @@
+.Hero {
+  background: image_url('hero--1.jpg') no-repeat top center;
+  background-size: cover;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero__shopping-window {
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Hero__search-form {
+}
+
+.Hero__link-to-explaination {
+  color: inherit;
+  text-decoration: none;
+  border-top: 1px solid;
+  margin-top: 10px;
+  display: block;
+}
+
+.Hero__logline {
+  @extend %roboto_slabbold;
+}
+
+.Hero__pitch {
+  color: $brand_white;
+  padding: 20px;
+  max-width: 280px;
+  position: absolute;
+
+  [data-section="family"] & {
+    background-color: rgba($brand_core_family, $hero_transparency);
+  }
+
+  [data-section="refugees"] & {
+    background-color: rgba($brand_core_refugees, $hero_transparency);
+  }
+}

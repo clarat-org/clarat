@@ -1,5 +1,5 @@
 de:
-  accessibility:
+  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +25,9 @@ de:
         identifier:
           anonymous: anonym
       update_request: NOTRANSLATE
-  anonymous:
-  arabisch:
-  arb:
+  anonymous: 
+  arabisch: 
+  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -757,12 +757,12 @@ de:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Warum ist meine Organisation nicht bei clarat?
-  charged:
+  charged: 
   conf:
     current_location: Mein Standort
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential:
+  confidential: 
   contacts:
     create:
       success: Die Nachricht wurde erfolgreich abgeschickt.
@@ -780,11 +780,11 @@ de:
         name_placeholder: Name (Pflicht)
         send: Abschicken
         send_us_a_message: Schreibe uns eine Nachricht
-  day_and_night:
+  day_and_night: 
   de:
     en:
-      conf:
-      current_location:
+      conf: 
+      current_location: 
   emails:
     offers_index:
       family:
@@ -836,7 +836,7 @@ de:
         (<a href="%{subscribe_href}">wieder anmelden</a>)
   en:
     conf:
-      current_location:
+      current_location: 
   enumerize:
     search_form:
       age:
@@ -1055,7 +1055,7 @@ de:
         relevance: Relevance
   formtastic:
     required: required
-  free:
+  free: 
   js:
     ajax_error:
       error: Suchfehler
@@ -1329,7 +1329,6 @@ de:
         portal: Adressliste
   layouts:
     modal_create:
-      success: 
       js:
         erb:
           success: E-Mail erfolgreich eingetragen!
@@ -1343,7 +1342,7 @@ de:
         about: Über uns
         blog: Blog
         contact: Kontakt
-        facebook-family:
+        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: Häufige Fragen
@@ -1378,18 +1377,16 @@ de:
           message: Ich möchte an der Umfrage teilnehmen
           name_placeholder: Name *
           text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
-        send:
+        send: 
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
           oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
-        send: 
-        more_information_overlay: Entschuldigung. Leider gibt es für deine Suche noch keinen Ratgeber. Wir versuchen aber unser Angebot ständig zu erweitern. Wir geben dir gerne Bescheid, sobald es bei clarat weitere Informationen zu deiner Suche gibt. Trage dazu deine E-Mail-Adresse hier ein.
       nav_lang:
-        legal_title:
-        title:
+        legal_title: 
+        title: 
       navigation:
         category_headline: Oder suche nach Kategorien
         claim:
@@ -1409,7 +1406,7 @@ de:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2:
+            2017-07-17, visits=2: 
             family: "‹ zu clarat refugees"
             refugees: "‹ zu clarat family"
           mobile:
@@ -1417,21 +1414,36 @@ de:
               family: zur <span class="top-bar__emphasis">clarat family</span> Startseite
               refugees: zur <span class="top-bar__emphasis">clarat refugees</span> Startseite
             switch:
-              2017-07-17, visits=2:
+              2017-07-17, visits=2: 
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
-    modal_create:
-      js:
-        erb:
-          success: E-Mail erfolgreich eingetragen!
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Hilfe für Kinder, Jugendliche und Familien
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
-        family_acquaintances:
-        refugees_adolescents:
+        family_acquaintances: 
+        refugees_adolescents: 
     validations:
-      only_visible_organizations:
+      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1494,12 +1506,12 @@ de:
           long: Angebote zum Thema …
           short: Angebote zu …
     show:
-      accessibility:
-      anonymous:
-      charged:
-      confidential:
-      day_and_night:
-      free:
+      accessibility: 
+      anonymous: 
+      charged: 
+      confidential: 
+      day_and_night: 
+      free: 
       last_update: Eintrag zuletzt bearbeitet am
       next_steps:
         code_word: 'So heißt die Hilfe beim Anbieter:'
@@ -1519,19 +1531,19 @@ de:
         explanation:
           accessibility: Das heißt, hier kannst du dich leicht mit dem Rollstuhl bewegen. Oder mit einem Kinderwagen.
           anonymous: Das heißt, du musst deinen Namen nicht sagen.
-          charged:
+          charged: 
           confidential: " Das heißt, dass die Mitarbeiter alles, was du sagst, für sich behalten."
-          day_and_night:
-          free:
+          day_and_night: 
+          free: 
         title:
           accessibility: barrierefrei
           anonymous: anonym
           charged: kostenpflichtig
           confidential: vertraulich
           day_and_night: Tag und Nacht
-          family_nuclear_family:
-          family_parents:
-          family_relatives:
+          family_nuclear_family: 
+          family_parents: 
+          family_relatives: 
           free: kostenlos
       trait_filters_headline: Weitere Informationen
       website_section:
@@ -1747,11 +1759,11 @@ de:
           Hilfe bekommst. Also ob du anrufen oder eine E-Mail schreiben sollst.
           Oder einfach vorbeigehen kannst.
       meta_description:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: Mit clarat family findest Du einfach Hilfe für Kinder, Jugendliche und Familien. Übersichtlich. Mehrsprachig. In ganz Berlin. Und deutschlandweit.
         refugees: 'Mit clarat refugees findest Du einfach Hilfe für Flüchtlinge. Übersichtlich. Mehrsprachig. In deiner Nähe. Und in ganz Deutschland. '
       meta_title:
-        2017-07-17, visits=2:
+        2017-07-17, visits=2: 
         family: Einfach Hilfe finden | clarat family
         refugees: Einfach Hilfe finden | clarat refugees
       title:
@@ -1880,7 +1892,6 @@ de:
     impressum: impressum
     kontakt: kontakt
     liste: liste
-    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen
@@ -1893,6 +1904,11 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    widget-handbook-germany: widget-handbook-germany
+    widget-hg: widget-hg
+    widget-start-with-a-friend: widget-start-with-a-friend
+    widget-swaf: widget-swaf
+    liste-de-services: liste-de-services
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1913,15 +1929,15 @@ de:
     hints:
       contact:
         new:
-          email:
-          name:
+          email: 
+          name: 
         show:
-          email:
-          name:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:
-          query:
+          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"

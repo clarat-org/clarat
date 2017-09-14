@@ -1,9 +1,10 @@
 .nav-lang {
-  display: inline-block;
-  float: right;
+
   color: $brand_coal;
   font-size: 15px;
   min-height: 44px;
+  position: absolute;
+  right: 0;
 
   a {
     color: inherit;

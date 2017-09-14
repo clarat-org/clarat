@@ -63,6 +63,7 @@
   .header-main {
     height: auto;
     margin-bottom: 0;
+    min-height: 60px;
 
     .wrapper-inner {
       padding: 0;
@@ -73,10 +74,6 @@
     }
   }
 
-  .header-main--wide {
-    height: 180px;
-  }
-
   body.family,
   body.refugees {
     .Logo--start {
@@ -85,14 +82,8 @@
   }
 
   .Logo {
-    margin-bottom: 15px;
-    position: absolute;
-    top: 10px;
-    z-index: 20;
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 160px;
-    height: 64px;
+    min-height: inherit;
+    height: auto;
 
     &,
     body.refugees &, // Specifity
@@ -130,6 +121,56 @@
       border-top: none;
     }
 
+  }
+
+  .nav-lang__list {
+    display: none;
+  }
+
+
+  .nav-main  {
+    position: relative;
+    float: none;
+    display: inline-block;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $brand_core_family;
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+
+    &[aria-hidden="false"] {
+      display: inline-block;
+    }
+  }
+
+  .nav-main__list {
+    flex-direction: column;
+  }
+
+  .nav-main__link {
+    color: $brand_white;
+    text-decoration: none;
+  }
+
+  button.header-main__nav-main-trigger {
+    display: block;
+    min-height: inherit;
+    width: 40px;
+    float: left;
+  }
+
+  button.nav-lang__button {
+    cursor: pointer;
+    background-image: image-url('ico_weltkugel--dropdown.svg');
+    width: 50px;
+
+    &.is-active {
+      background-image: image-url('ico_weltkugel--dropup.svg');
+    }
   }
 
   .Distributor--start {

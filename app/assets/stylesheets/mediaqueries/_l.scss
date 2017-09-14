@@ -189,19 +189,9 @@
     max-width: 100%;
   }
 
-  .nav-lang__list {
-    display: none;
-  }
 
-  button.nav-lang__button {
-    cursor: pointer;
-    background-image: image-url('ico_weltkugel--dropdown.svg');
-    width: 50px;
 
-    &.is-active {
-      background-image: image-url('ico_weltkugel--dropup.svg');
-    }
-  }
+
 
   // Content ######################################
 

@@ -95,6 +95,8 @@ about supported directives.
 # = require enhance_listing_results/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
+# = require mobile_nav/presenter
+
 # = require shariff_additional/presenter
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
@@ -115,7 +117,6 @@ about supported directives.
 # = require query_field_placeholder/model
 # = require query_field_placeholder/presenter
 #
-# = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal
 # = require modules/tooltip

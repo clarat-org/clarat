@@ -6,68 +6,24 @@
 
 .header-main {
   position: relative;
-  margin-bottom: 15px;
-  height: 182px;
-  background: $brand_beige;
-
-
-}
-
-.header-main--wide {
-  height: 290px;
-  background: $brand_beige;
-
-  .template--pages-home & {
-    margin-bottom: 0;
-  }
-
-  .template--pages-about & {
-    border-bottom: 15px solid $brand_yellow;
-  }
-
-  &:before {
-    display: none;
-  }
-}
-
-.header-main__foreground {
+  min-height: 100px;
   @extend %clearfix;
-  height: inherit;
-  background-position: right calc(100% + 1px);
-  background-size: 60% auto;
-  background-repeat: no-repeat;
+}
 
+button.header-main__nav-main-trigger {
+  display: none;
+
+  body.family &,
   body.refugees & {
-    background-image: image-url('foreground--refugees.svg');
+    background-color: transparent;
   }
 
   body.family & {
-    background-image: image-url('foreground--family.svg');
-  }
-  
-}
-
-.page-detail__header {
-  @extend %clearfix;
-  margin-bottom: 5px;
-}
-
-.page-detail__title {
-  @extend %roboto_bold;
-  font-weight: 400;
-  font-size: 34px;
-
-  // Fixes #983
-  .template--organizations-show.ar & {
-    text-align: right;
-    direction: ltr;
+    color: $brand_core_family;
   }
 
-  .template--offers-show & {
-    margin-bottom: 0;
+  body.refugees & {
+    color: $brand_core_refugees;
   }
-}
 
-.jump-to-categories {
-  display: none;
 }

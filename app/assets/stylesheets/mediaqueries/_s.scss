@@ -35,13 +35,7 @@
     display: none;
   }
 
-  .Logo {
-    display: none;
-  }
 
-  .Logo--start {
-    display: none;
-  }
 
   .Logo--notstart {
     display: none;
@@ -70,21 +64,7 @@
   }
 
   .header-main {
-    position: relative;
-    right: 0;
-    left: 0;
-    z-index: 130;
-    background: $brand_beige;
-    min-height: 0;
-    pointer-events: none;
 
-    .template--pages-home & {
-      position: static;
-      top: auto;
-      right: auto;
-      left: auto;
-      z-index: auto;
-    }
   }
 
   .header-main__foreground {

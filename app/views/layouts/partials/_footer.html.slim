@@ -1,5 +1,7 @@
 footer.footer-main
-  section.footer-main__firstrow
+  .wrapper-inner
+    p Neuer Footer
+  / section.footer-main__firstrow
     .wrapper-inner
       .footer-main__subscribe
         = render 'subscriptions/shared/new', subscription: subscription
@@ -45,7 +47,7 @@ footer.footer-main
 
   - cache [current_section, 'footer_links_3', I18n.locale] do
 
-    section.footer-main__secondrow
+    / section.footer-main__secondrow
       .wrapper-inner
         nav.nav-legal
           ul.nav-legal__list

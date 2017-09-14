@@ -53,6 +53,8 @@
 @import "modules/top-bar";
 @import "modules/breadcrumbs";
 @import "modules/offer-taxonomy";
+@import "modules/hero";
+@import "modules/callout";
 
 @import "modules/sections/section-content";
 @import "modules/sections/section-start";
@@ -67,10 +69,9 @@
 @import "form/filter-form";
 
 @import "navigation/nav-sections";
-@import "navigation/nav-site";
-@import "navigation/nav-legal";
-@import "navigation/nav-welt";
+@import "navigation/nav-main";
 @import "navigation/nav-lang";
+@import "navigation/nav-legal";
 @import "navigation/nav-off-canvas-trigger";
 
 @import "vendor/pagination";

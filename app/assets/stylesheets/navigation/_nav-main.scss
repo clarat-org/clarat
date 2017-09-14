@@ -1,0 +1,33 @@
+.nav-main {
+  position: absolute;
+  bottom: 22px;
+  left: auto;
+  width: auto;
+  top: auto;
+  right: 0;
+  margin-top: 100px;
+}
+
+.nav-main__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-main__listitem {
+  margin-left: 30px;
+}
+
+.nav-main__link {
+  //@extend %roboto_bold;
+  font-size: 20px;
+  text-decoration: none;
+
+  [data-section="family"] & {
+    color: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    color: $brand_core_refugees;
+  }
+}

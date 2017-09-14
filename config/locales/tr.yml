@@ -853,7 +853,9 @@ tr:
         portal: Adres listesi
   layouts:
     modal_create:
-      success: 
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
@@ -903,8 +905,6 @@ tr:
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
-        send: 
-        more_information_overlay: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -943,10 +943,25 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
-    modal_create:
-      js:
-        erb:
-          success: 
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1341,11 +1356,10 @@ tr:
     faq: sıkça-sorulan-sorular
     fr: 
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home: home
     impressum: künye
-    kontakt: 
-    liste: 
-    liste-de-services: 
+    kontakt: contact
+    liste: liste
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
@@ -1358,6 +1372,11 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

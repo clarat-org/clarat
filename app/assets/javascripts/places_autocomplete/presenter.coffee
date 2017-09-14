@@ -33,7 +33,7 @@ class Clarat.PlacesAutocomplete.Presenter extends ActiveScript.Presenter
       # so other scripts can hook into that
       google.maps.event.addListener(
         Clarat.PlacesAutocomplete.instance, 'place_changed',
-        @handlePlaceChanged
+        @handleGooglePlaceChanged
       )
 
       # If category links exist: event listener on input change to update them
@@ -47,7 +47,7 @@ class Clarat.PlacesAutocomplete.Presenter extends ActiveScript.Presenter
     if (event.which == 13 && $('.pac-container:visible').length)
       return false
 
-  handlePlaceChanged: =>
+  handleGooglePlaceChanged: =>
     $(document).trigger(
       'Clarat::PlacesAutocomplete::placesAutocompleteTriggered'
     )

@@ -12,7 +12,7 @@ describe ContactsController do
 
   describe 'GET power user popup contact form' do
     it 'should work' do
-      offer = FactoryGirl.create :offer, :approved, section: 'family'
+      offer = offers(:basic)
       get :new, params: { id: offer.slug, locale: 'de', section: 'family' }
       assert_response :success
     end

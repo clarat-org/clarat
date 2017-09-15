@@ -6,22 +6,22 @@ describe OffersController do
   describe "GET 'show'" do
     describe 'for an approved offer' do
       it 'should work (with friendly id)' do
-        offer = FactoryGirl.create :offer, :approved, name: 'bazfuz',
-                                                      section: 'family'
+        offer = offers(:basic)
+        offer.name = 'bazfuz'
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_select 'title', 'bazfuz | clarat'
       end
 
       it 'should use the correct canonical URL' do
-        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer = offers(:basic)
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_includes response.body,
                         "http://test.host/family/angebote/#{offer.slug}"
       end
 
       it 'shouldnt show on unapproved offer' do
-        offer = FactoryGirl.create :offer
+        offer = offers(:basic)
         get :show, params: { id: offer.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
@@ -32,22 +32,23 @@ describe OffersController do
       end
 
       it 'should set the session cookie in the family section when none exists' do
-        offer = FactoryGirl.create :offer, :approved, section: 'family'
-        get :show, id: offer.slug, locale: 'de', section: 'family'
+        offer = offers(:basic)
+        get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_includes(cookies['session'], 'user_popup')
       end
 
       it "shouldn't set the session cookie in the refugees section" do
-        offer = FactoryGirl.create :offer, :approved, section: 'refugees'
-        get :show, id: offer.slug, locale: 'de', section: 'refugees'
+        offer = offers(:basic)
+        offer.section_id = 2
+        offer.save
+        get :show, params: { id: offer.slug, locale: 'de', section: 'refugees' }
         assert_nil(cookies['session'], 'user_popup')
       end
     end
 
     describe 'for an expired offer' do
       it 'should work (with friendly id)' do
-        offer = FactoryGirl.create :offer, :approved, name: 'bazfuz',
-                                                      section: 'family'
+        offer = offers(:basic)
         offer.update_columns aasm_state: 'expired'
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_response :success
@@ -55,7 +56,7 @@ describe OffersController do
       end
 
       it 'should use the correct canonical URL' do
-        offer = FactoryGirl.create :offer, :approved, section: 'family'
+        offer = offers(:basic)
         offer.update_columns aasm_state: 'expired'
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_includes response.body,
@@ -77,41 +78,20 @@ describe OffersController do
       } }
       assert_response :success
     end
-
-    it 'should set the session cookie when none exists' do
-      get :index, params: { locale: 'de', section: 'refugees' }
-      assert_includes(cookies['session'], "#{Date.today}, visits=1")
-    end
-
-    it 'should update the session cookie when page has been visited once on different day' do
-      cookies['session'] = "#{Date.yesterday}, visits=1"
-      get :index, params: { locale: 'de', section: 'refugees' }
-      assert_includes(cookies['session'], "#{Date.today}, visits=2")
-    end
-
-    it 'should not update the session cookie when page has been visited before on same day' do
-      cookies['session'] = "#{Date.today}, visits=1"
-      get :index, params: { locale: 'de', section: 'refugees' }
-      assert_includes(cookies['session'], "#{Date.today}, visits=1")
-    end
-
-    it 'should open modal and reset the session cookie when page has been visited twice on different days' do
-      cookies['session'] = "#{Date.yesterday}, visits=2"
-      get :index, params: { locale: 'de', section: 'refugees' }
-      assert_nil(cookies['session'])
-    end
   end
 
   describe "GET 'section_forward'" do
     it 'should redirect to the family section if it has only that one' do
-      offer = FactoryGirl.create :offer, :approved, section: 'family'
+      offer = offers(:basic)
       get :section_forward, params: { id: offer.slug, locale: 'de' }
       assert_redirected_to controller: 'offers', action: 'show',
                            section: 'family'
     end
 
     it 'should redirect to the refugees section if it has only that one' do
-      offer = FactoryGirl.create :offer, :approved, section: 'refugees'
+      offer = offers(:basic)
+      offer.section = sections(:refugees)
+      offer.save
       get :section_forward, params: { id: offer.slug, locale: 'de' }
       assert_redirected_to controller: 'offers', action: 'show',
                            section: 'refugees'

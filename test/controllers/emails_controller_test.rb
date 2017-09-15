@@ -2,7 +2,7 @@
 require_relative '../test_helper'
 
 describe EmailsController do
-  let(:email) { Email.create! address: 'a@b.c', security_code: 'correct' }
+  let(:email) { emails(:basic) }
 
   describe '#subscribe' do
     before { email.update_column :aasm_state, 'informed' }
@@ -28,7 +28,7 @@ describe EmailsController do
   end
 
   describe '#unsubscribe' do
-    before { email.update_column :aasm_state, 'subscribed' }
+    before { email.update_column :security_code, 'correct' }
 
     it 'must work with a correct security code' do
       get :unsubscribe, params: { id: email.id, security_code: email.security_code,

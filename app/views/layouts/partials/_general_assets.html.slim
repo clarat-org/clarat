@@ -16,18 +16,3 @@ javascript:
                          "&key=#{Rails.application.secrets.google[:public]}"\
                          '&callback=Clarat.GMaps.initialize',
                          cache: 'google_maps_apiv3'
-
-
-- cache 'browser_dependent_code' do
-
-  /[if lt IE 9]
-    = javascript_include_tag '//html5shiv.googlecode.com/svn/trunk/html5.js'
-    = javascript_include_tag asset_url('vendor/selectivizr-min.js')
-  /[if !IE]
-    javascript:
-      if (Function('/*@cc_on return document.documentMode===10@*/')()) {
-        document.documentElement.className += ' ie10';
-      }
-      if (typeof document.documentMode !== 'undefined' && document.documentMode === 11) {
-        document.documentElement.className += ' ie11';
-      }

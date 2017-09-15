@@ -64,13 +64,13 @@
     height: auto;
     margin-bottom: 0;
     min-height: 60px;
+  }
 
-    .wrapper-inner {
+  .header-main__wrapper {
+
+    &,
+    &.wrapper-inner {
       padding: 0;
-
-      .template--pages-home & {
-        padding: 0 20px;
-      }
     }
   }
 
@@ -83,7 +83,6 @@
 
   .Logo {
     min-height: inherit;
-    height: auto;
 
     &,
     body.refugees &, // Specifity
@@ -127,8 +126,7 @@
     display: none;
   }
 
-
-  .nav-main  {
+  .nav-main {
     position: relative;
     float: none;
     display: inline-block;
@@ -201,16 +199,21 @@
     }
   }
 
-  .Distributor__search-form {
-    @extend %clarat_rounding_start;
-    position: relative;
-    right: auto;
-    width: 100%;
+  .main-search {
+    height: 107px;
+  }
+
+  .main-search__wrapper {
+    display: flex;
+  }
+
+  #new_search_form .search-form--input-wrapper {
+    height: auto;
   }
 
   .JS-Geolocation__remove {
-    top: 5px;
-    right: 10px;
+    top: 2px;
+    right: 5px;
 
     .Distributor--navigation & {
       top: 2px;
@@ -221,35 +224,37 @@
   .search-form--input-wrapper {
     flex-direction: column;
     position: relative;
-    left: 15px;
+    margin-right: 5px;
 
-    body.template--pages-home.ar & {
+    body.ar & {
       right: 0;
     }
   }
 
+  .Hero {
+    height: 323px;
+  }
+
+  .Hero__logline {
+    font-size: 16px;
+    max-width: 194px;
+  }
+
+  .Hero__pitch {
+    left: 15px;
+  }
+
+  .Hero__link-to-explaination {
+    display: none;
+  }
+
   #new_search_form {
-    position: relative;
-    z-index: 30;
-    display: block;
-    width: auto;
-    height: auto;
+    height: 107px;
+    flex-direction: row;
+    width: 100%;
     margin-right: 0;
-    overflow: hidden;
-    background-color: $brand_yellow;
-
-    &,
-    html[dir="rtl"] & {
-      padding: 10px 0;
-    }
-
-    html[dir="rtl"][lang="fa"] .template--pages-home & {
-      padding: 10px 0;
-    }
-
-    .template--pages-home & .input.string.search_form_search_location {
-      margin-bottom: 10px;
-    }
+    flex: 1;
+    padding: 15px 0;
 
     .Distributor.is-enlarged & {
       //margin-left: 15px;
@@ -259,23 +264,10 @@
       }
     }
 
-    .template--pages-home & {
-      max-height: none;
-      flex-direction: column;
-
-      #search_form_query,
-      #search_form_search_location {
-        width: inherit;
-        max-width: none;
-      }
-
-      .input.string {
-        padding-right: 0;
-
-        &.search_form_search_location {
-          display: block;
-        }
-      }
+    #search_form_query,
+    #search_form_search_location {
+      width: inherit;
+      max-width: none;
     }
 
     #search_form_query,
@@ -317,7 +309,7 @@
         padding-right: 53px;
       }
 
-      html[dir="rtl"][lang="fa"]  & {
+      html[dir="rtl"][lang="fa"] & {
         padding-left: 15px;
         padding-right: 83px;
       }
@@ -347,23 +339,10 @@
       }
     }
 
-    #search_form_query,
-    #search_form_search_location,
     .main-search__submit {
-      .template--pages-home & {
-        height: 40px;
-        line-height: 40px;
-      }
-    }
-
-    .main-search__submit {
-      .template--pages-home & {
-        width: 100%;
-        background-image: none;
-        color: white;
-        font: inherit;
-        font-size: 20px;
-      }
+      flex: 1;
+      max-width: 85px;
+      height: auto;
     }
 
     #search_form_query,
@@ -375,13 +354,10 @@
     }
 
     .main-search__submit {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      width: 40px;
-      height: auto;
-      background-size: 60%;
-      bottom: 10px;
+
+      position: relative;
+      top: 0;
+      right: auto;
 
       html[dir="rtl"] body:not(.template--pages-home) & {
         right: auto;
@@ -394,17 +370,11 @@
         height: auto;
       }
 
-      .template--pages-home & {
-        position: relative;
-        top: 0;
-        right: auto;
-      }
     }
 
     .input {
       &.string {
         display: block;
-        padding-right: 55px;
         width: 100%;
 
         html[dir="rtl"] & {
@@ -417,13 +387,8 @@
           padding-right: 0;
         }
 
-        .template--pages-home & {
-          height: 40px;
-          width: 100%;
-        }
-
         &.search_form_search_location {
-          margin-top: 10px;
+          margin-top: 5px;
 
           &.is-visible {
             display: block;
@@ -706,8 +671,6 @@
 
   // Content ######################################
 
-
-
   .page-wrap:after {
     height: 136px;
   }
@@ -858,7 +821,7 @@
   li[class^="FAQ__ico"] {
     list-style: none;
     padding-left: 50px;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-position: left top;
     background-size: 39px auto;
   }
@@ -916,7 +879,6 @@
     height: auto;
     min-height: 45px;
   }
-
 
   // Footer ######################################
 

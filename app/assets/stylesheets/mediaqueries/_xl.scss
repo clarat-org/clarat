@@ -75,11 +75,7 @@
   }
 
   #new_search_form .input.string {
-    width: 50%;
-
-    .template--pages-home & {
-      width: 46.60%;
-    }
+//    width: 50%;
   }
 
   #search_form_query,
@@ -117,10 +113,6 @@
 
   #new_search_form {
     height: 76px;
-
-    .template--pages-home & {
-      margin-right: auto;
-    }
   }
 
   .nav-lang__title {

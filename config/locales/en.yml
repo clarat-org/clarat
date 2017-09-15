@@ -649,6 +649,11 @@ en:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -727,6 +732,7 @@ en:
         language: Language
         sort: Sort by
         target_audience: For whom?
+        residency_status: Residency status
       option_any: any
       pagination:
         back: Previous
@@ -1049,6 +1055,18 @@ en:
             parents: for parents
             pregnant_woman: for pregnant women
             relatives: for friends and family
+            family_everyone: 
+            refugees_children: for refugee children
+            refugees_families: for refugee families
+            refugees_general: for refugees
+            refugees_parents: for refugee parents
+            refugees_parents_to_be: for refugee expectant parents
+            refugees_uf: for unaccompanied refugees
+          residency_status:
+            before_the_asylum_decision: during the asylum procedure
+            with_a_residence_permit: with a residence permit
+            with_deportation_decision: with deportation notice
+            with_temporary_suspension_of_deportation: with temporary suspension of deportation
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1389,6 +1407,29 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
+      callout:
+        how:
+          text: 
+          heading: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
+        family:
+          who:
+            text: 
+          how:
+            heading: 
+        "#{@current_section}":
+          who:
+            text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.

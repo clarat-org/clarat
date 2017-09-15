@@ -1,0 +1,18 @@
+.Explainaition-area {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.Explainaition-area__headline {
+  @extend %roboto_slabbold;
+  font-size: 40px;
+
+  [data-section="family"] & {
+    color: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    color: $brand_core_refugees;
+  }
+}

@@ -589,6 +589,11 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -663,6 +668,7 @@ ar:
         language: اللغة
         sort: رتب حسب
         target_audience: المساعدة لمن؟
+        residency_status: 
       option_any: سواء
       pagination:
         back: للخلف
@@ -1002,6 +1008,18 @@ ar:
             parents: للآباء
             pregnant_woman: للحوامل
             relatives: للمعارف والأقارب
+            family_everyone: 
+            refugees_children: للأجئين الأطفال
+            refugees_families: للأسرة اللاجئة
+            refugees_general: للاجئين
+            refugees_parents: للاجئين من الآباء
+            refugees_parents_to_be: للاجئين الذين سيصيرون قريباً آباء
+            refugees_uf: للاجئين غير المصحوبين
+          residency_status:
+            before_the_asylum_decision: في قضية اللجوء
+            with_a_residence_permit: بتصريح إقامة
+            with_deportation_decision: بقرار الترحيل
+            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -1251,6 +1269,29 @@ ar:
       why:
         heading: لماذا توجد كلارات؟
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
+      callout:
+        how:
+          text: 
+          heading: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
+        family:
+          who:
+            text: 
+          how:
+            heading: 
+        "#{@current_section}":
+          who:
+            text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
     impressum:
       heading: Impressum
       notice: كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط.

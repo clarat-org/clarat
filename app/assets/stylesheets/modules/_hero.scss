@@ -19,21 +19,30 @@
 }
 
 .Hero__link-to-explaination {
+  @extend %roboto_bold;
   color: inherit;
   text-decoration: none;
   border-top: 1px solid;
   margin-top: 10px;
   display: block;
+  font-size: 24px;
 }
 
 .Hero__logline {
   @extend %roboto_slabbold;
+  font-size: 30px;
+}
+
+.Hero__icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .Hero__pitch {
   color: $brand_white;
   padding: 20px;
-  max-width: 280px;
+  max-width: 357px;
   position: absolute;
 
   [data-section="family"] & {

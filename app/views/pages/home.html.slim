@@ -2,18 +2,22 @@
 - cache ['home_page', I18n.t] do
 
   .Callout
-    section
-      p Icon
-      h4.Callout__headline = t '.how.heading'
-      p = t '.how.text'
-    section
-      p Icon
-      h4.Callout__headline =  t '.whom.heading'
-      p = t '.whom.text'
-    section
-      p Icon
-      h4.Callout__headline =  t '.why.heading'
-      p = t '.why.text'
+    section.Callout__section
+      .Hero__icon-container
+        = render 'layouts/partials/callout-icons/who'
+      h4.Callout__headline = t '.callout.who.heading'
+      p = t ".callout.#{@current_section}.who.text"
+    section.Callout__section
+      .Hero__icon-container
+        = render 'layouts/partials/callout-icons/what'
+      h4.Callout__headline =  t '.callout.what.heading'
+      p = t '.callout.what.text'
+    section.Callout__section
+      .Hero__icon-container
+        = render 'layouts/partials/callout-icons/how'
+      h4.Callout__headline =  t ".callout.#{@current_section}.how.heading"
+      p = t '.callout.how.text'
 
-  .Explainaition-area.wrapper-inner#explaination
-    p Explaination Video
+  .Explainaition-area#explaination
+    h4.Explainaition-area__headline Explaination Video
+    p Video itself

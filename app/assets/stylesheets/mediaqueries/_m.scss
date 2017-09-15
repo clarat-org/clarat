@@ -74,22 +74,17 @@
     }
   }
 
-  body.family,
-  body.refugees {
-    .Logo--start {
-      background-size: 180px 40px;
-    }
-  }
+
 
   .Logo {
-    min-height: inherit;
+    height: 65px;
+    width: 100px;
+    min-height: 0;
 
     &,
     body.refugees &, // Specifity
     body.family & { // Specifity
-      background-size: 160px 64px;
-      margin-right: 15px;
-      margin-left: 12px;
+      background-size: 90px 35px;
     }
 
   }
@@ -133,6 +128,7 @@
     margin-top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     background-color: $brand_core_family;
 

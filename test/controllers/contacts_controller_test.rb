@@ -35,7 +35,6 @@ describe ContactsController do
       end
       assert_template :new
     end
-
   end
 
   describe "GET 'index'" do

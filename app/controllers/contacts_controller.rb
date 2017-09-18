@@ -26,5 +26,4 @@ class ContactsController < ApplicationController
   def index
     redirect_to :new_contact
   end
-
 end

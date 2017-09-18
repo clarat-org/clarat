@@ -32,7 +32,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     '#new_search_form':
       submit: 'handleFormSubmit'
     document:
-      'Clarat.PlacesAutocomplete::placesAutocompleteTriggered': 'handlePlaceChanged'
+      'Clarat::PlacesAutocomplete::placesAutocompleteTriggered': 'handlePlaceChanged'
       'Clarat.Location::RequestGeolocation': 'handleRequestGeolocation'
 
 
@@ -138,7 +138,6 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @updateCurrentLocation
       query: I18n.t('conf.current_location')
       geoloc: "#{position.coords.latitude},#{position.coords.longitude}"
-
     @initMyLocationDisplay(@currentLocation)
 
   # Remove button for the display of "using current location" clicked.

@@ -707,6 +707,11 @@ ru:
       sort_order:
         nearby: Около
         relevance: Релевантность
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -784,6 +789,7 @@ ru:
         language: Язык
         sort: Сортировка по
         target_audience: Помощь для кого?
+        residency_status: 
       more_info_button: 
       more_info_text: 
       option_any: все равно
@@ -1116,6 +1122,18 @@ ru:
             parents: для родителей
             pregnant_woman: для беременных
             relatives: для знакомых и родственников
+            family_everyone: 
+            refugees_children: для детей-беженцев
+            refugees_families: для семей-беженцев
+            refugees_general: для беженцев
+            refugees_parents: для родителей-беженцев
+            refugees_parents_to_be: для будущих родителей-беженцев
+            refugees_uf: для беспризорных беженцев
+          residency_status:
+            before_the_asylum_decision: в процессе предоставления убежища
+            with_a_residence_permit: с видом на жительство
+            with_deportation_decision: с заключением о депортации
+            with_temporary_suspension_of_deportation: с правом на кратковременное пребывание в стране
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
       noscript_warning: |
@@ -1362,6 +1380,29 @@ ru:
       why:
         heading: Для чего существует clarat?
         text: clarat помогает найти необходимую помощь. В Германии существует множество организаций по поддержке детей, молодежи и семей, а так же для помощи беженцам. Однако часто их довольно сложно найти. Именно в этом мы и помогаем. Если речь идет о семейных вопросах и проблемах, тебе нужно в clarat family (кларат фэмили). Если о беженцах - clarat refugees (кларат рефюджис).
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: Impressum
       notice: clarat — это поисковик. clarat скажет вам, где вы можете получить помощь. Например, где вы найдете специалистов, которые помогут с вашей проблемой. clarat также может помочь вам в ваших поисках.
@@ -1480,6 +1521,8 @@ ru:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    fr: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

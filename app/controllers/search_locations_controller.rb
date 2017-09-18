@@ -5,7 +5,7 @@ class SearchLocationsController < ApplicationController
   respond_to :json
 
   def show
-    requested_location = Sanitize.clean(params[:id])
+    requested_location = params[:id].force_encoding('UTF-8')
     @search_location = SearchLocation.find_or_generate requested_location
     respond_with @search_location
   end

@@ -30,7 +30,7 @@ feature 'Organization display' do
 
   scenario 'Organization with invisible location does not show it but shows'\
            'the website' do
-    offer = FactoryGirl.create :offer
+    offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'approved'
     orga.locations.first.update_columns visible: false
@@ -44,7 +44,7 @@ feature 'Organization display' do
 
   scenario 'Organization with invisible location and without website does'\
            'not show where section' do
-    offer = FactoryGirl.create :offer
+    offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'approved'
     orga.locations.first.update_columns visible: false

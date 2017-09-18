@@ -2,3 +2,4 @@ basic:
   id: 1
   address: 'test@example.org'
   aasm_state: 'uninformed'
+  security_code: correct

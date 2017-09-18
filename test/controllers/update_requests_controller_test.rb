@@ -4,7 +4,7 @@ require_relative '../test_helper'
 describe UpdateRequestsController do
   describe "GET 'new'" do
     it 'should work' do
-      xhr :get, :new, params: { locale: 'de' }
+      get :new, xhr: true, params: { locale: 'de' }
       assert_response :success
       assert_template :new
     end

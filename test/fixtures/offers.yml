@@ -14,3 +14,5 @@ basic:
   area_id: 1
   solution_category_id: 1
   logic_version_id: 1
+  contact_people: contact_one
+  slug: basicSlug

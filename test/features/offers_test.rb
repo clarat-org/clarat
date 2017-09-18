@@ -7,7 +7,7 @@ feature 'Offer display' do
     visit unscoped_offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name
-    page.must_have_content offer.name
+    page.must_have_content offer.name_de
   end
 
   scenario 'Expired offer gets shown' do
@@ -16,7 +16,7 @@ feature 'Offer display' do
     visit unscoped_offer_path offer
     page.must_have_content offer.name
     click_link offer.organizations.first.name
-    page.must_have_content offer.name
+    page.must_have_content offer.name_de
   end
 
   scenario 'Approved offer gets shown in a different language (English)' do

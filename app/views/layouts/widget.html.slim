@@ -57,3 +57,9 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
     .page-wrap
       #yield-wrap
         = yield
+    = render 'layouts/partials/general_assets'
+
+javascript:
+  $('document').ready(function(){
+    $('.JS-Cookie-warning').remove()
+  });

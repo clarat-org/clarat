@@ -10,22 +10,18 @@ module SearchFormHelper
   end
 
   def geo_location params, geocoded
-    case params[:city]
-    when 'berlin' then '52.52000659999999,13.404954'
-    when 'hamburg' then '53.5510846,9.9936818'
-    when 'muenchen' then '48.1351253,11.5819806'
-    when 'dortmund' then '51.5135872,7.465298100000001'
+    if params[:city]
+      file = YAML.load_file('config/city_locations.yml')
+      file[params[:city]]
     else
       geocoded
     end
   end
 
   def location params, search_location
-    case params[:city]
-    when 'berlin' then 'Berlin'
-    when 'hamburg' then 'Hamburg'
-    when 'muenchen' then 'München'
-    when 'dortmund' then 'Dortmund'
+    if params[:city]
+      file = YAML.load_file('config/city_names.yml')
+      file[params[:city]]
     else
       search_location
     end

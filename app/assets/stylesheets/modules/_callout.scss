@@ -9,6 +9,32 @@
   }
 }
 
+.Callout__section {
+  padding: 46px 37px 0;
+}
+
+.Callout__icon {
+  margin-bottom: 12px;
+
+  [data-section="family"] & {
+    fill: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    fill: $brand_core_refugees;
+  }
+}
+
 .Callout__headline {
   @extend %roboto_slabregular;
+  font-size: 26px;
+  margin-bottom: 15px;
+
+  [data-section="family"] & {
+    color: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    color: $brand_core_refugees;
+  }
 }

@@ -598,6 +598,11 @@ tr:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -607,11 +612,6 @@ tr:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -687,9 +687,9 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
+        residency_status: 
         sort: Göre sırala
         target_audience: Kim için destek?
-        residency_status: 
       option_any: fark etmez
       pagination:
         back: geri
@@ -866,6 +866,26 @@ tr:
           link: Burada daha fazla bilgi alabilirsin
           refugees: Yakında mülteciler için de hizmetlerimiz olacaktır
           text: clarat.org henüz yapım aşamasındadır
+      callout:
+        callout:
+          callout:
+            family:
+              how:
+                heading: 
+              who:
+                text: 
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
       footer:
         about: Hakkımızda
         blog: Blog
@@ -887,6 +907,23 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -894,6 +931,7 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
+        more_information_overlay: 
         send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
@@ -938,43 +976,6 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
-      callout:
-        callout:
-          callout:
-            family:
-              how:
-                heading: 
-              who:
-                text: 
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
     widget:
       category_headline: 
   offer:
@@ -1009,9 +1010,15 @@ tr:
             female: Yalnızca bayanlar için
             girls_only: Yalnızca bayanlar için
             male: Yalnızca erkekler için
+          residency_status:
+            before_the_asylum_decision: iltica prosedüründe
+            with_a_residence_permit: oturma izni ile
+            with_deportation_decision: sınırdışı belgesi ile
+            with_temporary_suspension_of_deportation: müsamaha ile
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için
+            family_everyone: 
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
             family_parents_to_be: Ebeveyn adayları için
@@ -1020,19 +1027,13 @@ tr:
             nuclear_family: Aileler için
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
-            relatives: Tanıdık ve akrabalar için
-            family_everyone: 
             refugees_children: Kaçan çocuklar için
             refugees_families: Kaçan aileler için
             refugees_general: Mülteciler için
             refugees_parents: Kaçan ebeveynler için
             refugees_parents_to_be: ebeveyn olacak mülteciler için
             refugees_uf: sahipsiz, reşit olmayan mülteciler için
-          residency_status:
-            before_the_asylum_decision: iltica prosedüründe
-            with_a_residence_permit: oturma izni ile
-            with_deportation_decision: sınırdışı belgesi ile
-            with_temporary_suspension_of_deportation: müsamaha ile
+            relatives: Tanıdık ve akrabalar için
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |
@@ -1262,26 +1263,6 @@ tr:
     faq:
       title: Sıkça sorulan sorular
     home:
-      how:
-        heading: Clarat nasıl çalışıyor?
-        text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
-      meta_description:
-        2017-07-17, visits=2: 
-        family: 
-        refugees: 
-      meta_title:
-        2017-07-17, visits=2: 
-        family: 
-        refugees: 
-      title:
-        family: Çocuk, genç ve aileler için destek programları
-        refugees: Mülteciler için destek programları
-      whom:
-        heading: Clarat kimler için var?
-        text: Clarat herkes için var. Clarat family çocuklar, gençler ve ailelerin hizmetinde. Clarat refugees mülteciler için. Burada kendin, ailen veya arkadaşlarınla ilgili her soruya ve probleme çözüm bulabilirsin. Yardıma ihtiyacı olan tanıdığın diğer insanlar için de destek veriyoruz.
-      why:
-        heading: Clarat neden var?
-        text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
       callout:
         "#{@current_section}":
           who:
@@ -1305,6 +1286,26 @@ tr:
         who:
           heading: 
           text: 
+      how:
+        heading: Clarat nasıl çalışıyor?
+        text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
+      meta_description:
+        2017-07-17, visits=2: 
+        family: 
+        refugees: 
+      meta_title:
+        2017-07-17, visits=2: 
+        family: 
+        refugees: 
+      title:
+        family: Çocuk, genç ve aileler için destek programları
+        refugees: Mülteciler için destek programları
+      whom:
+        heading: Clarat kimler için var?
+        text: Clarat herkes için var. Clarat family çocuklar, gençler ve ailelerin hizmetinde. Clarat refugees mülteciler için. Burada kendin, ailen veya arkadaşlarınla ilgili her soruya ve probleme çözüm bulabilirsin. Yardıma ihtiyacı olan tanıdığın diğer insanlar için de destek veriyoruz.
+      why:
+        heading: Clarat neden var?
+        text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1410,6 +1411,7 @@ tr:
     impressum: künye
     kontakt: contact
     liste: liste
+    liste-de-services: 
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
@@ -1422,11 +1424,11 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    widget: 
     widget-handbook-germany: 
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

@@ -14,6 +14,12 @@
   height: 88px;
   background: no-repeat left center;
 
+  a {
+    display: block;
+    width: inherit;
+    height: inherit;
+  }
+
   body.refugees & {
     background-image: image-url('logo--refugees.svg');
     background-size: auto 75px;

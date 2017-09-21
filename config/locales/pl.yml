@@ -722,6 +722,11 @@ pl:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -731,11 +736,6 @@ pl:
       sort_order:
         nearby: Blisko
         relevance: W związku z tematem
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -806,9 +806,9 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
+        residency_status: 
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
-        residency_status: 
       option_any: obojętne
       pagination:
         back: Wróć
@@ -993,6 +993,26 @@ pl:
           link: Tutaj dowiesz się więcej
           refugees: Wkrótce także oferty dla uchodźców
           text: clarat.org jest właśnie przebudowywany
+      callout:
+        callout:
+          callout:
+            family:
+              how:
+                heading: 
+              who:
+                text: 
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
       footer:
         about: O nas
         blog: Blog
@@ -1014,10 +1034,28 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
+        more_information_overlay: 
         send: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
@@ -1054,43 +1092,6 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
-      callout:
-        callout:
-          callout:
-            family:
-              how:
-                heading: 
-              who:
-                text: 
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
     widget:
       category_headline: 
   offer:
@@ -1127,9 +1128,15 @@ pl:
             female: tylko dla dziewcząt i kobiet
             girls_only: tylko dla dziewcząt i kobiet
             male: tylko dla chłopców i mężczyzn
+          residency_status:
+            before_the_asylum_decision: w trakcie procedury azylowej
+            with_a_residence_permit: z pozwoleniem na pobyt
+            with_deportation_decision: z zawiadomieniem o deportacji
+            with_temporary_suspension_of_deportation: z pobytem tolerowanym
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży
+            family_everyone: 
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
             family_parents_to_be: dla przyszłych rodziców
@@ -1138,19 +1145,13 @@ pl:
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
-            relatives: dla znajomych i krewnych
-            family_everyone: 
             refugees_children: dla uchodźców-dzieci
             refugees_families: dla uchodźców-rodzin
             refugees_general: dla uchodźców
             refugees_parents: dla uchodźców-rodziców
             refugees_parents_to_be: dla zbiegłych przyszłych rodziców
             refugees_uf: dla niepełnoletnich uchodźców bez opieki
-          residency_status:
-            before_the_asylum_decision: w trakcie procedury azylowej
-            with_a_residence_permit: z pozwoleniem na pobyt
-            with_deportation_decision: z zawiadomieniem o deportacji
-            with_temporary_suspension_of_deportation: z pobytem tolerowanym
+            relatives: dla znajomych i krewnych
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -1374,26 +1375,6 @@ pl:
     faq:
       title: Często zadawane pytania
     home:
-      how:
-        heading: Jak funkcjonuje clarat?
-        text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
-      meta_description:
-        2017-07-17, visits=2: 
-        family: 
-        refugees: 
-      meta_title:
-        2017-07-17, visits=2: 
-        family: 
-        refugees: 
-      title:
-        family: Oferty wsparcia dla dzieci, młodzieży i rodzin
-        refugees: Oferty wsparcia dla uchodźców
-      whom:
-        heading: Dla kogo jest clarat?
-        text: clarat jest dostępny dla wszystkich. clarat family dla dzieci, młodzieży i ich rodzin. clarat refugees dla uchodźców. Tutaj znajdziesz wsparcie w pytaniach i problemach. Dla Ciebie, Twojej rodziny i twoich przyjaciół. Ale również dla innych osób, które znasz i które potrzebują pomocy.
-      why:
-        heading: Dlaczego istnieje clarat?
-        text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
       callout:
         "#{@current_section}":
           who:
@@ -1417,6 +1398,26 @@ pl:
         who:
           heading: 
           text: 
+      how:
+        heading: Jak funkcjonuje clarat?
+        text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
+      meta_description:
+        2017-07-17, visits=2: 
+        family: 
+        refugees: 
+      meta_title:
+        2017-07-17, visits=2: 
+        family: 
+        refugees: 
+      title:
+        family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+        refugees: Oferty wsparcia dla uchodźców
+      whom:
+        heading: Dla kogo jest clarat?
+        text: clarat jest dostępny dla wszystkich. clarat family dla dzieci, młodzieży i ich rodzin. clarat refugees dla uchodźców. Tutaj znajdziesz wsparcie w pytaniach i problemach. Dla Ciebie, Twojej rodziny i twoich przyjaciół. Ale również dla innych osób, które znasz i które potrzebują pomocy.
+      why:
+        heading: Dlaczego istnieje clarat?
+        text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
     impressum:
       heading: Impressum
       notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
@@ -1521,6 +1522,7 @@ pl:
     impressum: impressum
     kontakt: contact
     liste: Lista
+    liste-de-services: 
     new: nowe
     offers: oferty
     organizations: organizacje
@@ -1533,11 +1535,11 @@ pl:
     unsubscribe: unsubscribe
     update_requests: odśwież
     users: użytkownicy
+    widget: 
     widget-handbook-germany: 
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

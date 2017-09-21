@@ -1,5 +1,5 @@
 div.main-search
-  .wrapper-inner
+  .main-search__wrapper.wrapper-inner
     = simple_form_for search_form,
                       url: offers_path(section: current_section),
                       html: { method: :get, novalidate: false } do |f|

@@ -1,10 +1,22 @@
 footer.footer-main
-  .wrapper-inner
-    p Neuer Footer
+  .footer-main__wrapper.wrapper-inner
+    .footer-main__subscribe
+      = render 'subscriptions/shared/new', subscription: subscription
+    ul.footer-main__facebook
+      li.footer-main__facebook-item--refugees
+        = link_to t('.facebook_refugees'), 'https://www.facebook.com/claratrefugees/'
+      li.footer-main__facebook-item--family
+        = link_to t('.facebook_family'), 'https://www.facebook.com/claratfamily/'
+    nav.nav-legal.footer-main__nav-legal
+      ul.nav-legal__list
+        li.nav-legal__listitem
+          = link_to t('.impressum'), impressum_path(section: current_section)
+        li.nav-legal__listitem
+          = link_to t('.tos'), agb_path(section: current_section)
+        li.nav-legal__listitem
+          = link_to t('.privacy'), privacy_path(section: current_section)
   / section.footer-main__firstrow
     .wrapper-inner
-      .footer-main__subscribe
-        = render 'subscriptions/shared/new', subscription: subscription
 
         / ToDo: Temporarily disable Social Media buttons
         / - cache 'footer_links_1' do
@@ -49,15 +61,7 @@ footer.footer-main
 
     / section.footer-main__secondrow
       .wrapper-inner
-        nav.nav-legal
-          ul.nav-legal__list
-            li.nav-legal__listitem
-              = link_to t('.impressum'),
-                        impressum_path(section: current_section)
-            li.nav-legal__listitem
-              = link_to t('.tos'), agb_path(section: current_section)
-            li.nav-legal__listitem
-              = link_to t('.privacy'), privacy_path(section: current_section)
+
             / li.nav-legal__listitem
             /   / TODO: Refactor or remove after translation testing
             /   #google_translate_element.JS-tooltip

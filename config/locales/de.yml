@@ -1044,6 +1044,11 @@ de:
         xxx: Xxx
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: Before the asylum decision
+        with_a_residence_permit: With a residence permit
+        with_deportation_decision: With deportation decision
+        with_temporary_suspension_of_deportation: With temporary suspension of deportation
       section:
         family: Family
         refugees: Refugees
@@ -1053,11 +1058,6 @@ de:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-      residency_status:
-        before_the_asylum_decision: Before the asylum decision
-        with_a_residence_permit: With a residence permit
-        with_deportation_decision: With deportation decision
-        with_temporary_suspension_of_deportation: With temporary suspension of deportation
   formtastic:
     required: required
   free: 
@@ -1133,9 +1133,9 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        residency_status: Aufenthaltsstatus
         sort: Sortieren nach
         target_audience: Hilfe für wen?
-        residency_status: Aufenthaltsstatus
       option_any: egal
       pagination:
         back: Zurück
@@ -1342,6 +1342,26 @@ de:
           link: Hier erfährst du mehr
           refugees: Bald auch Angebote für Flüchtlinge
           text: clarat.org wird gerade aufgebaut
+      callout:
+        callout:
+          callout:
+            family:
+              how:
+                heading: 
+              who:
+                text: 
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
       footer:
         about: Über uns
         blog: Blog
@@ -1363,6 +1383,23 @@ de:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Hilfe für Kinder, Jugendliche und Familien
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1372,6 +1409,7 @@ de:
             Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
             Hast du etwas gesehen, das wir besser machen können? Oder
             funktioniert etwas nicht richtig? Dann
+        more_information_overlay: 
         send: 
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
@@ -1413,43 +1451,6 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Hilfe für Kinder, Jugendliche und Familien
-      callout:
-        callout:
-          callout:
-            family:
-              how:
-                heading: 
-              who:
-                text: 
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
     widget:
       category_headline: 
   offer:
@@ -1484,9 +1485,15 @@ de:
             female: nur für Mädchen und Frauen
             girls_only: nur für Mädchen und Frauen
             male: nur für Jungen und Männer
+          residency_status:
+            before_the_asylum_decision: im Asylverfahren
+            with_a_residence_permit: mit Aufenthaltserlaubnis
+            with_deportation_decision: mit Abschiebebescheid
+            with_temporary_suspension_of_deportation: mit Duldung
           target_audience:
             children: für Kinder und Jugendliche
             family_children: für Kinder und Jugendliche
+            family_everyone: 
             family_nuclear_family: für Familien
             family_parents: für Eltern
             family_parents_to_be: für werdende Eltern
@@ -1495,19 +1502,13 @@ de:
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
-            relatives: für Bekannte und Verwandte
-            family_everyone: 
             refugees_children: für geflüchtete Kinder
             refugees_families: für geflüchtete Familien
             refugees_general: für Flüchtlinge
             refugees_parents: für geflüchtete Eltern
             refugees_parents_to_be: für geflüchtete werdende Eltern
             refugees_uf: für unbegleitete Flüchtlinge
-          residency_status:
-            before_the_asylum_decision: im Asylverfahren
-            with_a_residence_permit: mit Aufenthaltserlaubnis
-            with_deportation_decision: mit Abschiebebescheid
-            with_temporary_suspension_of_deportation: mit Duldung
+            relatives: für Bekannte und Verwandte
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
       noscript_warning: |
@@ -1777,6 +1778,29 @@ de:
     faq:
       title: Häufige Fragen
     home:
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: Wie funktioniert clarat family?
+          who:
+            text: Alle Familien in Deutschland. Eltern, ihre Kinder und Schwangere finden hier Hilfe. Und auch Freunde und Verwandte.
+        how:
+          heading: 
+          text: "Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt. \n"
+        refugees:
+          how:
+            heading: Wie funktioniert clarat refugees?
+          who:
+            text: Alle Menschen, die nach Deutschland geflüchtet sind. Auch geflüchtete Kinder und Jugendliche. Und Menschen, die Hilfe für Flüchtlinge suchen.
+        what:
+          heading: Was findest du hier?
+          text: "Alle Infos zu Hilfen in deiner Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität. \n"
+        who:
+          heading: Wer findet hier Hilfe?
+          text: 
       how:
         heading: Wie funktioniert clarat?
         text: |
@@ -1813,29 +1837,6 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: Wie funktioniert clarat family?
-          who:
-            text: Alle Familien in Deutschland. Eltern, ihre Kinder und Schwangere finden hier Hilfe. Und auch Freunde und Verwandte.
-        how:
-          heading: 
-          text: "Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt. \n"
-        refugees:
-          how:
-            heading: Wie funktioniert clarat refugees?
-          who:
-            text: Alle Menschen, die nach Deutschland geflüchtet sind. Auch geflüchtete Kinder und Jugendliche. Und Menschen, die Hilfe für Flüchtlinge suchen.
-        what:
-          heading: Was findest du hier?
-          text: "Alle Infos zu Hilfen in deiner Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität. \n"
-        who:
-          heading: Wer findet hier Hilfe?
-          text: 
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1942,6 +1943,7 @@ de:
     impressum: impressum
     kontakt: kontakt
     liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen
@@ -1954,11 +1956,11 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    widget: widget
     widget-handbook-germany: widget-handbook-germany
     widget-hg: widget-hg
     widget-start-with-a-friend: widget-start-with-a-friend
     widget-swaf: widget-swaf
-    liste-de-services: liste-de-services
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

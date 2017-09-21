@@ -5,8 +5,40 @@
 // ---------------------------------------------------------------
 
 .footer-main {
+  padding: 20px 0;
   background-color: $brand_yellow;
 }
+
+.footer-main__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-main__subscribe {
+  grid-column: 1 / span 4;
+}
+
+.footer-main__facebook {
+  grid-column: 5 / span 2;
+
+}
+
+.footer-main__nav-legal {
+  grid-column: 8 / span 6;
+}
+
+.footer-main__facebook-item--family {
+  [data-section="refugees"] & {
+    display: none;
+  }
+}
+
+.footer-main__facebook-item--refugees {
+  [data-section="family"] & {
+    display: none;
+  }
+}
+
 //
 //.footer-main {
 //  .offcanvas-active & {

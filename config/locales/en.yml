@@ -640,6 +640,11 @@ en:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -649,11 +654,6 @@ en:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -730,9 +730,9 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
-        residency_status: Residency status
       option_any: any
       pagination:
         back: Previous
@@ -906,13 +906,33 @@ en:
     modal_create:
       js:
         erb:
-          success: 
+          success: Email successfully entered!
     partials:
       banner:
         teaser:
           link: Find out more
           refugees: Soon with support services for refugees
           text: clarat.org is currently under construction
+      callout:
+        callout:
+          callout:
+            family:
+              how:
+                heading: 
+              who:
+                text: 
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
       footer:
         about: About us
         blog: Blog
@@ -934,6 +954,23 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Support services for children, teenagers and families
       modal:
         beta_modal:
           link: write us a message.
@@ -942,6 +979,7 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
+        more_information_overlay: 
         send: 
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
@@ -981,43 +1019,6 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Support services for children, teenagers and families
-      callout:
-        callout:
-          callout:
-            family:
-              how:
-                heading: 
-              who:
-                text: 
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
     widget:
       category_headline: 
   offer:
@@ -1052,9 +1053,15 @@ en:
             female: girls and women only
             girls_only: girls and women only
             male: boys and men only
+          residency_status:
+            before_the_asylum_decision: during the asylum procedure
+            with_a_residence_permit: with a residence permit
+            with_deportation_decision: with deportation notice
+            with_temporary_suspension_of_deportation: with temporary suspension of deportation
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
+            family_everyone: 
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -1063,19 +1070,13 @@ en:
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
-            relatives: for friends and family
-            family_everyone: 
             refugees_children: for refugee children
             refugees_families: for refugee families
             refugees_general: for refugees
             refugees_parents: for refugee parents
             refugees_parents_to_be: for refugee expectant parents
             refugees_uf: for unaccompanied refugees
-          residency_status:
-            before_the_asylum_decision: during the asylum procedure
-            with_a_residence_permit: with a residence permit
-            with_deportation_decision: with deportation notice
-            with_temporary_suspension_of_deportation: with temporary suspension of deportation
+            relatives: for friends and family
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1392,6 +1393,29 @@ en:
     faq:
       title: Frequently asked questions
     home:
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
@@ -1416,29 +1440,6 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: 
-          who:
-            text: 
-        how:
-          heading: 
-          text: 
-        refugees:
-          how:
-            heading: 
-          who:
-            text: 
-        what:
-          heading: 
-          text: 
-        who:
-          heading: 
-          text: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1545,6 +1546,7 @@ en:
     impressum: impressum
     kontakt: contact
     liste: liste
+    liste-de-services: 
     new: new
     offers: offers
     organizations: organizations
@@ -1557,11 +1559,11 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
+    widget: 
     widget-handbook-germany: 
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: Please fill out this field

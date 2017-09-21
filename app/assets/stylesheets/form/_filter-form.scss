@@ -6,11 +6,12 @@
 
 .filter-form {
   @extend %clearfix;
-  display: none;
+  // display: none;
   position: relative;
+  width: 100%;
   // overflow: hidden;
-  margin: -15px 1px 45px;
-  padding: 12px 20px 5px 10px;
+  // margin: -15px 1px 45px;
+  // padding: 12px 20px 5px 10px;
   background-color: $brand_beige;
 
   &.is-visible {
@@ -124,10 +125,6 @@
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2;
-
-    body.refugees & {
-      display: none;
-    }
   }
 
   &#exclusive_gender {
@@ -136,10 +133,14 @@
     order: 3;
   }
 
-  &#contact_type {
+  &#residency_status {
     -ms-flex-order: 4;
     -webkit-order: 4;
     order: 4;
+
+    body.family & {
+      display: none;
+    }
   }
 }
 
@@ -149,12 +150,6 @@
   color: $brand_brown;
   font-weight: normal;
   font-size: 14px;
-
-  &#age {
-    body.refugees & {
-      display: none;
-    }
-  }
 
   .result-order & {
     float: left;
@@ -271,5 +266,3 @@
 #advanced_search .sort_order {
   display: none;
 }
-
-

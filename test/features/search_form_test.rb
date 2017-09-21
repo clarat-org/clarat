@@ -6,7 +6,6 @@ feature 'Search Form' do
     visit home_path(section: :family)
     find('.main-search__submit').click
     page.must_have_content 'Suche'
-    page.must_have_css '#category-tree'
   end
 
   scenario 'Search for unknown location leads to error page' do
@@ -27,7 +26,6 @@ feature 'Search Form' do
     # manually fill in cookie values
     find('.main-search__submit').click
     page.must_have_content 'Suche'
-    page.must_have_css '#category-tree'
     page.must_have_field('search_form_search_location', with: 'Köln')
   end
 

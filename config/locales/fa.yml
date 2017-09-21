@@ -646,6 +646,11 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -718,6 +723,7 @@ fa:
         language: زبان
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
+        residency_status: 
       option_any: اهمیت ندارد
       pagination:
         back: بازگشت
@@ -730,8 +736,6 @@ fa:
         categories: طبقه بندی ها
         filter: فیلتر
         map: نقشه
-      more_info_button: نزد مشاور
-      more_info_text: 'اطلاعات بیشتر در مورد:'
     search_results:
       bridge: برای جستجوی عبارت
       enclosing: پیدا کردن
@@ -945,15 +949,6 @@ fa:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
-        more_information_overlay: با عرض پوزش.متاسفانه برای جستجوی تو هیچ مشاوری وجود ندارد.ما اما سعی می کنیم پیشنهادات خود را توسعه بدهیم.با کمال میل و به محض اینکه در clarat اطلاعات بیشتری در مورد جستجوی تو بدست آوردیم،تو را در جریان می گذاریم.به همین منظور آدرس ایمیل خود را در اینجا وارد کن.
-        popup:
-          button: بله،لطفا
-          email_placeholder: عنوان الإیمیل *
-          footer: از نام و آدرس ایمیل تو فقط در جهت برقراری ارتباط با تو استفاده می شود.تو بوسیله آنها مشترک هیچگونه مجله خبری از طریق ایمیل نمی شوی و آدرس ایمیل تو به شخص ثالثی داده نمی شود.
-          headline: ۲۰ یورو برای ابراز نظر تو
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: نام *
-          text: آن چیزی را که ما می توانیم بهبود بدهیم و یا مورد علاقه تو می باشد را به ما اعلام کن.بدین منظور ما با کمال میل با تو تماس می گیریم.آیا اجازه ارسال ایمیل با اعلام جزئیات را به تو داریم؟
         send: 
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
@@ -1010,6 +1005,26 @@ fa:
       hero:
         claim:
           family: کمک برای کودکان،جوانان و خانواده ها
+      callout:
+        callout:
+          callout:
+            family:
+              how:
+                heading: 
+              who:
+                text: 
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
     widget:
       category_headline: 
   offer:
@@ -1056,6 +1071,18 @@ fa:
             parents: برای والدین
             pregnant_woman: برای زنان باردار
             relatives: برای آشنایان و فامیل
+            family_everyone: 
+            refugees_children: برای کودکان پناهنده
+            refugees_families: برای خانواده های پناهنده
+            refugees_general: برای پناهندگان
+            refugees_parents: برای والدین پناهنده
+            refugees_parents_to_be: برای والدین پناهنده چشم به راه کودک
+            refugees_uf: برای پناهندگان بدون همراه
+          residency_status:
+            before_the_asylum_decision: در طول پروسه روند رسیدگی به پناهندگی
+            with_a_residence_permit: با اجازه اقامت
+            with_deportation_decision: با برگه ترک خاک
+            with_temporary_suspension_of_deportation: با دولدونگ
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1301,6 +1328,29 @@ fa:
         text: |-
           با clarat پیدا کردن کمک آسانتر می شود.در آلمان پیشنهاد های زیادی وجود دارند که از کودکان و جوانان و خانواده ها حمایت می کنند و همچنین پیشنهاد های زیادی برای پناهندگان.اما اغلب پیدا کردن آنها سخت می باشد.اگر در مورد موضوع خانواده باشد در clarat family و اگر در مورد موضوع پناهندگی در  clarat
           refugees جستجو کن.
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: اطلاعات کلی سازمان
       notice: clarat یک  ماشین جستجو است و به تو می گوید که کجا کمک دریافت می کنی.بطور مثال کجا کارشناسانی را پیدا می کنی که تو را با مشکی که داری کمک کنند.clarat تو را فقط در جستجوی کمک یاری می دهد.

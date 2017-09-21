@@ -1,4 +1,3 @@
-# TODO: gueltige werte fuer category?
 class Clarat.Search.Query.Base
   PER_PAGE: 20
   BASE_PRECISION: 500
@@ -8,7 +7,7 @@ class Clarat.Search.Query.Base
     (@query = '', @category = null, @facetFilters = [], @page = null,
       @sort_order = 'nearby') ->
       # Algolia seems to want this string in an array
-      @categoryArray = if @category then [@category] else []
+      @categoryArray = [] # NOTE use this later for tags?!
 
   query_hash: ->
     _.merge @page_query(),

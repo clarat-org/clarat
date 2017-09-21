@@ -28,14 +28,12 @@ about supported directives.
 # = require hammerjs
 # = require ifvisible.js
 
-
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
 # = require_tree ./location/templates
 # = require_tree ./single_click_button/templates
 # = require_tree ./gmaps/templates
-# = require_tree ./category_links_to_search/templates
 #
 # = require setup
 #
@@ -60,13 +58,10 @@ about supported directives.
 # = require active_script/presenter
 # = require active_script/model
 #
-# = require category_links_to_search/presenter
-#
 # = require search/setup
 # = require search/model
 # = require search/persister
 # = require search/presenter
-# = require search/operations/update_categories
 # = require search/operations/update_advanced_search
 # = require search/operations/build_map
 # = require search/cells/search

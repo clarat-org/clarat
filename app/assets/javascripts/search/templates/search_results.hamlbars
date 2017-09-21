@@ -36,8 +36,6 @@
     .Breadcrumbs--offer-index
       %div.Breadcrumb__container
         = hb! 'main_results_query'
-        %div.Breadcrumb__path
-          = hb! 'main_results_headline'
         %div.Breadcrumb__location
           = hb! 'main_results_location'
       %a{href: 'https://www.algolia.com/', target: '_blank'}

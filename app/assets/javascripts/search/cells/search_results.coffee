@@ -47,7 +47,6 @@ class Clarat.Search.Cell.SearchResults
     return specificViewObject =
       personal_focus_with_remote:
         @mainResults.nbHits + @remoteResults.nbHits > 0
-      main_results_headline: @mainResultsHeadline('personal_offers')
       main_results_location: @mainResultsLocation()
       remote_results_headline:
         I18n.t 'js.search_results.remote_offers', count: @remoteResults.nbHits
@@ -64,14 +63,8 @@ class Clarat.Search.Cell.SearchResults
 
     return specificViewObject =
       personal_focus_with_remote: false
-      main_results_headline: @mainResultsHeadline('remote_offers')
       remote_focus: true
       toggle_personal_anchor: I18n.t('js.search_results.show_personal') # TODO: permanent? +css
-
-
-  mainResultsHeadline: (i18nKey) ->
-    if @model.category
-      "#{@breadcrumbPath @model}"
 
   mainResultsQuery: () ->
     if @model.query
@@ -89,18 +82,6 @@ class Clarat.Search.Cell.SearchResults
     output = @model.search_location
     if @model.exact_location == 'true'
       output += HandlebarsTemplates['remove_exact_location']()
-
-    output
-
-  # breadcrumps to active category
-  breadcrumbPath: (@model) ->
-    output = ''
-    ancestors = @model.categoryWithAncestors() || []
-    last_index = ancestors.length - 1
-
-    for category, index in ancestors
-      output += Handlebars.partials['_category_link'] name: category
-      output += '&nbsp;›&nbsp;' unless index is last_index
 
     output
 

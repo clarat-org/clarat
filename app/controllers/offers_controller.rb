@@ -11,7 +11,6 @@ class OffersController < ApplicationController
   end
 
   def index
-    @category_tree ||= Category.sorted_hash_tree
     prepare_location_unavailable
     prepare_more_info_interest
     render :index

@@ -40,17 +40,13 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
 
       $offCanvasContainer = $('#off-canvas-container')
       $tabFilter = $offCanvasContainer.find('#tab_filter')
-      $tabCategories = $offCanvasContainer.find('#tab_categories')
       $advancedSearch = $('#advanced_search')
-      $categories = $('#categories')
       $asideStandard = $('.aside-standard:first')
       $listingResults = $('.Listing-results:first')
       $asideStandardContainer = $('.aside-standard__container') # quasi map
       $tabMap = $('#tab_map')
 
       if $(window).width() < 750
-        # Put categories in offcanvascontainer
-        $categories.appendTo $tabCategories
         # Put $advancedSearch in offcanvascontainer
         $advancedSearch.appendTo $tabFilter
         # Put map in tab map in Off C
@@ -59,8 +55,6 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
 
 
       else
-        # Put categories in aside
-        $categories.prependTo $asideStandard
         # Put $advancedSearch above Listing-results
         $advancedSearch.insertBefore $listingResults
         # Put map to sidebar again

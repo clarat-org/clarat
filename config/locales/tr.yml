@@ -914,14 +914,6 @@ tr:
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
         more_information_overlay: 
-        popup:
-          button: 
-          email_placeholder: E-Mail Adresi *
-          footer: 
-          headline: 
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: İsim *
-          text: 
         send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
@@ -966,6 +958,44 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
     widget:
       category_headline: 
   offer:

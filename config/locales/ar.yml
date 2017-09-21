@@ -906,17 +906,6 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
-        more_information_overlay: 'عذراً. للأسف لايوجد مرشد بخصوص موضوع بحثك. ولكننا نسعى بشكل مستمر لتوسيع عروض المساعدة المتوفرة. سنقوم بكل سرور بإخبارك حالما يتوفر لدى clarat المزيد من المعلومات بخصوص موضوع بحثك. من أجل ذلك قم بإدخال عنوان بريدك الإلكتروني هنا.
-
-'
-        popup:
-          button: نعم؛ من فضلك
-          email_placeholder: عنوان البريد الإليكتروني *
-          footer: إسمك وعنوان الإيميل الخاص بك سوف يستخدمان فقط للتواصل معك. ولن يتم إشراكك في مجموعة إخباريةولن يتم إعطاء إيميلك لطرف ثالث.
-          headline: ٢٠ يورو مقابل إبداء رأيك فينا.
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: الإسم *
-          text: قل لنا ما الذي يمكننا تحسينه. أو ما الذي يعجبك. يسعدنا التواصل معك تليفونياً. هل يمكن أن نرسل لك إيميل بالتفاصيل؟
         send: 
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
@@ -961,6 +950,44 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
     widget:
       category_headline: 
   offer:

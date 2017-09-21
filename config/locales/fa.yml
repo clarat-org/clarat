@@ -730,8 +730,6 @@ fa:
         categories: طبقه بندی ها
         filter: فیلتر
         map: نقشه
-      more_info_button: نزد مشاور
-      more_info_text: 'اطلاعات بیشتر در مورد:'
     search_results:
       bridge: برای جستجوی عبارت
       enclosing: پیدا کردن
@@ -945,15 +943,7 @@ fa:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
-        more_information_overlay: با عرض پوزش.متاسفانه برای جستجوی تو هیچ مشاوری وجود ندارد.ما اما سعی می کنیم پیشنهادات خود را توسعه بدهیم.با کمال میل و به محض اینکه در clarat اطلاعات بیشتری در مورد جستجوی تو بدست آوردیم،تو را در جریان می گذاریم.به همین منظور آدرس ایمیل خود را در اینجا وارد کن.
-        popup:
-          button: بله،لطفا
-          email_placeholder: عنوان الإیمیل *
-          footer: از نام و آدرس ایمیل تو فقط در جهت برقراری ارتباط با تو استفاده می شود.تو بوسیله آنها مشترک هیچگونه مجله خبری از طریق ایمیل نمی شوی و آدرس ایمیل تو به شخص ثالثی داده نمی شود.
-          headline: ۲۰ یورو برای ابراز نظر تو
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: نام *
-          text: آن چیزی را که ما می توانیم بهبود بدهیم و یا مورد علاقه تو می باشد را به ما اعلام کن.بدین منظور ما با کمال میل با تو تماس می گیریم.آیا اجازه ارسال ایمیل با اعلام جزئیات را به تو داریم؟
+        more_information_overlay: 
         send: 
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
       nav_lang:
@@ -993,6 +983,44 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
   offer:
     stamp:
       target_audience:

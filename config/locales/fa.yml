@@ -646,6 +646,11 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -718,6 +723,9 @@ fa:
         language: زبان
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
+        residency_status: 
+      more_info_button: نزد مشاور
+      more_info_text: 'اطلاعات بیشتر در مورد:'
       option_any: اهمیت ندارد
       pagination:
         back: بازگشت
@@ -939,6 +947,23 @@ fa:
         twitter:
           anchor: توییتر
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: کمک برای کودکان،جوانان و خانواده ها
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
@@ -1021,6 +1046,8 @@ fa:
             refugees:
               heading: 
               text: 
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1065,6 +1092,18 @@ fa:
             parents: برای والدین
             pregnant_woman: برای زنان باردار
             relatives: برای آشنایان و فامیل
+            family_everyone: 
+            refugees_children: برای کودکان پناهنده
+            refugees_families: برای خانواده های پناهنده
+            refugees_general: برای پناهندگان
+            refugees_parents: برای والدین پناهنده
+            refugees_parents_to_be: برای والدین پناهنده چشم به راه کودک
+            refugees_uf: برای پناهندگان بدون همراه
+          residency_status:
+            before_the_asylum_decision: در طول پروسه روند رسیدگی به پناهندگی
+            with_a_residence_permit: با اجازه اقامت
+            with_deportation_decision: با برگه ترک خاک
+            with_temporary_suspension_of_deportation: با دولدونگ
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1310,6 +1349,29 @@ fa:
         text: |-
           با clarat پیدا کردن کمک آسانتر می شود.در آلمان پیشنهاد های زیادی وجود دارند که از کودکان و جوانان و خانواده ها حمایت می کنند و همچنین پیشنهاد های زیادی برای پناهندگان.اما اغلب پیدا کردن آنها سخت می باشد.اگر در مورد موضوع خانواده باشد در clarat family و اگر در مورد موضوع پناهندگی در  clarat
           refugees جستجو کن.
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: اطلاعات کلی سازمان
       notice: clarat یک  ماشین جستجو است و به تو می گوید که کجا کمک دریافت می کنی.بطور مثال کجا کارشناسانی را پیدا می کنی که تو را با مشکی که داری کمک کنند.clarat تو را فقط در جستجوی کمک یاری می دهد.
@@ -1395,13 +1457,11 @@ fa:
     definitions: توضیحات
     emails: ایمیل ها
     faq: سوالات رایج
-    fr: fr
     haeufige-fragen: سوالات رایج
     home: خانه
     impressum: 'اطلاعات کلی '
     kontakt: تماس
     liste: لیست
-    liste-de-services: لیست خدمات
     new: جدید
     offers: پیشنهادها
     organizations: سازمان ها
@@ -1415,6 +1475,12 @@ fa:
     update_requests: update_requests
     users: کاربر
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
+    fr: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

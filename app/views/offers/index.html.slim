@@ -23,8 +23,3 @@ noscript.NoScript
 = modal_for 'unavailable_location_overlay', autoopen: false do
   p= t '.unavailable_location_modal'
   = render '/update_requests/new', update_request: @update_request
-
-/ prepare fake door modal
-= modal_for 'more_information_overlay', autoopen: false do
-  p= t '.more_information_overlay'
-  = render '/update_requests/new', update_request: @more_info_interest

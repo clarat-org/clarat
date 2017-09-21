@@ -589,6 +589,11 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -663,6 +668,9 @@ ar:
         language: اللغة
         sort: رتب حسب
         target_audience: المساعدة لمن؟
+        residency_status: 
+      more_info_button: 'إلى مقدم المشورة:'
+      more_info_text: 'للمزيد من المعلومات حول:'
       option_any: سواء
       pagination:
         back: للخلف
@@ -872,6 +880,23 @@ ar:
         twitter:
           anchor: تويتر
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: مساعدة للأطفال والمراهقين و الأسرة
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -881,7 +906,6 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
-        more_information_overlay: 
         send: 
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
@@ -964,6 +988,8 @@ ar:
             refugees:
               heading: 
               text: 
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1011,6 +1037,18 @@ ar:
             parents: للآباء
             pregnant_woman: للحوامل
             relatives: للمعارف والأقارب
+            family_everyone: 
+            refugees_children: للأجئين الأطفال
+            refugees_families: للأسرة اللاجئة
+            refugees_general: للاجئين
+            refugees_parents: للاجئين من الآباء
+            refugees_parents_to_be: للاجئين الذين سيصيرون قريباً آباء
+            refugees_uf: للاجئين غير المصحوبين
+          residency_status:
+            before_the_asylum_decision: في قضية اللجوء
+            with_a_residence_permit: بتصريح إقامة
+            with_deportation_decision: بقرار الترحيل
+            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -1260,6 +1298,29 @@ ar:
       why:
         heading: لماذا توجد كلارات؟
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: Impressum
       notice: كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط.
@@ -1356,13 +1417,11 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
-    fr: 
     haeufige-fragen: أسئلة-شائعة
     home: الصفحة الرئيسية
     impressum: هيئة التحرير
     kontakt: إتصال
     liste: القائمة
-    liste-de-services: قائمة الخدمات
     new: جديد
     offers: عروض
     organizations: منظمة
@@ -1376,6 +1435,12 @@ ar:
     update_requests: طلبات-تحديث
     users: مستخدم
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
+    fr: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

@@ -607,6 +607,11 @@ tr:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -684,6 +689,9 @@ tr:
         language: Dil
         sort: Göre sırala
         target_audience: Kim için destek?
+        residency_status: 
+      more_info_button: 
+      more_info_text: 
       option_any: fark etmez
       pagination:
         back: geri
@@ -881,6 +889,23 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -971,6 +996,8 @@ tr:
             refugees:
               heading: 
               text: 
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1015,6 +1042,18 @@ tr:
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
             relatives: Tanıdık ve akrabalar için
+            family_everyone: 
+            refugees_children: Kaçan çocuklar için
+            refugees_families: Kaçan aileler için
+            refugees_general: Mülteciler için
+            refugees_parents: Kaçan ebeveynler için
+            refugees_parents_to_be: ebeveyn olacak mülteciler için
+            refugees_uf: sahipsiz, reşit olmayan mülteciler için
+          residency_status:
+            before_the_asylum_decision: iltica prosedüründe
+            with_a_residence_permit: oturma izni ile
+            with_deportation_decision: sınırdışı belgesi ile
+            with_temporary_suspension_of_deportation: müsamaha ile
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
       noscript_warning: |
@@ -1264,6 +1303,29 @@ tr:
       why:
         heading: Clarat neden var?
         text: Clarat ile kolayca aradığın yardımı bulabilirsin. Almanya’da çocuklar, gençler ve ailelere destek olan cok çeşitli teklifler var. Bunların yanı sıra mülteciler için de bir çok imkan var ancak bunları bulmak kolay değil. İşte sana tam da bu aşamada yardımcı oluyoruz. Ailevi konularda clarat family’ye, sığınma konuları hakkında clarat refugees’e başvurabilirsin.
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1363,13 +1425,11 @@ tr:
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
-    fr: 
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home: home
     impressum: künye
-    kontakt: 
-    liste: 
-    liste-de-services: 
+    kontakt: contact
+    liste: liste
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
@@ -1383,6 +1443,12 @@ tr:
     update_requests: update_request
     users: kullanıcılar
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
+    fr: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

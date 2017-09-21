@@ -731,6 +731,11 @@ pl:
       sort_order:
         nearby: Blisko
         relevance: W związku z tematem
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -803,6 +808,9 @@ pl:
         language: Język
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
+        residency_status: 
+      more_info_button: 
+      more_info_text: 
       option_any: obojętne
       pagination:
         back: Wróć
@@ -1008,6 +1016,23 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
@@ -1087,6 +1112,8 @@ pl:
             refugees:
               heading: 
               text: 
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1133,6 +1160,18 @@ pl:
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
             relatives: dla znajomych i krewnych
+            family_everyone: 
+            refugees_children: dla uchodźców-dzieci
+            refugees_families: dla uchodźców-rodzin
+            refugees_general: dla uchodźców
+            refugees_parents: dla uchodźców-rodziców
+            refugees_parents_to_be: dla zbiegłych przyszłych rodziców
+            refugees_uf: dla niepełnoletnich uchodźców bez opieki
+          residency_status:
+            before_the_asylum_decision: w trakcie procedury azylowej
+            with_a_residence_permit: z pozwoleniem na pobyt
+            with_deportation_decision: z zawiadomieniem o deportacji
+            with_temporary_suspension_of_deportation: z pobytem tolerowanym
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -1376,6 +1415,29 @@ pl:
       why:
         heading: Dlaczego istnieje clarat?
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
+      callout:
+        "#{@current_section}":
+          who:
+            text: 
+        family:
+          how:
+            heading: 
+          who:
+            text: 
+        how:
+          heading: 
+          text: 
+        refugees:
+          how:
+            heading: 
+          who:
+            text: 
+        what:
+          heading: 
+          text: 
+        who:
+          heading: 
+          text: 
     impressum:
       heading: Impressum
       notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
@@ -1474,13 +1536,11 @@ pl:
     definitions: definicje
     emails: e-maile
     faq: często-zadawane-pytania
-    fr: fr
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
-    kontakt: 
+    kontakt: contact
     liste: Lista
-    liste-de-services: liste-de-services
     new: nowe
     offers: oferty
     organizations: organizacje
@@ -1494,6 +1554,12 @@ pl:
     update_requests: odśwież
     users: użytkownicy
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
+    fr: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

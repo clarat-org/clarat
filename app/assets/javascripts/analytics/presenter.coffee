@@ -9,12 +9,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     window.onbeforeunload = @onBeforeUnload
 
   CALLBACKS:
-    '.JS-MoreInformationButton':
-      click: 'handleShowMoreInformationClick'
-    '.more-information-text':
-      click: 'handleShowMoreInformationClick'
-    '.JS-CategoryLink':
-      click: 'handleCategoryClick'
     'a[href^="http"]':
       click: 'trackClick'
     document:
@@ -25,25 +19,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
     $(e).each =>
       @trackOutboundLink(e.target.href)
     return true
-
-  handleCategoryClick: (e) =>
-    if !@moreInfo && $('span.more_information_theme').html()
-      @moreInfo = $('span.more_information_theme').html().trim()
-      @trackMoreInfoShow(@moreInfo)
-
-    category = e.target.getAttribute('data-name')
-    if (@moreInfo && @moreInfo != category) || !@moreInfo
-      @moreInfo = category
-      @trackMoreInfoShow(@moreInfo)
-
-  trackMoreInfoShow: (moreInfo) =>
-    ga?('send', 'event', 'MoreInfo', 'show',
-        "topic:#{moreInfo};", @pageViewTime
-    )
-
-  handleShowMoreInformationClick: =>
-    topic = $('span.more_information_theme').html().trim()
-    ga?('send', 'event', 'MoreInfo', 'click', "topic:#{topic};", @pageViewTime)
 
   trackOutboundLink: (url) =>
     ga? 'send', 'event', 'outbound', 'click', url,
@@ -91,8 +66,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
     startHover = $.now()
-    @moreInfo = $('span.more_information_theme').html()
-
     $('dfn.JS-tooltip').hover (->
       startHover = $.now()
     ), ->
@@ -106,11 +79,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
   onBeforeUnload: =>
     ga?('send', 'timing', 'PageView', 'total', @pageViewTime)
-
-    if !@moreInfo && $('span.more_information_theme').html()
-      if @moreInfo != $('span.more_information_theme').html().trim()
-        @moreInfo = $('span.more_information_theme').html().trim()
-        @trackMoreInfoShow(@moreInfo)
 
     if $('dfn.JS-tooltip.hovered').length > 0
       keyword = $('dfn.JS-tooltip.hovered').html()

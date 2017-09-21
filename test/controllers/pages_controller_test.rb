@@ -49,6 +49,41 @@ describe PagesController do
     end
   end
 
+  describe "GET 'widget-start-with-a-friend'" do
+    it 'should work' do
+      get :widget_swaf, locale: 'de', section: 'refugees'
+      assert_response :success
+    end
+  end
+
+  describe "GET 'widget-handbook-germany-berlin'" do
+    it 'should work' do
+      get :widget_hg, locale: 'de', section: 'refugees', city: 'berlin'
+      assert_response :success
+    end
+  end
+
+  describe "GET 'widget-handbook-germany-hamburg'" do
+    it 'should work' do
+      get :widget_hg, locale: 'de', section: 'refugees', city: 'hamburg'
+      assert_response :success
+    end
+  end
+
+  describe "GET 'widget-handbook-germany-muenchen'" do
+    it 'should work' do
+      get :widget_hg, locale: 'de', section: 'refugees', city: 'muenchen'
+      assert_response :success
+    end
+  end
+
+  describe "GET 'widget-handbook-germany-dortmund'" do
+    it 'should work' do
+      get :widget_hg, locale: 'de', section: 'refugees', city: 'dortmund'
+      assert_response :success
+    end
+  end
+
   describe "GET 'not_found'" do
     it 'should work' do
       get :not_found, locale: 'de'

@@ -1,0 +1,65 @@
+doctype html
+html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa)?'rtl':'ltr'}"
+  head
+    meta charset="utf-8"
+
+    meta name="twitter:card" content="summary"
+    - og_title = yield(:meta_title)
+    - if !og_title.blank?
+      meta property="og:title" content=og_title
+      meta property="twitter:title" content=og_title
+      title = og_title
+    - else
+      meta property="og:title" content=t("pages.home.meta_title.#{@current_section}")
+      meta property="twitter:title" content=t("pages.home.meta_title.#{@current_section}")
+      title = t("pages.home.meta_title.#{@current_section}")
+
+    - meta_description = yield(:meta_description)
+    - if !meta_description.blank?
+      meta name='description' content=meta_description
+      meta name='og:description' content=meta_description
+      meta name='twitter:description' content=meta_description
+    - else
+      meta name='description' content=t("pages.home.meta_description.#{@current_section}")
+      meta name='og:description' content=t("pages.home.meta_description.#{@current_section}")
+      meta name='twitter:description' content=t("pages.home.meta_description.#{@current_section}")
+
+    - og_image = yield(:og_image)
+    - if !og_image.blank?
+      meta property="og:image" content=og_image
+    - else
+      meta property="og:image" content=asset_url("meta/og_#{@current_section}.png")
+
+    - twitter_image = yield(:twitter_image)
+    - if !twitter_image.blank?
+      meta property="twitter:image" content=twitter_image
+    - else
+      meta property="twitter:image" content=asset_url("meta/tw_#{@current_section}.png")
+
+    meta property="og:site_name" content="clarat"
+
+    = yield(:additional_meta_tags)
+
+    link rel='dns-prefetch' href='https://bam.nr-data.net'
+    link rel='dns-prefetch' href='https://csi.gstatic.com'
+    link rel='dns-prefetch' href='https://maps.googleapis.com'
+    link rel='dns-prefetch' href='https://maps.gstatic.com'
+
+    - canonical_url = content_for(:canonical_url) || default_canonical_url
+    link rel='canonical' href=canonical_url
+
+    - cache ['html_head', I18n.locale] do
+      = render 'layouts/partials/head'
+    = render '/layouts/partials/javascript_config'
+    = csrf_meta_tags
+
+  body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
+    .page-wrap
+      #yield-wrap
+        = yield
+    = render 'layouts/partials/general_assets'
+
+javascript:
+  $('document').ready(function(){
+    $('.JS-Cookie-warning').remove()
+  });

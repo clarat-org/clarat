@@ -8,4 +8,42 @@ module SearchFormHelper
     content = t("shareds.forms.#{i18n_selector}")
     "this.setCustomValidity('#{j(content)}')"
   end
+
+  def geo_location params, geocoded
+    case params[:city]
+    when 'berlin' then '52.52000659999999,13.404954'
+    when 'hamburg' then '53.5510846,9.9936818'
+    when 'muenchen' then '48.1351253,11.5819806'
+    when 'dortmund' then '51.5135872,7.465298100000001'
+    else
+      geocoded
+    end
+  end
+
+  def location params, search_location
+    case params[:city]
+    when 'berlin' then 'Berlin'
+    when 'hamburg' then 'Hamburg'
+    when 'muenchen' then 'München'
+    when 'dortmund' then 'Dortmund'
+    else
+      search_location
+    end
+  end
+
+  def display_where params
+    if params[:city]
+      'display:none'
+    else
+      'display:block'
+    end
+  end
+
+  def target params
+    if params[:action].include?('widget')
+      '_blank'
+    else
+      '_self'
+    end
+  end
 end

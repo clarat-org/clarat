@@ -38,6 +38,11 @@
   }
 }
 
+.Callout__icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 .Callout__headline {
   @extend %roboto_slabregular;
   font-size: 26px;

@@ -83,7 +83,9 @@
 
     &,
     body.refugees &, // Specifity
-    body.family & { // Specifity
+    body.family &, // Specifity
+    body.template--pages-section_choice[data-section="refugees"] &, // Specifity
+    body.template--pages-section_choice[data-section="family"] & { // Specifity
       background-size: 90px 35px;
     }
 
@@ -129,7 +131,19 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: $brand_core_family;
+
+    [data-section="refugees"] & {
+      background-color: $brand_core_refugees;
+    }
+
+    [data-section="family"] & {
+      background-color: $brand_core_family;
+    }
+
+    body.template--pages-section_choice[data-section="refugees"] &, // Specifity
+    body.template--pages-section_choice[data-section="family"] & {
+      background-color: $brand_brown;
+    }
 
     &[aria-hidden="true"] {
       display: none;
@@ -145,8 +159,14 @@
   }
 
   .nav-main__link {
-    color: $brand_white;
     text-decoration: none;
+
+    body[data-section="refugees"] &, // Specifity
+    body[data-section="family"] &, // Specifity
+    body.template--pages-section_choice[data-section="family"] &,
+    body.template--pages-section_choice[data-section="refugees"] & {
+      color: $brand_white;
+    }
   }
 
   button.header-main__nav-main-trigger {
@@ -224,6 +244,38 @@
     body.ar & {
       right: 0;
     }
+  }
+
+  .Callout {
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .Callout__section {
+    float: none;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .Callout__headline {
+    font-size: 18px;
+  }
+
+  .Callout__icon-container {
+    float: left;
+    width: 100px;
+    justify-content: flex-start;
+  }
+
+  .Callout__icon {
+    max-width: 50px;
+    height: auto;
+  }
+
+  .Explainaition-area__headline {
+    font-size: 22px;
   }
 
   .Hero {
@@ -485,13 +537,6 @@
   .nav-welt__listitem {
     min-width: 154px;
     display: inline-block;
-
-    &:first-child {
-
-      a {
-        border-top-left-radius: 8px;
-      }
-    }
 
     a {
       width: 100%;

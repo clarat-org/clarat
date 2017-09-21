@@ -31,10 +31,7 @@
   @extend %layout-col-69;
 
   &.content-main--section_choice {
-    -js-display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
   }
 
   &.content-main--wide {

@@ -637,11 +637,6 @@ fa:
         xxx: 
         zho: Zho
         zza: Zza
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
       section:
         family: خانواده
         refugees: پناهندگان
@@ -651,6 +646,11 @@ fa:
       sort_order:
         nearby: Nearby
         relevance: Relevance
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -721,9 +721,9 @@ fa:
         approach: از چه راهی؟
         gender: جنسیت
         language: زبان
-        residency_status: 
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
+        residency_status: 
       option_any: اهمیت ندارد
       pagination:
         back: بازگشت
@@ -917,33 +917,13 @@ fa:
     modal_create:
       js:
         erb:
-          success: آدرس ایمیل با موفقیت ثبت شد!
+          success: 
     partials:
       banner:
         teaser:
           link: اطلاعات بیشتر در اینجا
           refugees: به زودی پیشنهاد هایی برای پناهندگان
           text: clarat.org در حال بازسازی است
-      callout:
-        callout:
-          callout:
-            family:
-              how:
-                heading: 
-              who:
-                text: 
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
       footer:
         about: در مورد ما
         blog: بلاگ
@@ -965,30 +945,13 @@ fa:
         twitter:
           anchor: توییتر
           href: https://twitter.com/claratpunktorg
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: کمک برای کودکان،جوانان و خانواده ها
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
-        more_information_overlay: 
         send: 
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
+        more_information_overlay: 
       nav_lang:
         legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
         title: |-
@@ -1026,6 +989,61 @@ fa:
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: کمک برای کودکان،جوانان و خانواده ها
+      callout:
+        callout:
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              text: 
+              heading: 
+            refugees:
+              heading: 
+              text: 
+            heading: 
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
     widget:
       category_headline: 
   offer:
@@ -1060,15 +1078,9 @@ fa:
             female: فقط برای دختران و بانوان
             girls_only: فقط برای دختران و بانوان
             male: فقط برای پسرها و مردان
-          residency_status:
-            before_the_asylum_decision: در طول پروسه روند رسیدگی به پناهندگی
-            with_a_residence_permit: با اجازه اقامت
-            with_deportation_decision: با برگه ترک خاک
-            with_temporary_suspension_of_deportation: با دولدونگ
           target_audience:
             children: برای بچه ها و جوانان
             family_children: برای بچه ها و جوانان
-            family_everyone: 
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین
             family_parents_to_be: برای پدر و مادران آینده
@@ -1077,13 +1089,19 @@ fa:
             nuclear_family: برای خانواده ها
             parents: برای والدین
             pregnant_woman: برای زنان باردار
+            relatives: برای آشنایان و فامیل
+            family_everyone: 
             refugees_children: برای کودکان پناهنده
             refugees_families: برای خانواده های پناهنده
             refugees_general: برای پناهندگان
             refugees_parents: برای والدین پناهنده
             refugees_parents_to_be: برای والدین پناهنده چشم به راه کودک
             refugees_uf: برای پناهندگان بدون همراه
-            relatives: برای آشنایان و فامیل
+          residency_status:
+            before_the_asylum_decision: در طول پروسه روند رسیدگی به پناهندگی
+            with_a_residence_permit: با اجازه اقامت
+            with_deportation_decision: با برگه ترک خاک
+            with_temporary_suspension_of_deportation: با دولدونگ
       map_sidebar:
         map_output_searchresults: نمایش آدرس های پیشنهادی در نقشه
       noscript_warning: 'متاسفیم.برای استفاده از جستجو باید مرورگر JavaScript را فعال کنید. '
@@ -1307,29 +1325,6 @@ fa:
     faq:
       title: سوالات رایج
     home:
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: 
-          who:
-            text: 
-        how:
-          heading: 
-          text: 
-        refugees:
-          how:
-            heading: 
-          who:
-            text: 
-        what:
-          heading: 
-          text: 
-        who:
-          heading: 
-          text: 
       how:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
@@ -1443,7 +1438,6 @@ fa:
     impressum: 'اطلاعات کلی '
     kontakt: تماس
     liste: لیست
-    liste-de-services: 
     new: جدید
     offers: پیشنهادها
     organizations: سازمان ها
@@ -1456,11 +1450,11 @@ fa:
     unsubscribe: بدون شرح
     update_requests: update_requests
     users: کاربر
-    widget: 
     widget-handbook-germany: 
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    liste-de-services: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

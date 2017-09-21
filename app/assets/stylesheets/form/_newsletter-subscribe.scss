@@ -39,4 +39,9 @@ input.newsletter-subscribe__input {
   html[dir="rtl"] & {
     @extend %clarat_rounding_start;
   }
+
+  body.template--pages-section_choice[data-section="refugees"] &,
+  body.template--pages-section_choice[data-section="family"] & {
+    background-color: $brand_brown;
+  }
 }

@@ -7,26 +7,30 @@
 /home meta
 - cache ['section_choice', I18n.t] do
 
+  .Mission.wrapper-inner
+    .Mission__stage
+      .Mission__statement
+        h2.Mission_headline Unser Auftrag:
+        .Mission__text Hilfe, die es in Deutschland gibt, sichtbar machen und einfach erklären.
+
   main.content-main.content-main--wide.content-main--section_choice
-    ul.section-choice
+    ul.section-choice.wrapper-inner
       li.section-choice__container
         section.section-choice__family
           = link_to home_path(section: :family) do
             h1.section-choice__headline.section-choice__headline--family[aria-hidden="true"]
-          /a.section-choice__stage.section-choice__stage--family[href='/family/']
-          = link_to '', home_path(section: :family),
-                    class: 'section-choice__stage section-choice__stage--family',
-                    'aria-hidden' => 'true'
           = link_to home_path(section: :family),
                     class: 'section-choice__cta section-choice__cta--family' do
             = t 'layouts.partials.navigation.claim.family'
+          p Bei clarat family finden Familien in Deutschland Infos zu Hilfen in ihrer Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.
       li.section-choice__container
         section.section-choice__refugees
           = link_to home_path(section: :refugees) do
             h1.section-choice__headline.section-choice__headline--refugees[aria-hidden="true"]
-          = link_to '', home_path(section: :refugees),
-                    class: 'section-choice__stage section-choice__stage--refugees',
-                    'aria-hidden' => 'true'
+
           = link_to home_path(section: :refugees),
                     class: 'section-choice__cta section-choice__cta--refugees' do
             = t 'layouts.partials.navigation.claim.refugees'
+          p Bei clarat refugees finden Menschen, die nach Deutschland geflüchtet sind Hilfe. Bei Problemen aus folgenden Bereichen: Asyl & Recht, Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.
+
+    = render 'layouts/partials/callout/callout'

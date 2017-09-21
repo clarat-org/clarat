@@ -4,17 +4,14 @@
   -js-display: flex;
   justify-content: center;
   flex-direction: inherit;
-  width: 1058px;
   list-style: none;
 }
 
 .section-choice__container {
   float: left;
   position: relative;
-  width: 529px;
 
   html[lang="de"] & {
-    width: 450px;
   }
 }
 
@@ -87,11 +84,6 @@
 
 .section-choice__cta--family {
   background-color: $brand_core_family;
-}
-
-.template--pages-section_choice {
-  background: image-url("bg_scratches.jpg");
-  background-size: cover;
 }
 
 .content-main--section_choice {

@@ -188,9 +188,14 @@
     max-width: 100%;
   }
 
+  .Callout__headline {
+    @extend %roboto_slabregular;
+    font-size: 20px;
+  }
 
-
-
+  .Explainaition-area__headline {
+    font-size: 30px;
+  }
 
   // Content ######################################
 
@@ -334,10 +339,6 @@
 
   // Footer ######################################
 
-  .footer-main {
-    padding-top: 80px;
-  }
-
   .footer-main__firstrow {
     height: auto;
   }
@@ -347,7 +348,6 @@
   }
 
   .newsletter-subscribe__submit {
-    border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
 
     html[dir="rtl"] & {

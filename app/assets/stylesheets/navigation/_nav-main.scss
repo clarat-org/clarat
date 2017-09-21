@@ -19,7 +19,6 @@
 }
 
 .nav-main__link {
-  //@extend %roboto_bold;
   font-size: 20px;
   text-decoration: none;
 
@@ -29,5 +28,10 @@
 
   [data-section="refugees"] & {
     color: $brand_core_refugees;
+  }
+
+  body.template--pages-section_choice[data-section="refugees"] &,
+  body.template--pages-section_choice[data-section="family"] & {
+    color: $brand_brown;
   }
 }

@@ -1,0 +1,16 @@
+.Callout
+  section.Callout__section
+    .Callout__icon-container
+      = render 'layouts/partials/callout/icon_who'
+    h4.Callout__headline = t ".who.#{@current_section}.heading"
+    p = t ".who.#{@current_section}.text"
+  section.Callout__section
+    .Callout__icon-container
+      = render 'layouts/partials/callout/icon_what'
+    h4.Callout__headline =  t ".what.#{@current_section}.heading"
+    p = t ".what.#{@current_section}.text"
+  section.Callout__section
+    .Callout__icon-container
+      = render 'layouts/partials/callout/icon_how'
+    h4.Callout__headline =  t ".how.#{@current_section}.heading"
+    p = t ".how.#{@current_section}.text"

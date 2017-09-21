@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170809115013) do
+ActiveRecord::Schema.define(version: 20170802094621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,12 +25,6 @@ ActiveRecord::Schema.define(version: 20170809115013) do
   end
 
   add_index "absences", ["user_id"], name: "index_absences_on_user_id", using: :btree
-
-  create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
-    t.string   "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "areas", force: :cascade do |t|
     t.string   "name",       null: false
@@ -93,6 +87,14 @@ ActiveRecord::Schema.define(version: 20170809115013) do
   end
 
   add_index "categories", ["name_de"], name: "index_categories_on_name_de", using: :btree
+
+  create_table "categories_filters", id: false, force: :cascade do |t|
+    t.integer "filter_id",   null: false
+    t.integer "category_id", null: false
+  end
+
+  add_index "categories_filters", ["category_id"], name: "index_filters_categories_on_category_id", using: :btree
+  add_index "categories_filters", ["filter_id"], name: "index_filters_categories_on_filter_id", using: :btree
 
   create_table "categories_offers", id: false, force: :cascade do |t|
     t.integer "offer_id",    null: false

@@ -289,7 +289,7 @@
     }
 
     .template--pages-section_choice & {
-      margin-top: 3em;
+      margin-top: 1.5em;
       height: auto;
     }
   }
@@ -379,15 +379,24 @@
     }
   }
 
-  html[lang="de"] .section-choice__container,
-  .section-choice__container {
-    width: auto;
-    min-width: 50%;
+  .section-choice__logo {
+    width: 123px;
+    height: 47px;
   }
 
-  .section-choice__headline {
-    background-size: auto 80%;
+  .section-choice__cta {
+    height: 44px;
+    font-size: 16px;
+    padding: 15px;
+
+    &:after {
+      right: -15px;
+      border-top: 22px solid transparent;
+      border-left-width: 15px;
+      border-bottom: 22px solid transparent;
+    }
   }
+
 
   .result-order__label {
     display: none;

@@ -400,7 +400,6 @@
     transform: none;
     left: auto;
     width: 100%;
-    margin: 0 10px;
   }
 
   .section-choice__container {
@@ -413,7 +412,6 @@
   }
 
   .section-choice__cta {
-    width: 100%;
     font-size: 14px;
     margin: 0;
   }
@@ -426,10 +424,19 @@
     top: 35px;
   }
 
+  .Callout__text,
+  .section-choice__text {
+    font-size: 14px;
+  }
+
   .template--pages-section_choice {
     .footer-main {
       padding-top: 0;
     }
+  }
+
+  .Mission {
+    padding-top: 0;
   }
 
   .Mission__stage {

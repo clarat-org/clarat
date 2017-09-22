@@ -139,44 +139,10 @@
     padding: 0 15px;
   }
 
-  .section-choice {
-    width: 90vw;
-  }
 
-  .section-choice__headline {
-    background-size: auto 90%;
-  }
 
-  .section-choice__family,
-  .section-choice__refugees {
-    width: inherit;
-  }
 
-  .section-choice__stage {
-    background-size: auto 100%;
-  }
 
-  html[lang="de"] .section-choice__container,
-  .section-choice__container {
-    width: 45vw;
-  }
-
-  .section-choice__cta {
-    width: 90%;
-    height: 65px;
-    margin: 0 5%;
-    background-size: 18px 32px;
-    padding-left: 45px;
-    font-size: inherit;
-
-    html[lang="de"] & {
-      font-size: 20px;
-    }
-
-    html[dir="rtl"] & {
-      background-size: 18px 32px;
-    }
-  }
 
   .section-start__headline {
     font-size: 20px;

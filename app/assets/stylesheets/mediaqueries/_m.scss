@@ -74,8 +74,6 @@
     }
   }
 
-
-
   .Logo {
     height: 65px;
     width: 100px;
@@ -252,7 +250,7 @@
 
   .Callout {
     padding: 0;
-    
+
     @supports (display: grid) {
       display: grid;
       grid-template-columns: 1fr;
@@ -262,7 +260,7 @@
   .Callout__section {
     float: none;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
     display: flex;
   }
 
@@ -726,8 +724,6 @@
     }
   }
 
-
-
   .Mission__statement,
   .Mission__stage {
     height: 176px;
@@ -757,9 +753,51 @@
     font-size: 14px;
   }
 
+  .section-choice__item {
+    width: 48%;
+    margin: 0 2%;
 
+    &:first-child {
+      margin-left: 0;
+    }
 
-    // Content ######################################
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .section-choice__header {
+    flex-direction: column;
+  }
+
+  .section-choice__logo {
+    margin-bottom: 15px;
+    align-self: flex-start;
+  }
+
+  .section-choice__cta {
+    width: calc(100% - 25px);
+  }
+
+  .section-choice__container {
+    &,
+    .section-choice__item:last-child &,
+    .section-choice__item:first-child & {
+      margin: 0;
+    }
+  }
+
+  .section-choice {
+    margin: 0;
+  }
+
+  .section-choice__item {
+    &:first-child {
+      border: none;
+    }
+  }
+
+  // Content ######################################
 
   .page-wrap:after {
     height: 136px;
@@ -938,26 +976,6 @@
 
   .Type-results__item {
     padding: 5px 8px;
-  }
-
-  .section-choice {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-choice__container {
-    width: auto;
-    margin-bottom: 2em;
-  }
-
-  .section-choice__headline {
-    height: 100px;
-  }
-
-  .section-choice__cta {
-    display: inline-block;
-    height: auto;
-    min-height: 45px;
   }
 
   // Footer ######################################

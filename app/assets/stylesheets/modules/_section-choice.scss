@@ -1,25 +1,27 @@
 .section-choice {
   position: relative;
   list-style: none;
-  padding: 0 0 0 40px;
+  display: flex;
+  padding: 0 25px;
 }
 
-.section-choice__container {
-  float: left;
-  position: relative;
-  width: 45%;
+.section-choice__item {
+  flex: 1;
 
   &:first-child {
-    width: 43%;
-    padding-right: 30px;
+    border-right: 1px solid $brand_brown;
+  }
+}
+
+.section-choice__item {
+  position: relative;
+
+  &:first-child .section-choice__container {
+    margin-right: 40px;
   }
 
-  &:last-child {
-    margin-left: 55px;
-    padding-left: 55px;
-    margin-right: 0px;
-    border-left: 1px solid $brand_brown;
-
+  &:last-child .section-choice__container {
+    margin-left: 40px;
   }
 
 }
@@ -73,6 +75,8 @@
   line-height: 1.33;
   position: relative;
   height: 60px;
+  margin-right: 20px;
+
 
   &:after {
     content: "";

@@ -12,9 +12,7 @@ describe Category do
       it 'should return true when requested category has approved offers' do
         category = categories(:sub1)
         category.offers_in_section?(:family).must_equal false
-        offer.categories << category
-        category.offers_in_section?(:family).must_equal false
-        offer.update_column :aasm_state, :approved
+        offer.categories << category # add approved offer
         category.reload.offers_in_section?(:family).must_equal true
       end
 

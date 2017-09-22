@@ -10,7 +10,7 @@ describe OffersController do
         offer.name = 'bazfuz'
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_response :success
-        assert_select 'title', 'bazfuz | clarat'
+        assert_select 'title', 'basicOfferName | clarat'
       end
 
       it 'should use the correct canonical URL' do

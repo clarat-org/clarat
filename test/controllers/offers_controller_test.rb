@@ -30,20 +30,6 @@ describe OffersController do
         get :show, params: { id: 'doesntexist', locale: 'de', section: 'family' }
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
-
-      it 'should set the session cookie in the family section when none exists' do
-        offer = offers(:basic)
-        get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
-        assert_includes(cookies['session'], 'user_popup')
-      end
-
-      it "shouldn't set the session cookie in the refugees section" do
-        offer = offers(:basic)
-        offer.section_id = 2
-        offer.save
-        get :show, params: { id: offer.slug, locale: 'de', section: 'refugees' }
-        assert_nil(cookies['session'], 'user_popup')
-      end
     end
 
     describe 'for an expired offer' do
@@ -52,7 +38,7 @@ describe OffersController do
         offer.update_columns aasm_state: 'expired'
         get :show, params: { id: offer.slug, locale: 'de', section: 'family' }
         assert_response :success
-        assert_select 'title', 'bazfuz | clarat'
+        assert_select 'title', 'basicOfferName | clarat'
       end
 
       it 'should use the correct canonical URL' do

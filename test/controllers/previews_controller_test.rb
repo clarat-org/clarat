@@ -14,7 +14,7 @@ describe PreviewsController do
       get :show_offer, params: { id: @offer.slug, locale: 'de',
                        section: @offer.section.identifier }
       assert_response :success
-      assert_select 'title', 'bazfuz | clarat'
+      assert_select 'title', 'basicOfferName | clarat'
     end
 
     it 'should not allow access without http auth' do
@@ -26,7 +26,6 @@ describe PreviewsController do
   describe "GET 'show_organization'" do
     before do
       @orga = organizations(:basic)
-      @orga.name = 'bazfuz'
     end
 
     it 'should show an unapproved organization with correct http auth' do
@@ -37,7 +36,7 @@ describe PreviewsController do
 
       get :show_organization, params: { id: @orga.slug, locale: 'de', section: 'refugees' }
       assert_response :success
-      assert_select 'title', 'bazfuz | clarat'
+      assert_select 'title', 'foobar | clarat'
     end
 
     it 'should not allow access without http auth' do

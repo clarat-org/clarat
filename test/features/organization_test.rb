@@ -3,7 +3,7 @@ require_relative '../test_helper'
 
 feature 'Organization display' do
   scenario 'Organization with map and website gets shown' do
-    offer = FactoryGirl.create :offer
+    offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'approved'
     orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
@@ -16,7 +16,7 @@ feature 'Organization display' do
   end
 
   scenario 'all_done organization with map and website gets shown' do
-    offer = FactoryGirl.create :offer
+    offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'all_done'
     orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id

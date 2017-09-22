@@ -15,7 +15,7 @@ FactoryGirl.define do
     fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
 
     organization
-    email nil
+    email { Email.last || FactoryGirl.create(:email)}
 
     transient do
       offers []

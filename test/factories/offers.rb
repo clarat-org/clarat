@@ -10,9 +10,10 @@ FactoryGirl.define do
       # weighted
       %w(personal personal personal personal hotline chat forum email online-course portal).sample
     end
-    area { Area.first unless encounter == 'personal' }
+    area { Area.first }
     approved_at nil
     location { Location.last || FactoryGirl.create(:location) }
+    solution_category { SolutionCategory.last || FactoryGirl.create(:solution_category) }
 
     # associations
 
@@ -115,6 +116,39 @@ FactoryGirl.define do
 
     trait :with_creator do
       created_by { FactoryGirl.create(:researcher).id }
+    end
+
+    trait :with_dummy_translations do
+      after :create do |offer, _evaluator|
+        (I18n.available_locales - [:de]).each do |locale|
+          OfferTranslation.create(
+            offer_id: offer.id, locale: locale, source: 'GoogleTranslate',
+            name: "#{locale}(#{offer.name})",
+            description: "#{locale}(#{offer.description})",
+            old_next_steps: "GET READY FOR CANADA! (#{locale})",
+            opening_specification: offer.opening_specification ? locale : nil
+          )
+
+          offer.organizations.each do |organization|
+            OrganizationTranslation.create(
+              organization_id: organization.id, locale: locale,
+              source: 'GoogleTranslate',
+              description: "#{locale}(#{organization.description})"
+            )
+          end
+        end
+      end
+    end
+
+    trait :with_markdown do
+      after :create do |offer, _evaluator|
+        offer.update_column :description, MarkdownRenderer.render(
+          offer.description
+        )
+        offer.update_column :old_next_steps, MarkdownRenderer.render(
+          offer.old_next_steps
+        )
+      end
     end
   end
 end

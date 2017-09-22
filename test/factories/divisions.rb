@@ -4,6 +4,7 @@ FactoryGirl.define do
     addition 'default division addition'
     section { Section.all.sample }
     city { City.all.sample }
+    area { Area.last || FactoryGirl.create(:area) }
     organization { FactoryGirl.create(:organization, :approved) }
 
     after :create do |division, _evaluator|

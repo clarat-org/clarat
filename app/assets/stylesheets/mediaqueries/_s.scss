@@ -521,6 +521,17 @@
 
   // Footer ######################################
 
+  .newsletter-subscribe div,
+  .newsletter-subscribe__submit,
+  input.newsletter-subscribe__input {
+    width: 100%;
+  }
+
+  .newsletter-subscribe__submit,
+  input.newsletter-subscribe__input {
+    margin-bottom: 10px;
+  }
+
   .nav-legal {
     margin: 20px 0;
   }
@@ -528,7 +539,8 @@
   .nav-legal__listitem {
     float: none;
     margin-left: 0;
-    line-height: 22px;
+    line-height: 30px;
+    text-align: left;
 
     &:before {
       content: '';

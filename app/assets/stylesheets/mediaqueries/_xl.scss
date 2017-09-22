@@ -119,11 +119,24 @@
     margin-left: 10px;
   }
 
+  .nav-lang,
+  .nav-main {
+    right: 25px;
+  }
+
+  .Hero__pitch {
+    left: 25px;
+  }
+
   // Content ######################################
 
   .top-bar__container,
   .wrapper-inner {
     padding: 0 20px;
+  }
+
+  .Callout {
+    padding: 0 15px;
   }
 
   .section-choice {

@@ -10,27 +10,53 @@
 }
 
 .footer-main__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+
 }
 
 .footer-main__subscribe {
-  grid-column: 1 / span 4;
+  float: left;
 }
 
 .footer-main__facebook {
-  grid-column: 5 / span 2;
-
+  display: inline-block;
 }
 
 .footer-main__nav-legal {
-  grid-column: 8 / span 6;
+  text-align: right;
+  float: right;
+  min-height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.footer-main__facebook-item {
+  background: image-url('ico_facebook.svg') no-repeat left center;
+  background-size: 30px 30px;
+  min-height: 40px;
+  line-height: 40px;
+  padding-left: 35px;
+  margin-left: 20px;
+  list-style: none;
+  float: left;
+
+  a {
+    @extend %roboto_bold;
+    text-decoration: none;
+    color: $brand_brown;
+  }
 }
 
 .footer-main__facebook-item--family {
   [data-section="refugees"] & {
     display: none;
   }
+}
+
+.template--pages-section_choice[data-section="family"] .footer-main__facebook-item--family,
+.template--pages-section_choice[data-section="refugees"] .footer-main__facebook-item--family {
+  display: inline-block;
 }
 
 .footer-main__facebook-item--refugees {

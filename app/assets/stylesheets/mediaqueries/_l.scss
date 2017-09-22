@@ -207,6 +207,27 @@
     }
   }
 
+  .Hero {
+    height: 425px;
+  }
+
+  .Hero__logline {
+    font-size: 25px;
+  }
+
+  .Hero__link-to-explaination {
+    font-size: 18px;
+    background-size: 40px 40px;
+    min-height: 60px;
+    padding-left: 55px;
+    line-height: 40px;
+  }
+
+  .Hero__pitch {
+    left: 15px;
+  }
+
+
   .Mission__statement,
   .Mission__stage {
     height: 246px;
@@ -384,6 +405,11 @@
 
   .Social-media {
     margin-bottom: 20px
+  }
+
+  .nav-legal {
+    float: none;
+    margin-top: 10px;
   }
 
   .newsletter-subscribe__submit {

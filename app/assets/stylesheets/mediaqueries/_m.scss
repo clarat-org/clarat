@@ -122,6 +122,10 @@
     display: none;
   }
 
+  button.nav-lang__button {
+    margin-top: 19px;
+  }
+
   .nav-main {
     position: relative;
     float: none;
@@ -247,6 +251,8 @@
   }
 
   .Callout {
+    padding: 0;
+    
     @supports (display: grid) {
       display: grid;
       grid-template-columns: 1fr;
@@ -266,7 +272,7 @@
 
   .Callout__icon-container {
     float: left;
-    width: 100px;
+    min-width: 85px;
     justify-content: flex-start;
   }
 
@@ -720,6 +726,8 @@
     }
   }
 
+
+
   .Mission__statement,
   .Mission__stage {
     height: 176px;
@@ -971,6 +979,12 @@
   .footer-main__about {
     float: left;
     width: 100%;
+  }
+
+  .footer-main__facebook-item {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
   .nav-site {

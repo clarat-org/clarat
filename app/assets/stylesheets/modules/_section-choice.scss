@@ -1,16 +1,26 @@
 .section-choice {
   position: relative;
-  display: flex;
-  -js-display: flex;
-  justify-content: center;
-  flex-direction: inherit;
   list-style: none;
+  padding: 0 0 0 40px;
 }
 
 .section-choice__container {
   float: left;
   position: relative;
-  margin-right: 40px;
+  width: 45%;
+
+  &:first-child {
+    width: 43%;
+    padding-right: 30px;
+  }
+
+  &:last-child {
+    margin-left: 55px;
+    padding-left: 55px;
+    margin-right: 0px;
+    border-left: 1px solid $brand_brown;
+
+  }
 
 }
 

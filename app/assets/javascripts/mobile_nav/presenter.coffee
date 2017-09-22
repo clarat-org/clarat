@@ -13,15 +13,19 @@ class Clarat.MobileNav.Presenter extends ActiveScript.Presenter
     if ($('body').width() <= 768)
       $('.nav-main').attr 'aria-hidden', 'true'
       $('#header-main__nav-main-trigger')
+          .attr 'aria-expanded', 'false'
           .unbind 'click'
-          .bind 'click', this.toggleMenu
+          .bind 'click', this.toggle
     else
       $('#header-main__nav-main-trigger').unbind 'click'
       $('.nav-main').attr 'aria-hidden', 'false'
 
+  toggle: (e) =>
+    this.toggleMenu()
+    $(e.target).attr 'aria-expanded', (i, attr) ->
+      if attr == 'true' then 'false' else 'true'
+
   toggleMenu: () =>
-    # $('.nav-lang__list').toggleClass('nav-lang__list--vertical')
-    # $('.nav-lang__button').toggleClass('is-active')
     $('.nav-main').attr 'aria-hidden', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
 

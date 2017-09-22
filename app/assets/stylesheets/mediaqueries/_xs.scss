@@ -1,0 +1,9 @@
+@include breakpoint(XS) {
+
+  @include mqindicator('XS');
+
+  .Mission__stage {
+    background-size: contain;
+    background-position: -55% center;
+  }
+}

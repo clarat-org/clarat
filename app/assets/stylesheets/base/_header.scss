@@ -12,6 +12,39 @@
 
 button.header-main__nav-main-trigger {
   display: none;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+
+  svg {
+    pointer-events: none;
+  }
+
+  & .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    fill: currentColor;
+  }
+  & .line-1 {
+    transform-origin: 0.5em 2em;
+  }
+  & .line-3 {
+    transform-origin: 1em 4.5em;
+  }
+
+  &[aria-expanded="true"]  svg .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+  }
+
+  &[aria-expanded="true"]  svg .line-2 {
+    opacity: 0;
+  }
+
+  &[aria-expanded="true"]  svg .line-3 {
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
+  }
 
   body.family &,
   body.refugees & {

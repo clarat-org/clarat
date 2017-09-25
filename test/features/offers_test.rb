@@ -5,7 +5,7 @@ feature 'Offer display' do
   scenario 'Approved offer gets shown' do
     offer = offers(:basic)
     visit unscoped_offer_path offer
-    page.must_have_content offer.name
+    page.must_have_content offer.name_de
     click_link offer.organizations.first.name
     page.must_have_content offer.name_de
   end
@@ -14,8 +14,7 @@ feature 'Offer display' do
     offer = offers(:basic)
     offer.update_columns aasm_state: 'expired'
     visit unscoped_offer_path offer
-    page.must_have_content offer.name
-    save_and_open_page
+    page.must_have_content offer.name_de
     click_link offer.organizations.first.name
     page.must_have_content offer.name_de
   end

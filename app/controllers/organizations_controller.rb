@@ -4,7 +4,8 @@ class OrganizationsController < ApplicationController
   respond_to :html
 
   def show
-    @organization = Organization.visible_in_frontend.friendly.find(params[:id])
+    @organization = Organization.visible_in_frontend.friendly.find_by_slug(params[:id])
+    return redirect_to '/404' unless @organization
     unless @organization.in_section? @current_section
       return redirect_to section: @organization.canonical_section
     end

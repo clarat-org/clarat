@@ -3,7 +3,7 @@ require_relative '../test_helper'
 
 describe OrganizationsController do
 
-  let (:orga) { FactoryGirl.create(:organization, :approved) }
+  let (:orga) { organizations(:basic) }
 
   describe "GET 'show'" do
     describe 'for an approved orga' do
@@ -15,9 +15,6 @@ describe OrganizationsController do
       end
 
       it 'should use the correct canonical URL' do
-        Organization.any_instance.expects(:sections).returns(
-          Section.where(identifier: 'family')
-        ).twice
         get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
@@ -29,6 +26,7 @@ describe OrganizationsController do
       end
 
       it 'shouldnt show on unapproved orga' do
+        orga.update_columns aasm_state: 'closed'
         get :show, params: { id: orga.slug, locale: 'de', section: 'refugees'}
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
@@ -48,9 +46,6 @@ describe OrganizationsController do
       end
 
       it 'should use the correct canonical URL' do
-        Organization.any_instance.expects(:sections).returns(
-          Section.where(identifier: 'family')
-        ).twice
         get :show, params: { id: orga.slug, locale: 'de', section: 'family'}
         assert_response :success
         assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"

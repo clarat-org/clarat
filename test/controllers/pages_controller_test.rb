@@ -51,7 +51,7 @@ describe PagesController do
 
   describe "GET 'widget-start-with-a-friend'" do
     it 'should work' do
-      get :widget_swaf, params: { locale: 'de', section: 'refugees' }
+      get :widget_swaf, params: { locale: 'de', section: 'refugees' }
       assert_response :success
     end
   end

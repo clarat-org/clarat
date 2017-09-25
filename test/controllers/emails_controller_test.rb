@@ -28,7 +28,7 @@ describe EmailsController do
   end
 
   describe '#unsubscribe' do
-    before { email.update_column :security_code, 'correct' }
+    before { email.update_columns aasm_state: 'subscribed' }
 
     it 'must work with a correct security code' do
       get :unsubscribe, params: { id: email.id, security_code: email.security_code,

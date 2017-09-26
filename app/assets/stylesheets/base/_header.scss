@@ -8,6 +8,10 @@
   position: relative;
   min-height: 100px;
   @extend %clearfix;
+
+  .template--offers-index & {
+    min-height: 0;
+  }
 }
 
 button.header-main__nav-main-trigger {

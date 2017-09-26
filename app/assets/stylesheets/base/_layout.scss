@@ -1,3 +1,5 @@
+
+
 // ---------------------------------------------------------------
 //
 //  Base layout wrappers
@@ -45,7 +47,7 @@
     position: relative;
     width: 100%;
     float: none;
-    padding-left: calc(31% + 2px);
+    //padding-left: calc(31% + 2px);
     padding-top: 0;
 
     html[dir="rtl"] & {
@@ -75,7 +77,7 @@
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -82px;
+  //margin-bottom: -82px;
 }
 
 .page-wrap:after {

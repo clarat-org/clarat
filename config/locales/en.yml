@@ -745,6 +745,7 @@ en:
         categories: Categories
         filter: Filter
         map: Map
+      reset_label: 
     search_results:
       bridge: for the search term
       enclosing: found
@@ -1003,25 +1004,25 @@ en:
         callout:
           how:
             family:
-              heading: 
-              text: 
+              heading: How does clarat family work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
             refugees:
-              heading: 
-              text: 
+              heading: How does clarat refugees work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
           what:
             family:
-              heading: 
-              text: 
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: family, health, learning & work and violence & crime.'
             refugees:
-              heading: 
-              text: 
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: asylum & law, family, health, learning & work and violence & crime.'
           who:
             family:
-              text: 
-              heading: 
+              text: Every family in Germany, parents, their children and pregnant women can find help here. Friends and relatives can, too.
+              heading: Who can find help here?
             refugees:
-              heading: 
-              text: 
+              heading: Who can find help here?
+              text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
             heading: 
           callout:
             how:
@@ -1416,8 +1417,8 @@ en:
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
         2017-07-17, visits=2: 
-        family: You can easily find help for children, teenagers and families with clarat family. Online. In many languages. All over Berlin. And around Germany.
-        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
+        family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
+        refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
         2017-07-17, visits=2: 
         family: Find help easily | clarat family
@@ -1435,6 +1436,8 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
+      explaination:
+        headline: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1517,9 +1520,18 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      meta_description: clarat.org shows which support services there are in Germany. For children, teenagers and families. And for refugees. Online. Easy. Near you.
       meta_title: clarat explains | clarat
       title: Please choose your clarat-section
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
+      mission:
+        headline: 
+        text: 
     shared:
       address:
         email: "%{mailto}\n"

@@ -821,6 +821,7 @@ pl:
         categories: Kategorie
         filter: Filtr
         map: Mapa
+      reset_label: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -1413,6 +1414,8 @@ pl:
       why:
         heading: Dlaczego istnieje clarat?
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
+      explaination:
+        headline: 
     impressum:
       heading: Impressum
       notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
@@ -1496,6 +1499,15 @@ pl:
       meta_description: 
       meta_title: 
       title: Wybierz swój clarat-świat
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
+      mission:
+        headline: 
+        text: 
     shared:
       address:
         email: "%{mailto}\n"

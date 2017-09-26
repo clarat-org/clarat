@@ -15,6 +15,7 @@ class Clarat.Search.Cell.Search
       option_any: I18n.t('js.search.option_any')
       tab_filter: I18n.t('js.search.tabs.filter')
       tab_map: I18n.t('js.search.tabs.map')
+      reset_label: I18n.t('js.search.reset_label')
 
       filters: @model.getFilters()
       current_section: @model.section_identifier

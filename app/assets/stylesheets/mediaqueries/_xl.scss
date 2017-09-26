@@ -82,6 +82,25 @@
 //    width: 50%;
   }
 
+  .filter-form {
+    margin-left: -25px;
+    margin-right: -25px;
+    width: calc(100% + 50px);
+  }
+
+  .filter-form__reset-btn {
+    margin-left: 0;
+    flex: 0 1 100px;
+  }
+
+  .filter-form__fieldset {
+    padding-right: 0;
+  }
+
+  .filter-form__fieldset__headline {
+    padding-right: 5px;
+  }
+
   #search_form_query,
   #search_form_search_location {
     max-width: none;
@@ -123,7 +142,10 @@
     margin-left: 10px;
   }
 
-  .nav-lang,
+  .nav-lang {
+    right: 10px;
+  }
+
   .nav-main {
     right: 25px;
   }

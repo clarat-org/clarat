@@ -279,6 +279,8 @@
   .aside-standard {
     position: absolute;
     max-width: 27%;
+    top: 95px;
+    right: 20px;
   }
 
   .content-main {
@@ -347,6 +349,10 @@
       width: 50%;
       float: left;
     }
+  }
+
+  .filter-form__container {
+    flex-direction: column;
   }
 
   .filter-form--isCollapsed {

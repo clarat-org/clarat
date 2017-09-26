@@ -165,9 +165,16 @@
 
   .nav-main__list {
     flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-main__listitem {
+    margin-left: 20px;
   }
 
   .nav-main__link {
+    font-size: 14px;
+    line-height: 2;
     text-decoration: none;
 
     body[data-section="refugees"] &, // Specifity
@@ -516,6 +523,22 @@
 
   }
 
+  .filter-form {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .filter-form__fieldset-wrapper {
+    flex-direction: column;
+  }
+
+  .filter-form__reset-btn {
+    display: none;
+  }
+
+
+
   .nav-welt {
     top: 0;
   }
@@ -619,9 +642,9 @@
     }
   }
 
-  //.Listing-results {
-  //  padding-top: 20px;
-  //}
+  .Listing-results {
+    padding-right: 0;
+  }
 
   .Listing-results__expander {
     display: block;

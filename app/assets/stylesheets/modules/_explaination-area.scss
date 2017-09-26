@@ -4,9 +4,29 @@
   flex-direction: column;
 }
 
+.Explainaition-area__video {
+  width: 75vw;
+  max-width: 600px;
+  height: 0;
+  padding-bottom: 42.25%;
+  margin: 0 auto 3em auto;
+  position: relative;
+
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .Explainaition-area__headline {
   @extend %roboto_slabbold;
   font-size: 40px;
+  margin-bottom: .5em;
 
   [data-section="family"] & {
     color: $brand_core_family;

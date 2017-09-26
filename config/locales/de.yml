@@ -1148,6 +1148,7 @@ de:
         categories: Kategorien
         filter: Filter
         map: Karte
+      reset_label: Alle zurücksetzen
     search_results:
       bridge: für den Suchbegriff
       enclosing: gefunden
@@ -1415,10 +1416,10 @@ de:
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
       header:
-        about: 
+        about: Über uns
         blog: 
-        contact: 
-        faq: 
+        contact: Kontakt
+        faq: Häufige Fragen
         languages:
           ar: 
           de: 
@@ -1832,6 +1833,8 @@ de:
           zu finden. Wir helfen dir dabei. Wenn es um Familienthemen geht, suche
           auf clarat family. Wenn es um Flüchtlingsthemen geht, suche auf clarat
           refugees.
+      explaination:
+        headline: clarat.org in 2 Minuten erklärt
     impressum:
       heading: Impressum
       notice: clarat ist eine Suchmaschine. clarat sagt dir, wo du Hilfe bekommst. Zum Beispiel, wo du einen Experten findest, der dir bei deinem Problem hilft. clarat selber kann dir nur beim Suchen helfen.
@@ -1917,6 +1920,15 @@ de:
       meta_description: clarat.org zeigt, welche Hilfen es in Deutschland gibt. Für Kinder, Jugendliche & Familien. Und für Flüchtlinge. Online. Einfach. In deiner Nähe.
       meta_title: clarat klärt auf | clarat
       title: Bitte wähle deine clarat-Welt
+      cta:
+        button: Jetzt Hilfe suchen
+        family:
+          text: 'Bei clarat family finden Familien in Deutschland Infos zu Hilfen in ihrer Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
+        refugees:
+          text: 'Bei clarat refugees finden Menschen, die nach Deutschland geflüchtet sind Hilfe. Bei Problemen aus folgenden Bereichen: Asyl & Recht, Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
+      mission:
+        headline: 'Unser Auftrag:'
+        text: Hilfe, die es in Deutschland gibt, sichtbar machen und einfach erklären.
     shared:
       address:
         email: "%{mailto}\n"

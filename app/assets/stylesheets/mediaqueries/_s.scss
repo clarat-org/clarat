@@ -238,7 +238,7 @@
   }
 
   .nav-off-canvas-trigger {
-    margin: -5px -15px 0;
+    margin: -5px -15px 20px;
     overflow: hidden;
   }
 
@@ -251,6 +251,8 @@
 
   .wrapper-inner {
     padding: 15px 15px 0;
+
+
 
     .template--pages-home &,
     .template--offers-index & {

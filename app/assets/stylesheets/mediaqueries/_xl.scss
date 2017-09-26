@@ -10,6 +10,10 @@
 
   // Header ######################################
 
+  .Logo {
+    margin-left: 20px;
+  }
+
   .header-main {
     &:before {
       display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
@@ -135,13 +139,15 @@
     padding: 0 20px;
   }
 
+  .wrapper-inner {
+    body:not(.template--pages-home) .header-main & {
+      padding: 0;
+    }
+  }
+
   .Callout {
     padding: 0 15px;
   }
-
-
-
-
 
 
   .section-start__headline {

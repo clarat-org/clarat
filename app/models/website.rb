@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base Website
 require ClaratBase::Engine.root.join('app', 'models', 'website')
 

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # TODO: Change this for proper fix!!
 json.age((TargetAudienceFiltersOffer::MIN_AGE..TargetAudienceFiltersOffer::MAX_AGE).to_a[0..17]) do |age|
   json.identifier age

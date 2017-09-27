@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Contact and report form
 class ContactsController < ApplicationController
   respond_to :html, :js

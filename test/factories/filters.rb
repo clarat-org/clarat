@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
   factory :language_filter do
-    name { %w(Deutsch Englisch).sample }
+    name { %w[Deutsch Englisch].sample }
     identifier { name[0..2].downcase }
 
     # associations
@@ -19,8 +21,8 @@ FactoryGirl.define do
     transient do
       _random do
         [
-          %w(family_children Kinder), %w(family_parents Eltern),
-          %w(family_nuclear_family Familie), %w(family_relatives Bekannte)
+          %w[family_children Kinder], %w[family_parents Eltern],
+          %w[family_nuclear_family Familie], %w[family_relatives Bekannte]
         ].sample
       end
     end

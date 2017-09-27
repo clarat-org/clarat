@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 Clarat::Application.routes.draw do
   # Sitemap path
   mount DynamicSitemaps::Engine => '/sitemaps/'
@@ -20,9 +21,9 @@ Clarat::Application.routes.draw do
       get 'datenschutzhinweise' => 'pages#privacy', as: 'privacy'
 
       # RESTful resources
-      resources :offers, only: [:index, :show]
+      resources :offers, only: %i[index show]
       resources :organizations, only: [:show]
-      resources :contacts, only: [:new, :create, :index]
+      resources :contacts, only: %i[new create index]
 
       # Previews
       get 'preview/offers/:id' => 'previews#show_offer'
@@ -45,9 +46,9 @@ Clarat::Application.routes.draw do
     get 'datenschutzhinweise' => 'pages#section_forward'
 
     # unscoped RESTful resources (only POST and non-HTML GET)
-    resources :update_requests, only: [:new, :create]
+    resources :update_requests, only: %i[new create]
     resources :search_locations, only: [:show]
-    resources :subscriptions, only: [:new, :create]
+    resources :subscriptions, only: %i[new create]
     resources :definitions, only: [:show]
 
     # non-REST routes

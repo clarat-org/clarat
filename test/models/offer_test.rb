@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe Offer do
@@ -33,7 +34,7 @@ describe Offer do
 
     it 'should correctly return alphabetically sorted language_filters' do
       offers(:basic).language_filters_alphabetical_sorted
-        .must_equal(%w(bos deu eng 326 hun))
+                    .must_equal(%w[bos deu eng 326 hun])
     end
   end
 end

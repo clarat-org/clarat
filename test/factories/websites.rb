@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -16,14 +18,14 @@ FactoryGirl.define do
       when 'pinterest'
         "https://www.pinterest.com/#{FFaker::Internet.domain_word}#{n}"
       else # when 'own', 'document', 'other'
-        FFaker::Internet.uri(%w(http https).sample) + n.to_s
+        FFaker::Internet.uri(%w[http https].sample) + n.to_s
       end
     end
 
     trait :social do
       host do
         hosts = Website.enumerized_attributes.attributes['host'].values
-        (hosts - %w(own other)).sample
+        (hosts - %w[own other]).sample
       end
     end
 

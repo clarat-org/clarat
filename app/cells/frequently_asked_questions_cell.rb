@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class FrequentlyAskedQuestionsCell < Cell::ViewModel
   include Cell::Slim
 

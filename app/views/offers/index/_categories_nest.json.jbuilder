@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 if set.any?
   json.set set do |subset|
     parent = subset[0]

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base SearchLocation
 require ClaratBase::Engine.root.join('app', 'models', 'search_location')
 

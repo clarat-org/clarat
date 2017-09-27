@@ -1,8 +1,8 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe OrganizationsController do
-
   let (:orga) { organizations(:basic) }
 
   describe "GET 'show'" do
@@ -27,7 +27,7 @@ describe OrganizationsController do
 
       it 'shouldnt show on unapproved orga' do
         orga.update_columns aasm_state: 'closed'
-        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees'}
+        get :show, params: { id: orga.slug, locale: 'de', section: 'refugees' }
         assert_redirected_to controller: 'pages', action: 'not_found'
       end
 
@@ -46,7 +46,7 @@ describe OrganizationsController do
       end
 
       it 'should use the correct canonical URL' do
-        get :show, params: { id: orga.slug, locale: 'de', section: 'family'}
+        get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
         assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
       end

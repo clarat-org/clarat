@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base Category
 require ClaratBase::Engine.root.join('app', 'models', 'category')
 

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe PagesController do
@@ -74,28 +75,28 @@ describe PagesController do
   describe "GET 'section_forward'" do
     it 'should redirect to the default section' do
       ActionDispatch::Request.any_instance.expects(:fullpath)
-        .returns('/somepath#someanchor').twice
+                             .returns('/somepath#someanchor').twice
       get :section_forward, params: { locale: 'de' }
       assert_redirected_to '/refugees/somepath#someanchor'
     end
 
     it 'should redirect correctly for the default root path' do
       ActionDispatch::Request.any_instance.stubs(:fullpath)
-        .returns('/')
+                             .returns('/')
       get :section_forward, params: { locale: 'de' }
       assert_redirected_to '/refugees/'
     end
 
     it 'should redirect correctly for a translated root path' do
       ActionDispatch::Request.any_instance.stubs(:fullpath)
-        .returns('/en')
+                             .returns('/en')
       get :section_forward, params: { locale: 'en' }
       assert_redirected_to '/en/refugees'
     end
 
     it 'should redirect correctly for a translated page' do
       ActionDispatch::Request.any_instance.stubs(:fullpath)
-        .returns('/en/about-us')
+                             .returns('/en/about-us')
       get :section_forward, params: { locale: 'en' }
       assert_redirected_to '/en/refugees/about-us'
     end

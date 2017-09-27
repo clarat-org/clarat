@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -8,7 +10,7 @@ FactoryGirl.define do
     old_next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course portal).sample
+      %w[personal personal personal personal hotline chat forum email online-course portal].sample
     end
     area { Area.first }
     approved_at nil
@@ -104,14 +106,14 @@ FactoryGirl.define do
 
     trait :family_section do
       after :create do |offer, _evaluator|
-        offer.section = Section.where(identifier: "family").last
+        offer.section = Section.where(identifier: 'family').last
         offer.save
       end
     end
 
     trait :refugee_section do
       after :create do |offer, _evaluator|
-        offer.section = Section.where(identifier: "refugees").last
+        offer.section = Section.where(identifier: 'refugees').last
         offer.save
       end
     end

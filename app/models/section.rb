@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require ClaratBase::Engine.root.join(
   'app', 'models', 'section'
 )

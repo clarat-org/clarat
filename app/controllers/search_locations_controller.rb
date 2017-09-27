@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Microservice that allows front-end JS to convert a location to coordinates.
 # Request capped via Rack::Attack to prevent external abuse.
 class SearchLocationsController < ApplicationController

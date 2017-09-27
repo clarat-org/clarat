@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe EmailsController do
@@ -9,7 +10,7 @@ describe EmailsController do
 
     it 'must work with a correct security code' do
       get :subscribe, params: { id: email.id, security_code: email.security_code,
-                      locale: 'de' }
+                                locale: 'de' }
       assert_redirected_to :section_choice
       assert_equal(
         I18n.t('emails.subscribe.success_html',
@@ -21,8 +22,8 @@ describe EmailsController do
 
     it 'wont work with an incorrect security code' do
       assert_raise(Pundit::NotAuthorizedError) do
-        get :subscribe, params: { id: email.id, security_code: 'incorrect', 
-                        locale: 'de' }
+        get :subscribe, params: { id: email.id, security_code: 'incorrect',
+                                  locale: 'de' }
       end
     end
   end
@@ -32,7 +33,7 @@ describe EmailsController do
 
     it 'must work with a correct security code' do
       get :unsubscribe, params: { id: email.id, security_code: email.security_code,
-                        locale: 'de' }
+                                  locale: 'de' }
       assert_redirected_to :section_choice
       assert_equal(
         I18n.t('emails.unsubscribe.success_html',
@@ -43,8 +44,8 @@ describe EmailsController do
 
     it 'wont work with an incorrect security code' do
       assert_raise(Pundit::NotAuthorizedError) do
-        get :unsubscribe, params: { id: email.id, security_code: 'incorrect', 
-                          locale: 'de' }
+        get :unsubscribe, params: { id: email.id, security_code: 'incorrect',
+                                    locale: 'de' }
       end
     end
   end

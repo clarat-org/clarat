@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe SubscriptionsController do
@@ -23,8 +24,7 @@ describe SubscriptionsController do
     it 'should not work with invalid email' do
       assert_difference('Subscription.count', 0) do
         post :create, params: { locale: 'de', format: :js,
-                      subscription: { email: 'not a mail' }
-                    }
+                                subscription: { email: 'not a mail' } }
       end
       assert_template :new
       # assert_redirected_to :root

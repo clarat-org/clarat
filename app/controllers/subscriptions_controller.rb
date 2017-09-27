@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Newsletter Subscription Creation
 class SubscriptionsController < ApplicationController
   respond_to :js

@@ -1,9 +1,10 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base Offer
 require ClaratBase::Engine.root.join('app', 'models', 'location')
 
 class Location < ApplicationRecord
-	  # Associations
+  # Associations
   belongs_to :organization, inverse_of: :locations, counter_cache: true
   belongs_to :federal_state, inverse_of: :locations
   belongs_to :city, inverse_of: :locations

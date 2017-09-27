@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # TODO: schedule
 host 'www.clarat.org'
 protocol 'https'

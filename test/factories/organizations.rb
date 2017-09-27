@@ -34,7 +34,7 @@ FactoryGirl.define do
 
     after :create do |orga, evaluator|
       # Locations
-      if orga.locations_count > 0
+      if orga.locations_count.positive?
         create_list :location, (evaluator.locations_count - 1),
                     organization: orga, hq: false
       end
@@ -65,5 +65,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

@@ -3,7 +3,7 @@
 require_relative '../test_helper'
 
 describe OrganizationsController do
-  let (:orga) { organizations(:basic) }
+  let(:orga) { organizations(:basic) }
 
   describe "GET 'show'" do
     describe 'for an approved orga' do

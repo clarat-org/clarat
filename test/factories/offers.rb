@@ -80,7 +80,7 @@ FactoryGirl.define do
       end
       evaluator.opening_count.times do
         offer.openings << (
-          if Opening.count != 0 && rand(2) == 0
+          if Opening.count != 0 && rand(2).zero?
             Opening.select(:id).all.sample
           else
             FactoryGirl.create(:opening)
@@ -170,5 +170,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

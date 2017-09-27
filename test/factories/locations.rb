@@ -8,7 +8,7 @@ FactoryGirl.define do
     sequence(:street) { |n| "Foobar #{n}" }
     sequence(:display_name) { |n| "Foobar #{n}" }
     sequence(:zip) { |n| n.to_s.rjust(5, '0') }
-    hq { rand(9) == 0 }
+    hq { rand(9).zero? }
 
     latitude { rand 52.4..52.6 } # somewhere within approximate bounds of Berlin
     longitude { rand 13.25..13.6 }
@@ -40,5 +40,5 @@ FactoryGirl.define do
 end
 
 def maybe result
-  rand(2) == 0 ? nil : result
+  rand(2).zero? ? nil : result
 end

@@ -10,7 +10,7 @@ FactoryGirl.define do
     area_code_1 { maybe FFaker.numerify('#' * rand(3..6)) }
     local_number_1 { area_code_1 ? FFaker.numerify('#' * rand(7..11)) : nil }
     area_code_2 do
-      rand(2) == 0 && local_number_1 ? FFaker.numerify('#' * rand(3..6)) : nil
+      rand(2).zero? && local_number_1 ? FFaker.numerify('#' * rand(3..6)) : nil
     end
     local_number_2 { area_code_2 ? FFaker.numerify('#' * rand(7..11)) : nil }
     fax_area_code { maybe FFaker.numerify('#' * rand(3..6)) }

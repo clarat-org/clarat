@@ -34,6 +34,11 @@ Clarat::Application.routes.draw do
       get 'widget-handbook-germany-:city' => 'pages#widget_hg', as: 'home'
     end
 
+    scope 'refugees' do
+      get 'widget-start-with-a-friend' => 'pages#widget_swaf', as: 'home'
+      get 'widget-handbook-germany-:city' => 'pages#widget_hg', as: 'home'
+    end
+
     # unscoped to scoped forwards
     get 'offers/:id' => 'offers#section_forward', as: :unscoped_offer
     get 'organizations/:id' => 'organizations#section_forward',

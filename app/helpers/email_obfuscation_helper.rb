@@ -39,6 +39,7 @@ module EmailObfuscationHelper
     string.tr 'A-Za-z', 'N-ZA-Mn-za-m'
   end
 
+  # rubocop:disable OutputSafety
   # render data as HTML string
   def secured_template rot13_encoded_email, linktext, index
     <<-SCRIPT
@@ -55,4 +56,5 @@ module EmailObfuscationHelper
     SCRIPT
       .html_safe
   end
+  # rubocop:enable OutputSafety
 end

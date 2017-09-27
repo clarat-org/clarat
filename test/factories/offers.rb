@@ -102,6 +102,20 @@ FactoryGirl.define do
       approved_by { FactoryGirl.create(:researcher).id }
     end
 
+    trait :family_section do
+      after :create do |offer, _evaluator|
+        offer.section = Section.where(identifier: "family").last
+        offer.save
+      end
+    end
+
+    trait :refugee_section do
+      after :create do |offer, _evaluator|
+        offer.section = Section.where(identifier: "refugees").last
+        offer.save
+      end
+    end
+
     trait :with_email do
       after :create do |offer, _evaluator|
         offer.contact_people.first.update_column(

@@ -2,25 +2,29 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  margin: 2em 0;
 }
 
 .Explainaition-area__video {
-  width: 75vw;
-  max-width: 600px;
-  height: 0;
-  padding-bottom: 42.25%;
-  margin: 0 auto 3em auto;
   position: relative;
+  padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio*/
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
 
-  video {
+  iframe {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
+}
+
+.Explainaition-area__wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
 }
 
 .Explainaition-area__headline {

@@ -1073,6 +1073,9 @@ pl:
       hero:
         claim:
           family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+        hero:
+          logline: 
+          button_label: 
       callout:
         callout:
           how:

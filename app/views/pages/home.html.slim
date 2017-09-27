@@ -3,9 +3,13 @@
 
   = render 'layouts/partials/callout/callout'
 
+
+
   .Explainaition-area#explaination
     h4.Explainaition-area__headline = t '.explaination.headline'
-    .Explainaition-area__video
-      | <video class="" controls="" preload="none" poster="http://media.w3.org/2010/05/video/poster.png" width="0" height="0">
-          <source id="mp4" src="http://media.w3.org/2010/05/video/movie_300.mp4" type="video/mp4">
-        </video>
+    .Explainaition-area__wrapper
+      .Explainaition-area__video
+        | <iframe src="http://player.vimeo.com/video/47387431?title=0&amp
+          ;byline=0&amp;portrait=0&amp;autoplay=0"
+          width="1600" height="900" frameborder="0" webkitAllowFullScreen
+          mozallowfullscreen allowFullScreen></iframe>

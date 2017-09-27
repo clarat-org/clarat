@@ -15,13 +15,18 @@
 }
 
 button.header-main__nav-main-trigger {
+  -webkit-appearance: none;
   display: none;
-  margin-top: 15px;
+  padding: 0;
+  width: 28px;
   margin-left: 15px;
   margin-right: 10px;
+  margin-top: 20px;
 
   svg {
     pointer-events: none;
+    width: 28px;
+    height: 28px;
   }
 
   & .line {

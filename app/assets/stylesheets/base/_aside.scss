@@ -9,6 +9,9 @@
   right: 0;
   top: 70px;
   transition: top 0.1s;
+
+  &.is_stuck {
+  }
 }
 
 .aside-standard__headline {

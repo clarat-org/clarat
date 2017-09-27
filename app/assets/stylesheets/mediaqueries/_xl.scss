@@ -91,6 +91,8 @@
   .filter-form__reset-btn {
     margin-left: 0;
     flex: 0 1 100px;
+    font-size: 12px;
+    padding: 0 10px;
   }
 
   .filter-form__fieldset {
@@ -99,6 +101,7 @@
 
   .filter-form__fieldset__headline {
     padding-right: 5px;
+    font-size: 12px;
   }
 
   #search_form_query,

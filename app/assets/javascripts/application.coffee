@@ -91,6 +91,7 @@ about supported directives.
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
 # = require mobile_nav/presenter
+# = require soft_jump/presenter
 
 # = require shariff_additional/presenter
 # = require section_speaking_wrapper/presenter

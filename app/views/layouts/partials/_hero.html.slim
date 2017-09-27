@@ -2,8 +2,8 @@
   .Hero
     .Hero__shopping-window
       .Hero__pitch
-        .Hero__logline Finde die Hilfe, die zu dir passt – einfach erklärt und übersichtlich
-        a.Hero__link-to-explaination[href="#explaination"] Mehr erfahren
+        .Hero__logline = t '.hero.logline'
+        a.Hero__link-to-explaination[href="#explaination"] = t '.hero.button_label'
     = render '/offers/shared/search_form', search_form: search_form,
       labels: :long,
       current_section: current_section

@@ -1432,6 +1432,9 @@ de:
       hero:
         claim:
           family: Hilfe für Kinder, Jugendliche und Familien
+        hero:
+          logline: Finde die Hilfe, die zu dir passt – einfach erklärt und übersichtlich
+          button_label: Mehr erfahren
       callout:
         callout:
           how:

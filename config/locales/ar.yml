@@ -950,6 +950,9 @@ ar:
       hero:
         claim:
           family: مساعدة للأطفال والمراهقين و الأسرة
+        hero:
+          logline: 
+          button_label: 
       callout:
         callout:
           how:

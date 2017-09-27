@@ -957,6 +957,9 @@ tr:
       hero:
         claim:
           family: Çocuklar, gençler ve aileler için yardıum çeşitleri
+        hero:
+          logline: 
+          button_label: 
       callout:
         callout:
           how:

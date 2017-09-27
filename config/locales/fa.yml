@@ -1007,6 +1007,9 @@ fa:
       hero:
         claim:
           family: کمک برای کودکان،جوانان و خانواده ها
+        hero:
+          logline: 
+          button_label: 
       callout:
         callout:
           how:

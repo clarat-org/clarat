@@ -50,6 +50,10 @@ a[href^="fax"]:hover {
   unicode-bidi: embed;
 }
 
+.page-wrap {
+  //overflow: auto;
+}
+
 .offcanvas-active {
   .page-wrap {
     position: fixed;

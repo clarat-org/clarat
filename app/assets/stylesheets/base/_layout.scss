@@ -80,13 +80,8 @@
   //margin-bottom: -82px;
 }
 
-.page-wrap:after {
-  content: "";
-  display: block;
-}
 
-.footer-main,
-.page-wrap:after {
+.footer-main {
   min-height: 82px;
 }
 

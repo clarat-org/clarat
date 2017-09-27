@@ -23,6 +23,10 @@
 
 .footer-main__facebook {
   display: inline-block;
+
+  html[dir="rtl"] & {
+   margin-right: 20px;
+  }
 }
 
 .footer-main__nav-legal {

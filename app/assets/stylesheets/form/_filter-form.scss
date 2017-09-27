@@ -152,6 +152,11 @@
   line-height: 29px;
   padding-right: 10px;
 
+  html[dir="rtl"] & {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
   .result-order & {
     float: left;
     line-height: 26px;

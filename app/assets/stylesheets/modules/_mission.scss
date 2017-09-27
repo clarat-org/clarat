@@ -8,6 +8,10 @@
   background-size: 60% auto;
   display: flex;
   justify-content: flex-end;
+
+  [dir="rtl"] & {
+    background-position: right center;
+  }
 }
 
 .Mission__statement {
@@ -23,6 +27,11 @@
   justify-content: center;
   text-align: right;
 
+  [dir="rtl"] & {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -35,6 +44,13 @@
     border-right: 0 solid transparent;
     border-bottom: 190px solid #F4B528;
     border-left: 75px solid transparent;
+
+    [dir="rtl"] & {
+      left: auto;
+      right: -75px;
+      border-right: 75px solid transparent;
+      border-left: 0 solid transparent;
+    }
   }
 }
 

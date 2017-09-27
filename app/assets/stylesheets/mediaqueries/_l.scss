@@ -289,13 +289,7 @@
     margin-right: 0;
     width: auto;
 
-    // Repeat to override specificity
-    html[dir="rtl"] & {
-      display: block;
-      float: none;
-      margin-left: 0;
-      width: auto;
-    }
+
   }
 
   .aside-standard {
@@ -458,14 +452,10 @@
   .newsletter-subscribe__submit {
     width: 230px;
 
-    html[dir="rtl"] & {
-      border-top-left-radius: 0;
-    }
   }
 
   input.newsletter-subscribe__input {
     html[dir="rtl"] & {
-      border-top-left-radius: 6px;
       margin-right: 0;
     }
   }

@@ -50,10 +50,6 @@
     //padding-left: calc(31% + 2px);
     padding-top: 0;
 
-    html[dir="rtl"] & {
-      padding-right: calc(31% + 2px);
-      padding-left: 0;
-    }
   }
 }
 
@@ -104,9 +100,7 @@
 }
 
 .footer-main__about {
-  html[dir="rtl"] & {
-    float: left;
-  }
+
 }
 
 .section-wrapper-minor {

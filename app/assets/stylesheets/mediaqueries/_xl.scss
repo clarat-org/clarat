@@ -155,6 +155,11 @@
 
   .Hero__pitch {
     left: 25px;
+
+    [dir="rtl"] & {
+      left: auto;
+      right: 25px;
+    }
   }
 
   // Content ######################################

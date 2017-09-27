@@ -1,10 +1,14 @@
 .nav-lang {
-
   color: $brand_coal;
   font-size: 15px;
   min-height: 44px;
   position: absolute;
   right: 0;
+
+  [dir="rtl"] & {
+    right: auto;
+    left: 0;
+  }
 
   a {
     color: inherit;
@@ -98,6 +102,11 @@ button.nav-lang__button {
   background: $brand_coal;
   color: white;
   padding: 4px 0 10px;
+
+  [dir="rtl"] & {
+    left: 0;
+  }
+
 
   li {
     float: none;

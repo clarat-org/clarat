@@ -127,6 +127,10 @@
     display: none;
   }
 
+  a.nav-lang__google {
+    margin-top: 18px;
+  }
+
   button.nav-lang__button {
     margin-top: 19px;
   }
@@ -141,7 +145,12 @@
     bottom: 0;
     width: 100%;
 
-    [data-section="refugees"] & {
+    [dir="rtl"] & {
+      left: 0;
+    }
+
+
+      [data-section="refugees"] & {
       background-color: $brand_core_refugees;
     }
 
@@ -170,6 +179,10 @@
 
   .nav-main__listitem {
     margin-left: 20px;
+
+    [dir="rtl"] & {
+      margin-right: 20px;
+    }
   }
 
   .nav-main__link {
@@ -190,6 +203,10 @@
     min-height: inherit;
     width: 40px;
     float: left;
+
+    [dir="rtl"] & {
+      float: right;
+    }
   }
 
   button.nav-lang__button {
@@ -284,7 +301,7 @@
 
   .Callout__icon-container {
     float: left;
-    min-width: 85px;
+    min-width: 75px;
     justify-content: flex-start;
   }
 
@@ -444,7 +461,7 @@
         width: 100%;
 
         html[dir="rtl"] & {
-          padding-left: 55px;
+          padding-left: 15px;
           padding-right: 0;
         }
 

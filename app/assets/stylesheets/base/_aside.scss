@@ -10,7 +10,9 @@
   top: 70px;
   transition: top 0.1s;
 
-  &.is_stuck {
+  html[dir="rtl"] & {
+    right: auto;
+    left: 0;
   }
 }
 

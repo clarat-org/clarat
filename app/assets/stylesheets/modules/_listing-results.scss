@@ -7,6 +7,11 @@
 .Listing-results {
   position: relative;
   padding-right: 30%;
+
+  html[dir="rtl"] & {
+    padding-right: 0;
+    padding-left: 30%;
+  }
 }
 
 .Listing-results__pending-ajax {

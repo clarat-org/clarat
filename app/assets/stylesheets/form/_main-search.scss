@@ -30,9 +30,6 @@
   padding: 20px 0;
   list-style: none;
 
-  html[dir="rtl"] & {
-    padding: 29px 15px 0 15px;
-  }
 
   .input {
     &.string {
@@ -135,7 +132,7 @@
   }
 
   html[dir="rtl"] & {
-    padding-right: 48px;
+    padding-right: 58px !important;
     padding-left: 14px;
   }
 }

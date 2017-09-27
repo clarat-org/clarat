@@ -20,6 +20,12 @@
     height: inherit;
   }
 
+  [dir="rtl"] & {
+    float: right;
+    background-position: right center;
+
+  }
+
   body.refugees & {
     background-image: image-url('logo--refugees.svg');
     background-size: auto 75px;

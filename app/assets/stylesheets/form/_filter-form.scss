@@ -113,7 +113,7 @@
   #tab_filter &.sort_order {
     display: block;
 
-    .filter-form__select {
+    .advanced-filter-form__select {
       font-size: 16px;
     }
   }
@@ -187,7 +187,7 @@
   }
 }
 
-.filter-form__select {
+.advanced-filter-form__select {
   max-width: 100%;
   flex: 1 1 140px;
   -webkit-appearance: none;

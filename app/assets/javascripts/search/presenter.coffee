@@ -114,6 +114,8 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       change: 'handleFilterChange'
     '#advanced_search .JS-ResidencyStatusSelector':
       change: 'handleFilterChange'
+    '#advanced_search .JS-ResetFiltersButton':
+      click: 'handleFilterReset'
 
     ## Radio state handling contact_type
     # 'input[name=contact_type][value=remote]:checked':
@@ -177,6 +179,20 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.updateAttributes sort_order: requestedSortOrder
     @sendMainSearch()
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
+
+  handleFilterReset: (event) =>
+    # reset selects to option = 'any' (default)..
+    results = $('.advanced-filter-form__select').map ->
+      if $(this).context.name && $(this).context.name.length
+        $(this).context.value = 'any'
+        return $(this).context.name
+    # .. update all attributes...
+    for field_name in results
+      @model.updateAttributes "#{field_name}": ''
+    # .. and then send new search to update results
+    @sendMainSearch()
+    @sendQuerySupportSearch()
+
 
   handleEncounterChange: (event) =>
     if @model.isPersonal() == false

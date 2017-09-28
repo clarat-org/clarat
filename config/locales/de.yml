@@ -1421,14 +1421,14 @@ de:
         contact: Kontakt
         faq: Häufige Fragen
         languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
       hero:
         claim:
           family: Hilfe für Kinder, Jugendliche und Familien

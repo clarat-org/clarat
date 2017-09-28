@@ -189,6 +189,12 @@
     max-width: 100%;
   }
 
+  .nav-lang__list {
+    li {
+      font-size: 12px;
+    }
+  }
+
   .Callout__headline {
     @extend %roboto_slabregular;
     font-size: 20px;

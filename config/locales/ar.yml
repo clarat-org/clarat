@@ -117,7 +117,7 @@ ar:
           answer: 'نحن ننظر بشكل دائم إذا ما كانت المعلومات في كلارات لاتزال معاصرة. لأنه بهذه الطريقة  فقط يمكننا مساعدة الأطفال والشباب والأسر واللاجئين. فإذا لم تكن المعلومات لاتزال صحيحة فإنه يتم  تحديثها أي أننا نستبدلها. '
           question: هل المعلومات في كلارات حديثة؟
         question_7:
-          answer: بعض العروض في <b>كلارات الأسرة</b> و<b>كلارات اللاجئين</b> يمكن الاستفادة منها من  كل الأنحاء. سواء كنت تسكن في أي مكان ستجد العديد من العروض والتي من خلالها يساعدك شخص عن طريق الهاتف أو الإنترنت؛ أي عن طريق الشات أو المنتديات. ولكن العديد من العروض يمكنك الاستفادة منها فقط حيت تسكن. في <b>كلارات اللاجئين</b> تجد قريبا عروضا للعديد من المدن الكبيرة في ألمانيا. وهي حاليا برلين، وكولونيا ودوسلدورف. أما في <b>كلارات الأسرة</b> فقد بدأنا ببرلين. هنا توجد بالفعل عروض كثيرة. ولكننا نجمع عروضا أكثر. وقريبا سيكون لمدن كبرى أخرى في ألمانيا.
+          answer: بعض العروض في <b>كلارات الأسرة</b> و<b>كلارات اللاجئين</b> يمكن الاستفادة منها من  كل الأنحاء. سواء كنت تسكن في أي مكان ستجد العديد من العروض والتي من خلالها يساعدك شخص عن طريق الهاتف أو الإنترنت؛ أي عن طريق الشات أو المنتديات. ولكن العديد من العروض يمكنك الاستفادة منها فقط حيت تسكن. في <b>كلارات اللاجئين</b> تجد قريبا عروضا للعديد من المدن الكبيرة في ألمانيا. وهي حاليا برلين، هامبورغ، ميونخ، دورتموند، دوسلدورف، كولن، نورينبيرغ، وشتوتغارت. أما في <b>كلارات الأسرة</b> فقد بدأنا ببرلين. هنا توجد بالفعل عروض كثيرة. ولكننا نجمع عروضاً أكثر. وقريباً سيكون لمدن كبرى أخرى في ألمانيا.
           question: هل توجد كلارات لألمانيا كلها؟
         question_8:
           answer: كلارات تعرض لك المساعدة المتاحة بالقرب منك. فإنك تجد كل العروض مجمعة وبشكل عام. علاوة على ذلك فنحن نقول لك ما يجب عليك أن تفعل بالضبط لكي تحصل على المساعدة. ونحن نكتب دائما بلغة سهلة ويمكن للجميع ان يفهمها. حتى يتمكن الناس الذين لا يجيدون الألمانية من العثور على المساعدة؛ كما يمكنك أيضا أن تقرأ العروض بلغات أخرى عديدة. إذا أردت أن تعرف أكثر عن هذه اللغات؛ إضغط هنا %{ref_to_how_many_languages}.
@@ -580,6 +580,11 @@ ar:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -589,11 +594,6 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -666,14 +666,15 @@ ar:
         approach: كيف تقدم المساعدة؟
         gender: النوع
         language: اللغة
+        residency_status: 
         sort: رتب حسب
         target_audience: المساعدة لمن؟
-        residency_status: 
       option_any: سواء
       pagination:
         back: للخلف
         gap: "..."
         next: لاحقا
+      reset_label: 
       sort:
         nearby: بالقرب
         relevance: أفضل النتائج
@@ -681,7 +682,6 @@ ar:
         categories: الفئات
         filter: فلتر
         map: خريطة
-      reset_label: 
     search_results:
       bridge: من أجل
       enclosing: تم العثور على
@@ -851,13 +851,51 @@ ar:
     modal_create:
       js:
         erb:
-          success: 
+          success: تم إدخال الإيميل بنجاح!
     partials:
       banner:
         teaser:
           link: هنا يمكنك معرفة المزيد
           refugees: قريبا سيكون هناك عروضا للأجئين أيضا
           text: clarat.org يتم إنشائها
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: معلومات عنا
         blog: مدونة
@@ -879,6 +917,26 @@ ar:
         twitter:
           anchor: تويتر
           href: https://twitter.com/claratpunktorg
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 
+          de: 
+          en: 
+          fa: 
+          fr: 
+          pl: 
+          ru: 
+          tr: 
+      hero:
+        claim:
+          family: مساعدة للأطفال والمراهقين و الأسرة
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -888,6 +946,7 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
+        more_information_overlay: 
         send: 
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
@@ -895,7 +954,6 @@ ar:
           مثلا عن طريق اللإيميل أو عن طريق الدردشة
           سوف نخبرك بكل سرور بمجرد أن يكون في كلارات مساعدات بالقرب منك
           لذلك سجل عنوان بريدك الإليكتروني هنا
-        more_information_overlay: 
       nav_lang:
         legal_title: في كلارات، لا يمكن قراءة النص القانوني إلا باللغة الألمانية.
         title: |-
@@ -933,64 +991,6 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: مساعدة للأطفال والمراهقين و الأسرة
-        hero:
-          logline: 
-          button_label: 
-      callout:
-        callout:
-          how:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          what:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          who:
-            family:
-              text: 
-              heading: 
-            refugees:
-              heading: 
-              text: 
-            heading: 
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
     widget:
       category_headline: 
   offer:
@@ -1028,9 +1028,15 @@ ar:
             female: فقط للبنات والسيدات
             girls_only: فقط للبنات والسيدات
             male: فقط للصبيان والرجال
+          residency_status:
+            before_the_asylum_decision: في قضية اللجوء
+            with_a_residence_permit: بتصريح إقامة
+            with_deportation_decision: بقرار الترحيل
+            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
           target_audience:
             children: للأطفال والشباب
             family_children: للأطفال والشبان
+            family_everyone: 
             family_nuclear_family: للأسر
             family_parents: للآباء
             family_parents_to_be: لمن سوف يصيرون والدين
@@ -1039,19 +1045,13 @@ ar:
             nuclear_family: للأسر
             parents: للآباء
             pregnant_woman: للحوامل
-            relatives: للمعارف والأقارب
-            family_everyone: 
             refugees_children: للأجئين الأطفال
             refugees_families: للأسرة اللاجئة
             refugees_general: للاجئين
             refugees_parents: للاجئين من الآباء
             refugees_parents_to_be: للاجئين الذين سيصيرون قريباً آباء
             refugees_uf: للاجئين غير المصحوبين
-          residency_status:
-            before_the_asylum_decision: في قضية اللجوء
-            with_a_residence_permit: بتصريح إقامة
-            with_deportation_decision: بقرار الترحيل
-            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
+            relatives: للمعارف والأقارب
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -1279,6 +1279,8 @@ ar:
     faq:
       title: أسئلة شائعة
     home:
+      explaination:
+        headline: 
       how:
         heading: كيف تعمل كلارات؟
         text: أكتب المشكلة التي تحتاح مساعدة في حلها, او التي تقلقك. يمكنك أيضا أن تختار من الموضوعات الموجودة لدينا, فتري في الحال كل العروض التي تقدم الدعم بالقرب منك. وكذلك تعرف أيضا, كيف تحصل على المساعدة و بأي  وسيلة إتصال, سواء عن طريق التليفون أو إرسال إيميل أو الذهاب الي عنوان ما
@@ -1301,8 +1303,6 @@ ar:
       why:
         heading: لماذا توجد كلارات؟
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
-      explaination:
-        headline: 
     impressum:
       heading: Impressum
       notice: كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط.
@@ -1381,18 +1381,18 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat.org تعرض لك ما هي المساعدات المتاحة في ألمانيا للاطفال والمراهقين والأسر واللاجئين. عبر الانترنت. بالقرب منك.
-      meta_title: كلارات توضح | كلارات
-      title: إختر قسم كلارات الذي يخصك
       cta:
         button: 
         family:
           text: 
         refugees:
           text: 
+      meta_description: clarat.org تعرض لك ما هي المساعدات المتاحة في ألمانيا للاطفال والمراهقين والأسر واللاجئين. عبر الانترنت. بالقرب منك.
+      meta_title: كلارات توضح | كلارات
       mission:
         headline: 
         text: 
+      title: إختر قسم كلارات الذي يخصك
     shared:
       address:
         email: "%{mailto}\n"
@@ -1414,11 +1414,13 @@ ar:
     impressum: هيئة التحرير
     kontakt: إتصال
     liste: القائمة
+    liste-de-services: 
     new: جديد
     offers: عروض
     organizations: منظمة
     preview: عرض
     rechtliche-hinweise: إرشادات-قانونية
+    refugees: 
     search_locations: بحث_المواقع
     subscribe: subscribe
     subscriptions: إشتراكات
@@ -1426,12 +1428,11 @@ ar:
     unsubscribe: unsubscribe
     update_requests: طلبات-تحديث
     users: مستخدم
+    widget: 
     widget-handbook-germany: 
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    liste-de-services: 
-    refugees: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

@@ -991,7 +991,7 @@ en:
         claim:
           family: Support services for children, teenagers and families
         hero:
-          button_label: 
+          button_label: Learn more
           logline: 
       modal:
         beta_modal:
@@ -1524,16 +1524,16 @@ en:
       title: Datenschutz
     section_choice:
       cta:
-        button: 
+        button: Find help now
         family:
-          text: 
+          text: 'At clarat family, families in Germany find information on aid in their area. For problems in the following areas: Family, Health, Learning & Work and Violence & Crime.'
         refugees:
-          text: 
+          text: 'At clarat refugees find people who have escaped to Germany help. For problems related to: Asylum & Law, Family, Health, Learning & Work and Violence & Crime.'
       meta_description: clarat.org shows which support services there are in Germany. For children, teenagers and families. And for refugees. Online. Easy. Near you.
       meta_title: clarat explains | clarat
       mission:
-        headline: 
-        text: 
+        headline: Our mission
+        text: Make help which exists in Germany visible and explain it in easy terms.
       title: Please choose your clarat-section
     shared:
       address:

@@ -7,7 +7,7 @@
       .filter-form__container
         %legend.filter-form__fieldset__headline
           = hb '@root.headline_target_audience'
-        %select.JS-TargetAudienceSelector.advanced-filter-form__select{name: 'target_audience', id: 'target_audience_select'}
+        %select.JS-TargetAudienceSelector.filter-form__select.filter-form--resetable{name: 'target_audience', id: 'target_audience_select'}
           %option{value: 'any', selected: 'selected', id: 'target_audience_any'}
             = hb '@root.option_any'
           = hb 'each target_audience' do
@@ -18,7 +18,7 @@
       .filter-form__container
         %legend.filter-form__fieldset__headline
           = hb '@root.headline_gender'
-        %select.JS-ExclusiveGenderSelector.advanced-filter-form__select{name: 'exclusive_gender', id: 'exclusive_gender_select'}
+        %select.JS-ExclusiveGenderSelector.filter-form__select.filter-form--resetable{name: 'exclusive_gender', id: 'exclusive_gender_select'}
           %option{value: 'any', selected: 'selected', id: 'exclusive_gender_any'}
             = hb '@root.option_any'
           = hb 'each exclusive_gender' do
@@ -31,7 +31,7 @@
           = hb '@root.headline_language'
         %label.sr-only{for: 'language_select'}
           = hb '@root.headline_language'
-        %select.JS-LanguageSelector.advanced-filter-form__select{name: 'language', id: 'language_select'}
+        %select.JS-LanguageSelector.filter-form__select.filter-form--resetable{name: 'language', id: 'language_select'}
           %option{value: 'any', selected: 'selected', id: 'language_any'}
             = hb '@root.option_any'
           = hb 'each language' do
@@ -44,7 +44,7 @@
           = hb '@root.headline_residency_status'
         %label.sr-only{for: 'residency_status_select'}
           = hb '@root.headline_residency_status'
-        %select.JS-ResidencyStatusSelector.advanced-filter-form__select{name: 'residency_status', id: 'residency_status_select'}
+        %select.JS-ResidencyStatusSelector.filter-form__select.filter-form--resetable{name: 'residency_status', id: 'residency_status_select'}
           %option{value: 'any', selected: 'selected', id: 'residency_status_any'}
             = hb '@root.option_any'
           = hb 'each residency_status' do

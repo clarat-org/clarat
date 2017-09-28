@@ -182,7 +182,7 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   handleFilterReset: (event) =>
     # reset selects to option = 'any' (default)..
-    results = $('.advanced-filter-form__select').map ->
+    results = $('.filter-form--resetable').map ->
       if $(this).context.name && $(this).context.name.length
         $(this).context.value = 'any'
         return $(this).context.name

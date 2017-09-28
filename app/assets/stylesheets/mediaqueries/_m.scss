@@ -792,6 +792,12 @@
     font-size: 13px;
   }
 
+  .nav-lang {
+    a {
+      margin: 0;
+    }
+  }
+
   .Hero {
     [data-section="family"] & {
       background-image: image_url('hero_family--1--medium.jpg')

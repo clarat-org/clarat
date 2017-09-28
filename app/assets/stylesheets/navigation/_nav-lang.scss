@@ -13,7 +13,12 @@
   a {
     color: inherit;
     text-decoration: none;
-    margin: 0 9px;
+    margin: 0 0 0 18px;
+
+    [dir="rtl"] & {
+      margin: 0 18px 0 0;
+
+    }
   }
 }
 

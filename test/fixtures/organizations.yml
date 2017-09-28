@@ -1,10 +1,12 @@
 basic:
   id: 1
   name: foobar
-  description: foobar
+  description: basicOrganizationDescription
   legal_form: ev
   offers_count: 1
-  aasm_state: approved
+  aasm_state: all_done
   created_by: 1
   approved_by: 2
   mailings: enabled
+  website_id: 1
+  slug: basicOrgaSlug

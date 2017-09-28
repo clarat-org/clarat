@@ -6,6 +6,12 @@
 
 .Listing-results {
   position: relative;
+  padding-right: 30%;
+
+  html[dir="rtl"] & {
+    padding-right: 0;
+    padding-left: 30%;
+  }
 }
 
 .Listing-results__pending-ajax {
@@ -191,27 +197,6 @@
   margin: 0;
   font-size: inherit;
   line-height: 1.65;
-}
-
-.Listing-results__expander {
-  @extend %hide_text;
-  display: none;
-  width: 40px;
-  height: 24px;
-  background: transparent no-repeat center center;
-
-  &[aria-expanded='false'] {
-    background-image: image-url('ico_expand.svg');
-  }
-
-  &[aria-expanded='true'] {
-    background-image: image-url('ico_collapse.svg');
-  }
-
-  body.refugees &,
-  body.family & {
-    background-color: transparent;
-  }
 }
 
 .Listing-results__meta,

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welten-Startseite-fam" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Welt-Desktop-1680" transform="translate(-271.000000, -298.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(270.000000, 297.000000)">
+                <g id="icon-play-light">
+                    <g id="icon-play" transform="translate(1.000000, 1.000000)">
+                        <path d="M29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 C58,13 45,0 29,0 Z M46.7,46.7 C42.1,51.2 35.9,54 29,54 C22.1,54 15.9,51.2 11.3,46.7 C6.8,42.1 4,35.9 4,29 C4,22.1 6.8,15.9 11.3,11.3 C15.9,6.8 22.1,4 29,4 C35.9,4 42.1,6.8 46.7,11.3 C51.2,15.9 54,22.1 54,29 C54,35.9 51.2,42.1 46.7,46.7 Z" id="Shape" fill-rule="nonzero"></path>
+                        <path d="M42.4,27.2 L24.8,16.9 C24.2,16.5 23.4,16.5 22.8,16.9 C22.2,17.3 21.8,17.9 21.8,18.6 L21.8,39.3 C21.8,40 22.2,40.7 22.8,41 C23.4,41.4 24.2,41.4 24.8,41 L42.3,30.6 C42.9,30.2 43.3,29.6 43.3,28.9 C43.3,28.2 43,27.6 42.4,27.2 Z" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -40,7 +40,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   # Renders a mostly empty wireframe that the search results will be placed in.
   searchFramework: ->
     @render '#search-wrapper', 'search', new Clarat.Search.Cell.Search(@model)
-    Clarat.Search.Operation.UpdateCategories.updateActiveClasses @model.category
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
     $(document).trigger 'Clarat.Search::FirstSearchRendered'
 
@@ -68,9 +67,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       Clarat.Modal.open('#unavailable_location_overlay')
       @handleChangeToRemote()
 
-    Clarat.Search.Operation.UpdateCategories.updateCounts(
-      personalFacetResults, remoteFacetResults
-    )
     $(document).trigger 'Clarat.Search::NewLocationSupportResults', [
       remoteFacetResults,
       personalFacetResults
@@ -80,9 +76,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   onQuerySupportResults: (resultSet) =>
     remoteFacetResults = resultSet.results[0]
     personalFacetResults = resultSet.results[1]
-    Clarat.Search.Operation.UpdateCategories.updateCounts(
-      personalFacetResults, remoteFacetResults
-    )
     $(document).trigger 'Clarat.Search::NewQuerySupportResults', [
       remoteFacetResults,
       personalFacetResults
@@ -104,8 +97,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       click: 'handleRemoveQueryClick'
     '.JS-RemoveExactLocationClick':
       click: 'handleRemoveExactLocationClick'
-    '.JS-CategoryLink':
-      click: 'handleCategoryClick'
     '.JS-SwitchToRemote':
       click: 'handleClickToRemote'
     '.JS-SwitchToPersonal':
@@ -115,23 +106,23 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     '.JS-SortOrderSelector':
       change: 'handleSortOrderChange'
-    '#advanced_search .JS-AgeSelector':
-      change: 'handleFilterChange'
     '#advanced_search .JS-TargetAudienceSelector':
       change: 'handleFilterChange'
     '#advanced_search .JS-ExclusiveGenderSelector':
       change: 'handleFilterChange'
     '#advanced_search .JS-LanguageSelector':
       change: 'handleFilterChange'
-    '#advanced_search .JS-EncounterSelector':
-      change: 'handleEncounterChange'
+    '#advanced_search .JS-ResidencyStatusSelector':
+      change: 'handleFilterChange'
+    '#advanced_search .JS-ResetFiltersButton':
+      click: 'handleFilterReset'
 
     ## Radio state handling contact_type
-    'input[name=contact_type][value=remote]:checked':
-      change: 'handleChangeToRemote'
-    'input[name=contact_type][value=personal]:checked':
-      change: 'handleChangeToPersonal'
-      'Clarat.Search::InitialDisable': 'disableCheckboxes'
+    # 'input[name=contact_type][value=remote]:checked':
+    #   change: 'handleChangeToRemote'
+    # 'input[name=contact_type][value=personal]:checked':
+    #   change: 'handleChangeToPersonal'
+    #   'Clarat.Search::InitialDisable': 'disableCheckboxes'
 
   handleQueryKeyUp: (event) =>
     @model.assignAttributes query: event.target.value
@@ -165,14 +156,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
       @sendMainSearch()
       @sendQuerySupportSearch()
 
-  handleCategoryClick: (event) =>
-    categoryName = @getNestedData event.target, '.JS-CategoryLink', 'name'
-    @model.updateAttributes category: categoryName
-    Clarat.Search.Operation.UpdateCategories.updateActiveClasses categoryName
-    $(document).trigger 'Clarat.Search::CategoryClick'
-    @sendMainSearch()
-    @stopEvent event
-
   handlePaginationClick: (event) =>
     changes =
       page: @getNestedData(event.target, '.JS-PaginationLink', 'page') - 1
@@ -197,19 +180,26 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @sendMainSearch()
     Clarat.Search.Operation.UpdateAdvancedSearch.run @model
 
-  handleEncounterChange: (event) =>
-    if $('.JS-EncounterSelector:checked').length is 0
-      return @handleChangeToPersonal()
+  handleFilterReset: (event) =>
+    # reset selects to option = 'any' (default)..
+    results = $('.filter-form--resetable').map ->
+      if $(this).context.name && $(this).context.name.length
+        $(this).context.value = 'any'
+        return $(this).context.name
+    # .. update all attributes...
+    for field_name in results
+      @model.updateAttributes "#{field_name}": ''
+    # .. and then send new search to update results
+    @sendMainSearch()
+    @sendQuerySupportSearch()
 
-    val = $(event.target).val()
-    if $(event.target).prop('checked')
-      @model.addEncounter val
-    else
-      @model.removeEncounter val
+
+  handleEncounterChange: (event) =>
+    if @model.isPersonal() == false
+      return @handleChangeToPersonal()
 
     # explicitly reset the page variable
     @model.resetPageVariable()
-    @model.save encounters: @model.encounters
     @sendMainSearch()
     @sendQuerySupportSearch()
 
@@ -222,17 +212,10 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
     @model.contact_type = 'personal'
     @showMapUnderCategories()
     @showPersonalControls()
-    $('#contact_type_personal').prop('checked', true)
-
-    that = @
-    $('.JS-EncounterSelector').each ->
-      that.model.addEncounter $(@).val()
-      $(@).attr 'disabled', true
 
     # explicitly reset the page variable
     @model.resetPageVariable()
-    @model.save encounters: @model.encounters, contact_type: 'personal'
-    Clarat.Search.Operation.UpdateAdvancedSearch.updateCheckboxes(@model)
+    @model.save contact_type: 'personal'
     @sendMainSearch()
     @sendQuerySupportSearch()
 
@@ -251,10 +234,6 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
     @sendMainSearch()
     @sendQuerySupportSearch()
-
-  disableCheckboxes: =>
-    $('.JS-EncounterSelector').each ->
-      $(@).attr 'disabled', true
 
   handleURLupdated: =>
     # Fix for Safari & old Chrome: prevent initial popstate from affecting us.
@@ -275,12 +254,12 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
 
   hidePersonalControls: =>
     $('#advanced_search .sort_order').hide()
-    $("#tab3").hide()
-    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().hide()
+    $("#tab2").hide()
+    $('.off-canvas-container__trigger[data-target="#tab2"]').parent().hide()
 
   showPersonalControls: =>
-    $("#tab3").css("display", "inline-block")
-    $('.off-canvas-container__trigger[data-target="#tab3"]').parent().show()
+    $("#tab2").css("display", "inline-block")
+    $('.off-canvas-container__trigger[data-target="#tab2"]').parent().show()
 
   getNestedData: (eventTarget, selector, elementName) ->
     $(eventTarget).data(elementName) or

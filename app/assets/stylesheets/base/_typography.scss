@@ -58,7 +58,20 @@
   asset-url('Roboto-Black-webfont.svg#robotoitalic') format('svg');
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'roboto-slabregular';
+  src: asset-url('RobotoSlab-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-slabbold';
+  src: asset-url('RobotoSlab-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 %roboto_regular {
@@ -72,6 +85,16 @@
 
 %roboto_bold {
   font-family: 'roboto-bold', 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+%roboto_slabregular {
+  font-family: 'roboto-slabregular', sans-serif;
+  font-weight: 700;
+}
+
+%roboto_slabbold {
+  font-family: 'roboto-slabbold', sans-serif;
   font-weight: 700;
 }
 

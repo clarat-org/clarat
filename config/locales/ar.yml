@@ -580,6 +580,11 @@ ar:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -589,11 +594,6 @@ ar:
       sort_order:
         nearby: على مقربة
         relevance: الأهمية
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -666,16 +666,15 @@ ar:
         approach: كيف تقدم المساعدة؟
         gender: النوع
         language: اللغة
+        residency_status: 
         sort: رتب حسب
         target_audience: المساعدة لمن؟
-        residency_status: 
-      more_info_button: 'إلى مقدم المشورة:'
-      more_info_text: 'للمزيد من المعلومات حول:'
       option_any: سواء
       pagination:
         back: للخلف
         gap: "..."
         next: لاحقا
+      reset_label: 
       sort:
         nearby: بالقرب
         relevance: أفضل النتائج
@@ -859,6 +858,44 @@ ar:
           link: هنا يمكنك معرفة المزيد
           refugees: قريبا سيكون هناك عروضا للأجئين أيضا
           text: clarat.org يتم إنشائها
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: معلومات عنا
         blog: مدونة
@@ -897,6 +934,9 @@ ar:
       hero:
         claim:
           family: مساعدة للأطفال والمراهقين و الأسرة
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -906,6 +946,7 @@ ar:
             قريبا سوف نقوم بتجميع عروض مساعدات أيضا لمدن أخري. مساعدتك تسرنا:
             هل لاحظت شيئا ما؛ وترى أنه يمكننا تحسينه؟
             أو شيئا غير صحيح؟ إذن
+        more_information_overlay: 
         send: 
         unavailable_location_modal: |
           لموقعك يوجد في كلارات حاليا عروض مساعدات عن طريق التليفون أو الإنترنت فقط
@@ -950,44 +991,6 @@ ar:
               family: إلى <span class="top-bar__emphasis">كلارات اللاجئين</span> تحول
               refugees: إلى <span class="top-bar__emphasis">كلارات الأسرة</span> تحول
         title: ترجمة فورية
-      callout:
-        callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
-          how:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          what:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          who:
-            family:
-              heading: 
-              text: 
-            heading: 
-            refugees:
-              heading: 
-              text: 
     widget:
       category_headline: 
   offer:
@@ -1025,9 +1028,15 @@ ar:
             female: فقط للبنات والسيدات
             girls_only: فقط للبنات والسيدات
             male: فقط للصبيان والرجال
+          residency_status:
+            before_the_asylum_decision: في قضية اللجوء
+            with_a_residence_permit: بتصريح إقامة
+            with_deportation_decision: بقرار الترحيل
+            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
           target_audience:
             children: للأطفال والشباب
             family_children: للأطفال والشبان
+            family_everyone: 
             family_nuclear_family: للأسر
             family_parents: للآباء
             family_parents_to_be: لمن سوف يصيرون والدين
@@ -1036,19 +1045,13 @@ ar:
             nuclear_family: للأسر
             parents: للآباء
             pregnant_woman: للحوامل
-            relatives: للمعارف والأقارب
-            family_everyone: 
             refugees_children: للأجئين الأطفال
             refugees_families: للأسرة اللاجئة
             refugees_general: للاجئين
             refugees_parents: للاجئين من الآباء
             refugees_parents_to_be: للاجئين الذين سيصيرون قريباً آباء
             refugees_uf: للاجئين غير المصحوبين
-          residency_status:
-            before_the_asylum_decision: في قضية اللجوء
-            with_a_residence_permit: بتصريح إقامة
-            with_deportation_decision: بقرار الترحيل
-            with_temporary_suspension_of_deportation: بإذن إقامة مؤقت (دولدونج)
+            relatives: للمعارف والأقارب
       map_sidebar:
         map_output_searchresults: إظهار بطاقة نتائج البحث
       noscript_warning: |
@@ -1276,6 +1279,8 @@ ar:
     faq:
       title: أسئلة شائعة
     home:
+      explaination:
+        headline: 
       how:
         heading: كيف تعمل كلارات؟
         text: أكتب المشكلة التي تحتاح مساعدة في حلها, او التي تقلقك. يمكنك أيضا أن تختار من الموضوعات الموجودة لدينا, فتري في الحال كل العروض التي تقدم الدعم بالقرب منك. وكذلك تعرف أيضا, كيف تحصل على المساعدة و بأي  وسيلة إتصال, سواء عن طريق التليفون أو إرسال إيميل أو الذهاب الي عنوان ما
@@ -1298,29 +1303,6 @@ ar:
       why:
         heading: لماذا توجد كلارات؟
         text: "عن طريق كلارات يمكنك أن تجد مساعدة. \nففي ألمانيا يوجد العديد من العروض التي تدعم الأطفال والشباب والأسرة. \nوكذلك الكثير من العروض للاجئين. ولكن في الغالب يكون من الصعب الوصول الى هذه العروض. \nفنحن هنا  لنساعدك؛ فإذا كان الأمر يتعلق بالأسرة فإبحث في كلارات الأسرة\n أما إذا كان خاص باللاجئين فإبحث في كلارات اللاجئين\n"
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: 
-          who:
-            text: 
-        how:
-          heading: 
-          text: 
-        refugees:
-          how:
-            heading: 
-          who:
-            text: 
-        what:
-          heading: 
-          text: 
-        who:
-          heading: 
-          text: 
     impressum:
       heading: Impressum
       notice: كلارات عبارة عن محرك بحث. كلارات يبلغك بمكان الحصول على المساعدة. مثلا، أين تجد خبراء يساعدونك في حل مشكلتك. أما كلارات نفسه فبإمكانه مساعدتك في البحث فقط.
@@ -1399,8 +1381,17 @@ ar:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: clarat.org تعرض لك ما هي المساعدات المتاحة في ألمانيا للاطفال والمراهقين والأسر واللاجئين. عبر الانترنت. بالقرب منك.
       meta_title: كلارات توضح | كلارات
+      mission:
+        headline: 
+        text: 
       title: إختر قسم كلارات الذي يخصك
     shared:
       address:
@@ -1417,16 +1408,19 @@ ar:
     definitions: تعريف
     emails: رسائل بريد إليكتروني
     faq: أسئلة-شائعة
+    fr: 
     haeufige-fragen: أسئلة-شائعة
     home: الصفحة الرئيسية
     impressum: هيئة التحرير
     kontakt: إتصال
     liste: القائمة
+    liste-de-services: 
     new: جديد
     offers: عروض
     organizations: منظمة
     preview: عرض
     rechtliche-hinweise: إرشادات-قانونية
+    refugees: 
     search_locations: بحث_المواقع
     subscribe: subscribe
     subscriptions: إشتراكات
@@ -1439,8 +1433,6 @@ ar:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    fr: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

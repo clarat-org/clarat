@@ -11,9 +11,6 @@
     %div.Listing-results__stamp
       = hb 'current_stamp'
 
-      %button.Listing-results__expander{'aria-expanded' => 'false'}
-        = hb '@root.toggle_search_result_details'
-
     = hb 'if location_visible' do
       %div.Listing-results__meta.Listing-results__meta--with-address
         %h4.Listing-results__orga-display

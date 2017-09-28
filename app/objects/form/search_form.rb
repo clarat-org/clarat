@@ -29,9 +29,6 @@ class SearchForm
   CONTACT_TYPES = [:personal, :remote].freeze
   attribute :contact_type, String, default: :personal
   enumerize :contact_type, in: CONTACT_TYPES
-  ### Age
-  attribute :age, String
-  enumerize :age, in: TargetAudienceFiltersOffer::MIN_AGE..TargetAudienceFiltersOffer::MAX_AGE
   ### Language
   attribute :language, String
   enumerize :language, in: LanguageFilter::IDENTIFIER
@@ -39,14 +36,14 @@ class SearchForm
   attribute :target_audience, String
   ### Gender
   attribute :exclusive_gender, String
-  ### Encounter
-  attribute :encounters, String,
-            default: (Offer::ENCOUNTERS - %w(personal)).join(',')
   ### Sort Order
   attribute :sort_order, String, default: :relevance
   enumerize :sort_order, in: [:nearby, :relevance]
   ### Section (world)
   attribute :section_identifier, String, default: :family
+  ### ResidencyStatus
+  attribute :residency_status, String
+  enumerize :residency_status, in: TargetAudienceFiltersOffer::RESIDENCY_STATUSES
 
   # Methods #
 

@@ -28,14 +28,12 @@ about supported directives.
 # = require hammerjs
 # = require ifvisible.js
 
-
 # = require handlebars.runtime
 # = require_tree ./templates
 # = require_tree ./search/templates
 # = require_tree ./location/templates
 # = require_tree ./single_click_button/templates
 # = require_tree ./gmaps/templates
-# = require_tree ./category_links_to_search/templates
 #
 # = require setup
 #
@@ -60,13 +58,10 @@ about supported directives.
 # = require active_script/presenter
 # = require active_script/model
 #
-# = require category_links_to_search/presenter
-#
 # = require search/setup
 # = require search/model
 # = require search/persister
 # = require search/presenter
-# = require search/operations/update_categories
 # = require search/operations/update_advanced_search
 # = require search/operations/build_map
 # = require search/cells/search
@@ -92,15 +87,16 @@ about supported directives.
 #
 # = require single_click_button/presenter
 # = require handle_world_select_overlay/presenter
-# = require enhance_listing_results/presenter
 # = require welcome_tooltips/presenter
 # = require nav_lang_bar/presenter
+# = require mobile_nav/presenter
+# = require soft_jump/presenter
+
 # = require shariff_additional/presenter
 # = require section_speaking_wrapper/presenter
 # = require off_canvas/presenter
 # = require toggle_advanced_search/presenter
 # = require analytics/presenter
-# = require equal_height_helper/presenter
 # = require offer_show_tooltips/presenter
 
 #
@@ -115,7 +111,6 @@ about supported directives.
 # = require query_field_placeholder/model
 # = require query_field_placeholder/presenter
 #
-# = require modules/mobilemenu
 # = require modules/more
 # = require modules/modal
 # = require modules/tooltip

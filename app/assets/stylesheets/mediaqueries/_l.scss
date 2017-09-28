@@ -62,11 +62,11 @@
   //}
 
   .search-form--input-wrapper {
-    right: 80px;
 
     html[dir="rtl"] & {
       left: 60px;
       right: 15px;
+      margin-right: 0;
     }
 
     html[dir="rtl"][lang="fa"] .template--pages-home & {
@@ -190,20 +190,107 @@
   }
 
   .nav-lang__list {
-    display: none;
-  }
-
-  button.nav-lang__button {
-    cursor: pointer;
-    background-image: image-url('ico_weltkugel--dropdown.svg');
-    width: 50px;
-
-    &.is-active {
-      background-image: image-url('ico_weltkugel--dropup.svg');
+    li {
+      font-size: 12px;
     }
   }
 
-  // Content ######################################
+  .Callout__headline {
+    @extend %roboto_slabregular;
+    font-size: 20px;
+  }
+
+  .Explainaition-area__headline {
+    font-size: 30px;
+  }
+
+  .Hero {
+    [data-section="family"] & {
+      background-image: image_url('hero_family--1--medium.jpg')
+    }
+
+    [data-section="refugees"] & {
+      background-image: image_url('hero_refugees--1--medium.jpg')
+    }
+  }
+
+  .Hero {
+    height: 425px;
+  }
+
+  .Hero__logline {
+    font-size: 25px;
+  }
+
+  .Hero__link-to-explaination {
+    font-size: 18px;
+    background-size: 40px 40px;
+    min-height: 60px;
+    padding-left: 55px;
+    line-height: 40px;
+  }
+
+  .Hero__pitch {
+    left: 15px;
+  }
+
+
+  .Mission__statement,
+  .Mission__stage {
+    height: 246px;
+  }
+
+  .Mission__stage {
+    background-image: image_url('mission--1--large.jpg')
+  }
+
+  .Mission__statement {
+    padding: 25px 25px 25px 0;
+
+    &:after {
+      border-top: 123px solid #F4B528;
+      border-bottom: 123px solid #F4B528;
+      border-left: 45px solid transparent;
+      left: -45px;
+      width: 45px;
+    }
+  }
+
+  .Mission__headline {
+    font-size: 35px;
+  }
+
+  .Mission__text {
+    font-size: 23px;
+  }
+
+  .Explainaition-area__wrapper {
+    width: calc(100% - 50px);
+    margin: 0 25px;
+  }
+
+  .filter-form__fieldset {
+    flex: 1 1 auto;
+  }
+
+  .filter-form__fieldset-wrapper {
+    margin: 0 10px;
+
+    [dir="rtl"] & {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .filter-form__select {
+    font-size: 12px;
+    padding-right: 20px;
+    flex: 1 1 auto;
+    max-width: 165px;
+    background-position: 99% center;
+  }
+
+
+    // Content ######################################
 
   .section-wrapper-major,
   .section-wrapper-minor,
@@ -213,30 +300,23 @@
     margin-right: 0;
     width: auto;
 
-    // Repeat to override specificity
-    html[dir="rtl"] & {
-      display: block;
-      float: none;
-      margin-left: 0;
-      width: auto;
-    }
+
   }
 
   .aside-standard {
     position: absolute;
     max-width: 27%;
+    top: 95px;
+    right: 20px;
   }
 
   .content-main {
     padding-bottom: 0;
 
-    &.content-main--wide {
-      margin-top: 0;
-    }
 
     .template--pages-section_choice & {
-      margin-top: 3em;
       height: auto;
+      margin: 10px 0;
     }
   }
 
@@ -287,6 +367,11 @@
   }
 
   .filter-form {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+
+
     .col-form-wrapper {
       display: block;
     }
@@ -296,6 +381,14 @@
       width: 50%;
       float: left;
     }
+  }
+
+  .filter-form__container {
+    flex-direction: column;
+  }
+
+  .filter-form__fieldset-wrapper {
+    margin: 0;
   }
 
   .filter-form--isCollapsed {
@@ -325,15 +418,24 @@
     }
   }
 
-  html[lang="de"] .section-choice__container,
-  .section-choice__container {
-    width: auto;
-    min-width: 50%;
+  .section-choice__logo {
+    width: 123px;
+    height: 47px;
   }
 
-  .section-choice__headline {
-    background-size: auto 80%;
+  .section-choice__cta {
+    height: 44px;
+    font-size: 16px;
+    padding: 15px;
+
+    &:after {
+      right: -15px;
+      border-top: 22px solid transparent;
+      border-left-width: 15px;
+      border-bottom: 22px solid transparent;
+    }
   }
+
 
   .result-order__label {
     display: none;
@@ -345,10 +447,6 @@
 
   // Footer ######################################
 
-  .footer-main {
-    padding-top: 80px;
-  }
-
   .footer-main__firstrow {
     height: auto;
   }
@@ -357,18 +455,18 @@
     margin-bottom: 20px
   }
 
+  .nav-legal {
+    float: none;
+    margin-top: 10px;
+  }
+
   .newsletter-subscribe__submit {
-    border-bottom-right-radius: 10px; // since extends do not work here
     width: 230px;
 
-    html[dir="rtl"] & {
-      border-top-left-radius: 0;
-    }
   }
 
   input.newsletter-subscribe__input {
     html[dir="rtl"] & {
-      border-top-left-radius: 6px;
       margin-right: 0;
     }
   }

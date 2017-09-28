@@ -640,6 +640,11 @@ en:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -649,11 +654,6 @@ en:
       sort_order:
         nearby: Nearby
         relevance: Relevance
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -730,16 +730,15 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
-        residency_status: Residency status
-      more_info_button: To adviser
-      more_info_text: 'More information:'
       option_any: any
       pagination:
         back: Previous
         gap: "…"
         next: Next
+      reset_label: 
       sort:
         nearby: nearby
         relevance: Best matches
@@ -915,6 +914,44 @@ en:
           link: Find out more
           refugees: Soon with support services for refugees
           text: clarat.org is currently under construction
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: How does clarat family work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+            refugees:
+              heading: How does clarat refugees work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+          what:
+            family:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: family, health, learning & work and violence & crime.'
+            refugees:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: asylum & law, family, health, learning & work and violence & crime.'
+          who:
+            family:
+              heading: Who can find help here?
+              text: Every family in Germany, parents, their children and pregnant women can find help here. Friends and relatives can, too.
+            heading: 
+            refugees:
+              heading: Who can find help here?
+              text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
       footer:
         about: About us
         blog: Blog
@@ -942,17 +979,20 @@ en:
         contact: 
         faq: 
         languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
       hero:
         claim:
           family: Support services for children, teenagers and families
+        hero:
+          button_label: Learn more
+          logline: Find the help that suits you - simply explained and clearly arranged
       modal:
         beta_modal:
           link: write us a message.
@@ -1001,44 +1041,6 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-      callout:
-        callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
-          how:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          what:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          who:
-            family:
-              heading: 
-              text: 
-            heading: 
-            refugees:
-              heading: 
-              text: 
     widget:
       category_headline: 
   offer:
@@ -1073,9 +1075,15 @@ en:
             female: girls and women only
             girls_only: girls and women only
             male: boys and men only
+          residency_status:
+            before_the_asylum_decision: during the asylum procedure
+            with_a_residence_permit: with a residence permit
+            with_deportation_decision: with deportation notice
+            with_temporary_suspension_of_deportation: with temporary suspension of deportation
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
+            family_everyone: 
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -1084,19 +1092,13 @@ en:
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
-            relatives: for friends and family
-            family_everyone: 
             refugees_children: for refugee children
             refugees_families: for refugee families
             refugees_general: for refugees
             refugees_parents: for refugee parents
             refugees_parents_to_be: for refugee expectant parents
             refugees_uf: for unaccompanied refugees
-          residency_status:
-            before_the_asylum_decision: during the asylum procedure
-            with_a_residence_permit: with a residence permit
-            with_deportation_decision: with deportation notice
-            with_temporary_suspension_of_deportation: with temporary suspension of deportation
+            relatives: for friends and family
       map_sidebar:
         map_output_searchresults: map output of the search results
       noscript_warning: |
@@ -1413,13 +1415,15 @@ en:
     faq:
       title: Frequently asked questions
     home:
+      explaination:
+        headline: 
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
         2017-07-17, visits=2: 
-        family: You can easily find help for children, teenagers and families with clarat family. Online. In many languages. All over Berlin. And around Germany.
-        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
+        family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
+        refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
         2017-07-17, visits=2: 
         family: Find help easily | clarat family
@@ -1437,29 +1441,6 @@ en:
       why:
         heading: Why does clarat exist?
         text: "It's easy to find help with clarat. In Germany, there are a lot of\nsupport services for children, teenagers and families. As well as\nfor refugees. But they're often very hard to find. We want to help \nyou find the help you need. You should search on clarat family if \nyou're looking for help for your family. And on clarat refugees if \nyou're looking for help for refugees."
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: 
-          who:
-            text: 
-        how:
-          heading: 
-          text: 
-        refugees:
-          how:
-            heading: 
-          who:
-            text: 
-        what:
-          heading: 
-          text: 
-        who:
-          heading: 
-          text: 
     impressum:
       heading: Impressum
       notice: clarat ist a search engine. clarat tells you where to get help. For example, where you can find an expert to help you with your problem. clarat can only help you to find help.
@@ -1542,8 +1523,17 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      cta:
+        button: Find help now
+        family:
+          text: 'At clarat family, families in Germany find information on aid in their area. For problems in the following areas: Family, Health, Learning & Work and Violence & Crime.'
+        refugees:
+          text: 'At clarat refugees find people who have escaped to Germany help. For problems related to: Asylum & Law, Family, Health, Learning & Work and Violence & Crime.'
+      meta_description: clarat.org shows which support services there are in Germany. For children, teenagers and families. And for refugees. Online. Easy. Near you.
       meta_title: clarat explains | clarat
+      mission:
+        headline: 'Our mission:'
+        text: Make help which exists in Germany visible and explain it in easy terms.
       title: Please choose your clarat-section
     shared:
       address:
@@ -1560,16 +1550,19 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
+    fr: 
     haeufige-fragen: frequently-asked-questions
     home: home
     impressum: impressum
     kontakt: contact
     liste: liste
+    liste-de-services: 
     new: new
     offers: offers
     organizations: organizations
     preview: preview
     rechtliche-hinweise: legal-information
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
@@ -1582,8 +1575,6 @@ en:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    fr: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: Please fill out this field

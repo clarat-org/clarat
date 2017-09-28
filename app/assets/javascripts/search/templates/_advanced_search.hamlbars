@@ -1,97 +1,54 @@
-.filter-form#advanced_search(aria-hidden='true')
+.filter-form#advanced_search
   = hb '> _sort_order'
 
-  %fieldset.filter-form__fieldset
-    %legend.filter-form__fieldset__headline#age
-      = hb '@root.headline_age'
-    %div.filter-form__fieldset__wrapper.filter-form__fieldset__wrapper--age
-      %label.sr-only{for: 'age_select'}
-        = hb '@root.headline_age'
-      %select.JS-AgeSelector.filter-form__select{name: 'age', id: 'age_select'}
-        %option{value: 'any', id: 'age_any'}
-          = hb '@root.option_any'
-        = hb 'each age' do
-          %option{value: '{{identifier}}', id: 'age_{{identifier}}'}
-            = hb 'display_name'
+  .filter-form__fieldset-wrapper
 
-    %legend.filter-form__fieldset__headline
-      = hb '@root.headline_language'
-    %div.filter-form__fieldset__wrapper
-      %label.sr-only{for: 'language_select'}
-        = hb '@root.headline_language'
-      %select.JS-LanguageSelector.filter-form__select{name: 'language', id: 'language_select'}
-        %option{value: 'any', selected: 'selected', id: 'language_any'}
-          = hb '@root.option_any'
-        = hb 'each language' do
-          %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
-            = hb 'display_name'
+    %fieldset.filter-form__fieldset#target_audience
+      .filter-form__container
+        %legend.filter-form__fieldset__headline
+          = hb '@root.headline_target_audience'
+        %select.JS-TargetAudienceSelector.filter-form__select.filter-form--resetable{name: 'target_audience', id: 'target_audience_select'}
+          %option{value: 'any', selected: 'selected', id: 'target_audience_any'}
+            = hb '@root.option_any'
+          = hb 'each target_audience' do
+            %option{value: '{{identifier}}', id: 'target_audience_{{identifier}}'}
+              = hb 'display_name'
 
-  %fieldset.filter-form__fieldset#target_audience
-    %legend.filter-form__fieldset__headline
-      = hb '@root.headline_targt_audience'
-    %div.filter-form__fieldset__wrapper
-      %div.filter-form__radio
-        %input{type: 'radio', name: 'target_audience', value: 'any',
-               id: 'target_audience_any', class: 'JS-TargetAudienceSelector'}
-        %label{for: 'target_audience_any'}
-          = hb '@root.option_any'
-      = hb 'each target_audience' do
-        %div.filter-form__radio
-          %input{type: 'radio', name: 'target_audience',
-                 value: '{{identifier}}',
-                 id: 'target_audience_{{identifier}}',
-                 class: 'JS-TargetAudienceSelector'}
-          %label{for: 'target_audience_{{identifier}}'}= hb 'display_name'
+    %fieldset.filter-form__fieldset#exclusive_gender
+      .filter-form__container
+        %legend.filter-form__fieldset__headline
+          = hb '@root.headline_gender'
+        %select.JS-ExclusiveGenderSelector.filter-form__select.filter-form--resetable{name: 'exclusive_gender', id: 'exclusive_gender_select'}
+          %option{value: 'any', selected: 'selected', id: 'exclusive_gender_any'}
+            = hb '@root.option_any'
+          = hb 'each exclusive_gender' do
+            %option{value: '{{identifier}}', id: 'exclusive_gender_{{identifier}}'}
+              = hb 'display_name'
 
-  %fieldset.filter-form__fieldset#exclusive_gender
-    %legend.filter-form__fieldset__headline
-      = hb '@root.headline_gender'
-    %div.filter-form__fieldset__wrapper
-      %div.filter-form__radio
-        %input{type: 'radio', name: 'exclusive_gender', value: 'any',
-               id: 'exclusive_gender_any', class: 'JS-ExclusiveGenderSelector'}
-        %label{for: 'exclusive_gender_any'}
-          = hb '@root.option_any'
-      = hb 'each exclusive_gender' do
-        %div.filter-form__radio
-          %input{type: 'radio', name: 'exclusive_gender',
-                 value: '{{identifier}}', id: 'exclusive_gender_{{identifier}}',
-                 class: 'JS-ExclusiveGenderSelector'}
-          %label{for: 'exclusive_gender_{{identifier}}'}= hb 'display_name'
+    %fieldset.filter-form__fieldset#language
+      .filter-form__container
+        %legend.filter-form__fieldset__headline
+          = hb '@root.headline_language'
+        %label.sr-only{for: 'language_select'}
+          = hb '@root.headline_language'
+        %select.JS-LanguageSelector.filter-form__select.filter-form--resetable{name: 'language', id: 'language_select'}
+          %option{value: 'any', selected: 'selected', id: 'language_any'}
+            = hb '@root.option_any'
+          = hb 'each language' do
+            %option{value: '{{identifier}}', id: 'language_{{identifier}}'}
+              = hb 'display_name'
 
-  %fieldset.filter-form__fieldset#contact_type
-    %legend.filter-form__fieldset__headline
-      = hb '@root.headline_approach'
-    %div.filter-form__fieldset__wrapper
-      = hb 'each contact_type' do
-        %div.filter-form__radio
-          %input{type: 'radio', name: 'contact_type', value: '{{identifier}}',
-                 id: 'contact_type_{{identifier}}',
-                 class: 'JS-ContactTypeSelector'}
-          %label{for: 'contact_type_{{identifier}}'}= hb 'display_name'
-
-      / Faking checkbox rendering here, please replace:
-      %div.filter-form__checkboxes-wrapper
-        / TODO: this needs some more work
-        = hb 'each virtual_encounter' do
-          %div.filter-form__checkbox-wrapper
-            %input{type: 'checkbox', value: '{{identifier}}',
-                   id: 'encounter_{{identifier}}', name: 'encounter',
-                   class: 'JS-EncounterSelector'}
-            %label{for: 'encounter_{{identifier}}'}= hb 'display_name'
-
-        -# %div.filter-form__checkbox-wrapper
-        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'phone'}
-        -#   %label{for: 'phone'} Telefon
-        -# %div.filter-form__checkbox-wrapper
-        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'mail'}
-        -#   %label{for: 'mail'} E-Mail
-        -# %div.filter-form__checkbox-wrapper
-        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'chat'}
-        -#   %label{for: 'chat'} Chat
-        -# %div.filter-form__checkbox-wrapper
-        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'forum'}
-        -#   %label{for: 'forum'} Forum
-        -# %div.filter-form__checkbox-wrapper
-        -#   %input{type: 'checkbox', disabled: 'disabled', selected: 'selected', name: 'example', id: 'online_course'}
-        -#   %label{for: 'online_course'} Online-Kurs
+    %fieldset.filter-form__fieldset#residency_status
+      .filter-form__container
+        %legend.filter-form__fieldset__headline
+          = hb '@root.headline_residency_status'
+        %label.sr-only{for: 'residency_status_select'}
+          = hb '@root.headline_residency_status'
+        %select.JS-ResidencyStatusSelector.filter-form__select.filter-form--resetable{name: 'residency_status', id: 'residency_status_select'}
+          %option{value: 'any', selected: 'selected', id: 'residency_status_any'}
+            = hb '@root.option_any'
+          = hb 'each residency_status' do
+            %option{value: '{{identifier}}', id: 'residency_status_{{identifier}}'}
+              = hb 'display_name'
+    %button.JS-ResetFiltersButton.filter-form__reset-btn{id: 'reset_filters_button'}
+      = hb '@root.reset_label'

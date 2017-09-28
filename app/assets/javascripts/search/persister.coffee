@@ -19,10 +19,9 @@ Think of it as the database, that the model interacts with.
 class Clarat.Search.Persister extends ActiveScript.SingleInstance
 
   LOADABLE_FIELDS: [ # form fields
-    'query', 'category', 'generated_geolocation', # , 'geolocation'
-    'exact_location', 'contact_type', 'encounters', 'search_location',
-    'age', 'target_audience', 'exclusive_gender', 'language', 'sort_order',
-    'section_identifier'
+    'query', 'category', 'generated_geolocation', 'exact_location',
+    'contact_type', 'search_location', 'target_audience', 'exclusive_gender',
+    'language', 'sort_order', 'section_identifier', 'residency_status'
   ]
 
   ### PUBLIC METHODS ###
@@ -69,8 +68,7 @@ class Clarat.Search.Persister extends ActiveScript.SingleInstance
   # Load from places other than the search form
   getAdditionalParams: ->
     paramHash =
-      # cat-tree & filters get transmitted as JSON in a hidden element
-      categoryTree: $('#category-tree').data('structure').set
+      # filters get transmitted as JSON in a hidden element
       filters: $('#filters').data('structure')
       section_identifier: $('body').data('section')
       page: $.query.keys.search_form?.page or 0

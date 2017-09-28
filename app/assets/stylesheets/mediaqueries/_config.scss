@@ -17,6 +17,10 @@
   @if $point == S {
     @media (max-width: 500px) { @content; }
   }
+
+  @if $point == XS {
+    @media (max-width: 410px) { @content; }
+  }
 }
 
 @mixin mqindicator($mqname) {
@@ -45,3 +49,4 @@
 @import "l";
 @import "m";
 @import "s";
+@import "xs";

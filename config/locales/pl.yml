@@ -722,6 +722,11 @@ pl:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -731,11 +736,6 @@ pl:
       sort_order:
         nearby: Blisko
         relevance: W związku z tematem
-      residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
   formtastic:
     required: required
   free: 
@@ -806,16 +806,15 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
+        residency_status: 
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
-        residency_status: 
-      more_info_button: 
-      more_info_text: 
       option_any: obojętne
       pagination:
         back: Wróć
         gap: "..."
         next: Dalej
+      reset_label: 
       sort:
         nearby: W pobliżu
         relevance: Lepszy strzał
@@ -995,6 +994,44 @@ pl:
           link: Tutaj dowiesz się więcej
           refugees: Wkrótce także oferty dla uchodźców
           text: clarat.org jest właśnie przebudowywany
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: O nas
         blog: Blog
@@ -1022,17 +1059,20 @@ pl:
         contact: 
         faq: 
         languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
       hero:
         claim:
           family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
@@ -1074,44 +1114,6 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
-      callout:
-        callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
-          how:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          what:
-            family:
-              heading: 
-              text: 
-            refugees:
-              heading: 
-              text: 
-          who:
-            family:
-              heading: 
-              text: 
-            heading: 
-            refugees:
-              heading: 
-              text: 
     widget:
       category_headline: 
   offer:
@@ -1148,9 +1150,15 @@ pl:
             female: tylko dla dziewcząt i kobiet
             girls_only: tylko dla dziewcząt i kobiet
             male: tylko dla chłopców i mężczyzn
+          residency_status:
+            before_the_asylum_decision: w trakcie procedury azylowej
+            with_a_residence_permit: z pozwoleniem na pobyt
+            with_deportation_decision: z zawiadomieniem o deportacji
+            with_temporary_suspension_of_deportation: z pobytem tolerowanym
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży
+            family_everyone: 
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
             family_parents_to_be: dla przyszłych rodziców
@@ -1159,19 +1167,13 @@ pl:
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
-            relatives: dla znajomych i krewnych
-            family_everyone: 
             refugees_children: dla uchodźców-dzieci
             refugees_families: dla uchodźców-rodzin
             refugees_general: dla uchodźców
             refugees_parents: dla uchodźców-rodziców
             refugees_parents_to_be: dla zbiegłych przyszłych rodziców
             refugees_uf: dla niepełnoletnich uchodźców bez opieki
-          residency_status:
-            before_the_asylum_decision: w trakcie procedury azylowej
-            with_a_residence_permit: z pozwoleniem na pobyt
-            with_deportation_decision: z zawiadomieniem o deportacji
-            with_temporary_suspension_of_deportation: z pobytem tolerowanym
+            relatives: dla znajomych i krewnych
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
       noscript_warning: Przykro nam, Twoja wyszukiwarka musi mieć aktywny JavaScript, abyś mógł rozpocząć wyszukiwanie.
@@ -1395,6 +1397,8 @@ pl:
     faq:
       title: Często zadawane pytania
     home:
+      explaination:
+        headline: 
       how:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
@@ -1415,29 +1419,6 @@ pl:
       why:
         heading: Dlaczego istnieje clarat?
         text: Z clarat można łatwo znaleźć pomoc. W Niemczech jest bardzo dużo ofert wspomagających dzieci, młodzież i rodziny. Również wiele ofert dla uchodźców. Często są one trudne do znalezienia. My Ci w tym pomożemy. Jeżeli chodzi o zagadnienia rodzinne, szukaj w clarat family. Jeśli o sprawy uchodźców, szukaj w clarat refugees.
-      callout:
-        "#{@current_section}":
-          who:
-            text: 
-        family:
-          how:
-            heading: 
-          who:
-            text: 
-        how:
-          heading: 
-          text: 
-        refugees:
-          how:
-            heading: 
-          who:
-            text: 
-        what:
-          heading: 
-          text: 
-        who:
-          heading: 
-          text: 
     impressum:
       heading: Impressum
       notice: Clarat jest wyszukiwarką. Clarat powie Ci, gdzie można uzyskać pomoc. Na przykład, gdzie znaleźć eksperta, który pomoże Ci z Twoim problemem.. Sam clarat pomoże Ci tylko w poszukiwaniach.
@@ -1518,8 +1499,17 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: Wybierz swój clarat-świat
     shared:
       address:
@@ -1536,16 +1526,19 @@ pl:
     definitions: definicje
     emails: e-maile
     faq: często-zadawane-pytania
+    fr: 
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
     kontakt: contact
     liste: Lista
+    liste-de-services: 
     new: nowe
     offers: oferty
     organizations: organizacje
     preview: podgląd
     rechtliche-hinweise: nota-prawna
+    refugees: 
     search_locations: wyszukaj
     subscribe: subscribe
     subscriptions: subskrypcje
@@ -1558,8 +1551,6 @@ pl:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    fr: 
-    liste-de-services: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

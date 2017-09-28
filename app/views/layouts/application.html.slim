@@ -58,7 +58,7 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
       - cache ['banner', I18n.locale] do
         = render '/layouts/partials/banner'
       // = render '/layouts/partials/nav_lang'
-      = render '/layouts/partials/top_bar', current_section: @current_section
+      = render '/layouts/partials/header', current_section: @current_section
       #Flash-messages
         - flash.each do |message|
           - unless message[0] == 'timedout'
@@ -66,11 +66,11 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
                      type: message[0],
                      content: message[1]
       - if controller_name == 'pages' && action_name == 'home'
-        = render 'layouts/partials/navigation',
+        = render 'layouts/partials/hero',
                 search_form: SearchForm.new(cookies),
                 current_section: @current_section
       - elsif action_name != 'section_choice'
-        = render 'layouts/partials/search_navigation',
+        = render 'layouts/partials/searchfield_advanced',
                  search_form: @search_form || SearchForm.new(cookies),
                  current_section: @current_section
       #yield-wrap

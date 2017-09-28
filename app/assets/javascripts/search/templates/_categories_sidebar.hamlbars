@@ -1,8 +1,0 @@
-.Categories#categories
-
-  .Categories__show-all
-    %a.JS-CategoryLink{href: '#', data: {name: ''}}
-      = hb 'all_categories_anchor'
-
-  = hb 'each category_tree' do
-    = hb '> _categories_nest'

@@ -105,14 +105,14 @@
     &.is-enlarged {
       z-index: 20;
     }
+  }
 
-    .JS-Geolocation__prompt {
-      bottom: 35px;
-      margin: 0 20% 0 0;
-      padding: 5px;
-      width: 80%;
-    }
 
+  .JS-Geolocation__prompt {
+    bottom: 35px;
+    margin: 0 20% 0 0;
+    padding: 5px;
+    width: 120%;
   }
 
   .Distributor__search-form {

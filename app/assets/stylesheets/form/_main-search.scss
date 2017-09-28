@@ -109,14 +109,10 @@
 .main-search__submit {
   float: left;
   height: 47px;
-
-  //body.ar & {
-  //  float: right;
-  //}
 }
 
 #search_form_query {
-  //max-width: 328px;
+  border-radius: 0 !important; // for iOS
   padding-left: 62px;
 
   body.en & {

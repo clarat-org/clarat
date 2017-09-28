@@ -1,4 +1,4 @@
-.aside-standard__container
+.aside-standard__container{style: 'display: none !important'}
   %h5.aside-standard__headline
     = hb 'headline_small_map'
 

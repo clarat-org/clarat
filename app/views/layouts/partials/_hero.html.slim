@@ -1,0 +1,9 @@
+- cache ['start_header', current_section, I18n.locale] do
+  .Hero
+    .Hero__shopping-window
+      .Hero__pitch
+        .Hero__logline = t '.hero.logline'
+        a.Hero__link-to-explaination[href="#explaination"] = t '.hero.button_label'
+    = render '/offers/shared/search_form', search_form: search_form,
+      labels: :long,
+      current_section: current_section

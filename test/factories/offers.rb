@@ -13,72 +13,63 @@ FactoryGirl.define do
     end
     area { Area.first unless encounter == 'personal' }
     approved_at nil
-    code_word { maybe FFaker::Lorem.words(rand(1..3)).join(' ').titleize }
+    split_base nil
+    # every offer should have a creator!
+    created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
 
     # associations
-
     transient do
-      organization_count 1
-      organization nil
-      contact_person_count 1
       website_count { rand(0..3) }
       category_count { rand(1..3) }
       category nil # used to get a specific category, instead of category_count
       language_count { rand(1..2) }
-      audience_count { rand(1..2) }
+      audience_count 1
       opening_count { rand(1..5) }
       fake_address false
       section nil
+      organizations nil
     end
 
     after :build do |offer, evaluator|
-      # organization
-      if evaluator.organization
-        offer.organizations << evaluator.organization
-      else
-        evaluator.organization_count.times do
-          offer.organizations << FactoryGirl.create(:organization, :approved)
-        end
+      # SplitBase => Division(s) => Organization(s)
+      organizations = evaluator.organizations || [Organization.all.sample]
+      unless offer.split_base
+        offer.split_base =
+          FactoryGirl.create :split_base, section: evaluator.section,
+                                          organizations: organizations
       end
-      organization =
-        offer.organizations[0] || FactoryGirl.create(:organization, :approved)
+      organization = offer.organizations[0]
 
       # location
       if offer.personal?
-        location =  organization.locations.sample ||
-                    if evaluator.fake_address
-                      FactoryGirl.create(:location, :fake_address,
-                                         organization: organization)
-                    else
-                      FactoryGirl.create(:location, organization: organization)
-                    end
+        location = organization.locations.sample ||
+                   if evaluator.fake_address
+                     FactoryGirl.create(:location, :fake_address,
+                                        organization: organization)
+                   else
+                     FactoryGirl.create(:location, organization: organization)
+                   end
         offer.location = location
       end
+
       # Filters
-      section = evaluator.section
-      offer.section =
-        if section
-          Section.find_by(identifier: section) ||
-          FactoryGirl.create(:section, identifier: section)
-        else
-          Section.all.sample || FactoryGirl.create(:section)
-        end
+      if evaluator.section
+        offer.section = Section.find_by(identifier: evaluator.section)
+      else
+        offer.section_id = offer.split_base.divisions.pluck(:section_id).sample
+      end
+
       evaluator.language_count.times do
         offer.language_filters << (
-          LanguageFilter.all.sample || FactoryGirl.create(:language_filter)
-        )
-      end
-      evaluator.audience_count.times do
-        offer.target_audience_filters << (
-          TargetAudienceFilter.all.sample ||
-            FactoryGirl.create(:target_audience_filter)
+          LanguageFilter.all.sample ||
+            FactoryGirl.create(:language_filter)
         )
       end
     end
 
     after :create do |offer, evaluator|
       # Contact People
-      evaluator.organization_count.times do
+      offer.organizations.count.times do
         offer.contact_people << FactoryGirl.create(
           :contact_person, organization: offer.organizations.first
         )
@@ -86,16 +77,17 @@ FactoryGirl.define do
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
-      if evaluator.category
-        offer.categories << evaluator.category
-      else
-        evaluator.category_count.times do
-          offer.categories << (
-            Category.select(:id).all.try(:sample) ||
-              FactoryGirl.create(:category)
-          )
-        end
-      end
+      # if evaluator.category
+      #   offer.categories << FactoryGirl.create(:category,
+      #                                          name: evaluator.category)
+      # else
+      #   evaluator.category_count.times do
+      #     offer.categories <<
+      #       FactoryGirl.create(
+      #         :category, sections: [offer.section]
+      #       )
+      #   end
+      # end
       evaluator.opening_count.times do
         offer.openings << (
           if Opening.count != 0 && rand(2).zero?
@@ -103,6 +95,12 @@ FactoryGirl.define do
           else
             FactoryGirl.create(:opening)
           end
+        )
+      end
+      evaluator.audience_count.times do
+        offer.target_audience_filters << (
+          TargetAudienceFilter.all.sample ||
+            FactoryGirl.create(:target_audience_filter)
         )
       end
     end
@@ -128,15 +126,18 @@ FactoryGirl.define do
       encounter 'personal'
     end
 
-    trait :with_creator do
-      created_by { FactoryGirl.create(:researcher).id }
-    end
+    # trait :remote do
+    #   encounter %w(hotline chat forum email online-course portal).sample
+    # end
 
     trait :with_dummy_translations do
       after :create do |offer, _evaluator|
         (I18n.available_locales - [:de]).each do |locale|
-          OfferTranslation.create(
-            offer_id: offer.id, locale: locale, source: 'GoogleTranslate',
+          FactoryGirl.create(
+            :offer_translation,
+            offer: offer,
+            locale: locale,
+            source: 'GoogleTranslate',
             name: "#{locale}(#{offer.name})",
             description: "#{locale}(#{offer.description})",
             old_next_steps: "GET READY FOR CANADA! (#{locale})",
@@ -144,10 +145,12 @@ FactoryGirl.define do
           )
 
           offer.organizations.each do |organization|
-            OrganizationTranslation.create(
-              organization_id: organization.id, locale: locale,
+            FactoryGirl.create(
+              :organization_translation,
+              organization: organization,
+              locale: locale,
               source: 'GoogleTranslate',
-              description: "#{locale}(#{organization.untranslated_description})"
+              description: "#{locale}(#{organization.description})"
             )
           end
         end
@@ -157,16 +160,12 @@ FactoryGirl.define do
     trait :with_markdown do
       after :create do |offer, _evaluator|
         offer.update_column :description, MarkdownRenderer.render(
-          offer.untranslated_description
+          offer.description
         )
         offer.update_column :old_next_steps, MarkdownRenderer.render(
-          offer.untranslated_old_next_steps
+          offer.old_next_steps
         )
       end
     end
   end
-end
-
-def maybe result
-  rand(2).zero? ? nil : result
 end

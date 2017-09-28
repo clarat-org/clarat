@@ -6,68 +6,78 @@
 
 .header-main {
   position: relative;
-  margin-bottom: 15px;
-  height: 182px;
-  background: $brand_beige;
-
-
-}
-
-.header-main--wide {
-  height: 290px;
-  background: $brand_beige;
-
-  .template--pages-home & {
-    margin-bottom: 0;
-  }
-
-  .template--pages-about & {
-    border-bottom: 15px solid $brand_yellow;
-  }
-
-  &:before {
-    display: none;
-  }
-}
-
-.header-main__foreground {
+  min-height: 100px;
   @extend %clearfix;
-  height: inherit;
-  background-position: right calc(100% + 1px);
-  background-size: 60% auto;
-  background-repeat: no-repeat;
 
+  .template--offers-index & {
+    min-height: 0;
+  }
+}
+
+button.header-main__nav-main-trigger {
+  -webkit-appearance: none;
+  display: none;
+  padding: 0;
+  width: 28px;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-top: 20px;
+
+  [dir="rtl"] & {
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+
+  svg {
+    pointer-events: none;
+    width: 28px;
+    height: 28px;
+  }
+
+  & .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    fill: currentColor;
+  }
+  & .line-1 {
+    transform-origin: 0.5em 2em;
+  }
+  & .line-3 {
+    transform-origin: 1em 4.5em;
+  }
+
+  &[aria-expanded="true"]  svg .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+  }
+
+  &[aria-expanded="true"]  svg .line-2 {
+    opacity: 0;
+  }
+
+  &[aria-expanded="true"]  svg .line-3 {
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
+  }
+
+  body.family &,
   body.refugees & {
-    background-image: image-url('foreground--refugees.svg');
+    background-color: transparent;
   }
 
   body.family & {
-    background-image: image-url('foreground--family.svg');
-  }
-  
-}
-
-.page-detail__header {
-  @extend %clearfix;
-  margin-bottom: 5px;
-}
-
-.page-detail__title {
-  @extend %roboto_bold;
-  font-weight: 400;
-  font-size: 34px;
-
-  // Fixes #983
-  .template--organizations-show.ar & {
-    text-align: right;
-    direction: ltr;
+    color: $brand_core_family;
   }
 
-  .template--offers-show & {
-    margin-bottom: 0;
+  body.refugees & {
+    color: $brand_core_refugees;
   }
-}
 
-.jump-to-categories {
-  display: none;
+  body.template--pages-section_choice[data-section="refugees"] &, // Specifity
+  body.template--pages-section_choice[data-section="family"] & {
+    color: $brand_brown;
+
+  }
+
 }

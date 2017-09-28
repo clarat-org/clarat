@@ -1,19 +1,15 @@
 - content_for :canonical_url, request.url
-- cache ['home_page', I18n.t] do
+- cache ['home_page', I18n.t, @current_section] do
 
-  main.content-main.content-main--wide
-    .wrapper-inner
-      section.section-start.section-start--how
-        h4.section-start__headline = t '.how.heading'
-        .section-start__body
-          p = t '.how.text'
+  = render 'layouts/partials/callout/callout'
 
-      section.section-start.section-start--whom
-        h4.section-start__headline = t '.whom.heading'
-        .section-start__body
-          p = t '.whom.text'
 
-      section.section-start.section-start--why
-        h4.section-start__headline = t '.why.heading'
-        .section-start__body
-          p = t '.why.text'
+
+  / .Explainaition-area#explaination
+    h4.Explainaition-area__headline = t '.explaination.headline'
+    .Explainaition-area__wrapper
+      .Explainaition-area__video
+        | <iframe src="https://player.vimeo.com/video/47387431?title=0&amp
+          ;byline=0&amp;portrait=0&amp;autoplay=0"
+          width="1600" height="900" frameborder="0" webkitAllowFullScreen
+          mozallowfullscreen allowFullScreen></iframe>

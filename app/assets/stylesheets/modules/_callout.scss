@@ -1,0 +1,64 @@
+.Callout {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  overflow: auto;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.Callout__section {
+  padding: 46px 3.08% 0;
+  float: left;
+  width: 33%;
+
+  @supports (display: grid) {
+    float: none;
+    width: auto;
+  }
+}
+
+.Callout__icon {
+  margin-bottom: 12px;
+
+  [data-section="family"] & {
+    fill: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    fill: $brand_core_refugees;
+  }
+
+   body.template--pages-section_choice[data-section="refugees"] &,
+   body.template--pages-section_choice[data-section="family"] & {
+    fill: $brand_brown;
+  }
+}
+
+.Callout__icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Callout__headline {
+  @extend %roboto_slabregular;
+  font-size: 26px;
+  margin-bottom: 15px;
+
+  [data-section="family"] & {
+    color: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    color: $brand_core_refugees;
+  }
+
+  body.template--pages-section_choice[data-section="refugees"] &,
+  body.template--pages-section_choice[data-section="family"] & {
+    color: $brand_brown;
+  }
+}

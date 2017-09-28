@@ -6,46 +6,40 @@
 
 .Logo {
   @extend %hide_text;
-  display: block;
+  min-height: 100px;
   float: left;
-  margin-top: 46px;
+  margin: 0;
+  display: block;
   width: 215px;
   height: 88px;
-
-  body.refugees & {
-    background: image-url('logo--refugees.svg');
-    background-size: 215px 88px;
-  }
-
-  body.family & {
-    background: image-url('logo--family.svg');
-    background-size: 215px 88px;
-  }
-
-  html[dir="rtl"] & {
-    float: right;
-  }
+  background: no-repeat left center;
 
   a {
     display: block;
     width: inherit;
     height: inherit;
   }
-}
 
-.Logo--start {
-  margin-top: 36px;
-  width: 250px;
-  height: 95px;
-  background-size: 250px 95px;
+  [dir="rtl"] & {
+    float: right;
+    background-position: right center;
+
+  }
 
   body.refugees & {
-    background: image-url('logo--refugees.svg');
-    background-size: 250px 95px;
+    background-image: image-url('logo--refugees.svg');
+    background-size: auto 75px;
   }
 
   body.family & {
-    background: image-url('logo--family.svg');
-    background-size: 250px 95px;
+    background-image: image-url('logo--family.svg');
+    background-size: auto 75px;
   }
+
+  body.template--pages-section_choice[data-section="refugees"] &,
+  body.template--pages-section_choice[data-section="family"] & {
+    background-image: image-url('logo--worldless.svg');
+    background-size: auto 75px;
+  }
+
 }

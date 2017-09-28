@@ -11,24 +11,16 @@ class OffersController < ApplicationController
   end
 
   def index
-    @category_tree ||= Category.sorted_hash_tree
     prepare_location_unavailable
     render :index
   end
 
-  # rubocop:disable Metrics/AbcSize
   def show
-    unless cookies[:session]
-      @no_cookie = true
-      cookies[:session] = { value: 'user_popup', expires: 3.days.from_now }
-    end
-
     @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
   end
-  # rubocop:enable Metrics/AbcSize
 
   def section_forward
     offer = Offer.visible_in_frontend.friendly.find(params[:id])

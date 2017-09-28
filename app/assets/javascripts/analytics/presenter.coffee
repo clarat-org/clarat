@@ -20,14 +20,12 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @trackOutboundLink(e.target.href)
     return true
 
-
   trackOutboundLink: (url) =>
     ga? 'send', 'event', 'outbound', 'click', url,
       'transport': 'beacon'
       # 'hitCallback': ->
       #   document.location = url
       #   return
-
 
   detectPlacesAutocompleteTriggered: =>
     place = Clarat.GMaps.PlacesAutocomplete.instance.getPlace()
@@ -68,7 +66,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
       @automatedTranslation = $('div').hasClass('Automated-translation')
 
     startHover = $.now()
-
     $('dfn.JS-tooltip').hover (->
       startHover = $.now()
     ), ->
@@ -85,7 +82,7 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
 
     if $('dfn.JS-tooltip.hovered').length > 0
       keyword = $('dfn.JS-tooltip.hovered').html()
-      time = $('dfn.JS-tooltip.hovered').attr('timeHovered')
+      time = parseInt($('dfn.JS-tooltip.hovered').attr('timeHovered'))
       ga?(
         'send', 'event', 'TooltipRead', 'hoverout', 'tooltipActive:true;' +
         "keyword:#{keyword}", time
@@ -99,7 +96,6 @@ class Clarat.Analytics.Presenter extends ActiveScript.Presenter
         "isGoogleTranslation:#{@automatedTranslation};",
         @pageViewTime
       )
-
 
 $(document).ready ->
   new Clarat.Analytics.Presenter

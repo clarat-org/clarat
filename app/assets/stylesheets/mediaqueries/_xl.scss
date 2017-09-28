@@ -10,6 +10,15 @@
 
   // Header ######################################
 
+  .Logo {
+    margin-left: 20px;
+
+    [dir="rtl"] & {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
   .header-main {
     &:before {
       display: none; // hiding visual yellow enlargement necessary in 1200px and bigger
@@ -75,11 +84,31 @@
   }
 
   #new_search_form .input.string {
-    width: 50%;
+//    width: 50%;
+  }
 
-    .template--pages-home & {
-      width: 46.60%;
-    }
+  .filter-form {
+    margin-left: -25px;
+    margin-right: -25px;
+    width: calc(100% + 50px);
+  }
+
+  .filter-form__reset-btn {
+    margin-left: 0;
+    flex: 0 1 100px;
+    font-size: 12px;
+    padding: 0 10px;
+    height: inherit;
+    word-break: break-all;
+  }
+
+  .filter-form__fieldset {
+    padding-right: 0;
+  }
+
+  .filter-form__fieldset__headline {
+    padding-right: 5px;
+    font-size: 12px;
   }
 
   #search_form_query,
@@ -117,61 +146,77 @@
 
   #new_search_form {
     height: 76px;
-
-    .template--pages-home & {
-      margin-right: auto;
-    }
   }
 
   .nav-lang__title {
     margin-left: 10px;
   }
 
+  .nav-lang {
+    right: 20px;
+
+    [dir="rtl"] & {
+      right: auto;
+      left: 25px;
+    }
+  }
+
+  .nav-main {
+    right: 25px;
+
+    [dir="rtl"] & {
+      right: auto;
+      left: 25px;
+    }
+  }
+
+  .Hero__pitch {
+    left: 25px;
+
+    [dir="rtl"] & {
+      left: auto;
+      right: 25px;
+    }
+  }
+
+  .Searchfield {
+    &.wrapper-inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .main-search {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   // Content ######################################
+
+  aside.aside-standard {
+
+    [dir="rtl"] & {
+      left: 20px;
+      max-width: 27%;
+      width: 100%;
+    }
+  }
 
   .top-bar__container,
   .wrapper-inner {
     padding: 0 20px;
   }
 
-  .section-choice {
-    width: 90vw;
-  }
-
-  .section-choice__headline {
-    background-size: auto 90%;
-  }
-
-  .section-choice__family,
-  .section-choice__refugees {
-    width: inherit;
-  }
-
-  .section-choice__stage {
-    background-size: auto 100%;
-  }
-
-  html[lang="de"] .section-choice__container,
-  .section-choice__container {
-    width: 45vw;
-  }
-
-  .section-choice__cta {
-    width: 90%;
-    height: 65px;
-    margin: 0 5%;
-    background-size: 18px 32px;
-    padding-left: 45px;
-    font-size: inherit;
-
-    html[lang="de"] & {
-      font-size: 20px;
-    }
-
-    html[dir="rtl"] & {
-      background-size: 18px 32px;
+  .wrapper-inner {
+    body:not(.template--pages-home) .header-main & {
+      padding: 0;
     }
   }
+
+  .Callout {
+    padding: 0 15px;
+  }
+
 
   .section-start__headline {
     font-size: 20px;

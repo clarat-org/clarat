@@ -6,10 +6,6 @@
         %span.nav-off-canvas-trigger__label= hb 'tab_filter'
     %li.nav-off-canvas-trigger__item
       %a.main-search__advanced-filter--within-content-main.off-canvas-container__trigger(data-target='#tab2')
-        %i.fa.fa-tags.nav-off-canvas-trigger__icon(aria-hidden='true')
-        %span.nav-off-canvas-trigger__label= hb 'tab_categories'
-    %li.nav-off-canvas-trigger__item
-      %a.main-search__advanced-filter--within-content-main.off-canvas-container__trigger(data-target='#tab3')
         %i.fa.fa-map-marker.nav-off-canvas-trigger__icon(aria-hidden='true')
         %span.nav-off-canvas-trigger__label= hb 'tab_map'
 
@@ -23,7 +19,5 @@
   %i.fa.fa-spin.fa-circle-o-notch.Ajax__spinner
 
 %aside.aside-standard
-
-  = hb '> _categories_sidebar'
 
   = hb '> _search_map'

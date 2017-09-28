@@ -1,2 +1,0 @@
-%div.nav-sections__notification
-  %i.fa.fa-exclamation{ 'aria-hidden': 'true' }

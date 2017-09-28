@@ -17,14 +17,6 @@ class Clarat.Search.Model extends ActiveScript.Model
   client: ->
     return @_client ?= algoliasearch Clarat.Algolia.appID, Clarat.Algolia.apiKey
 
-  addEncounter: (encounter) ->
-    @encounters = _.chain @encounters.split(',')
-      .push(encounter).compact().uniq().value().join(',')
-
-  removeEncounter: (encounter) ->
-    @encounters = _.chain @encounters.split(',')
-      .without(encounter).compact().uniq().value().join(',')
-
   resetPageVariable: ->
     @assignAttributes {page: 0}
 
@@ -67,7 +59,7 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   remote_query: ->
     new Clarat.Search.Query.Remote(
-      @generated_geolocation, @encounters, @isPersonal(), @query, @category,
+      @generated_geolocation, @isPersonal(), @query, @category,
       @facetFilters(), @page, @sort_order
     )
 
@@ -84,7 +76,7 @@ class Clarat.Search.Model extends ActiveScript.Model
 
   remote_facet_query: ->
     new Clarat.Search.Query.RemoteFacet(
-      @generated_geolocation, @encounters, true, @query, @category,
+      @generated_geolocation, true, @query, @category,
       @facetFilters()
     )
 
@@ -93,7 +85,7 @@ class Clarat.Search.Model extends ActiveScript.Model
     @contact_type == 'personal'
 
   ADVANCED_SEARCH_FILTERS: [
-    'age', 'target_audience', 'exclusive_gender', 'language', 'encounter'
+    'target_audience', 'exclusive_gender', 'language', 'residency_status'
   ]
 
   facetFilters: ->
@@ -111,20 +103,6 @@ class Clarat.Search.Model extends ActiveScript.Model
   #   else
   #     50_000
 
-  categoryWithAncestors: ->
-    @findCategory(@categoryTree, @category)
-
-  findCategory: (array, name) ->
-    unless typeof array is 'undefined'
-      for element in array
-        return [name] if (element.name is name)
-
-        a = @findCategory(element.set, name)
-        if a?
-          a.unshift(element.name)
-          return a
-
-    return null
 
   getFilters: ->
     _.merge(@filters, { sort_order: @getSortOrders() })

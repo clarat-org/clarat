@@ -1,14 +1,24 @@
 .nav-lang {
-  display: inline-block;
-  float: right;
   color: $brand_coal;
   font-size: 15px;
   min-height: 44px;
+  position: absolute;
+  right: 0;
+
+  [dir="rtl"] & {
+    right: auto;
+    left: 0;
+  }
 
   a {
     color: inherit;
     text-decoration: none;
-    margin: 0 9px;
+    margin: 0 0 0 18px;
+
+    [dir="rtl"] & {
+      margin: 0 18px 0 0;
+
+    }
   }
 }
 
@@ -44,11 +54,16 @@
   margin: 0 auto;
 }
 
+
 a.nav-lang__google {
   float: right;
   width: 60px;
   height: auto;
   margin: 8px 0 4px 20px;
+
+  [dir="rtl"] & {
+    margin: 8px 20px 4px 10px;
+  }
 
   img {
     width: inherit;
@@ -61,7 +76,7 @@ button.nav-lang__button {
   width: 25px;
   height: 25px;
   float: left;
-  margin: 9px 0 10px;
+  margin: 9px 5px 10px 0;
   cursor: default;
 
   body.family &,
@@ -97,6 +112,11 @@ button.nav-lang__button {
   background: $brand_coal;
   color: white;
   padding: 4px 0 10px;
+
+  [dir="rtl"] & {
+    left: 0;
+  }
+
 
   li {
     float: none;

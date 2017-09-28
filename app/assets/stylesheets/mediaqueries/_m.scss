@@ -290,10 +290,16 @@
 
   .Callout {
     padding: 0;
+    margin-top: 26px;
 
     @supports (display: grid) {
       display: grid;
       grid-template-columns: 1fr;
+    }
+
+    .template--pages-section_choice & {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 

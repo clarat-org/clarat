@@ -199,27 +199,6 @@
   line-height: 1.65;
 }
 
-.Listing-results__expander {
-  @extend %hide_text;
-  display: none;
-  width: 40px;
-  height: 24px;
-  background: transparent no-repeat center center;
-
-  &[aria-expanded='false'] {
-    background-image: image-url('ico_expand.svg');
-  }
-
-  &[aria-expanded='true'] {
-    background-image: image-url('ico_collapse.svg');
-  }
-
-  body.refugees &,
-  body.family & {
-    background-color: transparent;
-  }
-}
-
 .Listing-results__meta,
 .Listing-results__stamp {
   box-sizing: border-box;

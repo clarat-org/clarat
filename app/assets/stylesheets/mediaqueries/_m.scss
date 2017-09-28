@@ -685,6 +685,14 @@
     }
   }
 
+  .Listing-results__offer {
+    padding-right: 32px;
+    background-image: image-url("ico_skinny_double_arrow--right.svg");
+    background-position: calc(100% - 9px) center;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+  }
+
   .Listing-results__expander {
     display: block;
     position: absolute;
@@ -1008,10 +1016,6 @@
 
   .Listing-results__meta {
     display: none;
-
-    &.is-expanded {
-      display: block;
-    }
   }
 
   li[class^="FAQ__ico"] {

@@ -1,5 +1,5 @@
 - content_for :canonical_url, request.url
-- cache ['home_page', I18n.t] do
+- cache ['home_page', I18n.t, @current_section] do
 
   = render 'layouts/partials/callout/callout'
 

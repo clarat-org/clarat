@@ -927,10 +927,10 @@ tr:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: Hakkımızda
+        blog: Blog
+        contact: İletişim
+        faq: Sıkça sorulan sorular
         languages:
           ar: عربي
           de: Deutsch

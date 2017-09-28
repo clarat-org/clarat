@@ -918,10 +918,10 @@ ar:
           anchor: تويتر
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: معلومات عنا
+        blog: مدونة
+        contact: الإتصال
+        faq: الأسئلة الشائعة
         languages:
           ar: 
           de: 

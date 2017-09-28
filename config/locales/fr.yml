@@ -1010,10 +1010,10 @@ fr:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: À propos de nous
+        blog: Blog
+        contact: Contact
+        faq: Questions fréquentes
         languages:
           ar: 'عربي
 

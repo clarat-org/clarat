@@ -1037,10 +1037,10 @@ ru:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: О нас
+        blog: Блог
+        contact: Контакты
+        faq: Частые вопросы
         languages:
           ar: عربي
           de: Deutsch

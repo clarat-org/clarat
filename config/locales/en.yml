@@ -974,10 +974,10 @@ en:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: About us
+        blog: Blog
+        contact: Contact
+        faq: FAQ
         languages:
           ar: عربي
           de: Deutsch

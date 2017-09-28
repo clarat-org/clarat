@@ -985,10 +985,10 @@ fa:
           anchor: توییتر
           href: https://twitter.com/claratpunktorg
       header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
+        about: در مورد ما
+        blog: بلاگ
+        contact: تماس
+        faq: سوالات رایج
         languages:
           ar: 
           de: 

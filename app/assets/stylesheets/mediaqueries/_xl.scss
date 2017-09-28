@@ -86,6 +86,7 @@
     margin-left: -25px;
     margin-right: -25px;
     width: calc(100% + 50px);
+    padding-bottom: 10px;
   }
 
   .filter-form__reset-btn {
@@ -93,6 +94,7 @@
     flex: 0 1 100px;
     font-size: 12px;
     padding: 0 10px;
+    height: inherit;
   }
 
   .filter-form__fieldset {
@@ -160,6 +162,18 @@
       left: auto;
       right: 25px;
     }
+  }
+
+  .Searchfield {
+    &.wrapper-inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .main-search {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   // Content ######################################

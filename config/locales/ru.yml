@@ -698,6 +698,11 @@ ru:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -782,6 +787,7 @@ ru:
         approach: Каким образом?
         gender: Пол
         language: Язык
+        residency_status: 
         sort: Сортировка по
         target_audience: Помощь для кого?
       option_any: все равно
@@ -789,6 +795,7 @@ ru:
         back: Назад
         gap: "..."
         next: Дальше
+      reset_label: 
       sort:
         nearby: Неподалеку
         relevance: Самые релевантные результаты
@@ -887,8 +894,7 @@ ru:
         fra: Французский язык - Français
         fuf: Пулар-Пулар
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: грузинский - ქართული
         hau: Хаусский язык - Hausanci
         hbs: Черногорский язык - Crnogorski jezik / Црногорски језик
@@ -961,12 +967,54 @@ ru:
         personal: Персонально
         portal: Список адресов
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
           link: Здесь ты узнаешь больше
           refugees: Так же скоро будут предложения для беженцев
           text: clarat.org в данный момент находится в развитии
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: О нас
         blog: Блог
@@ -982,12 +1030,32 @@ ru:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Импрессум
+        plus: clarat plus
         privacy: Правила конфиденциальности
         tos: юридические указания
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Предложения о помощи детям, молодежи и семьям
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: просто напиши нам E-Mail.
@@ -997,16 +1065,9 @@ ru:
             предложения для других городов. Мы будем рады твоей помощи:
             ты что-либо заметил, что нам стоит улучшить? Или что-то
             рабоатет не правильно? Тогда
-        popup:
-          button: Да, пожалуйста
-          email_placeholder: E-Mail адрес *
-          footer: Твое имя и адрес электронной почты будут использованы только в цели установления контакта. Ты не подписываешься на электронную рассылку и твои данные не будут переданы третьим лицам.
-          headline: 20 евро за твое мнение
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Имя *
-          text: Скажите, что мы можем улучшить. Или то, что тебе действительно нравится. Мы будем рады созвониться с тобой. Можно выслать тебе E-Mail с деталями?
-        unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
+        more_information_overlay: 
         send: 
+        unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
         legal_title: Юридический текст clarat можно читать только на немецком языке.
         title: "Автоматический перевод! \n<br><br>\nНекоторые тексты clarat переведены на твой язык Google Translate. Иногда эти тексты могут звучать несколько странно и неправильно. Мы работаем над улучшением качества наших переводов."
@@ -1045,6 +1106,8 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1079,9 +1142,15 @@ ru:
             female: только для девочек и женщин
             girls_only: только для девочек и женщин
             male: только для мальчиков и мужчин
+          residency_status:
+            before_the_asylum_decision: в процессе предоставления убежища
+            with_a_residence_permit: с видом на жительство
+            with_deportation_decision: с заключением о депортации
+            with_temporary_suspension_of_deportation: с правом на кратковременное пребывание в стране
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи
+            family_everyone: 
             family_nuclear_family: для семей
             family_parents: для родителей
             family_parents_to_be: для будущих родителей
@@ -1090,6 +1159,12 @@ ru:
             nuclear_family: для семей
             parents: для родителей
             pregnant_woman: для беременных
+            refugees_children: для детей-беженцев
+            refugees_families: для семей-беженцев
+            refugees_general: для беженцев
+            refugees_parents: для родителей-беженцев
+            refugees_parents_to_be: для будущих родителей-беженцев
+            refugees_uf: для беспризорных беженцев
             relatives: для знакомых и родственников
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
@@ -1211,8 +1286,6 @@ ru:
     about:
       amina: Амина - социолог. Она много знает об обществе. Она быстро замечает самое важное. В clarat она работает в команде сбора информации. Она решает, как именно будет clarat помогать. Ее любимая песня - La Prima Estate Эрленда Ойа (Erlend Oye).
       andrea: Андреа изучала международный менеджмент. Она многое знает об экономике и культуре. Она работает очень педантично. В clarat она работает в исследовательской команде. Она следит за качеством работы нашей команды. Ее любимая песня Work Me от The Black Keys.
-      anja: 
-      ann-sophie: 
       anna: Она - филолог. Это значит, что она много знает о языках. Кроме того, она знает толк в литературе. Она хорошо разбирается в сложных вещах. В clarat она работает в исследовательской команде. Её любимая песня - 1009 группы Bonobo.
       anne: Она изучала экономику и международные отношения. Она может очень быстро думать логически. Она главная в clarat. Она заботится о всей команде и все организует. Ее любимая песня - Denken Sie Groß группы Deichkind.
       astrid: Она политолог. Она знает много о политике и обществе. У нее всегда отличное настроение и этим она заражает всех вокруг. В clarat она работает в исследовательской команде. Ее любимая песня - You Got Me группы Рутс.
@@ -1252,7 +1325,6 @@ ru:
       lisa: Она специалист по дизайну. Это значит, что она может планировать креативные решения. И прекрасно рисует. В clarat она работает в исследовательской группе и общается с пользователями. Она также выясняет, кто пользуется системой clarat.  Ее любимая песня — Resolution от Matt Corby.
       magdalena: 
       marcus: Маркус Дизайнер по интернету. Это значит, что он умеет программировать и составлять сайты в интернете. Он тоже хорошо умеет планировать. В clarat он работает в команде технической информации. Он заботится о том, чтобы наш сайт в интернете хорошо выглядел. Его любимая песня Hysteria от группы Мьюз (Muse).
-      marie: 
       meta_description: 
       michaela: Она изучала экономическую информатику. Она может воодушевлять других людей. И она хорошо разбирается в новых СМИ. В clarat она работает в исследовательской группе и обеспечивает хорошую работу нашего сайта. Ее любимая песня — Digital Love от Daft Punk.
       nahla: Она археолог. Он много знает об истории людей. Он может быстро работать. В clatrat она работает в команде переводчиков и переводит clarat на арабский язык.  Ее любимая песня — Nassam Allina El Hawa от Fayrouz.
@@ -1320,6 +1392,8 @@ ru:
     faq:
       title: Частые вопросы
     home:
+      explaination:
+        headline: 
       how:
         heading: Kак работает clarat?
         text: Напиши, в чем именно заключается твоя проблема. Или что тебя волнует. Или выбери из предложенных тем. И ты сразу найдешь все возможные варианты помощи и поддержки поблизости. Мы также расскажем тебе, как ты можешь получить эту помощь. Например, нужно ли позвонить, написать email или прийти лично.
@@ -1418,8 +1492,17 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: Пожалуйста,  выберите ваш мир clarat
     shared:
       address:
@@ -1436,18 +1519,19 @@ ru:
     definitions: формулировки
     emails: электронные-письма
     faq: Частые-вопросы
-    fr: фр
+    fr: 
     haeufige-fragen: Частые-вопросы
     home: главная страница
     impressum: Импрессум
-    kontakt: 
+    kontakt: contact
     liste: список
-    liste-de-services: список-услуг
+    liste-de-services: 
     new: новый
     offers: предложения
     organizations: орагнизации
     preview: предварительный-просмотр
     rechtliche-hinweise: юридические-указания
+    refugees: 
     search_locations: поиск-местонахождения
     subscribe: subscribe
     subscriptions: подписки
@@ -1455,6 +1539,11 @@ ru:
     unsubscribe: unsubscribe
     update_requests: обновить-запросы
     users: пользователь
+    widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле
@@ -1505,3 +1594,4 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
+      placeholder: 

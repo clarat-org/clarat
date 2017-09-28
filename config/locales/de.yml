@@ -1044,6 +1044,11 @@ de:
         xxx: Xxx
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: Before the asylum decision
+        with_a_residence_permit: With a residence permit
+        with_deportation_decision: With deportation decision
+        with_temporary_suspension_of_deportation: With temporary suspension of deportation
       section:
         family: Family
         refugees: Refugees
@@ -1128,6 +1133,7 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        residency_status: Aufenthaltsstatus
         sort: Sortieren nach
         target_audience: Hilfe für wen?
       option_any: egal
@@ -1135,6 +1141,7 @@ de:
         back: Zurück
         gap: "…"
         next: Weiter
+      reset_label: Alle zurücksetzen
       sort:
         nearby: In der Nähe
         relevance: Beste Treffer
@@ -1253,8 +1260,7 @@ de:
         fra: Französisch - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgisch - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrinisch - Crnogorski jezik / Црногорски језик
@@ -1327,12 +1333,54 @@ de:
         personal: Persönlich
         portal: Adressliste
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: E-Mail erfolgreich eingetragen!
     partials:
       banner:
         teaser:
           link: Hier erfährst du mehr
           refugees: Bald auch Angebote für Flüchtlinge
           text: clarat.org wird gerade aufgebaut
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: Wie funktioniert clarat family?
+              text: 'Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt. '
+            refugees:
+              heading: Wie funktioniert clarat refugees?
+              text: Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt.
+          what:
+            family:
+              heading: Was findest du hier?
+              text: 'Alle Infos zu Hilfen in deiner Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
+            refugees:
+              heading: Was findest du hier?
+              text: 'Alle Infos zu Hilfen in deiner Nähe. Bei Problemen aus folgenden Bereichen: Asyl & Recht, Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
+          who:
+            family:
+              heading: Wer findet hier Hilfe?
+              text: Alle Familien in Deutschland. Eltern, ihre Kinder und Schwangere finden hier Hilfe. Und auch Freunde und Verwandte.
+            heading: 
+            refugees:
+              heading: Wer findet hier Hilfe?
+              text: Alle Menschen, die nach Deutschland geflüchtet sind. Auch geflüchtete Kinder und Jugendliche. Und Menschen, die Hilfe für Flüchtlinge suchen.
       footer:
         about: Über uns
         blog: Blog
@@ -1348,12 +1396,32 @@ de:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impressum
+        plus: clarat plus
         privacy: Datenschutzhinweise
         tos: Rechtliche Hinweise
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
+      header:
+        about: Über uns
+        blog: 
+        contact: Kontakt
+        faq: Häufige Fragen
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Hilfe für Kinder, Jugendliche und Familien
+        hero:
+          button_label: Mehr erfahren
+          logline: Finde die Hilfe, die zu dir passt – einfach erklärt und übersichtlich
       modal:
         beta_modal:
           link: schreibe uns einfach eine Nachricht.
@@ -1363,21 +1431,14 @@ de:
             Hilfsangebote für andere Städte. Über deine Hilfe freuen wir uns:
             Hast du etwas gesehen, das wir besser machen können? Oder
             funktioniert etwas nicht richtig? Dann
-        popup:
-          button: Ja, bitte
-          email_placeholder: E-Mail-Adresse *
-          footer: "* Dein Name und deine E-Mail-Adresse werden ausschließlich zur Kontaktaufnahme verarbeitet. Du abonnierst keinen Newsletter und deine E-Mail-Adresse wird nicht an Dritte weitergegeben."
-          headline: 20 Euro für deine Meinung
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Name *
-          text: Sag uns, was wir verbessern können. Oder was dir gut gefällt. Gern würden wir dazu mit dir telefonieren. Dürfen wir dir eine E-Mail mit den Details schicken?
+        more_information_overlay: 
+        send: 
         unavailable_location_modal: |
           Für deinen Standort gibt es bei clarat aktuell nur Telefon-Angebote
           oder Online-Angebote. Das heißt, man hilft dir am Telefon oder online.
           Zum Beispiel per E-Mail oder in einem Chat. Wir geben dir gerne
           Bescheid, sobald es bei clarat auch Hilfe in deiner Nähe gibt.
           Trage dazu deine E-Mail-Adresse hier ein.
-        send: 
       nav_lang:
         legal_title: 
         title: 
@@ -1412,6 +1473,8 @@ de:
               family: zu <span class="top-bar__emphasis">clarat refugees</span> wechseln
               refugees: zu <span class="top-bar__emphasis">clarat family</span> wechseln
         title: Wähle deine Sprache
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1444,9 +1507,15 @@ de:
             female: nur für Mädchen und Frauen
             girls_only: nur für Mädchen und Frauen
             male: nur für Jungen und Männer
+          residency_status:
+            before_the_asylum_decision: im Asylverfahren
+            with_a_residence_permit: mit Aufenthaltserlaubnis
+            with_deportation_decision: mit Abschiebebescheid
+            with_temporary_suspension_of_deportation: mit Duldung
           target_audience:
             children: für Kinder und Jugendliche
             family_children: für Kinder und Jugendliche
+            family_everyone: 
             family_nuclear_family: für Familien
             family_parents: für Eltern
             family_parents_to_be: für werdende Eltern
@@ -1455,6 +1524,12 @@ de:
             nuclear_family: für Familien
             parents: für Eltern
             pregnant_woman: für Schwangere
+            refugees_children: für geflüchtete Kinder
+            refugees_families: für geflüchtete Familien
+            refugees_general: für Flüchtlinge
+            refugees_parents: für geflüchtete Eltern
+            refugees_parents_to_be: für geflüchtete werdende Eltern
+            refugees_uf: für unbegleitete Flüchtlinge
             relatives: für Bekannte und Verwandte
       map_sidebar:
         map_output_searchresults: Kartenausgabe der Suchergebnisse
@@ -1580,8 +1655,6 @@ de:
         entscheidet, was alles ein clarat-Angebot wird. Ihr Lieblingssong ist La
         Prima Estate von Erlend Oye.
       andrea: Hat Interkulturelles Management studiert. Das heißt, sie weiß viel über Wirtschaft und Kultur. Sie arbeitet genau. Bei clarat ist sie im Research-Team. Und sie hat den Überblick über unsere family-Welt. Ihr Lieblingssong ist Work Me von The Black Keys.
-      anja: Ist Ökologin und Ingenieurin. Sie kann schnell und logisch denken. Bei clarat ist sie im Research-Team. Und sie sichert die Qualität unserer Arbeit. Ihr Lieblingssong ist Where is my mind von den Pixies.
-      ann-sophie: Hat Soziokulturelle Studien studiert. Sie kennt sich besonders gut mit dem Thema Migration aus. Sie kann gut Dinge ordnen und verstehen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Papertrails von Darkside.
       anna: Ist Philologin. Das heißt, sie weiß viel über Sprache und Literatur. Sie kann gut komplizierte Sachen verstehen. Bei clarat ist sie im Research-Team und Expertin für die clarat-Sprache. Ihr Lieblingssong ist 1009 von Bonobo.
       anne: Hat Wirtschaft und Internationale Beziehungen studiert. Sie kann schnell logisch denken. Bei clarat ist sie der Boss. Sie kümmert sich um das ganze Team und sie organisiert alles. Ihr Lieblingssong ist Denken Sie Groß von Deichkind.
       astrid: Ist Politikwissenschaftlerin. Das heißt, sie weiß viel über Politik und Gesellschaft. Sie steckt alle mit ihrer guten Laune an. Bei clarat ist sie im Research-Team. Und sie sucht im Internet nach Organisationen. Ihr Lieblingssong ist You Got Me von The Roots.
@@ -1642,7 +1715,6 @@ de:
         gestalten. Er ist auch ein guter Planer. Bei clarat ist er im IT-Team.
         Er sorgt dafür, dass unsere Internetseite schön aussieht. Sein
         Lieblingssong ist Hysteria von MUSE.
-      marie: Ist Friedens- und Konfliktforscherin. Das heißt, sie weiß viel über Konflikte und Krieg. Sie kann schnell Informationen sammeln und ordnen. Bei clarat ist sie im Research-Team. Ihr Lieblingssong ist Move On Up von Curtis Mayfield.
       meta_description: Das ist das Team hinter Deutschlands Hilfeverzeichnis. Mehr als 40 Kollegen arbeiten täglich daran, dass Du einfach Hilfe findest.
       michaela: Hat Wirtschaftsinformatik studiert. Sie kann andere Menschen begeistern. Und sie kennt sich gut mit neuen Medien aus. Bei clarat ist sie im Research-Team. Und sie sorgt dafür, dass unsere Internetseite gut funktioniert. Ihr Lieblingssong ist Digital Love von Daft Punk.
       nahla: 'Ist Archäologin. Sie weiß viel über die Geschichte der Menschheit. Sie kann schnell arbeiten. Bei clarat ist sie im Übersetzter-Team und übersetzt clarat ins Arabische. Ihr Lieblingssong ist Nassam Allina El Hawa von Fayrouz. '
@@ -1728,6 +1800,8 @@ de:
     faq:
       title: Häufige Fragen
     home:
+      explaination:
+        headline: clarat.org in 2 Minuten erklärt
       how:
         heading: Wie funktioniert clarat?
         text: |
@@ -1846,8 +1920,17 @@ de:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: Jetzt Hilfe suchen
+        family:
+          text: 'Bei clarat family finden Familien in Deutschland Infos zu Hilfen in ihrer Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
+        refugees:
+          text: 'Bei clarat refugees finden Menschen, die nach Deutschland geflüchtet sind Hilfe. Bei Problemen aus folgenden Bereichen: Asyl & Recht, Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
       meta_description: clarat.org zeigt, welche Hilfen es in Deutschland gibt. Für Kinder, Jugendliche & Familien. Und für Flüchtlinge. Online. Einfach. In deiner Nähe.
       meta_title: clarat klärt auf | clarat
+      mission:
+        headline: 'Unser Auftrag:'
+        text: Hilfe, die es in Deutschland gibt, sichtbar machen und einfach erklären.
       title: Bitte wähle deine clarat-Welt
     shared:
       address:
@@ -1876,6 +1959,7 @@ de:
     organizations: organisationen
     preview: preview
     rechtliche-hinweise: rechtliche-hinweise
+    refugees: refugees
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
@@ -1883,6 +1967,11 @@ de:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: nutzer
+    widget: widget
+    widget-handbook-germany: widget-handbook-germany
+    widget-hg: widget-hg
+    widget-start-with-a-friend: widget-start-with-a-friend
+    widget-swaf: widget-swaf
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus
@@ -1937,3 +2026,4 @@ de:
     new:
       button: Nachricht erhalten
       email_placeholder: E-Mail Adresse
+      placeholder: 

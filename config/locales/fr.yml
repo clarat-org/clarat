@@ -674,6 +674,11 @@ fr:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -753,6 +758,7 @@ fr:
         approach: De quelle Manière?
         gender: Sexe
         language: Langue
+        residency_status: 
         sort: Trier par
         target_audience: De l'aide pour qui?
       option_any: égal
@@ -760,6 +766,7 @@ fr:
         back: Retour
         gap: "..."
         next: de nouveau
+      reset_label: 
       sort:
         nearby: À proximité
         relevance: Meilleurs résultats
@@ -858,8 +865,7 @@ fr:
         fra: Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: géorgien - ქართული
         hau: haoussa - Hausancī
         hbs: Monténégrin - Crnogorski jezik / Црногорски језик
@@ -934,12 +940,54 @@ fr:
         personal: personnel
         portal: liste d'adresses
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
           link: Ici, tu en apprends plus
           refugees: Bientôt des services pour les réfugiés
           text: clarat.org est en train d'être actualisée
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: À propos de nous
         blog: Blog
@@ -955,26 +1003,41 @@ fr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Impression
+        plus: clarat plus
         privacy: Protection des données
         tos: Informations juridiques
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: 'عربي
+
+'
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Offres d'aide pour les enfants, les ados et les familles
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
-        popup:
-          button: 
-          email_placeholder: Adresse électronique *
-          footer: 
-          headline: 
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Nom *
-          text: 
-        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
+        more_information_overlay: 
         send: 
+        unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
       nav_lang:
         legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
         title: 
@@ -1009,6 +1072,8 @@ fr:
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1041,9 +1106,15 @@ fr:
             female: seulement pour les filles et les femmes
             girls_only: seulement pour les filles et les femmes
             male: seulement pour les garçons ou les hommes
+          residency_status:
+            before_the_asylum_decision: dans une procédure de demande d'asile
+            with_a_residence_permit: avec permis de séjour
+            with_deportation_decision: avec décision d'expulsion
+            with_temporary_suspension_of_deportation: avec un certificat de tolérance
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados
+            family_everyone: 
             family_nuclear_family: pour les familles
             family_parents: pour les parents
             family_parents_to_be: pour de futurs parents
@@ -1052,6 +1123,12 @@ fr:
             nuclear_family: pour les familles
             parents: pour les parents
             pregnant_woman: pour les femmes enceintes
+            refugees_children: pour des enfants réfugiés
+            refugees_families: pour des familles réfugiées
+            refugees_general: pour des réfugiés
+            refugees_parents: pour des parents réfugiés
+            refugees_parents_to_be: pour des futurs parents réfugiés
+            refugees_uf: pour des réfugiés non-accompagnés
             relatives: pour les connaissances ou la parenté
       map_sidebar:
         map_output_searchresults: émission de cartes des résultats de recherches
@@ -1166,8 +1243,6 @@ fr:
     about:
       amina: Est sociologue. Ça signifie qu'elle sait beaucoup de choses sur la société. Elle voit rapidement ce qui est important. Chez clarat, elle est dans l'équipe recherche. Elle décide de tout ce qui deviendra un service  de Clarat. Sa chanson préférée est La Prima Estate de Erlend Oye.
       andrea: Elle a étudié le management interculturel. Cela signifie qu'elle sait beaucoup de choses sur l'économie et la culture. Elle est très précise dans son travail. Elle fait partie de l'équipe recherche de clarat. Elle a une vue d'ensemble sur le monde de notre famille. Sa chanson préférée est Work Me des Black Keys.
-      anja: Elle est oncologue et ingénieure. Elle pense rapidement et de façon logique. Elle fait partie de l'équipe recherche de clarat. Elle est chargée de contrôler la qualité de notre travail. Sa chanson préférée est Where is my mind des Pixies.
-      ann-sophie: 
       anna: Elle est philologue. Cela veut dire qu'elle sait beaucoup de choses sur les langues. Elle s'y connait également bien en littérature. Elle sait très bien comprendre les choses compliquées. Elle fait partie de l'équipe recherche de clarat. Sa chanson préférée est 1009 de Bonobo.
       anne: Elle a fait des études en économie et relations internationales. Elle pense de façon rapide et très logique. Chez clarat, le chef c'est elle. Elle s'occupe de toute l'équipe et organise tout. Sa chanson préférée est Denken Sie Groß de Deichkind.
       astrid: Elle est politologue. Cela signifie qu'elle sait beaucoup de choses sur la politique et la société. Sa bonne humeur quotidienne est contagieuse. Elle fait partie de l'équipe recherche de clarat. Elle recherche aussi de nouveaux organismes sur internet. Sa chanson préférée est You Got Me de The Roots.
@@ -1205,7 +1280,6 @@ fr:
       lisa: Elle fait du Design Thinking. Elle aime planifier des projets avec les autres de façon créative. Elle sait bien dessiner. Elle fait partie de l'équipe de recherche de clarat et elle communique avec nos utilisateurs. Elle doit découvrir qui utilise clarat et de quelle façon. Sa chanson préférée est Resolution de Matt Corby.
       magdalena: 
       marcus: Est webdesigner. Ça signifie qu’il sait programmer et optimiser des sites internet. C’ est également un bon concepteur. Chez clarat, il est dans l’équipe TI. Et il fait en sorte que notre site Web soit joli. Sa chanson préférée est Hysteria de MUSE.
-      marie: 
       meta_description: 
       michaela: Elle a étudié les méthodes informatiques appliquées à la gestion. Elle sait susciter l'enthousiasme des autres. Elle est très familière avec les médias. Elle fait partie de l'équipe de recherche de clarat. Elle est responsable du bon fonctionnement de notre page web. Sa chanson préférée est Digital Love de Daft Punk.
       nahla: Elle est archéologue. Elle sait beaucoup de choses sur l'Histoire et l'humanité. Elle sait travailler vite. Elle fait partie de l'équipe de traducteurs de clarat et traduit en langue arabe. Sa chanson préférée est Nassam Allina El Hawa de Fayrouz.
@@ -1273,6 +1347,8 @@ fr:
     faq:
       title: Questions fréquentes
     home:
+      explaination:
+        headline: 
       how:
         heading: 'Clarat, comment ça fonctionne?
 
@@ -1377,8 +1453,17 @@ fr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: Choisis ton monde clarat
     shared:
       address:
@@ -1395,18 +1480,19 @@ fr:
     definitions: définitions
     emails: adresses-électroniques
     faq: questions-fréquentes
-    fr: fr
+    fr: 
     haeufige-fragen: questions-fréquentes
     home: page de démarrage
     impressum: impression
-    kontakt: 
+    kontakt: contact
     liste: liste
-    liste-de-services: iste de services
+    liste-de-services: 
     new: nouveau
-    offers: offres d'aide
+    offers: offres-d-aide
     organizations: organisations
     preview: preview
     rechtliche-hinweise: informations-juridiques
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
@@ -1414,6 +1500,11 @@ fr:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: utilisateur
+    widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ
@@ -1458,3 +1549,4 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
+      placeholder: 

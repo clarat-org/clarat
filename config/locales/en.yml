@@ -121,7 +121,7 @@ en:
             information is out of date, then we will update it.
           question: Is the information on clarat up to date?
         question_7:
-          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Cologne and Dusseldorf. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
+          answer: "You can use some of the support services at <b>clarat family</b> and at \n<b>clarat refugees</b> from anywhere. No matter where you live. \nA lot of the support services help you over the telephone. Or over the internet.\nThis could mean using e-mails, chat or online forums. But a lot of support \nservices can help you right there, in your local area. At <b>clarat refugees</b>\nyou'll soon find support services for lots of big cities in Germany. At the moment, \nthis means Berlin, Hamburg, Munich, Dortmund, Dusseldorf, Cologne Nuremberg and Stuttgart. On <b>clarat family</b> we've \nstarted with Berlin. Here you can find a lot of support services. And we're \ncollecting more and more. And soon we'll have support services for other large \ncities in Germany, too."
           question: Is clarat available for all of Germany?
         question_8:
           answer: "clarat shows you the help you can get in your local area. All the information \nyou need is in one place. Our layout is simple and clear. And we tell you exactly \nwhat you need to do to get help. We write in a clear, simple language. So that \neveryone can understand what we've written. Because at clarat we want to help \neveryone who needs help. Even people who don't speak very good German. On\nclarat, you can read about the support services in other languages, too. If you \nwant to know more, click %{ref_to_how_many_languages}."
@@ -640,6 +640,11 @@ en:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -725,6 +730,7 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
       option_any: any
@@ -732,6 +738,7 @@ en:
         back: Previous
         gap: "…"
         next: Next
+      reset_label: reset all
       sort:
         nearby: nearby
         relevance: Best matches
@@ -824,8 +831,7 @@ en:
         fra: French - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Georgian - ქართული
         hau: Hausa - Hausanci
         hbs: Montenegrin - Crnogorski jezik / Црногорски језик
@@ -898,12 +904,54 @@ en:
         personal: personal
         portal: address list
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: Email successfully entered!
     partials:
       banner:
         teaser:
           link: Find out more
           refugees: Soon with support services for refugees
           text: clarat.org is currently under construction
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: How does clarat family work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+            refugees:
+              heading: How does clarat refugees work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+          what:
+            family:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: family, health, learning & work and violence & crime.'
+            refugees:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: asylum & law, family, health, learning & work and violence & crime.'
+          who:
+            family:
+              heading: Who can find help here?
+              text: Every family in Germany, parents, their children and pregnant women can find help here. Friends and relatives can, too.
+            heading: 
+            refugees:
+              heading: Who can find help here?
+              text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
       footer:
         about: About us
         blog: Blog
@@ -919,12 +967,32 @@ en:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: impressum
+        plus: clarat plus
         privacy: privacy
         tos: legal information
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Support services for children, teenagers and families
+        hero:
+          button_label: Learn more
+          logline: Find the help that suits you - simply explained and clearly arranged
       modal:
         beta_modal:
           link: write us a message.
@@ -933,16 +1001,9 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
-        popup:
-          button: Yes, please
-          email_placeholder: email address *
-          footer: "* Your name and email address will only be used to contact you. You won't be subscribing to any newsletters and we won't pass it on to third parties."
-          headline: 20 Euros for your thoughts
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Name *
-          text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
-        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
+        more_information_overlay: 
         send: 
+        unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
         legal_title: Legal text can only be read in German.
         title: |-
@@ -952,9 +1013,9 @@ en:
       navigation:
         category_headline: Search by categories
         claim:
-          family: Support services and programmes for children, teenagers and families
+          family: Support services for children, teenagers and families
           main: Find help easily
-          refugees: Support services and programmes for refugees
+          refugees: Support services for refugees
       top_bar:
         german_content_warning: Legal information can only be viewed in German
         languages:
@@ -980,6 +1041,8 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1012,9 +1075,15 @@ en:
             female: girls and women only
             girls_only: girls and women only
             male: boys and men only
+          residency_status:
+            before_the_asylum_decision: during the asylum procedure
+            with_a_residence_permit: with a residence permit
+            with_deportation_decision: with deportation notice
+            with_temporary_suspension_of_deportation: with temporary suspension of deportation
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
+            family_everyone: 
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -1023,6 +1092,12 @@ en:
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
+            refugees_children: for refugee children
+            refugees_families: for refugee families
+            refugees_general: for refugees
+            refugees_parents: for refugee parents
+            refugees_parents_to_be: for refugee expectant parents
+            refugees_uf: for unaccompanied refugees
             relatives: for friends and family
       map_sidebar:
         map_output_searchresults: map output of the search results
@@ -1150,8 +1225,6 @@ en:
         Andrea studied intercultural management. That means she knows a lot
         about economics and culture. She's a precise worker. At
         clarat she is part of the research team. She keeps an eye on everything that happens in the clarat family world. Her favourite song is “Work Me” by The Black Keys.
-      anja: Anja is an ecologist and engineer. She can think quickly and logically. She works in clarat's research team, She ensures the quality of our work. Her favourite song is "Where is my My Mind?" by the Pixies.
-      ann-sophie: Ann-Sophie studied socio-cultural studies. She knows a lot about the topic of migration. She can understand things well. She works for the clarat research team. Her favourite song is "Papertrails" from Darkside.
       anna: Anna is a philologist. That means she knows a lot about languages. And she knows a lot about literature, too. She can understand complicated ideas very well. At clarat she's in the research team and she's a clarat language expert. Her favourite song is "1009" by Bonobo
       anne: |-
         Anne studied economics and international relations. She's a quick,
@@ -1252,8 +1325,7 @@ en:
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      marie: Marie is an academic researcher into the fields of peace and conflict research. This means she knows a lot about conflict and war. She can gather and sort information quickly. She works in clarat's research team. Her favourite song is "Move On Up" by Curtis Mayfield.
-      meta_description: 
+      meta_description: This is the team behind Germany's help and support service directory. More than 40 colleagues work every day to help you find support services easily.
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. She makes sure our website is up-to-date. Her favourite song is "Me in You" by Kings of Convenience.
@@ -1343,13 +1415,15 @@ en:
     faq:
       title: Frequently asked questions
     home:
+      explaination:
+        headline: 
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
         2017-07-17, visits=2: 
-        family: You can easily find help with clarat family. Support services for children, teenagers and families. Online. Up-to-date. All over Berlin.
-        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
+        family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
+        refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
         2017-07-17, visits=2: 
         family: Find help easily | clarat family
@@ -1449,8 +1523,17 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      cta:
+        button: Find help now
+        family:
+          text: 'At clarat family, families in Germany find information on aid in their area. For problems in the following areas: Family, Health, Learning & Work and Violence & Crime.'
+        refugees:
+          text: 'At clarat refugees find people who have escaped to Germany help. For problems related to: Asylum & Law, Family, Health, Learning & Work and Violence & Crime.'
+      meta_description: clarat.org shows which support services there are in Germany. For children, teenagers and families. And for refugees. Online. Easy. Near you.
       meta_title: clarat explains | clarat
+      mission:
+        headline: 'Our mission:'
+        text: Make help which exists in Germany visible and explain it in easy terms.
       title: Please choose your clarat-section
     shared:
       address:
@@ -1467,18 +1550,19 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
-    fr: fr
+    fr: 
     haeufige-fragen: frequently-asked-questions
     home: home
     impressum: impressum
     kontakt: contact
     liste: liste
-    liste-de-services: liste-de-services
+    liste-de-services: 
     new: new
     offers: offers
     organizations: organizations
     preview: preview
     rechtliche-hinweise: legal-information
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
@@ -1486,6 +1570,11 @@ en:
     unsubscribe: unsubscribe
     update_requests: update_requests
     users: users
+    widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1536,3 +1625,4 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
+      placeholder: 

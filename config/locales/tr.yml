@@ -598,6 +598,11 @@ tr:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -682,6 +687,7 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
+        residency_status: 
         sort: Göre sırala
         target_audience: Kim için destek?
       option_any: fark etmez
@@ -689,6 +695,7 @@ tr:
         back: geri
         gap: "..."
         next: ileri
+      reset_label: 
       sort:
         nearby: Yakınlardaki
         relevance: En iyi maçlar
@@ -777,8 +784,7 @@ tr:
         fra: Fransızca - Français
         fuf: Pular - Pular
         ful: Ful - Fulfulde
-        gej: 
-        gen: Gen - Mina
+        gej: Gen - Mina
         geo: Gürcü - ქართული
         hau: Hausa - Hausanci
         hbs: Karadağca - Crnogorski jezik / Црногорски језик
@@ -851,12 +857,54 @@ tr:
         personal: Kişisel
         portal: Adres listesi
   layouts:
+    modal_create:
+      js:
+        erb:
+          success: 
     partials:
       banner:
         teaser:
           link: Burada daha fazla bilgi alabilirsin
           refugees: Yakında mülteciler için de hizmetlerimiz olacaktır
           text: clarat.org henüz yapım aşamasındadır
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
       footer:
         about: Hakkımızda
         blog: Blog
@@ -872,12 +920,32 @@ tr:
           anchor: Google+
           href: https://plus.google.com/110429028641743127592/about
         impressum: Künye
+        plus: clarat plus
         privacy: Gizlilik Politikası
         tos: Hukuki Uyarılar
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
-        plus: clarat plus
+      header:
+        about: 
+        blog: 
+        contact: 
+        faq: 
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -885,20 +953,13 @@ tr:
             clarat.org adlı internet sayfamız henüz yenidir. Yakında başka şehirler için de yardım çeşitleri sunabileceğiz.
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
-        popup:
-          button: 
-          email_placeholder: E-Mail Adresi *
-          footer: 
-          headline: 
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: İsim *
-          text: 
+        more_information_overlay: 
+        send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
           Yani sana telefonda ya da online olarak yardım edilecektir.
           Mesela E-Mail yolu ve ya online sohbette yardım edilecektir. Bulunduğun yerde de yardım alabildiğinde, seni
           memnuniyetle bilgilendireceğiz. Bunun için E-Mail adresini buraya yazabilirsin.
-        send: 
       nav_lang:
         legal_title: Clarat'ta, yasal metin yalnızca Almanca'da okunabilir.
         title: 
@@ -937,6 +998,8 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -969,9 +1032,15 @@ tr:
             female: Yalnızca bayanlar için
             girls_only: Yalnızca bayanlar için
             male: Yalnızca erkekler için
+          residency_status:
+            before_the_asylum_decision: iltica prosedüründe
+            with_a_residence_permit: oturma izni ile
+            with_deportation_decision: sınırdışı belgesi ile
+            with_temporary_suspension_of_deportation: müsamaha ile
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için
+            family_everyone: 
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
             family_parents_to_be: Ebeveyn adayları için
@@ -980,6 +1049,12 @@ tr:
             nuclear_family: Aileler için
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
+            refugees_children: Kaçan çocuklar için
+            refugees_families: Kaçan aileler için
+            refugees_general: Mülteciler için
+            refugees_parents: Kaçan ebeveynler için
+            refugees_parents_to_be: ebeveyn olacak mülteciler için
+            refugees_uf: sahipsiz, reşit olmayan mülteciler için
             relatives: Tanıdık ve akrabalar için
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
@@ -1100,8 +1175,6 @@ tr:
     about:
       amina: Amina sosyal pedagog ve toplum hakkında çok iyi bilgisi var. Neyin önemli ve öncelikli olduğunu hemen görüyor. Clarat'ta araştırma ekibinde. Amina nelerin Clarat teklifi olabileceğine karar veriyor. En sevdiği müzik parçası Erlend Oye’den La Prima Erlend.
       andrea: Andrea kültürlerarası işletme okudu. Kültür ve ekonomi bilgisi çok kuvvetli ve bu konularda çok detaylı çalışıyor. Clarat'ta araştırma ekibinde. Yaptığımız işin kalitesi ona emanet. The Black Keys grubunun Work Me parçası en sevdigi şarkı.
-      anja: 
-      ann-sophie: 
       anna: 
       anne: 'Anne ekonomi ve uluslararası ilişkiler okudu. Çok hızlı ve mantıklı düşünür. Clarat''ın patronu. Tüm organizasyon ve ekip sorumluluğu onda. En sevdiği şarkı Deichkind’in Denken Sie Gross parçası. '
       astrid: Astrid siyaset bilimci. Politika ve toplumsal konular hakkında derin bilgisi var. Her zaman taşıdığı neşesini etrafındaki insanlara da yayar. Clarat’ta araştırma ekibinde. En sevdigi parça The Roots ve Erykah Badu’nun yorumladığı You Got Me parçası.
@@ -1141,7 +1214,6 @@ tr:
       lisa: bir tasarım düşünürü. Bu, kreatif projeler planlayabildiği anlamına geliyor. clarat’da araştırma ekibinde yer alıyor. Kendisi planlamaları yapıyor ve kullanıcılarla ilgileniyor. En sevdiği şarkı Jamie Lidell’in Another Day şarkısı.
       magdalena: 
       marcus: bir web tasarımcısı. Bu, internet sayfaları programlayabildiği ve tasarlayabildiği anlamına geliyor. Aynı zamanda plan yapma yeteneği oldukça iyi. clarat’da IT ekibinde yer alıyor ve internet sayfamızın güzel görünmesini sağlıyor. En sevdiği şarkı Muse’un Hysteria şarkısı.
-      marie: 
       meta_description: 
       michaela: 
       nahla: 
@@ -1213,6 +1285,8 @@ tr:
     faq:
       title: Sıkça sorulan sorular
     home:
+      explaination:
+        headline: 
       how:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
@@ -1314,8 +1388,17 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: 
     shared:
       address:
@@ -1334,16 +1417,17 @@ tr:
     faq: sıkça-sorulan-sorular
     fr: 
     haeufige-fragen: sıkça-sorulan-sorular
-    home: 
+    home: home
     impressum: künye
-    kontakt: 
-    liste: 
+    kontakt: contact
+    liste: liste
     liste-de-services: 
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
     preview: ön-izleme
     rechtliche-hinweise: hukuki-uyarılar
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: supsciptions
@@ -1351,6 +1435,11 @@ tr:
     unsubscribe: unsubscribe
     update_requests: update_request
     users: kullanıcılar
+    widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur
@@ -1406,3 +1495,4 @@ tr:
     new:
       button: Mesaj alınmıştır
       email_placeholder: E-Mail Adresi
+      placeholder: 

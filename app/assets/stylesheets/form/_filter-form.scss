@@ -139,6 +139,11 @@
   background-color: transparent !important;
   color: $brand_brown;
   word-break: break-all;
+
+  [dir="rtl"] & {
+    margin-left: 0;
+    margin-right: 50px;
+  }
 }
 
 .filter-form__fieldset__headline {
@@ -208,10 +213,20 @@
     display: none;
   }
 
+  [dir="rtl"] & {
+    padding: 0 10px 0 28px;
+    background-position: 10px center;
+  }
+
 
 
   &.JS-SortOrderSelector {
     padding-right: 30px;
+
+    [dir="rtl"] & {
+      padding-right: 10px;
+      padding-left: 30px;
+    }
   }
 }
 

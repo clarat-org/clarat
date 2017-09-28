@@ -49,11 +49,16 @@
   margin: 0 auto;
 }
 
+
 a.nav-lang__google {
   float: right;
   width: 60px;
   height: auto;
   margin: 8px 0 4px 20px;
+
+  [dir="rtl"] & {
+    margin: 8px 20px 4px 10px;
+  }
 
   img {
     width: inherit;

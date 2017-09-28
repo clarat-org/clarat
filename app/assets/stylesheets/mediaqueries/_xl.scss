@@ -12,6 +12,11 @@
 
   .Logo {
     margin-left: 20px;
+
+    [dir="rtl"] & {
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
 
   .header-main {
@@ -86,7 +91,6 @@
     margin-left: -25px;
     margin-right: -25px;
     width: calc(100% + 50px);
-    padding-bottom: 10px;
   }
 
   .filter-form__reset-btn {
@@ -149,10 +153,20 @@
 
   .nav-lang {
     right: 10px;
+
+    [dir="rtl"] & {
+      right: auto;
+      left: 25px;
+    }
   }
 
   .nav-main {
     right: 25px;
+
+    [dir="rtl"] & {
+      right: auto;
+      left: 25px;
+    }
   }
 
   .Hero__pitch {
@@ -177,6 +191,15 @@
   }
 
   // Content ######################################
+
+  aside.aside-standard {
+
+    [dir="rtl"] & {
+      left: 20px;
+      max-width: 27%;
+      width: 100%;
+    }
+  }
 
   .top-bar__container,
   .wrapper-inner {

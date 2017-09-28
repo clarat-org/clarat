@@ -66,6 +66,7 @@
     html[dir="rtl"] & {
       left: 60px;
       right: 15px;
+      margin-right: 0;
     }
 
     html[dir="rtl"][lang="fa"] .template--pages-home & {
@@ -268,6 +269,10 @@
 
   .filter-form__fieldset-wrapper {
     margin: 0 10px;
+
+    [dir="rtl"] & {
+      margin: 0 10px 0 0;
+    }
   }
 
   .filter-form__select {

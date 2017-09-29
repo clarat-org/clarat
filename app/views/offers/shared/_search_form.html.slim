@@ -2,7 +2,7 @@ div.main-search
   .main-search__wrapper.wrapper-inner
     = simple_form_for search_form,
                       url: offers_path(section: current_section),
-                      html: { method: :get, novalidate: false } do |f|
+                      html: { target: target(params), method: :get, novalidate: false } do |f|
       .search-form--input-wrapper
         = f.input :query, label: t('.query_label'), hint: false,
                           required: false,

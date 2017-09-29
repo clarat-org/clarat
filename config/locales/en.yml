@@ -932,10 +932,10 @@ en:
               heading: 
           how:
             family:
-              heading: How does clarat family work?
+              heading: How does clarat work?
               text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
             refugees:
-              heading: How does clarat refugees work?
+              heading: How does clarat work?
               text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
           what:
             family:
@@ -952,6 +952,25 @@ en:
             refugees:
               heading: Who can find help here?
               text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
+        callout_neutral:
+          how:
+            heading: How do we help?
+            refugees:
+              heading: 
+              text: 
+            text: We will help you to find the right help in your area. We arrange all the support services and make them understandable through simple language.
+          what:
+            heading: What we want to do?
+            refugees:
+              heading: 
+              text: 
+            text: clarat provides information - about support services in Germany. Because we want everyone to find the help they need.
+          who:
+            heading: Who are we?
+            refugees:
+              heading: 
+              text: 
+            text: We are a non-profit project of the Benckiser Stiftung Zukunft. The foundation aims to help children, young people and families in difficult situations.
       footer:
         about: About us
         blog: Blog

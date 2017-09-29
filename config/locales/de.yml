@@ -1361,10 +1361,10 @@ de:
               heading: 
           how:
             family:
-              heading: Wie funktioniert clarat family?
+              heading: Wie funktioniert clarat?
               text: 'Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt. '
             refugees:
-              heading: Wie funktioniert clarat refugees?
+              heading: Wie funktioniert clarat?
               text: Gib dein Problem in das Suchfeld ein und den Ort, an dem du suchst. Klicke auf die Lupe. Du bekommst die Hilfen in deiner Nähe auf einen Blick angezeigt.
           what:
             family:
@@ -1381,6 +1381,25 @@ de:
             refugees:
               heading: Wer findet hier Hilfe?
               text: Alle Menschen, die nach Deutschland geflüchtet sind. Auch geflüchtete Kinder und Jugendliche. Und Menschen, die Hilfe für Flüchtlinge suchen.
+        callout_neutral:
+          how:
+            heading: Wie helfen wir?
+            refugees:
+              heading: 
+              text: 
+            text: Wir helfen dir, die passende Hilfe in deiner Nähe zu finden. Wir ordnen alle Hilfen und machen sie durch einfache Sprache verständlich.
+          what:
+            heading: Was wollen wir?
+            refugees:
+              heading: 
+              text: 
+            text: clarat klärt auf – über Hilfsangebote in Deutschland. Denn wir wollen, dass jeder die Hilfe findet, die er braucht.
+          who:
+            heading: Wer sind wir?
+            refugees:
+              heading: 
+              text: 
+            text: Wir sind ein gemeinnütziges Projekt der Benckiser Stiftung Zukunft. Die Stiftung möchte Kinder, Jugendlichen und Familien in schwierigen Situationen helfen.
       footer:
         about: Über uns
         blog: Blog

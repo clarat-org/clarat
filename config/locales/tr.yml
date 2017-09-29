@@ -905,6 +905,25 @@ tr:
             refugees:
               heading: 
               text: 
+        callout_neutral:
+          how:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          what:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          who:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
       footer:
         about: Hakkımızda
         blog: Blog

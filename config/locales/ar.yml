@@ -898,23 +898,23 @@ ar:
               text: 
         callout_neutral:
           how:
-            heading: 
+            heading: كيف نساعدك؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: نحن نساعدك على إيجاد المساعدات المناسبة بالقرب منك. فنحن نقوم بترتيب عروض المساعدات ونصيغها بلغة سهلة الفهم.
           what:
-            heading: 
+            heading: ما الذي نريده؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: كلارات ترشد - إلى عروض المساعدات في ألمانيا. لأننا نريد أن يجد كل فرد المساعدة التي يحتاجها.
           who:
-            heading: 
+            heading: من نحن؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: نحن مشروع خيري تابع لمؤسسة بنكيزر. المؤسسة تهدف لمساعدة الأطفال والمراهقين والأسر في المواقف الصعبة
       footer:
         about: معلومات عنا
         blog: مدونة

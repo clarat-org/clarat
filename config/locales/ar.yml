@@ -896,6 +896,25 @@ ar:
             refugees:
               heading: 
               text: 
+        callout_neutral:
+          how:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          what:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          who:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
       footer:
         about: معلومات عنا
         blog: مدونة
@@ -935,8 +954,8 @@ ar:
         claim:
           family: مساعدة للأطفال والمراهقين و الأسرة
         hero:
-          button_label: 
-          logline: 
+          button_label: لمعرفة المزيد
+          logline: ستجد المساعدة المناسبة لك - بشرح مبسط وبشكل مجمع
       modal:
         beta_modal:
           link: ارسل لنا ببساطة رسالة بريد إليكتروني
@@ -1382,16 +1401,16 @@ ar:
       title: Datenschutz
     section_choice:
       cta:
-        button: 
+        button: ابحث عن مساعدة الآن
         family:
-          text: 
+          text: 'في clarat family يمكن للأسر في ألمانيا أن تجد معلومات عن المساعدات المتوفرة بالقرب منهم. عند وجود مشاكل تتعلق بالموضوعات التالية: الأسرة؛ الصحة؛ التعليم والعمل؛ العنف والجريمة '
         refugees:
-          text: 
+          text: 'في clarat refugees يمكن اللاجئين في ألمانيا العثور على عروض مساعدات. عند وجود مشاكل تتعلق بالموضوعات التالية: اللجوء والقانون؛ الأسرة؛ الصحة؛ التعليم والعمل؛ العنف والجريمة.'
       meta_description: clarat.org تعرض لك ما هي المساعدات المتاحة في ألمانيا للاطفال والمراهقين والأسر واللاجئين. عبر الانترنت. بالقرب منك.
       meta_title: كلارات توضح | كلارات
       mission:
-        headline: 
-        text: 
+        headline: مهمتنا
+        text: عرض المساعدات المتاحة في ألمانيا وشرحها بشكل مبسط
       title: إختر قسم كلارات الذي يخصك
     shared:
       address:

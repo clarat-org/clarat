@@ -1279,4 +1279,18 @@
       border: 2px solid $brand_brown;
     }
   }
+
+  .widget-hg {
+    .main-search {
+      height: 87px;
+
+      .wrapper-inner {
+        padding: 10px 20px;
+
+        #new_search_form button {
+          max-width: 50px;
+        }
+      }
+    }
+  }
 }

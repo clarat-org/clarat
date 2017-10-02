@@ -644,4 +644,19 @@
     font-size: 11px;
   }
 
+  .widget-hg {
+    .main-search {
+      height: 87px;
+      padding-top: 0px;
+    }
+  }
+
+  .widget-swaf {
+    .main-search {
+      .wrapper-inner {
+        padding: 0 20px;
+      }
+    }
+  }
+
 }

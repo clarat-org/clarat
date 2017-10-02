@@ -12,9 +12,7 @@ class OffersController < ApplicationController
   end
 
   def index
-    @category_tree ||= Category.sorted_hash_tree
     prepare_location_unavailable
-    prepare_more_info_interest
     render :index
   end
 
@@ -57,12 +55,6 @@ class OffersController < ApplicationController
   def prepare_location_unavailable
     @update_request = UpdateRequest.new(
       search_location: @search_form.search_location # TODO: set by JS
-    )
-  end
-
-  def prepare_more_info_interest
-    @more_info_interest = UpdateRequest.new(
-      search_location: @search_form.query || @search_form.category # TODO: set by JS
     )
   end
 

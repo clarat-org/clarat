@@ -22,7 +22,7 @@
 }
 
 .page {
-  @extend %roboto_bold;
+  @include roboto_bold;
 
   &.current {
     background: $brand_yellow;

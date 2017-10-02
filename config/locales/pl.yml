@@ -722,6 +722,11 @@ pl:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -801,6 +806,7 @@ pl:
         approach: W jaki sposób?
         gender: Płeć
         language: Język
+        residency_status: 
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
       option_any: obojętne
@@ -808,6 +814,7 @@ pl:
         back: Wróć
         gap: "..."
         next: Dalej
+      reset_label: 
       sort:
         nearby: W pobliżu
         relevance: Lepszy strzał
@@ -815,8 +822,6 @@ pl:
         categories: Kategorie
         filter: Filtr
         map: Mapa
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: dla zapytania
       enclosing: znaleziono
@@ -989,6 +994,63 @@ pl:
           link: Tutaj dowiesz się więcej
           refugees: Wkrótce także oferty dla uchodźców
           text: clarat.org jest właśnie przebudowywany
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
+        callout_neutral:
+          how:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          what:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          who:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
       footer:
         about: O nas
         blog: Blog
@@ -1010,19 +1072,31 @@ pl:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: O nas
+        blog: Blog
+        contact: kontakt
+        faq: Często zadawane pytania
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: po prostu napisz do nas wiadomość
           text: 'Nasza strona internetowa clarat.org jest jeszcze całkiem nowa. Możesz już znaleźć wiele ofert pomocy w Berlinie. Wkrótce zbierzemy też oferty pomocy dla innych miast. Będziemy wdzięczni za pomoc: Zauważyłeś coś, co moglibyśmy zrobić lepiej? Albo coś funkcjonuje nie tak, jak powinno? W takim razie'
         more_information_overlay: 
-        popup:
-          button: 
-          email_placeholder: adres e-mail *
-          footer: 
-          headline: 
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Imię *
-          text: 
         send: 
         unavailable_location_modal: Dla Twojej lokalizacji mamy aktualnie w clarat wyłącznie oferty telefoniczne i oferty online. To znaczy, otrzymasz pomoc telefoniczną lub online, na przykład przez e-mail lub za pomocą chatu. Chętnie damy Ci znać, kiedy pojawią się oferty pomocy w Twojej okolicy. W tym celu wpisz adres e-mail.
       nav_lang:
@@ -1059,23 +1133,8 @@ pl:
               family: zmień na <span class="top-bar__emphasis">clarat refugees</span>
               refugees: 'zmień na <span class="top-bar__emphasis">clarat family</span> '
         title: Automatyczne Tłumaczenia!
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Oferty wsparcia dla dzieci, młodzieży i rodzin
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1110,9 +1169,15 @@ pl:
             female: tylko dla dziewcząt i kobiet
             girls_only: tylko dla dziewcząt i kobiet
             male: tylko dla chłopców i mężczyzn
+          residency_status:
+            before_the_asylum_decision: w trakcie procedury azylowej
+            with_a_residence_permit: z pozwoleniem na pobyt
+            with_deportation_decision: z zawiadomieniem o deportacji
+            with_temporary_suspension_of_deportation: z pobytem tolerowanym
           target_audience:
             children: dla dzieci i młodzieży
             family_children: dla dzieci i młodzieży
+            family_everyone: 
             family_nuclear_family: dla rodzin
             family_parents: dla rodziców
             family_parents_to_be: dla przyszłych rodziców
@@ -1121,6 +1186,12 @@ pl:
             nuclear_family: dla rodzin
             parents: dla rodziców
             pregnant_woman: Dla kobiet w ciąży
+            refugees_children: dla uchodźców-dzieci
+            refugees_families: dla uchodźców-rodzin
+            refugees_general: dla uchodźców
+            refugees_parents: dla uchodźców-rodziców
+            refugees_parents_to_be: dla zbiegłych przyszłych rodziców
+            refugees_uf: dla niepełnoletnich uchodźców bez opieki
             relatives: dla znajomych i krewnych
       map_sidebar:
         map_output_searchresults: Widok wyników wyszukiwania na mapie
@@ -1345,6 +1416,8 @@ pl:
     faq:
       title: Często zadawane pytania
     home:
+      explaination:
+        headline: 
       how:
         heading: Jak funkcjonuje clarat?
         text: Wpisz, jaki masz problem. Albo co przysparza Ci zmartwień. Lub wybierz z tematów przez nas zaproponowanych. Zaraz wyświetlą się oferty pomocy w twojej okolicy. My wskażemy Ci również, w jaki sposób uzyskasz pomoc. Czyli, czy masz zadzwonić, napisać e-mail, czy udać się we wskazane miejsce.
@@ -1445,8 +1518,17 @@ pl:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: Wybierz swój clarat-świat
     shared:
       address:
@@ -1463,17 +1545,19 @@ pl:
     definitions: definicje
     emails: e-maile
     faq: często-zadawane-pytania
-    fr: fr
+    fr: 
     haeufige-fragen: często-zadawane-pytania
     home: home
     impressum: impressum
     kontakt: contact
     liste: Lista
+    liste-de-services: 
     new: nowe
     offers: oferty
     organizations: organizacje
     preview: podgląd
     rechtliche-hinweise: nota-prawna
+    refugees: 
     search_locations: wyszukaj
     subscribe: subscribe
     subscriptions: subskrypcje
@@ -1482,6 +1566,10 @@ pl:
     update_requests: odśwież
     users: użytkownicy
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

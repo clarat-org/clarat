@@ -7,13 +7,7 @@ noscript.NoScript
   i.fa.fa-exclamation-triangle
   p== t('.noscript_warning')
 
-/ Inform JS…
-/ …about the category structure
-- cache ['categories_nest', @current_section, @category_tree.length, I18n.locale] do
-  #category-tree(
-    data={structure: render('offers/index/categories_nest.json', section: @current_section, set: @category_tree, depth: 0)}
-  )
-/ …about the filter structure
+/ Inform JS about the filter structure
 #filters(
   data={structure: render('offers/index/filters.json')}
 )
@@ -23,8 +17,3 @@ noscript.NoScript
 = modal_for 'unavailable_location_overlay', autoopen: false do
   p= t '.unavailable_location_modal'
   = render '/update_requests/new', update_request: @update_request
-
-/ prepare fake door modal
-= modal_for 'more_information_overlay', autoopen: false do
-  p= t '.more_information_overlay'
-  = render '/update_requests/new', update_request: @more_info_interest

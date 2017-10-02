@@ -15,7 +15,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @currentGeolocationByBrowser = false
     @currentLocation =
       query: @searchLocationInput.val()
-      geoloc: $('#search_form_generated_geolocation')?.value ||
+      geoloc: $('#search_form_generated_geolocation').val() ||
         I18n.t('conf.default_latlng') # default: middle of Berlin
 
     @onLoad()
@@ -32,14 +32,13 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     '#new_search_form':
       submit: 'handleFormSubmit'
     document:
-      'Clarat.PlacesAutocomplete::placesAutocompleteTriggered': 'handlePlaceChanged'
+      'Clarat::PlacesAutocomplete::placesAutocompleteTriggered': 'handlePlaceChanged'
       'Clarat.Location::RequestGeolocation': 'handleRequestGeolocation'
 
 
   # Check if cookie had was saved to use "my location" and if so, use it again.
   onLoad: ->
     @startGarbageCollection()
-
     # If 'Mein Standort' has been set and user switches to another language, we want to keep the highlighting and update the form input to the equivalent, e.g. 'My location'
     if @currentLocationList.includes($('.JS-Geolocation__display').val())
       $('.JS-Geolocation__display')[0].value = I18n.t('conf.current_location')
@@ -92,7 +91,8 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     # Inform user that the request is now pending
     @renderPrompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
     # Request Geolocation from browser
-    if navigator.geolocation
+
+    if navigator.geolocation && !@currentLocation
       # Timeout because the default timeout doesn't work in all browsers
       @geolocationTimeout =
         setTimeout(@handleBrowserGeolocationRequestError, 10000)
@@ -122,9 +122,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     )
 
     # Set location to fallback
+
     @updateCurrentLocation
-      query: I18n.t('js.geolocation.fallback')
-      geoloc: I18n.t('conf.default_latlng')
+      query: @currentLocation.query || I18n.t('js.geolocation.fallback')
+      geoloc: @currentLocation.geoloc || I18n.t('conf.default_latlng')
 
   # Browser returned with a geolocation
   handleBrowserGeolocationRequestSuccess: (position) =>
@@ -135,10 +136,10 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
 
     # save geo info
     @currentGeolocationByBrowser = true
+
     @updateCurrentLocation
       query: I18n.t('conf.current_location')
       geoloc: "#{position.coords.latitude},#{position.coords.longitude}"
-
     @initMyLocationDisplay(@currentLocation)
 
   # Remove button for the display of "using current location" clicked.

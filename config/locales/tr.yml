@@ -598,6 +598,11 @@ tr:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -682,6 +687,7 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
+        residency_status: 
         sort: Göre sırala
         target_audience: Kim için destek?
       option_any: fark etmez
@@ -689,6 +695,7 @@ tr:
         back: geri
         gap: "..."
         next: ileri
+      reset_label: 
       sort:
         nearby: Yakınlardaki
         relevance: En iyi maçlar
@@ -696,8 +703,6 @@ tr:
         categories: Kategoriler
         filter: filtre
         map: Harita
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: için
       enclosing: bulundu
@@ -862,6 +867,63 @@ tr:
           link: Burada daha fazla bilgi alabilirsin
           refugees: Yakında mülteciler için de hizmetlerimiz olacaktır
           text: clarat.org henüz yapım aşamasındadır
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
+        callout_neutral:
+          how:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          what:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          who:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
       footer:
         about: Hakkımızda
         blog: Blog
@@ -883,6 +945,26 @@ tr:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: Hakkımızda
+        blog: Blog
+        contact: İletişim
+        faq: Sıkça sorulan sorular
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: bize mesaj gönder.
@@ -891,14 +973,6 @@ tr:
             Desteğinden ötürü mutlulu duyarız: Daha iyi yapabileceğimiz bir şey mi var? Ya da düzgün çalışmayan
             bir şey? o halde
         more_information_overlay: 
-        popup:
-          button: 
-          email_placeholder: E-Mail Adresi *
-          footer: 
-          headline: 
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: İsim *
-          text: 
         send: 
         unavailable_location_modal: |
           Bulunduğun yer için clarat'ta şuan yalnızca telefon desteği ya da online yardımlar bulunmaktadır.
@@ -943,23 +1017,8 @@ tr:
               family: 
               refugees: 
         title: Otomatik çeviriler
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Çocuklar, gençler ve aileler için yardıum çeşitleri
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -992,9 +1051,15 @@ tr:
             female: Yalnızca bayanlar için
             girls_only: Yalnızca bayanlar için
             male: Yalnızca erkekler için
+          residency_status:
+            before_the_asylum_decision: iltica prosedüründe
+            with_a_residence_permit: oturma izni ile
+            with_deportation_decision: sınırdışı belgesi ile
+            with_temporary_suspension_of_deportation: müsamaha ile
           target_audience:
             children: Çocuklar ve gençler için
             family_children: Çocuk ve gençler için
+            family_everyone: 
             family_nuclear_family: Aileler için
             family_parents: Ebeveynler için
             family_parents_to_be: Ebeveyn adayları için
@@ -1003,6 +1068,12 @@ tr:
             nuclear_family: Aileler için
             parents: Ebeveynler için
             pregnant_woman: Hamileler için
+            refugees_children: Kaçan çocuklar için
+            refugees_families: Kaçan aileler için
+            refugees_general: Mülteciler için
+            refugees_parents: Kaçan ebeveynler için
+            refugees_parents_to_be: ebeveyn olacak mülteciler için
+            refugees_uf: sahipsiz, reşit olmayan mülteciler için
             relatives: Tanıdık ve akrabalar için
       map_sidebar:
         map_output_searchresults: Aramalarını haritaya dök
@@ -1233,6 +1304,8 @@ tr:
     faq:
       title: Sıkça sorulan sorular
     home:
+      explaination:
+        headline: 
       how:
         heading: Clarat nasıl çalışıyor?
         text: Hangi problem için yardıma ihtiyacın olduğunu ya da hangi konunun seni rahatsız ettiğini belirle. Ayrıca menümüzdeki kategorilerden de seçebilirsin. Bu sayede sana en yakın destek önerilerini göreceksin. Sana nasıl yardım alabileceğini de anlatıyoruz. Yardım almak için telefon açabilir, mail atabilir veya şahsen ofisimize gelebilirsin.
@@ -1334,8 +1407,17 @@ tr:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: 
     shared:
       address:
@@ -1358,11 +1440,13 @@ tr:
     impressum: künye
     kontakt: contact
     liste: liste
+    liste-de-services: 
     new: yeni
     offers: hizmetlerimiz
     organizations: organizasyonlar
     preview: ön-izleme
     rechtliche-hinweise: hukuki-uyarılar
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: supsciptions
@@ -1371,6 +1455,10 @@ tr:
     update_requests: update_request
     users: kullanıcılar
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

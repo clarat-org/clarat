@@ -640,6 +640,11 @@ en:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -725,6 +730,7 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
       option_any: any
@@ -732,6 +738,7 @@ en:
         back: Previous
         gap: "…"
         next: Next
+      reset_label: reset all
       sort:
         nearby: nearby
         relevance: Best matches
@@ -739,8 +746,6 @@ en:
         categories: Categories
         filter: Filter
         map: Map
-      more_info_button: To adviser
-      more_info_text: 'More information:'
     search_results:
       bridge: for the search term
       enclosing: found
@@ -909,6 +914,63 @@ en:
           link: Find out more
           refugees: Soon with support services for refugees
           text: clarat.org is currently under construction
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: How does clarat work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+            refugees:
+              heading: How does clarat work?
+              text: Enter your problem into the search field and the area where you are looking. Click on the magnifying glass. The support services in your area will show up instantly.
+          what:
+            family:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: family, health, learning & work and violence & crime.'
+            refugees:
+              heading: What can you find here?
+              text: 'Information about support services in your area. For problems with: asylum & law, family, health, learning & work and violence & crime.'
+          who:
+            family:
+              heading: Who can find help here?
+              text: Every family in Germany, parents, their children and pregnant women can find help here. Friends and relatives can, too.
+            heading: 
+            refugees:
+              heading: Who can find help here?
+              text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
+        callout_neutral:
+          how:
+            heading: How do we help?
+            refugees:
+              heading: 
+              text: 
+            text: We help you find the right help near you. We sort all the support services and make them understandable through simple language.
+          what:
+            heading: What do we want?
+            refugees:
+              heading: 
+              text: 
+            text: clarat explains - about support services in Germany. Because we want everyone to find the help they need.
+          who:
+            heading: Who are we?
+            refugees:
+              heading: 
+              text: 
+            text: We are a non-profit project of the Benckiser Stiftung Zukunft. The foundation aims to help children, young people and families in difficult situations.
       footer:
         about: About us
         blog: Blog
@@ -930,6 +992,26 @@ en:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: About us
+        blog: Blog
+        contact: Contact
+        faq: FAQ
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Support services for children, teenagers and families
+        hero:
+          button_label: Learn more
+          logline: Find the right help for you - simply explained and clear
       modal:
         beta_modal:
           link: write us a message.
@@ -938,15 +1020,7 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
-        more_information_overlay: 'Sorry. Unfortunately, there are no advisers for your search. But we are trying to add to our service all the time. We will let you know as soon as there is more information on clarat about your search. Please enter your email address here. '
-        popup:
-          button: Yes, please
-          email_placeholder: email address *
-          footer: "* Your name and email address will only be used to contact you. You won't be subscribing to any newsletters and we won't pass it on to third parties."
-          headline: 20 Euros for your thoughts
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Name *
-          text: Tell us what you like and what we can improve. We'd like to chat with you. Can we send you an email with all the details?
+        more_information_overlay: 
         send: 
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
       nav_lang:
@@ -986,23 +1060,8 @@ en:
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Support services for children, teenagers and families
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1035,9 +1094,15 @@ en:
             female: girls and women only
             girls_only: girls and women only
             male: boys and men only
+          residency_status:
+            before_the_asylum_decision: during the asylum procedure
+            with_a_residence_permit: with a residence permit
+            with_deportation_decision: with deportation notice
+            with_temporary_suspension_of_deportation: with temporary suspension of deportation
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
+            family_everyone: 
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -1046,6 +1111,12 @@ en:
             nuclear_family: for families
             parents: for parents
             pregnant_woman: for pregnant women
+            refugees_children: for refugee children
+            refugees_families: for refugee families
+            refugees_general: for refugees
+            refugees_parents: for refugee parents
+            refugees_parents_to_be: for refugee expectant parents
+            refugees_uf: for unaccompanied refugees
             relatives: for friends and family
       map_sidebar:
         map_output_searchresults: map output of the search results
@@ -1363,6 +1434,8 @@ en:
     faq:
       title: Frequently asked questions
     home:
+      explaination:
+        headline: 
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
@@ -1469,8 +1542,17 @@ en:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
-      meta_description: clarat explains. Using a network of support services in Germany. For children, teenagers, families and refugees. Online. Easy. Near you.
+      cta:
+        button: Find help now
+        family:
+          text: 'On clarat family, families in Germany can find information about support services near them. For problems with: Family, Health, Learning & Work and Violence & Crime.'
+        refugees:
+          text: 'On clarat refugees, people who have fled to Germany can find help. For problems with: Asylum & Law, Family, Health, Learning & Work and Violence & Crime.'
+      meta_description: clarat.org shows which support services there are in Germany. For children, teenagers and families. And for refugees. Online. Easy. Near you.
       meta_title: clarat explains | clarat
+      mission:
+        headline: 'Our mission:'
+        text: To show what help there is in Germany and explain it in easy terms.
       title: Please choose your clarat-section
     shared:
       address:
@@ -1487,17 +1569,19 @@ en:
     definitions: definitions
     emails: emails
     faq: frequently-asked-questions
-    fr: fr
+    fr: 
     haeufige-fragen: frequently-asked-questions
     home: home
     impressum: impressum
     kontakt: contact
     liste: liste
+    liste-de-services: 
     new: new
     offers: offers
     organizations: organizations
     preview: preview
     rechtliche-hinweise: legal-information
+    refugees: 
     search_locations: search_locations
     subscribe: subscribe
     subscriptions: subscriptions
@@ -1506,6 +1590,10 @@ en:
     update_requests: update_requests
     users: users
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Please fill out this field

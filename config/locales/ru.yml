@@ -698,6 +698,11 @@ ru:
         xxx: 
         zho: Zho
         zza: Zza
+      residency_status:
+        before_the_asylum_decision: 
+        with_a_residence_permit: 
+        with_deportation_decision: 
+        with_temporary_suspension_of_deportation: 
       section:
         family: Family
         refugees: Refugees
@@ -782,6 +787,7 @@ ru:
         approach: Каким образом?
         gender: Пол
         language: Язык
+        residency_status: 
         sort: Сортировка по
         target_audience: Помощь для кого?
       option_any: все равно
@@ -789,6 +795,7 @@ ru:
         back: Назад
         gap: "..."
         next: Дальше
+      reset_label: 
       sort:
         nearby: Неподалеку
         relevance: Самые релевантные результаты
@@ -796,8 +803,6 @@ ru:
         categories: категории
         filter: Фильтр
         map: карта
-      more_info_button: 
-      more_info_text: 
     search_results:
       bridge: для
       enclosing: найдено
@@ -972,6 +977,63 @@ ru:
           link: Здесь ты узнаешь больше
           refugees: Так же скоро будут предложения для беженцев
           text: clarat.org в данный момент находится в развитии
+      callout:
+        callout:
+          callout:
+            how:
+              text: 
+            refugees:
+              how:
+                heading: 
+                text: 
+              who:
+                text: 
+            what:
+              heading: 
+              text: 
+            who:
+              heading: 
+          how:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          what:
+            family:
+              heading: 
+              text: 
+            refugees:
+              heading: 
+              text: 
+          who:
+            family:
+              heading: 
+              text: 
+            heading: 
+            refugees:
+              heading: 
+              text: 
+        callout_neutral:
+          how:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          what:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
+          who:
+            heading: 
+            refugees:
+              heading: 
+              text: 
+            text: 
       footer:
         about: О нас
         blog: Блог
@@ -993,6 +1055,26 @@ ru:
         twitter:
           anchor: Twitter
           href: https://twitter.com/claratpunktorg
+      header:
+        about: О нас
+        blog: Блог
+        contact: Контакты
+        faq: Частые вопросы
+        languages:
+          ar: عربي
+          de: Deutsch
+          en: English
+          fa: فارسی
+          fr: Français
+          pl: Polski
+          ru: Русский
+          tr: Türkçe
+      hero:
+        claim:
+          family: Предложения о помощи детям, молодежи и семьям
+        hero:
+          button_label: 
+          logline: 
       modal:
         beta_modal:
           link: просто напиши нам E-Mail.
@@ -1003,14 +1085,6 @@ ru:
             ты что-либо заметил, что нам стоит улучшить? Или что-то
             рабоатет не правильно? Тогда
         more_information_overlay: 
-        popup:
-          button: Да, пожалуйста
-          email_placeholder: E-Mail адрес *
-          footer: Твое имя и адрес электронной почты будут использованы только в цели установления контакта. Ты не подписываешься на электронную рассылку и твои данные не будут переданы третьим лицам.
-          headline: 20 евро за твое мнение
-          message: Ich möchte an der Umfrage teilnehmen
-          name_placeholder: Имя *
-          text: Скажите, что мы можем улучшить. Или то, что тебе действительно нравится. Мы будем рады созвониться с тобой. Можно выслать тебе E-Mail с деталями?
         send: 
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
       nav_lang:
@@ -1051,23 +1125,8 @@ ru:
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-      header:
-        about: 
-        blog: 
-        contact: 
-        faq: 
-        languages:
-          ar: 
-          de: 
-          en: 
-          fa: 
-          fr: 
-          pl: 
-          ru: 
-          tr: 
-      hero:
-        claim:
-          family: Предложения о помощи детям, молодежи и семьям
+    widget:
+      category_headline: 
   offer:
     stamp:
       target_audience:
@@ -1102,9 +1161,15 @@ ru:
             female: только для девочек и женщин
             girls_only: только для девочек и женщин
             male: только для мальчиков и мужчин
+          residency_status:
+            before_the_asylum_decision: в процессе предоставления убежища
+            with_a_residence_permit: с видом на жительство
+            with_deportation_decision: с заключением о депортации
+            with_temporary_suspension_of_deportation: с правом на кратковременное пребывание в стране
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи
+            family_everyone: 
             family_nuclear_family: для семей
             family_parents: для родителей
             family_parents_to_be: для будущих родителей
@@ -1113,6 +1178,12 @@ ru:
             nuclear_family: для семей
             parents: для родителей
             pregnant_woman: для беременных
+            refugees_children: для детей-беженцев
+            refugees_families: для семей-беженцев
+            refugees_general: для беженцев
+            refugees_parents: для родителей-беженцев
+            refugees_parents_to_be: для будущих родителей-беженцев
+            refugees_uf: для беспризорных беженцев
             relatives: для знакомых и родственников
       map_sidebar:
         map_output_searchresults: Вывод результатов поиска на карту
@@ -1340,6 +1411,8 @@ ru:
     faq:
       title: Частые вопросы
     home:
+      explaination:
+        headline: 
       how:
         heading: Kак работает clarat?
         text: Напиши, в чем именно заключается твоя проблема. Или что тебя волнует. Или выбери из предложенных тем. И ты сразу найдешь все возможные варианты помощи и поддержки поблизости. Мы также расскажем тебе, как ты можешь получить эту помощь. Например, нужно ли позвонить, написать email или прийти лично.
@@ -1438,8 +1511,17 @@ ru:
       intro_second_part: Im Folgenden möchten wir Sie über Art, Umfang und Zweck der Erhebung und Verwendung personenbezogener Daten unterrichten. Sie können diese Unterrichtung jederzeit auf unserer Webseite abrufen. Die clarat gGmbH behält sich Änderungen dieser Datenschutzhinweise vor. Es empfiehlt sich daher, die Datenschutzweise erneut aufzurufen, wenn Sie unsere Webseite nach längerer Zeit wieder besuchen.
       title: Datenschutz
     section_choice:
+      cta:
+        button: 
+        family:
+          text: 
+        refugees:
+          text: 
       meta_description: 
       meta_title: 
+      mission:
+        headline: 
+        text: 
       title: Пожалуйста,  выберите ваш мир clarat
     shared:
       address:
@@ -1462,11 +1544,13 @@ ru:
     impressum: Импрессум
     kontakt: contact
     liste: список
+    liste-de-services: 
     new: новый
     offers: предложения
     organizations: орагнизации
     preview: предварительный-просмотр
     rechtliche-hinweise: юридические-указания
+    refugees: 
     search_locations: поиск-местонахождения
     subscribe: subscribe
     subscriptions: подписки
@@ -1475,6 +1559,10 @@ ru:
     update_requests: обновить-запросы
     users: пользователь
     widget: 
+    widget-handbook-germany: 
+    widget-hg: 
+    widget-start-with-a-friend: 
+    widget-swaf: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

@@ -29,14 +29,6 @@
           .Offer-taxonomy
             h4.Offer-taxonomy__headline = t '.what.offertaxonomy.heading'
             ul.Offer-taxonomy__list
-              - @offer.categories.each do |cat|
-                li.Offer-taxonomy__listitem
-                  - explanation_text = cat.try("explanations_#{locale}") == nil ? cat.explanations_en : cat.send("explanations_#{locale}")
-                  - if explanation_text != nil && explanation_text != ""
-                    dfn.JS-tooltip.JS-tooltip--from-title title=explanation_text
-                      = cat.send("name_#{locale}") || cat.name_en
-                  - else
-                    = cat.send("name_#{locale}") || cat.name_en
               - @offer.tags.each do |tag|
                 li.Offer-taxonomy__listitem
                   - explanation_text = tag.try("explanations_#{locale}") == nil ? tag.explanations_en : tag.send("explanations_#{locale}")
@@ -142,5 +134,3 @@
   / - content_for :view_specific_scripts do
   /   = javascript_include_tag "gmaps_search_results.js"
   / prepare modal
-- if @no_cookie
-  = render 'contacts/popup', contact: @contact

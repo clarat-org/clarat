@@ -5,8 +5,8 @@
 // ---------------------------------------------------------------
 
 .JS-Geolocation__prompt {
-  @extend %clarat_rounding_start;
-  @extend %clarat_rounding_end;
+  @include clarat_rounding_start;
+  @include clarat_rounding_end;
   position: absolute;
   bottom: 55px;
   z-index: 400;
@@ -43,10 +43,10 @@
   &.JS-Geolocation__display:disabled {
     background: repeating-linear-gradient(
                     45deg,
-                    rgba($brand_orange, .15),
-                    rgba($brand_orange, .15) 10px,
-                    rgba($brand_orange, .05) 10px,
-                    rgba($brand_orange, .05) 20px
+                    rgba($brand_orange, .1),
+                    rgba($brand_orange, .1) 10px,
+                    rgba($brand_orange, .0) 10px,
+                    rgba($brand_orange, .0) 20px
     ), $brand_white;
     font-style: italic;
   }

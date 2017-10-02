@@ -10,7 +10,7 @@
 .popup_content {
   display: none; // will be made visible by javascript
 
-  @extend %clarat_rounding;
+  @include clarat_rounding;
   position: relative;
   padding: 30px;
   background: white;
@@ -38,22 +38,6 @@
 
 #beta_banner {
 	display: none;
-}
-
-#popup {
-  width: 800px;
-
-  p {
-    &.footer {
-      font-size: 0.7em;
-    }
-  }
-
-  input {
-    margin: 10px 0;
-    width: 100%;
-    padding: 0.5em;
-  }
 }
 
 #unavailable_location_overlay, #more_information_overlay {

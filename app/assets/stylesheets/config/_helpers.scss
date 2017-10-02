@@ -4,7 +4,7 @@
 //
 // ---------------------------------------------------------------
 
-%clearfix {
+@mixin clearfix {
   zoom:1;
 
   &:before, &:after {
@@ -19,14 +19,14 @@
   }
 }
 
-%hide_text {
+@mixin hide_text {
   color: transparent;
   text-shadow: none;
   font: 0/0 a;
 }
 
 
-%visually-hidden {
+@mixin visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -37,14 +37,14 @@
   width: 1px;
 }
 
-%clarat_rounding {
+@mixin clarat_rounding {
   border-radius: $border_radius 0;
 }
 
-%clarat_rounding_start {
+@mixin clarat_rounding_start {
   border-top-left-radius: $border_radius;
 }
 
-%clarat_rounding_end {
-  border-bottom-right-radius: $border_radius;
+@mixin clarat_rounding_end {
+  /*border-bottom-right-radius: $border_radius;*/
 }

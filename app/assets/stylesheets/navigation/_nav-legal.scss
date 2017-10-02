@@ -5,11 +5,9 @@
 // ---------------------------------------------------------------
 
 .nav-legal {
-  @extend %clearfix;
-  padding: 30px 0;
 
   html[dir="rtl"] & {
-    float: right;
+    float: left;
   }
 }
 
@@ -19,8 +17,7 @@
 
 .nav-legal__listitem {
   float: left;
-  font-size: 12px;
-  margin-left: 25px;
+  margin-left: 15px;
   position: relative;
 
   a {
@@ -32,20 +29,8 @@
     }
   }
 
-  &:before {
-    @extend %roboto_bold;
-    content: '\00B7';
-    position: absolute;
-    left: -14px;
-  }
-
   &:first-child {
     margin-left: 0;
-
-    &:before {
-      content: '';
-      display: none;
-    }
   }
 
 }

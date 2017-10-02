@@ -1,10 +1,10 @@
 basic:
   id: 1
   name: basicOfferName
+  slug: basicOfferSlug
   description: basicOfferDescription
   old_next_steps: basicOfferNextSteps
   encounter: personal
-  expires_at: 9999-01-01
   aasm_state: approved
   created_by: 1
   approved_by: 2
@@ -16,3 +16,5 @@ basic:
   logic_version_id: 1
   contact_people: contact_one
   slug: basic-slug
+  created_at: 9999-01-01
+  updated_at: 9999-01-01

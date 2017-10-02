@@ -5,28 +5,29 @@
 // ---------------------------------------------------------------
 
 .newsletter-subscribe {
-  margin-top: 22px;
 
   div {
     display: inline-block;
   }
 
   label[for="subscription_email"] {
-    @extend %visually-hidden;
+    @include visually-hidden;
   }
 
 }
 
 .newsletter-subscribe__input,
 .newsletter-subscribe__submit {
-  min-height: 32px;
+  min-height: 40px;
 }
 
 input.newsletter-subscribe__input {
-  @extend %clarat_rounding_start;
+  @include clarat_rounding_start;
+  webkit-appearance: none;
+  border-radius: 0 !important; // for iOS
   background: $brand_white;
-  width: 230px;
-  margin-right: 4px;
+  width: 200px;
+  margin-right: 10px;
   padding: 0 10px;
 
   html[dir="rtl"] & {
@@ -36,8 +37,14 @@ input.newsletter-subscribe__input {
 
 .newsletter-subscribe__submit {
   padding: 0 15px;
+  font-size: 14px;
 
   html[dir="rtl"] & {
-    @extend %clarat_rounding_start;
+    @include clarat_rounding_start;
+  }
+
+  body.template--pages-section_choice[data-section="refugees"] &,
+  body.template--pages-section_choice[data-section="family"] & {
+    background-color: $brand_brown;
   }
 }

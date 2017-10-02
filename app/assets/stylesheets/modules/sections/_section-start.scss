@@ -10,7 +10,7 @@
   margin-bottom: 68px;
 
   &:after {
-    @extend %clarat_rounding_end;
+    @include clarat_rounding_end;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -28,8 +28,8 @@
 }
 
 .section-start__headline {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   position: relative;
   margin-bottom: 0;
   min-height: 45px;
@@ -53,7 +53,7 @@
 }
 
 .section-start__body {
-  @extend %clarat_rounding_end;
+  @include clarat_rounding_end;
   padding: 26px 30px 52px;
   min-height: 320px;
   background: $brand_beige;

@@ -1,0 +1,70 @@
+.Mission {
+}
+
+.Mission__stage {
+  width: 100%;
+  height: 380px;
+  background: image-url('mission--1.jpg') no-repeat left center;
+  background-size: 60% auto;
+  display: flex;
+  justify-content: flex-end;
+
+  [dir="rtl"] & {
+    background-position: right center;
+  }
+}
+
+.Mission__statement {
+  position: relative;
+  height: 380px;
+  background: #F4B528;
+  width: 48%;
+  margin-left: 100px;
+  padding: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+
+  [dir="rtl"] & {
+    margin-left: 0;
+    margin-right: 100px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 0;
+    line-height: 0;
+    border-top: 190px solid #F4B528;
+    border-right: 0 solid transparent;
+    border-bottom: 190px solid #F4B528;
+    border-left: 75px solid transparent;
+
+    [dir="rtl"] & {
+      left: auto;
+      right: -75px;
+      border-right: 75px solid transparent;
+      border-left: 0 solid transparent;
+    }
+  }
+}
+
+.Mission__statement,
+.Mission__headline {
+  @include roboto_slabbold;
+  font-size: 50px;
+}
+
+.Mission__headline {
+  font-size: 50px;
+  margin-bottom: .5em;
+}
+
+.Mission__statement {
+  font-size: 35px;
+}

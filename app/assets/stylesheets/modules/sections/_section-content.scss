@@ -23,7 +23,7 @@
 // Boxes and their sub-elements
 
 .section-content {
-  @extend %clarat_rounding_start;
+  @include clarat_rounding_start;
   margin-bottom: 30px;
   width: 100%;
   background: $brand_beige;
@@ -38,8 +38,8 @@
 }
 
 .section-content__title {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   margin-bottom: 0;
   padding: 7px 15px;
   background: $brand_yellow;
@@ -127,8 +127,8 @@
 }
 
 .offer-contribute {
-  @extend %clarat_rounding_end;
-  @extend %roboto_regular;
+  @include clarat_rounding_end;
+  @include roboto_regular;
   text-align: left;
   background: transparent;
   color: $brand_brown;

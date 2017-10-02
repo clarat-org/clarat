@@ -1,68 +1,21 @@
 footer.footer-main
-  section.footer-main__firstrow
-    .wrapper-inner
-      .footer-main__subscribe
-        = render 'subscriptions/shared/new', subscription: subscription
-
-        / ToDo: Temporarily disable Social Media buttons
-        / - cache 'footer_links_1' do
-
-        /   .Social-media
-        /     = link_to t('.gplus.anchor'),
-        /               t('.gplus.href'),
-        /               target: '_blank',
-        /               class: 'Social-media__item Social-media__item--googleplus'
-        /     = link_to t('.twitter.anchor'),
-        /               t('.twitter.href'),
-        /               target: '_blank',
-        /               class: 'Social-media__item Social-media__item--twitter'
-        /     = link_to t('.fb.anchor'),
-        /               t('.fb.href'),
-        /               target: '_blank',
-        /               class: 'Social-media__item Social-media__item--facebook'
-
-      .footer-main__about
-        .mascot.mascot--footer
-        nav.nav-site
-          ul.nav-site__list
-            li.nav-site__listitem
-              = link_to t('.blog'), 'https://plus.clarat.org/'
-            li.nav-site__listitem.nav-site__listitem--facebook-refugees
-              = link_to t('.facebook_refugees'), 'https://www.facebook.com/claratrefugees/'
-            li.nav-site__listitem.nav-site__listitem--facebook-family
-              = link_to t('.facebook_family'), 'https://www.facebook.com/clarat-family-1067489519960102/'
-
-
-        nav.nav-site
-          ul.nav-site__list
-            li.nav-site__listitem
-              = link_to t('.about'), about_path(section: current_section)
-            li.nav-site__listitem
-              = link_to t('.faq'), faq_path(section: current_section)
-            li.nav-site__listitem
-              = link_to t('.contact'),
-                        new_contact_path(section: current_section)
-
+  .footer-main__wrapper.wrapper-inner
+    .footer-main__subscribe
+      = render 'subscriptions/shared/new', subscription: subscription
+    ul.footer-main__facebook
+      li.footer-main__facebook-item.footer-main__facebook-item--refugees
+        = link_to t('.facebook_refugees'), 'https://www.facebook.com/claratrefugees/'
+      li.footer-main__facebook-item.footer-main__facebook-item--family
+        = link_to t('.facebook_family'), 'https://www.facebook.com/claratfamily/'
+    nav.nav-legal.footer-main__nav-legal
+      ul.nav-legal__list
+        li.nav-legal__listitem
+          = link_to t('.impressum'), impressum_path(section: current_section)
+        li.nav-legal__listitem
+          = link_to t('.tos'), agb_path(section: current_section)
+        li.nav-legal__listitem
+          = link_to t('.privacy'), privacy_path(section: current_section)
   - cache [current_section, 'footer_links_3', I18n.locale] do
 
-    section.footer-main__secondrow
-      .wrapper-inner
-        nav.nav-legal
-          ul.nav-legal__list
-            li.nav-legal__listitem
-              = link_to t('.impressum'),
-                        impressum_path(section: current_section)
-            li.nav-legal__listitem
-              = link_to t('.tos'), agb_path(section: current_section)
-            li.nav-legal__listitem
-              = link_to t('.privacy'), privacy_path(section: current_section)
-            / li.nav-legal__listitem
-            /   / TODO: Refactor or remove after translation testing
-            /   #google_translate_element.JS-tooltip
-            /   javascript:
-            /     function googleTranslateElementInit() {
-            /       new google.translate.TranslateElement({pageLanguage: 'de', includedLanguages: 'ar,en,fr,pl,ru,tr', gaTrack: true, gaId: 'UA-59626864-1'}, 'google_translate_element');
-            /     }
-            /   script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"
 
 #qtip_welcome_overlay

@@ -1,0 +1,43 @@
+.Explainaition-area {
+  display: none;
+  //display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+.Explainaition-area__video {
+  position: relative;
+  padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio*/
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Explainaition-area__wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+}
+
+.Explainaition-area__headline {
+  @include roboto_slabbold;
+  font-size: 40px;
+  margin-bottom: .5em;
+
+  [data-section="family"] & {
+    color: $brand_core_family;
+  }
+
+  [data-section="refugees"] & {
+    color: $brand_core_refugees;
+  }
+}

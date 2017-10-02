@@ -10,7 +10,7 @@
   text-align: center;
 
   a {
-    @extend %roboto_bold;
+    @include roboto_bold;
     color: inherit;
   }
 

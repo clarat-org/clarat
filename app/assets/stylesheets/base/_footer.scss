@@ -5,33 +5,101 @@
 // ---------------------------------------------------------------
 
 .footer-main {
-  .offcanvas-active & {
+  padding: 20px 0;
+  position: relative;
+  margin-top: 2em;
+  background-color: $brand_yellow;
+}
+
+.footer-main__wrapper {
+
+
+
+}
+
+.footer-main__subscribe {
+  float: left;
+}
+
+.footer-main__facebook {
+  display: inline-block;
+
+  html[dir="rtl"] & {
+   margin-right: 20px;
+  }
+}
+
+.footer-main__nav-legal {
+  text-align: right;
+  float: right;
+  min-height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.footer-main__facebook-item {
+  background: image-url('ico_facebook.svg') no-repeat left center;
+  background-size: 30px 30px;
+  min-height: 40px;
+  line-height: 40px;
+  padding-left: 35px;
+  margin-left: 20px;
+  list-style: none;
+  float: left;
+
+  a {
+    @include roboto_bold;
+    text-decoration: none;
+    color: $brand_brown;
+  }
+}
+
+.footer-main__facebook-item--family {
+  [data-section="refugees"] & {
     display: none;
   }
 }
 
-.footer-main,
-.footer-main__firstrow,
-.footer-main__secondrow {
-  @extend %clearfix;
+.template--pages-section_choice[data-section="family"] .footer-main__facebook-item--family,
+.template--pages-section_choice[data-section="refugees"] .footer-main__facebook-item--family {
+  display: inline-block;
 }
 
-.footer-main__firstrow {
-  height: 120px;
-  margin-top: 35px;
-  background: $brand_yellow;
+.footer-main__facebook-item--refugees {
+  [data-section="family"] & {
+    display: none;
+  }
 }
 
-.footer-main__secondrow {
-  background: $brand_beige;
-}
-
-.footer-main__subscribe,
-.footer-main__about {
-  @extend %layout-col-50;
-}
-
-.footer-main__about {
-  @extend %layout-col-last;
-  position: relative;
-}
+//
+//.footer-main {
+//  .offcanvas-active & {
+//    display: none;
+//  }
+//}
+//
+//.footer-main,
+//.footer-main__firstrow,
+//.footer-main__secondrow {
+//  @include clearfix;
+//}
+//
+//.footer-main__firstrow {
+//  height: 120px;
+//  margin-top: 35px;
+//  background: $brand_yellow;
+//}
+//
+//.footer-main__secondrow {
+//  background: $brand_beige;
+//}
+//
+//.footer-main__subscribe,
+//.footer-main__about {
+//  @extend %layout-col-50;
+//}
+//
+//.footer-main__about {
+//  @extend %layout-col-last;
+//  position: relative;
+//}

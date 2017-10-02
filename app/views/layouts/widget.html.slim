@@ -53,7 +53,13 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
     = render '/layouts/partials/javascript_config'
     = csrf_meta_tags
 
-  body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
+  body style="overflow:hidden;" class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
       #yield-wrap
         = yield
+    = render 'layouts/partials/general_assets'
+
+javascript:
+  $('document').ready(function(){
+    $('.JS-Cookie-warning').remove()
+  });

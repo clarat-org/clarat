@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .nav-sections {
-  @extend %clearfix;
+  @include clearfix;
   position: relative;
   z-index: 30;
   margin: 0 auto;
@@ -23,7 +23,7 @@
 }
 
 .nav-sections__headline {
-  @extend %roboto_bold;
+  @include roboto_bold;
   margin-bottom: 10px;
   text-align: center;
   font-weight: 400;
@@ -31,7 +31,7 @@
 }
 
 .nav-sections__listitem {
-  @extend %roboto_bold;
+  @include roboto_bold;
   position: relative;
   float: left;
   width: 115px;
@@ -133,7 +133,6 @@ $dimension: 115px;
   right: 0;
   background: $brand-orange;
   color: $brand_white;
-  border-radius: 50%;
   display: block;
   width: 30px;
   height: 30px;

@@ -23,7 +23,7 @@
   }
 
   .section-content--speaking {
-    @extend %clearfix;
+    @include clearfix;
     padding: 0;
 
     .section-content__title {
@@ -32,7 +32,7 @@
   }
 
   .section-content--more-info {
-    @extend %clearfix;
+    @include clearfix;
 
     .section-content__title {
       background: $brand_green;
@@ -40,7 +40,7 @@
   }
 
   .section-content__tag-list {
-    @extend %clearfix;
+    @include clearfix;
     list-style: none;
     margin: 4px 15px 10px;
 

@@ -10,15 +10,6 @@ module SearchFormHelper
     "this.setCustomValidity('#{j(content)}')"
   end
 
-  def geo_location params, geocoded
-    if params[:city]
-      file = YAML.load_file('config/city_locations.yml')
-      file[params[:city]]
-    else
-      geocoded
-    end
-  end
-
   def location params, search_location
     if params[:city]
       file = YAML.load_file('config/city_names.yml')

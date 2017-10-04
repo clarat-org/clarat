@@ -59,7 +59,7 @@ describe PagesController do
 
   describe "GET 'widget-handbook-germany-berlin'" do
     it 'should work' do
-      get :widget_hg, params: { locale: 'de', section: 'refugees' }
+      get :widget_hg, params: { locale: 'de', section: 'refugees', city: 'hamburg' }
       assert_response :success
     end
   end

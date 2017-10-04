@@ -20,7 +20,6 @@ FactoryGirl.define do
     # every offer should have a creator!
     created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
 
-
     # associations
     transient do
       website_count { rand(0..3) }
@@ -36,11 +35,9 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       # SplitBase => Division(s) => Organization(s)
-      organizations = evaluator.organizations || [Organization.all.sample]
+      #organizations = evaluator.organizations || [Organization.all.sample]
       unless offer.split_base
-        offer.split_base =
-          FactoryGirl.create :split_base, section: evaluator.section,
-                                          organizations: organizations
+        offer.split_base = SplitBase.last || FactoryGirl.create(:split_base, section: evaluator.section)
       end
       organization = offer.organizations[0]
       # location

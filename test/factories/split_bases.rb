@@ -27,12 +27,9 @@ FactoryGirl.define do
             else
               orga.divisions.sample
             end
-          unless division
-            division =
-              FactoryGirl.create(
-                :division, division_options.merge(organization: orga)
-              )
-          end
+          division ||= FactoryGirl.create(
+            :division, division_options.merge(organization: orga)
+          )
           split_base.divisions.push << division
         end
       else

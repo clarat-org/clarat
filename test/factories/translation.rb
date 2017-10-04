@@ -11,7 +11,6 @@ FactoryGirl.define do
       description 'default offer_translation description'
     end
 
-
     factory :organization_translation, class: 'OrganizationTranslation' do
       organization
       description 'default organization_translation description'

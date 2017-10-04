@@ -31,8 +31,6 @@ Clarat::Application.routes.draw do
 
       # Email overviews
       get 'emails/:id/offers' => 'emails#offers_index', as: 'emails_offers'
-      get 'widget-start-with-a-friend' => 'pages#widget_swaf', as: 'home'
-      get 'widget-handbook-germany-:city' => 'pages#widget_hg', as: 'home'
     end
 
     scope 'refugees' do

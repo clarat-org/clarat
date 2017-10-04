@@ -18,7 +18,7 @@ class OffersController < ApplicationController
 
   def show
     @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find_by(slug: params[:id])
-    return redirect_to '/404' unless @offer
+    raise ActiveRecord::RecordNotFound unless @offer
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer

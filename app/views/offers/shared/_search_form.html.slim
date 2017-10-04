@@ -27,7 +27,7 @@ div.main-search
         = f.input :generated_geolocation, as: :hidden,
                                           input_html: { \
                                             class: 'JS-Geolocation__input',
-                                            value: search_form.generated_geolocation }
+                                            value: geo_location(params, search_form.generated_geolocation) }
         / = f.input :geolocation, as: :hidden
         = f.input :category, as: :hidden
         = f.input :exact_location, as: :hidden

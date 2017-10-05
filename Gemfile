@@ -55,7 +55,7 @@ gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
 gem 'haml'
-gem 'hamlbars', '~> 2.1'
+
 gem 'handlebars_assets'
 gem 'hogan_assets'
 

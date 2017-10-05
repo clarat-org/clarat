@@ -630,11 +630,6 @@ GEM
     haml (5.0.3)
       temple (>= 0.8.0)
       tilt
-    hamlbars (2.1.1)
-      execjs (>= 1.2)
-      haml
-      sprockets (>= 2.0)
-      tilt
     handlebars_assets (0.23.2)
       execjs (~> 2.0)
       sprockets (>= 2.0.0)
@@ -1032,7 +1027,6 @@ DEPENDENCIES
   formtastic
   gibbon (~> 1.2.0)
   haml
-  hamlbars (~> 2.1)
   handlebars_assets
   heroku-deflater
   hirb

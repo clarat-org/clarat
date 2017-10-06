@@ -5,7 +5,7 @@ Clarat.Flash =
 
   createFlash: (type, message)->
     $('#Flash-messages').append(
-      HoganTemplates['flash_message'].render
+      HandlebarsTemplates['flash_message'].render
         type: type
         message: message
     )

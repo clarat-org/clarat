@@ -1,6 +1,6 @@
 cookieWarning = ->
   if readCookie('userAcceptsCookies') isnt 'true'
-    $('body').append HoganTemplates['cookie_warning'].render
+    $('body').append HandlebarsTemplates['cookie_warning'].render
       content: I18n.t 'js.cookie_warning_html'
 
     $('body').addClass 'hasCookieWarning'

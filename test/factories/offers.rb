@@ -35,7 +35,7 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       # SplitBase => Division(s) => Organization(s)
-      #organizations = evaluator.organizations || [Organization.all.sample]
+      # organizations = evaluator.organizations || [Organization.all.sample]
       unless offer.split_base
         offer.split_base = SplitBase.last || FactoryGirl.create(:split_base, section: evaluator.section)
       end

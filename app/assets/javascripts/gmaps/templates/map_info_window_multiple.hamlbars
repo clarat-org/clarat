@@ -1,6 +1,0 @@
-%h3.Map-infowindow__headline
-  = hb 'title'
-= hb 'text'
-%br
-%a{ href: '{{ url }}' }
-  = hb 'anchor'

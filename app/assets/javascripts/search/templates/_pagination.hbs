@@ -1,0 +1,19 @@
+<nav class='pagination'>
+  {{#if prev_page}}<span class='prev'>
+    <a class='JS-PaginationLink' data-page='{{ prev_page }}' href='#'>
+      {{backward_text}}
+    </a>
+  </span>{{/if}}
+  {{#each pages}}<span class='page {{class}}'>
+    {{#if link}}<a class='JS-PaginationLink' data-page='{{ text }}' href='#'>
+      {{text}}
+    </a>
+    {{else}}
+    {{text}}{{/if}}
+  </span>{{/each}}
+  {{#if next_page}}<span class='next'>
+    <a class='JS-PaginationLink' data-page='{{ next_page }}' href='#'>
+      {{forward_text}}
+    </a>
+  </span>{{/if}}
+</nav>

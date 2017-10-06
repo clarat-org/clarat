@@ -1,0 +1,19 @@
+<fieldset class='filter-form__fieldset sort_order'>
+  <legend class='filter-form__fieldset__headline'>
+    {{@root.headline_sort_order}}
+  </legend>
+  <div class='filter-form__fieldset__wrapper'>
+    <label class='result-order__label sr-only' for='sort_order'>
+      {{@root.headline_sort_order}}
+    </label>
+    <select class='JS-SortOrderSelector result-order__select filter-form__select' id='sort_order' name='sort_order'>
+      {{#each sort_order}}{{#if selected}}<option class='sort_order_{{identifier}}' selected='selected' value='{{identifier}}'>
+        {{display_name}}
+      </option>
+      {{else}}
+      <option class='sort_order_{{identifier}}' value='{{identifier}}'>
+        {{display_name}}
+      </option>{{/if}}{{/each}}
+    </select>
+  </div>
+</fieldset>

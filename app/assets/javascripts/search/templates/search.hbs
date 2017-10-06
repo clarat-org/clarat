@@ -1,0 +1,25 @@
+<main class='content-main content-main--offers-index'>
+  <ul class='nav-off-canvas-trigger'>
+    <li class='nav-off-canvas-trigger__item'>
+      <a class='main-search__advanced-filter--within-content-main off-canvas-container__trigger' data-target='#tab1'>
+        <i aria-hidden='true' class='fa fa-filter nav-off-canvas-trigger__icon'></i>
+        <span class='nav-off-canvas-trigger__label'>{{tab_filter}}</span>
+      </a>
+    </li>
+    <li class='nav-off-canvas-trigger__item'>
+      <a class='main-search__advanced-filter--within-content-main off-canvas-container__trigger' data-target='#tab2'>
+        <i aria-hidden='true' class='fa fa-map-marker nav-off-canvas-trigger__icon'></i>
+        <span class='nav-off-canvas-trigger__label'>{{tab_map}}</span>
+      </a>
+    </li>
+  </ul>
+  {{#with filters}}{{> _advanced_search}}{{/with}}
+  <div class='Listing-results'>
+    <!-- Will contain search_results later -->
+  </div>
+  <!-- prepare ajax spinner -->
+  <i class='fa fa-spin fa-circle-o-notch Ajax__spinner'></i>
+</main>
+<aside class='aside-standard'>
+  {{> _search_map}}
+</aside>

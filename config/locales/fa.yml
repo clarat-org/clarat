@@ -1021,8 +1021,8 @@ fa:
         claim:
           family: کمک برای کودکان،جوانان و خانواده ها
         hero:
-          button_label: 
-          logline: 
+          button_label: کسب اطلاعات بیشتر
+          logline: کمک مناسب خود را پیدا کن-با توضیح کامل و قابل مشاهده به آسانی
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
@@ -1440,16 +1440,16 @@ fa:
       title: Datenschutz
     section_choice:
       cta:
-        button: 
+        button: جستجوی کمک در حال حاضر
         family:
-          text: 
+          text: در صفحه clarat family خانواده‌ها در آلمان اطلاعات کمکی در نزدیکی خود پیدا می کنند.در زمینه مشکلاتی مانند:خانواده،بهداشت،آموزش و مشاغل و خشونت و جرایم
         refugees:
-          text: 
+          text: در صفحه clarat refugees پناهجویانی که به آلمان فرار کرده‌اند، کمک پیدا می کنند.در زمینه مشکلاتی مانند:پناهندگی و حقوق آن،خانواده،بهداشت،آموزش و مشاغل و خشونت و جرایم
       meta_description: clarat.org نشان می دهد که چه کمکهایی در آلمان وجود دارد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان. بصورت آنلاین٬ آسان و در نزدیکی آنها.
       meta_title: clarat شفاف سازی می کند | clarat
       mission:
-        headline: 
-        text: 
+        headline: وظیفه ما
+        text: کمکهایی را که در آلمان وجود دارند، قابل مشاهده کنند و به راحتی توضیح بدهند.
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:
       address:
@@ -1510,6 +1510,9 @@ fa:
           email: 
           name: 
         show:
+          email: 
+          name: 
+        show_offer:
           email: 
           name: 
     placeholders:

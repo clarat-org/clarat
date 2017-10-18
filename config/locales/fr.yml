@@ -1545,6 +1545,9 @@ fr:
         show:
           email: 
           name: 
+        show_offer:
+          email: 
+          name: 
     placeholders:
       search_form:
         home:

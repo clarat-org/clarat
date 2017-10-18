@@ -9,8 +9,6 @@ class OpeningHash < Hash
     offer.openings.order('sort_value').find_each do |opening|
       self[opening.day.to_sym] << opening.display_string
     end
-
-    self
   end
 
   # Iterate over every day that has openings

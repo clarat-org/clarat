@@ -8,7 +8,7 @@ class Opening < ActiveRecord::Base
   # The way an opening time frame is displayed to the user in the front end.
   def display_string
     if close
-      close_string = I18n.l(close.in_time_zone, format:
+      close_string = I18n.l(close, format:
         I18n.t('opening.display_string.time_format_close'))
       # midnight exception for de format. Can be expanded to other languages
       # by checking close.hour and close.minutes and adding content in locales
@@ -27,7 +27,7 @@ class Opening < ActiveRecord::Base
     I18n.t(
       'opening.display_string.time_frame',
       open: I18n.l(
-        open.in_time_zone,
+        open,
         format: I18n.t('opening.display_string.time_format_open')
       ),
       close: close_string

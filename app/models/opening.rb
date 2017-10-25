@@ -12,7 +12,7 @@ class Opening < ApplicationRecord
       close_string = close
       # midnight exception for de format. Can be expanded to other languages
       # by checking close.hour and close.minutes and adding content in locales
-      if close_string == '00:00 Uhr'
+      if close_string == '00:00'
         close_string = I18n.t('opening.display_string.midnight_exception')
       end
       time_frame(open, close_string)

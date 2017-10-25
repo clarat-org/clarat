@@ -7,8 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 18bb0e43f2994677d7ac04082be21477f25dd758
-  branch: feature/975-rails-5-upgrade
+  revision: 048d7c4e8a56a6b5eac82b88a950bdf4b97aa42c
   specs:
     clarat_base (0.1.4)
       aasm
@@ -33,7 +32,7 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    aasm (4.12.2)
+    aasm (4.12.3)
       concurrent-ruby (~> 1.0)
     actioncable (5.1.4)
       actionpack (= 5.1.4)
@@ -625,7 +624,7 @@ GEM
       httparty
       multi_json (>= 1.9.0)
     gli (2.17.0)
-    globalid (0.4.0)
+    globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.3)
       temple (>= 0.8.0)
@@ -857,7 +856,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
-    rake (12.1.0)
+    rake (12.2.1)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)

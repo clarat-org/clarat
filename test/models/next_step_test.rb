@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe NextStep do
@@ -10,7 +11,7 @@ describe NextStep do
     describe 'in_current_locale' do
       it 'should find all that are translated to the current locale' do
         former_locales = I18n.available_locales
-        I18n.available_locales = [:de, :en, :fr, :pl]
+        I18n.available_locales = %i[de en fr pl]
 
         NextStep.create text_de: 'foo', text_fr: nil,
                         text_en: 'bar', text_pl: ''

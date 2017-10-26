@@ -1,0 +1,74 @@
+<div class='filter-form' id='advanced_search'>
+  {{> _sort_order}}
+  <div class='filter-form__fieldset-wrapper'>
+    <fieldset class='filter-form__fieldset' id='target_audience'>
+      <div class='filter-form__container'>
+        <legend class='filter-form__fieldset__headline'>
+          {{@root.headline_target_audience}}
+        </legend>
+        <select class='JS-TargetAudienceSelector filter-form__select filter-form--resetable' id='target_audience_select' name='target_audience'>
+          <option id='target_audience_any' selected='selected' value='any'>
+            {{@root.option_any}}
+          </option>
+          {{#each target_audience}}<option id='target_audience_{{identifier}}' value='{{identifier}}'>
+            {{display_name}}
+          </option>{{/each}}
+        </select>
+      </div>
+    </fieldset>
+    <fieldset class='filter-form__fieldset' id='exclusive_gender'>
+      <div class='filter-form__container'>
+        <legend class='filter-form__fieldset__headline'>
+          {{@root.headline_gender}}
+        </legend>
+        <select class='JS-ExclusiveGenderSelector filter-form__select filter-form--resetable' id='exclusive_gender_select' name='exclusive_gender'>
+          <option id='exclusive_gender_any' selected='selected' value='any'>
+            {{@root.option_any}}
+          </option>
+          {{#each exclusive_gender}}<option id='exclusive_gender_{{identifier}}' value='{{identifier}}'>
+            {{display_name}}
+          </option>{{/each}}
+        </select>
+      </div>
+    </fieldset>
+    <fieldset class='filter-form__fieldset' id='language'>
+      <div class='filter-form__container'>
+        <legend class='filter-form__fieldset__headline'>
+          {{@root.headline_language}}
+        </legend>
+        <label class='sr-only' for='language_select'>
+          {{@root.headline_language}}
+        </label>
+        <select class='JS-LanguageSelector filter-form__select filter-form--resetable' id='language_select' name='language'>
+          <option id='language_any' selected='selected' value='any'>
+            {{@root.option_any}}
+          </option>
+          {{#each language}}<option id='language_{{identifier}}' value='{{identifier}}'>
+            {{display_name}}
+          </option>{{/each}}
+        </select>
+      </div>
+    </fieldset>
+    <fieldset class='filter-form__fieldset' id='residency_status'>
+      <div class='filter-form__container'>
+        <legend class='filter-form__fieldset__headline'>
+          {{@root.headline_residency_status}}
+        </legend>
+        <label class='sr-only' for='residency_status_select'>
+          {{@root.headline_residency_status}}
+        </label>
+        <select class='JS-ResidencyStatusSelector filter-form__select filter-form--resetable' id='residency_status_select' name='residency_status'>
+          <option id='residency_status_any' selected='selected' value='any'>
+            {{@root.option_any}}
+          </option>
+          {{#each residency_status}}<option id='residency_status_{{identifier}}' value='{{identifier}}'>
+            {{display_name}}
+          </option>{{/each}}
+        </select>
+      </div>
+    </fieldset>
+    <button class='JS-ResetFiltersButton filter-form__reset-btn' id='reset_filters_button'>
+      {{@root.reset_label}}
+    </button>
+  </div>
+</div>

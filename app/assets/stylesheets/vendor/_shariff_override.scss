@@ -31,13 +31,13 @@
   }
 
   .shariff__label {
-    @extend %roboto_bold;
+    @include roboto_bold;
     text-transform: uppercase;
     font-size: 13px;
   }
 
   .shariff-button {
-    @extend %clearfix;
+    @include clearfix;
     padding: 7px;
     width: 100px;
     border: 1px solid #fff;

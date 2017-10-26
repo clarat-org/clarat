@@ -183,9 +183,9 @@ class Clarat.Search.Presenter extends ActiveScript.Presenter
   handleFilterReset: (event) =>
     # reset selects to option = 'any' (default)..
     results = $('.filter-form--resetable').map ->
-      if $(this).context.name && $(this).context.name.length
-        $(this).context.value = 'any'
-        return $(this).context.name
+      if $(this)[0].name && $(this)[0].name.length
+        $(this)[0].value = 'any'
+        return $(this)[0].name
     # .. update all attributes...
     for field_name in results
       @model.updateAttributes "#{field_name}": ''

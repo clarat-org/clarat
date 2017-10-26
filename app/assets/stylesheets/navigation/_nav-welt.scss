@@ -28,7 +28,7 @@
   float: left;
 
   a {
-    @extend %roboto_black;
+    @include roboto_black;
     display: inline-block;
     padding: 7px 19px;
     color: $brand_white;
@@ -49,7 +49,7 @@
     }
 
     &#clarat--family {
-      @extend %clarat_rounding_start;
+      @include clarat_rounding_start;
     }
 
     body.refugees & {

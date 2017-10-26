@@ -16,5 +16,5 @@
 }
 
 .Listing-organizations__link {
-  @extend %roboto_bold;
+  @include roboto_bold;
 }

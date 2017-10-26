@@ -809,6 +809,7 @@ pl:
         residency_status: 
         sort: Sortuj według
         target_audience: Pomoc dla kogo?
+        main: 
       option_any: obojętne
       pagination:
         back: Wróć
@@ -1589,6 +1590,9 @@ pl:
           email: 
           name: 
         show:
+          email: 
+          name: 
+        show_offer:
           email: 
           name: 
     placeholders:

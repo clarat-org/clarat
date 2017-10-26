@@ -26,6 +26,6 @@
 #      $body.toggleClass "has-enlarged-header"
 #
 #
-#$(document).on 'ready', ->
+#$(document).ready ->
 #  new Clarat.ToogleLocationInputMobile.Presenter
 

@@ -12,6 +12,6 @@ class Clarat.SoftJump.Presenter extends ActiveScript.Presenter
     return
 
 
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.SoftJump.Presenter
 

@@ -23,7 +23,7 @@
 }
 
 .map__button--enlarge {
-  @extend %small_button_style;
+  @include small_button_style;
   margin-top: 10px;
   word-break: break-all;
 }

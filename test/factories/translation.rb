@@ -1,11 +1,12 @@
 # frozen_string_literal: true
+
 FactoryGirl.define do
   factory :translation do
     locale 'de'
     source 'GoogleTranslate'
 
     factory :offer_translation, class: 'OfferTranslation' do
-      offer
+      offer_id { Offer.last.id || FactoryGirl.create(:offer).id }
       name 'default offer_translation name'
       description 'default offer_translation description'
     end

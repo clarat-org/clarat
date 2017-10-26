@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Contact and report form
 class ContactsController < ApplicationController
   respond_to :html, :js
@@ -9,7 +10,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new params.for(Contact).refine
+    @contact = Contact.new contact_params
     if @contact.save
       respond_to do |format|
         format.html do
@@ -25,5 +26,11 @@ class ContactsController < ApplicationController
   # just a forward action so that a GET to /kontakt works
   def index
     redirect_to :new_contact
+  end
+
+  private
+
+  def contact_params
+    params.require(:contact).permit(:email, :name, :message, :city, :url, :reporting)
   end
 end

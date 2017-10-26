@@ -3,7 +3,7 @@
 }
 
 .search-results-container__headline {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }
 
 .result-order {

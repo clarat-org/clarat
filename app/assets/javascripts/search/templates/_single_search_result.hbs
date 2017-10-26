@@ -1,0 +1,31 @@
+<li class='JS-trigger-marker Listing-results__listitem' id='result-offer-{{objectID}}'>
+  <h2 class='Listing-results__offer'>
+    <a href='{{@root.offers_path}}/{{slug}}' lang='{{lang}}'>
+      {{name}}
+    </a>
+  </h2>
+  <!-- TODO: Refactor and rename -->
+  <div class='Listing-results__offerinfo'>
+    <div class='Listing-results__stamp'>
+      {{current_stamp}}
+    </div>
+    {{#if location_visible}}<div class='Listing-results__meta Listing-results__meta--with-address'>
+      <h3 class='Listing-results__orga-display'>
+        {{#if location_name}}{{location_name}}
+        {{else}}
+        {{organization_display_name}}{{/if}}
+      </h3>
+      <div class='Listing-results__address' itemscope='' itemtype='http://schema.org/ContactPoint'>
+        <div itemscope='' itemtype='http://schema.org/PostalAddress'>
+          {{location_address}}
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <div class='Listing-results__meta'>
+      <h3 class='Listing-results__orga-display'>
+        {{organization_display_name}}
+      </h3>
+    </div>{{/if}}
+  </div>
+</li>

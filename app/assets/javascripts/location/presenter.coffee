@@ -92,7 +92,7 @@ class Clarat.Location.Presenter extends ActiveScript.Presenter
     @renderPrompt 'location_by_browser_waiting', I18n.t('js.geolocation.waiting')
     # Request Geolocation from browser
 
-    if navigator.geolocation && !@currentLocation
+    if navigator.geolocation
       # Timeout because the default timeout doesn't work in all browsers
       @geolocationTimeout =
         setTimeout(@handleBrowserGeolocationRequestError, 10000)

@@ -19,7 +19,3 @@ four:
 five:
   category_id: 5
   section_id: 2
-
-six:
-  category_id: 5
-  section_id: 1

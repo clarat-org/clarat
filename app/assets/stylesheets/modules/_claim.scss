@@ -16,8 +16,8 @@
 }
 
 .Claim__firstrow {
-  @extend %clarat_rounding;
-  @extend %roboto_bold;
+  @include clarat_rounding;
+  @include roboto_bold;
   display: inline-block;
   margin-bottom: 0;
   background: $brand_yellow;

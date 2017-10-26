@@ -18,11 +18,3 @@ sub2:
   name_de: 'sub1.2'
   name_en: 'sub1.2en'
   parent_id: 1
-main3:
-  id: 5
-  name_de: 'main3'
-  name_en: 'main3en'
-refugee1:
-  id: 6
-  name_de: 'refugee1'
-  parent_id: 2

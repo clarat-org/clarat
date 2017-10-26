@@ -74,40 +74,40 @@
   font-style: normal;
 }
 
-%roboto_regular {
+@mixin roboto_regular {
   font-family: 'roboto-regular', 'Roboto', sans-serif;
 }
 
-%roboto_light {
+@mixin roboto_light {
   font-family: 'roboto-light', 'Roboto', sans-serif;
   font-weight: 200;
 }
 
-%roboto_bold {
+@mixin roboto_bold {
   font-family: 'roboto-bold', 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-%roboto_slabregular {
+@mixin roboto_slabregular {
   font-family: 'roboto-slabregular', sans-serif;
   font-weight: 700;
 }
 
-%roboto_slabbold {
+@mixin roboto_slabbold {
   font-family: 'roboto-slabbold', sans-serif;
   font-weight: 700;
 }
 
-%roboto_italic {
+@mixin roboto_italic {
   font-family: 'roboto-italic', 'Roboto', sans-serif;
 }
 
-%roboto_black {
+@mixin roboto_black {
   font-family: 'roboto-black', 'Roboto', sans-serif;
 }
 
 body {
-  @extend  %roboto_regular;
+  @include roboto_regular;
   color: $font_color;
 }
 

@@ -1,5 +1,5 @@
 .top-bar {
-  @extend %clearfix;
+  @include clearfix;
   border-bottom: 2px solid transparent;
   background-color: white;
 
@@ -20,7 +20,7 @@
 }
 
 .top-bar__world-link {
-  @extend %roboto_bold;
+  @include roboto_bold;
   float: left;
   text-decoration: none;
   line-height: 48px;
@@ -121,7 +121,7 @@ $amount: 15%;
 }
 
 .top-bar__emphasis {
-  @extend %roboto_bold;
+  @include roboto_bold;
 }
 
 .top-bar__world-list-link--otherworld,

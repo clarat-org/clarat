@@ -761,6 +761,7 @@ fr:
         residency_status: 
         sort: Trier par
         target_audience: De l'aide pour qui?
+        main: 
       option_any: égal
       pagination:
         back: Retour
@@ -1543,6 +1544,9 @@ fr:
           email: 
           name: 
         show:
+          email: 
+          name: 
+        show_offer:
           email: 
           name: 
     placeholders:

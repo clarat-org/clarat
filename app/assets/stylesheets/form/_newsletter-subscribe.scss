@@ -11,7 +11,7 @@
   }
 
   label[for="subscription_email"] {
-    @extend %visually-hidden;
+    @include visually-hidden;
   }
 
 }
@@ -22,7 +22,7 @@
 }
 
 input.newsletter-subscribe__input {
-  @extend %clarat_rounding_start;
+  @include clarat_rounding_start;
   webkit-appearance: none;
   border-radius: 0 !important; // for iOS
   background: $brand_white;
@@ -40,7 +40,7 @@ input.newsletter-subscribe__input {
   font-size: 14px;
 
   html[dir="rtl"] & {
-    @extend %clarat_rounding_start;
+    @include clarat_rounding_start;
   }
 
   body.template--pages-section_choice[data-section="refugees"] &,

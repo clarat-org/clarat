@@ -33,3 +33,43 @@
     font-style: italic;
   }
 }
+
+@mixin small_button_style {
+  @include clarat_rounding_start;
+  @include clarat_rounding_end;
+  @include roboto_bold;
+  display: inline-block;
+  background-color: $brand_brown;
+  color: $brand_white;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-decoration: none;
+
+  body.refugees & {
+    background-color: $brand_core_refugees;
+  }
+
+  body.family & {
+    background-color: $brand_core_family;
+  }
+
+}
+
+/*@mixin clearfix {
+  zoom:1;
+
+  &:before, &:after {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}*/
+
+/*@mixin clarat_rounding_start {
+  border-top-left-radius: $border_radius;
+}*/

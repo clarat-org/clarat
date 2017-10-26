@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .Flash-message {
-  @extend %roboto_bold;
+  @include roboto_bold;
   @extend %Banner-style;
   position: fixed;
   top: 0;

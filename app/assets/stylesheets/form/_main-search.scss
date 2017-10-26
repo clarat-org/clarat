@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .main-search {
-  @extend %clarat_rounding_start;
+  @include clarat_rounding_start;
   float: right;
   width: 100%;
   height: 87px;
@@ -24,7 +24,7 @@
 
 
 #new_search_form {
-  @extend %clearfix;
+  @include clearfix;
   -js-display: flex;
   display: flex;
   padding: 20px 0;
@@ -43,7 +43,7 @@
   }
 
   label.string {
-    @extend %roboto_bold;
+    @include roboto_bold;
     position: absolute;
     bottom: 10px;
     left: 14px;
@@ -64,7 +64,7 @@
     }
 
     abbr[title="required"] {
-      @extend %visually-hidden;
+      @include visually-hidden;
     }
   }
 
@@ -181,13 +181,13 @@
 }
 
 #search_form_query {
-  @extend %clarat_rounding_start;
+  @include clarat_rounding_start;
   -webkit-border-bottom-left-radius: 0;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-top-right-radius: 0;
 
   html[dir="rtl"] & {
-    @extend %clarat_rounding_end;
+    @include clarat_rounding_end;
     border-top-left-radius: 0; // reset
     padding-right: 100px;
     margin-left: 10px;
@@ -196,11 +196,10 @@
 }
 
 .main-search__submit {
-  @extend %clarat_rounding_end;
 
   html[dir="rtl"] & {
     border-bottom-right-radius: 0; // reset
-    @extend %clarat_rounding_start;
+    @include clarat_rounding_start;
   }
 }
 

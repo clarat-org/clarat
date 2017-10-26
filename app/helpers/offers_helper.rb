@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module OffersHelper
   # put spaces in telephone number: 0303656558 -> 030 36 56 55 8
   def tel_format number
@@ -18,7 +19,7 @@ module OffersHelper
       children.any? &&
       children.map do |arr|
         arr.first.visible &&
-        arr.first.sections.pluck(:identifier).include?(current_section)
+          arr.first.sections.pluck(:identifier).include?(current_section)
       end.include?(true)
     # depth = 3 => 5 categories shown
     children_class = visible_children && depth <= 3 ? 'has-children' : ''

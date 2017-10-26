@@ -11,7 +11,7 @@ class PagesController < ApplicationController
                 damjan eleonore elisa esther fabian hassan jakob janina janina_m
                 jenny jule julia_b julia juliane karo katja konstantin laura_i
                 laura_w line magdalena michaela nahla nathalie nicole nils omar
-                sabine sophie stefan tian tine verena)
+                sabine sophie stefan tian tine verena]
   end
 
   def faq; end

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 class ApplicationHelperTest < ActionView::TestCase
@@ -37,7 +38,7 @@ class ApplicationHelperTest < ActionView::TestCase
       # setup
       original_section_identifiers = Section::IDENTIFIER
       silence_warnings do
-        Section::IDENTIFIER = %w(family somethingelse refugees).freeze
+        Section::IDENTIFIER = %w[family somethingelse refugees].freeze
       end
 
       # test

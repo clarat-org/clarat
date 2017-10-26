@@ -22,15 +22,3 @@
   ancestor_id: 2
   descendant_id: 2
   generations: 0
-7:
-  ancestor_id: 5
-  descendant_id: 5
-  generations: 0
-8:
-  ancestor_id: 6
-  descendant_id: 6
-  generations: 0
-9:
-  ancestor_id: 2
-  descendant_id: 6
-  generations: 1

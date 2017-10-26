@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base Website
 require ClaratBase::Engine.root.join('app', 'models', 'website')
 
-class Website < ActiveRecord::Base
+class Website < ApplicationRecord
   # Frontend-only Methods
 
   def pdf_appendix
@@ -10,6 +11,6 @@ class Website < ActiveRecord::Base
   end
 
   def shorten_url
-    URI.decode(URI.parse(URI.encode(self.url)).host)
+    CGI.unescape(URI.parse(self.url).host)
   end
 end

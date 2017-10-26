@@ -1,7 +1,7 @@
 # STAGING ENV, SHOULD CLOSELY RESEMBLE PRODUCTION
 # to transfer data from production to staging, run:
 # heroku pg:copy clarat::DATABASE_URL DATABASE_URL -a clarat-staging
-Clarat::Application.configure do
+Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

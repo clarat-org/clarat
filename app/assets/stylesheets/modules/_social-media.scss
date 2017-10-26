@@ -7,7 +7,7 @@
 //   background: $brand_brown url(../images/ico_search.svg) no-repeat center center;
 
 .Social-media__item {
-  @extend %hide_text;
+  @include hide_text;
   display: inline-block;
   margin-right: 24px;
   width: 32px;

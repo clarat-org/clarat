@@ -5,8 +5,8 @@
 // ---------------------------------------------------------------
 
 .JS-Geolocation__prompt {
-  @extend %clarat_rounding_start;
-  @extend %clarat_rounding_end;
+  @include clarat_rounding_start;
+  @include clarat_rounding_end;
   position: absolute;
   bottom: 55px;
   z-index: 400;

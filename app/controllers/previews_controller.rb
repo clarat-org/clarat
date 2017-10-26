@@ -1,10 +1,11 @@
 # frozen_string_literal: true
+
 # Shows previews for non-approved offers and organizations
 class PreviewsController < ApplicationController
   # Needs auth - the main reason this is in a separate controller
   http_basic_authenticate_with(
-    name: Rails.application.secrets.protect['user'],
-    password: Rails.application.secrets.protect['pwd']
+    name: Rails.application.secrets.protect[:user],
+    password: Rails.application.secrets.protect[:pwd]
   )
 
   include GmapsVariable
@@ -32,7 +33,7 @@ class PreviewsController < ApplicationController
   def model_instance model_type, model_id
     if model_type.classify == 'Offer'
       model_type.classify.constantize.in_section(@current_section).friendly
-        .find(model_id)
+                .find(model_id)
     else
       model_type.classify.constantize.friendly.find(model_id)
     end

@@ -9,7 +9,7 @@
 }
 
 .FAQ_question {
-  @extend %roboto_bold;
+  @include roboto_bold;
   margin-bottom: 0;
   cursor: pointer;
   text-decoration: underline;
@@ -107,8 +107,8 @@ li[class^="FAQ__ico"] {
 }
 
 .section-question-group__headline {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   position: relative;
   margin-bottom: 0;
   padding: 0 1em;
@@ -128,7 +128,7 @@ li[class^="FAQ__ico"] {
 }
 
 .section-question-group__body {
-  @extend %clarat_rounding_end;
+  @include clarat_rounding_end;
   padding: 0.6em 1em 0.8em;
   background: $brand_beige;
   margin-bottom: 2em;

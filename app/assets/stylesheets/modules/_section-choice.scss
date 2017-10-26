@@ -58,7 +58,7 @@
 }
 
 .section-choice__headline {
-  @extend %hide_text;
+  @include hide_text;
   width: 100%;
   background: no-repeat center top;
   height: 140px;
@@ -80,7 +80,7 @@
 }
 
 .section-choice__cta {
-  @extend %roboto_slabregular;
+  @include roboto_slabregular;
   font-size: 21px;
   width: auto;
   color: $brand_white;

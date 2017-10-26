@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module SearchFormHelper
   def custom_validity_reset_js
     "try{setCustomValidity('')}catch(e){}"

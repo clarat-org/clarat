@@ -196,7 +196,7 @@
   }
 
   .Callout__headline {
-    @extend %roboto_slabregular;
+    @include roboto_slabregular;
     font-size: 20px;
   }
 

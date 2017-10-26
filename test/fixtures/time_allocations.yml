@@ -1,0 +1,7 @@
+basic:
+  id: 1
+  user_id: 1
+  week_number: 1
+  year: 2017
+  desired_wa_hours: 42
+  actual_wa_hours: 23

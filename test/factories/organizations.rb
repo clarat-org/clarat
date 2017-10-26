@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -16,11 +17,12 @@ FactoryGirl.define do
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     mailings 'enabled'
     created_by { FactoryGirl.create(:researcher).id }
-
+    locations_count 1
+    slug 'slug'
     # associations
-    transient do
-      location_count 1
-    end
+    # transient do
+    #   locations_count 1
+    # end
 
     after :build do |orga|
       # Filters
@@ -32,13 +34,17 @@ FactoryGirl.define do
 
     after :create do |orga, evaluator|
       # Locations
-      if evaluator.location_count.positive?
-        orga.locations << FactoryGirl.create(:location, :hq, organization: orga)
-      end
-      if evaluator.location_count > 1
-        create_list :location, (evaluator.location_count - 1),
+      if orga.locations_count.positive?
+        create_list :location, (evaluator.locations_count - 1),
                     organization: orga, hq: false
       end
+      # create an initial assignment
+      # orga.assignments <<
+      #   FactoryGirl.create(
+      #     :assignment,
+      #     assignable_type: 'Organization',
+      #     assignable_id: orga.id
+      #   )
     end
 
     # traits
@@ -54,13 +60,6 @@ FactoryGirl.define do
 
     trait :mailings_disabled do
       mailings 'force_disabled'
-    end
-
-    trait :with_offer do
-      after :create do |orga, _evaluator|
-        offer = FactoryGirl.create :offer
-        offer.split_base.divisions.first.update_columns organization_id: orga.id
-      end
     end
   end
 end

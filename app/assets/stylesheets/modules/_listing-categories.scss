@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .Listing-categories {
-  @extend %clearfix;
+  @include clearfix;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,7 +18,7 @@
 
 .Listing-categories__item {
   a {
-    @extend %roboto_bold;
+    @include roboto_bold;
     display: inline-block;
     float: left;
     background: $brand_blue;
@@ -37,7 +37,7 @@
 
   &:first-child {
     a {
-      @extend %clarat_rounding_start;
+      @include clarat_rounding_start;
     }
   }
 
@@ -48,7 +48,7 @@
 }
 
 .Listing-categories__control {
-  @extend %roboto_bold;
+  @include roboto_bold;
   clear: both;
   text-align: left;
 }

@@ -1,0 +1,13 @@
+de:
+  id: 1
+  organization_id: 1
+  locale: de
+  source: researcher
+  description: basischOrganisationBeschreibung
+
+en:
+  id: 2
+  organization_id: 1
+  locale: en
+  source: GoogleTranslate
+  description: GET READY FOR ORGA

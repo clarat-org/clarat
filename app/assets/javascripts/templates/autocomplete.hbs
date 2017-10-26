@@ -1,0 +1,13 @@
+<div class='hit'>
+  <div class='offer'>
+    {{ _highlightResult.name.value }}
+  </div>
+  <div class='address'>
+    {{#location_street}}
+    {{{ location_street }}}, {{{ location_zip }}} {{{ location_city.name }}}
+    {{/location_street}}
+    {{^location_street}}
+    Überall erreichbar, egal, wo du bist
+    {{/location_street}}
+  </div>
+</div>

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module IndexChoice
   def self.personal
     if Rails.application.secrets.force_production_index

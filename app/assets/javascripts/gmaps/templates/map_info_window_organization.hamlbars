@@ -1,3 +1,0 @@
-%h3.Map-infowindow__headline
-  = hb 'title'
-= hb 'address'

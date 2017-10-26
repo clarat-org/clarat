@@ -1,0 +1,40 @@
+<div class='search-results-container'>
+  <div class='result-container'>
+    <div class='result-order'>
+      {{#if personal}}{{> _sort_order}}{{/if}}
+    </div>
+    <ul class='Type-results'>
+      <li class='Type-results__item {{personalActiveClass}}'>
+        <a class='Type-results__link JS-SwitchToPersonal' href='{{switch_href}}'>
+          {{personal_anchor}}
+        </a>
+      </li>
+      <li class='Type-results__item {{remoteActiveClass}}'>
+        <a class='Type-results__link JS-SwitchToRemote' href='{{switch_href}}'>
+          {{remote_anchor}}
+        </a>
+      </li>
+    </ul>
+    <div class='Breadcrumbs--offer-index'>
+      <div class='Breadcrumb__container'>
+        {{{main_results_query}}}
+        <div class='Breadcrumb__location'>
+          {{{main_results_location}}}
+        </div>
+      </div>
+      <a href='https://www.algolia.com/' target='_blank'>
+        <img alt='Algolia Logo' class='Breadcrumbs__sponsor' src='{{algolia_logo_path}}' />
+      </a>
+    </div>
+    {{#unless personal_focus_with_remote}}<h2 class='Listing-results__headline'>
+      {{faq_text}}
+      <a href='{{faq_href}}'>
+        {{faq_anchor}}
+      </a>
+    </h2>{{/unless}}
+    <ul class='Listing-results__list'>
+      {{#each main_offers}}{{> _single_search_result}}{{/each}}
+    </ul>
+    {{> _pagination pagination}}
+  </div>
+</div>

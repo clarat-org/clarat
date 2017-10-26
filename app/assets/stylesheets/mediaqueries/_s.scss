@@ -340,7 +340,7 @@
   }
 
   .Listing-categories__item {
-    @extend %clearfix;
+    @include clearfix;
 
     a {
       margin: 0 4px 4px 0;

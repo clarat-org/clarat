@@ -105,5 +105,5 @@ class Clarat.OffCanvas.Presenter extends ActiveScript.Presenter
       if e.which == 13
         thisTab.click()
 
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.OffCanvas.Presenter

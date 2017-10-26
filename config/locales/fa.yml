@@ -634,14 +634,14 @@ fa:
         uzb: Uzb
         vie: Vie
         wol: Wol
-        xxx: 
+        xxx: Xxx
         zho: Zho
         zza: Zza
       residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
+        before_the_asylum_decision: قبل از جواب درخواست پناهندگی
+        with_a_residence_permit: با اجازه اقامت
+        with_deportation_decision: با جواب دیپورت
+        with_temporary_suspension_of_deportation: با تعلیق موقت دیپورت
       section:
         family: خانواده
         refugees: پناهندگان
@@ -721,7 +721,8 @@ fa:
         approach: از چه راهی؟
         gender: جنسیت
         language: زبان
-        residency_status: 
+        main: 
+        residency_status: وضعیت اقامت
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
       option_any: اهمیت ندارد
@@ -729,7 +730,7 @@ fa:
         back: بازگشت
         gap: "..."
         next: ادامه
-      reset_label: 
+      reset_label: بازگرداندن همه تنظیمات به قبل
       sort:
         nearby: در نزدیکی
         relevance: بهترین هدف
@@ -943,45 +944,45 @@ fa:
               heading: 
           how:
             family:
-              heading: 
-              text: 
+              heading: نحوه عملکرد صفحه clarat به چه صورت است؟
+              text: مشکلی را که به دنبال حل آن هستی و همچنین محل زندگی خود را در قسمت جستجو وارد کن.سپس روی ذره بین کلیک کن.بدین ترتیب کمکهای نزدیک خود را در یک نگاه مشاهده می کنی.
             refugees:
-              heading: 
-              text: 
+              heading: نحوه عملکرد صفحه clarat به چه صورت است؟
+              text: مشکلی را که به دنبال حل آن هستی و همچنین محل زندگی خود را در قسمت جستجو وارد کن.سپس روی ذره بین کلیک کن.بدین ترتیب کمکهای نزدیک خود را در یک نگاه مشاهده می کنی.
           what:
             family:
-              heading: 
-              text: 
+              heading: چه چیزی را در اینجا پیدا می کنی؟
+              text: همه اطلاعات کمکی در نزدیک خود را که شامل بخش های مذکور می باشند:پناهندگی و قانون،خانواده،بهداشت،آموزش و کار و خشونت و جرایم.
             refugees:
-              heading: 
-              text: 
+              heading: چه چیزی را در اینجا پیدا می کنی؟
+              text: همه اطلاعات کمکی در نزدیک خود را که شامل بخش های مذکور می باشند:پناهندگی و قانون،خانواده،بهداشت،آموزش و کار و خشونت و جرایم.
           who:
             family:
-              heading: 
-              text: 
+              heading: چه کسانی در اینجا کمک پیدا می کنند؟
+              text: همه خانواده‌ها در آلمان.والدین،کودکان آنها و زنان باردار و همچنین دوستان و اقوام آنها در اینجا کمک پیدا می کنند.
             heading: 
             refugees:
-              heading: 
-              text: 
+              heading: چه کسانی در اینجا کمک پیدا می کنند؟
+              text: همه افرادی که به آلمان پناه آورده‌اند.حتی کودکان و جوانان پناهنده و افرادی که در جستجوی کمک برای پناهندگان هستند.
         callout_neutral:
           how:
-            heading: 
+            heading: ما چگونه کمک می کنیم؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: ما تو را در پیدا کردن کمک مناسب،یاری می کنیم.ما به تمام کمکها نظم می دهیم و از طریق یک زبان ساده آنها را قابل درک می کنیم.
           what:
-            heading: 
+            heading: ما چه چیزی را می خواهیم؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: صفحه clarat از طریق پیشنهادهای کمکی، شفاف سازی می کند.
           who:
-            heading: 
+            heading: ما کی هستیم؟
             refugees:
               heading: 
               text: 
-            text: 
+            text: ما یک پروژه عام عام‌المنفعه وابسته به بنیاد Benckiser Stiftung Zukunft هستیم.هدف این بنیاد کمک به کودکان،جوانان و خانواده های دارای شرایط سخت در زندگی است.
       footer:
         about: در مورد ما
         blog: بلاگ
@@ -1012,7 +1013,7 @@ fa:
           ar: 
           de: 
           en: 
-          fa: 
+          fa: فارسی
           fr: 
           pl: 
           ru: 
@@ -1021,8 +1022,8 @@ fa:
         claim:
           family: کمک برای کودکان،جوانان و خانواده ها
         hero:
-          button_label: 
-          logline: 
+          button_label: کسب اطلاعات بیشتر
+          logline: کمک مناسب خود را پیدا کن-با توضیح کامل و قابل مشاهده به آسانی
       modal:
         beta_modal:
           link: برای ما پیغام بنویسید
@@ -1349,7 +1350,7 @@ fa:
       title: سوالات رایج
     home:
       explaination:
-        headline: 
+        headline: صفحه clarat.org در دو دقیقه توضیح داده می شود.
       how:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
@@ -1440,16 +1441,16 @@ fa:
       title: Datenschutz
     section_choice:
       cta:
-        button: 
+        button: جستجوی کمک در حال حاضر
         family:
-          text: 
+          text: در صفحه clarat family خانواده‌ها در آلمان اطلاعات کمکی در نزدیکی خود پیدا می کنند.در زمینه مشکلاتی مانند:خانواده،بهداشت،آموزش و مشاغل و خشونت و جرایم
         refugees:
-          text: 
+          text: در صفحه clarat refugees پناهجویانی که به آلمان فرار کرده‌اند، کمک پیدا می کنند.در زمینه مشکلاتی مانند:پناهندگی و حقوق آن،خانواده،بهداشت،آموزش و مشاغل و خشونت و جرایم
       meta_description: clarat.org نشان می دهد که چه کمکهایی در آلمان وجود دارد.برای کودکان٬ جوانان و خانواده‌ها و پناهندگان. بصورت آنلاین٬ آسان و در نزدیکی آنها.
       meta_title: clarat شفاف سازی می کند | clarat
       mission:
-        headline: 
-        text: 
+        headline: وظیفه ما
+        text: کمکهایی را که در آلمان وجود دارند، قابل مشاهده کنند و به راحتی توضیح بدهند.
       title: لطفا موضوع خود را از دنیای clarat انتخاب کنید
     shared:
       address:
@@ -1510,6 +1511,9 @@ fa:
           email: 
           name: 
         show:
+          email: 
+          name: 
+        show_offer:
           email: 
           name: 
     placeholders:

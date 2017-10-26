@@ -566,12 +566,12 @@ en:
         cze: Cze
         dan: Dan
         deu: Deu
-        dje: 
+        dje: Dje
         dyu: Dyu
         ell: Ell
         eng: Eng
         est: Est
-        ewe: 
+        ewe: Ewe
         ewo: Ewo
         fas: Fas
         fil: Fil
@@ -579,7 +579,7 @@ en:
         fra: Fra
         fuf: Fuf
         ful: Ful
-        gej: 
+        gej: Gej
         geo: Geo
         hau: Hau
         hbs: Hbs
@@ -609,7 +609,7 @@ en:
         pus: Pus
         rom: Rom
         ron: Ron
-        run: 
+        run: Run
         rus: Rus
         sdh: Sdh
         skr: Skr
@@ -637,14 +637,14 @@ en:
         uzb: Uzb
         vie: Vie
         wol: Wol
-        xxx: 
+        xxx: Xxx
         zho: Zho
         zza: Zza
       residency_status:
-        before_the_asylum_decision: 
-        with_a_residence_permit: 
-        with_deportation_decision: 
-        with_temporary_suspension_of_deportation: 
+        before_the_asylum_decision: Before the asylum decision
+        with_a_residence_permit: With a residence permit
+        with_deportation_decision: With a deportation decision
+        with_temporary_suspension_of_deportation: With temporary suspension of deportation
       section:
         family: Family
         refugees: Refugees
@@ -730,6 +730,7 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        main: search results
         residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
@@ -1344,7 +1345,7 @@ en:
         designing websites. He's also a good planner. At clarat he is part of
         the IT team. He ensures that our website looks good. His favourite song
         is “Hysteria” by MUSE.
-      meta_description: This is the team behind Germany's help and support service directory. More than 40 colleagues work every day to help you find support services easily.
+      meta_description: This is the team behind Germany's help and support service directory. More than 40 colleagues work every day on making it easy for you to find help.
       michaela: Michaela studied commercial information technology. She's good at inspiring others. And she knows a lot about the media. She's part of the clarat research team. And she also makes sure our website is working properly. Her favourite song is "Digital Love" by Daft Punk.
       nahla: Nahla is an archaeologist. She knows a lot about human history. She can work very quickly. She's in the clarat translator team. She translates clarat into Arabic.  Her favourite song ist "Nassam Allina El Hawa" by Fayrouz.
       nathalie: Nathalie studied human rights and international politics. She can explain things well. And she's a good listener, too. She's part of the clarat research team. She makes sure our website is up-to-date. Her favourite song is "Me in You" by Kings of Convenience.
@@ -1435,14 +1436,14 @@ en:
       title: Frequently asked questions
     home:
       explaination:
-        headline: 
+        headline: clarat.org explained in 2 minutes
       how:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
         2017-07-17, visits=2: 
-        family: You can easily find help for children, teenagers and families with clarat family. Online. In many languages. All over Berlin. And around Germany.
-        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
+        family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
+        refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
         2017-07-17, visits=2: 
         family: Find help easily | clarat family
@@ -1615,6 +1616,9 @@ en:
           email: 
           name: 
         show:
+          email: 
+          name: 
+        show_offer:
           email: 
           name: 
     placeholders:

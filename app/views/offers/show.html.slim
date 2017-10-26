@@ -6,7 +6,7 @@
   main.content-main.content-main--wide
 
     header.page-detail__header
-      h2.page-detail__title
+      h1.page-detail__title
         == translation_block @offer.translation_automated? do
           = @offer.translated_name
 
@@ -19,7 +19,7 @@
     .section-wrapper-major
       / What's it all about?
       section.section-content.section-content--what
-        h3.section-content__title
+        h2.section-content__title
           = t '.what.heading'
           == automation_warning @offer.translation_automated?
         .section-content__body
@@ -27,7 +27,7 @@
             == translation_block @offer.translation_automated? do
               == @offer.translated_description
           .Offer-taxonomy
-            h4.Offer-taxonomy__headline = t '.what.offertaxonomy.heading'
+            h2.Offer-taxonomy__headline = t '.what.offertaxonomy.heading'
             ul.Offer-taxonomy__list
               - @offer.tags.each do |tag|
                 li.Offer-taxonomy__listitem
@@ -52,7 +52,7 @@
 
       / Spoken languages
       section.section-content.section-content--speaking
-        h3.section-content__title
+        h2.section-content__title
           = t '.speaking'
         .section-content__wrapper.is-expanded
           ul.section-content__langlist
@@ -67,7 +67,7 @@
       / More info "tags"
       - if @offer.trait_filters.any?
         section.section-content.section-content--more-info
-          h3.section-content__title
+          h2.section-content__title
             = t '.trait_filters_headline'
 
           ul.section-content__tag-list
@@ -78,7 +78,7 @@
                 = t ".trait_filters.title.#{filter.identifier}"
 
       section.section-content.section-content--whos-offering
-        h3.section-content__title
+        h2.section-content__title
           = t '.who'
 
         .section-content__body

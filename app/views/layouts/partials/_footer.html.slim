@@ -10,11 +10,11 @@ footer.footer-main
     nav.nav-legal.footer-main__nav-legal
       ul.nav-legal__list
         li.nav-legal__listitem
-          = link_to t('.impressum'), impressum_path(section: current_section)
+          = link_to t('.impressum'), impressum_path(section: current_section || 'refugees')
         li.nav-legal__listitem
-          = link_to t('.tos'), agb_path(section: current_section)
+          = link_to t('.tos'), agb_path(section: current_section || 'refugees')
         li.nav-legal__listitem
-          = link_to t('.privacy'), privacy_path(section: current_section)
+          = link_to t('.privacy'), privacy_path(section: current_section || 'refugees')
   - cache [current_section, 'footer_links_3', I18n.locale] do
 
 

@@ -22,6 +22,7 @@ class Clarat.Search.Cell.SearchResults
     toggle_search_result_details: 'Expand/Collapse'
     algolia_logo_path: image_path('banner--powered-by-algolia.svg')
     headline_sort_order: I18n.t('js.search.headlines.sort')
+    headline_search_results: I18n.t('js.search.headlines.main')
     sort_order: @model.getSortOrders()
     personal: @model.isPersonal()
 

@@ -24,6 +24,7 @@ class ApplicationController < ActionController::Base
   before_action :note_current_section
 
   def note_current_section
+    return if params['action'] == 'section_choice'
     @current_section = params[:section] || 'refugees'
   end
 

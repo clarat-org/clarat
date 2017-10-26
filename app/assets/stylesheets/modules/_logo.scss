@@ -5,14 +5,16 @@
 // ---------------------------------------------------------------
 
 .Logo {
-  @extend %hide_text;
-  min-height: 100px;
+  min-height: 85px;
   float: left;
-  margin: 0;
+  margin: 15px 0 0;
   display: block;
-  width: 215px;
-  height: 88px;
-  background: no-repeat left center;
+  width: 195px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   a {
     display: block;

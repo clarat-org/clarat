@@ -74,10 +74,9 @@ button.header-main__nav-main-trigger {
     color: $brand_core_refugees;
   }
 
-  body.template--pages-section_choice[data-section="refugees"] &, // Specifity
-  body.template--pages-section_choice[data-section="family"] & {
+  body.template--pages-section_choice & {
     color: $brand_brown;
-
+    background-color: transparent;
   }
 
 }

@@ -12,7 +12,6 @@ header.header-main
     .Logo itemscope="" itemtype="http://schema.org/Organization"
       - href = current_section ? home_path(current_section) : '/'
       a href=href itemprop="url"
-        // ToDo: logo--worldless for section_choice, --refugees for refugees, --family for family
         = image_tag "logo--#{current_section || 'worldless'}.svg",
                     {itemprop: 'logo', alt: 'Logo clarat.org'}
 

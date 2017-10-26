@@ -1,5 +1,5 @@
 %li.JS-trigger-marker.Listing-results__listitem{id: "result-offer-{{objectID}}"}
-  %h3.Listing-results__offer
+  %h2.Listing-results__offer
     %a{href: '{{@root.offers_path}}/{{slug}}', lang: '{{lang}}'}
       = hb 'name'
 
@@ -13,7 +13,7 @@
 
     = hb 'if location_visible' do
       %div.Listing-results__meta.Listing-results__meta--with-address
-        %h4.Listing-results__orga-display
+        %h3.Listing-results__orga-display
           = hb 'if location_name' do
             = hb 'location_name'
             = hb 'else'
@@ -23,5 +23,5 @@
             = hb 'location_address'
       = hb 'else'
       %div.Listing-results__meta
-        %h4.Listing-results__orga-display
+        %h3.Listing-results__orga-display
           = hb 'organization_display_name'

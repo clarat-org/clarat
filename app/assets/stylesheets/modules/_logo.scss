@@ -26,20 +26,20 @@
 
   }
 
-  body.refugees & {
-    background-image: image-url('logo--refugees.svg');
-    background-size: auto 75px;
-  }
+  //body.refugees & {
+  //  background-image: image-url('logo--refugees.svg');
+  //  background-size: auto 75px;
+  //}
+  //
+  //body.family & {
+  //  background-image: image-url('logo--family.svg');
+  //  background-size: auto 75px;
+  //}
 
-  body.family & {
-    background-image: image-url('logo--family.svg');
-    background-size: auto 75px;
-  }
-
-  body.template--pages-section_choice[data-section="refugees"] &,
-  body.template--pages-section_choice[data-section="family"] & {
-    background-image: image-url('logo--worldless.svg');
-    background-size: auto 75px;
-  }
+  //body.template--pages-section_choice[data-section="refugees"] &,
+  //body.template--pages-section_choice[data-section="family"] & {
+  //  background-image: image-url('logo--worldless.svg');
+  //  background-size: auto 75px;
+  //}
 
 }

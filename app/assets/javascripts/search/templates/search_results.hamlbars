@@ -1,4 +1,6 @@
 %div.search-results-container
+  %h1.search-results-container__headline
+    = hb 'headline_search_results'
   %div.result-container
     %div.result-order
       = hb 'if personal' do

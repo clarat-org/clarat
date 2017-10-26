@@ -8,7 +8,14 @@ header.header-main
               <path class="line line-3" d="M5 73h90v14H5z"/>
             </g>
           </svg>
-    h1.Logo = link_to 'clarat.org', home_path(current_section)
+
+    .Logo itemscope="" itemtype="http://schema.org/Organization"
+      - href = current_section ? home_path(current_section) : '/'
+      a href=href itemprop="url"
+        // ToDo: logo--worldless for section_choice, --refugees for refugees, --family for family
+        = image_tag "logo--#{current_section || 'worldless'}.svg",
+                    {itemprop: 'logo', alt: 'Logo clarat.org'}
+
     nav.nav-lang
       - if I18n.locale == :de
         button.nav-lang__button[aria-label="Switch language"]
@@ -28,8 +35,8 @@ header.header-main
         li.nav-main__listitem
           = link_to t('.blog'),  'https://plus.clarat.org/', class: "nav-main__link"
         li.nav-main__listitem
-          = link_to t('.about'), about_path(section: current_section), class: "nav-main__link"
+          = link_to t('.about'), about_path(section: current_section || 'refugees'), class: "nav-main__link"
         li.nav-main__listitem
-          = link_to t('.faq'), faq_path(section: current_section), class: "nav-main__link"
+          = link_to t('.faq'), faq_path(section: current_section || 'refugees'), class: "nav-main__link"
         li.nav-main__listitem
-          = link_to t('.contact'), new_contact_path(section: current_section), class: "nav-main__link"
+          = link_to t('.contact'), new_contact_path(section: current_section || 'refugees'), class: "nav-main__link"

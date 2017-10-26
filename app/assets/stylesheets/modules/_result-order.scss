@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.search-results-container__headline {
+  @extend %visually-hidden;
+}
+
 .result-order {
   position: absolute;
   right: 0;

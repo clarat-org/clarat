@@ -33,8 +33,7 @@
     fill: $brand_core_refugees;
   }
 
-   body.template--pages-section_choice[data-section="refugees"] &,
-   body.template--pages-section_choice[data-section="family"] & {
+   body.template--pages-section_choice & {
     fill: $brand_brown;
   }
 }

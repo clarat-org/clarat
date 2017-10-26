@@ -11,6 +11,7 @@
 .FAQ_question {
   @extend %roboto_bold;
   margin-bottom: 0;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: underline;
   font-weight: 700;
@@ -115,6 +116,7 @@ li[class^="FAQ__ico"] {
   min-height: 40px;
   background: $brand_blue;
   color: $brand_white;
+  font-size: 18px;
 
   line-height: 40px;
 

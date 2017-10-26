@@ -1,5 +1,5 @@
 section.section-content.section-content--when
-  h3.section-content__title = t '.heading'
+  h2.section-content__title = t '.heading'
   .section-content__body
     - if offer.openings.any?
       - cache [offer, 'openings', offer.openings.pluck(:id).join(',')] do

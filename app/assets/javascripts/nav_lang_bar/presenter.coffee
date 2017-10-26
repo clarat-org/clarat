@@ -23,6 +23,6 @@ class Clarat.NavLangBar.Presenter extends ActiveScript.Presenter
     $('.top-bar__world-select-button').attr('aria-expanded', 'false')
     $('.top-bar__world-select-overlay').attr('aria-hidden', 'true')
 
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.NavLangBar.Presenter
 

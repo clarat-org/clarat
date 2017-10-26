@@ -1133,10 +1133,10 @@ de:
         approach: Auf welchem Weg?
         gender: Geschlecht
         language: Sprache
+        main: Suchergebnisse
         residency_status: Aufenthaltsstatus
         sort: Sortieren nach
         target_audience: Hilfe für wen?
-        main: Suche…
       option_any: egal
       pagination:
         back: Zurück
@@ -1973,6 +1973,7 @@ de:
     impressum: impressum
     kontakt: kontakt
     liste: liste
+    liste-de-services: liste-de-services
     new: new
     offers: angebote
     organizations: organisationen

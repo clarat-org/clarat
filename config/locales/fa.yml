@@ -721,10 +721,10 @@ fa:
         approach: از چه راهی؟
         gender: جنسیت
         language: زبان
+        main: 
         residency_status: وضعیت اقامت
         sort: 'فیلتر کردن با توجه '
         target_audience: کمک برای چه کسی؟
-        main: 
       option_any: اهمیت ندارد
       pagination:
         back: بازگشت

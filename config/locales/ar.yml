@@ -666,10 +666,10 @@ ar:
         approach: كيف تقدم المساعدة؟
         gender: النوع
         language: اللغة
+        main: 
         residency_status: 
         sort: رتب حسب
         target_audience: المساعدة لمن؟
-        main: 
       option_any: سواء
       pagination:
         back: للخلف

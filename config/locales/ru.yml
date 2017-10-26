@@ -787,10 +787,10 @@ ru:
         approach: Каким образом?
         gender: Пол
         language: Язык
+        main: 
         residency_status: 
         sort: Сортировка по
         target_audience: Помощь для кого?
-        main: 
       option_any: все равно
       pagination:
         back: Назад
@@ -1539,7 +1539,7 @@ ru:
     definitions: формулировки
     emails: электронные-письма
     faq: Частые-вопросы
-    fr: fr
+    fr: 
     haeufige-fragen: Частые-вопросы
     home: главная страница
     impressum: Импрессум

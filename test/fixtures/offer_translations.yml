@@ -1,0 +1,17 @@
+de:
+  id: 1
+  offer_id: 1
+  locale: de
+  source: researcher
+  name: basischAngebotName
+  description: basischAngebotBeschreibung
+  old_next_steps: basischAngebotNaechsteSchritte
+
+en:
+  id: 2
+  offer_id: 1
+  locale: en
+  source: GoogleTranslate
+  name: GET READY FOR NAME
+  description: GET READY FOR DESCRIPTION
+  old_next_steps: GET READY FOR NEXT STEPS

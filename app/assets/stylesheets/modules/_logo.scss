@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .Logo {
-  @extend %hide_text;
+  @include hide_text;
   min-height: 100px;
   float: left;
   margin: 0;

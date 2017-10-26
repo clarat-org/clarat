@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Hash that sorts openings, it's possible to have multiple on the same day
 class OpeningHash < Hash
   # Initialize a hash that contains each day in order, sort the given offer's
@@ -9,8 +10,6 @@ class OpeningHash < Hash
     offer.openings.order('sort_value').find_each do |opening|
       self[opening.day.to_sym] << opening.display_string
     end
-
-    self
   end
 
   # Iterate over every day that has openings

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # require monkeypatched target_audience_filter
 require_relative '../../../models/target_audience_filter.rb'
 json.target_audience TargetAudienceFilter.identifiers_for_section(@current_section) do |identifier|

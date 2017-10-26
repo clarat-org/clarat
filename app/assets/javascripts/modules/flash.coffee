@@ -4,10 +4,6 @@ Clarat.Flash =
       e.target.parentElement.remove()
 
   createFlash: (type, message)->
-    $('#Flash-messages').append(
-      HoganTemplates['flash_message'].render
-        type: type
-        message: message
-    )
+    HandlebarsTemplates['flash_message']( { type: type, message: message })
 $(document).ready Clarat.Flash.initializeCloseClickHandler
 $(document).on 'page:load', Clarat.Flash.initializeCloseClickHandler

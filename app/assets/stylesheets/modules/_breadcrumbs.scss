@@ -1,5 +1,5 @@
 .Breadcrumbs--offer-index {
-  @extend %clearfix;
+  @include clearfix;
   margin-bottom: 1em;
 }
 

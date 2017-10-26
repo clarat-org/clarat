@@ -1,3 +1,0 @@
-%span.JS-Single-Click-Button__original
-  = hb 'originalHTML'
-%i.fa.fa-spin.fa-circle-o-notch.JS-Single-Click-Button__icon

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 include ApplicationHelper
 
 class EmailsController < ApplicationController
@@ -27,7 +28,7 @@ class EmailsController < ApplicationController
   def offers_index
     @email = Email.find params[:id]
     @offers = visible_offers_of_email(@email).in_section(params[:section])
-              .order(updated_at: :desc)
+                                             .order(updated_at: :desc)
     @inverse_offers_count = visible_offers_of_email(@email)
                             .in_section(inverse_section(params[:section])).count
   end

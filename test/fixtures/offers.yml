@@ -6,11 +6,15 @@ basic:
   old_next_steps: basicOfferNextSteps
   encounter: personal
   aasm_state: approved
-  location_id: 1
   created_by: 1
   approved_by: 2
   split_base_id: 1
-  logic_version_id: 1
   section_id: 1
+  location_id: 1
+  area_id: 1
+  solution_category_id: 1
+  logic_version_id: 1
+  contact_people: contact_one
+  slug: basic-slug
   created_at: 9999-01-01
   updated_at: 9999-01-01

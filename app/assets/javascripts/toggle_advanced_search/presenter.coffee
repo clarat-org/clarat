@@ -26,7 +26,6 @@ class Clarat.ToggleAdvancedSearch.Presenter extends ActiveScript.Presenter
   _toggleState: (event = {}) ->
     form = $('.filter-form')
     target = $(event.target).data 'target'
-
     if target
       # We're on mobile/off canvas
       $(target).trigger 'click'

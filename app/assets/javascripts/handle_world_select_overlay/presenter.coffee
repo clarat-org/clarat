@@ -18,6 +18,6 @@ class Clarat.HandleWorldSelectOverlay.Presenter extends ActiveScript.Presenter
     btn.next('.top-bar__world-select-overlay').attr 'aria-hidden', (i, attr) ->
       if attr == 'true' then 'false' else 'true'
 
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.HandleWorldSelectOverlay.Presenter
 

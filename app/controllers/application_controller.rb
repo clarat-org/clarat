@@ -1,12 +1,12 @@
 # frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
-  include Arcane
   include Pundit
 
   # staging password protection
   clarat = Rails.application
-  http_basic_authenticate_with name: clarat.secrets.protect['user'],
-                               password: clarat.secrets.protect['pwd'],
+  http_basic_authenticate_with name: clarat.secrets.protect[:user],
+                               password: clarat.secrets.protect[:pwd],
                                if: -> { Rails.env.staging? }
 
   # Prevent CSRF attacks by raising an exception.
@@ -23,19 +23,15 @@ class ApplicationController < ActionController::Base
 
   before_action :note_current_section
 
-  private
-
   def note_current_section
     @current_section = params[:section] || 'refugees'
   end
 
   ### Standard 404 Error ###
 
-  unless Rails.application.config.consider_all_requests_local
-    rescue_from ActionController::RoutingError, with: :goto_404
-    rescue_from ActionController::UnknownController, with: :goto_404
-    rescue_from ActiveRecord::RecordNotFound, with: :goto_404
-  end
+  rescue_from ActionController::RoutingError, with: :goto_404
+  rescue_from ActionController::UnknownController, with: :goto_404
+  rescue_from ActiveRecord::RecordNotFound, with: :goto_404
 
   def goto_404
     locale_string = I18n.locale == :de ? '' : "/#{I18n.locale}"

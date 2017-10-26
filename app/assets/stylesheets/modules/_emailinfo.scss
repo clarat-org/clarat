@@ -1,5 +1,5 @@
 .headline--emails {
-  @extend %roboto_bold;
+  @include roboto_bold;
   font-size: 34px;
   font-weight: 400;
   margin: .5em 0 1em;
@@ -11,8 +11,8 @@
 }
 
 .emailinfo__headline {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   padding: 7px 15px;
   margin: 0;
   background: $brand_green;
@@ -33,8 +33,8 @@
 }
 
 .emailinfo__cta {
-  @extend %small_button_style;
-  @extend %clarat_rounding_end;
+  @include small_button_style;
+  @include clarat_rounding_end;
   font-family: 'Roboto', sans-serif;
   border-top-left-radius: 0;
   width: 100%;

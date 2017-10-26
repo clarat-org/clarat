@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.3.3'
 
@@ -14,8 +15,8 @@ gem 'clarat_base', github: 'clarat-org/clarat_base'
 gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
-gem 'rails-observers', '= 0.1.2'
+gem 'rails', '~> 5.1'
+gem 'rails-observers', '~> 0.1'
 
 # Translations
 gem 'rails-i18n'
@@ -24,7 +25,7 @@ gem 'rails-i18n'
 platforms :ruby do
   gem 'sqlite3', group: :test # sqlite3 for inmemory testing db
   gem 'therubyracer' # js runtime
-  gem 'pg', group: [:production, :staging, :development] # postgres
+  gem 'pg', group: %i[production staging development] # postgres
 end
 
 #######################
@@ -44,7 +45,7 @@ gem 'puma'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.0'
 
 # Use jquery as the JavaScript library & plugins
 gem 'jquery-rails'
@@ -53,13 +54,10 @@ gem 'jquery-rails'
 gem 'i18n-js', '>= 3.0.0.rc6' # JS translations
 
 # Templating for JS
-gem 'handlebars_assets'
-gem 'hamlbars', '~> 2.0'
+gem 'haml'
 
-gem 'hogan_assets' # TODO: deprecated!
-group :assets do # TODO: deprecated!
-  gem 'haml' # TODO: deprecated!
-end # TODO: deprecated!
+gem 'handlebars_assets'
+gem 'hogan_assets'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-lodash' # (aka underscore) diverse js methods
@@ -73,7 +71,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-iCheck'
   gem 'rails-assets-hammerjs'
   gem 'rails-assets-flexibility'
-  gem 'rails-assets-ifvisible.js'
 end
 
 #######
@@ -83,7 +80,7 @@ end
 gem 'font-awesome-rails'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '~> 5.0.6'
 
 # More styling
 gem 'bootstrap-sass'
@@ -94,7 +91,7 @@ gem 'autoprefixer-rails'
 #########
 
 # Templating with slim
-gem 'slim-rails'
+gem 'slim-rails', '3.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
@@ -134,7 +131,6 @@ gem 'awesome_print'
 # gem 'omniauth-facebook'
 # gem 'omniauth-google-oauth2'
 gem 'pundit'
-gem 'arcane', '1.1.1'
 gem 'kaminari' # pagination
 
 gem 'route_translator'
@@ -188,12 +184,10 @@ group :development do
   # debugging in chrome with RailsPanel
   gem 'meta_request'
 
-  # Quiet Assets to disable asset pipeline in log
-  gem 'quiet_assets'
-
   # requires graphviz to generate
   # entity relationship diagrams
   gem 'rails-erd', require: false
+  gem 'listen'
 end
 
 group :test do
@@ -219,6 +213,7 @@ group :development, :test do
   gem 'pry-doc' # read ruby docs in console
 
   # test suite
+  gem 'rails-controller-testing'
   gem 'minitest', '5.10.1' # Testing using Minitest
   gem 'minitest-matchers'
   gem 'minitest-line'
@@ -229,7 +224,6 @@ group :development, :test do
 
   # test suite additions
   gem 'rails_best_practices'
-  gem 'brakeman' # security test: execute with 'brakeman'
   gem 'rubocop' # style enforcement
 
   # Code Coverage

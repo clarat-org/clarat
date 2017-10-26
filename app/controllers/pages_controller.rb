@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Static pages
 class PagesController < ApplicationController
   def section_choice; end
@@ -6,7 +7,7 @@ class PagesController < ApplicationController
   def home; end
 
   def about
-    @names = %w(andrea anna anne astrid basti bettina birte chrissy claudia
+    @names = %w[andrea anna anne astrid basti bettina birte chrissy claudia
                 damjan eleonore elisa esther fabian hassan jakob janina janina_m
                 jenny jule julia_b julia juliane karo katja konstantin laura_i
                 laura_w line magdalena michaela nahla nathalie nicole nils omar

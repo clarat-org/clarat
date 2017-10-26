@@ -1,0 +1,14 @@
+basic:
+  id: 1
+  name: 'basicTeam'
+  classification: 'family'
+
+super:
+  id: 2
+  name: 'superTeam'
+  classification: 'refugees'
+
+translator:
+  id: 3
+  name: 'translatorTeam'
+  classification: 'translator'

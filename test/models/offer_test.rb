@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 describe Offer do
@@ -16,7 +17,7 @@ describe Offer do
 
     it 'should return a string when there are multiple organizations' do
       # add another division to split_base => at least one other organization
-      offers(:basic).split_base.divisions << FactoryGirl.create(:division)
+      offers(:basic).split_base.divisions << divisions(:basic)
       offers(:basic).organization_display_name.must_equal(
         I18n.t('js.search_results.map.cooperation')
       )
@@ -33,7 +34,7 @@ describe Offer do
 
     it 'should correctly return alphabetically sorted language_filters' do
       offers(:basic).language_filters_alphabetical_sorted
-        .must_equal(%w(bos deu eng 326 hun))
+                    .must_equal(%w[bos deu eng 326 hun])
     end
   end
 end

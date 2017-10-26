@@ -8,12 +8,12 @@
   main.content-main.content-main--wide
 
     header.page-detail__header
-      h2.page-detail__title= @organization.name
+      h1.page-detail__title = @organization.name
 
     .section-wrapper-major
 
       section.section-content.section-content--who
-        h3.section-content__title
+        h2.section-content__title
           = t '.who'
           == automation_warning(@organization.translation_automated?)
         .section-content__body.section-content--what
@@ -21,20 +21,20 @@
             == @organization.translated_description
       - if @organization.offers.visible_in_frontend.any?
         section.section-content.section-content--alloffers
-          h3.section-content__title
+          h2.section-content__title
             = t '.offers_all'
             == automation_warning(@organization.translation_automated?)
           .section-content__body.section-content__body--offers-of-orga
             - Section.all.each do |section|
 
               - unless @organization.offers.visible_in_frontend.in_section(section.identifier).empty?
-                h4.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"
+                h3.Listing-results__headline--world = t ".headline-offers--#{section.identifier}"
 
                 ul.Listing-results__list class="Listing--#{section.identifier}"
                   - @organization.offers.visible_in_frontend.in_section(section.identifier).order('name ASC').each do |offer|
                     li.Listing-results__listitem
 
-                      h5.Listing-results__offer.Listing-results__orga-display = link_to offer.send("name_#{locale}"), offer_path(id: offer),
+                      h4.Listing-results__offer.Listing-results__orga-display = link_to offer.send("name_#{locale}"), offer_path(id: offer),
                               autotranslation_attr(@organization.translation_automated?)
 
                       .Listing-offers__address
@@ -52,7 +52,7 @@
         - cache [location, website, 'organization_show_text', I18n.locale] do
           - if location.visible || website
             section.section-content.section-content--where
-              h3.section-content__title = t '.where'
+              h2.section-content__title = t '.where'
               .section-content__body
                 /! http://microformats.org/wiki/adr start
                 .adr

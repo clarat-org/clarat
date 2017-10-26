@@ -687,6 +687,7 @@ tr:
         approach: Nasıl?
         gender: Cinsiyet
         language: Dil
+        main: 
         residency_status: 
         sort: Göre sırala
         target_audience: Kim için destek?
@@ -1434,7 +1435,7 @@ tr:
     definitions: tanım
     emails: emailler
     faq: sıkça-sorulan-sorular
-    fr: fr
+    fr: 
     haeufige-fragen: sıkça-sorulan-sorular
     home: home
     impressum: künye

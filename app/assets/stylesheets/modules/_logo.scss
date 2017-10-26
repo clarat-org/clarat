@@ -5,14 +5,16 @@
 // ---------------------------------------------------------------
 
 .Logo {
-  @include hide_text;
-  min-height: 100px;
+  min-height: 85px;
   float: left;
-  margin: 0;
+  margin: 12px 0 0;
   display: block;
-  width: 215px;
-  height: 88px;
-  background: no-repeat left center;
+  width: 195px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   a {
     display: block;
@@ -26,20 +28,20 @@
 
   }
 
-  body.refugees & {
-    background-image: image-url('logo--refugees.svg');
-    background-size: auto 75px;
-  }
+  //body.refugees & {
+  //  background-image: image-url('logo--refugees.svg');
+  //  background-size: auto 75px;
+  //}
+  //
+  //body.family & {
+  //  background-image: image-url('logo--family.svg');
+  //  background-size: auto 75px;
+  //}
 
-  body.family & {
-    background-image: image-url('logo--family.svg');
-    background-size: auto 75px;
-  }
-
-  body.template--pages-section_choice[data-section="refugees"] &,
-  body.template--pages-section_choice[data-section="family"] & {
-    background-image: image-url('logo--worldless.svg');
-    background-size: auto 75px;
-  }
+  //body.template--pages-section_choice[data-section="refugees"] &,
+  //body.template--pages-section_choice[data-section="family"] & {
+  //  background-image: image-url('logo--worldless.svg');
+  //  background-size: auto 75px;
+  //}
 
 }

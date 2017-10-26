@@ -2,7 +2,7 @@
   .Hero
     .Hero__shopping-window
       .Hero__pitch
-        .Hero__logline = t '.hero.logline'
+        h1.Hero__logline = t '.hero.logline'
         a.Hero__link-to-explaination[href="#explaination"] = t '.hero.button_label'
     = render '/offers/shared/search_form', search_form: search_form,
       labels: :long,

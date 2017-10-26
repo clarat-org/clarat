@@ -730,6 +730,7 @@ en:
         approach: By which means?
         gender: Gender
         language: Language
+        main: search results
         residency_status: Residency status
         sort: Sort by
         target_audience: For whom?
@@ -1441,8 +1442,8 @@ en:
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
         2017-07-17, visits=2: 
-        family: You can easily find help for children, teenagers and families with clarat family. Online. In many languages. All over Berlin. And around Germany.
-        refugees: You can easily find help with clarat refugees. Support services for refugees. Online. Up-to-date. In many different languages. All over Germany.
+        family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
+        refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
         2017-07-17, visits=2: 
         family: Find help easily | clarat family

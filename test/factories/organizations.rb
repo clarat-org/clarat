@@ -39,12 +39,12 @@ FactoryGirl.define do
                     organization: orga, hq: false
       end
       # create an initial assignment
-      orga.assignments <<
-        FactoryGirl.create(
-          :assignment,
-          assignable_type: 'Organization',
-          assignable_id: orga.id
-        )
+      # orga.assignments <<
+      #   FactoryGirl.create(
+      #     :assignment,
+      #     assignable_type: 'Organization',
+      #     assignable_id: orga.id
+      #   )
     end
 
     # traits

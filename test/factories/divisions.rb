@@ -8,13 +8,13 @@ FactoryGirl.define do
     area { Area.last || FactoryGirl.create(:area) }
     organization { FactoryGirl.create(:organization, :approved) }
 
-    after :create do |division, _evaluator|
-      division.assignments <<
-        FactoryGirl.create(
-          :assignment,
-          assignable_type: 'Division',
-          assignable_id: division.id
-        )
-    end
+    # after :create do |division, _evaluator|
+    #   division.assignments <<
+    #     FactoryGirl.create(
+    #       :assignment,
+    #       assignable_type: 'Division',
+    #       assignable_id: division.id
+    #     )
+    # end
   end
 end

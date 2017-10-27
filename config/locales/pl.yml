@@ -642,6 +642,7 @@ pl:
         bul: Bul
         bur: Bur
         cau: Cau
+        che: Che
         ckb: Ckb
         cpe: Cpe
         cus: Cus
@@ -670,6 +671,7 @@ pl:
         hrv: Hrv
         hun: Hun
         ita: Ita
+        jpn: Jpn
         kik: Kik
         kin: Kin
         kor: Kor
@@ -893,6 +895,7 @@ pl:
         bul: Język bułgarski - български
         bur: Birmańczyk - မြန်မာစာ
         cau: Język abazyński - абаза бызшва
+        che: Język czeczeński - Noxčiyn mott/Нохчийн мотт
         ckb: 'Język sorani - سۆرانی '
         cpe: Język kamtok - Pidgin
         cus: Język Saho - ሳሆኛ
@@ -921,6 +924,7 @@ pl:
         hrv: Język chorwacki - hrvatski
         hun: Język węgierski - magyar
         ita: Język włoski - italiano
+        jpn: Język japoński - 日本語
         kik: Kikuyu - Gĩkũyũ
         kin: Język ruanda-rundi - kinyaRwanda
         kor: Język koreański - 한국말 / 조선말

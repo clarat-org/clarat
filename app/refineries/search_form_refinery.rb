@@ -6,7 +6,7 @@ class SearchFormRefinery < ApplicationRefinery
 
   def default
     [
-      :query, :generated_geolocation, :search_location, :category, :language,
+      :query, :generated_geolocation, :search_location, :language,
       :exact_location, :contact_type, :target_audience, :exclusive_gender,
       :residency_status
     ]

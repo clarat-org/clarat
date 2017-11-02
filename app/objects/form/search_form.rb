@@ -16,7 +16,6 @@ class SearchForm
   attribute :query, String
   attribute :search_location, String
   attribute :generated_geolocation, String
-  attribute :category, String
 
   ## Hidden Options
 

@@ -53,7 +53,6 @@ end
 
 Minitest.after_run do
   if $suite_passing
-    brakeman
     rails_best_practices
     rubocop
   end

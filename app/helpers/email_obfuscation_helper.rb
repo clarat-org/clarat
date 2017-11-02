@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module EmailObfuscationHelper
   # source: http://unixmonkey.net/?p=20
 
@@ -22,7 +23,7 @@ module EmailObfuscationHelper
   # an email address from spiders and spammers
   def html_obfuscate string
     output_array = []
-    lower = %w(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+    lower = %w[a b c d e f g h i j k l m n o p q r s t u v w x y z]
     upper = lower.map(&:upcase)
     char_array = string.split('')
     char_array.each do |char|
@@ -38,6 +39,7 @@ module EmailObfuscationHelper
     string.tr 'A-Za-z', 'N-ZA-Mn-za-m'
   end
 
+  # rubocop:disable OutputSafety
   # render data as HTML string
   def secured_template rot13_encoded_email, linktext, index
     <<-SCRIPT
@@ -54,4 +56,5 @@ module EmailObfuscationHelper
     SCRIPT
       .html_safe
   end
+  # rubocop:enable OutputSafety
 end

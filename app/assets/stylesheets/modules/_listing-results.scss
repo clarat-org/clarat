@@ -53,7 +53,7 @@
 }
 
 .Listing-results__headline {
-  @extend %roboto_bold;
+  @include roboto_bold;
   position: relative;
   margin: 0.5em 0;
   padding-right: 25%;
@@ -66,7 +66,7 @@
 
   .big-map_open,
   .more_remote-offers_open {
-    @extend %small_button_style;
+    /*@include small_button_style;*/
     position: absolute;
     right: 0;
     top: 0;
@@ -84,13 +84,13 @@
 }
 
 .Listing-results__headline--world {
-  @extend %roboto_bold;
+  @include roboto_bold;
   margin: 0;
   padding: 10px 0;
 }
 
 .Listing-results__emphasis {
-  @extend %roboto_bold;
+  @include roboto_bold;
   display: inherit;
 }
 
@@ -127,8 +127,8 @@
 }
 
 .Listing-results__offer {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   background: $brand_yellow;
   padding: 7px 15px;
   min-height: 28px;
@@ -144,9 +144,9 @@
 }
 
 .Listing-results__offerinfo {
-  @extend %roboto_regular;
-  @extend %clearfix;
-  @extend %clarat_rounding_end;
+  @include roboto_regular;
+  @include clearfix;
+  @include clarat_rounding_end;
   min-height: 32px;
   background: $brand_beige;
   font-size: 13px;
@@ -193,7 +193,7 @@
 }
 
 .Listing-results__orga-display {
-  @extend %roboto_bold;
+  @include roboto_bold;
   margin: 0;
   font-size: inherit;
   line-height: 1.65;

@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base Offer
 require ClaratBase::Engine.root.join('app', 'models', 'offer')
 
-class Offer < ActiveRecord::Base
+class Offer < ApplicationRecord
   # Frontend-only Methods
 
   def canonical_section
@@ -48,7 +49,7 @@ class Offer < ActiveRecord::Base
   def language_filters_alphabetical_sorted
     german_alphabetical = LanguageFilter::IDENTIFIER
     language_filters.order(:name).pluck(:identifier)
-      .select { |id| german_alphabetical.include? id }
+                    .select { |id| german_alphabetical.include? id }
   end
 
   private

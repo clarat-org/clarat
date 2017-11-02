@@ -33,8 +33,7 @@
     fill: $brand_core_refugees;
   }
 
-   body.template--pages-section_choice[data-section="refugees"] &,
-   body.template--pages-section_choice[data-section="family"] & {
+   body.template--pages-section_choice & {
     fill: $brand_brown;
   }
 }
@@ -45,7 +44,7 @@
 }
 
 .Callout__headline {
-  @extend %roboto_slabregular;
+  @include roboto_slabregular;
   font-size: 26px;
   margin-bottom: 15px;
 

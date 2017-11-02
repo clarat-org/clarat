@@ -81,7 +81,7 @@
   }
 
   .Logo {
-    height: 65px;
+    height: 50px;
     width: 100px;
     min-height: 0;
     margin-left: 0;
@@ -167,8 +167,7 @@
       background-color: $brand_core_family;
     }
 
-    body.template--pages-section_choice[data-section="refugees"] &, // Specifity
-    body.template--pages-section_choice[data-section="family"] & {
+    body.template--pages-section_choice & {
       background-color: $brand_brown;
     }
 
@@ -201,8 +200,7 @@
 
     body[data-section="refugees"] &, // Specifity
     body[data-section="family"] &, // Specifity
-    body.template--pages-section_choice[data-section="family"] &,
-    body.template--pages-section_choice[data-section="refugees"] & {
+    body.template--pages-section_choice & {
       color: $brand_white;
     }
   }

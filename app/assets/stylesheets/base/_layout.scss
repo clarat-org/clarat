@@ -9,7 +9,7 @@
 // Generic wrapper
 
 .wrapper-inner {
-  @extend %clearfix;
+  @include clearfix;
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
@@ -24,7 +24,7 @@
 
 .content-main,
 .aside-standard {
-  @extend %clearfix;
+  @include clearfix;
   padding: 10px 0;
 }
 

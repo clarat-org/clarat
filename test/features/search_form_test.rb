@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 feature 'Search Form' do
@@ -27,6 +28,13 @@ feature 'Search Form' do
     find('.main-search__submit').click
     page.must_have_content 'Suche'
     page.must_have_field('search_form_search_location', with: 'Köln')
+  end
+
+  scenario 'Show widget' do
+    visit 'refugees/widget-handbook-germany-berlin'
+    page.must_have_field('search_form_query')
+    find('.main-search__submit').click
+    page.must_have_field('search_form_search_location', with: 'Berlin')
   end
 
   # Methods

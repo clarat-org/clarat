@@ -1,20 +1,21 @@
 # frozen_string_literal: true
+
 require_relative '../test_helper'
 
 feature 'Offer display' do
   scenario 'Approved offer gets shown' do
-    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
+    offer = offers(:basic)
     visit unscoped_offer_path offer
-    page.must_have_content offer.name
+    page.must_have_content offer.name_de
     click_link offer.organizations.first.name
     page.must_have_content offer.name_de
   end
 
   scenario 'Expired offer gets shown' do
-    offer = FactoryGirl.create :offer, :approved, :with_email # test obfuscation
+    offer = offers(:basic)
     offer.update_columns aasm_state: 'expired'
     visit unscoped_offer_path offer
-    page.must_have_content offer.name
+    page.must_have_content offer.name_de
     click_link offer.organizations.first.name
     page.must_have_content offer.name_de
   end

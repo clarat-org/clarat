@@ -23,7 +23,7 @@
 }
 
 .nav-lang__title {
-  @extend %roboto_bold;
+  @include roboto_bold;
   font-size: 18px;
   font-weight: normal;
   line-height: 44px;
@@ -126,7 +126,7 @@ button.nav-lang__button {
 }
 
 .nav-lang__listitem--active {
-  @extend %roboto_black;
+  @include roboto_black;
 
   body.ru & {
     font-weight: 700;

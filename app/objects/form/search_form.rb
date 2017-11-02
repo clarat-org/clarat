@@ -1,6 +1,8 @@
 # frozen_string_literal: true
+
 # Form object to render form elements and links. Rest is handled in JS.
 class SearchForm
+  include ActiveModel::Model
   # Turn into quasi ActiveModel #
   extend ActiveModel::Naming
   include Virtus.model
@@ -25,7 +27,7 @@ class SearchForm
 
   # Filters
 
-  CONTACT_TYPES = [:personal, :remote].freeze
+  CONTACT_TYPES = %i[personal remote].freeze
   attribute :contact_type, String, default: :personal
   enumerize :contact_type, in: CONTACT_TYPES
   ### Language
@@ -37,7 +39,7 @@ class SearchForm
   attribute :exclusive_gender, String
   ### Sort Order
   attribute :sort_order, String, default: :relevance
-  enumerize :sort_order, in: [:nearby, :relevance]
+  enumerize :sort_order, in: %i[nearby relevance]
   ### Section (world)
   attribute :section_identifier, String, default: :family
   ### ResidencyStatus
@@ -74,7 +76,7 @@ class SearchForm
   end
 
   def current_location_list
-    %i(ar de en fa fr pl ru tr).map do |t|
+    %i[ar de en fa fr pl ru tr].map do |t|
       # I18n.backend.send(:translations)[t][:conf][:current_location]
       I18n.translate('conf.current_location', locale: t)
     end

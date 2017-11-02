@@ -9,7 +9,6 @@ class Clarat.MobileNav.Presenter extends ActiveScript.Presenter
       resize: 'init'
 
   init: () =>
-
     if ($('body').width() <= 768)
       $('.nav-main').attr 'aria-hidden', 'true'
       $('#header-main__nav-main-trigger')
@@ -30,7 +29,6 @@ class Clarat.MobileNav.Presenter extends ActiveScript.Presenter
       if attr == 'true' then 'false' else 'true'
 
 
-
-$(document).on 'ready', ->
+$(document).ready ->
   new Clarat.MobileNav.Presenter
 

@@ -18,7 +18,7 @@
 }
 
 .nav-site__listitem {
-  @extend %roboto_bold;
+  @include roboto_bold;
   text-align: left;
   font-size: 18px;
   line-height: 30px;

@@ -48,7 +48,7 @@
   float: left;
 
   a {
-    @extend %roboto_bold;
+    @include roboto_bold;
     text-decoration: none;
     color: $brand_brown;
   }
@@ -81,7 +81,7 @@
 //.footer-main,
 //.footer-main__firstrow,
 //.footer-main__secondrow {
-//  @extend %clearfix;
+//  @include clearfix;
 //}
 //
 //.footer-main__firstrow {

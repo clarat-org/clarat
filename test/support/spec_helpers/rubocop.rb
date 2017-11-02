@@ -2,7 +2,6 @@ require 'json'
 
 # Check code style
 def rubocop
-  puts "\n\n[Rubocop] Checking Code Style:\n".underline
   output = %x( bundle exec rake test:rubocop )
   result = JSON.parse output
 

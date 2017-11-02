@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -9,10 +10,12 @@ FactoryGirl.define do
     old_next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
       # weighted
-      %w(personal personal personal personal hotline chat forum email online-course portal).sample
+      %w[personal personal personal personal hotline chat forum email online-course portal].sample
     end
-    area { Area.first unless encounter == 'personal' }
+    area { Area.first }
     approved_at nil
+    location { Location.last || FactoryGirl.create(:location) }
+    solution_category { SolutionCategory.last || FactoryGirl.create(:solution_category) }
     split_base nil
     # every offer should have a creator!
     created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
@@ -31,14 +34,11 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       # SplitBase => Division(s) => Organization(s)
-      organizations = evaluator.organizations || [Organization.all.sample]
+      # organizations = evaluator.organizations || [Organization.all.sample]
       unless offer.split_base
-        offer.split_base =
-          FactoryGirl.create :split_base, section: evaluator.section,
-                                          organizations: organizations
+        offer.split_base = SplitBase.last || FactoryGirl.create(:split_base, section: evaluator.section)
       end
       organization = offer.organizations[0]
-
       # location
       if offer.personal?
         location = organization.locations.sample ||
@@ -76,12 +76,28 @@ FactoryGirl.define do
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
+<<<<<<< HEAD
       evaluator.tag_count.times do
         offer.tags <<
           FactoryGirl.create(
             :tag
           )
       end
+=======
+
+      # if evaluator.category
+      #   offer.categories << FactoryGirl.create(:category,
+      #                                          name: evaluator.category)
+      # else
+      #   evaluator.category_count.times do
+      #     offer.categories <<
+      #       FactoryGirl.create(
+      #         :category, sections: [offer.section]
+      #       )
+      #   end
+      # end
+
+>>>>>>> develop
       evaluator.opening_count.times do
         offer.openings << (
           if Opening.count != 0 && rand(2).zero?
@@ -106,6 +122,20 @@ FactoryGirl.define do
         offer.reload
       end
       approved_by { FactoryGirl.create(:researcher).id }
+    end
+
+    trait :family_section do
+      after :create do |offer, _evaluator|
+        offer.section = Section.where(identifier: 'family').last
+        offer.save
+      end
+    end
+
+    trait :refugee_section do
+      after :create do |offer, _evaluator|
+        offer.section = Section.where(identifier: 'refugees').last
+        offer.save
+      end
     end
 
     trait :with_email do

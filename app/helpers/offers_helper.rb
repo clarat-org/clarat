@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module OffersHelper
   # put spaces in telephone number: 0303656558 -> 030 36 56 55 8
   def tel_format number

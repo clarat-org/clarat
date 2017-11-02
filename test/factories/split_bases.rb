@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 FactoryGirl.define do
   factory :split_base do
     title 'my_split_base'
@@ -26,12 +27,9 @@ FactoryGirl.define do
             else
               orga.divisions.sample
             end
-          unless division
-            division =
-              FactoryGirl.create(
-                :division, division_options.merge(organization: orga)
-              )
-          end
+          division ||= FactoryGirl.create(
+            :division, division_options.merge(organization: orga)
+          )
           split_base.divisions.push << division
         end
       else

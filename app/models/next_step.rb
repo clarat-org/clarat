@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+
 # Monkeypatch clarat_base NextStep
 require ClaratBase::Engine.root.join('app', 'models', 'next_step')
 
-class NextStep < ActiveRecord::Base
+class NextStep < ApplicationRecord
   # Frontend-only Methods
 
   # Scopes

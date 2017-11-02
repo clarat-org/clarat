@@ -9,8 +9,9 @@
 }
 
 .FAQ_question {
-  @extend %roboto_bold;
+  @include roboto_bold;
   margin-bottom: 0;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: underline;
   font-weight: 700;
@@ -107,14 +108,15 @@ li[class^="FAQ__ico"] {
 }
 
 .section-question-group__headline {
-  @extend %roboto_bold;
-  @extend %clarat_rounding_start;
+  @include roboto_bold;
+  @include clarat_rounding_start;
   position: relative;
   margin-bottom: 0;
   padding: 0 1em;
   min-height: 40px;
   background: $brand_blue;
   color: $brand_white;
+  font-size: 18px;
 
   line-height: 40px;
 
@@ -128,7 +130,7 @@ li[class^="FAQ__ico"] {
 }
 
 .section-question-group__body {
-  @extend %clarat_rounding_end;
+  @include clarat_rounding_end;
   padding: 0.6em 1em 0.8em;
   background: $brand_beige;
   margin-bottom: 2em;

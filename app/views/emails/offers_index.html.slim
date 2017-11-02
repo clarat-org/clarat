@@ -9,9 +9,9 @@
         ul.Listing-results__list
           - @offers.each do |offer|
             li.Listing-results__listitem
-              h3.Listing-results__offer = link_to offer.name,
+              h2.Listing-results__offer = link_to offer.name,
                          offer_path(id: offer.id, section: @current_section)
-              h4.Listing-results__offerinfo.Listing-results__offerinfo--hasupdateinfo
+              h3.Listing-results__offerinfo.Listing-results__offerinfo--hasupdateinfo
                 - if offer.encounter && offer.encounter != 'personal'
                   span.Listing-results__contact-type
                     = t "js.single_search_result.encounters.#{offer.encounter}"

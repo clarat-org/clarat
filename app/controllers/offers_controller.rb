@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class OffersController < ApplicationController
   include GmapsVariable
   respond_to :html
@@ -6,7 +7,7 @@ class OffersController < ApplicationController
   before_action :init_search_form, only: [:index]
   before_action :disable_caching, only: :index
 
-  rescue_from InvalidLocationError do |_error|
+  rescue_from 'InvalidLocationError' do |_error|
     render 'invalid_location', status: 404
   end
 
@@ -16,7 +17,8 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find(params[:id])
+    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find_by(slug: params[:id])
+    raise ActiveRecord::RecordNotFound unless @offer
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
     respond_with @offer
@@ -41,7 +43,11 @@ class OffersController < ApplicationController
 
   def search_params
     return nil unless params['search_form']
-    params.for(SearchForm).refine
+    search_form_params
+  end
+
+  def search_form_params
+    params.require(:search_form).permit(:query, :generated_geolocation, :search_location, :category, :exact_location, :contact_type, :encounters, :age, :target_audience, :exclusive_gender, :language)
   end
 
   # prepare an UpdateRequest that will be displayed if the user entered a search

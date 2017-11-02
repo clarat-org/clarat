@@ -12,12 +12,12 @@ button {
 input,
 textarea {
   @include input-placeholder(rgba($brand_brown, .72), 400, null);
-  @extend %roboto_light;
+  @include roboto_light;
   background-color: $brand_beige;
 
   body.pl &,
   body.ru & {
-    @extend %roboto_regular;
+    @include roboto_regular;
   }
 }
 
@@ -42,7 +42,7 @@ textarea {
 
 button,
 input[type="submit"] {
-  @extend %roboto_bold;
+  @include roboto_bold;
   font-weight: 400;
   background-color: $brand_brown;
   color: $brand_white;
@@ -66,10 +66,10 @@ input[type="submit"] {
   width: 25%;
 }
 
-%small_button_style {
-  @extend %clarat_rounding_start;
-  @extend %clarat_rounding_end;
-  @extend %roboto_bold;
+/*@mixin small_button_style {
+  @include clarat_rounding_start;
+  @include clarat_rounding_end;
+  @include roboto_bold;
   display: inline-block;
   background-color: $brand_brown;
   color: $brand_white;
@@ -85,4 +85,4 @@ input[type="submit"] {
     background-color: $brand_core_family;
   }
 
-}
+}*/

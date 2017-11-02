@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -16,7 +17,7 @@ FactoryGirl.define do
     fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
 
     organization
-    email nil
+    email { Email.last || FactoryGirl.create(:email) }
 
     transient do
       offers []
@@ -50,7 +51,7 @@ FactoryGirl.define do
     end
 
     trait :with_gender do
-      gender { %w(male female).sample }
+      gender { %w[male female].sample }
     end
 
     trait :with_name do

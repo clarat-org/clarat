@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'ffaker'
 
 FactoryGirl.define do
@@ -23,13 +24,9 @@ FactoryGirl.define do
     end
 
     # associations
-    organization
-    federal_state do
-      FederalState.select(:id).all.sample || FederalState.create(name: 'Berlin')
-    end
-    city do
-      City.all.to_a.sample || City.create!(name: 'Berlin')
-    end
+    federal_state { FederalState.all.to_a.sample || FederalState.create!(name: 'Berlin') }
+    city { City.all.to_a.sample || City.create!(name: 'Berlin') }
+    organization { Organization.last || FactoryGirl.create(:organization) }
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }

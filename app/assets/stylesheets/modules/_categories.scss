@@ -14,15 +14,15 @@
 }
 
 .Categories__headline {
-  @extend %roboto_regular;
+  @include roboto_regular;
   font-weight: 400;
 }
 
 .Categories__show-all {
   a {
-    @extend %roboto_bold;
-    @extend %clarat_rounding_start;
-    @extend %clarat_rounding_end;
+    @include roboto_bold;
+    @include clarat_rounding_start;
+    @include clarat_rounding_end;
     display: block;
     margin-bottom: 20px;
     padding: 4px 10px;
@@ -73,7 +73,7 @@
 
   &.active {
     > a {
-      @extend %roboto_bold;
+      @include roboto_bold;
 
       body.ru & {
         font-weight: 700;
@@ -117,9 +117,9 @@
     }
 
     > a {
-      @extend %roboto_bold;
-      @extend %clarat_rounding_start;
-      @extend %clarat_rounding_end;
+      @include roboto_bold;
+      @include clarat_rounding_start;
+      @include clarat_rounding_end;
       display: block;
       min-height: 32px;
       background: $brand_blue;

@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 .section-team {
-  @extend %clearfix;
+  @include clearfix;
   margin: 40px 0 30px -.33%;
 }
 
@@ -27,15 +27,15 @@
   }
 
   &:first-of-type {
-    @extend %clarat_rounding_start;
+    @include clarat_rounding_start;
 
     .section-team__name {
-      @extend %clarat_rounding_start;
+      @include clarat_rounding_start;
     }
   }
 
   .section-team__name {
-    @extend %roboto_bold;
+    @include roboto_bold;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +53,7 @@
 
 
   &:last-of-type {
-    @extend %clarat_rounding_end;
+    @include clarat_rounding_end;
   }
 
   p {

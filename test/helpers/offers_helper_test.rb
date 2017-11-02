@@ -1,11 +1,12 @@
 # frozen_string_literal: true
+
 # rubocop:disable Metrics/ClassLength
 require_relative '../test_helper'
 
 class OffersHelperTest < ActionView::TestCase
   include OffersHelper
 
-  let(:offer) { FactoryGirl.create(:offer) }
+  let(:offer) { offers(:basic) }
 
   describe '#tel_format' do
     it 'should format a phone number' do
@@ -15,16 +16,7 @@ class OffersHelperTest < ActionView::TestCase
 
   describe '#offer_with_contacts' do
     before do
-      offer.contact_people = [
-        FactoryGirl.create(
-          :contact_person, :all_fields, :with_telephone,
-          organization: offer.organizations.first, last_name: 'two'
-        ),
-        FactoryGirl.create(
-          :contact_person, :all_fields, :with_telephone,
-          organization: offer.organizations.first, last_name: 'one'
-        )
-      ]
+      offer.contact_people << contact_people(:contact_two)
     end
 
     it 'orders contacts alphabetically by last name' do

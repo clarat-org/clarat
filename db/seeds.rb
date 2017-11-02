@@ -61,15 +61,15 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
   FactoryGirl.create :tag, :with_dummy_translations
 end
 
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Lokales Angebot',
                    encounter: 'personal'
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Lokale Hotline',
                    encounter: 'hotline', area: berlin
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Bundesweiter Chat',
                    encounter: 'chat', area: schland
-FactoryGirl.create :offer, :approved, :with_dummy_translations,
+FactoryGirl.create :offer, :approved,
                    approved_by: user, name: 'Bundesweite Hotline',
                    encounter: 'hotline', area: schland

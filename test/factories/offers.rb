@@ -76,28 +76,12 @@ FactoryGirl.define do
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
-<<<<<<< HEAD
       evaluator.tag_count.times do
         offer.tags <<
           FactoryGirl.create(
             :tag
           )
       end
-=======
-
-      # if evaluator.category
-      #   offer.categories << FactoryGirl.create(:category,
-      #                                          name: evaluator.category)
-      # else
-      #   evaluator.category_count.times do
-      #     offer.categories <<
-      #       FactoryGirl.create(
-      #         :category, sections: [offer.section]
-      #       )
-      #   end
-      # end
-
->>>>>>> develop
       evaluator.opening_count.times do
         offer.openings << (
           if Opening.count != 0 && rand(2).zero?

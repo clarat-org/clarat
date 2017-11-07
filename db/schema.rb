@@ -221,6 +221,13 @@ ActiveRecord::Schema.define(version: 20171023093225) do
     t.index ["solution_category_id"], name: "index_presumed_s_categories_on_s_category"
   end
 
+  create_table "divisions_presumed_tags", id: false, force: :cascade do |t|
+    t.integer "division_id", null: false
+    t.integer "tag_id", null: false
+    t.index ["division_id"], name: "index_divisions_presumed_tags_on_division_id"
+    t.index ["tag_id"], name: "index_divisions_presumed_tags_on_tag_id"
+  end
+
   create_table "emails", id: :serial, force: :cascade do |t|
     t.string "address", limit: 64, null: false
     t.string "aasm_state", limit: 32, default: "uninformed", null: false

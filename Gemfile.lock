@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 9880d3331ab46500b2deae0166c03ae1b8f08219
+  revision: 3094d821c8dfb880dec62a6448b8f40b6e856d4c
   specs:
     clarat_base (0.1.4)
       aasm
@@ -711,7 +711,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_mime (0.1.4)
+    mini_mime (1.0.0)
     mini_portile2 (2.0.0)
     minitest (5.10.1)
     minitest-capybara (0.8.2)

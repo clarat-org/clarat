@@ -16,7 +16,6 @@ FactoryGirl.define do
     approved_at nil
     location { Location.last || FactoryGirl.create(:location) }
     solution_category { SolutionCategory.last || FactoryGirl.create(:solution_category) }
-    split_base nil
     # every offer should have a creator!
     created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
 
@@ -26,6 +25,7 @@ FactoryGirl.define do
       tag_count { rand(1..3) }
       language_count { rand(1..2) }
       audience_count 1
+      divisions nil
       opening_count { rand(1..5) }
       fake_address false
       section nil
@@ -33,12 +33,12 @@ FactoryGirl.define do
     end
 
     after :build do |offer, evaluator|
-      # SplitBase => Division(s) => Organization(s)
-      # organizations = evaluator.organizations || [Organization.all.sample]
-      unless offer.split_base
-        offer.split_base = SplitBase.last || FactoryGirl.create(:split_base, section: evaluator.section)
-      end
-      organization = offer.organizations[0]
+      organizations = evaluator.organizations ||
+                      [FactoryGirl.create(:organization, :approved)]
+      organization = organizations.first
+      div = organization.divisions.first ||
+            FactoryGirl.create(:division, organization: organization)
+      offer.divisions << div
       # location
       if offer.personal?
         location = organization.locations.sample ||
@@ -55,7 +55,7 @@ FactoryGirl.define do
       if evaluator.section
         offer.section = Section.find_by(identifier: evaluator.section)
       else
-        offer.section_id = offer.split_base.divisions.pluck(:section_id).sample
+        offer.section_id = offer.divisions.first.section_id
       end
 
       evaluator.language_count.times do

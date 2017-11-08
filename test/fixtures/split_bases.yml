@@ -1,6 +1,0 @@
-basic:
-  id: 1
-  title: basicSplitBaseTitle
-  solution_category_id: 1
-  created_at: <%= Time.zone.now %>
-  updated_at: <%= Time.zone.now %>

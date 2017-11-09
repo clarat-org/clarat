@@ -16,7 +16,9 @@ describe ContactsController do
       contact_attrs = FactoryGirl.attributes_for :contact
       request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
-        post :create, params: { locale: 'de', section: 'refugees', contact: contact_attrs }
+        post :create, params: {
+          locale: 'de', section: 'refugees', contact: contact_attrs
+        }
       end
       assert_redirected_to :section_choice
     end
@@ -25,14 +27,18 @@ describe ContactsController do
       contact_attrs = FactoryGirl.attributes_for :report
       request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
-        post :create, params: { locale: 'de', section: 'family', contact: contact_attrs }
+        post :create, params: {
+          locale: 'de', section: 'family', contact: contact_attrs
+        }
       end
       assert_redirected_to :section_choice
     end
 
     it 'should not work with empty data' do
       assert_difference('Contact.count', 0) do
-        post :create, params: { locale: 'de', section: 'refugees', contact: { name: '' } }
+        post :create, params: {
+          locale: 'de', section: 'refugees', contact: { name: '' }
+        }
       end
       assert_template :new
     end

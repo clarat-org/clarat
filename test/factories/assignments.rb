@@ -9,7 +9,8 @@ FactoryGirl.define do
     creator_team { UserTeam.first }
     receiver { User.last }
     receiver_team { UserTeam.first }
-    # translations are the first model for the assignments, so we use them for tests
+    # translations are the first model for the assignments,
+    # so we use them for tests
     assignable { FactoryGirl.create :offer_translation }
     assignable_type 'OfferTranslation'
     parent_id 2

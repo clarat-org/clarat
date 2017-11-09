@@ -24,7 +24,11 @@ FactoryGirl.define do
     end
 
     # associations
-    federal_state { FederalState.all.to_a.sample || FederalState.create!(name: 'Berlin') }
+    federal_state do
+      FederalState.all.to_a.sample || FederalState.create!(
+        name: 'Berlin'
+      )
+    end
     city { City.all.to_a.sample || City.create!(name: 'Berlin') }
     organization { Organization.last || FactoryGirl.create(:organization) }
 

@@ -100,7 +100,9 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">Weitere Infos (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\
+      ' | <a target="_blank" href="http://www.t.com/t.pdf">Weitere Infos'\
+      ' (PDF)</a>'
     )
   end
 
@@ -111,7 +113,8 @@ feature 'Offer display' do
     offer.websites << FactoryGirl.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\
+      ' | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 
@@ -120,10 +123,15 @@ feature 'Offer display' do
     offer.websites = []
     offer.websites << FactoryGirl.create(:website, :pdf, host: 'own')
     offer.websites << FactoryGirl.create(:website, :own)
-    offer.websites << FactoryGirl.create(:website, host: 'own', url: 'http://www.example2.com/')
+    offer.websites << FactoryGirl.create(:website,
+                                         host: 'own',
+                                         url: 'http://www.example2.com/')
     visit unscoped_offer_path offer
     page.body.must_match(
-      '<a target="_blank" href="http://www.example.com/">www.example.com</a> | <a target="_blank" href="http://www.example2.com/">www.example2.com</a> | <a target="_blank" href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
+      '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\
+      ' | <a target="_blank" href="http://www.example2.com/">www.example2.com'\
+      '</a> | <a target="_blank" '\
+      'href="http://www.t.com/t.pdf">www.t.com (PDF)</a>'
     )
   end
 end

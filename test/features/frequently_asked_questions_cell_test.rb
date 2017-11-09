@@ -23,6 +23,7 @@ feature 'FAQ display' do
     page.must_have_content 'Wer findet bei clarat Hilfe?'
     page.must_have_content 'Auf welchen Sprachen gibt es clarat?'
     page.must_have_content 'Warum ist meine Organisation nicht bei clarat?'
-    page.must_have_content 'Warum schreibt clarat immer in einer einfachen Sprache?'
+    page.must_have_content 'Warum schreibt clarat '\
+    'immer in einer einfachen Sprache?'
   end
 end

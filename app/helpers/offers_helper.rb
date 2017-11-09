@@ -20,7 +20,9 @@ module OffersHelper
 
   def contact_name contact
     if contact.last_name?
-      contact_gender(contact).to_s + contact_academic_title(contact).to_s + contact_full_name(contact).to_s
+      contact_gender(contact).to_s +
+        contact_academic_title(contact).to_s +
+        contact_full_name(contact).to_s
     elsif contact.first_name?
       contact.first_name
     elsif contact.operational_name?

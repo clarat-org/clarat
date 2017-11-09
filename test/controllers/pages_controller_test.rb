@@ -59,28 +59,36 @@ describe PagesController do
 
   describe "GET 'widget-handbook-germany-berlin'" do
     it 'should work' do
-      get :widget_hg, params: { locale: 'de', section: 'refugees', city: 'hamburg' }
+      get :widget_hg, params: { locale: 'de',
+                                section: 'refugees',
+                                city: 'hamburg' }
       assert_response :success
     end
   end
 
   describe "GET 'widget-handbook-germany-hamburg'" do
     it 'should work' do
-      get :widget_hg, params: { locale: 'de', section: 'refugees', city: 'hamburg' }
+      get :widget_hg, params: { locale: 'de',
+                                section: 'refugees',
+                                city: 'hamburg' }
       assert_response :success
     end
   end
 
   describe "GET 'widget-handbook-germany-muenchen'" do
     it 'should work' do
-      get :widget_hg, params: { locale: 'de', section: 'refugees', city: 'muenchen' }
+      get :widget_hg, params: { locale: 'de',
+                                section: 'refugees',
+                                city: 'muenchen' }
       assert_response :success
     end
   end
 
   describe "GET 'widget-handbook-germany-dortmund'" do
     it 'should work' do
-      get :widget_hg, params: { locale: 'de', section: 'refugees', city: 'dortmund' }
+      get :widget_hg, params: { locale: 'de',
+                                section: 'refugees',
+                                city: 'dortmund' }
       assert_response :success
     end
   end

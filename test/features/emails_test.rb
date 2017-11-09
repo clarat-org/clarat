@@ -23,7 +23,10 @@ feature 'emails#offers_index' do
   end
 
   scenario 'offers_index for E-Mail without offers in section gets shown' do
-    @fam_offer1 = FactoryGirl.create :offer, :family_section, :approved, name: 'baz'
+    @fam_offer1 = FactoryGirl.create(:offer,
+                                     :family_section,
+                                     :approved,
+                                     name: 'baz')
     @fam_offer1.contact_people.first.update_column :email_id, @email.id
     visit emails_offers_path(section: 'refugees', id: @email.id, locale: 'de')
     page.wont_have_content 'baz' # because it's in different section

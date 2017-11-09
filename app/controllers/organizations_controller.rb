@@ -5,7 +5,9 @@ class OrganizationsController < ApplicationController
   respond_to :html
 
   def show
-    @organization = Organization.visible_in_frontend.friendly.find_by(slug: params[:id])
+    @organization = Organization.visible_in_frontend.friendly.find_by(
+      slug: params[:id]
+    )
     raise ActiveRecord::RecordNotFound unless @organization
     unless @organization.in_section? @current_section
       return redirect_to section: @organization.canonical_section

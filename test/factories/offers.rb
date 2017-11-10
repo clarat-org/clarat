@@ -10,23 +10,26 @@ FactoryGirl.define do
     old_next_steps { FFaker::Lorem.paragraph(rand(1..3))[0..399] }
     encounter do
       # weighted
-      %w[personal personal personal personal hotline chat forum email online-course portal].sample
+      %w[personal personal personal personal
+         hotline chat forum email online-course portal].sample
     end
     area { Area.first }
     approved_at nil
     location { Location.last || FactoryGirl.create(:location) }
-    solution_category { SolutionCategory.last || FactoryGirl.create(:solution_category) }
-    split_base nil
+    solution_category do
+      SolutionCategory.last ||
+        FactoryGirl.create(:solution_category)
+    end
     # every offer should have a creator!
     created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
 
     # associations
     transient do
       website_count { rand(0..3) }
-      category_count { rand(1..3) }
-      category nil # used to get a specific category, instead of category_count
+      tag_count { rand(1..3) }
       language_count { rand(1..2) }
       audience_count 1
+      divisions nil
       opening_count { rand(1..5) }
       fake_address false
       section nil
@@ -34,12 +37,12 @@ FactoryGirl.define do
     end
 
     after :build do |offer, evaluator|
-      # SplitBase => Division(s) => Organization(s)
-      # organizations = evaluator.organizations || [Organization.all.sample]
-      unless offer.split_base
-        offer.split_base = SplitBase.last || FactoryGirl.create(:split_base, section: evaluator.section)
-      end
-      organization = offer.organizations[0]
+      organizations = evaluator.organizations ||
+                      [FactoryGirl.create(:organization, :approved)]
+      organization = organizations.first
+      div = organization.divisions.first ||
+            FactoryGirl.create(:division, organization: organization)
+      offer.divisions << div
       # location
       if offer.personal?
         location = organization.locations.sample ||
@@ -56,7 +59,7 @@ FactoryGirl.define do
       if evaluator.section
         offer.section = Section.find_by(identifier: evaluator.section)
       else
-        offer.section_id = offer.split_base.divisions.pluck(:section_id).sample
+        offer.section_id = offer.divisions.first.section_id
       end
 
       evaluator.language_count.times do
@@ -77,19 +80,12 @@ FactoryGirl.define do
 
       # ...
       create_list :hyperlink, evaluator.website_count, linkable: offer
-
-      # if evaluator.category
-      #   offer.categories << FactoryGirl.create(:category,
-      #                                          name: evaluator.category)
-      # else
-      #   evaluator.category_count.times do
-      #     offer.categories <<
-      #       FactoryGirl.create(
-      #         :category, sections: [offer.section]
-      #       )
-      #   end
-      # end
-
+      evaluator.tag_count.times do
+        offer.tags <<
+          FactoryGirl.create(
+            :tag
+          )
+      end
       evaluator.opening_count.times do
         offer.openings << (
           if Opening.count != 0 && rand(2).zero?

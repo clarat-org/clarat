@@ -17,7 +17,8 @@ describe OrganizationsController do
       it 'should use the correct canonical URL' do
         get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
-        assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
+        assert_includes response.body,
+                        "http://test.host/family/organisationen/#{orga.slug}"
       end
 
       it 'should redirect if the wrong section was given' do
@@ -48,7 +49,8 @@ describe OrganizationsController do
       it 'should use the correct canonical URL' do
         get :show, params: { id: orga.slug, locale: 'de', section: 'family' }
         assert_response :success
-        assert_includes response.body, "http://test.host/family/organisationen/#{orga.slug}"
+        assert_includes response.body,
+                        "http://test.host/family/organisationen/#{orga.slug}"
       end
 
       it 'should redirect if the wrong section was given' do

@@ -17,7 +17,8 @@ class OffersController < ApplicationController
   end
 
   def show
-    @offer = Offer.in_section(@current_section).visible_in_frontend.friendly.find_by(slug: params[:id])
+    @offer = Offer.in_section(@current_section)
+                  .visible_in_frontend.friendly.find_by(slug: params[:id])
     raise ActiveRecord::RecordNotFound unless @offer
     prepare_gmaps_variable @offer
     @contact = Contact.new url: request.url, reporting: true
@@ -47,7 +48,17 @@ class OffersController < ApplicationController
   end
 
   def search_form_params
-    params.require(:search_form).permit(:query, :generated_geolocation, :search_location, :category, :exact_location, :contact_type, :encounters, :age, :target_audience, :exclusive_gender, :language)
+    params.require(:search_form).permit(:query,
+                                        :generated_geolocation,
+                                        :search_location,
+                                        :category,
+                                        :exact_location,
+                                        :contact_type,
+                                        :encounters,
+                                        :age,
+                                        :target_audience,
+                                        :exclusive_gender,
+                                        :language)
   end
 
   # prepare an UpdateRequest that will be displayed if the user entered a search

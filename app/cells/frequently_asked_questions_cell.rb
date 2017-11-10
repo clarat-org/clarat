@@ -9,7 +9,11 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
   end
 
   def section section_id
-    @anchor = t_exists?("section_#{section_id}.anchor") ? t("section_#{section_id}.anchor") : ''
+    @anchor = if t_exists?("section_#{section_id}.anchor")
+                t("section_#{section_id}.anchor")
+              else
+                ''
+              end
     @section_id = section_id
     @question_ids = (1..question_count(section_id) - 1).to_a
     render
@@ -34,7 +38,9 @@ class FrequentlyAskedQuestionsCell < Cell::ViewModel
 
   def question_count section_id
     count = 1
-    count += 1 while t_exists?("section_#{section_id}.question_#{count}.question")
+    count += 1 while t_exists?(
+      "section_#{section_id}.question_#{count}.question"
+    )
     count
   end
 

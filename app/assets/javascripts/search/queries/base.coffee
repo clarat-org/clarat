@@ -4,8 +4,7 @@ class Clarat.Search.Query.Base
   VALUES_PER_FACET: 300 # must be >= Category.Count to avoid missing categories
 
   constructor:
-    (@query = '', @category = null, @facetFilters = [], @page = null,
-      @sort_order = 'nearby') ->
+    (@query = '', @facetFilters = [], @page = null, @sort_order = 'nearby') ->
       # Algolia seems to want this string in an array
       @categoryArray = [] # NOTE use this later for tags?!
 

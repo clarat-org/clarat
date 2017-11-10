@@ -15,7 +15,9 @@ describe UpdateRequestsController do
     it 'should work with valid email' do
       attrs = FactoryGirl.attributes_for :update_request
       assert_difference('UpdateRequest.count', 1) do
-        post :create, params: { locale: 'de', format: :js, update_request: attrs }
+        post :create, params: { locale: 'de',
+                                format: :js,
+                                update_request: attrs }
       end
       assert_template :create
     end

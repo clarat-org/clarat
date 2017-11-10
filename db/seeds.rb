@@ -57,84 +57,8 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        longitude: 13.404954,
                                        geoloc: '52.520007,13.404954'
 
-fam = FactoryGirl.create :category,
-                         name_de: 'Familie', icon: 'b-family',
-                         name_en: 'Family', name_ar: "الأسرة",
-                         name_fr: "famille", name_pl: "Rodzina",
-                         name_tr: "aile", name_ru: "семья"
-fam.sections = [family, refugees]
-legal = FactoryGirl.create :category,
-                           name_de: 'Asyl und Recht', icon: 'a-legal',
-                           name_en: "Asylum and law",
-                           name_ar: "اللجوء والقانون",
-                           name_fr: "asile et droit",
-                           name_pl: "Azyl i prawo",
-                           name_tr: "iltica ve hukuk",
-                           name_ru: "убежище и право"
-legal.sections = [refugees]
-health = FactoryGirl.create :category,
-                            name_de: 'Gesundheit', icon: 'c-health',
-                            name_en: "Health", name_ar: "الصحة",
-                            name_fr: "santé", name_pl: "Zdrowie",
-                            name_tr: "sağlık", name_ru: "здоровье"
-health.sections = [family, refugees]
-learn = FactoryGirl.create :category,
-                           name_de: 'Lernen und Arbeiten', icon: 'd-learn',
-                           name_en: "Learning and working",
-                           name_ar: "التعلم والعمل",
-                           name_fr: "apprendre et travailler",
-                           name_pl: "Nauka i praca",
-                           name_tr: "öğrenmek ve çalışmak",
-                           name_ru: "учеба и работа"
-learn.sections = [family, refugees]
-misc = FactoryGirl.create :category,
-                          name_de: 'Sorgen im Alltag', icon: 'e-misc',
-                          name_en: "Worries in everyday life",
-                          name_ar: "هموم الحياة اليومية",
-                          name_fr: "préoccupations au quotidien",
-                          name_pl: "Zmartwienia w codziennym życiu",
-                          name_tr: "güncel hayatta sorun",
-                          name_ru: "проблемы в обычной жизни"
-misc.sections = [family]
-misc = FactoryGirl.create :category,
-                          name_de: 'Leben in Deutschland', icon: 'e-misc',
-                          name_en: "Living in Germany",
-                          name_ar: "الحياة في ألمانيا",
-                          name_fr: "vivre en Allemagne",
-                          name_pl: "Życie w Niemczech",
-                          name_tr: "Almanya'da yaşamak",
-                          name_ru: "жить в Германии"
-misc.sections = [refugees]
-violence = FactoryGirl.create :category,
-                              name_de: 'Gewalt und Kriminalität',
-                              icon: 'f-violence',
-                              name_en: "Violence and crime",
-                              name_ar: "العنف والجريمة",
-                              name_fr: "violence et criminalité",
-                              name_pl: "Przemoc i przestpczość",
-                              name_tr: "şiddet ve suç",
-                              name_ru: "насилие и криминал"
-violence.sections = [family, refugees]
-crisis = FactoryGirl.create :category,
-                            name_de: 'Notfall', icon: 'g-crisis',
-                            name_en: "Emergency", name_ar: "طوارئ",
-                            name_fr: "urgence", name_pl: "Nagły wypadek",
-                            name_tr: "Acil durum", name_ru: "экстренный случай"
-crisis.sections = [family, refugees]
-
-refugee_mains = Category.mains.in_section(:refugees).all
-subcategories = []
-
-10.times do
-  subcategories.push(
-    FactoryGirl.create :category,
-                       parent: refugee_mains.sample
-  )
-end
-
 20.times do
-  FactoryGirl.create :category,
-                     parent: subcategories.sample
+  FactoryGirl.create :tag, :with_dummy_translations
 end
 
 FactoryGirl.create :offer, :approved,

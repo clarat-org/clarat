@@ -34,7 +34,7 @@ module AlgoliaStubber
     )
   end
 
-  def self.filled_response_stub query, names, categories = {}
+  def self.filled_response_stub query, names, tags = {}
     offers = []
     names.each do |name|
       offers << Offer.find_by_name(name)
@@ -54,7 +54,7 @@ module AlgoliaStubber
       'hitsPerPage' => 10,
       'processingTimeMS' => 1,
       'facets' => {
-        '_tags' => categories
+        '_tags' => tags
       },
       'query' => "#{query}",
       'params' => "query=#{query}"

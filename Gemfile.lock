@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 048d7c4e8a56a6b5eac82b88a950bdf4b97aa42c
+  revision: 3094d821c8dfb880dec62a6448b8f40b6e856d4c
   specs:
     clarat_base (0.1.4)
       aasm
@@ -73,11 +73,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    algoliasearch (1.14.0)
+    algoliasearch (1.18.0)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.20.1)
-      algoliasearch (~> 1.14.0)
+    algoliasearch-rails (1.20.3)
+      algoliasearch (>= 1.17.0, < 2.0.0)
       json (>= 1.5.1)
     arel (8.0.0)
     ast (2.3.0)
@@ -646,7 +646,7 @@ GEM
     httparty (0.15.6)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
-    i18n (0.9.0)
+    i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     i18n-js (3.0.1)
       i18n (~> 0.6, >= 0.6.6)
@@ -696,8 +696,8 @@ GEM
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.6.6)
-      mime-types (>= 1.16, < 4)
+    mail (2.7.0)
+      mini_mime (>= 0.1.1)
     memcachier (0.0.2)
     memory_test_fix (1.4.2)
       activerecord (~> 5.0)
@@ -711,7 +711,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_mime (0.1.4)
+    mini_mime (1.0.0)
     mini_portile2 (2.0.0)
     minitest (5.10.1)
     minitest-capybara (0.8.2)
@@ -744,7 +744,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.11)
       nokogiri
-    paper_trail (8.0.0)
+    paper_trail (8.0.1)
       activerecord (>= 4.2, < 5.2)
       request_store (~> 1.1)
     parallel (1.12.0)
@@ -962,7 +962,7 @@ GEM
     tilt (2.0.8)
     timecop (0.9.1)
     tins (1.15.0)
-    tzinfo (1.2.3)
+    tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uber (0.0.15)
     uglifier (3.2.0)

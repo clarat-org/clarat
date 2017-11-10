@@ -6,7 +6,7 @@ FactoryGirl.define do
   factory :location do
     # required
     sequence(:street) { |n| "Foobar #{n}" }
-    sequence(:display_name) { |n| "Foobar #{n}" }
+    label { "… #{name} | #{street} …" }
     sequence(:zip) { |n| n.to_s.rjust(5, '0') }
     hq { rand(9).zero? }
 
@@ -24,7 +24,11 @@ FactoryGirl.define do
     end
 
     # associations
-    federal_state { FederalState.all.to_a.sample || FederalState.create!(name: 'Berlin') }
+    federal_state do
+      FederalState.all.to_a.sample || FederalState.create!(
+        name: 'Berlin'
+      )
+    end
     city { City.all.to_a.sample || City.create!(name: 'Berlin') }
     organization { Organization.last || FactoryGirl.create(:organization) }
 

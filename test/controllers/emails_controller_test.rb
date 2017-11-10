@@ -9,7 +9,8 @@ describe EmailsController do
     before { email.update_column :aasm_state, 'informed' }
 
     it 'must work with a correct security code' do
-      get :subscribe, params: { id: email.id, security_code: email.security_code,
+      get :subscribe, params: { id: email.id,
+                                security_code: email.security_code,
                                 locale: 'de' }
       assert_redirected_to :section_choice
       assert_equal(
@@ -32,7 +33,8 @@ describe EmailsController do
     before { email.update_columns aasm_state: 'subscribed' }
 
     it 'must work with a correct security code' do
-      get :unsubscribe, params: { id: email.id, security_code: email.security_code,
+      get :unsubscribe, params: { id: email.id,
+                                  security_code: email.security_code,
                                   locale: 'de' }
       assert_redirected_to :section_choice
       assert_equal(
@@ -52,12 +54,16 @@ describe EmailsController do
 
   describe '#offers_index' do
     it 'must work for an email in family' do
-      get :offers_index, params: { id: email.id, locale: 'de', section: 'family' }
+      get :offers_index, params: { id: email.id,
+                                   locale: 'de',
+                                   section: 'family' }
       assert_response 200
     end
 
     it 'must work for an email in refugees' do
-      get :offers_index, params: { id: email.id, locale: 'de', section: 'refugees' }
+      get :offers_index, params: { id: email.id,
+                                   locale: 'de',
+                                   section: 'refugees' }
       assert_response 200
     end
   end

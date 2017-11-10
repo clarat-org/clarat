@@ -8,7 +8,6 @@ basic:
   aasm_state: approved
   created_by: 1
   approved_by: 2
-  split_base_id: 1
   section_id: 1
   location_id: 1
   area_id: 1

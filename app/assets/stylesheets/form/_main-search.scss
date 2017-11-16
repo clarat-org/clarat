@@ -131,6 +131,11 @@
     padding-right: 58px !important;
     padding-left: 14px;
   }
+
+  html[dir="rtl"] body.far & {
+    padding-right: 100px !important;
+    padding-left: 14px;
+  }
 }
 
 #search_form_query,
@@ -166,7 +171,7 @@
   }
 
   html[dir="rtl"][lang="fa"] & {
-    padding-right: 77px;
+    padding-right: 67px;
     padding-left: 14px;
   }
 }

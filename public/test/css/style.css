@@ -221,8 +221,13 @@ html[dir="rtl"] .Listing-results__headline, html[dir="rtl"]
 
 .Callout__section {
   padding: 26px 18px 0;
-  float: left;
-  width: 33%;
+  /*Temporary changes by Basti start*/
+  /*float: left;*/
+  /*width: 33%;*/
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  /*Temporary changes by Basti end*/
   flex-direction: row;
   display: flex; }
   @supports (display: grid) {

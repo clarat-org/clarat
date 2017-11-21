@@ -441,11 +441,12 @@ html[dir="rtl"] .Listing-results__headline, html[dir="rtl"]
 
 .article__headline--h2 {
   font-size: 1.714285714em;
-  margin: .5em 0;
+  margin: 1.5em 0 0.5em 0;
   line-height: 1.33; }
 
 .article__headline--h3 {
   font-size: 1.428571429em;
+  margin-top: 1em;
   margin-bottom: .25em;
   line-height: 1.33; }
 
@@ -494,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .infobox {
   padding: 10px 18px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   background-color: #f6eedc;
   border-left: 5px solid #F4B528; }
 
@@ -569,9 +570,13 @@ body {
 a {
   color: inherit; }
 
+img {
+  margin-left: 1em;
+}
+
 @media all and (min-width: 800px) {
   .article {
     font-size: 16px; }
   .infobox {
     float: right;
-    margin: 1em 1em 0 1em; } }
+    margin: 1em 1em 2em 1em; } }

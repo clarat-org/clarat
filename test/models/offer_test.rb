@@ -16,7 +16,7 @@ describe Offer do
     end
 
     it 'should return a string when there are multiple organizations' do
-      # add another division to split_base => at least one other organization
+      # add another division to offer => at least one other organization
       offers(:basic).divisions << divisions(:basic)
       offers(:basic).organization_display_name.must_equal(
         I18n.t('js.search_results.map.cooperation')

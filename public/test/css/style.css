@@ -289,7 +289,7 @@ html[dir="rtl"] .Listing-results__headline, html[dir="rtl"]
   color: #fff;
   font-family: 'Roboto Slab', serif;
   max-width: 60%;
-  font-size: 20px;
+  font-size: 16px;
   padding: .75em;
   line-height: 1.4; }
 
@@ -579,4 +579,52 @@ img {
     font-size: 16px; }
   .infobox {
     float: right;
-    margin: 1em 1em 2em 1em; } }
+    margin: 1em 1em 2em 1em; }
+
+  .hero__inner,
+  .article,
+  .header,
+  .form {
+    max-width: 1000px;
+  }
+
+  .hero__inner {
+    margin: auto;
+  }
+
+  .hero__logline,
+  .tags__headline {
+    font-size: 150%;
+  }
+
+  .hero__logline {
+    max-width: 450px;
+  }
+
+  .callout {
+    display: flex;
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+
+  .hero {
+    padding-bottom: 42.5%;
+    height: 0;
+  }
+
+  .form {
+    margin: -75px auto 0;
+  }
+
+  .tags {
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .form__input {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}

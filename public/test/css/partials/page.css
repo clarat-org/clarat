@@ -1,0 +1,4 @@
+.page__wrapper {
+  margin: auto;
+  max-width: var(--max-width)
+}

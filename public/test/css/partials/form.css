@@ -47,7 +47,7 @@
 
   .form {
     margin: 1em auto 0;
-    max-width: 1000px;
+    max-width: var(--max-width);
   }
 
   .form__submit {

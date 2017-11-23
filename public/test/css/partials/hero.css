@@ -28,7 +28,7 @@
   }
 
   .hero__inner {
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: auto;
   }
 

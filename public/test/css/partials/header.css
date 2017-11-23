@@ -28,6 +28,7 @@
 @media all and (min-width: 800px) {
 
   .header {
-    max-width: 1000px;
+    max-width: var(--max-width);
+    padding: 0;
   }
 }

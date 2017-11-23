@@ -1,15 +1,19 @@
 html {
   font-family: 'Roboto', serif;
-  color: #41311A; }
+  color: #41311A;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 a {
-  color: inherit; }
+  color: inherit;
+}
 
 img {
   margin-left: 1em;

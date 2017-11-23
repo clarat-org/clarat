@@ -57,7 +57,7 @@ body.template--pages-section_choice[data-section="family"] .Callout__headline {
 
   .callout {
     display: flex;
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: 2em auto;
   }
 

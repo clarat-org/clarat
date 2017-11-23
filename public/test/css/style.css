@@ -1,6 +1,7 @@
 @import url("vars.css");
 @import url("partials/typography.css");
 @import url("partials/base.css");
+@import url("partials/page.css");
 @import url("partials/callout.css");
 @import url("partials/listing-results.css");
 @import url("partials/article.css");
@@ -12,7 +13,7 @@
 @import url("partials/tags.css");
 @import url("partials/form.css");
 @import url("partials/steps.css");
-
+@import url("partials/solution-list.css");
 
 
 

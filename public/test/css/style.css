@@ -607,12 +607,22 @@ img {
   }
 
   .hero {
-    padding-bottom: 42.5%;
+    background-position: center center;
+    padding-bottom: 35.5%;
     height: 0;
   }
 
   .form {
-    margin: -75px auto 0;
+    margin: 1em auto 0;
+  }
+
+  .form__submit {
+    margin-right: 15px;
+    width: 115px;
+    background-position: left center;
+    text-align: right;
+    color: #af1d3f;
+    font-size: 13px;
   }
 
   .tags {

@@ -1,0 +1,26 @@
+.toc {
+  padding: 10px 18px;
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 33px;
+}
+
+.toc ul {
+  margin: 0;
+}
+
+[data-section="family"] .toc {
+  color: #af1c3f;
+}
+
+.toc__headline {
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  opacity: .75;
+  line-height: 1;
+}
+
+@media all and (min-width: 800px) {
+}

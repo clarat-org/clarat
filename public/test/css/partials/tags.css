@@ -1,0 +1,40 @@
+.tags__headline {
+  text-align: center;
+  color: #af1c3f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 1em;
+}
+
+.tags__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.tags__tags li {
+  padding: 5px 8px;
+  margin: 0 4px 8px;
+  background-color: #af1c3f;
+  color: #fff;
+}
+
+.tags__tags a {
+  text-decoration: none;
+}
+
+@media all and (min-width: 800px) {
+  .tags {
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .tags__headline {
+    font-size: 150%;
+  }
+}

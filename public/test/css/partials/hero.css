@@ -1,0 +1,39 @@
+.hero {
+  background: url(../../images/hero_family--1--medium.jpg);
+  height: 260px;
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.hero__logline {
+  background-color: rgba(175, 28, 63, 0.85);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  max-width: 60%;
+  font-size: 16px;
+  padding: .75em;
+  line-height: 1.4;
+}
+
+@media all and (min-width: 800px) {
+
+  .hero__logline {
+    max-width: 450px;
+  }
+
+  .hero {
+    background-position: center center;
+    padding-bottom: 35.5%;
+    height: 0;
+  }
+
+  .hero__inner {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .hero__logline {
+    font-size: 150%;
+  }
+
+}

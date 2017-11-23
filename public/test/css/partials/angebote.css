@@ -1,0 +1,26 @@
+.angebote {
+  padding: 10px 18px;
+  margin: 1em 0;
+  background-color: var(--yellow);
+  border-left: 5px solid var(--brand_brown);
+}
+
+.angebote ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.angebote a {
+  text-shadow: none;
+  color: var(--brand_brown);
+}
+
+.angebote a:hover {
+  color: #111112;
+}
+
+
+@media all and (min-width: 800px) {
+}

@@ -1,0 +1,16 @@
+html {
+  font-family: 'Roboto', serif;
+  color: #41311A; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+a {
+  color: inherit; }
+
+img {
+  margin-left: 1em;
+}

@@ -1,0 +1,15 @@
+.infobox {
+  padding: 10px 18px;
+  margin-bottom: 2em;
+  background-color: #f6eedc;
+  border-left: 5px solid #F4B528;
+}
+
+@media all and (min-width: 800px) {
+
+  .infobox {
+    float: right;
+    margin: 1em 1em 2em 1em;
+  }
+
+}

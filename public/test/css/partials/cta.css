@@ -1,0 +1,32 @@
+a.cta {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: none;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  color: var(--brand_brown);
+  margin: .5em 0 1em;
+  background: var(--brand_yellow) none;
+  letter-spacing: 1px;
+}
+
+a.cta:hover {
+  background-color: var(--brand_brown);
+  color: #FFF;
+  box-shadow: none;
+  border-color: var(--brand_brown)
+}
+
+.angebote a.cta {
+  background-color: var(--brand_brown);
+  color: #FFF;
+  box-shadow: none;
+  border-color: var(--brand_brown)
+}
+
+
+@media all and (min-width: 800px) {
+}

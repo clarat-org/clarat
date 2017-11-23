@@ -1,0 +1,121 @@
+.article {
+  padding: 0 18px;
+  font-size: 14px;
+}
+
+.article blockquote {
+  font-size: 200%;
+  line-height: 1.36;
+  margin: .25em;
+  padding: .75em 0;
+}
+
+.article cite {
+  display: block;
+  font-size: 50%;
+  text-indent: 10px;
+  margin-top: .75em;
+}
+
+.article a {
+  text-decoration: none;
+  padding: 10px 0;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 100% 1.5px;
+  background-position: center bottom 29%;
+  background-origin: padding-box;
+  text-shadow: 1px 0 #fff, 1px 0 #fff, 1px 0 #fff, -1px 0 #fff, -1px 0 #fff, -1px 0 #fff;
+  transition: color .1s ease-out;
+  color: #af1c3f;
+}
+
+.article a:hover {
+  color: #111112;
+}
+
+.article dfn {
+  font-style: normal;
+  border-bottom: 1px dotted;
+}
+
+.article hr {
+  margin: 1.5em 0;
+  border: 1px solid #f6eedc;
+}
+
+.article__headline {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+[data-section="family"] .article__headline {
+  color: #af1c3f;
+}
+
+.article__container {
+  z-index: 20;
+  height: 70px;
+  transition: height .2s ease-in;
+  font-size: inherit;
+  line-height: 1.85;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article__container p {
+  margin: 0 0 10px;
+}
+
+.article__container ul {
+  list-style-type: square;
+  padding-left: 1.25em;
+}
+
+.article__img {
+  max-width: calc(100% + 36px);
+  margin: 0 -18px;
+  overflow: hidden;
+}
+
+.article__caption {
+  padding: 0 1em 1.5em;
+  font-style: italic;
+}
+
+.article__headline--h1 {
+  font-size: 32px;
+  margin-bottom: .5em;
+}
+
+.article__headline--h1.article__headline {
+  color: #41311A;
+}
+
+.article__headline--h2 {
+  font-size: 1.714285714em;
+  margin: 1.5em 0 0.5em 0;
+  line-height: 1.33;
+}
+
+.article__headline--h3 {
+  font-size: 1.428571429em;
+  margin-top: 1em;
+  margin-bottom: .25em;
+  line-height: 1.33;
+}
+
+.article__headline.article__headline--h4 {
+  color: inherit;
+}
+
+@media all and (min-width: 800px) {
+
+  .article {
+    margin: auto;
+    font-size: 16px;
+    max-width: 1000px;
+  }
+}

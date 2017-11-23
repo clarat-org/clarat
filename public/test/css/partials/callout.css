@@ -1,0 +1,64 @@
+.Callout {
+  max-width: 1200px;
+  margin: 12px auto 45px;
+  overflow: auto;
+}
+
+@supports (display: grid) {
+  .Callout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Callout__section {
+    float: none;
+    width: auto;
+  }
+}
+
+.Callout__section {
+  padding: 26px 18px 0;
+  float: left;
+  width: 33%;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+}
+
+.Callout__icon {
+  margin-bottom: 12px;
+  fill: var(--brand_core_family);
+
+}
+
+.Callout__icon-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.Callout__headline {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: var(--brand_core_family);
+}
+
+body.template--pages-section_choice[data-section="refugees"] .Callout__headline,
+body.template--pages-section_choice[data-section="family"] .Callout__headline {
+  color: var(--brand_brown);
+}
+
+.Callout__text {
+  line-height: 1.45;
+}
+
+
+@media all and (min-width: 800px) {
+
+  .callout {
+    display: flex;
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+
+}

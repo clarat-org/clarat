@@ -10,7 +10,9 @@ class Website < ApplicationRecord
     url.ends_with?('.pdf') ? ' (PDF)' : ''
   end
 
+  # rubocop:disable Lint/UriEscapeUnescape
   def shorten_url
-    CGI.unescape(URI.parse(self.url).host)
+    URI.unescape(URI.parse(URI.escape(self.url)).host)
   end
+  # rubocop:enable Lint/UriEscapeUnescape
 end

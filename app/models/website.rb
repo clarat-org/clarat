@@ -11,6 +11,6 @@ class Website < ApplicationRecord
   end
 
   def shorten_url
-    CGI.unescape(URI.parse(self.url).host)
+    URI.decode(URI.parse(URI.encode(self.url)).host)
   end
 end

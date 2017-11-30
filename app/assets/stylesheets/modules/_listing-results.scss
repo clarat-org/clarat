@@ -118,7 +118,6 @@
     display: block;
     height: inherit;
     text-decoration: none;
-    min-height: 24px;
 
     &:hover {
       color: $brand_brown;
@@ -130,11 +129,12 @@
   @include roboto_bold;
   @include clarat_rounding_start;
   background: $brand_yellow;
-  padding: 7px 15px;
   min-height: 28px;
   font-size: 18px;
 
   a {
+    display: block;
+    padding: 7px 15px;
     color: $brand_white;
   }
 

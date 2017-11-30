@@ -5,22 +5,39 @@
   padding-left: 33px;
 }
 
+[dir="rtl"] .toc {
+  padding-right: 33px;
+  padding-left: 18px;
+}
+
 .toc ul {
   margin: 0;
 }
 
-[data-section="family"] .toc {
-  color: #af1c3f;
+[data-section="refugees"] .toc,
+[data-section="refugees"] .toc a {
+  color: #006b81
+}
+
+[data-section="family"] .toc,
+[data-section="family"] .toc a {
+  color: #af1c3f
 }
 
 .toc__headline {
-  writing-mode: vertical-rl;
+  transform: rotate(-90deg);
   position: absolute;
-  left: 0;
-  top: 16px;
+  left: -1em;
+  top: 1.5em;
   opacity: .75;
   line-height: 1;
 }
+
+[dir="rtl"] .toc__headline {
+  left: auto;
+  right: -.75em;
+}
+
 
 @media all and (min-width: 800px) {
 }

@@ -5,11 +5,20 @@
   border-left: 5px solid #F4B528;
 }
 
+[dir="rtl"] .infobox {
+  border-right: 5px solid #F4B528;
+  border-left: none;
+}
+
 @media all and (min-width: 800px) {
 
   .infobox {
     float: right;
     margin: 1em 1em 2em 1em;
+  }
+
+  [dir="rtl"] .infobox {
+    float: left;
   }
 
 }

@@ -1,6 +1,6 @@
 .article {
   padding: 0 18px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .article blockquote {
@@ -27,7 +27,15 @@
   background-origin: padding-box;
   text-shadow: 1px 0 #fff, 1px 0 #fff, 1px 0 #fff, -1px 0 #fff, -1px 0 #fff, -1px 0 #fff;
   transition: color .1s ease-out;
-  color: #af1c3f;
+  color: inherit;
+}
+
+[data-section="refugees"] .article a {
+  color: #006b81
+}
+
+[data-section="family"] .article a {
+  color: #af1c3f
 }
 
 .article a:hover {
@@ -49,11 +57,18 @@
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+[data-section="refugees"] .article__headline {
+  color: #006b81
 }
 
 [data-section="family"] .article__headline {
-  color: #af1c3f;
+  color: #af1c3f
 }
+
 
 .article__container {
   z-index: 20;
@@ -75,9 +90,11 @@
 }
 
 .article__img {
-  max-width: calc(100% + 36px);
-  margin: 0 -18px;
-  overflow: hidden;
+  margin: 0;
+}
+
+.article__img img {
+  max-width: 100%;
 }
 
 .article__caption {
@@ -115,7 +132,12 @@
 
   .article {
     margin: auto;
-    font-size: 16px;
+    font-size: 20px;
     max-width: var(--max-width);
+  }
+
+  .article__img {
+    max-width: 100%;
+    overflow: hidden;
   }
 }

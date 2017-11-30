@@ -1,0 +1,13 @@
+.layout {
+  margin: 1em 0 2em;
+}
+
+@media all and (min-width: 800px) {
+  .layout__row {
+    display: flex;
+  }
+
+  .layout__item {
+    flex: 1 1 auto;
+  }
+}

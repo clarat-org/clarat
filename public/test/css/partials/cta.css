@@ -7,7 +7,7 @@ a.cta {
   border-bottom: 2px solid;
   text-transform: uppercase;
   padding: 10px 18px;
-  color: var(--brand_brown);
+  color: var(--brand_brown) !important;
   margin: .5em 0 1em;
   background: var(--brand_yellow) none;
   letter-spacing: 1px;
@@ -15,7 +15,7 @@ a.cta {
 
 a.cta:hover {
   background-color: var(--brand_brown);
-  color: #FFF;
+  color: #FFF !important;
   box-shadow: none;
   border-color: var(--brand_brown)
 }

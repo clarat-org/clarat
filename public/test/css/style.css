@@ -5,14 +5,18 @@
 @import url("partials/callout.css");
 @import url("partials/listing-results.css");
 @import url("partials/article.css");
+@import url("partials/accordion.css");
 @import url("partials/angebote.css");
 @import url("partials/cta.css");
 @import url("partials/header.css");
 @import url("partials/hero.css");
 @import url("partials/toc.css");
+@import url("partials/layout.css");
 @import url("partials/tags.css");
 @import url("partials/form.css");
 @import url("partials/steps.css");
+@import url("partials/picto.css");
+@import url("partials/table.css");
 @import url("partials/solution-list.css");
 
 

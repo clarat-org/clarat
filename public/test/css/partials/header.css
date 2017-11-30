@@ -12,6 +12,10 @@
   margin-top: 18px;
 }
 
+[dir="rtl"] .header__hamburger {
+  float: right;
+}
+
 .header__logo {
   max-width: 90px;
   float: left;
@@ -19,11 +23,21 @@
   margin-top: 12px;
 }
 
+[dir="rtl"] .header__logo {
+  float: right;
+  margin-right: 16px;
+}
+
 .header__lang {
   max-width: 46px;
   margin-top: 18px;
   float: right;
 }
+
+[dir="rtl"] .header__lang {
+  float: left;
+}
+
 
 @media all and (min-width: 800px) {
 

@@ -4,14 +4,6 @@ ul.section-content--contact-person-list
     - if display_contacts? offer, contact
       - cache [offer, contact, index] do
         li
-          - if contact_name contact
-            = "#{contact_name contact}"
-            br
-
-          - if contact.responsibility?
-            = "#{contact.responsibility}"
-            br
-
           - if contact.local_number_1?
             = t '.phone'
             a< href="tel:#{contact.telephone_1}"
@@ -23,12 +15,6 @@ ul.section-content--contact-person-list
             a< href="tel:#{contact.telephone_2}"
               = contact.area_code_2
               =< tel_format contact.local_number_2
-            br
-          - if contact.fax_number?
-            = t '.fax'
-            a< href="fax:#{contact.fax}"
-              = contact.fax_area_code
-              =< tel_format contact.fax_number
             br
           - if contact.email_address?
             = t '.email'

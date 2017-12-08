@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :opening do
     day { Opening.enumerized_attributes.attributes['day'].values.sample }
     open { rand(0.0..24.0).hours.from_now }

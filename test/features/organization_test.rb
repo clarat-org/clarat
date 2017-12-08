@@ -7,7 +7,7 @@ feature 'Organization display' do
     offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'approved'
-    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
+    orga.update_columns website_id: FactoryBot.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
@@ -20,7 +20,7 @@ feature 'Organization display' do
     offer = offers(:basic)
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'all_done'
-    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
+    orga.update_columns website_id: FactoryBot.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.locations.first.street
@@ -35,7 +35,7 @@ feature 'Organization display' do
     orga = offer.organizations.first
     orga.update_columns aasm_state: 'approved'
     orga.locations.first.update_columns visible: false
-    orga.update_columns website_id: FactoryGirl.create(:website, :own, url: 'http://a.t.com/').id
+    orga.update_columns website_id: FactoryBot.create(:website, :own, url: 'http://a.t.com/').id
     visit unscoped_orga_path orga
     page.must_have_content orga.name
     page.must_have_content orga.website.shorten_url

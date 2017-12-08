@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :offer do
     # required fields
     name { FFaker::Lorem.words(rand(3..5)).join(' ').titleize }
@@ -15,13 +15,13 @@ FactoryGirl.define do
     end
     area { Area.first }
     approved_at nil
-    location { Location.last || FactoryGirl.create(:location) }
+    location { Location.last || FactoryBot.create(:location) }
     solution_category do
       SolutionCategory.last ||
-        FactoryGirl.create(:solution_category)
+        FactoryBot.create(:solution_category)
     end
     # every offer should have a creator!
-    created_by { User.all.sample.id || FactoryGirl.create(:researcher).id }
+    created_by { User.all.sample.id || FactoryBot.create(:researcher).id }
 
     # associations
     transient do
@@ -38,19 +38,19 @@ FactoryGirl.define do
 
     after :build do |offer, evaluator|
       organizations = evaluator.organizations ||
-                      [FactoryGirl.create(:organization, :approved)]
+                      [FactoryBot.create(:organization, :approved)]
       organization = organizations.first
       div = organization.divisions.first ||
-            FactoryGirl.create(:division, organization: organization)
+            FactoryBot.create(:division, organization: organization)
       offer.divisions << div
       # location
       if offer.personal?
         location = organization.locations.sample ||
                    if evaluator.fake_address
-                     FactoryGirl.create(:location, :fake_address,
-                                        organization: organization)
+                     FactoryBot.create(:location, :fake_address,
+                                       organization: organization)
                    else
-                     FactoryGirl.create(:location, organization: organization)
+                     FactoryBot.create(:location, organization: organization)
                    end
         offer.location = location
       end
@@ -65,7 +65,7 @@ FactoryGirl.define do
       evaluator.language_count.times do
         offer.language_filters << (
           LanguageFilter.all.sample ||
-            FactoryGirl.create(:language_filter)
+            FactoryBot.create(:language_filter)
         )
       end
     end
@@ -73,7 +73,7 @@ FactoryGirl.define do
     after :create do |offer, evaluator|
       # Contact People
       offer.organizations.count.times do
-        offer.contact_people << FactoryGirl.create(
+        offer.contact_people << FactoryBot.create(
           :contact_person, organization: offer.organizations.first
         )
       end
@@ -82,7 +82,7 @@ FactoryGirl.define do
       create_list :hyperlink, evaluator.website_count, linkable: offer
       evaluator.tag_count.times do
         offer.tags <<
-          FactoryGirl.create(
+          FactoryBot.create(
             :tag
           )
       end
@@ -91,14 +91,14 @@ FactoryGirl.define do
           if Opening.count != 0 && rand(2).zero?
             Opening.select(:id).all.sample
           else
-            FactoryGirl.create(:opening)
+            FactoryBot.create(:opening)
           end
         )
       end
       evaluator.audience_count.times do
         offer.target_audience_filters << (
           TargetAudienceFilter.all.sample ||
-            FactoryGirl.create(:target_audience_filter)
+            FactoryBot.create(:target_audience_filter)
         )
       end
     end
@@ -109,7 +109,7 @@ FactoryGirl.define do
                                              approved_at: Time.zone.now
         offer.reload
       end
-      approved_by { FactoryGirl.create(:researcher).id }
+      approved_by { FactoryBot.create(:researcher).id }
     end
 
     trait :family_section do
@@ -129,7 +129,7 @@ FactoryGirl.define do
     trait :with_email do
       after :create do |offer, _evaluator|
         offer.contact_people.first.update_column(
-          :email_id, FactoryGirl.create(:email).id
+          :email_id, FactoryBot.create(:email).id
         )
       end
     end
@@ -145,7 +145,7 @@ FactoryGirl.define do
     trait :with_dummy_translations do
       after :create do |offer, _evaluator|
         (I18n.available_locales - [:de]).each do |locale|
-          FactoryGirl.create(
+          FactoryBot.create(
             :offer_translation,
             offer: offer,
             locale: locale,
@@ -157,7 +157,7 @@ FactoryGirl.define do
           )
 
           offer.organizations.each do |organization|
-            FactoryGirl.create(
+            FactoryBot.create(
               :organization_translation,
               organization: organization,
               locale: locale,

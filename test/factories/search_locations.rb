@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :search_location do
     query { FFaker::AddressDE.city }
     latitude { rand 0.0..90.0 }

@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :organization do
     # required
     name { FFaker::Lorem.words(rand(2..3)).join(' ').titleize }
@@ -11,12 +11,12 @@ FactoryGirl.define do
       Organization.enumerized_attributes.attributes['legal_form'].values.sample
     end
     charitable { FFaker::Boolean.maybe }
-    website { FactoryGirl.create(:website, host: 'own') }
+    website { FactoryBot.create(:website, host: 'own') }
 
     # optional
     founded { maybe((1980..Time.zone.now.year).to_a.sample) }
     mailings 'enabled'
-    created_by { FactoryGirl.create(:researcher).id }
+    created_by { FactoryBot.create(:researcher).id }
     locations_count 1
     slug 'slug'
     # associations
@@ -40,7 +40,7 @@ FactoryGirl.define do
       end
       # create an initial assignment
       # orga.assignments <<
-      #   FactoryGirl.create(
+      #   FactoryBot.create(
       #     :assignment,
       #     assignable_type: 'Organization',
       #     assignable_id: orga.id
@@ -54,7 +54,7 @@ FactoryGirl.define do
                                                    approved_at: Time.zone.now
         orga.reload
       end
-      approved_by { FactoryGirl.create(:researcher).id }
+      approved_by { FactoryBot.create(:researcher).id }
       approved_at { Time.zone.now }
     end
 

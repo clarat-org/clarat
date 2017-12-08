@@ -13,7 +13,7 @@ describe SubscriptionsController do
 
   describe "POST 'create'" do
     it 'should work with valid email' do
-      attrs = FactoryGirl.attributes_for :subscription
+      attrs = FactoryBot.attributes_for :subscription
       assert_difference('Subscription.count', 1) do
         post :create, params: { locale: 'de', format: :js, subscription: attrs }
       end

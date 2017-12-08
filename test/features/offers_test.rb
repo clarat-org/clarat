@@ -21,8 +21,8 @@ feature 'Offer display' do
   end
 
   scenario 'Approved offer gets shown in a different language (English)' do
-    offer = FactoryGirl.create :offer, :approved, :with_email,
-                               :with_dummy_translations # test obfuscation
+    offer = FactoryBot.create :offer, :approved, :with_email,
+                              :with_dummy_translations # test obfuscation
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
 
     visit offer_en_path offer, section: offer.section.identifier
@@ -31,8 +31,8 @@ feature 'Offer display' do
   end
 
   scenario 'Expired offer gets shown in a different language (English)' do
-    offer = FactoryGirl.create :offer, :approved, :with_email,
-                               :with_dummy_translations # test obfuscation
+    offer = FactoryBot.create :offer, :approved, :with_email,
+                              :with_dummy_translations # test obfuscation
     offer.update_columns aasm_state: 'expired'
     visit offer_en_path offer, section: offer.section.identifier
     page.must_have_content 'GET READY FOR CANADA'
@@ -40,9 +40,9 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view has evaluated markdown' do
-    offer = FactoryGirl.create :offer, :approved, :with_markdown,
-                               description: 'A [link](http://www.example.org)',
-                               old_next_steps: "A\n\n- list"
+    offer = FactoryBot.create :offer, :approved, :with_markdown,
+                              description: 'A [link](http://www.example.org)',
+                              old_next_steps: "A\n\n- list"
 
     visit unscoped_offer_path offer
     page.must_have_link 'link'
@@ -50,7 +50,7 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view displays new next steps instead of old if they exist' do
-    offer = FactoryGirl.create :offer, :approved, old_next_steps: 'Step one.'
+    offer = FactoryBot.create :offer, :approved, old_next_steps: 'Step one.'
     visit unscoped_offer_path offer
     page.must_have_content 'Step one.'
     page.wont_have_content 'basicNextStep'
@@ -61,8 +61,8 @@ feature 'Offer display' do
   end
 
   scenario 'Offer view displays translated old/new next steps' do
-    offer = FactoryGirl.create :offer, :approved, :with_dummy_translations,
-                               old_next_steps: 'Step one.'
+    offer = FactoryBot.create :offer, :approved, :with_dummy_translations,
+                              old_next_steps: 'Step one.'
     # TranslationGenerationWorker.new.perform :en, 'Offer', offer.id
     offer.update_columns section_id: 2
     next_steps(:basic).update_column :text_en, 'English step 1.'
@@ -82,8 +82,8 @@ feature 'Offer display' do
   end
 
   scenario 'Multiple contact persons are present' do
-    offer = FactoryGirl.create :offer, :approved
-    offer.contact_people << FactoryGirl.create(
+    offer = FactoryBot.create :offer, :approved
+    offer.contact_people << FactoryBot.create(
       :contact_person, :all_fields, :with_telephone,
       organization: offer.organizations.first
     )
@@ -94,10 +94,10 @@ feature 'Offer display' do
   end
 
   scenario 'With a non PDF (document) and PDF (own) website' do
-    offer = FactoryGirl.create :offer, :approved
+    offer = FactoryBot.create :offer, :approved
     offer.websites = []
-    offer.websites << FactoryGirl.create(:website, :pdf)
-    offer.websites << FactoryGirl.create(:website, :own)
+    offer.websites << FactoryBot.create(:website, :pdf)
+    offer.websites << FactoryBot.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
       '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\
@@ -107,10 +107,10 @@ feature 'Offer display' do
   end
 
   scenario 'With a non PDF and PDF (both own) website' do
-    offer = FactoryGirl.create :offer, :approved
+    offer = FactoryBot.create :offer, :approved
     offer.websites = []
-    offer.websites << FactoryGirl.create(:website, :pdf, host: 'own')
-    offer.websites << FactoryGirl.create(:website, :own)
+    offer.websites << FactoryBot.create(:website, :pdf, host: 'own')
+    offer.websites << FactoryBot.create(:website, :own)
     visit unscoped_offer_path offer
     page.body.must_match(
       '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\
@@ -119,13 +119,13 @@ feature 'Offer display' do
   end
 
   scenario 'With three own websites, one of which is a pdf' do
-    offer = FactoryGirl.create :offer, :approved
+    offer = FactoryBot.create :offer, :approved
     offer.websites = []
-    offer.websites << FactoryGirl.create(:website, :pdf, host: 'own')
-    offer.websites << FactoryGirl.create(:website, :own)
-    offer.websites << FactoryGirl.create(:website,
-                                         host: 'own',
-                                         url: 'http://www.example2.com/')
+    offer.websites << FactoryBot.create(:website, :pdf, host: 'own')
+    offer.websites << FactoryBot.create(:website, :own)
+    offer.websites << FactoryBot.create(:website,
+                                        host: 'own',
+                                        url: 'http://www.example2.com/')
     visit unscoped_offer_path offer
     page.body.must_match(
       '<a target="_blank" href="http://www.example.com/">www.example.com</a>'\

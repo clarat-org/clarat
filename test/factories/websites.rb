@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :website do
     host { Website.enumerized_attributes.attributes['host'].values.sample }
     sequence(:url) do |n|

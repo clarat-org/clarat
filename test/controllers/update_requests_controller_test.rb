@@ -13,7 +13,7 @@ describe UpdateRequestsController do
 
   describe "POST 'create'" do
     it 'should work with valid email' do
-      attrs = FactoryGirl.attributes_for :update_request
+      attrs = FactoryBot.attributes_for :update_request
       assert_difference('UpdateRequest.count', 1) do
         post :create, params: { locale: 'de',
                                 format: :js,

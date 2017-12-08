@@ -1,5 +1,7 @@
 contact_one:
   organization_id: 1
+  email_id: 1
 
 contact_two:
   organization_id: 1
+  email_id: 1

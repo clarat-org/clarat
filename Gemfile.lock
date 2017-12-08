@@ -5,8 +5,9 @@ GIT
     dynamic_sitemaps (2.0.0)
       aws-sdk
 
-PATH
-  remote: ../clarat_base
+GIT
+  remote: git://github.com/clarat-org/clarat_base.git
+  revision: 32601bb75ab238c14d87539f0dbdaa3930b1b775
   specs:
     clarat_base (0.1.4)
       aasm

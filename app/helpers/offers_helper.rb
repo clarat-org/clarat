@@ -15,7 +15,11 @@ module OffersHelper
   end
 
   def display_contacts? offer, contact
-    !offer.hide_contact_people || contact.spoc
+    (!offer.hide_contact_people || contact.spoc) && (
+      !contact.local_number_1.nil? ||
+      !contact.local_number_2.nil? ||
+      !contact.email_address.nil?
+    )
   end
 
   def contact_name contact

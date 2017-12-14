@@ -669,7 +669,7 @@ ar:
         gender: النوع
         language: اللغة
         main: 
-        residency_status: 
+        residency_status: وضع الإقامة
         sort: رتب حسب
         target_audience: المساعدة لمن؟
       option_any: سواء

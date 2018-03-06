@@ -28,7 +28,9 @@ class OffersController < ApplicationController
   def section_forward
     offer = Offer.visible_in_frontend.friendly.find(params[:id])
     offer_section = offer.canonical_section
-    redirect_to offer_path(section: offer_section, id: offer.slug)
+    raise ActiveRecord::RecordNotFound unless offer_section
+    route_name = t('routes.offers', locale: params['locale'])
+    redirect_to "/#{params['locale']}/#{offer_section}/#{route_name}/#{offer.slug}", status: 301
   end
 
   private

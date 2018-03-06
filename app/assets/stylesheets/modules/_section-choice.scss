@@ -3,7 +3,7 @@
   list-style: none;
   display: flex;
   padding: 0 25px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .section-choice__item {
@@ -51,6 +51,11 @@
 
 .section-choice__stage--family {
   background-image: image-url('reduced_illu_family.svg');
+}
+
+.section-choice__centered {
+  text-align: center;
+  font-size: 20px;
 }
 
 .section-choice__stage--refugees {

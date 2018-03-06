@@ -1,5 +1,4 @@
 en:
-  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +24,6 @@ en:
         identifier:
           anonymous: anonymously
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -372,12 +368,10 @@ en:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Why isn’t my organization on clarat?
-  charged: 
   conf:
     current_location: My location
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential: 
   contacts:
     create:
       success: Message successfully sent.
@@ -395,11 +389,6 @@ en:
         name_placeholder: Name (obligatory)
         send: Send
         send_us_a_message: Write us a message
-  day_and_night: 
-  de:
-    en:
-      conf: 
-      current_location: 
   emails:
     offers_index:
       family:
@@ -430,9 +419,6 @@ en:
       success_html: |-
         You have successfully unsubscribed from further e-mail notifications.
         (<a href="%{subscribe_href}">subscribe again</a>)
-  en:
-    conf:
-      current_location: 
   enumerize:
     search_form:
       age:
@@ -658,7 +644,6 @@ en:
         relevance: Relevance
   formtastic:
     required: required
-  free: 
   js:
     ajax_error:
       error: Search error
@@ -921,20 +906,6 @@ en:
           text: clarat.org is currently under construction
       callout:
         callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
           how:
             family:
               heading: How does clarat work?
@@ -953,34 +924,23 @@ en:
             family:
               heading: Who can find help here?
               text: Every family in Germany, parents, their children and pregnant women can find help here. Friends and relatives can, too.
-            heading: 
             refugees:
               heading: Who can find help here?
               text: Everyone who has come to Germany as a refugee. Refugee children and young people, too. And people who are looking for help for refugees.
         callout_neutral:
           how:
             heading: How do we help?
-            refugees:
-              heading: 
-              text: 
             text: We help you find the right help near you. We sort all the support services and make them understandable through simple language.
           what:
             heading: What do we want?
-            refugees:
-              heading: 
-              text: 
             text: clarat explains - about support services in Germany. Because we want everyone to find the help they need.
           who:
             heading: Who are we?
-            refugees:
-              heading: 
-              text: 
             text: We are a non-profit project of the Benckiser Stiftung Zukunft. The foundation aims to help children, young people and families in difficult situations.
       footer:
         about: About us
         blog: Blog
         contact: Contact
-        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: FAQ
@@ -1025,15 +985,7 @@ en:
             many support services and programmes in Berlin. Soon we will be collecting support services for other
             cities as well. And we appreciate your help: is there anything you think we could do better?
             Or is something not working? Simply
-        more_information_overlay: 
-        send: 
         unavailable_location_modal: At the moment, we only have telephone or online support services for your current location. That means you can get help over the telephone. Or online. For example, via e-mail or over chat. We will let you know as soon as there are support services near you. Please enter your e-mail address here.
-      nav_lang:
-        legal_title: Legal text can only be read in German.
-        title: |-
-          Automated translations!
-          <br><br>
-          On clarat, some of the texts in your language have been translated by Google Translate. These texts might sound a bit strange or wrong sometimes. We are working to improve the quality of our translations.
       navigation:
         category_headline: Search by categories
         claim:
@@ -1053,7 +1005,6 @@ en:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
             family: "‹ to clarat refugees"
             refugees: "‹ to clarat family"
           mobile:
@@ -1061,19 +1012,9 @@ en:
               family: to the <span class="top-bar__emphasis">clarat family</span> homepage
               refugees: to the <span class="top-bar__emphasis">clarat refugees</span> homepage
             switch:
-              2017-07-17, visits=2: 
               family: switch to <span class="top-bar__emphasis">clarat refugees</span>
               refugees: switch to <span class="top-bar__emphasis">clarat family</span>
         title: Automated translations!
-    widget:
-      category_headline: 
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
-    validations:
-      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1107,7 +1048,6 @@ en:
           target_audience:
             children: for children and teenagers
             family_children: for children and teenagers
-            family_everyone: 
             family_nuclear_family: for families
             family_parents: for parents
             family_parents_to_be: for parents to be
@@ -1147,12 +1087,6 @@ en:
           long: Support services and programmes connected with...
           short: Support services about  …
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
       last_update: Entry last modified on
       next_steps:
         code_word: 'This is what the service provider calls this support service:'
@@ -1172,19 +1106,13 @@ en:
         explanation:
           accessibility: That means you can come here if you're in a wheelchair. Or if you have a pushchair or a pram.
           anonymous: That means you won't have to tell anyone your name.
-          charged: 
           confidential: That means the staff won't tell anybody-else anything you tell them.
-          day_and_night: 
-          free: 
         title:
           accessibility: disabled and pushchair access
           anonymous: anonymous
           charged: for a fee
           confidential: confidential
           day_and_night: day and night
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
           free: free of charge
       trait_filters_headline: Additional information
       website_section:
@@ -1445,11 +1373,9 @@ en:
         heading: How does clarat work?
         text: "First of all, just enter the problem you need help with. Or whatever\nit is that's worrying you. Or choose from our categories. And we'll show \nyou all the relevant support services offers in your neighbourhood. \nWe'll also tell you how to get this support. For example, if you should \ncall or write an email. Or, just stop by."
       meta_description:
-        2017-07-17, visits=2: 
         family: With clarat family, you can easily find help for children, teenagers and families. Clear and understandable. In many languages. All over Berlin. And around Germany.
         refugees: With clarat refugees, you can easily find help for refugees. Clear and understandable. In many languages. Near you. And all over Germany.
       meta_title:
-        2017-07-17, visits=2: 
         family: Find help easily | clarat family
         refugees: Find help easily | clarat refugees
       title:
@@ -1599,6 +1525,7 @@ en:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    family: 
   shareds:
     forms:
       fill_field: Please fill out this field
@@ -1614,21 +1541,6 @@ en:
           family: Click here to get to clarat family. In clarat family, you can search for help and support services for children, teenagers and families.
           refugees: Click here to get to clarat refugees. In clarat refugees, you can search for help and support services for refugees.
   simple_form:
-    hints:
-      contact:
-        new:
-          email: 
-          name: 
-        show:
-          email: 
-          name: 
-        show_offer:
-          email: 
-          name: 
-    placeholders:
-      search_form:
-        home:
-          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1652,4 +1564,3 @@ en:
     new:
       button: Message received
       email_placeholder: Email address
-      placeholder: 

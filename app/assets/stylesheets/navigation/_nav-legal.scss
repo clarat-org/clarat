@@ -17,8 +17,11 @@
 
 .nav-legal__listitem {
   float: left;
-  margin-left: 15px;
+  margin-left: 50px;
   position: relative;
+  line-height: 20px;
+  text-align: left;
+  font-weight: 500;
 
   a {
     color: $brand_brown;

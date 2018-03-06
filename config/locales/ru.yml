@@ -1,5 +1,4 @@
 ru:
-  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +24,6 @@ ru:
         identifier:
           anonymous: 
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
   cells:
     contact_people:
       dr: Доктор
@@ -430,12 +426,10 @@ ru:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Почему моей организации нет на странице clarat?
-  charged: 
   conf:
     current_location: Мое местонахождения
     default_latlng: 52.520007,13.404954
     default_location: Берлин
-  confidential: 
   contacts:
     create:
       success: Сообщение было отправлено успешно.
@@ -453,11 +447,6 @@ ru:
         name_placeholder: Имя (обязательно)
         send: Отправить
         send_us_a_message: Напиши нам сообщение.
-  day_and_night: 
-  de:
-    en:
-      conf: 
-      current_location: 
   emails:
     offers_index:
       family:
@@ -488,9 +477,6 @@ ru:
       success_html: |
         Ты успешно отменил подписку на рассылку сообщений.
         (<a href="%{subscribe_href}">возобновить подписку</a>)
-  en:
-    conf:
-      current_location: 
   enumerize:
     search_form:
       age:
@@ -716,7 +702,6 @@ ru:
         relevance: Релевантность
   formtastic:
     required: required
-  free: 
   js:
     ajax_error:
       error: Ошибка в поиске
@@ -984,20 +969,6 @@ ru:
           text: clarat.org в данный момент находится в развитии
       callout:
         callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
           how:
             family:
               heading: 
@@ -1016,34 +987,23 @@ ru:
             family:
               heading: 
               text: 
-            heading: 
             refugees:
               heading: 
               text: 
         callout_neutral:
           how:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
           what:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
           who:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
       footer:
         about: О нас
         blog: Блог
         contact: Контакты
-        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: Частые вопросы
@@ -1089,12 +1049,7 @@ ru:
             предложения для других городов. Мы будем рады твоей помощи:
             ты что-либо заметил, что нам стоит улучшить? Или что-то
             рабоатет не правильно? Тогда
-        more_information_overlay: 
-        send: 
         unavailable_location_modal: "Для твоего местонахождения на данный момент у clarat есть только\nпомощь по телефону или он-лайн. Это значит, тебе помогут по телефону \nили по интернету. Например по E-Mail или в чате. Мы тебе обязательно\nсообщим, как только у clarat появится для тебя помощь рядом с тобой.\nДля этого введи здесь свой E-Mail адрес.\n"
-      nav_lang:
-        legal_title: Юридический текст clarat можно читать только на немецком языке.
-        title: "Автоматический перевод! \n<br><br>\nНекоторые тексты clarat переведены на твой язык Google Translate. Иногда эти тексты могут звучать несколько странно и неправильно. Мы работаем над улучшением качества наших переводов."
       navigation:
         category_headline: Или поиск по категориям
         claim:
@@ -1118,7 +1073,6 @@ ru:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
             family: "‹ к clarat refugees"
             refugees: "‹ к clarat family"
           mobile:
@@ -1126,19 +1080,9 @@ ru:
               family: 'к Стартовой странице <span class="top-bar__emphasis">clarat family</span> '
               refugees: к Стартовой странице <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              2017-07-17, visits=2: 
               family: перейти к <span class="top-bar__emphasis">clarat refugees</span>
               refugees: перейти к к <span class="top-bar__emphasis">clarat family</span>
         title: Автоматический перевод!
-    widget:
-      category_headline: 
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
-    validations:
-      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1174,7 +1118,6 @@ ru:
           target_audience:
             children: для детей и молодежи
             family_children: для детей и молодежи
-            family_everyone: 
             family_nuclear_family: для семей
             family_parents: для родителей
             family_parents_to_be: для будущих родителей
@@ -1215,12 +1158,6 @@ ru:
           long: Предложения по теме …
           short: Предложения …
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
       last_update: В последний раз обновлено
       next_steps:
         code_word: 'Так называется помощь поставщика:'
@@ -1240,19 +1177,13 @@ ru:
         explanation:
           accessibility: 
           anonymous: 
-          charged: 
           confidential: 
-          day_and_night: 
-          free: 
         title:
           accessibility: безбарьерный
           anonymous: анонимный
           charged: 'платный '
           confidential: конфиденциальный
           day_and_night: круглосуточный
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
           free: бесплатный
       trait_filters_headline: 
       website_section:
@@ -1422,11 +1353,9 @@ ru:
         heading: Kак работает clarat?
         text: Напиши, в чем именно заключается твоя проблема. Или что тебя волнует. Или выбери из предложенных тем. И ты сразу найдешь все возможные варианты помощи и поддержки поблизости. Мы также расскажем тебе, как ты можешь получить эту помощь. Например, нужно ли позвонить, написать email или прийти лично.
       meta_description:
-        2017-07-17, visits=2: 
         family: 'С помощью clarat family ты быстро найдешь поддержку. Для детей, молодежи и семей. В интернете. '
         refugees: 
       meta_title:
-        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:
@@ -1568,6 +1497,7 @@ ru:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    family: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле
@@ -1583,21 +1513,6 @@ ru:
           family: Если ты нажмешь сюда, то перейдешь к clarat Family. В clarat Family ты найдешь помощь для детей, молодежи и семей.
           refugees: Если ты нажмешь сюда, то перейдешь к clarat Refugees. В clarat Refugees ты найдешь помощь для беженцев.
   simple_form:
-    hints:
-      contact:
-        new:
-          email: 
-          name: 
-        show:
-          email: 
-          name: 
-        show_offer:
-          email: 
-          name: 
-    placeholders:
-      search_form:
-        home:
-          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1621,4 +1536,3 @@ ru:
     new:
       button: Получить сообщение
       email_placeholder: E-Mail адрес
-      placeholder: 

@@ -1,5 +1,4 @@
 fr:
-  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +24,6 @@ fr:
         identifier:
           anonymous: 
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
   cells:
     contact_people:
       dr: Dr.
@@ -406,12 +402,10 @@ fr:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: Mon organisation n’est pas sur clarat, pourquoi?
-  charged: 
   conf:
     current_location: Ma localisation
     default_latlng: 52.520007,13.404954
     default_location: Berlin
-  confidential: 
   contacts:
     create:
       success: Le message a été envoyé avec succès.
@@ -429,11 +423,6 @@ fr:
         name_placeholder: Nom (obligatoire)
         send: Envoyer
         send_us_a_message: Écris-nous un message
-  day_and_night: 
-  de:
-    en:
-      conf: 
-      current_location: 
   emails:
     offers_index:
       family:
@@ -464,9 +453,6 @@ fr:
         (<a href="%{unsubscribe_href}">réinscription</a>)
     unsubscribe:
       success_html: "Tu t'es désinscrit avec succès pour les notifications \n(<a href=\"%{subscribe_href}\">réinscription</a>)"
-  en:
-    conf:
-      current_location: 
   enumerize:
     search_form:
       age:
@@ -692,7 +678,6 @@ fr:
         relevance: Pertinence
   formtastic:
     required: required
-  free: 
   js:
     ajax_error:
       error: erreur de recherche
@@ -957,20 +942,6 @@ fr:
           text: clarat.org est en train d'être actualisée
       callout:
         callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
           how:
             family:
               heading: 
@@ -989,34 +960,23 @@ fr:
             family:
               heading: 
               text: 
-            heading: 
             refugees:
               heading: 
               text: 
         callout_neutral:
           how:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
           what:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
           who:
             heading: 
-            refugees:
-              heading: 
-              text: 
             text: 
       footer:
         about: À propos de nous
         blog: Blog
         contact: Contact
-        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: Questions fréquentes
@@ -1059,12 +1019,7 @@ fr:
         beta_modal:
           link: écris-nous tout simplement un message
           text: Notre site internet clarat.org est encore tout nouveau. Pour Berlin, tu peux déjà trouver beaucoup de offres d'aide. Bientôt , nous allons collecter aussi des listes d'aide pour d'autres villes. Nous nous réjouissons que tu aides si tu vois quelque chose que nous pourrions améliorer ou qui ne fonctionne pas correctement. donc
-        more_information_overlay: 
-        send: 
         unavailable_location_modal: "Pour ta localisation, il n'y a actuellement sur clarat que des services téléphoniques ou en ligne. C'est-à-dire, qu'on aide par téléphone ou en ligne. Par exemple par e-mail ou sur une discussion en ligne. Nous t'informons volontiers dès qu'il y aura de l'aide tout proche de chez toi. \nTape ton adresse e-mail ici"
-      nav_lang:
-        legal_title: Sur clarat, le texte légal ne peut être lu qu'en allemand.
-        title: 
       navigation:
         category_headline: ou recherches par catégories
         claim:
@@ -1084,7 +1039,6 @@ fr:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
             family: "‹ aller à la page clarat refugees"
             refugees: "‹ aller à la page clarat family"
           mobile:
@@ -1092,19 +1046,9 @@ fr:
               family: aller à la page de démarrage de <span class="top-bar__emphasis">clarat family</span>
               refugees: aller à la page de démarrage de <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              2017-07-17, visits=2: 
               family: aller à la page <span class="top-bar__emphasis">clarat refugees</span>
               refugees: aller à la page <span class="top-bar__emphasis">clarat family</span>
         title: Traductions automatiques
-    widget:
-      category_headline: 
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
-    validations:
-      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1138,7 +1082,6 @@ fr:
           target_audience:
             children: pour les enfants et les ados
             family_children: pour les enfants et les ados
-            family_everyone: 
             family_nuclear_family: pour les familles
             family_parents: pour les parents
             family_parents_to_be: pour de futurs parents
@@ -1174,12 +1117,6 @@ fr:
           long: services sur le thème …
           short: services pour...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
       last_update: Dernière entrée traitée le
       next_steps:
         code_word: 'Chez ce fournisseur, l''aide s’appelle :'
@@ -1199,19 +1136,13 @@ fr:
         explanation:
           accessibility: 
           anonymous: 
-          charged: 
           confidential: 
-          day_and_night: 
-          free: 
         title:
           accessibility: 
           anonymous: 
           charged: 
           confidential: 
           day_and_night: 
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
           free: 
       trait_filters_headline: 
       website_section:
@@ -1379,11 +1310,9 @@ fr:
 '
         text: Tape dans le champ de recherche le problème pour lequel tu as besoin d’aide. Ou ce qui t’inquiète. Ou choisis parmi nos thèmes. Tu verras toutes les offres d’aide près de chez toi. On t’explique aussi comment tu peux recevoir de l’aide. C’est-à-dire, s’il faut appeler quelqu’un ou s’il faut écrire un courriel. Ou si tu peux tout simplement passer.
       meta_description:
-        2017-07-17, visits=2: 
         family: 
         refugees: 
       meta_title:
-        2017-07-17, visits=2: 
         family: 
         refugees: 
       title:
@@ -1529,6 +1458,7 @@ fr:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    family: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ
@@ -1542,21 +1472,6 @@ fr:
           family: En cliquant ici, tu te retrouves sur clarat family. Sur clarat family, tu peux faire recherche pour de l'aide pour des enfants, des ados et des familles.
           refugees: en cliquant ici, tu te retrouves sur clarat Refugees. Sur clarat Refugees, tu peux faire une recherche d'aide pour les réfugiés.
   simple_form:
-    hints:
-      contact:
-        new:
-          email: 
-          name: 
-        show:
-          email: 
-          name: 
-        show_offer:
-          email: 
-          name: 
-    placeholders:
-      search_form:
-        home:
-          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1576,4 +1491,3 @@ fr:
     new:
       button: Message reçu
       email_placeholder: Adresse électronique
-      placeholder: 

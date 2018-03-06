@@ -1,5 +1,4 @@
 fa:
-  accessibility: 
   activerecord:
     attributes:
       contact:
@@ -25,9 +24,6 @@ fa:
         identifier:
           anonymous: گمنام
       update_request: NOTRANSLATE
-  anonymous: 
-  arabisch: 
-  arb: 
   cells:
     contact_people:
       dr: 'دکتر:'
@@ -373,12 +369,10 @@ fa:
             url: mailto:post@clarat.org
             var: mailto_clarat
           question: چرا نامی از سازمان من در clarat موجود نیست؟
-  charged: 
   conf:
     current_location: محل سکونت من
     default_latlng: 52.520007,13.404954
     default_location: برلین
-  confidential: 
   contacts:
     create:
       success: پیام شما با موفقیت فرستاده شد.
@@ -396,11 +390,6 @@ fa:
         name_placeholder: نام(اجباری)
         send: فرستادن
         send_us_a_message: برای ما پیغام بفرست
-  day_and_night: 
-  de:
-    en:
-      conf: 
-      current_location: 
   emails:
     offers_index:
       family:
@@ -427,9 +416,6 @@ fa:
         (<a href="%{unsubscribe_href}">wieder abmelden</a>)
     unsubscribe:
       success_html: تو با موفقیت از بخش پیغام ها بعدی خارج شدی(<a href="%{subscribe_href}">wieder anmelden</a>)
-  en:
-    conf:
-      current_location: 
   enumerize:
     search_form:
       age:
@@ -655,7 +641,6 @@ fa:
         relevance: Relevance
   formtastic:
     required: required
-  free: 
   js:
     ajax_error:
       error: اشتباه در جستجو
@@ -932,20 +917,6 @@ fa:
           text: clarat.org در حال بازسازی است
       callout:
         callout:
-          callout:
-            how:
-              text: 
-            refugees:
-              how:
-                heading: 
-                text: 
-              who:
-                text: 
-            what:
-              heading: 
-              text: 
-            who:
-              heading: 
           how:
             family:
               heading: نحوه عملکرد صفحه clarat به چه صورت است؟
@@ -964,34 +935,23 @@ fa:
             family:
               heading: چه کسانی در اینجا کمک پیدا می کنند؟
               text: همه خانواده‌ها در آلمان.والدین،کودکان آنها و زنان باردار و همچنین دوستان و اقوام آنها در اینجا کمک پیدا می کنند.
-            heading: 
             refugees:
               heading: چه کسانی در اینجا کمک پیدا می کنند؟
               text: همه افرادی که به آلمان پناه آورده‌اند.حتی کودکان و جوانان پناهنده و افرادی که در جستجوی کمک برای پناهندگان هستند.
         callout_neutral:
           how:
             heading: ما چگونه کمک می کنیم؟
-            refugees:
-              heading: 
-              text: 
             text: ما تو را در پیدا کردن کمک مناسب،یاری می کنیم.ما به تمام کمکها نظم می دهیم و از طریق یک زبان ساده آنها را قابل درک می کنیم.
           what:
             heading: هدف ما چیست؟
-            refugees:
-              heading: 
-              text: 
             text: صفحه clarat پیشنهادهای کمکی در آلمان را به صورت شفاف نشان می دهد.ما می خواهیم هر کسی که نیاز به کمک دارد آن را پیدا کند.
           who:
             heading: ما کی هستیم؟
-            refugees:
-              heading: 
-              text: 
             text: ما یک پروژه عام‌المنفعه وابسته به بنیاد Benckiser Stiftung Zukunft هستیم.هدف این بنیاد کمک به کودکان،جوانان و خانواده های دارای شرایط سخت در زندگی است.
       footer:
         about: در مورد ما
         blog: بلاگ
         contact: تماس
-        facebook-family: 
         facebook_family: clarat family
         facebook_refugees: clarat refugees
         faq: سوالات رایج
@@ -1014,7 +974,7 @@ fa:
         contact: تماس
         faq: سوالات رایج
         languages:
-          ar: 
+          ar: عربی
           de: 
           en: 
           fa: فارسی
@@ -1032,15 +992,7 @@ fa:
         beta_modal:
           link: برای ما پیغام بنویسید
           text: صفحه اینترنتی ما clarat.org جدید می باشد.در برلین می توانی پیشنهاد های کمکی زیادی را جستجو کنی.به زودی پیشنهاد های کمکی برای شهرهای دیگر را نیز جمع آوری می کنیم.از کمک شما استقبال می کنیم:آیا چیزی را دیدی که ما بهتر می توانیم آن را ارائه دهیم یا اینکه چیزی به درستی انجام نمی شود؟پس
-        more_information_overlay: 
-        send: 
         unavailable_location_modal: در محل زندگی تو و حال حاضر در clarat فقط پیشنهادهای تلفنی یا آنلاین موجود می باشد.این بدین معنی است که به تو کمک تلفنی یا آنلاین می شود.بطور مثال از طریق ایمیل و یا در چت.به محض اینکه در در اینجا و در نزدیکی محل سکونت تو کمکی وجود داشت با کمال میل به تو اطلاع می دهیم.اطفا آدرس ایمیل خود را وارد کنید.
-      nav_lang:
-        legal_title: در  clarat متن های قانونی فقط به زبان آلمانی قابل خواندن هستند.
-        title: |-
-          ترجمه خودکار!
-          <br><br>
-          در کلارات بعضی از متون به زبان مادری شما، توسط گوگل ترجمه شده است.این متون گاهی اوقات عجیب و قریب به نظر می آیند و یا زبان ترجمه ممکن است کمی اشتباه باشد.
       navigation:
         category_headline: " جستجو از طریق طبقه بندی ها"
         claim:
@@ -1060,7 +1012,6 @@ fa:
           tr: Türkçe
         section_link:
           desktop:
-            2017-07-17, visits=2: 
             family: clarat refugees › به بخش
             refugees: clarat family › به بخش
           mobile:
@@ -1068,19 +1019,9 @@ fa:
               family: به صفحه اول <span class="top-bar__emphasis">clarat family</span>
               refugees: به صفحه اول <span class="top-bar__emphasis">clarat refugees</span>
             switch:
-              2017-07-17, visits=2: 
               family: با صفحه <span class="top-bar__emphasis">clarat refugees</span> تعویض کردن
               refugees: با صفحه <span class="top-bar__emphasis">clarat family</span> تعویض کردن
         title: زبان خود را انتخاب کنید
-    widget:
-      category_headline: 
-  offer:
-    stamp:
-      target_audience:
-        family_acquaintances: 
-        refugees_adolescents: 
-    validations:
-      only_visible_organizations: 
   offers:
     index:
       filters:
@@ -1114,7 +1055,6 @@ fa:
           target_audience:
             children: برای بچه ها و جوانان
             family_children: برای بچه ها و جوانان
-            family_everyone: 
             family_nuclear_family: برای خانواده ها
             family_parents: برای والدین
             family_parents_to_be: برای پدر و مادران آینده
@@ -1150,12 +1090,6 @@ fa:
           long: پیشنهاد مربوط به موضوع...
           short: پیشنهاد در مورد...
     show:
-      accessibility: 
-      anonymous: 
-      charged: 
-      confidential: 
-      day_and_night: 
-      free: 
       last_update: رسیدگی به موارد ثبت شده آخرین بار در
       next_steps:
         code_word: 'نام این کمک نزد عرضه کننده:'
@@ -1175,19 +1109,13 @@ fa:
         explanation:
           accessibility: این بدین معنی است که تو در اینجا می توانی به آرامی با صندلی چرخ دار خود را حرکت بدهی و یا با یک کالسکه کودک
           anonymous: این بدین معنی است که تو نباید نام خود را اعلام کنی.
-          charged: 
           confidential: این بدین معنی است که صحبتهای تو با کارمندان اینجا محرمانه باقی می ماند.
-          day_and_night: 
-          free: 
         title:
           accessibility: دسترس‌پذیری
           anonymous: گمنام
           charged: هزینه الزامی
           confidential: محرمانه
           day_and_night: شبانه روزی
-          family_nuclear_family: 
-          family_parents: 
-          family_relatives: 
           free: رایگان
       trait_filters_headline: اطلاعات بعدی
       website_section:
@@ -1359,11 +1287,9 @@ fa:
         heading: نحوه عملکرد clarat چگونه است؟
         text: مشکلی را که نیاز به کمک در حل آن داری و یا چیزی که تو را آزار می دهد را در اینجا وارد کن و یا اینکه از موضوعات انتخابی ما استفاده کن.سپس تمام پیشنهاد های حمایتی را در نزدیکی محل سکونت خود مشاهده می کنی.ما به تو نیز می گوییم که چگونه کمک دریافت کنی.اینکه آیا از طریق تلفن یا ایمیل ارتباط برقرار کنی و یا اینکه حضوری می توانی مراجعه کنی.
       meta_description:
-        2017-07-17, visits=2: 
         family: از طریق clarat family به آسانی برای کودکان٬ جوانان و خانواده‌ها کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
         refugees: از طریق clarat refugees به آسانی برای پناهندگان کمک پیدا می کنی.به صورت واضح، با زبانهای مختلف و در سراسر برلین و آلمان.
       meta_title:
-        2017-07-17, visits=2: 
         family: به آسانی کمک یافتن | clarat family
         refugees: به آسانی کمک یافتن | clarat refugees
       title:
@@ -1496,6 +1422,7 @@ fa:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
+    family: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن
@@ -1509,21 +1436,6 @@ fa:
           family: اگر اینجا را کلیک کنید٬به clarat Family وارد می شوی.در clarat Family می توانی بدنبال کمک برای کودکان٬جوانان و خانواده ها باشی.
           refugees: اگر اینجا را کلیک کنید٬به clarat Refugees وارد می شوید.در clarat Refugees می توانی بدنبال کمک برای پناهندگان باشی.
   simple_form:
-    hints:
-      contact:
-        new:
-          email: 
-          name: 
-        show:
-          email: 
-          name: 
-        show_offer:
-          email: 
-          name: 
-    placeholders:
-      search_form:
-        home:
-          query: 
     required:
       html: <abbr title="required">*</abbr>
       mark: "*"
@@ -1543,4 +1455,3 @@ fa:
     new:
       button: پیغام دریافت شد
       email_placeholder: آدرس ایمیل
-      placeholder: 

@@ -1,12 +1,4 @@
 / General JS Setup
 javascript:
   // Namespace
-  window.Clarat = {
-    // Algolia
-    Algolia: {
-      appID: "#{Rails.application.secrets.algolia[:app_id]}",
-      apiKey: "#{Rails.application.secrets.algolia[:pub_key]}",
-      personalIndexName: "#{IndexChoice.personal}",
-      remoteIndexName: "#{IndexChoice.remote}"
-    }
-  };
+  window.Clarat = {};

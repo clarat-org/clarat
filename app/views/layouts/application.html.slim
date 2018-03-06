@@ -55,31 +55,32 @@ html class='no-js' lang=I18n.locale dir="#{(I18n.locale==:ar || I18n.locale==:fa
 
   body class="#{@current_section} #{(I18n.locale==:fa)?'far':I18n.locale} template--#{controller_name}-#{action_name}" data-section=@current_section
     .page-wrap
-      - cache ['banner', I18n.locale] do
-        = render '/layouts/partials/banner'
-      // = render '/layouts/partials/nav_lang'
-      = render '/layouts/partials/header', current_section: @current_section
+      /!
+        - cache ['banner', I18n.locale] do
+          = render '/layouts/partials/banner'
+        // = render '/layouts/partials/nav_lang'
+        // = render '/layouts/partials/header', current_section: @current_section
       #Flash-messages
         - flash.each do |message|
           - unless message[0] == 'timedout'
             = render '/layouts/partials/flash',
                      type: message[0],
                      content: message[1]
-      - if controller_name == 'pages' && action_name == 'home'
-        = render 'layouts/partials/hero',
-                search_form: SearchForm.new(cookies),
-                current_section: @current_section
-      - elsif action_name != 'section_choice'
-        = render 'layouts/partials/searchfield_advanced',
-                 search_form: @search_form || SearchForm.new(cookies),
-                 current_section: @current_section
+      /!
+        - if controller_name == 'pages' && action_name == 'home'
+          = render 'layouts/partials/hero',
+                  search_form: SearchForm.new(cookies),
+                  current_section: @current_section
+        - elsif action_name != 'section_choice'
+          = render 'layouts/partials/searchfield_advanced',
+                   search_form: @search_form || SearchForm.new(cookies),
+                   current_section: @current_section
       #yield-wrap
         = yield
-    = render 'layouts/partials/footer',
-             subscription: @subscription || Subscription.new,
-             current_section: @current_section
+      = render 'layouts/partials/footer_minimal'
 
-    = render 'layouts/partials/offcanvas'
+/!
+      = render 'layouts/partials/offcanvas'
 
     = render 'layouts/partials/general_assets'
     = content_for :view_specific_scripts

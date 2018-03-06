@@ -11,32 +11,34 @@ Clarat::Application.routes.draw do
 
     root to: 'pages#section_choice', as: 'section_choice'
 
-    scope ':section', section: /family|refugees/ do
+    scope ':section', section: /refugees/ do
       # scoped static pages
-      get '/' => 'pages#home', as: 'home'
-      get 'ueber-uns' => 'pages#about', as: 'about'
-      get 'haeufige-fragen' => 'pages#faq', as: 'faq'
-      get 'impressum' => 'pages#impressum', as: 'impressum'
-      get 'rechtliche-hinweise' => 'pages#agb', as: 'agb'
-      get 'datenschutzhinweise' => 'pages#privacy', as: 'privacy'
+      get '/', to: redirect('https://local.handbookgermany.de/', status: 301)
+      get 'ueber-uns', to: redirect('https://handbookgermany.de/de/about-us.html', status: 301)
+      get 'haeufige-fragen', to: redirect('https://handbookgermany.de/de/about-us/faq.html', status: 301)
+      get 'impressum', to: redirect('https://handbookgermany.de/de/imprint.html', status: 301)
+      get 'rechtliche-hinweise', to: redirect('https://handbookgermany.de/de/disclaimer.html', status: 301)
+      get 'datenschutzhinweise', to: redirect('https://handbookgermany.de/de/privacy.html', status: 301)
 
       # RESTful resources
-      resources :offers, only: %i[index show]
-      resources :organizations, only: [:show]
-      resources :contacts, only: %i[new create index]
+      get 'offers/:id', to: redirect('https://local.handbookgermany.de/angebote/%{id}', status: 301)
+      get 'offers', to: redirect('https://local.handbookgermany.de/angebote', status: 301)
+      get 'organizations/:id', to: redirect('https://local.handbookgermany.de/organisationen/%{id}', status: 301)
+      # resources :organizations, only: [:show]
+      # resources :contacts, only: %i[new create index]
 
       # Previews
-      get 'preview/offers/:id' => 'previews#show_offer'
-      get 'preview/organizations/:id' => 'previews#show_organization'
+      # get 'preview/offers/:id' => 'previews#show_offer'
+      # get 'preview/organizations/:id' => 'previews#show_organization'
 
       # Email overviews
-      get 'emails/:id/offers' => 'emails#offers_index', as: 'emails_offers'
+      # get 'emails/:id/offers' => 'emails#offers_index', as: 'emails_offers'
     end
 
-    scope 'refugees' do
-      get 'widget-start-with-a-friend' => 'pages#widget_swaf', as: 'home'
-      get 'widget-handbook-germany-:city' => 'pages#widget_hg', as: 'home'
-    end
+    # scope 'refugees' do
+    #   get 'widget-start-with-a-friend' => 'pages#widget_swaf', as: 'home'
+    #   get 'widget-handbook-germany-:city' => 'pages#widget_hg', as: 'home'
+    # end
 
     # unscoped to scoped forwards
     get 'offers/:id' => 'offers#section_forward', as: :unscoped_offer
@@ -49,16 +51,19 @@ Clarat::Application.routes.draw do
     get 'datenschutzhinweise' => 'pages#section_forward'
 
     # unscoped RESTful resources (only POST and non-HTML GET)
-    resources :update_requests, only: %i[new create]
-    resources :search_locations, only: [:show]
-    resources :subscriptions, only: %i[new create]
-    resources :definitions, only: [:show]
+    # resources :update_requests, only: %i[new create]
+    # resources :search_locations, only: [:show]
+    # resources :subscriptions, only: %i[new create]
+    # resources :definitions, only: [:show]
 
     # non-REST routes
-    get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',
-        as: 'subscribe'
-    get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
-        as: 'unsubscribe'
+    # get 'emails/:id/subscribe/:security_code' => 'emails#subscribe',
+    #     as: 'subscribe'
+    # get 'emails/:id/unsubscribe/:security_code' => 'emails#unsubscribe',
+    #     as: 'unsubscribe'
+
+    # forward everything with /family to Elternleben
+    match '/family(/*path)', to: redirect('https://www.elternleben.de/', status: 301), via: :all
 
     # All other localized paths => localized 404
     match '*path', to: 'pages#not_found', via: :all

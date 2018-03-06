@@ -21,6 +21,8 @@ class OrganizationsController < ApplicationController
     orga = Organization.visible_in_frontend.friendly.find(params[:id])
     orga_section = orga.canonical_section
     raise ActiveRecord::RecordNotFound unless orga_section
-    redirect_to organization_path(section: orga_section, id: orga.slug)
+    # redirect_to organization_path(section: orga_section, id: orga.slug)
+    route_name = t('routes.organizations', locale: params['locale'])
+    redirect_to "/#{params['locale']}/#{orga_section}/#{route_name}/#{orga.slug}", status: 301
   end
 end

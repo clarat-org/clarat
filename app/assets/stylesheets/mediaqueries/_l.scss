@@ -234,28 +234,6 @@
     left: 15px;
   }
 
-
-  .Mission__statement,
-  .Mission__stage {
-    height: 246px;
-  }
-
-  .Mission__stage {
-    background-image: image_url('mission--1--large.jpg')
-  }
-
-  .Mission__statement {
-    padding: 25px 25px 25px 0;
-
-    &:after {
-      border-top: 123px solid #F4B528;
-      border-bottom: 123px solid #F4B528;
-      border-left: 45px solid transparent;
-      left: -45px;
-      width: 45px;
-    }
-  }
-
   .Mission__headline {
     font-size: 35px;
   }

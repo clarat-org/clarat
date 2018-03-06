@@ -30,7 +30,8 @@ class OffersController < ApplicationController
     offer_section = offer.canonical_section
     raise ActiveRecord::RecordNotFound unless offer_section
     route_name = t('routes.offers', locale: params['locale'])
-    redirect_to "/#{params['locale']}/#{offer_section}/#{route_name}/#{offer.slug}", status: 301
+    locale_string = params['locale'].to_s == 'de' ? '' : "/#{params['locale']}"
+    redirect_to "#{locale_string}/#{offer_section}/#{route_name}/#{offer.slug}", status: 301
   end
 
   private

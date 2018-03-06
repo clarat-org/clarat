@@ -23,6 +23,7 @@ class OrganizationsController < ApplicationController
     raise ActiveRecord::RecordNotFound unless orga_section
     # redirect_to organization_path(section: orga_section, id: orga.slug)
     route_name = t('routes.organizations', locale: params['locale'])
-    redirect_to "/#{params['locale']}/#{orga_section}/#{route_name}/#{orga.slug}", status: 301
+    locale_string = params['locale'].to_s == 'de' ? '' : "/#{params['locale']}"
+    redirect_to "#{locale_string}/#{orga_section}/#{route_name}/#{orga.slug}", status: 301
   end
 end

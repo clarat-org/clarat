@@ -27,7 +27,6 @@
 # = require vendor/inviewport
 # = require vendor/ios-orientationchange-fix
 # = require vendor/image_path_helper
-# = require vendor/livechat
 # = require vendor/includes_polyfill
 # = require bootstrap-sprockets
 # = require algolia/algoliasearch.min

@@ -65,6 +65,9 @@ Clarat::Application.routes.draw do
     # forward everything with /family to Elternleben
     match '/family(/*path)', to: redirect('https://www.elternleben.de/', status: 301), via: :all
 
+    # forward unscoped offer index to HBG after generic /family redirect
+    get 'offers', to: redirect('https://local.handbookgermany.de/angebote', status: 301)
+
     # All other localized paths => localized 404
     match '*path', to: 'pages#not_found', via: :all
   end

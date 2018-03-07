@@ -10,7 +10,14 @@
   .Mission.wrapper-inner
     .Mission__stage
       .Mission__statement
-        span.Mission__text = 'clarat sagt auf Wiedersehen. Mehr dazu kannst du hier und hier im Blog der Benckiser Stiftung Zukunft lesen. Unser Auftrag, Hilfe, die es in Deutschland gibt, sichtbar machen und einfach erklären wird in Zukunft von Elternleben und Handbook Germany erfüllt. Klicke einfach auf deren Logos und finde die Hilfe die du suchst.'
+        span.Mission__text
+          = 'clarat sagt auf Wiedersehen. Wir übergeben clarat refugees and Handbook Germany und clarat family an ElternLeben.de. Wir wollten Hilfe, die es in Deutschland gibt, sichtbar machen und einfach erklären. Um diesen Auftrag kümmern sich nun unsere beiden Partner.'
+          p
+          = 'Wenn Du mehr zu unserer Entscheidung lesen möchtest, findest Du '
+          = link_to 'hier', 'http://www.benckiser-stiftung.org/de/blog/ein-neuer-hafen-fuer-clarat-family'
+          = ' einen Blog Beitrag der Benckiser Stiftung zu clarat family und '
+          = link_to 'hier', 'http://www.benckiser-stiftung.org/de/blog/eine-neue-heimat-fuer-clarat-refugees'
+          = ' hier einen Beitrag zu clarat refugees.'
 
   main.content-main.content-main--wide.content-main--section_choice
     ul.section-choice.wrapper-inner

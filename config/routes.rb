@@ -63,7 +63,7 @@ Clarat::Application.routes.draw do
     #     as: 'unsubscribe'
 
     # forward everything with /family to Elternleben
-    match '/family(/*path)', to: redirect('https://www.elternleben.de/', status: 301), via: :all
+    match '/family(/*path)', to: redirect('https://www.elternleben.de/angebote-vor-ort/', status: 301), via: :all
 
     # forward unscoped offer index to HBG after generic /family redirect
     get 'offers', to: redirect('https://local.handbookgermany.de/angebote', status: 301)

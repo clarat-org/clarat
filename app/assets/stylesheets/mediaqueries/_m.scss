@@ -1089,6 +1089,15 @@
     width: 50%;
   }
 
+  .nav-legal__listitem {
+    float: none;
+    text-align: left;
+
+    &:before {
+      content: '';
+    }
+  }
+
   // Misc ######################################
 
   .JS-Cookie-warning {

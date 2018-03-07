@@ -390,7 +390,6 @@
 
   .content-main--section_choice {
     height: 70vh;
-    min-height: 460px;
 
     &.content-main.content-main--wide {
       margin: 0;
@@ -536,14 +535,8 @@
     margin-bottom: 10px;
   }
 
-  .nav-legal {
-    margin: 20px 0;
-  }
-
   .nav-legal__listitem {
     float: none;
-    margin-left: 0;
-    line-height: 30px;
     text-align: left;
 
     &:before {

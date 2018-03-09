@@ -1396,6 +1396,7 @@ fa:
     datenschutzhinweise: نکات حفاظت از اطلاعات
     definitions: توضیحات
     emails: ایمیل ها
+    family: 
     faq: سوالات رایج
     fr: 
     haeufige-fragen: سوالات رایج
@@ -1422,7 +1423,6 @@ fa:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: لطفا اینجا را پر کن

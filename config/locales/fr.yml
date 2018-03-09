@@ -1432,6 +1432,7 @@ fr:
     datenschutzhinweise: protection-des-données
     definitions: définitions
     emails: adresses-électroniques
+    family: 
     faq: questions-fréquentes
     fr: 
     haeufige-fragen: questions-fréquentes
@@ -1458,7 +1459,6 @@ fr:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: veuillez remplir ce champ

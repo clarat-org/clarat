@@ -1879,7 +1879,7 @@ de:
           text: 'Bei clarat family finden Familien in Deutschland Infos zu Hilfen in ihrer Nähe. Bei Problemen aus folgenden Bereichen: Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
         refugees:
           text: 'Bei clarat refugees finden Menschen, die nach Deutschland geflüchtet sind, Hilfe. Bei Problemen aus folgenden Bereichen: Asyl & Recht, Familie, Gesundheit, Lernen & Arbeiten und Gewalt & Kriminalität.'
-      meta_description: clarat.org zeigt, welche Hilfen es in Deutschland gibt. Für Kinder, Jugendliche & Familien. Und für Flüchtlinge. Online. Einfach. In deiner Nähe.
+      meta_description: clarat sagt auf Wiedersehen. Wir übergeben clarat refugees an Handbook Germany und clarat family an ElternLeben.de.
       meta_title: clarat klärt auf | clarat
       mission:
         headline: 'Unser Auftrag:'
@@ -1899,6 +1899,7 @@ de:
     datenschutzhinweise: datenschutzhinweise
     definitions: definitions
     emails: emails
+    family: family
     faq: haeufige-fragen
     fr: fr
     haeufige-fragen: haeufige-fragen
@@ -1925,7 +1926,6 @@ de:
     widget-hg: widget-hg
     widget-start-with-a-friend: widget-start-with-a-friend
     widget-swaf: widget-swaf
-    family: family
   shareds:
     forms:
       fill_field: Bitte fülle dieses Feld aus

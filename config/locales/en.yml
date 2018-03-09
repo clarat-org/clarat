@@ -1499,6 +1499,7 @@ en:
     datenschutzhinweise: privacy
     definitions: definitions
     emails: emails
+    family: 
     faq: frequently-asked-questions
     fr: 
     haeufige-fragen: frequently-asked-questions
@@ -1525,7 +1526,6 @@ en:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: Please fill out this field

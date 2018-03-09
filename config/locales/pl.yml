@@ -1478,6 +1478,7 @@ pl:
     datenschutzhinweise: ochrona-danych
     definitions: definicje
     emails: e-maile
+    family: 
     faq: często-zadawane-pytania
     fr: 
     haeufige-fragen: często-zadawane-pytania
@@ -1504,7 +1505,6 @@ pl:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: Proszę wypełnij to pole

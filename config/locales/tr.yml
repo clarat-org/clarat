@@ -1367,6 +1367,7 @@ tr:
     datenschutzhinweise: gizlilik-politikası
     definitions: tanım
     emails: emailler
+    family: 
     faq: sıkça-sorulan-sorular
     fr: 
     haeufige-fragen: sıkça-sorulan-sorular
@@ -1393,7 +1394,6 @@ tr:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: Lütfen bu alanı doldur

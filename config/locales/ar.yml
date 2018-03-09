@@ -1357,6 +1357,7 @@ ar:
     datenschutzhinweise: إرشادات-حماية-البيانات-الشخصية
     definitions: تعريف
     emails: رسائل بريد إليكتروني
+    family: 
     faq: أسئلة-شائعة
     fr: 
     haeufige-fragen: أسئلة-شائعة
@@ -1383,7 +1384,6 @@ ar:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: من فضلك إملأ هذه الخانة

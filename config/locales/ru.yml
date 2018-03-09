@@ -1471,6 +1471,7 @@ ru:
     datenschutzhinweise: Правила-конфиденциальности
     definitions: формулировки
     emails: электронные-письма
+    family: 
     faq: Частые-вопросы
     fr: 
     haeufige-fragen: Частые-вопросы
@@ -1497,7 +1498,6 @@ ru:
     widget-hg: 
     widget-start-with-a-friend: 
     widget-swaf: 
-    family: 
   shareds:
     forms:
       fill_field: Пожалуйста, заполни это поле

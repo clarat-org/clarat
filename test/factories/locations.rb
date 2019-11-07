@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :location do
     # required
     sequence(:street) { |n| "Foobar #{n}" }
@@ -30,7 +30,7 @@ FactoryGirl.define do
       )
     end
     city { City.all.to_a.sample || City.create!(name: 'Berlin') }
-    organization { Organization.last || FactoryGirl.create(:organization) }
+    organization { Organization.last || FactoryBot.create(:organization) }
 
     trait :fake_address do
       street { FFaker::AddressDE.street_address }

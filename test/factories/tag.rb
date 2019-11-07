@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :tag do
     name_de { FFaker::Lorem.words(rand(2..3)).join(' ').titleize }
     name_en { name_de + ' (en)' }

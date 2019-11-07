@@ -13,7 +13,7 @@ describe ContactsController do
 
   describe "POST 'create'" do
     it 'should work with valid contact data' do
-      contact_attrs = FactoryGirl.attributes_for :contact
+      contact_attrs = FactoryBot.attributes_for :contact
       request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
         post :create, params: {
@@ -24,7 +24,7 @@ describe ContactsController do
     end
 
     it 'should work with valid report data' do
-      contact_attrs = FactoryGirl.attributes_for :report
+      contact_attrs = FactoryBot.attributes_for :report
       request.env['HTTP_REFERER'] = 'http://example.com'
       assert_difference('Contact.count', 1) do
         post :create, params: {

@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :contact do
     name { FFaker::NameDE.name }
     email { FFaker::Internet.email }

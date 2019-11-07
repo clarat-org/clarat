@@ -58,18 +58,18 @@ SearchLocation.create query: 'Berlin', latitude: 52.520007,
                                        geoloc: '52.520007,13.404954'
 
 20.times do
-  FactoryGirl.create :tag, :with_dummy_translations
+  FactoryBot.create :tag, :with_dummy_translations
 end
 
-FactoryGirl.create :offer, :approved,
+FactoryBot.create :offer, :approved,
                    approved_by: user, name: 'Lokales Angebot',
                    encounter: 'personal'
-FactoryGirl.create :offer, :approved,
+FactoryBot.create :offer, :approved,
                    approved_by: user, name: 'Lokale Hotline',
                    encounter: 'hotline', area: berlin
-FactoryGirl.create :offer, :approved,
+FactoryBot.create :offer, :approved,
                    approved_by: user, name: 'Bundesweiter Chat',
                    encounter: 'chat', area: schland
-FactoryGirl.create :offer, :approved,
+FactoryBot.create :offer, :approved,
                    approved_by: user, name: 'Bundesweite Hotline',
                    encounter: 'hotline', area: schland

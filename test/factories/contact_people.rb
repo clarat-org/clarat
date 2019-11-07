@@ -2,7 +2,7 @@
 
 require 'ffaker'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :contact_person do
     gender { [:male, :female, nil].sample }
     first_name { FFaker::NameDE.first_name }
@@ -17,7 +17,7 @@ FactoryGirl.define do
     fax_number { fax_area_code ? FFaker.numerify('#' * rand(7..11)) : nil }
 
     organization
-    email { Email.last || FactoryGirl.create(:email) }
+    email { Email.last || FactoryBot.create(:email) }
 
     transient do
       offers []

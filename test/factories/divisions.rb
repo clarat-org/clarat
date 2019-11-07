@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :division do
     addition 'default division addition'
-    section { Section.first || FactoryGirl.create(:section) }
+    section { Section.first || FactoryBot.create(:section) }
     city { City.all.sample }
-    area { Area.last || FactoryGirl.create(:area) }
-    organization { FactoryGirl.create(:organization, :approved) }
+    area { Area.last || FactoryBot.create(:area) }
+    organization { FactoryBot.create(:organization, :approved) }
 
     # after :create do |division, _evaluator|
     #   division.assignments <<
-    #     FactoryGirl.create(
+    #     FactoryBot.create(
     #       :assignment,
     #       assignable_type: 'Division',
     #       assignable_id: division.id

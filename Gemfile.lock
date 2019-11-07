@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/clarat-org/clarat_base.git
-  revision: 55977fcd38043d3e60c448a31f2de0a5141754d7
+  revision: 32601bb75ab238c14d87539f0dbdaa3930b1b775
   specs:
     clarat_base (0.1.4)
       aasm
@@ -73,10 +73,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    algoliasearch (1.18.1)
+    algoliasearch (1.18.3)
       httpclient (~> 2.8.3)
       json (>= 1.5.1)
-    algoliasearch-rails (1.20.3)
+    algoliasearch-rails (1.20.4)
       algoliasearch (>= 1.17.0, < 2.0.0)
       json (>= 1.5.1)
     arel (8.0.0)
@@ -602,10 +602,10 @@ GEM
     erubis (2.7.0)
     eventmachine (1.2.5)
     execjs (2.7.0)
-    factory_girl (4.8.1)
+    factory_bot (4.8.2)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.8.0)
-      factory_girl (~> 4.8.0)
+    factory_bot_rails (4.8.2)
+      factory_bot (~> 4.8.2)
       railties (>= 3.0.0)
     fakeredis (0.6.0)
       redis (~> 3.2)
@@ -618,7 +618,7 @@ GEM
       actionpack (>= 3.2.13)
     friendly_id (5.2.3)
       activerecord (>= 4.0.0)
-    geocoder (1.4.4)
+    geocoder (1.4.5)
     gibbon (1.2.1)
       httparty
       multi_json (>= 1.9.0)
@@ -744,7 +744,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nokogumbo (1.4.11)
       nokogiri
-    paper_trail (8.0.1)
+    paper_trail (8.1.0)
       activerecord (>= 4.2, < 5.2)
       request_store (~> 1.1)
     parallel (1.12.0)
@@ -1016,7 +1016,7 @@ DEPENDENCIES
   dotenv-rails
   dynamic_sitemaps!
   email_spec
-  factory_girl_rails
+  factory_bot_rails
   fakeredis
   fakeweb (~> 1.3)
   ffaker
